@@ -1,0 +1,59 @@
+### YamlMime:Tutorial
+title: Build a serverless web solution
+uid: serverless-app-main
+metadata:
+  title: Build a serverless web solution | Microsoft Azure
+  description: Learn how to build a serverless website, by storing data in a cosmos DB, interfacing it with API management service and functions.
+  audience: Developer
+  level: Beginner
+  nextTutorialHref: 
+  nextTutorialTitle: 
+  displayType: one-column
+  author: david-stanford
+  manager: timlt
+  ms.service: 
+  ms.topic: get-started-article
+  ms.date: 04/09/2018
+  ms.author: dastanfo
+items:
+- durationInMinutes: 1
+  content: |
+    Create a stateless web app in Azure.
+    
+    In this learning scenario, you learn how to build a basic web application that integrates six of the serverless options.
+- title: Create a storage account
+  durationInMinutes: 5
+  content: |  
+    [!INCLUDE [](includes/overview-1-storage.md)]
+    [!INCLUDE [](lab/lab-1-create-storage-account.md)]
+    [!INCLUDE [](quiz/storage-quiz.yml)]
+- title: Create a Cosmos DB
+  durationInMinutes: 5
+  content: |
+    [!INCLUDE [](includes/overview-2-cosmos.md)]
+    [!INCLUDE [](lab/lab-2-create-cosmos.md)]
+    [!INCLUDE [](quiz/cosmos-quiz.yml)]
+- title: Create Azure functions
+  durationInMinutes: 10
+  content: |
+    [!INCLUDE [](includes/overview-3-azure-functions.md)]
+    [!INCLUDE [](lab/lab-3-create-azure-functions.md)]
+    [!INCLUDE [](quiz/functions-quiz.yml)]
+- title: Create API management to front the Azure functions
+  durationInMinutes: 5
+  content: |
+    [!INCLUDE [](includes/overview-4-api-management.md)]
+    [!INCLUDE [](lab/lab-4-create-api-management.md)]
+    [!INCLUDE [](quiz/api-management-quiz.yml)]
+- title: Create Computer Vision API
+  durationInMinutes: 3
+  content: |
+    [!INCLUDE [](includes/overview-5-computer-vision.md)]
+    [!INCLUDE [](lab/lab-5-create-computer-vision.md)]
+    [!INCLUDE [](quiz/computer-vision-quiz.yml)]
+- title: Create Computer Vision API
+  durationInMinutes: 5
+  content: |
+    [!INCLUDE [](includes/overview-6-eventgrid.md)]
+    [!INCLUDE [](lab/lab-6-create-eventgrid.md)]
+    [!INCLUDE [](quiz/eventgrid-quiz.yml)]
