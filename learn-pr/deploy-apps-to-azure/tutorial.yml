@@ -1,0 +1,83 @@
+### YamlMime:Tutorial
+title: Deploy Apps to Azure with Visual Studio and CI/CD
+uid: deploy-apps-to-azure
+metadata:
+  title: Deploy Apps to Azure with Visual Studio and CI/CD | Microsoft Azure
+  description: Learn how to deploy applications to Azure or Azure Stack in a consistent manner with Visual Studio Team Services and CI/CD pipelines
+  audience: Developer
+  level: Beginner
+  nextTutorialHref: 
+  nextTutorialTitle: 
+  displayType: one-column
+  author: iainfoulds
+  manager: jeconnoc
+  ms.service: 
+  ms.topic: get-started-article
+  ms.date: 04/06/2018
+  ms.author: iainfou
+items:
+- durationInMinutes: 1
+  content: |
+    You can deploy apps to Azure straight from within Visual Studio. For production use, you can use continuous integration and continuous delivery (CI/CD) with Visual Studio Team Services. This CI/CD approach automatically deploys your app to Azure each time you make a code commit to source control.
+    
+    In this learning scenario, you learn how to deploy a basic ASP.NET app to Azure Web Apps through a VSTS CI/CD pipeline. You learn how to use a deployment slot for review of your application before it goes live in production.
+- title: Overview of continuous integration and continuous delivery (CI/CD)
+  durationInMinutes: 5
+  content: |
+    > [!Video Intro to CI/CD]
+
+    [!INCLUDE [](includes/overview-1-cicd.md)]
+- title: Create a Visual Studio Team Services (VSTS) project
+  durationInMinutes: 8
+  content: |
+    Visual Studio Team Services allows for easy collaboration and development without maintaining an on-premises code management solution. Team Services provides cloud code testing, build, and application insights. You can choose a version control repo and IDE that best fits your code development.
+    
+    For this learning scenario, you can use a free account to create a basic ASP.NET web app and CI/CD pipeline. If you do not already have a Team Services account, [create one](http://go.microsoft.com/fwlink/?LinkId=307137).
+
+    > [!Video Intro to VSTS]
+
+    [!INCLUDE [](includes/overview-2-vsts.md)]
+
+    [!INCLUDE [](lab/lab-1-create-vsts-project.md)]
+- title: Deploy an app to Azure from Visual Studio
+  durationInMinutes: 5
+  content: |
+    In the previous lab, you created a project in Team Services. The final step opened your new project in Visual Studio. Let's build and deploy an ASP.NET application from Visual Studio to an Azure Web App.
+
+    [!INCLUDE [](includes/overview-3-azure-web-app.md)]
+
+    [!INCLUDE [](lab/lab-2-create-vs-web-app.md)]
+- title: Create build definition in VSTS for CI/CD
+  durationInMinutes: 10
+  content: |
+    Manually deploying an app from Visual Studio isn't great for production scenarios. You shouldn't manually deploy application updates. Instead, you should use a source control and CI/CD solution such as VSTS.
+
+    > [!Video Intro to VSTS build definitions and CI/CD pipeline]
+
+    [!INCLUDE [](includes/overview-4-vsts-cicd-pipeline.md)]
+
+    [!INCLUDE [](lab/lab-3-create-vsts-build-definition.md)]
+- title: Deploy an app to Azure with VSTS and CI/CD
+  durationInMinutes: 5
+  content: |
+    With your Web App running in Azure and connected with VSTS, now try the whole CI/CD pipeline. After you make a change in Visual Studio and commit your code, a build is triggered which then triggers a release via FTP upload to Azure.
+
+    [!INCLUDE [](lab/lab-4-deploy-web-app-vsts-cicd.md)]
+
+- title: Deploy an app to Azure staging site with VSTS and CI/CD
+  durationInMinutes: 10
+  content: |
+    Deploying your app straight to production may cause problems, so you typically deploy to a staging site. This staging site lets you review your changes before pushing to production.
+    
+    > [!Video Intro to Azure Web Apps deployment slots]
+
+    [!INCLUDE [](includes/overview-5-web-app-deployment-slots.md)]
+    
+    Let's update out VSTS CI/CD pipeline to deploy to a Web App staging slot, review the changes, then swap the Web App slot to production.
+
+    [!INCLUDE [](lab/lab-5-deploy-web-app-to-staging.md)]
+
+- content: |
+    Now that you can deploy an app to Azure from Visual Studio with a CI/CD pipeline in VSTS, complete the following review quiz to check what you learned!
+
+    [!INCLUDE [](deploy-apps-to-azure.yml)]
