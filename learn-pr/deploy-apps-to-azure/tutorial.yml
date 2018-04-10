@@ -2,8 +2,8 @@
 title: Deploy Apps to Azure with Visual Studio and CI/CD
 uid: deploy-apps-to-azure
 metadata:
-  title: Deploy Apps to Azure with Visual Studio and CI/CD | Microsoft Azure
-  description: Learn how to deploy applications to Azure or Azure Stack in a consistent manner with Visual Studio Team Services and CI/CD pipelines
+  title: Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD) | Microsoft Azure
+  description: Learn how to deploy applications to Azure in a consistent manner with Visual Studio Team Services and CI/CD pipelines
   audience: Developer
   level: Beginner
   nextTutorialHref: 
@@ -21,7 +21,7 @@ items:
     You can deploy apps to Azure straight from within Visual Studio. For production use, you can use continuous integration and continuous delivery (CI/CD) with Visual Studio Team Services. This CI/CD approach automatically deploys your app to Azure each time you make a code commit to source control.
     
     In this learning scenario, you learn how to deploy a basic ASP.NET app to Azure Web Apps through a VSTS CI/CD pipeline. You learn how to use a deployment slot for review of your application before it goes live in production.
-- title: Overview of continuous integration and continuous delivery (CI/CD)
+- title: Overview of CI/CD
   durationInMinutes: 5
   content: |
     > [!Video Intro to CI/CD]
