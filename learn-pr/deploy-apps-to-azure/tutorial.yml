@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-title: Deploy Apps to Azure with Visual Studio and CI/CD
+title: Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD)
 uid: deploy-apps-to-azure
 metadata:
   title: Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD) | Microsoft Azure
