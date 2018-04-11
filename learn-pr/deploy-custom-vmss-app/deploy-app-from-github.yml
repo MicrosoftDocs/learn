@@ -9,7 +9,8 @@ metadata:
   ms.topic: get-started-article
   nextTutorialHref: deploy-app-update
   nextTutorialTitle: Update app from GitHub
-  displayType: one-column
+  displayType: two-column
+  interactive: azurecli
   ms.custom:
   ms.prod:
   ms.technology: virtual-machine-scale-set
