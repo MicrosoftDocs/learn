@@ -11,7 +11,7 @@ units:
   durationInMinutes: 15
 - uid: learn.deploy-custom-vmss-app.create-vmss
   type: tutorial
-  durationInMinutes: 15
+  durationInMinutes: 10
 - uid: learn.deploy-custom-vmss-app.deploy-app-from-github
   type: tutorial
   durationInMinutes: 10

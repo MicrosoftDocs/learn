@@ -7,7 +7,7 @@ metadata:
   audience: Developer
   level: Intermediate
   ms.topic: get-started-article
-  nextTutorialHref: deploy-custom-vmss-app.deploy-app-from-github
+  nextTutorialHref: deploy-app-from-github
   nextTutorialTitle: Deploy a web app from GitHub
   displayType: one-column
   ms.custom:
@@ -22,11 +22,11 @@ items:
   content: |
     [!include[](includes/create-vmss-1.md)]
 - title: Create a virtual machine scale set
-  durationInMinutes: 5
+  durationInMinutes: 3
   content: |
     [!include[](includes/create-vmss-2.md)]
 - title: Configure load balancer rules for web traffic
-  durationInMinutes: 2
+  durationInMinutes: 1
   content: |
     [!include[](includes/create-vmss-3.md)]
 - title: View the scale set in action
