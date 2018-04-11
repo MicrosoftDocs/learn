@@ -28,11 +28,11 @@ items:
 - title: Configure load balancer rules for web traffic
   durationInMinutes: 2
   content: |
-    [!include[](includes/create-packer-vmss-3.md)]
+    [!include[](includes/create-vmss-3.md)]
 - title: View the scale set in action
   durationInMinutes: 1
   content: |
-    [!include[](includes/create-packer-vmss-4.md)]
+    [!include[](includes/create-vmss-4.md)]
 - content: |
     You've completed the "Create a virtual machine scale set" quickstart.
 challenge:
