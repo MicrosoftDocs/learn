@@ -4,9 +4,10 @@ Create a scale set with [az vmss create](/cli/az/vmss#az_vmss_create). Instead o
 az vmss create \
   --resource-group myResourceGroup \
   --name myScaleSet \
-  --image myPackerImage \
   --admin-username azureuser \
-  --generate-ssh-keys
+  --generate-ssh-keys \
+  --upgrade-policy-mode automatic \
+  --image myPackerImage
 ```
 
 It takes a few minutes to create and configure all the scale set resources and VMs.
