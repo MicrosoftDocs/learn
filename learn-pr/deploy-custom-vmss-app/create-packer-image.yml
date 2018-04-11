@@ -21,14 +21,18 @@ items:
   durationInMinutes: 2
   content: |
     [!include[](includes/create-packer-image-1.md)]
-- title: Create Packer template
-  durationInMinutes: 3
+- title: Create Azure credentials for Packer
+  durationInMinutes: 2
   content: |
     [!include[](includes/create-packer-image-2.md)]
+- title: Create Packer template
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/create-packer-image-3.md)]
 - title: Build Packer image
   durationInMinutes: 8
   content: |
-    [!include[](includes/create-packer-image-3.md)]
+    [!include[](includes/create-packer-image-4.md)]
 - content: |
     You've completed the "Create a Packer image" quickstart.
 challenge:
