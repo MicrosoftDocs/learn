@@ -1,0 +1,40 @@
+### YamlMime:Tutorial
+uid: learn.deploy-custom-vmss-app.create-vmss
+title: Create a virtual machine scale set
+metadata:
+  title: Create an Azure virtual machine scale set from Packer image
+  description: Learn how to create an Azure virtual machine scale set that uses the Packer image
+  audience: Developer
+  level: Intermediate
+  ms.topic: get-started-article
+  nextTutorialHref: deploy-custom-vmss-app.deploy-app-from-github
+  nextTutorialTitle: Deploy a web app from GitHub
+  displayType: one-column
+  ms.custom:
+  ms.prod:
+  ms.technology: virtual-machine-scale-set
+items:
+- durationInMinutes: 1
+  content: |
+    In this quickstart, you create an Azure virtual machine scale set that uses the Packer image for each VM instance in the scale set. This Packer image has all the application components needed to run your applications.
+- title: Overview of Azure virtual machine scale sets
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/create-vmss-1.md)]
+- title: Create a virtual machine scale set
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/create-vmss-2.md)]
+- title: Configure load balancer rules for web traffic
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/create-packer-vmss-3.md)]
+- title: View the scale set in action
+  durationInMinutes: 1
+  content: |
+    [!include[](includes/create-packer-vmss-4.md)]
+- content: |
+    You've completed the "Create a virtual machine scale set" quickstart.
+challenge:
+  uid: learn.deploy-custom-vmss-app.create-vmss.quiz
+  type: quiz
