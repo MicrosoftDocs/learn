@@ -9,7 +9,7 @@ units:
 - uid: learn.deploy-custom-vmss-app.create-packer-image
   type: tutorial
   durationInMinutes: 15
-- uid: learn.deploy-custom-vmss-app.deploy-vmss
+- uid: learn.deploy-custom-vmss-app.create-vmss
   type: tutorial
   durationInMinutes: 15
 - uid: learn.deploy-custom-vmss-app.deploy-app-from-github
