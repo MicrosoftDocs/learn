@@ -26,34 +26,34 @@ items:
   content: |  
     [!INCLUDE [](includes/overview-1-storage.md)]
     [!INCLUDE [](lab/lab-1-create-storage-account.md)]
-    [!INCLUDE [](quiz/storage-quiz.yml)]
+    [!code [storage-quiz](../../build-serverless-app/storage-quiz.yml)]
 - title: Create a Cosmos DB
   durationInMinutes: 5
   content: |
     [!INCLUDE [](includes/overview-2-cosmos.md)]
     [!INCLUDE [](lab/lab-2-create-cosmos.md)]
-    [!INCLUDE [](quiz/cosmos-quiz.yml)]
+    [!code [cosmos-quiz](../../build-serverless-app/cosmos-quiz.yml)]
 - title: Create Azure functions
   durationInMinutes: 10
   content: |
     [!INCLUDE [](includes/overview-3-azure-functions.md)]
     [!INCLUDE [](lab/lab-3-create-azure-functions.md)]
-    [!INCLUDE [](quiz/functions-quiz.yml)]
+    [!code [functions-quiz](../../build-serverless-app/functions-quiz.yml)]
 - title: Create API management to front the Azure functions
   durationInMinutes: 5
   content: |
     [!INCLUDE [](includes/overview-4-api-management.md)]
     [!INCLUDE [](lab/lab-4-create-api-management.md)]
-    [!INCLUDE [](quiz/api-management-quiz.yml)]
+    [!code [api-quiz](../../build-serverless-app/api-management-quiz.yml)]
 - title: Create Computer Vision API
   durationInMinutes: 3
   content: |
     [!INCLUDE [](includes/overview-5-computer-vision.md)]
     [!INCLUDE [](lab/lab-5-create-computer-vision.md)]
-    [!INCLUDE [](quiz/computer-vision-quiz.yml)]
-- title: Create Computer Vision API
+    [!code [computer-vision-quiz](../../build-serverless-app/computer-vision-quiz.yml)]
+- title: Connect your storage to Computer API with EventGrid
   durationInMinutes: 5
   content: |
     [!INCLUDE [](includes/overview-6-eventgrid.md)]
     [!INCLUDE [](lab/lab-6-create-eventgrid.md)]
-    [!INCLUDE [](quiz/eventgrid-quiz.yml)]
+    [!code [event-grid-quiz](../../build-serverless-app/eventgrid-quiz.yml)]
