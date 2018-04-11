@@ -1,0 +1,16 @@
+### YamlMime:Module
+uid: learn.serverless
+title: Introduction to severless computing in Azure
+description: Introduction to severless computing in Azure.
+iconUrl: http://via.placeholder.com/120x120
+metadata:
+  title:  Introduction to severless computing in Azure
+units:
+- uid: serverless-app-main
+  type: tutorial
+  durationInMinutes: 40
+achievement:
+  uid: learn.severless.achievement
+  name: "Azure Severless Beginner"
+  description: "First step completed towards a new life."
+  imageUrl: https://docs.microsoft.com/en-us/media/logos/logo_gremlin.svg
