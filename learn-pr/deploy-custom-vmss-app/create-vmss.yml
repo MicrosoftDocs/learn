@@ -38,5 +38,6 @@ items:
     [!include[](includes/create-vmss-4.md)]
 - content: |
     You've completed the "Create a virtual machine scale set" module.
-quiz:
-  id: learn.deploy-custom-vmss-app.create-vmss.quiz
+challenge:
+  uid: learn.deploy-custom-vmss-app.create-vmss.quiz
+  type: quiz

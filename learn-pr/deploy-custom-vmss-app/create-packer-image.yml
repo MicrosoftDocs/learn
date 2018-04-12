@@ -38,5 +38,6 @@ items:
     [!include[](includes/create-packer-image-4.md)]
 - content: |
     You've completed the "Create a Packer image" module.
-quiz:
-  id: learn.deploy-custom-vmss-app.create-packer-image.quiz
+challenge:
+  uid: learn.deploy-custom-vmss-app.create-packer-image.quiz
+  type: quiz
