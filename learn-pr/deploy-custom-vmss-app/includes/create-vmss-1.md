@@ -9,11 +9,11 @@ Azure virtual machine scale sets provide the management capabilities for applica
 - **Easy to create and manage multiple VMs**
     - When you have many VMs that run your application, it's important to maintain a consistent configuration across your environment. For reliable performance of your application, the VM size, disk configuration, and application installs should match across all VMs.
     - With scale sets, all VM instances are created from the same base OS image and configuration. This approach lets you easily manage hundreds of VMs without additional configuration tasks or network management.
-    - Scale sets support the use of the [Azure load balancer](../load-balancer/load-balancer-overview.md) for basic layer-4 traffic distribution, and [Azure Application Gateway](../application-gateway/application-gateway-introduction.md) for more advanced layer-7 traffic distribution and SSL termination.
+    - Scale sets support the use of the Azure load balancer for basic layer-4 traffic distribution, and Azure Application Gateway for more advanced layer-7 traffic distribution and SSL termination.
 
 - **Provides high availability and application resiliency**
     - Scale sets are used to run multiple instances of your application. If one of these VM instances has a problem, customers continue to access your application through one of the other VM instances with minimal interruption.
-    - For additional availability, you can use [Availability Zones](../availability-zones/az-overview.md) to automatically distribute VM instances in a scale set within a single datacenter or across multiple datacenters.
+    - For additional availability, you can use Availability Zones to automatically distribute VM instances in a scale set within a single datacenter or across multiple datacenters.
 
 - **Allows your application to automatically scale as resource demand changes**
     - Customer demand for your application may change throughout the day or week. To match customer demand, scale sets can automatically increase the number of VM instances as application demand increases, then reduce the number of VM instances as demand decreases.
@@ -21,7 +21,7 @@ Azure virtual machine scale sets provide the management capabilities for applica
 
 - **Works at large-scale**
     - Scale sets support up to 1,000 VM instances. If you create and upload your own custom VM images, the limit is 300 VM instances.
-    - For the best performance with production workloads, use [Azure Managed Disks](../virtual-machines/windows/managed-disks-overview.md) and [Premium Storage](../virtual-machines/windows/premium-storage.md).
+    - For the best performance with production workloads, use Azure Managed Disks and Premium Storage.
 
 
 ## Differences between virtual machines and scale sets
