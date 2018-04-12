@@ -34,6 +34,5 @@ items:
     [!include[](includes/deploy-app-update-3.md)]
 - content: |
     You've completed the "Update an app from GitHub" quickstart.
-challenge:
-  uid: learn.deploy-custom-vmss-app.deploy-app-update.quiz
-  type: quiz
+quiz:
+  id: learn.deploy-custom-vmss-app.deploy-app-update.quiz
