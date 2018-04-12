@@ -1,11 +1,12 @@
-Throughout the lifecycle of a scale set, you may need to deploy an updated version of your application. With the Custom Script Extension, you can reference an updated deploy script and then reapply the extension to your scale set. When the scale set was created in a previous step, the `--upgrade-policy-mode` was set to *automatic*. This setting allows the VM instances in the scale set to automatically update and apply the latest version of your application.
+To update the app on your virtual machine scale set, you need to create another Custom Script Extension definition. For an updated defintion to successfully apply, the name or version of the scripts must be different from the previous defintion. A best practice is include a version number within the filename for your scripts. As the version number changes, the Custom Script Extension defintion also changes and successfully applies.
 
-In your current shell, create a file named *customConfigv2.json* and paste the following configuration. This definition runs an updated *v2* version of the application install script:
+Create a file named *customConfig2.json* in the Azure Cloud Shell that defines what files to download and run. This definition runs an updated *v2* version of the application install script. To see a list of available editors and create the file, type `sensible-editor customConfig2.json`. Paste the following template into the file: 
 
 ```json
 {
-  "fileUris": ["https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/automate_nginx_v2.sh"],
-  "commandToExecute": "./automate_nginx_v2.sh"
+  "fileUris": ["https://raw.githubusercontent.com/iainfoulds/compute-automation-configurations/nodejs-app/nodejs-app/hello-world-v2.js",
+    "https://raw.githubusercontent.com/iainfoulds/compute-automation-configurations/nodejs-app/nodejs-app/deploy-v2.sh"],
+  "commandToExecute": "./deploy-v2.sh"
 }
 ```
 
@@ -21,4 +22,4 @@ az vmss extension set \
     --settings @customConfigv2.json
 ```
 
-All VM instances in the scale set are automatically updated with the latest version of the sample web page.
+All VM instances in the scale set are automatically updated with the latest version of the sample web app.

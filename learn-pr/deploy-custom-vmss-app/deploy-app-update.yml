@@ -21,6 +21,8 @@ items:
 - title: Overview of app updates and CI/CD
   durationInMinutes: 5
   content: |
+    > [!Video Overview of app updates and CI/CD]
+
     [!include[](includes/deploy-app-update-1.md)]
 - title: Deploy app update from GitHub with the Custom Script Extension
   durationInMinutes: 3

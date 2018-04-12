@@ -1,3 +1,3 @@
-To see the updated version, refresh the web site in your browser:
+To see the updated version, refresh the site from the previous module in your browser:
 
 ![Updated app running on scale set]()

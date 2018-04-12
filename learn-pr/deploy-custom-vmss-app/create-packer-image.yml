@@ -15,9 +15,11 @@ metadata:
   ms.prod:
   ms.technology: virtual-machine-scale-set
 items:
-- durationInMinutes: 1
+- durationInMinutes: 3
   content: |
-    In this quickstart, you learn why and how to create a custom Linux VM image with Packer. This Packer image is used in the additional quickstarts as you deploy your virtual machine scale set and application.
+    In this module, you learn why and how to create a custom Linux VM image with Packer. This Packer image is used in the additional quickstarts as you deploy your virtual machine scale set and application.
+
+    > [!Video Intro to VM images and Packer]
 - title: Overview of Packer and image deployment
   durationInMinutes: 2
   content: |
@@ -31,11 +33,11 @@ items:
   content: |
     [!include[](includes/create-packer-image-3.md)]
 - title: Build Packer image
-  durationInMinutes: 8
+  durationInMinutes: 5
   content: |
     [!include[](includes/create-packer-image-4.md)]
 - content: |
-    You've completed the "Create a Packer image" quickstart.
+    You've completed the "Create a Packer image" module.
 challenge:
   uid: learn.deploy-custom-vmss-app.create-packer-image.quiz
   type: quiz

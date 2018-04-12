@@ -15,11 +15,13 @@ metadata:
   ms.prod:
   ms.technology: virtual-machine-scale-set
 items:
-- durationInMinutes: 1
+- durationInMinutes: 4
   content: |
-    In this quickstart, you use the Azure Custom Script Extension to deploy an app from GitHub. The custom script allows the latest code for your app to be deployed to the VM, rather than being baked into the Packer image.
+    In this quickstart module, you use the Azure Custom Script Extension to deploy an app from GitHub. The custom script allows the latest code for your app to be deployed to the VM, rather than being baked into the Packer image.
+
+    > [!Video Overview of Azure Custom Script Extension and installing applications]
 - title: Overview of the Azure Custom Script Extension
-  durationInMinutes: 5
+  durationInMinutes: 2
   content: |
     [!include[](includes/deploy-app-from-github-1.md)]
 - title: Deploy app from GitHub with the Custom Script Extension
@@ -31,7 +33,7 @@ items:
   content: |
     [!include[](includes/deploy-app-from-github-3.md)]
 - content: |
-    You've completed the "Deploy an app from GitHub" quickstart.
+    You've completed the "Deploy an app from GitHub" module.
 challenge:
   uid: learn.deploy-custom-vmss-app.deploy-app-from-github.quiz
   type: quiz
