@@ -6,19 +6,19 @@ iconUrl: http://via.placeholder.com/120x120
 metadata:
   title:  Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD)
 units:
-- uid: learn.deploy-apps-to-azure.create-vsts-project.yml
+- uid: learn.deploy-apps-to-azure.create-vsts-project
   type: tutorial
   durationInMinutes: 8
-- uid: learn.deploy-apps-to-azure.create-vs-web-app.yml
+- uid: learn.deploy-apps-to-azure.create-vs-web-app
   type: tutorial
   durationInMinutes: 10
-- uid: learn.deploy-apps-to-azure.create-vsts-build-definition.yml
+- uid: learn.deploy-apps-to-azure.create-vsts-build-definition
   type: tutorial
   durationInMinutes: 10
-- uid:  learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd.yml
+- uid:  learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd
   type: tutorial
   durationInMinutes: 5
-- uid:  learn.deploy-apps-to-azure.deploy-web-app-to-staging.yml
+- uid:  learn.deploy-apps-to-azure.deploy-web-app-to-staging
   type: tutorial
   durationInMinutes: 10
 achievement:

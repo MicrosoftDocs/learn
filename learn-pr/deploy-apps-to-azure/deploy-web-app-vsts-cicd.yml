@@ -7,8 +7,8 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: deploy-web-app-vsts-cicd
-  nextTutorialTitle: Deploy a Web App with VSTS and CI/CD
+  nextTutorialHref: deploy-web-app-to-staging
+  nextTutorialTitle: Deploy a Web App to staging site with VSTS and CI/CD
   displayType: one-column
   ms.custom:
   ms.prod:
