@@ -1,4 +1,4 @@
-Edit your app, then commit and push your changes to VSTS as follows:
+To see how changes commitd from VSTS are then deployed through CI/CD, edit your app to show an updated H1 in the web page. Commit and push your changes to VSTS as follows:
 
 1. In Visual Studio, open the **Solution Explorer** window.
 2. Navigate to and open *myWebApp | Views | Home | Index.cshtml*

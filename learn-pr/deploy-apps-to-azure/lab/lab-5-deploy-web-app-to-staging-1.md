@@ -1,4 +1,4 @@
-Create a staging slot for your Web App in the Azure portal:
+To use CI/CD best practices, we should change our workflow so that the build definition deploys to a staging slot rather than production. Create a staging slot for your Web App in the Azure portal:
 
 1. Open the Azure portal at [https://portal.azure.com](https://portal.azure.com) and sign in to your Azure account.
 2. From the navigation bar on the left-hand side of the screen, choose *Resource groups*.

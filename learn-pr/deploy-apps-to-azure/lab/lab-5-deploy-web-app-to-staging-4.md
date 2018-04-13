@@ -1,4 +1,4 @@
-After review of your app in staging, you can swap the Web App deployments to make your site live in production.
+After review of your app in staging, you can swap the Web App deployments to make your site live in production. To keep an audit trail in the CI/CD process, you could update your VSTS project to use approval rules. For this tutorial, lets manually swap the staging slot and production:
 
 1. In the Azure portal for your Web App staging slot, select **Swap**
 2. For **Source**, choose your staging slot, such as *staging*.
