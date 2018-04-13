@@ -1,6 +1,6 @@
-## Overview of Azure Web Apps
+> [!Video Intro to Azure Web Apps]
 
-*Azure App Service Web Apps* (or just Web Apps) is a service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on Windows or Linux-based environments.
+Azure App Service Web Apps (or just Web Apps) is a service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on Windows or Linux-based environments.
 
 Key features of Web Apps include:
 

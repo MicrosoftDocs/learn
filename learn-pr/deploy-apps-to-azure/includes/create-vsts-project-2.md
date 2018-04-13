@@ -1,5 +1,3 @@
-## Overview of Visual Studio Team Services
-
 Visual Studio Team Services (VSTS) is a collection of hosted DevOps services for application developers. *Build* and *Release* are two of the DevOps services in VSTS that help you manage continuous integration and delivery of your applications.
 
 Core components of VSTS include:
@@ -20,8 +18,7 @@ Core components of VSTS include:
 
     To author a release definition, you must specify the artifacts that make up the application and the release process. An artifact is a deployable component of your application. It is typically produced through a Continuous Integration or a build process.
 
-    You define environment, such as Azure App Service, as the deployment point for your app. When the release process runs, you application is deployed to the defined environment. 
-
+    You define environment, such as Azure App Service, as the deployment point for your app. When the release process runs, you application is deployed to the defined environment.
 
 - **Deployment groups** - A deployment group is a logical set of deployment target machines that have agents installed on each one. Deployment groups represent the physical environments such as "Dev", "Test", "UAT", and "Production". In effect, a deployment group is just another grouping of agents, much like an agent pool.
 

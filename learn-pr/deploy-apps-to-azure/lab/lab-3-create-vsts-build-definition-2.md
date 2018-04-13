@@ -1,15 +1,3 @@
-## Lab exercise 3 - Create VSTS build defintion for CI/CD pipeline
-
-To automatically build and deploy your application, you need to first push your code to VSTS as follows:
-
-1. In the **Team Explorer** window of Visual Studio, choose **Changes**:
-
-    ![Commit local changes to Team Services git repo](media/commit-changes.png)
-
-2. In the commit text box, enter a message such as *Initial commit*. Choose **Commit All and Sync** from the drop-down menu.
-
-### Create a VSTS build definition
-
 In Team Services, you use a build definition to outline how your application should be built. In this learning scenario, you create a basic definition that takes your source code, builds the solution, then creates artifacts to publish to a Web App on Azure
 
 1. In a web browser, open the VSTS project created at the start of this learning scenario.

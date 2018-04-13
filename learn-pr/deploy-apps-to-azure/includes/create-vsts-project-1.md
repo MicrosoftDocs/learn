@@ -1,8 +1,8 @@
-## Overview of continuous integration and continuous delivery (CI/CD)
+> [!Video Intro to CI/CD]
 
 DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. The contraction of "Dev" and "Ops" refers to replacing siloed *Development* and *Operations* to create multidisciplinary teams that now work together with shared and efficient practices and tools. Essential DevOps practices include continuous integration and continuous delivery.
 
-![Overview of DevOps lifecycle](media/devops-overview.png)
+![Overview of DevOps lifecycle](../../media/deploy-apps-to-azure/devops-overview.png)
 
 Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code. Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix. Automated tests execute as part of the CI process to ensure quality. Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments.
 

@@ -1,25 +1,28 @@
 ### YamlMime:Module
-uid: deploy-apps-to-azure
+uid: learn.deploy-apps-to-azure
 title: Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD)
 description: Learn how to deploy applications to Azure in a consistent manner with Visual Studio Team Services and CI/CD pipelines
 iconUrl: http://via.placeholder.com/120x120
 metadata:
-  title:  Introduction to C#
+  title:  Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD)
 units:
-- uid: learn.intro-to-csharp.hello-world
+- uid: learn.deploy-apps-to-azure.create-vsts-project.yml
   type: tutorial
-  durationInMinutes: 30
-- uid: learn.intro-to-csharp.branches
+  durationInMinutes: 8
+- uid: learn.deploy-apps-to-azure.create-vs-web-app.yml
   type: tutorial
   durationInMinutes: 10
-- uid: learn.intro-to-csharp.interpolated
+- uid: learn.deploy-apps-to-azure.create-vsts-build-definition.yml
   type: tutorial
-  durationInMinutes: 20
-- uid: learn.intro-to-csharp.numbers
+  durationInMinutes: 10
+- uid:  learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd.yml
   type: tutorial
-  durationInMinutes: 40
+  durationInMinutes: 5
+- uid:  learn.deploy-apps-to-azure.deploy-web-app-to-staging.yml
+  type: tutorial
+  durationInMinutes: 10
 achievement:
-  uid: learn.intro-to-csharp.achievement
-  name: "C# Beginner"
-  description: "First step completed towards a new life."
-  imageUrl: https://docs.microsoft.com/en-us/media/logos/logo_gremlin.svg
+  uid: learn.deploy-apps-to-azure.achievement
+  name: Deploy Apps to Azure Champ
+  description: Great job!
+  imageUrl: https://azure.microsoft.com/svghandler/virtual-machine-scale-sets/?width=600&height=315

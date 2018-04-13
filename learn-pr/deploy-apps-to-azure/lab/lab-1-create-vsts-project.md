@@ -1,5 +1,3 @@
-## Lab exercise 1 - Create a Visual Studio Team Services project
-
 To get started with CI/CD and manage the code commit process, build definitions, and release definitions, create a project in Visual Studio Team Services (VSTS) as follows:
 
 1. Open your Team Services dashboard in a web browser and choose **New project**.
