@@ -4,9 +4,9 @@ First, create a file named *customConfig.json* in the Azure Cloud Shell that def
 
 ```json
 {
-  "fileUris": ["https://raw.githubusercontent.com/iainfoulds/compute-automation-configurations/nodejs-app/nodejs-app/hello-world-v1.js",
-    "https://raw.githubusercontent.com/iainfoulds/compute-automation-configurations/nodejs-app/nodejs-app/nginx",
-    "https://raw.githubusercontent.com/iainfoulds/compute-automation-configurations/nodejs-app/nodejs-app/deploy-v1.sh"],
+  "fileUris": ["https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/nodejs-app/hello-world-v1.js",
+    "https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/nodejs-app/nginx",
+    "https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/nodejs-app/deploy-v1.sh"],
   "commandToExecute": "./deploy-v1.sh"
 }
 ```

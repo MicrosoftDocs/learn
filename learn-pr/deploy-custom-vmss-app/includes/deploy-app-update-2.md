@@ -4,8 +4,8 @@ Create a file named *customConfig2.json* in the Azure Cloud Shell that defines w
 
 ```json
 {
-  "fileUris": ["https://raw.githubusercontent.com/iainfoulds/compute-automation-configurations/nodejs-app/nodejs-app/hello-world-v2.js",
-    "https://raw.githubusercontent.com/iainfoulds/compute-automation-configurations/nodejs-app/nodejs-app/deploy-v2.sh"],
+  "fileUris": ["https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/nodejs-app/hello-world-v2.js",
+    "https://raw.githubusercontent.com/Azure-Samples/compute-automation-configurations/master/nodejs-app/deploy-v2.sh"],
   "commandToExecute": "./deploy-v2.sh"
 }
 ```
