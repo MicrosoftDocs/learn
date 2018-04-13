@@ -55,5 +55,5 @@ At the start of the *builder* section, replace the example Azure credential info
 When Packer builds this template:
 
 - the *builder* creates a base Ubuntu 16.04 LTS VM in Azure,
-- the *provisioner* installs NGINX, then deprovisions the VM and creates the image,
+- the *provisioner* installs NGINX, Node.js, and NPM, then deprovisions the VM and creates the image,
 - and the base resources for the VM are deleted.
