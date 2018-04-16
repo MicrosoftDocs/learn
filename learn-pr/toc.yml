@@ -1,4 +1,15 @@
 items:
+- name: Introduction to C#
+  uid: learn.intro-to-csharp
+  items:
+  - name: Hello C#
+    uid: learn.intro-to-csharp.hello-world
+  - name: Branches and Loops
+    uid: learn.intro-to-csharp.branches
+  - name: Interpolated Strings
+    uid: learn.intro-to-csharp.interpolated
+  - name: Numbers
+    uid: learn.intro-to-csharp.numbers
 - name: Modules
 - name: Tutorials
   items:
