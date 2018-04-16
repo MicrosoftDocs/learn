@@ -44,11 +44,15 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
+      "Conceptual": "Content",
+      "ManagedReference": "Content",
+      "RestApi": "Content",
+      "LandingData": "Content",
+      "ContextObject": "Toc",
+      "Tutorial": "Content",
+      "Module": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -65,13 +69,11 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
-    },
-    {
-      "path_to_root": "quiz-pr",
-      "url": "https://github.com/MicrosoftDocs/quiz-pr.git",
-      "branch": "master",
-      "branch_mapping": {}
     }
+  ],
+  "error_log_codes": [
+      "DuplicateUids",
+      "UidNotFound"
   ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false
