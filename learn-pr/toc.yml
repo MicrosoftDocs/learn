@@ -10,8 +10,13 @@ items:
     uid: learn.intro-to-csharp.interpolated
   - name: Numbers
     uid: learn.intro-to-csharp.numbers
+<<<<<<< HEAD
 - name: Modules
 - name: Tutorials
   items:
     - name: Build a serverless web app
       href: ./build-serverless-app/build-serverless-app.yml
+=======
+- name: Build a serverless web application
+  uid: learn.build-serverless-app
+>>>>>>> fix toc.yml
