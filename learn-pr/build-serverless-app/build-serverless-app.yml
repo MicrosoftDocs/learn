@@ -70,8 +70,7 @@ items:
   challenge:
     type: quiz
     uid: serverless-app-4
-- title: Next Steps
+- title: Next steps
   durationInMinutes: 0
   content: |
-    [!INCLUDE [](includes/overview-6-eventgrid.md)]
-    [!INCLUDE [](lab/lab-6-create-eventgrid.md)]
+    [!INCLUDE [](includes/overview-7-nextsteps.md)]
