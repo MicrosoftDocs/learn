@@ -57,3 +57,9 @@ items:
     [!INCLUDE [](includes/overview-6-eventgrid.md)]
     [!INCLUDE [](lab/lab-6-create-eventgrid.md)]
     [!code [event-grid-quiz](../../build-serverless-app/eventgrid-quiz.yml)]
+- title: Next Steps
+  durationInMinutes: 0
+  content: |
+    [!INCLUDE [](includes/overview-6-eventgrid.md)]
+    [!INCLUDE [](lab/lab-6-create-eventgrid.md)]
+    [!code [event-grid-quiz](../../build-serverless-app/eventgrid-quiz.yml)]
