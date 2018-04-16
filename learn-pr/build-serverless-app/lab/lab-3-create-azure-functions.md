@@ -12,48 +12,48 @@ The stateless web app that we are building will use four Azure functions. One of
 4. Storage - use the storage account created in lab 1.
 5. once your functions app is created, navigate to the functions app console.
 6. Click the + next to Functions and create a new javascript function.
-    a. HTTP Trigger
-    b. Select Javascript
-    c. Give it a name
-    d. Authorization Level: anonymous?
+  * HTTP Trigger
+  * Select Javascript
+  * Give it a name
+  * Authorization Level: anonymous?
 7. Repeat 4 times.
 8. Download the code from the **artifact repository**, and upload it to each function.
 
 ## Create the swagger definition
 
 1. PutImage
-    a. Click on Integrate
-    b. Allowed HTTP methods: Selected methods
-    c. Uncheck everything but POST
-    d. Authorization Level: Anonymous
-    e. Mode: Standard
-    f. Route template: /image/put
+  * Click on Integrate
+  * Allowed HTTP methods: Selected methods
+  * Uncheck everything but POST
+  * Authorization Level: Anonymous
+  * Mode: Standard
+  * Route template: /image/put
 2. GetImageList
-    a. Click on integrate
-    b. Allowed HTTP methods: Selected methods
-    c. Uncheck everything but GET
-    d. Authorization Level: Anonymous
-    e. Mode: Standard
-    f. Route template: /image/list
+  * Click on integrate
+  * Allowed HTTP methods: Selected methods
+  * Uncheck everything but GET
+  * Authorization Level: Anonymous
+  * Mode: Standard
+  * Route template: /image/list
 3. GetImageMetaData
-    a. Click on Integrate
-    b. Allowed HTTP methods: selected methods
-    c. Uncheck everything but GET
-    d. Authorization Level: Anonymous
-    e. Mode Standard
-    f. Route Template: /image/get/{imageId}
+  * Click on Integrate
+  * Allowed HTTP methods: selected methods
+  * Uncheck everything but GET
+  * Authorization Level: Anonymous
+  * Mode Standard
+  * Route Template: /image/get/{imageId}
 4. ProcessImage
-    a. Don't make it an HTTP trigger?
-    b. Delete it?
+  * Don't make it an HTTP trigger?
+  * Delete it?
 5. Now to create the actual swagger file
-    a. Click on the function high level definition
-    b. Click on platform features
-    c. Click on API definition
-    d. Click on Function
-    e. Click on Generate API Definition template
-    f. Click Save
+  * Click on the function high level definition
+  * Click on platform features
+  * Click on API definition
+  * Click on Function
+  * Click on Generate API Definition template
+  * Click Save
 
-## Reference 
+## Reference
 
 Look at this doc more and see if we need to update it
 https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition
