@@ -1,3 +1,5 @@
 - name: Docs
-  tocHref: /
-  topicHref: /
+  href: /
+  items:
+  - name: Learn
+    href: /learn/
