@@ -41,11 +41,8 @@ module.exports = function (context, req) {
 };
 ```
 
-## Create the GetImageLIst Function
-
-## Create the GetImageMetaData Function
-
 ## Create the ProcessImage Function
+
 1. Select **New Function**
 2. Enter `Event` into the filter box.
 3. Select Event Grid trigger
@@ -61,12 +58,19 @@ module.exports = function (context, req) {
 13. Select **Create**.
 14. Enter the following code in the 
 
-3. **Select** the name of the function.
-4. Copy the following code into the text box > **Save**
+15. **Select** the name of the function.
+16. Copy the following code into the text box > **Save**
 
 ```javascript
 
 ```
+
+17. Select the **Integrate** sub-tab of the function.
+18. Select **New Output**.
+19. Locate **Azure Cosmos DB** > **Select**.
+20. Change the **Database name** to `images`
+21. Select the checkbox to create the Azure Cosmos DB database and collection.
+22. **Save**
 
 ## Create the swagger definition
 
@@ -101,6 +105,12 @@ module.exports = function (context, req) {
   * Click on Function
   * Click on Generate API Definition template
   * Click Save
+
+## Stop Here
+
+## Create the GetImageLIst Function
+
+## Create the GetImageMetaData Function
 
 ## Hook your serverless app to your new functions
 
