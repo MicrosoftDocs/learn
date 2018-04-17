@@ -10,7 +10,7 @@ To get started with hosting a website in Azure blob storage perform the followin
 
 ![Navigate to storage account in the console][storage-account]
 
-4. Enter a name for your storage account.
+4. Enter a name for your storage account, in our examples we use `serverless34`
 
     This name must be globally unique; it is used as part of the URL used to access the objects in the storage account.
 
@@ -26,7 +26,7 @@ To get started with hosting a website in Azure blob storage perform the followin
 
 8. Select the subscription in which you want to create the new storage account.
 
-9. Specify a new resource group and enter a name for the new resource group for this set of tutorials: *myStatelessWebApp*.
+9. Specify a new resource group and enter a name for the new resource group for this set of tutorials: *ServerlessWebApp*.
 
 10. Select the region for your storage account.
 

@@ -62,7 +62,15 @@ module.exports = function (context, req) {
 16. Copy the following code into the text box > **Save**
 
 ```javascript
-
+module.exports = function (context, eventGridEvent) {
+    context.log(typeof eventGridEvent);
+    context.log(eventGridEvent);
+    context.outputDocument = eventGridEvent.data.url;
+    context.bindings.outputDocument = JSON.stringify({ 
+        id: eventGridEvent.data.url
+      });
+    context.done();
+};
 ```
 
 17. Select the **Integrate** sub-tab of the function.
