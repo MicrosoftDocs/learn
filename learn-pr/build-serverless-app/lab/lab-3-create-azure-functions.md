@@ -45,6 +45,29 @@ module.exports = function (context, req) {
 
 ## Create the GetImageMetaData Function
 
+## Create the ProcessImage Function
+1. Select **New Function**
+2. Enter `Event` into the filter box.
+3. Select Event Grid trigger
+4. Select **Javascript** from the **Language:** dropdown.
+5. Enter `imageProcessing` into the **Name:** field.
+6. Select **Create**.
+7. Once the function creates Select **Add Event Grid subscription**.
+8. Enter `imageProcessingGrid` in the **Name** field.
+9. Change the Topic Type to **Storage Accounts**.
+10. Select the resource group you created from the **Use existing** dropdown.
+11. Select your storage account from the **Instance** menu.
+12. Enter `img/{name}` in the **Prefix Filter**.
+13. Select **Create**.
+14. Enter the following code in the 
+
+3. **Select** the name of the function.
+4. Copy the following code into the text box > **Save**
+
+```javascript
+
+```
+
 ## Create the swagger definition
 
 1. PutImage
