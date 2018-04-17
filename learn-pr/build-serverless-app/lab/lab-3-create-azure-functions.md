@@ -7,8 +7,11 @@ The stateless web app that we are building will use four Azure functions. One of
 1. **Create a resource** > **Compute** > **Functions App**
 2. **App Name**.
 3. Select use an existing resource group
-4. Storage - use the storage account created in lab 1.
-5. once your functions app is created, navigate to the functions app console.
+4. Confirm your location, super important.
+5. Plan: Consumption
+6. OS: Windows
+7. Storage - use the storage account created in lab 1.
+8. once your functions app is created, navigate to the functions app console.
 
 ## Update the CORS settings
 
@@ -25,8 +28,12 @@ In a production environment it is safer to only allow access from your own
   * Authorization Level: anonymous?
 
 2. Create a trigger to write to blob storage
-  * Directions go here
-
+  * Click on Integrate
+  * Click on New Output
+  * Select Azure Blob storage
+  * Leave outputBlob as the Blob parameter name
+  * Path should be `container/img/{name}`
+  
 ```javascript
 module.exports = function (context, req) {
     context.log('JavaScript image uploader processed a request.');
@@ -41,6 +48,8 @@ module.exports = function (context, req) {
 };
 ```
 
+3. **Save**
+
 ## Create the ProcessImage Function
 
 1. Select **New Function**
@@ -54,9 +63,8 @@ module.exports = function (context, req) {
 9. Change the Topic Type to **Storage Accounts**.
 10. Select the resource group you created from the **Use existing** dropdown.
 11. Select your storage account from the **Instance** menu.
-12. Enter `img/{name}` in the **Prefix Filter**.
-13. Select **Create**.
-14. Enter the following code in the 
+12. Select **Create**.
+13. Enter the following code in the 
 
 15. **Select** the name of the function.
 16. Copy the following code into the text box > **Save**
@@ -78,7 +86,9 @@ module.exports = function (context, eventGridEvent) {
 19. Locate **Azure Cosmos DB** > **Select**.
 20. Change the **Database name** to `images`
 21. Select the checkbox to create the Azure Cosmos DB database and collection.
-22. **Save**
+22. Click on **new** next to the Azure Cosmos DB account connection.
+23. Select the Cosmos DB you created in Step 2
+24. **Save**
 
 ## Create the swagger definition
 
@@ -89,8 +99,9 @@ module.exports = function (context, eventGridEvent) {
   * Authorization Level: Anonymous
   * Mode: Standard
   * Route template: /image/put/{name}
+  * **Save**
 4. Now to create the actual swagger file
-  * Click on the function high level definition
+  * Click on the function name level definition
   * Click on platform features
   * Click on API definition
   * Click on Function
