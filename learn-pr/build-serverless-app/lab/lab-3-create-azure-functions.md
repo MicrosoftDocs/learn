@@ -81,6 +81,15 @@ module.exports = function (context, req) {
   * Authorization Level: Anonymous
   * Mode: Standard
   * Route template: /image/put/{name}
+4. Now to create the actual swagger file
+  * Click on the function high level definition
+  * Click on platform features
+  * Click on API definition
+  * Click on Function
+  * Click on Generate API Definition template
+  * Click Save
+
+## Stop Here
 2. GetImageList
   * Click on integrate
   * Allowed HTTP methods: Selected methods
@@ -95,19 +104,6 @@ module.exports = function (context, req) {
   * Authorization Level: Anonymous
   * Mode Standard
   * Route Template: /image/get/{name}
-4. ProcessImage
-  * Don't make it an HTTP trigger?
-  * Delete it?
-5. Now to create the actual swagger file
-  * Click on the function high level definition
-  * Click on platform features
-  * Click on API definition
-  * Click on Function
-  * Click on Generate API Definition template
-  * Click Save
-
-## Stop Here
-
 ## Create the GetImageLIst Function
 
 ## Create the GetImageMetaData Function
