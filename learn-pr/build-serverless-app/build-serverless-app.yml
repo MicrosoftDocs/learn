@@ -29,7 +29,7 @@ items:
     [!INCLUDE [](lab/lab-1-create-storage-account.md)]
   challenge:
     type: quiz
-    uid: serverless-app-6
+    uid: learn.serverless-app-storage.quiz
 - title: Create a Cosmos DB
   durationInMinutes: 5
   content: |
@@ -37,7 +37,7 @@ items:
     [!INCLUDE [](lab/lab-2-create-cosmos.md)]
   challenge:
     type: quiz
-    uid: serverless-app-3
+    uid: learn.serverless-app-cosmos.quiz
 - title: Create Azure functions
   durationInMinutes: 10
   content: |
@@ -45,7 +45,7 @@ items:
     [!INCLUDE [](lab/lab-3-create-azure-functions.md)]
   challenge:
     type: quiz
-    uid: serverless-app-5
+    uid: learn.serverless-app-functions.quiz
 - title: Create API management to front the Azure functions
   durationInMinutes: 5
   content: |
@@ -53,7 +53,7 @@ items:
     [!INCLUDE [](lab/lab-4-create-api-management.md)]
   challenge:
     type: quiz
-    uid: serverless-app-1
+    uid: learn.serverless-app-apim.quiz
 - title: Create Computer Vision API
   durationInMinutes: 3
   content: |
@@ -61,7 +61,7 @@ items:
     [!INCLUDE [](lab/lab-5-create-computer-vision.md)]
   challenge:
     type: quiz
-    uid: serverless-app-2
+    uid: learn.serverless-app-computer-vision.quiz
 - title: Connect your storage to Computer API with EventGrid
   durationInMinutes: 5
   content: |
@@ -69,7 +69,7 @@ items:
     [!INCLUDE [](lab/lab-6-create-eventgrid.md)]
   challenge:
     type: quiz
-    uid: serverless-app-4
+    uid: learn.serverless-app-eventgrid.quiz
 - title: Next steps
   durationInMinutes: 0
   content: |
