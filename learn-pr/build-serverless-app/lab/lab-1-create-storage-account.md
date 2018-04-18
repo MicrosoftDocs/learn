@@ -36,7 +36,7 @@ To get started with hosting a website in Azure blob storage perform the followin
 
 1. Open your storage account
 2. Click on **Add**.
-3. Give it a name.
+3. Enter `$root` for the name.
 4. Select **Create**.
 
 ## Install the application
