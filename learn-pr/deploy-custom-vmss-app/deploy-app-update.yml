@@ -1,0 +1,39 @@
+### YamlMime:Tutorial
+uid: learn.deploy-custom-vmss-app.deploy-app-update
+title: Update an app from GitHub
+metadata:
+  title: Deploy an application update from GitHub to an Azure virtual machine scale set
+  description: Learn how to deploy an application update from GitHub to the VM instances in a scale set with the the Azure Custom Script Extension
+  audience: Developer
+  level: Intermediate
+  ms.topic: get-started-article
+  nextTutorialHref:
+  nextTutorialTitle:
+  displayType: two-column
+  interactive: azurecli
+  ms.custom:
+  ms.prod:
+  ms.technology: virtual-machine-scale-set
+items:
+- durationInMinutes: 1
+  content: |
+    In this quickstart, you deploy an appplication update from from GitHub with the Azure Custom Script Extension. This app update could be integrated with continuous integration / continuous deployment (CI/CD) for rolling app updates to VM instances in a scale set.
+- title: Overview of app updates and CI/CD
+  durationInMinutes: 5
+  content: |
+    > [!Video Overview of app updates and CI/CD]
+
+    [!include[](includes/deploy-app-update-1.md)]
+- title: Deploy app update from GitHub with the Custom Script Extension
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/deploy-app-update-2.md)]
+- title: View the updated app on your scale set
+  durationInMinutes: 1
+  content: |
+    [!include[](includes/deploy-app-update-3.md)]
+- content: |
+    You've completed the "Update an app from GitHub" quickstart.
+challenge:
+  uid: learn.deploy-custom-vmss-app.deploy-app-update.quiz
+  type: quiz
