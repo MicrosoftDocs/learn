@@ -19,6 +19,16 @@ Go to the functions app and remove all the existing CORS entries, then add a * t
 
 In a production environment it is safer to only allow access from your own
 
+## Enable Managed service identity (MSI)
+
+Managed service identity allows your all of your functions to communicate with other Azure services as themselves.  You will use this feature to communicate with Cosmos DB instead of storing keys or passwords in your code.
+
+1. In the platform features section select Managed service identity.
+2. Select **On**
+3. Select **Save**
+
+![Enable MSI][enable-msi]
+
 ## Create the PutImage Function
 
 1. Click the + next to Functions and create a new javascript function.
@@ -50,9 +60,23 @@ module.exports = function (context, req) {
 
 3. **Save**
 
-## Create the GetImageLIst Function
+## Grant Access to the functions App to Cosmos DB
 
-## Create the GetImageMetaData Function
+1. Navigate to the Cosmos DB console
+2. Select the Cosmos DB you created in the previous section.
+3. Select Access control (IAM)
+4. Click **Add**
+5. In the Role drop down select **Contributor**
+6. Assign access to **Function App**
+7. Select your Subscription.
+8. Select the resource group you created in the first module.
+
+## Create the GetImageList Function
+
+stuff
+
+```javascript
+```
 
 ## Create the ProcessImage Function
 
@@ -137,3 +161,6 @@ go to your container
 go to the js folder
 Edit the file
 paste the url on line ???
+
+<!-- Images -->
+[enable-msi]: ../media/lab-3-functions-msi.png
