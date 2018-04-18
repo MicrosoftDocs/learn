@@ -112,11 +112,12 @@ module.exports = function (context, eventGridEvent) {
 17. Select the **Integrate** sub-tab of the function.
 18. Select **New Output**.
 19. Locate **Azure Cosmos DB** > **Select**.
-20. Change the **Database name** to `images`
-21. Select the checkbox to create the Azure Cosmos DB database and collection.
-22. Click on **new** next to the Azure Cosmos DB account connection.
-23. Select the Cosmos DB you created in Step 2
-24. **Save**
+20. Change the **Database name** to `servless-app`
+21. Change the **Collection Name** to `images`
+22. Select the checkbox to create the Azure Cosmos DB database and collection.
+23. Click on **new** next to the Azure Cosmos DB account connection.
+24. Select the Cosmos DB you created in Step 2
+25. **Save**
 
 ## Create the swagger definition
 

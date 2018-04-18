@@ -46,31 +46,23 @@ items:
   challenge:
     type: quiz
     uid: learn.serverless-app-functions.quiz
-- title: Create API management to front the Azure functions
-  durationInMinutes: 5
-  content: |
-    [!INCLUDE [](includes/overview-4-api-management.md)]
-    [!INCLUDE [](lab/lab-4-create-api-management.md)]
-  challenge:
-    type: quiz
-    uid: learn.serverless-app-apim.quiz
 - title: Create Computer Vision API
   durationInMinutes: 3
   content: |
-    [!INCLUDE [](includes/overview-5-computer-vision.md)]
-    [!INCLUDE [](lab/lab-5-create-computer-vision.md)]
+    [!INCLUDE [](includes/overview-4-computer-vision.md)]
+    [!INCLUDE [](lab/lab-4-create-computer-vision.md)]
   challenge:
     type: quiz
     uid: learn.serverless-app-computer-vision.quiz
 - title: Connect your storage to Computer API with EventGrid
   durationInMinutes: 5
   content: |
-    [!INCLUDE [](includes/overview-6-eventgrid.md)]
-    [!INCLUDE [](lab/lab-6-create-eventgrid.md)]
+    [!INCLUDE [](includes/overview-5-eventgrid.md)]
+    [!INCLUDE [](lab/lab-5-create-eventgrid.md)]
   challenge:
     type: quiz
     uid: learn.serverless-app-eventgrid.quiz
 - title: Next steps
   durationInMinutes: 0
   content: |
-    [!INCLUDE [](includes/overview-7-nextsteps.md)]
+    [!INCLUDE [](includes/overview-6-nextsteps.md)]
