@@ -33,7 +33,7 @@ In a production environment it is safer to only allow access from your own
   * Select Azure Blob storage
   * Leave outputBlob as the Blob parameter name
   * Path should be `container/img/{name}`
-  
+
 ```javascript
 module.exports = function (context, req) {
     context.log('JavaScript image uploader processed a request.');
@@ -49,6 +49,10 @@ module.exports = function (context, req) {
 ```
 
 3. **Save**
+
+## Create the GetImageLIst Function
+
+## Create the GetImageMetaData Function
 
 ## Create the ProcessImage Function
 
@@ -100,15 +104,6 @@ module.exports = function (context, eventGridEvent) {
   * Mode: Standard
   * Route template: /image/put/{name}
   * **Save**
-4. Now to create the actual swagger file
-  * Click on the function name level definition
-  * Click on platform features
-  * Click on API definition
-  * Click on Function
-  * Click on Generate API Definition template
-  * Click Save
-
-## Stop Here
 2. GetImageList
   * Click on integrate
   * Allowed HTTP methods: Selected methods
@@ -116,6 +111,7 @@ module.exports = function (context, eventGridEvent) {
   * Authorization Level: Anonymous
   * Mode: Standard
   * Route template: /image/list
+  * **Save**
 3. GetImageMetaData
   * Click on Integrate
   * Allowed HTTP methods: selected methods
@@ -123,9 +119,14 @@ module.exports = function (context, eventGridEvent) {
   * Authorization Level: Anonymous
   * Mode Standard
   * Route Template: /image/get/{name}
-## Create the GetImageLIst Function
-
-## Create the GetImageMetaData Function
+  * **Save**
+4. Now to create the actual swagger file
+  * Click on the function name level definition
+  * Click on platform features
+  * Click on API definition
+  * Click on Function
+  * Click on Generate API Definition template
+  * Click Save
 
 ## Hook your serverless app to your new functions
 
