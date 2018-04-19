@@ -1,5 +1,7 @@
 ## Lab exercise 2 - Create Cosmos DB
 
+In this lab exercise you will create an instance of Cosmos DB to house all of the meta data for each image that is uploaded to your web application.
+
 In this step you are going to create a Cosmos DB to house all of the meta data about the images.
 
 1. Select **All services** from the left hand context menu.

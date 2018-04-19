@@ -1,6 +1,6 @@
 ## Lab exercise 3 - Create Azure Functions
 
-The stateless web app that we are building will use four Azure functions. One of the functions will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API.  The other three will back the three APIs that the website uses (to upload images, retrieve the list of images, retrieve the metadata).
+The stateless web app that we are building will use three Azure functions. One of the functions will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API.  The other two will back the APIs that the website uses (to upload images and retrieve the list of images).
 
 ## Create the functions app
 
