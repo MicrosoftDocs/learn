@@ -18,11 +18,13 @@
 ```javascript
 module.exports = function (context, eventGridEvent) {
     var path = eventGridEvent.data.url.split('/').pop();
-    var data = {
-        id: path,
-        url: eventGridEvent.data.url,
-    };
-    context.bindings.outputDocument = data;
+    if (path.indexOf("/img/") > -1){
+        var data = {
+            id: path,
+            url: eventGridEvent.data.url,
+        };
+        context.bindings.outputDocument = data;
+    }
     context.done();
 };
 ```
