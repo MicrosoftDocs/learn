@@ -1,4 +1,4 @@
-## Lab exercise 5 - Create Computer vision API
+## Lab exercise 4 - Create Computer vision API
 
 1. Add, scroll down and select computer vision API -> **Create**.
 2. Name
