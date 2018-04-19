@@ -62,6 +62,11 @@ items:
   challenge:
     type: quiz
     uid: learn.serverless-app-eventgrid.quiz
+- title: Connect your storage to Computer API with EventGrid
+  durationInMinutes: 5
+  content: |
+    [!INCLUDE [](includes/overview-6-test-cleanup.md)]
+    [!INCLUDE [](lab/lab-6-cleanup.md)]
 - title: Next steps
   durationInMinutes: 0
   content: |

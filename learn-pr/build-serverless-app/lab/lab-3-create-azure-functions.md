@@ -5,23 +5,24 @@ The stateless web app that we are building will use four Azure functions. One of
 ## Create the functions app
 
 1. **Create a resource** > **Compute** > **Functions App**
-2. **App Name**.
-3. Select use an existing resource group
-4. Confirm your location, super important.
-5. Plan: Consumption
-6. OS: Windows
-7. Storage - use the storage account created in lab 1.
-8. once your functions app is created, navigate to the functions app console.
+2. Enter a unique name into the **App name** text box, this tutorial will use `serverlessApp`
+3. Select your subscription.
+4. Select use an existing resource group and then select `serverlessRG`
+5. Confirm your location is the same as your storage - this defaults to a different region.
+6. Select **Consumption** for the Hosting Plan.
+7. Select **Windows** for the OS.
+8. Select **Use existing** for your storage account, and then select `serverlessStorage`.
+9. **Create** 
 
 ## Update the CORS settings
 
 Go to the functions app and remove all the existing CORS entries, then add a * to allow access from all resources.
 
-In a production environment it is safer to only allow access from your own
+In a production environment it is safer to only allow access from your own URL.
 
 ## Enable Managed service identity (MSI)
 
-Managed service identity allows your all of your functions to communicate with other Azure services as themselves.  You will use this feature to communicate with Cosmos DB instead of storing keys or passwords in your code.
+Managed service identity allows your all of your functions in the app to communicate with other Azure services as themselves.  You will use this feature to communicate with Cosmos DB instead of storing keys or passwords in your code.
 
 1. In the platform features section select Managed service identity.
 2. Select **On**
@@ -32,17 +33,18 @@ Managed service identity allows your all of your functions to communicate with o
 ## Create the PutImage Function
 
 1. Click the + next to Functions and create a new javascript function.
-  * HTTP Trigger
-  * Select Javascript
-  * Give it a name
-  * Authorization Level: anonymous?
+  * Select **HTTP Trigger**
+  * Select **JavaScript** from the Language dropdown
+  * Enter `PutImage` in the name field
+  * Authorization Level: anonymous
 
-2. Create a trigger to write to blob storage
-  * Click on Integrate
-  * Click on New Output
-  * Select Azure Blob storage
+2. Create a output binding to write to blob storage
+  * Select **Integrate**
+  * Select **New Output**
+  * Select Azure Blob storage > **Select**
   * Leave outputBlob as the Blob parameter name
   * Path should be `container/img/{name}`
+  * **Save**
 
 ```javascript
 module.exports = function (context, req) {
@@ -51,8 +53,7 @@ module.exports = function (context, req) {
 
     context.bindings.outputBlob = Buffer.from(base64[3], 'base64');
     context.res = {
-            // status: 200, /* Defaults to 200 */
-            data: "Upload Successful!"
+            body: "Upload Successful!"
         };
     context.done();
 };
@@ -60,64 +61,50 @@ module.exports = function (context, req) {
 
 3. **Save**
 
-## Grant Access to the functions App to Cosmos DB
+## Grant Azure functions access to your Cosmos DB
 
 1. Navigate to the Cosmos DB console
 2. Select the Cosmos DB you created in the previous section.
 3. Select Access control (IAM)
-4. Click **Add**
-5. In the Role drop down select **Contributor**
-6. Assign access to **Function App**
-7. Select your Subscription.
-8. Select the resource group you created in the first module.
+4. Select **Add**
+5. Select **Contributor** in the Role dropdown
+6. Select **Function App** in the Assign access to dropdown
+7. Select your subscription.
+8. Select the resource group you created in the first lab.
+9. Select the functions app.
+10. **Save**
 
 ## Create the GetImageList Function
 
-stuff
+1. Navigate back to your functions app
+2. Select the + next to Functions.
+  * Select **HTTP Trigger**
+  * Select **JavaScript** from the Language dropdown
+  * Enter `GetImageList` in the name field
+  * Select **Anonymous** from the Authorization level dropdown.
+  * **Create**
+3. Replace the code in the editor with the following:
 
 ```javascript
-```
+module.exports = function (context, req) {
+    context.res = {
+        body: context.bindings.images
+    };
 
-## Create the ProcessImage Function
-
-1. Select **New Function**
-2. Enter `Event` into the filter box.
-3. Select Event Grid trigger
-4. Select **Javascript** from the **Language:** dropdown.
-5. Enter `imageProcessing` into the **Name:** field.
-6. Select **Create**.
-7. Once the function creates Select **Add Event Grid subscription**.
-8. Enter `imageProcessingGrid` in the **Name** field.
-9. Change the Topic Type to **Storage Accounts**.
-10. Select the resource group you created from the **Use existing** dropdown.
-11. Select your storage account from the **Instance** menu.
-12. Select **Create**.
-13. Enter the following code in the 
-
-15. **Select** the name of the function.
-16. Copy the following code into the text box > **Save**
-
-```javascript
-module.exports = function (context, eventGridEvent) {
-    context.log(typeof eventGridEvent);
-    context.log(eventGridEvent);
-    context.outputDocument = eventGridEvent.data.url;
-    context.bindings.outputDocument = JSON.stringify({ 
-        id: eventGridEvent.data.url
-      });
     context.done();
 };
 ```
 
-17. Select the **Integrate** sub-tab of the function.
-18. Select **New Output**.
-19. Locate **Azure Cosmos DB** > **Select**.
-20. Change the **Database name** to `servless-app`
-21. Change the **Collection Name** to `images`
-22. Select the checkbox to create the Azure Cosmos DB database and collection.
-23. Click on **new** next to the Azure Cosmos DB account connection.
-24. Select the Cosmos DB you created in Step 2
-25. **Save**
+4. Create an input binding to read from Azure Cosmos DB
+  * Select **Integrate**
+  * Select **New Input**
+  * Select Azure Cosmos DB > **Select**
+  * Enter `images` in the Document parameter name field.
+  * Enter `serverless-app` in the Database name field.
+  * Enter `images` in the Collection Name field.
+  * Select **new** next to the Cosmos DB account connection field.
+  * Select your Cosmos DB that was created in the previous lab.
+  * **Save**
 
 ## Create the swagger definition
 
@@ -130,24 +117,15 @@ module.exports = function (context, eventGridEvent) {
   * Route template: /image/put/{name}
   * **Save**
 2. GetImageList
-  * Click on integrate
-  * Allowed HTTP methods: Selected methods
+  * Select Integrate, ensure that the trigger is selected: HTTP (req)
+  * Change the Allowed HTTP methods dropdown to **Selected methods**
   * Un-check everything but GET
   * Authorization Level: Anonymous
   * Mode: Standard
   * Route template: /image/list
   * **Save**
-3. GetImageMetaData
-  * Click on Integrate
-  * Allowed HTTP methods: selected methods
-  * Un-check everything but GET
-  * Authorization Level: Anonymous
-  * Mode Standard
-  * Route Template: /image/get/{name}
-  * **Save**
-4. Now to create the actual swagger file
-  * Click on the function name level definition
-  * Click on platform features
+3. Now to create the actual swagger file
+  * Select platform features
   * Click on API definition
   * Click on Function
   * Click on Generate API Definition template
@@ -155,13 +133,12 @@ module.exports = function (context, eventGridEvent) {
 
 ## Hook your serverless app to your new functions
 
-Go to the correct screen
-and copy the url
-go to your storage account
-go to your container
-go to the js folder
-Edit the file
-paste the url on line ???
+1. Select the function app
+2. Select **Overview**
+3. Copy the URL
+4. Navigate to your storage account.
+5. **Blobs** > **serverlessContainer** > **js** > **uploader.js** > **Edit blob**
+6. Paste your URL into the quotations on line 1.
 
 <!-- Images -->
 [enable-msi]: ../media/lab-3-functions-msi.png

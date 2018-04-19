@@ -2,6 +2,18 @@
 
 To get started with hosting a website in Azure blob storage perform the following steps:
 
+In this lab we are going to create 
+
+## Before you begin
+
+as
+
+## Create a resource group
+
+as
+
+## Create a storage account
+
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
 2. Navigate to **All services** -> Enter **Storage account** in the filter box.
@@ -22,7 +34,7 @@ To get started with hosting a website in Azure blob storage perform the followin
 
     When you select GPv2, the performance tier is set to Standard. Tiered storage is not available with the Premium performance tier.
 
-7. Select the right storage tier for your needs: Set the **Access tier** to either **Cool** or **Hot**. The default is **Hot**.
+7. Set the **Access tier** to **Hot**.
 
 8. Select the subscription in which you want to create the new storage account.
 
@@ -36,15 +48,30 @@ To get started with hosting a website in Azure blob storage perform the followin
 
 1. Open your storage account
 2. Click on **Add**.
-3. Enter `$root` for the name.
-4. Select **Create**.
+3. Enter a unique name for this module we will use `serverlessRG`.
+4. Change the Public access level to **Container**
+5. Select **Ok**.
 
 ## Install the application
 
-1. Download the sample website from **Artifact location**
-2. Upload it into your storage container
-3. Retrieve the URL
-4. Browse to it in your favorite web browser
+1. In cloudshell execute the following commands to clone the example repo and push it into your storage container:
+
+```azurecli
+git clone https://github.com/david-stanford/serverless.git
+cd serverless
+find the rest of the commands.
+```
+
+2. Next you'll retrieve the URL to the index page:
+
+```azurecli
+
+``` 
+
+3. Browse to it in your favorite web browser
+
+![Serverless web application][serverless-webapp]
 
 <!-- Images -->
 [storage-account]: ../media/lab-1-storage-account.png
+[serverless-webapp]: ../media/lab-1-storage-final.png
