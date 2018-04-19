@@ -22,7 +22,7 @@ as
 
 ![Navigate to storage account in the console][storage-account]
 
-4. Enter a name for your storage account, in our examples we use `serverless34`
+4. Enter a name for your storage account, in our examples we use `serverlessStorage`
 
     This name must be globally unique; it is used as part of the URL used to access the objects in the storage account.
 
@@ -48,7 +48,7 @@ as
 
 1. Open your storage account
 2. Click on **Add**.
-3. Enter a unique name for this module we will use `serverlessRG`.
+3. Enter a unique name for this module we will use `serverlessContainer`.
 4. Change the Public access level to **Container**
 5. Select **Ok**.
 

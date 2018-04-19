@@ -43,7 +43,7 @@ Managed service identity allows your all of your functions in the app to communi
   * Select **New Output**
   * Select Azure Blob storage > **Select**
   * Leave outputBlob as the Blob parameter name
-  * Path should be `container/img/{name}`
+  * Path should be `serverlessContainer/img/{name}` be sure to replace serverlessContainer with your own container.
   * **Save**
 
 ```javascript
