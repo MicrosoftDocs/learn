@@ -18,7 +18,7 @@
 ```javascript
 module.exports = function (context, eventGridEvent) {
     var path = eventGridEvent.data.url.split('/').pop();
-    if (path.indexOf("/img/") > -1){
+    if (eventGridEvent.data.url.indexOf("/img/") > -1){
         var data = {
             id: path,
             url: eventGridEvent.data.url,
