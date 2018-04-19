@@ -1,12 +1,10 @@
 ## Lab exercise 1 - Host a website in Azure blob storage
 
-To get started with hosting a website in Azure blob storage perform the following steps:
-
-In this lab we are going to create 
+In this lab exercise you will create a resource group to house all of the resources you create in this series. Additionally, you will create an Azure storage account and a container to host your static resources.
 
 ## Before you begin
 
-This tutorial 
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Open Azure Cloud Shell
 
