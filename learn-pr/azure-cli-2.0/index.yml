@@ -29,6 +29,6 @@ units:
   durationInMinutes: 5
 achievement:
   uid: learn.azure-cli-2.achievement
-  name: "C# Beginner"
+  name: "Azure CLI 2.0 User"
   description: "First step completed towards a new life."
-  imageUrl: https://docs.microsoft.com/en-us/media/logos/logo_gremlin.svg
+  imageUrl: https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ff2cb77-e969-4107-b0bf-c008148d580b.jpg
