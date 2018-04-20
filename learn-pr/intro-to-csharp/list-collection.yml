@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.intro-to-csharp.list-collection
+uid: learn-pr.intro-to-csharp.list-collection
 title: Collections in C#
 metadata:
   title: Collections in C# interactive tutorial - C# quickstarts
@@ -47,5 +47,5 @@ items:
     You can learn more about working with the `List` type in the
     [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.
 challenge:
-  uid: learn.intro-to-csharp.list-collections.quiz
+  uid: learn-pr.intro-to-csharp.list-collections.quiz
   type: quiz
