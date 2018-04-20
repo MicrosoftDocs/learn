@@ -34,5 +34,5 @@ items:
         With cleanup completed, the tutorial is finished. Continue on for a summary of everything
         you learned and links to resources that will help you with your next steps.
 challenge:
-  uid: learn.deploy-custom-vmss-app.create-packer-image.quiz
+  uid: learn.azure-cli-2-queries.quiz
   type: quiz

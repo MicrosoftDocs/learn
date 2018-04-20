@@ -3,7 +3,7 @@ uid: learn.azure-cli-2.create-vm
 title: Create a virtual machine | Microsoft Docs
 metadata:
   title: Create a virtual machine
-  description: Retrieve detailed information about your new VM.
+  description: Create your first VM.
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
@@ -34,5 +34,5 @@ items:
         With cleanup completed, the tutorial is finished. Continue on for a summary of everything
         you learned and links to resources that will help you with your next steps.
 challenge:
-  uid: learn.deploy-custom-vmss-app.create-packer-image.quiz
+  uid: learn.azure-cli-2-create-vm.quiz
   type: quiz
