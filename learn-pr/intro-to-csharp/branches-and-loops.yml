@@ -41,6 +41,6 @@ items:
 - title: Complete challenge
   durationInMinutes: 1
   content: |
-  [!include[](includes/branches-and-loops-6.md)]
+    [!include[](includes/branches-and-loops-6.md)]
   content: |
     You've completed the "branches and loops" quickstart.
