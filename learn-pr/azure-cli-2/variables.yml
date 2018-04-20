@@ -1,14 +1,14 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli-2.cleanup
-title: Clean up your Azure CLI 2.0 lab | Microsoft Docs
+uid: learn.azure-cli-2.variables
+title: Set environment variables | Microsoft Docs
 metadata:
-  title: Cleanup
-  description: Clean up your created resources. 
+  title: Set environment variables
+  description: Set environment variables from CLI output.
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: 
-  nextTutorialTitle:
+  nextTutorialHref: learn.azure-cli-2.subnet
+  nextTutorialTitle: Creating a new VM on the existing subnet
   displayType: two-column
   interactive: azurecli
   ms.custom:

@@ -1,14 +1,14 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli-2.cleanup
-title: Clean up your Azure CLI 2.0 lab | Microsoft Docs
+uid: learn.azure-cli-2.create-vm
+title: Create a virtual machine | Microsoft Docs
 metadata:
-  title: Cleanup
-  description: Clean up your created resources. 
+  title: Create a virtual machine
+  description: Retrieve detailed information about your new VM.
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: 
-  nextTutorialTitle:
+  nextTutorialHref: learn.azure-cli-2.queries
+  nextTutorialTitle: Get VM information with queries
   displayType: two-column
   interactive: azurecli
   ms.custom:

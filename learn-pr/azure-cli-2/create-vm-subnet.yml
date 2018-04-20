@@ -1,14 +1,14 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli-2.cleanup
-title: Clean up your Azure CLI 2.0 lab | Microsoft Docs
+uid: learn.azure-cli-2.subnet
+title: Creating a new VM on the existing subnet | Microsoft Docs
 metadata:
-  title: Cleanup
-  description: Clean up your created resources. 
+  title: Creating a new VM on the existing subnet
+  description: Create a new VM.
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: 
-  nextTutorialTitle:
+  nextTutorialHref: learn.azure-cli-2.cleanup
+  nextTutorialTitle: Clean up your Azure CLI 2.0 lab
   displayType: two-column
   interactive: azurecli
   ms.custom:
