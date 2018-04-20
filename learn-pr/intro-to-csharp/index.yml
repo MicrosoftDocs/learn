@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-to-csharp
 title: Introduction to C#
-description: An introduction to the C# language.
+description: Learn the basics of C# syntax and how to work with data types like strings, numbers, and booleans.
 iconUrl: http://via.placeholder.com/120x120
 metadata:
   title:  Introduction to C#
@@ -9,15 +9,18 @@ units:
 - uid: learn.intro-to-csharp.hello-world
   type: tutorial
   durationInMinutes: 30
+- uid: learn.intro-to-csharp.numbers
+  type: tutorial
+  durationInMinutes: 30
 - uid: learn.intro-to-csharp.branches
   type: tutorial
-  durationInMinutes: 10
+  durationInMinutes: 40
 - uid: learn.intro-to-csharp.interpolated
   type: tutorial
   durationInMinutes: 20
-- uid: learn.intro-to-csharp.numbers
+- uid: learn.intro-to-csharp.list-collection
   type: tutorial
-  durationInMinutes: 40
+  durationInMinutes: 30
 achievement:
   uid: learn.intro-to-csharp.achievement
   name: "C# Beginner"
