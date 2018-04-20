@@ -23,13 +23,13 @@ items:
 
         ```bash
         VM2_IP_ADDR=$(az vm create -g TutorialResources \
-          -n TutorialVM2 \
+          -n TutorialVM2 \ 
           --image UbuntuLTS \
           --generate-ssh-keys \
           --subnet $SUBNET_ID \
           --query publicIpAddress \
           -o tsv)
-        ```
+         ``` 
 
         Using the stored IP address, SSH into the newly created VM.
 
