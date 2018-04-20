@@ -7,8 +7,8 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.achievement
-  nextTutorialTitle: Create a virtual machine scale set from the Packer image
+  nextTutorialHref: 
+  nextTutorialTitle:
   displayType: two-column
   interactive: azurecli
   ms.custom:
