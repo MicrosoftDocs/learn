@@ -23,13 +23,13 @@ items:
      az group delete --name TutorialResources --no-wait
     ```
 
-   This command deletes the resources created during the tutorial, and is guaranteed to deallocate them in the correct order. The `--no-wait` parameter keeps the CLI from blocking while the deletion takes place. If you want to wait until the deletion is complete or watch it progress, use the `group wait` command.
+    This command deletes the resources created during the tutorial, and is guaranteed to deallocate them in the correct order. The `--no-wait` parameter keeps the CLI from blocking while the deletion takes place. If you want to wait until the deletion is complete or watch it progress, use the `group wait` command.
 
     ```azurecli
      az group wait --name TutorialResources --deleted
     ```
 
-   With cleanup completed, the tutorial is finished. Continue on for a summary of everything you learned and links to resources that will help you with your next steps.
+    With cleanup completed, the tutorial is finished. Continue on for a summary of everything you learned and links to resources that will help you with your next steps.
 
 challenge:
   uid: learn.azure-cli-2-cleanup.quiz
