@@ -17,7 +17,7 @@ metadata:
 items:
 - durationInMinutes: 3
   content: |
-    Now that the tutorial is complete, it's time to clean up the created resources. You can delete individual resources with the `delete` command, but the safest way to remove all resources in a resource group is with `group delete`.
+    For the last activity in this tutorial is complete, it's time to clean up the created resources. You can delete individual resources with the `delete` command, but the safest way to remove all resources in a resource group is with `group delete`.
 
   ```azurecli
      az group delete --name TutorialResources --no-wait
@@ -34,5 +34,5 @@ items:
         With cleanup completed, the tutorial is finished. Continue on for a summary of everything
         you learned and links to resources that will help you with your next steps.
 challenge:
-  uid: learn.deploy-custom-vmss-app.create-packer-image.quiz
+  uid: learn.azure-cli-2-cleanup.quiz
   type: quiz
