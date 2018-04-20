@@ -15,7 +15,7 @@ metadata:
   ms.prod:
   ms.technology: azure
 items:
-- durationInMinutes: 3
+- durationInMinutes: 4
   content: |
     Now that the tutorial is complete, it's time to clean up the created resources. You can delete individual resources with the `delete` command, but the safest way to remove all resources in a resource group is with `group delete`.
 
