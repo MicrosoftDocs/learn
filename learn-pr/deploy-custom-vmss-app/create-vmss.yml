@@ -19,7 +19,7 @@ items:
   content: |
     In this module, you create an Azure virtual machine scale set that uses the Packer image for each VM instance in the scale set. This Packer image has all the application components needed to run your applications. You also configure the Azure load balancer so that it is able to distribute traffic to the VM instances in the scale set.
 
-    > [!VIDEO https://youtu.be/JXLyFaPp7UU]
+    > [!VIDEO https://www.youtube.com/embed/JXLyFaPp7UU]
 - title: Overview of Azure virtual machine scale sets
   durationInMinutes: 2
   content: |
