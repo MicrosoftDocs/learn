@@ -18,9 +18,7 @@ metadata:
   ms.author: dastanfo
 items:
 - durationInMinutes: 1
-  content: |
-    Create a stateless web app in Azure.
-    
+  content: |   
     In this learning scenario, you learn how to build a basic web application that hosts all of your static files in Azure Blob storage. Azure Functions is used to host an API that your static files call, and additionally, it is triggered by Event Grid to process the image files that are uploaded.  Computer Vision API is used to process each image and provide captions. Finally, the image meta-data is stored in Azure Cosmos DB.
 - title: Create a storage account
   durationInMinutes: 5

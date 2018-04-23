@@ -18,17 +18,42 @@ In this lab exercise you will create your function that will be triggered by Eve
 14. Copy the following code into the text box > **Save**
 
 ```javascript
+const request = require('request');
+
 module.exports = function (context, eventGridEvent) {
     var path = eventGridEvent.data.url.split('/').pop();
-    if (eventGridEvent.data.url.indexOf("/img/") > -1){
-        var data = {
+    if (eventGridEvent.data.url.indexOf("/img/") > -1) {
+        var eventData = {
             id: path,
-            url: eventGridEvent.data.url,
+            url: eventGridEvent.data.url
         };
-        context.bindings.outputDocument = data;
+        processImage(context, eventData);
     }
-    context.done();
 };
+
+function processImage(context, eventData) {
+    // Replace the subscriptionKey string value with your valid subscription key.
+    var subscriptionKey = "<subscriptionKey>";
+
+    // Replace or verify the region.
+    var uriBase = "https://eastus.api.cognitive.microsoft.com";
+
+    var options = {
+        url: uriBase + "/vision/v1.0/describe?maxCandidates=1",
+        body: '{"url": ' + '"' + eventData.url + '"}',
+        headers: {
+            "Content-Type": "application/json",
+            "Ocp-Apim-Subscription-Key": subscriptionKey
+        }
+    };
+
+    request.post(options, function (error, response, body) {
+        var temp = JSON.parse(body);
+        eventData.caption = temp.description.captions[0].text;
+        context.bindings.outputDocument = eventData;
+        context.done();
+    });
+}
 ```
 
 15. Select the **Integrate** sub-tab of the function.
