@@ -19,6 +19,8 @@ items:
     You can deploy apps to Azure straight from within Visual Studio. For production use, you can use continuous integration and continuous delivery (CI/CD) with Visual Studio Team Services. This CI/CD approach automatically deploys your app to Azure each time you make a code commit to source control.
 
     Visual Studio Team Services allows for easy collaboration and development without maintaining an on-premises code management solution. Team Services provides cloud code testing, build, and application insights. You can choose a version control repo and IDE that best fits your code development.
+
+    > [!VIDEO https://www.youtube.com/embed/25ppPiok5OM]
 - title: Overview of CI/CD
   durationInMinutes: 4
   content: |
