@@ -4,4 +4,4 @@ summary: Elit deserunt officia enim dolore esse. Adipisicing consectetur et mini
 modules:
 - learn.deploy-apps-to-azure
 - learn.deploy-custom-vmss-app
-- learn.intro-to-csharp
+- learn-pr.intro-to-csharp
