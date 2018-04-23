@@ -1,0 +1,25 @@
+### YamlMime:Module
+uid: learn.deploy-custom-vmss-app
+title: Deploy apps to an Azure virtual machine scale set with a custom Packer image
+description: Learn how to deploy your apps from GitHub to an Azure virtual machine scale set created from a custom Packer image
+iconUrl: http://via.placeholder.com/120x120
+metadata:
+  title:  Deploy apps to an Azure virtual machine scale set with a custom Packer image
+units:
+- uid: learn.deploy-custom-vmss-app.create-packer-image
+  type: tutorial
+  durationInMinutes: 15
+- uid: learn.deploy-custom-vmss-app.create-vmss
+  type: tutorial
+  durationInMinutes: 10
+- uid: learn.deploy-custom-vmss-app.deploy-app-from-github
+  type: tutorial
+  durationInMinutes: 10
+- uid:  learn.deploy-custom-vmss-app.deploy-app-update
+  type: tutorial
+  durationInMinutes: 10
+achievement:
+  uid: learn.deploy-custom-vmss-app.achievement
+  name: Linux VMSS Champ
+  description: Great job!
+  imageUrl: https://azure.microsoft.com/svghandler/virtual-machine-scale-sets/?width=600&height=315

@@ -1,0 +1,37 @@
+### YamlMime:Tutorial
+uid: learn.deploy-custom-vmss-app.deploy-app-from-github
+title: Deploy an app from GitHub
+metadata:
+  title: Deploy an application from GitHub to an Azure virtual machine scale set
+  description: Learn how to use the Azure Custom Script Extension to deploy an application from GitHub to the VM instances in a scale set
+  audience: Developer
+  level: Intermediate
+  ms.topic: get-started-article
+  nextTutorialHref: deploy-app-update
+  nextTutorialTitle: Update app from GitHub
+  displayType: two-column
+  interactive: azurecli
+  ms.custom:
+  ms.prod:
+  ms.technology: virtual-machine-scale-set
+items:
+- durationInMinutes: 4
+  content: |
+    In this quickstart module, you use the Azure Custom Script Extension to deploy an app from GitHub. The custom script allows the latest code for your app to be deployed to the VM, rather than being baked into the Packer image.
+
+    > [!Video Overview of Azure Custom Script Extension and installing applications]
+- title: Overview of the Azure Custom Script Extension
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/deploy-app-from-github-1.md)]
+- title: Deploy app from GitHub with the Custom Script Extension
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/deploy-app-from-github-2.md)]
+- title: View the app on your scale set
+  durationInMinutes: 1
+  content: |
+    [!include[](includes/deploy-app-from-github-3.md)]
+challenge:
+  uid: learn.deploy-custom-vmss-app.deploy-app-from-github.quiz
+  type: quiz

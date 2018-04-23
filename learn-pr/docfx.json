@@ -36,7 +36,8 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/learn/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "feedback_system": "None"
     },
     "fileMetadata": {},
     "template": [],

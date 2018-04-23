@@ -1,0 +1,36 @@
+### YamlMime:Tutorial
+uid: learn.deploy-apps-to-azure.create-vsts-project
+title: Introduction to Visual Studio Team Services and CI/CD
+metadata:
+  title: Introduction to Visual Studio Team Services and CI/CD
+  description: Learn how to use Visual Studio Team Services to improve application development and deployment with continuous integration and continuous delivery (CI/CD)
+  audience: Developer
+  level: Beginner
+  ms.topic: get-started-article
+  nextTutorialHref: create-vs-web-app
+  nextTutorialTitle: Create and publish a Web App in Visual Studio
+  displayType: one-column
+  ms.custom:
+  ms.prod:
+  ms.technology: virtual-machine-windows
+items:
+- durationInMinutes: 1
+  content: |
+    You can deploy apps to Azure straight from within Visual Studio. For production use, you can use continuous integration and continuous delivery (CI/CD) with Visual Studio Team Services. This CI/CD approach automatically deploys your app to Azure each time you make a code commit to source control.
+
+    Visual Studio Team Services allows for easy collaboration and development without maintaining an on-premises code management solution. Team Services provides cloud code testing, build, and application insights. You can choose a version control repo and IDE that best fits your code development.
+- title: Overview of CI/CD
+  durationInMinutes: 4
+  content: |
+    [!include[](includes/create-vsts-project-1.md)]
+- title: Introduction to Visual Studio Team Services
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/create-vsts-project-2.md)]
+- title: Create a VSTS project
+  durationInMinutes: 1
+  content: |
+    [!include[](lab/lab-1-create-vsts-project.md)]
+challenge:
+  uid: learn.deploy-apps-to-azure.create-vsts-project.quiz
+  type: quiz
