@@ -37,8 +37,6 @@ items:
   durationInMinutes: 1
   content: |
     [!include[](lab/lab-5-deploy-web-app-to-staging-4.md)]
-- content: |
-    You've completed the "Deploy a Web App to staging site with VSTS and CI/CD" module.
 challenge:
   uid: learn.deploy-apps-to-azure.deploy-web-app-to-staging.quiz
   type: quiz

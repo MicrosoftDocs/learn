@@ -32,8 +32,6 @@ items:
   durationInMinutes: 1
   content: |
     [!include[](includes/deploy-app-from-github-3.md)]
-- content: |
-    You've completed the "Deploy an app from GitHub" module.
 challenge:
   uid: learn.deploy-custom-vmss-app.deploy-app-from-github.quiz
   type: quiz

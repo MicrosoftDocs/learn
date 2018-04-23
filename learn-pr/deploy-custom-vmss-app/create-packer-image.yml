@@ -36,8 +36,6 @@ items:
   durationInMinutes: 5
   content: |
     [!include[](includes/create-packer-image-4.md)]
-- content: |
-    You've completed the "Create a Packer image" module.
 challenge:
   uid: learn.deploy-custom-vmss-app.create-packer-image.quiz
   type: quiz

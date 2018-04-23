@@ -25,8 +25,6 @@ items:
   durationInMinutes: 3
   content: |
     [!include[](lab/lab-4-deploy-web-app-vsts-cicd-2.md)]
-- content: |
-    You've completed the "Deploy a Web App with VSTS and CI/CD" module.
 challenge:
   uid: learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd.quiz
   type: quiz

@@ -1,0 +1,7 @@
+### YamlMime:ModuleList
+title: Guided learning program
+summary: Elit deserunt officia enim dolore esse. Adipisicing consectetur et minim cupidatat exercitation irure deserunt qui. Nulla nostrud aute ex ipsum adipisicing incididunt nostrud velit elit sunt.
+modules:
+- learn.deploy-apps-to-azure
+- learn.deploy-custom-vmss-app
+- learn.intro-to-csharp
