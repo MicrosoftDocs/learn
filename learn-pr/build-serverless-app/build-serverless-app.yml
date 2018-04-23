@@ -5,9 +5,7 @@ metadata:
   title: Build a serverless web solution | Microsoft Azure
   description: Learn how to build a serverless website, by storing data in a cosmos DB, interfacing it with API management service and functions.
   audience: Developer
-  level: Beginner
-  nextTutorialHref: 
-  nextTutorialTitle: 
+  level: Intermediate 
   displayType: two-column
   interactive: azurecli
   author: david-stanford
@@ -19,7 +17,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |   
-    In this learning scenario, you learn how to build a basic web application that hosts all of your static files in Azure Blob storage. Azure Functions is used to host an API that your static files call, and additionally, it is triggered by Event Grid to process the image files that are uploaded.  Computer Vision API is used to process each image and provide captions. Finally, the image meta-data is stored in Azure Cosmos DB.
+    In this unit, you build a basic web application that can host your static files on Azure Blob Storage. Azure Functions are used to host an API that your static files call, which is additionally triggered by Event Grid to process the uploaded image files. Computer Vision API is used to process and caption each image. Finally, the image metadata is stored in Azure Cosmos DB.
 - title: Create a storage account
   durationInMinutes: 5
   content: |  
@@ -60,7 +58,7 @@ items:
   challenge:
     type: quiz
     uid: learn.serverless-app-eventgrid.quiz
-- title: Test your app and clean up
+- title: Testing your app and cleaning up
   durationInMinutes: 5
   content: |
     [!INCLUDE [](includes/overview-6-test-cleanup.md)]
