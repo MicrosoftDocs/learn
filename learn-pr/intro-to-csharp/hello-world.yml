@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.intro-to-csharp.hello-world
+uid: learn-pr.intro-to-csharp.hello-world
 title: Hello C#
 metadata:
   title: Hello World interactive tutorial - C# quickstarts
@@ -43,5 +43,5 @@ items:
   content: |
     [!include[](includes/hello-world-6.md)]
 challenge:
-  uid: learn.intro-to-csharp.hello-world.quiz
+  uid: learn-pr.intro-to-csharp.hello-world.quiz
   type: quiz
