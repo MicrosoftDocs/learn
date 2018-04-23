@@ -1,8 +1,12 @@
-When you create an Azure virtual machine scale set, you specify an image to be used when the virtual machine (VM) instances are deployed. Each VM in Azure is created from an image that defines the Linux distribution and OS version. The Azure Marketplace provides many first and third-party images for most common distributions and application environments.
+When you create an Azure virtual machine scale set, you specify an image to be used when the virtual machine (VM) instances are deployed. Each VM in Azure is created from an image that defines the Linux distribution and OS version. The Azure Marketplace provides many first and third-party images for most common distributions and application environments. If you need a refresh on Azure VMs, watch the following video:
+
+> [!VIDEO https://youtu.be/BYsYVKvT9Bs]
 
 To reduce the number of tasks after VM instances are deployed, you can use a custom VM image. This custom VM image includes any required application installs or configurations. Any VM instances created in the scale set use the custom VM image and are ready to serve your application traffic.
 
-[Packer](https://www.packer.io/) is an open source tool that lets you define and build custom images in a scripted, consistent manner. The configuration for an image is defined in a JSON (JavaSCript Object Notation) template that includes any additional configurations and application installs that you require. This template approach reduces the risk of human error from manual builds, and lets you create reproducible images for your applications.
+[Packer](https://www.packer.io/) is an open source tool that lets you define and build custom images in a scripted, consistent manner. The configuration for an image is defined in a JSON (JavaSCript Object Notation) template that includes any additional configurations and application installs that you require. This template approach reduces the risk of human error from manual builds, and lets you create reproducible images for your applications. The following video provides an overview of Packer and why it's a great tool or use in this scenario:
+
+> [!VIDEO https://youtu.be/9nAk84YnMQU]
 
 ## Packer components
 
