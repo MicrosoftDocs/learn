@@ -19,7 +19,7 @@ items:
   content: |
     In this module, you learn why and how to create a custom Linux VM image with Packer. This Packer image is used in the additional quickstarts as you deploy your virtual machine scale set and application.
 
-    > [!VIDEO https://youtu.be/id28druKllc]
+    > [!VIDEO https://www.youtube.com/embed/id28druKllc]
 - title: Overview of Packer and image deployment
   durationInMinutes: 2
   content: |
