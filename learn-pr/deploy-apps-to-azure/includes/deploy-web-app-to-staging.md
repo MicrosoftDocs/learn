@@ -1,5 +1,3 @@
-> [!Video Intro to Azure Web Apps deployment slots]
-
 Web App deployment slots are live apps with their own hostnames. App content and configurations elements can be swapped between two deployment slots, including the production slot. Deploying your application to a deployment slot has the following benefits:
 
 - You can validate app changes in a staging deployment slot before swapping it with the production slot.
