@@ -7,12 +7,12 @@ items:
   - name: Create a resource group
     uid: learn.azure-cli-2-0.resource-group
   - name: Create a virtual machine
-    uid: learn.azure-cli-2-0.virtual-machine
+    uid: learn.azure-cli-2-0.create-vm
   - name: Get VM information
-    uid: learn.azure-cli-2-0.vm-info
+    uid: learn.azure-cli-2-0.queries
   - name: Set environment variables
     uid: learn.azure-cli-2-0.variables
   - name: Create a new VM on the existing subnet
-    uid: learn.azure-cli-2-0.subnet-vm
+    uid: learn.azure-cli-2-0.subnet
   - name: Clean up your Azure CLI 2.0 lab
     uid: learn.azure-cli-2-0.cleanup
