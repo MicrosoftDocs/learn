@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 75 75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 14</title>
+<desc>Created with Sketch.</desc>
+<defs>
+<linearGradient id="d" x1="14.673%" x2="85.383%" y1="14.601%" y2="85.311%">
+<stop stop-color="#999" offset=".3945"/>
+<stop stop-color="#949494" offset=".5571"/>
+<stop stop-color="#878787" offset=".7366"/>
+<stop stop-color="#717171" offset=".9235"/>
+<stop stop-color="#666" offset="1"/>
+</linearGradient>
+<linearGradient id="c" x1="50%" x2="50%" y1="100%">
+<stop stop-color="#F2F2F2" offset="0"/>
+<stop stop-color="#B3B3B3" offset="1"/>
+</linearGradient>
+<path id="a" d="m21.681 35.758c-7.7245 0-13.985-6.3829-13.985-14.258s6.2607-14.258 13.985-14.258c3.7123 0 7.075 1.4844 9.5783 3.8893l4.741-4.8351c-8.2342-8.3948-21.589-8.3948-29.824 0-8.2342 8.3964-8.2342 22.011 0 30.408 8.2358 8.3948 21.59 8.3948 29.824 0l-4.741-4.8351c-2.5034 2.4049-5.866 3.8893-9.5783 3.8893"/>
+<filter id="e" x="-37.5%" y="-31.4%" width="175%" height="162.8%">
+<feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+<feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0"/>
+</filter>
+<radialGradient id="b" r="49.849%">
+<stop stop-color="#fff" stop-opacity="0" offset="0"/>
+<stop stop-color="#8F8F8F" stop-opacity="0" offset=".68897"/>
+<stop stop-opacity=".4" offset="1"/>
+</radialGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-218 -742)">
+<g transform="translate(218 742)">
+<g fill-rule="nonzero">
+<circle cx="37.5" cy="37.5" r="37.5" fill="url(#d)"/>
+<circle cx="37.5" cy="37.5" r="32.5" fill="url(#c)"/>
+</g>
+<g transform="translate(17 16)">
+<use fill="black" filter="url(#e)" xlink:href="#a"/>
+<use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#a"/>
+<path d="m37.011 22.99h3.9803v-3.9799h-3.9803v3.9799zm9.9894-3.9799v-3.1549h-2.8539v-2.8552h-3.1552v2.8552h-3.9819v-2.8552h-3.1552v2.8552h-2.8539v3.1549h2.8539v3.9799h-2.8539v3.1549h2.8539v2.8552h3.1552v-2.8552h3.9819v2.8552h3.1552v-2.8552h2.8539v-3.1549h-2.8539v-3.9799h2.8539z" fill="#FFF1B1"/>
+</g>
+<circle cx="37.5" cy="37.5" r="37.5" fill="url(#b)" fill-rule="nonzero"/>
+</g>
+</g>
+</g>
+</svg>
