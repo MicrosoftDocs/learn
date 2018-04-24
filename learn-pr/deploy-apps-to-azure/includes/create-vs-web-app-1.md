@@ -1,14 +1,10 @@
-> [!Video Intro to Azure Web Apps]
+In the previous tutorial, you created a project in Visual Studio Team Services. The final step opened your new project in Visual Studio. Let's build and deploy an ASP.NET application from Visual Studio to an Azure Web App.
 
-Azure App Service Web Apps (or just Web Apps) is a service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on Windows or Linux-based environments.
+In this tutorial, you will:
+    - Learn about Azure Web Apps
+    - Create an ASP.NET Web App in Visual Studio
+    - Deploy an Azure Web App from Visual Studio
 
-Key features of Web Apps include:
+At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
 
-- **Multiple languages and frameworks** - Web Apps has first-class support for ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python.
-- **DevOps optimization** - Set up CI/CD with Visual Studio Team Services, GitHub, BitBucket, Docker Hub, or Azure Container Registry. Promote updates through test and staging environments.
-- **Global scale with high availability** - Scale up or out manually or automatically. Host your apps anywhere in Microsoft's global datacenter infrastructure, and the App Service SLA provides for high availability.
-- **Connections to SaaS platforms and on-premises data** - Choose from more than 50 connectors for enterprise systems (such as SAP), SaaS services (such as Salesforce), and internet services (such as Facebook). Access on-premises data using hybrid connections and Azure Virtual Networks.
-- **Security and compliance** - App Service is ISO, SOC, and PCI compliant. Authenticate users with Azure Active Directory or with social login (Google, Facebook, Twitter, and Microsoft. Create IP address restrictions and manageg service identities.
-- **Application templates** - Choose from an extensive list of application templates in the Azure Marketplace, such as WordPress, Joomla, and Drupal.
-- **Visual Studio integration** - Dedicated tools in Visual Studio streamline the work of creating, deploying, and debugging.
-- **API and mobile features** - Web Apps provides turn-key CORS support for RESTful API scenarios, and simplifies mobile app scenarios by enabling authentication, offline data sync, push notifications, and more.
+>[NOTE] This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.

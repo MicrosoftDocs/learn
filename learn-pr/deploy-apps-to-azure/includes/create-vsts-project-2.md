@@ -1,25 +1,13 @@
-Visual Studio Team Services (VSTS) is a collection of hosted DevOps services for application developers. *Build* and *Release* are two of the DevOps services in VSTS that help you manage continuous integration and delivery of your applications.
+DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. The contraction of "Dev" and "Ops" refers to replacing siloed *Development* and *Operations* to create multidisciplinary teams that now work together with shared and efficient practices and tools. Essential DevOps practices include continuous integration and continuous delivery.
 
-Core components of VSTS include:
+![Overview of DevOps lifecycle](../../deploy-apps-to-azure/media/devops-overview.png)
 
-- **Code** - VSTS hosts source control repositories when you can commit and push code, track release across branches, and work toward release milestones.
+**Continuous Integration (CI)** is the practice used by development teams to automate the merging and testing of code. Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix. Automated tests execute as part of the CI process to ensure quality. Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments.
 
-- **Agents and queues** - To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more. When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time.
+- The *Build* service in Visual Studio Team Services (VSTS) helps you set up and manage CI for your applications.
 
-    - *Hosted agents* are run on the VSTS platform and Microsoft takes care of the maintenance and upgrades.
+**Continuous Delivery (CD)** is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts including infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run continually to drive visibility into the entire CD process.
 
-    - *Private agent* are set up and managed on your own systems to run build and deployment jobs. Private agents give you more control to install dependent software needed for your builds and deployments. You can install the agent on Windows, Linux, or macOS machines. You can also install an agent on a Linux Docker container. After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
+- The *Release* service in VSTS helps you set up and manage CD for your applications.
 
-- **Builds** - At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory. You specify the events that will trigger the buil, such as a code commit to a VSTS code repository.
-
-    An agent is then used to build your application, based on your code and definitions. These agents perform build tests and generate artifacts for use in the release and deployment phase.
- 
-- **Release** - A release definition is one of the fundamental concepts in Release Management for VSTS and TFS. It defines the end-to-end release process for an application to be deployed across various environments.
-
-    To author a release definition, you must specify the artifacts that make up the application and the release process. An artifact is a deployable component of your application. It is typically produced through a Continuous Integration or a build process.
-
-    You define environment, such as Azure App Service, as the deployment point for your app. When the release process runs, you application is deployed to the defined environment.
-
-- **Deployment groups** - A deployment group is a logical set of deployment target machines that have agents installed on each one. Deployment groups represent the physical environments such as "Dev", "Test", "UAT", and "Production". In effect, a deployment group is just another grouping of agents, much like an agent pool.
-
-    When you author a VSTS release definition, you can specify the deployment targets for a phase using a deployment group. This makes it easy to define parallel execution of deployment tasks.
+Click *Next* to explore how Visual Studio Team Services (VSTS) can enable you to leverage these processes.

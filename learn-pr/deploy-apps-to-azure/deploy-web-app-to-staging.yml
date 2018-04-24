@@ -1,17 +1,20 @@
 ### YamlMime:Tutorial
 uid: learn.deploy-apps-to-azure.deploy-web-app-to-staging
-title: Deploy a Web App to staging site with VSTS and CI/CD
+title: Deploy a web app to a staging site with VSTS and CI/CD
 metadata:
-  title: Deploy a Web App to staging site with VSTS and CI/CD
+  title: Deploy a web app to a staging site with VSTS and CI/CD
   description: Learn how to create a build definition in VSTS for use with a CI/CD pipeline.
+  author: asajohnson
+  ms.author: asjohnso@microsoft.com
+  ms.date: 04/24/2018
   audience: Developer
   level: Beginner
-  ms.topic: get-started-article
+  ms.topic: interactive-tutorial
   nextTutorialHref:
   nextTutorialTitle:
   displayType: one-column
-  ms.custom:
-  ms.prod:
+  ms.custom: guided-learning
+  ms.prod: Azure
   ms.technology: virtual-machine-windows
 items:
 - durationInMinutes: 1
