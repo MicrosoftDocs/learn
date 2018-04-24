@@ -17,9 +17,9 @@ An Azure resource group is a logical group in which Azure resources are deployed
 The following example creates a resource group named *serverlessRG* in the *eastus* location and exports them to variables so you can use them through out this unit. As you create other resources you need to be sure to use the same region as you select in this first step.
 
 ```azurecli
-export rg=servlessRG
-export location=eastus
-az group create --name $rg --location $location
+export rg=serverlessRG
+export loc=eastus
+az group create --name $rg --location $loc
 ```
 
 ## Create an Azure Storage account
@@ -29,18 +29,18 @@ The static content for this unit will be hosted in an Azure Blob Storage account
 The commands below create the storage account using the name, *serverlessStorage*, in a variable.  The storage account name must be globally unique as it creates a DNS entry so change the value below that you export to something unique.
 
 ```azurecli
-export storageAccount=serverlessStorage
-az storage account create --name $storageAccount --location $loc --resourceGroup $rg --kind StorageV2 --sku test
+export storageAccount=serverlessstorage
+az storage account create --name $storageAccount --location $loc --resource-group $rg --kind StorageV2 --sku Standard_GRS
 ```
 
 ## Create a container
 
 Next, you need to create a container in your storage account to host the files.
 
-The following command will export *serverlessContainer* as a variable for the container name and then create the account. If you want to use a different name feel free to change the export.
+The following command will export *serverlesscontainer* as a variable for the container name and then create the account. If you want to use a different name feel free to change the export.
 
 ```azurecli
-export storageContainer=serverlessContainer
+export storageContainer=serverlesscontainer
 az storage container create --name $storageContainer --account-name $storageAccount --public-access blob
 ```
 
@@ -52,8 +52,7 @@ The following commands will clone the repo and then upload it into the container
 
 ```azurecli
 git clone https://github.com/david-stanford/serverless.git
-cd serverless
-find the rest of the commands.
+for f in $(find ~/serverless -name '*.html' -or -name '*.css' -or -name '*.js'); do az storage blob upload -c $storageContainer --account-name $storageAccount -f $f -n ${f#*/serverless/}; done
 ```
 
 Now you need to retrieve the URL to the newly created web application.  The following command retrieves the URL to the index.html file in your storage account.
