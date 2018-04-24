@@ -44,7 +44,7 @@ Managed service identities allow all of your functions in your app to communicat
 2. Create an output binding to write to Azure Blob storage
   * Select **Integrate**
   * Select **New Output**
-  * Select **Azure Blob storage** > **Select**
+  * **Azure Blob storage** > **Select**
   * Leave `outputBlob` as the **Blob parameter name**
   * The **Path** should be `serverlessContainer/img/{name}`. Make sure that you replace serverlessContainer with your own container name.
   * **Save**
@@ -103,7 +103,7 @@ module.exports = function (context, req) {
 4. Create an input binding to read from Azure Cosmos DB
   * Select **Integrate**
   * Select **New Input**
-  * Select Azure Cosmos DB > **Select**
+  * **Azure Cosmos DB** > **Select**
   * Enter `images` in the **Document parameter name** field
   * Enter `serverless-app` in the **Database name** field
   * Enter `images` in the **Collection Name** field
