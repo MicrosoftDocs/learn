@@ -1,23 +1,4 @@
-### YamlMime:Tutorial
-uid: learn.azure-cli-2-0.variables
-title: Set environment variables | Microsoft Docs
-metadata:
-  title: Set environment variables
-  description: Set environment variables from CLI output.
-  audience: Developer
-  level: Beginner
-  ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2-0.subnet
-  nextTutorialTitle: Creating a new VM on the existing subnet
-  displayType: two-column
-  interactive: azurecli
-  ms.custom:
-  ms.prod:
-  ms.technology: azure
-items:
-- durationInMinutes: 3
-  content: |
-     Now that you have the NIC ID, run `az network nic show` to get its information.
+ Now that you have the NIC ID, run `az network nic show` to get its information.
 
         ```azurecli
         az network nic show --ids $NIC_ID -g TutorialResources
@@ -72,7 +53,3 @@ items:
         ```bash
         echo $VM1_IP_ADDR
         ```
-
-challenge:
-  uid: learn.azure-cli-2-variables.quiz
-  type: quiz

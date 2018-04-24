@@ -1,0 +1,44 @@
+### YamlMime:Tutorial
+uid: learn.azure-cli-2-0
+title: Create virtual machines with the Azure CLI 2.0
+metadata:
+  title: Create virtual machines with the Azure CLI 2.0
+  description: Get started with the Azure CLI by creating virtual machines.
+  audience: Developer
+  level: Beginner
+  ms.topic: interactive-tutorial
+  nextTutorialHref: 
+  nextTutorialTitle: 
+  displayType: two-column
+  interactive: csharp
+  ms.custom: guided-learning
+  ms.prod: azure
+  ms.technology: 
+items:
+    -title: Login
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/login.md)]
+- title: Create a resource group
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/resource-group.md)]
+- title: Get VM information with queries
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/queries.md)]
+- title: Set environment variables from CLI output
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/variables.md)]
+- title: Create a new VM on the existing subnet
+  durationInMinutes: 10
+  content: |
+    [!include[](includes/subnet-vm.md)]
+- title: Cleanup
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/cleanup.md)]
+challenge:
+  uid: learn-pr.intro-to-csharp.hello-world.quiz
+  type: quiz
