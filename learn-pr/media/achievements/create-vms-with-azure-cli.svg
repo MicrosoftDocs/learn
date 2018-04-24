@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
+<title>Group 11</title>
+<desc>Created with Sketch.</desc>
+<defs>
+<linearGradient id="c" x1="14.673%" x2="85.383%" y1="14.601%" y2="85.311%">
+<stop stop-color="#999" offset=".3945"/>
+<stop stop-color="#949494" offset=".5571"/>
+<stop stop-color="#878787" offset=".7366"/>
+<stop stop-color="#717171" offset=".9235"/>
+<stop stop-color="#666" offset="1"/>
+</linearGradient>
+<linearGradient id="b" x1="50%" x2="50%" y1="100%">
+<stop stop-color="#F2F2F2" offset="0"/>
+<stop stop-color="#B3B3B3" offset="1"/>
+</linearGradient>
+<radialGradient id="a" r="49.849%">
+<stop stop-color="#fff" stop-opacity="0" offset="0"/>
+<stop stop-color="#8F8F8F" stop-opacity="0" offset=".68897"/>
+<stop stop-opacity=".4" offset="1"/>
+</radialGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<g transform="translate(-218 -899)">
+<g transform="translate(218 899)">
+<g fill-rule="nonzero">
+<circle cx="37.5" cy="37.5" r="37.5" fill="url(#c)"/>
+<circle cx="37.5" cy="37.5" r="32.5" fill="url(#b)"/>
+</g>
+<path d="m65.8 34.5c0 2.2-0.8 4-2.3 5.6-1.5 1.5-3.4 2.3-5.6 2.3h-35.1c-2.1 0-4.1-0.5-5.9-1.6s-3.2-2.5-4.3-4.3-1.6-3.7-1.6-5.9c0-2.1 0.5-4.1 1.6-5.9s2.5-3.2 4.3-4.3 3.7-1.6 5.9-1.6c1.6 0 3.2 0.4 4.8 1.1 1.1-2.7 2.7-4.8 5.1-6.5 2.3-1.6 4.9-2.4 7.7-2.4 2.4 0 4.7 0.6 6.8 1.8s3.8 2.9 5 5 1.8 4.4 1.8 6.8v1.9h3.9c2.2 0 4 0.8 5.6 2.3 1.5 1.6 2.3 3.5 2.3 5.7z" fill="#fff" fill-rule="nonzero"/>
+<g transform="translate(19 29)">
+<polygon points="0.7047 3.1525 10.925 13.482 0.7047 23.816 3.1477 26.262 16.037 13.482 3.1477 0.7055" fill="#0c6"/>
+<polygon points="3.1473 26.262 0.7053 23.816 10.924 13.482 0.7053 3.1525 3.1473 0.7055 16.037 13.482" stroke="#0c6"/>
+<polygon points="17.555 27.706 34.343 27.706 34.343 24.15 17.555 24.15" fill="#0c6"/>
+<polygon points="17.555 27.706 34.343 27.706 34.343 24.149 17.555 24.149" stroke="#0c6"/>
+</g>
+<circle cx="37.5" cy="37.5" r="37.5" fill="url(#a)" fill-rule="nonzero"/>
+</g>
+</g>
+</g>
+</svg>
