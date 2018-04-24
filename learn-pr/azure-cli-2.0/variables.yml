@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli.2.0.variables
+uid: learn.azure-cli-2-0.variables
 title: Set environment variables | Microsoft Docs
 metadata:
   title: Set environment variables
@@ -7,7 +7,7 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli.2.0.subnet
+  nextTutorialHref: learn.azure-cli-2-0.subnet
   nextTutorialTitle: Creating a new VM on the existing subnet
   displayType: two-column
   interactive: azurecli

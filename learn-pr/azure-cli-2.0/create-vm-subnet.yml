@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli.2.0.subnet
+uid: learn.azure-cli-2-0.subnet
 title: Creating a new VM on the existing subnet | Microsoft Docs
 metadata:
   title: Creating a new VM on the existing subnet
@@ -7,7 +7,7 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli.2.0.cleanup
+  nextTutorialHref: learn.azure-cli-2-0.cleanup
   nextTutorialTitle: Clean up your Azure CLI 2.0 lab
   displayType: two-column
   interactive: azurecli

@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli.2.0.create-vm
+uid: learn.azure-cli-2-0.create-vm
 title: Create a virtual machine | Microsoft Docs
 metadata:
   title: Create a virtual machine
@@ -7,7 +7,7 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli.2.0.queries
+  nextTutorialHref: learn.azure-cli-2-0.queries
   nextTutorialTitle: Get VM information with queries
   displayType: two-column
   interactive: azurecli
