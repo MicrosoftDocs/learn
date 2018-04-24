@@ -62,7 +62,7 @@ module.exports = function (context, req) {
 };
 ```
 
-3. **Save**
+3. Select **Save**
 
 ## Grant Azure functions access to your Cosmos DB
 
