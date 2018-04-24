@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli-2.resource-group
+uid: learn.azure-cli.2.0.resource-group
 title: Create a resource group | Microsoft Docs
 metadata:
   title: Create a resource group
@@ -7,7 +7,7 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.create-vm
+  nextTutorialHref: learn.azure-cli.2.0.create-vm
   nextTutorialTitle: Create a virtual machine
   displayType: two-column
   interactive: azurecli

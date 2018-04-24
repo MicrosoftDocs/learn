@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli-2.login
+uid: learn.azure-cli.2.0.login
 title: Log in to Azure | Microsoft Docs
 metadata:
   title: Log in to Azure
@@ -7,7 +7,7 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.resource-group
+  nextTutorialHref: learn.azure-cli.2.0.resource-group
   nextTutorialTitle: Create a resource group
   displayType: two-column
   interactive: azurecli

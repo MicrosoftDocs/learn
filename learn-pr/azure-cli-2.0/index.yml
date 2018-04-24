@@ -6,11 +6,11 @@ iconUrl: http://via.placeholder.com/120x120
 metadata:
   title:  Create virtual machines with the Azure CLI 2.0
 units:
-- uid: learn.azure-cli-2.login
+- uid: learn.azure-cli.2.0.login
   type: tutorial
   durationInMinutes: 15
 achievement:
-  uid: learn.azure-cli-2.achievement
+  uid: learn.azure-cli.2.0.achievement
   name: "Azure CLI 2.0 User"
   description: "First step completed towards a new life."
   imageUrl: https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ff2cb77-e969-4107-b0bf-c008148d580b.jpg

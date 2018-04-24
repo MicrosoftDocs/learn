@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli-2.queries
+uid: learn.azure-cli.2.0.queries
 title: Get VM information | Microsoft Docs
 metadata:
   title: Get VM information with queries
@@ -7,7 +7,7 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.variables
+  nextTutorialHref: learn.azure-cli.2.0.variables
   nextTutorialTitle: Set environment variables
   displayType: two-column
   interactive: azurecli

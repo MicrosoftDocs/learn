@@ -1,18 +1,18 @@
 items:
 - name: Using the Azure CLI 2.0
-  uid: learn.azure-cli-2.0
+  uid: learn.azure-cli.2.0.0
   items:
   - name: Log in to Azure
-    uid: learn.azure-cli-2.0.login
+    uid: learn.azure-cli.2.0.0.login
   - name: Create a resource group
-    uid: learn.azure-cli-2.0.resource-group
+    uid: learn.azure-cli.2.0.0.resource-group
   - name: Create a virtual machine
-    uid: learn.azure-cli-2.0.virtual-machine
+    uid: learn.azure-cli.2.0.0.virtual-machine
   - name: Get VM information
-    uid: learn.azure-cli-2.0.vm-info
+    uid: learn.azure-cli.2.0.0.vm-info
   - name: Set environment variables
-    uid: learn.azure-cli-2.0.variables
+    uid: learn.azure-cli.2.0.0.variables
   - name: Create a new VM on the existing subnet
-    uid: learn.azure-cli-2.0.subnet-vm
+    uid: learn.azure-cli.2.0.0.subnet-vm
   - name: Clean up your Azure CLI 2.0 lab
-    uid: learn.azure-cli-2.0.cleanup
+    uid: learn.azure-cli.2.0.0.cleanup
