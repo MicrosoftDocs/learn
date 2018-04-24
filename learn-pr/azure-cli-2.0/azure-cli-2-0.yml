@@ -15,7 +15,7 @@ metadata:
   ms.prod: azure
   ms.technology: 
 items:
-    -title: Login
+- title: Login 
   durationInMinutes: 2
   content: |
     [!include[](includes/login.md)]
