@@ -63,7 +63,3 @@ items:
   content: |
     [!INCLUDE [](includes/overview-6-test-cleanup.md)]
     [!INCLUDE [](lab/lab-6-cleanup.md)]
-- title: Next steps
-  durationInMinutes: 0
-  content: |
-    [!INCLUDE [](includes/overview-7-nextsteps.md)]
