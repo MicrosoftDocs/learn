@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn-pr.template-module.unit-1
+uid: learn.template-module.unit-1
 title: Title of Unit 1
 metadata:
   title: Title of Unit 1
@@ -35,5 +35,5 @@ items:
 - content: |
     You've completed the "Update an app from GitHub" quickstart.
 challenge:
-  uid: learn-pr.template-module.unit-1.quiz
+  uid: learn.template-module.unit-1.quiz
   type: quiz

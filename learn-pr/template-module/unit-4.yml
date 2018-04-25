@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn-pr.template-module.unit-4
+uid: learn.template-module.unit-4
 title: Title of Unit 4
 metadata:
   title: Title of Unit 4
@@ -7,8 +7,8 @@ metadata:
   audience: Developer
   level: Intermediate
   ms.topic: get-started-article
-  nextTutorialHref: 
-  nextTutorialTitle: 
+  nextTutorialHref:
+  nextTutorialTitle:
   displayType: two-column
   interactive: azurecli
   ms.custom:
@@ -39,5 +39,5 @@ items:
 - content: |
     You've completed the "Create a Packer image" module.
 challenge:
-  uid: learn-pr.template-module.unit-4.quiz
+  uid: learn.template-module.unit-4.quiz
   type: quiz

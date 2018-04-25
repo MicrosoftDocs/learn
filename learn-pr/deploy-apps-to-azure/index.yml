@@ -1,28 +1,28 @@
 ### YamlMime:Module
-uid: learn-pr.deploy-apps-to-azure
+uid: learn.deploy-apps-to-azure
 title: Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)
 description: Learn how to deploy applications to Azure in a consistent manner using Visual Studio Team Services and CI/CD pipelines.
-iconUrl: /learn-pr/media/achievements/deploy-apps-with-vsts.svg
+iconUrl: /learn/media/achievements/deploy-apps-with-vsts.svg
 metadata:
   title:  Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)
 units:
-- uid: learn-pr.deploy-apps-to-azure.create-vsts-project
+- uid: learn.deploy-apps-to-azure.create-vsts-project
   type: tutorial
   durationInMinutes: 8
-- uid: learn-pr.deploy-apps-to-azure.create-vs-web-app
+- uid: learn.deploy-apps-to-azure.create-vs-web-app
   type: tutorial
   durationInMinutes: 10
-- uid: learn-pr.deploy-apps-to-azure.create-vsts-build-definition
+- uid: learn.deploy-apps-to-azure.create-vsts-build-definition
   type: tutorial
   durationInMinutes: 10
-- uid:  learn-pr.deploy-apps-to-azure.deploy-web-app-vsts-cicd
+- uid:  learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd
   type: tutorial
   durationInMinutes: 5
-- uid:  learn-pr.deploy-apps-to-azure.deploy-web-app-to-staging
+- uid:  learn.deploy-apps-to-azure.deploy-web-app-to-staging
   type: tutorial
   durationInMinutes: 10
 achievement:
-  uid: learn-pr.deploy-apps-to-azure.achievement
+  uid: learn.deploy-apps-to-azure.achievement
   name: Deploy Apps to Azure Champ
   description: Great job!
-  imageUrl: /learn-pr/media/achievements/deploy-apps-with-vsts.svg
+  imageUrl: /learn/media/achievements/deploy-apps-with-vsts.svg

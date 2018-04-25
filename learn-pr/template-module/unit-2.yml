@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn-pr.template-module.unit-2
+uid: learn.template-module.unit-2
 title: Title of Unit 2
 metadata:
   title: Title of Unit 2
@@ -35,5 +35,5 @@ items:
 - content: |
     You've completed the "Deploy an app from GitHub" module.
 challenge:
-  uid: learn-pr.template-module.unit-2.quiz
+  uid: learn.template-module.unit-2.quiz
   type: quiz

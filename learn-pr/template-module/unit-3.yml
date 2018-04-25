@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn-pr.template-module.unit-3
+uid: learn.template-module.unit-3
 title: Title of Unit 3
 metadata:
   title: Title of Unit 3
@@ -39,5 +39,5 @@ items:
 - content: |
     You've completed the "Create a virtual machine scale set" module.
 challenge:
-  uid: learn-pr.template-module.unit-3.quiz
+  uid: learn.template-module.unit-3.quiz
   type: quiz

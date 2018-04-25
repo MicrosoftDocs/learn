@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn-pr.deploy-apps-to-azure.create-vsts-build-definition
+uid: learn.deploy-apps-to-azure.create-vsts-build-definition
 title: Create a VSTS build definition for CI/CD
 metadata:
   title: Create a VSTS build definition for CI/CD
