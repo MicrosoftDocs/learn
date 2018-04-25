@@ -9,8 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   nextTutorialHref: 
   nextTutorialTitle: 
-  displayType: two-column
-  interactive: csharp
+  displayType: one-column
+  interactive: cli
   ms.custom: guided-learning
   ms.prod: azure
   ms.technology: 
@@ -40,5 +40,5 @@ items:
   content: |
     [!include[](includes/cleanup.md)]
 challenge:
-  uid: learn-pr.intro-to-csharp.hello-world.quiz
+  uid: learn.azure-cli-2-0.combined-quiz
   type: quiz
