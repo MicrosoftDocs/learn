@@ -7,6 +7,6 @@ To use CI/CD best practices, we should change our workflow so that the build def
 5. Enter a name for your deployment slot, such as *staging*, then select your existing Web App for the *Configuration source*. To create the deployment slot, select **OK**.
 6. Once the deployment slot has been created, select it from the list of available slots. The overview for the deployment slot is shown, including the URL. The deployment slot is added to name of your web app, such as *https://mywebapp-staging.azurewebsites.net*:
 
-    ![Overview of Web App deployment slot in the Azure portal](media/azure-portal-web-app-staging-slot.png)
+    ![Overview of Web App deployment slot in the Azure portal](../media/azure-portal-web-app-staging-slot.png)
 
 Select the URL to open in a new web browser window. Leave the Azure portal and staging slot web site browser windows open.

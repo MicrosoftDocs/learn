@@ -14,6 +14,6 @@ As in the previous tutorial, to see your CI/CD pipeline deploy to staging slot, 
     - Choose your build definition, then select the **Queued & running** build to watch as the build progresses.
 8. To see your changes applied once the build has successfully completed, refresh your staging web site in a browser, such as *https://mywebapp-staging.azurewebsites.net*:
 
-    ![ASP.NET web app running in Azure Web App staging slot](media/running-web-app-staging.png)
+    ![ASP.NET web app running in Azure Web App staging slot](../media/running-web-app-staging.png)
 
 9. To confirm that your production site has not changed, refresh the production web site in a browser.
