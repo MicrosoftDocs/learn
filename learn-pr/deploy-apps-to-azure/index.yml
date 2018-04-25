@@ -9,7 +9,6 @@ units:
 - uid: learn.deploy-apps-to-azure.create-vsts-project
   type: tutorial
   durationInMinutes: 8
-  type: tutorial
 - uid: learn.deploy-apps-to-azure.create-vs-web-app
   durationInMinutes: 10
 - uid: learn.deploy-apps-to-azure.create-vsts-build-definition
