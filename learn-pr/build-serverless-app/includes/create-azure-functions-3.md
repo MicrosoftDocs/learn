@@ -1,6 +1,6 @@
-## Lab exercise 3 - Create Azure Functions
+## Create Azure Functions
 
-The serverless solution that you're building will use three Azure Functions. One of the Functions will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API.  The other two will back the APIs that the website uses, to upload images and retrieve the list of images.
+As mentioned previously, the serverless solution that you're building will use three Azure Functions. One will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API. The other two will back the APIs that the website uses, to upload images and retrieve the list of images.
 
 ## Create the functions app
 
@@ -151,3 +151,5 @@ At this point you've created both of your Azure functions that will serve as an 
 <!-- Images -->
 [enable-msi]: ../media/lab-3-functions-msi.png
 [cors]: ../media/lab-3-functions-cors.png
+
+Congratulations - You've created some Azure Functions and hooked them into your web application!

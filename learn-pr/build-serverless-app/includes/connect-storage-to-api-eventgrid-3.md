@@ -1,6 +1,4 @@
-## Lab exercise 5 - Setup EventGrid to process images that are uploaded
-
-Create your function that will be triggered by Event Grid when ever an object is uploaded into the img directory of your container.
+## Setup Event Grid to process images that are uploaded to your website
 
 1. Navigate back to your functions app
 2. Select **New Function**

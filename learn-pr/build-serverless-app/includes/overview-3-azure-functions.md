@@ -1,3 +1,0 @@
-## Overview of Azure Functions
-
-Azure Functions makes it easy for you to run small pieces of code, or "functions," in the cloud. You can write just the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Functions can make you more productive during your development time, and let you use your development language of choice, such as C#, F#, Node.js, Java, or PHP. Azure automatically scales when your code runs, and you only pay for the time you're actually consuming resources.
