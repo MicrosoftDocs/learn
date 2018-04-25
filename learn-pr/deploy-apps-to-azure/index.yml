@@ -10,6 +10,7 @@ units:
   type: tutorial
   durationInMinutes: 8
 - uid: learn-pr.deploy-apps-to-azure.create-vs-web-app
+  type: tutorial
   durationInMinutes: 10
 - uid: learn-pr.deploy-apps-to-azure.create-vsts-build-definition
   type: tutorial
