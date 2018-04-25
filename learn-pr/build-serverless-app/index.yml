@@ -1,0 +1,16 @@
+### YamlMime:Module
+uid: learn.serverless
+title: Introduction to serverless computing in Azure
+description: Introduction to serverless computing in Azure.
+iconUrl: http://via.placeholder.com/120x120
+metadata:
+  title:  Introduction to serverless computing in Azure
+units:
+- uid: learn.serverless.build-serverless-app
+  type: tutorial
+  durationInMinutes: 40
+achievement:
+  uid: learn.serverless.achievement
+  name: "Azure Serverless Beginner"
+  description: "First step towards deprecating your servers."
+  imageUrl: https://docs.microsoft.com/en-us/media/logos/logo_gremlin.svg
