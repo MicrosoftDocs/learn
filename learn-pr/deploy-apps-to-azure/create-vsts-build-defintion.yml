@@ -21,6 +21,7 @@ items:
   content: |
     Manually deploying an app from Visual Studio isn't great for production scenarios. You shouldn't manually deploy application updates. Instead, you should use a source control and CI/CD solution such as VSTS.
 
+    > [!VIDEO https://www.youtube.com/embed/7CjtcSbNh1Q]
 - title: Overview of VSTS build definitions
   durationInMinutes: 5
   content: |

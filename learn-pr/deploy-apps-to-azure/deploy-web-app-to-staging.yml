@@ -20,6 +20,8 @@ items:
 - durationInMinutes: 1
   content: |
     Deploying your app straight to production may cause problems, so you typically deploy to a staging site. This staging site lets you review your changes before pushing to production.
+
+    > [!VIDEO https://www.youtube.com/embed/KUhJfqKav8Y]
 - title: Overview of Web App deployment slots
   durationInMinutes: 4
   content: |
