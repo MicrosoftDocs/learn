@@ -2,6 +2,6 @@
 title: Guided learning program
 summary: Free online training to help you build your technical skills and advance your career.
 modules:
-- learn-pr.intro-to-csharp
+- learn.intro-to-csharp
 - learn.deploy-apps-to-azure
 - learn.deploy-custom-vmss-app

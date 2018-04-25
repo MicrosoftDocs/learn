@@ -4,32 +4,34 @@ title: Deploy an app to Azure from Visual Studio
 metadata:
   title: Deploy an app to Azure from Visual Studio
   description: Learn how to use Visual Studio to deploy an ASP.NET web app to Azure.
+  author: asajohnson
+  ms.author: asjohnso@microsoft.com
+  ms.date: 04/24/2018
   audience: Developer
   level: Beginner
-  ms.topic: get-started-article
+  ms.topic: interactive-tutorial
   nextTutorialHref: create-vsts-build-defintion
   nextTutorialTitle: Create a VSTS build definition for CI/CD
   displayType: one-column
-  ms.custom:
-  ms.prod:
+  ms.custom: guided-learning
+  ms.prod: Azure
   ms.technology: virtual-machine-windows
 items:
 - durationInMinutes: 1
   content: |
-    In the previous module, you created a project in Visual Studio Team Services. The final step opened your new project in Visual Studio. Let's build and deploy an ASP.NET application from Visual Studio to an Azure Web App.
-
+    [!include[](includes/create-vs-web-app-1.md)]
 - title: Introduction to Azure Web Apps
   durationInMinutes: 5
   content: |
-    [!include[](includes/create-vs-web-app-1.md)]
+    [!include[](includes/create-vs-web-app-2.md)]
 - title: Create an ASP.NET web app in Visual Studio
   durationInMinutes: 3
   content: |
-    [!include[](lab/lab-2-create-vs-web-app-1.md)]
-- title: Deploy Azure Web App from Visual Studio
+    [!include[](includes/create-vs-web-app-3.md)]
+- title: Deploy an Azure Web App from Visual Studio
   durationInMinutes: 2
   content: |
-    [!include[](lab/lab-2-create-vs-web-app-2.md)]
+    [!include[](includes/create-vs-web-app-4.md)]
 challenge:
   uid: learn.deploy-apps-to-azure.create-vs-web-app.quiz
   type: quiz

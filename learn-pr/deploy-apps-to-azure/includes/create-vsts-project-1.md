@@ -1,11 +1,10 @@
-DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. The contraction of "Dev" and "Ops" refers to replacing siloed *Development* and *Operations* to create multidisciplinary teams that now work together with shared and efficient practices and tools. Essential DevOps practices include continuous integration and continuous delivery.
+Visual Studio Team Services (VSTS) provides a highly customizable Continuous Integration (CI) and Continuous Deployment (CD) pipeline to automatically deploy your app to Azure each time you make a code commit to source contorl.
+  
+In this tutorial, you will:
+    - Learn about the CI/CD process
+    - Learn about Visual Studio Team Services (VSTS)
+    - Create a VSTS project
 
-![Overview of DevOps lifecycle](../../media/deploy-apps-to-azure/devops-overview.png)
+At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
 
-Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code. Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix. Automated tests execute as part of the CI process to ensure quality. Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments.
-
-- The *Build* service in Visual Studio Team Services (VSTS) helps you set up and manage CI for your applications.
-
-Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts including infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run continually to drive visibility into the entire CD process.
-
-- The *Release* service in VSTS helps you set up and manage CD for your applications.
+>[NOTE] This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.

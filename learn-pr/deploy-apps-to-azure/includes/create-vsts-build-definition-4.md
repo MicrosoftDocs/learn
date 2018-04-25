@@ -1,4 +1,4 @@
-In Team Services, you use a build definition to outline how your application should be built. In this learning scenario, you create a basic definition that takes your source code, builds the solution, then creates artifacts to publish to a Web App on Azure
+In VSTS, you use a build definition to outline how your application should be built. In this learning scenario, you create a basic definition that takes your source code, builds the solution, then creates artifacts to publish to a Web App on Azure
 
 1. In a web browser, open the VSTS project created at the start of this learning scenario.
 2. From the banner across the top, select **Build & Release** and then **Builds**.
@@ -14,4 +14,4 @@ Watch as the build is scheduled on a hosted agent, then begins to build and depl
 
 ![Successful build of Team Services project](media/successful-build.png)
 
-Your application was deployed to Azure Web Apps by VSTS. As there were no changes made in Visual Studio, your web site shows looks the same if you refresh your browser window.
+Congratulations! Your application was deployed to Azure Web Apps by VSTS. Since were no changes made in Visual Studio, your web site shows looks the same if you refresh your browser window.

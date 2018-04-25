@@ -1,28 +1,28 @@
 ### YamlMime:Module
-uid: learn.deploy-apps-to-azure
-title: Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD)
-description: Learn how to deploy applications to Azure in a consistent manner with Visual Studio Team Services and CI/CD pipelines
-iconUrl: http://via.placeholder.com/120x120
+uid: learn-pr.deploy-apps-to-azure
+title: Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)
+description: Learn how to deploy applications to Azure in a consistent manner using Visual Studio Team Services and CI/CD pipelines.
+iconUrl: /learn/media/achievements/deploy-apps-with-vsts.svg
 metadata:
-  title:  Deploy Apps to Azure with Visual Studio and continuous integration / continuous delivery (CI/CD)
+  title:  Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)
 units:
-- uid: learn.deploy-apps-to-azure.create-vsts-project
+- uid: learn-pr.deploy-apps-to-azure.create-vsts-project
   type: tutorial
   durationInMinutes: 8
-- uid: learn.deploy-apps-to-azure.create-vs-web-app
+- uid: learn-pr.deploy-apps-to-azure.create-vs-web-app
   type: tutorial
   durationInMinutes: 10
-- uid: learn.deploy-apps-to-azure.create-vsts-build-definition
+- uid: learn-pr.deploy-apps-to-azure.create-vsts-build-definition
   type: tutorial
   durationInMinutes: 10
-- uid:  learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd
+- uid:  learn-pr.deploy-apps-to-azure.deploy-web-app-vsts-cicd
   type: tutorial
   durationInMinutes: 5
-- uid:  learn.deploy-apps-to-azure.deploy-web-app-to-staging
+- uid:  learn-pr.deploy-apps-to-azure.deploy-web-app-to-staging
   type: tutorial
   durationInMinutes: 10
 achievement:
-  uid: learn.deploy-apps-to-azure.achievement
+  uid: learn-pr.deploy-apps-to-azure.achievement
   name: Deploy Apps to Azure Champ
   description: Great job!
-  imageUrl: https://azure.microsoft.com/svghandler/virtual-machine-scale-sets/?width=600&height=315
+  imageUrl: /learn/media/achievements/deploy-apps-with-vsts.svg
