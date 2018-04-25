@@ -2,7 +2,7 @@
 uid: learn-pr.deploy-apps-to-azure
 title: Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)
 description: Learn how to deploy applications to Azure in a consistent manner using Visual Studio Team Services and CI/CD pipelines.
-iconUrl: /learn/media/achievements/deploy-apps-with-vsts.svg
+iconUrl: /learn-pr/media/achievements/deploy-apps-with-vsts.svg
 metadata:
   title:  Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)
 units:
@@ -25,4 +25,4 @@ achievement:
   uid: learn-pr.deploy-apps-to-azure.achievement
   name: Deploy Apps to Azure Champ
   description: Great job!
-  imageUrl: /learn/media/achievements/deploy-apps-with-vsts.svg
+  imageUrl: /learn-pr/media/achievements/deploy-apps-with-vsts.svg

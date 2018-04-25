@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.deploy-apps-to-azure.create-vs-web-app
+uid: learn-pr.deploy-apps-to-azure.create-vs-web-app
 title: Deploy an app to Azure from Visual Studio
 metadata:
   title: Deploy an app to Azure from Visual Studio
@@ -33,5 +33,5 @@ items:
   content: |
     [!include[](includes/create-vs-web-app-4.md)]
 challenge:
-  uid: learn.deploy-apps-to-azure.create-vs-web-app.quiz
+  uid: learn-quiz-pr.deploy-apps-to-azure.create-vs-web-app.quiz
   type: quiz
