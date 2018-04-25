@@ -19,7 +19,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-  [!include[](includes/create-vsts-project-1.md)]
+    [!include[](includes/create-vsts-project-1.md)]
 
   > [!Video Intro to CI/CD]
   

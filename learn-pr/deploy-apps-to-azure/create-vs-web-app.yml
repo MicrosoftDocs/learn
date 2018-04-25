@@ -19,7 +19,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-  [!include[](includes/create-vs-web-app-1.md)]
+    [!include[](includes/create-vs-web-app-1.md)]
 - title: Introduction to Azure Web Apps
   durationInMinutes: 5
   content: |
