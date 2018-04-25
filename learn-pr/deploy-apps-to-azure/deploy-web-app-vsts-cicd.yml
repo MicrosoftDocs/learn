@@ -19,15 +19,15 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    With your Web App running in Azure and connected with VSTS, now try the whole CI/CD pipeline. After you make a change in Visual Studio and commit your code, a build is triggered which then triggers a release to Azure.
+    [!include[](includes/deploy-web-app-vsts-cicd-1.md)]
 - title: Update app in Visual Studio and commit changes
   durationInMinutes: 1
   content: |
-    [!include[](lab/lab-4-deploy-web-app-vsts-cicd-1.md)]
+    [!include[](includes/deploy-web-app-vsts-cicd-2.md)]
 - title: Review build process and updated running app
   durationInMinutes: 3
   content: |
-    [!include[](lab/lab-4-deploy-web-app-vsts-cicd-2.md)]
+    [!include[](includes/deploy-web-app-vsts-cicd-3.md)]
 challenge:
   uid: learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd.quiz
   type: quiz

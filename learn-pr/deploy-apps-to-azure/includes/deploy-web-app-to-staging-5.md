@@ -1,4 +1,4 @@
-As in the previous module, to see your CI/CD pipeline deploy to staging slot, update the H1 in your app in Visual Studio. Commit and push the changes to see your app now deployed to the Web App staging slot in Azure:
+As in the previous tutorial, to see your CI/CD pipeline deploy to staging slot, update the H1 in your app in Visual Studio. Commit and push the changes to see your app now deployed to the Web App staging slot in Azure:
 
 1. In Visual Studio, open the **Solution Explorer** window.
 2. Navigate to and open *myWebApp | Views | Home | Index.cshtml*
