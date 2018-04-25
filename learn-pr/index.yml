@@ -1,6 +1,6 @@
 ### YamlMime:ModuleList
 title: Guided learning program
-summary: Free online training to help you build your technical skills and advance your career.
+summary: Free online training to help you build your technical skills and advance your career
 modules:
 - learn.intro-to-csharp
 - learn.deploy-apps-to-azure
