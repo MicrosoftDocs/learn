@@ -1,6 +1,6 @@
 ### YamlMime:Tutorial
 title: Create an instance of the Azure Computer Vision API
-uid: learn.serverless.create-computer-vision-api
+uid: learn.build-serverless-app.create-computer-vision-api
 metadata:
   title: Create an instance of the Azure Computer Vision API
   description: Create an instance of the Azure Computer Vision API to use machine learning to process images that are uploaded to your web application.
