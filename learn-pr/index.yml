@@ -4,3 +4,4 @@ modules:
 - learn.deploy-apps-to-azure
 - learn.deploy-custom-vmss-app
 - learn.serverless
+- learn.intro-to-csharp
