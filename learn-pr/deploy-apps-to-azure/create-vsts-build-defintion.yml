@@ -33,5 +33,5 @@ items:
   content: |
     [!include[](includes/create-vsts-build-definition-4.md)]
 challenge:
-  uid: learn-quiz-pr.deploy-apps-to-azure.create-vsts-build-definition.quiz
+  uid: learn.deploy-apps-to-azure.create-vsts-build-definition.quiz
   type: quiz

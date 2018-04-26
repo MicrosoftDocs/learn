@@ -29,5 +29,5 @@ items:
   content: |
     [!include[](includes/deploy-web-app-vsts-cicd-3.md)]
 challenge:
-  uid: learn-quiz-pr.deploy-apps-to-azure.deploy-web-app-vsts-cicd.quiz
+  uid: learn.deploy-apps-to-azure.deploy-web-app-vsts-cicd.quiz
   type: quiz
