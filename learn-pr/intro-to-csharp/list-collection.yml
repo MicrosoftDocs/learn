@@ -46,5 +46,5 @@ items:
     You've completed the list quickstart. This quickstart is the final interactive quickstart. You can continue these quickstarts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quickstart. You can try this same exercise, move directly to the next quickstart, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart. You can learn more about working with the `List` type in the
     [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.
 challenge:
-  uid: learn.intro-to-csharp.list-collections.quiz
+  uid: learn.intro-to-csharp.list-collection.quiz
   type: quiz

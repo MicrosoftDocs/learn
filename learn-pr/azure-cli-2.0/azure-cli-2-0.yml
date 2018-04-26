@@ -40,5 +40,5 @@ items:
   content: |
     [!include[](includes/cleanup.md)]
 challenge:
-  uid: learn.azure-cli-2-0.combined-quiz
+  uid: learn.azure-cli-2-0.combined-quiz.quiz
   type: quiz
