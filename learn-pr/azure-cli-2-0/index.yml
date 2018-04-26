@@ -1,0 +1,16 @@
+### YamlMime:Module
+uid: learn.azure-cli-2-0.index
+title: Create virtual machines with the Azure CLI 2.0
+description: Get started with the Azure CLI by creating virtual machines.
+iconUrl: /learn/media/achievements/create-vms-with-azure-cli.svg
+metadata:
+  title:  Create virtual machines with the Azure CLI 2.0
+units:
+- uid: learn.azure-cli-2-0
+  type: tutorial
+  durationInMinutes: 30
+achievement:
+  uid: learn.azure-cli-2-0.achievement
+  name: "Azure CLI Beginner"
+  description: "First step completed towards a new life."
+  imageUrl: /learn/media/achievements/create-vms-with-azure-cli.svg
