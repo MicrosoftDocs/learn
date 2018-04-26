@@ -1,31 +1,31 @@
 ### YamlMime:Module
-uid: learn.serverless
-title: Build a stateless web app in Azure
+uid: learn.build-serverless-app
+title: Build a serverless web app in Azure
 description: Learn how to build a serverless website using Azure Storage, Cosmos DB, API Management Service and Functions.
 iconUrl: /learn/media/achievements/build-a-stateless-web-app.svg
 metadata:
-  title: Build a stateless web app in Azure
+  title: Build a serverless web app in Azure
 units:
-- uid: learn.serverless.create-storage-account
+- uid: learn.build-serverless-app.create-storage-account
   type: tutorial
   durationInMinutes: 10
-- uid: learn.serverless.create-cosmosdb
+- uid: learn.build-serverless-app.create-cosmosdb
   type: tutorial
   durationInMinutes: 5
-- uid: learn.serverless.create-azure-functions
+- uid: learn.build-serverless-app.create-azure-functions
   type: tutorial
   durationInMinutes: 15
-- uid: learn.serverless.create-computer-vision-api
+- uid: learn.build-serverless-app.create-computer-vision-api
   type: tutorial
   durationInMinutes: 5
-- uid: learn.serverless.connect-storage-to-api-eventgrid
+- uid: learn.build-serverless-app.connect-storage-to-api-eventgrid
   type: tutorial
   durationInMinutes: 8
-- uid: learn.serverless.test-and-cleanup
+- uid: learn.build-serverless-app.test-and-cleanup
   type: tutorial
   durationInMinutes: 5
 achievement:
-  uid: learn.serverless.achievement
+  uid: learn.build-serverless-app.achievement
   name: "Build a stateless web app in Azure"
   description: "You've taken the first step towards deprecating your servers!"
   imageUrl: /learn/media/achievements/build-a-stateless-web-app.svg
