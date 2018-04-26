@@ -1,0 +1,32 @@
+### YamlMime:Tutorial
+title: Create Azure Functions
+uid: learn.create-azure-functions
+metadata:
+  title: Create Azure Functions
+  description: Learn about and create Azure Functions, then hook your serverless web app to your new functions.
+  audience: Developer
+  level: Intermediate 
+  displayType: two-column
+  interactive: azurecli
+  author: asajohnson
+  ms.service: 
+  ms.topic: interactive-tutorial
+  nextTutorialHref: create-computer-vision-api
+  nextTutorialTitle: Create an instance of the Azure Computer Vision API
+  ms.date: 04/25/2018
+  ms.author: asjohnso
+items:
+- durationInMinutes: 1
+  content: |   
+    [!include[](includes/create-azure-functions-1.md)]
+- title: Learn about Azure Functions
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/create-azure-functions-2.md)]
+- title: Create Azure Functions
+  durationInMinutes: 12
+  content: |
+    [!include[](includes/create-azure-functions-3.md)]
+  challenge:
+    type: quiz
+    uid: learn.serverless-app-functions.quiz

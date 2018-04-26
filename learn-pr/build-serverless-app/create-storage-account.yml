@@ -1,0 +1,32 @@
+### YamlMime:Tutorial
+title: Host a website in Azure Blob Storage
+uid: learn.create-storage-account
+metadata:
+  title: Host a website in Azure Blob Storage
+  description: Learn how to create an Azure Blob Storage account, storage containers, and host a static web application in Azure storage.
+  audience: Developer
+  level: Intermediate 
+  displayType: two-column
+  interactive: azurecli
+  author: asajohnson
+  ms.service: 
+  ms.topic: interactive-tutorial
+  nextTutorialHref: create-cosmosdb
+  nextTutorialTitle: Create an Azure Cosmos DB Instance
+  ms.date: 04/25/2018
+  ms.author: asjohnso
+items:
+- durationInMinutes: 1
+  content: |    
+    [!include[](includes/create-storage-account-1.md)]
+- title: Learn about Azure Storage
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/create-storage-account-2.md)]
+- title: Host a website in Azure Blob Storage
+  durationInMinutes: 6
+  content: |
+    [!include[](includes/create-storage-account-3.md)]
+  challenge:
+    type: quiz
+    uid: learn.serverless-app-storage.quiz
