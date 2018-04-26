@@ -33,5 +33,5 @@ items:
   content: |
     [!include[](includes/create-vs-web-app-4.md)]
 challenge:
-  uid: learn-quiz-pr.deploy-apps-to-azure.create-vs-web-app.quiz
+  uid: learn.deploy-apps-to-azure.create-vs-web-app.quiz
   type: quiz
