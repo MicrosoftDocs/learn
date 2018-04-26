@@ -1,6 +1,6 @@
 Deploying your app straight to production may cause problems, so you typically deploy to a staging site. This staging site lets you review your changes before pushing to production.
 
-> [!VIDEO https://www.youtube.com/embed/KUhJfqKav8Y]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1ZnXk]
 
 In this tutorial, you will:
     - Learn about Azure Web App deployment slots
@@ -12,4 +12,5 @@ In this tutorial, you will:
 
 At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
 
->[NOTE] This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.
+> [!NOTE]
+> This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.
