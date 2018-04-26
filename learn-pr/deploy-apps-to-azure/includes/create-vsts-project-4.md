@@ -1,6 +1,7 @@
-To get started with CI/CD and manage the code commit process, build definitions, and release definitions, create a project in Visual Studio Team Services (VSTS). 
+To get started with CI/CD and manage the code commit process, build definitions, and release definitions, create a project in Visual Studio Team Services (VSTS).
 
->[NOTE] For this tutorial, you can use a free account to create a basic ASP.NET web app and CI/CD pipeline. If you do not already have a Team Services account, [create one](http://go.microsoft.com/fwlink/?LinkId=307137).
+> [!NOTE]
+> For this tutorial, you can use a free account to create a basic ASP.NET web app and CI/CD pipeline. If you do not already have a Team Services account, [create one](http://go.microsoft.com/fwlink/?LinkId=307137).
 
 1. Open your Team Services dashboard in a web browser and choose **New project**.
 2. Enter *myWebApp* for the **Project name**. Leave all other default values to use *Git* version control and *Agile* work item process, then select **Create**.
