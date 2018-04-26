@@ -1,4 +1,4 @@
-Visual Studio Team Services (VSTS) provides a highly customizable Continuous Integration (CI) and Continuous Deployment (CD) pipeline to automatically deploy your app to Azure each time you make a code commit to source contorl.
+Visual Studio Team Services (VSTS) provides a highly customizable Continuous Integration (CI) and Continuous Deployment (CD) pipeline to automatically deploy your app to Azure each time you make a code commit to source control.
   
 In this tutorial, you will:
     - Learn about the CI/CD process
