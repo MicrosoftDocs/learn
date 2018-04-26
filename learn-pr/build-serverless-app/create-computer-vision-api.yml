@@ -2,7 +2,7 @@
 title: Create an instance of the Azure Computer Vision API
 uid: learn.create-computer-vision-api
 metadata:
-title: Create an instance of the Azure Computer Vision API
+  title: Create an instance of the Azure Computer Vision API
   description: Create an instance of the Azure Computer Vision API to use machine learning to process images that are uploaded to your web application.
   audience: Developer
   level: Intermediate 
@@ -12,7 +12,7 @@ title: Create an instance of the Azure Computer Vision API
   ms.service: 
   ms.topic: interactive-tutorial
   nextTutorialHref: connect-storage-to-api-eventgrid
-  nextTutorialTitle: Connect Storage to API EventGrid
+  nextTutorialTitle: Connect Storage Account to API Event Grid
   ms.date: 04/25/2018
   ms.author: asjohnso
 items:

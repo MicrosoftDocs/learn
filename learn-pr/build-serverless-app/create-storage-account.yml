@@ -2,7 +2,7 @@
 title: Host a website in Azure Blob Storage
 uid: learn.create-storage-account
 metadata:
-title: Host a website in Azure Blob Storage
+  title: Host a website in Azure Blob Storage
   description: Learn how to create an Azure Blob Storage account, storage containers, and host a static web application in Azure storage.
   audience: Developer
   level: Intermediate 
