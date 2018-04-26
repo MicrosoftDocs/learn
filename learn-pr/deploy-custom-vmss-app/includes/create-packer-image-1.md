@@ -1,14 +1,14 @@
-## Azure VM images
+## Creating Azure virtual machine images
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zv1fs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Zv1fs]
 
-When you create an Azure virtual machine scale set, you specify an image to be used when the virtual machine (VM) instances are deployed. Each VM in Azure is created from an image that defines the Linux distribution and OS version. The Azure Marketplace provides many first and third-party images for most common distributions and application environments.
+When you create an Azure virtual machine (VM) scale set, you specify an image to be used when VM instances are deployed. Each VM in Azure is created from an image that defines the Linux distribution and OS version. The[Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/) provides many first and third-party images for most common distributions and application environments.
 
-To reduce the number of tasks after VM instances are deployed, you can use a custom VM image. This custom VM image includes any required application installs or configurations. Any VM instances created in the scale set use the custom VM image and are ready to serve your application traffic.
+You can use a custom VM image to reduce the number of tasks after VM instances are deployed. This custom VM image includes any required application installs or configurations. Any VM instances created in the scale set use the custom VM image and are ready to serve your application traffic.
 
 ## What is Packer?
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zh1n]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Zh1n]
 
 [Packer](https://www.packer.io/) is an open source tool that lets you define and build custom images in a scripted, consistent manner. The configuration for an image is defined in a JSON (JavaSCript Object Notation) template that includes any additional configurations and application installs that you require. This template approach reduces the risk of human error from manual builds, and lets you create reproducible images for your applications.
 

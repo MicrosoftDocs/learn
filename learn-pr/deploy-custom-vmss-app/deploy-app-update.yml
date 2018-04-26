@@ -3,7 +3,7 @@ uid: learn.deploy-custom-vmss-app.deploy-app-update
 title: Update an app from GitHub
 metadata:
   title: Deploy an application update from GitHub to an Azure virtual machine scale set
-  description: Learn how to deploy an application update from GitHub to the VM instances in a scale set with the the Azure Custom Script Extension
+  description: Learn how to deploy an application update from GitHub to the VM instances in a scale set with the the Azure Custom Script Extension.
   audience: Developer
   level: Intermediate
   ms.topic: get-started-article
@@ -21,7 +21,7 @@ items:
 - title: Overview of app updates and CI/CD
   durationInMinutes: 5
   content: |
-    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zh1o]
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Zh1o]
 
     [!include[](includes/deploy-app-update-1.md)]
 - title: Deploy app update from GitHub with the Custom Script Extension
