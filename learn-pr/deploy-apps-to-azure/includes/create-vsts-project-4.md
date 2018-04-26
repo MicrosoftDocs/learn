@@ -8,6 +8,6 @@ To get started with CI/CD and manage the code commit process, build definitions,
 3. Once your project has been created, choose the option to **Initialize with a README or gitignore**, then select **Initialize**.
 4. Inside your new project, choose **Dashboards** across the top, then select **Open in Visual Studio**:
 
-![Open VSTS project in Visual Studio](media/open-vsts-project-in-visual-studio.png)
+![Open VSTS project in Visual Studio](../media/open-vsts-project-in-visual-studio.png)
 
 Congratulations - You have created your first VSTS project!
