@@ -19,7 +19,7 @@ items:
   content: |
     In this quickstart module, you use the Azure Custom Script Extension to deploy an app from GitHub. The custom script allows the latest code for your app to be deployed to the VM, rather than being baked into the Packer image.
 
-    > [!VIDEO https://www.youtube.com/embed/8BGw4fUre_c]
+    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1ZqMs]
 - title: Overview of the Azure Custom Script Extension
   durationInMinutes: 2
   content: |
