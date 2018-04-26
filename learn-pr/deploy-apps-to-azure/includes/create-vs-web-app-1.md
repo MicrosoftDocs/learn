@@ -2,9 +2,9 @@ In the previous tutorial, you created a project in Visual Studio Team Services. 
 
 In this tutorial, you will:
 
-    * Learn about Azure Web Apps
-    * Create an ASP.NET Web App in Visual Studio
-    * Deploy an Azure Web App from Visual Studio
+* Learn about Azure Web Apps
+* Create an ASP.NET Web App in Visual Studio
+* Deploy an Azure Web App from Visual Studio
 
 At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
 
