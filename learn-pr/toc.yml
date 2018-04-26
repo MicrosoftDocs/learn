@@ -10,5 +10,3 @@ items:
     uid: learn.intro-to-csharp.interpolated
   - name: Numbers
     uid: learn.intro-to-csharp.numbers
-- name: Build a serverless web application
-  uid: learn.build-serverless-app
