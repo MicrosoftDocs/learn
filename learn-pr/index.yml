@@ -3,5 +3,5 @@ title: Azure tutorials
 modules:
 - learn.deploy-apps-to-azure
 - learn.deploy-custom-vmss-app
-- learn.serverless
+- learn.build-serverless-app
 - learn.intro-to-csharp
