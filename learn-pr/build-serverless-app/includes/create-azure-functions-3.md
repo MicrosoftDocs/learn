@@ -18,8 +18,7 @@ As mentioned previously, the serverless solution that you're building will use t
 
 Go to the functions app and remove all the existing CORS entries, then add a * to allow access from all resources.
 
-  > [!NOTE]
-  > In a production environment it is safer to only allow access from your own domains.
+  > [!NOTE] In a production environment it is safer to only allow access from your own domains.
 
 ![Setup Cross-Origin Resource Sharing(CORS)][cors]
 

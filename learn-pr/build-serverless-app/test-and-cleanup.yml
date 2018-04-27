@@ -23,4 +23,4 @@ items:
     [!include[](includes/test-and-cleanup-2.md)]
   challenge:
     type: quiz
-    uid: learn.serverless-app-cleanup.quiz
+    uid: learn.build-serverless-app.test-and-cleanup.quiz
