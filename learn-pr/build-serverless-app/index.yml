@@ -26,6 +26,6 @@ units:
   durationInMinutes: 5
 achievement:
   uid: learn.build-serverless-app.achievement
-  name: "Build a stateless web app in Azure"
+  name: "Build a serverless web app in Azure"
   description: "You've taken the first step towards deprecating your servers!"
   imageUrl: /learn/media/achievements/build-a-stateless-web-app.svg
