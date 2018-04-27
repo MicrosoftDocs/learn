@@ -1,6 +1,6 @@
 ### YamlMime:Tutorial
 title: Test your application and clean up your environment
-uid: learn.serverless.test-and-cleanup
+uid: learn.build-serverless-app.test-and-cleanup
 metadata:
   title: Test and Clean up
   description: Learn how to build a serverless website, by storing data in a cosmos DB, interfacing it with API management service and functions.
@@ -23,4 +23,4 @@ items:
     [!include[](includes/test-and-cleanup-2.md)]
   challenge:
     type: quiz
-    uid: learn.serverless-app-cleanup.quiz
+    uid: learn.build-serverless-app.test-and-cleanup.quiz

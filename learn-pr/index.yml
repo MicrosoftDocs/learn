@@ -6,3 +6,5 @@ modules:
 - learn.serverless
 - learn.intro-to-csharp
 - learn.azure-cli-2-0
+- learn.build-serverless-app
+- learn.intro-to-csharp

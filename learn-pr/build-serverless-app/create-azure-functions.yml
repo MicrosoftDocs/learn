@@ -1,6 +1,6 @@
 ### YamlMime:Tutorial
 title: Create Azure Functions
-uid: learn.serverless.create-azure-functions
+uid: learn.build-serverless-app.create-azure-functions
 metadata:
   title: Create Azure Functions
   description: Learn about and create Azure Functions, then hook your serverless web app to your new functions.
@@ -29,4 +29,4 @@ items:
     [!include[](includes/create-azure-functions-3.md)]
   challenge:
     type: quiz
-    uid: learn.serverless-app-functions.quiz
+    uid: learn.build-serverless-app.functions.quiz

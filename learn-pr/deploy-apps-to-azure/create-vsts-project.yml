@@ -20,7 +20,7 @@ items:
 - durationInMinutes: 1
   content: |
     [!include[](includes/create-vsts-project-1.md)]
-    > [!VIDEO https://www.youtube.com/embed/25ppPiok5OM]
+    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zh1p]
 - title: Learn about CI/CD
   durationInMinutes: 4
   content: |

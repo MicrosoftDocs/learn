@@ -8,7 +8,7 @@ Core components of VSTS include:
 
     - *Hosted agents* are run on the VSTS platform and Microsoft takes care of the maintenance and upgrades.
 
-    - *Private agent* are set up and managed on your own systems to run build and deployment jobs. Private agents give you more control to install dependent software needed for your builds and deployments. You can install the agent on Windows, Linux, or macOS machines. You can also install an agent on a Linux Docker container. After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
+    - *Private agents* are set up and managed on your own systems to run build and deployment jobs. Private agents give you more control to install dependent software needed for your builds and deployments. You can install the agent on Windows, Linux, or macOS machines. You can also install an agent on a Linux Docker container. After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 
 - **Builds** - At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory. You specify the events that will trigger the buil, such as a code commit to a VSTS code repository.
 
