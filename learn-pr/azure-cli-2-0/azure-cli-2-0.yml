@@ -9,12 +9,16 @@ metadata:
   ms.topic: interactive-tutorial
   nextTutorialHref: 
   nextTutorialTitle: 
-  displayType: one-column
-  interactive: cli
+  displayType: two-column
+  interactive: azurecli
   ms.custom: guided-learning
   ms.prod: azure
   ms.technology: 
 items:
+- title: Introduction to the Azure CLI 2.0 
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/intro.md)]
 - title: Login 
   durationInMinutes: 2
   content: |
