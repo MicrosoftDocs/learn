@@ -15,7 +15,7 @@ metadata:
   ms.custom: guided-learning
   ms.technology: 
   ms.date: 04/25/2018
-  items:
+items:
 - title: Introduction to the Azure CLI 2.0 
   durationInMinutes: 2
   content: |
