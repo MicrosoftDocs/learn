@@ -4,18 +4,17 @@ title: Create a Visual Studio Team Services (VSTS) project
 metadata:
   title: Create a Visual Studio Team Services (VSTS) project
   description: Learn how to use Visual Studio Team Services (VSTS) to improve application development and deployment with Continuous Integration and Continuous Delivery (CI/CD)
-  author: asajohnson
-  ms.author: asjohnso@microsoft.com
-  ms.date: 04/24/2018
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  nextTutorialHref: create-vs-web-app
-  nextTutorialTitle: Deploy an app to Azure from Visual Studio
   displayType: one-column
+  interactive: 
+  author: asajohnson
+  ms.author: asjohnso
+  ms.service: azure
   ms.custom: guided-learning
-  ms.prod: Azure
   ms.technology: virtual-machine-windows
+  ms.date: 04/24/2018
 items:
 - durationInMinutes: 1
   content: |

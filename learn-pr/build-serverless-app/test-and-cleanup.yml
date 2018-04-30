@@ -6,13 +6,15 @@ metadata:
   description: Learn how to build a serverless website, by storing data in a cosmos DB, interfacing it with API management service and functions.
   audience: Developer
   level: Intermediate 
+  ms.topic: interactive-tutorial
   displayType: two-column
   interactive: azurecli
   author: asajohnson
-  ms.service: 
-  ms.topic: interactive-tutorial
-  ms.date: 04/25/2018
   ms.author: asjohnso
+  ms.service: 
+  ms.custom: guided-learning
+  ms.technology: 
+  ms.date: 04/25/2018 
 items:
 - durationInMinutes: 1
   content: |   
