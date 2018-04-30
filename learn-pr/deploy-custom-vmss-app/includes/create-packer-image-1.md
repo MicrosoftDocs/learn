@@ -1,6 +1,6 @@
 ## Azure VM images
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zv1fs]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zv1f]
 
 When you create an Azure virtual machine scale set, you specify an image to be used when the virtual machine (VM) instances are deployed. Each VM in Azure is created from an image that defines the Linux distribution and OS version. The Azure Marketplace provides many first and third-party images for most common distributions and application environments.
 
