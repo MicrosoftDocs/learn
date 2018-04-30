@@ -7,15 +7,13 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  
-  ms.custom: mvc
-  ms.prod: .net
-  ms.technology: devlang-csharp
-  
   displayType: two-column
   interactive: csharp
-  nextTutorialHref: interpolated-strings
-  nextTutorialTitle: String interpolation
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: .net
+  ms.custom: guided-learning
+  ms.technology: devlang-csharp
 items:
 - durationInMinutes: 1
   content: |
