@@ -1,0 +1,29 @@
+### YamlMime:Tutorial
+uid: learn.azure-cli-2.resource-group
+title: Create a resource group | Microsoft Docs
+metadata:
+  title: Create a resource group
+  description: Allocate your resources.  
+  audience: Developer
+  level: Beginner
+  ms.topic: get-started-article
+  nextTutorialHref: learn.azure-cli-2.create-vm
+  nextTutorialTitle: Create a virtual machine
+  displayType: two-column
+  interactive: azurecli
+  ms.custom:
+  ms.prod:
+  ms.technology: azure
+items:
+- durationInMinutes: 3
+  content: |
+      In Azure, all resources are allocated in a resource management group. Resource groups provide logical groupings of resources
+        that make them easier to work with as a collection. For this tutorial, all of the created resources go into a
+        single group named `TutorialResources`.
+
+        ```azurecli
+        az group create --name TutorialResources --location eastus
+        ```
+challenge:
+  uid: learn.azure-cli-2-resource-group.quiz
+  type: quiz
