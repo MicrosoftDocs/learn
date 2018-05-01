@@ -5,5 +5,3 @@ In this tutorial, you will:
     - Setup EventGrid to process images that are uploaded to your website
 
 At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
-
-> [!NOTE] This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.
