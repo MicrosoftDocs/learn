@@ -9,4 +9,5 @@ When you upload a picture to the web application and reload it, the application 
 
 Now, it's time to do one final test and then clean it all up!
 
-> [!NOTE] This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.
+>[!NOTE] 
+> This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.
