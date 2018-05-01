@@ -7,8 +7,6 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.resource-group
-  nextTutorialTitle: Create a resource group
   displayType: two-column
   interactive: azurecli
   ms.custom:
@@ -30,6 +28,10 @@ items:
       ```
 
       With cleanup completed, the tutorial is finished. Continue on for a summary of everything you learned and links to resources that will help you with your next steps.
+- durationInMinutes: 1
+  title: placeholder
+  content: |
+    tutorials are required to have more than one step.
 challenge:
   uid: learn.azure-cli-2-login.quiz
   type: quiz

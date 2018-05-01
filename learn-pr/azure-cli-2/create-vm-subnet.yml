@@ -7,8 +7,6 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.cleanup
-  nextTutorialTitle: Clean up your Azure CLI 2.0 lab
   displayType: two-column
   interactive: azurecli
   ms.custom:
@@ -23,13 +21,13 @@ items:
 
         ```bash
         VM2_IP_ADDR=$(az vm create -g TutorialResources \
-           -n TutorialVM2 \  
+           -n TutorialVM2 \
           --image UbuntuLTS \
           --generate-ssh-keys \
           --subnet $SUBNET_ID \
           --query publicIpAddress \
           -o tsv)
-           ``` 
+           ```
 
         Using the stored IP address, SSH into the newly created VM.
 
@@ -39,27 +37,27 @@ items:
 
         Go ahead and log out from the VM.
 
-    - durationInMinutes: 2
-      title: Cleanup
-      content: |-
-        Now that the tutorial is complete, it's time to clean up the created resources. You
-        can delete individual resources with the `delete` command, but the safest way to remove all resources
-        in a resource group is with `group delete`.
+- durationInMinutes: 2
+  title: Cleanup
+  content: |-
+    Now that the tutorial is complete, it's time to clean up the created resources. You
+    can delete individual resources with the `delete` command, but the safest way to remove all resources
+    in a resource group is with `group delete`.
 
-        ```azurecli
-        az group delete --name TutorialResources --no-wait
-        ```
+    ```azurecli
+    az group delete --name TutorialResources --no-wait
+    ```
 
-        This command deletes the resources created during the tutorial, and is guaranteed to deallocate
-        them in the correct order. The `--no-wait` parameter keeps the CLI from blocking while the
-        deletion takes place. If you want to wait until the deletion is complete or watch it progress, use the `group wait` command.
+    This command deletes the resources created during the tutorial, and is guaranteed to deallocate
+    them in the correct order. The `--no-wait` parameter keeps the CLI from blocking while the
+    deletion takes place. If you want to wait until the deletion is complete or watch it progress, use the `group wait` command.
 
-        ```azurecli
-        az group wait --name TutorialResources --deleted
-        ```
+    ```azurecli
+    az group wait --name TutorialResources --deleted
+    ```
 
-        With cleanup completed, the tutorial is finished. Continue on for a summary of everything
-        you learned and links to resources that will help you with your next steps.
+    With cleanup completed, the tutorial is finished. Continue on for a summary of everything
+    you learned and links to resources that will help you with your next steps.
 challenge:
   uid: learn.azure-cli-2-subnet.quiz
   type: quiz

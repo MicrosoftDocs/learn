@@ -7,8 +7,6 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.subnet
-  nextTutorialTitle: Creating a new VM on the existing subnet
   displayType: two-column
   interactive: azurecli
   ms.custom:
@@ -29,7 +27,7 @@ items:
         ```azurecli
         az network nic show --ids $NIC_ID \
           -g TutorialResources \
-          --query '{IP:ipConfigurations[].publicIpAddress.id, Subnet:ipConfigurations[].subnet.id}' 
+          --query '{IP:ipConfigurations[].publicIpAddress.id, Subnet:ipConfigurations[].subnet.id}'
         ```
 
         ```json
@@ -72,7 +70,10 @@ items:
         ```bash
         echo $VM1_IP_ADDR
         ```
-
+- durationInMinutes: 1
+  title: placeholder
+  content: |
+    tutorials are required to have more than one step.
 challenge:
   uid: learn.azure-cli-2-variables.quiz
   type: quiz
