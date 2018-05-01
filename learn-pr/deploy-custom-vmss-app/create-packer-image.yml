@@ -17,7 +17,7 @@ metadata:
 items:
 - durationInMinutes: 3
   content: |
-    In this module, you learn why and how to create a custom Linux VM image with Packer. This Packer image is used in the additional quickstarts as you deploy your virtual machine scale set and application.
+    In this module, you learn why and how to create a custom Linux VM image by using Packer. This Packer image is used in the additional quickstarts as you deploy your virtual machine scale set and application.
 
     > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1ZnXj]
 - title: Overview of Packer and image deployment
@@ -28,11 +28,11 @@ items:
   durationInMinutes: 2
   content: |
     [!include[](includes/create-packer-image-2.md)]
-- title: Create Packer template
+- title: Create a Packer template
   durationInMinutes: 2
   content: |
     [!include[](includes/create-packer-image-3.md)]
-- title: Build Packer image
+- title: Build a Packer image
   durationInMinutes: 5
   content: |
     [!include[](includes/create-packer-image-4.md)]
