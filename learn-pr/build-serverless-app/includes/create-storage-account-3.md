@@ -2,15 +2,18 @@
 
 The following steps will walk you through creating an Azure Storage account, creating a resource group, and a storage container to host your static resources.
 
-> [!IMPORTANT] In order to complete this, you will need an Azure subscription. If you don't already have one, you can create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+> [!IMPORTANT]
+> In order to complete this, you will need an Azure subscription. If you don't already have one, you can create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## Open Azure Cloud Shell
 
 Azure Cloud Shell is an interactive, browser-accessible shell for managing your Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
 
-Common Azure tools are pre-installed and configured in Cloud Shell for you to use with your account. Just select the **Copy** button to copy the code, paste it in Cloud Shell, and then press **Enter** to run it. 
+Common Azure tools are pre-installed and configured in Cloud Shell for you to use with your account. 
 
 For this tutorial, Cloud Shell should appear on the right side of the screen. Select the blue **Login** button to get started using it.
+
+When presented with code snippets throughout this module, you can select the **Copy** button to copy the code, paste it in Cloud Shell, modify it if you need to, and then press **Enter** to run it. 
 
 ## Create a resource group
 
@@ -18,7 +21,8 @@ An Azure resource group is a logical container that holds related resources for 
 
 You can create a resource group with Cloud Shell by using the [az group create][az-group-create] command. For example, the following command creates a resource group named *serverlessRG* in the *eastus* location and exports them to variables so you can use them throughout this tutorial. 
 
-> [!IMPORTANT] As you create other resources in this tutorial, you will need to be sure to use the same region as you select in this first step.
+> [!IMPORTANT]
+> As you create other resources in this tutorial, you will need to be sure to use the same region as you select in this first step.
 
 ```azurecli
 export rg=serverlessRG
@@ -26,7 +30,8 @@ export loc=eastus
 az group create --name $rg --location $loc
 ```
 
-> [!NOTE] It is important to note that resource groups store metadata about your resources. This means that when you specify a location for the resource group, you are specifying where that metadata is stored. Keep this in mind when you are using this in a production environment because for compliance reasons, you may need to ensure that your data is stored in a particular region.
+> [!NOTE]
+> It is important to note that resource groups store metadata about your resources. This means that when you specify a location for the resource group, you are specifying where that metadata is stored. Keep this in mind when you are using this in a production environment because for compliance reasons, you may need to ensure that your data is stored in a particular region.
 
 ## Create an Azure Storage account
 
