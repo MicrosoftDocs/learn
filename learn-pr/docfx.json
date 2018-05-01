@@ -41,7 +41,8 @@
       "breadcrumb_path": "/learn/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
-      "clicktale":true
+      "clicktale":true,
+      "signintest": true
     },
     "fileMetadata": {},
     "template": [],
