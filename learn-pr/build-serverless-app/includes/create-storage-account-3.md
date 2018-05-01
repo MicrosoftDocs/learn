@@ -1,5 +1,3 @@
-## Host a website in Azure Blob Storage
-
 The following steps will walk you through creating an Azure Storage account, creating a resource group, and a storage container to host your static resources.
 
 > [!IMPORTANT]

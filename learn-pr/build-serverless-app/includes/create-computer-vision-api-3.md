@@ -1,5 +1,3 @@
-## Create an instance of the Azure Computer Vision API
-
 1. In the Azure Portal, select **Create a resource**
 2. Select **AI + Cognitive Services**
 3. Select **Computer Vision API**

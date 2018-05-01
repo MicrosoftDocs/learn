@@ -17,10 +17,14 @@ items:
 - durationInMinutes: 1
   content: |   
     [!include[](includes/test-and-cleanup-1.md)]
-- title: Test your application and clean up your environment
+- title: Test your application
   durationInMinutes: 4
   content: |
     [!include[](includes/test-and-cleanup-2.md)]
+- title: Clean up your environment
+  durationInMinutes: 4
+  content: |
+    [!include[](includes/test-and-cleanup-3.md)]
   challenge:
     type: quiz
     uid: learn.build-serverless-app.test-and-cleanup.quiz
