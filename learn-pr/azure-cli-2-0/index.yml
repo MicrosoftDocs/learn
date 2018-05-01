@@ -11,6 +11,6 @@ units:
   durationInMinutes: 30
 achievement:
   uid: learn.azure-cli-2-0.achievement
-  name: "Azure CLI Beginner"
+  name: "Create virtual machines with the Azure CLI 2.0"
   description: "First step completed towards a new life."
   imageUrl: /learn/media/achievements/create-vms-with-azure-cli.svg
