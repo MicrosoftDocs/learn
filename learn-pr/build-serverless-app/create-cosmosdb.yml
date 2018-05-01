@@ -29,4 +29,4 @@ items:
     [!include[](includes/create-cosmosdb-3.md)]
   challenge:
     type: quiz
-    uid: learn.build-serverless-app.cosmos.quiz
+    uid: learn.build-serverless-app.create-cosmosdb.quiz
