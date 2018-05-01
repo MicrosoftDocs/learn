@@ -7,8 +7,6 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.queries
-  nextTutorialTitle: Get VM information with queries
   displayType: two-column
   interactive: azurecli
   ms.custom:
@@ -27,7 +25,7 @@ items:
           --name TutorialVM1 \
           --image UbuntuLTS \
           --generate-ssh-keys \
-          --verbose 
+          --verbose
         ```
 
         > [!NOTE]
@@ -61,6 +59,10 @@ items:
 
         There are other ways to get this IP address after the VM has started. In the next section you will see how to get detailed information on
         the VM, and how to filter it.
+- durationInMinutes: 1
+  title: placeholder
+  content: |
+    tutorials are required to have more than one step.
 challenge:
   uid: learn.azure-cli-2-create-vm.quiz
   type: quiz

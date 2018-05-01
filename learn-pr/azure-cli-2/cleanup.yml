@@ -3,12 +3,10 @@ uid: learn.azure-cli-2.cleanup
 title: Clean up your Azure CLI 2.0 lab | Microsoft Docs
 metadata:
   title: Cleanup
-  description: Clean up your created resources. 
+  description: Clean up your created resources.
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: 
-  nextTutorialTitle:
   displayType: two-column
   interactive: azurecli
   ms.custom:
@@ -30,7 +28,10 @@ items:
     ```
 
     With cleanup completed, the tutorial is finished. Continue on for a summary of everything you learned and links to resources that will help you with your next steps.
-
+- durationInMinutes: 1
+  title: placeholder
+  content: |
+    tutorials are required to have more than one step.
 challenge:
   uid: learn.azure-cli-2-cleanup.quiz
   type: quiz
