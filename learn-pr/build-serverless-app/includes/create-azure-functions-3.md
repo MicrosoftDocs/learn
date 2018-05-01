@@ -1,8 +1,8 @@
 ## Create Azure Functions
 
-As mentioned previously, the serverless solution that you're building will use three Azure Functions. One will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API. The other two will back the APIs that the website uses, to upload images and retrieve the list of images.
+As mentioned previously, the serverless solution that you're building will use three Azure Functions. One will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the Computer Vision API. The other two will back the APIs that the website uses, to upload images and retrieve the list of images.
 
-## Create the functions app
+## Create the Functions app
 
 1. **Create a resource** > **Compute** > **Functions App**
 2. Enter a unique name into the **App name** text box. This tutorial uses `serverlessApp`
@@ -65,7 +65,7 @@ module.exports = function (context, req) {
 
 ## Grant Azure functions access to your Cosmos DB
 
-You previously turned on MSI in functions, which created an identity for your Azure Functions to run as.  Now you need to authorize that identity to have access to your Cosmos DB.
+You previously turned on MSI in Functions, which created an identity for your Azure Functions to run as.  Now you need to authorize that identity to have access to your Cosmos DB.
 
 1. Navigate to the Cosmos DB console
 2. Select your Cosmos DB
