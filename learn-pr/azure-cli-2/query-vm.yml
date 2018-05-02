@@ -3,12 +3,10 @@ uid: learn.azure-cli-2.queries
 title: Get VM information | Microsoft Docs
 metadata:
   title: Get VM information with queries
-  description: Get VM information with queries. 
+  description: Get VM information with queries.
   audience: Developer
   level: Beginner
   ms.topic: get-started-article
-  nextTutorialHref: learn.azure-cli-2.variables
-  nextTutorialTitle: Set environment variables
   displayType: two-column
   interactive: azurecli
   ms.custom:
@@ -27,8 +25,8 @@ items:
         You'll see a lot of information, which can be difficult to parse visually. The returned JSON contains information on authentication, network interfaces, storage,
         and more. Most importantly,
         it contains the Azure object IDs for resources that the VM is connected to. Object IDs allow accessing these resources directly
-        to get more information about the VM's configuration and capabilities. 
-        
+        to get more information about the VM's configuration and capabilities.
+
         In order to extract the object ID we want, the `--query` argument is used. Queries are written in the [JMESPath query language](http://jmespath.org). Start
         with getting the network interface controller (NIC) object ID.
 
@@ -58,6 +56,10 @@ items:
         ```
 
         This example also demonstrates the use of short arguments. You may use `-g` instead of `--resource-group`, `-n` instead of `--name`, and `-o` instead of `--output`.
+- durationInMinutes: 1
+  title: placeholder
+  content: |
+    tutorials are required to have more than one step.
 challenge:
   uid: learn.azure-cli-2-queries.quiz
   type: quiz
