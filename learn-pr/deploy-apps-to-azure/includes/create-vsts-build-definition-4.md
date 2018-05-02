@@ -12,6 +12,6 @@ In VSTS, you use a build definition to outline how your application should be bu
 
 Watch as the build is scheduled on a hosted agent, then begins to build and deploy to Azure. The output is similar to the following example:
 
-![Successful build of Team Services project](media/successful-build.png)
+![Successful build of Team Services project](./media/successful-build.png)
 
 Congratulations! Your application was deployed to Azure Web Apps by VSTS. Since were no changes made in Visual Studio, your web site shows looks the same if you refresh your browser window.
