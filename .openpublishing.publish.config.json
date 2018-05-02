@@ -28,6 +28,10 @@
     "branch": "master",
     "branch_mapping": {}
   }],
+  "error_log_codes": [
+    "DuplicateUids",
+    "UidNotFound"
+  ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false
 }

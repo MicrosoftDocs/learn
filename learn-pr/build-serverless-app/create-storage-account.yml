@@ -30,4 +30,4 @@ items:
     [!include[](includes/create-storage-account-3.md)]
 challenge:
   type: quiz
-  uid: learn.build-serverless-app.storage.quiz
+  uid: learn.build-serverless-app.create-storage-account.quiz

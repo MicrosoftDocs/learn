@@ -29,4 +29,4 @@ items:
     [!include[](includes/connect-storage-to-api-eventgrid-3.md)]
 challenge:
   type: quiz
-  uid: learn.build-serverless-app.eventgrid.quiz
+  uid: learn.build-serverless-app.connect-storage-to-api-eventgrid.quiz

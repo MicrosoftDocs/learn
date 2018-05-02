@@ -27,4 +27,4 @@ items:
     [!include[](includes/create-azure-functions-3.md)]
 challenge:
   type: quiz
-  uid: learn.build-serverless-app.functions.quiz
+  uid: learn.build-serverless-app.create-azure-functions.quiz
