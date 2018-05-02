@@ -5,6 +5,6 @@ When you commit and synced your changes in Visual Studio, the build definition i
     - Choose your build definition, then select the **Queued & running** build to watch as the build progresses.
 2. To see your changes applied once the build has successfully completed, refresh your web site in a browser:
 
-    ![ASP.NET web app running on Azure Web App from CI/CD pipeline](media/running-web-app-cicd.png)
+    ![ASP.NET web app running on Azure Web App from CI/CD pipeline](./media/running-web-app-cicd.png)
 
 Congratulations - you've now updated your live Azure Web App!
