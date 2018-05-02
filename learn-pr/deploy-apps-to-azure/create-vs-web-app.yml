@@ -4,18 +4,16 @@ title: Deploy an app to Azure from Visual Studio
 metadata:
   title: Deploy an app to Azure from Visual Studio
   description: Learn how to use Visual Studio to deploy an ASP.NET web app to Azure.
-  author: asajohnson
-  ms.author: asjohnso@microsoft.com
-  ms.date: 04/24/2018
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  nextTutorialHref: create-vsts-build-defintion
-  nextTutorialTitle: Create a VSTS build definition for CI/CD
   displayType: one-column
+  author: asajohnson
+  ms.author: asjohnso
+  ms.service: azure
   ms.custom: guided-learning
-  ms.prod: Azure
   ms.technology: virtual-machine-windows
+  ms.date: 04/24/2018
 items:
 - durationInMinutes: 1
   content: |

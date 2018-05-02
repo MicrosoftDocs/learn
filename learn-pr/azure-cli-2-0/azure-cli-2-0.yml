@@ -7,13 +7,14 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  nextTutorialHref: 
-  nextTutorialTitle: 
   displayType: two-column
   interactive: azurecli
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: azure
   ms.custom: guided-learning
-  ms.prod: azure
   ms.technology: 
+  ms.date: 04/25/2018
 items:
 - title: Introduction to the Azure CLI 2.0 
   durationInMinutes: 2

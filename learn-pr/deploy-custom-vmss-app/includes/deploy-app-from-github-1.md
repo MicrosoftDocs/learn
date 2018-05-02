@@ -6,12 +6,14 @@ Azure VM extensions are small applications that provide post-deployment configur
 
 Azure VM extensions can be run using the Azure CLI 2.0, Azure PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new VM instance deployment, or run against any existing VM or scale set.
 
-## The Azure Custom Script Extension
+## Azure Custom Script Extension
 
-The Custom Script Extension downloads files and executes commands on Azure VMs. This extension is useful for post deployment configuration, software installation, or any other configuration / management task. Scripts can be downloaded from Azure storage or GitHub, or provided to the Azure portal at extension run-time.
+The Azure Custom Script Extension downloads files and executes commands on Azure VMs. This extension is useful for post deployment configuration, software installation, or any other configuration / management task. Scripts can be downloaded from Azure storage or GitHub, or provided to the Azure portal at extension run-time.
 
 The Custom Script extension integrates with with the Azure CLI 2.0, Azure PowerShell, Azure portal, templates, or the REST API.
 
 To use the Custom Script Extension with the Azure CLI, you create a JSON file that defines what files to obtain and commands to execute. These JSON definitions can be reused across scale set deployments to apply consistent application installs. When combined with a Packer image, you ensure that all VM instances in a scale set are configured in an identical way and with a consistent application install.
 
 The Custom Script Extension is applied to the virutal machine scale set, so both new and existing VM instances run the same script definition. In the next module, you also see how to update an existing script definition as new versions of your application would be released.
+
+At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.

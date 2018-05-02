@@ -6,13 +6,13 @@ metadata:
   description: This quickstart teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify and explore collections and arrays.
   audience: Developer
   level: Beginner
-  ms.topic: get-started-article
-  nextTutorialHref: numbers-in-csharp
-  nextTutorialTitle: Numbers in C#
+  ms.topic: interactive-tutorial
   displayType: two-column
   interactive: csharp
-  ms.custom: mvc
-  ms.prod: .net
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: .net
+  ms.custom: guided-learning
   ms.technology: devlang-csharp
 items:
 - durationInMinutes: 1
@@ -43,8 +43,8 @@ items:
   content: |
     [!include[](includes/list-collection-6.md)]
 - content: |
-    You've completed the list quickstart. This quickstart is the final interactive quickstart. You can continue these quickstarts on your own development environment. Learn the basics of [local development](local-environment.md) and then pick a quickstart. You can try this same exercise, move directly to the next quickstart, or start again at with the [numbers in C#](numbers-in-csharp-local.md) quickstart. You can learn more about working with the `List` type in the
-    [.NET Guide](../../standard/index.md) topic on [collections](../../standard/collections/index.md). You'll also learn about many other collection types.
+    You've completed the list quickstart. This quickstart is the final interactive quickstart. You can continue these quickstarts on your own development environment. Learn the basics of [local development](https://docs.microsoft.com/dotnet/csharp/quick-starts/local-environment) and then pick a quickstart. You can try this same exercise, move directly to the next quickstart, or start again at with the [numbers in C#](numbers-in-csharp.yml) quickstart. You can learn more about working with the `List` type in the
+    [.NET Guide](https://docs.microsoft.com/dotnet/standard) topic on [collections](https://docs.microsoft.com/dotnet/quick-starts/arrays-and-collections). You'll also learn about many other collection types.
 challenge:
   uid: learn.intro-to-csharp.list-collection.quiz
   type: quiz
