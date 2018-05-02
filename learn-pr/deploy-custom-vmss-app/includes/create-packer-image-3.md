@@ -43,9 +43,17 @@ Create a file named *ubuntu.json* in the Azure Cloud Shell. To see a list of ava
 }
 ```
 
-In the *builders* section of the template file shown above, replace the Azure credential information placeholders with your own values. The placeholders are of the format  **"YOUR xxxx_xx HERE"**.  
+If you recall, you ran the command
 
-If you recall, you ran the command `az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"` to values for *client_id*, *client_secret* and *tenant_id* and you run the command `az account show --query '{ "subscription_id": "id" }'` to return your *subscription_id*.
+ `az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"` 
+ 
+ to return values for *client_id*, *client_secret* and *tenant_id* and you ran the command 
+ 
+ `az account show --query '{ "subscription_id": "id" }'` 
+ 
+ to return your *subscription_id*.
+
+ In the *builders* section of the template file shown above, replace the Azure credential information placeholders with your own values. The placeholders are of the format  **"YOUR xxxx_xx HERE"**.  
 
 As we'll see in the next step, when Packer builds this template it will use the information in this file to do the following: 
 
