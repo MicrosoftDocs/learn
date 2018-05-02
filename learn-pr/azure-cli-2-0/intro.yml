@@ -24,5 +24,6 @@ items:
   durationInMinutes: 5
   content: |
     [!include[](includes/login.md)]
-content: |
-   You're now ready to start working with the Azure CLI 2.0. Begin the first activity by clicking the Next button below.
+challenge:
+  uid: learn.azure-cli-2-0.login.quiz
+  type: quiz
