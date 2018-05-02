@@ -1,7 +1,7 @@
 ### YamlMime:ModuleList
 title: Azure tutorials
 modules:
+- learn.azure-cli-2-0.index
+- learn.build-serverless-app
 - learn.deploy-apps-to-azure
 - learn.deploy-custom-vmss-app
-- learn.serverless
-- learn.intro-to-csharp

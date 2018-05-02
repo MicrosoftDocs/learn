@@ -5,13 +5,15 @@ metadata:
   title: Interpolated strings interactive tutorial - C# quickstarts
   description: In this tutorial, you'll use your browser to use the C# interpolated string feature interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
-  ms.custom: mvc
-  ms.topic: get-started-article
   level: Beginner
+  ms.topic: interactive-tutorial
   displayType: two-column
   interactive: csharp
-  nextTutorialHref: list-collection
-  nextTutorialTitle: List collections
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: .net
+  ms.custom: guided-learning
+  ms.technology: devlang-csharp
 items:
 - durationInMinutes: 1
   content: |

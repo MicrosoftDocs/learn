@@ -4,18 +4,16 @@ title: Create a VSTS build definition for CI/CD
 metadata:
   title: Create a VSTS build definition for CI/CD
   description: Learn how to create a build definition in VSTS for use with a CI/CD pipeline.
-  author: asajohnson
-  ms.author: asjohnso@microsoft.com
-  ms.date: 04/24/2018
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  nextTutorialHref: deploy-web-app-vsts-cicd
-  nextTutorialTitle: Deploy a web app with VSTS and CI/CD
   displayType: one-column
+  author: asajohnson
+  ms.author: asjohnso
+  ms.service: azure
   ms.custom: guided-learning
-  ms.prod: Azure
   ms.technology: virtual-machine-windows
+  ms.date: 04/24/2018
 items:
 - durationInMinutes: 1
   content: |

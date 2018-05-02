@@ -6,14 +6,15 @@ metadata:
   description: Learn how to create an Azure virtual machine scale set that uses the Packer image.
   audience: Developer
   level: Intermediate
-  ms.topic: get-started-article
-  nextTutorialHref: deploy-app-from-github
-  nextTutorialTitle: Deploy a web app from GitHub
+  ms.topic: interactive-tutorial
   displayType: two-column
   interactive: azurecli
-  ms.custom:
-  ms.prod:
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: azure
+  ms.custom: guided-learning
   ms.technology: virtual-machine-scale-set
+  ms.date: 04/25/2018
 items:
 - durationInMinutes: 3
   content: |

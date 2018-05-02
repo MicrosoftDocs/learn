@@ -1,4 +1,21 @@
- Now that you have the NIC ID, run `az network nic show` to get its information.
+### YamlMime:Tutorial
+uid: learn.azure-cli-2.variables
+title: Set environment variables | Microsoft Docs
+metadata:
+  title: Set environment variables
+  description: Set environment variables from CLI output.
+  audience: Developer
+  level: Beginner
+  ms.topic: get-started-article
+  displayType: two-column
+  interactive: azurecli
+  ms.custom:
+  ms.prod:
+  ms.technology: azure
+items:
+- durationInMinutes: 3
+  content: |
+     Now that you have the NIC ID, run `az network nic show` to get its information.
 
         ```azurecli
         az network nic show --ids $NIC_ID -g TutorialResources
@@ -10,7 +27,7 @@
         ```azurecli
         az network nic show --ids $NIC_ID \
           -g TutorialResources \
-          --query '{IP:ipConfigurations[].publicIpAddress.id, Subnet:ipConfigurations[].subnet.id}' 
+          --query '{IP:ipConfigurations[].publicIpAddress.id, Subnet:ipConfigurations[].subnet.id}'
         ```
 
         ```json
@@ -53,3 +70,10 @@
         ```bash
         echo $VM1_IP_ADDR
         ```
+- durationInMinutes: 1
+  title: placeholder
+  content: |
+    tutorials are required to have more than one step.
+challenge:
+  uid: learn.azure-cli-2-variables.quiz
+  type: quiz
