@@ -21,4 +21,4 @@ There are two key components to Packer templates that allow you to create these 
 
 The *provisioner* is where the actual configuration happens. This section of a Packer template would be consistent across all platforms. The *builder* may vary from an on-prem environment or Azure as you define how to create and deploy the base VM image. At the end of the Packer process, the base VM and resources are deleted. All that remains is the platform-specific image as defined by the builder. The image can then be used to deploy VMs in a scale set.
 
-At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.
+At the end of the tutorial, you can check your knowledge with a quiz challenge.
