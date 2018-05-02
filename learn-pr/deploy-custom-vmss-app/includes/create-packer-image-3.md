@@ -1,4 +1,4 @@
-To build images, you create a Packer template as a JSON file. In the template, you define builders and provisioners that carry out the actual build process. Packer has a [provisioner for Azure](https://www.packer.io/docs/builders/azure.html) that allows you to define Azure resources, such as the service principal credentials created in the previous step.
+To build images, you create a Packer template as a JSON file. In the template, you define builders and provisioners that carry out the build process. Packer has a [provisioner for Azure](https://www.packer.io/docs/builders/azure.html) that allows you to define Azure resources, such as the service principal credentials, created in the previous step.
 
 Create a file named *ubuntu.json* in the Azure Cloud Shell. To see a list of available editors and create the file, type `sensible-editor ubuntu.json`. Paste the following template into the file:
 

@@ -22,7 +22,7 @@ items:
 - title: Overview of app updates and CI/CD
   durationInMinutes: 5
   content: |
-    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zh1o]
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Zh1o]
 
     [!include[](includes/deploy-app-update-1.md)]
 - title: Deploy app update from GitHub with the Custom Script Extension

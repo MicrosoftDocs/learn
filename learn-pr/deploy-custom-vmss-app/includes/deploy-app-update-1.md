@@ -7,3 +7,5 @@ In this unit, we'll look at a simple example where the Custom Script Extension i
 DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. The contraction of "Dev" and "Ops" refers to replacing siloed *Development* and *Operations* to create multidisciplinary teams that now work together with shared and efficient practices and tools. Essential DevOps practices include continuous integration and continuous delivery (CI/CD).
 
 ![Overview of DevOps lifecycle](../../media/deploy-custom-vmss-app/devops-overview.png)
+
+At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.

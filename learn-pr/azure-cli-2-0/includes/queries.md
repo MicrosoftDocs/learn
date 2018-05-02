@@ -17,10 +17,10 @@ az vm show --name TutorialVM1 \
 
 There's a lot going on here, just by adding the query. Each part of it references a key in the output JSON, or is a JMESPath operator.
 
-        * `networkProfile` is a key of the top-level JSON, which has `networkInterfaces` as a subkey. If a JSON value is a dictionary,
-          its keys are referenced from the parent key with the `.` operator.
-        * The `networkInterfaces` value is an array, so it is flattened with the `[]` operator. This operator runs the remainder
-          of the query on each array element. In this case, it gets the `id` value of every array element.
+* `networkProfile` is a key of the top-level JSON, which has `networkInterfaces` as a subkey. If a JSON value is a dictionary,
+  its keys are referenced from the parent key with the `.` operator.
+* The `networkInterfaces` value is an array, so it is flattened with the `[]` operator. This operator runs the remainder
+  of the query on each array element. In this case, it gets the `id` value of every array element.
 
 The output format `tsv` (tab-separated values) is guaranteed to only include the result data and whitespace consisting of tabs and newlines. Since the returned value is a single bare string, it's safe to assign directly to an environment variable.
 
