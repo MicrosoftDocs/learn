@@ -1,5 +1,5 @@
 ### YamlMime:Tutorial
-uid: learn.azure-cli-2-0
+uid: learn.azure-cli-2-0.intro
 title: Create virtual machines with the Azure CLI 2.0
 metadata:
   title: Create virtual machines with the Azure CLI 2.0
@@ -16,26 +16,14 @@ metadata:
   ms.technology: 
   ms.date: 04/25/2018
 items:
-- title: Create a resource group
-  durationInMinutes: 3
-  content: |
-    [!include[](includes/resource-group.md)]
-- title: Get VM information with queries
+- title: Introduction to the Azure CLI 2.0 
   durationInMinutes: 5
   content: |
-    [!include[](includes/queries.md)]
-- title: Set environment variables from CLI output
+    [!include[](includes/intro.md)]
+- title: Login 
   durationInMinutes: 5
   content: |
-    [!include[](includes/variables.md)]
-- title: Create a new VM on the existing subnet
-  durationInMinutes: 10
-  content: |
-    [!include[](includes/subnet-vm.md)]
-- title: Cleanup
-  durationInMinutes: 3
-  content: |
-    [!include[](includes/cleanup.md)]
+    [!include[](includes/login.md)]
 challenge:
-  uid: learn.azure-cli-2-0.combined-quiz.quiz
+  uid: learn.azure-cli-2-0.login.quiz
   type: quiz
