@@ -8,7 +8,7 @@ You can use a custom VM image to reduce the number of tasks after VM instances a
 
 ## What is Packer?
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zh1n]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Zh1n]
 
 [Packer](https://www.packer.io/) is an open source tool that lets you define and build custom images in a scripted, consistent manner. The configuration for an image is defined in a JSON (JavaScript Object Notation) template that helps reduce the risk of human error from manual builds, and lets you create reproducible images for your applications.
 

@@ -7,7 +7,7 @@ In this tutorial, you will:
     - Commit Visual Studio code to VSTS project
     - Create and run a VSTS build
 
-At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
+At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.
 
 > [!NOTE]
 > This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.

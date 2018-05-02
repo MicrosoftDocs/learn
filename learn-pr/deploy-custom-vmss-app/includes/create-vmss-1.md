@@ -21,3 +21,5 @@ Scale sets are built from virtual machines. With scale sets, the management and 
 | Scaling of VMs                     | Manual monitoring and Azure Automation                                                 | Autoscale based on host metrics, in-guest metrics, Application Insights, or schedule |
 
 There is no additional cost to scale sets. You only pay for the underlying compute resources such as the VM instances, load balancer, or Managed Disk storage. The management and automation features, such as autoscale and redundancy, incur no additional charges over the use of VMs.
+
+At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.
