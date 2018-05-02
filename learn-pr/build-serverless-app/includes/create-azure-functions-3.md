@@ -24,7 +24,7 @@ Go to the functions app and remove all the existing CORS entries, then add a * t
 
 ## Enable Managed Service Identity (MSI)
 
-Managed service identities allow all of your functions in your app to communicate with other Azure services as themselves. If you don't use a managed service identity, you have to store keys or passwords in your code. You're going to use this feature to communicate directly with Cosmos DB.
+Managed service identities allow all of your Functions in your app to communicate with other Azure services as themselves. If you don't use a managed service identity, you have to store keys or passwords in your code. You're going to use this feature to communicate directly with Cosmos DB.
 
 1. In the platform features section select **Managed service identity**
 2. Select **On**
