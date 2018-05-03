@@ -8,4 +8,5 @@ DevOps is the union of people, process, and products to enable continuous delive
 
 ![Overview of DevOps lifecycle](../../media/deploy-custom-vmss-app/devops-overview.png)
 
-At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.
+
+At the end of the tutorial, you can check your knowledge with a quiz challenge.
