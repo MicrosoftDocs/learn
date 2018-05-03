@@ -1,10 +1,10 @@
-Packer is available as a small binary (around 40 Mb for Linux 64-bit). It's available for Linux, macOS, FreeBSD, OpenBSD, and Linux. Download and unzip Packer into your Azure Cloud Shell instance as follows:
+Packer is available as a small binary (around 40 Mb for Linux 64-bit). It's available for Linux, macOS, FreeBSD, and OpenBSD. You need to download and unzip Packer locally. For example, the following command downloads and unzips a Packer package for Linux:
 
 ```azurecli
 curl https://releases.hashicorp.com/packer/1.2.2/packer_1.2.2_linux_amd64.zip -o packer.zip && unzip packer.zip
 ```
 
-To build your image, run the Packer binary and specify your Packer template file. The following example builds the *ubuntu.json* template that you created in the previous step:
+To build your image, run the `packer build` command and specify your Packer template file. The following example builds the *ubuntu.json* template that you created in the previous step:
 
 ```bash
 ./packer build ubuntu.json
@@ -73,4 +73,6 @@ ManagedImageLocation: eastus
 
 It takes a few minutes for Packer to build the VM, run the provisioners, and clean up the deployment.
 
-At the end of the output, you see the resource group and image name, as defined in the `builders` section of your Packer template. You use this image in the next module to create an Azure virtual machine scale set.
+At the end of the preceding output, you can see the resource group and image name. As you recall, these were defined in the `builders` section of your Packer template. 
+
+You'll use this image in the next module to create an Azure virtual machine scale set.

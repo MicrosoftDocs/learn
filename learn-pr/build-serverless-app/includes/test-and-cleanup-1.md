@@ -8,5 +8,3 @@ When you upload a picture to the web application and reload it, the application 
 [serverless-webapp]: ../media/lab-6-final.png
 
 Now, it's time to do one final test and then clean it all up!
-
-> [!NOTE] This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.

@@ -1,30 +1,34 @@
-## Create Azure Functions
-
 As mentioned previously, the serverless solution that you're building will use three Azure Functions. One will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API. The other two will back the APIs that the website uses, to upload images and retrieve the list of images.
 
-## Create the functions app
+## Create the Functions app
 
-1. **Create a resource** > **Compute** > **Functions App**
-2. Enter a unique name into the **App name** text box. This tutorial uses `serverlessApp`
-3. Select your subscription
-4. Select **Use an existing resource group** and then select `serverlessRG`
-5. Update your location so that it's in the same location as your storage
-6. Select **Consumption** for the Hosting Plan
-7. Select **Windows** for the OS
-8. Select **Use existing** for your storage account, and then select `serverlessStorage`
-9. **Create**
+1. Open the [Azure Portal](https://portal.azure.com/).
+2. Click **Create a resource**
+3. Click **Compute**
+4. Click **Functions App**
+5. Enter a unique name into the **App name** text box. This tutorial uses `serverlessApp`
+6. Select your subscription
+7. Select **Use an existing resource group**
+8. Select `serverlessRG`
+9. Update your location so that it's in the same location as your storage
+10. Select **Consumption** for the Hosting Plan
+11. Select **Windows** for the OS
+12. Select **Use existing** for your storage account
+13. Select `serverlessStorage`
+14. **Create**
 
 ## Update the Cross-Origin Resource Sharing (CORS) settings
 
 Go to the functions app and remove all the existing CORS entries, then add a * to allow access from all resources.
 
-  > [!NOTE] In a production environment it is safer to only allow access from your own domains.
+> [!NOTE] 
+> In a production environment it is safer to only allow access from your own domains.
 
 ![Setup Cross-Origin Resource Sharing(CORS)][cors]
 
 ## Enable Managed Service Identity (MSI)
 
-Managed service identities allow all of your functions in your app to communicate with other Azure services as themselves. If you don't use a managed service identity, you have to store keys or passwords in your code. You're going to use this feature to communicate directly with Cosmos DB.
+Managed service identities allow all of your Functions in your app to communicate with other Azure services as themselves. If you don't use a managed service identity, you have to store keys or passwords in your code. You're going to use this feature to communicate directly with Cosmos DB.
 
 1. In the platform features section select **Managed service identity**
 2. Select **On**
@@ -35,18 +39,17 @@ Managed service identities allow all of your functions in your app to communicat
 ## Create the PutImage Function
 
 1. Select the **+** next to **Functions**
-  * Select **HTTP Trigger**
-  * Select **JavaScript** from the Language dropdown
-  * Enter `PutImage` in the Name field
-  * Select **Anonymous** from the Authorization level dropdown.
-
-2. Create an output binding to write to Azure Blob storage
-  * Select **Integrate**
-  * Select **New Output**
-  * **Azure Blob storage** > **Select**
-  * Leave `outputBlob` as the **Blob parameter name**
-  * The **Path** should be `serverlessContainer/img/{name}`. Make sure that you replace serverlessContainer with your own container name.
-  * **Save**
+2. Select **HTTP Trigger**
+3. Select **JavaScript** from the Language dropdown
+4. Enter `PutImage` in the Name field
+5. Select **Anonymous** from the Authorization level dropdown.
+6. Create an output binding to write to Azure Blob storage
+7. Select **Integrate**
+8. Select **New Output**
+9. Select **Azure Blob storage** > **Select**
+10. Leave `outputBlob` as the **Blob parameter name**
+11. The **Path** should be `serverlessContainer/img/{name}`. Make sure that you replace serverlessContainer with your own container name.
+12. Select **Save**
 
 ```javascript
 module.exports = function (context, req) {
@@ -61,11 +64,9 @@ module.exports = function (context, req) {
 };
 ```
 
-3. Select **Save**
-
 ## Grant Azure functions access to your Cosmos DB
 
-You previously turned on MSI in functions, which created an identity for your Azure Functions to run as.  Now you need to authorize that identity to have access to your Cosmos DB.
+You previously turned on MSI in Functions, which created an identity for your Azure Functions to run as.  Now you need to authorize that identity to have access to your Cosmos DB.
 
 1. Navigate to the Cosmos DB console
 2. Select your Cosmos DB

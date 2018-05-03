@@ -7,10 +7,10 @@ Create a file named *ubuntu.json* in Azure Cloud Shell. To see a list of availab
   "builders": [{
     "type": "azure-arm",
 
-    "client_id": "f5b6a5cf-fbdf-4a9f-b3b8-3c2cd00225a4",
-    "client_secret": "0e760437-bf34-4aad-9f8d-870be799c55d",
-    "tenant_id": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-    "subscription_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
+    "client_id": "YOUR client_id VALUE HERE",
+    "client_secret": "YOUR client_secret VALUE HERE",
+    "tenant_id": "YOUR tenant_id VALUE HERE",
+    "subscription_id": "YOUR subscription_id VALUE HERE",
 
     "managed_image_resource_group_name": "myResourceGroup",
     "managed_image_name": "myPackerImage",
@@ -43,17 +43,18 @@ Create a file named *ubuntu.json* in Azure Cloud Shell. To see a list of availab
 }
 ```
 
-At the start of the `builders` section, replace the example Azure credential information with your own values. The output information in the previous steps should be in the correct format and naming convention:
+If you recall, you ran the following command to return values for `client_id`, `client_secret`, and `tenant_id`:
 
-| Parameter                           | Where to obtain |
-|-------------------------------------|----------------------------------------------------|
-| *client_id*                         | First line of output from the `az ad sp` create command: *appId* |
-| *client_secret*                     | Second line of output from the `az ad sp` create command: *password* |
-| *tenant_id*                         | Third line of output from the `az ad sp` create command: *tenant* |
-| *subscription_id*                   | Output from the `az account show` command |
+ `az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"` 
+ 
+You also ran the following command to return `subscription_id`:
+ 
+ `az account show --query '{ "subscription_id": "id" }'` 
+ 
+In the `builders` section of the template file shown earlier, replace the Azure credential information placeholders with your own values. The placeholders are of the format *"YOUR xxxx_xx HERE"*.  
 
-When Packer builds this template:
+As you'll see in the next step, when Packer builds this template, it will use the information in this file to do the following: 
 
-- The builder creates a base Ubuntu 16.04 LTS VM in Azure.
-- The provisioner installs NGINX, Node.js, and NPM. It then deprovisions the VM and creates the image.
+- The *builder* creates a base Ubuntu 16.04 LTS VM in Azure.
+- The *provisioner* installs NGINX, Node.js, and NPM. It then deprovisions the VM and creates the image.
 - The base resources for the VM are deleted.

@@ -1,6 +1,6 @@
-To update the app on your virtual machine scale set, you need to create another Custom Script Extension definition. For an updated defintion to successfully apply, the name or version of the scripts must be different from the previous defintion. A best practice is include a version number within the filename for your scripts. As the version number changes, the Custom Script Extension defintion also changes and successfully applies.
+To update the app on your virtual machine scale set, you need to create another Custom Script Extension definition. In order to apply this update successfully to the scale set, make sure the name or version of the script is different from the previous script definition. A best practice is to include a version number within the file name for your scripts. As the version number changes, the Custom Script Extension definition also changes and successfully applies.
 
-Create a file named *customConfig2.json* in the Azure Cloud Shell that defines what files to download and run. This definition runs an updated *v2* version of the application install script. To see a list of available editors and create the file, type `sensible-editor customConfigv2.json`. Paste the following template into the file:
+Create a file named *customConfigv2.json* in Azure Cloud Shell that defines what files to download and run. Paste the following template into the file:
 
 ```json
 {
@@ -9,8 +9,11 @@ Create a file named *customConfig2.json* in the Azure Cloud Shell that defines w
   "commandToExecute": "./deploy-v2.sh"
 }
 ```
+The preceding JSON definition specifies an updated version of the application installation script, *deploy-v2.sh*. The definition also specifies an updated version of our app, *hello-world-v2.js*.
 
-Apply the Custom Script Extension configuration to the VM instances in your scale set again with [az vmss extension set](/cli/azure/vmss/extension#set). The *customConfigv2.json* is used to apply the updated version of the application:
+To see a list of available editors and create the file, enter `sensible-editor customConfigv2.json`. 
+
+Apply the updated Custom Script Extension configuration to the VM instances in your scale set by using the [az vmss extension set](/cli/azure/vmss/extension#set) command again as follows:
 
 ```azurecli
 az vmss extension set \

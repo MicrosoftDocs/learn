@@ -4,11 +4,10 @@ To provide redundancy and improved performance, applications are typically distr
 
 Azure virtual machine scale sets provide the management capabilities for applications that run across many VMs, automatic scaling of resources, and load balancing of traffic. Scale sets provide the following key benefits:
 
-- Help you easily create and manage multiple VMs
-- Provide high availability and application resiliency
-- Allow your application to automatically scale as resource demand changes
-- Work at large scale
-
+- They make it easy to create and manage multiple VMs.
+- They provide high availability and application resiliency.
+- They allow your application to automatically scale as resource demand changes.
+- They work at large scale.
 
 ## Differences between virtual machines and scale sets
 Scale sets are built from virtual machines. With scale sets, the management and automation layers are provided to run and scale your applications. You can instead manually create and manage individual VMs, or integrate existing tools to build a similar level of automation. The following table outlines the benefits of scale sets compared to manually managing VM instances.
@@ -21,3 +20,5 @@ Scale sets are built from virtual machines. With scale sets, the management and 
 | Scaling of VMs                     | Manual monitoring and use of Azure Automation                                                 | Autoscale based on host metrics, in-guest metrics, Azure Application Insights, or schedule |
 
 There is no additional cost for scale sets. You pay for only the underlying compute resources such as the VM instances, the load balancer, or managed disk storage. The management and automation features, such as autoscale and redundancy, incur no additional charges over the use of VMs.
+
+At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.

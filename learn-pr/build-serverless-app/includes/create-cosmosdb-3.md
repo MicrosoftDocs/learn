@@ -1,5 +1,3 @@
-## Create an Azure Cosmos DB instance
-
 Create an instance of Cosmos DB to house all of the metadata for each image that is uploaded to your web application.
 
 1. Select **All services** from the left context menu

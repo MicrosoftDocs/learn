@@ -3,9 +3,7 @@ What if you could spend all your time building and deploying great apps, and non
 One of the most basic ways that you can go serverless is to use an Azure Storage account to host a static website. We'll get started creating this first and then in subsequent tutorials in this learning module, we'll enhance this website by adding in other Azure services.
 
 In this tutorial, you will:
-    - Learn about Azure Storage
-    - Host a website in Azure Blob Storage
+- Learn about Azure Storage
+- Host a website in Azure Blob Storage
 
 At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
-
-> [!NOTE] This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.

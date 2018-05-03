@@ -1,5 +1,5 @@
 ### YamlMime:ModuleList
-title: Azure tutorials
+title: Guided learning tutorials
 modules:
 - learn.azure-cli-2-0.index
 - learn.build-serverless-app

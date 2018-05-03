@@ -1,0 +1,29 @@
+### YamlMime:Tutorial
+uid: learn.azure-cli-2-0.intro
+title: Introduction to creating virtual machines with the Azure CLI 2.0
+metadata:
+  title: Introduction to creating virtual machines with the Azure CLI 2.0
+  description: Get started with the Azure CLI by creating virtual machines.
+  audience: Developer
+  level: Beginner
+  ms.topic: interactive-tutorial
+  displayType: two-column
+  interactive: azurecli
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: azure
+  ms.custom: guided-learning
+  ms.technology: 
+  ms.date: 04/25/2018
+items:
+- title: Introduction to the Azure CLI 2.0 
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/intro.md)]
+- title: Login 
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/login.md)]
+challenge:
+  uid: learn.azure-cli-2-0.login.quiz
+  type: quiz

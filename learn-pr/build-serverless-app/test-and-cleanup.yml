@@ -2,25 +2,31 @@
 title: Test your application and clean up your environment
 uid: learn.build-serverless-app.test-and-cleanup
 metadata:
-  title: Test and Clean up
+  title: Test your application and clean up your environment
   description: Learn how to build a serverless website, by storing data in a cosmos DB, interfacing it with API management service and functions.
   audience: Developer
-  level: Intermediate 
+  level: Intermediate
+  ms.topic: interactive-tutorial
   displayType: two-column
   interactive: azurecli
   author: asajohnson
-  ms.service: 
-  ms.topic: interactive-tutorial
-  ms.date: 04/25/2018
   ms.author: asjohnso
+  ms.service:
+  ms.custom: guided-learning
+  ms.technology:
+  ms.date: 04/25/2018
 items:
 - durationInMinutes: 1
-  content: |   
+  content: |
     [!include[](includes/test-and-cleanup-1.md)]
-- title: Test your application and clean up your environment
-  durationInMinutes: 4
+- title: Test your application
+  durationInMinutes: 2
   content: |
     [!include[](includes/test-and-cleanup-2.md)]
-  challenge:
-    type: quiz
-    uid: learn.build-serverless-app.test-and-cleanup.quiz
+- title: Clean up your environment
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/test-and-cleanup-3.md)]
+challenge:
+  type: quiz
+  uid: learn.build-serverless-app.test-and-cleanup.quiz
