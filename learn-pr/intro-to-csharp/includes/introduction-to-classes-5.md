@@ -78,7 +78,7 @@ catch (ArgumentOutOfRangeException e)
 }
 ```
 
-You use the [`try` and `catch` statements](../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions, and to catch those errors that you expect. You can use the same technique to test the code that throws for a negative balance:
+You use the C# `try` and `catch` statements to mark a block of code that may throw exceptions, and to catch those errors that you expect. You can use the same technique to test the code that throws for a negative balance:
 
 ```csharp
 // Test for a negative balance

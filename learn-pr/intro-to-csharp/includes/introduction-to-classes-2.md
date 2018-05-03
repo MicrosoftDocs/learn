@@ -14,7 +14,7 @@ public BankAccount(string name, decimal initialBalance)
 
 In this example, the constructor for our BankAccount class creates a new BankAccount object and sets values for `Owner` and `Balance` from the `name` and `initialBalance` input parameters respectively. 
 
-Constructors are called when you create an object using [`new`](../language-reference/keywords/new.md) operator, as you'll see in the following example. Type or paste the following code block into the interactive coding window, replacing `<name>` with, for example, your own name. Place it after the closing curly bracket, `}`, of the class definition.  
+Constructors are called when you create an object using the C# `new`keyword, as you'll see in the following example. Type or paste the following code block into the interactive coding window, replacing `<name>` with, for example, your own name. Place it after the closing curly bracket, `}`, of the class definition.  
 
 ```csharp
 var account = new BankAccount("AccountName", 1000);
