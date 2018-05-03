@@ -23,6 +23,6 @@ units:
   durationInMinutes: 10
 achievement:
   uid: learn.deploy-apps-to-azure.achievement
-  name: Deploy Apps to Azure Champ
-  description: Great job!
+  name: "Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)"
+  description: "First step completed towards a new life."
   imageUrl: /learn/media/achievements/deploy-apps-with-vsts.svg

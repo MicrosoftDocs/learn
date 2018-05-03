@@ -20,6 +20,6 @@ units:
   durationInMinutes: 10
 achievement:
   uid: learn.deploy-custom-vmss-app.achievement
-  name: Linux VMSS Champ
-  description: Great job!
+  name: "Deploy apps to an Azure virtual machine scale set with a custom Packer image"
+  description: "First step completed towards a new life."
   imageUrl: /learn/media/achievements/deploy-vms-with-packer.svg

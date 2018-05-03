@@ -1,5 +1,3 @@
-## Host a website in Azure Blob Storage
-
 The following steps will walk you through creating an Azure Storage account, creating a resource group, and a storage container to host your static resources.
 
 > [!IMPORTANT] 
@@ -9,9 +7,11 @@ The following steps will walk you through creating an Azure Storage account, cre
 
 Azure Cloud Shell is an interactive, browser-accessible shell for managing your Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
 
-Common Azure tools are pre-installed and configured in Cloud Shell for you to use with your account. Just select the **Copy** button to copy the code, paste it in Cloud Shell, and then press **Enter** to run it. 
+Common Azure tools are pre-installed and configured in Cloud Shell for you to use with your account. 
 
 For this tutorial, Cloud Shell should appear on the right side of the screen. Select the blue **Login** button to get started using it.
+
+When presented with code snippets throughout this module, you can select the **Copy** button to copy the code, paste it in Cloud Shell, modify it if you need to, and then press **Enter** to run it. 
 
 ## Create a resource group
 
