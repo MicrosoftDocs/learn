@@ -1,16 +1,16 @@
-Deploying your app straight to production may cause problems, so you typically deploy to a staging site. This staging site lets you review your changes before pushing to production.
+Deploying your app straight to production might cause problems, so you typically deploy to a staging site. You use the staging site to review your changes before pushing to production.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1ZnXk]
 
 In this tutorial, you will:
-    - Learn about Azure Web App deployment slots
-    - Create Web App staging slot
-    - Deploy Web App for review with VSTS CI/CD pipeline
-    - Update VSTS build definition to publish to Web App staging slot
-    - Edit app and push new commit from Visual Studio
-    - Swap staging slot to production deployment
+    - Learn about Azure web app deployment slots
+    - Create a web app staging slot
+    - Deploy a web app for review with the Team Services CI/CD pipeline
+    - Update the Team Services build definition to publish to a web app staging slot
+    - Edit the web app and push a new commit from Visual Studio
+    - Swap a staging slot to production deployment
 
-At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.
+At the end of the tutorial, you can check your knowledge about this information with a quiz challenge.
 
 > [!NOTE]
-> This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.
+> This guided learning experience is in preview mode. If you encounter problems, please report them in the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.

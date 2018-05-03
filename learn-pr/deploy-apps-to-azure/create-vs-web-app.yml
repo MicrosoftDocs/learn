@@ -18,7 +18,7 @@ items:
 - durationInMinutes: 1
   content: |
     [!include[](includes/create-vs-web-app-1.md)]
-- title: Introduction to Azure Web Apps
+- title: Introduction to Azure web apps
   durationInMinutes: 5
   content: |
     [!include[](includes/create-vs-web-app-2.md)]
@@ -26,7 +26,7 @@ items:
   durationInMinutes: 3
   content: |
     [!include[](includes/create-vs-web-app-3.md)]
-- title: Deploy an Azure Web App from Visual Studio
+- title: Deploy an Azure web app from Visual Studio
   durationInMinutes: 2
   content: |
     [!include[](includes/create-vs-web-app-4.md)]
