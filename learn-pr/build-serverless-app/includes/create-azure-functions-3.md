@@ -1,6 +1,6 @@
 As mentioned previously, the serverless solution that you're building will use three Azure Functions. One will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API. The other two will back the APIs that the website uses, to upload images and retrieve the list of images.
 
-## Create the functions app
+## Create the Functions app
 
 1. Open the [Azure Portal](https://portal.azure.com/).
 2. Click **Create a resource**
@@ -28,7 +28,7 @@ Go to the functions app and remove all the existing CORS entries, then add a * t
 
 ## Enable Managed Service Identity (MSI)
 
-Managed service identities allow all of your functions in your app to communicate with other Azure services as themselves. If you don't use a managed service identity, you have to store keys or passwords in your code. You're going to use this feature to communicate directly with Cosmos DB.
+Managed service identities allow all of your Functions in your app to communicate with other Azure services as themselves. If you don't use a managed service identity, you have to store keys or passwords in your code. You're going to use this feature to communicate directly with Cosmos DB.
 
 1. In the platform features section select **Managed service identity**
 2. Select **On**
@@ -66,7 +66,7 @@ module.exports = function (context, req) {
 
 ## Grant Azure functions access to your Cosmos DB
 
-You previously turned on MSI in functions, which created an identity for your Azure Functions to run as.  Now you need to authorize that identity to have access to your Cosmos DB.
+You previously turned on MSI in Functions, which created an identity for your Azure Functions to run as.  Now you need to authorize that identity to have access to your Cosmos DB.
 
 1. Navigate to the Cosmos DB console
 2. Select your Cosmos DB

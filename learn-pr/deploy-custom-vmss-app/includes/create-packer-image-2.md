@@ -24,7 +24,8 @@ An example of the output from the preceding commands is as follows:
 }
 ```
 
-Copy your own output for use in the next step.
+> [!NOTE]
+> Remember the values you get for *client_id*, *client_secret*, *tenant_id* when you run the preceding command. You will use them in the next step. 
 
 To authenticate to Azure, you also need to obtain your Azure subscription ID with [az account show](/cli/azure/account#az_account_show):
 
@@ -32,4 +33,13 @@ To authenticate to Azure, you also need to obtain your Azure subscription ID wit
 az account show --query '{ "subscription_id": "id" }'
 ```
 
-You use the output from these two commands in the next step.
+An example of the output from the preceding command is as follows:
+
+```azurecli
+{
+  "subscription_id": "1695b3e3-fdd4-49ec-8dfd-d684c8c91517"
+}
+```
+
+> [!NOTE]
+> You will use the output from these two commands in the next step, so don't forget to copy the output of each when you run them. 

@@ -5,17 +5,17 @@ metadata:
   title: Create Azure Functions
   description: Learn about and create Azure Functions, then hook your serverless web app to your new functions.
   audience: Developer
-  level: Intermediate 
+  level: Intermediate
+  ms.topic: interactive-tutorial
   displayType: two-column
   interactive: azurecli
   author: asajohnson
-  ms.service: 
-  ms.topic: interactive-tutorial
-  ms.date: 04/25/2018
   ms.author: asjohnso
+  ms.service:
+  ms.date: 04/25/2018
 items:
 - durationInMinutes: 1
-  content: |   
+  content: |
     [!include[](includes/create-azure-functions-1.md)]
 - title: Learn about Azure Functions
   durationInMinutes: 2
@@ -25,6 +25,6 @@ items:
   durationInMinutes: 12
   content: |
     [!include[](includes/create-azure-functions-3.md)]
-  challenge:
-    type: quiz
-    uid: learn.build-serverless-app.create-azure-functions.quiz
+challenge:
+  type: quiz
+  uid: learn.build-serverless-app.create-azure-functions.quiz

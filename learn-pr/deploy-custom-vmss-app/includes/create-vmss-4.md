@@ -12,4 +12,4 @@ Type the public IP address into your web browser. The default NGINX web page is 
 
 ![Default NGINX page running from Packer VM image](../../media/deploy-custom-vmss-app/default-nginx-website.png)
 
-Leave the web browser open. In the next module, you deploy a basic web app from GitHub to the VM instances in your scale set.
+Leave the web browser open. In the next unit, you'll deploy a basic web app from GitHub to the VM instances in your scale set.

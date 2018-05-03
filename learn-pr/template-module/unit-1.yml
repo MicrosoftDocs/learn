@@ -7,8 +7,6 @@ metadata:
   audience: Developer
   level: Intermediate
   ms.topic: get-started-article
-  nextTutorialHref: unit-2
-  nextTutorialTitle: Unit 2
   displayType: two-column
   interactive: azurecli
   ms.custom:
