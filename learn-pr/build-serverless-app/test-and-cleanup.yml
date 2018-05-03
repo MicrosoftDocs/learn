@@ -27,6 +27,6 @@ items:
   durationInMinutes: 2
   content: |
     [!include[](includes/test-and-cleanup-3.md)]
-  challenge:
-    type: quiz
-    uid: learn.build-serverless-app.test-and-cleanup.quiz
+challenge:
+  type: quiz
+  uid: learn.build-serverless-app.test-and-cleanup.quiz
