@@ -1,5 +1,3 @@
-## Set up Event Grid to process images that are uploaded to your website
-
 1. Navigate back to your functions app
 2. Select **New Function**
 3. Enter `Event` into the filter box

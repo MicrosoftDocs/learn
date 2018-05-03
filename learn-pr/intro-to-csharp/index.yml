@@ -23,6 +23,6 @@ units:
   durationInMinutes: 30
 achievement:
   uid: learn.intro-to-csharp.achievement
-  name: "C# Beginner"
+  name: "Introduction to C#"
   description: "First step completed towards a new life."
   imageUrl: /learn/media/achievements/introduction-to-c.svg
