@@ -1,0 +1,42 @@
+### YamlMime:Tutorial
+uid: learn.deploy-custom-vmss-app.create-packer-image
+title: Create a Packer image
+metadata:
+  title: Create a Packer image of a Linux VM in Azure
+  description: Learn how to create a Packer image of a custom Linux VM in Azure for use with virtual machine scale set deployments.
+  audience: Developer
+  level: Intermediate
+  ms.topic: interactive-tutorial
+  displayType: two-column
+  interactive: azurecli
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: azure
+  ms.custom: guided-learning
+  ms.technology: virtual-machine-scale-set
+  ms.date: 04/25/2018
+items:
+- durationInMinutes: 3
+  content: |
+    In this module, you learn why and how to create a custom Linux VM image with Packer. This Packer image is used in the additional quickstarts as you deploy your virtual machine scale set and application.
+
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1ZnXj]
+- title: Overview of Packer and image deployment
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/create-packer-image-1.md)]
+- title: Create Azure credentials for Packer
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/create-packer-image-2.md)]
+- title: Create Packer template
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/create-packer-image-3.md)]
+- title: Build Packer image
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/create-packer-image-4.md)]
+challenge:
+  uid: learn.deploy-custom-vmss-app.create-packer-image.quiz
+  type: quiz

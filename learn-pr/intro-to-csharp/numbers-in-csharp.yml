@@ -1,0 +1,48 @@
+### YamlMime:Tutorial
+uid: learn.intro-to-csharp.numbers
+title: Numbers in C#
+metadata:
+  title:  Numbers in C# interactive tutorial - C# quickstarts
+  description: In this quick start about numeric types, you'll use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
+  audience: Developer
+  level: Beginner
+  ms.topic: interactive-tutorial
+  displayType: two-column
+  interactive: csharp
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: .net
+  ms.custom: guided-learning
+  ms.technology: devlang-csharp
+items:
+- durationInMinutes: 1
+  content: |
+    This quick start teaches you about the number types in C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
+- title: Explore integer math
+  durationInMinutes: 4
+  content: |
+    [!include[](includes/numbers-in-csharp-1.md)]
+- title: Explore order of operations
+  durationInMinutes: 7
+  content: |
+    [!include[](includes/numbers-in-csharp-2.md)]
+- title: Explore integer precision and limits
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/numbers-in-csharp-3.md)]
+- title: Work with the double type
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/numbers-in-csharp-4.md)]
+- title: Work with fixed point types
+  durationInMinutes: 8
+  content: |
+    [!include[](includes/numbers-in-csharp-5.md)]
+- title: Complete challenge
+  durationInMinutes: 1
+  content: |
+    [!include[](includes/numbers-in-csharp-6.md)]
+- content: |
+    You've completed the "Numbers in C#" quick start.
+
+    You can continue these quick starts on your own development environment. Learn the basics of local development and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again at with the numbers in C# quickstart.

@@ -1,0 +1,47 @@
+### YamlMime:Tutorial
+uid: learn.intro-to-csharp.hello-world
+title: Hello C#
+metadata:
+  title: Hello World interactive tutorial - C# quickstarts
+  description: In this quickstart, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
+  audience: Developer
+  level: Beginner
+  ms.topic: interactive-tutorial
+  displayType: two-column
+  interactive: csharp
+  author: barlanmsft
+  ms.author: barlan
+  ms.service: .net
+  ms.custom: guided-learning
+  ms.technology: devlang-csharp
+items:
+- durationInMinutes: 1
+  content: |
+    This quickstart teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
+- title: Run your first C# program
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/hello-world-1.md)]
+- title: Declare and use variables
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/hello-world-2.md)]
+- title: Work with strings
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/hello-world-3.md)]
+- title: Do more with strings
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/hello-world-4.md)]
+- title: Search strings
+  durationInMinutes: 10
+  content: |
+    [!include[](includes/hello-world-5.md)]
+- title: Complete challenge
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/hello-world-6.md)]
+challenge:
+  uid: learn.intro-to-csharp.hello-world.quiz
+  type: quiz

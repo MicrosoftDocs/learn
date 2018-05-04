@@ -1,0 +1,41 @@
+### YamlMime:Tutorial
+uid: learn.template-module.unit-3
+title: Title of Unit 3
+metadata:
+  title: Title of Unit 3
+  description: Description of Unit 3
+  audience: Developer
+  level: Intermediate
+  ms.topic: get-started-article
+  displayType: two-column
+  interactive: azurecli
+  ms.custom:
+  ms.prod:
+  ms.technology: virtual-machine-scale-set
+items:
+- durationInMinutes: 3
+  content: |
+    In this module, you create an Azure virtual machine scale set that uses the Packer image for each VM instance in the scale set. This Packer image has all the application components needed to run your applications. You also configure the Azure load balancer so that it is able to distribute traffic to the VM instances in the scale set.
+
+    > [!Video Overview of virtual machine scale sets]
+- title: Overview of Azure virtual machine scale sets
+  durationInMinutes: 2
+  content: |
+    [!include[](includes/unit-3-a.md)]
+- title: Create a virtual machine scale set
+  durationInMinutes: 3
+  content: |
+    [!include[](includes/unit-3-b.md)]
+- title: Configure load balancer rules for web traffic
+  durationInMinutes: 1
+  content: |
+    [!include[](includes/unit-3-c.md)]
+- title: View the scale set in action
+  durationInMinutes: 1
+  content: |
+    [!include[](includes/unit-3-d.md)]
+- content: |
+    You've completed the "Create a virtual machine scale set" module.
+challenge:
+  uid: learn.template-module.unit-3.quiz
+  type: quiz

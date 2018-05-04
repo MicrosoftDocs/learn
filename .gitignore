@@ -1,8 +1,12 @@
 log/
 obj/
+raw/
+viewmodel/
+_model/
+_viewmodel/
 _site/
 .optemp/
 _themes*/
-_repo.*/
+_dependentPackages/
 
 .openpublishing.buildcore.ps1

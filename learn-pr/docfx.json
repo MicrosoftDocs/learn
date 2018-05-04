@@ -14,7 +14,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "template-module/**"
         ]
       }
     ],
@@ -22,21 +23,26 @@
       {
         "files": [
           "**/*.png",
+          "**/*.svg",
           "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
-          "_themes.pdf/**"
+          "_themes.pdf/**",
+          "template-module/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/learn-pr/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "breadcrumb_path": "/learn/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "feedback_system": "None",
+      "clicktale": true,
+      "signintest": true
     },
     "fileMetadata": {},
     "template": [],
