@@ -1,6 +1,12 @@
-To use the Azure Custom Script Extension, you provide the location of files to be downloaded, and then a command to execute. This module shows a simple example that copies files from a GitHub repo, then runs a script to move the required files and then run a basic Node.js app. For more complex applications, the script could clone a GitHub or other source control repo, then run local build tools such as Grunt or Maven.
+To use the Azure Custom Script Extension, you provide the location of files to be downloaded, and then a command to execute. This tutorial shows a simple example that does the following:
 
-First, create a file named *customConfig.json* in the Azure Cloud Shell that defines what files to download and run. To see a list of available editors and create the file, type `sensible-editor customConfig.json`. Paste the following template into the file:
+- Copies files from a GitHub repo
+- Runs a script to move the files to the required location
+- Start a basic Node.js app. 
+
+For more complex applications, the script could clone a GitHub or other source control repo, then run local build tools such as Grunt or Maven.
+
+First, create a file named *customConfig.json* in the Azure Cloud Shell that defines what files to download and run. To see a list of available editors and create the file, type `sensible-editor customConfig.json`. Paste the following JSON into the file:
 
 ```json
 {
@@ -11,15 +17,15 @@ First, create a file named *customConfig.json* in the Azure Cloud Shell that def
 }
 ```
 
-The following files are downloaded to the VM instances:
+As you can see from the preceding configuration file, we define three files to download to our VM instances: 
 
-- *hello-world-v1.js* is a basic Node.js app that outputs the hostname of the VM instance
-- *nginx* defines a basic NGINX reverse proxy for the Node.js app to be presented on TCP port 80 via NGINX
-- *deploy-v1.sh* runs some bash commands to move the files to required locations, set the appropriate file permissions, then start the Node.js application
+- *hello-world-v1.js* is a basic Node.js app that outputs the hostname of the VM instance.
+- *nginx* defines a basic NGINX reverse proxy for the Node.js app to be presented on TCP port 80 via NGINX.
+- *deploy-v1.sh* runs some bash commands to move the files to required locations, sets the appropriate file permissions and then starts the Node.js application. Notice that we've appended a version number to the end of this script file name. We'll get back to that in the next unit. 
 
 Apply the Custom Script Extension configuration to the VM instances in your scale set with [az vmss extension set](/cli/azure/vmss/extension#set). The following example applies the *customConfig.json* configuration to the *myScaleSet* VM instances in the resource group named *myResourceGroup*:
 
-```azurecli
+```azurecli-interactive
 az vmss extension set \
   --publisher Microsoft.Azure.Extensions \
   --version 2.0 \

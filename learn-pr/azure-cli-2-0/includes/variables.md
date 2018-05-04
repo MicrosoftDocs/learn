@@ -1,12 +1,12 @@
  Now that you have the NIC ID, run `az network nic show` to get its information.
 
-```azurecli
+```azurecli-interactive
 az network nic show --ids $NIC_ID -g TutorialResources
 ```
 
 This command shows all of the information for the network interface of the VM. This data includes DNS settings, IP information, security settings, and the MAC address. Right now the goal is to obtain the public IP address and subnet object IDs.
 
-```azurecli
+```azurecli-interactive
 az network nic show --ids $NIC_ID \
   -g TutorialResources \
   --query '{IP:ipConfigurations[].publicIpAddress.id, Subnet:ipConfigurations[].subnet.id}' 

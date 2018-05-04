@@ -2,7 +2,7 @@ The Azure CLI 2.0 creates the supporting resources for a virtual machine scale s
 
 Create a scale set in the Azure Cloud Shell with [az vmss create](/cli/azure/vmss#az_vmss_create). The following example creates a scale set named *myScaleSet* that uses the custom image named *myPackerImage* from the previous module:
 
-```azurecli
+```azurecli-interactive
 az vmss create \
   --resource-group myResourceGroup \
   --name myScaleSet \

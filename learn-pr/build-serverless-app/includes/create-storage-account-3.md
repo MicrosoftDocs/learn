@@ -1,6 +1,4 @@
-## Host a website in Azure Blob storage
-
-The following sections walk you through creating an Azure Storage account, creating a resource group, and a storage container to host your static resources.
+The following sections walk you through creating an Azure storage account, creating a resource group, and creating a storage container to host your static resources.
 
 > [!IMPORTANT] 
 > To complete this tutorial, you need an Azure subscription. If you don't already have one, you can create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
@@ -9,9 +7,11 @@ The following sections walk you through creating an Azure Storage account, creat
 
 Azure Cloud Shell is an interactive, browser-accessible shell for managing your Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, and Windows users can opt for PowerShell.
 
-Common Azure tools are pre-installed and configured in Cloud Shell for you to use with your account. Just select the **Copy** button to copy the code, paste it in Cloud Shell, and then press **Enter** to run it. 
+Common Azure tools are pre-installed and configured in Cloud Shell for you to use with your account. 
 
-For this tutorial, Cloud Shell should appear on the right side of the screen. To get started using it, select the blue **Login** button.
+For this tutorial, Cloud Shell should appear at the right side of the screen. To get started using it, select the blue **Login** button.
+
+When you're presented with code snippets throughout this module, you can select the **Copy** button to copy the code, paste it in Cloud Shell, modify it if you need to, and then press **Enter** to run it. 
 
 ## Create a resource group
 
@@ -22,7 +22,7 @@ You can create a resource group with Cloud Shell by using the [az group create][
 > [!IMPORTANT] 
 > As you create other resources in this tutorial, be sure to use the same region that you select here in this first step.
 
-```azurecli
+```azurecli-interactive
 export rg=serverlessRG
 export loc=eastus
 az group create --name $rg --location $loc
@@ -31,24 +31,24 @@ az group create --name $rg --location $loc
 > [!NOTE] 
 > Resource groups store metadata about your resources. This means that when you specify a location for the resource group, you are specifying where that metadata is stored. Keep this in mind when you are using this in a production environment because, for compliance reasons, you might need to ensure that your data is stored in a particular region.
 
-## Create an Azure Storage account
+## Create an Azure storage account
 
 The static content in your web application is hosted in an Azure Blob storage account, which serves the content directly to the internet.
 
-The following sample command creates an Azure storage account using the name, *serverlessStorage*, in a variable. Before you run the command, modify the storage account name value to something unique. The Storage account name must be globally unique, because it creates a DNS entry that's associated with it.
+The following sample command creates an Azure storage account using the name, *serverlessStorage*, in a variable. Before you run the command, modify the storage account name value to something unique. The storage account name must be globally unique, because it creates a DNS entry that's associated with it.
 
-```azurecli
+```azurecli-interactive
 export storageAccount=serverlessstorage
 az storage account create --name $storageAccount --location $loc --resource-group $rg --kind StorageV2 --sku Standard_GRS
 ```
 
 ## Create a storage container
 
-Next, create a container in your Azure Storage account to host the files.
+Next, create a container in your Azure storage account to host the files.
 
 The following command exports *serverlesscontainer* as a variable for the container name and then creates the account. If you want to use a different name, you can change the export.
 
-```azurecli
+```azurecli-interactive
 export storageContainer=serverlesscontainer
 az storage container create --name $storageContainer --account-name $storageAccount --public-access blob
 ```
@@ -59,14 +59,14 @@ The application that we are using for this tutorial and will be loaded by custom
 
 To clone the repo and upload it to your Azure storage account, you can use `git clone` with Azure Cloud Shell, as shown in the command below:
 
-```azurecli
+```azurecli-interactive
 git clone https://github.com/david-stanford/serverless.git
 for f in $(find ~/serverless -name '*.html' -or -name '*.css' -or -name '*.js'); do az storage blob upload -c $storageContainer --account-name $storageAccount -f $f -n ${f#*/serverless/}; done
 ```
 
 Next, retrieve the URL to the newly created web application. The following command retrieves the URL to the index.html file in your storage account:
 
-```azurecli
+```azurecli-interactive
 az storage blob url -c $storageContainer --name index.html --account-name $storageAccount
 ```
 

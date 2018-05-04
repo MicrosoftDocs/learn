@@ -3,15 +3,15 @@
 1. Go back to your functions app.
 2. Select **New Function**.
 3. In the filter box, enter *Event*.
-4. Select **Event Grid trigger**.
+4. Select the Event Grid trigger.
 5. In the **Language** drop-down list, select *Javascript*.
 6. In the **Name** field, enter *imageProcessing*.
 7. Select **Create**.
 8. After the function is created, select **Add Event Grid subscription**.
 9. In the **Name** field, enter *imageProcessingGrid*.
-10. Change the **Topic Type** to *Storage Accounts*.
+10. In the **Topic Type** field, change the setting to *Storage Accounts*.
 11. In the **Use existing** drop-down list, select *serverlessRG*.
-12. In the **Instance** pane, select your storage account. 
+12. On the **Instance** menu, select your storage account. 
 13. Select **Create**.
 14. In the text box, paste the following code:
 
@@ -59,7 +59,7 @@
 16. Select the **Integrate** sub-tab of the function.
 17. Select **New Output**.
 18. Search for **Azure Cosmos DB** > **Select**.
-19. Change the **Database name** to *serverless-app*.
-20. Change the **Collection Name** to *images*.
-21. Select the check box to create the Azure Cosmos DB database and collection.
+19. In the **Database name** field, change the setting to *serverless-app*.
+20. In the **Collection Name** field, change the setting to *images*.
+21. To create the Azure Cosmos DB database and collection, select the check box.
 22. Select **Save**.

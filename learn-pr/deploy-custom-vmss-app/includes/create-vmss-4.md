@@ -1,6 +1,6 @@
 To see your scale set in action, get the public IP address of your load balancer with [az network public-ip show](/cli/azure/network/public-ip#show). The following example gets the IP address for *myScaleSetLBPublicIP* created as part of the scale set:
 
-```azurecli
+```azurecli-interactive
 az network public-ip show \
   --resource-group myResourceGroup \
   --name myScaleSetLBPublicIP \
