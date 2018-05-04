@@ -2,7 +2,7 @@ During the build process, Packer creates temporary Azure resources for the base 
 
 First, create a resource group in the Azure Cloud Shell with [az group create](/cli/azure/group#az_group_create). The following example creates a resource group named *myResourceGroup* in the *eastus* location:
 
-```azurecli
+```azurecli-interactive
 az group create -n myResourceGroup -l eastus
 ```
 
@@ -10,13 +10,13 @@ Packer authenticates with Azure using a service principal. An Azure service prin
 
 Create a service principal in the Azure Cloud Shell with [az ad sp create-for-rbac](/cli/azure/ad/sp#create-for-rbac) and output the credentials that Packer needs:
 
-```azurecli
+```azurecli-interactive
 az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"
 ```
 
 An example of the output from the preceding commands is as follows:
 
-```azurecli
+```azurecli-interactive
 {
     "client_id": "f5b6a5cf-fbdf-4a9f-b3b8-3c2cd00225a4",
     "client_secret": "0e760437-bf34-4aad-9f8d-870be799c55d",
@@ -29,13 +29,13 @@ An example of the output from the preceding commands is as follows:
 
 To authenticate to Azure, you also need to obtain your Azure subscription ID with [az account show](/cli/azure/account#az_account_show):
 
-```azurecli
+```azurecli-interactive
 az account show --query '{ "subscription_id": "id" }'
 ```
 
 An example of the output from the preceding command is as follows:
 
-```azurecli
+```azurecli-interactive
 {
   "subscription_id": "1695b3e3-fdd4-49ec-8dfd-d684c8c91517"
 }
