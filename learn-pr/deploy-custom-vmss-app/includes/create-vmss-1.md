@@ -10,7 +10,7 @@ Azure virtual machine scale sets provide the management capabilities for applica
 - They work at large scale.
 
 ## Differences between virtual machines and scale sets
-Scale sets are built from virtual machines. With scale sets, the management and automation layers are provided to run and scale your applications. You can instead manually create and manage individual VMs, or integrate existing tools to build a similar level of automation. The following table outlines the benefits of scale sets compared to manually managing VM instances.
+Scale sets are built from virtual machines. With scale sets, the management and automation layers are provided to run and scale your applications. You can instead manually create and manage individual VMs, or integrate existing tools to build a similar level of automation. The following table outlines the benefits of scale sets compared to manually managing VM instances:
 
 | Scenario                           | Manual group of VMs                                                                    | Virtual machine scale set |
 |------------------------------------|----------------------------------------------------------------------------------------|---------------------------|
