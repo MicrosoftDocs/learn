@@ -2,8 +2,8 @@
 title: Create Azure Functions
 uid: learn.build-serverless-app.create-azure-functions
 metadata:
-  title: Create Azure Functions
-  description: Learn about and create Azure Functions, then hook your serverless web app to your new functions.
+  title: Create Azure functions
+  description: Learn about and create Azure Functions, and then hook your serverless web app to your new functions.
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial

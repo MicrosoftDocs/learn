@@ -1,9 +1,9 @@
 ### YamlMime:Tutorial
-title: Create an Azure Cosmos DB Instance
+title: Create an Azure Cosmos DB instance
 uid: learn.build-serverless-app.create-cosmosdb
 metadata:
-  title: Create an Azure Cosmos DB Instance
-  description: Learn about Cosmos DB and create an Azure Cosmos DB instance to store metadata for images that are uploaded via your web application.
+  title: Create an Azure Cosmos DB instance
+  description: Learn about Cosmos DB and create an Azure Cosmos DB instance, so that you can store metadata for images that are uploaded via your web application.
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial

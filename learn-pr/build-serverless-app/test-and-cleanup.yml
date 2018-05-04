@@ -2,8 +2,8 @@
 title: Test your application and clean up your environment
 uid: learn.build-serverless-app.test-and-cleanup
 metadata:
-  title: Test and Clean up
-  description: Learn how to build a serverless website, by storing data in a cosmos DB, interfacing it with API management service and functions.
+  title: Test and clean up
+  description: Learn how to build a serverless website by storing data in a Cosmos DB instance, and interfacing it with API management service and functions.
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial
