@@ -1,4 +1,4 @@
-As discussed earlier, manually deploying or updating an app from Visual Studio isn't recommended for production scenarios. Instead, you should use a source control and continuous integration CI/CD solution like Visual Studio Team Services (Team Services).<br/><br/>
+As discussed earlier, manually deploying or updating an app from Visual Studio isn't recommended for production scenarios. Instead, you should use a source control and continuous integration/continuous deployment (CI/CD) solution like Visual Studio Team Services (Team Services).<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1ZnXl]
 

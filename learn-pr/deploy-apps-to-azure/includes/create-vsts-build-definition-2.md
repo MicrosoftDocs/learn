@@ -1,4 +1,4 @@
-The starting point for setting up CI and CD for your applications is to have your source code in a *version control system*. Team Services supports two forms of version control: *Git* and *Team Foundation Version Control*. The *Build* service integrates with both of these version control systems. 
+The starting point for setting up CI and CD for your applications is having your source code in a *version control system*. Team Services supports two forms of version control: *Git* and *Team Foundation Version Control*. The *Build* service integrates with both of these version control systems. 
 
 After you configure CI, any changes that you push to your version control repository are automatically built and validated. You can also manage your source code by using Subversion, Bitbucket, GitHub, or any other Git repository. The Build service integrates with all of these version control systems.
 

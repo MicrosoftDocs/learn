@@ -1,4 +1,4 @@
-Before we set up CI/CD pipeline processes, it's important to know the manual process for publishing to Azure Web Apps.
+Before you set up CI/CD pipeline processes, it's important to know the manual process for publishing to Azure Web Apps.
 
 > [!NOTE] 
 > Manual publishing is not recommended for production workloads. You typically use a review control process or CI/CD pipeline in production workloads. 

@@ -8,7 +8,7 @@ In Team Services, you use a build definition to outline how your application sho
 6. Select your Azure subscription from the drop-down menu, and then select **Authorize**. It takes a few seconds to authorize the connection between Team Services and your Azure subscription.
 7. When authorization is finished, in the **App service** name drop-down menu, select the Azure App Service name that you created in Visual Studio in an earlier lab, such as *myWebApp*.
 8. On the **Triggers** tab, select the **Enable continuous integration** check box.
-9. To save the build definition and queue a new build, select **Save & queue**. Select **Save & queue** again. Leave the defaults and select **Save & queue**.
+9. To save the build definition and queue a new build, select **Save & queue**. Select **Save & queue** again. Leave the defaults, and then select **Save & queue**.
 
 Watch as the build is scheduled on a hosted agent and then begins to build and deploy to Azure. The output is similar to the following example:
 

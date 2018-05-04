@@ -1,8 +1,8 @@
 Team Services is a collection of hosted DevOps services for application developers. *Build* and *Release* are two of the DevOps services in Team Services that help you manage continuous integration and delivery of your applications.
 
-Core components of Team Services include the following:
+Team Services has the following core components:
 
-- **Code**: Team Services hosts source-control repositories when you can commit and push code, track a release across branches, and work toward release milestones.
+- **Code**: Team Services hosts source-control repositories in which you can commit and push code, track a release across branches, and work toward release milestones.
 
 - **Agents and queues**: To build your code or to deploy your software, you need at least one agent. An agent is installable software that runs one build or deployment job at a time.
 
@@ -10,7 +10,7 @@ Core components of Team Services include the following:
 
     Team Services supports the following agents:
 
-    - *Hosted agents* are run on the Team Services platform. Microsoft takes care of the maintenance and upgrade of hosted agents.
+    - *Hosted agents* run on the Team Services platform. Microsoft takes care of the maintenance and upgrade of hosted agents.
 
     - *Private agents* are agents that you set up and manage on your own systems to run build and deployment jobs. When you use private agents, you have more control to install dependent software that you need for your builds and deployments. You can install a private agent on Windows, Linux, or macOS machines. You can also install an agent on a Linux Docker container. After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 

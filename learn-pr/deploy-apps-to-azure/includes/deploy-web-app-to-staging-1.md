@@ -1,4 +1,4 @@
-Deploying your app straight to production might cause problems. To avoid this, you typically deploy to a staging site. You use the staging site to review your changes before you push them to production.
+There's a chance that deploying your app straight to production will cause problems. To avoid this, you typically deploy to a staging site. You use the staging site to review your changes before you push the changes to production.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1ZnXk]
 
