@@ -25,5 +25,5 @@ items:
   content: |
     [!include[](includes/login.md)]
 challenge:
-  uid: learn.azure-cli-2-0.combined-quiz.quiz
+  uid: learn.azure-cli-2-0.login.quiz
   type: quiz
