@@ -1,6 +1,6 @@
  Now that a VM has been created, detailed information about it can be retrieved. The common command for getting information from a resource is `show`.
 
-```
+```azurecli-interactive
 az vm show --name TutorialVM1 --resource-group TutorialResources
 ```
 
@@ -8,7 +8,7 @@ You'll see a lot of information, which can be difficult to parse visually. The r
         
 In order to extract the object ID we want, the `--query` argument is used. Queries are written in the [JMESPath query language](http://jmespath.org). Start with getting the network interface controller (NIC) object ID.
 
-```
+```azurecli-interactive
 az vm show --name TutorialVM1 \
   --resource-group TutorialResources \
   --query 'networkProfile.networkInterfaces[].id' \
