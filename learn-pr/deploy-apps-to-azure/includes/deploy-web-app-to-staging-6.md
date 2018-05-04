@@ -5,6 +5,6 @@ After you review your app on staging, you can swap the web app deployments to ma
 3. For **Destination**, select *production*, and then select **OK**.
 4. It takes a few seconds for the web app deployment slots to swap. When the swap is finished, refresh your production website in a browser:
 
-    ![ASP.NET web app running in Azure web app production](../media/running-web-app-production.png)
+    ![An ASP.NET web app running in Azure Web Apps production](../media/running-web-app-production.png)
 
 Congratulations! You've successfully deployed a web app to a staging site by using Team Services and CI/CD!
