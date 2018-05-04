@@ -1,12 +1,12 @@
- Now that a VM has been created, detailed information about it can be retrieved. The common command for getting information from a resource is `show`.
+ Now that you have created a VM, you can retrieve detailed information about it. The common command for getting information from a resource is `show`.
 
 ```azurecli
 az vm show --name TutorialVM1 --resource-group TutorialResources
 ```
 
-You'll see a lot of information, which can be difficult to parse visually. The returned JSON contains information on authentication, network interfaces, storage, and more. Most importantly, it contains the Azure object IDs for resources that the VM is connected to. Object IDs allow accessing these resources directly to get more information about the VM's configuration and capabilities. 
+This command produces a lot of information, which can be difficult to parse visually. For example, you can find information about authentication, network interfaces, and storage. Most importantly, you can find the Azure object IDs for resources that the VM is connected to. Object IDs allow you to access these resources directly to get more information about the VM's configuration and capabilities. 
         
-In order to extract the object ID we want, the `--query` argument is used. Queries are written in the [JMESPath query language](http://jmespath.org). Start with getting the network interface controller (NIC) object ID.
+To extract the object ID you want, use the `--query` argument. Write your queries in the [JMESPath query language](http://jmespath.org). Start with getting the network interface controller (NIC) object ID.
 
 ```azurecli
 az vm show --name TutorialVM1 \
@@ -22,7 +22,7 @@ There's a lot going on here, just by adding the query. Each part of it reference
 * The `networkInterfaces` value is an array, so it is flattened with the `[]` operator. This operator runs the remainder
   of the query on each array element. In this case, it gets the `id` value of every array element.
 
-The output format `tsv` (tab-separated values) is guaranteed to only include the result data and whitespace consisting of tabs and newlines. Since the returned value is a single bare string, it's safe to assign directly to an environment variable.
+The output format `tsv` (tab-separated values) is guaranteed to include only the result data and whitespace, consisting of tabs and new lines. Because the returned value is a single bare string, it's safe to assign directly to an environment variable.
 
 Go ahead and assign the NIC object ID to an environment variable now.
 
