@@ -1,4 +1,4 @@
-To update the app on your virtual machine scale set, you need to create another Custom Script Extension definition. In order to apply this update successfully to the scale set, make sure the name or version of the script is different from the previous script definition. A best practice is to include a version number within the file name for your scripts. As the version number changes, the Custom Script Extension definition also changes and successfully applies.
+To update the app on your virtual machine scale set, you need to create another Custom Script Extension definition. In order to apply this update successfully to the scale set, make sure the name or version of the script is different from the previous script definition. A best practice is to include a version number in the file name for your scripts. As the version number changes, the Custom Script Extension definition also changes.
 
 Create a file named *customConfigv2.json* in Azure Cloud Shell that defines what files to download and run. Paste the following template into the file:
 

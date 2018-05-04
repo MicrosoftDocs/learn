@@ -1,4 +1,4 @@
-## Creating Azure Virtual Machine Images with Packer
+## Creating Azure Virtual Machine Images by using Packer
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Zv1f]
 

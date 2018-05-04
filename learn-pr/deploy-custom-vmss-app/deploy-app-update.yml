@@ -18,7 +18,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    In this quickstart, you deploy an application update from GitHub by using the Azure Custom Script Extension. This app update can be integrated with continuous integration/continuous deployment (CI/CD) for rolling app updates to VM instances in a scale set.
+    In this quickstart, you deploy an application update from GitHub by using the Azure Custom Script Extension. You can integrate this app update with continuous integration/continuous deployment (CI/CD) for rolling app updates to VM instances in a scale set.
 - title: Overview of app updates and CI/CD
   durationInMinutes: 5
   content: |

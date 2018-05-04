@@ -51,7 +51,7 @@ You also ran the following command to return `subscription_id`:
  
  `az account show --query '{ "subscription_id": "id" }'` 
  
-In the `builders` section of the template file shown earlier, replace the Azure credential information placeholders with your own values. The placeholders are of the format *"YOUR xxxx_xx HERE"*.  
+In the `builders` section of the template file shown earlier, replace the Azure credential information placeholders with your own values. The placeholders are in the format *"YOUR xxxx_xx HERE"*.  
 
 As you'll see in the next step, when Packer builds this template, it will use the information in this file to do the following: 
 

@@ -21,4 +21,4 @@ Scale sets are built from virtual machines. With scale sets, the management and 
 
 There is no additional cost for scale sets. You pay for only the underlying compute resources such as the VM instances, the load balancer, or managed disk storage. The management and automation features, such as autoscale and redundancy, incur no additional charges over the use of VMs.
 
-At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.
+At the end of the tutorial, you can check your knowledge with a quiz challenge.

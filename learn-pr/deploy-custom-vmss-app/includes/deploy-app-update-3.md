@@ -1,4 +1,4 @@
-To see the updated version, refresh the site from the previous module in your browser. Notice the change in app output in the following screenshot.
+To see the updated version, refresh the site from the previous module in your browser. Notice the change in app output in the following screenshot:
 
 ![Updated app running on scale set](../../media/deploy-custom-vmss-app/updated-app-vmss.png)
 
