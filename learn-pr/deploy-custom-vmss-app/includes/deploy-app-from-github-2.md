@@ -25,7 +25,7 @@ As you can see from the preceding configuration file, we define three files to d
 
 Apply the Custom Script Extension configuration to the VM instances in your scale set with [az vmss extension set](/cli/azure/vmss/extension#set). The following example applies the *customConfig.json* configuration to the *myScaleSet* VM instances in the resource group named *myResourceGroup*:
 
-```azurecli
+```azurecli-interactive
 az vmss extension set \
   --publisher Microsoft.Azure.Extensions \
   --version 2.0 \

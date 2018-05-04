@@ -15,7 +15,7 @@ To see a list of available editors and create the file, type `sensible-editor cu
 
 Apply the updated Custom Script Extension configuration to the VM instances in your scale set  with the [az vmss extension set](/cli/azure/vmss/extension#set) command again as follows:
 
-```azurecli
+```azurecli-interactive
 az vmss extension set \
     --publisher Microsoft.Azure.Extensions \
     --version 2.0 \

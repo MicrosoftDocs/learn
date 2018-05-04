@@ -22,7 +22,7 @@ You can create a resource group with Cloud Shell by using the [az group create][
 > [!IMPORTANT] 
 > As you create other resources in this tutorial, you will need to be sure to use the same region as you select in this first step.
 
-```azurecli
+```azurecli-interactive
 export rg=serverlessRG
 export loc=eastus
 az group create --name $rg --location $loc
@@ -37,7 +37,7 @@ The static content in our web application will be hosted in an Azure Blob Storag
 
 The sample command below create an Azure storage account using the name, *serverlessStorage*, in a variable. You will need to modify the storage account name value to something unique before you run this, as storage account names must be globally unique since it creates a DNS entry to be associated with it.
 
-```azurecli
+```azurecli-interactive
 export storageAccount=serverlessstorage
 az storage account create --name $storageAccount --location $loc --resource-group $rg --kind StorageV2 --sku Standard_GRS
 ```
@@ -48,7 +48,7 @@ Next, you need to create a container in your Azure Storage account to host the f
 
 The command below will export *serverlesscontainer* as a variable for the container name and then create the account. If you want to use a different name, you can change the export.
 
-```azurecli
+```azurecli-interactive
 export storageContainer=serverlesscontainer
 az storage container create --name $storageContainer --account-name $storageAccount --public-access blob
 ```
@@ -59,14 +59,14 @@ The application that we are using for this tutorial and will be loaded by custom
 
 To clone the repo and upload it in your Azure storage account, you can use `git clone` with Azure Cloud Shell, as shown in the command below:
 
-```azurecli
+```azurecli-interactive
 git clone https://github.com/david-stanford/serverless.git
 for f in $(find ~/serverless -name '*.html' -or -name '*.css' -or -name '*.js'); do az storage blob upload -c $storageContainer --account-name $storageAccount -f $f -n ${f#*/serverless/}; done
 ```
 
 Next, you need to retrieve the URL to the newly created web application. The following command retrieves the URL to the index.html file in your storage account:
 
-```azurecli
+```azurecli-interactive
 az storage blob url -c $storageContainer --name index.html --account-name $storageAccount
 ```
 

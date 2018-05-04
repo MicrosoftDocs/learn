@@ -2,7 +2,7 @@ When you created your scale set with the Azure CLI 2.0 in the preceding step, it
 
 To allow traffic to reach your scale set and that verify that the NGINX web server works correctly, create a load balancer rule with [az network lb rule create](/cli/azure/network/lb/rule#create). The following example creates a rule named *myLoadBalancerRuleWeb* that allows traffic on *TCP* port *80*:
 
-```azurecli
+```azurecli-interactive
 az network lb rule create \
   --resource-group myResourceGroup \
   --name myLoadBalancerRuleWeb \

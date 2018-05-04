@@ -2,7 +2,7 @@ Now that you've built your app, you should be able to upload images and see the 
 
 Browse to your application (you retrieved this URL in step one). Here is the command again if you don't have it handy:
 
-```azurecli
+```azurecli-interactive
 az storage blob url -c $storageContainer --name index.html --account-name $storageAccount
 ```
 
