@@ -7,8 +7,8 @@ metadata:
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial
-  displayType: two-column
-  interactive: azurecli
+  displayType: one-column
+  interactive: 
   author: asajohnson
   ms.author: asjohnso
   ms.service:
