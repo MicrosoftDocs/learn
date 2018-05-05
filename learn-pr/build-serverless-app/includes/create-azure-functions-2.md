@@ -11,7 +11,7 @@ Azure Functions provides templates to get you started with key scenarios, includ
 * **TimerTrigger**: Execute cleanup or other batch tasks on a predefined schedule.
 * **GitHub webhook**: Respond to events that occur in your GitHub repositories.
 * **Generic webhook**: Process webhook HTTP requests from any service that supports webhooks.
-* **CosmosDBTrigger**: Process Azure Cosmos DB documents when they are added or updated in collections in a NoSQL database.
+* **CosmosDBTrigger**: Process Azure Cosmos DB instance documents when they are added or updated in collections in a NoSQL database.
 * **BlobTrigger**: Process Azure Storage blobs when they are added to containers. You might use this function for image resizing.
 * **QueueTrigger**: Respond to messages as they arrive in an Azure Storage queue.
 * **EventHubTrigger**: Respond to events delivered to an Azure event hub. This action is particularly useful in application instrumentation, user experience or workflow processing, and IoT scenarios.
