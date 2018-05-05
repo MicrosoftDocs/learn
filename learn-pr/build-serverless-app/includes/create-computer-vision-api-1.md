@@ -2,6 +2,6 @@ In this tutorial, you continue to enhance your serverless web application by cre
 
 In the tutorial, you will:
 - Learn about the Azure Computer Vision API.
-- Create an instance of the Azure Computer Vision API.
+- Create an Azure Computer Vision API instance.
 
 At the end of the tutorial, you can check your knowledge about this information with a quiz challenge.
