@@ -1,6 +1,6 @@
 Packer is available as a small (~40Mb for Linux 64-bit) binary, and is available for Linux, macOS, FreeBSD and OpenBSD. You'll need to download and unzip Packer locally. For example, the following command downloads and unzips a Packer package for Linux:
 
-```azurecli-interactive
+```azurecli
 curl https://releases.hashicorp.com/packer/1.2.2/packer_1.2.2_linux_amd64.zip -o packer.zip && unzip packer.zip
 ```
 
