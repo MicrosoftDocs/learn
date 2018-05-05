@@ -7,8 +7,7 @@ metadata:
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial
-  displayType: two-column
-  interactive: azurecli
+  displayType: one-column
   author: asajohnson
   ms.author: asjohnso
   ms.service:
@@ -19,11 +18,11 @@ items:
 - durationInMinutes: 1
   content: |
     [!include[](includes/connect-storage-to-api-eventgrid-1.md)]
-- title: Learn about Azure Event Grid
+- title: Learn about Azure EventGrid
   durationInMinutes: 2
   content: |
     [!include[](includes/connect-storage-to-api-eventgrid-2.md)]
-- title: Setup Event Grid to process images
+- title: Set up EventGrid to process images
   durationInMinutes: 5
   content: |
     [!include[](includes/connect-storage-to-api-eventgrid-3.md)]

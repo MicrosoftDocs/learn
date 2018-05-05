@@ -40,11 +40,25 @@
     "globalMetadata": {
       "breadcrumb_path": "/learn/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/learn",
       "clicktale": true,
       "signintest": true
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "breadcrumb_path": {
+        "azure-cli-2-0/**.**": "/learn/breadcrumb/all/toc.json",
+        "azure-cli-2-0/index.yml": "/learn/breadcrumb/toc.json",
+        "build-serverless-app/**.**": "/learn/breadcrumb/all/toc.json",
+        "build-serverless-app/index.yml": "/learn/breadcrumb/toc.json",
+        "deploy-apps-to-azure/**.**": "/learn/breadcrumb/all/toc.json",
+        "deploy-apps-to-azure/index.yml": "/learn/breadcrumb/toc.json",
+        "deploy-custom-vmss-app/**.**": "/learn/breadcrumb/all/toc.json",
+        "deploy-custom-vmss-app/index.yml": "/learn/breadcrumb/toc.json",
+        "intro-to-csharp/**.**": "/learn/breadcrumb/all/toc.json",
+        "intro-to-csharp/index.yml": "/learn/breadcrumb/toc.json"
+      }
+    },
     "template": [],
     "dest": "learn-pr",
     "markdownEngineName": "markdig"

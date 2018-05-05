@@ -1,0 +1,16 @@
+- name: Docs
+  href: /
+  items:
+  - name: Learn
+    href: /learn/
+    items:
+    - name: Create virtual machines with the Azure CLI 2.0
+      href: /learn/azure-cli-2-0/
+    - name: Build a serverless web app in Azure
+      href: /learn/build-serverless-app/
+    - name: Deploy apps to Azure with Visual Studio and Continuous Integration / Continuous Delivery (CI/CD)
+      href: /learn/deploy-apps-to-azure/
+    - name: Deploy apps to an Azure virtual machine scale set with a custom Packer image
+      href: /learn/deploy-custom-vmss-app/
+    - name: Introduction to C#
+      href: /learn/intro-to-csharp/

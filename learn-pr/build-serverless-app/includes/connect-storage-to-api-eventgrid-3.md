@@ -1,7 +1,7 @@
 1. Navigate back to your functions app
 2. Select **New Function**
 3. Enter `Event` into the filter box
-4. Select Event Grid trigger
+4. Select EventGrid trigger
 5. Select **Javascript** from the **Language:** dropdown
 6. Enter `imageProcessing` into the **Name:** field
 7. Select **Create**

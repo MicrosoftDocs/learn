@@ -1,6 +1,7 @@
 Before we set up CI/CD pipeline processes, it is important to know the manual process for publishing to Azure Web Apps.
 
-> [!NOTE] Manual publishing is not recommended for production workloads where you should typically use a review control process or CI/CD pipeline. You will build a CI/CD pipeline in the rest of this tutorial.
+> [!NOTE]
+> Manual publishing is not recommended for production workloads where you should typically use a review control process or CI/CD pipeline. You will build a CI/CD pipeline in the rest of this tutorial.
 
 To manually publish to Azure Web Apps from Visual Studio:
 1. Select the **Solution Explorer**.
