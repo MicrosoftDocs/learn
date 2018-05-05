@@ -61,5 +61,5 @@
 18. Search for **Azure Cosmos DB** > **Select**.
 19. In the **Database name** field, change the setting to *serverless-app*.
 20. In the **Collection Name** field, change the setting to *images*.
-21. To create the Azure Cosmos DB database and collection, select the check box.
+21. To create the Azure Cosmos DB instance database and collection, select the check box.
 22. Select **Save**.
