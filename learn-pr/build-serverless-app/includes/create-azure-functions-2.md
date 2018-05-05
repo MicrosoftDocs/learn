@@ -14,8 +14,8 @@ Functions provides templates to get you started with key scenarios, including th
 * **CosmosDBTrigger**: Process Azure Cosmos DB documents when they are added or updated in collections in a NoSQL database.
 * **BlobTrigger**: Process Azure Storage blobs when they are added to containers. You might use this function for image resizing.
 * **QueueTrigger**: Respond to messages as they arrive in an Azure Storage queue.
-* **EventHubTrigger**: Respond to events delivered to an Azure Event Hub. This action is particularly useful in application instrumentation, user experience or workflow processing, and IoT scenarios.
+* **EventHubTrigger**: Respond to events delivered to an Azure event hub. This action is particularly useful in application instrumentation, user experience or workflow processing, and IoT scenarios.
 * **ServiceBusQueueTrigger**: Connect your code to other Azure services or on-premises services by listening to message queues.
 * **ServiceBusTopicTrigger**: Connect your code to other Azure services or on-premises services by subscribing to topics.
 
-Let's get started creating some Azure Functions to process our incoming pictures and re-upload them.
+Let's get started creating some Azure functions to process our incoming pictures and re-upload them.
