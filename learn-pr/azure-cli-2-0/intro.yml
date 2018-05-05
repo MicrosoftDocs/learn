@@ -7,7 +7,6 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  displayType: two-column
   interactive: azurecli
   author: barlanmsft
   ms.author: barlan
