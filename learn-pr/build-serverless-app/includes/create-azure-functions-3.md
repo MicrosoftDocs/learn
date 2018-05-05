@@ -108,7 +108,7 @@ You previously turned on MSI in Functions, which created an identity for your Az
     };
     ```
 
-4. Create an input binding to read from Azure Cosmos DB by doing the following:
+4. Create an input binding to read from the Azure Cosmos DB instance by doing the following:
 
     a. Select **Integrate**.
 
