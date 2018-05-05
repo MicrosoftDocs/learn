@@ -1,6 +1,6 @@
 ## Overview of Azure Event Grid
 
-By using Event Grid, you can easily build applications with event-based architectures. You select the Azure resource that you want to subscribe to, and provide the event handler or webhook endpoint to send the event to. Event Grid has built-in support for events coming from Azure services, such as Blob storage and resource groups. Event Grid also provides custom support for application and third-party events, using custom topics and custom webhooks.
+By using Event Grid, you can easily build applications with event-based architectures. You select the Azure resource that you want to subscribe to, and you provide the event handler or webhook endpoint to send the event to. Event Grid has built-in support for events coming from Azure services, such as Blob storage and resource groups. Event Grid also provides custom support for application and third-party events, using custom topics and custom webhooks.
 
 ## Concepts
 
