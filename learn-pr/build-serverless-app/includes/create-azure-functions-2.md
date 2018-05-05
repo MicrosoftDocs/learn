@@ -2,10 +2,10 @@
 
 Azure Functions makes it easy for you to run small pieces of code, or "functions," in the cloud. You can write only the code you need for the problem at hand, without worrying about a whole application or the infrastructure to run it. Functions can make you more productive during your development time, and let you use your development language of choice, such as C#, F#, Node.js, Java, or PHP. Azure automatically scales when your code runs, and you pay only for the time you're actually consuming resources.
 
-## What can I do with Functions?
-Functions is a great solution for processing data, integrating systems, working with the Internet of Things (IoT), and building simple APIs and microservices. Consider Functions for tasks such as image or order processing, file maintenance, or for any tasks that you want to run on a schedule. 
+## What can I do with functions?
+Functions are a great solution for processing data, integrating systems, working with the Internet of Things (IoT), and building simple APIs and microservices. Consider using functions for tasks such as image or order processing, file maintenance, or for any tasks that you want to run on a schedule. 
 
-Functions provides templates to get you started with key scenarios, including the following:
+Azure Functions provides templates to get you started with key scenarios, including the following:
 
 * **HTTPTrigger**: Trigger the execution of your code by using an HTTP request.
 * **TimerTrigger**: Execute cleanup or other batch tasks on a predefined schedule.
