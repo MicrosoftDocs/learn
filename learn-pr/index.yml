@@ -1,5 +1,5 @@
 ### YamlMime:ModuleList
-title: Guided learning tutorials
+title: Tutorials on Microsoft Docs
 modules:
 - learn.azure-cli-2-0.index
 - learn.build-serverless-app
