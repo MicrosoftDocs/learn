@@ -23,3 +23,4 @@ achievement:
   name: "Deploy apps to an Azure virtual machine scale set by using a custom Packer image"
   description: "First step completed toward a new life."
   imageUrl: /learn/media/achievements/deploy-vms-with-packer.svg
+
