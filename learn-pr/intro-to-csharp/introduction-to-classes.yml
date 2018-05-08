@@ -1,9 +1,9 @@
 ### YamlMime:Tutorial
 uid: learn.intro-to-csharp.introduction-to-classes
-title: Introduction To Classes
+title: Introduction to classes
 metadata:
-  title: Introduction To Classes interactive tutorial - C# quickstarts
-  description: In this quickstart, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
+  title: Introduction to classes
+  description: Use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial teaches is an interactive introduction to C# classes, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
+    This tutorial is an interactive introduction to C# classes, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
 - title: Define your first class
   durationInMinutes: 2
   content: |
