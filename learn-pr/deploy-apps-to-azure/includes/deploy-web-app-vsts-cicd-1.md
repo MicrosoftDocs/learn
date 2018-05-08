@@ -4,7 +4,7 @@ In this tutorial, you will:
     - Update app in Visual Studio and commit changes
     - Review build process and updated running app
 
-At the end of the tutorial, you can to check your knowledge about this information with a quiz challenge.
+At the end of the tutorial, you can check your knowledge with a quiz challenge.
 
 > [!NOTE]
 > This guided learning experience is in preview mode. If you encounter problems, please report them on the [MicrosoftDocs/learn](https://github.com/MicrosoftDocs/learn/issues) repo.
