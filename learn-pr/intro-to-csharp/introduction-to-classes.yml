@@ -43,5 +43,5 @@ items:
   content: |
     [!include[](includes/introduction-to-classes-6.md)]
 challenge:
-  uid: learn.intro-to-csharp.introduction-to-classes.quiz
+  uid: learn.intro-to-csharp.introduction-to-classes1.quiz
   type: quiz
