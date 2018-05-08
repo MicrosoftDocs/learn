@@ -21,6 +21,9 @@ units:
 - uid: learn.intro-to-csharp.list-collection
   type: tutorial
   durationInMinutes: 30
+- uid: learn.intro-to-csharp.introduction-to-classes
+  type: tutorial
+  durationInMinutes: 20
 achievement:
   uid: learn.intro-to-csharp.achievement
   name: "Introduction to C#"
