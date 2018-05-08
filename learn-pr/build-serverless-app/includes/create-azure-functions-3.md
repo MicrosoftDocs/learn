@@ -107,6 +107,7 @@ module.exports = function (context, req) {
 };
 ```
 
+4. Select **Save**
 4. Create an input binding to read from Azure Cosmos DB
   * Select **Integrate**
   * Select **New Input**
