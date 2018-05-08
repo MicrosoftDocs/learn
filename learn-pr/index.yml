@@ -5,3 +5,4 @@ modules:
 - learn.build-serverless-app
 - learn.deploy-apps-to-azure
 - learn.deploy-custom-vmss-app
+- learn.intro-to-csharp
