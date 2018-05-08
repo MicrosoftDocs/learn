@@ -34,5 +34,6 @@ items:
   durationInMinutes: 6
   content: |
     [!include[](includes/interpolated-strings-4.md)]
-- content: |
-    You've completed the interpolated strings quickstart.
+challenge:
+  uid: learn.intro-to-csharp.interpolated
+  type: quiz
