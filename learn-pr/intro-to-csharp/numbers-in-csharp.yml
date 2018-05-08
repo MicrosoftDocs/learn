@@ -42,7 +42,6 @@ items:
   durationInMinutes: 1
   content: |
     [!include[](includes/numbers-in-csharp-6.md)]
-- content: |
-    You've completed the "Numbers in C#" quick start.
-
-    You can continue these quick starts on your own development environment. Learn the basics of local development and then pick a quick start. You can try this same exercise, move directly to the next quick start, or start again at with the numbers in C# quickstart.
+challenge: 
+  uid: learn.intro-to-csharp.numbers
+  type: quiz
