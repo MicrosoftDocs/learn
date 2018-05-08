@@ -42,5 +42,6 @@ items:
   durationInMinutes: 1
   content: |
     [!include[](includes/branches-and-loops-6.md)]
-  content: |
-    You've completed the "branches and loops" quickstart.
+challenge:
+  uid: learn.intro-to-csharp.branches
+  type: quiz
