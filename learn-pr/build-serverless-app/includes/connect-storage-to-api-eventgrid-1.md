@@ -4,4 +4,4 @@ In this tutorial, you will:
 - Learn about Azure EventGrid
 - Set up EventGrid to process images that are uploaded to your website
 
-At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.
+At the end of the tutorial, you can check your knowledge with a quiz challenge.
