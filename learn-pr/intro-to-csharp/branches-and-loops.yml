@@ -43,5 +43,5 @@ items:
   content: |
     [!include[](includes/branches-and-loops-6.md)]
 challenge:
-  uid: learn.intro-to-csharp.branches
+  uid: learn.intro-to-csharp.branches-and-loops.quiz
   type: quiz
