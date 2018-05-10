@@ -35,5 +35,5 @@ items:
   content: |
     [!include[](includes/interpolated-strings-4.md)]
 challenge:
-  uid: learn.intro-to-csharp.interpolated
+  uid: learn.intro-to-csharp.interpolated-strings-in-csharp.quiz
   type: quiz

@@ -43,5 +43,5 @@ items:
   content: |
     [!include[](includes/numbers-in-csharp-6.md)]
 challenge: 
-  uid: learn.intro-to-csharp.numbers
+  uid: learn.intro-to-csharp.numbers-in-csharp.quiz
   type: quiz
