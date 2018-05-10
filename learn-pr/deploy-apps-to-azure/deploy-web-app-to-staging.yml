@@ -17,15 +17,15 @@ items:
 - durationInMinutes: 1
   content: |
     [!include[](includes/deploy-web-app-to-staging-1.md)]
-- title: Learn about Azure web app deployment slots
+- title: Learn about Azure Web App deployment slots
   durationInMinutes: 4
   content: |
     [!include[](includes/deploy-web-app-to-staging-2.md)]
-- title: Create a web app staging slot and deploy for review with a Team Services CI/CD pipeline
+- title: Create a Web App staging slot and deploy for review with a Team Services CI/CD pipeline
   durationInMinutes: 2
   content: |
     [!include[](includes/deploy-web-app-to-staging-3.md)]
-- title: Update a Team Services build definition to publish to a web app staging slot
+- title: Update a Team Services build definition to publish to a Web App staging slot
   durationInMinutes: 2
   content: |
     [!include[](includes/deploy-web-app-to-staging-4.md)]
