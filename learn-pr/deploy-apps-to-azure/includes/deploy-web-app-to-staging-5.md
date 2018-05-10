@@ -1,4 +1,4 @@
-As in the preceding tutorial, to see your CI/CD pipeline deploy to a staging slot, update the H1 in your app in Visual Studio. Commit and push the changes to see your app deployed to the web app staging slot in Azure:
+As in the preceding tutorial, to see your CI/CD pipeline deploy to a staging slot, update the H1 in your app in Visual Studio. Commit and push the changes to see your app deployed to the Web App staging slot in Azure:
 
 1. In Visual Studio, open the Solution Explorer window.
 2. Go to **myWebApp** > **Views** > **Home** > **Index.cshtml**.
@@ -14,6 +14,6 @@ As in the preceding tutorial, to see your CI/CD pipeline deploy to a staging slo
     - Select your build definition, and then select the **Queued & running** build to watch as the build progresses.  
 8. To see your changes applied when the build has successfully completed, refresh your staging website in a browser, such as *https://mywebapp-staging.azurewebsites.net*:
 
-    ![ASP.NET web app running in an Azure web app staging slot](../media/running-web-app-staging.png)
+    ![ASP.NET web app running in an Azure Web App staging slot](../media/running-web-app-staging.png)
 
 9. To confirm that your production site hasn't changed, refresh the production website in a browser.
