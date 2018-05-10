@@ -22,3 +22,4 @@ These settings are not swapped between deployment slots:
 - WebJobs schedulers
 
 Now, create a Web App staging slot and deploy it to review by using the Team Services CI/CD pipeline.
+

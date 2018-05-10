@@ -6,6 +6,7 @@ In this tutorial, you will:
 * Create an ASP.NET web app in Visual Studio
 * Deploy an Azure Web App from Visual Studio
 
+
 At the end of the tutorial, you can check your knowledge about this information with a quiz challenge.
 
 > [!NOTE]
