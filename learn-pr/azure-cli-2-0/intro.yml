@@ -7,7 +7,6 @@ metadata:
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  displayType: two-column
   interactive: azurecli
   author: barlanmsft
   ms.author: barlan
@@ -25,5 +24,5 @@ items:
   content: |
     [!include[](includes/login.md)]
 challenge:
-  uid: learn.azure-cli-2-0.combined-quiz.quiz
+  uid: learn.azure-cli-2-0.login.quiz
   type: quiz

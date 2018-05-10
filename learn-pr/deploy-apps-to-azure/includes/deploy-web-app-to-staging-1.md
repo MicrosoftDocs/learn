@@ -3,6 +3,7 @@ There's a chance that deploying your app straight to production will cause probl
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1ZnXk]
 
 In this tutorial, you will:
+
 - Learn about Azure web app deployment slots
 - Create a web app staging slot
 - Deploy a web app for review with a Team Services CI/CD pipeline

@@ -1,4 +1,4 @@
-Azure web app deployment slots are live apps that have their own host names. App content and configuration elements can be swapped between two deployment slots, including the production slot. Deploying your application to a deployment slot has the following benefits:
+Azure Web App deployment slots are live apps that have their own host names. App content and configuration elements can be swapped between two deployment slots, including the production slot. Deploying your application to a deployment slot has the following benefits:
 
 - You can validate app changes in a staging deployment slot before swapping it with the production slot.
 - Deploying an app to a slot first and then swapping it into production ensures that all instances of the slot are warmed up before being swapped into production. This eliminates downtime when you deploy your app. The traffic redirection is seamless, and no requests are dropped as a result of swap operations. You can automate this entire workflow by configuring auto swap when pre-swap validation isn't needed.
@@ -21,4 +21,4 @@ These settings are not swapped between deployment slots:
 - Scale settings
 - WebJobs schedulers
 
-Now, create a web app staging slot and deploy it to review by using the Team Services CI/CD pipeline.
+Now, create a Web App staging slot and deploy it to review by using the Team Services CI/CD pipeline.
