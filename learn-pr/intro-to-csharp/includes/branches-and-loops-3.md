@@ -4,8 +4,8 @@ Another important concept to create larger programs is **loops**. You'll use loo
 int counter = 0;
 while (counter < 10)
 {
-Console.WriteLine($"Hello World! The counter is {counter}");
-counter++;
+    Console.WriteLine($"Hello World! The counter is {counter}");
+    counter++;
 }
 ```
 
@@ -22,8 +22,8 @@ The `while` loop tests the condition before executing the code following the `wh
 int counter = 0;
 do
 {
-Console.WriteLine($"Hello World! The counter is {counter}");
-counter++;
+    Console.WriteLine($"Hello World! The counter is {counter}");
+    counter++;
 } while (counter < 10);
 ```
 
