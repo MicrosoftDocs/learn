@@ -8,7 +8,7 @@ metadata:
 units:
 - uid: learn.azure-cli-2-0.intro
   type: tutorial
-  durationInMinutes: 5
+  durationInMinutes: 10
 - uid: learn.azure-cli-2-0
   type: tutorial
   durationInMinutes: 30

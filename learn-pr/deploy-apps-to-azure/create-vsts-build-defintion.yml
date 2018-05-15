@@ -1,13 +1,12 @@
 ### YamlMime:Tutorial
 uid: learn.deploy-apps-to-azure.create-vsts-build-definition
-title: Create a VSTS build definition for CI/CD
+title: Create a Visual Studio Team Services build definition for CI/CD
 metadata:
-  title: Create a VSTS build definition for CI/CD
-  description: Learn how to create a build definition in VSTS for use with a CI/CD pipeline.
+  title: Create a Visual Studio Team Services build definition for CI/CD
+  description: Learn how to create a build definition in Visual Studio Team Services to use with a CI/CD pipeline.
   audience: Developer
   level: Beginner
   ms.topic: interactive-tutorial
-  displayType: one-column
   author: asajohnson
   ms.author: asjohnso
   ms.service: azure
@@ -18,15 +17,15 @@ items:
 - durationInMinutes: 1
   content: |
     [!include[](includes/create-vsts-build-definition-1.md)]
-- title: Learn about VSTS build definitions
+- title: Learn about Team Services build definitions
   durationInMinutes: 5
   content: |
     [!include[](includes/create-vsts-build-definition-2.md)]
-- title: Commit Visual Studio code to VSTS project
+- title: Commit Visual Studio code to a Team Services project
   durationInMinutes: 1
   content: |
     [!include[](includes/create-vsts-build-definition-3.md)]
-- title: Create and run a VSTS build
+- title: Create and run a Team Services build
   durationInMinutes: 4
   content: |
     [!include[](includes/create-vsts-build-definition-4.md)]

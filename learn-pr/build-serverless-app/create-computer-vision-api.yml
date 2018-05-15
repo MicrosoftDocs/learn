@@ -7,8 +7,6 @@ metadata:
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial
-  displayType: two-column
-  interactive: azurecli
   author: asajohnson
   ms.author: asjohnso
   ms.service:
@@ -29,4 +27,4 @@ items:
     [!include[](includes/create-computer-vision-api-3.md)]
 challenge:
   type: quiz
-  uid: learn.build-serverless-app.create-computer-vision-api.quiz
+  uid: learn.build-serverless-app.create-computer-vision-api.quiz 

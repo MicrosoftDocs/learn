@@ -1,10 +1,9 @@
-## Using Azure Functions
+The serverless solution that you're building uses three Azure functions. One of the functions is used by Azure Event Grid for new pictures that are uploaded and sent to be processed by the computer vision API. The other two functions back the APIs that the website uses, to upload images and retrieve the list of images.
 
-The serverless solution that you're building will use three Azure Functions. One of the Functions will be used by Event Grid for new pictures that are uploaded and send them over to be processed by the computer vision API. The other two will back the APIs that the website uses, to upload images and retrieve the list of images.
+In the tutorial, you will:
+- Learn about Azure functions.
+- Create Azure functions.
+- Hook your serverless app to your new functions.
 
-In this tutorial, you will:
-- Learn about Azure Functions
-- Create Azure Functions
-- Hook your serverless app to your new Functions
+At the end of the tutorial, you can check your knowledge about this information with a quiz challenge.
 
-At the end of the tutorial, you will also have the ability to check your knowledge about this information with a quiz challenge.

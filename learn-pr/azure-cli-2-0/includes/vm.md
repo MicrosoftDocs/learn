@@ -2,13 +2,14 @@ Virtual machines in Azure have a large number of dependencies. Azure CLI creates
 
 Create a new virtual machine that runs Ubuntu, which uses SSH authentication for log in.
 
-   ```azurecli
+   ```
    az vm create --resource-group TutorialResources \
       --name TutorialVM1 \
       --image UbuntuLTS \
       --generate-ssh-keys \
       --verbose 
    ```
+   
    > [!NOTE]
    > If you have an SSH key named `id_rsa` already available, use this key for authentication, rather than generating a new key.
 

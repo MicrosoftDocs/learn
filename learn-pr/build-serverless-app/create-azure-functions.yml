@@ -1,14 +1,12 @@
 ### YamlMime:Tutorial
-title: Create Azure Functions
+title: Create Azure functions
 uid: learn.build-serverless-app.create-azure-functions
 metadata:
-  title: Create Azure Functions
-  description: Learn about and create Azure Functions, then hook your serverless web app to your new functions.
+  title: Create Azure functions
+  description: Learn about and create Azure functions, and then hook your serverless web app to your new functions.
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial
-  displayType: two-column
-  interactive: azurecli
   author: asajohnson
   ms.author: asjohnso
   ms.service:
@@ -17,11 +15,11 @@ items:
 - durationInMinutes: 1
   content: |
     [!include[](includes/create-azure-functions-1.md)]
-- title: Learn about Azure Functions
+- title: Learn about Azure functions
   durationInMinutes: 2
   content: |
     [!include[](includes/create-azure-functions-2.md)]
-- title: Create Azure Functions
+- title: Create Azure functions
   durationInMinutes: 12
   content: |
     [!include[](includes/create-azure-functions-3.md)]
