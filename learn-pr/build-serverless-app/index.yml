@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.build-serverless-app
 title: Build a serverless web app in Azure
-description: Learn how to build a serverless website using Azure Storage, Cosmos DB, API Management Service and Functions.
+description: Learn how to build a serverless website by using Azure Storage, Cosmos DB, API Management Service, and Functions.
 iconUrl: /learn/media/achievements/build-a-stateless-web-app.svg
 metadata:
   title: Build a serverless web app in Azure
@@ -27,5 +27,5 @@ units:
 achievement:
   uid: learn.build-serverless-app.achievement
   name: "Build a serverless web app in Azure"
-  description: "First step completed towards a new life."
+  description: "First step completed toward a new life."
   imageUrl: /learn/media/achievements/build-a-stateless-web-app.svg
