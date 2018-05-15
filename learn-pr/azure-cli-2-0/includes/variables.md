@@ -4,7 +4,7 @@
 az network nic show --ids $NIC_ID -g TutorialResources
 ```
 
-This command shows all of the information for the network interface of the VM. This data includes DNS settings, IP information, security settings, and the MAC address. Right now the goal is to obtain the public IP address and subnet object IDs.
+This command shows all of the information for the network interface of the VM. This data includes DNS settings, IP information, security settings, and the MAC address. Right now, the goal is to obtain the public IP address and subnet object IDs.
 
 ```azurecli
 az network nic show --ids $NIC_ID \
@@ -23,9 +23,9 @@ az network nic show --ids $NIC_ID \
 }
 ```
 
-This command displays a JSON object that has custom keys ('IP' and 'Subnet') for the extracted values. While this style of output might not be useful for command-line tools, it helps with human readability and can be used with custom scripts.
+This command displays a JSON object that has custom keys ('IP' and 'Subnet') for the extracted values. While this style of output might not be useful for command-line tools, it helps with human readability, and you can use it with custom scripts.
 
-In order to use command-line tools, change the command to remove the custom JSON keys and output as `tsv`. This style of output can be processed by the shell `read` command to load results into multiple variables. Since two values on separate lines are displayed, the `read` command delimiter must be set to the empty string rather than the default of non-newline whitespace.
+In order to use command-line tools, change the command to remove the custom JSON keys, and output as `tsv`. This style of output can be processed by the shell `read` command to load results into multiple variables. Because two values on separate lines are displayed, you must set the `read` command delimiter to the empty string rather than the default of non-new line whitespace.
 
 ```bash
 read -d '' IP_ID SUBNET_ID <<< $(az network nic show \
@@ -34,7 +34,7 @@ read -d '' IP_ID SUBNET_ID <<< $(az network nic show \
   -o tsv)
 ```
 
-You won't use the subnet ID right away, but it should be stored now to avoid having to perform a second lookup later. For now, use the public IP object ID to look up the public IP address and store it in a shell variable.
+You won't use the subnet ID right away, but it should be stored now to avoid having to look it up later. For now, use the public IP object ID to look up the public IP address, and store it in a shell variable.
 
 ```bash
 VM1_IP_ADDR=$(az network public-ip show --ids $IP_ID \
