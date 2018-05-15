@@ -4,4 +4,4 @@ In the tutorial, you will:
 - Learn about Azure Cosmos DB.
 - Create an Azure Cosmos DB instance.
 
-At the end of the tutorial, you can check your knowledge about this information with a quiz challenge.
+At the end of the tutorial, you can check your knowledge with a quiz challenge.

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.deploy-custom-vmss-app
 title: Deploy apps to an Azure virtual machine scale set with a custom Packer image
-description: Learn how to deploy your apps from GitHub to an Azure virtual machine scale set created from a custom Packer image
+description: Learn how to deploy your apps from GitHub to an Azure virtual machine scale set created from a custom Packer image.
 iconUrl: /learn/media/achievements/deploy-vms-with-packer.svg
 metadata:
   title:  Deploy apps to an Azure virtual machine scale set with a custom Packer image
