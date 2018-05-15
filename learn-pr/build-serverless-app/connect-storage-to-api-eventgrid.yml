@@ -1,9 +1,9 @@
 ### YamlMime:Tutorial
-title: Connect Storage Account to API Event Grid
+title: Connect a storage account to the Event Grid API
 uid: learn.build-serverless-app.connect-storage-to-api-eventgrid
 metadata:
-  title: Connect Storage Account to API Event Grid
-  description: Learn how to use Event Grid to instantly trigger our Azure functions to run image analysis each time a new photo is added to our Storage container (when it was uploaded from the website).
+  title: Connect a storage account to the Event Grid API
+  description: Learn how to use Event Grid to instantly trigger your Azure functions to run an image analysis each time a new photo is added to your Storage container (when it was uploaded from the website).
   audience: Developer
   level: Intermediate
   ms.topic: interactive-tutorial
@@ -17,11 +17,11 @@ items:
 - durationInMinutes: 1
   content: |
     [!include[](includes/connect-storage-to-api-eventgrid-1.md)]
-- title: Learn about Azure EventGrid
+- title: Learn about Azure Event Grid
   durationInMinutes: 2
   content: |
     [!include[](includes/connect-storage-to-api-eventgrid-2.md)]
-- title: Set up EventGrid to process images
+- title: Set up Event Grid to process images
   durationInMinutes: 5
   content: |
     [!include[](includes/connect-storage-to-api-eventgrid-3.md)]
