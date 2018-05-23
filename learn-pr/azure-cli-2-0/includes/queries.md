@@ -26,7 +26,7 @@ The output format `tsv` (tab-separated values) is guaranteed to include only the
 
 Go ahead and assign the NIC object ID to an environment variable now.
 
-```bash
+```azurecli
 NIC_ID=$(az vm show -n TutorialVM1 -g TutorialResources \
   --query 'networkProfile.networkInterfaces[].id' \
   -o tsv)
