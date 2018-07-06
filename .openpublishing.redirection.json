@@ -17,7 +17,7 @@
     },
     {
         "source_path": "learn-pr/build-serverless-app/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/functions/interactive/first-serverless-interactive",
+        "redirect_url": "https://docs.microsoft.com/azure/functions/tutorial-static-website-serverless-api-with-database",
         "redirect_document_id": true
     },
     {
