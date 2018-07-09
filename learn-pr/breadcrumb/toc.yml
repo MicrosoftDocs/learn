@@ -3,3 +3,16 @@
   items:
   - name: Learn
     href: /learn/
+    items:
+    - name: Browse
+      href: /learn/browse/
+    - name: Paths
+      href: /learn/browse/
+      items:
+      - name: Sample Path
+        href: /learn/paths/sample-path/
+    - name: Modules
+      href: /learn/browse/
+      items:
+      - name: Sample Module
+        href: /learn/modules/sample-module/

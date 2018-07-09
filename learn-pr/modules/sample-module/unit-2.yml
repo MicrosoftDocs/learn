@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.sample-module.unit-2
+title: Sample Unit 2
+metadata:
+  title: Sample Unit 2 Page Title
+  description: Sample Unit 2 Description
+durationInMinutes: 11
+content: |
+  [!include[](includes/unit-2.md)]

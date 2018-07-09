@@ -1,0 +1,18 @@
+### YamlMime:Module
+uid: learn.sample-module
+title: Sample Module
+summary: This is the summary of the Sample Module
+cardDescription: This is the card description of the Sample Module
+iconUrl: http://via.placeholder.com/120x120
+level: intermediate
+role: developer
+product: Azure
+metadata:
+  title: Sample Module Page Title
+  description: Sample Module Page Description
+abstract: This is the abstract of the Sample Module
+units:
+- uid: learn.sample-module.unit-1
+  durationInMinutes: 12
+- uid: learn.sample-module.unit-2
+  durationInMinutes: 11
