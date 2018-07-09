@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+        "source_path": "learn/paths/index.md",
+        "redirect_url": "/learn/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn/modules/index.md",
+        "redirect_url": "/learn/browse/",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "learn-pr/intro-to-csharp/index.md",
         "redirect_url": "https://docs.microsoft.com/dotnet/csharp/quick-starts/",
         "redirect_document_id": true
