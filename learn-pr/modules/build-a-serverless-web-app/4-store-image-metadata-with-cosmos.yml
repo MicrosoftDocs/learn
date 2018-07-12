@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.build-a-serverless-web-app.4-store-image-metadata-with-cosmos
+title: Store image metadata with Cosmos DB
+metadata:
+  title: Store image metadata with Cosmos DB
+  description: Store image metadata with Cosmos DB
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-store-image-metadata-with-cosmos.md)]

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.build-a-serverless-web-app.7-test-and-cleanup
+title: Test and Cleanup
+metadata:
+  title: Test and Cleanup
+  description: Test and Cleanup
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-test-and-cleanup.md)]

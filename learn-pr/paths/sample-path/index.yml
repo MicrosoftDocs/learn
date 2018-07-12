@@ -14,3 +14,5 @@ metadata:
 modules:
 - uid: learn.sample-module
   durationInMinutes: 23
+- uid: learn.build-a-serverless-web-app
+  durationInMinutes: 23
