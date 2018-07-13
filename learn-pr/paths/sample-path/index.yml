@@ -12,7 +12,5 @@ metadata:
   title: Sample Learning Path Page Title
   description: Sample Learning Path Page Description
 modules:
-- uid: learn.sample-module
-  durationInMinutes: 23
-- uid: learn.build-a-serverless-web-app
-  durationInMinutes: 23
+- learn.sample-module
+- learn.build-a-serverless-web-app

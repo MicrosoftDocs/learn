@@ -12,7 +12,5 @@ metadata:
   description: Sample Module Page Description
 abstract: This is the abstract of the Sample Module
 units:
-- uid: learn.sample-module.unit-1
-  durationInMinutes: 12
-- uid: learn.sample-module.unit-2
-  durationInMinutes: 11
+- learn.sample-module.unit-1
+- learn.sample-module.unit-2
