@@ -1,16 +1,22 @@
 ### YamlMime:Module
-uid: learn.sample-module
-title: Sample Module
-summary: This is the summary of the Sample Module
-cardDescription: This is the card description of the Sample Module
-iconUrl: http://via.placeholder.com/120x120
-level: intermediate
-role: developer
-product: Azure
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.sample-module-cloudshell
 metadata:
   title: Sample Module Page Title
   description: Sample Module Page Description
+title: Sample Module with CloudShell
+summary: This is the summary of the Sample Module
 abstract: This is the abstract of the Sample Module
+cardDescription: This is the card description of the Sample Module
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: developer
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-- learn.sample-module.unit-1
-- learn.sample-module.unit-2
+- learn.sample-module-cloudshell.1-unit-text-only
+- learn.sample-module-cloudshell.2-unit-text-and-knowledge-check
+- learn.sample-module-cloudshell.3-unit-knowledge-check-only
+- learn.sample-module-cloudshell.4-unit-cloudshell-lab
