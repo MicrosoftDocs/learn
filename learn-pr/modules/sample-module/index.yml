@@ -2,8 +2,8 @@
 # Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
 uid: learn.sample-module-cloudshell
 metadata:
-  title: Sample Module Page Title
-  description: Sample Module Page Description
+  title: Sample Module with CloudShell
+  description: Sample Module Title Description
 title: Sample Module with CloudShell
 summary: This is the summary of the Sample Module
 abstract: This is the abstract of the Sample Module
