@@ -4,7 +4,11 @@ uid: learn.sample-module-cloudshell.2-unit-text-and-knowledge-check
 metadata:
   title: Sample Unit 2 - Text and Knowledge Check
   description: This unit is an example of text (no lab components) with a knowledge check.
+  displayType: one-column
 title: Sample Unit 2 - Text and Knowledge Check
 durationInMinutes: 11
 content: |
   [!include[](includes/2-unit-text-and-knowledge-check.md)]
+challenge:
+  uid: learn.sample-module-cloudshell.2-unit-text-and-knowledge-check.quiz
+  type: quiz
