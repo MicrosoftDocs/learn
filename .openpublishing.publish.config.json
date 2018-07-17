@@ -8,26 +8,18 @@
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
-        "/learn-quiz-pr",
         "/dotnet"
       ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
+        "Hub": "Content",
         "Module": "Content",
-        "ModuleList": "Content",
-        "Tutorial": "Content"
+        "ModuleUnit": "Content",
+        "LearningPath": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "TripleCrownValidation": {
-        "quizTag": "/learn-quiz-pr"
-      },
-      "customized_tasks": {
-        "docset_postbuild": [
-          "_dependentPackages/CommonPlugins/tools/TripleCrownValidation.ps1"
-        ]
-      }
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
@@ -45,16 +37,8 @@
       "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
   "targets": {},
-  "dependent_packages": [
-    {
-      "id": "Microsoft.OpenPublishing.CommonPlugins",
-      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
-      "path_to_root": "_dependentPackages/CommonPlugins",
-      "target_framework": "net45",
-      "version": "latest-prerelease"
-    }
-  ]
+  "dependent_packages": [],
+  "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false
 }

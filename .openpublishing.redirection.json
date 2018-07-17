@@ -1,0 +1,39 @@
+{
+  "redirections": [
+    {
+        "source_path": "learn/paths/index.md",
+        "redirect_url": "/learn/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn/modules/index.md",
+        "redirect_url": "/learn/browse/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/intro-to-csharp/index.md",
+        "redirect_url": "https://docs.microsoft.com/dotnet/csharp/quick-starts/",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "learn-pr/azure-cli-2-0/index.md",
+        "redirect_url": "https://docs.microsoft.com/cli/azure/get-started-with-azure-cli",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "learn-pr/build-serverless-app/index.md",
+        "redirect_url": "https://docs.microsoft.com/azure/functions/tutorial-static-website-serverless-api-with-database",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "learn-pr/deploy-apps-to-azure/index.md",
+        "redirect_url": "https://docs.microsoft.com/azure/app-service/",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "learn-pr/deploy-custom-vmss-app/index.md",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-cli",
+        "redirect_document_id": false
+    }
+   ]
+}
