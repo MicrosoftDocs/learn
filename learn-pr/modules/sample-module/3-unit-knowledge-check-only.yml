@@ -4,7 +4,9 @@ uid: learn.sample-module-cloudshell.3-unit-knowledge-check-only
 metadata:
   title: Sample Unit 3 - Knowledge Check Only
   description: This is an example of a unit that only contains a knowledge check.
+  displayType: one-column
 title: Sample Unit 3 - Knowledge Check Only
 durationInMinutes: 11
-content: |
-  [!include[](includes/3-unit-knowledge-check-only.md)]
+challenge:
+  uid: learn.sample-module-cloudshell.3-unit-knowledge-check-only.quiz
+  type: quiz
