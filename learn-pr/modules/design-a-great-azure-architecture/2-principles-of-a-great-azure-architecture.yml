@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-great-azure-architecture.2-principles-of-a-great-azure-architecture
+title: Principles of a great Azure Architecture
+metadata:
+  title: Principles of a great Azure Architecture
+  description: Principles of a great Azure Architecture
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-principles-of-a-great-azure-architecture.md)]
+challenge:
+  uid: learn.design-a-great-azure-architecture.2-principles-of-a-great-azure-architecture.quiz
+  type: quiz

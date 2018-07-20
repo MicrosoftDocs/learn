@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-great-azure-architecture.3-design-for-security
+title: Design for security
+metadata:
+  title: Design for security
+  description: Design for security
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-design-for-security.md)]
+challenge:
+  uid: learn.design-a-great-azure-architecture.3-design-for-security.quiz
+  type: quiz

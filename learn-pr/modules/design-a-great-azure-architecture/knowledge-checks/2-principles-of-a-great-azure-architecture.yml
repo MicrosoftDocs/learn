@@ -1,0 +1,18 @@
+### YamlMime:Quiz
+### Note: Make sure to change up the quiz answers so that the answer is not always the first, second, or third choice.
+uid: learn.design-a-great-azure-architecture.2-principles-of-a-great-azure-architecture.quiz
+title: Title of my quiz
+description: Description of my quiz.
+questions:
+- content: Question 1
+  choices:
+  - content: <Answer Option 1>
+    isCorrect: true
+  - content: <Answer Option 2>
+    explanation: <Explanation about why this choice is wrong, to help the learner.>
+- content: Question 2
+  choices:
+  - content: <Answer Option 1>
+    isCorrect: true
+  - content: <Answer Option 2>
+    explanation: <Explanation about why this choice is wrong, to help the learner.>
