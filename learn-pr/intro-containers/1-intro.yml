@@ -5,7 +5,6 @@ metadata:
   description: Introduction to containers.
   displayType: one-column
 title: Introduction to containers
-items:
 - durationInMinutes: 15
   content: |
     [!include[](includes/1-intro/intro.md)]
