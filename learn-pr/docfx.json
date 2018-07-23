@@ -2,6 +2,13 @@
   "build": {
     "content": [
       {
+        "src": "azure",
+        "files": [
+          "**.yml"
+        ],
+        "dest": "modules"
+      },
+      {
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -15,7 +22,7 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
-          "modules/sample-module/**",
+          "azure/sample-module/**",
           "paths/sample-path/**"
         ]
       }
@@ -32,7 +39,7 @@
           "**/includes/**",
           "_themes/**",
           "_themes.pdf/**",
-          "modules/sample-module/**",
+          "azure/sample-module/**",
           "paths/sample-path/**"
         ]
       }
