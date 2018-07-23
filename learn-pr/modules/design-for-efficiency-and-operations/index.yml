@@ -1,0 +1,25 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.design-a-great-azure-architecture
+metadata:
+  title: Design a great Azure architecture
+  description: In this module, we'll discuss key concepts to make your architecture a success on Azure.
+title: Design a great Azure architecture
+summary: In this module, we'll discuss key concepts to make your architecture a success on Azure. (this will show on the module card)
+abstract: In this module, we'll discuss key concepts to make your architecture a success on Azure.
+cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: solutions architect
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.design-a-great-azure-architecture.1-introduction
+- learn.design-a-great-azure-architecture.2-principles-of-a-great-azure-architecture
+- learn.design-a-great-azure-architecture.3-design-for-security
+- learn.design-a-great-azure-architecture.4-design-for-performance-and-scalability
+- learn.design-a-great-azure-architecture.5-design-for-availability-and-recoverability
+- learn.design-a-great-azure-architecture.6-design-for-efficiency-and-operations
+- learn.design-a-great-azure-architecture.7-summary
