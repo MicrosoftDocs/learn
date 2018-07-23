@@ -21,9 +21,7 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "azure/sample-module/**",
-          "paths/sample-path/**"
+          "ThirdPartyNotices"
         ]
       }
     ],
@@ -38,9 +36,7 @@
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
-          "_themes.pdf/**",
-          "azure/sample-module/**",
-          "paths/sample-path/**"
+          "_themes.pdf/**"
         ]
       }
     ],
