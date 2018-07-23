@@ -1,0 +1,8 @@
+### YamlMime:ModuleUnit
+uid: learn.use-terraform-azure.configure-local
+metadata:
+  title: Configure a local container development environment
+  description: Configure a local container development environment.
+  displayType: one-column
+title: Configure a local container development environment
+durationInMinutes: 15
