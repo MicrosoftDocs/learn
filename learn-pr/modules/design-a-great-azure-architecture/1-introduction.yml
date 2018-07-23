@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-great-azure-architecture.1-introduction
+title: Design a great Azure architecture
+metadata:
+  title: Design a great Azure architecture
+  description: Design a great Azure architecture
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
