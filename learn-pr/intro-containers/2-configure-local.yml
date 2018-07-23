@@ -5,6 +5,7 @@ metadata:
   description: Configure a local container development environment.
   displayType: one-column
 title: Configure a local container development environment
-durationInMinutes: 15
-content: |
-  [!include[](includes/1-intro/intro.md)]
+items:
+- durationInMinutes: 15
+  content: |
+    [!include[](includes/1-intro/intro.md)]
