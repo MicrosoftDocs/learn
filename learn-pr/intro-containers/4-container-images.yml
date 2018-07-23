@@ -6,3 +6,5 @@ metadata:
   displayType: one-column
 title: Create a custom container image
 durationInMinutes: 15
+content: |
+  [!include[](includes/1-intro/intro.md)]
