@@ -1,21 +1,12 @@
 ### YamlMime:Module
 uid: learn.intro-to-containers
 title: Introduction to containers on Azure
-# description: Learn fondational container concepts for running containers in Azure.
 iconUrl: http://via.placeholder.com/120x120
 metadata:
   title:  Introduction to containers on Azure
 units:
-- uid: learn.intro-to-containers.intro
-  type: tutorial
-  durationInMinutes: 15
-- uid: learn.intro-to-containers.configure-local
-  type: tutorial
-  durationInMinutes: 15
-- uid: learn.intro-to-containers.basic-operations
-  type: tutorial
-  durationInMinutes: 15
-- uid: learn.intro-to-containers.container-images
-  type: tutorial
-  durationInMinutes: 15
+- learn.intro-to-containers.intro
+- learn.intro-to-containers.configure-local
+- learn.intro-to-containers.basic-operations
+- learn.intro-to-containers.container-images
 achievement: learn.sample-module-cloudshell.badge
