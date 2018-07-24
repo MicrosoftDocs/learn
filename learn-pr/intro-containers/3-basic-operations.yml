@@ -5,6 +5,6 @@ metadata:
   description: Basic container operations.
   displayType: one-column
 title: Basic container operations
-- durationInMinutes: 15
-  content: |
-    [!include[](includes/1-intro/intro.md)]
+durationInMinutes: 15
+content: |
+  [!include[](includes/1-intro/intro.md)]
