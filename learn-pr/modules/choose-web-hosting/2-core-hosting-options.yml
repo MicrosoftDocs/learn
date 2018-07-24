@@ -7,3 +7,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/2-core-hosting-options.md)]
+  achievement: learn.build-a-serverless-web-app.badge

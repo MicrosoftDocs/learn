@@ -7,3 +7,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/4-web-app-proprietary.md)]
+  achievement: learn.build-a-serverless-web-app.badge
