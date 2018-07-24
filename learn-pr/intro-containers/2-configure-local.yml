@@ -7,4 +7,4 @@ metadata:
 title: Configure a local container development environment
 durationInMinutes: 15
 content: |
-  [!include[](includes/1-intro/intro.md)]
+  [!include[](includes/2-configure-local/configure-local.md)]

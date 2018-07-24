@@ -7,4 +7,4 @@ metadata:
 title: Basic container operations
 durationInMinutes: 15
 content: |
-  [!include[](includes/1-intro/intro.md)]
+  [!include[](includes/3-basic-operations/basic-operations.md)]
