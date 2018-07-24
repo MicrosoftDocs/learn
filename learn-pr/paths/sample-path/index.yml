@@ -12,6 +12,6 @@ metadata:
   title: Sample Learning Path Page Title
   description: Sample Learning Path Page Description
 modules:
-- learn.sample-module
+- learn.sample-module-cloudshell
 - learn.build-a-serverless-web-app
 achievement: learn.sample-path.trophy
