@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-to-containers
 title: Introduction to containers on Azure
-description: Learn fondational container concepts for running containers in Azure.
+# description: Learn fondational container concepts for running containers in Azure.
 iconUrl: http://via.placeholder.com/120x120
 metadata:
   title:  Introduction to containers on Azure
