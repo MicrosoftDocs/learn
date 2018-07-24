@@ -1,7 +1,13 @@
 ### YamlMime:Module
 uid: learn.intro-to-containers
 title: Introduction to containers on Azure
+summary: Introduction to containers on Azure
+abstract: Introduction to containers on Azure
+cardDescription: Introduction to containers on Azure
 iconUrl: http://via.placeholder.com/120x120
+level: intermediate
+role: developer
+product: Azure
 metadata:
   title:  Introduction to containers on Azure
 units:
