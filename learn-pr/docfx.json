@@ -27,6 +27,15 @@
     ],
     "resource": [
       {
+        "src": "azure",
+        "files": [
+          "**/*.png",
+          "**/*.svg",
+          "**/*.jpg"
+        ],
+        "dest": "modules"
+      },
+      {
         "files": [
           "**/*.png",
           "**/*.svg",
