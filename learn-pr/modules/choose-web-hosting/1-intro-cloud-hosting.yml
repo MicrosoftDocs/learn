@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-web-hosting.1-intro-cloud-hosting
+title: Introduction to cloud hosting
+metadata:
+  title: Introduction to cloud hosting
+  description: Introduction to cloud hosting
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-intro-cloud-hosting.md)]

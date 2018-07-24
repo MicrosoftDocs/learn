@@ -1,0 +1,25 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.choose-web-hosting
+metadata:
+  title: Choose a Web Hosting Option in Azure 
+  description: In this module, you will decide which Azure hosting product is the best match for your web application.
+title: Choose a Web Hosting Option in Azure
+summary: In this module, you will decide which Azure hosting product is the best match for your web application.
+abstract: In this module, you will decide which Azure hosting product is the best match for your web application.
+cardDescription: In this module, you will decide which Azure hosting product is the best match for your web application.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: developer
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.choose-web-hosting.1-intro-cloud-hosting
+- learn.choose-web-hosting.2-core-hosting-options
+- learn.choose-web-hosting.3-web-app-decision
+- learn.choose-web-hosting.4-web-app-proprietary
+- learn.choose-web-hosting.5-hosting-microservice
+- learn.choose-web-hosting.6-smb
+- learn.choose-web-hosting.7-summary
