@@ -15,4 +15,4 @@ units:
 - learn.intro-to-containers.configure-local
 - learn.intro-to-containers.basic-operations
 - learn.intro-to-containers.container-images
-achievement: learn.sample-module-cloudshell.badge
+# achievement: learn.sample-module-cloudshell.badge
