@@ -1,12 +1,34 @@
 # Basic Docker operations
 
-Now that you have a functioning container development environment, lets take a quick spin through some basic container operations. This is not a complete list Docker operations (not even close). This unit will prepare you to run, list, and delete containers. Throughout the remainder of this learning path, you will gain additional exposure to container operations.
+Now that you have a functioning container development environment, lets take a quick spin through some basic container operations. This is not a complete list Docker capabilities (not even close). This unit will prepare you to run, list, and delete containers. Throughout the remainder of this learning path, you will gain additional exposure to container operations.
+
+## Run a basic container
+
+Before digging into the details of running and managing containers, lets quickly see just how easy it is to run a hello world container. Create your first container with the following command.
+
+```bash
+docker run alpine echo "Hello World"
+```
+You should see output similar to the following. 
+
+```
+Unable to find image 'alpine:latest' locally
+latest: Pulling from library/alpine
+8e3ba11ec2a2: Pull complete 
+Digest: sha256:7043076348bf5040220df6ad703798fd8593a0918d06d3ce30c6c93be117e430
+Status: Downloaded newer image for alpine:latest
+Hello World
+```
+
+The `docker run` command creates an instance of a container. In this case, the container was created from a container image named `alpine`, which was downloaded to your local system. Once the container started, the `echo "Hello World"` command was run inside of the container and the output echoed to your terminal. Once the `echo` process has completed, the container was stopped.
+
+At this point, do not worry about the technical details of each of these actions, they will be detailed throughout this tutorial.
 
 ## Get container images
 
-Every container is run from a container image. These images include the container base operating system and any additional processes, applications, and configurations. Container images are stored in a container image registry and can be managed using the Docker CLI.
+As was seen in the hello world example, containers are run from a container image. These images include the container base operating system and any additional processes, applications, and configurations. Container images are stored in a container image registry. In the case of the hello world example, the `alpine` image was auto-pulled from Docker Hub, which is a public container registry. Later on in this tutorial you will learn about Azure Container Registry (ACR) which is an Azure hosted, private container registry.
 
-Before running your first container, lets see how to search for and download a pre-created container image.
+Lets see how to search for and download a pre-created container image.
 
 Run the following command to see a list of images that have been downloaded to your system.
 
@@ -14,10 +36,11 @@ Run the following command to see a list of images that have been downloaded to y
 docker images
 ```
 
-If this is a new container environment, the list may be empty, that is ok.
+If you have been following along, you should see that alpine image. This image was auto-downloaed when the hello world example was run.
 
 ```bash
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+alpine              latest              11cd0b38bc3c        2 weeks ago         4.41MB
 ```
 
 To search for a container image, use the `docker search` command. For instance, use the following example to list all container images that include `nginx` in the name.
@@ -26,7 +49,7 @@ To search for a container image, use the `docker search` command. For instance, 
 docker search nginx
 ```
 
-Example output.
+The output should look similar to the following.
 
 ```
 NAME                                                   DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
@@ -57,13 +80,13 @@ ansibleplaybookbundle/nginx-apb                        An APB to deploy NGINX   
 mailu/nginx                                            Mailu nginx frontend                            0                                       [OK]
 ```
 
-Before a container can be run, the source container image must be downloaded to the system on which the container will be run. One option is to manually download the image using the `docker pull` command. Use the following example to pull the `nginx` image to your system. Later on in this unit you will see another option for downloading container images.
+If you would like to pre-download an image prior to running it, use the `docker pull` command. The following example pulls the `nginx` image to your system.
 
 ```bash
 docker pull nginx
 ```
 
-Example output.
+The output should look similar to the following.
 
 ```
 Using default tag: latest
@@ -73,22 +96,23 @@ f2f27ed9664f: Extracting [===============>                                   ]  
 54ff137eb1b2: Download complete
 ```
 
-Run `docker images` again to list all images on your system. You should see now see the `nginx` image.
+Run `docker images` again to list all images on your system. You should see now see that the `nginx` image has been added to your system.
 
 ```bash
 docker images
 ```
 
-Example output.
+The output should look similar to the following.
 
 ```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-nginx              latest              8b89e48b5f15        4 days ago          109MB
+nginx               latest              c82521676580        26 hours ago        109MB
+alpine              latest              11cd0b38bc3c        2 weeks ago         4.41MB
 ```
 
 ## Run containers
 
-Now that you have identified and downloaded a container image, run a container using the image. When using the Docker CLI to run container image, use the `docker run` command.
+Now that you have identified and downloaded the `nginx` image, run a container from the image. When using the Docker CLI to run container image, use the `docker run` command.
 
 In the following example, the `-d` argument specifies that the container will in a detached mode. In this configuration, the container runs a specified process. If that process stops or crashes, the container itself is stopped. The `-p 8080:80` argument species that network traffic arriving to port 8080 on the container host, your development system in this case, is forwarded to port 80 if the container. Finally, the `ngingx` argument is the name of the container image to be run.
 
@@ -119,7 +143,7 @@ bd2424bfe7a5        nginx               "nginx -g 'daemon of…"   37 minutes ag
 
 To test the container, open up an internet browser and enter http://localhost:8080 for the address. Once completed, you should see the NGINX default website.
 
-<insert image>
+![Microsoft Edge with the NGINX splash screen](../../images/nginx.png)
 
 ## Delete containers
 
@@ -147,7 +171,7 @@ Notice at this point, if you run `docker ps` to list all containers, that the ng
 docker ps
 ```
 
-Output.
+The output should look similar to the following.
 
 ```bash
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
@@ -159,7 +183,7 @@ To return a list of all containers including those is a stopped state, add the `
 $ docker ps -a
 ```
 
-Output.
+The output should look similar to the following.
 
 ```bash
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
@@ -188,7 +212,7 @@ Remove the NGINX container image with the following command.
 docker rmi nginx
 ```
 
-Output.
+The output should look similar to the following.
 
 ```bash
 Untagged: nginx:latest
