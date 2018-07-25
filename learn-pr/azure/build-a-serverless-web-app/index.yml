@@ -6,7 +6,6 @@ cardDescription: In this module, you will deploy a simple web application that p
 iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
 level: intermediate
 # achievement is currently a placeholder and will need to be updated
-achievement: learn.placeholder.trophy
 role: developer
 product: Azure
 metadata:
