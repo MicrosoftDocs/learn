@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.build-a-serverless-web-app
 title: Build a serverless web app
-summary: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
+summary: In this module, you will deploy a web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
 cardDescription: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
 iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
 level: intermediate
