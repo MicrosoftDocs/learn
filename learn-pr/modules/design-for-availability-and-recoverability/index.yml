@@ -1,0 +1,25 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.design-for-availability-and-recoverability
+metadata:
+  title: Design for availability and recoverability
+  description: In this module, we'll discuss key concepts to make your application highly available and able to recover from failures
+title: Design for availability and recoverability
+summary: In this module, we'll discuss key concepts to make your application highly available and able to recover from failures (this will show on the module card)
+abstract: In this module, we'll discuss key concepts to make your application highly available and able to recover from failures
+cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: solutionsArchitect
+# achievement is currently a placeholder and will need to be updated
+achievement: learn.placeholder.trophy
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.design-for-availability-and-recoverability.1-introduction
+- learn.design-for-availability-and-recoverability.2-high-availability
+- learn.design-for-availability-and-recoverability.3-disaster-recovery
+- learn.design-for-availability-and-recoverability.4-backup-and-restore
+- learn.design-for-availability-and-recoverability.5-summary
