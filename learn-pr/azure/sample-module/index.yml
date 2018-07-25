@@ -20,3 +20,4 @@ units:
 - learn.sample-module-cloudshell.2-unit-text-and-knowledge-check
 - learn.sample-module-cloudshell.3-unit-knowledge-check-only
 - learn.sample-module-cloudshell.4-unit-cloudshell-lab
+achievement: learn.sample-module-cloudshell.badge

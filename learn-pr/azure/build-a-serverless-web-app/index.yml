@@ -3,7 +3,7 @@ uid: learn.build-a-serverless-web-app
 title: Build a serverless web app
 summary: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
 cardDescription: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
-iconUrl: /learn/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
 level: intermediate
 role: developer
 product: Azure
@@ -19,3 +19,4 @@ units:
 - learn.build-a-serverless-web-app.5-add-captions-with-computer-vision
 - learn.build-a-serverless-web-app.6-add-authentication
 - learn.build-a-serverless-web-app.7-test-and-cleanup
+achievement: learn.build-a-serverless-web-app.badge
