@@ -6,7 +6,7 @@ metadata:
   description: In this unit we'll discuss the pricinciples of high availability within and between regions
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-high-avilability.md)]
+  [!include[](includes/2-high-availability.md)]
 quiz:
   title: 'Quiz Title'
   questions:
