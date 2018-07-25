@@ -12,7 +12,7 @@ cardDescription: This is the card description of the Sample Module (this will sh
 iconUrl: http://via.placeholder.com/120x120
 # Review the Docs Contributor Guide for levele, role, and product options
 level: intermediate
-role: solutions architect
+role: solution architect
 product: Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
