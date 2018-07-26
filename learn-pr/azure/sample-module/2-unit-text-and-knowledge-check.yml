@@ -9,6 +9,14 @@ title: Sample Unit 2 - Text and Knowledge Check
 durationInMinutes: 11
 content: |
   [!include[](includes/2-unit-text-and-knowledge-check.md)]
-challenge:
-  uid: learn.sample-module-cloudshell.2-unit-text-and-knowledge-check.quiz
-  type: quiz
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'What this markdown file talking about:'
+    choices:
+    - content: Brainstorming of markdown file format for quiz.
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Brainstorming of markdown file format for quiz. Part 2
+      isCorrect: false
