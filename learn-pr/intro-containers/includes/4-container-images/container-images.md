@@ -17,10 +17,10 @@ In this first example, you start an instance of a container running NGINX, modif
 
 First, run a container from the NGINX image. This command looks a bit different than the commands run in the previous unit. Because you want to establish a terminal session with the running container, the `-t` and `-i` arguments are provided. Together these arguments instruct Docker to allocate a pseudo terminal that will remain in a runnings state. Or in other words `-t` and `-i` create am omteractve session with the running containers.
 
-You then specify that the `nginx` container image is used, and that the process to run inside of the container is `bash`.
+You then specify that the `python` container image is used, and that the process to run inside of the container is `bash`.
 
 ```bash
-docker run -t -i nginx bash
+docker run --name python-demo -ti python bash
 ```
 
 One the command has been run, your terminal session should switch to the containers psudo-terminal. This can be seen by the terminal prompt, which should have changed to something similar to the following.
@@ -30,23 +30,40 @@ root@d8ccada9c61e:/#
 ```
 
 ```bash
-<update the default page>
+echo 'print("Hello World!")' > hello.py
 ```
 
 ```bash
-docker ls -a
+exit
 ```
 
 ```bash
-docker capture <container> nginx-custom
+docker ps -a
+```
+
+```bash
+docker commit python-demo python-custom
 ```
 
 ```bash
 docker images
 ```
 
+You should now see the custom python image.
+
 ```bash
-docker run -d -p 8080 nginx-custom
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+python-custom       latest              1f231e7127a1        6 seconds ago       922MB
+python              latest              638817465c7d        24 hours ago        922MB
+alpine              latest              11cd0b38bc3c        2 weeks ago         4.41MB
+```
+
+```bash
+docker run python-custom python hello.py
+```
+
+```bash
+Hello World!
 ```
 
 ## Automated image creation
@@ -54,21 +71,68 @@ docker run -d -p 8080 nginx-custom
 Create a file named `Dockerfile` and enter the following text.
 
 ```bash
-FROM nginx
+FROM python
 
-RUN
+WORKDIR ./app
 
-ETC..
+RUN echo 'print("Hello World!")' > hello.py
+
+CMD python hello.py
 ```
+
+Use the `docker build` command to create a new container image using the instructions specified in the Dockerfile.
 
 ```bash
-docker build -t nginx-custom-dockerfile
+docker build -t python-dockerfile .
 ```
+
+You should see output similar to the following.
+
+```bash
+Sending build context to Docker daemon  2.048kB
+Step 1/4 : FROM python
+ ---> 638817465c7d
+Step 2/4 : WORKDIR ./app
+ ---> Running in 990d17e86466
+Removing intermediate container 990d17e86466
+ ---> 59a074a092cc
+Step 3/4 : RUN echo 'print("Hello World!")' > hello.py
+ ---> Running in aed707c53bc5
+Removing intermediate container aed707c53bc5
+ ---> d7f55a9d0e85
+Step 4/4 : CMD python hello.py
+ ---> Running in e87ec55a8d36
+Removing intermediate container e87ec55a8d36
+ ---> 98c39b91770f
+Successfully built 98c39b91770f
+Successfully tagged python-dockerfile:latest
+```
+
+Use the `docker images` command to return a list of container images.
+
 
 ```bash
 docker images
 ```
 
+You should now see the custom image.
+
 ```bash
-docker run -d -p 8080 nginx-custom-dockerfile
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+python-dockerfile   latest              98c39b91770f        About a minute ago   922MB
+python              latest              638817465c7d        26 hours ago         922MB
+alpine              latest              11cd0b38bc3c        2 weeks ago          4.41MB
+```
+
+Use the `docker run` command to run a container from the custom image. Notice here that no arguments have been provided to the `docker run` command. Unlike when manually creating a container image, a Dockerfile allows you to include a command to be run when the container starts. In this case, the specified command is  , which causes the container to run the Python script, which outputs `Hello World!`. Also notice, once the command has run, the container stops.
+
+
+```bash
+docker run python-dockerfile
+```
+
+After running the command, you should see the container output.
+
+```bash
+Hello World!
 ```
