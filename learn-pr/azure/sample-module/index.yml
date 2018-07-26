@@ -4,15 +4,15 @@ uid: learn.sample-module-cloudshell
 # `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>. Keep it easy on yourself and keep the module-short-name the same as the module folder name.
 metadata:
 # HTML metadata for search engines
-  title: Sample Module with CloudShell
-  description: Sample Module Title Description
-title: Sample Module with CloudShell
+  title: Sample module with CloudShell
+  description: Sample module title description
+title: Sample module with CloudShell
 # `title` appears in the header, ToC, and breadcrumbs
-summary: This is the summary of the Sample Module
+summary: This is the summary of the sample module
 # `summary` appears at the top of the module page beneath the title
-abstract: This is the abstract of the Sample Module
+abstract: This is the abstract of the sample module
 # `abstract` appears on the module page beneath the summary and level/role/product metadata 
-cardDescription: This is the card description of the Sample Module
+cardDescription: This is the card description of the sample module
 # `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
 # `iconUrl` is the badge image 

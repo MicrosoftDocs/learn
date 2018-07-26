@@ -1,12 +1,16 @@
 ### YamlMime:ModuleUnit
-# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
+# YML code for unit
 uid: learn.sample-module-cloudshell.1-unit-text-only
+# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
 metadata:
-  title: Sample Unit 1 - Text Only
+# Search engine metadata
+  title: Sample unit 1 - text only
   description: This is a sample of "text-only" content (no lab or knowledge check components).
   displayType: one-column
-title: Sample Unit 1 - Text Only
+title: Sample unit 1 - Text only
+# `title` appears in the header, ToC, and breadcrumbs
 durationInMinutes: 11
+# `durationInMinutes` is manually created by the writer
 content: |
-  # Even though there is only one markdown (MD) file and this is a text-only unit, keep the markdown separate in the includes folder so that viewing the source content is a consistent experience.
+  # Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
   [!include[](includes/1-unit-text-only.md)]
