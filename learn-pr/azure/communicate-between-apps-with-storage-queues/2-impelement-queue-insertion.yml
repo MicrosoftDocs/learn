@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.communicate-between-apps-with-storage-queues.2-implement-queue-insertion
+title: Implement queue insertion
+metadata:
+  title: Implement queue insertion
+  description: Implement queue insertion
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-implement-queue-insertion.md)]
+  achievement: learn.communicate-between-apps-with-storage-queues.badge

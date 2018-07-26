@@ -1,0 +1,23 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.communicate-between-apps-with-storage-queues
+metadata:
+  title: Communicate between applications with an Azure storage queue 
+  description: In this module, we'll discuss about the asynchronous communication between applications using the Azure storage queues.
+title: Communicate between applications with an Azure storage queue
+summary: In this module, we'll discuss about the asynchronous communication between applications using the Azure storage queues.
+abstract: In this module, we'll discuss about the asynchronous communication between applications using the Azure storage queues.
+cardDescription: In this module, we'll discuss about the asynchronous communication between applications using the Azure storage queues.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: developer
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.communicate-between-apps-with-storage-queues.1-create-storage-infrastructure
+- learn.communicate-between-apps-with-storage-queues.2-impelement-queue-insertion
+- learn.communicate-between-apps-with-storage-queues.3-implement-dequeue
+- learn.communicate-between-apps-with-storage-queues.4-knowledge-check
+achievement: learn.communicate-between-apps-with-storage-queues.badge

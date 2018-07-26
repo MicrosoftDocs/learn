@@ -30,4 +30,13 @@ achievements:
   title: Migrate SQL serer relational data to Azure SQL
   summary: Migrate SQL serer relational data to Azure SQL
   iconUrl: http://via.placeholder.com/120x120
-
+- uid: learn.communicate-between-apps-with-storage-queues.badge
+  type: badge
+  title: Communicate between applications with an Azure storage queue Badge
+  summary: Communicate between applications with an Azure storage queue Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-a-windows-vm-in-azure.badge
+  type: badge
+  title: Create a Windows virtual machine in Azure Badge
+  summary: Create a Windows virtual machine in Azure Summary
+  iconUrl: http://via.placeholder.com/120x120

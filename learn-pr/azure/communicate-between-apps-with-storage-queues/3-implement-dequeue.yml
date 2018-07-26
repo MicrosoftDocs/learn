@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.communicate-between-apps-with-storage-queues.3-implement-dequeue
+title: Implement dequeue
+metadata:
+  title: Implement dequeue
+  description: Implement dequeue
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-implement-dequeue.md)]
+  achievement: learn.communicate-between-apps-with-storage-queues.badge
