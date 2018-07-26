@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-web-hosting.2-web-app-decision
+uid: learn.choose-web-hosting.3-web-app-decision
 title: Decide if Azure Web App hosting is right for your web application 
 metadata:
   title: Decide if Azure Web App hosting is right for your web application  
@@ -7,4 +7,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/3-web-app-decision.md)]
-  achievement: learn.build-a-serverless-web-app.badge
+  achievement: learn.choose-web-hosting.badge
