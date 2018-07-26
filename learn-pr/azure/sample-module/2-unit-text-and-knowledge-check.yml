@@ -14,7 +14,6 @@ durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
 content: |
   [!include[](includes/2-unit-text-and-knowledge-check.md)]
-  # Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
 quiz:
   title: 'Quiz title'
   questions:
@@ -28,3 +27,4 @@ quiz:
       isCorrect: false
     - content: Brainstorming of markdown file format for quiz. Part 2
       isCorrect: false
+# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
