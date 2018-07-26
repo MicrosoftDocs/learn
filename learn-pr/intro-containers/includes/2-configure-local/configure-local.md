@@ -1,5 +1,3 @@
-# Configure a local container development system
-
 Before running a container or container-integrated application in Azure, you will mostly likely work in a local development environment such as your laptop. This unit help you prepare your system for container development.
 
 ## Docker for Windows and Mac

@@ -1,5 +1,3 @@
-# Basic Docker operations
-
 Now that you have a functioning container development environment, lets take a quick spin through some basic container operations. This is not a complete list Docker capabilities (not even close). This unit will prepare you to run, list, and delete containers. Throughout the remainder of this learning path, you will gain additional exposure to container operations.
 
 ## Run a basic container
@@ -9,12 +7,12 @@ Before digging into the details of running and managing containers, lets quickly
 ```bash
 docker run alpine echo "Hello World"
 ```
-You should see output similar to the following. 
+You should see output similar to the following.
 
 ```
 Unable to find image 'alpine:latest' locally
 latest: Pulling from library/alpine
-8e3ba11ec2a2: Pull complete 
+8e3ba11ec2a2: Pull complete
 Digest: sha256:7043076348bf5040220df6ad703798fd8593a0918d06d3ce30c6c93be117e430
 Status: Downloaded newer image for alpine:latest
 Hello World

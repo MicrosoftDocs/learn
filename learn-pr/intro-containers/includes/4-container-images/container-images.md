@@ -1,5 +1,3 @@
-# Creating custom container images
-
 In the last unit, you worked with pre-created container images to perform some basic Docker operations. In this unit you will create custom container images, push these images to a public container registry, and run containers from these images.
 
 Container images can be created by hand or using what is called a Dockerfile to automate the process. The preferred method is using a Dockerfile, however this unit will demonstrate both. The intention is that having an understanding of the manual process will help you better understand what is occourign when using a Dockerfile for automaton.
@@ -29,21 +27,68 @@ One the command has been run, your terminal session should switch to the contain
 root@d8ccada9c61e:/#
 ```
 
+At this point, you are working inside of the container. You shoudl find that working inside of a container is very much like working inside of a virtual or physical system. For instance you can list, create, and delete files, install software, and make configuration changes. For this simple example, a Python based hello world script is created. This can be done with the following command.
+
 ```bash
 echo 'print("Hello World!")' > hello.py
 ```
+
+To test the script while still in the container runs the following.
+
+```
+python hello.py
+```
+
+This will produce the following output.
+
+```bash
+Hello World!
+```
+
+Satisfied that the script functions as expected, exit out of the container by typing `exit`.
 
 ```bash
 exit
 ```
 
+Back in the terminal of your local system, use the `docker ps` command to list all running containers.
+
+```bash
+docker ps
+```
+
+Notice that nothing is running. When you typed `exit` in the running container, the bash process completed, which then stopped the container. This is the expected behavior and is ok.
+
+```bash
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+```
+
+Use `docker ps` again, however add the `-a` argument. This command will return a list of all container regardless if they are running.
+
 ```bash
 docker ps -a
 ```
 
+Notice that a container with the name `python-demo` has a status of `Exited`. This is the stopped instance of the container you created.
+
+```bash
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+cf6ac8e06fd9        python              "bash"              27 seconds ago      Exited (0) 12 seconds ago                       python-demo
+```
+
+To create a new container image from this container, use the `docker commit` command. The following example instructs `docker commit` to create an image named `python-custom` from the `python-demo` containers.
+
 ```bash
 docker commit python-demo python-custom
 ```
+
+Once complete, you should see output similar to the following.
+
+```bash
+sha256:91a0cf9aa9857bebcd7ebec3418970f97f043e31987fd4a257c8ac8c8418dc38
+```
+
+Now run `docker images` to see a list of container images.
 
 ```bash
 docker images
@@ -58,9 +103,14 @@ python              latest              638817465c7d        24 hours ago        
 alpine              latest              11cd0b38bc3c        2 weeks ago         4.41MB
 ```
 
+Run a contianer from the new image. You also need to specify what command / process to run inside of the container. With this example, run `python hello.py`.
+
+
 ```bash
 docker run python-custom python hello.py
 ```
+
+The container will start nand output the hello world message. The python process has then completed and the container stops.
 
 ```bash
 Hello World!
@@ -124,7 +174,7 @@ python              latest              638817465c7d        26 hours ago        
 alpine              latest              11cd0b38bc3c        2 weeks ago          4.41MB
 ```
 
-Use the `docker run` command to run a container from the custom image. Notice here that no arguments have been provided to the `docker run` command. Unlike when manually creating a container image, a Dockerfile allows you to include a command to be run when the container starts. In this case, the specified command is  , which causes the container to run the Python script, which outputs `Hello World!`. Also notice, once the command has run, the container stops.
+Use the `docker run` command to run a container from the custom image. Notice here that no arguments have been provided to the `docker run` command. Unlike when manually creating a container image, a Dockerfile allows you to include a command to be run when the container starts. In this case, the specified command is `python hello.py`, which causes the container to run the Python script, which outputs `Hello World!`. Also notice, once the command has run, the container stops.
 
 
 ```bash

@@ -1,5 +1,3 @@
-# Introduction to containers
-
 Insert some text here.
 
 ## Cloud native
