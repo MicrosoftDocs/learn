@@ -1,6 +1,7 @@
 ### YamlMime:Module
-# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+# YML code for `module`
 uid: learn.sample-module-cloudshell
+# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>. Keep it easy on yourself and keep the module-short-name the same as the module folder name.
 metadata:
 # HTML metadata for search engines
   title: Sample Module with CloudShell
@@ -12,7 +13,7 @@ summary: This is the summary of the Sample Module
 abstract: This is the abstract of the Sample Module
 # `abstract` appears on the module page beneath the summary and level/role/product metadata 
 cardDescription: This is the card description of the Sample Module
-# `cardDescription` appears on module card on /learn
+# `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
 # `iconUrl` is the badge image 
 level: intermediate
