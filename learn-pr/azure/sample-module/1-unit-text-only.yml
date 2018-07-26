@@ -13,5 +13,5 @@ title: Sample unit 1 - Text only
 durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
 content: |
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
-  [!include[](includes/1-unit-text-only.md)]
+  [!include[](includes/1-unit-text-only.md)]|
+  # Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
