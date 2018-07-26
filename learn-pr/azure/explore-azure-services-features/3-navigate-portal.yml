@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.3-navigate-portal
+title: Navigating the portal
+metadata:
+  title: Navigating the portal
+  description: Navigating the portal
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-navigate-portal.md)]
+  achievement: learn.explore-azure-services-features.badge

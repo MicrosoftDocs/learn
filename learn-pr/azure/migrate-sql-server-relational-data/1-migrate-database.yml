@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.1-migrate-database
+title: Migrate your relational data to an Azure SQL database
+metadata:
+  title: Migrate your relational data to an Azure SQL database
+  description: Migrate your relational data to an Azure SQL database
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-migrate-database.md)]
+  achievement: learn.migrate-sql-server-relational-data.badge

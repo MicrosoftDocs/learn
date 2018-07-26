@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.1-intro-services-features
+title: Introduction to Azure services and features
+metadata:
+  title: Introduction to Azure services and features
+  description: Introduction to Azure services and features
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-intro-services-features.md)]
+  achievement: learn.explore-azure-services-features.badge
