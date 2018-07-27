@@ -13,7 +13,9 @@ To install Docker on your system, follow the link that matched your operating sy
 Docker for Windows - https://www.docker.com/docker-windows
 Docker for Mac - https://www.docker.com/docker-mac
 
-When using Docker for Windows, two environment are available, Linux and Windows. Using the Linux environment allows you to run Linux containers on your Windows system. You can select an environment by  right-clicking on the Docker for Windows icon in the task bar and selecting **Switch to Linux containers**.
+When using Docker for Windows, two environment are available, Linux and Windows. Using the Linux environment allows you to run Linux containers on your Windows system. You can select an environment by right-clicking on the Docker task bar icon, selecting **Switch to Linux containers**, and following the on screen prompt.
+
+![Docker for Windows, switch to Linux containers](../../images/docker-linux.png)
 
 > [!NOTE]
 > The steps in this tutorial assume that your system is configured to work with Linux containers.
@@ -24,7 +26,7 @@ If you are working on a Linux-based system, the Docker server components and CLI
 
 ## Validate configuration
 
-To validate that Docker has been successfully installed and configured, run the following command.
+To validate that Docker has been successfully installed and configured, open a terminal and run the following command.
 
 ```
 docker search nginx
@@ -60,5 +62,3 @@ travix/nginx                                           NGinx reverse proxy      
 ansibleplaybookbundle/nginx-apb                        An APB to deploy NGINX                          0                                       [OK]
 mailu/nginx                                            Mailu nginx frontend                            0                                       [OK]
 ```
-
-
