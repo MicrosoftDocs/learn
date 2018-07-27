@@ -7,4 +7,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/1-intro.md)]
-  achievement: learn.learn.create-a-windows-vm-in-azure.badge
+achievement: learn.learn.create-a-windows-vm-in-azure.badge

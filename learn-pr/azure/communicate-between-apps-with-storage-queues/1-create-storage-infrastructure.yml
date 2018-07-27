@@ -7,4 +7,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/1-create-storage-infrastructure.md)]
-  achievement: learn.communicate-between-apps-with-storage-queues.badge
+achievement: learn.communicate-between-apps-with-storage-queues.badge

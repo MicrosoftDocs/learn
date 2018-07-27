@@ -7,4 +7,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/5-create-poc.md)]
-  achievement: learn.explore-azure-services-features.badge
+achievement: learn.explore-azure-services-features.badge
