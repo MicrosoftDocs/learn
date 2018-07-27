@@ -3,9 +3,9 @@
 uid: learn.design-a-great-azure-architecture
 metadata:
   title: Design a great Azure architecture
-  description: In this module, we'll discuss key concepts to make your architecture a success on Azure.
+  description: Learn how to make your architecture a success on Azure.
 title: Design a great Azure architecture
-summary: So you want to build an architecture on the cloud, but with so many things to consider, where do you start? What architectural aspects are important to ensure you're building a solid foundation for your application? In this module, we'll discuss key concepts to make your architecture a success on Azure.
+summary: So you want to build an architecture on the cloud, but with so many things to consider where do you start? What architectural aspects are important to ensure you're building a solid foundation for your application? Learn about the best practices and key principles to make your architecture a success on Azure.
 abstract: |
   * Identify the key principles to consider when architecting a solution on the cloud
   * Apply these principles across scenarios to create a solid architectural foundation
@@ -16,7 +16,7 @@ iconUrl: http://via.placeholder.com/120x120
 level: intermediate
 role: solutionsArchitect
 # achievement is currently a placeholder and will need to be updated
-achievement: learn.placeholder.trophy
+achievement: learn.design-a-great-azure-architecture.trophy
 product: Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
