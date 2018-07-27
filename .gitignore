@@ -10,3 +10,4 @@ _themes*/
 _dependentPackages/
 
 .openpublishing.buildcore.ps1
+.vscode/settings.json
