@@ -1,0 +1,24 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.automate-azure-tasks-with-powershell
+metadata:
+  title: Automate Azure tasks using scripts with PowerShell
+  description: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
+title: Automate Azure tasks using scripts with PowerShell
+summary: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
+abstract: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
+cardDescription: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: beginner
+role: developer
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.automate-azure-tasks-with-powershell.1-motivation
+- learn.automate-azure-tasks-with-powershell.2-powershell-decision
+- learn.automate-azure-tasks-with-powershell.3-install-powershell
+- learn.automate-azure-tasks-with-powershell.4-create-azure-resource-using-powershell
+- learn.automate-azure-tasks-with-powershell.5-create-save-scripts-in-powershell
+achievement: learn.automate-azure-tasks-with-powershell.badge

@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-db-for-postgresql.2-create-postgresql-db-server-via-azure-portal
+title: Create a PostgreSQL DB server via the Azure Portal
+metadata:
+  title: Create a PostgreSQL DB server via the Azure Portal
+  description: Create a PostgreSQL DB server via the Azure Portal
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-create-postgresql-db-server-via-azure-portal.md)]
+achievement: learn.create-azure-db-for-postgresql.badges

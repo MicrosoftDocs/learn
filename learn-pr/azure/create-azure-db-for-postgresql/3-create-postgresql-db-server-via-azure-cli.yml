@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-db-for-postgresql.3-create-postgresql-db-server-via-azure-cli
+title: Create a PostgreSQL DB server via the Azure CLI
+metadata:
+  title: Create a PostgreSQL DB server via the Azure CLI
+  description: Create a PostgreSQL DB server via the Azure CLI
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-create-postgresql-db-server-via-azure-cli.md)]
+achievement: learn.create-azure-db-for-postgresql.badges
