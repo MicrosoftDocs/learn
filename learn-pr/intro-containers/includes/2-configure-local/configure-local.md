@@ -2,10 +2,10 @@ Before running a container or container-integrated application in Azure, you wil
 
 ## Docker for Windows and Mac
 
-Docker inc. has made available two applications that quickly install and configure a local container development environment. Esentially, each prepares your development system with Docker tooling such as the necessary CLI and automation tools, creates a virtual machine to host a the Docker platform and provide isolation, and configures the environment so that Docker commands are passed through to the virtual machine. Each of the applications is similar in features and functionality and includes the following:
+Docker inc. has made available two applications that quickly install and configure a local container development environment. Essentially, each prepares your development system with Docker tooling such as the necessary CLI and automation tools, creates a virtual machine to host the Docker platform, and configures the environment so that Docker commands are passed through to the virtual machine. Each of the applications is similar in features and functionality and includes the following:
 
-- Docker platform - the core componente necisary to create and run containers.
-- Dokcer CLI - command line interface for inneracrting with Docker containers
+- Docker platform - the core components necessary to create and run containers.
+- Docker CLI - command-line interface for interacting with Docker containers
 - Docker Compose - automation tooling for defining and running multi-contianer applications.
 
 To install Docker on your system, follow the link that matched your operating system.
@@ -13,13 +13,18 @@ To install Docker on your system, follow the link that matched your operating sy
 Docker for Windows - https://www.docker.com/docker-windows
 Docker for Mac - https://www.docker.com/docker-mac
 
+When using Docker for Windows, two environment are available, Linux and Windows. Using the Linux environment allows you to run Linux containers on your Windows system. You can select an environment by  right-clicking on the Docker for Windows icon in the task bar and selecting **Switch to Linux containers**.
+
+> [!NOTE]
+> The steps in this tutorial assume that your system is configured to work with Linux containers.
+
 ## Docker on Linux
 
 If you are working on a Linux-based system, the Docker server components and CLI tools can be manually installed. Follow the instructions found on [About Dokcer CE](https://docs.docker.com/install/#server) for your specific Linux distribution [About Dokcer CE](https://docs.docker.com/install/#server)
 
 ## Validate configuration
 
-To validate that Docker has been sucessfully installed and configured, run the following command.
+To validate that Docker has been successfully installed and configured, run the following command.
 
 ```
 docker search nginx
