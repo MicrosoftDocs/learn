@@ -7,9 +7,9 @@ metadata:
 title: Design for availability and recoverability
 summary: If you were to lose one or more components of your infrastructure, could your architecture handle it? If you experience a loss of data or identify data corruption, can you recover the data? Do you know what your requirements are to your business stakeholders for system availability and disaster recovery? Learn how to design availability and recoverability into your architecture.
 abstract: |
-  * Leverage Azure services to design a highly available application
+  * Learn how to leverage Azure services to design a highly available application
   * Learn how to incorporate Azure's diaster recovery capabilities into your architecture
-  * Use backup and restore on Azure to protect your application from data loss or corruption
+  * Learn how to use backup and restore on Azure to protect your application from data loss or corruption
 cardDescription: Learn how to make your Azure architecture highly available and able to recover from failures
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
