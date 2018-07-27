@@ -5,7 +5,7 @@ metadata:
   title: Design a great Azure architecture
   description: Learn how to make your architecture a success on Azure
 title: Design a great Azure architecture
-summary: So you want to build an architecture on the cloud, but with so many things to consider where do you start? What architectural aspects are important to ensure you're building a solid foundation for your application? Learn about the best practices and key principles to make your architecture a success on Azure.
+summary: So you want to build great things on Azure, but you’re not sure exactly what that means. There is a wealth of tools and services at your disposal on Azure, but what’s important to make sure you’re successful? How do you instill confidence in your customers that their data is secure? Could your architecture handle a spike in traffic if a media report goes viral? Could your architecture handle the failure of one or more critical components? Are you using resources in the most efficient manner possible? Using key principles throughout your architecture regardless of technology choice, can help you design, build and continuously improve your architecture.
 abstract: |
   * Identify the key principles to consider when architecting a solution on the cloud
   * Apply these principles across scenarios to create a solid architectural foundation
@@ -20,7 +20,7 @@ achievement: learn.placeholder.trophy
 product: Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-- learn.design-a-great-azure-architecture.1-introduction
+#- learn.design-a-great-azure-architecture.1-introduction
 - learn.design-a-great-azure-architecture.2-principles-of-a-great-azure-architecture
 - learn.design-a-great-azure-architecture.3-design-for-security
 - learn.design-a-great-azure-architecture.4-design-for-performance-and-scalability
