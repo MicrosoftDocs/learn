@@ -5,12 +5,12 @@ metadata:
   title: Design for efficiency and operations
   description: In this module, we'll discuss key concepts of desigining for efficiency and operations
 title: Design for efficiency and operations
-summary: In this module, we'll discuss key concepts of desigining for efficiency and operations (this will show on the module card)
+summary: How efficient is your cloud environment, are you maximizing the use of your cloud spend and minimizing the amount of waste? When something happens in your environment, do you have visibility and alerting in place so you can take action? How advanced is your automation and how much manual work is your organization performing? These are all questions we’ll answer in this module focused on design principles for efficiency and operations.
 abstract: |
-  * Learn how to leverage Azure services to design a highly available application
-  * Learn how to incorporate Azure's diaster recovery capabilities into your architecture
-  * Learn how to use backup and restore on Azure to protect your application from data loss or corruption
-cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
+  * Learn how to maximize the efficiency of your cloud environment
+  * Learn how to use monitoring and analytics to gain operational insights
+  * Learn how to use automation to reduce effort and error
+cardDescription: In this module, we'll discuss key concepts of desigining for efficiency and operations
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
 # Review the Docs Contributor Guide for levele, role, and product options
