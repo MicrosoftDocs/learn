@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-for-security.4-encryption
-title: Encryption
+uid: learn.design-for-security.4-infrastructure-protection
+title: Infrastructure protection
 metadata:
-  title: Encryption
-  description: In this unit we'll discuss how to use encryption to secure your architecture
+  title: Infrastructure protection
+  description: In this unit we'll discuss how to protect access to your infrastructure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-encryption.md)]
+  [!include[](includes/4-infrastructure-protection.md)]
 quiz:
   title: 'Quiz Title'
   questions:
