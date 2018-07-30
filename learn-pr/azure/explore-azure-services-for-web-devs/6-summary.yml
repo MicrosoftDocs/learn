@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.prepare-azure-dev-environment.6-summary
+title: Summary  
+metadata:
+  title: Summary  
+  description: Summary 
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-summary.md)]
+achievement: learn.explore-azure-services-for-web-devs.badge

@@ -1,0 +1,25 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.choose-messaging-model
+metadata:
+  title: Choose a messaging model in Azure to loosely connect your services
+  description: In this module, we'll compare different event and message services available in Azure - Storage Queues, Service Bus, Event Grid, and Event Hubs. We will look at the appropriate use for each technology and provide practical guidance on which one to choose for your messaging needs.
+title: Choose a messaging model in Azure to loosely connect your services
+summary: In this module, we'll compare different event and message services available in Azure - Storage Queues, Service Bus, Event Grid, and Event Hubs. We will look at the appropriate use for each technology and provide practical guidance on which one to choose for your messaging needs.
+abstract: In this module, we'll compare different event and message services available in Azure - Storage Queues, Service Bus, Event Grid, and Event Hubs. We will look at the appropriate use for each technology and provide practical guidance on which one to choose for your messaging needs.
+cardDescription: In this module, we'll compare different event and message services available in Azure - Storage Queues, Service Bus, Event Grid, and Event Hubs. We will look at the appropriate use for each technology and provide practical guidance on which one to choose for your messaging needs.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+level: beginner
+role: developer
+product: Azure
+units:
+- learn.choose-messaging-model.1-why-use-events-messages
+- learn.choose-messaging-model.2-knowledge-check
+- learn.choose-messaging-model.3-storage-queues
+- learn.choose-messaging-model.4-event-grid
+- learn.choose-messaging-model.5-event-hub
+- learn.choose-messaging-model.6-knowledge-check
+- learn.choose-messaging-model.7-service-hub
+- learn.choose-messaging-model.8-knowledge-check
+achievement: learn.choose-messaging-model.badge

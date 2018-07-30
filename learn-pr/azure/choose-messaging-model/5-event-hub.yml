@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.5-event-hub
+title: Azure Event Hubs 
+metadata:
+  title: Azure Event Hubs  
+  description: Azure Event Hubs  
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-event-hub.md)]
+achievement: learn.choose-messaging-model.badge

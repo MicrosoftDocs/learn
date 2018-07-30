@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.4-add-resources-from-marketplace
+title: Add a resource from the Azure Marketplace  
+metadata:
+  title: Add a resource from the Azure Marketplace  
+  description: Add a resource from the Azure Marketplace 
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-add-resources-from-marketplace.md)]
+achievement: learn.manage-resources-with-azure-portal.badge

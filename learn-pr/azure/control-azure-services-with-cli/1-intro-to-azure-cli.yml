@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.1-intro-to-azure-cli
+title: Introduction to the Azure CLI
+metadata:
+  title: Introduction to the Azure CLI
+  description: Introduction to the Azure CLI
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-intro-to-azure-cli.md)]
+achievement: learn.control-azure-services-with-cli.badge

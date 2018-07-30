@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.5-customize-azure-dashboard
+title: Customize your Azure portal dashboard  
+metadata:
+  title: Customize your Azure portal dashboard  
+  description: Customize your Azure portal dashboard  
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-customize-azure-dashboard.md)]
+achievement: learn.manage-resources-with-azure-portal.badge

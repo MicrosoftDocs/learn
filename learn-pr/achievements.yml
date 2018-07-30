@@ -20,3 +20,28 @@ achievements:
   title: Build a serverless web app Badge
   summary: Build a serverless web app Summary
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.choose-messaging-model.badge
+  type: badge
+  title: Choose messaging model Badge
+  summary: Choose messaging model Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.prepare-azure-dev-environment.badge
+  type: badge
+  title: Prepare Azure development environment Badge
+  summary: Prepare Azure development environment Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.manage-resources-with-azure-portal.badge
+  type: badge
+  title: Manage resources with Azure portal Badge
+  summary: Manage resources with Azure portal Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.explore-azure-services-for-web-devs.badge
+  type: badge
+  title: Explore Azure services for web developers Badge
+  summary: Explore Azure services for web developers Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.control-azure-services-with-cli.badge
+  type: badge
+  title: Control Azure services with the CLI Badge
+  summary: Control Azure services with the CLI Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
