@@ -8,7 +8,7 @@ title: Design for security
 summary: Security is arguably the most important aspect of any architecture. From financial institutions handling millions of dollars in transactions a day, to  health care organizations dealing with sensitive patient records, ensuring that your environment and data is secure is critical to the success of your business. In this module we’ll talk through key architectural security considerations as you design an environment on the cloud. Using this as a groundwork, you can ensure you have the right pieces in place to keep your customer and institutional data secure.
 abstract: |
   * Learn how to take a defense in depth approach to securing your architecture
-  * Leverage key identity management strategies
+  * Learn how to protect your identities
   * Learn what technologies are available to protect your Azure infrastructure
   * Learn how and where to use encryption to secure your data
   * Learn how to protect your architecture at the network level
