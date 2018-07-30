@@ -26,8 +26,9 @@ product: Azure
 units:
 #- learn.design-for-security.1-introduction
 - learn.design-for-security.2-defense-in-depth
-- learn.design-for-security.3-infrastructure-protection
-- learn.design-for-security.4-encryption
-- learn.design-for-security.5-network-security
-- learn.design-for-security.6-application-security
-- learn.design-for-security.7-summary
+- learn.design-for-security.3-identity-management
+- learn.design-for-security.4-infrastructure-protection
+- learn.design-for-security.5-encryption
+- learn.design-for-security.6-network-security
+- learn.design-for-security.7-application-security
+- learn.design-for-security.8-summary
