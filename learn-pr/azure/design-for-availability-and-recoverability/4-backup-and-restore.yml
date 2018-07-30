@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-for-availability-and-recoverability.4-backup-and-restore
-title: Backup and restore
+title: Protect your data with backup and restore
 metadata:
-  title: Backup and restore
+  title: Protect your data with backup and restore
   description: In this unit we'll discuss the principles of backup and restore
 durationInMinutes: 5
 content: |

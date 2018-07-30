@@ -3,10 +3,16 @@
 uid: learn.design-for-security
 metadata:
   title: Design for security
-  description: In this module, we'll discuss how to design for security
+  description: Learn how to design for security
 title: Design for security
-summary: In this module, we'll discuss how to design for security. (this will show on the module card)
-abstract: In this module, we'll discuss how to design for security.
+summary: Security is arguably the most important aspect of any architecture. From financial institutions handling millions of dollars in transactions a day, to  health care organizations dealing with sensitive patient records, ensuring that your environment and data is secure is critical to the success of your business. In this module we’ll talk through key architectural security considerations as you design an environment on the cloud. Using this as a groundwork, you can ensure you have the right pieces in place to keep your customer and institutional data secure.
+abstract: |
+  * Learn how to take a defense in depth approach to securing your architecture
+  * Learn how to protect your identities
+  * Learn what technologies are available to protect your Azure infrastructure
+  * Learn how and where to use encryption to secure your data
+  * Learn how to protect your architecture at the network level
+  * Learn how to leverage application security best practices to integrate security into your application
 cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
@@ -18,7 +24,7 @@ achievement: learn.placeholder.trophy
 product: Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-- learn.design-for-security.1-introduction
+#- learn.design-for-security.1-introduction
 - learn.design-for-security.2-defense-in-depth
 - learn.design-for-security.3-infrastructure-protection
 - learn.design-for-security.4-encryption

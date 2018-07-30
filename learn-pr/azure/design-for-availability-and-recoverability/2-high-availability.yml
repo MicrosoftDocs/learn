@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-for-availability-and-recoverability.2-high-availability
-title: High availability
+title: Build a highly available architecture
 metadata:
-  title: High availability
+  title: Build a highly available architecture
   description: In this unit we'll discuss the pricinciples of high availability within and between regions
 durationInMinutes: 5
 content: |
