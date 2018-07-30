@@ -5,7 +5,7 @@ metadata:
   title: Design for security
   description: Learn how to design for security
 title: Design for security
-summary: Security is arguably the most important aspect of any architecture. From financial institutions handling millions of dollars in transactions a day, to  health care organizations dealing with sensitive patient records, ensuring your environment is secure is critical to the success of your business. In this module we’ll talk through key architectural security considerations as you design an environment on the cloud. Using this as a groundwork, you can ensure you have the right pieces in place to keep your customer and institutional data secure.
+summary: Security is arguably the most important aspect of any architecture. From financial institutions handling millions of dollars in transactions a day, to  health care organizations dealing with sensitive patient records, ensuring that your environment and data is secure is critical to the success of your business. In this module we’ll talk through key architectural security considerations as you design an environment on the cloud. Using this as a groundwork, you can ensure you have the right pieces in place to keep your customer and institutional data secure.
 abstract: |
   * Learn how to take a defense in depth approach to securing your architecture
   * Leverage key identity management strategies
