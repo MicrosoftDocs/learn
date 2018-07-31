@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/4-create-azure-resource-using-powershell.md)]
-achievement: learn.automate-azure-tasks-with-powershell.badges

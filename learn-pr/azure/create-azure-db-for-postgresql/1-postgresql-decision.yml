@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/1-postgresql-decision.md)]
-achievement: learn.create-azure-db-for-postgresql.badges

@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/4-server-security-considerations.md)]
-achievement: learn.create-azure-db-for-postgresql.badges

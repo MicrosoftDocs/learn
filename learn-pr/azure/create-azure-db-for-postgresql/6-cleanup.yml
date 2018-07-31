@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/6-cleanup.md)]
-achievement: learn.create-azure-db-for-postgresql.badges

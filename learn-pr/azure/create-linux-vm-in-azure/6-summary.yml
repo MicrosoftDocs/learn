@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/6-summary.md)]
-achievement: learn.create-linux-vm-in-azure.badges
