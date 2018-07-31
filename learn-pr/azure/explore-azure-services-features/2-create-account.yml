@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/2-create-account.md)]
-achievement: learn.explore-azure-services-features.badge

@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/3-implement-dequeue.md)]
-achievement: learn.communicate-between-apps-with-storage-queues.badge
