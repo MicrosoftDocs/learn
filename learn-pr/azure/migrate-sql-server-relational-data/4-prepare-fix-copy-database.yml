@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.4-prepare-fix-copy-database
+title: Preparing fixes and copying your database
+metadata:
+  title: Preparing fixes and copying your database
+  description: Preparing fixes and copying your database
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-prepare-fix-copy-database.md)]

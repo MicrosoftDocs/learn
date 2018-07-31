@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.5-deploy-fix-migrate-database
+title: Deploy fixes and migrate the database copy
+metadata:
+  title: Deploy fixes and migrate the database copy
+  description: Deploy fixes and migrate the database copy
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-deploy-fix-migrate-database.md)]
