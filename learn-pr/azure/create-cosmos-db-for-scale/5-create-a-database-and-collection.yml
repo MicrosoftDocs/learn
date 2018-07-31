@@ -6,7 +6,7 @@ metadata:
   displayType: two-column
   #TODO: support azure portal
   interactive: azureportal
-title: Create an database and collection in Azure Cosmos DB
+title: Create a database and collection in Azure Cosmos DB
 durationInMinutes: 1
 content: |
   [!include[](includes/5-create-a-database-and-collection.md)]
