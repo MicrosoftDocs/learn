@@ -1,0 +1,22 @@
+### YamlMime:ModuleUnit
+# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
+uid: learn.create-cosmos-db-for-scale.3-what-is-a-request-unit
+metadata:
+  title: What is an Azure Cosmos DB request unit?
+  description: Learn how throughput is allocated in Azure Cosmos DB by using request units.
+  displayType: one-column
+title: What is a request unit?
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-what-is-a-request-unit.md)]
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'What this markdown file talking about:'
+    choices:
+    - content: Brainstorming of markdown file format for quiz.
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Brainstorming of markdown file format for quiz. Part 2
+      isCorrect: false

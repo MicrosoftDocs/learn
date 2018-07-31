@@ -1,0 +1,22 @@
+### YamlMime:ModuleUnit
+# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
+uid: learn.create-cosmos-db-for-scale.4-how-do-i-choose-a-partition-key
+metadata:
+  title: How do I choose a partition key in Azure Cosmos DB?
+  description: Learn how to create a collection with a partition key that will enable your database to scale as your needs grow.
+  displayType: one-column
+title: How do I choose a partition key?
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-how-do-i-choose-a-partition-key.md)]
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'What this markdown file talking about:'
+    choices:
+    - content: Brainstorming of markdown file format for quiz.
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Brainstorming of markdown file format for quiz. Part 2
+      isCorrect: false
