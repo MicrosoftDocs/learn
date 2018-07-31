@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/2-set-up-vs-code.md)]
-achievement: learn.prepare-azure-dev-environment.badge

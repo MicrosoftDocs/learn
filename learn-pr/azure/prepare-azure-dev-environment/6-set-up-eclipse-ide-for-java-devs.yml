@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/6-set-up-eclipse-ide-for-java-devs.md)]
-achievement: learn.prepare-azure-dev-environment.badge

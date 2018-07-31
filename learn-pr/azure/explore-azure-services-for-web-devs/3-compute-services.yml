@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/3-compute-services.md)]
-achievement: learn.explore-azure-services-for-web-devs.badge

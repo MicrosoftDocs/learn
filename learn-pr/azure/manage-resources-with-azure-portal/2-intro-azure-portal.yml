@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/2-intro-azure-portal.md)]
-achievement: learn.manage-resources-with-azure-portal.badge

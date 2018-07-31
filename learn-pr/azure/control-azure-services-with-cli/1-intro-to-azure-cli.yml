@@ -7,4 +7,3 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/1-intro-to-azure-cli.md)]
-achievement: learn.control-azure-services-with-cli.badge
