@@ -40,3 +40,8 @@ achievements:
   title: Create a Windows virtual machine in Azure Badge
   summary: Create a Windows virtual machine in Azure Summary
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.choose-web-hosting.badge
+  type: badge
+  title: Choose a Web Hosting Option in Azure
+  summary: Choose a Web Hosting Option in Azure
+  iconUrl: http://via.placeholder.com/120x120

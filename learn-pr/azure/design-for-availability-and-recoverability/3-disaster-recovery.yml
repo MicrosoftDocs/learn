@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-for-availability-and-recoverability.3-disaster-recovery
-title: Disaster recovery
+title: Develop a disaster recovery strategy
 metadata:
-  title: Disaster recovery
+  title: Develop a disaster recovery strategy
   description: In this unit we'll discuss the principles of disaster recovery
 durationInMinutes: 5
 content: |
