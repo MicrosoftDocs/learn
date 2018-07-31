@@ -4,12 +4,12 @@ metadata:
   title: Create an Azure Cosmos DB account
   description: Learn how to create an Azure Cosmos DB account in the Azure portal.
   displayType: one-column
+  #TODO: support azure portal
+  interactive: azureportal
 title: Create an Azure Cosmos DB account in the portal
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-an-account.md)]
-#TODO: support azure portal
-interactive: azureportal
 tasks:
 - action: exists
   environment: azure
