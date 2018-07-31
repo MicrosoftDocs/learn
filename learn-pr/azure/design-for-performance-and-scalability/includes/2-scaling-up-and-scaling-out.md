@@ -58,7 +58,7 @@ The team are able to setup rules based upon multiple schedules, ensuring that th
 
 Autoscale could also provided an added benefit, preparing for those unforeseen scenarios. The team may suddenly encounter some higher than expected load on the weekend (perhaps more appointments in the winter season due to colds and flu). They do not need to worry about scaling up manually, as they have already configured autoscale to increase the number of instances dependent upon the current metrics in relation to some threshold. For example, they may have a rule to Scale out by 1 instance when CPU percentage is above 70%, and decrease by 1 instance when CPU percentage is below 30%.
 
-## Scaling in additional services
+## Scaling via alternate services
 
 You need to consider scaling differently, depending upon the Azure service that you choose to implement. In this section, we will consider some of the additional options available.
 
