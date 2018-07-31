@@ -1,35 +1,35 @@
-During the build process, Packer creates temporary Azure resources for the base VM. To capture that base VM for use as an image, you must define a resource group. An Azure resource group is a logical container into which Azure resources are deployed and managed.
+This section shows you everything you need to create an Azure Cosmos DB account. By the end of this section, you will be able to:
 
-First, create a resource group in the Azure Cloud Shell with [az group create](/cli/azure/group#az_group_create). The following example creates a resource group named *myResourceGroup* in the *eastus* location:
+* Name your Azure Cosmos DB account
+* Select the appropriate API for your account
+* Create the account in the appropriate region
+* Learn what settings are required at account creation, and what settings can be modified later
 
-```azurecli
-az group create -n myResourceGroup -l eastus
-```
+# Motivation
 
-Packer authenticates with Azure using a service principal. An Azure service principal is a security identity that you can use with apps, services, and automation tools like Packer. You control and define the permissions as to what operations the service principal can perform in Azure.
+Creating an Azure Cosmos DB is the first step in creating an Azure Cosmos DB database. A single account can contain multiple databases and collections, and acts as the billing entity for the databases it contains.
+<!-- TODO: What is Azure Cosmos DB? What is an Azure Cosmos DB account? When do you need more than one account? -->
 
-Create a service principal in the Azure Cloud Shell with [az ad sp create-for-rbac](/cli/azure/ad/sp#create-for-rbac) and output the credentials that Packer needs:
+# Create an Azure Cosmos DB account
 
-```azurecli
-az ad sp create-for-rbac --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"
-```
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+2. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
+3. In the **New account** page, enter the settings for the new Azure Cosmos DB account.
+ 
+    Setting|Value|Description
+    ---|---|---
+    ID|*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.
+    API|SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suits the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each which currently require a separate account. <br><br>Select **SQL** because in this quickstart you are creating a document database that is queryable using SQL syntax and accessible with the SQL API.|
+    Subscription|*Your subscription*|Select Azure subscription that you want to use for this Azure Cosmos DB account. 
+    Resource Group|Create new<br><br>*Then enter the same unique name as provided above in ID*|Select **Create New**, then enter a new resource-group name for your account. For simplicity, you can use the same name as your ID. 
+    Location|*Select the region closest to your users*|Select geographic location in which to host your Azure Cosmos DB account. Use the location that's closest to your users to give them the fastest access to the data.
+    Enable geo-redundancy| Leave blank | This creates a replicated version of your database in a second (paired) region. Leave this blank.  
+    Pin to dashboard | Select | Select this box so that your new database account is added to your portal dashboard for easy access.
 
-An example of the output from the preceding commands is as follows:
+    Then click **Create**.
 
-```azurecli
-{
-    "client_id": "f5b6a5cf-fbdf-4a9f-b3b8-3c2cd00225a4",
-    "client_secret": "0e760437-bf34-4aad-9f8d-870be799c55d",
-    "tenant_id": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-}
-```
+4. The account creation takes a few minutes. Wait for the portal to display the **Congratulations! Your Azure Cosmos DB account was created** page.
 
-Copy your own output for use in the next step.
+# Summary
 
-To authenticate to Azure, you also need to obtain your Azure subscription ID with [az account show](/cli/azure/account#az_account_show):
-
-```azurecli
-az account show --query '{ "subscription_id": "id" }'
-```
-
-You use the output from these two commands in the next step.
+You should create your Azure Cosmos DB account in the location closest to your users, and in this case you should use the SQL API as we’ll be storing JSON documents and want to be able to query using the SQL query language. You can configure geo-replication, multi-master write, and virtual network during account creation, or you can easily add them later when you need them, which is what we’ll do.
