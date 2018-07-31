@@ -3,7 +3,7 @@ uid: learn.build-a-serverless-web-app.3-resize-images-with-functions
 title: Resize images with Azure Functions
 metadata:
   title: Resize images with Azure Functions
-  description: Resize images with Azure Functions
+  description: Resize images with Azure Functions.
 durationInMinutes: 12
 content: |
   [!include[](includes/3-resize-images-with-functions.md)]
