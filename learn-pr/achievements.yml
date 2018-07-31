@@ -30,7 +30,7 @@ achievements:
   title: Create a PostgreSQL DB server via the Azure CLI Badge
   summary: Create a PostgreSQL DB server via the Azure CLI Summary
   iconUrl: http://via.placeholder.com/120x120
-- uid: learn.learn.create-linux-vm-in-azure.badge
+- uid: learn.create-linux-vm-in-azure.badge
   type: badge
   title: Create a Linux virtual machine in Azure Badge
   summary: Create a Linux virtual machine in Azure Summary
