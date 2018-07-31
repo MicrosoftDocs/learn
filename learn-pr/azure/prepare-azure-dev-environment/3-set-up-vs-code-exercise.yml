@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 # Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
-uid: learn.sample-module-cloudshell.3-set-up-vs-code-exercise
+uid: learn.prepare-azure-dev-environment.3-set-up-vs-code-exercise
 metadata:
   title: Set up Visual Studio Code exercise
   description: Set up Visual Studio Code exercise
