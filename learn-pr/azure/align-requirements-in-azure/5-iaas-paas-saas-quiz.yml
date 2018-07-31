@@ -1,12 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-for-availability-and-recoverability.2-high-availability
-title: Build a highly available architecture
+uid: learn.align-requirements-in-azure.5-iaas-paas-saas-quiz
+title: Knowledge check - IaaS, PaaS & SaaS
 metadata:
-  title: Build a highly available architecture
-  description: In this unit we'll discuss the pricinciples of high availability within and between regions
-durationInMinutes: 5
-content: |
-  [!include[](includes/2-high-availability.md)]
+  title: Knowledge check - IaaS, PaaS & SaaS
+  description: Knowledge check - IaaS, PaaS & SaaS
+durationInMinutes: 10
+content: Knowledge check - IaaS, PaaS & SaaS
 quiz:
   title: 'Quiz Title'
   questions:
