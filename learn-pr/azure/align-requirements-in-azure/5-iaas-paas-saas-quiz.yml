@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.align-requirements-in-azure.5-iaas-paas-saas-quiz
+title: Knowledge check - IaaS, PaaS & SaaS
+metadata:
+  title: Knowledge check - IaaS, PaaS & SaaS
+  description: Knowledge check - IaaS, PaaS & SaaS
+durationInMinutes: 10
+content: Knowledge check - IaaS, PaaS & SaaS
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'Question 1'
+    choices:
+    - content: Answer 1
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer 2
+      isCorrect: false
+  - content: 'Question 2'
+    choices:
+    - content: Answer A
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer B
+      isCorrect: false
+    - content: Answer C
+      isCorrect: false

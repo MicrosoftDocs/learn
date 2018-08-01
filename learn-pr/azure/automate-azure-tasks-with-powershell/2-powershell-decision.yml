@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.automate-azure-tasks-with-powershell.2-powershell-decision
+title: Decide if Azure PowerShell is right for your tasks
+metadata:
+  title: Decide if Azure PowerShell is right for your tasks 
+  description: Decide if Azure PowerShell is right for your tasks 
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-powershell-decision.md)]

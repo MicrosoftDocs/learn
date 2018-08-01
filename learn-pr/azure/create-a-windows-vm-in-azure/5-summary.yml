@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-a-windows-vm-in-azure.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-summary.md)]
