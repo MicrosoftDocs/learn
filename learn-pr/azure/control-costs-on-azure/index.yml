@@ -5,8 +5,12 @@ metadata:
   title: Predict costs and optimize spending
   description: In this module, we'll discuss how to predict, analyze and control your costs on Azure.
 title: Predict costs and optimize spending
-summary: In this module, we'll discuss how to predict, analyze and control your costs on Azure. (this will show on the module card)
-abstract: In this module, we'll discuss how to predict, analyze and control your costs on Azure.
+summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend, and some best practices that you can leverage to help you save money.
+abstract: |
+  * Use the Azure Calculator to estimate your costs
+  * Predict and optimize your costs on Azure
+  * Identify best practices for reducing your infrastructure costs
+  * Identify best practices for reducing your licensing costs
 cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
@@ -18,7 +22,7 @@ achievement: learn.placeholder.trophy
 product: Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-- learn.control-costs-on-azure.1-introduction
+#- learn.control-costs-on-azure.1-introduction
 - learn.control-costs-on-azure.2-estimate-costs-with-the-azure-pricing-calculator
 - learn.control-costs-on-azure.3-predict-and-optimize-with-cost-management-and-advisor
 - learn.control-costs-on-azure.4-save-on-infrastructure-costs
