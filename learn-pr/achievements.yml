@@ -20,6 +20,21 @@ achievements:
   title: Build a serverless web app Badge
   summary: Build a serverless web app Summary
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.automate-azure-tasks-with-powershell.badge
+  type: badge
+  title: Automate Azure tasks using scripts with PowerShell Badge
+  summary: Automate Azure tasks using scripts with PowerShell Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-azure-db-for-postgresql.badge
+  type: badge
+  title: Create a PostgreSQL DB server via the Azure CLI Badge
+  summary: Create a PostgreSQL DB server via the Azure CLI Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-linux-vm-in-azure.badge
+  type: badge
+  title: Create a Linux virtual machine in Azure Badge
+  summary: Create a Linux virtual machine in Azure Summary
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.choose-messaging-model.badge
   type: badge
   title: Choose messaging model Badge

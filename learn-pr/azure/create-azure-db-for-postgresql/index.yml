@@ -1,0 +1,25 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.create-azure-db-for-postgresql
+metadata:
+  title: Create an Azure Database for PostgreSQL server in Azure
+  description: In this module, we'll discuss how to create an Azure Database for PostgreSQL server in the Azure portal.
+title: Create an Azure Database for PostgreSQL server in Azure
+summary: In this module, we'll discuss how to create an Azure Database for PostgreSQL server in the Azure portal.
+abstract: In this module, we'll discuss how to create an Azure Database for PostgreSQL server in the Azure portal.
+cardDescription: In this module, we'll discuss Create an Azure Database for PostgreSQL server in the Azure portal.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: developer
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.create-azure-db-for-postgresql.1-postgresql-decision
+- learn.create-azure-db-for-postgresql.2-create-postgresql-db-server-via-azure-portal
+- learn.create-azure-db-for-postgresql.3-create-postgresql-db-server-via-azure-cli
+- learn.create-azure-db-for-postgresql.4-server-security-considerations
+- learn.create-azure-db-for-postgresql.5-connecting-to-postgresql-db-server
+- learn.create-azure-db-for-postgresql.6-cleanup
+achievement: learn.automate-azure-tasks-with-powershell.badge
