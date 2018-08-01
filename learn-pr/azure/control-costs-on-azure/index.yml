@@ -1,10 +1,10 @@
 ### YamlMime:Module
 # Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
-uid: learn.predict-analyze-and-control-your-costs-on-azure
+uid: learn.control-costs-on-azure
 metadata:
-  title: Predict, analyze and control your costs on Azure
+  title: Predict costs and optimize spending
   description: In this module, we'll discuss how to predict, analyze and control your costs on Azure.
-title: Design a great Azure architecture
+title: Predict costs and optimize spending
 summary: In this module, we'll discuss how to predict, analyze and control your costs on Azure. (this will show on the module card)
 abstract: In this module, we'll discuss how to predict, analyze and control your costs on Azure.
 cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
@@ -18,9 +18,9 @@ achievement: learn.placeholder.trophy
 product: Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-- learn.predict-analyze-and-control-your-costs-on-azure.1-introduction
-- learn.predict-analyze-and-control-your-costs-on-azure.2-estimate-costs-with-the-azure-pricing-calculator
-- learn.predict-analyze-and-control-your-costs-on-azure.3-predict-and-optimize-with-cost-management-and-advisor
-- learn.predict-analyze-and-control-your-costs-on-azure.4-save-on-infrastructure-costs
-- learn.predict-analyze-and-control-your-costs-on-azure.5-save-on-licensing-costs
-- learn.predict-analyze-and-control-your-costs-on-azure.6-summary
+- learn.control-costs-on-azure.1-introduction
+- learn.control-costs-on-azure.2-estimate-costs-with-the-azure-pricing-calculator
+- learn.control-costs-on-azure.3-predict-and-optimize-with-cost-management-and-advisor
+- learn.control-costs-on-azure.4-save-on-infrastructure-costs
+- learn.control-costs-on-azure.5-save-on-licensing-costs
+- learn.control-costs-on-azure.6-summary
