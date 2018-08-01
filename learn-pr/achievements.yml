@@ -90,3 +90,8 @@ achievements:
   title: Working with interactive IoT deployments in Azure
   summary: Working with interactive IoT deployments in Azure
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.iot-for-ops.badge
+  type: badge
+  title: IoT Suite for ops
+  summary: IoT Suite for ops
+  iconUrl: http://via.placeholder.com/120x120
