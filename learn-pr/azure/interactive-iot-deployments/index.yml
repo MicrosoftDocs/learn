@@ -21,3 +21,4 @@ units:
 - learn.interactive-iot-deployments.3-stream-visualization
 - learn.interactive-iot-deployments.4-send-payload-to-device
 - learn.interactive-iot-deployments.5-iot-quiz
+achievement: learn.interactive-iot-deployments.badge
