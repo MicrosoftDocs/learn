@@ -8,5 +8,4 @@ metadata:
 title: Intro to IoT Hub
 durationInMinutes: 11
 content: |
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the markdown separate in the includes folder so that viewing the source content is a consistent experience.
   [!include[](includes/1-intro-iot-hub.md)]
