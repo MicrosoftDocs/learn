@@ -2,11 +2,11 @@
 # Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
 uid: learn.interactive-iot-deployments.4-send-payload-to-device
 metadata:
-  title: Sample Unit 1 - Text Only
+  title: Send payload to device
   description: This is a sample of "text-only" content (no lab or knowledge check components).
   displayType: one-column
-title: Sample Unit 1 - Text Only
+title: Send payload to device
 durationInMinutes: 11
 content: |
 # Even though there is only one markdown (MD) file and this is a text-only unit, keep the markdown separate in the includes folder so that viewing the source content is a consistent experience.
-  [!include[](includes/1-unit-text-only.md)]
+  [!include[](includes/4-send-payload-to-device.md)]
