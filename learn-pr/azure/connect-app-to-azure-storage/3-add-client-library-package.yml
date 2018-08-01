@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-app-to-azure-storage.3-add-client-library-package
+title: Add the WindowsAzure.Storage NuGet package
+metadata:
+  title: Add the WindowsAzure.Storage NuGet package
+  description: Add the WindowsAzure.Storage NuGet package
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-add-client-library-package.md)]

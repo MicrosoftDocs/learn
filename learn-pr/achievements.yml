@@ -20,3 +20,33 @@ achievements:
   title: Build a serverless web app Badge
   summary: Build a serverless web app Summary
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.cd-pipeline-github-to-azure-web-app.badge
+  type: badge
+  title: Create a continuous deployment pipeline from GitHub to your Azure Web App Badge
+  summary: Create a continuous deployment pipeline from GitHub to your Azure Web App Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.connect-app-to-azure-storage.badge
+  type: badge
+  title: Connect an App to Azure storage Badge
+  summary: Connect an App to Azure storage Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-azure-storage-account.badge
+  type: badge
+  title: Create an Azure storage account Badge
+  summary: Create an Azure storage account Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-serverless-logic-with-functions.badge
+  type: badge
+  title: Create serverless logic with Azure functions Badge
+  summary: Create serverless logic with Azure functions Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.host-web-app-with-azure-web-apps.badge
+  type: badge
+  title: Host a web application with Azure Web Apps Badge
+  summary: Host a web application with Azure Web Apps Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+ uid: learn.publish-azure-web-app-with-visual-studio.badge
+  type: badge
+  title: Publish an Azure Web App with Visual Studio for Windows or Mac Badge
+  summary: Publish an Azure Web App with Visual Studio for Windows or Mac Badge Summary
+  iconUrl: http://via.placeholder.com/120x120

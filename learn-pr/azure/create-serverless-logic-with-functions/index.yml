@@ -1,0 +1,23 @@
+### YamlMime:Module
+uid: learn.create-serverless-logic-with-functions
+metadata:
+  title: Create serverless logic with Azure functions
+  description: In this module, we'll discuss how to create, test, and monitor an Azure function, a key component of the Azure serverless application platform.
+title: Create serverless logic with Azure functions
+summary: In this module, we'll discuss how to create, test, and monitor an Azure function, a key component of the Azure serverless application platform.
+abstract: In this module, we'll discuss how to create, test, and monitor an Azure function, a key component of the Azure serverless application platform.
+cardDescription: In this module, we'll discuss how to create, test, and monitor an Azure function, a key component of the Azure serverless application platform.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: beginner
+role: developer
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.create-serverless-logic-with-functions.1-motivation
+- learn.create-serverless-logic-with-functions.2-create-function-app-in-azure
+- learn.create-serverless-logic-with-functions.3-add-new-azure-function
+- learn.create-serverless-logic-with-functions.4-test-monitor-azure-function
+- learn.create-serverless-logic-with-functions.5-lab
+achievement: learn.create-serverless-logic-with-functions.badge

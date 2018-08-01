@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-azure-web-app-with-visual-studio.2-publish-asp-net-to-azure-app-service
+title: Planning to publish an ASP.NET App to Azure App service
+metadata:
+  title: IntroduPlanning to publish an ASP.NET App to Azure App servicection
+  description: Planning to publish an ASP.NET App to Azure App service
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-publish-asp-net-to-azure-app-service.md)]
