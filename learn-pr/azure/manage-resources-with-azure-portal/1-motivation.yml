@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-resources-with-azure-portal.1-motivation
+title: Manage resources with the Azure portal
+metadata:
+  title: Manage resources with the Azure portal
+  description: Manage resources with the Azure portal
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-motivation.md)]

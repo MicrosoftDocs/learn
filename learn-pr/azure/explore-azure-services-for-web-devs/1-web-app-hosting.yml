@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-services-for-web-devs.1-web-app-hosting
+title: Web application hosting  
+metadata:
+  title: Web application hosting  
+  description: Web application hosting  
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-web-app-hosting.md)]
