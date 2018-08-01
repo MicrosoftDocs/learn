@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.build-a-serverless-web-app.2-upload-images-to-blob-storage
+title: Upload images to Blob storage with Azure Functions
+metadata:
+  title: Upload images to Blob storage with Azure Functions
+  description: Upload images to Blob storage with Azure Functions.
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-upload-images-to-blob-storage.md)]

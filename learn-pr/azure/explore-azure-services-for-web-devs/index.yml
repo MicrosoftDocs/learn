@@ -1,0 +1,23 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.explore-azure-services-for-web-devs
+metadata:
+  title: Explore the commonly used Azure services for web developers
+  description: In this module, we'll explore Azure services for web developers.
+title: Explore the commonly used Azure services for web developers
+summary: In this module, we'll explore Azure services for web developers.
+abstract: In this module, we'll explore Azure services for web developers.
+cardDescription: In this module, we'll explore Azure services for web developers.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+level: beginner
+role: developer
+product: Azure
+units:
+- learn.explore-azure-services-for-web-devs.1-web-app-hosting
+- learn.explore-azure-services-for-web-devs.2-data
+- learn.explore-azure-services-for-web-devs.3-compute-services
+- learn.explore-azure-services-for-web-devs.4-manage-admin-monitor
+- learn.explore-azure-services-for-web-devs.5-security-identity
+- learn.explore-azure-services-for-web-devs.6-summary
+achievement: learn.explore-azure-services-for-web-devs.badge

@@ -1,0 +1,29 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.design-a-great-azure-architecture
+metadata:
+  title: Design a great Azure architecture
+  description: Learn how to make your architecture a success on Azure
+title: Design a great Azure architecture
+summary: So you want to build great things on Azure, but you’re not sure exactly what that means. There is a wealth of tools and services at your disposal on Azure, but what’s important to make sure you’re successful? How do you instill confidence in your customers that their data is secure? Could your architecture handle a spike in traffic if a media report goes viral? Could your architecture handle the failure of one or more critical components? Are you using resources in the most efficient manner possible? Using key principles throughout your architecture regardless of technology choice, can help you design, build and continuously improve your architecture.
+abstract: |
+  * Identify the key principles to consider when architecting a solution on the cloud
+  * Apply these principles across scenarios to create a solid architectural foundation
+cardDescription: Learn how to make your architecture a success on Azure
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: solutionsArchitect
+# achievement is currently a placeholder and will need to be updated
+achievement: learn.placeholder.trophy
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+#- learn.design-a-great-azure-architecture.1-introduction
+- learn.design-a-great-azure-architecture.2-principles-of-a-great-azure-architecture
+- learn.design-a-great-azure-architecture.3-design-for-security
+- learn.design-a-great-azure-architecture.4-design-for-performance-and-scalability
+- learn.design-a-great-azure-architecture.5-design-for-availability-and-recoverability
+- learn.design-a-great-azure-architecture.6-design-for-efficiency-and-operations
+- learn.design-a-great-azure-architecture.7-summary

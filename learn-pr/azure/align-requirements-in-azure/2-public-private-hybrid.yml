@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.align-requirements-in-azure.2-public-private-hybrid
+title: Understanding Azure solutions for public, private and hybrid cloud
+metadata:
+  title: Understanding Azure solutions for public, private and hybrid cloud
+  description: Understanding Azure solutions for public, private and hybrid cloud
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-public-private-hybrid.md)]

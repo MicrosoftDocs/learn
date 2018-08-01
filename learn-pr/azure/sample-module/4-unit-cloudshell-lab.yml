@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+# YML code for unit
+uid: learn.sample-module-cloudshell.4-unit-cloudshell-lab
+# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
+metadata:
+# Search engine metadata  
+  title: Sample unit 4 - CloudShell lab
+  description: This is an example of a unit that uses the CloudShell editor.
+  displayType: two-column
+  # Text-only units use the two-column option, which drives a two-column layout, with an interactive component on the right of the screen and conceptual content in the middle.
+  interactive: azurecli
+title: Sample Unit 4 - CloudShell Lab
+# `title` appears the header, ToC, and breadcrumbs
+durationInMinutes: 11
+# `durationInMinutes` is manually created by the writer
+content: |
+  [!include[](includes/4-unit-cloudshell-lab.md)]
+tasks:
+- action: exists
+  # `exists`, `not-exists`
+  environment: azure
+  # `azure`
+  hint: 'Please make sure that you have named the resource group "myResourceGroup" and it was added to the "eastus" location'
+  # `hint` is optional
+  azure:
+    resourceGroup: myResourceGroup
+    location: eastus
+- action: exists
+  environment: azure
+  azure:
+    resourceGroup: groupA
+    resource:
+      type: Microsoft.Storage/storageAccounts
+      name: docsproxyppea427
+      tags:
+        triplecrown: true
+        # For lab config instructions, head to the "Write a unit - CloudShell lab" doc in the Contributor's Guide

@@ -1,0 +1,24 @@
+### YamlMime:Module
+uid: learn.build-a-serverless-web-app
+title: Build a serverless web app
+summary: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
+cardDescription: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
+iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+level: intermediate
+# achievement is currently a placeholder and will need to be updated
+achievement: learn.placeholder.trophy
+role: developer
+product: Azure
+metadata:
+  title: Build a serverless web app
+  description: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
+abstract: In this module, you will deploy a simple web application that presents an HTML-based user interface. A serverless backend enables the application to upload images and automatically get captions describing them.
+units:
+- learn.build-a-serverless-web-app.1-create-web-app-in-blob-storage
+- learn.build-a-serverless-web-app.2-upload-images-to-blob-storage
+- learn.build-a-serverless-web-app.3-resize-images-with-functions
+- learn.build-a-serverless-web-app.4-store-image-metadata-with-cosmos
+- learn.build-a-serverless-web-app.5-add-captions-with-computer-vision
+- learn.build-a-serverless-web-app.6-add-authentication
+- learn.build-a-serverless-web-app.7-test-and-cleanup
+achievement: learn.build-a-serverless-web-app.badge

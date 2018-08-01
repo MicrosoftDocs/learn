@@ -1,0 +1,32 @@
+### YamlMime:Module
+# YML code for `module`
+uid: learn.sample-module-cloudshell
+# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>. Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+metadata:
+# HTML metadata for search engines
+  title: Sample module with CloudShell
+  description: Sample module title description
+title: Sample module with CloudShell
+# `title` appears in the header, ToC, and breadcrumbs
+summary: This is the summary of the sample module
+# `summary` appears at the top of the module page beneath the title
+abstract: This is the abstract of the sample module
+# `abstract` appears on the module page beneath the summary and level/role/product metadata 
+cardDescription: This is the card description of the sample module
+# `cardDescription` appears on module card on docs.com/learn
+iconUrl: http://via.placeholder.com/120x120
+# `iconUrl` is the badge image 
+level: intermediate
+# `beginner`, `intermediate`, `advanced`
+role: developer
+# `developer`, `administrator`, `solutionsArchitect`, `businessUser`, `businessAnalyst`
+product: Azure
+# 
+units:
+# `units` are lists of all of the unit uids, in the order they should be displayed to the user in
+- learn.sample-module-cloudshell.1-unit-text-only
+- learn.sample-module-cloudshell.2-unit-text-and-knowledge-check
+- learn.sample-module-cloudshell.3-unit-knowledge-check-only
+- learn.sample-module-cloudshell.4-unit-cloudshell-lab
+achievement: learn.sample-module-cloudshell.badge
+# `achievement` is the `uid` for the badge

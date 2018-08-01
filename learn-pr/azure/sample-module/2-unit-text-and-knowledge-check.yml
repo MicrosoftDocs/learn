@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+# YML code for unit
+uid: learn.sample-module-cloudshell.2-unit-text-and-knowledge-check
+# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
+metadata:
+# Search engine metadata
+  title: Sample unit 2 - Text and knowledge check 
+  description: This unit is an example of text (no lab components) with a knowledge check.
+  displayType: one-column
+  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
+title: Sample Unit 2 - Text and Knowledge Check
+# `title` appears in the header, ToC, and breadcrumbs
+durationInMinutes: 11
+# `durationInMinutes` is manually created by the writer
+content: |
+  [!include[](includes/2-unit-text-and-knowledge-check.md)]
+quiz:
+  title: 'Quiz title'
+  questions:
+  - content: 'The first quiz question?'
+    choices:
+    - content: This answer is correct.
+      correctExplanation: Why this answer is correct
+      isCorrect: true
+      content: This answer is incorrect.
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: false
+    - content: Brainstorming of markdown file format for quiz. Part 2
+      isCorrect: false
+# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
