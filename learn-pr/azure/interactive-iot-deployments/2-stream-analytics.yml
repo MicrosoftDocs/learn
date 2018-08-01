@@ -8,4 +8,4 @@ metadata:
 title: Using Stream Analytics
 durationInMinutes: 11
 content: |
-  [!include[](includes/1-stream-analytics.md)]
+  [!include[](includes/2-stream-analytics.md)]
