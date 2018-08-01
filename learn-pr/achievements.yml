@@ -34,6 +34,7 @@ achievements:
   type: badge
   title: Create a Linux virtual machine in Azure Badge
   summary: Create a Linux virtual machine in Azure Summary
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.explore-azure-services-features.badge
   type: badge
   title: Explore Azure services and features Badge
