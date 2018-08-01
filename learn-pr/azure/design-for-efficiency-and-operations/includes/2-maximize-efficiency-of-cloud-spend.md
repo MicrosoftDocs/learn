@@ -18,13 +18,11 @@ As a simple rule of thumb when you choose a VM size that's one size smaller than
 
 [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations#optimize-virtual-machine-spend-by-resizing-or-shutting-down-underutilized-instances) can be a great help in identifying which virtual machines are underutilized. Advisor monitors your virtual machine usage for 14 days and then identifies low-utilization virtual machines. Virtual machines whose CPU utilization is 5 percent or less and network usage is 7 MB or less for four or more days are considered low-utilization virtual machines.
 
-<consider: insert screenshot of azure advisor recommendation?>
-
 ## Implement shutdown schedules for virtual machines
 
 There are many cases where a VM is used on a regular base but there's no need to actually run 24/7. A common example is a vm used by a developer to deploy and test new code. The developer will probably depend on this machine during business hours but after hours and in the weekend there's no need to have this machine running. If a full day consists of 24 hours than only running the VM between 9:00 and 17:00 would result in a cost reduction of 66% for that VM. If the machine doesn't need to be on the weekend that would further reduce costs. In order to avoid forgetting to shutdown the machine it's recommended to look at implementing [VM auto-shutdown](https://docs.microsoft.com/en-us/azure/billing/billing-getting-started#consider-enabling-cost-cutting-features-like-auto-shutdown-for-vms) where possible. When it's desired that the VMs also automatically start in the morning we can leverage Azure Automation. An example approach is explained [here](https://docs.microsoft.com/en-us/azure/automation/automation-solution-vm-management) but if you don't like that one or want to build your one you can start by using one of the many other examples from the [Runbook Gallery](https://docs.microsoft.com/en-us/azure/automation/automation-runbook-gallery).
 
-<consider: insert screenshot of auto-shutdown blade?>
+![Service Health](../media/2-maximize-efficiency-of-cloud-spend/auto-shutdown.png)
 
 ## Leverage Reserved Instances
 
@@ -32,7 +30,7 @@ Even if a VM is required to run all the time it's possible to achieve cost savin
 
 [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations#buy-virtual-machine-reserved-instances-to-save-money-over-pay-as-you-go-costs) will review your virtual machine usage over the last 30 days and determine if you could save money by purchasing reserved instances. Advisor will show you the regions and sizes where you potentially have the most savings and will show you the estimated savings from purchasing reserved instances.
 
-<consider: insert image of RI savings? e.g. from here: https://azure.microsoft.com/en-us/pricing/reserved-vm-instances or an image from Cloudyn RI simulation>
+![Reserved Instances](../media/2-maximize-efficiency-of-cloud-spend/savings-coins.png)
 
 ## Save on Compute costs by leveraging Azure Hybrid Use Benefit (AHUB)
 
@@ -48,7 +46,7 @@ There are various ways to avoid this. Grouping resources that have a common life
 
 While the sections above are mostly applicable for IaaS there are also other services that can benefit cost optimizations. [SQL Database elastic pools](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool) are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server and share a set number of resources at a set price. Elastic pools in Azure SQL Database enable SaaS developers to optimize the price performance for a group of databases within a prescribed budget while delivering performance elasticity for each database.
 
-<consider: insert image of 20 databases from here: https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool>
+![DTU Savings](../media/2-maximize-efficiency-of-cloud-spend/twenty-databases.png)
 
 ## Choose the right storage option
 
@@ -56,9 +54,9 @@ Azure storage offers [three storage tiers](https://docs.microsoft.com/en-us/azur
 
 Each of these tiers have different cost properties:
 
-- **Hot access tier**: has higher storage costs than cool and archive storage, but the lowest access costs
-- **Cool access tier**: has lower storage costs and higher access costs compared to hot storage. This tier is intended for data that will remain in the cool tier for at least 30 days.
-- **Archive access tier**: has the lowest storage cost and higher data retrieval costs compared to hot and cool storage. This tier is intended for data that can tolerate several hours of retrieval latency and will remain in the archive tier for at least 180 days.
+* **Hot access tier**: has higher storage costs than cool and archive storage, but the lowest access costs
+* **Cool access tier**: has lower storage costs and higher access costs compared to hot storage. This tier is intended for data that will remain in the cool tier for at least 30 days.
+* **Archive access tier**: has the lowest storage cost and higher data retrieval costs compared to hot and cool storage. This tier is intended for data that can tolerate several hours of retrieval latency and will remain in the archive tier for at least 180 days.
 
 In order to learn more about the actual pricing please take a look [here](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/).
 
@@ -70,28 +68,29 @@ Costs can be analysed using [Azure Cost Management](https://docs.microsoft.com/e
 
 There are also some options with or specific to the offer you're using.
 
-- For Enterprise Agreement customers the costs can be analysed using the [EA Portal](https://ea.azure.com) or [Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-azure-consumption-insights)
-- For Pay As You Go or MSDN customers the costs can be analysed using the [Azure Account Center](https://docs.microsoft.com/en-us/azure/billing/billing-download-azure-invoice-daily-usage-date)
+* For Enterprise Agreement customers the costs can be analysed using the [EA Portal](https://ea.azure.com) or [Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-azure-consumption-insights)
+* For Pay As You Go or MSDN customers the costs can be analysed using the [Azure Account Center](https://docs.microsoft.com/en-us/azure/billing/billing-download-azure-invoice-daily-usage-date)
 
 One of the challenges with analyzing cost data is that it's often difficult to determine which project or cost center is responsible for the costs. This challenge can be tackled by implementing a good hierarchy where resources are structured in resource groups and subscriptions. Sometimes that doesn't offer the dimensions you want to roll up costs to. In order to further complement the resource group/subscription structure we can [leverage tags on resources](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption-guide/subscription-governance#resource-tags).
 
-<Consider: insert image of cost reporting in azure portal: https://docs.microsoft.com/en-us/azure/billing/billing-understand-your-bill#option-2-review-your-invoice-and-compare-with-the-usage-and-costs-in-the-azure-portal>
-
+![Portal Cost Analysis](../media/2-maximize-efficiency-of-cloud-spend/portal-cost-analysis.png)
 
 
 ## Knowledge Check
 
 What happens with the Reserved Instance if you delete a VM and create another one
-- it still applies if you create it in the same region
-- it still applies if you create it with the same size
-- **it still applies if you create it in the same region and the same size**
-- it only applies if you give the VM the same name
-- it nog longer applies
+
+* it still applies if you create it in the same region
+* it still applies if you create it with the same size
+* **it still applies if you create it in the same region and the same size**
+* it only applies if you give the VM the same name
+* it nog longer applies
 
 When does VM compute cost stop from being charged
-- when you shutdown the VM from inside the guest
-- **when you stop the VM from the Portal**
-- When you shutdown the VM from inside the guest or from the Portal 
+
+* when you shutdown the VM from inside the guest
+* **when you stop the VM from the Portal**
+* When you shutdown the VM from inside the guest or from the Portal 
 
 
 ## Resources [To Be removed]
