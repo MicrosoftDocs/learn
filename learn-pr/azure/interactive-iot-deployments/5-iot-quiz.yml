@@ -12,6 +12,7 @@ title: Interactive IoT quiz
 # `title` appears in the header, ToC, and breadcrumbs
 durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
+content: Interactive IoT quiz
 quiz:
   title: 'Quiz title'
   questions:
