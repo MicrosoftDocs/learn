@@ -53,7 +53,6 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/learn/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/learn",
       "clicktale": true

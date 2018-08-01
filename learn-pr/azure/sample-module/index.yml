@@ -11,17 +11,20 @@ title: Sample module with CloudShell
 summary: This is the summary of the sample module
 # `summary` appears at the top of the module page beneath the title
 abstract: This is the abstract of the sample module
-# `abstract` appears on the module page beneath the summary and level/role/product metadata 
+# `abstract` appears on the module page beneath the summary and level/role/product metadata
 cardDescription: This is the card description of the sample module
 # `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
-# `iconUrl` is the badge image 
-level: intermediate
+# `iconUrl` is the badge image
+levels:
+- intermediate
 # `beginner`, `intermediate`, `advanced`
-role: developer
+roles:
+- developer
 # `developer`, `administrator`, `solutionsArchitect`, `businessUser`, `businessAnalyst`
-product: Azure
-# 
+products:
+- Azure
+#
 units:
 # `units` are lists of all of the unit uids, in the order they should be displayed to the user in
 - learn.sample-module-cloudshell.1-unit-text-only
