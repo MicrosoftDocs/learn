@@ -4,9 +4,12 @@ title: Sample Learning Path
 summary: This is the summary of the Sample Learning Path
 cardDescription: This is the card description of the Sample Learning Path
 iconUrl: http://via.placeholder.com/120x120
-level: intermediate
-role: developer
-product: Azure
+levels:
+- intermediate
+roles:
+- developer
+products:
+- Azure
 prerequisites: This is the prerequisites text for the Sample Learning Path
 metadata:
   title: Sample Learning Path Page Title
