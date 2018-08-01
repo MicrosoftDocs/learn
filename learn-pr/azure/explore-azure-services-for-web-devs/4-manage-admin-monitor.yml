@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-services-for-web-devs.4-manage-admin-monitor
+title: Management, administration and monitoring  
+metadata:
+  title: Management, administration and monitoring  
+  description: Management, administration and monitoring  
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-manage-admin-monitor.md)]
