@@ -1,0 +1,25 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.azure-services-features
+metadata:
+  title: Explore Azure services and features 
+  description: In this module, we'll discuss the basic services and features that Azure offers.
+title: Explore Azure services and features
+summary: In this module, we'll discuss the basic services and features that Azure offers.
+abstract: In this module, we'll discuss the basic services and features that Azure offers.
+cardDescription: In this module, we'll discuss the basic services and features that Azure offers.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+level: intermediate
+role: developer
+product: Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.azure-services-features.1-intro-services-features
+- learn.azure-services-features.2-create-account
+- learn.azure-services-features.3-navigate-portal
+- learn.azure-services-features.4-customize-dashboard
+- learn.azure-services-features.5-create-poc
+- learn.azure-services-features.6-summary-cleanup
+achievement: learn.explore-azure-services-features.badge
