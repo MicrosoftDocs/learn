@@ -4,7 +4,7 @@ Let's imagine that you've been asked to build a system on Azure. You're very ear
 
 To make estimates easy for customers to create, Microsoft has developed the Azure Pricing Calculator. The Azure Pricing Calculator is a free web-based tool that takes as input the services you choose, allows you to modify properties and options of the service, and will output the costs per service and total cost for the full estimate.
 
-In another browser window or tab, go to the [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) so we can walk through what it does and how it works. On the pricing calculator page you'll see 3 tabs:
+In another browser window or tab, go to the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) so we can walk through what it does and how it works. On the pricing calculator page you'll see 3 tabs:
 
 - **Products:** This is where you'll do most of your activity. This tab has all the Azure services listed and is where you'll add/remove services to formulate your estimate.
 - **Estimates:** This tab has all of your previously saved estimates here. We'll go through this in a bit.
