@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-linux-vm-in-azure.3-create-linux-vm
+title: Create a Linux virtual machine
+metadata:
+  title: Create a Linux virtual machine
+  description: Create a Linux virtual machine
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-create-linux-vm.md)]

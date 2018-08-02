@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.3-storage-queues
+title: Azure Storage Queues 
+metadata:
+  title: Azure Storage Queues  
+  description: Azure Storage Queues  
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-storage-queues.md)]
