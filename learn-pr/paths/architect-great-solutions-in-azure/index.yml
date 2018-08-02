@@ -4,9 +4,12 @@ title: Architect great solutions with Azure
 summary: Learn how to design and build secure, scalable, performant solutions on Azure by examining the core principles found in every good architecture.
 cardDescription: Learn how to design and build secure, scalable, performant solutions on Azure by examining the core principles found in every good architecture.
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: solutions-architect
-product: Azure
+levels: 
+- beginner
+roles: 
+- solutions-architect
+products: 
+- Azure
 prerequisites: None
 metadata:
   title: Architect great solutions with Azure
