@@ -1,0 +1,19 @@
+### YamlMime:LearningPath
+uid: learn.secure-your-web-data-in-azure
+title: Secure your web data in Azure
+summary: Azure was designed for security and compliance. Learn how to leverage the built-in services to store your app data securely to ensure that only authorized services and clients have access to it.
+cardDescription: Azure was designed for security and compliance. Learn how to leverage the built-in services to store your app data securely to ensure that only authorized services and clients have access to it.
+iconUrl: http://via.placeholder.com/120x120
+level: intermediate
+role: developer
+product: Azure
+prerequisites: None
+metadata:
+  title: Secure your web data in Azure
+  description: Azure was designed for security and compliance. Learn how to leverage the built-in services to store your app data securely to ensure that only authorized services and clients have access to it.
+modules:
+- learn.auth-apps-with-app-services
+- learn.manage-secrets-with-azure-key-vault
+- learn.secure-azure-sql-db
+- learn.secure-website-in-azure
+achievement: learn.secure-your-web-data-in-azure.trophy
