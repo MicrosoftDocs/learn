@@ -1,0 +1,1 @@
+Principles of resource groups
