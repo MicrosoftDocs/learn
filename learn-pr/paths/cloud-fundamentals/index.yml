@@ -8,7 +8,7 @@ levels:
 - beginner
 roles: 
 - developer
-- solutions-architect
+- solutionsArchitect
 - administrator
 products: 
 - Azure
