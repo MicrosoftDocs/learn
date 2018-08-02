@@ -3,7 +3,7 @@ achievements:
 - uid: learn.sample-path.trophy
   type: trophy
   title: Sample Learning Path Trophy
-  summary: Sample Learning Path Trophy Summary
+  summary: Trophy for the 'Sample Learning Path Trophy' learning path.
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.placeholder.trophy 
   type: trophy 
@@ -13,17 +13,32 @@ achievements:
 - uid: learn.sample-module-cloudshell.badge
   type: badge
   title: Sample Module with CloudShell Badge
-  summary: Sample Module with CloudShell Badge Summary
+  summary: Badge for the 'Sample module with CloudShell' module.
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.build-a-serverless-web-app.badge
   type: badge
   title: Build a serverless web app Badge
-  summary: Build a serverless web app Summary
+  summary: Badge for the 'Build a serverless web app' module.
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
 - uid: learn.cloud-fundamentals.trophy
   type: trophy
   title: Cloud Fundamentals Trophy
   summary: Trophy for the 'Cloud Fundamentals' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.azure-architecture-foundations.trophy
+  type: trophy
+  title: Azure architecture foundations Trophy
+  summary: Trophy for the 'Azure architecture foundations' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.architect-great-solutions-in-azure.trophy
+  type: trophy
+  title: Architect great solutions in Azure Trophy
+  summary: Trophy for the 'Architect great solutions in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-backend-services-in-azure.trophy
+  type: trophy
+  title: Create backend services in Azure Trophy
+  summary: Trophy for the 'Create backend services in Azure' learning path.
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.prepare-to-use-azure.trophy
   type: trophy
