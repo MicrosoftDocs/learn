@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.design-for-security.4-infrastructure-protection
+title: Infrastructure protection
+metadata:
+  title: Infrastructure protection
+  description: In this unit we'll discuss how to protect access to your infrastructure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-infrastructure-protection.md)]
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'Question 1'
+    choices:
+    - content: Answer 1
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer 2
+      isCorrect: false
+  - content: 'Question 2'
+    choices:
+    - content: Answer A
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer B
+      isCorrect: false
+    - content: Answer C
+      isCorrect: false

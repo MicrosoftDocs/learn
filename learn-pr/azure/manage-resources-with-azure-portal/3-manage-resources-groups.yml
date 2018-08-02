@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-resources-with-azure-portal.3-manage-resources-groups
+title: Manage collections of resources with Resource Groups in the Azure Portal  
+metadata:
+  title: Manage collections of resources with Resource Groups in the Azure Portal  
+  description: Manage collections of resources with Resource Groups in the Azure Portal  
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-manage-resources-groups.md)]
