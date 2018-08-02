@@ -3,6 +3,7 @@ uid: learn.publish-azure-web-app-with-visual-studio
 metadata:
   title: Publish an Azure Web App with Visual Studio for Windows or Mac
   description: In this module, we'll discuss how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
+title: Publish an Azure Web App with Visual Studio for Windows or Mac
 summary: In this module, we'll discuss how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
 abstract: In this module, we'll discuss how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
 cardDescription: In this module, we'll discuss how to how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
