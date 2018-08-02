@@ -4,9 +4,12 @@ title: Store data in Azure
 summary: Azure has a variety of data storage models available for any sort of data you want or need to store in the cloud. Learn which approach is best suited for your data, and the requirements to use these different storage capabilities.
 cardDescription: Azure has a variety of data storage models available for any sort of data you want or need to store in the cloud. Learn which approach is best suited for your data, and the requirements to use these different storage capabilities.
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
 prerequisites: None
 metadata:
   title: Store data in Azure
