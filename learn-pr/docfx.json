@@ -2,6 +2,12 @@
   "build": {
     "content": [
       {
+        "files": [
+          "achievements.yml"
+        ],
+        "dest": "achievements/main/"
+      },
+      {
         "src": "azure",
         "files": [
           "**.yml"
