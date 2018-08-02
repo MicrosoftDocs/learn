@@ -27,7 +27,7 @@ Make sure you have a clean calculator with nothing listed in the estimate. If yo
 We can configure the details of each so we can get a solid estimate of our costs. We'll use the West US region for all resources.
 
 **Virtual Machines**
-This is an ASP.NET application, so we'll need to use a Windows OS VM. This application doesn't require a massive amount of comuting power, so select the D2v3 instance size. We'll need two virtual machines and they will run all the time (730 hours/month). We're going to use premium SSD storage for these VMs, and will require just one disk per VM of size P10, for a total of two disks. 
+This is an ASP.NET application, so we'll need to use a Windows OS VM. This application doesn't require a massive amount of computing power, so select the D2v3 instance size. We'll need two virtual machines and they will run all the time (730 hours/month). We're going to use premium SSD storage for these VMs, and will require just one disk per VM of size P10, for a total of two disks. 
 
 **Azure SQL Database**
 For the database we're going to provision a single database under the vCore model. This will be a General Purpose, Gen 4 database with 4 vCores. We'll need 32 GB of storage, and will be retaining an average of 16 GB of storage. Our retention policy will be 8 weeks, 12 months and 5 years.
@@ -35,6 +35,14 @@ For the database we're going to provision a single database under the vCore mode
 **Application Gateway**
 For Application Gateway we're going to use the Web Application Firewall tier so we have some protection for our environment, and we're going to go with just two instances, as our load isn't going to be user high. We expect to process 1 TB of data.
 
-That helps us land on an estimate for our solution. We can now save this estimate so we can come back to it at a later time (and make adjustments if necessary) export it to Excel for further analysis and share the estimate via a URL. 
+Looking through your estimate, you should see a summary cost for each service you've added, and a full total for the entire estimate. In this case, your estimate should be in the neighborhood of $1,350.00 per month.
+
+## Share and save your estimate
+
+We now have an estimate for our solution. We can now save this estimate so we can come back to it at a later time (and make adjustments if necessary) export it to Excel for further analysis and share the estimate via a URL. To export the estimate, click Export at the bottom of the estimate. This will download your estimate in xlsx format, and will include all the services you'd added to your estimate.
+
+We can either share the Excel spreadsheet or we can click on the Share button in the calculator. This gives you back a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
+
+If you are logged in with your Azure account, you can save the estimate so you can come back to it later. Go ahead and click the Save button. If you are logged in you should see a notification that your estimate was saved. If you aren't logged in you'll see a message to log in to save your estimate. Once you've saved the estimate, scroll back up to the top of the page and select the Estimates tab you'll see your estimate there. You can then select it to pull it back up, or delete it if you no longer need it.
 
 What we've been able to do here is arrive at a cost estimate for a set of Azure services without spending anything more than a few minutes time. We didn't have to create anything, and we've got a fully sharable estimate that we can do further analysis or modifications on in the future. 
