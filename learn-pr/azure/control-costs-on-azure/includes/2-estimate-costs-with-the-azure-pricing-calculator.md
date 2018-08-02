@@ -47,4 +47,6 @@ We can either share the Excel spreadsheet or we can click on the Share button in
 
 If you are logged in with your Azure account, you can save the estimate so you can come back to it later. Go ahead and click the Save button. If you are logged in you should see a notification that your estimate was saved. If you aren't logged in you'll see a message to log in to save your estimate. Once you've saved the estimate, scroll back up to the top of the page and select the Estimates tab you'll see your estimate there. You can then select it to pull it back up, or delete it if you no longer need it.
 
+## Summary
+
 What we've been able to do here is arrive at a cost estimate for a set of Azure services without spending anything more than a few minutes time. We didn't have to create anything, and we've got a fully sharable estimate that we can do further analysis or modifications on in the future. You can not only use this to create estimates for systems where you know the specific services you plan to use, but can also use this to compare how different services might impact your overall costs (SQL Server on a VM vs. Azure SQL Database). Now let's take a look at how we can get insight into costs for services we've already deployed.
