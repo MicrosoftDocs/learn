@@ -4,9 +4,12 @@ title: Prepare to use Azure
 summary: Learn how to setup your computer to work with Azure services from the command line, scripts, or from a development environment.
 cardDescription: Learn how to setup your computer to work with Azure services from the command line, scripts, or from a development environment.
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
 prerequisites: None
 metadata:
   title: Prepare to use Azure
