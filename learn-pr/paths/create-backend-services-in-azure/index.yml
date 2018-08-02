@@ -8,12 +8,12 @@ prerequisites: None
 metadata:
   title: Create backend services in Azure
   description: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
-  levels: 
-  - beginner
-  roles: 
-  - developer
-  products: 
-  - Azure
+levels: 
+ - beginner
+roles: 
+ - developer
+products: 
+ - Azure
 modules:
 - learn.azure-functions-and-io-bindings
 - learn.create-serverless-logic-with-functions
