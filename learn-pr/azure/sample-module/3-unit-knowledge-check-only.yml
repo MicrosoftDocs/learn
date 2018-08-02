@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: Brainstorming of markdown file format for quiz.
       correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
       isCorrect: true
     - content: Brainstorming of markdown file format for quiz. Part 2
       isCorrect: false
+      incorrectExplanation: Why this answer is incorrect

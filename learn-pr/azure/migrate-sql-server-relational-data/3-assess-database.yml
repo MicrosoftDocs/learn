@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.3-assess-database
+title: Assessing your database
+metadata:
+  title: Assessing your database
+  description: Assessing your database
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-assess-database.md)]

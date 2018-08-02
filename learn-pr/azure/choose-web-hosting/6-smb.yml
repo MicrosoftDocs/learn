@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-web-hosting.6-smb
+title: Choose an Azure hosting option for small business or personal sites 
+metadata:
+  title: Choose an Azure hosting option for small business or personal sites 
+  description: Choose an Azure hosting option for small business or personal sites 
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-smb.md)]
+  achievement: learn.choose-web-hosting.badge

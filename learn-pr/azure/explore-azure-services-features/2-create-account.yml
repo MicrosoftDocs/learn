@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.2-create-account
+title: Create an Azure account
+metadata:
+  title: Create an Azure account
+  description: Create an Azure account
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-create-account.md)]

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.align-requirements-in-azure.4-iaas-paas-saas
+title: IaaS, PaaS & SaaS
+metadata:
+  title: IaaS, PaaS & SaaS
+  description: Learn about the difference between IaaS, PaaS & SaaS and what the right choice might be for your application
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-iaas-paas-saas.md)]
