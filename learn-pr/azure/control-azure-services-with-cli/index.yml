@@ -10,9 +10,12 @@ abstract: In this module, we'll discuss how to install the cross-platform Azure 
 cardDescription: In this module, we'll discuss how to install the cross-platform Azure command line tool (CLI) and use it to execute commands on your Azure subscription.
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
 units:
 - learn.control-azure-services-with-cli.1-intro-to-azure-cli
 - learn.control-azure-services-with-cli.2-knowledge-check

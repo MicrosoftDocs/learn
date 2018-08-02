@@ -14,11 +14,14 @@ cardDescription: This is the card description of the Sample Module (this will sh
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
 # Review the Docs Contributor Guide for levele, role, and product options
-level: intermediate
-role: solutionsArchitect
+levels: 
+- intermediate
+roles: 
+- solutionsArchitect
 # achievement is currently a placeholder and will need to be updated
 achievement: learn.placeholder.trophy
-product: Azure
+products: 
+- Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
 #- learn.design-for-performance-and-scalability.1-introduction

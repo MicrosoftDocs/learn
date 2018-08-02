@@ -10,9 +10,12 @@ abstract: In this module, we'll discuss how to install your preferred developmen
 cardDescription: In this module, we'll discuss how to install your preferred development environment on your local development machine.
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
 units:
 - learn.prepare-azure-dev-environment.1-motivation
 - learn.prepare-azure-dev-environment.2-set-up-vs-code
