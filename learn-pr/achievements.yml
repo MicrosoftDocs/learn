@@ -20,6 +20,11 @@ achievements:
   title: Build a serverless web app Badge
   summary: Build a serverless web app Summary
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.prepare-to-use-azure.trophy
+  type: trophy
+  title: Prepare to use Azure Trophy
+  summary: Trophy for the 'Prepare to use Azure' learning path
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.deploy-a-website-to-azure-with-managed-hosting.trophy
   type: trophy
   title: Deploy a website to Azure with Managed Hosting Trophy
