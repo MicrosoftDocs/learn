@@ -15,3 +15,8 @@ achievements:
   title: Build a serverless web app Badge
   summary: Build a serverless web app Summary
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.azure-architecture-foundations.trophy
+  type: trophy
+  title: Azure architecture foundations Trophy
+  summary: Trophy for the 'Azure architecture foundations' learning path.
+  iconUrl: http://via.placeholder.com/120x120
