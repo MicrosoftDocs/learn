@@ -16,11 +16,14 @@ cardDescription: This is the card description of the sample module
 # `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
 # `iconUrl` is the badge image 
-level: intermediate
+levels: 
+- intermediate
 # `beginner`, `intermediate`, `advanced`
-role: developer
+roles: 
+- developer
 # `developer`, `administrator`, `solutionsArchitect`, `businessUser`, `businessAnalyst`
-product: Azure
+products: 
+- Azure
 # 
 units:
 # `units` are lists of all of the unit uids, in the order they should be displayed to the user in
