@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-web-hosting.5-hosting-microservice
+title: Choose an Azure hosting option for microservice-based web applications 
+metadata:
+  title: Choose an Azure hosting option for microservice-based web applications 
+  description: Choose an Azure hosting option for microservice-based web applications 
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-hosting-microservice.md)]
+  achievement: learn.choose-web-hosting.badge

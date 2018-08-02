@@ -1,0 +1,26 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.manage-resources-with-azure-portal
+metadata:
+  title: Manage resources with the Azure portal
+  description: In this module, we'll discuss how to manage your resources with the Azure portal.
+title: Manage resources with the Azure portal
+summary: In this module, we'll discuss how to manage your resources with the Azure portal.
+abstract: In this module, we'll discuss how to manage your resources with the Azure portal.
+cardDescription: In this module, we'll discuss how to manage your resources with the Azure portal.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
+units:
+- learn.manage-resources-with-azure-portal.1-motivation
+- learn.manage-resources-with-azure-portal.2-intro-azure-portal
+- learn.manage-resources-with-azure-portal.3-manage-resources-groups
+- learn.manage-resources-with-azure-portal.4-add-resources-from-marketplace
+- learn.manage-resources-with-azure-portal.5-customize-azure-dashboard
+- learn.manage-resources-with-azure-portal.6-summary
+achievement: learn.manage-resources-with-azure-portal.badge

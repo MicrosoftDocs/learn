@@ -1,0 +1,1 @@
+Use automation to reduce effort and error
