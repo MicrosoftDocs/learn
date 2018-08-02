@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.5-create-poc
+title: Create a proof of concept
+metadata:
+  title: Create a proof of concept
+  description: Create a proof of concept
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-create-poc.md)]

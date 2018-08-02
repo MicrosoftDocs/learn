@@ -1,0 +1,24 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.prepare-azure-dev-environment
+metadata:
+  title: Prepare your development environment for Azure development
+  description: In this module, we'll discuss how to install your preferred development environment on your local development machine.
+title: Prepare your development environment for Azure development
+summary: In this module, we'll discuss how to install your preferred development environment on your local development machine.
+abstract: In this module, we'll discuss how to install your preferred development environment on your local development machine.
+cardDescription: In this module, we'll discuss how to install your preferred development environment on your local development machine.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+level: beginner
+role: developer
+product: Azure
+units:
+- learn.prepare-azure-dev-environment.1-motivation
+- learn.prepare-azure-dev-environment.2-set-up-vs-code
+- learn.prepare-azure-dev-environment.3-set-up-vs-code-exercise
+- learn.prepare-azure-dev-environment.4-set-up-vs
+- learn.prepare-azure-dev-environment.5-set-up-vs-exercise
+- learn.prepare-azure-dev-environment.6-set-up-eclipse-ide-for-java-devs
+- learn.prepare-azure-dev-environment.7-set-up-eclipse-ide-exercise
+achievement: learn.prepare-azure-dev-environment.badge

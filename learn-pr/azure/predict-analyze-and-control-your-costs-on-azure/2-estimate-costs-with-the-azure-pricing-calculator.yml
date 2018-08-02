@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.predict-analyze-and-control-your-costs-on-azure.2-estimate-costs-with-the-azure-pricing-calculator
+title: Estimate costs with the Azure Pricing Calculator
+metadata:
+  title: Estimate costs with the Azure Pricing Calculator
+  description: In this unit we'll discuss how to estimate costs with the Azure Pricing Calculator
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-estimate-costs-with-the-azure-pricing-calculator.md)]
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'Question 1'
+    choices:
+    - content: Answer 1
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer 2
+      isCorrect: false
+  - content: 'Question 2'
+    choices:
+    - content: Answer A
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer B
+      isCorrect: false
+    - content: Answer C
+      isCorrect: false

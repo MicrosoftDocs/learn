@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.4-administer-azure
+title: Administering Azure with the Azure CLI
+metadata:
+  title: Administering Azure with the Azure CLI
+  description: Administering Azure with the Azure CLI
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-administer-azure.md)]
