@@ -20,6 +20,11 @@ achievements:
   title: Build a serverless web app Badge
   summary: Badge for the 'Build a serverless web app' module.
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.administer-containers-in-azure.trophy
+  type: trophy
+  title: Administer containers in Azure Trophy
+  summary: Trophy for the 'Administer containers in Azure' learning path
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.cloud-fundamentals.trophy
   type: trophy
   title: Cloud Fundamentals Trophy
