@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-azure-web-app-with-visual-studio.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

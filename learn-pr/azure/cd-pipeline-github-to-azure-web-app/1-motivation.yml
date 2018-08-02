@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.cd-pipeline-github-to-azure-web-app.1-motivation
+title: Create a continuous deployment pipeline from GitHub to your Azure Web App
+metadata:
+  title: Create a continuous deployment pipeline from GitHub to your Azure Web App
+  description: Create a continuous deployment pipeline from GitHub to your Azure Web App
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-motivation.md)]
