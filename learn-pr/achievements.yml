@@ -50,6 +50,11 @@ achievements:
   title: Publish an Azure Web App with Visual Studio for Windows or Mac Badge
   summary: Publish an Azure Web App with Visual Studio for Windows or Mac Badge Summary
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.administer-containers-in-azure.trophy
+  type: trophy
+  title: Administer containers in Azure Trophy
+  summary: Trophy for the 'Administer containers in Azure' learning path
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.cloud-fundamentals.trophy
   type: trophy
   title: Cloud Fundamentals Trophy
