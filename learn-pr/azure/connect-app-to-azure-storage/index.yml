@@ -10,9 +10,12 @@ cardDescription: In this module, we’ll create a new console application and ad
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
 # Review the Docs Contributor Guide for levele, role, and product options
-level: beginner
-role: developer
-product: Azure
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
 - learn.connect-app-to-azure-storage.1-motivation
