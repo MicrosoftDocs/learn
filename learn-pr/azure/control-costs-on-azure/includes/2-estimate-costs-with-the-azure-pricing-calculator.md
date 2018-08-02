@@ -16,7 +16,7 @@ The Products tab is where we'll do most of our work, so make sure you're on that
 
 From our original example, let's imagine this system that will run on two Azure VMs and will connect to an Azure SQL DB. We'd also like to have a layer 7 firewall in place to ensure we have enhanced load balancing capabilities. We can use the Azure Pricing Calculator to figure out what this will cost, and export our estimate to share with the team.
 
-**insert image of architecture**
+![Reference architecture diagram](../images/estimate-costs-architecture.png)
 
 Make sure you have a clean calculator with nothing listed in the estimate. If you have anything presently in your estimate, click the trash can icon for delete all at the estimate level to remove all services from your estimate. Now, let's add the following services to the estimate by clicking on them:
 
@@ -39,10 +39,12 @@ Looking through your estimate, you should see a summary cost for each service yo
 
 ## Share and save your estimate
 
-We now have an estimate for our solution. We can now save this estimate so we can come back to it at a later time (and make adjustments if necessary) export it to Excel for further analysis and share the estimate via a URL. To export the estimate, click Export at the bottom of the estimate. This will download your estimate in xlsx format, and will include all the services you'd added to your estimate.
+We now have an estimate for our solution. We can now save this estimate so we can come back to it at a later time (and make adjustments if necessary), export it to Excel for further analysis, and share the estimate via a URL. 
+
+To export the estimate, click Export at the bottom of the estimate. This will download your estimate in Excel xlsx format, and will include all the services you'd added to your estimate.
 
 We can either share the Excel spreadsheet or we can click on the Share button in the calculator. This gives you back a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
 
 If you are logged in with your Azure account, you can save the estimate so you can come back to it later. Go ahead and click the Save button. If you are logged in you should see a notification that your estimate was saved. If you aren't logged in you'll see a message to log in to save your estimate. Once you've saved the estimate, scroll back up to the top of the page and select the Estimates tab you'll see your estimate there. You can then select it to pull it back up, or delete it if you no longer need it.
 
-What we've been able to do here is arrive at a cost estimate for a set of Azure services without spending anything more than a few minutes time. We didn't have to create anything, and we've got a fully sharable estimate that we can do further analysis or modifications on in the future. 
+What we've been able to do here is arrive at a cost estimate for a set of Azure services without spending anything more than a few minutes time. We didn't have to create anything, and we've got a fully sharable estimate that we can do further analysis or modifications on in the future. You can not only use this to create estimates for systems where you know the specific services you plan to use, but can also use this to compare how different services might impact your overall costs (SQL Server on a VM vs. Azure SQL Database). Now let's take a look at how we can get insight into costs for services we've already deployed.

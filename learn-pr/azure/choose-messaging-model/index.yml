@@ -10,9 +10,12 @@ abstract: In this module, we'll compare different event and message services ava
 cardDescription: In this module, we'll compare different event and message services available in Azure - Storage Queues, Service Bus, Event Grid, and Event Hubs. We will look at the appropriate use for each technology and provide practical guidance on which one to choose for your messaging needs.
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
 units:
 - learn.choose-messaging-model.1-why-use-events-messages
 - learn.choose-messaging-model.2-knowledge-check
