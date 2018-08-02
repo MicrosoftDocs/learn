@@ -20,6 +20,11 @@ achievements:
   title: Build a serverless web app Badge
   summary: Badge for the 'Build a serverless web app' module.
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.architect-great-solutions-in-azure.trophy
+  type: trophy
+  title: Architect great solutions in Azure Trophy
+  summary: Trophy for the 'Architect great solutions in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.create-backend-services-in-azure.trophy
   type: trophy
   title: Create backend services in Azure Trophy
