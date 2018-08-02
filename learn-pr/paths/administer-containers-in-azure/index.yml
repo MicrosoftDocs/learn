@@ -4,9 +4,9 @@ title: Administer containers in Azure
 summary: Azure Container Instances are the quickest and easiest way to run containers in Azure. This learning path will teach you how to create and manage your containers, and how ACI can be used to provide elastic scale for Kubernetes.
 cardDescription: Azure Container Instances are the quickest and easiest way to run containers in Azure. This learning path will teach you how to create and manage your containers, and how ACI can be used to provide elastic scale for Kubernetes.
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: beginner
+roles: developer
+products: Azure
 prerequisites: None
 metadata:
   title: Administer containers in Azure
