@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.design-for-efficiency-and-operations.2-maximize-efficiency-of-cloud-spend
+title: Maximize efficiency of cloud spend
+metadata:
+  title: Maximize efficiency of cloud spend
+  description: In this unit we'll discuss how to maximze the efficiency of your cloud expenditures
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-maximize-efficiency-of-cloud-spend.md)]
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'Question 1'
+    choices:
+    - content: Answer 1
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer 2
+      isCorrect: false
+  - content: 'Question 2'
+    choices:
+    - content: Answer A
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Answer B
+      isCorrect: false
+    - content: Answer C
+      isCorrect: false

@@ -1,0 +1,31 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.control-and-organize-with-resource-manager
+metadata:
+  title: Control and organize Azure resources with Azure Resource Manager
+  description: In this module, we'll discuss how to control and organize Azure resources with Azure Resource Manager.
+title: Design a great Azure architecture
+summary: In this module, we'll discuss how to control and organize Azure resources with Azure Resource Manager. (this will show on the module card)
+abstract: In this module, we'll discuss how to control and organize Azure resources with Azure Resource Manager.
+cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels: 
+- intermediate
+roles: 
+- solutionsArchitect
+# achievement is currently a placeholder and will need to be updated
+achievement: learn.placeholder.trophy
+products: 
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.control-and-organize-with-resource-manager.1-introduction
+- learn.control-and-organize-with-resource-manager.2-principles-of-resource-groups
+- learn.control-and-organize-with-resource-manager.3-control-access-with-rbac
+- learn.control-and-organize-with-resource-manager.4-use-tagging-to-organize-resources
+- learn.control-and-organize-with-resource-manager.5-use-policies-to-enforce-standards
+- learn.control-and-organize-with-resource-manager.6-use-resource-locks-to-protect-resources
+- learn.control-and-organize-with-resource-manager.7-quiz
+- learn.control-and-organize-with-resource-manager.8-summary
