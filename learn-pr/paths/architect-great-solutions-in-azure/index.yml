@@ -7,7 +7,7 @@ iconUrl: http://via.placeholder.com/120x120
 levels: 
 - beginner
 roles: 
-- solution-architect
+- solutionsArchitect
 products: 
 - Azure
 prerequisites: None
