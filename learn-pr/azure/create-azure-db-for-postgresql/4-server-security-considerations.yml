@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-db-for-postgresql.4-server-security-considerations
+title: Server security considerations
+metadata:
+  title: Server security considerations
+  description: Server security considerations
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-server-security-considerations.md)]
