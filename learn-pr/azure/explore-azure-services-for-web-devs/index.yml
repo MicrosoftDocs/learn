@@ -10,9 +10,12 @@ abstract: In this module, we'll explore Azure services for web developers.
 cardDescription: In this module, we'll explore Azure services for web developers.
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: 
+- beginner
+roles: 
+- developer
+products:
+- Azure
 units:
 - learn.explore-azure-services-for-web-devs.1-web-app-hosting
 - learn.explore-azure-services-for-web-devs.2-data
