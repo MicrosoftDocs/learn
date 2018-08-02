@@ -1,0 +1,24 @@
+### YamlMime:LearningPath
+uid: learn.prepare-to-use-azure
+title: Prepare to use Azure
+summary: Learn how to setup your computer to work with Azure services from the command line, scripts, or from a development environment.
+cardDescription: Learn how to setup your computer to work with Azure services from the command line, scripts, or from a development environment.
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
+prerequisites: None
+metadata:
+  title: Prepare to use Azure
+  description: Learn how to setup your computer to work with Azure services from the command line, scripts, or from a development environment.
+modules:
+- learn.automate-azure-tasks-with-powershell
+- learn.explore-azure-services-for-web-devs
+- learn.control-azure-services-with-cli
+- learn.manage-resources-with-azure-poratl
+- learn.prepare-azure-dev-environment
+- learn.principles-cloud-computing
+achievement: learn.prepare-to-use-azure.trophy

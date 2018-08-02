@@ -1,0 +1,1 @@
+IaaS, PaaS & SaaS

@@ -1,0 +1,28 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.create-linux-vm-in-azure
+metadata:
+  title: Create a Linux virtual machine in Azure
+  description: In this module, we'll discuss how to create a Linux virtual machine using the Azure portal. 
+title: Create a Linux virtual machine in Azure
+summary: In this module, we'll discuss how to create a Linux virtual machine using the Azure portal.
+abstract: In this module, we'll discuss how to create a Linux virtual machine using the Azure portal.
+cardDescription: In this module, we'll discuss how to create a Linux virtual machine using the Azure portal.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels: 
+- beginner
+roles:
+- developer
+products: 
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.create-linux-vm-in-azure.1-intro
+- learn.create-linux-vm-in-azure.2-select-linux-image
+- learn.create-linux-vm-in-azure.3-create-linux-vm
+- learn.create-linux-vm-in-azure.4-connect-to-linux-vm
+- learn.create-linux-vm-in-azure.5-knowledge-check
+- learn.create-linux-vm-in-azure.6-summary
+achievement: learn.create-linux-vm-in-azure.badge

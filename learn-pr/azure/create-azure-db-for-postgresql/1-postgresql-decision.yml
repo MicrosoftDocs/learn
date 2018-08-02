@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-db-for-postgresql.1-postgresql-decision
+title: Determine if PostgreSQL in Azure is the right storage option for you
+metadata:
+  title: Determine if PostgreSQL in Azure is the right storage option for you
+  description: Determine if PostgreSQL in Azure is the right storage option for you
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-postgresql-decision.md)]
