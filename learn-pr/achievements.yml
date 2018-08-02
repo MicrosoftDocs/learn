@@ -15,3 +15,8 @@ achievements:
   title: Build a serverless web app Badge
   summary: Build a serverless web app Summary
   iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.store-data-in-azure.trophy
+  type: trophy
+  title: Store data in Azure Trophy
+  summary: Trophy for the 'Store data in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
