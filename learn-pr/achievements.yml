@@ -25,6 +25,11 @@ achievements:
   title: Work with relational data in Azure Trophy
   summary: Trophy for the 'Working with relational data in Azure' learning path.
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.secure-your-web-data-in-azure.trophy
+  type: trophy
+  title: Secure your web data in Azure Trophy
+  summary: Trophy for the 'Secure your web data in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.store-data-in-azure.trophy
   type: trophy
   title: Store data in Azure Trophy
