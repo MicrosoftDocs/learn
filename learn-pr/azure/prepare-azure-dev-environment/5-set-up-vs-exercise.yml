@@ -1,0 +1,21 @@
+### YamlMime:ModuleUnit
+# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
+uid: learn.prepare-azure-dev-environment.5-set-up-vs-exercise
+metadata:
+  title: Set up Visual Studio exercise
+  description: Set up Visual Studio exercise
+  displayType: one-column
+title: Sample Unit 3 - Knowledge Check Only
+durationInMinutes: 11
+content: Content is required
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'What this markdown file talking about:'
+    choices:
+    - content: Brainstorming of markdown file format for quiz.
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Brainstorming of markdown file format for quiz. Part 2
+      isCorrect: false

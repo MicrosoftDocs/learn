@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.prepare-azure-dev-environment.1-motivation
+title: Prepare your development environment for Azure development  
+metadata:
+  title: Prepare your development environment for Azure development  
+  description: Prepare your development environment for Azure development  
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-motivation.md)]

@@ -1,0 +1,1 @@
+Understanding Azure solutions for public, private and hybrid cloud

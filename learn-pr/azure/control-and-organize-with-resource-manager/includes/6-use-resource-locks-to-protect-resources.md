@@ -1,0 +1,1 @@
+Use resource locks to protect resources
