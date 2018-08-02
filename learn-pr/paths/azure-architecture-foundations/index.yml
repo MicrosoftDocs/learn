@@ -4,9 +4,12 @@ title: Azure architecture foundations
 summary: Learn the core concepts and strategies used by Solutions Architects to properly plan and design performant, scalable, and secure solutions on the Azure platform.
 cardDescription: Learn the core concepts and strategies used by Solutions Architects to properly plan and design performant, scalable, and secure solutions on the Azure platform.
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: solutions-architect
-product: Azure
+levels: 
+- beginner
+roles: 
+- solutions-architect
+products: 
+- Azure
 prerequisites: None
 metadata:
   title: Azure architecture foundations
