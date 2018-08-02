@@ -8,7 +8,7 @@ title: Predict costs and optimize spending
 summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend, and some best practices that you can leverage to help you save money.
 abstract: |
   * Use the Azure Calculator to estimate your costs
-  * Predict and optimize your costs on Azure
+  * Identify tools you can use to predict and optimize your costs on Azure
   * Identify best practices for reducing your infrastructure costs
   * Identify best practices for reducing your licensing costs
 cardDescription: This is the card description of the Sample Module (this will show on the achievement badge)
