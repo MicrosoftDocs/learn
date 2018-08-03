@@ -44,9 +44,9 @@ This solution is not limited to .NET, other platforms such as Node.js or Java ca
 
 Even something as simple as how is the response time of the application might have a lot of complexity behind to troubleshoot. Application Insights will uncover all of that complexity and will show you which components in your applications are slowing down your requests. is it the web server being overloaded? Is it a a specific SQL query that's not optimized. Is that API that you're calling degraded? Without an application performance monitoring solution like application insights you are running blind. Your users might report that things are going slower than normal, but most likely this is pure based on a feeling and without application insights you don't have a baseline to compare to as well.
 
-By having application performance monitoring you can see the impact on the performance when you change your application. This allows you to make well grounded sizing decision. Using smart detection application insights will inform you that a certain amount of users are encountering failures which is higher than normal. THis will allow you to detect issues before users start calling them in.
-
 ![Application Insights Availability](../media/3-use-monitoring-and-analytics-to-gain-operational-insights/04-webtests.png)
+
+By having application performance monitoring you can see the impact on the performance when you change your application. This allows you to make well grounded sizing decision. Using smart detection application insights will inform you that a certain amount of users are encountering failures which is higher than normal. THis will allow you to detect issues before users start calling them in.
 
 Application insights will help you monitor both performance and availability allowing you to respond to failure, even partial failure a lot quicker.
 
