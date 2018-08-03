@@ -150,7 +150,7 @@ achievements:
   title: IoT Suite for ops
   summary: IoT Suite for ops
   iconUrl: http://via.placeholder.com/120x120
- - uid: learn.web-app-with-mean-on-linux-vm.badge
+- uid: learn.web-app-with-mean-on-linux-vm.badge
   type: badge
   title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
   summary: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
