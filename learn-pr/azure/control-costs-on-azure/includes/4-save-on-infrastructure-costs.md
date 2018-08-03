@@ -20,6 +20,10 @@ If you have VM workloads that are only used during certain periods of time, but 
 
 This is a great strategy for development environments. It's often the case that development may happen only during business hours, giving you the flexibility to deallocate these systems in the off hours, stopping your compute costs from accruing. Azure now has an [automation solution](https://docs.microsoft.com/en-us/azure/automation/automation-solution-vm-management) fully available for you to leverage in your environment.
 
+You can also use the Auto-shutdown feature on a virtual machine to schedule automated shutdowns.
+
+![Auto-shutdown](../images/vm-auto-shutdown.png)
+
 ## Delete unused virtual machines
 
 This may sound obvious but if you aren't using a service, you should shut it down. It's not uncommon to find non-production or proof of concept systems left around following a project that are no longer needed. Regularly review your environment and work to identify these systems. Shutting these systems down can have a multifaceted benefit by not only saving you on infrastructure costs, but also potential savings on licensing and operations.
