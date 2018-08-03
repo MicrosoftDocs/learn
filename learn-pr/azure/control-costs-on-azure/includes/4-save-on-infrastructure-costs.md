@@ -8,7 +8,9 @@ If you have VM workloads that are static and predictable in nature, this is a fa
 
 Recall from our previous discussion, Cost Management and Advisor may recommend is right-sizing or shutting down VMs. Right-sizing a virtual machine is the process of resizing it to a proper size. Let's imagine you have a server running as a domain controller that is sized as a Standard_D4sv3, but your VM is sitting at 90% idle the vast majority of the time. By resizing this VM to a Standard_D2s_v3 you'd reduce your compute cost by 50% (costs are linear and double for each size larger in the same series). In this case you might even benefit from changing the instance series to go to a less expensive VM series.
 
-Changing VM size is easy on Azure and can be done through the Azure portal, PowerShell or CLI, typically requiring a reboot to take effect. Oversized virtual machines is a common driver of waste on Azure, and you should take advantage of every opportunity to ensure you are as effient as possible.
+![Resize VM](../images/vm-resize.png)
+
+Changing VM size is easy on Azure and can be done through the Azure portal, PowerShell or CLI, typically requiring a reboot to take effect. Oversized virtual machines is a common driver of waste on Azure, and you should take advantage of every opportunity to ensure you are as efficient as possible.
 
 ## Deallocate virtual machines in off hours
 
