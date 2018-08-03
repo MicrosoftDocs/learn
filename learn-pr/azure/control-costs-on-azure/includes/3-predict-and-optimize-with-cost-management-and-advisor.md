@@ -4,15 +4,30 @@ So we've talked about how to estimate your costs before you deploy services on A
 
 Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, and cost. Advisor analyzes your deployed services and looks for ways to improve your environment across those four areas. We'll focus on the cost recommendations here, but you'll want to take some time to review the other recommendations as well.
 
-You can find Advisor in the portal where you can see all recommendations, and you'll also see Advisor recommendations as a panel at a virtual machine level. Advisor makes cost recommendations in the following areas:
+Advisor makes cost recommendations in the following areas:
 
 - **Reduce costs by eliminating unprovisioned ExpressRoute circuits** - this identifies ExpressRoute circuits that have been in the provider status of *Not Provisioned* for more than one month, and recommends deleting the circuit if you aren't planning to provision the circuit with your connectivity provider.
 - **Buy reserved instances to save money over pay-as-you-go** - this reviews your virtual machine usage over the last 30 days and determine if you could save money by purchasing reserved instances. Advisor will show you the regions and sizes where you potentially have the most savings and will show you the estimated savings from purchasing reserved instances.
 - **Right-size or shutdown underutilized virtual machines** - this monitors your virtual machine usage for 14 days and then identifies low-utilization virtual machines. Virtual machines whose average CPU utilization is 5 percent or less and network usage is 7 MB or less for four or more days are considered low-utilization virtual machines. The average CPU utilization threshold is adjustable up to 20%. By identifying these underutilized virtual machines, you can decide to resize them to a smaller instance type, reducing your costs.
 
+Let's take a look at where you can find Azure Advisor in the portal. First, Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com). Click on All services, and in the Management Tools category you will see Advisor. You can also type Advisor in the filter box to filter on just that service. Click on Advisor and you'll be taken to the Advisor recommendations dashboard, where you can see all recommendations for your subscription. You'll see a box for each category of recommendations. 
 
+> [!NOTE]
+> You may not have any recommendations on cost in Advisor. This could be because assessments have not yet completed, or simply because Advisor has no recommendations.
 
-These recommendations are all places where you may be inefficiently spending money, and are a great place to start and continue to revisit when looking for places to reduce cloud spend. Be sure and review this periodically for recommendations across all four areas.
+![Advisor recommendations](../images/advisor-recommendations.png)
+
+Clicking on the Cost box will take you to detailed recommendations for where you can see the recommendations that Advisor has.
+
+![Advisor cost recommendations](../images/advisor-cost-recommendations.png)
+
+Clicking on any recommendation will take you to the details for that specific recommendation. Here you'll be able to take specific action, such as resizing virtual machines to reduce your spend.
+
+![Advisor resize VM recommendation](../images/advisor-resize-vm.png)
+
+**TODO add markdown to open portal**
+
+These recommendations are all places where you may be inefficiently spending money, and are a great place to start and continue to revisit when looking for places to reduce cloud spend. In our example here, there's an opportunity for us to save around $700 per month if we take these recommendations. These savings add up, so be sure and review this periodically for recommendations across all four areas.
 
 ## Azure Cost Management
 
