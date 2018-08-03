@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-services-for-web-devs.5-security-identity
+title: Security and identity  
+metadata:
+  title: Security and identity  
+  description: Security and identity  
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-security-identity.md)]

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.cd-pipeline-github-to-azure-web-app.4-make-a-change
+title: Make a change and see it deployed
+metadata:
+  title: Make a change and see it deployed
+  description: Make a change and see it deployed
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-make-a-change.md)]

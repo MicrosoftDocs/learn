@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.7-service-hub
+title: Azure Service Bus 
+metadata:
+  title: Azure Service Bus  
+  description: Azure Service Bus  
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-service-hub.md)]

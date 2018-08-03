@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-azure-web-app-with-visual-studio.3-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  displayType: one-column
+title: Knowledge check
+durationInMinutes: 11
+content: Content is required
+quiz:
+  title: 'Quiz Title'
+  questions:
+  - content: 'What this markdown file talking about:'
+    choices:
+    - content: Brainstorming of markdown file format for quiz.
+      correctExplanation: Why this answer is correct
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: true
+    - content: Brainstorming of markdown file format for quiz. Part 2
+      isCorrect: false

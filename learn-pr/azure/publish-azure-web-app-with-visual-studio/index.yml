@@ -1,0 +1,26 @@
+### YamlMime:Module
+uid: learn.publish-azure-web-app-with-visual-studio
+metadata:
+  title: Publish an Azure Web App with Visual Studio for Windows or Mac
+  description: In this module, we'll discuss how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
+title: Publish an Azure Web App with Visual Studio for Windows or Mac
+summary: In this module, we'll discuss how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
+abstract: In this module, we'll discuss how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
+cardDescription: In this module, we'll discuss how to how to use the built-in server explorer and publishing features of Visual Studio for Windows to deploy, debug, and manage an ASP.NET based web application hosted on Azure.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.publish-azure-web-app-with-visual-studio.1-intro
+- learn.publish-azure-web-app-with-visual-studio.2-publish-asp-net-to-azure-app-service
+- learn.publish-azure-web-app-with-visual-studio.3-knowledge-check
+- learn.publish-azure-web-app-with-visual-studio.4-publish-asp-net-app-from-vs
+- learn.publish-azure-web-app-with-visual-studio.5-summary
+achievement: learn.publish-azure-web-app-with-visual-studio.badge

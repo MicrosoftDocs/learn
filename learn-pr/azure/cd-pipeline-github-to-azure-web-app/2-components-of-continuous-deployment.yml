@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.cd-pipeline-github-to-azure-web-app.2-components-of-continuous-deployment
+title: Identify the components of continuous deployment in Azure App Service
+metadata:
+  title: Identify the components of continuous deployment in Azure App Service
+  description: Identify the components of continuous deployment in Azure App Service
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-components-of-continuous-deployment.md)]
