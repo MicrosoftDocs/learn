@@ -6,4 +6,4 @@ metadata:
   description: Introduction
 durationInMinutes: 12
 content: |
-  [!include[](includes/1.intro.md)]
+  [!include[](includes/1-intro.md)]

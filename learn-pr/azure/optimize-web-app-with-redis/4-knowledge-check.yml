@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 # Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
-uid: learn.migrate-sql-server-relational-data.4-knowledge-check
+uid: learn.optimize-web-app-with-redis.4-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
