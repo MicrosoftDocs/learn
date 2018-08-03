@@ -16,9 +16,13 @@ These recommendations are all places where you may be inefficiently spending mon
 
 Azure Cost Management is another free, built in Azure tool that can be used to gain greater insights into where your cloud spend is going. You can see historical breakdowns of what services you are spending your money on, and how it is tracking against budgets that you have set. You can set budgets, schedule reports, and analyze your areas of spend.
 
+**Show a screenshot where we're able to track against a budget** https://docs.microsoft.com/en-us/azure/billing/billing-getting-started
+
 ## Cloudyn
 
 Cloudyn, a Microsoft subsidiary, allows you to track cloud usage and expenditures for your Azure resources and other cloud providers including AWS and Google. Easy-to-understand dashboard reports help with cost allocation and showbacks/chargebacks as well. Cost Management helps optimize your cloud spending by identifying underutilized resources that you can then manage and adjust. Usage for Azure is free, and there are paid options for premium support and to view data from other clouds.
+
+**Show a screenshot here where we're able to save money by identifying waste**
 
 ## Summary
 
