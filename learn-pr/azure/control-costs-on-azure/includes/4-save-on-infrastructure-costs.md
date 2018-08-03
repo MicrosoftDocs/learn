@@ -2,31 +2,27 @@ So we've looked through how you can get estimates for environments you'd like to
 
 ## Use Reserved Instances
 
-What are reserved instances
-
-**from blog** - We recently announced the general availability of reserved instances on Azure, and this was great to see come to fruition. For VM workloads that are static and predictable in nature, this is a fantastic offer that can save upwards of 70% depending on the VM size. For workloads that are up and running 24x7x365 and are unlikely to change in VM size this certainly an option that should be looked at. Reserved instances are purchased in 1 or 3 year terms, with payment required for the full term up front. Once purchased, we match up the reservation to running instances, and decrement the hours from your reservation. Reservations can be purchased through the Azure Portal and since reserved instances are a compute discount, they are available for both Windows and Linux VMs. For more information take a look at the following documentation.
+If you have VM workloads that are static and predictable in nature, this is a fantastic offer that can save upwards of 70% depending on the VM size. For workloads that are up and running 24x7x365 and are unlikely to change in VM size this certainly an option that should be looked at. Reserved instances are purchased in 1 or 3 year terms, with payment required for the full term up front. Once purchased, Microsoft matches up the reservation to running instances, and decrements the hours from your reservation. Reservations can be purchased through the Azure Portal and since reserved instances are a compute discount, they are available for both Windows and Linux VMs.
 
 ## Right-size underutilized virtual machines
 
-**from blog** One of the things that Cost Management and Advisor may recommend is right-sizing or shutting down VMs. Changing VM size is easy on Azure, and if you have VMs that typically sit idle, this is a great way you can reduce your costs. Shutting down unused systems is important as well, as often times VMs are created for a test environment or a project that maybe never took off, but nobody went back and cleaned up the environment afterwards. Identifying these systems is important, as they drive up your bill unnecessarily. It's also important to take a look at the usage patterns of your systems. If you have systems that are primarily used during business hours (or another regular time period) you should evaluate if you can shut them down when they are not being used. I've had customers succefully use Azure Automation to run scripts that will stop/start VMs on a schedule. Below are a couple examples of this (both of which are avialble in Azure Automatin), you can use these scripts or modify them as appropriate. Bottom line, it's important to evauluate the size, usage and usage patterns of your VMs to ensure they are as cost effective as possible.
+Recall from our previous discussion, Cost Management and Advisor may recommend is right-sizing or shutting down VMs. Right-sizing a virtual machine is the process of resizing it to a proper size. Let's imagine you have a server running as a domain controller that is sized as a Standard_D4sv3, but your VM is sitting at 90% idle the vast majority of the time. By resizing this VM to a Standard_D2s_v3 you'd reduce your compute cost by 50% (costs are linear and double for each size larger in the same series). In this case you might even benefit from changing the instance series to go to a less expensive VM series.
 
-What is server size
-How do we change instance sizes
-What is the impact to costs
+Changing VM size is easy on Azure and can be done through the Azure portal, PowerShell or CLI, typically requiring a reboot to take effect. Oversized virtual machines is a common driver of waste on Azure, and you should take advantage of every opportunity to ensure you are as effient as possible.
 
 ## Deallocate virtual machines in off hours
 
-Use auto-shutdown
-Use the new stop/start automation release
+If you have VM workloads that are only used during certain periods of time, but are running them every hour of every day, you're wasting money. These are great candidates to shut down when not in use, and start back up on a schedule. 
 
+This is a great strategy for development environments. It's often the case that development may happen only during business hours, giving you the flexibility to deallocate these systems in the off hours, stopping your compute costs from accruing. Azure now has an [automation solution](https://docs.microsoft.com/en-us/azure/automation/automation-solution-vm-management) fully available for you to leverage in your environment.
 
 ## Delete unused virtual machines
 
-This may sound obvious...
+This may sound obvious but if you aren't using a service, you should shut it down. It's not uncommon to find non-production or proof of concept systems left around following a project that are no longer needed. Regularly review your environment and work to identify these systems. Shutting these systems down can have a multifaceted benefit by not only saving you on infrastructure costs, but also potential savings on licensing and operations.
 
 ## Migrate to PaaS or SaaS services
 
-**from blog** Lastly, as you move workloads to the cloud, a natural evolution is to start with IaaS services and them move them to PaaS as appropriate, and in an iterative process. PaaS services typically provide a substantial savings in both resource and operational costs. The challenge is that, depending on the type of service, varying levels of effort will be required to move to these servcies from both a time and resource perspective. You may be able to easily move a SQL Server databse to Azure SQL DB, but it may take substantially more effort to move your multi-tier application to a container or serverless based architecture. It's a good practice to continuously evaluate the architecture of your applications to determine if there are efficiences to be gained through PaaS services. Azure makes it easy to test these out with little risk, giving you the ability to try out new architecture patterns relatively easily. That said, it's typically a longer journey and may not be of immediate help if you're looking for quick wins from a cost savings perspective. The Azure Architecture Center is a great place to get ideas for transforming your application, as well as best practices across a wide array of architectures and Azure services.
+Lastly, as you move workloads to the cloud, a natural evolution is to start with IaaS services and them move them to PaaS as appropriate, and in an iterative process. PaaS services typically provide a substantial savings in both resource and operational costs. The challenge is that, depending on the type of service, varying levels of effort will be required to move to these servcies from both a time and resource perspective. You may be able to easily move a SQL Server databse to Azure SQL DB, but it may take substantially more effort to move your multi-tier application to a container or serverless based architecture. It's a good practice to continuously evaluate the architecture of your applications to determine if there are efficiences to be gained through PaaS services. Azure makes it easy to test these out with little risk, giving you the ability to try out new architecture patterns relatively easily. That said, it's typically a longer journey and may not be of immediate help if you're looking for quick wins from a cost savings perspective. The Azure Architecture Center is a great place to get ideas for transforming your application, as well as best practices across a wide array of architectures and Azure services.
 
 ## Summary
 
