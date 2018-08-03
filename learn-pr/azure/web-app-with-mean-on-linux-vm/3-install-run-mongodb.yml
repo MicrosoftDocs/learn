@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.web-app-with-mean-on-linux-vm.3-install-run-mongodb
+title: Install and run MongoDB
+metadata:
+  title: Install and run MongoDB
+  description: Install and run MongoDB
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-install-run-mongodb.md)]
