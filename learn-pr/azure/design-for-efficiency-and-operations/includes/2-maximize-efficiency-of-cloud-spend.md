@@ -1,16 +1,64 @@
 # Maximize efficiency of cloud spend
 
-Lamna Healthcare is a national healthcare provider with several thousand physicians and clinicians across multiple facilities throughout the country. Their IT organization has recently undertaken an effort to exit their data center footprint and move the majority of their IT systems to Azure. They have a mixture of in-house developed applications open source and off-the-shelf applications, with varying architectures and technology platforms. While they are very satisfied with the services they have running they are a bit worried about the monthly costs being higher than expected. They are looking to get a better understanding of their current consumptions and would also leverage some tricks to optimize consumption.
+## Introduction to cloud spend
 
-## Understand resource billing
+One of the fundamental differences between public cloud and on-premises infrastructure is the way billing is affecting the applications. In an on-premises world we often see that investments are happing on a certain cadence. Typically when there's not enough capacity left to expand existing or add new workloads, new investments are made to expand the infrastructure. There's also a lot of hidden costs that are often not factored in: e.g. electricity, cooling, room, staff,... When you buy additional hardware on-premises you pay for it in full, regardless whether you use it or not. In public cloud each service you deploy and have running comes with a certain increment to your bill. The fact that you just *pay for what you use* is a huge advantage! It means that you can benefit from various cloud computing patterns that can positively impact your workload as they either free up budget that can be allocated to other projects or allow you to assign more resources whenever you need them. Here are some of these patterns as well as the challenges that traditional on-premises focussed organizations face with these patterns.
 
-As a starting point it's important to understand the pricing options for each service you deploy in Azure. Some of these services are free, others have to be paid for. All of the Azure services have a well documented pricing page that clearly explains what to expect. [Here's](https://azure.microsoft.com/en-us/pricing/details/storage/) an example for Azure storage.
+![Service Health](../media/2-maximize-efficiency-of-cloud-spend/cloudcomputingpatterns.png)
 
-Virtual machines involve various resources each with their pricing model. Each VM might have compute, storage and network costs. Some of these will only be accounted for when the VM is actually allocated but will not be accounted for when the VM is deallocated. Needless to say if an instance of a virtual machine is not actually used it's recommended to deallocate or delete it in order to save money.
+In this module we'll focus on covering various techniques to ensure costs can be optimized where possible. Another term for this optimization is *right-sizing*. In the module on monitoring and analytics we'll cover approaches to ensure your workload is not *undersized* resulting in a poor experience for your end users. Whenever your deploying a new service to Azure it's a good practice to set aside some time to read through the pricing documentation in order to have a good understanding of the potential impact of a certain deployment. Taking it one step further you could even leverage the Azure Pricing calculator to forecast what a certain workload is going to cost. It's impossible to optimize your cloud spend without having a good understanding of your current spending patterns.
 
-When trying to optimize your deployed resources for costs it's really important to take a step back and look where the real gains are to be achieved. One of the costs that typically jumps out is the cost for running the virtual machines, the compute cost. Some of the following sections will guide you through the various principles that can be applied and which will result in cost savings.
+## Getting insights in the actual consumption
 
-## Right-size virtual machines
+Getting costs under control typically involves various steps. The first step is knowing where to look to get a good overview of what costs are being charged. Azure offers [Azure Cost Management](https://docs.microsoft.com/en-us/azure/cost-management/overview) which can help you generate various reports depending on your needs. If you prefer to work with the raw data and build reports yourself you can always extract the consumption details and use excel or Power BI to generate the views you're after.
+
+The advantage of Azure Cost Management is that it abstracts away the complexity of the underlying data model present in a typical billing scenario. There's a lot of fields with a lot of complex data and it might seem daunting at first to visualize your consumption. Azure Cost Management gives you a jump start by offering various ways to visualize the data and even offer some built-in reports that make you save money right away.
+
+Once you know where to look for your consumption you can start getting a better understanding. Without having some kind of an idea about the **baseline consumption** (e.g. during the last 30 days) it's very difficult to detect workloads causing more consumption than expected. This could potentially be going on for months before it's detected. That's why as one of the first things to master when taking control of your consumption is to have an idea of this baseline consumption. Depending on the size of your environment this might be for all of the Azure consumption but for larger organization each team might need to have a good understanding of their specific consumption.
+
+There are various ways to ensure you can allocate a specific cost to a specific team or any other dimension you might have in mind:
+
+* Putting resources in different **subscriptions**
+* Putting resources in different **resource groups**
+* Applying **tags** to resources
+
+While the subscription and resource group hierarchy allow you to allocate costs to different buckets there might also be other factors driving their structure. Role based access control and limits on the subscription level might further push this hierarchy away from the intended model that would provide the best consumption insights.
+
+The tagging option provides the best flexibility as this can changed as many times as desired throughout the life cycle of the resource. Applying tags to resources, or in short tagging resources, is a capability Azure providers in which you can apply up to 15 key-value pairs to a resource. The following list show some example keys that are frequently used:
+
+* Cost Center
+* Department / Business Unit
+* Environment (Production, Stage, Development)
+* Application Owner
+* Project Name
+
+Applying tags does take some discipline, but luckily there are various controls that help with this. Tags can be easily included in ARM templates so resources are tagged correctly right from the beginning. Alternatively the Azure Portal also allows for bulk adding of tags which can be a great way to tag many resources at once.
+
+Here's a screenshot of the Azure Portal cost analysis experience:
+
+![Portal Cost Analysis](../media/2-maximize-efficiency-of-cloud-spend/portal-cost-analysis.png)
+
+Using these insights should allow you to get an idea of how costs are distributed. Understanding where the largest contributors are is good to know where you might potentially optimize. In an organization that's leveraging a lot of IaaS resources the virtual machine compute cost is often a good place to start. The following section will cover some tips on how cost savings might be realized.
+
+## Optimizing IaaS Costs
+
+When you deploy a virtual machine on-premises you don't really pay. Well, strictly spoken that's not true, you do have certain operational and facility costs (e.g. electricity), but the compute power itself was paid earlier when you bought the required hardware. The hardware was paid for in full regardless of whether you use it or not. In Azure there's a different approach. You only pay for what you use. Running virtual machines involves various costs: compute, network and storage. Network costs are typically only a small portion compared to the compute and storage costs of a virtual machine.
+
+### Storage
+
+The storage costs being charged are covering for the disks used by the virtual machine. As these disks are persistent they are charged for during their full life cycle, even if the virtual machine is deallocated. One of the potential hidden costs in your environment might be the one of managed disks or disk snapshots that are no longer used. When deleting a virtual machine it's easy to forget deleting the association disk(s) and snapshots. While the virtual machine no longer exists charges will still occur for the disks that used to belong to the virtual machine.
+
+There are various ways to avoid this. Grouping resources that have a common life cycle together in a resource group allows for easier clean up by deleting the resource group. Through automation or reporting it's also possible to gather the list of disks that are not associated with any VM and thus are potential candidates for deletion. Azure Cost Management even has a built-in report to display these disks.
+
+### Compute
+
+There are different options available to achieve cost savings for virtual machines.
+
+* Chose a smaller virtual machine instance size
+* Reduce the amount of hours a virtual machine runs
+* Leverage discounts for the compute costs
+
+#### Right-size virtual machines
 
 When creating on-premises virtual machines there's often a hard boundary that's limiting how many VMs and how much resources they can consume. This boundary is a lot higher in Azure and thus the size and amount of VMs you ask will be deployed for you. But is it really required that the server running a given application is so big?
 
@@ -18,37 +66,35 @@ As a simple rule of thumb when you choose a VM size that's one size smaller than
 
 [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations#optimize-virtual-machine-spend-by-resizing-or-shutting-down-underutilized-instances) can be a great help in identifying which virtual machines are underutilized. Advisor monitors your virtual machine usage for 14 days and then identifies low-utilization virtual machines. Virtual machines whose CPU utilization is 5 percent or less and network usage is 7 MB or less for four or more days are considered low-utilization virtual machines.
 
-## Implement shutdown schedules for virtual machines
+#### Implement shutdown schedules for virtual machines
 
-There are many cases where a VM is used on a regular base but there's no need to actually run 24/7. A common example is a vm used by a developer to deploy and test new code. The developer will probably depend on this machine during business hours but after hours and in the weekend there's no need to have this machine running. If a full day consists of 24 hours than only running the VM between 9:00 and 17:00 would result in a cost reduction of 66% for that VM. If the machine doesn't need to be on the weekend that would further reduce costs. In order to avoid forgetting to shutdown the machine it's recommended to look at implementing [VM auto-shutdown](https://docs.microsoft.com/en-us/azure/billing/billing-getting-started#consider-enabling-cost-cutting-features-like-auto-shutdown-for-vms) where possible. When it's desired that the VMs also automatically start in the morning we can leverage Azure Automation. An example approach is explained [here](https://docs.microsoft.com/en-us/azure/automation/automation-solution-vm-management) but if you don't like that one or want to build your one you can start by using one of the many other examples from the [Runbook Gallery](https://docs.microsoft.com/en-us/azure/automation/automation-runbook-gallery).
+There are many cases where a VM is used on a regular base but there's no need to actually run 24/7. A common example is a vm used by a developer to deploy and test new code. The developer will probably depend on this machine during business hours but after hours and in the weekend there's no need to have this machine running. If a full day consists of 24 hours than only running the VM between 9:00 and 17:00 would result in a cost reduction of 66% for that VM. If the machine doesn't need to be on the weekend that would further reduce costs. In order to avoid forgetting to shutdown the machine it's recommended to look at implementing VM auto-shutdown where possible. When it's desired that the VMs also automatically start in the morning we can leverage Azure Automation.
 
 ![Service Health](../media/2-maximize-efficiency-of-cloud-spend/auto-shutdown.png)
 
-## Leverage Reserved Instances
+### Leverage compute cost discounts
 
-Even if a VM is required to run all the time it's possible to achieve cost savings by deciding to buy a Reserved Instance for that VM's SKU and the region where it's deployed. [Azure Reserved VM Instances](https://docs.microsoft.com/en-us/azure/billing/billing-save-compute-costs-reservations) helps you save money by pre-paying for one-year or three-years of compute capacity allowing you to get a discount on the virtual machines you use. Azure reserved instances can significantly reduce your virtual machine costs—up to 72 percent on pay-as-you-go prices–with one-year or three-year upfront commitment. Reserved instances provide a billing discount and do not affect the runtime state of your virtual machines.
+The [**Azure Hybrid Benefit**](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/) allows you to further optimize your costs for both Windows Server and SQL Server by allowing you to use your on-premises Windows Server or SQL Server licenses with Software Assurance to be used as a discount towards to the compute cost of these VMs.
+
+Some virtual machines need to be up and running all the time. Maybe you have a web application server farm for a production workload or maybe a domain controller supporting various servers on a virtual network. If you know for sure that these virtual machines will run over the coming year or maybe longer you might further achieve cost savings by deciding to buy a Reserved Instance for those VM's instance size and the region where they're deployed. [**Azure Reserved VM Instances**](https://docs.microsoft.com/en-us/azure/billing/billing-save-compute-costs-reservations) helps you save money by pre-paying for one-year or three-years of compute capacity allowing you to get a discount on the virtual machines you use. Azure reserved instances can significantly reduce your virtual machine costs—up to 72 percent on pay-as-you-go prices–with one-year or three-year upfront commitment. Reserved instances provide a billing discount and do not affect the runtime state of your virtual machines.
 
 [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations#buy-virtual-machine-reserved-instances-to-save-money-over-pay-as-you-go-costs) will review your virtual machine usage over the last 30 days and determine if you could save money by purchasing reserved instances. Advisor will show you the regions and sizes where you potentially have the most savings and will show you the estimated savings from purchasing reserved instances.
 
-![Reserved Instances](../media/2-maximize-efficiency-of-cloud-spend/savings-coins.png)
+## Optimizing PaaS costs
 
-## Save on Compute costs by leveraging Azure Hybrid Use Benefit (AHUB)
+Similar as with IaaS PaaS offers certain techniques which could be leveraged to optimize your cloud spend without loosing functionality. In the following sections we'll provide two examples: for Azure SQL and for blob storage
 
-The Azure Hybrid Use Benefit ([AHUB](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/)) allows you to further optimize your costs for both Windows Server and SQL Server by allowing you to use your on-premises Windows Server or SQL Server licenses with Software Assurance to be used as a discount towards to the compute cost of these VMs.
+### Azure SQL
 
-## Clean up old managed disks and disk snapshots
+When creating an Azure SQL database you have to select an Azure SQL Server as well as decide on a performance tier. Each performance tier comes with a certain cost associated with it and allows the database to perform at a certain level (the so called Database Transaction Units (DTUs)). The load on a database might be steady in which you can easy right-size the pricing tier resulting in just enough performance and the right price. But what if your database has unpredictable bursts? At certain points in time you want to be able to cater for those peaks but you rather won't pay for that peak performance at all time.
 
-One of the potential hidden costs in your environment might be the one of managed disks or disk snapshots that are no longer used. When deleting a virtual machine it's easy to forget deleting the association disk(s) and snapshots. While the virtual machine no longer exists charges will still occur for the disks that used to belong to the virtual machine.
+When you have multiple databases each with their own load patterns you can combine them in a [SQL Database elastic pool](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool). All databases in a SQL database elastic pool run on a single Azure SQL Database server and share a set number of resources at a set price.
 
-There are various ways to avoid this. Grouping resources that have a common life cycle together in a resource group allows for easier clean up by deleting the resource group. Through automation or reporting it's also possible to gather the list of disks that are not associated with any VM and thus are potential candidates for deletion. [Azure Cost Management](https://docs.microsoft.com/en-us/azure/cost-management/overview#improve-efficiency) even has a built-in report to display these disks.
+[SQL Database elastic pools](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool) are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server and share a set number of resources at a set price. Elastic pools in Azure SQL Database enable SaaS developers to optimize the price performance for a group of databases within a prescribed budget while delivering performance elasticity for each database.
 
-## Leverage SQL Database Elastic Pools to optimize Azure SQL Costs
+## Blob storage
 
-While the sections above are mostly applicable for IaaS there are also other services that can benefit cost optimizations. [SQL Database elastic pools](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool) are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server and share a set number of resources at a set price. Elastic pools in Azure SQL Database enable SaaS developers to optimize the price performance for a group of databases within a prescribed budget while delivering performance elasticity for each database.
-
-![DTU Savings](../media/2-maximize-efficiency-of-cloud-spend/twenty-databases.png)
-
-## Choose the right storage option
+A lot of applications have a need for blob storage in order to store data. There are many different types of data that can be stored each which might have different access patterns. A medical imaging application for instance might store many images on blob storage resulting in a considerate cost for the application due to the sheer amount and size of these files. If an image has been taken for a patient than it's very likely that in the first week that image might be consulted by someone. So it's important that the time required to access that image, that blob, is a small as possible. But maybe it's ok for an image that was taken over a year ago just to be available, but not as fast. Having different types of blobs each with their own access pattern and cost is what we call tiering.
 
 Azure storage offers [three storage tiers](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers) for Blob object storage so that you can store your data most cost-effectively depending on how you use it. The Azure hot storage tier is optimized for storing data that is accessed frequently. The Azure cool storage tier is optimized for storing data that is infrequently accessed and stored for at least 30 days. The Azure archive storage tier is optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency requirements.
 
@@ -59,21 +105,6 @@ Each of these tiers have different cost properties:
 * **Archive access tier**: has the lowest storage cost and higher data retrieval costs compared to hot and cool storage. This tier is intended for data that can tolerate several hours of retrieval latency and will remain in the archive tier for at least 180 days.
 
 In order to learn more about the actual pricing please take a look [here](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/).
-
-## Getting insights in the actual consumption
-
-There are various ways to get an overview of what your azure resources are costing. Depending on which [offer](https://azure.microsoft.com/en-us/support/legal/offer-details/) you use other capabilities might be offered.
-
-Costs can be analysed using [Azure Cost Management](https://docs.microsoft.com/en-us/azure/cost-management/overview) or from within the [Azure Portal](https://docs.microsoft.com/en-us/azure/billing/billing-understand-your-bill#option-2-review-your-invoice-and-compare-with-the-usage-and-costs-in-the-azure-portal).
-
-There are also some options with or specific to the offer you're using.
-
-* For Enterprise Agreement customers the costs can be analysed using the [EA Portal](https://ea.azure.com) or [Power BI](https://docs.microsoft.com/en-us/power-bi/service-connect-to-azure-consumption-insights)
-* For Pay As You Go or MSDN customers the costs can be analysed using the [Azure Account Center](https://docs.microsoft.com/en-us/azure/billing/billing-download-azure-invoice-daily-usage-date)
-
-One of the challenges with analyzing cost data is that it's often difficult to determine which project or cost center is responsible for the costs. This challenge can be tackled by implementing a good hierarchy where resources are structured in resource groups and subscriptions. Sometimes that doesn't offer the dimensions you want to roll up costs to. In order to further complement the resource group/subscription structure we can [leverage tags on resources](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption-guide/subscription-governance#resource-tags).
-
-![Portal Cost Analysis](../media/2-maximize-efficiency-of-cloud-spend/portal-cost-analysis.png)
 
 
 ## Knowledge Check
