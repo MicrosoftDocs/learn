@@ -180,3 +180,13 @@ achievements:
   title: IoT Suite for ops
   summary: IoT Suite for ops
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.web-app-with-mean-on-linux-vm.badge
+  type: badge
+  title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+  summary: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.optimize-web-app-with-redis.badge
+  type: badge
+  title: Optimize your web applications by caching read-only data with Redis
+  summary: Optimize your web applications by caching read-only data with Redis
+  iconUrl: http://via.placeholder.com/120x120

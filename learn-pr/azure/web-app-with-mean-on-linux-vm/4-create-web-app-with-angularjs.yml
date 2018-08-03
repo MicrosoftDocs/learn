@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.web-app-with-mean-on-linux-vm.4-create-web-app-with-angularjs
+title: Create a web app with AngularJS
+metadata:
+  title: Create a web app with AngularJS
+  description: Open port 80 on the VMCreate a web app with AngularJS
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-create-web-app-with-angularjs.md)]

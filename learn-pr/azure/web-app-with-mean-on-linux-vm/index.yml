@@ -1,0 +1,23 @@
+### YamlMime:Module
+uid: learn.web-app-with-mean-on-linux-vm
+metadata:
+  title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+  description: In this module, we’ll run a MEAN (MonboDB, Express, AngularJS, Node.js) web application from a single VM. We’ll open the HTTP port on the server, install the server-side components of the MEAN stack, and build a web application using AngularJS on the front-end.
+title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+summary: In this module, we’ll run a MEAN (MonboDB, Express, AngularJS, Node.js) web application from a single VM. We’ll open the HTTP port on the server, install the server-side components of the MEAN stack, and build a web application using AngularJS on the front-end.
+abstract: In this module, we’ll run a MEAN (MonboDB, Express, AngularJS, Node.js) web application from a single VM. We’ll open the HTTP port on the server, install the server-side components of the MEAN stack, and build a web application using AngularJS on the front-end.
+cardDescription: In this module, we’ll run a MEAN (MonboDB, Express, AngularJS, Node.js) web application from a single VM. We’ll open the HTTP port on the server, install the server-side components of the MEAN stack, and build a web application using AngularJS on the front-end.
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- Azure
+units:
+- learn.web-app-with-mean-on-linux-vm.1-open-port-80-on-vm
+- learn.web-app-with-mean-on-linux-vm.2-install-node-js-and-express
+- learn.web-app-with-mean-on-linux-vm.3-install-run-mongodb
+- learn.web-app-with-mean-on-linux-vm.4-create-web-app-with-angularjs
+- learn.web-app-with-mean-on-linux-vm.5-knowledge-check
+achievement: learn.web-app-with-mean-on-linux-vm.badge

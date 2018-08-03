@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.web-app-with-mean-on-linux-vm.2-install-node-js-and-express
+title: Install Node.js and Express
+metadata:
+  title: Install Node.js and Express
+  description: Install Node.js and Express
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-install-node-js-and-express.md)]
