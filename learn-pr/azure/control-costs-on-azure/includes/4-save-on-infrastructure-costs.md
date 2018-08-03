@@ -28,6 +28,8 @@ This may sound obvious but if you aren't using a service, you should shut it dow
 
 Lastly, as you move workloads to the cloud, a natural evolution is to start with IaaS services and them move them to PaaS as appropriate, and in an iterative process. PaaS services typically provide a substantial savings in both resource and operational costs. The challenge is that depending on the type of service, varying levels of effort will be required to move to these services from both a time and resource perspective. You may be able to easily move a SQL Server database to Azure SQL DB, but it may take substantially more effort to move your multi-tier application to a container or serverless based architecture. It's a good practice to continuously evaluate the architecture of your applications to determine if there are efficiencies to be gained through PaaS services. Azure makes it easy to test these out with little risk, giving you the ability to try out new architecture patterns relatively easily. That said, it's typically a longer journey and may not be of immediate help if you're looking for quick wins from a cost savings perspective. The Azure Architecture Center is a great place to get ideas for transforming your application, as well as best practices across a wide array of architectures and Azure services.
 
+![Cloud maturity model](../images/cloud-maturity-model.png)
+
 ## Summary
 
 **TODO knowledge check**
