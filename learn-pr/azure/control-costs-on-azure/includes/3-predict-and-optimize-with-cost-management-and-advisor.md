@@ -6,9 +6,11 @@ Azure Advisor is a free service built into Azure that provides recommendations o
 
 You can find Advisor in the portal where you can see all recommendations, and you'll also see Advisor recommendations as a panel at a virtual machine level. Advisor makes cost recommendations in the following areas:
 
-- **Reduce costs by eliminating unprovisioned ExpressRoute circuits** - this identifies ExpressRoute circuits that have been in the provider status of Not Provisioned for more than one month, and recommends deleting the circuit if you aren't planning to provision the circuit with your connectivity provider.
+- **Reduce costs by eliminating unprovisioned ExpressRoute circuits** - this identifies ExpressRoute circuits that have been in the provider status of *Not Provisioned* for more than one month, and recommends deleting the circuit if you aren't planning to provision the circuit with your connectivity provider.
 - **Buy reserved instances to save money over pay-as-you-go** - this reviews your virtual machine usage over the last 30 days and determine if you could save money by purchasing reserved instances. Advisor will show you the regions and sizes where you potentially have the most savings and will show you the estimated savings from purchasing reserved instances.
 - **Right-size or shutdown underutilized virtual machines** - this monitors your virtual machine usage for 14 days and then identifies low-utilization virtual machines. Virtual machines whose average CPU utilization is 5 percent or less and network usage is 7 MB or less for four or more days are considered low-utilization virtual machines. The average CPU utilization threshold is adjustable up to 20%. By identifying these underutilized virtual machines, you can decide to resize them to a smaller instance type, reducing your costs.
+
+
 
 These recommendations are all places where you may be inefficiently spending money, and are a great place to start and continue to revisit when looking for places to reduce cloud spend. Be sure and review this periodically for recommendations across all four areas.
 
@@ -27,3 +29,5 @@ Cloudyn, a Microsoft subsidiary, allows you to track cloud usage and expenditure
 ## Summary
 
 The important thing to take away from what we've talked about here is that there are several tools you can use to track and predict your cloud spend, and identify where your environment may be inefficient from a cost perspective. Now let's take a look at some best practices to reduce your infrastructure costs.
+
+**TODO knowledge check**

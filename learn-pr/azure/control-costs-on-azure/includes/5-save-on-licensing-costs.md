@@ -26,3 +26,5 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-mach
 https://azure.microsoft.com/en-us/blog/announcing-new-azure-vm-sizes-for-more-cost-effective-database-workloads/
 
 ## Summary
+
+**TODO knowledge check**
