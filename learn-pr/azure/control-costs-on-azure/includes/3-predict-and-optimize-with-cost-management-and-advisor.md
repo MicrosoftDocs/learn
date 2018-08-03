@@ -25,13 +25,13 @@ Clicking on any recommendation will take you to the details for that specific re
 
 ![Advisor resize VM recommendation](../images/advisor-resize-vm.png)
 
-**TODO add markdown to open portal**
-
 These recommendations are all places where you may be inefficiently spending money, and are a great place to start and continue to revisit when looking for places to reduce cloud spend. In our example here, there's an opportunity for us to save around $700 per month if we take these recommendations. These savings add up, so be sure and review this periodically for recommendations across all four areas.
 
 ## Azure Cost Management
 
 Azure Cost Management is another free, built in Azure tool that can be used to gain greater insights into where your cloud spend is going. You can see historical breakdowns of what services you are spending your money on, and how it is tracking against budgets that you have set. You can set budgets, schedule reports, and analyze your areas of spend.
+
+![Cost Management](../images/cost-management.png)
 
 **Show a screenshot where we're able to track against a budget** https://docs.microsoft.com/en-us/azure/billing/billing-getting-started
 
@@ -39,10 +39,10 @@ Azure Cost Management is another free, built in Azure tool that can be used to g
 
 Cloudyn, a Microsoft subsidiary, allows you to track cloud usage and expenditures for your Azure resources and other cloud providers including AWS and Google. Easy-to-understand dashboard reports help with cost allocation and showbacks/chargebacks as well. Cost Management helps optimize your cloud spending by identifying underutilized resources that you can then manage and adjust. Usage for Azure is free, and there are paid options for premium support and to view data from other clouds.
 
-**Show a screenshot here where we're able to save money by identifying waste**
+![Cloudyn management dashboard](../images/cloudyn-mgt-dash.png)
 
 ## Summary
 
-The important thing to take away from what we've talked about here is that there are several tools you can use to track and predict your cloud spend, and identify where your environment may be inefficient from a cost perspective. Now let's take a look at some best practices to reduce your infrastructure costs.
+So as you can see there are several tools available for no cost on Azure that you can use to track and predict your cloud spend, and identify where your environment may be inefficient from a cost perspective. You'll want to make sure you make it a regular practice to review the reports and recommendations that these tools make available so you can unlock savings across your cloud footprint. Now let's take a look at some best practices to reduce your infrastructure costs.
 
 **TODO knowledge check**
