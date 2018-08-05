@@ -2,7 +2,7 @@
 
 ## Motivation
 
-It's rare that we can exactly predict the load on our system: public facing applications might go viral or an internal application might need to support a larger user base as the business grows. Even when we can predict load, it's rarely flat: retailers have more demand during the holidays and sports websites peak during playoffs. In this section, we'll talk about why requirements are important, define _scaling up_ and _scaling out_, discuss why scaling out is usually preferred, and see how Azure implements scale out strategies. We'll also look at how so-called "serverless" and container technologies can mitigate much of the concern associated with scaling.
+It's rare that we can exactly predict the load on our system: public facing applications might go viral or an internal application might need to support a larger user base as the business grows. Even when we can predict load, it's rarely flat: retailers have more demand during the holidays and sports websites peak during playoffs. In this section, we'll define _scaling up_ and _scaling out_, discuss why scaling out is usually preferred, and see how Azure implements scale out strategies. We'll also look at how so-called "serverless" and container technologies can mitigate much of the concern associated with scaling.
 
 ## What is scaling?
 

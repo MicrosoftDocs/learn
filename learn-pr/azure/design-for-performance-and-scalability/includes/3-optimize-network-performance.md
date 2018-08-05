@@ -2,9 +2,9 @@
 
 ## Motivation
 
-One of the most basic things we can do to have a large impact performance of our application is to put the data close to where it's needed, not just when the data is at rest like databases, but also when it's in-flight. Especially in complex architectures with many different services, minimizing the latency at each hop can have a huge impact on the overall performance.
+One of the most basic things we can do to have a large impact performance of our application is to put the data close to where it's needed, not just when the data is at rest like databases, but also when it's in-flight. Especially in complex architectures with many different services, minimizing the latency at each hop can have a huge impact on the overall performance. In this section, we'll talk about the importance of network latency and understand how Lamna Healthcare adopted strategies to minimize network latency between their azure resources and between their users and Azure.
 
-## Why is network latency important?
+## The importance of network latency
 
 Latency is a measure of delay. When we think about network latency, we are thinking about the time needed to get from a source to a destination across some form of network infrastructure. This is typically considered as a round trip delay (The time taken to get from the source to destination and back again).
 
@@ -14,7 +14,7 @@ Consider a cloud environment. In comparison, a cloud environment is built for sc
 
 The chattier an application, the more round trips are required, therefore you want to batch your communications into as few requests as possible. You also want to be aware of which parts of your applications are chatty. Think about a web application. A web application may use an Object-relational mapping (ORM) framework to communicate to a back-end database. These ORM frameworks can typically ease your application development by generating migration scripts for your database schema and help you in quickly writing database queries (inserts, updates, deletions etc.). However, they may not be optimized for data transmission and typically split out into separate requests/calls.
 
-Let's consider the example of a Website and a Database communicating with each other and I want to update a number of records.
+Let's consider the example of a website and a database communicating with each other and I want to update a number of records.
 
 * If I issue one query through my ORM I might expect one call to occur. Instead, it may be split into 10 individual calls.
 * On premises, that may not be such a significant problem as the round trip time may be 5ms. In a cloud environment, that may increase to 20ms.

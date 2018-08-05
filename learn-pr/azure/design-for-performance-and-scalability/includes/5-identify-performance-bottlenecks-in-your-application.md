@@ -2,7 +2,7 @@
 
 ## Motivation
 
-End-users are expecting more from their applications. They want to have a great user experience and not experience any performance issues. Monitoring is critical to helping you meet your user expectations, and identify any potential bottlenecks in your application before they reach and impact your end-users.
+End-users are expecting more from their applications. They want to have a great user experience and not be impacted by performance issues. Throughout this unit, we will understand how Lamna Healthcare have defined their requirements  utilized DevOps to improve their application performance. We will also discuss Azure Monitor, Azure Logic Analytics and Azure Application Insights and how they can help provide a great user experience by identifying performance bottlenecks.
 
 ## Importance of requirements
 
@@ -16,27 +16,25 @@ During this unit, we will discuss approaches that you can take to identify perfo
 
 DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.
 
-The idea behind DevOps is that we do not have silos in our organization of infrastructure and development. We are collectively working together to build solutions for our users where they have a great user experience. To ensure they have that great user experience, we need to make sure we're building something that is in line with our requirements.
+The idea behind DevOps is that we do not have silos in our organization of infrastructure and development. We are collectively working together to build solutions for our users where they have a great user experience. To ensure they have that great user experience, we need to make sure we're building something that is in line with our requirements. We also want to make sure we have some way of measuring (or monitoring) how we are performing against those requirements.
 
-When adopting a DevOps methodology, it is generally not approached in a waterfall manner. The planning, development, testing and monitoring is carried out in an iterative approach.
+The planning, development, testing and monitoring is carried out in an iterative approach. Performance and quality of our application then become a part of our ongoing software development life cycle, rather than an after thought as we think about deploying into a live environment.
 
 ![DevOps Cycle](devops-cycle.png)
 
-Performance and quality of our application then become a part of our ongoing software development life cycle, rather than an after thought as we think about deploying into a live environment.
-
 This lines up with a DevOps concept called "shifting left". This means that you want to bring your quality control checks earlier into your deployment and release process, so that you are catching any issues that may impact the end-user experience. As we are operating in a continuous cycle, we limit the amount of manual interaction and automate as much as possible.
 
-* This could be writing unit tests to ensure that specific units of code are working as expected
-* This could be integration tests to ensure that those units of code work well together and produce a desired output
+* This could be writing unit tests to ensure that specific units of code work as expected
+* This could be integration tests to ensure that those units of code work well together with other units and produce a desired output
 * This could be creating performance or load tests to ensure the application meets those non-functional requirements prior to a deployment into production
 
-Ultimately, the aim is that you are taking all opportunities to identify issues as early on (left) in the development cycle as possible and to avoid impacting your end-users experience in a production environment.
+Ultimately, the point is that you are taking every opportunity to identify issues as early on (left) in the development cycle as possible and to avoid impacting your end-users experience in a production environment.
 
-Let's think about performance and load testing for a moment. We want to ensure that our application performs as expected and are limiting any performance bottlenecks. As part of each iteration in our development effort, we could be introducing new regressions or bugs. 
+Let's think about performance and load testing for a moment. We want to ensure that our application performs as expected and are limiting any performance bottlenecks. As part of each iteration in our development effort, we could be introducing new regressions or bugs.
 
 Wouldn't it  make sense if we could carry out some performance and load tests in an environment that is exactly representative of production? That is one of the benefits of the cloud. As part of this pipeline, you can automate the creation of such an environment, run those tests, destroy the environment to save on costs and have the reassurance that your application will scale to our requirements (making sure we check for any anticipated growth of the platform as well!)
 
-Application performance monitoring becomes a core part of this mindset. If we are running performance and load tests on our application, then we want to understand what aspects of our application are struggling. We will discuss monitoring options further in the next section. 
+Application performance monitoring becomes a core part of this mindset. If we are running performance and load tests on our application, then we want to understand what aspects of our application are struggling. We will discuss monitoring options further in the next section.
 
 Before moving on, it's worth noting that DevOps is a topic that could have its own set of modules in its own right. We have only scratched the surface in the context of performance bottlenecks. You can find out more information about [DevOps and Microsoft][devops-and-microsoft].
 
