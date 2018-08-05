@@ -2,7 +2,7 @@
 
 ## Motivation
 
-End-users are expecting more from their applications. They want to have a great user experience and not be impacted by performance issues. Throughout this unit, we will understand how Lamna Healthcare have defined their requirements  utilized DevOps to improve their application performance. We will also discuss Azure Monitor, Azure Logic Analytics and Azure Application Insights and how they can help provide a great user experience by identifying performance bottlenecks.
+End-users are expecting more from their applications. They want to have a great user experience and not be impacted by performance issues. Throughout this unit, we will understand how Lamna Healthcare have defined their requirements utilized DevOps to improve their application performance. We will also discuss Azure Monitor, Azure Logic Analytics and Azure Application Insights and how they can help provide a great user experience by identifying performance bottlenecks.
 
 ## Importance of requirements
 
@@ -10,7 +10,7 @@ Before we talk about performance bottlenecks, it is first important to talk abou
 
 Defining these requirements in advance of building your solution is critical. This enables you to clearly architect the solution to meet certain non-functional requirements, and plan associated monitoring and operations rules.
 
-During this unit, we will discuss approaches that you can take to identify performance bottlenecks in your application. It is important that we do this in the context of an application's non-functional requirements, and what the expectation is from the business or our end-users.
+ It is important that you identify bottlenecks in the context of an application's non-functional requirements, and what the expectation is from the business or our end-users.
 
 ## DevOps and application performance
 
@@ -38,7 +38,7 @@ Application performance monitoring becomes a core part of this mindset. If we ar
 
 Before moving on, it's worth noting that DevOps is a topic that could have its own set of modules in its own right. We have only scratched the surface in the context of performance bottlenecks. You can find out more information about [DevOps and Microsoft][devops-and-microsoft].
 
-## Azure Monitoring options
+## Monitoring options in Azure
 
 Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your business application and the resources that it depends on.
 
@@ -69,9 +69,9 @@ In addition, you can pull in telemetry from the host environments such as perfor
 
 Application Insights stores its data in a common repository. It can take advantage of shared functionality such as alerts, dashboards, and deep analysis with the Log Analytics query language.
 
-A common pattern used in determining the availability of a web application is the [health endpoint monitoring pattern][health-endpoint-monitoring-pattern]. This is a pattern to to monitor web applications and back-end services, to ensure they're available and performing correctly.
+A common pattern used in determining the availability of a web application is the [health endpoint monitoring pattern][health-endpoint-monitoring-pattern]. This pattern is used to monitor web applications and associated back-end services, to ensure they're available and performing correctly.
 
-The pattern is implemented by querying a particular endpoint that you have implemented. Rather than checking the status of one component, you perform the necessary checks on the numerous components that make up the solution  and return an indication of its status.
+The pattern is implemented by querying a particular endpoint that has been implemented. THe endpoint checks on the status of multiple components (i.e. those backend services that the app depends on) rather than just the availability of the front end itself. This then allows a solution level health check on the solution  and return an indication of its status.
 
 ### Lamna Healthcare Example
 
