@@ -50,8 +50,6 @@ _Scaling out_ is the process of adding more instances to support the load of you
 
 In contrast, _scaling in_ is the process of removing instances that are no longer needed to support the load of your solution. For example, if the website front ends have a low utilization, then we may want to decrease the number of instances to save cost.
 
-<!--- I wonder if we should explain what "scale out" means for each common resource type? VM, DB, etc? --->
-
 Here are some examples of what scaling out/in means in the context of Azure resources:
 
 * For the infrastructure layer, you would likely use virtual machine scale sets to automate the addition and removal of extra instances. Azure virtual machine scale sets let you create and manage a group of identical, load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
@@ -60,6 +58,8 @@ Here are some examples of what scaling out/in means in the context of Azure reso
 
 Scaling out is an easy approach to handling extra amounts of load in your system. When scaling out a Platform as a Service (PaaS) resource, they are generally configurable as a property in the Azure Portal, using command line tools or ARM Templates.
 
+## Autoscale
+
 Throughout this unit, we have eluded to the fact that you can automate scaling in/out (adding or removing instances) of your deployment. This is known as a platform feature called [Autoscale][what-is-autoscale]. This means you no longer have to worry about manually adding or removing instances. Instead, you can set a minimum and maximum threshold of instances and scale based upon certain demands (e.g. queue length, CPU utilization) or schedules (e.g. week days between 5pm - 7pm).
 
 ## Considerations when adding or removing instances
@@ -67,6 +67,14 @@ Throughout this unit, we have eluded to the fact that you can automate scaling i
 When opting for a scale out approach, the startup time of your application can make a significant difference to the rate at which your application can scale. If your web app takes 2 minutes to start up and be available for users, then that means each of your instances will take 2 minutes until they are available to your users.
 
 Also consider how your application handles state. When your application scales in (i.e. removes instances to serve your users), then those machines will be removed and any state stored on the machine is no longer available. This is why a common pattern is to externalize state to another source (e.g. a Redis Cache or SQL Database), which makes those instances stateless. As the instance is now stateless, this means we do not to need worry about which individual instances are available, they are all performing the exact same function and are deployed in the same way.
+
+## Throttling
+
+We have established that the load on an application will vary over time, potentially due to the number of active or concurrent users and the activities that are being performed. Autoscale could be one such approach, throttling is another. Throttling is a way that we can safeguard the application's performance by putting certain known limits into place at the application level.
+
+If the application identified that it is nearly breaching a particular limit, then it can throttle (control the consumption of) users and ensure that the overall system SLA is not breached.
+
+Further detail on the [throttling pattern][throttling-pattern] is well discussed on the architecture center, in addition to examples of how to implement the design pattern.
 
 ## Scenario: Scaling on Azure
 
@@ -81,6 +89,8 @@ As the Lamna Healthcare team have observed a number of processing timeout errors
 The team decide that they want to automate the number of instances deployed based upon a schedule, as their load profile is very predictable. Therefore, they configure the app service plan's autoscale schedule. Let's assume 2 instances sufficiently handles 500 transactions per hour. Based upon this, the team could then scale to 6 instances for Tuesday - Friday and 8 instances for a Monday to meet the requirements (based upon insight and monitoring from load tests).
 
 Autoscale could also provided an added benefit, preparing for those unforeseen scenarios. The team may suddenly encounter some higher than expected load on the weekend (perhaps more appointments in the winter season due to colds and flu). For example, they may could setup a rule to Scale out by 1 instance when CPU percentage is above 90% for a certain period of time, and decrease by 1 instance when CPU percentage is below 15% over a given period of time.
+
+The team have also implemented throttling inside of the patient booking logic, to ensure that the system is not misused and will continue to operate under the expected service levels.
 
 ## Scaling via alternate services
 

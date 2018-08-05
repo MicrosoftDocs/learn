@@ -50,19 +50,11 @@ However, using multiple backing stores increases complexity from an architectura
 
 Eventual consistency means that replica data stores will converge eventually if no further writes are executed. However, if a write is made to one of the data stores, then there is no guarantee that the other data stores will provide accurate (i.e. the most up to date) information. This enables higher scale because there is a low latency for reads and writes, rather than waiting to check if information is consistent across all stores.
 
-## Throttling
-
-The load on an application will vary over time, based on the number active or concurrent users and the activities that are being performed. We have a few strategies to approach this - Autoscale (which was discussed in unit 2) and throttling. Throttling is a way that we can safeguard the application's performance by putting certain known limits into place. If the system identified that it is breaching a particular limit, then it can throttle (control the consumption of) users and ensure that the overall system SLA is not breached.
-
-Further detail on the [throttling pattern][throttling-pattern] is well discussed on the architecture center, in addition to examples of how to implement the design pattern.
-
 ### Lamna Healthcare Example
 
 Lamna Healthcare have been implementing a patient booking system across multiple Azure regions (West Europe and North Europe). They are using virtual machines in the front end nodes to deploy their website, and have Azure SQL DB deployed in West Europe (primary) and North Europe (readable secondary). They are aware that their front end nodes do not require high levels of disk throughput, but do require consistent latency performance and have adopted for Standard SSD backed storage.
 
 Rather than read directly to their database read replica, they have decided to optimise application performance and host an Azure redis cache locally in each Azure region to store the most common user requests and free/busy availability of doctors.
-
-The team have also implemented throttling inside of the patient booking logic, to ensure that the system is not misused and will continue to operate under the expected service levels.
 
 We have covered a few examples areas where you can the storage layer of your application for performance and scalability. It is worth familiarizing yourself with the individual Azure services that you are considering to implement in your own solution and understanding the typical usage scenarios for these sources.
 
