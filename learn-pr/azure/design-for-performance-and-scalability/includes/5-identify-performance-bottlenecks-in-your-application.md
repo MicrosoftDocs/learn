@@ -46,18 +46,22 @@ When we think about monitoring, we are concerned with the ways in which we can b
 
 ### Azure Monitor
 
-Azure Monitor enables core monitoring for Azure services by allowing the collection of metrics, activity logs, and diagnostic logs. For example, the activity log tells you when new resources are created or modified. It could be considered our main pane of glass for our monitoring needs in Azure. Azure monitor provides us with a range of capabilities including:
+Azure Monitor enables core monitoring for Azure services by allowing the collection of metrics, activity logs, and diagnostic logs. For example, the activity log tells you when new resources are created or modified. It could be considered our primary single pane of glass for our monitoring needs in Azure. Azure monitor provides us with a range of capabilities including:
 
 * [Azure alerts][azure-alerts] to proactively notify or take action of any breaches to metrics or activities arising
 * Use [Azure Dashboards][azure-dashboards] to combine multiple monitoring sources into one view for our application
+
+Azure Monitor is the place to start for all your [near real time resource metric insights][az-mon-metrics]. Many Azure resources will start outputting metrics automatically once deployed into your subscription, for example [Azure Web App instances][az-mon-webapp-metrics] will output compute and application request metrics. Application Insights metrics, including multi-deimensional metrics, are also collated here in addition to VM host diagnostic metrics. [VM guest diagnostic metrics will also appear once you opt-in.][az-mon-vm-guest-metrics]
 
 ### Log Analytics
 
 From an Infrastructure monitoring perspective, we may want to consider using Log Analytics. [Log Analytics][log-analytics] plays a central role in Azure monitoring by collecting data from a variety of resources (including non-Microsoft tools) into a single repository. There, you can analyze the data by using a [query language][log-analytics-query-language].
 
-You just need to create a workspace to enable collection. You can then install agents on virtual machines to include them in the workspace and enable [management solutions that include logic to provide additional insights into different applications.
+You just need to create a workspace to enable collection. You can then install agents on virtual machines to include them in the workspace and enable management solutions that include logic to provide additional insights into different applications.
 
 ![Log Analytics Sources](log-analytics.png)
+
+Using Log Analytics you can collate a wide range of data sources, including Security Logs, Azure Activity Logs, Server, network and Application logs. [You can also push On-premises SCOM data to Log Analytics in hybrid deployment scenarios.][scom-to-la]
 
 ## Application Insights
 
@@ -67,11 +71,13 @@ You install a small instrumentation package in your application, and set up an A
 
 In addition, you can pull in telemetry from the host environments such as performance counters, Azure diagnostics, or Docker logs. You can also set up web tests that periodically send synthetic requests to your web service. You could even configure your application to send custom events and metrics that you write yourself in the client or server code. This could track business / application-specific events such as items sold or games won.
 
-Application Insights stores its data in a common repository. It can take advantage of shared functionality such as alerts, dashboards, and deep analysis with the Log Analytics query language.
+Application Insights stores its data in a common repository and Metrics are shared with Azure Monitor. It can take advantage of shared functionality such as alerts, dashboards, and deep analysis with the Log Analytics query language.
 
 A common pattern used in determining the availability of a web application is the [health endpoint monitoring pattern][health-endpoint-monitoring-pattern]. This pattern is used to monitor web applications and associated back-end services, to ensure they're available and performing correctly.
 
 The pattern is implemented by querying a particular endpoint that has been implemented. THe endpoint checks on the status of multiple components (that is, those backend services that the app depends on) rather than just the availability of the front end itself. This then allows a solution level health check on the solution  and returns an indication of its status.
+
+Use Application Insights to gain a deep understanding of your application and correlate activity from different areas of your application. Understand how a specific action perfroms in the client browser, on the server and through to any dependent call to downstream services or database. Use Application Insights for trend analysis and proactive monitoring, understand that there's a problem, where it is and how to fix it, before your application/web site users are aware. [Use the profiling features][ai-profiler] available in Azure Web Apps to understand the hotpath in your code and use [Visual Studio & Application Insights Snap Debugging][ai-snap] to debug live deployed code!
 
 ### Lamna Healthcare Example
 
@@ -84,6 +90,12 @@ They have also configured Application Insights to capture availability and telem
 There are further examples of how [application performance monitoring][application-performance-monitoring] helped identify issue with a hotfix that they had deployed.
 
 <!-- links -->
+[ai-snap]:https://docs.microsoft.com/en-us/azure/application-insights/app-insights-snapshot-debugger
+[ai-profiler]:https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler
+[scom-to-la]:https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-om-agents
+[az-mon-vm-guest-metrics]:https://docs.microsoft.com/en-us/azure/virtual-machines/windows/monitor#diagnostics-and-metrics
+[az-mon-metrics]:https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/insights-how-to-customize-monitoring
+[az-mon-webapp-metrics]:https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-supported-metrics#microsoftwebsites-excluding-functions
 [azure-alerts]: https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-quick-audit-notify-action-in-subscription
 [azure-dashboards]: https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards
 [devops-and-microsoft]: 
