@@ -91,8 +91,6 @@ PCI, HIPAA, etc. May have certified on-prem data-center, may not want to or be a
 
 ## Hybrid cloud
 
-
-
 A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them. When computing and processing demand fluctuates, hybrid cloud computing gives businesses the ability to seamlessly scale their on-premises infrastructure up to the public cloud to handle any overflow - without giving third-party datacenters access to the entirety of their data. Organizations gain the flexibility and computing power of the public cloud for basic and non-sensitive computing tasks, while keeping business-critical applications and data on-premises, safely behind a company firewall.
 
 Using a hybrid cloud not only allows companies to scale computing resources, it also eliminates the need to make massive capital expenditures to handle short-term spikes in demand as well as when the business needs to free up local resources for more sensitive data or applications. Companies will pay only for resources they temporarily use instead of having to purchase, program, and maintain additional resources and equipment that could remain idle over long periods of time. 

@@ -9,9 +9,9 @@ content: Knowledge check - Understanding Azure solutions for public, private and
 quiz:
   title: 'Azure solutions for public, private and hybrid cloud'
   questions:
-  - content: 'Company x problem y solution z. Is this a private cloud soultion?
+  - content: 'Company x problem y solution z. Is this a private cloud soultion?'
     choices:
-    - content: Yes. This is a privae could
+    - content: Yes. This is a private cloud.
       correctExplanation: Why this answer is correct
       isCorrect: true
     - content: Answer 2
@@ -21,9 +21,10 @@ quiz:
     choices:
     - content: Answer A
       correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
       isCorrect: true
     - content: Answer B
+      incorrectExplanation: Why this answer is incorrect
       isCorrect: false
     - content: Answer C
+      incorrectExplanation: Why this answer is incorrect
       isCorrect: false
