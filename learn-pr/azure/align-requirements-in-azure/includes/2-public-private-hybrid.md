@@ -1,5 +1,3 @@
-# Understanding Azure solutions for public, private and hybrid cloud
-
 You work at a healthcare company. You have legacy systems, LOB systems, and future plans for new systems. You see advantages to using cloud computing. How do you choose the best deployment model for different solutions public, private, hybrid cloud.
 
 ## What is cloud computing?

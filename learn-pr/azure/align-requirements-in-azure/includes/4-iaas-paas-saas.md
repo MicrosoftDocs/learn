@@ -1,5 +1,3 @@
-# IaaS, PaaS & SaaS
-
 Explain acronyms. Different service models. 
 
 You choose based on shared responsibility model.
