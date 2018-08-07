@@ -20,7 +20,7 @@ When building an IaaS workload, which type of disk should you use? There are thr
 
 Premium Storage can only attach to specific Virtual Machine (VM) sizes. Those VMs are the ones that have an S in the name, for example D2s_v3 or Standard_F2s_v2. Any virtual machine type (with or without an s in the name) can attach standard storage HDD or SSD drives.
 
-Disks can be striped using [Storage Spaces Direct][storage-spaces-direct] to increase the throughput (IPOS) provided by a single disk, as well as providing additional scalability.  Having multiple Managed Disks spread over multiple Azure Storage Accounts enables you to scale beyond the throughput [limits of Azure storage][storage-limitations] which is critical for large SQL workloads or those with higher IO requirements.
+Disks can be striped using [Storage Spaces Direct][storage-spaces-direct] to increase the throughput (IOPS) provided by a single disk, and provide additional scalability. Having multiple Managed Disks spread over multiple Azure Storage Accounts enables you to scale beyond the throughput [limits of Azure storage][storage-limitations] which is critical for large SQL workloads or those with higher IO requirements.
 
 ## Application based
 
