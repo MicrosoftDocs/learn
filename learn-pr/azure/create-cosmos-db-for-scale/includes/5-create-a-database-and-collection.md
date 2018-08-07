@@ -1,4 +1,4 @@
-Now that you understand how request units are used to determine database throughput, and how the partition key creates the scale out strategy for your database, you're ready to create your database and collection.
+Now that you understand how request units are used to determine database throughput, and how the partition key creates the scale out strategy for your database, you're ready to create your database and collection for your users.
 
 1. Back in the Azure portal, click **Data Explorer** > **New Collection**.
     
@@ -17,7 +17,7 @@ Now that you understand how request units are used to determine database through
     
     For now, do not check the Provision database throughput option and do not add any unique keys to the collection. 
     
-    Click **OK**.
+3. Click **OK**.
 
     Data Explorer displays the new database and collection.
 

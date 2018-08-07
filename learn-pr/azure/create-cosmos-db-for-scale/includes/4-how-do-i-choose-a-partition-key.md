@@ -22,4 +22,6 @@ When you're trying to determine the right partition key and the solution isn't o
 
 * To determine the best partition key for a read-heavy workload, review the top three to five queries you plan on using. The value most frequently included in the WHERE clause is a good candidate for the partition key.
 
-* For write-heavy workloads, you'll need to understand the transactional needsof your workload because the partition key is the scope of multi-document transactions. <!--TODO: Need to include an example of a bad partition key here to make this point clearer.>
+* For write-heavy workloads, you'll need to understand the transactional needsof your workload because the partition key is the scope of multi-document transactions.
+
+<!--TODO: Need to include an example of a bad partition key here to make this point clearer.-->
