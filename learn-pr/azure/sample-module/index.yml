@@ -15,16 +15,16 @@ abstract: This is the abstract of the sample module
 cardDescription: This is the card description of the sample module
 # `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
-# `iconUrl` is the badge image
-levels:
+# `iconUrl` is the badge image 
+levels: 
 - intermediate
-# `beginner`, `intermediate`, `advanced`
-roles:
+# `beginner`, `intermediate`, `advanced`; multiple values accepted
+roles: 
 - developer
-# `developer`, `administrator`, `solutionsArchitect`, `businessUser`, `businessAnalyst`
-products:
+# `developer`, `administrator`, `solutionsArchitect`, `businessUser`, `businessAnalyst`; multiple values accepted
+products: 
 - Azure
-#
+# `azure`; multiple values accepted
 units:
 # `units` are lists of all of the unit uids, in the order they should be displayed to the user in
 - learn.sample-module-cloudshell.1-unit-text-only

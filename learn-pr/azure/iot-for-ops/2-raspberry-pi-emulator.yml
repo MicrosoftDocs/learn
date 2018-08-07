@@ -1,0 +1,11 @@
+### YamlMime:ModuleUnit
+# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
+uid: learn.iot-for-ops.2-raspberry-pi-emulator
+metadata:
+  title: Using Stream Analytics
+  description: This is a sample of "text-only" content (no lab or knowledge check components).
+  displayType: one-column
+title: Using Stream Analytics
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-raspberry-pi-emulator.md)]

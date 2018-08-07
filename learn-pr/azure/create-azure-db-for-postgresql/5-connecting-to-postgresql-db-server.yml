@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-db-for-postgresql.5-connecting-to-postgresql-db-server
+title: Connecting to a PostgreSQL DB server
+metadata:
+  title: Connecting to a PostgreSQL DB server
+  description: Connecting to a PostgreSQL DB server
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-connecting-to-postgresql-db-server.md)]

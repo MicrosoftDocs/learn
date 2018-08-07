@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.web-app-with-mean-on-linux-vm.1-open-port-80-on-vm
+title: Open port 80 on the VM
+metadata:
+  title: Open port 80 on the VM
+  description: Open port 80 on the VM
+durationInMinutes: 11
+content: |
+  [!include[](includes/1-open-port-80-on-vm.md)]
