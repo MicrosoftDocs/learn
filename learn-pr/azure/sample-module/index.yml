@@ -11,7 +11,7 @@ title: Sample module with CloudShell
 summary: This is the summary of the sample module
 # `summary` appears at the top of the module page beneath the title
 abstract: This is the abstract of the sample module
-# `abstract` appears on the module page beneath the summary and level/role/product metadata 
+# `abstract` appears on the module page beneath the summary and level/role/product metadata
 cardDescription: This is the card description of the sample module
 # `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
