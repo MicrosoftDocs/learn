@@ -1,19 +1,16 @@
-This section shows you everything you need to create an Azure Cosmos DB account. By the end of this section, you will be able to:
+In order to create an Azure Cosmos DB database, you first need to create an Azure Cosmos DB account, which simply acts as an organizational entity for your databases, and connects your usage to your Azure subscription for billing purposes.
 
-* Name your Azure Cosmos DB account
-* Select the appropriate API for your account
-* Create the account in the appropriate region
-* Learn what settings are required at account creation, and what settings can be modified later
+Each Azure Cosmos DB account is associated with one of the data models Azure Cosmos DB supports, and you can create as many accounts as you need.
 
-# Motivation
-
-Creating an Azure Cosmos DB is the first step in creating an Azure Cosmos DB database. A single account can contain multiple databases and collections, and acts as the billing entity for the databases it contains.
-<!-- TODO: What is Azure Cosmos DB? What is an Azure Cosmos DB account? When do you need more than one account? -->
+In this section, we'll create just one Azure Cosmos DB account, a SQL API account for use with json documents, but you could create additional accounts if you wanted to create graphs or table databases with Azure Cosmos DB, or if you wanted to migrate MongoDB or Cassandra data to Azure to take advantage of the managed services Azure Cosmos DB offers.
 
 # Create an Azure Cosmos DB account
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
+   
+   ![The Azure portal Databases pane](../media/1-introduction/create-nosql-db-databases-json-tutorial-1.png)
+
 3. In the **New account** page, enter the settings for the new Azure Cosmos DB account.
  
     Setting|Value|Description
@@ -28,8 +25,20 @@ Creating an Azure Cosmos DB is the first step in creating an Azure Cosmos DB dat
 
     Then click **Create**.
 
-4. The account creation takes a few minutes. Wait for the portal to display the **Congratulations! Your Azure Cosmos DB account was created** page.
+    ![The new account page for Azure Cosmos DB](../media/1-introduction/azure-cosmos-db-create-new-account.png)
+
+4. The account creation takes a few minutes. Wait for the portal to display a notification that the deployment succeeded, and click the notification. 
+
+    ![Notification alert](../media/1-introduction/azure-cosmos-db-notification.png)
+
+5. In the notification window, click **Go to resource**.
+
+    ![Go to resource](../media/1-introduction/azure-cosmos-db-go-to-resource.png)
+
+1. The **Congratulations! Your Azure Cosmos DB account was created** page.
+
+    ![The Azure portal Notifications pane](../media/1-introduction/azure-cosmos-db-account-created.png)
 
 # Summary
 
-You should create your Azure Cosmos DB account in the location closest to your users, and in this case you should use the SQL API as we’ll be storing JSON documents and want to be able to query using the SQL query language. You can configure geo-replication, multi-master write, and virtual network during account creation, or you can easily add them later when you need them, which is what we’ll do.
+You should create your Azure Cosmos DB account in the location closest to your users, and in this case you should use the SQL API as we’ll be storing JSON documents and want to be able to query using the SQL query language. The portal gives you the option to configure geo-replication, multi-master write, and a virtual network during account creation, but we will work with those settings in later modules.
