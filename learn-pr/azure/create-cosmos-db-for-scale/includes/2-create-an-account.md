@@ -35,7 +35,7 @@ In this section, we'll create just one Azure Cosmos DB account, a SQL API accoun
 
     ![Go to resource](../media/1-introduction/azure-cosmos-db-go-to-resource.png)
 
-1. The **Congratulations! Your Azure Cosmos DB account was created** page.
+1. The portal displays the **Congratulations! Your Azure Cosmos DB account was created** page.
 
     ![The Azure portal Notifications pane](../media/1-introduction/azure-cosmos-db-account-created.png)
 

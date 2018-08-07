@@ -6,8 +6,6 @@ Now that you understand how request units are used to determine database through
 
     ![The Azure portal Data Explorer, Add Collection blade](../media/5-create-a-database-and-collection/azure-cosmosdb-data-explorer.png)
 
-    ![The Azure portal Data Explorer, Add Collection blade](../media/5-create-a-database-and-collection/azure-cosmosdb-data-explorer-90.png)
-
 2. In the **Add collection** page, enter the settings for the new collection.
 
     Setting|Suggested value|Description
@@ -24,7 +22,5 @@ Now that you understand how request units are used to determine database through
     Data Explorer displays the new database and collection.
 
     ![The Azure portal Data Explorer, showing the new database and collection](../media/5-create-a-database-and-collection/azure-cosmos-db-new-collection.png)
-
-    ![The Azure portal Data Explorer, showing the new database and collection](../media/5-create-a-database-and-collection/azure-cosmos-db-new-collection-90.png)
 
 <!--TODO: Do I need an end of unit wrap up? Do I need to clean up resources?-->
