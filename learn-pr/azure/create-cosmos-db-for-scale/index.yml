@@ -9,14 +9,14 @@ abstract: In this module, you will learn to create an NoSQL database built to sc
 cardDescription: Learn how to create an Azure Cosmos DB account, database, and collection.
 #TODO: Need icon URL
 iconUrl: http://via.placeholder.com/120x120
-level: beginner
-role: developer
-product: Azure
+levels: beginner
+roles: developer
+products: Azure
 units:
 - learn.create-cosmos-db-for-scale.1-introduction
 - learn.create-cosmos-db-for-scale.2-create-an-account
 - learn.create-cosmos-db-for-scale.3-what-is-a-request-unit
 - learn.create-cosmos-db-for-scale.4-how-do-i-choose-a-partition-key
 - learn.create-cosmos-db-for-scale.5-create-a-database-and-collection
-#TODO: Need achievement badge
-achievement: learn.sample-module-cloudshell.badge
+#TODO: Need achievement badge?
+achievement: learn.work-with-nosql-data-in-azure-cosmos-db.trophy
