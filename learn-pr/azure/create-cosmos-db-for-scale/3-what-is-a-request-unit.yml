@@ -11,7 +11,7 @@ content: |
 quiz:
   title: 'Quiz Title'
   questions:
-  - content: 'When you create an Azure Cosmos DB account, and you want to ensure it will grow with your application’s needs. What’s the minimum value you should set the throughput to?'
+  - content: 'When you create an Azure Cosmos DB account, and you want to ensure it will grow with your application’s needs, what’s the minimum value you should set the throughput to?'
     choices:
     - content: 400 RU/s
       isCorrect: false

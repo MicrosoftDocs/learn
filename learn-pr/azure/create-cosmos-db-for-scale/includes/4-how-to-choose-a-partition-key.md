@@ -24,4 +24,6 @@ When you're trying to determine the right partition key and the solution isn't o
 
 * For write-heavy workloads, you'll need to understand the transactional needsof your workload because the partition key is the scope of multi-document transactions.
 
-<!--TODO: Need to include an example of a bad partition key here to make this point clearer.-->
+## Summary
+
+This module demonstrated the importance of partition keys, and how selecting the right partition key can help avoid problems down the line such as hot partitions and maxed out physical partitions. You can now use this information to create a database with a partition key that's built to handle the needs of your application. 

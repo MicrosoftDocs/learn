@@ -34,3 +34,7 @@ If you don’t reserve enough request units, and you attempt to read or write mo
 You can change the number of request units provisioned to a database at any time. So if you have read or write heavy times, you can scale up to accommodate those high-demand times, and then reduce provisioned throughput during off peak times to reduce costs.
 
 When you create an account, you can provision a minimum of 400 RU/s, or a maximum of 250,000 RU/s in the portal. If you need even more throughput, that can be accommodated, it just requires that you fill out a ticket in the Azure portal. Setting the initial throughput to 1000 RU/s is recommended for almost all accounts, as it is the minimum value in which your database will auto scale should you need more than 10GB of storage. If you set the initial throughput to any value less than 1000 RU/s, your database will not be able to scale to larger than 10GB unless you reprovision the database and provide a partition key. Partition keys enable quick look-up of data in Azure Cosmos DB and enable it to auto-scale your database when needed. Partition keys are discussed in the next unit.
+
+## Summary
+
+This module demonstrated the importance of request units as a fundemental part of understanding how to create a successful Azure Cosmos DB solution. Request units can be modified at any time, but setting them to 1000 RU/s when you create an account ensures your database is ready to scale later.

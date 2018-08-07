@@ -39,5 +39,5 @@ In this section, we'll create just one Azure Cosmos DB account, a SQL API accoun
     ![The Azure portal Notifications pane](../media/1-introduction/azure-cosmos-db-account-created.png)
 
 ## Summary
-<!--TODO: Should all units have a summary?-->
-You have created an Azure Cosmos DB account in the location closest to your users, and in this case you created a SQL API as you'll be storing JSON documents and want to be able to query using the SQL query language. The portal gives you the option to configure geo-replication, multi-master write, and a virtual network during account creation, but we will work with those settings in later modules.
+
+You have created an Azure Cosmos DB account in the location closest to your users, and in this case you created a SQL API account as you'll be storing JSON documents and want to be able to query using the SQL query language. The portal gives you the option to configure geo-replication, multi-master write, and a virtual network during account creation, but we will work with those settings in later modules.

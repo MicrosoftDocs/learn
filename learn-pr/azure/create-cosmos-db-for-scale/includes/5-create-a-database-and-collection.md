@@ -23,4 +23,6 @@ Now that you understand how request units are used to determine database through
 
     ![The Azure portal Data Explorer, showing the new database and collection](../media/5-create-a-database-and-collection/azure-cosmos-db-new-collection.png)
 
-<!--TODO: Do I need an end of unit wrap up? Do I need to clean up resources?-->
+## Summary
+
+This module has shown you how to create an Azure Cosmos DB account that you can use for real world scenarios like online retail apps. By creating a database with a smart partition key you'll be able to scale horizontally as your need for data storage grows. You've also learned about request unit needs for your application, and how to set them during account creation so that you can scale up your throughput later, when user demand increases. 
