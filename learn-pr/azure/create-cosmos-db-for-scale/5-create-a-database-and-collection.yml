@@ -3,7 +3,7 @@ uid: learn.create-cosmos-db-for-scale.5-create-a-database-and-collection
 metadata:
   title: Create an Azure Cosmos DB database and collection
   description: Apply what you've learned about request units and parititioning to build and Azure Cosmos DB database and collection built for scale. 
-  displayType: two-column
+  displayType: one-column
   #TODO: support azure portal
   interactive: azureportal
 title: Create a database and collection in Azure Cosmos DB
@@ -13,8 +13,8 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: 'Please make sure that you have created a database named "School", a collection named "Families", and it was added to the "eastus" location'
-  #TODO: How should this be listed? These will be in uniquely named accounts
+  hint: 'Please make sure that you have created a database named "Users", a collection named "WebCustomers".'
+  #TODO: Not exactly sure how to do this
   azure:
     resourceGroup: myResourceGroup
     location: eastus
