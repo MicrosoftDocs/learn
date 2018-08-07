@@ -19,11 +19,10 @@ quiz:
     - content: 1000 RU/s
       isCorrect: true
       correctExplanation: Correct! Setting throughput to 1000 RU/s is the minimum value to enable autoscaling of your database.
-      isCorrect: true
     - content: 1400 RU/s
       isCorrect: false
       incorrectExplanation: Setting throughput to 1400 RU/s would enable your database to autoscale, however it's not the minimum value you could set to enable autoscaling.
-    - content: 250,000 RU/s
+    - content: '250,000 RU/s'
       isCorrect: false
       incorrectExplanation: Setting throughput to 1400 RU/s would enable your database to autoscale, however it's not the minimum value you could set to enable autoscaling.
   - content: 'If you plan on writing a 4KB document to an Azure Cosmos DB database 100 times per second, and reading the a 4KB document 500 times per second, how many request units should you provision to ensure your account is not rate-limited?'

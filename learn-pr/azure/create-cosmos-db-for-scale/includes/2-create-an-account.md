@@ -4,8 +4,8 @@ Each Azure Cosmos DB account is associated with one of the data models Azure Cos
 
 In this section, we'll create just one Azure Cosmos DB account, a SQL API account for use with json documents, but you could create additional accounts if you wanted to create graphs or table databases with Azure Cosmos DB, or if you wanted to migrate MongoDB or Cassandra data to Azure to take advantage of the managed services Azure Cosmos DB offers.
 
-# Create an Azure Cosmos DB account
-
+## Create an Azure Cosmos DB account
+<!--TODO: Update portal link with one that routes to free Learning acct-->
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
    
@@ -39,6 +39,6 @@ In this section, we'll create just one Azure Cosmos DB account, a SQL API accoun
 
     ![The Azure portal Notifications pane](../media/1-introduction/azure-cosmos-db-account-created.png)
 
-# Summary
-
-You should create your Azure Cosmos DB account in the location closest to your users, and in this case you should use the SQL API as we’ll be storing JSON documents and want to be able to query using the SQL query language. The portal gives you the option to configure geo-replication, multi-master write, and a virtual network during account creation, but we will work with those settings in later modules.
+## Summary
+<!--TODO: Should all units have a summary?-->
+You have created an Azure Cosmos DB account in the location closest to your users, and in this case you created a SQL API as you'll be storing JSON documents and want to be able to query using the SQL query language. The portal gives you the option to configure geo-replication, multi-master write, and a virtual network during account creation, but we will work with those settings in later modules.

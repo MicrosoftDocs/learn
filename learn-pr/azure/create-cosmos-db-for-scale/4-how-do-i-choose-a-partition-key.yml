@@ -12,11 +12,27 @@ content: |
 quiz:
   title: 'Quiz Title'
   questions:
-  - content: 'What this markdown file talking about:'
+  - content: 'Can you add a partition key to an Azure Cosmos DB collection after it has been created?'
     choices:
-    - content: Brainstorming of markdown file format for quiz.
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: true
-    - content: Brainstorming of markdown file format for quiz. Part 2
+    - content: Yes
       isCorrect: false
+      incorrectExplanation: Partition keys can only be set when a collection is created. 
+    - content: No
+      isCorrect: true
+      correctExplanation: Correct! You can only set the partition key when the collection is created.
+  - content: 'Can you change the partition key after the Azure Cosmos DB collection has been created?'
+    choices:
+    - content: Yes
+      isCorrect: false
+      incorrectExplanation: Partition keys cannot be modified after the collection is created. 
+    - content: No
+      isCorrect: true
+      correctExplanation: Correct! Partition keys cannot be modified after the collection is created.
+  - content: 'What would be the best partition key for storing order history?'
+    choices:
+    - content: UserID
+      isCorrect: true
+      incorrectExplanation: Correct! Order history would typically be retrieved based on the user that created the order. 
+    - content: OrderTime
+      isCorrect: false
+      correctExplanation: Although order time could be used as a partition key, it might create hot partitions on popular shopping days. And order history is typically retrieved based on the user that created the order, not the time it was placed.
