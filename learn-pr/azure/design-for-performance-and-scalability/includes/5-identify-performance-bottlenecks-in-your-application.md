@@ -57,7 +57,7 @@ You just need to create a workspace to enable collection. You can install agents
 
 ![Log Analytics Sources](log-analytics.png)
 
-You can collate a wide range of data sources, including Security Logs, Azure Activity Logs, Server, network and Application logs. [You can also push On-premises System Center Operations Manager data to Log Analytics in hybrid deployment scenarios.][scom-to-la]
+You can collate a wide range of data sources, Security Logs, Azure Activity Logs, Server, network and Application logs. [You can also push On-premises System Center Operations Manager data to Log Analytics in hybrid deployment scenarios.][scom-to-la] and have [Azure SQLDB][log-analytics-sqldb] send diagnostic information directly into Log Analytics for detailed performance monitoring.
 
 ## Application Insights
 
@@ -100,3 +100,4 @@ https://visualstudio.microsoft.com/devops/
 [log-analytics]: https://docs.microsoft.com/en-gb/azure/log-analytics/log-analytics-overview
 [log-analytics-query-language]: https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal
 [log-analytics-management-solutions]: https://docs.microsoft.com/en-gb/azure/monitoring/monitoring-solutions?toc=%2fazure%2flog-analytics%2ftoc.json
+[log-analytics-sqldb]: https://docs.microsoft.com/en-us/azure/sql-database/saas-dbpertenant-log-analytics
