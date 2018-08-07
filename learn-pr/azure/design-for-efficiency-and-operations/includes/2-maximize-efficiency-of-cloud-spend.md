@@ -1,12 +1,24 @@
-# Maximize efficiency of cloud spend
+***[JB] removed the H1, it will get added automatically***
 
-## Introduction to cloud spend
+As you move to the cloud, your costs are going to play a large role in your success. Spend too much money and you jeopardize the health of your business. Let's imagine the healthcare company you work for has seen their bill increase steadily over the last few months, but aren't sure if this is natural, efficient growth or if it's due to waste and inefficiences. How do you ensure you're being as efficient as possible? What does efficiency even look like? Let's look at some ways to ensure your architecture is making best use of your money.
 
-One of the fundamental differences between public cloud and on-premises infrastructure is the way billing is affecting the applications. In an on-premises world we often see that investments are happing on a certain cadence. Typically when there's not enough capacity left to expand existing or add new workloads, new investments are made to expand the infrastructure. There's also a lot of hidden costs that are often not factored in: e.g. electricity, cooling, room, staff,... When you buy additional hardware on-premises you pay for it in full, regardless whether you use it or not. In public cloud each service you deploy and have running comes with a certain increment to your bill. The fact that you just *pay for what you use* is a huge advantage! It means that you can benefit from various cloud computing patterns that can positively impact your workload as they either free up budget that can be allocated to other projects or allow you to assign more resources whenever you need them. Here are some of these patterns as well as the challenges that traditional on-premises focussed organizations face with these patterns.
+***[JB] Added some motivation here. We want to help the learner get interested in why this matters.***
+
+## How the cloud changes your expenses
+***[JB] changed the title here, I think this frames it a little better***
+
+One of the fundamental differences between the public cloud and on-premises infrastructure is how you pay for the services you use. In an on-premises data center hardware procurement times are typically long, costs are hidden, and hardware is typically spec'd out for maximum capacity. Purchasing physical infrastructure ties up investments in long term assets, hindering your ability to be agile with the resources you actually need. 
+
+Shifting to the cloud introduces a true pay for what you use cost model and costs are fully transparent. You no longer need to tie up investments in assets, and if your resource requirements change you can quickly and easily shift your costs along with them. Workloads are going to vary between and within services, demand can be unpredictable, and your growth patterns will shift over time. Since you only pay for what you use on the cloud, your cost structure can move in sync with these changes in resources.
+
+***[JB] changed this paragraph a bit, we want this to flow well. This helps provide a little more context around the image.***
 
 ![Service Health](../media/2-maximize-efficiency-of-cloud-spend/cloudcomputingpatterns.png)
 
+***[JB] Let's add some details around what being efficient is. What properties make up an efficient system?***
+
 In this module we'll focus on covering various techniques to ensure costs can be optimized where possible. Another term for this optimization is *right-sizing*. In the module on monitoring and analytics we'll cover approaches to ensure your workload is not *undersized* resulting in a poor experience for your end users. Whenever your deploying a new service to Azure it's a good practice to set aside some time to read through the pricing documentation in order to have a good understanding of the potential impact of a certain deployment. Taking it one step further you could even leverage the Azure Pricing calculator to forecast what a certain workload is going to cost. It's impossible to optimize your cloud spend without having a good understanding of your current spending patterns.
+***[JB] I think we should remove this paragraph and try instead to make a smoother transition to the next section. We don't need to detail what we'll cover in this unit (they're already in it) and we'll frame up the next unit when we start that one.***
 
 ## Getting insights in the actual consumption
 
