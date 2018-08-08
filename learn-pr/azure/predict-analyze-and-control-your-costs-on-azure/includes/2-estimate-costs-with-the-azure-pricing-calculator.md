@@ -1,1 +1,0 @@
-Estimate costs with the Azure Pricing Calculator

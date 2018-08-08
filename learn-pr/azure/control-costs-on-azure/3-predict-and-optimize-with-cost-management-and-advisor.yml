@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.predict-analyze-and-control-your-costs-on-azure.4-save-on-infrastructure-costs
-title: Save on infrastructure costs
+uid: learn.control-costs-on-azure.3-predict-and-optimize-with-cost-management-and-advisor
+title: Predict and optimize with Cost Management and Advisor
 metadata:
-  title: Save on infrastructure costs
-  description: In this unit we'll discuss how to save on infrastructure costs
+  title: Predict and optimize with Cost Management and Advisor
+  description: In this unit we'll discuss how to predict and optimize with Cost Management and Advisor
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-save-on-infrastructure-costs.md)]
+  [!include[](includes/3-predict-and-optimize-with-cost-management-and-advisor.md)]
 quiz:
   title: 'Quiz Title'
   questions:
