@@ -5,7 +5,7 @@ metadata:
   title: How to choose a partition key in Azure Cosmos DB?
   description: Learn how to create a collection with a partition key that will enable your database to scale as your needs grow.
   displayType: one-column
-title: How do I choose a partition key?
+title: How to choose a partition key?
 durationInMinutes: 10
 content: |
   [!include[](includes/4-how-to-choose-a-partition-key.md)]
