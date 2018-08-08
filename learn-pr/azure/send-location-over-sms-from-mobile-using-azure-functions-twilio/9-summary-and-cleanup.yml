@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.9-summary-and-cleanup
+title: Summary and cleanup
+metadata:
+  title: Summary and cleanup
+  description: A summary or the steps taken and cleanup instructions to clean up the provisioned Azyre resources.
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary-and-cleanup.md)]
