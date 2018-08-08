@@ -19,9 +19,13 @@ products:
 - Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-- learn.automate-azure-tasks-with-powershell.1-motivation
-- learn.automate-azure-tasks-with-powershell.2-powershell-decision
-- learn.automate-azure-tasks-with-powershell.3-install-powershell
-- learn.automate-azure-tasks-with-powershell.4-create-azure-resource-using-powershell
-- learn.automate-azure-tasks-with-powershell.5-create-save-scripts-in-powershell
+- learn.automate-azure-tasks-with-powershell.1-module-motivation
+- learn.automate-azure-tasks-with-powershell.2-decide-if-azure-powershell-is-right-for-your-tasks
+- learn.automate-azure-tasks-with-powershell.3-install-azure-powershell
+- learn.automate-azure-tasks-with-powershell.4-exercise-install-azure-powershell
+- learn.automate-azure-tasks-with-powershell.5-create-resource-interactively
+- learn.automate-azure-tasks-with-powershell.6-exercise-create-resource-interactively
+- learn.automate-azure-tasks-with-powershell.7-create-resource-using-script
+- learn.automate-azure-tasks-with-powershell.8-exercise-create-resource-using-script
+- learn.automate-azure-tasks-with-powershell.9-module-summary
 achievement: learn.automate-azure-tasks-with-powershell.badge

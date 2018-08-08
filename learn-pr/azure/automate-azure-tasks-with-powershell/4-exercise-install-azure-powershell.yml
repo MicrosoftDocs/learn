@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.automate-azure-tasks-with-powershell.4-exercise-install-azure-powershell
+title: Install Azure PowerShell - Exercise
+metadata:
+  title: Install Azure PowerShell - Exercise
+  description: Install Azure PowerShell - Exercise
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-install-azure-powershell.md)]
