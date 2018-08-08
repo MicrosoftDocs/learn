@@ -8,7 +8,7 @@ Azure Cosmos DB measures throughput using something called a request unit. Reque
 
 ## Request unit basics
 
-A single request unit, 1 RU, is equal to the approximate cost of performing a single GET request on a 1KB document, using a document's ID. Performing a GET by using a document's ID is a very efficient means for retrieving a document, and thus the cost is very small. Creating, replacing, or deleting the same item requires additional processing by the service, and therefore requires more request units.
+A single request unit, 1 RU, is equal to the approximate cost of performing a single GET request on a 1-KB document, using a document's ID. Performing a GET by using a document's ID is an efficient means for retrieving a document, and thus the cost is small. Creating, replacing, or deleting the same item requires additional processing by the service, and therefore requires more request units.
 
 The number of request units used for an operation changes depending on the document size, the number of properties in the document, the operation being performed, and some additional complex concepts such as consistency and indexing policy.
 
@@ -27,14 +27,14 @@ As you can see, the larger the item is, and the more reads and writes are requir
 
 ## Exceeding throughput limits
 
-If you don’t reserve enough request units, and you attempt to read or write more data than your provisioned throughput allows, your request will be rate-limited, and the request will have to be retried. If you use the .NET SDK, the request will be retried automatically after waiting the amount of time specified in the retry-after header.
+If you don’t reserve enough request units, and you attempt to read or write more data than your provisioned throughput allows, your request will be rate-limited. When a request is rate-limited, the request has to be retried again after a specified interval. If you use the .NET SDK, the request will be retried automatically after waiting the amount of time specified in the retry-after header.
 
 ## Creating an account built to scale
 
 You can change the number of request units provisioned to a database at any time. So if you have read or write heavy times, you can scale up to accommodate those high-demand times, and then reduce provisioned throughput during off peak times to reduce costs.
 
-When you create an account, you can provision a minimum of 400 RU/s, or a maximum of 250,000 RU/s in the portal. If you need even more throughput, that can be accommodated, it just requires that you fill out a ticket in the Azure portal. Setting the initial throughput to 1000 RU/s is recommended for almost all accounts, as it is the minimum value in which your database will auto scale should you need more than 10GB of storage. If you set the initial throughput to any value less than 1000 RU/s, your database will not be able to scale to larger than 10GB unless you reprovision the database and provide a partition key. Partition keys enable quick look-up of data in Azure Cosmos DB and enable it to auto-scale your database when needed. Partition keys are discussed in the next unit.
+When you create an account, you can provision a minimum of 400 RU/s, or a maximum of 250,000 RU/s in the portal. If you need even more throughput, that can be accommodated, it just requires that you fill out a ticket in the Azure portal. Setting the initial throughput to 1000 RU/s is recommended for almost all accounts, as it is the minimum value in which your database will auto scale should you need more than 10 GB of storage. If you set the initial throughput to any value less than 1000 RU/s, your database will not be able to scale to larger than 10 GB unless you reprovision the database and provide a partition key. Partition keys enable quick look-up of data in Azure Cosmos DB and enable it to auto-scale your database when needed. Partition keys are discussed in the next unit.
 
 ## Summary
 
-This module demonstrated the importance of request units as a fundemental part of understanding how to create a successful Azure Cosmos DB solution. Request units can be modified at any time, but setting them to 1000 RU/s when you create an account ensures your database is ready to scale later.
+This module demonstrated the importance of request units as a fundamental part of understanding how to create a successful Azure Cosmos DB solution. Request units can be modified at any time, but setting them to 1000 RU/s when you create an account ensures your database is ready to scale later.
