@@ -20,14 +20,24 @@ Shifting to the cloud introduces a true pay for what you use cost model and cost
 In this module we'll focus on covering various techniques to ensure costs can be optimized where possible. Another term for this optimization is *right-sizing*. In the module on monitoring and analytics we'll cover approaches to ensure your workload is not *undersized* resulting in a poor experience for your end users. Whenever your deploying a new service to Azure it's a good practice to set aside some time to read through the pricing documentation in order to have a good understanding of the potential impact of a certain deployment. Taking it one step further you could even leverage the Azure Pricing calculator to forecast what a certain workload is going to cost. It's impossible to optimize your cloud spend without having a good understanding of your current spending patterns.
 ***[JB] I think we should remove this paragraph and try instead to make a smoother transition to the next section. We don't need to detail what we'll cover in this unit (they're already in it) and we'll frame up the next unit when we start that one.***
 
-## Getting insights in the actual consumption
+Now that we've talked through how the cloud changes your expenses, there's a path you can follow to ensure you're efficient, and maintain your efficiency. Tracking your spend, organizing your resources, and optimizing your resources. ***[JB] Added this paragraph, not sure I totally like the wording, but we need to show how all the stuff below connects into an approach they can follow.***
 
+## Track your cloud spend
+***[JB] Changed the title of this section here, didn't sound quite right***
+
+***[JB] This section as a whole doesn't feel quite right. Instead of jumping straight into Cost Management, can we talk a bit about why the reporting is important, and how matching up spend with resource utilization will help identify inefficiencies in your environment?***
 Getting costs under control typically involves various steps. The first step is knowing where to look to get a good overview of what costs are being charged. Azure offers [Azure Cost Management](https://docs.microsoft.com/en-us/azure/cost-management/overview) which can help you generate various reports depending on your needs. If you prefer to work with the raw data and build reports yourself you can always extract the consumption details and use excel or Power BI to generate the views you're after.
 
 The advantage of Azure Cost Management is that it abstracts away the complexity of the underlying data model present in a typical billing scenario. There's a lot of fields with a lot of complex data and it might seem daunting at first to visualize your consumption. Azure Cost Management gives you a jump start by offering various ways to visualize the data and even offer some built-in reports that make you save money right away.
 
+## Organize to optimize
+
+***[JB] Made this a section and added the title, not 100% sold on the title, but we can split these into two different sections I think.***
+
+***[JB] Can we make this flow a little better? What is baseline consumption, why does it matter?How do I get my baseline consumption?***
 Once you know where to look for your consumption you can start getting a better understanding. Without having some kind of an idea about the **baseline consumption** (e.g. during the last 30 days) it's very difficult to detect workloads causing more consumption than expected. This could potentially be going on for months before it's detected. That's why as one of the first things to master when taking control of your consumption is to have an idea of this baseline consumption. Depending on the size of your environment this might be for all of the Azure consumption but for larger organization each team might need to have a good understanding of their specific consumption.
 
+***[JB] This is good info to put here, but why are we doing this? Can we explain this better?***
 There are various ways to ensure you can allocate a specific cost to a specific team or any other dimension you might have in mind:
 
 * Putting resources in different **subscriptions**
@@ -46,6 +56,7 @@ The tagging option provides the best flexibility as this can changed as many tim
 
 Applying tags does take some discipline, but luckily there are various controls that help with this. Tags can be easily included in ARM templates so resources are tagged correctly right from the beginning. Alternatively the Azure Portal also allows for bulk adding of tags which can be a great way to tag many resources at once.
 
+***[JB] This seems out of place, just like a random screenshot. Do we need this here or can we give some better explanation around it?***
 Here's a screenshot of the Azure Portal cost analysis experience:
 
 ![Portal Cost Analysis](../media/2-maximize-efficiency-of-cloud-spend/portal-cost-analysis.png)
@@ -54,13 +65,10 @@ Using these insights should allow you to get an idea of how costs are distribute
 
 ## Optimizing IaaS Costs
 
+***[JB] We've already covered much of this in an earlier section, can we instead focus on how/why we would optimize IaaS costs, and make this a better introduction to the sections below?***
 When you deploy a virtual machine on-premises you don't really pay. Well, strictly spoken that's not true, you do have certain operational and facility costs (e.g. electricity), but the compute power itself was paid earlier when you bought the required hardware. The hardware was paid for in full regardless of whether you use it or not. In Azure there's a different approach. You only pay for what you use. Running virtual machines involves various costs: compute, network and storage. Network costs are typically only a small portion compared to the compute and storage costs of a virtual machine.
 
-### Storage
-
-The storage costs being charged are covering for the disks used by the virtual machine. As these disks are persistent they are charged for during their full life cycle, even if the virtual machine is deallocated. One of the potential hidden costs in your environment might be the one of managed disks or disk snapshots that are no longer used. When deleting a virtual machine it's easy to forget deleting the association disk(s) and snapshots. While the virtual machine no longer exists charges will still occur for the disks that used to belong to the virtual machine.
-
-There are various ways to avoid this. Grouping resources that have a common life cycle together in a resource group allows for easier clean up by deleting the resource group. Through automation or reporting it's also possible to gather the list of disks that are not associated with any VM and thus are potential candidates for deletion. Azure Cost Management even has a built-in report to display these disks.
+***[JB] Can we add a sentence or two here introducing the following areas of IaaS that we're going to provide details on for optimization?***
 
 ### Compute
 
@@ -84,7 +92,7 @@ There are many cases where a VM is used on a regular base but there's no need to
 
 ![Service Health](../media/2-maximize-efficiency-of-cloud-spend/auto-shutdown.png)
 
-### Leverage compute cost discounts
+#### Leverage compute cost discounts
 
 The [**Azure Hybrid Benefit**](https://azure.microsoft.com/en-us/pricing/hybrid-benefit/) allows you to further optimize your costs for both Windows Server and SQL Server by allowing you to use your on-premises Windows Server or SQL Server licenses with Software Assurance to be used as a discount towards to the compute cost of these VMs.
 
@@ -92,19 +100,29 @@ Some virtual machines need to be up and running all the time. Maybe you have a w
 
 [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations#buy-virtual-machine-reserved-instances-to-save-money-over-pay-as-you-go-costs) will review your virtual machine usage over the last 30 days and determine if you could save money by purchasing reserved instances. Advisor will show you the regions and sizes where you potentially have the most savings and will show you the estimated savings from purchasing reserved instances.
 
+### Virtual machine disk storage cost optimization
+
+***[JB] Moved this section down to go through compute costs first since they are the biggest driver of cost typically. Also renamed it to add clarity since we talk about storage below as well***
+
+***[JB] Can we make this flow better? Some of these sentences don't sound quite right.***
+The storage costs being charged are covering for the disks used by the virtual machine. As these disks are persistent they are charged for during their full life cycle, even if the virtual machine is deallocated. One of the potential hidden costs in your environment might be the one of managed disks or disk snapshots that are no longer used. When deleting a virtual machine it's easy to forget deleting the association disk(s) and snapshots. While the virtual machine no longer exists charges will still occur for the disks that used to belong to the virtual machine.
+
+There are various ways to avoid this. Grouping resources that have a common life cycle together in a resource group allows for easier clean up by deleting the resource group. Through automation or reporting it's also possible to gather the list of disks that are not associated with any VM and thus are potential candidates for deletion. Azure Cost Management even has a built-in report to display these disks.
+
 ## Optimizing PaaS costs
 
 Similar as with IaaS PaaS offers certain techniques which could be leveraged to optimize your cloud spend without loosing functionality. In the following sections we'll provide two examples: for Azure SQL and for blob storage
 
-### Azure SQL
+### Optimizing Azure SQL Database costs
 
+***[JB] Can you make this flow better? Some of these sentences don't make sense grammatically.***
 When creating an Azure SQL database you have to select an Azure SQL Server as well as decide on a performance tier. Each performance tier comes with a certain cost associated with it and allows the database to perform at a certain level (the so called Database Transaction Units (DTUs)). The load on a database might be steady in which you can easy right-size the pricing tier resulting in just enough performance and the right price. But what if your database has unpredictable bursts? At certain points in time you want to be able to cater for those peaks but you rather won't pay for that peak performance at all time.
 
 When you have multiple databases each with their own load patterns you can combine them in a [SQL Database elastic pool](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool). All databases in a SQL database elastic pool run on a single Azure SQL Database server and share a set number of resources at a set price.
 
 [SQL Database elastic pools](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool) are a simple, cost-effective solution for managing and scaling multiple databases that have varying and unpredictable usage demands. The databases in an elastic pool are on a single Azure SQL Database server and share a set number of resources at a set price. Elastic pools in Azure SQL Database enable SaaS developers to optimize the price performance for a group of databases within a prescribed budget while delivering performance elasticity for each database.
 
-## Blob storage
+### Blob storage
 
 A lot of applications have a need for blob storage in order to store data. There are many different types of data that can be stored each which might have different access patterns. A medical imaging application for instance might store many images on blob storage resulting in a considerate cost for the application due to the sheer amount and size of these files. If an image has been taken for a patient than it's very likely that in the first week that image might be consulted by someone. So it's important that the time required to access that image, that blob, is a small as possible. But maybe it's ok for an image that was taken over a year ago just to be available, but not as fast. Having different types of blobs each with their own access pattern and cost is what we call tiering.
 
@@ -116,6 +134,7 @@ Each of these tiers have different cost properties:
 * **Cool access tier**: has lower storage costs and higher access costs compared to hot storage. This tier is intended for data that will remain in the cool tier for at least 30 days.
 * **Archive access tier**: has the lowest storage cost and higher data retrieval costs compared to hot and cool storage. This tier is intended for data that can tolerate several hours of retrieval latency and will remain in the archive tier for at least 180 days.
 
+***[JB] If there's information to cover on pricing, put some of that here (minus the specific costs) otherwise let's not link to pricing pages.***
 In order to learn more about the actual pricing please take a look [here](https://azure.microsoft.com/en-us/pricing/details/storage/blobs/).
 
 
