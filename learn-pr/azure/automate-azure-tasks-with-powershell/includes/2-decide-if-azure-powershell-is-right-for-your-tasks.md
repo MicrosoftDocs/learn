@@ -4,21 +4,21 @@ Suppose you need to choose a tool to administer the Azure resources used to test
 You want something that is easy for administrators to learn but powerful enough to automate the installation and setup of multiple VMs. Some of your team has PowerShell experience from their previous Windows administration work. There are multiple tools available; you need to find the best one for your people and your tasks.
 
 ## What tools are available?
-Azure provides three administration tools to choose from: the Azure Portal, Azure PowerShell, and the Azure CLI. 
+Azure provides three administration tools to choose from: the Azure portal, Azure PowerShell, and the Azure CLI. 
 
 They all offer approximately the same amount of control; that is, any task that you can do with one of tools, you can likely do with the others. They are all available on Linux, Mac, and Windows. They differ in syntax, setup requirements, and whether they support automation.
 
 Here, we will describe each of the three options and give some guidance on how to decide among them. 
 
-## What is the Azure Portal?
-The Azure Portal is a website that lets you create, configure, and alter the resources in your Azure subscription. The portal is a Graphical User Interface (GUI) that makes it convenient to locate the resource you need and execute any required changes. It also guides you through complex administrative tasks by providing wizards and tooltips.
+## What is the Azure portal?
+The Azure portal is a website that lets you create, configure, and alter the resources in your Azure subscription. The portal is a Graphical User Interface (GUI) that makes it convenient to locate the resource you need and execute any required changes. It also guides you through complex administrative tasks by providing wizards and tooltips.
 
 The portal does not provide any way to automate repetitive tasks. For example, to set up 15 VMs, you would need to create them one-by-one by completing the wizard for each VM. This can be time consuming and error prone for complex tasks. 
 
 ## What is Azure PowerShell?
 Azure PowerShell is a module that you add to PowerShell to let you connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, etc. Azure PowerShell adds the Azure-specific commands.
 
-For example, Azure PowerShell provides the **New-AzureRmVM** command that creates a Virtual Machine for your inside your Azure subscription. To use it, you would launch the PowerShell application and then issue a command like the following:
+For example, Azure PowerShell provides the **New-AzureRmVM** command that creates a Virtual Machine for you inside your Azure subscription. To use it, you would launch the PowerShell application and then issue a command like the following:
 ```
 New-AzureRmVm `
     -ResourceGroupName "CrmTestingResourceGroup" `
@@ -56,9 +56,9 @@ Recall that you are choosing an administrative tool to create the test environme
 - Create one resource group for each category of testing (unit, integration, and acceptance).
 - Create multiple VMs in each resource group before every round of testing.
 
-To create the resource groups, the Azure Portal is a reasonable choice. These are one-off tasks, so you don't need scripts to do them.
+To create the resource groups, the Azure portal is a reasonable choice. These are one-off tasks, so you don't need scripts to do them.
 
-Finding the best tool to create the VMs is a more challenging decision. You need to create several of them and you need to do it repeatedly, likely several times each week. This means you will want automation, so the Azure Portal is not a good choice. Either Azure PowerShell or the Azure CLI will meet your needs. Given that your team members have some existing PowerShell knowledge, Azure PowerShell will likely be the best match. Azure PowerShell is available on the operating systems your admin team uses, it supports automation, and should be quick for your team to learn.
+Finding the best tool to create the VMs is a more challenging decision. You need to create several of them and you need to do it repeatedly, likely several times each week. This means you will want automation, so the Azure portal is not a good choice. Either Azure PowerShell or the Azure CLI will meet your needs. Given that your team members have some existing PowerShell knowledge, Azure PowerShell will likely be the best match. Azure PowerShell is available on the operating systems your admin team uses, it supports automation, and should be quick for your team to learn.
 
 ## Summary
 Most administrators first experience with Azure is the Portal. This is a great place to start since you don't need to install any software and there are no complex commands to study. It is also a good learning tool since many resources include step-by-step wizards to guide you through the setup process. When you need automation, Azure gives you two options: Azure PowerShell for admins with PowerShell experience and the Azure CLI for everyone else.

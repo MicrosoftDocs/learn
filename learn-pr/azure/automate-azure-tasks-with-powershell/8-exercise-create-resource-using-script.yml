@@ -4,6 +4,6 @@ title: Create and save scripts in Azure PowerShell - Exercise
 metadata:
   title: Create and save scripts in Azure PowerShell - Exercise
   description: Create and save scripts in Azure PowerShell - Exercise
-durationInMinutes: 12
+durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-create-resource-using-script.md)]
