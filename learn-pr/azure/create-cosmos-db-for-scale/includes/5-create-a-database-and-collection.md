@@ -26,7 +26,7 @@ Now that you understand how request units are used to determine database through
 
 ## Clean up
 
-[!INCLUDE [cleanup-resources-group-portal](../../includes/cleanup-resources-group-portal.md)]
+[!INCLUDE [cleanup-resources-group-portal](../../../includes/cleanup-resources-group-portal.md)]
 
 ## Summary
 
