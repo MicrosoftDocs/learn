@@ -1,10 +1,10 @@
-Databases need to scale to meet the velocity and volume demands of global audiences.
+Databases need to scale to meet both the data velocity and volume demands created by global audiences.
 
-You work for an online retailer, where your site needs to scale to meet a growing product catalog and provide instant results to customer input.
+You work for an online retailer, where your database needs to scale to accomodate a growing product catalog. You also have a growing global customer base, and need to provide instant responses to their queries and immediate updates to product availability.
 
-You need to ensure your database scales automatically to account for new products, and has high throughput and low latency to keep pace with your customers expectations.
+You need to ensure your database can scale automatically to account for new products and users, and has high throughput and low latency to keep pace with your customers expectations.
 
-In this module, you will learn how to create a NoSQL database built to scale with Azure Cosmos DB. By learning about partitioning early in your database creation, which enables your database to scale automatically, and throughput, which enables your customers to access your product data quickly, you'll be set for success later when you need to scale up to meet your company's growing needs.
+In this module, you will learn not only how to create a NoSQL database with Azure Cosmos DB, but you will learn about the most important decisions to make when creating a database that's built to scale - throughput and partitioning. Throughput, which is what enables your customers to access your data quickly, is measured in Azure Cosmos DB with an entity called a request unit. And partitioning, which enables your database to scale up to store more data, is managed by partition keys. By learning about request units and partition keys in the beginning, you'll be able to make the right long term decisions when creating your own Azure Cosmos DB database.
 
 ## Prerequisites
 

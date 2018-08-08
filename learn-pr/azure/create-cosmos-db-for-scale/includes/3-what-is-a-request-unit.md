@@ -1,18 +1,18 @@
-Database throughput ensures your customers, and your companies employees and partners, can read and write to your database without delays. Throughput determines the number of reads and writes your database can perform in a single second.
+Database throughput ensures your customers can read and write to your database without delays. Throughput determines the number of reads and writes your database can perform in a single second.
 
 You need to set up your database throughput to support everyday usage, and also be prepared to meet increased demand over mega-shopping days like Black Friday.
 
-To support automatic scaling down the road, you need to know the minimum throughput you can set at database creation to enable auto scaling later. You also need to estimate your throughput needs for regular use and high-demand times so that you can keep your users happy when demand goes through the roof.
+In order to scale throughput strategically, you need to estimate your throughput needs by estimating the number of reads and writes you'll have to support at different times and for different document sizes. If you estimate correctly, you'll keep your users happy when demand goes through the roof. If you estimate incorrectly, your requests can get rate limited and operations will have to wait and retry, likely causing unhappy customers.
 
-Azure Cosmos DB measures throughput using Request Units. Request unit usage is measured per second, so the unit of measure is Request Units per second (RU/s), and it must be set in advance. You can modify your throughput at any time, and push your RU/s value up or down to meet the current demand.
+Azure Cosmos DB measures throughput using something called a request unit. Request unit usage is measured per second, so the normal unit of measure is Request Units per second (RU/s). You must reserve the number of RU/s you want Azure Cosmos DB to provision in advance, so it is ready and waiting to handle the load you've estimated, but you can also scale up or down your RU/s at any time to meet the current demand.
 
 ## Request unit basics
 
-A single request unit, 1 RU, is equal to the approximate cost of performing a single GET request on a 1KB document, using a document's ID. Using a document's ID to request it is a very efficient means for retrieving a document, and thus the cost is very small. Creating, replacing, or deleting the same item requires additional processing by the service, and therefore requires more request units.
+A single request unit, 1 RU, is equal to the approximate cost of performing a single GET request on a 1KB document, using a document's ID. Performing a GET by using a document's ID is a very efficient means for retrieving a document, and thus the cost is very small. Creating, replacing, or deleting the same item requires additional processing by the service, and therefore requires more request units.
 
-The number of request units used for an operation changes depending on the document size, the number of properties in the document, the operation being performed, and some settings we’ll learn about later such as the data consistency setting for the database and whether the properties in the document are indexed.
+The number of request units used for an operation changes depending on the document size, the number of properties in the document, the operation being performed, and some additional complex concepts such as consistency and indexing policy.
 
-The following table shows the request unit charge for items of three different sizes (1 KB, 4 KB, and 64 KB) and at two different performance levels (500 reads/second + 100 writes/second and 500 reads/second + 500 writes/second). In this example, the data consistency is set to **Session**, and the indexing policy is set to **None**, which are concepts discussed in later modules.
+The following table shows the number of request units required for items of three different sizes (1 KB, 4 KB, and 64 KB) and at two different performance levels (500 reads/second + 100 writes/second and 500 reads/second + 500 writes/second). In this example, the data consistency is set to **Session**, and the indexing policy is set to **None**.
 
 | Item size | Reads/second | Writes/second | Request units
 | --- | --- | --- | --- |
