@@ -9,9 +9,9 @@ content: Knowledge check - Understanding Azure solutions for public, private and
 quiz:
   title: 'Azure solutions for public, private and hybrid cloud'
   questions:
-  - content: 'Company x problem y solution z. Is this a private cloud soultion?'
+  - content: 'Analyst needs SQL server database. Can request, provision themselves.'
     choices:
-    - content: Yes. This is a private cloud.
+    - content: Public cloud is a good option.
       correctExplanation: Why this answer is correct
       isCorrect: true
     - content: Answer 2

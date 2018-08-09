@@ -1,4 +1,4 @@
-You work at a healthcare company. You have legacy systems, LOB systems, and future plans for new systems. You see advantages to using cloud computing. How do you choose the best deployment model for different solutions public, private, hybrid cloud.
+Imagine you work at a healthcare company. You have legacy systems, line of business systems, and future plans for new systems. You've heard there are advantages to using cloud computing. How do you choose the best deployment model for different solutions public, private, hybrid cloud?
 
 ## What is cloud computing?
 
@@ -14,78 +14,38 @@ There are three deployment models for cloud computing: public, private, hybrid.
 
 Public clouds are the most common way of deploying cloud computing. Services are offered over the public Internet and available to anyone who wants to purchase them. The cloud resources such as servers and storage are owned and operated by a third-party cloud service provider and delivered over the Internet. Services may be free or sold on-demand, allowing customers to pay only per usage for the CPU cycles, storage, or bandwidth they consume. Microsoft Azure is an example of a public cloud. 
 
-Let's think back to our healthcare company. You need a website. The site needs to scale and be responsive during peak enrollment various times during the year. Users are global. 
+Let's imagine your healthcare company needs an enrollment website. The site needs to scale and be responsive during peak enrollment various times during the year. Your customers access the site from global locations. You can use the public cloud to automatically scale up to meet demand at peak enrollment. When site traffic is low, you site can scale down to save costs. Your site is resposive at peak demand and you only pay for more resources when needed. You can also deploy your website in multiple geographic regions to increase reliablity and resposiveness.
 
-During development, developers want to create and destroy sandbox environments. Devs need VMs for sandboxed environment to develop a solution. can provision and depro
-
-Another scenario, analyst needs SQL server database. Can request, provision themselves.
+During the development of your website, developers want to create multiple development environments to speed their development process. Developers can use the public cloud to quickly provision virtual machines for sandboxed environments to develop a solution. When the developers no longer need an environment, they can delete it.
 
 ### Why public cloud?
 
- Public clouds can also be deployed faster than on-premises infrastructures and with an almost infinitely scalable platform. Every employee of a company can use the same application from any office or branch using their device of choice as long as they can access the Internet. While security concerns have been raised over public cloud environments, when implemented correctly, the public cloud can be as secure as the most effectively managed private cloud implementation if the provider uses proper security methods, such as intrusion detection and prevention systems (IDPS).
+Public clouds can be deployed faster than on-premises infrastructures and with an almost infinitely scalable platform. Every employee of a company can use the same application from any office or branch using their device of choice as long as they can access the Internet. When reviewing requirements for your solution, consider the following benifits of public cloud:
 
-**On-demand service consumption through as needed or subscription**
-
-Scale without needing accurate projections
-
-**No upfront investment of hardware**
-
-Public clouds can save companies from the expensive costs of having to purchase, manage, and maintain on-premises hardware and application infrastructure. The cloud service provider is held responsible for all management and maintenance of the system.
- 
-You only pay for the portion of CPU, storage, etc that you actually use (or, in some cases the portion that you reserve to use)
-
-Staged migration. decommisioning old stuff
- 
-**Automation**
-
-Can create test machines, etc as part of build/other scripts
-
-**Sandbox testing**
-
-**Geographic dispersity**
-
-Can put data close to where it needs to be without having many of your own data-centers
-
-?- Complete solutions available
-?- born in cloud solution
-?- Geo-Resiliency
+- **On-demand service consumption through as needed or subscription:** You only pay for the portion of CPU, storage, and other resouces that you use or reserve.
+- **No upfront investment of hardware:** Public clouds can save companies from the expensive costs of having to purchase, manage, and maintain on-premises hardware and application infrastructure. The cloud service provider is held responsible for all management and maintenance of the system. 
+- **Automation:** ??Can create test machines, etc as part of build/other scripts
+- **Geographic dispersity:** You can put data close to where it needs to be without having many of your own data-centers
+- **Reduced hardware maintenance:** Your service provider provides the maintenance.
 
 ## Private cloud
 
-A private cloud consists of computing resources used exclusively by select users from one business or organization. The private cloud can be physically located at your organization’s on-site datacenter, or it can be hosted by a third-party service provider. Private cloud isn't old school on-prem datacenters. Completely leverages on-prem infrastructure and services. Runs some abstraction platform: could be 'cloud-like' like Kubernetes clusters or a full-fledged cloud environment like Azure Stack. The organization is reponsible for the purchase, configuration, and maintenance of the hardware. Communication between the systems is usually on network infrastructure the business owns and maintains. For example, a private internal network or provisioned - dedicated fiber optic connection between buildings.
+A private cloud consists of computing resources used exclusively by select users from one business or organization. It can be physically located at your organization’s on-site datacenter, or it can be hosted by a third-party service provider. The term private cloud should not be considered a rebranding of traditional on-premises datacenters. A private cloud uses on-premises infrastructure and services to provide similar benefits of the public cloud. It uses an abstraction platform to provide *cloud-like* services such as Kubernetes clusters or a complete cloud environment like Azure Stack. The organization is reponsible for the purchase, configuration, and maintenance of the hardware. Communication between the systems is usually on network infrastructure the business owns and maintains. For example, a private internal network or a dedicated fiber optic connection between buildings.
 
-You work at health x you need and have an application that is in use at one of the datacenters.  The operating environment can't be replicated in the public cloud.  Need to access data with database at another datacenter. Database needs to remain at the other site because of regulatory compliance.
-
-Use a couple concrete examples, show diagrams for each:
-- Optional: Include simple all on-prem
-- Include all on prem, two data-centers connected via physical dedicated line
-- Include VPN to hosting provider, but where there is a dedicated set of machines / sub-net owned by 
-
-### Scenario:
-- two datacenters
-- VPN over the internet.  
-
-### Scenario2:
-- owned datacenter
-- hosting provider
-- dedicated link between datacenters
+Imagine you work at healthcare company and you have an application that is in use at one of your datacenters. The operating environment can't be replicated in the public cloud. You have a new requirement to access data at another one of your datacenters. The database containing the data needs to remain at the other site because of regulatory compliance. This scenario is a private cloud. You have two datacenters your organization owns. You could use a public cloud VPN over the Internet to connect the datacenters. However, the scenario would be considered a private cloud since the solution is private to the organization.
 
 ### Why private cloud?
 
-**Pre-existing enviroment**
-Leverage existing investment in hardware and employees with expertise. Usually used by very large orgs with enough computing resources to commoditize
+A private cloud can be more flexibile. Your organization can customize its cloud environment to meet specific business needs. Since resources are not shared with others, high levels of control and security are possible. Also, private clouds can provide a level of scalability and efficiency.
 
-**legacy apps**
-Legacy applications that can't easily be physically relocated 
+**Pre-existing enviroment:** Leverage existing investment in hardware and employees with expertise. Usually used by very large orgs with enough computing resources to commoditize
 
-**Data sovereignty and security**
-Political borders, legal requirements may dictate where data can physically exist.
+**Legacy apps:** Legacy applications that can't easily be physically relocated 
 
-**Regulatory compliance / certification**
-PCI, HIPAA, etc. May have certified on-prem data-center, may not want to or be able to re-do that work
+**Data sovereignty and security:** Political borders, legal requirements may dictate where data can physically exist.
 
-**Conservative risk profile**
-?
+**Regulatory compliance / certification:** PCI, HIPAA, etc. May have certified on-prem data-center, may not want to or be able to re-do that work
+
 
 ## Hybrid cloud
 
@@ -113,6 +73,11 @@ You work at healthcare x where customers info needs to be exposed. the data need
 
 
 ### Why hybrid cloud
+
+Control—your organization can maintain a private infrastructure for sensitive assets.
+Flexibility—you can take advantage of additional resources in the public cloud when you need them.
+Cost-effectiveness—with the ability to scale to the public cloud, you pay for extra computing power only when needed.
+Ease—transitioning to the cloud doesn’t have to be overwhelming because you can migrate gradually—phasing in workloads over time.
 
 - Existing investment
 - Regulation
