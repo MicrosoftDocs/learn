@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-containers.basic-operations
+interactive: cloudshell
 metadata:
   title: Basic container operations
   description: Basic container operations.
