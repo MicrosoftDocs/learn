@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-app-to-azure-storage.4-add-azure-storage-cofig
+title: Add Azure Storage configuration to the application
+metadata:
+  title: Add Azure Storage configuration to the application
+  description: Add Azure Storage configuration to the application
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-add-azure-storage-cofig.md)]

@@ -1,0 +1,27 @@
+### YamlMime:Module
+uid: learn.connect-app-to-azure-storage
+metadata:
+  title: Connect an App to Azure storage
+  description: In this module, we’ll create a new console application and add configuration, client library references and code to connect it to Azure storage.
+title: Connect an App to Azure storage
+summary: In this module, we’ll create a new console application and add configuration, client library references and code to connect it to Azure storage.
+abstract: In this module, we’ll create a new console application and add configuration, client library references and code to connect it to Azure storage.
+cardDescription: In this module, we’ll create a new console application and add configuration, client library references and code to connect it to Azure storage.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.connect-app-to-azure-storage.1-motivation
+- learn.connect-app-to-azure-storage.2-prepare-app-and-azure-storage-acc
+- learn.connect-app-to-azure-storage.3-add-client-library-package
+- learn.connect-app-to-azure-storage.4-add-azure-storage-cofig
+- learn.connect-app-to-azure-storage.5-initialize-storage-account
+- learn.connect-app-to-azure-storage.6-knowledge-check
+achievement: learn.connect-app-to-azure-storage.badge

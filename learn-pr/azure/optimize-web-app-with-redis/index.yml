@@ -1,0 +1,27 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.optimize-web-app-with-redis
+metadata:
+  title: Optimize your web applications by caching read-only data with Redis 
+  description: In this module, we'll discuss how to leverage Azure Redis caching to provide a high-performance cache for your commonly used data and content. 
+title: Optimize your web applications by caching read-only data with Redis 
+summary: In this module, we'll discuss how to how to leverage Azure Redis caching to provide a high-performance cache for your commonly used data and content. 
+abstract: In this module, we'll discuss how to how to leverage Azure Redis caching to provide a high-performance cache for your commonly used data and content. 
+cardDescription: In this module, we'll discuss how to how to leverage Azure Redis caching to provide a high-performance cache for your commonly used data and content. 
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels: 
+- beginner
+roles:
+- developer
+products:
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.optimize-web-app-with-redis.1-intro
+- learn.optimize-web-app-with-redis.2-plan-redis-caching
+- learn.optimize-web-app-with-redis.3-config-redis-caching-connect-web-app
+- learn.optimize-web-app-with-redis.4-knowledge-check
+- learn.optimize-web-app-with-redis.5-summary
+achievement: learn.optimize-web-app-with-redis.badge
