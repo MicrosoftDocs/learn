@@ -6,25 +6,25 @@ Cloud computing resources are delivered using three different service models.
 - Platform as a service (PaaS) provides ready-made development and deployment environments that you can use to deliver your own cloud services.
 - Software as a service (or SaaS) delivers applications over the Internet as a web-based service.
 
-When choosing a service model, consider which party should be responsible for the computing resource. Based on your scenario, you can decide how much shared management responsiblity you want.
+When choosing a service model, consider which party should be responsible for the computing resource. Based on your scenario, you can decide how much shared management responsibility you want.
 
 ![Shared responsibility model](../media/3-shared-responsibility.png)
 
 - You manage: Private cloud own your own datacenter
 - Shared between you and provider: IaaS, you outsource Network, Servers, most physical / foundational layers
 - Shared but provider manages more: Paas: outsourcing to cloud provider some responsibility for software: OS, middleware, runtime engines.
-- Provider managed: Saas: You are simply a consumer of an internet based service. Entire responsibility for managing service is outsourced: OneDrive, Outlook, Movie streaming sites are examples.
+- Provider managed: Saas: You are simply a consumer of an internet-based service. Entire responsibility for managing service is outsourced: OneDrive, Outlook, Movie streaming sites are examples.
 
 ## IaaS
 
-Infrastructure as a service (IaaS) is an instant computing infrastructure, provisioned and managed over the Internet. IaaS enables you to quickly scale resources to meet demand and only pay for what you use. IaaS helps you avoid the expense and complexity of buying and managing your own physical servers and other datacenter infrastructure. Each resource is offered as a separate service component, and you only need to rent a particular one for as long as you need it. IaaS is very flexible. You can provision common infrastructure such as VMs, storage, virtual subnets, firewalls, and VPN's to build your solution. You don't need to manage physical servers and appliances. Howerver, you are responsible for direct management configuring and managing the components. For example, configuring firewalls, updating VM OS's, updating DBMS's, and runtimes.
+Infrastructure as a service (IaaS) is an instant computing infrastructure, provisioned and managed over the Internet. IaaS enables you to quickly scale resources to meet demand and only pay for what you use. IaaS helps you avoid the expense and complexity of buying and managing your own physical servers and other datacenter infrastructure. Each resource is offered as a separate service component, and you only need to rent a particular one for as long as you need it. IaaS is very flexible. You can provision common infrastructure such as VMs, storage, virtual subnets, firewalls, and VPN's to build your solution. You don't need to manage physical servers and appliances. However, you are responsible for direct management configuring and managing the components. For example, configuring firewalls, updating VM OS's, updating DBMS's, and runtimes.
 
 ### Common scenarios
 
 You work at company where "event" which creates "problem"
 
 - Creating several VMs in a subnet, accessing Azure Files, and connects over VPN to your on-prem datacenter would be leveraging all IaaS
-- Should make a scenario out of this. Maybe hospital based scenario where the Azure files are x-rays and the VMs are load balanced PMS or EMR 
+- Should make a scenario out of this. Maybe hospital-based scenario where the Azure files are x-rays and the VMs are load balanced PMS or EMR 
 
 Typical things businesses do with IaaS include:
 Test and development. Teams can quickly set up and dismantle test and development environments, bringing new applications to market faster. IaaS makes it quick and economical to scale up dev-test environments up and down.
@@ -83,12 +83,12 @@ By delivering infrastructure as a service, PaaS offers the same advantages as Ia
 
 **Reduce development time**
 PaaS development tools can cut the time it takes to code new apps with pre-coded application components built into the platform, such as workflow, directory services, security features, search, and so on.
-Add development capabilities without adding staff. Platform as a Service components can give your development team new capabilities without your needing to add staff having the required skills.
+Add development capabilities without adding staff. Platform as a Service components can give your development team new capabilities without you needing to add staff having the required skills.
 
 **Develop for multiple platforms—including mobile—more easily**
 Some service providers give you development options for multiple platforms, such as computers, mobile devices, and browsers making cross-platform apps quicker and easier to develop.
 
-**Use sophisticated tools affordably**
+**Use sophisticated tools affordably:**
 A pay-as-you-go model makes it possible for individuals or organizations to use sophisticated development software and business intelligence and analytics tools that they could not afford to purchase outright.
 
 **Support geographically distributed development teams**
