@@ -22,6 +22,8 @@ Effortless, dynamic scaling is a key benefit of Azure. Most Azure resources let 
 
 Scaling up is the process where we increase the capacity of a given instance. A virtual machine could be increased from 1 vCPU and 3.5 GB of RAM to 2 vCPUs and 7 GB of RAM to provide more processing capacity. On the other hand, scaling down is the process where we lower the capacity of a given instance. For example, reducing a virtual machine's capacity from 2 vCPUs and 7 GB of RAM to 1 vCPU and 3.5 GB of RAM, reducing both capacity and cost.
 
+![scale-up-down](ScaleUpDown.png)
+
 Let's take a look at what scaling up/down means in the context of Azure resources:
 
 * In Azure virtual machines, you scale based upon a virtual machine size. That size has a certain amount of vCPUs, RAM, and local storage associated with it. For example, we could scale up from a Standard_DS1_v2 virtual machine (1 vCPU and 3.5 GB of RAM) to a Standard_DS2_v2 virtual machine (2 vCPUs and 7 GB of RAM).
@@ -46,6 +48,9 @@ _Scaling out_ is the process of adding more instances to support the load of you
 
 _Scaling in_ is the process of removing instances that are no longer needed to support the load of your solution. If the website front ends have low usage, then we may want to lower the number of instances to save cost.
 
+
+![scale-in-out](ScaleInOut.png)
+
 Here are some examples of what scaling out/in means in the context of Azure resources:
 
 * For the infrastructure layer, you would likely use virtual machine scale sets to automate the addition and removal of extra instances.
@@ -59,6 +64,8 @@ Scaling out is typically easily performed in the Azure portal, command-line tool
 ### Autoscale
 
 You can configure some of these resources to use a feature called [autoscale][what-is-autoscale]. With autoscale you no longer have to worry about scaling resources manually. Instead, you can set a minimum and maximum threshold of instances and scale based upon specific metrics (queue length, CPU utilization) or schedules (weekdays between 5:00 PM and 7:00 PM).
+
+![autoscale](autoscale.png)
 
 ### Considerations when scaling in and out
 
@@ -104,9 +111,7 @@ Let's revisit the Lamna Healthcare example. There could be some potential for co
 
 A container is a method running applications in a virtualized environment. A virtual machine is virtualized at the hardware level, where a hypervisor makes it possible to run multiple virtualized operating systems on a single physical server. Containers take the virtualization up a level, the virtualization is done at the OS level, making it possible to run multiple identical application instances within the same OS.
 
-**TODO VM vs container image, something like this: https://www.sdxcentral.com/wp-content/uploads/2016/01/containers-versus-virtual-machines-docker-inc-rightscale.jpg**
-
-![vm-vs-container]()
+![vm-vs-container](vmVsContainer.png)
 
 Containers are well suited to scale out scenarios, particularly because you do not need to wait for a VM to boot up. Their characteristics also allow for a consistent environment (all container instances will be deployed alike), they can be run anywhere and have good portability and have predictable performance due to resource isolation at the operating system level.
 
@@ -129,6 +134,29 @@ While you can run containers on virtual machines, there are a couple of Azure se
 ## Summary
 
 We've talked about scaling up and down and scaling in and out, and how you can leverage these options in your architecture. We've also looked at how serverless technologies and containers can help evolve your scaling capabilities. In the next unit, we'll take a look at how network performance can impact your application, and different ways we can optimize the network.
+
+## Knowledge Check
+
+Which is the most accurate description of "Scaling Out"?
+
+* Increasing the amount of resource on an instance
+* Increasing the number of instances (Correct)
+* Making scaling someone elses problem
+* Reaching the maximum level of scale for your application
+
+Which is the most accurate description of "Scaling Down"?
+
+* Decreasing the number of instances
+* Taking ownership of how your application scales
+* Decreasing the amount of resource on an instance (Correct)
+* Not yet reaching the maximum level of scale for your application
+
+What points should you consider when building a scaling strategy into your application?
+
+* The version of the PaaS service you are using
+* State management on your instances (Correct)
+* Startup time of your instances (Correct)
+* Automating the scaling of your instances based on some metric or schedule (Correct)
 
 <!-- links -->
 [aci-overview]: https://docs.microsoft.com/en-gb/azure/container-instances/container-instances-overview

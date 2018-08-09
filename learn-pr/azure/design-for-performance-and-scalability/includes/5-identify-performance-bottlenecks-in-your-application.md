@@ -85,6 +85,20 @@ Application Insights has been configured to capture availability and telemetry i
 
 There are further examples of how [application performance monitoring][application-performance-monitoring] helped identify issue with a hotfix that has been deployed.
 
+## Knowledge Check
+
+Which best describes Application Insights:
+
+* A Single pane of glass for our monitoring needs in Azure
+* An implementation of the Health Endpoint Monitoring Pattern
+* A workspace to enable collection of logs across infrastructure and application
+* A service to monitor availability, performance, and usage of web applications (Correct)
+
+The Log Analytics Monitoring Endpoint Pattern is a recognized cloud design pattern:
+
+* True
+* False (Correct - It is actually the Health Endpoint Monitoring Pattern, documented on the Azure Architecture Center)
+
 <!-- links -->
 [ai-snap]:https://docs.microsoft.com/en-us/azure/application-insights/app-insights-snapshot-debugger
 [ai-profiler]:https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler
