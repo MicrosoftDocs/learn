@@ -34,7 +34,7 @@ Azure Redis Cache is a caching service on Azure. It's based upon the open-source
 
 There are a series of [caching recommended practices][caching-best-practices] documented on the Azure Architecture Center.
 
-### Polyglot Persistence
+### Polyglot persistence
 
 Polyglot persistence is another way of saying "Use different data storage technologies to handle your storage requirements".
 
@@ -46,7 +46,7 @@ Using many backing stores increases solution complexity. Consider how you meet y
 
 Eventual consistency means that replica data stores will eventually converge if there are no further writes. If a write is made to one of the data stores, then there's no guarantee that the other data stores will provide up-to-date information. Eventual consistency enables higher scale because there is a low latency for reads and writes, rather than waiting to check if information is consistent across all stores.
 
-### Lamna Healthcare Example
+## Lamna Healthcare example
 
 Lamna Healthcare's patient booking system is hosted across two Azure regions, West Europe and Australia East. They're using virtual machines as the front-end nodes to deploy their website, and have Azure SQL DB deployed in West Europe as primary and Australia East as a readable secondary. Their front-end nodes don't require high levels of disk throughput, but do require consistent latency performance, production reliability and have used Premium SSD backed storage.
 
