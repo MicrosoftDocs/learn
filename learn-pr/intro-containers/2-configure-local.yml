@@ -6,5 +6,6 @@ metadata:
   displayType: one-column
 title: Configure a local container development environment
 durationInMinutes: 15
+interactive: cloudshell
 content: |
   [!include[](includes/2-configure-local/configure-local.md)]

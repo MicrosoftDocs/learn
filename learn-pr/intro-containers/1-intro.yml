@@ -6,5 +6,6 @@ metadata:
   displayType: one-column
 title: Introduction to containers
 durationInMinutes: 15
+interactive: cloudshell
 content: |
   [!include[](includes/1-intro/intro.md)]
