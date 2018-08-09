@@ -65,7 +65,7 @@ If you have resource groups, follow these steps to see what roles are assigned a
 
 ## List roles
 
-As you learned in the previous unit, a role is a collection of permissions. Azure has over 70 [built-in roles](built-in-roles.md) that you can use in your role assignments. Follow these steps to list the roles.
+As you learned in the previous unit, a role is a collection of permissions. Azure has over 70 [built-in roles](/azure/role-based-access-control/built-in-roles) that you can use in your role assignments. Follow these steps to list the roles.
 
 1. In the Azure portal, click **All services** and then **Subscriptions**.
 

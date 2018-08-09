@@ -22,7 +22,7 @@ You can view the activity logs to see all the RBAC changes for the past 90 days.
 
 The easiest way to get started is to view the activity logs with the Azure portal. The following screenshot shows an example of an activity log that has been filtered to display role assignment and role definition operations. It also includes a link to download the logs as a CSV file.
 
-![Activity logs using the portal - screenshot](../media/change-history-report/activity-log-portal.png)
+![Activity logs using the portal - screenshot](../images/6-activity-log-portal.png)
 
 The activity log in the portal has several filters. Here are the RBAC-related filters:
 
