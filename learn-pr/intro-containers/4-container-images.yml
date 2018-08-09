@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-containers.container-images
+interactive: cloudshell
 metadata:
   title: Create a custom container image
   description: Create a custom container image.
   displayType: one-column
 title: Create a custom container image
 durationInMinutes: 15
-interactive: cloudshell
 content: |
   [!include[](includes/4-container-images/container-images.md)]
