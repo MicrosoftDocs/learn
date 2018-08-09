@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-containers.container-images
-interactive: cloudshell
 metadata:
   title: Create a custom container image
   description: Create a custom container image.

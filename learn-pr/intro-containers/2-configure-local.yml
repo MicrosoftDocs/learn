@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-containers.configure-local
-interactive: cloudshell
 metadata:
   title: Configure a local container development environment
   description: Configure a local container development environment.
