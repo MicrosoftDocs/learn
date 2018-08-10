@@ -1,4 +1,4 @@
-## Exercise: View activity logs for RBAC changes
+## Exercise
 
 First Up Consultants reviews RBAC changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in [Azure Activity Log](/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs). Your manager has asked if you can generate a report of the role assignment and custom role changes for last month.
 

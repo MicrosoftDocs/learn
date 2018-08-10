@@ -1,4 +1,4 @@
-## Exercise: Grant access using RBAC and the Azure portal
+## Exercise
 
 Your co-worker named Alain at First Up Consultants needs the ability to create and manage virtual machines for a project he is working on. Your manager has asked that you handle this request. Using the best practice to grant users the least privilege to get their work done, you decide to create a new resource group and assign Alain the Virtual Machine Contributor role.
 
@@ -39,7 +39,7 @@ Follow these steps to create a new resource group named rbac-quickstart-resource
 
 ## Grant access
 
-In RBAC, to grant access, you create a role assignment. Follow these steps to assign the Virtual Machine Contributor role to user at the resource group scope.
+In RBAC, to grant access, you create a role assignment. Follow these steps to assign the [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) role to user at the resource group scope.
 
 1. In the list of **Resource groups**, click the new **rbac-quickstart-resource-group** resource group.
 

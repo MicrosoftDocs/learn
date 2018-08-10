@@ -1,4 +1,4 @@
-## Exercise: List access using RBAC and the Azure portal
+## Exercise
 
 At First Up Consultants, you've been granted access to the Azure subscription for the engineering team. You want to get familiar with the Azure portal and see what roles are currently assigned.
 

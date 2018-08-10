@@ -35,7 +35,7 @@ The following shows an example of the Access control (IAM) blade for a resource 
 
 The way you control access to resources using RBAC is to create role assignments. This is a key concept to understand – it’s how permissions are enforced. To create a role assignment, you need three elements: security principal, role definition, and scope. You can think of these elements as who, what, and where.
 
-### 1. Security principle (who needs access)
+### 1. Security principle (who)
 
 A *security principal* is just a fancy name for a user, group, or application that you want to grant access to.
 
@@ -47,12 +47,14 @@ A *role definition* is a collection of permissions. It's sometimes just called a
 
 ![Role definition](../images/2-rbac-role-definition.png)
 
-Azure includes several built-in roles that you can use. The following lists four fundamental built-in roles.\
+Azure includes several [built-in roles](/azure/role-based-access-control/built-in-roles) that you can use. The following lists four fundamental built-in roles.
 
-- Owner - Has full access to all resources including the right to delegate access to others.
-- Contributor - Can create and manage all types of Azure resources but can’t grant access to others.
-- Reader - Can view existing Azure resources.
-- User Access Administrator - Lets you manage user access to Azure resources.
+- [Owner](/azure/role-based-access-control/built-in-roles#owner) - Has full access to all resources including the right to delegate access to others.
+- [Contributor](/azure/role-based-access-control/built-in-roles#contributor) - Can create and manage all types of Azure resources but can’t grant access to others.
+- [Reader](/azure/role-based-access-control/built-in-roles#reader) - Can view existing Azure resources.
+- [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) - Lets you manage user access to Azure resources.
+
+If the built-in roles don't meet the specific needs of your organization, you can create your own [custom roles](/azure/role-based-access-control/custom-roles).
 
 ### 3. Scope (where)
 

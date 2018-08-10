@@ -1,6 +1,6 @@
-## Exercise: Create a custom role using Azure PowerShell
+## Exercise
 
-The engineering team at First Up Consultants needs very specific permissions for virtual machines that is not available with one of the built-in roles. Instead of granting them broad access, you decide to create a custom role. Since you currently can't create custom roles in the Azure portal, you'll create the custom role using Azure PowerShell.
+The engineering team at First Up Consultants needs very specific permissions for virtual machines that is not available with one of the [built-in roles](/azure/role-based-access-control/built-in-roles). Instead of granting them broad access, you decide to create a [custom role](/azure/role-based-access-control/custom-roles). Since you currently can't create custom roles in the Azure portal, you'll create the custom role using Azure PowerShell.
 
 In this exercise, you learn how to:
 
@@ -12,7 +12,6 @@ In this exercise, you learn how to:
 ## Prerequisites
 
 - Permissions to create custom roles, such as [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator)
-- [Azure PowerShell](/powershell/azure/install-azurerm-ps) installed locally
 
 ## Sign in to Azure PowerShell
 
