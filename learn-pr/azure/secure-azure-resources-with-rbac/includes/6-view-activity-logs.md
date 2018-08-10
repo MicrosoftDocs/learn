@@ -1,24 +1,23 @@
 ## Exercise
 
-First Up Consultants reviews RBAC changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in [Azure Activity Log](/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs). Your manager has asked if you can generate a report of the role assignment and custom role changes for last month.
+First Up Consultants reviews RBAC changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in [Azure Activity Log](/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs). Your manager has asked if you can generate a report of the role assignment and custom role changes for the last month.
 
 In this exercise, you learn how to:
 
 > [!div class="checklist"]
 > * View activity logs for RBAC changes
 
-## Operations that are logged
+## RBAC operations that are logged
 
-Here are the RBAC-related operations that are logged in Activity Log:
+Here are the RBAC-related operations that are logged in Activity Log. The activity logs are retained for 90 days.
 
 - Create role assignment
 - Delete role assignment
 - Create or update custom role definition
 - Delete custom role definition
 
-These activity logs are retained for the past 90 days.
 
-## View RBAC changes
+## View activity logs
 
 The easiest way to get started is to view the activity logs with the Azure portal.
 
