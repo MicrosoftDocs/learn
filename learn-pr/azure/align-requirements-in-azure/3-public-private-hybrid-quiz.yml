@@ -9,33 +9,36 @@ content: Knowledge check - Understanding Azure solutions for public, private and
 quiz:
   title: 'Azure solutions for public, private and hybrid cloud'
   questions:
-  - content: 'Scenario 1: Analyst needs SQL server database. Can request, provision themselves.'
+  - content: 'Given the following scenario, what is the best cloud deployment model? A SQL server database is needed for a short term project. The IT department does not have available hardware that meets the performance requirements or resources to deploy it. The project starts next week. Once the project is over, the database is no longer needed.'
     choices:
-    - content: Public cloud is a good option.
-      correctExplanation: Why this answer is correct
+    - content: Public cloud
+      correctExplanation: Because of the urgency and lifecycle of the SQL database. Public cloud is the best option.
       isCorrect: true
-    - content: Answer 2
-      incorrectExplanation: Why this answer is incorrect
+    - content: Private cloud
+      incorrectExplanation: The IT department does not have resources to deploy a SQL Server.
       isCorrect: false
-  - content: 'Scenario 2'
+    - content: Hybrid cloud
+      incorrectExplanation: Hybrid cloud could be an option. However, there is no requirement that there needs to be a connection between private and public clouds.
+      isCorrect: false
+  - content: 'Given the following scenario, what is the best cloud deployment model? You create several virtual machines in the cloud. The VMs are networked together using a virtual network. The VMs have access to x-ray image files in cloud storage. One of the VMs is a web server that host a website exposed to the Internet for customers to access their records. There is a VPN that connects the solution to your on-premises datacenter for customer information to display with the image files.'
     choices:
-    - content: Answer A
-      correctExplanation: Why this answer is correct
+    - content: Public cloud
+      incorrectExplanation: Because of the connection to the on-premises datacenter, this is not a public cloud deployment.
+      isCorrect: false
+    - content: Private cloud
+      incorrectExplanation: Because of the virtual machines and network in the public cloud, this is not a private cloud deployment.
+      isCorrect: false
+    - content: Hybrid cloud
+      correctExplanation: This scenario uses both public and private cloud with a connection between the two. Therefore, it is a hybrid cloud deployment.
       isCorrect: true
-    - content: Answer B
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: false
-    - content: Answer C
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: false
-  - content: 'Scenario 3'
+  - content: 'Given the following scenario, what is the cloud deployment model? You have two datacenters in your organization. One datacenter has a database that can only reside in one of the datacenters because of a regulatory requirement. You want to access the database from the other datacenter. You create a VPN using a cloud provider to connect the two datacenters.'
     choices:
-    - content: Answer A
-      correctExplanation: Why this answer is correct
-      isCorrect: true
-    - content: Answer B
-      incorrectExplanation: Why this answer is incorrect
+    - content: Public cloud
+      incorrectExplanation: Because of the two private datacenters, this is not a public cloud deployment.
       isCorrect: false
-    - content: Answer C
-      incorrectExplanation: Why this answer is incorrect
+    - content: Private cloud
+      correctExplanation: The VPN is a public cloud resource. However, because the VPN is a private connection between two private datacenters, this is a private cloud deployment.
+      isCorrect: true
+    - content: Hybrid cloud
+      correctExplanation: The VPN is a public cloud resource and the datacenters are private. However, because the VPN only connects two private datacenters (not to the public cloud, this is not a hybrid cloud deployment.
       isCorrect: false
