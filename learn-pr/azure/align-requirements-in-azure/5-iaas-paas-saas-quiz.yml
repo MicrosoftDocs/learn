@@ -9,7 +9,7 @@ content: Knowledge check - IaaS, PaaS & SaaS
 quiz:
   title: 'Quiz Title'
   questions:
-  - content: 'Question 1'
+  - content: 'You work at company where "event" which creates "problem"'
     choices:
     - content: Answer 1
       correctExplanation: Why this answer is correct
@@ -17,7 +17,7 @@ quiz:
       isCorrect: true
     - content: Answer 2
       isCorrect: false
-  - content: 'Question 2'
+  - content: 'Creating several VMs in a subnet, accessing Azure Files, and connects over VPN to your on-prem datacenter would be leveraging all IaaS - Should make a scenario out of this. Maybe hospital-based scenario where the Azure files are x-rays and the VMs are load balanced PMS or EMR'
     choices:
     - content: Answer A
       correctExplanation: Why this answer is correct

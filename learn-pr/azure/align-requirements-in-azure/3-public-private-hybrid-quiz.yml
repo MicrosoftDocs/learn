@@ -9,7 +9,7 @@ content: Knowledge check - Understanding Azure solutions for public, private and
 quiz:
   title: 'Azure solutions for public, private and hybrid cloud'
   questions:
-  - content: 'Analyst needs SQL server database. Can request, provision themselves.'
+  - content: 'Scenario 1: Analyst needs SQL server database. Can request, provision themselves.'
     choices:
     - content: Public cloud is a good option.
       correctExplanation: Why this answer is correct
@@ -17,7 +17,18 @@ quiz:
     - content: Answer 2
       incorrectExplanation: Why this answer is incorrect
       isCorrect: false
-  - content: 'Question 2'
+  - content: 'Scenario 2'
+    choices:
+    - content: Answer A
+      correctExplanation: Why this answer is correct
+      isCorrect: true
+    - content: Answer B
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: false
+    - content: Answer C
+      incorrectExplanation: Why this answer is incorrect
+      isCorrect: false
+  - content: 'Scenario 3'
     choices:
     - content: Answer A
       correctExplanation: Why this answer is correct
