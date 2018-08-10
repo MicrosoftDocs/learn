@@ -5,7 +5,6 @@ summary: Learn how to use location tracking on your phone mixed with Azure funct
 abstract: This module shows how you can use Azure functions to build an HTTP API, invoke the Functions with a mobile app created with Xamarin and bind the Functions to third party services. It starts with creating a Xamarin Forms app that runs on iOS, Android and Windows, using Xamarin Essentials to get the users location, and a basic UI to accept some phone numbers. Then it covers creating an Azure Functions back end to provide an API for the app to call, passing the location and phone numbers in the API request. This function then uses a Twilio binding to send SMS messages to the numbers passed in to the API, with a maps link that the recipient can follow to show the senders location.
 cardDescription: Learn how to use location tracking on your phone mixed with Azure functions to send your location to your friends.
 iconUrl: http://via.placeholder.com/120x120
-author: jimbobbennett
 levels:
 - intermediate
 roles:

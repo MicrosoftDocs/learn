@@ -6,7 +6,7 @@ The UI for the app will consist of:
 * A button to send your location to those numbers using an Azure Function.
 * A label that will show a message to the user of the current status, such as the location being sent, and location sent successfully.
 
-Xamarin.Forms supports a design pattern called MVVM - Model-View-ViewModel. You can read more about this in the [Xamarin MVVM docs](https://docs.microsoft.com/xamarin/xamarin-forms/enterprise-application-patterns/mvvm), but the essence of it, is each page (View) has a ViewModel that exposes properties and behavior.
+Xamarin.Forms supports a design pattern called MVVM - Model-View-ViewModel. You can read more about MVVM in the [Xamarin MVVM docs](https://docs.microsoft.com/xamarin/xamarin-forms/enterprise-application-patterns/mvvm), but the essence of it, is each page (View) has a ViewModel that exposes properties and behavior.
 
 ViewModel properties are 'bound' to components on the UI by name, and this binding synchronizes data between the View and ViewModel. For example, a `string` property on a ViewModel called `Name` could be bound to the `Text` property of a text-entry control on the UI. The text-entry control shows the value in the `Name` property, and when the user changes the text in the UI, the `Name` property is updated. If the value of the `Name` property is changed in the ViewModel, an event is raised to tell the UI to update.
 
@@ -69,7 +69,7 @@ The `MainPage` will have a text-entry control for phone numbers and a label to d
 
 2. Make this class public and derive from `BaseViewModel`.
 
-3. Add two `string` properties, `PhoneNumbers` and `Message`, each with a backing field. In the property setter use the base class `Set` method to update the value and raise the `PropertyChanged` event.
+3. Add two `string` properties, `PhoneNumbers` and `Message`, each with a backing field. In the property setter, use the base class `Set` method to update the value and raise the `PropertyChanged` event.
 
    ```cs
     string message = "";
@@ -93,7 +93,7 @@ The `MainPage` will have a text-entry control for phone numbers and a label to d
     public ICommand SendLocationCommand { get; }
     ```
 
-5. Add a constructor to the class, and in this constructor initialize the `SendLocationCommand` as a new `Command` from the `Xamarin.Forms` namespace. The constructor for this command takes an `Action` to run when the command is invoked, so create an `async` method called `SendLocation` and pass a lambda function that `await`s this to the constructor. The body of the `SendLocation` method will be implemented in later units in this module. You'll need to add a using directive for the `System.Threading.Tasks` namespace to be able to return a `Task`.
+5. Add a constructor to the class, and in this constructor initialize the `SendLocationCommand` as a new `Command` from the `Xamarin.Forms` namespace. The constructor for this command takes an `Action` to run when the command is invoked, so create an `async` method called `SendLocation` and pass a lambda function that `await`s this call to the constructor. The body of the `SendLocation` method will be implemented in later units in this module. You'll need to add a using directive for the `System.Threading.Tasks` namespace to be able to return a `Task`.
 
     ```cs
     public MainViewModel()
@@ -177,7 +177,7 @@ Xamarin.Forms UIs can be built using XAML.
     </StackLayout>
     ```
 
-    The `Text` property on the `Editor` is bound to the `PhoneNumbers` property on the `MainViewModel`. The syntax for binding is to set the property value to `"{Binding <property name>}"`, the curly braces will tell the XAML compiler that this is a special value and should be treated differently to a simple `string`.
+    The `Text` property on the `Editor` is bound to the `PhoneNumbers` property on the `MainViewModel`. The syntax for binding is to set the property value to `"{Binding <property name>}"`, the curly braces will tell the XAML compiler that this value is special, and should be treated differently to a simple `string`.
 
 5. Add a `Button` to send the users location below the `Editor`.
 
@@ -223,4 +223,4 @@ Run the app to see the new UI. If you want to validate the bindings at this poin
 
 ## Summary
 
-In this unit you learned how to create the UI for the app using XAML, along with a ViewModel to handle the applications logic. You also learned how to bind the ViewModel to the UI. In the next unit you add location lookup to the ViewModel.
+In this unit you learned how to create the UI for the app using XAML, along with a ViewModel to handle the applications logic. You also learned how to bind the ViewModel to the UI. In the next unit, you add location lookup to the ViewModel.

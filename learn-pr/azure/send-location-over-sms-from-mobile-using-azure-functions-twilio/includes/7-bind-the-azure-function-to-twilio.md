@@ -8,7 +8,7 @@ Bindings for Azure Functions created in Visual Studio are defined using paramete
 
 Sending SMS messages via Twilio requires an output binding that is configured with your account SID and auth token.
 
-1. Stop the local Azure Functions runtime if it is still running from the previous unit.
+1. Stop the local Azure Functions runtime if it's still running from the previous unit.
 
 2. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
 
@@ -31,7 +31,7 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
     | **AuthTokenSetting** | "TwilioAuthToken" | The Auth Token for your Twilio account. Rather than set the Auth Token directly, this parameter is the name of a value in the Function app settings that will be used to retrieve the Auth Token. |
     | **From** | Your Twilio Phone number | The Twilio phone number that the SMS messages will come from in international format (+\<country code\>\<phone number\>, for example "+1555123456"). |
 
-    When you create a Twilio account, you are assigned a phone number that you can send messages from. You can find this phone number from the Twilio **Phone Numbers** dashboard. To access this from the Twilio site, select the ellipses at the bottom of the left-hand menu, then select *SUPER NETWORK->Phone Numbers*. You can pin this dashboard to the left-hand menu using the pin icon. Your Twilio number will be under *Manage Numbers->Active Numbers*. You'll need to remove any spaces from the number.
+    When you create a Twilio account, you are assigned a phone number that you can send messages from. You can find this phone number from the Twilio **Phone Numbers** dashboard. From the Twilio site, select the ellipses at the bottom of the left-hand menu. Then select *SUPER NETWORK->Phone Numbers*. You can pin this dashboard to the left-hand menu using the pin icon. Your Twilio number will be under *Manage Numbers->Active Numbers*. You'll need to remove any spaces from the number.
 
     ![Finding your Twilio number](../media/7-twilio-find-number.png)
 
@@ -62,7 +62,7 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 
 ## Create the SMS messages
 
-The `ICollector<SMSMessage>` parameter is a collection of `SMSMessage` instances, and is used to collect the SMS messages you want to send. After the function has finished running, any instances of `SMSMessage` added to this collection will be passed to Twilio and sent to the relevant recipients.
+The `ICollector<SMSMessage>` parameter is a collection of `SMSMessage` instances, and is used to collect the SMS messages you want to send. After the function has finished running, any instances of `SMSMessage` added to this collection are passed to Twilio, and sent to the relevant recipients.
 
 1. In the `SendLocation` function, add code to loop through the phone numbers in the `PostData` and create an SMS message for each one.
 
@@ -132,7 +132,7 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 
     ![The Xamarin.Forms app showing the location as sent](../media/7-ui-location-sent.png)
 
-5. You'll see in the console logs for the Azure Function the message being created and sent. If there are any errors sending the message (for example if the number to send to is in the wrong format), they will be logged out here.
+5. You'll see in the console logs for the Azure Function the message being created and sent. If any errors occur (such as the to number is in the wrong format), they will be logged out here.
 
     ![The Azure Function console showing the message has been sent](../media/7-function-message-sent.png)
 
@@ -142,4 +142,4 @@ public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLeve
 
 ## Summary
 
-In this unit you learned how to create a Twilio binding for the Azure Function and send an SMS message with the users location whilst the function was running locally. In the next unit, you publish the function to Azure.
+In this unit, you learned how to create a Twilio binding for the Azure Function, and send an SMS message with the users location to a function that was running locally. In the next unit, you publish the function to Azure.
