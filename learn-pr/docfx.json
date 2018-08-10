@@ -2,6 +2,12 @@
   "build": {
     "content": [
       {
+        "files": [
+          "achievements.yml"
+        ],
+        "dest": "achievements/main/"
+      },
+      {
         "src": "azure",
         "files": [
           "**.yml"
@@ -31,7 +37,8 @@
         "files": [
           "**/*.png",
           "**/*.svg",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.jpeg"
         ],
         "dest": "modules"
       },
@@ -39,7 +46,8 @@
         "files": [
           "**/*.png",
           "**/*.svg",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.jpeg"
         ],
         "exclude": [
           "**/obj/**",
@@ -53,7 +61,6 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/learn/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/learn",
       "clicktale": true
