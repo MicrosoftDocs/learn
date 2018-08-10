@@ -1,4 +1,4 @@
-## Exercise: Create a resource using PowerShell interactively
+
 Suppose you work at a company that makes a suite of Linux admin tools. Your job is to help potential customers try your software before they buy it. Because the software makes root-level changes to the OS, you have decided to create a Linux VM for each trial customer. You create the VMs as needed and delete them at the end of the trial subscription. This way, each customer starts with a clean version of the OS. 
 
 To keep these VMs separate from the VMs your company uses for internal testing, you will create a dedicated resource group to house them. You only need one resource group so using Azure PowerShell in interactive mode is a reasonable choice for this task.

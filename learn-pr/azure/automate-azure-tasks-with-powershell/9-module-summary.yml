@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.automate-azure-tasks-with-powershell.9-module-summary
-title: Module summary
-metadata:
-  title: Module summary
-  description: Module summary
-durationInMinutes: 3
-content: |
-  [!include[](includes/9-module-summary.md)]

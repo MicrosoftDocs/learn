@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.automate-azure-tasks-with-powershell.1-module-motivation
-title: Automate Azure tasks with PowerShell
-metadata:
-  title: Automate Azure tasks with PowerShell
-  description: Automate Azure tasks with PowerShell
-durationInMinutes: 3
-content: |
-  [!include[](includes/1-module-motivation.md)]

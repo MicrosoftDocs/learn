@@ -7,12 +7,6 @@ You have been executing multiple rounds of tests on a single VM but noticed that
 
 Here, you will see how to manage Azure resources using Azure PowerShell. You will use Azure PowerShell interactively for one-off tasks and write scripts to automate repeated tasks. 
 
-## Short abstract
-Install Azure PowerShell locally and use it to manage Azure resources.
-
-## Long abstract
-Azure PowerShell is a PowerShell module containing cmdlets to control Azure resources. You can install it locally on your administrator machine and then run interactive commands and scripts. Azure PowerShell forwards your commands to the Azure datacenters where they execute in the context of your Azure subscription. This module shows you how to install Azure PowerShell on Linux, macOS, or Windows and then use it to connect to Azure and manage your resources.
-
 ## Learning Objectives
 > [!div class="checklist"]
 > * Decide if Azure PowerShell is the right tool for your Azure administration tasks

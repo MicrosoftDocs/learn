@@ -3,11 +3,11 @@
 uid: learn.automate-azure-tasks-with-powershell
 metadata:
   title: Automate Azure tasks using scripts with PowerShell
-  description: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
+  description: Azure PowerShell is a PowerShell module containing cmdlets to control Azure resources. You can install it locally on your administrator machine and then run interactive commands and scripts. Azure PowerShell forwards your commands to the Azure datacenters where they execute in the context of your Azure subscription. This module shows you how to install Azure PowerShell on Linux, macOS, or Windows and then use it to connect to Azure and manage your resources.
 title: Automate Azure tasks using scripts with PowerShell
-summary: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
-abstract: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
-cardDescription: In this module, we'll discuss how to use PowerShell to connect and control your Azure subscription.
+summary: Install Azure PowerShell locally and use it to manage Azure resources.
+abstract: Azure PowerShell is a PowerShell module containing cmdlets to control Azure resources. You can install it locally on your administrator machine and then run interactive commands and scripts. Azure PowerShell forwards your commands to the Azure datacenters where they execute in the context of your Azure subscription. This module shows you how to install Azure PowerShell on Linux, macOS, or Windows and then use it to connect to Azure and manage your resources.
+cardDescription: Install Azure PowerShell locally and use it to manage Azure resources.
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
 # Review the Docs Contributor Guide for levele, role, and product options
@@ -19,7 +19,7 @@ products:
 - Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-- learn.automate-azure-tasks-with-powershell.1-module-motivation
+- learn.automate-azure-tasks-with-powershell.1-introduction
 - learn.automate-azure-tasks-with-powershell.2-decide-if-azure-powershell-is-right-for-your-tasks
 - learn.automate-azure-tasks-with-powershell.3-install-azure-powershell
 - learn.automate-azure-tasks-with-powershell.4-exercise-install-azure-powershell
@@ -27,5 +27,5 @@ units:
 - learn.automate-azure-tasks-with-powershell.6-exercise-create-resource-interactively
 - learn.automate-azure-tasks-with-powershell.7-create-resource-using-script
 - learn.automate-azure-tasks-with-powershell.8-exercise-create-resource-using-script
-- learn.automate-azure-tasks-with-powershell.9-module-summary
+- learn.automate-azure-tasks-with-powershell.9-summary
 achievement: learn.automate-azure-tasks-with-powershell.badge

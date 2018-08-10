@@ -1,4 +1,4 @@
-## Exercise: Install Azure PowerShell
+
 In this exercise, you will install Azure PowerShell on your local machine. Please choose the steps for your operating system.
 
 ## Install PowerShell Core
