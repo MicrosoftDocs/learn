@@ -45,10 +45,12 @@ The easiest way to get started is to view the activity logs with the Azure porta
 
 1. Click **Apply** to apply your filters.
 
-    You'll see all the role assignment and role definition operations for the last 30 days.
+    You'll see all the role assignment and role definition operations for the last month.
 
     ![RBAC activity logs](../images/6-activity-log-portal-filter.png)
 
 1. Click the **Click here to download all the items as csv** link to download the activity logs as a CSV file.
 
 ## Summary
+
+In this unit, you learned how to use Activity Log to list RBAC changes in the portal and generate a simple report.
