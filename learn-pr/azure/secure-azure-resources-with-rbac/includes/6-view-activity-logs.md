@@ -5,7 +5,7 @@ First Up Consultants reviews RBAC changes quarterly for auditing and troubleshoo
 In this exercise, you learn how to:
 
 > [!div class="checklist"]
-> * View activity log for RBAC changes
+> * View activity logs for RBAC changes
 
 ## Operations that are logged
 
@@ -16,21 +16,39 @@ Here are the RBAC-related operations that are logged in Activity Log:
 - Create or update custom role definition
 - Delete custom role definition
 
-You can view the activity logs to see all the RBAC changes for the past 90 days.
+These activity logs are retained for the past 90 days.
 
-## Azure portal
+## View RBAC changes
 
-The easiest way to get started is to view the activity logs with the Azure portal. The following screenshot shows an example of an activity log that has been filtered to display role assignment and role definition operations. It also includes a link to download the logs as a CSV file.
+The easiest way to get started is to view the activity logs with the Azure portal.
 
-![Activity logs using the portal - screenshot](../images/6-activity-log-portal.png)
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-The activity log in the portal has several filters. Here are the RBAC-related filters:
+1. Click **All services** and then **Activity log**.
 
-|Filter  |Value  |
-|---------|---------|
-|Event category     | <ul><li>Administrative</li></ul>         |
-|Operation     | <ul><li>Create role assignment</li> <li>Delete role assignment</li> <li>Create or update custom role definition</li> <li>Delete custom role definition</li></ul>      |
+    ![Activity logs using the portal](../images/6-activity-log-portal.png)
 
-For more information about activity logs, see [View events in activity log](/azure/azure-resource-manager/resource-group-audit?toc=%2fazure%2fmonitoring-and-diagnostics%2ftoc.json).
+1. Set the **Timespan** filter to **Last month**.
+
+1. Set the **Event category** filter to **Administrative**.
+
+1. In the **Operation** filter, type **role** to filter the list.
+
+1. Select the following RBAC operations:
+
+    - Create or update custom role definition (roleDefinitions)
+    - Delete custom role definition (roleDefinitions)
+    - Create role assignment (roleAssignments)
+    - Delete role assignment (roleAssignments)
+
+    ![Operation filter](../images/6-operation-filter.png)
+
+1. Click **Apply** to apply your filters.
+
+    You'll see all the role assignment and role definition operations for the last 30 days.
+
+    ![RBAC activity logs](../images/6-activity-log-portal-filter.png)
+
+1. Click the **Click here to download all the items as csv** link to download the activity logs as a CSV file.
 
 ## Summary
