@@ -1,12 +1,12 @@
-Monitoring is often overlooked and given less priority than for instance high availability. Which at first hand might look more importantly than monitoring. But this assumption is wrong! When an application is deployed in a high available way a single component failure will go unnoticed in the absence of a monitoring solution. When this initial failure is followed by an additional failure the whole application might become unavailable. So the lack of monitoring might completely negate all the investments in high availability.
+Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your business application and the resources that it depends on. What if you ran an operations team responsible for resources running on Azure, what would you do to ensure you had visibility into the health of your systems? If something happens, who finds out first, your team or your end users? An effective monitoring strategy helps you focus on the health of your application. It also helps you increase your uptime by proactively notifying you of critical issues so that you can resolve them before they become problems. 
 
-There are various depths of monitoring that can be applied. The diagram below provides an overview of some of the Azure monitoring capabilities and how we can group them together.
+When it comes to monitoring and analytics on Azure, we can bundle services into 3 specific areas of focus: deep application monitoring, deep infrastructure monitoring, and core monitoring. In this unit, we'll take a look through each of these bundles, and how Azure services enable these capabilities for your architecture. Even though we've grouped these services together, there are several integration points between them, allowing for sharing of important monitoring data points between them.
 
 ![Monitoring overview](../media/3-use-monitoring-and-analytics-to-gain-operational-insights/monitoring-products-overview.png)
 
-## Core Monitoring
+## Core monitoring
 
-The various solutions we group under core monitoring all provide fundamental capabilities which are close to the actual resource rather than the workload or application as a whole. They offer you more insights on how your resources perform while showing that from an Azure platform point of view.
+Core monitoring provides fundamental, required monitoring across Azure resources. When we talk about fundamental monitoring, you can think of this as monitoring what is happening with your resources at the Azure fabric level. This area of focus gives you insight into things like the health of the Azure platform, insight into changes being made to your resources, and performance metrics.
 
 The Activity log is the place where you'd look to get more information on events or operations against Azure resources. In the following examples you could look in the Activity log to get more information: who has changed the configuration of a certain resource?, who has shutdown a specific virtual machine? or why has an autoscale operation has failed. This might be a great asset when performing root cause analysis which in turn can result in operational procedures to be changed avoiding the issue in the future. One important limitation about the activity log is that data is only stored for 90 days. If you're interested or have a requirement to store these events longer you can decide to archive them on a storage account or send them to Log Analytics.
 
@@ -18,7 +18,7 @@ When operating and maintaining a workload on Azure it might be a good idea to ke
 
 Infrastructure is typically continuously evolving. The needs of the end users change and so components or added or removed. Azure Advisor can help by keeping an eye out for potential performance, high availability or security issues introduced by one of this changes. Azure Advisor requires little to no configuration and is free to use!
 
-## Deep infrastructure Monitoring
+## Deep infrastructure monitoring
 
 Azure monitor can show quite a bit of detailed information for each of the components of the solution, but doesn't have all the information. There's some overlap with what Azure monitor can display and Log Analytics can gather. Log Analytics supports more sources, even on-premises sources, and comes with a query language and analytics engine.
 
@@ -34,7 +34,7 @@ Log analytics allows you to create queries and create alerts on top of those. As
 
 ![Azure SQL Overview](../media/3-use-monitoring-and-analytics-to-gain-operational-insights/azure-sql-sol-overview.png)
 
-# Deep application monitoring
+## Deep application monitoring
 
 Detecting and diagnosing issues for web applications might require you to go deeper or closer to the actual application than what you can get from the operating system level monitoring. [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/) allows you to do exactly that. Application Insights uses a similar platform as Log Analytics so it comes with query and visualization capabilities. The strength of Application Insights is that it requires little to no changes to your code but still offers you detailed information.
 
@@ -49,3 +49,26 @@ Application performance monitoring through Application Insights allows you to se
 Application insights will help you monitor both performance and availability allowing you to respond to failure, even partial failure a lot quicker.
 
 ![Application Insights Performance](../media/3-use-monitoring-and-analytics-to-gain-operational-insights/05-perfmetrics.png)
+
+## Shared capabilities
+
+The core and deep monitoring services share functionality which provides alerting, dashboards, and Metrics Explorer.
+
+Azure alerts proactively notify you of critical conditions and potentially take corrective action. Alert rules can use data from multiple sources, including metrics and logs. They use action groups, which contain unique sets of recipients and actions in response to an alert. Based on your requirements, you can have alerts start external actions by using webhooks and integrate with your ITSM tools.
+
+You can use Azure dashboards to combine different kinds of data into a single pane in the Azure portal. You can then share the dashboard with other Azure users. For example, you can create a dashboard that combines:
+
+- Tiles that show a graph of metrics
+- A table of activity logs
+- A usage chart from Application Insights
+- The output of a log search in Log Analytics
+
+You can also export Log Analytics data to Power BI. There, you can take advantage of additional visualizations. You can also make the data available to others within and outside your organization.
+
+Metrics are numerical values generated by an Azure resource to help you understand the operation and performance of the resource. By using Metrics Explorer, you can send metrics to Log Analytics for analysis with data from other sources.
+
+## Monitoring at Lamna Healthcare
+
+Lamna Healthcare is...
+
+## Summary
