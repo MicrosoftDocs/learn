@@ -5,11 +5,16 @@ achievements:
   title: Sample Learning Path Trophy
   summary: Trophy for the 'Sample Learning Path Trophy' learning path.
   iconUrl: http://via.placeholder.com/120x120
-- uid: learn.placeholder.trophy 
-  type: trophy 
-  iconUrl: http://via.placeholder.com/120x120 
-  title: Learning Path Placeholder Trophy 
-  summary: Sample Learning Path Trophy Summary 
+- uid: learn.placeholder.trophy
+  type: trophy
+  iconUrl: http://via.placeholder.com/120x120
+  title: Learning Path Placeholder Trophy
+  summary: Sample Learning Path Trophy Summary
+- uid: learn.placeholder.badge
+  type: badge
+  iconUrl: http://via.placeholder.com/120x120
+  title: Module Placeholder Badge
+  summary: Sample Learning Path Trophy Summary
 - uid: learn.sample-module-cloudshell.badge
   type: badge
   title: Sample Module with CloudShell Badge
