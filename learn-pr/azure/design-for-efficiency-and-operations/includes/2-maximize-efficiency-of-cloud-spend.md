@@ -128,14 +128,3 @@ When does VM compute cost stop from being charged
 * when you shut down the VM from inside the guest
 * **when you stop the VM from the Portal**
 * When you shut down the VM from inside the guest or from the Portal 
-
-
-## Resources [To Be removed]
-
-Some of the resources I used. 
-https://docs.microsoft.com/en-us/azure/cost-management/
-https://docs.microsoft.com/en-us/azure/billing/billing-getting-started
-https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption-guide/subscription-governance
-https://docs.microsoft.com/en-us/azure/billing/billing-understand-your-bill
-https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations
-
