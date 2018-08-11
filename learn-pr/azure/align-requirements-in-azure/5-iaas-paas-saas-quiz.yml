@@ -31,7 +31,7 @@ quiz:
     - content: SaaS
       incorrectExplanation: Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality.
       isCorrect: false
-  - content: 'Given the following scenario, what is the best cloud service model? You create a small start-up company. You have a handful of employees who need to collaborate. They need email, calendar scheduling, and somewhere to store documents. The team is technical but don't have the time or hardware to implement and manage a solution.
+  - content: 'Given the following scenario, what is the best cloud service model? You create a small start-up company. You have a handful of employees who need to collaborate. They need email, calendar scheduling, and somewhere to store documents. The team is technical but don't have the time or hardware to implement and manage a solution.'
     choices:
     - content: IaaS
       incorrectExplanation: While you could acheive the functionality using virutal machines and installing collaboration software, this would take time to install and manage. The team does not have time to use this option.
