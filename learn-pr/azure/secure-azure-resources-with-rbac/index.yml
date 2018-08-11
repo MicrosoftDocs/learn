@@ -5,14 +5,14 @@ uid: learn.secure-azure-resources-with-rbac
 metadata:
 # HTML metadata for search engines
   title: Secure your Azure resources with role-based access control (RBAC)
-  description: Sample module title description
+  description: Learn how to use RBAC to manage access to resources in Azure.
 title: Secure your Azure resources with role-based access control (RBAC)
 # `title` appears in the header, ToC, and breadcrumbs
-summary: This is the summary of the sample module
+summary: Learn how to use RBAC to manage access to resources in Azure.
 # `summary` appears at the top of the module page beneath the title
-abstract: This is the abstract of the sample module
+abstract: Role-based access control (RBAC) is a system that provides fine-grained access management of resources in Azure. Using RBAC, you can segregate duties within your team and grant only the amount of access to users that they need to perform their jobs. This module shows you how to use RBAC to manage access to resources in Azure.
 # `abstract` appears on the module page beneath the summary and level/role/product metadata 
-cardDescription: This is the card description of the sample module
+cardDescription: Learn how to use RBAC to manage access to resources in Azure.
 # `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
 # `iconUrl` is the badge image 

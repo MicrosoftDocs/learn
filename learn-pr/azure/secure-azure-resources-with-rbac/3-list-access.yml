@@ -5,7 +5,7 @@ uid: learn.secure-azure-resources-with-rbac.3-list-access
 metadata:
 # Search engine metadata
   title: List access using RBAC and the Azure portal 
-  description: This unit is an example of text (no lab components) with a knowledge check.
+  description: Learn how to list the role assignments for yourself and at different scopes in the Azure portal. 
   displayType: one-column
   # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: List access using RBAC and the Azure portal

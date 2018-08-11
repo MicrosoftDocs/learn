@@ -5,7 +5,7 @@ uid: learn.secure-azure-resources-with-rbac.5-grant-access-powershell
 metadata:
 # Search engine metadata  
   title: Grant access using RBAC and Azure PowerShell
-  description: This is an example of a unit that only contains a knowledge check.
+  description: Learn how to grant a user access to create and manage virtual machines in a resource group using Azure PowerShell.
   displayType: one-column
   # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: Grant access using RBAC and Azure PowerShell

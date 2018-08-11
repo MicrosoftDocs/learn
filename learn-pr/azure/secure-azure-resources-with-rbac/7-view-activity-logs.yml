@@ -5,7 +5,7 @@ uid: learn.secure-azure-resources-with-rbac.7-view-activity-logs
 metadata:
 # Search engine metadata  
   title: View activity logs for RBAC changes
-  description: This is an example of a unit that uses the CloudShell editor.
+  description: Learn how to use Activity Log to list RBAC changes in the portal and generate a simple report.
   displayType: two-column
   # Text-only units use the two-column option, which drives a two-column layout, with an interactive component on the right of the screen and conceptual content in the middle.
   interactive: azurecli
