@@ -11,7 +11,7 @@ Here, you will see how to manage Azure resources using Azure PowerShell. You wil
 > [!div class="checklist"]
 > * Decide if Azure PowerShell is the right tool for your Azure administration tasks
 > * Install Azure PowerShell on Linux, macOS, and Windows
-> * Connect to an Azure subscription using Azure PowerShellbut tha
+> * Connect to an Azure subscription using Azure PowerShell
 > * Create Azure resources using Azure PowerShell
 
 ## Prerequisites
