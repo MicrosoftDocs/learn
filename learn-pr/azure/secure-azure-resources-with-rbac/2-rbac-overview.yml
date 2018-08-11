@@ -18,11 +18,14 @@ content: |
 quiz:
   title: 'Quiz title'
   questions:
-  - content: 'A role in Azure is a collection of permissions.'
+  - content: 'The first quiz question?'
     choices:
-    - content: True
-      correctExplanation: Correct! A role in Azure is a collection of permissions with a name that you can assign to user, group, or application.
+    - content: This answer is correct.
+      correctExplanation: Why this answer is correct
       isCorrect: true
-    - content: False
-      incorrectExplanation: A role in Azure is a collection of permissions with a name that you can assign to user, group, or application.
+      content: This answer is incorrect.
       isCorrect: false
+      incorrectExplanation: Why this answer is incorrect
+    - content: Brainstorming of markdown file format for quiz. Part 2
+      isCorrect: false
+# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
