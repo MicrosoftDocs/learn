@@ -35,11 +35,11 @@ The following shows an example of the Access control (IAM) blade for a resource 
 
 The way you control access to resources using RBAC is to create role assignments. This is a key concept to understand – it’s how permissions are enforced. To create a role assignment, you need three elements: security principal, role definition, and scope. You can think of these elements as who, what, and where.
 
-### 1. Security principle (who)
+### 1. Security principal (who)
 
 A *security principal* is just a fancy name for a user, group, or application that you want to grant access to.
 
-![Security principle](../images/2-rbac-security-principal.png)
+![Security principal](../images/2-rbac-security-principal.png)
 
 ### 2. Role definition (what can they do)
 
@@ -66,7 +66,7 @@ In Azure, you can specify a scope at multiple levels: management group, subscrip
 
 ### Role assignment
 
-Once you have determined the who, what, and where, you can combine those elements to grant access. A *role assignment* is the process of binding a role to a security principle at a particular scope for the purpose of granting access. To grant access you create a role assignment. To revoke access, you remove a role assignment.
+Once you have determined the who, what, and where, you can combine those elements to grant access. A *role assignment* is the process of binding a role to a security principal at a particular scope for the purpose of granting access. To grant access you create a role assignment. To revoke access, you remove a role assignment.
 
 The following example shows how the Marketing group has been granted the Contributor role at the sales resource group scope.
 
