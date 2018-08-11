@@ -1,6 +1,6 @@
 ## Exercise
 
-Using the Access control (IAM) blade in the Azure portal has been working fine, but you are getting several access requests each day. To keep up with the access management tasks, you decide to use PowerShell to help automate some of the steps.
+Using the Access control (IAM) blade in the Azure portal has been working fine, but you are getting several permission requests each day. To keep up with the access management tasks, you decide to use PowerShell to help automate some of the steps.
 
 In this exercise, you learn how to:
 
@@ -136,7 +136,7 @@ To remove access for users, groups, and applications, use [Remove-AzureRmRoleAss
       -ResourceGroupName "rbac-resource-group"
     ```
 
-## Clean up resources
+## Clean up
 
 To clean up the resources created by this unit, delete the resource group and the user.
 

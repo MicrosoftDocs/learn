@@ -29,7 +29,7 @@ Role-based access control (RBAC) is a system that provides fine-grained access m
 
 - Access to an Azure subscription
 - Permissions to create users in Azure Active Directory or have an existing test user
-- Permissions to create role assignments, such as Owner or User Access Administrator
+- Permissions to create role assignments, such as [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator)
 - Knowledge of basic Azure concepts, such as resource groups and subscriptions
 
 ## Expected Duration
