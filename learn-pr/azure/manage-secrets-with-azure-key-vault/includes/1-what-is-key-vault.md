@@ -4,15 +4,15 @@ Steve had been in his job at a pet food delivery company for a few weeks. He was
 
 Days later, accounting noticed that the company was delivering a lot of pet food that nobody had paid for. Someone had used the connection string to access the database, reverse-engineered the schema, and placed orders without going through the website.
 
-After realizing the mistake, Steve logged directly into the application server and changed the configuration instead of redeploying. Hoever the server was now showing failed requests.
+After realizing the mistake, Steve logged directly into the application server and changed the configuration instead of redeploying; but now the server was now showing failed requests.
 
-Steve had forgotten that multiple instances of the app ran on different servers, and he had only changed the configuration for one. Downtime and a full redeployment was needed which caused 30 minutes of downtime.
+Steve had forgotten that multiple instances of the app ran on different servers, and he had only changed the configuration for one. A full redeployment was needed which caused 30 minutes of downtime.
 
 Unprotected keys can give an attacker openings to steal user data, cause financial harm and likely downtime for your applications.
 
 ---
 
-Accidentally leaking a database connection string, API key or service password is a mistake that's easy to make often goes unnoticed. Sometimes it's not accidental; it's done by someone who shouldn't have had access to your  secrets. Unfortunately, secret values often need to be deployed in multiple places simultaneously and changed at inopportune times. And you have to store them *somewhere!* Let's see how we can make all of this secure.
+Accidentally leaking a database connection string, API key or service password is a mistake that's easy to make often goes unnoticed. Sometimes it's not accidental; it's done by someone who shouldn't have had access to your secrets. Unfortunately, secret values often need to be deployed in multiple places simultaneously and changed at inopportune times. And you have to store them *somewhere!* Let's see how we can make all of this secure.
 
 ## Key Vault
 

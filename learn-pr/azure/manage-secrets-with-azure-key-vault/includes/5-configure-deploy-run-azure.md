@@ -1,4 +1,4 @@
-Now its time to run our app in Azure. We need to create an App Service app, set it up with MSI and our vault configuration, and deploy our code.
+Now it's time to run our app in Azure. We need to create an App Service app, set it up with MSI and our vault configuration, and deploy our code.
 
 # Exercise
 

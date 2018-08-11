@@ -6,7 +6,7 @@ Creating a vault requires no initial configuration. Your user identity is automa
 
 ## Vault authentication and permissions
 
-Key Vault's API uses Azure Active Directory to authenticate users and applications. Vault access policies are based on *actions*, and are applied across an entire vault. For example, an application with **Get** (read secret values),  **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault is able to create secrets, list all secret names, and get and set all secret values in that vault.
+Key Vault's API uses Azure Active Directory to authenticate users and applications. Vault access policies are based on *actions*, and are applied across an entire vault. For example, an application with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault is able to create secrets, list all secret names, and get and set all secret values in that vault.
 
 *All* actions performed on a vault require authentication and authorization &mdash; there is no way to grant any kind of anonymous access.
 
@@ -21,7 +21,7 @@ For apps, typically only **Get** permissions are required. Some apps may require
 
 Given all the trouble the company's been having with application secrets, management has asked you to create a small starter app to set the other developers on the right path. The app needs to demonstrate best practices for managing secrets as simply and securely as possible.
 
-To start  you'll to create a vault and store a one secret.
+To start you'll to create a vault and store a one secret.
 
 ### Create a resource group
 
