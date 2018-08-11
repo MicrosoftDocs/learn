@@ -1,11 +1,11 @@
 
-In this exercise, you will continue with the example company that makes a suite of Linux admin tools. Recall that you plan to use Linux VMs to let potential customers test your software. You have a resource group ready and now it is time to create the  VMs.
+In this exercise, you will continue with the example of  a company that makes Linux admin tools. Recall that you plan to use Linux VMs to let potential customers test your software. You have a resource group ready and now it is time to create the VMs.
 
-A good opportunity to test this strategy has come up. Your company has paid for a booth at a big Linux trade show. You plan a demo area containing three terminals each connected to a separate Linux VM. At the end of each day, you want to delete the VMs and recreate them, so they start fresh every morning. Creating the VMs manually after work when you are tired would be error prone. You want to write a PowerShell script to automate the VM creation process.
+Your company has paid for a booth at a big Linux trade show. You plan a demo area containing three terminals each connected to a separate Linux VM. At the end of each day, you want to delete the VMs and recreate them, so they start fresh every morning. Creating the VMs manually after work when you are tired would be error prone. You want to write a PowerShell script to automate the VM creation process.
 
 ## Write a Script that Creates Virtual Machines
 
-Follow these steps to write the script.
+Follow these steps to write the script:
 
 1. Create a new text file named **ConferenceDailyReset.ps1**.
 
