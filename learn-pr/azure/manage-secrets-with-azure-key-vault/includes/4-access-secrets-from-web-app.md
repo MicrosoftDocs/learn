@@ -1,4 +1,4 @@
-In the last unit, we learned how enabling MSI creates an identity for our app to use for authentication. Now we'll see how to create an app that uses that identity to access secrets in the vault.
+Now that you know how enabling MSI creates an identity for our app to use for authentication, we'll  create an app that uses that identity to access secrets in the vault.
 
 ## Reading secrets in an ASP.NET Core app
 
@@ -20,7 +20,7 @@ Once a secret is loaded into your app, it's up to your app to handle it securely
 
 # Exercise
 
-We're going to create a new ASP.NET Core web API and use `AddAzureKeyVault` to load the secret from our vault.
+We'll create a new ASP.NET Core web API and use `AddAzureKeyVault` to load the secret from our vault.
 
 ## Create the app
 
