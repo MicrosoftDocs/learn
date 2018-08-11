@@ -4,13 +4,13 @@ title: Cloud Fundamentals
 summary: Interested in the cloud, but aren't quite sure what it can do for you? This learning path is the place to start. Learn the benefits of cloud computing, features in Azure that will save you time and money, basic strategies for transitioning to the cloud and more.
 cardDescription: Interested in the cloud, but aren't quite sure what it can do for you? This learning path is the place to start. Learn the benefits of cloud computing, features in Azure that will save you time and money, basic strategies for transitioning to the cloud and more.
 iconUrl: http://via.placeholder.com/120x120
-levels: 
+levels:
 - beginner
-roles: 
+roles:
 - developer
 - solutionsArchitect
 - administrator
-products: 
+products:
 - Azure
 prerequisites: Interested in the cloud, but aren't quite sure what it can do for you? This learning path is the place to start. Learn the benefits of cloud computing, features in Azure that will save you time and money, basic strategies for transitioning to the cloud and more.
 metadata:
@@ -20,7 +20,4 @@ modules:
 - learn.align-requirements-in-azure
 - learn.automate-azure-tasks-with-powershell
 - learn.control-azure-services-with-cli
-- learn.manage-resouces-with-azure-portal
-- learn.principles-cloud-computing
-- learn.explore-azure-services-features
 achievement: learn.cloud-fundamentals.trophy
