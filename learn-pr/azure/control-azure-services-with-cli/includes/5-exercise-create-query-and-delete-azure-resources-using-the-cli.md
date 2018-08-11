@@ -1,8 +1,8 @@
 
-In this exercise, you will use the Azure CLI installation on your local machine to create a resource group, and then to deploy a Web App into this resource group. As an example, suppose you need to deploy a Web App to take bookings for a pop-up restaurant; this restaurant opens for one day only each weekend but at different locations, and using a different name. So each week you deploy a new version of the Web App, but using the same set of tested Azure CLI commands.
+In this exercise, you will use the Azure CLI on your local machine to create a resource group, and then to deploy a Web App into this resource group. 
 
 ### Steps to create a resource group
-You run the Azure CLI by opening a bash shell (Linux and macOS), or from the Command Prompt or PowerShell (Windows).
+1. Open a bash shell on Linux or macOS, or open the Command Prompt or PowerShell if working from Windows.
 
 1. Start the Azure CLI and run the login command.
 
@@ -11,18 +11,18 @@ You run the Azure CLI by opening a bash shell (Linux and macOS), or from the Com
     ```
     If you do not get an Azure sign in page in your web browser, follow the command line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
-2. Create a resource group for managing all the resources associated with your pop-up restaurant app.
+1. Create a resource group.
 
     ```bash
     az group create --location westeurope --name popupResGroup
     ```
 
-3. Verify that the resource group was created successfully, by listing all your resource groups in a table.
+1. Verify that the resource group was created successfully, by listing all your resource groups in a table.
 
     ```bash
     az group list --output table
     ```
-1. Another way to check whether the resource group was created successfully is to use the Azure Portal. To do this, login to the Portal and navigate to the **Resource Groups** section (see below). The new resource group should be displayed in the list.
+1. Optionally, confirm the resource was created in the Azure Portal. Open a web browser, login to the Portal and navigate to the **Resource Groups** section (see below). The new resource group should be displayed in the list.
 
 ![Using the Portal to List Resource Groups](../images/listing-resource-groups.png)
 
@@ -42,7 +42,7 @@ When you run Web Apps, using the Azure Apps Service, you pay for the Azure compu
     ```
 
 ### Steps to create a web app
-You now need to create the web app in your service plan. You can deploy the code at the same time, but for our example, we are doing this as a separate step.
+Next, you'll create the web app in your service plan. You can deploy the code at the same time, but for our example, wedo this as separate step.
 
 1. Create the web app, remembering to change the string "12345" to the same random number you used earlier.
     ```bash

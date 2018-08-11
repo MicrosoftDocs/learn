@@ -35,4 +35,4 @@ If you use a PowerShell environment for running Azure CLI scripts, you'll need t
  ```
 
 ## Summary
-The Azure CLI must be installed before it can be used to manage Azure resources from a local computer. THe installation steps vary for Windows, Linux and macOS, but once installed, the commands are common across platforms. In the next unit, you will go through the detailed installation steps for some common platforms.
+The Azure CLI must be installed before it can be used to manage Azure resources from a local computer. The installation steps vary for Windows, Linux, and macOS, but once installed, the commands are common across platforms. 

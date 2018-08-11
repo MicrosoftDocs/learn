@@ -34,14 +34,14 @@ Since you're working with a local install of the Azure CLI, you'll need to authe
 az login
 ```
 
-The Azure CLI will then attempt to use your default browser and to open an Azure sign in page. If this doesn't work, you'll need to follow the command line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+The Azure CLI will typically launch your default browser to open the Azure sign in page. If this doesn't work, follow the command line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
-After you've signed in with your Azure account credentials, you'll be connected to your Azure subscription. 
+AFter a succesful sign in, you'll be connected to your Azure subscription. 
 
 ### Create
-As you'll often need to create a new resource group, before you create the actual resource you (such as a Web App, database, or VM), we'll use this as an example.
+You'll often need to create a new resource group efore you create a new Azure service so we'll use resource groups as example to show how to create Azure resources from the CLI.
 
-The Azure CLI **group create** command creates a resource group. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored (which may be important to you for compliance reasons). You use can use strings like "West US", "North Europe", or "West India" to specify the location; alternatively, you can use single word equivalents, such as westus, northeurope, or westindia. The core syntax is:
+The Azure CLI **group create** command creates a resource group. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored. You use strings like "West US", "North Europe", or "West India" to specify the location; alternatively, you can use single word equivalents, such as westus, northeurope, or westindia. The core syntax is:
 
 ```bash
 az group create --name <name> --location <location>
@@ -59,6 +59,3 @@ To get a more concise view, you can format the output as a simple table:
 ```bash
 az group list --output table
 ```
-
-## Summary
-For simple tasks, Azure CLI commands can be run one at a time, such when connecting to Azure to create a resource group. In the next unit, you'll go through the steps for deploying a Web App into a new resource group. After you've tested the Azure CLI commands used to deploy the app, you can easily combine these into a script for ease of execution.
