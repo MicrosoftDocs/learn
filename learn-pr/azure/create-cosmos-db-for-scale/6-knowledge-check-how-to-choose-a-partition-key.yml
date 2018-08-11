@@ -7,7 +7,7 @@ metadata:
   # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: Knowledge check - how to choose a partition key
 durationInMinutes: 2
-Content: Knowledge check - what is a request unit
+content: Knowledge check - what is a request unit
 quiz:
   title: Knowledge check - how to choose a partition key
   questions:
