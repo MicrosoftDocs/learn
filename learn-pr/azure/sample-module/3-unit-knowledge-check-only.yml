@@ -3,11 +3,9 @@
 uid: learn.sample-module-cloudshell.3-unit-knowledge-check-only
 # `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
 metadata:
-# Search engine metadata  
-  title: Sample unit 3 - Knowledge check only
+# Search engine metadata
+  title: Sample unit 3 optional longer seo-friendly title - Knowledge check only
   description: This is an example of a unit that only contains a knowledge check.
-  displayType: one-column
-  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: Sample unit 3 - Knowledge check only
 # `title` appears in the header, ToC, and breadcrumbs
 durationInMinutes: 11
