@@ -190,6 +190,11 @@ achievements:
   title: Optimize your web applications by caching read-only data with Redis
   summary: Optimize your web applications by caching read-only data with Redis
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.manage-secrets-with-azure-key-vault.badge
+  type: badge
+  title: Manage secrets in your web apps with Azure Key Vault
+  summary: Manage secrets in your web apps with Azure Key Vault
+  iconUrl: /learn/modules/manage-secrets-with-azure-key-vault/achievement/manage-secrets-with-azure-key-vault.svg
 - uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
   type: badge
   title: Sending location information over SMS from your phone using Azure Functions and Twilio badge

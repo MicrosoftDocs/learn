@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-secrets-with-azure-key-vault.3-authentication-with-managed-service-identity
+title: Vault authentication with Managed Service Identity
+metadata:
+  title: Vault authentication with Managed Service Identity
+  description: Vault authentication with Managed Service Identity
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-authentication-with-managed-service-identity.md)]
+quiz:
+  title: 'Knowledge Check: Managed Service Identity'
+  questions:
+  - content: How does using Managed Service Identity (MSI) change the way an app authenticates to Key Vault?
+    choices:
+    - content: The app uses a certificate to authenticate instead of a secret
+      isCorrect: false
+      incorrectExplanation: Apps *can* use secrets or certificates to get authentication tokens from Azure Active Directory, but with MSI they don't have to. 
+    - content: Each user of the app must enter a password
+      isCorrect: false
+      incorrectExplanation: It is the *app* that authenticates to Key Vault, not individual users of the app. Use of MSI does not impact whether or not your app requires authentication from your users.
+    - content: The app gets tokens from a token service powered by MSI instead of from Azure Active Directory
+      isCorrect: true
+      correctExplanation: The MSI token service gets tokens from Azure Active Directory on behalf of your app, and allows your app to authenticate with a secret injected into its envirionment variables.
+    - content: MSI identities are managed by Key Vault and are recognized and authenticated automatically.
+      isCorrect: false
+      incorrectExplanation: Key Vault does not control or managed identities. Identities exist within Azure Active Directory.
+  - content: Which one of these statements describes a primary benefit of using (MSI) to authenticate an app to Key Vault?
+    choices:
+    - content: MSI improves application performance
+      isCorrect: false
+      incorrectExplanation: MSI has no effect on your application's performance.
+    - content: MSI eliminates the need to handle secrets in configuration
+      isCorrect: true
+      correctExplanation: Your app authenticates to the MSI token service with a secret injected into its environment variables at runtime, eliminating the need to store secrets in configuration.
+    - content: MSI identities are automatically granted Key Vault permissions
+      isCorrect: false
+      incorrectExplanation: All identities, including MSI identities, must be explicitly granted permissions within a vault.
+    - content: MSI makes it easier to choose passwords for remote services
+      isCorrect: false
+      incorrectExplanation: MSI has no effect on your secrets or authentication workflows with remote services. MSI only impacts how your app authenticates to Key Vault.
