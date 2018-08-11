@@ -1,11 +1,11 @@
 
-In this exercise, you will install Azure PowerShell on your local machine. Please choose the steps for your operating system.
+In this exercise, you will install **Azure PowerShell** on your local machine. Please choose the steps for your operating system.
 
 ## Install PowerShell Core
-On Linux and macOS, the first step is to install PowerShell Core.
+On Linux and macOS, the first step is to install **PowerShell Core**.
 
 ### Linux
-Here you will install PowerShell Core on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command line. 
+You will install PowerShell Core on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command line. 
 
 > [!NOTE] The commands listed below are for Ubuntu version 18.04. If you are using a different version of Ubuntu, you must add a different repository. For details see [Installing PowerShell Core on Linux](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell-core-on-linux).
 
@@ -39,7 +39,7 @@ Here you will install PowerShell Core on Ubuntu Linux using the Advanced Packagi
     ```
 
 ### macOS
-Here you will install PowerShell Core on macOS using the Homebrew package manager.
+Next, install **PowerShell Core** on macOS using the Homebrew package manager.
 
 > [!IMPORTANT] If the **brew** command is unavailable, you may need to install the Homebrew package manager. For details see the [Homebrew website](https://brew.sh/).
 
@@ -61,10 +61,10 @@ Here you will install PowerShell Core on macOS using the Homebrew package manage
     ```
 
 ## Install Azure PowerShell
-After installing the base PowerShell product, you next need to install Azure PowerShell to add the Azure-specific commands.
+After installing the base **PowerShell** product, install **Azure PowerShell** to add the Azure-specific commands.
 
 ### Windows
-Here you will install Azure PowerShell on Windows using the **Install-Module** PowerShell command.
+Install Azure PowerShell on Windows using the **Install-Module** PowerShell command.
 
 > [!IMPORTANT] You must have PowerShell version 5.0 or higher to install Azure PowerShell. To check your version of PowerShell, use the following command: 
 >
@@ -83,7 +83,7 @@ Here you will install Azure PowerShell on Windows using the **Install-Module** P
 1. If you are asked whether you trust modules from PSGallery, answer **Yes** or **Yes to All**.
 
 ### Linux or macOS
-Here you will install Azure PowerShell on either Linux or macOS using the **Install-Module** PowerShell command. The procedure is the same for both operating systems.
+Install Azure PowerShell on either Linux or macOS using the **Install-Module** PowerShell command. The procedure is the same for both operating systems.
 
 1. In a terminal, type the following command to launch PowerShell Core with elevated privileges.
 
@@ -97,7 +97,7 @@ Here you will install Azure PowerShell on either Linux or macOS using the **Inst
     Install-Module AzureRM.NetCore
     ```
 
-1. If you are asked whether you trust modules from PSGallery, answer **Yes** or **Yes to All**.
+1. If you are asked whether you trust modules from **PSGallery**, answer **Yes** or **Yes to All**.
 
 ## Summary
-Here, you setup your local machines to administer Azure resources with Azure PowerShell. You can now use Azure PowerShell locally to enter commands or execute scripts. Azure PowerShell will forward your commands to the Azure datacenters where they will run inside your Azure subscription.
+You setup your local machine(s) to administer Azure resources with Azure PowerShell. You can now use Azure PowerShell locally to enter commands or execute scripts. Azure PowerShell will forward your commands to the Azure datacenters where they will run inside your Azure subscription.

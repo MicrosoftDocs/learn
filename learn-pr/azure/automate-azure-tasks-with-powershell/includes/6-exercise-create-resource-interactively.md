@@ -35,4 +35,4 @@ Another way to check whether the resource group was created successfully is to u
 ![Using the Portal to List Resource Groups](../images/6-listing-resource-groups.png)
 
 ## Summary
-This exercise demonstrated a typical pattern for an interactive PowerShell session. You used a standard cmdlet to import the AzureRM module and then the Azure PowerShell cmdlets to perform a specific task. You now have a resource group in your subscription and are ready to create VMs.
+This exercise shows a common pattern for an interactive PowerShell session. You used a standard cmdlet to import the AzureRM module and then the Azure PowerShell cmdlets to perform a specific task. You now have a resource group in your subscription and are ready to create VMs.
