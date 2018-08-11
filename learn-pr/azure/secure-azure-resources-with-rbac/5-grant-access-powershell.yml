@@ -15,13 +15,41 @@ durationInMinutes: 11
 content: |
   [!include[](includes/5-grant-access-powershell.md)]
 quiz:
-  title: 'Quiz Title'
+  title: 'Quiz title'
   questions:
-  - content: 'What this markdown file talking about:'
+  - content: 'To grant a user access to Azure resources, you create a role assignment.'
     choices:
-    - content: Brainstorming of markdown file format for quiz.
-      correctExplanation: Why this answer is correct
+    - content: 'True'
       isCorrect: true
-    - content: Brainstorming of markdown file format for quiz. Part 2
+      correctExplanation: Correct! A role assignment is the process of binding a role to a security principle at a particular scope for the purpose of granting access.
+    - content: 'False'
       isCorrect: false
-      incorrectExplanation: Why this answer is incorrect
+      incorrectExplanation: A role assignment is the process of binding a role to a security principle at a particular scope for the purpose of granting access.
+  - content: 'What is the name of the Azure PowerShell command to grant access?'
+    choices:
+    - content: New-AzureRmResourceGroup
+      isCorrect: false
+      correctExplanation: The New-AzureRmResourceGroup command is used to create new resource groups.
+    - content: New-AzureRmADUser
+      isCorrect: false
+      incorrectExplanation: The New-AzureRmADUser command is used to create new users in Azure Active Directory.
+    - content: New-AzureRmRoleAssignment
+      isCorrect: true
+      correctExplanation: Correct! The New-AzureRmRoleAssignment command assigns a role to a security principal at a particular scope for the purposes of granting access.
+    - content: Get-AzureRmRoleAssignment
+      isCorrect: false
+      correctExplanation: The Get-AzureRmRoleAssignment command lists the role assignments at a particular scope.
+  - content: 'A developer needs full access to a resource group. If you are following least-privilege best practices, what scope should you specify?'
+    choices:
+    - content: Resource group
+      isCorrect: true
+      correctExplanation: Correct! Following least-privilege best practices, you just grant the access the user needs to do their job. In this case, you should set the scope to just the resource group.
+    - content: Subscription
+      isCorrect: false
+      incorrectExplanation: A subscription scope would grant the developer access, but it would be broader than what they need.
+    - content: Resource
+      isCorrect: false
+      correctExplanation: A resource scope would not grant the developer the access they require.
+    - content: User
+      isCorrect: false
+      correctExplanation: User is not a scope.

@@ -26,7 +26,7 @@ quiz:
     - content: 'False'
       isCorrect: false
       incorrectExplanation: A role in Azure is a collection of permissions with a name that you can assign to user, group, or application.
-  - content: 'What three elements make up a role assignment?'
+  - content: 'What are the three elements that make up a role assignment?'
     choices:
     - content: User, group, and application
       isCorrect: false

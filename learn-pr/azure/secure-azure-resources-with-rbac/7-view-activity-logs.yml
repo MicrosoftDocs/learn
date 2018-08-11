@@ -15,23 +15,34 @@ durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
 content: |
   [!include[](includes/7-view-activity-logs.md)]
-tasks:
-- action: exists
-  # `exists`, `not-exists`
-  environment: azure
-  # `azure`
-  hint: 'Please make sure that you have named the resource group "myResourceGroup" and it was added to the "eastus" location'
-  # `hint` is optional
-  azure:
-    resourceGroup: myResourceGroup
-    location: eastus
-- action: exists
-  environment: azure
-  azure:
-    resourceGroup: groupA
-    resource:
-      type: Microsoft.Storage/storageAccounts
-      name: docsproxyppea427
-      tags:
-        triplecrown: true
-        # For lab config instructions, head to the "Write a unit - CloudShell lab" doc in the Contributor's Guide
+quiz:
+  title: 'Quiz title'
+  questions:
+  - content: 'How long are RBAC changes saved in the activity log by default?'
+    choices:
+    - content: 1 month
+      isCorrect: false
+      correctExplanation: The retention is longer.
+    - content: 90 days
+      isCorrect: true
+      correctExplanation: Correct!
+    - content: 120 days
+      isCorrect: false
+      incorrectExplanation: The retention is shorter.
+    - content: 6 months
+      isCorrect: false
+      correctExplanation: The retention is shorter.
+  - content: 'Which of the following is not a valid RBAC operation that is logged in Activity Log?'
+    choices:
+    - content: Manage role assignment
+      isCorrect: true
+      correctExplanation: Correct! This is not a valid operation that gets logged.
+    - content: Create role assignment
+      isCorrect: false
+      correctExplanation: This not a valid operation that gets logged.
+    - content: Create or update custom role definition
+      isCorrect: false
+      incorrectExplanation:  This not a valid operation that gets logged.
+    - content: Delete custom role definition
+      isCorrect: false
+      correctExplanation:  This not a valid operation that gets logged.

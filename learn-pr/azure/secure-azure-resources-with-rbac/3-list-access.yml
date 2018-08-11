@@ -17,14 +17,17 @@ content: |
 quiz:
   title: 'Quiz title'
   questions:
-  - content: 'The first quiz question?'
+  - content: 'What is the name of the blade in the Azure portal where you can see all the roles assigned to yourself in a subscription?'
     choices:
-    - content: This answer is correct.
-      correctExplanation: Why this answer is correct
+    - content: Azure resources
       isCorrect: true
-      content: This answer is incorrect.
+      correctExplanation: Correct! The Azure resources blade is where you can see all the roles assigned to yourself.
+    - content: Azure Active Directory
       isCorrect: false
-      incorrectExplanation: Why this answer is incorrect
-    - content: Brainstorming of markdown file format for quiz. Part 2
+      incorrectExplanation: The Azure Active Directory blade does not list roles assignments, but you can access the Azure AD features on this blade.
+    - content: All users
       isCorrect: false
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
+      correctExplanation: The All users blade does not list role assignments, but it does list all the users in the selected directory.
+    - content: Access control (IAM)
+      isCorrect: false
+      correctExplanation: Depending on the Access control (IAM) blade you open, you may see some roles assigned to yourself.
