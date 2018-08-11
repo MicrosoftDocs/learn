@@ -14,8 +14,8 @@ durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
 # Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
 content: |
- [!include[](includes/2-rbac-overview.md)]
- quiz:
+  [!include[](includes/2-rbac-overview.md)]
+quiz:
   title: 'Quiz title'
   questions:
   - content: 'A role in Azure is a collection of permissions.'
