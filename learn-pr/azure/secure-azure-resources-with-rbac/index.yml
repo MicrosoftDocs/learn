@@ -31,8 +31,9 @@ units:
 - learn.secure-azure-resources-with-rbac.2-rbac-overview
 - learn.secure-azure-resources-with-rbac.3-list-access
 - learn.secure-azure-resources-with-rbac.4-grant-access
-- learn.secure-azure-resources-with-rbac.5-create-custom-roles
-- learn.secure-azure-resources-with-rbac.6-view-activity-logs
-- learn.secure-azure-resources-with-rbac.7-module-summary
+- learn.secure-azure-resources-with-rbac.5-grant-access-powershell
+- learn.secure-azure-resources-with-rbac.6-create-custom-roles
+- learn.secure-azure-resources-with-rbac.7-view-activity-logs
+- learn.secure-azure-resources-with-rbac.8-module-summary
 achievement: learn.secure-azure-resources-with-rbac.badge
 # `achievement` is the `uid` for the badge

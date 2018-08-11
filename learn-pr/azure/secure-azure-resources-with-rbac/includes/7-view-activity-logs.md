@@ -25,7 +25,7 @@ The easiest way to get started is to view the activity logs with the Azure porta
 
 1. Click **All services** and then **Activity log**.
 
-    ![Activity logs using the portal](../images/6-activity-log-portal.png)
+    ![Activity logs using the portal](../images/7-activity-log-portal.png)
 
 1. Set the **Timespan** filter to **Last month**.
 
@@ -40,13 +40,13 @@ The easiest way to get started is to view the activity logs with the Azure porta
     - Create role assignment (roleAssignments)
     - Delete role assignment (roleAssignments)
 
-    ![Operation filter](../images/6-operation-filter.png)
+    ![Operation filter](../images/7-operation-filter.png)
 
 1. Click **Apply** to apply your filters.
 
     You'll see all the role assignment and role definition operations for the last month.
 
-    ![RBAC activity logs](../images/6-activity-log-portal-filter.png)
+    ![RBAC activity logs](../images/7-activity-log-portal-filter.png)
 
 1. Click the **Click here to download all the items as csv** link to download the activity logs as a CSV file.
 

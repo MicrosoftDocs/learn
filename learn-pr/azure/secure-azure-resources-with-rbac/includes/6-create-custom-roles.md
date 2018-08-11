@@ -1,12 +1,13 @@
 ## Exercise
 
-The engineering team at First Up Consultants needs very specific permissions for virtual machines that is not available with one of the [built-in roles](/azure/role-based-access-control/built-in-roles). Instead of granting them broad access, you decide to create a [custom role](/azure/role-based-access-control/custom-roles). Since you currently can't create custom roles in the Azure portal, you'll create the custom role using Azure PowerShell.
+The engineering team at First Up Consultants needs specific permissions related to support tickets that are not available with one of the [built-in roles](/azure/role-based-access-control/built-in-roles). Instead of granting them broad access, you decide to create a [custom role](/azure/role-based-access-control/custom-roles). Since you currently can't create custom roles in the Azure portal, you'll create the custom role using Azure PowerShell.
 
 In this exercise, you learn how to:
 
 > [!div class="checklist"]
 > * Create a custom role
 > * List custom roles
+> * Update a custom role
 > * Delete a custom role
 
 ## Prerequisites
@@ -75,13 +76,20 @@ The easiest way to create a custom role is to start with a built-in role, edit i
     
 1. Edit the JSON file to add the `"Microsoft.Support/*"` operation to the `Actions` property. Be sure to include a comma after the read operation. This action will allow the user to create support tickets.
 
-1. Get the ID of your subscription using the [Get-AzureRmSubscription](/powershell/module/azurerm.resources/get-azurermsubscription) command.
+1. In the PowerShell pane, get the `Id` of your subscription using the [Get-AzureRmSubscription](/powershell/module/azurerm.resources/get-azurermsubscription) command.
 
     ```azurepowershell-interactive
     Get-AzureRmSubscription
     ```
+    
+    ```Output
+    Name     : Pay-As-You-Go
+    Id       : 00000000-0000-0000-0000-000000000000
+    TenantId : 99999999-9999-9999-9999-999999999999
+    State    : Enabled
+    ```
 
-1. In `AssignableScopes`, add your subscription ID with the following format: `"/subscriptions/00000000-0000-0000-0000-000000000000"`
+1. In the editor, in `AssignableScopes`, add your subscription ID with the following format: `"/subscriptions/00000000-0000-0000-0000-000000000000"`
 
     You must add explicit subscription IDs, otherwise you won't be allowed to import the role into your subscription.
 
@@ -146,12 +154,73 @@ The easiest way to create a custom role is to start with a built-in role, edit i
     ----                   --------
     Reader Support Tickets     True
     ```
-    
-    You can also see the custom role in the Azure portal.
 
-    ![screenshot of custom role imported in the Azure portal](../images/5-custom-role-reader-support-tickets.png)
-    
+    This what the custom role looks like in the Azure portal.
+
+    ![screenshot of custom role imported in the Azure portal](../images/6-custom-role-reader-support-tickets.png)
+
+## Update a custom role
+
+To update the custom role, you can update the JSON file.
+
+1. Use the [Get-AzureRmRoleDefinition](/powershell/module/azurerm.resources/get-azurermroledefinition) command to output the custom role in JSON format.
+
+    ```azurepowershell-interactive
+    Get-AzureRmRoleDefinition -Name "Reader Support Tickets" | ConvertTo-Json | Out-File ReaderSupportRole2.json
+    ```
+
+1. Open the **ReaderSupportRole2.json** file in the code editor.
+
+    ```azurepowershell-interactive
+    code ./ReaderSupportRole2.json
+    ```
+
+1. In `Actions`, add the operation to create and manage resource group deployments `"Microsoft.Resources/deployments/*"`.
+
+     Your updated JSON file should look like the following:
+
+     ```json
+    {
+        "Name": "Reader Support Tickets",
+        "Id": "22222222-2222-2222-2222-222222222222",
+        "IsCustom": true,
+        "Description": "View everything in the subscription and also open support tickets.",
+        "Actions": [
+          "*/read",
+          "Microsoft.Support/*",
+          "Microsoft.Resources/deployments/*"
+        ],
+        "NotActions": [],
+        "DataActions": [],
+        "NotDataActions": [],
+        "AssignableScopes": [
+          "/subscriptions/00000000-0000-0000-0000-000000000000"
+        ]
+    }
+    ```
+
+1. Save your changes and close the editor.
+
+1. To update the custom role, use the [Set-AzureRmRoleDefinition](/powershell/module/azurerm.resources/set-azurermroledefinition) command and specify the updated JSON file.
+
+     ```azurepowershell-interactive
+    Set-AzureRmRoleDefinition -InputFile "./ReaderSupportRole2.json"
+    ```
+     ```Output
+    Name             : Reader Support Tickets
+    Id               : 22222222-2222-2222-2222-222222222222
+    IsCustom         : True
+    Description      : View everything in the subscription and also open support tickets.
+    Actions          : {*/read, Microsoft.Support/*, Microsoft.Resources/deployments/*}
+    NotActions       : {}
+    DataActions      : {}
+    NotDataActions   : {}
+    AssignableScopes : {/subscriptions/00000000-0000-0000-0000-000000000000}
+    ```
+
 ## Delete a custom role
+
+If a custom role is no longer needed, you can delete it. Follow these steps to delete the custom role.
 
 1. Use the [Get-AzureRmRoleDefinition](/powershell/module/azurerm.resources/get-azurermroledefinition) command to get the ID of the custom role.
 
@@ -174,3 +243,5 @@ The easiest way to create a custom role is to start with a built-in role, edit i
 1. When asked to confirm, type **Y**.
 
 ## Summary
+
+In this exercise, you learned how to create a custom role with the permissions you select. In the next exercise, you learn how to view the RBAC changes over time.

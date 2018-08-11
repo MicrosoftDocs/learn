@@ -5,14 +5,14 @@ Suppose you need to manage access to resources in Azure for the developer, engin
 In this unit, you learn:
 
 > [!div class="checklist"]
-> * RBAC enables you to control access to Azure resources
-> * To grant access, you create a role assignment
-> * A role is just a collection of permissions
-> * A role assignment consists of a security principal, a role, and a scope
+> * How RBAC enables you to control access to Azure resources
+> * What RBAC looks like in the Azure portal
+> * What a role is
+> * The three elements that make up a role assignment
 
 ## What is RBAC?
 
-Role-based access control (RBAC) is an authorization system built on Azure Resource Manager that provides fine-grained access management of resources in Azure. Azure has lots of resources, but a few examples include virtual machines, websites, networks, and storage.
+Role-based access control (RBAC) is an authorization system built on [Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview) that provides fine-grained access management of resources in Azure. Azure has lots of resources, but a few examples include virtual machines, websites, networks, and storage.
 
 ## What can I do with RBAC?
 
@@ -25,9 +25,9 @@ Here are some examples of what you can do with RBAC:
 
 ## What does RBAC look like in the Azure portal?
 
-In several areas in the Azure portal, you'll see a blade named **Access control (IAM)**, also known as identity and access management. On this blade, you can see who has access in the particular area you are looking at. Using this same blade, you can grant or remove access.
+In several areas in the Azure portal, you'll see a blade named **Access control (IAM)**, also known as identity and access management. On this blade, you can see who has access in that area and their role. Using this same blade, you can grant or remove access.
 
-The following shows an example of the Access control (IAM) blade for a resource group named pharma-sales-projectforecast. In this example, Alain Charon has the Backup Operator role on this resource group.
+The following shows an example of the Access control (IAM) blade for a resource group. In this example, Alain Charon has the Backup Operator role on this resource group.
 
 ![Access control (IAM) in the Azure portal](../images/2-resource-group-access-control.png)
 
@@ -43,7 +43,7 @@ A *security principal* is just a fancy name for a user, group, or application th
 
 ### 2. Role definition (what can they do)
 
-A *role definition* is a collection of permissions. It's sometimes just called a role. A role definition lists the permissions that can be performed, such as read, write, and delete. Roles can be high-level, like Owner, or specific, like Virtual Machine Reader.
+A *role definition* is a collection of permissions. It's sometimes just called a role. A role definition lists the permissions that can be performed, such as read, write, and delete. Roles can be high-level, like Owner, or specific, like Virtual Machine Contributor.
 
 ![Role definition](../images/2-rbac-role-definition.png)
 
@@ -68,7 +68,7 @@ In Azure, you can specify a scope at multiple levels: management group, subscrip
 
 Once you have determined the who, what, and where, you can combine those elements to grant access. A *role assignment* is the process of binding a role to a security principle at a particular scope for the purpose of granting access. To grant access you create a role assignment. To revoke access, you remove a role assignment.
 
-The following example shows how the Marketing group has been granted the Contributor role at the pharma-sales resource group scope.
+The following example shows how the Marketing group has been granted the Contributor role at the sales resource group scope.
 
 ![Role assignment](../images/2-rbac-overview.png)
 
@@ -86,7 +86,7 @@ Using RBAC, you can specify management permissions in Azure. Here are some examp
 - Create, update, or delete a blob container
 - Delete a resource group and all of its resources
 
-Management access is not inherited to your data. Previously, RBAC was not used for data permissions. Authorization for data permissions varied across services. The same RBAC authorization model used for management permissions is being extended to data permissions (currently in preview). Here are some data permissions that can now be controlled using RBAC:
+Management access is not inherited to the data. Previously, RBAC was not used for data permissions. Authorization for data permissions varied across services. The same RBAC authorization model used for management permissions is being extended to data permissions (currently in preview). Here are some data permissions that can now be controlled using RBAC:
 
 - Read a list of blobs in a container
 - Write a storage blob in a container
@@ -94,8 +94,8 @@ Management access is not inherited to your data. Previously, RBAC was not used f
 
 ## Other roles in Azure
 
-As you are working with Azure, you might encounter other roles, such as Global Administrator, Account Administrator, and several others. Many of these other roles are used for Azure Active Directory administration, such as creating users, resetting passwords, managing user licenses, and managing domains. There's more information that you can read if you want to learn the details, but the important thing to remember is that RBAC roles are used to manage Azure resources.
+As you are working with Azure, you might encounter other roles, such as Global Administrator, Account Administrator, and several others. Many of these other roles are used for Azure Active Directory administration, such as creating users, resetting passwords, managing user licenses, and managing domains. There's more information that you can read if you want to learn the details, but the important thing to remember is that RBAC roles are used to manage access to Azure resources.
 
 ## Summary
 
-In this unit, you learned the basics of how RBAC works. Now that you have the RBAC fundamentals out of the way, you can get your hands dirty by starting to use RBAC. The easiest way to get started is to use the portal. The rest of this module has you perform hands-on exercises related to RBAC.
+In this unit, you learned the basics of how RBAC works. Now that you have the RBAC fundamentals out of the way, you can get your hands dirty by starting to use RBAC. The easiest way to get started is to use the Azure portal. The rest of this module has you perform hands-on exercises related to RBAC.

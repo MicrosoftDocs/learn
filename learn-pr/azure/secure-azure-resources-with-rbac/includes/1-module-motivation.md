@@ -21,7 +21,7 @@ Role-based access control (RBAC) is a system that provides fine-grained access m
 > [!div class="checklist"]
 > * Learn what RBAC is
 > * List access for yourself and others
-> * Grant access to others at a particular scope
+> * Grant access to others
 > * Create a custom role
 > * View activity logs of RBAC changes
 
@@ -30,7 +30,7 @@ Role-based access control (RBAC) is a system that provides fine-grained access m
 - Access to an Azure subscription
 - Permissions to create users in Azure Active Directory or have an existing test user
 - Permissions to create role assignments, such as Owner or User Access Administrator
-- Knowledge of basic Azure concepts such as resource groups and subscriptions
+- Knowledge of basic Azure concepts, such as resource groups and subscriptions
 
 ## Expected Duration
 

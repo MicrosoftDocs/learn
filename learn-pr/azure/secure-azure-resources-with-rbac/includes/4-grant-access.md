@@ -10,24 +10,24 @@ In this exercise, you learn how to:
 
 ## Prerequisites
 
-- Permissions to assign roles, such as Owner or User Access Administrator
+- Permissions to assign roles, such as [Owner](/azure/role-based-access-control/built-in-roles#owner) or [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator)
 - Another user or yourself
 
 ## Create a resource group
 
-Follow these steps to create a new resource group named rbac-quickstart-resource-group.
+Follow these steps to create a new resource group named rbac-resource-group.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 1. In the navigation list, click **Resource groups**.
 
-1. Click **Add** to open the **Resource group** blade.
+1. Click **Add** to open the **Resource group** pane.
 
    ![Add a new resource group](../images/4-resource-group.png)
 
-1. For **Resource group name**, enter **rbac-quickstart-resource-group**.
+1. For **Resource group name**, enter **rbac-resource-group**.
 
-1. Select a subscription and a location.
+1. Use the default subscription and location.
 
 1. Click **Create** to create the resource group.
 
@@ -41,7 +41,7 @@ Follow these steps to create a new resource group named rbac-quickstart-resource
 
 In RBAC, to grant access, you create a role assignment. Follow these steps to assign the [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) role to user at the resource group scope.
 
-1. In the list of **Resource groups**, click the new **rbac-quickstart-resource-group** resource group.
+1. In the list of **Resource groups**, click the new **rbac-resource-group** resource group.
 
 1. Click **Access control (IAM)** to see the current list of role assignments.
 
@@ -59,7 +59,7 @@ In RBAC, to grant access, you create a role assignment. Follow these steps to as
 
 1. Click **Save** to create the role assignment.
 
-   After a few moments, the user is assigned the Virtual Machine Contributor role at the rbac-quickstart-resource-group resource group scope.
+   After a few moments, the user is assigned the Virtual Machine Contributor role at the rbac-resource-group resource group scope. The user can now create and manage virtual machines just within this resource group.
 
    ![Virtual Machine Contributor role assignment](../images/4-vm-contributor-assignment.png)
 
@@ -79,16 +79,16 @@ In RBAC, to remove access, you remove a role assignment.
 
 1. In the navigation list, click **Resource groups**.
 
-1. Click **rbac-quickstart-resource-group** to open the resource group.
+1. Click **rbac-resource-group** to open the resource group.
 
 1. Click **Delete resource group** to delete the resource group.
 
    ![Delete resource group](../images/4-delete-resource-group.png)
 
-1. On the **Are you sure you want to delete** blade, type the resource group name: **rbac-quickstart-resource-group**.
+1. On the **Are you sure you want to delete** blade, type the resource group name: **rbac-resource-group**.
 
 1. Click **Delete** to delete the resource group.
 
 ## Summary
 
-In this exercise, you learned how to grant a user access to create and manage virtual machines in a resource group using the Azure portal. In the next exercise, you look at how to create a custom role and define your own permissions.
+In this exercise, you learned how to grant a user access to create and manage virtual machines in a resource group using the Azure portal. In the next exercise, you look at how to grant access using PowerShell.

@@ -1,6 +1,6 @@
 ## Exercise
 
-At First Up Consultants, you've been granted access to the Azure subscription for the engineering team. You want to get familiar with the Azure portal and see what roles are currently assigned.
+At First Up Consultants, you've been granted access to the Azure subscription for the marketing team. You want to get familiar with the Azure portal and see what roles are currently assigned.
 
 In this exercise, you learn how to:
 
@@ -34,8 +34,6 @@ Follow these steps to see what roles are currently assigned to you.
     ![Azure resources](../images/3-aad-user-azure-resources.png)
 
     On the Azure resources blade, you can see the role assignments for yourself and the selected subscription. Your list will look different.
-
-1. If you have multiple subscriptions, you can click the **Subscription** drop-down list to see the role assignments in a different subscription.
 
 ## List role assignments for a subscription
 
