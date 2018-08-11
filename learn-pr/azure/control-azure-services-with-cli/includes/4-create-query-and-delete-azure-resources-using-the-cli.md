@@ -36,10 +36,10 @@ az login
 
 The Azure CLI will typically launch your default browser to open the Azure sign in page. If this doesn't work, follow the command line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
-AFter a succesful sign in, you'll be connected to your Azure subscription. 
+After a succesful sign in, you'll be connected to your Azure subscription. 
 
 ### Create
-You'll often need to create a new resource group efore you create a new Azure service so we'll use resource groups as example to show how to create Azure resources from the CLI.
+You'll often need to create a new resource group before you create a new Azure service so we'll use resource groups as example to show how to create Azure resources from the CLI.
 
 The Azure CLI **group create** command creates a resource group. You must specify a name and location. The name must be unique within your subscription. The location determines where the metadata for your resource group will be stored. You use strings like "West US", "North Europe", or "West India" to specify the location; alternatively, you can use single word equivalents, such as westus, northeurope, or westindia. The core syntax is:
 

@@ -42,7 +42,7 @@ When you run Web Apps, using the Azure Apps Service, you pay for the Azure compu
     ```
 
 ### Steps to create a web app
-Next, you'll create the web app in your service plan. You can deploy the code at the same time, but for our example, wedo this as separate step.
+Next, you'll create the web app in your service plan. You can deploy the code at the same time, but for our example, we'll do this as separate step.
 
 1. Create the web app, remembering to change the string "12345" to the same random number you used earlier.
     ```bash

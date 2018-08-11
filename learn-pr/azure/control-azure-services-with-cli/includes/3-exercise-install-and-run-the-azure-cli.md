@@ -63,4 +63,4 @@ You run the Azure CLI by opening a bash shell (Linux and macOS), or from the Com
 > [!NOTE] In Windows, running the Azure CLI from PowerShell has some advantages over running the Azure CLI from the Command Prompt; for example, PowerShell provides additional tab completion features over those available from the Command Prompt. 
 
 ## Summary
-Tou setup your local machines to administer Azure resources with Azure CLI. You can now use Azure CLI locally to enter commands or execute scripts. Azure CLI will forward your commands to the Azure datacenters where they will run inside your Azure subscription.
+You setup your local machines to administer Azure resources with Azure CLI. You can now use Azure CLI locally to enter commands or execute scripts. Azure CLI will forward your commands to the Azure datacenters where they will run inside your Azure subscription.
