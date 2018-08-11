@@ -31,3 +31,17 @@ quiz:
     - content: Access control (IAM)
       isCorrect: false
       correctExplanation: Depending on the Access control (IAM) blade you open, you may see some roles assigned to yourself.
+  - content: 'What is the inheritance order for scope in Azure?'
+    choices:
+    - content: Management group, resource group, subscription, resource
+      isCorrect: false
+      correctExplanation: This is not the correct order.
+    - content: Management group, subscription, resource group, resource
+      isCorrect: true
+      incorrectExplanation: Correct!
+    - content: Subscription, management group, resource group, resource
+      isCorrect: false
+      correctExplanation: This is not the correct order.
+    - content: Subscription, resource group, management group, resource
+      isCorrect: false
+      correctExplanation: This is not the correct order.

@@ -37,6 +37,6 @@ quiz:
     - content: Management group, subscription, and resource group
       isCorrect: false
       correctExplanation: Management group, subscription, and resource group are ways to organize your Azure resources and represent scopes.
-    - content: Owner, Contributor, Reader
+    - content: Owner, Contributor, and Reader
       isCorrect: false
-      correctExplanation: Owner, Contributor, Reader are built-in roles in Azure.
+      correctExplanation: Owner, Contributor, and Reader are built-in roles in Azure.

@@ -18,18 +18,18 @@ content: |
 quiz:
   title: 'Quiz title'
   questions:
-  - content: 'How do you know what permissions can be included in a custom role?'
+  - content: 'Which command can help you determine what permissions can be included in a custom role?'
     choices:
-    - content: You use the use the Set-AzureRmRoleDefinition command
+    - content: Set-AzureRmRoleDefinition
       isCorrect: false
       correctExplanation: The Set-AzureRmRoleDefinition command updates a custom role.
-    - content: You use the New-AzureRmRoleDefinition command
+    - content: New-AzureRmRoleDefinition
       isCorrect: false
       incorrectExplanation: The New-AzureRmRoleDefinition command create a new custom role.
-    - content: You use the Get-AzureRmSubscription command
+    - content: Get-AzureRmSubscription
       isCorrect: false
       correctExplanation: The Get-AzureRmSubscription command gets information about a subscription.
-    - content: You use the Get-AzureRmProviderOperation command
+    - content: Get-AzureRmProviderOperation
       isCorrect: true
       correctExplanation: Correct! The Get-AzureRmProviderOperation command gets the list of operations for a resource provider or you can see the documentation.
   - content: 'What property specifies the management operations that the role allows to be performed?'
