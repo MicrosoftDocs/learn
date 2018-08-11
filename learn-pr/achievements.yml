@@ -195,3 +195,8 @@ achievements:
   title: Manage secrets in your web apps with Azure Key Vault
   summary: Manage secrets in your web apps with Azure Key Vault
   iconUrl: /learn/modules/manage-secrets-with-azure-key-vault/achievement/manage-secrets-with-azure-key-vault.svg
+- uid: learn.secure-azure-resources-with-rbac.badge
+  type: badge
+  title: Secure your Azure resources with role-based access control (RBAC)
+  summary: Secure your Azure resources with role-based access control (RBAC)
+  iconUrl: http://via.placeholder.com/120x120
