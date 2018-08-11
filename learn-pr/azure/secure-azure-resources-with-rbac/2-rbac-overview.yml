@@ -20,9 +20,9 @@ quiz:
   questions:
   - content: 'A role in Azure is a collection of permissions.'
     choices:
-    - content: 'This is True'
+    - content: 'True'
       isCorrect: true
       correctExplanation: Correct! A role in Azure is a collection of permissions with a name that you can assign to user, group, or application.
-    - content: 'This is False'
+    - content: 'False'
       isCorrect: false
       incorrectExplanation: A role in Azure is a collection of permissions with a name that you can assign to user, group, or application.
