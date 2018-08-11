@@ -1,6 +1,6 @@
 ## Exercise
 
-Using the Access control (IAM) blade in the Azure portal has been working fine, but you are getting several permission requests each day. To keep up with the access management tasks, you decide to use PowerShell to help automate some of the steps.
+Using the **Access control (IAM)** blade in the Azure portal has been working fine, but you are getting several permission requests each day. To keep up with the access management tasks, you decide to use PowerShell to help automate some of the steps.
 
 In this exercise, you learn how to:
 

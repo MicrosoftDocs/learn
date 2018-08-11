@@ -4,11 +4,11 @@ uid: learn.secure-azure-resources-with-rbac.8-module-summary
 # `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
 metadata:
 # Search engine metadata
-  title: Summary
+  title: Module Summary
   description: This is a sample of "text-only" content (no lab or knowledge check components).
   displayType: one-column
   # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
-title: Summary
+title: Module Summary
 # `title` appears in the header, ToC, and breadcrumbs
 durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
