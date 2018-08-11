@@ -1,16 +1,16 @@
 ## Motivation
 
-Let's continue with the example where you are tasked with installing the Azure Cosmos DB for your employer. You know that your transaction volume increases tremendously during, mega-shopping days, such as Black Friday. You must ensure that the database response time is as smooth and quick as it is during the low volume days. This is achieved by estimating your database throughput.
+Next we'll consider the data throughout for our data base. This is important to ensure we can handle the volume of transactions for our business needs. Throughput requirements aren't always consistant, for example, you may be building a shoppping website that needs to scale during sales or holidays. We'll start estimating your database throughput requirements.
 
 ## What is database throughput? 
 
-Database throughput determines the number of reads and writes your database can perform in a single second, which ensures smooth customer response time without delays. It ensures your customers can read and write to your database without delays.
+Database throughput is the number of reads and writes your database can perform in a single second. 
 
-In order to scale throughput strategically, you need to estimate your throughput needs by estimating the number of reads and writes you'll have to support at different times and for different document sizes. If you estimate correctly, you'll keep your users happy when demand goes through the roof. If you estimate incorrectly, your requests can get rate limited and operations will have to wait and retry, likely causing unhappy customers.
+In order to scale throughput strategically, you need to estimate your throughput needs by estimating the number of reads and writes you'll have to support at different times and for different document sizes. If you estimate correctly, you'll keep your users happy when demand spikes. If you estimate incorrectly, your requests can get rate limited and operations will have to wait and retry, likely causing high latency and unhappy customers.
 
 ## What is a request unit?
 
-Azure Cosmos DB measures throughput using something called a request unit. Request unit usage is measured per second, so the normal unit of measure is Request Units per second (RU/s). You must reserve the number of RU/s you want Azure Cosmos DB to provision in advance, so it is ready and waiting to handle the load you've estimated, but you can also scale up or down your RU/s at any time to meet the current demand.
+Azure Cosmos DB measures throughput using something called a **Request Unit**. Request unit usage is measured per second, so the unit of measure is **Request Units per second (RU/s)**. You must reserve the number of RU/s you want Azure Cosmos DB to provision in advance, so it's able to handle the load you've estimated, and you can scale your RU/s up or down any time to meet current demand.
 
 ## Request unit basics
 
@@ -43,4 +43,4 @@ When you create an account, you can provision a minimum of 400 RU/s, or a maximu
 
 ## Summary
 
-This unit demonstrated the importance of request units as a fundamental part of understanding how to create a successful Azure Cosmos DB solution. Request units can be modified at any time, but setting them to 1000 RU/s when you create an account ensures your database is ready to scale later.
+You know understand how to estimate and scope throughput for an Azure Cosmos DB using Request Units. Request units can be modified at any time, and by setting them to 1000 RU/s when you create an account helps ensure your database is ready to scale later.

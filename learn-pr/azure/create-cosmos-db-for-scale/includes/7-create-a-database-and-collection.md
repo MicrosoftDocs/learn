@@ -29,4 +29,4 @@ Now that you understand how request units are used to determine database through
 
 ## Summary
 
-In this unit, you used you knowledge of partition keys and request units to create your database and collection.
+In this unit, you used you knowledge of partition keys and request units to create a database and collection with throughput and scaling settings appropriate for your business needs.

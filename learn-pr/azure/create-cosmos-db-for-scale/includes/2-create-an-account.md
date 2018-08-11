@@ -1,19 +1,20 @@
 ## Motivation
 
-Suppose the online retailer that you work for has decided to install Azure Cosmos DB to meet the increasing demands of their expanding customer and product base. You have been tasked with starting the process for the database creation. 
-In order to create an Azure Cosmos DB database, you first need to create an Azure Cosmos DB account. 
+Your company has chosen Azure Cosmos DB to meet the demands of their expanding customer and product base. You have been tasked with creating the database.
+
+The firststep is to create an Azure Cosmos DB account. 
 
 ## What is an Azure Cosmos DB account?
 
-Azure Cosmos DB account simply acts as an organizational entity for your databases, and connects your usage to your Azure subscription for billing purposes.
+Azure Cosmos DB account is an Azure resource that acts as an organizational entity for your databases, and connects your usage to your Azure subscription for billing purposes.
 
 Each Azure Cosmos DB account is associated with one of the several data models Azure Cosmos DB supports, and you can create as many accounts as you need. 
 
-SQL API is the best data model to choose, if you are creating a new application from scratch. If you want to work with graphs or tables, or migrate your MongoDB or Cassandra data to Azure, create additional accounts and select relevant data models.
+SQL API is the prefered data model if you are creating a new application. If you're working with graphs or tables, or migrating your MongoDB or Cassandra data to Azure, create additional accounts and select relevant data models.
 
-When creating an account, choose an ID that is meaningful to you, as it is how you will identify your account. Further, create the account in the Azure region that's closest to your users, to minimize the latency between the datacenter and your users.
+When creating an account, choose an ID that is meaningful to you; it is how you identify your account. Further, create the account in the Azure region that's closest to your users to minimize latency between the datacenter and your users.
 
-You can set up virtual networks and geo-redundancy during account creation, but you can also do it later, and in this module we will not enable those settings. Instead we'll dig into those topics in other modules.
+You can optionally set up virtual networks and geo-redundancy during account creation, but this can also be done later. In this module we will not enable those settings.
 
 ## Creating an Azure Cosmos DB account in the portal
 
@@ -39,7 +40,7 @@ You can set up virtual networks and geo-redundancy during account creation, but 
 
     ![The new account page for Azure Cosmos DB](../media/1-introduction/azure-cosmos-db-create-new-account.png)
 
-5. The account creation takes a few minutes. Wait for the portal to display a notification that the deployment succeeded, and click the notification. 
+5. The account creation takes a few minutes; wait for the portal to display the notification that the deployment succeeded, and click the notification. 
 
     ![Notification alert](../media/1-introduction/azure-cosmos-db-notification.png)
 
@@ -53,4 +54,4 @@ You can set up virtual networks and geo-redundancy during account creation, but 
 
 ## Summary
 
-You have created an Azure Cosmos DB account in the location closest to your users to minimize latency, and in this case you created a SQL API account as you'll be storing JSON documents and you would want to query database using the SQL query language. The portal gives you the option to configure geo-replication and a virtual network during account creation, but we will work with those settings in later modules.
+You have created an Azure Cosmos DB account which is the first step in creating an Azure Cosmos database. You selected appropriate settings for your data types and set the account location to minimize latency for your users.

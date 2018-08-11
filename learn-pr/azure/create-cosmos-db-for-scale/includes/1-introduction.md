@@ -1,9 +1,9 @@
 ## Motivation
 Databases need to scale to meet both the data velocity and volume demands created by global audiences.
 
-As an example, suppose you work for an online retailer, where your database needs to scale to accommodate a growing product catalog. You also have a growing global customer base, and need to provide instant responses to their queries and immediate updates to product availability.
+Suppose you work for an online retailer and your database needs to scale to accommodate a growing product catalog. You also have a growing global customer base, and your customers expect quick responses to their queries and immediate updates to product availability.
 
-You need to ensure your database can scale automatically to account for new products and users, and has high throughput and low latency to keep pace with your customers expectations.
+You database should scale automatically to account for new products and users, have high throughput, and low latency to keep pace with your customers expectations.
 
 ## Learning objective
 
@@ -11,8 +11,3 @@ You need to ensure your database can scale automatically to account for new prod
 - Set the initial throughput volume for your database using request units
 - Choose a partition key
 - Create a database and collection in Azure Cosmos DB
-
-## Prerequisites
-
-- Have an understanding of databases and queries
-- Completed the “Choose an approach to store your data in Azure” module in the “Storing data in Azure” Learning Path to understand when to use Azure Cosmos DB

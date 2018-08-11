@@ -1,12 +1,12 @@
 ## Motivation
 
-The online retailer that you work for plans to expand to a new geographical area in the near future. This move will increase your customer base and transaction volume tremendously. You must ensure that your database is equipped to handle expansion whenever required.
+The online retailer that you work for plans to expand to a new geographical area in the near future. This move will increase your customer base and transaction volume. You must ensure that your database is equipped to handle expansion whenever required.
 
 Having a partition strategy ensures that when your database needs to grow, it can do so easily and continue to perform efficient queries and transactions.
 
 ## What is a partition strategy?
 
-If you keep adding huge amount of data to a single server, or a single partition, it will eventually run out of space.  To prepare for this, you need a partitioning strategy to scale out instead of up. Scaling out is also called horizontal scaling, and it enables you to add more and more partitions to your database as your application needs them.
+If you continue to add new data to a single server, or a single partition, it will eventually run out of space. To prepare for this, you need a partitioning strategy to **scale out** instead of up. Scaling out is also called horizontal scaling, and it enables you to add more partitions to your database as your application needs them.
 
 The partition and scale out strategy in Azure Cosmos DB is driven by the partition key, which is a value set when you create a collection. Once the partition key is set, it cannot be changed without recreating the collection, so selecting the right partition key is an important decision to make early in your development process.  
 
@@ -29,7 +29,3 @@ When you're trying to determine the right partition key and the solution isn't o
 * To determine the best partition key for a read-heavy workload, review the top three to five queries you plan on using. The value most frequently included in the WHERE clause is a good candidate for the partition key.
 
 * For write-heavy workloads, you'll need to understand the transactional needs of your workload because the partition key is the scope of multi-document transactions.
-
-## Summary
-
-This unit demonstrated the importance of partition keys, and how selecting the right partition key can help avoid problems down the line such as hot partitions and maxed out physical partitions. You can now use this information along with your knowledge of request units to create a database with a partition key that's built to handle the needs of your application.
