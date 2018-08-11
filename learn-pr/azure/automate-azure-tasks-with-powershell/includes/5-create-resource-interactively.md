@@ -1,5 +1,5 @@
 ## Motivation
-Azure PowerShell lets you write commands and execute them immediately. This is known as interactive mode.
+Azure PowerShell lets you write commands and execute them immediately. This is known as **interactive mode**.
 
 Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing VMs. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
 
@@ -22,7 +22,13 @@ Get-Help <cmdlet-name> -detailed
 **AzureRM** is the formal name for the Azure PowerShell module containing cmdlets to work with Azure features (the **RM** in the name stands for **Resource Manager**). It contains hundreds of cmdlets that let you control nearly every aspect of every Azure resource. You can work with resource groups, storage, virtual machines, Azure Active Directory, containers, machine learning, etc.
 
 ## How to create a resource group
-Our goal here is to create a resource group using a local installation of Azure PowerShell. There are four steps: import the Azure cmdlets, connect to your Azure subscription,  create the resource group, and verify that creation was successful (see below).
+Next we'll create a resource group using a local installation of Azure PowerShell. 
+
+There are four steps: 
+1. Import the Azure cmdlets
+1. Connect to your Azure subscription
+1. Create the resource group
+1. Verify that creation was successful (see below).
 
 ![Steps to create a resource in Azure using Azure PowerShell](../images/5-MOCKUP-create-resource-overview.png)
 
@@ -67,4 +73,4 @@ Get-AzureRmResource | Format-Table
 ```
 
 ## Summary
-PowerShell's interactive mode is appropriate for one-off tasks. In our example, we plan to use the same resource group for the lifetime of the project which means creating it interactively is sensible. Interactive mode is likely to be quicker and easier for this task than writing a script and executing that script exactly once.
+PowerShell's interactive mode is appropriate for one-off tasks. In our example, we'll use the same resource group for the lifetime of the project which means creating it interactively is reasonable. Interactive mode is often quicker and easier for this task than writing a script and executing that script exactly once.

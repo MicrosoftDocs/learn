@@ -1,11 +1,11 @@
 ## Motivation
-Complex or repetitive tasks often take a great deal of administrative time. Organizations try to automate these tasks to reduce costs and avoid errors.
+Complex or repetitive tasks often take a great deal of administrative time. Organizations prefer to automate these tasks to reduce costs and avoid errors.
 
 This is important in the Customer Relationship Management (CRM) company example. There, you test your software on multiple Linux Virtual Machines (VMs) that you need to continuously delete and recreate. You want to use a PowerShell script to automate the creation of the VMs.
 
 Beyond the core operation of creating a VM you have a few additional requirements for your script. 
-- You will create multiple VMs, so you want to put the creation inside a loop.
-- You need to create VMs in three different resource groups, so the name of the resource group should be passed to the script as a parameter.
+- You will create multiple VMs, so you want to put the creation inside a loop
+- You need to create VMs in three different resource groups, so the name of the resource group should be passed to the script as a parameter
 
 In this section, you will see how to write and execute an Azure PowerShell script that meets these requirements.
 
@@ -93,7 +93,7 @@ Azure PowerShell provides the **New-AzureRmVm** cmdlet to create a Virtual Machi
 - **Credential**: An object containing the username and password for the VM admin account. We will use the **Get-Credential** cmdlet to prompt for a username and password. **Get-Credential** packages the username and password into a credential object which it returns as its result.
 - **Image**: Identity of the operating system to use for the VM. We will use "UbuntuLTS".
 
-The syntax for the cmdlet is shown below.
+The syntax for the cmdlet is shown below:
 
 ```powershell
    New-AzureRmVm 
