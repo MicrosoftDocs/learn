@@ -19,9 +19,6 @@
         },
         "build_entry_point": "docs",
         "template_folder": "_themes",
-        "TripleCrownValidation": {
-            "quizTag": "/learn-quiz-pr"
-        },
         "customized_tasks": {
             "docset_postbuild": [
                 "_dependentPackages/CommonPlugins/tools/TripleCrownValidation.ps1"
