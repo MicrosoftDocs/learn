@@ -1,8 +1,8 @@
 The last thing we want to try on our VM is to install a web server. One of the easiest packages to install is `nginx`.
 
-1. Locate the public IP address of your Linux virtual machine. Remember you can use the `vm list-ip-addresses` command for that.
+1. Locate the public IP address of your Linux virtual machine. Remember you can use the `vm list-ip-addresses` command to look it up.
 
-2. Next, open an `ssh` connection to the machine like you did when we tested it. Remember you will need to pass in the login name (**aldis**).
+2. Next, open an `ssh` connection to the machine like you did when we tested it. Remember you will need to pass in the admin name ("**aldis**").
 
 3. In the presented shell, execute the following command to install the `nginx` web server.
 
@@ -16,7 +16,7 @@ sudo apt-get -y update && sudo apt-get -y install nginx
 curl 168.61.54.62
 ```
 
-It will fail because by default the Linux virtual machine doesn't open port 80 which is used for `http`. Luckily, the Azure CLI has a command for that - `vm open-port`. 
+It will fail because the Linux virtual machine doesn't expose port 80 (`http`) through the built-in firewall. Luckily, the Azure CLI has a command for that: `vm open-port`. 
 
 5. Type the following into the Cloud Shell to open port 80:
 

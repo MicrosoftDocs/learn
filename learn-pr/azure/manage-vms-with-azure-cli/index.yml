@@ -11,7 +11,7 @@ levels:
 - beginner
 roles:
 - developer
-- admin
+- administrator
 products:
 - Azure
 title: Manage virtual machines with the Azure CLI tool

@@ -1,4 +1,6 @@
-Virtual machines need to be sized appropriately for the expected work load. A VM without the right about of memory or CPU will fail under load or perform too slowly to be effective. When you create a virtual machine, you can supply a _VM size_ which will determine the amount of compute resources that will be devoted to the VM. This includes CPU, GPU, and memory that are made available to the virtual machine from Azure.
+Virtual machines must be sized appropriately for the expected work. A VM without the correct amount of memory or CPU will fail under load, or run too slowly to be effective. 
+
+When you create a virtual machine, you can supply a _VM size_ value that will determine the amount of compute resources that will be devoted to the VM. This includes CPU, GPU, and memory that are made available to the virtual machine from Azure.
 
 Azure defines a set of [pre-defined VM sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes) for Linux and Windows to choose from based on the expected usage. 
 
@@ -7,11 +9,11 @@ Azure defines a set of [pre-defined VM sizes](https://docs.microsoft.com/en-us/a
 | General purpose   | Dsv3, Dv3, DSv2, Dv2, DS, D, Av2, A0-7 | Balanced CPU-to-memory. Ideal for dev / test and small to medium applications and data solutions. |
 | Compute optimized | Fs, F | High CPU-to-memory. Good for medium traffic applications, network appliances, and batch processes. |
 | Memory optimized  | Esv3, Ev3, M, GS, G, DSv2, DS, Dv2, D   | High memory-to-core. Great for relational databases, medium to large caches, and in-memory analytics. |
-| Storage optimized | Ls | High disk throughput and IO. Ideal for Big Data, SQL, and NoSQL databases. |
+| Storage optimized | Ls | High disk throughput and IO. Ideal for big data, SQL, and NoSQL databases. |
 | GPU optimized | NV, NC | Specialized VMs targeted for heavy graphic rendering and video editing. |
 | High performance | H, A8-11 | Our most powerful CPU VMs with optional high-throughput network interfaces (RDMA). | 
 
-The available sizes change based on the region you are creating the VM in - you can get a list of the available sizes using the `vm list-sizes` command:
+The available sizes change based on the region you're creating the VM in. You can get a list of the available sizes using the `vm list-sizes` command, try typing this into the Cloud Shell:
 
 ```azurecli
 az vm list-sizes --location eastus --output table
@@ -59,10 +61,12 @@ We can also resize an existing VM if the workload changes, or if it was incorrec
 az vm list-vm-resize-options --resource-group ExerciseResources --name SampleVM --output table
 ```
 
-This will return a list of all the possible size configurations available. If the necessary size is not available in our cluster, we can [deallocate the VM](https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az-vm-deallocate) - this will stop it and remove it from the current cluster. This will allow us to resize it which will automatically move it to a new cluster (assuming the size is available in your region). 
+This will return a list of all the possible size configurations available in the resource group. If the size we want isn't available in our cluster, but _is_ available in the region, we can [deallocate the VM](https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest#az-vm-deallocate). This command will stop the running VM and remove it from the current cluster without losing any resources. Then we can resize it which will re-create the VM in a new cluster where the size configuration is available.
 
-We can then use the `vm resize` command to resize our VM. For example, try reducing our VM resources to 2G of memory, 1 CPU core, and 4G of disk space with this command in the Cloud Shell:
+To resize a VM, we use the `vm resize` command. For example, let's reduce our current VM resources to the bare minimum: 2G of memory, 1 CPU core, and 4G of disk space. Type this command in the Cloud Shell:
 
 ```azurecli
 az vm resize --resource-group ExerciseResources --name SampleVM --size "Standard_B1ms"
 ```
+
+This command will take a few minutes to reduce the resources of the VM, and once it's done it will return a new JSON configuration.

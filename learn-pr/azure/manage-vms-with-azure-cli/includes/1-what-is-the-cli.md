@@ -1,6 +1,6 @@
 Jim manages a set of Azure Virtual Machines running our corporate web infrastructure that includes several websites and database servers running on various platforms. 
 
-While the Azure portal is easy to use, Jim has found that it slows him down having to navigate through the various blades to do tasks. While exploring alternatives, Jim ran across the Azure Command Line Interface (CLI) tool.
+While the Azure portal is easy to use, Jim has found that navigating through the various blades adds time to some of the tasks. While exploring alternatives, Jim ran across the Azure Command Line Interface (CLI) tool.
 
 Jim quickly realized that the CLI was exactly what he needed to save time with repetitive tasks. With the Azure CLI, Jim could use scripts to check the status of his servers, try a new configuration, open a port, or connect to a virtual machine to change a setting.
 
