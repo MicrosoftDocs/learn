@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-vms-with-azure-cli-data.3-create-a-resource-group
+title: Create a Resource Group
+metadata:
+  title: Create a Resource Group
+  description: Use the Azure CLI to create a new Resource Group
+interactive: cloudshell
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-create-a-resource-group.md)]
