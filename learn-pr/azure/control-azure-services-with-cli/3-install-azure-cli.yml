@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.control-azure-services-with-cli.3-install-azure-cli
-title: Introduction to the Azure CLI
-metadata:
-  title: Introduction to the Azure CLI
-  description: Introduction to the Azure CLI
-durationInMinutes: 12
-content: |
-  [!include[](includes/3-install-azure-cli.md)]

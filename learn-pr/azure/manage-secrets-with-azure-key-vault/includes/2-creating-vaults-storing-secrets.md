@@ -1,14 +1,12 @@
 ## Creating Key Vaults for your applications
 
-If you have multiple apps, don't combine all of their secrets into a single vault. It's a convenient way to share configuration, but the impact of an attacker that gains read access to a vault increases with the number of secrets in the vault.
+Good practice is to give each application a separate vault for each deployment environment you use, such as development, test and production. It may be convenient to share secrets across apps, but the chance of an attacker gaining read access to a vault increases with the number of secrets in the vault. If you use the same names for secrets across different environments, the only environment-specific configuration that has to change in your app is the vault URL.
 
-A good general guideline is to give each application a separate vault for each deployment environment you use, such as development, test and production. If you use the same names for secrets across different environments, the only environment-specific configuration that has to change in your app is the vault URL.
-
-Creating a vault requires no configuration up front. Your user identity is automatically granted the full set of secret management permissions so you can start adding secrets immediately. Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the portal, the Azure CLI and Azure PowerShell. When you set up your application to use the vault, you'll need to assign the correct permissions to it; we'll see that in the next unit.
+Creating a vault requires no initial configuration. Your user identity is automatically granted the full set of secret management permissions and you can start adding secrets immediately. Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the portal, the Azure CLI and Azure PowerShell. When you set up your application to use the vault, you'll need to assign the correct permissions to it; we'll see that in the next unit.
 
 ## Vault authentication and permissions
 
-Key Vault's API uses Azure Active Directory to authenticate users and applications. Vault access policies are based on *actions*, and are applied across an entire vault. For example, an application with **Get** (read secret values),  **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault is able to create secrets, list all secret names, and get and set all secret values in that vault.
+Key Vault's API uses Azure Active Directory to authenticate users and applications. Vault access policies are based on *actions*, and are applied across an entire vault. For example, an application with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault is able to create secrets, list all secret names, and get and set all secret values in that vault.
 
 *All* actions performed on a vault require authentication and authorization &mdash; there is no way to grant any kind of anonymous access.
 
@@ -23,11 +21,11 @@ For apps, typically only **Get** permissions are required. Some apps may require
 
 Given all the trouble the company's been having with application secrets, management has asked you to create a small starter app to set the other developers on the right path. The app needs to demonstrate best practices for managing secrets as simply and securely as possible.
 
-To start off, we're going to create a vault and store a secret in it.
+To start you'll to create a vault and store a one secret.
 
 ### Create a resource group
 
-First we'll create a resource group called `keyvault-exercise-group` for all of the resources in this exercise. At the end of this module, we'll be deleting this resource group to clean up everything at once. We'll use `eastus` as the location for everything in this exercise.
+Create a resource group called `keyvault-exercise-group` for all of the resources in this exercise. At the end of this module, we'll be deleting this resource group to clean up everything at once. We'll use `eastus` as the location for everything in this exercise.
 
 Use the Cloud Shell terminal on the right to run the following Azure CLI command. This will create the resource group in your subscription.
 
