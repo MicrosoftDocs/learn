@@ -1,4 +1,4 @@
-Now that you know how enabling MSI creates an identity for our app to use for authentication, we'll  create an app that uses that identity to access secrets in the vault.
+Now that you know how enabling MSI creates an identity for our app to use for authentication, we'll create an app that uses that identity to access secrets in the vault.
 
 ## Reading secrets in an ASP.NET Core app
 
