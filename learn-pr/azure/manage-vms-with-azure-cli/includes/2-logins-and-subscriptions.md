@@ -13,7 +13,7 @@ You can view a list of commands, subcommands, and parameters by typing in a part
 
 ## Log into Azure
 
-The first thing you'll do when working with the Azure CLI is to login to your Azure account. This is done with the `login` command. If you are using the Cloud Shell, there will be a button to sign in to Azure.
+The first thing you'll do when working with the Azure CLI is to login to your Azure account. This is done with the `login` command. If you're using the Cloud Shell, there will be a button to sign in to Azure.
 
 ```azurecli
 az login
@@ -23,7 +23,7 @@ This command will launch a browser window and allow you to select the Microsoft 
 
 ## Working with subscriptions
 
-In this module, we will work in a temporary subscription created as a playground, but you will normally execute commands in a subscription tied to your logged in account. If you have multiple subscriptions, you can get a clearly formatted list of subscriptions using the `az account list --output table` statement.
+In this module, we will work in a temporary subscription created as a playground, but you will normally use a subscription from your own account. If you have more than one subscription, you can get a clearly formatted list of subscriptions using the `az account list --output table` statement.
 
 ```
 Name                                  CloudName    SubscriptionId                        State    IsDefault
