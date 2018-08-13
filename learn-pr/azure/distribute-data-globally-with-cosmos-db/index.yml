@@ -21,6 +21,6 @@ units:
 - learn.distribute-data-globally-with-cosmos-db.3-knowledge-check-global-distribution
 - learn.distribute-data-globally-with-cosmos-db.4-change-priorities
 - learn.distribute-data-globally-with-cosmos-db.5-change-consistency
-- learn.creatdistribute-data-globally-with-cosmos-db.6-summary-cleanup
+- learn.distribute-data-globally-with-cosmos-db.6-summary-cleanup
 #TODO: Need achievement badge?
-achievement: learn.distribute-data-globally-with-cosmos-db.trophy
+achievement: learn.work-with-nosql-data-in-azure-cosmos-db.trophy
