@@ -4,7 +4,7 @@ metadata:
   title: Create an Azure Cosmos DB database built to scale
   description: Learn how to create an Azure Cosmos DB account, database, and collection built to scale as your application grows.
 title: Create an Azure Cosmos DB database built to scale
-summary: Learn how to build a scalable Azure Cosmos DB account, database, and collection. 
+summary: Learn how to build a scalable Azure Cosmos DB account, database, and collection.
 abstract: In this module, you will create an NoSQL database built to scale with Azure Cosmos DB. You will also learn to measure and set your database throughput and partitioning that are fundamental concepts in global database design. By learning about these concepts before you create your database and early in your development process, you'll ensure you're set for success later when you need to scale-up to meet your growing database needs.
 cardDescription: Learn how to create an Azure Cosmos DB account, database, and collection.
 #TODO: Need icon URL
@@ -25,4 +25,4 @@ units:
 - learn.create-cosmos-db-for-scale.7-create-a-database-and-collection
 - learn.create-cosmos-db-for-scale.8-summary-cleanup
 #TODO: Need achievement badge?
-achievement: learn.work-with-nosql-data-in-azure-cosmos-db.trophy
+achievement: learn.placeholder.badge
