@@ -135,7 +135,7 @@ They now deploy all their infrastructure through Resource Manager templates. The
 
 For most services using virtual machines, they have a standard base image, and use DSC to configure the systems post deployment. For web farms where they need the scalability of virtual machine scale sets, they have a fully automated process to check in code and build a new image with all required configuration built in before making it available in their scale sets.
 
-They have an Automation job to shut down identified virtual machines in off hours to reduce costs, and have automated their VM patching as well. 
+They have an Automation job to shut down identified virtual machines in off hours to reduce costs, and have automated their VM patching as well.
 
 Developers now have a self-service environment in DevTest Labs where they can develop against the latest images and configuration, ensuring that what they develop against matches the configuration in production.
 
