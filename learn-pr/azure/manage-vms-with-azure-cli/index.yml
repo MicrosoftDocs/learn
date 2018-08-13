@@ -1,0 +1,37 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.manage-vms-with-azure-cli
+metadata:
+  title: Manage virtual machines with the Azure CLI tool
+  description: Learn how to use the cross-platform Azure CLI to create, start, stop and perform other management tasks related to Virtual Machines in Azure.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels: 
+- beginner
+roles:
+- developer
+- administrator
+products:
+- Azure
+title: Manage virtual machines with the Azure CLI tool
+summary: Learn how to use the cross-platform Azure CLI to create, start, stop and perform other management tasks related to Virtual Machines in Azure.
+cardDescription: Learn how to use the cross-platform Azure CLI to create, start, stop and perform other management tasks related to Virtual Machines in Azure.
+abstract: |
+  * Create a virtual machine with the CLI
+  * Perform basic management tasks using the CLI
+  * Connect to a running VM with SSH and the CLI
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.manage-vms-with-azure-cli-data.1-what-is-the-cli
+- learn.manage-vms-with-azure-cli-data.2-logins-and-subscriptions
+- learn.manage-vms-with-azure-cli-data.3-create-a-resource-group
+- learn.manage-vms-with-azure-cli-data.4-create-a-vm
+- learn.manage-vms-with-azure-cli-data.5-testing-the-vm
+- learn.manage-vms-with-azure-cli-data.6-other-vm-images
+- learn.manage-vms-with-azure-cli-data.7-sizing-vms
+- learn.manage-vms-with-azure-cli-data.8-querying-vms
+- learn.manage-vms-with-azure-cli-data.9-managing-vms
+- learn.manage-vms-with-azure-cli-data.10-installing-software
+- learn.manage-vms-with-azure-cli-data.11-cleanup
+achievement: learn.manage-vms-with-azure-cli-data.badge
