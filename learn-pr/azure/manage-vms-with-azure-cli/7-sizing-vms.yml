@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-vms-with-azure-cli-data.7-sizing-vms
+title: Sizing VMs properly
+metadata:
+  title: Sizing VMs properly
+  description: Learn how to size the VM to the assigned workload
+interactive: cloudshell
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-sizing-vms.md)]

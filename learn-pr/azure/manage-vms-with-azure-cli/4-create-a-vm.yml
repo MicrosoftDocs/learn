@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-vms-with-azure-cli-data.4-create-a-vm
+title: Create a virtual machine
+metadata:
+  title: Create a virtual machine
+  description: Use the Azure CLI to create a new VM
+interactive: cloudshell
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-create-a-vm.md)]

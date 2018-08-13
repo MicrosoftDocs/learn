@@ -200,3 +200,13 @@ achievements:
   title: Secure your Azure resources with role-based access control (RBAC)
   summary: Secure your Azure resources with role-based access control (RBAC)
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.manage-vms-with-azure-cli-data.badge
+  type: badge
+  title: Manage virtual machines with the Azure CLI
+  summary: Manage virtual machines with the Azure CLI
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.deploy-a-website-to-azure-with-vm-hosting.trophy
+  type: trophy
+  title: Deploy a website to Azure with VM Hosting Trophy
+  summary: Trophy for the 'Deploy a website to Azure with VM Hosting' learning path.
+  iconUrl: http://via.placeholder.com/120x120
