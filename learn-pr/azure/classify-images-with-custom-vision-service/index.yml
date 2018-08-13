@@ -1,0 +1,41 @@
+### YamlMime:Tutorial
+title: Using the Microsoft Custom Vision Service to Perform Image Classification
+metadata:
+  title: Using the Microsoft Custom Vision Service to Perform Image Classification
+  description: In this lab, you will create a Custom Vision Service model, train it with images of famous paintings tagged with the artists' names, and utilize the model from a Node.js app to identify the artist of paintings that you upload.
+  audience: Developer
+  level: Beginner
+items:
+- durationInMinutes: 5
+  content: |
+    [!include[](includes/overview.md)]
+- title: Create a Custom Vision Service project
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/createproject.md)]
+- title: Upload tagged images
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/uploadimages.md)]
+- title: Train the model
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/trainmodel.md)]
+- title: Test the model
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/testmodel.md)]
+- title: Create a Node.js app that uses the model
+  durationInMinutes: 10
+  content: |
+    [!include[](includes/buildapp.md)]
+- title: Use the app to classify images
+  durationInMinutes: 10
+  content: |
+    [!include[](includes/classifyimages.md)]
+- title: Summary
+  durationInMinutes: 5
+  content: |
+    [!include[](includes/summary.md)]
+- content: |
+    Congratulations on using the Microsoft Custom Vision service to perform image classification.
