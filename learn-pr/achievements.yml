@@ -195,13 +195,11 @@ achievements:
   title: Manage secrets in your web apps with Azure Key Vault
   summary: Manage secrets in your web apps with Azure Key Vault
   iconUrl: /learn/modules/manage-secrets-with-azure-key-vault/achievement/manage-secrets-with-azure-key-vault.svg
-<<<<<<< HEAD
 - uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
   type: badge
   title: Sending location information over SMS from your phone using Azure Functions and Twilio badge
   summary: Badge for 'Sending location information over SMS from your phone using Azure Functions and Twilio' module
   iconUrl: http://via.placeholder.com/120x120
-=======
 - uid: learn.manage-vms-with-azure-cli-data.badge
   type: badge
   title: Manage virtual machines with the Azure CLI
@@ -212,4 +210,3 @@ achievements:
   title: Deploy a website to Azure with VM Hosting Trophy
   summary: Trophy for the 'Deploy a website to Azure with VM Hosting' learning path.
   iconUrl: http://via.placeholder.com/120x120
->>>>>>> cf93c8e9c90ece4f7be18cd202978292e7c3f79c
