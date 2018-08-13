@@ -5,8 +5,8 @@ Suppose you need to manage access to resources in Azure for the developer, engin
 In this unit, you learn:
 
 > [!div class="checklist"]
-> * How RBAC enables you to control access to Azure resources
 > * What RBAC looks like in the Azure portal
+> * How RBAC enables you to control access to Azure resources
 > * What a role is
 > * The three elements that make up a role assignment
 
@@ -33,7 +33,7 @@ The following shows an example of the Access control (IAM) blade for a resource 
 
 ## How does RBAC work?
 
-The way you control access to resources using RBAC is to create role assignments. This is a key concept to understand – it’s how permissions are enforced. To create a role assignment, you need three elements: security principal, role definition, and scope. You can think of these elements as who, what, and where.
+The way you control access to resources using RBAC is to create role assignments. This is a key concept to understand – it’s how permissions are enforced. To create a role assignment, you need three elements: a security principal, a role definition, and a scope. You can think of these elements as who, what, and where.
 
 ### 1. Security principal (who)
 
