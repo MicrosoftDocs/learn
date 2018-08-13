@@ -28,4 +28,4 @@ permitted by applicable law.
 aldis@SampleVM:~$
 ```
 
-Try a few just to play around, and when you are finished, go ahead and sign out (type `logout` or `exit` in the shell).
+Try a few commands as practice and when you are finished, sign out of your account (type `logout` or `exit` in the shell).
