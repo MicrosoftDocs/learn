@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-serverless-logic-with-functions.3-add-new-azure-function
+title: Add a new Azure Function to the Function App
+metadata:
+  title: Add a new Azure Function to the Function App
+  description: Add a new Azure Function to the Function App
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-add-new-azure-function.md)]

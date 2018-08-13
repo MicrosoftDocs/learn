@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-linux-vm-in-azure.4-connect-to-linux-vm
+title: Connect to a Linux virtual machine using remote desktop and Azure CLI
+metadata:
+  title: Connect to a Linux virtual machine using remote desktop and Azure CLI
+  description: Connect to a Linux virtual machine using remote desktop and Azure CLI
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-connect-to-linux-vm.md)]

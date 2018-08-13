@@ -1,0 +1,19 @@
+### YamlMime:LearningPath
+uid: learn.create-backend-services-in-azure
+title: Create backend services in Azure
+summary: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
+cardDescription: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
+iconUrl: http://via.placeholder.com/120x120
+prerequisites: None
+metadata:
+  title: Create backend services in Azure
+  description: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
+levels:
+ - beginner
+roles:
+ - developer
+products:
+ - Azure
+modules:
+- learn.create-serverless-logic-with-functions
+achievement: learn.create-backend-services-in-azure.trophy

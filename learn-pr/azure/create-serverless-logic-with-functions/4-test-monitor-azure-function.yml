@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-serverless-logic-with-functions.4-test-monitor-azure-function
+title: Test and monitor your Azure Function through the Azure portal
+metadata:
+  title: Test and monitor your Azure Function through the Azure portal
+  description: Test and monitor your Azure Function through the Azure portal
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-test-monitor-azure-function.md)]

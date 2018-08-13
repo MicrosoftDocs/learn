@@ -1,0 +1,197 @@
+### YamlMime:Achievements
+achievements:
+- uid: learn.sample-path.trophy
+  type: trophy
+  title: Sample Learning Path Trophy
+  summary: Trophy for the 'Sample Learning Path Trophy' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.placeholder.trophy
+  type: trophy
+  iconUrl: http://via.placeholder.com/120x120
+  title: Learning Path Placeholder Trophy
+  summary: Sample Learning Path Trophy Summary
+- uid: learn.placeholder.badge
+  type: badge
+  iconUrl: http://via.placeholder.com/120x120
+  title: Module Placeholder Badge
+  summary: Sample Learning Path Trophy Summary
+- uid: learn.sample-module-cloudshell.badge
+  type: badge
+  title: Sample Module with CloudShell Badge
+  summary: Badge for the 'Sample module with CloudShell' module.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.build-a-serverless-web-app.badge
+  type: badge
+  title: Build a serverless web app Badge
+  summary: Badge for the 'Build a serverless web app' module.
+  iconUrl: /learn/azure/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+- uid: learn.cd-pipeline-github-to-azure-web-app.badge
+  type: badge
+  title: Create a continuous deployment pipeline from GitHub to your Azure Web App Badge
+  summary: Create a continuous deployment pipeline from GitHub to your Azure Web App Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.connect-app-to-azure-storage.badge
+  type: badge
+  title: Connect an App to Azure storage Badge
+  summary: Connect an App to Azure storage Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-azure-storage-account.badge
+  type: badge
+  title: Create an Azure storage account Badge
+  summary: Create an Azure storage account Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-serverless-logic-with-functions.badge
+  type: badge
+  title: Create serverless logic with Azure functions Badge
+  summary: Create serverless logic with Azure functions Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.host-web-app-with-azure-web-apps.badge
+  type: badge
+  title: Host a web application with Azure Web Apps Badge
+  summary: Host a web application with Azure Web Apps Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.publish-azure-web-app-with-visual-studio.badge
+  type: badge
+  title: Publish an Azure Web App with Visual Studio for Windows or Mac Badge
+  summary: Publish an Azure Web App with Visual Studio for Windows or Mac Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.administer-containers-in-azure.trophy
+  type: trophy
+  title: Administer containers in Azure Trophy
+  summary: Trophy for the 'Administer containers in Azure' learning path
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.cloud-fundamentals.trophy
+  type: trophy
+  title: Cloud Fundamentals Trophy
+  summary: Trophy for the 'Cloud Fundamentals' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.azure-architecture-foundations.trophy
+  type: trophy
+  title: Azure architecture foundations Trophy
+  summary: Trophy for the 'Azure architecture foundations' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.architect-great-solutions-in-azure.trophy
+  type: trophy
+  title: Architect great solutions in Azure Trophy
+  summary: Trophy for the 'Architect great solutions in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-backend-services-in-azure.trophy
+  type: trophy
+  title: Create backend services in Azure Trophy
+  summary: Trophy for the 'Create backend services in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.prepare-to-use-azure.trophy
+  type: trophy
+  title: Prepare to use Azure Trophy
+  summary: Trophy for the 'Prepare to use Azure' learning path
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.deploy-a-website-to-azure-with-managed-hosting.trophy
+  type: trophy
+  title: Deploy a website to Azure with Managed Hosting Trophy
+  summary: Trophy for the 'Deploy a website to Azure with Managed Hosting' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.work-with-nosql-data-in-azure-cosmos-db.trophy
+  type: trophy
+  title: Working with NoSQL data in Azure Cosmos DB Trophy
+  summary: Trophy for 'Working with NoSQL data in Azure Cosmos DB' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.work-with-relational-data-in-azure.trophy
+  type: trophy
+  title: Work with relational data in Azure Trophy
+  summary: Trophy for the 'Working with relational data in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.secure-your-web-data-in-azure.trophy
+  type: trophy
+  title: Secure your web data in Azure Trophy
+  summary: Trophy for the 'Secure your web data in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.store-data-in-azure.trophy
+  type: trophy
+  title: Store data in Azure Trophy
+  summary: Trophy for the 'Store data in Azure' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.automate-azure-tasks-with-powershell.badge
+  type: badge
+  title: Automate Azure tasks using scripts with PowerShell Badge
+  summary: Automate Azure tasks using scripts with PowerShell Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-azure-db-for-postgresql.badge
+  type: badge
+  title: Create a PostgreSQL DB server via the Azure CLI Badge
+  summary: Create a PostgreSQL DB server via the Azure CLI Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-linux-vm-in-azure.badge
+  type: badge
+  title: Create a Linux virtual machine in Azure Badge
+  summary: Create a Linux virtual machine in Azure Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.choose-messaging-model.badge
+  type: badge
+  title: Choose messaging model Badge
+  summary: Choose messaging model Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.prepare-azure-dev-environment.badge
+  type: badge
+  title: Prepare Azure development environment Badge
+  summary: Prepare Azure development environment Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.manage-resources-with-azure-portal.badge
+  type: badge
+  title: Manage resources with Azure portal Badge
+  summary: Manage resources with Azure portal Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.explore-azure-services-for-web-devs.badge
+  type: badge
+  title: Explore Azure services for web developers Badge
+  summary: Explore Azure services for web developers Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.control-azure-services-with-cli.badge
+  type: badge
+  title: Control Azure services with the CLI Badge
+  summary: Control Azure services with the CLI Badge Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.explore-azure-services-features.badge
+  type: badge
+  title: Explore Azure services and features Badge
+  summary: Explore Azure services and features Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.migrate-sql-server-relational-data.badge
+  type: badge
+  title: Migrate SQL serer relational data to Azure SQL
+  summary: Migrate SQL serer relational data to Azure SQL
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.communicate-between-apps-with-storage-queues.badge
+  type: badge
+  title: Communicate between applications with an Azure storage queue Badge
+  summary: Communicate between applications with an Azure storage queue Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.create-a-windows-vm-in-azure.badge
+  type: badge
+  title: Create a Windows virtual machine in Azure Badge
+  summary: Create a Windows virtual machine in Azure Summary
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.choose-web-hosting.badge
+  type: badge
+  title: Choose a Web Hosting Option in Azure
+  summary: Choose a Web Hosting Option in Azure
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.interactive-iot-deployments.badge
+  type: badge
+  title: Working with interactive IoT deployments in Azure
+  summary: Working with interactive IoT deployments in Azure
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.iot-for-ops.badge
+  type: badge
+  title: IoT Suite for ops
+  summary: IoT Suite for ops
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.web-app-with-mean-on-linux-vm.badge
+  type: badge
+  title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+  summary: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.optimize-web-app-with-redis.badge
+  type: badge
+  title: Optimize your web applications by caching read-only data with Redis
+  summary: Optimize your web applications by caching read-only data with Redis
+  iconUrl: http://via.placeholder.com/120x120

@@ -1,0 +1,27 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.cd-pipeline-github-to-azure-web-app
+metadata:
+  title: Create a continuous deployment pipeline from GitHub to your Azure Web App
+  description: In this module, we'll discuss how to continuously deploy a web app to Azure from source code hosted in GitHub. We'll use Deployment Center to link a GitHub repo and a web app and create a customizable build and release process that automatically deploys changes.
+title: Create a continuous deployment pipeline from GitHub to your Azure Web App
+summary: In this module, we'll discuss how to continuously deploy a web app to Azure from source code hosted in GitHub. We'll use Deployment Center to link a GitHub repo and a web app and create a customizable build and release process that automatically deploys changes.
+abstract: In this module, we'll discuss how to continuously deploy a web app to Azure from source code hosted in GitHub. We'll use Deployment Center to link a GitHub repo and a web app and create a customizable build and release process that automatically deploys changes.
+cardDescription: In this module, we'll discuss how to continuously deploy a web app to Azure from source code hosted in GitHub. We'll use Deployment Center to link a GitHub repo and a web app and create a customizable build and release process that automatically deploys changes.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.cd-pipeline-github-to-azure-web-app.1-motivation
+- learn.cd-pipeline-github-to-azure-web-app.2-components-of-continuous-deployment
+- learn.cd-pipeline-github-to-azure-web-app.3-create-continuous-deployment-pipeline
+- learn.cd-pipeline-github-to-azure-web-app.4-make-a-change
+- learn.cd-pipeline-github-to-azure-web-app.5-knokwledge-check
+achievement: learn.cd-pipeline-github-to-azure-web-app.badge

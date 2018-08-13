@@ -1,0 +1,29 @@
+### YamlMime:Module
+uid: learn.host-web-app-with-azure-web-apps
+metadata:
+  title: Host a web application with Azure Web Apps
+  description: In this module, we'll discuss how to create a website through the hosted web app platform in Azure. We’ll look at the supported platforms, examine configuration and the basics of getting your code up into Azure.
+title: Host a web application with Azure Web Apps
+summary: In this module, we'll discuss how to create a website through the hosted web app platform in Azure. We’ll look at the supported platforms, examine configuration and the basics of getting your code up into Azure.
+abstract: In this module, we'll discuss how to create a website through the hosted web app platform in Azure. We’ll look at the supported platforms, examine configuration and the basics of getting your code up into Azure.
+cardDescription: In this module, we'll discuss how to create a website through the hosted web app platform in Azure. We’ll look at the supported platforms, examine configuration and the basics of getting your code up into Azure.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.host-web-app-with-azure-web-apps.1-motivation
+- learn.host-web-app-with-azure-web-apps.2-create-web-app-in-azure-portal
+- learn.host-web-app-with-azure-web-apps.3-exercise
+- learn.host-web-app-with-azure-web-apps.4-create-asp-net-core-web-app-in-linux
+- learn.host-web-app-with-azure-web-apps.5-exercise
+- learn.host-web-app-with-azure-web-apps.6-upload-code-to-azure
+- learn.host-web-app-with-azure-web-apps.7-exercise
+- learn.host-web-app-with-azure-web-apps.8-summary
+achievement: learn.host-web-app-with-azure-web-apps.badge

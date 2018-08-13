@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.design-for-availability-and-recoverability.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-summary.md)]

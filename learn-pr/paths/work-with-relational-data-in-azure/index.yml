@@ -1,0 +1,19 @@
+### YamlMime:LearningPath
+uid: learn.work-with-relational-data-in-azure
+title: Work with relational data in Azure
+summary: Azure supports several popular SQL-based database solutions including SQL Server, PostgreSQL, and MySQL. Learn how to use these enterprise data solutions in Azure to store and retrieve your app's data in the cloud.
+cardDescription: Azure supports several popular SQL-based database solutions including SQL Server, PostgreSQL, and MySQL. Learn how to use these enterprise data solutions in Azure to store and retrieve your app's data in the cloud.
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- intermediate
+roles:
+- developer
+products:
+- Azure
+prerequisites: None
+metadata:
+  title: Work with relational data in Azure
+  description: Azure supports several popular SQL-based database solutions including SQL Server, PostgreSQL, and MySQL. Learn how to use these enterprise data solutions in Azure to store and retrieve your app's data in the cloud.
+modules:
+- learn.migrate-sql-server-relational-data
+achievement: learn.work-with-relational-data-in-azure.trophy

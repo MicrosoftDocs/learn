@@ -1,0 +1,20 @@
+### YamlMime:LearningPath
+uid: learn.store-data-in-azure
+title: Store data in Azure
+summary: Azure has a variety of data storage models available for any sort of data you want or need to store in the cloud. Learn which approach is best suited for your data, and the requirements to use these different storage capabilities.
+cardDescription: Azure has a variety of data storage models available for any sort of data you want or need to store in the cloud. Learn which approach is best suited for your data, and the requirements to use these different storage capabilities.
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+prerequisites: None
+metadata:
+  title: Store data in Azure
+  description: Azure has a variety of data storage models available for any sort of data you want or need to store in the cloud. Learn which approach is best suited for your data, and the requirements to use these different storage capabilities.
+modules:
+- learn.connect-app-to-azure-storage
+- learn.create-azure-storage-account
+achievement: learn.store-data-in-azure.trophy
