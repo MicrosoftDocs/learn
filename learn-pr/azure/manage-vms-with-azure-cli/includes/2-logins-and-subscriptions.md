@@ -1,4 +1,4 @@
-Before we get started, lets remind ourselves about the syntax for the Azure CLI tool. If you've gone through the **Control Azure services with the Azure CLI** module, then you know that Azure CLI commands take the form of:
+Before we start, lets review the syntax for the Azure CLI tool. If you've taken the **Control Azure services with the Azure CLI** module, then you know that Azure CLI commands take the form of:
 
 ```azurecli
 az [command] [subcommand] [--parameter --parameter]
@@ -6,7 +6,7 @@ az [command] [subcommand] [--parameter --parameter]
 
 The `[command]` identifies the specific area of Azure you want to control. For example, you can manage subscription information with the `account` command, or SQL databases with the `sql` command. The `[subcommand]` and `[--parameters]` are then dependent upon the command you're working with. 
 
-You can always get a list of commands, subcommands, and parameters by typing in a partial command. For example typing `az` at the command line will give you the top-level help screen, and typing `az vm` will give you all the subcommands for virtual machines. This approach can be a great way to explore the tool on your own.
+You can view a list of commands, subcommands, and parameters by typing in a partial command. For example typing `az` at the command line will give you the top-level help screen, and typing `az vm` will give you all the subcommands for virtual machines. This approach can be a great way to explore the CLI tool.
 
 > [!NOTE]
 > We will be using the browser-hosted Cloud Shell to work with the Azure CLI. If you prefer to work from your local machine, all of the commands we cover can also be executed from the command line by [installing the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest).
@@ -23,7 +23,7 @@ This command will launch a browser window and allow you to select the Microsoft 
 
 ## Working with subscriptions
 
-In this module, we will be working in a temporary subscription created as a playground, but you will normally execute commands in a subscription tied to your logged in account. If you have multiple subscriptions, you can get a nicely formatted list of them using the `az account list --output table` statement.
+In this module, we will work in a temporary subscription created as a playground, but you will normally execute commands in a subscription tied to your logged in account. If you have multiple subscriptions, you can get a clearly formatted list of subscriptions using the `az account list --output table` statement.
 
 ```
 Name                                  CloudName    SubscriptionId                        State    IsDefault

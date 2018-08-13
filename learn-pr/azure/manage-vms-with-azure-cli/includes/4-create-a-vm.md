@@ -28,7 +28,7 @@ In addition, it's helpful to add the `--verbose` flag to see progress while the 
 
 ## Create a Linux virtual machine
 
-Let's start by creating a new Linux virtual machine. Execute the following command in the Cloud Shell.
+Let's create a new Linux virtual machine. Execute the following command in the Cloud Shell:
 
 ```azurecli
 az vm create --resource-group ExerciseResources --name SampleVM --image Debian --admin-username aldis --generate-ssh-keys --verbose 
