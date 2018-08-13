@@ -1,0 +1,11 @@
+### YamlMime:ModuleUnit
+# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
+uid: learn.distribute-data-globally-with-cosmos-db.5-change-consistency
+metadata:
+  title: Change the consistency policy
+  description: Learn how to modify the consistency policy for your database.
+  displayType: one-column
+title: Change the consistency policy
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-change-consistency.md)]

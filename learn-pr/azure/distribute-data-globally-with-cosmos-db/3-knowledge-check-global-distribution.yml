@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.distribute-data-globally-with-cosmos-db.3-knowledge-check-global-distribution
+metadata:
+  title: Knowledge check -global distribution
+  description: Knowledge check - global distribution
+  displayType: one-column
+  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
+title: Knowledge check - how does indexing work
+durationInMinutes: 2
+content: Knowledge check - how does indexing work
+quiz:
+  title: Knowledge check - how does indexing work
+  questions:
+  - content: 'TODO - new questions needed?'
+    choices:
+    - content: 400 RU/s
+      isCorrect: false
+      incorrectExplanation: 400 RU/s is the minimum throughput you can set for an Azure Cosmos DB; however databases created with an original throughput of 400 RU/s will not autoscale. 
+    - content: 1000 RU/s
+      isCorrect: true
+      correctExplanation: Correct! Setting throughput to 1000 RU/s is the minimum value to enable autoscaling of your database.
+    - content: 1400 RU/s
+      isCorrect: false
+      incorrectExplanation: Setting throughput to 1400 RU/s would enable your database to autoscale, however it's not the minimum value you could set to enable autoscaling.
+    - content: '250,000 RU/s'
+      isCorrect: false
+      incorrectExplanation: Setting throughput to 1400 RU/s would enable your database to autoscale, however it's not the minimum value you could set to enable autoscaling.
+  - content: 'If you plan on writing a 4KB document to an Azure Cosmos DB database 100 times per second, and reading the a 4KB document 500 times per second, how many request units should you provision to ensure your account is not rate-limited?'
+    choices:
+    - content: 400 RU/s
+      isCorrect: false
+      incorrectExplanation: Sorry, you'd be rate limited if you only provisioned 400 RU/s for this scenario. Take a look at the table and look for a 4 KB document that requires 500 reads per second, and 100 writes per second.
+    - content: 1000 RU/s
+      isCorrect: true
+      incorrectExplanation: Sorry, you'd be rate limited if you only provisioned 1000 RU/s for this scenario. Take a look at the table and look for a 4 KB document that requires 500 reads per second, and 100 writes per second.
+      isCorrect: true
+    - content: 1300 RU/s
+      isCorrect: false
+      incorrectExplanation: Sorry, you'd be rate limited if you only provisioned 1300 RU/s for this scenario. Take a look at the table and look for a 4 KB document that requires 500 reads per second, and 100 writes per second.
+    - content: 1400 RU/s
+      isCorrect: false
+      correctExplanation: Correct! The table indicates that you'd need a minimum of 1350 RU/s to support this scenario. To ensure you aren't rate limited you should provision 1400 RU/s, as you need more than 1350 RU/s and request units are provisioned in units of 100 (so 1300, 1400, 1500, etc).

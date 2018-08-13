@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.distribute-data-globally-with-cosmos-db.7-summary-cleanup
+metadata:
+  title: Summary and cleanup
+  description: Summary and cleanup
+  displayType: one-column
+title: Summary and cleanup
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary-cleanup.md)]
