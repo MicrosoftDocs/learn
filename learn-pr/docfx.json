@@ -33,16 +33,6 @@
     ],
     "resource": [
       {
-        "src": "azure",
-        "files": [
-          "**/*.png",
-          "**/*.svg",
-          "**/*.jpg",
-          "**/*.jpeg"
-        ],
-        "dest": "modules"
-      },
-      {
         "files": [
           "**/*.png",
           "**/*.svg",
