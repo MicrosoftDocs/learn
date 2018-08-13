@@ -23,7 +23,7 @@ products:
 - Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-#- learn.design-a-great-azure-architecture.1-introduction
+- learn.design-a-great-azure-architecture.1-introduction
 - learn.design-a-great-azure-architecture.2-principles-of-a-great-azure-architecture
 - learn.design-a-great-azure-architecture.3-design-for-security
 - learn.design-a-great-azure-architecture.4-design-for-performance-and-scalability

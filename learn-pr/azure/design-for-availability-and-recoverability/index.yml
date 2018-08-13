@@ -24,7 +24,7 @@ products:
 - Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-#- learn.design-for-availability-and-recoverability.1-introduction
+- learn.design-for-availability-and-recoverability.1-introduction
 - learn.design-for-availability-and-recoverability.2-high-availability
 - learn.design-for-availability-and-recoverability.3-disaster-recovery
 - learn.design-for-availability-and-recoverability.4-backup-and-restore

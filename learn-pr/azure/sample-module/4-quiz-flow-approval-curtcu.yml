@@ -1,48 +1,48 @@
-### YamlMime:ModuleUnit 
-uid: learn-bizapps.flow-create-approval.4-quiz-flow-approval.curtcu
-title: Create a flow for approval quiz 
-metadata: 
-# Search engine metadata 
-  title: Create an approval flow quiz 
-  description: This quiz will test your knowledge of how to create an approval flow. 
-durationInMinutes: 12 
-content: This is a quiz for testing your knowledge of how to create an approval flow. 
-quiz: 
-  title: Create an approval flow quiz 
-  questions: 
-  - content: Where can you start an approval flow? 
-    choices:  
-    - content: From the Microsoft Flow web site.  
-      correctExplanation: Approval flows always start at the Flow web site. 
-      isCorrect: true 
-    - content: From Twitter 
-      incorrectExplanation: Flows cannot be started from social media sites like Twitter. They are typically started from the Microsoft Flow website or from the Microsoft Flow mobile app. 
-      isCorrect: false 
-    - content: In SharePoint 
-      incorrectExplanation: SharePoint can be involved in a flow process, but it is not where a flow is created. 
-      isCorrect: false 
-    - content: In PowerApps Studio 
-      incorrectExplanation: PowerApps Studio is where you design PowerApps apps, not where you create a flow. 
-      isCorrect: false 
-  - content: Which of the following is true about connectors used in flows? 
-    choices: 
-    - content: Connectors allow you to start a flow. 
-      incorrectExplanation: Flows are started on the Flow web site. Typically, connectors are used after a flow is created. 
-      isCorrect: false 
-    - content: Twitter is a type of connector. 
-      correctExplanation: Twitter is one of many connectors that can be used in flows. 
-      isCorrect: true 
-    - content: Connectors have actions and procedures. 
-      incorrectExplanation: Conectors have actions and triggers. 
-      isCorrect: false 
-  - content: Who can create flows? 
-    choices: 
-    - content: Only an admin can start a flow. 
-      incorrectExplanation: Anyone can create a flow. Sometimes an admin needs to manage flows. 
-      isCorrect: false 
-    - content: Only someone with the Microsoft Flow mobile app can create a flow. 
-      isCorrect: false 
-      incorrectExplanation: Flows can be created from both the Flow web site and from the mobile app. 
-    - content: Anyone can create a flow. 
-      correctExplanation: Anyone with the correct credentials can create a flow. 
+### YamlMime:ModuleUnit
+uid: learn.flow-create-approval.4-quiz-flow-approval.curtcu
+title: Create a flow for approval quiz
+metadata:
+# Search engine metadata
+  title: Create an approval flow quiz
+  description: This quiz will test your knowledge of how to create an approval flow.
+durationInMinutes: 12
+content: This is a quiz for testing your knowledge of how to create an approval flow.
+quiz:
+  title: Create an approval flow quiz
+  questions:
+  - content: Where can you start an approval flow?
+    choices:
+    - content: From the Microsoft Flow web site.
+      correctExplanation: Approval flows always start at the Flow web site.
+      isCorrect: true
+    - content: From Twitter
+      incorrectExplanation: Flows cannot be started from social media sites like Twitter. They are typically started from the Microsoft Flow website or from the Microsoft Flow mobile app.
+      isCorrect: false
+    - content: In SharePoint
+      incorrectExplanation: SharePoint can be involved in a flow process, but it is not where a flow is created.
+      isCorrect: false
+    - content: In PowerApps Studio
+      incorrectExplanation: PowerApps Studio is where you design PowerApps apps, not where you create a flow.
+      isCorrect: false
+  - content: Which of the following is true about connectors used in flows?
+    choices:
+    - content: Connectors allow you to start a flow.
+      incorrectExplanation: Flows are started on the Flow web site. Typically, connectors are used after a flow is created.
+      isCorrect: false
+    - content: Twitter is a type of connector.
+      correctExplanation: Twitter is one of many connectors that can be used in flows.
+      isCorrect: true
+    - content: Connectors have actions and procedures.
+      incorrectExplanation: Conectors have actions and triggers.
+      isCorrect: false
+  - content: Who can create flows?
+    choices:
+    - content: Only an admin can start a flow.
+      incorrectExplanation: Anyone can create a flow. Sometimes an admin needs to manage flows.
+      isCorrect: false
+    - content: Only someone with the Microsoft Flow mobile app can create a flow.
+      isCorrect: false
+      incorrectExplanation: Flows can be created from both the Flow web site and from the mobile app.
+    - content: Anyone can create a flow.
+      correctExplanation: Anyone with the correct credentials can create a flow.
       isCorrect: true

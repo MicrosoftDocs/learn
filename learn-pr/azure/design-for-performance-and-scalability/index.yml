@@ -24,7 +24,7 @@ products:
 - Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-#- learn.design-for-performance-and-scalability.1-introduction
+- learn.design-for-performance-and-scalability.1-introduction
 - learn.design-for-performance-and-scalability.2-scaling-up-and-scaling-out
 - learn.design-for-performance-and-scalability.3-optimize-network-performance
 - learn.design-for-performance-and-scalability.4-optimize-storage-performance

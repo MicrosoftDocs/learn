@@ -25,7 +25,7 @@ products:
 - Azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
-#- learn.control-costs-on-azure.1-introduction
+- learn.control-costs-on-azure.1-introduction
 - learn.control-costs-on-azure.2-estimate-costs-with-the-azure-pricing-calculator
 - learn.control-costs-on-azure.3-predict-and-optimize-with-cost-management-and-advisor
 - learn.control-costs-on-azure.4-save-on-infrastructure-costs
