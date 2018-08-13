@@ -28,14 +28,14 @@ If you are working on a Linux-based system, the Docker server components and CLI
 
 To validate that Docker has been successfully installed and configured, open a terminal and run the following command.
 
-```
+```console
 docker search nginx
 ```
 
 If you see output similar to the following, your environment is read for the next unit.
 
-```
-AME                                                   DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+```console
+NAME                                                   DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
 nginx                                                  Official build of Nginx.                        9034                [OK]
 jwilder/nginx-proxy                                    Automated Nginx reverse proxy for docker con…   1362                                    [OK]
 richarvey/nginx-php-fpm                                Container running Nginx + PHP-FPM capable of…   589                                     [OK]

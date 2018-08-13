@@ -4,12 +4,12 @@ Now that you have a functioning container development environment, lets take a q
 
 Before digging into the details of running and managing containers, lets quickly see just how easy it is to run a hello world container. Create your first container with the following command.
 
-```bash
+```console
 docker run alpine echo "Hello World"
 ```
 You should see output similar to the following.
 
-```
+```console
 Unable to find image 'alpine:latest' locally
 latest: Pulling from library/alpine
 8e3ba11ec2a2: Pull complete
@@ -30,26 +30,26 @@ Lets see how to search for and download a pre-created container image.
 
 Run the following command to see a list of images that have been downloaded to your system.
 
-```bash
+```console
 docker images
 ```
 
 If you have been following along, you should see that alpine image. This image was auto-downloaed when the hello world example was run.
 
-```bash
+```console
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 alpine              latest              11cd0b38bc3c        2 weeks ago         4.41MB
 ```
 
 To search for a container image, use the `docker search` command. For instance, use the following example to list all container images that include `nginx` in the name.
 
-```bash
+```console
 docker search nginx
 ```
 
 The output should look similar to the following.
 
-```
+```console
 NAME                                                   DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
 nginx                                                  Official build of Nginx.                        9071                [OK]
 jwilder/nginx-proxy                                    Automated Nginx reverse proxy for docker con…   1365                                    [OK]
@@ -80,13 +80,13 @@ mailu/nginx                                            Mailu nginx frontend     
 
 If you would like to pre-download an image prior to running it, use the `docker pull` command. The following example pulls the `nginx` image to your system.
 
-```bash
+```console
 docker pull nginx
 ```
 
 The output should look similar to the following.
 
-```
+```console
 Using default tag: latest
 latest: Pulling from library/nginx
 be8881be8156: Pull complete
@@ -96,13 +96,13 @@ f2f27ed9664f: Extracting [===============>                                   ]  
 
 Run `docker images` again to list all images on your system. You should see now see that the `nginx` image has been added to your system.
 
-```bash
+```console
 docker images
 ```
 
 The output should look similar to the following.
 
-```
+```console
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 nginx               latest              c82521676580        26 hours ago        109MB
 alpine              latest              11cd0b38bc3c        2 weeks ago         4.41MB
@@ -116,25 +116,25 @@ In the following example, the `-d` argument specifies that the container will in
 
 For a complete list of docker run arguments, see the [docker run reference](https://docs.docker.com/engine/reference/run/).
 
-```bash
+```console
 docker run -d -p 8080:80 nginx
 ```
 
 This operation returns the fill container ID.
 
-```bash
+```console
 bd2424bfe7a5423d7d65efdf0b1622770d59e212db7b82862c3129fb630b5721
 ```
 
 List the running containers on your system using the `dokcer ps` command.
 
-```bash
+```console
 docker ps
 ```
 
 You should see a single running container, which is the NGINX container that was run in the last step. Notice that the container has both an ID and a Name. Either one of these values can be used to manage the container. Take note of the container ID, this value will be used later in the unit.
 
-```bash
+```console
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
 bd2424bfe7a5        nginx               "nginx -g 'daemon of…"   37 minutes ago      Up 37 minutes       0.0.0.0:8080->80/tcp   gallant_engelbart
 ```
@@ -147,56 +147,56 @@ To test the container, open up an internet browser and enter http://localhost:80
 
 When you are done working with a container, it can be delete by providing the container name or ID to the `docker rm` command. Try this out with the container ID of the container running NGINX.
 
-```bash
+```console
 docker rm bd2424bfe7a5
 ```
 
 Notice that the container cannot be removed because it is in a running state. Replace the ID in this example with the ID from your environment.
 
-```bash
+```console
 Error response from daemon: You cannot remove a running container a31c5a5f2a8d6e420435bfcadbe158fa6a26ed29c005a892171505cc0c2861b2. Stop the container before attempting removal or force remove
 ```
 
 Stop the container with the `docker stop` command.
 
-```bash
+```console
 docker stop <container name or id>
 ```
 
 Notice at this point, if you run `docker ps` to list all containers, that the nginx container is not listed.
 
-```bash
+```console
 docker ps
 ```
 
 The output should look similar to the following.
 
-```bash
+```console
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 
 To return a list of all containers including those is a stopped state, add the `-a` argument to `docker ps`.
 
-```bash
-$ docker ps -a
+```console
+docker ps -a
 ```
 
 The output should look similar to the following.
 
-```bash
+```console
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
 bd2424bfe7a5        nginx               "nginx -g 'daemon of…"   13 seconds ago      Exited (0) 3 seconds ago                       focused_spence
 ```
 
 Now try the delete operation once again. Replace the ID in this example with the ID from your environment.
 
-```bash
-$ docker rm bd2424bfe7a5
+```console
+docker rm bd2424bfe7a5
 ```
 
 This operation returns the container ID.
 
-```bash
+```console
 bd2424bfe7a5
 ```
 
@@ -206,13 +206,13 @@ When you are done working with a container image, it can be remove with the `doc
 
 Remove the NGINX container image with the following command.
 
-```bash
+```console
 docker rmi nginx
 ```
 
 The output should look similar to the following.
 
-```bash
+```console
 Untagged: nginx:latest
 Untagged: nginx@sha256:4a5573037f358b6cdfa2f3e8a9c33a5cf11bcd1675ca72ca76fbe5bd77d0d682
 Deleted: sha256:8b89e48b5f157d9455c963b57c85d21e2337c58b8c983bc06f88476610adc129
