@@ -11,7 +11,7 @@ title: Sample Unit 2 - Text and Knowledge Check
 durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
 content: |
-  [!include[](includes/knowledge-check/knowledge-check.md)]
+  [!include[](includes/5-knowledge-check/knowledge-check.md)]
 quiz:
   title: 'Quiz title'
   questions:
