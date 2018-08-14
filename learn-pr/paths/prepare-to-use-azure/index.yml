@@ -18,7 +18,7 @@ modules:
 - learn.automate-azure-tasks-with-powershell
 - learn.explore-azure-services-for-web-devs
 - learn.control-azure-services-with-cli
-#- learn.manage-resources-with-azure-poratl
+#- learn.manage-resources-with-azure-portal
 - learn.prepare-azure-dev-environment
 #- learn.principles-cloud-computing
 achievement: learn.prepare-to-use-azure.trophy

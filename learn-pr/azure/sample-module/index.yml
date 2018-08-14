@@ -32,5 +32,5 @@ units:
 - learn.sample-module-cloudshell.3-unit-knowledge-check-only
 - learn.sample-module-cloudshell.4-unit-cloudshell-lab
 - learn.flow-create-approval.4-quiz-flow-approval.curtcu
-achievement: learn.sample-module-cloudshell.badge
+achievement: learn.placeholder.badge
 # `achievement` is the `uid` for the badge
