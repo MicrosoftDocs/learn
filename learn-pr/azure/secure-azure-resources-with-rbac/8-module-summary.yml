@@ -10,7 +10,7 @@ metadata:
   # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: Module Summary
 # `title` appears in the header, ToC, and breadcrumbs
-durationInMinutes: 11
+durationInMinutes: 1
 # `durationInMinutes` is manually created by the writer
 # Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
 content: |
