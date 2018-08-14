@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.build-azure-bot-services-bot.4-debug-bot-locally
+title: Debug the bot locally
+metadata:
+  title: Debug the bot locally
+  description: Debug the bot locally
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-debug-bot-locally.md)

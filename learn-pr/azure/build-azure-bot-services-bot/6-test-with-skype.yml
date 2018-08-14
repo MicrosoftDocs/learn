@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.build-azure-bot-services-bot.6-test-with-skype
+title: Test the bot with Skype
+metadata:
+  title: Test the bot with Skype
+  description: Test the bot with Skype
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-test-with-skype.md)

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-neural-network-with-dsvm.1-create-dsvm
+title: Create an Ubuntu Data Science VM
+metadata:
+  title: Create an Ubuntu Data Science VM
+  description: Create an Ubuntu Data Science VM
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-create-dsvm.md)]

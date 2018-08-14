@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.5-navigate-the-portal
+title: Navigate the portal
+metadata:
+  title: Navigate the portal
+  description: Navigate the portal
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-navigate-the-portal.md)]

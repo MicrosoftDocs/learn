@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.7-choose-azure-event-hubs
+title: Choose Azure Event Hubs
+metadata:
+  title: Choose Azure Event Hubs
+  description: Choose Azure Event Hubs
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-choose-azure-event-hubs.md)]

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.4-exercise-create-an-azure-account
+title: "Exercise - Create an Azure account"
+metadata:
+  title: "Exercise - Create an Azure account"
+  description: "Exercise - Create an Azure account"
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-create-an-azure-account.md)]
