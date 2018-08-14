@@ -22,5 +22,4 @@ modules:
 - learn.prepare-azure-dev-environment
 #- learn.principles-cloud-computing
 - learn.manage-resources-with-azure-portal
-- learn.prepare-azure-dev-environment
 achievement: learn.prepare-to-use-azure.trophy
