@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.5-exercise-create-a-storage-queue
+title: "Exercise - Create a storage queue"
+metadata:
+  title: "Exercise - Create a storage queue"
+  description: "Exercise - Create a storage queue"
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-a-storage-queue.md)]
