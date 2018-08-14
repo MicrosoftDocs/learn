@@ -1,0 +1,27 @@
+### YamlMime:Module
+uid: learn.build-azure-bot-services-bot
+metadata:
+  title: Building a Chat Bot with the Azure Bot Service
+  description: In this module, you will create a bot using the Azure Bot Service and connect it to a knowledge base built with QnA Maker. Then you will interact with the bot using Skype.
+title: Building a Chat Bot with the Azure Bot Service
+summary: In this module, you will create a bot using the Azure Bot Service and connect it to a knowledge base built with QnA Maker. Then you will interact with the bot using Skype.
+abstract: In this module, you will create a bot using the Azure Bot Service and connect it to a knowledge base built with QnA Maker. Then you will interact with the bot using Skype.
+cardDescription: In this module, you will create a bot using the Azure Bot Service and connect it to a knowledge base built with QnA Maker. Then you will interact with the bot using Skype.
+# this is a placeholder and needs to be updated
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+units:
+- learn.build-azure-bot-services-bot.1-create-web-app-bot
+- learn.build-azure-bot-services-bot.2-create-qna-maker
+- learn.build-azure-bot-services-bot.3-deploy-bot
+- learn.build-azure-bot-services-bot.4-debug-bot-locally
+- learn.build-azure-bot-services-bot.5-connect-to-knowledge-base
+- learn.build-azure-bot-services-bot.6-test-with-skype
+- learn.build-azure-bot-services-bot.7-delete-env
+# this is a placeholder and needs to updated
+achievement: learn.placeholder.badge

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.build-azure-bot-services-bot.7-delete-env
+title: Delete the resource group
+metadata:
+  title: Delete the resource group
+  description: Delete the resource group
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-delete-env.md)
