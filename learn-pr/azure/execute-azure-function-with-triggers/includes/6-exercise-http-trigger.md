@@ -1,4 +1,4 @@
-In this exercise we're going to create an Azure Function that accepts an HTTP request with a single string. The function will also return a string back to the caller to represent success or failure.
+In this exercise, we're going to create an Azure Function that accepts an HTTP request with a single string. The function will also return a string back to the caller to represent success or failure.
 
 > [!NOTE] To complete this exercise make sure you're logged into the [Azure portal](https://portal.azure.com/) with a valid account.
 
@@ -20,7 +20,7 @@ Let's continue using our existing Azure Function application and add an HTTP tri
 
 1. Click **Create**.
 
-1. Briefly look at the auto-generated code to get an idea about whats going on. The *req* parameter represents the incoming request and contains a *name* parameter. We check to see if *name* has a value. If it does we return a greeting, if it doesn't we return an error message.
+1. Briefly look at the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. We check to see if *name* has a value. If it does we return a greeting, if it doesn't we return an error message.
 
 ## Get your function URL
 

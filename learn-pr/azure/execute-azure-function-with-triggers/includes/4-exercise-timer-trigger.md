@@ -1,4 +1,4 @@
-In this exercise we're going to create an Azure Function that is invoked every 20 seconds using a timer trigger.
+In this exercise, we're going to create an Azure Function that is invoked every 20 seconds using a timer trigger.
 
 > [!NOTE] To complete this exercise make sure you're logged into the [Azure portal](https://portal.azure.com/) with a valid account.
 

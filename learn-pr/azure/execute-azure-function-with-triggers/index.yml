@@ -8,9 +8,12 @@ summary: Create an Azure Function that is invoked from common trigger types.
 abstract:  A trigger is responsible for executing an Azure Function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
 cardDescription: Create an Azure Function that is invoked from common trigger types.
 iconUrl: http://via.placeholder.com/120x120
-levels: beginner
-roles: developer
-products: Azure
+levels: 
+- beginner
+roles: 
+- developer
+products:
+- Azure
 
 units:
 - execute-azure-function-with-triggers.1-motivation
