@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-neural-network-with-dsvm.3-train-tensorflow-model
+title: Train a TensorFlow model
+metadata:
+  title: Train a TensorFlow model
+  description: Train a TensorFlow model
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-train-tensorflow-model.md)]
