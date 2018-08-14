@@ -11,14 +11,11 @@ content: |
 quiz:
   title: 'Quiz title'
   questions:
-  - content: 'The first quiz question?'
+  - content: 'Which of the following is not a benefit of container adoption?'
     choices:
-    - content: This answer is correct.
-      correctExplanation: Why this answer is correct
+    - content: Fast start times.
+      incorrectExplanation: Why this answer is correct
+      isCorrect: false
+      content: Containers allow you to host both applications and processes.
       isCorrect: true
-      content: This answer is incorrect.
-      isCorrect: false
-      incorrectExplanation: Why this answer is incorrect
-    - content: Brainstorming of markdown file format for quiz. Part 2
-      isCorrect: false
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
+      correctExplanation: Why this answer is incorrect
