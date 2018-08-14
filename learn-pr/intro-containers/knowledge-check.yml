@@ -2,16 +2,10 @@
 uid: learn.intro-to-containers.knowledge-check
 metadata:
 # Search engine metadata
-  title: Sample unit 2 - Text and knowledge check
+  title: Introduction to containers knowledge check
   description: This unit is an example of text (no lab components) with a knowledge check.
-  # displayType: one-column
-  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
-title: Sample Unit 2 - Text and Knowledge Check
-# `title` appears in the header, ToC, and breadcrumbs
-durationInMinutes: 11
-# `durationInMinutes` is manually created by the writer
-content: |
-  [!include[](includes/5-knowledge-check/knowledge-check.md)]
+title: Introduction to containers knowledge check
+durationInMinutes: 5
 quiz:
   title: 'Quiz title'
   questions:
