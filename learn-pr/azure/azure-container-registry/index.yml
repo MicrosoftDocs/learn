@@ -18,7 +18,6 @@ units:
 - learn.azure-container-registry.intro
 - learn.azure-container-registry.deploy-acr
 - learn.azure-container-registry.build-image
-- learn.azure-container-registry.push-pull-image
 - learn.azure-container-registry.deploy-image
 - learn.azure-container-registry.update-image
 - learn.azure-container-registry.knowledge-check
