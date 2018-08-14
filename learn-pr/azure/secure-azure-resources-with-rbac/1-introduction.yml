@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-azure-resources-with-rbac.1-module-motivation
+uid: learn.secure-azure-resources-with-rbac.1-introduction
 metadata:
   title: Introduction
   description: Learn how to use RBAC to manage access to resources in Azure.
@@ -7,4 +7,4 @@ metadata:
 title: Introduction
 durationInMinutes: 5
 content: |
-  [!include[](includes/1-module-motivation.md)]
+  [!include[](includes/1-introduction.md)]

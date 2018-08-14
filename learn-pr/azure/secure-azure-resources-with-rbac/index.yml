@@ -15,12 +15,12 @@ roles:
 products: 
 - Azure
 units:
-- learn.secure-azure-resources-with-rbac.1-module-motivation
+- learn.secure-azure-resources-with-rbac.1-introduction
 - learn.secure-azure-resources-with-rbac.2-rbac-overview
 - learn.secure-azure-resources-with-rbac.3-list-access
 - learn.secure-azure-resources-with-rbac.4-grant-access
 - learn.secure-azure-resources-with-rbac.5-grant-access-powershell
 - learn.secure-azure-resources-with-rbac.6-create-custom-roles
 - learn.secure-azure-resources-with-rbac.7-view-activity-logs
-- learn.secure-azure-resources-with-rbac.8-module-summary
+- learn.secure-azure-resources-with-rbac.8-summary
 achievement: learn.secure-azure-resources-with-rbac.badge

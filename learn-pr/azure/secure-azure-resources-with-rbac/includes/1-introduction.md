@@ -14,7 +14,7 @@ Use RBAC to manage access to resources in Azure.
 
 Role-based access control (RBAC) is a system that provides fine-grained access management of resources in Azure. Using RBAC, you can segregate duties within your team and grant only the amount of access to users that they need to perform their jobs. This module shows you how to use RBAC to manage access to resources in Azure.
 
-## Learning Objectives
+## Learning objectives
 
 > [!div class="checklist"]
 > * Learn what RBAC is
