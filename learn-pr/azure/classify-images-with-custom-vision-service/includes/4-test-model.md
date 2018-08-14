@@ -1,6 +1,6 @@
 ### Exercise 4: Test the model
 
-In [Exercise 5](./buildapp.md), you will create a Node.js app that uses the model to identify the artist of paintings presented to it. But you don't have to write an app to test the model; you can do your testing in the portal, and you can further refine the model using the images that you test with. In this exercise, you will test the model's ability to identify the artist of a painting using test images provided for you.
+In [Exercise 5](./5-build-app.md), you will create a Node.js app that uses the model to identify the artist of paintings presented to it. But you don't have to write an app to test the model; you can do your testing in the portal, and you can further refine the model using the images that you test with. In this exercise, you will test the model's ability to identify the artist of a painting using test images provided for you.
 
 1. Click **Quick Test** at the top of the page.
  
