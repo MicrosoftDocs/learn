@@ -150,10 +150,10 @@ achievements:
   title: Control Azure services with the CLI Badge
   summary: Control Azure services with the CLI Badge Summary
   iconUrl: http://via.placeholder.com/120x120
-- uid: learn.explore-azure-services-features.badge
+- uid: learn.azure-services-features.badge
   type: badge
-  title: Explore Azure services and features Badge
-  summary: Explore Azure services and features Summary
+  title: Tour Azure services and features Badge
+  summary: Tour Azure services and features Summary
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.migrate-sql-server-relational-data.badge
   type: badge
