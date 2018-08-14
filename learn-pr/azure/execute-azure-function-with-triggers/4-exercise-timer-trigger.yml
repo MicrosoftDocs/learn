@@ -6,4 +6,4 @@ metadata:
   description: Exercise - Create an Azure Function that is executed by a timer 
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exericse-timer-trigger.md)]
+  [!include[](includes/4-exercise-timer-trigger.md)]
