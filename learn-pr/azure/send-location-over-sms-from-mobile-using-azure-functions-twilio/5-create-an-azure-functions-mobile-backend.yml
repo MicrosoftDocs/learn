@@ -7,3 +7,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-create-an-azure-functions-mobile-backend.md)]
+  

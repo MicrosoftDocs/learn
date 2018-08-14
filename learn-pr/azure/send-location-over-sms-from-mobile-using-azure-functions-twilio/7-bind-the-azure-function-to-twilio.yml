@@ -7,3 +7,4 @@ metadata:
 durationInMinutes: 11
 content: |
   [!include[](includes/7-bind-the-azure-function-to-twilio.md)]
+  
