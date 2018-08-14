@@ -5,7 +5,7 @@ metadata:
   title: Azure Container Registry (ACR) knowledge check
   description: This unit is an example of text (no lab components) with a knowledge check.
 content: |
-  #[!include[](includes/5-knowledge-check/knowledge-check.md)]
+  #[!include[](includes/knowledge-check.md)]
 durationInMinutes: 5
 quiz:
   title: 'Quiz title'
