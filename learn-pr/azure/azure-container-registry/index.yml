@@ -8,7 +8,7 @@ iconUrl: ./images/bot.svg
 levels:
 - intermediate
 roles:
-- operator
+- administrator
 products:
 - Docker
 - Azure Container Registry
