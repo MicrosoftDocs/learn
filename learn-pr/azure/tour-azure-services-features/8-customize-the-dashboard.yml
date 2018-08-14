@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-services-features.6-exercise-work-with-blades
-title: "Exercise: Work with blades"
+uid: learn.azure-services-features.8-customize-the-dashboard
+title: "Customize the dashboard"
 metadata:
-  title: "Exercise: Work with blades"
-  description: "Exercise: Work with blades"
+  title: "Customize the dashboard"
+  description: "Customize the dashboard"
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-work-with-blades.md)]
+  [!include[](includes/8-customize-the-dashboard.md)]

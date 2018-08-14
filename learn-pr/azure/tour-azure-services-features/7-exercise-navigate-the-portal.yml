@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-services-features.6-exercise-work-with-blades
-title: "Exercise - Work with blades"
+uid: learn.azure-services-features.7-exercise-navigate-the-portal
+title: "Exercise - Navigate the portal"
 metadata:
-  title: "Exercise - Work with blades"
-  description: "Exercise - Work with blades"
+  title: "Exercise - Navigate the portal"
+  description: "Exercise - Navigate the portal"
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-work-with-blades.md)]
+  [!include[](includes/7-exercise-navigate-the-portal.md)]

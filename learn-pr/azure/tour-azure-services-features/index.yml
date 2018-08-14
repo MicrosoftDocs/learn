@@ -28,5 +28,5 @@ units:
 - learn.azure-services-features.7-exercise-navigate-the-portal
 - learn.azure-services-features.8-customize-the-dashboard
 - learn.azure-services-features.9-exercise-customize-the-dashboard
-- learn.azure-services-features.10-module-summary
-achievement: learn.tour-azure-services-features.badge
+- learn.azure-services-features.10-summary
+achievement: learn.azure-services-features.badge
