@@ -1,0 +1,25 @@
+.### YamlMime:Module
+uid: learn.azure-container-registry
+title: Build and store container images with Azure Container Registry
+summary: Build and store container images with Azure Container Registry
+abstract: Build and store container images with Azure Container Registry
+cardDescription: Build and store container images with Azure Container Registry
+iconUrl: ./images/bot.svg
+levels:
+- intermediate
+roles:
+- operator
+products:
+- Docker
+- Azure Container Registry
+metadata:
+  title: Build and store container images with Azure Container Registry
+units:
+- learn.azure-container-registry.intro
+- learn.azure-container-registry.deploy-acr
+- learn.azure-container-registry.build-image
+- learn.azure-container-registry.push-pull-image
+- learn.azure-container-registry.deploy-image
+- learn.azure-container-registry.update-image
+- learn.azure-container-registry.knowledge-check
+achievement: learn.sample-module-cloudshell.badge
