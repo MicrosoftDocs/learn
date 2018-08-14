@@ -4,8 +4,8 @@ title: Introduction to containers knowledge check
 metadata:
   title: Introduction to containers knowledge check
   description: This unit is an example of text (no lab components) with a knowledge check.
-content: |
-  # [!include[](includes/knowledge-check.md)]
+# content: |
+#   # [!include[](includes/knowledge-check.md)]
 durationInMinutes: 5
 quiz:
   title: 'Quiz title'
