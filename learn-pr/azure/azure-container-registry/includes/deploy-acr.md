@@ -4,13 +4,13 @@ Before you create your container registry, you need a *resource group* to deploy
 
 Create a resource group with the [az group create][az-group-create] command. In the following example, a resource group named *myResourceGroup* is created in the *eastus* region:
 
-```azurecli-interactive
+```azurecli
 az group create --name myResourceGroup --location eastus
 ```
 
 Once you've created the resource group, create an Azure container registry with the [az acr create][az-acr-create] command. The container registry name must be unique within Azure, and contain 5-50 alphanumeric characters. Replace `<acrName>` with a unique name for your registry:
 
-```azurecli-interactive
+```azurecli
 az acr create --resource-group myResourceGroup --name <acrName> --sku Basic --admin-enabled true
 ```
 
@@ -45,7 +45,7 @@ The rest of the tutorial refers to `<acrName>` as a placeholder for the containe
 
 You must log in to your Azure Container Registry instance before pushing images to it. Use the [az acr login][az-acr-login] command to complete the operation. You must provide the unique name you chose for the container registry when you created it.
 
-```azurecli-interactive
+```azurecli
 az acr login --name <acrName>
 ```
 
