@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: execute-azure-function-with-triggers.3-timer-trigger
+title: Create an Azure Function that is executed by a timer
+metadata:
+  title: Create an Azure Function that is executed by a timer
+  description: Create an Azure Function that is executed by a timer
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-timer-trigger.md)]

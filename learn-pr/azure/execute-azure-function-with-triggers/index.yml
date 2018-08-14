@@ -1,0 +1,24 @@
+### YamlMime:Module
+uid: execute-azure-function-with-triggers
+metadata:
+  title: Execute an Azure Function with triggers
+  description:  A trigger is responsible for executing an Azure Function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
+title: Execute an Azure Function with triggers
+summary: Create an Azure Function that is invoked from common trigger types.
+abstract:  A trigger is responsible for executing an Azure Function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
+cardDescription: Create an Azure Function that is invoked from common trigger types.
+iconUrl: [http://via.placeholder.com/120x120]
+level: beginner
+role: developer
+product: Azure
+
+units:
+- execute-azure-function-with-triggers.1-motivation
+- execute-azure-function-with-triggers.2-determine-best-trigger
+- execute-azure-function-with-triggers.3-timer-trigger
+- execute-azure-function-with-triggers.4-exercise-timer-trigger
+- execute-azure-function-with-triggers.5-http-trigger
+- execute-azure-function-with-triggers.6-exercise-http-trigger
+- execute-azure-function-with-triggers.7-blob-trigger
+- execute-azure-function-with-triggers.8-exercise-blob-trigger
+- execute-azure-function-with-triggers.9-summary

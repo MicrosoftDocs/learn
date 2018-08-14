@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: execute-azure-function-with-triggers.2-determine-best-trigger
+title: Determine the best trigger type to invoke your Azure Function 
+metadata:
+  title: Determine the best trigger type to invoke your Azure Function 
+  description: Determine the best trigger type to invoke your Azure Function 
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-determine-best-trigger.md)]
