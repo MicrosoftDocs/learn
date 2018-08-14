@@ -1,32 +1,20 @@
 ### YamlMime:Module
-# YML code for `module`
 uid: learn.secure-azure-resources-with-rbac
-# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>. Keep it easy on yourself and keep the module-short-name the same as the module folder name.
 metadata:
-# HTML metadata for search engines
   title: Secure your Azure resources with role-based access control (RBAC)
   description: Learn how to use RBAC to manage access to resources in Azure.
 title: Secure your Azure resources with role-based access control (RBAC)
-# `title` appears in the header, ToC, and breadcrumbs
 summary: Learn how to use RBAC to manage access to resources in Azure.
-# `summary` appears at the top of the module page beneath the title
 abstract: Role-based access control (RBAC) is a system that provides fine-grained access management of resources in Azure. Using RBAC, you can segregate duties within your team and grant only the amount of access to users that they need to perform their jobs. This module shows you how to use RBAC to manage access to resources in Azure.
-# `abstract` appears on the module page beneath the summary and level/role/product metadata 
 cardDescription: Learn how to use RBAC to manage access to resources in Azure.
-# `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
-# `iconUrl` is the badge image 
 levels: 
 - intermediate
-# `beginner`, `intermediate`, `advanced`; multiple values accepted
 roles: 
 - administrator
-# `developer`, `administrator`, `solutionsArchitect`, `businessUser`, `businessAnalyst`; multiple values accepted
 products: 
 - Azure
-# `azure`; multiple values accepted
 units:
-# `units` are lists of all of the unit uids, in the order they should be displayed to the user in
 - learn.secure-azure-resources-with-rbac.1-module-motivation
 - learn.secure-azure-resources-with-rbac.2-rbac-overview
 - learn.secure-azure-resources-with-rbac.3-list-access
@@ -36,4 +24,3 @@ units:
 - learn.secure-azure-resources-with-rbac.7-view-activity-logs
 - learn.secure-azure-resources-with-rbac.8-module-summary
 achievement: learn.secure-azure-resources-with-rbac.badge
-# `achievement` is the `uid` for the badge
