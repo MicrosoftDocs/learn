@@ -2,12 +2,12 @@
 # Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
 uid: learn.azure-services-features
 metadata:
-  title: Explore Azure services and features
-  description: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences. After you create an account, you can use the Azure Portal to explore the available services and create the ones you need for your application. This module guides you through this onboarding process: you will create your Azure account, login to the Portal, and practice creating a few common resources."
-title: Explore Azure services and features
-summary: Create an Azure account, explore available services, and customize the Portal.
-abstract: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences. After you create an account, you can use the Azure Portal to explore the available services and create the ones you need for your application. This module guides you through this onboarding process: you will create your Azure account, login to the Portal, and practice creating a few common resources."
-cardDescription: Create an Azure account, explore available services, and customize the Portal.
+  title: Tour Azure services and features
+  description: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences. After you create an account, you can use the Azure Portal to tour the available services and create the ones you need for your application. This module guides you through this onboarding process: you will create your Azure account, login to the Portal, and practice creating a few common resources."
+title: Tour Azure services and features
+summary: Create an Azure account, tour available services, and customize the Portal.
+abstract: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences. After you create an account, you can use the Azure Portal to tour the available services and create the ones you need for your application. This module guides you through this onboarding process: you will create your Azure account, login to the Portal, and practice creating a few common resources."
+cardDescription: Create an Azure account, tour available services, and customize the Portal.
 # iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
 iconUrl: http://via.placeholder.com/120x120
 # Review the Docs Contributor Guide for levele, role, and product options
@@ -29,4 +29,4 @@ units:
 - learn.azure-services-features.8-customize-the-dashboard
 - learn.azure-services-features.9-exercise-customize-the-dashboard
 - learn.azure-services-features.10-module-summary
-achievement: learn.explore-azure-services-features.badge
+achievement: learn.tour-azure-services-features.badge
