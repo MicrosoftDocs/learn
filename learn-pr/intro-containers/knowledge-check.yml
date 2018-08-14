@@ -1,16 +1,24 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-containers.knowledge-check
+title: Introduction to containers knowledge check
 metadata:
-# Search engine metadata
   title: Introduction to containers knowledge check
   description: This unit is an example of text (no lab components) with a knowledge check.
-title: Introduction to containers knowledge check
-durationInMinutes: 5
 content: |
-  [!include[](includes/5-knowledge-check/knowledge-check.md)]
+  [!include[](includes/knowledge-check.md)]
+durationInMinutes: 5
 quiz:
   title: 'Quiz title'
+  description: 'Quiz Description'
   questions:
+  - content: 'Which of the following is not a benefit of container adoption?'
+    choices:
+    - content: Fast start times.
+      incorrectExplanation: Why this answer is correct
+      isCorrect: false
+    - content: Containers allow you to host both applications and processes.
+      isCorrect: true
+      correctExplanation: Why this answer is incorrect
   - content: 'Which of the following is not a benefit of container adoption?'
     choices:
     - content: Fast start times.
