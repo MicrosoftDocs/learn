@@ -2,7 +2,7 @@
 
 A co-worker named Alain at First Up Consultants needs the ability to create and manage virtual machines for a project he is working on. Your manager has asked that you handle this request. Using the best practice to grant users the least privilege to get their work done, you decide to create a new resource group and assign Alain the Virtual Machine Contributor role.
 
-In this exercise, you learn how to:
+In this unit, you learn how to:
 
 > [!div class="checklist"]
 > * Grant access to user at a resource group scope
@@ -77,6 +77,8 @@ In RBAC, to remove access, you remove a role assignment.
 
 ## Clean up
 
+To clean up the resources created by this unit, delete the resource group.
+
 1. In the navigation list, click **Resource groups**.
 
 1. Click **rbac-resource-group** to open the resource group.
@@ -91,4 +93,4 @@ In RBAC, to remove access, you remove a role assignment.
 
 ## Summary
 
-In this exercise, you learned how to grant a user access to create and manage virtual machines in a resource group using the Azure portal. In the next exercise, you look at how to grant access using PowerShell.
+In this unit, you learned how to grant a user access to create and manage virtual machines in a resource group using the Azure portal. In the next unit, you look at how to grant access using PowerShell.

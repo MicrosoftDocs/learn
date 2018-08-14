@@ -11,7 +11,7 @@ metadata:
   interactive: azurecli
 title: View activity logs for RBAC changes
 # `title` appears the header, ToC, and breadcrumbs
-durationInMinutes: 11
+durationInMinutes: 5
 # `durationInMinutes` is manually created by the writer
 content: |
   [!include[](includes/7-view-activity-logs.md)]

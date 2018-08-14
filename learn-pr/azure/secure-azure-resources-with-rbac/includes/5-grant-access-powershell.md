@@ -2,7 +2,7 @@
 
 Using the **Access control (IAM)** blade in the Azure portal has been working fine, but you are getting several permission requests each day. To keep up with the access management tasks, you decide to use PowerShell to help automate some of the steps.
 
-In this exercise, you learn how to:
+In this unit, you learn how to:
 
 > [!div class="checklist"]
 > * Grant access to user at a resource group scope using PowerShell
@@ -182,4 +182,4 @@ To clean up the resources created by this unit, delete the resource group and th
 
 ## Summary
 
-In this exercise, you learned how to grant a user access to create and manage virtual machines in a resource group using Azure PowerShell. In the next exercise, you look at how to create a custom role and define your own permissions.
+In this unit, you learned how to grant a user access to create and manage virtual machines in a resource group using Azure PowerShell. In the next unit, you look at how to create a custom role and define your own permissions.

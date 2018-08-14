@@ -2,7 +2,7 @@
 
 The engineering team at First Up Consultants needs specific permissions related to support tickets that are not available with one of the [built-in roles](/azure/role-based-access-control/built-in-roles). Instead of granting them broad access, you decide to create a [custom role](/azure/role-based-access-control/custom-roles). Since you currently can't create custom roles in the Azure portal, you'll create the custom role using Azure PowerShell.
 
-In this exercise, you learn how to:
+In this unit, you learn how to:
 
 > [!div class="checklist"]
 > * Create a custom role
@@ -184,9 +184,9 @@ If a custom role is no longer needed, you can delete it. Follow these steps to d
 
 ## Clean up
 
-Follow this step to delete the file you created.
+To clean up the resources created by this unit, delete the file you created.
 
-1. Run the `del` command to delete the JSON file.
+- Run the `del` command to delete the JSON file.
 
     ```azurepowershell-interactive
     del ./ReaderSupportRole.json
@@ -194,4 +194,4 @@ Follow this step to delete the file you created.
 
 ## Summary
 
-In this exercise, you learned how to create a custom role with the permissions you select. In the next exercise, you learn how to view the RBAC changes over time.
+In this unit, you learned how to create a custom role with the permissions you select. In the next unit, you learn how to view the RBAC changes over time.

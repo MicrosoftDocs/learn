@@ -10,7 +10,7 @@ metadata:
   # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: Grant access using RBAC and Azure PowerShell
 # `title` appears in the header, ToC, and breadcrumbs
-durationInMinutes: 11
+durationInMinutes: 10
 # `durationInMinutes` is manually created by the writer
 content: |
   [!include[](includes/5-grant-access-powershell.md)]

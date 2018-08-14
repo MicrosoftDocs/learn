@@ -11,7 +11,7 @@ metadata:
   interactive: azurecli
 title: Create a custom role using Azure PowerShell
 # `title` appears the header, ToC, and breadcrumbs
-durationInMinutes: 11
+durationInMinutes: 10
 # `durationInMinutes` is manually created by the writer
 content: |
   [!include[](includes/6-create-custom-roles.md)]
