@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-container-registry.deploy-acr
+metadata:
+  title: Deploy Azure Container Registry
+  description: Deploy Azure Container Registry.
+  displayType: one-column
+title: Deploy Azure Container Registry
+durationInMinutes: 15
+content: |
+  [!include[](includes/deploy-acr.md)]

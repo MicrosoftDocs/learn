@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-container-registry.deploy-image
+metadata:
+  title: Deploy images from ACR
+  description: Deploy images from ACR.
+  displayType: one-column
+title: Deploy images from ACR
+durationInMinutes: 15
+content: |
+  [!include[](includes/deploy-image.md)]

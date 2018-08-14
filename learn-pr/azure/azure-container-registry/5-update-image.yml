@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-container-registry.update-image
+metadata:
+  title: Update image in ACR
+  description: Update image in ACR.
+  displayType: one-column
+title: Update image in ACR
+durationInMinutes: 15
+content: |
+  [!include[](includes/update-image.md)]

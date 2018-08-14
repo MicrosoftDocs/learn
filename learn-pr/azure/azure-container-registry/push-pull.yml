@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-container-registry.push-pull-image
+metadata:
+  title: Push and pull images from ACR
+  description: Push and pull images from ACR.
+  displayType: one-column
+title: Push and pull images from ACR
+durationInMinutes: 15
+content: |
+  [!include[](includes/push-pull.md)]
