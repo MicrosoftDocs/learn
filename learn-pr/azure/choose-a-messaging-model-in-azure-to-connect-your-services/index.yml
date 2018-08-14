@@ -1,0 +1,27 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.choose-messaging-model
+metadata:
+  title: Choose a messaging model in Azure to loosely connect your services
+  description: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grids, and Service Bus. This module shows you how to choose the best technology for your communication task.
+title: Choose a messaging model in Azure to loosely connect your services
+summary: Choose the right messaging technology from Azure's wide range of options to improve communications in your distributed application.
+abstract: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grids, and Service Bus. This module shows you how to choose the best technology for your communication task.
+cardDescription: Choose the right messaging technology from Azure's wide range of options to improve communications in your distributed application.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+units:
+- learn.choose-messaging-model.1-introduction
+- learn.choose-messaging-model.2-choose-whether-to-use-message-queues-or-events
+- learn.choose-messaging-model.3-knowledge-check
+- learn.choose-messaging-model.4-choose-azure-storage-queues
+- learn.choose-messaging-model.5-exercise-create-a-storage-queue
+- learn.choose-messaging-model.6-choose-event-grid
+- learn.choose-messaging-model.7-choose-azure-event-hubs
+achievement: learn.choose-messaging-model.badge

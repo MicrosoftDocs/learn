@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.choose-messaging-model.1-why-use-events-messages
-title: Why use events and messages in distributed applications? 
-metadata:
-  title: Why use events and messages in distributed applications?  
-  description: Why use events and messages in distributed applications?  
-durationInMinutes: 12
-content: |
-  [!include[](includes/1-why-use-events-messages.md)]

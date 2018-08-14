@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.4-choose-azure-storage-queues
+title: Choose Azure Storage queues
+metadata:
+  title: Choose Azure Storage queues
+  description: Choose Azure Storage queues
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-choose-azure-storage-queues.md)]
