@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.azure-services-features.6-summary-cleanup
-title: Summary and cleanup
-metadata:
-  title: Summary and cleanup
-  description: Summary and cleanup
-durationInMinutes: 12
-content: |
-  [!include[](includes/6-summary-cleanup.md)]

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.6-exercise-work-with-blades
+title: "Exercise: Work with blades"
+metadata:
+  title: "Exercise: Work with blades"
+  description: "Exercise: Work with blades"
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-work-with-blades.md)]
