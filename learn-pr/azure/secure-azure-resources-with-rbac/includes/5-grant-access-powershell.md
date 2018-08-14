@@ -20,7 +20,7 @@ Sign in to [Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 ## Create a user
 
-To assign a role, you need a user, group, or service principal. If you don't already have a test user, create one.
+To assign a role, you need a user, group, or service principal. If you don't already have a test user, follow these steps to create a user.
 
 1. In PowerShell, create a password that complies with your password complexity requirements.
 
@@ -35,7 +35,7 @@ To assign a role, you need a user, group, or service principal. If you don't alr
       -UserPrincipalName "rbacuser@<your domain>" -Password $SecureStringPassword
     ```
     
-    ```Example
+    ```Output
     PS Azure:\> New-AzureRmADUser -DisplayName "RBAC User" -MailNickname "rbacuser" `
       -UserPrincipalName "rbacuser@firstupconsultants.com" -Password $SecureStringPassword
 
@@ -46,7 +46,7 @@ To assign a role, you need a user, group, or service principal. If you don't alr
 
 ## Create a resource group
 
-You use a resource group to show how to assign a role at a resource group scope.
+You use a resource group to show how to assign a role at a resource group scope. Follow these steps to create a new resource group named rbac-resource-group.
 
 1. Get a list of region locations using the [Get-AzureRmLocation](/powershell/module/azurerm.resources/get-azurermlocation) command.
 
@@ -66,7 +66,7 @@ You use a resource group to show how to assign a role at a resource group scope.
    New-AzureRmResourceGroup -Name "rbac-resource-group" -Location $location
    ```
 
-   ```Example
+   ```Output
    ResourceGroupName : rbac-resource-group
    Location          : westus
    ProvisioningState : Succeeded
@@ -81,12 +81,16 @@ To grant access for the user, you use the [New-AzureRmRoleAssignment](/powershel
 1. Assign the [Virtual Machine Contributor](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) role to the user at the resource group scope.
 
     ```azurepowershell-interactive
-    New-AzureRmRoleAssignment -SignInName rbacuser@firstupconsultants.com `
+    New-AzureRmRoleAssignment -SignInName rbacuser@<your domain> `
       -RoleDefinitionName "Virtual Machine Contributor" `
       -ResourceGroupName "rbac-resource-group"
     ```
 
-    ```Example
+    ```Output
+    PS Azure:\> New-AzureRmRoleAssignment -SignInName rbacuser@firstupconsultants.com `
+      -RoleDefinitionName "Virtual Machine Contributor" `
+      -ResourceGroupName "rbac-resource-group"
+
     RoleAssignmentId   : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rbac-resource-group/providers/Microsoft.Authorization/roleAssignments/33333333-3333-3333-3333-333333333333
     Scope              : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rbac-resource-group
     DisplayName        : RBAC User
@@ -103,10 +107,12 @@ To grant access for the user, you use the [New-AzureRmRoleAssignment](/powershel
 1. To verify the access for the resource group, use the [Get-AzureRmRoleAssignment](/powershell/module/azurerm.resources/get-azurermroleassignment) command to list the role assignments.
 
     ```azurepowershell-interactive
-    Get-AzureRmRoleAssignment -SignInName rbacuser@firstupconsultants.com -ResourceGroupName "rbac-resource-group"
+    Get-AzureRmRoleAssignment -SignInName rbacuser@<your domain> -ResourceGroupName "rbac-resource-group"
     ```
 
-    ```Example
+    ```Output
+    PS Azure:\> Get-AzureRmRoleAssignment -SignInName rbacuser@firstupconsultants.com -ResourceGroupName "rbac-resource-group"
+
     RoleAssignmentId   : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rbac-resource-group/providers/Microsoft.Authorization/roleAssignments/33333333-3333-3333-3333-333333333333
     Scope              : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rbac-resource-group
     DisplayName        : RBAC User
@@ -131,7 +137,13 @@ To remove access for users, groups, and applications, use [Remove-AzureRmRoleAss
 1. Use the following command to remove the Virtual Machine Contributor role assignment for the user at the resource group scope.
 
     ```azurepowershell-interactive
-    Remove-AzureRmRoleAssignment -SignInName rbacuser@firstupconsultants.com `
+    Remove-AzureRmRoleAssignment -SignInName rbacuser@<your domain> `
+      -RoleDefinitionName "Virtual Machine Contributor" `
+      -ResourceGroupName "rbac-resource-group"
+    ```
+
+    ```Output
+    PS Azure:\> Remove-AzureRmRoleAssignment -SignInName rbacuser@firstupconsultants.com `
       -RoleDefinitionName "Virtual Machine Contributor" `
       -ResourceGroupName "rbac-resource-group"
     ```
@@ -146,23 +158,23 @@ To clean up the resources created by this unit, delete the resource group and th
     Remove-AzureRmResourceGroup -Name "rbac-resource-group"
     ```
 
-    ```Example
+    ```Output
     Confirm
     Are you sure you want to remove resource group 'rbac-resource-group'
     [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"):
     ```
     
-1. When asked to confirm, type **Y**. It will take a few seconds to delete.
+1. When asked to confirm, type **Y**. It will take a several seconds to delete.
 
 1. Delete the user using the [Remove-AzureRmADUser](/powershell/module/azurerm.resources/remove-azurermaduser) command.
 
     ```azurepowershell-interactive
-    Remove-AzureRmADUser -UserPrincipalName "rbacuser@firstupconsultants.com"
+    Remove-AzureRmADUser -UserPrincipalName "rbacuser@<your domain>"
     ```
 
-    ```Example
+    ```Output
     Confirm
-    Are you sure you want to remove user with upn or object id 'rbacuser@firstupconsultants.com'.
+    Are you sure you want to remove user with upn or object id 'rbacuser@<your domain>'.
     [Y] Yes  [N] No  [S] Suspend  [?] Help (default is "Y"):
     ```
 

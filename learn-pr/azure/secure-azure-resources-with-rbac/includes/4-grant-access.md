@@ -1,6 +1,6 @@
 ## Exercise
 
-Your co-worker named Alain at First Up Consultants needs the ability to create and manage virtual machines for a project he is working on. Your manager has asked that you handle this request. Using the best practice to grant users the least privilege to get their work done, you decide to create a new resource group and assign Alain the Virtual Machine Contributor role.
+A co-worker named Alain at First Up Consultants needs the ability to create and manage virtual machines for a project he is working on. Your manager has asked that you handle this request. Using the best practice to grant users the least privilege to get their work done, you decide to create a new resource group and assign Alain the Virtual Machine Contributor role.
 
 In this exercise, you learn how to:
 
@@ -43,7 +43,7 @@ In RBAC, to grant access, you create a role assignment. Follow these steps to as
 
 1. In the list of **Resource groups**, click the new **rbac-resource-group** resource group.
 
-1. Click **Access control (IAM)** to see the current list of role assignments.
+1. Click **Access control (IAM)** to see the current list of inherited role assignments.
 
    ![Access control (IAM) blade for resource group](../images/4-access-control.png)
 
@@ -85,7 +85,7 @@ In RBAC, to remove access, you remove a role assignment.
 
    ![Delete resource group](../images/4-delete-resource-group.png)
 
-1. On the **Are you sure you want to delete** blade, type the resource group name: **rbac-resource-group**.
+1. On the **Are you sure you want to delete** pane, type the resource group name: **rbac-resource-group**.
 
 1. Click **Delete** to delete the resource group.
 

@@ -81,4 +81,4 @@ As you learned in the previous unit, a role is a collection of permissions. Azur
 
 ## Summary
 
-In this exercise, you learned how to list the role assignments for yourself in the Azure portal. You also learned how to list the role assignments at different scopes. In the next exercise, you look how to take the next step and use RBAC to grant access to a user.
+In this exercise, you learned how to list the role assignments for yourself in the Azure portal. You also learned how to list the role assignments at different scopes. In the next exercise, you look take the next step and use RBAC to grant access to a user.

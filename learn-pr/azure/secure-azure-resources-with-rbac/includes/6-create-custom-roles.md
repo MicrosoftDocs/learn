@@ -36,6 +36,19 @@ The easiest way to create a custom role is to start with a built-in role, edit i
     Microsoft.Support/supportTickets/write Creates or Updates a Support Ticket. You can create a Support Tic...
     ```
 
+1. Get the `Id` of your subscription using the [Get-AzureRmSubscription](/powershell/module/azurerm.profile/get-azurermsubscription) command. You'll need this subscription ID in a later step.
+
+    ```azurepowershell-interactive
+    Get-AzureRmSubscription
+    ```
+    
+    ```Output
+    Name     : Pay-As-You-Go
+    Id       : 00000000-0000-0000-0000-000000000000
+    TenantId : 99999999-9999-9999-9999-999999999999
+    State    : Enabled
+    ```
+
 1. Change to your home directory.
 
     ```azurepowershell-interactive
@@ -58,38 +71,25 @@ The easiest way to create a custom role is to start with a built-in role, edit i
 
     ```json
     {
-        "Name": "Reader",
-        "Id": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
-        "IsCustom": false,
-        "Description": "Lets you view everything, but not make any changes.",
-        "Actions": [
-          "*/read"
-        ],
-        "NotActions": [],
-        "DataActions": [],
-        "NotDataActions": [],
-        "AssignableScopes": [
-          "/"
-        ]
+      "Name": "Reader",
+      "Id": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+      "IsCustom": false,
+      "Description": "Lets you view everything, but not make any changes.",
+      "Actions": [
+        "*/read"
+      ],
+      "NotActions": [],
+      "DataActions": [],
+      "NotDataActions": [],
+      "AssignableScopes": [
+        "/"
+      ]
     }
     ```
     
 1. Edit the JSON file to add the `"Microsoft.Support/*"` operation to the `Actions` property. Be sure to include a comma after the read operation. This action will allow the user to create support tickets.
 
-1. In the PowerShell pane, get the `Id` of your subscription using the [Get-AzureRmSubscription](/powershell/module/azurerm.profile/get-azurermsubscription) command.
-
-    ```azurepowershell-interactive
-    Get-AzureRmSubscription
-    ```
-    
-    ```Output
-    Name     : Pay-As-You-Go
-    Id       : 00000000-0000-0000-0000-000000000000
-    TenantId : 99999999-9999-9999-9999-999999999999
-    State    : Enabled
-    ```
-
-1. In the editor, in `AssignableScopes`, add your subscription ID with the following format: `"/subscriptions/00000000-0000-0000-0000-000000000000"`
+1. In `AssignableScopes`, add your subscription ID with the following format: `"/subscriptions/00000000-0000-0000-0000-000000000000"`
 
     You must add explicit subscription IDs, otherwise you won't be allowed to import the role into your subscription.
 
@@ -101,19 +101,19 @@ The easiest way to create a custom role is to start with a built-in role, edit i
 
     ```json
     {
-        "Name": "Reader Support Tickets",
-        "IsCustom": true,
-        "Description": "View everything in the subscription and also open support tickets.",
-        "Actions": [
-          "*/read",
-          "Microsoft.Support/*"
-        ],
-        "NotActions": [],
-        "DataActions": [],
-        "NotDataActions": [],
-        "AssignableScopes": [
-          "/subscriptions/00000000-0000-0000-0000-000000000000"
-        ]
+      "Name": "Reader Support Tickets",
+      "IsCustom": true,
+      "Description": "View everything in the subscription and also open support tickets.",
+      "Actions": [
+        "*/read",
+        "Microsoft.Support/*"
+      ],
+      "NotActions": [],
+      "DataActions": [],
+      "NotDataActions": [],
+      "AssignableScopes": [
+        "/subscriptions/00000000-0000-0000-0000-000000000000"
+      ]
     }
     ```
 
@@ -181,21 +181,21 @@ To update the custom role, you can update the JSON file.
 
      ```json
     {
-        "Name": "Reader Support Tickets",
-        "Id": "22222222-2222-2222-2222-222222222222",
-        "IsCustom": true,
-        "Description": "View everything in the subscription and also open support tickets.",
-        "Actions": [
-          "*/read",
-          "Microsoft.Support/*",
-          "Microsoft.Resources/deployments/*"
-        ],
-        "NotActions": [],
-        "DataActions": [],
-        "NotDataActions": [],
-        "AssignableScopes": [
-          "/subscriptions/00000000-0000-0000-0000-000000000000"
-        ]
+      "Name": "Reader Support Tickets",
+      "Id": "22222222-2222-2222-2222-222222222222",
+      "IsCustom": true,
+      "Description": "View everything in the subscription and also open support tickets.",
+      "Actions": [
+        "*/read",
+        "Microsoft.Support/*",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "NotActions": [],
+      "DataActions": [],
+      "NotDataActions": [],
+      "AssignableScopes": [
+        "/subscriptions/00000000-0000-0000-0000-000000000000"
+      ]
     }
     ```
 
@@ -241,6 +241,20 @@ If a custom role is no longer needed, you can delete it. Follow these steps to d
     ```
 
 1. When asked to confirm, type **Y**.
+
+## Clean up
+
+Follow these steps to delete the files you created.
+
+1. Run these commands to delete the JSON files.
+
+    ```azurepowershell-interactive
+    del ./ReaderSupportRole.json
+    ```
+
+    ```azurepowershell-interactive
+    del ./ReaderSupportRole2.json
+    ```
 
 ## Summary
 

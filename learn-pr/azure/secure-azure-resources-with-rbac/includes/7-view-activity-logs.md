@@ -7,16 +7,6 @@ In this exercise, you learn how to:
 > [!div class="checklist"]
 > * View activity logs for RBAC changes
 
-## RBAC operations that are logged
-
-Here are the RBAC-related operations that are logged in Activity Log. The activity logs are retained for 90 days.
-
-- Create role assignment
-- Delete role assignment
-- Create or update custom role definition
-- Delete custom role definition
-
-
 ## View activity logs
 
 The easiest way to get started is to view the activity logs with the Azure portal.
@@ -35,10 +25,10 @@ The easiest way to get started is to view the activity logs with the Azure porta
 
 1. Select the following RBAC operations:
 
-    - Create or update custom role definition (roleDefinitions)
-    - Delete custom role definition (roleDefinitions)
     - Create role assignment (roleAssignments)
     - Delete role assignment (roleAssignments)
+    - Create or update custom role definition (roleDefinitions)
+    - Delete custom role definition (roleDefinitions)
 
     ![Operation filter](../images/7-operation-filter.png)
 

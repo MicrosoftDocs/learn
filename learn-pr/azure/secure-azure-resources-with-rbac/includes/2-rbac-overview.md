@@ -27,7 +27,7 @@ Here are some examples of what you can do with RBAC:
 
 In several areas in the Azure portal, you'll see a blade named **Access control (IAM)**, also known as identity and access management. On this blade, you can see who has access in that area and their role. Using this same blade, you can grant or remove access.
 
-The following shows an example of the Access control (IAM) blade for a resource group. In this example, Alain Charon has the Backup Operator role on this resource group.
+The following shows an example of the Access control (IAM) blade for a resource group. In this example, Alain Charon has been assigned the Backup Operator role on this resource group.
 
 ![Access control (IAM) in the Azure portal](../images/2-resource-group-access-control.png)
 
@@ -68,7 +68,7 @@ In Azure, you can specify a scope at multiple levels: management group, subscrip
 
 Once you have determined the who, what, and where, you can combine those elements to grant access. A *role assignment* is the process of binding a role to a security principal at a particular scope for the purpose of granting access. To grant access you create a role assignment. To revoke access, you remove a role assignment.
 
-The following example shows how the Marketing group has been granted the Contributor role at the sales resource group scope.
+The following example shows how the Marketing group has been assigned the Contributor role at the sales resource group scope.
 
 ![Role assignment](../images/2-rbac-overview.png)
 
