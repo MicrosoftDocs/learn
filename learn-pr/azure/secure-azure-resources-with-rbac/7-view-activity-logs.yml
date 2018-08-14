@@ -3,8 +3,7 @@ uid: learn.secure-azure-resources-with-rbac.7-view-activity-logs
 metadata:
   title: View activity logs for RBAC changes
   description: Learn how to use Activity Log to list RBAC changes in the portal and generate a simple report.
-  displayType: two-column
-  interactive: azurecli
+  displayType: one-column
 title: View activity logs for RBAC changes
 durationInMinutes: 5
 content: |
