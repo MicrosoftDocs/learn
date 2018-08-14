@@ -7,7 +7,6 @@ In this exercise, you learn how to:
 > [!div class="checklist"]
 > * Create a custom role
 > * List custom roles
-> * Update a custom role
 > * Delete a custom role
 
 ## Prerequisites
@@ -159,65 +158,6 @@ The easiest way to create a custom role is to start with a built-in role, edit i
 
     ![screenshot of custom role imported in the Azure portal](../images/6-custom-role-reader-support-tickets.png)
 
-## Update a custom role
-
-To update the custom role, you can update the JSON file.
-
-1. Use the [Get-AzureRmRoleDefinition](/powershell/module/azurerm.resources/get-azurermroledefinition) command to output the custom role in JSON format.
-
-    ```azurepowershell-interactive
-    Get-AzureRmRoleDefinition -Name "Reader Support Tickets" | ConvertTo-Json | Out-File ReaderSupportRole2.json
-    ```
-
-1. Open the **ReaderSupportRole2.json** file in the code editor.
-
-    ```azurepowershell-interactive
-    code ./ReaderSupportRole2.json
-    ```
-
-1. In `Actions`, add the operation to create and manage resource group deployments `"Microsoft.Resources/deployments/*"`.
-
-     Your updated JSON file should look like the following:
-
-     ```json
-    {
-      "Name": "Reader Support Tickets",
-      "Id": "22222222-2222-2222-2222-222222222222",
-      "IsCustom": true,
-      "Description": "View everything in the subscription and also open support tickets.",
-      "Actions": [
-        "*/read",
-        "Microsoft.Support/*",
-        "Microsoft.Resources/deployments/*"
-      ],
-      "NotActions": [],
-      "DataActions": [],
-      "NotDataActions": [],
-      "AssignableScopes": [
-        "/subscriptions/00000000-0000-0000-0000-000000000000"
-      ]
-    }
-    ```
-
-1. Save your changes and close the editor.
-
-1. To update the custom role, use the [Set-AzureRmRoleDefinition](/powershell/module/azurerm.resources/set-azurermroledefinition) command and specify the updated JSON file.
-
-     ```azurepowershell-interactive
-    Set-AzureRmRoleDefinition -InputFile "./ReaderSupportRole2.json"
-    ```
-     ```Output
-    Name             : Reader Support Tickets
-    Id               : 22222222-2222-2222-2222-222222222222
-    IsCustom         : True
-    Description      : View everything in the subscription and also open support tickets.
-    Actions          : {*/read, Microsoft.Support/*, Microsoft.Resources/deployments/*}
-    NotActions       : {}
-    DataActions      : {}
-    NotDataActions   : {}
-    AssignableScopes : {/subscriptions/00000000-0000-0000-0000-000000000000}
-    ```
-
 ## Delete a custom role
 
 If a custom role is no longer needed, you can delete it. Follow these steps to delete the custom role.
@@ -244,16 +184,12 @@ If a custom role is no longer needed, you can delete it. Follow these steps to d
 
 ## Clean up
 
-Follow these steps to delete the files you created.
+Follow this step to delete the file you created.
 
-1. Run these commands to delete the JSON files.
+1. Run the `del` command to delete the JSON file.
 
     ```azurepowershell-interactive
     del ./ReaderSupportRole.json
-    ```
-
-    ```azurepowershell-interactive
-    del ./ReaderSupportRole2.json
     ```
 
 ## Summary
