@@ -1,12 +1,12 @@
 An Azure Function is useless if there’s nothing to tell it when to execute. For example, using the situation from the previous unit, we could create an Azure Function to send out a reminder text message to our customers. However, if we don’t tell the function when it should run, our customers will never be reminded. 
 
-Here, you will examine triggers at a high-level and explore the most common types of triggers.
+Here, you'll examine triggers at a high level and explore the most common types of triggers.
 
 ## What is a trigger?
 
 A trigger is a service that defines how an Azure Function is invoked. For example, if you wanted a function to execute every 10 minutes, you could use a timer trigger.
 
-Every function must have exactly one trigger associated with it. This means that if you wanted to execute a piece of logic under multiple conditions you would need to create multiple functions.
+Every function must have exactly one trigger associated with it. If you wanted to execute a piece of logic under multiple conditions, you would need to create multiple functions.
 
 ## What is a binding?
 
@@ -16,7 +16,7 @@ Unlike a trigger, a function can have multiple input and output bindings.
 
 ## Types of triggers
 
-Azure Functions support a wide range of trigger types for the most common situations that a company would encounter. Here are some common triggers that you'll see:
+Azure Functions support a wide range of trigger types and here are some of the most common that you'll see:
 
 | Type | Purpose | 
 | --- | --- | 
