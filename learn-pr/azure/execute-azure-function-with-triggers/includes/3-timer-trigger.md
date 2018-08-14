@@ -10,14 +10,14 @@ A timer trigger is a trigger that executes a function at a consistent interval. 
 
 A *CRON expression* is a string that consists of six fields that represent a set of times.
 
-The order of the six fields in Azure are: {second} {minute} {hour} {day} {month} {day of the week}.
+The order of the six fields in Azure is: {second} {minute} {hour} {day} {month} {day of the week}.
 
 For example, a *CRON expression* to create a trigger that executes every 5 minutes would look like this:
 
 ```
 0 */5 * * * *
 ```
-At first this may look confusing, however, we'll come back and break this down when we have a deeper look at *CRON expressions*.
+At first this string may look confusing, however, we'll come back and break this down when we have a deeper look at *CRON expressions*.
 
 To build a *CRON expression*, you need to have a basic understanding of some of the special characters.
 

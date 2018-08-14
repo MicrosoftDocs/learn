@@ -1,4 +1,4 @@
-In this exercise we're going to create an Azure Function that displays the name and size of a blob when its created or updated. 
+In this exercise, we're going to create an Azure Function that displays the name and size of a blob when it's created or updated. 
 
 > [!NOTE] To complete this exercise make sure you're logged into the [Azure portal](https://portal.azure.com/) with a valid account.
 
@@ -22,7 +22,7 @@ Again, let's continue using our existing Azure Function application and add a bl
 
 ## Download Storage explorer
 
-Now that we created a blob trigger, lets download storage explorer which will allow us to easily create a blob.
+Now that we created a blob trigger, lets download storage explorer, which will allow us to easily create a blob.
 
 1. Download [Storage explorer](http://storageexplorer.com).
 
@@ -66,7 +66,7 @@ This means we need to create a container called **samples-workitems**.
 
 ## Turn on your blob trigger
 
-Now that we created our container that is going to be monitored, let’s turn on our blob trigger and function so that we can see output when we create a blob.
+Now that we created our container that will be monitored, let’s run our function so we can see output when a blob is created.
 
 1. Select your blob trigger to open the code screen.
 
@@ -86,7 +86,7 @@ Our blob trigger is now up and listening for activity. Let’s create a blob to 
 
 1. Click **Upload**.
 
-1. Go back to Azure and check your logs to see if you have a message displaying what file was uploaded.
+1. Go back to Azure and check your logs for a message displaying what file was uploaded.
 
 ## Cleanup
 

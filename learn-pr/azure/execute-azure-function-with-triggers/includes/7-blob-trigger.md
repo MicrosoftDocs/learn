@@ -38,7 +38,7 @@ One setting that you'll want to look at is the **Path**. The **Path** tells the 
 
 > samples-workitems/{name}
 
-Let's break this down into two pieces, *samples-workitems* and *{name}*. The first part, *samples-workitems*, represents the blob container that the trigger is going to be monitoring. The second part, *{name}*, means that every type of file will cause the trigger to invoke the function. This is because there is no filter. For example, I could make the trigger only invoke the function when a PNG file is added by doing something like this:
+Let's break this down into two pieces, *samples-workitems* and *{name}*. The first part, *samples-workitems*, represents the blob container that the trigger is going to be monitoring. The second part, *{name}*, means that every type of file will cause the trigger to invoke the function. This happens because there's no filter. For example, I could make the trigger only invoke the function when a PNG file is added by doing something like this:
 
 > samples-workitems/{name}.png
 
