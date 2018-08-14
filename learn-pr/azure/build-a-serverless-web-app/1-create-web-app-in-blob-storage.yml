@@ -11,7 +11,7 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: 'Please make sure that you have named the resource group "first-serverless-app" and it was added to the "westcentralus" location'.
+  hint: 'Please make sure that you have named the resource group "first-serverless-app" and it was added to the "westcentralus" location.'
   azure:
     resourceGroup: first-serverless-app
     location: westcentralus
