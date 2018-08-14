@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.build-image
+interactive: cloudshell
 metadata:
   title: Build container images with ACR
   description: Build container images with ACR.

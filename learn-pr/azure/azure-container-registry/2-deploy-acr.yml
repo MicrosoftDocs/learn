@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.deploy-acr
+interactive: cloudshell
 metadata:
   title: Deploy Azure Container Registry
   description: Deploy Azure Container Registry.

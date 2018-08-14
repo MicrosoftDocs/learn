@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.deploy-image
+interactive: cloudshell
 metadata:
   title: Deploy images from ACR
   description: Deploy images from ACR.

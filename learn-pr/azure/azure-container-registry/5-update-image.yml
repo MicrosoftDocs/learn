@@ -1,5 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.update-image
+interactive: cloudshell
 metadata:
   title: Update image in ACR
   description: Update image in ACR.
