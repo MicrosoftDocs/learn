@@ -4,6 +4,6 @@ title: Add authentication
 metadata:
   title: Add authentication
   description: Add authentication
-durationInMinutes: 12
+durationInMinutes: 4
 content: |
   [!include[](includes/6-add-authentication.md)]

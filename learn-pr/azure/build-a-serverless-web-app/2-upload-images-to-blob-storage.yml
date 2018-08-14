@@ -4,6 +4,6 @@ title: Upload images to Blob storage with Azure Functions
 metadata:
   title: Upload images to Blob storage with Azure Functions
   description: Upload images to Blob storage with Azure Functions.
-durationInMinutes: 12
+durationInMinutes: 11
 content: |
   [!include[](includes/2-upload-images-to-blob-storage.md)]
