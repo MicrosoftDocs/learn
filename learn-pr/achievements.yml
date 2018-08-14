@@ -24,7 +24,7 @@ achievements:
   type: badge
   title: Build a serverless web app Badge
   summary: Badge for the 'Build a serverless web app' module.
-  iconUrl: /learn/modules/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
+  iconUrl: /learn/azure/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
 - uid: learn.cd-pipeline-github-to-azure-web-app.badge
   type: badge
   title: Create a continuous deployment pipeline from GitHub to your Azure Web App Badge

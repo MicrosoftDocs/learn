@@ -4,10 +4,8 @@ uid: learn.sample-module-cloudshell.1-unit-text-only
 # `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
 metadata:
 # Search engine metadata
-  title: Sample unit 1 - Text only
+  title: Sample unit 1 optional longer seo-friendly title - Text only
   description: This is a sample of "text-only" content (no lab or knowledge check components).
-  displayType: one-column
-  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: Sample unit 1 - Text only
 # `title` appears in the header, ToC, and breadcrumbs
 durationInMinutes: 11
