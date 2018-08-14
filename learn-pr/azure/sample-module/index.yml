@@ -15,14 +15,14 @@ abstract: This is the abstract of the sample module
 cardDescription: This is the card description of the sample module
 # `cardDescription` appears on module card on docs.com/learn
 iconUrl: http://via.placeholder.com/120x120
-# `iconUrl` is the badge image 
-levels: 
+# `iconUrl` is the badge image
+levels:
 - intermediate
 # `beginner`, `intermediate`, `advanced`; multiple values accepted
-roles: 
+roles:
 - developer
 # `developer`, `administrator`, `solutionsArchitect`, `businessUser`, `businessAnalyst`; multiple values accepted
-products: 
+products:
 - Azure
 # `azure`; multiple values accepted
 units:
@@ -31,5 +31,6 @@ units:
 - learn.sample-module-cloudshell.2-unit-text-and-knowledge-check
 - learn.sample-module-cloudshell.3-unit-knowledge-check-only
 - learn.sample-module-cloudshell.4-unit-cloudshell-lab
+- learn.flow-create-approval.4-quiz-flow-approval.curtcu
 achievement: learn.sample-module-cloudshell.badge
 # `achievement` is the `uid` for the badge
