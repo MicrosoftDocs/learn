@@ -1,33 +1,25 @@
-### YamlMime:Tutorial
-title: Building Neural Networks with TensorFlow and the Azure Data Science Virtual Machine
+### YamlMime:Module
+uid: learn.create-neural-network-with-dsvm
 metadata:
-  title: Building Neural Networks with TensorFlow and the DSVM
-  description: In this lab, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
-  audience: Developer
-  level: Beginner
-items:
-- durationInMinutes: 5
-  content: |
-    [!include[](includes/overview.md)]
-- title: Create the DSVM
-  durationInMinutes: 10
-  content: |
-    [!include[](includes/setupenv.md)]
-- title: Connect to the DSVM
-  durationInMinutes: 5
-  content: |
-    [!include[](includes/connecttoenv.md)]
-- title: Train a TensorFlow model
-  durationInMinutes: 20
-  content: |
-    [!include[](includes/createTFmodel.md)]
-- title: Create a NotHotDog client app
-  durationInMinutes: 10
-  content: |
-    [!include[](includes/createclientapp.md)]
-- title: Delete your resources
-  durationInMinutes: 5
-  content: |
-    [!include[](includes/deleteenv.md)]
-- content: |
-    Congratulations on building a Hotdog or Not app using Python, TensorFlow and the DSVM.
+  title: Building Neural Networks with TensorFlow and the Azure Data Science Virtual Machine
+  description: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+title: Building Neural Networks with TensorFlow and the Azure Data Science Virtual Machine
+summary: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+abstract: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+cardDescription: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+# this is a placeholder and needs to be updated
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+units:
+- learn.create-neural-network-with-dsvm.1-create-dsvm
+- learn.create-neural-network-with-dsvm.2-connect-to-dsvm
+- learn.create-neural-network-with-dsvm.3-train-tensorflow-model
+- learn.create-neural-network-with-dsvm.4-create-client-app
+- learn.create-neural-network-with-dsvm.5-delete-env
+# this is a placeholder and needs to updated
+achievement: learn.placeholder.badge 
