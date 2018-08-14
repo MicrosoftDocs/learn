@@ -14,4 +14,4 @@ durationInMinutes: 5
 # `durationInMinutes` is manually created by the writer
 # Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
 content: |
- [!include[](includes/1-module-motivation.md)]
+  [!include[](includes/1-module-motivation.md)]
