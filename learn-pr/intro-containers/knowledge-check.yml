@@ -16,6 +16,6 @@ quiz:
     - content: Fast start times.
       incorrectExplanation: Why this answer is correct
       isCorrect: false
-      content: Containers allow you to host both applications and processes.
+    - content: Containers allow you to host both applications and processes.
       isCorrect: true
       correctExplanation: Why this answer is incorrect
