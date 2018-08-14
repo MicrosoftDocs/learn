@@ -9,7 +9,6 @@ content: |
 durationInMinutes: 5
 quiz:
   title: 'Quiz title'
-  description: 'Quiz Description'
   questions:
   - content: 'Which of the following is not a benefit of container adoption?'
     choices:
