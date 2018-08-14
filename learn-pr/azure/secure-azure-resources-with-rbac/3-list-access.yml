@@ -1,17 +1,11 @@
 ### YamlMime:ModuleUnit
-# YML code for unit
 uid: learn.secure-azure-resources-with-rbac.3-list-access
-# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
 metadata:
-# Search engine metadata
   title: List access using RBAC and the Azure portal 
   description: Learn how to list the role assignments for yourself and at different scopes in the Azure portal. 
   displayType: one-column
-  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: List access using RBAC and the Azure portal
-# `title` appears in the header, ToC, and breadcrumbs
 durationInMinutes: 10
-# `durationInMinutes` is manually created by the writer
 content: |
   [!include[](includes/3-list-access.md)]
 quiz:

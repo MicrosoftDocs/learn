@@ -1,17 +1,10 @@
 ### YamlMime:ModuleUnit
-# YML code for unit
 uid: learn.secure-azure-resources-with-rbac.8-module-summary
-# `uid`s are manually created by the writer and should follow the format <repo>.<module-short-name>.<unit-short-name>. Keep it easy on yourself and keep the module-short-name the same as the unit YAML file name.
 metadata:
-# Search engine metadata
   title: Module Summary
   description: Module Summary
   displayType: one-column
-  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
 title: Module Summary
-# `title` appears in the header, ToC, and breadcrumbs
 durationInMinutes: 1
-# `durationInMinutes` is manually created by the writer
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
 content: |
   [!include[](includes/8-module-summary.md)]
