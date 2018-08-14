@@ -7,4 +7,4 @@ metadata:
 durationInMinutes: 7
 interactive: cloudshell
 content: |
-  [!include[](includes/4-store-image-metadata-with-cosmos.md)] 
+  [!include[](includes/4-store-image-metadata-with-cosmos.md)]
