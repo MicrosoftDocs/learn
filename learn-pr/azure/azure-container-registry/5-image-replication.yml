@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.image-replication
-interactive: cloudshell
+#interactive: cloudshell
+interactive: powershell # temp placeholder until cloudshell option is available again
 metadata:
   title: Replicate a contianer image to differnet Azure regions
   description: Replicate a contianer image to differnet Azure regions.

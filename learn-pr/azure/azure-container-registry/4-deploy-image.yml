@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.deploy-image
-interactive: cloudshell
+#interactive: cloudshell
+interactive: powershell # temp placeholder until cloudshell option is available again
 metadata:
   title: Deploy images from ACR
   description: Deploy images from ACR.

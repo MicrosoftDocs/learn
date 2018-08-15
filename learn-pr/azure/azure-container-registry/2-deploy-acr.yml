@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.deploy-acr
-interactive: cloudshell
+#interactive: cloudshell
+interactive: powershell # temp placeholder until cloudshell option is available again
 metadata:
   title: Deploy Azure Container Registry
   description: Deploy Azure Container Registry.
