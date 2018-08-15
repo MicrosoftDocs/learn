@@ -1,36 +1,34 @@
-## Create Azure container registry
+# Create Azure container registry
 
 Before you create your container registry, you need a *resource group* to deploy it to. A resource group is a logical collection into which all Azure resources are deployed and managed.
 
-Create a resource group with the [az group create][az-group-create] command. In the following example, a resource group named *myResourceGroup* is created in the *eastus* region:
+Create a resource group with the `az group create` command. In the following example, a resource group named *myResourceGroup* is created in the *eastus* region:
 
 ```azurecli
 az group create --name myResourceGroup --location eastus
 ```
 
-Once you've created the resource group, create an Azure container registry with the [az acr create][az-acr-create] command. The container registry name must be unique within Azure, and contain 5-50 alphanumeric characters. Replace `<acrName>` with a unique name for your registry:
+Once you've created the resource group, create an Azure container registry with the `az acr create` command. The container registry name must be unique within Azure, and contain 5-50 alphanumeric characters. Replace `<acrName>` with a unique name for your registry:
 
 ```azurecli
-az acr create --resource-group myResourceGroup --name <acrName> --sku Basic --admin-enabled true
+az acr create --resource-group myResourceGroup --name <acrName> --sku Premium
 ```
 
-Here's example output for a new Azure container registry named *mycontainerregistry082* (shown here truncated):
+Here's example output for a new Azure container registry.
 
 ```console
-$ az acr create --resource-group myResourceGroup --name mycontainerregistry082 --sku Basic --admin-enabled true
-...
 {
-  "adminUserEnabled": true,
-  "creationDate": "2018-03-16T21:54:47.297875+00:00",
-  "id": "/subscriptions/<Subscription ID>/resourceGroups/myResourceGroup/providers/Microsoft.ContainerRegistry/registries/mycontainerregistry082",
+  "adminUserEnabled": false,
+  "creationDate": "2018-08-15T19:19:07.042178+00:00",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.ContainerRegistry/registries/myACR0007",
   "location": "eastus",
-  "loginServer": "mycontainerregistry082.azurecr.io",
-  "name": "mycontainerregistry082",
+  "loginServer": "myacr.azurecr.io",
+  "name": "myACR",
   "provisioningState": "Succeeded",
   "resourceGroup": "myResourceGroup",
   "sku": {
-    "name": "Basic",
-    "tier": "Basic"
+    "name": "Premium",
+    "tier": "Premium"
   },
   "status": null,
   "storageAccount": null,
@@ -39,11 +37,11 @@ $ az acr create --resource-group myResourceGroup --name mycontainerregistry082 -
 }
 ```
 
-The rest of the tutorial refers to `<acrName>` as a placeholder for the container registry name that you chose in this step.
+The rest of this module refers to `<acrName>` as a placeholder for the container registry name that you chose in this step.
 
-## Log in to container registry
+## Sign in to container registry
 
-You must log in to your Azure Container Registry instance before pushing images to it. Use the [az acr login][az-acr-login] command to complete the operation. You must provide the unique name you chose for the container registry when you created it.
+You must sign in to your Azure Container Registry instance before pushing images to it. Use the `az acr login` command to complete the operation. Provide the unique name you chose for the container registry when you created it.
 
 ```azurecli
 az acr login --name <acrName>

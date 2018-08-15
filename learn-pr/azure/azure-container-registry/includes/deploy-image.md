@@ -1,3 +1,5 @@
+# Run an image from Azure Container Registry
+
 In this unit, you create an Azure Key Vault and service principal, then deploy the container to Azure Container Instances (ACI) using the service principal's credentials.
 
 ## Configure registry authentication
@@ -6,9 +8,17 @@ All production scenarios should use service principals to access an Azure contai
 
 If you don't already have a vault in Azure Key Vault, create one with the Azure CLI using the following commands.
 
-```azurecli-interactive
-AKV_NAME=$ACR_NAME-vault
+First set up some environment variables. These variables are used throughout several commands in this unit.
 
+```azurecli
+ACR_NAME=<acrName>
+RES_GROUP=<resourGroupName>
+AKV_NAME=$ACR_NAME-vault
+```
+
+Create an Azure Key Vault with the `az keyvault create` command.
+
+```azurecli
 az keyvault create --resource-group $RES_GROUP --name $AKV_NAME
 ```
 
@@ -17,7 +27,6 @@ You now need to create a service principal and store its credentials in your key
 Use the `az ad sp create-for-rbac` command to create the service principal, and `az keyvault secret set` to store the service principal's **password** in the vault:
 
 ```azurecli-interactive
-# Create service principal, store its password in AKV (the registry *password*)
 az keyvault secret set \
   --vault-name $AKV_NAME \
   --name $ACR_NAME-pull-pwd \
@@ -34,7 +43,6 @@ The `--role` argument in the preceding command configures the service principal 
 Next, store the service principal's *appId* in the vault, which is the **username** you pass to Azure Container Registry for authentication:
 
 ```azurecli-interactive
-# Store service principal ID in AKV (the registry *username*)
 az keyvault secret set \
     --vault-name $AKV_NAME \
     --name $ACR_NAME-pull-usr \
@@ -59,28 +67,7 @@ az container create \
     --resource-group $RES_GROUP \
     --name acr-build \
     --image $ACR_NAME.azurecr.io/helloacrbuild:v1 \
-    --registry-login-server $ACR_NAME.azurecr.io \
+    --registry-login-server myacr0007.azurecr.io \
     --registry-username $(az keyvault secret show --vault-name $AKV_NAME --name $ACR_NAME-pull-usr --query value -o tsv) \
-    --registry-password $(az keyvault secret show --vault-name $AKV_NAME --name $ACR_NAME-pull-pwd --query value -o tsv) \
-    --dns-name-label acr-build-$ACR_NAME \
-    --query "{FQDN:ipAddress.fqdn}" \
-    --output table
-```
-
-The `--dns-name-label` value must be unique within Azure, so the preceding command appends your container registry's name to the container's DNS name label. The output from the command displays the container's fully qualified domain name (FQDN), for example:
-
-```console
-$ az container create \
->     --resource-group $RES_GROUP \
->     --name acr-build \
->     --image $ACR_NAME.azurecr.io/helloacrbuild:v1 \
->     --registry-login-server $ACR_NAME.azurecr.io \
->     --registry-username $(az keyvault secret show --vault-name $AKV_NAME --name $ACR_NAME-pull-usr --query value -o tsv) \
->     --registry-password $(az keyvault secret show --vault-name $AKV_NAME --name $ACR_NAME-pull-pwd --query value -o tsv) \
->     --dns-name-label acr-build-$ACR_NAME \
->     --query "{FQDN:ipAddress.fqdn}" \
->     --output table
-FQDN
--------------------------------------------
-acr-build-1175.eastus.azurecontainer.io
+    --registry-password $(az keyvault secret show --vault-name $AKV_NAME --name $ACR_NAME-pull-pwd --query value -o tsv)
 ```
