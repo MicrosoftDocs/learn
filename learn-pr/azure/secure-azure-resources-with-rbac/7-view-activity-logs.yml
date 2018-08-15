@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-azure-resources-with-rbac.7-view-activity-logs
+metadata:
+  title: View activity logs for RBAC changes
+  description: Learn how to use Activity Log to list RBAC changes in the portal and generate a simple report.
+  displayType: one-column
+title: View activity logs for RBAC changes
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-view-activity-logs.md)]
+quiz:
+  title: 'Quiz title'
+  questions:
+  - content: 'How long are RBAC changes saved in the activity log by default?'
+    choices:
+    - content: 1 month
+      isCorrect: false
+      correctExplanation: The retention is longer.
+    - content: 90 days
+      isCorrect: true
+      correctExplanation: Correct!
+    - content: 120 days
+      isCorrect: false
+      incorrectExplanation: The retention is shorter.
+    - content: 6 months
+      isCorrect: false
+      correctExplanation: The retention is shorter.
+  - content: 'Which of the following is not a valid RBAC operation that is logged in Activity Log?'
+    choices:
+    - content: Manage role assignment
+      isCorrect: true
+      correctExplanation: Correct! This is not a valid operation that gets logged.
+    - content: Create role assignment
+      isCorrect: false
+      correctExplanation: This not a valid operation that gets logged.
+    - content: Create or update custom role definition
+      isCorrect: false
+      incorrectExplanation:  This not a valid operation that gets logged.
+    - content: Delete custom role definition
+      isCorrect: false
+      correctExplanation:  This not a valid operation that gets logged.
