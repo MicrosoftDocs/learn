@@ -220,3 +220,8 @@ achievements:
   title: Deploy a website to Azure with VM Hosting Trophy
   summary: Trophy for the 'Deploy a website to Azure with VM Hosting' learning path.
   iconUrl: http://via.placeholder.com/120x120
+- uid: learn.store-app-data-with-azure-blob-storage.badge
+  type: badge
+  title: Store web application data with Azure Blob Storage
+  summary: Store web application data with Azure Blob Storage
+  iconUrl: /learn/modules/store-app-data-with-azure-blob-storage/achievement/store-app-data-with-azure-blob-storage.svg
