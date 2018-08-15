@@ -1,6 +1,7 @@
 In this exercise, we're going to create an Azure Function that accepts an HTTP request with a single string. The function will also return a string back to the caller to represent success or failure.
 
-> [!NOTE] To complete this exercise make sure you're logged into the [Azure portal](https://portal.azure.com/) with a valid account.
+> [!NOTE]
+> To complete this exercise make sure you're logged into the [Azure portal](https://portal.azure.com/) with a valid account.
 
 ## Create an HTTP trigger
 
