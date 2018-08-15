@@ -4,6 +4,7 @@ title: Store image metadata with Cosmos DB
 metadata:
   title: Store image metadata with Cosmos DB
   description: Store image metadata with Cosmos DB
-durationInMinutes: 12
+durationInMinutes: 7
+interactive: cloudshell
 content: |
-  [!include[](includes/4-store-image-metadata-with-cosmos.md)] 
+  [!include[](includes/4-store-image-metadata-with-cosmos.md)]

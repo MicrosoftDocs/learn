@@ -6,8 +6,6 @@ cardDescription: In this module, you will deploy a simple web application that p
 iconUrl: /learn/azure/build-a-serverless-web-app/achievement/build-a-serverless-web-app.svg
 levels:
 - intermediate
-# achievement is currently a placeholder and will need to be updated
-achievement: learn.placeholder.badge
 roles:
 - developer
 products:
@@ -24,3 +22,4 @@ units:
 - learn.build-a-serverless-web-app.5-add-captions-with-computer-vision
 - learn.build-a-serverless-web-app.6-add-authentication
 - learn.build-a-serverless-web-app.7-test-and-cleanup
+achievement: learn.build-a-serverless-web-app.badge
