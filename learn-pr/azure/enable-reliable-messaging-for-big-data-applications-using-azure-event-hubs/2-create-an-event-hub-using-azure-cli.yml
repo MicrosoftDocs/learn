@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.2-create-an-event-hub-using-azure-cli
+title: Create an Event Hub using Azure CLI
+metadata:
+  title: Create an Event Hub using Azure CLI
+  description: Create an Event Hub using Azure CLI
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-an-event-hub-using-azure-cli.md)]

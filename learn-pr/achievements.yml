@@ -225,3 +225,8 @@ achievements:
   title: Store web application data with Azure Blob Storage
   summary: Store web application data with Azure Blob Storage
   iconUrl: /learn/modules/store-app-data-with-azure-blob-storage/achievement/store-app-data-with-azure-blob-storage.svg
+- uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.badge
+  type: badge
+  title: Enable reliable messaging for Big Data Applications using Azure Event Hubs
+  summary: Enable reliable messaging for Big Data Applications using Azure Event Hubs
+  iconUrl: http://via.placeholder.com/120x120
