@@ -16,7 +16,7 @@ When you create an HTTP trigger you'll want to select a programming language, pr
 
 ## What is an HTTP trigger Authorization level?
 
-An HTTP trigger Authorization level is a flag that indicates if the function requires that the HTTP request contains an API key for authentication reasons.
+An HTTP trigger Authorization level is a flag that indicates if an incoming HTTP request needs an API key for authentication reasons.
 
 There are three Authorization levels:
 

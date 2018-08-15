@@ -7,6 +7,6 @@ You decide that the best way to develop this solution is to create an Azure Func
 - Determine which trigger will work best for your business needs.
 - Create a timer trigger that invokes a function on a consistent schedule.
 - Create an HTTP trigger that invokes a function when receiving an HTTP request.
-- Create a blog trigger that invokes a function when a blob is created or update in Azure Storage.
+- Create a blob trigger that invokes a function when a blob is created or updated in Azure Storage.
 
 
