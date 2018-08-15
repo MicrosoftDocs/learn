@@ -1,4 +1,4 @@
-An HTTP request is a common operation on all platforms and devices. Whether it's a request to look up a word in a dictionary or to get the local weather, we send HTTP requests all the time. Azure Functions allow us to quickly create a piece of logic that will be executed when receiving an HTTP request.  
+An HTTP request is a common operation on almost all platforms and devices. Whether it's a request to look up a word in a dictionary or to get the local weather, we send HTTP requests all the time. Azure Functions allow us to quickly create a piece of logic that will be executed when receiving an HTTP request.  
 
 Here, you'll learn how to create and invoke an Azure Function using an HTTP trigger. You will also explore some of the customization options available.
 
@@ -20,9 +20,9 @@ An HTTP trigger Authorization level is a flag that indicates if an incoming HTTP
 
 There are three Authorization levels:
 
-1. Function.
-2. Anonymous.
-3. Admin.
+1. Function
+2. Anonymous
+3. Admin
 
 The **Function** and **Admin** levels are "key" based. This means that to send an HTTP request you must supply a key for authentication. There are two types of keys: *function* and *host* keys. The differences between the two keys are the scope of them. *Function* keys are specific to a function whereas *host* keys apply to all functions inside the entire Azure Function application. If your Authorization level is set to Function, you can use either a *function* or a *host* key. If your Authorization level is set to Admin, you must supply a *host* key.
 
@@ -44,5 +44,4 @@ Once you have your function URL, you can begin sending HTTP requests. If your fu
 
 ## Summary
 
-An HTTP trigger invokes an Azure function when it receives an HTTP request to its function URL. HTTP triggers not only allow you to receive data, but they also allow you to return data back to the caller.
-
+An HTTP trigger invokes an Azure function when it receives an HTTP request to its function URL. HTTP triggers not only allow you to receive data, but they allow you to return data back to the caller.

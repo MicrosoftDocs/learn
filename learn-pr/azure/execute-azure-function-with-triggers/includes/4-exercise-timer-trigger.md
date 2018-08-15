@@ -4,7 +4,7 @@ In this exercise, we're going to create an Azure Function that is invoked every 
 
 ## Create an Azure Function
 
-Let’s start by creating an Azure Function through the portal.
+Let’s start by creating an Azure Function in the portal.
 
 1. In the left-hand navigation panel, click **Create a resource**.
 
@@ -52,7 +52,7 @@ Now we're going to create a timer trigger inside of our Azure Function.
 
 ## Configure the timer trigger
 
-As this point, we have an Azure Function containing code to print a message to the log window. We're now going to set the schedule of the timer to execute every 20 seconds.
+We have an Azure Function with logic to print a message to the log window. We're now going to set the schedule of the timer to execute every 20 seconds.
 
 1. Click **Integrate**.
 
