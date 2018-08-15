@@ -19,6 +19,6 @@ units:
 - learn.azure-container-registry.deploy-acr
 - learn.azure-container-registry.build-image
 - learn.azure-container-registry.deploy-image
-- learn.azure-container-registry.update-image
+- learn.azure-container-registry.image-replication
 - learn.azure-container-registry.knowledge-check
 achievement: learn.sample-module-cloudshell.badge
