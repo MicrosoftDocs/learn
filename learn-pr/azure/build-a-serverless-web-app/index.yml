@@ -22,3 +22,4 @@ units:
 - learn.build-a-serverless-web-app.5-add-captions-with-computer-vision
 - learn.build-a-serverless-web-app.6-add-authentication
 - learn.build-a-serverless-web-app.7-test-and-cleanup
+achievement: learn.build-a-serverless-web-app.badge
