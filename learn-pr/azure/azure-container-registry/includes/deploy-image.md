@@ -1,5 +1,3 @@
-# Run an image from Azure Container Registry
-
 In this unit, you create an Azure Key Vault and service principal, then deploy the container to Azure Container Instances (ACI) using the service principal's credentials.
 
 ## Configure registry authentication

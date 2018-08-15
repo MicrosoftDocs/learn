@@ -1,5 +1,3 @@
-# Introduction to private Docker container registries in Azure
-
 Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Azure Container Registry is a private registry, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments.
 
 Use container registries in Azure with your existing container development and deployment pipelines. Use Azure Container Registry Build (ACR Build) to build container images in Azure. Build on demand, or fully automate builds with source code commit and base image update build triggers.

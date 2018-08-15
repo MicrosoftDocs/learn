@@ -1,5 +1,3 @@
-# Replicate images to multiple Azure regions
-
 As a best practice, placing a container registry in each region where images are run allows network-close operations, enabling fast, reliable image layer transfers. Geo-replication enables an Azure container registry to function as a single registry, serving multiple regions with multi-master regional registries.
 
 A geo-replicated registry provides the following benefits:

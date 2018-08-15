@@ -1,5 +1,3 @@
-# Build container images with ACR Build
-
 With Azure Container Registry Build, container images can be built in the cloud, without the need for local tools such as Docker for Windows or Docker for Mac. Azure Container Registry Build also allows for inner-loop development in the cloud with on-demand container image builds, and automated builds on source code commit and base image update.
 
 In this unit, you automate the creation of a container image using Azure Container Registry Build.
