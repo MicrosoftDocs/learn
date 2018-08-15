@@ -1,6 +1,7 @@
 In this exercise, we're going to create an Azure Function that displays the name and size of a blob when it's created or updated. 
 
-> [!NOTE] To complete this exercise make sure you're logged into the [Azure portal](https://portal.azure.com/) with a valid account.
+> [!NOTE]
+> To complete this exercise make sure you're logged into the [Azure portal](https://portal.azure.com/) with a valid account.
 
 ## Create a blob trigger
 
