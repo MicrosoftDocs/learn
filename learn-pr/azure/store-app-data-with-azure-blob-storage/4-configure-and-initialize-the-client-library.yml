@@ -5,6 +5,6 @@ metadata:
   title: Configure and initialize the client library
   description: Configure and initialize the client library
 durationInMinutes: 10
-interactive: bashEditor
+interactive: bash-editor
 content: |
   [!include[](includes/4-configure-and-initialize-the-client-library.md)]

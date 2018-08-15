@@ -5,6 +5,6 @@ metadata:
   title: Getting blob references
   description: Getting blob references
 durationInMinutes: 10
-interactive: bashEditor
+interactive: bash-editor
 content: |
   [!include[](includes/5-getting-blob-references.md)]
