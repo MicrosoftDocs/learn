@@ -7,7 +7,8 @@ The method you use for installing the Azure CLI depends on the operating system 
 ### Linux
 Here you will install Azure CLI on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command line.
 
-> [!NOTE] The commands listed below are for Ubuntu version 18.04. If you are using a different version of Ubuntu, you must add a different repository. For details see [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt).
+> [!NOTE]
+> The commands listed below are for Ubuntu version 18.04. If you are using a different version of Ubuntu, you must add a different repository. For details see [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt).
 
 1. Modify your sources list so that the Microsoft repository is registered, and the package manager can locate the Azure CLI package.
 
@@ -31,7 +32,8 @@ Here you will install Azure CLI on Ubuntu Linux using the Advanced Packaging Too
 ### macOS
 Here you will install Azure CLI on macOS using the Homebrew package manager.
 
-> [!IMPORTANT] If the **brew** command is unavailable, you may need to install the Homebrew package manager. For details see the [Homebrew website](https://brew.sh/).
+> [!IMPORTANT]
+> If the **brew** command is unavailable, you may need to install the Homebrew package manager. For details see the [Homebrew website](https://brew.sh/).
 
 1. Update your brew repository, to make sure you get the latest Azure CLI package.
 
@@ -60,7 +62,8 @@ You run the Azure CLI by opening a bash shell (Linux and macOS), or from the Com
     az --version
     ```
 
-> [!NOTE] In Windows, running the Azure CLI from PowerShell has some advantages over running the Azure CLI from the Command Prompt; for example, PowerShell provides additional tab completion features over those available from the Command Prompt. 
+> [!NOTE]
+> In Windows, running the Azure CLI from PowerShell has some advantages over running the Azure CLI from the Command Prompt; for example, PowerShell provides additional tab completion features over those available from the Command Prompt. 
 
 ## Summary
 You setup your local machines to administer Azure resources with Azure CLI. You can now use Azure CLI locally to enter commands or execute scripts. Azure CLI will forward your commands to the Azure datacenters where they will run inside your Azure subscription.

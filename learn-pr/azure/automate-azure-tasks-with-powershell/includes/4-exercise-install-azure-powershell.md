@@ -7,7 +7,8 @@ On Linux and macOS, the first step is to install **PowerShell Core**.
 ### Linux
 You will install PowerShell Core on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command line. 
 
-> [!NOTE] The commands listed below are for Ubuntu version 18.04. If you are using a different version of Ubuntu, you must add a different repository. For details see [Installing PowerShell Core on Linux](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell-core-on-linux).
+> [!NOTE]
+> The commands listed below are for Ubuntu version 18.04. If you are using a different version of Ubuntu, you must add a different repository. For details see [Installing PowerShell Core on Linux](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell-core-on-linux).
 
 1. Import the encryption key for the Microsoft Ubuntu repository. This will allow the package manager to verify that the PowerShell Core package you install comes from Microsoft.
 
@@ -41,7 +42,8 @@ You will install PowerShell Core on Ubuntu Linux using the Advanced Packaging To
 ### macOS
 Next, install **PowerShell Core** on macOS using the Homebrew package manager.
 
-> [!IMPORTANT] If the **brew** command is unavailable, you may need to install the Homebrew package manager. For details see the [Homebrew website](https://brew.sh/).
+> [!IMPORTANT]
+> If the **brew** command is unavailable, you may need to install the Homebrew package manager. For details see the [Homebrew website](https://brew.sh/).
 
 1. Install Homebrew-Cask to obtain more packages, including the PowerShell Core package:
 
@@ -66,7 +68,8 @@ After installing the base **PowerShell** product, install **Azure PowerShell** t
 ### Windows
 Install Azure PowerShell on Windows using the **Install-Module** PowerShell command.
 
-> [!IMPORTANT] You must have PowerShell version 5.0 or higher to install Azure PowerShell. To check your version of PowerShell, use the following command: 
+> [!IMPORTANT]
+> You must have PowerShell version 5.0 or higher to install Azure PowerShell. To check your version of PowerShell, use the following command: 
 >
 > `$PSVersionTable.PSVersion` 
 >

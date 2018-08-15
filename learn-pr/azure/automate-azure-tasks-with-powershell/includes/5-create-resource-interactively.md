@@ -43,7 +43,8 @@ You use the **Import-Module** cmdlet to load modules. This cmdlet has many param
 Import-Module <module-name>
 ```
 
-> [!TIP] If you find that you work with Azure PowerShell frequently, there are two ways you can automate the module-loading process. You can add an entry to your PowerShell profile to import the Azure module at startup or use the latest versions of PowerShell which loads the containing module automatically when you use a cmdlet.
+> [!TIP] 
+> If you find that you work with Azure PowerShell frequently, there are two ways you can automate the module-loading process. You can add an entry to your PowerShell profile to import the Azure module at startup or use the latest versions of PowerShell which loads the containing module automatically when you use a cmdlet.
 
 ### Connect
 Since you are working with a local install of Azure PowerShell, you will need to authenticate before you can execute Azure commands. The **Connect-AzureRmAccount** cmdlet prompts for your Azure credentials and then connects to your Azure subscription. It has many optional parameters, but if all you need is an interactive prompt, then no parameters are needed:

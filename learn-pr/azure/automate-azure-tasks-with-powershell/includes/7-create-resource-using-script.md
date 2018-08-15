@@ -14,7 +14,8 @@ A PowerShell script is a text file containing commands and control constructs. T
 
 PowerShell script files have a **.ps1** file extension. You can create and save these files with any text editor. 
 
-> [!TIP] If you’re writing PowerShell scripts under Windows, you can use the Windows PowerShell Integrated Scripting Environment (ISE). This editor provides features such as syntax coloring and a list of available cmdlets.
+> [!TIP]
+> If you’re writing PowerShell scripts under Windows, you can use the Windows PowerShell Integrated Scripting Environment (ISE). This editor provides features such as syntax coloring and a list of available cmdlets.
 >
 >![The Windows PowerShell ISE](../images/7-windows-powershell-ise-screenshot.png)
 
