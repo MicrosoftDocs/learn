@@ -1,0 +1,11 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-container-registry.image-replication
+interactive: cloudshell
+metadata:
+  title: Replicate a contianer image to differnet Azure regions
+  description: Replicate a contianer image to differnet Azure regions.
+  displayType: one-column
+title: Replicate a contianer image to differnet Azure regions
+durationInMinutes: 15
+content: |
+  [!include[](includes/image-replication.md)]
