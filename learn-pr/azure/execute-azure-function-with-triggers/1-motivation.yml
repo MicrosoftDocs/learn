@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: execute-azure-function-with-triggers.1-motivation
-title: Motivation
-metadata:
-  title: Motivation
-  description: Motivation
-durationInMinutes: 2
-content: |
-  [!include[](includes/1-motivation.md)]

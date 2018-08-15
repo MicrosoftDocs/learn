@@ -1,4 +1,4 @@
-An Azure Function is useless if there’s nothing to tell it when to execute. For example, using the situation from the previous unit, we could create an Azure Function to send out a reminder text message to our customers. However, if we don’t tell the function when it should run, our customers will never be reminded. 
+An Azure Function doesn't do work until something tells it to execute. For example, we could create an Azure Function to send out a reminder text message to our customers before an appointment. However, if we don’t tell the function when it should run, our customers will never receive a message. 
 
 Here, you'll examine triggers at a high level and explore the most common types of triggers.
 
@@ -20,18 +20,15 @@ Azure Functions support a wide range of trigger types and here are some of the m
 
 | Type | Purpose | 
 | --- | --- | 
-| **Timer** | Executes a function at a set interval. | 
-| **HTTP** | Executes a function when receiving an HTTP request. |  
-| **Blob** | Executes a function when a file is uploaded or updated in Azure Blob storage. | 
-| **Queue** | Executes a function when a message is added to an Azure Storage queue. | 
-| **Cosmos DB** | Executes a function when a document changes in a collection. | 
-| **Event Hub** | Executes a function when an event hub receives a new event. | 
+| **Timer** | Executes a function at a set interval | 
+| **HTTP** | Executes a function when receiving an HTTP request |  
+| **Blob** | Executes a function when a file is uploaded or updated in Azure Blob storage | 
+| **Queue** | Executes a function when a message is added to an Azure Storage queue | 
+| **Cosmos DB** | Executes a function when a document changes in a collection | 
+| **Event Hub** | Executes a function when an event hub receives a new event | 
 
 In this module, we're going to focus on timer, HTTP, and blob.
 
 ## Summary
 
-To execute and Azure Function we need to wire-up a trigger. Timer, HTTP, and blob triggers are some common types of triggers and can help solve a large portion of your business needs.
-
-
-
+To execute and Azure Function we need to use a trigger. Timer, HTTP, and blob triggers are three of the most common trigger types that you'll use to execute serverless logic.

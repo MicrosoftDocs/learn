@@ -1,3 +1,1 @@
-As we saw, an Azure Function is useless if there’s nothing to tell it when to execute. In this module, we explored timer, HTTP, and blob triggers. Timer triggers are great when you need to execute a function at a consistent time. HTTP triggers allow you to execute logic when you receive data from an outside source. Blob triggers allow you to respond to data being stored or updated in the cloud.
-
-
+An Azure Function won't do work until something explicitly tells it to execute. In this module, we explored timer, HTTP, and blob triggers. Timer triggers are great when you need to execute a function at a consistent time. HTTP triggers allow you to execute logic when you receive data from an outside source. Blob triggers allow you to respond to data being stored or updated in the cloud.

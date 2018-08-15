@@ -16,7 +16,7 @@ products:
 - Azure
 
 units:
-- execute-azure-function-with-triggers.1-motivation
+- execute-azure-function-with-triggers.1-introduction
 - execute-azure-function-with-triggers.2-determine-best-trigger
 - execute-azure-function-with-triggers.3-timer-trigger
 - execute-azure-function-with-triggers.4-exercise-timer-trigger
