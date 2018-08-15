@@ -1,0 +1,26 @@
+### YamlMime:Module
+uid: learn.distribute-data-globally-with-cosmos-db
+metadata:
+  title: Distribute your data globally with Azure Cosmos DB
+  description: Learn how to distribute your data globally with Azure Cosmos DB.
+title: Distribute your data globally with Azure Cosmos DB
+summary: Learn how to distribute your data globally with Azure Cosmos DB.
+abstract: In this module, you will replicate your Azure Cosmos DB data around the world, change the priority of your read and write regions, and modify your consistency settings.
+cardDescription: Distribute your data globally with Azure Cosmos DB
+#TODO: Need icon URL
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- advanced
+roles:
+- developer
+products:
+- Azure
+units:
+- learn.distribute-data-globally-with-cosmos-db.1-introduction
+- learn.distribute-data-globally-with-cosmos-db.2-global-distribution
+- learn.distribute-data-globally-with-cosmos-db.3-knowledge-check-global-distribution
+- learn.distribute-data-globally-with-cosmos-db.4-change-priorities
+- learn.distribute-data-globally-with-cosmos-db.5-change-consistency
+- learn.distribute-data-globally-with-cosmos-db.6-summary-cleanup
+#TODO: Need achievement badge?
+achievement: learn.placeholder.badge
