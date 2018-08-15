@@ -5,6 +5,6 @@ metadata:
   title: Configure, deploy and run in Azure
   description: Configure, deploy and run in Azure
 durationInMinutes: 10
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/5-configure-deploy-run-azure.md)]

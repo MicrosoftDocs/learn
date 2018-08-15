@@ -4,7 +4,7 @@ metadata:
   title: Create a custom role using Azure PowerShell
   description: Learn how to create a custom role with the permissions you select.
   displayType: two-column
-  interactive: cloudshell
+  interactive: bash
 title: Create a custom role using Azure PowerShell
 durationInMinutes: 10
 content: |

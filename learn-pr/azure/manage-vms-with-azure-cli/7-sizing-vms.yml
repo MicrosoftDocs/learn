@@ -4,7 +4,7 @@ title: Sizing VMs properly
 metadata:
   title: Sizing VMs properly
   description: Learn how to size the VM to the assigned workload
-interactive: cloudshell
+interactive: bash
 durationInMinutes: 4
 content: |
   [!include[](includes/7-sizing-vms.md)]

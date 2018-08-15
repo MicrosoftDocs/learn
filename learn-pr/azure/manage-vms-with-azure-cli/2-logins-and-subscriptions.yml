@@ -4,7 +4,7 @@ title: Logins and Subscriptions
 metadata:
   title: Logins and Subscriptions
   description: Login to the Azure CLI and select a subscription to work with
-interactive: cloudshell
+interactive: bash
 durationInMinutes: 5
 content: |
   [!include[](includes/2-logins-and-subscriptions.md)]

@@ -5,6 +5,6 @@ metadata:
   title: Cleanup, next steps and knowledge check
   description: Cleanup, next steps and knowledge check
 durationInMinutes: 2
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/6-cleanup-next-steps-knowledge-check.md)]

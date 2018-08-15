@@ -4,7 +4,7 @@ title: Create a virtual machine
 metadata:
   title: Create a virtual machine
   description: Use the Azure CLI to create a new VM
-interactive: cloudshell
+interactive: bash
 durationInMinutes: 5
 content: |
   [!include[](includes/4-create-a-vm.md)]

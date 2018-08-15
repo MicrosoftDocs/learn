@@ -5,6 +5,6 @@ metadata:
   title: Store image metadata with Cosmos DB
   description: Store image metadata with Cosmos DB
 durationInMinutes: 7
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/4-store-image-metadata-with-cosmos.md)]

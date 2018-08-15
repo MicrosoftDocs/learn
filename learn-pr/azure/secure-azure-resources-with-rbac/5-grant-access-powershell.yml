@@ -4,7 +4,7 @@ metadata:
   title: Grant access using RBAC and Azure PowerShell
   description: Learn how to grant a user access to create and manage virtual machines in a resource group using Azure PowerShell.
   displayType: two-column
-  interactive: cloudshell
+  interactive: bash
 title: Grant access using RBAC and Azure PowerShell
 durationInMinutes: 10
 content: |

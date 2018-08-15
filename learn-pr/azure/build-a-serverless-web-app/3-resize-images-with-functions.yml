@@ -5,6 +5,6 @@ metadata:
   title: Resize images with Azure Functions
   description: Resize images with Azure Functions.
 durationInMinutes: 7
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/3-resize-images-with-functions.md)]

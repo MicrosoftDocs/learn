@@ -17,7 +17,7 @@ iconUrl: http://via.placeholder.com/120x120
 levels:
 - intermediate
 roles:
-- solutionsArchitect
+- solutions-architect
 # achievement is currently a placeholder and will need to be updated
 achievement: learn.placeholder.badge
 products:

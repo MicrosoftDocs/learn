@@ -5,7 +5,7 @@ metadata:
   title: Create a web app in Azure blob storage
   description: Create a web app in Azure blob storage
 durationInMinutes: 5
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/1-create-web-app-in-blob-storage.md)]
 tasks:

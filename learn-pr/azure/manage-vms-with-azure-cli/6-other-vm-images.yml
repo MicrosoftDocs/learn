@@ -4,7 +4,7 @@ title: Explore other VM images
 metadata:
   title: Explore other VM images
   description: Learn about the other image types you can use to create VMs in Azure
-interactive: cloudshell
+interactive: bash
 durationInMinutes: 3
 content: |
   [!include[](includes/6-other-vm-images.md)]

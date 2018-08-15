@@ -5,6 +5,6 @@ metadata:
   title: Add authentication
   description: Add authentication
 durationInMinutes: 4
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/6-add-authentication.md)]

@@ -10,7 +10,7 @@ title: Sample Unit 4 - CloudShell Lab
 # `title` appears the header, ToC, and breadcrumbs
 durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/4-unit-cloudshell-lab.md)]
 tasks:

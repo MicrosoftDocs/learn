@@ -4,7 +4,7 @@ title: Start and Stop your VM with the Azure CLI
 metadata:
   title: Start and Stop your VM with the Azure CLI
   description: Learn how to use the Azure CLI to start and stop a virtual machine
-interactive: cloudshell
+interactive: bash
 durationInMinutes: 4
 content: |
   [!include[](includes/9-managing-vms.md)]

@@ -5,6 +5,6 @@ metadata:
   title: Upload images to Blob storage with Azure Functions
   description: Upload images to Blob storage with Azure Functions.
 durationInMinutes: 11
-interactive: cloudshell
+interactive: bash
 content: |
   [!include[](includes/2-upload-images-to-blob-storage.md)]
