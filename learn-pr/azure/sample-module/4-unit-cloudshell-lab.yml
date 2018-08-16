@@ -11,6 +11,7 @@ title: Sample Unit 4 - CloudShell Lab
 durationInMinutes: 11
 # `durationInMinutes` is manually created by the writer
 interactive: bash
+# `azure-portal`, `bash`, `bash-editor`, `csharp`, `powershell`, `powershell-editor`
 content: |
   [!include[](includes/4-unit-cloudshell-lab.md)]
 tasks:
