@@ -45,15 +45,21 @@ Below are the full details of each offer. If you are a customer on an Enterprise
 
 ## Bring your own SQL Server license
 
-If you are a customer on an Enterprise Agreement and already have an investment in SQL Server licenses and they have freed up as part of moving resources to Azure, you can provision BYOL images off the Azure Marketplace, giving you the ability to take advantage of these unused licenses and reduce your Azure VM cost. You've always been able to do this by provisioning a Windows VM and manually installing SQL Server, but this simplifies the creation process by leveraging Microsoft certified images. Take a look at the following blog post from the initial announcement, and you'll find these marketplace images available for you today to take advantage of.
+If you are a customer on an Enterprise Agreement and already have an investment in SQL Server licenses and they have freed up as part of moving resources to Azure, you can provision "Bring your own licensed" (BYOL) images off the Azure Marketplace, giving you the ability to take advantage of these unused licenses and reduce your Azure VM cost. You've always been able to do this by provisioning a Windows VM and manually installing SQL Server, but this simplifies the creation process by leveraging Microsoft certified images. Search for "BYOL" in the Marketplace to find these images.
 
-https://azure.microsoft.com/en-us/blog/easily-bring-your-sql-server-licenses-to-azure-vms/
+![BYOL for SQL Server in Azure](../images/byol-sql-server.png)
+
+> [!IMPORTANT]
+> An Enterprise Agreement subscription is required to use these certified BYOL images.
 
 ## Use SQL Server Developer Edition
 
-As of **April 1, 2016**, Microsoft has made SQL Server Developer Edition a free product for non-production use. This is yet another way you can save on Azure costs for your non-production environments. On the Azure Marketplace, you can find SQL Server 2016 and SQL Server 2017 images for Developer Edition, which will eliminate the additional cost for SQL Server. Developer Edition has all the same features that Enterprise Edition has, but for non-production workloads you can save dramatically on your licensing costs. For full licensing information, take a look at the [documented pricing guidance](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance). 
+A lot of people are unaware that SQL Server Developer Edition is a free product for **non-production use**. Developer Edition has all the same features that Enterprise Edition has, but for non-production workloads you can save dramatically on your licensing costs.
 
-Bottom line: for non-production workloads that use SQL Server you should look closely at taking advantage of this offer.
+Look for SQL Server images for Developer Edition on the Azure marketplace and use them for development or testing purposes to eliminate the additional cost for SQL Server in these cases.
+
+> [!NOTE]
+> For full licensing information, take a look at the [documented pricing guidance](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance).
 
 ## Use constrained instance sizes for database workloads
 
