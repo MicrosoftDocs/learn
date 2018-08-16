@@ -9,7 +9,6 @@ content: |
   [!include[](includes/2-estimate-costs-with-the-azure-pricing-calculator.md)]
 quiz:
   title: Estimate Costs with Azure Pricing Calculator
-  description: Things you can do with the Azure Pricing Calculator
   questions:
   - content: "In which tab of the Azure Pricing Calculator will you formulate your estimate?"
     choices:
