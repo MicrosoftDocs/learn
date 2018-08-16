@@ -12,7 +12,6 @@ Often when attempting to run deep learning tasks developers find themselves faci
 
 To get around these issues and to increase the usability of code, you can use Nvidia-Docker to manage and run deep learning projects.
 
-
 Quiz
 
 - What is CUDA?

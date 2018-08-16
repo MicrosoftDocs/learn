@@ -1,6 +1,5 @@
-# 4 Train your first deep learning model using pytorch and jupyter
+# 4 Train your first deep learning model using PyTorch and Jupyter
 
-# Intro to PyTorch
 ![](https://notebooks.azure.com/goldengrape/libraries/pytorch-tutorial/raw/logo/pytorch_logo.png)
 
 Typically deep learning engineers don't hard code matrix algebra operations all by hand. They instead use frameworks such as PyTorch or TensorFlow. 

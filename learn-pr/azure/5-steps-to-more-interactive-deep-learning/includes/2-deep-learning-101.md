@@ -21,28 +21,11 @@ They provide
 
 - On-demand elastic capacity Ability to run analytics on all Azure hardware configurations with vertical and horizontal scaling. Pay only for what you use, when you use it.
 
-
 - Deep Learning with GPUs Readily available GPU clusters with Deep Learning tools already pre-configured. Specialized Deep Learning Virtual Machines with samples and workflows.
 
 The DSVM contains several tools for AI including popular GPU editions of deep learning frameworks and tools such as Microsoft R Server Developer Edition, Anaconda Python, Jupyter notebooks for Python and R, IDEs for Python and R, SQL database and many other data science and ML tools.
 
 The DSVM can run on Azure GPU NC-series VM instances. These GPUs use discrete device assignment, resulting in performance close to bare-metal, and are well-suited to deep learning problems.
-
-### PyTorch
-![](https://notebooks.azure.com/goldengrape/libraries/pytorch-tutorial/raw/logo/pytorch_logo.png)
-
-Typically deep learning engineers don't hard code matrix algebra operations all by hand. They instead use frameworks such as PyTorch or TensorFlow. 
-
-PyTorch is a python based framewok that provides flexibility as a deep learning development platform. PyTorch's workflow is built on top of python scientific computing library numpy.
-
-Now you might ask, why would we use PyTorch to build deep learning models? 
-
-- Easy to use API – It is as simple as python can be.
-
-- Python support – PyTorch smoothly integrates with the scientific computing stack.
-
-- Dynamic computation graphs – Instead of predefined graphs with specific functionalities, PyTorch build computational graphs dynamically that can be modified during runtime. This is valuable for nested batching and when one a developer doesn't know how memory is going to be needed for creating a network.
-
 
 ### Quiz?
 
@@ -53,5 +36,3 @@ How is traditional machine learning different from deep learning?
 Why are GPU's often used for deep learning?
 
 What does the DSVM provide?
-
-What is pytorch?
