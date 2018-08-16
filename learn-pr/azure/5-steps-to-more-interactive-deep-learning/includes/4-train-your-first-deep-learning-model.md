@@ -14,7 +14,7 @@ Now you might ask, why would we use PyTorch to build deep learning models?
 
 - Dynamic computation graphs – Instead of predefined graphs with specific functionalities, PyTorch build computational graphs dynamically that can be modified during runtime. This is valuable for nested batching and when one a developer doesn't know how memory is going to be needed for creating a network.
 
-##Quiz 
+## Quiz 
 
 Train your first classifier using [the notebook](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py
 ) in the container we just started
