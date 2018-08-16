@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+# YML code for unit
+uid: principles-cloud-computing.6-knowledge-check
+metadata:
+  title: Check your knowledge
+  description: Check your knowledge
+  displayType: one-column
+title: Check your knowledge
+durationInMinutes: 10
+content: Content is required
+quiz:
+  title: Knowledge check
+  questions:
+  - content: True or false, when using a public cloud provider like Azure, you're required to pay the entire cost of the physical hardware up-front?
+    choices:
+    - content: 'True'
+      incorrectExplanation: Azure supports a pay-as-you-go pricing model. This means that you rent the hardware and only pay for the resources that you use.
+      isCorrect: false
+    - content: 'False'
+      correctExplanation: Azure supports a pay-as-you-go pricing model. This means that you rent the hardware and only pay for the resources that you use.
+      isCorrect: true
+  - content: Suppose your website had a spike in traffic overnight. Using a public cloud provider like Azure, it's possible that your website experienced no down time because it automatically scaled its resources? 
+    choices:
+    - content: 'True'
+      correctExplanation: Cloud computing is considered elastic. This means that resources can automatically be allocated or deallocated based off demand.
+      isCorrect: true
+    - content: 'False'
+      incorrectExplanation: Cloud computing is considered elastic. This means that resources can automatically be allocated or deallocated based off demand.
+      isCorrect: false
+  - content: Suppose you're moving to the cloud and you want high scalability, rented hardware, and security is not a big concern. Which cloud deployment model is best to use? 
+    choices:
+    - content: 'Public cloud'
+      correctExplanation: A public cloud is owned and operated by a third-party cloud provider which has the benefits of scalability and rented hardware. Since the hardware is not owned by you, you can't control who has physical access to it.
+      isCorrect: true
+    - content: 'Private cloud'
+      incorrectExplanation: A primary reason to choose a private cloud is security. With a private cloud, hardware is typically owned and operated on-premise.
+      isCorrect: false
+    - content: 'Hybrid cloud'
+      incorrectExplanation: A hybrid cloud is a public and private cloud combined. Since security is not a concern of yours, there's no need to move anything to the private cloud.
+      isCorrect: false
+  - content: Suppose you're building an application and you want to get it to your users as fast as possible. You don't want to worry about managing the underlying hardware or software, you just want to focus on building, testing, and deploying. Which cloud service type is best for you?
+    choices:
+    - content: 'Infrastructure as a service'
+      incorrectExplanation: With infrastructure as a service, you're responsible for managing the hardware and software. This includes tasks like performing system updates on virtual machines.
+      isCorrect: false
+    - content: 'Platform as a service'
+      correctExplanation: The goal of platform as a service is to help you create an application as fast as possible. The IT management tasks are done for you, so you can focus on writing code.
+      isCorrect: true
+    - content: 'Software as a service'
+      incorrectExplanation: With software as a service, you use an existing application through a web browser or software application.
+      isCorrect: false
+
