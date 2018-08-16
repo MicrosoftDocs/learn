@@ -10,10 +10,10 @@ In this module, we will explore the tools you can use to answer all these questi
 
 ## Learning Objectives
 > [!div class="checklist"]
-> Estimate costs with the Azure Pricing Calculator
-> Predict and optimize costs with the Cost Management Tool and the Azure Advisor
-> Best practices for saving on infrastructure costs
-> Best practices for saving on licensing costs
+> * Estimate costs with the Azure Pricing Calculator
+> * Predict and optimize costs with the Cost Management Tool and the Azure Advisor
+> * Best practices for saving on infrastructure costs
+> * Best practices for saving on licensing costs
 
 ## Prerequisites
 - An understanding of your options within Azure infrastructure components
