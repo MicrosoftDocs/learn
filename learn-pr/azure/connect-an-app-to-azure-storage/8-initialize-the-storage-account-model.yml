@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.connect-app-to-azure-storage.5-initialize-storage-account
+uid: learn.connect-app-to-azure-storage.8-initialize-the-storage-account-model
 title: Initialize the storage account model
 metadata:
   title: Initialize the storage account model
   description: Initialize the storage account model
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
-  [!include[](includes/5-initialize-storage-account.md)]
+  [!include[](includes/8-initialize-the-storage-account-model.md)]

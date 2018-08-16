@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-app-to-azure-storage.10-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
