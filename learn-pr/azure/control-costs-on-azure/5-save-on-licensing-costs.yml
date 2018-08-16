@@ -8,23 +8,21 @@ durationInMinutes: 5
 content: |
   [!include[](includes/5-save-on-licensing-costs.md)]
 quiz:
-  title: 'Quiz Title'
-  questions:
-  - content: 'Question 1'
-    choices:
-    - content: Answer 1
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: true
-    - content: Answer 2
-      isCorrect: false
-  - content: 'Question 2'
-    choices:
-    - content: Answer A
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: true
-    - content: Answer B
-      isCorrect: false
-    - content: Answer C
-      isCorrect: false
+    title: "Save on Licensing Costs"
+    questions:
+    - content: "If you already have Windows Server licenses, you have to pay for them again on Azure."
+      choices:
+      - content: "True"
+        incorrectExplanation: "Under certain circumstances, you can utilize the hybrid benefit for Windows Sever and pay only the Linux rate."
+        isCorrect: false
+      - content: "False"
+        correctExplanation: "Under certain circumstances, you can utilize the hybrid benefit for Windows Sever and pay only the Linux rate."
+        isCorrect: true
+    - content: "Azure has money saving options for Test and Development Servers"
+      choices:
+      - content: "True"
+        correctExplanation: "Yes, the Enterprise Dev/Test and Pay-As-You-Go Dev/Test benefit gives you several discounts, most notably for Windows workloads, eliminating license charges and only billing you at the Linux rate for virtual machines. This also applies to SQL Server, and any other Microsoft software that is covered under Visual Studio subscription."
+        isCorrect: true
+      - content: "False"
+        incorrectExplanation: "The Enterprise Dev/Test and Pay-As-You-Go Dev/Test benefit gives you several discounts, most notably for Windows workloads, eliminating license charges and only billing you at the Linux rate for virtual machines. This also applies to SQL Server, and any other Microsoft software that is covered under Visual Studio subscription."
+        isCorrect: false

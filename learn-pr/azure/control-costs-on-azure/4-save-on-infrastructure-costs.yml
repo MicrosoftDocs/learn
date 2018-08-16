@@ -8,23 +8,30 @@ durationInMinutes: 5
 content: |
   [!include[](includes/4-save-on-infrastructure-costs.md)]
 quiz:
-  title: 'Quiz Title'
-  questions:
-  - content: 'Question 1'
-    choices:
-    - content: Answer 1
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: true
-    - content: Answer 2
-      isCorrect: false
-  - content: 'Question 2'
-    choices:
-    - content: Answer A
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: true
-    - content: Answer B
-      isCorrect: false
-    - content: Answer C
-      isCorrect: false
+    title: "Save on infrastructure costs"
+    questions:
+    - content: "Which one of these is <b>not</b> a cost saving solution?"
+      choices:
+      - content: "Deallocate Virtual Machines in off hours."
+        incorrectExplanation: "Using Reserved Instances, deallocating virtual machines in off hours, right-sizing underutilized virtual machines, deleting unused virtual machines, and migrating to PaaS or SaaS are all examples of cost saving solutions."
+        isCorrect: false
+      - content: "Use Reserved Instances"
+        incorrectExplanation: "Using Reserved Instances, deallocating virtual machines in off hours, right-sizing underutilized virtual machines, deleting unused virtual machines, and migrating to PaaS or SaaS are all examples of cost saving solutions."
+        isCorrect: false
+      - content: "Load Balance your Virtual Machines for incoming messages"
+        correctExplanation: "Load Balancing is used for performance optimization. Using Reserved Instances, deallocating virtual machines in off hours, right-sizing underutilized virtual machines, deleting unused virtual machines, and migrating to PaaS or SaaS are all examples of cost saving solutions."
+        isCorrect: true
+      - content: "Right-size underutilized Virtual Machines"
+        incorrectExplanation: "Using Reserved Instances, deallocating virtual machines in off hours, right-sizing underutilized virtual machines, deleting unused virtual machines, and migrating to PaaS or SaaS are all examples of cost saving solutions."
+        isCorrect: false
+    - content: "The Azure Architecture Center is ________"
+      choices:
+      - content: "a great place to get ideas for transforming your application, as well as best practices across a wide array of architectures and Azure services."
+        correctExplanation: "Azure Architecture Center will provide suggestions about ways to improve your app and save money."
+        isCorrect: true
+      - content: "a building on the Microsoft Seattle campus where you can talk about infrastructure."
+        incorrectExplanation: "Azure Architecture Center is a software product built into Azure which provides suggestions to improve your app."
+        isCorrect: false
+      - content: "A cloud-based museum to Frank Lloyd Wright"
+        incorrectExplanation: "Azure Architecture Center is a software product built into Azure which provides suggestions to improve your app."
+        isCorrect: false
