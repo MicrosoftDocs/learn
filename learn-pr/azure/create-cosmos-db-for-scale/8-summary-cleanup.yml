@@ -1,0 +1,10 @@
+### YamlMime:ModuleUnit
+uid: learn.create-cosmos-db-for-scale.8-summary-cleanup
+metadata:
+  title: Summary and cleanup
+  description: Summary and cleanup
+  displayType: one-column
+title: Summary and cleanup
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary-cleanup.md)]

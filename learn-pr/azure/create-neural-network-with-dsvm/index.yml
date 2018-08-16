@@ -1,0 +1,25 @@
+### YamlMime:Module
+uid: learn.create-neural-network-with-dsvm
+metadata:
+  title: Building Neural Networks with TensorFlow and the Azure Data Science Virtual Machine
+  description: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+title: Building Neural Networks with TensorFlow and the Azure Data Science Virtual Machine
+summary: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+abstract: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+cardDescription: In this module, you'll learn how to use TensorFlow to train a deep neural network on the DSVM.
+# this is a placeholder and needs to be updated
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+units:
+- learn.create-neural-network-with-dsvm.1-create-dsvm
+- learn.create-neural-network-with-dsvm.2-connect-to-dsvm
+- learn.create-neural-network-with-dsvm.3-train-tensorflow-model
+- learn.create-neural-network-with-dsvm.4-create-client-app
+- learn.create-neural-network-with-dsvm.5-delete-env
+# this is a placeholder and needs to updated
+achievement: learn.placeholder.badge 

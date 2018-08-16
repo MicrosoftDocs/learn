@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.connect-app-to-azure-storage.1-motivation
-title: Connect an App to Azure storage
-metadata:
-  title: Connect an App to Azure storage
-  description: Connect an App to Azure storage
-durationInMinutes: 1
-content: |
-  [!include[](includes/1-motivation.md)]

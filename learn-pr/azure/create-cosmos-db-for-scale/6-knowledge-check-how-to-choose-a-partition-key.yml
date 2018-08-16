@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.create-cosmos-db-for-scale.6-knowledge-check-how-to-choose-a-partition-key
+metadata:
+  title: Knowledge check - how to choose a partition key
+  description: Knowledge check - how to choose a partition key
+  displayType: one-column
+  # Text-only units use the one-column option, which drives a single-column layout, similar to a normal article, with no interactive component.
+title: Knowledge check - how to choose a partition key
+durationInMinutes: 2
+content: Knowledge check - what is a request unit
+quiz:
+  title: Knowledge check - how to choose a partition key
+  questions:
+  - content: 'Can you add a partition key to an Azure Cosmos DB collection after it has been created?'
+    choices:
+    - content: Yes
+      isCorrect: false
+      incorrectExplanation: Partition keys can only be set when a collection is created. 
+    - content: No
+      isCorrect: true
+      correctExplanation: Correct! You can only set the partition key when the collection is created.
+  - content: 'Can you change the partition key after the Azure Cosmos DB collection has been created?'
+    choices:
+    - content: Yes
+      isCorrect: false
+      incorrectExplanation: Partition keys cannot be modified after the collection is created. 
+    - content: No
+      isCorrect: true
+      correctExplanation: Correct! Partition keys cannot be modified after the collection is created.
+  - content: 'What would be the best partition key for storing order history?'
+    choices:
+    - content: UserID
+      isCorrect: true
+      incorrectExplanation: Correct! Order history would typically be retrieved based on the user that created the order. 
+    - content: OrderTime
+      isCorrect: false
+      correctExplanation: Although order time could be used as a partition key, it might create hot partitions on popular shopping days. And order history is typically retrieved based on the user that created the order, not the time it was placed.

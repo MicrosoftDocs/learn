@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-app-to-azure-storage.3-exercise-create-your-app-and-azure-storage-account
+title: Exercise - Create your app and Azure Storage account
+metadata:
+  title: Exercise - Create your app and Azure Storage account
+  description: Exercise - Create your app and Azure Storage account
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-your-app-and-azure-storage-account.md)]

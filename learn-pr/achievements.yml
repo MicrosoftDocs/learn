@@ -14,7 +14,7 @@ achievements:
   type: badge
   iconUrl: http://via.placeholder.com/120x120
   title: Module Placeholder Badge
-  summary: Sample Learning Path Trophy Summary
+  summary: Sample Module Trophy Summary
 - uid: learn.sample-module-cloudshell.badge
   type: badge
   title: Sample Module with CloudShell Badge
@@ -32,8 +32,8 @@ achievements:
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.connect-app-to-azure-storage.badge
   type: badge
-  title: Connect an App to Azure storage Badge
-  summary: Connect an App to Azure storage Badge Summary
+  title: Connect an app to Azure Storage
+  summary: Connect an app to Azure Storage
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.create-azure-storage-account.badge
   type: badge
@@ -42,8 +42,8 @@ achievements:
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.create-serverless-logic-with-functions.badge
   type: badge
-  title: Create serverless logic with Azure functions Badge
-  summary: Create serverless logic with Azure functions Badge Summary
+  title: Create serverless logic with Azure Functions
+  summary: Create serverless logic with Azure Functions
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.host-web-app-with-azure-web-apps.badge
   type: badge
@@ -150,10 +150,10 @@ achievements:
   title: Control Azure services with the CLI Badge
   summary: Control Azure services with the CLI Badge Summary
   iconUrl: http://via.placeholder.com/120x120
-- uid: learn.explore-azure-services-features.badge
+- uid: learn.azure-services-features.badge
   type: badge
-  title: Explore Azure services and features Badge
-  summary: Explore Azure services and features Summary
+  title: Tour Azure services and features Badge
+  summary: Tour Azure services and features Summary
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.migrate-sql-server-relational-data.badge
   type: badge
@@ -167,8 +167,8 @@ achievements:
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.create-a-windows-vm-in-azure.badge
   type: badge
-  title: Create a Windows virtual machine in Azure Badge
-  summary: Create a Windows virtual machine in Azure Summary
+  title: Create a Windows virtual machine in Azure
+  summary: Create a Windows virtual machine in Azure
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.choose-web-hosting.badge
   type: badge
@@ -194,4 +194,39 @@ achievements:
   type: badge
   title: Optimize your web applications by caching read-only data with Redis
   summary: Optimize your web applications by caching read-only data with Redis
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.manage-secrets-with-azure-key-vault.badge
+  type: badge
+  title: Manage secrets in your web apps with Azure Key Vault
+  summary: Manage secrets in your web apps with Azure Key Vault
+  iconUrl: /learn/modules/manage-secrets-with-azure-key-vault/achievement/manage-secrets-with-azure-key-vault.svg
+- uid: learn.secure-azure-resources-with-rbac.badge
+  type: badge
+  title: Secure your Azure resources with role-based access control (RBAC)
+  summary: Secure your Azure resources with role-based access control (RBAC)
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
+  type: badge
+  title: Sending location information over SMS from your phone using Azure Functions and Twilio badge
+  summary: Badge for 'Sending location information over SMS from your phone using Azure Functions and Twilio' module
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.manage-vms-with-azure-cli-data.badge
+  type: badge
+  title: Manage virtual machines with the Azure CLI
+  summary: Manage virtual machines with the Azure CLI
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.deploy-a-website-to-azure-with-vm-hosting.trophy
+  type: trophy
+  title: Deploy a website to Azure with VM Hosting Trophy
+  summary: Trophy for the 'Deploy a website to Azure with VM Hosting' learning path.
+  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.store-app-data-with-azure-blob-storage.badge
+  type: badge
+  title: Store web application data with Azure Blob Storage
+  summary: Store web application data with Azure Blob Storage
+  iconUrl: /learn/modules/store-app-data-with-azure-blob-storage/achievement/store-app-data-with-azure-blob-storage.svg
+- uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.badge
+  type: badge
+  title: Enable reliable messaging for Big Data Applications using Azure Event Hubs
+  summary: Enable reliable messaging for Big Data Applications using Azure Event Hubs
   iconUrl: http://via.placeholder.com/120x120

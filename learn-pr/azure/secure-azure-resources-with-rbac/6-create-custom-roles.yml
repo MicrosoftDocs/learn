@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-azure-resources-with-rbac.6-create-custom-roles
+metadata:
+  title: Create a custom role using Azure PowerShell
+  description: Learn how to create a custom role with the permissions you select.
+  displayType: two-column
+  interactive: bash
+title: Create a custom role using Azure PowerShell
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-create-custom-roles.md)]
+quiz:
+  title: 'Quiz title'
+  questions:
+  - content: 'Which command can help you determine what permissions can be included in a custom role?'
+    choices:
+    - content: Set-AzureRmRoleDefinition
+      isCorrect: false
+      correctExplanation: The Set-AzureRmRoleDefinition command updates a custom role.
+    - content: New-AzureRmRoleDefinition
+      isCorrect: false
+      incorrectExplanation: The New-AzureRmRoleDefinition command create a new custom role.
+    - content: Get-AzureRmSubscription
+      isCorrect: false
+      correctExplanation: The Get-AzureRmSubscription command gets information about a subscription.
+    - content: Get-AzureRmProviderOperation
+      isCorrect: true
+      correctExplanation: Correct! The Get-AzureRmProviderOperation command gets the list of operations for a resource provider or you can see the documentation.
+  - content: 'What property specifies the management operations that the role allows to be performed?'
+    choices:
+    - content: Actions
+      isCorrect: true
+      correctExplanation: Correct! The Actions property specifies the management operations that the role allows to be performed.
+    - content: DataActions
+      isCorrect: false
+      incorrectExplanation: The DataActions property specifies the data operations that the role allows to be performed to your data within that object.
+    - content: NotActions
+      isCorrect: false
+      correctExplanation: The NotActions property specifies the management operations that are excluded from the allowed Actions.
+    - content: AssignableScopes
+      isCorrect: false
+      correctExplanation: The AssignableScopes specifies the scopes that the custom role is available for assignment.

@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-secrets-with-azure-key-vault.1-what-is-key-vault
+title: What is Key Vault?
+metadata:
+  title: What is Key Vault?
+  description: What is Key Vault?
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-what-is-key-vault.md)]

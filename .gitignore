@@ -11,3 +11,6 @@ _dependentPackages/
 
 .openpublishing.buildcore.ps1
 .vscode/settings.json
+
+Thumbs.db
+.DS_Store

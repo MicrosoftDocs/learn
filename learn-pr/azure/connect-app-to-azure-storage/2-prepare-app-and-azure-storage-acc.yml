@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.connect-app-to-azure-storage.2-prepare-app-and-azure-storage-acc
-title: Prepare your app and Azure storage account
-metadata:
-  title: Prepare your app and Azure storage account
-  description: Prepare your app and Azure storage account
-durationInMinutes: 1
-content: |
-  [!include[](includes/2-prepare-app-and-azure-storage-acc.md)]

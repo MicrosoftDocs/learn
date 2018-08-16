@@ -4,6 +4,7 @@ title: Add image captions with Computer Vision
 metadata:
   title: Add image captions with Computer Vision
   description: Add image captions with Computer Vision
-durationInMinutes: 12
+durationInMinutes: 5
+interactive: bash
 content: |
   [!include[](includes/5-add-captions-with-computer-vision.md)]

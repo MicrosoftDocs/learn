@@ -15,5 +15,7 @@ roles:
 products:
  - Azure
 modules:
+#- learn.azure-functions-and-io-bindings
 - learn.create-serverless-logic-with-functions
+#- learn.execute-azure-functions-with-triggers
 achievement: learn.create-backend-services-in-azure.trophy

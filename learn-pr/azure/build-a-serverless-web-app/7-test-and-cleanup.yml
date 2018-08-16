@@ -5,5 +5,6 @@ metadata:
   title: Test and Cleanup
   description: Test and Cleanup
 durationInMinutes: 2
+interactive: bash
 content: |
   [!include[](includes/7-test-and-cleanup.md)]

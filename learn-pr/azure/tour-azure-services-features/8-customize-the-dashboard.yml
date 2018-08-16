@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.8-customize-the-dashboard
+title: "Customize the dashboard"
+metadata:
+  title: "Customize the dashboard"
+  description: "Customize the dashboard"
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-customize-the-dashboard.md)]

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-azure-resources-with-rbac.3-list-access
+metadata:
+  title: List access using RBAC and the Azure portal 
+  description: Learn how to list the role assignments for yourself and at different scopes in the Azure portal. 
+  displayType: one-column
+title: List access using RBAC and the Azure portal
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-list-access.md)]
+quiz:
+  title: 'Quiz title'
+  questions:
+  - content: 'What is the name of the blade in the Azure portal where you can see all the roles assigned to yourself in a subscription?'
+    choices:
+    - content: Azure resources
+      isCorrect: true
+      correctExplanation: Correct! The Azure resources blade is where you can see all the roles assigned to yourself.
+    - content: Azure Active Directory
+      isCorrect: false
+      incorrectExplanation: The Azure Active Directory blade does not list roles assignments, but you can access the Azure AD features on this blade.
+    - content: All users
+      isCorrect: false
+      correctExplanation: The All users blade does not list role assignments, but it does list all the users in the selected directory.
+    - content: Access control (IAM)
+      isCorrect: false
+      correctExplanation: Depending on the Access control (IAM) blade you open, you may see some roles assigned to yourself.
+  - content: 'What is the inheritance order for scope in Azure?'
+    choices:
+    - content: Management group, resource group, subscription, resource
+      isCorrect: false
+      correctExplanation: This is not the correct order.
+    - content: Management group, subscription, resource group, resource
+      isCorrect: true
+      incorrectExplanation: Correct!
+    - content: Subscription, management group, resource group, resource
+      isCorrect: false
+      correctExplanation: This is not the correct order.
+    - content: Subscription, resource group, management group, resource
+      isCorrect: false
+      correctExplanation: This is not the correct order.

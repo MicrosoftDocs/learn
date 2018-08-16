@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-serverless-logic-with-functions.1-motivation
-title: Create serverless logic with Azure functions
-metadata:
-  title: Create serverless logic with Azure functions
-  description: Create serverless logic with Azure functions
-durationInMinutes: 1
-content: |
-  [!include[](includes/1-motivation.md)]

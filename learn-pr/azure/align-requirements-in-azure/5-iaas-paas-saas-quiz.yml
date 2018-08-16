@@ -7,23 +7,49 @@ metadata:
 durationInMinutes: 10
 content: Knowledge check - IaaS, PaaS & SaaS
 quiz:
-  title: 'Quiz Title'
+  title: 'Knowledge check - IaaS, PaaS & SaaS'
   questions:
-  - content: 'Question 1'
+  - content: 'Given the following scenario, what the best the cloud service model to use? A SQL server database is needed for a short term project. The IT department does not have available hardware that meets the performance requirements or resources to deploy it. The project starts next week. Once the project is over, the database is no longer needed.'
     choices:
-    - content: Answer 1
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
+    - content: IaaS
+      incorrectExplanation: You could create a virutal machine and install SQL Server. However, the database is needed quickly. Someone would need to install and maintain the SQL database for the project.
       isCorrect: true
-    - content: Answer 2
+    - content: PaaS
+      correctExplanation: Because of the immediate need, no available hardware, and short lifetime, PaaS is the the best option. For example, you could use Azure SQL Database for the solution.
+      isCorrect: true
+    - content: SaaS
+      incorrectExplanation: The requirement is a SQL database delivered as a service. SaaS would not apply for this scenario.
       isCorrect: false
-  - content: 'Question 2'
+  - content: 'Given the following scenario, what is the cloud service model? You create several virtual machines in the cloud. The VMs are networked together using a virtual network. The VMs have access to x-ray image files in cloud storage. One virtual machine is a web server that hosts a website exposed to the Internet for customers to access their records. There is a VPN that connects the solution to your on-prem datacenter for customer information to display with the image files.'
     choices:
-    - content: Answer A
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
+    - content: IaaS
+      correctExplanation: All the resources used in this scenario can be implemented using IaaS. 
       isCorrect: true
-    - content: Answer B
+    - content: PaaS
+      incorrectExplanation: Only part of the solution could be implemented using PaaS.
       isCorrect: false
-    - content: Answer C
+    - content: SaaS
+      incorrectExplanation: Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality.
+      isCorrect: false
+  - content: 'Given the following scenario, what is the best cloud service model? You create a small start-up company. You have a handful of employees who need to collaborate. They need email, calendar scheduling, and somewhere to store documents. The team is technical but don''t have the time or hardware to implement and manage a solution.'
+    choices:
+    - content: IaaS
+      incorrectExplanation: While you could acheive the functionality using virutal machines and installing collaboration software, this would take time to install and manage. The team does not have time to use this option.
+      isCorrect: false
+    - content: PaaS
+      incorrectExplanation: The team does not have time to create a PaaS solution to meet the requirements.
+      isCorrect: false
+    - content: SaaS
+      correctExplanation: A SaaS solution such as Office 365 would be a good solution for the collaboration requirements.
+      isCorrect: true
+  - content: 'Given the following scenario, what is the cloud service model? You have two datacenters in your organization. One datacenter has a database that can only reside in one of the datacenters because of a regulatory requirement. You want to access the database from the other datacenter. You create a VPN using a cloud provider to connect the two datacenters.'
+    choices:
+    - content: IaaS
+      correctExplanation: You can use an IaaS VPN to implement this solution.
+      isCorrect: true
+    - content: PaaS
+      incorrectExplanation: VPN is an infrastructure resource. VPN is not a PaaS solution.
+      isCorrect: false
+    - content: SaaS
+      incorrectExplanation: VPN is an infrastructure resource. VPN is not a SaaS solution.
       isCorrect: false

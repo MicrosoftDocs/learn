@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.7-exercise-navigate-the-portal
+title: "Exercise - Navigate the portal"
+metadata:
+  title: "Exercise - Navigate the portal"
+  description: "Exercise - Navigate the portal"
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-navigate-the-portal.md)]

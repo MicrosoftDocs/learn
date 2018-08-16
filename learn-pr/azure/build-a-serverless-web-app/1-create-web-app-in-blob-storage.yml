@@ -4,6 +4,14 @@ title: Create a web app in Azure blob storage
 metadata:
   title: Create a web app in Azure blob storage
   description: Create a web app in Azure blob storage
-durationInMinutes: 12
+durationInMinutes: 5
+interactive: bash
 content: |
   [!include[](includes/1-create-web-app-in-blob-storage.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: 'Please make sure that you have named the resource group "first-serverless-app" and it was added to the "westcentralus" location.'
+  azure:
+    resourceGroup: first-serverless-app
+    location: westcentralus

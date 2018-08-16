@@ -20,4 +20,7 @@ modules:
 - learn.align-requirements-in-azure
 - learn.automate-azure-tasks-with-powershell
 - learn.control-azure-services-with-cli
+#- learn.manage-resouces-with-azure-portal
+#- learn.principles-cloud-computing
+#- learn.explore-azure-services-features
 achievement: learn.cloud-fundamentals.trophy

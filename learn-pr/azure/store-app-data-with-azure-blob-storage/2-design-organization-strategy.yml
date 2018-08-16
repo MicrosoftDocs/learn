@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.store-app-data-with-azure-blob-storage.2-design-organization-strategy
+title: Design a storage organization strategy
+metadata:
+  title: Design a storage organization strategy
+  description: Design a storage organization strategy
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-design-organization-strategy.md)]

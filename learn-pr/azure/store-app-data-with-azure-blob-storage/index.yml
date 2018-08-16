@@ -1,0 +1,25 @@
+### YamlMime:Module
+uid: learn.store-app-data-with-azure-blob-storage
+title: Store web application data with Azure Blob Storage
+summary: Data storage is a fundamental building block of web applications. Cloud-based applications need cloud-based storage that can serve data anywhere in the world and isn't tied to a single virtual machine or hard drive. Azure Blob Storage can efficiently store and serve any kind of data at web scale and can be integrated into any kind of web application.
+cardDescription: Build an Azure web app that uses Blob storage.
+iconUrl: /learn/modules/store-app-data-with-azure-blob-storage/achievement/store-app-data-with-azure-blob-storage.svg
+achievement: learn.store-app-data-with-azure-blob-storage.badge
+levels:
+- beginner
+roles:
+- developer
+products:
+- Azure
+metadata:
+  title: Store web application data with Azure Blob Storage
+  description: In this module, you'll build a web app that stores user files with Azure Blob Storage.
+abstract: In this module, you'll filll in the gaps in an incomplete ASP.NET Core application to use Blob storage.
+units:
+- learn.store-app-data-with-azure-blob-storage.1-introduction-to-blob-storage
+- learn.store-app-data-with-azure-blob-storage.2-design-organization-strategy
+- learn.store-app-data-with-azure-blob-storage.3-create-storage-resources
+- learn.store-app-data-with-azure-blob-storage.4-configure-and-initialize-the-client-library
+- learn.store-app-data-with-azure-blob-storage.5-getting-blob-references
+- learn.store-app-data-with-azure-blob-storage.6-blob-uploads-and-downloads
+- learn.store-app-data-with-azure-blob-storage.7-cleanup-next-steps-knowledge-check

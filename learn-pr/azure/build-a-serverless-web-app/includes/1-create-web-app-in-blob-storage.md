@@ -12,7 +12,7 @@ The following diagram shows the Azure services used by the application:
 
 ![Solution architecture diagram](../images/0-architecture.jpg)
 
-In this unit, you will learn how to:
+In this module, you will learn how to:
 > [!div class="checklist"]
 > * Configure Azure Blob storage to host a static website and uploaded images.
 > * Upload images to Azure Blob storage using Azure Functions.

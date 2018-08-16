@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-a-windows-vm-in-azure.3-connect-to-windows-vm
-title: Connect to a Windows virtual machine using remote desktop and Azure CLI
-metadata:
-  title: Connect to a Windows virtual machine using remote desktop and Azure CLI
-  description: Connect to a Windows virtual machine using remote desktop and Azure CLI
-durationInMinutes: 12
-content: |
-  [!include[](includes/3-connect-to-windows-vm.md)]

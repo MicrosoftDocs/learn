@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: execute-azure-function-with-triggers.8-exercise-blob-trigger
+title: Exercise - Execute an Azure Function when a blob is created
+metadata:
+  title: Exercise - Execute an Azure Function when a blob is created
+  description: Exercise - Execute an Azure Function when a blob is created
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-blob-trigger.md)]
