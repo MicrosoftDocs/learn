@@ -10,7 +10,7 @@ In comparison, a cloud environment is built for scale. Cloud hosted resources ma
 
 On top of this, the chattier an application, the more round trips that are required. Each round trip comes with a latency tax, with each round trip adding to the overall latency.
 
-![NetworkLatency](networkLatency.png)
+![NetworkLatency](../media/networkLatency.png)
 
 Now let's take a look at how to improve performance between Azure resources and from your end users to yor Azure resources.
 
@@ -59,7 +59,7 @@ The website will likely be using some form of static content (either whole pages
 
 The pattern could be achieved by using a content delivery network (CDN) such as Azure CDN. [Azure CDN][azure-cdn] is a globally distributed set of servers used to provide content to end users. The CDN could be used to cache media assets or even full pages of a website. This approach not only places the content closer to the end user, but also offloads request from your web servers. The content will be cached at a CDN edge server local to the user, resulting in low latency access to the cached content.
 
-![CDNExample](cdnSketch.png)
+![CDNExample](../media/cdnSketch.png)
 
 Content Delivery Networks can be used to host dynamic content. Extra consideration should be made when caching dynamic content, as cached content may be out of date compared with the source content. Context expiration can controlled by setting a TTL (time to live). If the TTL is too high, out-of-date content may be displayed and the cache would need to be purged.
 
@@ -77,7 +77,7 @@ You can always use the public internet to connect users to your services, but in
 
 Azure ExpressRoute can help. ExpressRoute is a private, dedicated connection between your network and Azure, giving you guaranteed performance and ensuring that your end users have the best path to all of your Azure resources.
 
-![ExpressRoute](expressroute-connection-overview.png)
+![ExpressRoute](../media/expressroute-connection-overview.png)
 
 
 Once again looking at Lamna's scenario, they decide to further improve end user experience for those who are in their facilities by provisioning an ExpressRoute circuit in both Australia East and West Europe, giving their end users a direct connection to their booking system and ensuring the lowest latency possible for their application.
@@ -85,22 +85,6 @@ Once again looking at Lamna's scenario, they decide to further improve end user 
 ## Summary
 
 Considering the impact of network latency on your architecture is important to ensure the best possible performance for your end users. We've take a look at some options to lower network latency between end users and Azure and between Azure resources. Next, we'll talk about optimizing storage performance.
-
-## Knowledge Check
-
-Network latency is:
-
-* The amount of noise on the network
-* The amount of time it takes for information to be sent from a source to a destination
-* The TTL of an asset in my Content Delivery Network
-* The delay before packets will be sent (Correct)
-
-Our application is hosted on East US. Pick two strategies to optimize network latency for users that are located across the globe (e.g. Europe or Australia):
-
-* Deploy ExpressRoute to each of your users
-* Use a Content Delivery network to place assets/content closer to your users (Correct)
-* Use Traffic Manager in Performance routing mode (Correct)
-* Deploy more instances in East US to server the extra user load
 
 <!-- links -->
 [azure-cdn]: https://docs.microsoft.com/en-us/azure/cdn/cdn-overview

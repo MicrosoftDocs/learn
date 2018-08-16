@@ -16,7 +16,7 @@ The idea behind DevOps is that we don't have development and infrastructure silo
 
 The planning, development, testing, and monitoring is carried out in an iterative approach. Performance and quality of our application become a part of our software development life cycle, rather than an after thought as we deploy into a live environment.
 
-![DevOps Cycle](devops-cycle.png)
+![DevOps Cycle](../media/devops-cycle.png)
 
 This approach aligns with a DevOps concept called "shifting left". In other words, bring your quality control checks earlier into your deployment and release process. This allows you to catch end-user impacting issues earlier in the process. As we operate in a continuous cycle, we limit the amount of manual interaction and automate as much as possible. To ensure performance is considered as part of the DevOps process:
 
@@ -51,7 +51,7 @@ Centralized logging can help you uncover hidden issues that may be difficult to 
 
 On Azure, Log Analytics plays the role of this centralized logging service. [Log Analytics][log-analytics] collects and aggregates data from various resources, including non-Microsoft tools, into a single repository. There, you can analyze the data by using a [query language][log-analytics-query-language].
 
-![Log Analytics Sources](log-analytics.png)
+![Log Analytics Sources](../media/log-analytics.png)
 
 You can collate a wide range of data sources, Security Logs, Azure Activity Logs, Server, network and Application logs. [You can also push On-premises System Center Operations Manager data to Log Analytics in hybrid deployment scenarios.][scom-to-la] and have [Azure SQLDB][log-analytics-sqldb] send diagnostic information directly into Log Analytics for detailed performance monitoring.
 
@@ -84,20 +84,6 @@ Application Insights has been configured to capture availability and telemetry i
 ## Summary
 
 We've taken a look at some processes, tools and best practices to help you track down performance issues and ensure your application is performing at it's best. Let's wrap up what we've learned throughout this module.
-
-## Knowledge Check
-
-Which best describes Application Insights:
-
-* A Single pane of glass for our monitoring needs in Azure
-* An implementation of the Health Endpoint Monitoring Pattern
-* A workspace to enable collection of logs across infrastructure and application
-* A service to monitor availability, performance, and usage of web applications (Correct)
-
-The Log Analytics Monitoring Endpoint Pattern is a recognized cloud design pattern:
-
-* True
-* False (Correct - It is actually the Health Endpoint Monitoring Pattern, documented on the Azure Architecture Center)
 
 <!-- links -->
 [ai-snap]:https://docs.microsoft.com/en-us/azure/application-insights/app-insights-snapshot-debugger

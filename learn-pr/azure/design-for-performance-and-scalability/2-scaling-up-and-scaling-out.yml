@@ -8,23 +8,47 @@ durationInMinutes: 5
 content: |
   [!include[](includes/2-scaling-up-and-scaling-out.md)]
 quiz:
-  title: 'Quiz Title'
+  title: 'Knowledge Check - Scaling up and scaling out'
   questions:
-  - content: 'Question 1'
+  - content: 'Which is the most accurate description of scaling out?'
     choices:
-    - content: Answer 1
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
-      isCorrect: true
-    - content: Answer 2
+    - content: 'Increasing the amount of resource on an instance'
       isCorrect: false
-  - content: 'Question 2'
+      incorrectExplanation: Why this answer is incorrect
+    - content: 'Increasing the number of instances'
+      isCorrect: true
+      correctExplanation: Why this answer is correct
+    - content: 'Making scaling someone elses problem'
+      isCorrect: false
+      incorrectExplanation: Why this answer is incorrect
+    - content: 'Reaching the maximum level of scale for your application'
+      isCorrect: false
+      incorrectExplanation: Why this answer is incorrect
+  - content: 'Which is the most accurate description of scaling down?'
     choices:
-    - content: Answer A
-      correctExplanation: Why this answer is correct
+    - content: 'Decreasing the number of instances'
+      isCorrect: false
       incorrectExplanation: Why this answer is incorrect
+    - content: 'Taking ownership of how your application scales'
+      isCorrect: false
+      incorrectExplanation: Why this answer is incorrect
+    - content: 'Decreasing the amount of resource on an instance'
       isCorrect: true
-    - content: Answer B
+      correctExplanation: Why this answer is correct
+    - content: 'Not yet reaching the maximum level of scale for your application'
       isCorrect: false
-    - content: Answer C
+      incorrectExplanation: Why this answer is incorrect
+  - content: 'What of the following is NOT a consideration when building a scaling strategy into your application?'
+    choices:
+    - content: 'The backup retention policies for your instances'
+      isCorrect: true
+      correctExplanation: Why this answer is correct
+    - content: 'State management on your instances'
       isCorrect: false
+      incorrectExplanation: Why this answer is incorrect
+    - content: 'Startup time of your instances'
+      isCorrect: false
+      incorrectExplanation: Why this answer is incorrect
+    - content: 'Automating the scaling of your instances based on some metric or schedule'
+      isCorrect: false
+      incorrectExplanation: Why this answer is incorrect

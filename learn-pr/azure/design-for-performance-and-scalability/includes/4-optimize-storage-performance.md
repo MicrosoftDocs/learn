@@ -30,7 +30,7 @@ Ultimately, storage performance is how fast you can access your data. While you 
 
 A common approach to improve application performance is to integrate a caching layer between your application and your data store. A cache typically stores data in memory and allows for very fast retrieval. This data can be frequently accessed data, data you specify from a database, or temporary data such as user state. You'll have control over the type of data stored, how often it refreshes and when it expires. By co-locating this cache in the same region as your application and database, you'll reduce the overall latency between the two. Pulling data out of the cache will almost always be faster than retrieving the same data from a database, so by using a caching layer you can substantially improve the overall performance of your application.
 
-![Cache](cache.png)
+![Cache](../media/cache.png)
 
 Azure Redis Cache is a caching service on Azure. It's based upon the open-source Redis Cache and allows you to store data in-memory. As data is stored in-memory, it can likely be accessed faster than the back-end datastore. Azure Redis Cache is a Platform as a Service (PaaS) and is fully managed by Microsoft. You select the performance tier that you require and [configure your application to use the service][redis-cache-dotnetcore-example].
 
@@ -42,7 +42,7 @@ Polyglot persistence is another way of saying "Use different data storage techno
 
 Consider an e-commerce example, you may store application assets in a blob store, product reviews, and recommendations in a NoSQL store and user profile/account data in a SQL database.
 
-![polyglotPersistence](polyglotpersistence.png)
+![polyglotPersistence](../media/polyglotpersistence.png)
 
 This is important as different data stores are designed for certain use cases, or may be more accessible because of cost. As an example, storing blobs in a SQL Database may be costly and slower to access than directly from a blob store.
 
@@ -59,20 +59,6 @@ They are hosting an Azure redis cache locally in each Azure region to store the 
 ## Summary
 
 We've covered a few examples on how you can improve storage performance in your infrastructure layer by choosing the right disk architecture and at the application level through the use of caching and selecting the right data platform for your data. A properly architected solution will ensure that access to data performs as well as possible. Now let's take a look at how we can identify performance issues in an architecture.
-
-## Knowledge Check
-
-What is Polyglot Persistence?
-
-* Using different data structures in our application
-* A way to keep connections alive for data transfers
-* Using different data technologies for different purposes in our application (Correct)
-* An approach to deal with transient data faults
-
-Redis Cache can be used to improve the performance of our application by storing a snap-shot of data in memory:
-
-* True (Correct)
-* False
 
 <!-- links -->
 [caching-best-practices]: https://docs.microsoft.com/en-us/azure/architecture/best-practices/caching

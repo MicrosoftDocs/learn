@@ -1,28 +1,20 @@
-# Scaling up and scaling out
+It's rare that we can exactly predict the load on our system: public facing applications might grow rapidly or an internal application might need to support a larger user base as the business grows. Even when we can predict load, it's rarely flat: retailers have more demand during the holidays and sports websites peak during playoffs. Here, we'll define _scaling up/down_ and _scaling out/in_, cover some ways Azure can improve your scaling capaiblities, and look at how serverless and container technologies can improve your architecture's ability to scale.
 
-## Motivation
-
-It's rare that we can exactly predict the load on our system: public facing applications might grow rapidly or an internal application might need to support a larger user base as the business grows. Even when we can predict load, it's rarely flat: retailers have more demand during the holidays and sports websites peak during playoffs. In this unit, we'll: 
-
-* Define _scaling up/down_ and _scaling out/in_
-* Discuss why scaling out is preferred, and see how Azure implements scale out strategies
-* Look at how serverless and container technologies can improve your architecture's ability to scale
-
-## What is scaling?
+## What is scaling
 
 _Scaling_ is the process of managing your resources to help your application meet a set of performance requirements.  When we have too many resources serving users, we won't be using it efficiently and wasting money. Too few resources available means that the performance of our application could be impacted. The goal is to meet our defined performance requirements while optimizing for cost.
 
-In a world where application demand is constant, it's easy to predict the needed level of resource. In the real world, the demands of our applications change over time, so it can be harder to predict. If you're lucky, then that change will be predictable (or seasonal), but that is not typical of all applications. Ideally, you want to provision the right amount of resources to meet demand and adjust as demand changes. 
+In a world where application demand is constant, it's easy to predict the needed level of resource. In the real world, the demands of our applications change over time, so it can be harder to predict. If you're lucky, then that change will be predictable or seasonal, but that is not typical of all applications. Ideally, you want to provision the right amount of resources to meet demand and adjust as demand changes.
 
 Scaling is difficult in an on-premises scenario, where you purchase and manage your own servers. Adding resources can be costly and often takes extended amounts of time to bring online, sometimes much longer than your actual need for the increased capacity. Once load has dropped it can be difficult to then reduce provisioned capacity during times of low-demand on the system and minimize your cost.
 
 Effortless, dynamic scaling is a key benefit of Azure. Most Azure resources let you easily add or remove instances as demand changes, and many services have automated options so they monitor demand and adjust for you automatically. This automatic scaling capability, commonly known as autoscaling, lets you set thresholds for the minimum and maximum level of instances that should be available, and will add or remove instances based upon a performance metric (for example, CPU utilization).
 
-## What is scaling up and down?
+## What is scaling up and down
 
 Scaling up is the process where we increase the capacity of a given instance. A virtual machine could be increased from 1 vCPU and 3.5 GB of RAM to 2 vCPUs and 7 GB of RAM to provide more processing capacity. On the other hand, scaling down is the process where we lower the capacity of a given instance. For example, reducing a virtual machine's capacity from 2 vCPUs and 7 GB of RAM to 1 vCPU and 3.5 GB of RAM, reducing both capacity and cost.
 
-![scale-up-down](ScaleUpDown.png)
+![scale-up-down](../media/ScaleUpDown.png)
 
 Let's take a look at what scaling up/down means in the context of Azure resources:
 
@@ -40,7 +32,7 @@ Alternatively, if you choose to scale up or down a virtual machine, you do so by
 
 Finally, you should always look for places where scaling down is an option. This can lead to cost optimizations in your solution, and ultimately a lower Azure bill. That said, you should always consider this in line with the performance requirements of your project and ensure you're providing ample capacity to keep your customers happy.
 
-## What is scaling out and in?
+## What is scaling out and in
 
 Where scaling up and down adjusts the amount of resources a single instance has available, scaling out and in adjusts the total number of instances.
 
@@ -49,7 +41,7 @@ _Scaling out_ is the process of adding more instances to support the load of you
 _Scaling in_ is the process of removing instances that are no longer needed to support the load of your solution. If the website front ends have low usage, then we may want to lower the number of instances to save cost.
 
 
-![scale-in-out](ScaleInOut.png)
+![scale-in-out](../media/ScaleInOut.png)
 
 Here are some examples of what scaling out/in means in the context of Azure resources:
 
@@ -65,7 +57,7 @@ Scaling out is typically easily performed in the Azure portal, command-line tool
 
 You can configure some of these resources to use a feature called [autoscale][what-is-autoscale]. With autoscale you no longer have to worry about scaling resources manually. Instead, you can set a minimum and maximum threshold of instances and scale based upon specific metrics (queue length, CPU utilization) or schedules (weekdays between 5:00 PM and 7:00 PM).
 
-![autoscale](autoscale.png)
+![autoscale](../media/autoscale.png)
 
 ### Considerations when scaling in and out
 
@@ -81,7 +73,41 @@ Once the application has identified that it would breach a limit, throttling cou
 
 Examples on how to implement the [throttling pattern][throttling-pattern] are discussed on the architecture center.
 
-## Scenario: Scaling on Azure
+## Serverless
+
+Imagine if you could spend your time building and deploying apps, not having to manage underlying servers or even worry which service to run. That's the aim of serverless computing. Serverless computing is typically event driven, meaning some code, workflow, or operation will trigger as a reaction to some event happening in near-real time.
+
+With serverless computing you only pay for the resources that you use, and they are typically designed to handle large amounts of scale. [Azure Functions][azure-functions-overview], [Azure Container Instances, and [Logic Apps][azure-logicapps-overview] are some great examples of serverless computing available on Azure.
+
+Think about services like Azure Storage, Event Grid, and Data Lake. Those services are considered consumption-based services, as you pay for the amount of storage per GB or the number of events routed through the resource. You don't worry about the underlying configuration or what servers are deployed to help you achieve the activity. You just use the service and build your solution. Sometimes these types of services are also referred to as serverless.
+
+Let's revisit the Lamna Healthcare example. There could be some potential for cost saving and ease of management. Consider an API endpoint, or some function that does not run frequently. Instead of hosting the API in Azure App Service or a on virtual machine, they could use an Azure Function App using a consumption-based plan. Azure functions would enable the team to only pay for the resources required to process transactions, and scale would be directly in line with the number of transactions in the system.
+
+## Containers
+
+A container is a method running applications in a virtualized environment. A virtual machine is virtualized at the hardware level, where a hypervisor makes it possible to run multiple virtualized operating systems on a single physical server. Containers take the virtualization up a level, the virtualization is done at the OS level, making it possible to run multiple identical application instances within the same OS.
+
+![vm-vs-container](../media/vmVsContainer.png)
+
+Containers are well suited to scale out scenarios, particularly because you do not need to wait for a VM to boot up. Their characteristics also allow for a consistent environment (all container instances will be deployed alike), they can be run anywhere and have good portability and have predictable performance due to resource isolation at the operating system level.
+
+Let's consider the above Lamna Healthcare example. Instead of running Azure App Service or Azure Functions, they could use containers to host the web front-end website and backend API endpoints. Those containers would be hosted on a number of worker machines called nodes. Each of those nodes can have many containers running on top of them. They host many instances of their front-end website and back-end API to allow for higher volume of load in the system.
+
+While you can run containers on virtual machines, there are a couple of Azure services that focus on easing the management and scaling of containers:
+
+* **Azure Kubernetes Service (AKS)**
+
+  Azure Kubernetes Service allows you to set up virtual machines to act as your nodes. Azure hosts the Kubernetes management plane and only bills for the running worker nodes that host your containers.
+
+  To increase the number of your worker nodes in Azure, you could use the [Azure CLI to increase that manually][aks-scale]. At time of writing, there is a preview [Cluster Autoscaler on AKS][aks-cluster-autoscaler] available to enable auto-scaling of your worker nodes. On your Kubernetes cluster, you could use the [Horizontal Pod Autoscaler][kubernetes-horizontal-pod-autoscaler] to scale up the number of instances of the container to be deployed.
+
+* **Azure Container Instances (ACI)**
+  
+  [Azure Container Instances][aci-overview] is a serverless approach that lets you create and execute containers on-demand. You're charged only for the execution time **per second**!
+
+  You can use [Virtual Kubelet][virtual-kubelet] to connect Azure Container Instances into your Kubernetes environment. Azure Container Instances could allow for extra bursting scale, as you wouldn't have to  wait for extra worker nodes (VMs) to be provisioned. At time of writing, the Virtual Kubelet is described as experimental software and should not be used in production scenarios.
+
+## Scaling at Lamna Healthcare
 
 Lamna Healthcare operates a patient management and booking system. The management system handles appointment bookings and patient records across dozens of hospitals and local doctors surgeries. The local health service is running at full capacity and no growth is expected at the moment. The system is running on a PHP Website hosted in Azure App Service.
 
@@ -97,66 +123,9 @@ Autoscale also gives them an added benefit, preparing for those unforeseen scena
 
 The team have used the throttling pattern inside of the patient booking API they have exposed behind an Azure API Management instance. This helps prevent the system from performing poorly by only allowing a certain volume of throughput through the system.
 
-## Serverless
-
-Imagine if you could spend your time building and deploying apps, not having to manage underlying servers or even worry which service to run. That's the aim of serverless computing. Serverless computing is typically event driven, meaning some code, workflow, or operation will trigger as a reaction to some event happening in near-real time.
-
-With serverless computing you only pay for the resources that you use, and they are typically designed to handle large amounts of scale. [Azure Functions][azure-functions-overview], [Azure Container Instances, and [Logic Apps][azure-logicapps-overview] are some great examples of serverless computing available on Azure.
-
-Think about services like Azure Storage, Event Grid, and Data Lake. Those services are considered consumption-based services, as you pay for the amount of storage per GB or the number of events routed through the resource. You don't worry about the underlying configuration or what servers are deployed to help you achieve the activity. You just use the service and build your solution. Sometimes these types of services are also referred to as serverless.
-
-Let's revisit the Lamna Healthcare example. There could be some potential for cost saving and ease of management. Consider an API endpoint, or some function that does not run frequently. Instead of hosting the API in Azure App Service or a on virtual machine, they could use an Azure Function App using a consumption-based plan. Azure functions would enable the team to only pay for the resources required to process transactions, and scale would be directly in line with the number of transactions in the system.
-
-## Containers
-
-A container is a method running applications in a virtualized environment. A virtual machine is virtualized at the hardware level, where a hypervisor makes it possible to run multiple virtualized operating systems on a single physical server. Containers take the virtualization up a level, the virtualization is done at the OS level, making it possible to run multiple identical application instances within the same OS.
-
-![vm-vs-container](vmVsContainer.png)
-
-Containers are well suited to scale out scenarios, particularly because you do not need to wait for a VM to boot up. Their characteristics also allow for a consistent environment (all container instances will be deployed alike), they can be run anywhere and have good portability and have predictable performance due to resource isolation at the operating system level.
-
-Let's consider the above Lamna Healthcare example. Instead of running Azure App Service or Azure Functions, they could use containers to host the web front-end website and backend API endpoints. Those containers would be hosted on a number of worker machines called nodes. Each of those nodes can have many containers running on top of them. They host many instances of their front-end website and back-end API to allow for higher volume of load in the system.
-
-While you can run containers on virtual machines, there are a couple of Azure services that focus on easing the management and scaling of containers:
-
-* **Azure Kubernetes Service (AKS)**
-
-  Azure Kubernetes Service allows you to set up virtual machines to act as your nodes. Azure hosts the Kubernetes management plane and only bills for the running worker nodes that host your containers.
-
-  To increase the number of nodes (your worker VMs in Azure), you could use the [Azure CLI to increase that manually][aks-scale]. At time of writing, there is a preview [Cluster Autoscaler on AKS][aks-cluster-autoscaler] available to enable auto-scaling of your worker nodes. On your Kubernetes cluster, you could use the [Horizontal Pod Autoscaler][kubernetes-horizontal-pod-autoscaler] to scale up the number of instances of the container to be deployed.
-
-* **Azure Container Instances (ACI)**
-  
-  [Azure Container Instances][aci-overview] is a serverless approach that lets you create and execute containers on-demand. You're charged only for the execution time **per second**!
-
-  You can use [Virtual Kubelet][virtual-kubelet] to connect Azure Container Instances into your Kubernetes environment. Azure Container Instances could allow for extra bursting scale, as you wouldn't have to  wait for extra worker nodes (VMs) to be provisioned. At time of writing, the Virtual Kubelet is described as experimental software and should not be used in production scenarios.
-
 ## Summary
 
-We've talked about scaling up and down and scaling in and out, and how you can leverage these options in your architecture. We've also looked at how serverless technologies and containers can help evolve your scaling capabilities. In the next unit, we'll take a look at how network performance can impact your application, and different ways we can optimize the network.
-
-## Knowledge Check
-
-Which is the most accurate description of "Scaling Out"?
-
-* Increasing the amount of resource on an instance
-* Increasing the number of instances (Correct)
-* Making scaling someone elses problem
-* Reaching the maximum level of scale for your application
-
-Which is the most accurate description of "Scaling Down"?
-
-* Decreasing the number of instances
-* Taking ownership of how your application scales
-* Decreasing the amount of resource on an instance (Correct)
-* Not yet reaching the maximum level of scale for your application
-
-What points should you consider when building a scaling strategy into your application?
-
-* The version of the PaaS service you are using
-* State management on your instances (Correct)
-* Startup time of your instances (Correct)
-* Automating the scaling of your instances based on some metric or schedule (Correct)
+We've talked about scaling up and down and scaling in and out, and how you can leverage these options in your architecture. We've also looked at how serverless technologies and containers can help evolve your scaling capabilities. Next, we'll take a look at how network performance can impact your application, and different ways we can optimize the network.
 
 <!-- links -->
 [aci-overview]: https://docs.microsoft.com/en-gb/azure/container-instances/container-instances-overview
