@@ -48,7 +48,7 @@ Looking through your estimate, you should see a summary cost for each service yo
 
 We now have an estimate for our solution. We can save this estimate, so we can come back to it at a later time (and make adjustments if necessary), export it to Excel for further analysis, and share the estimate via a URL. 
 
-To export the estimate, click `Export`**` at the bottom of the estimate. This will download your estimate in Excel (**.xlsx**) format and will include all the services you had added to your estimate.
+To export the estimate, click `Export` at the bottom of the estimate. This will download your estimate in Excel (**.xlsx**) format and will include all the services you had added to your estimate.
 
 We can either share the Excel spreadsheet or we can click on the `Share` button in the calculator. This gives you a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
 
