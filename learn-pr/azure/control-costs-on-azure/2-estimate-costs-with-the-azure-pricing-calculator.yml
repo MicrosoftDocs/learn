@@ -7,3 +7,22 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-estimate-costs-with-the-azure-pricing-calculator.md)]
+quiz:
+	  title: 'Estimate Costs with Azure Pricing Calculator'
+  	  questions:
+	  - content: 'In which tab of the Azure Pricing Calculator will you formulate your estimate?'
+	    choices:
+	    - content: Estimate
+	      incorrectExplanation: This tab has all of your previously saved estimates.
+	      isCorrect: false
+	    - content: Products
+	      correctExplanation: This tab has all the Azure services listed and is where you'll add/remove services to formulate your estimate.
+	      isCorrect: true
+	  - content: 'You can share your estimate through an Excel Spreadsheet or through a URL'
+	    choices:
+	    - content: True
+	      correctExplanation: Clicking “Export” at the bottom of the estimate will export an Excel Spreadsheet that you can share, or you can click “Share” to get a URL link that you can share with your team.
+	      isCorrect: true
+	    - content: False
+	      incorrectExplanation: Clicking “Export” at the bottom of the estimate will export an Excel Spreadsheet that you can share, or you can click “Share” to get a URL link that you can share with your team.
+	      isCorrect: false
