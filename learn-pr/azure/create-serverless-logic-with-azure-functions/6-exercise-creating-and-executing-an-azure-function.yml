@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-serverless-logic-with-functions.6-exercise-creating-and-executing-an-azure-function
+title: Exercise - Creating and Executing an Azure Function
+metadata:
+  title: Exercise - Creating and Executing an Azure Function
+  description: Exercise - Creating and Executing an Azure Function
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-creating-and-executing-an-azure-function.md)]

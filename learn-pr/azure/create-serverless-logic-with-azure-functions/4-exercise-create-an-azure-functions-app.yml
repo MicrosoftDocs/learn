@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.create-serverless-logic-with-functions.4-exercise-create-an-azure-functions-app
+title: Exercise - Create an Azure Functions app
+metadata:
+  title: Exercise - Create an Azure Functions app
+  description: Exercise - Create an Azure Functions app
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-create-an-azure-functions-app.md)]

@@ -42,8 +42,8 @@ achievements:
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.create-serverless-logic-with-functions.badge
   type: badge
-  title: Create serverless logic with Azure functions Badge
-  summary: Create serverless logic with Azure functions Badge Summary
+  title: Create serverless logic with Azure Functions
+  summary: Create serverless logic with Azure Functions
   iconUrl: http://via.placeholder.com/120x120
 - uid: learn.host-web-app-with-azure-web-apps.badge
   type: badge
