@@ -16,9 +16,10 @@ cardDescription: This is the card description of the Sample Module (this will sh
 iconUrl: http://via.placeholder.com/120x120
 # Review the Docs Contributor Guide for levele, role, and product options
 levels:
-- intermediate
+- beginner
 roles:
 - solutions-architect
+- administrator
 # achievement is currently a placeholder and will need to be updated
 achievement: learn.placeholder.badge
 products:
