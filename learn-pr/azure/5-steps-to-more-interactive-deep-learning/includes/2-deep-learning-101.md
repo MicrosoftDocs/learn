@@ -29,6 +29,7 @@ The DSVM contains several tools for AI including popular GPU editions of deep le
 The DSVM can run on Azure GPU NC-series VM instances. These GPUs use discrete device assignment, resulting in performance close to bare-metal, and are well-suited to deep learning problems.
 
 ### Py Torch
+![](https://notebooks.azure.com/goldengrape/libraries/pytorch-tutorial/raw/logo/pytorch_logo.png)
 
 Typically deep learning engineers don't hard code matrix algebra operations all by hand. They instead use frameworks such as PyTorch or TensorFlow. 
 
