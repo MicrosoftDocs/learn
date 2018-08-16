@@ -1,4 +1,4 @@
-It's rare that we can exactly predict the load on our system: public facing applications might grow rapidly or an internal application might need to support a larger user base as the business grows. Even when we can predict load, it's rarely flat: retailers have more demand during the holidays and sports websites peak during playoffs. Here, we'll define _scaling up/down_ and _scaling out/in_, cover some ways Azure can improve your scaling capaiblities, and look at how serverless and container technologies can improve your architecture's ability to scale.
+It's rare that we can exactly predict the load on our system: public facing applications might grow rapidly or an internal application might need to support a larger user base as the business grows. Even when we can predict load, it's rarely flat: retailers have more demand during the holidays and sports websites peak during playoffs. Here, we'll define _scaling up/down_ and _scaling out/in_, cover some ways Azure can improve your scaling capabilities, and look at how serverless and container technologies can improve your architecture's ability to scale.
 
 ## What is scaling
 
@@ -6,7 +6,7 @@ _Scaling_ is the process of managing your resources to help your application mee
 
 In a world where application demand is constant, it's easy to predict the needed level of resource. In the real world, the demands of our applications change over time, so it can be harder to predict. If you're lucky, then that change will be predictable or seasonal, but that is not typical of all applications. Ideally, you want to provision the right amount of resources to meet demand and adjust as demand changes.
 
-Scaling is difficult in an on-premises scenario, where you purchase and manage your own servers. Adding resources can be costly and often takes extended amounts of time to bring online, sometimes much longer than your actual need for the increased capacity. Once load has dropped it can be difficult to then reduce provisioned capacity during times of low-demand on the system and minimize your cost.
+Scaling is difficult in an on-premises scenario, where you purchase and manage your own servers. Adding resources can be costly and often takes extended amounts of time to bring online, sometimes much longer than your actual need for the increased capacity. Once load has dropped, it can be difficult to then reduce provisioned capacity during times of low-demand on the system and minimize your cost.
 
 Effortless, dynamic scaling is a key benefit of Azure. Most Azure resources let you easily add or remove instances as demand changes, and many services have automated options so they monitor demand and adjust for you automatically. This automatic scaling capability, commonly known as autoscaling, lets you set thresholds for the minimum and maximum level of instances that should be available, and will add or remove instances based upon a performance metric (for example, CPU utilization).
 
@@ -26,7 +26,7 @@ To have these capabilities in an on-premises environment you would typically hav
 
 You may need to consider the use of scaling up in your solution, depending upon the cloud services that you have chosen.
 
-For example, if you choose to scale up in Azure SQL Database, then the service deals with scaling up individual nodes and continues the operation of your service. Changing the service tier and/or performance level of a database creates a replica of the original database at the new performance level, and then switches connections over to the replica. No data is lost during this process and there's only a brief interruption (typically less than 4 seonds) when the service switches over to the replica. 
+For example, if you choose to scale up in Azure SQL Database, then the service deals with scaling up individual nodes and continues the operation of your service. Changing the service tier and/or performance level of a database creates a replica of the original database at the new performance level, and then switches connections over to the replica. No data is lost during this process and there's only a brief interruption (typically less than four seconds) when the service switches over to the replica. 
 
 Alternatively, if you choose to scale up or down a virtual machine, you do so by selecting a different instance size. In most cases this requires a restart of the VM, so best to have the expectation that a reboot will be required and you'll need to account for when performing this activity.
 
@@ -61,15 +61,15 @@ You can configure some of these resources to use a feature called [autoscale][wh
 
 ### Considerations when scaling in and out
 
-When scaling out, the startup time of your application can impact how quickly your application can scale. If your web app takes 2 minutes to start up and be available for users, that means each of your instances will take 2 minutes until they are available to your users. You'll want to take this startup time into consideration when determining how fast you want to scale.
+When scaling out, the startup time of your application can impact how quickly your application can scale. If your web app takes two minutes to start up and be available for users, that means each of your instances will take two minutes until they are available to your users. You'll want to take this startup time into consideration when determining how fast you want to scale.
 
-You'll also need to think about how your application handles state. When the application scales in, any state stored on the machine is no longer available. If a user connects to an instance that doesn't have it's state, it could force them to log in, or re-select data, leading to a poor user experience. A common pattern is to externalize state to another service like Redis Cache or SQL Database, making your web servers stateless. Now that our web front ends are stateless we don't need to worry about which individual instances are available. They are all doing the same job and are deployed in the same way.
+You'll also need to think about how your application handles state. When the application scales in, any state stored on the machine is no longer available. If a user connects to an instance that doesn't have its state, it could force them to sign in, or reselect data, leading to a poor user experience. A common pattern is to externalize state to another service like Redis Cache or SQL Database, making your web servers stateless. Now that our web front ends are stateless we don't need to worry about which individual instances are available. They are all doing the same job and are deployed in the same way.
 
 ## Throttling
 
 We've established that the load on an application will vary over time. This may be due to the number of active or concurrent users and the activities being performed. While we could use autoscaling to add capacity, we could also use a throttling mechanism to limit the number of requests from a source. We can safeguard performance limits by putting known limits into place at the application level, preventing the application from breaking. Throttling is most frequently used in applications exposing API endpoints.
 
-Once the application has identified that it would breach a limit, throttling could begin and ensure the overall system SLA isn't breached. For example, if we exposed an API for customers to get data, could limit the number of requests to 100 per minute. If any single customer exceeded this limit, we'd could respond with an HTTP 429 status code, including the wait time before another request can succesfully be submitted.
+Once the application has identified that it would breach a limit, throttling could begin and ensure the overall system SLA isn't breached. For example, if we exposed an API for customers to get data, could limit the number of requests to 100 per minute. If any single customer exceeded this limit, we could respond with an HTTP 429 status code, including the wait time before another request can successfully be submitted.
 
 Examples on how to implement the [throttling pattern][throttling-pattern] are discussed on the architecture center.
 
@@ -81,7 +81,7 @@ With serverless computing you only pay for the resources that you use, and they 
 
 Think about services like Azure Storage, Event Grid, and Data Lake. Those services are considered consumption-based services, as you pay for the amount of storage per GB or the number of events routed through the resource. You don't worry about the underlying configuration or what servers are deployed to help you achieve the activity. You just use the service and build your solution. Sometimes these types of services are also referred to as serverless.
 
-Let's revisit the Lamna Healthcare example. There could be some potential for cost saving and ease of management. Consider an API endpoint, or some function that does not run frequently. Instead of hosting the API in Azure App Service or a on virtual machine, they could use an Azure Function App using a consumption-based plan. Azure functions would enable the team to only pay for the resources required to process transactions, and scale would be directly in line with the number of transactions in the system.
+Let's revisit the Lamna Healthcare example. There could be some potential for cost saving and ease of management. Consider an API endpoint, or some function that does not run frequently. Instead of hosting the API in Azure App Service or on a virtual machine, they could use an Azure Function App using a consumption-based plan. Azure functions would enable the team to only pay for the resources required to process transactions, and scale would be directly in line with the number of transactions in the system.
 
 ## Containers
 

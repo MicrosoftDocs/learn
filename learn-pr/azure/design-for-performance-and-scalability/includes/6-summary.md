@@ -6,8 +6,8 @@ Congratulations, you have completed the module on Performance and Scalability. L
 
 * The difference between scaling up/down (the level of resource provisioned on an instance) and scaling in/out (increasing or decreasing the number of available instances). We also discussed examples in Azure of each
 * The considerations to be made when scaling in/out around state management and application startup times
-* Autoscale, and how it can help you scale the number of instances based on a schedule or the demand of an application (e.g. CPU utilization or queue depth)
-* Discussed alternate technologies that may help with scalability including serverless (consumption based resources) and containers.
+* Autoscale, and how it can help you scale the number of instances based on a schedule or the demand of an application
+* Discussed alternate technologies that may help with scalability including serverless and containers.
 
 ## Optimize network performance
 
@@ -20,12 +20,12 @@ Congratulations, you have completed the module on Performance and Scalability. L
 
 ## Optimize storage performance
 
-* There are 3 main types of disks available for Infrastructure as a Service (IaaS) deployments. Standard HDD Disks (Inconsistent latency and lower levels of throughput), Standard SSD Disks (Consistent latency and lower levels of throughput) and Premium SSD Disks (Consistent latency and high levels of throughput).
-* Caching could be used in the application layer to improve the load times of an application. Frequently requested information could be stored in a cache in front of the database, which could then optimise for data load times of the most requested information.
+* There are three main types of disks available for Infrastructure as a Service (IaaS) deployments. Standard HDD Disks (Inconsistent latency and lower levels of throughput), Standard SSD Disks (Consistent latency and lower levels of throughput), and Premium SSD Disks (Consistent latency and high levels of throughput).
+* Caching could be used in the application layer to improve the load times of an application. Frequently requested information could be stored in a cache in front of the database, which could then optimize for data load times of the most requested information.
 * Using the appropriate backend data store for the job (polyglot persistence) should be considered when building out your solution.
 
 ## Identify performance bottlenecks
 
 * Importance of understanding the expectations of the application before architecting or building any operations
 * Understanding how effective DevOps strategies can help build more robust and well-performing applications
-* Summarized the monitoring options available in Azure, including Azure Monitor (pane of glass for monitoring on Azure), Azure Log Analytics (log ingestion and IaaS monitoring) and Application Insights (application performance monitoring including availability, performance and exception information).
+* Summarized the monitoring options available in Azure, including Azure Monitor (pane of glass for monitoring on Azure), Azure Log Analytics (log ingestion and IaaS monitoring), and Application Insights (application performance monitoring including availability, performance, and exception information).

@@ -6,7 +6,7 @@ Before we talk about performance bottlenecks, it's important to talk about requi
 
 Defining these requirements in advance of building your solution is critical. Those requirements enable you to clearly architect the solution to meet certain non-functional requirements, and plan associated monitoring and operations rules.
 
-Discuss requirements with your customers, document them and communicate them boradly to ensure that everyone agrees on what "good performance" means. This helps everyone understand what's being committed, and serves as a level of quality that everyone can work towards.
+Discuss requirements with your customers, document them and communicate them broadly to ensure that everyone agrees on what "good performance" means. This helps everyone understand what's being committed, and serves as a level of quality that everyone can work towards.
 
 ## DevOps and application performance
 
@@ -53,13 +53,13 @@ On Azure, Log Analytics plays the role of this centralized logging service. [Log
 
 ![Log Analytics Sources](../media/log-analytics.png)
 
-You can collate a wide range of data sources, Security Logs, Azure Activity Logs, Server, network and Application logs. [You can also push On-premises System Center Operations Manager data to Log Analytics in hybrid deployment scenarios.][scom-to-la] and have [Azure SQLDB][log-analytics-sqldb] send diagnostic information directly into Log Analytics for detailed performance monitoring.
+You can collate a wide range of data sources, Security Logs, Azure Activity Logs, Server, network and Application logs. [You can also push on-premises System Center Operations Manager data to Log Analytics in hybrid deployment scenarios.][scom-to-la] and have [Azure SQLDB][log-analytics-sqldb] send diagnostic information directly into Log Analytics for detailed performance monitoring.
 
 Centralized logging can be massively beneficial for troubleshooting all types of scenarios, including performance issues. It's a key part of a good monitoring strategy for any architecture.
 
 ## Application performance management
 
-Deep application issues are often tricky to track down. This is where integrating telemetry into an application by using an application performance management solution (APM) to track down low level application performance and behavior can be extremely beneficial. This telemetry can include individual page request times, exceptions within your application, and even custom metrics to track business logic. This telemetry can provide a wealth of insight into what is going on within your application.
+Deep application issues are often tricky to track down. This is where integrating telemetry into an application by using an application performance management solution (APM) to track down low-level application performance and behavior can be beneficial. This telemetry can include individual page request times, exceptions within your application, and even custom metrics to track business logic. This telemetry can provide a wealth of insight into what is going on within your application.
 
 On Azure, Application Insights is a service that provides this deep application performance management. You install a small instrumentation package in your application, and set up an Application Insights resource in the Microsoft Azure portal. The instrumentation monitors your app and sends telemetry data to the portal.
 
@@ -69,9 +69,9 @@ Application Insights stores its data in a common repository and metrics are shar
 
 A common pattern used in determining the availability of a web application is the [health endpoint monitoring pattern][health-endpoint-monitoring-pattern]. This pattern is used to monitor web applications and associated back-end services, to ensure they're available and performing correctly.
 
-The pattern is implemented by querying a particular endpoint that has been implemented. The endpoint checks on the status of many components, including the back end services that the app depends on, rather than just the availability of the front end itself. This then allows a solution level health check returns an indication of its overall health.
+The pattern is implemented by querying a particular endpoint that has been implemented. The endpoint checks on the status of many components, including the back-end services that the app depends on, rather than just the availability of the front end itself. This then allows a solution level health check returns an indication of its overall health.
 
-Use an application performance monitoring solution such as Application Insights to gain a deep understanding of your application and correlate activity across your application. This can can help you understand how a specific action works in the client browser, on the server and through to downstream services. It will also provide insight into trends and provide notifications when there is a problem, help identify where the problem is and how to fix it, before your users are aware.
+Use an application performance monitoring solution such as Application Insights to gain a deep understanding of your application and correlate activity across your application. This can help you understand how a specific action works in the client browser, on the server and through to downstream services. It will also provide insight into trends and provide notifications when there is a problem, help identify where the problem is and how to fix it, before your users are aware.
 
 ## Performance monitoring at Lamna Healthcare
 
@@ -83,7 +83,7 @@ Application Insights has been configured to capture availability and telemetry i
 
 ## Summary
 
-We've taken a look at some processes, tools and best practices to help you track down performance issues and ensure your application is performing at it's best. Let's wrap up what we've learned throughout this module.
+We've taken a look at some processes, tools, and best practices to help you track down performance issues and ensure your application is performing at it's best. Let's wrap up what we've learned throughout this module.
 
 <!-- links -->
 [ai-snap]:https://docs.microsoft.com/en-us/azure/application-insights/app-insights-snapshot-debugger
