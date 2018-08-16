@@ -3,10 +3,10 @@
 ## Introduction to Jupyter for more interactive deep learning
 Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
-## Serving Jupyter Notebooks with Nvidia Docker on an Azure DSVM
+# Serving Jupyter Notebooks with Nvidia Docker on an Azure DSVM
 
 
-### Step 1 Create Linux a DSVM  
+## Step 1 Create Linux a DSVM  
 Login to your azure subscription
 ```
 az login
@@ -41,7 +41,7 @@ az group create --name [[NAME OF RESOURCE GROUP]] --location [[ Data center. For
 az group deployment create --resource-group  [[NAME OF RESOURCE GROUP ABOVE]]  --template-uri https://raw.githubusercontent.com/Azure/DataScienceVM/master/Scripts/CreateDSVM/Ubuntu/azuredeploy.json --parameters parameter_file.json
 ```
 
-### Step 2 Open the Port 8888 on the DLVM
+## Step 2 Open the Port 8888 on the DLVM
 
 ```
 $ az vm open-port -g MyResourceGroup -n MyVm --port 8888
@@ -49,13 +49,13 @@ $ az vm open-port -g MyResourceGroup -n MyVm --port 8888
 
 Port 8888 is the default port for Jupyter Notebooks For detailed steps on opening a port click here
 
-### Step 3 Connect to the DLVM with the Azure Shell
+## Step 3 Connect to the DLVM with the Azure Shell
 
 ```
 ssh myuser@dlvm_domain
 ```
 
-### Step 4 Run Docker Container & link 8888 port to the VM Host
+## Step 4 Run Docker Container & link 8888 port to the VM Host
 
 Link port 8888 between the VM and the docker container Ex. 
 
@@ -63,7 +63,7 @@ Link port 8888 between the VM and the docker container Ex.
 sudo nvidia-docker run -it -p 8888:8888 pytorch/pytorch
 ```
 
-### Step 5 Navigate to the Jupyter Notebook in the Browser
+## Step 5 Navigate to the Jupyter Notebook in the Browser
 
 Now that your Jupyter notebook is running to access it in the browser :
 
