@@ -1,12 +1,18 @@
+# Intro to deep learning.
+
 The goal of Machine Learning ML is to find features to train a model that transforms input data (such as pictures, time series, or audio) to a given output (eg captions, price values, transcriptions). In traditional data science these features are often hand selected.
 
-[Put picture here of a canonical example of a feed forward deep neural network.] 
+![Put picture here of a canonical example of a feed forward deep neural network.](http://www.texample.net/media/tikz/examples/PNG/neural-network.png)
 
 In Deep Learning (DL) we learn to extract these features by representing our inputs as vectors and transforming them with a series of clever linear algebra operations into a given output. 
 
 We then evaluate whether our output is what we expected using an equation called a loss function. The goal of the process is to use the result of the loss function from each training input to guide our model to extract features that result in a lower loss value on the next pass. 
 
 The series of matrix opperations that we computer as part of the linear algebra component tend to be computational expensive and heavily parallelized requiring specialized compute such as Graphics Processing Units GPU's.   
+
+# Data Science Virtual Machine
+
+![](https://azurecomcdn.azureedge.net/cvt-569abacd3eadc3d5032bef3afa7f751fe0d36630318be7d55ce9732a37e0c116/images/page/services/virtual-machines/data-science-virtual-machines/diagram-1.jpg)
 
 DSVMs are Azure Virtual Machine images, pre-installed, configured and tested with several popular tools that are commonly used for data analytics, machine learning and deep learning training.
 
@@ -22,7 +28,7 @@ The DSVM contains several tools for AI including popular GPU editions of deep le
 
 The DSVM can run on Azure GPU NC-series VM instances. These GPUs use discrete device assignment, resulting in performance close to bare-metal, and are well-suited to deep learning problems.
 
-### Pytorch
+### Py Torch
 
 Typically deep learning engineers don't hard code matrix algebra operations all by hand. They instead use frameworks such as PyTorch or TensorFlow. 
 
