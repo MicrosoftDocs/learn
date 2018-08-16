@@ -57,7 +57,6 @@ ssh myuser@dlvm_domain
 
 ### Step 4 Run Docker Container & link 8888 port to the VM Host
 
-
 Link port 8888 between the VM and the docker container Ex. 
 
 ``` 
@@ -69,4 +68,5 @@ sudo nvidia-docker run -it -p 8888:8888 pytorch/pytorch
 Now that your Jupyter notebook is running to access it in the browser :
 
 Copy the link to the local notebook http://cd3cdb8ea05f:8888/?token=66dc6919e8762c8136006cffd90b7b16f3fa7fd1fa591637&token=66dc6919e8762c8136006cffd90b7b16f3fa7fd1fa591637
+
 Replace the http://cd3cdb8ea05f or http://localhost part of the jupyter url with your VMs DNS name

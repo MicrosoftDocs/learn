@@ -1,3 +1,5 @@
+![](https://c1.staticflickr.com/2/1600/25660808075_c8190290f7_b.jpg)
+
 Nvidia-Docker enables developers to easily pack, ship, and run any GPU intensive application as a lightweight, portable, self-sufficient container, which can run virtually anywhere. 
 
 You might be thinking to yourself, if the DLVM base image comes with the most popular deep learning frameworks pre-installed, why should we even bother with containerization clients such as Nvidia-Docker?
