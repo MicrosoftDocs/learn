@@ -16,14 +16,16 @@ Once you've added the service(s), you'll want to price them. Scrolling down on t
 
 ## Estimate a solution
 
-From our original scenario, let's imagine that this system will run on two Azure VMs and will connect to an Azure SQL DB. We'd also like to have a layer 7 firewall in place to ensure we have enhanced load balancing capabilities. We can use the Azure Pricing Calculator to figure out what the solution will cost and export our estimate to share with the team.
+From our original scenario, let's imagine that this system will run on two Azure VMs and will connect to an Azure SQL DB. We'd also like to have a layer 7 firewall in place to ensure we have enhanced load balancing capabilities as shown below:
 
-![Reference architecture diagram](../images/estimate-costs-architecture.png)
+![System architecture diagram](../images/estimate-costs-architecture.png)
+
+We can use the Azure Pricing Calculator to figure out what the solution will cost and export our estimate to share with the team.
 
 > [!NOTE]
 > Make sure you have a clean calculator with nothing listed in the estimate. If you have anything presently in your estimate, click the trashcan icon to reset the estimate. 
 
-Let's add the following services to the estimate by clicking on them:
+In the Azure Pricing Calculator add add the following services to the estimate by clicking on them:
 
 - Virtual Machines
 - Azure SQL Database
