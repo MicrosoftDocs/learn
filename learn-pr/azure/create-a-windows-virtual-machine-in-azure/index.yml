@@ -1,0 +1,34 @@
+### YamlMime:Module
+# Module uids are manually created by the content author and should follow the format (repo).(module-short-name). Keep it easy on yourself and keep the module-short-name the same as the module folder name.
+uid: learn.create-a-windows-vm-in-azure
+metadata:
+  title: Create a Windows virtual machine in Azure
+  description: |
+    Windows Virtual Machines enable you to create dedicated compute resources within Microsoft Azure in minutes that can be used just like a physical desktop or server machine. You can then use Remote Deskop Protocol (RDP) to connect the user interface. Whether your Virtual Machine is a server that you connect to for admistration purposes, or a virtual workstation for an end user, the RDP gives the same experience as sitting at the terminal of a local physical computer.
+
+    In this course, you will learn how to create a Windows VM through the Azure portal. You will then connect to that VM over Remote Desktop Protocol (RDP) and use the Windows desktop. You will also use the portal to modify the size and networking capabilities of the VM.
+title: Create a Widows virtual macine in Azure
+summary: In this module, you will learn how to create a Windows Virtual Machine in Azure, then access that virtual machine through a Remote Desktop connection. Finally you will learn to use the portal to modify the virtual hardware configuration of your VM.
+abstract: |
+  Windows Virtual Machines enable you to create dedicated compute resources within Microsoft Azure in minutes that can be used just like a physical desktop or server machine. You can then use Remote Deskop Protocol (RDP) to connect the user interface. Whether your Virtual Machine is a server that you connect to for admistration purposes, or a virtual workstation for an end user, the RDP gives the same experience as sitting at the terminal of a local physical computer.
+
+  In this course, you will learn how to create a Windows VM through the Azure portal. You will then connect to that VM over Remote Desktop Protocol (RDP) and use the Windows desktop. You will also use the portal to modify the size and networking capabilities of the VM.
+cardDescription: In this module, you will learn how to create a Windows Virtual Machine in Azure, then access that virtual machine through a Remote Desktop connection. Finally you will learn to use the portal to modify the virtual hardware configuration of your VM.
+# iconUrl is the image file that will be shown on the module card and the achievement badge granted at user completion of this module
+iconUrl: http://via.placeholder.com/120x120
+# Review the Docs Contributor Guide for levele, role, and product options
+levels:
+- intermediate
+roles:
+- developer
+products:
+- Azure
+# Listing of all of the unit uids, in the order they should be displayed to the user in
+units:
+- learn.create-a-windows-vm-in-azure.1-introduction
+- learn.create-a-windows-vm-in-azure.2-create-a-windows-virtual-machine
+- learn.create-a-windows-vm-in-azure.3-exercise-create-a-vm
+- learn.create-a-windows-vm-in-azure.4-connect-to-a-windows-virtual-machine
+- learn.create-a-windows-vm-in-azure.5-exercise-connect-to-a-windows-vm-using-rdp
+- learn.create-a-windows-vm-in-azure.6-summary
+achievement: learn.create-a-windows-vm-in-azure.badge
