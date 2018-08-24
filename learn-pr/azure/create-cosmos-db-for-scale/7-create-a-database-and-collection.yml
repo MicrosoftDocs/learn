@@ -16,12 +16,10 @@ tasks:
   hint: 'Please make sure that you have created a database named "Users", a collection named "WebCustomers".'
   #TODO: Not exactly sure how to do this
   azure:
-    resourceGroup: myResourceGroup
     location: eastus
 - action: exists
   environment: azure
   azure:
-    resourceGroup: groupA
     resource:
       type: Microsoft.Storage/storageAccounts
       name: docsproxyppea427
