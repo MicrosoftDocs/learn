@@ -1,5 +1,7 @@
 # Exercise: Connect to a Windows Virtual Machine using RDP
 
+<!-- I don't think this is a compelling exercise. You connected to the VM in exercise 4, but you haven't configured RDP access yet? I'd configure RDP when you configure the VM and I would skip resizing the VM and maybe go with adding a data disk or adding a VM extension. If you add a data disk, you have a reason to RDP because you need to format the new storage etc. It is much easier to create a realistic scenario out of that. Not many folks resize VMs, but most add storage. -->
+
 In this lab, you will use the RDP client to connect to the Windows VM you created in the previous unit. You can connect by downloading and running an RDP file from the Azure Portal. This RDP file will have:
 
 * The public IP address of the VM.
