@@ -1,5 +1,8 @@
 ## Motivation
 
+<!-- this is a really convoluted example of the use of a VM and you switch to another usage late in the session. I'd pick one, simple use case - like web site or app hosting -- and stick with it through the entire process. -->
+
+
 Let's say you work at a company that carries out data processing for road traffic cameras. The video streams are analyzed, categorized, and processed to identify faces and license plates at particular times. This information is then uploaded to Azure Data Lake and a fully searchable index is generated.
 
 These video streams use a range of different codecs and resolutions, you need to run several Windows-based proprietary software packages to carry out the initial processing into a common format. And because different formats keep coming to market, it is better to run these packages on virtual machines that the IT department can start and stop as required.

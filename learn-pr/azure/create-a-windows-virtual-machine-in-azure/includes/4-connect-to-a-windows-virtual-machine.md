@@ -1,6 +1,7 @@
 ## Motivation
 
-As network administrator at a data analysis company, you're responsible for connecting to Virtual Machines in Azure and checking that they are properly configured. You'll do that using a Remote Desktop Protocol (RDP) client to connect to the VM's Windows Desktop User Interface.
+<!-- I really don't think this has anything to do with VMs. This is about RDP, which makes it not really an Azure thing and more of a Windows thing. I would cut this whole page. Also, I don't think a lot of what you are saying about RDP is true for Azure VMs. Azure VMs are Gen 1 Hyper-V VMs and a lot of the RDP features aren't supported. --> 
+As network administrator at a data analysis company, you're responsible for connecting to Virtual Machines in Azure and checking that they are properly configured. You'll do that using a Remote Desktop Protocol (RDP) client to connect to the VM's Windows user interface.
 
 ## What is Remote Desktop Protocol?
 
