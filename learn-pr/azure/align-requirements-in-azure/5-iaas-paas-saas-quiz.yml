@@ -16,7 +16,7 @@ quiz:
       isCorrect: true
     - content: PaaS
       correctExplanation: Because of the immediate need, no available hardware, and short lifetime, PaaS is the the best option. For example, you could use Azure SQL Database for the solution.
-      isCorrect: true
+      isCorrect: false
     - content: SaaS
       incorrectExplanation: The requirement is a SQL database delivered as a service. SaaS would not apply for this scenario.
       isCorrect: false
