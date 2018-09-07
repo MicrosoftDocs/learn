@@ -10,8 +10,7 @@ levels:
 roles:
 - administrator
 products:
-- Docker
-- Azure Container Registry
+- azure-container-registry
 metadata:
   title: Build and store container images with Azure Container Registry
 units:

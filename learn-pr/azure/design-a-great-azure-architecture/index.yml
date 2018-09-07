@@ -20,7 +20,7 @@ roles:
 # achievement is currently a placeholder and will need to be updated
 achievement: learn.placeholder.badge
 products:
-- Azure
+- azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
 - learn.design-a-great-azure-architecture.1-introduction

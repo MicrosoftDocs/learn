@@ -13,7 +13,7 @@ levels:
 roles:
  - developer
 products:
- - Azure
+ - azure
 modules:
 #- learn.azure-functions-and-io-bindings
 - learn.create-serverless-logic-with-functions

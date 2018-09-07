@@ -14,7 +14,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 units:
 - learn.build-azure-bot-services-bot.1-create-web-app-bot
 - learn.build-azure-bot-services-bot.2-create-qna-maker

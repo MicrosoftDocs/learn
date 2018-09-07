@@ -9,7 +9,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 prerequisites: None
 metadata:
   title: Work with relational data in Azure

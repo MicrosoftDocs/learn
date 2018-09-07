@@ -15,7 +15,7 @@ levels:
 roles: 
 - developer
 products: 
-- Azure
+- azure
 units:
 - learn.prepare-azure-dev-environment.1-motivation
 - learn.prepare-azure-dev-environment.2-set-up-vs-code

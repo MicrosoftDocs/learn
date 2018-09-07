@@ -15,7 +15,7 @@ levels:
 roles: 
 - developer
 products:
-- Azure
+- azure
 units:
 - learn.explore-azure-services-for-web-devs.1-web-app-hosting
 - learn.explore-azure-services-for-web-devs.2-data

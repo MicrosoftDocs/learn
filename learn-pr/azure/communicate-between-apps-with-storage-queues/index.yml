@@ -16,7 +16,7 @@ levels:
 roles: 
 - developer
 products: 
-- Azure
+- azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
 - learn.communicate-between-apps-with-storage-queues.1-create-storage-infrastructure

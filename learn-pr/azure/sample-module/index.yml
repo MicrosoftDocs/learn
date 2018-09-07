@@ -23,7 +23,7 @@ roles:
 - developer
 # `developer`, `administrator`, `solution-architect, `business-user`, `business-analyst`; multiple values accepted
 products:
-- Azure
+- azure
 # `azure`; multiple values accepted
 units:
 # `units` are lists of all of the unit uids, in the order they should be displayed to the user in

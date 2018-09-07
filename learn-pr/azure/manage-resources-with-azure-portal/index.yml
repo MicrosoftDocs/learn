@@ -15,7 +15,7 @@ levels:
 roles: 
 - developer
 products: 
-- Azure
+- azure
 units:
 - learn.manage-resources-with-azure-portal.1-motivation
 - learn.manage-resources-with-azure-portal.2-intro-azure-portal

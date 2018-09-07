@@ -9,7 +9,7 @@ levels:
 roles: 
 - developer
 products: 
-- Azure
+- azure
 prerequisites: This is the prerequisites text for the Sample Learning Path
 metadata:
   title: Sample Learning Path Page Title

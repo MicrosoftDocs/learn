@@ -11,7 +11,7 @@ roles:
 - solution-architect
 - administrator
 products:
-- Azure
+- azure
 prerequisites: Interested in the cloud, but aren't quite sure what it can do for you? This learning path is the place to start. Learn the benefits of cloud computing, features in Azure that will save you time and money, basic strategies for transitioning to the cloud and more.
 metadata:
   title: Cloud Fundamentals

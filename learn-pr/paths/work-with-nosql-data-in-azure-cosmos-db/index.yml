@@ -9,7 +9,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 prerequisites: None
 metadata:
   title: Working with NoSQL data in Azure Cosmos DB

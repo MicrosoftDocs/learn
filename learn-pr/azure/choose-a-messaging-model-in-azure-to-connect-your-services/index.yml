@@ -15,7 +15,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 units:
 - learn.choose-messaging-model.1-introduction
 - learn.choose-messaging-model.2-choose-whether-to-use-message-queues-or-events

@@ -13,7 +13,7 @@ levels:
 roles: 
 - developer
 products:
-- Azure
+- azure
 
 units:
 - execute-azure-function-with-triggers.1-introduction

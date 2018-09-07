@@ -10,7 +10,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 metadata:
   title: Sending location information over SMS from your phone using Azure Functions and Twilio
   description: Learn how to use location tracking on your phone mixed with Azure functions to send your location to your friends.

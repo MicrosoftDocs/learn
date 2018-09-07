@@ -15,7 +15,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 # Listing of all of the unit uids, in the order they should be displayed to the user in
 units:
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.1-introduction

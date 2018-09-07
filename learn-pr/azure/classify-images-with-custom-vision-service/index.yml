@@ -14,7 +14,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 units:
 - learn.classify-images-with-custom-vision-services.1-create-custom-vision-service-project
 - learn.classify-images-with-custom-vision-services.2-upload-tagged-images

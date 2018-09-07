@@ -15,7 +15,7 @@ levels:
 roles: 
 - developer
 products: 
-- Azure
+- azure
 units:
 - learn.control-azure-services-with-cli.1-introduction
 - learn.control-azure-services-with-cli.2-install-and-run-the-azure-cli

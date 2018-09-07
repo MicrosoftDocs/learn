@@ -10,7 +10,7 @@ levels:
 roles:
 - developer
 products:
-- Azure
+- azure
 metadata:
   title: Store web application data with Azure Blob Storage
   description: In this module, you'll build a web app that stores user files with Azure Blob Storage.

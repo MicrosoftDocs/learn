@@ -9,7 +9,7 @@ levels:
 roles: 
 - solution-architect
 products: 
-- Azure
+- azure
 prerequisites: None
 metadata:
   title: Architect great solutions with Azure
