@@ -26,12 +26,4 @@ products:
 units:
 #TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.create-linux-vm-in-azure.1-introduction
-- learn.create-linux-vm-in-azure.2-create-a-linux-virtual-machine
-- learn.create-linux-vm-in-azure.3-exercise-generate-ssh-key
-- learn.create-linux-vm-in-azure.4-exercise-create-a-vm
-- learn.create-linux-vm-in-azure.5-connect-to-a-linux-virtual-machine
-- learn.create-linux-vm-in-azure.6-exercise-connect-to-a-linux-vm-using-ssh
-- learn.create-linux-vm-in-azure.7-manage-vm
-- learn.create-linux-vm-in-azure.8-exercise-manage-vm
-- learn.create-linux-vm-in-azure.9-summary
 achievement: learn.create-linux-vm-in-azure.badge

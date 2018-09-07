@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-linux-vm-in-azure.2-select-linux-image
-title: Select a Linux image
-metadata:
-  title: Select a Linux image
-  description: Select a Linux image
-durationInMinutes: 12
-content: |
-  [!include[](includes/2-select-linux-image.md)]
