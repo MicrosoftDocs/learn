@@ -42,17 +42,19 @@ Azure App Service Authentication enables turn-key authentication support in an A
     cd ~/functions-first-serverless-web-application/www/dist
     ```
 
-1. To enable authentication in your function app, append the following line of code to **settings.js**.
-
-    `window.authEnabled = true`
-
-    Make the change and view the result by using the following commands or by using a command-line editor like VIM.
+1. You enable authentication in your function app by modifying **settings.js**. Open the file in Cloud Shell Editor.
 
     ```azurecli
-    echo "window.authEnabled = true" >> settings.js
+    code settings.js
     ```
 
-    Confirm the change was made to the file.
+1. Append the following line to the file.
+
+    ```azurecli
+    window.authEnabled = true
+    ```
+
+1. Confirm the change was made to the file.
 
     ```azurecli
     cat settings.js
