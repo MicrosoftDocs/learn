@@ -179,39 +179,57 @@ The web app retrieves settings from a file named **settings.js**. In the followi
     cd ~/functions-first-serverless-web-application/www/dist
     ```
 
-1. Open the Cloud Shell Editor by typing the command `code`.
+1. Query the function app's URL and store it in a bash variable named **FUNCTION_APP_URL**.
 
     ```azurecli
-    code
+    export FUNCTION_APP_URL="https://"$(az functionapp show -n <function app name> -g first-serverless-app --query "defaultHostName" --output tsv)
     ```
 
-1. In the Cloud Shell window below the editor, query the function app's URL.
+    Confirm the variable is correctly set.
 
     ```azurecli
-    echo "https://"$(az functionapp show -n <function app name> -g first-serverless-app --query "defaultHostName" --output tsv)
+    echo $FUNCTION_APP_URL
     ```
 
-1. Add the following line into the editor window, using the function app URL you retrieved in the previous step.
+1. To set the base URI of API calls to your function app, create **settings.js** and add the function app URL like the following.
 
-    ```
-    window.apiBaseUrl = '<function app url>'
-    ```
+    `window.apiBaseUrl = 'https://fnapp@lab.GlobalLabInstanceId.azurewebsites.net'`
 
-1. In the Cloud Shell window below the editor, query the Azure Blob Storage endpoint URL.
+    You can make the change by running the following command or by using a command-line editor like VIM.
 
     ```azurecli
-    echo $(az storage account show -n <storage account name> -g first-serverless-app --query primaryEndpoints.blob -o tsv | sed 's/\/$//')
+    echo "window.apiBaseUrl = '$FUNCTION_APP_URL'" > settings.js
     ```
 
-1. Append a second line into the editor window, using the Storage endpoint URL you retrieved in the previous step.
+    Confirm the file was successfully written.
 
+    ```azurecli
+    cat settings.js
     ```
-    window.blobBaseUrl = '<blob storage endpoint url>'
+
+1. Query the Blob Storage base URL and store it in a bash variable named **BLOB_BASE_URL**.
+
+    ```azurecli
+    export BLOB_BASE_URL=$(az storage account show -n <storage account name> -g first-serverless-app --query primaryEndpoints.blob -o tsv | sed 's/\/$//')
     ```
 
-1. Save the file as **settings.js** and close the editor.
+    Confirm the variable is correctly set.
 
-1. Confirm the file was successfully written and it now contains 2 lines.
+    ```azurecli
+    echo $BLOB_BASE_URL
+    ```
+
+1. To set the base URI of API calls to your function app, append the storage URL like the following line of code to **settings.js**.
+
+    `window.blobBaseUrl = 'https://mystorage.blob.core.windows.net'`
+
+    You can make the change by running the following command or by using a command-line editor like VIM.
+
+    ```azurecli
+    echo "window.blobBaseUrl = '$BLOB_BASE_URL'" >> settings.js
+    ```
+
+    Confirm the file was successfully written and it now contains 2 lines.
 
     ```azurecli
     cat settings.js
