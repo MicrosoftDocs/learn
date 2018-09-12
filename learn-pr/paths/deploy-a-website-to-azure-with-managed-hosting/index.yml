@@ -14,6 +14,7 @@ prerequisites: None
 metadata:
   title: Deploy a website to Azure with Managed Hosting
   description: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. Instead, you can focus on your website features and rely on the robust Azure platform to provide secure access to your site.
+  brand: azure
 modules:
 - learn.cd-pipeline-github-to-azure-web-app
 - learn.host-web-app-with-azure-web-apps
