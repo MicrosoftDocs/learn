@@ -16,7 +16,6 @@ prerequisites: Interested in the cloud, but aren't quite sure what it can do for
 metadata:
   title: Cloud Fundamentals
   description: Interested in the cloud, but aren't quite sure what it can do for you? This learning path is the place to start. Learn the benefits of cloud computing, features in Azure that will save you time and money, basic strategies for transitioning to the cloud and more.
-  brand: azure
 modules:
 - learn.align-requirements-in-azure
 - learn.automate-azure-tasks-with-powershell

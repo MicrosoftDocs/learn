@@ -14,7 +14,6 @@ prerequisites: None
 metadata:
   title: Architect great solutions with Azure
   description: Learn how to design and build secure, scalable, performant solutions on Azure by examining the core principles found in every good architecture.
-  brand: azure
 modules:
 - learn.design-a-great-azure-architecture
 - learn.design-for-availability-and-recoverability

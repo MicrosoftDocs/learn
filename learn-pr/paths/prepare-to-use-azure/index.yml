@@ -14,7 +14,6 @@ prerequisites: None
 metadata:
   title: Prepare to use Azure
   description: Learn how to setup your computer to work with Azure services from the command line, scripts, or from a development environment.
-  brand: azure
 modules:
 - learn.automate-azure-tasks-with-powershell
 - learn.explore-azure-services-for-web-devs

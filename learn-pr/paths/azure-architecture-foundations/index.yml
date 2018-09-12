@@ -14,7 +14,6 @@ prerequisites: None
 metadata:
   title: Azure architecture foundations
   description: Learn the core concepts and strategies used by Solutions Architects to properly plan and design performant, scalable, and secure solutions on the Azure platform.
-  brand: azure
 modules:
 - learn.control-and-organize-with-resource-manager
 achievement: learn.azure-architecture-foundations.trophy
