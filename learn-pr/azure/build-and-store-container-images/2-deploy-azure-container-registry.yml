@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-container-registry.deploy-acr
+metadata:
+  title: Deploy Azure Container Registry
+  description: Deploy Azure Container Registry
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure Container Registry
+durationInMinutes: 2
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/2-deploy-acr.md)]

@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.build-a-serverless-web-app.6-add-authentication
+title: Add authentication
+metadata:
+  title: Add authentication
+  description: Add authentication
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# TODO: Consider Azure Portal Interactivity. This module uses both Cloud Shell and the portal, which should be able to be accessed together with azure-portal.
+# interactive: azure-portal
+durationInMinutes: 8
+interactive: bash-editor
+azureSandbox: true
+content: |
+  [!include[](includes/6-add-authentication.md)]

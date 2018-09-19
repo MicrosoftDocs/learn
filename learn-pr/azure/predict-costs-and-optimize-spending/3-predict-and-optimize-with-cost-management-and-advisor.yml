@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.predict-costs-and-optimize-spending.3-predict-and-optimize-with-cost-management-and-advisor
+title: Predict and optimize with Cost Management and Azure Advisor
+metadata:
+  title: Predict and optimize with Cost Management and Azure Advisor 
+  description: In this unit, we'll discuss how to predict and optimize with Cost Management and Azure Advisor
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+# TODO: Consider Azure Portal Interactivity, but quiz will have to be removed
+# interactive: azure-portal
+content: |
+  [!include[](includes/3-predict-and-optimize-with-cost-management-and-advisor.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+
+    - content: "True or false: Azure Advisor provides recommendations on cost only."
+      choices:
+      - content: "True"
+        incorrectExplanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        isCorrect: false
+      - content: "False"
+        correctExplanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        isCorrect: true
+
+    - content: "Azure Cost Management allows you to _________."
+      choices:
+      - content: "See historical breakdowns of what services you are spending your money on."
+        correctExplanation: "Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
+        isCorrect: true
+      - content: "See estimates of what your services might cost if you make a change."
+        incorrectExplanation: "To see cost estimates, you use the Azure pricing calculator. Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
+        isCorrect: false

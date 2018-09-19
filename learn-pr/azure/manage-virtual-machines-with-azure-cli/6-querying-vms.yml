@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-vms-with-azure-cli-data.6-querying-vms
+title: Query system and runtime information about the VM
+metadata:
+  title: Query system and runtime information about the VM
+  description: Learn how to use the Azure CLI to query information about your virtual machine
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-querying-vms.md)]

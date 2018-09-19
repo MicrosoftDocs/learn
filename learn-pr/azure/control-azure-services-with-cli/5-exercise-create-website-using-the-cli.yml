@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.5-exercise-create-website-using-the-cli
+title: Create an Azure website using the CLI
+metadata:
+  title: Create an Azure website using the CLI
+  description: Work with the Azure CLI to create a new PHP website
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-create-website-using-the-cli.md)]

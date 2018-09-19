@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-virtual-machines.3-create-a-vm
+title: Create a VM using the Azure portal
+metadata:
+  title: Create a VM using the Azure portal
+  description: Create a VM using the Azure portal
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# TODO: Consider Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-create-a-vm.md)]

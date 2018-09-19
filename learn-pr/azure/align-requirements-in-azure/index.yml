@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.align-requirements-in-azure
+metadata:
+  title: Align requirements with cloud types and service models in Azure
+  description: Azure supports three approaches to deploying cloud resources - public, private, and the hybrid cloud. Selecting between them will change several factors of the services you move into Azure including cost, maintenance requirements, and security. In this module, we will look at all three types and help you make an informed decision about which one to leverage for your services. We'll also quickly look at the service models supported by Azure which can help you determine the services you should start with when planning out an Azure deployment.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Align requirements with cloud types and service models in Azure
+summary: Azure supports three approaches to deploying cloud resources - public, private, and the hybrid cloud. Selecting between them will change several factors of the services you move into Azure including cost, maintenance requirements, and security. In this module, we will look at all three types and help you make an informed decision about which one to leverage for your services. We'll also quickly look at the service models supported by Azure which can help you determine the services you should start with when planning out an Azure deployment.
+abstract: | 
+  In this module, you will:
+  - Compare each cloud computing deployment model (public, private, and hybrid)
+  - Understand the advantages of each cloud computing service model
+  - Decide which deployment and service model you should use for your services
+prerequisites: None
+iconUrl: /learn/achievements/align-requirements-in-azure.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.align-requirements-in-azure.1-introduction
+- learn.align-requirements-in-azure.2-public-private-hybrid
+- learn.align-requirements-in-azure.3-service-models
+- learn.align-requirements-in-azure.4-iaas
+- learn.align-requirements-in-azure.5-paas
+- learn.align-requirements-in-azure.6-saas
+- learn.align-requirements-in-azure.7-knowledge-check
+- learn.align-requirements-in-azure.8-summary
+achievement: learn.align-requirements-in-azure.badge

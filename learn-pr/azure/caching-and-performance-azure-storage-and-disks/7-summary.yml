@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.caching-and-performance-azure-storage-and-disks.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which caching option is a good choice for write-heavy operations such as storing log files?"
+    choices: 
+    - content: Read-only
+      isCorrect: false
+      incorrectExplanation: "Read-only caching works well for data disks, including TempDB data. However, it does not improve performance of write-heavy operations and may even cause a slight decrease in performance."
+    - content: Read/write
+      isCorrect: false
+      incorrectExplanation: "This is a good option if your app properly handles writing cached data to persistent disks when needed."
+    - content: None
+      isCorrect: true
+      correctExplanation: "Write-heavy operations generally do not benefit from caching. 'None' is probably the best choice for a disk dedicated to log files."
+
+  - content: "For which type of disk does Azure restart the VM in order to change caching type?"
+    choices: 
+    - content: Data 
+      isCorrect: false
+      incorrectExplanation: "Changing the cache setting of a data disk detaches and reattaches the target disk but does not restart the VM."
+    - content: Operating system (OS)
+      isCorrect: true
+      correctExplanation: "Changing the cache setting of the OS disk requires a VM restart."
+    - content: Temporary
+      isCorrect: false
+      incorrectExplanation: "You can't change caching options on a temporary disk."
+    - content: Zone-redundant storage (ZRS)
+      isCorrect: false
+      incorrectExplanation: "A premium storage account doesn't support ZRS."
+  
+  - content: "Suppose you are using Azure PowerShell to manage a VM. You have a local object that represents the VM and you've made several updates to that local object. Which PowerShell cmdlet would you use to apply those local changes to the actual VM?"
+    choices: 
+    - content: Update-AzureRmVM
+      isCorrect: true
+      correctExplanation: "This cmdlet updates the state of an Azure virtual machine to the state of a virtual machine object."
+    - content: Set-AzureRmVM
+      isCorrect: false
+    - content: New-AzureRmVM
+      isCorrect: false

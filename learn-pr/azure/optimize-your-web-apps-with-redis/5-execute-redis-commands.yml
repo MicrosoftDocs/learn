@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-web-app-with-redis.5-execute-redis-commands
+title: Explore the client API to interact with Redis
+metadata:
+  title: Explore the client API to interact with Redis
+  description: Explore the StackExchange.Redis API to interact with Redis
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-execute-redis-commands.md)]

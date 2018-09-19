@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.build-a-serverless-web-app.4-store-image-metadata-with-cosmos
+title: Store image metadata with Azure Cosmos DB
+metadata:
+  title: Store image metadata with Azure Cosmos DB
+  description: Store image metadata with Azure Cosmos DB
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+# TODO: Consider Azure Portal Interactivity. This module uses both Cloud Shell and the portal, which should be able to be accessed together with azure-portal.
+# interactive: azure-portal
+durationInMinutes: 15
+interactive: bash-editor
+azureSandbox: true
+content: |
+  [!include[](includes/4-store-image-metadata-with-cosmos.md)] 

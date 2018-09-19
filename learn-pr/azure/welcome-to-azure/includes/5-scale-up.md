@@ -45,7 +45,7 @@ Let's bump up to the next size, **Standard_DS3_v2**. Your VM will then have four
       --output tsv
     ```
     You see your new VM size, **Standard_DS3_v2**.
-    ```console
+    ```output
     Standard_DS3_v2
     ```
 
@@ -73,7 +73,7 @@ Let's bump up to the next size, **Standard_DS3_v2**. Your VM will then have four
       --output tsv
     ```
     You see your new VM size, **Standard_DS3_v2**.
-    ```console
+    ```output
     Standard_DS3_v2
     ```
 

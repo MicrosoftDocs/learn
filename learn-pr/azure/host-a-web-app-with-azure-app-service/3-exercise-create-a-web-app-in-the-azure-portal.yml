@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.host-a-web-application-with-azure-web-apps.3-exercise-create-a-web-app-in-the-azure-portal
+title: Exercise - Create a web app in the Azure portal
+metadata:
+  title: Exercise - Create a web app in the Azure portal
+  description: Exercise - Create a web app in the Azure portal
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# TODO:Consider Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-a-web-app-in-the-azure-portal.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.distribute-data-globally-with-cosmos-db.6-summary-cleanup
+metadata:
+  title: Summary and cleanup
+  description: Summary and cleanup
+  displayType: one-column
+title: Summary and cleanup
+# TODO:Add Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary-cleanup.md)]

@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.store-app-data-with-azure-blob-storage.8-cleanup-next-steps-knowledge-check
+title: Clean up and knowledge check
+metadata:
+  title: Clean up and knowledge check
+  description: Clean up and knowledge check
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-cleanup-next-steps-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following describes a good strategy for creating storage accounts and blob containers for your application?
+    choices:
+    - content: Create Azure Storage accounts and containers up front, before deploying your application.
+      isCorrect: false
+      incorrectExplanation: Creating an Azure Storage account is an administrative activity and can be done prior to deploying an applciation. Also, container creation is quick and lightweight which makes it a good activity for you to do in your application.
+    - content: Create Azure Storage accounts as your application needs them, but the deployment process should create all the containers your application needs up front.
+      isCorrect: false
+      incorrectExplanation: Creating an Azure Storage account is an administrative activity and can be done prior to deploying an applciation. Also, container creation is quick and lightweight which makes it a good activity for you to do in your application.
+    - content: Create Azure Storage accounts up front, before deploying your app, and let your application create the containers as it needs them.
+      isCorrect: true
+      correctExplanation: Creating an Azure Storage account is an administrative activity and can be done prior to deploying an applciation. Also, container creation is quick and lightweight which makes it a good activity for you to do in your application.
+      
+  - content: What kind of configuration is typically used to initialize the Blob Storage client library within an application?
+    choices:
+    - content: An Azure username and password.
+      isCorrect: false
+      incorrectExplanation: A storage account connection string contains all the information needed by an application to connect to Blob storage, most importantly the account name and the account key.
+    - content: The Azure Storage account connection string.
+      isCorrect: true
+      correctExplanation: A storage account connection string contains all the information needed by an application to connect to Blob storage, most importantly the account name and the account key.
+    - content: A globally-unique identifier (GUID) that represents the application.
+      isCorrect: false
+      incorrectExplanation: A storage account connection string contains all the information needed by an application to connect to Blob storage, most importantly the account name and the account key.
+    - content: The Azure Storage account datacenter and location identifiers.
+      isCorrect: false
+      incorrectExplanation: A storage account connection string contains all the information needed by an application to connect to Blob storage, most importantly the account name and the account key.
+  
+  - content: What happens when you call `GetBlockBlobReference` with the name of a blob?
+    choices:
+    - content: A new block blob is created in storage.
+      isCorrect: false
+      incorrectExplanation: Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob.
+    - content: A `CloudBlockBlob` object is created locally. No network calls are made.
+      isCorrect: true
+      correctExplanation: Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob.
+    - content: An exception is thrown if the blob does not exist in storage.
+      isCorrect: false
+      incorrectExplanation: Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob.
+    - content: The contents of the named blob are downloaded.
+      isCorrect: false
+      incorrectExplanation: Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-storage-account.2-decide-how-many-storage-accounts-you-need
+title: Decide how many storage accounts you need
+metadata:
+  title: Decide how many storage accounts you need
+  description: Decide how many storage accounts you need
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-decide-how-many-storage-accounts-you-need.md)]

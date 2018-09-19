@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.build-a-serverless-web-app
+metadata:
+  title: Build a serverless web app
+  description: Deploy a simple web application that allows users to upload images via an HTML-based user interface (UI). The web app uses a serverless back end to automatically tag and store captions that describe the images.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: asjohnso
+title: Build a serverless web app
+summary: Deploy a simple web application that allows users to upload images via an HTML-based user interface (UI). The web app uses a serverless back end to automatically tag and store captions that describe the images.
+abstract: | 
+  In this module, you will:
+  - Configure Azure Blob storage to host a static website and upload images
+  - Upload images to Azure Blob storage using Azure Functions
+  - Resize images using Azure Functions
+  - Store image metadata in Azure Cosmos DB
+  - Use the Cognitive Services Computer Vision API to auto-generate image captions
+  - Use Azure Active Directory to secure the web app by authenticating users
+prerequisites: None
+iconUrl: /learn/achievements/build-a-serverless-web-app.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-cosmos-db
+- azure-cloud-shell
+- azure-functions
+- azure-portal
+units:
+#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
+- learn.build-a-serverless-web-app.1-create-web-app-in-blob-storage
+- learn.build-a-serverless-web-app.2-upload-images-to-blob-storage
+- learn.build-a-serverless-web-app.3-resize-images-with-functions
+- learn.build-a-serverless-web-app.4-store-image-metadata-with-cosmos
+- learn.build-a-serverless-web-app.5-add-captions-with-computer-vision
+- learn.build-a-serverless-web-app.6-add-authentication
+- learn.build-a-serverless-web-app.7-test-and-cleanup
+achievement: learn.build-a-serverless-web-app.badge

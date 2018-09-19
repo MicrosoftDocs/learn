@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-vms-with-azure-cli-data.9-cleanup
+title: Summary and cleanup
+metadata:
+  title: Summary and cleanup
+  description: Clean up the resources we used in this module
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-cleanup.md)]

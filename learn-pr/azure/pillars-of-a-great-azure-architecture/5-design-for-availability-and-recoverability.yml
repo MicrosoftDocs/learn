@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.pillars-of-a-great-azure-architecture.5-design-for-availability-and-recoverability
+title: Design for availability and recoverability
+metadata:
+  title: Design for availability and recoverability
+  description: Design for availability and recoverability
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-design-for-availability-and-recoverability.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Suppose you would like to increase the availability of your system to provide a better service-level agreement (SLA) to your customers. Which of the following is a guiding principle you can use?"
+    choices:
+      - content: "Reduce your target for maximum duration of acceptable data loss."
+        isCorrect: false
+        incorrectExplanation: "This can increase recoverability, not availability."
+      - content: "Encrypt all data at rest"
+        isCorrect: false
+        incorrectExplanation: "This can increase security, not availability."
+      - content: "Eliminate single point of failure"
+        isCorrect: true
+        correctExplanation: "Designing for availability focuses on maintaining service despite temporary conditions and localized failures. Adding redundancy to eliminate single points of failure is a core strategy for improving availability."
+
+  - content: 'Which of the following would be impacted by your defined Recovery Point Objective (RPO)?'
+    choices:
+    - content: 'The frequency of database backups'
+      isCorrect: true
+      correctExplanation: 'Since the recovery point objective is concerned with the amount of data loss that is tolerable, the frequency of backups needs to be within this time window and is directly impacted by your defined RPO.'
+    - content: 'The number of regions that data is replicated to'
+      isCorrect: false
+      incorrectExplanation: 'The number of regions that data is replicated to is an important consideration, but is not impacted by your defined RPO.'
+    - content: 'The number of instances in a database cluster'
+      isCorrect: false
+      incorrectExplanation: 'The number of instances in a database cluster can be an important decision, but is not impacted by your defined RPO.'
+    - content: 'The type of load-balancing technology used in your application'
+      isCorrect: false
+      incorrectExplanation: 'The type of load-balancing technology used in your application can be an important decision, but is not impacted by your defined RPO.'

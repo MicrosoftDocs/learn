@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-storage-approach-in-azure.4-transactions
+metadata:
+  title: Group multiple operations in a transaction
+  description: Group multiple operations in a transaction
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Group multiple operations in a transaction
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-transactions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which type of transactional database system would work best for product data?"
+    choices:
+    - content: "OLAP"
+      isCorrect: false
+      incorrectExplanation: "OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions."
+    - content: "OLTP"
+      isCorrect: true
+      correctExplanation: "OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions."
+
+  - content: "Suppose the operations to update inventory and process payments are in the same transaction. A user is attempting to apply store credit for the full amount, and submitted the exact same order via phone and laptop at the same time. The database behind the scenes is an ACID-compliant database, what would happen?" 
+    choices:
+    - content: "Both orders would be processed and use the in-store credit."
+      isCorrect: false
+      incorrectExplanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
+    - content: "One order would be processed and use the in-store credit, and the other order would update the remaining inventory for the items in the basket, but would not complete the order."
+      isCorrect: false
+      incorrectExplanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
+    - content: "One order would be processed and use the in-store credit, and the other order would not be processed."
+      isCorrect: true
+      correctExplanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
+
+

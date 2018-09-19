@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.create-cosmos-db-for-scale.5-create-a-database-and-collection
+metadata:
+  title: Create a database and collection in Azure Cosmos DB
+  description: Apply what you've learned about request units and partitioning to build an Azure Cosmos DB database and collection built for scale. 
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a database and collection in Azure Cosmos DB
+# TODO:Add Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-create-a-database-and-collection.md)]

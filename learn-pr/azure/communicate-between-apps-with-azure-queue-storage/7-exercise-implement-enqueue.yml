@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.communicate-between-applications-with-azure-queue-storage.7-exercise-implement-enqueue
+title: Add a message to the queue
+metadata:
+  title: Add a message to the queue
+  description: Add a message to the queue
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash-editor
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-implement-enqueue.md)]

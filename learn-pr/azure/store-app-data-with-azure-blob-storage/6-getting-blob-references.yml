@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.store-app-data-with-azure-blob-storage.6-getting-blob-references
+title: Getting blob references
+metadata:
+  title: Getting blob references
+  description: Getting blob references
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+interactive: bash-editor
+azureSandbox: true
+content: |
+  [!include[](includes/6-getting-blob-references.md)]

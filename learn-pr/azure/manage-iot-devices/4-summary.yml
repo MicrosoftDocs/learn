@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-iot-devices.4-summary
+metadata:
+  title: Summary
+  description: Summary
+  author: lnyswonger
+  ms.date: 09/24/2018
+  ms.author: luken
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'IoT Hub is an Azure service that enables you to ingest high volumes of telemetry from your IoT devices into the cloud for storage or processing.'
+    choices:
+    - content: 'True'
+      isCorrect: true
+      #TODO: Fix this - correctExplanation: 'Correct.'
+    - content: 'False'
+      isCorrect: false
+      #TODO: Fix this - incorrectExplanation: 'Incorrect.'    
+  - content: 'You can use the F1: Free Tier to setup IoT Hub, however it is only recommended for testing.'
+    choices:
+    - content: 'True'
+      isCorrect: true
+      #TODO: Fix this - correctExplanation: 'Correct.'
+    - content: 'False'
+      isCorrect: false
+      #TODO: Fix this - incorrectExplanation: 'Incorrect.'
+  - content: 'Which one of the shared access policies is not created by default?'
+    choices:
+    - content: 'iothubowner'
+      isCorrect: false
+      incorrectExplanation: 'This policy is created by default.'
+    - content: 'service'
+      isCorrect: false
+      incorrectExplanation: 'This policy is created by default.'
+    - content: 'device'
+      isCorrect: false
+      incorrectExplanation: 'This policy is created by default.'
+    - content: 'registryWrite'
+      isCorrect: true
+      correctExplanation: 'There is no such policy as registryWrite.'

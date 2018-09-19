@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-container-registry.build-image
+metadata:
+  title: Build container images with Azure Container Registry
+  description: Build container images with Azure Container Registry
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build container images with Azure Container Registry
+interactive: bash
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-build-images.md)]

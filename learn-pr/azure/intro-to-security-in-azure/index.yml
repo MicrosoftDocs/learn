@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.introduction-to-security
+metadata:
+  title: Introduction to security in Azure
+  description: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Introduction to security in Azure
+summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
+abstract: |  
+  In this module, you will:
+  - Learn how security responsibility is shared with Azure
+  - Learn how identity management provides protection, even outside your network
+  - Learn how encryption capabilities built in to Azure can protect your data
+  - Learn how to protect your network and virtual networks
+prerequisites: None
+iconUrl: /learn/achievements/intro-to-security-in-azure.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.introduction-to-security.1-introduction
+- learn.introduction-to-security.2-shared-responsibility
+- learn.introduction-to-security.3-identity-and-access
+- learn.introduction-to-security.4-encryption
+- learn.introduction-to-security.5-network-security
+- learn.introduction-to-security.6-summary
+achievement: learn.introduction-to-security.badge

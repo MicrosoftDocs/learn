@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.align-requirements-in-azure.5-paas
+title: Platform as a service
+metadata:
+  title: PaaS
+  description: Learn about platform as a service and if it might be the right choice for your application
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-paas.md)]

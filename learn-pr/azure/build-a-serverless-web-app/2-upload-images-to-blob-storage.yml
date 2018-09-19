@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.build-a-serverless-web-app.2-upload-images-to-blob-storage
+title: Upload images to Blob storage with Azure Functions
+metadata:
+  title: Upload images to Blob storage with Azure Functions
+  description: Upload images to Blob storage with Azure Functions
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+# TODO: Consider Azure Portal Interactivity. This module uses both Cloud Shell and the portal, which should be able to be accessed together with azure-portal.
+# interactive: azure-portal
+durationInMinutes: 15
+interactive: bash-editor
+azureSandbox: true
+content: |
+  [!include[](includes/2-upload-images-to-blob-storage.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-a-serverless-web-app.7-test-and-cleanup
+title: Test and cleanup
+metadata:
+  title: Test and cleanup
+  description: Test and cleanup
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+interactive: bash-editor
+azureSandbox: true
+content: |
+  [!include[](includes/7-test-and-cleanup.md)]

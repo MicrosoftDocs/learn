@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-networking.4-reduce-latency-traffic-manager
+title: Reduce latency with Azure Traffic Manager
+metadata:
+  title: Reduce latency with Azure Traffic Manager
+  description: Learn how Traffic Manager can reduce latency and create resiliency across geographic regions.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-reduce-latency-traffic-manager.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'How does Azure Traffic Manager reduce latency?'
+    choices:
+    - content: 'It chooses only the fastest networks between endpoints.'
+      isCorrect: false
+      incorrectExplanation: "Choosing the server that's closest to the user is a good way to reduce latency."
+    - content: "It chooses the endpoint that's closest to the user's DNS server."
+      isCorrect: true
+      correctExplanation: "Choosing the server that's closest to the user is a good way to reduce latency."
+    - content: 'It caches content, similar to how content delivery networks work.'
+      isCorrect: false
+      incorrectExplanation: "Choosing the server that's closest to the user is a good way to reduce latency."
+
+  - content: 'Suppose you live in England, but your DNS server is in Italy. How does Traffic Manager direct traffic?'
+    choices:
+    - content: "It chooses the service that's closest to England."
+      isCorrect: false
+      incorrectExplanation: "Traffic Manager uses the _DNS server_ that's closest to the user, to direct traffic."
+    - content: "It chooses the service that's closest to Italy."
+      isCorrect: true
+      correctExplanation: "Traffic Manager uses the _DNS server_ that's closest to the user, to direct traffic."

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.work-with-mutable-and-partial-data-in-a-redis-cache
+metadata:
+  title: Work with mutable and partial data in Azure Redis Cache
+  description: Learn how to create transactions, manage memory, and use the cache-aside pattern with Azure Redis Cache
+  ms.date: 09/24/2018
+  #TODO: Update with real author's name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Work with mutable and partial data in Azure Redis Cache
+summary: Use Azure Redis Cache to store frequently accessed data. Learn how to create transactions, manage memory, and use the cache-aside pattern.
+abstract: |
+  In this module, you will:
+  - Group multiple operations into a transaction
+  - Set an expiration time on your data
+  - Manage out-of-memory conditions
+  - Use the cache-aside pattern
+  - Use the ServiceStack.Redis package in a .NET Core console application
+prerequisites: | 
+  - Experience with app development
+  - Experience using data in apps
+  - Basic understanding of Azure Redis Cache
+  - Basic .NET knowledge
+iconUrl: /learn/achievements/work-with-mutable-and-partial-data-in-a-redis-cache.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-redis-cache
+- azure-cloud-shell
+units:
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.1-introduction
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.2-transactions-in-redis
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.3-create-a-transaction
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.4-data-expiration
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.5-implement-data-expiration
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.6-eviction-policies
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.7-cache-aside-pattern
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache.8-summary
+achievement: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge
+

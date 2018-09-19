@@ -78,7 +78,7 @@ Now that IIS is set up, let's verify that it's running.
 
     You see your VM's public IP address. Here's an example.
 
-    ```console
+    ```output
     104.211.9.245
     ```
 
@@ -150,7 +150,7 @@ Now that Nginx is set up, let's verify that it's running.
 
     You see your VM's public IP address. Here's an example.
 
-    ```console
+    ```output
     137.135.110.210
     ```
 

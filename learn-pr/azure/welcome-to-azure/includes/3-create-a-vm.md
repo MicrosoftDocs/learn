@@ -149,7 +149,7 @@ You can also check out this short video about some of the options you have to cr
 
 When the VM is ready, you see information about it. Here's an example.
 
-```console
+```json
 {
   "fqdns": "",
   "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM",
@@ -205,7 +205,7 @@ You can also check out this short video about some of the options you have to cr
 
 When the VM is ready, you see information about it. Here's an example.
 
-```console
+```json
 {
     "fqdns": "",
     "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM",

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.manage-vms-with-azure-cli
+metadata:
+  title: Manage virtual machines with the Azure CLI
+  description: Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure.
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Manage virtual machines with the Azure CLI
+summary: Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure.
+abstract: |
+  In this module, you will:
+  - Create a virtual machine with the Azure CLI
+  - Resize virtual machines with the Azure CLI
+  - Perform basic management tasks using the Azure CLI
+  - Connect to a running VM with SSH and the Azure CLI
+prerequisites: |
+  Basic understanding of the Azure CLI tool from the **Control Azure services with the CLI** module.
+iconUrl: /learn/achievements/manage-virtual-machines-with-azure-cli.svg
+levels: 
+- beginner
+roles:
+- developer
+- administrator
+products:
+- azure
+- azure-virtual-machines
+- azure-clis
+units:
+#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
+- learn.manage-vms-with-azure-cli-data.1-what-is-the-cli
+- learn.manage-vms-with-azure-cli-data.2-create-a-vm
+- learn.manage-vms-with-azure-cli-data.3-testing-the-vm
+- learn.manage-vms-with-azure-cli-data.4-other-vm-images
+- learn.manage-vms-with-azure-cli-data.5-sizing-vms
+- learn.manage-vms-with-azure-cli-data.6-querying-vms
+- learn.manage-vms-with-azure-cli-data.7-managing-vms
+- learn.manage-vms-with-azure-cli-data.8-installing-software
+- learn.manage-vms-with-azure-cli-data.9-cleanup
+achievement: learn.manage-vms-with-azure-cli-data.badge

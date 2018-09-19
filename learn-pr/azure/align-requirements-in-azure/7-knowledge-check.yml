@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.align-requirements-in-azure.7-knowledge-check
+title: Knowledge check - IaaS, PaaS & SaaS
+metadata:
+  title: Knowledge check - IaaS, PaaS & SaaS
+  description: Knowledge check - IaaS, PaaS & SaaS
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which cloud service model would be the best match for the following situation? A SQL Server database is needed for a short-term project. The IT department does not have available hardware that meets the performance requirements or resources to deploy it. The project starts next week. Once the project is over, the database is no longer needed."
+    choices:
+    - content: IaaS
+      isCorrect: false
+      incorrectExplanation: "Because of the immediate need and short lifetime, PaaS is the best option. For example, you could use Azure SQL Database for the solution. IaaS is not as good of a choice because creating a virtual machine and installing SQL Server would require more time and effort than using a pre-built PaaS offering."
+    - content: PaaS
+      isCorrect: true
+      correctExplanation: "Because of the immediate need and short lifetime, PaaS is the best option. For example, you could use Azure SQL Database for the solution. IaaS is not as good of a choice because creating a virtual machine and installing SQL Server would require more time and effort than using a pre-built PaaS offering."
+    - content: SaaS
+      isCorrect: false
+      incorrectExplanation: "Because of the immediate need and short lifetime, PaaS is the best option. For example, you could use Azure SQL Database for the solution. IaaS is not as good of a choice because creating a virtual machine and installing SQL Server would require more time and effort than using a pre-built PaaS offering."
+
+  - content: "Which cloud service model is described in the following scenario? You create several virtual machines in the cloud. The VMs are networked together using a virtual network. The VMs have access to x-ray image files in cloud storage. One virtual machine is a web server that hosts a website exposed to the internet for customers to access their records. There is a VPN that connects the solution to your on-premises datacenter for customer information to display with the image files."
+    choices:
+    - content: IaaS
+      isCorrect: true
+      correctExplanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it would not be a good choice. Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
+    - content: PaaS
+      isCorrect: false
+      incorrectExplanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it would not be a good choice. Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
+    - content: SaaS
+      isCorrect: false
+      incorrectExplanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it would not be a good choice. Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
+
+  - content: "Which cloud service model would be the best match for the following situation? You work at a start-up company with a small number of employees who need to collaborate. They need email, calendar scheduling, and somewhere to store documents. The team is technical but do not have the time or hardware to implement and manage a solution."
+    choices:
+    - content: IaaS
+      isCorrect: false
+      incorrectExplanation: "A SaaS solution such as Office 365 would be a good solution for the collaboration requirements."
+    - content: PaaS
+      isCorrect: false
+      incorrectExplanation: "A SaaS solution such as Office 365 would be a good solution for the collaboration requirements."
+    - content: SaaS
+      isCorrect: true
+      correctExplanation: "A SaaS solution such as Office 365 would be a good solution for the collaboration requirements."
+
+  - content: "Which cloud service model is described in the following scenario? You have two datacenters in your organization. One datacenter has a database that can only reside in one of the datacenters because of a regulatory requirement. You want to access the database from the other datacenter. You create a VPN using a cloud provider to connect the two datacenters."
+    choices:
+    - content: IaaS
+      isCorrect: true
+      correctExplanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
+    - content: PaaS
+      isCorrect: false
+      incorrectExplanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
+    - content: SaaS
+      isCorrect: false
+      incorrectExplanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
