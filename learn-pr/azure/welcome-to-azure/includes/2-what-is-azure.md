@@ -1,6 +1,6 @@
 Azure is Microsoft's cloud computing platform. Azure is here to help you tackle your toughest business challenges. You bring your requirements, creativity, and favorite software development tools. We bring a massive global infrastructure that's always available for you to build your applications on.
 
-Here's a quick look at how Azure works behind the scenes.
+#### How does Azure work?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWlzQ6]
 
