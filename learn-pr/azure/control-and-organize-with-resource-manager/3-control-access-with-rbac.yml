@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.control-and-organize-with-resource-manager.3-control-access-with-rbac
-title: Control access with Role Based Access Control
-metadata:
-  title: Control access with Role Based Access Control
-  description: In this unit we'll discuss how to control access to Azure resources with Role Based Access Control.
-durationInMinutes: 5
-content: |
-  [!include[](includes/3-control-access-with-rbac.md)]

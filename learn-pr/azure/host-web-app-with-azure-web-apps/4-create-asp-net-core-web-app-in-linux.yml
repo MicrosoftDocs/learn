@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.host-web-app-with-azure-web-apps.4-create-asp-net-core-web-app-in-linux
-title: Create an ASP.NET Core Web application on Linux
-metadata:
-  title: Create an ASP.NET Core Web application on Linux
-  description: Create an ASP.NET Core Web application on Linux
-durationInMinutes: 1
-content: |
-  [!include[](includes/4-create-asp-net-core-web-app-in-linux.md)]

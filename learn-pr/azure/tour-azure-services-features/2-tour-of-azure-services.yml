@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.azure-services-features.2-tour-of-azure-services
-title: Tour of Azure services
-metadata:
-  title: Tour of Azure services
-  description: Tour of Azure services
-durationInMinutes: 10
-content: |
-  [!include[](includes/2-tour-of-azure-services.md)]

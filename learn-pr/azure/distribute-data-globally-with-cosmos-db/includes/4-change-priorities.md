@@ -1,7 +1,0 @@
-## Motivation
-
-TODO
-
-## Summary
-
-TODO

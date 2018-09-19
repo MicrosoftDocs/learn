@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-azure-db-for-postgresql.6-cleanup
-title: Clean up resources
-metadata:
-  title: Clean up resources
-  description: Clean up resources
-durationInMinutes: 12
-content: |
-  [!include[](includes/6-cleanup.md)]

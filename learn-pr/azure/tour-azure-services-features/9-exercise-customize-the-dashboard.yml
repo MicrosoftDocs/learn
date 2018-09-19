@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.azure-services-features.9-exercise-customize-the-dashboard
-title: "Exercise - Customize the dashboard"
-metadata:
-  title: "Exercise - Customize the dashboard"
-  description: "Exercise - Customize the dashboard"
-durationInMinutes: 10
-content: |
-  [!include[](includes/9-exercise-customize-the-dashboard.md)]

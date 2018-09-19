@@ -58,6 +58,11 @@
       "clicktale": true,
       "uhfHeaderId":"MSDocsHeader-Learn"
     },
+    "fileMetadata": {
+      "brand": {
+        "azure/**/*.yml": "azure"
+      }
+    },
     "template": [],
     "dest": "learn-pr",
     "markdownEngineName": "markdig"

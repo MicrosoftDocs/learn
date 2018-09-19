@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>create-a-business-process-flow-app</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+    </defs>
+    <g id="Badges-FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Create-an-app-that-models-business-processes" transform="translate(-579.000000, -946.000000)">
+            <g id="create-a-business-process-flow-app" transform="translate(579.000000, 946.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#C0DDF4" xlink:href="#path-1"></use>
+                    <g id="Icon" mask="url(#mask-2)">
+                        <g transform="translate(-8.500000, 17.000000)">
+                            <path d="M72.1310465,21.3869976 C72.1310465,21.3869976 79.2300129,21.2633614 79.9628384,17.3624517 C84.6460282,-7.55211785 99.3181895,2.37741373 105.5,5 C111.68181,7.62258627 125.05923,47.7119446 114.5,43 L112.5,65 C112.5,65 91.0151663,67.1915908 82.9600799,44.5249523 C80.6469588,38.0149439 72.1310465,41.349375 72.1310465,41.349375 L39.3824371,41.349375 C39.3824371,41.349375 31.0343704,40.4134864 29.5717165,44.6186161 C22.0786129,66.161289 4.30991386,59.4986207 1.5,58 C-1.30991386,56.5013793 5.5,28 9.52766436,14.3652102 C13.5553287,0.730420482 18.0892846,0.703034406 26.7618027,16.9877965 C31.3513287,25.6048657 39.3824371,21.3869976 39.3824371,21.3869976 L72.1310465,21.3869976 Z" id="Fill-4099" stroke="none" fill="#424240" fill-rule="evenodd"></path>
+                            <g id="Computer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(35.000000, 18.000000)">
+                                <path d="M37.1310465,23.3490753 L4.38243712,23.3490753 L4.38243712,3.38669792 C4.38243712,1.81914064 5.65326749,0.547560959 7.22082477,0.547560959 L34.2919095,0.547560959 C35.8602161,0.547560959 37.1310465,1.81914064 37.1310465,3.38669792 L37.1310465,23.3490753 Z" id="Fill-4102" fill="#DDDDDD"></path>
+                                <polygon id="Fill-4105" fill="#424240" points="6.44813593 21.130667 35.0642987 21.130667 35.0642987 2.76656867 6.44813593 2.76656867"></polygon>
+                                <polygon id="Fill-4107" fill="#BFC0C1" points="4.38236219 23.3490753 0.594598308 25.8360364 40.8415565 25.8360364 37.1309716 23.3490753"></polygon>
+                                <path d="M0.594823101,25.8362612 L40.8417813,25.8362612 L40.8417813,27.0269153 C40.8417813,27.8901209 40.1411761,28.5907261 39.2779706,28.5907261 L2.15863383,28.5907261 C1.29467898,28.5907261 0.594823101,27.8901209 0.594823101,27.0269153 L0.594823101,25.8362612 Z" id="Fill-4108" fill="#ADADAD"></path>
+                                <polygon id="Fill-4109" fill="#D83A18" points="6.46686869 16.9712452 13.710452 16.9712452 13.710452 6.85555531 6.46686869 6.85555531"></polygon>
+                                <polygon id="Fill-4110" fill="#FCDC56" points="27.8409468 16.9712452 35.08453 16.9712452 35.08453 6.85555531 27.8409468 6.85555531"></polygon>
+                                <path d="M24.3364222,12.0194277 L16.7459082,12.0194277" id="Stroke-4111" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                                <polyline id="Stroke-4112" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" points="21.7284475 8.83485863 24.9812038 12.0883642 21.8910478 15.1792695"></polyline>
+                            </g>
+                            <path d="M86.1937287,30.0194277 L78.6024654,30.0194277" id="Stroke-4113" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"></path>
+                            <polyline id="Stroke-4114" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" points="83.5850796 26.8348586 86.8385852 30.0883642 83.74768 33.1792695"></polyline>
+                            <path d="M32.5551707,30.0194277 L24.9646567,30.0194277" id="Stroke-4115" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"></path>
+                            <polyline id="Stroke-4116" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" points="29.947196 26.8348586 33.2007016 30.0883642 30.1097963 33.1792695"></polyline>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

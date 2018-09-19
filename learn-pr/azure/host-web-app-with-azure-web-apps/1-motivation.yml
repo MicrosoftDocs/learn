@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.host-web-app-with-azure-web-apps.1-motivation
-title: Host a web application with Azure Web Apps
-metadata:
-  title: Host a web application with Azure Web Apps
-  description: Host a web application with Azure Web Apps
-durationInMinutes: 1
-content: |
-  [!include[](includes/1-motivation.md)]

@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.prepare-azure-dev-environment.6-set-up-eclipse-ide-for-java-devs
-title: Set up Eclipse IDE for Java developers  
-metadata:
-  title: Set up Eclipse IDE for Java developers 
-  description: Set up Eclipse IDE for Java developers  
-durationInMinutes: 12
-content: |
-  [!include[](includes/6-set-up-eclipse-ide-for-java-devs.md)]

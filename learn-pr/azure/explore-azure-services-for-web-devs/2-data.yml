@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.explore-azure-services-for-web-devs.2-data
-title: Data  
-metadata:
-  title: Data  
-  description: Data  
-durationInMinutes: 12
-content: |
-  [!include[](includes/2-data.md)]

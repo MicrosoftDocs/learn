@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.host-web-app-with-azure-web-apps.2-create-web-app-in-azure-portal
-title: Create a Web App in the Azure portal
-metadata:
-  title: Create a Web App in the Azure portal
-  description: Create a Web App in the Azure portal
-durationInMinutes: 1
-content: |
-  [!include[](includes/2-create-web-app-in-azure-portal.md)]

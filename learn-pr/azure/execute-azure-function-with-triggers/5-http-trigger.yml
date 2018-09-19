@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: execute-azure-function-with-triggers.5-http-trigger
-title: Execute an Azure Function with an HTTP request 
-metadata:
-  title: Execute an Azure Function with an HTTP request
-  description: Execute an Azure Function with an HTTP request
-durationInMinutes: 10
-content: |
-  [!include[](includes/5-http-trigger.md)]

@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.classify-images-with-custom-vision-services.5-build-app
-title: Create a Node.js app that uses the model
-metadata:
-  title: Create a Node.js app that uses the model
-  description: Create a Node.js app that uses the model
-durationInMinutes: 10
-content: |
-  [!include[](includes/5-build-app.md)]

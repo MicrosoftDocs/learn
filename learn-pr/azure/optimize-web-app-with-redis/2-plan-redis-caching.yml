@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.optimize-web-app-with-redis.2-plan-redis-caching
-title: Plan Redis caching of web apps
-metadata:
-  title: Plan Redis caching of web apps
-  description: Plan Redis caching of web apps
-durationInMinutes: 12
-content: |
-  [!include[](includes/2-plan-redis-caching.md)]

@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.explore-azure-services-for-web-devs.3-compute-services
-title: Compute-Background tasks, workflows, eventing and integration  
-metadata:
-  title: Compute-Background tasks, workflows, eventing and integration  
-  description: Compute-Background tasks, workflows, eventing and integration  
-durationInMinutes: 12
-content: |
-  [!include[](includes/3-compute-services.md)]

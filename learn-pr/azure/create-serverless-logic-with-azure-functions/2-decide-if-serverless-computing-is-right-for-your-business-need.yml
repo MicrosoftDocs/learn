@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-serverless-logic-with-functions.2-decide-if-serverless-computing-is-right-for-your-business-need
-title: Decide if serverless computing is right for your business need
-metadata:
-  title: Decide if serverless computing is right for your business need
-  description: Decide if serverless computing is right for your business need
-durationInMinutes: 5
-content: |
-  [!include[](includes/2-decide-if-serverless-computing-is-right-for-your-business-need.md)]

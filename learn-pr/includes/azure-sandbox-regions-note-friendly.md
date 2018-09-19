@@ -1,0 +1,11 @@
+- West US 2
+- West Central US
+- South Central US
+- Central US
+- East US
+- West Europe
+- Southeast Asia
+- Japan East
+- Brazil South
+- Australia Southeast
+- Central India

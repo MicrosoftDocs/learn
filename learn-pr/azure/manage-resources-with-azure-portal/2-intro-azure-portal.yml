@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.manage-resources-with-azure-portal.2-intro-azure-portal
-title: A lap around the Azure Portal  
-metadata:
-  title: A lap around the Azure Portal  
-  description: A lap around the Azure Portal  
-durationInMinutes: 12
-content: |
-  [!include[](includes/2-intro-azure-portal.md)]

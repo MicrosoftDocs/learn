@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.cd-pipeline-github-to-azure-web-app.3-create-continuous-deployment-pipeline
-title: Create a continuous deployment pipeline using Deployment Center
-metadata:
-  title: Create a continuous deployment pipeline using Deployment Center
-  description: Create a continuous deployment pipeline using Deployment Center
-durationInMinutes: 1
-content: |
-  [!include[](includes/3-create-continuous-deployment-pipeline.md)]

@@ -1,1 +1,0 @@
-Principles of a great Azure architecture

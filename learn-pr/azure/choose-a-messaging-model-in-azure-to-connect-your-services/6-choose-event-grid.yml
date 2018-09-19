@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.choose-messaging-model.6-choose-event-grid
-title: Choose Azure Event Grid
-metadata:
-  title: Choose Azure Event Grid
-  description: Choose Azure Event Grid
-durationInMinutes: 10
-content: |
-  [!include[](includes/6-choose-event-grid.md)]

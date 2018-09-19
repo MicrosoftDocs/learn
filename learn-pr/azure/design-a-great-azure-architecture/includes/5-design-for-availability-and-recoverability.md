@@ -1,1 +1,0 @@
-Design for availability and recoverability

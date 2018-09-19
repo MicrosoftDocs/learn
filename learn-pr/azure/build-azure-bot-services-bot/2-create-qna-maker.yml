@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.build-azure-bot-services-bot.2-create-qna-maker
-title: Create a knowledge base with Microsoft QnA Maker
-metadata:
-  title: Create a knowledge base with Microsoft QnA Maker
-  description: Create a knowledge base with Microsoft QnA Maker
-durationInMinutes: 10
-content: |
-  [!include[](includes/2-create-qna-maker.md)

@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.classify-images-with-custom-vision-services.6-classify-images
-title: Use the app to classify images
-metadata:
-  title: Use the app to classify images
-  description: Use the app to classify images
-durationInMinutes: 10
-content: |
-  [!include[](includes/6-classify-images.md)]

@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.build-azure-bot-services-bot.5-connect-to-knowledge-base
-title: Connect the bot to the knowledge base
-metadata:
-  title: Connect the bot to the knowledge base
-  description: Connect the bot to the knowledge base
-durationInMinutes: 10
-content: |
-  [!include[](includes/5-connect-to-knowledge-base.md)

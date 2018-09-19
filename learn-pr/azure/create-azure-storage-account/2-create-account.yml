@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-azure-storage-account.2-create-account
-title: Create a storage account with the Azure portal
-metadata:
-  title: Create a storage account with the Azure portal
-  description: Create a storage account with the Azure portal
-durationInMinutes: 1
-content: |
-  [!include[](includes/2-create-account.md)]

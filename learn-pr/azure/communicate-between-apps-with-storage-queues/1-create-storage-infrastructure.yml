@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.communicate-between-apps-with-storage-queues.1-create-storage-infrastructure
-title: Create the Azure storage infrastructure
-metadata:
-  title: Create the Azure storage infrastructure
-  description: Create the Azure storage infrastructure
-durationInMinutes: 12
-content: |
-  [!include[](includes/1-create-storage-infrastructure.md)]

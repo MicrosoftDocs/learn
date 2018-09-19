@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.1.create-twilio-account-launch-vs
-title: Create a Twilio account and launch VS
-metadata:
-  title: Create a Twilio account and launch VS
-  description: Create a Twilio account and launch VS
-durationInMinutes: 5
-content: |
-  [!include[](includes/1.create-twilio-account-launch-vs.md)]

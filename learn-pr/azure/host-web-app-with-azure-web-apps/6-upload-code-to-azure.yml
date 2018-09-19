@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.host-web-app-with-azure-web-apps.6-upload-code-to-azure
-title: Upload your code to Azure
-metadata:
-  title: Upload your code to Azure
-  description: Upload your code to Azure
-durationInMinutes: 1
-content: |
-  [!include[](includes/6-upload-code-to-azure.md)]

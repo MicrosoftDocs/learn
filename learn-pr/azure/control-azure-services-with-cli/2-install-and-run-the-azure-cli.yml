@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.control-azure-services-with-cli.2-install-and-run-the-azure-cli
-title: Install and run the Azure CLI
-metadata:
-  title: Install and run the Azure CLI
-  description: Install and run the Azure CLI
-durationInMinutes: 3
-content: |
-  [!include[](includes/2-install-and-run-the-azure-cli.md)]

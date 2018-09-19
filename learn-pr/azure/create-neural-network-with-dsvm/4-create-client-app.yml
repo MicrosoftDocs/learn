@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-neural-network-with-dsvm.4-create-client-app
-title: Create a NotHotDog app
-metadata:
-  title: Create a NotHotDog app
-  description: Create a NotHotDog app
-durationInMinutes: 10
-content: |
-  [!include[](includes/4-create-client-app.md)]

@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-a-windows-vm-in-azure.3-exercise-create-a-vm
-title: Exercise - Create a Windows Virtual Machine
-metadata:
-  title: Exercise - Create a Windows Virtual Machine
-  description: Exercise - Create a Windows Virtual Machine
-durationInMinutes: 10
-content: |
-  [!include[](includes/3-exercise-create-a-vm.md)]

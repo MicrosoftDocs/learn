@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-a-windows-vm-in-azure.5-exercise-connect-to-a-windows-vm-using-rdp
-title: Exercise - Connect to a Windows Virtual Machine using RDP
-metadata:
-  title: Exercise - Connect to a Windows Virtual Machine using RDP
-  description: Exercise - Connect to a Windows Virtual Machine using RDP
-durationInMinutes: 10
-content: |
-  [!include[](includes/5-exercise-connect-to-a-windows-vm-using-rdp.md)]

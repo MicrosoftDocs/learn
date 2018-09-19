@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.control-azure-services-with-cli.5-exercise-create-query-and-delete-azure-resources-using-the-cli
-title: Exercise - Create, query and delete Azure resources using the CLI
-metadata:
-  title: Exercise - Create, query and delete Azure resources using the CLI
-  description: Exercise - Create, query and delete Azure resources using the CLI
-durationInMinutes: 10
-content: |
-  [!include[](includes/5-exercise-create-query-and-delete-azure-resources-using-the-cli.md)]

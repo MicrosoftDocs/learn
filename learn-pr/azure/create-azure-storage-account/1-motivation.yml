@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.create-azure-storage-account.1-motivation
-title: Create Azure storage account
-metadata:
-  title: Create Azure storage account
-  description: Create Azure storage account
-durationInMinutes: 1
-content: |
-  [!include[](includes/1-motivation.md)]

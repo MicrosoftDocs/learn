@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.optimize-web-app-with-redis.3-config-redis-caching-connect-web-app
-title: Configure Redis caching and connect a Web app to the cache
-metadata:
-  title: Configure Redis caching and connect a Web app to the cache
-  description: Configure Redis caching and connect a Web app to the cache
-durationInMinutes: 12
-content: |
-  [!include[](includes/3-config-redis-caching-connect-web-app.md)]

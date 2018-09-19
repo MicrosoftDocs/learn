@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: execute-azure-function-with-triggers.4-exercise-timer-trigger
-title: Exercise - Execute an Azure Function using a timer
-metadata:
-  title: Exercise - Execute an Azure Function using a timer 
-  description: Exercise - Execute an Azure Function using a timer
-durationInMinutes: 15
-content: |
-  [!include[](includes/4-exercise-timer-trigger.md)]
