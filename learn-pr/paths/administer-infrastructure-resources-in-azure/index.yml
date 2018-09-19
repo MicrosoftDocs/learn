@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.administer-infrastructure-resources-in-azure
+metadata:
+  title: Administer containers in Azure
+  description: Learn how to create, manage, secure and scale virtual machine resources.
+  brand: azure
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Administer infrastructure resources in Azure
+summary: Learn how to create, manage, secure and scale virtual machine resources.
+prerequisites: None
+iconUrl: /learn/achievements/administer-infrastructure-resources-in-azure.svg
+levels: 
+- beginner
+roles: 
+- administrator
+products: 
+- azure
+- azure-virtual-machines
+- azure-storage
+- azure-portal
+- azure-monitor
+- azure-clis
+- azure-resource-manager
+modules:
+- learn.introduction-to-azure-virtual-machines
+- learn.create-linux-vm-in-azure
+- learn.create-a-windows-vm-in-azure
+- learn.manage-vms-with-azure-cli
+#TODO: Add - Keep your VMs Updated (post-Ignite)
+#- learn.scale-and-size-virtual-machines
+#- learn.make-your-virtual-machines-highly-available
+#- learn.configure-the-network-for-your-virtual-machines
+- learn.add-and-size-disks-in-azure-virtual-machines
+- learn.caching-and-performance-azure-storage-and-disks
+#- learn.secure-your-azure-virtual-machine-disks
+achievement: learn.administer-infrastructure-resources-in-azure.trophy
