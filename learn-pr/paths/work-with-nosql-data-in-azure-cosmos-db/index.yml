@@ -27,7 +27,7 @@ products:
 - azure-clis
 modules:
 - learn.create-cosmos-db-for-scale
-#- learn.access-data-with-cosmos-db-and-sql-api
+- learn.access-data-with-cosmos-db-and-sql-api
 - learn.cosmos-db-app-with-vscode
 #TODO: Add - learn.monitor-azure-cosmos-db (POST-IGNITE)
 - learn.distribute-data-globally-with-cosmos-db

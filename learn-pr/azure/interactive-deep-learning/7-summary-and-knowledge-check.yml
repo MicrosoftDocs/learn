@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.interactive-deep-learning.7-summary-and-knowledge-check
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary-and-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following best describes the dependency challenges faced when using the DSVM for deep learning?
+    choices:
+    - content: The DSVM is sandboxed and doesn't provide direct support for installing new packages.
+      isCorrect: false
+      incorrectExplanation: The DSVM is a virtual machine. It comes with lots of pre-installed software to help with data science and AI project, but you are free to install whatever you want. 
+    - content: The DSVM only supports CNTK and Cognitive Service dependencies.
+      incorrectExplanation: DSVMs provide out of the box support for many popular frameworks such as PyTorch, Chainer, and Tensorflow.
+      isCorrect: false
+    - content: Certain deep learning frameworks and packages require different enviorments, GPU drivers and binary packages
+      isCorrect: true
+      correctExplanation: Managing the dependencies between all the frameworks you are using for deep learning can be a challenge. Running a Docker container to group and isolate these dependencies can help with this challenge.
+  - content: Suppose you've been experimenting with deep learning in a Docker container. Your DSVM is running on a Linux virtual machine that also has GPUs. Which of the followign commands to you run to provision a container with the necessary components to execute code on the GPU. 
+    choices:
+    - content: docker run --useGPU
+      isCorrect: false
+      incorrectExplanation: The docker run command does not have a parameter called --useGPU
+    - content: nvidia-docker run
+      isCorrect: true
+      correctExplanation: This command can be used to execute a container that uses GPUs. 
+    - content: docker-nvidia run
+      isCorrect: false
+      incorrectExplanation: This command doesn't exist. 
+  

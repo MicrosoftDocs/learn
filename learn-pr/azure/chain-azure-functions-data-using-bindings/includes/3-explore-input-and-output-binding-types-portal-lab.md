@@ -51,21 +51,23 @@ Now that we have a function app, it's time to create a function. A function is a
 
     ![Animation of the plus sign appearing when the user hovers over the functions menu item.](../media/3-func-app-plus-hover-small.gif)
 
-1. On the **Get started quickly** page, select **WebHook + API**, select a language for your function, and then select **Create this function**.
+1. On the **Get started quickly** page, select **Custom function** under the **Get started on your own** section.
 
-1. A function is created in your chosen language by using the template for an HTTP-triggered function. In this exercise, we'll create a JavaScript function.
+1. This will list all the templates, find the **HTTP Trigger** template and select JavaScript for the language.
 
-## Try it out
+    ![Screenshot of the HTTP function creation box with JavaScript link highlighted](../media/3-http-function.png)
 
-Let's test what we have so far by doing the following:
+1. On the **New Function** blade, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
 
-1. In your new function, select **</> Get function URL** at the top right, select **default (Function key)**, and then select **Copy**.
+1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
-1. Add the query string value `&name=<yourname>` to the end of this URL, and then press Enter on your keyboard to execute the request. You should see a response similar to the following response returned by the function displayed in your browser.  
+1. Add the query string value `&name=Azure` to the end of this URL, and then press Enter on your keyboard to execute the request. You should see a response similar to the following response returned by the function displayed in your browser.  
 
-    ![Response message of a successful call to the function](../media/3-default-http-trigger-response-small.PNG)
+    ```output
+    <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">Hello Azure</string>
+    ```
 
 As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has one and only one trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in JavaScript, responds with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
