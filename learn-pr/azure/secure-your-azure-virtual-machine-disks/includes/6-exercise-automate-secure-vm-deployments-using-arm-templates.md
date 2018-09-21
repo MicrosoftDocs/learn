@@ -1,4 +1,4 @@
-In this unit, you'll use an Azure Resource Manager template to decrypt our Windows VM we created early. We encrypted the OS and data drives on our Windows VM. However, the OS drive won't have any confidential information on it, so we could leave it unencrypted. Let's use a template to decrypt just the OS drive.
+In this unit, you'll use an Azure Resource Manager template to decrypt our Windows VM we created earlier. We encrypted the OS drive on our Windows VM. However, the OS drive won't have any confidential information on it, so we could leave it unencrypted. Let's use a template to decrypt the OS drive.
 
 ## Configure and deploy a new VM using an Azure Resource Manager template
 

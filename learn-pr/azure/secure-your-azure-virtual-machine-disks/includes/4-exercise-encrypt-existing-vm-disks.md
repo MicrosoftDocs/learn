@@ -143,7 +143,7 @@ To create an Azure Key Vault, we need to enable the service in our subscription.
 We are almost ready to encrypt the disks. Before we do, a warning about creating backups.
 
 > [!IMPORTANT]
-> If this were a production system, we would need to perform a backup of the disks - either using Azure Backup, or by creating a snapshot. You can create snapshots in the Azure portal, or through the command line. In PowerShell, use the `New-AzureRmSnapshot` cmdlet. Since this is a simple exercise and we're going to throw this data away when you're done, we're going to skip this step. 
+> If this were a production system, we would need to perform a backup of the managed disks - either using Azure Backup, or by creating a snapshot. You can create snapshots in the Azure portal, or through the command line. In PowerShell, use the `New-AzureRmSnapshot` cmdlet. Since this is a simple exercise and we're going to throw this data away when you're done, we're going to skip this step. 
 
 1. Start by defining a variable to hold the Key Vault information.
 
@@ -152,15 +152,9 @@ We are almost ready to encrypt the disks. Before we do, a warning about creating
         -VaultName $keyVaultName `
         -ResourceGroupName $rgName
     ```
-    
-1. Define a sequence version to use for encryption. Use a new GUID.
 
-    ```powershell
-    $sequenceVersion = [Guid]::NewGuid();
-    ```
-    
 1. Then, use the `Set-AzureRmVmDiskEncryptionExtension` cmdlet to encrypt the VM disks.
-    - The `VolumeType` parameter allows you to specify which disks to encrypt: [_All_ | _OS_ | _Data_]. It will default to _All_. Many distributions of Linux will only encrypt data disks.
+    - The `VolumeType` parameter allows you to specify which disks to encrypt: [_All_ | _OS_ | _Data_]. It will default to _All_. You can only encrypt data disks for some distributions of Linux.
     - You have to supply the `SkipVmBackup` flag for managed disks or the command will fail because there is no snapshot.
 
     ```powershell
@@ -170,7 +164,6 @@ We are almost ready to encrypt the disks. Before we do, a warning about creating
         -VolumeType All `
     	-DiskEncryptionKeyVaultId $keyVault.ResourceId `
     	-DiskEncryptionKeyVaultUrl $keyVault.VaultUri `
-        –SequenceVersion $sequenceVersion `
         -SkipVmBackup
     ```
 
@@ -199,4 +192,4 @@ We are almost ready to encrypt the disks. Before we do, a warning about creating
     ```
 
 > [!NOTE]        
-> New disks added after encryption will _not_ be automatically encrypted. You can re-run the `Set-AzureRmVMDiskEncryptionExtension` cmdlet to encrypt new disks. Make sure to provide a new sequence number. In addition, disks that are not visible to the operating system will not be encrypted - the disk must be properly partitioned, formatted, and mounted to be seen by the Bitlocker extension.
+> New disks added after encryption will _not_ be automatically encrypted. You can re-run the `Set-AzureRmVMDiskEncryptionExtension` cmdlet to encrypt new disks. Make sure to provide a new sequence number if you add disks to a VM that has already had disks encrypted. In addition, disks that are not visible to the operating system will not be encrypted - the disk must be properly partitioned, formatted, and mounted to be seen by the Bitlocker extension.

@@ -84,15 +84,14 @@ az keyvault update --name <keyvault-name> --resource-group <resource-group> --en
 
 ## Encrypting an existing VM disk
 
-Once you have the Key Vault setup, you can encrypt the VM using either Azure CLI or Azure PowerShell. On Windows you can choose to encrypt the OS disk, the data disks, or all of them. On Linux, only the data disks may be encrypted. To be eligible for encryption, your Windows disks must be formatted as NTFS volumes.
+Once you have the Key Vault setup, you can encrypt the VM using either Azure CLI or Azure PowerShell. The first time you encrypt a Windows VM, you can choose to encrypt either all disks or the OS disk only. On some Linux distributions, only the data disks may be encrypted. To be eligible for encryption, your Windows disks must be formatted as NTFS volumes.
 
 > [!WARNING]
-> You must take a snapshot or a backup of the disks before you can turn on encryption. The `SkipVmBackup` flag specified below tells the tool that the backup is complete on managed disks. Without the backup, you will be unable to recover the VM if the encryption fails for some reason.
+> You must take a snapshot or a backup of managed disks before you can turn on encryption. The `SkipVmBackup` flag specified below tells the tool that the backup is complete on managed disks. Without the backup, you will be unable to recover the VM if the encryption fails for some reason.
 
-With PowerShell, you have to supply a sequence version which represents the encryption operation being performed. This should be a unique value - the easiest approach is to just supply a GUID. Although if you want to make it an _actual_ sequence, you can use the `Get-AzureRmVMExtension ` cmdlet to retrieve the previous sequence value.
+With PowerShell, use the `Set-AzureRmVmDiskEncryptionExtension` cmdlet to enable encryption.
 
 ```powershell
-$sequenceVersion = [Guid]::NewGuid();
 
 Set-AzureRmVmDiskEncryptionExtension `
 	-ResourceGroupName <resource-group> `
@@ -100,11 +99,10 @@ Set-AzureRmVmDiskEncryptionExtension `
     -VolumeType [All | OS | Data]
 	-DiskEncryptionKeyVaultId <keyVault.ResourceId> `
 	-DiskEncryptionKeyVaultUrl <keyVault.VaultUri> `
-    –SequenceVersion $sequenceVersion;
-    -SkipVmBackup
+     -SkipVmBackup
 ```
 
-The Azure CLI command will automatically provide a new sequence version for you when you run the command to enable encryption.
+For the Azure CLI, use the `az vm encryption enable` command to enable encryption.
 
 ```azurecli
 az vm encryption enable \
@@ -137,7 +135,7 @@ You can reverse the encryption through PowerShell using `Disable-AzureRmVMDiskEn
 Disable-AzureRmVMDiskEncryption -ResourceGroupName <resource-group> -VMName <vm-name>
 ```
 
-or through the Azure CLI with the `vm encryption disable` command.
+For the Azure CLI, use the `vm encryption disable` command.
 
 ```azurecli
 az vm encryption disable --resource-group <resource-group> --name <vm-name>

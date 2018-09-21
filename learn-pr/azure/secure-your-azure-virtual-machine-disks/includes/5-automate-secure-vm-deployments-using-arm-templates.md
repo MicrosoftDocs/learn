@@ -34,7 +34,7 @@ Given a URL to a template, you can execute it with Azure PowerShell. For example
 New-AzureRmResourceGroupDeployment `
     -Name encrypt-disk `
     -ResourceGroupName <resource-group-name> `
-    -TemplateUri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-decrypt-running-windows-vm-without-aad/azuredeploy.json
+    -TemplateUri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm-without-aad/azuredeploy.json
 ```
 
 Or, if you prefer the Azure CLI, with the `group deployment create` command.
