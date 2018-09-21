@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.execute-azure-function-with-triggers.8-create-blob-trigger
+title: Create a Blob trigger
+metadata:
+  title: Create a Blob trigger
+  description: Create a Blob trigger and run an Azure Function when a blob is created
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# TODO: Consider Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-create-blob-trigger.md)]

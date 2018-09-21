@@ -1,0 +1,33 @@
+{
+    "bindings": [
+      {
+        "name": "myQueueItem",
+        "type": "queueTrigger",
+        "direction": "in",
+        "queueName": "new-feedback-q",
+        "connection": "AzureWebJobsDashboard"
+      },
+      {
+        "type": "queue",
+        "name": "positiveFeedbackQueueItem",
+        "queueName": "positive-feedback-q",
+        "connection": "AzureWebJobsDashboard",
+        "direction": "out"
+      },
+      {
+        "type": "queue",
+        "name": "neutralFeedbackQueueItem",
+        "queueName": "neutral-feedback-q",
+        "connection": "AzureWebJobsDashboard",
+        "direction": "out"
+      },
+      {
+        "type": "queue",
+        "name": "negativeFeedbackQueueItem",
+        "queueName": "negative-feedback-q",
+        "connection": "AzureWebJobsDashboard",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+  }

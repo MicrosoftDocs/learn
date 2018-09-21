@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-virtual-machine-disks.6-exercise-automate-secure-vm-deployments-using-arm-templates
+title: Exercise - Automate secure VM deployments by adding encryption to Azure Resource Manager templates
+metadata:
+  title: Exercise - Automate secure VM deployments by adding encryption to Azure Resource Manager templates
+  description: Exercise - Automate secure VM deployments by adding encryption to Azure Resource Manager templates
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# TODO: Consider Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-automate-secure-vm-deployments-using-arm-templates.md)]

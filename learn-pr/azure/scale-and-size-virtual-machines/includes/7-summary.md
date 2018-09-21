@@ -1,0 +1,3 @@
+You saw two ways to meet demand by using virtual machines. If your load is predictable, you can use the portal or scripts to manually resize your VMs. For unpredictable demand patterns, a better approach is to use scale sets with autoscale to automatically add and remove instances as demand changes. Multiple VMs have the added benefit of increasing the availability of your system since a failed VM will not disrupt your service.
+
+[!include[](../../../includes/azure-sandbox-cleanup.md)]

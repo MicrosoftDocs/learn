@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.make-your-virtual-machines-highly-available.3-exercise-create-a-load-balancer
+title: Exercise - Preparing to use Azure Load Balancer
+metadata:
+  title: Exercise - Preparing to use Azure Load Balancer
+  description: Exercise - Preparing to use Azure Load Balancer
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-exercise-create-a-load-balancer.md)]

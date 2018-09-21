@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-virtual-machine-disks.3-encrypt-existing-vm-disks
+title: Encrypt existing VM disks
+metadata:
+  title: Encrypt existing VM disks
+  description: Encrypt existing VM disks
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-encrypt-existing-vm-disks.md)]

@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.make-your-virtual-machines-highly-available.2-preparing-to-use-the-azure-load-balancer
+title: Preparing to use Azure Load Balancer
+metadata:
+  title: Preparing to use Azure Load Balancer
+  description: Preparing to use Azure Load Balancer
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-preparing-to-use-the-azure-load-balancer.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "True or False. Azure Load Balancer ensures that all packets from a client are sent to the same backend VM instance."
+    choices:
+    - content: "True"
+      isCorrect: true
+      correctExplanation: "Azure Load Balancer uses a hash to identify the client from the source and destination IP address and port."
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "Azure Load Balancer uses a hash to identify the client from the source and destination IP address and port." 
+  - content: "One reason to choose the Standard SKU over the Basic SKU is:"
+    choices:
+    - content: "Standard SKU can direct traffic to a VM availability set, while Basic cannot."
+      isCorrect: false
+      incorrectExplanation: "Both Basic and Standard SKUs support directing traffic to an availability set - however Standard SKUs can use more than one."
+    - content: "Standard SKU support secure traffic (HTTPS)."
+      isCorrect: true
+      correctExplanation: "Basic SKU can only protect TCP and HTTP traffic; Standard SKU adds HTTPS support."
+    - content: "Standard SKU supports health probe monitoring of the backend VM servers, Basic does not."
+      isCorrect: false
+      incorrectExplanation: "Health probes are used in both SKUs and are a requirement to setup Azure Load Balancer."
+  - content: "True or False. Azure Load Balancer can be used for public-facing services, or for internal Azure services you use over a VPN."
+    choices:
+    - content: "True"
+      isCorrect: true
+      incorrectExplanation: "Azure Load Balancer supports both public and internal configurations."
+    - content: "False"
+      isCorrect: false

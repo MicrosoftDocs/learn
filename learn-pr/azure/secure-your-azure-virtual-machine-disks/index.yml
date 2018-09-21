@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.secure-your-azure-virtual-machine-disks
+metadata:
+  title: Secure your Azure virtual machine disks
+  description: Explore the options in Azure for encrypting data at-rest, and compare Azure Disk Encryption (ADE) with Storage Service Encryption (SSE). Use the Azure portal and PowerShell commands and scripts to encrypt OS and data disks on existing VMs. Use Azure Resource Manager templates to ensure that new deployed VMs are automatically encrypted.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Secure your Azure virtual machine disks
+summary: Use Azure Disk Encryption (ADE) to encrypt OS and data disks on existing and new VMs.
+abstract: |
+  In this module, you will:
+  - Determine which encryption method is best for your VM
+  - Encrypt existing virtual machine disks using the Azure portal
+  - Encrypt existing virtual machine disks using PowerShell
+  - Modify Azure Resource Manager templates to automate disk encryption on new VMs
+prerequisites: None
+iconUrl: /learn/achievements/secure-your-azure-virtual-machine-disks.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-virtual-machines
+- azure-storage
+- azure-resource-manager
+- azure-portal
+units:
+#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
+- learn.secure-your-azure-virtual-machine-disks.1-introduction
+- learn.secure-your-azure-virtual-machine-disks.2-encryption-options-for-protecting-windows-and-linux-vms
+- learn.secure-your-azure-virtual-machine-disks.3-encrypt-existing-vm-disks
+- learn.secure-your-azure-virtual-machine-disks.4-exercise-encrypt-existing-vm-disks
+- learn.secure-your-azure-virtual-machine-disks.5-automate-secure-vm-deployments-using-arm-templates
+- learn.secure-your-azure-virtual-machine-disks.6-exercise-automate-secure-vm-deployments-using-arm-templates
+- learn.secure-your-azure-virtual-machine-disks.7-summary
+achievement: learn.secure-your-azure-virtual-machine-disks.badge

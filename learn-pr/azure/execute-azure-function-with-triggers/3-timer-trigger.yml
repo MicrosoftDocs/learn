@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.execute-azure-function-with-triggers.3-timer-trigger
+title: Run function on a schedule
+metadata:
+  title: Run function on a schedule
+  description: Run function on a schedule
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-timer-trigger.md)]
