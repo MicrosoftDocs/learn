@@ -54,7 +54,7 @@ The following table shows how LINQ queries are translated into SQL.
     }
     ```
 
-1. Copy and paste the following code to your **BasicOperations** method, before the `await this.DeleteUserDocument("Users", "WebCustomers", "1");` line.
+1. Copy and paste the following code to your **BasicOperations** method, before the `await this.DeleteUserDocument("Users", "WebCustomers", yanhe);` line.
 
     ```csharp
     this.ExecuteSimpleQuery("Users", "WebCustomers");
