@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.run-docker-containers-aci.4-use-environment-variables
+metadata:
+  title: Set environment variables
+  description: Set environment variables in Azure Container Instances.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set environment variables
+interactive: bash
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-use-environment-variables.md)]

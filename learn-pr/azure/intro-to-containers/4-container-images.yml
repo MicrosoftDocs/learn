@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-containers.4-container-images
+metadata:
+  title: Create a custom container image
+  description: Create a custom container image.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a custom container image
+interactive: bash
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-container-images.md)]

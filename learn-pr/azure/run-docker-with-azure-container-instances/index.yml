@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.run-docker-containers-aci
+metadata:
+  title: Run Docker containers with Azure Container Instances
+  description: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Run Docker containers with Azure Container Instances
+summary: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
+abstract:  | 
+  In this module, you will:
+  - Run a container in Azure Container Instances
+  - Control container restart behavior
+  - Use environment variables in your containers
+  - Attach data volumes to Azure Container Instances
+  - Troubleshoot Azure Container Instances
+
+prerequisites: None
+#TODO: Update icon URL with real image 
+iconUrl: /learn/achievements/run-docker-with-azure-container-instances.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-container-instances
+- azure-cosmos-db
+units:
+- learn.run-docker-containers-aci.1-introduction
+- learn.run-docker-containers-aci.2-run-aci
+- learn.run-docker-containers-aci.3-restart-policy
+- learn.run-docker-containers-aci.4-use-environment-variables
+- learn.run-docker-containers-aci.5-use-data-volumes
+- learn.run-docker-containers-aci.6-troubleshoot-aci
+- learn.run-docker-containers-aci.7-knowledge-check
+achievement: learn.run-docker-containers-aci.badge

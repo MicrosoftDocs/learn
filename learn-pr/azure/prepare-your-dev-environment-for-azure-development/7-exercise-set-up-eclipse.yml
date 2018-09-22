@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.prepare-azure-dev-environment.7-exercise-set-up-eclipse
+title: Set up Eclipse with the Azure Toolkit
+metadata:
+  title: Set up Eclipse with the Azure Toolkit
+  description: Set up Eclipse with the Azure Toolkit
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-set-up-eclipse.md)]

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.monitor-manage-device-with-iotcentral
+metadata:
+  title: Monitor and manage your coffee machine with Azure IoT Central
+  description: Learn how to create an Azure IoT Central application to monitor and manage an IoT device.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Monitor and manage your coffee machine with Azure IoT Central
+summary: Learn how to create an Azure IoT Central application to monitor and manage an IoT device.
+abstract: |
+  In this module, you will:
+  - Create an Azure IoT Central custom application
+  - Create and define your device template
+  - Connect a coffee machine simulator to your application in Azure IoT Central
+  - Validate your connection and data flow
+  - Configure rules for maintenance notifications
+
+prerequisites: |
+  None
+iconUrl: /learn/achievements/monitor-and-manage-device-with-iot-central.svg
+levels: 
+- beginner
+roles: 
+- administrator
+products: 
+- azure
+units:
+- learn.monitor-manage-device-with-iotcentral.1-create-azure-iot-central-application
+- learn.monitor-manage-device-with-iotcentral.2-define-coffee-machine-with-device-template
+- learn.monitor-manage-device-with-iotcentral.3-connect-your-application-to-simulator
+- learn.monitor-manage-device-with-iotcentral.4-validate-your-connection
+- learn.monitor-manage-device-with-iotcentral.5-configure-rules-and-actions 
+- learn.monitor-manage-device-with-iotcentral.6-knowledge-check
+achievement: learn.monitor-manage-device-with-iotcentral.badge

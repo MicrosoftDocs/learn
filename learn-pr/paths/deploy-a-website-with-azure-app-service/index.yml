@@ -22,6 +22,7 @@ products:
 - azure
 - azure-portal
 modules:
+- learn.prepare-azure-dev-environment
 - learn.host-a-web-application-with-azure-web-apps
 #TODO: Add - learn.cd-pipeline-github-to-azure-web-app (POST-IGNITE)
 #- learn.publish-azure-web-app-with-visual-studio
