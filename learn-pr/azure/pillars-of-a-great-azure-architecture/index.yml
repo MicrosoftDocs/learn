@@ -19,7 +19,7 @@ abstract: |
 prerequisites: None
 iconUrl: /learn/achievements/pillars-of-a-great-azure-architecture.svg
 levels:
-- intermediate
+- beginner
 roles:
 - solution-architect
 products:
