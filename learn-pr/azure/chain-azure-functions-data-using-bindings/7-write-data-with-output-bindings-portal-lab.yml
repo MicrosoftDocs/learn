@@ -11,6 +11,6 @@ metadata:
 title: Exercise - Write data with output bindings
 #interactive: azure-portal
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/7-write-data-with-output-bindings-portal-lab.md)]
