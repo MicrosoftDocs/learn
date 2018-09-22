@@ -1,14 +1,14 @@
 Suppose your company makes use of container images to manage compute workloads. You use the local Docker tooling to build your container images.
 
-You can now use Azure Container Registry Build to build these containers. Container Registry Build also allows for DevOps process integration with automated build on source code commit.
+You can now use Azure Container Registry Tasks to build these containers. Container Registry Tasks also allows for DevOps process integration with automated build on source code commit.
 
-Let's automate the creation of a container image using Azure Container Registry Build.
+Let's automate the creation of a container image using Azure Container Registry Tasks.
 
-## Create a container image with Azure Container Registry Build
+## Create a container image with Azure Container Registry Tasks
 
-A standard Dockerfile to provides build instructions. Azure Container Registry Build allows you to reuse any Dockerfile currently in your environment, including multi-staged builds.
+A standard Dockerfile to provides build instructions. Azure Container Registry Tasks allows you to reuse any Dockerfile currently in your environment, including multi-staged builds.
 
-We'll use a new Dockerfile for our example. 
+We'll use a new Dockerfile for our example.
 
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
@@ -19,7 +19,7 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
 code
 ```
 
-Copy the following contents to your new Dockerfile. Make sure to save the file. 
+Copy the following contents to your new Dockerfile. Make sure to save the file.
 
 ```bash
 FROM    node:9-alpine
@@ -37,7 +37,7 @@ This configuration adds a Node.js application to the `node:9-alpine` image. Afte
 Now run the Azure CLI command `az acr build` to build the container image from the Dockerfile.
 
 ```azurecli
-az acr build --registry <acrName> --image helloacrbuild:v1 .
+az acr build --registry <acrName> --image helloacrtasks:v1 .
 ```
 
 You'll see the image being built and pushed to your Container Registry as you run the command.
@@ -55,7 +55,7 @@ The output should look similar to the following:
 ```console
 Result
 -------------
-helloacrbuild
+helloacrtasks
 ```
 
 The `helloacrbuild` image is now ready to be used.

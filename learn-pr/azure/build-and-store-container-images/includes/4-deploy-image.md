@@ -7,7 +7,7 @@ However, for our live practice we will use the built-in admin account that can b
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-Create a variable with the name of your container registry in lowercase (for example, intstead of "MyContainer" make the value "mycontainer"). This variable is used throughout this unit.
+Create a variable with the name of your container registry in lowercase (for example, instead of "MyContainer" make the value "mycontainer"). This variable is used throughout this unit.
 
 ```azurecli
 ACR_NAME=<acrName>
@@ -103,8 +103,8 @@ Execute the following `az container create` command to deploy a container instan
 ```azurecli
 az container create \
     --resource-group <rgn>[Sandbox resource group name]</rgn> \
-    --name acr-build \
-    --image $ACR_NAME.azurecr.io/helloacrbuild:v1 \
+    --name acr-tasks \
+    --image $ACR_NAME.azurecr.io/helloacrtasks:v1 \
     --registry-login-server $ACR_NAME.azurecr.io \
     --ip-address Public \
     --location eastus \
@@ -115,7 +115,7 @@ az container create \
 Get the IP address of the Azure container instance.
 
 ```azurecli
-az container show --resource-group  <rgn>[Sandbox resource group name]</rgn> --name acr-build --query ipAddress.ip --output table
+az container show --resource-group  <rgn>[Sandbox resource group name]</rgn> --name acr-tasks --query ipAddress.ip --output table
 ```
 
 Open a browser and navigate to the IP address of the container. If everything has been configured correctly, you should see the following results:
