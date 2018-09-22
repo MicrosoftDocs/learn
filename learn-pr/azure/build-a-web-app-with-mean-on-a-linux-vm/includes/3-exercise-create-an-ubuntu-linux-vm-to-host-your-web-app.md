@@ -63,7 +63,7 @@ az group create --name <resource-group-name> --location <resource-group-location
 
 1. Open port 80 on the VM to allow incoming HTTP traffic to the new web application that you will create.
 
-    ``` bash
+    ```azurecli
     az vm open-port --port 80 --resource-group <rgn>[Sandbox resource group name]</rgn> --name MeanDemo
     ```
 

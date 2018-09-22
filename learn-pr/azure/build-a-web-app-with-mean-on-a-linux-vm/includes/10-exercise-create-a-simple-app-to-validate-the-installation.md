@@ -290,11 +290,7 @@ First, we're going to create the code, script and HTML files for our application
 
 1. Test the application functionality.
 
-    Open your preferred browser, and navigate to the public IP address of your Azure VM as the URL.
-
-    ```bash
-    http://<vm-public-ip>
-    ```
+    Open your preferred browser, and navigate to the public IP address of your Azure VM as the URL ([http://X.X.X.X](http://X.X.X.X)).
 
     If everything is in order, you should see a screen similar to this:
 
