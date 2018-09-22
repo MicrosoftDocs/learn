@@ -2,7 +2,7 @@
 uid: learn.work-with-nosql-data-in-azure-cosmos-db
 metadata:
   title: Work with NoSQL data in Azure Cosmos DB
-  description: NoSQL data is an efficient way to store information that doesn’t map to the requirements of a relational SQL database.<br><br>Databases for NoSQL data enable increased flexibility with simplified scale out techniques, and the opportunity to fine tune availability and data consistency requirements. Azure Cosmos DB provides all these benefits and more by providing tools and SDKs to work with your NoSQL data.<br><br>Learn how to use the Azure portal, the Azure Cosmos DB extension for Visual Studio Code, and the Azure Cosmos DB .NET Core SDK to work with your NoSQL data where you want, and provide your users with highly availability, no matter where they are in the world.
+  description: NoSQL data is an efficient way to store information that doesn’t map to the requirements of a relational SQL database.<br><br>Databases for NoSQL data enable increased flexibility with simplified scale out techniques, and the opportunity to fine tune availability and data consistency requirements. Azure Cosmos DB provides all these benefits and more by providing tools and SDKs to work with your NoSQL data.<br><br>Learn how to use the Azure portal, the Azure Cosmos DB extension for Visual Studio Code, and the Azure Cosmos DB .NET Core SDK to work with your NoSQL data where you want, and provide your users with high availability, no matter where they are in the world.
   brand: azure
   ms.date: 09/24/2018
   author: markjulmar
@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with NoSQL data in Azure Cosmos DB
-summary: NoSQL data is an efficient way to store information that doesn’t map to the requirements of a relational SQL database. Learn how to use the Azure portal, the Azure Cosmos DB extension for Visual Studio Code, and the Azure Cosmos DB .NET Core SDK to work with your NoSQL data where you want, and provide your users with highly availability, no matter where they are in the world.
+summary: NoSQL data is an efficient way to store information that doesn’t map to the requirements of a relational SQL database. Learn how to use the Azure portal, the Azure Cosmos DB extension for Visual Studio Code, and the Azure Cosmos DB .NET Core SDK to work with your NoSQL data where you want, and provide your users with high availability, no matter where they are in the world.
 prerequisites: |
   - Familiarity with storage options in Azure.
 iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg
