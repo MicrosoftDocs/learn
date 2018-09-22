@@ -77,9 +77,12 @@ Let's create a new Azure VM with PowerShell.
 
 1. With the IP address, you can connect to the VM with SSH. For example, if you used the username "bob", and the IP address is "205.22.16.5", then this command would connect to the Linux machine:
 
-```powershell
-ssh bob@205.22.16.5
-```
+    ```powershell
+    ssh bob@205.22.16.5
+    ```
+
+    Go ahead and log out by typing `exit`.
+
 
 ## Delete a VM
 
