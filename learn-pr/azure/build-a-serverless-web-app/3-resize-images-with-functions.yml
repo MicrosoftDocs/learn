@@ -13,7 +13,7 @@ metadata:
   zone_pivot_groups: dev-lang-csharp-javascript
 # TODO: Consider Azure Portal Interactivity. This module uses both Cloud Shell and the portal, which should be able to be accessed together with azure-portal.
 # interactive: azure-portal
-durationInMinutes: 11
+durationInMinutes: 18
 interactive: bash-editor
 azureSandbox: true
 content: |
