@@ -29,7 +29,7 @@ Some tools made specifically for static code analysis can be used for this as we
 - [Roslyn Security Guard](https://dotnet-security-guard.github.io)
 - [Puma Scan](https://pumascan.com)
 - [PT Application Inspector](https://www.ptsecurity.com/ww-en/products/ai/)
-- [Apache Maven Dependency Plugin](http://maven.apache.org/plugins/maven-dependency-plugin/)
+- [Apache Maven Dependency Plugin](https://maven.apache.org/plugins/maven-dependency-plugin/)
 - [Source Clear](https://www.sourceclear.com)
 - [Sonatype](https://ossindex.sonatype.org)
 - [Node Security Platform](https://nodesecurity.io)

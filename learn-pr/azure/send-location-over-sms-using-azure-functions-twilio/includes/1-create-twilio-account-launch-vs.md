@@ -2,7 +2,7 @@
 > The username and password you need to sign in to the VM are located on the **Resources** tab.
 
 > [!NOTE]
-> If you are using a Mac, after launching the VM you may need to use either the lightning icon on the toolbar, or the **Ctrl+Alt+Delete** option from the **Resources** tab next to the instructions to unlock the VM. 
+> If you are using a Mac, after launching the VM you may need to use either the lightning icon on the toolbar, or the **Ctrl+Alt+Delete** option from the **Resources** tab next to the instructions to unlock the VM.
 
 
 In this module, you'll create a cross-platform Xamarin.Forms app with a serverless back end. This app will get the user's location from their device and send it with a list of phone numbers to an Azure function. The function will then use a binding to a third-party service (Twilio) to send your location as an SMS message to all the phone numbers provided.
@@ -15,7 +15,7 @@ This process involves the following steps:
 
 1. The Azure function decodes the JSON payload and creates SMS messages.
 
-1. The SMS messages are sent via [Twilio](http://twilio.com?azure-portal=true).
+1. The SMS messages are sent via [Twilio](https://www.twilio.com/?azure-portal=true).
 
 The following illustration shows an overview of this process.
 
@@ -25,7 +25,7 @@ The following illustration shows an overview of this process.
 
 To be able to send SMS messages from an Azure function, you'll need a Twilio account. The free account is more than enough to get started.
 
-1. Head to [twilio.com](https://twilio.com?azure-portal=true).
+1. Head to [twilio.com](https://www.twilio.com?azure-portal=true).
 
 1. Click the red **Sign Up** button in the top-right corner.
 
@@ -39,13 +39,13 @@ To be able to send SMS messages from an Azure function, you'll need a Twilio acc
 
 1. Skip the step to invite a team mate.
 
-1. From the Twilio messaging dashboard, expand the **Project Info** panel. 
+1. From the Twilio messaging dashboard, expand the **Project Info** panel.
 
 1. Note your **ACCOUNT SID** and **AUTH TOKEN** because you will need these values later.
 
-    When you create a Twilio account, you are assigned a phone number that you can send messages from. You can find this phone number on the Twilio **Phone Numbers** dashboard. 
+    When you create a Twilio account, you are assigned a phone number that you can send messages from. You can find this phone number on the Twilio **Phone Numbers** dashboard.
 
-1. From the Twilio site, select the ellipses at the bottom of the left-hand menu. Then, select *SUPER NETWORK->Phone Numbers*. You can pin this dashboard to the left-hand menu using the pin icon. Your Twilio number will be under *Manage Numbers->Active Numbers*. 
+1. From the Twilio site, select the ellipses at the bottom of the left-hand menu. Then, select *SUPER NETWORK->Phone Numbers*. You can pin this dashboard to the left-hand menu using the pin icon. Your Twilio number will be under *Manage Numbers->Active Numbers*.
 
     ![Finding your Twilio number](../media/7-twilio-find-number.png)
 
@@ -60,7 +60,7 @@ To be able to send SMS messages from an Azure function, you'll need a Twilio acc
 
 ## Launch Visual Studio
 
-For this module, you'll develop the mobile app and Azure Functions app using Visual Studio 2017, available via a virtual machine. Although Xamarin.Forms apps can be built to run on iOS, Android, and Universal Windows Platform (UWP), this module will just focus on UWP so that it works inside the lab virtual machine.  
+For this module, you'll develop the mobile app and Azure Functions app using Visual Studio 2017, available via a virtual machine. Although Xamarin.Forms apps can be built to run on iOS, Android, and Universal Windows Platform (UWP), this module will just focus on UWP so that it works inside the lab virtual machine.
 
 Launch Visual Studio 2017 from the VM's Start Menu, or from the desktop shortcut.
 
