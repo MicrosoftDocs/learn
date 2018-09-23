@@ -1,10 +1,10 @@
 ### YamlMime:Achievements
 achievements:
-- uid: learn.build-a-serverless-web-app.badge
-  type: badge
-  title: Build a serverless web app
-  summary: Badge for the 'Build a serverless web app' module.
-  iconUrl: /learn/achievements/build-a-serverless-web-app.svg
+#- uid: learn.build-a-serverless-web-app.badge
+#  type: badge
+#  title: Build a serverless web app
+#  summary: Badge for the 'Build a serverless web app' module.
+#  iconUrl: /learn/achievements/build-a-serverless-web-app.svg
 - uid: learn.connect-app-to-azure-storage.badge
   type: badge
   title: Connect an app to Azure Storage
