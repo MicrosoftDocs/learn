@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.predict-costs-and-optimize-spending.4-save-on-infrastructure-costs
+title: Save on infrastructure costs
+metadata:
+  title: Save on infrastructure costs
+  description: In this unit, we'll discuss how to save on infrastructure costs 
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-save-on-infrastructure-costs.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+
+    - content: "Which one of these is *not* a cost-saving solution?"
+      choices:
+      - content: "Deallocate virtual machines in off hours."
+        isCorrect: false
+        incorrectExplanation: "This will reduce the amount of usage billed to your account and save costs."
+      - content: "Use Azure Reserved Virtual Machine Instances."
+        isCorrect: false
+        incorrectExplanation: "This is less expensive than pay-as-you-go when you have consistent workloads for your VMs and can commit to a longer-term service agreement."
+      - content: "Load balance your virtual machines for incoming messages."
+        isCorrect: true
+        correctExplanation: "Load balancing is used for performance optimization not cost savings."
+      - content: "Right-size underutilized virtual machines."
+        isCorrect: false
+        incorrectExplanation: "Scaling down a VM will reduce its cost."
+
+    - content: "True or false: PaaS is generally less expensive than IaaS."
+      choices:
+      - content: "True"
+        isCorrect: true
+        correctExplanation: "IaaS requires Azure to dedicate resources while PaaS give Azure more flexibility in how services are delivered. This means Azure can fill and operate hardware efficiently and therefore offer PaaS services at a savings over IaaS."
+      - content: "False"
+        isCorrect: false
+        incorrectExplanation: "Generally, contracting for a PaaS service is less expensive than IaaS resources."

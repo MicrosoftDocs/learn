@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>create-a-build-and-release-pipeline-with-azure-devops</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-1.0%" y="-2.7%" width="102.0%" height="110.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0960144928 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-1.9%" y="-1.4%" width="103.7%" height="105.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0960144928 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M23.2410589,47.7207107 L27.6162454,45.6036726" id="path-5"></path>
+        <filter x="-25.1%" y="-52.0%" width="150.3%" height="251.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0981091486 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M25.507279,50.9094113 L29.5121285,48.1455265" id="path-7"></path>
+        <filter x="-27.5%" y="-39.8%" width="154.9%" height="215.8%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0981091486 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M28.4142377,53.9642363 L31.8049607,50.4624393" id="path-9"></path>
+        <filter x="-32.4%" y="-31.4%" width="164.9%" height="191.4%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="0.6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0981091486 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M31.6218393,56.1069041 L34.5389405,52.1939042" id="path-11"></path>
+        <filter x="-37.7%" y="-28.1%" width="175.4%" height="181.8%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="0.6" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0981091486 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges-FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-2" transform="translate(-577.000000, -851.000000)">
+            <g id="create-a-build-and-release-pipeline-with-azure-devops" transform="translate(577.000000, 851.000000)">
+                <g id="Mask" transform="translate(2.500000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Pipe" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, 48.000000)">
+                            <polygon id="Fill-3373" fill="#30404D" points="0 32.2377166 66.5548978 32.2377166 66.5548978 4.63304924 0 4.63304924"></polygon>
+                            <polygon id="Fill-3375" fill="#30404D" points="60.370288 32.2377166 99.3029004 32.2377166 99.3029004 4.63304924 60.370288 4.63304924"></polygon>
+                            <polygon id="Fill-3373" fill="#182A37" points="0 32.2377166 66.5548978 32.2377166 66.5548978 18.6764482 0 18.6764482"></polygon>
+                            <polygon id="Fill-3375" fill="#182A37" points="60.370288 32.2377166 99.3029004 32.2377166 99.3029004 18.6764482 60.370288 18.6764482"></polygon>
+                            <path d="M57.9284295,0.47884682 L57.9284295,36.3911407 C60.9433003,36.3911407 63.387727,33.946714 63.387727,30.9318433 L63.387727,5.93814431 C63.387727,2.92327354 60.9433003,0.47884682 57.9284295,0.47884682" id="Fill-3384" fill="#A0AEB3"></path>
+                            <path d="M52.4694433,5.93791084 L52.4694433,30.9316098 C52.4694433,33.9464806 54.91387,36.3909073 57.9287408,36.3909073 L57.9287408,0.478613351 C54.91387,0.478613351 52.4694433,2.92304007 52.4694433,5.93791084" id="Fill-3385" fill="#ADBDC4"></path>
+                        </g>
+                    </g>
+                    <g id="Shoe" filter="url(#filter-4)" mask="url(#mask-2)">
+                        <g transform="translate(14.000000, -19.000000)">
+                            <polygon id="Fill-3376" fill="#253B5D" fill-rule="evenodd" points="6.4330664 37.522971 0.597826087 9.85714286 19.6729692 0.116889954 23.7635317 35.2932746"></polygon>
+                            <path d="M9.72887892,52.0325212 L8.07259821,43.2723959 L24.7535782,40.0625718 C24.7535782,40.0625718 27.9507583,55.097767 46.2424247,55.4000669 C46.2424247,55.4000669 51.188935,55.8826202 52.5930516,59.5543434 C52.5930516,59.5543434 44.40935,67.3305858 26.3149484,64.6108256 L10.8529166,67.2714402 C10.8529166,67.2714402 6.27581278,60.7015809 9.72887892,52.0325212" id="Fill-3377" fill="#7C5E32" fill-rule="evenodd"></path>
+                            <path d="M9.52537971,67.2443083 L26.2063597,64.0344843 C26.2063597,64.0344843 40.0297902,67.901482 52.4928374,59.2915678 L53.9332433,62.8816138 C53.9332433,62.8816138 43.2595376,70.310493 26.6697461,68.3652589 L27.1275495,70.7864745 L10.6745408,73.9531129 C10.6745408,73.9531129 9.46024508,66.8988227 9.52537971,67.2443083" id="Fill-3378" fill="#694B1B" fill-rule="evenodd"></path>
+                            <polygon id="Fill-3379" fill="#694B1B" fill-rule="evenodd" points="25.9997899 41.0169758 7.03351468 44.6671062 5.66103488 37.4043981 24.6263796 33.7552065"></polygon>
+                            <g id="Stroke-3380" fill="none" stroke-linecap="round">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use stroke="#B5B5B5" stroke-width="1.2" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Stroke-3381" fill="none" stroke-linecap="round">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use stroke="#B5B5B5" stroke-width="1.2" xlink:href="#path-7"></use>
+                            </g>
+                            <g id="Stroke-3382" fill="none" stroke-linecap="round">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                <use stroke="#B5B5B5" stroke-width="1.2" xlink:href="#path-9"></use>
+                            </g>
+                            <g id="Stroke-3383" fill="none" stroke-linecap="round">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                <use stroke="#B5B5B5" stroke-width="1.2" xlink:href="#path-11"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

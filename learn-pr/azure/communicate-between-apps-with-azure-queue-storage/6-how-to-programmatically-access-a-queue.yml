@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.communicate-between-applications-with-azure-queue-storage.6-how-to-programmatically-access-a-queue
+title: Programmatically access a queue
+metadata:
+  title: Programmatically access a queue
+  description: Programmatically access a queue
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-how-to-programmatically-access-a-queue.md)]

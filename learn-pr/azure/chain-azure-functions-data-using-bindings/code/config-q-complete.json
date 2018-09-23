@@ -1,0 +1,33 @@
+{
+    "bindings": [
+      {
+        "authLevel": "function",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req"
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "res"
+      },
+      {
+        "type": "documentDB",
+        "name": "bookmark",
+        "databaseName": "func-io-learn-db",
+        "collectionName": "Bookmarks",
+        "connection": "unit3test_DOCUMENTDB",
+        "direction": "in",
+        "id": "{id}"
+      },
+      {
+        "type": "documentDB",
+        "name": "newbookmark",
+        "databaseName": "func-io-learn-db",
+        "collectionName": "Bookmarks",
+        "connection": "unit3test_DOCUMENTDB",
+        "direction": "out"
+      }
+    ],
+    "disabled": false
+  }

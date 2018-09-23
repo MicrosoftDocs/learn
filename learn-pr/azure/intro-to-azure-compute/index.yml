@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.intro-to-compute
+metadata:
+  title: Introduction to Azure compute
+  description: Review the Azure compute services and explore how they can solve common business needs.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Introduction to Azure compute
+summary: Review the Azure compute services and explore how they can solve common business needs.
+abstract:  | 
+  In this module, you will:
+  - Identify Azure compute options
+  - Select compute options that will solve your specific business needs
+prerequisites: None
+iconUrl: /learn/achievements/intro-to-azure-compute.svg
+levels:
+- beginner
+roles:
+- developer
+- solution-architect
+- administrator
+products:
+- azure
+- azure-virtual-machines
+units:
+- learn.intro-to-compute.1-introduction
+- learn.intro-to-compute.2-essential-azure-compute-concepts
+- learn.intro-to-compute.3-select-and-manage-compute-options
+- learn.intro-to-compute.4-knowledge-check
+- learn.intro-to-compute.5-summary
+achievement: learn.intro-to-compute.badge

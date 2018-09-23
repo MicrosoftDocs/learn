@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.scale-and-size-virtual-machines.5-exercise-create-a-scale-set-and-configure-autoscaling
+title: Exercise - Create a scale set and configure autoscaling
+metadata:
+  title: Exercise - Create a scale set and configure autoscaling
+  description: Exercise - Create a scale set and configure autoscaling
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-create-a-scale-set-and-configure-autoscaling.md)]

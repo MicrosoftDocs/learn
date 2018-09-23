@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.2-decide-if-mean-is-right-for-you
+title: Decide if MEAN is right for you
+metadata:
+  title: Decide if MEAN is right for you
+  description: Decide if MEAN is right for you
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-decide-if-mean-is-right-for-you.md)]

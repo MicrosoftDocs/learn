@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.create-cosmos-db-for-scale.3-what-is-a-request-unit
+metadata:
+  title: What is an Azure Cosmos DB request unit?
+  description: What is an Azure Cosmos DB request unit?
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is a request unit?
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-what-is-a-request-unit.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'When you create an Azure Cosmos DB account, and you want to ensure it will grow with your application’s needs, what’s the minimum value you should set the throughput to?'
+    choices:
+    - content: 400 RU/s
+      isCorrect: false
+      incorrectExplanation: A throughput of 1000 RU/s is the minimum value to enable autoscaling of your database.
+    - content: 1000 RU/s
+      isCorrect: true
+      correctExplanation: A throughput of 1000 RU/s is the minimum value to enable autoscaling of your database.
+    - content: 1400 RU/s
+      isCorrect: false
+      incorrectExplanation: A throughput of 1000 RU/s is the minimum value to enable autoscaling of your database.
+    - content: '250,000 RU/s'
+      isCorrect: false
+      incorrectExplanation: A throughput of 1000 RU/s is the minimum value to enable autoscaling of your database.
+
+  - content: 'If you plan on writing a 4-KB document to an Azure Cosmos DB database 100 times per second and reading it 500 times per second, how many request units should you provision to ensure your account is not rate-limited?'
+    choices:
+    - content: 400 RU/s
+      isCorrect: false
+      incorrectExplanation: You need a minimum of 1350 RU/s to support this scenario. To ensure you aren't rate limited, you should provision 1400 RU/s, as you need more than 1350 RU/s and request units are provisioned in units of 100 (1300, 1400, 1500, etc.).
+    - content: 1000 RU/s
+      isCorrect: false
+      incorrectExplanation: You need a minimum of 1350 RU/s to support this scenario. To ensure you aren't rate limited, you should provision 1400 RU/s, as you need more than 1350 RU/s and request units are provisioned in units of 100 (1300, 1400, 1500, etc.).
+    - content: 1300 RU/s
+      isCorrect: false
+      incorrectExplanation: You need a minimum of 1350 RU/s to support this scenario. To ensure you aren't rate limited, you should provision 1400 RU/s, as you need more than 1350 RU/s and request units are provisioned in units of 100 (1300, 1400, 1500, etc.).
+    - content: 1400 RU/s
+      isCorrect: true
+      correctExplanation: You need a minimum of 1350 RU/s to support this scenario. To ensure you aren't rate limited, you should provision 1400 RU/s, as you need more than 1350 RU/s and request units are provisioned in units of 100 (1300, 1400, 1500, etc.).

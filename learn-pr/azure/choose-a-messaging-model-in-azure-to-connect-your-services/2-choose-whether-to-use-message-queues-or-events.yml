@@ -1,0 +1,26 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.2-choose-whether-to-use-message-queues-or-events
+title: Choose whether to use messages or events
+metadata:
+  title: Choose whether to use messages or events
+  description: Choose whether to use messages or events
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-choose-whether-to-use-message-queues-or-events.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Suppose you have a distributed application with a web service that authenticates users. When a user logs on, the web service communicates with all of the client applications to display the status of \"Online\". True or false: This is an example of a message in a distributed application."
+    choices:
+    - content: "True"
+      isCorrect: false
+      incorrectExplanation: "Messages typically contain the raw data itself, for example, a media file. In this situation, we're sending a simple piece of data that represents the status of a user. Also, we're sending the data in response to an action, which is a perfect case for using an event."
+    - content: "False"
+      correctExplanation: "Messages typically contain the raw data itself, for example, a media file. In this situation, we're sending a simple piece of data that represents the status of a user. Also, we're sending the data in response to an action, which is a perfect case for using an event."
+      isCorrect: true

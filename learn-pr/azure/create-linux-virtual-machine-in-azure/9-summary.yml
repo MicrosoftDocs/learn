@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.create-linux-vm-in-azure.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# TODO: Consider Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.add-and-size-disks-in-azure-virtual-machines.3-exercise-add-data-disks-to-azure-virtual-machines
+title: Exercise - Add a data disk to a VM
+metadata:
+  title: Exercise - Add a data disk to a VM
+  description: Exercise - Add a data disk to a VM
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-exercise-add-data-disks-to-azure-virtual-machines.md)]

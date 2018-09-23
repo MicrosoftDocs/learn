@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.connect-your-services-together
+metadata:
+  title: Connect your services together
+  description: "Azure lets you create applications composed of various components: web site front-ends, back-end services, and triggered functions that perform compute-on-demand services. Azure also includes various communication strategies to let these various components pass data to each other. Learn how to leverage these communication services to create scalable, efficient solutions out of testable components."
+  brand: azure
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect your services together
+summary: "Azure lets you create applications composed of various components: web site front-ends, back-end services, and triggered functions that perform compute-on-demand services. Azure also includes various communication strategies to let these various components pass data to each other. Learn how to leverage these communication services to create scalable, efficient solutions out of testable components."
+prerequisites: None 
+iconUrl: /learn/achievements/connect-your-services-together.svg
+levels: 
+- beginner
+- intermediate
+roles: 
+- developer
+products: 
+- azure
+- azure-service-bus
+- azure-event-grid
+- azure-event-hubs
+- azure-storage
+modules:
+- learn.choose-messaging-model
+- learn.implement-message-workflows-with-service-bus
+- learn.communicate-between-applications-with-azure-queue-storage
+- learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
+achievement: learn.connect-your-services-together.trophy

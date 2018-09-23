@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-compute.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check for the 'Introduction to Azure compute' module.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Your astronomy team has a number of image-processing applications that require lots of compute power and memory to run. You want to quickly migrate these applications to Azure. Which of the following options should you choose?"
+      choices:
+      - content: "Azure Kubernetes Service (AKS)"
+        isCorrect: false
+        incorrectExplanation: "App Service is fully managed and scales automatically. This allows your team to focus on what their good at, writing code."
+      - content: "Service Fabric"
+        isCorrect: false
+        incorrectExplanation: "App Service is fully managed and scales automatically. This allows your team to focus on what their good at, writing code."
+      - content: "App Service"
+        isCorrect: true
+        correctExplanation: "App Service is fully managed and scales automatically. This allows your team to focus on what their good at, writing code."
+    - content: "Suppose your astronomy team has come up against astronomical calculations that are taking hours and even days to complete. Parallel execution does not seem to help much. Which of the following options should you choose?"
+      choices:
+      - content: "Cloud Services"
+        isCorrect: false
+        incorrectExplanation: "Azure Batch provides cloud-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs."
+      - content: "Azure Batch"
+        isCorrect: true
+        correctExplanation: "Azure Batch provides cloud-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs."
+      - content: "Container Instances"
+        isCorrect: false
+        incorrectExplanation: "Azure Batch provides cloud-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs."

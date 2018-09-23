@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cosmos-db-app-with-vscode.3-setup
+metadata:
+  title: Set up your app in Visual Studio Code
+  description: Set up your app in Visual Studio Code
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set up your app in Visual Studio Code
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-setup.md)]

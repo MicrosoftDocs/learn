@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-app-to-azure-storage.5-interact-with-azure-storage-apis
+title: Interact with the Azure Storage APIs
+metadata:
+  title: Interact with the Azure Storage APIs
+  description: Interact with the Azure Storage APIs
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-interact-with-azure-storage-apis.md)]

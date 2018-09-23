@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.run-docker-containers-aci.6-troubleshoot-aci
+metadata:
+  title: Troubleshoot Azure Container Instances
+  description: Troubleshoot Azure Container Instances.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot Azure Container Instances
+interactive: bash
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-troubleshoot-aci.md)]

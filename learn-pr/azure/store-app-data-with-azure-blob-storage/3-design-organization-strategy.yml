@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.store-app-data-with-azure-blob-storage.3-design-organization-strategy
+title: Design a storage organization strategy
+metadata:
+  title: Design a storage organization strategy
+  description: Design a storage organization strategy
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-design-organization-strategy.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which type of blob is best for most storage scenarios?
+    choices:
+    - content: Byte blobs
+      isCorrect: false
+      incorrectExplanation: Block blobs can be uploaded and downloaded quickly due to their block-based structure.
+    - content: Page blobs
+      isCorrect: false
+      incorrectExplanation: Block blobs can be uploaded and downloaded quickly due to their block-based structure.
+    - content: Block blobs
+      isCorrect: true
+      correctExplanation: Block blobs can be uploaded and downloaded quickly due to their block-based structure.
+    - content: Append blobs
+      isCorrect: false
+      incorrectExplanation: Block blobs can be uploaded and downloaded quickly due to their block-based structure.
+
+  - content: Blobs provide *unstructured* data storage. What does *unstructured* mean?
+    choices:
+    - content: Blobs can't be organized or named, they are only collections of bytes.
+      isCorrect: false
+      incorrectExplanation: Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob.
+    - content: There are no restrictions on the type of data you can store in blobs.
+      isCorrect: true
+      correctExplanation: Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob.
+    - content: Blobs can't contain structured data, like JSON or XML.
+      isCorrect: false
+      incorrectExplanation: Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob.
+    - content: Data downloaded from blobs is organized randomly and requires a client library to parse it.
+      isCorrect: false
+      incorrectExplanation: Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob.
+      

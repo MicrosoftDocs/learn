@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-app-to-azure-storage.3-exercise-create-your-app
+title: Create a new app to work with Azure storage
+metadata:
+  title: Create a new app to work with Azure storage
+  description: Create a new app to work with Azure storage
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-create-your-app.md)]

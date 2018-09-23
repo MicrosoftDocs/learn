@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.chain-azure-functions-data-using-input-output-bindings.8-summary
+title: Summary
+metadata:
+  title: What we've learned
+  description: Summary
+  ms.date: 09/24/2018
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following is the correct name for the file that contains function configuration data?
+    choices: 
+    - content: config.txt
+      isCorrect: false
+      incorrectExplanation: The configuration is written in JSON.
+    - content: config.json
+      isCorrect: false
+      incorrectExplanation: It is a JSON file, but this is not the correct name.
+    - content: function.json 
+      isCorrect: true
+      correctExplanation: The configuration is named `function.json`, which contains JSON configuration data such as binding declarations.
+
+  - content: Which of the following is a supported input binding type?
+    choices: 
+    - content: Cosmos DB
+      isCorrect: true
+      correctExplanation: The Azure Cosmos DB input binding uses the SQL API to retrieve one or more Azure Cosmos DB documents and passes them to the input parameter of the function.
+    - content: SendGrid
+      isCorrect: false
+      incorrectExplanation: SendGrid is not a supported input binding type.
+    - content: Service Bus
+      isCorrect: false
+      incorrectExplanation: Service Bus is not a supported input binding type.
+
+  - content: How many triggers must a function have?
+    choices: 
+    - content: zero
+      isCorrect: false
+      incorrectExplanation: A function must have exactly one trigger.
+    - content: one
+      isCorrect: true
+      correctExplanation: A function must have exactly one trigger.
+    - content: two
+      isCorrect: false
+      incorrectExplanation: A function must have exactly one trigger.
+  - content: Which of the following lines of JavaScript writes "hello bindings" to an Azure Queue Storage queue using a function parameter called **myQueueItem**?
+    choices: 
+    - content: context.myQueueItem = "hello bindings";
+      isCorrect: false
+      incorrectExplanation: This is the correct parameter name but it needs to be access through the context of the object.
+    - content: context.bindings.myQueueItem = "hello bindings";
+      isCorrect: true
+      correctExplanation: context.bindings returns a named object that contains all your input and output data. 
+    - content: myQueueItem = "hello bindings";
+      isCorrect: false
+      incorrectExplanation: This is the correct parameter name but it needs to be access through the context of the object.
+ 

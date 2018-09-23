@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-security.2-shared-responsibility
+title: Cloud security is a shared responsibility
+metadata:
+  title: Cloud security is a shared responsibility
+  description: Cloud security is a shared responsibility
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-shared-responsibility.md)]

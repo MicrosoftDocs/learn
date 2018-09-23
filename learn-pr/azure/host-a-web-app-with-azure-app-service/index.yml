@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.host-a-web-application-with-azure-web-apps
+metadata:
+  title: Host a web application with Azure App service
+  description: Create a website through the hosted web app platform in Azure App Service.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Host a web application with Azure App service
+summary: Azure App Service enables you to build and host web applications in the programming language of your choice without managing infrastructure. Learn how to create a website through the hosted web app platform in Azure App Service.
+abstract:  |
+  In this module, you will:
+  - Use the Azure portal to create an App Service app
+  - Create an ASP.NET Core application in a Linux development environment
+  - Upload your application code to App Service using Git
+prerequisites: None
+iconUrl: /learn/achievements/host-a-web-app-with-azure-app-service.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-portal
+units:
+#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
+- learn.host-a-web-application-with-azure-web-apps.1-introduction
+- learn.host-a-web-application-with-azure-web-apps.2-create-a-web-app-in-the-azure-portal
+- learn.host-a-web-application-with-azure-web-apps.3-exercise-create-a-web-app-in-the-azure-portal
+- learn.host-a-web-application-with-azure-web-apps.4-using-asp.net-core-on-linux
+- learn.host-a-web-application-with-azure-web-apps.5-exercise-create-an-asp.net-core-web-application-on-linux
+- learn.host-a-web-application-with-azure-web-apps.6-upload-your-code-to-azure
+- learn.host-a-web-application-with-azure-web-apps.7-exercise-upload-your-code-to-azure
+- learn.host-a-web-application-with-azure-web-apps.8-summary
+achievement: learn.host-a-web-application-with-azure-web-apps.badge

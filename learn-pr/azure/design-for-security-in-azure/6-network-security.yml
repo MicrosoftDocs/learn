@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.design-for-security.6-network-security
+title: Network security
+metadata:
+  title: Network security
+  description: In this unit we'll discuss how to secure your network infrastructure
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-network-security.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Azure network security group can be used to secure communication between which of the following?'
+    choices:
+    - content: 'Virtual machines and the internet'
+      isCorrect: false
+      incorrectExplanation: 'Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines.'
+    - content: 'Virtual machines within a VNet'
+      isCorrect: false
+      incorrectExplanation: 'Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines.'
+    - content: 'Systems in an on-premises network'
+      isCorrect: false
+      incorrectExplanation: 'Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines.'
+    - content: 'All of the above'
+      isCorrect: true
+      correctExplanation: 'Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines.'
+
+  - content: 'Which of the following is not a method for protecting internet facing services from network attacks?'
+    choices:
+    - content: 'Azure DDoS'
+      isCorrect: false
+      incorrectExplanation: 'Azure Disk Encryption protects your virtual machine virtual hard disks from exposure, but does not provide protection from network based attacks.'
+    - content: 'Azure Application Gateway WAF'
+      isCorrect: false
+      incorrectExplanation: 'Azure Disk Encryption protects your virtual machine virtual hard disks from exposure, but does not provide protection from network based attacks.'
+    - content: 'Azure Disk Encryption'
+      isCorrect: true
+      correctExplanation: 'Azure Disk Encryption protects your virtual machine virtual hard disks from exposure, but does not provide protection from network based attacks.'
+    - content: 'A network virtual appliance'
+      isCorrect: false
+      incorrectExplanation: 'Azure Disk Encryption protects your virtual machine virtual hard disks from exposure, but does not provide protection from network based attacks.'

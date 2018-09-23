@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.communicate-between-applications-with-azure-queue-storage.5-exercise-identify-a-queue
+title: Identify a queue - Part 2
+metadata:
+  title: Identify a queue - Part 2
+  description: Exercise - Identify a queue
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash-editor
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-identify-a-queue.md)]

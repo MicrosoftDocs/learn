@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.deploy-a-website-with-azure-app-service
+metadata:
+  title: Deploy a website to Azure with Azure App Service
+  description: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. Instead, you can focus on your website features and rely on the robust Azure platform to provide secure access to your site.
+  brand: azure
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a website to Azure with Azure App Service
+summary: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. Instead, you can focus on your website features and rely on the robust Azure platform to provide secure access to your site.
+prerequisites: None
+iconUrl: /learn/achievements/deploy-a-website-with-azure-app-service.svg
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- azure
+- azure-portal
+modules:
+- learn.prepare-azure-dev-environment
+- learn.host-a-web-application-with-azure-web-apps
+#TODO: Add - learn.cd-pipeline-github-to-azure-web-app (POST-IGNITE)
+#- learn.publish-azure-web-app-with-visual-studio
+achievement: learn.deploy-a-website-with-azure-app-service.trophy

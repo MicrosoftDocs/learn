@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-message-workflows-with-service-bus.2-choose-a-messaging-platform
+title: Choose a messaging platform
+metadata:
+  title: Choose a messaging platform
+  description: Choose a messaging platform
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-choose-a-messaging-platform.md)]

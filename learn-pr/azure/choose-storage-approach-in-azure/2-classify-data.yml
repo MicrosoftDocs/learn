@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-storage-approach-in-azure.2-classify-data
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Classify your data
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-classify-data.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A JSON file is an example of which type of data?"
+    choices:
+    - content: "Structured"
+      isCorrect: false
+      incorrectExplanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+    - content: "Semi-structured"
+      isCorrect: true
+      correctExplanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+    - content: "Unstructured"
+      isCorrect: false
+      incorrectExplanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+
+  - content: "A video is an example of which type of data?"
+    choices:
+    - content: "Structured"
+      isCorrect: false
+      incorrectExplanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+    - content: "Semi-structured"
+      isCorrect: false
+      incorrectExplanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+    - content: "Unstructured"
+      isCorrect: true
+      correctExplanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+

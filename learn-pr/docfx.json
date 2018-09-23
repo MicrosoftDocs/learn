@@ -3,6 +3,19 @@
     "content": [
       {
         "files": [
+          "achievements.yml"
+        ],
+        "dest": "achievements/main/"
+      },
+      {
+        "src": "azure",
+        "files": [
+          "**.yml"
+        ],
+        "dest": "modules"
+      },
+      {
+        "files": [
           "**/*.md",
           "**/*.yml"
         ],
@@ -15,23 +28,24 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
-          "template-module/**"
+          "azure/**"
         ]
       }
     ],
     "resource": [
       {
         "files": [
+          "**/*.gif",
           "**/*.png",
           "**/*.svg",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.jpeg"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
-          "_themes.pdf/**",
-          "template-module/**"
+          "_themes.pdf/**"
         ]
       }
     ],
@@ -39,24 +53,14 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/learn/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/learn",
       "clicktale": true,
-      "signintest": true
+      "uhfHeaderId":"MSDocsHeader-Learn"
     },
     "fileMetadata": {
-      "breadcrumb_path": {
-        "azure-cli-2-0/**.**": "/learn/breadcrumb/all/toc.json",
-        "azure-cli-2-0/index.yml": "/learn/breadcrumb/toc.json",
-        "build-serverless-app/**.**": "/learn/breadcrumb/all/toc.json",
-        "build-serverless-app/index.yml": "/learn/breadcrumb/toc.json",
-        "deploy-apps-to-azure/**.**": "/learn/breadcrumb/all/toc.json",
-        "deploy-apps-to-azure/index.yml": "/learn/breadcrumb/toc.json",
-        "deploy-custom-vmss-app/**.**": "/learn/breadcrumb/all/toc.json",
-        "deploy-custom-vmss-app/index.yml": "/learn/breadcrumb/toc.json",
-        "intro-to-csharp/**.**": "/learn/breadcrumb/all/toc.json",
-        "intro-to-csharp/index.yml": "/learn/breadcrumb/toc.json"
+      "brand": {
+        "azure/**/*.yml": "azure"
       }
     },
     "template": [],

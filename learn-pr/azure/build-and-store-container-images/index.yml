@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure-container-registry
+metadata:
+  title: Build and store container images with Azure Container Registry
+  description: Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments. Learn how to build and store container images with Azure Container Registry.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Build and store container images with Azure Container Registry
+summary: Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments. Learn how to build and store container images with Azure Container Registry.
+abstract: |
+  In this module, you will:
+  - Deploy an Azure container registry
+  - Build a container image using Azure Container Registry Tasks
+  - Deploy the container to an Azure container instance
+  - Replicate the container image to multiple Azure datacenters
+prerequisites: None
+iconUrl: /learn/achievements/build-and-store-container-images.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-container-instances
+- azure-container-registry
+units:
+- learn.azure-container-registry.introduction
+- learn.azure-container-registry.deploy-acr
+- learn.azure-container-registry.build-image
+- learn.azure-container-registry.deploy-image
+- learn.azure-container-registry.image-replication
+- learn.azure-container-registry.knowledge-check
+achievement: learn.azure-container-registry.badge

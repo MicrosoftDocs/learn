@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-app-to-azure-storage.10-exercise-connect-with-your-azure-storage-configuration
+title: Connect with your Azure Storage configuration
+metadata:
+  title: Connect with your Azure Storage configuration
+  description: Connect with your Azure Storage configuration
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+interactive: bash-editor
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/10-exercise-connect-with-your-azure-storage-configuration.md)]

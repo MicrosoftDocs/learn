@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-message-workflows-with-service-bus.3-exercise-implement-a-service-bus-topic-and-queue
+title: Exercise - Implement a Service Bus topic and queue
+metadata:
+  title: Exercise - Implement a Service Bus topic and queue
+  description: Exercise - Implement a Service Bus topic and queue
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+#TODO: Portal interactivity
+#interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-implement-a-service-bus-topic-and-queue.md)]

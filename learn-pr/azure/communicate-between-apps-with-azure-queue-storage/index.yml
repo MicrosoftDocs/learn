@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.communicate-between-applications-with-azure-queue-storage
+metadata:
+  title: Communicate between applications with Azure Queue storage
+  description: Implement the publish-subscribe pattern in the cloud using Azure Queue storage.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Communicate between applications with Azure Queue storage
+summary: Implement the publish-subscribe pattern in the cloud using Azure Queue storage.
+abstract:  | 
+  In this module, you will:
+  - Create an Azure Storage account that supports queues
+  - Create a queue using C# and the Azure Storage Client Library for .NET
+  - Add, retrieve, and remove messages from a queue using C# and the Azure Storage Client Library for .NET
+prerequisites: None
+iconUrl: /learn/achievements/communicate-between-apps-with-azure-queue-storage.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-storage
+units:
+#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
+- learn.communicate-between-applications-with-azure-queue-storage.1-introduction
+- learn.communicate-between-applications-with-azure-queue-storage.2-create-the-azure-storage-infrastructure
+- learn.communicate-between-applications-with-azure-queue-storage.3-exercise-create-the-azure-storage-infrastructure
+- learn.communicate-between-applications-with-azure-queue-storage.4-identify-a-queue
+- learn.communicate-between-applications-with-azure-queue-storage.5-exercise-identify-a-queue
+- learn.communicate-between-applications-with-azure-queue-storage.6-how-to-programmatically-access-a-queue
+- learn.communicate-between-applications-with-azure-queue-storage.7-exercise-implement-enqueue
+- learn.communicate-between-applications-with-azure-queue-storage.8-exercise-implement-dequeue
+- learn.communicate-between-applications-with-azure-queue-storage.9-summary
+achievement: learn.communicate-between-applications-with-azure-queue-storage.badge

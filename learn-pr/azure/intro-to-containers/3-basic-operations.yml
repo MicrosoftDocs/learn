@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-containers.3-basic-operations
+metadata:
+  title: Perform basic container operations
+  description: Perform basic container operations.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform basic container operations
+interactive: bash
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-basic-operations.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.communicate-between-applications-with-azure-queue-storage.8-exercise-implement-dequeue
+title: Retrieve a message from the queue
+metadata:
+  title: Retrieve a message from the queue
+  description: Retrieve a message from the queue
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash-editor
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-exercise-implement-dequeue.md)]

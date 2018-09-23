@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure-services-features
+metadata:
+  title: Tour Azure services and features
+  description: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences. After you create an account, you can use the Azure portal to tour the available services and create the ones you need for your application. This module guides you through the onboarding process: you will create your Azure account, login to the portal, and practice creating a few common resources."
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Tour Azure services and features
+summary: Create an Azure account, tour available services, and customize the portal.
+abstract: |
+  In this module, you will:
+  - Create an Azure account
+  - Navigate the Azure portal
+  - Customize the dashboard
+prerequisites: |
+  - Knowledge of basic cloud computing terms and concepts
+  - A valid credit card to register with Azure
+iconUrl: /learn/achievements/tour-azure-services-and-features.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products:
+- azure
+- azure-portal
+units:
+#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
+- learn.azure-services-features.1-introduction
+- learn.azure-services-features.2-tour-of-azure-services
+- learn.azure-services-features.3-create-an-azure-account
+- learn.azure-services-features.4-exercise-create-an-azure-account
+- learn.azure-services-features.5-navigate-the-portal
+- learn.azure-services-features.6-exercise-work-with-blades
+- learn.azure-services-features.7-exercise-navigate-the-portal
+- learn.azure-services-features.8-customize-the-dashboard
+- learn.azure-services-features.9-exercise-customize-the-dashboard
+- learn.azure-services-features.10-summary
+achievement: learn.azure-services-features.badge

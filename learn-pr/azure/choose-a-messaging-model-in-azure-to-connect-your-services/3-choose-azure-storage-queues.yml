@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-messaging-model.3-choose-azure-storage-queues
+title: Choose a message-based delivery with queues
+metadata:
+  title: Choose a message-based delivery with queues
+  description: Choose a message-based delivery with queues
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-choose-azure-storage-queues.md)]

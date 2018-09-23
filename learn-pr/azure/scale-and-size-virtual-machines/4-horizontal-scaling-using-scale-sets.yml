@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.scale-and-size-virtual-machines.4-horizontal-scaling-using-scale-sets
+title: Horizontal scaling using scale sets
+metadata:
+  title: Horizontal scaling using scale sets
+  description: Horizontal scaling using scale sets
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-horizontal-scaling-using-scale-sets.md)]

@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-storage-account.5-exercise-create-a-storage-account
+title: Create a storage account using the Azure portal
+metadata:
+  title: Create a storage account using the Azure portal
+  description: Create a storage account using the Azure portal
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+# TODO: Consider Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-create-a-storage-account.md)]

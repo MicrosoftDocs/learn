@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-virtual-machine-disks.4-exercise-encrypt-existing-vm-disks
+title: Exercise - Encrypt existing VM disks
+metadata:
+  title: Exercise - Encrypt existing VM disks
+  description: Exercise - Encrypt existing VM disks
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: powershell
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-encrypt-existing-vm-disks.md)]

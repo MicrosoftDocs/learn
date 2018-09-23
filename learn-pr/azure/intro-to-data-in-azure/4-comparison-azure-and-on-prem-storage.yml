@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-data-in-azure.4-comparison-azure-and-on-prem-storage
+title: Comparison between Azure data storage and on-premises storage
+metadata:
+  title: Comparison between Azure data storage and on-premises storage
+  description: Comparison between Azure data storage and on-premises storage
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-comparison-azure-and-on-prem-storage.md)]

@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.store-data-in-azure
+metadata:
+  title: Store data in Azure
+  description: "Azure provides a variety of ways to store data: unstructured, archival, relational, and more. Learn the basics of storage management in Azure, how to create a Storage Account, and how to choose the right model for the data you want to store in the cloud."
+  brand: azure
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Store data in Azure
+summary: "Azure provides a variety of ways to store data: unstructured, archival, relational, and more. Learn the basics of storage management in Azure, how to create a Storage Account, and how to choose the right model for the data you want to store in the cloud."
+prerequisites: None
+iconUrl: /learn/achievements/store-data-in-azure.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-storage
+- azure-portal
+- azure-cloud-shell
+modules:
+- learn.choose-storage-approach-in-azure
+- learn.create-azure-storage-account
+- learn.connect-app-to-azure-storage
+- learn.store-app-data-with-azure-blob-storage
+achievement: learn.store-data-in-azure.trophy

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-containers.2-create-a-container
+metadata:
+  title: Use a VM to host a containerized web server
+  description: Create a VM and use it to host an Nginx containerized web server.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use a VM to host a containerized web server
+interactive: bash
+azureSandbox: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-create-a-container.md)]

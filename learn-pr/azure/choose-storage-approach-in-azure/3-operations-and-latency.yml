@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-storage-approach-in-azure.3-operations-and-latency
+metadata:
+  title: Determine operational needs
+  description: Determine operational needs
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Determine operational needs
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-operations-and-latency.md)]

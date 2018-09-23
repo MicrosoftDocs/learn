@@ -1,0 +1,46 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: platform
+  title: Platform
+  prompt: Choose your platform
+  pivots:
+    - id: linux
+      title: Linux
+    - id: macos
+      title: Mac
+    - id: windows
+      title: Windows
+- id: platform-windows-mac
+  title: Platform
+  prompt: Choose your platform
+  pivots:
+    - id: macos
+      title: Mac
+    - id: windows
+      title: Windows
+- id: azure-interface
+  title: Shell
+  prompt: Choose your shell
+  pivots:
+    - id: bash
+      title: Bash
+    - id: powershell
+      title: PowerShell
+    - id: portal
+      title: Azure Portal
+- id: dev-lang-csharp-javascript
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: javascript
+      title: JavaScript
+- id: platform-cloud
+  title: Platform
+  prompt: Choose which platform you want to run in the cloud
+  pivots:
+    - id: windows-cloud
+      title: Windows
+    - id: linux-cloud
+      title: Linux

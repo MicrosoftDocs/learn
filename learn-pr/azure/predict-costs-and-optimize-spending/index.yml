@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.predict-costs-and-optimize-spending
+metadata:
+  title: Predict costs and optimize spending for Azure
+  description: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: jason.boeshart
+title: Predict costs and optimize spending for Azure 
+summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
+abstract: |
+  In this module, you will:
+  - Estimate costs with the Azure pricing calculator
+  - Predict and optimize costs with Azure Cost Management and Azure Advisor
+  - Apply best practices for saving on infrastructure costs
+  - Apply best practices for saving on licensing costs
+prerequisites: |
+  - An understanding of your options within Azure infrastructure components
+iconUrl: /learn/achievements/predict-costs-and-optimize-spending.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+- azure-portal
+- azure-cost-management
+units:
+- learn.predict-costs-and-optimize-spending.1-introduction
+- learn.predict-costs-and-optimize-spending.2-estimate-costs-with-the-azure-pricing-calculator
+- learn.predict-costs-and-optimize-spending.3-predict-and-optimize-with-cost-management-and-advisor
+- learn.predict-costs-and-optimize-spending.4-save-on-infrastructure-costs
+- learn.predict-costs-and-optimize-spending.5-save-on-licensing-costs
+- learn.predict-costs-and-optimize-spending.6-summary
+achievement: learn.predict-costs-and-optimize-spending.badge

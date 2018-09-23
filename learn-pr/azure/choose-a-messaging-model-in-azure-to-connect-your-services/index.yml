@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.choose-messaging-model
+metadata:
+  title: Choose a messaging model in Azure to loosely connect your services
+  description: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grid, and Service Bus. This module shows you how to choose the best technology for your communication task.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #TODO: Update support contact.
+  #ms.learn-contact: smmark
+title: Choose a messaging model in Azure to loosely connect your services
+summary: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grid, and Service Bus. This module shows you how to choose the best technology for your communication task.
+abstract: |
+  In this module, you will:
+  - Describe events and messages, and the challenges you can use them to solve in a distributed application
+  - Identify scenarios in which Storage queue is the best messaging technology for an application
+  - Identify scenarios in which Event Grid is the best messaging technology for an application
+  - Identify scenarios in which Event Hubs is the best messaging technology for an application
+  - Identify scenarios in which Service Bus is the best messaging technology for an application
+prerequisites: None
+iconUrl: /learn/achievements/choose-a-messaging-model-in-azure-to-connect-your-services.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-service-bus
+- azure-event-grid
+- azure-event-hubs
+units:
+- learn.choose-messaging-model.1-introduction
+- learn.choose-messaging-model.2-choose-whether-to-use-message-queues-or-events
+- learn.choose-messaging-model.3-choose-azure-storage-queues
+- learn.choose-messaging-model.4-choose-event-grid
+- learn.choose-messaging-model.5-choose-azure-event-hubs
+- learn.choose-messaging-model.6-summary
+achievement: learn.choose-messaging-model.badge
