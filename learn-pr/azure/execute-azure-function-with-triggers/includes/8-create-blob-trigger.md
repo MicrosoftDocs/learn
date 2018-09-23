@@ -4,7 +4,7 @@ In this unit, we're going to create an Azure function that displays the name and
 
 Again, let's continue using our existing Azure Functions application and add a blob trigger.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Navigate to the **All resources** screen and select your function app.
 
@@ -18,7 +18,7 @@ Again, let's continue using our existing Azure Functions application and add a b
 
 1. Leave the **Path** set to the default value.
 
-1. Select the _new_ link next to the **Storage account connection** dropdown. In the blade that pops up, click **Create new**. Enter a unique name for the new storage account and select **OK** to create the storage account and close pane. 
+1. Select the _new_ link next to the **Storage account connection** dropdown. In the blade that pops up, click **Create new**. Enter a unique name for the new storage account and select **OK** to create the storage account and close pane.
 
 1. Once you have returned to the New Function screen, select **Create** to create the function.
 
@@ -26,12 +26,12 @@ Again, let's continue using our existing Azure Functions application and add a b
 
 Now that we've created a blob trigger, let's use the Storage Explorer to create a blob and trigger the function.
 
-1. Open the storage account you used (or created) in a new tab. 
+1. Open the storage account you used (or created) in a new tab.
 
     > [!TIP]
     > You can duplicate a tab in most browsers by right-clicking on the tab in question and selecting **Duplicate** from the menu that appears. We want to use a new tab so we can switch between the two services we are working with.
 
-1. Select **Storage accounts** in the sidebar, or select **All resources** in the sidebar and then filter by the name. 
+1. Select **Storage accounts** in the sidebar, or select **All resources** in the sidebar and then filter by the name.
 
 1. Click on the **Storage Explorer (preview)** section - this will open a new panel where you can work with blobs and files.
 

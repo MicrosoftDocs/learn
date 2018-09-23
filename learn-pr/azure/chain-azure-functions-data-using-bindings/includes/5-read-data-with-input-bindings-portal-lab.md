@@ -6,7 +6,7 @@ When users send you a request with some text, you try to find an entry in your b
 
 You need to store the data somewhere. In this flowchart, the data store is an Azure Cosmos DB instance. But how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job.  Configuring a binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code for such tasks as opening a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
 
-## Create an Azure Cosmos DB account 
+## Create an Azure Cosmos DB account
 
 > [!NOTE]
 > This unit is not intended to be a tutorial on Azure Cosmos DB. There is a complete learning path on Cosmos DB if you are interested in learning more after finishing this module.
@@ -15,7 +15,7 @@ You need to store the data somewhere. In this flowchart, the data store is an Az
 
 A database account is a container for managing one or more databases. Before we can create a database, we need to create a database account.
 
-1. Make sure you are signed into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Databases** > **Azure Cosmos DB**.
 
@@ -28,7 +28,7 @@ A database account is a container for managing one or more databases. Before we 
     | Subscription | Concierge subscription | Select Azure subscription that you want to use for this Azure Cosmos DB account. |
     Resource Group|Use existing<br><br>Then select **<rgn>[Sandbox resource group name]</rgn>**. | We're selecting **Use existing**, because we want to group all resources created for this module under the free Sandbox resource group. |
     | Location | Auto-filled once **Use existing** is set. | Select the geographic location in which to host your Azure Cosmos DB account. Use the location that's closest to your users to give them the fastest access to the data. In this lab, the location is pre-determined for us as the location set for the existing resource group.|
-    
+
     Leave all other fields in the **New account** blade at their default values because we're using them in this module.  That includes **Enable geo-redundancy**, **Enable Multi Master**, **Virtual networks**.
 
 1. Select **Create** to provision and deploy the database account.
@@ -58,17 +58,17 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     |Collection ID|[!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]|Enter [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] as the name for our new collection. Collection IDs have the same character requirements as database names.|
     |Storage capacity| Fixed (10 GB)|Use the default value of **Fixed (10 GB)**. This value is the storage capacity of the database.|
     |Throughput|1000 RU|Change the throughput to 1000 request units per second (RU/s). Storage capacity must be set to **Fixed (10 GB)** to set throughput to 400 RU/s. If you want to reduce latency, you can scale up the performance later.|
-        
+
 3. Click **OK**. The Data Explorer displays the new database and collection. So, now we have a database. Inside the database, we've defined a collection. Next, we'll add some data, also known as documents.
 
 ### Add test data
 
-We've defined a collection in our database called [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]. We want to store a URL and ID in each document, like a list of web page bookmarks. 
+We've defined a collection in our database called [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]. We want to store a URL and ID in each document, like a list of web page bookmarks.
 
 You'll add data to your new collection using Data Explorer.
 
 1. In Data Explorer, the new database appears in the Collections pane. Expand the [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] database, expand the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] collection, select **Documents**, and then select **New Document**.
-  
+
 2. Replace the default content of the new document with the following JSON.
 
      ```json
@@ -89,7 +89,7 @@ You'll add data to your new collection using Data Explorer.
     | `_etag`     |   Required for optimistic concurrency control.     |
     | `_attachments`     |  The addressable path for the attachments resource.       |
     | `_ts`     |    The time stamp of the last update of this resource.    |
-     
+
 4. Let's add a few more documents into the collection. Create four more documents with the following content. Remember to save your work.
 
     ```json
@@ -98,45 +98,45 @@ You'll add data to your new collection using Data Explorer.
         "URL": "https://portal.azure.com"
     }
     ```
-    
+
     ```json
     {
         "id": "learn",
         "URL": "https://docs.microsoft.com/learn"
     }
     ```
-    
+
     ```json
     {
         "id": "marketplace",
         "URL": "https://azuremarketplace.microsoft.com/marketplace/apps"
     }
     ```
-    
+
     ```json
     {
         "id": "blog",
         "URL": "https://azure.microsoft.com/blog"
     }
     ```
-    
+
 1. When you've finished, your collection should look like the following:
 
     ![The SQL API UI in the portal, showing the list of entries you added to your bookmarks collection](../media/5-db-bookmark-coll.PNG)
-    
+
 You now have a few entries in your bookmark collection. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks collection and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this collection.
 
 ## Create your function
 
 1. Navigate to the function app that you created in the preceding unit.
 
-1. Expand your function app, hover over the functions collection, and then select the **Add** (**+**) button next to **Functions**.  
+1. Expand your function app, hover over the functions collection, and then select the **Add** (**+**) button next to **Functions**.
    This action starts the function creation process. The following animation illustrates the action:
 
    ![Animation of the plus sign that appears when you hover over the functions menu item](../media/3-func-app-plus-hover-small.gif)
 
-   The page displays the complete set of supported triggers. 
-   
+   The page displays the complete set of supported triggers.
+
 1. Select **HTTP trigger**, which is the first entry in the following screenshot:
 
     ![Screenshot of part of the trigger template selection UI, with the HTTP trigger, displayed first, in the top left of the image.](../media/5-trigger-templates-small.png)
@@ -148,8 +148,8 @@ You now have a few entries in your bookmark collection. Our scenario will work a
     | Language | **JavaScript** |
     | Name     | [!INCLUDE [func-name-find](./func-name-find.md)] |
     | Authorization level | **Function** |
-    
-1. Select **Create** to create your function.  
+
+1. Select **Create** to create your function.
     This action opens the *index.js* file in the code editor and displays a default implementation of the HTTP-triggered function.
 
 ### Verify the function
@@ -158,7 +158,7 @@ You can verify what we have done so far by testing our new function as follows:
 
 1. In your new function, click **Get function URL** at the top right, select **default (Function key)**, and then click **Copy**.
 
-1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<yourname>` to the end of the URL and press **Enter** to execute the request. You should get a response from the Azure Function right in the browser.  
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<yourname>` to the end of the URL and press **Enter** to execute the request. You should get a response from the Azure Function right in the browser.
 
 Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] collection.
 
@@ -166,16 +166,16 @@ Now that we have our bare-bones function working, let's turn our attention to re
 
 To read data from the database, you need to define an input binding. As you'll see, you can configure a binding that can talk to your database in just a few steps.
 
-1. Select **Integrate** in the left pane to open the integration tab.  
-   The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding. 
+1. Select **Integrate** in the left pane to open the integration tab.
+   The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
 
-2. Select **New Input** in the **Inputs** column.  
+2. Select **New Input** in the **Inputs** column.
    A list of all possible input binding types is displayed.
 
-3. In the list, select **Azure Cosmos DB**, and then select **Select**.  
+3. In the list, select **Azure Cosmos DB**, and then select **Select**.
    This action opens the Azure Cosmos DB input configuration page. Next, you'll set up a connection to your database.
 
-4. Next to the **Azure Cosmos DB account connection** box, select **new**.  
+4. Next to the **Azure Cosmos DB account connection** box, select **new**.
    This action opens the **Connection** window, which already has **Azure Cosmos DB account** and your Azure subscription selected. The only thing left to do is to select a database account ID.
 
 5. In the "Create a database account" section, you had to supply an ID value. Find that value in the **Database Account** drop-down list, and then click **Select**.
@@ -195,8 +195,8 @@ You want to look up a bookmark with a specific ID, so let's tie the ID we receiv
     |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
     |SQL Query (optional)    |   leave blank       |   We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
     |Partition key (optional)     |   leave blank      |  We can accept the default here.       |
-    
-9. Select **Save** to save all changes to this binding configuration. 
+
+9. Select **Save** to save all changes to this binding configuration.
 
 Now that you have your binding defined, it's time to use it in your function.
 
@@ -222,7 +222,7 @@ An incoming HTTP request triggers the function, and an `id` query parameter is p
 
     >[!TIP]
     >You can also test the function using the **Test** tab in the function portal UI. You can add a query parameter or supply a request body to get the same results as described in the preceding steps.
-    
-In this unit, we created our first input binding manually to read from an Azure Cosmos DB database. The amount of code we wrote to search our database and read data was minimal, thanks to bindings. We did most of our work configuring the binding declaratively, and the platform took care of the rest.  
+
+In this unit, we created our first input binding manually to read from an Azure Cosmos DB database. The amount of code we wrote to search our database and read data was minimal, thanks to bindings. We did most of our work configuring the binding declaratively, and the platform took care of the rest.
 
 In the next unit, we'll add more data to our bookmark collection through an Azure Cosmos DB output binding.

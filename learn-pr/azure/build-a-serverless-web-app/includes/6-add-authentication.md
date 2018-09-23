@@ -2,7 +2,7 @@ Azure App Service authentication enables turn-key authentication support in an A
 
 ## Enable App Service authentication
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Open the function app.
 

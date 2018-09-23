@@ -33,7 +33,7 @@ az functionapp create \
 
 To securely upload an image to Blob storage, the photo gallery web app makes an HTTP request to the serverless function to generate a time-limited URL. The function is triggered by an HTTP request and uses the Azure Storage SDK to generate and return the secure URL.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Search for the function app you just created using the **Search** box. Click on the result to open it.
 
@@ -134,7 +134,7 @@ In addition to creating and editing functions, the Azure portal also provides a 
 
 1. Under **Query**, click **Add parameter** and add the following parameter:
 
-    | Name      |  Value   | 
+    | Name      |  Value   |
     | --- | --- |
     | **filename** | image1.jpg |
 
@@ -174,7 +174,7 @@ Because the function front end is hosted in Blob storage, it has a different dom
 
 1. Under **Selected HTTP methods**, select **OPTIONS**.
 
-    **GET**, **POST**, and **OPTIONS** should all be selected. CORS uses the **OPTIONS** method, which isn't selected by default for C# functions.  
+    **GET**, **POST**, and **OPTIONS** should all be selected. CORS uses the **OPTIONS** method, which isn't selected by default for C# functions.
 
 1. Click **Save**.
 

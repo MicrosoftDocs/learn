@@ -2,7 +2,7 @@ In this exercise, you will use the Azure portal to create a virtual machine scal
 
 ## Create a virtual machine scale set
 
-1. In the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true), click **Create a resource**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **Create a resource**.
 
 1. In the search box, type **scale set** and press <kbd>ENTER</kbd>. On the **Results** blade, click **Virtual machine scale set**, and on the **Virtual machine scale set** blade, click **Create**.
 
@@ -31,17 +31,17 @@ In this exercise, you will use the Azure portal to create a virtual machine scal
 
 1. Click **Resource Groups** in the left sidebar.
 
-1. Select the **<rgn>[Sandbox resource group name]</rgn>** resource group. 
+1. Select the **<rgn>[Sandbox resource group name]</rgn>** resource group.
 
 1. On the **<rgn>[Sandbox resource group name]</rgn>** blade, click the **WebServerSS** object to open the scale set.
 
 1. On the **WebServerSS** blade, under **Settings**, click **Instances**. Note the two virtual machine instances running within the scale set.
 
-1. On the **WebServerSS** blade, click **Scaling**. 
+1. On the **WebServerSS** blade, click **Scaling**.
 
 1. On the **WebServerSS - Scaling** blade, click **Enable autoscale**.
 
-1. On configuration screen, set the name to **WebAutoscaleSetting**. 
+1. On configuration screen, set the name to **WebAutoscaleSetting**.
 
 1. In the default condition, locate the **Instance limits**, set the following values.
 
@@ -89,7 +89,7 @@ In this exercise, you will use the Azure portal to create a virtual machine scal
 
 ## Generate load to demonstrate autoscaling
 
-Now you will use the SysInternals **CPUStress.exe** tool to generate load on the virtual machines in the scale set and demonstrate automatic scaling out. 
+Now you will use the SysInternals **CPUStress.exe** tool to generate load on the virtual machines in the scale set and demonstrate automatic scaling out.
 
 We will run this on our VM - you do not need to have Windows for this, however you _do_ need a Remote Desktop Client. Microsoft has one for macOS and Windows, and various distributions of Linux include a client as well.
 

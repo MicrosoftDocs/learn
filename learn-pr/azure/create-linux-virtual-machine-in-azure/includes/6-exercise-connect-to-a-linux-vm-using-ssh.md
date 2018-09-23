@@ -9,7 +9,7 @@ To connect to an Azure VM with an SSH client, you will need:
 
 ### Get the public IP address
 
-1. In the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true), ensure the **Overview** panel for the virtual machine that you created earlier is open. You can find the VM under **All Resources** if you need to open it. The overview panel has a lot of information about the VM.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** panel for the virtual machine that you created earlier is open. You can find the VM under **All Resources** if you need to open it. The overview panel has a lot of information about the VM.
 
     - You can see whether the VM is running
     - Stop or restart it
@@ -82,7 +82,7 @@ Apache is available within Ubuntu's default software repositories, so we will in
     ```bash
     sudo apt-get update
     ```
-    
+
 1. Next, install Apache:
 
     ```bash
@@ -116,7 +116,7 @@ Apache is available within Ubuntu's default software repositories, so we will in
     ```
     > [!NOTE]
     > It's trivial to execute commands like this, however it's a manual process - if we always need to install some software, you might consider automating the process using scripting.
-    
+
 1. Finally, we can try retrieving the default page through the public IP address. However, even though the web server is running on the VM, you won't get a valid connection or response. Do you know why?
 
 We need to perform one more step to be able to interact with the web server. Our virtual network is blocking the inbound request - this is the default behavior. We can change that through configuration. Let's look at that next.

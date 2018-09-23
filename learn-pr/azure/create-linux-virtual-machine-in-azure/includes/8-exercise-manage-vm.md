@@ -4,7 +4,7 @@ Let's apply a network security group to our network, so that we only allow HTTP 
 
 Azure should have created a security group for us because we indicated we wanted SSH access. But let's create a new security group, so you can walk through the entire process. This is particularly important if you decide to create your virtual network _before_ your VMs. As mentioned earlier, security groups are _optional_ and not necessarily created with the network.
 
-1. In the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true), click the **Create a resource** button in the left-corner sidebar to start a new resource creation.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click the **Create a resource** button in the left-corner sidebar to start a new resource creation.
 
 1. Type **Network security group** into the filter box and select the matching item in the list.
 
@@ -30,14 +30,14 @@ Deployment should complete quickly. When it's finished, we can add new rules to 
 
     - All incoming traffic from one VNet to another is allowed. This lets resources on the VNet talk to each other.
     - Azure Load Balancer **probe** requests to ensure the VM is alive.
-    - All other inbound traffic is denied.  
+    - All other inbound traffic is denied.
 
-    On the outbound side:  
+    On the outbound side:
     - All in-network traffic on the VNet is allowed.
     - All outbound traffic to the internet is permitted.
     - All other outbound traffic is denied.
 
-    > [!NOTE]  
+    > [!NOTE]
     > These default rules are set with high-priority values, which means that they get evaluated _last_. They cannot be changed or deleted, but you can _override_ them by creating more specific rules to match your traffic with a lower priority value.
 
 1. Click the **Inbound security rules** section in the **Settings** panel for the security group.
@@ -126,5 +126,5 @@ Let's validate the change:
 
 Security rules are tricky to get right. We made a mistake when we applied this new security group - we lost our SSH access! To fix this, you can add another rule to the security group applied to the subnet to allow SSH access. Make sure to restrict the inbound TCP/IP addresses for the rule to be the ones you own.
 
-> [!WARNING]  
+> [!WARNING]
 > Always make sure to lock down ports used for administrative access. An even better approach is to create a VPN to link the virtual network to your private network and only allow RDP or SSH requests from that address range. You can also change the port used by SSH to be something other than the default. Keep in mind that changing ports is not sufficient to stop attacks. It simply makes it a little harder to discover.

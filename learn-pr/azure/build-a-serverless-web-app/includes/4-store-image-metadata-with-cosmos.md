@@ -36,7 +36,7 @@ An Azure Cosmos DB account is an Azure resource that contains Azure Cosmos DB da
 
 The Azure Cosmos DB output binding lets you create documents in an Azure Cosmos DB collection from Azure Functions. In the following steps, you configure an Azure Cosmos DB output binding in the **ResizeImage** function and modify the function to return a document (object) to be saved.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Open the function app.
 

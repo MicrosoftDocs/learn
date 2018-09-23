@@ -7,7 +7,7 @@ Recall that our company processes video content on Windows VMs. A new city has c
 
 We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The easiest approach is the portal because it walks you through the required information and provides hints and helpful messages during the creation of the VM.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Click **Create a resource** in the upper left corner of the Azure portal.
 
@@ -27,7 +27,7 @@ We'll start with the **Basics** section.
 
 ### Configure basic VM settings
 
-> [!NOTE]  
+> [!NOTE]
 > As you change settings and tab out of each free-text field, Azure will validate each value automatically and place a green check mark next to it when it's good. You can hover over error indicators to get more information on issues it discovers.
 
 1. Select the **Subscription** that should be billed for VM hours.

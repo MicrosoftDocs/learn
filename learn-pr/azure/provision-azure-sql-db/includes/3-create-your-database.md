@@ -65,7 +65,7 @@ Here you'll set up your database, which includes creating your logical server. Y
 
 Over time if you you realize you need additional compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. From the portal, click **Create a resource** from the upper left-hand corner. Select **Databases**, then select **SQL Database**.
 

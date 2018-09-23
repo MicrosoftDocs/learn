@@ -30,8 +30,8 @@ An Azure Storage account is an Azure resource that allows you to store tables, q
         --https-only true \
         --sku Standard_LRS
     ```
-    
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Use the Search bar at the top of the portal to find the storage account that you just created. Open the account.
 
@@ -39,7 +39,7 @@ An Azure Storage account is an Azure resource that allows you to store tables, q
     - Select **Enabled** to enable a static website.
     - Enter **index.html** as the index document name. The box already has *index.html* in a gray font, but this is only example text. You still have to enter **index.html** in the box.
     - Click **Save**.
-    
+
     ![Enter static website settings](../media/1-storage-static-website.png)
 
 1. Save the **Primary Endpoint** in a place where you can conveniently copy it from while working through the module. This endpoint is the URL of your web application.
