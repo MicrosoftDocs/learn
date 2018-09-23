@@ -52,6 +52,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ROBOTS": "NOINDEX, NOFOLLOW",
       "breadcrumb_path": "/learn/breadcrumb/toc.json",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/learn",
