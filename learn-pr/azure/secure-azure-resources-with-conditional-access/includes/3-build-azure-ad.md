@@ -2,9 +2,10 @@ You decide to deploy Azure AD and use conditional access policies that Azure req
 
 ## Launch lab and sign in to the Azure portal
 
-1. Click the **Launch VM mode** link above to launch the lab.
+1. Click the **Launch Lab** link above to launch the lab.
 
-1. Sign in to the Azure portal as LabAdmin-<XXXXXXX>@triplecrownlabsoutlook.onmicrosoft.com. You can find the username and password on the Resources tab at the top of the instructions window.
+> [!NOTE]
+> After launching the lab, the username and password you need to sign in with is located on the **Resources** tab next to the instructions.
 
 ## Create a directory
 
@@ -12,14 +13,14 @@ We will create a new directory for First Up Consultants where we can test withou
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. In the left navigation pane, click **Create a resource** > **Identity** > **Azure Active Directory**.
+2. In the left navigation pane, click **Create a resource** > **Identity** > **Azure Active Directory**.
 
-1. In the **Create directory** blade, provide the following values for the **Organization name** and **Initial domain name**:
+3. In the **Create directory** blade, provide the following values for the **Organization name** and **Initial domain name**:
 
    1. Organization Name: `First Up Consultants`.
-   1. Initial Domain Name: `firstupconsultants<XXXXXXX>` where <XXXXXXX> is the number after the username on the **Resources** tab at the top of the instructions window.
+   2. Initial Domain Name: `firstupconsultants<XXXXXXX>` where <XXXXXXX> is the number after the username on the **Resources** tab at the top of the instructions window.
 
-1. Wait for the directory to be created. Click the link to switch to the new directory or click the **Directory and subscription filter** at the top of the window and then choose the newly created directory.
+4. Wait for the directory to be created. Click the link to switch to the new directory or click the **Directory and subscription filter** at the top of the window and then choose the newly created directory.
 
 ## Get trial licenses
 
