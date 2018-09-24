@@ -4,13 +4,13 @@ To see the Text Analytics API in action, let's make some calls using the built-i
 
 ## Create an access key
 
-Every call to Text Analytics API requires a subscription key. Often called an access key, it is used to validate that you have access to make the call. We'll use the Azure portal to grab a key. 
+Every call to Text Analytics API requires a subscription key. Often called an access key, it is used to validate that you have access to make the call. We'll use the Azure portal to grab a key.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Click **Create a resource**.
 
-1. In the **Search the Marketplace** search box, type in *text analytics* and hit return. 
+1. In the **Search the Marketplace** search box, type in *text analytics* and hit return.
 
 1. Select **Text Analytics** in the search results and then select the **Create** button in the bottom right of the screen.
 
@@ -23,10 +23,10 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
     |Location     |  *choose a region from the dropdown*       |  Choose a region near you from the below list. |
     |Pricing tier     | **F0 Free**     |   The cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
     |Resource group     |  Select **Use existing** and choose <rgn>[Sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
-    
+
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-    
+
 1. Select **Create** at the bottom of the page to start the account creation process. Watch for a notification that the deployment is in progress. You'll then get a notification that the account has been deployed successfully to your resource group.
 
     ![Deployment succeeded notification with a Go to resource button and a Pin to dashboard button.](../media/deploy-resource-group-success.PNG)
@@ -45,7 +45,7 @@ Now that we have our Cognitive Services account, let's find the access key so we
 
     > [!IMPORTANT]
     > Always keep your access keys safe and never share them.
-    
+
 1. Store this key for the rest of this module. We'll use it shortly to make API calls from the testing console and throughout the rest of the module.
 
 ## Call the API from the testing console

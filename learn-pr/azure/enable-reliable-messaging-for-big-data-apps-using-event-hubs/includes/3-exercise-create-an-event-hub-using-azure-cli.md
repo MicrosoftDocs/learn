@@ -40,14 +40,14 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     az eventhubs namespace create --name $NS_NAME
     ```
 
-    > [!NOTE] 
+    > [!NOTE]
     > Azure is very picky about the name and the CLI returns **Bad Request** if the name exists or is invalid. Try a different name by changing your environment variable and reissuing the command.
 
 
 1. Fetch the connection string for your Event Hubs namespace using the following command. You'll need this to configure applications to send and receive messages using your Event Hub.
 
     ```azurecli
-    az eventhubs namespace authorization-rule keys list --name RootManageSharedAccessKey --namespace-name $NS_NAME 
+    az eventhubs namespace authorization-rule keys list --name RootManageSharedAccessKey --namespace-name $NS_NAME
     ```
 
     > [!div class="mx-tableFixed"]
@@ -99,9 +99,9 @@ Use the following steps to create your new Event Hub:
 
 ## View the Event Hub in the Azure portal
 
-Next, let's see what this looks like in the Azure portal. 
+Next, let's see what this looks like in the Azure portal.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Find your Event Hubs namespace using the Search bar at the top of portal.
 

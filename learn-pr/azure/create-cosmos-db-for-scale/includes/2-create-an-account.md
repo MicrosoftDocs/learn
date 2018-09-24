@@ -6,7 +6,7 @@ The first step is to create an Azure Cosmos DB account.
 
 An Azure Cosmos DB account is an Azure resource that acts as an organizational entity for your databases. It connects your usage to your Azure subscription for billing purposes.
 
-Each Azure Cosmos DB account is associated with one of the several data models Azure Cosmos DB supports, and you can create as many accounts as you need. 
+Each Azure Cosmos DB account is associated with one of the several data models Azure Cosmos DB supports, and you can create as many accounts as you need.
 
 SQL API is the preferred data model if you are creating a new application. If you're working with graphs or tables, or migrating your MongoDB or Cassandra data to Azure, create additional accounts and select relevant data models.
 
@@ -18,23 +18,23 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
 ## Creating an Azure Cosmos DB account in the portal
 
-1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
     > [!IMPORTANT]
     > Login to the Azure portal using the link above to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
 
 1. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
-   
+
    ![The Azure portal Databases pane](../media/2-create-nosql-db-databases-json-tutorial.png)
 
 1. On the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account, including the location.
 
     [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
- 
+
     Setting|Value|Description
     ---|---|---
-    Subscription|*Concierge Subscription*|Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for Sandbox](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true).
-    Resource Group|Use existing<br><br>**<rgn>[Sandbox resource group name]</rgn>**|Here you would either create a new resource group, or select an existing one in your subscription. 
+    Subscription|*Concierge Subscription*|Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+    Resource Group|Use existing<br><br>**<rgn>[Sandbox resource group name]</rgn>**|Here you would either create a new resource group, or select an existing one in your subscription.
     Account Name|*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.
     API|SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select **SQL** because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API.|
     Location|*Select the region closest to you from the list above*|Select the location where the database should be located.
@@ -46,9 +46,9 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
     ![The new account page for Azure Cosmos DB](../media/2-azure-cosmos-db-create-new-account.png)
 
-1. After the settings are validated, click **Create** to create the account. 
+1. After the settings are validated, click **Create** to create the account.
 
-1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded and click the notification. 
+1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded and click the notification.
 
     ![Notification alert](../media/2-azure-cosmos-db-notification.png)
 

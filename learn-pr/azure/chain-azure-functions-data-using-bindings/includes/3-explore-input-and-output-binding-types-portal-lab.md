@@ -10,7 +10,7 @@ We'll create a function that will start when it receives an HTTP request and wil
 
 Let's create a function app that we'll use throughout this entire module. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
 
@@ -18,14 +18,14 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     | Property     | Suggested value  | Description  |
     |--------------|------------------|--------------|
-    | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  | 
-    | **Subscription** | Your subscription | The subscription under which this new function app is created. | 
-    | **Resource Group**|  Select **Use existing** and choose _<rgn>[Sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. | 
+    | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
+    | **Subscription** | Your subscription | The subscription under which this new function app is created. |
+    | **Resource Group**|  Select **Use existing** and choose _<rgn>[Sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
     | **Storage account** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
     | **Location** | Select from the list | Choose the nearest one from the available locations listed below. |
-    
+
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Create** to provision and deploy the function app.
@@ -42,7 +42,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     >[!TIP]
     >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings#favorite).
-    
+
 ## Create a function
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
@@ -63,7 +63,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
-1. Add the query string value `&name=Azure` to the end of this URL, and then press Enter on your keyboard to execute the request. You should see a response similar to the following response returned by the function displayed in your browser.  
+1. Add the query string value `&name=Azure` to the end of this URL, and then press Enter on your keyboard to execute the request. You should see a response similar to the following response returned by the function displayed in your browser.
 
     ```output
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">Hello Azure</string>
@@ -97,7 +97,7 @@ All of this code is in the **index.js** file in this function's folder. Let's lo
 As you can see, this function has a trigger binding named **req** of type `httpTrigger` and an output binding named **res**  of type `HTTP`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **req** parameter. Similarly, we sent an HTTP response simply by setting our **res** parameter. Bindings really do take care of some of the heavy lifting for us.
 
 >[!TIP]
->You can see the **index.js** and **function.json** files by expanding the **View Files** menu at the right of the function panel in the Azure portal.  
+>You can see the **index.js** and **function.json** files by expanding the **View Files** menu at the right of the function panel in the Azure portal.
 
 ### Explore binding types
 

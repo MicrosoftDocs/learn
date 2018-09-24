@@ -6,9 +6,9 @@ In this exercise, you will create a load balancer and a virtual network using th
 
 ## Create a public load balancer
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the sidebar, click **Create a resource**. 
+1. In the sidebar, click **Create a resource**.
 
 1. Select the **Networking** section, and then click **Load Balancer**. If you don't see that choice, you can use the search box.
 

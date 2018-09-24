@@ -2,7 +2,7 @@ The Azure portal allows you to manage and scale PostgreSQL database servers. You
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with. 
+Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 You'll see the Azure resource creation and management menu on your left and the dashboard filling the rest of the screen.
 

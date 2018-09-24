@@ -21,7 +21,7 @@ In this step, we're going to create a VM with the following properties:
 | Resource group  |   **<rgn>[Sandbox resource group name]</rgn>** |
 | Location        | See below. |
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select **Create a resource** in the sidebar menu on the left.
 
@@ -92,7 +92,7 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
     - IOPS limit - 5000
     - Throughput limit (MB/s) - 200
 
-1. Click **Create** at the bottom of the screen. 
+1. Click **Create** at the bottom of the screen.
 
     Wait until the disk has been created before continuing.
 

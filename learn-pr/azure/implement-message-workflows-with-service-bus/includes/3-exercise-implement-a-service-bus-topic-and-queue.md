@@ -17,7 +17,7 @@ Each namespace also has primary and secondary shared access signature encryption
 
 To create a Service Bus namespace by using the Azure portal, follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. In the navigation on the left, click **All services**.
 

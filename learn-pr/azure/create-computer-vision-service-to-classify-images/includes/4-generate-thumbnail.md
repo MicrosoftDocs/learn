@@ -16,7 +16,7 @@ Different parameters can be provided to the API to generate the proper thumbnail
 
 ## Generate a thumbnail
 
-We'll use the following image in this example, but you're free to try the same command with URLs to other images. 
+We'll use the following image in this example, but you're free to try the same command with URLs to other images.
 
 ![Picture of a cute white dog sitting in green grass.](../media/4-dog.png)
 
@@ -37,7 +37,7 @@ In this example, we ask the service to create a thumbnail that is 100x100. Smart
 
 ## View the generated thumbnail
 
-The generated thumbnail will be found in your Azure Cloud Shell storage account. We named the file **thumbnail.jpg**. 
+The generated thumbnail will be found in your Azure Cloud Shell storage account. We named the file **thumbnail.jpg**.
 
 The Cloud Shell in Microsoft Learn doesn't have the ability to download files, but you can follow these instructions to download the thumbnail through the Azure portal.
 
@@ -48,15 +48,15 @@ The Cloud Shell in Microsoft Learn doesn't have the ability to download files, b
     ls -l
     ```
 
-    
+
 
 1. Execute the following command to move `thumbnail.jpg` into the clouddrive folder.
 
     ```azurecli
     mv ~/thumbnail.jpg ~/clouddrive
     ```
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the **All resources** panel of the portal dashboard, select the storage account with name beginning with `cloudshell`. 
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. In the **All resources** panel of the portal dashboard, select the storage account with name beginning with `cloudshell`.
 1. In the Storage account panel, select **Storage Explorer**, then **FILE SHARES** and then the file share in that collection with the name beginning with **cloudshellfiles***.
 1. Select the *thunbnail.jpg* file and then **Download** from the top menu to see the image.
 

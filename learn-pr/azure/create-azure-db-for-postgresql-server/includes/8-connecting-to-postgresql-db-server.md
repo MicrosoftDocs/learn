@@ -14,7 +14,7 @@ You also need to disable the **Enforce SSL connection** option.
 
 ### Create a firewall rule
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with. 
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Navigate to the server resource for which you would like to create a firewall rule.
 
@@ -48,8 +48,8 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
     ```bash
     psql --host=<server-name>.postgres.database.azure.com --username=<admin-user>@<server-name> --dbname=postgres
     ```
-    
-    Use the values you chose for the `server-name`, and `admin-user`. 
+
+    Use the values you chose for the `server-name`, and `admin-user`.
 
 1. **postgres** is the default management database every PostgreSQL server is created with. You'll be prompted for the password you provided when you created the server.
 

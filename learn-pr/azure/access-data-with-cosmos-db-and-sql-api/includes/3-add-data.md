@@ -5,15 +5,15 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 ## Add data using the Data Explorer
 
-1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
     > [!IMPORTANT]
     > Login to the Azure portal and the sandbox with the same account.
-    > 
+    >
     > Login to the Azure portal using the link above to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
 
 1. Click **All services** > **Databases** > **Azure Cosmos DB**. Then select your account, click **Data Explorer**, and then click **Open Full Screen**.
- 
+
    ![Create new documents in Data Explorer in the Azure portal](../media/3-azure-cosmosdb-data-explorer-full-screen.png)
 
 2. In the **Open Full Screen** box, click **Open**.
@@ -74,4 +74,4 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
     Data Explorer displays the two documents in the **Documents** tab.
 
-In this unit, you added two documents, each representing a product in your product catalog, to your database by using the Data Explorer. The Data Explorer is a good way to create documents, modify documents, and get started with Azure Cosmos DB.  
+In this unit, you added two documents, each representing a product in your product catalog, to your database by using the Data Explorer. The Data Explorer is a good way to create documents, modify documents, and get started with Azure Cosmos DB.

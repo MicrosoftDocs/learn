@@ -4,7 +4,7 @@ In this unit, we're going to create an Azure function that accepts an HTTP reque
 
 Let's continue using our existing Azure Functions application and add an HTTP trigger.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Navigate to the **All resources** screen and select your function app.
 
