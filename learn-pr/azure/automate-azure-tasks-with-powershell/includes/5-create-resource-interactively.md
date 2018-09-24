@@ -264,7 +264,7 @@ New-AzureRmResourceGroup -Name <name> -Location <location>
 ```
 
 > [!NOTE]
-> Remember, we will be working in the Azure Sandbox which creates the Resource Group for you. The above command would be used if you work in your own subscription.
+> Remember, we will be working in the Azure sandbox which creates the Resource Group for you. The above command would be used if you work in your own subscription.
 
 ### Verify the resources
 The `Get-AzureRmResource` lists your Azure resources. This is useful here to verify whether creation of the resource group was successful.

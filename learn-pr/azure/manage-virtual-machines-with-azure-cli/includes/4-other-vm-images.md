@@ -34,7 +34,7 @@ Some images are only available in certain locations. Try adding the `--location 
 az vm image list --location eastus --output table
 ```
 
-Try checking some of the images in the other Azure Sandbox available locations:
+Try checking some of the images in the other Azure sandbox available locations:
 
 [!include[](../../../includes/azure-sandbox-regions-note.md)]
 

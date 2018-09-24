@@ -5,10 +5,10 @@ In this exercise, you will create a virtual machine and then resize it using the
 ## Create a VM with PowerShell
 
 1. Let's use the `New-AzureRmVm` cmdlet in Azure PowerShell to create a VM.
-    - Use the Resource Group **<rgn>[Sandbox resource group name]</rgn>**.
+    - Use the Resource Group **<rgn>[sandbox resource group name]</rgn>**.
     - Name it "my-test-vm".
     - Pass in _Standard_DS2_v2_ for the **Size** parameter.
-    - Select a location close to you from the following list available in the Azure Sandbox. Make sure to change the value in the below example command if you are using copy and paste.
+    - Select a location close to you from the following list available in the Azure sandbox. Make sure to change the value in the below example command if you are using copy and paste.
 
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
@@ -18,7 +18,7 @@ In this exercise, you will create a virtual machine and then resize it using the
 
     ```powershell
     New-AzureRmVm `
-        -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> `
+        -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
         -Name my-test-vm `
         -Credential (Get-Credential) `
         -Size "Standard_DS2_v2" `
@@ -32,11 +32,11 @@ In this exercise, you will create a virtual machine and then resize it using the
 
 ## Resize using the portal
 
-1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select **Resource Groups** from the left side bar.
 
-1. Select the <rgn>[Sandbox resource group name]</rgn> resource group, and in the overview, click the **my-test-vm** virtual machine object.
+1. Select the <rgn>[sandbox resource group name]</rgn> resource group, and in the overview, click the **my-test-vm** virtual machine object.
 
 1. On the **Overview** of the virtual machine, notice that the current size of the VM is _Standard DS2 v2 (2 vcpus, 7 GB memory)_ which is what we created a moment ago.
 
@@ -57,15 +57,15 @@ In this exercise, you will create a virtual machine and then resize it using the
 1. Use the following cmdlet to get the list of available virtual machine sizes.
 
     ```PowerShell
-    Get-AzureRmVMSize -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> -VMName my-test-vm
+    Get-AzureRmVMSize -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -VMName my-test-vm
     ```
 
 1. Use the following cmdlet to resize the virtual machine back to a _DS2_v2_ size.
 
     ```PowerShell
-    $vm = Get-AzureRmVM -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> -VMName my-test-vm
+    $vm = Get-AzureRmVM -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -VMName my-test-vm
     $vm.HardwareProfile.VmSize = "Standard_DS2_v2"
-    Update-AzureRmVM -VM $vm -ResourceGroupName <rgn>[Sandbox resource group name]</rgn>
+    Update-AzureRmVM -VM $vm -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
 1. Click the **Refresh** button in the **my-test-vm** blade while you are waiting for the PowerShell command to finish. You should notice that the virtual machine is restarting to accommodate the change in size.

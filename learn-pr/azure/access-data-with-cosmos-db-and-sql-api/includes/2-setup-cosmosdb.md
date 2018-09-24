@@ -8,7 +8,7 @@ The first thing we need to do is create an empty Azure Cosmos DB database and co
 
 If you've been using Azure for a while, you might have multiple subscriptions available to you. This is often the case for developers who might have a subscription for Visual Studio, and another for corporate resources.
 
-The Azure Sandbox has already selected the Concierge Subscription for you in the Cloud Shell, and you can validate the subscription setting using these steps. Or, when you are working with your own subscription, you can use the following steps to switch subscriptions with the Azure CLI.
+The Azure sandbox has already selected the Concierge Subscription for you in the Cloud Shell, and you can validate the subscription setting using these steps. Or, when you are working with your own subscription, you can use the following steps to switch subscriptions with the Azure CLI.
 
 1. Start by listing the available subscriptions.
 
@@ -37,10 +37,10 @@ The Azure Sandbox has already selected the Concierge Subscription for you in the
     export NAME="<Azure Cosmos DB account name>"
     ```
 
-1. Set the resource group to use the existing Sandbox resource group.
+1. Set the resource group to use the existing sandbox resource group.
 
     ```azurecli
-    export RESOURCE_GROUP="<rgn>[Sandbox resource group name]</rgn>"
+    export RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
     ```
 
 1. Select the region closest to you, and set the environment variable, such as `export LOCATION="EastUS"`.
@@ -62,7 +62,7 @@ The Azure Sandbox has already selected the Concierge Subscription for you in the
 When you are creating a Cosmos DB on your own subscription you will want to create a new resource group to hold all the related resources.
 
 > [!IMPORTANT]
-> If you are using the Azure Sandbox provided by Microsoft Learn, then you do not need to execute this step. Instead, make sure the `RESOURCE_GROUP` variable above is set to **<rgn>[Sandbox Resource Group Name</rgn>**.
+> If you are using the Azure sandbox provided by Microsoft Learn, then you do not need to execute this step. Instead, make sure the `RESOURCE_GROUP` variable above is set to **<rgn>[sandbox Resource Group Name</rgn>**.
 
 In your own subscription you would use the following command to create the Resource Group. 
 
@@ -75,7 +75,7 @@ az group create --name <name> --location <location>
 1. Create the Azure Cosmos DB account with the `cosmosdb create` command. The command uses the following parameters and can be run with no modifications if you set the environment variables as recommended.
     - `--name`: Unique name for the resource.
     - `--kind`: Kind of database, use _GlobalDocumentDB_.
-    - `--resource-group`: The resource group. Use **<rgn>[Sandbox Resource Group]</rgn>**. It should be assigned to the `RESOURCE_GROUP` variable.
+    - `--resource-group`: The resource group. Use **<rgn>[sandbox Resource Group]</rgn>**. It should be assigned to the `RESOURCE_GROUP` variable.
 
     ```azurecli
     az cosmosdb create --name $NAME --kind GlobalDocumentDB --resource-group $RESOURCE_GROUP

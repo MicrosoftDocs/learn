@@ -53,7 +53,7 @@ Let's repeat the test. This time, instead of using the Test window of the portal
 
 1. Navigate to your resource group in the **Resource Groups** section of the portal.
 
-1. Select <rgn>[Sandbox resource group name]</rgn>, the resource group used in this lesson.
+1. Select <rgn>[sandbox resource group name]</rgn>, the resource group used in this lesson.
 
 1. In the **Resource group** panel that appears, locate the Storage
 Account entry, and select it.

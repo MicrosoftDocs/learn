@@ -30,7 +30,7 @@ Recall that your connection string is available in the Azure portal **Settings >
 You can also retrieve it through the Azure CLI or PowerShell tools. Let's use the Azure CLI command. Remember to replace the `<name>` with the specific name of the storage account you created. You can use `az storage account list` if you need a reminder.
 
 ```azurecli
-az storage account show-connection-string --name <name> --resource-group <rgn>[Sandbox resource group name]</rgn>
+az storage account show-connection-string --name <name> --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
 This command will return a JSON block with your connection string. It will include the storage account name and the account key:

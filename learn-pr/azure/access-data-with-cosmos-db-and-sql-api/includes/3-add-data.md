@@ -5,7 +5,7 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 ## Add data using the Data Explorer
 
-1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
     > [!IMPORTANT]
     > Login to the Azure portal and the sandbox with the same account.

@@ -33,7 +33,7 @@ To create a Service Bus namespace by using the Azure portal, follow these steps:
 
 1. In the **Subscription** drop-down list, select your subscription ("Concierge subscription").
 
-1. Under **Resource group**, select **Use existing** and choose "<rgn>[Sandbox resource group name]</rgn>".
+1. Under **Resource group**, select **Use existing** and choose "<rgn>[sandbox resource group name]</rgn>".
 
 1. In the **Location** drop-down list, select a location near you from the below list.
 

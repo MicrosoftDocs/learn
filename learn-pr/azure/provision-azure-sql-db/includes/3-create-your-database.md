@@ -90,7 +90,7 @@ Over time if you you realize you need additional compute power to keep up with d
     | ------------ | ----- |
     | **Database name** | **Logistics** |
     | **Subscription** | Your subscription |
-    | **Resource group** |  Use the existing group <rgn>[Sandbox resource group name]</rgn> |
+    | **Resource group** |  Use the existing group <rgn>[sandbox resource group name]</rgn> |
     | **Select source** | **Blank database** |
     | **Want to use SQL elastic pool?** | **Not now** |
     | **Collation** | **SQL_Latin1_General_CP1_CI_AS** |

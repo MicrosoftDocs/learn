@@ -29,7 +29,7 @@ Let's add support to our .NET core application to retrieve a connection string f
 
     ```azurecli
     az storage account show-connection-string \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name <name> \
         --query connectionString
     ```
@@ -144,7 +144,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
     ```azurecli
     az storage account show-connection-string \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name <name> \
         --query connectionString
     ```

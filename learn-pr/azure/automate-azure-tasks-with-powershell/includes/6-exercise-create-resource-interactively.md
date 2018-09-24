@@ -7,14 +7,14 @@ Let's try the commands you would use to create a VM.
 
 ## Create a Linux VM with Azure PowerShell
 
-Since we are using the Azure Sandbox, you won't have to create a Resource Group. Instead, use the Resource Group **<rgn>[Sandbox resource group name]</rgn>**. In addition, be aware of the location restrictions.
+Since we are using the Azure sandbox, you won't have to create a Resource Group. Instead, use the Resource Group **<rgn>[sandbox resource group name]</rgn>**. In addition, be aware of the location restrictions.
 
 Let's create a new Azure VM with PowerShell.
 
 1. Use the `New-AzureRmVm` cmdlet to create a VM.
-    - Use the Resource Group **<rgn>[Sandbox resource group name]</rgn>**.
+    - Use the Resource Group **<rgn>[sandbox resource group name]</rgn>**.
     - Give the VM a name - typically you want to use something meaningful that identifies the purposes of the VM, location, and (if there is more than one) instance number. We'll use "testvm-eus-01" for "Test VM in East US, instance 1". Come up with your own name based on where you place the VM.
-    - Select a location close to you from the following list available in the Azure Sandbox. Make sure to change the value in the below example command if you are using copy and paste.
+    - Select a location close to you from the following list available in the Azure sandbox. Make sure to change the value in the below example command if you are using copy and paste.
 
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
@@ -23,7 +23,7 @@ Let's create a new Azure VM with PowerShell.
     - Add the `-OpenPorts` parameter and pass "22" as the port - this will let us SSH into the machine.
  
     ```powershell
-    New-AzureRmVm -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22
+    New-AzureRmVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
@@ -31,7 +31,7 @@ Let's create a new Azure VM with PowerShell.
 1. This will take a few minutes to complete. Once it does, you can query it and assign the VM object to a variable (`$vm`).
 
     ```powershell
-    $vm = Get-AzureRmVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[Sandbox resource group name]</rgn>
+    $vm = Get-AzureRmVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
     
 1. Then query the value to dump out the information about the VM:
@@ -43,8 +43,8 @@ Let's create a new Azure VM with PowerShell.
     You should see something like:
 
     ```output
-    ResourceGroupName : <rgn>[Sandbox resource group name]</rgn>
-    Id                : /subscriptions/xxxxxxxx-xxxx-aaaa-bbbb-cccccccccccc/resourceGroups/<rgn>[Sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
+    ResourceGroupName : <rgn>[sandbox resource group name]</rgn>
+    Id                : /subscriptions/xxxxxxxx-xxxx-aaaa-bbbb-cccccccccccc/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
     VmId              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
     Name              : testvm-eus-01
     Type              : Microsoft.Compute/virtualMachines

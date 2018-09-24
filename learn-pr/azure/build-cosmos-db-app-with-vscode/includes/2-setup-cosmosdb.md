@@ -31,7 +31,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
 
 1. In the text box at the top of the screen, enter a unique name for your Azure Cosmos DB account, and then press enter. The account name can contain only lowercase letters, numbers and the '-' character, and must be between 3 and 31 characters.
 
-1. Next, select **SQL (DocumentDB)** > **<rgn>[Sandbox resource group name]</rgn>**, and then select a location.
+1. Next, select **SQL (DocumentDB)** > **<rgn>[sandbox resource group name]</rgn>**, and then select a location.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 

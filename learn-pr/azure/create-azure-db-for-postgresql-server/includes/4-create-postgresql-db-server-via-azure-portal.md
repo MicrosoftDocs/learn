@@ -29,7 +29,7 @@ You'll now see the PostgreSQL server create blade, similar to the following illu
 
 1. Select a subscription. Check to be sure this field is set to the subscription that you want to use.
 
-1. You now have the option to create or reuse an existing resource group. Select **Use existing** and choose "<rgn>[Sandbox resource group name]</rgn>" from the dropdown. You'll use this group for the rest of this module.
+1. You now have the option to create or reuse an existing resource group. Select **Use existing** and choose "<rgn>[sandbox resource group name]</rgn>" from the dropdown. You'll use this group for the rest of this module.
 
 1. Select the source of your new server. For this lab, you'll leave the option set to _Blank_. Recall that you can change the option to _Back up_ if you want to restore an existing server backup.
 

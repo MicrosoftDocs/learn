@@ -2,7 +2,7 @@ Container images can be pulled from Azure Container Registry using many containe
 
 It is recommended to use an Azure service principal for authentication with Container Registry. It is also recommended to secure the Azure service principal credentials in Azure Key Vault. In this unit we'll follow the recommended approach.
 
-However, for our live practice we will use the built-in admin account that can be enabled in all Azure Container Registries. The admin account works with the free Sandbox resources.
+However, for our live practice we will use the built-in admin account that can be enabled in all Azure Container Registries. The admin account works with the free sandbox resources.
 
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
@@ -15,7 +15,7 @@ ACR_NAME=<acrName>
 
 ### Service Principal
 
-For a production application, we would want to create a service principal here. Remember **this won't work in our Sandbox environment**, but it's a best practice to follow in your own systems. For our live practice, you'll use the Admin Account instructions below.
+For a production application, we would want to create a service principal here. Remember **this won't work in our sandbox environment**, but it's a best practice to follow in your own systems. For our live practice, you'll use the Admin Account instructions below.
 
 The `az ad sp create-for-rbac` command can be used to create the service principal. The `--role` argument configures the service principal with the *reader* role, which grants it pull-only access to the registry. To grant both push and pull access, you would change the `--role` argument to *contributor*.
 
@@ -72,7 +72,7 @@ The output is similar to below. Take note of the `username` and the `value` pair
 1. Create an Azure Key Vault with the `az keyvault create` command.
 
     ```azurecli
-    az keyvault create --resource-group <rgn>[Sandbox resource group name]</rgn> --name $ACR_NAME-keyvault
+    az keyvault create --resource-group <rgn>[sandbox resource group name]</rgn> --name $ACR_NAME-keyvault
     ```
 
 1. Use the `az keyvault secret set` command to store the username for the ACR in the vault. If you were using service principals you'd use the appId for this value. Since we're using the admin account this time we'll save the username from our query above. Enter the command below, don't forget to replace `<username>`.
@@ -102,7 +102,7 @@ Execute the following `az container create` command to deploy a container instan
 
 ```azurecli
 az container create \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name acr-tasks \
     --image $ACR_NAME.azurecr.io/helloacrtasks:v1 \
     --registry-login-server $ACR_NAME.azurecr.io \
@@ -115,7 +115,7 @@ az container create \
 Get the IP address of the Azure container instance.
 
 ```azurecli
-az container show --resource-group  <rgn>[Sandbox resource group name]</rgn> --name acr-tasks --query ipAddress.ip --output table
+az container show --resource-group  <rgn>[sandbox resource group name]</rgn> --name acr-tasks --query ipAddress.ip --output table
 ```
 
 Open a browser and navigate to the IP address of the container. If everything has been configured correctly, you should see the following results:

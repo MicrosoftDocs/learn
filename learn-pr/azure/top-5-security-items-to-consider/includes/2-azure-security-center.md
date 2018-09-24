@@ -20,7 +20,7 @@ Azure Security Center provides unified security management and advanced threat p
 Given the benefits of ASC, the security team at your company has decided that it be turned on for all subscriptions at your office. You got an email this morning to turn it on for your applications - so let's look at how to do that.
 
 > [!IMPORTANT]
-> Azure Security Center is not supported in the free Azure Sandbox. You can perform these steps in your own subscription, or just follow along to understand how to activate ASC.
+> Azure Security Center is not supported in the free Azure sandbox. You can perform these steps in your own subscription, or just follow along to understand how to activate ASC.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) and select **Azure Security Center** from the left-hand menu, if you don't see it there, you can select **All services** and find **Security Center** in the security section as shown below.
 

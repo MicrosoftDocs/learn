@@ -18,7 +18,7 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
 ## Creating an Azure Cosmos DB account in the portal
 
-1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
     > [!IMPORTANT]
     > Login to the Azure portal using the link above to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
@@ -33,8 +33,8 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
     Setting|Value|Description
     ---|---|---
-    Subscription|*Concierge Subscription*|Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-    Resource Group|Use existing<br><br>**<rgn>[Sandbox resource group name]</rgn>**|Here you would either create a new resource group, or select an existing one in your subscription.
+    Subscription|*Concierge Subscription*|Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+    Resource Group|Use existing<br><br>**<rgn>[sandbox resource group name]</rgn>**|Here you would either create a new resource group, or select an existing one in your subscription.
     Account Name|*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.
     API|SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select **SQL** because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API.|
     Location|*Select the region closest to you from the list above*|Select the location where the database should be located.

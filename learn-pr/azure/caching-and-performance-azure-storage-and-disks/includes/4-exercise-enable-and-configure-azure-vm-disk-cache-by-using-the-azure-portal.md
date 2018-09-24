@@ -18,7 +18,7 @@ In this step, we're going to create a VM with the following properties:
 |-----------------|---------|
 | Image           | **Windows Server 2016 Datacenter** |
 | Name            | **fotoshareVM** |
-| Resource group  |   **<rgn>[Sandbox resource group name]</rgn>** |
+| Resource group  |   **<rgn>[sandbox resource group name]</rgn>** |
 | Location        | See below. |
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
@@ -31,7 +31,7 @@ In this step, we're going to create a VM with the following properties:
 
 1. In the **Basics** panel, verify the selected **Subscription** is _Concierge Subscription_.
 
-1. Under **Resource Group**, select **Use Existing** and choose _<rgn>[Sandbox resource group name]</rgn>_.
+1. Under **Resource Group**, select **Use Existing** and choose _<rgn>[sandbox resource group name]</rgn>_.
 
 1. In the **Virtual machine name** box, enter _fotoshareVM_.
 
@@ -83,7 +83,7 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 1. In the **Create managed disk** pane, in the **Name** box, type **fotosharesVM-data**.
 
-1. Under **Resource Group**, select **Use existing**, and select _<rgn>[Sandbox resource group name]</rgn>_.
+1. Under **Resource Group**, select **Use existing**, and select _<rgn>[sandbox resource group name]</rgn>_.
 
 1. Note the defaults for the remaining fields:
     - Premium SSD

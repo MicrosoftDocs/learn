@@ -22,7 +22,7 @@ We're going to use a template Microsoft has published on Github to create a new 
 
 1. In the settings view, enter the following information:
     - Select _Concierge Subscription_ for the **Subscription**.
-    - Select your Resource Group, created in the Sandbox.
+    - Select your Resource Group, created in the sandbox.
     - Select the location you created the VM in.
     - Enter "fmdata-vm01" for the **VM Name**.
     - Leave the **Volume Type** as _All_.

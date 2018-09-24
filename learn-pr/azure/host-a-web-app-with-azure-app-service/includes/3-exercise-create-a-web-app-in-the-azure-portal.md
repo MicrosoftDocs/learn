@@ -24,7 +24,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ## Use the sandbox resource group
 
-An Azure web app must be part of a resource group. Select **Use existing** and choose <rgn>[Sandbox resource group name]</rgn>.
+An Azure web app must be part of a resource group. Select **Use existing** and choose <rgn>[sandbox resource group name]</rgn>.
 
 ## Create an App Service plan
 

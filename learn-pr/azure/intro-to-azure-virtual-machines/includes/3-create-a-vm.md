@@ -49,7 +49,7 @@ We need to configure the basic parameters of our WordPress virtual machine. If s
 
 1. Use the following values on the **Basics** tab.
     - The subscription should be set to _Concierge Subscription_.
-    - Select **Use existing** for the region, and then select <rgn>[Sandbox resource group name]</rgn> from the drop-down.
+    - Select **Use existing** for the region, and then select <rgn>[sandbox resource group name]</rgn> from the drop-down.
     - Enter a **Name** for the VM. Use _test-wp1-eus-vm_.
     - Select a **Region** close to you from the following list.
         [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]

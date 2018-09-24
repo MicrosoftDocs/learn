@@ -11,13 +11,13 @@ In Azure Cloud Shell, run the following:
 ```azurecli
 az appservice plan create \
     --name keyvault-exercise-plan \
-    --resource-group <rgn>[Sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn>
     --location eastus
 
 az webapp create \
     --name <your-unique-app-name> \
     --plan keyvault-exercise-plan \
-    --resource-group <rgn>[Sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
 ## Add configuration to the app
@@ -27,7 +27,7 @@ For deploying to Azure, we'll follow the App Service best practice of putting th
 ```azurecli
 az webapp config appsettings set \
     --name <your-unique-app-name> \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --settings VaultName=<your-unique-vault-name>
 ```
 
@@ -38,7 +38,7 @@ Enabling managed identity on an app is a one-liner &mdash; run this to enable it
 ```azurecli
 az webapp identity assign \
     --name <your-unique-app-name> \
-    --resource-group <rgn>[Sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
 From the JSON output that results, copy the **principalId** value. PrincipalId is the unique ID of the app's new identity in Azure Active Directory, and we're going to use it in the next step.
@@ -68,7 +68,7 @@ zip -j site.zip pub/*
 az webapp deployment source config-zip \
     --src site.zip \
     --name <your-unique-app-name> \
-    --resource-group <rgn>[Sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
 Once you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. You should see the secret value, **reindeer_flotilla**.

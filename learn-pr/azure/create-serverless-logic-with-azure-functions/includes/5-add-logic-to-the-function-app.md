@@ -14,7 +14,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Select the resource group from the first exercise by choosing **All resources** in the left-hand menu, and then selecting "**<rgn>[Sandbox resource group name]</rgn>**".
+1. Select the resource group from the first exercise by choosing **All resources** in the left-hand menu, and then selecting "**<rgn>[sandbox resource group name]</rgn>**".
 
 1. The resources for the group will then be displayed. Click the name of the function app that you created in the previous exercise by selecting the **escalator-functions-xxxxxxx** item (also indicated by the lightning bolt Function icon).
 
@@ -84,7 +84,7 @@ This configuration declares that the function runs when it receives an HTTP requ
 ## Test the function
 
 > [!TIP]
-> **cURL** is a command line tool that can be used to send or receive files. It's included with Linux, macOS, and Windows 10, and can be downloaded for most other operating systems. cURL supports numerous protocols like HTTP, HTTPS, FTP, FTPS, SFTP, LDAP, TELNET, SMTP, POP3, etc. For more information, please refer to the links below:
+> **cURL** is a command line tool that can be used to send or receive files. It's included with Linux, macOS, and Windows 10, and can be downloaded for most other operating systems. cURL supports numerous protocols like HTTP, HTTPS, FTP, FTPS, SFTP, LDAP, TELNET, SMTP, POP3, etc. For more information, refer to the links below:
 >
 >- <https://en.wikipedia.org/wiki/CURL>
 >- <https://curl.haxx.se/docs/>

@@ -38,7 +38,7 @@ Here you'll use the Custom Script Extension to configure IIS remotely on your VM
 
     ```azurecli
     az vm extension set \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --vm-name myVM \
       --name CustomScriptExtension \
       --publisher Microsoft.Compute \
@@ -55,7 +55,7 @@ Here you'll use the Custom Script Extension to configure IIS remotely on your VM
     ```azurecli
     az vm open-port \
       --name myVM \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --port 80
     ```
 
@@ -68,7 +68,7 @@ Now that IIS is set up, let's verify that it's running.
     ```azurecli
     az vm list-ip-addresses \
       --name myVM \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" \
       --output tsv
     ```
@@ -110,7 +110,7 @@ Here you'll use the Custom Script Extension to configure Nginx remotely on your 
 
     ```azurecli
     az vm extension set \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --vm-name myVM \
       --name customScript \
       --publisher Microsoft.Azure.Extensions \
@@ -127,7 +127,7 @@ Here you'll use the Custom Script Extension to configure Nginx remotely on your 
     ```azurecli
     az vm open-port \
       --name myVM \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --port 80
     ```
 
@@ -140,7 +140,7 @@ Now that Nginx is set up, let's verify that it's running.
     ```azurecli
     az vm list-ip-addresses \
       --name myVM \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" \
       --output tsv
     ```

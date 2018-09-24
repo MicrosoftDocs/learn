@@ -12,7 +12,7 @@
     | ------------ |  ------- | -------------------------------------------------- |
     | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
     | **Subscription** | **Concierge Subscription** | The subscription under which this new function app is created. |
-    | **Resource group**|  **<rgn>[Sandbox resource group name]</rgn>** | Name for the resource group in which to create your function app.<br/><br/>Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. |
+    | **Resource group**|  **<rgn>[sandbox resource group name]</rgn>** | Name for the resource group in which to create your function app.<br/><br/>Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. |
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this [serverless](https://azure.microsoft.com/overview/serverless-computing/) hosting, you only pay for the time your functions run.   |
     | **Location** | Select the same location you used earlier. | Choose a region near you or near other services your functions access.<br/><br/>Select the same region that you used when creating the Text Analytics API account in the last exercise. |

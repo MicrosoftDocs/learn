@@ -92,7 +92,7 @@ We need an API access key to make calls to the Computer Vision API. To get acces
 
 | Parameter | Description |
 |-----------|-------------|
-| `resource-group` | The resource group that will own the cognitive services account. In this interactive sandbox session, you'll use <rgn>[Sandbox resource group name]</rgn> |
+| `resource-group` | The resource group that will own the cognitive services account. In this interactive sandbox session, you'll use <rgn>[sandbox resource group name]</rgn> |
 | `kind` | The API name of cognitive services account. |
 | `name` | Cognitive service account name. |
 | `sku` | The Sku of cognitive services account.|
@@ -107,14 +107,14 @@ az cognitiveservices account create \
 --kind ComputerVision \
 --name ComputerVisionService \
 --sku S1 \
---resource-group <rgn>[Sandbox resource group name]</rgn> \
+--resource-group <rgn>[sandbox resource group name]</rgn> \
 --location [location]
 ```
 
 > [!NOTE]
 > Remember the location you have selected. You'll make all calls to the API from that region.
 
-We've created a cognitive services account for the **ComputerVision** API. We selected the *S1* sku and named our account **ComputerVisionService**. Our account is owned by the resource group **<rgn>[Sandbox resource group name]</rgn>** and we'll call the API from the location we set in the `--location` parameter. 
+We've created a cognitive services account for the **ComputerVision** API. We selected the *S1* sku and named our account **ComputerVisionService**. Our account is owned by the resource group **<rgn>[sandbox resource group name]</rgn>** and we'll call the API from the location we set in the `--location` parameter. 
 
 Once the command finishes creating the cognitive services account, you'll get a JSON response, which includes **provisioningState** property set to **Succeeded**.
 
@@ -127,7 +127,7 @@ Once we have our account successfully created we can retrieve the subscription k
     ```azurecli
     az cognitiveservices account keys list \
     --name ComputerVisionService \
-    --resource-group <rgn>[Sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
     
     The above command returns the keys associated with the cognitive services account called **ComputerVisionService**, which is owned by the given resource group. It returns two keys - one is a spare key. The keys are difficult to remember, so we'll store the first key in a variable that we'll use for all calls to the API.
@@ -137,7 +137,7 @@ Once we have our account successfully created we can retrieve the subscription k
     ```azurecli
     key=$(az cognitiveservices account keys list \
     --name ComputerVisionService \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query key1 -o tsv)
     ```
     

@@ -8,20 +8,20 @@ In this unit, you will be creating a new Ubuntu Linux virtual machine hosted on 
 
 ### Creating a resource group
 
-Normally, the first thing you'll do when creating a new set of resources is create a _resource group_ to own them all. This is an unnecessary step in the Azure Sandbox, but when you are working in your own subscription use the following command to create a resource group in a location near you.
+Normally, the first thing you'll do when creating a new set of resources is create a _resource group_ to own them all. This is an unnecessary step in the Azure sandbox, but when you are working in your own subscription use the following command to create a resource group in a location near you.
 
 ```azurecli
 az group create --name <resource-group-name> --location <resource-group-location>
 ```
 
 > [!IMPORTANT]
-> You do not need to create a resource group with the Azure Sandbox. Instead use the pre-created resource group named **<rgn>[Sandbox Resource Group]</rgn>**.
+> You do not need to create a resource group with the Azure sandbox. Instead use the pre-created resource group named **<rgn>[sandbox Resource Group]</rgn>**.
 
 1. In the Cloud Shell on the right, type the following command to create a new Ubuntu Linux VM. Substitute your preferred admin username and password for `<vm-admin-username>` and `<vm-admin-password>`.
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name MeanDemo \
         --image UbuntuLTS \
         --admin-username <vm-admin-username> \
@@ -42,7 +42,7 @@ az group create --name <resource-group-name> --location <resource-group-location
         "powerState": "VM running",
         "privateIpAddress": "10.0.0.4",
         "publicIpAddress": "<the public IP address of the newly created machine>",
-        "resourceGroup": "<rgn>[Sandbox resource group name]</rgn>",
+        "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
         "zones": ""
     }
     ```
@@ -64,7 +64,7 @@ az group create --name <resource-group-name> --location <resource-group-location
 1. Open port 80 on the VM to allow incoming HTTP traffic to the new web application that you will create.
 
     ```azurecli
-    az vm open-port --port 80 --resource-group <rgn>[Sandbox resource group name]</rgn> --name MeanDemo
+    az vm open-port --port 80 --resource-group <rgn>[sandbox resource group name]</rgn> --name MeanDemo
     ```
 
     This command will open up the HTTP port on your VM that was named "MeanDemo" when it was created.

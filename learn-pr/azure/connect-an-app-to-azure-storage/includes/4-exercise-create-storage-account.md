@@ -8,7 +8,7 @@ We will use the `az storage account create` command to create a new storage acco
 > | Option | Description |
 > |--------|-------------|
 > | `--name` | A **Storage account name**. The name will be used to generate the public URL used to access the data in the account. It must be unique across all existing storage account names in Azure. It must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
-> | `--resource-group` | Use **<rgn>[Sandbox resource group name]</rgn>** to place the storage account into the free sandbox. |
+> | `--resource-group` | Use **<rgn>[sandbox resource group name]</rgn>** to place the storage account into the free sandbox. |
 > | `--location` | Select a location near you (see below). |
 > | `--kind` | This determines the storage account _type_. Options include `BlobStorage`, `Storage`, and `StorageV2`. |
 > | `--sku` | This decides the storage account performance and replication model. Options include `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, and `Standard_ZRS`. |
@@ -16,7 +16,7 @@ We will use the `az storage account create` command to create a new storage acco
     
 Use the above table to craft a command line in the Cloud Shell on the right to create the account.
 - Use a unique name. We recommend something like "photostore" with your initials and a random number. You will get an error if it's not unique.
-- Normally you would create a new resource group to hold your app resources, but in this case, use the Sandbox resource group "**<rgn>[Sandbox resource group name]</rgn>**".
+- Normally you would create a new resource group to hold your app resources, but in this case, use the sandbox resource group "**<rgn>[sandbox resource group name]</rgn>**".
 - Use "Standard_LRS" for the **sku**. This will use standard storage with local replication, which is fine for this example.
 - Use "Cool" for the **Access Tier**.
 
@@ -29,7 +29,7 @@ Use the above table to craft a command line in the Cloud Shell on the right to c
 ```azurecli
 az storage account create \
         --name <name> \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --location <region> \
         --kind StorageV2 \
         --sku Standard_LRS \

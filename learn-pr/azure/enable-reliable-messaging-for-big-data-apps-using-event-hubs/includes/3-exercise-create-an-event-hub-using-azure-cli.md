@@ -11,7 +11,7 @@ Let's start by providing some default values for the Azure CLI in the Cloud Shel
 Then type the following command into the Azure CLI, make sure to replace the location with one close to you.
 
 ```azurecli
-az configure --defaults group=<rgn>[Sandbox Resource Group]</rgn> location=westus2
+az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2
 ```
 
 ## Create an Event Hubs namespace
@@ -24,7 +24,7 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     > |Parameter      |Description|
     > |---------------|-----------|
     > |--name (required)      |Enter a 6-50 characters-long unique name for your Event Hubs namespace. The name should contain only letters, numbers, and hyphens. It should start with a letter and end with a letter or number.|
-    > |--resource-group (required) | This will be the pre-created Azure Sandbox resource group supplied from the defaults. |
+    > |--resource-group (required) | This will be the pre-created Azure sandbox resource group supplied from the defaults. |
     > |--l (optional)     |Enter the location of your nearest Azure datacenter, this will use your default.|
     > |--sku (optional) | The pricing tier for the namespace [Basic | Standard], defaults to _Standard_. This determines the connections and consumer thresholds. |
 
@@ -53,7 +53,7 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
     > |---------------|-----------|
-    > |--resource-group (required)  | This will be the pre-created Azure Sandbox resource group supplied from the defaults. |
+    > |--resource-group (required)  | This will be the pre-created Azure sandbox resource group supplied from the defaults. |
     > |--namespace-name (required)  | Enter the name of the namespace you created. |
 
     This command returns a JSON block with the connection string for your Event Hubs namespace that you'll use later to configure your publisher and consumer applications. Save the value of the following keys for later use.

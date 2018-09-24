@@ -5,12 +5,12 @@ In this unit, you will create an Azure container registry using the Azure CLI.
  
 ## Create an Azure container registry
 
-We'll be working in a free Sandbox, so there's no need to create your own Resource Group. Create an Azure container registry with the `az acr create` command. The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters. Replace `<acrName>` with a unique name for your registry.
+We'll be working in a free sandbox, so there's no need to create your own Resource Group. Create an Azure container registry with the `az acr create` command. The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters. Replace `<acrName>` with a unique name for your registry.
 
 In this example, a premium registry SKU is deployed. The premium SKU is required for geo-replication. Enter the following command into the cloud shell editor.
 
 ```azurecli
-az acr create --resource-group <rgn>[Sandbox resource group name]</rgn> --name <acrName> --sku Premium
+az acr create --resource-group <rgn>[sandbox resource group name]</rgn> --name <acrName> --sku Premium
 ```
 
 Here's an example output for a new Azure container registry:

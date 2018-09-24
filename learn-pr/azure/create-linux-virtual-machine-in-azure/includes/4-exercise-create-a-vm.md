@@ -26,7 +26,7 @@ We'll start with the **Basics** section.
 
 1. For **Subscription**, the sandbox subscription should be selected for you by default.
 
-1. For **Resource group**, the resource group with the name **<rgn>[Sandbox resource group name]</rgn>** should be selected for you by default.
+1. For **Resource group**, the resource group with the name **<rgn>[sandbox resource group name]</rgn>** should be selected for you by default.
 
 1. In the **INSTANCE DETAILS** section, enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**).
     - It's a best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes.

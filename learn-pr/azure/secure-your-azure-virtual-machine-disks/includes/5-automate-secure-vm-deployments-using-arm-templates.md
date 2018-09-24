@@ -6,7 +6,7 @@ Here, we'll look at how to use an Azure Resource Manager template to automatical
 
 Resource Manager templates are JSON files used to define a set of resources to deploy to Azure. You can write them from scratch, and for some Azure resources, including VMs, you can use the Azure portal to generate them. You'll need to complete the required information for a manual VM deployment, but instead of deploying the VM to Azure, you save the template. You can then _reuse_ the template to create that specific VM configuration.
 
-There are [example templates available in docs](https://azure.microsoft.com/en-us/resources/templates) to automate all sorts of administrative tasks. In fact, we could have used one of these templates to encrypt our VM that we just did manually!
+There are [example templates available in docs](https://azure.microsoft.com/resources/templates) to automate all sorts of administrative tasks. In fact, we could have used one of these templates to encrypt our VM that we just did manually!
 
 ![Screenshot showing the Azure templates](../media/5-browse-templates.png)
 

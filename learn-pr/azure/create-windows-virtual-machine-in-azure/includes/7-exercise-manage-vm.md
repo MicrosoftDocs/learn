@@ -15,7 +15,7 @@ Azure should have created a security group for us because we indicated we wanted
 
 1. Provide a **Name** for your security group. Again, naming conventions are a good idea here, let's use "test-vp-nsg2" for "Test Video Processor Network Security Group #2".
 
-1. Select the proper **Subscription** and use your existing **Resource group**, "<rgn>[Sandbox resource group name]</rgn>".
+1. Select the proper **Subscription** and use your existing **Resource group**, "<rgn>[sandbox resource group name]</rgn>".
 
 1. Finally, put it into the same **Location** as the VM / Virtual Network. This is important - you won't be able to apply this resource if it's in a different location.
 

@@ -10,7 +10,7 @@ In this exercise, you will use the Azure portal to create a virtual machine scal
     - Use _WebServerSS_ for the **Name**.
     - Leave _Windows Server 2016 Datacenter_ for the **Operating system disk image**.
     - Use _Concierge Subscription_ for the **Subscription**.
-    - Select **<rgn>[Sandbox resource group name]</rgn>** for the **Resource group**.
+    - Select **<rgn>[sandbox resource group name]</rgn>** for the **Resource group**.
     - Pick a location from the following list:
         [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
 
@@ -31,9 +31,9 @@ In this exercise, you will use the Azure portal to create a virtual machine scal
 
 1. Click **Resource Groups** in the left sidebar.
 
-1. Select the **<rgn>[Sandbox resource group name]</rgn>** resource group.
+1. Select the **<rgn>[sandbox resource group name]</rgn>** resource group.
 
-1. On the **<rgn>[Sandbox resource group name]</rgn>** blade, click the **WebServerSS** object to open the scale set.
+1. On the **<rgn>[sandbox resource group name]</rgn>** blade, click the **WebServerSS** object to open the scale set.
 
 1. On the **WebServerSS** blade, under **Settings**, click **Instances**. Note the two virtual machine instances running within the scale set.
 
@@ -93,7 +93,7 @@ Now you will use the SysInternals **CPUStress.exe** tool to generate load on the
 
 We will run this on our VM - you do not need to have Windows for this, however you _do_ need a Remote Desktop Client. Microsoft has one for macOS and Windows, and various distributions of Linux include a client as well.
 
-1. To determine the public IP address to connect to, browse to the **<rgn>[Sandbox resource group name]</rgn>** resource group. On the **<rgn>[Sandbox resource group name]</rgn>** blade, click the **WebServerSSlb** object.
+1. To determine the public IP address to connect to, browse to the **<rgn>[sandbox resource group name]</rgn>** resource group. On the **<rgn>[sandbox resource group name]</rgn>** blade, click the **WebServerSSlb** object.
 
 1. On the **WebServerSSlb** blade, click **Frontend IP configuration** and make a note of the public IP address shown. Close the **LoadBalancerFrontEnd** blade.
 
@@ -119,6 +119,6 @@ We will run this on our VM - you do not need to have Windows for this, however y
 
 1. **Repeat** the installation and launch of **CPUSTRES** on the other virtual machine in the scale set, and then wait for five minutes.
 
-1. In the Azure portal, browse to the **<rgn>[Sandbox resource group name]</rgn>** resource group. On the **<rgn>[Sandbox resource group name]</rgn>** blade, click the **WebServerSS** object. On the **WebServerSS** blade, click **Instances**. Note how many virtual machine instances are displayed within the scale set and the status.
+1. In the Azure portal, browse to the **<rgn>[sandbox resource group name]</rgn>** resource group. On the **<rgn>[sandbox resource group name]</rgn>** blade, click the **WebServerSS** object. On the **WebServerSS** blade, click **Instances**. Note how many virtual machine instances are displayed within the scale set and the status.
 
 Here, you created a virtual machine scale set with two virtual machines. You then created rules to automatically scale out and scale in the scale set, and you added the rules to an autoscale profile.

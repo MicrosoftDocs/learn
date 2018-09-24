@@ -20,7 +20,7 @@ Let's create a function app that we'll use throughout this entire module. A func
     |--------------|------------------|--------------|
     | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
     | **Subscription** | Your subscription | The subscription under which this new function app is created. |
-    | **Resource Group**|  Select **Use existing** and choose _<rgn>[Sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
+    | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
     | **Storage account** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |

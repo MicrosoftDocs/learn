@@ -65,7 +65,7 @@ A device template defines the behavior and capabilities of a device or in this c
     ![Create a device template](../media/2-device-template-a.png)
 
 ## Define state measurement for brewing/not brewing and cup detected/cup not detected
-Add the following states in the **Measurements** page by choosing **+ New Measurement**. Then choose **State** as the measurement type:
+Add the following states in the **Measurements** page by choosing **Edit Template**, and then choosing **+ New Measurement**. Then choose **State** as the measurement type:
 
 On the **State** > **Brewing** page, you add the value as true. Add the other value as false with the optional display name as Not Brewing by clicking **+** next to **Values**. Make sure to select **Save** to save your edits.
 

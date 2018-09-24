@@ -5,6 +5,6 @@ If you haven't done so already, run the following command in Azure Cloud Shell t
 ```azurecli
 key=$(az cognitiveservices account keys list \
 --name ComputerVisionService \
---resource-group <rgn>[Sandbox resource group name]</rgn> \
+--resource-group <rgn>[sandbox resource group name]</rgn> \
 --query key1 -o tsv)
 ```

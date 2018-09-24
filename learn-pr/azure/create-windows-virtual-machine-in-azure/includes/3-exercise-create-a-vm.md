@@ -32,7 +32,7 @@ We'll start with the **Basics** section.
 
 1. Select the **Subscription** that should be billed for VM hours.
 
-1. For **Resource group**, choose "**<rgn>[Sandbox resource group name]</rgn>**".
+1. For **Resource group**, choose "**<rgn>[sandbox resource group name]</rgn>**".
 
 1. In the **INSTANCE DETAILS** section, enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2).
     - It's best practice to standardize your resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
