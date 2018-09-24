@@ -51,7 +51,7 @@ With this method you can invoke the procedure from your code safely, passing it 
 
 Any output you present either visually or within a document should always be encoded and escaped. This can protect you in case something was missed in the sanitization pass, or the code accidentally generates something that can be used maliciously. This will make sure that everything is displayed as _output_ and not inadvertently interpreted as something that should be executed. This is another very common attack technique referred to as "Cross-Site Scripting" (XSS).
 
-Since this is such as common requirement, this is another area where ASP.NET will do the work for you. By default, [all output is already encoded](https://docs.microsoft.com/aspnet/core/security/cross-site-scripting?view=aspnetcore-2.1). If you are using another web framework, you can verify your options for output encoding on websites with the [OWASP XSS Prevention Cheatsheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet).
+Since this is such as common requirement, this is another area where ASP.NET will do the work for you. By default, all output is already encoded. If you are using another web framework, you can verify your options for output encoding on websites with the [OWASP XSS Prevention Cheatsheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet).
 
 ## Summary
 
