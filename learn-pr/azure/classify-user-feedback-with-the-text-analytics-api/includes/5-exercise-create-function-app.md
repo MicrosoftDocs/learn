@@ -1,8 +1,8 @@
- A function app provides a context for managing and executing your functions. Let's create a function app and then add a function to it. 
+ A function app provides a context for managing and executing your functions. Let's create a function app and then add a function to it.
 
 ## Create a Function App to host our function
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, and then select **Compute** > **Function App**.
 
@@ -10,9 +10,9 @@
 
     | Setting      | Value  | Description                                        |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  | 
-    | **Subscription** | **Concierge Subscription** | The subscription under which this new function app is created. | 
-    | **Resource group**|  **<rgn>[Sandbox resource group name]</rgn>** | Name for the resource group in which to create your function app.<br/><br/>Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. | 
+    | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
+    | **Subscription** | **Concierge Subscription** | The subscription under which this new function app is created. |
+    | **Resource group**|  **<rgn>[Sandbox resource group name]</rgn>** | Name for the resource group in which to create your function app.<br/><br/>Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. |
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this [serverless](https://azure.microsoft.com/overview/serverless-computing/) hosting, you only pay for the time your functions run.   |
     | **Location** | Select the same location you used earlier. | Choose a region near you or near other services your functions access.<br/><br/>Select the same region that you used when creating the Text Analytics API account in the last exercise. |
@@ -24,7 +24,7 @@
 
 1. Deployment can take some time. So, stay in the notification hub and  watch for a **Deployment succeeded** message.
 
-1. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it. Select the function app in the list, to open it. 
+1. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it. Select the function app in the list, to open it.
 
     Congratulations! You've created and deployed your function app.
 
@@ -67,7 +67,7 @@ Let's test what we have so far. We haven't written any code yet, so this test is
 1. Observe the **Logs** tab that opens at the bottom of the screen. If everything works as planned, you'll see a message similar to the following message.
     ![Screenshot of response message of a successful call to our function.](../media/func-default-run.PNG)
 
-    The **Run** button started our function and passed *sample queue data*, the default text from the **Test** request window to our function.    
+    The **Run** button started our function and passed *sample queue data*, the default text from the **Test** request window to our function.
 
 Nice work! You've successfully added a Queue-triggered function to your function app and tested to make sure it's working as expected! We'll add more functionality to the function in the next exercise.
 

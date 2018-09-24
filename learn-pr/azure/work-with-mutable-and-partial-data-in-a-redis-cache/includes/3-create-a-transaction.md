@@ -180,7 +180,7 @@ Finally, we're going to add data into your Azure Redis Cache.
 
 To finish off, let's verify that the data we added is in our Azure Redis Cache.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Locate your Azure Redis Cache by selecting **All Resources** in the left-hand sidebar, and using the filter box on the left to select Azure Redis Cache instances. Alternatively, you can use the search box at the top, and type the name of the cache.
 

@@ -6,7 +6,7 @@ We'll start by defining our backend pool in the load balancer. This determines w
 
 ## Create a backend address pool
 
-1. In the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true), in the left menu, Select **All resources**. Then, in the resource list, select your load balancer (**woodgrove-LB**).
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, Select **All resources**. Then, in the resource list, select your load balancer (**woodgrove-LB**).
 
 1. Select **Settings** > **Backend pools**. Notice we don't have any defined yet.
 

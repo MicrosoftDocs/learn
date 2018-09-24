@@ -4,7 +4,7 @@ In this unit, you will use the Azure portal to create a web app.
 
 ## Create a web app
 
-Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Click the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
 

@@ -7,7 +7,7 @@ Azure should have created a security group for us because we indicated we wanted
 > [!NOTE]
 > Since this is _supposed_ to be the second VM, we would already have a security group to apply to our network, but let's pretend for a moment that we don't, or that the rules are different for this VM.
 
-1. In the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true), click the **Create a resource** button in the left corner sidebar to start a new resource creation.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click the **Create a resource** button in the left corner sidebar to start a new resource creation.
 
 1. Type "Network security group" into the filter box and select the matching item in the list.
 
@@ -34,7 +34,7 @@ Deployment should complete quickly.
     - All inbound traffic from one VNet to another is allowed. This lets resources on the VNet talk to each other.
     - Azure Load balancer "probe" requests to ensure the VM is alive
     - All other inbound traffic is denied.
-    
+
     On the outbound side:
     - All in-network traffic on the VNet is allowed.
     - All outbound traffic to the Internet is allowed.

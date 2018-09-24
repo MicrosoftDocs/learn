@@ -6,7 +6,7 @@ In this unit, we create an Azure function app that's invoked every 20 seconds us
 
 Let’s start by creating an Azure Function app in the portal.
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the left navigation, select **Create a resource**.
 
@@ -32,7 +32,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Create a new **Storage** account, you can change the name if you like - it will default to a variation of the App name.
 
-1. Select **Create**. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it. 
+1. Select **Create**. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it.
 
 ## Create a timer trigger
 

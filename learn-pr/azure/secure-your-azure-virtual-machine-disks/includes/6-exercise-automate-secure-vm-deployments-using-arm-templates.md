@@ -4,7 +4,7 @@ In this unit, you'll use an Azure Resource Manager template to decrypt our Windo
 
 We're going to use a template Microsoft has published on Github to create a new VM with encryption turned on by default.
 
-1. Sign into the [Azure Portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) with the same account you activated the sandbox with.
+1. Sign into the [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you activated the sandbox with.
 
 1. Click **Create a Resource** in the left sidebar.
 

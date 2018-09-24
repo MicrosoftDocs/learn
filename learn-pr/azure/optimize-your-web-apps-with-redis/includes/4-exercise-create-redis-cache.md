@@ -5,7 +5,7 @@ Let's create an Azure Redis Cache instance to store and return commonly used val
 
 ## Create a Redis cache in Azure
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Click **Create a resource**, click **Databases**, and click **Redis Cache**.
 
@@ -24,9 +24,9 @@ Apply the following settings on the cache.
 1. **Resource group:** Select <rgn>[Sandbox resource group name]</rgn> for the Resource Group.
 
 1. **Location:** Normally, you would select a location near your customers - in this case, the East Coast. However, the Azure Sandbox only allows specific regions to be selected for resources. Please select one of the following locations.
-    
+
     [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
-        
+
 5. **Pricing tier:** Select **Basic C0**. This is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering which would require a higher tier selection.
 
 1. Click **Create**. Azure will create and deploy the Redis Cache instance for you.
@@ -49,32 +49,32 @@ You can use the **Console** feature in the Azure portal to issue commands to you
     ```console
     ping
     ```
-    
+
     ```output
     PONG
     ```
-    
+
     ```console
     set test one
     ```
-    
+
     ```output
     OK
     ```
-    
+
     ```console
     get test
     ```
-    
+
     ```output
     "one"
     ```
-    
+
 Switch back to the **Overview** panel either through the breadcrumb bar on the top, or use the scrollbar to slide the view back to the left.
 
 ## Retrieve the access keys and host name
 
-1. Select **Settings** > **Access keys**. 
+1. Select **Settings** > **Access keys**.
 
 1. Copy the **Primary connection string (StackExchange.Redis)** to a safe place, you will need it for the next exercise.
 

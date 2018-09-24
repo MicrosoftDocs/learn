@@ -15,7 +15,7 @@ In this exercise, you will create a virtual machine and then resize it using the
     - Use the `Get-Credential` cmdlet and feed the results into the `Credential` parameter as shown below.
 
        When prompted to enter credentials, use LocalAdmin as the user name and Adm1nPa$$word as the password.
- 
+
     ```powershell
     New-AzureRmVm `
         -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> `
@@ -32,7 +32,7 @@ In this exercise, you will create a virtual machine and then resize it using the
 
 ## Resize using the portal
 
-1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select **Resource Groups** from the left side bar.
 
@@ -40,12 +40,12 @@ In this exercise, you will create a virtual machine and then resize it using the
 
 1. On the **Overview** of the virtual machine, notice that the current size of the VM is _Standard DS2 v2 (2 vcpus, 7 GB memory)_ which is what we created a moment ago.
 
-1. In the **Settings** section, select **Size**. 
+1. In the **Settings** section, select **Size**.
 
 1. On the **Choose a size** blade, try to find the **F2s_v2** size. You will not see it in the list of available sizes because the VM is currently running and that size is from a different family. In some cases, you will need to stop the VM in order to see all available VM sizes.
 
 1. Let's choose a size that is currently available while this VM is running. While still on the **Choose a size** blade, select _DS3_v2 Standard_ and then click **Select**. Notice the notification about resizing the virtual machine.
-    
+
 1. On the **Overview** panel, confirm that the VM has been resized to _Standard DS3 v2 (4 vcpus, 14 GB memory)_.
 
 ## Resize using PowerShell

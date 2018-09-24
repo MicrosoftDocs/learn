@@ -22,7 +22,7 @@ Let's add code to retrieve the connection string from configuration and use it t
     - If it fails, output a message to the console and return from the method.
 
     ```csharp
-    if (!CloudStorageAccount.TryParse(connectionString, 
+    if (!CloudStorageAccount.TryParse(connectionString,
             out CloudStorageAccount storageAccount))
     {
         Console.WriteLine("Unable to parse connection string");
@@ -121,7 +121,7 @@ Support for `async` and `await` on `Main` methods was added to C# 7.1. This migh
     <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <LangVersion>7.1</LangVersion> 
+        <LangVersion>7.1</LangVersion>
         <TargetFramework>netcoreapp2.0</TargetFramework>
       </PropertyGroup>
       ...
@@ -152,7 +152,7 @@ Let's add code to connect to the Azure storage account using our stored connecti
     ```javascript
     #!/usr/bin/env node
     require('dotenv').load();
-    
+
     const storage = require('azure-storage');
     ```
 
@@ -202,7 +202,7 @@ We can use the `BlobService` object to work with blob APIs in Azure storage. As 
         console.log(err.message);
     }
     ```
-    
+
 1. The `createContainerAsync` promise returns the first value from the underlying `createContainerIfNotExists`, which is the container result. This includes information on whether the container was created or not. Capture the result in a variable, and output whether the container was created based on the `result.created` property.
 
     ```javascript
@@ -221,7 +221,7 @@ We can use the `BlobService` object to work with blob APIs in Azure storage. As 
     ```
 
 1. Finally, decorate the `main` function with the `async` keyword.
-        
+
 1. Save the file.
 
 The final file should look like this, if you'd like to check your work.
@@ -271,9 +271,9 @@ It should report that the blob container was created. If you run it a second tim
 
 To verify the container:
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Navigate to your storage account. You can use the **All Resources** section to find the storage account or search by name from the _search box_ at the top of the portal window. 
+1. Navigate to your storage account. You can use the **All Resources** section to find the storage account or search by name from the _search box_ at the top of the portal window.
 
 1. Select the **Blobs** entry of the storage account in the **Blob services** section.
 

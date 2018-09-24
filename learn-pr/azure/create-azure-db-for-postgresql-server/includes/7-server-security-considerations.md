@@ -40,7 +40,7 @@ Azure Database for PostgreSQL prefers that your client applications connect to t
 
 Let's look at the decisions and steps you make to configure an Azure Database for PostgreSQL server firewall. You'll also see how to connect to the server that you created earlier.
 
-Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with. Navigate to the server resource for which you'd like to create a firewall rule.
+Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with. Navigate to the server resource for which you'd like to create a firewall rule.
 
 Then, you'll select the **Connection Security** option to open the connection security blade to the right.
 
@@ -129,7 +129,7 @@ Here is the complete command:
 
 ```bash
 psql --host=<server-name>.postgres.database.azure.com
-      --username=<admin-user>@<server-name> 
+      --username=<admin-user>@<server-name>
       --dbname=<database>
 ```
 

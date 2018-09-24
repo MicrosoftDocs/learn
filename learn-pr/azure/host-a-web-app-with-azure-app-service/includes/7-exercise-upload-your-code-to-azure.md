@@ -2,7 +2,7 @@ In this unit, you'll upload your ASP.NET Core application to Azure App Service.
 
 ## Create a staging deployment slot
 
-1. Switch back to the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true).
+1. Switch back to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Open the App Service resource (the web app) you created previously. You can find it again by searching for the app in **All resources** or the containing resource group in **Resource groups**.
 

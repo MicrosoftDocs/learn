@@ -1,4 +1,4 @@
-Providing your customers the fastest access to the products on your online clothing site is paramount to your customers, and your businesses success. By decreasing the distance data has to travel to your users, you can deliver more content faster. If your data is stored in Azure Cosmos DB, replicating your site's data to multiple regions around the world is a point and click operation. 
+Providing your customers the fastest access to the products on your online clothing site is paramount to your customers, and your businesses success. By decreasing the distance data has to travel to your users, you can deliver more content faster. If your data is stored in Azure Cosmos DB, replicating your site's data to multiple regions around the world is a point and click operation.
 
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
@@ -22,27 +22,27 @@ When a database is replicated, the throughput and storage are replicated equally
 
 ## Creating an Azure Cosmos DB account in the portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
     > [!IMPORTANT]
     > Login to the Azure portal and the sandbox with the same account.
-    > 
+    >
     > Login to the Azure portal using the link above to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
 
 1. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
-   
+
    ![The Azure portal Databases pane](../media/2-global-distribution/2-create-nosql-db-databases-json-tutorial.png)
 
 1. On the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account, including the location.
 
     <!-- Resource selection -->
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-     
+
     Setting|Value|Description
     ---|---|---
     ID|*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.
     API|SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select **SQL** because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API.|
-    Subscription|*Concierge Subscription*|Select your Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for Sandbox](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true).
+    Subscription|*Concierge Subscription*|Select your Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
     Resource Group|Use existing<br><br><rgn>[Sandbox resource group name]</rgn>|Select **Use existing**, and then enter <rgn>[Sandbox resource group name]</rgn>.
     Location|*Select the region closest to you*|Select the region closest to you from the list of regions above.
     Geo-Redundancy| Disable | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as you will replicate the database later.
@@ -75,11 +75,11 @@ Let's now replicate your database closest to your global users in Los Angeles, N
 1. In the **Replicate data globally** page, select the West US 2, East US, and Japan East regions, and then click **Save**.
 
     If you don't see the map in the Azure portal, minimize the menus of the left side of the screen to display it.
-  
+
     The page will display an **Updating** message while the data is written to the new regions. Data in the new regions will be available within 30 minutes.
-   
+
     ![Click the regions in the map to add them](../media/2-global-distribution/2-global-replication.gif)
- 
+
 ## Summary
 
 In this unit, you replicated your database to the regions of the world in which your users are most concentrated, providing them lower-latency access to the data on your site.

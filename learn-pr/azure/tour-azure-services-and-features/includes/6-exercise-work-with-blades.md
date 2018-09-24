@@ -2,7 +2,7 @@ In this unit, you will learn how to work with blades in the Azure portal user in
 
 If you have an account (or created one), then Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using your account credentials
 
-Otherwise, **activate the Azure Sandbox above** and sign into the [Azure portal for Sandbox](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+Otherwise, **activate the Azure Sandbox above** and sign into the [Azure portal for Sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 ## Working with blades
 

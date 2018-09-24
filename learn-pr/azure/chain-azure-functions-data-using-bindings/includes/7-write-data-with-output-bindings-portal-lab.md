@@ -17,7 +17,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ## Create an HTTP-triggered function
 
-1. Sign into the [Azure portal](https://portal.azure.com/triplecrownlabs.onmicrosoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 2. In the portal, navigate to the function app that you created in this module.
 
@@ -37,17 +37,17 @@ Just as Azure Functions supports input bindings for various integration sources,
     |Language     | **JavaScript**        |
     |Name     |   [!INCLUDE [func-name-add](./func-name-add.md)]     |
     | Authorization level | **Function** |
-    
+
 6. Select **Create** to create your function. This action opens the **index.js** file in the code editor and displays a default implementation of the HTTP-triggered function.
 
     > [!NOTE]
     > In this exercise, we'll speed up things by using the *code* and *configuration* from the previous unit as a starting point.
 
-7. Replace all code in the **index.js** file with the code from the following snippet, and then select **Save** to save the change: 
+7. Replace all code in the **index.js** file with the code from the following snippet, and then select **Save** to save the change:
 
    [!code-javascript[](../code/find-bookmark-single.js)]
 
-   If this code looks familiar, that's because it's the implementation of our [!INCLUDE [func-name-find](./func-name-find.md)] function. As you would expect, the function won't work until we define the same bindings.  
+   If this code looks familiar, that's because it's the implementation of our [!INCLUDE [func-name-find](./func-name-find.md)] function. As you would expect, the function won't work until we define the same bindings.
 
 1. Open the **function.json** file from the [!INCLUDE [func-name-add](./func-name-add.md)] function.
 
@@ -95,7 +95,7 @@ So, where are we at? Well, so far we've really just replicated what we did in th
 
 ## Define Azure Cosmos DB output binding
 
-Rather than define a new output binding by going through the user interface, you'll create this binding by updating the configuration file, *function.json*, by hand. 
+Rather than define a new output binding by going through the user interface, you'll create this binding by updating the configuration file, *function.json*, by hand.
 
 1. Make sure the *function.json* file for [!INCLUDE [func-name-add](./func-name-add.md)] is open in the editor.
 
@@ -134,16 +134,16 @@ Here you can see that the new function, [!INCLUDE [func-name-add](./func-name-ad
 
 1. Select **Integrate** in the left function menu to open the integration tab.
 
-2. Select **New Output** in the **Outputs** column.  
+2. Select **New Output** in the **Outputs** column.
     A list of all possible output binding types is displayed.
 
-3. In the list, select **Azure Queue Storage**, then select **Select**.  
+3. In the list, select **Azure Queue Storage**, then select **Select**.
     This action opens the Azure Queue Storage output configuration page.
 
    Next, we'll set up a storage account connection. This is where our queue will be hosted.
 
-4. To the right of the **Storage account connection** field, select **new**.  
-   The **Storage Account** selection pane opens. 
+4. To the right of the **Storage account connection** field, select **new**.
+   The **Storage Account** selection pane opens.
 
 5. When we started this module and you created your function app, a storage account was also created at that time. It's listed in this pane, so select it. The **Storage account connection** field is populated with the name of a connection. If you want to see the connection string value, select **show value**.
 
@@ -186,7 +186,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
 
 1. With our function, [!INCLUDE [func-name-add](./func-name-add.md)], selected in the Function Apps portal, select the Test menu item at the far left to expand it.
 
-2. Select the **Test** menu item, and verify that you have the test pane open. The following screenshot shows what it should look like: 
+2. Select the **Test** menu item, and verify that you have the test pane open. The following screenshot shows what it should look like:
 
     ![Screenshot showing the function Test Panel expanded.](../media/7-test-panel-open-small.png)
 
@@ -202,13 +202,13 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
     }
     ```
 
-4. Select **Run** at the bottom of the test pane. 
+4. Select **Run** at the bottom of the test pane.
 
-5. Verify that the **Output** window displays the "Bookmark already exists" message, as shown in the following diagram: 
+5. Verify that the **Output** window displays the "Bookmark already exists" message, as shown in the following diagram:
 
     ![Screenshot showing Test Panel and result of a failed test.](../media/7-test-exists-small.png)
 
-6. Replace the request body with the following payload: 
+6. Replace the request body with the following payload:
 
     ```json
     {
@@ -226,27 +226,27 @@ Congratulations! The [!INCLUDE [func-name-add](./func-name-add.md)] works as des
 
 ### Verify that a message is written to the queue
 
-Azure Queue Storage queues are hosted in a storage account. You already selected the storage account in this exercise when you created the output binding. 
+Azure Queue Storage queues are hosted in a storage account. You already selected the storage account in this exercise when you created the output binding.
 
-1. In the main search box in the Azure portal, type **storage accounts**, and in the results list, under **Services**, select **Storage accounts**. 
+1. In the main search box in the Azure portal, type **storage accounts**, and in the results list, under **Services**, select **Storage accounts**.
 
       ![Screenshot showing search results for Storage Account in the main search box.](../media/7-search-for-sa-small.png)
 
-2. In the list of storage accounts that are returned, select the storage account that you used to create the **newmessage** output binding.  
+2. In the list of storage accounts that are returned, select the storage account that you used to create the **newmessage** output binding.
    The storage account settings are displayed in the main window of the portal.
 
-3. In the **Services** list, select the **Queues** item.  
+3. In the **Services** list, select the **Queues** item.
    A list of queues hosted by this storage account is displayed. Verify that the **bookmarks-post-process** queue exists, as shown in the following screenshot:
 
       ![Screenshot showing our queue in the list of queues hosted by this storage account](../media/7-q-in-list-small.png)
 
-4. Select **bookmarks-post-process** to open the queue.  
-   The messages that are in the queue are displayed in a list. If all went according to plan, the queue includes the message that you posted when you added a bookmark to the database. It should look like the following: 
+4. Select **bookmarks-post-process** to open the queue.
+   The messages that are in the queue are displayed in a list. If all went according to plan, the queue includes the message that you posted when you added a bookmark to the database. It should look like the following:
 
-    ![Screenshot showing our message in the queue](../media/7-message-in-q-small.png)    
+    ![Screenshot showing our message in the queue](../media/7-message-in-q-small.png)
 
    In this example, you can see that the message was given a unique ID, and the **MESSAGE TEXT** field displays your bookmark in JSON string format.
 
-5. You can test the function further by changing the request body in the test pane with new id/url sets and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added. 
+5. You can test the function further by changing the request body in the test pane with new id/url sets and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
 
 In this lab, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We went further and added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to a variety of destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively and let the platform take care of securing connections, scaling our function, and scaling our connections.
