@@ -49,7 +49,7 @@ az group create --name <name> --location <location>
 ```
 
 > [!IMPORTANT]
-> You do not need to create a resource group when using the free Azure Sandbox. Instead, you will use a pre-created resource group.
+> You do not need to create a resource group when using the free Azure sandbox. Instead, you will use a pre-created resource group.
 
 ### Verify
 

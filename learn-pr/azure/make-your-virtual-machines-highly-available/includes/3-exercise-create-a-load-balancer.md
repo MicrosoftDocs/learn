@@ -20,7 +20,7 @@ In this exercise, you will create a load balancer and a virtual network using th
     - **SKU:** _Basic_
     - **Public IP address:** Select **Create new**. In the text box, type _woodgrove-LB-ip_. Leave the Assignment as _Dynamic_.
     - **Subscription:** It should already have _Concierge Subscription_ selected.
-    - **Resource group:** Select **Use existing** and choose _<rgn>[Sandbox resource group name]</rgn>_.
+    - **Resource group:** Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_.
     - **Location:** Select a region near you from the following list.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -62,7 +62,7 @@ While the virtual network is being deployed, let's create one more thing: a netw
     ![Screenshot showing the Azure Marketplace with the Networking section selected and Network security group highlighted](../media/3-azure-marketplace-3.png)
 
 
-1. Give it the name **woodgrove-NSG** and put it into the Azure Sandbox resource group.
+1. Give it the name **woodgrove-NSG** and put it into the Azure sandbox resource group.
 
 1. Make sure it's in the same location as the Azure Load Balancer.
 

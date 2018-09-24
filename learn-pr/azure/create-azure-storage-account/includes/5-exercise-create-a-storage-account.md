@@ -30,7 +30,7 @@ Under **PROJECT DETAILS**:
 
 1. Select the appropriate **Subscription**.
 
-1. Select the existing Resource Group ("**<rgn>[Sandbox resource group name]</rgn>**") from the drop-down list.
+1. Select the existing Resource Group ("**<rgn>[sandbox resource group name]</rgn>**") from the drop-down list.
 
     > [!NOTE]
     > This free Resource Group has been provided by Microsoft as part of the learning experience. When you create an account for a real application, you will want to create a new Resource Group in your subscription to hold all the resources for the app.

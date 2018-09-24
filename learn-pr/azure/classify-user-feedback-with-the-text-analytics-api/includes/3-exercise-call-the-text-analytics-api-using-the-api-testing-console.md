@@ -22,7 +22,7 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
     |Subscription     |  Concierge Subscription    |   The subscription under which this new Cognitive Services API account with **Text Analytics API** is created.      |
     |Location     |  *choose a region from the dropdown*       |  Choose a region near you from the below list. |
     |Pricing tier     | **F0 Free**     |   The cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
-    |Resource group     |  Select **Use existing** and choose <rgn>[Sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
+    |Resource group     |  Select **Use existing** and choose <rgn>[sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 

@@ -64,7 +64,7 @@ We're going to create our VM using an Azure Resource Manager template. The templ
 ## Create a resource group 
 
 > [!IMPORTANT]
-> Normally you'd create a resource group in a region of your choice. However, the sandbox session you are currently in supplies a resource group for you to use. Your resource group for this session is **<rgn>[Sandbox resource group name]</rgn>**.
+> Normally you'd create a resource group in a region of your choice. However, the sandbox session you are currently in supplies a resource group for you to use. Your resource group for this session is **<rgn>[sandbox resource group name]</rgn>**.
 
 ## Deploy the DSVM to your resource group
 
@@ -74,7 +74,7 @@ We now have a resource group and have defined parameters for the DSVM Resource M
 
     ```azurecli
     az group deployment create \
-    --resource-group  <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group  <rgn>[sandbox resource group name]</rgn> \
     --template-uri https://raw.githubusercontent.com/Azure/DataScienceVM/master/Scripts/CreateDSVM/Ubuntu/azuredeploy.json \
     --parameters parameter_file.json
     ```
@@ -91,7 +91,7 @@ We now have a resource group and have defined parameters for the DSVM Resource M
     ```azurecli
     az vm get-instance-view \
     --name <HOSTNAME> \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query instanceView.statuses[1] \
     --output table
     ```
@@ -108,7 +108,7 @@ By default, our VM doesn't have any ports open. Our goal is to connect remotely,
 
     ```azurecli
     az vm open-port \
-    -g <rgn>[Sandbox resource group name]</rgn> \
+    -g <rgn>[sandbox resource group name]</rgn> \
     -n <HOSTNAME> \
     --port 22 \
     --priority 900
@@ -125,7 +125,7 @@ As mentioned previously, the DSVM image comes pre-installed with software, tools
 
     ```azurecli
     az vm open-port \
-    -g <rgn>[Sandbox resource group name]</rgn> \
+    -g <rgn>[sandbox resource group name]</rgn> \
     -n <HOSTNAME> \
     --port 8888 \
     --priority 901
@@ -139,7 +139,7 @@ Again, this command can take up to a minute to complete. When the command finish
 
     ```azurecli
     az vm list-ip-addresses \
-    -g <rgn>[Sandbox resource group name]</rgn> \
+    -g <rgn>[sandbox resource group name]</rgn> \
     -n <HOSTNAME> \
     --output table
     ```

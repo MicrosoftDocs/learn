@@ -13,7 +13,7 @@ Let's practice these operations using Azure PowerShell.
 We're going to use the VM we created in the previous exercise. The operations in this lab assume:
 
 - Our VM exists and is called **fotoshareVM**
-- Our VM lives in a resource group called **<rgn>[Sandbox resource group name]</rgn>**
+- Our VM lives in a resource group called **<rgn>[sandbox resource group name]</rgn>**
 
 If you've gone with a different set of names, replace these values with yours.
 
@@ -33,7 +33,7 @@ First, let's store some resource names so we can use them later.
     > Switch your Cloud Shell session to **PowerShell** before trying these commands, if it isn't already.
     
     ```powershell
-    $myRgName = "<rgn>[Sandbox resource group name]</rgn>"
+    $myRgName = "<rgn>[sandbox resource group name]</rgn>"
     $myVMName = "fotoshareVM"
     ```
     
@@ -59,7 +59,7 @@ First, let's store some resource names so we can use them later.
     ```output
     ResourceGroupName Name        Type                              Location
     ----------------- ----        ----                              --------
-    <rgn>[Sandbox resource group name]</rgn> fotoshareVM Microsoft.Compute/virtualMachines eastus
+    <rgn>[sandbox resource group name]</rgn> fotoshareVM Microsoft.Compute/virtualMachines eastus
     ```
     
 ### View OS disk cache status
@@ -148,7 +148,7 @@ We have only one data disk at the moment. The `Lun` field is important. It's the
 
     ```output
     ResourceGroupName  : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx
-    Id                 : /subscriptions/xxxxxxxx-xxxx-xxxx-xxx-xxxxxxx/resourceGroups/<rgn>[Sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/fotoshareVM
+    Id                 : /subscriptions/xxxxxxxx-xxxx-xxxx-xxx-xxxxxxx/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/fotoshareVM
     VmId               : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
     Name               : fotoshareVM
     Type               : Microsoft.Compute/virtualMachines

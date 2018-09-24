@@ -31,7 +31,7 @@ It will fail because the Linux virtual machine doesn't expose port 80 (`http`) t
 1. Type the following into Cloud Shell to open port 80:
 
 ```azurecli
-az vm open-port --port 80 --resource-group <rgn>[Sandbox resource group name]</rgn> --name SampleVM
+az vm open-port --port 80 --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM
 ```
 
 It will take a moment to add the network rule and open the port through the firewall. Try `curl` again. This time it should return data. You can see the page in a browser as well.

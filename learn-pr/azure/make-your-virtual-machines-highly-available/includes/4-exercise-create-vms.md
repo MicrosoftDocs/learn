@@ -8,14 +8,14 @@ An alternative approach if you _really_ prefer to use the Azure portal would be 
 
 ### Create some Azure CLI defaults
 
-1. Start by setting some defaults in the Azure CLI. Every command we use requires a _resource group_ and an optional _location_. Rather than typing that every time, we can set it as a default parameter. Use the pre-created Azure Sandbox resource group, and the same location you selected for the Azure Load Balancer. As a reminder, here are the available locations:
+1. Start by setting some defaults in the Azure CLI. Every command we use requires a _resource group_ and an optional _location_. Rather than typing that every time, we can set it as a default parameter. Use the pre-created Azure sandbox resource group, and the same location you selected for the Azure Load Balancer. As a reminder, here are the available locations:
 
     [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
 1. Type this command into the Cloud Shell on the right, replacing the `<location>` placeholder with the location you used for your Azure Load Balancer.
 
     ```azurecli
-    az configure --defaults group=<rgn>[Sandbox Resource Group</rgn> location=<location>
+    az configure --defaults group=<rgn>[sandbox Resource Group</rgn> location=<location>
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]

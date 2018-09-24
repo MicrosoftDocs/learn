@@ -61,10 +61,10 @@ Our app is finished &mdash; let's deploy it and see it work. Create an App Servi
 The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
 ```azurecli
-az appservice plan create --name blob-exercise-plan --resource-group <rgn>[Sandbox resource group name]</rgn>
-az webapp create --name <your-unique-app-name> --plan blob-exercise-plan --resource-group <rgn>[Sandbox resource group name]</rgn>
+az appservice plan create --name blob-exercise-plan --resource-group <rgn>[sandbox resource group name]</rgn>
+az webapp create --name <your-unique-app-name> --plan blob-exercise-plan --resource-group <rgn>[sandbox resource group name]</rgn>
 CONNECTIONSTRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
-az webapp config appsettings set --name <your-unique-app-name> --resource-group <rgn>[Sandbox resource group name]</rgn> --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
+az webapp config appsettings set --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn> --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files
 ```
 
 Now we'll deploy our app. The below commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service.
@@ -76,7 +76,7 @@ Now we'll deploy our app. The below commands will publish the site to the `pub` 
 dotnet publish -o pub
 cd pub
 zip -r ../site.zip *
-az webapp deployment source config-zip --src ../site.zip --name <your-unique-app-name> --resource-group <rgn>[Sandbox resource group name]</rgn>
+az webapp deployment source config-zip --src ../site.zip --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
 Open `https://<your-unique-app-name>.azurewebsites.net` in a browser to see the running app. It should look like the image below.

@@ -100,7 +100,7 @@ You can use any Azure management interface, including the Azure portal, Azure CL
 
 Normally, the first thing we'd do is to create a _resource group_ to hold all the things that we need to create. This allows us to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. We can use the Azure CLI to create a resource group with the `az group create` command. It takes a `--name` to give it a unique name in our subscription, and a `--location` to tell Azure what area of the world we want the resources to be located by default.
 
-Since we are in the free Azure Sandbox environment, you don't need to do this step, instead, you will use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**.
+Since we are in the free Azure sandbox environment, you don't need to do this step, instead, you will use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**.
 
 ## Choosing a location
 
@@ -118,7 +118,7 @@ Let's get your Windows VM up and running.
     ```azurecli
     az vm create \
       --name myVM \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --image Win2016Datacenter \
       --size Standard_DS2_v2 \
       --location eastus \
@@ -134,7 +134,7 @@ Let's get your Windows VM up and running.
 While you're waiting, let's review the command you just ran.
 
 * The VM is named **myVM**. This name identifies the VM in Azure. It also becomes the VM's internal hostname, or computer name.
-* The resource group, or the VM's logical container, is named **<rgn>[Sandbox resource group name]</rgn>**.
+* The resource group, or the VM's logical container, is named **<rgn>[sandbox resource group name]</rgn>**.
 * **Win2016Datacenter** specifies the Windows Server 2016 VM image.
 * **Standard_DS2_v2** refers to the size of the VM. This size has two virtual CPUs and 7 GB of memory.
 * The username and password enable you to connect to your VM later. For example, you can connect over Remote Desktop or WinRM to work with and configure the system.
@@ -176,7 +176,7 @@ Let's get your Linux VM up and running.
     ```azurecli
     az vm create \
       --name myVM \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --image UbuntuLTS \
       --location eastus \
       --size Standard_DS2_v2 \
@@ -190,7 +190,7 @@ Let's get your Linux VM up and running.
 While you're waiting, let's review the command you just ran.
 
 * The VM is named **myVM**. This name identifies the VM in Azure. It also becomes the VM's internal hostname, or computer name.
-* The resource group, or the VM's logical container, is named **<rgn>[Sandbox resource group name]</rgn>**.
+* The resource group, or the VM's logical container, is named **<rgn>[sandbox resource group name]</rgn>**.
 * **UbuntuLTS** specifies the Ubuntu 16.04 LTS VM image.
 * **Standard_DS2_v2** refers to the size of the VM. This size has two virtual CPUs and 7 GB of memory.
 * The `--generate-ssh-keys` option creates an SSH key pair to enable you to log in to the VM.

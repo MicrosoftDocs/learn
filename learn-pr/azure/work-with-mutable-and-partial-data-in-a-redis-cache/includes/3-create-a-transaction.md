@@ -13,8 +13,8 @@ We'll use the `az redis create` command to create a new Azure Redis Cache. It ta
 > | Parameter | Description |
 > |-----------|-------------|
 > | `--name`    | The name of the cache - this must be globally unique and composed of letters, numbers, and dashes. |
-> | `--resource-group` | Use the pre-created Resource Group **<rgn>[Sandbox resource group name]</rgn>**, which is part of the Azure Sandbox. |
-> | `--location` | Specify the location where the cache should be located. Normally, you will want to choose a location close to the data consumers. In this case, you are limited to the locations available in the Azure Sandbox. Select the closest one to you. |
+> | `--resource-group` | Use the pre-created Resource Group **<rgn>[sandbox resource group name]</rgn>**, which is part of the Azure sandbox. |
+> | `--location` | Specify the location where the cache should be located. Normally, you will want to choose a location close to the data consumers. In this case, you are limited to the locations available in the Azure sandbox. Select the closest one to you. |
 > | `--size` | The size of the Azure Redis Cache. Valid values are [C0, C1, C2, C3, C4, C5, C6, P1, P2, P3, P4]. |
 > | `--sku` | The Azure Redis Cache SKU. Valid values are [Basic, Standard, Premium]. |
 
@@ -33,7 +33,7 @@ We'll use the `az redis create` command to create a new Azure Redis Cache. It ta
 
     az redis create \
         --name "$REDIS_NAME" \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --location eastus \
         --vm-size C0 \
         --sku Basic \
@@ -85,7 +85,7 @@ Use the `az redis list-keys` command to get the access keys. Run these commands 
 ```azurecli
 REDIS_KEY=$(az redis list-keys \
     --name "$REDIS_NAME" \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query primaryKey \
     --output tsv)
 
@@ -164,7 +164,7 @@ Finally, we're going to add data into your Azure Redis Cache.
     ```azcli
     az redis show \
         --name "$REDIS_NAME" \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --query provisioningState
     ```
 

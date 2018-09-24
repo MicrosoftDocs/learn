@@ -40,14 +40,14 @@ Run the following command in the Cloud Shell to create your vault. You can repla
 ```azurecli
 az keyvault create \
     --name <your-unique-vault-name> \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --location eastus
 ```
 
 When it finishes, you'll see JSON output describing the new vault.
 
 > [!TIP]
-> The command used the pre-created resource group named **<rgn>[Sandbox Resource Group]</rgn>**. When working with your own subscription, you would want to either create a new Resource Group, or use an existing one you have previously created.
+> The command used the pre-created resource group named **<rgn>[sandbox Resource Group]</rgn>**. When working with your own subscription, you would want to either create a new Resource Group, or use an existing one you have previously created.
 
 ### Add the secret
 

@@ -29,7 +29,7 @@ Let's bump up to the next size, **Standard_DS3_v2**. Your VM will then have four
 
     ```azurecli
     az vm resize \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name myVM \
       --size Standard_DS3_v2
     ```
@@ -39,7 +39,7 @@ Let's bump up to the next size, **Standard_DS3_v2**. Your VM will then have four
 
     ```azurecli
     az vm show \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name myVM \
       --query "hardwareProfile" \
       --output tsv
@@ -57,7 +57,7 @@ Let's bump up to the next size, **Standard_DS3_v2**. Your VM will then have four
 
     ```azurecli
     az vm resize \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name myVM \
       --size Standard_DS3_v2
     ```
@@ -67,7 +67,7 @@ Let's bump up to the next size, **Standard_DS3_v2**. Your VM will then have four
 
     ```azurecli
     az vm show \
-      --resource-group <rgn>[Sandbox resource group name]</rgn> \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name myVM \
       --query "hardwareProfile" \
       --output tsv

@@ -22,7 +22,6 @@ You can also set up a secure channel, like a virtual private network (VPN), at a
 
 Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure. 
 
-<!--TODO: replace with final media which was submitted for Design-for-security-in-azure -->
 ![Encryption in transit](../media/encryption-in-transit.png)
 
 
@@ -32,7 +31,6 @@ Data at rest is the data that has been stored on a physical medium. This could b
 
 The actual data that is encrypted could vary in its content, usage, and importance to the organization. This could be financial information critical to the business, intellectual property that has been developed by the business, personal data about customers or employees that the business stores, and even the keys and secrets used for the encryption of the data itself.
 
-<!--TODO: replace with final media which was submitted for Design-for-security-in-azure -->
 ![Encryption at rest](../media/encryption-at-rest.png)
 
 ## Encryption on Azure

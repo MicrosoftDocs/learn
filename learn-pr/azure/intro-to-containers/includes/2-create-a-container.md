@@ -104,7 +104,7 @@ Docker enables you to publish, or expose, a port to make it accessible from outs
 ### Create the VM
 
 > [!IMPORTANT]
-> Normally, you would create a resource group for all your related Azure resources with the `az group create` command, but for these exercises one has been created for you. Please use "**<rgn>[sandbox resource group name]</rgn>**" as your resource group in all the steps.
+> Normally, you would create a resource group for all your related Azure resources with the `az group create` command, but for these exercises one has been created for you. Use "**<rgn>[sandbox resource group name]</rgn>**" as your resource group in all the steps.
 
 1. Run this `az vm create` command to create your Linux VM.
 

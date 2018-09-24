@@ -20,7 +20,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Select a **Subscription**.
 
-1. Select the existing **Resource group** <rgn>[Sandbox resource group name]</rgn>.
+1. Select the existing **Resource group** <rgn>[sandbox resource group name]</rgn>.
 
 1. Choose **Windows** as your **OS**.
 

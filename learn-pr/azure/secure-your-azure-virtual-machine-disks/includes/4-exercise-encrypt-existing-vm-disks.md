@@ -19,7 +19,7 @@ Use the Azure PowerShell to create and deploy a new Windows virtual machine.
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
     
 
-1. Define a PowerShell variable to hold the selected location. It's defined as "East US" here, please change it to your preferred location.
+1. Define a PowerShell variable to hold the selected location. It's defined as "East US" here, change it to your preferred location.
 
     ```powershell
     $location = "eastus"
@@ -31,7 +31,7 @@ Use the Azure PowerShell to create and deploy a new Windows virtual machine.
 
     ```powershell
     $vmName = "fmdata-vm01"
-    $rgName = "<rgn>[Sandbox Resource Group]</rgn>"
+    $rgName = "<rgn>[sandbox Resource Group]</rgn>"
     ```
     
 1. Use `New-AzureRmVm` to create a new virtual machine.
@@ -110,7 +110,7 @@ We need to protect this data, so let's encrypt the disks. Recall that there are 
 To create an Azure Key Vault, we need to enable the service in our subscription. This is a one-time requirement.
 
 > [!TIP]
-> Depending on your subscription, you might need to enable the **Microsoft.KeyVault** provider with the `Register-AzureRmResourceProvider` cmdlet. This is not necessary in the Azure Sandbox subscription.
+> Depending on your subscription, you might need to enable the **Microsoft.KeyVault** provider with the `Register-AzureRmResourceProvider` cmdlet. This is not necessary in the Azure sandbox subscription.
 
 1. Decide on a name for your new key vault. It must be unique and can be between 3 and 24 characters, composed of numbers, letters, and and dashes. Try adding some random numbers to the end, replacing the "1234" below.
 

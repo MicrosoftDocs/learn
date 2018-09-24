@@ -5,7 +5,7 @@ Let's start with the most obvious task: creating an Azure Virtual Machine.
 
 ## Logins, subscriptions, and resource groups
 
-You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription - this will be done for you. In addition, normally you would create a _resource group_ to hold new resources. In this module, the Azure Sandbox will create a resource group for you which will be used to execute all the commands.
+You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription - this will be done for you. In addition, normally you would create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you which will be used to execute all the commands.
 
 ## Create a Linux VM with the Azure CLI
 
@@ -32,7 +32,7 @@ Let's start with the first one: `az vm create`. This command is used to create a
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |
 > |-----------|-------------|
-> | `resource-group` | The resource group that will own the virtual machine, use **<rgn>[Sandbox Resource Group]</rgn>**. |
+> | `resource-group` | The resource group that will own the virtual machine, use **<rgn>[sandbox Resource Group]</rgn>**. |
 > | `name` | The name of the virtual machine - must be unique within the resource group. |
 > | `image` | The operating system image to use to create the VM. |
 > | `location` | The region to place the VM in. Typically this would be close to the consumer of the VM. In this exercise, choose a location nearby from the following list. |
@@ -47,7 +47,7 @@ In addition, it's helpful to add the `--verbose` flag to see progress while the 
 Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create a Debian Linux machine in the "West US" location. Change the location if that one isn't nearby.
 
 ```azurecli
-az vm create --resource-group <rgn>[Sandbox resource group name]</rgn> --name SampleVM --image Debian --admin-username aldis --generate-ssh-keys --location westus --verbose 
+az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM --image Debian --admin-username aldis --generate-ssh-keys --location westus --verbose 
 ```
 
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]

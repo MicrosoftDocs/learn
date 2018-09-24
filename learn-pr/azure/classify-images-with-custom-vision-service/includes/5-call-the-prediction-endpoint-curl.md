@@ -23,12 +23,12 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
 3. Copy and save the first URL and the `Prediction-Key` value from the **How to use the Prediction API** dialog. 
 
 > [!TIP]
-> **cURL** is a command line tool that can be used to send or receive files. It's included with Linux, macOS, and Windows 10, and can be downloaded for most other operating systems. cURL supports numerous protocols like HTTP, HTTPS, FTP, FTPS, SFTP, LDAP, TELNET, SMTP, POP3, etc. For more information, please refer to the links below:
+> **cURL** is a command line tool that can be used to send or receive files. It's included with Linux, macOS, and Windows 10, and can be downloaded for most other operating systems. cURL supports numerous protocols like HTTP, HTTPS, FTP, FTPS, SFTP, LDAP, TELNET, SMTP, POP3, etc. For more information, refer to the links below:
 >
 >- <https://en.wikipedia.org/wiki/CURL>
 >- <https://curl.haxx.se/docs/> 
 > 
-> cURL is already installed in the Azure Cloud Shell in the Sandbox. So, we'll cURL in this exercise to make HTTP calls to our endpoint.
+> cURL is already installed in the Azure Cloud Shell in the sandbox. So, we'll cURL in this exercise to make HTTP calls to our endpoint.
 
 2. Execute the following command in the Cloud Shell. Replace **[endpoint-URL]** with the URL you saved from the last step. Replace **[Prediction-Key]** with the value of `Prediction-Key` you saved from the last step. 
 

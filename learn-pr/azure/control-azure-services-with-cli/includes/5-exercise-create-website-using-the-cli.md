@@ -6,9 +6,9 @@ Next, let's use the Azure CLI to create a resource group, and then to deploy a w
 
 When you are working with your own machine and Azure subscription you will need to first login to Azure using the `az login` command. This is unnecessary with the Cloud Shell environment.
 
-Next, you would normally create a resource group for all your related Azure resources with an `az group create` command, but for these exercises one has been created for you. Use **<rgn>[Sandbox resource group name]</rgn>** for your resource group.
+Next, you would normally create a resource group for all your related Azure resources with an `az group create` command, but for these exercises one has been created for you. Use **<rgn>[sandbox resource group name]</rgn>** for your resource group.
 
-1. You can ask the Azure CLI to list all your resource groups in a table. There should just be one while you are in the free Azure Sandbox.
+1. You can ask the Azure CLI to list all your resource groups in a table. There should just be one while you are in the free Azure sandbox.
 
     ```azurecli
     az group list --output table
@@ -19,7 +19,7 @@ Next, you would normally create a resource group for all your related Azure reso
 1. As you do more Azure development, you can end up with several resource groups. If you have several items in the group list, you can filter the return values by adding a `--query` option. Try this command:
 
     ```azurecli
-    az group list --query "[?name == '<rgn>[Sandbox resource group name]</rgn>']"
+    az group list --query "[?name == '<rgn>[sandbox resource group name]</rgn>']"
     ```
 
     The query is formated using **JMESPath** which is a standard query language for JSON requests. You can learn more about this powerful filter language at <http://jmespath.org/>. We also cover queries in more depth in the **Manage VMs with the Azure CLI** module.
@@ -38,7 +38,7 @@ When you run Web Apps, using the Azure App Service, you pay for the Azure comput
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
     ```azurecli
-    az appservice plan create --name popupappplan-<unique> --resource-group <rgn>[Sandbox resource group name]</rgn> --location <location>
+    az appservice plan create --name popupappplan-<unique> --resource-group <rgn>[sandbox resource group name]</rgn> --location <location>
     ```
 
     This command can take several minutes to complete.
@@ -56,7 +56,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
 1. Create the web app, supply the name of the plan you created above. **Just like the plan, the app name must be unique**, replace the `<unique>` marker with some text to make the name globally unique.
 
     ```azurecli
-    az webapp create --name popupwebapp-<unique> --resource-group <rgn>[Sandbox resource group name]</rgn> --plan popupappplan-<unique>
+    az webapp create --name popupwebapp-<unique> --resource-group <rgn>[sandbox resource group name]</rgn> --plan popupappplan-<unique>
     ```
 
 1. Verify that the app was created successfully by listing all your apps in a table.
@@ -78,7 +78,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
 1. The final step is to deploy code from a GitHub repository to the web app. Let's use a simple PHP page available in the Azure Samples Github repository that displays "HelloWorld!" when it executes. Make sure to use the web app name you created.
 
     ```azurecli
-    az webapp deployment source config --name popupwebapp-<unique> --resource-group <rgn>[Sandbox resource group name]</rgn> --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" --branch master --manual-integration
+    az webapp deployment source config --name popupwebapp-<unique> --resource-group <rgn>[sandbox resource group name]</rgn> --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" --branch master --manual-integration
     ```
 
 1. Once it's deployed, hit your site again with a browser or CURL.

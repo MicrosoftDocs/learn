@@ -13,7 +13,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
     |Parameter      |Description|
     |---------------|-----------|
     |--name (required)  | A name for your storage account. |
-    |--resource-group (required)  |The resource group owner. We'll use the pre-created Sandbox resource group.|
+    |--resource-group (required)  |The resource group owner. We'll use the pre-created sandbox resource group.|
     |--location (optional)    |An optional location if you want the storage account in a specific place vs. the resource group location.|
 
     Set the storage account name into a variable. It must be composed of all lower-case letters, numbers, with hyphen separators allowed. It also must be unique within Azure.

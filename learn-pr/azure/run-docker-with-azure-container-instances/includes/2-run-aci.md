@@ -20,7 +20,7 @@ For scenarios where you need full container orchestration, including service dis
 You create a container by providing a name, a Docker image, and an Azure resource group to the **az container create** command. You can optionally expose the container to the Internet by specifying a DNS name label. In this example, you deploy a container that hosts a small web app. You can also select the location to place the image - we're defaulting to "East US" below, but you can change it to a location close to you from the following list.
 
 <!-- TODO: fix region list so it's not hardcoded here -->
-The free sandbox allows you to create resources in a subset of Azure's global regions. Please select a region from the following list when creating any resources:
+The free sandbox allows you to create resources in a subset of Azure's global regions. Select a region from the following list when creating any resources:
 
 :::row:::
     :::column:::

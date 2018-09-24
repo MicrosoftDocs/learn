@@ -20,8 +20,6 @@ Imagine you're running a web application that connects to a database. You'll use
 
 To configure these subnets, you'll create a virtual network and then subdivide the network into subnets. The web application will operate on one subnet and the database on another subnet. Each subnet will have its own rules for communicating to and from the other network. These rules give you the ability to restrict access from the database to the web application.
 
-Creating a virtual network is beyond the scope of this module. If you need more information, please explore other learning modules related to virtual networks.
-
 ### What is a firewall?
 
 A firewall is a service that grants server access based on the originating IP address of each request. You create firewall rules that specify ranges of IP addresses. Only clients from these granted IP addresses will be allowed to access the server. Firewall rules, generally speaking, also include specific network protocol and port information. For example, a PostgreSQL server by default listens to TCP requests on port 5432.
@@ -34,7 +32,7 @@ The Azure Database for PostgreSQL server firewall prevents all access to your da
 
 ### Azure Database for PostgreSQL server SSL connections
 
-Azure Database for PostgreSQL prefers that your client applications connect to the PostgreSQL service using the Secure Sockets Layer (SSL). Enforcing SSL connections between your database server and your client applications helps protect against "man in the middle" and similar attacks by encrypting the data between the server and client. Enabling SSL requires the exchange of keys and strict authentication between client and server for the connection to work. Details about using SSL are beyond the scope of this learning module. If you need more information, please explore other learning modules related to SSL.
+Azure Database for PostgreSQL prefers that your client applications connect to the PostgreSQL service using the Secure Sockets Layer (SSL). Enforcing SSL connections between your database server and your client applications helps protect against "man in the middle" and similar attacks by encrypting the data between the server and client. Enabling SSL requires the exchange of keys and strict authentication between client and server for the connection to work. Details about using SSL are beyond the scope of this learning module.
 
 ## Configure connection security
 
@@ -92,7 +90,7 @@ You can use the Azure CLI to add firewall rules to your server with the `az post
 
 ```azurecli
 az postgres server firewall-rule create \
-  --resource-group <rgn>[Sandbox resource group name]</rgn> \
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
   --server <server-name> \
   --name AllowAll \
   --start-ip-address 0.0.0.0 \
@@ -104,7 +102,7 @@ You remove firewall rules from your server with the command `az postgres server 
 ```azurecli
 az postgres server firewall-rule delete \
   --name AllowAll \
-  --resource-group <rgn>[Sandbox resource group name]</rgn> \
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
   --server-name <server-name>
 ```
 

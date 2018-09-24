@@ -87,7 +87,6 @@ Identities are mapped to roles directly or through group membership. Separating 
 
 Roles can be granted at the individual service instance level, but they also flow down the Azure Resource Manager hierarchy. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances. 
 
-<!--TODO: replace with final media which was submitted for Design-for-security-in-azure -->
 ![Management groups](../media/3-role-assignment-scope.png)
 
 :::row:::
@@ -99,7 +98,6 @@ Roles can be granted at the individual service instance level, but they also flo
 
 In addition to managing Azure resource access with role-based access control (RBAC), a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as their organization changes and evolves. Azure AD Privileged Identity Management (PIM) is an additional, paid-for offering that provides oversight of role assignments, self-service, and just-in-time role activation and Azure AD and Azure resource access reviews.
 
-<!--TODO: replace with final media which was submitted for Design-for-security-in-azure -->
 ![Privileged identity management](../media/PIM_Dashboard.png)
 
   :::column-end:::

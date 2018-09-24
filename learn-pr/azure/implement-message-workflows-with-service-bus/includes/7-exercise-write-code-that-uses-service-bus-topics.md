@@ -89,7 +89,7 @@ Once it's finished, run the following command to see how many messages are in th
 
 ```azurecli
 az servicebus topic subscription show \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --namespace-name <namespace-name> \
     --topic-name salesperformancemessages \
     --name Americas \
@@ -176,7 +176,7 @@ When the program stops printing notifications that it is receiving messages. pre
 
 ```azurecli
 az servicebus topic subscription show \
-    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --namespace-name <namespace-name> \
     --topic-name salesperformancemessages \
     --name Americas \

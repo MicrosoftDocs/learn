@@ -33,7 +33,7 @@ Here, you use the `az` utility to list your databases and show some information 
     Replace `<server-name>` with the name of your Azure SQL logical server. Note that depending on the blade you are on in the portal this may show as a FQDN (servername.database.windows.net), but you only need the logical name without the .database.windows.net suffix.
 
     ```azurecli
-    az configure --defaults group=<rgn>[Sandbox resource group name]</rgn> sql-server=<server-name>
+    az configure --defaults group=<rgn>[sandbox resource group name]</rgn> sql-server=<server-name>
     ```
 
 1. Run `az sql db list` to list all databases on your Azure SQL logical server.

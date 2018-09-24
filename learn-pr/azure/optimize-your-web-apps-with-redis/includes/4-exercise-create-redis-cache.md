@@ -21,9 +21,9 @@ Apply the following settings on the cache.
 
 1. **Subscription:** Select the Concierge subscription.
 
-1. **Resource group:** Select <rgn>[Sandbox resource group name]</rgn> for the Resource Group.
+1. **Resource group:** Select <rgn>[sandbox resource group name]</rgn> for the Resource Group.
 
-1. **Location:** Normally, you would select a location near your customers - in this case, the East Coast. However, the Azure Sandbox only allows specific regions to be selected for resources. Please select one of the following locations.
+1. **Location:** Normally, you would select a location near your customers - in this case, the East Coast.
 
     [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
 

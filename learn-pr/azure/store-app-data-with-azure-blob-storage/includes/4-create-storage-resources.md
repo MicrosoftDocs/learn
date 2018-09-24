@@ -33,7 +33,7 @@ We'll use the Azure Cloud Shell with the Azure CLI to create a storage account. 
 Execute the following command to create the storage account. 
 
 ```azurecli
-az storage account create --name <your-unique-storage-account-name> --resource-group <rgn>[Sandbox resource group name]</rgn> --location eastus --kind StorageV2
+az storage account create --name <your-unique-storage-account-name> --resource-group <rgn>[sandbox resource group name]</rgn> --location eastus --kind StorageV2
 ```
 
 > [!NOTE]

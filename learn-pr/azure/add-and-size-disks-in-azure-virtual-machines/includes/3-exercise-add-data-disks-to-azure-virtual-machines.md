@@ -11,7 +11,7 @@ The goal of the exercise is to create a Linux virtual machine (VM) and attach a 
 
 Let's create a Linux VM to host our web server using the Azure CLI.
 
-1. Start by setting some defaults for this session. The first thing you need to decide is the _location_ to place the VM. Ideally this would be close to your clients. In this case, select the closest region from the locations available to the Azure Sandbox.
+1. Start by setting some defaults for this session. The first thing you need to decide is the _location_ to place the VM. Ideally this would be close to your clients. In this case, select the closest region from the locations available to the Azure sandbox.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -23,10 +23,10 @@ Let's create a Linux VM to host our web server using the Azure CLI.
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. Set the default resource group value to the pre-configured resource group created for the Azure Sandbox: **<rgn>[Sandbox resource group]</rgn>**
+1. Set the default resource group value to the pre-configured resource group created for the Azure sandbox: **<rgn>[sandbox resource group]</rgn>**
 
     ```azurecli
-    az configure --defaults group="<rgn>[Sandbox Resource Group]</rgn>"
+    az configure --defaults group="<rgn>[sandbox Resource Group]</rgn>"
     ```
 
 1. Next, use the `vm create` command to create a new Ubuntu Linux VM.
@@ -51,13 +51,13 @@ Let's create a Linux VM to host our web server using the Azure CLI.
     ```json
     {
         "fqdns": "",
-        "id": "/subscriptions/xxx/resourceGroups/<rgn>[Sandbox resource group]</rgn>/providers/Microsoft.Compute/virtualMachines/support-web-vm01",
+        "id": "/subscriptions/xxx/resourceGroups/<rgn>[sandbox resource group]</rgn>/providers/Microsoft.Compute/virtualMachines/support-web-vm01",
         "location": "eastus",
         "macAddress": "00-0D-3A-18-DE-B4",
         "powerState": "VM running",
         "privateIpAddress": "10.0.0.4",
         "publicIpAddress": "40.76.193.249",
-        "resourceGroup": "<rgn>[Sandbox resource group]</rgn>",
+        "resourceGroup": "<rgn>[sandbox resource group]</rgn>",
         "zones": ""
     }
     ```
