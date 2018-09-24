@@ -47,9 +47,9 @@ achievements:
   iconUrl: /learn/achievements/administer-infrastructure-resources-in-azure.svg
 - uid: learn.cloud-foundations.trophy
   type: trophy
-  title: Cloud Foundations Trophy
-  summary: Trophy for the 'Cloud Foundations' learning path.
-  iconUrl: /learn/achievements/cloud-foundations.svg
+  title: Azure fundamentals Trophy
+  summary: Trophy for the 'Azure fundamentals' learning path.
+  iconUrl: /learn/achievements/azure-fundamentals.svg
 - uid: learn.connect-your-services-together.trophy
   type: trophy
   title: Connect your services together Trophy
