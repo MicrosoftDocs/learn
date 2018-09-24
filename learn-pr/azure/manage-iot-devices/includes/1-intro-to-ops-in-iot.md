@@ -24,7 +24,7 @@ authority in it.
 
  The rest of this module will take this foundational knowledge of IoT and apply it to a real world scenario. You will be interacting with and online Raspberry Pi simulator to capture simulated weather data via the Azure IoT Hub.
 
- ##Learning Objectives
+ ## Learning objectives
  In this module, you will:
   - Get an introduction to IoT
   - Interact with a Raspberry Pi Simulator
