@@ -2,7 +2,7 @@ Here you'll install Eclipse and the Azure Toolkit on your development machine. B
 
 ## Install Eclipse IDE
 
-1. Download the appropriate [Eclipse IDE for your operating system](http://www.eclipse.org/downloads/packages/installer).
+1. Download the appropriate [Eclipse IDE for your operating system](https://www.eclipse.org/downloads/packages/installer).
 
 1. Start the Eclipse installer once downloaded.
 
