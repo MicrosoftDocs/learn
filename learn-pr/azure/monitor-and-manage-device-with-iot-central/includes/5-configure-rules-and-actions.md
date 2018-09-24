@@ -9,7 +9,7 @@ Azure IoT Central has its native email capabilities to send notifications. In th
 
 1. Enter the name `Coffee Maker Water Too Cold (Expired)`
 
-1. Add the following conditions to the rule by selecting the plus (**+**) sign to the right of **Conditions**:      
+1. Add the following conditions to the rule by selecting the plus (**+**) sign to the right of **Conditions**, and then click **Save**:      
     - Water Temperature is less than Coffee Maker's Min Temperature
     - Device Warranty Expired equals 1
 
@@ -27,7 +27,7 @@ Now let's repeat these steps for the case when the water is too hot.
 
 1. Add a new rule and give it the name `Coffee Maker Water Too Hot (Expired)`
 
-1. Add the following conditions to the rule by selecting the plus (**+**) sign to the right of **Conditions**:      
+1. Add the following conditions to the rule by selecting the plus (**+**) sign to the right of **Conditions**, and then click **Save**:      
     - Water Temperature is greater than Coffee Makers Max Temperature
     - Device Warranty Expired equals 1
 
