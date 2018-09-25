@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-site-reliability-engineering.3-sre-in-context
+title: SRE in context
+metadata:
+  title: SRE in context
+  description: SRE in context
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-sre-in-context.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Given the origin of SRE, which discipline has had the most impact on it?'
+    choices:
+    - content: 'customer service'
+      isCorrect: false
+      incorrectExplanation: 'Approaching the work with a customer-centric mindset is crucial to SRE, but customer service was not part of its origin.'
+    - content: 'mainframe operations'
+      isCorrect: false
+      incorrectExplanation: 'Though we can learn from other operations specialties, SRE did not start with this one.'
+    - content: 'software engineering'
+      isCorrect: true
+      correctExplanation: 'SRE was started with software engineering mindset.'
+    - content: 'architecture'
+      isCorrect: false
+      incorrectExplanation: 'Architecture (especially software architecture) is definitely a component of SRE work, but it was not part of its origin.'
+
+  - content: 'Which came first, DevOps or SRE?'
+    choices:
+    - content: 'DevOps'
+      isCorrect: false
+      incorrectExplanation: 'They developed roughly in parallel.'
+    - content: 'SRE'
+      isCorrect: false
+      incorrectExplanation: 'They developed roughly in parallel.'
+    - content: 'Neither, they developed roughly in parallel.'
+      isCorrect: true
+
+  - content: 'Is SRE the next evolutionary step from DevOps?'
+    choices:
+    - content: 'yes, SRE is the future of DevOps. DevOps personnel should strive to become SREs'
+      isCorrect: false
+      incorrectExplanation: 'DevOps and SRE are separate operations practices that attempt to address similar challenges.'
+    - content: 'no, SRE and DevOps are separate operations practices'
+      isCorrect: true
+      correctExplanation: 'DevOps and SRE are indeed separate even though they attempt to address similar challenges.'
+
+  - content: 'What are two best practices that are central to both DevOps and SRE?'
+    choices:
+    - content: 'automation and monitoring/observability'
+      isCorrect: true
+    - content: 'coding and ticket systems'
+      isCorrect: false
+      incorrectExplanation: 'While coding is important (more so in SRE), ticket systems are not central to SRE.'
+    - content: 'help desk automation and bug tracking'
+      isCorrect: false
+      correctExplanation: 'Though useful, help desk automation is not core to either operations practice.'
