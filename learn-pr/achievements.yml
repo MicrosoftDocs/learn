@@ -456,11 +456,6 @@ achievements:
   summary: Distribute your data globally with Azure Cosmos DB
   # TODO: replace with correct badge
   iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg
-- uid: learn.secure-azure-resources-with-rbac.badge
-  type: badge
-  title: Secure your Azure resources with role-based access control (RBAC)
-  summary: Secure your Azure resources with role-based access control (RBAC)
-  iconUrl: /learn/achievements/secure-azure-resources-with-rbac.svg
 - uid: learn.intro-to-site-reliability-engineering.badge
   type: badge
   title: Introduction to Site Reliability Engineering
