@@ -461,3 +461,8 @@ achievements:
   title: Secure your Azure resources with role-based access control (RBAC)
   summary: Secure your Azure resources with role-based access control (RBAC)
   iconUrl: /learn/achievements/secure-azure-resources-with-rbac.svg
+- uid: learn.intro-to-site-reliability-engineering.badge
+  type: badge
+  title: Introduction to Site Reliability Engineering
+  summary: Introduction to Site Reliability Engineering
+  iconUrl: http://via.placeholder.com/120x120
