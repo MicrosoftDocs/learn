@@ -31,9 +31,9 @@ quiz:
     - content: '100% is the goal'
       isCorrect: false
       incorrectExplanation: 'For most contexts, it is not possible to hit 100% reliable. Even if it was, it would be cost and resource prohibitive (an as waste of both).'
-    - content: 'it should be as reliable as possible'
+    - content: 'It should be as reliable as possible'
       isCorrect: false
       incorrectExplanation: 'It is important to find the appropriate level of reliability for a goal since efforts and resources beyond that are a waste. Plus "as possible" is too vague to be useful.'
-    - content: 'a specific level indentified as appropriate by the key stakeholders'
+    - content: 'A specific level indentified as appropriate by the key stakeholders'
       isCorrect: true
       correctExplanation: 'Setting a goal for a service is a collaborative effort between SRE, development resources and the business decision makers.'
