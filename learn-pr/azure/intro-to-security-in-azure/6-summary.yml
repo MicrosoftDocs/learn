@@ -13,3 +13,39 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Cloud security is a shared responsibility. Which category of cloud services requires the greatest security effort on your part?"
+      choices:
+      - content: "Infrastructure as a service (IaaS)"
+        isCorrect: true
+        correctExplanation: "At this level, the cloud provider provides physical security to compute resources. However, it's your responsibility to patch and secure your operating systems and software, as well as configure your network to be secure."
+      - content: "Platform as a service (PaaS)"
+        isCorrect: false
+        incorrectExplanation: "At this level, the cloud provider outsources a lot of security concerns, more than other categories. This includes providing physical security and keeping operating systems patched and up to date."
+      - content: "Software as a service (SaaS)"
+        isCorrect: false
+        incorrectExplanation: "At this level, the cloud provider handles most security concerns for you. Your main responsibility is to provide your organization's users with proper access to the software."
+    - content: "An unauthorized user has gained access to one of your applications. How might you help prevent unauthorized access in the future?"
+      choices:
+      - content: "Enable single sign-on (SSO)"
+        isCorrect: false
+        incorrectExplanation: "Although SSO can help centralize each user's identity, on its own it doesn't help prevent unauthorized access to your applications."
+      - content: "Enforce a strong password policy"
+        isCorrect: false
+        incorrectExplanation: "While enforcing a strong password policy can help secure access to your application, it's not foolproof. For example, an attacker may attempt a brute-force method to guess the password for an account."
+      - content: "Enforce multi-factor authentication (MFA)"
+        isCorrect: true
+        correctExplanation: "MFA requires two or more elements, which can include a password, mobile device, or fingerprint, to fully authenticate. An attacker would need more than just the password to access your application."
+    - content: "Which of these is the _strongest_ way to protect sensitive customer data?"
+      choices:
+      - content: "Encrypt data as it sits in your database"
+        isCorrect: false
+        incorrectExplanation: "While encrypting your data as it sits in your database (encryption at rest) is important, your data may be read by others as it travels over the network between systems."
+      - content: "Encrypt data as it travels over the network"
+        isCorrect: false
+        incorrectExplanation: "While encrypting your data as it travels over the network (encryption in transit) is important, your data may be vulnerable as it sits in your database."
+      - content: "Encrypt data both as it sits in your database and as it travels over the network"
+        isCorrect: true
+        correctExplanation: "Encrypting your data at all times, both as it sits in your database and as it travels over the network, minimizes the opportunity for an attacker to access your data in plain text."
