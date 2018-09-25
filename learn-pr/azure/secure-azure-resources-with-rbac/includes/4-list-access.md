@@ -1,0 +1,48 @@
+> [!NOTE]
+> After launching the lab, the username and password you need is located on the **Resources** tab next to the instructions.
+
+At First Up Consultants, you've been granted access to a resource group for the marketing team. You want to familiarize yourself with the Azure portal and see what roles are currently assigned.
+
+## List role assignments for yourself
+
+Follow these steps to see what roles are currently assigned to you.
+
+1. In the upper-right corner of the Azure portal, click your user name to open the menu.
+
+    ![My permissions menu](../media/4-my-permissions-menu.png)
+
+1. Click **My permissions** to open the My permissions pane.
+
+    ![My permissions pane](../media/4-my-permissions-pane.png)
+
+    On the My permissions pane, you can see a list of the roles that you have been assigned and the scope. Your list will look different.
+
+## List role assignments for a resource group
+
+Follow these steps to see what roles are assigned at the resource group scope.
+
+1. In the navigation list, click **Resource groups**.
+
+   ![Resource groups](../media/4-resource-groups.png)
+
+1. Find and click the resource group named **FirstUpConsultantsRG1-_XXXXXXX_**.
+
+1. Click **Access control (IAM)**.
+
+   ![Access control for resource group](../media/4-resource-group-access-control.png)
+
+    You can see who has access to this resource group. Notice that some roles are scoped to **This resource** while others are **(Inherited)** from a parent scope.
+
+   ![Access control - Role assignment for resource group](../media/4-resource-group-role-assignment.png)
+
+## List roles
+
+As you learned in the previous unit, a role is a collection of permissions. Azure has over 70 built-in roles that you can use in your role assignments. Follow this step to list the roles.
+
+- At the top of the pane, click **Roles** to see a list of all the built-in and custom roles.
+
+   You can see the number of users and groups that are assigned to each role.
+
+   ![Roles list](../media/4-roles-list.png)
+
+In this unit, you learned how to list the role assignments for yourself in the Azure portal. You also learned how to list the role assignments for a resource group.
