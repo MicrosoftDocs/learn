@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-site-reliability-engineering.6-getting-started
+title: Getting started with SRE
+metadata:
+  title: Getting started with SRE
+  description: Getting started with SRE
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-getting-started.md)]

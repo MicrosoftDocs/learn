@@ -1,4 +1,4 @@
-You've heard buzzwords about the cloud &mdash; _scale_, _elasticity_, _microservices_. Perhaps you've seen other companies be successful with the cloud and wondered how it can help you meet your business challenges or even grow your career. Did you know that 90% of the Fortune 500 run on Azure?
+You've heard buzzwords about the cloud &mdash; _scale_, _elasticity_, _microservices_. Perhaps you've seen other companies be successful with the cloud and wondered how it can help you meet your business challenges or even grow your career. Did you know that more than 90% of the Fortune 500 run on the Microsoft Cloud?
 
 ![The Azure logo representing the start of your learning journey](../media/1-heading.png)
 

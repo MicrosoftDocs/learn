@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-azure-resources-with-rbac.3-knowledge-check-rbac-overview
+metadata:
+  title: Knowledge check - What is RBAC?
+  description: Knowledge check - What is RBAC?
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check - What is RBAC?
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'True or false: A role definition in Azure is a collection of permissions.'
+    choices:
+    - content: 'True'
+      isCorrect: true
+      correctExplanation: A role in Azure is a collection of permissions with a name that you can assign to a user, group, or application.
+    - content: 'False'
+      isCorrect: false
+      incorrectExplanation: A role in Azure is a collection of permissions with a name that you can assign to a user, group, or application.
+  
+  - content: "Informally, a role assignment consists of 'who', 'what', and 'where'. What are the formal names for these three elements?"
+    choices:
+    - content: User, group, and application
+      isCorrect: false
+      incorrectExplanation: User, group, and application are security principals.
+    - content: Security principal, role, and scope
+      isCorrect: true
+      correctExplanation: A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access.
+    - content: Management group, subscription, and resource group
+      isCorrect: false
+      incorrectExplanation: Management group, subscription, and resource group are ways to organize your Azure resources and represent scopes.
+    - content: Owner, Contributor, and Reader
+      isCorrect: false
+      incorrectExplanation: Owner, Contributor, and Reader are built-in roles in Azure.
+
+  - content: 'What is the inheritance order for scope in Azure?'
+    choices:
+    - content: Management group, resource group, subscription, resource
+      isCorrect: false
+      incorrectExplanation: This is not the correct order.
+    - content: Management group, subscription, resource group, resource
+      isCorrect: true
+      correctExplanation: "The inheritance order matches the scale of the elements from largest to smallest."
+    - content: Subscription, management group, resource group, resource
+      isCorrect: false
+      incorrectExplanation: This is not the correct order.
+    - content: Subscription, resource group, management group, resource
+      isCorrect: false
+      incorrectExplanation: This is not the correct order.
