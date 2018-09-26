@@ -118,6 +118,9 @@ The function and master keys are found in the **Manage** section when the functi
 
 The function will respond back with the text `"Hello Azure Function"`.
 
+> [!CAUTION]
+> If you are on Windows, please run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest and is not the same as `cURL`.
+
 > [!NOTE]
 > You can also test from an individual function's section with the **Test** tab on the side of a selected function, though you won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface and click the **Run** button to see the test output.
 

@@ -30,6 +30,8 @@ Let’s start by creating an Azure Function app in the portal.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+1. For **Runtime Stack**, leave as default *.NET*, which is the language in which we implement the function examples in this exercise.
+
 1. Create a new **Storage** account, you can change the name if you like - it will default to a variation of the App name.
 
 1. Select **Create**. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it.

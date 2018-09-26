@@ -10,9 +10,9 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 
 1. Stop the local Azure Functions runtime if it's still running from the previous unit.
 
-1. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package v3.0.0-rc1 to the `ImHere.Functions` project. **Use version 3.0.0-rc1, NOT 3.0.0 due to a bug in the stable version with Twilio bindings**. This NuGet package contains the relevant classes for the binding.
+2. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
 
-1. Add a new parameter to the static `Run` method on the `SendLocation` static class called `messages`. This parameter will have a type of `ICollector<CreateMessageOptions>`. You'll need to add a `using` directive for the `Twilio.Rest.Api.V2010.Account` namespace.
+3. Add a new parameter to the static `Run` method on the `SendLocation` static class called `messages`. This parameter will have a type of `ICollector<CreateMessageOptions>`. You'll need to add a `using` directive for the `Twilio.Rest.Api.V2010.Account` namespace.
 
     ```cs
     [FunctionName("SendLocation")]
@@ -21,7 +21,7 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
                                                 ILogger log)
     ```
 
-1. Decorate the new `messages` parameter with the `TwilioSms` attribute as follows: 
+4. Decorate the new `messages` parameter with the `TwilioSms` attribute as follows: 
 
       ```cs
     [TwilioSms(AccountSidSetting = "TwilioAccountSid",AuthTokenSetting = "TwilioAuthToken", From = "+1xxxxxxxxx")]ICollector<CreateMessageOptions> messages,
@@ -43,8 +43,7 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
     > [!IMPORTANT]
     > Make sure to remove all spaces from the phone number.
 
-
-1. Function app settings can be configured locally inside the `local.settings.json` file. Add your Twilio account SID and Auth Token to this JSON file using the setting names that were passed to the `TwilioSMS` attribute.
+5. Function app settings can be configured locally inside the `local.settings.json` file. Add your Twilio account SID and Auth Token to this JSON file using the setting names that were passed to the `TwilioSMS` attribute.
 
     ```json
     {
@@ -63,9 +62,8 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
     > [!NOTE]
     > These local settings will be only for running locally. In a production app, these values would be your local development or test account credentials. Once the Azure Function has been deployed to Azure, you'll be able to configure the production values.
 
-     > [!NOTE]
+    > [!NOTE]
     > If you check your code into source control, these local application setting values will be checked in, too, so be careful not to check in any actual values in these files if your code is open source or public in any form.
-    
 
 ## Create the SMS messages
 

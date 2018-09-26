@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.10-knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
   title: Summary and clean-up
-  description: Knowledge Check
+  description: Knowledge check
   ms.date: 09/24/2018
   #TODO: Update with real author name.
   author: markjulmar
@@ -14,19 +14,8 @@ durationInMinutes: 2
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
-    title: Check your knowledge
+    title: Knowledge check
     questions:
-    - content: "What type of Azure Functions trigger allows your function to be invoked by an HTTP request?"
-      choices:
-       - content: "HTTP Trigger"
-         isCorrect: true
-         correctExplanation: "HTTP triggers are used to invoke functions from HTTP requests."
-       - content: "Event Hub Trigger"
-         isCorrect: false
-         incorrectExplanation: "HTTP triggers are used to invoke functions from HTTP requests."
-       - content: "Queue Trigger"
-         isCorrect: false
-         incorrectExplanation: "HTTP triggers are used to invoke functions from HTTP requests."
     - content: "How do you bind your function to Twilio to send SMS messages?"
       choices:
       - content: "By returning the SMS messages as the return value of the Function"
@@ -37,7 +26,7 @@ quiz:
       - content: "Direct call to the Twilio API"
         isCorrect: false
 
-    - content: "Where do you define your Twilio Account SID and Auth token when running your function locally?"
+    - content: "Where do you define your Twilio account SID and auth token when running your function locally?"
       choices:
       - content: "In the `local.settings.json` file."
         isCorrect: true

@@ -16,25 +16,39 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "Your astronomy team has a number of image-processing applications that require lots of compute power and memory to run. You want to quickly migrate these applications to Azure. Which of the following options should you choose?"
+
+    - content: "Suppose you have an existing application running locally on your own server. You need additional capacity but prefer to move to Azure instead of buying upgraded on-premises hardware. Which compute option would likely give you the quickest route to getting your application running in Azure?"
       choices:
-      - content: "Azure Kubernetes Service (AKS)"
+      - content: "Serverless computing"
         isCorrect: false
-        incorrectExplanation: "App Service is fully managed and scales automatically. This allows your team to focus on what their good at, writing code."
-      - content: "Service Fabric"
+        incorrectExplanation: "Converting to a serverless computing model would likely require reorganizing your application to an event-based architecture."
+      - content: "Containers"
         isCorrect: false
-        incorrectExplanation: "App Service is fully managed and scales automatically. This allows your team to focus on what their good at, writing code."
-      - content: "App Service"
+        incorrectExplanation: "Converting to containers would require you to repackage your application. This might not be too difficult depending on your existing architecture, but it would take time and require some expertise with containers."
+      - content: "Virtual machines"
         isCorrect: true
-        correctExplanation: "App Service is fully managed and scales automatically. This allows your team to focus on what their good at, writing code."
-    - content: "Suppose your astronomy team has come up against astronomical calculations that are taking hours and even days to complete. Parallel execution does not seem to help much. Which of the following options should you choose?"
+        correctExplanation: "You have full control over the VM setup, so you can configure it to match your on-premises server. This will allow your existing application to run on the Azure VM with little or no change."
+
+    - content: "Imagine that you work on a photo-sharing application that runs on millions of mobile devices. Demand is unpredictable because you see a spike in usage whenever a locally or nationally significant event occurs. Which Azure compute resource is the best match for this workload?"
       choices:
-      - content: "Cloud Services"
-        isCorrect: false
-        incorrectExplanation: "Azure Batch provides cloud-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs."
-      - content: "Azure Batch"
+      - content: "Serverless computing"
         isCorrect: true
-        correctExplanation: "Azure Batch provides cloud-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs."
-      - content: "Container Instances"
+        correctExplanation: "The photo-sharing app is event driven and needs to handle unpredictable demand. Serverless computing is a good fit for this because it is event based and can scale instantly to process spikes in traffic. It should also be a cost-effective choice because you will pay for compute time only when processing user data."
+      - content: "Containers"
         isCorrect: false
-        incorrectExplanation: "Azure Batch provides cloud-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs."
+        incorrectExplanation: "The startup time for a container instance is typically a few seconds. This might not provide quick enough scaling to respond to a sharp spike in demand."
+      - content: "Virtual machines"
+        isCorrect: false
+        incorrectExplanation: "A VM can take a few minutes to start. This might not provide quick enough scaling to respond to a sharp spike in demand."
+
+    - content: "The compute options give you different levels of control over the configuration of the environment in which your application runs. Which of the following lists the compute options in order from \"most control\" to \"least control\"?"
+      choices:
+      - content: "Serverless computing, containers, virtual machines"
+        isCorrect: false
+        incorrectExplanation: "Serverless computing gives you the least control; it completely abstracts the underlying hosting environment."
+      - content: "Containers, serverless computing, virtual machines"
+        isCorrect: false
+        incorrectExplanation: "Containers give you limited control over the environment; for example, you choose the underlying operating system."
+      - content: "Virtual machines, containers, serverless computing"
+        isCorrect: true
+        correctExplanation: "Virtual machines give you full control over the environment. Containers give you limited control. Serverless computing does not allow you to do any infrastructure configuration."
