@@ -2,7 +2,7 @@
 uid: learn.interactive-deep-learning
 metadata:
   title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
-  description: Learn to train deep learning models with Juypter, PyTorch and the Data Science Virtual Machine.
+  description: Learn to train deep learning models with Jupyter, PyTorch and the Data Science Virtual Machine.
   ms.date: 09/24/2018
   #TODO: Update with real author name.
   author: markjulmar
@@ -12,7 +12,7 @@ metadata:
   #TODO: Update support contact.
   #ms.learn-contact: smmark
 title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
-summary: Learn to train deep learning models with Juypter, PyTorch and the Data Science Virtual Machine.
+summary: Learn to train deep learning models with Jupyter, PyTorch and the Data Science Virtual Machine.
 abstract: |
   In this module, you will:
   - Describe deep learning and the Azure Data Science Virtual Machine (DSVM)
