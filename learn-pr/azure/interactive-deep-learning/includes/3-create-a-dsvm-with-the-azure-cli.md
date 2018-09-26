@@ -56,7 +56,7 @@ We're going to create our VM using an Azure Resource Manager template. The templ
     |vmName     |   `<HOSTNAME>`      |  Choose a name for the new virtual machine. Your name must begin with a letter and contain only lowercase letters and numbers. Try to choose a unique name, such as one that includes your initials and your birth year. |
     |vmSize     |  Standard_DS2_v2       |  This VM size will work fine for this exercise, but you are free to change it. A list of available vm sizes can be found here [Sizes for Linux virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/sizes?azure-portal=true)       |
 
-1. Save your changes in `parameter_file.json` and close the text editor.
+1. Select the three ellipses (**...**) to the top right of the editor and then select **Save** from the menu to save the file as `parameter_file.json` and close the text editor.
 
     > [!IMPORTANT]
     > Remember the values you chose for adminUsername, adminPassword and vmName. We'll use them again in this exercise.
