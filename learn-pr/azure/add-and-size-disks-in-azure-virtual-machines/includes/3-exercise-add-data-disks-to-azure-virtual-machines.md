@@ -164,7 +164,7 @@ Look for the 64 GB drive we created - here you can see it's **sdc** and it's not
 
 1. Next, we need to write a file system to the partition with the `mkfs` command. We will need to specify the file system type and device name that we got from the `fdisk` output:
     - Pass `-t ext4` to create an _ext4_ filesystem.
-    - The device name is `/dev/sdc`.
+    - The device name is `/dev/sdc1`.
 
     ```bash
     sudo mkfs -t ext4 /dev/sdc1
