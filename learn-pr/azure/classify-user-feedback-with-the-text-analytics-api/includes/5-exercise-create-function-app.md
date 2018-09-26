@@ -36,9 +36,11 @@
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use a Queue trigger. The runtime will poll a queue and start this function to process a new message.
 
-1. Select the Add (__+__) button to the right of **Functions**. 
+1. Expand your new function app, then hover over the functions collection and select the Add (**+**) button next to **Functions**. This action starts the function creation process. The following animation illustrates this action.
 
-1. Select **In-portal** and then **continue** at the bottom of the page.
+    ![Animation of the plus sign appearing when the user hovers over the functions menu item.](../media/3-func-app-plus-hover-small.gif)
+
+1. On the **Get started quickly** page, select **Custom function** under the **Get started on your own** section.
 
 1. Select **JavaScript** on the **Queue trigger** template list entry.
 
