@@ -45,9 +45,6 @@ Let's create a function app in the Azure portal.
 1. Create a new storage account. Azure will give it a name based on the app name. You can change it if you like, but it must also be unique.
 
 1. Make sure that Azure Application Insights is **On** and select the region closest to you (or your customers).
-  When you're finished, your configuration should look like the config in the following screenshot.
-
-  ![Screenshot of the Azure portal showing the Function App Create blade with all fields configured as per the preceding instructions.](../media/3-create-function-app-settings.png)
 
 1. Select **Create**; deployment will take a few minutes. You'll receive a notification once it's complete.
 
@@ -55,10 +52,10 @@ Let's create a function app in the Azure portal.
 
 1. From the Azure portal left-hand menu, select **Resource groups**. You should then see a resource group named **<rgn>[sandbox resource group name]</rgn>** in the list of available groups.
 
-  ![Screenshot of the Azure portal showing the Resource groups blade with the Resource groups menu item and <rgn>[sandbox resource group name]</rgn> list item highlighted.](../media/3-resource-group.png)
+    ![Screenshot of the Azure portal showing the Resource groups blade with the Resource groups menu item and <rgn>[sandbox resource group name]</rgn> list item highlighted.](../media/3-resource-group.png)
 
 1. Select the resource group **<rgn>[sandbox resource group name]</rgn>**. You should then see a resource list like the following list.
 
-  ![Screenshot of the Azure portal showing all resources within the <rgn>[sandbox resource group name]</rgn> group, including entries for an App Service plan, a Storage account, Application Insights resource, and an App Service.](../media/3-resource-list.png)
+    ![Screenshot of the Azure portal showing all resources within the <rgn>[sandbox resource group name]</rgn> group, including entries for an App Service plan, a Storage account, Application Insights resource, and an App Service.](../media/3-resource-list.png)
 
 The item with the lightning bolt Function icon, listed as an App Service, is your new function app. You can click on it to open the details about the new function - it has a public URL assigned to it, if you open that in a browser, you should get a default web page that indicates your Function App is running.
