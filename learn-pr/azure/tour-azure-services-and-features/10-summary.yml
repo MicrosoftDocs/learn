@@ -13,3 +13,41 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/10-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following is an example of an Azure compute service?'
+    choices:
+    - content: Azure Virtual Machine
+      isCorrect: true
+      correctExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
+    - content: Azure Load Balancer
+      isCorrect: false
+      incorrectExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
+    - content: Azure Table Storage
+      isCorrect: false
+      incorrectExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
+    - content: Azure Redis Cache
+      isCorrect: false
+      incorrectExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
+
+  - content: 'An Azure dashboard is stored as which type of file?'
+    choices:
+    - content: XML
+      isCorrect: false
+      incorrectExplanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+    - content: JSON
+      isCorrect: true
+      correctExplanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+    - content: PNG
+      isCorrect: false
+      incorrectExplanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+
+  - content: 'True or false: Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources?'
+    choices:
+    - content: "True"
+      isCorrect: true
+      correctExplanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."
