@@ -42,12 +42,11 @@ When a database is replicated, the throughput and storage are replicated equally
     ---|---|---
     Subscription|*Concierge Subscription*|Select your Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
     Resource Group|Use existing<br><br><rgn>[sandbox resource group name]</rgn>|Select **Use existing**, and then enter <rgn>[sandbox resource group name]</rgn>.
-        Account Name|*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.
+    Account Name|*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.
     API|SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select **SQL** because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API.|
     Location|*Select the region closest to you*|Select the region closest to you from the list of regions above.
     Geo-Redundancy| Disable | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as you will replicate the database later.
     Multi-region Writes | Enable | This setting enables you to write to multiple regions at the same time. This setting can only be configured during account creation.
-    Virtual Network|Leave blank|Leave virtual networks blank for now. This can be configured later.
 
 1. Click **Review + Create**.
 
