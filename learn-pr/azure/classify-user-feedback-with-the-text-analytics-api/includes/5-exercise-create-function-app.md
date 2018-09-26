@@ -14,9 +14,10 @@
     | **Subscription** | **Concierge Subscription** | The subscription under which this new function app is created. |
     | **Resource group**|  **<rgn>[sandbox resource group name]</rgn>** | Name for the resource group in which to create your function app.<br/><br/>Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are kept together. |
     | **OS** | Windows | The operating system that hosts the function app.  |
-    | **Hosting** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this [serverless](https://azure.microsoft.com/overview/serverless-computing/) hosting, you only pay for the time your functions run.   |
+    | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this [serverless](https://azure.microsoft.com/overview/serverless-computing/) hosting, you only pay for the time your functions run.   |
     | **Location** | Select the same location you used earlier. | Choose a region near you or near other services your functions access.<br/><br/>Select the same region that you used when creating the Text Analytics API account in the last exercise. |
-    | **Storage account** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
+    | **Runtime Stack** | JavaScript | The sample code in this module is written in JavaScript.  |
+    | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
 
 1. Select **Create** to provision and deploy the function app.
 
@@ -35,9 +36,9 @@
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use a Queue trigger. The runtime will poll a queue and start this function to process a new message.
 
-1. Expand your new function app, and then hover over the **Functions** collection. Select the Add (__+__) button when it appears to start the function creation process.
+1. Select the Add (__+__) button to the right of **Functions**. 
 
-1. In the **Get started quickly** page that now appears, select **Custom function** at the bottom of the page, which loads the list of available function templates.
+1. Select **In-portal** and then **continue** at the bottom of the page.
 
 1. Select **JavaScript** on the **Queue trigger** template list entry.
 
