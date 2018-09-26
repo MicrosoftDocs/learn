@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-azure-bot-services-bot.7-summary
+title: Delete the resource group
+metadata:
+  title: Delete the resource group
+  description: Delete the resource group
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-summary.md)]
