@@ -39,8 +39,7 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     API|SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select **SQL** because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API.|
     Location|*Select the region closest to you from the list above*|Select the location where the database should be located.
     Geo-Redundancy| Disable | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later.
-    Multi Master | Disable | This setting enables you to write to multiple regions at the same time. This setting can only be configured during account creation. Leave this set to disabled for now for this unit.
-    Virtual Network|Leave blank|Leave virtual networks blank for now. This can be configured later.
+    Multi-region Writes | Enable | This setting enables you to write to multiple regions at the same time.
 
 1. Click **Review + Create**.
 
