@@ -13,16 +13,16 @@ quiz:
 
   - content: 'Which of these things is *not* a characteristic of toil (in the SRE context)? '
     choices:
-    - content: 'the work is repetitive'
+    - content: 'The work is repetitive'
       isCorrect: false
       incorrectExplanation: 'Toil is repetitive in nature.'
-    - content: 'the work is tracked in a ticket system'
+    - content: 'The work is tracked in a ticket system'
       isCorrect: true
       correctExplanation: 'How the work is tracked is not a characteristic of toil. While toil is often tracked this way, ticket systems could be used to track other, more productive kinds of work.'
-    - content: 'the work provides no lasting value'
+    - content: 'The work provides no lasting value'
       isCorrect: false
       incorrectExplanation: 'Work that is toil has no enduring value.'
-    - content: 'the work is largely manual in nature and not automated'
+    - content: 'The work is largely manual in nature and not automated'
       isCorrect: false
       incorrectExplanation: 'Toil is almost always manual work that could be automated.'
 

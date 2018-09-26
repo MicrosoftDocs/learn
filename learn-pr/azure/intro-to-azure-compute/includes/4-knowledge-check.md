@@ -1,1 +1,1 @@
-To help you remember what you've learned, read the two scenarios involving the astronomy team and answer the associated questions.
+To help you remember what you've learned, please work through the following questions.
