@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-site-reliability-engineering.2-what-is-sre-and-why-does-it-matter
+title: What is SRE and why does it matter?
+metadata:
+  title: What is SRE and why does it matter?
+  description: What is SRE and why does it matter?
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-sre-and-why-does-it-matter.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which property of a service, system or product does SRE primarily focus on?'
+    choices:
+    - content: 'Security'
+      isCorrect: false
+      incorrectExplanation: 'Security is definitely important in SRE, but reliability is the primary focus of this engineering discipline.'
+    - content: 'Cost to run'
+      isCorrect: false
+      incorrectExplanation: 'Expenses and resource usage are definitely important in SRE, but reliability is the primary focus of this engineering discipline.'
+    - content: 'Reliability'
+      isCorrect: true
+      correctExplanation: 'SRE''s primary focus is indeed on reliability.'
+    - content: 'Maintainability'
+      isCorrect: false
+      incorrectExplanation: 'The creation of maintainable services, systems or products is definitely important in SRE, but reliability is the primary focus of this engineering discipline.'
+
+  - content: 'For almost all services, systems and products, what level of reliability does an SRE strive for?'
+    choices:
+    - content: '100% is the goal'
+      isCorrect: false
+      incorrectExplanation: 'For most contexts, it is not possible to hit 100% reliable. Even if it was, it would be cost and resource prohibitive (an as waste of both).'
+    - content: 'It should be as reliable as possible'
+      isCorrect: false
+      incorrectExplanation: 'It is important to find the appropriate level of reliability for a goal since efforts and resources beyond that are a waste. Plus "as possible" is too vague to be useful.'
+    - content: 'A specific level indentified as appropriate by the key stakeholders'
+      isCorrect: true
+      correctExplanation: 'Setting a goal for a service is a collaborative effort between SRE, development resources and the business decision makers.'

@@ -456,3 +456,8 @@ achievements:
   summary: Distribute your data globally with Azure Cosmos DB
   # TODO: replace with correct badge
   iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg
+- uid: learn.intro-to-site-reliability-engineering.badge
+  type: badge
+  title: Introduction to Site Reliability Engineering
+  summary: Introduction to Site Reliability Engineering
+  iconUrl: /learn/achievements/intro-to-site-reliability-engineering-sre.svg
