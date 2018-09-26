@@ -4,15 +4,13 @@ In this unit, we're going to create an Azure function that displays the name and
 
 Again, let's continue using our existing Azure Functions application and add a blob trigger.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Navigate to the **All resources** screen and select your function app.
 
 1. Point to **Functions** and select the plus (+) icon.
 
 1. Select **Blob trigger**.
-
-1. Select **C#** as the language.
 
 1. Leave the **Name** set to the default value.
 
