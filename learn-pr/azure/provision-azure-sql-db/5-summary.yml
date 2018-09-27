@@ -13,3 +13,39 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-summary.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Who's responsible for performing OS and software updates on your Azure SQL databases?"
+      choices:
+      - content: "You are. It's up to you to periodically log in and install the latest security patches and updates."
+        isCorrect: false
+        incorrectExplanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering, meaning much less maintenance to manage yourself."
+      - content: "Microsoft Azure. We manage the hardware, software updates, and OS patches for you."
+        isCorrect: true
+        correctExplanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering. Azure manages the hardware, software updates, and OS patches for you."
+      - content: "No one. Your database stays with its original OS and software configuration."
+        isCorrect: false
+        incorrectExplanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering. Think about how PaaS services are typically managed and updated."
+    - content: "What is an _Azure SQL logical server_?"
+      choices:
+      - content: "An administrative container for your databases."
+        isCorrect: true
+        correctExplanation: "You can control logins, firewall rules, and security policies through the logical server."
+      - content: "Another name for an Azure SQL database instance."
+        isCorrect: false
+        incorrectExplanation: "Remember that you can have multiple database instances. Is there a way to administer them collectively?"
+      - content: "A server that defines the logical rules that sort and compare data."
+        isCorrect: false
+        incorrectExplanation: "_Collation_ refers to the rules that sort and compare data."
+    - content: "Your Azure SQL database provides adequate storage and compute power. But you find that you need additional IO throughput. Which performance model might you use?"
+      choices:
+      - content: "DTU"
+        isCorrect: false
+        incorrectExplanation: "DTU, or Database Transaction Unit, provides a simple, preconfigured purchase option. To increase IO throughput, you would need to move to a higher tier that also increases your storage and compute power, things you don't need."
+      - content: "vCore"
+        isCorrect: true
+        correctExplanation: "vCore gives you greater control over what compute and storage resources you create and pay for. You can increase IO throughput but keep the existing amount of compute and storage."
+      - content: "SQL elastic pool"
+        isCorrect: false
+        incorrectExplanation: "SQL elastic pools enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. This option won't help with IO performance because you're working with just one database."
