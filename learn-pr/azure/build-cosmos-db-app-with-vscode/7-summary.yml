@@ -16,31 +16,31 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "You are developing a dotnet core application that accesses Azure Cosmos DB in Visual Studio Code. You need to include the connection string and account key for your database in your application configuration. The most convenient way to get this information to put in your project is probably:"
+  - content: "Suppose you are using Visual Studio Code to develop a .NET Core application that accesses Azure Cosmos DB. You need to include the connection string for your database in your application configuration. What is the most convenient way to get this information into your project?"
     choices:
-    - content: "Directly from VS Code"
+    - content: "Directly from Visual Studio Code"
       isCorrect: true
-      correctExplanation: "The Azure Cosmos DB extension gives direct access to administer and create Azure Cosmos DB accounts and databases."
+      correctExplanation: "The Azure Cosmos DB extension lets you administer and create Azure Cosmos DB accounts and databases from within Visual Studio Code."
     - content: "From the Azure portal"
       isCorrect: false
       incorrectExplanation: "The Azure portal does provide this information, but if you're already in Visual Studio Code, going to the portal is unlikely to be the most convenient choice."
     - content: "Using the Azure CLI"
       isCorrect: false
-      incorrectExplanation: "While this is a good choice, especially since VS Code has a built-in terminal, it requires memorizing or looking up commands, so for many, it is not as convenient as the VS Code extension."
+      incorrectExplanation: "While this is a good choice, especially since Visual Studio Code has a built-in terminal, it does require knowledge of the required commands. This may not be as convenient as the Visual studio Code extension."
  
-  - content: "When working with Azure Cosmos DB's SQL API, which of these can be used for performing CRUD operations?"
+  - content: "When working with Azure Cosmos DB's SQL API, which of these can be used to perform CRUD operations?"
     choices:
     - content: "LINQ"
       isCorrect: true
-      correctExplanation: "LINQ and SQL are two of the valid methods for querying against the SQL API."
+      correctExplanation: "LINQ and SQL are two of the valid methods for querying the SQL API."
     - content: "Apache Cassandra client libraries"
       isCorrect: false
-      incorrectExplanation: "Apache Cassandra libraries can work with Azure Cosmos DBs Cassandra API but not with the SQL API."
+      incorrectExplanation: "Apache Cassandra libraries can work with Azure Cosmos DB’s Cassandra API but not with the SQL API."
     - content: "Azure Table Storage libraries"
       isCorrect: false
       incorrectExplanation: "Azure Table Storage libraries can work with Azure Cosmos DB's Table API but not with the SQL API."
  
-  - content: "When working with the Azure Cosmos DB Client SDK's DocumentClient class, you use a NOSQL model. Using this class, you want to update the FirstName field of a Person Document from 'Ann' to 'Fran'. Which of these would you do:"
+  - content: "When working with the Azure Cosmos DB Client SDK's DocumentClient class, you use a NOSQL model. How would you use this class to change the FirstName field of a Person Document from 'Ann' to 'Fran'?"
     choices:
     - content: "Call UpdateDocumentAsync with FirstName=Fran"
       isCorrect: false
