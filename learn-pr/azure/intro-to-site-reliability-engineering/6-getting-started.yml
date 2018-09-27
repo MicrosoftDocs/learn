@@ -4,6 +4,12 @@ title: Getting started with SRE
 metadata:
   title: Getting started with SRE
   description: Getting started with SRE
+  ms.date: 09/26/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/6-getting-started.md)]

@@ -4,6 +4,12 @@ title: "Key SRE principles and practices: The human side of SRE"
 metadata:
   title: "Key SRE principles and practices: The human side of SRE"
   description: "Key SRE principles and practices: The human side of SRE"
+  ms.date: 09/26/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-key-principles-2-human-side-of-sre.md)]
