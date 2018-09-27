@@ -36,10 +36,6 @@ If you wish to run multiple instances of an application on a single virtual mach
   :::column-end:::
 :::row-end:::
 
-#### What are containers?
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yMhY]
-
 #### VMs versus containers
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuaq]
