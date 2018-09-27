@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: 'Azure Service Bus queues'
       isCorrect: true
-      correctExplanation: "Azure Service Bus queues handle messages in the same order they're added and also support transactions. This means that if one message in a transaction fails to deliver, all messages in the transaction will not be delivered."
+      correctExplanation: "Azure Service Bus queues handle messages in the same order they're added and also support transactions. This means that if one message in a transaction fails to be added to the queue, all messages in the transaction will not be added."
     - content: 'Azure Storage queues'
       isCorrect: false
       incorrectExplanation: "Even though a queue is a first-in-first-out data structure, Azure Storage queues do not guarantee it."
@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: 'Queue'
       isCorrect: false
-      incorrectExplanation: "A queue has one destination component at a time and it picks up messages at the front of the queue. This means that each message is delivered to only one receiver."
+      incorrectExplanation: "A queue can only have one destination component at a time, which means that each message in the queue is delivered to only one receiver."
     - content: 'Topic'
       isCorrect: true
       correctExplanation: "A topic allows multiple destination components to subscribe. This means that each message can be delivered to multiple receivers."
