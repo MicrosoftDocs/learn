@@ -76,11 +76,7 @@ Now that IIS is set up, let's verify that it's running.
     > [!NOTE]
     > This `--query` argument makes this command a bit complex. But you'll be a pro at this as you dig in and explore Azure.
 
-    You see your VM's public IP address. Here's an example. Note the IP address that you see.
-
-    ```output
-    104.211.9.245
-    ```
+    You see your VM's public IP address, for example, 104.211.9.245.
 
 1. In a new browser tab, navigate to your VM's IP address. You see your welcome message and your VM's name.
 
@@ -148,11 +144,7 @@ Now that Nginx is set up, let's verify that it's running.
     > [!NOTE]
     > This `--query` argument makes this command a bit complex. But you'll be a pro at this as you dig in and explore Azure.
 
-    You see your VM's public IP address. Here's an example. Note the IP address that you see.
-
-    ```output
-    137.135.110.210
-    ```
+    You see your VM's public IP address, for example, 104.211.9.245.
 
 1. In a new browser tab, navigate to your VM's IP address. You see your welcome message and your VM's name.
 
