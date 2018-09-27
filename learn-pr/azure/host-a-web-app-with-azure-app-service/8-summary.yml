@@ -13,3 +13,39 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "True or false: Azure App service can automatically scale your web application to meet traffic demand?"
+    choices:
+    - content: "True"
+      isCorrect: true
+      correctExplanation: "Azure App service has built-in auto scale support and depending on the usage of your web app, it can scale up or down."
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "Azure App service has built-in auto scale support and depending on the usage of your web app, it can scale up or down."
+
+  - content: "Which of the following is not a valid automated deployment source?"
+    choices:
+    - content: "GitHub"
+      isCorrect: false
+      incorrectExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+    - content: "Visual Studio Team Services"
+      isCorrect: false
+      incorrectExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+    - content: "Google Drive"
+      isCorrect: True
+      correctExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+    - content: "Dropbox"
+      isCorrect: false
+      incorrectExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+
+  - content: "True or false: deployment slots are useful if you want to minimize downtime when updating your web application?"
+    choices:
+    - content: "True"
+      isCorrect: true
+      correctExplanation: "Using deployment slots you can make changes to your web application and then swap it into production with no downtime."
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "Using deployment slots you can make changes to your web application and then swap it into production with no downtime."

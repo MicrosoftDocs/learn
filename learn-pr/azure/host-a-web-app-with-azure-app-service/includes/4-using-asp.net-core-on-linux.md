@@ -2,7 +2,7 @@
 
 Azure App Service allows you to use your favorite web technology, including Node.js, PHP, or .NET Core.
 
-Here, you will learn to creat an ASP.NET Core application using the .NET command-line interface (CLI).
+Here, you will learn to create an ASP.NET Core application using the .NET command-line interface (CLI).
 
 ## What is ASP.NET Core?
 
