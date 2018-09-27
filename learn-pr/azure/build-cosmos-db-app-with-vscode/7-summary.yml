@@ -16,11 +16,11 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "You are developing a dotnet core application that accesses Azure Cosmos DB in Visual Studio Code. You need to include the connection string and account key for your database in your code. The most convenient way to get this information to put in your code is probably:"
+  - content: "You are developing a dotnet core application that accesses Azure Cosmos DB in Visual Studio Code. You need to include the connection string and account key for your database in your application configuration. The most convenient way to get this information to put in your project is probably:"
     choices:
     - content: "Directly from VS Code"
       isCorrect: true
-      correctExplanation: "The Azure Cosmos DB extension gives direct access to your administor and create Azure Cosmos DB accounts and databases."
+      correctExplanation: "The Azure Cosmos DB extension gives direct access to administer and create Azure Cosmos DB accounts and databases."
     - content: "From the Azure portal"
       isCorrect: false
       incorrectExplanation: "The Azure portal does provide this information, but if you're already in Visual Studio Code, going to the portal is unlikely to be the most convenient choice."
@@ -38,7 +38,7 @@ quiz:
       incorrectExplanation: "Apache Cassandra libraries can work with Azure Cosmos DBs Cassandra API but not with the SQL API."
     - content: "Azure Table Storage libraries"
       isCorrect: false
-      incorrectExplanation: "Azure Table Storage libraries can work with Azure Cosmos DBs Table API but not with the SQL API."
+      incorrectExplanation: "Azure Table Storage libraries can work with Azure Cosmos DB's Table API but not with the SQL API."
  
   - content: "When working with the Azure Cosmos DB Client SDK's DocumentClient class, you use a NOSQL model. Using this class, you want to update the FirstName field of a Person Document from 'Ann' to 'Fran'. Which of these would you do:"
     choices:
