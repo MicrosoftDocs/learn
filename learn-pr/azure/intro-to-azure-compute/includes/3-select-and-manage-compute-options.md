@@ -40,7 +40,7 @@ If you wish to run multiple instances of an application on a single virtual mach
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuaq]
 
-However, containers are commonly used to create solutions using a microservice architecture. Containers are often used to create solutions using a microservice architecture, as they are often used to break solutions into smaller pieces. For example, you may split a web site into a container hosting your front end, another hosting your back end, and a third for storage. This allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
+Containers are often used to create solutions using a microservice architecture, as they are often used to break solutions into smaller pieces. For example, you may split a web site into a container hosting your front end, another hosting your back end, and a third for storage. This allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
 
 #### What is a microservice?
 
