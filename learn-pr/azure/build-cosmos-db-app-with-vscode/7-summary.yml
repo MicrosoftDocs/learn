@@ -12,3 +12,42 @@ title: Summary
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+  - content: "You are developing a dotnet core application that accesses Azure Cosmos DB in Visual Studio Code. You need to include the connection string and account key for your database in your code. The most convenient way to get this information to put in your code is probably:"
+    choices:
+    - content: "Directly from VS Code"
+      isCorrect: true
+      correctExplanation: "The Azure Cosmos DB extension gives direct access to your administor and create Azure Cosmos DB accounts and databases."
+    - content: "From the Azure portal"
+      isCorrect: false
+      incorrectExplanation: "The Azure portal does provide this information, but if you're already in Visual Studio Code, going to the portal is unlikely to be the most convenient choice."
+    - content: "Using the Azure CLI"
+      isCorrect: false
+      incorrectExplanation: "While this is a good choice, especially since VS Code has a built-in terminal, it requires memorizing or looking up commands, so for many, it is not as convenient as the VS Code extension."
+ 
+  - content: "When working with Azure Cosmos DB's SQL API, which of these can be used for performing CRUD operations?"
+    choices:
+    - content: "LINQ"
+      isCorrect: true
+      correctExplanation: "LINQ and SQL are two of the valid methods for querying against the SQL API."
+    - content: "Apache Cassandra client libraries"
+      isCorrect: false
+      incorrectExplanation: "Apache Cassandra libraries can work with Azure Cosmos DBs Cassandra API but not with the SQL API."
+    - content: "Azure Table Storage libraries"
+      isCorrect: false
+      incorrectExplanation: "Azure Table Storage libraries can work with Azure Cosmos DBs Table API but not with the SQL API."
+ 
+  - content: "When working with the Azure Cosmos DB Client SDK's DocumentClient class, you use a NOSQL model. Using this class, you want to update the FirstName field of a Person Document from 'Ann' to 'Fran'. Which of these would you do:"
+    choices:
+    - content: "Call UpdateDocumentAsync with FirstName=Fran"
+      isCorrect: false
+      incorrectExplanation: "The DocumentClient class doesn't have an UpdateDocumentAsync method. Updating a single field is not consistent with the document-style NOSQL approach."
+    - content: "Call UpsertDocumentAsync with an updated Person object"
+      isCorrect: false
+      incorrectExplanation: "While this would work, it isn't the minimum necessary access to meet our requirements. Upsert operations will replace a document if its key already exists or add a new document if not. We don't want to add a new one, so using this method risks introducing subtle, hard to track bugs."
+    - content: "Call ReplaceDocumentAsync with an updated Person object"
+      isCorrect: true
+      correctExplanation: "ReplaceDocumentAsync will replace the existing document with the new one. In this case we'd intend the old and new to be the same other than FirstName."
