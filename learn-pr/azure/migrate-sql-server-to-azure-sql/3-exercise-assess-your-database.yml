@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.3-exercise-assess-your-database
+title: Assessing your database
+metadata:
+  title: Assessing your database
+  description: Assessing your database
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-assess-your-database.md)]
