@@ -26,7 +26,7 @@ quiz:
       incorrectExplanation: "The Azure portal does provide this information, but if you're already in Visual Studio Code, going to the portal is unlikely to be the most convenient choice."
     - content: "Using the Azure CLI"
       isCorrect: false
-      incorrectExplanation: "While this is a good choice, especially since Visual Studio Code has a built-in terminal, it does require knowledge of the required commands. This may not be as convenient as the Visual studio Code extension."
+      incorrectExplanation: "While this is a good choice, especially since Visual Studio Code has a built-in terminal, it does require knowledge of the required commands. This may not be as convenient as the Visual Studio Code extension."
  
   - content: "When working with Azure Cosmos DB's SQL API, which of these can be used to perform CRUD operations?"
     choices:
