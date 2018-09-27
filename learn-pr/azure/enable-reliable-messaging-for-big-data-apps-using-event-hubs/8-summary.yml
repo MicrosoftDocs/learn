@@ -26,7 +26,7 @@ quiz:
       isCorrect: false
       incorrectExplanation: "Publishers can use either HTTPS or AMQP. HTTP is not ideal for frequent publishing because it establishes a new connection for each publication."
  
-  - content: "If not otherwise specified, a new Event Hub will be created with this many partitions."
+  - content: "By default, how many partitions will a new Event Hub have?"
     choices:
     - content: "1"
       isCorrect: false
