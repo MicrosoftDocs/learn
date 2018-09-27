@@ -20,11 +20,11 @@ quiz:
       choices:
       - content: "You're working with highly structured, relational data."
         isCorrect: false
-        incorrectExplanation: "MongoDB, the \"M\" in the MEAN stack, is a NoSQL database. A NoSQL database is non-relational, which means it doesn't require data to be structured as it does with SQL Server or other relational databases."
+        incorrectExplanation: "MongoDB, the \"M\" in the MEAN stack, is a NoSQL database. A NoSQL database is non-relational, which means it doesn't require data to be structured like SQL Server or other relational databases."
       - content: "MEAN apps run faster than ones created with other development stacks."
         isCorrect: false
         incorrectExplanation: "There are many development stacks out there. No one is necessarily faster or better than others. Each was created with a certain kind of app and developer skill set in mind."
-      - content: "JavaScript is your favorite programming language."
+      - content: "Everyone on your development team is an expert with JavaScript."
         isCorrect: true
         correctExplanation: "The MEAN stack greatly relies on JavaScript. JavaScript appears in both the client side and the server side of your web app."
     - content: "What's a NoSQL database?"
@@ -40,9 +40,9 @@ quiz:
         incorrectExplanation: "NoSQL databases are non-relational, which means that it doesn't require data to be structured in a pre-defined way."
     - content: "What's the role of AngularJS in the MEAN stack?"
       choices:
-      - content: "It binds, or connects, the UI with business logic."
+      - content: "AngularJS implements data binding for HTML and JavaScript. For example, you can use AngularJS to retrieve items from a database and display those items in the UI."
         isCorrect: true
-        correctExplanation: "For example, you can use AngularJS to retrieve items from a database and display those items in the UI."
+        correctExplanation: "Data binding helps keep your HTML clean and minimal. AngularJS displays updates immediately to the user when the underlying data changes."
       - content: "It's a browser plugin that gets installed on your user's computer."
         isCorrect: false
         incorrectExplanation: "You don't technically install AngularJS &mdash; it's simply JavaScript code that you reference from a script tag in your HTML page."
