@@ -13,3 +13,39 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Cloud security is a shared responsibility between you and your cloud provider. Which category of cloud services requires the greatest security effort on your part?"
+      choices:
+      - content: "Infrastructure as a service (IaaS)"
+        isCorrect: true
+        correctExplanation: "At this level, the cloud provider provides physical security to compute resources. However, it's your responsibility to patch and secure your operating systems and software, as well as configure your network to be secure."
+      - content: "Platform as a service (PaaS)"
+        isCorrect: false
+        incorrectExplanation: "At this level, the cloud provider handles many security concerns, more than with other categories. This includes providing physical security and keeping operating systems patched and up to date."
+      - content: "Software as a service (SaaS)"
+        isCorrect: false
+        incorrectExplanation: "At this level, the cloud provider handles most security concerns for you. Your main responsibility is to provide your organization's users with proper access to the software."
+    - content: "Which of these helps you most easily disable an account when an employee leaves your company?"
+      choices:
+      - content: "Enforce multi-factor authentication (MFA)"
+        isCorrect: false
+        incorrectExplanation: "While MFA provides additional security by requiring two or more elements for full authentication, it doesn't help you disable inactive accounts."
+      - content: "Monitor sign-on attempts"
+        isCorrect: false
+        incorrectExplanation: "While monitoring can help you discover when someone attempts unauthorized access to one of your services, monitoring alone won't help you disable inactive accounts."
+      - content: "Enable single sign-on (SSO)"
+        isCorrect: true
+        correctExplanation: "SSO centralizes user identity, so you can disable an inactive account in a single step."
+    - content: "Which of these is the _strongest_ way to protect sensitive customer data?"
+      choices:
+      - content: "Encrypt data as it sits in your database"
+        isCorrect: false
+        incorrectExplanation: "While encrypting your data as it sits in your database (encryption at rest) is important, your data may be read by others as it travels over the network between systems."
+      - content: "Encrypt data as it travels over the network"
+        isCorrect: false
+        incorrectExplanation: "While encrypting your data as it travels over the network (encryption in transit) is important, your data may be vulnerable as it sits in your database."
+      - content: "Encrypt data both as it sits in your database and as it travels over the network"
+        isCorrect: true
+        correctExplanation: "Encrypting your data at all times, both as it sits in your database and as it travels over the network, minimizes the opportunity for an attacker to access your data in plain text."
