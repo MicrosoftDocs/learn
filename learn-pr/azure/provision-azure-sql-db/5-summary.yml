@@ -16,17 +16,17 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "Who's responsible for performing OS and software updates on your Azure SQL databases?"
+    - content: "Who's responsible for performing software updates on your Azure SQL databases and the underlying OS?"
       choices:
       - content: "You are. It's up to you to periodically log in and install the latest security patches and updates."
         isCorrect: false
         incorrectExplanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering, meaning much less maintenance to manage yourself."
-      - content: "Microsoft Azure. We manage the hardware, software updates, and OS patches for you."
+      - content: "Microsoft Azure. Azure manages the hardware, software updates, and OS patches for you."
         isCorrect: true
         correctExplanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering. Azure manages the hardware, software updates, and OS patches for you."
       - content: "No one. Your database stays with its original OS and software configuration."
         isCorrect: false
-        incorrectExplanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering. Think about how PaaS services are typically managed and updated."
+        incorrectExplanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering. The cloud provider typically manages and updates PaaS services for you."
     - content: "What is an _Azure SQL logical server_?"
       choices:
       - content: "An administrative container for your databases."
