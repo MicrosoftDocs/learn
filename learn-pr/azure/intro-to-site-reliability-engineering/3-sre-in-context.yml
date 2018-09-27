@@ -4,6 +4,12 @@ title: SRE in context
 metadata:
   title: SRE in context
   description: SRE in context
+  ms.date: 09/26/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-sre-in-context.md)]

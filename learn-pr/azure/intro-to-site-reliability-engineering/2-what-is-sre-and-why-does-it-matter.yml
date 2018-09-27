@@ -4,6 +4,12 @@ title: What is SRE and why does it matter?
 metadata:
   title: What is SRE and why does it matter?
   description: What is SRE and why does it matter?
+  ms.date: 09/26/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-sre-and-why-does-it-matter.md)]
