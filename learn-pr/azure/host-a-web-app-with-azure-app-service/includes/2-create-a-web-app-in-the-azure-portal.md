@@ -18,7 +18,7 @@ This platform as a service (PaaS) offered by Microsoft Azure allows you to focus
 
 When it's time to host your own app, you visit the Azure portal and create a **Web App**. By creating a **Web App** in the Azure portal, you are actually creating a set of hosting resources in App Service, which you can use to host any web-based application that is supported by Azure, whether it be ASP.NET Core, Node.js, PHP, etc. The figure below shows how easy it is to configure the framework/language used by the app.
 
-![Web app settings](../media/2-web-app-settings.png)
+![Screenshot of the application settings to configure the web application](../media/2-web-app-settings.png)
 
 The Azure portal provides a template to create a web app. This template requires the following fields:
 
@@ -35,13 +35,13 @@ The Azure portal gives you the upper hand in managing, monitoring, and controlli
 
 Using the Azure portal, you can easily add **deployment slots** to an App Service web app. For instance, you can create a **staging** deployment slot where you can push your code to test on Azure. Once you are happy with your code, you can easily **swap** the staging deployment slot with the production slot. You do all this with a few simple mouse clicks in the Azure portal.
 
-![Deployment slots](../media/2-deployment-slots.png)
+![Screenshot of the staging deployment slot to test the deployments](../media/2-deployment-slots.png)
 
 ### Continuous integration/deployment support
 
 The Azure portal provides out-of-the-box continuous integration and deployment with Visual Studio Team Services, GitHub, Bitbucket, Dropbox, OneDrive, or a local Git repository on your development machine. You connect your web app with any of the above sources and App Service will do the rest for you by auto-syncing code and any future changes on the code into the web app. Furthermore, with Visual Studio Team Services, you can define your own build and release process that ends up compiling your source code, running the tests, building a release, and finally pushing the release into a web app every time you commit the code. All that happens implicitly without any need to intervene.
 
-![Configure continuous integration](../media/2-continuous-integration.PNG)
+![Screenshot to setup deployment option and choose source for the deployment source code](../media/2-continuous-integration.PNG)
 
 ### Integrated Visual Studio publishing and FTP publishing
 

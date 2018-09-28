@@ -22,10 +22,12 @@ Let's create a function app that we'll use throughout this entire module. A func
     | **Subscription** | Your subscription | The subscription under which this new function app is created. |
     | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
     | **OS** | Windows | The operating system that hosts the function app.  |
-    | **Hosting** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
-    | **Storage account** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
-    | **Location** | Select from the list | Choose the nearest one from the available locations listed below. |
+    | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
+    | **Location** | Select from the list | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below. |
+    | **Runtime Stack** | JavaScript | The sample code in this module is written in JavaScript.  |
+    | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
 
+    ### Sandbox regions
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Create** to provision and deploy the function app.
@@ -47,15 +49,23 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
 
-1. Expand your new function app, then hover over the functions collection and select the Add (**+**) button next to **Functions**. This action starts the function creation process. The following animation illustrates this action.
+<!-- Start temporary fix for issue #2498. -->
+> [!IMPORTANT]
+> The exercises in this module currently work with Azure Functions V1. Please follow these steps carefully to make sure your function app uses the V1 runtime version. 
 
-    ![Animation of the plus sign appearing when the user hovers over the functions menu item.](../media/3-func-app-plus-hover-small.gif)
+1. Select your function app in the **Function Apps** list.
+1. Select **Platform features**.
+1. In the **Platform features** screen, select **Function app settings** under **General Settings**.
+1. Select *~1* in the **Runtime version** .
+1. Close **Function app settings**.
+
+Our function app is now configured to use the Azure Functions V1 runtime. We can now continue to create our first function.
+<!-- End temporary fix for issue #2498. --> 
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
 
 1. On the **Get started quickly** page, select **Custom function** under the **Get started on your own** section.
 
-1. This will list all the templates, find the **HTTP Trigger** template and select JavaScript for the language.
-
-    ![Screenshot of the HTTP function creation box with JavaScript link highlighted](../media/3-http-function.png)
+1. This will list all the templates Select **HTTP Trigger** template from the list.
 
 1. On the **New Function** blade, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
 

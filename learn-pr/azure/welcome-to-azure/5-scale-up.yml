@@ -15,38 +15,15 @@ azureSandbox: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-scale-up.md)]
-# TODO: Currently cannot validate this task because you don't get the VM size through the Azure Resource Explorer
-# # Verify the VM named "myVM" exists and is running as a Standard_DS3_v2.
-# - action: exists
-#   environment: azure
-#   azure:
-#     resource:
-#       type: "Microsoft.Compute/virtualMachines"
-#       name: myVM
-#       size: Standard_DS3_v2 # Just an example to show intent - this field doesn't exist.
-#   hint: "Run the `az vm resize` command as shown to resize your virtual machine."
-quiz:
-    title: Check your knowledge
-    questions:
-    - content: "Azure is:"
-      choices:
-      - content: "Microsoft's cloud computing platform, which provides compute power, storage, and services over the Internet using a pay-as-you-go pricing model."
-        isCorrect: true
-        correctExplanation: "With Azure, you get access to raw compute power and storage, as well as services to help you explore new software paradigms such as intelligent bots and mixed reality."
-      - content: "A single data center located in Redmond, Washington."
-        isCorrect: false
-        incorrectExplanation: "Azure is made up of data centers distributed throughout the world."
-      - content: 'Just "a different place to run your virtual machines".'
-        isCorrect: false
-        incorrectExplanation: "While Azure provides raw compute power, such as virtual machines, it also provides many services to help you explore new software paradigms such as intelligent bots and mixed reality."
-    - content: "When might you _scale out_ your deployment?"
-      choices:
-      - content: "When your application or service requires a more powerful CPU or more memory to run faster."
-        isCorrect: false
-        incorrectExplanation: "In this case, you might _scale up_ by moving your application or service to more powerful hardware."
-      - content: "When you can add additional virtual machines to speed up your application."
-        isCorrect: true
-        correctExplanation: "Scaling out means adding additional systems, such as virtual machines. For example, you might create many virtual machines configured in exactly the same way and use a load balancer to distribute work across them."
-      - content: "When you're using excess capacity that you don't need."
-        isCorrect: false
-        incorrectExplanation: "In this case, you might _scale in_ by tearing down systems you don't currently need."
+# Verify the VM named "myVM" exists and is running as a Standard_DS3_v2.
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Compute/virtualMachines"
+      name: myVM
+      properties:
+        hardwareProfile:
+          vmSize: Standard_DS3_v2
+  hint: "Run the `az vm resize` command as shown to resize your virtual machine."

@@ -130,22 +130,15 @@ You now have a few entries in your bookmark collection. Our scenario will work a
 
 1. Navigate to the function app that you created in the preceding unit.
 
-1. Expand your function app, hover over the functions collection, and then select the **Add** (**+**) button next to **Functions**.
-   This action starts the function creation process. The following animation illustrates the action:
-
-   ![Animation of the plus sign that appears when you hover over the functions menu item](../media/3-func-app-plus-hover-small.gif)
-
+1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. 
    The page displays the complete set of supported triggers.
 
-1. Select **HTTP trigger**, which is the first entry in the following screenshot:
-
-    ![Screenshot of part of the trigger template selection UI, with the HTTP trigger, displayed first, in the top left of the image.](../media/5-trigger-templates-small.png)
+1. Select **HTTP trigger**
 
 1. Fill out the **New Function** dialog that appears to the right using the following values.
 
     | Field | Value |
     |----------|--------|
-    | Language | **JavaScript** |
     | Name     | [!INCLUDE [func-name-find](./func-name-find.md)] |
     | Authorization level | **Function** |
 

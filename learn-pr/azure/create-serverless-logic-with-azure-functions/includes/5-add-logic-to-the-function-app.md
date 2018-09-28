@@ -18,68 +18,81 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. The resources for the group will then be displayed. Click the name of the function app that you created in the previous exercise by selecting the **escalator-functions-xxxxxxx** item (also indicated by the lightning bolt Function icon).
 
-  ![Screenshot of the Azure portal showing the All resources blade highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
+    ![Screenshot of the Azure portal showing the All resources blade highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
-1. The left-side menu displays your function app name and a submenu with three items: *Functions*, *Proxies*, and *Slots*.  To start creating our first function, select **Functions** and click  the **New function** button at the top of the resulting page.
+<!-- Start temporary fix for issue #2498. -->
+> [!IMPORTANT]
+> The exercises in this module currently work with Azure Functions V1. Please follow these steps carefully to make sure your function app uses the V1 runtime version. 
 
-  ![Screenshot of the Azure portal showing the Functions list for our function app, with the Functions menu item and New function button highlighted.](../media/5-function-add-button.png)
+1. Select your function app in the **Function Apps** list.
+1. Select **Platform features**.
+1. In the **Platform features** screen, select **Function app settings** under **General Settings**.
+1. Select *~1* in the **Runtime version** .
+1. Close **Function app settings**.
+
+Our function app is now configured to use the Azure Functions V1 runtime. We can now continue to create our first function.
+<!-- End temporary fix for issue #2498. --> 
+
+1. The left-side menu displays your function app name and a submenu with three items: *Functions*, *Proxies*, and *Slots*.  
+
+1. To start creating our first function, select **Functions** and click  the **New function** button at the top of the resulting page.
+
+    ![Screenshot of the Azure portal showing the Functions list for our function app, with the Functions menu item and New function button highlighted.](../media/5-function-add-button.png)
 
 1. In the Quickstart screen, select the **Custom function** link in the **Get started on your own** section as shown in the following screenshot. If you don't see the Quickstart screen, click on the **go to the quickstart** link at the top of the page.
 
-  ![Screenshot of the Azure portal showing the Quickstart blade with the Custom function button highlighted in the Get started on your own section.](../media/5-custom-function.png)
+    ![Screenshot of the Azure portal showing the Quickstart blade with the Custom function button highlighted in the Get started on your own section.](../media/5-custom-function.png)
 
-1. From the list of templates displayed on the screen, select the **JavaScript** implementation of the **HTTP trigger** template as shown in the following screenshot.
+1. From the list of templates displayed on the screen, select the **HTTP trigger** template as shown in the following screenshot.
 
 1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
 
-  ![Screenshot of the Azure portal showing the new HTTP trigger function options, with the language field set to JavaScript and the name set to DriveGearTemperatureService.](../media/5-create-httptrigger-form.png)
-
 1. When your function creation completes, the code editor opens with the contents of the *index.js* code file. The default code that the template generated for us is listed in the following snippet.
 
-```javascript
-module.exports = function (context, req) {
-    context.log('JavaScript HTTP trigger function processed a request.');
+    ```javascript
+    module.exports = function (context, req) {
+        context.log('JavaScript HTTP trigger function processed a request.');
+    
+        if (req.query.name || (req.body && req.body.name)) {
+            context.res = {
+                // status: 200, /* Defaults to 200 */
+                body: "Hello " + (req.query.name || req.body.name)
+            };
+        }
+        else {
+            context.res = {
+                status: 400,
+                body: "Please pass a name on the query string or in the request body"
+            };
+        }
+        context.done();
+    };
+    ```
 
-    if (req.query.name || (req.body && req.body.name)) {
-        context.res = {
-            // status: 200, /* Defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
-        };
-    }
-    else {
-        context.res = {
-            status: 400,
-            body: "Please pass a name on the query string or in the request body"
-        };
-    }
-    context.done();
-};
-```
+    Our function expects a name to be passed in either through the HTTP request query string or as part of the request body. The function responds by returning the message  **Hello, {name}**, echoing back the name that was sent in the request.
 
-Our function expects a name to be passed in either through the HTTP request query string or as part of the request body. The function responds by returning the message  **Hello, {name}**, echoing back the name that was sent in the request.
+    On the right-hand side of the source view, you'll find two tabs. The **View files** tab lists the code and config file for your function.  Select **function.json** to view the configuration of the function, which should look like the following:
 
-On the right-hand side of the source view, you'll find two tabs. The **View files** tab lists the code and config file for your function.  Select **function.json** to view the configuration of the function, which should look like the following:
-
-```javascript
-{
-    "disabled": false,
-    "bindings": [
+    ```javascript
     {
-        "authLevel": "function",
-        "type": "httpTrigger",
-        "direction": "in",
-        "name": "req"
-    },
-    {
-        "type": "http",
-        "direction": "out",
-        "name": "res"
+        "disabled": false,
+        "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        }
+        ]
     }
-    ]
-}
-```
+    ```
 
-This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.    
 
 ## Test the function
 
@@ -103,7 +116,7 @@ The function and master keys are found in the **Manage** section when the functi
 
 1. Expand your function and select the **Manage** section, show the default Function Key, and copy it to the clipboard.
 
-  ![Screenshot of the Azure portal showing the function Manage blade with the revealed function key highlighted.](../media/5-get-function-key.png)
+    ![Screenshot of the Azure portal showing the function Manage blade with the revealed function key highlighted.](../media/5-get-function-key.png)
 
 1. Next, from the command line where you installed the **cURL** tool, format a cURL command with the URL for your function, and the Function key.
 
@@ -117,6 +130,9 @@ The function and master keys are found in the **Manage** section when the functi
     ```
 
 The function will respond back with the text `"Hello Azure Function"`.
+
+> [!CAUTION]
+> If you are on Windows, please run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest and is not the same as `cURL`.
 
 > [!NOTE]
 > You can also test from an individual function's section with the **Test** tab on the side of a selected function, though you won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface and click the **Run** button to see the test output.
@@ -222,10 +238,10 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
 
 1. Select **Run** and view the response in the output pane. To see log messages, open the **Logs** tab in the bottom flyout of the page. The following screenshot shows an example response in the output pane and messages in the  **Logs** pane.
 
-![Screenshot of the Azure portal showing the function editor blade with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
+    ![Screenshot of the Azure portal showing the function editor blade with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
 
-You can see in the output pane that our status field has been correctly added to each of the readings.
+    You can see in the output pane that our status field has been correctly added to each of the readings.
 
-If you navigate to the **Monitor** dashboard, you'll see that the request has been logged to Application Insights.
+    If you navigate to the **Monitor** dashboard, you'll see that the request has been logged to Application Insights.
 
-![Screenshot of the Azure portal showing the prior test success result in the function Monitor dashboard.](../media/5-app-insights.png)
+    ![Screenshot of the Azure portal showing the prior test success result in the function Monitor dashboard.](../media/5-app-insights.png)

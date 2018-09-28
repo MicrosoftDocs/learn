@@ -26,13 +26,13 @@ We're going to create our VM using an Azure Resource Manager template. The templ
 
 1. Execute the following command in Azure Cloud Shell to the right of this unit:
 
-    ```bash
-    code parameter_file.json
+    ```azurecli
+    code .
     ```
     <!-- TODO add a link to official doc that explains the built-in editor when it becomes available -->
-    This command opens and empty file called `parameter_file.json` in the built-in editor. 
+    This command opens and empty file in the built-in editor. 
 
-1. Paste the following JSON snippet into the empty file into the code editor.
+1. Paste the following JSON snippet into the empty file in the code editor.
 
     ```json
     { 
@@ -56,7 +56,7 @@ We're going to create our VM using an Azure Resource Manager template. The templ
     |vmName     |   `<HOSTNAME>`      |  Choose a name for the new virtual machine. Your name must begin with a letter and contain only lowercase letters and numbers. Try to choose a unique name, such as one that includes your initials and your birth year. |
     |vmSize     |  Standard_DS2_v2       |  This VM size will work fine for this exercise, but you are free to change it. A list of available vm sizes can be found here [Sizes for Linux virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/sizes?azure-portal=true)       |
 
-1. Save your changes in `parameter_file.json` and close the text editor.
+1. Select the three ellipses (**...**) to the top right of the editor and then select **Save** from the menu to save the file as `parameter_file.json` and close the text editor.
 
     > [!IMPORTANT]
     > Remember the values you chose for adminUsername, adminPassword and vmName. We'll use them again in this exercise.
@@ -79,6 +79,8 @@ We now have a resource group and have defined parameters for the DSVM Resource M
     --parameters parameter_file.json
     ```
 
+    [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
     The command uses the Resource Manager template and our parameters to create the virtual machine in our resource group. 
 
 2. Deploying a virtual machine takes a few minutes to complete. The console displays ` - Running ..` and not much else until the operation completes. When the operation finishes, a JSON response is output to the screen. Scroll to the bottom of the JSON and check that the field **"provisioningState"** has the value *Succeeded*.
@@ -89,14 +91,13 @@ We now have a resource group and have defined parameters for the DSVM Resource M
 3. Execute the following command to get information about the VM, replacing `<HOSTNAME>` with the host name you defined for your VM.
 
     ```azurecli
-    az vm get-instance-view \
+    az vm show -d \
     --name <HOSTNAME> \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --query instanceView.statuses[1] \
     --output table
     ```
 
-    This command displays the status of the VM. It should say *VM running*.
+    This command displays the status of the VM. The **PowerState** field should say *VM running*. Later in this exercise, we'll connect to the VM using the IP address in the **PublicIps** field. We could also connect using the Fully Qualified Domain Name (FQDN) displayed here in the **Fqdns** field.
 
 Congratulations! You've created and deployed a Linux VM based on the DSVM image.
 
@@ -104,7 +105,7 @@ Congratulations! You've created and deployed a Linux VM based on the DSVM image.
 
 By default, our VM doesn't have any ports open. Our goal is to connect remotely, start a Jupyter Notebook server and run other local commands on the machine. To remote into the VM using the Secure Shell (SSH) protocol, we need to open a port. Port 22 is the default port for ssh.  
 
-1. Execute the following command in Azure Cloud Shell, replacing `<HOSTNAME>` wit the name you gave your DSV virtual machine during setup. 
+1. Execute the following command in Azure Cloud Shell, replacing `<HOSTNAME>` with the name you gave your virtual machine during setup. 
 
     ```azurecli
     az vm open-port \
@@ -207,7 +208,7 @@ When the above command runs on the VM, the notebook server starts and the consol
 
     ![Screenshot showing Jupyter Notebooks dashboard. ](../media/jupyter-in-browser.png)
 
-1. Navigate to **notebooks/IntroToJupyterPython.ipynb** and select it. Try out this notebook to verify everythin  works as expected.
+1. Navigate to **notebooks/IntroToJupyterPython.ipynb** and select it. Try out this notebook to verify everything  works as expected.
 
     Congratulations! You now have a running DSVM-based virtual machine running and can work remotely with Jupyter. In this exercise, we're running the software that was installed on the VM. In the next exercise, we'll isolate the software in a container on the VM so we can experiment with confidence.
 

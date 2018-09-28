@@ -17,24 +17,17 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ## Create an HTTP-triggered function
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 2. In the portal, navigate to the function app that you created in this module.
 
-3. Expand your function app, then hover over the functions collection and select the Add (**+**) button next to **Functions**. This action starts the function creation process. The following animation illustrates this action.
-
-    ![Animation of the plus sign appearing when the user hovers over the functions menu item.](../media/3-func-app-plus-hover-small.gif)
-
-4. The page shows us the current set of supported triggers. Select **HTTP trigger**, which is the first entry in the following screenshot.
-
-    ![Screenshot of part of the trigger template selection UI, with the TTP trigger displayed first, in the top left of the image.](../media/5-trigger-templates-small.PNG)
-
+3. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
+4. The page shows us the current set of supported triggers. Select **HTTP trigger**.
 
 5. Fill out the **New Function** pane that's displayed at the right by using the following values:
 
     |Field  |Value  |
     |---------|---------|
-    |Language     | **JavaScript**        |
     |Name     |   [!INCLUDE [func-name-add](./func-name-add.md)]     |
     | Authorization level | **Function** |
 

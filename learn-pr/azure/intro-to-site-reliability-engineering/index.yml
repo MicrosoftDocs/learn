@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.intro-to-site-reliability-engineering
+metadata:
+  title: Introduction to Site Reliability Engineering (SRE)
+  description: Organizations big and small have started to realize just how crucial system and application reliability is to their business. They’ve also learned just how difficult it is to maintain that reliability while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge.
+  ms.date: 09/26/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: luken
+title: Introduction to Site Reliability Engineering (SRE)
+summary: Organizations big and small have started to realize just how crucial system and application reliability is to their business. They’ve also learned just how difficult it is to maintain that reliability while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge.
+abstract: |
+  In this module you will:
+  - Gain a basic understanding of Site Reliability Engineering (SRE)
+  - Learn how to get started with this valuable operations practice
+iconUrl: /learn/achievements/intro-to-site-reliability-engineering-sre.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+prerequisites: None
+units:
+- learn.intro-to-site-reliability-engineering.1-introduction
+- learn.intro-to-site-reliability-engineering.2-what-is-sre-and-why-does-it-matter
+- learn.intro-to-site-reliability-engineering.3-sre-in-context
+- learn.intro-to-site-reliability-engineering.4-key-principles-1-virtuous-cycles
+- learn.intro-to-site-reliability-engineering.5-key-principles-2-human-side-of-sre
+- learn.intro-to-site-reliability-engineering.6-getting-started
+- learn.intro-to-site-reliability-engineering.7-summary
+achievement: learn.intro-to-site-reliability-engineering.badge

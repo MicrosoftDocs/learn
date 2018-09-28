@@ -35,7 +35,7 @@ In this unit, you'll upload your ASP.NET Core application to Azure App Service.
 
 1. The Azure portal navigates to the **Overview** page of the newly created deployment slot.
 
-    ![Staging deployment slot](../media/7-deployment-slot-staging.png)
+    ![Screenshot of the staging deployment slot](../media/7-deployment-slot-staging.png)
 
     Notice the **URL** of the staging deployment slot. It is a different URL from what you saw previously, with the slot name appended.
 
