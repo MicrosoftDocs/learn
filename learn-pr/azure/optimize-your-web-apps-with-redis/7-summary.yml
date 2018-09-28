@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you're storing highly accessed data in a redis cache that is 400 MB in size. How should you store it to ensure high performance?"
+  - content: "Suppose you're storing 400 MB of highly-accessed data in a Redis cache. How should you organize it in the cache to ensure high performance?"
     choices:
-    - content: "Store all the data with a single key"
-      incorrectExplanation: "Redis works best with data that is 100 K or less. Splitting larger data into multiple keys will reduce network latency and out-of-memory issues."
+    - content: "Store the data with a single key"
+      incorrectExplanation: "Redis works best with data that is 100 K or less. Splitting and storing larger data with multiple keys will reduce network latency and out-of-memory issues."
       isCorrect: false
-    - content: "Split the data with multiple keys"
+    - content: "Split and store the data with multiple keys"
       isCorrect: true
-      correctExplanation: "Redis works best with data that is 100 K or less. Splitting larger data into multiple keys will reduce network latency and out-of-memory issues."
+      correctExplanation: "Redis works best with data that is 100 K or less. Splitting and storing larger data with multiple keys will reduce network latency and out-of-memory issues."
     - content: "Don't cache the data because 400 MB is too large"
       isCorrect: false
-      incorrectExplanation: "Redis works best with data that is 100 K or less. Splitting larger data into multiple keys will reduce network latency and out-of-memory issues."
+      incorrectExplanation: "Redis works best with data that is 100 K or less. Splitting and storing larger data with multiple keys will reduce network latency and out-of-memory issues."
 
   - content: "True or false: the length of a Redis key impacts the performance of lookup times?"
     choices:
