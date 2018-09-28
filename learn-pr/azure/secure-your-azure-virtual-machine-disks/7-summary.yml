@@ -33,7 +33,7 @@ quiz:
       incorrectExplanation: "You do not need to configure a security principal for ADE, just enabling the key vault for disk encryption is enough."
     - content: "False"
       isCorrect: true
-      correctExplanation: "You do not need to configure a security principal for ADE, just enabling the key vault for disk encryption is enough.
+      correctExplanation: "You do not need to configure a security principal for ADE, just enabling the key vault for disk encryption is enough."
 
   - content: "Suppose you create a new VM with a single OS disk and a single data disk. You use all the default options when creating the VM and you have no Azure Key Vault anywhere in your subscription. Which option most accurately describes the encryption state of those disks?"
     choices:
