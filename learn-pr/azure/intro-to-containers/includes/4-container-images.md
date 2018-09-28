@@ -320,13 +320,13 @@ To publish an image to Docker Hub, you need an account. Here you'll set up your 
     1. This example pulls the latest image from Docker Hub.
 
         ```bash
-        docker pull my_docker_account/python-dockerfile
+        docker pull $docker_account/python-dockerfile
         ```
 
     1. This example runs the container.
 
         ```bash
-        docker run my_docker_account/python-dockerfile
+        docker run $docker_account/python-dockerfile
         ```
 
 1. Test out your container.
