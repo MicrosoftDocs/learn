@@ -19,7 +19,7 @@ quiz:
   title: Check your knowledge
   questions:
  
-   - content: "Suppose you're an administrator of several Azure virtual machines. You get a text message indicating some problems with your VMs. You are at a friend’s house and only have your tablet with you. Would you still be able to access the Azure CLI to check on the problem?"
+  - content: "Suppose you're an administrator of several Azure virtual machines. You get a text message indicating some problems with your VMs. You are at a friend’s house and only have your tablet with you. Would you still be able to access the Azure CLI to check on the problem?"
     choices:
     - content: "True"
       isCorrect: true
