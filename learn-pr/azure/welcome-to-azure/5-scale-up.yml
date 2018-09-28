@@ -16,6 +16,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-scale-up.md)]
 # Verify the VM named "myVM" exists and is running as a Standard_DS3_v2.
+tasks:
 - action: exists
   environment: azure
   azure:
