@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Azure App service has built-in auto scale support and depending on the usage of your web app, it can scale up or down."
+      correctExplanation: "Azure App service has built-in auto scale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Azure App service has built-in auto scale support and depending on the usage of your web app, it can scale up or down."
+      incorrectExplanation: "Azure App service has built-in auto scale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
 
   - content: "Which of the following is not a valid automated deployment source?"
     choices:
@@ -34,7 +34,7 @@ quiz:
     - content: "Visual Studio Team Services"
       isCorrect: false
       incorrectExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
-    - content: "Google Drive"
+    - content: "SharePoint"
       isCorrect: True
       correctExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
     - content: "Dropbox"
@@ -45,7 +45,7 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Using deployment slots you can make changes to your web application and then swap it into production with no downtime."
+      correctExplanation: "Deployment slots let you make changes to the version of your web application in a staging slot and then swap it into your production slot with no downtime."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Using deployment slots you can make changes to your web application and then swap it into production with no downtime."
+      incorrectExplanation: "Deployment slots let you make changes to the version of your web application in a staging slot and then swap it into your production slot with no downtime."
