@@ -43,7 +43,7 @@ quiz:
       - content: "Through the portal."
         isCorrect: false
         incorrectExplanation: "Although you can create and manage as many databases as you need through the portal, it's a manual process. Manual processes can be tedious and error-prone."
-      - content: "Create them through the Azure CLI."
+      - content: "Through the Azure CLI."
         isCorrect: true
         correctExplanation: "The Azure CLI enables you to create scripts that automate creation and management tasks."
  
