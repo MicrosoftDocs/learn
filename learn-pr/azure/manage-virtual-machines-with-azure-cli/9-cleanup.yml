@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       incorrectExplanation: "The Azure Cloud Shell is available in the browser and runs with the full Azure CLI, so you wouldn't need to install software."
       
-  - content: "Suppose you have a script that creates several VMs with different images. When the script issues the command to create the first VMs you do not want to block the script while the VM is created, instead you want the script to immediately move on to the next command. What is the best way to do this?"
+  - content: "Suppose you have a script that creates several VMs with different images. When the script issues the command to create the first VM you do not want to block the script while the VM is created, instead you want the script to immediately move on to the next command. What is the best way to do this?"
     choices:
     - content: "Add the '--async' argument to your create command."
       isCorrect: false
