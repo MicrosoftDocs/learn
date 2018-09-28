@@ -38,14 +38,14 @@ quiz:
       isCorrect: false
       incorrectExplanation: "The CLI provides the same set of commands everywhere it is available."
 
-  - content: "Which option can you add to most CLI commands to get concise, formatted output?"
+  - content: "Which parameter can you add to most CLI commands to get concise, formatted output?"
     choices:
     - content: "list"
       isCorrect: false
       incorrectExplanation: "The list subcommand displays the details of a resource, it does not control output format."
     - content: "table"
       isCorrect: true
-      correctExplanation: "The table option formats the output as a table. This can make things much more readable for commands that produce a large amount of output."
+      correctExplanation: "The table parameter formats the output as a table. This can make things much more readable for commands that produce a large amount of output."
     - content: "group"
       isCorrect: false
       incorrectExplanation: "The group command lets you control resource groups, it does not influence output format."
