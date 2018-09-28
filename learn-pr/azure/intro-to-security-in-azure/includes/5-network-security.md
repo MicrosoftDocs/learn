@@ -23,6 +23,8 @@ To provide inbound protection at the perimeter, you have a couple of choices:
 
 Any resource exposed to the internet is at risk of being attacked by a denial of service attack. These types of attacks attempt to overwhelm a network resource by sending so many requests that the resource becomes slow or unresponsive. To mitigate these attacks, Azure DDoS protection provides basic protection across all Azure services and enhanced protection for further customization for your resources. Azure DDoS protection blocks attack traffic and forwards the remaining traffic to its intended destination. Within a few minutes of attack detection, you are notified using Azure Monitor metrics.
 
+This diagram shows network traffic flowing into Azure from both customers and an attacker. Azure DDoS protection identifies the attacker's attempt to overwhelm the network and blocks further traffic from reaching Azure services. Legitimate traffic from customers still flows into Azure without any interruption of service.
+
 ![DDoS](../media/ddos.png)
 
  :::column-end:::
