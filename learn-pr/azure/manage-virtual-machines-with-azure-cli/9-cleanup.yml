@@ -19,7 +19,7 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "Suppose you're an administrator of several Azure virtual machines. You get a text message indicating some monitors are reporting problems. You are not at home with your computer and only have access to a friend's computer on which you can't install software. Would you still be able to access the Azure CLI to check on the problem?"
+   - content: "Suppose you're an administrator of several Azure virtual machines. You get a text message indicating some problems with your VMs. You are at a friend’s house and only have your tablet with you. Would you still be able to access the Azure CLI to check on the problem?"
     choices:
     - content: "True"
       isCorrect: true
@@ -40,14 +40,15 @@ quiz:
       isCorrect: true
       correctExplanation: "Adding '--no-wait' will cause 'azure VM create' to return immediately without waiting for the VM to actually be created."
  
-  - content: "By default, most Azure commands return JSON, sometimes huge amounts of data. It is often useful to filter that data down, either for readability or to chain commands together in a script. What can you use with Azure CLI to accomplish this?"
+  - content: "Most Azure commands return JSON by default. Sometimes this data set can be very large which makes it difficult to read and tricky to use the result of one command as input to another command. What can you use with Azure CLI to filter the results to get only the data that you need?"
     choices:
     - content: "You can use the '--query' argument."
       isCorrect: true
-      correctExplanation: "All Azure commands support the '--query' argument, meaning you can use is to cherry-pick the useful data in any Azure command response."
+      correctExplanation: "All Azure commands support the '--query' argument which lets you select the useful data in any Azure command response."
     - content: "You can use the '--filter' argument."
       isCorrect: false
       incorrectExplanation: "Azure CLI does not have a '--filter' argument."
     - content: "You can pipe the results to a JSON parsing utility and use filtering capability there."
       isCorrect: false
-      incorrectExplanation: "This may work but is certainly a much more complex solution than using the built-in querying of the Azure CLI."
+      incorrectExplanation: "This may work but is more complex than using the built-in query support of the Azure CLI."
+
