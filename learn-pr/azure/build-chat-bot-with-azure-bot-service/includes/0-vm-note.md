@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> This unit requires access to a VM. If you've already connected to a VM from a previous unit in this module, you're good to go. If you're not already connected, visit the [Create an Azure web app bot](../2-create-web-app-bot.yml) unit to launch your VM.
+> This unit requires access to a VM. If you've already connected to a VM from a previous unit in this module, you're good to go. If you're not already connected, select **Launch VM mode** above.
