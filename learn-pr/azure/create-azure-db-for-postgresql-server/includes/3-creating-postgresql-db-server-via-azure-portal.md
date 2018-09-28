@@ -92,6 +92,7 @@ You create the server admin user. Choose a login name to use as an administrator
 ### Password
 
 You choose a password to use with the above administrator login name. Your password must include characters from three of the following categories:
+
 - English uppercase letters
 - English lowercase letters
 - Numbers (0 through 9)
@@ -113,8 +114,8 @@ You can specify the version of PostgreSQL to use. Microsoft aims to support the 
 
 > [!NOTE]
 > For more information, see the following sources:
-> - [Supported PostgreSQL database versions](https://docs.microsoft.com/azure/postgresql/concepts-supported-versions)
-> - [Versioning policy](https://www.postgresql.org/support/versioning/)
+> - [Supported PostgreSQL database versions](https://docs.microsoft.com/azure/postgresql/concepts-supported-versions?azure-portal=true)
+> - [Versioning policy](https://www.postgresql.org/support/versioning/?azure-portal=true)
 
 ### Pricing tier
 
