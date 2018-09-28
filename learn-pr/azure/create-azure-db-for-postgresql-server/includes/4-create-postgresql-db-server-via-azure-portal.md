@@ -35,7 +35,7 @@ You'll now see the PostgreSQL server create blade, similar to the following illu
 
 1. Choose a login name to use as an administrator login for the new server. Recall that the admin login name can't be azure_superuser, azure_pg_admin, admin, administrator, root, guest, or public. It can't start with pg_. Remember or write down the name for future use.
 
-1. Choose a password to use with the above administrator login name. Recall,= that our password must include characters from three of the following categories:
+1. Choose a password to use with the above administrator login name. Recall that the password must include characters from three of the following categories:
    - English uppercase letters
    - English lowercase letters
    - Numbers (0 through 9)
