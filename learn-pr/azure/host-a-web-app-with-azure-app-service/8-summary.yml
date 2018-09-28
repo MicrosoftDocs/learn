@@ -30,16 +30,16 @@ quiz:
     choices:
     - content: "GitHub"
       isCorrect: false
-      incorrectExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      incorrectExplanation: "Azure currently supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
     - content: "Visual Studio Team Services"
       isCorrect: false
-      incorrectExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      incorrectExplanation: "Azure currently supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
     - content: "SharePoint"
       isCorrect: True
-      correctExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      correctExplanation: "Azure currently supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
     - content: "Dropbox"
       isCorrect: false
-      incorrectExplanation: "Azure currently only supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      incorrectExplanation: "Azure currently supports Visual Studio Team Services, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
 
   - content: "True or false: deployment slots are useful if you want to minimize downtime when updating your web application?"
     choices:
