@@ -18,10 +18,10 @@ quiz:
   questions:
   - content: "Suppose you're storing highly accessed data in a redis cache that is 400 MB in size. How should you store it to ensure high performance?"
     choices:
-    - content: "Store all the data in a single key"
+    - content: "Store all the data with a single key"
       incorrectExplanation: "Redis works best with data that is 100 K or less. Splitting larger data into multiple keys will reduce network latency and out-of-memory issues."
       isCorrect: false
-    - content: "Split the data into multiple keys"
+    - content: "Split the data with multiple keys"
       isCorrect: true
       correctExplanation: "Redis works best with data that is 100 K or less. Splitting larger data into multiple keys will reduce network latency and out-of-memory issues."
     - content: "Don't cache the data because 400 MB is too large"
