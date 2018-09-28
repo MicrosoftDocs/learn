@@ -13,3 +13,37 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/9-summary.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Which of these is a valid PostgreSQL server administrator login name?"
+      choices:
+      - content: "root"
+        isCorrect: false
+        incorrectExplanation: "A login name cannot be azure_superuser, azure_pg_admin, admin, administrator, root, guest, or public. It also can't start with pg_."
+      - content: "admin"
+        isCorrect: false
+        incorrectExplanation: "A login name cannot be azure_superuser, azure_pg_admin, admin, administrator, root, guest, or public. It also can't start with pg_."
+      - content: "daniel"
+        isCorrect: true
+        correctExplanation: "A login name cannot be azure_superuser, azure_pg_admin, admin, administrator, root, guest, or public. It also can't start with pg_."
+    - content: "Your new PostgreSQL database requires a retention period of 45 days for data backups. How do you enable that?"
+      choices:
+      - content: "Specify the retention period when you create your server."
+        isCorrect: true
+        correctExplanation: "You can also adjust the retention period after you create your server if your requirements change."
+      - content: "Install the `retention` extension."
+        isCorrect: false
+        incorrectExplanation: "Azure Database for PostgreSQL handles data retention and backups for you, without the need to install an extension."
+      - content: "Run a script each day that removes backups that are older than 45 days."
+        isCorrect: false
+        incorrectExplanation: "Azure Database for PostgreSQL handles data retention and backups for you."
+    - content: "Say you need 10 PostgreSQL databases to support a number of projects. Which is the easiest way to create and manage them?"
+      choices:
+      - content: "Through the portal."
+        isCorrect: false
+        incorrectExplanation: "Although you can create and manage as many databases as you need through the portal, it's a manual process. Manual processes can be tedious and error-prone."
+      - content: "Create them through the Azure CLI."
+        isCorrect: true
+        correctExplanation: "The Azure CLI enables you to create scripts that automate creation and management tasks."
+ 
