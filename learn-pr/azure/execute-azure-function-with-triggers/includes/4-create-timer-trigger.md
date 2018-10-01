@@ -12,7 +12,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Select **Compute**.
 
-1. Locate and select **Function App**. You can also optionally use the search bar to locate the template.
+1. Locate and select **Serverless Function App**. You can also optionally use the search bar to locate the template.
 
     ![Screenshot of the Azure portal showing the Create a resource blade with the Function App highlighted.](../media/4-click-function-app.png)
 

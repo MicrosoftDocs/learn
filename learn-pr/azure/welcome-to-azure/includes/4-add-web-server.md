@@ -42,13 +42,13 @@ Here you'll use the Custom Script Extension to configure IIS remotely on your VM
       --vm-name myVM \
       --name CustomScriptExtension \
       --publisher Microsoft.Compute \
-      --settings '{"fileUris":["https://gist.githubusercontent.com/tpetchel/26f9dab2628a80bf87a33caeed1b6ded/raw/69e5d9250b9dcd7e7eece4b0ea3c3a8cd1b4fcd7/configure-iis.ps1"]}' \
+      --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-iis.ps1"]}' \
       --protected-settings '{"commandToExecute": "powershell -ExecutionPolicy Unrestricted -File configure-iis.ps1"}'
     ```
 
     The process to configure IIS, set the contents of the homepage, and start the service takes a couple minutes to complete.
 
-    In the meantime, you can [examine the PowerShell script](https://gist.githubusercontent.com/tpetchel/26f9dab2628a80bf87a33caeed1b6ded/raw/69e5d9250b9dcd7e7eece4b0ea3c3a8cd1b4fcd7/configure-iis.ps1?azure-portal=true) from a separate browser tab if you'd like. The script installs IIS and configures the home page to display a welcome message along with the VM's computer name, "myVM".
+    In the meantime, you can [examine the PowerShell script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-iis.ps1?azure-portal=true) from a separate browser tab if you'd like. The script installs IIS and configures the home page to display a welcome message along with the VM's computer name, "myVM".
 
 1. Run this `az vm open-port` command to open port 80 (HTTP) through the firewall.
 
@@ -110,13 +110,13 @@ Here you'll use the Custom Script Extension to configure Nginx remotely on your 
       --vm-name myVM \
       --name customScript \
       --publisher Microsoft.Azure.Extensions \
-      --settings '{"fileUris":["https://gist.githubusercontent.com/tpetchel/26f9dab2628a80bf87a33caeed1b6ded/raw/69e5d9250b9dcd7e7eece4b0ea3c3a8cd1b4fcd7/configure-nginx.sh"]}' \
+      --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
       --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
     ```
 
     The process to configure Nginx, set the contents of the homepage, and start the service takes a couple minutes to complete.
 
-    In the meantime, you can [examine the Bash script](https://gist.githubusercontent.com/tpetchel/26f9dab2628a80bf87a33caeed1b6ded/raw/69e5d9250b9dcd7e7eece4b0ea3c3a8cd1b4fcd7/configure-nginx.sh?azure-portal=true) from a separate browser tab if you'd like. The script installs Nginx and configures the home page to display a welcome message along with the VM's computer name, "myVM".
+    In the meantime, you can [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh?azure-portal=true) from a separate browser tab if you'd like. The script installs Nginx and configures the home page to display a welcome message along with the VM's computer name, "myVM".
 
 1. Run this `az vm open-port` command to open port 80 (HTTP) through the firewall.
 
