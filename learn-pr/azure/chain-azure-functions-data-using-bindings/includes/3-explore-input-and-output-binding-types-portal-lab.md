@@ -49,13 +49,15 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
-1. On the **Get started quickly** page, select **Custom function** under the **Get started on your own** section.
+1. On the **Azure Functions for JavaScript - getting started** page, select **In-portal** and then select **continue**.
 
-1. This will list all the templates Select **HTTP Trigger** template from the list.
+1. In **Create a function**, select **More templates...**.
 
-1. On the **New Function** blade, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
+1. In the list of all templates available to this function app, select **HTTP Trigger** .
+
+1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 

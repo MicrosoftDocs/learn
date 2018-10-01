@@ -40,13 +40,11 @@ Let’s start by creating an Azure Function app in the portal.
 
 Now we're going to create a timer trigger inside our function.
 
-1. On the new blade, point to **Functions** and select the plus (+) icon.
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
-    ![Screenshot of the Azure portal showing a Functions App blade with the add (+) button of the Functions sub-menu highlighted.](../media/4-hover-function.png)
+1. On the **Azure Functions for .NET - getting started** page, select **In-portal** and then select **continue**.
 
-1. Select **Timer**.
-
-1. Select **Create this function**.
+1. In the list of quick start templates, select **Timer** and then select **Create** at the bottom of the screen.
 
 ## Configure the timer trigger
 
