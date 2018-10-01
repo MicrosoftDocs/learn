@@ -89,7 +89,7 @@ To validate, you can navigate to the file share in the Azure portal and download
 1. Download it, make sure to replace the `<filename>` below.
 
     ```azurecli
-    az storage file download -s aci-share-demo -n <filename>
+    az storage file download -s aci-share-demo -p <filename>
     ```
     
 ![Sample text file with contents demo application](../media/5-sample-text.png)
