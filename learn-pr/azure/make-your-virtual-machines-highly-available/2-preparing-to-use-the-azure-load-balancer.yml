@@ -16,29 +16,33 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or False. Azure Load Balancer ensures that all packets from a client are sent to the same backend VM instance."
+  - content: "Suppose you have a load balancer that distributes requests to resources within a virtual network and is not accessible from the internet. This is an example of which type of load balancer?"
+    choices:
+    - content: "Public load balancer"
+      isCorrect: false
+      incorrectExplanation: "An internal load balancer processes requests from within a virtual network and is not accessible from the internet."
+    - content: "Internal load balancer"
+      isCorrect: true
+      correctExplanation: "An internal load balancer processes requests from within a virtual network and is not accessible from the internet." 
+
+  - content: "Which of the following services do load balancers use to determine if a virtual machine can handle requests?"
+    choices:
+    - content: "Status checker"
+      isCorrect: false
+      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines it's available and operational."
+    - content: "Availability monitor"
+      isCorrect: false
+      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines it's available and operational."
+    - content: "Health probe"
+      isCorrect: true
+      correctExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines it's available and operational."
+
+  - content: "True or False: Azure Load Balancer uses a hash-based algorithm to ensure all packets within a client flow are sent to the same virtual machine instance?"
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Azure Load Balancer uses a hash to identify the client from the source and destination IP address and port."
+      correctExplanation: "Azure Load Balancer's hash-based algorithm uses data like the source and destination IP address to ensure all packets within a packet client flow are sent to the same backend virtual machine instance."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Azure Load Balancer uses a hash to identify the client from the source and destination IP address and port." 
-  - content: "One reason to choose the Standard SKU over the Basic SKU is:"
-    choices:
-    - content: "Standard SKU can direct traffic to a VM availability set, while Basic cannot."
-      isCorrect: false
-      incorrectExplanation: "Both Basic and Standard SKUs support directing traffic to an availability set - however Standard SKUs can use more than one."
-    - content: "Standard SKU support secure traffic (HTTPS)."
-      isCorrect: true
-      correctExplanation: "Basic SKU can only protect TCP and HTTP traffic; Standard SKU adds HTTPS support."
-    - content: "Standard SKU supports health probe monitoring of the backend VM servers, Basic does not."
-      isCorrect: false
-      incorrectExplanation: "Health probes are used in both SKUs and are a requirement to setup Azure Load Balancer."
-  - content: "True or False. Azure Load Balancer can be used for public-facing services, or for internal Azure services you use over a VPN."
-    choices:
-    - content: "True"
-      isCorrect: true
-      incorrectExplanation: "Azure Load Balancer supports both public and internal configurations."
-    - content: "False"
-      isCorrect: false
+      incorrectExplanation: "Azure Load Balancer's hash-based algorithm uses data like the source and destination IP address to ensure all packets within a packet client flow are sent to the same backend virtual machine instance."
+
