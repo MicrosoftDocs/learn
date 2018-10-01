@@ -67,9 +67,6 @@ For example, Azure provides AI and machine-learning services that can naturally 
   :::column-end:::
 :::row-end:::
 
-> [!TIP]
-> Have you ever attended a hackathon? A hackathon is an event where people from all disciplines get together and use technology to tackle tough business problems. Rather than laying cable and racking servers, you can use Azure as an efficient and low-cost way to let your team explore new ideas. Thousands of innovations are driven by experimentation on Azure.<br><br>Later, you can check out these tips on how to [host a successful hackathon](https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/06/19/hosting-and-performing-hackathons/?azure-portal=true) to drive innovation in your team or simply fast track your career.
-
 ## Summary
 
 Simply put, cloud computing enables you to rent compute power and storage instead of buying physical assets such as CPUs and storage. Azure, Microsoft's cloud computing platform, manages physical assets for you so you can focus less on infrastructure and more on building the next great app.
