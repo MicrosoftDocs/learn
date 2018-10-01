@@ -24,7 +24,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. On the **Azure Functions for JavaScript - getting started** page, select **In-portal** and then select **continue**.
 
-1. In **Create a function**, select **More templates...**.
+1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
 
 1. In the list of all templates available to this function app, select **Http trigger** .
 
