@@ -36,19 +36,6 @@
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use a Queue trigger. The runtime will poll a queue and start this function to process a new message.
 
-<!-- Start temporary fix for issue #2498. -->
-> [!IMPORTANT]
-> The exercises in this module currently work with Azure Functions V1. Please follow these steps carefully to make sure your function app uses the V1 runtime version. 
-
-1. Select your function app in the **Function Apps** list.
-1. Select **Platform features**.
-1. In the **Platform features** screen, select **Function app settings** under **General Settings**.
-1. Select *~1* in the **Runtime version** .
-1. Close **Function app settings**.
-
-Our function app is now configured to use the Azure Functions V1 runtime. We can now continue to create our first function.
-<!-- End temporary fix for issue #2498. -->  
-
 1. Select the Add (__+__) button to the right of **Functions**.
  1. In the **Get started quickly** page that now appears, select **Custom function** at the bottom of the page, which loads the list of available function templates.
 

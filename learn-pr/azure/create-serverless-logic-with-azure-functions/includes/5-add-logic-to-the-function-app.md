@@ -20,19 +20,6 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
     ![Screenshot of the Azure portal showing the All resources blade highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
-<!-- Start temporary fix for issue #2498. -->
-> [!IMPORTANT]
-> The exercises in this module currently work with Azure Functions V1. Please follow these steps carefully to make sure your function app uses the V1 runtime version. 
-
-1. Select your function app in the **Function Apps** list.
-1. Select **Platform features**.
-1. In the **Platform features** screen, select **Function app settings** under **General Settings**.
-1. Select *~1* in the **Runtime version** .
-1. Close **Function app settings**.
-
-Our function app is now configured to use the Azure Functions V1 runtime. We can now continue to create our first function.
-<!-- End temporary fix for issue #2498. --> 
-
 1. The left-side menu displays your function app name and a submenu with three items: *Functions*, *Proxies*, and *Slots*.  
 
 1. To start creating our first function, select **Functions** and click  the **New function** button at the top of the resulting page.

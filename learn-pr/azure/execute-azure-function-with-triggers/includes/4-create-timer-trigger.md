@@ -36,26 +36,9 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Select **Create**. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it.
  
-<!-- Start temporary fix for issue #2498. -->
-> [!IMPORTANT]
-> The exercises in this module currently work with Azure Functions V1. Please follow these steps carefully to make sure your function app uses the V1 runtime version. 
-
-1. After the function app is created, select **All resources** from the left navigation.
-
-1. Select your function app in the **Function Apps** list.
-1. Select **Platform features**.
-1. In the **Platform features** screen, select **Function app settings** under **General Settings**.
-1. Select *~1* in the **Runtime version** .
-1. Close **Function app settings**.
-
-Our function app is now configured to use the Azure Functions V1 runtime. We can now continue to create our first function.
-<!-- End temporary fix for issue #2498. --> 
-
 ## Create a timer trigger
 
 Now we're going to create a timer trigger inside our function.
-
-
 
 1. On the new blade, point to **Functions** and select the plus (+) icon.
 
