@@ -12,11 +12,13 @@ Again, let's continue using our existing Azure Functions application and add a b
 
 1. Select **Blob trigger**.
 
+1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes, so please be patient. Wait until the installation completes before continuing.
+
 1. Leave the **Name** set to the default value.
 
 1. Leave the **Path** set to the default value.
 
-1. Select the _new_ link next to the **Storage account connection** dropdown. In the blade that pops up, click **Create new**. Enter a unique name for the new storage account and select **OK** to create the storage account and close pane.
+1. Select the _new_ link next to the **Storage account connection** dropdown. In the **Storage Account** selection dialog that appears, select the storage account for this function app.
 
 1. Once you have returned to the New Function screen, select **Create** to create the function.
 
