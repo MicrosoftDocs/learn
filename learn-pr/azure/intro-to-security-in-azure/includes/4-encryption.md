@@ -16,20 +16,23 @@ Encryption is typically approached in two ways: encryption at rest and encryptio
 
 ## Encryption in transit
 
-Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by several different layers. It could be done by encrypting the data at the application layer prior to sending it over a network. HTTPS is an example of application layer in transit encryption. 
+Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by several different layers. It could be done by encrypting the data at the application layer prior to sending it over a network. HTTPS is an example of application layer in transit encryption.
 
-You can also set up a secure channel, like a virtual private network (VPN), at a network layer, to transmit data between two systems. 
+You can also set up a secure channel, like a virtual private network (VPN), at a network layer, to transmit data between two systems.
 
-Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure. 
+Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure.
+
+This diagram shows the process. Here, customer data is encrypted as it's sent over the network. Only the receiver has the secret key that can decrypt the data to a usable form.
 
 ![Encryption in transit](../media/encryption-in-transit.png)
-
 
 ## Encryption at rest
 
 Data at rest is the data that has been stored on a physical medium. This could be data stored on the disk of a server, data stored in a database, or data stored in a storage account. Regardless of the storage mechanism, encryption of data at rest ensures that the stored data is unreadable without the keys and secrets needed to decrypt it. If an attacker was to obtain a hard drive with encrypted data and did not have access to the encryption keys, the attacker would not compromise the data without great difficulty.
 
 The actual data that is encrypted could vary in its content, usage, and importance to the organization. This could be financial information critical to the business, intellectual property that has been developed by the business, personal data about customers or employees that the business stores, and even the keys and secrets used for the encryption of the data itself.
+
+Here's a diagram that shows what encrypted customer data might look like as it sits in a database.
 
 ![Encryption at rest](../media/encryption-at-rest.png)
 
