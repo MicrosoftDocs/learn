@@ -6,9 +6,9 @@ The Azure CLI is a command-line program to connect to Azure and execute administ
 
 The Azure CLI provides cross-platform command-line tools for managing Azure resources, and can be installed locally on Linux, Mac, or Windows computers. The Azure CLI can also be used from a browser through the Azure Cloud Shell. In both cases, it can be used interactively or scripted. For interactive use, you first launch a shell such as cmd.exe on Windows or Bash on Linux or macOS and then issue the command at the shell prompt. To automate repetitive tasks, you assemble the CLI commands into a shell script using the script syntax of your chosen shell and then execute the script.
 
-## How to install Azure CLI
+## How to install the Azure CLI
 
-On both Linux and macOS, you use a package manager to install PowerShell Core. The recommended package manager differs by OS and distribution:
+On both Linux and macOS, you use a package manager to install the Azure CLI. The recommended package manager differs by OS and distribution:
 
 - Linux: **apt-get** on Ubuntu, **yum** on Red Hat, and **zypper** on OpenSUSE
 - Mac: **Homebrew**
