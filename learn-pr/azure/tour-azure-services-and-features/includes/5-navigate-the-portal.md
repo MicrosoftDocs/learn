@@ -7,11 +7,9 @@ The Azure portal is the primary graphical user interface (GUI) for controlling M
 ![The Azure portal](../media/5-portal.png)
 
 :::row:::
-
     :::column:::
     ![The resources and favorites](../media/5-favorites.png)
     :::column-end:::
-
     :::column span="3":::
     **Resource Panel**
     
@@ -21,7 +19,6 @@ The Azure portal is the primary graphical user interface (GUI) for controlling M
 
     You can also collapse this pane; with the **<<** caret. This will minimize it to just icons which can be convenient if you are working with limited screen real-estate.
     :::column-end:::
-
 :::row-end:::
 
 The remainder of the portal view is for the specific elements you are working with. The default (main) page is the _dashboard_. We'll cover this a bit later, but this represents a customizable birds-eye-view of your resources. You can use it to jump into specific resources you want to manage, or search for resources with the **All resources** entry in the resource panel. When you are managing a resource, such as a virtual machine or a web app, you will work with a _blade_ that presents specific information about the resource.

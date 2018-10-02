@@ -16,29 +16,34 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or False. Azure Load Balancer ensures that all packets from a client are sent to the same backend VM instance."
+  - content: "True or False: Azure Load Balancer can be used for either public-facing services or for internal Azure services?"
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Azure Load Balancer uses a hash to identify the client from the source and destination IP address and port."
+      correctExplanation: "Azure offers both public and internal load balancers. Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address. Internal load balancers process requests from within a virtual network."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Azure Load Balancer uses a hash to identify the client from the source and destination IP address and port." 
-  - content: "One reason to choose the Standard SKU over the Basic SKU is:"
+      incorrectExplanation: "Azure offers both public and internal load balancers. Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address. Internal load balancers process requests from within a virtual network." 
+
+  - content: "Which service does a load balancer use to determine if a virtual machine is ready to handle requests?"
     choices:
-    - content: "Standard SKU can direct traffic to a VM availability set, while Basic cannot."
+    - content: "Status checker"
       isCorrect: false
-      incorrectExplanation: "Both Basic and Standard SKUs support directing traffic to an availability set - however Standard SKUs can use more than one."
-    - content: "Standard SKU support secure traffic (HTTPS)."
+      incorrectExplanation: "Load balancers will distribute traffic to a virtual machine only if a health probe determines that the virtual machine is available and operational."
+    - content: "Availability monitor"
+      isCorrect: false
+      incorrectExplanation: "Load balancers will distribute traffic to a virtual machine only if a health probe determines that the virtual machine is available and operational."
+    - content: "Health probe"
       isCorrect: true
-      correctExplanation: "Basic SKU can only protect TCP and HTTP traffic; Standard SKU adds HTTPS support."
-    - content: "Standard SKU supports health probe monitoring of the backend VM servers, Basic does not."
-      isCorrect: false
-      incorrectExplanation: "Health probes are used in both SKUs and are a requirement to setup Azure Load Balancer."
-  - content: "True or False. Azure Load Balancer can be used for public-facing services, or for internal Azure services you use over a VPN."
+      correctExplanation: "Load balancers will distribute traffic to a virtual machine only if a health probe determines that the virtual machine is available and operational."
+
+  - content: "Suppose you're using an Azure Load Balancer to manage the distribution of traffic between three virtual machines. True or false: if a client makes multiple requests with different source ports, the same virtual machine is guaranteed to be used to handle each request?"
     choices:
     - content: "True"
-      isCorrect: true
-      incorrectExplanation: "Azure Load Balancer supports both public and internal configurations."
-    - content: "False"
       isCorrect: false
+      incorrectExplanation: "Azure Load Balancer uses a hash-based algorithm based off data including the source port of the client's request. A different source port would generate a new hash and the load balancer may send this traffic to any of the three virtual machines."
+    - content: "False"
+      isCorrect: true
+      correctExplanation: "Azure Load Balancer uses a hash-based algorithm based off data including the source port of the client's request. A different source port would generate a new hash and the load balancer may send this traffic to any of the three virtual machines."
+
+
