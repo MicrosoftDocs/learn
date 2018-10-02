@@ -6,7 +6,7 @@ Let's learn some of the top benefits of cloud computing.
     :::column:::
         ![Paper bill and a cloud representing cost effectiveness](../media/3-cost-effective.png)
     :::column-end:::
-    :::column span="3":::
+    :::column span="3":::  
         **It’s cost effective**
 
 Cloud computing provides a **pay-as-you-go** pricing model. Rather than paying for a pre-defined amount of computing resources or hardware up-front, you rent hardware and pay for the resources that you use.
@@ -19,7 +19,7 @@ For example, imagine you have a blog, and when you create a new post you want to
     :::column:::
         ![Growth chart representing scalability](../media/3-scalable.png)
     :::column-end:::
-    :::column span="3":::
+    :::column span="3":::  
         **It's scalable**
 
 Cloud computing supports both _vertical_ and _horizontal_ scaling depending on your needs.
@@ -34,7 +34,7 @@ Cloud computing supports both _vertical_ and _horizontal_ scaling depending on y
     :::column:::
         ![Point graph representing elasticity](../media/3-elastic.png)
     :::column-end:::
-    :::column span="3":::
+    :::column span="3":::  
         **It's elastic**
 
 As your workload changes due to a spike or drop in demand, a cloud computing system can compensate by automatically adding or removing resources.
@@ -49,7 +49,7 @@ Another example is if you are running an application used by employees, you can 
     :::column:::
         ![Calendar representing staying current](../media/3-current.png)
     :::column-end:::
-    :::column span="3":::
+    :::column span="3":::  
         **It's current**
 
 When you use the cloud, you’re able to focus on what matters: building and deploying applications. You don't have to be caught up in the maintenance work of software patching, hardware setup, upgrades, and other IT management tasks. All of this is automatically done for you to ensure you're using the latest and greatest tools to run your business.
@@ -62,7 +62,7 @@ Additionally, the computer hardware is maintained and upgraded by the cloud prov
     :::column:::
         ![Certificate representing reliability](../media/3-reliable.png)
     :::column-end:::
-    :::column span="3":::
+    :::column span="3":::  
         **It's reliable**
 
 When you're running a business, you want to be confident your data is always going to be there. Cloud computing providers offer data backup, disaster recovery, and data replication services to make sure your data is always safe.
@@ -73,7 +73,7 @@ When you're running a business, you want to be confident your data is always goi
     :::column:::
         ![Lock representing security](../media/3-secure.png)
     :::column-end:::
-    :::column span="3":::
+    :::column span="3":::  
         **It's secure**
 
 Think about how you secure your data center. You have physical security &ndash; who can access the building, who can touch server racks, and so on. You also have digital security &ndash; who can connect to your systems and data over the network.
