@@ -31,7 +31,7 @@ roles:
 products: 
 - azure
 - azure-iot-central
-- azure-active-directory
+- iot-central
 units:
 - learn.monitor-manage-device-with-iotcentral.1-create-azure-iot-central-application
 - learn.monitor-manage-device-with-iotcentral.2-define-coffee-machine-with-device-template
