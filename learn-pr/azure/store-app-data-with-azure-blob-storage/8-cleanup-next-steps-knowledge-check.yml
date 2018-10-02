@@ -18,17 +18,17 @@ quiz:
   questions:
   - content: "Which of the following describes a good strategy for creating storage accounts and blob containers for your application?"
     choices:
-    - content: "Create Azure Storage accounts and containers before deploying your application."
+    - content: "Create both your Azure Storage accounts and containers before deploying your application."
       isCorrect: false
-      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
-    - content: "Create Azure Storage accounts as your application needs them, but the deployment process should create the containers up front."
+      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Container creation is lightweight and is often driven by run-time data which makes it a good activity to do in your application."
+    - content: "Create Azure Storage accounts in your application as needed. Create the containers before deploying the application."
       isCorrect: false
-      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
-    - content: "Create Azure Storage accounts before deploying your app, and let your application create the containers as it needs them."
+      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Container creation is lightweight and is often driven by run-time data which makes it a good activity to do in your application."
+    - content: "Create Azure Storage accounts before deploying your app. Create containers in your application as needed."
       isCorrect: true
-      correctExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
+      correctExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Container creation is lightweight and is often driven by run-time data which makes it a good activity to do in your application."
       
-  - content: "What kind of configuration is typically used to initialize the Blob Storage client library within an application?"
+  - content: "Which of the following can be used initialize the Blob Storage client library within an application?"
     choices:
     - content: "An Azure username and password."
       isCorrect: false
