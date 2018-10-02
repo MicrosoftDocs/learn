@@ -16,28 +16,28 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or False: Azure Load Balancer can be used for public-facing services, or for internal Azure services?"
+  - content: "True or False: Azure Load Balancer can be used for either public-facing services or for internal Azure services?"
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address, whereas, internal load balancers process requests from within a virtual network."
+      correctExplanation: "Azure offers both public and internal load balancers. Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address. Internal load balancers process requests from within a virtual network."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address, whereas, internal load balancers process requests from within a virtual network." 
+      incorrectExplanation: "Azure offers both public and internal load balancers. Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address. Internal load balancers process requests from within a virtual network." 
 
-  - content: "Which of the following services do load balancers use to determine if a virtual machine can handle requests?"
+  - content: "Which service does a load balancer use to determine if a virtual machine is ready to handle requests?"
     choices:
     - content: "Status checker"
       isCorrect: false
-      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines that the virtual machine is available and operational."
+      incorrectExplanation: "Load balancers will distribute traffic to a virtual machine only if a health probe determines that the virtual machine is available and operational."
     - content: "Availability monitor"
       isCorrect: false
-      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines that the virtual machine is available and operational."
+      incorrectExplanation: "Load balancers will distribute traffic to a virtual machine only if a health probe determines that the virtual machine is available and operational."
     - content: "Health probe"
       isCorrect: true
-      correctExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines that the virtual machine is available and operational."
+      correctExplanation: "Load balancers will distribute traffic to a virtual machine only if a health probe determines that the virtual machine is available and operational."
 
-  - content: "Suppose you're using an Azure Load Balancer to manage the distribution of traffic between three virtual machines and a client is making multiple requests, each with different source ports. True or false: the same virtual machine is guaranteed to be used to handle each request?"
+  - content: "Suppose you're using an Azure Load Balancer to manage the distribution of traffic between three virtual machines. True or false: if a client makes multiple requests with different source ports, the same virtual machine is guaranteed to be used to handle each request?"
     choices:
     - content: "True"
       isCorrect: false
