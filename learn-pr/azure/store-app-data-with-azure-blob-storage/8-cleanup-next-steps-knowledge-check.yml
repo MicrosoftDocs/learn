@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Create Azure Storage accounts and containers before deploying your application."
       isCorrect: false
-      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an applciation. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
+      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
     - content: "Create Azure Storage accounts as your application needs them, but the deployment process should create the containers up front."
       isCorrect: false
-      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an applciation. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
+      incorrectExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
     - content: "Create Azure Storage accounts before deploying your app, and let your application create the containers as it needs them."
       isCorrect: true
-      correctExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an applciation. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
+      correctExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Also, container creation is quick and lightweight which makes it a good activity to do in your application."
       
   - content: "What kind of configuration is typically used to initialize the Blob Storage client library within an application?"
     choices:
@@ -57,3 +57,4 @@ quiz:
     - content: "The contents of the named blob are downloaded."
       isCorrect: false
       incorrectExplanation: "Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob."
+
