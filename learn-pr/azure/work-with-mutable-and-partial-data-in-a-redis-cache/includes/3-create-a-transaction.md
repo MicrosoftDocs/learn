@@ -161,7 +161,7 @@ Finally, we're going to add data into your Azure Redis Cache.
 
 1. Before building and running the application, check to make sure that the Redis cache has been fully provisioned. It can sometimes take a few minutes after `az redis create` completes. Run the following command to check the status.
 
-    ```azcli
+    ```azurecli
     az redis show \
         --name "$REDIS_NAME" \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -188,8 +188,8 @@ To finish off, let's verify that the data we added is in our Azure Redis Cache.
 
 1. In the **Overview** blade for your Azure Redis Cache, select **Console**. This will open an Azure Redis Cache console, which allows you to enter low-level Azure Redis Cache commands.
 
-1. Type **get MyKey1**. Verify that the value returned is **MyValue1**.
+1. Run the command `get MyKey1`. Verify that the value returned is **MyValue1**.
 
-1. Type **get MyKey2**. Verify that the value returned is **MyValue2**.
+1. Run the command `get MyKey2`. Verify that the value returned is **MyValue2**.
 
     ![Screenshot of the Azure Redis Cache console showing the values of MyKey1 and MyKey2.](../media/4-redis-console.png)
