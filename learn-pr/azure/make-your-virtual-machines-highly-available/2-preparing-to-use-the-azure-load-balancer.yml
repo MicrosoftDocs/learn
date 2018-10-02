@@ -16,33 +16,34 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you have a load balancer that distributes requests to resources within a virtual network and is not accessible from the internet. This is an example of which type of load balancer?"
+  - content: "True or False: Azure Load Balancer can be used for public-facing services, or for internal Azure services?"
     choices:
-    - content: "Public load balancer"
-      isCorrect: false
-      incorrectExplanation: "An internal load balancer processes requests from within a virtual network and is not accessible from the internet."
-    - content: "Internal load balancer"
+    - content: "True"
       isCorrect: true
-      correctExplanation: "An internal load balancer processes requests from within a virtual network and is not accessible from the internet." 
+      correctExplanation: "Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address, whereas, internal load balancers process requests from within a virtual network."
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "Public load balancers handle client requests from outside the Azure infrastructure and have a public IP address, whereas, internal load balancers process requests from within a virtual network." 
 
   - content: "Which of the following services do load balancers use to determine if a virtual machine can handle requests?"
     choices:
     - content: "Status checker"
       isCorrect: false
-      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines it's available and operational."
+      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines that the virtual machine is available and operational."
     - content: "Availability monitor"
       isCorrect: false
-      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines it's available and operational."
+      incorrectExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines that the virtual machine is available and operational."
     - content: "Health probe"
       isCorrect: true
-      correctExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines it's available and operational."
+      correctExplanation: "Load balancers will distribute traffic to virtual machines only if a health probe determines that the virtual machine is available and operational."
 
-  - content: "True or False: Azure Load Balancer uses a hash-based algorithm to ensure all packets within a client flow are sent to the same virtual machine instance?"
+  - content: "Suppose you're using an Azure Load Balancer to manage the distribution of traffic between three virtual machines and a client is making multiple requests, each with different source ports. True or false: the same virtual machine is guaranteed to be used to handle each request?"
     choices:
     - content: "True"
-      isCorrect: true
-      correctExplanation: "Azure Load Balancer's hash-based algorithm uses data like the source and destination IP address to ensure all packets within a packet client flow are sent to the same backend virtual machine instance."
-    - content: "False"
       isCorrect: false
-      incorrectExplanation: "Azure Load Balancer's hash-based algorithm uses data like the source and destination IP address to ensure all packets within a packet client flow are sent to the same backend virtual machine instance."
+      incorrectExplanation: "Azure Load Balancer uses a hash-based algorithm based off data including the source port of the client's request. A different source port would generate a new hash and the load balancer may send this traffic to any of the three virtual machines."
+    - content: "False"
+      isCorrect: true
+      correctExplanation: "Azure Load Balancer uses a hash-based algorithm based off data including the source port of the client's request. A different source port would generate a new hash and the load balancer may send this traffic to any of the three virtual machines."
+
 
