@@ -36,7 +36,7 @@ We'll use the `az redis create` command to create a new Azure Redis Cache. It ta
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --location eastus \
         --vm-size C0 \
-        --sku Basic \
+        --sku Basic
     ```
 
 ## Create a .NET Core console application
