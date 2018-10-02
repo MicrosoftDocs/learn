@@ -15,50 +15,52 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following is the correct name for the file that contains function configuration data?
-    choices: 
-    - content: config.txt
-      isCorrect: false
-      incorrectExplanation: The configuration is written in JSON.
-    - content: config.json
-      isCorrect: false
-      incorrectExplanation: It is a JSON file, but this is not the correct name.
-    - content: function.json 
-      isCorrect: true
-      correctExplanation: The configuration is named `function.json`, which contains JSON configuration data such as binding declarations.
 
-  - content: Which of the following is a supported input binding type?
-    choices: 
-    - content: Cosmos DB
+  - content: "Which of the following in an advantage to using bindings in your Azure Functions to access data sources and data sinks?"
+    choices:
+    - content: "They provide access to more data sources than are available using code."
+      isCorrect: false
+      incorrectExplanation: "Bindings are optional; you can access data using code if you prefer."
+    - content: "They let you connect to Azure resources without authentication."
+      isCorrect: false
+      incorrectExplanation: "Using a binding does not change the security requirements for accessing Azure resources."
+    - content: "They simplify the connection process; you don't need to code specific connection logic."
       isCorrect: true
-      correctExplanation: The Azure Cosmos DB input binding uses the SQL API to retrieve one or more Azure Cosmos DB documents and passes them to the input parameter of the function.
-    - content: SendGrid
-      isCorrect: false
-      incorrectExplanation: SendGrid is not a supported input binding type.
-    - content: Service Bus
-      isCorrect: false
-      incorrectExplanation: Service Bus is not a supported input binding type.
+      correctExplanation: "Bindings provide a declarative way to connect to data. They let you avoid the complexity of coding connection logic like making a database connection or invoking web API interfaces."
 
-  - content: How many triggers must a function have?
+  - content: "What is the name of the file that contains function configuration data?"
     choices: 
-    - content: zero
+    - content: "config.txt"
       isCorrect: false
-      incorrectExplanation: A function must have exactly one trigger.
-    - content: one
+      incorrectExplanation: "The configuration is written in JSON."
+    - content: "config.json"
+      isCorrect: false
+      incorrectExplanation: "It is a JSON file, but this is not the correct name."
+    - content: "function.json" 
       isCorrect: true
-      correctExplanation: A function must have exactly one trigger.
-    - content: two
-      isCorrect: false
-      incorrectExplanation: A function must have exactly one trigger.
-  - content: Which of the following lines of JavaScript writes "hello bindings" to an Azure Queue Storage queue using a function parameter called **myQueueItem**?
+      correctExplanation: "The configuration is named `function.json`, which contains JSON configuration data such as binding declarations."
+
+  - content: "How many triggers must a function have?"
     choices: 
-    - content: context.myQueueItem = "hello bindings";
+    - content: "Zero"
       isCorrect: false
-      incorrectExplanation: This is the correct parameter name but it needs to be access through the context of the object.
-    - content: context.bindings.myQueueItem = "hello bindings";
+      incorrectExplanation: "A function must have exactly one trigger."
+    - content: "One"
+      isCorrect: true
+      correctExplanation: "A function must have exactly one trigger."
+    - content: "Two"
+      isCorrect: false
+      incorrectExplanation: "A function must have exactly one trigger."
+
+  - content: Which of the following lines of JavaScript writes "hello" to an Azure Queue Storage queue using a function parameter called **myQueueItem**?
+    choices: 
+    - content: context.myQueueItem = "hello";
+      isCorrect: false
+      incorrectExplanation: This is the correct parameter name, but it needs to be access through the context of the object.
+    - content: context.bindings.myQueueItem = "hello";
       isCorrect: true
       correctExplanation: context.bindings returns a named object that contains all your input and output data. 
-    - content: myQueueItem = "hello bindings";
+    - content: myQueueItem = "hello";
       isCorrect: false
-      incorrectExplanation: This is the correct parameter name but it needs to be access through the context of the object.
+      incorrectExplanation: This is the correct parameter name, but it needs to be access through the context of the object.
  
