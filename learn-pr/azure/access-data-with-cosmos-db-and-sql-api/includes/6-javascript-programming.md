@@ -16,11 +16,9 @@ Stored procedures are the only way to achieve atomic transactions within Azure C
 
 Performing batch operations in stored procedures is also recommended because of the reduced need to create separate transactions.
 
-<!--TODO: Ideally I'd like to list some cases where a stored procedure is not the best option.-->
-
 ## Stored procedure example
 
-The following sample is a simple HelloWorld stored procedure that gets the current context and sends a response that displays "Hello, World". Note that the stored procedure has an ID value, just like Azure Cosmos DB documents.
+The following sample is a simple HelloWorld stored procedure that gets the current context and sends a response that displays "Hello, World".
 
 ```javascript
 function helloWorld() {
