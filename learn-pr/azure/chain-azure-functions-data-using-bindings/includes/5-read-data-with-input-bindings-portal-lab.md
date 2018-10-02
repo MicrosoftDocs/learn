@@ -162,24 +162,31 @@ To read data from the database, you need to define an input binding. As you'll s
 1. Select **Integrate** in the left pane to open the integration tab.
    The template you used created an HTTP trigger and an HTTP output binding. Now add your new Azure Cosmos DB input binding.
 
-2. Select **New Input** in the **Inputs** column.
+1. Select **New Input** in the **Inputs** column.
    A list of all possible input binding types is displayed.
 
-3. In the list, select **Azure Cosmos DB**, and then select **Select**.
+1. In the list, select **Azure Cosmos DB**, and then select **Select**.
    This action opens the Azure Cosmos DB input configuration page. Next, you'll set up a connection to your database.
 
-4. Next to the **Azure Cosmos DB account connection** box, select **new**.
+1. If the following message appears in the **Azure Cosmos DB input** configuration UI telling you that you must install an extension, select **Install**. 
+
+    ![The default JavaScript implementation of an HTTP-triggered Azure function](../media/extension-not-installed.png)
+
+    > [!NOTE]
+    > It can take a while to install an extension, so please wait for installation to complete before proceeding to the next step.
+
+1. Next to the **Azure Cosmos DB account connection** box, select **new**.
    This action opens the **Connection** window, which already has **Azure Cosmos DB account** and your Azure subscription selected. The only thing left to do is to select a database account ID.
 
-5. In the "Create a database account" section, you had to supply an ID value. Find that value in the **Database Account** drop-down list, and then click **Select**.
+1. In the "Create a database account" section, you had to supply an ID value. Find that value in the **Database Account** drop-down list, and then click **Select**.
 
-6. A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field. If you're curious about what is actually behind this abstract name, click *show value* to reveal the connection string.
+1. A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field. If you're curious about what is actually behind this abstract name, click *show value* to reveal the connection string.
 
 You want to look up a bookmark with a specific ID, so let's tie the ID we receive to the binding.
 
-7. In the **Document ID (optional)** field, enter `{id}`. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Since IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
+1. In the **Document ID (optional)** field, enter `{id}`. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Since IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
-8. Carefully fill out the remaining fields on this page using the values in the following table. At any time, you can click on the information icon to the right of each field name to learn more about the purpose of each field.
+1. Carefully fill out the remaining fields on this page using the values in the following table. At any time, you can click on the information icon to the right of each field name to learn more about the purpose of each field.
 
     |Setting  |Value  |Description  |
     |---------|---------|---------|
