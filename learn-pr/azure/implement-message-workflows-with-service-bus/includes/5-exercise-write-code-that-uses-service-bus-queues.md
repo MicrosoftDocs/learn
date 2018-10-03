@@ -37,10 +37,10 @@ Both of these values can be obtained from the Azure portal in the form of a comp
     ```azurecli
     az servicebus namespace authorization-rule keys list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --namespace-name <namespace-name> \
         --name RootManageSharedAccessKey \
         --query primaryConnectionString \
-        --output tsv
+        --output tsv \
+        --namespace-name <namespace-name>
     ```
 
     You'll be needing this connection string multiple times throughout this module, so you might want to paste it somewhere handy.
@@ -132,9 +132,9 @@ Once it's finished, run the following command to see how many messages are in th
 ```azurecli
 az servicebus queue show \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --namespace-name <namespace-name> \
     --name salesmessages \
-    --query messageCount
+    --query messageCount \
+    --namespace-name <namespace-name>
 ```
 
 ## Write code that receives a message from the queue
@@ -152,7 +152,7 @@ az servicebus queue show \
 1. To create a queue client, replace that line with the following code:
 
     ```C#
-    queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    var queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
     ```
 
 1. Locate the `RegisterMessageHandler()` method.
@@ -214,9 +214,9 @@ When you see that the message has been received and displayed in the console, pr
 ```azurecli
 az servicebus queue show \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --namespace-name <namespace-name> \
     --name salesmessages \
-    --query messageCount
+    --query messageCount \
+    --namespace-name <namespace-name>
 ```
 
 This will show `0` if all the messages have been removed.
