@@ -56,11 +56,11 @@ quiz:
     choices: 
     - content: context.myQueueItem = "hello";
       isCorrect: false
-      incorrectExplanation: This is the correct parameter name, but it needs to be access through the context of the object.
+      incorrectExplanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
     - content: context.bindings.myQueueItem = "hello";
       isCorrect: true
       correctExplanation: context.bindings returns a named object that contains all your input and output data. 
     - content: myQueueItem = "hello";
       isCorrect: false
-      incorrectExplanation: This is the correct parameter name, but it needs to be access through the context of the object.
+      incorrectExplanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
  
