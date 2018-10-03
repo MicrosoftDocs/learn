@@ -138,7 +138,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
     ```
 
     > [!TIP]
-    > The **AZURE_STORAGE_CONNECTION_STRING** value is a hard-coded environment variable used for Storage APIs to look up access keys. You can use your own name if you prefer, but you must supply the name to the when you create the `BlobService` object in your Node.js app.
+    > The **AZURE_STORAGE_CONNECTION_STRING** value is a hard-coded environment variable used for Storage APIs to look up access keys. You can use your own name if you prefer, but you must supply the name to the <!-- missing word --> when you create the `BlobService` object in your Node.js app.
 
 1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell run the following command.
 
