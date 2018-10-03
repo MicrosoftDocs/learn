@@ -58,4 +58,4 @@ Result
 helloacrtasks
 ```
 
-The `helloacrbuild` image is now ready to be used.
+The `helloacrtasks` image is now ready to be used.
