@@ -57,7 +57,7 @@ The Cloud Shell in Microsoft Learn doesn't have the ability to download files, b
     ```
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. In the **All resources** panel of the portal dashboard, select the storage account with name beginning with `cloudshell`.
-1. In the Storage account panel, select **Storage Explorer**, then **FILE SHARES** and then the file share in that collection with the name beginning with **cloudshellfiles***.
+1. In the Storage account panel, select **Storage Explorer**, then **FILE SHARES** and then the file share in that collection with the name beginning with **cloudshellfiles**.
 1. Select the *thunbnail.jpg* file and then **Download** from the top menu to see the image.
 
 The `generateThumbnail` operation is a powerful thumbnail generator that is capable of keeping the Region Of Interest (ROI) of an image in the thumbnail.

@@ -14,39 +14,45 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is not a benefit of using Azure Container Registry?'
+
+  - content: "Which of the following is not a benefit of using Azure Container Registry?"
     choices:
-    - content: Replicate container images to many Azure datacenters.
-      incorrectExplanation: The Azure Container Registry geo-replication feature enables this.
+    - content: "Replicate container images to multiple Azure datacenters."
       isCorrect: false
-    - content: Pull container images from Container Registry using any Docker container-related technology.
+      incorrectExplanation: "The Azure Container Registry provides a geo-replication feature."
+    - content: "Pull container images using any Docker container-related technology."
       isCorrect: false
-      incorrectExplanation: Container Registry can be used with all Docker-related technology.
-    - content: Make container images publicly available for pull operations.
+      incorrectExplanation: "The Azure Container Registry can be used with all Docker-related technology."
+    - content: "Allow public access to container images for pull operations."
       isCorrect: true
-      correctExplanation: Container Registry is a private registry. Images stored in Container Registry cannot be accessed without authentication.
-    - content: Build container images without the need for locally installed Docker tools.
+      correctExplanation: "Azure Container Registry is a private registry. Images cannot be accessed without authentication."
+    - content: "Build container images without the need for locally installed Docker tools."
       isCorrect: false
-      incorrectExplanation: Container images can be built in the cloud using Azure Container Registry Build.
-  - content: 'What is the recommended authentication method for Azure Container Registry?'
+      incorrectExplanation: "Container images can be built in the cloud using Azure Container Registry Build."
+  
+  - content: "What is the recommended authentication method for Azure Container Registry?"
     choices:
-    - content: Admin account.
-      incorrectExplanation: Although an admin account can be created for Azure Container Registry, this is not the recommended authentication method.
+    - content: "Admin account"
       isCorrect: false
-    - content: User name and password.
-      incorrectExplanation: An Azure container registry can be admin-account enabled, which provides a user name and password. However, this is not the recommended authentication method.
+      incorrectExplanation: "An admin account can be created for Azure Container Registry; however, this is not the recommended authentication method."
+    - content: "Username and password"
       isCorrect: false
-    - content: Azure service principal.
+      incorrectExplanation: "An admin-account with username and password can be enabled for an Azure Container Registry; however, this is not the recommended authentication method."
+    - content: "Azure service principal"
       isCorrect: true
-      correctExplanation: Azure service principals provide granular access to container images in Azure Container Registry. Using a service principal, read-only and full access can be provided to the container registry.
-    - content: No authentication.
-      incorrectExplanation: Azure Container Registry is a private registry and cannot be accessed without authentication..
+      correctExplanation: "Azure service principals are the recommended authentication method. They provide granular access to container images in Azure Container Registry; for example, you can specify read-only access or full access to the container registry."
+    - content: "No authentication"
       isCorrect: false
-  - content: 'Geo-replication is available in the Container Registry Standard SKU.'
+      incorrectExplanation: "Azure Container Registry is a private registry and cannot be accessed without authentication."
+ 
+  - content: "Suppose you use container images to run compute workloads in multiple regions throughout the world. You plan to enable the geo-replication feature of Azure Container Registry to decrease the time required to provision an instance. Which regions should you choose for your replicas when configuring geo-replication?"
     choices:
-    - content: True.
-      incorrectExplanation: Geo-replication is only available in the Premium SKU.
+    - content: "Place a container registry in the region closest to your development team."
       isCorrect: false
-    - content: False.
+      incorrectExplanation: "The goal is to place the registries close to the execution locations, not near the development team."
+    - content: "Place a container registry in each region where images are run."
       isCorrect: true
-      correctExplanation: Geo-replication is only available in the Premium SKU.
+      correctExplanation: "Placing a registry in each region that runs the images will ensure network-close registry access everywhere it is needed."
+    - content: "Place a container registry in every Azure region."
+      isCorrect: false
+      incorrectExplanation: "This will increase costs but will not increase performance."
