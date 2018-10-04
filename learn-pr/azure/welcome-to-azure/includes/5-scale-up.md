@@ -12,7 +12,7 @@ You may have heard the terms _scaling up_ and _scaling out_.
 
 Scaling up, or vertical scaling, means to increase the memory, storage, or compute power on an existing virtual machine. For example, you can add additional memory to a web or database server to make it run faster.
 
-Scaling out, or horizontal scaling, means to additional virtual machines to power your application. For example, you might create many virtual machines configured in exactly the same way and use a load balancer to distribute work across them.
+Scaling out, or horizontal scaling, means to add extra virtual machines to power your application. For example, you might create many virtual machines configured in exactly the same way and use a load balancer to distribute work across them.
 
 > [!TIP]
 > The cloud is elastic. You can _scale down_ or _scale in_ your deployment if you needed to scale up or scale out only temporarily. Scaling down or scaling in can help you save money.<br><br>**Azure Advisor** and **Azure Cost Management** are two services that help you optimize cloud spend. You can use these services to identify where you're using more than you need, and then scale back to the capacity you're actually using.
