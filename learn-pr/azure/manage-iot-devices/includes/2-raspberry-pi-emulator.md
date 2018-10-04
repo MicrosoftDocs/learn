@@ -1,5 +1,5 @@
 Raspberry Pi boards have garnered much interest of late for testing theories or
-event making cool things. While the cost on this boards are quite low, some may
+even making cool things. While the cost on this boards are quite low, some may
 be interested in testing out the Raspberry Pi functionality before investing in
 one.
 
