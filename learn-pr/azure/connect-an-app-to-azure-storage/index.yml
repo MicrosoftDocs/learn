@@ -4,13 +4,11 @@ metadata:
   title: Connect an app to Azure Storage
   description: Create a simple application and add configuration, client library references, and code to connect it to Azure Storage.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: JesseDietrichson
+  ms.author: jediet
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  ms.learn-contact: jediet
 title: Connect an app to Azure Storage
 summary: Create a simple application and add configuration, client library references, and code to connect it to Azure Storage.
 abstract: | 
