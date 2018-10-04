@@ -5,12 +5,12 @@ metadata:
   description: Use Azure Load Balancer as a public load balancer to distribute public inbound traffic across multiple Azure virtual machines. Understand the purpose of a load balancer. Work with Azure Load Balancer in the portal, identify a VM scale set to route traffic to, and monitor your traffic.
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: marktap
+  ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  #ms.learn-contact: matapar
 title: Make your VMs highly available with Azure Load Balancer
 summary: Distribute public inbound traffic across multiple virtual machines with Load Balancer.
 abstract: |
