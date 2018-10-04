@@ -23,8 +23,8 @@ quiz:
       isCorrect: false
       incorrectExplanation: "The login notification is an event: it contains only a simple piece of status data and there is no expectation by the authenication service for the client applications to react to the notice in any particular way."
     - content: "Event"
-      incorrectExplanation: "The login notification is an event: it contains only a simple piece of status data and there is no expectation by the authenication service for the client applications to react to the notice in any particular way."
       isCorrect: true
+      correctExplanation: "The login notification is an event: it contains only a simple piece of status data and there is no expectation by the authenication service for the client applications to react to the notice in any particular way."
 
   - content: "Suppose you have a distributed application with a web service that lets users manage their account. Users can sign up, edit their profile, and delete their account. When a user deletes their account, your web service notifies your data layer so the user's data will be removed from the database. Is the delete-account notification an example of a message or an event?"
     choices:
