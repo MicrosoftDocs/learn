@@ -4,13 +4,11 @@ metadata:
   title: Create serverless logic with Azure Functions
   description: Azure Functions allow you to host business logic that can be executed without managing or provisioning server infrastructure
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  ms.learn-contact: anbyrne
 title: Create serverless logic with Azure Functions
 summary: Azure Functions allows developers to host business logic that can be executed without managing or provisioning infrastructure. 
 abstract:  | 

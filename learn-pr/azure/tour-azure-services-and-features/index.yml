@@ -4,13 +4,11 @@ metadata:
   title: Tour Azure services and features
   description: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences. After you create an account, you can use the Azure portal to tour the available services and create the ones you need for your application. This module guides you through the onboarding process: you will create your Azure account, login to the portal, and practice creating a few common resources."
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
   author: marktap
   ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: matapar
+  ms.learn-contact: matapar
 title: Tour Azure services and features
 summary: Create an Azure account, tour available services, and customize the portal.
 abstract: |

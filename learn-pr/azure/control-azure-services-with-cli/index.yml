@@ -4,13 +4,11 @@ metadata:
   title: Control Azure services with the CLI
   description: Install the Azure CLI locally and use it to manage Azure resources.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
   author: marktap
   ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: matapar
+  ms.learn-contact: matapar
 title: Control Azure services with the CLI
 summary: Install the Azure CLI locally and use it to manage Azure resources.
 abstract: | 

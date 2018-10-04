@@ -4,13 +4,11 @@ metadata:
   title: Prepare your development environment for Azure development
   description: Set up your local development environment with several popular IDEs.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  ms.learn-contact: adsteven
 title: Prepare your development environment for Azure development
 summary: Set up your local development environment with several popular IDEs.
 abstract:   | 
