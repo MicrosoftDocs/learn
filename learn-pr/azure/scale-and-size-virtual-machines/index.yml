@@ -5,12 +5,12 @@ metadata:
   description: You can change the CPU and memory resources of your virtual machines as needed to handle demand and control costs. Manual adjustment can work when demand is predictable and changes infrequently. An automated solution is better when your workload changes unpredictably or frequently. Here, you will see how to control the power of your virtual machines by modifying the size of individual servers or changing the number of available machines. We'll cover how to do this both manually and with scale sets and autoscaling.
   ms.date: 09/24/2018
   #TODO: Update with real author's name
-  author: markjulmar
-  ms.author: smmark
+  author: marktap
+  ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  #ms.learn-contact: matapar
 title: Scale and size virtual machines
 summary: Adjust your virtual machine compute and storage power manually or by using autoscale.
 abstract: |
