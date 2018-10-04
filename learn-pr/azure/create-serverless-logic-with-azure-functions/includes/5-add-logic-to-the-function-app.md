@@ -20,30 +20,13 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
     ![Screenshot of the Azure portal showing the All resources blade highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
-<!-- Start temporary fix for issue #2498. -->
-> [!IMPORTANT]
-> The exercises in this module currently work with Azure Functions V1. Please follow these steps carefully to make sure your function app uses the V1 runtime version. 
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
-1. Select your function app in the **Function Apps** list.
-1. Select **Platform features**.
-1. In the **Platform features** screen, select **Function app settings** under **General Settings**.
-1. Select *~1* in the **Runtime version** .
-1. Close **Function app settings**.
+1. On the **Azure Functions for JavaScript - getting started** page, select **In-portal** and then select **continue**.
 
-Our function app is now configured to use the Azure Functions V1 runtime. We can now continue to create our first function.
-<!-- End temporary fix for issue #2498. --> 
+1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
 
-1. The left-side menu displays your function app name and a submenu with three items: *Functions*, *Proxies*, and *Slots*.  
-
-1. To start creating our first function, select **Functions** and click  the **New function** button at the top of the resulting page.
-
-    ![Screenshot of the Azure portal showing the Functions list for our function app, with the Functions menu item and New function button highlighted.](../media/5-function-add-button.png)
-
-1. In the Quickstart screen, select the **Custom function** link in the **Get started on your own** section as shown in the following screenshot. If you don't see the Quickstart screen, click on the **go to the quickstart** link at the top of the page.
-
-    ![Screenshot of the Azure portal showing the Quickstart blade with the Custom function button highlighted in the Get started on your own section.](../media/5-custom-function.png)
-
-1. From the list of templates displayed on the screen, select the **HTTP trigger** template as shown in the following screenshot.
+1. In the list of all templates available to this function app, select **Http trigger** .
 
 1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
 

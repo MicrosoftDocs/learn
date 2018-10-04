@@ -6,9 +6,9 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 1. Click **Virtual machines**. The **Virtual Machines** blade appears. There is nothing currently showing because you have not defined any virtual machines.
 
-1. Click the **+ Add** button. The **Compute** blade appears, as in the previous exercise.
+1. Click the **+ Add** button. The **Create a virtual machine** blade appears, as in the previous exercise.
 
-1. Click the **X** in the top right-hand corner to close the **Compute** blade.
+1. Click the **X** in the top right-hand corner to close the **Create a virtual machine** blade.
 
 1. Click the **X** in the top right-hand corner to close the **Virtual machines** blade. You should now be back at the dashboard page.
 

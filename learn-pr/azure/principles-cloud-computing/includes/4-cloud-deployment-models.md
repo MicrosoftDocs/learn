@@ -10,7 +10,7 @@ There are three different cloud deployment models. A cloud deployment model defi
     :::column:::
         ![Public cloud icon](../media/4-public-cloud.png)
     :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
         **Public cloud**
 
 This is the most common deployment model. In this case, you have no local hardware to manage or keep up-to-date – everything runs on your cloud provider’s hardware. In some cases, you can save additional costs by sharing computing resources with other cloud users.
@@ -26,7 +26,7 @@ Some advantages of the public cloud are:
     :::column:::
         ![Private cloud icon](../media/4-private-cloud.png)
     :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
         **Private cloud**
 
 In a private cloud, you create a cloud environment in your own data center and provide self-service access to compute resources to users in your organization. This offers a simulation of a public cloud to your users, but you remain completely responsible for the purchase and maintenance of the hardware and software services you provide.
@@ -41,7 +41,7 @@ Some reasons teams move away from the private cloud are:
     :::column:::
         ![Hybrid cloud icon](../media/4-hybrid-cloud.png)
     :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
         **Hybrid cloud**
 
 A hybrid cloud combines public and private clouds, allowing you to run your applications in the most appropriate location. For example, you could host a web site in the public cloud and link it to a highly secure database hosted in your private cloud (or on-premises data center).

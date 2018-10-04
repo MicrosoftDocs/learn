@@ -35,13 +35,7 @@ The free sandbox allows you to create resources in a subset of Azure's global re
 Execute the following command in the Cloud Shell to start a container instance. The `--dns-name-label` value must be unique within the Azure region you create the instance, so you will need to replace `[dns-name]` with something unique.
 
 ```azurecli
-az container create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name mycontainer \
-    --image microsoft/aci-helloworld \
-    --ports 80 \
-    --dns-name-label [dns-name] \
-    --location eastus
+az container create --resource-group <rgn>[sandbox resource group name]</rgn> --name mycontainer --image microsoft/aci-helloworld --ports 80 --dns-name-label [dns-name] --location eastus
 ```
 
 Within a few seconds, you should get a response to your request. Initially, the container is in the **Creating** state, but it should start within a few seconds. You can check the status using the `az container show` command:

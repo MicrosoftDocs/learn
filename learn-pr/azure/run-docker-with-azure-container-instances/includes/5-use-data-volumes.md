@@ -80,18 +80,22 @@ Open a browser and navigate to the container's IP address. You will be presented
 
 To validate, you can navigate to the file share in the Azure portal and download the file.
 
-1. Get the filename
+Get the filename
 
-    ```azurecli
-    az storage file list -s aci-share-demo -o table
-    ```
+```azurecli
+az storage file list -s aci-share-demo -o table
+```
 
-1. Download it, make sure to replace the `<filename>` below.
+Download the file to the cloud shell. Make sure to replace the `<filename>` below.
 
-    ```azurecli
-    az storage file download -s aci-share-demo -n <filename>
-    ```
-    
-![Sample text file with contents demo application](../media/5-sample-text.png)
+```azurecli
+az storage file download -s aci-share-demo -p <filename>
+```
+
+Show the contents of the file.
+
+```azurecli
+cat <filename>
+```
 
 If the files and data stored in the Azure Files share were of any value, this share could be remounted on a new container instance to provide stateful data.

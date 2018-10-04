@@ -12,7 +12,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Serverless Function App**.
 
 1. Set the function app properties as follows:
 
@@ -49,25 +49,15 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 Now that we have a function app, it's time to create a function. A function is activated through a trigger. In this module, we'll use an HTTP trigger.
 
-<!-- Start temporary fix for issue #2498. -->
-> [!IMPORTANT]
-> The exercises in this module currently work with Azure Functions V1. Please follow these steps carefully to make sure your function app uses the V1 runtime version. 
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
-1. Select your function app in the **Function Apps** list.
-1. Select **Platform features**.
-1. In the **Platform features** screen, select **Function app settings** under **General Settings**.
-1. Select *~1* in the **Runtime version** .
-1. Close **Function app settings**.
+1. On the **Azure Functions for JavaScript - getting started** page, select **In-portal** and then select **continue**.
 
-Our function app is now configured to use the Azure Functions V1 runtime. We can now continue to create our first function.
-<!-- End temporary fix for issue #2498. --> 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
+1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
 
-1. On the **Get started quickly** page, select **Custom function** under the **Get started on your own** section.
+1. In the list of all templates available to this function app, select **HTTP Trigger** .
 
-1. This will list all the templates Select **HTTP Trigger** template from the list.
-
-1. On the **New Function** blade, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
+1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 
