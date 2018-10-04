@@ -4,13 +4,11 @@ metadata:
   title: Build and run a web application with the MEAN stack on an Azure Linux Virtual Machine
   description: Learn how to set up a MEAN-based web application on a new Azure Linux virtual machine.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  ms.learn-contact: adpatrid
 title: Build and run a web application with the MEAN stack on an Azure Linux Virtual Machine
 summary: Learn how to set up a MEAN-based web application on a new Azure Linux virtual machine.
 abstract: |

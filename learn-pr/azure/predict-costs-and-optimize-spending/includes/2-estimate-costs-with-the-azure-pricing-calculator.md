@@ -33,7 +33,7 @@ In the Azure pricing calculator, on the **Products** tab, add the following serv
 
 We can configure the details of each, on the **Estimates** tab, to get a solid estimate of our costs. Use the **West US** region for all resources.
 
-* **Virtual Machines.** This is an ASP.NET application, so we'll need to use a **Windows OS** VM. This application doesn't require a massive amount of computing power, so select the **D2 v3** instance size. We'll need two virtual machines, and they will run all the time (730 hours/month). We're going to use premium SSD storage for these VMs and will require just one disk per VM of size **E10**, for a total of two disks.
+* **Virtual Machines.** This is an ASP.NET application, so we'll need to use a **Windows OS** VM. This application doesn't require a massive amount of computing power, so select the **D2 v3** instance size. We'll need two virtual machines, and they will run all the time (730 hours/month). We're going to use standard SSD storage for these VMs and will require just one disk per VM of size **E10**, for a total of two disks.
 
 * **SQL Database.** For the database, we're going to provision a **single database type** using the **vCore model**. We want a General Purpose, Gen 5 database with 8 vCores. We'll need 32 GB of storage.
 
