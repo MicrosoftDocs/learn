@@ -28,10 +28,10 @@ quiz:
     choices:
     - content: "Owner"
       isCorrect: false
-      incorrectExplanation: "An owner can create and manage all types of Azure resources, however, they can grant access to other users."
+      incorrectExplanation: "An owner can create and manage all types of Azure resources; however, they can grant access to other users."
     - content: "Contributor"
       isCorrect: true
-      correctExplanation: "A contributor can create and manage all types of Azure resources, and they can't grant access to other users."
+      correctExplanation: "A contributor can create and manage all types of Azure resources, but they can't grant access to other users."
     - content: "Reader"
       isCorrect: false
       incorrectExplanation: "A reader can only view existing Azure Resources."
@@ -43,13 +43,13 @@ quiz:
     choices:
     - content: "Management group, Resource group, Subscription, Resource"
       isCorrect: false
-      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups, and Resources."
+      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
     - content: "Management group, Subscription, Resource group, Resource"
       isCorrect: true
-      correctExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups, and Resources."
+      correctExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
     - content: "Subscription, Management group, Resource group, Resource"
       isCorrect: false
-      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups, and Resources."
+      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
     - content: "Subscription, Resource group, Management group, Resource"
       isCorrect: false
-      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups, and Resources."
+      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
