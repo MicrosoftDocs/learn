@@ -4,13 +4,11 @@ metadata:
   title: Provision an Azure SQL database to store application data
   description: Use the Azure Portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  #ms.learn-contact: adsteven
 title: Provision an Azure SQL database to store application data
 summary: Use the Azure Portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
 abstract: |
