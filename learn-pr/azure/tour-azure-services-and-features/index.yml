@@ -8,7 +8,7 @@ metadata:
   ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: matapar
+  #ms.learn-contact: matapar
 title: Tour Azure services and features
 summary: Create an Azure account, tour available services, and customize the portal.
 abstract: |

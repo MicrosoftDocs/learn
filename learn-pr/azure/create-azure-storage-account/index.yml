@@ -8,7 +8,7 @@ metadata:
   ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: matapar
+  #ms.learn-contact: matapar
 title: Create an Azure Storage account
 summary: Create an Azure Storage account with the correct options for your business needs.
 abstract: | 

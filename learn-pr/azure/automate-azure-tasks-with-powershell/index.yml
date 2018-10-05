@@ -8,7 +8,7 @@ metadata:
   ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: matapar
+  #ms.learn-contact: matapar
 title: Automate Azure tasks using scripts with PowerShell
 summary: Install Azure PowerShell locally and use it to manage Azure resources.
 abstract: | 

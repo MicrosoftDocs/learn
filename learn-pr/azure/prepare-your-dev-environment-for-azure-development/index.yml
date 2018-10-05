@@ -8,7 +8,7 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: adsteven
+  #ms.learn-contact: adsteven
 title: Prepare your development environment for Azure development
 summary: Set up your local development environment with several popular IDEs.
 abstract:   | 

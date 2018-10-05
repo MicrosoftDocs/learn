@@ -8,7 +8,7 @@ metadata:
   ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: matapar
+  #ms.learn-contact: matapar
 title: Scale and size virtual machines
 summary: Adjust your virtual machine compute and storage power manually or by using autoscale.
 abstract: |
