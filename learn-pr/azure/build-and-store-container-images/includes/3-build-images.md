@@ -30,7 +30,7 @@ EXPOSE  80
 CMD     ["node", "server.js"]
 ```
 
-Use the key combination <kbd>Ctrl+S</kbd> to save. Name the file `Dockerfile` when prompted.
+Use the key combination <kbd>Ctrl+S</kbd> (<kbd>Cmd+S</kbd> for Mac) to save. Name the file `Dockerfile` when prompted.
 
 This configuration adds a Node.js application to the `node:9-alpine` image. After that, it configures the container to serve the application on port 80 via the *EXPOSE* instruction.
 
