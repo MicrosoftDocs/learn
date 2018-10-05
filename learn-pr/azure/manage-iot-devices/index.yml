@@ -3,13 +3,12 @@ uid: learn.manage-iot-devices
 metadata:
   title: Learn how to manage IoT devices as an IT Admin
   description: With IoT adoption on the rise, learn what tools Microsoft offers Operations to help deploy, manage and secure said plethora of devices.
-  #TODO: Update with real author's name.
   author: lnyswonger
   ms.date: 09/24/2018
   ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
+  ms.learn-contact: luken
 title: Learn how to manage IoT devices as an IT Admin
 summary: With IoT adoption on the rise, learn what tools Microsoft offers Operations to help deploy, manage and secure said plethora of devices.
 abstract: | 
