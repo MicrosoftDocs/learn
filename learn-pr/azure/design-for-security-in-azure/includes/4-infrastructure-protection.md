@@ -1,6 +1,6 @@
 Lamna Healthcare recently experienced a significant outage to a customer-facing web application. An engineer was granted full access to a resource group containing the production web application. This person accidentally deleted the resource group and all child resources, including the database hosting live customer data. 
 
-Fortunately, the application source code and resources were available in source control and regular database backups were running automatically on a schedule. Therefore the service was reinstated relatively easily. Here, we will explore how this outage could have been avoided by utilizing capabilities on Azure to protect the access to infrastructure.
+Fortunately, the application source code and resources were available in source control and regular database backups were running automatically on a schedule. Therefore, the service was reinstated relatively easily. Here, we will explore how this outage could have been avoided by utilizing capabilities on Azure to protect the access to infrastructure.
 
 ## Criticality of infrastructure
 
@@ -45,11 +45,11 @@ Azure AD addresses this problem through two methods: service principals and mana
 
 To understand service principals, it's useful to first understand the words **identity** and **principal** as they are used in Identity management world.
 
-An **identity** is just a thing that can be authenticated. Obviously this includes users with username and password, but it can also include applications or other servers, which might authenticate with secret keys or certificates. As a bonus definition, an **account** is data associated with an identity.
+An **identity** is just a thing that can be authenticated. Obviously, this includes users with username and password, but it can also include applications or other servers, which might authenticate with secret keys or certificates. As a bonus definition, an **account** is data associated with an identity.
 
 A **principal** is an identity acting with certain roles or claims. Consider the use 'sudo' on a bash prompt or on Windows using "run as Administrator". In both of those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing.
 
-So a **Service Principal** is literally named. It is an identity that is used by a service or application. Like other identities, it can be assigned roles. 
+So, a **Service Principal** is literally named. It is an identity that is used by a service or application. Like other identities, it can be assigned roles.
 
 For example, Lamna Healthcare can assign its deployment scripts to run authenticated as a service principal. If that is the only identity that has permission to perform destructive actions, Lamna will have gone a long way toward making sure they don't have a repeat of the accidental resource deletion.
 

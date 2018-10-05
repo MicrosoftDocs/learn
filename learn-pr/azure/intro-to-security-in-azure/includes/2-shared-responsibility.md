@@ -108,13 +108,13 @@ At the network perimeter, it's about protecting from network-based attacks again
     ![A badge representing a secure access](../media/2-policies-and-access.png)
   :::column-end:::
 	:::column span="3":::
-**Policies and access**
+**Identity and access**
 
 - Control access to infrastructure and change control.
 - Use single sign-on and multi-factor authentication.
 - Audit events and changes.
 
-The policy and access layer is all about ensuring identities are secure, access granted is only what is needed, and changes are logged.
+The identity and access layer is all about ensuring identities are secure, access granted is only what is needed, and changes are logged.
   :::column-end:::
 :::row-end:::
 

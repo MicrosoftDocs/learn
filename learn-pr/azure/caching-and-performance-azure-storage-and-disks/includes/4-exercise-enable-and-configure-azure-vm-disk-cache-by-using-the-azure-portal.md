@@ -1,5 +1,5 @@
 
-Suppose you run a photo sharing site, with data stored on Azure virtual machines (VMs) running SQL Server and custom applications. You want to make the following adjustments:
+Suppose you run a photo sharing site with data stored on Azure virtual machines (VMs) running SQL Server and custom applications. You want to make the following adjustments:
 
 - You need to change the disk cache settings on a VM.
 - You want to add a new data disk to the VM with caching enabled.
@@ -55,7 +55,7 @@ VM creation can take a few minutes as it creates all the various resources (stor
 
 Once our VM is deployed, we can confirm the caching status of the OS disk using the following steps:
 
-1. Select the **fotoshareVM** resource to open the VM details in the portal. Alternatively, you can click **All resources** in the left sidebar, and then select your VM, **fotoshareVM**.
+1. Select the **fotoshareVM** resource to open the VM details in the portal. Alternatively, you can click **All resources** in the left sidebar and then select your VM, **fotoshareVM**.
 
 1. Under **Settings**, select **Disks**.
 
