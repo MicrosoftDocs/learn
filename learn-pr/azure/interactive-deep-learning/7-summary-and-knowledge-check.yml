@@ -16,26 +16,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following best describes the dependency challenges faced when using the DSVM for deep learning?
+ 
+  - content: "True or false: Data Science VMs comes pre-installed with Jupyter notebooks server, which by default listens on port 22."
     choices:
-    - content: The DSVM is sandboxed and doesn't provide direct support for installing new packages.
+    - content: "True"
       isCorrect: false
-      incorrectExplanation: The DSVM is a virtual machine. It comes with lots of pre-installed software to help with data science and AI project, but you are free to install whatever you want. 
-    - content: The DSVM only supports CNTK and Cognitive Service dependencies.
-      incorrectExplanation: DSVMs provide out of the box support for many popular frameworks such as PyTorch, Chainer, and Tensorflow.
-      isCorrect: false
-    - content: Certain deep learning frameworks and packages require different enviorments, GPU drivers and binary packages
+      incorrectExplanation: "By default, a notebook server listens only to IP 127.0.0.1 (localhost) and on port 8888."
+    - content: "False"
       isCorrect: true
-      correctExplanation: Managing the dependencies between all the frameworks you are using for deep learning can be a challenge. Running a Docker container to group and isolate these dependencies can help with this challenge.
-  - content: Suppose you've been experimenting with deep learning in a Docker container. Your DSVM is running on a Linux virtual machine that also has GPUs. Which of the followign commands to you run to provision a container with the necessary components to execute code on the GPU. 
+      correctExplanation: "By default, a notebook server listens only to IP 127.0.0.1 (localhost) and on port 8888."
+ 
+  - content: "Which of the following describes CUDA?"
     choices:
-    - content: docker run --useGPU
-      isCorrect: false
-      incorrectExplanation: The docker run command does not have a parameter called --useGPU
-    - content: nvidia-docker run
+    - content: "It's a parallel computing platform and API."
       isCorrect: true
-      correctExplanation: This command can be used to execute a container that uses GPUs. 
-    - content: docker-nvidia run
+      correctExplanation: "CUDA is a parallel computing platform and application programming interface (API) model created by NVIDIA. The CUDA platform is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements, for the execution of compute kernels."
+    - content: "It's a super powerful CPU."
       isCorrect: false
-      incorrectExplanation: This command doesn't exist. 
-  
+      incorrectExplanation: "CUDA is a software layer and is designed for GPUs."
+    - content: "It's a deep learning model used for image classification."
+      isCorrect: false
+      incorrectExplanation: "CUDA-enabled GPUs can greatly improve compute performance when training neural networks, but that is only one of its uses."
+
+  - content: "Which of the following describes PyTorch"
+    choices:
+    - content: "A mathematical programming language inspired by Python."
+      isCorrect: false
+      incorrectExplanation: ""
+    - content: "A docker container image for hosting Python apps."
+      isCorrect: false
+      incorrectExplanation: ""
+    - content: "A machine learning software library for use with Python."
+      isCorrect: true
+      correctExplanation: ""

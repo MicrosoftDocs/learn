@@ -51,7 +51,7 @@ Once the Jupyter notebook is running in the container, you'll  see a message sim
 
 > *Copy/paste this URL into your browser when you connect for the first time, to login with a token: http://(5b8783e7911d or 127.0.0.1):8888/?token={sometoken}*
 
-1. Replace the **http://(5b8783e7911d or 127.0.0.1)** part of the URL with the Fully Qualified Domain Name (FQDN) or the IP address of the VM and navigate to the address in a new a tab of your browser.
+1. Replace the **http://(5b8783e7911d or 127.0.0.1)** part of the URL with the Fully Qualified Domain Name (FQDN) or the IP address of the VM and navigate to the address in a new tab of your browser.
 
     ![Screenshot showing Jupyter Notebooks dashboard. ](../media/notebook-in-docker.png)
 
