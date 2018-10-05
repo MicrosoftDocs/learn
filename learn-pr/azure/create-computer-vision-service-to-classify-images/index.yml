@@ -8,7 +8,7 @@ metadata:
   ms.author: marouill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: luken
+  #ms.learn-contact: luken
 title: Process images with the Computer Vision service
 summary: Use the Computer Vision API to analyze images for insights, extract text from images, and generate high-quality thumbnails. 
 abstract: |
