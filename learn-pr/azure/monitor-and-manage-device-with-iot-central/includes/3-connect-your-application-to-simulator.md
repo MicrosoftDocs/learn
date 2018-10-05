@@ -1,6 +1,6 @@
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-In practice, you will connect Azure IoT Central to a physical device, i.e. an IoT enabled coffee machine. Here, you'll simualate a device with a Node.js applicatio and connect it to the Azure IoT Central application. Telemetry measurements from the simulated coffee machine are sent to IoT Central for monitoring and analysis.
+In practice, you will connect Azure IoT Central to a physical device, i.e. an IoT enabled coffee machine. Here, you'll simualate a device with a Node.js application and connect it to the Azure IoT Central application. Telemetry measurements from the simulated coffee machine are sent to IoT Central for monitoring and analysis.
 
 ![An illustration showing a Coffee machine.](../media/3-coffee-machine.png) 
 
