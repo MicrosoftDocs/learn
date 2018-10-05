@@ -17,14 +17,17 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "True or false: Data Science VMs comes pre-installed with Jupyter notebooks server, which by default listens on port 22."
+  - content: "Which of the following is an advantage to using the Data Science Virtual Machine (DSVM) instead of building your own custom VM?"
     choices:
-    - content: "True"
-      isCorrect: false
-      incorrectExplanation: "By default, a notebook server listens only to IP 127.0.0.1 (localhost) and on port 8888."
-    - content: "False"
+    - content: "The DSVM has many of the common tools required for machine learning tasks."
       isCorrect: true
-      correctExplanation: "By default, a notebook server listens only to IP 127.0.0.1 (localhost) and on port 8888."
+      correctExplanation: "Using an instance of DSVM means you don't need to spend time installing software. There are environments to develop and execute code in R, Python, .NET and more."
+    - content: "The DSVM is the only way to create a VM instance with multiple GPUs."
+      isCorrect: false
+      incorrectExplanation: "While you can create a DSVM with multiple GPUs, you can also create custom VMs this way."
+    - content: "You don't need to wait for a new virtual machine instance to be allocated."
+      isCorrect: false
+      incorrectExplanation: "As with all virtual machines, when you create a new DSVM instance there is a brief wait while it's allocated."
  
   - content: "Which of the following describes CUDA?"
     choices:
@@ -42,10 +45,10 @@ quiz:
     choices:
     - content: "A mathematical programming language inspired by Python."
       isCorrect: false
-      incorrectExplanation: ""
+      incorrectExplanation: "PyTorch is not a programming language."
     - content: "A docker container image for hosting Python apps."
       isCorrect: false
-      incorrectExplanation: ""
+      incorrectExplanation: "PyTorch is not a docker container image."
     - content: "A machine learning software library for use with Python."
       isCorrect: true
-      correctExplanation: ""
+      correctExplanation: "PyTorch is a library for making machine learning tasks easier and faster in Python. It includes built-in CUDA support for executing code on GPUs."
