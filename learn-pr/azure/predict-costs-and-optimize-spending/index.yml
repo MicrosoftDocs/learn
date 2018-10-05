@@ -4,7 +4,7 @@ metadata:
   title: Predict costs and optimize spending for Azure
   description: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
   ms.date: 09/24/2018
-  author: markjulmar
+  author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
