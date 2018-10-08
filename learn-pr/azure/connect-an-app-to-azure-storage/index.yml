@@ -8,7 +8,7 @@ metadata:
   ms.author: jediet
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: jediet
+  #ms.learn-contact: jediet
 title: Connect an app to Azure Storage
 summary: Create a simple application and add configuration, client library references, and code to connect it to Azure Storage.
 abstract: | 

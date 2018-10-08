@@ -8,7 +8,6 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
   #ms.learn-contact: smmark
 title: Manage virtual machines with the Azure CLI
 summary: Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure.
