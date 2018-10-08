@@ -24,11 +24,13 @@ quiz:
       isCorrect: false
       incorrectExplanation: "Azure IoT Hub provides features and an extensibility model that enables device and back-end developers to build robust device management solutions. Devices range from constrained sensors and single purpose microcontrollers, to powerful gateways that route communications for groups of devices."    
 
-  - content: "True or false: you can't recieve telemetry data in the Azure portal when using the Raspberry Pi Azure IoT Simulator?"
+  - content: "True or false: you can't receive telemetry data in the Azure portal when using the Raspberry Pi Azure IoT Simulator?"
     choices:
     - content: "True"
       isCorrect: false
-      incorrectExplanation: "Even though you're not using physical hardware, you can still recieve telemetry data when using the Raspberry Pi Azure IoT Simulator."
+      incorrectExplanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT Simulator."
     - content: "False"
       isCorrect: true
-      correctExplanation: "Even though you're not using physical hardware, you can still recieve telemetry data when using the Raspberry Pi Azure IoT Simulator."  
+      correctExplanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT Simulator."  
+
+
