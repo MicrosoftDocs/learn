@@ -47,14 +47,12 @@ Click on the **Create new** link to navigate to the **New App Service Plan** pag
 
     Now, you are back to the **New App Service plan** page.
 
-    ![Screenshot showing the New App Service Plan page with example values for this exercise in the settings](../media/3-new-app-service-plan.PNG)
+    
 
 4. Click the **OK** button to use your new App Service Plan.
 
-    The portal navigates you back to the main **Create Web App** page.
-
-    ![Screenshot showing the new resource page in Azure with the progression to find the Web App resource highlighted.](../media/3-new-web-app.png)
-
+    ![Screenshot showing the New App Service Plan page with example values for this exercise in the settings](../media/3-new-app-service-plan.PNG)
+   
 5. Click the **Create** button to start the process of creating the web app.
 
     > [!NOTE]

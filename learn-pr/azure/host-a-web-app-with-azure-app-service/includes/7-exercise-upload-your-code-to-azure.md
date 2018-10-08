@@ -6,6 +6,8 @@ In this unit, you'll upload your ASP.NET Core application to Azure App Service.
 
 1. Open the App Service resource (the web app) you created previously. You can find it again by searching for the app in **All resources** or the containing resource group in **Resource groups**.
 
+1. Click the newly created App Service with the **BestBike** name prefix. 
+
 1. Click the **Deployment slots** menu item on the left-side navigation.
 
 1. Inside the **Deployment slots** page, click the **Add Slot** button on the top navigation bar of the deployment slots page.
