@@ -6,7 +6,7 @@ Creating almost any resource within Microsoft Azure can be automated using the A
 
 ## What is the Azure CLI?
 
-The [Azure CLI](https://docs.microsoft.com/cli/azure/) is Microsoft’s cross-platform command-line environment for managing Azure resources. You can use the Azure CLI from your browser with Azure Cloud Shell, or you can install the Azure CLI locally on Mac OS X, Linux, or Windows. The Azure CLI is run from a local command line using bash or PowerShell. Running the Azure CLI locally requires additional setup. We'll use Azure Cloud Shell for executing the Azure CLI commands.
+The [Azure CLI](https://docs.microsoft.com/cli/azure?azure-portal=true) is Microsoft’s cross-platform command-line environment for managing Azure resources. You can use the Azure CLI from your browser with Azure Cloud Shell, or you can install the Azure CLI locally on macOS, Linux, or Windows. The Azure CLI is run from a local command line using bash or PowerShell. Running the Azure CLI locally requires additional setup. We'll use Azure Cloud Shell for executing the Azure CLI commands.
 
 ## What is Azure Cloud Shell?
 

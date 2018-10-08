@@ -8,13 +8,13 @@ Let's start by defining a few terms and the guarantees Azure makes about them.
 
 The storage type you select (standard or premium) will decide how fast your disks are. We measure this performance in I/O operations per second, or IOPS (pronounced "eye-ops").
 
-IOPS is number of requests that can be processed by the disk in one second. A single request is a read or write operation. This measurement is applied directly to storage. For example, if you have a disk that is capable of doing a **5000 IOPS**, it means that it is theoretically capable of processing 5,000 read and or write operations per second.
+IOPS is number of requests that can be processed by the disk in one second. A single request is a read or write operation. This measurement is applied directly to storage. For example, if you have a disk that can do a **5000 IOPS**, it means that it is theoretically capable of processing 5,000 read and or write operations per second.
 
-IOPS directly affects your application performance. Some applications, such as retail websites, need high IOPS to handle all the small and random IO requests that must be processed quickly to keep the site responsive.
+IOPS directly affects your application performance. Some applications, such as retail websites, need high IOPS to handle all the small and random I/O requests that must be processed quickly to keep the site responsive.
 
 ### IOPS in Azure
 
-When you attach a premium storage disk to your high scale VM, Azure provisions for you a guaranteed number of IOPS as per the disk specification. For example, a **P50** disk provisions **7500 IOPS**. Each high scale VM size also has a specific IOPS limit that it can sustain. For example, a **Standard GS5** VM has an **80,000 IOPS** limit.
+When you attach a premium storage disk to your high scale VM, Azure provisions a guaranteed number of IOPS as per the disk specification. For example, a **P50** disk provisions **7500 IOPS**. Each high scale VM size also has a specific IOPS limit that it can sustain. For example, a **Standard GS5** VM has an **80,000 IOPS** limit.
 
 IOPS is a measurement of the storage disks, however it's a _theoretical_ limit - two other factors can affect the actual application performance: **throughput** and **latency**.
 
@@ -37,11 +37,11 @@ Premium Storage provides consistent low latencies and you can achieve even bette
 
 ## Testing your disk performance
 
-You can adjust and balance the IOPS, throughput and latency of your VM disks by selecting the right VM size and storage type. Typically the larger or more expensive VM sizes will have higher guarantees for max IOPS and throughput. Add into that equation Standard vs. Premium storage and HDD vs. SSD choices and you have several parameters to play with.
+You can adjust and balance the IOPS, throughput, and latency of your VM disks by selecting the right VM size and storage type. Typically, the larger or more expensive VM sizes will have higher guarantees for max IOPS and throughput. Add into that equation Standard vs. Premium storage and HDD vs. SSD choices and you have several parameters to play with.
 
-To select the right combination involves understanding what your application requirements are. High-I/O applications such as database servers or online transactional processing systems will require higher IOPS, whereas more computational based applications might get by with much lower requirements. In addition, the _types_ of operations the applications do will affect your throughput. High random access I/O tends to be slower than long sequential reads.
+Selecting the right combination involves understanding what your application requirements are. High-I/O applications, such as database servers or online transactional processing systems will require higher IOPS, whereas more computational based applications might get by with much lower requirements. In addition, the _types_ of operations the applications do will affect your throughput. High random access I/O tends to be slower than long sequential reads.
 
-Once you select your configuration, you can use tools such as [Iometer](http://iometer.org/) to test your disk performance on Linux and Windows VMs. This will give you a more real-world sense of what kind of performance to expect. It can also help you to identify ways to improve your app's usage of storage - for example, an application that does single threaded I/O is likely to suffer reduced I/O performance because of latency.
+Once you select your configuration, you can use tools such as [Iometer](http://iometer.org/) to test your disk performance on Linux and Windows VMs. This will give you a more real-world sense of what kind of performance to expect. It can also help you to identify ways to improve your app's usage of storage. For example, an application that does single threaded I/O is likely to suffer reduced I/O performance because of latency.
 
 Let's look at some other things we can do to improve our disk performance.
 

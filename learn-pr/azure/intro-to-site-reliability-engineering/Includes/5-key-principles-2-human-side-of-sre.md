@@ -4,7 +4,7 @@ A successful operations process, one that achieves the desired reliability and s
 
 The first is a focus on the notion of “toil”. In an SRE context, toil refers to operations work being done by a human that has certain characteristics. Toil has no long term redeeming value. It doesn't move the service forward in any meaningful way. It is often repetitive and largely manual (even though it could be automated). As the service or systems gets bigger over time, the number of requests for that system will also probably increase in quantity at a proportional rate and require even more manual labor.
 
-For example, if a service requires the SRE team to reset something every week, or to provision new accounts and disk space by hand, or repeatedly restart it by hand this is operational load that is toil. Completing those actions hasn’t made the service better in any long-tern, persistent way. These actions will likely have to be repeated over and over.
+For example, if a service requires the SRE team to reset something every week, or to provision new accounts and disk space by hand, or repeatedly restart it by hand this is operational load that is toil. Completing those actions hasn’t made the service better in any long-term, persistent way. These actions will likely have to be repeated over and over.
 
 > [!NOTE]
 > Even if you keep requests of this nature in some sort of ticket system as many places do, performing the action and resolving a ticket is still toil. It's just well-tracked toil.

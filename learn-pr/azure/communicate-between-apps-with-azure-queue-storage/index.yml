@@ -9,7 +9,6 @@ metadata:
   ms.author: matapar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
   #ms.learn-contact: matapar
 title: Communicate between applications with Azure Queue storage
 summary: Implement the publish-subscribe pattern in the cloud using Azure Queue storage.

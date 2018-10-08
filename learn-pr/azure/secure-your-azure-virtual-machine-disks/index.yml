@@ -4,13 +4,11 @@ metadata:
   title: Secure your Azure virtual machine disks
   description: Explore the options in Azure for encrypting data at-rest, and compare Azure Disk Encryption (ADE) with Storage Service Encryption (SSE). Use the Azure portal and PowerShell commands and scripts to encrypt OS and data disks on existing VMs. Use Azure Resource Manager templates to ensure that new deployed VMs are automatically encrypted.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  #ms.learn-contact: adsteven
 title: Secure your Azure virtual machine disks
 summary: Use Azure Disk Encryption (ADE) to encrypt OS and data disks on existing and new VMs.
 abstract: |
