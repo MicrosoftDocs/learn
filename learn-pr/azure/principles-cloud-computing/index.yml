@@ -4,13 +4,11 @@ metadata:
   title: Principles of cloud computing
   description: Explore the core concepts of cloud computing and how it can help your business.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: JesseDietrichson
+  ms.author: jediet
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  #ms.learn-contact: jediet
 title: Principles of cloud computing
 summary: Explore the core concepts of cloud computing and how it can help your business.
 abstract:  | 
