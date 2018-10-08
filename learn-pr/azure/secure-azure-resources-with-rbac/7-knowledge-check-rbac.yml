@@ -15,53 +15,23 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What is the name of the blade in the Azure portal where you grant access?'
+  - content: "True or false: To grant a user access to Azure resources, you create a role assignment?"
     choices:
-    - content: Azure resources
-      isCorrect: false
-      incorrectExplanation: This blade shows you which roles are assigned to yourself or the selected user.
-    - content: Azure Active Directory
-      isCorrect: false
-      incorrectExplanation: This blade lets you access the Azure Active Directory features.
-    - content: All users
-      isCorrect: false
-      incorrectExplanation: This blade lists all the users for the selected directory.
-    - content: Access control (IAM)
+    - content: "True"
       isCorrect: true
-      correctExplanation: You assign roles on the Access control (IAM) blade. This blade appears in several areas in the portal.
+      correctExplanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
 
-  - content: 'True or false: To grant a user access to Azure resources, you create a role assignment.'
+  - content: "Suppose a developer needs full access to a resource group. If you are following least-privilege best practices, what scope should you specify?"
     choices:
-    - content: 'True'
+    - content: "Resource"
+      isCorrect: false
+      incorrectExplanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
+    - content: "Resource group"
       isCorrect: true
-      correctExplanation: A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access.
-    - content: 'False'
+      correctExplanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
+    - content: "Subscription"
       isCorrect: false
-      incorrectExplanation: A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access.
-
-  - content: 'What role enables you to grant access to others?'
-    choices:
-    - content: Virtual Machine Contributor
-      isCorrect: false
-      incorrectExplanation: This role allows you to manage virtual machines, but you can't grant access to others.
-    - content: User Access Administrator
-      isCorrect: true
-      correctExplanation: This role and the Owner role allow you to grant access to others.
-    - content: Contributor
-      isCorrect: false
-      incorrectExplanation: This role allows you to manage all resources, but you can't grant access to others.
-    - content: Reader
-      isCorrect: false
-      incorrectExplanation: This role allows you to read all resources, but you can't grant access to others.
-
-  - content: 'Suppose a developer needs full access to a resource group. If you are following least-privilege best practices, what scope should you specify?'
-    choices:
-    - content: Resource
-      isCorrect: false
-      incorrectExplanation: A resource scope is narrower than what is needed.
-    - content: Resource group
-      isCorrect: true
-      correctExplanation: Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group.
-    - content: Subscription
-      isCorrect: false
-      incorrectExplanation: A subscription scope is broader than what is needed.
+      incorrectExplanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."

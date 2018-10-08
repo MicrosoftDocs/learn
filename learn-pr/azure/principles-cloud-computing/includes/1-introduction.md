@@ -1,4 +1,4 @@
-When you turn on a light, you simply want the light to work. You know you need electricity for that to happen, but in that moment, the details of how the electricity gets to the light bulb aren’t important. You might not think about electricity being created in a power plant, traveling through large network of high-voltage transmission lines to your town, going through a substation, and eventually making its way into your home.
+When you turn on a light, you simply want the light to work. You know you need electricity for that to happen, but in that moment, the details of how the electricity gets to the light bulb aren’t important. You might not think about electricity being created in a power plant, traveling through a large network of high-voltage transmission lines to your town, going through a substation, and eventually making its way into your home.
 
 ![Connecting a plug to represent electricity being delivered](../media/1-heading.png)
 
