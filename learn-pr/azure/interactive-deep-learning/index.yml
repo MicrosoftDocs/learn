@@ -32,10 +32,8 @@ products:
 units:
 - learn.interactive-deep-learning.1-introduction
 - learn.interactive-deep-learning.2-describe-deep-learning-and-the-dvsm
-- learn.interactive-deep-learning.2q-describe-deep-learning-and-the-dvsm
 - learn.interactive-deep-learning.3-create-a-dsvm-with-the-azure-cli
 - learn.interactive-deep-learning.4-benefits-of-running-deep-learning-experiments-in-docker
-- learn.interactive-deep-learning.4q-benefits-of-running-deep-learning-experiments-in-docker
 - learn.interactive-deep-learning.5-connect-to-jupyter-through-docker-on-the-dsvm
 - learn.interactive-deep-learning.6-run-your-first-deep-learning-experiment-with-jupyter
 - learn.interactive-deep-learning.7-summary-and-knowledge-check
