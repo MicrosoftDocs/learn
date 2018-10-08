@@ -4,7 +4,7 @@ The architecture of our pizza ordering and tracking application requires several
 
 We need to decide which techniques to use in the Contoso Slices application. The first step is to evaluate each place where there is communication between multiple parts. Some components _must_ run in a timely manner for our application to be doing its job at all. Some may be important, but not time-critical. Finally, other components, like our mobile app notifications, are a bit more optional.
 
-Here, you will learn about the communications platforms available in Azure, so that you can choose the right one for each requirement in your application.
+Here, you will learn about the communications platforms available in Azure so that you can choose the right one for each requirement in your application.
 
 ## Decide between messages and events
 
@@ -14,13 +14,13 @@ Messages and events are both **datagrams**: packages of data sent from one compo
 
 In the terminology of distributed applications, the defining characteristic of a message is that the overall integrity of the application may rely on messages being received. You can think of sending a message as one component passing the baton of a workflow to a different component. The entire workflow may be a vital business process, and the message is the mortar that holds the components together.
 
-A message generally contains the data itself, not just a reference (like an ID or URL) to data. Sending the data as part of the datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no additional lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include, to avoid sending too much data, which requires the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
+A message generally contains the data itself, not just a reference (like an ID or URL) to data. Sending the data as part of the datagram is less brittle than sending a reference. The messaging architecture guarantees delivery of the message, and because no additional lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which requires the receiving component to do unnecessary work. In this sense, the sender and receiver of a message are often coupled by a strict data contract.
 
-In Contoso Slices new architecture, when a pizza order is entered, they would likely use messages. The web front end or mobile app would send a message to the back-end processing components. In the back end, steps like routing to the store near the customer and charging the credit card would take place.
+In Contoso Slices' new architecture, when a pizza order is entered, the company would likely use messages. The web front end or mobile app would send a message to the back-end processing components. In the back end, steps like routing to the store near the customer and charging the credit card would take place.
 
 ### Events
 
-An event triggers notification that something has occurred. Events are "lighter" than messages and are most often used for broadcast communications.
+An event triggers a notification that something has occurred. Events are "lighter" than messages and are most often used for broadcast communications.
 
 Events have the following characteristics:
 
@@ -60,7 +60,7 @@ Topics are not supported in the Basic pricing tier.
 
 ### What is a relay?
 
-A **relay** is an object that performs synchronous, two-way communication between applications. It is not a temporary storage location for messages like queues and topics. Instead, it provides bidirectional, unbuffered connections across network boundaries such as firewalls. Use a relay when you want direct communications between components as if they were located on the same network segment but separated by network security devices.
+A **relay** is an object that performs synchronous, two-way communication between applications. Unlike queues and topics, it is not a temporary storage location for messages. Instead, it provides bidirectional, unbuffered connections across network boundaries such as firewalls. Use a relay when you want direct communications between components as if they were located on the same network segment but separated by network security devices.
 
 > [!NOTE]
 > Although relays are part of Azure Service Bus, they do not implement loosely coupled messaging workflows and are not considered further in this module.

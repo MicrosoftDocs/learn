@@ -13,9 +13,9 @@ In this exercise, you will create a Service Bus namespace, which will contain bo
 
 In Azure Service Bus, a namespace is a container, with a unique fully qualified domain name, for queues, topics, and relays. You must start by creating the namespace.
 
-Each namespace also has primary and secondary shared access signature encryption keys. A sending or receiving component must provide these keys when it connects to gain access to the objects within the namespace.
+Each namespace has primary and secondary shared access signature encryption keys. To gain access to the objects within the namespace, a sending or receiving component must provide these keys when it connects.
 
-To create a Service Bus namespace by using the Azure portal, follow these steps:
+To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
