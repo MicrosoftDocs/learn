@@ -2,7 +2,7 @@ Distributed applications use queues, such as Service Bus queues, as temporary st
 
 Consider the Contoso Slices application. The customer places the order through a website or mobile app. Because websites and mobile apps run on customer devices, there is really no limit to how many orders could come in at once. By having the mobile app and website deposit the orders in a queue, we can allow the back-end component (a web app) to process orders from that queue at its own pace.
 
-The Contoso Slices application actually has several steps to handle a new order. But all of them are dependent on first authorizing payment, so we decide to use a queue. Our receiving component's first job will be processing the payment.
+The Contoso Slices application actually has several steps to handle a new order. All the steps are dependent on first authorizing payment, so we decide to use a queue. Our receiving component's first job will be processing the payment.
 
 In the mobile app and website, Contoso needs to write code that adds a message to the queue. In the back-end web app, they'll write code that picks up messages from the queue.
 
@@ -53,7 +53,7 @@ var encodedMessage = new Message(Encoding.UTF8.GetBytes(message));
 await queueClient.SendAsync(encodedMessage);
 ```
 
-## Receive messages from queue
+## Receive messages from the queue
 
 To receive messages, you must first register a message handler - this is the method in your code that will be invoked when a message is available on the queue.
 
