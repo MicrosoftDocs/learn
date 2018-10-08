@@ -4,13 +4,11 @@ metadata:
   title: Monitor and manage your coffee machine with Azure IoT Central
   description: Learn how to create an Azure IoT Central application to monitor and manage an IoT device.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: lnyswonger
+  ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: smmark
+  #ms.learn-contact: luken
 title: Monitor and manage your coffee machine with Azure IoT Central
 summary: Learn how to create an Azure IoT Central application to monitor and manage an IoT device.
 abstract: |
