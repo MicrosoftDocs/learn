@@ -2,7 +2,7 @@ Securing your network from attacks and unauthorized access is an important part 
 
 ## A layered approach to network security
 
-You've probably noticed that a common theme throughout this module is the emphasis of a layered approach to security, and this is no different at the network layer. It's not enough to just focus on securing the network perimeter, or focusing on the network security between services inside a network. A layered approach provides multiple levels of protection, so that if an attacker gets through one layer, there's further protections in place to limit further attack.
+You've probably noticed that a common theme throughout this module is the emphasis of a layered approach to security, and this is no different at the network layer. It's not enough to just focus on securing the network perimeter, or focusing on the network security between services inside a network. A layered approach provides multiple levels of protection, so that if an attacker gets through one layer, there are further protections in place to limit further attack.
 
 Let's take a look at how Azure can provide the tools for a layered approach to securing your network footprint.
 

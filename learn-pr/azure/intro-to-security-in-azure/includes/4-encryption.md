@@ -1,6 +1,6 @@
 For most organizations, data is the most valuable and irreplaceable asset. Encryption serves as the last and strongest line of defense in a layered security strategy. 
 
-Contoso Shipping knows that encryption is the only protection their data has once it leaves the data center as it heads to those mobile apps.
+Contoso Shipping knows that encryption is the only protection its data has once it leaves the data center as it heads to those mobile apps.
 
 ## What is encryption?
 
@@ -58,7 +58,7 @@ Azure Storage Service Encryption for data at rest helps you protect your data to
 	:::column span="3":::
 **Encrypt virtual machines**
 
-Storage Service Encryption provides low-level encryption protection for data written to physical disk, but how do you protect the virtual hard disks (VHDs) of virtual machines? If a malicious attacker gained access to your Azure subscription and exfiltrated the VHDs of your virtual machines, how would you ensure they would be unable to access data stored on the VHD?
+Storage Service Encryption provides low-level encryption protection for data written to physical disk, but how do you protect the virtual hard disks (VHDs) of virtual machines? If malicious attackers gained access to your Azure subscription and exfiltrated the VHDs of your virtual machines, how would you ensure they would be unable to access data stored on the VHD?
 
 Azure Disk Encryption is a capability that helps you encrypt your Windows and Linux IaaS virtual machine disks. Azure Disk Encryption leverages the industry-standard BitLocker feature of Windows and the dm-crypt feature of Linux to provide volume encryption for the OS and data disks. The solution is integrated with Azure Key Vault to help you control and manage the disk encryption keys and secrets (and you can use managed service identities for accessing Key Vault).
 
@@ -77,7 +77,7 @@ Transparent data encryption (TDE) helps protect Azure SQL Database and Azure Dat
 
 TDE encrypts the storage of an entire database by using a symmetric key called the database encryption key. By default, Azure provides a unique encryption key per logical SQL Server instance and handles all the details. Bring your own key (BYOK) is also supported with keys stored in Azure Key Vault.
 
-Because TDE is enabled by default, you are confident that Contoso Shipping has the proper protections in place for data stored in their databases.
+Because TDE is enabled by default, you are confident that Contoso Shipping has the proper protections in place for data stored in the company's databases.
   :::column-end:::
 :::row-end:::
 
