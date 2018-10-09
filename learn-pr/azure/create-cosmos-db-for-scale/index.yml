@@ -4,12 +4,10 @@ metadata:
   title: Create an Azure Cosmos DB database built to scale
   description: Learn how to create an Azure Cosmos DB account, database, and collection built to scale as your application grows.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: mimig1
+  ms.author: mimig
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
   #ms.learn-support: smmark
 title: Create an Azure Cosmos DB database built to scale
 summary: Learn how to create an Azure Cosmos DB account, database, and collection built to scale as your application grows.
