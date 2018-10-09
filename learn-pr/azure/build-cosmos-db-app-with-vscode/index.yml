@@ -8,7 +8,6 @@ metadata:
   ms.author: mimig
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
   #ms.learn-contact: smmark
 title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
 summary: Learn how to build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code.

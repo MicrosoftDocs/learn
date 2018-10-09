@@ -8,7 +8,6 @@ metadata:
   ms.author: mimig
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
   #ms.learn-contact: smmark
 title: Insert and query data in your Azure Cosmos DB database
 summary: Learn how to add data to your database and query NoSQL data in Azure Cosmos DB. 
