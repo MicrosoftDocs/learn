@@ -2,12 +2,11 @@ In this unit, you'll assess an existing database using the Data Migration Assist
 
 ## Setup
 
-1. [Install the **Data Migration Assistant**](https://www.microsoft.com/download/details.aspx?id=53595) if you haven't done so already.
+1. Install the [Data Migration Assistant](https://www.microsoft.com/download/details.aspx?id=53595) if you haven't done so already.
 
 1. You'll need a SQL Server instance running, ensure you have connection details available.
 
-<!-- TODO: replace with an LOD VM -->
-
+   <!-- TODO: replace with an LOD VM -->
 1. Open a browser and navigate to https://docs.microsoft.com/sql/samples/adventureworks-install-configure?view=sql-server-2017.
 
 1. In **OLTP downloads**, click **AdventureWorks2008R2.bak** and save it to your local machine.
@@ -28,6 +27,7 @@ In this unit, you'll assess an existing database using the Data Migration Assist
     - **Target server type** - Select *Azure SQL Database*
 
 1. Click **Create**.
+
     ![Screenshot showing the described configuration in the Data Migration Assistant for your AdventureWorks SQL Server data.](../media-draft/3-create-assessment.png)
 
 1. Select the assessment report type - check both:
@@ -59,7 +59,7 @@ In this unit, you'll assess an existing database using the Data Migration Assist
 
 If there are multiple databases, the results for each database appears as soon as it is available. You don't need to wait for all database assessments to complete.
 
-1. Once the assessment for **AdventureWorks** is complete, click** Compatibility issues** and **SQL Server feature parity** radio buttons to view the results.
+1. Once the assessment for **AdventureWorks** is complete, click **Compatibility issues** and **SQL Server feature parity** radio buttons to view the results.
     - The SQL Server feature parity category lists features that might not be fully supported and steps to remedy these issues. Feature parity issues will not stop a migration.
     - The Compatibility issues category lists features that would block a migration and steps to remedy these issues.
 
