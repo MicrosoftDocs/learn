@@ -1,4 +1,4 @@
-Container images can be pulled from Azure Container Registry using many container management platforms, such as Azure Container Instances, Azure Kubernetes Registry, and Docker for Windows or Mac. When running container images from Azure Container Registry, authentication credentials may be needed.
+Container images can be pulled from Azure Container Registry using many container management platforms, such as Azure Container Instances, Azure Kubernetes Service, and Docker for Windows or Mac. When running container images from Azure Container Registry, authentication credentials may be needed.
 
 It is recommended to use an Azure service principal for authentication with Container Registry. It is also recommended to secure the Azure service principal credentials in Azure Key Vault. However, for our live practice we will use the built-in admin account that can be enabled in all Azure Container Registries. The admin account works with the free sandbox resources.
 
