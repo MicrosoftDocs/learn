@@ -82,6 +82,12 @@ Now that IIS is set up, let's verify that it's running.
 
     ![](../media/4-iis-browser.png)
 
+    If you don't see your welcome message:
+
+    * Verify that you're using your VM's IP address and not the IP address shown in any of the examples.
+    * Verify that you ran the `az vm open-port` command shown earlier to open port 80 (HTTP) through the firewall.
+    * Wait a few moments and refresh the page. Although IIS is installed, the service may not yet have fully started.
+
 ::: zone-end
 
 ::: zone pivot="linux-cloud"
@@ -149,6 +155,12 @@ Now that Nginx is set up, let's verify that it's running.
 1. In a new browser tab, navigate to your VM's IP address. You see your welcome message and your VM's name.
 
     ![](../media/4-nginx-browser.png)
+
+    If you don't see your welcome message:
+
+    * Verify that you're using your VM's IP address and not the IP address shown in any of the examples.
+    * Verify that you ran the `az vm open-port` command shown earlier to open port 80 (HTTP) through the firewall.
+    * Wait a few moments and refresh the page. Although Nginx is installed, the service may not yet have fully started.
 
 ::: zone-end
 
