@@ -193,11 +193,11 @@ When the above command runs on the VM, the notebook server starts and the consol
 
     Here's a sample notebook server URL.
 
-    "http://**ab-dsvm-4**:8888/?token={some token}"
+    ´http://**ab-dsvm-4**:8888/?token={some token}´
 
     In this case, we would replace **ab-dsvm-4** with IP address of the machine. If our IP address is `52.175.199.43`, then the URL becomes:
 
-    "http://**52.175.199.43**:8888/?token={some token}"
+    ´http://**52.175.199.43**:8888/?token={some token}´
 
     Make sure `:8888`, the port address, is kept in the URL.
 
