@@ -35,19 +35,18 @@ First, we'll create the vault and store our secret in it.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
-Run the following command in the Cloud Shell to create your vault. You can replace the `--location` value if you want to put it into a different location from the above selections.
+Run the following command in the Cloud Shell to create your vault.
 
 ```azurecli
 az keyvault create \
     --name <your-unique-vault-name> \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --location eastus
+    --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
 When it finishes, you'll see JSON output describing the new vault.
 
 > [!TIP]
-> The command used the pre-created resource group named **<rgn>[sandbox Resource Group]</rgn>**. When working with your own subscription, you would want to either create a new Resource Group, or use an existing one you have previously created.
+> The command used the pre-created resource group named **<rgn>[sandbox Resource Group]</rgn>**. When working with your own subscription, you would want to either create a new resource group, or use an existing one you have previously created.
 
 ### Add the secret
 
