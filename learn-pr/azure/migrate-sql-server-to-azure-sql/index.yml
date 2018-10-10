@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.migrate-sql-server-relational-data
+metadata:
+  title: Migrate your SQL data to Azure SQL using Microsoft Data Migration Assistant
+  description: In this module, you will migrate a SQL Server database to an Azure SQL Database. You will learn about the choices available to you along with the advantages of each approach. You will also assess your SQL Server database and then migrate the database to an Azure SQL Database.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate your SQL data to Azure SQL using Microsoft Data Migration Assistant
+summary: In this module, you will learn how the Data Migration Assistant (DMA) provides assessments of your on-premises SQL Server databases and can migrate them to an Azure SQL Database.
+abstract: |
+  In this module, you will:
+  - Assess your SQL Server database for migration
+  - Analyze and fix your database before migration
+  - Migrate your database using the Microsoft Data Migration Assistant
+prerequisites: None
+#TODO: Update icon URL with real image 
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+units:
+- learn.migrate-sql-server-relational-data.1-introduction
+- learn.migrate-sql-server-relational-data.2-assess-your-database
+- learn.migrate-sql-server-relational-data.3-exercise-assess-your-database
+- learn.migrate-sql-server-relational-data.4-deploy-fixes-and-migrate-the-database
+- learn.migrate-sql-server-relational-data.5-exercise-migrate-the-database
+- learn.migrate-sql-server-relational-data.6-knowledge-check-deploy-fixes-and-migrate-the-database
+- learn.migrate-sql-server-relational-data.7-summary
+achievement: learn.migrate-sql-server-relational-data.badge

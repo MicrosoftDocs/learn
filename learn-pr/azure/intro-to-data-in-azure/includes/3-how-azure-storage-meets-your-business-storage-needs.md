@@ -8,7 +8,7 @@ Azure provides several storage options that accommodate specific types of data s
   :::column:::
     ![Azure SQL Database](../media/3-azure-sql-db.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Azure SQL Database**
 
 **Azure SQL Database** is a robust, fully managed, relational cloud database. You can use this feature to store data that you frequently access and update, such as personal and training-related information for your staff. You can also migrate your existing SQL Server databases without changing your applications. The following illustration shows the types of data from the online learning portal scenario that would be stored in an Azure SQL database.
@@ -21,7 +21,7 @@ Azure provides several storage options that accommodate specific types of data s
   :::column:::
     ![Azure Cosmos DB](../media/3-cosmos-db.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Azure Cosmos DB**
 
 Azure Cosmos DB is a globally distributed database service. It supports schema-less data that lets you build highly responsive and **Always On** applications to support constantly changing data. You can use this feature to store data that is updated and maintained by users around the world. The following illustration shows a sample Azure Cosmos DB database that's used to store data that's accessed by people located across the globe.
@@ -34,7 +34,7 @@ Azure Cosmos DB is a globally distributed database service. It supports schema-l
   :::column:::
     ![Azure Blob storage](../media/3-azure-blob-storage.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Azure Blob storage**
 
 Azure Blob storage lets you stream large video or audio files directly to the user's browser from anywhere in the world. Blob storage is also used to store data for backup and restore, disaster recovery, and archiving. It has the ability to store up to 8 TB of data for virtual machines. The following illustration shows an example usage of Azure blob storage.
@@ -47,7 +47,7 @@ Azure Blob storage lets you stream large video or audio files directly to the us
   :::column:::
     ![Azure Data Lake Storage Gen2](../media/3-azure-data-lake.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Azure Data Lake Storage Gen2**
 
 The Data Lake feature allows you to perform analytics on your data usage and prepare reports. Data Lake is a large repository that stores both structured and unstructured data.
@@ -62,7 +62,7 @@ The Data Lake feature allows you to perform analytics on your data usage and pre
   :::column:::
     ![Azure Files](../media/3-azure-files.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Azure Files**
 
 Azure Files offers fully managed file shares in the cloud. Applications running in Azure can easily share files between VMs. You can use Azure file shares at the same time for cloud or on-premises deployments of Windows, Linux, and macOS. The following illustration shows Azure Files being used to share data between two geographical locations. Azure Files uses the Server Message Block (SMB) protocol which ensures the data is encrypted at rest and in transit.
@@ -75,7 +75,7 @@ Azure Files offers fully managed file shares in the cloud. Applications running 
   :::column:::
     ![Azure Queue](../media/3-azure-queue.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Azure Queue**
 
 Azure Queue storage is a service for storing large numbers of messages that can be accessed from anywhere in the world. To put it in perspective, a single queue message is up to 64 KB in size, and a queue can contain millions of messages.
@@ -96,7 +96,7 @@ You can use queue storage to:
   :::column:::
     ![Azure Standard Storage](../media/3-azure-standard-storage.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Azure Standard Storage**
 
 Virtual machines in Azure use disks to store operating systems, applications, and data. Azure Standard Storage delivers reliable, low-cost disk support for VMs running workloads that are not mission critical. With Standard Storage, the data is stored on hard disk drives (HDDs).
@@ -111,7 +111,7 @@ When working with VMs, you can use standard SSD and HDD disks for less critical 
   :::column:::
     ![Storage tiers](../media/3-storage-tiers.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Storage tiers**
 
 Azure offers three storage tiers for blob object storage:
@@ -128,7 +128,7 @@ Azure offers three storage tiers for blob object storage:
   :::column:::
     ![Encryption and replication](../media/3-azure-storage-encryption.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Encryption and replication**
 
 Azure provides security and high availability to your data through encryption and replication features.
