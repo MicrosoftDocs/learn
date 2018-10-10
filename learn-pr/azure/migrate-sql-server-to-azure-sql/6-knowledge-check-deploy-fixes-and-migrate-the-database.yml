@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.6-knowledge-check-deploy-fixes-and-migrate-the-database
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+quiz:
+  title: Knowledge check - deploy fixes and migrate the database
+  questions:
+  - content: 'If you need to use your database during the migration process, which of the following migration methods is most suitable?'
+    choices:
+    - content: Backup your on-premises database and restore it to Azure.
+      isCorrect: false
+      incorrectExplanation:  This method would not migrate the most recent changes that were made after you backed-up your on-premises database.
+    - content: Use the Data Migration Assistant.
+      isCorrect: false
+      incorrectExplanation: Data Migration Assistant requires you to take your database offline, which is not possible in this scenario.
+    - content: Use replication.
+      isCorrect: true
+      correctExplanation:  Correct! If you need your database up and running while migration, you must use transactional replication method.
+    - content: Script your database in Transact SQL and run this against the Azure SQL Database.
+      isCorrect: false
+      incorrectExplanation: That's incorrect! Please try again.

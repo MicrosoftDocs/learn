@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.4-deploy-fixes-and-migrate-the-database
+title: Migrate your database - Part 1
+metadata:
+  title: Migrate your database - Part 1
+  description: Migrate your database - Part 1
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-deploy-fixes-and-migrate-the-database.md)]
