@@ -2,7 +2,7 @@
 uid: learn.secure-your-azure-sql-database
 metadata:
   title: Secure an Azure SQL Server database
-  description: Secure an Azure SQL Server database to keep the information safe and diagnose potential security concerns as they happen.
+  description: Secure an Azure SQL Server database to keep information safe and diagnose potential security concerns as they happen.
   ms.date: 09/24/2018
   #TODO: Update with real author name.
   author: markjulmar
@@ -12,7 +12,7 @@ metadata:
   #TODO: Update support contact.
   #ms.learn-contact: smmark
 title: Secure an Azure SQL Server database
-summary: Secure an Azure SQL Server database to keep the information safe and diagnose potential security concerns as they happen.
+summary: Secure an Azure SQL Server database to keep information safe and diagnose potential security concerns as they happen.
 abstract:  | 
   In this module, you will:
   - Configure the firewall for the Azure SQL Server database
