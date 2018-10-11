@@ -27,9 +27,9 @@ We welcome contributions and feedback. How you contribute depends on who you are
 
 ### Microsoft employees
 
-* **Minor updates**: If you are contributing minor updates out of the goodness of your heart, you can fork the repository and submit updates from your fork. See our [Docs contributor guide](https://review.docs.microsoft.com/en-us/help/contribute/) for more information.
+* **Minor updates**: If you are contributing minor updates out of the goodness of your heart, you can fork the repository and submit updates from your fork. See the [Docs contributor guide](https://review.docs.microsoft.com/en-us/help/contribute/) for more information.
 
-* **New content + major changes**: If you want to create a new module or submit major changes, please submit an issue to start a conversation with the APEX Learning team. Once you've agreed to a plan, you'll need to work with an APEX Learning employee to help bring that content in. For more information about Microsoft Learn, review our [APEX Learning Docs](https://review.docs.microsoft.com/en-us/learn-docs/docs/?branch).
+* **New content + major changes**: If you want to create a new module or submit major changes, please submit an issue to start a conversation with the APEX Learning team. Once you've agreed to a plan, you'll need to work with an APEX Learning employee to help bring that content in. For more information about Microsoft Learn, review the [Microsoft Learn Docs](https://review.docs.microsoft.com/en-us/learn-docs/docs/?branch).
 
 * **Report an issue + provide feedback**: [Create a GitHub issue](https://github.com/MicrosoftDocs/learn-pr/issues/new?template=bug_report.md) with as much detail as possible.
 
@@ -44,3 +44,5 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 ## Questions
 
 View the [Microsoft Learn FAQs](https://review.docs.microsoft.com/en-us/learn-docs/docs/microsoftlearn-faq?branch=master).
+
+For questions related to repo and build issues, contact: [learn-repo-managers@microsoft.com](mailto:learn-repo-managers@microsoft.com)
