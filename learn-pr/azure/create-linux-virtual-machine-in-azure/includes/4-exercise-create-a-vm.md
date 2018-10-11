@@ -36,7 +36,7 @@ We'll start with the **Basics** section.
 
 1. Select a location.
 
-    <!-- Resource selection -->
+    <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Leave **Availability options** as **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages.
