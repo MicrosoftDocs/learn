@@ -6,9 +6,9 @@ Let's look at techniques to secure your database at the application layer.
 
 ## SQL injection attacks
 
-The [OWASP foundation](https://owasp.org) is a not-for-profit organization that is designed to build standards for applications to be trusted. It publishes regularly a list of the top 10 security vulnerabilities.
+The [OWASP foundation](https://owasp.org) is a not-for-profit organization that is designed to build standards for applications to be trusted. It regularly publishes a list of the top 10 security vulnerabilities.
 
-The most common vulnerability according to the OWASP is injection attacks, which normally take the form of SQL injection attacks. In a SQL injection attack, information that is passed to a SQL statement is modified. These modified queries either return sensitive information, or perform malicious operations on the database.
+The most common vulnerability according to the OWASP is injection attacks, which normally take the form of SQL injection attacks. In a SQL injection attack, information that is passed to a SQL statement is modified. These modified queries either return sensitive information or perform malicious operations on the database.
 
 Let’s look at the following ASP.NET Core code using ADO.NET to fetch the interactions with a particular customer.
 
@@ -41,7 +41,7 @@ public List<CustomerInteraction> GetCustomerInteractions(string customerId)
 }
 ```
 
-The query itself is primed for an SQL attack, as the `customerId` parameter isn't sanitized before going into the query and so could be modified. The website that is calling the query is passing the customerId parameter on the URL query string as follows:
+The query itself is primed for an SQL attack, as the `customerId` parameter isn't sanitized before going into the query. The website that is calling the query is passing the customerId parameter on the URL query string as follows:
 
 ```
 .../Home/ViewInteractions?customerId=8c69a607-3c09-45ac-9beb-c59ca2de2385
@@ -53,13 +53,13 @@ The problem with this strategy is that the `customerId` parameter can be modifie
 select Id, CustomerId, InteractionDate, Details from CustomerInteractions where CustomerId = '8c69a607-3c09-45ac-9beb-c59ca2de2385'
 ```
 
-It can now be modified to add additional information via a UNION statement to add additional information, by adding the following to the query:
+It can now be modified to add additional information via a UNION statement, by adding the following to the query:
 
 ```sql
 union select Id, Id as CustomerId, getdate() as InteractionDate, CreditCardNumber + '/' + STR(CreditCardExpiryMonth, 2) + '/' + STR(CreditCardExpiryYear, 4) + ' cvv ' + STR(CreditCardCVV, 3) as Details from Customers --
 ```
 
-The SQL query is URL-encoded so that the value is accepted as a valid web URL part. The URL is passed to the website and the additional SQL query executed on the database.
+The SQL query is URL-encoded so that the value is accepted as a valid web URL part. The URL is passed to the website and the additional SQL query is executed on the database.
 
 ```sql
 %27+union+select+Id%2C+Id+as+CustomerId%2C+getdate%28%29+as+InteractionDate%2C+CreditCardNumber+%2B+%27%2F%27+%2B+STR%28CreditCardExpiryMonth%2C+2%29+%2B+%27%2F%27+%2B+STR%28CreditCardExpiryYear%2C+4%29+%2B+%27+cvv+%27+%2B+STR%28CreditCardCVV%2C+3%29+as+Details+from+Customers+--
@@ -114,7 +114,7 @@ Our example used ASP.NET Core to demonstrate the concepts. However, keep in mind
 
 ## Dynamic data masking
 
-You might have noticed that some of the information in the database is particularly sensitive; perhaps credit card information. In a real-world system, you would never store credit card information unencrypted. Unfortunately, the credit card information is not encrypted, and you'll need to find another way to hide the data.
+You might have noticed that some of the information in the database is particularly sensitive; perhaps credit card information. In a real-world system, you would never store credit card information unencrypted. Unfortunately, the credit card information here is not encrypted, and you'll need to find another way to hide the data.
 
 Let's assume you're building a shopping website, and during the order process the site has to display credit card details. You want to display the first 12 digits blocked out from the user, to appear like xxxx-xxxx-xxxx-1234.
 
@@ -122,7 +122,7 @@ This technique is called dynamic data masking. Dynamic data masking allows you t
 
 1. Using the portal, you select the database you want to apply the masks to, and then select the **Dynamic Data Masking** option from the **Security** setting.
 
-    The Masking rules screen shows a list of existing dynamic data masks, and recommendations for columns that should potentially have a dynamic data mask applied.
+    The Masking rules screen shows a list of existing dynamic data masks and recommendations for columns that should potentially have a dynamic data mask applied.
 
     ![Screenshot of the Azure portal showing a list of the recommended masks for the various database columns of a sample database.](../media/4-view-recommended-masked-columns.png)
 
@@ -134,13 +134,13 @@ This technique is called dynamic data masking. Dynamic data masking allows you t
 
 When querying the columns, database administrators will still see the original values, but non-administrators will see the masked values.
 
-You can allow other users to see the non-masked versions by adding them to the SQL users excluded from masking list.
+You can allow other users to see the non-masked versions by adding them to the SQL users excluded from the masking list.
 
 You can see here what the masked data looks like when queried by a non-administrator.
 
 ![Screenshot of a database query showing the Email, PhoneNumber, SocialSecurityNumber, and CreditCardNumber result columns masked as they would be seen by a non-administrator.](../media/4-sql-query-showing-masks.png)
 
-The masks on the displays are ones added based on recommendations, but you can add a mask manually too. Select the + Add mask button, and then the pop-over will allow you to select the schema, table, and column to use. You then define the masking that is used. There are standard masks that can be used such as:
+The masks on the displays are added based on recommendations, but you can add a mask manually too. Select the + Add mask button to open a pop-up window, that allows you to select the schema, table, and column to use. You then define the masking that is used. There are standard masks that can be used such as:
 
 - Default value, which displays the default value for that data type instead;
 - Credit card value, which only shows the last four digits of the number, converting all other numbers to lower case x’s;
