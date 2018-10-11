@@ -15,7 +15,7 @@ Use the Azure PowerShell to create and deploy a new Windows virtual machine.
 
 1. Start by deciding where to place the new resources. Select a location near you from the following list.
 
-    <!-- Resource selection -->
+    <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
     
 

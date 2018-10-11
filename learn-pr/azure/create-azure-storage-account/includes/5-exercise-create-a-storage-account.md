@@ -89,7 +89,7 @@ It will take a few minutes to deploy the account. While Azure is working on that
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-When you are working in your own subscription, you can the following steps in the Azure portal to delete the resource group and all associated resources.
+When you are working in your own subscription, you can use the following steps in the Azure portal to delete the resource group and all associated resources.
 
 1. Select the **Resource groups** link in the left sidebar.
 

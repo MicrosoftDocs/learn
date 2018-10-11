@@ -30,4 +30,4 @@ Application started.
 
 The output describes the situation after starting your app: the application is running and listening at port 5000.
 
-If were running the app on our own machine we'd be able to open a browser to http://localhost:5000. Since we're on Azure Cloud Shell, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.
+If were running the app on our own machine we'd be able to open a browser to http://localhost:5000. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.

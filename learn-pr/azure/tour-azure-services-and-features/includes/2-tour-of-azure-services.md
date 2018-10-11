@@ -6,11 +6,11 @@ Microsoft Azure is a continually expanding set of cloud services that help your 
 
 ## Azure services
 
-Azure provides a vast range of cloud-based services, with features added and enhanced every month. 
+Azure provides a vast range of cloud-based services, with features added and enhanced every month.
 
 ![Diagram showing the big picture view of Azure services](../media/2-azure-services.png "Azure services")
 
-Let's take a closer look at a few of the more commonly-used features: 
+Let's take a closer look at a few of the more commonly-used features:
 
 - Compute
 - Networking
@@ -21,21 +21,17 @@ Let's take a closer look at a few of the more commonly-used features:
 
 ### Compute
 
-Compute services are one of the primary reasons why companies move to the Azure platform. Azure provides a range of options for hosting applications and services including:
+Compute services are often one of the primary reasons why companies move to the Azure platform. Azure provides a range of options for hosting applications and services. Here are some examples of compute services in Azure:
 
-![An illustration showing three types of Azure compute services: Infrastructure as a Service, Platform as a Service, and Functions as a Service. It also shows the components that you manage and the components managed by Azure under each type service.](../media/2-iaas-paas-faas.png)
-
-Here are some examples of IaaS, PaaS, and FaaS in Azure.
-
-|  Type  |  Service name             | Service function                                                         |
-|--------|---------------------------|--------------------------------------------------------------------------|
-| IaaS   | Azure Virtual Machines    | Windows or Linux virtual machines (VMs) hosted in Azure                  | 
-| IaaS   | Azure Kubernetes Service  | Enables management of a cluster of VMs that run containerized services   |
-| PaaS   | Azure Service Fabric      | Distributed systems platform. Runs in Azure or on-premises               |
-| PaaS   | Azure Batch               | Managed service for parallel and high-performance computing applications |
-| PaaS   | Azure Cloud Services      | Managed service for running cloud applications                           |
-| FaaS   | Azure Container Instances | Provides containers without requiring VM provision or higher services    |
-| FaaS   | Azure Functions           | Managed FaaS service                                                     |
+|  Service name             | Service function                                                         |
+|---------------------------|--------------------------------------------------------------------------|
+| Azure Virtual Machines    | Windows or Linux virtual machines (VMs) hosted in Azure                  |
+| Azure Virtual Machine Scale Sets | Scaling for Windows or Linux VMs hosted in Azure                  |
+| Azure Kubernetes Service  | Enables management of a cluster of VMs that run containerized services   |
+| Azure Service Fabric      | Distributed systems platform. Runs in Azure or on-premises               |
+| Azure Batch               | Managed service for parallel and high-performance computing applications |
+| Azure Container Instances | Provides containers without requiring VM provision or higher services    |
+| Azure Functions           | An event-driven, serverless compute service                              |
 
 ### Networking
 
@@ -62,10 +58,12 @@ Azure networking facilities have the following features:
 
 Azure provides four main types of storage services. These services are:
 
-- **Azure Blob storage** - provides storage for very large objects, such as video files or bitmaps
-- **Azure File storage** - creates file shares that you can access and manage like a file server
-- **Azure Queue storage** - implements a store for queuing and reliably delivering messages between applications
-- **Azure Table storage** - consists of a NoSQL store that hosts unstructured data independent of any schema
+|  Service name       | Service function                                                                     |
+| -------------       | -------------                                                                        |
+| Azure Blob storage  | Storage service for very large objects, such as video files or bitmaps               |
+| Azure File storage  | File shares that you can access and manage like a file server                        |
+| Azure Queue storage | A data store for queuing and reliably delivering messages between applications       |
+| Azure Table storage | A NoSQL store that hosts unstructured data independent of any schema                 |
 
 Each of these services shares common characteristics, which are:
 

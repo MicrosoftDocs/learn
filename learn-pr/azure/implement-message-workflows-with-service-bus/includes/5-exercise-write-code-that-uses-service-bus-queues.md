@@ -32,7 +32,7 @@ Both of these values can be obtained from the Azure portal in the form of a comp
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or even Azure Key Vault to store the connection string.
 
-1. In the Cloud Shell, run the following command to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
+1. Run the following command in the CloudShell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -43,7 +43,7 @@ Both of these values can be obtained from the Azure portal in the form of a comp
         --namespace-name <namespace-name>
     ```
 
-    You'll be needing this connection string multiple times throughout this module, so you might want to paste it somewhere handy.
+    You'll need this connection string multiple times throughout this module, so you might want to paste it somewhere handy.
 
 1. Copy the key from Cloud Shell. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code:
 
@@ -51,7 +51,7 @@ Both of these values can be obtained from the Azure portal in the form of a comp
     const string ServiceBusConnectionString = "";
     ```
 
-    Paste the connection string between the quotation marks. Save the file with <kbd>Ctrl+S</kbd>.
+    Paste the connection string between the quotation marks. Save the file using the <kbd>Ctrl+S</kbd> keys.
 
 1. Repeat the previous step in **privatemessagereceiver/Program.cs**, pasting in the same connection string value. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
@@ -59,7 +59,7 @@ Both of these values can be obtained from the Azure portal in the form of a comp
 
 To complete the component that sends messages about sales, follow these steps:
 
-1. Open **privatemessagesender/Program.cs** in the editor
+1. Open **privatemessagesender/Program.cs** in the editor.
 
 1. Locate the `SendSalesMessageAsync()` method.
 
@@ -106,7 +106,7 @@ To complete the component that sends messages about sales, follow these steps:
     // Close the connection to the queue here
     ```
 
-1. To close the connection the Service Bus, replace that line of code with the following code:
+1. To close the connection to the Service Bus, replace that line of code with the following code:
 
     ```C#
     await queueClient.CloseAsync();
@@ -116,7 +116,7 @@ To complete the component that sends messages about sales, follow these steps:
 
 ## Send a message to the queue
 
-To run the component that sends a message about a sale, run this command in the Cloud Shell:
+To run the component that sends a message about a sale, run the following command in the Cloud Shell:
 
 ```bash
 dotnet run -p privatemessagesender

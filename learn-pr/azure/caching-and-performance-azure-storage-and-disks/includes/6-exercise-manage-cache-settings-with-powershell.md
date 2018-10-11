@@ -8,7 +8,7 @@ In the previous exercise, we performed the following tasks using the Azure porta
 Let's practice these operations using Azure PowerShell. 
 
 > [!NOTE]
-> We're going to use Azure PowerShell, but you could also use the Azure CLI which provides similar functionality as a console-based tool. It runs on macOS, Linux, and Windows. If you are interested in learning more about the Azure CLI, check out the **Manage Virtual Machines with the Azure CLI** module.
+> We're going to use Azure PowerShell, but you could also use the Azure CLI, which provides similar functionality as a console-based tool. It runs on macOS, Linux, and Windows. If you are interested in learning more about the Azure CLI, check out the **Manage Virtual Machines with the Azure CLI** module.
 
 We're going to use the VM we created in the previous exercise. The operations in this lab assume:
 
@@ -42,7 +42,7 @@ First, let's store some resource names so we can use them later.
     
 ### Get info about our VM
 
-1. Run the following command to get back the properties of our VM:
+1. Run the following command to get the properties of our VM:
 
     ```powershell
     $myVM = Get-AzureRmVM -ResourceGroupName $myRgName -VMName $myVmName
@@ -74,7 +74,7 @@ First, let's store some resource names so we can use them later.
     ReadOnly
     ```
    
-1. Let's change it back to the default for an OS disk which is _ReadWrite_.
+1. Let's change it back to the default for an OS disk, which is _ReadWrite_.
 
 ### Change the cache settings of the OS disk
 
@@ -92,7 +92,7 @@ First, let's store some resource names so we can use them later.
     Update-AzureRmVM -ResourceGroupName $myRGName -VM $myVM
     ```
     
-    Notice that this call takes a while to complete. That's because we're updating the actual VM, and Azure restarts the VM  to make the change.
+    Notice that this call takes a while to complete. That's because we're updating the actual VM and Azure restarts the VM  to make the change.
 
     ```output
     RequestId IsSuccessStatusCode StatusCode ReasonPhrase
