@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-sql-database.3-managing-authentication
+metadata:
+  title: Managing authentication
+  description: Learn to restrict access to the database by creating users with deliberately reduced access.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Managing authentication
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-managing-authentication.md)]
