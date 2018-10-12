@@ -16,7 +16,7 @@ To add your coffee machine to your application, you use the **Connected Coffee M
 
 1.	Optionally, you can differentiate the newly added coffee machine by appending the word “Real” in its name. To rename your new device, choose the device and edit the name in the name field. 
 
-    ![Coffee machine](../media/3-connect-device-a.png) 
+    ![Screenshot of the connected coffee maker device template with Connect this device option highlighted.](../media/3-connect-device-a.png) 
 
     Note the location of **Connect this device** for connecting your coffee machine in the next section. For now, the screen displays "Missing Data" because you haven't connected to the coffee machine. The real telemetry begins to populate the screen once the connection is made. 
  
