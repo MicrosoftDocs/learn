@@ -56,18 +56,6 @@ Docker enables you to publish, or expose, a port to make it accessible from outs
     cd clouddrive
     ```
 
-1. Create a new folder named **vm-config**.
-
-    ```azurecli
-    mkdir vm-config
-    ```
-
-1. Navigate to the new folder.
-
-    ```azurecli
-    cd vm-config
-    ```
-
 1. Create a new file using Cloud Shell's integrated editor.
 
     ```azurecli
