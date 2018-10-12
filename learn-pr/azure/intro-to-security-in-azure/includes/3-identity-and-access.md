@@ -89,7 +89,7 @@ Roles can be granted at the individual service instance level, but they also flo
 
 Here's a diagram that shows this relationship. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
-![Management groups](../media/3-role-assignment-scope.png)
+![An illustration showing the hierarchial representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
 
 :::row:::
   :::column:::
@@ -100,7 +100,7 @@ Here's a diagram that shows this relationship. Roles assigned at a higher scope,
 
 In addition to managing Azure resource access with role-based access control (RBAC), a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as their organization changes and evolves. Azure AD Privileged Identity Management (PIM) is an additional, paid-for offering that provides oversight of role assignments, self-service, and just-in-time role activation and Azure AD and Azure resource access reviews.
 
-![Privileged identity management](../media/PIM_Dashboard.png)
+![Screenshot of Privileged identity management dashboard](../media/PIM_Dashboard.png)
 
   :::column-end:::
 :::row-end:::

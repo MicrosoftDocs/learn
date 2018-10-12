@@ -24,7 +24,7 @@ Encrypting data in transit protects the data from outside observers and provides
 
 This diagram shows the process. Here, customer data is encrypted as it's sent over the network. Only the receiver has the secret key that can decrypt the data to a usable form.
 
-![Encryption in transit](../media/encryption-in-transit.png)
+![An illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/encryption-in-transit.png)
 
 ## Encryption at rest
 
@@ -34,7 +34,7 @@ The actual data that is encrypted could vary in its content, usage, and importan
 
 Here's a diagram that shows what encrypted customer data might look like as it sits in a database.
 
-![Encryption at rest](../media/encryption-at-rest.png)
+![An illustration showing an example of encryption at rest. The data is saved in the storage in an encrypted form accessed only through a key.](../media/encryption-at-rest.png)
 
 ## Encryption on Azure
 

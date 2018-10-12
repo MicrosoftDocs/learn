@@ -37,42 +37,42 @@
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/index.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/1-introduction.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/2-size-and-resize-virtual-machines.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/3-exercise-resize-a-virtual-machine.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/4-horizontal-scaling-using-scale-sets.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/5-exercise-create-a-scale-set-and-configure-autoscaling.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/6-knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/7-summary.md",
-        "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     }
    ]

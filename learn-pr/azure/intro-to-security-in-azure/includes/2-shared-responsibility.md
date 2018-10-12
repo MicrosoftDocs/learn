@@ -16,7 +16,7 @@ Moving to platform as a service (PaaS) outsources a lot of security concerns. At
 
 With software as a service (SaaS), you outsource almost everything. SaaS is software that runs with an internet infrastructure. The code is controlled by the vendor but configured to be used by the customer. Like so many companies, Contoso Shipping uses Office 365, which is a great example of SaaS!
 
-![shared_responsibility.png](../media/shared_responsibilities.png)
+![An illustration showing how cloud providers and customers share security responsibilities under different types of compute service implementation: on-premises, infrastructure as a service, platform as a service, and software as a service.](../media/shared_responsibilities.png)
 
 ## A layered approach to security
 
@@ -24,7 +24,7 @@ With software as a service (SaaS), you outsource almost everything. SaaS is soft
 
 Defense in depth can be visualized as a set of concentric rings, with the data to be secured at the center. Each ring adds an additional layer of security around the data. This approach removes reliance on any single layer of protection and acts to slow down an attack and provide alert telemetry that can be acted upon, either automatically or manually. Let's take a look at each of the layers.
 
-![Defense in depth](../media/defense_in_depth_layers_small.PNG)
+![An illustration showing Defense in depth with Data at the center. The rings of security around data are: application, compute, network, perimeter, identity and access, and physical security.](../media/defense_in_depth_layers_small.PNG)
 
 :::row:::
   :::column:::
