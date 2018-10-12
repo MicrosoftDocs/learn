@@ -37,7 +37,7 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
 
 1. Run `az vm start` to restart the VM.
 
-    ```bash
+    ```azurecli
     az vm start --name support-web-vm01
     ```
 
@@ -71,7 +71,7 @@ The final step is to tell the OS about the available space. Just like the partit
 
 1. Similar to what you did previously to initialize your disk, run this `az vm extension set` command to tell the OS on the VM about the newly available space.
 
-    ```bash
+    ```azurecli
     az vm extension set \
       --vm-name support-web-vm01 \
       --name customScript \
