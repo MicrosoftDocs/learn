@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 interactive: bash
 azureSandbox: true
-durationInMinutes: 20
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-add-data-disks-to-azure-virtual-machines.md)]
 tasks:

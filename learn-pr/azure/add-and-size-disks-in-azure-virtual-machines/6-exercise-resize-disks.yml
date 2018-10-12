@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 interactive: bash
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-resize-disks.md)]
 tasks:
