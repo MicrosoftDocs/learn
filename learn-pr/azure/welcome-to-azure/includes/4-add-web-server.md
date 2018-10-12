@@ -63,18 +63,16 @@ Here you'll use the Custom Script Extension to configure IIS remotely on your VM
 
 Now that IIS is set up, let's verify that it's running.
 
-1. Run this `az vm list-ip-addresses` command to list your VM's public IP addresses.
+1. Run this `az vm show` command to list your VM's public IP address.
 
     ```azurecli
-    az vm list-ip-addresses \
+    az vm show \
       --name myVM \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" \
+      --show-details \
+      --query [publicIps] \
       --output tsv
     ```
-
-    > [!NOTE]
-    > This `--query` argument makes this command a bit complex. But you'll be a pro at this as you dig in and explore Azure.
 
     You see your VM's public IP address, for example, 104.211.9.245.
 
@@ -137,18 +135,16 @@ Here you'll use the Custom Script Extension to configure Nginx remotely on your 
 
 Now that Nginx is set up, let's verify that it's running.
 
-1. Run this `az vm list-ip-addresses` command to list your VM's public IP addresses.
+1. Run this `az vm show` command to list your VM's public IP address.
 
     ```azurecli
-    az vm list-ip-addresses \
+    az vm show \
       --name myVM \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" \
+      --show-details \
+      --query [publicIps] \
       --output tsv
     ```
-
-    > [!NOTE]
-    > This `--query` argument makes this command a bit complex. But you'll be a pro at this as you dig in and explore Azure.
 
     You see your VM's public IP address, for example, 104.211.9.245.
 
