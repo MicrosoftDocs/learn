@@ -6,7 +6,7 @@ Your site is based in Silicon Valley, so you also find that a network delay is e
 
 Therefore, you convince your team to move the site to the cloud to help save costs. But how can Azure, specifically, help your site run better?
 
-As it turns out, managing networks on Azure isn't entirely different from managing on-premise networks. Let's discover why.
+As it turns out, managing networks on Azure isn't entirely different from managing on-premises networks. Let's discover why.
 
 ## Learning objectives
 
