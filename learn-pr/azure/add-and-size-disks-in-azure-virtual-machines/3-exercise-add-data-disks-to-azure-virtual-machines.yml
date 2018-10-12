@@ -28,5 +28,5 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Compute/virtualMachines/extensions"
-      name: support-web-vm01/customScript
+      name: customScript
   hint: "Run the `az vm extension set` command as shown to run the script on your virtual machine."
