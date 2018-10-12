@@ -25,7 +25,7 @@ Navigate to the **Commands** page for the following exercise. To validate the co
     
     Look for confirmation messages in the console log on the node.js simulated coffee machine. 
 
-    ![Run commands](../media/4-commands-brewing.png)
+    ![Screenshot of the console log showing the confirmation messages received after the run command. The messages return the value for temperature, humidity, and Y/N response for whether a cup is detected, if the machine is brewing, and if the maintenance mode is on.](../media/4-commands-brewing.png)
 
 1. Set maintenance mode by choosing **Run**. The coffee machine will set to maintenance if it's *not* already in maintenance.
     
@@ -34,7 +34,7 @@ Navigate to the **Commands** page for the following exercise. To validate the co
     > [!NOTE]
     > As in real life, when the technician takes the machine offline to perform necessary repairs before switching it back online, the coffee machine continues to stay in the maintenance mode until you reboot the client code.
 
-    ![Run commands](../media/4-commands-maintenance.png)
+    ![Screenshot of a console log showing the confirmation messages received after the run command. The messages return the value for temperature, humidity, and Y/N response for whether a cup is detected, if the machine is brewing, and if the maintenance mode is on.](../media/4-commands-maintenance.png)
 
 > [!IMPORTANT]
 > It's recommended that you run the Node.js application no more than 60 minutes or so to prevent the application from sending you unwanted notifications/emails. Stopping the application when you're not working on the module also prevents you from exhausting the daily message quota.
@@ -55,7 +55,7 @@ Navigate to the **Commands** page for the following exercise. To validate the co
 
 1. Select **Save** to save our configuration and display the line chart. 
 
-    ![Viewing the dashboard](../media/4-dashboard-a.png)
+    ![Screenshot showing the dashboard for connected coffee maker device template.](../media/4-dashboard-a.png)
 
 1. Choose **Settings and Properties** in the left-hand menu to open the **Configure Device Details** panel. 
 
