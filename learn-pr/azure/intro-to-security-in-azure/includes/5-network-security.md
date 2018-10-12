@@ -25,7 +25,7 @@ Any resource exposed to the internet is at risk of being attacked by a denial of
 
 This diagram shows network traffic flowing into Azure from both customers and an attacker. Azure DDoS protection identifies the attacker's attempt to overwhelm the network and blocks further traffic from reaching Azure services. Legitimate traffic from customers still flows into Azure without any interruption of service.
 
-![DDoS](../media/ddos.png)
+![An illustration showing Azure DDoS protection installed between virtual network and external user requests. The Azure DDoS protection blocks malicious traffic attack but forwards the legitimate traffic to the intended destination.](../media/ddos.png)
 
  :::column-end:::
 :::row-end:::
