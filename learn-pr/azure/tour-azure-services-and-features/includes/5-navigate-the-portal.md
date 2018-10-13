@@ -4,11 +4,11 @@ Now that we have an account, we can sign into the **Azure portal**. The portal i
 
 The Azure portal is the primary graphical user interface (GUI) for controlling Microsoft Azure. You can carry out the majority of management actions in the portal, and it is typically the best interface for carrying out single tasks or where you want to look at the configuration options in detail.
 
-![The Azure portal](../media/5-portal.png)
+![Screenshot of the Azure portal](../media/5-portal.png)
 
 :::row:::
     :::column:::
-    ![The resources and favorites](../media/5-favorites.png)
+    ![Screenshot of the resources and favorites blade](../media/5-favorites.png)
     :::column-end:::
     :::column span="3":::
     **Resource Panel**
@@ -52,7 +52,7 @@ Click the **gear** icon to change the Azure portal settings. These settings incl
 - Toast notifications (to a mobile device)
 - Language and regional format
 
-![Portal settings](../media/5-settings-blade.png)
+![Screenshot of the Portal settings blade](../media/5-settings-blade.png)
 
 When you have changed settings, click **Apply** to accept your changes.
 
@@ -77,7 +77,7 @@ Click the **Book and Filter** icon to show the **Directory + subscription** blad
 
 Azure allows you to have more than one subscription associated with one directory. On the **Directory + subscription** blade, you can change between subscriptions. Here, you can change your subscription or change to another directory.
 
-![Directory](../media/5-directory-blade.png)
+![Screenshot of the Directory and subscription blade.](../media/5-directory-blade.png)
 
 ### Profile settings
 
