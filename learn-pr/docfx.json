@@ -78,7 +78,7 @@
          "azure/ci-cd-pipelines-azure-devops/**/*.yml": "true",
          "azure/create-computer-vision-service-to-classify-images/**/*.yml": "true",
          "azure/interactive-deep-learning"/**/*.yml": "true"
-       }
+        }
     },
     "template": [],
     "dest": "learn-pr",
