@@ -77,20 +77,24 @@ All of this code is in the **index.js** file in this function's folder. Let's lo
 
 ```json
 {
-  "disabled": false,
-  "bindings": [
+    "bindings": [
     {
-      "authLevel": "function",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req"
+        "authLevel": "function",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "methods": [
+        "get",
+        "post"
+        ]
     },
     {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
+        "type": "http",
+        "direction": "out",
+        "name": "res"
     }
-  ]
+    ],
+    "disabled": false
 }
 ```
 
@@ -105,7 +109,7 @@ As you can see, this function has a trigger binding named **req** of type `httpT
 
     ![Screenshot showing menu items under a function in the Function Apps blade.](../media/3-func-menu-small.PNG)
 
-1. Select the Integrate menu item to open the integration tab for our function. If you have been following along with this unit, the integrate tab should look very similar to the following screenshot.
+1. Select the **Integrate** menu item to open the integration tab for our function. If you've been following along with this unit, the integrate tab should look very similar to the following screenshot.
 
     ![Screenshot showing integrate UI or tab.](../media/3-func-integrate-tab-small.PNG)
 

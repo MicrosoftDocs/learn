@@ -24,7 +24,7 @@ Once you are logged into the Azure portal, we can start exploring things.
 
 4. To the right of the **Pin** icon, click the **Maximize** icon. The Windows Server blade now fills the screen, except for the left-hand pane. Scroll down the list to see the other Windows Server images available.
 
-    ![Maximize button in the Azure blade](../media/6-maximize-button.png)
+    ![Screenshot of the Windows server blade with the maximize button highlighted](../media/6-maximize-button.png)
 
 5. Click the **X** at the top right-hand corner to close the **Windows Server** blade.
 
@@ -32,7 +32,7 @@ Once you are logged into the Azure portal, we can start exploring things.
 
 1. To refine this list further, on the **Compute** blade, click **Filter**. The **Filter** blade now appears.
 
-    ![Filter button in the Azure Marketplace](../media/6-filter.png)
+    ![Screenshot of the Compute blade in Azure marketplace with the filter button highlighted](../media/6-filter.png)
 
 2. Select the filter option for **Virtual Machine Images**, and then click **Done**.
 
