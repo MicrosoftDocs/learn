@@ -70,29 +70,24 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 ## Help blade
 
+### Support requests
+
+> [!NOTE]
+> New support requests cannot be created when using a Microsoft Learn sandbox subscription. This information applies to subscriptions which do allow new support requests to be created.
+
 1. Click the question mark to show the **Help** blade.
 
 1. Click the **Help and Support** button.
 
-1. In the **Help + Support** blade, under **Support**, click **New support request**.
+1. In the **Help + Support** blade, under **Support**, click **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then click **Create** to lodge the issue.
 
-1. In the Basics blade, under **Issue type**, select **Technical**.
+    - **Basics:** the issue type
+    - **Problem:** severity of the problem, a summary and description, and any additional information
+    - **Contact information:**: preferred contact method and the information associated with this contact method
 
-1. Under **Subscription**, click your subscription name.
+1. You can view the status of your support requests by clicking on **All support requests**.
 
-1. Under **Service**, select **Virtual Machine running Windows**.
-
-1. Because you do not have a paid support plan, there are limited support options. Under **Upgrade your support plan**, click **Choose a plan**.
-
-1. In the **Support Plans** blade, there are four available plans - Basic, Developer, Standard, and Professional Direct. Compare the options offered by each plan, and then Click the **X** at the top right to close the **Support Plans** blade.
-
-1. Close the **Support options** blade.
-
-1. Close the **Basics** blade.
-
-1. Close the **New support request** blade.
-
-1. Close the **Help and Support** blade.
+### What's new
 
 1. Click the **Help** icon again.
 
@@ -104,9 +99,9 @@ The Azure Portal has a lot of features and services available; let's look at som
 - Show diagnostics
 - Privacy + terms
 
-11. Click the **X** in the top right-hand corner to close the **Help** blade.
+1. Click the **X** in the top right-hand corner to close the **Help** blade.
 
-11. Close the **What's new** blade. You should now be back to the dashboard.
+1. Close the **What's new** blade. You should now be back to the dashboard.
 
 ## Directory and subscription
 
