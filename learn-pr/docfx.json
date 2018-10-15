@@ -63,7 +63,23 @@
         "azure/**/*.yml": "azure"
       },
       "sandbox-disabled": {
-         "azure/welcome-to-azure/**/*.yml": "true"
+         "azure/welcome-to-azure/**/*.yml": "true",
+         "azure/automate-azure-tasks-with-powershell/**/*.yml": "true",
+         "azure/build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm/**/*.yml": "true",
+         "azure/caching-and-performance-azure-storage-and-disks/**/*.yml": "true",
+         "azure/configure-the-network-for-your-virtual-machines/**/*.yml": "true",
+         "azure/create-linux-vm-in-azure/**/*.yml": "true",
+         "azure/create-a-windows-vm-in-azure/**/*.yml": "true",
+         "azure/introduction-to-azure-virtual-machines/**/*.yml": "true",
+         "azure/make-your-virtual-machines-highly-available/**/*.yml": "true",
+         "azure/manage-vms-with-azure-cli/**/*.yml": "true",
+         "azure/add-and-size-disks-in-azure-virtual-machines/**/*.yml": "true",
+         "azure/secure-your-azure-virtual-machine-disks/**/*.yml": "true",
+         "azure/intro-to-containers/**/*.yml": "true",
+         "azure/welcome-to-azure/**/*.yml": "true",
+         "azure/ci-cd-pipelines-azure-devops/**/*.yml": "true",
+         "azure/create-computer-vision-service/**/*.yml": "true",
+         "azure/interactive-deep-learning"/**/*.yml": "true"
        }
     },
     "template": [],
