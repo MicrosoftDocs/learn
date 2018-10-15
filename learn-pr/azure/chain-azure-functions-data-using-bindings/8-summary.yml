@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which of the following in an advantage to using bindings in your Azure Functions to access data sources and data sinks?"
+  - content: "Which of the following is an advantage of using bindings in your Azure Functions to access data sources and data sinks?"
     choices:
     - content: "They provide access to more data sources than are available using code."
       isCorrect: false

@@ -15,7 +15,7 @@ Dashboards are stored as JavaScript Object Notation (JSON) files. This means the
 
 The default dashboard is named "Dashboard". When you log into the portal, you are presented with this dashboard containing five web parts.
 
-![Default Web Parts](../media/8-dashboard-default-webparts.png)
+![Screenshot showing the default dashboard with different web parts numbered and highlighted.](../media/8-dashboard-default-webparts.png)
 
 These default web parts are
 
@@ -33,7 +33,7 @@ These default web parts are
 
 Along the top of the dashboard are the controls that enable you to create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
 
-![Customize dashboard controls](../media/8-customise-dashboard-controls.png)
+![Screenshot showing the Customize dashboard controls](../media/8-customise-dashboard-controls.png)
 
 ## Select dashboard
 
@@ -51,7 +51,7 @@ The **Upload** and **Download** buttons enable you to download your current dash
 
 If you click **Download**, the current dashboard downloads into your default Downloads folder. Opening the downloaded file then shows the JSON code.
 
-![Dashboard JSON code](../media/8-dashboard-json-code.png)
+![Screenshot of the downloaded Dashboard JSON code](../media/8-dashboard-json-code.png)
 
 You can then edit that code manually (for example, by changing tile sizes) and then upload it back to Azure by clicking the **Upload** button.
 
@@ -65,11 +65,11 @@ Although you can edit a dashboard by downloading the JSON file, changing values 
 
 The dashboard switches to edit mode.
 
-![Edit dashboard](../media/8-edit-dashboard.png)
+![Screenshot showing the dashboard in the Edit mode](../media/8-edit-dashboard.png)
 
 On the left-hand side appears the Tile Gallery, with several possible tiles. You can filter the Tile Gallery by category and resource type:
 
-![Tile Gallery](../media/8-tile-gallery.png)
+![Screenshot showing the Tile Gallery](../media/8-tile-gallery.png)
 
 Adding tiles is as easy as selecting the tile from the list on the left and then dragging it to the work area. You can then move each tile about, resize it, or change the data that it displays.
 
@@ -82,11 +82,11 @@ The work area in edit mode is divided into squares. Each tile must occupy at lea
 
 Some tiles have a set size, and you can edit their size only programmatically. However, you can edit tiles with a gray bottom right-hand corner by dragging the corner indicator.
 
-![Resizable tile](../media/8-resizable-tile.png)
+![Screenshot of a tile with the corner indicator highlighted.](../media/8-resizable-tile.png)
 
 Alternatively, right-click the context menu and specify the size you want.
 
-![Tile size](../media/8-tile-size.png)
+![Screenshot of the tile with the context menu displaying different sizing options.](../media/8-tile-size.png)
 
 To create your dashboard, pull tiles from the Tile Gallery onto the workspace and then rearrange them.
 
@@ -94,7 +94,7 @@ To create your dashboard, pull tiles from the Tile Gallery onto the workspace an
 
 Some tiles have editable settings. For example, with the clock tile, when you drag it onto the workspace, it opens the **Edit clock** tile. You can then set the time zone, which it displays, and also set whether it displays in 12- or 24-hour format.
 
-![Edit clock](../media/8-edit-clock.png)
+![Screenshot showing the Edit clock settings for the clock tile.](../media/8-edit-clock.png)
 
 For multi-national or transcontinental companies, you can add clocks, each in a different time zone.
 
@@ -106,7 +106,7 @@ When you have arranged the tiles as you want them, either click **Done customizi
 
 You can also edit a dashboard by changing the JSON file. This approach provides more options for changing settings, but you cannot see the changes until you upload the file back into Azure.
 
-![JSON settings](../media/8-json-code.png)
+![Screenshot of the downloaded dashboard JSON file.](../media/8-json-code.png)
 
 In the example above, to change the size of the tile, edit the **colSpan** and **rowSpan** variables, then save the file and upload it back to Azure. You can also distribute the file to other users.
 
@@ -118,11 +118,11 @@ You can reset any dashboard to the default style. In edit mode, right-click and 
 
 When you define a new dashboard, it is private and visible only to your account. To make it visible to others, you need to share a dashboard. However, as with any other Azure resource, you need to specify a resource group (or use an existing resource group) to store shared dashboards in. If you do not have an existing resource group, Azure will create a *dashboards* resource group in whichever location you specify. If you have existing resource groups, you can specify that resource group to store the dashboards.
 
-![Sharing and access control 1](../media/8-share-dashboards-default.png)
+![Screenshot of the Sharing and access control blade before the dashboard is shared.](../media/8-share-dashboards-default.png)
 
 When you have shared the template, you will see a second **Sharing + access control** blade.
 
-![Sharing and access control 2](../media/8-share-dashboards-access-control.png)
+![Screenshot of the Sharing and access control blade after the dashboard is shared.](../media/8-share-dashboards-access-control.png)
 
 You can then click **Manage users** to specify the users who have access to that dashboard.
 
@@ -130,11 +130,11 @@ You can then click **Manage users** to specify the users who have access to that
 
 To switch to a shared dashboard, you click on the list of dashboards, and then click **Browse all dashboards**.
 
-![Browse all dashboards](../media/8-browse-dashboards.png)
+![Screenshot showing a list of shared dashobards with the Browse all dashboards link highlighted.](../media/8-browse-dashboards.png)
 
 You will now see the **All dashboards** blade, with the names of any shared dashboards displayed. Just click on a dashboard to apply it to the Azure portal.
 
-![Shared dashboards](../media/8-select-shared-dashboard.png)
+![Screenshot showing the Shared dashboards in the All dashboards blade.](../media/8-select-shared-dashboard.png)
 
 ## Display a dashboard as a full screen
 

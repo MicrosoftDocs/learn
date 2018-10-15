@@ -35,7 +35,7 @@ When a database is replicated, the throughput and storage are replicated equally
 
 1. On the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account, including the location.
 
-    <!-- Resource selection -->
+    <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
     Setting|Value|Description

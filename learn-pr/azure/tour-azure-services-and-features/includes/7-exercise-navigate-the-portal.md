@@ -26,7 +26,7 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 1. Click the **Cloud Shell** icon (>_) to create a Cloud Shell session.
 
-1. Click **Bash (Linux)** or **PowerShell (Linux)**, depending on your personal preferences.
+1. Click **Bash** or **PowerShell**, depending on your personal preferences.
 
 1. In the **You have no storage mounted** screen, click **Create storage**. The Cloud Shell window appears at the bottom of the screen.
 

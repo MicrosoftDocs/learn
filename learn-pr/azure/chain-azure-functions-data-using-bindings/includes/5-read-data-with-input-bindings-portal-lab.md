@@ -19,19 +19,23 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Databases** > **Azure Cosmos DB**.
 
-1. In the **New account** page, enter the settings for the new Azure Cosmos DB account.
+1. In the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account.
 
-    | Setting | Value | Description |
-    |---------|-------|-------------|
-    | ID |*Enter a unique name*|Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
-    | API |SQL|The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **SQL**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
-    | Subscription | Concierge subscription | Select Azure subscription that you want to use for this Azure Cosmos DB account. |
-    Resource Group|Use existing<br><br>Then select **<rgn>[sandbox resource group name]</rgn>**. | We're selecting **Use existing**, because we want to group all resources created for this module under the free sandbox resource group. |
-    | Location | Auto-filled once **Use existing** is set. | Select the geographic location in which to host your Azure Cosmos DB account. Use the location that's closest to your users to give them the fastest access to the data. In this lab, the location is pre-determined for us as the location set for the existing resource group.|
+    |Setting  |Value  |Description  |
+    |---------|---------|---------|
+    |Subscription     |  Concierge subscription       |  The Azure subscription that you want to use for this Azure Cosmos DB account.       |
+    |Resource Group     |   <rgn>[sandbox resource group name]</rgn>      |  This field is pre-populated with the resource group from your sandbox.       |
+    |Account Name     | *Enter a unique name*        |  Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.       |
+    |API     | SQL        |  The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **SQL**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts.        |
+    |Location     | Select from the list        | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below.        |
 
-    Leave all other fields in the **New account** blade at their default values because we're using them in this module.  That includes **Enable geo-redundancy**, **Enable Multi Master**, **Virtual networks**.
+     Leave all other fields in the **New account** blade at their default values.
 
-1. Select **Create** to provision and deploy the database account.
+    ### Sandbox regions
+    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
+
+1. Select **Review + create** to provision and deploy the database account.
 
 1. Deployment can take some time. So, wait for a **Deployment succeeded** message in the Notification Hub before proceeding.
 
