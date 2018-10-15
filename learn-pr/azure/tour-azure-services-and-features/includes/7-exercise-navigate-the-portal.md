@@ -73,7 +73,7 @@ The Azure Portal has a lot of features and services available; let's look at som
 ### Support requests
 
 > [!NOTE]
-> New support requests cannot be created when using a Microsoft Learn sandbox subscription. This information applies to subscriptions which do allow new support requests to be created.
+> Support requests can only be created using an active paid subscription. Creating support requests from a free Microsoft Learn sandbox is not supported. This information applies to subscriptions which do allow new support requests to be created.
 
 1. Click the question mark to show the **Help** blade.
 
