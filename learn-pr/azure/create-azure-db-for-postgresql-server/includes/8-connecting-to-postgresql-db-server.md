@@ -58,7 +58,7 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 1. Hit <kbd>q</kbd> to exit the list.
 
 1. You can try other PSQL commands.
-    - <kbd>\?</kbd> to get help.
+    - <kbd>-?</kbd> to get help.
     - <kbd>\dt</kbd> to list the tables.
 
 1. When you're finished executing PSQL operations on your server, execute the command <kbd>\q</kbd> to quit PSQL.
