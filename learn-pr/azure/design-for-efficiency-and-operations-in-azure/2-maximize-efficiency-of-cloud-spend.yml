@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: 'A web application deployed on Azure App Service.'
       isCorrect: false
-      incorrectExplanation: 'Azure App Service is a PaaS service, reserved instances can only be used for virtual machines.'
+      incorrectExplanation: 'Azure App Service is a PaaS service, reserved instances are a feature for select compute services.'
     - content: 'A non-production virtual machine that is automatically shut down in off-hours when not in use.'
       isCorrect: false
       incorrectExplanation: 'Since this virtual machine will not be running the majority of the time it will not fully utilize the instance reservation, and is not a good candidate for a reserved instance.'
-    - content: 'An Azure SQL database instance.'
+    - content: 'An ExpressRoute circuit.'
       isCorrect: false
-      incorrectExplanation: 'Azure SQL database is a PaaS service, reserved instances can only be used for virtual machines.'
+      incorrectExplanation: 'ExpressRoute is a network service, reserved instances are a feature for select compute services.'
     - content: 'A database server for an HR system for a global business.'
       isCorrect: true
       correctExplanation: 'Because of the criticality and global nature of this system, it is likely that it would be running the majority of the time, making it a great candidate for a reserved instance.'
