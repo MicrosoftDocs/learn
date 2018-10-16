@@ -5,51 +5,58 @@ When you create the VM, it chooses a size for the OS disk. The specific size is 
 You can add data disks to provide for additional storage space, but you may also wish to expand an existing disk - perhaps a legacy application cannot split its data across drives, or you are migrating a physical PC's drive to Azure and need a larger OS drive.
 
 > [!NOTE]
-> You can only resize a disk to a _larger_ size. Shrinking managed disks is not supported today.
+> You can only resize a disk to a _larger_ size. Shrinking managed disks is not supported.
 
 Changing the size of the disk can also change the level of the disk (for example from P10 to P20). Keep this in mind - this can be beneficial for performance upgrades, but will also cost more as you move up the premium tiers.
 
-## VM size vs. Disk size
+## VM size versus disk size
 
-The VM size you choose when you create your VM will determine how many resources it can allocate. For storage, the size will control the number of disks you can add to the VM and the max size of each disk. 
+The VM size you choose when you create your VM determines how many resources it can allocate. For storage, the size controls the number of disks you can add to the VM and the maximum size of each disk.
 
-As mentioned in the previous unit, some VM sizes only support Standard storage drives - limiting the I/O performance.
+As mentioned previously, some VM sizes support only Standard storage drives - limiting the I/O performance.
 
-If you find that you need more storage than what your VM size allows for, you can change the VM size. We cover that topic in the **Introduction to Azure Virtual Machines** module.
+If you find that you need more storage than what your VM size allows for, you can change the VM size. We cover that topic in the [Introduction to Azure Virtual Machines](/learn/modules/intro-to-azure-virtual-machines?azure-portal=true) module.
 
 ## Expanding a disk using the Azure CLI
 
 > [!WARNING]
 > Always make sure that you back up your data before performing disk resize operations!
 
-Operations on VHDs cannot be performed with the VM running. The first step is to stop and deallocate the VM with `az vm deallocate` supplying the VM name and resource group name.
+Operations on VHDs cannot be performed with the VM running. The first step is to stop and deallocate the VM with `az vm deallocate`, supplying the VM name and resource group name.
 
-Deallocating a VM, unlike just _stopping_ a VM releases the associated computing resources and allows Azure to make configuration changes to the virtualized hardware.
+Deallocating a VM, unlike just _stopping_ a VM, releases the associated computing resources and allows Azure to make configuration changes to the virtualized hardware.
+
+> [!NOTE]
+> Don't run these commands just yet. You'll practice the process in the next part.
 
 ```azurecli
-az vm deallocate --resource-group <resource-group-name> --name <vm-name>
+az vm deallocate \
+  --resource-group <resource-group-name> \
+  --name <vm-name>
 ```
 
 Next, to resize a disk, you use `az disk update`, passing the disk name, resource group name, and newly requested size. When you expand a managed disk, the specified size is mapped to the nearest managed disk size.
 
 ```azurecli
 az disk update \
-    --resource-group <resource-group-name> \
-    --name <disk-name> \
-    --size-gb 200
+  --resource-group <resource-group-name> \
+  --name <disk-name> \
+  --size-gb 200
 ```
 
-Finally, you start the VM again with `az vm start`:
+Finally, you run `az vm start` to restart the VM.
 
 ```azurecli
-az vm start --resource-group <resource-group-name> --name <vm-name>
+az vm start \
+  --resource-group <resource-group-name> \
+  --name <vm-name>
 ```
 
 ## Expanding a disk using the Azure portal
 
-Expanding a disk using the Azure portal is even easier.
+You can also expand a disk through the Azure portal.
 
-1. Stop the VM using the **Stop** button in the toolbar on the **Overview** view of the VM.
+1. Stop the VM using the **Stop** button in the toolbar on the **Overview** page for the VM.
 
 1. Click **Disks** in the **Settings** section.
 
@@ -68,10 +75,8 @@ Expanding a disk using the Azure portal is even easier.
 
 ### Expanding the partition
 
-Just like adding a new data disk, an expanded disk won't add any usable space until you expand the partition and filesystem. This must be done using the OS tools available to the VM. 
+Just like adding a new data disk, an expanded disk won't add any usable space until you expand the partition and filesystem. This must be done using the OS tools available to the VM.
 
-On Windows, we would use the Disk Manager tool or the `diskpart` command line tool.
+On Windows, you might use the Disk Manager tool or the `diskpart` command line tool.
 
-On Linux, you will use `parted` and `resize2fs`.
-
-Let's try out some of these commands.
+On Linux, you might use `parted` and `resize2fs`. You'll do that in the next part.

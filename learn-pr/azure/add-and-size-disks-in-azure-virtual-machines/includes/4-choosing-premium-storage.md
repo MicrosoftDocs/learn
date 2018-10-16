@@ -23,7 +23,7 @@ Premium storage is limited to specific VM sizes - so the VM type you create will
 
 You can use standard SSDs with any VM size, including VM sizes that don't support premium storage. Using standard SSDs is the only way to use SSDs with those VMs. This disk type is only available in specific regions and only with _managed disks_.
 
-### Unmanaged vs. Managed disks
+### Unmanaged versus managed disks
 
 When you create VMs or VHDs, you have the choice to use **unmanaged** or **managed** disks.
 
@@ -54,7 +54,7 @@ There is more detail on disk performance below.
 
 ## Data replication
 
-The data in your Microsoft Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, massive natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. There are four types of replication:
+The data in your Microsoft Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. There are four types of replication:
 
 - **Locally redundant storage (LRS)** - Azure replicates the data within the same Azure data center. The data remains available if a node fails. However, if an entire data center fails, data may be unavailable.
 - **Geo-redundant storage (GRS)** - Azure replicates your data to a second region that is hundreds of miles away from the primary region. If your storage account has GRS enabled, then your data is durable even if there's a complete regional outage or a disaster in which the primary region isn't recoverable.
