@@ -13,11 +13,11 @@ title: Run Docker containers with Azure Container Instances
 summary: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
 abstract:  | 
   In this module, you will:
-  - Run a container in Azure Container Instances
-  - Control container restart behavior
-  - Use environment variables in your containers
-  - Attach data volumes to Azure Container Instances
-  - Troubleshoot Azure Container Instances
+  - Run containers in Azure Container Instances
+  - Control what happens when your container exits
+  - Use environment variables to configure your container when it starts
+  - Attach a data volume to persist data when your container exits
+  - Learn some basic ways to troubleshoot issues on your Azure containers
 
 prerequisites: None
 #TODO: Update icon URL with real image 

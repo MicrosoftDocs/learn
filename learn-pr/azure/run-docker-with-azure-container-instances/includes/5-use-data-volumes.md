@@ -1,101 +1,137 @@
 By default, Azure Container Instances is stateless. If the container crashes or stops, all of its state is lost. To persist state beyond the lifetime of the container, you must mount a volume from an external store.
 
-Here, you will mount an Azure file share to an Azure container instance for data storage and retrieval.
+Here, you'll mount an Azure file share to an Azure container instance to you can store data and access it later.
 
 ## Create an Azure file share
 
-Run the following script to create a storage account. The storage account name must be globally unique, so the script adds a random value to the base string:
+Here you'll create a storage account and a file share that you'll later make accessible to an Azure container instance.
 
-```azurecli
-ACI_PERS_STORAGE_ACCOUNT_NAME=mystorageaccount$RANDOM
+1. Your storage account requires a unique name. For learning purposes, run the following command to store a unique name in a Bash variable.
 
-az storage account create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name $ACI_PERS_STORAGE_ACCOUNT_NAME \
-    --sku Standard_LRS \
-    --location eastus
-```
+    ```bash
+    ACI_PERS_STORAGE_ACCOUNT_NAME=mystorageaccount$RANDOM
+    ```
 
-Run the following command to place the storage account connection string into an environment variable named *AZURE_STORAGE_CONNECTION_STRING*. This environment variable is understood by the Azure CLI and can be used in storage-related operations:
+1. Run the following `az storage account create` command to create your storage account.
 
-```azurecli
-export AZURE_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string --resource-group <rgn>[sandbox resource group name]</rgn> --name $ACI_PERS_STORAGE_ACCOUNT_NAME --output tsv)
-```
+    ```azurecli
+    az storage account create \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name $ACI_PERS_STORAGE_ACCOUNT_NAME \
+      --sku Standard_LRS \
+      --location eastus
+    ```
 
-Create a file share in the storage account by running the `az storage share create` command. The following example creates a share with the name *aci-share-demo*:
+1. Run the following command to place the storage account connection string into an environment variable named `AZURE_STORAGE_CONNECTION_STRING`.
 
-```azurecli
-az storage share create --name aci-share-demo
-```
+    ```azurecli
+    export AZURE_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name $ACI_PERS_STORAGE_ACCOUNT_NAME \
+      --output tsv)
+    ```
+
+    `AZURE_STORAGE_CONNECTION_STRING` is a special environment variable that's understood by the Azure CLI. The `export` part makes this variable accessible to other CLI commands you'll run shortly.
+
+1. Run this command to create a file share, named **aci-share-demo**, in the storage account.
+
+    ```azurecli
+    az storage share create --name aci-share-demo
+    ```
 
 ## Get storage credentials
 
-To mount an Azure file share as a volume in Azure Container Instances, you need three values: the storage account name, the share name, and the storage account access key.
+To mount an Azure file share as a volume in Azure Container Instances, you need these three values:
 
-If you used the script above, the storage account name was created with a random value at the end. To query the final string (including the random portion), use the following commands:
+* The storage account name
+* The share name
+* The storage account access key
 
-```azurecli
-STORAGE_ACCOUNT=$(az storage account list --resource-group <rgn>[sandbox resource group name]</rgn> --query "[?contains(name,'$ACI_PERS_STORAGE_ACCOUNT_NAME')].[name]" --output tsv)
-echo $STORAGE_ACCOUNT
-```
+You already have the share name, **aci-share-demo**. Here you'll get the other two values.
 
-The share name is already known (aci-share-demo), so all that remains is the storage account key, which can be found using the following command:
+1. Run the following command to get the storage account name.
 
-```azurecli
-STORAGE_KEY=$(az storage account keys list --resource-group <rgn>[sandbox resource group name]</rgn> --account-name $STORAGE_ACCOUNT --query "[0].value" --output tsv)
-echo $STORAGE_KEY
-```
+    ```azurecli
+    STORAGE_ACCOUNT=$(az storage account list \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --query "[?contains(name,'$ACI_PERS_STORAGE_ACCOUNT_NAME')].[name]" \
+      --output tsv)
+    ```
 
-## Deploy container and mount volume
+1. As an optional step, print the storage account name to the console.
 
-To mount an Azure file share as a volume in a container, specify the share and volume mount point when you create the container:
+    ```bash
+    echo $STORAGE_ACCOUNT
+    ```
 
-```azurecli
-az container create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name aci-demo-files \
-    --image microsoft/aci-hellofiles \
-    --location eastus \
-    --ports 80 \
-    --ip-address Public \
-    --azure-file-volume-account-name $ACI_PERS_STORAGE_ACCOUNT_NAME \
-    --azure-file-volume-account-key $STORAGE_KEY \
-    --azure-file-volume-share-name aci-share-demo \
-    --azure-file-volume-mount-path /aci/logs/
-```
+1. Run the following command to get the storage account key.
 
-Once the container has been created, get the public IP address:
+    ```azurecli
+    STORAGE_KEY=$(az storage account keys list \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --account-name $STORAGE_ACCOUNT \
+      --query "[0].value" \
+      --output tsv)
+    ```
 
-```azurecli
-az container show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name aci-demo-files \
-    --query ipAddress.ip \
-    --output tsv
-```
+1. As an optional step, print the storage key to the console.
 
-Open a browser and navigate to the container's IP address. You will be presented with a simple form. Enter some text and click **Submit**. This action will create a file in the Azure Files share containing the entered text.
+    ```bash
+    echo $STORAGE_KEY
+    ```
 
-![Azure Container Instances file share demo](../media/5-files-ui.png)
+## Deploy a container and mount the file share
 
-To validate, you can navigate to the file share in the Azure portal and download the file.
+To mount an Azure file share as a volume in a container, you specify the share and volume mount point when you create the container.
 
-Get the filename
+1. Run this `az container create` command to create a container that's mounts `/aci/logs/` to your file share.
 
-```azurecli
-az storage file list -s aci-share-demo -o table
-```
+    ```azurecli
+    az container create \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name aci-demo-files \
+      --image microsoft/aci-hellofiles \
+      --location eastus \
+      --ports 80 \
+      --ip-address Public \
+      --azure-file-volume-account-name $ACI_PERS_STORAGE_ACCOUNT_NAME \
+      --azure-file-volume-account-key $STORAGE_KEY \
+      --azure-file-volume-share-name aci-share-demo \
+      --azure-file-volume-mount-path /aci/logs/
+    ```
 
-Download the file to the cloud shell. Make sure to replace the `<filename>` below.
+1. Run `az container show` to get your container's public IP address.
 
-```azurecli
-az storage file download -s aci-share-demo -p <filename>
-```
+    ```azurecli
+    az container show \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name aci-demo-files \
+      --query ipAddress.ip \
+      --output tsv
+    ```
 
-Show the contents of the file.
+1. From a browser, navigate to your container's IP address. You see this.
 
-```azurecli
-cat <filename>
-```
+    ![Azure Container Instances file share demo](../media/5-files-ui.png)
 
-If the files and data stored in the Azure Files share were of any value, this share could be remounted on a new container instance to provide stateful data.
+1. Enter some text into the form and click **Submit**. This action creates a file that contains the text you entered in the Azure file share.
+
+1. Run this `az storage file list` command to display the files that are contained in your file share.
+
+    ```azurecli
+    az storage file list -s aci-share-demo -o table
+    ```
+
+1. Run `az storage file download` to download a file to your Cloud Shell session. Replace **\<filename\>** with one of the files that appeared in the previous step.
+
+    ```azurecli
+    az storage file download -s aci-share-demo -p <filename>
+    ```
+
+1. Run the `cat` command to print the contents of the file.
+
+    ```azurecli
+    cat <filename>
+    ```
+
+Remember that your data persists when your container exits. You can mount your file share to other container instances to make that data available to them.
