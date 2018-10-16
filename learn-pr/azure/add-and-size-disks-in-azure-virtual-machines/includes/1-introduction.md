@@ -11,6 +11,6 @@ In this module, you will:
 - Determine whether you need premium disks
 - Resize disks for a VM
 
-## Prerequisites  
+## Prerequisites
 
 None

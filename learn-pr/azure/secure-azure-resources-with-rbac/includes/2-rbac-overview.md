@@ -25,7 +25,7 @@ In several areas in the Azure portal, you'll see a blade named **Access control 
 
 The following shows an example of the Access control (IAM) blade for a resource group. In this example, Alain Charon has been assigned the Backup Operator role for this resource group.
 
-![Access control (IAM) in the Azure portal](../media/2-resource-group-access-control.png)
+![Screenshot of the Azure portal showing the Access control-Role assignment blade with the Backup operator section highlighted](../media/2-resource-group-access-control.png)
 
 ## How does RBAC work?
 

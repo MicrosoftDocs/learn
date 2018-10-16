@@ -4,13 +4,13 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
 
 1. Returning to your *Artworks*\* project in the Custom Vision Service portal, select the  **Performance** tab.
 
-    ![Selecting the Performance tab](../media/5-performance-tab.png)
+    ![Screenshot of the top bar of the Artworks project with the Performance tab highlighted](../media/5-performance-tab.png)
 
 1. Select **Make default** to make sure the latest iteration of the model is the default iteration.
 
 1. Select **Prediction URL**. This displays a dialog of the information we need to make our calls. 
 
-    ![Viewing Prediction URL information](../media/5-portal-prediction-url.png)
+    ![Screenshot of the prediction url dialog box showing the detailed information on how to use prediction API when you have image URL and when you have image file](../media/5-portal-prediction-url.png)
 
     As the dialog shows, we can call the prediction endpoint and pass it an image URL. We can also pass a raw image to the endpoint in the body of the request.
 
@@ -42,7 +42,7 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
 
     When the command completes, you'll see a JSON response similar to the following screenshot. The API returns a probability for every tag in the model. As you can see, with a probability close to 1 for the `"painting"` **tagName** value, this image is definitely a painting. However, it's not a painting by any of the artists with which we trained our model. 
 
-    ![Thumbnail of test picasso image](../media/5-prediction-json.png) 
+    ![Screenshot of a JSON response showing probability for each tag](../media/5-prediction-json.png) 
 
 3. Try more predictions by replacing the URL in the request body above, with the URLs in the following table. 
 

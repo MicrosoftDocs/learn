@@ -1,29 +1,41 @@
-We underestimated how big some of the uploads would be and our upload disk is running out of space. You decide to double the space and upgrade it from 64 GB to 128 GB.
+Let's say you underestimated how large some of the uploaded files would be and that your upload disk is running out of space. You decide to double the space from 64 GB to 128 GB.
+
+Here you'll practice the process you learned about in the previous part.
 
 ## Resize the data disk
 
-To resize a disk, we need the ID or name of the disk. In this case we already know the name (uploadDataDisk1). But in case we didn't remember that, or it was created by someone else we can get a list of disks using the `az disk list` command.
+To resize a disk, you need the ID or name of the disk. In this case, you already know the name, **uploadDataDisk1**. But in case you didn't remember that, or it was created by someone else, you can run `az disk list` to find the name.
 
-1. Start by getting a list of the managed disks in the resource group; this might include other disks if you have multiple VMs in a single resource group. For our example, there should just be our web server.
+1. Run `az disk list` to print the list of the managed disks in the resource group. This list might include other disks if you have multiple VMs in the same resource group.
 
     ```azurecli
     az disk list \
-        --query '[*].{Name:name,Gb:diskSizeGb,Tier:accountType}' \
-        --output table
+      --query '[*].{Name:name,Gb:diskSizeGb,Tier:accountType}' \
+      --output table
     ```
 
-1. Next, stop and deallocate the VM using `az vm deallocate`. 
+    You see the disk named **uploadDataDisk1**.
+
+    ```output
+    Name                                                        Gb
+    ----------------------------------------------------------  ----
+    support-web-vm01_OsDisk_1_141859cb21d64b85b9db3f70f0f5e851  30
+    uploadDataDisk1                                             64
+    ```
+
+1. Run the following `az vm deallocate` command to stop and deallocate your VM.
 
     ```azurecli
     az vm deallocate --name support-web-vm01
     ```
-1. Now we can resize the disk with the `az disk update` command.
+
+1. Run `az disk update` to resize the disk to 128 GB.
 
     ```azurecli
     az disk update --name uploadDataDisk1 --size-gb 128
     ```
-    
-1. Once the resize operation has completed, restart the VM.
+
+1. Run `az vm start` to restart the VM.
 
     ```azurecli
     az vm start --name support-web-vm01
@@ -31,70 +43,88 @@ To resize a disk, we need the ID or name of the disk. In this case we already kn
 
 ## Expand the disk partition
 
-The final step is to tell the OS about the available space. Just like the partitioning and format steps we did earlier, this process is identical for on-premise disk expansions. 
+The final step is to tell the OS about the available space. Just like the partitioning and format steps you did earlier, this process is identical to the one you'd follow to expand a physical, on-premise, disk.
 
-1. First, get the public IP address of your VM. Since it was rebooted, it has likely changed. Let's try a different approach this time and use `az vm show` with a filter to return the public IP address.
-
-    > [!TIP]
-    > IP addresses are dynamic by default. Azure DNS will automatically compensate for the IP change, or you can alter the behavior by using static IP addresses.
+1. Although you can reserve a fixed public IP address for your VM, by default your VM receives a new public IP address when it is deallocated and restarted. Run the following `az vm show` command to get your VM's new public IP address.
 
     ```azurecli
-    az vm show --name support-web-vm01 -d --query [publicIps] --o tsv
+    ipaddress=$(az vm show --name support-web-vm01 -d --query [publicIps] --o tsv)
     ```
-    
-1. SSH into the Linux machine. You will need to supply your correct IP address.
+
+1. As you did earlier, run `lsblk` on your VM over SSH to understand it's current state.
 
     ```bash
-    ssh azureuser@40.76.193.249
+    ssh azureuser@$ipaddress lsblk
     ```
 
-1. Unmount the disk. Recall that it was `/dev/sdc1`.
+    You see that the `sdc/sdc1` still has a size of 64 GB.
+
+    ```output
+    NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+    sdb      8:16   0   14G  0 disk 
+    └─sdb1   8:17   0   14G  0 part /mnt
+    sdc      8:32   0  128G  0 disk 
+    └─sdc1   8:33   0   64G  0 part /uploads
+    sda      8:0    0   30G  0 disk 
+    └─sda1   8:1    0   30G  0 part /
+    ```
+
+1. Similar to what you did previously to initialize your disk, run this `az vm extension set` command to tell the OS on the VM about the newly available space.
+
+    ```azurecli
+    az vm extension set \
+      --vm-name support-web-vm01 \
+      --name customScript \
+      --publisher Microsoft.Azure.Extensions \
+      --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-add-and-size-disks-in-azure-virtual-machines/master/resize-data-disk.sh"]}' \
+      --protected-settings '{"commandToExecute": "./resize-data-disk.sh"}'
+    ```
+
+    While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-add-and-size-disks-in-azure-virtual-machines/master/resize-data-disk.sh?azure-portal=true) from a separate browser tab if you'd like.
+
+    To summarize, the script:
+
+    * Unmounts the disk `/dev/sdc1`.
+    * Resizes partition 1 to be 128 GB.
+    * Verifies partition consistency.
+    * Resizes the filesystem.
+    * Remounts the drive `/dev/sdc1` back to the mount point `/uploads`.
+
+1. To verify the configuration, run `lsblk` on your VM over SSH a second time.
 
     ```bash
-    sudo umount /dev/sdc1
+    ssh azureuser@$ipaddress lsblk
     ```
 
-1. Launch `parted` in an elevated shell
+    This time, you see that `sdc/sdc1` is expanded to accommodate the increased size of your disk.
+
+    ```output
+    NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+    sdb      8:16   0    14G  0 disk 
+    └─sdb1   8:17   0    14G  0 part /mnt
+    sdc      8:32   0   128G  0 disk 
+    └─sdc1   8:33   0 119.2G  0 part /uploads
+    sda      8:0    0    30G  0 disk 
+    └─sda1   8:1    0    30G  0 part /
+    ```
+
+1. As a final verification step, run the `df` utility on your VM over SSH.
 
     ```bash
-    sudo parted /dev/sdc
-    ```
-    
-1. Expand the partition with the `resizepart` command. Enter partition 1 and the new size (128GB).
-
-    ```bash
-    (parted) resizepart
-    Partition number? 1
-    End?  [64GB]? 128GB
+    ssh azureuser@$ipaddress df -h
     ```
 
-    > [!WARNING]
-    > Be careful about the size. Resizing the partition allows you to shrink a partition too, and that will likely result in data loss.
-    
-1. Exit the tool by typing `quit`.
+    You see that the drive's size is 128 GB.
 
-1. The partition tool will automatically _remount_ the drive. So unmount it again so we can format it.
-
-    ```bash
-    sudo umount /dev/sdc1
+    ```output
+    Filesystem      Size  Used Avail Use% Mounted on
+    udev            3.4G     0  3.4G   0% /dev
+    tmpfs           697M  8.6M  689M   2% /run
+    /dev/sda1        30G  1.4G   28G   5% /
+    tmpfs           3.5G     0  3.5G   0% /dev/shm
+    tmpfs           5.0M     0  5.0M   0% /run/lock
+    tmpfs           3.5G     0  3.5G   0% /sys/fs/cgroup
+    /dev/sdb1        14G   35M   13G   1% /mnt
+    /dev/sdc1        63G   52M   60G   1% /uploads
+    tmpfs           697M     0  697M   0% /run/user/1000
     ```
-    
-1. Verify the partition consistency with `e2fsck`. This step is absolutely necessary but is a good idea any time you are changing sizes on a disk volume.
-
-    ```bash
-    sudo e2fsck -f /dev/sdc1
-    ```
-
-1. Resize the filesystem with `resize2fs`.
-
-    ```bash
-    sudo resize2fs /dev/sdc1
-    ```
-
-1. Finally, mount the drive back to the mount point.
-
-    ```bash
-    sudo mount /dev/sdc1 /uploads
-    ```
-
-To verify the OS disk has been resized, use `df -h`. It should now show that the drive is 128 GB.
