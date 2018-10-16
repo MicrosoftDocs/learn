@@ -19,7 +19,7 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
     - Replace the `<values>` with your own values. 
     - Remember that the server name must be  made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen.
     - Use <rgn>[sandbox resource group name]</rgn> as the resource group.
-    - Use a location from the following list:
+    - Use a location from the following list:  
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
     ```bash
