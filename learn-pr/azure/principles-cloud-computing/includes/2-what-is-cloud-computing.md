@@ -13,12 +13,8 @@ The cloud provider is responsible for the physical hardware required to execute 
 The goal of cloud computing is to make running a business easier and more efficient, whether it's a small start-up or a large enterprise. Every business is unique and has different needs. To meet those needs, cloud computing providers offer a wide range of services.
 You need to have a basic understanding of some of the services it provides. Let's briefly discuss the two most common services that all cloud providers offer &ndash; compute power and storage.
 
-:::row:::
-    :::column:::
-        ![Compute power gauge](../media/2-compute-power.png)
-    :::column-end:::
-	:::column span="3":::
-        **Compute power**
+![Compute power gauge](../media/2-compute-power.png)  
+**Compute power**
 
 You're using compute power everyday, whether you know it or not. If you're sending an email, browsing a website, or even checking the weather on your mobile device, there’s hardware doing computer processing work behind the scenes.
 
@@ -30,14 +26,9 @@ Containers are one of the hottest technology trends in the last few years, with 
 
 Serverless computing is another hot trend. With serverless computing, you don't need to worry about provisioning and maintaining servers. Serverless computing enables you to focus solely on how your application behaves. As an example, you can build a serverless process that automatically sends an email confirmation after a customer makes an online purchase.
 
-        :::column-end:::
-:::row-end:::
- :::row:::
-    :::column:::
-        ![Storage gauge](../media/2-storage.png)
-    :::column-end:::
-	:::column span="3":::
-        **Storage**
+![Storage gauge](../media/2-storage.png)
+
+**Storage**
 
 Most devices read and/or write data. Here are some examples:
 
@@ -50,8 +41,6 @@ In all of these cases, data is either read (like the weather) or written (like t
 
 Cloud providers typically offer services that can handle all of these types of data. For example, if you wanted to store text, you could use a file on disk or you could take a more structured approach like using a relational database.
 
-    :::column-end:::
-:::row-end:::
 
 ## Summary
 
