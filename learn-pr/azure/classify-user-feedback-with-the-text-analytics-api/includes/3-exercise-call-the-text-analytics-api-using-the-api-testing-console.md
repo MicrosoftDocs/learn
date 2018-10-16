@@ -93,16 +93,16 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
 
     The complete request, including the headers and the request URL are displayed in the next section. In this example, you can see that the requests are routed to a URL that begins with `westus`. The URL differs depending on the location you selected when you created your Text Analytics account.
 
-    ![Section number four.](../media/4-marker.PNG)
-    ![Section number five.](../media/5-marker.PNG)
+    ![Screenshot of section number four showing the request URL.](../media/4-marker.PNG)
+    ![Screenshot of the section number five showing detailed HTTP request.](../media/5-marker.PNG)
 
     Then we have information about the response. In the example, we see that the request was a success and code `200` was returned. We can also see that the round trip took 38 ms.
 
-    ![Section number five.](../media/6-marker.PNG)
+    ![Screenshot of section number five showing the response status](../media/6-marker.PNG)
 
     Finally, we see the response to our request. The response holds the insight the Text Analytics API had about our documents. An array of documents is returned to us, without the original text. We get back an *"id"* and *"score"* for each document. The API returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. A score of 0.5 indicates the lack of sentiment, a neutral statement. In this example, we have two pretty positive documents and one negative document.
 
-    ![Section number five.](../media/7-marker.PNG)
+    ![Screenshot of the section number five showing the response content.](../media/7-marker.PNG)
 
 Congratulations! You've made your first call to the Text Analytics API without writing a line of code. Feel free to stay in the console and try out more calls. Here are some suggestions:
 
