@@ -22,7 +22,7 @@ products:
 - azure-container-instances
 - azure-container-registry
 modules:
-- learn.intro-to-containers
+#- learn.intro-to-containers
 - learn.azure-container-registry
 - learn.run-docker-containers-aci
 #TODO: Add - Orchestrate containerized application (POST-IGNITE)

@@ -114,7 +114,9 @@
         "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/7-summary.md",
         "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
         "redirect_document_id": false
-    }{	
+
+    },
+    {	
         "source_path": "learn-pr/azure/secure-your-azure-sql-database/index.md",	
         "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",	
         "redirect_document_id": false	
@@ -153,5 +155,41 @@
         "source_path": "learn-pr/azure/secure-your-azure-sql-database/7-summary.md",	
         "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/index.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/1-introduction.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/2-create-a-container.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/3-basic-operations.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/4-container-images.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/5-knowledge-check.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/6-summary.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    }
    ]
 }
