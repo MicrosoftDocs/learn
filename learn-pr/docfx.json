@@ -63,7 +63,6 @@
         "azure/**/*.yml": "azure"
       },
       "sandbox-disabled": {
-         "azure/welcome-to-azure/**/*.yml": "true"
        }
     },
     "template": [],
