@@ -18,4 +18,4 @@ Many of the extensions target Azure features and products. This includes feature
 
 ## Install Visual Studio Code and prepare for Azure development
 
-Visual Studio code supports Windows, Linux, and macOS. To install Visual Studio code, go to https://code.visualstudio.com/.
+Visual Studio Code supports Windows, Linux, and macOS. To install Visual Studio Code, go to https://code.visualstudio.com/.
