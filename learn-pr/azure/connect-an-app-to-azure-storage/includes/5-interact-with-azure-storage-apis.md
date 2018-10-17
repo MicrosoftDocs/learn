@@ -71,19 +71,19 @@ However, this approach requires a lot of manual parsing and the creation of HTTP
 
 Client libraries can save a significant amount of work for application developers because the API is tested and it often provides nicer wrappers around the data models sent and received by the REST API.
 
-:::row:::
-    :::column:::
+:::row:::  
+    :::column:::  
         Microsoft has Azure client libraries that support a number of languages and frameworks including:
         - .NET
         - Java
         - Python
         - Node.js
         - Go
-    :::column-end::::
-    :::column:::
+    :::column-end::::  
+    :::column:::  
         <br> ![Sample logos of supported frameworks you can use with Azure](../media/4-common-tools.png) 
-    :::column-end:::
-:::row-end:::
+    :::column-end:::  
+:::row-end:::  
 
 For example, to retrieve the same list of blobs in C#, we could use the following code snippet:
 
