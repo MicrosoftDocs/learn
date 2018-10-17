@@ -1,1 +1,0 @@
-Taking a quiz on security can only go so far. Check and monitor your database for security issues routinely. Before taking this quiz, be sure to read the previous units so that you are as prepared as possible. Be vigilant.
