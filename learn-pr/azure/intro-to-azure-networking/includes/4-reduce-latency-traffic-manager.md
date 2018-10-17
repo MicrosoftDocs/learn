@@ -10,7 +10,7 @@ How can you make your site, which is located in the United States, load faster f
   :::column:::
     ![A stopwatch representing latency](../media/4-latency.png)
   :::column-end::::
-	:::column span="3":::
+	:::column span="3":::  
 _Latency_ refers to the time it takes for data to travel over the network. Latency is typically measured in milliseconds.
 
 Compare latency to bandwidth. Bandwidth refers to the amount of data that can fit on the connection. Latency refers to the time it takes for that data to reach its destination.
@@ -31,7 +31,7 @@ Recall that Azure provides data centers in regions across the globe.
   :::column:::
     ![A globe representing region scale-out](../media/4-scale-out-regions.png) 
   :::column-end::::
-	:::column span="3":::
+	:::column span="3":::  
 Think about the cost of building a data center. Equipment costs aren't the only factor. You need to provide the power, cooling, and personnel to keep your systems running at each location. It might be prohibitively expensive to replicate your entire data center. But doing so with Azure can cost much less, because Azure already has the equipment and personnel in place.
   :::column-end:::
 :::row-end:::
@@ -48,7 +48,7 @@ The diagram shows your e-commerce site running in three Azure regions: East US, 
   :::column:::
     ![A sign post representing Azure Traffic Manager](../media/4-sign-post.png) 
   :::column-end::::
-	:::column span="3":::
+	:::column span="3":::  
 One answer is **Azure Traffic Manager**. Traffic Manager uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint.
   :::column-end:::
 :::row-end:::
@@ -67,7 +67,7 @@ Although not shown here, this setup could also include your on-premises deployme
   :::column:::
     ![A magnifying glass](../media/4-magnifying-glass.png) 
   :::column-end::::
-	:::column span="3":::
+	:::column span="3":::  
 Azure Load Balancer distributes traffic within the same region to make your services more highly available and resilient. Traffic Manager works at the DNS level, and directs the client to a preferred endpoint. This endpoint can be to the region that's closest to your user.
 
 Load Balancer and Traffic Manager both help make your services more resilient, but in slightly different ways. When Load Balancer detects an unresponsive VM, it directs traffic to other VMs in the pool. Traffic Manager monitors the health of your endpoints. In contrast, when Traffic Manager finds an unresponsive endpoint, it directs traffic to the next closest endpoint that is responsive.
