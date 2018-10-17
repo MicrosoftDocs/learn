@@ -149,46 +149,6 @@
         "source_path": "learn-pr/azure/intro-to-containers/6-summary.md",
         "redirect_url": "https://docs.microsoft.com/azure/containers/",
         "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/1-introduction.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/2-restricting-network-access.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/3-managing-authentication.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/4-application-level-security.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/5-monitoring-your-database.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/6-knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/secure-your-azure-sql-database/7-summary.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-security-tutorial",
-        "redirect_document_id": false
     }
    ]
 }
