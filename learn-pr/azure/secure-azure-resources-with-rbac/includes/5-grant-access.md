@@ -10,11 +10,11 @@ Follow these steps to assign the Virtual Machine Contributor role to a user at t
 
 1. Click **Access control (IAM)** to see the current list of role assignments.
 
-   ![Access control - Role assignment for resource group](../media/5-resource-group-role-assignment.png)
+   ![Screenshot showing the Access control - Role assignment blade for the selected resource group with the Add button highlighted](../media/5-resource-group-role-assignment.png)
 
 1. At the top, click **Add** to open the **Add permissions** pane.
 
-   ![Add permissions pane](../media/5-add-permissions.png)
+   ![Screenshot of the Add permissions pane](../media/5-add-permissions.png)
 
 1. In the **Role** drop-down list, select **Virtual Machine Contributor**.
 
@@ -22,13 +22,13 @@ Follow these steps to assign the Virtual Machine Contributor role to a user at t
 
     You can find the username on the **Resources** tab next to the instructions.
 
-   ![Add permissions pane completed](../media/5-add-permissions-save.png)
+   ![Screenshot of the Add permissions pane with all the fields completed](../media/5-add-permissions-save.png)
 
 1. Click **Save** to create the role assignment.
 
    After a few moments, the **LabUser-_XXXXXXX_** user is assigned the Virtual Machine Contributor role at the **FirstUpConsultantsRG1-_XXXXXXX_** resource group scope. The user can now create and manage virtual machines just within this resource group.
 
-   ![Virtual Machine Contributor role assignment](../media/5-vm-contributor-assignment.png)
+   ![Screenshot showing the Virtual Machine Contributor role assigned to a user ](../media/5-vm-contributor-assignment.png)
 
 ## Remove access
 
@@ -38,7 +38,7 @@ In RBAC, to remove access, you remove a role assignment.
 
 1. Click **Remove**.
 
-   ![Remove role assignment message](../media/5-remove-role-assignment.png)
+   ![Screenshot showing the Remove role assignment message](../media/5-remove-role-assignment.png)
 
 1. In the **Remove role assignments** message that appears, click **Yes**.
 

@@ -13,7 +13,19 @@ The first step in creating a bot is to provide a location for the bot to be host
 
 1. Under **Subscription** and **Resource group**, select the pre-existing resources.
 
-1. Select the location nearest to you and select the **S1** pricing tier.
+1. Select a **Location** from one of the following:
+    - Central US
+    - East US
+    - East US 2
+    - North Central US
+    - South Central US
+    - West US
+    - West US 2
+
+    > [!NOTE]
+    > If you see a resource policy error when you create the Web App Bot, then check that its location is set to one of the options above.
+
+1. Select the **S1** pricing tier.
 
 1. Then, select **Bot template**. Select **SDK v3** as the version, **Node.js** as the SDK language, and **Question and Answer** as the template type. Then, select **Select** at the bottom of the blade.
 

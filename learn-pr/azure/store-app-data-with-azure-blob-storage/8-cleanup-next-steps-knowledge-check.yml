@@ -28,7 +28,7 @@ quiz:
       isCorrect: true
       correctExplanation: "Creating an Azure Storage account is an administrative activity and can be done prior to deploying an application. Container creation is lightweight and is often driven by run-time data which makes it a good activity to do in your application."
       
-  - content: "Which of the following can be used initialize the Blob Storage client library within an application?"
+  - content: "Which of the following can be used to initialize the Blob Storage client library within an application?"
     choices:
     - content: "An Azure username and password."
       isCorrect: false

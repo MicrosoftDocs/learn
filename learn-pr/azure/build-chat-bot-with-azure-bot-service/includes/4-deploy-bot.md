@@ -51,6 +51,6 @@ When you created an Azure web app bot, an Azure web app was deployed to host it.
     git remote add qna-factbot https://BOT_NAME.scm.azurewebsites.net:443/BOT_NAME.git
     ```
 
-1. Return to the **Source Control** panel and select the ellipsis (the three dots) at the top of the SOURCE CONTROL panel, and select **Publish Branch** from the menu to push the bot code from the local repository to Azure. If prompted for credentials, enter the username and password you specified in Step 9 of this exercise.
+1. Return to the **Source Control** panel and select the ellipsis (the three dots) at the top of the SOURCE CONTROL panel, and select **Publish Branch** from the menu to push the bot code from the local repository to Azure. If prompted for credentials, enter the username and password you specified previously in this exercise.
 
 Your bot has been published to Azure. But before you test it there, let's run it locally and learn how to debug it in Visual Studio Code.

@@ -74,6 +74,81 @@
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/7-summary.md",
         "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/1-introduction.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/2-assess-your-database.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/3-exercise-assess-your-database.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/4-deploy-fixes-and-migrate-the-database.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/5-exercise-migrate-the-database.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/6-knowledge-check-deploy-fixes-and-migrate-the-database.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/7-summary.md",
+        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/index.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/1-introduction.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/2-create-a-container.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/3-basic-operations.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/4-container-images.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/5-knowledge-check.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/intro-to-containers/6-summary.md",
+        "redirect_url": "https://docs.microsoft.com/azure/containers/",
+        "redirect_document_id": false
     }
    ]
 }

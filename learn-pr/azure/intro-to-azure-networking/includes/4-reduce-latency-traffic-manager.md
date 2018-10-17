@@ -9,8 +9,8 @@ How can you make your site, which is located in the United States, load faster f
 :::row:::
   :::column:::
     ![A stopwatch representing latency](../media/4-latency.png)
-  
-  :::column span="3":::
+  :::column-end:::
+	:::column span="3":::  
 _Latency_ refers to the time it takes for data to travel over the network. Latency is typically measured in milliseconds.
 
 Compare latency to bandwidth. Bandwidth refers to the amount of data that can fit on the connection. Latency refers to the time it takes for that data to reach its destination.
@@ -49,6 +49,7 @@ The diagram shows your e-commerce site running in three Azure regions: East US, 
     ![A sign post representing Azure Traffic Manager](../media/4-sign-post.png) 
   :::column-end:::
   :::column span="3":::
+
 One answer is **Azure Traffic Manager**. Traffic Manager uses the DNS server that's closest to the user to direct user traffic to a globally distributed endpoint.
   :::column-end:::
 :::row-end:::

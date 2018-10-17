@@ -6,11 +6,11 @@ The easiest way to get started is to view the activity logs with the Azure porta
 
 1. Click **All services** and then find **Activity log**.
 
-    ![Activity logs using the portal](../media/6-all-services-activity-log.png)
+    ![Screenshot of the Azure portal showing the location of Activity logs option](../media/6-all-services-activity-log.png)
 
 1. Click **Activity log** to open the activity log.
 
-    ![Activity logs using the portal](../media/6-activity-log-portal.png)
+    ![Screenshot of the Azure portal showing the detailed Activity logs](../media/6-activity-log-portal.png)
 
 1. Set the **Timespan** filter to **Last month**.
 
@@ -23,7 +23,7 @@ The easiest way to get started is to view the activity logs with the Azure porta
     - Create or update custom role definition (roleDefinitions)
     - Delete custom role definition (roleDefinitions)
 
-    ![Operation filter](../media/6-operation-filter.png)
+    ![Screenshot showing a list of Operation filter with the four filters selected](../media/6-operation-filter.png)
 
     After a few moments, you'll see all the role assignment and role definition operations for the last month. It also includes a link to download the activity log as a CSV file.
 
