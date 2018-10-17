@@ -63,22 +63,8 @@
         "azure/**/*.yml": "azure"
       },
       "sandbox-disabled": {
-         "azure/welcome-to-azure/**/*.yml": "true",
-         "azure/automate-azure-tasks-with-powershell/**/*.yml": "true",
-         "azure/build-a-web-app-with-mean-on-a-linux-vm/**/*.yml": "true",
-         "azure/caching-and-performance-azure-storage-and-disks/**/*.yml": "true",
-         "azure/create-linux-virtual-machine-in-azure/**/*.yml": "true",
-         "azure/create-windows-virtual-machine-in-azure/**/*.yml": "true",
-         "azure/intro-to-azure-virtual-machines/**/*.yml": "true",
-         "azure/make-your-virtual-machines-highly-available/**/*.yml": "true",
-         "azure/manage-virtual-machines-with-azure-cli/**/*.yml": "true",
-         "azure/add-and-size-disks-in-azure-virtual-machines/**/*.yml": "true",
-         "azure/secure-your-azure-virtual-machine-disks/**/*.yml": "true",
-         "azure/intro-to-containers/**/*.yml": "true",
-         "azure/ci-cd-pipelines-azure-devops/**/*.yml": "true",
-         "azure/create-computer-vision-service-to-classify-images/**/*.yml": "true",
-         "azure/interactive-deep-learning/**/*.yml": "true"
-        }
+         "azure/welcome-to-azure/**/*.yml": "true"
+       }
     },
     "template": [],
     "dest": "learn-pr",
