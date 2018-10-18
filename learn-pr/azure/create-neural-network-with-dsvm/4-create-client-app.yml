@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.create-neural-network-with-dsvm.4-create-client-app
+title: Create a NotSushi app
+metadata:
+  title: Create a NotSushi app
+  description: Create a NotSushi app
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+labId: 45996
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-create-client-app.md)]
