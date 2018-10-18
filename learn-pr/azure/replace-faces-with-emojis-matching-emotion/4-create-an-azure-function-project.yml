@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.the-mojifier.4-create-an-azure-function-project
+metadata:
+  title: Create an Azure Function project
+  description: Create and debug your first Azure Function HTTP trigger.
+  author: lnyswonger
+  ms.date: 10/18/2018
+  ms.author: luken
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+#labId: 45987
+title: Create an Azure Function project
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-an-azure-function-project.md)]

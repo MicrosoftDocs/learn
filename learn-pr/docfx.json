@@ -61,7 +61,9 @@
     "fileMetadata": {
       "brand": {
         "azure/**/*.yml": "azure"
-      }
+      },
+      "sandbox-disabled": {
+       }
     },
     "template": [],
     "dest": "learn-pr",

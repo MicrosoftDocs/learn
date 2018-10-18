@@ -24,7 +24,7 @@ Encrypting data in transit protects the data from outside observers and provides
 
 This diagram shows the process. Here, customer data is encrypted as it's sent over the network. Only the receiver has the secret key that can decrypt the data to a usable form.
 
-![Encryption in transit](../media/encryption-in-transit.png)
+![An illustration showing an example of encryption in transit. The data is encrypted before it is transferred. Once it reaches the destination, the data is then decrypted.](../media/encryption-in-transit.png)
 
 ## Encryption at rest
 
@@ -34,7 +34,7 @@ The actual data that is encrypted could vary in its content, usage, and importan
 
 Here's a diagram that shows what encrypted customer data might look like as it sits in a database.
 
-![Encryption at rest](../media/encryption-at-rest.png)
+![An illustration showing an example of encryption at rest. The data is saved in the storage in an encrypted form accessed only through a key.](../media/encryption-at-rest.png)
 
 ## Encryption on Azure
 
@@ -44,7 +44,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
   :::column:::
     ![Image representing encrypted storage](../media/4-encrypt-raw-storage.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Encrypt raw storage**
 
 Azure Storage Service Encryption for data at rest helps you protect your data to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval. The handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services.
@@ -55,7 +55,7 @@ Azure Storage Service Encryption for data at rest helps you protect your data to
   :::column:::
     ![Image representing an encrypted virtual machine](../media/4-encrypt-virtual-machines.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Encrypt virtual machines**
 
 Storage Service Encryption provides low-level encryption protection for data written to physical disk, but how do you protect the virtual hard disks (VHDs) of virtual machines? If malicious attackers gained access to your Azure subscription and exfiltrated the VHDs of your virtual machines, how would you ensure they would be unable to access data stored on the VHD?
@@ -70,7 +70,7 @@ For Contoso Shipping, using VMs was one of the first moves toward the cloud. Hav
   :::column:::
     ![Image representing an encrypted database](../media/4-encrypt-databases.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Encrypt databases**
 
 Transparent data encryption (TDE) helps protect Azure SQL Database and Azure Data Warehouse against the threat of malicious activity. It performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. By default, TDE is enabled for all newly deployed Azure SQL Database instances.
@@ -85,7 +85,7 @@ Because TDE is enabled by default, you are confident that Contoso Shipping has t
   :::column:::
     ![Image representing an encrypted secret](../media/4-encrypt-secrets.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Encrypt secrets**
 
 We've seen that the encryption services all use keys to encrypt and decrypt data, so how do we ensure that the keys themselves are secure? Corporations may also have passwords, connection strings, or other sensitive pieces of information that they need to securely store.

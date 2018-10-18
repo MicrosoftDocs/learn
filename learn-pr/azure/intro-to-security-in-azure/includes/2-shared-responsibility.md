@@ -16,7 +16,7 @@ Moving to platform as a service (PaaS) outsources a lot of security concerns. At
 
 With software as a service (SaaS), you outsource almost everything. SaaS is software that runs with an internet infrastructure. The code is controlled by the vendor but configured to be used by the customer. Like so many companies, Contoso Shipping uses Office 365, which is a great example of SaaS!
 
-![shared_responsibility.png](../media/shared_responsibilities.png)
+![An illustration showing how cloud providers and customers share security responsibilities under different types of compute service implementation: on-premises, infrastructure as a service, platform as a service, and software as a service.](../media/shared_responsibilities.png)
 
 ## A layered approach to security
 
@@ -24,13 +24,13 @@ With software as a service (SaaS), you outsource almost everything. SaaS is soft
 
 Defense in depth can be visualized as a set of concentric rings, with the data to be secured at the center. Each ring adds an additional layer of security around the data. This approach removes reliance on any single layer of protection and acts to slow down an attack and provide alert telemetry that can be acted upon, either automatically or manually. Let's take a look at each of the layers.
 
-![Defense in depth](../media/defense_in_depth_layers_small.PNG)
+![An illustration showing Defense in depth with Data at the center. The rings of security around data are: application, compute, network, perimeter, identity and access, and physical security.](../media/defense_in_depth_layers_small.PNG)
 
 :::row:::
   :::column:::
     ![Image representing data](../media/2-data.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Data**
 
 In almost all cases, attackers are after data:
@@ -48,7 +48,7 @@ It's the responsibility of those storing and controlling access to data to ensur
   :::column:::
     ![Image of a file on the network](../media/2-application.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Application**
 
 - Ensure applications are secure and free of vulnerabilities.
@@ -63,7 +63,7 @@ Integrating security into the application development life cycle will help reduc
   :::column:::
     ![A terminal representing compute](../media/2-compute.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Compute**
 
 - Secure access to virtual machines.
@@ -77,7 +77,7 @@ Malware, unpatched systems, and improperly secured systems open your environment
   :::column:::
     ![Three connected systems representing networking](../media/2-networking.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Networking**
 
 - Limit communication between resources.
@@ -93,7 +93,7 @@ At this layer, the focus is on limiting the network connectivity across all your
   :::column:::
     ![A physical barrier representing the network perimeter](../media/2-perimeter.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Perimeter**
 
 - Use distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for end users.
@@ -107,7 +107,7 @@ At the network perimeter, it's about protecting from network-based attacks again
   :::column:::
     ![A badge representing a secure access](../media/2-policies-and-access.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Identity and access**
 
 - Control access to infrastructure and change control.
@@ -122,7 +122,7 @@ The identity and access layer is all about ensuring identities are secure, acces
   :::column:::
     ![A security camera representing physical security](../media/2-physical-security.png)
   :::column-end:::
-	:::column span="3":::
+	:::column span="3":::  
 **Physical security**
 
 - Physical building security and controlling access to computing hardware within the data center is the first line of defense.

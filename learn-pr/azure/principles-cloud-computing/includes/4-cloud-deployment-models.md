@@ -4,14 +4,11 @@ There are three different cloud deployment models. A cloud deployment model defi
 
 #### Public versus Private versus Hybrid
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEv7]
+> [!VIDEO httpsg//www.microsoft.com/videoplayer/embed/RE2yEv7]
 
-:::row:::
-    :::column:::
-        ![Public cloud icon](../media/4-public-cloud.png)
-    :::column-end:::
-	:::column span="3":::  
-        **Public cloud**
+![Public cloud icon](../media/4-public-cloud.png)
+
+**Public cloud**
 
 This is the most common deployment model. In this case, you have no local hardware to manage or keep up-to-date – everything runs on your cloud provider’s hardware. In some cases, you can save additional costs by sharing computing resources with other cloud users.
 
@@ -20,14 +17,10 @@ Some advantages of the public cloud are:
 - High scalability – you don’t have to buy a new server in order to scale
 - Pay-as-you-go pricing – you pay only for what you use
 - You’re not responsible for maintenance or updates of the hardware
-        :::column-end:::
-:::row-end:::
- :::row:::
-    :::column:::
-        ![Private cloud icon](../media/4-private-cloud.png)
-    :::column-end:::
-	:::column span="3":::  
-        **Private cloud**
+        
+![Private cloud icon](../media/4-private-cloud.png)
+
+**Private cloud**
 
 In a private cloud, you create a cloud environment in your own data center and provide self-service access to compute resources to users in your organization. This offers a simulation of a public cloud to your users, but you remain completely responsible for the purchase and maintenance of the hardware and software services you provide.
 
@@ -35,14 +28,10 @@ Some reasons teams move away from the private cloud are:
 
 - You have to purchase the hardware for startup and maintenance
 - Private clouds require IT skills and expertise that's hard to come by
-:::column-end:::
-:::row-end:::
- :::row:::
-    :::column:::
-        ![Hybrid cloud icon](../media/4-hybrid-cloud.png)
-    :::column-end:::
-	:::column span="3":::  
-        **Hybrid cloud**
+
+![Hybrid cloud icon](../media/4-hybrid-cloud.png)
+
+**Hybrid cloud**
 
 A hybrid cloud combines public and private clouds, allowing you to run your applications in the most appropriate location. For example, you could host a web site in the public cloud and link it to a highly secure database hosted in your private cloud (or on-premises data center).
 
@@ -57,8 +46,6 @@ Some concerns you'll need to watch out for are:
 
 - It can be more expensive than selecting one deployment model
 - It can be more complicated to set up and manage
-    :::column-end:::
-:::row-end:::
 
 ## Summary
 

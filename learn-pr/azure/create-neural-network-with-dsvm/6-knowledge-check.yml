@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.create-neural-network-with-dsvm.6-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Confirm that you understood the steps required to build neural networks with Tensorflow and the Azure Data Science Virtual Machine.
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Can you create a Data Science VM with an operating system other than Linux?"
+    choices:
+    - content: "No"
+      isCorrect: false
+      incorrectExplanation: "There are other options for operating systems for the Data Science VM."
+    - content: "Yes"
+      isCorrect: true
+      #TODO: Fix this - correctExplanation: "Great! Proceed to the next part of the lab."
+  - content: "What should be copied in the Azure Portal to use to connect to the Data Science VM with client?"
+    choices:
+    - content: "IP Address"
+      isCorrect: true
+      #TODO: Fix this - correctExplanation: "Great! Proceed to the next part of the lab."
+    - content: "Subscription name"
+      isCorrect: false
+      incorrectExplanation: "The subscription name isn't needed to connect to the VM."
+    - content: "DNS name"
+      isCorrect: false
+      incorrectExplanation: "The DNS name isn't needed to connect to the VM."
+    - content: "Virtual network/subnet"
+      isCorrect: false
+      incorrectExplanation: "The Virtual network or subnet isn't needed to connect to the VM."
+  - content: "What do you need to perform transfer learning on the Data Science VM?"
+    choices:
+    - content: "Access to a large GPU"
+      isCorrect: false
+      incorrectExplanation: "While a GPU is great for retraining on images, it doesn't need to be large or required."
+    - content: "Tensorflow installed"
+      isCorrect: false
+      incorrectExplanation: "Tensorflow is already installed in the Data Science VM so there's no need to install it again."
+    - content: "Pre-trained model"
+      isCorrect: true
+      #TODO: Fix this - correctExplanation: "Great! Proceed to the next part of the lab."
+    - content: "A very large set of data"
+      isCorrect: false
+      incorrectExplanation: "You don't need a large data set to use pre-trained models."
+  - content: "What is the name of the tool to visualize Tensorflow models?"
+    choices:
+    - content: "Tensorview"
+      isCorrect: false
+      #TODO: Fix this - incorrectExplanation: ""
+    - content: "Tensorvision"
+      isCorrect: false
+      #TODO: Fix this - incorrectExplanation: ""
+    - content: "Tensorpanel"
+      isCorrect: true
+      #TODO: Fix this - incorrectExplanation: "Great! Proceed to the next part of the lab."
+    - content: "Tensorboard"
+      isCorrect: false
+      #TODO: Fix this - correctExplanation: ""
+  - content: "When executing the TkInter code for a GUI to test the model, what is the name of the Python script it calls to get results from the model?"
+    choices:
+    - content: "retrain.py"
+      isCorrect: false
+      incorrectExplanation: "This script was used earlier to retrain the model with our own images."
+    - content: "classify.py"
+      isCorrect: false
+      incorrectExplanation: "This script was used to put the TkInter code into and run from."
+    - content: "label_image.py"
+      isCorrect: true
+      #TODO: Fix this - correctExplanation: "Great! Proceed to the next part of the lab."
+    - content: "results.py"
+      isCorrect: false
+      incorrectExplanation: "This script wouldn't exist and would result in an error."

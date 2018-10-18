@@ -11,11 +11,11 @@ At the very heart of (and smack in the middle of the name "SRE") is that word Re
 
 Let’s look at a quick demonstration. Here’s a screenshot. What do you think it is showing? Try not to move on until you have an idea or you give up. Note: if it is hard to detect very much detail in the picture below that’s fine, it is rendering perfectly in your browser.
 
-   ![Screenshot 1](../media/02_blank-screenshot.png)
+   ![A blank screenshot representing a PHP app that fails to load.](../media/02_blank-screenshot.png)
 
 This picture is a screenshot of what a PHP app (without other debugging support added) looks like when it fails. You might see something like this for a Java app:
 
-   ![Screenshot 2](../media/02_java-screenshot.png)
+   ![A screenshot of failed java app with HTTPS Status 500 error.](../media/02_java-screenshot.png)
 
 Why are we looking at these examples? Each of them represents an application that potentially took a business huge amounts of time, energy, and resources to create. But if the application isn’t up--if it isn’t operational when a customer needed to access it--if it isn’t reliable—-it does no one, especially the business any good. In fact, a lack of reliability can do actual harm (reputational, economic, contractual, morale, and so on) to a business.
 

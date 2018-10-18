@@ -72,7 +72,7 @@ To complete the component that sends messages about sales, follow these steps:
 1. To create a queue client, replace that line of code with the following code:
 
     ```C#
-    var queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
     ```
 
 1. Within the `try...catch` block, locate the following line of code:
@@ -152,7 +152,7 @@ az servicebus queue show \
 1. To create a queue client, replace that line with the following code:
 
     ```C#
-    var queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
     ```
 
 1. Locate the `RegisterMessageHandler()` method.

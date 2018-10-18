@@ -1,6 +1,6 @@
 We all want to know what our customers think of our brand, our product, and our message. How does their opinion change over time? Looking for sentiment in what they write can unlock some clues. Sentiment analysis helps answer the question, *What do our customers really want?* It's used to analyze tweets and other social media content, customer reviews, and emails.
 
-![Sentiment extracted from text and display on a gauge from negative to positive.](../media/sentiment-analysis.png)
+![Sentiment extracted from text and displayed on a gauge from negative to positive.](../media/sentiment-analysis.png)
 
  A popular approach to sentiment analysis is to train machine learning models that detect sentiment. However, that process is complex. It involves having good-quality training data that is labeled, creating features from that data, training a classifier, and then using the classifier to predict sentiment of new pieces of text. Not every company has the money and expertise to invest in building AI solutions from scratch. Thankfully, Microsoft and other companies can, and do, invest in state-of-the-art research in these areas. As developers, we get to benefit from their findings through the APIs, SDKs, and platforms they ship. Microsoft Cognitive Services is one such offering.
 

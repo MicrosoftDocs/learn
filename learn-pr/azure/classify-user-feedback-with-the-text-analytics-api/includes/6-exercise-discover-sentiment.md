@@ -58,7 +58,7 @@ Let's repeat the test. This time, instead of using the Test window of the portal
 1. In the **Resource group** panel that appears, locate the Storage
 Account entry, and select it.
 
-    ![Screenshot storage account selected in the Resource Group window.](../media/select-storage-account.png)
+    ![Screenshot storage account selected in the Resource Group window](../media/select-storage-account.png)
 
 1. Select **Storage Explorer (preview)** from the left menu of the Storage Account main window. This action opens the Azure Storage Explorer inside the portal. 
 
@@ -66,7 +66,7 @@ Account entry, and select it.
 
     As you can see, we don't have any queues in this storage account yet, so let's add one.
 
-5. If you remember from earlier in this lesson, we named the queue associated with our trigger **new-feedback-q**. Right-click on the **Queues** item in the Storage Explorer, and select *Create Queue*.
+1. If you remember from earlier in this lesson, we named the queue associated with our trigger **new-feedback-q**. Right-click on the **Queues** item in the Storage Explorer, and select *Create Queue*.
 
 1. In the dialog that opens, enter **new-feedback-q** and click **OK**. We now have our input queue.
 
