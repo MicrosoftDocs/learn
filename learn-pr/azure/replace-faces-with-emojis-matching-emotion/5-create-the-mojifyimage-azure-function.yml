@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.the-mojifier.5-create-the-mojifyimage-azure-function
+metadata:
+  title: Create the MojifyImage Azure function
+  description: Create an HTTP endpoint which will return a mojified image.
+  author: lnyswonger
+  ms.date: 10/18/2018
+  ms.author: luken
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+#labId: 45987
+title: Create the MojifyImage Azure function
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-create-the-mojifyimage-azure-function.md)]

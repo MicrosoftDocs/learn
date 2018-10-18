@@ -422,8 +422,8 @@ achievements:
   iconUrl: /learn/achievements/manage-your-iot-devices.svg
 - uid: learn.the-mojifier.badge
   type: badge
-  title: Create a Slack Command that replaces peoples faces with emojis
-  summary: Create a Slack Command that replaces peoples faces with emojis
+  title: The Mojifier - Create a Slack bot that replaces people's faces with emojis matching their emotion
+  summary: The Mojifier - Create a Slack bot that replaces people's faces with emojis matching their emotion
   iconUrl: /learn/achievements/replace-faces-with-emojis-matching-emotion.svg
 - uid: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge
   type: badge
