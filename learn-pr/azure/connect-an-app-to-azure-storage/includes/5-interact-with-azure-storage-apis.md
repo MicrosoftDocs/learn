@@ -79,8 +79,8 @@ Client libraries can save a significant amount of work for application developer
         - Python
         - Node.js
         - Go
-    :::column-end::::  
-    :::column:::  
+    :::column-end:::
+    :::column:::
         <br> ![Sample logos of supported frameworks you can use with Azure](../media/4-common-tools.png) 
     :::column-end:::  
 :::row-end:::  
