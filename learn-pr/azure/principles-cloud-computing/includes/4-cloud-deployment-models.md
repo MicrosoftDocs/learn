@@ -4,7 +4,7 @@ There are three different cloud deployment models. A cloud deployment model defi
 
 #### Public versus Private versus Hybrid
 
-> [!VIDEO httpsg//www.microsoft.com/videoplayer/embed/RE2yEv7]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEv7]
 
 ![Public cloud icon](../media/4-public-cloud.png)
 
