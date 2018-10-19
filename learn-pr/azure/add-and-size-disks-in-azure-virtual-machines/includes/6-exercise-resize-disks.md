@@ -51,7 +51,7 @@ The final step is to tell the OS about the available space. Just like the partit
     ipaddress=$(az vm show --name support-web-vm01 -d --query [publicIps] --o tsv)
     ```
 
-1. As you did earlier, run `lsblk` on your VM over SSH to understand it's current state.
+1. As you did earlier, run `lsblk` on your VM over SSH to understand its current state.
 
     ```bash
     ssh azureuser@$ipaddress lsblk
