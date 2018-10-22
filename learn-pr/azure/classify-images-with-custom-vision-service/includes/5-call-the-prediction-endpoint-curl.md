@@ -2,7 +2,7 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-1. Returning to your *Artworks*\* project in the Custom Vision Service portal, select the  **Performance** tab.
+1. Returning to your **Artworks**\* project in the Custom Vision Service portal, select the  **Performance** tab.
 
     ![Screenshot of the top bar of the Artworks project with the Performance tab highlighted](../media/5-performance-tab.png)
 
