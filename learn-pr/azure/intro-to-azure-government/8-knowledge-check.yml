@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-government.8-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: TBD
+  ms.date: 10/11/2018
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+quiz:
+  title:  Check your knowledge
+  questions:
+  - content: Which one of the following is a key difference between global Azure and Azure Government?
+    choices:
+    - content: Azure Government has a marketplace from which you can deploy pre-built images from Microsoft and partners.
+      isCorrect: false
+      incorrectExplanation: 'Incorrect. Both global Azure and Azure Government offer a marketplace'
+    - content: Azure Government has a portal from which you can manage your resources.
+      isCorrect: false
+      incorrectExplanation: Incorrect. Both global Azure and Azure Government have a portal experience. 
+    - content: Azure Government is a physically separate instance of Azure.
+      isCorrect: true
+      correctExplanation: Correct! Azure Government is a sovereign cloud and is physically separate in its own set of data centers.
+    - content: Azure Government uses different technology that global Azure.
+      isCorrect: false
+      incorrectExplanation: Incorrect. Azure Government uses same underlying technologies as global Azure, which includes the core components of Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS).
+  - content: 'How many Azure Governments regions are available?'
+    choices:
+    - content: '4'
+      isCorrect: false
+      incorrectExplanation: 'Incorrect'
+    - content: '12'
+      isCorrect: false
+      incorrectExplanation: 'Incorrect'
+    - content: '7'
+      isCorrect: false
+      incorrectExplanation: 'Incorrect'
+    - content: '8'
+      isCorrect: true
+      correctExplanation: 'Correct. Azure Government cloud has an advanced infrastructure with robust networking in 8 announced regions across the United States.'
+  - content: 'Azure Government is available exclusively to three distinct types of customers. Which of the following customer types is it **NOT** available to? '
+    choices:
+    - content: 'A US government entity in its governmental capacity, such as a federal agency.'
+      isCorrect: false
+      incorrectExplanation: 'Incorrect. A government entity such as a federal agency will have access to Azure Government cloud.'
+    - content: 'A private entity building cloud solutions for the private sector.'
+      isCorrect: true
+      correctExplanation: 'Correct. This type of customer will not have access to Azure Government cloud.'
+    - content: 'A partner using Azure Government to deliver a solution that provides services or solutions to US government customers through direct or indirect contracts.'
+      isCorrect: false
+      incorrectExplanation: 'Incorrect. Azure Government is available to partners in this scenario.'
+    - content: 'A commercial entity with data subject to government regulations.'
+      isCorrect: false
+      incorrectExplanation: 'Incorrect. Commercial entities with data subject to government regulations is allowed.'
+  - content: Which one of the following addresses is the correct URL for accessing the Azure Government portal?
+    choices:
+    - content: portal.azure.com    
+      isCorrect: false
+      incorrectExplanation: This is the URL to access the global Azure portal. 
+    - content: portal.azure.gov
+      isCorrect: false
+      incorrectExplanation: This is not a valid URL.
+    - content: portal.azure.us
+      isCorrect: true
+      correctExplanation: The Azure Government portal can be accessed at https://portal.azure.us
+    - content: portal.azure.fed
+      isCorrect: false
+      incorrectExplanation: This is not a valid URL.
