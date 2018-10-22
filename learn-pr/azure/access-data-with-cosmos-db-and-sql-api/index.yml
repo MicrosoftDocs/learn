@@ -17,7 +17,7 @@ abstract: |
   - Perform Azure Cosmos DB queries
   - Create and run operations on your documents by using stored procedures
 prerequisites: |
-  - Have an understanding of databases and queries
+  - Have an understanding of databases and queries 
 iconUrl: /learn/achievements/access-data-with-cosmos-db-and-sql-api.svg
 levels:
 - beginner
