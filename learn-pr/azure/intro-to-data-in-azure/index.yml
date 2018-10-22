@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-to-data-in-azure
 metadata:
-  title: Introduction to Azure Storage
+  title: Introduction to Azure storage - Learn
   description: In this module, we'll explore the benefits of Azure Storage services versus on-premises storage.
   ms.date: 09/24/2018
   author: sowmyasubramaniam 
