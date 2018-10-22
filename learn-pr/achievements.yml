@@ -461,3 +461,8 @@ achievements:
   title: Introduction to Site Reliability Engineering
   summary: Introduction to Site Reliability Engineering
   iconUrl: /learn/achievements/intro-to-site-reliability-engineering-sre.svg
+- uid: learn.intro-to-azure-government.badge
+  type: badge
+  title: Introduction to Azure
+  summary: Introduction to Azure Government
+  iconUrl: /learn/achievements/intro-to-azure-government.svg
