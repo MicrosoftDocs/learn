@@ -3,7 +3,12 @@ uid: learn.distribute-data-globally-with-cosmos-db.5-data-consistency-levels
 metadata:
   title: Choose a consistency level
   description: Learn how consistency levels in Azure Cosmos DB can be used to maximize high-availability and minimize latency, and determine the correct consistency level for your application.
-  displayType: one-column
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Choose a consistency level
 durationInMinutes: 10
 content: |

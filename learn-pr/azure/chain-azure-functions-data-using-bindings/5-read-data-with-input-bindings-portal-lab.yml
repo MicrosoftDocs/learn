@@ -8,6 +8,7 @@ metadata:
   ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Exercise - Read data with input bindings
 durationInMinutes: 20
 # interactive: azure-portal

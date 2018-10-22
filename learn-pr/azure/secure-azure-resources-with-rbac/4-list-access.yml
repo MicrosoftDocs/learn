@@ -9,6 +9,7 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: List access using RBAC and the Azure portal
 labId:  46468
 labModal: true

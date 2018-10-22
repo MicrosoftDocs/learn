@@ -3,7 +3,12 @@ uid: learn.distribute-data-globally-with-cosmos-db.4-change-priorities
 metadata:
   title: Change global read and write priorities
   description: Learn how change the read and write prioritites for your global regions.
-  displayType: one-column
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Change global read and write priorities
 # TODO:Add Azure Portal Interactivity
 # interactive: azure-portal

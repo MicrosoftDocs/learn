@@ -9,6 +9,7 @@ metadata:
   ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Sentiment analysis and the Text Analytics API
 # TODO add azure portal
 #interactive: azure-portal
