@@ -1,1 +1,1 @@
-<!--The knowledge check needs to be the last unit since this will be included in a VM-->
+To help you remember what you've learned, please work through the following questions.
