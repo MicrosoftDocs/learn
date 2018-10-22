@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.create-serverless-applications
 metadata:
-  title: Create serverless applications
+  title: Create serverless applications learning path
   description: Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures.
   brand: azure
   ms.date: 09/24/2018
