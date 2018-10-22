@@ -1,4 +1,4 @@
-Your law firm is expanding it's case load and you have been tasked with creating a new Linux web server to store critical documents from a variety of sources - clients, other law firms, and law enforcement offices. The web server enables users to upload documents and store them on disk.
+Your law firm is expanding its case load and you have been tasked with creating a new Linux web server to store critical documents from a variety of sources - clients, other law firms, and law enforcement offices. The web server enables users to upload documents and store them on disk.
 
 > [!TIP]
 > This exercise uses Linux as the example, but the basic process of creating VMs and adding disks is the same for Windows. The primary difference would be in partitioning and formatting the disk. On Windows, you can connect to your VM over Remote Desktop and use the built-in Disk Management tools or deploy a PowerShell script that's similar to the Bash script you'll use here.
