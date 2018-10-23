@@ -8,6 +8,7 @@ metadata:
   ms.author: mimig
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Query using the Azure Cosmos DB .NET Core SDK
 durationInMinutes: 5
 content: |

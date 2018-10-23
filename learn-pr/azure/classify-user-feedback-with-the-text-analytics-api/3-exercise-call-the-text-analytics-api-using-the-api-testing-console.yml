@@ -9,6 +9,7 @@ metadata:
   ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Exercise - Call the Text Analytics API from the online testing console
 #interactive: azure-portal
 azureSandbox: true

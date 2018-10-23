@@ -10,6 +10,7 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 #TODO: This unit is intentionally not sandbox activated! May include interactive: azure-portal at a later time depending on its functionality.
 durationInMinutes: 10
 content: |

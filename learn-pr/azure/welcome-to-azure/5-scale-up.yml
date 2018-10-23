@@ -9,6 +9,7 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
   zone_pivot_groups: platform-cloud
 interactive: bash
 azureSandbox: true

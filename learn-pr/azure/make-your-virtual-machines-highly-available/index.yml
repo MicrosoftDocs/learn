@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.make-your-virtual-machines-highly-available
 metadata:
-  title: Make your VMs highly available with Azure Load Balancer
+  title: Make your VMs highly available with Azure Load Balancer - Learn
   description: Use Azure Load Balancer as a public load balancer to distribute public inbound traffic across multiple Azure virtual machines. Understand the purpose of a load balancer. Work with Azure Load Balancer in the portal, identify a VM scale set to route traffic to, and monitor your traffic.
   ms.date: 09/24/2018
   author: marktap

@@ -9,6 +9,7 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Use data volumes
 interactive: bash
 azureSandbox: true

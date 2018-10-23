@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.deploy-a-website-with-azure-virtual-machines
 metadata:
-  title: Deploy a website with Azure Virtual Machines
+  title: Deploy a website with Azure virtual machines learning path
   description: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. Instead, you can focus on your website features and rely on the robust Azure platform to provide secure access to your site.
   brand: azure
   ms.date: 09/24/2018
@@ -10,7 +10,7 @@ metadata:
   #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy a website with Azure Virtual Machines
+title: Deploy a website with Azure virtual machines
 summary: If your web hosting requirements aren't directly supported by the Azure Web app platform, you can leverage virtual machines to customize and control every aspect of the web server. Learn how to create, configure, and manage virtual machines on Linux and Windows that host web apps.
 prerequisites: None
 iconUrl: /learn/achievements/deploy-a-website-with-azure-virtual-machines.svg
