@@ -9,6 +9,7 @@ metadata:
   ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Exercise - Create a function app from the portal to host our business logic
 # interactive: azure-portal
 azureSandbox: true

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.classify-images-with-custom-vision-services
 metadata:
-  title: Classify images with the Microsoft Custom Vision Service
+  title: Classify images with the Microsoft Custom Vision Service - Learn
   description:  Create, train and test a custom image classification model using the Custom Vision Service to accurately identify paintings from famous artists.
   ms.date: 09/24/2018
   author: lnyswonger

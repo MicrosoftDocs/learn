@@ -8,6 +8,7 @@ metadata:
   ms.author: mimig
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Create a database and collection in Azure Cosmos DB
 # TODO:Add Azure Portal Interactivity
 # interactive: azure-portal

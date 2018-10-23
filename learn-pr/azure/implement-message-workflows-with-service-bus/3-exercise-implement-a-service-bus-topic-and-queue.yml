@@ -10,6 +10,7 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 #TODO: Portal interactivity
 #interactive: azure-portal
 azureSandbox: true

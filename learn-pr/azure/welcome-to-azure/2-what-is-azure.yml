@@ -9,6 +9,7 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-azure.md)]
