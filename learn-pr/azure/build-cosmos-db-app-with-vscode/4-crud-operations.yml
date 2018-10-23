@@ -8,6 +8,7 @@ metadata:
   ms.author: mimig
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Create, read, update, and delete NoSQL data programmatically
 durationInMinutes: 10
 content: |

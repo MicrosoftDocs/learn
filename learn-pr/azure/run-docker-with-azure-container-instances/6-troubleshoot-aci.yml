@@ -9,6 +9,7 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Troubleshoot Azure Container Instances
 interactive: bash
 azureSandbox: true

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.cosmos-db-app-with-vscode
 metadata:
-  title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
+  title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code - Learn
   description: Learn how to create a .NET Core application to store and query data in Azure Cosmos DB by using Visual Studio Code.
   ms.date: 09/24/2018
   author: mimig1

@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.architect-great-solutions-in-azure
 metadata:
-  title: Architect great solutions in Azure
+  title: Architect great solutions in Azure learning path
   description: Learn how to design and build secure, scalable, performant solutions in Azure by examining the core principles found in every good architecture.
   brand: azure
   ms.date: 09/24/2018

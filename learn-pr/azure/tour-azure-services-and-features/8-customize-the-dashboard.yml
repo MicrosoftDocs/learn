@@ -11,5 +11,6 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 content: |
   [!include[](includes/8-customize-the-dashboard.md)]

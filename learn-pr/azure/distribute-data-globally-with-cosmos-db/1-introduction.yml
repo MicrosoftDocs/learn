@@ -3,7 +3,12 @@ uid: learn.distribute-data-globally-with-cosmos-db.1-introduction
 metadata:
   title: Introduction
   description: Learn how to distribute data globally with Azure Cosmos DB.
-  displayType: one-column
+  ms.date: 09/24/2018
+  author: mimig1
+  ms.author: mimig
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Introduction
 durationInMinutes: 2
 content: |

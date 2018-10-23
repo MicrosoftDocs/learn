@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.introduction-to-security
 metadata:
-  title: Introduction to security in Azure
+  title: Introduction to security in Azure - Learn
   description: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
   ms.date: 09/24/2018
   author: jasallen

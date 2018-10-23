@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.create-neural-network-with-dsvm
 metadata:
-  title: Create neural networks with TensorFlow on the Azure Data Science Virtual Machine
+  title: Create neural networks with TensorFlow on the Azure Data Science Virtual Machine - Learn
   description: Learn how to use TensorFlow to train a deep neural network on the Azure Data Science Virtual Machine.
   ms.date: 09/24/2018
   #TODO: Update with real author name.
