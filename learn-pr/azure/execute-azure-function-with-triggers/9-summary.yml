@@ -21,7 +21,7 @@ quiz:
     - content: "'/'"
       isCorrect: false
       incorrectExplanation: "A slash specifies an increment. For example, a */5 in the {seconds} field means every five seconds."
-    - content: "'\*'"
+    - content: "*"
       isCorrect: true
       correctExplanation: "An asterisk specifies that every possible value should be selected. Having an asterisk in the {day of the week} field means that every day should be selected."
     - content: "','"
