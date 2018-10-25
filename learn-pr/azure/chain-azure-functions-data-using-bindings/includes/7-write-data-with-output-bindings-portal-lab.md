@@ -140,7 +140,7 @@ Let's break down what this code does:
 * Because this function changes our data, we expect the HTTP request to be a POST and the bookmark data to be part of the request body.
 * Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object will be set. The `if(bookmark)` condition checks to see whether an entry was found.
 * Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we have created as a JSON string.
-* Posting a message to our queue is as simple as setting the  `context.bindings.newmessage parameter`.
+* Posting a message to our queue is as simple as setting the  `context.bindings.newmessage` parameter.
 
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following callout says, the queue is automatically created for you if it doesn't exist.
@@ -153,7 +153,7 @@ So, that's it. Let's see our work in action in the next section.
 
 Now that we have multiple output bindings, testing becomes a little trickier. In previous labs we were content to test by sending an HTTP request and a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. With our function, [!INCLUDE [func-name-add](./func-name-add.md)], selected in the Function Apps portal, select the Test menu item at the far left to expand it.
+1. With our function, [!INCLUDE [func-name-add](./func-name-add.md)], selected in the Function Apps portal, select the Test menu item at the far right to expand it.
 
 2. Select the **Test** menu item, and verify that you have the test pane open. The following screenshot shows what it should look like:
 
