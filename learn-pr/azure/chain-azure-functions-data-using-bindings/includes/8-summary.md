@@ -8,7 +8,7 @@ You can apply the approaches you have learned here to add and test bindings in y
 
 * Create another function to write to more destinations by using other supported output binding types.
 
-* In the preceding unit, we introduced a queue and posted messages to it with an output binding. As a next step, consider adding another function that reads the messages in the queue and prints out the **MESSAGE TEXT** to the console with `Console.Log()`.
+* In the preceding unit, we introduced a queue and posted messages to it with an output binding. As a next step, consider adding another function that reads the messages in the queue and prints out the **MESSAGE TEXT** to the console with `console.log()`.
 
 As we saw in this module, the Azure portal offers easy-to-use features to start building functions and connecting them to data and other services.
 
