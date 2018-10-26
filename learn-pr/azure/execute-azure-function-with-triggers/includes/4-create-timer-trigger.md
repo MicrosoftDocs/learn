@@ -64,10 +64,10 @@ We have an Azure function app with logic to print a message to the log window. W
 
 Now that we've configured the timer, it will invoke the function on the interval we defined.
 
-1. Select **TimerTriggerCSharp1**.
+1. Select **TimerTrigger1**.
 
     > [!NOTE]
-    > **TimerTriggerCSharp1** is a default name. It's automatically selected when you create the trigger.
+    > **TimerTrigger1** is a default name. It's automatically selected when you create the trigger.
 
 1. Open the **Logs** panel at the bottom of the screen.
 
