@@ -75,7 +75,7 @@ You can now reference these secrets by name when you or your applications and se
 
 Now that the service principal credentials are stored in Azure Key Vault, your applications and services can use them to access your private registry.
 
-Execute the following `az container create` command to deploy a container instance. The command uses the service principal's credentials stored in Azure Key Vault to authenticate to your container registry.
+Execute the following `az container create` command to deploy a container instance. The command uses the username and password stored in Azure Key Vault to authenticate to your container registry.
 
 ```azurecli
 az container create \
