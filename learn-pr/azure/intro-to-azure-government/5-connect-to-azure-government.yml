@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-government.5-connect-to-azure-government
-title: Connecting to Azure Government
+title: Connect to Azure Government
 metadata:
-  title: Connecting to Azure Government
-  description: TBD
+  title: Connect to Azure Government
+  description: Learn about the ways in which you can connect to Azure Government
   ms.date: 10/11/2018
   author: AndrewJByrne
   ms.author: anbyrne

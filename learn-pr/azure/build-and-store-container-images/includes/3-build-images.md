@@ -6,7 +6,7 @@ Let's automate the creation of a container image using Azure Container Registry 
 
 ## Create a container image with Azure Container Registry Tasks
 
-A standard Dockerfile to provides build instructions. Azure Container Registry Tasks allows you to reuse any Dockerfile currently in your environment, including multi-staged builds.
+A standard Dockerfile provides build instructions. Azure Container Registry Tasks allows you to reuse any Dockerfile currently in your environment, including multi-staged builds.
 
 We'll use a new Dockerfile for our example.
 
