@@ -65,7 +65,7 @@ You'll now see the PostgreSQL server create blade, similar to the following illu
     - Choose 1 vCore from the **vCore** slider. Notice how the changes in the slider affect the **Price Summary**.
     - Choose 10 GB from the **Storage** slider. If you're having trouble sliding to exactly 10 GB, you can use the left and right cursor keys on your keyboard to get a precise value.
     - Choose 25 Days from the **Backup Retention Period** slider.
-    - Leave the Backup Redudancy Options set to **Locally Redundant**.
+    - Leave the Backup Redundancy Options set to **Locally Redundant**.
 
     ![Screenshot of the Azure portal showing the database pricing tier for a new PostgreSQL database](../media/4-azure-db-pricing-tier.png)
 
