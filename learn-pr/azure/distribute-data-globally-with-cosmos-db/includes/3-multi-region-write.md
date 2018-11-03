@@ -30,4 +30,4 @@ There are three conflict resolution modes offered by Azure Cosmos DB.
 
 ## Summary
 
-In this unit, learned about multi-master accounts, which enable you to write data to multiple regions for improved availability and performance.
+In this unit, you learned about multi-master accounts, which enable you to write data to multiple regions for improved availability and performance.
