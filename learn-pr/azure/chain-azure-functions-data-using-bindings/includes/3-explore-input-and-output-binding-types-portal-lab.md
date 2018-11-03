@@ -101,7 +101,7 @@ All of this code is in the **index.js** file in this function's folder. Let's lo
 As you can see, this function has a trigger binding named **req** of type `httpTrigger` and an output binding named **res**  of type `HTTP`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **req** parameter. Similarly, we sent an HTTP response simply by setting our **res** parameter. Bindings really do take care of some of the heavy lifting for us.
 
 >[!TIP]
->You can see the **index.js** and **function.json** files by expanding the **View Files** menu at the right of the function panel in the Azure portal.
+>You can see the **index.js** and **function.json** files by expanding the **View Files** menu that you'll see on the right hand side of the screen when you have your function selected. You might have to scroll to the right to see this menu.
 
 ### Explore binding types
 
