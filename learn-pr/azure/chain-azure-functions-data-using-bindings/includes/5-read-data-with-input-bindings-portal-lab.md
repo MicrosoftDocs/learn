@@ -35,7 +35,9 @@ A database account is a container for managing one or more databases. Before we 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 
-1. Select **Review + create** to provision and deploy the database account.
+1. Select **Review + create** to review and validate the configuration. 
+
+1. On the next screen, select **Create** to provision and deploy the database account.
 
 1. Deployment can take some time. So, wait for a **Deployment succeeded** message in the Notification Hub before proceeding.
 
