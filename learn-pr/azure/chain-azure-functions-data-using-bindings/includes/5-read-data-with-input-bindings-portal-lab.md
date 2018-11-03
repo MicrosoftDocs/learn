@@ -66,7 +66,7 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     |Throughput|1000 RU|Change the throughput to 1000 request units per second (RU/s). Storage capacity must be set to **Fixed (10 GB)** to set throughput to 400 RU/s. If you want to reduce latency, you can scale up the performance later.|
 
     > [!NOTE]
-    > Because we selected a *fixed* storage capacity of 10 GB for this exercise, you do not have to define a partition key. In fact, notice that the **Partition key**  disappears from the UI when you select **Fixed (10 GB)** as the storage capacity.  
+    > Because we selected a *fixed* storage capacity of 10 GB for this exercise, we don't have to define a partition key. In fact, notice that the **Partition key**  disappears from the UI when you select **Fixed (10 GB)** as the storage capacity.  
 
 3. Click **OK**. The Data Explorer displays the new database and collection. So, now we have a database. Inside the database, we've defined a collection. Next, we'll add some data, also known as documents.
 
