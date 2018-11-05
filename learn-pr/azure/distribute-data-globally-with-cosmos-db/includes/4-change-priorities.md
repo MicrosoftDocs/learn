@@ -1,6 +1,6 @@
 Once you've replicated your data in multiple regions, you can take advantage of the automated failover solutions Azure Cosmos DB provides. Automated failover is a feature that comes into play when there's a disaster or other event that takes one of your read or write regions offline, and it redirects requests from the offline region to the next most prioritized region. 
 
-For your online clothing site, which you just replicated into East US, West US, and West UK, you can prioritize that if the East US goes offline, you can redirect reads to West US instead of West UK, to limit latency. 
+For your online clothing site, which you just replicated into West US 2, East US, and Japan East, you can prioritize that if the East US goes offline, you can redirect reads to West US 2 instead of Japan East, to limit latency.
 
 In this unit you'll learn about how failover works and set the priority for the regions in which your company's data has been replicated.
 
