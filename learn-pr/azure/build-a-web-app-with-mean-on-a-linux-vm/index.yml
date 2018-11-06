@@ -15,14 +15,11 @@ abstract: |
   In this module, you will:
   - Decide if the MEAN web stack is right for you
   - Create an Ubuntu Linux VM to host your web app
-  - Add MongoDB as a data store for your web app
-  - Add Node.js as a host runtime for your web app
-  - Add Express as a Node.js web framework
-  - Add mongooseJS for object modeling of your MongoDB data
-  - Create a simple web app to verify the MEAN stack is working
-  - Make the web application publicly available from your VM
+  - Install the MEAN stack components on your VM
+  - Create a basic web app on your MEAN stack
 prerequisites: |
-  - Experience with the Bash command-line interface
+  - Experience using Bash from the command-line
+  - Familiarity or interest in using JavaScript to build web applications
 iconUrl: /learn/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
 levels:
 - beginner
@@ -33,16 +30,11 @@ products:
 - azure-virtual-machines
 - azure-cloud-shell
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.1-introduction
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.2-decide-if-mean-is-right-for-you
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.3-exercise-create-an-ubuntu-linux-vm-to-host-your-web-app
+- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.3-create-a-vm
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.4-install-mongodb
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.5-exercise-install-mongodb
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.6-install-nodejs
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.7-exercise-install-nodejs
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.8-install-express
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.9-install-angularjs
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.10-exercise-create-a-simple-app-to-validate-the-installation
-- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.11-summary
+- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.5-install-nodejs
+- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.6-create-a-basic-app
+- learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.7-summary
 achievement: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.badge
