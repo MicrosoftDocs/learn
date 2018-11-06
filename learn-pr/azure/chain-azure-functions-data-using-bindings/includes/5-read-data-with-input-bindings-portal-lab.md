@@ -35,7 +35,9 @@ A database account is a container for managing one or more databases. Before we 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 
-1. Select **Review + create** to provision and deploy the database account.
+1. Select **Review + create** to review and validate the configuration. 
+
+1. On the next screen, select **Create** to provision and deploy the database account.
 
 1. Deployment can take some time. So, wait for a **Deployment succeeded** message in the Notification Hub before proceeding.
 
@@ -62,6 +64,9 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     |Collection ID|[!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]|Enter [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] as the name for our new collection. Collection IDs have the same character requirements as database names.|
     |Storage capacity| Fixed (10 GB)|Use the default value of **Fixed (10 GB)**. This value is the storage capacity of the database.|
     |Throughput|1000 RU|Change the throughput to 1000 request units per second (RU/s). Storage capacity must be set to **Fixed (10 GB)** to set throughput to 400 RU/s. If you want to reduce latency, you can scale up the performance later.|
+
+    > [!NOTE]
+    > Because we selected a *fixed* storage capacity of 10 GB for this exercise, we don't have to define a partition key. In fact, notice that the **Partition key**  disappears from the UI when you select **Fixed (10 GB)** as the storage capacity.  
 
 3. Click **OK**. The Data Explorer displays the new database and collection. So, now we have a database. Inside the database, we've defined a collection. Next, we'll add some data, also known as documents.
 
