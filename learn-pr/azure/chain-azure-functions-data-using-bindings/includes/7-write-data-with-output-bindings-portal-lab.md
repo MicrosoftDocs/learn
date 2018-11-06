@@ -65,7 +65,7 @@ You want to look up a bookmark with a specific ID, so let's tie the ID we receiv
 
 9. Select **Save** to save all changes to this binding configuration.
 
-We now have an Azure Cosmos DB input binding. it's time to add an output binding so we can write new entries to our collection.  
+We now have an Azure Cosmos DB input binding. It's time to add an output binding so we can write new entries to our collection.  
 
 ## Add an Azure Cosmos DB output binding
 
