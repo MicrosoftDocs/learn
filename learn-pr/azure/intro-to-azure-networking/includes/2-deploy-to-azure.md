@@ -8,7 +8,7 @@ Larger enterprise systems are often composed of multiple inter-connected applica
 
 There are several strategies and patterns employed by software architects and designers to make these complex systems easier to design, build, manage, and maintain. Let's look at a few of them, starting with _loosely coupled architectures_.
 
-#### Benefits of Loosely Coupled Architectures
+### Benefits of Loosely Coupled Architectures
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yHrc]
 
@@ -60,13 +60,13 @@ A _region_ is an Azure data center within a specific geographic location. East U
 	:::column span="3":::
 **What's a virtual network?**
 
-A _virtual network_ is a logically isolated network on Azure. Azure virtual networks will be familiar to you if you've set up networks on Hyper-V, VMware, or even on other public clouds.
+A _virtual network_ is a logically isolated network on Azure. Azure virtual networks will be familiar to you if you've set up networks on Hyper-V, VMware, or even on other public clouds. Virtual networks are segmented into one or more _subnets_. Subnets can help you organize and secure your resources.
 
-The web, application, and data tiers each have a single VM. Each VM belongs to a virtual network.
+The web, application, and data tiers each have a single VM. All three VMs are in same virtual network, but are in separate subnets.
 
-Users interact with the web tier directly, so that VM has a public IP address. Users don't interact with the application or data tiers. So these VMs each have a private IP address.
+Users interact with the web tier directly, so that VM has a public IP address along with a private IP address. Users don't interact with the application or data tiers, so these VMs each have a private IP address only.
 
-Azure data centers manage the physical hardware for you. You configure virtual networks through software, which enables you to treat a virtual network just like your own network. For example, you can divide a virtual network into subnets to better control how the network assigns IP addresses. You also choose which other networks your virtual network can reach, whether that's the public internet or other networks in the private IP address space.
+Azure data centers manage the physical hardware for you. You configure virtual networks through software, which enables you to treat a virtual network just like your own network. For example, you can choose which other networks your virtual network can reach, whether that's the public internet or other networks in the private IP address space.
 
   :::column-end:::
 :::row-end:::
