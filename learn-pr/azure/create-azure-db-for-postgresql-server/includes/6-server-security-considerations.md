@@ -126,16 +126,11 @@ Using `psql` requires a successful connection to a PostgreSQL server. There are 
 Here is the complete command:
 
 ```bash
-psql --host=<server-name>.postgres.database.azure.com
-      --username=<admin-user>@<server-name>
-      --dbname=<database>
+psql --host=<server-name>.postgres.database.azure.com \
+  --username=<admin-user>@<server-name> \
+  --dbname=<database>
 ```
 
 After you're connected, you'll be presented with a command prompt and can execute commands to your server and databases.
-
-Optionally, you can add some data and retrieve it with the following commands.
-
-```bash
-```
 
 You've now seen the steps that you take to configure Azure Database for PostgreSQL security settings. In the next unit, you'll configure Azure Database for PostgreSQL security settings. You'll also connect to the server using Cloud Shell.
