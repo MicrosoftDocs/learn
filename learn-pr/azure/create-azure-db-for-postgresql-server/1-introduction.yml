@@ -5,7 +5,6 @@ metadata:
   title: Introduction to Azure Database for PostgreSQL
   description: Introduction to Azure Database for PostgreSQL
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial

@@ -5,7 +5,6 @@ metadata:
   title: Create an Azure Database for PostgreSQL server using the Azure CLI
   description: Creating a single Azure Database for PostgreSQL server using the Azure portal is easy. Creating multiple databases and running ongoing maintenance using only the portal may become tedious. You'll use the Azure CLI when you want to automate management tasks.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
@@ -13,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-creating-postgresql-db-server-via-azure-cli.md)]
+  [!include[](includes/4-creating-postgresql-db-server-via-azure-cli.md)]
