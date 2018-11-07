@@ -59,13 +59,13 @@ In practice, you would typically write and test your web application in a more l
 
 Here you'll create all the code, script, and HTML files that make up your web application. For brevity, we'll highlight the important parts of each file but won't go into complete details.
 
-1. If you're still connected to your VM over SSH, run `exit` to leave the SSH session and return to Cloud Shell.
+If you're still connected to your VM over SSH, run `exit` to leave the SSH session and return to Cloud Shell.
 
-    ```bash
-    exit
-    ```
+```bash
+exit
+```
 
-    You're now back at your Cloud Shell session.
+You're now back at your Cloud Shell session.
 
 ### Create the files
 
