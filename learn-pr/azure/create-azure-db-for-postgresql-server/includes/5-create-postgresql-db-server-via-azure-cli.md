@@ -22,8 +22,9 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
     - Use a location from the following list:  
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-    ```bash
-    az postgres server create --name <unique_server_name> \
+    ```azurecli
+    az postgres server create \
+        --name <unique_server_name> \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --location eastus \
         --sku-name B_Gen5_1 \
