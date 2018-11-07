@@ -28,7 +28,7 @@ A firewall is a service that grants server access based on the originating IP ad
 
 The Azure Database for PostgreSQL server firewall prevents all access to your database server until you specify which computers have permission. The firewall configuration allows you to specify a range of IP addresses that are allowed to connect to the server. The server always uses the default PostgreSQL connection information.
 
-![An illustration showing Azure Database for PostgreSQL server firewall scanning the IP address of all incoming requests. Only requests coming from a range of pre-defined valid IP addresses are forwarded to the database](../media/7-firewall-diagram.png)
+![An illustration showing Azure Database for PostgreSQL server firewall scanning the IP address of all incoming requests. Only requests coming from a range of pre-defined valid IP addresses are forwarded to the database](../media/6-firewall-diagram.png)
 
 ### Azure Database for PostgreSQL server SSL connections
 
@@ -42,7 +42,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 Then, you'll select the **Connection Security** option to open the connection security blade to the right.
 
-![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/7-db-security-settings.png)
+![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/6-db-security-settings.png)
 
 On this screen, you have several options. You can:
 
@@ -132,5 +132,10 @@ psql --host=<server-name>.postgres.database.azure.com
 ```
 
 After you're connected, you'll be presented with a command prompt and can execute commands to your server and databases.
+
+Optionally, you can add some data and retrieve it with the following commands.
+
+```bash
+```
 
 You've now seen the steps that you take to configure Azure Database for PostgreSQL security settings. In the next unit, you'll configure Azure Database for PostgreSQL security settings. You'll also connect to the server using Cloud Shell.

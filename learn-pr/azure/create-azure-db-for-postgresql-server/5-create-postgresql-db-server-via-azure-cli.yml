@@ -5,14 +5,12 @@ metadata:
   title: Exercise - Create an Azure Database for PostgreSQL server via the Azure CLI
   description: In this lab, you will use the Azure CLI to create an Azure Database for PostgreSQL server. 
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
+  author: markamos
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-create-postgresql-db-server-via-azure-cli.md)]
+  [!include[](includes/5-create-postgresql-db-server-via-azure-cli.md)]

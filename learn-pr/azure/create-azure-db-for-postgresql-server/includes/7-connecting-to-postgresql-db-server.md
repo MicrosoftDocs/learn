@@ -43,7 +43,7 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 
 ### Connect to the database with psql
 
-1. In the Azure Cloud Shell on the right, connect PSQL to your server using the following command. Make sure to replace the server name and admin name.
+1. In the Azure Cloud Shell on the right, connect `psql` to your server using the following command. Make sure to replace the server name and admin name.
 
     ```bash
     psql --host=<server-name>.postgres.database.azure.com --username=<admin-user>@<server-name> --dbname=postgres
@@ -57,8 +57,34 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 
 1. Hit <kbd>q</kbd> to exit the list.
 
-1. You can try other PSQL commands.
+1. Create a new database with the following SQL command:
+   
+    ```bash
+    CREATE DATABASE "Adventureworks";
+    ```
+
+1. Connect to the new database using the psql command <kbd>\c Adventureworks</kbd>
+
+1. Add some data to the database with the following SQL commands that add data to two tables:
+
+    ```bash
+    CREATE TABLE PEOPLE(NAME TEXT NOT NULL, AGE INT NOT NULL);
+    INSERT INTO PEOPLE(NAME, AGE) VALUES ('Bob', 35);
+    INSERT INTO PEOPLE(NAME, AGE) VALUES ('Sarah', 28);
+    CREATE TABLE LOCATIONS(CITY TEXT NOT NULL, STATE TEXT NOT NULL);
+    INSERT INTO LOCATIONS(CITY, STATE) VALUES ('New York', 'NY');
+    INSERT INTO LOCATIONS(CITY, STATE) VALUES ('Flint', 'MI');
+    ```
+
+1. Retrieve the data you added using the following SQL commands:
+
+    ```bash
+    SELECT * FROM PEOPLE;
+    SELECT * FROM LOCATIONS;
+    ```
+
+1. You can try other psql commands.
     - <kbd>-?</kbd> to get help.
     - <kbd>\dt</kbd> to list the tables.
 
-1. When you're finished executing PSQL operations on your server, execute the command <kbd>\q</kbd> to quit PSQL.
+1. When you're finished executing psql operations on your server, execute the command <kbd>\q</kbd> to quit psql.

@@ -5,12 +5,10 @@ metadata:
   title: Server security considerations
   description: You have a number of options to restrict access to your Azure Database for PostgreSQL server and databases. See how to configure the Azure Database for PostgreSQL connection security settings.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
+  author: markamos
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-server-security-considerations.md)]
+  [!include[](includes/6-server-security-considerations.md)]

@@ -5,12 +5,10 @@ metadata:
   title: The Azure Database for PostgreSQL offering
   description: Determine if Azure Database for PostgreSQL is the right storage option for you.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
+  author: markamos
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
   [!include[](includes/2-postgresql-decision.md)]
