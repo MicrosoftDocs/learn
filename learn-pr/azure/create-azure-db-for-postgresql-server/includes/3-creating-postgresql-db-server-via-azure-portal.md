@@ -21,7 +21,7 @@ Just like the open-source version of PostgreSQL, the server is available in seve
 
 ## Pricing tiers
 
-Azure Database for PostgreSQL provides you with the option to choose pricing tiers based on parameters like compute power and storage. For more details, see [Azure Database for PostgreSQL pricing tiers](https://docs.microsoft.com/azure/postgresql/concepts-pricing-tiers).
+Azure Database for PostgreSQL provides you with the option to choose pricing tiers based on parameters like compute power and storage. For more details, see [Azure Database for PostgreSQL pricing tiers](https://docs.microsoft.com/azure/postgresql/concepts-pricing-tiers?azure-portal=true).
 
 ## Steps to create an Azure Database for PostgreSQL server
 
