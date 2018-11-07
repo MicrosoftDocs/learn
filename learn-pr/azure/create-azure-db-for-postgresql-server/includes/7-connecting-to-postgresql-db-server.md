@@ -1,7 +1,3 @@
-Let's assume that you're using an on-premises PostgreSQL database. You're managing all security aspects and you've locked down all access to your servers using the standard PostgreSQL server-level firewall rules. You now have a good understanding of how to configure the same server-level firewall rules in Azure.
-
-Let's connect to one of the Azure Database for PostgreSQL servers that you created.
-
 ## Allow Azure service access
 
 Before we begin, you'll have to allow access to Azure services if you want to use PowerShell and `psql` to connect to your server. Recall that you can allow access in two ways.
@@ -20,7 +16,7 @@ You also need to disable the **Enforce SSL connection** option.
 
 1. Select the **Connection Security** option to open the connection security blade to the right.
 
-    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/7-db-security-settings.png)
+    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/6-db-security-settings.png)
 
 Recall that you want to allow access to PowerShell clients running `psql`.
 

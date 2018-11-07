@@ -25,15 +25,13 @@ Azure Database for PostgreSQL provides you with the option to choose pricing tie
 
 ## Steps to create an Azure Database for PostgreSQL server
 
-You'll typically create an Azure Database for PostgreSQL server using the Azure portal. Let's look at the steps you'll take.
+You'll typically create an Azure Database for PostgreSQL server using the Azure portal. Let's look at the steps you'd take. This is not an exercise, but serves to familiarize you with the steps if you choose to use the Azure portal.
 
 First, you'll sign in to the Azure portal, and then you'll click **Create a resource**.
 
 You'll select **Databases** and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 
 The portal will display a PostgreSQL server configuration screen, also called a blade, and you make your selection.
-
-![Screenshot of the Azure portal showing the creation blade for a new PostgreSQL database](../media/4-create-blade.png)
 
 You'll need to give a value to all the items in the blade, so let's have a look at each.
 
