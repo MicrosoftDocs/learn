@@ -49,21 +49,21 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 
 1. **postgres** is the default management database every PostgreSQL server is created with. You'll be prompted for the password you provided when you created the server.
 
-1. Once successfully connected, execute the <kbd>\l</kbd> command to list all databases. This command will result in two or more default databases returned.
+1. Once successfully connected, execute the `\l` command to list all databases. This command will result in two or more default databases returned.
 
-1. Hit <kbd>q</kbd> to exit the list.
+1. Press `q` to exit the list.
 
 1. Create a new database with the following SQL command:
-   
-    ```bash
+
+    ```sql
     CREATE DATABASE "Adventureworks";
     ```
 
-1. Connect to the new database using the psql command <kbd>\c Adventureworks</kbd>
+1. Run the psql command `\c Adventureworks` to connect to the database.
 
 1. Add some data to the database with the following SQL commands that add data to two tables:
 
-    ```bash
+    ```sql
     CREATE TABLE PEOPLE(NAME TEXT NOT NULL, AGE INT NOT NULL);
     INSERT INTO PEOPLE(NAME, AGE) VALUES ('Bob', 35);
     INSERT INTO PEOPLE(NAME, AGE) VALUES ('Sarah', 28);
@@ -74,13 +74,13 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 
 1. Retrieve the data you added using the following SQL commands:
 
-    ```bash
+    ```sql
     SELECT * FROM PEOPLE;
     SELECT * FROM LOCATIONS;
     ```
 
 1. You can try other psql commands.
-    - <kbd>-?</kbd> to get help.
-    - <kbd>\dt</kbd> to list the tables.
+    - `-?` to get help.
+    - `\dt` to list the tables.
 
-1. When you're finished executing psql operations on your server, execute the command <kbd>\q</kbd> to quit psql.
+1. When you're finished executing psql operations on your server, execute the command `\q` to quit psql.
