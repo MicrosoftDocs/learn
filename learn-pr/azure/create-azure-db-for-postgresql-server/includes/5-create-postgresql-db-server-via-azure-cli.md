@@ -1,6 +1,6 @@
 You decide to create an Azure Database for PostgreSQL server to store routes captured from runners' fitness devices. Based on historic captured data volumes, you know your server storage requirements should be set at 20 GB. To support your processing requirements, you need compute Gen 5 support with 1 vCore. You also know that you require a retention period of 15 days for data backups.
 
-## Create an Azure PostgreSQL database with the Azure CLI
+## Create an Azure PostgreSQL database server with the Azure CLI
 
 Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 support with 1 vCore and a retention period of 15 days for data backups.
 
@@ -22,8 +22,9 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
     - Use a location from the following list:  
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-    ```bash
-    az postgres server create --name <unique_server_name> \
+    ```azurecli
+    az postgres server create \
+        --name <unique_server_name> \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --location eastus \
         --sku-name B_Gen5_1 \
