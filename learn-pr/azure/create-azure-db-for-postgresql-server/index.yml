@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.create-azure-db-for-postgresql
 metadata:
-  title: Create an Azure Database for PostgreSQL server - Learn
+  title: Create an Azure Database for PostgreSQL server
   description: Azure Database for PostgreSQL provides fully managed, enterprise-ready community PostgreSQL database as a service. Learn how to create and deploy this service and connect it to your applications.
   ms.date: 09/24/2018
   author: cryophobia
@@ -31,7 +31,6 @@ units:
 - learn.create-azure-db-for-postgresql.introduction
 - learn.create-azure-db-for-postgresql.postgresql-decision
 - learn.create-azure-db-for-postgresql.creating-postgresql-db-server-via-azure-portal
-- learn.create-azure-db-for-postgresql.create-postgresql-db-server-via-azure-portal
 - learn.create-azure-db-for-postgresql.creating-postgresql-db-server-via-azure-cli
 - learn.create-azure-db-for-postgresql.create-postgresql-db-server-via-azure-cli
 - learn.create-azure-db-for-postgresql.server-security-considerations

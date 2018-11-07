@@ -1,7 +1,3 @@
-Let's assume that you're using an on-premises PostgreSQL database. You're managing all security aspects and you've locked down all access to your servers using the standard PostgreSQL server-level firewall rules. You now have a good understanding of how to configure the same server-level firewall rules in Azure.
-
-Let's connect to one of the Azure Database for PostgreSQL servers that you created.
-
 ## Allow Azure service access
 
 Before we begin, you'll have to allow access to Azure services if you want to use PowerShell and `psql` to connect to your server. Recall that you can allow access in two ways.
@@ -20,7 +16,7 @@ You also need to disable the **Enforce SSL connection** option.
 
 1. Select the **Connection Security** option to open the connection security blade to the right.
 
-    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/7-db-security-settings.png)
+    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/6-db-security-settings.png)
 
 Recall that you want to allow access to PowerShell clients running `psql`.
 
@@ -43,7 +39,7 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 
 ### Connect to the database with psql
 
-1. In the Azure Cloud Shell on the right, connect PSQL to your server using the following command. Make sure to replace the server name and admin name.
+1. In the Azure Cloud Shell on the right, connect `psql` to your server using the following command. Make sure to replace the server name and admin name.
 
     ```bash
     psql --host=<server-name>.postgres.database.azure.com --username=<admin-user>@<server-name> --dbname=postgres
@@ -53,12 +49,38 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 
 1. **postgres** is the default management database every PostgreSQL server is created with. You'll be prompted for the password you provided when you created the server.
 
-1. Once successfully connected, execute the <kbd>\l</kbd> command to list all databases. This command will result in two or more default databases returned.
+1. Once successfully connected, execute the `\l` command to list all databases. This command will result in two or more default databases returned.
 
-1. Hit <kbd>q</kbd> to exit the list.
+1. Press `q` to exit the list.
 
-1. You can try other PSQL commands.
-    - <kbd>-?</kbd> to get help.
-    - <kbd>\dt</kbd> to list the tables.
+1. Create a new database with the following SQL command:
 
-1. When you're finished executing PSQL operations on your server, execute the command <kbd>\q</kbd> to quit PSQL.
+    ```sql
+    CREATE DATABASE "Adventureworks";
+    ```
+
+1. Run the psql command `\c Adventureworks` to connect to the database.
+
+1. Add some data to the database with the following SQL commands that add data to two tables:
+
+    ```sql
+    CREATE TABLE PEOPLE(NAME TEXT NOT NULL, AGE INT NOT NULL);
+    INSERT INTO PEOPLE(NAME, AGE) VALUES ('Bob', 35);
+    INSERT INTO PEOPLE(NAME, AGE) VALUES ('Sarah', 28);
+    CREATE TABLE LOCATIONS(CITY TEXT NOT NULL, STATE TEXT NOT NULL);
+    INSERT INTO LOCATIONS(CITY, STATE) VALUES ('New York', 'NY');
+    INSERT INTO LOCATIONS(CITY, STATE) VALUES ('Flint', 'MI');
+    ```
+
+1. Retrieve the data you added using the following SQL commands:
+
+    ```sql
+    SELECT * FROM PEOPLE;
+    SELECT * FROM LOCATIONS;
+    ```
+
+1. You can try other psql commands.
+    - `-?` to get help.
+    - `\dt` to list the tables.
+
+1. When you're finished executing psql operations on your server, execute the command `\q` to quit psql.

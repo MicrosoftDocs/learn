@@ -21,49 +21,17 @@ Just like the open-source version of PostgreSQL, the server is available in seve
 
 ## Pricing tiers
 
-Azure Database for PostgreSQL provides you with the option to choose from three pricing tiers based on parameters like compute power and storage.
-
-### Basic tier
-
-The **Basic** tier is ideal for workloads that require light compute and I/O performance. In this tier, you have access to the following hardware:
-
-- Compute Gen 4 CPUs base on Intel E5-2673 v3 (Haswell) 2.4-GHz processors available as either a 1 or 2 vCore configuration
-- Compute Gen 5 CPUs base on Intel E5-2673 v4 (Broadwell) 2.3-GHz processors available as either a 1 or 2 vCore configuration
-- Storage up to 1 TB
-- Locally redundant backup
-
-You'll use a specific pricing tier setting to illustrate support of a specific scenario when you create an example server later. Keep in mind that for production servers, you'll choose a pricing tier to match your environment.
-
-### General Purpose tier
-
-The **General Purpose** tier is ideal for most business workloads that require balanced compute and memory with scalable I/O throughput. In this tier, you have access to the following hardware:
-
-- Compute Gen 4 CPUs base on Intel E5-2673 v3 (Haswell) 2.4-GHz processors available in 2, 4, 8, 18, 32 vCore configurations
-- Compute Gen 5 CPUs base on Intel E5-2673 v4 (Broadwell) 2.3-GHz processors available in 2, 4, 8, 18, 32 vCore configurations
-- Storage up to 4 TB
-- Locally redundant backup
-- Geographically redundant backup
-
-### Memory Optimized tier
-
-The **Memory Optimized** tier is ideal for high-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. In this tier, you have access to the following hardware:
-
-- Compute Gen 5 CPUs base on Intel E5-2673 v4 (Broadwell) 2.3-GHz processors available in 2, 4, 8, 16 vCore configurations
-- Storage up to 4 TB
-- Locally redundant backup
-- Geographically redundant backup
+Azure Database for PostgreSQL provides you with the option to choose pricing tiers based on parameters like compute power and storage. For more details, see [Azure Database for PostgreSQL pricing tiers](https://docs.microsoft.com/azure/postgresql/concepts-pricing-tiers?azure-portal=true).
 
 ## Steps to create an Azure Database for PostgreSQL server
 
-You'll typically create an Azure Database for PostgreSQL server using the Azure portal. Let's look at the steps you'll take.
+You'll typically create an Azure Database for PostgreSQL server using the Azure portal. Let's look at the steps you'd take. This is not an exercise, but serves to familiarize you with the steps if you choose to use the Azure portal.
 
 First, you'll sign in to the Azure portal, and then you'll click **Create a resource**.
 
 You'll select **Databases** and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 
 The portal will display a PostgreSQL server configuration screen, also called a blade, and you make your selection.
-
-![Screenshot of the Azure portal showing the creation blade for a new PostgreSQL database](../media/4-create-blade.png)
 
 You'll need to give a value to all the items in the blade, so let's have a look at each.
 
@@ -119,12 +87,9 @@ You can specify the version of PostgreSQL to use. Microsoft aims to support the 
 
 ### Pricing tier
 
-You'll choose a pricing tier that will support your server's workload. Recall that you have three tiers to choose from. As we saw earlier, each of these tiers allows you to configure the compute and storage options. Here is an example with the Basic price tier selected, a Gen 5 compute, and a 25-day backup retention period.
-
-![Screenshot of the Azure portal showing the database pricing tier for a new PostgreSQL database](../media/4-azure-db-pricing-tier.png)
+You'll choose a pricing tier that will support your server's workload. Recall that you have difference tiers to choose from. As we saw earlier, each of these tiers allows you to configure the compute and storage options. 
 
 All that's left now is to review the values that you entered, make any notes you may need for later, and click **Create** to create the server.
 
 Deploying the server takes a couple of minutes. You'll receive a notification when the deployment is complete. From the notification, you can navigate to the newly created server.
 
-You've now seen the steps you take to create an Azure Database for PostgreSQL server. In the next unit, you'll have the opportunity to create your own Azure Database for PostgreSQL server.

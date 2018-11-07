@@ -1,3 +1,7 @@
+This unit serves to familiarize you with the steps you'll take in the next unit when you actually perform the exercise to create a server. Refer back to this section if you get stuck in the next unit.
+
+## Scenario
+
 Let's assume you're using an on-premises PostgreSQL database. Your company is now looking at expanding device support, availability, data tracking, and processing features by moving your server into Azure. You'll investigate how much effort it takes to automate the creation of an Azure Database for PostgreSQL server.
 
 Creating a single Azure Database for PostgreSQL server using the Azure portal is easy. Creating more than one database and running on-going maintenance using only the portal may become tedious. You'll use the Azure CLI to create scripts when you want to automate management tasks.
