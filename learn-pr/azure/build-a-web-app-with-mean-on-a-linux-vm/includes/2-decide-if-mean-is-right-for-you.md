@@ -1,17 +1,39 @@
-The MEAN stack is a development stack for building and hosting web applications. MEAN is an acronym for MongoDB, Express, AngularJS, and Node.js, the component pieces of this development stack.
+MEAN is a development stack for building and hosting web applications. MEAN is an acronym for its component parts: MongoDB, Express, AngularJS, and Node.js.
+
+The main reason you might consider MEAN is if you're familiar with JavaScript. Here are some other reasons you might want to choose MEAN, or choose a different development stack for your next web application.
 
 ## Why would I pick MEAN?
 
-All of the components of the MEAN stack are reliable, well-understood, and open source, but so are many other development stacks. 
+All of the components of the MEAN stack are reliable, well-understood, and open source, but so are many other development stacks. Here are some reasons you might choose MEAN over other development stacks.
 
-One of the biggest reasons to pick the MEAN stack for web development is if you're familiar with JavaScript. All of the individual components are developed using JavaScript, from the dev-ops tasks of the web hosting runtime and database configuration to developer tasks of web application code and client-side scripting.
+**You're familiar with JavaScript**
 
-Additionally, the components of the MEAN stack are all popular right now. Up-to-date documentation and tutorials for developing with MongoDB, Express, AngularJS, and Node.js are easy to find. The components of the MEAN stack are compatible with modern operating systems, including Windows, macOS, and Linux.
+Familiarity and experience with JavaScript is one of the biggest reasons to pick the MEAN stack for web development. You can use the MEAN stack to create applications that run either on the server (for example, to handle web requests) or the client (for example, in a web browser.)
+
+**Your data isn't highly structured**
+
+MongoDB is what's called a **NoSQL** database. A NoSQL database doesn't require data to be structured in a pre-defined way as it would with a relational database like Microsoft SQL Server or MySQL. Instead, MongoDB stores its data in JSON-like documents that don't require the rigid data structures that MySQL or other relational databases require.
+
+**It's well documented**
+
+The components of the MEAN stack are all popular right now. Resources for working with MongoDB, Express, AngularJS, and Node.js are easy to find.
+
+**It runs almost anywhere**
+
+You can also develop MEAN stack applications from your favorite development environment &ndash; whether that's Windows, macOS, or Linux.
 
 ## Why might MEAN not be right for me?
 
-If your data is highly normalized, you might still benefit from putting your data in MySQL or SQL Server, where the relational database architecture will match your data needs well.
+Here are some reasons you might want to choose a development stack other than MEAN.
 
-If JavaScript is not your strongest skill, other frameworks and runtimes can serve you well. An alternative like the LAMP stack, which consists of Linux, Apache, MySQL, and PHP (sometimes with Perl or Python instead), might allow you to make more progress with a programming language more familiar to you. This variety of technologies will restrict your JavaScript development to the web application's client-side code.
+Even if you decide that MEAN is not right for you, you might still be interested in this module. Many of the patterns you'll see apply to other kinds of web application frameworks.
 
-You want to pick a development and hosting stack that works well for your skills and the skills of your development and dev-ops team.
+**Your data is highly structured**
+
+If your data is highly structured, you might benefit from putting your data in a relational database such as Microsoft SQL Server or MySQL.
+
+**JavaScript is not your strongest skill**
+
+If you prefer another language over JavaScript, there may be an alternative framework out there for you.
+
+For example, the LAMP stack, which consists of Linux, Apache, MySQL, and PHP (sometimes with Perl or Python instead of PHP), might better align to your strengths and experience.
