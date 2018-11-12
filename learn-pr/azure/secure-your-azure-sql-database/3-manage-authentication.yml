@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-sql-database.3-manage-authentication
+metadata:
+  title: Control who can access your database
+  description: Learn to control access to the database by creating users with deliberately reduced access.
+  ms.date: 11/09/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+title: Control who can access your database
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-manage-authentication.md)]
