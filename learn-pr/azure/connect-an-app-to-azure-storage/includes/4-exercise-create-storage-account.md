@@ -26,6 +26,8 @@ Use the above table to craft a command line in the Cloud Shell on the right to c
 
 ### Example command
 
+You can use the following example command to create a storage account. Note that you must replace <kbd><name></kbd> and <kbd><region></kbd> with the information you chose in the previous sections.
+
 ```azurecli
 az storage account create \
         --name <name> \
