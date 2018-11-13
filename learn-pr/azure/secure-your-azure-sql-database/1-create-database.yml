@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-sql-database.1-create-database
+metadata:
+  title: Set up sandbox environment
+  description: Create an Azure SQL Database and a Linux VM for use throughout this module.
+  ms.date: 11/09/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+title: Set up sandbox environment
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-create-database.md)]
