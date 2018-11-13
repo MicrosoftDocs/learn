@@ -27,5 +27,5 @@ modules:
 - learn.provision-azure-sql-db
 #TODO - learn.migrate-sql-server-relational-data  (POST-IGNITE)
 - learn.create-azure-db-for-postgresql
-#TODO - learn.secure-your-azure-sql-database  (POST-IGNITE)
+- learn.secure-your-azure-sql-database
 achievement: learn.work-with-relational-data-in-azure.trophy 
