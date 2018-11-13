@@ -1,6 +1,7 @@
 Your research team has collected massive amounts of image data that might lead to a discovery on Mars. They need to perform computationally intense data processing but don't have the equipment to do the work. Let's see why Azure is a good choice to do the data analysis.
 
 ## What is Azure compute?
+
 Azure compute is an on-demand computing service for running cloud-based applications. It provides computing resources like multi-core processors and supercomputers via virtual machines and containers. It also provides serverless computing to run apps without requiring infrastructure setup or configuration. The resources are available on-demand and can typically be created in minutes or even seconds. You pay only for the resources you use and only for as long as you're using them.
 
 There are three common techniques for performing compute in Azure:
@@ -71,3 +72,11 @@ Azure has two implementations of serverless compute:
 
   :::column-end:::
 :::row-end:::
+
+## Which computing strategy is right for me?
+
+You don't need to take an "all or nothing" approach when choosing a cloud computing strategy. Virtual machines, containers, and serverless computing each provide benefits as well as tradeoffs against other options.
+
+For example, although serverless computing removes the need for you to manage infrastructure, serverless computing expects work to be completed quickly; usually within seconds or less. Therefore, you might run your core application on a virtual machine or container but offload some of the data processing onto a serverless app.
+
+In the next part, you'll look at each option more closely to help you decide when to use each service.
