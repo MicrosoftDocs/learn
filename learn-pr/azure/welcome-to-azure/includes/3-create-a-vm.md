@@ -129,6 +129,9 @@ Let's get your Windows VM up and running.
 
     Although you can specify the Windows admin password through the command, here you'll be prompted to enter one. Choose a password that contains at least 12 characters with a combination of upper and lowercase letters, numbers, and symbols. Don't use a password you use elsewhere.
 
+    > [!IMPORTANT]
+    > As a security measure, you won't see your password as you type it. However, your keystrokes are registered in the terminal as you enter them.
+
     Your VM will take four to five minutes to come up. Compare that to the time it takes to purchase, rack, and configure a system in your data center. Quite a difference!
 
 While you're waiting, let's review the command you just ran.
