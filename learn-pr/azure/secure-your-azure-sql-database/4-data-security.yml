@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-sql-database.4-data-security
+metadata:
+  title: Secure your data in transit, at rest, and on display
+  description: Data security
+  ms.date: 11/09/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+title: Secure your data in transit, at rest, and on display
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-data-security.md)]
