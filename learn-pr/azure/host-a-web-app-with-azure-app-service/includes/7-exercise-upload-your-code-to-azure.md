@@ -45,48 +45,40 @@ In this unit, you'll upload your ASP.NET Core application to Azure App Service.
 
     If you click the **URL**, you will see the same default page that Azure created for the deployment slot "app" the first time we created it in the Azure portal.
 
-Now that the staging deployment slot is created successfully, you need to configure **deployment credentials**.
+## Use a local Git repository as your deployment option
+
+Next, we'll configure App Service for Git deployment. This will enable us to deploy new versions of our application by pushing our code to a Git endpoint in Azure.
+
+1. Within the **staging** deployment slot "app", click the **Deployment Center** menu item on the left-hand navigation.
+
+1. Click on **Local Git**.
+
+1. Click **Continue**.
+
+1. Click on **App Service Kudu build server**.
+
+1. Click **Finish**.
 
 ## Create deployment credentials
 
-Azure requires deployment credentials to be set up before you can start the actual deployment process. For that reason, you will learn how to create your own deployment credentials.
+Before you can deploy with Git, App Service requires you to set up a username/password that can be used to authenticate from the Git client.
 
-1. Click the **Deployment credentials** menu item on the left-side navigation.
+1. Click the **Deployment Credentials** button.
 
-1. The Azure portal navigates to the **Deployment credentials** page as shown below.
+1. Click on **User Credentials**.
 
-    Enter a **username** and **password** of your choice, and then confirm your password once again.
+1. If not already populated, set the **Username** field. This does not have to be the same as your Azure account username.
+
+1. Enter a **Password** of your choice, and then confirm your password.
 
     > [!NOTE]
     > Make sure you don't forget your username and password! You will need them later when we start uploading and deploying our code to Azure.
 
-    ![Screenshot of the Azure portal showing the Deployment Credentials page of the staging slot with example credentials in the required fields.](../media/7-deployment-credentials.png)
+1. Click on **Save Credentials**.
 
-1. Click the **Save** button at the top of the **Deployment credentials** page.
+1. Take note of the **Git Clone Uri**, which is the Azure Git repository URL that you will use as a **remote** for your local application code repository.
 
-Now that the deployment credentials are created successfully, you need to configure other deployment options.
-
-## Use a local Git repository as your deployment option
-
-Next, we'll create a local Git repository in Azure, so you can start uploading your code.
-
-1. Within the **staging** deployment slot "app", click the **Deployment options** menu item on the left-hand navigation.
-
-1. The Azure portal navigates to the **Deployment options** page.
-
-1. Click on the **Choose Source** to configure the required settings.
-
-1. The Azure portal displays the available options that you can configure and use. In our case, choose the **Local Git Repository** option.
-
-1. You will be returned to the **Deployment option** page. Click the **OK** button at the bottom of the page to set up the deployment source.
-
-1. Now, navigate to the **Overview** section on the left-side navigation.
-
-    The important information to note here is the **Git Clone Uri**, which is the local Git repository URL that you will use as a **remote** for your local application code repository.
-
-It is time to start uploading your code to the staging deployment slot.
-
-## Set up git on Cloud Shell
+## Set up Git on Cloud Shell
 
 Git is already installed Azure Cloud Shell but you'll want to set your username and email for your cloud shell account.
 
@@ -148,10 +140,10 @@ To start using Git, you need to initialize a local Git repository for your .NET 
    Once you stage the files with Git, you need to commit your files to the **Git commit history** on your local machine. You do that by typing the following command:
 
     ```bash
-   git commit -m "Initial create"
+   git commit -m "Initial commit"
     ```
 
-   The `commit` command accepts  `-m` argument to include a message with the commit you are creating. Later on, when you push your code to Azure, you will be able to see the same message stored with this particular commit.
+   The `commit` command accepts the `-m` argument to include a message with the commit you are creating. Later on, when you push your code to Azure, you will be able to see the same message stored with this particular commit.
 
 ## Add a remote for the local Git repository
 
@@ -167,7 +159,7 @@ To do so, you need to:
     git remote add origin https://BESTBIKE-git@BESTBIKE-staging.scm.azurewebsites.net:443/BESTBIKE.git
     ```
 
-    The above Git command hooks your local Git repository to the one hosted on Azure. Now, you can start pushing and pulling between the local and remote Git repositories!
+    The above Git command connects your local Git repository to the one hosted on Azure. Now you can deploy your code by pushing to it.
 
 1. To verify the above command, type the following Git command:
 
@@ -192,7 +184,7 @@ Now that you have your local Git repository hooked to the remote Git repository 
     git push origin master
     ```
 
-1. You will be prompted to enter the password that you have configured in the **Deployment credentials** section above. Enter your password and hit Enter. Git starts uploading your committed files to the Azure remote Git repository configured under the staging deployment slot.
+1. You will be prompted to enter the password that you noted from the **Deployment Credentials** section above. Enter your password and hit Enter. Git starts uploading your committed files to the Azure remote Git repository configured under the staging deployment slot.
 
 ## Verify the code is uploaded to Azure
 
@@ -204,19 +196,19 @@ Now that you have your local Git repository hooked to the remote Git repository 
 
 1. Click on the staging slot created above. Remember, a deployment slot is considered as an app, and hence, it will appear as an App Service resource under **All Resources**.
 
-1. Once you arrive to the staging deployment slot page, go to **Deployment options**.
+1. Once you arrive to the staging deployment slot page, go to **Deployment Center**.
 
     You will see that your first commit that you have locally on your machine is now uploaded to the Azure portal.
 
-    When you push your code locally to the remote Git repository in App Service, Azure records this operation.
+    When you push your code to the remote Git repository in App Service, Azure records this operation.
 
-    Every time you push your code to Azure, you will see a new record, together with the message that you type when committing your changes locally on your machine.
+    Every time you push your code to Azure, you will see a new record, together with the commit message (the string that you supply with the `-m` argument) that you type when committing your changes.
 
     ![Screenshot of the Azure portal showing a recent Git repo deployment in the Development options page.](../media/7-staging-deployment-slot-after-uploading-files.png)
 
 1. Let's visit the **staging slot** URL. The URL was mentioned above, however, if you forget that URL, you can always go to the **Overview** page of the staging deployment slot and pick up the URL.
 
-1. Type the following URL in your browser address bar: [https://BESTBIKE-staging.azurewebsites.net/](https://BESTBIKE-staging.azurewebsites.net/).
+1. Type the URL in your browser address bar. 
 
     ![Screenshot showing a web browser view of the staging deployment slot web site.](../media/7-staging-slot-hosted-online.png)
 
@@ -246,13 +238,13 @@ Now that the application is up and running on the staging deployment slot hosted
 
 1. Azure starts the swapping process. Usually, this operation takes a few seconds, depending on the size of the web app being swapped.
 
-1. Once the operation ends, visit your web app URL; you can find it in the Overview page for your app service in the portal: [https://bestbike.azurewebsites.net/](https://bestbike.azurewebsites.net/).
+1. Once the operation ends, visit your web app URL; you can find it in the Overview page for your app service in the portal.
 
     ![Screenshot showing a web browser view of the previously staging deployment slot now hosted as the primary web app.](../media/7-web-app-page.png)
 
     The swapping operation has been successful! You can now see the code that you uploaded to the staging deployment slot also being hosted on the production slot.
 
-1. Now, visit the URL of the staging slot: [https://bestbike-staging.azurewebsites.net/](https://bestbike-staging.azurewebsites.net/).
+1. Now, visit the URL of the staging slot.
 
     ![Screenshot showing a web browser view of the previously primary deployment slot now hosted as the staging deployment slot web app.](../media/7-staging-after-swapping.png)
 
