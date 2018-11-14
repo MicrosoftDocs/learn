@@ -2,25 +2,33 @@ You decide to deploy Azure AD and use conditional access policies that Azure req
 
 ## Launch lab and sign in to the Azure portal
 
-1. Click the **Launch Lab** link above to launch the lab.
+1. Click the link above to launch the lab.
 
 > [!NOTE]
 > After launching the lab, the username and password you need to sign in with is located on the **Resources** tab next to the instructions.
 
+![A screenshot showing Azure Portal Sandbox login items with selection boxes drawing attention to the Resources tab and the correct login option](../media/3-sandbox-login.png)
+
+Make a note of the number at the end of the username, as shown below. You will need that number later in this exercise.
+
+![A screenshot showing Azure Portal Sandbox Lab Resources with selection box drawing attention to the number at the end of the user name](../media/3-user-number.png)
+
+If at any time during this lab when you want to start over, you can exit the Lab Sandbox and create a fresh one with the link above.
+
 ## Create a directory
 
-We will create a new directory for First Up Consultants where we can test without fear of impacting production users.
+You will create a new Active Directory for First Up Consultants in the Sandbox Portal, where you can test without fear of impacting production users. If you'd prefer doing this exercise on your own Azure account and subscription, log into the [Azure portal](https://portal.azure.com?azure-portal=true) now. Be advised that doing so may impact your existing account and subscription billing. Choose this option only if you are certain of the implications. We recommend using the Lab Sandbox environment.
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In the left navigation pane, click **Create a resource** > **Identity** > **Azure Active Directory**.
 
-2. In the left navigation pane, click **Create a resource** > **Identity** > **Azure Active Directory**.
-
-3. In the **Create directory** blade, provide the following values for the **Organization name** and **Initial domain name**:
+1. In the **Create directory** blade, provide the following values for the **Organization name** and **Initial domain name**:
 
    1. Organization Name: `First Up Consultants`.
-   2. Initial Domain Name: `firstupconsultants<XXXXXXX>` where <XXXXXXX> is the number after the username on the **Resources** tab at the top of the instructions window.
+   2. Initial Domain Name: `firstupconsultants<XXXXXXX>` where <XXXXXXX> is the number you previously made a note of that appears after the username, as shown in the screenshot above.
 
-4. Wait for the directory to be created. Click the link to switch to the new directory or click the **Directory and subscription filter** at the top of the window and then choose the newly created directory.
+1. Wait for the directory to be created. Make a note of the full domain name, as shown below. Click the link to switch to the new directory.
+
+![A screenshot showing Create Active Directory with selection boxes drawing attention to the domain name and the location of the link to click](../media/3-create-directory.png)
 
 ## Get trial licenses
 
@@ -42,7 +50,7 @@ We're going to need to test this out with a user. Isabella Simonsen (another mem
 
    `Isabella@firstupconsultants<XXXXXXX>.onmicrosoft.com`
 
-   Match the domain after the @ with the domain you created in the *Create a directory* section above.
+   Match the domain after the @ with the domain you created and noted in the *Create a directory* section above.
 
 1. Check the box to **Show Password** for the user. Make a note of the password so you can use it later when testing.
 
@@ -60,10 +68,12 @@ We will be assigning the policy that we create to a group of users, but we need 
 
 1. Group name **CA-MFA-AzurePortal**.
 
-1. Membership type **Assigned**.
+1. Membership type **Assigned** and click the Members link (labeled "1" in the diagram below).
 
-1. Select the user that we created in the previous step and choose **Select**.
+1. Select the user that we created in the previous step (labeled "2" in the diagram below) and choose **Select** (labeled "3).
 
-1. Click **Create**.
+1. Click **Create** (labeled "4" in the diagram below).
+
+![A screenshot showing Create Active Directory Group with selection boxes drawing attention to the previous steps](../media/3-group-blade.png)
 
 In this unit, you learned how to create a trial licensed directory, a test user, and a pilot group in the Azure portal.

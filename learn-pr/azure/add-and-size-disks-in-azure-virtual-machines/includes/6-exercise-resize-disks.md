@@ -1,6 +1,6 @@
 Let's say you underestimated how large some of the uploaded files would be and that your upload disk is running out of space. You decide to double the space from 64 GB to 128 GB.
 
-Here you'll practice the process you learned about in the previous part.
+Here you'll practice the process you learned about in the previous units.
 
 ## Resize the data disk
 
@@ -23,7 +23,7 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
     uploadDataDisk1                                             64
     ```
 
-1. Run the following `az vm deallocate` command to stop and deallocate your VM.
+1. Run the following `az vm deallocate` command to stop and de-allocate your VM. This does not delete your VM, but puts it in a state where you can modify the virtual disks.
 
     ```azurecli
     az vm deallocate --name support-web-vm01
@@ -41,11 +41,13 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
     az vm start --name support-web-vm01
     ```
 
+    But we aren't finished yet. The operating system on the VM cannot use the extra space yet. This is done in the next section.
+
 ## Expand the disk partition
 
 The final step is to tell the OS about the available space. Just like the partitioning and format steps you did earlier, this process is identical to the one you'd follow to expand a physical, on-premise, disk.
 
-1. Although you can reserve a fixed public IP address for your VM, by default your VM receives a new public IP address when it is deallocated and restarted. Run the following `az vm show` command to get your VM's new public IP address.
+1. Although you can reserve a fixed public IP address for your VM, by default your VM receives a new public IP address when it is de-allocated and restarted. Run the following `az vm show` command to update your Bash variable with your VM's new public IP address.
 
     ```azurecli
     ipaddress=$(az vm show --name support-web-vm01 -d --query [publicIps] --o tsv)
@@ -57,7 +59,7 @@ The final step is to tell the OS about the available space. Just like the partit
     ssh azureuser@$ipaddress lsblk
     ```
 
-    You see that the `sdc/sdc1` still has a size of 64 GB.
+    You can see that disk `sdc/sdc1` still has a size of 64 GB.
 
     ```output
     NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -69,7 +71,7 @@ The final step is to tell the OS about the available space. Just like the partit
     └─sda1   8:1    0   30G  0 part /
     ```
 
-1. Similar to what you did previously to initialize your disk, run this `az vm extension set` command to tell the OS on the VM about the newly available space.
+1. Similar to what you did previously to initialize your disk, run this `az vm extension set` command to tell the OS on the VM about the newly available space by executing a pre-made Bash script we create to help you along.
 
     ```azurecli
     az vm extension set \
@@ -96,7 +98,7 @@ The final step is to tell the OS about the available space. Just like the partit
     ssh azureuser@$ipaddress lsblk
     ```
 
-    This time, you see that `sdc/sdc1` is expanded to accommodate the increased size of your disk.
+    This time, you see that disk `sdc/sdc1` is expanded to accommodate the increased size of your disk.
 
     ```output
     NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
@@ -108,7 +110,7 @@ The final step is to tell the OS about the available space. Just like the partit
     └─sda1   8:1    0    30G  0 part /
     ```
 
-1. As a final verification step, run the `df` utility on your VM over SSH.
+1. As a final verification step, run the operating system's `df` utility on your VM over SSH to prove that the OS can see it correctly.
 
     ```bash
     ssh azureuser@$ipaddress df -h

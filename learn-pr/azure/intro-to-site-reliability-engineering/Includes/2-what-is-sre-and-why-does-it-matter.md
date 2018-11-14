@@ -35,6 +35,6 @@ In fact, there are very few situations where it is even desirable. The effort an
 
 The level needs to match the business needs and be pragmatic. For example, if your customers connect to you over a network that isn’t 100% reliable (let’s say it is up 90% of the time), spending the effort and money to make sure your service is 95% reliable is by definition a waste of time and money. _You want to achieve the appropriate level of reliability in your system, services, and products._
 
-SRE takes this pragmatism one more step. If we can now think about there being a desirable level of reliability, is there something we should do if we are successful at meeting or surpassing that level? Similarly, what if we don’t achieve it?
+SRE takes this pragmatism one more step. If we can now think about there being a desirable level of reliability, is there something we should do if we are successful at meeting or surpassing that level? Similarly, what if we don’t achieve it? We'll answer these questions later in the module.
 
-Stay tuned, these are exactly the question we’ll answer after a brief pit stop for a little bit of context.
+

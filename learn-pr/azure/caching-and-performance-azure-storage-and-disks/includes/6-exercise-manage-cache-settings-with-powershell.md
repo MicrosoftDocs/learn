@@ -160,7 +160,7 @@ We have only one data disk at the moment. The `Lun` field is important. It's the
     OSProfile          : {ComputerName, AdminUsername, WindowsConfiguration, Secrets}
     ProvisioningState  : Succeeded
     StorageProfile     : {ImageReference, OsDisk, DataDisks}
-        ```
+    ```
     
 1. We've given this disk a `Lun` value of `1` because it's not taken. We defined the disk we want to create, so it's time to run `Update-AzureRmVM` to make the actual change:
 

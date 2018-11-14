@@ -3,7 +3,7 @@ Your law firm is expanding its case load and you have been tasked with creating 
 > [!TIP]
 > This exercise uses Linux as the example, but the basic process of creating VMs and adding disks is the same for Windows. The primary difference would be in partitioning and formatting the disk. On Windows, you can connect to your VM over Remote Desktop and use the built-in Disk Management tools or deploy a PowerShell script that's similar to the Bash script you'll use here.
 
-Your goal here is to crate a Linux VM and attach a new virtual hard disk (VHD) named **uploadDataDisk1** to store the `/uploads` directory.
+Your goal here is to create a Linux VM and attach a new virtual hard disk (VHD) named **uploadDataDisk1** to store the `/uploads` directory.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -13,11 +13,11 @@ The Azure CLI enables you to set default values so you don't have to repeat them
 
 Here you'll specify the default Azure location, or region. This is the location where your Azure VM will be placed.
 
-Ideally this would be close to your clients. In this case, select the closest region from the locations available to the Azure sandbox.
+Ideally this would be close to your clients. In this case, select the closest region to you from the locations available to the Azure sandbox.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
-1. Run `az configure` to set the default location you want to use. Replace **eastus** with the location.
+1. Run `az configure` to set the default location you want to use. Replace **eastus** with the location chosen in the step above.
 
     ```azurecli
     az configure --defaults location=eastus
@@ -51,7 +51,7 @@ Here you create a Linux VM to host your web server.
     * The admin username is **azureuser**. In practice, this name can be whatever you like.
     * The `--generate-ssh-keys` argument generates an SSH keypair for you, enabling you to connect to your VM over SSH.
 
-    The VM takes a few minutes to come up. When the VM is ready, you see information about it. Here's an example.
+    The VM takes a few minutes to come up. When the VM is ready, you see information about it in JSON format. Here's an example.
 
     ```json
     {
@@ -68,14 +68,14 @@ Here you create a Linux VM to host your web server.
     ```
 
     > [!NOTE]
-    > Here you're using this VM to learn how to manage disks. In practice, you might also install web server and other software and then run `az vm open-port` to make the ports you need available to the outside world.
+    > In this lesson you're using this VM to learn how to manage disks. In practice, you might also install web server and other software and then run `az vm open-port` to make the ports you need available to the outside world.
 
 ## Add an empty data disk to your VM
 
 Here you'll create an empty data disk and attach it to your VM. Your data disk will initially be 64 GB in size. Later, you'll mount this disk to the `/uploads` directory on your VM.
 
 > [!TIP]
-> For learning purposes, here you're creating the VM and data disk as separate steps. In practice, you can specify the `--data-disk-sizes-gb` argument to the `az vm create` command to add data disks when the VM is created.
+> For learning purposes you're creating the VM and data disk as separate steps. In practice, you can specify the `--data-disk-sizes-gb` argument to the `az vm create` command to add data disks when the VM is created.
 
 1. Run the following `az vm disk attach` command to add a new empty disk to the VM.
 
@@ -100,15 +100,15 @@ To use the disk, you'll need to partition and format it. You'll do that next.
 
 Your empty data drive needs to be initialized and formatted. The process to do that is the same as for a physical disk.
 
-For one-time tasks, you might manually connect to your VM over SSH and run the commands you need. To make the process more repeatable and less error-prone, you can use a Bash script (or on Windows, a PowerShell script) that specifies the commands you need.
+For one-time tasks, you might manually connect to your VM over SSH and run the commands you need. To make the process more repeatable and less error-prone, you can use a Bash script (or a PowerShell script where available) that specifies the commands you need.
 
 Using a script to automate the process has an added benefit &ndash; your script serves as documentation for how the process is performed. Others can read your script to understand how the system is configured. If you need to change the process, you can simply modify your script and test it on a temporary scratch VM before you deploy your change to production.
 
-To automate the process, you'll use the _Custom Script Extension_. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system once your VM is up and running.
+To automate the process in this lesson, you'll use the _Custom Script Extension_. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system once your VM is up and running.
 
-You can store your scripts in Azure storage or in a public location such as GitHub. You can run scripts manually or as part of a more automated deployment. Here, you'll run an Azure CLI command to download a Bash script from GitHub and execute it on your VM.
+You can store your scripts in Azure storage or in a public location such as GitHub. You can run scripts manually or as part of a more automated deployment. Here, you'll run an Azure CLI command to download a pre-made Bash script from GitHub and execute it on your VM.
 
-For learning purposes, here you'll also run a few commands on your VM to very that the VM is configured as you expect.
+For learning purposes, here you'll also run a few commands on your VM to verify that the VM is configured as you expect.
 
 1. Run `az vm show` to get your VM's public IP address and save the IP address as a Bash variable.
 
@@ -120,13 +120,13 @@ For learning purposes, here you'll also run a few commands on your VM to very th
       --o tsv)
     ```
 
-1. Run the following `ssh` command to run the `lsblk` command on your VM over an SSH connection. Enter "yes" when prompted.
+1. Run the following `ssh` command to run the `lsblk` command on your VM over an SSH connection using the `ipaddress` variable data you just created. Recall that `azureuser` was the admin username we used when we created the VM. If you chose a different name, use that instead. Enter "yes" when prompted.
 
     ```bash
     ssh azureuser@$ipaddress lsblk
     ```
 
-    You see the 64 GB drive, `sdc`, that you just created. You see that it's not mounted. That's because it's hasn't yet been initialized.
+    The output of this command should look like the following.
 
     ```output
     NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -138,7 +138,12 @@ For learning purposes, here you'll also run a few commands on your VM to very th
     └─sda1   8:1    0   30G  0 part /
     ```
 
-1. Run the following `az vm extension set` command to run the Bash script on your VM.
+    You see the 64 GB drive, `sdc`, that you just created. You see that it's not mounted. That's because it's hasn't yet been initialized.
+
+1. Run the following `az vm extension set` command to run the pre-made Bash script on your VM.
+
+    > [!WARNING]
+    > The script modifies `/etc/fstab`. Improperly modifying the `/etc/fstab` file could result in an unbootable system. Always test configuration changes on a temporary scratch system before you deploy to production. Refer to your distribution's documentation to learn how to properly modify this file. In production, we also recommend that you create a backup of this file so you can restore the configuration if needed.
 
     ```azurecli
     az vm extension set \
@@ -158,9 +163,6 @@ For learning purposes, here you'll also run a few commands on your VM to very th
     * Create the `/uploads` directory, which we use as our mount point.
     * Attaches the disk to the mount point.
     * Updates `/etc/fstab` so that the drive is mounted automatically after the system reboots.
-
-    > [!WARNING]
-    > The script modifies `/etc/fstab`. Improperly modifying the `/etc/fstab` file could result in an unbootable system. Always test configuration changes on a temporary scratch system before you deploy to production. Refer to your distribution's documentation to learn how to properly modify this file. In production, we also recommend that you create a backup of this file so you can restore the configuration if needed.
 
 1. To verify the configuration, run the same `ssh` command as you did previously to run the `lsblk` command on your VM over an SSH connection.
 
@@ -186,6 +188,6 @@ For learning purposes, here you'll also run a few commands on your VM to very th
 
 ## Summary
 
-Here, you created a data disk and attached it to your VM. You used the Custom Script Extension to run a Bash script on your VM to make the process more repeatable. The Bash script partitions, formats, and mounts your disk so that your web server can write to it.
+Here, you created a data disk and attached it to your VM. You used the Custom Script Extension to run a pre-made Bash script on your VM to make the process more repeatable. The Bash script partitions, formats, and mounts your disk so that your web server can write to it.
 
-Now that you've prepared the data disk on your VM, let's explore a bit more about the types of disks you might create. Your primary decision is whether to choose Standard or Premium storage.
+Now that you've prepared the data disk on your VM, let's explore a bit more about the various types of disks you can create. Your primary decision is whether to choose Standard or Premium storage.

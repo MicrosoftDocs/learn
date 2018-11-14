@@ -125,8 +125,8 @@ In this part, you'll learn how to prevent sensitive information, such as connect
       --ip-address Public \
       --location eastus \
       --secure-environment-variables \
-        COSMOS_DB_ENDPOINT=$COSMOS_ENDPOINT \
-        COSMOS_DB_MASTERKEY=$COSMOS_KEY
+        COSMOS_DB_ENDPOINT=$COSMOS_DB_ENDPOINT \
+        COSMOS_DB_MASTERKEY=$COSMOS_DB_MASTERKEY
     ```
 
     Note the use of the `--secure-environment-variables` argument.

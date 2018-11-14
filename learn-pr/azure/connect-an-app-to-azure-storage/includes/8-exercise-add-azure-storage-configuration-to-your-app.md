@@ -167,7 +167,7 @@ Node.js apps can include support to read from the **.env** file by adding the **
 
 Now that we have added the required libraries to enable reading configuration, we need to enable that functionality within our application.
 
-1. Select *index.js** in the editor.
+1. Select **index.js** in the editor.
 
 1. At the top of the file, a **#!/usr/bin/env node** line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This will make environment variables defined in our **.env** file available to the program.
 

@@ -212,6 +212,7 @@ These are used in the [calls to the Face API](https://github.com/MicrosoftDocs/m
             context.log(`There was an error adding the emoji to the image: ${error}`);
             throw new Error(error);
         }
+        ```
 
 1. Setup the return HTTP response in the `index` function
 
