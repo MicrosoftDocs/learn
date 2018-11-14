@@ -32,12 +32,12 @@ On Linux, Windows 10, and MacOS, you can use the built-in `ssh-keygen` command t
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-Here is the minimum command necessary to generate the key pair for an Azure VM. This will create an SSH protocol 2 (SSH-2) RSA public-private key pair with a 2048-bit length (the minimum length).
+Here is the minimum command necessary to generate the key pair for an Azure VM. This will create an SSH protocol 2 (SSH-2) RSA public-private key pair. The minimum length is 2048, but for the sake of this learning module we will use 4096.
 
 Type this command into Cloud Shell:
 
 ```bash
-ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 4096
 ```
 
 The tool will prompt for file names and an optional passphrase. Just take the defaults. It will create two files: `id_rsa` and `id_rsa.pub` in the `~/.ssh` directory. The files will be overwritten if they exist. There are various options you can use to provide the file name or a passphrase to avoid the prompt.
