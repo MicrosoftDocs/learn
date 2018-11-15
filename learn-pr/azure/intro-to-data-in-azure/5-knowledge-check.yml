@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       incorrectExplanation: "There are no large, up-front capital expenditures (CapEx) with Azure. You pay monthly for only the services you use (OpEx)."
 
-  - content: "Which of the following situations would yield the most benefits from relocating an on-premise data store to Azure?"
+  - content: "Which of the following situations would yield the most benefits from relocating an on-premises data store to Azure?"
     choices:
     - content: "Unpredictable storage demand that increases and decreases multiple times throughout the year."
       isCorrect: true

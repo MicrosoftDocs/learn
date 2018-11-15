@@ -19,7 +19,7 @@ When creating a Windows VM in Azure, you also create resources to host the VM. T
 - A virtual machine that provides CPU and memory resources.
 - An Azure Storage account to hold the virtual hard disks.
 - Virtual disks to hold the OS, applications, and data.
-- Virtual network (VNet) to connect the VM to other Azure services or your own on-premise hardware.
+- Virtual network (VNet) to connect the VM to other Azure services or your own on-premises hardware.
 - A network interface to communicate with the VNet.
 - A public IP address so you can access the VM. This is optional.
 
@@ -78,7 +78,7 @@ By default, two virtual hard disks (VHDs) will be created for your Windows VM:
 You can store data on the C: drive along with the OS, but a better approach is to create dedicated _data disks_. You can create and attach additional disks to the VM. Each disk can hold up to 4095 GB of data, with the maximum amount of storage determined by the VM size you select.
 
 > [!NOTE]
-> An interesting capability is to create a VHD image from a real disk. This allows you to easily migrate _existing_ information from an on-premise computer to the cloud.
+> An interesting capability is to create a VHD image from a real disk. This allows you to easily migrate _existing_ information from an on-premises computer to the cloud.
 
 ### Unmanaged vs. Managed disks
 
