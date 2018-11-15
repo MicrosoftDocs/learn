@@ -19,7 +19,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: Azure Security Center works for Azure resources and on-premise resources."
+  - content: "True or false: Azure Security Center works for Azure resources and on-premises resources."
     choices:
     - content: "True"
       isCorrect: true

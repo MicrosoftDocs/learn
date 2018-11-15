@@ -1,4 +1,4 @@
-Suppose you work for a company doing medical research and you're responsible for managing the on-premise servers. The servers you administer run all the company infrastructure, from web servers to databases. However, the hardware is aging and starting to struggle to keep up with some of the new data analysis applications being deployed to it.
+Suppose you work for a company doing medical research and you're responsible for managing the on-premises servers. The servers you administer run all the company infrastructure, from web servers to databases. However, the hardware is aging and starting to struggle to keep up with some of the new data analysis applications being deployed to it.
 
 You could upgrade all the hardware, but that's not appealing for several reasons:
 

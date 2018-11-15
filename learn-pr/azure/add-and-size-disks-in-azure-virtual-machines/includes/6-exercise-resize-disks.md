@@ -45,7 +45,7 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
 
 ## Expand the disk partition
 
-The final step is to tell the OS about the available space. Just like the partitioning and format steps you did earlier, this process is identical to the one you'd follow to expand a physical, on-premise, disk.
+The final step is to tell the OS about the available space. Just like the partitioning and format steps you did earlier, this process is identical to the one you'd follow to expand a physical, on-premises, disk.
 
 1. Although you can reserve a fixed public IP address for your VM, by default your VM receives a new public IP address when it is de-allocated and restarted. Run the following `az vm show` command to update your Bash variable with your VM's new public IP address.
 

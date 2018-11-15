@@ -23,7 +23,7 @@ When creating a Linux VM in Azure, you also create resources to host the VM. The
 - A virtual machine that provides CPU and memory resources
 - An Azure Storage account to hold the virtual hard disks
 - Virtual disks to hold the OS, applications, and data
-- A virtual network (VNet) to connect the VM to other Azure services or your on-premise hardware
+- A virtual network (VNet) to connect the VM to other Azure services or your on-premises hardware
 - A network interface to communicate with the VNet
 - An optional public IP address so you can access the VM
 
