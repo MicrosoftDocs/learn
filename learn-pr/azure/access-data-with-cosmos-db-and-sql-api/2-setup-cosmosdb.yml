@@ -15,3 +15,10 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/2-setup-cosmosdb.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.DocumentDB/databaseAccounts"
+  hint: "Run the commands shown to create your Cosmos DB account, database and collection."
