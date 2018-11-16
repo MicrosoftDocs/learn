@@ -17,3 +17,10 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-implement-a-service-bus-topic-and-queue.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.ServiceBus/namespaces"
+  hint: "Use the instructions above to create a Service Bus namespace, queue, topic and subscriptions."
