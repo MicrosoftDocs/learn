@@ -17,3 +17,10 @@ title: Setting up IoT Hub and connecting your first device
 durationInMinutes: 20
 content: |
   [!include[](includes/3-connect-device.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Devices/IotHubs"
+  hint: "Use the instructions above to create an IoT Hub, register your device, and send telemetry."
