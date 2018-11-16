@@ -16,9 +16,9 @@ For example, imagine you have a blog, and when you create a new post you want to
 
 Cloud computing supports both _vertical_ and _horizontal_ scaling depending on your needs.
 
-**Vertical scaling** is the process of adding resources to increase the power of an existing server. Some examples of vertical scaling are: adding a faster CPU, additional CPUs, or adding more memory.
+**Vertical scaling**, also known as "scaling up", is the process of adding resources to increase the power of an existing server. Some examples of vertical scaling are: adding a faster CPU, additional CPUs, or adding more memory.
 
-**Horizontal scaling** is the process of adding more servers that function together as one unit. For example, instead of having one server processing incoming requests, you have two.
+**Horizontal scaling**, also known as "scaling out", is the process of adding more servers that function together as one unit. For example, instead of having one server processing incoming requests, you have two.
 
 ![Point graph representing elasticity](../media/3-elastic.png)
 
