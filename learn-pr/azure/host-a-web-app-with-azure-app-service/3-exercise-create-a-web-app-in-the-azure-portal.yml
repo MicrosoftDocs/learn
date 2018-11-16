@@ -17,3 +17,10 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-a-web-app-in-the-azure-portal.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Run the commands shown to create an App Service plan and web app."
+  azure:
+    resource:
+      type: "Microsoft.Web/sites"

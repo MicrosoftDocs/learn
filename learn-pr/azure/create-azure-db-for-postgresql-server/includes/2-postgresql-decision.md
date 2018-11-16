@@ -10,4 +10,4 @@ Moreover, Azure Database for PostgreSQL delivers the following benefits:
 - Adjustable automatic backups and point-in-time-restore for up to 35 days.
 - Enterprise-grade security and compliance to protect sensitive data at-rest and in-motion that covers data encryption on disk and SSL encryption between client and server communication.
 
-These benefits should help make your decision to go from on-premise PostgreSQL to Azure Database for PostgreSQL simple.
+These benefits should help make your decision to go from on-premises PostgreSQL to Azure Database for PostgreSQL simple.

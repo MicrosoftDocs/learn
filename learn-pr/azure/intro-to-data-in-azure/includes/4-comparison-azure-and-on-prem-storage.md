@@ -52,7 +52,7 @@ Requirements and technologies change. For an on-premises deployment this may mea
 
 Azure data storage gives you the flexibility to create new services in minutes. This flexibility allows you to change storage back-ends quickly without needing a significant hardware investment.
 
-The following illustration shows differences between on-premise storage and Azure data storage.
+The following illustration shows differences between on-premises storage and Azure data storage.
 
 ![An illustration showing comparison between on-premises storage and Azure data storage for several common business needs.](../media/4-Comparison.png)
 
