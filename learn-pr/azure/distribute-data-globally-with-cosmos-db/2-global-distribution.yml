@@ -16,3 +16,10 @@ azureSandbox: true
 durationInMinutes: 8
 content: |
   [!include[](includes/2-global-distribution.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.DocumentDB/databaseAccounts"
+  hint: "Follow the directions to create a Cosmos DB account."

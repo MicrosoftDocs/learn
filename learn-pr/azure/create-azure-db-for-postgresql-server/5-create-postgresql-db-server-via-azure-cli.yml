@@ -15,3 +15,10 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-create-postgresql-db-server-via-azure-cli.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.DBforPostgreSQL/servers"
+  hint: "Use the instructions above to create an Azure Database for PostgreSQL server."

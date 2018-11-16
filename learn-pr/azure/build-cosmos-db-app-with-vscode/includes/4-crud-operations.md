@@ -4,7 +4,7 @@ Once the connection to Azure Cosmos DB has been made, the next step is to create
 
 ## Working with documents programmatically
 
-Data is stored in JSON documents in Azure Cosmos DB. [Documents](https://docs.microsoft.com/azure/cosmos-db/sql-api-resources#documents) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module we'll be using the .NET Core SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
+Data is stored in JSON documents in Azure Cosmos DB. [Documents](https://docs.microsoft.com/azure/cosmos-db/sql-api-resources#documents) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the .NET Core SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
 The main operations for Azure Cosmos DB documents are part of the [DocumentClient](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet) class:
 * [CreateDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentasync?view=azure-dotnet)
@@ -264,7 +264,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a user record to account for a change to their last name.
 
-1. Copy and paste the **ReplaceFamilyDocument** method after the ReadUserDocument method in the Program.cs file.
+1. Copy and paste the **ReplaceUserDocument** method after the ReadUserDocument method in the Program.cs file.
 
     ```csharp
     private async Task ReplaceUserDocument(string databaseName, string collectionName, User updatedUser)
