@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-azure-web-app-with-visual-studio.2-install-the-necessary-workloads
+title: Install the necessary workloads
+metadata:
+  title: Install the necessary workloads
+  description: Install the necessary workloads
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-install-the-necessary-workloads.md)]
