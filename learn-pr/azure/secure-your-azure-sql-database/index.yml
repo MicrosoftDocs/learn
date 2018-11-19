@@ -25,6 +25,7 @@ roles:
 products: 
 - azure
 - azure-portal
+- azure-sql-database
 units:
 - learn.secure-your-azure-sql-database.0-introduction
 - learn.secure-your-azure-sql-database.1-create-database
