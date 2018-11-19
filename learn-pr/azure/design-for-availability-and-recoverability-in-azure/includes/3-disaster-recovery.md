@@ -27,7 +27,7 @@ Some apps may only constitute a single process or classification of data. This i
 A complete plan needs to specify two critical business requirements for each process implemented by the application:
 
 * **Recovery Point Objective (RPO)**: The maximum duration of acceptable data loss. RPO is measured in units of time, not volume: "30 minutes of data", "four hours of data", and so on. RPO is about limiting and recovering from data *loss*, not data *theft*.
-* **Recovery Time Objective (RTO)**: The maximum duration of acceptable downtime, where "downtime" needs to be defined by your specification. For example, if the acceptable downtime duration is eight hours in the event of a disaster, then your RPO is eight hours.
+* **Recovery Time Objective (RTO)**: The maximum duration of acceptable downtime, where "downtime" needs to be defined by your specification. For example, if the acceptable downtime duration is eight hours in the event of a disaster, then your RTO is eight hours.
 
 ![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/rto-rpo.png)
 
