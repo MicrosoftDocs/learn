@@ -41,6 +41,7 @@ Azure has several account types that cater to different customer types. The most
 - Free
 - Pay-As-You-Go
 - Enterprise Agreement
+- Student
 
 ### Azure free account
 
@@ -57,6 +58,10 @@ A Pay-As-You-Go (PAYG) account bills you monthly for the services you used. This
 
 An Enterprise Agreement provides flexibility to buy cloud services and software licenses under one agreement, with discounts for new licenses and Software Assurance. It is targeted at enterprise-scale organizations.
 
+### Azure for Students account
+
+An Azure for Students account includes **$100 in Azure credits** to be used within the first 12 months plus select free services without requiring a credit card at sign-up. You must verify your student status through your organizational email address.
+
 ## Summary
 
-Whether you are an individual, a small business, or an enterprise, you need an account to use Azure services. The typical sequence is to start with a free account so that you can evaluate Azure services. When your trial period expires, you will convert from the free account to Pay-As-You-Go.
+Whether you are an individual, a small business, an enterprise, or a student, you need an account to use Azure services. The typical sequence is to start with a free account so that you can evaluate Azure services. When your trial period expires, you will convert from the free account to Pay-As-You-Go.

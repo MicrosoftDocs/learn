@@ -15,3 +15,10 @@ durationInMinutes: 20
 azureSandbox: true
 content: |
   [!include[](includes/5-read-data-with-input-bindings-portal-lab.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.DocumentDB/databaseAccounts"
+  hint: "Use the instructions above to create a Comsos DB collection and bind a function to it."
