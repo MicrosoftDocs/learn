@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-azure-web-app-with-visual-studio.4-explore-the-azure-app-service
+title: Explore the Azure App Service
+metadata:
+  title: Explore the Azure App Service
+  description: Explore the Azure App Service
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-explore-the-azure-app-service.md)]

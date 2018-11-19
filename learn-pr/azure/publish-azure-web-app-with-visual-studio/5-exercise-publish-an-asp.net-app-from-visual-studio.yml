@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-azure-web-app-with-visual-studio.5-exercise-publish-an-asp.net-app-from-visual-studio
+title: Publish an ASP.NET app from Visual Studio
+metadata:
+  title: Publish an ASP.NET Core app from Visual Studio
+  description: Publish an ASP.NET Core app from Visual Studio
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-publish-an-asp.net-app-from-visual-studio.md)]

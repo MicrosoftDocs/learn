@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-azure-web-app-with-visual-studio.3-exercise-create-a-new-aspnet-app
+title: Create a new ASP.NET app
+metadata:
+  title: Create a new ASP.NET app
+  description: Create a new ASP.NET app
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-a-new-aspnet-app.md)]
