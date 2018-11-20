@@ -18,14 +18,15 @@ Azure Key Vault's API uses Azure Active Directory to authenticate users and appl
 
 Developers will usually only need **Get** and **List** permissions to a development-environment vault. A lead or senior developer will need full permissions to the vault to change and add secrets when necessary. Full permissions to production-environment vaults are typically reserved for senior operations staff.
 
-For apps, typically only **Get** permissions are required. Some apps may require **List** depending on the way the app is implemented. The app we'll implement in this module's exercise requires the **List** permission because of the technique it uses to read secrets from the vault.
+For apps, often only **Get** permissions are required. Some apps may require **List** depending on the way the app is implemented. The app we'll implement in this module's exercise requires the **List** permission because of the technique it uses to read secrets from the vault.
 
 Given all the trouble the company's been having with application secrets, management has asked you to create a small starter app to set the other developers on the right path. The app needs to demonstrate best practices for managing secrets as simply and securely as possible.
 
 ## Create the vault and store the secret in it
+
 To start, you'll create a vault and store one secret.
 
-###  Create the vault
+### Create the vault
 
 First, we'll create the vault and store our secret in it.
 
@@ -39,8 +40,8 @@ Run the following command in the Cloud Shell to create your vault.
 
 ```azurecli
 az keyvault create \
-    --name <your-unique-vault-name> \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-vault-name>
 ```
 
 When it finishes, you'll see JSON output describing the new vault.
