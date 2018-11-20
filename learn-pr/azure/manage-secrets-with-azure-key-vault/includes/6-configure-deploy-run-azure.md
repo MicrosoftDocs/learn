@@ -16,23 +16,56 @@ az appservice plan create \
 
 Next, run the following command to create the Web App that uses the App Service plan you just created:
 
+::: zone pivot="csharp"
+
 ```azurecli
 az webapp create \
-    --name <your-unique-app-name> \
     --plan keyvault-exercise-plan \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name>
 ```
 
+::: zone-end
+
+::: zone pivot="javascript"
+
+```azurecli
+az webapp create \
+    --plan keyvault-exercise-plan \
+    --runtime "node|10.6" \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name>
+```
+
+::: zone-end
+
 ## Add configuration to the app
+
+::: zone pivot="csharp"
 
 For deploying to Azure, we'll follow the App Service best practice of putting the VaultName configuration in an application setting instead of a configuration file. Run this command to create the application setting:
 
 ```azurecli
 az webapp config appsettings set \
-    --name <your-unique-app-name> \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --settings VaultName=<your-unique-vault-name>
+    --name <your-unique-app-name> \
+    --settings 'VaultName=<your-unique-vault-name>'
 ```
+
+::: zone-end
+
+::: zone pivot="javascript"
+
+For deploying to Azure, we'll follow the App Service best practice of putting the VaultName configuration in an application setting instead of a configuration file. We'll also set the `SCM_DO_BUILD_DURING_DEPLOYMENT` setting to `true` so that App Service restores our application's packages on the server and creates the necessary configuration to run the app. Run this command to create the application settings:
+
+```azurecli
+az webapp config appsettings set \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name> \
+    --settings 'VaultName=<your-unique-vault-name>' 'SCM_DO_BUILD_DURING_DEPLOYMENT=true'
+```
+
+::: zone-end
 
 ## Enable managed identity
 
@@ -40,8 +73,8 @@ Enabling managed identity on an app is a one-liner &mdash; run this to enable it
 
 ```azurecli
 az webapp identity assign \
-    --name <your-unique-app-name> \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name>
 ```
 
 From the JSON output that results, copy the **principalId** value. PrincipalId is the unique ID of the app's new identity in Azure Active Directory, and we're going to use it in the next step.
@@ -52,17 +85,19 @@ The last step before deploying is to assign Key Vault permissions to your app's 
 
 ```azurecli
 az keyvault set-policy \
+    --secret-permissions get list \
     --name <your-unique-vault-name> \
-    --object-id <your-managed-identity-principleid> \
-    --secret-permissions get list
+    --object-id <your-managed-identity-principleid>
 ```
 
 ## Deploy the app and try it out
 
+::: zone pivot="csharp"
+
 All your configuration is set and you're ready to deploy! The below commands will publish the site to the `pub` folder, zip it up into `site.zip`, and deploy the zip to App Service.
 
 > [!NOTE]
-> You'll need to `cd` back to the KeyVaultDemoApp directory if you haven't already.
+> You'll need to `cd` back to the KeyVaultDemoApp directory if you're not still there.
 
 ```azurecli
 dotnet publish -o pub
@@ -70,10 +105,30 @@ zip -j site.zip pub/*
 
 az webapp deployment source config-zip \
     --src site.zip \
-    --name <your-unique-app-name> \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name>
 ```
 
-Once you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. You should see the secret value, **reindeer_flotilla**.
+::: zone-end
+
+::: zone pivot="javascript"
+
+All your configuration is set and you're ready to deploy! The below commands will zip up your app into `site.zip` and deploy it to App Service. We exclude `node_modules` from the zip because App Service will restore them automatically when we deploy.
+
+> [!NOTE]
+> You'll need to `cd` back to the KeyVaultDemoApp directory if you're not still there.
+
+```azurecli
+zip site.zip * -x node_modules/
+
+az webapp deployment source config-zip \
+    --src site.zip \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name <your-unique-app-name>
+```
+
+::: zone-end
+
+The deployment may take a minute or two to complete. Once you get a result that indicates the site has deployed, open `https://<your-unique-app-name>.azurewebsites.net/api/SecretTest` in a browser. The app will take a moment to start up for the first time on the server, but once it does, you should see the secret value, **reindeer_flotilla**.
 
 Your app is finished and deployed!
