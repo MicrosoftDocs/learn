@@ -38,7 +38,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. On the **Compute** blade, you can see these various options at the top, a search box and some labeled dropdown boxes.
 
-1. Type [kbd]virtual machine images[/kbd] into the search box and press ENTER. You should now see a filtered list of Compute services related to virtual machine images.
+1. Type `virtual machine images` into the search box and press ENTER. You should now see a filtered list of Compute services related to virtual machine images.
 
 1. Explore the available dropdown filter boxes by clicking on the down arrow (it looks a bit like a chevron) and try some of them out. When you are satisfied, move on to the next step.
 
