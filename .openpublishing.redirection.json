@@ -190,6 +190,11 @@
         "source_path": "learn-pr/azure/intro-to-containers/6-summary.md",
         "redirect_url": "https://docs.microsoft.com/azure/containers/",
         "redirect_document_id": false
-    }
+    },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/index.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    },
    ]
 }

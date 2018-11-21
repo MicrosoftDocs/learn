@@ -33,7 +33,7 @@ modules:
 - learn.manage-vms-with-azure-cli
 #TODO: Add - Keep your VMs Updated (post-Ignite)
 #- learn.scale-and-size-virtual-machines
-- learn.make-your-virtual-machines-highly-available
+#- learn.make-your-virtual-machines-highly-available
 #- learn.configure-the-network-for-your-virtual-machines (POST-IGNITE)
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.caching-and-performance-azure-storage-and-disks
