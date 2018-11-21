@@ -196,5 +196,40 @@
         "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
         "redirect_document_id": false
     },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/1-introduction.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/2-preparing-to-use-the-azure-load-balancer.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/3-exercise-create-a-load-balancer.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/4-exercise-create-vms.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/5-configure-a-load-balancer-in-azure.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/6-exercise-configure-a-load-balancer-in-azure.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/7-summary.md",
+        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+        "redirect_document_id": false
+    }
    ]
 }
