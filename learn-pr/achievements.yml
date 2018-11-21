@@ -385,11 +385,11 @@ achievements:
 #  title: Protect your resources with Azure Security Center
 #  summary: Protect your resources with Azure Security Center
 #  iconUrl: http://via.placeholder.com/120x120
-- uid: learn.make-your-virtual-machines-highly-available.badge
-  type: badge
-  title: Make your virtual machines highly available
-  summary: Make your virtual machines highly available
-  iconUrl: /learn/achievements/make-your-virtual-machines-highly-available.svg
+#- uid: learn.make-your-virtual-machines-highly-available.badge
+#  type: badge
+#  title: Make your virtual machines highly available
+#  summary: Make your virtual machines highly available
+#  iconUrl: /learn/achievements/make-your-virtual-machines-highly-available.svg
 - uid: learn.implement-message-workflows-with-service-bus.badge
   type: badge
   title: Implement message-based communication workflows with Azure Service Bus
