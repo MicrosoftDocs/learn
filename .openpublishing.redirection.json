@@ -41,7 +41,7 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/access-data-with-cosmos-db-and-sql-api/index.md",
+        "source_path": "learn-pr/azure/access-data-with-cosmos-db-and-sql-api/index.md",
         "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": true
     },
