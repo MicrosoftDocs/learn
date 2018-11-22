@@ -10,7 +10,8 @@
       {
         "src": "azure",
         "files": [
-          "**.yml"
+          "**.yml",
+          "**.md"
         ],
         "dest": "modules"
       },
@@ -27,8 +28,7 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "azure/**"
+          "ThirdPartyNotices"         
         ]
       }
     ],
