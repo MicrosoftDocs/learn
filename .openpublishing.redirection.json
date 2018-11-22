@@ -41,9 +41,9 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/1-introduction.md",
+        "source_path": "learn-pr/access-data-with-cosmos-db-and-sql-api/index.md",
         "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+        "redirect_document_id": true
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/2-size-and-resize-virtual-machines.md",
