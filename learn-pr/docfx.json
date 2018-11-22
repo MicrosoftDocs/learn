@@ -10,8 +10,7 @@
       {
         "src": "azure",
         "files": [
-          "**.yml",
-         "**/*.md"
+          "**.yml"         
         ],
         "dest": "modules"
       },
