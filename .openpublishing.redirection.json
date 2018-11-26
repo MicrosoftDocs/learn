@@ -1,12 +1,12 @@
 {
   "redirections": [
     {
-        "source_path": "learn/paths/index.md",
+        "source_path": "learn-pr/paths/index.md",
         "redirect_url": "/learn/browse/",
         "redirect_document_id": false
     },
     {
-        "source_path": "learn/modules/index.md",
+        "source_path": "learn-pr/modules/index.md",
         "redirect_url": "/learn/browse/",
         "redirect_document_id": false
     },
@@ -37,11 +37,6 @@
     },
     {
         "source_path": "learn-pr/azure/scale-and-size-virtual-machines/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
-    },
-    {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/1-introduction.md",
         "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
         "redirect_document_id": false
     },
