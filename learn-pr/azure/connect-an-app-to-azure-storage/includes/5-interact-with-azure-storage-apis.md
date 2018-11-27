@@ -73,15 +73,15 @@ Client libraries can save a significant amount of work for application developer
 
 :::row:::  
     :::column:::  
-        Microsoft has Azure client libraries that support a number of languages and frameworks including:
-        - .NET
-        - Java
-        - Python
-        - Node.js
-        - Go
+    Microsoft has Azure client libraries that support a number of languages and frameworks including:
+    - .NET
+    - Java
+    - Python
+    - Node.js
+    - Go
     :::column-end:::
     :::column:::
-        <br> ![Sample logos of supported frameworks you can use with Azure](../media/4-common-tools.png) 
+        <br> ![Sample logos of supported frameworks you can use with Azure](../media/4-common-tools.png)
     :::column-end:::  
 :::row-end:::  
 

@@ -29,7 +29,6 @@ modules:
 - learn.design-for-security
 - learn.top-5-security-items-to-consider
 - learn.manage-secrets-with-azure-key-vault
-- learn.secure-your-azure-sql-database
 #TODO: Add - secure/protect resources with azure security center (POST-IGNITE)
 #TODO: Add - learn.auth-apps-with-app-services (POST-IGNITE)
 - learn.secure-access-azure-ad-multi-factor-authentication

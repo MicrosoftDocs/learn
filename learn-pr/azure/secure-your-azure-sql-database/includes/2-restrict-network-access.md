@@ -66,7 +66,7 @@ The database we created currently does not allow access from any connections. Th
     ssh <X.X.X.X>
     ```
 
-1. Recall the `sqlcmd` command we retrieved earlier. Go ahead and run it to attempt to connect to the database.
+1. Recall the `sqlcmd` command we retrieved earlier. Go ahead and run it to attempt to connect to the database. Make sure you replace `<username>` and `<password>` with the `ADMINUSER` credentials you specified in the previous unit.
 
     ```bash
     sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U <username> -P <password> -N -l 30
