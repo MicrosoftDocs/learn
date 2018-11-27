@@ -26,7 +26,7 @@ Let's now take a look at how to set up a user and grant them access to a databas
 
 Let's go ahead and create a new user that we can use to grant access to.
 
-1. In cloud shell, on your _appServer_ VM, connect to your database again as your admin user.
+1. In cloud shell, on your _appServer_ VM, connect to your database again as your `ADMINUSER`.
 
     ```bash
     sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U <username> -P <password> -N -l 30

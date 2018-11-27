@@ -51,7 +51,7 @@ Let's get things set up!
     az sql db show-connection-string --client sqlcmd --name marketplaceDb --server $SERVERNAME | jq -r
     ```
 
-    Your output resembles this. Keep this handy, you'll need this command to connect to your database later in this module.
+    Your output resembles this. Keep this handy, you'll need this command to connect to your database later in this module. Note the `<username>` and `<password>` placeholders in the command that you will want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
 
     ```output
     sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U <username> -P <password> -N -l 30
@@ -78,6 +78,9 @@ Now let's create the Linux VM that we'll use through some examples.
     ssh <X.X.X.X>
     ```
 
+    > [!NOTE]
+    > Two things to note. First, we don't need a password because we generated an SSH key pair as part of the VM creation. Second, The first time you shell into the VM it will give you a prompt about the authenticity of the host. This occurs because we are connecting to an IP address instead of a host name. Answering "yes" will save the IP as a valid host for connection and allow the connection to proceed.
+
 1. Now let's finish things up by installing mssql-tools on the Linux VM so we'll be able to connect to our database through sqlcmd.
 
     ```bash
@@ -88,7 +91,9 @@ Now let's create the Linux VM that we'll use through some examples.
     curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
     sudo apt-get update
     sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
-    
     ```
+
+    > [!NOTE]
+    > A lot of text will scroll by for some of these commands, so make sure you hit enter after the final command to ensure it runs.
 
 We've created an Azure SQL Database logical server, a database on that logical server, and a virtual machine called _appServer_ that we'll use to simulate network connectivity from an application server. Let's take a look at how we can properly secure our database.
