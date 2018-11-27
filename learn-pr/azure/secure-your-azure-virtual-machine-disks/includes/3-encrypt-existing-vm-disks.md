@@ -122,7 +122,7 @@ Get-AzureRmVmDiskEncryptionStatus  -ResourceGroupName <resource-group> -VMName <
 ```
 
 ```azurecli
-az vm encryption status --resource-group <resource-group> --name <vm-name>
+az vm encryption show --resource-group <resource-group> --name <vm-name>
 ```
 
 Both of these commands will return the status of each disk attached to the specified VM.
