@@ -9,7 +9,7 @@ To work with data in a storage account, your app will need two pieces of data:
 
 Each storage account has two unique _access keys_ that are used to secure the storage account. If your app needs to connect to multiple storage accounts, then your app will require an access key for each storage account.
 
-![An illustration showing an application connected to two different storage accounts in the cloud. Each storage account is accessible with a unique key.](..\media\6-multiple-accounts.png)
+![An illustration showing an application connected to two different storage accounts in the cloud. Each storage account is accessible with a unique key.](../media/6-multiple-accounts.png)
 
 ## REST API endpoint
 
