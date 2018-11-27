@@ -79,7 +79,7 @@ Now let's create the Linux VM that we'll use through some examples.
     ```
 
     > [!NOTE]
-    > Two things to note. First, we don't need a password because we generated an SSH key pair as part of the VM creation. Second, The first time you shell into the VM it will give you a prompt about the authenticity of the host. This occurs because we are connecting to an IP address instead of a host name. Answering "yes" will save the IP as a valid host for connection and allow the connection to proceed.
+    > Two things to note. First, we don't need a password because we generated an SSH key pair as part of the VM creation. Second, on the initial shell connection into the VM it will give you a prompt about the authenticity of the host. This occurs because we are connecting to an IP address instead of a host name. Answering "yes" will save the IP as a valid host for connection and allow the connection to proceed.
 
 1. Now let's finish things up by installing mssql-tools on the Linux VM so we'll be able to connect to our database through sqlcmd.
 
