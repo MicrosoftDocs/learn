@@ -157,7 +157,7 @@ Let's add support to our Node.js application to retrieve a connection string fro
 
 Node.js apps can include support to read from the **.env** file by adding the **dotenv** package.
 
-1. In the command prompt section of the window, add a dependency to the  *dotenv** package using `npm`.
+1. In the command prompt section of the window, add a dependency to the  **dotenv** package using `npm`.
 
     ```bash
     npm install dotenv --save
