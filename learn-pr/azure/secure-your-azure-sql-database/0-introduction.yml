@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-your-azure-sql-database.0-introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 11/09/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/0-introduction.md)]
