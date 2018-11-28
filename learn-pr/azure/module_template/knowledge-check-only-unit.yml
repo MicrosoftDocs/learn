@@ -9,6 +9,7 @@ metadata:
   ms.author: barlan #replace with your Microsoft alias
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+durationInMinutes: 1
 quiz:
   title: Check your knowledge
   questions:

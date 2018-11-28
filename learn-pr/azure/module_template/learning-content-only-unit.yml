@@ -9,6 +9,6 @@ metadata:
   ms.author: barlan #replace with your Microsoft alias
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1 #duration of the unit)
+durationInMinutes: 1 
 content: |
   [!include[](includes/learning-content-only-unit.md)] #reference to the content markdown file for this unit
