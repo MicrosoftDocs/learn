@@ -1,4 +1,4 @@
-You've developed two Azure functions locally. Let's now get those running in the cloud so that you can call them from Slack.
+You've developed two Azure functions locally. Let's now get your local functions running in the cloud so that you can call them from Slack.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -20,7 +20,7 @@ You're going to start by creating the Azure Function App using VS Code, and the 
 
    ![Create New Function App dialog.](../media/7.create-new-function-app.png)
 
-5. Name your app. You have to select a globally unique name. For this example, we'll use **mojifier-slack-function-app**.
+5. Name your app. Select a globally unique name. We'll use **mojifier-slack-function-app**.
 
    ![Choose App Name dialog with the name described previously being typed in.](../media/7.choose-app-name.png)
 
@@ -47,8 +47,7 @@ Visit
 <deployed-app-name>.azurewebsites.net/api/RespondToSlackCommand
 ```
 
-
-If this works, you should see some json returned.
+You should see some json returned.
 
 ```json
 {
@@ -64,7 +63,7 @@ If this works, you should see some json returned.
 
 ## Upload settings
 
-Remember, you have some settings we put in `local.settings.json`. These settings were the keys and URL for Cognitive Services. Since `local.settings.json` is just local, it's never copied to production when you deploy.
+Remember, you have some settings we put in `local.settings.json`. These settings were the keys and URL for Cognitive Services. Since `local.settings.json` is local, it's never copied to production when you deploy.
 
 Usually, you would need to open the Azure portal and manually add the settings in the UI, or use `func` in the Azure CLI. Since you're using VS Code, you can use the Azure Function extension and the command palette to upload your local settings!
 
@@ -79,10 +78,6 @@ Usually, you would need to open the Azure portal and manually add the settings i
 3. Choose the subscription that's associated with your function.
 
 4. Select the function app that you want to upload settings to. In the example, it's called **mojifier-slack-function-app**.
-
-5. If it asks you to overwrite any settings, choose **No To all**. This uploads only new settings, otherwise there is a risk that you override production settings with development settings.
-
-    ![Choose Local Setting. It's prompting the user with options of No to all, No, Yes to all, Cancel, and Yes.](../media/7.choose-no-to-all.png)
 
 ## Try it out
 

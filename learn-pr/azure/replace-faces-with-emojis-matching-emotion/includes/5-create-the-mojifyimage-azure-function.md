@@ -9,7 +9,7 @@ The Azure function extension created a JavaScript function. We need to convert i
     > [!NOTE]
     > If you're running `npm run build` and the related `tsc -w` command, then the `index.ts` file is instantly compiled to `index.js`. It should also create an `index.js.map` file. If the `index.js` and `index.js.map` files are not automatically created, check whether the `npm run build` command is running and that the output doesn't show any errors.
 
-1. Replace the code in `index.ts` with the following:
+1. Replace the code in `index.ts` with the following code:
 
     ```typescript
     export async function index(context, req) {
@@ -25,7 +25,7 @@ The Azure function extension created a JavaScript function. We need to convert i
 
 1. Make sure the local Azure function application is running using one of the methods you previously used: either use `func host start` or run it from the debug menu using the **Attach to JavaScript Function** task.
 
-    If the function app started correctly, then the output window should show something like this:
+    If the function app started correctly, then the output window should show something like this output:
 
     ```
     Http Functions:
@@ -34,7 +34,7 @@ The Azure function extension created a JavaScript function. We need to convert i
 
 1. Visit the URL in your browser. If everything is functioning correctly, it should print out `Hello!`.
 
-    This means that you've converted your function trigger from TypeScript to JavaScript.
+    If you see `Hello`, you've converted your function trigger from TypeScript to JavaScript.
 
 ## Configure your Face API environment variables
 
@@ -42,7 +42,7 @@ To make your code more secure, you shouldn't hard-code private data in your code
 
 When you create an Azure Functions project, it creates a file called `local.settings.json`. This file is in the `.gitignore` file so it isn't checked into source control. It's a place to store sensitive or local configurations that you don't want to be published. Anything in the `Values` object is made available to your Node.js code as an environment variable.
 
-1. Open `local.settings.json` in Visual Studio Code. By default, it looks like this:
+1. Open `local.settings.json` in Visual Studio Code. By default, the file has these contents:
 
     ```json
     {
@@ -54,27 +54,24 @@ When you create an Azure Functions project, it creates a file called `local.sett
     }
     ```
 
-1. Add your Face API variables, replacing the values below with those that you took note of when you created your Face API Azure resource.
+1. **Replace** the contents of this file with your Face API variables (i.e. remove the default settings from the file). Replace the `<face-api-url>` and `<face-api-key>` values with the variables that you saved, when you created your Face API Azure resource.
 
     ```json
     {
-      "IsEncrypted": false,
-      "Values": {
-        "AzureWebJobsStorage": "",
-        "FUNCTIONS_WORKER_RUNTIME": "node",
-        "FACE_API_URL": "<face-api-url>",
-        "FACE_API_KEY": "<face-api-key>"
-      }
+        "Values": {
+          "FACE_API_URL": "<face-api-url>",
+          "FACE_API_KEY": "<face-api-key>"
+        }
     }
     ```
 
 The `FACE_API_URL` and `FACE_API_KEY` variables will be available to Node.js as environment variables.
 
-These are used in the [calls to the Face API](https://github.com/MicrosoftDocs/mslearn-the-mojifier/blob/master/shared/faceapi/index.ts)
+The variables are used in the [calls to the Face API](https://github.com/MicrosoftDocs/mslearn-the-mojifier/blob/master/shared/faceapi/index.ts)
 
 ## Write the MojifyImage function
 
-1. Replace the code in `MojifyImage/index.ts` with the following:
+1. Replace the code in `MojifyImage/index.ts` with the following code:
 
     ```typescript
     import Jimp = require("jimp");
@@ -124,11 +121,11 @@ These are used in the [calls to the Face API](https://github.com/MicrosoftDocs/m
 
     You should see the json response that the Face API returns when passed an image: `http://localhost:7071/api/MojifyImage?imageUrl=<image>`.
 
-    Look at the code in [`shared/faceapi/index.ts`](https://github.com/MicrosoftDocs/mslearn-the-mojifier/blob/master/shared/faceapi/index.tsazure-portal=true) to see how the response from the Face API is being converted into an instance of an array of `Face` objects containing the emotive coordinates, the location of the face in the image, the matching emoji, and the emoji icon.
+    Look at the code in [`shared/faceapi/index.ts`](https://github.com/MicrosoftDocs/mslearn-the-mojifier/blob/master/shared/faceapi/index.tsazure-portal=true) to see how the response from the Face API is being converted into an instance of an array of `Face` objects. Each `Face` object contains the emotive coordinates, the location of the face in the image, the matching emoji, and the emoji icon.
 
 1. Create the mojified image
 
-    Next, fill in the `createMojifiedImage(context, imageUrl, faces)` TypeScript function to create the composite image consisting of the original image along with its matching emoji(s). This function uses the `Jimp` npm package, an open source image manipulation library.
+    Next, fill in the `createMojifiedImage(context, imageUrl, faces)` TypeScript function to create the composite image consisting of the original image along with its matching emoji(s). This function uses the `Jimp` npm package, an open-source image manipulation library.
 
     Replace the `TODO` line in this function with the following code:
 
@@ -214,7 +211,7 @@ These are used in the [calls to the Face API](https://github.com/MicrosoftDocs/m
         }
         ```
 
-1. Setup the return HTTP response in the `index` function
+1. Set up the return HTTP response in the `index` function
 
     Add the following code to the top of the `index(context, req)` TypeScript function to configure the HTTP response:
 
@@ -251,7 +248,7 @@ These are used in the [calls to the Face API](https://github.com/MicrosoftDocs/m
 
 1. Make sure that the local Azure function application is running using one of the methods you previously used: either use `func host start` or run it from the debug menu using the **Attach to JavaScript Function** task.
 
-    If the function app started correctly, then the output window should show something like this:
+    If the function app started correctly, then the output window should show something like this output:
 
     ```
     Http Functions:
