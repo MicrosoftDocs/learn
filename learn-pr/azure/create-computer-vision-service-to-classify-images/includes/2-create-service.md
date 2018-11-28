@@ -44,16 +44,7 @@ You call Computer Vision in your application using client libraries or the REST 
 
 1. Parse the response
 
-    The response holds the insight the Computer Vision API had about your image as a JSON payload.
-
-Suppose you created my Computer Vision subscription in the `westus` region and got a subscription key to access the API. Let's give the key a fictitious value of `xxxx-xxxxx-xxxx-xxxx`. You now want to generate a thumbnail for an image located at `http://example.com/images/test.jpg`. Using `generateThumbnail`, the request would look like the following.
-
-```
-curl POST "https://westus2.api.cognitive.microsoft.com/vision/v2.0/generateThumbnail
--H "Content-Type: application/json"
--H "Ocp-Apim-Subscription-Key: {xxxx-xxxxx-xxxx-xxxx}"
--d "{'url':'http://example.com/images/test.jpg'}"
-```
+    The response holds the insight the Computer Vision API has about your image, as a JSON payload.
 
 In this module, we'll run all exercises in the Azure CLI using the integrated Cloud Shell. Let's find out a little more about this setup.
 
