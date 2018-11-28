@@ -466,3 +466,8 @@ achievements:
   title: Introduction to Azure
   summary: Introduction to Azure Government
   iconUrl: /learn/achievements/intro-to-azure-government.svg
+- uid: learn.module-template.badge #sample achievement badge for module template.
+  type: badge
+  title: Module template
+  summary: Module template badge.
+  iconUrl: http://via.placeholder.com/120x120
