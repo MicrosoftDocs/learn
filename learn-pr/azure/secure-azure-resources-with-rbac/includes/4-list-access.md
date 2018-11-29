@@ -7,7 +7,11 @@ At First Up Consultants, you've been granted access to a resource group for the 
 
 Follow these steps to see what roles are currently assigned to you.
 
-1. In the upper-right corner of the Azure portal, click your user name to open the menu.
+1. In the upper-right corner of the Azure portal, click your username to open the menu.
+
+1. Make sure you are signed in as **LabAdmin-_XXXXXXX_**. If not, sign out and sign in using the username and password on the **Resources** tab.
+
+1. Click the ellipsis (**...**) to see more links.
 
     ![Screenshot of user menu with My permissions highlighted](../media/4-my-permissions-menu.png)
 
@@ -15,7 +19,7 @@ Follow these steps to see what roles are currently assigned to you.
 
     ![Screenshot of the My permissions pane](../media/4-my-permissions-pane.png)
 
-    On the My permissions pane, you can see a list of the roles that you have been assigned and the scope. Your list will look different.
+    On the My permissions pane, you can see the roles that you have been assigned and the scope. Your list will look different.
 
 ## List role assignments for a resource group
 
