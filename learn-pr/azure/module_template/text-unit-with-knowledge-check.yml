@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-template.learning-unit-with-knowledge-check
+uid: learn.module-template.text-unit-with-knowledge-check
 title: Unit title
 metadata:
   title: Unit title
@@ -9,9 +9,10 @@ metadata:
   ms.author: barlan #replace with your Microsoft alias
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 1 
 content: |
-  [!include[](includes/learning-content-only-unit.md)] #reference to the content markdown file for this unit
+  [!include[](includes/text-unit-with-knowledge-check.md)] #reference to the content markdown file for this unit
 quiz:
   title: Check your knowledge
   questions:

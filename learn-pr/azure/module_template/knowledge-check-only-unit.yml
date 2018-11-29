@@ -3,12 +3,13 @@ uid: learn.module-template.knowledge-check-only-unit
 title: Knowledge check
 metadata:
   title: Knowledge Check
-  description: Description # replace with the description for your module
+  description: Description #replace with the description for your module
   ms.date: 11/27/2018 #replace with the latest publish date
   author: barlanmsft #replace with your GitHub username
   ms.author: barlan #replace with your Microsoft alias
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 1
 quiz:
   title: Check your knowledge

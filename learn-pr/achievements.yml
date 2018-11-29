@@ -5,6 +5,11 @@ achievements:
 #  title: Build a serverless web app
 #  summary: Badge for the 'Build a serverless web app' module.
 #  iconUrl: /learn/achievements/build-a-serverless-web-app.svg
+- uid: learn.module-template.badge #sample achievement badge for module template.
+  type: badge
+  title: Module template
+  summary: Module template badge.
+  iconUrl: http://via.placeholder.com/120x120
 - uid: learn.connect-app-to-azure-storage.badge
   type: badge
   title: Connect an app to Azure Storage
@@ -466,8 +471,3 @@ achievements:
   title: Introduction to Azure
   summary: Introduction to Azure Government
   iconUrl: /learn/achievements/intro-to-azure-government.svg
-- uid: learn.module-template.badge #sample achievement badge for module template.
-  type: badge
-  title: Module template
-  summary: Module template badge.
-  iconUrl: http://via.placeholder.com/120x120
