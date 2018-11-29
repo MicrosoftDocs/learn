@@ -18,7 +18,7 @@ using Microsoft.WindowsAzure.Storage;
 
 CloudStorageAccount storageAccount = CloudStorageAccount.Parse("your-storage-key-connection-string");
 
-CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient()
+CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 ```
 
 `CloudStorageAccount` and the client objects are lightweight and can be created on demand or created up front to be shared within your application. A standard approach is to use `CloudStorageAccount.TryParse()` near the entry point of your application to create an instance, and make it available within your application for creating client instances.
