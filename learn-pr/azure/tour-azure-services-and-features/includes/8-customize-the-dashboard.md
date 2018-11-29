@@ -1,4 +1,4 @@
-Next, let's look at how to create and modify dashboards using the Azure Portal, and by editing the underlying JSON file directly.
+Next, let's look at how to create and modify dashboards using the Azure Portal, and by editing the underlying JSON file directly. In this unit, you'll learn your way around, and in the next unit you will try out the things you've learned.
 
 ## What is a dashboard?
 
@@ -13,21 +13,21 @@ Dashboards are stored as JavaScript Object Notation (JSON) files. This means the
 
 ## Explore the default dashboard
 
-The default dashboard is named "Dashboard". When you log into the portal, you are presented with this dashboard containing five web parts.
+The default dashboard is named "Dashboard". When you log into the portal for the first time, you are presented with this dashboard containing four tiles.
 
-![Screenshot showing the default dashboard with different web parts numbered and highlighted.](../media/8-dashboard-default-webparts.png)
+![Screenshot showing the default dashboard with different parts numbered and highlighted.](../media/8-dashboard-default-webparts.png)
 
 These default web parts are
 
-1. All resources
+1. Dashboard controls
 
-1. Azure Getting Started
+1. All resources tile
 
-1. Quickstarts + tutorials
+1. Quickstarts + tutorials tile
 
-1. Marketplace
+1. Service Health tile
 
-1. Service Health
+1. Marketplace tile
 
 ## Creating and managing dashboards
 
@@ -49,27 +49,22 @@ To create a new dashboard, click **New dashboard**. The dashboard workspace appe
 
 The **Upload** and **Download** buttons enable you to download your current dashboard as a JSON file, customize it, and then distribute it and upload it or have someone else upload that file back to the Azure portal, thereby replacing their current dashboard.
 
-If you click **Download**, the current dashboard downloads into your default Downloads folder. Opening the downloaded file then shows the JSON code.
+If you click **Download**, the current dashboard downloads the JSON code as a file you can edit locally. You can then upload it back to Azure by clicking the **Upload** button. This is discussed further below.
 
-![Screenshot of the downloaded Dashboard JSON code](../media/8-dashboard-json-code.png)
-
-You can then edit that code manually (for example, by changing tile sizes) and then upload it back to Azure by clicking the **Upload** button.
-
-### Edit a dashboard
+## Edit a dashboard using the portal
 
 Although you can edit a dashboard by downloading the JSON file, changing values in the file, and uploading the file back to Azure, that approach isn't intuitive for designing a user interface. To use the GUI to configure your current dashboard you can enter edit mode in several ways:
 
-1. Click the **Edit** button
-1. Right-click on the dashboard and click **Edit**. 
+1. Click the **Edit** (pencil icon) button.
+1. Right-click on the dashboard background area and select **Edit**.
+1. Right-click on a tile and a menu will appear with edit options.
 1. Hover over a tile on the dashboard - a `...` menu will appear on the top/right corner with edit options.
 
 The dashboard switches to edit mode.
 
 ![Screenshot showing the dashboard in the Edit mode](../media/8-edit-dashboard.png)
 
-On the left-hand side appears the Tile Gallery, with several possible tiles. You can filter the Tile Gallery by category and resource type:
-
-![Screenshot showing the Tile Gallery](../media/8-tile-gallery.png)
+On the left-hand side appears the Tile Gallery, with several possible tiles. You can filter the Tile Gallery by category and resource type.
 
 Adding tiles is as easy as selecting the tile from the list on the left and then dragging it to the work area. You can then move each tile about, resize it, or change the data that it displays.
 
@@ -104,19 +99,22 @@ When you have arranged the tiles as you want them, either click **Done customizi
 
 ## Edit a dashboard by changing the JSON file
 
-You can also edit a dashboard by changing the JSON file. This approach provides more options for changing settings, but you cannot see the changes until you upload the file back into Azure.
+You can also edit a dashboard by changing the JSON file. This approach provides more options for changing settings, but you cannot see the changes until you upload the file back into Azure. The easiest starting point is to download the dashboard JSON as previously described and edit that file.
 
 ![Screenshot of the downloaded dashboard JSON file.](../media/8-json-code.png)
 
-In the example above, to change the size of the tile, edit the **colSpan** and **rowSpan** variables, then save the file and upload it back to Azure. You can also distribute the file to other users.
+As an example, in the JSON shown above, to change the size of the tile you would edit the **colSpan** and **rowSpan** variables, then save the file and upload it back to Azure.
+
+> [!Tip]
+> You can also distribute the dashboard JSON file to other users.
 
 ## Reset a dashboard
 
-You can reset any dashboard to the default style. In edit mode, right-click and select **Reset to default state**. A dialog box will ask you to confirm that you want to reset that dashboard.
+You can reset any dashboard to the default style. In edit mode, right-click the dashboard background and select **Reset to default state**. A dialog box will ask you to confirm that you want to reset that dashboard.
 
 ## Share or unshare a dashboard
 
-When you define a new dashboard, it is private and visible only to your account. To make it visible to others, you need to share a dashboard. However, as with any other Azure resource, you need to specify a resource group (or use an existing resource group) to store shared dashboards in. If you do not have an existing resource group, Azure will create a *dashboards* resource group in whichever location you specify. If you have existing resource groups, you can specify that resource group to store the dashboards.
+When you define a new dashboard, it is private and visible only to your account. To make it visible to others, you need to share a dashboard. However, as with any other Azure resource, you need to specify a new resource group (or use an existing resource group) in which to store shared dashboards. If you do not have an existing resource group, Azure will create a *dashboards* resource group in whichever location you specify. If you have existing resource groups, you can specify that resource group to store the dashboards.
 
 ![Screenshot of the Sharing and access control blade before the dashboard is shared.](../media/8-share-dashboards-default.png)
 
