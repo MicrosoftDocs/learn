@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-with-devops.2-what-is-devops
+metadata:
+  title: What is DevOps?
+  description: What is DevOps?
+title: What is DevOps?
+durationInMinutes: 10
+content: |
+ [!include[](includes/2-what-is-devops.md)]

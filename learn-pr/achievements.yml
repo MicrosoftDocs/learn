@@ -170,11 +170,11 @@ achievements:
 #  title: Choose a Web Hosting Option in Azure
 #  summary: Choose a Web Hosting Option in Azure
 #  iconUrl: http://via.placeholder.com/120x120
-#- uid: learn.interactive-iot-deployments.badge
-#  type: badge
-#  title: Working with interactive IoT deployments in Azure
-#  summary: Working with interactive IoT deployments in Azure
-#  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.get-started-with-devops.badge
+  type: badge
+  title: Get started with DevOps
+  summary: In this module, we'll explore what is DevOps and learn how to get started with DevOps.
+  iconUrl: /learn/achievements/get-started-with-devops.svg
 #- uid: learn.iot-for-ops.badge
 #  type: badge
 #  title: IoT Suite for ops
