@@ -21,7 +21,7 @@
           "**/*.yml"
         ],
         "exclude": [
-          "**/**/module-template/**",
+          "**/**/module_template/**",
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
