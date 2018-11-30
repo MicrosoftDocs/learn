@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.module-template.knowledge-check-only-unit
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Description #replace with the description for your module
+  ms.date: 11/27/2018 #replace with the latest publish date
+  author: barlanmsft #replace with your GitHub username
+  ms.author: barlan #replace with your Microsoft alias
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Question 1 (True/False)"
+    choices:
+    - content: "True"
+      isCorrect: true
+      correctExplanation: "Explanation for the correct answer"
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "Explanation for the incorrect answer"
+  - content: "Question 2 (multiple choice, at this time only one correct answer allowed)"
+    choices:
+    - content: "Answer option 1"
+      isCorrect: false
+      incorrectExplanation: "Explanation for the incorrect answer"
+    - content: "Answer option 2"
+      isCorrect: false
+      incorrectExplanation: "Explanation for the incorrect answer"
+    - content: "Answer option 3"
+      isCorrect: true
+      correctExplanation: "Explanation for the correct answer"
+  #repeat the content body for as many questions as required
