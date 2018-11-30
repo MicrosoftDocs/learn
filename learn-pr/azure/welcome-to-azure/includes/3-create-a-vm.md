@@ -142,6 +142,10 @@ While you're waiting, let's review the command you just ran.
 * **Standard_DS2_v2** refers to the size of the VM. This size has two virtual CPUs and 7 GB of memory.
 * The username and password enable you to connect to your VM later. For example, you can connect over Remote Desktop or WinRM to work with and configure the system.
 
+> [!NOTE]
+> Although you have everything you need to connect directly to your VM, don't do so quite yet.
+> In the next unit, you'll see one way to connect to the VM to make changes to its configuration.
+
 By default, Azure assigns a public IP address to your VM. You can configure a VM to be accessible from the Internet or only from the internal network.
 
 You can also check out this short video about some of the options you have to create and manage VMs.
@@ -166,6 +170,32 @@ When the VM is ready, you see information about it. Here's an example.
 }
 ```
 
+> [!NOTE]
+> On Microsoft Learn, you'll often see sample output, like the output shown above. We show you these examples so you can compare them to the output you see. However, it's just an example, so don't enter it into the Cloud Shell session.
+
+## Verify your VM is running
+
+The `az vm create` command succeeded, but let's verify that your VM is up and running.
+
+1. Run the following `az vm get-instance-view` command to verify that the VM was successfully created and is running.
+
+    ```azurecli
+    az vm get-instance-view \
+      --name myVM \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --output table
+    ```
+
+    The output you see resembles this.
+
+    ```output
+    Name    ResourceGroup                         Location    ProvisioningState    PowerState
+    ------  ------------------------------------  ----------  -------------------  ------------
+    myVM    <rgn>[sandbox resource group name]</rgn>  eastus      Succeeded            VM running
+    ```
+
+    You see the VM's name, its resource group, and its location. You also see that the VM was provisioned, or created, successfully and that it's running.
+
 ::: zone-end
 
 ::: zone pivot="linux-cloud"
@@ -183,6 +213,7 @@ Let's get your Linux VM up and running.
       --image UbuntuLTS \
       --location eastus \
       --size Standard_DS2_v2 \
+      --admin-username azureuser \
       --generate-ssh-keys
     ```
 
@@ -196,7 +227,12 @@ While you're waiting, let's review the command you just ran.
 * The resource group, or the VM's logical container, is named **<rgn>[sandbox resource group name]</rgn>**.
 * **UbuntuLTS** specifies the Ubuntu 16.04 LTS VM image.
 * **Standard_DS2_v2** refers to the size of the VM. This size has two virtual CPUs and 7 GB of memory.
+* The `--admin-username` option specifies **azureuser** as the username for the VM. The username can be whatever you want.
 * The `--generate-ssh-keys` option creates an SSH key pair to enable you to log in to the VM.
+
+> [!NOTE]
+> Although you have everything you need to connect directly to your VM, don't do so quite yet.
+> In the next unit, you'll see one way to connect to the VM to make changes to its configuration.
 
 By default, Azure assigns a public IP address to your VM. You can configure a VM to be accessible from the Internet or only from the internal network.
 
@@ -210,17 +246,43 @@ When the VM is ready, you see information about it. Here's an example.
 
 ```json
 {
-    "fqdns": "",
-    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM",
-    "location": "eastus",
-    "macAddress": "00-0D-3A-1D-EB-02",
-    "powerState": "VM running",
-    "privateIpAddress": "10.0.0.4",
-    "publicIpAddress": "137.135.110.210",
-    "resourceGroup": "myResourceGroup",
-    "zones": ""
+  "fqdns": "",
+  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM",
+  "location": "eastus",
+  "macAddress": "00-0D-3A-1D-EB-02",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.4",
+  "publicIpAddress": "137.135.110.210",
+  "resourceGroup": "myResourceGroup",
+  "zones": ""
 }
 ```
+
+> [!NOTE]
+> On Microsoft Learn, you'll often see sample output, like the output shown above. We show you these examples so you can compare them to the output you see. However, it's just an example, so don't enter it into the Cloud Shell session.
+
+## Verify your VM is running
+
+The `az vm create` command succeeded, but let's verify that your VM is up and running.
+
+1. Run the following `az vm get-instance-view` command to verify that the VM was successfully created and is running.
+
+    ```azurecli
+    az vm get-instance-view \
+      --name myVM \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --output table
+    ```
+
+    The output you see resembles this.
+
+    ```output
+    Name    ResourceGroup                         Location    ProvisioningState    PowerState
+    ------  ------------------------------------  ----------  -------------------  ------------
+    myVM    <rgn>[sandbox resource group name]</rgn>  eastus      Succeeded            VM running
+    ```
+
+    You see the VM's name, its resource group, and its location. You also see that the VM was provisioned, or created, successfully and that it's running.
 
 ::: zone-end
 
