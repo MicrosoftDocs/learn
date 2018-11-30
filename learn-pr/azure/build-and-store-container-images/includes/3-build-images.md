@@ -13,49 +13,52 @@ We'll use a new Dockerfile for our example.
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-The first step is to create a new file named `Dockerfile`. You can use any text editor to edit the file. We'll use Cloud Shell Editor for this example. Enter the following command into the Cloud Shell window to open the editor.
+The first step is to create a new file named `Dockerfile`. You can use any text editor to edit the file. We'll use Cloud Shell Editor for this example.
 
-```bash
-code
-```
+1. Enter the following command into the Cloud Shell window to open the editor.
 
-Copy the following contents to your new Dockerfile. Make sure to save the file.
+    ```bash
+    code
+    ```
 
-```bash
-FROM    node:9-alpine
-ADD     https://raw.githubusercontent.com/Azure-Samples/acr-build-helloworld-node/master/package.json /
-ADD     https://raw.githubusercontent.com/Azure-Samples/acr-build-helloworld-node/master/server.js /
-RUN     npm install
-EXPOSE  80
-CMD     ["node", "server.js"]
-```
+1. Copy the following contents editor.
 
-Use the key combination <kbd>Ctrl+S</kbd> (<kbd>Cmd+S</kbd> for Mac) to save. Name the file `Dockerfile` when prompted.
+    ```bash
+    FROM    node:9-alpine
+    ADD     https://raw.githubusercontent.com/Azure-Samples/acr-build-helloworld-node/master/package.json /
+    ADD     https://raw.githubusercontent.com/Azure-Samples/acr-build-helloworld-node/master/server.js /
+    RUN     npm install
+    EXPOSE  80
+    CMD     ["node", "server.js"]
+    ```
 
-This configuration adds a Node.js application to the `node:9-alpine` image. After that, it configures the container to serve the application on port 80 via the *EXPOSE* instruction.
+1. Use the key combination <kbd>Ctrl+S</kbd> (<kbd>Cmd+S</kbd> for Mac) to save your changes. Name the file `Dockerfile` when prompted.
 
-Now run the Azure CLI command `az acr build` to build the container image from the Dockerfile.
+    This configuration adds a Node.js application to the `node:9-alpine` image. After that, it configures the container to serve the application on port 80 via the *EXPOSE* instruction.
 
-```azurecli
-az acr build --registry <acrName> --image helloacrtasks:v1 .
-```
+1. Run the following Azure CLI command to build the container image from the Dockerfile. *$ACR_NAME* is the variable you defined in the preceding unit to hold your container registry name.
 
-You'll see the image being built and pushed to your Container Registry as you run the command.
+    ```azurecli
+    az acr build --registry $ACR_NAME --image helloacrtasks:v1 .
+    ```
+
+    > [!NOTE]
+    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case is the current directory. Since we didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in our current directory.
 
 ## Verify the image
 
-Run the following command to verify that the image has been created and stored in the registry.
+1. Run the following command in the Cloud Shell to verify that the image has been created and stored in the registry.
 
-```azurecli
-az acr repository list --name <acrName> --output table
-```
+    ```azurecli
+    az acr repository list --name $ACR_NAME --output table
+    ```
 
-The output should look similar to the following:
-
-```console
-Result
--------------
-helloacrtasks
-```
+    The output from this command should look similar to the following:
+    
+    ```console
+    Result
+    -------------
+    helloacrtasks
+    ```
 
 The `helloacrtasks` image is now ready to be used.
