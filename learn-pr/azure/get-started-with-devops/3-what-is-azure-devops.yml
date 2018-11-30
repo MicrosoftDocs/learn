@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-with-devops.3-what-is-azure-devops
+metadata:
+  title: What is Azure DevOps?
+  description: What is Azure DevOps?
+title: What is Azure DevOps?
+durationInMinutes: 10
+content: |
+ [!include[](includes/3-what-is-azure-devops.md)]

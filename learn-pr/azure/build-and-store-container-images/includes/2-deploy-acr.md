@@ -5,37 +5,49 @@ In this unit, you will create an Azure container registry using the Azure CLI.
  
 ## Create an Azure container registry
 
-We'll be working in a free sandbox, so there's no need to create your own Resource Group. Create an Azure container registry with the `az acr create` command. The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters. Replace `<acrName>` with a unique name for your registry.
+We'll be working in a free sandbox, so there's no need to create your own Resource Group. Create an Azure container registry with the `az acr create` command. The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters.
 
-In this example, a premium registry SKU is deployed. The premium SKU is required for geo-replication. Enter the following command into the cloud shell editor.
+In this example, a premium registry SKU is deployed. The premium SKU is required for geo-replication. 
 
-```azurecli
-az acr create --resource-group <rgn>[sandbox resource group name]</rgn> --name <acrName> --sku Premium
-```
+To begin, we'll define an environment variable in the Cloud Shell called **ACR_NAME**  to hold the name we want to give our new container registry.
 
-Here's an example output for a new Azure container registry:
+1. Run the following command to define a variable called ACR_NAME. Replace `<registry-name>` with a unique name you want to  give to the new container registry. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters.
 
-```output
-{
-  "adminUserEnabled": false,
-  "creationDate": "2018-08-15T19:19:07.042178+00:00",
-  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.ContainerRegistry/registries/myACR0007",
-  "location": "eastus",
-  "loginServer": "myacr.azurecr.io",
-  "name": "myACR",
-  "provisioningState": "Succeeded",
-  "resourceGroup": "myResourceGroup",
-  "sku": {
-    "name": "Premium",
-    "tier": "Premium"
-  },
-  "status": null,
-  "storageAccount": null,
-  "tags": {},
-  "type": "Microsoft.ContainerRegistry/registries"
-}
-```
+    ```azurecli
+    ACR_NAME=`<registry-name>`
+    ```
+1. Enter the following command into the cloud shell editor to create our new container registry.
 
-The rest of this module refers to `<acrName>` as a placeholder for the container registry name that you chose in this step.
+    ```azurecli
+    az acr create --resource-group <rgn>[sandbox resource group name]</rgn> --name $ACR_NAME --sku Premium
+    ```
 
-In this unit, you created an Azure container registry using the Azure CLI.
+    [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
+    The following snippet is an example response from the `az acr create` command. In tis example, the registry name was *myACR*. Note that the loginServer value below is the registry name in lowercase, by default.  
+    
+    ```output
+    {
+      "adminUserEnabled": false,
+      "creationDate": "2018-08-15T19:19:07.042178+00:00",
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myResourceGroup/providers/Microsoft.ContainerRegistry/registries/myACR0007",
+      "location": "eastus",
+      "loginServer": "myacr.azurecr.io",
+      "name": "myACR",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "myResourceGroup",
+      "sku": {
+        "name": "Premium",
+        "tier": "Premium"
+      },
+      "status": null,
+      "storageAccount": null,
+      "tags": {},
+      "type": "Microsoft.ContainerRegistry/registries"
+    }
+    ```
+
+> [!IMPORTANT]
+> Commands in the rest of this module will use the **ACR_NAME** variable value. 
+
+In this unit, you created an Azure Container Registry using the Azure CLI. We'll use that new container registry in the next unit when we build container images.

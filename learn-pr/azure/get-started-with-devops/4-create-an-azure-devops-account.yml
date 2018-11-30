@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-with-devops.4-create-an-azure-devops-account
+metadata:
+  title: Exercise - Create an Azure DevOps account
+  description: Create an Azure DevOps account
+title: Exercise - Create an Azure DevOps account
+durationInMinutes: 10
+content: |
+ [!include[](includes/4-create-an-azure-devops-account.md)]
