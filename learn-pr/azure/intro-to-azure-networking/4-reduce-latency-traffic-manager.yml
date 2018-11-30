@@ -17,6 +17,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
+  - content: 'What is network latency?'
+    choices:
+    - content: "The amount of data that can fit on the connection."
+      isCorrect: false
+      incorrectExplanation: "_Bandwidth_ refers to the amount of data that can fit on the connection."
+    - content: "The distance data must travel to reach its destination."
+      isCorrect: false
+      incorrectExplanation: "Although distance can affect latency, latency does not measure distance."
+    - content: "The time it takes for data to travel over the network."
+      isCorrect: true
+      correctExplanation: "Latency measures the time it takes for data to reach its destination. Latency is typically measured in milliseconds."
   - content: 'How does Azure Traffic Manager reduce latency?'
     choices:
     - content: 'It chooses only the fastest networks between endpoints.'
@@ -28,12 +39,3 @@ quiz:
     - content: 'It caches content, similar to how content delivery networks work.'
       isCorrect: false
       incorrectExplanation: "Choosing the server that's closest to the user is a good way to reduce latency."
-
-  - content: 'Suppose you live in England, but your DNS server is in Italy. How does Traffic Manager direct traffic?'
-    choices:
-    - content: "It chooses the service that's closest to England."
-      isCorrect: false
-      incorrectExplanation: "Traffic Manager uses the _DNS server_ that's closest to the user, to direct traffic."
-    - content: "It chooses the service that's closest to Italy."
-      isCorrect: true
-      correctExplanation: "Traffic Manager uses the _DNS server_ that's closest to the user, to direct traffic."
