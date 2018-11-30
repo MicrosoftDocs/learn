@@ -8,8 +8,6 @@ The first thing we need to do is create an empty Azure Cosmos DB database and co
 
 If you've been using Azure for a while, you might have multiple subscriptions available to you. This is often the case for developers who might have a subscription for Visual Studio, and another for corporate resources.
 
-
-
 The Azure sandbox has already selected the Concierge Subscription for you in the Cloud Shell, and you can validate the subscription setting using these steps. Or, when you are working with your own subscription, you can use the following steps to switch subscriptions with the Azure CLI.
 
 1. Start by listing the available subscriptions.
