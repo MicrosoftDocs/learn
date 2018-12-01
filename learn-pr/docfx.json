@@ -21,7 +21,6 @@
           "**/*.yml"
         ],
         "exclude": [
-          "/azure/module_template/**",
           "**/obj/**",
           "**/includes/**",
           "_themes/**",
@@ -29,7 +28,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"         
+          "ThirdPartyNotices",
+          "azure/**"
         ]
       }
     ],
