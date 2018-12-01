@@ -28,8 +28,7 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "azure/**"
+          "ThirdPartyNotices"
         ]
       }
     ],
