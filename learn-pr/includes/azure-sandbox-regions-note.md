@@ -1,5 +1,4 @@
 - westus2
-- westcentralus
 - southcentralus
 - centralus
 - eastus

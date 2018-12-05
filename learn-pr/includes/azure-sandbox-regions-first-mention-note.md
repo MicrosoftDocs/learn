@@ -3,7 +3,6 @@ The free sandbox allows you to create resources in a subset of Azure's global re
 :::row:::
     :::column:::
         - westus2  
-        - westcentralus  
         - southcentralus  
         - centralus  
         - eastus  
