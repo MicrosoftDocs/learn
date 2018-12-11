@@ -20,7 +20,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. On the right side of that pane, select **Storage account - blob, file, table, queue**.
 
-    ![Screenshot of the Azure portal showing the Create a resource blade with the Storage category and Storage account option highlighted.](..\media\5-portal-storage-select.png)
+    ![Screenshot of the Azure portal showing the Create a resource blade with the Storage category and Storage account option highlighted.](../media/5-portal-storage-select.png)
 
 ### Configure the basic options
 
