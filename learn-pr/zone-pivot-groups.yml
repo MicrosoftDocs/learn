@@ -80,3 +80,49 @@ groups:
       title: UWP
     - id: wpf
       title: WPF
+- id: cognitive-services
+  title: Azure Cognitive Services
+  prompt: Choose the Azure Cognitive Services category you want to see
+  pivots:
+  - id: vision
+    title: Vision
+  - id: speech
+    title: Speech
+  - id: language
+    title: Language
+  - id: knowledge
+    title: Knowledge
+  - id: search
+    title: Search
+- id: bot-services
+  title: Azure Bot Services
+  prompt: Explore the Azure Bot Service scenarios below
+  pivots:
+    - id: commerce
+      title: Commerce
+    - id: information
+      title: Information
+    - id: enterprise
+      title: Enterprise Productivity
+- id: com-strategy
+  title: COM-Strategy
+  prompt: Select each of the below buttons to learn more about the strategies.
+  pivots:
+    - id: business-strategy
+      title: Business Strategy
+    - id: people-strategy
+      title: People Strategy
+    - id: technology-strategy
+      title: Technology Strategy
+- id: migration-strategy  
+  title: Migration-Strategy
+  prompt: Click on each of the buttons to learn more about each migration strategy.
+  pivots:
+    - id: rehost
+      title: Rehost
+    - id: refractor
+      title: Refractor
+    - id: rearchitect
+      title: Rearchitect
+    - id: rebuild
+      title: Rebuild
