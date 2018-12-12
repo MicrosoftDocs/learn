@@ -56,7 +56,7 @@ code .
 After the editor loads, run the following commands in the shell to add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies.
 
 ```console
-dotnet add package Microsoft.Extensions.Configuration.AzureKeyVault
+dotnet add package Microsoft.Extensions.Configuration.AzureKeyVault -v 2.1.1
 dotnet restore
 ```
 
