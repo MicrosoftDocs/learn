@@ -5,27 +5,27 @@
         "type": "queueTrigger",
         "direction": "in",
         "queueName": "new-feedback-q",
-        "connection": "AzureWebJobsDashboard"
+        "connection": "AzureWebJobsStorage"
       },
       {
         "type": "queue",
         "name": "positiveFeedbackQueueItem",
         "queueName": "positive-feedback-q",
-        "connection": "AzureWebJobsDashboard",
+        "connection": "AzureWebJobsStorage",
         "direction": "out"
       },
       {
         "type": "queue",
         "name": "neutralFeedbackQueueItem",
         "queueName": "neutral-feedback-q",
-        "connection": "AzureWebJobsDashboard",
+        "connection": "AzureWebJobsStorage",
         "direction": "out"
       },
       {
         "type": "queue",
         "name": "negativeFeedbackQueueItem",
         "queueName": "negative-feedback-q",
-        "connection": "AzureWebJobsDashboard",
+        "connection": "AzureWebJobsStorage",
         "direction": "out"
       }
     ],
