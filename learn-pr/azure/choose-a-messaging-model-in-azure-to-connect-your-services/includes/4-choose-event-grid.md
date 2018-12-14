@@ -91,7 +91,7 @@ This deep integration with diverse event sources within Azure ensures that Event
 ## Event handlers
 The following object types in Azure can receive and handle events from Event Grid:
 
-- **Azure Functions:** An Azure function consists of custom code that runs in Azure, with no host virtual server or container. Use an Azure function as an event handler when you want to code a custom response to the event.
+- **Azure Functions:** Custom code that runs in Azure, without the need for explicit configuration of a host virtual server or container. Use an Azure function as an event handler when you want to code a custom response to the event.
 - **Webhooks:** A webhook is a web API that implements a push architecture.
 - **Azure Logic Apps:** An Azure logic app hosts a business process as a workflow.
 - **Microsoft Flow:** Flow also hosts workflows, but it is easier for non-technical staff to use.
