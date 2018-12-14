@@ -62,11 +62,8 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     |---|---|---|
     |Database ID|[!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]| Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You are free to enter whatever you want here, but we suggest [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] as the name for the new database, and that's what we'll refer to in this unit. |
     |Collection ID|[!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]|Enter [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] as the name for our new collection. Collection IDs have the same character requirements as database names.|
-    |Storage capacity| Fixed (10 GB)|Use the default value of **Fixed (10 GB)**. This value is the storage capacity of the database.|
-    |Throughput|1000 RU|Change the throughput to 1000 request units per second (RU/s). Storage capacity must be set to **Fixed (10 GB)** to set throughput to 400 RU/s. If you want to reduce latency, you can scale up the performance later.|
-
-    > [!NOTE]
-    > Because we selected a *fixed* storage capacity of 10 GB for this exercise, we don't have to define a partition key. In fact, notice that the **Partition key**  disappears from the UI when you select **Fixed (10 GB)** as the storage capacity.  
+    |Partition key|**/id**| The partition key specifies how the documents in Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Cosmos DB partition key strategies, please explore the Microsoft Learn Cosmos DB modules.|
+    |Throughput|1000 RU|Change the throughput to 1000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later.|
 
 3. Click **OK**. The Data Explorer displays the new database and collection. So, now we have a database. Inside the database, we've defined a collection. Next, we'll add some data, also known as documents.
 
@@ -203,7 +200,7 @@ You want to look up a bookmark with a specific ID, so let's tie the ID we receiv
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
     |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
     |SQL Query (optional)    |   leave blank       |   We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
-    |Partition key (optional)     |   leave blank      |  We can accept the default here.       |
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection.|
 
 9. Select **Save** to save all changes to this binding configuration.
 
