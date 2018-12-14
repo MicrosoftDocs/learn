@@ -16,7 +16,7 @@ Being a cross-platform and open-source framework, you can build ASP.NET Core app
 
 With ASP.NET Core, you can build web apps and services, IoT apps, and mobile back ends. ASP.NET Core applications can be hosted either in the cloud or on-premises.
 
-By design, ASP.NET Core consists of an embedded web server and a runtime environment that runs the application code. The application code is written using a reworked ASP.NET MVC framework that relies on smaller modules and packages. The result is a smaller web application blueprint that is easy to maintain and host over cloud environments. The following illustration shows an ASP.NET Core application hosted in .NET Core and the external web server that handles internet http traffic.
+By design, ASP.NET Core consists of an embedded web server and a runtime environment that runs the application code. The application code is written using a reworked ASP.NET MVC framework that relies on smaller modules and packages. The result is a smaller web application blueprint that is easy to maintain and host over cloud environments. The following illustration shows an ASP.NET Core application hosted in .NET Core and the external web server that handles internet HTTP traffic.
 
 ![An illustration showing an ASP.NET Core application and its execution environment.](../media/4-asp-net-core-architecture.png)
 
@@ -26,10 +26,10 @@ ASP.NET Core applications are standalone **console** applications invoked throug
 
 There are a two common options for creating a new ASP.NET Core project:
 
-- You can use Visual Studio (Windows and macOS versions) templates to generate a new project. Visual Studio offers a variety of templates that you can use to create web projects. For instance, you can use the **Empty** template to create a bare-bones ASP.NET Core project with the basic setup. In addition, you can use the **Web Application (Modal-View-Controller)** template to generate a full-fledged ASP.NET Core MVC application, with sample **controllers** and **views** that can help you start coding your application. The latest arrival is the **Web Application** project template that is used to create an ASP.NET Core project based on Razor pages and not on the traditional MVC project structure.
+- You can use Visual Studio (Windows and macOS versions) templates to generate a new project. Visual Studio offers a variety of templates that you can use to create web projects. For instance, you can use the **Empty** template to create a bare-bones ASP.NET Core project with the basic setup. In addition, you can use the **Web Application (Model-View-Controller)** template to generate a full-fledged ASP.NET Core MVC application, with sample **controllers** and **views** that can help you start coding your application. The latest arrival is the **Web Application** project template that is used to create an ASP.NET Core project based on Razor pages and not on the traditional MVC project structure.
 
 - You can use the .NET Core CLI tools to generate a new ASP.NET Core project. Microsoft maintains a set of ASP.NET Core project templates for the CLI tools that is almost identical to the Visual Studio templates. The only difference with the CLI tools is that you need to type commands to create a new ASP.NET Core project.
-> The .NET CLI tools make use of the **templating engine** to support different project templates.  To learn more, visit the GitHub repository for the [templating engine](https://github.com/dotnet/templating) used internally by the .NET CLI tools.
+> The .NET CLI tools make use of the **templating engine** to support different project templates. To learn more, visit the GitHub repository for the [templating engine](https://github.com/dotnet/templating) used internally by the .NET CLI tools.
 
 These are the most common tools for creating ASP.NET Core projects. However, there are more tools out there that you can search for and explore.
 
