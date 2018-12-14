@@ -56,7 +56,7 @@ First, let's store some resource names so we can use them later.
     
 1. You should get something like the following.
 
-    ```output
+    ```powershell
     ResourceGroupName Name        Type                              Location
     ----------------- ----        ----                              --------
     <rgn>[sandbox resource group name]</rgn> fotoshareVM Microsoft.Compute/virtualMachines eastus
@@ -146,7 +146,7 @@ We have only one data disk at the moment. The `Lun` field is important. It's the
     ```
     You'll get a response like:
 
-    ```output
+    ```powershell
     ResourceGroupName  : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx
     Id                 : /subscriptions/xxxxxxxx-xxxx-xxxx-xxx-xxxxxxx/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/fotoshareVM
     VmId               : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx

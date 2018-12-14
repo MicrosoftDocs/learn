@@ -42,7 +42,7 @@ Let's create a new Azure VM with PowerShell.
 
     You should see something like:
 
-    ```output
+    ```powershell
     ResourceGroupName : <rgn>[sandbox resource group name]</rgn>
     Id                : /subscriptions/xxxxxxxx-xxxx-aaaa-bbbb-cccccccccccc/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
     VmId              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx

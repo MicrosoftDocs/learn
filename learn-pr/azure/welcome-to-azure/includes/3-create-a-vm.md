@@ -113,7 +113,20 @@ Since we are in the free Azure sandbox environment, you don't need to do this st
 
 Let's get your Windows VM up and running.
 
-1. In the Cloud Shell on the right side of this page, run the following `az vm create` command to create your VM. The command creates the VM in the "East US" location, you can change that to any of the locations listed above &mdash; we recommend you select one close to you.
+1. In the Cloud Shell on the side of this page, run the following commands to create a username and generate a random password.
+
+    ```bash
+    USERNAME=azureuser
+    PASSWORD=$(openssl rand -base64 32)
+    ```
+
+    The username and password here are stored as Bash variables. If you're a PowerShell user, just know that Bash variables are similar. You'll use these variables in the next step to set the Windows admin name and password.
+
+    This example uses **azureuser** as the username. But the name can be whatever you'd like.
+
+    There are many ways to generate passwords. The command shown here is just one of them.
+
+1. Run the following `az vm create` command to create your VM. The command creates the VM in the "East US" location, but you can change that to any of the locations listed above.
 
     ```azurecli
     az vm create \
@@ -122,15 +135,11 @@ Let's get your Windows VM up and running.
       --image Win2016Datacenter \
       --size Standard_DS2_v2 \
       --location eastus \
-      --admin-username azureuser
+      --admin-username $USERNAME \
+      --admin-password $PASSWORD
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-
-    Although you can specify the Windows admin password through the command, here you'll be prompted to enter one. Choose a password that contains at least 12 characters with a combination of upper and lowercase letters, numbers, and symbols. Don't use a password you use elsewhere.
-
-    > [!IMPORTANT]
-    > As a security measure, you won't see your password as you type it. However, your keystrokes are registered in the terminal as you enter them.
 
     Your VM will take four to five minutes to come up. Compare that to the time it takes to purchase, rack, and configure a system in your data center. Quite a difference!
 
@@ -188,7 +197,7 @@ The `az vm create` command succeeded, but let's verify that your VM is up and ru
 
     The output you see resembles this.
 
-    ```output
+    ```azurecli
     Name    ResourceGroup                         Location    ProvisioningState    PowerState
     ------  ------------------------------------  ----------  -------------------  ------------
     myVM    <rgn>[sandbox resource group name]</rgn>  eastus      Succeeded            VM running
@@ -276,7 +285,7 @@ The `az vm create` command succeeded, but let's verify that your VM is up and ru
 
     The output you see resembles this.
 
-    ```output
+    ```azurecli
     Name    ResourceGroup                         Location    ProvisioningState    PowerState
     ------  ------------------------------------  ----------  -------------------  ------------
     myVM    <rgn>[sandbox resource group name]</rgn>  eastus      Succeeded            VM running
