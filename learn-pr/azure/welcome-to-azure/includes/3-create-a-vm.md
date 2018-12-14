@@ -197,7 +197,7 @@ The `az vm create` command succeeded, but let's verify that your VM is up and ru
 
     The output you see resembles this.
 
-    ```output
+    ```
     Name    ResourceGroup                         Location    ProvisioningState    PowerState
     ------  ------------------------------------  ----------  -------------------  ------------
     myVM    <rgn>[sandbox resource group name]</rgn>  eastus      Succeeded            VM running
@@ -285,7 +285,7 @@ The `az vm create` command succeeded, but let's verify that your VM is up and ru
 
     The output you see resembles this.
 
-    ```output
+    ```
     Name    ResourceGroup                         Location    ProvisioningState    PowerState
     ------  ------------------------------------  ----------  -------------------  ------------
     myVM    <rgn>[sandbox resource group name]</rgn>  eastus      Succeeded            VM running
