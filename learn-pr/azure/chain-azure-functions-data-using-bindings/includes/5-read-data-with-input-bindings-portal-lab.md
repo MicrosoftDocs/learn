@@ -224,8 +224,6 @@ An incoming HTTP request triggers the function, and an `id` query parameter is p
 
 3. Replace `&id=docs` with `&id=missing`, and observe the response.
 
-4. Replace the previous query string with `&id=`, and observe the response.
-
     >[!TIP]
     >You can also test the function using the **Test** tab in the function portal UI. You can add a query parameter or supply a request body to get the same results as described in the preceding steps.
 
