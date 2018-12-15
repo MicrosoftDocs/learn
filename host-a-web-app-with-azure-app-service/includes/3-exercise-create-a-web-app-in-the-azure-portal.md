@@ -26,7 +26,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone-end
 
-::: zone pivot="javascript"
+::: zone pivot="java"
 
 1. Click the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
 
@@ -70,7 +70,7 @@ Click on the **Create new** link to navigate to the **New App Service Plan** pag
 
 ::: zone-end
 
-::: zone pivot="javascript"
+::: zone pivot="java"
 
 3. **Pricing tier**: In this field, you need to select the size of the virtual machine that is going to host your application. Click on the **>** sign to navigate to the **Pricing tier** page.
 

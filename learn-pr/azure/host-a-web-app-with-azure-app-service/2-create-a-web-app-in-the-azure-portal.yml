@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.host-a-web-application-with-azure-web-apps.2-create-a-web-app-in-the-azure-portal
+title: Create a web app in the Azure portal
+metadata:
+  title: Create a web app in the Azure portal
+  description: Create a web application in the Azure portal
+  ms.date: 12/12/2018
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-a-web-app-in-the-azure-portal.md)]
