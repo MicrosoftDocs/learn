@@ -6,6 +6,8 @@ In this unit, you will use the Azure portal to create a web app.
 
 Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
+::: zone pivot="csharp"
+
 1. Click the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
@@ -21,6 +23,28 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     3. **OS**: In this field, you need to decide whether to use **Windows** or **Linux** to host your new web app. This setting directly affects the App Service plan that you are going to select or create below. If you remember, an App Service plan resembles a virtual machine that is an operating system with all the resource (CPU, RAM, etc.) needed on that machine to run your application. In this case, your client prefers to host the web app over a Windows machine. Therefore, make the selection **Windows**.
 
     4. **Application Insights**: Azure Application Insights helps you detect and diagnose quality issues in your web apps and web services, and helps you understand what your users actually do with it. One of the requirements of your client is the ability to view some insight reports about the traffic coming over their website and to study some trends of when the traffic goes high and when it goes low. In this case, select the **On** option to turn on Application Insights for this web app. Once you select the **On** option, you are also required to select the location or region that will store the Application Insights data. Note that Application Insights are available in only a limited number of regions. For this demo, select any of the available regions.
+
+::: zone-end
+
+::: zone pivot="javascript"
+
+1. Click the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+
+1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
+
+1. Click **Web** > **Web App**. The portal redirects you to the **Create New Web App** page.
+
+1. When you create a new web app, the Azure portal requests some information to create the app for you. In this section, you need to provide the following basic information:
+
+    1. **App name**: Your client wants to name the application `BestBike`. Type the name in this field. This value must be globally unique among all other web apps hosted on Azure, and the portal will make sure no one else has used the app name. To ensure your name is unique, add some numbers to your app's name until you find a unique variant.
+
+    2. **Subscription**: In this field, you need to select an active Azure subscription from the drop-down list. Select the Concierge subscription.
+
+    3. **OS**: In this field, you need to decide whether to use **Windows** or **Linux** to host your new web app. This setting directly affects the App Service plan that you are going to select or create below. If you remember, an App Service plan resembles a virtual machine that is an operating system with all the resource (CPU, RAM, etc.) needed on that machine to run your application. In this case, your client prefers to host the web app over a Linux machine. Therefore, make the selection **Linux**.
+
+    4. **Runtime Stack**: When hosting a web app on a Linux app service plan, you need to inform App Service what web server technology the application runs on. Our Java app will run on the Tomcat web server, so select **Tomcat 9.0 (JRE 8)** from the list.
+
+::: zone-end
 
 ## Use the sandbox resource group
 
@@ -38,16 +62,23 @@ Click on the **Create new** link to navigate to the **New App Service Plan** pag
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+::: zone pivot="csharp"
+
 3. **Pricing tier**: In this field, you need to select the size of the virtual machine that is going to host your application. Click on the **>** sign to navigate to the **Pricing tier** page.
 
-    Here you have many options to choose from. The portal groups those options by the level of workload needed. The three workload categories available are Dev/Test, Production, and Isolated. Depending on the requirements of the application you want to host on Azure, you will select the relevant workload category. As the **BestBike** application is building and shaping up, you will start with the minimal workload category that works for you. Remember, one of the client's requirements was the ability to test live any new changes coming over the application. In the coming units, you will see that to achieve this requirement, you will need to add **deployment slots**. Deployment slots are available starting at a minimum pricing tier of **S1**. Therefore, select the **S1** pricing tier under the **Production Workload** category. Then, click on **Apply** to confirm the pricing tier you have selected above.
+    Here you have many options to choose from. The portal groups those options by the level of workload needed. The three workload categories available are Dev/Test, Production, and Isolated. Depending on the requirements of the application you want to host on Azure, you will select the relevant workload category. For now, select the **S1** pricing tier under the **Production Workload** category. Then, click on **Apply** to confirm the pricing tier you have selected above.
 
-    > [!NOTE]
-    > You will notice throughout this module that only **Production** and **Isolated** workload categories allow you to add **deployment slots** to your web app.
+::: zone-end
 
-    Now, you are back to the **New App Service plan** page.
+::: zone pivot="javascript"
 
-    
+3. **Pricing tier**: In this field, you need to select the size of the virtual machine that is going to host your application. Click on the **>** sign to navigate to the **Pricing tier** page.
+
+    Here you have many options to choose from. The portal groups those options by the level of workload needed. The three workload categories available are Dev/Test, Production, and Isolated. Depending on the requirements of the application you want to host on Azure, you will select the relevant workload category. For now, select the **P1V2** pricing tier under the **Production Workload** category. Then, click on **Apply** to confirm the pricing tier you have selected above.
+
+::: zone-end
+
+Now, you are back to the **New App Service plan** page.
 
 4. Click the **OK** button to use your new App Service Plan.
 

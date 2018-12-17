@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.host-a-web-application-with-azure-web-apps.4-exercise-implement-a-web-application
+title: Exercise - Write code to implement a web application
+metadata:
+  title: Exercise - Write code to implement a web application
+  description: Exercise - Write code to implement a web application
+  ms.date: 12/12/2018
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: dev-lang-csharp-javascript
+interactive: bash
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-implement-a-web-application.md)]

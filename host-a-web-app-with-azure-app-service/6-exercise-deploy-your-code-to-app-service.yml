@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.host-a-web-application-with-azure-web-apps.6-exercise-deploy-your-code-to-app-service
+title: Exercise - Deploy your code to App Service
+metadata:
+  title: Exercise - Deploy your code to App Service
+  description: Exercise - Deploy your code to App Service
+  ms.date: 12/12/2018
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: dev-lang-csharp-java
+# TODO: Consider Azure Portal Interactivity
+# interactive: azure-portal
+interactive: bash
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-deploy-your-code-to-app-service.md)]

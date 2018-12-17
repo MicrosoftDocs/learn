@@ -13,6 +13,9 @@
           "**/*.md",
           "**/*.yml"         
         ],
+        "exclude": [
+          "**/includes/**"       
+        ],
         "dest": "modules"
       },
       {

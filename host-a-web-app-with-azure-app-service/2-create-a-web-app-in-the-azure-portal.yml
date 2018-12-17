@@ -4,10 +4,9 @@ title: Create a web app in the Azure portal
 metadata:
   title: Create a web app in the Azure portal
   description: Create a web application in the Azure portal
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 12/12/2018
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

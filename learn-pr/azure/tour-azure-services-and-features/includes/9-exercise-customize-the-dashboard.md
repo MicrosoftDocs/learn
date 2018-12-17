@@ -2,7 +2,7 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
 
 ## Create a new dashboard
 
-1. In the Azure portal, click the **New Dashboard** button.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Dashboard** from the left navigation, then click the **New Dashboard** button at the top.
 
 1. In the box saying **My Dashboard**, change the name to **Customer Dashboard**.
 
@@ -62,17 +62,15 @@ You now want to create a very similar dashboard for some other customers.
 
 You now want to make this dashboard available to other users. To do this, carry out the following steps:
 
-1. Ensure that the Azure Active Directory (Azure AD) Admin dashboard is selected, and then click **Share**.
+1. From the Azure AD Admin dashboard, click the **Share** button at the top.
 
-1. On the **Sharing and access control** blade, ensure that **Publish to the 'dashboards' resource group** is selected.
-
-1. Set the **Location** to one that is appropriate for your geography. Typically, this value defaults to your nearest data center.
+1. On the **Sharing and access control** panel that appears, uncheck the **Publish to the 'dashboards' resource group** checkbox and choose the resource group <rgn>[sandbox resource group name]</rgn> from the **Resource group** dropdown.
 
 1. Click **Publish**, and then close the **Sharing + access control** blade.
 
-1. Click **Azure AD Admin Dashboard**, and then select **Customer Dashboard**.
+1. Use the dropdown at the top to navigate to the **Customer Dashboard**.
 
-    Note that in **All resources**, a Shared dashboard resource has appeared, and that in **Resource groups**, a dashboards resource group has also appeared.
+    Note that in **All resources**, a Shared dashboard resource has appeared.
 
 1. Repeat steps 1 to 3 to share the Customer Dashboard.
 
