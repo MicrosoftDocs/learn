@@ -8,11 +8,17 @@ Follow these steps to assign the Virtual Machine Contributor role to a user at t
 
 1. Find and click the **FirstUpConsultantsRG1-_XXXXXXX_** resource group.
 
-1. Click **Access control (IAM)** to see the current list of role assignments.
+1. Click **Access control (IAM)**.
 
-   ![Screenshot showing the Access control - Role assignment blade for the selected resource group with the Add button highlighted](../media/5-resource-group-role-assignment.png)
+1. Click the **Role assignments** tab to see the current list of role assignments.
 
-1. At the top, click **Add** to open the **Add permissions** pane.
+   ![Screenshot showing the Access control for the selected resource group with the Role assignments tab selected](../media/5-resource-group-role-assignment.png)
+
+1. At the top, click **Add role assignment**.
+
+   ![Screenshot showing Access control with the Add role assignment button highlighted](../media/5-resource-group-add-role-assignment.png)
+
+    The **Add role assignment** pane opens.
 
    ![Screenshot of the Add permissions pane](../media/5-add-permissions.png)
 

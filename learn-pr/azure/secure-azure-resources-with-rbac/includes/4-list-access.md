@@ -35,15 +35,17 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
    ![Screenshot showing the location of the Access control (IAM) option in the selected resource group blade](../media/4-resource-group-access-control.png)
 
+1. Click the **Role assignments** tab.
+
     You can see who has access to this resource group. Notice that some roles are scoped to **This resource** while others are **(Inherited)** from a parent scope.
 
-   ![Screenshot showing the Access control - Role assignment for the selected resource group](../media/4-resource-group-role-assignment.png)
+   ![Screenshot showing the Access control for the selected resource group with the Role assignments tab selected](../media/4-resource-group-role-assignment.png)
 
 ## List roles
 
 As you learned in the previous unit, a role is a collection of permissions. Azure has over 70 built-in roles that you can use in your role assignments. Follow this step to list the roles.
 
-- At the top of the pane, click **Roles** to see a list of all the built-in and custom roles.
+- At the top of the pane, click the **Roles** tab to see a list of all the built-in and custom roles.
 
    You can see the number of users and groups that are assigned to each role.
 
