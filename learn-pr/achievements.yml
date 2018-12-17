@@ -466,6 +466,11 @@ achievements:
   title: Introduction to Site Reliability Engineering
   summary: Introduction to Site Reliability Engineering
   iconUrl: /learn/achievements/intro-to-site-reliability-engineering-sre.svg
+- uid: learn.control-and-organize-with-resource-manager.badge
+  type: badge
+  title: Control and organize Azure resources with Azure Resource Manager
+  summary: Control and organize Azure resources with Azure Resource Manager
+  iconUrl: /learn/achievements/control-and-organize-with-resource-manager.svg
 - uid: learn.intro-to-azure-government.badge
   type: badge
   title: Introduction to Azure Government
