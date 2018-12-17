@@ -40,7 +40,7 @@ Type this command into Cloud Shell:
 ssh-keygen -t rsa -b 4096
 ```
 
-The tool will prompt for file names and an optional passphrase. Just take the defaults. It will create two files: `id_rsa` and `id_rsa.pub` in the `~/.ssh` directory. The files will be overwritten if they exist. There are various options you can use to provide the file name or a passphrase to avoid the prompt.
+The tool will prompt for file names and an optional passphrase. For this exercise, just take the defaults. It will create two files: `id_rsa` and `id_rsa.pub` in the `~/.ssh` directory. The files will be overwritten if they exist. There are various options you can use to provide the file name or a passphrase to avoid the prompt.
 
 ### Private key passphrase
 
@@ -50,23 +50,6 @@ When you add a passphrase to your SSH key, it encrypts the private key using 128
 
 > [!IMPORTANT]
 > It is **strongly** recommended that you add a passphrase. If an attacker stole your private key and that key did not have a passphrase, they would be able to use that private key to log in to any servers that have the corresponding public key. If a passphrase protects a private key, it cannot be used by that attacker. This provides an additional layer of security for your infrastructure on Azure.
-
-Here is an example showing how to set the passphrase. You don't need to execute this command (although you can if you want to):
-
-```bash
-ssh-keygen -t rsa -b 4096 \
-    -C "azureuser@myserver" \
-    -f ~/.ssh/mykeys/myprivatekey \
-    -N someReallySecurePhraseYouWillRemember
-```
-
-| Parameter | What it does |
-|-----------|--------------|
-| `-t` | Type of key to create. Must be **rsa**. |
-| `-b` | Number of bits in the key. Minimum length is 2048; maximum is 4096. |
-| `-C` | An optional comment to append to the public key that can be used to identify it. Normally, this is an email address, but it's simple text. As a result, you can use whatever identification method you prefer. |
-| `-f` | The location and file name of the private key file. A corresponding public key file appended with **.pub** is generated in the same directory. The directory must exist. |
-| `-N` | The passphrase used to encrypt the private key. |
 
 ## Use the SSH key pair with an Azure Linux VM
 
@@ -92,9 +75,9 @@ To apply the SSH key while creating a new Linux VM, you will need to copy the co
 
 ### Add the SSH key to an existing Linux VM
 
-If you have already created a VM, you can install the public key onto your Linux VM with the `ssh-copy-id` command. Once the key has been authorized for SSH, it grants access to the server without a password.
+If you have already created a VM, you can install the public key onto your Linux VM with the `ssh-copy-id` command. Once the key has been authorized for SSH, it grants access to the server without a password, though you will still be prompted for the passphrase on the key if you set one.
 
-Pass it the public key file and the username to associate with the key:
+For example, if we had a Linux VM named *myserver* with a user *azureuser*, we could use the following command to install the public key file and authorize the user with the key:
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub azureuser@myserver
