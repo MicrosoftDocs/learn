@@ -24,13 +24,13 @@ quiz:
       correctExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
     - content: Azure Load Balancer
       isCorrect: false
-      incorrectExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
+      incorrectExplanation: "Azure Load Balancer provides networking capabilities to balance network traffic."
     - content: Azure Table Storage
       isCorrect: false
-      incorrectExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
-    - content: Azure Redis Cache
+      incorrectExplanation: "Azure Table Storage is a data storage model to store structured data."
+    - content: Azure Cache for Redis
       isCorrect: false
-      incorrectExplanation: "Azure Virtual Machines provide compute power and support both Windows and Linux operating systems."
+      incorrectExplanation: "Azure Cache for Redis is a caching storage technology to improve performance of servers."
 
   - content: 'An Azure dashboard is stored as which type of file?'
     choices:

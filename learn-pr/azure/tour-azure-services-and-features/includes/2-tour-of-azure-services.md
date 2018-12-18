@@ -97,7 +97,7 @@ Azure provides multiple database services to store a wide variety of data types 
 | SQL Server on VMs          | Host enterprise SQL Server apps in the cloud                                                    |
 | Azure SQL Data Warehouse   | Fully managed data warehouse with integral security at every level of scale at no extra cost    |
 | Azure Database Migration Service    | Migrates your databases to the cloud with no application code changes                  |
-| Azure Redis Cache          | Caches frequently used and static data to reduce data and application latency                   |
+| Azure Cache for Redis      | Caches frequently used and static data to reduce data and application latency                   |
 | Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security        |
 
 ### Web

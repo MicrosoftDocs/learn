@@ -1,6 +1,6 @@
 There are times when you must guarantee that multiple operations execute together. For example, in your instant messaging application, users can send an individual picture, an individual text message, or a picture and text message together. When the user chooses to send a picture and text message together, you must ensure that other members of the group receive them at the same time. This is important because if a picture and text message are not received together, it’s possible that a separate message could be sent in between the picture and text message. That could make the overall conversation confusing.
 
-Here, we'll look at how to create a transaction in Azure Redis Cache to guarantee that multiple operations are executed together.
+Here, we'll look at how to create a transaction in Azure Cache for Redis to guarantee that multiple operations are executed together.
 
 ## Creating and running transactions
 
@@ -12,7 +12,7 @@ Redis transactions do not support the concept of rollback. If you queue a comman
 
 ## Redis transactions with ServiceStack.Redis
 
-**ServiceStack.Redis** is a C# client library for interacting with Azure Redis Cache.
+**ServiceStack.Redis** is a C# client library for interacting with Azure Cache for Redis.
 
 Transactions in ServiceStack.Redis are created by calling `IRedisClient.CreateTransaction()`. The `IRedisTransaction` object that is returned can have multiple commands queued into it with `QueueCommand()`. Calling `Commit()` on the transaction object will execute it.
 

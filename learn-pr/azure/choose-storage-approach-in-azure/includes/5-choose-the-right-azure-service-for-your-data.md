@@ -29,7 +29,7 @@ Even with data replicated around the world, you can choose from one of five cons
 
 Azure SQL Database would be an excellent choice for this data set, were it not for the need to extend the schema ad-hoc for new products. In Azure SQL Database, all data needs to adhere to a schema. Azure SQL Database can provide many of the same benefits of Azure Cosmos DB, but it cannot handle heterogeneous data. 
 
-Other Azure services, such as Azure Table storage, Azure HBase as a part of HDInsight, and Azure Redis Cache, can also store NoSQL data. In this scenario, users will want to query on multiple fields, so Azure Cosmos DB is a better fit. Azure Cosmos DB indexes every field by default, whereas the other services are limited in the data they index, and querying on non-indexed fields results in reduced performance.
+Other Azure services, such as Azure Table storage, Azure HBase as a part of HDInsight, and Azure Cache for Redis, can also store NoSQL data. In this scenario, users will want to query on multiple fields, so Azure Cosmos DB is a better fit. Azure Cosmos DB indexes every field by default, whereas the other services are limited in the data they index, and querying on non-indexed fields results in reduced performance.
 
 ## Photos and videos
 
