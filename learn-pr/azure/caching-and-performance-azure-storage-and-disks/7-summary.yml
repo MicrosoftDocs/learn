@@ -47,10 +47,10 @@ quiz:
   
   - content: "Suppose you are using Azure PowerShell to manage a VM. You have a local object that represents the VM and you've made several updates to that local object. Which PowerShell cmdlet would you use to apply those local changes to the actual VM?"
     choices: 
-    - content: Update-AzureRmVM
+    - content: Update-AzVM
       isCorrect: true
       correctExplanation: "This cmdlet updates the state of an Azure virtual machine to the state of a virtual machine object."
-    - content: Set-AzureRmVM
+    - content: Set-AzVM
       isCorrect: false
-    - content: New-AzureRmVM
+    - content: New-AzVM
       isCorrect: false

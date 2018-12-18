@@ -31,7 +31,7 @@ If you already know the template you want to use, or you have saved templates in
 Given a URL to a template, you can execute it with Azure PowerShell. For example, we could run the disk encryption template with the following PowerShell command:
 
 ```powershell
-New-AzureRmResourceGroupDeployment `
+New-AzResourceGroupDeployment `
     -Name encrypt-disk `
     -ResourceGroupName <resource-group-name> `
     -TemplateUri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm-without-aad/azuredeploy.json

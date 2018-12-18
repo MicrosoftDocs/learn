@@ -20,7 +20,7 @@ You can configure and manage your key vault with:
 #### Powershell
 
 ```powershell
-New-AzureRmKeyVault -Location <location> `
+New-AzKeyVault -Location <location> `
     -ResourceGroupName <resource-group> `
     -VaultName "myKeyVault" `
     -EnabledForDiskEncryption
@@ -75,7 +75,7 @@ There are three policies you can enable.
 Here's how to enable the disk encryption policy. The other two are similar but use different flags.
 
 ```powershell
-Set-AzureRmKeyVaultAccessPolicy -VaultName <keyvault-name> -ResourceGroupName <resource-group> -EnabledForDiskEncryption
+Set-AzKeyVaultAccessPolicy -VaultName <keyvault-name> -ResourceGroupName <resource-group> -EnabledForDiskEncryption
 ```
 
 ```azurecli
@@ -89,11 +89,11 @@ Once you have the Key Vault setup, you can encrypt the VM using either Azure CLI
 > [!WARNING]
 > You must take a snapshot or a backup of managed disks before you can turn on encryption. The `SkipVmBackup` flag specified below tells the tool that the backup is complete on managed disks. Without the backup, you will be unable to recover the VM if the encryption fails for some reason.
 
-With PowerShell, use the `Set-AzureRmVmDiskEncryptionExtension` cmdlet to enable encryption.
+With PowerShell, use the `Set-AzVmDiskEncryptionExtension` cmdlet to enable encryption.
 
 ```powershell
 
-Set-AzureRmVmDiskEncryptionExtension `
+Set-AzVmDiskEncryptionExtension `
 	-ResourceGroupName <resource-group> `
     -VMName <vm-name> `
     -VolumeType [All | OS | Data]
@@ -118,7 +118,7 @@ az vm encryption enable \
 You can check whether specific disks are encrypted or not.
 
 ```powershell
-Get-AzureRmVmDiskEncryptionStatus  -ResourceGroupName <resource-group> -VMName <vm-name>
+Get-AzVmDiskEncryptionStatus  -ResourceGroupName <resource-group> -VMName <vm-name>
 ```
 
 ```azurecli
@@ -129,10 +129,10 @@ Both of these commands will return the status of each disk attached to the speci
 
 ## Decrypting drives
 
-You can reverse the encryption through PowerShell using `Disable-AzureRmVMDiskEncryption`.
+You can reverse the encryption through PowerShell using `Disable-AzVMDiskEncryption`.
 
 ```powershell
-Disable-AzureRmVMDiskEncryption -ResourceGroupName <resource-group> -VMName <vm-name>
+Disable-AzVMDiskEncryption -ResourceGroupName <resource-group> -VMName <vm-name>
 ```
 
 For the Azure CLI, use the `vm encryption disable` command.

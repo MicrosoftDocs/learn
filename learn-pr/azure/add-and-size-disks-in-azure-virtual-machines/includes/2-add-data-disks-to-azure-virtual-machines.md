@@ -33,7 +33,7 @@ The VHD can't be deleted from storage while it's attached.
 
 ### Attach an existing data disk to an Azure VM
 
-You may already have a VHD that stores the data you want to use in your Azure VM. In our law firm scenario, for example, perhaps you've already converted your physical disks to VHDs locally. In this case, you can use the PowerShell `Add-AzureRmVhd` cmdlet to upload it to the storage account. This cmdlet is optimized for transferring VHD files and may complete the upload faster than other methods. The transfer is completed by using multiple threads for best performance. Once the VHD has been uploaded, attach it to an existing VM as a data disk. This approach an excellent way to deploy data of all types to Azure VMs. The data is automatically present in the VM, and there's no need to partition or format the new disk.
+You may already have a VHD that stores the data you want to use in your Azure VM. In our law firm scenario, for example, perhaps you've already converted your physical disks to VHDs locally. In this case, you can use the PowerShell `Add-AzVhd` cmdlet to upload it to the storage account. This cmdlet is optimized for transferring VHD files and may complete the upload faster than other methods. The transfer is completed by using multiple threads for best performance. Once the VHD has been uploaded, attach it to an existing VM as a data disk. This approach an excellent way to deploy data of all types to Azure VMs. The data is automatically present in the VM, and there's no need to partition or format the new disk.
 
 ### Attach a new data disk to an Azure VM
 

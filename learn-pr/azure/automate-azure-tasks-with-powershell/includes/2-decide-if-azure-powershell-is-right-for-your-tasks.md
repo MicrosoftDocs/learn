@@ -34,10 +34,10 @@ The Azure CLI is available two ways: inside a browser via the Azure Cloud Shell 
 ## What is Azure PowerShell?
 Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core to let you connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, and so on. Azure PowerShell adds the Azure-specific commands.
 
-For example, Azure PowerShell provides the **New-AzureRmVM** command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch the PowerShell application and then issue a command like the following:
+For example, Azure PowerShell provides the **New-AzVM** command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch the PowerShell application and then issue a command like the following:
 
 ```powershell
-New-AzureRmVm `
+New-AzVm `
     -ResourceGroupName "CrmTestingResourceGroup" `
     -Name "CrmUnitTests" `
     -Image "UbuntuLTS"

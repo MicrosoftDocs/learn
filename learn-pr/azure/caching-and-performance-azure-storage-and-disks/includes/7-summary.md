@@ -7,5 +7,5 @@ Once you have an Azure VM disk caching strategy in place, you can then quickly a
 ## Additional resources
 
 - [Azure Premium Storage: Design for High Performance](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage-performance)
-- [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps?view=azurermps-6.8.1)
-- [Azure Computer Cmdlets Reference](https://docs.microsoft.com/powershell/module/azurerm.compute/?view=azurermps-6.8.1#vm_disks)
+- [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps)
+- [Azure Computer Cmdlets Reference](https://docs.microsoft.com/powershell/module/azurerm.compute#vm_disks)

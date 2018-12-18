@@ -45,7 +45,7 @@ First, let's store some resource names so we can use them later.
 1. Run the following command to get the properties of our VM:
 
     ```powershell
-    $myVM = Get-AzureRmVM -ResourceGroupName $myRgName -VMName $myVmName
+    $myVM = Get-AzVM -ResourceGroupName $myRgName -VMName $myVmName
     ```
     
 1. We store the response in our `$myVM` variable. We can pipe the output into the `select-object` cmdlet to filter the display to specific properties:
@@ -84,12 +84,12 @@ First, let's store some resource names so we can use them later.
     $myVM.StorageProfile.OsDisk.Caching = "ReadWrite"
     ```
     
-    This command runs fast, which should tell you it's doing something locally. The command only changes the property on the `myVM` object. As the following screenshot shows, if you refresh the `$myVM` variable by reassigning it using the `Get-AzureRmVM` cmdlet, the caching value won't have changed on the VM.
+    This command runs fast, which should tell you it's doing something locally. The command only changes the property on the `myVM` object. As the following screenshot shows, if you refresh the `$myVM` variable by reassigning it using the `Get-AzVM` cmdlet, the caching value won't have changed on the VM.
 
-1. To make the change on the VM itself, call `Update-AzureRmVM`, as follows:
+1. To make the change on the VM itself, call `Update-AzVM`, as follows:
 
     ```powershell
-    Update-AzureRmVM -ResourceGroupName $myRGName -VM $myVM
+    Update-AzVM -ResourceGroupName $myRGName -VM $myVM
     ```
     
     Notice that this call takes a while to complete. That's because we're updating the actual VM and Azure restarts the VM  to make the change.
@@ -103,7 +103,7 @@ First, let's store some resource names so we can use them later.
 1. If you refresh the `$myVM` variable again, you'll see the change on the object. Looking at the disk in the portal, you'd also see the change there. 
 
     ```powershell
-    $myVM = Get-AzureRmVM -ResourceGroupName $myRgName -VMName $myVmName
+    $myVM = Get-AzVM -ResourceGroupName $myRgName -VMName $myVmName
     $myVM.StorageProfile.OsDisk.Caching
     ```
     
@@ -139,10 +139,10 @@ We have only one data disk at the moment. The `Lun` field is important. It's the
     $newDiskName = "fotoshareVM-data2"
     ```
     
-1. Run the following `Add-AzureRmVMDataDisk` command to define a new empty 1 GB data disk:
+1. Run the following `Add-AzVMDataDisk` command to define a new empty 1 GB data disk:
 
     ```powershell
-    Add-AzureRmVMDataDisk -VM $myVM -Name $newDiskName  -LUN 1  -DiskSizeinGB 1 -CreateOption Empty
+    Add-AzVMDataDisk -VM $myVM -Name $newDiskName  -LUN 1  -DiskSizeinGB 1 -CreateOption Empty
     ```
     You'll get a response like:
 
@@ -162,10 +162,10 @@ We have only one data disk at the moment. The `Lun` field is important. It's the
     StorageProfile     : {ImageReference, OsDisk, DataDisks}
     ```
     
-1. We've given this disk a `Lun` value of `1` because it's not taken. We defined the disk we want to create, so it's time to run `Update-AzureRmVM` to make the actual change:
+1. We've given this disk a `Lun` value of `1` because it's not taken. We defined the disk we want to create, so it's time to run `Update-AzVM` to make the actual change:
 
     ```powershell
-    Update-AzureRmVM -ResourceGroupName $myRGName -VM $myVM
+    Update-AzVM -ResourceGroupName $myRGName -VM $myVM
     ```
     
 1. Let's look at our data disk info again:
@@ -196,16 +196,16 @@ We now have two disks. Our new disk has a `Lun` of `1` and the default value for
 
 ### Change cache settings of new data disk
 
-1. We modify properties of a virtual machine data disk with the `Set-AzureRmVMDataDisk` cmdlet, as follows:
+1. We modify properties of a virtual machine data disk with the `Set-AzVMDataDisk` cmdlet, as follows:
 
     ```powershell
-    Set-AzureRmVMDataDisk -VM $myVM -Lun "1" -Caching ReadWrite
+    Set-AzVMDataDisk -VM $myVM -Lun "1" -Caching ReadWrite
     ```
     
-1. As always, commit the changes with `Update-AzureRmVM`:
+1. As always, commit the changes with `Update-AzVM`:
 
     ```powershell
-    Update-AzureRmVM -ResourceGroupName $myRGName -VM $myVM
+    Update-AzVM -ResourceGroupName $myRGName -VM $myVM
     ```
     
 Here's a view from the portal of what we've accomplished in this exercise. Our VM now has two data disks, and we've adjusted all **HOST CACHING** settings. We did all of that with just a few commands. That's the power of Azure PowerShell.

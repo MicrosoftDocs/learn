@@ -8,7 +8,7 @@ Azure PowerShell is a good automation choice for admins with PowerShell experien
 When you are running in your own subscription, you can use the following PowerShell cmdlet to delete the resource group (and all related resources).
 
 ```powershell
-Remove-AzureRmResourceGroup -Name MyResourceGroupName
+Remove-AzResourceGroup -Name MyResourceGroupName
 ```
 
 When you are asked to confirm the delete, answer **Yes**, or you can add the `-Force` parameter to skip the prompt. The command may take several minutes to complete.

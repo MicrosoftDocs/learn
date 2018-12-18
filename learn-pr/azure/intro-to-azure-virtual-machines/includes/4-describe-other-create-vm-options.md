@@ -39,10 +39,10 @@ Creating administration scripts is a powerful way to optimize your workflow. You
 > [!NOTE]
 > PowerShell is a cross-platform shell that provides services like the shell window and command parsing. Azure PowerShell is an optional add-on package that adds the Azure-specific commands (referred to as **cmdlets**). You can learn more about installing and using Azure PowerShell in a separate training module.
 
-For example, you can use the `New-AzureRmVM` cmdlet to create a new Azure virtual machine.
+For example, you can use the `New-AzVM` cmdlet to create a new Azure virtual machine.
 
 ```powershell
-New-AzureRmVm `
+New-AzVm `
     -ResourceGroupName "TestResourceGroup" `
     -Name "test-wp1-eus-vm" `
     -Location "East US" `
