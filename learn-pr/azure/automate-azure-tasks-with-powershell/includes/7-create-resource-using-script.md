@@ -47,7 +47,7 @@ To obtain the value stored in a variable, use the **$** prefix and its name as s
 
 ```powershell
 $loc = "East US"
-New-AzureRmResourceGroup -Name "MyResourceGroup" -Location $loc
+New-AzResourceGroup -Name "MyResourceGroup" -Location $loc
 ```
 
 ### Loops

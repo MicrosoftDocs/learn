@@ -33,7 +33,7 @@ Follow these steps in the Cloud Shell on the right to write the script:
     ```
 
     > [!NOTE]
-    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzureRmAccount` and this could be done in the script. However, in the Cloud Shell environment you will already be authenticated so this is unnecessary.
+    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount` and this could be done in the script. However, in the Cloud Shell environment you will already be authenticated so this is unnecessary.
 
 1. Prompt for a username and password for the VM's admin account and capture the result in a variable:
 
@@ -60,7 +60,7 @@ Follow these steps in the Cloud Shell on the right to write the script:
 1. Next, create a VM using the `$vmName` variable:
 
    ```powershell
-   New-AzureRmVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image UbuntuLTS
+   New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image UbuntuLTS
    ```
 
 1. Save the file. You can use the "..." menu at the top right corner of the editor. There are also common accelerator keys for Save.
@@ -76,7 +76,7 @@ For ($i = 1; $i -le 3; $i++)
 {
     $vmName = "ConferenceDemo" + $i
     Write-Host "Creating VM: " $vmName
-    New-AzureRmVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image UbuntuLTS
+    New-AzVm -ResourceGroupName $resourceGroup -Name $vmName -Credential $adminCredential -Image UbuntuLTS
 }
 ```
 
@@ -93,7 +93,7 @@ Close the editor through the "..." context menu.
 The script will take several minutes to complete. When it is finished, verify that it ran successfully by looking at the resources you now have in your resource group:
 
 ```powershell
-Get-AzureRmResource -ResourceType Microsoft.Compute/virtualMachines
+Get-AzResource -ResourceType Microsoft.Compute/virtualMachines
 ```
 
 You should see three VMs, each with a unique name.

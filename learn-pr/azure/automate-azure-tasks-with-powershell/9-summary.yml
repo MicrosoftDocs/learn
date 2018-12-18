@@ -44,9 +44,9 @@ quiz:
     - content: "The Azure cloud shell"
       isCorrect: false
       incorrectExplanation: "The cloud shell does let you execute Azure cmdlets; however, you use it in a browser, so you are not running the commands on your local machine."
-    - content: "The base PowerShell product and the AzureRM module"
+    - content: "The base PowerShell product and the Az module"
       isCorrect: true
-      correctExplanation: "You need both the base PowerShell product and the AzureRM module. The base product gives you the shell itself, a few core commands, and programming constructs like loops, variables, etc. The AzureRM modules adds the cmdlets you need to work with Azure resources."
+      correctExplanation: "You need both the base PowerShell product and the Az module. The base product gives you the shell itself, a few core commands, and programming constructs like loops, variables, etc. The Az modules adds the cmdlets you need to work with Azure resources."
     - content: "The Azure CLI and Azure PowerShell"
       isCorrect: false
       incorrectExplanation: "The Azure CLI is an alternate command-line and scripting tool. It is not needed if you are going to use Azure PowerShell."

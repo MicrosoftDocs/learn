@@ -5,7 +5,7 @@ Creating administration scripts is a powerful way to optimize your work flow. Yo
 
 ## What is Azure PowerShell?
 
-Azure PowerShell is a cross-platform command-line tool to connect to your Azure subscription and manage resources. It's combination of two things: **PowerShell**, which provides the command-line tool support, and **AzureRM** which provides the commands (referred to as "cmdlets") to work with Azure. 
+Azure PowerShell is a cross-platform command-line tool to connect to your Azure subscription and manage resources. It's combination of two things: **PowerShell**, which provides the command-line tool support; and the **Az** PowerShell module, which provides the commands (referred to as "cmdlets") to work with Azure. 
 
 Azure PowerShell has cmdlets to manipulate most aspects of Azure resources. You can work with resource groups, storage, virtual machines, Azure Active Directory, containers, machine learning, and so on. We cover all these details in other training modules.
 
@@ -15,9 +15,9 @@ Azure PowerShell has specific cmdlets to help manage VMs and disks.
 
 |Command  | Description |
 |---------|-------------|
-| `Get-AzureRmVM`         | Gets the properties of a virtual machine.       |
-| `Update-AzureRmVM`      | Updates the state of an Azure virtual machine.  |
-| `New-AzureRmDiskConfig` | Creates a configurable disk object.             |
-| `Add-AzureRmVMDataDisk` | Adds a data disk to a virtual machine.          |
+| `Get-AzVM`         | Gets the properties of a virtual machine.       |
+| `Update-AzVM`      | Updates the state of an Azure virtual machine.  |
+| `New-AzDiskConfig` | Creates a configurable disk object.             |
+| `Add-AzVMDataDisk` | Adds a data disk to a virtual machine.          |
 
 With these, we can do all the tasks we did in the Azure portal. Let's try it out on our VM.
