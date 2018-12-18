@@ -11,10 +11,13 @@ In this example, a premium registry SKU is deployed. The premium SKU is required
 
 To begin, we'll define an environment variable in the Cloud Shell called **ACR_NAME**  to hold the name we want to give our new container registry.
 
-1. Run the following command to define a variable called ACR_NAME. Replace `<registry-name>` with a unique name you want to  give to the new container registry. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters.
+1. Run the following command to define a variable called ACR_NAME.
+
+    > [!IMPORTANT]
+    > Before running the command, replace  `<registry-name>` with the unique name you want to give your new container registry. The registry name must be unique within Azure, and contain 5-50 **alphanumeric** characters. For more information on naming, see [Naming conventions for Azure resources](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions?azure-portal=true).
 
     ```azurecli
-    ACR_NAME=`<registry-name>`
+    ACR_NAME=<registry-name>
     ```
 1. Enter the following command into the cloud shell editor to create our new container registry.
 
