@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.optimize-web-app-with-redis.2-decide-if-you-want-use-redis-in-azure
-title: Decide if you want to use Redis in Azure
+title: Decide if you want to use Azure Cache for Redis
 metadata:
-  title: Decide if you want to use Redis in Azure
-  description: Decide if you want to use Redis in Azure
+  title: Decide if you want to use Azure Cache for Redis
+  description: Decide if you want to use Azure Cache for Redis
   ms.date: 09/24/2018
   #TODO: Update with real author name.
   author: markjulmar

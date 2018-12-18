@@ -32,7 +32,7 @@ A common approach to improve application performance is to integrate a caching l
 
 ![An illustration showing that retrieving data from cache is faster than retrieving from a database.](../media/4-cache.png)
 
-Azure Redis Cache is a caching service on Azure that stores data in memory. It's based upon the open-source Redis cache and is a fully managed service offering by Microsoft. You select the performance tier that you require and configure your application to use the service.
+Azure Cache for Redis is a caching service on Azure that stores data in memory. It's based upon the open-source Redis cache and is a fully managed service offering by Microsoft. You select the performance tier that you require and configure your application to use the service.
 
 ### Polyglot persistence
 
@@ -52,6 +52,6 @@ Eventual consistency means that replica data stores will eventually converge if 
 
 Lamna Healthcare's patient booking system is hosted across two Azure regions, West Europe and Australia East. They're using virtual machines as the front-end nodes to deploy their website, and have Azure SQL DB deployed in West Europe as primary and Australia East as a readable secondary. Their front-end nodes don't require high levels of disk throughput, but do require consistent latency performance and production reliability and have used Premium SSD backed storage.
 
-They are hosting an Azure Redis Cache locally in each Azure region to store the common user requests and availability of doctors. Caching has been implemented to optimize the performance of the most common data read activities observed on the application.
+They are hosting an Azure Cache for Redis locally in each Azure region to store the common user requests and availability of doctors. Caching has been implemented to optimize the performance of the most common data read activities observed on the application.
 
 We've covered a few examples of how you can improve storage performance in your infrastructure layer by choosing the right disk architecture and at the application level through the use of caching and selecting the right data platform for your data. A properly architected solution will ensure that access to data performs as well as possible.

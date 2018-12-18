@@ -1,4 +1,4 @@
-Let's create an Azure Redis Cache instance to store and return commonly used values.
+Let's create an Azure Cache for Redis instance to store and return commonly used values.
 
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]

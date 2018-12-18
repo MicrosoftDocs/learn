@@ -1,4 +1,4 @@
-Here, you'll add an expiration time to our data in the Azure Redis Cache.
+Here, you'll add an expiration time to our data in the Azure Cache for Redis.
 
 ## Add an expiration time
 
@@ -42,7 +42,7 @@ In this code, the **Expire** method is a part of the **RedisNativeClient**. To a
 
 ## Verify the expiration
 
-Now that we added the code to expire our data, let's run the program and check that the data is removed from Azure Redis Cache.
+Now that we added the code to expire our data, let's run the program and check that the data is removed from Azure Cache for Redis.
 
 1. Run the program.
 
@@ -50,7 +50,7 @@ Now that we added the code to expire our data, let's run the program and check t
     dotnet run
     ```
 
-1. Switch back to the Azure Redis Cache console in the Azure portal.
+1. Switch back to the Azure Cache for Redis console in the Azure portal.
 
 1. To verify that the data is still there, issue the following command:
 
@@ -60,4 +60,4 @@ Now that we added the code to expire our data, let's run the program and check t
 
 1. After 15 seconds, issue the command again. You should see that the data is no longer there.
 
-    ![Screenshot of the Azure Redis Cache console showing the value of MyKey1 being nil](../media/6-redis-console-data-expiration.png)
+    ![Screenshot of the Azure Cache for Redis console showing the value of MyKey1 being nil](../media/6-redis-console-data-expiration.png)

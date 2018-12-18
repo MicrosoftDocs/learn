@@ -8,9 +8,9 @@ Caching is the act of storing frequently-accessed data in memory that is very cl
 
 Redis (**RE**mote **DI**ctionary **S**erver) cache is an open-source, in-memory key value pair store. It's popular because it's fast and can store and manipulate common data types such as strings, hashes, and sets. It's also considered developer friendly as it supports multiple languages such as Python, C, C++, C#, Java, and JavaScript among others.
 
-## What is Azure Redis Cache?
+## What is Azure Cache for Redis?
 
-Microsoft Azure Redis Cache is based on the popular open-source Redis cache. It gives you access to a secure, dedicated Redis cache, managed by Microsoft. A cache created using Azure Redis Cache is accessible from any application within Microsoft Azure. Azure Redis Cache is typically used to improve the performance of systems that rely heavily on back-end data stores.
+Azure Cache for Redis is based on the popular open-source Redis cache. It gives you access to a secure, dedicated Redis cache, managed by Microsoft. A cache created using Azure Cache for Redis is accessible from any application within Azure. Azure Cache for Redis is typically used to improve the performance of systems that rely heavily on back-end data stores.
 
 Your cached data is located in-memory on an Azure server running the Redis cache as opposed to being loaded from disk by a database. Your cache is also highly scalable. You can alter the size and pricing tier at any time.
 
@@ -66,4 +66,4 @@ The premium tier includes the features of the standard tier but adds the ability
 
 ## Summary
 
-A database is great for storing large amounts of data, but there is an inherent latency when looking up data. You send a query. The server interprets the query, looks up the data, and returns it. Servers also have capacity limits for handling requests. If too many requests are made, data retrieval will likely slow down. Caching will store frequently requested data in memory that can be returned faster than querying a database, which should lower latency and increase performance. Azure Redis Cache gives you access to a secure, dedicated, and scalable Redis cache, hosted in Azure, and managed by Microsoft.
+A database is great for storing large amounts of data, but there is an inherent latency when looking up data. You send a query. The server interprets the query, looks up the data, and returns it. Servers also have capacity limits for handling requests. If too many requests are made, data retrieval will likely slow down. Caching will store frequently requested data in memory that can be returned faster than querying a database, which should lower latency and increase performance. Azure Cache for Redis gives you access to a secure, dedicated, and scalable Redis cache, hosted in Azure, and managed by Microsoft.

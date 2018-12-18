@@ -27,7 +27,7 @@ There are a few ways we could reduce the remaining latency:
 - Create a read-replica of the database in Australia East. This would allow reads to perform well, but writes would still incur latency. Azure SQL Database geo-replication allows for read-replicas.
 - Sync your data between regions with Azure SQL Data Sync.
 - Use a globally distributed database such as Azure Cosmos DB. This would allow both reads and writes to occur regardless of location, but may require changes to the way your application stores and references data.
-- Use caching technology such as Azure Redis Cache to minimize high-latency calls to remote databases for frequently accessed data.
+- Use caching technology such as Azure Cache for Redis to minimize high-latency calls to remote databases for frequently accessed data.
 
 The goal here is to minimize the network latency between each layer of the application. How this is solved depends on your application and data architecture, but Azure provides mechanisms to solve this on several services.
 

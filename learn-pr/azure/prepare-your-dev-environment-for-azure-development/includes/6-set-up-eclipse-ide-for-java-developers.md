@@ -12,6 +12,6 @@ Installing Eclipse for Java or Java EE on any platform is straightforward. The i
 
 The Azure Toolkit for Eclipse provides templates and functionality that you can use to easily create, develop, test, and deploy cloud applications to Azure from Eclipse. The Azure Toolkit is open source, actively developed, and hosted in GitHub. 
 
-The toolkit includes integration templates for Docker containers, HDInsights, Azure documentation, Azure Redis Cache, storage account operations, and virtual machine management.
+The toolkit includes integration templates for Docker containers, HDInsights, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
 
 The Azure Toolkit is installed through the Eclipse IDE itself; it's the same procedure on all the supported operating systems. The toolkit is available from the **Eclipse Marketplace**.

@@ -1,6 +1,6 @@
-Your sports statistics development team has decided that caching could dramatically improve performance for recently requested data. Your next step is to create and configure an Azure Redis Cache instance.
+Your sports statistics development team has decided that caching could dramatically improve performance for recently requested data. Your next step is to create and configure an Azure Cache for Redis instance.
 
-## Create and configure the Azure Redis Cache instance
+## Create and configure the Azure Cache for Redis instance
 
 You can create a Redis cache using the Azure portal, the Azure CLI, or Azure PowerShell. There are several parameters you will need to decide in order to configure the cache properly for your purposes.
 
@@ -12,7 +12,7 @@ The name must be between 1 and 63 characters, composed of numbers, letters, and 
 
 ### Resource Group
 
-The Azure Redis Cache is a managed resource and needs a _resource group_ owner. You can either create a new resource group, or use an existing one in a subscription you are part of.
+The Azure Cache for Redis is a managed resource and needs a _resource group_ owner. You can either create a new resource group, or use an existing one in a subscription you are part of.
 
 ### Location
 
@@ -23,7 +23,7 @@ You will need to decide where the Redis cache will be physically located by sele
 
 ### Pricing tier
 
-As mentioned in the last unit, there are three pricing tiers available for an Azure Redis Cache.
+As mentioned in the last unit, there are three pricing tiers available for an Azure Cache for Redis.
 
 - **Basic**: Basic cache ideal for development/testing. Is limited to a single server, 53 GB of memory, and 20,000 connections. There is no SLA for this service tier.
 - **Standard**: Production cache which supports replication and includes an 99.99% SLA. It supports two servers (master/slave), and has the same memory/connection limits as the Basic tier.
@@ -126,7 +126,7 @@ OK
 
 ## Accessing a Redis cache from a client
 
-To connect to an Azure Redis Cache instance, you'll need several pieces of information. Clients need the host name, port, and an access key for the cache. You can retrieve this information in the Azure portal through the **Settings > Access Keys** page. 
+To connect to an Azure Cache for Redis instance, you'll need several pieces of information. Clients need the host name, port, and an access key for the cache. You can retrieve this information in the Azure portal through the **Settings > Access Keys** page. 
 
 - The host name is the public Internet address of your cache, which was created using the name of the cache. For example `sportsresults.redis.cache.windows.net`.
 
