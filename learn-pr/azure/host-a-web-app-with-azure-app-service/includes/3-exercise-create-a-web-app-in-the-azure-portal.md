@@ -14,7 +14,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 1. Click **Web** > **Web App**. The portal redirects you to the **Create New Web App** page.
 
-1. When you create a new web app, the Azure portal requests some information to create the app for you. In this section, you need to provide the following basic information:
+1. When you create a new web app, the Azure portal requests some information to create the app for you. In this section, provide the following basic information:
 
     1. **App name**: Your client wants to name the application `BestBike`. Type the name in this field. This value must be globally unique among all other web apps hosted on Azure, and the portal will make sure no one else has used the app name. To ensure your name is unique, add some numbers to your app's name until you find a unique variant.
 
@@ -22,11 +22,13 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
     3. **OS**: In this field, you need to decide whether to use **Windows** or **Linux** to host your new web app. This setting directly affects the App Service plan that you are going to select or create below. If you remember, an App Service plan resembles a virtual machine that is an operating system with all the resource (CPU, RAM, etc.) needed on that machine to run your application. In this case, your client prefers to host the web app over a Windows machine. Therefore, make the selection **Windows**.
 
-    4. **Application Insights**: Azure Application Insights helps you detect and diagnose quality issues in your web apps and web services, and helps you understand what your users actually do with it. One of the requirements of your client is the ability to view some insight reports about the traffic coming over their website and to study some trends of when the traffic goes high and when it goes low. In this case, select the **On** option to turn on Application Insights for this web app. Once you select the **On** option, you are also required to select the location or region that will store the Application Insights data. Note that Application Insights are available in only a limited number of regions. For this demo, select any of the available regions.
+    4. **Publish**: You can choose to either publish code, or a Docker container image. We will be writing code to run in App Service, so make sure the **Code** option is selected.
+
+    5. **Application Insights**: Azure Application Insights helps you detect and diagnose quality issues in your web apps and web services, and helps you understand what your users actually do with it. One of the requirements of your client is the ability to view some insight reports about the traffic coming over their website and to study some trends of when the traffic goes high and when it goes low. In this case, select the **On** option to turn on Application Insights for this web app. Once you select the **On** option, you are also required to select the location or region that will store the Application Insights data. Note that Application Insights are available in only a limited number of regions. For this demo, select any of the available regions.
 
 ::: zone-end
 
-::: zone pivot="javascript"
+::: zone pivot="node"
 
 1. Click the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
 
@@ -34,7 +36,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 1. Click **Web** > **Web App**. The portal redirects you to the **Create New Web App** page.
 
-1. When you create a new web app, the Azure portal requests some information to create the app for you. In this section, you need to provide the following basic information:
+1. When you create a new web app, the Azure portal requests some information to create the app for you. In this section, provide the following basic information:
 
     1. **App name**: Your client wants to name the application `BestBike`. Type the name in this field. This value must be globally unique among all other web apps hosted on Azure, and the portal will make sure no one else has used the app name. To ensure your name is unique, add some numbers to your app's name until you find a unique variant.
 
@@ -42,7 +44,31 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
     3. **OS**: In this field, you need to decide whether to use **Windows** or **Linux** to host your new web app. This setting directly affects the App Service plan that you are going to select or create below. If you remember, an App Service plan resembles a virtual machine that is an operating system with all the resource (CPU, RAM, etc.) needed on that machine to run your application. In this case, your client prefers to host the web app over a Linux machine. Therefore, make the selection **Linux**.
 
-    4. **Runtime Stack**: When hosting a web app on a Linux app service plan, you need to inform App Service what web server technology the application runs on. Our Java app will run on the Tomcat web server, so select **Tomcat 9.0 (JRE 8)** from the list.
+    4. **Publish**: You can choose to either publish code, or a Docker container image. We will be writing code to run in App Service, so make sure the **Code** option is selected.
+
+    5. **Runtime Stack**: When hosting a web app on a Linux app service plan, you need to inform App Service what web server technology the application runs on. We will be using **Node.js** as our runtime, select the latest version of Node.js from the list.
+
+::: zone-end
+
+::: zone pivot="java"
+
+1. Click the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+
+1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
+
+1. Click **Web** > **Web App**. The portal redirects you to the **Create New Web App** page.
+
+1. When you create a new web app, the Azure portal requests some information to create the app for you. In this section, provide the following basic information:
+
+    1. **App name**: Your client wants to name the application `BestBike`. Type the name in this field. This value must be globally unique among all other web apps hosted on Azure, and the portal will make sure no one else has used the app name. To ensure your name is unique, add some numbers to your app's name until you find a unique variant.
+
+    2. **Subscription**: In this field, you need to select an active Azure subscription from the drop-down list. Select the Concierge subscription.
+
+    3. **OS**: In this field, you need to decide whether to use **Windows** or **Linux** to host your new web app. This setting directly affects the App Service plan that you are going to select or create below. If you remember, an App Service plan resembles a virtual machine that is an operating system with all the resource (CPU, RAM, etc.) needed on that machine to run your application. In this case, your client prefers to host the web app over a Linux machine. Therefore, make the selection **Linux**.
+
+    4. **Publish**: You can choose to either publish code, or a Docker container image. We will be writing code to run in App Service, so make sure the **Code** option is selected.
+
+    5. **Runtime Stack**: When hosting a web app on a Linux app service plan, you need to inform App Service what web server technology the application runs on. Our Java app will run on the Tomcat web server, so select **Tomcat 9.0 (JRE 8)** from the list.
 
 ::: zone-end
 
@@ -70,7 +96,7 @@ Click on the **Create new** link to navigate to the **New App Service Plan** pag
 
 ::: zone-end
 
-::: zone pivot="javascript"
+::: zone pivot="java"
 
 3. **Pricing tier**: In this field, you need to select the size of the virtual machine that is going to host your application. Click on the **>** sign to navigate to the **Pricing tier** page.
 

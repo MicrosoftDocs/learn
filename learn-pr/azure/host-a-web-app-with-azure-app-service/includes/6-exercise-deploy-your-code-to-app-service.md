@@ -173,7 +173,49 @@ Congratulations! You have successfully hosted your application on App Service!
 
 ::: zone-end
 
-::: zone pivot="javascript"
+::: zone pivot="node"
+
+There are two primary ways to upload a **.zip** file to an App Service web app.
+
+First, you can deploy a zipped website up to App Service using a dedicated built-in web page. If you navigate to `https://<app_name>.scm.azurewebsites.net/ZipDeployUI` you are shown a site you can drag/drop the local **.zip** file and upload it to your server. You need to sign in with the same Azure credentials used to create the site in this case. This approach is similar to using FTP to upload to the storage folder mapped to the website host.
+
+The second approach which we'll use here is the command line. The Azure CLI includes the `webapp deployment` command to upload a ZIP file that contains all the files for the website. Use the following command to upload your zip file to your created website. Make sure to replace the `<app_name>` and .zip filename:
+
+```azurecli
+az webapp deployment source config-zip --resource-group <rgn>Resource Group<rgn> --src helloworld.zip --name <app_name> 
+```
+
+This will respond with a JSON block with the details about the transfer.
+
+```json
+{
+  "active": true,
+  "author": "N/A",
+  "author_email": "N/A",
+  "complete": true,
+  "deployer": "Push-Deployer",
+  "end_time": "2018-12-19T18:04:13.441193Z",
+  "id": "ddd8d88c04194a00a0eb7cb96766c054",
+  "is_readonly": true,
+  "is_temp": false,
+  "last_success_end_time": "2018-12-19T18:04:13.441193Z",
+  "log_url": "https://<app_name>.scm.azurewebsites.net/api/deployments/latest/log",
+  "message": "Created via a push deployment",
+  "progress": "",
+  "received_time": "2018-12-19T18:04:09.585955Z",
+  "site_name": "<app_name>",
+  "start_time": "2018-12-19T18:04:09.843809Z",
+  "status": 4,
+  "status_text": "",
+  "url": "https://<app_name>.scm.azurewebsites.net/api/deployments/latest"
+}
+```
+
+When the command finishes running, open a new browser tab and navigate to `https://<app_name>.azurewebsites.net`. You'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
+
+::: zone-end
+
+::: zone pivot="java"
 
 ## Configure deployment credentials
 
