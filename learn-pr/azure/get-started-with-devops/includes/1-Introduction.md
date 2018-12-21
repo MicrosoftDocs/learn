@@ -1,7 +1,7 @@
 DevOps practices are helping teams increase the value they are delivering to their customers. It guides them to release higher quality, well tested applications, on a shorter release cycle. Microsoft has a comprehensive DevOps service called Azure DevOps. 
 
 Having a streamlined development and deployment strategy can:
-* Reduce delays in delivering features amd avoid cost overruns
+* Reduce delays in delivering features and avoid cost overruns
 * Allow teams to be more effecient with limited resources 
 * Generate detailed and accurate performance metrics
 
