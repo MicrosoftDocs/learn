@@ -76,7 +76,7 @@ Now that IIS is set up, let's verify that it's running.
 
     You see your VM's public IP address, for example, 104.211.9.245.
 
-1. In a new browser tab, navigate to your VM's IP address. You see your welcome message and your VM's name.
+1. In a new browser tab, navigate to your VM's IP address (`http://` followed by the IP address). You'll see your welcome message and your VM's name.
 
     ![](../media/4-iis-browser.png)
 

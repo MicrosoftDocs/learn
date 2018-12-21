@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-the-network-for-your-virtual-machines.6-describe-azure-expressroute
+title: Explore Azure ExpressRoute
+metadata:
+  title: Explore Azure ExpressRoute
+  description: Explore Azure ExpressRoute
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-describe-azure-expressroute.md)]

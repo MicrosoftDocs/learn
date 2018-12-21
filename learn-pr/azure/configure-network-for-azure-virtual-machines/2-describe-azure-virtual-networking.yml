@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-the-network-for-your-virtual-machines.2-describe-azure-virtual-networking
+title: Explore Azure virtual networking
+metadata:
+  title: Explore Azure virtual networking
+  description: Explore Azure virtual networking
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-azure-virtual-networking.md)]
