@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.build-azure-vm-templates.6-extend-the-quickstart-template
+title: Extend the Quickstart template to deploy a basic web site
+metadata:
+  title: Extend the Quickstart template to deploy a basic web site
+  description: Add a resource to your template and deploy the change to your VM
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: platform-cloud
+interactive: bash
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-extend-the-quickstart-template.md)]
+tasks:
+# Verify the VNet named "MyVNET" exists.
+# This isn't the most ideal test, but it's a resource whose
+# type and name is common across both Windows and Linux pivots
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Network/virtualNetworks"
+      name: MyVNET
+  hint: "Run the `az group deployment create` command as shown to create your VM deployment."

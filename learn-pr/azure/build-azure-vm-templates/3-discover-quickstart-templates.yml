@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.build-azure-vm-templates.3-discover-quickstart-templates
+title: Discover Azure Quickstart templates
+metadata:
+  title: Discover Azure Quickstart templates
+  description: Explore what an Azure Quickstart template is and what prebuilt templates are available for you to use right now
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: platform-cloud
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-discover-quickstart-templates.md)]

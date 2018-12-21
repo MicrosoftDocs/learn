@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-azure-vm-templates.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
