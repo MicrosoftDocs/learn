@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-the-network-for-your-virtual-machines.7-knowledge-check-azure-expressroute
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following protocols provides dynamic routing for Azure ExpressRoute?'
+    choices:
+    - content: "IPVPN"
+      isCorrect: false
+      incorrectExplanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
+    - content: "PPTP"
+      isCorrect: false
+      incorrectExplanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
+    - content: "IPsec"
+      isCorrect: false
+      incorrectExplanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
+    - content: "Border Gateway Protocol (BGP)"
+      isCorrect: true
+      correctExplanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
+    - content: "S-key"
+      isCorrect: false
+      incorrectExplanation: "Border Gateway Protocol is an industry-standard dynamic routing protocol that can exchange routes between your on-premises network, your instances in Azure, and Microsoft public addresses."
+
+  - content: 'True or false: Azure public peering allows you to connect to services with public IP addresses without your traffic being routed over the internet'
+    choices:
+    - content: "True"
+      isCorrect: true
+      correctExplanation: "Azure public peering enables private connections to services that are available on public IP addresses. Some examples of services that support this are: Azure Storage, and Azure SQL databases."
+    - content: "False"
+      isCorrect: false
+      incorrectExplanation: "Azure public peering enables private connections to services that are available on public IP addresses. Some examples of services that support this are: Azure Storage, and Azure SQL databases."

@@ -34,7 +34,7 @@ modules:
 #TODO: Add - Keep your VMs Updated (post-Ignite)
 #- learn.scale-and-size-virtual-machines
 #- learn.make-your-virtual-machines-highly-available
-#- learn.configure-the-network-for-your-virtual-machines (POST-IGNITE)
+- learn.configure-the-network-for-your-virtual-machines
 - learn.build-azure-vm-templates
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.caching-and-performance-azure-storage-and-disks

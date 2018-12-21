@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-the-network-for-your-virtual-machines.3-exercise-create-azure-virtual-network
+title: Create an Azure virtual network
+metadata:
+  title: Create an Azure virtual network
+  description: Create an Azure virtual network
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-exercise-create-azure-virtual-network.md)]
