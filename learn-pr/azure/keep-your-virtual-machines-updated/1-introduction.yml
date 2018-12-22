@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.keep-your-virtual-machines-updated.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 12/21/2018
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.keep-your-virtual-machines-updated.4-verify-agent-connectivity-and-schedule-recurring-updates
+title: Verify agent connectivity and schedule recurring updates
+metadata:
+  title: Verify agent connectivity and schedule recurring updates
+  description: Verify agent connectivity and schedule recurring updates
+  ms.date: 12/21/2018
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-verify-agent-connectivity-and-schedule-recurring-updates.md)]

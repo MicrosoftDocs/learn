@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.keep-your-virtual-machines-updated.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 12/21/2018
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

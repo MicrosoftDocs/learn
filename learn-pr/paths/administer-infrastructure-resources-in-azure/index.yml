@@ -31,7 +31,7 @@ modules:
 - learn.create-linux-vm-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.manage-vms-with-azure-cli
-#TODO: Add - Keep your VMs Updated (post-Ignite)
+- learn.keep-your-virtual-machines-updated
 #- learn.scale-and-size-virtual-machines
 #- learn.make-your-virtual-machines-highly-available
 - learn.configure-the-network-for-your-virtual-machines
