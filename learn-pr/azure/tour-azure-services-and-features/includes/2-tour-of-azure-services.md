@@ -113,4 +113,4 @@ Web services in Azure include the following facilities:
 | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale. |
 | Azure SignalR Service | Add real-time web functionalities easily. |
 
-Now that we've identified some of the areas that might interest a company looking to migrate to Azure let's look at what it takes to use the services and features.
+Now that we've identified some of the areas that might interest a company looking to migrate to Azure let's look at where these services are in the cloud.

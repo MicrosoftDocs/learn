@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-compute.4-containers
+title: Explore Containers in Azure
+metadata:
+  title: Explore Containers in Azure
+  description: Explore Containers in Azure
+  ms.date: 12/21/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-containers.md)]

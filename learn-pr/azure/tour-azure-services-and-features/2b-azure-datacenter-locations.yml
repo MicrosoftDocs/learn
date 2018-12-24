@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-services-features.2b-azure-datacenter-locations
+title: Regions, geographies, and availability zones
+metadata:
+  title: Regions, geographies, and availability zones
+  description: Regions, geographies, and availability zones
+  ms.date: 12/21/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2b-azure-datacenter-locations.md)]

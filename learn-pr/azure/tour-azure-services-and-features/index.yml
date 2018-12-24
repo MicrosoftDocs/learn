@@ -33,6 +33,7 @@ units:
 #TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.azure-services-features.1-introduction
 - learn.azure-services-features.2-tour-of-azure-services
+- learn.azure-services-features.2b-azure-datacenter-locations
 - learn.azure-services-features.3-create-an-azure-account
 - learn.azure-services-features.4-exercise-create-an-azure-account
 - learn.azure-services-features.5-navigate-the-portal
