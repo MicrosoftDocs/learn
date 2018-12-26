@@ -165,6 +165,16 @@ achievements:
   title: Create a Windows virtual machine in Azure
   summary: Create a Windows virtual machine in Azure
   iconUrl: /learn/achievements/create-windows-virtual-machine-in-azure.svg
+- uid: learn.keep-your-virtual-machines-updated.badge
+  type: badge
+  title: Keep your virtual machines updated
+  summary: Deploy the Azure Update Management solution to virtual machines in your cloud environment.
+  iconUrl: /learn/achievements/keep-your-virtual-machines-updated.svg
+#- uid: learn.interactive-iot-deployments.badge
+#  type: badge
+#  title: Working with interactive IoT deployments in Azure
+#  summary: Working with interactive IoT deployments in Azure
+#  iconUrl: http://via.placeholder.com/120x120
 #- uid: learn.choose-web-hosting.badge
 #  type: badge
 #  title: Choose a Web Hosting Option in Azure

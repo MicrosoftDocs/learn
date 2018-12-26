@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.keep-your-virtual-machines-updated.2-update-management-solution-on-a-vm
+title: Update Management solution on a virtual machine
+metadata:
+  title: Update Management solution on a virtual machine
+  description: Update Management solution on a virtual machine
+  ms.date: 12/21/2018
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-update-management-solution-on-a-vm.md)]

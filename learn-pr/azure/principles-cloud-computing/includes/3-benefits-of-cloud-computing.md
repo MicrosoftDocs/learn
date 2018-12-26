@@ -4,21 +4,31 @@ Let's learn some of the top benefits of cloud computing.
 
 ![Paper bill and a cloud representing cost effectiveness](../media/3-cost-effective.png)
 
-**It’s cost effective**
+**It’s cost-effective**
 
-Cloud computing provides a **pay-as-you-go** pricing model. Rather than paying for a pre-defined amount of computing resources or hardware up-front, you rent hardware and pay for the resources that you use.
+Cloud computing provides a **pay-as-you-go** or **consumption-based** pricing model. Rather than paying for a pre-defined amount of computing resources or hardware up-front, you rent hardware and pay for the resources that you use. 
 
-For example, imagine you have a blog, and when you create a new post you want to notify your subscribers via text message. Using the correct cloud computing service, you'll only spend money when you're sending texts to your subscribers. When you're not posting, it won’t cost you anything.
+This consumption-based model brings with it many benefits, including:
+
+- No upfront costs
+- No need to purchase and manage the costly infrastructure that they may or may not use to its fullest
+- The ability to pay for additional resources if and when they are needed
+- The ability to stop paying for resources that are no longer needed
+
+This also allows for better cost prediction. Prices for individual resources and services are provided so you can predict how much you will spend in a given billing period based on your expected usage. You can also perform analysis based on future growth using historical usage data tracked by your cloud provider.
+
 
 ![Growth chart representing scalability](../media/3-scalable.png)
 
 **It's scalable**
 
-Cloud computing supports both _vertical_ and _horizontal_ scaling depending on your needs.
+You can increase or decrease the resources and services used based on the demand or workload at any given time. Cloud computing supports both _vertical_ and _horizontal_ scaling depending on your needs.
 
 **Vertical scaling**, also known as "scaling up", is the process of adding resources to increase the power of an existing server. Some examples of vertical scaling are: adding a faster CPU, additional CPUs, or adding more memory.
 
 **Horizontal scaling**, also known as "scaling out", is the process of adding more servers that function together as one unit. For example, instead of having one server processing incoming requests, you have two.
+
+Scaling can be done manually or automatically based on specific triggers such as CPU utilization or the number of requests and resources can be allocated or deallocated in minutes.
 
 ![Point graph representing elasticity](../media/3-elastic.png)
 
@@ -36,28 +46,36 @@ Another example is if you are running an application used by employees, you can 
 
 When you use the cloud, you’re able to focus on what matters: building and deploying applications. You don't have to be caught up in the maintenance work of software patching, hardware setup, upgrades, and other IT management tasks. All of this is automatically done for you to ensure you're using the latest and greatest tools to run your business.
 
-Additionally, the computer hardware is maintained and upgraded by the cloud provider. For example, if a disk goes out, the disk will be replaced. If new hardware comes out, you don’t have to go through the process of replacing your hardware. You also don’t have to bear the cost for having up-to-date hardware all the time.
+Additionally, the computer hardware is maintained and upgraded by the cloud provider. For example, if a disk goes out, the disk will be replaced. If new hardware comes out, you don’t have to go through the process of replacing your hardware. You also don’t have to bear the cost of having up-to-date hardware all the time.
 
 ![Certificate representing reliability](../media/3-reliable.png)
 
 **It's reliable**
 
-When you're running a business, you want to be confident your data is always going to be there. Cloud computing providers offer data backup, disaster recovery, and data replication services to make sure your data is always safe.
+When you're running a business, you want to be confident your data is always going to be there. Cloud computing providers offer data backup, disaster recovery, and data replication services to make sure your data is always safe. In addition, redundancy is often built into cloud services architecture so if one component fails, a backup component takes its place. The is referred to as _fault tolerance_ and it ensures that your customers aren't impacted when an unexpected accident occurs.
+
+![Globe representing multiple datacenters](../media/3-global.png)
+
+**It's global**
+
+Cloud providers have fully-redundant datacenters located in various regions all over the globe. This gives you a local presence close to your customers to give them the best response time possible no matter where in the world they are. 
+
+You can replicate your services into multiple regions for redundancy and locality, or select a specific region to ensure you meet data-residency and compliance laws for your customers.
 
 ![Lock representing security](../media/3-secure.png)
 
 **It's secure**
 
-Think about how you secure your data center. You have physical security &ndash; who can access the building, who can touch server racks, and so on. You also have digital security &ndash; who can connect to your systems and data over the network.
+Think about how you secure your datacenter. You have physical security &ndash; who can access the building, who can touch server racks, and so on. You also have digital security &ndash; who can connect to your systems and data over the network.
 
-The cloud is essentially a network of large data centers distributed throughout the globe. So cloud providers need to deal with many of these same issues, just at a larger scale.
+Cloud providers offer a broad set of policies, technologies, controls, and expert technical skills that can provide better security than most organizations can otherwise achieve. The result is strengthened security, which helps to protect data, apps, and infrastructure from potential threats.
 
 When it comes to physical security &ndash; threats to cloud infrastructure, cloud providers invest heavily in walls, cameras, gates, security personnel, and so on to protect physical assets. They also have strict procedures in place to ensure employees have access only to those resources that they’ve been authorized to manage.
 
-Then there’s digital security. One thing that makes the cloud unique is that you rent compute and storage resources from a shared pool. Plus, data can travel in many different ways &ndash; within a data center, between data centers, and over the internet.
+Then there’s digital security. One thing that makes the cloud unique is that you rent compute and storage resources from a shared pool. Plus, data can travel in many different ways &ndash; within a datacenter, between datacenters, and over the internet.
 
 For example, you want only authorized users to be able to log into virtual machines or storage systems running in the cloud. The responsibility for securing these resources is shared between you and the cloud provider. Cloud providers offer tools that help you mitigate security threats but you must use these tools to protect the resources you use.
 
 ## Summary
 
-Cloud computing makes running a business easier. It’s cost effective, scalable, elastic, current, reliable, and secure. This means you’re able to spend more time on what matters and less time on managing the underlying details.
+Cloud computing makes running a business easier. It’s cost-effective, scalable, elastic, current, reliable, and secure. This means you’re able to spend more time on what matters and less time managing the underlying details.

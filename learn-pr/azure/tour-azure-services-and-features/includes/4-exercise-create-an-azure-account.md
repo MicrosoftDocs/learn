@@ -1,7 +1,7 @@
-To create and use Azure services, you will eventually need an account. If you already have an Azure account, or if you aren't ready to create one now, you can skip this unit and move onto the next one where we will begin to explore the Azure Portal.
+To create and use Azure services, you will eventually need an account. If you already have an Azure account, or if you aren't ready to create one now, you can skip this unit and move onto the next unit where we will begin to explore the Azure Portal.
 
 > [!NOTE]
-> You need a valid credit card for age and identity validation. Your card will _not be charged_ until you decide to upgrade the trial / free account to a full subscription.
+> You need a valid credit card for age and identity validation only. Your card will _not be charged_ until you decide to upgrade the trial / free account to a full subscription.
 
 ## Sign up for a free account
 

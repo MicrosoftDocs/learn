@@ -8,3 +8,11 @@ We have covered a lot of ground in this module.
 However, this is just the beginning. Azure has so much to offer you, no matter what role you plan in your organization. If you are a developer, Azure provides an easy way to test new platforms and build sophisticated apps. If you are an administrator, you will use the Azure portal, Azure CLI, or Azure PowerShell tools to administer your cloud-based infrastructure. If you are an architect, you can use Azure to test out new architecture ideas quickly.
 
 Keep exploring Azure by selecting one or more paths through the content that's structured specifically for what you want to learn.
+
+## Learn more
+
+Here are some places to go to learn more about what we've covered today:
+
+- [Azure Regions](https://azure.microsoft.com/global-infrastructure/regions/)
+
+- [Availability Zones](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)

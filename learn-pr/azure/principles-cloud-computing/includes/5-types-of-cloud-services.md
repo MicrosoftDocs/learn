@@ -13,7 +13,21 @@ When talking about cloud computing, there are three major categories. It's impor
   :::column span="3":::
 **Infrastructure as a service (IaaS)**
 
-Infrastructure as a Service is the most flexible category of cloud services. It aims to give you complete control over the hardware that runs your application. Instead of buying hardware, with IaaS, you rent it.
+Infrastructure as a Service is the most flexible category of cloud services. It aims to give you complete control over the hardware that runs your application (IT infrastructure servers and virtual machines (VMs), storage, networks, and operating systems). Instead of buying hardware, with IaaS, you rent it. It's an instant computing infrastructure, provisioned and managed over the internet.
+
+> [!NOTE]
+> When using IaaS, ensuring that a service is up and running is a shared responsibility: the cloud provider is responsible for ensuring the cloud infrastructure is functioning correctly; the cloud customer is responsible for ensuring the service they are using is configured correctly, is up to date, and is available to their customers. This is referred to as the **shared responsibility model**.
+
+IaaS is commonly used in the following scenarios:
+
+- **Migrating workloads**. Typically, IaaS facilities are managed in a similar way as on-premises infrastructure and provide an easy migration path for moving existing applications to the cloud.
+
+- **Test and development.** Teams can quickly set up and dismantle test and development environments, bringing new applications to market faster. IaaS makes scaling development testing environments up and down fast and economical.
+
+- **Website hosting.** Running websites using IaaS can be less expensive than traditional web hosting.
+
+- **Storage, backup, and recovery.** Organizations avoid the capital outlay and complexity of storage management, which typically requires skilled staff to manage data and meet legal and compliance requirements. IaaS is useful for managing unpredictable demand and steadily growing storage needs. It can also simplify the planning and management of backup and recovery systems.
+
   :::column-end:::
 :::row-end:::
 
@@ -24,7 +38,16 @@ Infrastructure as a Service is the most flexible category of cloud services. It 
   :::column span="3":::
 **Platform as a service (PaaS)**
 
-PaaS provides an environment for building, testing, and deploying software applications. The goal of PaaS is to help you create an application as quickly as possible without having to worry about managing the underlying infrastructure. For example, when deploying a web application using PaaS, you don't have to install an operating system, web server, or even system updates.
+PaaS provides an environment for building, testing, and deploying software applications. The goal of PaaS is to help you create an application as quickly as possible without having to worry about managing the underlying infrastructure. For example, when deploying a web application using PaaS, you don't have to install an operating system, web server, or even system updates. 
+
+PaaS is a complete development and deployment environment in the cloud, with resources that enable organizations to deliver everything from simple cloud-based apps to sophisticated cloud-enabled enterprise applications. Resources are purchased from a cloud service provider on a pay-as-you-go basis and accessed over a secure Internet connection.
+
+PaaS is commonly used in the following scenarios:
+
+**Development framework.** PaaS provides a framework that developers can build upon to develop or customize cloud-based applications. Similar to the way you create a Microsoft Excel macro, PaaS lets developers create applications using built-in software components. Cloud features such as scalability, high-availability, and multi-tenant capability are included, reducing the amount of coding that developers must do.
+
+**Analytics or business intelligence.** Tools provided as a service with PaaS allow organizations to analyze and mine their data. They can find insights and patterns, and predict outcomes to improve business decisions such as forecasting, product design, and investment returns.
+
   :::column-end:::
 :::row-end:::
 
@@ -35,16 +58,29 @@ PaaS provides an environment for building, testing, and deploying software appli
   :::column span="3":::
 **Software as a service (SaaS)**
 
-SaaS is software that is centrally hosted and managed for the end customer. It is usually based on an architecture where one version of the application is used for all customers, and licensed through a monthly or annual subscription. Office 365 is a perfect example of SaaS software.
+SaaS is software that is centrally hosted and managed for the end customer. It is usually based on an architecture where one version of the application is used for all customers, and licensed through a monthly or annual subscription. Office 365, Skype, and Dynamics CRM Online are perfect examples of SaaS software.
   :::column-end:::
 :::row-end:::
 
-## Think about service categories as layers
+### Cost and Ownership
+
+> [!div class="mx-tableFixed"]
+> | | IaaS | PaaS | SaaS |
+> |-|------|------|------|
+> | Upfront costs | There are no upfront costs. Users pay only for what they consume. | There are no upfront costs. Users pay only for what they consume. | Users have no upfront costs; they pay a subscription, typically on a monthly or annual basis. |
+> | User ownership | The user is responsible for the purchase, installation, configuration, and management of their own software operating systems, middleware, and applications. | The user is responsible for the development of their own applications. However, they are not responsible for managing the server or infrastructure. This allows the user to focus on the application or workload they want to run. | Users just use the application software; they are not responsible for any maintenance or management of that software. | 
+> | Cloud provider ownership | The cloud provider is responsible for ensuring that the underlying cloud infrastructure (such as virtual machines, storage, and networking) is available for the user. | The cloud provider is responsible for operating system management, and network and service configuration. Cloud providers are typically responsible for everything apart from the application that a user wants to run. They provide a complete managed platform on which to run an application. | The cloud provider is responsible for the provision, management, and maintenance of the application software. |
+
+### Management responsibilities
 
 One thing to understand is that these categories are layers on top of each other. For example, PaaS adds a layer on top of IaaS by providing a level of abstraction. The abstraction has the benefit of hiding the details that you may not care about so that you can get to coding quicker. However, one cost of that is that you have less control over the underlying hardware. The following illustration shows a list of resources that you manage and that your service provider manages in each cloud service category.
 
 ![An illustration showing the level of abstraction in each category of cloud service.](../media/5-layer-diagram.png)
 
+- IaaS requires the most user management of all the cloud services. The user is responsible for managing the operating systems, data, and applications.
+- PaaS requires less user management. The cloud provider manages the operating systems, and the user is responsible for the applications and data they run and store.
+- SaaS requires the least amount of management. The cloud provider is responsible for managing everything, and the end user just uses the software.
+
 ## Summary
 
-IaaS, PaaS, and SaaS each contain different levels of managed services. You may easily use a combination of these types of infrastructure. You could use Office 365 on your company’s computers (SaaS), and in Azure you could host your VMs (IaaS) and use Azure SQL Database (PaaS) to store your data. With the cloud’s flexibility, you can use any combination that provides you with the maximum result.
+IaaS, PaaS, and SaaS each contain different levels of managed services. You may easily use a combination of these types of infrastructure. You could use Office 365 on your company’s computers (SaaS), and in Azure, you could host your VMs (IaaS) and use Azure SQL Database (PaaS) to store your data. With the cloud’s flexibility, you can use any combination that provides you with the maximum result.

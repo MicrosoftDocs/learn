@@ -1,6 +1,14 @@
-In this module, we learned what cloud computing is and how it can help every business, from start-up to large enterprise. At this point, we should know what cloud computing is, however, we haven't talked about a specific cloud provider.
+In this module, you've learned about cloud computing, what it is and what its key characteristics are. Here are some of the things you covered.
+
+- Different types of cloud models that are available and the considerations of using those different models. 
+- Some of the key terms and concepts such as high availability, agility, elasticity, fault tolerance, and CapEx vs. OpEx. 
+- The different cloud services available, the benefits of using the different types, and the management responsibilities under each service type. 
+- Cloud models such as public, private and hybrid, and what the key characteristics of each model are.
+- The different types of cloud service available: IaaS, PaaS, and SaaS; what the key characteristics of each service are and when you would choose one over the other.
 
 ![A connected plug to represent electricity being delivered](../media/7-heading.png)
+
+At this point, you know what cloud computing is, however, we haven't talked about a specific cloud provider.
 
 ### Microsoft Azure
 
@@ -11,7 +19,7 @@ Here are just a few kinds of services you'll find on Azure:
 - **Compute** services such as VMs and containers that can run your applications
 - **Database** services that provide both relational and NoSQL choices
 - **Identity** services that help you authenticate and protect your users
-- **Networking** services that connect your data center to the cloud, provide high availability, or host your DNS domain
+- **Networking** services that connect your datacenter to the cloud, provide high availability or host your DNS domain
 - **Storage** solutions that can accommodate massive amounts of both structured and unstructured data
 - **AI and machine-learning** services that can naturally communicate with your users through vision, hearing, and speech
 - And many more!
@@ -20,3 +28,11 @@ Here are just a few kinds of services you'll find on Azure:
 
 You can jump into Azure today with a free trial account! Head to
 [azure.microsoft.com](https://azure.microsoft.com).
+
+## Learn more
+
+Here are some places to go to learn more about what we've covered today:
+
+[Cloud Computing Terms](https://azure.microsoft.com/overview/cloud-computing-dictionary/)
+
+[What is Azure?](https://azure.microsoft.com/overview/)

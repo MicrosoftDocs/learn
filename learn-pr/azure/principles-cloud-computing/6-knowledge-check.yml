@@ -3,8 +3,7 @@ uid: learn.principles-cloud-computing.6-knowledge-check
 metadata:
   title: Knowledge Check
   description: Knowledge Check
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
+  ms.date: 12/20/2018
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
@@ -15,7 +14,17 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-
+  - content: "What terms from the list below would be viewed as benefits of using cloud services?"
+    choices:
+    - content: 'Unpredictable costs'
+      isCorrect: false
+      incorrectExplanation: "Cloud computing typically has very predictable 'pay-as-you-go' costing models."
+    - content: 'Elasticity'
+      isCorrect: true
+      correctExplanation: "Elasticity, Agility and Economies of scale are the correct answers, and would be seen as benefits that you can gain from using cloud services."
+    - content: 'Local reach only'
+      isCorrect: false
+      incorrectExplanation: "While you can isolate cloud resources and make them private, most of the time the services are public facing and reachable over the internet."
   - content: "Suppose you have two types of applications: legacy applications that require specialized mainframe hardware and newer applications that can run on commodity hardware. Which cloud deployment model would be best for you?"
     choices:
     - content: 'Public cloud'
