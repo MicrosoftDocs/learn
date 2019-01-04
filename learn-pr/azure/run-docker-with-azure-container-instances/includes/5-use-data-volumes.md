@@ -9,7 +9,7 @@ Here you'll create a storage account and a file share that you'll later make acc
 1. Your storage account requires a unique name. For learning purposes, run the following command to store a unique name in a Bash variable.
 
     ```bash
-    ACI_PERS_STORAGE_ACCOUNT_NAME=mystorageaccount$RANDOM
+    STORAGE_ACCOUNT_NAME=mystorageaccount$RANDOM
     ```
 
 1. Run the following `az storage account create` command to create your storage account.
@@ -17,7 +17,7 @@ Here you'll create a storage account and a file share that you'll later make acc
     ```azurecli
     az storage account create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --name $ACI_PERS_STORAGE_ACCOUNT_NAME \
+      --name $STORAGE_ACCOUNT_NAME \
       --sku Standard_LRS \
       --location eastus
     ```
@@ -27,7 +27,7 @@ Here you'll create a storage account and a file share that you'll later make acc
     ```azurecli
     export AZURE_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --name $ACI_PERS_STORAGE_ACCOUNT_NAME \
+      --name $STORAGE_ACCOUNT_NAME \
       --output tsv)
     ```
 
@@ -47,32 +47,19 @@ To mount an Azure file share as a volume in Azure Container Instances, you need 
 * The share name
 * The storage account access key
 
-You already have the share name, **aci-share-demo**. Here you'll get the other two values.
-
-1. Run the following command to get the storage account name.
-
-    ```azurecli
-    STORAGE_ACCOUNT=$(az storage account list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query "[?contains(name,'$ACI_PERS_STORAGE_ACCOUNT_NAME')].[name]" \
-      --output tsv)
-    ```
-
-1. As an optional step, print the storage account name to the console.
-
-    ```bash
-    echo $STORAGE_ACCOUNT
-    ```
+You already have the first two values. The storage account name is stored in the `STORAGE_ACCOUNT_NAME` Bash variable. You specified **aci-share-demo** as the share name in the previous step. Here you'll get the remaining value &mdash; the storage account access key.
 
 1. Run the following command to get the storage account key.
 
     ```azurecli
     STORAGE_KEY=$(az storage account keys list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --account-name $STORAGE_ACCOUNT \
+      --account-name $STORAGE_ACCOUNT_NAME \
       --query "[0].value" \
       --output tsv)
     ```
+
+    The result is stored in a Bash variable named `STORAGE_KEY`.
 
 1. As an optional step, print the storage key to the console.
 
@@ -84,7 +71,7 @@ You already have the share name, **aci-share-demo**. Here you'll get the other t
 
 To mount an Azure file share as a volume in a container, you specify the share and volume mount point when you create the container.
 
-1. Run this `az container create` command to create a container that's mounts `/aci/logs/` to your file share.
+1. Run this `az container create` command to create a container that mounts `/aci/logs/` to your file share.
 
     ```azurecli
     az container create \
@@ -94,7 +81,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
       --location eastus \
       --ports 80 \
       --ip-address Public \
-      --azure-file-volume-account-name $ACI_PERS_STORAGE_ACCOUNT_NAME \
+      --azure-file-volume-account-name $STORAGE_ACCOUNT_NAME \
       --azure-file-volume-account-key $STORAGE_KEY \
       --azure-file-volume-share-name aci-share-demo \
       --azure-file-volume-mount-path /aci/logs/
