@@ -182,7 +182,7 @@ First, you can deploy a zipped website up to App Service using a dedicated built
 The second approach which we'll use here is the command line. The Azure CLI includes the `webapp deployment` command to upload a ZIP file that contains all the files for the website. Use the following command to upload your zip file to your created website. Make sure to replace the `<app_name>` and .zip filename:
 
 ```azurecli
-az webapp deployment source config-zip --resource-group <rgn>Resource Group<rgn> --src helloworld.zip --name <app_name> 
+az webapp deployment source config-zip --resource-group <rgn>[sandbox resource group name]</rgn> --src helloworld.zip --name <app_name> 
 ```
 
 This will respond with a JSON block with the details about the transfer.
