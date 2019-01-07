@@ -325,11 +325,6 @@ achievements:
   title: Classify images with the Microsoft Custom Vision Service badge
   summary: Badge for the 'Classify images with the Microsoft Custom Vision Service' module.
   iconUrl: /learn/achievements/classify-images-with-custom-vision-service.svg
-- uid: learn.create-neural-network-with-dsvm.badge
-  type: badge
-  title: Building Neural Networks with TensorFlow and the Azure Data Science Virtual Machine badge
-  summary: Badge for the 'Building Neural Networks with TensorFlow and the Azure Data Science Virtual Machine' module.
-  iconUrl: /learn/achievements/create-neural-network-with-dsvm.svg
 - uid: learn.design-for-efficiency-and-operations.badge
   type: badge
   title: Design for efficiency and operations badge
