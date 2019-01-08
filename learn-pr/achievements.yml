@@ -486,3 +486,8 @@ achievements:
   title: Build Azure Resource Manager templates
   summary: Build Azure Resource Manager templates
   iconUrl: /learn/achievements/build-azure-vm-templates.svg
+- uid: learn.gather-metrics-blob-storage.badge
+  type: badge
+  title: TODO
+  summary: TODO
+  iconUrl: /learn/achievements/welcome-to-azure.svg
