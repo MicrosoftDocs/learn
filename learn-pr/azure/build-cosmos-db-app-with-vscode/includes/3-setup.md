@@ -1,6 +1,6 @@
 Visual Studio Code enables you to create a console application by using the integrated terminal and a few short commands.
 
-In this unit, you will create a simple console app using the integrated terminal, retrieve your Azure Cosmos DB connection string from the extension, and then configure the connection from your application to Azure Cosmos DB.
+In this unit, you will create a basic console app using the integrated terminal, retrieve your Azure Cosmos DB connection string from the extension, and then configure the connection from your application to Azure Cosmos DB.
 
 ## Create a console app
 
@@ -18,7 +18,7 @@ In this unit, you will create a simple console app using the integrated terminal
     dotnet new console
     ```
 
-    This command creates a **Program.cs** file in your folder with a simple "Hello World" program already written, along with a C# project file named **learning-module.csproj**.
+    This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **learning-module.csproj**.
 
 1. In the terminal window, copy and paste the following command to run the "Hello World" program.
 
@@ -59,7 +59,7 @@ In this unit, you will create a simple console app using the integrated terminal
 
     If you get a message about adding required missing assets, click **Yes**.
 
-1. Create a new file named App.config in the learning-module folder, and add the following code.
+1. Create a new file named App.config in the `learning-module` folder, and add the following code.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -75,7 +75,7 @@ In this unit, you will create a simple console app using the integrated terminal
 
 1. Paste the connection string into the end of the App.config file, and then copy the **AccountEndpoint** portion from the connection string into the **accountEndpoint** value in App.config.
 
-    The accountEndpoint should look like the following code:
+    The **accountEndpoint** should look like the following:
 
     ```xml
     <add key="accountEndpoint" value="https://<account-name>.documents.azure.com:443/" />
@@ -83,9 +83,21 @@ In this unit, you will create a simple console app using the integrated terminal
 
 1. Now copy the **AccountKey** value from the connection string into the **accountKey** value, and then delete the original connection string you copied in.
 
+    Your final App.config file looks similar to this.
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+        <configuration>
+          <appSettings>
+            <add key="accountEndpoint" value="https://my-account.documents.azure.com:443/" />
+            <add key="accountKey" value="6e7sRxunccGEeO7IVlMdeFt5BdsllfSGLYc28KyjzkESiCu7tfWbTaZXAErt2v88gOcMbOYgwp1q4NYDifD7ew==" />
+          </appSettings>
+    </configuration>
+    ```
+
 1. At the terminal prompt, copy and paste the following command to run the program.
 
-    ```csharp
+    ```bash
     dotnet run
     ```
 
@@ -93,15 +105,15 @@ In this unit, you will create a simple console app using the integrated terminal
 
 ## Create the DocumentClient
 
-Now it's time to create an instance of the DocumentClient, which is the client-side representation of the Azure Cosmos DB service. This client is used to configure and execute requests against the service.
+Now it's time to create an instance of the `DocumentClient`, which is the client-side representation of the Azure Cosmos DB service. This client is used to configure and execute requests against the service.
 
-1. In Program.cs, add the following to the beginning of the Program class.
+1. In Program.cs, add the following to the beginning of the `Program` class.
 
     ```csharp
     private DocumentClient client;
     ```
 
-1. Add a new asynchronous task to create a new client, and check whether the Users database exists by adding the following method after the `Main` method.
+1. Add a new asynchronous task to create a new client, and check whether the **Users** database exists by adding the following method after the `Main` method.
 
     ```csharp
     private async Task BasicOperations()
@@ -118,7 +130,7 @@ Now it's time to create an instance of the DocumentClient, which is the client-s
 
 1. In the integrated terminal, again, copy and paste the following command to run the program to ensure it runs.
 
-    ```csharp
+    ```bash
     dotnet run
     ```
 
@@ -149,7 +161,7 @@ Now it's time to create an instance of the DocumentClient, which is the client-s
 
 1. In the integrated terminal, again, type the following command to run the program to ensure it runs.
 
-    ```csharp
+    ```bash
     dotnet run
     ```
 
@@ -160,4 +172,4 @@ Now it's time to create an instance of the DocumentClient, which is the client-s
     End of demo, press any key to exit.
     ```
 
-In this unit, you set up the groundwork for your Azure Cosmos DB application. You set up your development environment in Visual Studio Code, created a simple HelloWorld project, connected the project to the Azure Cosmos DB endpoint, and ensured your database and collection exist.
+In this unit, you set up the groundwork for your Azure Cosmos DB application. You set up your development environment in Visual Studio Code, created a basic "Hello World" project, connected the project to the Azure Cosmos DB endpoint, and ensured your database and collection exist.

@@ -1,6 +1,6 @@
 <!--TODO: explain Etag in knowledge needed-->
 
-Once the connection to Azure Cosmos DB has been made, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you will create User documents in your WebCustomer collection. Then, you'll retrieve them by ID, replace them, and delete them.
+Once the connection to Azure Cosmos DB has been made, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you will create User documents in your `WebCustomer` collection. Then, you'll retrieve them by ID, replace them, and delete them.
 
 ## Working with documents programmatically
 
@@ -10,12 +10,14 @@ The main operations for Azure Cosmos DB documents are part of the [DocumentClien
 * [CreateDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentasync?view=azure-dotnet)
 * [ReadDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.readdocumentasync?view=azure-dotnet)
 * [ReplaceDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.replacedocumentasync?view=azure-dotnet)
-* [UpsertDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.upsertdocumentasync?view=azure-dotnet). Upsert performs a create or replace operation depending on whether the document already exists.
+* [UpsertDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.upsertdocumentasync?view=azure-dotnet)
 * [DeleteDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.deletedocumentasync?view=azure-dotnet)
+
+Upsert performs a create or replace operation depending on whether the document already exists.
 
 To perform any of these operations, you need to create a class that represents the object stored in the database. Because we're working with a database of users, you'll want to create a **User** class to store primary data such as their first name, last name, and user id (which is required, as that's the partition key to enable horizontal scaling) and classes for shipping preferences and order history.
 
-Once you have those classes created to represent your users, you'll create new user documents for each instance, and then we'll perform some simple CRUD operations on the documents.
+Once you have those classes created to represent your users, you'll create new user documents for each instance, and then we'll perform some basic CRUD operations on the documents.
 
 ## Create documents
 
@@ -84,11 +86,11 @@ Once you have those classes created to represent your users, you'll create new u
 
 1. In the integrated terminal, type the following command to run the program to ensure it runs.
 
-    ```csharp
+    ```bash
     dotnet run
     ```
 
-1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** function at the end of the Program.cs file.
+1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
 
     ```csharp
     private async Task CreateUserDocumentIfNotExists(string databaseName, string collectionName, User user)
@@ -194,7 +196,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 1. In the integrated terminal, again, type the following command to run the program.
 
-    ```csharp
+    ```bash
     dotnet run
     ```
 
@@ -211,7 +213,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 ## Read documents
 
-1. To read documents from the database, copy in the following code and place after the WriteToConsoleAndPromptToContinue method in the Program.cs file.
+1. To read documents from the database, copy in the following code and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
 
     ```csharp
     private async Task ReadUserDocument(string databaseName, string collectionName, User user)
@@ -264,7 +266,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a user record to account for a change to their last name.
 
-1. Copy and paste the **ReplaceUserDocument** method after the ReadUserDocument method in the Program.cs file.
+1. Copy and paste the **ReplaceUserDocument** method after the **ReadUserDocument** method in the Program.cs file.
 
     ```csharp
     private async Task ReplaceUserDocument(string databaseName, string collectionName, User updatedUser)
