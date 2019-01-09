@@ -6,7 +6,7 @@ metadata:
   ms.date: 10/12/2018
   #TODO: replace with author
   author: jboeshart
-  ms. author: jaboes
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Control and organize Azure resources with Azure Resource Manager
