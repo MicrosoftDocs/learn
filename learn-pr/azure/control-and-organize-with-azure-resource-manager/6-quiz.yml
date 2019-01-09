@@ -52,7 +52,7 @@ quiz:
     choices:
     - content: 'Send out an email with the details of your naming conventions and hope it is followed'
       isCorrect: false
-    - content: 'Create a policy with your naming requirements and assign it to the socpe of your subscription'
+    - content: 'Create a policy with your naming requirements and assign it to the scope of your subscription'
       isCorrect: true
     - content: 'Give all other users except for yourself read-only access to the subscription. Have all requests to create resources sent to you so you can review the names being assigned to resources, and then create them.'
       isCorrect: false
