@@ -4,13 +4,54 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
+  ms.date: 12/28/2018
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/6-summary.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Which of the following are used to determine Azure costs for each billing period?"
+      choices:
+      - content: "The Azure website"
+        isCorrect: false
+        incorrectExplanation: "The website can be used to _view_ your costs, but it doesn't influence the actual billing period."
+      - content: "Number of created virtual machines"
+        isCorrect: false
+        incorrectExplanation: "Running VMs will influence the cost due to CPU and storage, but do not represent the entire bill."
+      - content: "The Azure pricing calculator"
+        isCorrect: false
+        incorrectExplanation: "The Azure calculator can help to _predict_ costs, but it doesn't influence the cost."
+      - content: "Usage meters"
+        isCorrect: true
+        correctExplanation: "Correct. Azure is billed according to your consumption based on monthly usage meters."
+    - content: "Which of the following is a factor affecting costs?"
+      choices:
+      - content: "Global infrastructure"
+        isCorrect: false
+        incorrectExplanation: "Global infrastructure refers to a system with architecture that is distributed across many countries."
+      - content: "Location"
+        isCorrect: true
+        correctExplanation: "The location you place your resources will vary the price for the resource."
+      - content: "Availability zone"
+        isCorrect: false
+        incorrectExplanation: "An availability zone provides failure protection for datacenters."
+    - content: "Complete the following sentence. As an Azure customer, Azure Reservations offer discounted prices if you _________"
+      choices:
+      - content: "pay in advance."
+        isCorrect: true
+        correctExplanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can prepay for one or three year's use of certain Azure resources."
+      - content: "provision many resources."
+        isCorrect: false
+        incorrectExplanation: "There is no requirement to provision many resources to use Azure Reservations."
+      - content: "have a free account"
+        isCorrect: false
+        incorrectExplanation: "Free accounts can't use Azure Reservations."
+      - content: "use Spending Limits."
+        isCorrect: false
+        incorrectExplanation: "Spending limits prevent you from exhausting the credit on your account within each billing period."

@@ -140,11 +140,6 @@ achievements:
   title: Control Azure services with the CLI Badge
   summary: Control Azure services with the CLI Badge Summary
   iconUrl: /learn/achievements/control-azure-services-with-cli.svg
-- uid: learn.azure-services-features.badge
-  type: badge
-  title: Tour Azure services and features Badge
-  summary: Tour Azure services and features Summary
-  iconUrl: /learn/achievements/tour-azure-services-and-features.svg
 - uid: learn.migrate-sql-server-relational-data.badge
   type: badge
   title: Migrate your SQL server relational data to Azure SQL
@@ -245,6 +240,11 @@ achievements:
   title: Secure an Azure SQL Server Database
   summary: Secure an Azure SQL Server Database
   iconUrl: /learn/achievements/secure-your-azure-sql-database.svg
+- uid: learn.intro-to-governance.badge
+  type: badge
+  title: Introduction to Governance Badge
+  summary: Badge for 'Introduction to Governance' module.
+  iconUrl: /learn/achievements/intro-to-governance.svg
 - uid: learn.intro-to-compute.badge
   type: badge
   title: Introduction to Compute Badge
@@ -486,3 +486,18 @@ achievements:
   title: Build Azure Resource Manager templates
   summary: Build Azure Resource Manager templates
   iconUrl: /learn/achievements/build-azure-vm-templates.svg
+- uid: learn.tour-azure-portal-features.badge
+  type: badge
+  title: Tour Azure portal features Badge
+  summary: Tour Azure portal features
+  iconUrl: /learn/achievements/tour-azure-portal-features.svg
+- uid: learn.explore-azure-infrastructure.badge
+  type: badge
+  title: Explore Azure infrastructure and service guarantees Badge
+  summary: Explore Azure infrastructure and service guarantees
+  iconUrl: /learn/achievements/explore-azure-infrastructure.svg
+- uid: learn.create-azure-account.badge
+  type: badge
+  title: Create an Azure account Badge
+  summary: Create an Azure account
+  iconUrl: /learn/achievements/create-azure-account.svg

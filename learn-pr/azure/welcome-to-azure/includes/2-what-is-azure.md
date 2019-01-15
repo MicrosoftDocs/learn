@@ -1,4 +1,4 @@
-Azure is Microsoft's cloud computing platform. Azure is here to help you tackle your toughest business challenges. You bring your requirements, creativity, and favorite software development tools. We bring a massive global infrastructure that's always available for you to build your applications on.
+Azure is Microsoft's cloud computing platform. Azure is a continually expanding set of cloud services that help your organization meet your current and future business challenges. Azure gives you the freedom to build, manage, and deploy applications on a massive global network using your favorite tools and frameworks.
 
 #### How does Azure work?
 
@@ -66,11 +66,3 @@ For example, Azure provides AI and machine-learning services that can naturally 
 
   :::column-end:::
 :::row-end:::
-
-## Summary
-
-Simply put, cloud computing enables you to rent compute power and storage instead of buying physical assets such as CPUs and storage. Azure, Microsoft's cloud computing platform, manages physical assets for you so you can focus less on infrastructure and more on building the next great app.
-
-But Azure is so much more than a distributed data center. Azure provides many kinds of services that go well beyond what you can do with commodity hardware and software. These services range from big data analytics to the ability to naturally communicate with your users.
-
-Access to both infrastructure and services on Azure enables you to quickly deliver new and innovative features to your users. Projects that once took months can now often be completed in weeks or days.

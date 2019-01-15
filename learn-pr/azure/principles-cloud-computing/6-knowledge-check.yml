@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What terms from the list below would be viewed as benefits of using cloud services?"
+  - content: "Which term from the list below would be viewed as benefits of using cloud services?"
     choices:
     - content: 'Unpredictable costs'
       isCorrect: false

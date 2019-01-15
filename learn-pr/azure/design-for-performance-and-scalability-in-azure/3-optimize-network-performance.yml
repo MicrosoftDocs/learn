@@ -28,7 +28,7 @@ quiz:
       correctExplanation: 'Latency is a measure of network transit time.'
     - content: 'The TTL of an asset in a content delivery network'
       isCorrect: false
-      incorrectExplanation: 'The TTL of an asseet on a content delivery network relates to how often it is refreshed from the original source.'
+      incorrectExplanation: 'The TTL of an asset on a content delivery network relates to how often it is refreshed from the original source.'
     - content: 'A private circuit between an on-premises network and Azure'
       isCorrect: false
       incorrectExplanation: 'ExpressRoute is a private circuit between an on-premises network and Azure, and while it can improve latency, it is not a defintion of the term.'

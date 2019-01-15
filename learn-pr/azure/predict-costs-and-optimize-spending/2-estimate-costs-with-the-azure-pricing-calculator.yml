@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 20
+durationInMinutes: 15
 content: |
   [!include[](includes/2-estimate-costs-with-the-azure-pricing-calculator.md)]
 quiz:
