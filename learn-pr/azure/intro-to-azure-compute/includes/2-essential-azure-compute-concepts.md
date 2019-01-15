@@ -19,15 +19,13 @@ There are four common techniques for performing compute in Azure:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yMhY]
 
-Containers are a virtualization environment but, unlike a virtual machine, they do not include an operating system. Instead, they reference the operating system of the host environment that runs the container. For example, if five containers are running on a server with a specific Linux kernel, all five containers are running on that same kernel.
-
-Containers typically contain an application that you write &mdash; along with any libraries required for your application to run on the host environment's kernel.
+Containers are a virtualization environment for running applications. Unlike virtual machines, they do not include an operating system. Instead, they include the libraries and components needed to run the application and reference the operating system of the host environment that runs the container. For example, if five containers are running on a server with a specific Linux kernel, all five containers are running on that same kernel.
 
 ## What is Azure App Service?
 
-Azure App Service is a platform-as-a-service (PaaS) offering in Azure that is designed to host enterprise-grade web-oriented applications. You can meet rigorous performance, scalability, security and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
+Azure App Service is a platform-as-a-service (PaaS) offering in Azure that is designed to host enterprise-grade web-oriented applications. You can meet rigorous performance, scalability, security, and compliance requirements while using a fully managed platform to perform infrastructure maintenance.
 
-#### What is Serverless Computing?
+## What is Serverless Computing?
 
 Serverless computing is a cloud-hosted execution environment that runs your code but completely abstracts the underlying hosting environment. You create an instance of the service, and you add your code; no infrastructure configuration or maintenance is required, or even allowed.
 

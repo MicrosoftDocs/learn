@@ -4,13 +4,12 @@ title: Protect your network
 metadata:
   title: Protect your network
   description: In this unit, we'll discuss how to secure your network infrastructure.
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
+  ms.date: 12/26/2018
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/5-network-security.md)]

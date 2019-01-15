@@ -107,7 +107,3 @@ We could use policy to restrict which Azure regions we can deploy resources to. 
 We could use policy to restrict which types of virtual machine sizes can be deployed. You may want to allow large VM sizes in your production subscriptions, but maybe you'd like to ensure that you keep costs minimized in your dev subscriptions. By denying the large VM sizes through policy in your dev subscriptions, you can ensure they don't get deployed in these environments.
 
 We could also use policy to enforce naming conventions. If our organization has standardized on specific naming conventions, using policy to enforce the conventions helps us to keep a consistent naming standard across our Azure resources.
-
-## Summary
-
-Policies are flexible and can be used in many ways. They're yet another tool that you can use to improve the overall organization of your Azure resources.

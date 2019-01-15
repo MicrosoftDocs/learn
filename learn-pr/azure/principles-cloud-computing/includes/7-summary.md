@@ -24,15 +24,12 @@ Here are just a few kinds of services you'll find on Azure:
 - **AI and machine-learning** services that can naturally communicate with your users through vision, hearing, and speech
 - And many more!
 
-### Get started with Microsoft Azure
-
-You can jump into Azure today with a free trial account! Head to
-[azure.microsoft.com](https://azure.microsoft.com).
-
 ## Learn more
 
-Here are some places to go to learn more about what we've covered today:
+Stay on the [Azure Fundamentals Learning Path](https://docs.microsoft.com/learn/paths/azure-fundamentals/) to learn more about how Microsoft Azure can help you build more secure, reliable, performant applications in the cloud.
 
-[Cloud Computing Terms](https://azure.microsoft.com/overview/cloud-computing-dictionary/)
+In addition, here are some places to go to learn more about what we've covered today:
 
-[What is Azure?](https://azure.microsoft.com/overview/)
+- [Cloud Computing Terms](https://azure.microsoft.com/overview/cloud-computing-dictionary/)
+- [What is Azure?](https://azure.microsoft.com/overview/)
+- [Azure compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings)

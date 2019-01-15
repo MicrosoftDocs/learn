@@ -1,12 +1,19 @@
 In your first week on your new job, you've been taking a look through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they are not organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's take a look at what they are, and how they can be used.
 
-For this module, you can use your own subscription to follow along. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work to follow along with these exercises.
+> [!NOTE]
+> For this module, you can use your own subscription to follow along. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work to follow along with these exercises.
 
 [!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
 
 ## What are resource groups?
 
 Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription: virtual machines, Application Gateways, CosmosDB instances, etc. All resources must reside in a resource group and a resource can only be a member of a single resource group. Resources can be moved between resource groups at any time. Resource groups cannot be nested. Before any resource can be provisioned, you need a resource group for it to be placed in.
+
+### Logical grouping
+
+Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location, you can provide some order and organization to resources you create on Azure. Logical grouping is the aspect that we're most interested in here, since there's a lot of disorder amongst our resources.
+
+![Conceptual image showing a resource group box with a Function, VM, database and app included](../media/2-rg.PNG)
 
 ### Life-cycle
 
@@ -15,12 +22,6 @@ If you delete a resource group, all resources contained within are also deleted.
 ### Authorization 
 
 Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can ease administration and limit access to allow only what is needed.
-
-### Logical grouping
-
-Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location, you can provide some order and organization to resources you create on Azure. Logical grouping is the aspect that we're most interested in here, since there's a lot of disorder amongst our resources.
-
-![Alt Text](../media/2-rg.PNG)
 
 ## Create a Resource Group
 
@@ -35,6 +36,9 @@ Resource groups can be created by using the following methods:
 Let's walk through the steps you'd take to create a resource group in the Azure portal. If you'd like to follow along in your own subscription, you may.
 
 1. Open a web browser and sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
+
+    > [!IMPORTANT]
+    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
 
 1. On the left blade, select **+ Create a resource**
 
@@ -123,5 +127,3 @@ Lastly, placing resources in the same resource group is a way to group them for 
 ## Summary
 
 The bottom line is that you have flexibility in how to organize resources in your resource groups. Put some thought into it so that you have a coherent approach to how you use resource groups in your Azure environment.
-
-We've taken a look at some of the key principles behind resource groups, how you can create and add resources to them, and some ways you can use them in your environment to improve the organization of your resources.

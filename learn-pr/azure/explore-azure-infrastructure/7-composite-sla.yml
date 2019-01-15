@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-infrastructure.7-composite-sla
+title: Composing SLAs across services
+metadata:
+  title: Composing SLAs across services - Learn
+  description: Composing SLAs across services - Learn
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-composite-sla.md)]

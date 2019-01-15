@@ -3,7 +3,7 @@ When planning a solution in the cloud, there's always the challenge of balancing
 You need to be able to confidently answer several questions:
 
 - What will this solution cost this fiscal year?
-- Is there a alternate configuration you could use to save money?
+- Is there an alternate configuration you could use to save money?
 - Can you estimate how a change would impact your cost and performance _without_ putting it into a production system?
 
 In this module, we'll explore the tools you can use to answer these questions and more.
@@ -12,6 +12,7 @@ In this module, we'll explore the tools you can use to answer these questions an
 
 In this module, you will:
 
+- Learn the different options you have to purchase Azure services
 - Estimate costs with the Azure pricing calculator
 - Predict and optimize costs with Azure Cost Management and Azure Advisor
 - Apply best practices for saving on infrastructure costs

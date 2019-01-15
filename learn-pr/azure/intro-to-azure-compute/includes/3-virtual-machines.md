@@ -36,7 +36,7 @@ Azure creates two fault domains (two racks each having dedicated power and netwo
 
 ![Availability sets in Azure showing update domains and fault domains which are duplicated across servers](../media/3-availability-sets.png)
 
-There is no cost for an availability set - you only pay for the VMs in the set. It's highly recommended to place each workload in an availability set to ensure you don't have a single point of failure in your VM architecture.
+There is no cost for an availability set; you only pay for the VMs within the set. It's highly recommended to place each workload in an availability set to ensure you don't have a single point of failure in your VM architecture.
 
 ### What are virtual machine scale sets?
 
@@ -50,4 +50,4 @@ Azure Batch enables large-scale job scheduling and compute management with the a
 
 When you're ready to run a job, Batch starts a pool of compute virtual machines for you, installing applications and staging data, running jobs with as many tasks as you have, identifying failures and re-queuing work, and scaling down the pool as work completes. 
 
-There may be situations in which you need raw computing power or supercomputer level compute power &mdash; Azure provides these capabilities.
+There may be situations in which you need raw computing power or supercomputer level compute power; Azure provides these capabilities.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-security.6-azure-information-protection
+title: Protect your shared documents
+metadata:
+  title: Protect your shared documents
+  description: In this unit, we'll discuss how to protect your externally shared documents.
+  ms.date: 12/26/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-azure-information-protection.md)]

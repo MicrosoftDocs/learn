@@ -2,7 +2,7 @@ Imagine you work at a healthcare company. You have legacy systems, line of busin
 
 ## What is cloud computing?
 
-Cloud computing is the provisioning of services and applications on demand over the internet. Servers, applications, data, and other resources are provided as a service. 
+Cloud computing is the provisioning of services and applications on demand over the internet. Servers, applications, data, and other resources are provided as a service.
 
 To the user, the details of the services are abstracted. You can quickly provision computing resources and use the service with minimal management. You shouldn't think of cloud computing as a datacenter available through the internet. Cloud computing uses virtualization, commodity hardware, and automated processes to provide a self-service user experience to customers similar to a public utility.
 

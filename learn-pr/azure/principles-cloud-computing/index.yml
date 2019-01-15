@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.principles-cloud-computing
 metadata:
-  title: Principles of cloud computing - Learn
+  title: Cloud Concepts - Principles of cloud computing - Learn
   description: Explore the core concepts of cloud computing and how it can help your business.
   ms.date: 09/24/2018
   author: JesseDietrichson
   ms.author: jediet
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: jediet
-title: Principles of cloud computing
+  #ms.learn-contact: smmark
+title: Cloud Concepts - Principles of cloud computing
 summary: Explore the core concepts of cloud computing and how it can help your business.
 abstract:  | 
   In this module, you will:
@@ -34,6 +34,7 @@ units:
 - learn.principles-cloud-computing.1-motivation
 - learn.principles-cloud-computing.2-what-is-cloud-computing
 - learn.principles-cloud-computing.3-benefits-of-cloud-computing
+- learn.principles-cloud-computing.3a-compliance
 - learn.principles-cloud-computing.3b-economies-of-scale
 - learn.principles-cloud-computing.3c-capex-vs-opex
 - learn.principles-cloud-computing.4-cloud-deployment-models
