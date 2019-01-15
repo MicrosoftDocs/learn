@@ -6,7 +6,7 @@ We've created a template for this application that deploys each tier as Azure re
 
 Here's a high-level visualization of what is deployed with this template.
 
-![Visualization of the N-tier architecture to be deployed in this unit](../media/3-n-tier-deployment.svg)
+![Visualization of the N-tier architecture to be deployed in this unit](../media/3-n-tier-simple.svg)
 
 ## Deploy an N-tier architecture
 
@@ -43,7 +43,7 @@ This application is intentionally minimal in its complexity. It's a fun applicat
 
 We also applied tags to the resources as part of the deployment to reflect the tier the resource is supporting (`tier:presentation`, `tier:application`, `tier:data`). Tags are a method of applying metadata to Azure resources, and in this case they allow us to easily filter the resources for each tier.
 
-Let's look closer at each tier.
+Let's look closer at each tier. Here's a detailed visualization of the resources we just deployed.
 
 ![Visualization of the N-tier architecture to be deployed in this unit](../media/3-n-tier-deployment.svg)
 
