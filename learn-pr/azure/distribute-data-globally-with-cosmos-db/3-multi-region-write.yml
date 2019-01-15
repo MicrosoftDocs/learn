@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Writing to multiple regions has many peformance benefits. For example, the latency for write operations is less than in non-multi-master accounts."
+      correctExplanation: "Writing to multiple regions has many performance benefits. For example, the latency for write operations is less than in non-multi-master accounts."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Writing to multiple regions has many peformance benefits. For example, the latency for write operations is less than in non-multi-master accounts."
+      incorrectExplanation: "Writing to multiple regions has many performance benefits. For example, the latency for write operations is less than in non-multi-master accounts."
 
   - content: 'What is the default conflict-resolution policy in a multi-master account?'
     choices:

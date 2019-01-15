@@ -24,7 +24,7 @@ quiz:
     - content: 'False'
       isCorrect: true
       correctExplanation: "Correct. Azure organizes infrastructure around _regions_ which include multiple datacenters. You can't select a specific datacenter, but you can pick the region you want resources deployed into."
-  - content: "True or False. Every region has an availbility zone."
+  - content: "True or False. Every region has an availability zone."
     choices:
     - content: 'True'
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     choices: 
       - content: "The service level agreement of the associated resource."
         isCorrect: false
-        incorrectExplanation: "The service level agreement gives you a guarentee of the availability of the resource, not of the application itself."
+        incorrectExplanation: "The service level agreement gives you a guarantee of the availability of the resource, not of the application itself."
       - content: "Whether the application supports an availability zone."
         isCorrect: false
         incorrectExplanation: "Only the underlying resources used in the application support availability zones."

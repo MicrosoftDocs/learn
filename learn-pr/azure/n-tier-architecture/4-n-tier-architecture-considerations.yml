@@ -37,4 +37,4 @@ quiz:
       incorrectExplanation: 'Opening up access to the internet for remote administration increases the ability for malicious activity against your systems, and is not recommended.'
     - content: 'Add a caching technology between your application and data tiers.'
       isCorrect: false
-      incorrectExplanation: 'Adding a caching technlogy to your application can help improve performance, but does not have a direct impact on the security of your application.'
+      incorrectExplanation: 'Adding a caching technology to your application can help improve performance, but does not have a direct impact on the security of your application.'

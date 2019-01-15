@@ -47,14 +47,14 @@ quiz:
       isCorrect: true
       correctExplanation: "EXPIRE is used to set the expiration timeout of a key in seconds."
 
-  - content: "Your Redis cache is configured with the **volatile-ttl** evicition policy. If it runs out of memory and you try to insert a new key, which existing key is removed?"
+  - content: "Your Redis cache is configured with the **volatile-ttl** eviction policy. If it runs out of memory and you try to insert a new key, which existing key is removed?"
     choices:
     - content: "The least recently used key."
       isCorrect: false
       incorrectExplanation: "This is the behavior of the **allkeys-lru** eviction policy."
     - content: "A random key."
       isCorrect: false
-      incorrectExplanation: "This is the behavior of the **alkeys-random** policy."
+      incorrectExplanation: "This is the behavior of the **allkeys-random** policy."
     - content: "The key that would next expire."
       isCorrect: true
       correctExplanation: "**volatile-ttl** removes the key with the shortest time-to-live."

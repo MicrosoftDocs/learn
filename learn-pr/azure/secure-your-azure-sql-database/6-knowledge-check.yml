@@ -54,8 +54,8 @@ quiz:
 
   - content: 'Is encrypted communication turned on automatically when connecting to an Azure SQL Server?'
     choices:
-    - content: Yes
+    - content: "Yes"
       isCorrect: true
       correctExplanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all conections
-    - content: No
+    - content: "No"
       isCorrect: false
