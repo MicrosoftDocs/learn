@@ -41,4 +41,5 @@ units:
 - learn.predict-costs-and-optimize-spending.4-save-on-infrastructure-costs
 - learn.predict-costs-and-optimize-spending.5-save-on-licensing-costs
 - learn.predict-costs-and-optimize-spending.6-summary
-achievement: learn.predict-costs-and-optimize-spending.badge
+badge:
+  uid: learn.predict-costs-and-optimize-spending.badge

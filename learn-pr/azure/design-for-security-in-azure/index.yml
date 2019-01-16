@@ -37,4 +37,5 @@ units:
 - learn.design-for-security.6-network-security
 #TODO: Add - learn.design-for-security.7-application-security
 - learn.design-for-security.8-summary
-achievement: learn.design-for-security.badge
+badge:
+  uid: learn.design-for-security.badge

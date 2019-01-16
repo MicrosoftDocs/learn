@@ -38,4 +38,5 @@ units:
 - learn.top-5-security-items-to-consider.5-framework-updates
 - learn.top-5-security-items-to-consider.6-safe-dependencies
 - learn.top-5-security-items-to-consider.7-conclusion
-achievement: learn.top-5-security-items-to-consider.badge
+badge:
+  uid: learn.top-5-security-items-to-consider.badge

@@ -34,4 +34,5 @@ units:
 - learn.store-app-data-with-azure-blob-storage.6-getting-blob-references
 - learn.store-app-data-with-azure-blob-storage.7-blob-uploads-and-downloads
 - learn.store-app-data-with-azure-blob-storage.8-cleanup-next-steps-knowledge-check
-achievement: learn.store-app-data-with-azure-blob-storage.badge
+badge:
+  uid: learn.store-app-data-with-azure-blob-storage.badge

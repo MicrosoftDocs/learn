@@ -35,4 +35,5 @@ units:
 - learn.monitor-manage-device-with-iotcentral.4-validate-your-connection
 - learn.monitor-manage-device-with-iotcentral.5-configure-rules-and-actions 
 - learn.monitor-manage-device-with-iotcentral.6-knowledge-check
-achievement: learn.monitor-manage-device-with-iotcentral.badge
+badge:
+  uid: learn.monitor-manage-device-with-iotcentral.badge
