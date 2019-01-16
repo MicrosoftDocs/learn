@@ -481,6 +481,11 @@ achievements:
   title: Introduction to Azure Government
   summary: Introduction to Azure Government
   iconUrl: /learn/achievements/intro-to-azure-government.svg
+- uid: learn.n-tier-architecture.badge
+  type: badge
+  title: Tour the N-tier architecture style for your application
+  summary: Tour the N-tier architecture style for your application
+  iconUrl: /learn/achievements/n-tier-architecture.svg
 - uid: learn.build-azure-vm-templates.badge
   type: badge
   title: Build Azure Resource Manager templates

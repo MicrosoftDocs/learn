@@ -24,18 +24,20 @@ Use the above table to craft a command line in the Cloud Shell on the right to c
 <!-- Resource selection -->
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
+> [!TIP]
+> You can select a location with the `--location` parameter, if you don't supply one the storage account will be created in the same location as your resource group. Since this is a simple exercise, you can omit the parameter from the below command if you prefer.
+
 ### Example command
 
-You can use the following example command to create a storage account. Note that you must replace <kbd><name></kbd> and <kbd><region></kbd> with the information you chose in the previous sections.
+You can use the following example command to create a storage account. Remember to replace `<name>` with a unique value.
 
 ```azurecli
 az storage account create \
-        --name <name> \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --location <region> \
         --kind StorageV2 \
         --sku Standard_LRS \
-        --access-tier Cool
+        --access-tier Cool \
+        --name <name>
 ```
 
 > [!TIP]

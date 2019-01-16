@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.n-tier-architecture.2-what-is-n-tier-architecture
+metadata:
+  title: What is an N-tier architecture?
+  description: What is an N-tier architecture?
+  ms.date: 01/15/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is an N-tier architecture?
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-n-tier-architecture.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'A three-tier application needs to be updated to integrate with a partner API. Which layer should this functionality be added to?'
+    choices:
+    - content: 'Presentation tier'
+      isCorrect: false
+      incorrectExplanation: 'Responsibilities of this tier should focus on how the application is served to the user.'
+    - content: 'Application tier'
+      isCorrect: true
+      correctExplanation: 'API calls to other systems are best located in the application tier, where returned data can be easily integrated with new or existing business logic.'
+    - content: 'Data tier'
+      isCorrect: false
+      incorrectExplanation: 'The data tier focuses on the storage of data. Adding integration with an API is not best placed on this tier of the application.'
+
+  - content: 'On which layer is it acceptable to allow access to users?'
+    choices:
+    - content: 'Presentation tier'
+      isCorrect: true
+      correctExplanation: 'This tier handles the interaction with the end user, and should be the tier accessed by the end user. '
+    - content: 'Application tier'
+      isCorrect: false
+      incorrectExplanation: 'This tier contains business logic, data processing, and other potentially sensitive details and should not be exposed to end users. '
+    - content: 'Data tier'
+      isCorrect: false
+      incorrectExplanation: 'The data tier handles the storage of data and should never be exposed directly to users. Consumers of data should use capabilities provided by higher tiers.'

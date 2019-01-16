@@ -41,6 +41,6 @@ quiz:
     - content: 'It should be as reliable as possible'
       isCorrect: false
       incorrectExplanation: 'It is important to find the appropriate level of reliability for a goal since efforts and resources beyond that are a waste. Plus "as possible" is too vague to be useful.'
-    - content: 'A specific level indentified as appropriate by the key stakeholders'
+    - content: 'A specific level identified as appropriate by the key stakeholders'
       isCorrect: true
       correctExplanation: 'Setting a goal for a service is a collaborative effort between SRE, development resources and the business decision makers.'

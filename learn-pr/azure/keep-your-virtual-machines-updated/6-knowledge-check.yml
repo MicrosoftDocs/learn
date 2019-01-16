@@ -14,7 +14,7 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Suppose you want to ensure that your VMs are updated without loggging into the VM. Which operation of update management helps achieve this objective?'
+  - content: 'Suppose you want to ensure that your VMs are updated without signing into the VM. Which operation of update management helps achieve this objective?'
     choices:
     - content: Replication policy
       isCorrect: false

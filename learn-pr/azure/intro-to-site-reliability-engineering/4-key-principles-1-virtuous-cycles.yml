@@ -57,7 +57,7 @@ quiz:
     - content: 'Immediately redirect engineering resources associated with this service from feature development to fixing the reliability problem'
       isCorrect: false
       incorrectExplanation: 'An error budget is a way of tracking the aggregate reliability of a service over time as it relates to your objectives. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for everyone and every situation.'
-    - content: 'React in the service- or organizationally-specifc way previously agreed upon when creating that error budget'
+    - content: 'React in the service- or organizationally-specific way previously agreed upon when creating that error budget'
       isCorrect: true
       correctExplanation: 'When setting up an error budget for a service, it is important to decide (and document) how the organization will respond should it be exhausted. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. An error budget is a way of tracking the aggregate reliability of a service over time. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for every one and every situation.'
 
@@ -77,7 +77,7 @@ quiz:
     choices:
     - content: 'Yes, the person or people who made the mistake should always take responsibility for their actions and pay the consequences'
       isCorrect: false
-      incorrectExplanation: 'It is not possibe to fire your way to reliable. If the culture focuses on blame in these situations, the organization loses the ability to learn from incident and improve upon the processes and technology that allowed it to happen in the first place. Without this feedback loop, the organization will always be forced to react to incidents instead of eliminating them.'
+      incorrectExplanation: 'It is not possible to fire your way to reliable. If the culture focuses on blame in these situations, the organization loses the ability to learn from incident and improve upon the processes and technology that allowed it to happen in the first place. Without this feedback loop, the organization will always be forced to react to incidents instead of eliminating them.'
     - content: 'No, except under certain rare and extraordinary circumstances'
       isCorrect: true
       correctExplanation: 'Feedback loops like blameless postmortems are crucial to continuous improvement. If an organization learns from an incident instead of firing the people involved (the people who may understand best what happened), it can work directly on the reliability of its services, systems and products.'

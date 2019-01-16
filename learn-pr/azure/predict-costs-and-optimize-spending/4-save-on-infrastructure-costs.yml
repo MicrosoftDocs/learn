@@ -20,7 +20,7 @@ quiz:
 
     - content: "Which one of these is *not* a cost-saving solution?"
       choices:
-      - content: "Deallocate virtual machines in off hours."
+      - content: "Deallocate virtual machines during off hours."
         isCorrect: false
         incorrectExplanation: "This will reduce the amount of usage billed to your account and save costs."
       - content: "Use Azure Reserved Virtual Machine Instances."

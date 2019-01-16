@@ -37,7 +37,7 @@ quiz:
     choices:
     - content: 'Decreasing the number of instances serving requests'
       isCorrect: false
-      incorrectExplanation: 'Decreasing the number of instances serving requets is scaling in'
+      incorrectExplanation: 'Decreasing the number of instances serving requests is scaling in'
     - content: 'Taking ownership of how your application scales'
       isCorrect: false
       incorrectExplanation: 'Taking ownership of how your application scales is not scaling down.'
