@@ -19,22 +19,22 @@ quiz:
     choices:
     - content: General purpose
       isCorrect: false
-      incorrectExplanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
     - content: Compute optimized
       isCorrect: true
-      correctExplanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
     - content: Memory optimized
       isCorrect: false
-      incorrectExplanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
     - content: Storage optimized
       isCorrect: false
-      incorrectExplanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
+      explanation: "Compute optimized virtual machines are designed to have a high CPU-to-memory ratio. Suitable for medium traffic web servers, network appliances, batch processes, and application servers."
 
   - content: 'True or false: Resource Manager templates are JSON files?'
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Resource Manager templates are JSON files that define the resources you need to deploy for your solution. The template can then be used to easily re-create multiple versions of your infrastructure, such as staging and production."
+      explanation: "Resource Manager templates are JSON files that define the resources you need to deploy for your solution. The template can then be used to easily re-create multiple versions of your infrastructure, such as staging and production."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Resource Manager templates are JSON files that define the resources you need to deploy for your solution. The template can then be used to easily re-create multiple versions of your infrastructure, such as staging and production."
+      explanation: "Resource Manager templates are JSON files that define the resources you need to deploy for your solution. The template can then be used to easily re-create multiple versions of your infrastructure, such as staging and production."

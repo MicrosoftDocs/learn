@@ -21,7 +21,7 @@ quiz:
         isCorrect: false
       - content: "A function parameter"
         isCorrect: true
-        correctExplanation: "SMS messages are added to a collection passed to the function as a parameter decorated with the `[TwilioSms]` attribute. The Function's runtime will send these messages to Twilio once the function returns."
+        explanation: "SMS messages are added to a collection passed to the function as a parameter decorated with the `[TwilioSms]` attribute. The Function's runtime will send these messages to Twilio once the function returns."
       - content: "Direct call to the Twilio API"
         isCorrect: false
 
@@ -29,7 +29,7 @@ quiz:
       choices:
       - content: "In the `local.settings.json` file."
         isCorrect: true
-        correctExplanation: "The `local.settings.json` file is used to store local settings that are only used when running locally, not when published to Azure. Be careful to not check this into source code control if it contains private keys and your repo is public."
+        explanation: "The `local.settings.json` file is used to store local settings that are only used when running locally, not when published to Azure. Be careful to not check this into source code control if it contains private keys and your repo is public."
       - content: "In the `[TwilioSms]` attribute"
         isCorrect: false
       - content: "Application settings published to Azure"

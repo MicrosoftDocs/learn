@@ -17,7 +17,7 @@ quiz:
   - content: 'Tags can be applied to any type of resource on Azure'
     choices:
     - content: 'True'
-      incorrectExplanation: 'Not all resources support tags, so you will wan to confirm that your resource type supports them.'
+      explanation: 'Not all resources support tags, so you will wan to confirm that your resource type supports them.'
       isCorrect: false
     - content: 'False'
       isCorrect: true
@@ -25,7 +25,7 @@ quiz:
   - content: 'Tags applied at a resource group level are propogated to resources within the resource group.'
     choices:
     - content: 'True'
-      incorrectExplanation: 'Tags are not inherited. You need to apply tags to every supported resource that you need tagged.'
+      explanation: 'Tags are not inherited. You need to apply tags to every supported resource that you need tagged.'
       isCorrect: false
     - content: 'False'
       isCorrect: true

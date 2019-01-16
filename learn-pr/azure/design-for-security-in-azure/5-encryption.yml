@@ -21,23 +21,23 @@ quiz:
     choices:
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: 'Azure Disk Encryption is available for both Windows and Linux virtual machines.'
+      explanation: 'Azure Disk Encryption is available for both Windows and Linux virtual machines.'
     - content: 'False'
       isCorrect: true
-      correctExplanation: 'Azure Disk Encryption is available for both Windows and Linux virtual machines.'
+      explanation: 'Azure Disk Encryption is available for both Windows and Linux virtual machines.'
 
   - content: 'When classifying data, which of the following is a factor?'
     choices:
     - content: 'Level of risk posed to customers if exposed'
       isCorrect: true
-      correctExplanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
+      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
     - content: 'Method of data transport'
       isCorrect: false
-      incorrectExplanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
+      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
     - content: 'Whether the data is stored on virtual machines or in a database'
       isCorrect: false 
-      incorrectExplanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'  
+      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'  
     - content: 'The amount of data stored'
       isCorrect: false
-      incorrectExplanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
+      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
 

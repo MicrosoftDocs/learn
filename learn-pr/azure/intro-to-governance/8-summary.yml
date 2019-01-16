@@ -20,67 +20,67 @@ quiz:
     choices:
     - content: "True" 
       isCorrect: true
-      correctExplanation: "You can download published audit reports and other compliance-related information related to Microsoft’s cloud service from the Service Trust Portal."
+      explanation: "You can download published audit reports and other compliance-related information related to Microsoft’s cloud service from the Service Trust Portal."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "You can download published audit reports and other compliance-related information related to Microsoft’s cloud service from the Service Trust Portal."
+      explanation: "You can download published audit reports and other compliance-related information related to Microsoft’s cloud service from the Service Trust Portal."
 
   - content: "Which Azure service allows you to configure fine-grained access management for Azure resources, enabling you to grant users only the rights they need to perform their jobs?"
     choices:
       - content: "Locks"
         isCorrect: false
-        incorrectExplanation: "Locks help you prevent accidental deletion or modification of your Azure resources."
+        explanation: "Locks help you prevent accidental deletion or modification of your Azure resources."
       - content: "Policy"
         isCorrect: false
-        incorrectExplanation: "A policy definition expresses what to evaluate and what action to take. For example, you could prevent VMs from being deployed if they are exposed to a public IP address. You also could prevent a particular hard disk from being used when deploying VMs to control costs."
+        explanation: "A policy definition expresses what to evaluate and what action to take. For example, you could prevent VMs from being deployed if they are exposed to a public IP address. You also could prevent a particular hard disk from being used when deploying VMs to control costs."
       - content: "Initiatives"
         isCorrect: false
-        incorrectExplanation: "Initiatives work alongside policies in Azure Policy. An initiative definition is a set of policy definitions to help track your compliance state for a larger goal."
+        explanation: "Initiatives work alongside policies in Azure Policy. An initiative definition is a set of policy definitions to help track your compliance state for a larger goal."
       - content: "Role-based Access Control"
         isCorrect: true
-        correctExplanation: "Role-based access control is the correct answer. Role-based access control (RBAC) provides fine-grained access management for Azure resources, enabling you to grant users only the rights they need to perform their jobs. RBAC is provided at no additional cost to all Azure subscriber."
+        explanation: "Role-based access control is the correct answer. Role-based access control (RBAC) provides fine-grained access management for Azure resources, enabling you to grant users only the rights they need to perform their jobs. RBAC is provided at no additional cost to all Azure subscriber."
 
   - content: "Which Azure service allows you to create, assign, and, manage policies to enforce different rules and effects over your resources and stay compliant with your corporate standards and service-level agreements (SLAs)?"
     choices:
       - content: "Azure Policy"
         isCorrect: true
-        correctExplanation: "Azure Policy is the correct answer. Azure Policy is a service in Azure that you use to create, assign, and, manage policies. These policies enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service-level agreements (SLAs)."
+        explanation: "Azure Policy is the correct answer. Azure Policy is a service in Azure that you use to create, assign, and, manage policies. These policies enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service-level agreements (SLAs)."
       - content: "Azure Blueprints"
         isCorrect: false
-        incorrectExplanation: "Azure Blueprints enables cloud architects to define a repeatable set of Azure resources that implement and adhere to an organization's standards, patterns, and requirements."
+        explanation: "Azure Blueprints enables cloud architects to define a repeatable set of Azure resources that implement and adhere to an organization's standards, patterns, and requirements."
       - content: "Azure Security Center"
         isCorrect: false
-        incorrectExplanation: "Security Center provides analysis and details concerning security related issues."
+        explanation: "Security Center provides analysis and details concerning security related issues."
       - content: "Role-based Access Control"
         isCorrect: false
-        incorrectExplanation: "Role-based access control (RBAC) provides fine-grained access management for Azure resources, enabling you to grant users only the rights they need to perform their jobs. RBAC is provided at no additional cost to all Azure subscriber."
+        explanation: "Role-based access control (RBAC) provides fine-grained access management for Azure resources, enabling you to grant users only the rights they need to perform their jobs. RBAC is provided at no additional cost to all Azure subscriber."
 
   - content: "Which of the following services provides up-to-date status information about the health of Azure services?"
     choices:
     - content: "Compliance Manager"
       isCorrect: false
-      incorrectExplanation: "Compliance Manager enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services."
+      explanation: "Compliance Manager enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services."
     - content: "Azure Monitor" 
       isCorrect: false
-      incorrectExplanation: "Azure Monitor collects, analyzes, and provides actions on telemetry from your cloud and on-premises environments."
+      explanation: "Azure Monitor collects, analyzes, and provides actions on telemetry from your cloud and on-premises environments."
     - content: "Service Trust Portal"
       isCorrect: false
-      incorrectExplanation: "Service Trust Portal provides information about compliance with standards, laws, and regulations, in addition to hosting the Compliance Manager application."
+      explanation: "Service Trust Portal provides information about compliance with standards, laws, and regulations, in addition to hosting the Compliance Manager application."
     - content: "Azure Service Health"
       isCorrect: true
-      correctExplanation: "Azure Service Health is the correct answer, because it provides you with a global view of the health of Azure services. With Azure Status, a component of Azure Service Health, you can get up-to-the-minute information on service availability."
+      explanation: "Azure Service Health is the correct answer, because it provides you with a global view of the health of Azure services. With Azure Status, a component of Azure Service Health, you can get up-to-the-minute information on service availability."
   
   - content: "Where can you obtain details about the personal data Microsoft processes, how Microsoft processes it, and for what purposes?"
     choices:
       - content: "Microsoft Privacy Statement"
         isCorrect: true
-        correctExplanation: "Microsoft Privacy Statement is the correct answer."
+        explanation: "Microsoft Privacy Statement is the correct answer."
       - content: "Compliance Manager"
         isCorrect: false
-        incorrectExplanation: "Compliance Manager enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services."
+        explanation: "Compliance Manager enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services."
       - content: "Azure Service Health"
         isCorrect: false
-        incorrectExplanation: "Azure Service Health will provide you with a global view of the health of your Azure services."
+        explanation: "Azure Service Health will provide you with a global view of the health of your Azure services."
       - content: "Trust Center"
         isCorrect: false
-        incorrectExplanation: "Trust Center has some of this data, but it's not the definitive source. Trust Center provides you with information about security, compliance, privacy, and transparency options available from Microsoft." 
+        explanation: "Trust Center has some of this data, but it's not the definitive source. Trust Center provides you with information about security, compliance, privacy, and transparency options available from Microsoft." 
