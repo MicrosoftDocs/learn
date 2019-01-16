@@ -21,22 +21,22 @@ quiz:
     choices:
     - content: 'An Azure data center within a specific geographic location.'
       isCorrect: true
-      correctExplanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
+      explanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
     - content: 'A way of breaking networks into smaller networks.'
       isCorrect: false
-      incorrectExplanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
+      explanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
     - content: 'Firewall rules which define the flow of traffic in and out of Azure.'
       isCorrect: false
-      incorrectExplanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
+      explanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
       
   - content: 'Which of the following is true about virtual networks?'
     choices:
     - content: 'You configure virtual networks through software.'
       isCorrect: true
-      correctExplanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'
+      explanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'
     - content: 'A virtual network accepts network traffic on all ports. You configure the firewall through virtual machines.'
       isCorrect: false
-      incorrectExplanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'
+      explanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'
     - content: 'Virtual networks are always reachable from the internet.'
       isCorrect: false
-      incorrectExplanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'
+      explanation: 'Software enables you to treat a virtual network just like your own network. Azure maintains the physical hardware for you.'

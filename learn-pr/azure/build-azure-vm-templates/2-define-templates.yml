@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "You define both what resources you need as well as the steps needed to create them."
       isCorrect: false
-      incorrectExplanation: "Think about what's in a Resource Manager template, for example. A Resource Manager template defines only the end state, but not how to get to that end state."
+      explanation: "Think about what's in a Resource Manager template, for example. A Resource Manager template defines only the end state, but not how to get to that end state."
     - content: "You define _what_ resources you need but not _how_ to create them."
       isCorrect: true
-      correctExplanation: "In the case of Resource Manager templates, Resource Manager takes care of these details for you."
+      explanation: "In the case of Resource Manager templates, Resource Manager takes care of these details for you."
     - content: "You define what resources you need, and the system ensures that those resources are always available."
       isCorrect: false
-      incorrectExplanation: "In the case of Resource Manager templates, it's still up to you to deploy and manage your resources once you've written your template."
+      explanation: "In the case of Resource Manager templates, it's still up to you to deploy and manage your resources once you've written your template."

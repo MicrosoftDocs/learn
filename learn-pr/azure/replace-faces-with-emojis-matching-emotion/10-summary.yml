@@ -22,7 +22,7 @@ quiz:
       isCorrect: false
     - content: 8D
       isCorrect: true
-      correctExplanation: "The Azure Face API supports eight dimensions of emotion: anger, contempt, disgust, fear, happiness, neutral, sadness, and surprise."
+      explanation: "The Azure Face API supports eight dimensions of emotion: anger, contempt, disgust, fear, happiness, neutral, sadness, and surprise."
     - content: 10D
       isCorrect: false
     - content: 12D
@@ -32,6 +32,6 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "For billing reasons, the Azure Face API requires an authentication key in every request."
+      explanation: "For billing reasons, the Azure Face API requires an authentication key in every request."
     - content: "False"
       isCorrect: false

@@ -39,4 +39,5 @@ units:
 - learn.create-a-windows-vm-in-azure.6-manage-vm
 - learn.create-a-windows-vm-in-azure.7-exercise-manage-vm
 - learn.create-a-windows-vm-in-azure.8-summary
-achievement: learn.create-a-windows-vm-in-azure.badge
+badge:
+  uid: learn.create-a-windows-vm-in-azure.badge

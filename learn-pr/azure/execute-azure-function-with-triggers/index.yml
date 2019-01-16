@@ -38,4 +38,5 @@ units:
 - learn.execute-azure-function-with-triggers.7-blob-trigger
 - learn.execute-azure-function-with-triggers.8-create-blob-trigger
 - learn.execute-azure-function-with-triggers.9-summary
-achievement: learn.execute-azure-function-with-triggers.badge
+badge:
+  uid: learn.execute-azure-function-with-triggers.badge

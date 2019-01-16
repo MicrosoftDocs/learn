@@ -22,22 +22,22 @@ quiz:
     choices:
     - content: 'How to restore backups'
       isCorrect: false
-      incorrectExplanation: 'The steps needed to restore backups are a critical piece of a recovery plan.'
+      explanation: 'The steps needed to restore backups are a critical piece of a recovery plan.'
     - content: 'How to fail over to replicated systems'
       isCorrect: false
-      incorrectExplanation: 'The process to fail over to replicated systems is a critical piece of a recovery plan.'
+      explanation: 'The process to fail over to replicated systems is a critical piece of a recovery plan.'
     - content: 'How to reestablish network connectivity to on-premises or external networks'
       isCorrect: false
-      incorrectExplanation: 'Network connectivity to on-premises or external networks are often critical pieces of infrastructure. The steps to reestablish after failure are critical pieces of a recovery plan.'
+      explanation: 'Network connectivity to on-premises or external networks are often critical pieces of infrastructure. The steps to reestablish after failure are critical pieces of a recovery plan.'
     - content: 'None of the above should be excluded in a recovery plan.'
       isCorrect: true
-      correctExplanation: 'All these procedures are necessary in a recovery plan.'
+      explanation: 'All these procedures are necessary in a recovery plan.'
 
   - content: "True or false: data replication and data backup are the same thing."
     choices:
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: "Data replication and data backup both makes copies of your data, but the frequency and usage of the copies is so different that these are considered different concepts."
+      explanation: "Data replication and data backup both makes copies of your data, but the frequency and usage of the copies is so different that these are considered different concepts."
     - content: 'False'
       isCorrect: true
-      correctExplanation: "Replication creates real-time or near-real-time copies of live data for use in failover during execution. Backup creates long-lived, read-only snapshots of data for use in recovery,"
+      explanation: "Replication creates real-time or near-real-time copies of live data for use in failover during execution. Backup creates long-lived, read-only snapshots of data for use in recovery,"

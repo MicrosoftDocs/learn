@@ -20,26 +20,26 @@ quiz:
     choices: 
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: "Azure organizes infrastructure around _regions_ which include multiple datacenters."
+      explanation: "Azure organizes infrastructure around _regions_ which include multiple datacenters."
     - content: 'False'
       isCorrect: true
-      correctExplanation: "Correct. Azure organizes infrastructure around _regions_ which include multiple datacenters. You can't select a specific datacenter, but you can pick the region you want resources deployed into."
-  - content: "True or False. Every region has an availability zone."
+      explanation: "Correct. Azure organizes infrastructure around _regions_ which include multiple datacenters. You can't select a specific datacenter, but you can pick the region you want resources deployed into."
+  - content: "True or False. Every region has an availbility zone."
     choices:
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: "Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
+      explanation: "Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
     - content: 'False'
       isCorrect: true
-      correctExplanation: "Correct. Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
+      explanation: "Correct. Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
   - content: "Application availability refers to what?"
     choices: 
       - content: "The service level agreement of the associated resource."
         isCorrect: false
-        incorrectExplanation: "The service level agreement gives you a guarantee of the availability of the resource, not of the application itself."
+        explanation: "The service level agreement gives you a guarantee of the availability of the resource, not of the application itself."
       - content: "Whether the application supports an availability zone."
         isCorrect: false
-        incorrectExplanation: "Only the underlying resources used in the application support availability zones."
+        explanation: "Only the underlying resources used in the application support availability zones."
       - content: "The overall time that a system is functional and working."
         isCorrect: true
-        correctExplanation: "Correct. The time that a system is working is referred to as the application availability."
+        explanation: "Correct. The time that a system is working is referred to as the application availability."

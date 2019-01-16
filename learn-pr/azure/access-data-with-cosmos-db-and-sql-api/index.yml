@@ -36,4 +36,5 @@ units:
 - learn.access-data-with-cosmos-db-and-sql-api.5-run-queries
 - learn.access-data-with-cosmos-db-and-sql-api.6-javascript-programming
 - learn.access-data-with-cosmos-db-and-sql-api.7-summary
-achievement: learn.access-data-with-cosmos-db-and-sql-api.badge
+badge:
+  uid: learn.access-data-with-cosmos-db-and-sql-api.badge

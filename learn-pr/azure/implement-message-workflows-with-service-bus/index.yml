@@ -35,4 +35,5 @@ units:
 - learn.implement-message-workflows-with-service-bus.6-write-code-that-uses-service-bus-topics
 - learn.implement-message-workflows-with-service-bus.7-exercise-write-code-that-uses-service-bus-topics
 - learn.implement-message-workflows-with-service-bus.8-summary
-achievement: learn.implement-message-workflows-with-service-bus.badge
+badge:
+  uid: learn.implement-message-workflows-with-service-bus.badge

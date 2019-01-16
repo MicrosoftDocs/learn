@@ -21,27 +21,27 @@ quiz:
     choices:
     - content: 'Defining a policy for virtual machine backup'
       isCorrect: false
-      incorrectExplanation: 'The backup policy for virtual machines is important, but does not fall within the security pillar.'
+      explanation: 'The backup policy for virtual machines is important, but does not fall within the security pillar.'
     - content: 'Enabling multi-factor authentication for all administrative accounts'
       isCorrect: true
-      correctExplanation: 'Enabling multi-factor authentication is a great example of something you might address as part of the security pillar.'
+      explanation: 'Enabling multi-factor authentication is a great example of something you might address as part of the security pillar.'
     - content: 'Evaluating your cloud spend to identify areas of cost savings'
       isCorrect: false
-      incorrectExplanation: 'It is important to identify areas where you can reduce cost, but this does not fall within the security pillar.'
+      explanation: 'It is important to identify areas where you can reduce cost, but this does not fall within the security pillar.'
     - content: 'Moving to an autoscaling service to dynamically handle fluctuations in load'
       isCorrect: false
-      incorrectExplanation: 'Using autoscaling to handle fluctuations in load is a great capability to leverage, but does not fall within the security pillar.'
+      explanation: 'Using autoscaling to handle fluctuations in load is a great capability to leverage, but does not fall within the security pillar.'
   - content: 'Which of the following would be an example of something you might address in the availability & recoverability pillar?'
     choices:
     - content: 'Defining a policy for virtual machine backup'
       isCorrect: true
-      correctExplanation: 'Defining a policy for VM backup is an activity focused on recoverability, so it does fall within this pillar.'
+      explanation: 'Defining a policy for VM backup is an activity focused on recoverability, so it does fall within this pillar.'
     - content: 'Enabling multi-factor authentication for all administrative accounts'
       isCorrect: false
-      incorrectExplanation: 'Enabling multi-factor authentication is a great example of something you might address as part of the security pillar, but it does not apply to the availability & recoverability pillar.'
+      explanation: 'Enabling multi-factor authentication is a great example of something you might address as part of the security pillar, but it does not apply to the availability & recoverability pillar.'
     - content: 'Evaluating your cloud spend to identify areas of cost savings'
       isCorrect: false
-      incorrectExplanation: 'It is important to identify areas where you can reduce cost, but this does not fall within the availability & recoverability pillar.'
+      explanation: 'It is important to identify areas where you can reduce cost, but this does not fall within the availability & recoverability pillar.'
     - content: 'Moving to an autoscaling service to dynamically handle fluctuations in load'
       isCorrect: false
-      incorrectExplanation: 'Using autoscaling to handle fluctuations in load is a great capability to leverage, but does not fall within the availability & recoverability pillar.'
+      explanation: 'Using autoscaling to handle fluctuations in load is a great capability to leverage, but does not fall within the availability & recoverability pillar.'

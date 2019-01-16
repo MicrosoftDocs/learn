@@ -38,4 +38,5 @@ units:
 - learn.welcome-to-azure.6-scale-up
 - learn.welcome-to-azure.7-knowledge-check
 - learn.welcome-to-azure.8-summary
-achievement: learn.welcome-to-azure.badge
+badge:
+  uid: learn.welcome-to-azure.badge

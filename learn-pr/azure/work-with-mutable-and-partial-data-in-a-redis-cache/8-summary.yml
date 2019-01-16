@@ -21,43 +21,43 @@ quiz:
     choices:
     - content: If a command is queued with incorrect syntax, the transaction will be automatically discarded if you try to execute it. If a command fails during execution, the transaction will complete as normal.
       isCorrect: true
-      correctExplanation: "In Redis, commands that fail during execution do not stop a transaction. Commands queued with incorrect syntax will prevent the transaction from being executed."
+      explanation: "In Redis, commands that fail during execution do not stop a transaction. Commands queued with incorrect syntax will prevent the transaction from being executed."
     - content: Commands prior to the failing command will still be executed, but those after the failing command will not be.
       isCorrect: false
-      incorrectExplanation: "A failing command in a transaction will not prevent later commands from being executed."
+      explanation: "A failing command in a transaction will not prevent later commands from being executed."
     - content: The entire transaction will be rolled back.
       isCorrect: false
-      incorrectExplanation: "Redis does not support transaction rollbacks."
+      explanation: "Redis does not support transaction rollbacks."
     - content: The connection will be aborted.
       isCorrect: false
-      incorrectExplanation: "Failed commands do not cause a Redis connection to be aborted."
+      explanation: "Failed commands do not cause a Redis connection to be aborted."
 
   - content: "Which of the following is a Redis command for managing data expiration?"
     choices:
     - content: "DEL"
       isCorrect: false
-      incorrectExplanation: "DEL is used to delete keys."
+      explanation: "DEL is used to delete keys."
     - content: "DISCARD"
       isCorrect: false
-      incorrectExplanation: "DISCARD is used to cancel a transaction prior to its execution."
+      explanation: "DISCARD is used to cancel a transaction prior to its execution."
     - content: "TIMEOUT"
       isCorrect: false
-      incorrectExplanation: "TIMEOUT is not a valid Redis command."
+      explanation: "TIMEOUT is not a valid Redis command."
     - content: "EXPIRE"
       isCorrect: true
-      correctExplanation: "EXPIRE is used to set the expiration timeout of a key in seconds."
+      explanation: "EXPIRE is used to set the expiration timeout of a key in seconds."
 
   - content: "Your Redis cache is configured with the **volatile-ttl** eviction policy. If it runs out of memory and you try to insert a new key, which existing key is removed?"
     choices:
     - content: "The least recently used key."
       isCorrect: false
-      incorrectExplanation: "This is the behavior of the **allkeys-lru** eviction policy."
+      explanation: "This is the behavior of the **allkeys-lru** eviction policy."
     - content: "A random key."
       isCorrect: false
-      incorrectExplanation: "This is the behavior of the **allkeys-random** policy."
+      explanation: "This is the behavior of the **allkeys-random** policy."
     - content: "The key that would next expire."
       isCorrect: true
-      correctExplanation: "**volatile-ttl** removes the key with the shortest time-to-live."
+      explanation: "**volatile-ttl** removes the key with the shortest time-to-live."
     - content: "A random key, selected from keys that have been configured to expire."
       isCorrect: false
-      incorrectExplanation: "This is the behavior of the **volatile-random** policy."
+      explanation: "This is the behavior of the **volatile-random** policy."

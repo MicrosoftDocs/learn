@@ -38,4 +38,5 @@ units:
 - learn.create-azure-account.5-exercise-create-an-azure-account
 - learn.create-azure-account.6-support-options
 - learn.create-azure-account.7-summary
-achievement: learn.create-azure-account.badge
+badge:
+  uid: learn.create-azure-account.badge

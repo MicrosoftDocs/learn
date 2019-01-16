@@ -18,33 +18,33 @@ quiz:
     choices:
     - content: 'Unpredictable costs'
       isCorrect: false
-      incorrectExplanation: "Cloud computing typically has very predictable 'pay-as-you-go' costing models."
+      explanation: "Cloud computing typically has very predictable 'pay-as-you-go' costing models."
     - content: 'Elasticity'
       isCorrect: true
-      correctExplanation: "Elasticity, Agility and Economies of scale are the correct answers, and would be seen as benefits that you can gain from using cloud services."
+      explanation: "Elasticity, Agility and Economies of scale are the correct answers, and would be seen as benefits that you can gain from using cloud services."
     - content: 'Local reach only'
       isCorrect: false
-      incorrectExplanation: "While you can isolate cloud resources and make them private, most of the time the services are public facing and reachable over the internet."
+      explanation: "While you can isolate cloud resources and make them private, most of the time the services are public facing and reachable over the internet."
   - content: "Suppose you have two types of applications: legacy applications that require specialized mainframe hardware and newer applications that can run on commodity hardware. Which cloud deployment model would be best for you?"
     choices:
     - content: 'Public cloud'
       isCorrect: false
-      incorrectExplanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
+      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
     - content: 'Private cloud'
       isCorrect: false
-      incorrectExplanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
+      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
     - content: 'Hybrid cloud'
       isCorrect: true
-      correctExplanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
+      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
 
   - content: "You're developing an application and want to focus on building, testing, and deploying. You don't want to worry about managing the underlying hardware or software. Which cloud service type is best for you?"
     choices:
     - content: 'Infrastructure-as-a-service'
       isCorrect: false
-      incorrectExplanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
+      explanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
     - content: 'Platform-as-a-service'
       isCorrect: true
-      correctExplanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
+      explanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
     - content: 'Software-as-a-service'
       isCorrect: false
-      incorrectExplanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
+      explanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."

@@ -40,4 +40,5 @@ units:
 - learn.classify-user-feedback-with-the-text-analytics-api.6-exercise-discover-sentiment
 - learn.classify-user-feedback-with-the-text-analytics-api.7-exercise-sort-feedback
 - learn.classify-user-feedback-with-the-text-analytics-api.8-summary
-achievement: learn.classify-user-feedback-with-the-text-analytics-api.badge
+badge:
+  uid: learn.classify-user-feedback-with-the-text-analytics-api.badge

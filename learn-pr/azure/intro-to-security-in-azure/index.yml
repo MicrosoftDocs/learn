@@ -38,4 +38,5 @@ units:
 - learn.introduction-to-security.6-azure-information-protection
 - learn.introduction-to-security.7-advanced-threat-protection
 - learn.introduction-to-security.8-summary
-achievement: learn.introduction-to-security.badge
+badge:
+  uid: learn.introduction-to-security.badge

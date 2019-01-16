@@ -35,4 +35,5 @@ units:
 - learn.create-computer-vision-service.5-extract-printed-text
 - learn.create-computer-vision-service.6-extract-handwritten-text
 - learn.create-computer-vision-service.7-summary
-achievement: learn.create-computer-vision-service.badge
+badge:
+  uid: learn.create-computer-vision-service.badge

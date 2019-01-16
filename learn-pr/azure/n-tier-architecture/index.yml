@@ -34,4 +34,5 @@ units:
 - learn.n-tier-architecture.3-deploy-n-tier-architecture
 - learn.n-tier-architecture.4-n-tier-architecture-considerations
 - learn.n-tier-architecture.5-summary
-achievement: learn.n-tier-architecture.badge
+badge:
+  uid: learn.n-tier-architecture.badge

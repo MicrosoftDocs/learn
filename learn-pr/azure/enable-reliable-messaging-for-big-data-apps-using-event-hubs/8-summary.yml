@@ -22,31 +22,31 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Publishers can use either HTTPS or AMQP. AMQP opens a socket and can send multiple messages over that socket."
+      explanation: "Publishers can use either HTTPS or AMQP. AMQP opens a socket and can send multiple messages over that socket."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Publishers can use either HTTPS or AMQP. HTTP is not ideal for frequent publishing because it establishes a new connection for each publication."
+      explanation: "Publishers can use either HTTPS or AMQP. HTTP is not ideal for frequent publishing because it establishes a new connection for each publication."
  
   - content: "By default, how many partitions will a new Event Hub have?"
     choices:
     - content: "1"
       isCorrect: false
-      incorrectExplanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
     - content: "2"
       isCorrect: false
-      incorrectExplanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
     - content: "3"
       isCorrect: false
-      incorrectExplanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
-    - content: "4"
+      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      content: "4"
       isCorrect: true
-      incorrectExplanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
+      explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
  
   - content: "If an Event Hub goes offline before a consumer group can process the events it holds, those events will be lost."
     choices:
     - content: "True"
       isCorrect: false
-      incorrectExplanation: "Events are persistent. Each consumer group has its own cursor maintaining its position within the partition. The consumer groups can resume processing at their cursor position when the Event Hub is again available."
+      explanation: "Events are persistent. Each consumer group has its own cursor maintaining its position within the partition. The consumer groups can resume processing at their cursor position when the Event Hub is again available."
     - content: "False"
       isCorrect: true
-      correctExplanation: "Events are persistent. Each consumer group has its own cursor maintaining its position within the partition. The consumer groups can resume processing at their cursor position when the Event Hub is again available."
+      explanation: "Events are persistent. Each consumer group has its own cursor maintaining its position within the partition. The consumer groups can resume processing at their cursor position when the Event Hub is again available."

@@ -23,31 +23,31 @@ quiz:
     choices:
     - content: "The hardware specification of a device connected to your application."
       isCorrect: false
-      incorrectExplanation: "Hardware details are not captured by a device template."
+      explanation: "Hardware details are not captured by a device template."
     - content: "The data and commands a device can exchange with your application."
       isCorrect: true
-      correctExplanation: "The template is a specification that captures all the potential information and commands that can be exchanged between your code and the physical device."
+      explanation: "The template is a specification that captures all the potential information and commands that can be exchanged between your code and the physical device."
     - content: "The over-the-wire protocol used to communicate with a device."
       isCorrect: false
-      incorrectExplanation: "The communication protocol is not part of a device template."
+      explanation: "The communication protocol is not part of a device template."
 
   - content: "True or false: you must have a physical device to test your IoT Central application."
     choices:
     - content: "True"
       isCorrect: false
-      incorrectExplanation: "You can use simulated devices for testing."
+      explanation: "You can use simulated devices for testing."
     - content: "False"
       isCorrect: true
-      correctExplanation: "IoT Central automatically creates a simulated device for you when you create a device template. You can also code custom software simulations. These options let you thoroughly test your application before connecting a physical device."
+      explanation: "IoT Central automatically creates a simulated device for you when you create a device template. You can also code custom software simulations. These options let you thoroughly test your application before connecting a physical device."
 
   - content: "Suppose you have five physical devices communicating with IoT Central. How many connection strings would you have?"
     choices:
     - content: "One: the connection string is shared by all connected devices."
       isCorrect: false
-      incorrectExplanation: "Shared connection strings would not allow IoT Central to uniquely identify each device."
+      explanation: "Shared connection strings would not allow IoT Central to uniquely identify each device."
     - content: "Two: one in active use and one backup in case the primary is compromised."
       isCorrect: false
-      incorrectExplanation: "Shared connection strings would not allow IoT Central to uniquely identify each device."
+      explanation: "Shared connection strings would not allow IoT Central to uniquely identify each device."
     - content: "Five: every device needs a unique connection string."
       isCorrect: true
-      correctExplanation: "The connection string identifies the device to IoT Central, so each device needs its own."
+      explanation: "The connection string identifies the device to IoT Central, so each device needs its own."

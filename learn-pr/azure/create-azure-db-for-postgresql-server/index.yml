@@ -36,4 +36,5 @@ units:
 - learn.create-azure-db-for-postgresql.server-security-considerations
 - learn.create-azure-db-for-postgresql.connecting-to-postgresql-db-server
 - learn.create-azure-db-for-postgresql.summary
-achievement: learn.create-azure-db-for-postgresql.badge
+badge:
+  uid: learn.create-azure-db-for-postgresql.badge

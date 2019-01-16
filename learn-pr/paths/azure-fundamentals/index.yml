@@ -50,4 +50,5 @@ modules:
 - learn.intro-to-governance
 - learn.control-and-organize-with-resource-manager
 - learn.predict-costs-and-optimize-spending
-achievement: learn.cloud-foundations.trophy
+trophy:
+  uid: learn.cloud-foundations.trophy

@@ -31,4 +31,5 @@ units:
 - learn.intro-to-site-reliability-engineering.5-key-principles-2-human-side-of-sre
 - learn.intro-to-site-reliability-engineering.6-getting-started
 - learn.intro-to-site-reliability-engineering.7-summary
-achievement: learn.intro-to-site-reliability-engineering.badge
+badge:
+  uid: learn.intro-to-site-reliability-engineering.badge
