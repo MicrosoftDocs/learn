@@ -39,4 +39,5 @@ units:
 - learn.cosmos-db-app-with-vscode.5-query
 - learn.cosmos-db-app-with-vscode.6-stored-procedure
 - learn.cosmos-db-app-with-vscode.7-summary
-achievement: learn.cosmos-db-app-with-vscode.badge
+badge:
+  uid: learn.cosmos-db-app-with-vscode.badge

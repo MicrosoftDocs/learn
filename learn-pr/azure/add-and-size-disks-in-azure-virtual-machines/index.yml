@@ -35,4 +35,5 @@ units:
 - learn.add-and-size-disks-in-azure-virtual-machines.5-sizing-disks
 - learn.add-and-size-disks-in-azure-virtual-machines.6-exercise-resize-disks
 - learn.add-and-size-disks-in-azure-virtual-machines.7-summary
-achievement: learn.add-and-size-disks-in-azure-virtual-machines.badge
+badge:
+  uid: learn.add-and-size-disks-in-azure-virtual-machines.badge

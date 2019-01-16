@@ -35,4 +35,5 @@ units:
 - learn.interactive-deep-learning.5-connect-to-jupyter-through-docker-on-the-dsvm
 - learn.interactive-deep-learning.6-run-your-first-deep-learning-experiment-with-jupyter
 - learn.interactive-deep-learning.7-summary-and-knowledge-check
-achievement: learn.interactive-deep-learning.badge
+badge:
+  uid: learn.interactive-deep-learning.badge

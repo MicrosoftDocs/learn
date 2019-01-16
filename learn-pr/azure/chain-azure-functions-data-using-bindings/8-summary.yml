@@ -21,47 +21,47 @@ quiz:
     choices:
     - content: "They provide access to more data sources than are available using code."
       isCorrect: false
-      incorrectExplanation: "Bindings are optional; you can access data using code if you prefer."
+      explanation: "Bindings are optional; you can access data using code if you prefer."
     - content: "They let you connect to Azure resources without authentication."
       isCorrect: false
-      incorrectExplanation: "Using a binding does not change the security requirements for accessing Azure resources."
+      explanation: "Using a binding does not change the security requirements for accessing Azure resources."
     - content: "They simplify the connection process; you don't need to code specific connection logic."
       isCorrect: true
-      correctExplanation: "Bindings provide a declarative way to connect to data. They let you avoid the complexity of coding connection logic like making a database connection or invoking web API interfaces."
+      explanation: "Bindings provide a declarative way to connect to data. They let you avoid the complexity of coding connection logic like making a database connection or invoking web API interfaces."
 
   - content: "What is the name of the file that contains function configuration data?"
     choices: 
     - content: "config.txt"
       isCorrect: false
-      incorrectExplanation: "The configuration is written in JSON."
+      explanation: "The configuration is written in JSON."
     - content: "config.json"
       isCorrect: false
-      incorrectExplanation: "It is a JSON file, but this is not the correct name."
+      explanation: "It is a JSON file, but this is not the correct name."
     - content: "function.json" 
       isCorrect: true
-      correctExplanation: "The configuration is named `function.json`, which contains JSON configuration data such as binding declarations."
+      explanation: "The configuration is named `function.json`, which contains JSON configuration data such as binding declarations."
 
   - content: "How many triggers must a function have?"
     choices: 
     - content: "Zero"
       isCorrect: false
-      incorrectExplanation: "A function must have exactly one trigger."
+      explanation: "A function must have exactly one trigger."
     - content: "One"
       isCorrect: true
-      correctExplanation: "A function must have exactly one trigger."
+      explanation: "A function must have exactly one trigger."
     - content: "Two"
       isCorrect: false
-      incorrectExplanation: "A function must have exactly one trigger."
+      explanation: "A function must have exactly one trigger."
 
   - content: Which of the following lines of JavaScript writes "hello" to an Azure Queue Storage queue using a function parameter called **myQueueItem**?
     choices: 
     - content: context.myQueueItem = "hello";
       isCorrect: false
-      incorrectExplanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
+      explanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
     - content: context.bindings.myQueueItem = "hello";
       isCorrect: true
-      correctExplanation: context.bindings returns a named object that contains all your input and output data. 
+      explanation: context.bindings returns a named object that contains all your input and output data. 
     - content: myQueueItem = "hello";
       isCorrect: false
-      incorrectExplanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
+      explanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
  

@@ -41,4 +41,5 @@ units:
 - learn.principles-cloud-computing.5-types-of-cloud-services
 - learn.principles-cloud-computing.6-knowledge-check
 - learn.principles-cloud-computing.7-summary
-achievement: learn.principles-cloud-computing.badge
+badge:
+  uid: learn.principles-cloud-computing.badge

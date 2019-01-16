@@ -33,4 +33,5 @@ units:
 - learn.design-for-availability-and-recoverability.3-disaster-recovery
 - learn.design-for-availability-and-recoverability.4-backup-and-restore
 - learn.design-for-availability-and-recoverability.5-summary
-achievement: learn.design-for-availability-and-recoverability.badge
+badge:
+  uid: learn.design-for-availability-and-recoverability.badge

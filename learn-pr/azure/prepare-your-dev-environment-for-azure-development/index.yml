@@ -37,4 +37,5 @@ units:
 - learn.prepare-azure-dev-environment.6-set-up-eclipse-ide-for-java-developers
 - learn.prepare-azure-dev-environment.7-exercise-set-up-eclipse
 - learn.prepare-azure-dev-environment.8-summary
-achievement: learn.prepare-azure-dev-environment.badge
+badge:
+  uid: learn.prepare-azure-dev-environment.badge

@@ -23,7 +23,7 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Azure Security Center can monitor all your services, both in Azure and on premises."
+      explanation: "Azure Security Center can monitor all your services, both in Azure and on premises."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Azure Security Center is not limited to Azure-hosted resources."
+      explanation: "Azure Security Center is not limited to Azure-hosted resources."

@@ -20,16 +20,16 @@ quiz:
     choices:
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: You can set the partition key only when the collection is created.
+      explanation: You can set the partition key only when the collection is created.
     - content: 'False'
       isCorrect: true
-      correctExplanation: You can set the partition key only when the collection is created.
+      explanation: You can set the partition key only when the collection is created.
 
   - content: 'True or false: You can you **change** the partition key after the Azure Cosmos DB collection has been created?'
     choices:
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: Partition keys cannot be modified after the collection is created.
+      explanation: Partition keys cannot be modified after the collection is created.
     - content: 'False'
       isCorrect: true
-      correctExplanation: Partition keys cannot be modified after the collection is created.
+      explanation: Partition keys cannot be modified after the collection is created.

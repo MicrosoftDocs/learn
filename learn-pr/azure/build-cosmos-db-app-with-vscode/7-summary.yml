@@ -21,34 +21,34 @@ quiz:
     choices:
     - content: "Directly from Visual Studio Code"
       isCorrect: true
-      correctExplanation: "The Azure Cosmos DB extension lets you administer and create Azure Cosmos DB accounts and databases from within Visual Studio Code."
+      explanation: "The Azure Cosmos DB extension lets you administer and create Azure Cosmos DB accounts and databases from within Visual Studio Code."
     - content: "From the Azure portal"
       isCorrect: false
-      incorrectExplanation: "The Azure portal does provide this information, but if you're already in Visual Studio Code, going to the portal is unlikely to be the most convenient choice."
+      explanation: "The Azure portal does provide this information, but if you're already in Visual Studio Code, going to the portal is unlikely to be the most convenient choice."
     - content: "Using the Azure CLI"
       isCorrect: false
-      incorrectExplanation: "While this is a good choice, especially since Visual Studio Code has a built-in terminal, it does require knowledge of the required commands. This may not be as convenient as the Visual Studio Code extension."
+      explanation: "While this is a good choice, especially since Visual Studio Code has a built-in terminal, it does require knowledge of the required commands. This may not be as convenient as the Visual Studio Code extension."
  
   - content: "When working with Azure Cosmos DB's SQL API, which of these can be used to perform CRUD operations?"
     choices:
     - content: "LINQ"
       isCorrect: true
-      correctExplanation: "LINQ and SQL are two of the valid methods for querying the SQL API."
+      explanation: "LINQ and SQL are two of the valid methods for querying the SQL API."
     - content: "Apache Cassandra client libraries"
       isCorrect: false
-      incorrectExplanation: "Apache Cassandra libraries can work with Azure Cosmos DB’s Cassandra API but not with the SQL API."
+      explanation: "Apache Cassandra libraries can work with Azure Cosmos DB’s Cassandra API but not with the SQL API."
     - content: "Azure Table Storage libraries"
       isCorrect: false
-      incorrectExplanation: "Azure Table Storage libraries can work with Azure Cosmos DB's Table API but not with the SQL API."
+      explanation: "Azure Table Storage libraries can work with Azure Cosmos DB's Table API but not with the SQL API."
  
   - content: "When working with the Azure Cosmos DB Client SDK's DocumentClient class, you use a NOSQL model. How would you use this class to change the FirstName field of a Person Document from 'Ann' to 'Fran'?"
     choices:
     - content: "Call UpdateDocumentAsync with FirstName=Fran"
       isCorrect: false
-      incorrectExplanation: "The DocumentClient class doesn't have an UpdateDocumentAsync method. Updating a single field is not consistent with the document-style NOSQL approach."
+      explanation: "The DocumentClient class doesn't have an UpdateDocumentAsync method. Updating a single field is not consistent with the document-style NOSQL approach."
     - content: "Call UpsertDocumentAsync with an updated Person object"
       isCorrect: false
-      incorrectExplanation: "While this would work, it isn't the minimum necessary access to meet our requirements. Upsert operations will replace a document if its key already exists or add a new document if not. We don't want to add a new one, so using this method risks introducing subtle, hard to track bugs."
+      explanation: "While this would work, it isn't the minimum necessary access to meet our requirements. Upsert operations will replace a document if its key already exists or add a new document if not. We don't want to add a new one, so using this method risks introducing subtle, hard to track bugs."
     - content: "Call ReplaceDocumentAsync with an updated Person object"
       isCorrect: true
-      correctExplanation: "ReplaceDocumentAsync will replace the existing document with the new one. In this case we'd intend the old and new to be the same other than FirstName."
+      explanation: "ReplaceDocumentAsync will replace the existing document with the new one. In this case we'd intend the old and new to be the same other than FirstName."

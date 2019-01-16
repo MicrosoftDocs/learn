@@ -38,4 +38,5 @@ units:
 - learn.chain-azure-functions-data-using-input-output-bindings.6-write-data-with-output-bindings-portal-lesson
 - learn.chain-azure-functions-data-using-input-output-bindings.7-write-data-with-output-bindings-portal-lab
 - learn.chain-azure-functions-data-using-input-output-bindings.8-summary
-achievement: learn.chain-azure-functions-data-using-input-output-bindings.badge
+badge:
+  uid: learn.chain-azure-functions-data-using-input-output-bindings.badge

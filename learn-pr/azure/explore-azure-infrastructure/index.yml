@@ -36,4 +36,5 @@ units:
 - learn.explore-azure-infrastructure.7-composite-sla
 - learn.explore-azure-infrastructure.8-improve-app-slas
 - learn.explore-azure-infrastructure.9-summary
-achievement: learn.explore-azure-infrastructure.badge
+badge:
+  uid: learn.explore-azure-infrastructure.badge

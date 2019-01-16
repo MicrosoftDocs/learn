@@ -22,22 +22,22 @@ quiz:
     choices:
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: "Not all Azure data storage products include automatic backup; for example, Azure Blobs do not."
+      explanation: "Not all Azure data storage products include automatic backup; for example, Azure Blobs do not."
     - content: 'False'
       isCorrect: true
-      correctExplanation: "Most Azure services offer integrated backup functionality, but it is not always enabled by default. You can also add services like Azure Backup Agent as needed to make sure all your data is protected."
+      explanation: "Most Azure services offer integrated backup functionality, but it is not always enabled by default. You can also add services like Azure Backup Agent as needed to make sure all your data is protected."
 
   - content: 'Why is it important to test restores regularly?'
     choices:
     - content: 'To validate the integrity of your backups.'
       isCorrect: false
-      incorrectExplanation: 'Testing restores regularly does allow you to validate the integrity of your backups, but this is not the only correct choice.'
+      explanation: 'Testing restores regularly does allow you to validate the integrity of your backups, but this is not the only correct choice.'
     - content: 'To become familiar with the restoration process.'
       isCorrect: false
-      incorrectExplanation: 'Testing restores regularly does allow you to become more familiar with the restoration process, but this is not the only correct choice.'
+      explanation: 'Testing restores regularly does allow you to become more familiar with the restoration process, but this is not the only correct choice.'
     - content: 'To identify gaps in your backup and restore processes.'
       isCorrect: false
-      incorrectExplanation: 'Testing restores regularly does help identify gaps in your backup and restore processes, but this is not the only correct choice.'
+      explanation: 'Testing restores regularly does help identify gaps in your backup and restore processes, but this is not the only correct choice.'
     - content: 'All of the above.'
       isCorrect: true
-      correctExplanation: 'All are benefits of regularly testing your restore process.'
+      explanation: 'All are benefits of regularly testing your restore process.'

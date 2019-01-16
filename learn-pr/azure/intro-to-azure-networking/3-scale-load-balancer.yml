@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: 'You must use Azure Load Balancer if you want to distribute traffic among your virtual machines running in Azure.'
       isCorrect: false
-      incorrectExplanation: 'If one system is unavailable, Azure Load Balancer stops sending traffic to it. It then directs traffic to one of the responsive servers.'
+      explanation: 'If one system is unavailable, Azure Load Balancer stops sending traffic to it. It then directs traffic to one of the responsive servers.'
     - content: 'Azure Load Balancer works with internet-facing traffic only.'
       isCorrect: false
-      incorrectExplanation: 'If one system is unavailable, Azure Load Balancer stops sending traffic to it. It then directs traffic to one of the responsive servers.'
+      explanation: 'If one system is unavailable, Azure Load Balancer stops sending traffic to it. It then directs traffic to one of the responsive servers.'
     - content: 'Azure Load Balancer distributes traffic among similar systems, making your services more highly available.'
       isCorrect: true
-      correctExplanation: 'If one system is unavailable, Azure Load Balancer stops sending traffic to it. It then directs traffic to one of the responsive servers.'
+      explanation: 'If one system is unavailable, Azure Load Balancer stops sending traffic to it. It then directs traffic to one of the responsive servers.'

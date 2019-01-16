@@ -31,4 +31,5 @@ units:
 - learn.pillars-of-a-great-azure-architecture.5-design-for-availability-and-recoverability
 - learn.pillars-of-a-great-azure-architecture.6-design-for-efficiency-and-operations
 - learn.pillars-of-a-great-azure-architecture.7-summary
-achievement: learn.pillars-of-a-great-azure-architecture.badge
+badge:
+  uid: learn.pillars-of-a-great-azure-architecture.badge

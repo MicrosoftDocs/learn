@@ -22,16 +22,16 @@ quiz:
     choices:
     - content: "Estimate"
       isCorrect: false
-      incorrectExplanation: "This tab has all of your previously saved estimates."
+      explanation: "This tab has all of your previously saved estimates."
     - content: "Products"
       isCorrect: true
-      correctExplanation: "This tab has all the Azure services listed and is where you'll add or remove services to formulate your estimate."
+      explanation: "This tab has all the Azure services listed and is where you'll add or remove services to formulate your estimate."
   
   - content: "True or false: You can share your estimate through an Excel spreadsheet or through a URL."
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Clicking *Export* at the bottom of the estimate will export an Excel spreadsheet that you can share, or you can click *Share* to get a URL link that you can share with your team."
+      explanation: "Clicking *Export* at the bottom of the estimate will export an Excel spreadsheet that you can share, or you can click *Share* to get a URL link that you can share with your team."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Clicking *Export* at the bottom of the estimate will export an Excel spreadsheet that you can share, or you can click *Share* to get a URL link that you can share with your team."
+      explanation: "Clicking *Export* at the bottom of the estimate will export an Excel spreadsheet that you can share, or you can click *Share* to get a URL link that you can share with your team."

@@ -34,4 +34,5 @@ units:
 - learn.provision-azure-sql-db.3-create-your-database
 - learn.provision-azure-sql-db.4-connect-add-data
 - learn.provision-azure-sql-db.5-summary
-achievement: learn.provision-azure-sql-db.badge
+badge:
+  uid: learn.provision-azure-sql-db.badge

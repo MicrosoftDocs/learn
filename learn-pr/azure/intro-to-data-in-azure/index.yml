@@ -32,4 +32,5 @@ units:
 - learn.intro-to-data-in-azure.4-comparison-azure-and-on-prem-storage
 - learn.intro-to-data-in-azure.5-knowledge-check
 - learn.intro-to-data-in-azure.6-summary
-achievement: learn.intro-to-data-in-azure.badge
+badge:
+  uid: learn.intro-to-data-in-azure.badge

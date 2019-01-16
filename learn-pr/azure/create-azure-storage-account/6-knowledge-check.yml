@@ -19,29 +19,29 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "Replication policy is a characteristic of a storage account. Every member in the storage account must use the same policy. If you need some data to use the geo-replication strategy and other data to use the local replication strategy, then you will need two storage accounts."
+      explanation: "Replication policy is a characteristic of a storage account. Every member in the storage account must use the same policy. If you need some data to use the geo-replication strategy and other data to use the local replication strategy, then you will need two storage accounts."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "Replication policy is a characteristic of a storage account. Every member in the storage account must use the same policy. If you need some data to use the geo-replication strategy and other data to use the local replication strategy, then you will need two storage accounts."
+      explanation: "Replication policy is a characteristic of a storage account. Every member in the storage account must use the same policy. If you need some data to use the geo-replication strategy and other data to use the local replication strategy, then you will need two storage accounts."
   - content: "The name of a storage account must be:"
     choices:
     - content: "Unique within the containing resource group."
       isCorrect: false
-      incorrectExplanation: "The storage account name is used as part of the URI for API access, so it must be globally unique."
+      explanation: "The storage account name is used as part of the URI for API access, so it must be globally unique."
     - content: "Unique within your Azure subscription."
       isCorrect: false
-      incorrectExplanation: "The storage account name is used as part of the URI for API access, so it must be globally unique."
+      explanation: "The storage account name is used as part of the URI for API access, so it must be globally unique."
     - content: "Globally unique."
       isCorrect: true
-      correctExplanation: "The storage account name is used as part of the URI for API access, so it must be globally unique."
+      explanation: "The storage account name is used as part of the URI for API access, so it must be globally unique."
   - content: "In a typical project, when would you create your storage account(s)?"
     choices:
     - content: "At the beginning, during project setup."
       isCorrect: true
-      correctExplanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
+      explanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
     - content: "After deployment, when the project is running."
       isCorrect: false
-      incorrectExplanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
+      explanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
     - content: "At the end, during resource cleanup."
       isCorrect: false
-      incorrectExplanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
+      explanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."

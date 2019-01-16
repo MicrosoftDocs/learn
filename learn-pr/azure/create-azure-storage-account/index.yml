@@ -36,4 +36,5 @@ units:
 - learn.create-azure-storage-account.5-exercise-create-a-storage-account
 - learn.create-azure-storage-account.6-knowledge-check
 - learn.create-azure-storage-account.7-summary
-achievement: learn.create-azure-storage-account.badge
+badge:
+  uid: learn.create-azure-storage-account.badge

@@ -20,37 +20,37 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application."
+      explanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application"
+      explanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application"
   
   - content: "Suppose you want to assign a role to allow a user to create and manage Azure resources but not be able to grant access to others. Which of the following built-in roles would support this?"
     choices:
     - content: "Owner"
       isCorrect: false
-      incorrectExplanation: "An owner can create and manage all types of Azure resources; however, they can grant access to other users."
+      explanation: "An owner can create and manage all types of Azure resources; however, they can grant access to other users."
     - content: "Contributor"
       isCorrect: true
-      correctExplanation: "A contributor can create and manage all types of Azure resources, but they can't grant access to other users."
+      explanation: "A contributor can create and manage all types of Azure resources, but they can't grant access to other users."
     - content: "Reader"
       isCorrect: false
-      incorrectExplanation: "A reader can only view existing Azure Resources."
+      explanation: "A reader can only view existing Azure Resources."
     - content: "User Access Administrator"
       isCorrect: false
-      incorrectExplanation: "A user access administrator can only manage access of Azure resources."
+      explanation: "A user access administrator can only manage access of Azure resources."
 
   - content: "What is the inheritance order for scope in Azure?"
     choices:
     - content: "Management group, Resource group, Subscription, Resource"
       isCorrect: false
-      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
+      explanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
     - content: "Management group, Subscription, Resource group, Resource"
       isCorrect: true
-      correctExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
+      explanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
     - content: "Subscription, Management group, Resource group, Resource"
       isCorrect: false
-      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
+      explanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
     - content: "Subscription, Resource group, Management group, Resource"
       isCorrect: false
-      incorrectExplanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."
+      explanation: "The inheritance order for scope is Management group, Subscription, Resource group, Resource. For example, if you assigned a Contributor role to a group at the Subscription scope level, it will be inherited by all Resource groups and Resources."

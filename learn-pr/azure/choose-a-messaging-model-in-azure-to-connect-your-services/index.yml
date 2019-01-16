@@ -36,4 +36,5 @@ units:
 - learn.choose-messaging-model.4-choose-event-grid
 - learn.choose-messaging-model.5-choose-azure-event-hubs
 - learn.choose-messaging-model.6-summary
-achievement: learn.choose-messaging-model.badge
+badge:
+  uid: learn.choose-messaging-model.badge

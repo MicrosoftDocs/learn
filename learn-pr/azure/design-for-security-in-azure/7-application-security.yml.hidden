@@ -19,16 +19,16 @@ quiz:
   - content: 'Question 1'
     choices:
     - content: Answer 1
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
+      explanation: Why this answer is correct
+      explanation: Why this answer is incorrect
       isCorrect: true
     - content: Answer 2
       isCorrect: false
   - content: 'Question 2'
     choices:
     - content: Answer A
-      correctExplanation: Why this answer is correct
-      incorrectExplanation: Why this answer is incorrect
+      explanation: Why this answer is correct
+      explanation: Why this answer is incorrect
       isCorrect: true
     - content: Answer B
       isCorrect: false

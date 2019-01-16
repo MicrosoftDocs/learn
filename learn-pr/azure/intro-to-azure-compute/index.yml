@@ -34,4 +34,5 @@ units:
 - learn.intro-to-compute.5-appservice
 - learn.intro-to-compute.6-serverless-computing
 - learn.intro-to-compute.7-summary
-achievement: learn.intro-to-compute.badge
+badge:
+  uid: learn.intro-to-compute.badge

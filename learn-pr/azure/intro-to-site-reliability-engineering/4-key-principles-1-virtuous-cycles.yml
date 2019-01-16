@@ -22,27 +22,27 @@ quiz:
     choices:
     - content: 'Standard Level Indicator '
       isCorrect: false
-      incorrectExplanation: 'SLI stands for Service Level Indicator.'
+      explanation: 'SLI stands for Service Level Indicator.'
     - content: 'Service Level Indicator'
       isCorrect: true
     - content: 'Safe Load Indicator'
       isCorrect: false
-      incorrectExplanation: 'SLO stands for Service Level Indicator.'
+      explanation: 'SLO stands for Service Level Indicator.'
     - content: 'System Level Interface'
       isCorrect: false
-      incorrectExplanation: 'SLO stands for Service Level Indicator.'
+      explanation: 'SLO stands for Service Level Indicator.'
 
   - content: 'What does SLO stand for (in an SRE context)?'
     choices:
     - content: 'Service Level Outcome'
       isCorrect: false
-      incorrectExplanation: 'SLO stands for Service Level Objective.'
+      explanation: 'SLO stands for Service Level Objective.'
     - content: 'Standard Line Operations'
       isCorrect: false
-      incorrectExplanation: 'SLO stands for Service Level Objective.'
+      explanation: 'SLO stands for Service Level Objective.'
     - content: 'Service Load Objective'
       isCorrect: false
-      incorrectExplanation: 'SLO stands for Service Level Objective.'
+      explanation: 'SLO stands for Service Level Objective.'
     - content: 'Service Level Objective'
       isCorrect: true
 
@@ -50,34 +50,34 @@ quiz:
     choices:
     - content: 'Immediately restart the service involved so it can be brought back into compliance'
       isCorrect: false
-      incorrectExplanation: 'An error budget is a way of tracking the aggregate reliability of a service over time as it relates to your objectives. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for everyone and every situation.'
+      explanation: 'An error budget is a way of tracking the aggregate reliability of a service over time as it relates to your objectives. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for everyone and every situation.'
     - content: 'Put a hold on further releases of that software until the service has returned to the agreed upon level of reliability'
       isCorrect: false
-      incorrectExplanation: 'An error budget is a way of tracking the aggregate reliability of a service over time as it relates to your objectives. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for everyone and every situation.'
+      explanation: 'An error budget is a way of tracking the aggregate reliability of a service over time as it relates to your objectives. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for everyone and every situation.'
     - content: 'Immediately redirect engineering resources associated with this service from feature development to fixing the reliability problem'
       isCorrect: false
-      incorrectExplanation: 'An error budget is a way of tracking the aggregate reliability of a service over time as it relates to your objectives. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for everyone and every situation.'
-    - content: 'React in the service- or organizationally-specifc way previously agreed upon when creating that error budget'
+      explanation: 'An error budget is a way of tracking the aggregate reliability of a service over time as it relates to your objectives. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for everyone and every situation.'
+    - content: 'React in the service- or organizationally-specific way previously agreed upon when creating that error budget'
       isCorrect: true
-      correctExplanation: 'When setting up an error budget for a service, it is important to decide (and document) how the organization will respond should it be exhausted. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. An error budget is a way of tracking the aggregate reliability of a service over time. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for every one and every situation.'
+      explanation: 'When setting up an error budget for a service, it is important to decide (and document) how the organization will respond should it be exhausted. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. An error budget is a way of tracking the aggregate reliability of a service over time. It is important to accompany this with a shared understanding of how the organization will react should the amout of acceptable unreliability be exceeded. There are many possible responses, you need to choose and stick to the ones that work best in your particular context. There is no one right reaction for every one and every situation.'
 
   - content: 'If you exceed your error budget for a service, what should you do?'
     choices:
     - content: 'Speed up the release cadence for that service'
       isCorrect: false
-      incorrectExplanation: 'This is close to a possible right answer, but it leaves out a crucial component. If the reliability of the service would still be at the desired level even if you were to do something which could potentially decrease it, it would be reasonable to "use up" that headroom by increasing the release cadence. But that is just one possible response. The right thing to do depends on your specific circumstances.'
+      explanation: 'This is close to a possible right answer, but it leaves out a crucial component. If the reliability of the service would still be at the desired level even if you were to do something which could potentially decrease it, it would be reasonable to "use up" that headroom by increasing the release cadence. But that is just one possible response. The right thing to do depends on your specific circumstances.'
     - content: 'Focus more on feature development for that service and deploy those features faster'
       isCorrect: false
-      incorrectExplanation: 'This is close to a possible right answer, but it leaves out a crucial component. If the reliability of the service would still be at the desired level even if you were to do something which could potentially decrease it, it would be reasonable to "use up" that headroom by increasing the feature velocity. But that is just one possible response. The right thing to do depends on your specific circumstances.'
+      explanation: 'This is close to a possible right answer, but it leaves out a crucial component. If the reliability of the service would still be at the desired level even if you were to do something which could potentially decrease it, it would be reasonable to "use up" that headroom by increasing the feature velocity. But that is just one possible response. The right thing to do depends on your specific circumstances.'
     - content: 'It depends'
       isCorrect: true
-      correctExplanation: 'There are many ways to "spend" an excess error budget. Increasing the release cadency or feature velocity, deploying more beta features, conducting more disruptive testing, and so on. It is also fine (though this comes with its own set of problems) to do nothing and simply operate at a greater level of reliabilty. All of these responses are situation specific and should be decided in your specific context.'
+      explanation: 'There are many ways to "spend" an excess error budget. Increasing the release cadency or feature velocity, deploying more beta features, conducting more disruptive testing, and so on. It is also fine (though this comes with its own set of problems) to do nothing and simply operate at a greater level of reliabilty. All of these responses are situation specific and should be decided in your specific context.'
 
   - content: 'When a downtime or other incident occurs, should you immediately terminate the people involved?'
     choices:
     - content: 'Yes, the person or people who made the mistake should always take responsibility for their actions and pay the consequences'
       isCorrect: false
-      incorrectExplanation: 'It is not possibe to fire your way to reliable. If the culture focuses on blame in these situations, the organization loses the ability to learn from incident and improve upon the processes and technology that allowed it to happen in the first place. Without this feedback loop, the organization will always be forced to react to incidents instead of eliminating them.'
+      explanation: 'It is not possible to fire your way to reliable. If the culture focuses on blame in these situations, the organization loses the ability to learn from incident and improve upon the processes and technology that allowed it to happen in the first place. Without this feedback loop, the organization will always be forced to react to incidents instead of eliminating them.'
     - content: 'No, except under certain rare and extraordinary circumstances'
       isCorrect: true
-      correctExplanation: 'Feedback loops like blameless postmortems are crucial to continuous improvement. If an organization learns from an incident instead of firing the people involved (the people who may understand best what happened), it can work directly on the reliability of its services, systems and products.'
+      explanation: 'Feedback loops like blameless postmortems are crucial to continuous improvement. If an organization learns from an incident instead of firing the people involved (the people who may understand best what happened), it can work directly on the reliability of its services, systems and products.'

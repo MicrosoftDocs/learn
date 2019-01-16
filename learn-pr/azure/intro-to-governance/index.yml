@@ -36,4 +36,5 @@ units:
 - learn.intro-to-compliance.6-azure-compliance
 - learn.intro-to-compliance.7-monitoring
 - learn.intro-to-compliance.8-summary
-achievement: learn.intro-to-governance.badge
+badge:
+  uid: learn.intro-to-governance.badge

@@ -36,4 +36,5 @@ units:
 - learn.introduction-to-azure-virtual-machines.6-backup-services
 - learn.introduction-to-azure-virtual-machines.7-knowledge-check
 - learn.introduction-to-azure-virtual-machines.8-summary
-achievement: learn.introduction-to-azure-virtual-machines.badge
+badge:
+  uid: learn.introduction-to-azure-virtual-machines.badge

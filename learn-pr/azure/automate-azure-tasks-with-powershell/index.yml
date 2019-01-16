@@ -39,4 +39,5 @@ units:
 - learn.automate-azure-tasks-with-powershell.7-create-resource-using-script
 - learn.automate-azure-tasks-with-powershell.8-exercise-create-resource-using-script
 - learn.automate-azure-tasks-with-powershell.9-summary
-achievement: learn.automate-azure-tasks-with-powershell.badge
+badge:
+  uid: learn.automate-azure-tasks-with-powershell.badge
