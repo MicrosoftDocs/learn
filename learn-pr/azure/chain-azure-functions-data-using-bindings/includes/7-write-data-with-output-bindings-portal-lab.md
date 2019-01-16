@@ -85,7 +85,7 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
     |Document parameter name     |  **newbookmark**       |  The name used to identify this binding in your code. This parameter is used to write a new bookmark entry.     |
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
     |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    |Partition key (optional)     |   leave blank      |  We can accept the default here.       |
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
      |Collection throughput (optional)     |   leave blank      |  We can accept the default here.       |
 
 9. Select **Save** to save all changes to this binding configuration.
