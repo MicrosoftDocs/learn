@@ -225,6 +225,11 @@
         "source_path": "learn-pr/azure/create-neural-network-with-dsvm/6-knowledge-check.md",
         "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/azure/tour-azure-services-and-features/index.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/tour-azure-portal/",
+        "redirect_document_id": false
     }
    ]
 }
