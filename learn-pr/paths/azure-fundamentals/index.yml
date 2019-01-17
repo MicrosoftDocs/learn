@@ -21,7 +21,8 @@ summary: |
     - Explore the breadth of services available in Azure including compute, network, storage and security
   
   Once you complete this learning path, you will have the necessary knowledge to take the [AZ900 Microsoft Azure Fundamentals Exam](https://www.microsoft.com/learning/exam-AZ-900.aspx).
-#prerequisites: None
+cardDescription: Interested in the cloud, but aren't quite sure what it can do for you? This path is the place to start.
+prerequisites: None
 iconUrl: /learn/achievements/azure-fundamentals.svg
 levels:
 - beginner
