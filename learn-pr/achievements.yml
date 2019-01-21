@@ -1,10 +1,10 @@
 ### YamlMime:Achievements
 achievements:
-- uid: learn.module-template.badge #sample achievement badge for module template.
-  type: badge
-  title: Module template
-  summary: Module template badge.
-  iconUrl: http://via.placeholder.com/120x120
+# - uid: learn.module-template.badge #sample achievement badge for module template.
+#  type: badge
+#  title: Module template
+#  summary: Module template badge.
+#  iconUrl: http://via.placeholder.com/120x120
 #- uid: learn.build-a-serverless-web-app.badge
 #  type: badge
 #  title: Build a serverless web app
