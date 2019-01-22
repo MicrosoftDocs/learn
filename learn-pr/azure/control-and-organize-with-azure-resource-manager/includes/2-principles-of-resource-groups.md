@@ -19,7 +19,7 @@ Resource groups exist to help manage and organize your Azure resources. By placi
 
 If you delete a resource group, all resources contained within are also deleted. Organizing resources by life cycle can be useful in non-production environments, where you might try an experiment, but then dispose of it when done. Resource groups make it easy to remove a set of resources at once.
 
-### Authorization 
+### Authorization
 
 Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can ease administration and limit access to allow only what is needed.
 
@@ -70,7 +70,7 @@ We don't have any resources in this resource group yet, so the list at the botto
 
 1. Click **+ Add** at the top or click the **Create resources**, either will work. This shows a panel with the marketplace.
 
-1. Search for **Virtual network**. The first result should be the virtual network resource. Click it, and on the subsequent screen click **Create**.
+1. Search for **Virtual network**. The first result should be the virtual network resource. Click it, and on the subsequent screen, ensure **Select a deployment model** is set to **Resource Manager** and click **Create**.
 
 1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the **msftlearn-core-infrastructure** resource group. Leave the defaults for all other options, and click **Create**.
 
