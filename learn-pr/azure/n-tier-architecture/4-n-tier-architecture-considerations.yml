@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: 'Deploy larger virtual machines to each tier.'
       isCorrect: false
-      incorrectExplanation: 'While increasing the size of virtual machines may improve performance, it does not miminize costs. As the load drops, the virtual machines remain the same size and your costs don not decrease.'
+      incorrectExplanation: 'While increasing the size of virtual machines may improve performance, it does not miminize costs. As the load drops, the virtual machines remain the same size and your costs do not decrease.'
     - content: 'Use autoscaling to handle fluctuations in load.'
       isCorrect: true
       correctExplanation: 'This is a good way to minimize your costs. As load increases or decreases, your compute resources can adjust with them, ensuring your costs are optimized to your load.'
