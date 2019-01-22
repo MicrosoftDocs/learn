@@ -1,4 +1,4 @@
-Just like your on-premise equipment costs, there are several elements that will affect your monthly costs when using Azure services. Let's look at a few of the primary factors including resource type, services, the user's location, and the billing zone.
+Just like your on-premises equipment costs, there are several elements that will affect your monthly costs when using Azure services. Let's look at a few of the primary factors including resource type, services, the user's location, and the billing zone.
 
 ### Resource type
 Costs are resource-specific, so the usage that a meter tracks and the number of meters associated with a resource depend on the resource type.
