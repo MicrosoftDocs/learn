@@ -9,7 +9,7 @@ Tags are name/value pairs of text data that you can apply to resources and resou
 - cost center
 - life cycle and automation (e.g. shutdown and startup of virtual machines).
 
- A resource can have up to 15 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags are not inherited from parent resources.
+A resource can have up to 15 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags are not inherited from parent resources. Not all resource types support tags, and tags cannot be applied to classic resources.
 
 Tags can be added and manipulated through the Azure portal, Azure CLI, Azure PowerShell, Resource Manager templates, and through the REST API. For example, to add a resource tag to a virtual network using the Azure CLI, you could use the following command:
 
