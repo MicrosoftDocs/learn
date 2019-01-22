@@ -66,7 +66,7 @@ Virtual networks can be segmented into one or more _subnets_. Subnets help you o
 
 Users interact with the web tier directly, so that VM has a public IP address along with a private IP address. Users don't interact with the application or data tiers, so these VMs each have a private IP address only.
 
-You can also keep your service or data tiers in your on-premise network, placing your web tier into the cloud, but keeping tight control over other aspects of your application. A _VPN gateway_ (or virtual network gateway), enables this scenario. It can provide a secure connection an Azure Virtual Network and an on-premises location over the internet.
+You can also keep your service or data tiers in your on-premises network, placing your web tier into the cloud, but keeping tight control over other aspects of your application. A _VPN gateway_ (or virtual network gateway), enables this scenario. It can provide a secure connection an Azure Virtual Network and an on-premises location over the internet.
 
 Azure manages the physical hardware for you. You configure virtual networks and gateways through software, which enables you to treat a virtual network just like your own network. You choose which networks your virtual network can reach, whether that's the public internet or other networks in the private IP address space.
 
