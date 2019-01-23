@@ -28,6 +28,7 @@ Communication between tiers should be in a top-down fashion. Each tier is allowe
 
 ## The three-tier architecture
 
+
 Of all N-tier architectures, a three-tier architecture is the most common. The responsibilities and names of each layer and tier vary by application and business, but a typical three-tier application has: a presentation tier, an application or middle tier, and a data tier. This is the most common N-tier style, and for the rest of this module we'll reference a three-tier model with each tier running a single layer of the application, and refer to them synonymously as tiers.
 
 ### Presentation tier

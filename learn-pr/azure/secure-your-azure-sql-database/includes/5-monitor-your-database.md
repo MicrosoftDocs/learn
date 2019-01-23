@@ -29,7 +29,7 @@ Now let's generate some audit records and take a look at what you can expect.
 1. Let's log back in to the database as the _ApplicationUser_ user.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U ApplicationUser -P <password> -N -l 30
+    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '<password>' -N -l 30
     ```
 
 1. Run the following query.

@@ -38,7 +38,7 @@ quiz:
     - content: "3"
       isCorrect: false
       explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
-      content: "4"
+    - content: "4"
       isCorrect: true
       explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
  
