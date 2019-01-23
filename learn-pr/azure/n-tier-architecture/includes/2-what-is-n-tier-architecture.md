@@ -6,7 +6,7 @@ Let's talk about what makes up the layers and tiers.
 
 Layers logically separate the application code that makes up an application. Each layer has a specific responsibility such as handling requests from users, running business logic, or handling the storage of data.
 
-By separating an application into these logical layers, we treat each layer independently. This makes the components of the application modular and allows us to more easily maintain the app. As well, we can optimize the application for each responsibility. The layer handling web requests focuses on its primary task: handling web requests. It doesn't need to be concerned with the storage of data or running business logic. Conversely, the data access layer focuses on optimizing communication to the data store, and disregards details about how the data is presented to the user. This concept of limiting focus on particular features is called *separation of concerns*.
+By separating an application into these logical layers, we treat each layer independently. This makes the components of the application modular and allows us to more easily maintain the app. We can optimize the application for each responsibility. The layer handling web requests focuses on its primary task: handling web requests. It doesn't need to be concerned with the storage of data or running business logic. Conversely, the data access layer focuses on optimizing communication to the data store, and disregards details about how the data is presented to the user. This concept of limiting focus on particular features is called *separation of concerns*.
 
 Here's a diagram that shows layers in a common N-tier architecture. Each layer handles one aspect of the application. The business layer manages communication between the user interface layer and the data access layer.
 
@@ -28,7 +28,7 @@ Communication between tiers should be in a top-down fashion. Each tier is allowe
 
 ## The three-tier architecture
 
-Of all N-tier architectures, a three-tier architecture is the most common. The responsibilities and names of each layer and tier vary by application and business, but a typical three-tier application has: a presentation tier, an application or middle tier, and a data tier. AS this is the most common N-tier style, for the rest of this module, we'll reference a three-tier model with each tier running a single layer of the application, and refer to them synonymously as tiers.
+Of all N-tier architectures, a three-tier architecture is the most common. The responsibilities and names of each layer and tier vary by application and business, but a typical three-tier application has: a presentation tier, an application or middle tier, and a data tier. This is the most common N-tier style, and for the rest of this module we'll reference a three-tier model with each tier running a single layer of the application, and refer to them synonymously as tiers.
 
 ### Presentation tier
 
