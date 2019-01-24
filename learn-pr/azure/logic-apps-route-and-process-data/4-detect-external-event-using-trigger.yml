@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.logic-apps-route-and-process-data.4-detect-external-event-using-trigger
+title: Detect an external event using a trigger
+
+metadata:
+  title: Detect an external event using a trigger
+  description: Detect an external event using a trigger
+  ms.date: 2/1/2019
+  author: marktap
+  ms.author: matapar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-detect-external-event-using-trigger)]
