@@ -1,27 +1,27 @@
-Implementing business processes is difficult because you need to make diverse products work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, etc. How do you integrate all these products?
+Implementing business processes is difficult because you need to make diverse products work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products?
 
-Azure Logic Apps give you pre-built components to connect to hundreds of services like these. You put the pieces together in any combination you need. For example, in the shoe-company scenario we want to monitor social media reaction to our new product so we will use a Logic App to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
+Azure Logic Apps gives you pre-built components to connect to hundreds of services. You put the pieces together in any combination you need. For example, in the shoe-company scenario we want to monitor social media reaction to our new product. We'll build a Logic App to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
 
-In this unit, we'll analyze a business process to get some intuition about how Azure Logic Apps work and the types of problems they help you solve. We will plan the sequence of steps needed to implement the process and map those steps to the pre-built components in Azure Logic Apps.
+In this unit, we'll analyze a business process to get some intuition about how Azure Logic Apps work and the types of problems they help you solve. We'll plan the sequence of steps needed to implement the process and map those steps to the pre-built components in Azure Logic Apps.
 
 ## What is a business process?
 
-A *business process* or *workflow* is a sequence of tasks that produce a specific outcome such as a product, a service, a piece of data, a decision, etc. For example, here are a few classic processes and their associated tasks:
+A *business process* or *workflow* is a sequence of tasks that produce a specific outcome such as a service, a piece of data, or a decision. For example, here are a few classic processes and their associated tasks:
 
 * **Expense approval**: submit an expense report, route to the appropriate manager for approval based on amount, notify employee of the result.
 * **Order processing**: accept a customer order, charge their credit card, send a confirmation, ship the product, send the tracking number.
 * **Bug tracking**: accept a bug report, analyze the severity and affected feature, add a new entry to your bug-tracking tool, send a notification to the correct developer.
 
-Notice that the definition of business process includes the word *sequence* which implies the tasks happen in a specific order. In the social-media monitoring scenario, the order is:
+Notice that the definition of business process includes the word *sequence*, which implies the tasks happen in a specific order. In the social-media monitoring scenario, the order is:
 
 1. Detect when someone mentions our product on Twitter
 1. Analyze the sentiment of the tweet
 1. Save a link to positive tweets
 1. Send an email to customer service for negative tweets.
 
-The fact that processes are ordered means that they are often described using a flowchart. For example, the following illustration shows the flowchart for the social-media monitor process.
+The fact that processes are ordered means that they're often described using a flowchart. For example, the following illustration shows the flowchart for the social-media monitor process.
 
-![An illustration showing how the fictional shoe company would process tweets written about their product. A link to the posting is retained in a database and the content analyzed to determine if the article was positive or negative.](../media-drafts/2-social-media-monitor-workflow.png)
+![An illustration showing a detailed flowchart for the way the fictional shoe company processes tweets written about their product.](../media-drafts/2-social-media-monitor-workflow.png)
 
 Once you have the process specification complete, it's time to think about your implementation options.
 
@@ -31,22 +31,22 @@ Azure Logic Apps is a cloud service that automates the execution of your busines
 
 ![An illustration showing three main steps to define and run a Logic App: select the components you need, use the Logic Apps Designer tool to arrange them, then save your work.](../media-drafts/2-app-design-process.png)
 
-The power of Logic Apps comes from the diversity of pre-built components and their ability to work together. Let's think again about the variety of tasks in your business processes. You store information in databases, post messages, send email, work with files, sign documents, and much more. Within each of these categories, you have a lot of options for the service that works best for your situation:
+The power of Logic Apps comes from the diversity of pre-built components and their ability to work together. Let's think again about the variety of tasks in your business processes. You store information in databases, post messages, send email, work with files, sign documents, and much more. Within each of these categories, you have many options for the service that works best for your situation:
 
-* **Database**: CosmosDB, MySQL, Oracle, SQL Server, etc.
-* **Social media**: Twitter, Facebook, Instagram, Pinterest, YouTube, Vimeo, etc.
-* **Email**: Gmail, Office 365 Outlook, etc.
-* **Files**: Dropbox, Box, OneDrive, SharePoint, Azure Storage, etc.
-* **Messaging**: Slack, HipChat, Teams, etc.
-* **Repository**: Bitbucket, GitHub, etc.
+* **Database**: CosmosDB, MySQL, Oracle, SQL Server
+* **Social media**: Twitter, Facebook, Instagram, Pinterest, YouTube, Vimeo
+* **Email**: Gmail, Office 365 Outlook
+* **Files**: Dropbox, Box, OneDrive, SharePoint, Azure Storage
+* **Messaging**: Slack, HipChat, Teams
+* **Repository**: Bitbucket, GitHub
 
-Logic Apps provides pre-built components to let you interact with hundreds of services like these.
+Logic Apps provides pre-built components to let you interact with hundreds of services.
 
 ## What is a connector?
 
 A *connector* is a Logic Apps component that provides an interface to an external service. For example, the Twitter connector gives your Logic App access to Twitter while the Office 365 Outlook connector lets you manage your email, calendar, and contacts.
 
-Connectors use an underlying REST or SOAP API to do their work. When you use a connector in your Logic App, the connector calls the functions in the underlying API for you. The following illustration shows a few of the operations supported by the Twitter connector and its use of the Twitter REST API.
+Connectors use an underlying REST or SOAP API to do their work. When you use a connector in your Logic App, the connector calls the functions in the underlying API for you. The following illustration shows the Twitter connector and its use of the Twitter REST API.
 
 ![An illustration showing the Twitter connector calling methods in the Twitter API.](../media-drafts/2-twitter-connector.png)
 
@@ -55,13 +55,13 @@ Connectors use an underlying REST or SOAP API to do their work. When you use a c
 
 ## What are triggers and actions?
 
-Think about the different pieces of a business process. We know that a business process is the combination of steps in a specific pattern to accomplish a goal; however, not all the steps are of the same type. For example, in our social-media monitor scenario we have three distinct types: we *trigger* the process when a new tweet is posted, we perform several *actions* (detect the sentiment, store in a database, and send an email), and we make a *control* decision based on the sentiment score.
+Think about the different pieces of a business process. We know that a business process is the combination of steps in a specific pattern to accomplish a goal; however, not all the steps are of the same type. For example, in our social-media monitor scenario we have three distinct types: we *trigger* the process when a new tweet is posted, we do several *actions* like detect the sentiment, and we make a *control* decision based on the sentiment score.
 
 Let's be more formal about the definitions for trigger and action:
 
-* A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when the conditions are right; for example, when a timer expires or data becomes available.
+* A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when the conditions are right. For example, when a timer expires or data becomes available.
 
-* An *action* is an operation that performs one of the tasks in your business process. Actions run when a trigger activates or another action completes.
+* An *action* is an operation that executes one of the tasks in your business process. Actions run when a trigger activates or another action completes.
 
 Triggers and actions are packaged inside connectors. Let's look at a few examples.
 
@@ -69,11 +69,11 @@ The Twitter connector lets your Logic App interact with Twitter. The social-medi
 
 ![An illustration showing the triggers and actions available in the Twitter connector.](../media-drafts/2-twitter-connector-details.png)
 
-Next, we have the Dropbox connector. Suppose you were working with a small team on a project that stored its shared data in Dropbox. You could build a workflow that detected when any of the files in your Dropbox account were modified and send a notification to the other team members. The following illustration shows the Dropbox connector with its triggers and actions.
+Next, we have the Dropbox connector. Suppose you were working with a small team on a project that stored its shared data in Dropbox. You could build a workflow that detects when someone modifies any of your files and sends a notification to the other team members. The following illustration shows the Dropbox connector with its triggers and actions.
 
-![An illustration showing that the Dropbox connector provides triggers to notify you when files are created or modified and several actions to manage files.](../media-drafts/2-dropbox-connector-details.png)
+![An illustration showing that the Dropbox connector. It provides triggers to notify you when files are created or modified and several actions to manage files.](../media-drafts/2-dropbox-connector-details.png)
 
-Finally, let's look at the Twilio connector. Most connectors offer both triggers and actions; however, this connector shows us that's not always true since it only has actions. This connector would fit in any workflow that used text messages for notifications. For example, you could use it as the notification piece in the previous Dropbox example so team members would receive a text message whenever a shared file was modified. The following illustration shows the Twilio connector and its actions.
+Finally, let's look at the Twilio connector. Most connectors offer both triggers and actions; however, this connector shows us that's not always true since it only has actions. This connector would fit in any workflow that used text messages for notifications. For example, you could use it in the previous Dropbox example to send team members a text message whenever a shared file changes. The following illustration shows the Twilio connector and its actions.
 
 ![An illustration showing that the Twilio connector provides actions to send and retrieve text messages but does not include any triggers.](../media-drafts/2-twilio-connector-details.png)
 
@@ -85,38 +85,43 @@ Triggers and actions are the building blocks of Logic Apps. An app can only have
 
 ## How do triggers and actions work together?
 
-Triggers and actions are essentially function calls to an underlying API operation. This means they have inputs and outputs. For example, to use the "When a new tweet is posted" Twitter trigger, you input a search string and get back the tweets that contain that string. The "Detect sentiment" action takes a string as input and returns a floating-point number. The following illustration shows these two operations.
+Triggers and actions are essentially function calls to an underlying API operation. Each operation has inputs and outputs. For example, the "When a new tweet is posted" Twitter trigger takes in a search string and returns the tweets that contain that string. The "Detect sentiment" action takes a string as input and returns a floating-point number. The following illustration shows these two operations.
 
 ![An illustration of the input and output of the "When a new tweet is posted" trigger and the "Detect sentiment" action.](../media-drafts/2-inputs-and-outputs.png)
 
-Logic Apps automatically places the return values into special variables that are available throughout the rest of the operations. This lets you pass the result from one operation as input to the next one. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all remaining steps.
+Logic Apps automatically places the return values into special variables that are available throughout the rest of the operations. These variables let you pass the results from one operation as input to the next operation. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all of the following steps.
 
 ![An illustration showing how the results of all preceding operations are available to subsequent operations.](../media-drafts/2-data-flow.png)
 
 ## What are control actions?
 
-Most business processes need to perform different actions based on the data being processed. For example, an expense report might be routed to a different manager based on the amount. In the social-media monitor app, we need to branch based on the sentiment score of the tweet. The following illustration shows the flowchart for the social-media monitor app with the control logic highlighted.
+Most business processes need to do different actions based on the data being processed. For example, an expense report might be routed to a different manager based on the amount. In the social-media monitor app, we need to branch based on the sentiment score of the tweet. The following illustration shows the flowchart for the social-media monitor app with the control logic highlighted.
 
 ![An illustration showing how the social-media monitor app branches based on the sentiment of the tweet.](../media-drafts/2-social-media-monitor-control-logic.png)
 
-*Control actions* are special actions built-in to Logic Apps that provides conditional logic and control constructs. They include simple Boolean conditional statements, complex Boolean expressions using *AND* and *OR*, *switch* statements, *foreach* loops, *until* loops, and unconditional *branch* instructions.
+*Control actions* are special actions built-in to Logic Apps that provides these control constructs:
 
-The following illustration shows the use of a control action in the social-media monitoring application.
+* *Condition* statements controlled by a Boolean expression
+* *Switch* statements
+* *For each* and *Until* loops
+* Unconditional *Branch* instructions.
+
+The following illustration shows the use of a *Condition* statement in the social-media monitoring application.
 
 ![An illustration showing the Logic Apps control action used to branch the social-media monitor app based on the sentiment of the tweet.](../media-drafts/2-social-media-monitor-control-action.png)
 
 ## How to create a Logic App for your business process
 
-The first step is to analyze your business process. Ideally, you will identify the tasks and create a flowchart to capture the required order of the tasks. The following illustration shows the flowchart for the social-media monitor process that we saw earlier.
+The first step is to analyze your business process. Ideally, you'll identify the tasks and create a flowchart to capture the required order of the tasks. The following illustration shows the flowchart for the social-media monitor process that we saw earlier.
 
-![An illustration showing how the fictional shoe company would process tweets written about their product. A link to the posting is retained in a database and the content analyzed to determine if the article was positive or negative.](../media-drafts/2-social-media-monitor-workflow.png)
+![An illustration showing how the fictional shoe company would process tweets written about their product. A link to the posting is saved in a database and the content analyzed to determine if the article was positive or negative.](../media-drafts/2-social-media-monitor-workflow.png)
 
-Next, you will map each task in your flowchart to Logic Apps trigger and actions. The following illustration shows the connectors we'd use in the social-media app with the relevant triggers and actions highlighted.
+Next, you'll map each task in your flowchart to Logic Apps trigger and actions. The following illustration shows the connectors we'd use in the social-media app with the relevant triggers and actions highlighted.
 
-![An illustration showing the Twitter connector, the Text Analytics connector, the SQL Server connector, the Office 365 Outlook connector, and the list of control actions. The trigger and actions used in the social-media monitor app are highlighted.](../media-drafts/2-social-media-design-process.png)
+![An illustration showing the operations available in the connectors used by the social-media monitor app. Specifically, it shows the Twitter connector, the Text Analytics connector, the SQL Server connector, and the Office 365 Outlook connector. In addition, the image includes a graphical representation for each of the control actions. The trigger and actions used in the social-media monitor app are highlighted.](../media-drafts/2-social-media-design-process.png)
 
-Finally, you will use the graphical Logic Apps Designer to arrange the trigger, actions, and control actions. The following screenshot shows the Designer with the completed application.
+Finally, you'll use the graphical Logic Apps Designer to arrange the trigger, actions, and control actions. The following screenshot shows the Designer with the completed application.
 
 ![A screenshot showing the Logic Apps Designer containing the completed social-media monitor app. The app begins with the Twitter trigger. It then has three actions: detect sentiment, insert row, and send email. A control action determines whether the insert row or send email action executes based on the score of the detect sentiment action.](../media-drafts/2-social-media-app-designer-view.png)
 
-When you select the "Save" button in the Designer your app will be deployed and will run automatically whenever the trigger activates.
+When you select the "Save" button, your app will be live and will run automatically whenever the trigger activates.
