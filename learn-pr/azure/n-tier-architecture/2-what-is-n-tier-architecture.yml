@@ -19,22 +19,22 @@ quiz:
     choices:
     - content: 'Presentation tier'
       isCorrect: false
-      incorrectExplanation: 'Responsibilities of this tier should focus on how the application is served to the user.'
+      explanation: 'Responsibilities of this tier should focus on how the application is served to the user.'
     - content: 'Application tier'
       isCorrect: true
-      correctExplanation: 'API calls to other systems are best located in the application tier, where returned data can be easily integrated with new or existing business logic.'
+      explanation: 'API calls to other systems are best located in the application tier, where returned data can be easily integrated with new or existing business logic.'
     - content: 'Data tier'
       isCorrect: false
-      incorrectExplanation: 'The data tier focuses on the storage of data. Adding integration with an API is not best placed on this tier of the application.'
+      explanation: 'The data tier focuses on the storage of data. Adding integration with an API is not best placed on this tier of the application.'
 
   - content: 'On which layer is it acceptable to allow access to users?'
     choices:
     - content: 'Presentation tier'
       isCorrect: true
-      correctExplanation: 'This tier handles the interaction with the end user, and should be the tier accessed by the end user. '
+      explanation: 'This tier handles the interaction with the end user, and should be the tier accessed by the end user. '
     - content: 'Application tier'
       isCorrect: false
-      incorrectExplanation: 'This tier contains business logic, data processing, and other potentially sensitive details and should not be exposed to end users. '
+      explanation: 'This tier contains business logic, data processing, and other potentially sensitive details and should not be exposed to end users. '
     - content: 'Data tier'
       isCorrect: false
-      incorrectExplanation: 'The data tier handles the storage of data and should never be exposed directly to users. Consumers of data should use capabilities provided by higher tiers.'
+      explanation: 'The data tier handles the storage of data and should never be exposed directly to users. Consumers of data should use capabilities provided by higher tiers.'
