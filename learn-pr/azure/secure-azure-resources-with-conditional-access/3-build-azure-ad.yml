@@ -11,9 +11,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Build your directory
-#TODO: Update labID
-labId: 46467
-labModal: true
+#labId: 46467
+#labModal: true
 durationInMinutes: 5
 content: |
   [!include[](includes/3-build-azure-ad.md)]
