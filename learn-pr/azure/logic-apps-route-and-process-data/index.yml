@@ -18,7 +18,7 @@ abstract: |
   - "Integrate Azure services into your workflow"
 prerequisites: |
   - Experience creating and managing resources using the Azure portal at the beginner level
-  - Familiarity with logical constructs like conditional statements and loops
+  - Familiarity with programming concepts like conditional statements and loops
 iconUrl: http://via.placeholder.com/120x120
 badge:
   uid: learn.logic-apps-route-and-process-data.badge

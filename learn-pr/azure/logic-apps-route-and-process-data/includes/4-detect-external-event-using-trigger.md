@@ -1,4 +1,4 @@
-A trigger gets your Logic App started. Your job is to find the best one and configure it so your app launches when conditions are right without wasting time or money. For example, in the shoe-company scenario we would use a Twitter trigger to launch our app when tweets containing our product name are available.
+You need a trigger to launch your Logic App. Your job is to find the best one and configure it so your app launches when conditions are right without wasting time or money. For example, in the shoe-company scenario we would use a Twitter trigger to launch our app when tweets containing our product name are available.
 
 In this unit, we'll examine the types of triggers and the strengths and weaknesses of the two most common options. We'll see how to create a Logic App using the Azure portal and how to add a trigger using the Logic Apps Designer.
 
@@ -6,7 +6,7 @@ In this unit, we'll examine the types of triggers and the strengths and weakness
 
 Think about the different conditions that businesses might use to launch their Logic Apps. Most of the examples we've seen are in the *data becomes available* category. For example, a new tweet is posted, a new row is inserted into a database, a new email arrives, or a new file is uploaded to your cloud storage. This category doesn't cover all cases though. Suppose you wanted to launch your Logic App every Saturday at midnight? This trigger would be great for administrative tasks like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing. Finally, suppose you wanted total control? Imagine you need to launch your Logic App using code in your web or mobile applications? This operation is supported by the built-in *manual request* trigger.
 
-This discussion shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use polling and some rely on the external service to push a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
+This discussion shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
 
 ![An illustration showing the four types of triggers: polling, push, recurrence, and manual.](../media-drafts/4-trigger-types.png)
 
@@ -39,11 +39,11 @@ If push triggers respond more quickly and cost less than polling triggers, then 
 
 ## Trigger parameters and return values
 
-Think about how Twitter works. At any given moment, there could be millions of new tweets. Our goal is to retrieve only the tweets that are about our product. How do we tell our Logic App to only look for tweets that contain our product name? Once it finds matching tweets, how do we access the tweets it detected? The answers to these questions are trigger parameters and trigger return values.
+You can think of trigger operations as function calls that have parameters and return values.
 
-Trigger *parameters* are values that we give to the trigger for it to use during execution. Some parameters are required, and some are optional. For example, the Twitter "When a new tweet is posted" trigger has a required parameter called **Search text**. The SQL Server "When an item is created" trigger has one required parameter called **Table name** and several optional parameters like **Order By** and **Select Query**.
+Trigger *parameters* let us configure the operation. For example, the Twitter "When a new tweet is posted" trigger has a parameter called **Search text** that it uses to select matching tweets for us. Some operations have a mix of required and optional parameters. For example, the SQL Server "When an item is created" trigger has one required parameter named **Table name** and several optional parameters like **Order By** and **Select Query**.
 
-Trigger *return values* are data values that your Logic App receives after the trigger has executed. Trigger return values can either be single values or collections. For example, the Bitbucket "When a pull request is merged" trigger returns a single object that tells you the identity of the **PR**, the **Repository**, and the **Actor** who approved the merge. The Twitter "When a new tweet is posted" trigger returns an array of **TweetModel** objects, each containing values like **Tweet text**, **User name**, **Location**, and **Followers count**. The following illustration shows a collection being returned from a trigger.
+Trigger *return values* are the results of the operation. For example, the Bitbucket connector has a "When a pull request is merged" trigger that returns things like the identity of the **Repository** and the **Actor** who approved the merge. Most triggers actually return a collection instead of a single value. For example, the Twitter "When a new tweet is posted" trigger returns an array of **TweetModel** objects, each containing values like **Tweet text**, **User name**, and **Followers count**. The following illustration shows a collection being returned from a trigger.
 
 ![An illustration showing the Twitter trigger interacting with Twitter. The trigger sends the search text to Twitter and Twitter returns an array of objects. Each object in the array contains information about one of the matching tweets.](../media-drafts/4-trigger-returning-a-collection.png)
 
