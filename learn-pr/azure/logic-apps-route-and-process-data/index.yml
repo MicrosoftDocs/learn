@@ -20,6 +20,8 @@ prerequisites: |
   - Experience creating and managing resources using the Azure portal at the beginner level
   - Familiarity with logical constructs like conditional statements and loops
 iconUrl: http://via.placeholder.com/120x120
+badge:
+  uid: learn.logic-apps-route-and-process-data.badge
 levels: 
 - beginner
 roles: 
@@ -34,4 +36,3 @@ units:
 - learn.logic-apps-route-and-process-data.3-knowledge-check
 - learn.logic-apps-route-and-process-data.4-detect-external-event-using-trigger
 - learn.logic-apps-route-and-process-data.5-EX-create-social-media-tracker
-achievement: learn.logic-apps-route-and-process-data.badge
