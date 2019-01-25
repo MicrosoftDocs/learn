@@ -42,13 +42,13 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 
 1. On the left blade, select **+ Create a resource**
 
-1. Click the plus sign to add a new resource group. Type **Resource Group** in the search box and hit Enter.
+1. Type **Resource Group** in the search box and hit Enter.
 
 1. The first item in the list should be the resource group resource. Select it and then click the **Create** button.
 
     ![Search results searching the marketplace for a new resource group](../media/2-create-search-resource-group.png)
 
-1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**. Select the subscription it should reside in, and select the region for the resource group. Click **Create** to create the resource group.
+1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**. Select the subscription it should reside in, and select the region for the resource group. Click **Review + Create** and then **Create** to create the resource group.
 
     ![Fill in the required fields to create the resource group](../media/2-create-resource-group.png)
 
@@ -72,9 +72,9 @@ We don't have any resources in this resource group yet, so the list at the botto
 
 1. Search for **Virtual network**. The first result should be the virtual network resource. Click it, and on the subsequent screen, ensure **Select a deployment model** is set to **Resource Manager** and click **Create**.
 
-1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the **msftlearn-core-infrastructure** resource group. Leave the defaults for all other options, and click **Create**.
+1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the resource group that you created earlier. Enter **192.168.0.0/24** for both the **Address space** and subnet **Address range**. Leave the defaults for all other options, and click **Create**.
 
-1. Repeat the steps again to create one more VNet. Name it **msftlearn-vnet2** and make sure to place it in the **msftlearn-core-infrastructure** resource group.
+1. Repeat the steps again to create one more VNet. Name it **msftlearn-vnet2**, and make sure to place it in the resource group that you created earlier.
 
 1. Go back to your resource group, and on the **Overview** panel you should see the two VNets you created.
 
