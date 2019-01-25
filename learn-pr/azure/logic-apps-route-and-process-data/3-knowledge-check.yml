@@ -47,12 +47,12 @@ quiz:
 
   - content: "Examine the illustration of the email-attachment processing workflow to answer this question. How many blobs would be created from an email with six attachments?"
     choices:
-    - content: "7"
-      isCorrect: true 
-      explanation: "One blob is created for the body of the email and one for each attachment. "
     - content: "6"
       isCorrect: false
       explanation: "Six blobs are created for the six attachments. One blob is created for the email itself."
+    - content: "7"
+      isCorrect: true 
+      explanation: "One blob is created for the body of the email and one for each attachment."
     - content: "8"
       isCorrect: false
       explanation: "Six blobs are created for the six attachments. One blob is created for the email itself."
