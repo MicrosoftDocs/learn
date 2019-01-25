@@ -1,4 +1,4 @@
-The questions in this Knowledge Check relate to the three sample workflows shown in the following illustrations.
+The questions in this Knowledge Check relate to the workflows shown in the following illustrations.
 
 |Social media workflow   |Book approval workflow   |Email attachment processing workflow|
 |----------|-----------|------------|

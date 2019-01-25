@@ -35,13 +35,13 @@ quiz:
 
   - content: "Examine the illustration of the book-approval workflow to answer this question. Suppose a book publisher has a specific process for handling proposal submissions. Authors upload their proposals to Dropbox and are sent a confirmation text message. The editor receives an invitation to review and decide whether to approve, ask for a rework, or reject the proposal. Given the actions shown in the three branches of the *switch* statement, which order should the **Approve**, **Rework**, and **Reject** values appear in the *switch* statement?"
     choices:
-    - content: "1. Rework 2. Approve 3. Reject"
+    - content: "1 Rework, 2 Approve, 3 Reject"
       isCorrect: true
       explanation: "It is sensible for **Rework** to leave the file in place, **Approve** to move the file to the *Approved* folder, and **Reject** to delete the file."
-    - content: "1. Rework 2. Reject 3 Approve"
+    - content: "1 Rework, 2 Reject, 3 Approve"
       isCorrect: false
       explanation: "Rejected proposals should not be moved to the *Approved* folder."
-    - content: "1. Approve 2. Reject 3. Rework"
+    - content: "1 Approve, 2 Reject, 3 Rework"
       isCorrect: false
       explanation: "Approved proposals should be moved to the *Approved* folder while rejected proposals should not."
 
