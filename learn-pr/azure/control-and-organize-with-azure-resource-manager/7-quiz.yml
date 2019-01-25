@@ -17,7 +17,7 @@ quiz:
   - content: 'Tags can be applied to any type of resource on Azure'
     choices:
     - content: 'True'
-      explanation: 'Not all resources support tags, so you will wan to confirm that your resource type supports them.'
+      explanation: 'Not all resources support tags, so you will want to confirm that your resource type supports them.'
       isCorrect: false
     - content: 'False'
       isCorrect: true
