@@ -32,7 +32,7 @@ When you build solutions using cloud computing, you can choose how you want work
 
 #### What is serverless computing?
 
-**Serverless computing** is another hot trend. Serverless computing lets you run application code without creating, configuring or maintaing a server. Serverless computing enables you to focus solely on how your application behaves. Serverless computing is ideal for automation tasks, as an example, you can build a serverless process that automatically sends an email confirmation after a customer makes an online purchase.
+**Serverless computing** is another hot trend. Serverless computing lets you run application code without creating, configuring or maintaining a server. Serverless computing enables you to focus solely on how your application behaves. Serverless computing is ideal for automation tasks, as an example, you can build a serverless process that automatically sends an email confirmation after a customer makes an online purchase.
 
 :::row:::
   :::column span="3":::
