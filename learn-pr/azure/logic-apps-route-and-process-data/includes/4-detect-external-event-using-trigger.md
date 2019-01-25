@@ -1,10 +1,16 @@
-You need a trigger to launch your Logic App. Your job is to find the best one and configure it so your app launches when conditions are right without wasting time or money. For example, in the shoe-company scenario we would use a Twitter trigger to launch our app when tweets containing our product name are available.
+You need a trigger to launch your Logic App. First, you need to find the best one. Then you need to configure it so it runs your app correctly without wasting time or money. For example, in the shoe-company scenario we would use a Twitter trigger to launch our app when tweets containing our product name are available.
 
 In this unit, we'll examine the types of triggers and the strengths and weaknesses of the two most common options. We'll see how to create a Logic App using the Azure portal and how to add a trigger using the Logic Apps Designer.
 
 ## Trigger types
 
-Think about the different conditions that businesses might use to launch their Logic Apps. Most of the examples we've seen are in the *data becomes available* category. For example, a new tweet is posted, a new row is inserted into a database, a new email arrives, or a new file is uploaded to your cloud storage. This category doesn't cover all cases though. Suppose you wanted to launch your Logic App every Saturday at midnight? This trigger would be great for administrative tasks like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing. Finally, suppose you wanted total control? Imagine you need to launch your Logic App using code in your web or mobile applications? This operation is supported by the built-in *manual request* trigger.
+Think about the different conditions that businesses might use to launch their Logic Apps.
+
+Most of the examples we've seen are in the *data becomes available* category. For example, a new tweet is posted, a new row is inserted into a database, a new email arrives, or a new file is uploaded to your cloud storage. This category doesn't cover all cases though.
+
+Suppose you wanted to launch your Logic App every Saturday at midnight? This trigger would be great for administrative tasks like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing.
+
+There's one more case to consider: suppose you wanted total control? Imagine you need to launch your Logic App using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this.
 
 This discussion shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
 
@@ -14,11 +20,11 @@ In this module, we're going to focus on the *data becomes available* style of tr
 
 ## What is a polling trigger?
 
-A *polling trigger* checks an external service for new data at a specified interval. For example, the trigger that looks for new posts in an RSS feed is implemented using polling.
+A *polling trigger* periodically checks an external service for new data. For example, the trigger that looks for new posts in an RSS feed is implemented using polling.
 
-When you create a polling trigger, you must provide a *Frequency* and an *Interval* to specify how often the trigger will run. The frequency is the unit of measurement and has values like *Second*, *Minute*, and *Hour*. Interval is a number that represents how often to execute with respect to the frequency. For example, a polling trigger with a frequency of *Minute* and an interval of *5* would run every five minutes.
+When you create a polling trigger, you set the *Frequency* and an *Interval* to control how often the trigger will run. The frequency is the unit of measurement and has values like *Second*, *Minute*, and *Hour*. Interval is a number that represents how often to execute. For example, a polling trigger with a frequency of *Minute* and an interval of *5* would run every five minutes.
 
-Polling triggers force you to make a choice between how much they cost and how quickly they respond to new data. The following illustration that shows the gap between when new data becomes available and when that data is detected by the app.
+Polling triggers force you to make a choice between how much they cost and how quickly they respond to new data. There is often a delay between when new data becomes available and when it is detected by the app. The following illustration shows the issue.
 
 ![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at ten minutes.](../media-drafts/4-polling-trigger.png)
 
@@ -26,12 +32,12 @@ In the worst case, the potential delay for detecting new data is equal to the po
 
 ## What is a push trigger?
 
-A *push trigger* subscribes to an event offered by the external service to receive a notification immediately when data is available. For example, the trigger that detects when a message is added to an Azure Service Bus queue is a push trigger.
+A *push trigger* subscribes to an event offered by the external service to to get notified immediately when data is available. For example, the trigger that detects when a message is added to an Azure Service Bus queue is a push trigger.
 
 > [!NOTE]
 > Push triggers are implemented using Webhooks. The Logic Apps infrastructure generates a callback URL for you and registers it with the external service. This registration happens when you first create your app and again when you make changes to your app's configuration. Similarly, Logic Apps de-register the callback for you as needed; for example, if you disable or delete your app.
 
-The nice thing about push triggers is that they don't incur any costs polling for data when there's none available. They also respond immediately when new data is ready. The following illustration shows how there's no delay between the point when the data is available and the time when the Logic App becomes aware of the new data.
+The nice thing about push triggers is that they don't incur any costs polling for data when none is available. They also respond immediately when new data is ready. The following illustration shows this immediate response.
 
 ![An illustration showing a timeline with a marker indicating when new data becomes available. A push trigger notifies the Logic App immediately when the data is ready.](../media-drafts/4-push-trigger.png)
 
@@ -41,9 +47,9 @@ If push triggers respond more quickly and cost less than polling triggers, then 
 
 You can think of trigger operations as function calls that have parameters and return values.
 
-Trigger *parameters* let us configure the operation. For example, the Twitter "When a new tweet is posted" trigger has a parameter called **Search text** that it uses to select matching tweets for us. Some operations have a mix of required and optional parameters. For example, the SQL Server "When an item is created" trigger has one required parameter named **Table name** and several optional parameters like **Order By** and **Select Query**.
+Trigger *parameters* let us configure the operation. The Twitter "When a new tweet is posted" trigger has a parameter called **Search text** that it uses to select matching tweets for us. Some operations have a mix of required and optional parameters. The SQL Server "When an item is created" trigger has one required parameter named **Table name** and several optional parameters like **Order By** and **Select Query**.
 
-Trigger *return values* are the results of the operation. For example, the Bitbucket connector has a "When a pull request is merged" trigger that returns things like the identity of the **Repository** and the **Actor** who approved the merge. Most triggers actually return a collection instead of a single value. For example, the Twitter "When a new tweet is posted" trigger returns an array of **TweetModel** objects, each containing values like **Tweet text**, **User name**, and **Followers count**. The following illustration shows a collection being returned from a trigger.
+Trigger *return values* are the results of the operation. The Bitbucket connector has a "When a pull request is merged" trigger. The trigger returns an object containing things like the identity of the **Repository** and the **Actor** who approved the merge. Most triggers actually return a collection instead of a single object. The Twitter "When a new tweet is posted" trigger returns an array of **TweetModel** objects. Each object contains values like the **Tweet text**, **User name**, and **Followers count**. The following illustration shows a collection being returned from a trigger.
 
 ![An illustration showing the Twitter trigger interacting with Twitter. The trigger sends the search text to Twitter and Twitter returns an array of objects. Each object in the array contains information about one of the matching tweets.](../media-drafts/4-trigger-returning-a-collection.png)
 
@@ -62,7 +68,7 @@ You can use the Azure portal to create a Logic App. You select the **Logic App**
 
 The Logic Apps team has created several *templates* for common applications types. For example, there are templates for apps like "Post to Slack if a new tweet matches with some hashtag" and "Get daily reminders emailed to you".
 
-When you first navigate to your newly deployed Logic App, you'll find a getting-started page that can add a common trigger to your app or generate an entire app for you from one of the templates. If any of these templates matches what you're working on, they can save you some time in getting your app set up. To do all the work yourself, there's also a **Blank Logic App** template.
+When you first navigate to your newly deployed Logic App, you'll find a getting-started page. This page can add a common trigger to your app or generate an entire app for you from one of the templates. If any of these templates matches what you're working on, they can save you some time in getting your app set up. To do all the work yourself, there's also a **Blank Logic App** template.
 
 After you select a starting template, you'll automatically navigate to the Logic Apps Designer.
 
