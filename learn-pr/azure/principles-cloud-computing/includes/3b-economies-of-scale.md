@@ -10,7 +10,7 @@ Cloud providers such as Microsoft, Google, and Amazon are large businesses able 
   :::column:::
 :::row-end:::
 
-This savings is apparent to end users in a number of ways, one of which is the ability to acquire hardware at a lower cost than if a single user or smaller business were purchasing it. Cloud providers can also make deals with local governments and utilities to get tax savings, lower pricing on power, cooling, and high-speed network connectivity between sites.
+These savings are apparent to end users in a number of ways, one of which is the ability to acquire hardware at a lower cost than if a single user or smaller business were purchasing it. Cloud providers can also make deals with local governments and utilities to get tax savings, lower pricing on power, cooling, and high-speed network connectivity between sites.
 
 They are then able to pass on these benefits to end users in the form of lower prices than what you could achieve on your own.
 
