@@ -12,10 +12,10 @@ title: "Route and process data automatically using Logic Apps"
 summary: "Define a workflow using built-in triggers, actions, and conditional operators. Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
 abstract: |
   In this module, you will:
-  - "Construct a workflow model that will solve your business problem"
-  - "Launch your Logic App in response to an external event"
-  - "Apply conditional logic to filter data and select a processing path"
-  - "Integrate Azure services into your workflow"
+  - Construct a workflow model that will solve your business problem
+  - Launch your Logic App in response to an external event
+  - Apply conditional logic to filter data and select a processing path
+  - Integrate Azure services into your workflow
 prerequisites: |
   - Experience creating and managing resources using the Azure portal at the beginner level
   - Familiarity with programming concepts like conditional statements and loops
