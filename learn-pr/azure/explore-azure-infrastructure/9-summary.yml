@@ -24,7 +24,7 @@ quiz:
     - content: 'False'
       isCorrect: true
       explanation: "Correct. Azure organizes infrastructure around _regions_ which include multiple datacenters. You can't select a specific datacenter, but you can pick the region you want resources deployed into."
-  - content: "True or False. Every region has an availbility zone."
+  - content: "True or False. Every region has an availability zone."
     choices:
     - content: 'True'
       isCorrect: false
