@@ -88,7 +88,9 @@ The following illustration shows Azure Files being used to share data between tw
     :::column span="3":::  
 **Azure Queue**
 
-Azure Queue storage is a service for storing large numbers of messages that can be accessed from anywhere in the world. To put it in perspective, a single queue message is up to 64 KB in size, and a queue can contain millions of messages.
+Azure Queue storage is a service for storing large numbers of messages that can be accessed from anywhere in the world.
+
+Azure Queue Storage can be used to help build flexible applications and separate functions for better durability across large workloads. When application components are decoupled, they can scale independently. Queue storage provides asynchronous message queueing for communication between application components, whether they are running in the cloud, on the desktop, on-premises, or on mobile devices.
 
 Typically, there are one or more sender components and one or more receiver components. Sender components add messages to the queue, while receiver components retrieve messages from the front of the queue for processing. The following illustration shows multiple sender applications adding messages to the Azure Queue and one receiver application retrieving the messages.
 
