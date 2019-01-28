@@ -21,4 +21,5 @@ products:
 - azure
 units:
 - learn.gather-metrics-blob-storage.1-introduction
-achievement: learn.gather-metrics-blob-storage.badge
+badge:
+  uid: learn.gather-metrics-blob-storage.badge
