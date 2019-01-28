@@ -18,7 +18,6 @@ content: |
 
 quiz:
 
-  title: Knowledge check
   questions:
   
   - content: "Examine the illustration of the social-media workflow to answer this question. What would be the outcome of the workflow if a tweet was rated with a sentiment score of exactly 0.7?"
