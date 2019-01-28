@@ -21,4 +21,5 @@ products:
 - azure
 units:
 - learn.access-blob-storage-metrics-from-code.1-introduction
-achievement: learn.access-blob-storage-metrics-from-code.badge
+badge:
+  uid: learn.access-blob-storage-metrics-from-code.badge
