@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-infrastructure.8-improve-app-slas
+title: Improve your app reliability
+metadata:
+  title: Improve your app reliability - Learn
+  description: Improve your app reliability - Learn
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-improve-app-slas.md)]

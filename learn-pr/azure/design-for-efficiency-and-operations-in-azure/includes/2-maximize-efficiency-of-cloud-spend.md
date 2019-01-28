@@ -44,7 +44,7 @@ Adding some organization to your resources can go a long way and can really aid 
 
 ## Optimizing IaaS costs
 
-For organizations using virtual machines, the cost associated with virtual machines is often the biggest portion of spend. The compute costs are typically the biggest piece, followed by storage. Taking time to optimize pay-for-what-you-use resources can have a large impact on the size of your monthly bill.
+When using Infrastructure as a Service (IaaS) resources such as virtual machines (VM) as part of your solution, the cost associated with VMs is often the biggest portion of spend. The compute costs are typically the biggest piece, followed by storage. Taking time to optimize pay-for-what-you-use resources can have a large impact on the size of your monthly bill.
 
 Let's take a look at best practices to reduce your compute and storage costs.
 
@@ -88,7 +88,7 @@ Similar to orphaned disks, if you have any orphaned snapshots lingering around, 
 
 ## Optimizing PaaS costs
 
-PaaS services are typically optimized for costs over IaaS services, but there are opportunities to identify waste and optimize for minimal costs. Let's take a look at ways to reduce Azure SQL Database and Azure Blob storage costs.
+Platform as a Service (PaaS) services are typically optimized for costs over IaaS services, but there are opportunities to identify waste and optimize for minimal costs. Let's take a look at ways to reduce Azure SQL Database and Azure Blob storage costs.
 
 ### Optimizing Azure SQL Database costs
 
@@ -131,4 +131,4 @@ Along with the optimization of blob storage for their imaging storage, they've m
 
 ## Summary
 
-Optimizing the cost of your cloud infrastructure involves tracking your spend and ensuring that your resource utilization matches the demands of your workloads. Using the right quality and performance tier for your resources further optimizes your cloud costs.
+Optimizing the cost of your cloud infrastructure involves tracking your spend and ensuring that your resource utilization matches the demands of your workloads. Using the right quality and performance tier for your resources can further optimize your cloud spend.

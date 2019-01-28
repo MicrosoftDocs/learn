@@ -37,4 +37,5 @@ units:
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.5-install-nodejs
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.6-create-a-basic-app
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.7-summary
-achievement: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.badge
+badge:
+  uid: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.badge

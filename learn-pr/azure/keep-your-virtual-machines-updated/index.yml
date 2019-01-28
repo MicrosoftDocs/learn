@@ -8,7 +8,7 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: adsteven
+  #ms.learn-contact: adsteven
 title: Keep your virtual machines updated
 summary: Deploy the Azure Update Management solution to update virtual machines in your cloud environment.
 abstract: |
@@ -32,4 +32,5 @@ units:
 - learn.keep-your-virtual-machines-updated.5-exercise-use-azure-log-analytics-and-schedule-updates
 - learn.keep-your-virtual-machines-updated.6-knowledge-check
 - learn.keep-your-virtual-machines-updated.7-summary
-achievement: learn.keep-your-virtual-machines-updated.badge
+badge:
+  uid: learn.keep-your-virtual-machines-updated.badge

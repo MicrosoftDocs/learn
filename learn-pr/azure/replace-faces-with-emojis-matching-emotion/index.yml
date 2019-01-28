@@ -40,4 +40,5 @@ units:
 - learn.the-mojifier.8-integrate-with-slack
 - learn.the-mojifier.9-optionally-calibrate-emojis
 - learn.the-mojifier.10-summary
-achievement: learn.the-mojifier.badge
+badge:
+  uid: learn.the-mojifier.badge

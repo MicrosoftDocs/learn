@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.create-azure-account
+metadata:
+  title: Create an Azure account - Learn
+  description: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences."
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Create an Azure account
+summary: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences."
+abstract: |
+  In this module, you will:
+  - Learn about the different types of Azure accounts and subscriptions
+  - Understand how billing works in Azure
+  - Create a free Azure account
+  - Learn how to get help when you need it with different support options
+prerequisites: |
+  - Knowledge of basic cloud computing terms and concepts
+  - A valid credit card to register with Azure
+iconUrl: /learn/achievements/create-azure-account.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products:
+- azure
+- azure-portal
+units:
+- learn.create-azure-account.1-introduction
+- learn.create-azure-account.2-azure-accounts-and-subscriptions
+- learn.create-azure-account.3-multiple-subscriptions
+- learn.create-azure-account.4-azure-tenants
+- learn.create-azure-account.5-exercise-create-an-azure-account
+- learn.create-azure-account.6-support-options
+- learn.create-azure-account.7-summary
+badge:
+  uid: learn.create-azure-account.badge

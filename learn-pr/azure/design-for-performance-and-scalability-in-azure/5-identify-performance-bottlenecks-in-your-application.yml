@@ -22,22 +22,22 @@ quiz:
     choices:
     - content: 'A single view for all your monitoring needs in Azure'
       isCorrect: false
-      incorrectExplanation: 'While Application Insights can provide a wealth of data on your application performance, is it not a comprehensive Azure monitoring solution.'
+      explanation: 'While Application Insights can provide a wealth of data on your application performance, is it not a comprehensive Azure monitoring solution.'
     - content: 'An implementation of the health endpoint monitoring pattern'
       isCorrect: false
-      incorrectExplanation: 'The health endpoint monitoring pattern focuses on monitoring endpoints exposed by your application for overall health.'
+      explanation: 'The health endpoint monitoring pattern focuses on monitoring endpoints exposed by your application for overall health.'
     - content: 'A workspace to enable collection of logs across infrastructure and applications'
       isCorrect: false
-      incorrectExplanation: 'Log Analytics is a workspace that enables the collection of logs across infrastructure and applications.'
+      explanation: 'Log Analytics is a workspace that enables the collection of logs across infrastructure and applications.'
     - content: 'A service to monitor availability, performance, and usage of web applications'
       isCorrect: true
-      correctExplanation: 'Application Insights is a service to monitor availability, performance, and usage of web applications.'
+      explanation: 'Application Insights is a service to monitor availability, performance, and usage of web applications.'
 
   - content: 'True or false: Log Analytics tracks custom logs and metrics.'
     choices:
     - content: 'True'
       isCorrect: true
-      correctExplanation: 'For custom logs and metrics, you can use the HTTP Data Collector API to write data to Log Analytics from any REST API client or an Azure Logic App to write data from a custom workflow.'
+      explanation: 'For custom logs and metrics, you can use the HTTP Data Collector API to write data to Log Analytics from any REST API client or an Azure Logic App to write data from a custom workflow.'
     - content: 'False'
       isCorrect: false
-      incorrectExplanation: 'For custom logs and metrics, you can use the HTTP Data Collector API to write data to Log Analytics from any REST API client or an Azure Logic App to write data from a custom workflow.'
+      explanation: 'For custom logs and metrics, you can use the HTTP Data Collector API to write data to Log Analytics from any REST API client or an Azure Logic App to write data from a custom workflow.'

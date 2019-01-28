@@ -8,7 +8,7 @@ metadata:
   ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  TODO: Update support contact.
+  #TODO: Update support contact.
   #ms.learn-contact: anbyrne
 title:  Discover sentiment in text with the Text Analytics API
 summary: Learn what your customers are really saying about your product or brand when they send feedback. We'll create a solution that uses Azure Functions and the intelligence of the Text Analytics API to discover sentiment in text messages. 
@@ -40,4 +40,5 @@ units:
 - learn.classify-user-feedback-with-the-text-analytics-api.6-exercise-discover-sentiment
 - learn.classify-user-feedback-with-the-text-analytics-api.7-exercise-sort-feedback
 - learn.classify-user-feedback-with-the-text-analytics-api.8-summary
-achievement: learn.classify-user-feedback-with-the-text-analytics-api.badge
+badge:
+  uid: learn.classify-user-feedback-with-the-text-analytics-api.badge

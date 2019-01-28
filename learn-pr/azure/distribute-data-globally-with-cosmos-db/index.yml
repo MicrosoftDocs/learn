@@ -35,4 +35,5 @@ units:
 - learn.distribute-data-globally-with-cosmos-db.4-change-priorities
 - learn.distribute-data-globally-with-cosmos-db.5-data-consistency-levels
 - learn.distribute-data-globally-with-cosmos-db.6-summary-cleanup
-achievement: learn.distribute-data-globally-with-cosmos-db.badge
+badge:
+  uid: learn.distribute-data-globally-with-cosmos-db.badge

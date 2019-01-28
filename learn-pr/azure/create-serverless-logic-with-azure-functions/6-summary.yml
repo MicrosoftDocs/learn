@@ -24,34 +24,34 @@ quiz:
     choices: 
     - content: Code you write that doesn't run on servers. 
       isCorrect: false
-      incorrectExplanation: Serverless doesn't mean there are no servers - it just means the developer doesn't have to worry about servers. Instead, a cloud provider such as Azure, manages servers. 
+      explanation: Serverless doesn't mean there are no servers - it just means the developer doesn't have to worry about servers. Instead, a cloud provider such as Azure, manages servers. 
     - content: Code you write that runs on servers you manage.
       isCorrect: false
-      incorrectExplanation: Serverless doesn't mean there are no servers - it just means the developer doesn't have to worry about servers. Instead, a cloud provider such as Azure, manages servers. 
+      explanation: Serverless doesn't mean there are no servers - it just means the developer doesn't have to worry about servers. Instead, a cloud provider such as Azure, manages servers. 
     - content: Code you write that runs on servers a cloud provider manages.
       isCorrect: true
-      correctExplanation: Serverless doesn't mean there are no servers - it just means the developer doesn't have to worry about servers. Instead, a cloud provider such as Azure, manages servers. 
+      explanation: Serverless doesn't mean there are no servers - it just means the developer doesn't have to worry about servers. Instead, a cloud provider such as Azure, manages servers. 
 
   - content: The container that groups functions into a logical unit for easier management, deployment, and sharing of resources is called? 
     choices: 
     - content: Resource group 
       isCorrect: false
-      incorrectExplanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
+      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
     - content: Function app
       isCorrect: true
-      correctExplanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
+      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
     - content: Function collection
       isCorrect: false
-      incorrectExplanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
+      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
 
   - content: We secured our function against unknown HTTP callers by requiring a function-specific API key be passed with each call. Which of the following is the name header in the HTTP requests that needs to contain this key?
     choices: 
     - content: "x-functions-key"
       isCorrect: true
-      correctExplanation:  The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
+      explanation:  The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
     - content: "x-requested-with"
       isCorrect: false
-      incorrectExplanation: The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
+      explanation: The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
     - content: "x-csrf-token"
       isCorrect: false
-      incorrectExplanation: The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.
+      explanation: The API can be included in a query string variable named "code",  or it can be included in an x-functions-key HTTP header.

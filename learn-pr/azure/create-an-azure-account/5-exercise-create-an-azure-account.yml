@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-account.5-exercise-create-an-azure-account
+title: Exercise - Create an Azure account
+metadata:
+  title: Exercise - Create an Azure account
+  description: Create an Azure account
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+#TODO: This unit is intentionally not sandbox activated! May include interactive: azure-portal at a later time depending on its functionality.
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-an-azure-account.md)]

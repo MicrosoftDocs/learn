@@ -33,4 +33,5 @@ units:
 - learn.align-requirements-in-azure.6-saas
 - learn.align-requirements-in-azure.7-knowledge-check
 - learn.align-requirements-in-azure.8-summary
-achievement: learn.align-requirements-in-azure.badge
+badge:
+  uid: learn.align-requirements-in-azure.badge

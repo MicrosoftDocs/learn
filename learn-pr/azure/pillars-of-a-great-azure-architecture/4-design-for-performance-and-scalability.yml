@@ -21,27 +21,27 @@ quiz:
     choices:
     - content: 'Updating your application to use a queuing service'
       isCorrect: false
-      incorrectExplanation: 'Including a queuing service in your application can be a smart architecual decision, but is not an example of scaling up.'
+      explanation: 'Including a queuing service in your application can be a smart architecual decision, but is not an example of scaling up.'
     - content: 'Adding more web servers into a web farm'
       isCorrect: false
-      incorrectExplanation: 'Adding more web servers into a web farm is an example of scaling out.'
+      explanation: 'Adding more web servers into a web farm is an example of scaling out.'
     - content: 'Adding another virtual machine into a database cluster'
       isCorrect: false
-      incorrectExplanation: 'Adding another virtual machine into a database cluster is not an example of scaling up.'
+      explanation: 'Adding another virtual machine into a database cluster is not an example of scaling up.'
     - content: 'Updating a virtual machine to a larger size'
       isCorrect: true
-      correctExplanation: 'Channging a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
+      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
   - content: 'Which of the following is an example of scaling out?'
     choices:
     - content: 'Updating a virtual machine to a larger size'
       isCorrect: false
-      incorrectExplanation: 'Channging a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
+      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
     - content: 'Adding more storage to a virtual machine'
       isCorrect: false
-      incorrectExplanation: 'Adding more storage to a virtual machine is not an example of scaling out.'
+      explanation: 'Adding more storage to a virtual machine is not an example of scaling out.'
     - content: 'Adding more web servers into a web farm'
       isCorrect: true
-      correctExplanation: 'Adding more web servers into a web farm is an example of scaling out.'
+      explanation: 'Adding more web servers into a web farm is an example of scaling out.'
     - content: 'Replicating backups to another region'
       isCorrect: false
-      incorrectExplanation: 'Replicating backups to another region is not applicable to scaling of resources.'
+      explanation: 'Replicating backups to another region is not applicable to scaling of resources.'

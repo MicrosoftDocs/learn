@@ -25,4 +25,5 @@ modules:
 - learn.prepare-azure-dev-environment
 - learn.host-a-web-application-with-azure-web-apps
 - learn.publish-azure-web-app-with-visual-studio
-achievement: learn.deploy-a-website-with-azure-app-service.trophy
+trophy:
+  uid: learn.deploy-a-website-with-azure-app-service.trophy

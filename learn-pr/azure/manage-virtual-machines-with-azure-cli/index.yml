@@ -40,4 +40,5 @@ units:
 - learn.manage-vms-with-azure-cli-data.7-managing-vms
 - learn.manage-vms-with-azure-cli-data.8-installing-software
 - learn.manage-vms-with-azure-cli-data.9-cleanup
-achievement: learn.manage-vms-with-azure-cli-data.badge
+badge:
+  uid: learn.manage-vms-with-azure-cli-data.badge

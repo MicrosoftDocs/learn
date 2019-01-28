@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-account.6-support-options
+title: Azure support options
+metadata:
+  title: Azure support options - Get help with your Azure subscription - Learn
+  description: Get help with your Azure subscription - Learn
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-support-options.md)]

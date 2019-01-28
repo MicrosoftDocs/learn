@@ -6,12 +6,21 @@ Tags are name/value pairs of text data that you can apply to resources and resou
 
 - department (finance, marketing, etc.)
 - environment (prod, test, dev),
-- cost center,
+- cost center
 - life cycle and automation (e.g. shutdown and startup of virtual machines).
 
- A resource can have up to 15 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags are not inherited from parent resources.
+A resource can have up to 15 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags are not inherited from parent resources. Not all resource types support tags, and tags cannot be applied to classic resources.
 
-Tags can be added and manipulated through the Azure portal, Azure CLI, Azure PowerShell, Resource Manager templates, and through the REST API.
+Tags can be added and manipulated through the Azure portal, Azure CLI, Azure PowerShell, Resource Manager templates, and through the REST API. For example, to add a resource tag to a virtual network using the Azure CLI, you could use the following command:
+
+```azurecli
+az resource tag --tags Department=Finance \
+       -g msftlearn-core-infrastructure-rg \
+       -name msftlearn-vnet1 \
+       --resource-type "Microsoft.Network/virtualNetworks"
+```
+
+In addition, you can leverage Azure Policy to add tags to created resources based on conditions such as who is creating the resource, or the type of resource being created. For example, you could add a tag to identify a cost center, or specific environment a resource will be created in.
 
 ## Apply tags to resources
 
@@ -57,10 +66,8 @@ The above example is just one example of where you can use tags to organize your
 
 You can use tags to group your billing data. For example, if you're running multiple VMs for different organizations, use the tags to group usage by cost center. You can also use tags to categorize costs by runtime environment, such as the billing usage for VMs running in the production environment. When exporting billing data or accessing it through billing APIs, tags are included in that data and can be used to further slice your data from a cost perspective.
 
-Tagging resources can help in monitoring to track down impacted resources. Monitoring systems could include tag data with alerts, giving you the ability to know exactly who is impacted. In our example above, we applied the **Department:Finance** tag to the **msftlearn-vnet1** resource. If an alarm was thrown on **msftlearn-vnet1** and the alarm included the tag, we'd know that the finance department may be impacted by the condition that triggered the alarm. This contextual information can be valuable if and when an issue occurs.
+You can retrieve all the resources in your subscription with a specific tag name or value. Tags enable you to retrieve related resources from different resource groups. This approach is helpful when you need to organize resources for billing or management.
+
+Tagging resources can also help in monitoring to track down impacted resources. Monitoring systems could include tag data with alerts, giving you the ability to know exactly who is impacted. In our example above, we applied the **Department:Finance** tag to the **msftlearn-vnet1** resource. If an alarm was thrown on **msftlearn-vnet1** and the alarm included the tag, we'd know that the finance department may be impacted by the condition that triggered the alarm. This contextual information can be valuable if and when an issue occurs.
 
 It's also common for tags to be used in automation. If you want to automate the shutdown and startup of virtual machines in development environments during off-hours to save costs, you can use tags to assist in this. Add a **shutdown:6PM** and **startup:7AM** tag to the virtual machines, then create an automation job that looks for these tags, and shuts them down or starts them up based on the tag value. There are several solutions in the Azure Automation Runbooks Gallery that use tags in a similar manner to accomplish this.
-
-## Summary
-
-Tags are super flexible, and allow you to add custom information to your resources for use in many different ways. They can help you organize your resources, track and allocate usage, and can improve your operational capabilities across the board.

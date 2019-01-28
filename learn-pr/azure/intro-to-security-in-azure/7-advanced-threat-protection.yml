@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-security.7-advanced-threat-protection
+title: Azure Advanced Threat Protection
+metadata:
+  title: Azure Advanced Threat Protection
+  description: Learn about additional services to detect and prevent threats to your cloud apps.
+  ms.date: 12/26/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-advanced-threat-protection.md)]

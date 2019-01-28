@@ -22,28 +22,28 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "The queue will handle spikes in traffic and ensure no data is lost. If the VM cannot keep up with the flow of incoming messages, it will process the message backlog during low-traffic times."
+      explanation: "The queue will handle spikes in traffic and ensure no data is lost. If the VM cannot keep up with the flow of incoming messages, it will process the message backlog during low-traffic times."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "This data is used for long-term planning, so there is no need to process it in real time. A queue connected to a single VM is likely to handle the workload and be a cost-efficient solution."
+      explanation: "This data is used for long-term planning, so there is no need to process it in real time. A queue connected to a single VM is likely to handle the workload and be a cost-efficient solution."
 
   - content: "What information uniquely identifies a queue?"
     choices:
     - content: "Queue name"
       isCorrect: false
-      incorrectExplanation: "Queue names must only be unique within their containing storage account; they do not need to be globally unique."
+      explanation: "Queue names must only be unique within their containing storage account; they do not need to be globally unique."
     - content: "Account key"
       isCorrect: false
-      incorrectExplanation: "Account keys are associated with a storage account, not a queue."
+      explanation: "Account keys are associated with a storage account, not a queue."
     - content: "Storage account name and queue name"
       isCorrect: true
-      correctExplanation: "Storage account names must be globally unique. Queue names must be unique within their containing storage account. This means the combination of storage account name and queue name uniquely identifies a queue."
+      explanation: "Storage account names must be globally unique. Queue names must be unique within their containing storage account. This means the combination of storage account name and queue name uniquely identifies a queue."
 
   - content: "True or false: when a client programmatically retrieves a message from a queue, the message is automatically deleted from the queue?"
     choices:
     - content: "True"
       isCorrect: false
-      incorrectExplanation: "The operations 'get message' and 'delete message' are separate."
+      explanation: "The operations 'get message' and 'delete message' are separate."
     - content: "False"
       isCorrect: true
-      correctExplanation: "By design, messages are not automatically deleted from a queue after they are retrieved for processing. This helps ensure that every message is processed to completion. If a consumer application crashes during processing, the message is still available to be processed by a different instance of the consumer app."
+      explanation: "By design, messages are not automatically deleted from a queue after they are retrieved for processing. This helps ensure that every message is processed to completion. If a consumer application crashes during processing, the message is still available to be processed by a different instance of the consumer app."

@@ -41,4 +41,5 @@ units:
 - learn.publish-azure-web-app-with-visual-studio.6-explore-your-visual-studio-app-project
 - learn.publish-azure-web-app-with-visual-studio.7-exercise-publish-an-update-to-your-site
 - learn.publish-azure-web-app-with-visual-studio.8-summary
-achievement: learn.publish-azure-web-app-with-visual-studio.badge
+badge:
+  uid: learn.publish-azure-web-app-with-visual-studio.badge

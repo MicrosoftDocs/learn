@@ -26,4 +26,5 @@ modules:
 - learn.azure-container-registry
 - learn.run-docker-containers-aci
 #TODO: Add - Orchestrate containerized application (POST-IGNITE)
-achievement: learn.administer-containers-in-azure.trophy
+trophy:
+  uid: learn.administer-containers-in-azure.trophy

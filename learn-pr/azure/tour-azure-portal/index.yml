@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.tour-azure-portal-features
+metadata:
+  title: Core Cloud Services - Manage services with the Azure portal - Learn
+  description: "Tour the Azure portal features and services, and customize the portal."
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Core Cloud Services - Manage services with the Azure portal
+summary: Tour the Azure portal features and services, and customize the portal.
+abstract: |
+  In this module, you will:
+  - Learn about Azure management options
+  - Navigate the Azure portal
+  - Customize the dashboard
+  - Learn how to opt-in to preview services and features
+iconUrl: /learn/achievements/tour-azure-portal-features.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products:
+- azure
+- azure-portal
+units:
+- learn.tour-azure-portal-features.1-introduction
+- learn.tour-azure-portal-features.2-azure-management
+- learn.tour-azure-portal-features.3-navigate-the-portal
+- learn.tour-azure-portal-features.4-exercise-work-with-blades
+- learn.tour-azure-portal-features.5-exercise-navigate-the-portal
+- learn.tour-azure-portal-features.6-customize-the-dashboard
+- learn.tour-azure-portal-features.7-exercise-customize-the-dashboard
+- learn.tour-azure-portal-features.8-preview-features
+- learn.tour-azure-portal-features.9-summary
+badge:
+  uid: learn.tour-azure-portal-features.badge

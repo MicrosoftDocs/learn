@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-azure-infrastructure.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "True or False. You can select the specific datacenter you want to deploy your app into."
+    choices: 
+    - content: 'True'
+      isCorrect: false
+      explanation: "Azure organizes infrastructure around _regions_ which include multiple datacenters."
+    - content: 'False'
+      isCorrect: true
+      explanation: "Correct. Azure organizes infrastructure around _regions_ which include multiple datacenters. You can't select a specific datacenter, but you can pick the region you want resources deployed into."
+  - content: "True or False. Every region has an availability zone."
+    choices:
+    - content: 'True'
+      isCorrect: false
+      explanation: "Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
+    - content: 'False'
+      isCorrect: true
+      explanation: "Correct. Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
+  - content: "Application availability refers to what?"
+    choices: 
+      - content: "The service level agreement of the associated resource."
+        isCorrect: false
+        explanation: "The service level agreement gives you a guarantee of the availability of the resource, not of the application itself."
+      - content: "Whether the application supports an availability zone."
+        isCorrect: false
+        explanation: "Only the underlying resources used in the application support availability zones."
+      - content: "The overall time that a system is functional and working."
+        isCorrect: true
+        explanation: "Correct. The time that a system is working is referred to as the application availability."

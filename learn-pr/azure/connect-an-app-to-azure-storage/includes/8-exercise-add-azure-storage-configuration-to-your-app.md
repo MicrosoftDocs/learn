@@ -131,8 +131,11 @@ Let's add support to our Node.js application to retrieve a connection string fro
     code .
     ```
 
-1. Select the **.env** file in the editor and add the following text. You may need to click the refresh button in code to see the new files. Save the file - in the online editor, there is a menu in the top right corner which has common file operations.
+1. Select the **.env** file in the editor and add the following text. 
 
+    > [!TIP]
+    > You may need to click the refresh button in code to see the new files.
+    
     ```
     AZURE_STORAGE_CONNECTION_STRING=<value>
     ```
@@ -140,13 +143,15 @@ Let's add support to our Node.js application to retrieve a connection string fro
     > [!TIP]
     > The **AZURE_STORAGE_CONNECTION_STRING** value is a hard-coded environment variable used for Storage APIs to look up access keys. You can use your own name if you prefer, but you must supply the name when you create the `BlobService` object in your Node.js app.
 
+1. Save the file.
+
 1. Now we need to get the storage account connection string and place it into the configuration for our app. In Cloud Shell run the following command.
 
     ```azurecli
     az storage account show-connection-string \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name <name> \
-        --query connectionString
+        --query connectionString \
+        --name <name>
     ```
 
 1. Copy the connection string that is returned from that command, minus the quotes, and replace `<value>` in the **.env** file with this connection string.
@@ -169,12 +174,12 @@ Now that we have added the required libraries to enable reading configuration, w
 
 1. Select **index.js** in the editor.
 
-1. At the top of the file, a **#!/usr/bin/env node** line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This will make environment variables defined in our **.env** file available to the program.
+1. At the top of the file, a `#!/usr/bin/env node` line is present. Underneath that line, add a `require` statement to load the **dotenv** package. This will make environment variables defined in our **.env** file available to the program.
 
     ```javascript
     #!/usr/bin/env node
     require('dotenv').load();
-
+    // ... more code follows
     ```
 ::: zone-end
 

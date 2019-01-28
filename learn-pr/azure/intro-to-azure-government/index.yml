@@ -37,4 +37,5 @@ units:
 - learn.intro-to-azure-government.7-purchase-azure-government
 - learn.intro-to-azure-government.8-knowledge-check
 - learn.intro-to-azure-government.9-summary
-achievement: learn.intro-to-azure-government.badge
+badge:
+  uid: learn.intro-to-azure-government.badge

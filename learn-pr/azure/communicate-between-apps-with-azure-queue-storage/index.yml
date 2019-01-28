@@ -36,4 +36,5 @@ units:
 - learn.communicate-between-applications-with-azure-queue-storage.7-exercise-implement-enqueue
 - learn.communicate-between-applications-with-azure-queue-storage.8-exercise-implement-dequeue
 - learn.communicate-between-applications-with-azure-queue-storage.9-summary
-achievement: learn.communicate-between-applications-with-azure-queue-storage.badge
+badge:
+  uid: learn.communicate-between-applications-with-azure-queue-storage.badge

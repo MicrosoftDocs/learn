@@ -1,8 +1,36 @@
-Network perimeters, their firewalls, and physical access controls used to be the primary protection for corporate data. But network perimeters have become increasingly porous with the explosion of bring your own device (BYOD), mobile apps, and cloud applications. 
+Network perimeters, firewalls, and physical access controls used to be the primary protection for corporate data. But network perimeters have become increasingly porous with the explosion of bring your own device (BYOD), mobile apps, and cloud applications. 
 
 Identity has become the new primary security boundary. Therefore, proper authentication and assignment of privileges is critical to maintaining control of your data.
 
 Your company, Contoso Shipping, is focused on addressing these concerns right away. Your team's new hybrid cloud solution needs to account for mobile apps that have access to secret data when an authorized user is signed in &mdash; in addition to having shipping vehicles constantly send a stream of telemetry data that is critical to optimizing the company's business.
+
+## Authentication and authorization
+
+Two fundamental concepts that need to be understood when talking about identity and access control are authentication and authorization. They underpin everything else that happens and occur sequentially in any identity and access process:
+
+- *Authentication* is the process of establishing the identity of a person or service looking to access a resource. It involves the act of challenging a party for legitimate credentials, and provides the basis for creating a security principal for identity and access control use. It establishes if they are who they say they are.
+
+- *Authorization* is the process of establishing what level of access an authenticated person or service has. It specifies what data they're allowed to access and what they can do with it.
+
+> [!NOTE] 
+> Authentication is sometimes shortened to *AuthN*, and authorization is sometimes shortened to *AuthZ*.
+
+Azure provides services to manage both authentication and authorization through Azure Active Directory (Azure AD). 
+
+## What is Azure Active Directory?
+
+Azure AD is a cloud-based identity service. It has built in support for synchronizing with your existing on-premises Active Directory or can be used stand-alone. This means that all your applications, whether on-premises, in the cloud (including Office 365), or even mobile can share the same credentials. Administrators and developers can control access to internal and external data and applications using centralized rules and policies configured in Azure AD.
+
+Azure AD provides services such as:
+
+- **Authentication.** This includes verifying identity to access applications and resources, and providing functionality such as self-service password reset, multi-factor authentication (MFA), a custom banned password list, and smart lockout services.
+- **Single-Sign-On (SSO).** SSO enables users to remember only one ID and one password to access multiple applications. A single identity is tied to a user, simplifying the security model. As users change roles or leave an organization, access modifications are tied to that identity, greatly reducing the effort needed to change or disable accounts.
+- **Application management.** You can manage your cloud and on-premises apps using Azure AD Application Proxy, SSO, the My apps portal (also referred to as Access panel), and SaaS apps.
+- **Business to business (B2B) identity services.** Manage your guest users and external partners while maintaining control over your own corporate data
+Business-to-Customer (B2C) identity services. Customize and control how users sign up, sign in, and manage their profiles when using your apps with services.
+- **Device Management.** Manage how your cloud or on-premises devices access your corporate data.
+
+Let's explore of a few of these in more detail.
 
 ## Single sign-on
 
@@ -18,8 +46,6 @@ With single sign-on (SSO), users need to remember only one ID and one password. 
   :::column-end:::
 	:::column span="3":::
 **SSO with Azure Active Directory**
-
-Azure Active Directory (AD) is a cloud-based identity service. It has built in support for synchronizing with your existing on-premises Active Directory or can be used stand-alone. This means that all your applications, whether on-premises, in the cloud (including Office 365), or even mobile can share the same credentials. Administrators and developers can control access to data and applications using centralized rules and policies configured in Azure AD.
 
 By leveraging Azure AD for SSO you'll also have the ability to combine multiple data sources into an intelligent security graph. This security graph enables the ability to provide threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from your on-premises AD. By using a centralized identity provider, you'll have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
 
@@ -62,7 +88,7 @@ An **identity** is just a thing that can be authenticated. Obviously, this inclu
 
 A **principal** is an identity acting with certain roles or claims. Usually, it is not useful to consider identity and principal separately, but think of using `sudo` on a Bash prompt in Linux or on Windows using "run as Administrator." In both those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing. Groups are often also considered principals because they can have rights assigned.
 
-So, a **service principal** is literally named. It is an identity that is used by a service or application. And like other identities, it can be assigned roles.
+A **service principal** is an identity that is used by a service or application. And like other identities, it can be assigned roles.
   :::column-end:::
 :::row-end:::
 
@@ -89,21 +115,13 @@ Roles can be granted at the individual service instance level, but they also flo
 
 Here's a diagram that shows this relationship. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
-![An illustration showing the hierarchial representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
+![An illustration showing the hierarchal representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
 
-:::row:::
-  :::column:::
-    ![Image representing identity verification](../media/3-privileged-identity-management.png)
-  :::column-end:::
-	:::column span="3":::
-**Privileged Identity Management**
+### Privileged Identity Management
 
 In addition to managing Azure resource access with role-based access control (RBAC), a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as their organization changes and evolves. Azure AD Privileged Identity Management (PIM) is an additional, paid-for offering that provides oversight of role assignments, self-service, and just-in-time role activation and Azure AD and Azure resource access reviews.
 
 ![Screenshot of Privileged identity management dashboard](../media/PIM_Dashboard.png)
-
-  :::column-end:::
-:::row-end:::
 
 ## Summary
 

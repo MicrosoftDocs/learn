@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.welcome-to-azure.6-scale-up
+title: Scale up
+metadata:
+  title: Scale up
+  description: Scale up your virtual machine to give it more compute power and memory.
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: platform-cloud
+interactive: bash
+azureSandbox: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-scale-up.md)]
+# Verify the VM named "myVM" exists and is running as a Standard_DS3_v2.
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Compute/virtualMachines"
+      name: myVM
+      properties:
+        hardwareProfile:
+          vmSize: Standard_DS3_v2
+  hint: "Run the `az vm resize` command as shown to resize your virtual machine."
