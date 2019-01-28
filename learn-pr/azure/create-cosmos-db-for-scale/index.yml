@@ -34,4 +34,5 @@ units:
 - learn.create-cosmos-db-for-scale.4-how-to-choose-a-partition-key
 - learn.create-cosmos-db-for-scale.5-create-a-database-and-collection
 - learn.create-cosmos-db-for-scale.6-summary-cleanup
-achievement: learn.create-cosmos-db-for-scale.badge
+badge:
+  uid: learn.create-cosmos-db-for-scale.badge

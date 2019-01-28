@@ -22,34 +22,34 @@ quiz:
     choices: 
     - content: Read-only
       isCorrect: false
-      incorrectExplanation: "Read-only caching works well for data disks, including TempDB data. However, it does not improve performance of write-heavy operations and may even cause a slight decrease in performance."
+      explanation: "Read-only caching works well for data disks, including TempDB data. However, it does not improve performance of write-heavy operations and may even cause a slight decrease in performance."
     - content: Read/write
       isCorrect: false
-      incorrectExplanation: "This is a good option if your app properly handles writing cached data to persistent disks when needed."
+      explanation: "This is a good option if your app properly handles writing cached data to persistent disks when needed."
     - content: None
       isCorrect: true
-      correctExplanation: "Write-heavy operations generally do not benefit from caching. 'None' is probably the best choice for a disk dedicated to log files."
+      explanation: "Write-heavy operations generally do not benefit from caching. 'None' is probably the best choice for a disk dedicated to log files."
 
   - content: "For which type of disk does Azure restart the VM in order to change caching type?"
     choices: 
     - content: Data 
       isCorrect: false
-      incorrectExplanation: "Changing the cache setting of a data disk detaches and reattaches the target disk but does not restart the VM."
+      explanation: "Changing the cache setting of a data disk detaches and reattaches the target disk but does not restart the VM."
     - content: Operating system (OS)
       isCorrect: true
-      correctExplanation: "Changing the cache setting of the OS disk requires a VM restart."
+      explanation: "Changing the cache setting of the OS disk requires a VM restart."
     - content: Temporary
       isCorrect: false
-      incorrectExplanation: "You can't change caching options on a temporary disk."
+      explanation: "You can't change caching options on a temporary disk."
     - content: Zone-redundant storage (ZRS)
       isCorrect: false
-      incorrectExplanation: "A premium storage account doesn't support ZRS."
+      explanation: "A premium storage account doesn't support ZRS."
   
   - content: "Suppose you are using Azure PowerShell to manage a VM. You have a local object that represents the VM and you've made several updates to that local object. Which PowerShell cmdlet would you use to apply those local changes to the actual VM?"
     choices: 
     - content: Update-AzVM
       isCorrect: true
-      correctExplanation: "This cmdlet updates the state of an Azure virtual machine to the state of a virtual machine object."
+      explanation: "This cmdlet updates the state of an Azure virtual machine to the state of a virtual machine object."
     - content: Set-AzVM
       isCorrect: false
     - content: New-AzVM

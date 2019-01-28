@@ -23,17 +23,17 @@ quiz:
     - content: "True or false: Azure Advisor provides recommendations on cost only."
       choices:
       - content: "True"
-        incorrectExplanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
         isCorrect: false
       - content: "False"
-        correctExplanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
         isCorrect: true
 
     - content: "Azure Cost Management allows you to _________."
       choices:
       - content: "See historical breakdowns of what services you are spending your money on."
-        correctExplanation: "Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
+        explanation: "Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
         isCorrect: true
       - content: "See estimates of what your services might cost if you make a change."
-        incorrectExplanation: "To see cost estimates, you use the Azure pricing calculator. Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
+        explanation: "To see cost estimates, you use the Azure pricing calculator. Cost Management analyzes where you are historically spending your money and can track it against budgets you have set."
         isCorrect: false

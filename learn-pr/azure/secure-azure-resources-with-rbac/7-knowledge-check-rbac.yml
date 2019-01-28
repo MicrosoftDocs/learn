@@ -20,19 +20,19 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      correctExplanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
+      explanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
     - content: "False"
       isCorrect: false
-      incorrectExplanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
+      explanation: "A role assignment is the process of binding a role to a security principal at a particular scope for the purpose of granting access."
 
   - content: "Suppose a developer needs full access to a resource group. If you are following least-privilege best practices, what scope should you specify?"
     choices:
     - content: "Resource"
       isCorrect: false
-      incorrectExplanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
+      explanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
     - content: "Resource group"
       isCorrect: true
-      correctExplanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
+      explanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
     - content: "Subscription"
       isCorrect: false
-      incorrectExplanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."
+      explanation: "Following least-privilege best practices, you grant only the access the user needs to do their job. In this case, you should set the scope to the resource group."

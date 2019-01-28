@@ -1,5 +1,5 @@
 ::: zone pivot="csharp"
-Let's add code to retrieve the connection string from configuration and use it to connect to the Azure storage account.
+Let's add code to retrieve the connection string from the configuration file and use it to connect to the Azure storage account.
 
 ## Retrieve the connection string
 
@@ -36,7 +36,7 @@ Let's add code to retrieve the connection string from configuration and use it t
     var blobClient = storageAccount.CreateCloudBlobClient();
     ```
 
-1. Next, use the blob client to retrieve a reference to a container named "photoblobs". Much like the account names, the Blob container names must be lowercase and composed of letters and numbers.
+1. Next, use the blob client to retrieve a reference to a container named "photoblobs." Much like the account names, the Blob container names must be lowercase and composed of letters and numbers.
 
     ```csharp
     var blobContainer = blobClient.GetContainerReference("photoblobs");
@@ -172,7 +172,19 @@ Let's add code to connect to the Azure storage account using our stored connecti
 
 We can use the `BlobService` object to work with blob APIs in Azure storage. As mentioned before, all the APIs that make network calls are asynchronous to keep the app responsive. The `createContainerIfNotExists` method is one such method. We'll use _promises_ to handle the callback that contains the response.
 
-1. Use `util.promisify` to take the callback version of `createContainerIfNotExists` and turn it into a promise-returning method.
+1. Add a `util` constant at the top of the file (after the initial `require` you added) to load the `util` package.
+
+    ```javascript
+    #!/usr/bin/env node
+    require('dotenv').load();
+    
+    const util = require('util');
+    const storage = require('azure-storage');
+    const blobService = storage.createBlobService();
+    const containerName = 'photoblobs';
+    ```
+    
+1. Next, after all the constants, use `util.promisify` to take the callback version of `createContainerIfNotExists` and turn it into a promise-returning method.
     - Since the callback method is on an object, make sure to add a `bind` call at the end to connect it to that context.
     - Assign the return value to a constant at the top of the file named `createContainerAsync`, as shown below.
     - You'll also need a `require` for the `util` module near the top of the file.
@@ -181,10 +193,9 @@ We can use the `BlobService` object to work with blob APIs in Azure storage. As 
     const util = require('util');
     const storage = require('azure-storage');
     const blobService = storage.createBlobService();
+    const containerName = 'photoblobs';
 
     const createContainerAsync = util.promisify(blobService.createContainerIfNotExists).bind(blobService);
-
-    const containerName = 'photoblobs';
     ```
 
 2. Remove the "Hello, World!" output from `main()`.
@@ -265,6 +276,9 @@ main();
     node index.js
     ```
 
+    > [!TIP]
+    > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the instructions above.
+
 ::: zone-end
 
 It should report that the blob container was created. If you run it a second time, it should tell you it already exists.
@@ -280,7 +294,7 @@ To verify the container:
 1. You should see your **photoblobs** container in the Blobs panel. You can delete the container through the "..." menu on the right-hand side of the entry to try recreating it with your app.
 
 > [!NOTE]
-> The container will disappear from the portal very quickly, but it takes a few minutes to actually delete. You will get an error response from Azure while it is being deleted if you attempt to recreate it.
+> The container will disappear from the portal very quickly, but it takes a few minutes to delete. If you attempt to recreate it before it's been completely de-provisioned, you will get an error.
 
 ## Delete the app
 If you decide you don't want to keep the application source code in your Cloud Shell environment, you can use the following command to remove the folder and all the contents.

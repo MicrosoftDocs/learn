@@ -39,4 +39,5 @@ units:
 - learn.connect-app-to-azure-storage.10-exercise-connect-with-your-azure-storage-configuration
 - learn.connect-app-to-azure-storage.11-knowledge-check
 - learn.connect-app-to-azure-storage.12-summary
-achievement: learn.connect-app-to-azure-storage.badge
+badge:
+  uid: learn.connect-app-to-azure-storage.badge

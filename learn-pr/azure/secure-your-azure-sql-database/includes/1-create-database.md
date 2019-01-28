@@ -15,8 +15,8 @@ Let's get things set up!
 
     ```bash
     # Set an admin login and password for your database
-    export ADMINLOGIN=<ServerAdmin>
-    export PASSWORD=<password>
+    export ADMINLOGIN='<ServerAdmin>'
+    export PASSWORD='<password>'
     # Set the logical SQL server name. We'll add a random string as it needs to be globally unique.
     export SERVERNAME=server$RANDOM
     export RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
@@ -32,7 +32,7 @@ Let's get things set up!
         --resource-group $RESOURCEGROUP \
         --location $LOCATION \
         --admin-user $ADMINLOGIN \
-        --admin-password $PASSWORD
+        --admin-password "$PASSWORD"
     ```
 
 1. Now run the following to create the database called **marketplaceDb** on the logical server you just created. This will use the _AdventureWorksLT_ database as a template so we'll have some pre-populated tables to work with.

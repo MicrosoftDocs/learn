@@ -11,9 +11,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Secure access to resources
-#TODO: Update labID
-labId: 46467
-labModal: true
+#labId: 46467
+#labModal: true
 durationInMinutes: 3
 content: |
   [!include[](includes/4-secure-access.md)]

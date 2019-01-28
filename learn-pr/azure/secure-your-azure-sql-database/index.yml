@@ -34,4 +34,5 @@ units:
 - learn.secure-your-azure-sql-database.5-monitor-your-database
 - learn.secure-your-azure-sql-database.6-knowledge-check
 - learn.secure-your-azure-sql-database.7-summary
-achievement: learn.secure-your-azure-sql-database.badge
+badge:
+  uid: learn.secure-your-azure-sql-database.badge

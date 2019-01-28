@@ -1,6 +1,7 @@
 In your first week on your new job, you've been taking a look through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they are not organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's take a look at what they are, and how they can be used.
 
-For this module, you can use your own subscription to follow along. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work to follow along with these exercises.
+> [!NOTE]
+> For this module, you can use your own subscription to follow along. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work to follow along with these exercises.
 
 [!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
 
@@ -8,19 +9,19 @@ For this module, you can use your own subscription to follow along. We'll be wor
 
 Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription: virtual machines, Application Gateways, CosmosDB instances, etc. All resources must reside in a resource group and a resource can only be a member of a single resource group. Resources can be moved between resource groups at any time. Resource groups cannot be nested. Before any resource can be provisioned, you need a resource group for it to be placed in.
 
-### Life-cycle
-
-If you delete a resource group, all resources contained within are also deleted. Organizing resources by life cycle can be useful in non-production environments, where you might try an experiment, but then dispose of it when done. Resource groups make it easy to remove a set of resources at once.
-
-### Authorization 
-
-Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can ease administration and limit access to allow only what is needed.
-
 ### Logical grouping
 
 Resource groups exist to help manage and organize your Azure resources. By placing resources of similar usage, type, or location, you can provide some order and organization to resources you create on Azure. Logical grouping is the aspect that we're most interested in here, since there's a lot of disorder amongst our resources.
 
-![Alt Text](../media/2-rg.PNG)
+![Conceptual image showing a resource group box with a Function, VM, database and app included](../media/2-rg.PNG)
+
+### Life-cycle
+
+If you delete a resource group, all resources contained within are also deleted. Organizing resources by life cycle can be useful in non-production environments, where you might try an experiment, but then dispose of it when done. Resource groups make it easy to remove a set of resources at once.
+
+### Authorization
+
+Resource groups are also a scope for applying role-based access control (RBAC) permissions. By applying RBAC permissions to a resource group, you can ease administration and limit access to allow only what is needed.
 
 ## Create a Resource Group
 
@@ -36,15 +37,18 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 
 1. Open a web browser and sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
+    > [!IMPORTANT]
+    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
+
 1. On the left blade, select **+ Create a resource**
 
-1. Click the plus sign to add a new resource group. Type **Resource Group** in the search box and hit Enter.
+1. Type **Resource Group** in the search box and hit Enter.
 
 1. The first item in the list should be the resource group resource. Select it and then click the **Create** button.
 
     ![Search results searching the marketplace for a new resource group](../media/2-create-search-resource-group.png)
 
-1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**. Select the subscription it should reside in, and select the region for the resource group. Click **Create** to create the resource group.
+1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**. Select the subscription it should reside in, and select the region for the resource group. Click **Review + Create** and then **Create** to create the resource group.
 
     ![Fill in the required fields to create the resource group](../media/2-create-resource-group.png)
 
@@ -66,11 +70,11 @@ We don't have any resources in this resource group yet, so the list at the botto
 
 1. Click **+ Add** at the top or click the **Create resources**, either will work. This shows a panel with the marketplace.
 
-1. Search for **Virtual network**. The first result should be the virtual network resource. Click it, and on the subsequent screen click **Create**.
+1. Search for **Virtual network**. The first result should be the virtual network resource. Click it, and on the subsequent screen, ensure **Select a deployment model** is set to **Resource Manager** and click **Create**.
 
-1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the **msftlearn-core-infrastructure** resource group. Leave the defaults for all other options, and click **Create**.
+1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the resource group that you created earlier. Enter **192.168.0.0/24** for both the **Address space** and subnet **Address range**. Leave the defaults for all other options, and click **Create**.
 
-1. Repeat the steps again to create one more VNet. Name it **msftlearn-vnet2** and make sure to place it in the **msftlearn-core-infrastructure** resource group.
+1. Repeat the steps again to create one more VNet. Name it **msftlearn-vnet2**, and make sure to place it in the resource group that you created earlier.
 
 1. Go back to your resource group, and on the **Overview** panel you should see the two VNets you created.
 
@@ -123,5 +127,3 @@ Lastly, placing resources in the same resource group is a way to group them for 
 ## Summary
 
 The bottom line is that you have flexibility in how to organize resources in your resource groups. Put some thought into it so that you have a coherent approach to how you use resource groups in your Azure environment.
-
-We've taken a look at some of the key principles behind resource groups, how you can create and add resources to them, and some ways you can use them in your environment to improve the organization of your resources.

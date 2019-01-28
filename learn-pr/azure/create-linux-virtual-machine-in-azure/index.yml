@@ -39,4 +39,5 @@ units:
 - learn.create-linux-vm-in-azure.7-manage-vm
 - learn.create-linux-vm-in-azure.8-exercise-manage-vm
 - learn.create-linux-vm-in-azure.9-summary
-achievement: learn.create-linux-vm-in-azure.badge
+badge:
+  uid: learn.create-linux-vm-in-azure.badge

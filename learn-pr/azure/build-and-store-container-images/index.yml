@@ -34,4 +34,5 @@ units:
 - learn.azure-container-registry.deploy-image
 - learn.azure-container-registry.image-replication
 - learn.azure-container-registry.knowledge-check
-achievement: learn.azure-container-registry.badge
+badge:
+  uid: learn.azure-container-registry.badge

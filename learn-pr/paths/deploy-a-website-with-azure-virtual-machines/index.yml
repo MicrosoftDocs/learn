@@ -28,4 +28,5 @@ modules:
 - learn.create-linux-vm-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
-achievement: learn.deploy-a-website-with-azure-virtual-machines.trophy
+trophy:
+  uid: learn.deploy-a-website-with-azure-virtual-machines.trophy

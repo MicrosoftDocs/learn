@@ -27,7 +27,7 @@ Management groups are an additional hierarchical level recently introduced into 
 
 The ability to flow roles through an arbitrarily defined subscription hierarchy also allows administrators to grant temporary access to an entire environment for authenticated users. For example, an auditor may require temporary read-only access to all subscriptions.
 
-![An illustration showing the hierarchial representation of role-based access in a management group.](../media/management_groups.png)
+![An illustration showing the hierarchal representation of role-based access in a management group.](../media/management_groups.png)
 
 ### Privileged Identity Management
 

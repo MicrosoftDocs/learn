@@ -170,6 +170,10 @@ Now that we have the connection, let's add a value to the cache.
 
 1. Inside the `using` block after the connection has been created, use the `GetDatabase` method to retrieve an `IDatabase` instance.
 
+    ```csharp
+    IDatabase db = cache.GetDatabase();
+    ```
+
 1. Call `StringSet` on the `IDatabase` object to set the key "test:key" to the value "some value".
     - the return value from `StringSet` is a `bool` indicating whether the key was added.
 
@@ -214,7 +218,7 @@ Now that we have the connection, let's add a value to the cache.
     
                 using (var cache = ConnectionMultiplexer.Connect(connectionString))
                 {
-                    var db = cache.GetDatabase();
+                    IDatabase db = cache.GetDatabase();
     
                     bool setValue = db.StringSet("test:key", "some value");
                     Console.WriteLine($"SET: {setValue}");
@@ -358,7 +362,7 @@ namespace SportsStatsTracker
 
             using (var cache = ConnectionMultiplexer.Connect(connectionString))
             {
-                var db = cache.GetDatabase();
+                IDatabase db = cache.GetDatabase();
 
                 bool setValue = db.StringSet("test:key", "some value");
                 Console.WriteLine($"SET: {setValue}");

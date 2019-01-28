@@ -1,11 +1,14 @@
-In this exercise, you will create a virtual network in Microsoft Azure. You will then create two virtual machines and use the virtual network to connect the virtual machines to each other and to the Internet.
+In this exercise, you will create a virtual network in Microsoft Azure. You will then create two virtual machines and use the virtual network to connect the virtual machines and to the Internet.
 
 > [!IMPORTANT]
-> The exercises in this module require a full Azure subscription. The exercises are optional and are not required to complete this module. Participating in the interactive exercises in this module will result in charges billed to the Azure subscription you use to complete them.  Incurred charges can be minimized by cleaning up the resources you create as soon as possible. Cleanup directions are included in the final unit.
+> The exercises in this module require a full Azure subscription. The exercises are optional and are not required to complete this module. Participating in the interactive exercises in this module will result in charges billed to the Azure subscription you use to complete them.  Incurred charges can be minimized by cleaning up the resources you create as soon as possible. Cleanup directions are in the final unit.
 
 ## Log in to your subscription with the Azure CLI
 
 This first exercise will use the Azure CLI. If you have a local installation of the Azure CLI, feel free to use it &mdash; make sure to use `az account` to log in to the subscription you want to use. If not, you can log into your Azure account on [shell.azure.com](https://shell.azure.com) and use the shell from there.
+
+> [!NOTE]
+> If you are using the CloudShell environment, select the **Bash** shell option. If you are using PowerShell, locally or in the cloud, then you will need to escape all empty parameters by changing `""` to `'""'` to properly pass an empty string into the command. Without this, PowerShell will not pass the empty string, and you will get an error from the command indicating it's missing a parameter.
 
 ## Create a resource group
 
@@ -77,7 +80,7 @@ You'll configure the Windows Firewall on `dataProcStage2` using a new remote des
 
 1. In the `dataProcStage1` remote session, open Remote Desktop.
 
-1. Connect to `dataProcStage2` by name. Based on the default network configuration, `dataProcStage1` is able to resolve the address for `dataProcStage2` using the computer name.
+1. Connect to `dataProcStage2` by name. Based on the default network configuration, `dataProcStage1` can resolve the address for `dataProcStage2` using the computer name.
 
 1. Log in to `dataProcStage2` with the username `DataAdmin` and the password you created.
 
@@ -85,7 +88,7 @@ You'll configure the Windows Firewall on `dataProcStage2` using a new remote des
 
 1. In the left-hand pane, click **Inbound Rules**.
 
-1. In the right-hand pane, scroll down and right-click **File and Printer Sharing (Echo Request - ICMPv4-In)**, and then click **Enable Rule**.
+1. In the right-hand pane, scroll down, and right-click **File and Printer Sharing (Echo Request - ICMPv4-In)**, and then click **Enable Rule**.
 
 1. Switch back to the `dataProcStage1` remote session and run the following command in the command prompt.
 

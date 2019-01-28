@@ -20,23 +20,23 @@ quiz:
     choices:
     - content: "Structured"
       isCorrect: false
-      incorrectExplanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+      explanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
     - content: "Semi-structured"
       isCorrect: true
-      correctExplanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+      explanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
     - content: "Unstructured"
       isCorrect: false
-      incorrectExplanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
+      explanation: "Semi-structured data contains tags that make the organization and hierarchy of the data apparent."
 
   - content: "A video is an example of which type of data?"
     choices:
     - content: "Structured"
       isCorrect: false
-      incorrectExplanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+      explanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
     - content: "Semi-structured"
       isCorrect: false
-      incorrectExplanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+      explanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
     - content: "Unstructured"
       isCorrect: true
-      correctExplanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
+      explanation: "Unstructured data is often delivered in files. A video may have an overall structure but the data that comprises the video itself is unstructured."
 

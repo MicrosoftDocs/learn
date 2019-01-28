@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.tour-azure-portal-features.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'An Azure dashboard is stored as which type of file?'
+    choices:
+    - content: XML
+      isCorrect: false
+      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+    - content: JSON
+      isCorrect: true
+      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+    - content: PNG
+      isCorrect: false
+      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+
+  - content: "Azure Advisor provides advice on: (Select one)"
+    choices:
+    - content: "Creating an Azure account"
+      isCorrect: false
+      explanation: "You must already have an account to use Azure Advisor."
+    - content: "Best practices and Security for your services"
+      isCorrect: true
+      explanation: "Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, and cost."
+    - content: "Using the Azure portal effectively"
+      isCorrect: false
+      explanation: "Azure Advisor is accessed from the Azure portal, but doesn't provide guidance on using the portal."
+
+  - content: 'True or false: Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources?'
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."
+    - content: "False"
+      isCorrect: false
+      explanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."

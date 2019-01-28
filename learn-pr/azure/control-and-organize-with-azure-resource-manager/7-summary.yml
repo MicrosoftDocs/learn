@@ -1,9 +1,0 @@
-### YamlMime:ModuleUnit
-uid: learn.control-and-organize-with-resource-manager.7-summary
-title: Summary
-metadata:
-  title: Summary
-  description: Summary
-durationInMinutes: 2
-content: |
-  [!include[](includes/7-summary.md)]

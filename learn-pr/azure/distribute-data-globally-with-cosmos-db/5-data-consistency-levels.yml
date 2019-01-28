@@ -21,19 +21,19 @@ quiz:
     choices:
     - content: "Strong"
       isCorrect: false
-      incorrectExplanation: "Strong consistency is not available for databases replicated in multiple regions."
+      explanation: "Strong consistency is not available for databases replicated in multiple regions."
     - content: "Bounded Staleness"
       isCorrect: false
-      incorrectExplanation: "Bounded Staleness may result in only some of the users items being displayed in their basket."
+      explanation: "Bounded Staleness may result in only some of the users items being displayed in their basket."
     - content: "Session"
       isCorrect: true
-      correctExplanation: "Correct, Session is the best consistency setting for user data that contains shopping basket information. Session consistency will ensure that every item the user put in their basket is displayed when they review their basket."
+      explanation: "Correct, Session is the best consistency setting for user data that contains shopping basket information. Session consistency will ensure that every item the user put in their basket is displayed when they review their basket."
     - content: "Consistent Prefix"
       isCorrect: false
-      incorrectExplanation: "Consistent Prefix could result in only some of the users items being displayed in their basket."
+      explanation: "Consistent Prefix could result in only some of the users items being displayed in their basket."
     - content: "Eventual"
       isCorrect: false
-      incorrectExplanation: "Eventual consistency might result in a situation in which a shopping basket didn't display all the items the user had placed in it."
+      explanation: "Eventual consistency might result in a situation in which a shopping basket didn't display all the items the user had placed in it."
 
   - content: 'Which consistency level consumes the least amount of request units per operation?'
     choices:
@@ -47,4 +47,4 @@ quiz:
       isCorrect: false
     - content: "Eventual"
       isCorrect: true
-      correctExplanation: "The cost of a read operation with eventual consistency consumes the least number of request units per seconds."
+      explanation: "The cost of a read operation with eventual consistency consumes the least number of request units per seconds."

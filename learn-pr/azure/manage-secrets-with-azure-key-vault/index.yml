@@ -34,4 +34,5 @@ units:
 - learn.manage-secrets-with-azure-key-vault.5-access-secrets-from-web-app
 - learn.manage-secrets-with-azure-key-vault.6-configure-deploy-run-azure
 - learn.manage-secrets-with-azure-key-vault.7-summary
-achievement: learn.manage-secrets-with-azure-key-vault.badge
+badge:
+  uid: learn.manage-secrets-with-azure-key-vault.badge

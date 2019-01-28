@@ -38,4 +38,5 @@ units:
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.6-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.7-exercise-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.8-summary
-achievement: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.badge
+badge:
+  uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.badge

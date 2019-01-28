@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.welcome-to-azure.5-add-web-server
+title: Add a web server
+metadata:
+  title: Add a web server
+  description: Bring your virtual machine to life by configuring a web server and serving some custom content.
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: platform-cloud
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-add-web-server.md)]
+# tasks:
+# # Verify the Custom Script Extension exists.
+# # TODO: Currently cannot validate this task because the resoure name is different
+# # between the Windows and Linux pivots.
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Compute/virtualMachines/extensions"
+#       name: myVM/customScript # Linux
+#   hint: "Run the `az vm extension set` command as shown to configure the web server."
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Compute/virtualMachines/extensions"
+#       name: myVM/CustomScriptExtension # Windows
+#   hint: "Run the `az vm extension set` command as shown to configure the web server."
+# # Verify the NSG includes port 80.
+# # TODO: Currently cannot validate this task because security group rules aren't reported
+# # through the resource explorer.
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Network/networkSecurityGroups/securityRules"
+#       name: open-port-80
+#   hint: "Run the `az vm open-port` command as shown to open port 80 through the firewall."
+

@@ -41,5 +41,6 @@ units:
 - learn.work-with-mutable-and-partial-data-in-a-redis-cache.6-eviction-policies
 - learn.work-with-mutable-and-partial-data-in-a-redis-cache.7-cache-aside-pattern
 - learn.work-with-mutable-and-partial-data-in-a-redis-cache.8-summary
-achievement: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge
 
+badge:
+  uid: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge

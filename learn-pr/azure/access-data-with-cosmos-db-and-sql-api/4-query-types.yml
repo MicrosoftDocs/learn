@@ -21,22 +21,22 @@ quiz:
     choices:
     - content: "SELECT"
       isCorrect: true
-      correctExplanation: "SELECT is the only required clause in a query."
+      explanation: "SELECT is the only required clause in a query."
     - content: "FROM"
       isCorrect: false
-      incorrectExplanation: "FROM is an optional clause in a SQL query."
+      explanation: "FROM is an optional clause in a SQL query."
     - content: "WHERE"
       isCorrect: false
-      incorrectExplanation: "WHERE is an optional clause in a SQL query."
+      explanation: "WHERE is an optional clause in a SQL query."
 
   - content: "Which query will get an ordered list of product IDs and descriptions, starting with the largest product ID and ending with the smallest product ID?"
     choices:
     - content: "SELECT p.productId FROM Products p ORDER BY p.productId ASC"
       isCorrect: false
-      incorrectExplanation: "This would only return the product IDs in ascending order."
+      explanation: "This would only return the product IDs in ascending order."
     - content: "SELECT p.id FROM Products p ORDER BY p.productId DESC"
       isCorrect: false
-      incorrectExplanation: "This would only return the ID in descending order"
+      explanation: "This would only return the ID in descending order"
     - content: "SELECT p.productId, p.description FROM Products p ORDER BY p.productId DESC"
       isCorrect: true
-      incorrectExplanation: "This would return both the product ID and description but in ascending order."
+      explanation: "This would return both the product ID and description but in ascending order."

@@ -38,12 +38,12 @@ Azure provides over 200 different connectors and processing blocks to interact w
 
 As an example, let's say a ticket arrives in ZenDesk. You could:
 
-1. Detect the intent of the message with cognitive services.
+1. Detect the intent of the message with cognitive services
 1. Create an item in Sharepoint to track the issue
 1. If the customer isn't in your database, add them to your Dynamics 365 CRM system
-1. Send a follow-up email to acknowledge their request.
+1. Send a follow-up email to acknowledge their request
 
-All of that could be designed in a visual designer - making it very easy to see the logic flow, perfect for a business analyst role.
+All of that could be designed in a visual designer making it easy to see the logic flow which is ideal for a business analyst role.
 
 ## Functions vs. Logic Apps
 

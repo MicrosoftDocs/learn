@@ -38,4 +38,5 @@ units:
 - learn.build-azure-bot-services-bot.6-connect-to-knowledge-base
 - learn.build-azure-bot-services-bot.7-summary
 - learn.build-azure-bot-services-bot.8-knowledge-check
-achievement: learn.build-azure-bot-services-bot.badge
+badge:
+  uid: learn.build-azure-bot-services-bot.badge

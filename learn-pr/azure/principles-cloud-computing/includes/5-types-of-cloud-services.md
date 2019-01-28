@@ -11,9 +11,11 @@ When talking about cloud computing, there are three major categories. It's impor
     ![IaaS icon](../media/5-iaas.png)
   :::column-end:::
   :::column span="3":::
-**Infrastructure as a service (IaaS)**
+### Infrastructure as a service (IaaS)
 
 Infrastructure as a Service is the most flexible category of cloud services. It aims to give you complete control over the hardware that runs your application (IT infrastructure servers and virtual machines (VMs), storage, networks, and operating systems). Instead of buying hardware, with IaaS, you rent it. It's an instant computing infrastructure, provisioned and managed over the internet.
+  :::column-end:::
+:::row-end:::
 
 > [!NOTE]
 > When using IaaS, ensuring that a service is up and running is a shared responsibility: the cloud provider is responsible for ensuring the cloud infrastructure is functioning correctly; the cloud customer is responsible for ensuring the service they are using is configured correctly, is up to date, and is available to their customers. This is referred to as the **shared responsibility model**.
@@ -28,17 +30,16 @@ IaaS is commonly used in the following scenarios:
 
 - **Storage, backup, and recovery.** Organizations avoid the capital outlay and complexity of storage management, which typically requires skilled staff to manage data and meet legal and compliance requirements. IaaS is useful for managing unpredictable demand and steadily growing storage needs. It can also simplify the planning and management of backup and recovery systems.
 
-  :::column-end:::
-:::row-end:::
-
 :::row:::
   :::column:::
     ![PaaS icon](../media/5-paas.png)
   :::column-end:::
   :::column span="3":::
-**Platform as a service (PaaS)**
+### Platform as a service (PaaS)
 
-PaaS provides an environment for building, testing, and deploying software applications. The goal of PaaS is to help you create an application as quickly as possible without having to worry about managing the underlying infrastructure. For example, when deploying a web application using PaaS, you don't have to install an operating system, web server, or even system updates. 
+PaaS provides an environment for building, testing, and deploying software applications. The goal of PaaS is to help you create an application  quickly without managing the underlying infrastructure. For example, when deploying a web application using PaaS, you don't have to install an operating system, web server, or even system updates. 
+  :::column-end:::
+:::row-end:::
 
 PaaS is a complete development and deployment environment in the cloud, with resources that enable organizations to deliver everything from simple cloud-based apps to sophisticated cloud-enabled enterprise applications. Resources are purchased from a cloud service provider on a pay-as-you-go basis and accessed over a secure Internet connection.
 
@@ -48,21 +49,18 @@ PaaS is commonly used in the following scenarios:
 
 **Analytics or business intelligence.** Tools provided as a service with PaaS allow organizations to analyze and mine their data. They can find insights and patterns, and predict outcomes to improve business decisions such as forecasting, product design, and investment returns.
 
-  :::column-end:::
-:::row-end:::
-
 :::row:::
   :::column:::
     ![SaaS icon](../media/5-saas.png)
   :::column-end:::
   :::column span="3":::
-**Software as a service (SaaS)**
+### Software as a service (SaaS)
 
 SaaS is software that is centrally hosted and managed for the end customer. It is usually based on an architecture where one version of the application is used for all customers, and licensed through a monthly or annual subscription. Office 365, Skype, and Dynamics CRM Online are perfect examples of SaaS software.
   :::column-end:::
 :::row-end:::
 
-### Cost and Ownership
+## Cost and Ownership
 
 > [!div class="mx-tableFixed"]
 > | | IaaS | PaaS | SaaS |
@@ -71,7 +69,7 @@ SaaS is software that is centrally hosted and managed for the end customer. It i
 > | User ownership | The user is responsible for the purchase, installation, configuration, and management of their own software operating systems, middleware, and applications. | The user is responsible for the development of their own applications. However, they are not responsible for managing the server or infrastructure. This allows the user to focus on the application or workload they want to run. | Users just use the application software; they are not responsible for any maintenance or management of that software. | 
 > | Cloud provider ownership | The cloud provider is responsible for ensuring that the underlying cloud infrastructure (such as virtual machines, storage, and networking) is available for the user. | The cloud provider is responsible for operating system management, and network and service configuration. Cloud providers are typically responsible for everything apart from the application that a user wants to run. They provide a complete managed platform on which to run an application. | The cloud provider is responsible for the provision, management, and maintenance of the application software. |
 
-### Management responsibilities
+## Management responsibilities
 
 One thing to understand is that these categories are layers on top of each other. For example, PaaS adds a layer on top of IaaS by providing a level of abstraction. The abstraction has the benefit of hiding the details that you may not care about so that you can get to coding quicker. However, one cost of that is that you have less control over the underlying hardware. The following illustration shows a list of resources that you manage and that your service provider manages in each cloud service category.
 

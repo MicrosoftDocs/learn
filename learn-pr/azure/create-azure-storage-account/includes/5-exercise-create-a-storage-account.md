@@ -37,11 +37,11 @@ Under **PROJECT DETAILS**:
 
 Under **INSTANCE DETAILS**:
 
+1. Leave the **Deployment model** as _Resource manager_. This is the preferred model for all resource deployments in Azure and allows you to group all the related resources for your app into a _resource group_ for easier management.
+
 1. Enter a **Storage account name**. The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers.
 
 1. Select a **Location** near to you from the list above.
-
-1. Leave the **Deployment model** as _Resource manager_. This is the preferred model for all resource deployments in Azure and allows you to group all the related resources for your app into a _resource group_ for easier management.
 
 1. Select _Standard_ for the **Performance** option. This decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. However, remember that Premium only supports _page blobs_. You will need _block blobs_ for your videos, and a queue for buffering - both of which are only available with the _Standard_ option.
 
@@ -64,7 +64,7 @@ The following screenshot shows the completed settings for the **Basics** tab. No
     > [!WARNING]
     > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn’t support SSL for custom domain names, this option cannot be used with a custom domain name.
 
-1. Set the **Virtual networks** option to _None_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
+1. Set the **Virtual networks** option to _All networks_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
 
 1. Leave the **Data Lake Storage Gen2** option as _Disabled_. This is for big-data applications that aren't relevant to this module.
 
