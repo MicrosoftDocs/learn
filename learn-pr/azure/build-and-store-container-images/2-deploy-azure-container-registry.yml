@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.deploy-acr
 metadata:
-  title: Deploy Azure Container Registry
+  title: Exercise - Deploy Azure Container Registry
   description: Deploy Azure Container Registry
   ms.date: 09/24/2018
   #TODO: Update with real author name.
