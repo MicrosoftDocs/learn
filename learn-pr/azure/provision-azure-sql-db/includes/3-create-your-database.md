@@ -63,7 +63,7 @@ Because you don't have specific requirements around how data is sorted and compa
 
 Here you'll set up your database, which includes creating your logical server. You'll choose settings that support your transportation logistics application. In practice, you would choose settings that support the kind of app you're building.
 
-Over time if you you realize you need additional compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
+Over time if you realize you need additional compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -122,8 +122,10 @@ Let's enable your development computer to access the database through the firewa
 
     ![Screenshot of the Azure portal showing a SQL database overview blade with the Set server firewall button highlighted.](../media/3-set-server-firewall.png)
 
-1. Click **Add client IP**, and then click **Save**.
+1. Click **Add client IP**.
 
     ![Screenshot of the Azure portal showing a SQL database Firewall settings blade with the Add client IP button highlighted.](../media/3-add-client-ip.png)
+
+1. Click **Save**.
 
 In the next part, you'll get some hands-on practice with your new database and with Azure Cloud Shell. You'll connect to the database, create a table, add some sample data, and execute a few SQL statements.
