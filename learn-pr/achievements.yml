@@ -5,74 +5,18 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
-#- uid: learn.build-a-serverless-web-app.badge
-#  type: badge
-#  title: Build a serverless web app
-#  summary: Badge for the 'Build a serverless web app' module.
-#  iconUrl: /learn/achievements/build-a-serverless-web-app.svg
-#- uid: learn.prepare-to-develop-apps-on-azure.trophy
-#  type: trophy
-#  title: Prepare to develop apps on Azure Trophy
-#  summary: Trophy for the 'Prepare to develop apps on Azure' learning path
-#  iconUrl: http://via.placeholder.com/120x120
-- uid: learn.manage-resources-with-azure-portal.badge
+- uid: learn.make-your-virtual-machines-highly-available.badge
   type: badge
-  title: Manage resources with Azure portal Badge
-  summary: Manage resources with Azure portal Badge Summary
-  iconUrl: /learn/achievements/manage-resources-with-azure-portal.svg
-#- uid: learn.explore-azure-services-for-web-devs.badge
-#  type: badge
-#  title: Explore Azure services for web developers Badge
-#  summary: Explore Azure services for web developers Badge Summary
-#  iconUrl: /learn/achievements/explore-azure-services-for-web-devs.svg
-- uid: learn.migrate-sql-server-relational-data.badge
-  type: badge
-  title: Migrate your SQL server relational data to Azure SQL
-  summary: Migrate your SQL server relational data to Azure SQL
-  iconUrl: /learn/achievements/migrate-sql-server-to-azure-sql.svg
-#- uid: learn.interactive-iot-deployments.badge
-#  type: badge
-#  title: Working with interactive IoT deployments in Azure
-#  summary: Working with interactive IoT deployments in Azure
-#  iconUrl: http://via.placeholder.com/120x120
-#- uid: learn.choose-web-hosting.badge
-#  type: badge
-#  title: Choose a Web Hosting Option in Azure
-#  summary: Choose a Web Hosting Option in Azure
-#  iconUrl: http://via.placeholder.com/120x120
-#- uid: learn.iot-for-ops.badge
-#  type: badge
-#  title: IoT Suite for ops
-#  summary: IoT Suite for ops
-#  iconUrl: http://via.placeholder.com/120x120
-- uid: learn.web-app-with-mean-on-linux-vm.badge
-  type: badge
-  title: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
-  summary: Build and run a web application with the MEAN stack on an Azure Linux virtual machine
-  iconUrl: /learn/achievements/build-a-web-app-with-mean-on-a-linux-vm.svg
-- uid: learn.ci-cd-pipelines-azure-devops.badge
-  type: badge
-  title: Build Continuous Integration/Continuous Deployment pipelines using Azure DevOps badge
-  summary: Badge for 'Build Continuous Integration/Continuous Deployment pipelines using Azure DevOps' module.
-  iconUrl: /learn/achievements/build-ci-cd-pipelines-using-azure-devops.svg
+  title: Make your virtual machines highly available
+  summary: Make your virtual machines highly available
+  iconUrl: /learn/achievements/make-your-virtual-machines-highly-available.svg
 - uid: learn.intro-to-containers.badge
   type: badge
   title: Introduction to Containers badge
   summary: Badge for the 'Introduction to Containers' module.
   iconUrl: /learn/achievements/intro-to-containers.svg
-#- uid: learn.protect-your-resources-with-azure-security-center.badge
-#  type: badge
-#  title: Protect your resources with Azure Security Center
-#  summary: Protect your resources with Azure Security Center
-#  iconUrl: http://via.placeholder.com/120x120
-#- uid: learn.make-your-virtual-machines-highly-available.badge
-#  type: badge
-#  title: Make your virtual machines highly available
-#  summary: Make your virtual machines highly available
-#  iconUrl: /learn/achievements/make-your-virtual-machines-highly-available.svg
 - uid: learn.scale-and-size-virtual-machines.badge
   type: badge
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /learn/achievements/scale-and-size-virtual-machines.svg
-  iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg
