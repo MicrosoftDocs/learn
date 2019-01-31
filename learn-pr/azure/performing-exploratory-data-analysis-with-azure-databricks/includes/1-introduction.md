@@ -1,6 +1,6 @@
-Exploratory Data Analysis (EDA) is the process of analyzing a data set to find out any obvious anomalies and missing information. The primary purpose of EDA is to get a generic view of the data set without any preconcieved assumptions.
+Exploratory Data Analysis (EDA) is the process of analyzing a data set to find out any obvious anomalies and missing information. The primary purpose of EDA is to get a generic view of the data set without any preconceived assumptions.
 
-The main focus of performing EDA is to get the following information in a data set:
+The main focus of EDA is to get the following information in a data set:
 
 - Generic understanding of the data and its structure
 - Missing or incomplete information
@@ -14,4 +14,4 @@ The main focus of performing EDA is to get the following information in a data s
 
 - Load data from a flat file using Azure Databricks
 - Perform basic exploratory data analysis with Azure Databricks
-- Create a simple regression model
+- Create a basic regression model

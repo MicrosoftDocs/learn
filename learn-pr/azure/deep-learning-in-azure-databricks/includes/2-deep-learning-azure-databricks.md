@@ -1,9 +1,8 @@
-
 Azure Databricks provide capabilities to build deep learning algorithms that can be used to solve complex problems. Artificial neural networks make it possible to build such types of algorithms.
 
 ## What are artificial neural networks?
 
-Artificial neural networks are simpler representation of complex and dense neuron networks of a human brain. It is computing system consisting of several simple and interconnected elements or neurons that process complex data inputs with human-like precision and generates desired output.
+Artificial neural networks are simpler representation of complex and dense neuron networks of a human brain. It's a computing system consisting of several simple and interconnected elements or neurons that process complex data inputs with human-like precision.
 
 ![An image showing artificial neural network](../media/artificial_neuron_network.png)
 

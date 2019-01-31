@@ -19,6 +19,26 @@ This lab explores the following features that allow you to perform advanced EDA 
 
 - **Parsimonious model**. It's a basic model that gives you an idea about the predictive capability of your data using minimum number of variables. Azure Databricks notebook has built-in capabilities to plot the data from the DataFrame that helps you to visually represent the results of your model using graphs.
 
-- **One hot encoding and feature scaling**. In machine learning literature, one hot encoding is defined as an approach to encode categorical integer features using a one-hot or one-of-K scheme. Every distinct value of the categorical integer feature becomes a new column, which has all zero values except for rows where that value is present, where it has a value of 1. This is a way to transform categorical values into a form that can be more efficiently used by machine learning algorithms.
+- **One hot encoding and feature scaling**. In machine learning literature, one hot encoding is defined as an approach to encode categorical integer features using a one-hot or one-of-K scheme. Every distinct value of the categorical integer feature becomes a new column. Each new column a binary value of either 0 or 1 depending upon the fact whether that value exists for the category or not. Converting the dataset in the format makes it easier or machines to read and process.
 
-- **Dimensionality reduction**. Dimensionality reduction is the operation that transforms data with n dimensions (in Pandas world n columns in the DataFrame) to a representation of the data in m dimensions. Obviously m is less than n, and for visualizations we set m to be 2 or 3.
+ For example, if you are working on the following dataset that contains prices for different brands of cars.
+
+   | Brand | Categorical value| Price |
+   | ------------- | ------------- | ------------- |
+   | Nissan | 1 | 20000  |
+   | Nissan | 1 | 50000  |
+   | Nissan | 1 | 80000  |
+   | Toyota | 2 | 20000  |
+   | Hyundai| 3 | 25000  |
+ 
+  When this dataset goes through the one-hot process, it's converted into the following:
+
+   | Nissan | Toyota | Hyundai | Price|
+   | ------------- | ------------- | ------------- | --------------|
+   | 1 | 0 | 0 |20000  |
+   | 1 | 0 | 0 |50000  |
+   | 1 | 0 | 0 |80000  |
+   | 0 | 1 | 0 |20000  |
+   | 0 | 0 | 1 |25000  |
+
+- **Dimensionality reduction**. Dimensionality reduction is the operation that transforms data with n dimensions to a representation of the data in m dimensions, where m is less than n.

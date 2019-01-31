@@ -1,4 +1,4 @@
-Apache Spark notebooks of Azure Databricks provide many functions that allow you to perform basic and advanced exploratory data analysis. You can use these notebooks for basic analysis such as data cleaning and managing missing values. The notebooks also allow you to go on a more advanced level to perform critical data analysis such as feature scaling, dimensionality reduction, and feature importance estimation.
+You can use Azure Databricks notebooks to perform basic and advanced exploratory data analysis. The notebooks allow functions for basic analysis such as data cleaning and managing missing values. You can also go on a more advanced level for critical data analysis such as feature scaling, dimensionality reduction, and feature importance estimation.
 
 ## Clean up 
 
