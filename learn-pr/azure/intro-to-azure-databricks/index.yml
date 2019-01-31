@@ -29,11 +29,7 @@ roles:
 - developer
 - solution-architect
 products:
-- azure
-#- azure-databricks
-#- azure-sql-db
-#- azure-blob-storage
-#- azure-lake
+- azure-databricks
 units:
 - learn.intro-to-azure-databricks.1-intro-databricks
 - learn.intro-to-azure-databricks.2-create-databricks-workspace

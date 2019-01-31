@@ -27,11 +27,7 @@ roles:
   - developer
   - solution-architect
 products:
-- azure
-#- azure-databricks
-#- azure-sql-db
-#- azure-blob-storage
-#- azure-lake
+- azure-databricks
 units:
   - learn.performing-text-analytics-with-azure-databricks.1-introduction
   - learn.performing-text-analytics-with-azure-databricks.2-text-analytics-with-databricks
