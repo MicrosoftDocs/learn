@@ -18,30 +18,30 @@ quiz:
     - content: 'Which library can you use to achieve parallelized deep learning in Azure Databricks'
       choices:
         - content: Spark Deep Learning
-          correctExplanation: Spark Deep Learning supports parallelized deep learning in Spark and Azure Databricks. 
+          explanation: Spark Deep Learning supports parallelized deep learning in Spark and Azure Databricks. 
           isCorrect: true
         - content: Tensorflow
           isCorrect: false
-          incorrectExplanation: Tensorflow on its own does not support parallelized deep learning in Azure Databricks.
+          explanation: Tensorflow on its own does not support parallelized deep learning in Azure Databricks.
           content: TFLearn
           isCorrect: false
-          incorrectExplanation: TFLearn does not support parallelized deep learning in Azure Databricks.
+          explanation: TFLearn does not support parallelized deep learning in Azure Databricks.
     - content: 'When dealing with images, which of the following techniques might be used?'
       choices:
         - content: Convolution
-          correctExplanation: Convolution is a mathematical technique often used by artificial neurons in a network to process image data.
+          explanation: Convolution is a mathematical technique often used by artificial neurons in a network to process image data.
           isCorrect: true
         - content: Lemmatization
           isCorrect: false
-          incorrectExplanation: Lemmatization is used in text pre-processing, not for images.
+          explanation: Lemmatization is used in text pre-processing, not for images.
     - content: 'Which of these best describes the function of an auto-encoder neural network architecture?'
       choices:
         - content: A network that encodes the image into a compressed feature vector and then re-creates the image from the vector.
-          correctExplanation: This is the best description of an auto-encoder.
+          explanation: This is the best description of an auto-encoder.
           isCorrect: true
         - content: A network that automatically encodes image data into a vector.
           isCorrect: false
-          incorrectExplanation: This is an incomplete definition of an auto-encoder.
+          explanation: This is an incomplete definition of an auto-encoder.
         - content: A network that automatically decodes a vector into image data.
           isCorrect: false
-          incorrectExplanation: This is an incomplete definition of an auto-encoder.
+          explanation: This is an incomplete definition of an auto-encoder.

@@ -12,8 +12,8 @@ To learn more about usage of notebooks, clone the labs archive where sample note
 
 ## Clone the Databricks archive
 
-1. From the Azure Portal, navigate to your deployed Azure Databricks workspace and select Launch Workspace.
-1. Within the Workspace, using the command bar on the left, select **Workspace**, **Users** and select your username (the entry with house icon).
+1. From the Azure portal, navigate to your deployed Azure Databricks workspace and select Launch Workspace.
+1. Within the Workspace, using the command bar on the left, select **Workspace**, **Users**, and select your username (the entry with house icon).
 1. In the blade that appears, select the downwards pointing chevron next to your name, and select **Import**.
 
 ![A screenshot showing the menu option to import the archive](../media/import-archive.png)
@@ -24,7 +24,7 @@ To learn more about usage of notebooks, clone the labs archive where sample note
    ```
 1. Select **Import**.
 1. A folder called **01-intro** should appear. Select that folder.
-1. The folder should contain a set of notebooks. These are the notebooks you will use in completing this lab.
+1. The folder should contain a set of notebooks that you'll use in completing this lab.
 
 ## Complete the following notebooks
 
