@@ -1,5 +1,7 @@
 In the previous exercises, we created a directory, created a user and group, and then created a conditional access rule that requires Azure Multi-Factor Authentication when accessing the Azure portal. Now, we'll test if we can access our resources.
 
+[!include[](../../../includes/azure-lab-environment-not-available.md)]
+
 ## Test access to resources
 
 You know that your users will sign in and access all their SaaS applications using the MyApps portal, so this is what we'll test.
