@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-databricks.1-intro-databricks
+title: Introduction to Databricks
+metadata:
+  title: Introduction to Databricks
+  description: TBD
+  ms.date: 10/19/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-intro-databricks.md)]

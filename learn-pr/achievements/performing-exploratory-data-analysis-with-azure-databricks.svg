@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Data Science/performing-exploratory-data-analysis-with-azure-databricks</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-8.0%" y="-7.6%" width="114.9%" height="119.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.10193048 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-4" cx="14.875" cy="25.925" r="11.475"></circle>
+        <filter x="-8.4%" y="-8.4%" width="116.8%" height="116.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="-3" dy="-3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.670588235   0 0 0 0 0.862745098   0 0 0 0 0.925490196  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polyline id="path-6" points="0.075 65.4 17.075 15.4 41.075 57.4 58.075 2.4 73.075 22.4 86.075 0.4"></polyline>
+        <filter x="-4.1%" y="-3.1%" width="108.5%" height="111.6%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101590806 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M17.425,37.4 C11.0875325,37.4 5.95,32.2624675 5.95,25.925 C5.95,19.5875325 11.0875325,14.45 17.425,14.45 C23.7624675,14.45 28.9,19.5875325 28.9,25.925 C28.9,32.2624675 23.7624675,37.4 17.425,37.4 Z" id="path-8"></path>
+        <filter x="-8.4%" y="-8.4%" width="116.8%" height="116.8%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="-3" dy="-3" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.670588235   0 0 0 0 0.862745098   0 0 0 0 0.925490196  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M37.039088,7.69086837 C36.5491502,7.66362279 36.1655224,7.65 35.8882046,7.65 C32.755895,7.65 28.9938982,9.15281859 24.6022142,12.1584558 L24.6022169,12.1584598 C23.1727442,13.1367807 21.478493,13.6550142 19.7463332,13.6437658 L17.0624598,13.6263393 C15.3730384,13.6153685 13.7252088,13.1012014 12.3293283,12.1494753 C7.92979266,9.14982509 4.16608475,7.65 1.03820463,7.65 C0.978476575,7.65 0.908862527,7.65063643 0.829362484,7.65190929 L0.829362777,7.65192763 C0.480884989,7.65750705 0.193864914,7.379533 0.188285497,7.03105521 C0.188231585,7.027688 0.188204628,7.02432042 0.188204628,7.02095278 C0.188204628,7.02095278 0.188204628,7.02095278 0.188204628,7.02095278 C1.66425629,5.55017816 3.50673305,3.72803791 5.7156349,1.554532 L5.71563299,1.55453005 C6.27295873,1.00613503 7.00226525,0.666586814 7.78069112,0.593086846 C11.9682136,0.197695615 15.4657477,4.54747351e-13 18.2732933,4.54747351e-13 C21.125419,4.54747351e-13 25.0156189,0.284224873 29.943893,0.85267462 L29.9438924,0.852680495 C30.6965793,0.939498862 31.398701,1.27524461 31.9388051,1.80662267 C34.1921977,4.02360903 36.0367584,5.84836456 37.472487,7.28088925 C37.472487,7.28088925 37.472487,7.28088925 37.472487,7.28088925 L37.472487,7.28088925 C37.472487,7.50765733 37.2886551,7.69148918 37.0618871,7.69148918 C37.0542832,7.69148918 37.0466808,7.69127795 37.0390887,7.69085575 Z" id="path-10"></path>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-Science" transform="translate(-579.000000, -527.000000)">
+            <g id="Data-Science/performing-exploratory-data-analysis-with-azure-databricks" transform="translate(579.000000, 527.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-6" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(2.925000, 15.600000)">
+                            <g id="Group" stroke-width="1" fill-rule="evenodd" transform="translate(12.000000, 12.000000)">
+                                <path d="M16.9651968,2.71451213 C18.6350643,0.991360153 20.9271921,0 23.375,0 C28.3041414,0 32.3,3.99585861 32.3,8.925 C32.3,9.85891716 32.0363237,11.5394944 31.0081208,17.5851328 C30.9919916,17.679976 30.9919916,17.679976 30.9758667,17.7748241 C30.1593252,22.5782412 29.8141751,24.8111454 29.7486512,25.972866 C29.2611587,34.6159672 23.0796745,40.8 14.875,40.8 C6.65976435,40.8 0,34.1402357 0,25.925 C0,22.3080879 1.29655464,18.8895151 3.61243259,16.2076387 C4.6464377,15.0102207 6.75016046,12.8459208 9.79772377,9.80939172 C9.93786306,9.66979222 9.93786306,9.66979222 10.0780577,9.53026266 C11.5130444,8.10239152 16.570114,3.12220171 16.9651968,2.71451213 Z" id="Combined-Shape" fill="#182A37" fill-rule="nonzero"></path>
+                                <circle id="Oval" fill="#30404D" fill-rule="nonzero" cx="14.875" cy="25.925" r="14.025"></circle>
+                                <g id="Oval" fill-rule="nonzero">
+                                    <use fill="#C7E7F1" xlink:href="#path-4"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                    <use stroke="#232323" stroke-width="0.85" xlink:href="#path-4"></use>
+                                </g>
+                            </g>
+                            <g id="Path-5" stroke-linejoin="round">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                <use stroke="#FFFFFF" stroke-width="4" xlink:href="#path-6"></use>
+                            </g>
+                            <g id="Group-4" stroke-width="1" fill-rule="evenodd" transform="translate(46.850000, 12.000000)">
+                                <path d="M15.3348032,2.71451213 C15.729886,3.12220171 20.7869556,8.10239152 22.2219423,9.53026266 C22.3621369,9.66979222 22.3621369,9.66979222 22.5022762,9.80939172 C25.5498395,12.8459208 27.6535623,15.0102207 28.6875674,16.2076387 C31.0034454,18.8895151 32.3,22.3080879 32.3,25.925 C32.3,34.1402357 25.6402357,40.8 17.425,40.8 C9.22032549,40.8 3.03884127,34.6159672 2.55134881,25.972866 C2.48582487,24.8111454 2.14067476,22.5782412 1.32413333,17.7748241 C1.30800843,17.679976 1.30800843,17.679976 1.29187917,17.5851328 C0.26367632,11.5394944 0,9.85891716 0,8.925 C0,3.99585861 3.99585861,0 8.925,0 C11.3728079,0 13.6649357,0.991360153 15.3348032,2.71451213 Z" id="Combined-Shape" fill="#182A37" fill-rule="nonzero"></path>
+                                <path d="M17.425,39.95 C9.67920638,39.95 3.4,33.6707936 3.4,25.925 C3.4,18.1792064 9.67920638,11.9 17.425,11.9 C25.1707936,11.9 31.45,18.1792064 31.45,25.925 C31.45,33.6707936 25.1707936,39.95 17.425,39.95 Z" id="Oval" fill="#30404D" fill-rule="nonzero"></path>
+                                <g id="Oval" fill-rule="nonzero">
+                                    <use fill="#C7E7F1" xlink:href="#path-8"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                    <use stroke="#232323" stroke-width="0.85" xlink:href="#path-8"></use>
+                                </g>
+                            </g>
+                            <g id="Group-5" stroke-width="1" fill-rule="evenodd" transform="translate(27.300000, 14.550000)">
+                                <mask id="mask-11" fill="white">
+                                    <use xlink:href="#path-10"></use>
+                                </mask>
+                                <use id="Combined-Shape" fill="#DF5142" fill-rule="nonzero" xlink:href="#path-10"></use>
+                                <path d="M31.1082734,15.053492 C32.561646,16.5783895 37.472487,10.6624104 37.472487,7.36171126 C31.3351602,6.4474755 24.7304716,5.95 17.85,5.95 C11.6964657,5.95 5.76351844,6.34790972 0.188204628,7.08598942 C0.188204628,10.6624104 5.22600605,16.1753524 6.57375521,14.7571915 C10.1814688,14.2649396 13.9591998,14.0034322 17.85,14.0034322 C22.4597067,14.0034322 26.9107003,14.3705054 31.1082734,15.053492 Z" id="Oval-2" fill-opacity="0.200209466" fill="#000000" fill-rule="nonzero" mask="url(#mask-11)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

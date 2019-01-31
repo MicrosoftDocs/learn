@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.performing-exploratory-data-analysis-with-azure-databricks.5-summary-cleanup
+metadata:
+  title: Summary and cleanup
+  description: Cleanup and terminate Azure resources used by this lab
+  ms.date: 10/19/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary and cleanup
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-summary-cleanup.md)]
