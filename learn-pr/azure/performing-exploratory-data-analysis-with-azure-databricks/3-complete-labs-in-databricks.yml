@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.performing-exploratory-data-analysis-with-azure-databricks.3-complete-labs-in-databricks
+metadata:
+  title: Perform EDA using Databricks
+  description: Perform explratory data analysis (EDA) using Azure Databricks
+  ms.date: 10/19/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+title: Perform EDA using Databricks
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-complete-labs-in-databricks.md)]

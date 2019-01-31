@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn.performing-exploratory-data-analysis-with-azure-databricks.4-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge by answering questions about skills you learned from the lab
+  ms.date: 10/19/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge Check
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: 'Exploratory Data Analysis Quiz'
+  questions:
+    - content: 'What file types can be used to create a table using the Workspace UI?'
+      choices:
+        - content: CSV
+          explanation: Multiple file types are supported, not just CSV. 
+          isCorrect: false
+        - content: JSON
+          isCorrect: false
+          explanation:  Multiple file types are supported, not just JSON. 
+        - content: Avro
+          isCorrect: false
+          explanation:  Multiple file types are supported, not just Avro.
+        - content: All of the above.
+          isCorrect: true
+          explanation:  CSV, JSON and Avro file types are supported.   
+    - content: 'Which Python statement will yield a Spark dataframe from the query?'
+      choices:
+        - content: df = spark.sql("SELECT * FROM usedcars")
+          explanation: After executing this line, the variable df will refer to a Spark dataframe. 
+          isCorrect: true
+        - content: df = "SELECT * FROM usedcars".todf()
+          isCorrect: false
+          explanation: This is not valid syntax.
+        - content: df = spark.sql("SELECT * FROM usedcars").toPandas()
+          isCorrect: false
+          explanation: This will produce a Pandas dataframe, not a Spark dataframe.
+    - content: 'What method is used to calculate the correlation on all features in a Pandas dataframe?'
+      choices:
+        - content: correlation(df)
+          explanation: This syntax is invalid.
+          isCorrect: false
+        - content: df.correlation()
+          isCorrect: false
+          explanation: This is not the correct method name.
+        - content: df.corr()
+          isCorrect: true
+          explanation: The corr() method is invoked on a Pandas dataframe is used to calculate the correlation on all features in a Pandas dataframe.
+    - content: 'What method is used in Python cells to display the results as a formatted table or chart visualization?'
+      choices:
+        - content: display(df)
+          explanation: This is the correct syntax for rendering the output of the cell as a formatted table or chart.
+          isCorrect: true
+        - content: df.display()
+          isCorrect: false
+          explanation: This syntax is invalid.
+        - content: print(df)
+          isCorrect: false
+          explanation: The print method will display the dataframe as a text only table, but not a formatted table.
+# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.

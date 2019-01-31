@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deep-learning-in-azure-databricks.2-deep-learning-azure-databricks
+metadata:
+  title: Deep learning in Azure Databricks
+  description: Setup the required services in your Azure subscription. 
+  ms.date: 11/05/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deep learning in Azure Databricks
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-deep-learning-azure-databricks.md)]

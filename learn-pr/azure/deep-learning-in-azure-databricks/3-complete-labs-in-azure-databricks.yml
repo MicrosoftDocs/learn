@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deep-learning-in-azure-databricks.3-complete-labs-in-azure-databricks
+metadata:
+  title: Complete labs using Azure Databricks
+  description: Learn how to connect to the preconfigured lab environment and import the notebook labs.
+  ms.date: 11/05/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Complete labs using Azure Databricks
+durationInMinutes: 45
+content: |
+  [!include[](includes/3-complete-labs-in-azure-databricks.md)]
