@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Identify the tasks a Data Engineer performs in a cloud-hosted architecture
 summary: Learn the roles and responsibilities of a Data Engineer, and how they interact with other data and AI professionals. Explore the data engineering practices that are commonly undertaken in the role and examine a high-level process for architecting a data engineering project.
 abstract: | 
@@ -17,7 +16,6 @@ abstract: |
   - Outline Data Engineering Practices
   - Explore the high-level process for architecting a data engineering project
 prerequisites: None
-#todo: replace with real badge
 iconUrl: /learn/achievements/data-ai/data-engineering-processes-badge.svg
 levels:
 - beginner

@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Upload data to Azure Data Lake Storage
 summary: Learn the different ways to upload data to Data Lake Store Gen 2 - the Azure portal, Azure Storage Explorer, .NET or by copying data using Azure Data Factory.
 abstract: | 
@@ -16,7 +15,6 @@ abstract: |
   - Create an Azure Data Lake Store
   - Upload data to Azure Data Lake Storage Gen2 using Azure Storage Explorer
 prerequisites: An Azure account or active trial.
-#todo: replace with real badge
 iconUrl: /learn/achievements/data-ai/upload-data-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner
