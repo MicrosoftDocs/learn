@@ -18,7 +18,7 @@ abstract: |
   - List additional technologies that support the common data platform technologies
 prerequisites: None
 #todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/survey-the-azure-data-platform-badge.svg
 levels:
 - beginner
 roles:

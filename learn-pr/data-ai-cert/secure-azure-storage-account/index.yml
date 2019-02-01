@@ -21,7 +21,7 @@ abstract: |
   - Control network access
 prerequisites: None
 #todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/secure-azure-storage-account-badge.svg
 levels:
 - beginner
 roles:
