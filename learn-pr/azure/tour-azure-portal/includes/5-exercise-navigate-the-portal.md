@@ -6,7 +6,11 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 1. In the left-hand pane, click **All services**. Take a couple of minutes to scroll down the list to see how many services Azure offers.
 
-1. Click **Virtual machines**. The **Virtual Machines** blade appears. There is nothing currently showing because you have not defined any virtual machines.
+    ![Screenshot of the services blade](../media/5-services.blade.png)
+
+1. You can search for services through the _filter_ box.
+
+1. Select **Virtual machines**. If you don't see it, use the filter box. The **Virtual Machines** blade appears. There is nothing currently showing because you have not defined any virtual machines.
 
 1. Click the **+ Add** button. The **Create a virtual machine** blade appears, as in the previous exercise.
 
@@ -20,6 +24,8 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 1. On the icon bar menu bar, click the **Notifications** (bell) icon. This will list any pending notifications.
 
+    ![Screenshot of notifications window](../media/5-notifications-blade.png)
+
 1. If any notifications appear, hover your mouse over one of them. Click the **X** that appears in that notification to dismiss it.
 
 1. To the right of **Dismiss**, click **All**. You should have no notifications showing.
@@ -28,23 +34,24 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 ## Azure Cloud Shell
 
-1. Click the **Cloud Shell** icon (`>_`) to create a Cloud Shell session.
+![Icon representing the Azure Cloud Shell](../media/5-cloud-shell-icon.png)
 
-1. You may see a Welcome window. Click **Bash** or **PowerShell**, depending on your personal preferences.
+The Azure Cloud Shell allows you to use a command-line interface (CLI) to execute commands in your Azure subscription. You can access it by clicking the (`>_`) icon in the toolbar. However, it isn't available in the Sandbox environment - so you will only be able to do this in your own active subscriptions. You can also navigate to <https://shell.azure.com> to launch a Cloud Shell in the browser independent of the portal.
 
-    - If you now see a window notifying you that you have no storage mounted, click **Create storage**. You may also need to click the link **Advanced settings** and manually enter names for the required storage configuration.
+When you launch the shell, you will see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at anytime through the language drop-down on the left side of the shell.
 
-1. Once the Cloud Shell prompt appears, type `az help`, and press Enter.
+Finally, there are a variety of management and programming tools included in the created environment.
 
-1. Click the language drop-down on the left of the bar, and change the scripting language from PowerShell to Bash or from Bash to PowerShell, depending on which option you selected. Click **Restart** when prompted. The screen displays **Restarting your Cloud Shell**.
-
-1. In the restarted shell, type `az help` and press Enter.
-
-1. In the Cloud Shell window, click the **Settings** (cog) icon. Note that you can change the text size and the font.
-
-1. Click the **X** in the top right-hand corner to close the **Cloud Shell** pane.
+- Azure command-line tools (Azure CLI, AzCopy, etc.)
+- Languages / Frameworks including .NET Core, Python, and Java
+- Container management support for Docker, Kubernetes, etc.
+- Code editors such as vim, emacs, code, and nano
+- Build tools (make, maven, npm, etc.)
+- Database query tools such as `sqlcmd`
 
 ## Settings
+
+![Icon representing the settings panel](../media/5-settings-icon.png)
 
 1. Click the **Settings** (cog) icon to open the **Portal settings** pane.
 
@@ -66,6 +73,8 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 ## Feedback blade
 
+![Icon representing the feedback panel](../media/5-feedback-icon.png)
+
 1. Click the **Feedback** (smiley face) icon to open the **Send us feedback** blade.
 
 1. Type your impressions of Azure in the **Tell us about your experience** box, click the box that says **Microsoft can email you about your feedback**, and click **Submit Feedback**.
@@ -74,10 +83,7 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 ## Help blade
 
-### Support requests
-
-> [!NOTE]
-> Support requests can only be created using an active paid subscription. Creating support requests from a free Microsoft Learn sandbox is not supported. The following information applies to paid subscriptions which allow new support requests to be created.
+![Icon representing the feedback panel](../media/5-help-icon.png)
 
 1. Click the **Help** (`?`) icon to show the **Help** blade.
 
@@ -90,6 +96,9 @@ The Azure Portal has a lot of features and services available; let's look at som
     - **Contact information:** preferred contact method and the information associated with this contact method
 
 1. You can view the status of your support requests by clicking on **All support requests**.
+
+> [!NOTE]
+> Support requests can only be created using an active paid subscription. Creating support requests from a free Microsoft Learn sandbox is not supported.
 
 ### What's new and other information
 
@@ -109,7 +118,13 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 ## Directory and subscription
 
-1. Click the **Directory + Subscription** (book and filter) icon to show the **Directory + subscription** blade.  This is where you can switch between multiple directories if you have more than one. If you do not have additional directories, you will not be able to switch directories, but there is a link to learn more about them.
+![Icon representing the subscription panel](../media/5-subscription-icon.png)
+
+1. Click the **Directory + Subscription** (book and filter) icon to show the **Directory + subscription** blade.  
+
+    This is where you can switch between multiple subscriptions or directories. You should see the Concierge subscription here, and if you have an Azure account tied to the same email address, your own subscription.
+
+    There is also a link to learn more about directories and subscriptions.
 
 1. Click the **X** in the top right-hand corner to close the **Directory + subscription** blade.
 
