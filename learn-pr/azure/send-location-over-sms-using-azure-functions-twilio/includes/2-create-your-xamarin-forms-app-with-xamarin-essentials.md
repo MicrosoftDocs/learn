@@ -1,5 +1,7 @@
 The application you're building is a cross-platform mobile app that talks to an Azure function to share your location. In this unit, you create the blank mobile app using Visual Studio and install a NuGet package that has an API for getting the user's location.
 
+[!include[](../../../includes/azure-lab-environment-not-available.md)]
+
 ## Create the Xamarin.Forms project
 
 1. From Visual Studio, select *File->New->Project...*.
