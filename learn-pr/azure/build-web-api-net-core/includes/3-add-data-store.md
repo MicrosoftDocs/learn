@@ -1,0 +1,186 @@
+A type of class called a *Model* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an in-memory EF Core database.
+
+> [!IMPORTANT]
+> An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
+
+1. Run the following command:
+
+    ```bash
+    mkdir Models && touch $_/Product.cs
+    ```
+
+    > [!NOTE]
+    > The `touch` command is specific to Linux, the Cloud Shell's underlying OS.
+
+    A *Models* directory is created in the project root with an empty *Product.cs* file. The directory name *Models* is a convention. The directory name comes from the **Model**-View-Controller architecture used by the web API.
+1. Update file explorer by clicking the editor's refresh icon.
+
+    ![refresh file explorer](../media/3-add-data-store/cloud-shell-refresh-files.png)
+
+    The *Models* directory and its *Product.cs* file appear.
+1. Add the following code to *Models/Product.cs* to define a product. Press `Ctrl+S` or `Command+S` (macOS) to save your changes.
+
+    ```csharp
+    using System.ComponentModel.DataAnnotations;
+
+    namespace RetailApi.Models
+    {
+        public class Product
+        {
+            public long Id { get; set; }
+
+            [Required]
+            public string Name { get; set; }
+
+            [Required]
+            [Range(minimum: 0.01, maximum: (double) decimal.MaxValue)]
+            public decimal Price { get; set; }
+        }
+    }
+    ```
+    > [!TIP]
+    > Press `CTRL+V` or `Command+V` (macOS) to paste copied code from the clipboard.
+
+    The `Name` and `Price` properties are marked as required to ensure values are provided when creating a `Product` object. Additionally, the `Price` property enforces minimum and maximum values.
+1. Run the following command:
+
+    ```bash
+    mkdir Data && touch $_/ProductsContext.cs $_/SeedData.cs
+    ```
+
+    A *Data* directory is created in the project root with empty *ProductsContext.cs* and *SeedData.cs* files.
+1. Refresh file explorer, and add the following code to *Data/ProductsContext.cs*. Save your changes.
+
+    ```csharp
+    using Microsoft.EntityFrameworkCore;
+    using RetailApi.Models;
+
+    namespace RetailApi.Data
+    {
+        public class ProductsContext : DbContext
+        {
+            public ProductsContext(DbContextOptions<ProductsContext> options)
+                : base(options)
+            {
+            }
+
+            public DbSet<Product> Products { get; set; }
+        }
+    }
+    ```
+
+    The preceding code creates a product-specific implementation of an EF Core `DbContext` object. The `ProductContext` class provides access an in-memory database, as configured in the next step.
+1. Add the following code as the first line in the *Startup.cs* file's `ConfigureServices` method. Save your changes.
+
+    ```csharp
+    services.AddDbContext<ProductsContext>(options =>
+        options.UseInMemoryDatabase("Products"));
+    ```
+
+    The preceding code:
+
+    * Registers the custom `DbContext` class, named `ProductsContext`, with ASP.NET Core's Dependency Injection system.
+    * Defines an in-memory database named *Products*.
+1. Add the following code to the top of *Startup.cs*. Save your changes.
+
+    ```csharp
+    using Microsoft.EntityFrameworkCore;
+    using RetailApi.Data;
+    ```
+
+    The `Microsoft.EntityFrameworkCore` namespace resolves the `UseInMemoryDatabase` method call. The `RetailApi.Data` namespace resolves the `ProductsContext` reference.
+1. Add the following code to *Data/SeedData.cs*. Save your changes.
+
+    ```csharp
+    using System;
+    using System.Linq;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.DependencyInjection;
+    using RetailApi.Models;
+
+    namespace RetailApi.Data
+    {
+        public static class SeedData
+        {
+            public static void Initialize(IServiceProvider serviceProvider)
+            {
+                using (var context = new ProductsContext(serviceProvider
+                    .GetRequiredService<DbContextOptions<ProductsContext>>()))
+                {
+                    if (!context.Products.Any())
+                    {
+                        context.Products.AddRange(
+                            new Product { Name = "Squeaky Bone", Price = 20.99m },
+                            new Product { Name = "Knotted Rope", Price = 12.99m }
+                        );
+
+                        context.SaveChanges();
+                    }
+                }
+            }
+        }
+    }
+    ```
+
+    The preceding code defines a static `SeedData` class. The class' `Initialize` method seeds the in-memory database with two dog toys.
+1. Replace the code in *Program.cs* with the following code. Save your changes.
+
+    ```csharp
+    using System;
+    using Microsoft.AspNetCore;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
+    using RetailApi.Data;
+
+    namespace RetailApi
+    {
+        public class Program
+        {
+            public static void Main(string[] args)
+            {
+                var host = CreateWebHostBuilder(args).Build();
+                SeedDatabase(host);
+                host.Run();
+            }
+
+            public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+                WebHost.CreateDefaultBuilder(args)
+                    .UseStartup<Startup>();
+
+            private static void SeedDatabase(IWebHost host)
+            {
+                using (var scope = host.Services.CreateScope())
+                {
+                    var services = scope.ServiceProvider;
+
+                    try
+                    {
+                        var context = services.GetRequiredService<ProductsContext>();
+                        context.Database.EnsureCreated();
+                        SeedData.Initialize(services);
+                    }
+                    catch (Exception ex)
+                    {
+                        var logger = services.GetRequiredService<ILogger<Program>>();
+                        logger.LogError(ex, "A database seeding error occurred.");
+                    }
+                }
+            }
+        }
+    }
+    ```
+
+    The `Program.Main` method is the first code to execute when the app starts. With the preceding changes, seeding of the in-memory database is triggered via a call to `SeedData.Initialize`.
+
+    > [!IMPORTANT]
+    > This database seeding strategy isn't recommended in a production environment. Consider seeding during database deployment instead.
+1. Run the following command:
+
+    ```bash
+    dotnet build
+    ```
+
+    The preceding command builds the web API project. The build should succeed with no warnings.
+
+The `Product` Model and `ProductsContext` class will be referenced by the controller created in the next unit.
