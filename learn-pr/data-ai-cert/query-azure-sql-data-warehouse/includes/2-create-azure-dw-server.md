@@ -1,7 +1,7 @@
 Let's create a sample data warehouse in Azure with sample data. You will need an Azure account to go through this exercise.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved in creating a new Azure SQL Datawarehouse.
+> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved in creating a new Azure SQL Data Warehouse.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-port=true).
 

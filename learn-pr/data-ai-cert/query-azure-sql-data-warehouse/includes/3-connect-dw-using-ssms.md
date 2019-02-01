@@ -1,4 +1,4 @@
-There are many applications you can use as a client for the Azure SQL Datawarehouse server. 
+There are many applications you can use as a client for the Azure SQL Data Warehouse server. 
 
 - Data engineers often use SQL Server Management Studio (SSMS) to access Microsoft database products including Azure SQL Database, Azure SQL Data Warehouse, and on-premises SQL Server instances. 
 - Data analysts usually use Excel or Power BI as their client application to query the database. 

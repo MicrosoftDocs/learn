@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.import-data-into-asdw-with-polybase.upload-text-data
+title: Exercise - upload data to an Azure blob storage container
+metadata:
+  title: Exercise - upload data to an Azure blob storage container - Learn
+  description: Exercise - upload data to an Azure blob storage container - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-upload-text-data.md)]
