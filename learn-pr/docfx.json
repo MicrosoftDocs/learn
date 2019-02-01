@@ -19,6 +19,17 @@
         "dest": "modules"
       },
       {
+        "src": "data-ai-cert",
+        "files": [
+          "**/*.md",
+          "**/*.yml"         
+        ],
+        "exclude": [
+          "**/includes/**"       
+        ],
+        "dest": "modules"
+      },
+      {
         "files": [
           "**/*.md",
           "**/*.yml"

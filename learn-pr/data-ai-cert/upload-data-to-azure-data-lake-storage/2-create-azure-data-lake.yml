@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake
+title: Create an Azure Storage account for Azure Data Lake Storage
+metadata:
+  title: Create an Azure Storage account for Azure Data Lake Storage - Learn
+  description: Create an Azure Storage account for Azure Data Lake Storage - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-azure-data-lake.md)]
