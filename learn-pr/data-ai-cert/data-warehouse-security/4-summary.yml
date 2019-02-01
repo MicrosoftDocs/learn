@@ -33,7 +33,7 @@ quiz:
     choices: 
     - content: "They are not different. They are the same object."
       isCorrect: false
-      explanation: "That is not the correct answer. Logins and users are not the same objects in SQL Datawarehouse."
+      explanation: "That is not the correct answer. Logins and users are not the same objects in SQL Data warehouse."
     - content: "Logins provide access to the databases within a server and users provide access to the server."
       isCorrect: false
       explanation: "That is not the correct answer.  It is logins that provide access to a server and users provide access to databases within it."
