@@ -58,6 +58,6 @@ In Microsoft Learn, we will use the Cloud Shell for many of the interactive exer
 
 ## Other options
 
-There are also Azure SDKs for a range of languages and frameworks, as well as REST APIs that you can use to manage and control Azure resources programmatically. For a full list of tools available, see the [Downloads](https://azure.microsoft.com/en-us/downloads/) page.
+There are also Azure SDKs for a range of languages and frameworks, as well as REST APIs that you can use to manage and control Azure resources programmatically. For a full list of tools available, see the [Downloads](https://azure.microsoft.com/downloads/) page.
 
 When starting with Azure, you will most often use the Azure portal. Let's take a closer look at the portal approach.

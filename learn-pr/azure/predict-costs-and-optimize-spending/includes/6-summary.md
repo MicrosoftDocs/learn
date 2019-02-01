@@ -11,6 +11,6 @@ Here are some places to go to learn more about what we've covered today:
 
 - [Setting up spending limits in Azure](https://docs.microsoft.com/azure/billing/billing-spending-limit)
 - [Azure budgets](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario)
-- [Explore flexible purchasing options for Azure](https://azure.microsoft.com/en-us/pricing/purchase-options/)
+- [Explore flexible purchasing options for Azure](https://azure.microsoft.com/pricing/purchase-options/)
 - [Understand terms on your Microsoft Azure invoice](https://docs.microsoft.com/azure/billing/billing-understand-your-invoice)
-- [Bandwidth Pricing Details](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)
+- [Bandwidth Pricing Details](https://azure.microsoft.com/pricing/details/bandwidth/)

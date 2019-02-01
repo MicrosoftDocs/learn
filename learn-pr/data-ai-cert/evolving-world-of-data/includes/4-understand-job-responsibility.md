@@ -1,0 +1,15 @@
+When moving your skills from managing on-premises database server systems such as Microsoft SQL Server to the cloud-based data systems, the role of the SQL Server professional will evolve from being a SQL Server-specific role to more data-specific role, the Data Engineer.  While SQL Server professionals were limited to working with relational database systems, Data Engineers also work with unstructured data and a wide variety of new data types such as streaming data.
+
+Mastering data engineering requires learning a new set of tools, architectures, and platforms.  Where the SQL Professional may have mastered T-SQL as the primary data manipulation tool, the Data Engineer may use additional technologies like HDInsight and Cosmos DB, and languages such as Hive or Python to manipulate data in big data systems.  
+
+## Changing loading approaches from ETL to ELT
+
+Data extraction is the process by which a Data Engineer retrieves raw data from a structured or unstructured data pool and migrates it to a staging data repository.  Since the data source may have a different structure than the target destination, Data Engineers transform the data from the source schema to the destination schema as part of a process called transformation.  Loading occurs when the transformed data is loaded into the data warehouse.  A disadvantage of the Extract, Transform, and Load (ETL) approach is the transformation stage can be time-consuming, potentially causing source system resources to be tied up while waiting for the process to complete.
+
+With the Extract, Load and Transform (ELT) approach, the data is immediately extracted and loaded into a large data repository such as Azure Cosmos DB or Azure Data Lake Storage to reduce the resource contention on source systems.  Data Engineers can begin transforming the data as soon as the load is completed.  This also provides a more flexible architecture for supporting multiple transformations.  For example, given some raw data, how the marketing department needs to transform the data can be different than how the operations department requires that same data.
+
+## Moving from implementing to provisioning servers
+
+SQL Server professionals would typically work with versions of on-premises SQL Server to meet the data requirement of an organization. In the past, this would entail the lengthy process of installing and configuring the servers and services to provide the infrastructure needed to support a solution. Such would take days to complete, and in the case of high availability environments, it could also take weeks.
+
+Microsoft Azure reduces the complexity when it comes to building and deploying servers.  Administrators can utilize a web user interface for simple deployments or can create powerful scripts to automate more complex deployments.   Within minutes, an organization can stand up a globally distributed highly performing and available database quicker than it takes to read this module. This means Data Engineers spend less time worrying about the setup of services, and they can focus more on security and deriving more value from the data for the business.

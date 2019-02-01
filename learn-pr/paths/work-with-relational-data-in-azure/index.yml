@@ -18,6 +18,7 @@ levels:
 - intermediate
 roles:
 - developer
+- data-engineer
 products:
 - azure
 - azure-sql-database

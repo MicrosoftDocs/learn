@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.transform-data-with-azure-stream-analytics.summary
+title: Summary
+metadata:
+  title: Summary - Learn
+  description: Summary - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which job input consumes data streams from applications at low latencies and high throughput?"
+    choices: 
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "That is not the correct answer. Azure Blob stores static data that can be rerun through a streaming job."
+    - content: "Event Hubs."
+      isCorrect: true
+      explanation: "That is the correct answer. Event hubs consumes data streams from applications at low latencies and high throughput."
+    - content: "IoT Hubs."
+      isCorrect: false
+      explanation: "That is not the correct answer. Azure IoT Hub is a data stream ingestion service that consumes events from IoT devices and also provides bi-directional communication between Azure and IoT devices."
+
+  - content: "Streaming Analytics Query Language is a subset of which query language?"
+    choices: 
+    - content: "T-SQL"
+      isCorrect: true
+      explanation: "Correct. The query language you use is based heavily on T-SQL."
+    - content: "Logins provide access to the databases within a server and users provide access to the server."
+      isCorrect: false
+      explanation: "That is not the correct answer. WQL is Windows Management Instrumentation query language."
+    - content: "JSON"
+      isCorrect: false
+      explanation: "That is not the correct answer. JSON is an open standard file format."

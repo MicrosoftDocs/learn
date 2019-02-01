@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.survey-the-azure-data-platform.azure-hdinsight
+title: Understand Azure HDInsight
+metadata:
+  title: Understand Azure HDInsight - Learn
+  description: Understand Azure HDInsight - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-azure-hdinsight.md)]

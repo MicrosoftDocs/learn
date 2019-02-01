@@ -1,10 +1,9 @@
-> [!TIP]
+<!--->> [!TIP]
 > The username and password you need to sign in to the VM are located on the **Resources** tab.
 
 > [!NOTE]
 > If you are using a Mac, after launching the VM you may need to use either the lightning icon on the toolbar, or the **Ctrl+Alt+Delete** option from the **Resources** tab next to the instructions to unlock the VM.
-
-
+--->
 In this module, you'll create a cross-platform Xamarin.Forms app with a serverless back end. This app will get the user's location from their device and send it with a list of phone numbers to an Azure function. The function will then use a binding to a third-party service (Twilio) to send your location as an SMS message to all the phone numbers provided.
 
 This process involves the following steps:
@@ -20,6 +19,8 @@ This process involves the following steps:
 The following illustration shows an overview of this process.
 
 ![An illustration showing a high-level architecture of the process of sharing location through text message.](../media/1-architecture.png)
+
+[!include[](../../../includes/azure-lab-environment-not-available.md)]
 
 ## Create a Twilio account
 

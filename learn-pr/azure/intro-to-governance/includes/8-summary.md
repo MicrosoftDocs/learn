@@ -7,5 +7,5 @@ Here are some places to go to learn more about what we've covered today:
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
 - [Service Trust Portal](https://aka.ms/STP)
 - [Azure Service Health](https://azure.microsoft.com/features/service-health/)
-- [Azure Monitor](https://azure.microsoft.com/en-us/services/monitor/)
-- [Azure Status](https://azure.microsoft.com/en-us/status/)
+- [Azure Monitor](https://azure.microsoft.com/services/monitor/)
+- [Azure Status](https://azure.microsoft.com/status/)

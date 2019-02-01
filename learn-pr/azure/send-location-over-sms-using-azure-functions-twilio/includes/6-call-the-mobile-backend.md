@@ -1,5 +1,7 @@
 The mobile app runs and the initial version of the Azure function has been created. In this unit, you call the Azure function from the mobile app, passing in the user's location and the list of phone numbers the user wants to send SMS messages to.
 
+[!include[](../../../includes/azure-lab-environment-not-available.md)]
+
 ## Calling the Azure function from the mobile app
 
 1. Open the `MainViewModel`.
