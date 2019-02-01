@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Secure your Azure Storage account
 summary: Learn how Azure Storage provides a multi-layered security model to protect your data with access keys, secure networks, and proactive monitoring with Advanced Threat Detection - Learn
 abstract: | 
@@ -20,8 +19,7 @@ abstract: |
   - Understand Advanced Threat Detection
   - Control network access
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/secure-azure-storage-account-badge.svg
 levels:
 - beginner
 roles:

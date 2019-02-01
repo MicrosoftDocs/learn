@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Survey the services in the Azure Data Platform
 summary: Learn how the Microsoft Azure platform provides a rich set of technologies to analyze text, images, relational, non-relational, or streaming data. See how Data Engineers can choose the technologies that are most appropriate to meet their business requirements and scale those solutions to meet demand securely.
 abstract: | 
@@ -17,8 +16,7 @@ abstract: |
   - Explore the common Azure data platform technologies and when to use them
   - List additional technologies that support the common data platform technologies
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/survey-the-azure-data-platform-badge.svg
 levels:
 - beginner
 roles:
