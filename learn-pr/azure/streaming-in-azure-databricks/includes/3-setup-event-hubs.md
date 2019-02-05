@@ -4,15 +4,15 @@ The first step towards using Spark Structured Streaming is setting up your Azure
 
 1. In the Azure portal, select + Create a resource, enter "event hubs" into the Search the Marketplace box, select Event Hubs from the results, and then select Create.
 
-    ![Screenshot of Azure Portal with + Create a resource highlighted in the navigation pane, "event hubs" entered into the Search the Marketplace box, and Event Hubs highlighted in the results.](../media/create-event-hubs.PNG)
+    ![Screenshot of Azure portal with + Create a resource highlighted in the navigation pane, "event hubs" entered into the Search the Marketplace box, and Event Hubs highlighted in the results.](../media/create-event-hubs.PNG)
 
-1. In the Create Namespace Event Hubs blade, enter the following:
+1. In the Create Namespace Event Hubs blade, enter the following information:
 
    - _Name_: Enter a unique name, such as **databricksdemoeventhubs**. Uniqueness will be indicated by a green check mark.
    - _Pricing tier_: Select **Basic**.
-   - _Subscription_: Select the subscription group you are using for this module.
+   - _Subscription_: Select the subscription group you're using for this module.
    - _Resource group_: Choose your module resource group.
-   - _Location_: Select the location you are using for this module.
+   - _Location_: Select the location you're using for this module.
    - Select **Create**.
 
    ![Screenshot of Create Event Hubs namespace page](../media/create-event-hubs-namespace.PNG)
@@ -45,7 +45,7 @@ The first step towards using Spark Structured Streaming is setting up your Azure
 
    ![Screenshot of share access policy add button](../media/shared-access-policy-add-button.PNG)
 
-1. On the Add SAS Policy blade, enter the following:
+1. On the Add SAS Policy blade, enter the following information:
 
    - _Policy name_: Enter both.
    - _Manage_: Leave unchecked.
