@@ -14,7 +14,7 @@ Follow the steps in this unit to learn how to load data from Azure Blob Storage 
 
 ## Create external data source
 
-Execute following statements in the query window to create an external data source which defines connection details to the **labdata** container of the Azure Storage account provisioned in your resource group.
+Execute following statements in the query window to create an external data source, which defines connection details to the **labdata** container of the Azure Storage account provisioned in your resource group.
 
 Replace token **<Name_Of_Storage_Account>** with name of Azure Storage account provisioned in your resource group in the final step of the Setup the Environment unit.
 
@@ -64,7 +64,7 @@ A definition of the external file format helps Data Warehouse understand the for
 
 - _STRING_DELIMITER_ = `string_delimiter`. Specifies the field terminator for data of type string in the text-delimited file.
 
-- _DATE_FORMAT_ = `datetime_format`. Specifies a custom format for all date and time data that might appear in a delimited text file. The TransactionDate field holds date values (eg. "2017-01-24 00:00:00.000")
+- _DATE_FORMAT_ = `datetime_format`. Specifies a custom format for all date and time data that might appear in a delimited text file. The TransactionDate field holds date values (for example "2017-01-24 00:00:00.000")
 
 ## Create schema for external table
 
@@ -76,7 +76,7 @@ A definition of the external file format helps Data Warehouse understand the for
 
 ## Create external table
 
-External tables refer to data from an external data source. Data is not stored within SQL Data Warehouse.
+External tables refer to data from an external data source. Data isn't stored within SQL Data Warehouse.
 
 1. Clear the query window and execute following statements to define an external table:
 
@@ -112,11 +112,11 @@ External tables refer to data from an external data source. Data is not stored w
     );
     ```
 
-- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, must match the data in the external files. If there is a mismatch, the file rows will be rejected when querying the actual data.
+- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, must match the data in the external files. If there's a mismatch, the file rows will be rejected when querying the actual data.
 
 - _LOCATION_ = `folder_or_filepath`. Specifies the folder or the file path and file name for the actual data in Hadoop or Azure blob storage. The location starts from the root folder; the root folder is the data location specified in the external data source. In the above statement, the `Transaction.txt` file contains the data, and this file is present in the container specified inside the external data source.
 
-- _DATA_SOURCE_ = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure blob storage. Here we are referring to the **LabAzureStorage** external data store defined in earlier steps. This external data store points to the container inside the Azure Blob Storage account.
+- _DATA_SOURCE_ = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure blob storage. Here we're referring to the **LabAzureStorage** external data store defined in earlier steps. This external data store points to the container inside the Azure Blob Storage account.
 
 - _FILE_FORMAT_ = `external_file_format_name`. Specifies the name of the external file format object that stores the file type and compression method for the external data. In the above statement, the `FILE_FORMAT` is set to the **TextFileFormat** object created in earlier steps.
 
@@ -124,7 +124,7 @@ External tables refer to data from an external data source. Data is not stored w
 
 - _REJECT_TYPE_ = `value | percentage`. Clarifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
 
-- _REJECT_VALUE_. If `REJECT_TYPE` is `value` then the PolyBase query will fail when the number of rejected rows exceeds `reject_value`. If `REJECT_TYPE` is `percentage` then the PolyBase query will fail when the percentage of failed rows exceeds `reject_value`. The percentage of failed rows is calculated at intervals.
+- _REJECT_VALUE_. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `reject_value`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `reject_value`. The percentage of failed rows is calculated at intervals.
 
   In the above statement, `REJECT_VALUE` is set to 1 to avoid headers in the external text file.
 
@@ -144,7 +144,7 @@ External tables refer to data from an external data source. Data is not stored w
 
 ## Create SQL Data Warehouse table and load data
 
-Create a table in SQL Data Warehouse using the `CREATE TABLE AS SELECT` (CTAS) feature. It is a fully parallelized operation that creates a new table based on the output of a SELECT statement.
+Create a table in SQL Data Warehouse using the `CREATE TABLE AS SELECT` (CTAS) feature. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
 
 In this exercise, the CTAS feature is used to create a table in SQL Data Warehouse based on the external table defined in an earlier step. It not only creates tables but also loads data in the table obtained in the select statement.
 
@@ -161,6 +161,6 @@ In this exercise, the CTAS feature is used to create a table in SQL Data Warehou
     OPTION (LABEL = 'CTAS : Load [cso].[Transaction]');
     ```
 
-- _DISTRIBUTION_ `HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE`. The CTAS statement requires a distribution option and does not have default values. The above table is created using the `HASH` distribution method on the `TransactionId` column.
+- _DISTRIBUTION_ `HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE`. The CTAS statement requires a distribution option and doesn't have default values. The above table is created using the `HASH` distribution method on the `TransactionId` column.
 
-- _LABEL_. This option labels the query which helps to easily identify the query.
+- _LABEL_. This option labels the query, which helps to easily identify the query.

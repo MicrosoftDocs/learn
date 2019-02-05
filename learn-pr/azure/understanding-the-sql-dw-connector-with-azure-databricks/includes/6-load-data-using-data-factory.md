@@ -1,8 +1,8 @@
-In this unit, you will learn how to use Data Factory to load data into SQL Data warehouse.
+In this unit, you'll learn how to use Data Factory to load data into SQL Data warehouse.
 
-[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. Azure Data Factory supports various data stores, however for this exercise we will use Azure SQL Database as data source.
+[Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction) is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. Azure Data Factory supports various data stores, however for this exercise we'll use Azure SQL Database as data source.
 
-The steps in this unit guide you on how to load data from a table inside a Azure SQL Database to a table in SQL Data Warehouse.
+The steps in this unit guide you on how to load data from a table inside Azure SQL Database to a table in SQL Data Warehouse.
 
 ## Access data warehouse
 
@@ -37,7 +37,7 @@ The steps in this unit guide you on how to load data from a table inside a Azure
 
     ![Complete the New Data Factory form](../media/sql-dw-load-data-create-df.png)
 
-1. Wait until the new data factory gets created and you are navigated back to the **Select Data Factory** window.
+1. Wait until the new data factory gets created and you're navigated back to the **Select Data Factory** window.
 
 1. On the **Select Data Factory** window, select the **Load Data** option and press the **Next** button at the bottom.
 
@@ -45,11 +45,11 @@ The steps in this unit guide you on how to load data from a table inside a Azure
 
 ## Configure the data factory properties
 
-On data factory configuration page you will be asked to provide details for source and destination.
+On data factory configuration page, you'll be asked to provide details for source and destination.
 
 1. On **Properties** tab, provide following details and click the **Next** button to move on to next tab:
 
-    - _Task name_ : Enter desired name for the task or keep the default value.
+    - _Task name_: Enter desired name for the task or keep the default value.
     - _Task description_: This is an optional field, you can provide a description for the task.
     - _Task cadence or Task Schedule_: Select option **Run once now**.
     - _Expiration time_: Keep the default value.
@@ -64,7 +64,7 @@ On data factory configuration page you will be asked to provide details for sour
 
     ![Find and select Azure SQL Database, then click next](../media/sql-dw-load-data-source-select.png)
 
-1. On **Specify the Azure SQL database** page, enter following properties to setup the source database and click the **Next** button at the bottom:
+1. On **Specify the Azure SQL database** page, enter following properties to set up the source database and click the **Next** button at the bottom:
 
     - _Connection name_: Enter desired connection name for Azure SQL Database connection or keep the default name.
     - _Server/database selection method_: Select the **From Azure subscriptions** option from dropdown list.
@@ -76,13 +76,13 @@ On data factory configuration page you will be asked to provide details for sour
 
     ![Complete the form, then click Next](../media/sql-dw-load-data-source-sql.png)
 
-1. On the **Dataset** tab, you will be asked to select tables to be copied. Select the **\[dbo\].\[AnalyzeCampaigns\]** table from the list of **Existing Tables** and click the **Next** button.
+1. On the **Dataset** tab, you'll be asked to select tables to be copied. Select the **\[dbo\].\[AnalyzeCampaigns\]** table from the list of **Existing Tables** and click the **Next** button.
 
     ![Select dbo.AnalyzeCampaigns, then click Next](../media/sql-dw-load-data-source-dataset.png)
 
 ## Set destination
 
-On the Destination tab, you will be asked to provide details of SQL Data Warehouse.
+On the Destination tab, you'll be asked to provide details of SQL Data Warehouse.
 
 1. Enter values for following properties and click the **Next** button:
 
@@ -96,15 +96,15 @@ On the Destination tab, you will be asked to provide details of SQL Data Warehou
 
     ![Complete the form, then click Next](../media/sql-dw-load-data-destination.png)
 
-1. On **Table Mapping** tab, you will be asked to set mapping between the source and destination table. You can map the source table to an existing destination table, or you can create a new destination table. For this exercise, we will create a new destination table and load data to same the table. Therefore, **keep the default mapping** as it is as shown in the image below, then click the **Next** button at the bottom to continue.
+1. On **Table Mapping** tab, you'll be asked to set mapping between the source and destination table. You can map the source table to an existing destination table, or you can create a new destination table. For this exercise, we'll create a new destination table and load data to same the table. Therefore, **keep the default mapping** as it is as shown in the image below, then click the **Next** button at the bottom to continue.
 
     This step will create the new table `[dbo].[AnalyzeCampaigns]` in the newly created SQL Data Warehouse.
 
     ![Leave default mapping, then click Next](../media/sql-dw-load-data-destination-mapping.png)
 
-1. On **Schema mapping** tab, you will be asked to set mapping between source and destination columns.
+1. On **Schema mapping** tab, you'll be asked to set mapping between source and destination columns.
 
-    As we are creating new a destination table in SQL Data Warehouse, the destination table will be created with the source schema.
+    As we're creating new a destination table in SQL Data Warehouse, the destination table will be created with the source schema.
 
     You can manage whether a column from the source table is included in the destination table by checking the box in the **Include this column** field. Make sure **all columns are selected**, then click the **Next** button on the bottom.
 
@@ -112,7 +112,7 @@ On the Destination tab, you will be asked to provide details of SQL Data Warehou
 
 ## Configure Settings
 
-On the **Settings** tab, you will be asked to specify action to be taken for incompatible rows between source and destination as well as to provide details of storage account required for staging.
+On the **Settings** tab, you'll be asked to specify action to be taken for incompatible rows between source and destination as well as to provide details of storage account required for staging.
 
 1. Select the action **Abort copy activity on first incompatible row** for the Fault tolerance settings.
 
@@ -132,7 +132,7 @@ On the **Settings** tab, you will be asked to specify action to be taken for inc
 
 The Summary tab summarizes all the details provided in earlier tabs and allows you to modify those details.
 
-Select the **Runtime Region** that matches the region of the exercise resources you have created. This will help ensure all data transferred stays in the same region in order to cut down on costs and transfer lag.
+Select the **Runtime Region** that matches the region of the exercise resources you've created. This will help ensure all data transferred stays in the same region in order to cut down on costs and transfer lag.
 
 You can modify each section by selecting the **Edit** link provided near each section.
 
@@ -142,7 +142,7 @@ If all details are correct, click the **Next** button located at the bottom of t
 
 ## Monitor deployment
 
-The Deployment tab helps you retrieve the status of various deployment activities. You will see the status update for each of the configured steps for the new pipeline as it deploys.
+The Deployment tab helps you retrieve the status of various deployment activities. You'll see the status update for each of the configured steps for the new pipeline as it deploys.
 
     ![Screenshot of the Deploying section of the Deployment tab](../media/sql-dw-load-data-deploying.png)
 
@@ -160,7 +160,7 @@ We can verify this copy activity by checking that the table was created in SQL D
 
 1. Access SQL Data Warehouse in Azure Data Studio.
 
-1. Expand the SQL Data Warehouse node under Servers to connect, then expand the **Tables** node. You will see the new **dbo.AnalyzeCampaigns** table.
+1. Expand the SQL Data Warehouse node under Servers to connect, then expand the **Tables** node. You'll see the new **dbo.AnalyzeCampaigns** table.
 
 1. Right click on the **dbo.AnalyzeCampaigns** table, then select the **Select Top 1000** menu option.
 

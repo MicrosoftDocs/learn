@@ -17,7 +17,7 @@ To scale your SQL DW instance, perform the following steps:
 
 ## Pause and resume SQL DW in the Azure portal
 
-You can pause your data warehouse instance if you do not need to use it for a while. This can help you save money by paying only for the compute that you need.
+You can pause your data warehouse instance if you don't need to use it for a while. This can help you save money by paying only for the compute that you need.
 
 1. Go to your Data Warehouse in the [Azure portal](http://portal.azure.com/) and select **Overview**. Notice that the Status is **Online**.
 1. To suspend compute and memory resources, select **Pause**. When the confirmation message appears, click **Yes** to confirm or **No** to cancel.
@@ -39,13 +39,13 @@ There are steps you can perform to restore a database, depending on whether the 
 1. At the top of the Data Warehouse **Overview** blade, select **Restore**.
 
     ![Select Restore on the Overview blade.](../media/sql-dw-restore-link.png)
-1. Select **Automatic Restore Points** as the Restore Point Type. This will allow you to select restore points that are automatically created for you every 8 hours.
+1. Select **Automatic Restore Points** as the Restore Point Type. Selecting te restore point type will allow you to select restore points that are automatically created for you every 8 hours.
 1. Specify a new **Database name**.
 1. Select the latest **Restore point** by selecting the date and time.
 1. Select the destination server and performance level. By default, the database's current server and performance level are selected for you.
 
     ![Select date and time for automatic restore points.](../media/sql-dw-restore-automatic.png)
-1. Alternatively, you may select a user-defined restore point. Do this by selecting **User-Defined Restore Points** as the Restore Point Type. You then select the **Restore points** option to browse the available user-defined restore points.
+1. Alternatively, select **User-Defined Restore Points** as the Restore Point Type to select a user-defined restore point. You then select the **Restore points** option to browse the available user-defined restore points.
 
     ![Select user-defined restore points.](../media/sql-dw-restore-user-defined.png)
 
@@ -54,8 +54,8 @@ There are steps you can perform to restore a database, depending on whether the 
 
 ## Restore a deleted database in the Azure portal
 
-1. Go to your data warehouse in the [Azure portal](http://portal.azure.com/). Select the SQL Server associated with your data warehouse by selecting it in the Overview pane. This will redirect you to the SQL Server in which the database should be restored.
-1. In navigation pane of SQL Server, select **Deleted Databases** in the left-hand menu under the **Settings** sub-section.
+1. Go to your data warehouse in the [Azure portal](http://portal.azure.com/). Select the SQL Server associated with your data warehouse by selecting it in the Overview pane. You are redirected to the SQL Server in which the database should be restored.
+1. In navigation pane of SQL Server, select **Deleted Databases** in the left-hand menu under the **Settings** sub section.
 
     ![Select Deleted Databases.](../media/sql-dw-deleted-databases-link.png)
 1. Select the database that you want to restore.

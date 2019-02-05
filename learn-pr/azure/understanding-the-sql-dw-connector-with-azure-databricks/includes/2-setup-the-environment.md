@@ -1,4 +1,4 @@
-You understand that using Azure Databricks to connect to your SQL Data Warehouse is the best way forward. Now you would like to try establishing this connection on a sample database so that you completely understand all the required steps. In this module you are provided with sample exercises to perfrom end-to-end connectivity procedures.
+You understand that using Azure Databricks to connect to your SQL Data Warehouse is the best way forward. Now you would like to try establishing this connection on a sample database so that you completely understand all the required steps. In this module, you're provided with sample exercises to perform end-to-end connectivity procedures.
 
 Let's start by setting up the environment, that includes provisioning a sample SQL Data Warehouse, creating new Azure Data Studio connections, and setting up resources for our exercise.
 
@@ -8,17 +8,17 @@ Let's start by setting up the environment, that includes provisioning a sample S
 
     ![Create SQL Data Warehouse](../media/create-sql-data-warehouse.png)
 
-1. In the Create SQL Data Warehouse blade, enter the following:
+1. In the Create SQL Data Warehouse blade, enter the following information:
 
    - _Database name_: Enter a unique name (make sure you see a green checkbox)
-   - _Subscription_: Select the subscription you are using for this exercise
+   - _Subscription_: Select the subscription you're using for this exercise
    - _Resource group_: Choose your exercise resource group
    - _Select source_: Select **Blank database** from the list
-1. Select **Server (Configure required settings)**, then select **Create new server**. In the New server blade, enter the following:
+1. Select **Server (Configure required settings)**, then select **Create new server**. In the New server blade, enter the following information:
    - _Server name_: Enter a unique name (make sure you see a green checkbox)
    - _Server admin login_: Enter **dwlab**
    - _Password_: Enter a valid password, then **confirm password**
-   - _Location_: Select the location you are using for resources in this exercise
+   - _Location_: Select the location you're using for resources in this exercise
    - _Allow Azure services to access server_: Check the checkbox
    - Click **Select**
    - _Performance level_: Select Gen2: DW500c
@@ -32,13 +32,13 @@ Let's start by setting up the environment, that includes provisioning a sample S
 
 ## Add your client IP address
 
-You need to add your computer's IP address to the SQL Server instance associated with SQL Data Warehouse in order to connect to your database.
+To connect to your database, add your computer's IP address to the SQL Server instance associated with SQL Data Warehouse.
 
 1. After the SQL Data Warehouse has been provisioned, open it by selecting **Go to resource** under notifications in Azure.
 
     ![Select Go to resource](../media/go-to-resource-sqldw.png)
 
-1. On top of the Overview blade, select the **Server name**. This will navigate you to the associated SQL Server instance.
+1. On top of the Overview blade, select the **Server name** to navigate to the associated SQL Server instance.
 
     ![Select the Server name link in the SQL Data Warehouse Overview blade.](../media/sql-dw-server-link.png)
 
@@ -46,13 +46,13 @@ You need to add your computer's IP address to the SQL Server instance associated
 
     ![Select the Firewalls and virtual networks link.](../media/firewall-link.png)
 
-1. In the Firewalls and virtual networks blade, select **Add client IP**. This will automatically add your detected IP address to the allowed IP addresses list. This is required for you to be able to connect to SQL Data Warehouse from your computer. Next, select **Save** to save your changes.
+1. In the Firewalls and virtual networks blade, select **Add client IP**. This will automatically add your detected IP address to the allowed IP addresses list. Adding a client IP is required for you to be able to connect to SQL Data Warehouse from your computer. Next, select **Save** to save your changes.
 
    ![Select the Add client IP, then select Save.](../media/add-client-ip.png)
 
 ## Download and install Azure Data Studio
 
-[Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is?view=sql-server-2017) is a cross-platform database tool that you can run on Windows, MacOS, and Linux. You will use this to connect to SQL Data warehouse and SQL Database.
+[Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is?view=sql-server-2017) is a cross-platform database tool that you can run on Windows, MacOS, and Linux. You'll use this tool to connect to SQL Data warehouse and SQL Database.
 
 1. Follow [this link](https://docs.microsoft.com/sql/azure-data-studio/download?view=sql-server-2017) to install Azure Data Studio for your operating system.
 
@@ -61,13 +61,13 @@ You need to add your computer's IP address to the SQL Server instance associated
 ## Create new connections in Azure Data Studio
 
 1. To connect to your data warehouse, you need to connect through the logical SQL server you created when you provisioned SQL Data Warehouse earlier.
-1. Visit Azure Portal and Select your data warehouse from resource group created for this exercise.
+1. Visit Azure portal and Select your data warehouse from resource group created for this exercise.
 1. Find the full name of the logical SQL server on top of the Overview blade, as you did in step 2 of the previous section.
 
     ![Copy the SQL Server name in the SQL Data Warehouse Overview blade.](../media/sql-dw-server-link.png)
 
 1. Switch back to the Azure Data Studio app.
-1. Add a new connection. This will be displayed by default if it is your first time running Azure Data Studio.
+1. Add a new connection. This option will display by default if it is your first time running Azure Data Studio.
 1. Fill in the fields in the Connection window.
 
     ![Fill in the fields in the Connection window.](../media/connect-sql-dw.png)
@@ -75,7 +75,7 @@ You need to add your computer's IP address to the SQL Server instance associated
 1. Select **SQL Login** for the authentication type.
 1. Enter user name and password provided while provisioning SQL Server in earlier steps above. Check **Remember password**.
 
-    1. **Note:** If you are prompted to add your IP address to the SQL Server firewall, add your Azure account in the **Create new firewall rule** dialog, then select the option to add your client IP.
+    1. **Note:** If you're prompted to add your IP address to the SQL Server firewall, add your Azure account in the **Create new firewall rule** dialog, then select the option to add your client IP.
 
     ![Add your Azure account and your client IP.](../media/azure-data-studio-firewall-dialog.png)
 
@@ -86,7 +86,7 @@ You need to add your computer's IP address to the SQL Server instance associated
 1. Select the **New Connection** icon on top of the blade.
 
     ![Select New Connection.](../media/azure-data-studio-new-connection.png)
-1. Repeat steps 6 - 9 above. You should see the SQL Data Warehouse connection you created earlier, listed under Recent history. If you select this, the Server and User name fields will be populated for you.
+1. Repeat steps 6 - 9 above. You should see the SQL Data Warehouse connection you created earlier, listed under Recent history. If you select this connection, the Server and User name fields will be populated for you.
 1. Select the **master** database from the list.
 
     ![Fill in the fields in the Connection window, this time selecting the master database.](../media/connect-sql-dw.png)
@@ -98,7 +98,7 @@ Follow the steps in this section to verify and install the AzureRM module.
 
 This step is mandatory for successful execution of further steps.
 
-If you do **not** have PowerShell Core v6.1.1 or greater installed on your machine (Windows, macOS, or Linux), please follow the [instructions here](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6) for your platform.
+If you don't have PowerShell Core v6.1.1 or greater installed on your machine (Windows, macOS, or Linux), follow the [instructions here](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6) for your platform.
 
 Azure PowerShell works with PowerShell 5.x on Windows 7 or higher, or PowerShell 6.x (PowerShell Core) on any platform.
 To check your PowerShell version, run the command:
@@ -110,7 +110,7 @@ $PSVersionTable.PSVersion
 If you have an outdated version or need to install PowerShell, see [Installing various versions of PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-powershell). Install
 information for your platform is linked from that page.
 
-If you are using PowerShell 5.x on Windows, you also need .NET Framework 4.7.2 installed. For instructions
+If you're using PowerShell 5.x on Windows, you also need .NET Framework 4.7.2 installed. For instructions
 on updating or installing a new version of .NET Framework, see the [.NET Framework installation guide](https://docs.microsoft.com/dotnet/framework/install).
 
 ### Install Azure PowerShell
@@ -133,7 +133,7 @@ By default, the PowerShell gallery isn't configured as a trusted repository for 
 ```output
 Untrusted repository
 
-You are installing the modules from an untrusted repository. If you trust this repository, change
+you're installing the modules from an untrusted repository. If you trust this repository, change
 its InstallationPolicy value by running the Set-PSRepository cmdlet.
 
 Are you sure you want to install the modules from 'PSGallery'?
@@ -146,11 +146,11 @@ Enter **A** to select Yes to all.
 
 Perform steps in this section to provision some additional Azure resources required to complete this exercise.
 
-In this section, you will execute a PowerShell script. This script creates following Azure Resources:
+In this section, you'll execute a PowerShell script. This script creates following Azure Resources:
 
 - **Azure Storage Account:** Stores datasets required for this exercise.
 
-- **Azure Database:** This database will be used as source data store in the exercise to load data into SQL Data Warehouse using Data Factory where data will be transferred from this Azure Database to SQL Data Warehouse.
+- **Azure Database:** This database is used as source data store in the exercise to load data into SQL Data Warehouse using Data Factory where data is transferred from this Azure Database to SQL Data Warehouse.
 
 ### Initiate PowerShell execution
 
@@ -166,15 +166,15 @@ The PowerShell script for the exercise will create additional resources and copy
 .\labOneClickDeployment.ps1
 ```
 
-1. As the script starts execution, you will be asked to provide Azure Account Credentials by navigating to <https://microsoft.com/devicelogin> in a web browser and entering the supplied code.
+1. As the script starts execution, you'll be asked to provide Azure Account Credentials by navigating to <https://microsoft.com/devicelogin> in a web browser and entering the supplied code.
 
     ![Provide your Azure Account credentials and Press Sign In button.](../media/azure-login.png)
 
-1. After successful login you will be asked to select your desired Azure subscription from a list of all linked subscriptions.
+1. After successful login, you'll be asked to select your desired Azure subscription from a list of all linked subscriptions.
 
     - Enter RowNumber against subscription in list which is used for this
       class.
 
-1. Now you will be prompted to provide the Resource Group Name you created for this exercise. Enter the name of Resource Group created in **Deploy an Azure Databricks Workspace**. After this step, a storage account is provisioned with two containers (`labdata` and `dwtemp`) and files are copied to them from a public storage account.
+1. Now you'll be prompted to provide the Resource Group Name you created for this exercise. Enter the name of Resource Group created in **Deploy an Azure Databricks Workspace**. After this step, a storage account is provisioned with two containers (`labdata` and `dwtemp`) and files are copied to them from a public storage account.
 1. Next, supply the name of the SQL Server you created earlier, and supply the password for the **dwlab** user account when prompted. This will create a new Azure SQL database instance on that server by importing an existing **retaildb** database, which will take some time.
-1. Finally, you will see a console output of **\*\*COPY THESE VALUES\*\***. Copy the **New storage account name** and **New storage account key** values and save them for later. These values will be used when copy files to SQL DW using PolyBase, and when you mount the storage account in Azure Databricks later on in the exercise.
+1. Finally, you'll see a console output of **\*\*COPY THESE VALUES\*\***. Copy the **New storage account name** and **New storage account key** values and save them for later. These values will be used when copy files to SQL DW using PolyBase, and when you mount the storage account in Azure Databricks later on in the exercise.

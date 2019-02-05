@@ -1,14 +1,14 @@
-To add SQL Server Authenticated user to SQL Data warehouse we need to do following things:
+To add SQL Server Authenticated user to SQL Data warehouse, we need to do following things:
 
 1. Create new server login
 1. Add user to master database using this new server login
 1. Add user to SQL Data Warehouse using this new server login
 
-Let's start out by creating a new server login that we will use for the exercises in this module.
+Let's start out by creating a new server login that we'll use for the exercises in this module.
 
 ## Add user to master database
 
-1. Using Azure Data Studio, connect to the **master** database located under the SQL Server instance created you created in the previous unit (procedure for _Create new connections in Azure Data Studio_).
+1. Using Azure Data Studio, connect to the **master** database located under the SQL Server instance you created in the previous unit (procedure for _Create new connections in Azure Data Studio_).
 
     Use the following properties while making a connection to the master database:
 
@@ -33,7 +33,7 @@ Let's start out by creating a new server login that we will use for the exercise
 
     ![Click the Run button to execute the query.](../media/azure-data-studio-new-query.png)
 
-1. Create user in **master** database using the above login. To do this, execute the following:
+1. Create user in **master** database using the above login byt executing the following command:
 
     ```sql
     CREATE USER LabUser FOR LOGIN LabUserLogin;
@@ -41,7 +41,7 @@ Let's start out by creating a new server login that we will use for the exercise
 
 ## Add user to SQL Data Warehouse
 
-1. Using Azure Data Studio, connect to the **SQL Data Warehouse** database located under the SQL Server instance created in earlier steps of this exercise by following steps listed in Step 2 of this exercise: **Create new connections in Azure Data Studio**.
+1. Using Azure Data Studio, connect to the **SQL Data Warehouse** database located under the SQL Server instance you created in earlier steps of this exercise by following steps listed in Step 2 of this exercise: **Create new connections in Azure Data Studio**.
 
     Use the following properties while making a connection to the master database:
 

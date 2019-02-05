@@ -1,4 +1,4 @@
-In this module, you learned that you can use SQL Datawarehouse connector with Azure Databricks to leverage the analytical functions of Databricks. You created a sample SQL Data Warehouse and learned how to establish connetion with Databricks to manage data.  
+In this module, you learned how you can use SQL Data Warehouse connector with Azure Databricks to leverage the analytical functions of Databricks. You created a sample SQL Data Warehouse and learned how to establish connection with Databricks to manage data. 
 
 ## Clean up
 

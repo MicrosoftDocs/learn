@@ -1,4 +1,4 @@
-In this unit, you will learn how to create distributed tables in SQL Data Warehouse. After the tables are created, you will perform several queries against them, using Azure Data Studio.
+In this unit, you'll learn how to create distributed tables in SQL Data Warehouse. After the tables are created, you'll perform several queries against them, using Azure Data Studio.
 
 ## Create Distributed tables
 
@@ -8,11 +8,11 @@ The distribution method is defined at the table level and there are three choice
 
 - **Replicated** The replicated table is fully copied to a distribution database on each Compute node. Replicating a table removes the need to transfer data among Compute nodes before a join or aggregation. Replicated tables are only feasible with small tables because of the extra storage required to store the full table on each compute node.
 
-- **Round robin** which distribute data evenly but randomly.
+- **Round robin**, which distributes data evenly but randomly.
 
-- **Hash Distributed** which distributes data based on hashing values from a single column
+- **Hash Distributed**, which distributes data based on hashing values from a single column
 
-By default, when you do not define a data distribution method, your table will be distributed using the round robin distribution method. However, as you become more sophisticated in your implementation, you will want to consider using hash distributed tables to minimize data movement which will in turn optimize query performance.
+By default, when you do not define a data distribution method, your table will be distributed using the round robin distribution method. However, as you become more sophisticated in your implementation, you'll want to consider using hash distributed tables to minimize data movement, which will in turn optimize query performance.
 
 ### Create Distributed tables using the Hash Distribution method
 
@@ -46,8 +46,8 @@ By default, when you do not define a data distribution method, your table will b
     - `[EmployeeBasic]` is the table name
     - `[EmployeeID], [EmployeeName],....,[BloodGroup]` are column definitions
     - **WITH** clause defines one to many table options
-    - **CLUSTERED COLUMNSTORE INDEX** is a table structure option, stores the table as a clustered columnstore index in which all of the data is compressed and stored by column. The clustered columnstore index applies to all of the table data. This is the default for SQL Data Warehouse.
-    - **DISTRIBUTION** = **HASH** ( `distribution_column_name` ) assigns each row to one distribution by hashing the value stored in distribution_column_name. The algorithm is deterministic which means it always hashes the same value to the same distribution. The  distribution column should be defined as NOT NULL since all rows that have NULL will be assigned to the same distribution.
+    - **CLUSTERED COLUMNSTORE INDEX** is a table structure option, stores the table as a clustered columnstore index in which all of the data is compressed and stored by column. The clustered columnstore index is the default for SQL Data Warehouse and applies to all of the table data.
+    - **DISTRIBUTION** = **HASH** ( `distribution_column_name` ) assigns each row to one distribution by hashing the value stored in distribution_column_name. The algorithm is deterministic, which means it always hashes the same value to the same distribution. The  distribution column should be defined as NOT NULL since all rows that have NULL will be assigned to the same distribution.
 
 ### Create Distributed tables using the Round Robin Distribution method
 
@@ -74,7 +74,7 @@ Execute the following statement in a new query window to create a **Round Robin*
 
     - **DISTRIBUTION = ROUND_ROBIN**
 
-  Distributes the rows evenly across all the distributions in a round-robin fashion. That is, there is no sorting done during the round robin process which places your data. This is the default for SQL Data Warehouse.
+  Distributes the rows evenly across all the distributions in a round-robin fashion. That is, there's no sorting done during the round robin process, which places your data. This is the default for SQL Data Warehouse.
 
 ### Create Replicated Table
 
@@ -99,7 +99,7 @@ Continue using Azure Data Studio to perform the following queries against your d
 
 ### Create a Table using the Hash Distribution method
 
-1. Create a table named **EmployeeBasic** using the **Hash Distribution** method, if it has not been created in the previous section.
+1. Create a table named **EmployeeBasic** using the **Hash Distribution** method, if it hasn't been created in the previous section.
 
 1.  Create another table named **EmployeeRemuneration** using the **Hash Distribution** method:
 
@@ -256,7 +256,7 @@ You should see 6 messages stating `(1 row affected)`.
         WHERE ER2.DepartmentID = ER1.DepartmentID );
     ```
 
-1. Select the second maximum salary from each department, if there is only one employee in any department then it will display their salary.
+1. Select the second maximum salary from each department, if there's only one employee in any department then it will display their salary.
 
     ```sql
     SELECT
