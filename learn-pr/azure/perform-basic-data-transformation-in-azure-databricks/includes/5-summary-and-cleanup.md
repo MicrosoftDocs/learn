@@ -1,4 +1,4 @@
-In this module, you used some the built-in functions of Azure Databricks to perform basic data transformation. You applied schema to structure your data and used built-in functions to handle corrupt records. 
+In this module, you used some of the built-in functions of Azure Databricks to perform basic data transformation. You applied schema to structure your data and used built-in functions to handle corrupt records. 
 
 ## Clean up
 
