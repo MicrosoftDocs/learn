@@ -18,55 +18,55 @@ quiz:
     - content: 'What is the Databricks Delta command to display metadata?'
       choices:
         - content: DESCRIBE DETAIL tableName
-          correctExplanation: Metadata is displayed through DESCRIBE DETAIL tableName
+          explanation: Metadata is displayed through DESCRIBE DETAIL tableName
           isCorrect: true
         - content: MSCK DETAIL tablename
           isCorrect: false
-          incorrectExplanation: MSCK is for repairing tables
+          explanation: MSCK is for repairing tables
         - content: SHOW SCHEMA tablename
           isCorrect: false
-          incorrectExplanation: Incorrect, no such command available
+          explanation: Incorrect, no such command available
     - content: 'Just repaired myTable using MSCK REPAIR TABLE myTable; How do you verify that the repair worked?'
       choices:
         - content: SELECT count(*) FROM myTable and make sure the count is what was expected
-          correctExplanation: SELECT count(*) FROM myTable is the correct way to check on the result to make sure it is correct
+          explanation: SELECT count(*) FROM myTable is the correct way to check on the result to make sure it is correct
           isCorrect: true
         - content: Execute Describe Detail myTable
           isCorrect: false
-          incorrectExplanation: Incorrect, that command is for displaying metadata
+          explanation: Incorrect, that command is for displaying metadata
         - content: display(mytable)
           isCorrect: false
-          incorrectExplanation: Incorrect, not a relavent answer.
+          explanation: Incorrect, not a relavent answer.
     - content: 'How do you perform UPSERT in a Databricks Delta dataset?'
       choices:
         - content: Using the MERGE INTO my-table USING data-to-upsert
-          correctExplanation: That is the correct syntax to perform UPSERT in a Databricks Delta dataset
+          explanation: That is the correct syntax to perform UPSERT in a Databricks Delta dataset
           isCorrect: true
         - content: Using the UPSERT INTO my-table
           isCorrect: false
-          incorrectExplanation: Incorrect, syntax is not correct for this operation
+          explanation: Incorrect, syntax is not correct for this operation
         - content: Using the UPSERT INTO my-table /MERGE
           isCorrect: false
-          incorrectExplanation: Incorrect, syntax is not correct for this operation
+          explanation: Incorrect, syntax is not correct for this operation
     - content: 'How do you view the list of active streams?'
       choices:
         - content:  Invoke spark.streams.active
-          correctExplanation: That is the correct syntax to view the list of active streams
+          explanation: That is the correct syntax to view the list of active streams
           isCorrect: true
         - content:  Invoke spark.streams.show
           isCorrect: false
-          incorrectExplanation: Incorrect, syntax is not correct for this operation
+          explanation: Incorrect, syntax is not correct for this operation
         - content:  Invoke spark.view.active
           isCorrect: false
-          incorrectExplanation: Incorrect, syntax is not correct for this operation
+          explanation: Incorrect, syntax is not correct for this operation
     - content: 'What size files does OPTIMIZE compact to?'
       choices:
         - content: Small files are compacted to around 1GB
-          correctExplanation: this value was determined by the Spark optimization team as a good compromise between speed and performace.
+          explanation: this value was determined by the Spark optimization team as a good compromise between speed and performace.
           isCorrect: true
         - content:  Small files are compacted to around 100MB
           isCorrect: false
-          incorrectExplanation: Incorrect, the Spark optimization team decided on 1 GB for speed and performance
+          explanation: Incorrect, the Spark optimization team decided on 1 GB for speed and performance
         - content:  Small files are compacted to around 500MB
           isCorrect: false
-          incorrectExplanation: Incorrect, the Spark optimization team decided on 1 GB for speed and performance
+          explanation: Incorrect, the Spark optimization team decided on 1 GB for speed and performance
