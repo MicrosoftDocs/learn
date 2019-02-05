@@ -10,7 +10,7 @@ Extracting meaningful information from a Data Lake involves solving several prob
 - Table repairs when any new data is inserted into the data lake
 - Frequent refreshes of metadata
 - Bottlenecks of small file sizes for distributed computations
-- Difficulty re-sorting data by an index if data is spread across many files and partitioned
+- Difficulty sorting data by an index if data is spread across many files and partitioned
 
 ## The solution: Databricks Delta
 
@@ -31,7 +31,7 @@ The Lambda architecture is a big data processing architecture that combines both
 
 Notice how there are really two pipelines here, one batch and one streaming, hence the name lambda architecture.
 
-It is very difficult to combine processing of batch and real-time data as is evidenced by the diagram below.
+It's difficult to combine processing of batch and real-time data as is evidenced by the diagram below.
 
 ![An image showing the Lambda architecture](../media/lambda.png)
 
@@ -39,11 +39,11 @@ It is very difficult to combine processing of batch and real-time data as is evi
 
 The Databricks Delta Architecture is a vast improvement upon the traditional Lambda architecture.
 
-Text files, RDBMS data and streaming data is all collected into a raw table (also known as "bronze" tables at Databricks).
+Text files, RDBMS data, and streaming data are collected into a raw table (also known as "bronze" tables at Databricks).
 
 A Raw table is then parsed into query tables (also known as "silver" tables at Databricks). They may be joined with dimension tables.
 
-Summary tables (also known as "gold" tables at Databricks) are business level aggregates often used for reporting and dashboarding. This would include aggregations such as daily active website users.
+Summary tables (also known as "gold" tables at Databricks) are business level aggregates often used for reporting, dashboarding, and aggregations such as daily active website users.
 
 The end outputs are actionable insights, dashboards and reports of business metrics.
 

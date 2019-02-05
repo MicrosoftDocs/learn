@@ -1,14 +1,12 @@
 Let's now jump onto the Databricks workspace and perform some basic Databricks Delta functions on a sample dataset.
 
-To do this, clone the lab archives that provide sample notebooks with detailed instructions.
-
 > [!NOTE]
 > To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
 
 ## Clone the Databricks archive
 
-1. From the Azure Portal, navigate to your Azure Databricks workspace and select **Launch Workspace**.
-1. Within the Workspace, using the command bar on the left, select **Workspace**, **Users** and select your username (the entry with house icon).
+1. From the Azure portal, navigate to your Azure Databricks workspace and select **Launch Workspace**.
+1. Within the Workspace, using the command bar on the left, select **Workspace**, **Users**, and select your username (the entry with house icon).
 1. In the blade that appears, select the downwards pointing chevron next to your name, and select **Import**.
 
 ![A screenshot showing the menu option to import the archive](../media/import-archive.png)
@@ -35,4 +33,4 @@ To do this, clone the lab archives that provide sample notebooks with detailed i
 
 > Note: You will find corresponding notebooks within the **Solutions** subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
 
-After you have completed the notebooks, return to this screen and continue to the next step.
+After you've completed the notebooks, return to this screen and continue to the next step.

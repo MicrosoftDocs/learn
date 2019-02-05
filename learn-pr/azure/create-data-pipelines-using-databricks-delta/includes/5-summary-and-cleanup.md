@@ -1,4 +1,4 @@
-If you are looking for a data management system that is fast, reliable, and is capable of handling large volumes of data in different raw formats, Databricks Delta is the solution. Databricks Delta provides the best of Data Lake, Data warehousing, and streaming data ingestion systems.
+If you're looking for a data management system that is fast, reliable, and is capable of handling large volumes of data in different raw formats, Databricks Delta is the solution. Databricks Delta provides the best of Data Lake, Data warehousing, and streaming data ingestion systems.
 
 ## Clean up
 
