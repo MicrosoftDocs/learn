@@ -24,7 +24,7 @@ These principles comprise the Spark approach to ETL, providing a unified and sca
   - The same code written on smaller data sets scales to large workloads, often with only small changes.
 - Spark on Databricks decouples data storage from the compute and query engine.
   - Spark's query engine connects to any number of data sources such as S3, Azure Blob Storage, Redshift, and Kafka.
-  - This minimizes costs; a dedicated cluster does not need to be maintained and the compute cluster is easily updated to the latest version of Spark.
+  - It minimizes costs as there is no need to maintain a dedicated cluster and the compute cluster is easily updated to the latest version of Spark.
 
 ![An illustration showing various capabilities of Apache Spark.](../media/Spark-approach.png)
 
@@ -32,7 +32,7 @@ These principles comprise the Spark approach to ETL, providing a unified and sca
 
 A typical ETL process in Databricks includes the following steps:
 
-1. **Extraction**. You can virtually connect to any data store including Azure Blob Storage, using Java Database Connectivity (JDBC). Databricks support connection to multiple database types, inlcuding:
+1. **Extraction**. You can virtually connect to any data store including Azure Blob Storage, using Java Database Connectivity (JDBC). Databricks support connection to multiple database types, including:
 
    - Traditional databases like Postgres, SQL Server, and MySQL
    - Message brokers like Kafka and Kinesis
@@ -40,7 +40,7 @@ A typical ETL process in Databricks includes the following steps:
    - Data warehouses like Hive and Cosmos DB
    - File types like CSV, Parquet, and Avro
 
-1. **Data validation**. One aspect of ETL jobs is to validate that the data is what you expect. This includes:
+1. **Data validation**. One aspect of ETL jobs is to validate that the data is what you expect. The data validation step primarily includes finding out:
 
    - Approximately the expected number of records
    - The expected fields are present
@@ -48,8 +48,8 @@ A typical ETL process in Databricks includes the following steps:
 
 1. **Transformation**. This step generally includes applying structure and schema to your data to transform it into the desired format. Schemas can be applied to tabular data, such as that found in CSV files or relational databases, or to semi-structured data such as JSON data.
 
-1. **Corrupt record handling**. Handling the bad data is also an important part of the entire ETL process. The built-in functions of Databricks allow you to handle corrupt data such as missing and incomplete information,schema mismatch, differing formats or data types, and user errors when writing data producers.
+1. **Corrupt record handling**. Handling the bad data is also an important part of the entire ETL process. The built-in functions of Databricks allow you to handle corrupt data such as missing and incomplete information, schema mismatch, differing formats or data types, and user errors when writing data producers.
 
-1. **Loading data** - A common and highly effective design pattern in the Databricks and Spark ecosytem involves loading structured data back to DBFS as a parquet file. Databricks also allows you to productionalize code by scheduling notebooks for regular execution.
+1. **Loading data** - A common and highly effective design pattern in the Databricks and Spark ecosystem involves loading structured data back to DBFS as a parquet file. Databricks also allows you to productionalize code by scheduling notebooks for regular execution.
 
-In this module we will explore some basic ETL techniques using Azure Databricks.
+In this module, we'll explore some basic ETL techniques using Azure Databricks.

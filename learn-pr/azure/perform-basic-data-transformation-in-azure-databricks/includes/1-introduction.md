@@ -1,7 +1,7 @@
 
-Databricks use DataFrames, where the core structure of data is immutable, to query, process, and analyze a large volume of data. Being immutable means that the data stored cannot be changed once it's created. So how do you use Databrciks if there is a requirement to change the original data creaed using DataFrame? This can be done using transformation. 
+Databricks use DataFrames, where the core structure of data is immutable, to query, process, and analyze a large volume of data. Being immutable means that the data stored can't be changed once it's created. So how do you use Databricks if there's a requirement to change the original data created using DataFrame? You can change the format for the original data using transformation. 
 
-Data transformation is one the most important aspect of data integration during data warehousing process. When you receive data from variety of sources in different unstructured format, it is essential that you transform and structure it into a common format before warehousing it. This transformation makes your data easy to use for any further analysis purposes.
+Data transformation is one the most important aspect of data integration during data warehousing process. When you receive data from variety of sources in different unstructured format, you need to transform and structure it into a common format before warehousing it. This transformation makes your data easy to use for any further analysis purposes.
 
 There are different transformation techniques that can be selected based on the complexity of the raw data and the final output requirements. The basic transformation includes applying simple schemas to a semi-structured or tabular raw data or using built-in functions to clean corrupt data.
 
