@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ingestion-with-azure-data-factory.2-azure-data-factory-databricks
+title: Overview of Azure Data Factory and Azure Databricks
+metadata:
+  title: Overview of Azure Data Factory and Azure Databricks
+  description: Understand what is Azure Data Factory and how its integration with Azure Databricks helps you.
+  ms.date: 10/19/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-azure-data-factory-databricks.md)]
