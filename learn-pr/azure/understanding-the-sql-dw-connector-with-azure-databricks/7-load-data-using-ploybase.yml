@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.understanding-the-sql-dw-connector-with-azure-databricks.7-load-data-using-polybase
+title: Load data using polybase
+metadata:
+  title: Load data using polybase
+  description: Learn how to load data using polybase
+  ms.date: 02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-load-data-using-polybase.md)]

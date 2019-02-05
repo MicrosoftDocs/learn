@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.understanding-the-sql-dw-connector-with-azure-databricks.2-setup-the-environment
+title: Setup the environment
+metadata:
+  title: Setup the environment
+  description: Setup the required services in your Azure subscription.
+  ms.date: 02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-setup-the-environment.md)]
