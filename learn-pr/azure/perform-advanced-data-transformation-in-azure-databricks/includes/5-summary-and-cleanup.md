@@ -1,6 +1,6 @@
 Data transformation is one of the important aspects of the ETL process. It can be as simple as applying schema to incoming data to restructure it, or of a more complex nature where you perform customized transformation. The complexity of the transformation is based on the type of raw data and the requirements of specific scenario. 
 
-Apache Spark and Azure Databricks provide capabilities to support simple transformation using built-in functions. At the same time, if also gives you an option to use user defined functions to perform customized and complex transformations.
+Apache Spark and Azure Databricks provide capabilities to support simple transformation using built-in functions. At the same time, if also gives you an option to use user-defined functions to perform customized and complex transformations.
 
 ## Clean up
 
