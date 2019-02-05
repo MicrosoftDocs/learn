@@ -1,4 +1,4 @@
-Your organization is a data analytics startup, which is now expanding with its increasing customer base. It has decided to invest in Azure Databricks to efficiently handle huge amount of customer data that comes from multiple sources in different formats. Your team is responsible for analyzing how Databricks supports day-to-day data handling functions, such as read, write, and query. 
+Your organization is a data analytics startup, which is now expanding with its increasing customer base. You receive customer data from multiple sources in different raw formats. The management has decided to invest in Azure Databricks to efficiently handle huge amount of customer data. Your team is responsible for analyzing how Databricks supports day-to-day data handling functions, such as read, write, and query. 
 
 ## Learning objectives
 
