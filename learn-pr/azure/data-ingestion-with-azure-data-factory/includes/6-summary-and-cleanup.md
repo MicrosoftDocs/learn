@@ -1,4 +1,4 @@
-Azure Data Factory allows you to ingest raw unstructured data from different sources. The integration between ADF and Azure Databricks helps you to create end-to-end data workflow to ingest, prepare, transform and load your data into any destination storage in a desired format and structure. 
+Azure Data Factory allows you to ingest raw unstructured data from different sources. The integration between ADF and Azure Databricks helps you to create end-to-end data workflow to ingest, prepare, transform, and load your data into any destination storage in a required format and structure. 
 
 ## Clean up
 

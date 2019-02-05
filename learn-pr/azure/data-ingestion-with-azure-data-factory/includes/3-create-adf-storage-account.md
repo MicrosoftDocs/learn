@@ -47,7 +47,7 @@ Let's start by creating an Azure storage account and an Azure Data Factory.
 
 ## Create Azure Data Factory
 
-1. Navigate to [Azure Portal](https://portal.azure.com).
+1. Navigate to [Azure portal](https://portal.azure.com).
 1. Select + **Create a resource**, type "data factory" into the search bar, select Data Factory in the results, and then select **Create**.
 
 ![Screenshot of Azure portal with options to add new Azure data factory options highlighted](../media/add-resource-data-factory.png)
