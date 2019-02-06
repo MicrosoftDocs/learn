@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.perform-basic-data-transformation-in-azure-databricks
+metadata:
+  title: Transform data in Azure Databricks
+  description: Learn how to perform basic data transformations in Azure Databricks.
+  ms.date: 02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Transform data in Azure Databricks
+summary: Perform basic data transformations in Azure Databricks.
+abstract:  | 
+  In this module, you will:
+  - Transform data in Azure Databricks by applying schemas to JSON data 
+  - Handle corrupt records
+  - Load and productionalize data
+prerequisites: |
+  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free)
+iconUrl: /learn/achievements/transform-data-in-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-databricks
+units:
+- learn.perform-basic-data-transformation-in-azure-databricks.1-introduction
+- learn.perform-basic-data-transformation-in-azure-databricks.2-etl-overview
+- learn.perform-basic-data-transformation-in-azure-databricks.3-complete-labs-in-azure-databricks
+- learn.perform-basic-data-transformation-in-azure-databricks.4-knowledge-check
+- learn.perform-basic-data-transformation-in-azure-databricks.5-summary-and-cleanup
+badge:
+ uid: learn.transform-data-in-azure-databricks.badge

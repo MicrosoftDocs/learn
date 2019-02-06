@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.perform-advanced-data-transformation-in-azure-databricks.2-advanced-transformation
+title: Advanced data transformation
+metadata:
+  title: Advanced data transformation
+  description: Overview of the advanced data transformation process.
+  ms.date:  02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-advanced-transformation.md)]

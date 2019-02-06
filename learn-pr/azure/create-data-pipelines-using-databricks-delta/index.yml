@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.create-data-pipelines-using-databricks-delta
+metadata:
+  title: Create data pipelines using Databricks Delta
+  description: Learn how to manage the flow of data to and from a data lake, using Databricks Delta.
+  ms.date: 02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Create data pipelines using Databricks Delta
+summary: In this tutorial, you use Databricks Delta on Azure to manage the flow of data (data pipeline) to and from a data lake. This includes mechanisms to create, append, and upsert data to Spark tables, taking advantage of built-in reliability and optimizations. Learn about Databricks Delta architecture, and how it helps speed up reads and allows multiple writers to simultaneously modify a data set and see consistent views. Finally, implement a lambda architecture by processing batch and streaming data with Delta.
+abstract:  | 
+  In this module, you will:
+  - Use Databricks Delta to create, append, and upsert tables
+  - Work with streaming data
+  - Perform optimizations in Delta
+  - Implement a lambda architecture by processing batch and streaming data with Delta
+prerequisites:  | 
+  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free)
+iconUrl: /learn/achievements/create-data-pipelines-using-databricks-delta.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-databricks
+units:
+- learn.create-data-pipelines-using-databricks-delta.1-introduction
+- learn.create-data-pipelines-using-databricks-delta.2-overview-of-databricks-delta
+- learn.create-data-pipelines-using-databricks-delta.3-complete-labs-in-azure-databricks
+- learn.create-data-pipelines-using-databricks-delta.4-knowledge-check
+- learn.create-data-pipelines-using-databricks-delta.5-summary-and-cleanup
+badge:
+ uid: learn.create-data-pipelines-using-databricks-delta.badge

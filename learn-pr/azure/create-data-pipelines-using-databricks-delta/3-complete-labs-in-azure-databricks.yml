@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-data-pipelines-using-databricks-delta.3-complete-labs-in-azure-databricks
+title: Complete labs using Azure Databricks
+metadata:
+  title: Complete labs using Azure Databricks
+  description: Learn how to connect to the preconfigured lab environment and import the notebook labs.
+  ms.date: 10/19/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 45
+content: |
+  [!include[](includes/3-complete-labs-in-azure-databricks.md)]
