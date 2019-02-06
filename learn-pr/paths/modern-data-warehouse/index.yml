@@ -21,7 +21,7 @@ roles:
 products:
 - azure-databricks
 modules:
-- learn.intro-to-azure-databricks
+#- learn.intro-to-azure-databricks
 - learn.understanding-the-sql-dw-connector-with-azure-databricks
 - learn.data-ingestion-with-azure-data-factory
 - learn.read-and-write-data-using-azure-databricks
