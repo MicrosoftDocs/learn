@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.understanding-the-sql-dw-connector-with-azure-databricks.6-load-data-using-data-factory
+title: Load data using data factory
+metadata:
+  title: Load data using data factory
+  description: Learn how to load data using data factory
+  ms.date: 02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-load-data-using-data-factory.md)]
