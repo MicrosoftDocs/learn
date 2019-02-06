@@ -15,9 +15,9 @@ Now that the CRUD actions have been added to the web API, it's time to test them
     * `-d` implies an HTTP POST operation and defines the request body.
     * `-H` indicates that the request body is in JSON format. The header's value overrides the default content type of `application/x-www-form-urlencoded`.
 
-    The command returns an HTTP 400 status code because the controller's `[ApiController]` attribute triggers Model validation on the request body. MVC's Model binder attempts to convert the request's `-d` JSON to a `Product` object. Model validation fails because the request's `Price` value is less than the minimum value of USD0.01.
+    The command returns an HTTP 400 status code because the controller's `[ApiController]` attribute triggers Model validation on the request body. MVC's Model binder attempts to convert the request's `-d` JSON to a `Product` object. Model validation fails because the request's `Price` value is less than the minimum value of 0.01.
 
-    The following represents a subset of the response:
+    The following excerpt represents a subset of the response:
 
     ```text
     < HTTP/1.1 400 Bad Request
@@ -31,9 +31,9 @@ Now that the CRUD actions have been added to the web API, it's time to test them
       "errors": {
         "Price": ["The field Price must be between 0.01 and 7.92281625142643E+28."]
       },
-      title": "One or more validation errors occurred.",
+      "title": "One or more validation errors occurred.",
       "status": 400,
-      "traceId":"0HLJTI2R5GKOJ:00000001"
+      "traceId": "0HLJTI2R5GKOJ:00000001"
     }
     ```
 1. Send a valid HTTP POST request to the web API:
@@ -45,7 +45,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
         https://localhost:5001/api/Products
     ```
 
-    The following represents a subset of the response:
+    The following excerpt represents a subset of the response:
 
     ```text
     < HTTP/1.1 201 Created
@@ -92,16 +92,16 @@ Now that the CRUD actions have been added to the web API, it's time to test them
         https://localhost:5001/api/Products/2
     ```
 
-    The retailer has decided to increase the price of the Knotted Rope product. The preceding command changes the price from USD12.99 to USD14.99.
+    The preceding command changes the price from 12.99 to 14.99. The retailer has decided to increase the price of the Knotted Rope product.
 1. Send an HTTP DELETE request to the web API:
 
     ```bash
     curl -v -k -X DELETE https://localhost:5001/api/Products/1
     ```
 
-    The supplier for the Squeaky Bone product has filed for bankruptcy. The product can no longer be ordered and the retailer has no inventory remaining. The preceding command deletes the product from the in-memory database.
+    The preceding command deletes the product from the in-memory database. The supplier for the Squeaky Bone product has filed for bankruptcy. The product can no longer be ordered and the retailer has no inventory remaining.
 
-    The following represents a subset of the response:
+    The following excerpt represents a subset of the response:
 
     ```text
     < HTTP/1.1 204 No Content

@@ -38,13 +38,13 @@ A *Controller* is a public class with one or more public methods known as *actio
             public ActionResult<List<Product>> GetAll() =>
                 _context.Products.ToList();
 
-            // The GET (by ID) action will go here
+            // GET by ID action
 
-            // The POST action will go here
+            // POST action
 
-            // The PUT action will go here
+            // PUT action
 
-            // The DELETE action will go here
+            // DELETE action
         }
     }
     ```
@@ -56,7 +56,7 @@ A *Controller* is a public class with one or more public methods known as *actio
 
     Within the class definition:
 
-    * Constructor injection provides an instance of `ProductsContext` to the controller.
+    * [Constructor injection](https://docs.microsoft.com/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ProductsContext` to the controller.
     * An HTTP GET action named `GetAll` is created for retrieving all products.
 1. Start the web API by running the following command:
 

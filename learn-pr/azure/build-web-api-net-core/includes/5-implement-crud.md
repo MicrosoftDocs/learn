@@ -11,11 +11,11 @@ The following table depicts the relationship between HTTP action verbs, CRUD ope
 
 In addition to the action verbs in the preceding table, a web API in ASP.NET Core supports HEAD, OPTIONS, and PATCH.
 
-The following sections demonstrate supporting each of these four actions in the web API.
+The following sections demonstrate how to support each of these four actions in the web API.
 
 ## Retrieve a product
 
-Add the following code to *Controllers/ProductsController.cs* where indicated by the comment:
+Replace the `// GET by ID action` comment in *Controllers/ProductsController.cs* with the following:
 
 ```csharp
 [HttpGet("{id}")]
@@ -47,7 +47,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Add a product
 
-Add the following code to *Controllers/ProductsController.cs* where indicated by the comment:
+Replace the `// POST action` comment in *Controllers/ProductsController.cs* with the following:
 
 ```csharp
 [HttpPost]
@@ -75,11 +75,11 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 |ASP.NET Core<br>Action Result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
 |`CreatedAtAction`            |201             |The product was added to the database.<br>The product is included in the response body in the media type as defined in the `Accept` HTTP request header (JSON by default).|
-|`BadRequest` is implied      |400             |The `Product` object provided in the request body is invalid.|
+|`BadRequest` is implied      |400             |The request body's `Product` object is invalid.|
 
 ## Modify a product
 
-Add the following code to *Controllers/ProductsController.cs* where indicated by the comment:
+Replace the `// PUT action` comment in *Controllers/ProductsController.cs* with the following:
 
 ```csharp
 [HttpPut("{id}")]
@@ -111,12 +111,12 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 |ASP.NET Core<br>Action Result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
 |`NoContent`                  |204             |The product was updated in the database.|
-|`BadRequest`                 |400             |The `Product` object's `Id` value doesn't match the `id` value provided in the route.|
-|`BadRequest` is implied      |400             |The `Product` object provided in the request body is invalid.|
+|`BadRequest`                 |400             |The request body's `Id` value doesn't match the route's `id` value.|
+|`BadRequest` is implied      |400             |The request body's `Product` object is invalid.|
 
 ## Remove a product
 
-Add the following code to *Controllers/ProductsController.cs* where indicated by the comment:
+Replace the `// DELETE action` comment in *Controllers/ProductsController.cs* with the following:
 
 ```csharp
 [HttpDelete("{id}")]

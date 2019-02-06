@@ -1,7 +1,13 @@
-A type of class called a *Model* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an in-memory EF Core database.
+A type of class called a *Model* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](https://docs.microsoft.com/ef/core/providers/in-memory/).
 
-> [!IMPORTANT]
-> An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
+An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
+
+> [!TIP]
+> Select the **Reconnect** button if the Cloud Shell session times out. Run the following command to set the working directory to *RetailApi* and launch the editor:
+>
+> ```bash
+> cd ./RetailApi && code .
+> ```
 
 1. Run the following command:
 
@@ -18,7 +24,7 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
     ![refresh file explorer](../media/3-add-data-store/cloud-shell-refresh-files.png)
 
     The *Models* directory and its *Product.cs* file appear.
-1. Add the following code to *Models/Product.cs* to define a product. Press `Ctrl+S` or `Command+S` (macOS) to save your changes.
+1. Add the following code to *Models/Product.cs* to define a product. Save your changes.
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
@@ -38,8 +44,14 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
         }
     }
     ```
+
     > [!TIP]
-    > Press `CTRL+V` or `Command+V` (macOS) to paste copied code from the clipboard.
+    > The following keyboard shortcuts will be useful throughout this module.
+    >
+    > | Keyboard shortcut               | Command |
+    > |---------------------------------|---------|
+    > | `Ctrl+V`<br>`Command+V` (macOS) | Paste   |
+    > | `Ctrl+S`<br>`Command+S` (macOS) | Save    |
 
     The `Name` and `Price` properties are marked as required to ensure values are provided when creating a `Product` object. Additionally, the `Price` property enforces minimum and maximum values.
 1. Run the following command:
@@ -69,7 +81,7 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
     }
     ```
 
-    The preceding code creates a product-specific implementation of an EF Core `DbContext` object. The `ProductContext` class provides access an in-memory database, as configured in the next step.
+    The preceding code creates a product-specific implementation of an EF Core `DbContext` object. The `ProductContext` class provides access to an in-memory database, as configured in the next step.
 1. Add the following code as the first line in the *Startup.cs* file's `ConfigureServices` method. Save your changes.
 
     ```csharp
@@ -79,7 +91,7 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
 
     The preceding code:
 
-    * Registers the custom `DbContext` class, named `ProductsContext`, with ASP.NET Core's Dependency Injection system.
+    * Registers the custom `DbContext` class, named `ProductsContext`, with ASP.NET Core's [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection) system.
     * Defines an in-memory database named *Products*.
 1. Add the following code to the top of *Startup.cs*. Save your changes.
 
@@ -122,7 +134,7 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
     }
     ```
 
-    The preceding code defines a static `SeedData` class. The class' `Initialize` method seeds the in-memory database with two dog toys.
+    The preceding code defines a static `SeedData` class. The class's `Initialize` method seeds the in-memory database with two dog toys.
 1. Replace the code in *Program.cs* with the following code. Save your changes.
 
     ```csharp
