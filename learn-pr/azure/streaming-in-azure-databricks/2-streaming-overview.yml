@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.streaming-in-azure-databricks.2-streaming-overview
+title: Streaming overview
+metadata:
+  title: Streaming overview
+  description: Overview of the Spark Strucrured Streaming process.
+  ms.date: 02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-streaming-overview.md)]
