@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.understanding-the-sql-dw-connector-with-azure-databricks.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge by answering questions about skills you learned from the exercise.
+  ms.date: 02/19/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: 'Knowledge Check'
+  questions:
+    - content: 'What is the recommended way to save data if you plan to perform several queries against the same SQL DW table?'
+      choices:
+        - content: Save the data in a format such as Parquet
+          explanation: This is the correct format for multiple queries on the same table due to the fact that each query can extract large amount of data to blob storage
+          isCorrect: true
+        - content: Use the SQL DW Connector
+          isCorrect: false
+          explanation: Too slow for constant querying against the table due the amount of of data extracted
+        - content: Save to Azure Blob storage directly
+          isCorrect: false
+          explanation: Incorrect way of saving data for querying in a proficent manner
+    - content: 'What are the two pre-requisites for connecting Azure Databricks with SQL Data Warehouse that apply to the SQL Data Warehouse?'
+      choices:
+        - content:  Creating a database master key and configure the firewall to enable Azure Services to connect.
+          explanation: These are the correct 2 pre-requisites for connecting.
+          isCorrect: true
+        - content: Correctly formated ConnectionString and creating a database master key
+          isCorrect: false
+          explanation: Incorrect 2 pre-requisites as it is missing the firewall setting
+        - content: Adding the Client IP address to the firewall permitted access and using the correctly formated ConnectionString
+          isCorrect: false
+          explanation: Incorrect 2 pre-requisites

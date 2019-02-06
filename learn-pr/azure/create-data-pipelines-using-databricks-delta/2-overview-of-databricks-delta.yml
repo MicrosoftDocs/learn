@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-data-pipelines-using-databricks-delta.2-overview-of-databricks-delta
+title: Setup the environment
+metadata:
+  title: Setup the environment
+  description: Set up the required services in your Azure subscription.
+  ms.date: 10/19/2018
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-overview-of-databricks-delta.md)]
