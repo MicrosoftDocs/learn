@@ -18,8 +18,7 @@ abstract: |
   - Outline how the role of the data professional is changing in organizations
   - Identify use cases that are impacted by these changes
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/evolving-world-of-data-badge.svg
+iconUrl: /learn/achievements/data-ai/evolving-world-of-data-badge.svg
 levels:
 - beginner
 roles:
