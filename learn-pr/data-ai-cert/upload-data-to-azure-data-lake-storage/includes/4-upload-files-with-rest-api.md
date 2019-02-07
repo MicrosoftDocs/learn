@@ -1,7 +1,7 @@
-Azure Data lake Store allows you to upload data using a built-in REST API. You can use any programming language that supports building and sending HTTP-based messages. Let's try this out using a simple .NET Core app with C#.
+Azure Data Lake Store allows you to upload data using REST API’s. You can use any programming language that supports building and sending HTTP-based messages. In this unit, you will try this out using a simple .NET Core app with C#.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, don't want to install .NET Core, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved to invoking the REST API services.
+> If you don't have an Azure account, don't want to install .NET Core, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved to invoking the REST API services.
 
 ## Register Application
 
@@ -18,14 +18,45 @@ The first step in using the REST API is to register the application. Azure provi
 1. In the "New Application" blade, fill in the following details.
     1. **Name**: Enter a name for your application (e.g. "data-uploader").
     2. **Application type**: Select **Web app / API** as the application type.
-    3. **Sign-on URL**: Enter a local sign-on URL using your own domain suffix (e.g. http://sample.contosso.com). This is a value used to identify the app and can be changed later as needed.
+    3. **Sign-on URL**: Enter a local sign-on URL using your own domain suffix (e.g. http://sample.contoso.com). This is a value used to identify the app and can be changed later as needed.
 1. Click **Create** to create the app registration.
+1. Once completed, in the **Registered app** blade, next to **Application ID**, copy the key into Notepad.
+1.  Click on the **Settings** button, and int the Settings blade go to **Owner**. Make a note of the owner account in Notepad. Note that you can change this to a preferred service account for the registered application.
+1. Go to the **Keys** in the Settings blade. 
+
+![Screenshot of Collecting details of Azure](../media/4-collect-details.png)
+
+1. Create a key by typing in the name **DUKey** in the "Key description..." text box.
+
+![Screenshot of Generating New Key](../media/4-generate-new-key.png)
+
+1. Under the **Expires** column, set the duration to **In 1 year**, and then click on the **Save** icon.
+
+![Screenshot of Saving New Key](../media/4-save-new-key.png)
+
+1. Copy the key value into Notepad. **You won't be able to retrieve after you leave this blade.**
+
+1. Close down the Application Registration blade.  
 
 ## Grant Permission in Data Lake Store
 
-Once you have an app registered, you will need to give it permissions to the Azure Data Lake Store REST API.
+Once you have an app registered, you will need to give it permissions to the Azure Data Lake Store REST API using Azure Storage Explorer, you do this by assigning permissions to the owner account of the registered application.
 
-TBD
+1. Sign into Azure Storage Explorer, you can select the subscriptions you want to work with. Make sure to select the one you created the Azure Storage account in.
+
+The app then shows a tree of storage areas you can work with from your  subscriptions. You should see your Azure Storage account in the list.
+
+![Screenshot of the Azure Storage Explorer app](../media/3-main-app-display.png)
+
+1. In Azure Storage Explorer, expand your subscription, and then expand the data lake storage account to view the file system **salesdata**.
+
+1. Right click on **salesdata**, and click on **Manage Access**.
+
+1. In the **Manage Access** dialog box, under **Add user or group:**, type in or search for the owner account, and then click on **Add**, the name will appear under users or groups.
+
+1. Ensure that the owner account is selected under **user or group**, and then under the section for **Permissions for: owner account name**, click on the check box in the **Access** row for the **Read**, **Write** and **Execute** permission, and then click on **Save**.
+
+1. Confirmation that the permissions are set successfully with the message **"Successfully saved permissions for 'salesdata/'"** in the Activity window in Azure Storage Explorer.
 
 ## Create a .NET Core app
 
@@ -49,24 +80,12 @@ TBD
 
 Add the following two NuGet packages to the project.
 
-- Microsoft.Azure.Management.DataLake.Store v2.2.0
-- Microsoft.Rest.ClientRuntime.Azure.Authentication v2.3.1
+- Microsoft.Azure.Management.DataLake.Store v2.4.2
+- Microsoft.Rest.ClientRuntime.Azure.Authentication v2.3.7
 
 ![Screenshot of Adding NuGet Package](../media/4-add-nuget-package.png)
 
-Before you start coding, you should collect the required data from Azure resources. You need details from the Azure Active Directory App for authentication. Navigate to the previously created AD App blade.
-
-![Screenshot of Collecting details of Azure](../media/4-collect-details.png)
-
-Copy the **Application ID** mentioned in the App blade, which will be used as Client Id in the .NET application. Click on **Keys** to generate a new key or client secret.
-
-![Screenshot of Generating New Key](../media/4-generate-new-key.png)
-
-Enter a key name under **Description** and select the expiry duration from the drop-down. Click on the **Save** icon on top to generate the Key.
-
-![Screenshot of Saving New Key](../media/4-save-new-key.png)
-
-Copy the Key, which will be hidden after you leave this blade. This key will be used as a client secret in the .NET application.
+Before you start coding, you should collect the required data from the Azure resources. You need details from the Azure Active Directory Register Application for authentication. This shoul dbe stored in a Notepad document as directed.
 
 ## Code Sample
 

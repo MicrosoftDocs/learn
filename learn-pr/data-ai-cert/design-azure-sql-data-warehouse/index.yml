@@ -20,7 +20,7 @@ abstract: |
   - Create an Azure SQL Data Warehouse
 prerequisites: None
 #todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/upload-data-to-azure-data-lake-storage-badge
 levels:
 - beginner
 roles:
