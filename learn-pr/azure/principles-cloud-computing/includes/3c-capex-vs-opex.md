@@ -1,4 +1,4 @@
-In the past, companies needed to acquire physical premises and infrastructure to start their business. There was a large up-front cost in hardware and infrastructure to start or grow a business. Cloud computing has changed that requirement. 
+In the past, companies needed to acquire physical premises and infrastructure to start their business. There was a substantial up-front cost in hardware and infrastructure to start or grow a business. Cloud computing has changed that requirement. 
 
 Today, the cloud can be used to get up and running quickly. You can start providing services to customers without significant upfront costs or equipment setup time.
 
@@ -6,12 +6,70 @@ These two approaches to investment are referred to as:
 
 - **Capital Expenditure (CapEx)**: CapEx is the spending of money on physical infrastructure up front, and then deducting that expense from your tax bill over time. CapEx is an upfront cost, which has a value that reduces over time.
 
-- **Operational Expenditure (OpEx)**: OpEx is spending money on services or products now and being billed for them now. You can deduct this expense from your tax bill in the same year. There is no upfront cost, you pay for a service or product as you use it.
+- **Operational Expenditure (OpEx)**: OpEx is spending money on services or products now and being billed for them now. You can deduct this expense from your tax bill in the same year. There's no upfront cost. You pay for a service or product as you use it.
+
+## CapEx computing costs
+
+A typical on-premises data center includes costs such as:
+
+### Server costs
+
+This area includes all hardware components and the cost of supporting them. When purchasing servers, make sure to design fault tolerance and redundancy, such as server clustering, redundant power supplies, and uninterruptible power supplies. When a server needs to be replaced or added to a datacenter, you need to pay for the computer. This can affect your immediate cash flow because you must pay for the server up front.
+
+### Storage costs
+
+This area includes all storage hardware components and the cost of supporting it. Based on the application and level of fault tolerance, centralized storage can be expensive. For larger organizations, you can create tiers of storage where more expensive fault‐tolerant storage is used for critical applications and lower expense storage is used for lower priority data.
+
+### Network costs
+
+Networking costs include all on-premises hardware components, including cabling, switches, access points, and routers. This also includes wide area network (WAN) and Internet connections.
+
+### Backup and archive costs
+
+This is the cost to back up, copy, or archive data to the cloud or datacenter. Options might include backing up to or from the cloud. There’s an upfront cost for the hardware and additional costs for backup maintenance and consumables like tapes.
+
+### Organization continuity and disaster recovery costs
+
+Along with server fault tolerance and redundancy, you need to plan for how to recover from a disaster and continue operating. Your plan should consist of creating a data recovery site. It could also include backup generators. Most of these are upfront costs, especially if you build a data recovery site, but there's an additional ongoing cost for the infrastructure and its maintenance.
+
+### Datacenter infrastructure costs
+
+These are costs for electricity, floor space, cooling, and building maintenance.
+
+### Technical personnel
+
+Based on the technology used, you’ll need technical expertise and workforce to install, deploy, and manage the systems in the datacenter and at the data recovery site.
+
+## OpEx cloud computing costs
+
+With cloud computing, many of the costs associated with an on-premises datacenter are shifted to the cloud service provider. Instead of thinking about physical hardware and datacenter costs, cloud computing has a different set of costs. For accounting purposes, all these costs are operational expenses:
+
+### Leasing a cloud-based server
+
+If you lease a server or use a cloud-based server, the cost is typically based on the pay-per-use model. 
+
+### Leasing software and customized features
+
+Using a pay-per-use model requires actively managing your subscriptions to ensure users do not misuse the cloud, and that provisioned accounts are being utilized and not wasted. As soon as the provider provisions resources, billing starts. It is your responsibility to de-provision the resources when they aren't in use so that you can minimize costs.
+
+### Scaling charges based on usage/demand instead of fixed hardware or capacity. 
+
+Cloud computing can bill in various ways, such as the number of users or CPU usage time. However, billing categories can also include allocated RAM, I/O operations per second (IOPS), and storage space. If you're connecting a datacenter to the cloud or connecting two clouds together, identify how much data needs to be transferred so that you can determine the bandwidth needed. Don’t forget to plan for backup traffic to or from the cloud, the datacenter, and the cloud for data recovery purposes.
+
+### Billing at the user or organization level.
+
+The subscription (pay-per-use) model is a computing billing method that is designed for both organizations and users. The organization or user is billed for the services used, typically on a recurring basis. You can scale, customize, and provision computing resources, including software, storage, and development platforms. For example, when using a dedicated cloud service, you could pay based on server hardware and usage. 
+
+## Benefits of CapEx
+
+With capital expenditures, you plan your expenses at the start of a project or budget period. Your costs are fixed, meaning you know exactly how much is being spent. This can be appealing a if you required to know your exact expenses before a project starts.
+
+## Benefits of OpEx
 
 Demand and growth can be unpredictable and can outpace expectation, which is a challenge for the CapEx model as shown in the following graph.
 
 ![A graph showing how expected demand can be different from real demand and how CapEx infrastructure can be exceeded by demand.](../media/3c-capexvsopex.png)
 
-Companies wanting to try out a new product or service don't need to invest in a large equipment expense. Instead, they can get into a market immediately and pay as much or as little for the infrastructure as the business requires. They also can lower that cost when they need to. A business can still use the CapEx expenditure strategy if they wish, but it is no longer a requirement that they do so. 
+With the OpEx model, companies wanting to try a new product or service don't need to invest in equipment. Instead, they pay as much or as little for the infrastructure as required. 
 
-OpEx is particularly appealing if the demand fluctuates or is unknown because cloud computing is _agile_. Cloud agility is the ability to rapidly change an IT infrastructure in order to adapt to the evolving needs of the business. For example, if your service peaks one month, you can scale to demand and pay a larger bill for the month. If the following month the demand drops, you can reduce the used resources and be charged less. This agility lets you manage your costs dynamically, and scale up or down as the market changes for your business.
+OpEx is particularly appealing if the demand fluctuates or is unknown. Cloud services are often said to be _agile_. Cloud agility is the ability to rapidly change an IT infrastructure to adapt to the evolving needs of the business. For example, if your service peaks one month, you can scale to demand and pay a larger bill for the month. If the following month the demand drops, you can reduce the used resources and be charged less. This agility lets you manage your costs dynamically, optimizing spending as requirements change.
