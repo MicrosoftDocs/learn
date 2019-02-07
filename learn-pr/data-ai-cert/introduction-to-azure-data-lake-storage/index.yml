@@ -20,7 +20,7 @@ abstract: |
   - List the supported open source platforms
 prerequisites: None
 #todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner
 roles:

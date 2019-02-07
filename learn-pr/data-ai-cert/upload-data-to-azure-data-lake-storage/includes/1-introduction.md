@@ -1,14 +1,13 @@
-Azure Data Lake Storage Gen2 is the only data lake solution explicitly designed for enterprises to run large scale analytics workloads in the cloud. Azure Data Lake Storage Gen2 takes core capabilities from Azure Data Lake Storage Gen1 such as a Hadoop compatible file system, Azure Active Directory, and POSIX based ACLs and integrates them into Azure Blob Storage.
+Azure Data Lake Storage Generation 2 (Gen2) is a data lake solution explicitly designed for enterprises to run large scale analytical workloads in the cloud. It takes the core capabilities from Azure Data Lake Storage Gen1 including file system semantics and security and scale and combines it with the low-cost, highly available capabilities of Azure Blob Storage.
 
-You want to show Contoso the flexible nature of Azure Data Lake Storage Gen2 by explaining the different ways in which you upload data into the data store. You want to show examples of how you can perform ad-hoc data loads and one of data loads and how to integrate the capability into applications.
+You want to show Contoso the different ways in which you can upload data into Azure Data Lake Storage Gen2. This will include examples of how you can perform ad-hoc data loads to integrating the upload capability into applications. You will also demonstrate how you can use Azure Data Factory to copy data into Azure Data Lake Gen 2.
 
 ## Learning Objectives
 
 In this module, you will:
 
-- Create an Azure Data Lake Store
-- Upload data to Azure Data Lake Storage Gen2 using Azure Storage Explorer
+- Create an Azure Data Lake Gen2 Store
+- Upload data into the Data Lake Storage Gen2 using Azure Storage Explorer
+- Demonstrate code that can be used to upload data in .Net
+- Copy data from an Azure Data Lake Store Gen1 to an Azure Data Lake Store Gen2
 
-## Prerequisites
-
-You will need an Azure account to perform the exercise steps in this module. You can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
