@@ -28,7 +28,7 @@ To complete the labs, continue working within your Azure Databricks workspace an
 - **05-Joins-and-Lookup-Tables** - In this notebook you learn how to use standard and broadcast join for tables.
 - **06-Database-Writes** - This notebook contains exercises to write data to a number of target databases in parallel, storing the transformed data from your ETL job.
 - **07-Table-Management** - Here you handle managed and unmanaged tables to optimize your data storage.
-- **08-Capstone-Project** - This notebook includes a sample project for you explore later on in your own time.
+- **Custom-Transformations** - This notebook is located in the `Optional` subfolder, and includes a sample project for you to explore later on in your own time.
 
 > ![Note]
 > You'll find corresponding notebooks within the **Solutions** subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
