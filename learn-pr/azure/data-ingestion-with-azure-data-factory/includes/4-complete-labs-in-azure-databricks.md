@@ -13,7 +13,7 @@ You have your storage account and Azure Data Factory up and running, now it's ti
 
 1. On the Import Notebooks dialog, select URL and paste in the following URL:
    ```html
-   https://github.com/solliancenet/proj-learning-paths-public/blob/master/modern-data-warehouse/03-Data-Ingestion-Via-ADF.dbc?raw=true
+   https://github.com/MicrosoftDocs/mslearn-data-ingestion-with-azure-data-factory/blob/master/DBC/03-Data-Ingestion-Via-ADF.dbc?raw=true
    ```
 1. Select **Import**.
 1. A folder named after the archive should appear. Select that folder.

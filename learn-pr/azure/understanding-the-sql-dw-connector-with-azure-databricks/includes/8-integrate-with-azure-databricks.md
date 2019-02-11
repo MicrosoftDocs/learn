@@ -53,7 +53,7 @@ If you see this message, you can ignore it and continue to the following steps.
 1. In the blade that appears, select the downwards pointing chevron next to your name, and select Import.
 1. On the Import Notebooks dialog, select URL and paste in the following URL:
     ```
-       https://github.com/solliancenet/proj-learning-paths-public/blob/master/modern-data-warehouse/02-Azure-SQL-DW.dbc?raw=true
+       https://github.com/MicrosoftDocs/mslearn-understanding-the-sql-dw-connector-with-azure-databricks/blob/master/DBC/02-Azure-SQL-DW.dbc?raw=true
     ```
 1. Select **Import**.
 1. A folder called `02-azure-sql-dw` should appear. Select that folder.
