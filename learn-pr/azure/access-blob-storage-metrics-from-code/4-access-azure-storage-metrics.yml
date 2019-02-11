@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.access-blob-storage-metrics-from-code.4-access-azure-storage-metrics
+title: Access Azure Storage Metrics in Code
+metadata:
+  title: Access Azure Storage Metrics in Code
+  description: In this unit, you will learn 
+  ms.date: 02/07/2019
+  author: alistairmatthews
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-access-azure-storage-metrics.md)]

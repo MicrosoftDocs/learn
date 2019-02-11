@@ -1,17 +1,23 @@
 ### YamlMime:Module
 uid: learn.access-blob-storage-metrics-from-code
 metadata:
-  title: TODO - Learn
-  description: TODO
-  ms.date: 01/08/2019
-  author: nickwalkmsft
+  title: Access metrics from your Azure Blob Storage Containers programmatically
+  description: In order to provide a reliable service, you should make sure that all your business-critical systems are carefully monitored. For services in Azure, the Azure Monitor provides a unified tool that gathers, stores and displays performance metrics. If you use an Azure Storage account to store blobs, metrics will be added to Azure Monitor to record that account’s behavior. In this module, you will learn how to configure and access those metrics from .NET application code, such as from mobile device apps or web apps.
+  ms.date: 02/06/2019
+  author: alistairmatthews
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: TODO
-summary: TODO
-abstract: TODO
-prerequisites: TODO
+title: Access Metrics from your Azure Blob Storage Containers Programmatically
+summary: Learn how to use write C# code that accesses Azure Blob Storage diagnostic metrics from Azure Monitor.
+abstract: |
+  In this module, you will:
+  - Configure Azure storage metrics in Azure Monitor.
+  - Write code that obtains Blob Storage metric data.
+prerequisites: |
+  - Knowledge of the Azure Portal
+  - Knowledge of Azure Blob Storage Containers
+  - Ability to write and understand C# code and .NET framework classes
 iconUrl: /learn/achievements/welcome-to-azure.svg
 levels:
 - beginner
@@ -21,4 +27,9 @@ products:
 - azure
 units:
 - learn.access-blob-storage-metrics-from-code.1-introduction
+- learn.access-blob-storage-metrics-from-code.2-configure-azure-storage-metrics
+- learn.access-blob-storage-metrics-from-code.3-exercise-configure-azure-storage-metrics
+- learn.access-blob-storage-metrics-from-code.4-access-azure-storage-metrics
+- learn.access-blob-storage-metrics-from-code.5-exercise-access-azure-storage-metrics
+- learn.access-blob-storage-metrics-from-code.6-summary
 achievement: learn.access-blob-storage-metrics-from-code.badge
