@@ -35,7 +35,7 @@ For example, a single virtual machine that you provision in Azure might have the
 
 The meters and pricing vary per product and often have different pricing tiers based on the size or capacity of the resource. Check the documentation for specific details on what each service area costs.
 
-At the end of each monthly billing cycle, the usage values will be charged to your payment method and the meters are reset. You can check the billing page in the Azure portal at any time to get a quick summary of your current usage, as well as any invoices changed from past billing cycles. 
+At the end of each monthly billing cycle, the usage values will be charged to your payment method and the meters are reset. You can check the billing page in the Azure portal at any time to get a quick summary of your current usage and see any invoices from past billing cycles.
 
 The key takeaway is that resources are always charged _based on usage_. For example, if you de-allocate a VM then you will not be billed for compute hours, I/O reads or writes or the IP address since the VM is not running and has no allocated compute resources. However you will incur storage costs for the disks.
 
