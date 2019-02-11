@@ -90,7 +90,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 
     Let's fix the violation so we can successfully deploy the storage account.
 
-1. Select **Tags** at tht top of the **Create storage account** pane.
+1. Select **Tags** at the top of the **Create storage account** pane.
 
 1. Add a **Department:Finance** tag to the list.
 
