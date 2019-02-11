@@ -21,8 +21,7 @@ summary: |
     - Understand the security controls provided by Azure Storage and Azure SQL Data Warehouse
 cardDescription: Azure SQL Data Warehouse provides a relational big data store that can scale to Petabytes of data. In this learning path, you will learn how Azure SQL Data Warehouse can achieve this scale with its’ Massively Parallel Processing (MPP) architecture. Create a data warehouse in minutes and use familiar querying language to build reports. Load massive amounts of data in minutes, and ensure that your data warehouse is secure.
 prerequisites: None
-#todo: change icon
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/data-ai/implement-sql-data-warehouse-trophy.svg
 levels:
 - beginner
 roles:

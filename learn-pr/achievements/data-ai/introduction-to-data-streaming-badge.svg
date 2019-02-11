@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Implementing a Data Streaming Solution with Streaming Analytics/introduction-to-data-streaming</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-8.2%" y="-12.5%" width="116.4%" height="128.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-6.3%" y="-10.0%" width="114.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0964956975 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-5" points="0.7992 0.1212 4.6772 0.1212 4.6772 4 0.7992 4"></polygon>
+        <polygon id="path-7" points="0.0002 0.989 19.698 0.989 19.698 7.0289 0.0002 7.0289"></polygon>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Implementing-a-Data-Streaming-Solution-with-Streaming-Analytics" transform="translate(-50.000000, -260.000000)">
+            <g id="Implementing-a-Data-Streaming-Solution-with-Streaming-Analytics/introduction-to-data-streaming" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Data-dots" filter="url(#filter-3)" mask="url(#mask-2)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="2">
+                        <g transform="translate(18.000000, 48.000000)">
+                            <path d="M15.9979444,3.48461914 L15.9979444,12.0224 C15.9979444,13.6792542 14.6547987,15.0224 12.9979444,15.0224 L8,15.0224" id="Path-72" fill="none"></path>
+                            <circle id="Oval" fill="#E86C60" cx="5" cy="15" r="5"></circle>
+                            <path d="M26.7539993,1.77635684e-15 L26.7539993,14 C26.7539993,15.1045695 25.8585688,16 24.7539993,16 L22,16 C20.8954305,16 20,16.8954305 20,18 L20,25.92808" id="Path-74" fill="none"></path>
+                            <circle id="Oval" fill="#72C472" cx="20" cy="27" r="5"></circle>
+                            <path d="M53,2.48461914 L53,12.0224 C53,13.6792542 51.6568542,15.0224 50,15.0224 L45.0020556,15.0224" id="Path-72" fill="none" transform="translate(49.001028, 8.753510) scale(-1, 1) translate(-49.001028, -8.753510) "></path>
+                            <circle id="Oval" fill="#EFD358" transform="translate(56.000000, 15.000000) scale(-1, 1) translate(-56.000000, -15.000000) " cx="56" cy="15" r="5"></circle>
+                            <path d="M41.7539993,3.55271368e-15 L41.7539993,14 C41.7539993,15.1045695 40.8585688,16 39.7539993,16 L37,16 C35.8954305,16 35,16.8954305 35,18 L35,25.92808" id="Path-74" fill="none" transform="translate(38.377000, 12.964040) scale(-1, 1) translate(-38.377000, -12.964040) "></path>
+                            <circle id="Oval" fill="#43A6DD" transform="translate(42.000000, 27.000000) scale(-1, 1) translate(-42.000000, -27.000000) " cx="42" cy="27" r="5"></circle>
+                        </g>
+                    </g>
+                    <g id="Cloud" filter="url(#filter-4)" mask="url(#mask-2)">
+                        <g transform="translate(17.000000, 12.000000)">
+                            <path d="M13.78125,12 C13.8806719,12 13.9771406,12.013 14.0755781,12.015 C15.4379531,5.161 21.3983438,0 28.546875,0 C34.9374375,0 40.3633125,4.131 42.4186875,9.902 C43.5841875,9.33 44.8855313,9 46.265625,9 C51.1589531,9 55.125,13.029 55.125,18 C55.125,18.142 55.1102344,18.279 55.1043281,18.419 C59.6580469,19.72 63,23.959 63,29 C63,35.075 58.1519531,40 52.171875,40 L13.78125,40 C6.1700625,40 0,33.732 0,26 C0,18.268 6.1700625,12 13.78125,12" id="Fill-11" fill="#FFFFFF" fill-rule="evenodd"></path>
+                            <path d="M55.1874168,18.4491716 C55.1928347,18.3098704 55.0987198,17.8942998 55.0987198,17.7530086 C55.0987198,14.7719635 53.6309484,12.4739989 51.5983336,10.8461652 C52.5717493,12.3227576 53.6340339,14.3513375 53.6340339,16.316479 C53.6340339,17.0149749 53.5716462,17.416775 53.5381813,17.9309262 C54.1846958,18.0864391 54.5426869,18.2501699 55.1874168,18.4491716 Z" id="Fill-12" fill="#C4CBCD" fill-rule="evenodd"></path>
+                            <path d="M51.799131,40 C58.461254,40 62.7837174,35.328998 62.9929665,29.2922533 C63.1321368,25.2839194 61.2176594,22.0197182 58.2180945,19.9549414 C59.7114613,22.2257918 60.3842629,24.7980302 59.8710106,27.8386262 C59.1534444,32.0883894 55.9673319,35.5835596 51.8780929,36.6260496 C49.5931331,37.2089147 47.4058886,37.0179936 45.4683611,36.2947156 C46.5570482,34.7865396 47.2074968,32.9278364 47.2074968,30.908517 C47.2074968,27.8820633 45.756572,25.2081571 43.5347817,23.5555275 C44.8741729,25.4425153 45.5335047,27.867921 45.1021753,30.4640444 C44.4823245,34.1996338 41.5419809,37.2099249 37.8929544,37.8453185 C37.1349202,37.9766399 36.3916914,38.0089652 35.6731382,37.9534061 C32.8571596,37.7331902 30.5346929,35.616895 29.7509961,32.839952 C29.5674097,32.1873856 29.4410707,31.5186565 29.4410707,30.908517 C29.4410707,30.5418271 29.4667333,30.1822085 29.5101624,29.8276406 C29.6838785,28.3265358 30.2119362,26.9375592 31.0114254,25.7526359 C29.8763481,26.219332 28.6771144,26.5567271 27.4245813,26.7244144 C27.4413607,26.4365175 27.4670234,26.1506408 27.4670234,25.857693 C27.4670234,21.1786098 25.2373369,17.0429951 21.8163128,14.4680851 C23.8861015,17.3510954 24.9333336,21.051329 24.3421064,25.0232969 C23.4468759,31.0398384 18.7121234,35.8855988 12.8334104,36.8018183 C8.95243328,37.406907 5.33696557,36.3351222 2.52,34.2168066 C5.03592334,37.7180378 9.07679827,40 13.6486919,40 L38.3242838,40 L51.799131,40 Z" id="Fill-13" fill="#E6E6E6" fill-rule="evenodd"></path>
+                            <path d="M40.9124036,22.1276596 C42.1306825,19.908216 42.5659268,17.2256232 42.84,14.5869722 C43.3538222,9.64012765 40.8444222,5.75916832 37.3842441,3.01271987 C39.172256,5.52828998 39.9913353,8.18662302 39.9913353,11.5755155 C39.9913353,15.5626841 38.5147774,19.1754283 36.12,21.864659 C36.7543027,21.7060556 37.4123442,21.6137043 38.0922255,21.6137043 C39.0816617,21.6137043 40.028368,21.8004146 40.9124036,22.1276596 Z" id="Fill-14" fill="#E6E6E6" fill-rule="evenodd"></path>
+                            <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="32.5" cy="23.5" r="15.5"></circle>
+                            <g id="Group-9" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(22.000000, 14.000000)">
+                                <g id="Group-3" transform="translate(7.000000, 14.011100)">
+                                    <mask id="mask-6" fill="white">
+                                        <use xlink:href="#path-5"></use>
+                                    </mask>
+                                    <g id="Clip-2"></g>
+                                    <path d="M2.7382,0.1212 C3.8092,0.1212 4.6772,0.9892 4.6772,2.0602 C4.6772,3.1322 3.8092,4.0002 2.7382,4.0002 C1.6672,4.0002 0.7992,3.1322 0.7992,2.0602 C0.7992,0.9892 1.6672,0.1212 2.7382,0.1212" id="Fill-1" fill="#384B58" mask="url(#mask-6)"></path>
+                                </g>
+                                <g id="Group-6" transform="translate(0.000000, 0.011100)">
+                                    <mask id="mask-8" fill="white">
+                                        <use xlink:href="#path-7"></use>
+                                    </mask>
+                                    <g id="Clip-5"></g>
+                                    <path d="M17.4957,6.6409 C15.4457,4.5909 12.6747,3.4269 9.7937,3.4269 C6.8567,3.4269 4.1417,4.5909 2.0917,6.6409 C1.5927,7.1399 0.8177,7.1399 0.3737,6.6409 C-0.1243,6.1419 -0.1243,5.3659 0.3737,4.9229 C2.9227,2.3739 6.2477,0.9889 9.8487,0.9889 C13.4507,0.9889 16.7757,2.3739 19.3247,4.9229 C19.8237,5.4219 19.8237,6.1969 19.3247,6.6409 C18.9917,6.8619 18.6597,7.0289 18.3827,7.0289 C18.0497,7.0289 17.7727,6.9179 17.4957,6.6409 Z" id="Fill-4" fill="#384B58" mask="url(#mask-8)"></path>
+                                </g>
+                                <path d="M13.0626,11.2511 C12.1766,10.3641 10.9576,9.8661 9.7386,9.8661 C8.4636,9.8661 7.3006,10.3641 6.4136,11.2511 C5.9146,11.7501 5.1396,11.7501 4.6966,11.2511 C4.1976,10.7521 4.1976,9.9761 4.6966,9.5331 C6.0816,8.1481 7.8546,7.4281 9.7936,7.4281 C11.7336,7.4281 13.5066,8.1481 14.8916,9.5331 C15.3906,10.0321 15.3906,10.8071 14.8916,11.2511 C14.6146,11.5281 14.2826,11.6391 13.9496,11.6391 C13.6166,11.6391 13.3406,11.5281 13.0626,11.2511 Z" id="Fill-7" fill="#384B58"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
