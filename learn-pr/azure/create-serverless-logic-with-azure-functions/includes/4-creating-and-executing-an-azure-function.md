@@ -31,7 +31,7 @@ Azure provides a [large number of bindings](https://docs.microsoft.com/azure/azu
 
 Let's look at an example of configuring a function with an input binding (trigger) and an output binding. Let's say we want to write a new row to Azure Table storage whenever a new message appears in Azure Queue storage. This scenario can be implemented using an Azure Queue storage _trigger_ and an Azure Table storage _output binding_.
 
-The following is the _function.json_ file for this scenario. 
+The following snippet is the _function.json_ file for this scenario. 
 
 ```json
 {
@@ -56,7 +56,7 @@ The following is the _function.json_ file for this scenario.
 
 Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. 
 
-This is a very simple example, we could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
+This example is a simple illustration of how we configure bindings for a function.  We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
 > To view and edit the contents of _function.json_ in the Azure portal, click the **Advanced** editor option on the **Integrate** tab of your function.
