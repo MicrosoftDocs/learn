@@ -19,8 +19,7 @@ abstract: |
   - Set granular security controls
   - Setup security auditing and monitor
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/data-warehouse-security-badge.svg
 levels:
 - beginner
 roles:
