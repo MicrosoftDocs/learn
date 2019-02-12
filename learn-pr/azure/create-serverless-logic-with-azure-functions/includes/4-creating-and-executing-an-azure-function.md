@@ -29,9 +29,9 @@ Azure provides a [large number of bindings](https://docs.microsoft.com/azure/azu
 
 ### A sample binding definition
 
-Let's look at an example of configuring a function with an input binding (trigger) and an output binding. Let's say we want to read data from Blob storage, process it in our function, and then write a message to a queue. You would configure an _input binding_ of type *blob* and an _output binding_ of type *queue*.
+Let's look at an example of configuring a function with an input binding (trigger) and an output binding. Let's say we want to write a new row to Azure Table storage whenever a new message appears in Azure Queue storage. This scenario can be implemented using an Azure Queue storage _trigger_ and an Azure Table storage _output binding_.
 
-Bindings can be defined in the Azure portal, and are stored as JSON files, which you can also edit directly. The following JSON is sample definition of a trigger and binding for a function.
+The following is the _function.json_ file for this scenario. 
 
 ```json
 {
@@ -54,7 +54,12 @@ Bindings can be defined in the Azure portal, and are stored as JSON files, which
 }
 ```
 
-This example shows a function that is triggered by a message being added to a queue named **myqueue-items**. It then sends the return value of the function to the **outTable** table in Azure Table storage. This is a very simple example, we could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
+Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. 
+
+This is a very simple example, we could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
+
+> [!TIP]
+> To view and edit the contents of _function.json_ in the Azure portal, click the **Advanced** editor option on the **Integrate** tab of your function.
 
 ## Creating a function in the Azure portal
 
