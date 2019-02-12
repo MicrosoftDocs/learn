@@ -15,7 +15,7 @@ Microsoft offers four paid Azure support plans for customers who require technic
 > | --- | --- | --- | --- | --- | 
 > | Scope |Trial and non-production environments |Production workload environments |Business-critical dependence | Substantial dependence across multiple products |
 > | Technical Support | Business hours access to Support Engineers via email |24x7 access to Support Engineers via email and phone |24x7 access to Support Engineers via email and phone | 24x7 access to Support Engineers via email and phone |
-> | Case Severity/Response Times |  Minimal business impact (Sev C): <8 business hours1 | Critical business impact (Sev A): <1 hour  | Critical business impact (Sev A): <1 hour | Critical business impact (Sev A): <1 hour <15 minutes (with Azure Rapid Response or Azure Event Management) |
+> | Case Severity/Response Times |  Minimal business impact (Sev C): <8 business hours | Critical business impact (Sev A): <1 hour  | Critical business impact (Sev A): <1 hour | Critical business impact (Sev A): <1 hour <15 minutes (with Azure Rapid Response or Azure Event Management) |
 > | Architecture Support |General guidance | General guidance | Architectural guidance based on best practice delivered by ProDirect Delivery Manager | Customer-specific architectural support such as design reviews, performance tuning, configuration, and more |
 > |Operations Support |  |  | Onboarding services, service reviews, Azure Advisor consultations | Technical account manager-led service reviews and reporting |
 > | Training | | | Azure Engineering-led web seminars | Azure Engineering-led web seminars, on-demand training |
@@ -26,9 +26,9 @@ Providing different Azure support options allows Azure customers to choose a pla
 
 ## Support-plan availability and billing
 
-The support plans available and how you are charged depends on the type of Azure customer you are, and the type of Azure subscription you have.
+The support plans available and how you're charged depends on the type of Azure customer you are, and the type of Azure subscription you have.
 
-For example, Developer support is not available to Enterprise customers. Enterprise customers can purchase Standard, Professional Direct, and Premier support plans, and be billed for support as part of an Enterprise Agreement (EA). Alternatively, if you purchase a support plan within a pay-as-you-go subscription, your support plan is charged to your monthly Azure subscription bill.
+For example, Developer support isn't available to Enterprise customers. Enterprise customers can purchase Standard, Professional Direct, and Premier support plans, and be billed for support as part of an Enterprise Agreement (EA). Alternatively, if you purchase a support plan within a pay-as-you-go subscription, your support plan is charged to your monthly Azure subscription bill.
 
 ## Other support options
 Several additional support channels are available outside Azure's official support plans.
