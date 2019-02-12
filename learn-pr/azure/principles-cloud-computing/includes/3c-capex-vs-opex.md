@@ -62,7 +62,7 @@ The subscription (pay-per-use) model is a computing billing method that is desig
 
 ## Benefits of CapEx
 
-With capital expenditures, you plan your expenses at the start of a project or budget period. Your costs are fixed, meaning you know exactly how much is being spent. This can be appealing a if you required to know your exact expenses before a project starts.
+With capital expenditures, you plan your expenses at the start of a project or budget period. Your costs are fixed, meaning you know exactly how much is being spent. This is appealing when you need to predict the expenses before a project starts due to a limited budget.
 
 ## Benefits of OpEx
 
