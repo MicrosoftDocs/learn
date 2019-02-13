@@ -29,7 +29,7 @@ Let's now jump onto the Databricks workspace and perform some basic Databricks D
 - **05-Streaming** - This notebook has instructions on how to read and write streaming data using Databricks Delta.
 - **06-Optimization** - In this notebook you apply Databricks Delta operations to optimize your data pipeline.
 - **07-Architecture** - In this notebook you work on your Databricks Delta architecture.
-- **08-Capstone-Project** - This notebook includes a sample project for you explore later on in your own time.
+- **Data-Lake-Insights** - This notebook is located in the `Optional` subfolder, and includes a sample project for you to explore later on in your own time.
 
 > Note: You will find corresponding notebooks within the **Solutions** subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
 
