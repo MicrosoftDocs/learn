@@ -27,7 +27,7 @@ To complete the labs, continue working within your Azure Databricks workspace an
 - **05-Applying-Schemas-to-JSON** - In this notebook you learn how to query JSON & Hierarchical Data with DataFrames
 - **06-Corrupt-Record-Handling** - This notebook lists the exercises that help you understand how to create ADLS and use Databricks DataFrames to query and analyze this data.
 - **07-Loading-Data-and-Productionalizing** - Here you use Databricks to query and analyze data stores in Azure Data Lake Storage Gen2.
-- **08-Capstone-Project** - This notebook includes a sample project for you explore later on in your own time.
+- **Parsing-Nested-Data** - This notebook is located in the `Optional` subfolder, and includes a sample project for you explore later on in your own time.
 
 > ![Note]
 > You'll find corresponding notebooks within the **Solutions** subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
