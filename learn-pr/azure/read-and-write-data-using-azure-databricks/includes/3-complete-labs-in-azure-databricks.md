@@ -30,7 +30,7 @@ To complete the labs, continue working within your Azure Databricks workspace an
 - **08-Key-Vault-backed-secret-scopes** - This notebook lists the steps for configuring a Key Vault-backed secret scope. You'll create a Key Vault-backed secret scope  and securely store in it usernames and passwords for a sample SQL Database and Cosmos DB to be used in the following notebooks.
 - **09-SQL-Database-Connect-Using-Key-Vault** - Here you'll connect to a SQL Database using your Azure SQL username and password that you created and securely stored in the Key Vault-backed secret scope in the previous notebook.
 - **10-Cosmos-DB-Connect-Using-Key-Vault** - Here you'll connect to a Cosmos DB using your Azure Cosmos DB username and password that you previously created and securely stored in the Key Vault-backed secret scope.
-- **11-Capstone-Project** - This notebook includes a sample project for you explore later on in your own time.
+- **Exploratory-Data-Analysis** - This notebook is located in the `Optional` subfolder, and includes a sample project for you explore later on in your own time.
 
 > Note: You'll find corresponding notebooks within the **Solutions** subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
 
