@@ -13,7 +13,7 @@ Let's now jump onto the Databricks workspace and perform some basic Databricks D
 
 1. On the Import Notebooks dialog, select URL and paste in the following URL:
 
-    ```  https://github.com/solliancenet/proj-learning-paths-public/blob/master/modern-data-warehouse/06-Databricks-Delta.dbc?raw=true
+    ```  https://github.com/MicrosoftDocs/mslearn-create-data-pipelines-using-databricks-delta/blob/master/DBC/06-Databricks-Delta.dbc?raw=true
 
    ```
 1. Select **Import**.

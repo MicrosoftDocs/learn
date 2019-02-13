@@ -158,7 +158,7 @@ The PowerShell script for the exercise will create additional resources and copy
 
 ![Complete each step highlighted in the screenshot.](../media/powershell-execute-script.png)
 
-1. Download the PowerShell script, making note of your download location: https://github.com/solliancenet/proj-learning-paths-public/blob/master/modern-data-warehouse/labOneClickDeployment.ps1?raw=true
+1. Download the PowerShell script, making note of your download location: https://github.com/MicrosoftDocs/mslearn-understanding-the-sql-dw-connector-with-azure-databricks/blob/master/script/labOneClickDeployment.ps1?raw=true
 
 - Navigate to the script location in your PowerShell window. To run the script, execute the following command:
 

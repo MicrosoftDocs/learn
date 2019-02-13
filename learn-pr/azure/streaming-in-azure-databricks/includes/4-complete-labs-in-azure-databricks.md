@@ -10,7 +10,7 @@ To complete the following procedures you must already have deployed your Azure D
 3. In the blade that appears, select the downwards pointing chevron next to your name, and select Import.
 4. On the Import Notebooks dialog, select URL and paste in the following URL:
     ```
-     https://github.com/solliancenet/proj-learning-paths-public/blob/master/modern-data-warehouse/08-Streaming.dbc?raw=true
+     https://github.com/MicrosoftDocs/mslearn-streaming-in-azure-databricks/blob/master/DBC/08-Streaming.dbc?raw=true
     ```
 5. Select Import.
 6. A folder named after the archive should appear. Select that folder.

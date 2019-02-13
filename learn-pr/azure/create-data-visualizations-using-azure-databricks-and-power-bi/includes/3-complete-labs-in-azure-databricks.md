@@ -13,7 +13,7 @@ Now switch to your Databricks workspace to practice some hands-on exercises on v
 
 1. On the Import Notebooks dialog, select URL and paste in the following URL:
    ```html
-   https://github.com/solliancenet/proj-learning-paths-public/blob/master/modern-data-warehouse/07-Visualization.dbc?raw=true
+   https://github.com/MicrosoftDocs/mslearn-create-data-visualizations-using-azure-databricks-and-power-bi/blob/master/DBC/07-Visualization.dbc?raw=true
    ```
 1. Select **Import**.
 1. A folder named after the archive should appear. Select that folder.
