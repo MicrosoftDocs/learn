@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage.copy-data-from-gen1-to-gen2
-title: Copy Data from ADLS Gen1 to ADLS Gen2 with Azure Data Factory
+title: Exercise - copy data from ADLS Gen1 to ADLS Gen2 with Azure Data Factory
 metadata:
-  title: Copy Data from ADLS Gen1 to ADLS Gen2 with Azure Data Factory - Learn
+  title: Exercise - copy data from ADLS Gen1 to ADLS Gen2 with Azure Data Factory - Learn
   description: Copy Data from ADLS Gen1 to ADLS Gen2 with Azure Data Factory - Learn
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
