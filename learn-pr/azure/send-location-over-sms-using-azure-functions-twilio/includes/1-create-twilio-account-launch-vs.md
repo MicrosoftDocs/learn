@@ -1,9 +1,10 @@
-<!--->> [!TIP]
+<!--
+> [!TIP]
 > The username and password you need to sign in to the VM are located on the **Resources** tab.
 
 > [!NOTE]
 > If you are using a Mac, after launching the VM you may need to use either the lightning icon on the toolbar, or the **Ctrl+Alt+Delete** option from the **Resources** tab next to the instructions to unlock the VM.
---->
+-->
 In this module, you'll create a cross-platform Xamarin.Forms app with a serverless back end. This app will get the user's location from their device and send it with a list of phone numbers to an Azure function. The function will then use a binding to a third-party service (Twilio) to send your location as an SMS message to all the phone numbers provided.
 
 This process involves the following steps:
@@ -54,7 +55,6 @@ To be able to send SMS messages from an Azure function, you'll need a Twilio acc
     > If you don't have an active number yet, select **Get Started** in the Active Numbers page to begin the process of creating a number.
 
 1. Note your active phone number. It will be used later in this module.
-
 
 > [!NOTE]
 > When you sign up, you will be assigned a Twilio phone number that will be used to send SMS messages. In some countries, these numbers may not be able to send SMS messages. The Twilio documentation lists [which countries have restrictions](https://support.twilio.com/hc/articles/223183068-Twilio-international-phone-number-availability-and-their-capabilities?azure-portal=true), and shows ways to send SMS messages using an [international number or AlphaNumeric sender Id](https://support.twilio.com/hc/articles/226690868-Using-Twilio-when-SMS-numbers-are-unavailable-in-your-country?azure-portal=true).
