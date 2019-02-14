@@ -4,8 +4,6 @@ Let's start by examining the purchasing options you have with Azure. There are t
 - **Web direct** - Direct Web customers pay general public prices for Azure resources, and their monthly billing and payments occur through the Azure website.
 - **Cloud Solution Provider** - Cloud Solution Provider (CSP) typically are Microsoft partner companies that a customer hires to build solutions on top of Azure. Payment and billing for Azure usage occur through the customer's CSP.
 
-![Depiction of the various Azure subscription options](../media/1a-subscription-options.png)
-
 Products and services in Azure are arranged by category, which has various resources that you can provision. You select the Azure products and services that fit your requirements, and your account is billed according to Azure's pay-for-what-you-use model.
 
 ![Depiction of the various Azure products with the Featured products selection highlighted, displaying names and short descriptions of those products](../media/1a-Azure-products-overview.png)

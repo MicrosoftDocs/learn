@@ -1,11 +1,11 @@
-Before uploading or transferring data into a data lake, you need to create one. Using the Azure Portal, you are able to provision an Azure Data Lake Storage Gen2 within minutes.
+Before uploading or transferring data into a data lake, you need to create one. Using the Azure portal, you are able to provision an Azure Data Lake Storage Gen2 within minutes.
 
 > [!NOTE]
-> If you don't have an Azure account, or prefer not to do the exercise in your account, you can read through these instructions to understand the steps involved in creating an Azure Data Lake Store.
+> If you don't have an Azure account, or prefer not to do the exercise in your account, you can read through the following instructions to understand the steps involved in creating an Azure Data Lake Store.
 
 ## Create a new Resource Group
 
-First, create a new resource group to hold the data lake storage. A resource group will let you administer related services and applications together. It also makes it easier to clean-up resources when you are done with this module. To create a resource group in the Azure portal, follow these steps:
+First, create a new resource group to hold the data lake storage. A resource group will let you administer related services and applications together. It also makes it easier to clean up resources when you are done with this module. To create a resource group in the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using your account.
 1. Select **Create a resource** from the left sidebar.
@@ -19,11 +19,11 @@ First, create a new resource group to hold the data lake storage. A resource gro
 
 1. Click the **Review + Create** button and then **Create** on the review screen.
 
-Resource group creation is very fast, you can pin the resource group to your dashboard to make it easy to find later if you like.
+Resource group creation is fast, you can pin the resource group to your dashboard to make it easy to find later if you like.
 
 ## Create a Data Lake Storage Account Gen2
 
-Creating an Azure Data Lake Storage Account Gen2 is the same as creating an Azure Blob Store, there is just one setting that is different. To create the data lake, perform the following steps:
+Creating an Azure Data Lake Storage Account Gen2 is the same as creating an Azure Blob Store, there's just one setting that is different. To create the data lake, perform the following steps:
 
 1. In the Azure portal, choose **Create a resource** from the left sidebar.
 1. Select **Storage**, and choose **Storage account**.
