@@ -22,4 +22,4 @@ Azure ATP cloud service runs on Azure infrastructure and is currently deployed i
 
 ## Purchasing Azure Advanced Threat Protection
 
-Azure ATP is available as part of the Enterprise Mobility + Security 5 suite (EMS E5) and as a standalone license. You can acquire a license directly from the [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing) page or through the Cloud Solution Provider (CSP) licensing model. It is not available to purchase via the Azure portal.
+Azure ATP is available as part of the Enterprise Mobility + Security E5 suite (EMS E5) and as a standalone license. You can acquire a license directly from the [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing) page or through the Cloud Solution Provider (CSP) licensing model. It is not available to purchase via the Azure portal.
