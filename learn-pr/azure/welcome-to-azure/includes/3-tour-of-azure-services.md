@@ -184,10 +184,10 @@ A closely related set of products are the _cognitive services_. These are pre-bu
 
 DevOps (Development and Operations) brings together people, processes, and technology, automating software delivery to provide continuous value to your users. Azure DevOps Services allows you to create, build, and release pipelines that provide continuous integration, delivery, and deployment for your applications. You can integrate repositories and application tests, perform application monitoring, and work with build artifacts. You can also work with and backlog items for tracking, automate infrastructure deployment and integrate a range of third-party tools and services such as Jenkins and Chef. All of these functions and many more are closely integrated with Azure to allow for consistent, repeatable deployments for your applications to provide streamlined build and release processes.
 
-Some of the main DevOps services available with Azure are Azure DevOps Services, and Azure DevTest Labs.
+Some of the main DevOps services available with Azure are Azure DevOps Services and Azure DevTest Labs.
 
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
 > |--------------|-------------|
-> | Azure DevOps | Azure DevOps Services (formerly known as Visual Studio Team Services (VSTS)), provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing |
+> | Azure DevOps | Azure DevOps Services (formerly known as Visual Studio Team Services, or VSTS), provides development collaboration tools including high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing |
 > | Azure DevTest Labs | Quickly create on-demand Windows and Linux environments you can use to test or demo your applications directly from your deployment pipelines |

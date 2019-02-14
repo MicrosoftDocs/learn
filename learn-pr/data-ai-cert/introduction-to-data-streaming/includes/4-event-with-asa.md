@@ -9,6 +9,6 @@ Microsoft Azure Stream Analytics is an event processing engine. It enables the c
 
 ## Operational aspects
 
-Stream Analytics guarantees exactly once event processing and at-least-once delivery of events, so events are never lost. It has built-in recovery capabilities in case the delivery of an event fails. Also, Stream Analytics provides built-in checkpointing to maintain the state of your job and produces repeatable results.
+Stream Analytics guarantees **exactly-once** event processing and **at-least-once** event delivery, so events are never lost. It has built-in recovery capabilities in case the delivery of an event fails. Also, Stream Analytics provides built-in checkpointing to maintain the state of your job and produces repeatable results.
 
 Because Azure Stream Analytics is a PaaS service, it is fully managed and highly reliable. With built-in integration with various sources and destinations coupled with a flexible programmability model, it enhances programmer productivity. Furthermore, since the Stream Analytics engine enables in-memory compute, it offers superior performance. All these factors contribute to low total cost of ownership (TCO) of Azure Stream Analytics.
