@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 # interactive: azure-portal
 azureSandbox: true 
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-use-update-management-on-a-virtual-machine.md)]
