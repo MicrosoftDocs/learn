@@ -16,11 +16,11 @@ To create a custom connector, you first generate an OpenAPI or Postman descripti
 
 ![An illustration showing the steps required to create a custom connector to a service that has an existing REST API.](../media-drafts/3-custom-connector.png)
 
-You can use your new connector in your own apps and share it with other people in your organization. You can also submit your connector to Microsoft for certification. Once your connector is certified, it can be included in the set of connectors available to all users.
+You can use your new connector in your own apps and share it with other people in your organization. You can also submit your connector to Microsoft for certification. Once your connector is certified, it will be included in the set of connectors available to all users.
 
 ## What are triggers and actions?
 
-Think about the different pieces of a business process. We know that a process is the combination of steps in a specific pattern to accomplish a goal; however, not all the steps are of the same type. For example, in our social-media monitor scenario we have three distinct types: we *trigger* the process when a new tweet is posted, we do several *actions* like detect the sentiment, and we make a *control* decision based on the sentiment score. The following illustration shows the type of each step in the social-media monitor app.
+The steps of a business process do different kinds of operations. For example, in our social-media monitor scenario we *trigger* the process when a new tweet is posted, perform *actions* like detect the sentiment, and make a *control* decision based on the sentiment score. The following illustration shows the type of each step in the social-media monitor app.
 
 ![An illustration showing the flowchart for the shoe company social-media monitor app. Each step is labeled with whether it's a trigger, an action, or a control action.](../media-drafts/3-social-media-step-types.png)
 
@@ -30,7 +30,7 @@ Let's be more formal about the definitions for trigger and action:
 
 * An *action* is an operation that executes one of the tasks in your business process. Actions run when a trigger activates or another action completes.
 
-Triggers and actions are packaged inside connectors. Let's look at a few examples.
+A connector is a container for related triggers and actions. Let's look at a few examples.
 
 The Twitter connector lets your Logic App interact with Twitter. The social-media monitor app would use a trigger from the Twitter connector to determine when new relevant tweets are available. The following illustration shows the Twitter connector with its operations divided into the two categories.
 
@@ -40,7 +40,7 @@ Next, we have the Dropbox connector. Suppose you were working with a small team 
 
 ![An illustration showing that the Dropbox connector. It provides triggers to notify you when files are created or modified and several actions to manage files.](../media-drafts/3-dropbox-connector-details.png)
 
-Finally, let's look at the Twilio connector. Most connectors offer both triggers and actions; however, this connector shows that's not always true since it only has actions. The Twilio connector would fit in any workflow that used text messages for notifications. For example, you could use it in the previous Dropbox example to send team members a text message whenever a shared file changes. The following illustration shows the Twilio connector and its actions.
+Finally, let's look at the Twilio connector. Most connectors offer both triggers and actions, but this one only has actions. The Twilio connector is great whenever you want to send text messages for notifications. For example, you could use it in the Dropbox example to let team members know that a shared file had changed. The following illustration shows the Twilio connector and its actions.
 
 ![An illustration showing that the Twilio connector provides actions to send and retrieve text messages but doesn't include any triggers.](../media-drafts/3-twilio-connector-details.png)
 
@@ -87,7 +87,7 @@ The Logic Apps Designer is a graphical tool for creating your workflows. It lets
 
 _Workflow Definition Language_ is the language used by Logic Apps to represent an app. When you use the Logic Apps Designer to build your app, the Designer is actually writing JavaScript Object Notation (JSON) behind the scenes.
 
-For example, the following code shows part of the JSON definition for the social-media monitor app. This part of the JSON represents the use of the _Detect Sentiment_ action. Take a moment to examine the JSON. Find where it specifies that the _TweetText_ is the input parameter and that it uses HTTP POST to invoke the underlying API.
+For example, the following code shows part of the JSON definition for the social-media monitor app. This part of the JSON represents the use of the _Detect Sentiment_ action. Take a moment to examine the JSON. Find where it specifies the _TweetText_ is the input parameter and HTTP POST is used to invoke the underlying API.
 
 ```json
 "Detect_Sentiment": {
@@ -111,11 +111,11 @@ For example, the following code shows part of the JSON definition for the social
 
 ## When would you edit your app's JSON?
 
-The Azure portal has a _code view_ that lets you view and edit your app's JSON directly. Most of the time you don't need to since the Designer is typically easier to use and can do almost everything.
+The Azure portal has a _code view_ that lets you view and edit your app's JSON directly. Most of the time you don't need to since the Designer can do almost everything.
 
 There are a few cases where you might want to use the code view. As a simple example, suppose you have a portion of an existing Logic App that you'd like to reuse in a new app. You can copy the JSON from one app into the other. Copy-paste is often faster than using the Designer to recreate the duplicate section in the new app.
 
-It's also possible to hit an edge case where the Designer doesn't do exactly what you want. For example, the Designer automatically adds type-conversion operations when you pass the output of one action and as input to another action. If the choice the Designer makes isn't what you need, you can fix it by editing the JSON.
+It's also possible to hit an edge case where the Designer doesn't do exactly what you want. For example, the Designer adds type conversions when you pass the output of one step as input to another. If the choice the Designer makes isn't what you need, you can fix it by editing the JSON.
 
 Finally, there are a few scenarios that aren't supported in the Designer. One interesting example in this category is building a Logic App that has more than one trigger. In the social-media monitor app, we could watch both Twitter and an RSS feed. Our app would run when new data is available from either source. Multiple triggers are intentionally not supported in the Designer because it often leads to confusing scenarios. There's also an alternative design where you create several Logic Apps, one containing all your processing steps and one for each trigger condition. This alternative decouples the triggers from the processing and usually leads to a cleaner and simpler design.
 
