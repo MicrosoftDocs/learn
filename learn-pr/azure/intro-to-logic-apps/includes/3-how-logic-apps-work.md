@@ -1,4 +1,4 @@
-Now that we know what Logic Apps can do, let's discuss how they work behind the scenes. The goal is still to help you decide if Logic Apps are a good option for your own apps. Knowing how they work will let you judge things like how difficult it will be to connect to a nonstandard service and how to respond in the rare cases where the Logic Apps Designer doesn't support the operation you need.
+Now that we know what Logic Apps can do, let's discuss how they work behind the scenes. The goal is still to help you decide if Logic Apps is a good option for your own apps. Knowing how they work will let you judge things like how difficult it will be to connect to a nonstandard service and how to respond in the rare cases where the Logic Apps Designer doesn't support the operation you need.
 
 ## What is a connector?
 
@@ -10,13 +10,13 @@ Connectors use an underlying REST or SOAP API to do their work. When you use a c
 
 ## Custom connectors
 
-You can write custom connectors to access services that do not have pre-built connectors. The services must have a REST or SOAP API for this to work. The requirement that the service provide an API shouldn't be too surprising since connectors are essentially wrappers around that underlying API.
+You can write custom connectors to access services that do not have pre-built connectors. The services must have a REST or SOAP API. The requirement that the services provide an API shouldn't be too surprising since connectors are essentially wrappers around that underlying API.
 
 To create a custom connector, you first generate an OpenAPI or Postman description of the API and then use it to create a Custom Connector resource in the Azure portal. You'll be able to give your connector a name and icon as well as provide a description for each operation. The following illustration shows an example of the process; notice that there's no coding involved.
 
 ![An illustration showing the steps required to create a custom connector to a service that has an existing REST API.](../media-drafts/3-custom-connector.png)
 
-You can use use your new connector in your own apps and share it with other people in your organization. You can also submit your connector to Microsoft for certification and request that it be included in the standard set of connectors available to all users.
+You can use your new connector in your own apps and share it with other people in your organization. You can also submit your connector for certification and request that Microsoft include it in the standard set of connectors available to all users.
 
 ## What are triggers and actions?
 
@@ -113,10 +113,10 @@ For example, the following code shows part of the JSON definition for the social
 
 The Azure portal has a _code view_ that lets you view and edit your app's JSON directly. Most of the time you don't need to since the Designer is typically easier to use and can do almost everything.
 
-There are a few cases where you might want to use the code view. As a simple example, suppose you have a portion of an existing Logic App that you'd like to reuse in a new app. You can copy the JSON from one app into the other. This is often faster than using the Designer to recreate the duplicate section in the new app.
+There are a few cases where you might want to use the code view. As a simple example, suppose you have a portion of an existing Logic App that you'd like to reuse in a new app. You can copy the JSON from one app into the other. Copy-paste is often faster than using the Designer to recreate the duplicate section in the new app.
 
 It's also possible to hit an edge case where the Designer doesn't do exactly what you want. For example, when you take the output of one action and pass it as input to another action, the Designer automatically adds any type conversions that it thinks are necessary. If the choice the Designer makes isn't what you need, you can fix it by editing the JSON.
 
-Finally, there are a few scenarios that aren't supported in the Designer. One interesting example in this category is building a Logic App that has more than one trigger. In the social-media monitor app, we could use this to have the app watch both Twitter and an RSS feed and run when new data became available from either source. You have to write JSON to do this, it's intentionally not supported in the Designer because it often leads to confusing scenarios. There's also an alternative design where you create several Logic Apps, one containing all your processing steps and one for each trigger condition. This alternative decouples the triggers from the processing and usually leads to a cleaner and simpler design.
+Finally, there are a few scenarios that aren't supported in the Designer. One interesting example in this category is building a Logic App that has more than one trigger. In the social-media monitor app, we could have the app watch both Twitter and an RSS feed and run when new data became available from either source. You must write JSON to create multiple triggers, it's intentionally not supported in the Designer because it often leads to confusing scenarios. There's also an alternative design where you create several Logic Apps, one containing all your processing steps and one for each trigger condition. This alternative decouples the triggers from the processing and usually leads to a cleaner and simpler design.
 
-All of these cases are relatively rare and you'll generally spend most of your time using the Designer. It's still comforting to know that Logic Apps give you the both the ease-of-use of a WYSIWYG design tool and the ability to take control and edit the app's definition directly.
+All of these cases are relatively rare and you'll generally spend most of your time using the Designer. It's still comforting to know that Logic Apps gives you the ease-of-use of a WYSIWYG design tool and the ability to take control and edit the app's definition directly.
