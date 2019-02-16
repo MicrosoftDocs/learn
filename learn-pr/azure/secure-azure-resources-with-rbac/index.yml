@@ -25,6 +25,7 @@ levels:
 - beginner
 roles: 
 - administrator
+- solution-architect
 products: 
 - azure
 - azure-portal

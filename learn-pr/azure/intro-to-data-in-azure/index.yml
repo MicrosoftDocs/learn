@@ -22,6 +22,8 @@ levels:
 - beginner
 roles: 
 - developer
+- data-engineer
+- solution-architect
 products: 
 - azure
 - azure-storage

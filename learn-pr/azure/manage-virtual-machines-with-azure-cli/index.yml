@@ -25,6 +25,7 @@ levels:
 roles:
 - developer
 - administrator
+- solution-architect
 products:
 - azure
 - azure-virtual-machines
