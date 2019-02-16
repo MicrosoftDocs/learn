@@ -21,7 +21,9 @@ The power of Logic Apps comes from the diversity of the pre-built components and
 All the components have standard interfaces so you can connect them in any combination you need. You can even add conditional statements and loops to add decision making to your app. The following video shows how the pre-built components and the control operations work together to implement your workflow.
 
 <!-- TODO: add final video link when available -->
-![A video overview of the capabilities of Logic Apps.](https://microsoft.sharepoint.com/:v:/t/CE_APEX/EbBSOox5qb9FhLWTT9kx5KABcSukRFN_WFePd0nGQS5Jdg?e=7cClvA)
+![A video overview of the capabilities of Logic Apps.]()
+
+**Draft video link: https://microsoft.sharepoint.com/:v:/t/CE_APEX/EbBSOox5qb9FhLWTT9kx5KABcSukRFN_WFePd0nGQS5Jdg?e=7cClvA
 
 ## When to use Logic Apps
 
