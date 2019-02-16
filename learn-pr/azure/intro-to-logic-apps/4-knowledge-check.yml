@@ -1,0 +1,68 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-logic-apps.4-knowledge-check
+title: Knowledge check
+
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 3/1/2019
+  author: marktap
+  ms.author: matapar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+
+quiz:
+
+  questions:
+  
+  - content: "What differentiates an _action_ from a _control action_?"
+    choices:
+    - content: "An action executes a task while a control action alters the control flow through your Logic App."
+      isCorrect: true
+      explanation: "Actions and control actions both contain the word _action_ in their name; however, they do very different things. Actions represent tasks while control actions use Boolean expressions, loops, etc. to determine which actions are executed when your app runs."
+    - content: "An action is a component that executes a task in a Logic App. A control action is a component that launches your Logic App."
+      isCorrect: false
+      explanation: "The component that launches your app is called a trigger."
+    - content: "An action is a component that launches your app while control actions are switch statements."
+      isCorrect: false
+      explanation: "Triggers are the component that launch your app. Control actions can be switch statements; however, they can also be other types of conditional logic."
+
+  - content: "Which of the following is the **best** definition of Logic Apps?"
+    choices:
+    - content: "A cloud service that allows you to monitor social media and store data in Azure."
+      isCorrect: false
+      explanation: "You can use a Logic App to monitor social media and store data in Azure but that's not a definition of the entire Logic Apps service."
+    - content: "A cloud service in which you use pre-built connectors to build workflows."
+      isCorrect: false
+      explanation: "You can use pre-built connectors to build workflows with Logic apps, but you can also use custom connectors."
+    - content: "A cloud service that automates the execution of business processes."
+      isCorrect: true
+      explanation: "Logic Apps is a cloud service that automates business processes."
+
+  - content: "Suppose you work for a bank that wants to automate fraud detection. You need a workflow that triggers every time a bank card is used and check it against a number of criteria to instantly determine if the transaction is possibly fraudulent.  If the transaction is flagged as possibly fraudulent you need the transaction to stop instantly and send a notification to the account owner to approve or deny it. Your boss asks you to build to a Logic app to facilitate that process "
+    choices:
+    - content: "The conditional Logic is too complex and Logic apps do not have a way to work around that."
+      isCorrect: false
+      explanation: "When you have highly complex conditional logic you can take advantage of the extensibility of Logic Apps by using an Azure Function."
+    - content: "Logic apps are not meant to be used for low latency, sub-second responses."
+      isCorrect: true
+      explanation: "This is the one situation where you would need to find another solution as Logic Apps are not meant for low-latency, sub-second responses."
+    - content: "Logic apps are not meant to send notifications."
+      isCorrect: false
+      explanation: "Logic Apps can send notifications."
+
+  - content: "You work for a chain of athletic clubs that wants to automate their lesson sign ups and notifications to help their members and instructors track their workouts and classes. They have invested heavily in an in-house proprietary customer management system which stores customer phone numbers and emails. This system doesn't have a built-in connector. You want to use Logic Apps to automate this process, how can you accomplish this?"
+    choices:
+    - content: "Logic apps are not the correct service to use and you should investigate for a different solution."
+      isCorrect: false
+      explanation: "Logic Apps can be used even in cases where some services do not have a pre-built connector. This does mean it is your responsibility to write the connector."
+    - content: "You can use a function to create the component for the customer management system."
+      isCorrect: false
+      explanation: "Functions are a great extensibility feature to embed complex conditional logic, but not for creating custom components."
+    - content: "Create a custom connector for the customer management system and use it in your Logic App."
+      isCorrect: true
+      explanation: "Logic Apps is an extensible platform. You can create an API and build your own custom components."

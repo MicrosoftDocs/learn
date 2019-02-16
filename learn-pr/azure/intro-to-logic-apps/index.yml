@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.intro-to-logic-apps
+metadata:
+  title: "Introduction to Logic Apps"
+  description: "Introduction to Logic Apps"
+  ms.date: 3/1/2019
+  author: marktap
+  ms.author: matapar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Logic Apps"
+summary: "Identify the types of situations where Logic Apps are the appropriate solution to automate business processes and how they integrate services to execute those processes."
+abstract: |
+  In this module, you will:
+  - "Determine when Logic Apps are the appropriate solution to automate a business process"
+  - "Identify the components that make a Logic App work"
+prerequisites: |
+  - Basic knowledge of basic programming concepts such as conditional logic
+  - Basic knowledge of REST services and APIs
+iconUrl: http://via.placeholder.com/120x120
+badge:
+  uid: learn.intro-to-logic-apps.badge
+levels: 
+- beginner
+roles: 
+- developer
+- administrator
+- business-analyst
+products:
+- azure
+- azure-portal
+# azure-logic-apps
+units:
+- learn.intro-to-logic-apps.1-introduction
+- learn.intro-to-logic-apps.2-when-to-use-logic-apps
+- learn.intro-to-logic-apps.3-how-logic-apps-work
+- learn.intro-to-logic-apps.4-knowledge-check
+- learn.intro-to-logic-apps.5-summary
