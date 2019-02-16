@@ -25,7 +25,7 @@ badge:
 levels: 
 - beginner
 roles: 
-- administrator
+- developer
 products:
 - azure
 - azure-portal

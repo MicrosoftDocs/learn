@@ -1,4 +1,4 @@
-Implementing business processes is difficult because you need to make diverse products work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products?
+Implementing business processes is difficult because you need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Office 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products?
 
 Azure Logic Apps gives you pre-built components to connect to hundreds of services. You put the pieces together in any combination you need. For example, in the shoe-company scenario we want to monitor social media reaction to our new product. We'll build a Logic App to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
 
@@ -79,7 +79,7 @@ Finally, let's look at the Twilio connector. Most connectors offer both triggers
 
 ## How to build Logic Apps from triggers and actions
 
-Triggers and actions are the building blocks of Logic Apps. An app can only have one trigger and it has to appear right at the beginning of the workflow. After the trigger, you include as many actions as you need to implement the tasks in your business process. The following illustration shows the trigger and actions used in the social-media monitor app.
+Triggers and actions are the building blocks of Logic Apps. An app must begin with a trigger. After the trigger, you include as many actions as you need to implement the tasks in your business process. The following illustration shows the trigger and actions used in the social-media monitor app.
 
 ![An illustration of the trigger and actions in the social-media monitor Logic App. The illustration shows the use of the "When a new tweet is posted" Twitter trigger to launch the Logic App. The trigger is followed by three actions: "Detect sentiment" from the Text Analytics service, "Insert row" from SQL Server, and "Send email" from Outlook.com.](../media-drafts/2-social-media-connectors.png)
 

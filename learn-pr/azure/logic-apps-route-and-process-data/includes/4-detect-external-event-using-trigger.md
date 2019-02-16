@@ -1,4 +1,4 @@
-You need a trigger to launch your Logic App. First, you need to find the best one. Then you need to configure it so it runs your app correctly without wasting time or money. For example, in the shoe-company scenario we would use a Twitter trigger to launch our app when tweets containing our product name are available.
+You use a trigger to launch your Logic App. You need to find the best one and configure it to runs your app correctly without wasting time or money. In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available.
 
 In this unit, we'll examine the types of triggers and the strengths and weaknesses of the two most common options. We'll see how to create a Logic App using the Azure portal and how to add a trigger using the Logic Apps Designer.
 
