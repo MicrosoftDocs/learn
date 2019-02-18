@@ -24,6 +24,7 @@ levels:
 - intermediate
 roles: 
 - administrator
+- solution-architect
 products: 
 - azure
 - azure-active-directory
