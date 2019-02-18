@@ -1,14 +1,18 @@
 Licensing is another area that can dramatically impact your cloud spending. Let's look at some ways you can reduce your licensing costs.
 
+## Linux vs. Windows
+
+Many of the Azure services you deploy have the choice of running on Windows or Linux. In some cases, the cost of the product can be different based on the OS you choose. Where you have a choice, and your application doesn't depend on the underlying OS, it's useful to compare pricing to determine whether you can save money.
+
 ## Azure Hybrid Benefit for Windows Server
 
-Many customers have made an investment in Windows Server licenses and would like to repurpose this investment on Azure. The Azure Hybrid Benefit gives customers the right to use these licenses for virtual machines on Azure. That means you won't be charged for the Windows Server license and will instead be billed at the Linux rate.
+Many customers have invested in Windows Server licenses and would like to repurpose this investment on Azure. The Azure Hybrid Benefit gives customers the right to use these licenses for virtual machines on Azure. That means you won't be charged for the Windows Server license and will instead be billed at the Linux rate.
 
 To be eligible for this benefit, your Windows licenses must be covered by Software Assurance. The following guidelines will also apply:
 
 - Each two-processor license or each set of 16-core licenses is entitled to two instances of up to 8 cores or one instance of up to 16 cores.
 - Standard Edition licenses can only be used once either on-premises or in Azure. That means you can't use the same license for an Azure VM and a local computer.
-- Datacenter Edition benefits allow for simultaneous usage both on-premises and in Azure, so the license will cover two running Windows machines.
+- Datacenter Edition benefits allow for simultaneous usage both on-premises and in Azure so that the license will cover two running Windows machines.
 
 > [!NOTE]
 > Most customers are typically licensed by core, so you'll use that model for your calculation. If you have questions about what licenses you have, reach out to your license reseller or your Microsoft account team.
@@ -19,7 +23,7 @@ Applying the benefit is easy. It can be turned on and off at any time with exist
 
 The Azure Hybrid Benefit for SQL Server helps you maximize the value from your current licensing investments and accelerate your migration to the cloud. Azure Hybrid Benefit for SQL Server is an Azure-based benefit that enables you to use your SQL Server licenses with active Software Assurance to pay a reduced rate.
 
-You can apply this benefit even if the Azure resource is active, but the reduced rate will be applied from the time you select it in the portal. No credit will be issued retroactively.
+You can use this benefit even if the Azure resource is active, but the reduced rate will only be applied from the time you select it in the portal. No credit will be issued retroactively.
 
 ### Azure SQL Database vCore-based options
 
@@ -46,7 +50,7 @@ The [Enterprise Dev/Test](https://azure.microsoft.com/offers/ms-azr-0148p/) and 
 
 There are a few requirements for this benefit, one being that it's only for non-production workloads, and another being that any users of these environments (excluding testers) must be covered under a Visual Studio subscription. In short, for non-production workloads, this allows you to save money on your Windows, SQL Server, and other Microsoft virtual machine workloads.
 
-Below are the full details of each offer. If you are a customer on an Enterprise Agreement, you'd leverage the Enterprise Dev/Test offer, and if you are a customer without an Enterprise Agreement and are instead using PAYG accounts, you'd leverage the Pay-As-You-Go Dev/Test offer.
+Below are the full details of each offer. If you are a customer on an Enterprise Agreement, you'd want to leverage the Enterprise Dev/Test offer, and if you are a customer without an Enterprise Agreement and are instead using PAYG accounts, you'd leverage the Pay-As-You-Go Dev/Test offer.
 
 ## Bring your own SQL Server license
 
@@ -68,7 +72,7 @@ Look for SQL Server images for Developer Edition on the Azure Marketplace and us
 
 ## Use constrained instance sizes for database workloads
 
-Many customers have high requirements for memory, storage, or I/O bandwidth but low CPU core counts. Based on this popular request, Microsoft has made available the most popular VM sizes (DS, ES, GS, and MS) in new sizes that constrain the vCPU count to one half or one quarter of the original VM size, while maintaining the same memory, storage, and I/O bandwidth.
+Many customers have high requirements for memory, storage, or I/O bandwidth but low CPU core counts. Based on this popular request, Microsoft has made available the most popular VM sizes (DS, ES, GS, and MS) in new sizes that constrain the vCPU count to one half or one-quarter of the original VM size, while maintaining the same memory, storage, and I/O bandwidth.
 
 | VM Size | vCPUs | Memory | Max disks | Max I/O throughput | SQL Server Enterprise licensing cost per year | Total cost per year (compute + licensing) |
 |---------|-------|--------|-----------|--------------------|-----------------------------------------------|---------------------------|

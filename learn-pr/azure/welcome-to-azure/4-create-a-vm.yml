@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.welcome-to-azure.4-create-a-vm
+title: Create a virtual machine
+metadata:
+  title: Create a virtual machine
+  description: No matter your area of interest, get started with the cloud by creating your first virtual machine.
+  ms.date: 09/24/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: platform-cloud
+interactive: bash
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-create-a-vm.md)]
+tasks:
+# Verify the VM named "myVM" exists.
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Compute/virtualMachines"
+      name: myVM
+  hint: "Run the `az vm create` command as shown to create your virtual machine."

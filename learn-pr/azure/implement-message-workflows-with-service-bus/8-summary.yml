@@ -22,31 +22,31 @@ quiz:
     choices:
     - content: 'Azure Service Bus queues'
       isCorrect: true
-      correctExplanation: "Azure Service Bus queues handle messages in the same order they're added and also support transactions. This means that if one message in a transaction fails to be added to the queue, all messages in the transaction will not be added."
+      explanation: "Azure Service Bus queues handle messages in the same order they're added and also support transactions. This means that if one message in a transaction fails to be added to the queue, all messages in the transaction will not be added."
     - content: 'Azure Storage queues'
       isCorrect: false
-      incorrectExplanation: "Even though a queue is a first-in-first-out data structure, Azure Storage queues do not guarantee it."
+      explanation: "Even though a queue is a first-in-first-out data structure, Azure Storage queues do not guarantee it."
     
   - content: "Suppose you're sending a message with Azure Service Bus and you want multiple components to receive it. Which Azure Service Bus exchange feature should you use?"
     choices:
     - content: 'Queue'
       isCorrect: false
-      incorrectExplanation: "A queue can only have one destination component at a time, which means that each message in the queue is delivered to only one receiver."
+      explanation: "A queue can only have one destination component at a time, which means that each message in the queue is delivered to only one receiver."
     - content: 'Topic'
       isCorrect: true
-      correctExplanation: "A topic allows multiple destination components to subscribe. This means that each message can be delivered to multiple receivers."
+      explanation: "A topic allows multiple destination components to subscribe. This means that each message can be delivered to multiple receivers."
     - content: 'Relay'
       isCorrect: false
-      incorrectExplanation: "A relay is used for two-way communication and it provides bidirectional connections across network boundaries."
+      explanation: "A relay is used for two-way communication and it provides bidirectional connections across network boundaries."
 
   - content: "True or false: you can add a message to an Azure Service Bus queue that is 2 MB in size."
     choices:
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: "An Azure Service Bus queue message must be larger than 64 KB but smaller than 256 KB."
+      explanation: "An Azure Service Bus queue message must be larger than 64 KB but smaller than 256 KB."
     - content: 'False'
       isCorrect: true
-      correctExplanation: "An Azure Service Bus queue message must be larger than 64 KB but smaller than 256 KB."
+      explanation: "An Azure Service Bus queue message must be larger than 64 KB but smaller than 256 KB."
 
       
 

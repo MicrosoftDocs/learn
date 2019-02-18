@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-networking
 metadata:
-  title: Introduction to Azure networking - Learn
+  title: Core Cloud Services - Introduction to Azure networking - Learn
   description: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
   ms.date: 09/24/2018
   author: tpetchel
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: thpetche
-title: Introduction to Azure networking
+title: Core Cloud Services - Azure networking options
 summary: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
 abstract: |
   In this module, you will:
@@ -32,4 +32,5 @@ units:
 - learn.intro-to-azure-networking.3-scale-load-balancer
 - learn.intro-to-azure-networking.4-reduce-latency-traffic-manager
 - learn.intro-to-azure-networking.5-summary
-achievement: learn.intro-to-azure-networking.badge
+badge:
+  uid: learn.intro-to-azure-networking.badge

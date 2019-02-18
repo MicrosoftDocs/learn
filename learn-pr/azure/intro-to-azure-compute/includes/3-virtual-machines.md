@@ -11,7 +11,7 @@ Typically, new virtual machines can be created and provisioned in minutes by sel
 
 ## Moving to the cloud with VMs
 
-VMs are also an excellent choice when moving from a physical server to the cloud ("lift and shift"). You can create an image of the physical server and host it within a virtual machine with little or no changes. Just like a physical on-premise server, you'll be required to maintain the virtual machine. This means updating the operating system and the software it runs. 
+VMs are also an excellent choice when moving from a physical server to the cloud ("lift and shift"). You can create an image of the physical server and host it within a virtual machine with little or no changes. Just like a physical on-premises server, you'll be required to maintain the virtual machine. This means updating the operating system and the software it runs. 
 
 ## Scaling VMs in Azure
 
@@ -27,16 +27,13 @@ An **availability set** is a logical grouping of two or more VMs that ensure you
 
 A _planned maintenance event_ is when the underlying Azure fabric that hosts virtual machines is updated by Microsoft. This is done to patch security vulnerabilities, improve performance, and add or update features. Most of the time these updates can be performed without any impact to the guest VMs - however, sometimes it requires a reboot to complete an update. When the VM is part of an availability set, the Azure fabric will ensure updates are sequenced so not all of the associated VMs are rebooted at the same time. This grouping is referred to as an _update domain_. Update domains are a logical part of each datacenter and are implemented with software and logic.
 
-> [!IMPORTANT]
-> Azure does not provide any notification about planned maintenance.
-
 _Unplanned maintenance events_ are those which involve a hardware failure in the datacenter, such as a power outage or disk failure. VMs that are part of an availability set will automatically switch to a working physical server to the VM continues to run. This group is referred to as a _fault domain_. A fault domain is essentially a rack of servers. It provides the physical separation of your workload across different hardware in the datacenter. This includes power, cooling, and network hardware that supports the physical servers located in server racks. In the event the hardware that supports a server rack becomes unavailable, only that rack of servers would be affected by the outage.
 
 Azure creates two fault domains (two racks each having dedicated power and network resources), and five logical update domains. Your VMs are then sequentially placed across the created domains as shown here.
 
 ![Availability sets in Azure showing update domains and fault domains which are duplicated across servers](../media/3-availability-sets.png)
 
-There is no cost for an availability set - you only pay for the VMs in the set. It's highly recommended to place each workload in an availability set to ensure you don't have a single point of failure in your VM architecture.
+There is no cost for an availability set; you only pay for the VMs within the set. It's highly recommended to place each workload in an availability set to ensure you don't have a single point of failure in your VM architecture.
 
 ### What are virtual machine scale sets?
 
@@ -50,4 +47,4 @@ Azure Batch enables large-scale job scheduling and compute management with the a
 
 When you're ready to run a job, Batch starts a pool of compute virtual machines for you, installing applications and staging data, running jobs with as many tasks as you have, identifying failures and re-queuing work, and scaling down the pool as work completes. 
 
-There may be situations in which you need raw computing power or supercomputer level compute power &mdash; Azure provides these capabilities.
+There may be situations in which you need raw computing power or supercomputer level compute power; Azure provides these capabilities.

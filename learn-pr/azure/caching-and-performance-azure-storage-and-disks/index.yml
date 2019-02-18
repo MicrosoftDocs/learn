@@ -35,4 +35,5 @@ units:
 - learn.caching-and-performance-azure-storage-and-disks.5-manage-cache-settings-with-powershell
 - learn.caching-and-performance-azure-storage-and-disks.6-exercise-manage-cache-settings-with-powershell
 - learn.caching-and-performance-azure-storage-and-disks.7-summary
-achievement: learn.caching-and-performance-azure-storage-and-disks.badge
+badge:
+  uid: learn.caching-and-performance-azure-storage-and-disks.badge

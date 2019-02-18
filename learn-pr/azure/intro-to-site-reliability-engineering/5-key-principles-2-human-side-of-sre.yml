@@ -22,25 +22,25 @@ quiz:
     choices:
     - content: 'The work is repetitive'
       isCorrect: false
-      incorrectExplanation: 'Toil is repetitive in nature.'
+      explanation: 'Toil is repetitive in nature.'
     - content: 'The work is tracked in a ticket system'
       isCorrect: true
-      correctExplanation: 'How the work is tracked is not a characteristic of toil. While toil is often tracked this way, ticket systems could be used to track other, more productive kinds of work.'
+      explanation: 'How the work is tracked is not a characteristic of toil. While toil is often tracked this way, ticket systems could be used to track other, more productive kinds of work.'
     - content: 'The work provides no lasting value'
       isCorrect: false
-      incorrectExplanation: 'Work that is toil has no enduring value.'
+      explanation: 'Work that is toil has no enduring value.'
     - content: 'The work is largely manual in nature and not automated'
       isCorrect: false
-      incorrectExplanation: 'Toil is almost always manual work that could be automated.'
+      explanation: 'Toil is almost always manual work that could be automated.'
 
   - content: 'What''s an SRE''s relationship to toil?'
     choices:
     - content: 'SREs work to eliminate toil as their first priority.'
       isCorrect: false
-      incorrectExplanation: 'Whenever possible, SREs work to eliminate toil, but sometimes other work has greater priority.'
+      explanation: 'Whenever possible, SREs work to eliminate toil, but sometimes other work has greater priority.'
     - content: 'SREs attempt to manage toil the best they can.'
       isCorrect: false
-      incorrectExplanation: 'SREs prefer to eliminate toil if possible. Well-managed toil is still toil.'
+      explanation: 'SREs prefer to eliminate toil if possible. Well-managed toil is still toil.'
     - content: 'SREs work to eliminate toil wherever and whenever it is appropriate'
       isCorrect: true
 
@@ -48,10 +48,10 @@ quiz:
     choices:
     - content: '80% reactive ops work/20% project work'
       isCorrect: false
-      incorrectExplanation: 'An SRE needs uninterrupted time to work on improving the reliability of a system, not just tending to its current needs.'
+      explanation: 'An SRE needs uninterrupted time to work on improving the reliability of a system, not just tending to its current needs.'
     - content: '10% reactive ops work/90% project work'
       isCorrect: false
-      incorrectExplanation: 'Sometimes we do not get a choice how much operational load a systems requires. While it may be the case that some systems have this low of an operational load, it is probably not a good expectation to have.'
+      explanation: 'Sometimes we do not get a choice how much operational load a systems requires. While it may be the case that some systems have this low of an operational load, it is probably not a good expectation to have.'
     - content: '50% reactive ops work/50% project work'
       isCorrect: true
-      correctExplanation: 'This is the usual balance SREs strive for (50% is seen as an upper bound on operational load--smaller would be better).'
+      explanation: 'This is the usual balance SREs strive for (50% is seen as an upper bound on operational load--smaller would be better).'

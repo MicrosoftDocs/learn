@@ -33,4 +33,5 @@ modules:
 #TODO: Add - learn.auth-apps-with-app-services (POST-IGNITE)
 - learn.secure-access-azure-ad-multi-factor-authentication
 #- learn.secure-azure-resources-with-rbac
-achievement: learn.secure-your-cloud-data.trophy
+trophy:
+  uid: learn.secure-your-cloud-data.trophy

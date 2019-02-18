@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-compliance.3-initiatives
+title: Organize policy with initiatives
+metadata:
+  title: Organize policy with initiatives - Learn
+  description: Organize your policy definitions with initiatives - Learn.
+  ms.date: 12/27/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-initiatives.md)]

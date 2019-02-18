@@ -60,7 +60,7 @@ A device must be registered with your IoT hub before it can connect.
 
    ![Add a device in the IoT Devices of your IoT hub](../media/ee5f177abcf06b86dd007fce3b8448ad.png)
 
-2. Enter a **Device ID** for the new device. Device IDs are case sensitive.
+2. Enter a **Device ID** for the new device. Choose a meaningful ID to represent your device. Device IDs are case sensitive.
 
     > [!IMPORTANT]
     > The device ID may be visible in the logs collected for customer support and troubleshooting, so make sure to avoid any sensitive information while naming it.

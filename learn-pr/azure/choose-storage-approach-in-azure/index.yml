@@ -32,4 +32,5 @@ units:
 - learn.choose-storage-approach-in-azure.4-transactions
 - learn.choose-storage-approach-in-azure.5-choose-the-right-azure-service-for-your-data
 - learn.choose-storage-approach-in-azure.6-summary
-achievement: learn.choose-storage-approach-in-azure.badge
+badge:
+  uid: learn.choose-storage-approach-in-azure.badge

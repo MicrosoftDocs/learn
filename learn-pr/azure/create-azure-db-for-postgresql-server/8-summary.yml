@@ -20,27 +20,27 @@ quiz:
       choices: 
       - content: "True"
         isCorrect: false
-        incorrectExplanation: "The server firewall _prevents_ all access until you specify which computers have permission."
+        explanation: "The server firewall _prevents_ all access until you specify which computers have permission."
       - content: "False"
         isCorrect: true
-        correctExplanation: "The server firewall prevents all access until you specify which computers have permission. You can specify individual IP addresses or a range of IP addresses."
-    - content: "Suppose you would like to set a retention period of 45 days for the data backups of your PostgreSQL database. How do you enable that?"
+        explanation: "The server firewall prevents all access until you specify which computers have permission. You can specify individual IP addresses or a range of IP addresses."
+    - content: "Suppose you would like to set a retention period of 30 days for the data backups of your PostgreSQL database. How do you enable that?"
       choices:
       - content: "Specify the retention period when you create your server."
         isCorrect: true
-        correctExplanation: "Retention period is one of the settings that is configurable during creation. You can also adjust the retention period after you create your server if your requirements change."
+        explanation: "Retention period is one of the settings that is configurable during creation. You can also adjust the retention period after you create your server if your requirements change."
       - content: "Install the `retention` extension."
         isCorrect: false
-        incorrectExplanation: "Azure Database for PostgreSQL handles data retention and backups for you, without the need to install an extension."
-      - content: "Run a script each day that removes backups that are older than 45 days."
+        explanation: "Azure Database for PostgreSQL handles data retention and backups for you, without the need to install an extension."
+      - content: "Run a script each day that removes backups that are older than 30 days."
         isCorrect: false
-        incorrectExplanation: "Azure Database for PostgreSQL handles data retention and backups for you."
+        explanation: "Azure Database for PostgreSQL handles data retention and backups for you."
     - content: "Say you need 10 PostgreSQL databases to support a number of projects. Which is the easiest way to create and manage all of them?"
       choices:
       - content: "Using the portal."
         isCorrect: false
-        incorrectExplanation: "Although you can create and manage as many databases as you need through the portal, it's a manual process. Manual processes can be tedious and error-prone."
+        explanation: "Although you can create and manage as many databases as you need through the portal, it's a manual process. Manual processes can be tedious and error-prone."
       - content: "Using the Azure CLI."
         isCorrect: true
-        correctExplanation: "The Azure CLI enables you to create scripts that automate creation and management tasks."
+        explanation: "The Azure CLI enables you to create scripts that automate creation and management tasks."
  

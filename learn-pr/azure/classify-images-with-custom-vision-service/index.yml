@@ -33,4 +33,5 @@ units:
 - learn.classify-images-with-custom-vision-services.4-test-model
 - learn.classify-images-with-custom-vision-services.5-call-the-prediction-endpoint-curl
 - learn.classify-images-with-custom-vision-services.6-summary-and-knowledge-check
-achievement: learn.classify-images-with-custom-vision-services.badge 
+badge:
+  uid: learn.classify-images-with-custom-vision-services.badge

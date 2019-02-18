@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.build-image
 metadata:
-  title: Build container images with Azure Container Registry
+  title: Exercise - Build container images with Azure Container Registry
   description: Build container images with Azure Container Registry
   ms.date: 09/24/2018
   #TODO: Update with real author name.

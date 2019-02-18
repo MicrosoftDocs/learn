@@ -39,4 +39,5 @@ modules:
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.caching-and-performance-azure-storage-and-disks
 - learn.secure-your-azure-virtual-machine-disks
-achievement: learn.administer-infrastructure-resources-in-azure.trophy
+trophy:
+  uid: learn.administer-infrastructure-resources-in-azure.trophy

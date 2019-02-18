@@ -31,4 +31,5 @@ modules:
 - learn.automate-azure-tasks-with-powershell
 - learn.predict-costs-and-optimize-spending
 #TODO: Add - Control and organize resources with Azure Resource Manager (POST-IGNITE)
-achievement: learn.manage-resources-in-azure.trophy
+trophy:
+  uid: learn.manage-resources-in-azure.trophy

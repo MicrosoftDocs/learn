@@ -22,34 +22,34 @@ quiz:
     choices:
     - content: "Helps you decide what to name your project."
       isCorrect: false
-      incorrectExplanation: "You can name the project anything you want. The domain doesn't affect the name."
+      explanation: "You can name the project anything you want. The domain doesn't affect the name."
     - content: "Helps you decide how to structure your project."
       isCorrect: false
-      incorrectExplanation: "Projects have the same structure in terms of training images and predictions; it does not vary based on domain choice."
+      explanation: "Projects have the same structure in terms of training images and predictions; it does not vary based on domain choice."
     - content: "Optimizes the classifier for a specific image type."
       isCorrect: true
-      correctExplanation: "The domain gives the classifier more information about the expected content of the images."
+      explanation: "The domain gives the classifier more information about the expected content of the images."
 
   - content: "Why should you add a tag after uploading images?"
     choices:
     - content: "To help you organize your images in the project for later use"
       isCorrect: false
-      incorrectExplanation: "While tags do help organize images, that's not the full purpose of tags."
+      explanation: "While tags do help organize images, that's not the full purpose of tags."
     - content: "To put the images in a category for training"
       isCorrect: true
-      correctExplanation: "The tags tell the classifier which characteristics apply to an image. For the image classification to work, you do need to add at least one tag."
+      explanation: "The tags tell the classifier which characteristics apply to an image. For the image classification to work, you do need to add at least one tag."
     - content: "To generate a word cloud after training"
       isCorrect: false
-      incorrectExplanation: "The Custom Vision Service doesn't create word clouds."
+      explanation: "The Custom Vision Service doesn't create word clouds."
 
   - content: "What two values do you need to know in order to make a call to the Prediction API from client code?"
     choices:
     - content: "Prediction URL and Prediction Key"
       isCorrect: true
-      correctExplanation: "The URL identifies the endpoint for the connection and the Prediction Key authorizes your app to access the service."
+      explanation: "The URL identifies the endpoint for the connection and the Prediction Key authorizes your app to access the service."
     - content: "Service name and authentication token"
       isCorrect: false
-      incorrectExplanation: "Neither of these values are related to the Prediction API."
+      explanation: "Neither of these values are related to the Prediction API."
     - content: "Client secret and redirect URI"
       isCorrect: false
-      incorrectExplanation: "Neither of these values are related to the Prediction API."
+      explanation: "Neither of these values are related to the Prediction API."

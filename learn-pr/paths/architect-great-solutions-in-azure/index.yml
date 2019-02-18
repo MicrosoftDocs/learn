@@ -37,4 +37,5 @@ modules:
 - learn.design-for-performance-and-scalability
 - learn.design-for-efficiency-and-operations
 - learn.design-for-availability-and-recoverability
-achievement: learn.architect-great-solutions-in-azure.trophy
+trophy:
+  uid: learn.architect-great-solutions-in-azure.trophy

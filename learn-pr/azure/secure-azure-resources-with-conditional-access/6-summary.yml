@@ -22,19 +22,19 @@ quiz:
     choices: 
     - content: 'True'
       isCorrect: false
-      incorrectExplanation: While Azure AD performs many of the same functions as a traditional AD DS, it's a cloud-based multi-tenant, directory, and identity management service.
+      explanation: While Azure AD performs many of the same functions as a traditional AD DS, it's a cloud-based multi-tenant, directory, and identity management service.
     - content: 'False'
       isCorrect: true
-      correctExplanation: AD DS is a server role on Windows Server. Azure AD is a cloud-based multi-customer public directory service.
+      explanation: AD DS is a server role on Windows Server. Azure AD is a cloud-based multi-customer public directory service.
 
   - content: 'What three items should exist in a successful conditional access policy?'
     choices: 
     - content: 'User or group, application, time of day'
       isCorrect: false
-      correctExplanation: Time of day is not an option in conditional access rules.
+      explanation: Time of day is not an option in conditional access rules.
     - content: 'User or group, application, control to be enforced'
       isCorrect: true
-      incorrectExplanation: Selecting these three items will create self-contained functional conditional access rules.
+      explanation: Selecting these three items will create self-contained functional conditional access rules.
     - content: 'User or group, Linux OS, control to be enforced'
       isCorrect: false
-      correctExplanation: While you can target some device platforms, Linux isn't currently supported.
+      explanation: While you can target some device platforms, Linux isn't currently supported.

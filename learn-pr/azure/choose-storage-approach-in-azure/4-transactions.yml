@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "OLAP"
       isCorrect: false
-      incorrectExplanation: "OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions."
+      explanation: "OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions."
     - content: "OLTP"
       isCorrect: true
-      correctExplanation: "OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions."
+      explanation: "OLTP systems support a large set of users, have quick response times, handle large volumes of data, are highly available, and are great for small or relatively simple transactions."
 
   - content: "Suppose the operations to update inventory and process payments are in the same transaction. A user is attempting to apply store credit for the full amount, and submitted the exact same order via phone and laptop at the same time. The database behind the scenes is an ACID-compliant database, what would happen?" 
     choices:
     - content: "Both orders would be processed and use the in-store credit."
       isCorrect: false
-      incorrectExplanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
+      explanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
     - content: "One order would be processed and use the in-store credit, and the other order would update the remaining inventory for the items in the basket, but would not complete the order."
       isCorrect: false
-      incorrectExplanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
+      explanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
     - content: "One order would be processed and use the in-store credit, and the other order would not be processed."
       isCorrect: true
-      correctExplanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
+      explanation: "Once the second order determined that the in-store credit has already been used, it would roll back the transaction."
 
 

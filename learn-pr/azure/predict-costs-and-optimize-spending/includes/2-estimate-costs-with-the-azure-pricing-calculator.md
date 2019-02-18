@@ -4,6 +4,19 @@ Imagine that you've been asked to build a system on Azure, and you've been asked
 
 To make estimates easy for customers to create, Microsoft developed the **Azure pricing calculator**. The Azure pricing calculator is a free web-based tool that allows you to input Azure services and modify properties and options of the services. It outputs the costs per service and total cost for the full estimate.
 
+The options that you can configure in the pricing calculator vary between products, but basic configuration options include:
+
+| Option | Description |
+|--------|-------------|
+| Region | Lists the regions from which you can provision a product. Southeast Asia, central Canada, the western United States, and Northern Europe are among the possible regions available for some resources. |
+| Tier | Sets the type of tier you wish to allocate to a selected resource, such as Free Tier, Basic Tier, etc. |
+| Billing Options | Highlights the billing options available to different types of customer and subscriptions for a chosen product. |
+| Support Options | Allows you to pick from included or paid support pricing options for a selected product. |
+| Programs and Offers | Allows you to choose from available price offerings according to your customer or subscription type. |
+| Azure Dev/Test Pricing | Lists the available development and test prices for a product. Dev/Test pricing applies only when you run resources within an Azure subscription that is based on a Dev/Test offer. |
+
+### Try out the Azure pricing calculator
+
 In another browser window or tab, open the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/). On the pricing calculator page, you'll see three tabs:
 
 1. **Products.** This tab is where you'll do most of your activity. This tab has all the Azure services listed and is where you'll add or remove services to formulate your estimate.

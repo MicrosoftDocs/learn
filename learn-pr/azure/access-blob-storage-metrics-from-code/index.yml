@@ -33,3 +33,5 @@ units:
 - learn.access-blob-storage-metrics-from-code.5-exercise-access-azure-storage-metrics
 - learn.access-blob-storage-metrics-from-code.6-summary
 achievement: learn.access-blob-storage-metrics-from-code.badge
+badge:
+  uid: learn.access-blob-storage-metrics-from-code.badge

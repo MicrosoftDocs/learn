@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-compliance.7-monitoring
+title: Monitor your service health
+metadata:
+  title: Monitor your service health - Learn
+  description: Explore Azure Monitor and Service Health - Learn.
+  ms.date: 12/27/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-monitoring.md)]

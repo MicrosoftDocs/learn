@@ -21,28 +21,28 @@ quiz:
     choices:
     - content: 'Communication between Azure virtual machines and the internet'
       isCorrect: false
-      incorrectExplanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
     - content: 'Communication between Azure virtual machines within a VNet'
       isCorrect: false
-      incorrectExplanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
     - content: 'Communication between Azure virtual machines and systems in an on-premises network'
       isCorrect: false
-      incorrectExplanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but this is not the only correct choice.'
     - content: 'All of the above'
       isCorrect: true
-      correctExplanation: 'Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines.'
+      explanation: 'Network security groups are fully customizable, and give you the ability to fully lock down network communication to and from your virtual machines.'
 
   - content: 'Which of the following is not a method for protecting internet facing services from network attacks?'
     choices:
     - content: 'Azure DDoS'
       isCorrect: false
-      incorrectExplanation: 'Azure DDoS can be used to protect your internet facing services from a DoS attack. '
+      explanation: 'Azure DDoS can be used to protect your internet facing services from a DoS attack. '
     - content: 'Azure Application Gateway WAF'
       isCorrect: false
-      incorrectExplanation: 'Application Gateway WAF can be used to protect your internet facing services from attacks such as XSS and SQL injection.'
+      explanation: 'Application Gateway WAF can be used to protect your internet facing services from attacks such as XSS and SQL injection.'
     - content: 'Azure Disk Encryption'
       isCorrect: true
-      correctExplanation: 'Azure Disk Encryption protects your virtual machine VHDs from exposure, but does not provide protection from network based attacks.'
+      explanation: 'Azure Disk Encryption protects your virtual machine VHDs from exposure, but does not provide protection from network based attacks.'
     - content: 'A network virtual appliance'
       isCorrect: false
-      incorrectExplanation: 'Network virtual appliances can provide customized network protection for your internet facing resources.'
+      explanation: 'Network virtual appliances can provide customized network protection for your internet facing resources.'

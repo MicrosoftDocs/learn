@@ -36,4 +36,5 @@ units:
 - learn.secure-azure-resources-with-rbac.6-view-activity-logs
 - learn.secure-azure-resources-with-rbac.7-knowledge-check-rbac
 - learn.secure-azure-resources-with-rbac.8-summary
-achievement: learn.secure-azure-resources-with-rbac.badge
+badge:
+  uid: learn.secure-azure-resources-with-rbac.badge

@@ -38,4 +38,5 @@ units:
 - learn.optimize-web-app-with-redis.5-execute-redis-commands
 - learn.optimize-web-app-with-redis.6-exercise-connect-an-app-to-the-cache
 - learn.optimize-web-app-with-redis.7-summary
-achievement: learn.optimize-web-app-with-redis.badge
+badge:
+  uid: learn.optimize-web-app-with-redis.badge

@@ -38,4 +38,5 @@ units:
 - learn.run-docker-containers-aci.5-use-data-volumes
 - learn.run-docker-containers-aci.6-troubleshoot-aci
 - learn.run-docker-containers-aci.7-knowledge-check
-achievement: learn.run-docker-containers-aci.badge
+badge:
+  uid: learn.run-docker-containers-aci.badge
