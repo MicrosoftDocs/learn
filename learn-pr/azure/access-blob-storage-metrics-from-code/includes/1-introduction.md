@@ -10,7 +10,7 @@ You want to add code to the mobile app to display storage metrics on the mobile 
 
 At the end of this module, you will be able to:
 
-- Use the .NET SDK for Azure Monitor to configure Azure Storage metrics programmatically.
+- Access storage metrics in Azure Monitor by using the REST API.
 - Use the .NET SDK for Azure Monitor to access Blob metrics and data programmatically.
 
 ## Prerequisites

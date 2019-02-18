@@ -27,8 +27,8 @@ products:
 - azure
 units:
 - learn.access-blob-storage-metrics-from-code.1-introduction
-- learn.access-blob-storage-metrics-from-code.2-configure-azure-storage-metrics
-- learn.access-blob-storage-metrics-from-code.3-exercise-configure-azure-storage-metrics
+- learn.access-blob-storage-metrics-from-code.2-connect-to-storage-metrics
+- learn.access-blob-storage-metrics-from-code.3-exercise-connect-to-storage-metrics
 - learn.access-blob-storage-metrics-from-code.4-access-azure-storage-metrics
 - learn.access-blob-storage-metrics-from-code.5-exercise-access-azure-storage-metrics
 - learn.access-blob-storage-metrics-from-code.6-summary
