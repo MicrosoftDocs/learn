@@ -3,7 +3,7 @@ uid: learn.access-blob-storage-metrics-from-code.4-access-azure-storage-metrics
 title: Access Azure Storage Metrics in Code
 metadata:
   title: Access Azure Storage Metrics in Code
-  description: In this unit, you will learn 
+  description: In this unit, you will learn how to write code that uses the Azure Monitor .NET API to access Storage metrics.
   ms.date: 02/07/2019
   author: alistairmatthews
   ms.author: nickwalk

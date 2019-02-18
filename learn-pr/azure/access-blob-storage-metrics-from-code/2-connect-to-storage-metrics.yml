@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-connnect-to-storage-metrics.md)]
+  [!include[](includes/2-connect-to-storage-metrics.md)]
 quiz:
   title: Connect to Azure Storage metrics in Azure Monitor
   questions:
