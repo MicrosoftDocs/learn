@@ -22,37 +22,37 @@ quiz:
     choices: 
     - content: "Block Blobs"
       isCorrect: false
-      incorrectExplanation: "VHDs are backed by page blobs in Azure Storage. Page blobs are appropriate because they are a collection of 512-byte pages optimized for random read and write. Neither Block blobs nor Append blobs are optimized for the random read and write operations common with VHDs."
+      explanation: "VHDs are backed by page blobs in Azure Storage. Page blobs are appropriate because they are a collection of 512-byte pages optimized for random read and write. Neither Block blobs nor Append blobs are optimized for the random read and write operations common with VHDs."
     - content: "Append Blobs"
       isCorrect: false
-      incorrectExplanation: "VHDs are backed by page blobs in Azure Storage. Page blobs are appropriate because they are a collection of 512-byte pages optimized for random read and write. Neither Block blobs nor Append blobs are optimized for the random read and write operations common with VHDs."
+      explanation: "VHDs are backed by page blobs in Azure Storage. Page blobs are appropriate because they are a collection of 512-byte pages optimized for random read and write. Neither Block blobs nor Append blobs are optimized for the random read and write operations common with VHDs."
     - content: "Page Blobs"
       isCorrect: true
-      correctExplanation: "VHDs are backed by page blobs in Azure Storage. Page blobs are appropriate because they are a collection of 512-byte pages optimized for random read and write. Neither Block blobs nor Append blobs are optimized for the random read and write operations common with VHDs."
+      explanation: "VHDs are backed by page blobs in Azure Storage. Page blobs are appropriate because they are a collection of 512-byte pages optimized for random read and write. Neither Block blobs nor Append blobs are optimized for the random read and write operations common with VHDs."
 
   - content: "Which of the following data-replication strategies is the only option supported by a premium storage account?"
     choices: 
     - content: "Read-access geo-redundant storage (RA-GRS)"
       isCorrect: false
-      incorrectExplanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
+      explanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
     - content: "Locally redundant storage (LRS)"
       isCorrect: true
-      correctExplanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
+      explanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
     - content: "Geo-redundant storage (GRS)"
       isCorrect: false
-      incorrectExplanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
+      explanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
     - content: "Zone-redundant storage (ZRS)"
       isCorrect: false
-      incorrectExplanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
+      explanation: "A premium storage account supports only locally redundant storage as the replication option. Locally redundant storage keeps three copies of the data within a single region. For regional disaster recovery, you must back up your VM disks in a different region by using Azure Backup. You also must use a geo-redundant storage (GRS) account as the backup vault."
 
   - content: "Which of the following disk types is only available for managed disks?"
     choices: 
     - content: "Standard solid-state drives (SSDs)"
       isCorrect: true
-      correctExplanation: "Choosing managed disks gives you the option of using standard SSDs. This disk type is between standard HDDs and premium SSDs from a performance and cost perspective."
+      explanation: "Choosing managed disks gives you the option of using standard SSDs. This disk type is between standard HDDs and premium SSDs from a performance and cost perspective."
     - content: "Standard hard disk drives (HDDs)"
       isCorrect: false
-      incorrectExplanation: "Choosing managed disks gives you the option of using standard SSDs. This disk type is between standard HDDs and premium SSDs from a performance and cost perspective."
+      explanation: "Choosing managed disks gives you the option of using standard SSDs. This disk type is between standard HDDs and premium SSDs from a performance and cost perspective."
     - content: "Premium solid-state drives (SSDs)"
       isCorrect: false
-      incorrectExplanation: "Choosing managed disks gives you the option of using standard SSDs. This disk type is between standard HDDs and premium SSDs from a performance and cost perspective."
+      explanation: "Choosing managed disks gives you the option of using standard SSDs. This disk type is between standard HDDs and premium SSDs from a performance and cost perspective."

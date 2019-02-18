@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Provide a parameter that specifies the script location."
       isCorrect: true
-      correctExplanation: "Parameters promote reuse. Their values are filled in when the template runs."
+      explanation: "Parameters promote reuse. Their values are filled in when the template runs."
     - content: "Provide a variable that specifies the script location."
       isCorrect: false
-      incorrectExplanation: "Although variables can help make your templates easier to maintain, they're not the best choice when making your templates configurable or reusable."
+      explanation: "Although variables can help make your templates easier to maintain, they're not the best choice when making your templates configurable or reusable."
     - content: "Provide a default script location in your template and then use a nested template to override that location."
       isCorrect: false
-      incorrectExplanation: "Although you can use a nested template to override default values, it may make your deployments more complex than necessary."
+      explanation: "Although you can use a nested template to override default values, it may make your deployments more complex than necessary."

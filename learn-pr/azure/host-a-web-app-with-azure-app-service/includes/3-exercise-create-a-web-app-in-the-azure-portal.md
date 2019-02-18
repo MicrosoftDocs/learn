@@ -18,13 +18,13 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
     1. **App name**: Your client wants to name the application `BestBike`. Type the name in this field. This value must be globally unique among all other web apps hosted on Azure, and the portal will make sure no one else has used the app name. To ensure your name is unique, add some numbers to your app's name until you find a unique variant.
 
-    2. **Subscription**: In this field, you need to select an active Azure subscription from the drop-down list. Select the Concierge subscription.
+    2. **Subscription**: In this field, you need to select an active Azure subscription from the drop-down list. Select the **Concierge Subscription**.
 
     3. **OS**: In this field, you need to decide whether to use **Windows** or **Linux** to host your new web app. This setting directly affects the App Service plan that you are going to select or create below. If you remember, an App Service plan resembles a virtual machine that is an operating system with all the resource (CPU, RAM, etc.) needed on that machine to run your application. In this case, your client prefers to host the web app over a Windows machine. Therefore, make the selection **Windows**.
 
     4. **Publish**: You can choose to either publish code, or a Docker container image. We will be writing code to run in App Service, so make sure the **Code** option is selected.
 
-    5. **Application Insights**: Azure Application Insights helps you detect and diagnose quality issues in your web apps and web services, and helps you understand what your users actually do with it. One of the requirements of your client is the ability to view some insight reports about the traffic coming over their website and to study some trends of when the traffic goes high and when it goes low. In this case, select the **On** option to turn on Application Insights for this web app. Once you select the **On** option, you are also required to select the location or region that will store the Application Insights data. Note that Application Insights are available in only a limited number of regions. For this demo, select any of the available regions.
+    5. **Application Insights**: Azure Application Insights helps you detect and diagnose quality issues in your web apps and web services, and helps you understand what your users actually do with it. One of the requirements of your client is the ability to view some insight reports about the traffic coming over their website and to study some trends of when the traffic goes high and when it goes low. In this case, select the **Enable** option to turn on Application Insights for this web app. Once you select the **Enable** option, you are also required to select the location or region that will store the Application Insights data. Note that Application Insights are available in only a limited number of regions. For this demo, select any of the available regions.
 
 ::: zone-end
 

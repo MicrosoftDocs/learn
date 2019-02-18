@@ -33,4 +33,5 @@ units:
 - learn.host-a-web-application-with-azure-web-apps.5-deploying-code-to-app-service
 - learn.host-a-web-application-with-azure-web-apps.6-exercise-deploy-your-code-to-app-service
 - learn.host-a-web-application-with-azure-web-apps.7-summary
-achievement: learn.host-a-web-application-with-azure-web-apps.badge
+badge:
+  uid: learn.host-a-web-application-with-azure-web-apps.badge

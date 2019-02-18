@@ -25,4 +25,5 @@ units:
 - learn.get-started-with-devops.3-what-is-azure-devops
 - learn.get-started-with-devops.4-create-an-azure-devops-account
 - learn.get-started-with-devops.5-summary
-achievement: learn.get-started-with-devops.badge
+badge:
+  uid: learn.get-started-with-devops.badge

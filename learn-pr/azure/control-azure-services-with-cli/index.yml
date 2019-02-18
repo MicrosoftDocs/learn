@@ -36,4 +36,5 @@ units:
 - learn.control-azure-services-with-cli.4-work-with-the-cli
 - learn.control-azure-services-with-cli.5-exercise-create-website-using-the-cli
 - learn.control-azure-services-with-cli.6-summary
-achievement: learn.control-azure-services-with-cli.badge
+badge:
+  uid: learn.control-azure-services-with-cli.badge

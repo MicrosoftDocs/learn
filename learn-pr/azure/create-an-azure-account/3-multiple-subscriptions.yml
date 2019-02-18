@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-account.3-multiple-subscriptions
+title: Using multiple Azure subscriptions
+metadata:
+  title: Using multiple Azure subscriptions; billing and access management- Learn
+  description: Using multiple Azure subscriptions; billing and access management- Learn
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-multiple-subscriptions.md)]

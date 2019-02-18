@@ -32,4 +32,5 @@ units:
 - learn.secure-access-azure-ad-multi-factor-authentication.4-secure-access
 - learn.secure-access-azure-ad-multi-factor-authentication.5-test-access
 - learn.secure-access-azure-ad-multi-factor-authentication.6-summary
-achievement: learn.secure-access-azure-ad-multi-factor-authentication.badge
+badge:
+  uid: learn.secure-access-azure-ad-multi-factor-authentication.badge

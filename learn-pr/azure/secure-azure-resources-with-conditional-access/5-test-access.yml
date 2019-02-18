@@ -11,9 +11,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Test access to resources
-#TODO: Update labID
-labId: 46467
-labModal: true
+#labId: 46467
+#labModal: true
 durationInMinutes: 3
 content: |
   [!include[](includes/5-test-access.md)]

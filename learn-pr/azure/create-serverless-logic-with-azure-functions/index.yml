@@ -35,4 +35,5 @@ units:
 - learn.create-serverless-logic-with-functions.4-creating-and-executing-an-azure-function
 - learn.create-serverless-logic-with-functions.5-add-logic-to-the-function-app
 - learn.create-serverless-logic-with-functions.6-summary
-achievement: learn.create-serverless-logic-with-functions.badge
+badge:
+  uid: learn.create-serverless-logic-with-functions.badge

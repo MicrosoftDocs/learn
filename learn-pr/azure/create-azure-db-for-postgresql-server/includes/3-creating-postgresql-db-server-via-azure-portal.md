@@ -87,7 +87,7 @@ You can specify the version of PostgreSQL to use. Microsoft aims to support the 
 
 ### Pricing tier
 
-You'll choose a pricing tier that will support your server's workload. Recall that you have difference tiers to choose from. As we saw earlier, each of these tiers allows you to configure the compute and storage options. 
+You'll choose a pricing tier that will support your server's workload. Recall that you have different tiers to choose from. As we saw earlier, each of these tiers allows you to configure the compute and storage options. 
 
 All that's left now is to review the values that you entered, make any notes you may need for later, and click **Create** to create the server.
 

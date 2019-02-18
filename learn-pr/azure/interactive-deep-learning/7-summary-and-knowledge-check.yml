@@ -22,34 +22,34 @@ quiz:
     choices:
     - content: "The DSVM has many of the common tools required for machine learning tasks."
       isCorrect: true
-      correctExplanation: "Using an instance of DSVM means you don't need to spend time installing software. There are environments to develop and execute code in R, Python, .NET and more."
+      explanation: "Using an instance of DSVM means you don't need to spend time installing software. There are environments to develop and execute code in R, Python, .NET and more."
     - content: "The DSVM is the only way to create a VM instance with multiple GPUs."
       isCorrect: false
-      incorrectExplanation: "While you can create a DSVM with multiple GPUs, you can also create custom VMs this way."
+      explanation: "While you can create a DSVM with multiple GPUs, you can also create custom VMs this way."
     - content: "You don't need to wait for a new virtual machine instance to be allocated."
       isCorrect: false
-      incorrectExplanation: "As with all virtual machines, when you create a new DSVM instance there is a brief wait while it's allocated."
+      explanation: "As with all virtual machines, when you create a new DSVM instance there is a brief wait while it's allocated."
  
   - content: "Which of the following describes CUDA?"
     choices:
     - content: "It's a parallel computing platform and API."
       isCorrect: true
-      correctExplanation: "CUDA is a parallel computing platform and application programming interface (API) model created by NVIDIA. The CUDA platform is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements, for the execution of compute kernels."
+      explanation: "CUDA is a parallel computing platform and application programming interface (API) model created by NVIDIA. The CUDA platform is a software layer that gives direct access to the GPU's virtual instruction set and parallel computational elements, for the execution of compute kernels."
     - content: "It's a super powerful CPU."
       isCorrect: false
-      incorrectExplanation: "CUDA is a software layer and is designed for GPUs."
+      explanation: "CUDA is a software layer and is designed for GPUs."
     - content: "It's a deep learning model used for image classification."
       isCorrect: false
-      incorrectExplanation: "CUDA-enabled GPUs can greatly improve compute performance when training neural networks, but that is only one of its uses."
+      explanation: "CUDA-enabled GPUs can greatly improve compute performance when training neural networks, but that is only one of its uses."
 
   - content: "Which of the following describes PyTorch"
     choices:
     - content: "A mathematical programming language inspired by Python."
       isCorrect: false
-      incorrectExplanation: "PyTorch is not a programming language."
+      explanation: "PyTorch is not a programming language."
     - content: "A docker container image for hosting Python apps."
       isCorrect: false
-      incorrectExplanation: "PyTorch is not a docker container image."
+      explanation: "PyTorch is not a docker container image."
     - content: "A machine learning software library for use with Python."
       isCorrect: true
-      correctExplanation: "PyTorch is a library for making machine learning tasks easier and faster in Python. It includes built-in CUDA support for executing code on GPUs."
+      explanation: "PyTorch is a library for making machine learning tasks easier and faster in Python. It includes built-in CUDA support for executing code on GPUs."

@@ -1,5 +1,17 @@
 ### YamlMime:ZonePivotGroups
 groups:
+- id: supportfaq
+  title: SupportFAQ
+  prompt: What do you have questions about?
+  pivots:
+  - id: general
+    title: General
+  - id: profile
+    title: Profile & Dashboard
+  - id: sandbox
+    title: Sandbox
+  - id: support
+    title: Support
 - id: os
   title: Operating system
   prompt: Choose your operating system

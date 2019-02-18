@@ -2,7 +2,7 @@ You're organizing your resources better in resource groups, and you've applied t
 
 ## What is Azure Policy?
 
-Azure Policy is a service you can use to create, assign, and manage policies. These policies apply and enforce rules that your resources need to follow. These policies can enforce these rules when resources, and can be evaluated against existing resources to give visibility into compliance.
+Azure Policy is a service you can use to create, assign, and manage policies. These policies apply and enforce rules that your resources need to follow. These policies can enforce these rules when resources are created, and can be evaluated against existing resources to give visibility into compliance.
 
 Policies can enforce things such as only allowing specific types of resources to be created, or only allowing resources in specific Azure regions. You can enforce naming conventions across your Azure environment. You can also enforce that specific tags are applied to resources. Let's take a look at how policies work.
 
@@ -107,7 +107,3 @@ We could use policy to restrict which Azure regions we can deploy resources to. 
 We could use policy to restrict which types of virtual machine sizes can be deployed. You may want to allow large VM sizes in your production subscriptions, but maybe you'd like to ensure that you keep costs minimized in your dev subscriptions. By denying the large VM sizes through policy in your dev subscriptions, you can ensure they don't get deployed in these environments.
 
 We could also use policy to enforce naming conventions. If our organization has standardized on specific naming conventions, using policy to enforce the conventions helps us to keep a consistent naming standard across our Azure resources.
-
-## Summary
-
-Policies are flexible and can be used in many ways. They're yet another tool that you can use to improve the overall organization of your Azure resources.

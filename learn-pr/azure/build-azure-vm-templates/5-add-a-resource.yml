@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "Use the `dependsOn` element to define when one resource must exist before another can be deployed."
       isCorrect: true
-      correctExplanation: "Although we don't cover it here, you can also use the built-in `reference` function to define dependencies among resources that need to share a property."
+      explanation: "Although we don't cover it here, you can also use the built-in `reference` function to define dependencies among resources that need to share a property."
     - content: "In your template, define resources in the order they need to be deployed."
       isCorrect: false
-      incorrectExplanation: "Some configurations involve complex dependencies among resources. It can be difficult to define them in a set order. Resource Manager provides a way for you to define relationships among resources."
+      explanation: "Some configurations involve complex dependencies among resources. It can be difficult to define them in a set order. Resource Manager provides a way for you to define relationships among resources."
     - content: "Set the `order` property on each resource."
       isCorrect: false
-      incorrectExplanation: "In most cases, Resource Manager can determine the correct order. But there are times when you need to define when one resource must exist before another can be deployed."
+      explanation: "In most cases, Resource Manager can determine the correct order. But there are times when you need to define when one resource must exist before another can be deployed."

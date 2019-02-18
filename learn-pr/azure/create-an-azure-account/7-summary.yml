@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-account.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following defines an Azure subscription correctly?
+    choices:
+    - content: Using Azure does not require a subscription
+      isCorrect: false
+      explanation: "Using Azure requires an Azure subscription. Azure offer free and paid subscription options to suit different customer needs and requirements."
+    - content: All Azure subscriptions are always free 
+      isCorrect: false
+      explanation: "There are free subscriptions, however to fully use all the Azure services you will need to upgrade to a paid subscription."
+    - content: An Azure subscription is a logical unit of Azure services that is linked to an Azure account
+      isCorrect: true
+      explanation: "Using Azure requires an Azure subscription. Azure offer free and paid subscription options to suit different customer needs and requirements, and an account can have one or more subscriptions, with different billing models and access-management policies applied to each . A subscription provides authenticated and authorized access to Azure products and services, and allows you to provision resources."
+    - content: An account cannot have more than one subscription
+      isCorrect: false
+      explanation: "Incorrect. Accounts can have multiple subscriptions to separate billing or access control across multiple groups in your organization."
+  - content: "True or False. Azure has free services you can use once you have an Azure subscription."
+    choices:
+      - content: "True - there are several free services available."
+        isCorrect: true 
+        explanation: "This is true. Azure has several free services you can use including Azure App Services, Functions, and Azure Kubernetes containers."
+      - content: "False - services are only free for the first 12 months."
+        isCorrect: false
+        explanation: "While some services are free for only the first 12 months, Azure has several services you can use after that at no cost."
+  - content: "Billing in Azure is ______________"
+    choices:
+    - content: "Annually for each Azure account based on usage."
+      isCorrect: false
+      explanation: "Billing is not performed annually."
+    - content: "Monthly for each Azure subscription based on usage."
+      isCorrect: true
+      explanation: "Billing is performed monthly for each subscription in the account, based on the resource usage."
+    - content: "Monthly for each Azure account based on usage."
+      isCorrect: false
+      explanation: "Billing is performed monthly, but on at the account level."
+    - content: "Daily for each Azure subscription based on usage."
+      isCorrect: false
+      explanation: "Billing is not charged daily."
