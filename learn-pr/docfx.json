@@ -8,6 +8,17 @@
         "dest": "achievements/main/"
       },
       {
+        "src": "aspnetcore",
+        "files": [
+          "**/*.md",
+          "**/*.yml"         
+        ],
+        "exclude": [
+          "**/includes/**"       
+        ],
+        "dest": "modules"
+      },
+      {
         "src": "azure",
         "files": [
           "**/*.md",
