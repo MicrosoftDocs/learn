@@ -87,8 +87,7 @@ As a final verification step, you'll begin by validating that the template is sy
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
-      --parameters authenticationType=password \
-      --parameters adminPasswordOrKey=$PASSWORD \
+      --parameters adminPassword=$PASSWORD \
       --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
     ```
 
@@ -108,8 +107,7 @@ As a final verification step, you'll begin by validating that the template is sy
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
-      --parameters authenticationType=password \
-      --parameters adminPasswordOrKey=$PASSWORD \
+      --parameters adminPassword=$PASSWORD \
       --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
     ```
 

@@ -5,12 +5,13 @@ Tools that are commonly used for day-to-day management and interaction include:
 - **Azure portal** for interacting with Azure via a Graphical User Interface (GUI)
 - **Azure PowerShell** and **Azure Command-Line Interface** (CLI) for command line and automation-based interactions with Azure
 - **Azure Cloud Shell** for a web-based command-line interface
-
-Creating administration scripts and using automation tools is a powerful way to optimize your workflow. You can automate repetitive tasks. Once a script is verified, it runs consistently, which can reduce errors.
+- **Azure mobile app** for monitoring and managing your resources from your mobile device
 
 ## Azure portal
 
-The Azure portal is a website that you can access with a web browser, by going to the URL [https://portal.azure.com](https://portal.azure.com). From here, you can interact manually with all the Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
+The [Azure portal](https://portal.azure.com) is a public website that you can access with any web browser. Once you sign in with your Azure account, you can create, manage and monitor any available Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
+
+![Screenshot of the Azure portal](../media/2-azure-portal.png)
 
 The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles, and displaying services you're interested in.
 
@@ -30,6 +31,8 @@ New-AzureRmVm `
     ...
 ```
 
+Creating administration scripts and using automation tools is a powerful way to optimize your workflow. You can automate repetitive tasks. Once a script is verified, it runs consistently, which can reduce errors. Another scripting environment is the Azure CLI.
+
 ## Azure CLI
 
 Azure CLI is a cross-platform command-line program that connects to Azure and executes administrative commands on Azure resources. *Cross-platform* means that it can be run on Windows, Linux, or macOS. For example, to create a VM, you would open a command prompt window, sign in to Azure using the command `az login`, create a resource group, then use a command such as:
@@ -45,14 +48,62 @@ az vm create \
 
 ## Azure Cloud Shell
 
-Azure Cloud Shell is a browser-based scripting environment in your portal. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
+[Azure Cloud Shell](https://shell.azure.com/) is a browser-based scripting environment for command-line administration of Azure resources. It provides support for two shell environments. Linux users can opt for a Bash experience, while Windows users can use PowerShell.
 
-An Azure storage account is required to use the cloud shell. You're prompted to create one when you access the Azure Cloud Shell.
+![Screenshot of Azure Cloud Shell](../media/2-cloud-shell.png)
 
-In Microsoft Learn, we use the Cloud Shell for many of the interactive exercises you'll use to try out Azure features.
+Both environments support the Azure CLI and Azure PowerShell CLIs. Linux defaults to the Azure CLI (with the `az` command pre-installed), but you can switch to PowerShell for Linux by typing `pwsh`. The Windows-based environment has both CLI tools pre-installed. In addition to these administrative tools, the Cloud Shell has a suite of developer tools, text editors, and other tools available including:
 
-> [!NOTE] 
-> You can access Azure Cloud Shell by going to [https://shell.azure.com/](https://shell.azure.com/).
+:::row:::
+  :::column:::
+**Developer Tools**
+- .NET Core
+- Python
+- Java
+- Node.js
+- Go
+  :::column-end:::
+  :::column:::
+**Editors**
+- code (Cloud Shell Editor)
+- vim
+- nano
+- emacs
+  :::column-end:::
+  :::column:::
+**Other tools**
+- git
+- maven
+- make
+- npm
+- [and more...](https://docs.microsoft.com/en-us/azure/cloud-shell/features#tools)
+  :::column-end:::
+:::row-end:::
+
+You can create, build, and deploy apps right from this browser-based environment. It's all persistent as well - you're prompted to create an Azure Storage Account when you access the Azure Cloud Shell. This storage area is used as your $HOME folder and any scripts or data you place here is kept across sessions. Each subscription has a unique storage account associated with it so you can keep the data and tools you need right for each account you manage.
+
+We'll use the Cloud Shell in Microsoft Learn for many of the interactive exercises to try out Azure features.
+
+## Azure mobile app
+
+:::row:::
+  :::column:::
+![Screenshot of the Azure mobile app](../media/2-azure-mobile-app.png)
+  :::column-end:::
+  :::column span="3":::
+The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
+
+- Check the current status and important metrics of your services
+- Stay informed with notifications and alerts about important health issues 
+- Quickly diagnose and fix issues anytime, anywhere
+- Review the latest Azure alerts
+- Start, stop, and restart virtual machines or web apps
+- Connect to your virtual machines
+- Manage permissions with role-based access control (RBAC)
+- Use the Azure Cloud Shell to run saved scripts or perform ad hoc administrative tasks
+- and more...
+  :::column-end:::
+:::row-end:::
 
 ## Other options
 
