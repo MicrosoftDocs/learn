@@ -19,12 +19,12 @@ abstract: |
   - Compare Table Geometries
   - Create an Azure SQL Data Warehouse
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/upload-data-to-azure-data-lake-storage-badge
+iconUrl: /learn/achievements/data-ai/design-azure-sql-data-warehouse-badge.svg
 levels:
 - beginner
 roles:
 - data-engineer
+- solution-architect
 products:
 - azure
 - azure-sql-data-warehouse

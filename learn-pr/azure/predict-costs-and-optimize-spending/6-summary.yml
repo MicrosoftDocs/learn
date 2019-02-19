@@ -43,15 +43,15 @@ quiz:
         explanation: "An availability zone provides failure protection for datacenters."
     - content: "Complete the following sentence. As an Azure customer, Azure Reservations offer discounted prices if you _________"
       choices:
-      - content: "pay in advance."
+      - content: "Pay in advance"
         isCorrect: true
         explanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can prepay for one or three year's use of certain Azure resources."
-      - content: "provision many resources."
+      - content: "Provision many resources"
         isCorrect: false
         explanation: "There is no requirement to provision many resources to use Azure Reservations."
-      - content: "have a free account"
+      - content: "Have a free account"
         isCorrect: false
         explanation: "Free accounts can't use Azure Reservations."
-      - content: "use Spending Limits."
+      - content: "Sse Spending Limits"
         isCorrect: false
         explanation: "Spending limits prevent you from exhausting the credit on your account within each billing period."

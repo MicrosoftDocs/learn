@@ -127,6 +127,6 @@ The final step is to tell the OS about the available space. Just like the partit
     tmpfs           5.0M     0  5.0M   0% /run/lock
     tmpfs           3.5G     0  3.5G   0% /sys/fs/cgroup
     /dev/sdb1        14G   35M   13G   1% /mnt
-    /dev/sdc1        63G   52M   60G   1% /uploads
+    /dev/sdc1       118G   60M  112G   1% /uploads
     tmpfs           697M     0  697M   0% /run/user/1000
     ```

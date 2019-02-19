@@ -32,7 +32,7 @@ Not all scenarios fit the public cloud. Here are some disadvantages to think abo
 
 - There may be specific security requirements that cannot be met by using public cloud
 - There may be government policies, industry standards, or legal requirements which public clouds cannot meet
-- You don't own the hardware or services and cannot manage them as they may wish
+- You don't own the hardware or services and cannot manage them as you may want to
 - Unique business requirements, such as having to maintain a legacy application might be hard to meet
 
 :::row:::

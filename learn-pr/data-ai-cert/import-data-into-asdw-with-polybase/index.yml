@@ -18,12 +18,12 @@ abstract: |
   - Collect the security keys for Azure Blob store
   - Import data from Blob Storage to the Data Warehouse
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/import-data-into-asdw-with-polybase-badge.svg
 levels:
 - beginner
 roles:
 - data-engineer
+- solution-architect
 products:
 - azure
 - azure-sql-data-warehouse
