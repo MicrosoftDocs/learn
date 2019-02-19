@@ -9,13 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Introduction to Logic Apps"
-summary: "Identify the types of situations where Logic Apps are the appropriate solution to automate business processes and how they integrate services to execute those processes."
+summary: "Characterize the types of business processes that Logic Apps can automate. Describe the function of connectors, triggers, and actions."
 abstract: |
   In this module, you will:
-  - "Determine when Logic Apps are the appropriate solution to automate a business process"
-  - "Identify the components that make a Logic App work"
+  - Determine when Logic Apps is the appropriate solution to automate a business process
+  - Identify the components of a Logic App
+  - Describe how Logic Apps integrates disparate services
 prerequisites: |
-  - Basic knowledge of basic programming concepts such as conditional logic
+  - Basic knowledge of programming concepts such as conditional logic
   - Basic knowledge of REST services and APIs
 iconUrl: http://via.placeholder.com/120x120
 badge:
