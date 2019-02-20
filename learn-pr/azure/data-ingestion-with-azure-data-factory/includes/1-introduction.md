@@ -9,7 +9,3 @@ In this module, you will:
 - Use Azure Data Factory (ADF) to ingest data and create an ADF pipeline.
 - Use Copy activities within ADF to copy data from one location to another.
 - Use ADF to orchestrate data transformations using a Databricks Notebook activity.
-
-## Pre-requisite
-
-- Azure Subscription: If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free)
