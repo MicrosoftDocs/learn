@@ -15,5 +15,5 @@ The following are some of the basic outputs generated from text analytics algori
  In this module, you will:
 
 - Identify the different techniques for performing text analytics using Azure Databricks.
-- Train and evaluate multiple machine learning models for text classification. 
+- Train and evaluate multiple machine learning models for text classification.
 - Create a text classifier using deep learning.
