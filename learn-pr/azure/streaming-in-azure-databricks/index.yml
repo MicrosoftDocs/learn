@@ -3,7 +3,7 @@ uid: learn.streaming-in-azure-databricks
 metadata:
   title: Streaming in Azure Databricks
   description: Learn how to analyze and process streaming data using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.
-  ms.date: 02/19/2019
+  ms.date: 02/20/2019
   author: barlanmsft
   ms.author: barlan
   ms.topic: interactive-tutorial
