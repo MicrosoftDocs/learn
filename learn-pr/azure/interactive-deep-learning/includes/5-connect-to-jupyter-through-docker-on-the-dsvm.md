@@ -29,7 +29,7 @@ Make sure you're still connected to your VM through ssh. If not, just run this c
 
     ```azurecli 
     sudo docker run --rm -it --entrypoint '/bin/sh' -p 8888:8888 pytorch/pytorch -c \
-    'conda install jupyter matplotlib -y &&\
+    'conda install jupyter matplotlib -y && pip install torchvision &&\
     curl https://pytorch.org/tutorials/_downloads/cifar10_tutorial.ipynb > first_pytorch_classifier.ipynb &&\
     jupyter notebook --ip=0.0.0.0 --no-browser --allow-root'
     ``` 
