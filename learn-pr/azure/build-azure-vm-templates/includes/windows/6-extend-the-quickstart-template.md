@@ -75,8 +75,7 @@ az group deployment validate \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --template-file azuredeploy.json \
   --parameters adminUsername=$USERNAME \
-  --parameters authenticationType=password \
-  --parameters adminPasswordOrKey=$PASSWORD \
+  --parameters adminPassword=$PASSWORD \
   --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
 ```
 
@@ -96,8 +95,7 @@ az group deployment create \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --template-file azuredeploy.json \
   --parameters adminUsername=$USERNAME \
-  --parameters authenticationType=password \
-  --parameters adminPasswordOrKey=$PASSWORD \
+  --parameters adminPassword=$PASSWORD \
   --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
 ```
 
