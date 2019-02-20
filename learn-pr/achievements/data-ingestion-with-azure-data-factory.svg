@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Modern Data Warehouse/data-ingestion-with-azure-data-factory</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.9%" y="-6.9%" width="113.8%" height="113.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101449275 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modern-Data-Warehouse" transform="translate(-579.000000, -727.000000)">
+            <g id="Modern-Data-Warehouse/data-ingestion-with-azure-data-factory" transform="translate(579.000000, 727.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-8" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(19.200000, 18.200000)" id="Group-12">
+                            <g>
+                                <polyline id="Fill-505" fill="#E1E4E1" points="14.9826903 30.6 21.1240355 30.6 21.1240355 0 2.7 0 2.7 30.6 14.9826903 30.6"></polyline>
+                                <polygon id="Fill-506" fill="#C5CCCD" points="11.9120177 30.6 21.1240355 30.6 21.1240355 0 11.9120177 0"></polygon>
+                                <path d="M56.7,28.8 L4.5,28.8 C3.5055,28.8 2.7,29.6055 2.7,30.6 L2.7,55.8 C2.7,56.7936 3.5055,57.6 4.5,57.6 L54.9,57.6 C55.8936,57.6 56.7,56.7936 56.7,55.8" id="Fill-508" fill="#30404D"></path>
+                                <g id="Group-14" transform="translate(11.700000, 37.800000)">
+                                    <g id="Group-13" transform="translate(19.584000, 0.000000)">
+                                        <polygon id="Fill-509" fill="#59B4D9" points="1.8 9.9 14.4 9.9 14.4 1.8 1.8 1.8"></polygon>
+                                        <polygon id="Fill-510" fill="#3999C6" points="1.8 2.7 14.4 2.7 14.4 1.8 1.8 1.8"></polygon>
+                                        <path d="M1.8,9.9 L14.4,9.9 L14.4,1.8 L1.8,1.8 L1.8,9.9 Z M15.3,11.7 L0.9,11.7 C0.4023,11.7 0,11.2977 0,10.8 L0,0.9 C0,0.4023 0.4023,0 0.9,0 L15.3,0 C15.7977,0 16.2,0.4023 16.2,0.9 L16.2,10.8 C16.2,11.2977 15.7977,11.7 15.3,11.7 Z" id="Fill-511" fill="#546670"></path>
+                                    </g>
+                                    <g id="Group-13" transform="translate(0.684000, 0.000000)">
+                                        <polygon id="Fill-509" fill="#59B4D9" points="1.8 9.9 14.4 9.9 14.4 1.8 1.8 1.8"></polygon>
+                                        <polygon id="Fill-510" fill="#3999C6" points="1.8 2.7 14.4 2.7 14.4 1.8 1.8 1.8"></polygon>
+                                        <path d="M1.8,9.9 L14.4,9.9 L14.4,1.8 L1.8,1.8 L1.8,9.9 Z M15.3,11.7 L0.9,11.7 C0.4023,11.7 0,11.2977 0,10.8 L0,0.9 C0,0.4023 0.4023,0 0.9,0 L15.3,0 C15.7977,0 16.2,0.4023 16.2,0.9 L16.2,10.8 C16.2,11.2977 15.7977,11.7 15.3,11.7 Z" id="Fill-511" fill="#546670"></path>
+                                    </g>
+                                </g>
+                                <polygon id="Fill-513" fill="#B8D432" points="2.7 8.1 11.9120177 8.1 11.9120177 5.4 2.7 5.4"></polygon>
+                                <polygon id="Fill-514" fill="#B8D432" points="2.7 13.5 11.9120177 13.5 11.9120177 10.8 2.7 10.8"></polygon>
+                                <polygon id="Fill-515" fill="#7FBA00" points="11.9120177 8.1 21.1240355 8.1 21.1240355 5.4 11.9120177 5.4"></polygon>
+                                <polygon id="Fill-516" fill="#7FBA00" points="11.9120177 13.5 21.1240355 13.5 21.1240355 10.8 11.9120177 10.8"></polygon>
+                                <path d="M7.3701,57.6 C7.8291,56.9493 8.1,56.1618 8.1,55.3095 C8.1,53.0946 6.2865,51.3 4.05,51.3 C1.8135,51.3 0,53.0946 0,55.3095 C0,56.1618 0.2709,56.9493 0.729,57.6 L7.3701,57.6" id="Fill-522" fill="#87BF5F"></path>
+                                <path d="M53.7057,57.6 C54.0801,57.0798 54.2997,56.4489 54.2997,55.7676 C54.2997,53.9955 52.8219,52.56 51.0003,52.56 C49.1778,52.56 47.7,53.9955 47.7,55.7676 C47.7,56.4489 47.9205,57.0798 48.294,57.6 L53.7057,57.6" id="Fill-523" fill="#6AA143"></path>
+                                <path d="M56.8872,57.6 C57.3354,56.9493 57.6,56.1609 57.6,55.3095 C57.6,53.0946 55.827,51.3 53.64,51.3 C51.453,51.3 49.68,53.0946 49.68,55.3095 C49.68,56.1609 49.9446,56.9493 50.3928,57.6 L56.8872,57.6" id="Fill-524" fill="#87BF5F"></path>
+                                <path d="M49.9365,52.7454 C48.6387,53.1774 47.7,54.3591 47.7,55.7676 C47.7,56.4489 47.9205,57.0798 48.294,57.6 L49.7322,57.6 C49.2849,56.9493 49.0203,56.1609 49.0203,55.3095 C49.0203,54.3339 49.365,53.4402 49.9365,52.7454" id="Fill-525" fill="#6EA846"></path>
+                                <path d="M6.4701,52.0974 C6.9777,52.7553 7.29,53.5635 7.29,54.45 C7.29,55.7442 6.6393,56.8818 5.6475,57.6 L7.272,57.6 C7.7841,56.9403 8.1,56.1285 8.1,55.2375 C8.1,53.9487 7.4538,52.8156 6.4701,52.0974" id="Fill-526" fill="#6EA846"></path>
+                                <path d="M56.0061,52.0974 C56.5029,52.7553 56.808,53.5635 56.808,54.45 C56.808,55.7442 56.1717,56.8818 55.2024,57.6 L56.8872,57.6 C57.3885,56.9403 57.6,56.1285 57.6,55.2375 C57.6,53.9487 56.9682,52.8156 56.0061,52.0974" id="Fill-527" fill="#6EA846"></path>
+                                <path d="M40.3044242,26.6859 L40.3044242,17.3283819 C40.3044242,16.3342694 39.4985368,15.5283819 38.5044242,15.5283819 C38.1063601,15.5283819 37.7195241,15.6603331 37.4044365,15.9035918 L20.7,28.8 L56.7,28.8 L56.7,17.3928478 C56.7,16.3987352 55.8941125,15.5928478 54.9,15.5928478 C54.4934645,15.5928478 54.0989009,15.7304665 53.7805497,15.9832978 L40.3044242,26.6859 Z" id="Fill-528" fill="#233039"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

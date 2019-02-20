@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.create-data-pipelines-using-databricks-delta.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge by answering questions about skills you learned from the lab.
+  ms.date: 02/20/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: 'Knowledge Check'
+  questions:
+    - content: 'What is the Databricks Delta command to display metadata?'
+      choices:
+        - content: DESCRIBE DETAIL tableName
+          explanation: Metadata is displayed through DESCRIBE DETAIL tableName
+          isCorrect: true
+        - content: MSCK DETAIL tablename
+          isCorrect: false
+          explanation: MSCK is for repairing tables
+        - content: SHOW SCHEMA tablename
+          isCorrect: false
+          explanation: Incorrect, no such command available
+    - content: 'Just repaired myTable using MSCK REPAIR TABLE myTable; How do you verify that the repair worked?'
+      choices:
+        - content: SELECT count(*) FROM myTable and make sure the count is what was expected
+          explanation: SELECT count(*) FROM myTable is the correct way to check on the result to make sure it is correct
+          isCorrect: true
+        - content: Execute Describe Detail myTable
+          isCorrect: false
+          explanation: Incorrect, that command is for displaying metadata
+        - content: display(mytable)
+          isCorrect: false
+          explanation: Incorrect, not a relavent answer.
+    - content: 'How do you perform UPSERT in a Databricks Delta dataset?'
+      choices:
+        - content: Using the MERGE INTO my-table USING data-to-upsert
+          explanation: That is the correct syntax to perform UPSERT in a Databricks Delta dataset
+          isCorrect: true
+        - content: Using the UPSERT INTO my-table
+          isCorrect: false
+          explanation: Incorrect, syntax is not correct for this operation
+        - content: Using the UPSERT INTO my-table /MERGE
+          isCorrect: false
+          explanation: Incorrect, syntax is not correct for this operation
+    - content: 'How do you view the list of active streams?'
+      choices:
+        - content:  Invoke spark.streams.active
+          explanation: That is the correct syntax to view the list of active streams
+          isCorrect: true
+        - content:  Invoke spark.streams.show
+          isCorrect: false
+          explanation: Incorrect, syntax is not correct for this operation
+        - content:  Invoke spark.view.active
+          isCorrect: false
+          explanation: Incorrect, syntax is not correct for this operation
+    - content: 'What size files does OPTIMIZE compact to?'
+      choices:
+        - content: Small files are compacted to around 1GB
+          explanation: this value was determined by the Spark optimization team as a good compromise between speed and performace.
+          isCorrect: true
+        - content:  Small files are compacted to around 100MB
+          isCorrect: false
+          explanation: Incorrect, the Spark optimization team decided on 1 GB for speed and performance
+        - content:  Small files are compacted to around 500MB
+          isCorrect: false
+          explanation: Incorrect, the Spark optimization team decided on 1 GB for speed and performance

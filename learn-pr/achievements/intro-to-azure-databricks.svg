@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Data Science/learning-azure-databricks-notebook-fundamentals</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.7%" y="-6.2%" width="113.3%" height="112.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0992697011 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-Science" transform="translate(-579.000000, -327.000000)">
+            <g id="Data-Science/learning-azure-databricks-notebook-fundamentals" transform="translate(579.000000, 327.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-3" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(21.000000, 15.000000)">
+                            <path d="M47,19 C39.82,19 34,24.821 34,32 C34,39.179 39.82,45 47,45 C54.179,45 60,39.179 60,32 C60,24.821 54.179,19 47,19" id="Fill-211" fill="#F65B23"></path>
+                            <g id="Databricks" stroke-width="1" fill="none" transform="translate(39.000000, 23.000000)">
+                                <g id="Lower" transform="translate(0.000000, 6.093750)" fill-rule="nonzero">
+                                    <polygon id="Shadow" fill-opacity="0.093919837" fill="#000000" points="1.66533454e-16 8.68963228 0 7.31682414 16 7.31682414 16 8.68963228 8 13.182836"></polygon>
+                                    <polygon id="Rectangle-8" fill="#EBEBEB" points="16 4.49187006 16 7.51106085 8 12.0042646 8 8.98640742 15.9386794 4.49320371"></polygon>
+                                    <polygon id="Rectangle-8" fill="#C8C8C8" points="8 8.98640742 8 12.0042646 0 7.51106085 0 4.49244036"></polygon>
+                                    <polygon id="Rectangle-8" fill="#FFFFFF" points="0 4.49320371 8 0 16 4.49320371 8 8.98640742"></polygon>
+                                </g>
+                                <g id="Top" fill-rule="nonzero">
+                                    <polygon id="Shadow" fill-opacity="0.093919837" fill="#000000" points="1.66533454e-16 8.68963228 0 7.31682414 16 7.31682414 16 8.68963228 8 13.182836"></polygon>
+                                    <polygon id="Rectangle-8" fill="#EBEBEB" points="16 4.49187006 16 7.51106085 8 12.0042646 8 8.98640742 15.9386794 4.49320371"></polygon>
+                                    <polygon id="Rectangle-8" fill="#C8C8C8" points="8 8.98640742 8 12.0042646 0 7.51106085 0 4.49244036"></polygon>
+                                    <polygon id="Rectangle-8" fill="#FFFFFF" points="0 4.49320371 8 0 16 4.49320371 8 8.98640742"></polygon>
+                                </g>
+                            </g>
+                            <path d="M47,49 C37.625,49 30,41.374 30,32 C30,22.626 37.625,15 47,15 C47.337,15 47.667,15.031 48,15.051 L48,8 C48,5.8 46.2,4 44,4 L4,4 C1.799,4 0,5.8 0,8 L0,60 C0,62.2 1.799,64 4,64 L44,64 C46.2,64 48,62.2 48,60 L48,48.949 C47.667,48.969 47.337,49 47,49" id="Fill-213" fill="#E1E4E1"></path>
+                            <path d="M32,8 C32,9.656 30.656,11 29,11 C27.343,11 26,9.656 26,8 C26,6.344 27.343,5 29,5 C30.656,5 32,6.344 32,8" id="Fill-214" fill="#A9B3B6"></path>
+                            <path d="M22,8 C22,9.656 20.656,11 19,11 C17.343,11 16,9.656 16,8 C16,6.344 17.343,5 19,5 C20.656,5 22,6.344 22,8" id="Fill-215" fill="#A9B3B6"></path>
+                            <path d="M12,8 C12,9.656 10.656,11 9,11 C7.343,11 6,9.656 6,8 C6,6.344 7.343,5 9,5 C10.656,5 12,6.344 12,8" id="Fill-216" fill="#A9B3B6"></path>
+                            <path d="M42,8 C42,9.656 40.656,11 39,11 C37.343,11 36,9.656 36,8 C36,6.344 37.343,5 39,5 C40.656,5 42,6.344 42,8" id="Fill-217" fill="#A9B3B6"></path>
+                            <path d="M9,10 C7.895,10 7,9.104 7,8 L7,2 C7,0.896 7.895,0 9,0 C10.104,0 11,0.896 11,2 L11,8 C11,9.104 10.104,10 9,10" id="Fill-218" fill="#546670"></path>
+                            <path d="M19,10 C17.895,10 17,9.104 17,8 L17,2 C17,0.896 17.895,0 19,0 C20.104,0 21,0.896 21,2 L21,8 C21,9.104 20.104,10 19,10" id="Fill-219" fill="#546670"></path>
+                            <path d="M29,10 C27.895,10 27,9.104 27,8 L27,2 C27,0.896 27.895,0 29,0 C30.104,0 31,0.896 31,2 L31,8 C31,9.104 30.104,10 29,10" id="Fill-220" fill="#546670"></path>
+                            <path d="M39,10 C37.895,10 37,9.104 37,8 L37,2 C37,0.896 37.895,0 39,0 C40.104,0 41,0.896 41,2 L41,8 C41,9.104 40.104,10 39,10" id="Fill-221" fill="#546670"></path>
+                            <polygon id="Fill-222" fill="#C5CCCD" points="0 53 48 53 48 51 0 51"></polygon>
+                            <path d="M36.068,19 L0,19 L0,21 L34.061,21 C34.674,20.279 35.344,19.609 36.068,19" id="Fill-223" fill="#C5CCCD"></path>
+                            <path d="M30.752,27 L0,27 L0,29 L30.281,29 C30.403,28.32 30.552,27.649 30.752,27" id="Fill-224" fill="#C5CCCD"></path>
+                            <path d="M30.281,35 L0,35 L0,37 L30.752,37 C30.552,36.351 30.403,35.68 30.281,35" id="Fill-225" fill="#C5CCCD"></path>
+                            <path d="M34.061,43 L0,43 L0,45 L36.068,45 C35.344,44.391 34.674,43.721 34.061,43" id="Fill-226" fill="#C5CCCD"></path>
+                            <polygon id="Fill-227" fill="#55B7D9" points="12 64 14 64 14 4 12 4"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
