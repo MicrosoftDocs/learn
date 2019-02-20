@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.design-azure-sql-data-warehouse.create-azure-dw-using-portal
+title: Exercise - create an Azure Data Warehouse using the portal
+metadata:
+  title: Exercise - create an Azure Data Warehouse using the portal - Learn
+  description: Exercise - create an Azure Data Warehouse using the portal - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-create-azure-dw-using-portal.md)]

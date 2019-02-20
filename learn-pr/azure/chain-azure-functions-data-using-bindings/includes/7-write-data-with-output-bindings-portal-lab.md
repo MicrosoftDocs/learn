@@ -167,7 +167,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
     ```json
     {
         "id": "docs",
-        "url": "https://docs.microsoft.com/azure"
+        "URL": "https://docs.microsoft.com/azure"
     }
     ```
 
@@ -182,7 +182,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
     ```json
     {
         "id": "github",
-        "url": "https://www.github.com"
+        "URL": "https://www.github.com"
     }
     ```
 7. Select **Run** at the bottom of the test pane.

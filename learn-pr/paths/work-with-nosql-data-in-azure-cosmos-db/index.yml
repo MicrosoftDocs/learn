@@ -19,6 +19,7 @@ levels:
 - beginner
 roles:
 - developer
+- data-engineer
 products:
 - azure
 - azure-cosmos-db

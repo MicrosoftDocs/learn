@@ -20,12 +20,12 @@ abstract:  |
   - Learn some basic ways to troubleshoot issues on your Azure containers
 
 prerequisites: None
-#TODO: Update icon URL with real image 
 iconUrl: /learn/achievements/run-docker-with-azure-container-instances.svg
 levels:
 - intermediate
 roles:
 - administrator
+- solution-architect
 products:
 - azure
 - azure-container-instances

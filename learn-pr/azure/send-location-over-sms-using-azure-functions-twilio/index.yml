@@ -20,6 +20,8 @@ abstract:  |
   - Call an Azure Function from a mobile app, passing data as JSON
   - Bind an Azure Function to Twilio to send an SMS message
   - Publish an Azure Function to Azure
+
+  [!include[](../../includes/azure-lab-environment-not-available.md)]
 prerequisites: None
 iconUrl: /learn/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
 levels:

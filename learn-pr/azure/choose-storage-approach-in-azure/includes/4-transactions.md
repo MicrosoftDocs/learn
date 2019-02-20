@@ -10,12 +10,12 @@ A transaction is a logical group of database operations that execute together.
 
 Here's the question to ask yourself regarding whether you need to use transactions in your application: Will a change to one piece of data in your dataset impact another? If the answer is yes, then you'll need support for transactions in your database service.
 
-Transactions are often defined by a set of four requirements, referred to as ACID guarantees. ACID stands for Atomicity, Consistency, Isolation, and Durability:
+Transactions are often defined by a set of four requirements, referred to as ACID guarantees. ACID stands for **A**tomicity, **C**onsistency, **I**solation, and **D**urability:
 
-- Atomicity means that either all the operations in the transaction are executed, or none of them are.
-- Consistency ensures that if something happens partway through the transaction, a portion of the data isn't left out of the updates. Across the board, the transaction is applied consistently or not at all.
-- Isolation ensures that one transaction is not impacted by another transaction.
-- Durability means that the changes made due to the transaction are permanently saved in the system. Committed data is saved by the system so that even in the event of a failure and system restart, the data is available in its correct state.
+- **Atomicity** means that either all the operations in the transaction are executed, or none of them are.
+- **Consistency** ensures that if something happens partway through the transaction, a portion of the data isn't left out of the updates. Across the board, the transaction is applied consistently or not at all.
+- **Isolation** ensures that one transaction is not impacted by another transaction.
+- **Durability** means that the changes made due to the transaction are permanently saved in the system. Committed data is saved by the system so that even in the event of a failure and system restart, the data is available in its correct state.
 
 When a database offers ACID guarantees, these principles are applied to any transactions in a consistent manner.
 

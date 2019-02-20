@@ -44,7 +44,7 @@ The cost of Azure products, services, and resources can vary across locations an
 
 Keep up-to-date with the latest Azure customer and subscription offers, and switch to offers that provide the most significant cost-saving benefit.
 
-You can check the [Azure Updates page](https://azure.microsoft.com/en-us/updates/) for information about the latest updates to Azure products, services, and features, as well as product roadmaps and announcements.
+You can check the [Azure Updates page](https://azure.microsoft.com/updates/) for information about the latest updates to Azure products, services, and features, as well as product roadmaps and announcements.
 
 ## Right-size underutilized virtual machines
 

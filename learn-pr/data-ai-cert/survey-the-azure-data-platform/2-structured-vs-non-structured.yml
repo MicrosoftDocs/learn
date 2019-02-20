@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.survey-the-azure-data-platform.structured-vs-non-structured
+title: Explore the types of data
+metadata:
+  title: Explore the types of data - Structured vs Non-Structured Data - Learn
+  description: Explore the types of data - Structured vs Non-Structured Data - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-structured-vs-non-structured.md)]

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Azure for the Data Engineer/navigating-the-azure-data-platform</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-11.1%" y="-6.2%" width="122.2%" height="112.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100232111 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-for-the-Data-Engineer" transform="translate(-50.000000, -460.000000)">
+            <g id="Azure-for-the-Data-Engineer/navigating-the-azure-data-platform" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-4" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(30.000000, 14.000000)">
+                            <path d="M18,12 C16.344,12 15,10.656 15,9 C15,7.344 16.344,6 18,6 C19.656,6 21,7.344 21,9 C21,10.656 19.656,12 18,12 Z M18,0 C13.037,0 9,3.858 9,8.601 C9,16.977 16.213,25.008 16.52,25.346 C16.899,25.763 17.436,26 18,26 C18.563,26 19.101,25.763 19.479,25.346 C19.787,25.008 27,16.977 27,8.601 C27,3.858 22.963,0 18,0 Z" id="Fill-99" fill="#DF5142"></path>
+                            <path d="M27,44 L9,44 C6.243,44 4,41.757 4,39 C4,36.243 6.243,34 9,34 L18,34 C19.104,34 20,33.104 20,32 C20,30.896 19.104,30 18,30 L9,30 C4.037,30 0,34.037 0,39 C0,43.963 4.037,48 9,48 L27,48 C29.757,48 32,50.243 32,53 C32,55.757 29.757,58 27,58 L4,58 C2.895,58 2,58.896 2,60 C2,61.104 2.895,62 4,62 L27,62 C31.963,62 36,57.963 36,53 C36,48.037 31.963,44 27,44" id="Fill-100" fill="#E1E4E1"></path>
+                            <path d="M8,60 C8,62.209 6.209,64 4,64 C1.791,64 0,62.209 0,60 C0,57.791 1.791,56 4,56 C6.209,56 8,57.791 8,60" id="Fill-101" fill="#546670"></path>
+                            <path d="M22,32 C22,34.209 20.209,36 18,36 C15.791,36 14,34.209 14,32 C14,29.791 15.791,28 18,28 C20.209,28 22,29.791 22,32" id="Fill-102" fill="#546670"></path>
+                            <path d="M22.437,1.12 C20.438,0.033 18,1.485 18,3.76 L18,6 C19.656,6 21,7.344 21,9 C21,10.656 19.656,12 18,12 L18,23.095 C18,24.212 16.834,25.005 15.829,24.517 L15.805,24.504 C16.198,24.985 16.467,25.287 16.521,25.346 C16.899,25.763 17.436,26 18,26 C18.563,26 19.101,25.763 19.479,25.346 C19.787,25.008 27,16.977 27,8.601 C27,5.399 25.16,2.6 22.437,1.12" id="Fill-103" fill="#B43F3A"></path>
+                            <path d="M18,12 C16.343,12 15,10.657 15,9 C15,7.343 16.343,6 18,6 L18,5 C15.791,5 14,6.791 14,9 C14,11.209 15.791,13 18,13 L18,12" id="Fill-104" fill="#B43F3A"></path>
+                            <path d="M18,6 C19.657,6 21,7.343 21,9 C21,10.657 19.657,12 18,12 L18,13 C20.209,13 22,11.209 22,9 C22,6.791 20.209,5 18,5 L18,6" id="Fill-105" fill="#DF5142"></path>
+                            <path d="M22,32 C22,29.791 20.209,28 18,28 L18,36 C20.209,36 22,34.209 22,32" id="Fill-106" fill="#30404D"></path>
+                            <path d="M8,60 C8,57.791 6.209,56 4,56 L4,64 C6.209,64 8,62.209 8,60" id="Fill-107" fill="#30404D"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

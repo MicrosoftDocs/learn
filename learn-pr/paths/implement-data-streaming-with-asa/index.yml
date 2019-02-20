@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.data-ai.implement-data-streaming-with-asa
+metadata:
+  title: Implement a Data Streaming Solution with Azure Streaming Analytics
+  description: Learn the concepts of event processing and streaming data and how this applies to Azure Stream Analytics. You will then set up a stream analytics job to stream data, and learn how to manage and monitor a running job - Learn
+  brand: azure
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement a Data Streaming Solution with Azure Streaming Analytics
+summary: Learn the concepts of event processing and streaming data and how this applies to Azure Stream Analytics. You will then set up a stream analytics job to stream data, and learn how to manage and monitor a running job.
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/implement-data-streaming-with-asa-trophy.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure
+- azure-portal
+- azure-storage
+- azure-stream-analytics
+modules:
+- learn.data-ai.introduction-to-data-streaming
+- learn.data-ai.transform-data-with-azure-stream-analytics
+trophy:
+  uid: learn.data-ai.implement-data-streaming-with-asa.trophy

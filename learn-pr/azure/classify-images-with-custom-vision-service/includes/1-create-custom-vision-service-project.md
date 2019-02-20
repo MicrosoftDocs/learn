@@ -8,7 +8,7 @@ The first step in building an image-classification model with the Custom Vision 
 
     ![Screenshot of the Custom Vision Service portal with the New Project option highlighted](../media/1-portal-click-new-project.png)
 
-1. In the **Create new project** dialog, name the project *Artworks*, and make sure that **General** is selected in the **Domains** list. You can keep the default settings for **Project Types** and **Classification Types**. Select **Create project** to create our project.
+1. In the **Create new project** dialog, name the project *Artworks*, and make sure that **General** is selected in the **Domains** list. You can keep the default setting for **Project Types** and select **Multilabel** under **Classification Types**. Select **Create project** to create our project.
 
     > A domain optimizes a model for specific types of images. For example, if your goal is to classify food images by the types of food they contain or the ethnicity of the dishes, then it might be helpful to select the Food domain. For scenarios that don't match any of the offered domains, or if you are unsure of which domain to choose, select the General domain.
 

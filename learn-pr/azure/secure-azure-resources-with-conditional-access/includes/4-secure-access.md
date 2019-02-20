@@ -1,5 +1,7 @@
 In the previous exercise, we enabled trial licenses, created a directory, created a user, and created a group to test our solution. In this unit, we will create our conditional access rule to require Azure Multi-Factor Authentication for the Azure portal.
 
+[!include[](../../../includes/azure-lab-environment-not-available.md)]
+
 ## Enable conditional access-based Multi-Factor Authentication
 
 Conditional access allows administrators to configure when they do or do not want something to happen. They can use multiple rules in parallel to grant or deny access to resources. Here's the rule that we need to create:
