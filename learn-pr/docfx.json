@@ -41,6 +41,17 @@
         "dest": "modules"
       },
       {
+        "src": "azure-devops",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/includes/**"
+        ],
+        "dest": "modules"
+      },
+      {
         "files": [
           "**/*.md",
           "**/*.yml"
