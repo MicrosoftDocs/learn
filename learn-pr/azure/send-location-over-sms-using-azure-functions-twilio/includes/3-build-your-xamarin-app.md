@@ -1,5 +1,7 @@
 At this point, the mobile app is a simple "Hello World" app. In this unit, you add the UI and some basic application logic.
 
+[!include[](../../../includes/azure-lab-environment-not-available.md)]
+
 The UI for the app will consist of:
 
 - A text-entry control to enter some phone numbers.

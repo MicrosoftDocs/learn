@@ -10,7 +10,7 @@ Application data can be classified in one of three ways: structured, semi-struct
 
 Structured data is data that adheres to a schema, so all of the data has the same fields or properties. Structured data can be stored in a database table with rows and columns. Structured data relies on keys to indicate how one row in a table relates to data in another row of another table. Structured data is also referred to as relational data, as the data's schema defines the table of data, the fields in the table, and the clear relationship between the two.
 
-Structured data is straightforward in that it's easy to enter, query, and analyze. All of the data follows the same format.
+Structured data is straightforward in that it's easy to enter, query, and analyze. All of the data follows the same format. However, forcing a consistent structure also means evolution of the data is more difficult as each record has to be updated to conform to the new structure.
 
 Examples of structured data include:
 

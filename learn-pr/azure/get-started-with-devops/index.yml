@@ -4,6 +4,11 @@ metadata:
   title: Get started with Azure DevOps
   description: In this module, we'll explore DevOps and learn how to get started with Azure DevOps.
   ms.date: 11/16/2018
+  author: AnthonyBorton
+  ms.author: anborton
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: marksm
 abstract: | 
   In this module, you will:
     - Learn how Azure DevOps can provide a streamlined DevOps pipeline

@@ -31,19 +31,24 @@ Since we are in the free Azure sandbox environment, you don't need to do this st
 
 Recall that a Resource Manager template is divided into sections, one of them being **Parameters**.
 
-Near the start of the template, you see a section named `parameters`. This section defines these five parameters:
+Near the start of the template, you see a section named `parameters`. This section defines these parameters:
 
 * `adminUsername`
-* `adminPassword`
+* `authenticationType`
+* `adminPasswordOrKey`
 * `dnsLabelPrefix`
 * `ubuntuOSVersion`
 * `location`
 
+This image highlights the first few parameters.
+
 ![The source code for the template's parameters section, highlighting each parameter name](../../media/4-armviz-params-linux.png)
 
-Two of these parameters &ndash; `ubuntuOSVersion` and `location` &ndash; have default values. The default value for `ubuntuOSVersion` is "16.04.0-LTS" and the default value for `location` is the parent resource group's location.
+The `authenticationType` parameter specifies whether to use password authentication or key-based authentication to connect to the virtual machine. The `adminPasswordOrKey` parameter specifies the password or SSH key. Although key-based authentication is typically more secure than password authentication, here you'll use password authentication for learning purposes.
 
-Let's keep these parameters at their default values. For the remaining three parameters, you have two options:
+Some parameters, such as `ubuntuOSVersion` and `location`, have default values. The default value for `ubuntuOSVersion` is "16.04.0-LTS" and the default value for `location` is the parent resource group's location.
+
+Let's keep these parameters at their default values. For the remaining parameters, you have two options:
 
 1. Provide the values in a JSON file.
 1. Provide the values as command-line arguments.
@@ -87,7 +92,8 @@ As a final verification step, you'll begin by validating that the template is sy
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
-      --parameters adminPassword=$PASSWORD \
+      --parameters authenticationType=password \
+      --parameters adminPasswordOrKey=$PASSWORD \
       --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
     ```
 
@@ -107,7 +113,8 @@ As a final verification step, you'll begin by validating that the template is sy
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
-      --parameters adminPassword=$PASSWORD \
+      --parameters authenticationType=password \
+      --parameters adminPasswordOrKey=$PASSWORD \
       --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
     ```
 

@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.data-ai.implement-sql-data-warehouse
+metadata:
+  title: Implement a Data Warehouse with Azure SQL Data Warehouse
+  description: Azure SQL Data Warehouse provides a relational big data store that can scale to Petabytes of data. In this learning path, you will learn how Azure SQL Data Warehouse can achieve this scale with its’ Massively Parallel Processing (MPP) architecture. Create a data warehouse in minutes and use familiar querying language to build reports. Load massive amounts of data in minutes, and ensure that your data warehouse is secure.
+  brand: azure
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement a Data Warehouse with Azure SQL Data Warehouse
+summary: |
+  Azure SQL Data Warehouse provides a relational big data store that can scale to Petabytes of data. In this learning path, you will learn how Azure SQL Data Warehouse can achieve this scale with its’ Massively Parallel Processing (MPP) architecture. Create a data warehouse in minutes and use familiar querying language to build reports. Load massive amounts of data in minutes, and ensure that your data warehouse is secure.
+
+  In this learning path, you will:
+    - Learn how to create an Azure SQL Data Warehouse
+    - Issue queries and visualize data from an Azure SQL Data Warehouse
+    - Import data into Azure SQL Data Warehouse using Polybase
+    - Understand the security controls provided by Azure Storage and Azure SQL Data Warehouse
+cardDescription: Azure SQL Data Warehouse provides a relational big data store that can scale to Petabytes of data. In this learning path, you will learn how Azure SQL Data Warehouse can achieve this scale with its’ Massively Parallel Processing (MPP) architecture. Create a data warehouse in minutes and use familiar querying language to build reports. Load massive amounts of data in minutes, and ensure that your data warehouse is secure.
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/implement-sql-data-warehouse-trophy.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure
+- azure-portal
+- azure-storage
+- azure-sql-data-warehouse
+modules:
+- learn.data-ai.design-azure-sql-data-warehouse
+- learn.data-ai.query-azure-sql-data-warehouse
+- learn.data-ai.import-data-into-asdw-with-polybase
+- learn.data-ai.data-warehouse-security
+trophy:
+  uid: learn.data-ai.implement-sql-data-warehouse.trophy

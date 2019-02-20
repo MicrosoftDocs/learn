@@ -32,6 +32,7 @@ roles:
 - administrator
 - business-analyst
 - business-user
+- data-engineer
 products:
 - azure
 - azure-portal

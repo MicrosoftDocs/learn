@@ -1,5 +1,7 @@
 You decide to deploy Azure AD and use conditional access policies that Azure require Multi-Factor Authentication when anyone accesses the Azure portal. You need to create a directory and get temporary licenses in place.
 
+[!include[](../../../includes/azure-lab-environment-not-available.md)]
+
 ## Launch lab and sign in to the Azure portal
 
 1. Click the link above to launch the lab.

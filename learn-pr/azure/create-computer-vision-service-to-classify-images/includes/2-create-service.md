@@ -84,9 +84,9 @@ We need an API access key to make calls to the Computer Vision API. To get acces
 | Parameter | Description |
 |-----------|-------------|
 | `resource-group` | The resource group that will own the cognitive services account. In this interactive sandbox session, you'll use <rgn>[sandbox resource group name]</rgn> |
-| `kind` | The API name of cognitive services account. |
+| `kind` | The API name of cognitive services account. For this exercise Computer Vision, but can be based on Content Moderator, Face API, etc.|
 | `name` | Cognitive service account name. |
-| `sku` | The Sku of cognitive services account.|
+| `sku` | The Sku (Stock Keeping Unit) of cognitive services account. For this exercise S1, but can be F0 (free tier), S1, S2, S3, or S4. |
 | `location` | The location, or region, from which you want to make calls to this API. Select one of the locations from the list below. |
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)] 
