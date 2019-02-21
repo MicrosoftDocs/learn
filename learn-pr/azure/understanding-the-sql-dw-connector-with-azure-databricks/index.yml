@@ -16,8 +16,8 @@ abstract:  |
   - Learn to access Azure SQL Data Warehouse (SQL DW) from Azure Databricks using the SQL Data Warehouse connector 
   - Use Apache Spark with Azure Blob storage and PolyBase in SQL DW to transfer large volumes of data efficiently between a Databricks cluster and a SQL DW instance
 prerequisites: | 
-  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free)
-  - If you are a Visual Studio Active Subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
+  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free)
+  - If you are a Visual Studio Active Subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
   - If you are not a Visual Studio Subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account (includes 1 year of free services, $200 for 1st month).
 iconUrl: /learn/achievements/understanding-the-sql-dw-connector-with-azure-databricks.svg
 levels:
@@ -26,6 +26,7 @@ roles:
 - developer
 - solution-architect
 products:
+- azure
 - azure-databricks
 units:
 - learn.understanding-the-sql-dw-connector-with-azure-databricks.1-introduction

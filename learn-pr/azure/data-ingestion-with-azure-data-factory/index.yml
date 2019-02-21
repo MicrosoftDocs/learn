@@ -8,7 +8,6 @@ metadata:
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
 title: Read and write data using Azure Databricks
 summary: In this tutorial, you use Azure Databricks to work with multiple data sources, combining inputs from files and data stores such as Azure SQL Database, and transforming and storing that data for advanced analytics.
 abstract:  | 
@@ -17,8 +16,8 @@ abstract:  |
   - Combine inputs from files and data stores such as Azure SQL Database
   - Transform and store that data for advanced analytics
 prerequisites: |
-  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free)
-  - If you are a Visual Studio Active Subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
+  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free)
+  - If you are a Visual Studio Active Subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
   - If you are not a Visual Studio Subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account (includes 1 year of free services, $200 for 1st month).
 iconUrl: /learn/achievements/data-ingestion-with-azure-data-factory.svg
 levels:
@@ -27,6 +26,7 @@ roles:
 - developer
 - solution-architect
 products:
+- azure
 - azure-databricks
 units:
 - learn.data-ingestion-with-azure-data-factory.1-introduction

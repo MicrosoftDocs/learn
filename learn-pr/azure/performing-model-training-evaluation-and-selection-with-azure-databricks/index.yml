@@ -28,6 +28,7 @@ roles:
 - solution-architect
 - business-analyst
 products:
+- azure
 - azure-databricks
 units:
  - learn.performing-model-training-evaluation-and-selection-with-azure-databricks.1-introduction

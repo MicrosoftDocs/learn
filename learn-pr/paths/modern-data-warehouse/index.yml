@@ -2,7 +2,7 @@
 uid: learn.modern-data-warehouse
 metadata:
   title: Modern data warehouse
-  description: Learn the moder data warehousing tools and techniques supported by Azure Databricks. 
+  description: Learn the modern data warehousing tools and techniques supported by Azure Databricks. 
   brand: azure
   ms.date: 02/19/2019
   author: barlanmsft
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Modern data warehouse
-summary: Learn the moder data warehousing tools and techniques supported by Azure Databricks.
+summary: Learn the modern data warehousing tools and techniques supported by Azure Databricks.
 prerequisites: None 
 iconUrl: /learn/achievements/modern-data-warehouse.svg
 levels:
@@ -19,6 +19,7 @@ roles:
 - developer
 - solution-architect
 products:
+- azure
 - azure-databricks
 modules:
 - learn.intro-to-azure-databricks

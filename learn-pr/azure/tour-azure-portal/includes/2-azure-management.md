@@ -76,7 +76,7 @@ Both environments support the Azure CLI and Azure PowerShell CLIs. Linux default
 - maven
 - make
 - npm
-- [and more...](https://docs.microsoft.com/en-us/azure/cloud-shell/features#tools)
+- [and more...](https://docs.microsoft.com/azure/cloud-shell/features#tools)
   :::column-end:::
 :::row-end:::
 
