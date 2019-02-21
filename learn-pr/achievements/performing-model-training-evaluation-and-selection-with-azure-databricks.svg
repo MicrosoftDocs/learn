@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Data Science/performing-model-training-evaluation-and-selection-with-azure-databricks</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-7.1%" y="-6.2%" width="114.3%" height="112.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.099609375 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-Science" transform="translate(-579.000000, -727.000000)">
+            <g id="Data-Science/performing-model-training-evaluation-and-selection-with-azure-databricks" transform="translate(579.000000, 727.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-29" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(20.000000, 16.000000)">
+                            <path d="M50,11 L34.5,11 L33.6,9.799 C33.27,9.359 32.55,9 32,9 L24,9 C23.45,9 22.73,9.359 22.4,9.799 L21.5,11 L6,11 C5.448,11 5,11.447 5,12 C5,12.553 5.448,13 6,13 L50,13 C50.552,13 51,12.553 51,12 C51,11.447 50.552,11 50,11" id="Fill-659" fill="#6E828F"></path>
+                            <path d="M48.828,12 C48.298,12 47.789,11.789 47.414,11.414 L47,11 L46,11 L46,12 L33,12 C31.895,12 31,11.105 31,10 L31,9 L30,9 L30,12 L26,12 L26,9 L25,9 L25,10 C25,11.105 24.105,12 23,12 L14.828,12 C14.298,12 13.789,11.789 13.414,11.414 L13,11 L12,11 L12,12 L5,12 C5,12.553 5.448,13 6,13 L50,13 C50.552,13 51,12.553 51,12 L48.828,12" id="Fill-660" fill="#546670"></path>
+                            <path d="M30,57 L30,2 C30,0.894 29.104,0 28,0 C26.896,0 26,0.894 26,2 L26,57 C26,58.103 30,58.103 30,57" id="Fill-661" fill="#ADBDC4"></path>
+                            <polyline id="Fill-662" fill="#30404D" points="2.937 36.352 1.064 35.648 10.064 11.648 11.937 12.352 2.937 36.352"></polyline>
+                            <polyline id="Fill-663" fill="#30404D" points="19.064 36.352 10.064 12.352 11.937 11.648 20.937 35.648 19.064 36.352"></polyline>
+                            <path d="M37,60 L36.192,60 C35.153,58.209 33.216,57 31,57 L25,57 C22.785,57 20.851,58.209 19.811,60 L19,60 C18.45,60 18,60.449 18,61 L18,63 C18,63.549 18.45,64 19,64 L37,64 C37.55,64 38,63.549 38,63 L38,61 C38,60.449 37.55,60 37,60" id="Fill-664" fill="#30404D"></path>
+                            <path d="M22,36 C22,35.447 21.552,35 21,35 L1,35 C0.448,35 0,35.447 0,36 L0,36.002 C0,42.078 4.924,47 11,47 C17.074,47 22.002,42.076 22,36.002 C22,36 22,36 22,36" id="Fill-665" fill="#EFB252"></path>
+                            <polyline id="Fill-666" fill="#30404D" points="36.936 36.352 35.063 35.648 44.063 11.648 45.936 12.352 36.936 36.352"></polyline>
+                            <polyline id="Fill-667" fill="#30404D" points="53.063 36.352 44.063 12.352 45.936 11.648 54.936 35.648 53.063 36.352"></polyline>
+                            <path d="M55.999,36 C55.999,35.447 55.552,35 54.999,35 L34.999,35 C34.447,35 33.999,35.447 33.999,36 L34,36.002 C34,42.078 38.923,47 45,47 C51.073,47 56.002,42.076 56,36.002 C56,36 56,36 56,36 L55.999,36" id="Fill-668" fill="#EFB252"></path>
+                            <path d="M47,12 C47,13.105 46.104,14 45,14 C43.895,14 43,13.105 43,12 C43,10.894 43.895,10 45,10 C46.104,10 47,10.894 47,12" id="Fill-669" fill="#ADBDC4"></path>
+                            <path d="M13,12 C13,13.105 12.104,14 11,14 C9.895,14 9,13.105 9,12 C9,10.894 9.895,10 11,10 C12.104,10 13,10.894 13,12" id="Fill-670" fill="#ADBDC4"></path>
+                            <path d="M28,1.903 L28,54 C28,54.552 27.552,55 27,55 L26,55 L26,57 L30,57 L30,2 C30,1.885 29.99,1.773 29.972,1.664 C29.775,0.499 28,0.722 28,1.903" id="Fill-671" fill="#8BA6B1"></path>
+                            <path d="M29,11 C29,11.553 28.552,12 28,12 C27.448,12 27,11.553 27,11 C27,10.447 27.448,10 28,10 C28.552,10 29,10.447 29,11" id="Fill-672" fill="#6E828F"></path>
+                            <path d="M28,11 C28.366,11 28.673,11.206 28.847,11.5 C28.935,11.351 29,11.186 29,11 C29,10.447 28.552,10 28,10 C27.448,10 27,10.447 27,11 C27,11.186 27.065,11.351 27.153,11.5 C27.327,11.206 27.634,11 28,11" id="Fill-673" fill="#546670"></path>
+                            <path d="M47,12 C47,10.894 46.104,10 45,10 L45,14 C46.104,14 47,13.105 47,12" id="Fill-674" fill="#8BA6B1"></path>
+                            <path d="M13,12 C13,10.894 12.104,10 11,10 L11,14 C12.104,14 13,13.105 13,12" id="Fill-675" fill="#8BA6B1"></path>
+                            <path d="M45,39 C45,42.515 41.574,45.04 38.229,43.959 C37.8,43.82 37.381,43.669 36.973,43.506 C37.458,44.025 38.182,44.615 38.995,45.211 C40.723,46.339 42.782,47 45,47 C50.736,47 55.446,42.606 55.95,37 L47,37 C45.895,37 45,37.895 45,39" id="Fill-676" fill="#CC9547"></path>
+                            <path d="M11.027,39 C11.027,42.515 7.601,45.04 4.256,43.959 C3.827,43.82 3.408,43.669 3,43.506 C3.486,44.025 4.209,44.615 5.023,45.211 C6.75,46.339 8.81,47 11.027,47 C16.764,47 21.473,42.606 21.977,37 L13.027,37 C11.923,37 11.027,37.895 11.027,39" id="Fill-677" fill="#CC9547"></path>
+                            <path d="M36.192,60 C35.153,58.209 33.216,57 31,57 L28,57 L28,58 C28,58.552 27.552,59 27,59 L20.553,59 C20.276,59.309 20.021,59.639 19.812,60 L36.192,60" id="Fill-678" fill="#182A37"></path>
+                            <path d="M28,62 C28,62.552 27.552,63 27,63 L18,63 C18,63.55 18.45,64 19,64 L37,64 C37.55,64 38,63.55 38,63 L38,61 L29,61 C28.448,61 28,61.448 28,62" id="Fill-679" fill="#182A37"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

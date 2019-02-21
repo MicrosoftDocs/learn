@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Data Science/performing-text-analytics-with-azure-databricks</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-7.7%" y="-13.3%" width="115.4%" height="126.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100175498 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polyline id="path-4" points="51.054808 55.7703487 63 17.1241394 78 37.1241394 91 15.1241394"></polyline>
+        <filter x="-8.8%" y="-5.0%" width="118.1%" height="118.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101590806 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-7.7%" y="-13.3%" width="115.4%" height="126.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100175498 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polyline id="path-7" points="5 80.1241394 22 30.1241394 46 72.1241394 51.0552848 55.7688061"></polyline>
+        <filter x="-7.7%" y="-6.0%" width="115.3%" height="117.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101590806 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-Science" transform="translate(-579.000000, -1129.000000)">
+            <g id="Data-Science/performing-text-analytics-with-azure-databricks" transform="translate(579.000000, 1129.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-9" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(22.000000, 47.000000)">
+                            <path d="M50,0.624139372 L2,0.624139372 C1.1168,0.624139372 0.4,1.34093937 0.4,2.22413937 L0.4,18.2241394 C0.4,19.1073394 1.1168,19.8241394 2,19.8241394 L8.4,19.8241394 L8.4,27.8241394 C8.4,28.4489394 8.7648,29.0161394 9.332,29.2777394 C9.5456,29.3761394 9.7736,29.4241394 10,29.4241394 C10.3752,29.4241394 10.7456,29.2921394 11.0416,29.0393394 L21.7928,19.8241394 L50,19.8241394 C50.884,19.8241394 51.6,19.1073394 51.6,18.2241394 L51.6,2.22413937 C51.6,1.34093937 50.884,0.624139372 50,0.624139372" id="Fill-142" fill="#F7CB64"></path>
+                            <path d="M28.4,10.2241394 C28.4,11.5489394 27.3256,12.6241394 26,12.6241394 C24.6752,12.6241394 23.6,11.5489394 23.6,10.2241394 C23.6,8.89773937 24.6752,7.82413937 26,7.82413937 C27.3256,7.82413937 28.4,8.89773937 28.4,10.2241394" id="Fill-144" fill="#EFB252"></path>
+                            <path d="M36.4,10.2241394 C36.4,11.5489394 35.3256,12.6241394 34,12.6241394 C32.6752,12.6241394 31.6,11.5489394 31.6,10.2241394 C31.6,8.89773937 32.6752,7.82413937 34,7.82413937 C35.3256,7.82413937 36.4,8.89773937 36.4,10.2241394" id="Fill-145" fill="#EFB252"></path>
+                            <path d="M20.4,10.2241394 C20.4,11.5489394 19.3256,12.6241394 18,12.6241394 C16.6752,12.6241394 15.6,11.5489394 15.6,10.2241394 C15.6,8.89773937 16.6752,7.82413937 18,7.82413937 C19.3256,7.82413937 20.4,8.89773937 20.4,10.2241394" id="Fill-146" fill="#EFB252"></path>
+                        </g>
+                    </g>
+                    <g id="Path-5" stroke-linejoin="round" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use stroke="#FFFFFF" stroke-width="4" xlink:href="#path-4"></use>
+                    </g>
+                    <g id="Group-8" filter="url(#filter-6)" mask="url(#mask-2)">
+                        <g transform="translate(22.000000, 25.000000)">
+                            <path d="M50,0.224139372 L2,0.224139372 C1.1168,0.224139372 0.4,0.940939372 0.4,1.82413937 L0.4,17.8241394 C0.4,18.7073394 1.1168,19.4241394 2,19.4241394 L30.208,19.4241394 L40.9592,28.6393394 C41.2552,28.8921394 41.6256,29.0241394 42,29.0241394 C42.2272,29.0241394 42.4552,28.9753394 42.6688,28.8777394 C43.236,28.6161394 43.6,28.0489394 43.6,27.4241394 L43.6,19.4241394 L50,19.4241394 C50.884,19.4241394 51.6,18.7073394 51.6,17.8241394 L51.6,1.82413937 C51.6,0.940939372 50.884,0.224139372 50,0.224139372" id="Fill-143" fill="#EFB252"></path>
+                            <path d="M28.4,9.82413937 C28.4,11.1489394 27.3256,12.2241394 26,12.2241394 C24.6752,12.2241394 23.6,11.1489394 23.6,9.82413937 C23.6,8.49773937 24.6752,7.42413937 26,7.42413937 C27.3256,7.42413937 28.4,8.49773937 28.4,9.82413937" id="Fill-147" fill="#CC9547"></path>
+                            <path d="M36.4,9.82413937 C36.4,11.1489394 35.3256,12.2241394 34,12.2241394 C32.6752,12.2241394 31.6,11.1489394 31.6,9.82413937 C31.6,8.49773937 32.6752,7.42413937 34,7.42413937 C35.3256,7.42413937 36.4,8.49773937 36.4,9.82413937" id="Fill-148" fill="#CC9547"></path>
+                            <path d="M20.4,9.82413937 C20.4,11.1489394 19.3256,12.2241394 18,12.2241394 C16.6752,12.2241394 15.6,11.1489394 15.6,9.82413937 C15.6,8.49773937 16.6752,7.42413937 18,7.42413937 C19.3256,7.42413937 20.4,8.49773937 20.4,9.82413937" id="Fill-149" fill="#CC9547"></path>
+                        </g>
+                    </g>
+                    <g id="Path-5" stroke-linejoin="round" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use stroke="#FFFFFF" stroke-width="4" xlink:href="#path-7"></use>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

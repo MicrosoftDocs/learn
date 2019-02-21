@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.performing-text-analytics-with-azure-databricks
+metadata:
+  title: Performing text analytics with Azure Databricks
+  description: Investigate techniques for developing machine learning models used in text analytics.
+  ms.date: 02/20/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Performing text analytics with Azure Databricks
+summary: In this module, you will investigate techniques for developing machine learning models used in text analytics. You will do this by applying two different text analytics scenarios demonstrating some of its most important aspects - movie classification and claim classification.
+abstract: | 
+  In this module, you will:
+  - Identify the different techniques for performing text analytics using Azure Databricks.
+  - Train and evaluate multiple machine learning models for text classification. 
+  - Create a text classifier using deep learning. 
+prerequisites: | 
+  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free).
+  - If you are a Visual Studio Active subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
+  - If you are not a Visual Studio subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account (includes 1 year of free services, $200 for 1st month).
+iconUrl: /learn/achievements/performing-text-analytics-with-azure-databricks.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products:
+- azure-databricks
+units:
+  - learn.performing-text-analytics-with-azure-databricks.1-introduction
+  - learn.performing-text-analytics-with-azure-databricks.2-text-analytics-with-databricks
+  - learn.performing-text-analytics-with-azure-databricks.3-complete-labs-in-azure-databricks
+  - learn.performing-text-analytics-with-azure-databricks.4-knowledge-check
+  - learn.performing-text-analytics-with-azure-databricks.5-cleanup-the-environment
+badge:
+  uid: learn.performing-text-analytics-with-azure-databricks.badge
