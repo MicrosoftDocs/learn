@@ -1,8 +1,8 @@
 
 Let's now use some advanced ETL techniques in the Databricks workspace. 
 
-![NOTE]
-To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
+> ![NOTE]
+> To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
 
 ## Clone the Databricks archive
 

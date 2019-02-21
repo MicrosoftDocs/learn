@@ -8,8 +8,8 @@ If you plan on completing other Azure Databricks modules, don't delete your Azur
 
 ### Delete the Azure Databricks instance
 
-Navigate to the Azure portal.
-Navigate to the Resource Group that contains your Azure Databricks instance.
-Select **Delete resource group**.
-Type the name of the resource group in the confirmation text box.
-Select Delete.
+1. Navigate to the Azure portal.
+2. Navigate to the Resource Group that contains your Azure Databricks instance.
+3. Select **Delete resource group**.
+4. Type the name of the resource group in the confirmation text box.
+5. Select **Delete**.

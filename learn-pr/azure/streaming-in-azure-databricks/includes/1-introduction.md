@@ -6,7 +6,3 @@ In this module, you will:
 
 - Use Spark Structured Streaming, Azure Event Hubs, and Databricks Delta to read from and write to streams.
 - Process streaming data using Azure Databricks.
-
-## Prerequisites
-
-- Azure Subscription: If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free)

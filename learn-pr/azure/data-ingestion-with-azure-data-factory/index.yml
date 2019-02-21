@@ -8,8 +8,8 @@ metadata:
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Read and write data using Azure Databricks
-summary: In this tutorial, you use Azure Databricks to work with multiple data sources, combining inputs from files and data stores such as Azure SQL Database, and transforming and storing that data for advanced analytics.
+title: Data ingestion with Azure data factory
+summary: In this module, you use Azure Databricks to work with multiple data sources, combining inputs from files and data stores such as Azure SQL Database, and transforming and storing that data for advanced analytics.
 abstract:  | 
   In this module, you will:
   - Use Azure Databricks to work with multiple data sources 

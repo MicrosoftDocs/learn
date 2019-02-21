@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create data visualizations using Azure Databricks and Power BI
-summary: In this tutorial, you use Azure Databricks to create basic to advanced visualizations using built-in charts and third party libraries such as Matplotlib. Connect your Azure Databricks data to Power BI to create business intelligence dashboards that can be shared with others.
+summary: In this module, you use Azure Databricks to create basic to advanced visualizations using built-in charts and third party libraries such as Matplotlib. Connect your Azure Databricks data to Power BI to create business intelligence dashboards that can be shared with others.
 abstract:  | 
   In this module, you will:
   - Visualize query results using Azure Databrick's built-in charts

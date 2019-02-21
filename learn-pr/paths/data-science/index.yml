@@ -11,7 +11,10 @@ metadata:
   ms.prod: learning-azure
 title: Data science
 summary: Learn how to use Azure Databricks to perform predictive and analytical Data Science techniques, such as exploratory data analysis, model training, text analytics and deep learning.
-prerequisites: None 
+prerequisites: | 
+  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free).
+  - If you are a Visual Studio Active subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
+  - If you are not a Visual Studio subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account (includes 1 year of free services, $200 for 1st month).
 iconUrl: /learn/achievements/data-science.svg
 levels:
 - intermediate

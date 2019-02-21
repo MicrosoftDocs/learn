@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Exploratory data analysis in Databricks
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/2-eda-in-databricks.md)]

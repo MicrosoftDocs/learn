@@ -9,11 +9,10 @@ metadata:
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: 'Knowledge Check'
   questions:
     - content: 'What is the DataFrame method call to create temporary view?'
       choices:
@@ -48,25 +47,3 @@ quiz:
         - content: to get accurate results
           isCorrect: false
           explanation: Incorrect, even if you split the calls into 3 lines, the result is accurate, it just wastes unnessessary memory allocations.
-    - content: 'What is the DataFrame equivalent of the SQL statement SELECT count(*) AS total?'
-      choices:
-        - content: .agg(count("*").alias("total"))
-          explanation: This is the correct syntax in DataFrames to produce the same result as the SQL statement above.
-          isCorrect: true
-        - content: .select(count("*").alias("total"))
-          isCorrect: false
-          explanation: Incorrect syntax
-        - content: .select(agg("*").alias("total"))
-          isCorrect: false
-          explanation: Incorrect syntax
-    - content: 'What is the Python syntax for defining a DataFrame in Spark from an existing parquet file in DBFS??'
-      choices:
-        - content: IPGeocodeDF = spark.read.parquet("dbfs:/mnt/training/ip-geocode.parquet")
-          explanation: This is the correct syntax to accommplish the task .
-          isCorrect: true
-        - content: IPGeocodeDF = parquet.read("dbfs:/mnt/training/ip-geocode.parquet")
-          isCorrect: false
-          explanation: Incorrect syntax
-        - content: IPGeocodeDF = spark.parquet.read("dbfs:/mnt/training/ip-geocode.parquet")
-          isCorrect: false
-          explanation: Incorrect syntax
