@@ -38,8 +38,10 @@ The notebooks are backed by clusters, or networked computers that work together 
 1. Name your notebook First Notebook.
 1. Set the language to Python.
 1. Select the cluster to which to attach this Notebook.
+
  > [!NOTE]
-    > This option displays only when a cluster is currently running. You can still create your notebook and attach it to a cluster later.
+ > This option displays only when a cluster is currently running. You can still create your notebook and attach it to a cluster later.
+
 1. Click **Create**.
 
 Now that you've created your notebook, let's use it to run some code.

@@ -1,7 +1,7 @@
 Now it's time to perform some analytics on a sample data set using Spark's Structured Streaming and the Azure Event Hubs you created.  
 
-![NOTE]
-To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
+> ![NOTE]
+> To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
 
 ## Clone the Databricks archive
 

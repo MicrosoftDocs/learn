@@ -1,7 +1,7 @@
 Now it's time to switch to the Databricks workspace and get hands-on with some of the basic transformation techniques. 
 
-![NOTE]
-To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
+> ![NOTE]
+> To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
 
 ## Clone the Databricks archive
 

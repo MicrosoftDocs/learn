@@ -9,11 +9,10 @@ metadata:
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
-  title: 'Knowledge Check'
   questions:
     - content: 'How does Spark connect to databases like MySQL, Hive and other data stores?'
       choices:
