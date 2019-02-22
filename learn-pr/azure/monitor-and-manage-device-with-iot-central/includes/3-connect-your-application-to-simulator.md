@@ -48,7 +48,7 @@ The following steps show you how to create a client application that implements 
 1. Execute the following command in the Cloud Shell to download the DPS connection string utility from GitHub: 
 
     ```azurecli
-    wget https://github.com/Azure/dps-keygen/blob/master/bin/linux/dps_cstr?raw=true -O dps_cstr 
+    wget https://github.com/Azure/dps-keygen/blob/ota/bin/linux/dps_cstr?raw=true -O dps_cstr
     ```
 
     > [!NOTE]
