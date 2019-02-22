@@ -1,7 +1,7 @@
 You learned about the data reading and writing capabilities of Databricks. Now let's use some of the Databricks functions in the actual Databricks workspace.
 
-![NOTE]
-To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
+> ![NOTE]
+> To complete the following procedures you must already have deployed your Azure Databricks workspace in your Azure portal.
 
 ## Clone the Databricks archive
 
@@ -32,6 +32,7 @@ To complete the labs, continue working within your Azure Databricks workspace an
 - **10-Cosmos-DB-Connect-Using-Key-Vault** - Here you'll connect to a Cosmos DB using your Azure Cosmos DB username and password that you previously created and securely stored in the Key Vault-backed secret scope.
 - **Exploratory-Data-Analysis** - This notebook is located in the `Optional` subfolder, and includes a sample project for you explore later on in your own time.
 
-> Note: You'll find corresponding notebooks within the **Solutions** subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
+> ![NOTE]
+> You'll find corresponding notebooks within the **Solutions** subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
 
 After you've completed the notebooks, return to this screen and continue to the next step.

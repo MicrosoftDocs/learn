@@ -10,4 +10,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free)
+- Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free)

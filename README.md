@@ -52,6 +52,6 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## Questions
 
-View the [Microsoft Learn FAQs](https://review.docs.microsoft.com/en-us/learn-docs/docs/microsoftlearn-faq?branch=master).
+View the [Microsoft Learn FAQs](https://review.docs.microsoft.com/learn-docs/docs/microsoftlearn-faq?branch=master).
 
 For questions related to repo and build issues, contact: [learn-repo-managers@microsoft.com](mailto:learn-repo-managers@microsoft.com)

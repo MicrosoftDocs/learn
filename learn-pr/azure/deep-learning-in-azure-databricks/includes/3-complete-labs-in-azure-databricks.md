@@ -11,7 +11,7 @@ To do this, clone the lab archives that provide sample notebooks with detailed s
 1. Within the Workspace, using the command bar on the left, select **Workspace**, **Users**, and select your username (the entry with house icon).
 1. In the blade that appears, select the downwards pointing chevron next to your name, and select **Import**.
 
-![A screenshot showing the menu option to import the archive](../media/import-archive.png)
+    ![A screenshot showing the menu option to import the archive](../media/import-archive.png)
 
 1. On the Import Notebooks dialog, select URL and paste in the following URL:
     ```
