@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-logic-apps.4-knowledge-check
+uid: learn.azure-intro-to-logic-apps.knowledge-check
 title: Knowledge check
 
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 3/1/2019
+  ms.date: 4/1/2019
   author: marktap
   ms.author: matapar
   ms.topic: interactive-tutorial

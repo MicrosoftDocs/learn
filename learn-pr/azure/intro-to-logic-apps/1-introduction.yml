@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-logic-apps.1-introduction
+uid: learn.azure-intro-to-logic-apps.introduction
 title: Introduction
 
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 2/1/2019
+  ms.date: 4/1/2019
   author: marktap
   ms.author: matapar
   ms.topic: interactive-tutorial

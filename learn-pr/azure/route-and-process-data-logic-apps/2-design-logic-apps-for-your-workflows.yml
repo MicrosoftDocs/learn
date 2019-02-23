@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.logic-apps-route-and-process-data.2-design-logic-apps-for-your-workflows
+uid: learn.azure.route-and-process-data-logic-apps.design-logic-apps-for-your-workflows
 title: Design Logic Apps for your workflows
 
 metadata:
   title: Design Logic Apps for your workflows
   description: Design Logic Apps for your workflows
-  ms.date: 2/1/2019
+  ms.date: 4/1/2019
   author: marktap
   ms.author: matapar
   ms.topic: interactive-tutorial

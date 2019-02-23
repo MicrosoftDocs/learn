@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.intro-to-logic-apps
+uid: learn.azure-intro-to-logic-apps
 metadata:
   title: "Introduction to Logic Apps"
   description: "Introduction to Logic Apps"
-  ms.date: 3/1/2019
+  ms.date: 4/1/2019
   author: marktap
   ms.author: matapar
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Basic knowledge of REST services and APIs
 iconUrl: http://via.placeholder.com/120x120
 badge:
-  uid: learn.intro-to-logic-apps.badge
+  uid: learn.azure-intro-to-logic-apps.badge
 levels: 
 - beginner
 roles: 
@@ -32,8 +32,8 @@ products:
 - azure-portal
 # azure-logic-apps
 units:
-- learn.intro-to-logic-apps.1-introduction
-- learn.intro-to-logic-apps.2-when-to-use-logic-apps
-- learn.intro-to-logic-apps.3-how-logic-apps-work
-- learn.intro-to-logic-apps.4-knowledge-check
-- learn.intro-to-logic-apps.5-summary
+- learn.azure-intro-to-logic-apps.introduction
+- learn.azure-intro-to-logic-apps.when-to-use-logic-apps
+- learn.azure-intro-to-logic-apps.how-logic-apps-work
+- learn.azure-intro-to-logic-apps.knowledge-check
+- learn.azure-intro-to-logic-apps.summary
