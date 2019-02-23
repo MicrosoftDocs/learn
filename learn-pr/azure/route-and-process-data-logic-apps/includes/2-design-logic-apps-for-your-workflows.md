@@ -2,7 +2,9 @@ Implementing business processes is difficult because you need to make diverse se
 
 Azure Logic Apps gives you pre-built components to connect to hundreds of services. You put the pieces together in any combination you need. For example, in the shoe-company scenario we want to monitor social media reaction to our new product. We'll build a Logic App to integrate Twitter, Azure Cognitive Services, SQL Server, and Outlook email.
 
-In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the pre-built components in Azure Logic Apps. Finally, we'll assemble the parts into an app using the Logic Apps Designer.
+In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the pre-built components in Azure Logic Apps. Finally, we'll assemble the parts into an app using the Logic Apps Designer. the following illustration shows an overview of the app-development process.
+
+![An illustration showing the typical sequence of activities used to create a Logic App. The process has five steps. First, you plan your business process. Second, you identify the type of each step in your process. Third, you decide which pre-built component will implement each step. Fourth, you use the design tool to build your workflow from the components. Fifth, you save your design. You app will now run automatically in the cloud.](../media-drafts/2-app-design-process.png)
 
 ## Plan your business process
 
@@ -43,53 +45,3 @@ The Logic Apps Designer is a graphical tool for creating your workflows. It lets
 ![A screenshot showing the Logic Apps Designer containing the completed social-media monitor app. The app begins with the Twitter trigger. It then has three actions: detect sentiment, insert row, and send email. A control action determines whether the insert row or send email action executes based on the score of the detect sentiment action.](../media-drafts/2-social-media-app-designer-view.png)
 
 When you select the "Save" button, your app will be live and will run automatically whenever the trigger activates.
-
-To summarize, the steps are:
-
-1. Create a flowchart to describe your business process
-1. Identify the type of each step (trigger, action, or control action)
-1. Map each step to a corresponding Logic Apps component
-1. Use the Logic Apps Designer to assemble the components into your app
-
-
----
-
-## How to build Logic Apps from triggers and actions
-
-Triggers and actions are the building blocks of Logic Apps. An app must begin with a trigger. After the trigger, you include as many actions as you need to implement the tasks in your business process. The following illustration shows the trigger and actions used in the social-media monitor app.
-
-![An illustration of the trigger and actions in the social-media monitor Logic App. The illustration shows the use of the "When a new tweet is posted" Twitter trigger to launch the Logic App. The trigger is followed by three actions: "Detect sentiment" from the Text Analytics service, "Insert row" from SQL Server, and "Send email" from Outlook.com.](../media-drafts/2-social-media-connectors.png)
-
-## How do triggers and actions work together?
-
-Triggers and actions are essentially function calls to an underlying API operation. Each operation has inputs and outputs. For example, the "When a new tweet is posted" Twitter trigger takes in a search string and returns the tweets that contain that string. The "Detect sentiment" action takes a string as input and returns a floating-point number. The following illustration shows these two operations.
-
-![An illustration of the input and output of the "When a new tweet is posted" trigger and the "Detect sentiment" action.](../media-drafts/2-inputs-and-outputs.png)
-
-Logic Apps automatically places the return values into special variables that are available throughout the rest of the operations. These variables let you pass the results from one operation as input to the next operation. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all of the following steps.
-
-![An illustration showing how the results of all preceding operations are available to subsequent operations.](../media-drafts/2-data-flow.png)
-
-## What are control actions?
-
-Most business processes need to do different actions based on the data being processed. For example, an expense report might be routed to a different manager based on the amount. In the social-media monitor app, we need to branch based on the sentiment score of the tweet. The following illustration shows the flowchart for the social-media monitor app with the control logic highlighted.
-
-![An illustration showing how the social-media monitor app branches based on the sentiment of the tweet.](../media-drafts/2-social-media-monitor-control-logic.png)
-
-*Control actions* are special actions built-in to Logic Apps that provides these control constructs:
-
-* *Condition* statements controlled by a Boolean expression
-* *Switch* statements
-* *For each* and *Until* loops
-* Unconditional *Branch* instructions.
-
-The following illustration shows the use of a *Condition* statement in the social-media monitoring application.
-
-![An illustration showing the Logic Apps control action used to branch the social-media monitor app based on the sentiment of the tweet.](../media-drafts/2-social-media-monitor-control-action.png)
-
-## How to create a Logic App for your business process
-
-The first step is to analyze your business process. Ideally, you'll identify the tasks and create a flowchart to capture the required order of the tasks. The following illustration shows the flowchart for the social-media monitor process that we saw earlier.
-
-![An illustration showing how the fictional shoe company would process tweets written about their product. A link to the posting is saved in a database and the content analyzed to determine if the article was positive or negative.](../media-drafts/2-social-media-monitor-workflow.png)
-
