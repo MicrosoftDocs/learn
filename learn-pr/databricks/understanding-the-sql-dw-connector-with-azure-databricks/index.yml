@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.understanding-the-sql-dw-connector-with-azure-databricks
 metadata:
-  title: Understanding the SQL DW connector with Azure Databricks
+  title: Access SQL Datawarehouse instances with Azure Databricks - Learn
   description: Learn how to use the Azure SQL Data Warehouse (SQL DW) connector with Azure Databricks to transfer large volumes of data efficiently between a Databricks cluster and a SQL DW instance.
   ms.date: 02/20/2019
   author: barlanmsft
@@ -9,16 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan
-title: Understanding the SQL DW connector with Azure Databricks
-summary: In this module, you access Azure SQL Data Warehouse (SQL DW) from Azure Databricks using the SQL Data Warehouse connector. This allows you to use Apache Spark with Azure Blob storage and PolyBase in SQL DW to transfer large volumes of data efficiently between a Databricks cluster and a SQL DW instance.
+title: Access SQL Datawarehouse instances with Azure Databricks
+summary: Learn how to access Azure SQL Data Warehouse (SQL DW) from Azure Databricks using the SQL Data Warehouse connector. This allows you to use Apache Spark with Azure Blob storage and PolyBase in SQL DW to transfer large volumes of data efficiently between a Databricks cluster and a SQL DW instance.
+cardDescription: Learn how to transfer large volumes of data between Azure Databricks and Azure SQL Data Warehouse
 abstract:  | 
   In this module, you will:
-  - Learn to access Azure SQL Data Warehouse (SQL DW) from Azure Databricks using the SQL Data Warehouse connector 
+  - Access Azure SQL Data Warehouse (SQL DW) from Azure Databricks using the SQL Data Warehouse connector 
   - Use Apache Spark with Azure Blob storage and PolyBase in SQL DW to transfer large volumes of data efficiently between a Databricks cluster and a SQL DW instance
-prerequisites: | 
-  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free)
-  - If you are a Visual Studio Active Subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
-  - If you are not a Visual Studio Subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account (includes 1 year of free services, $200 for 1st month).
+prerequisites:  | 
+  [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/understanding-the-sql-dw-connector-with-azure-databricks.svg
 levels:
 - intermediate

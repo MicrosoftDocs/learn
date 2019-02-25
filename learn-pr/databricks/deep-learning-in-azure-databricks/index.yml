@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.deep-learning-in-azure-databricks
 metadata:
-  title: Deep learning in Azure Databricks
+  title: Deep learning in Azure Databricks - Learn
   description: Investigate techniques for developing machine learning models based on neural nets.
   ms.date: 02/20/2019
   author: barlanmsft
@@ -11,15 +11,14 @@ metadata:
   #ms.learn-contact: barlan
 title: Deep learning in Azure Databricks
 summary: In this module, you will investigate techniques for developing machine learning models based on neural nets. The main purpose of this module is to build some intuition and understanding for what deep learning is all about.
+cardDescription: Investigate techniques for developing machine learning models based on neural nets.
 abstract: | 
   In this module, you will:
-  - Identify how neural networks work and use cases for deep learning algorighms.
+  - Identify how neural networks work and use cases for deep learning algorithms.
   - Train and evaluate a simple classifier built using Tensorflow. 
   - Create an image classifier using deep learning. 
-prerequisites: | 
-  - Azure Subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free).
-  - If you are a Visual Studio Active subscriber, you are entitled for a $50-$150 credit per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
-  - If you are not a Visual Studio subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account (includes 1 year of free services, $200 for 1st month).
+prerequisites:  | 
+  [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/deep-learning-in-azure-databricks.svg
 levels:
   - intermediate
