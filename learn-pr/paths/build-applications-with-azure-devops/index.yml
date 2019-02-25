@@ -44,4 +44,4 @@ modules:
 - learn.manage-build-dependencies
 - learn.manage-build-infrastructure
 trophy:
-  uid: learn.design-a-devops-practice.trophy
+  uid: learn.build-applications-with-azure-devops.trophy
