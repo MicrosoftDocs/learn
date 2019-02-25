@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.test-applications-with-azure-test-plans
+metadata:
+  title: Test your applications with Azure Test Plans - Learn
+  description: TBD.
+  ms.date: 1/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Test your applications with Azure Test Plans
+summary: TBD.
+abstract: |
+  In this module, you will:
+  - TBD
+  - TBD
+  - TBD
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+#TODO: Are there specific roles we should be targetting?
+- administrator
+- developer
+- solution-architect
+products:
+#TODO: Create appropriate product labels
+#- azure-devops
+units:
+- learn.test-applications-with-azure-test-plans.1-introduction
+badge:
+  uid: learn.test-applications-with-azure-test-plans.badge
