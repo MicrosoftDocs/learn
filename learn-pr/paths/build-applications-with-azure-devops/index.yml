@@ -32,6 +32,7 @@ roles:
 - solution-architect
 products:
 #TODO: Create appropriate product labels
+- azure
 #- azure-devops
 modules:
 - learn.build-applications-with-azure-pipelines

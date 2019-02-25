@@ -32,6 +32,7 @@ roles:
 - solution-architect
 products:
 #TODO: Create appropriate product labels
+- azure
 #- azure-devops
 modules:
 - learn.assess-your-development-process
