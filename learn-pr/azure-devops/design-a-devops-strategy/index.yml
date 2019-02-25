@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.design-a-devops-strategy
+metadata:
+  title: Design a DevOps strategy - Learn
+  description: Use the DevOps Self-Assessment to design a DevOps strategy that enables your team to deliver value more quickly.
+  ms.date: 1/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Design a DevOps strategy
+summary: Use the DevOps Self-Assessment to design a DevOps strategy that enables your team to deliver value more quickly.
+abstract: |
+  In this module, you will:
+  - Use the DevOps Self-Assessment to recommend process improvements along five key areas &ndash; process, technology and automation, culture, measurement, and outcomes
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+#TODO: Are there specific roles we should be targetting?
+- administrator
+- developer
+- solution-architect
+products:
+#TODO: Create appropriate product labels
+#- azure-devops
+units:
+- learn.design-a-devops-strategy.1-introduction
+badge:
+  uid: learn.design-a-devops-strategy.badge

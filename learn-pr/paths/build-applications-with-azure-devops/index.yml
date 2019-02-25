@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.build-applications-with-azure-devops
+metadata:
+  title: Build applications with Azure DevOps learning path
+  description: TBD
+  brand: azure
+  ms.date: 1/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  #ms.learn-contact: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build applications with Azure DevOps
+summary: |
+  TBD.
+
+  In this learning path, you will:
+    - TBD
+    - TBD
+    - TBD
+
+cardDescription: TBD.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+# TODO
+- beginner
+roles:
+#TODO: Are there specific roles we should be targetting?
+- administrator
+- developer
+- solution-architect
+products:
+#TODO: Create appropriate product labels
+#- azure-devops
+modules:
+- learn.build-applications-with-azure-pipelines
+- learn.continuously-build-applications-with-azure-pipelines
+- learn.test-applications-with-azure-test-plans
+- learn.manage-app-config
+- learn.secure-development-and-build-processes
+- learn.secure-build-dependencies
+- learn.manage-build-dependencies
+- learn.manage-build-infrastructure
+trophy:
+  uid: learn.design-a-devops-practice.trophy

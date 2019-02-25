@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.design-a-devops-practice
+metadata:
+  title: Design a DevOps practice learning path
+  description: TBD
+  brand: azure
+  ms.date: 1/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  #ms.learn-contact: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a DevOps practice
+summary: |
+  TBD.
+
+  In this learning path, you will:
+    - TBD
+    - TBD
+    - TBD
+
+cardDescription: TBD.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+# TODO
+- beginner
+roles:
+#TODO: Are there specific roles we should be targetting?
+- administrator
+- developer
+- solution-architect
+products:
+#TODO: Create appropriate product labels
+#- azure-devops
+modules:
+- learn.assess-your-development-process
+- learn.design-a-devops-strategy
+- learn.get-started-with-devops
+- learn.choose-an-agile-approach
+trophy:
+  uid: learn.design-a-devops-practice.trophy
