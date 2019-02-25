@@ -27,6 +27,7 @@ roles:
 - solution-architect
 products:
 #TODO: Create appropriate product labels
+- azure
 #- azure-devops
 units:
 - learn.manage-build-infrastructure.1-introduction

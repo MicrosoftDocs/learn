@@ -27,6 +27,7 @@ roles:
 - solution-architect
 products:
 #TODO: Create appropriate product labels
+- azure
 #- azure-devops
 units:
 - learn.test-applications-with-azure-test-plans.1-introduction
