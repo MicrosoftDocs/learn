@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.data-ai.recognize-voices-with-speaker-recognition
+metadata:
+  title: Recognize specific voices with the Speaker Recognition API in Azure Cognitive Services - Learn
+  description: Learn how to use the Speaker Recognition API to identify specific people through their voice - Learn
+  ms.date: 1/11/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Recognize specific voices with the Speaker Recognition API in Azure Cognitive Services
+summary: Learn how to use the Speaker Recognition API to identify specific people through their voice.
+abstract: |
+  In this module you will:
+  - Learn what speaker recognition is all about
+  - Gain an understanding of concepts related to speaker recognition
+  - Explore the Speaker Recognition API
+prerequisites: None
+#todo: replace with real badge
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+- ai-engineer
+products:
+- azure
+- azure-sdks
+- azure-cognitive-services
+units:
+- learn.data-ai.recognize-voices-with-speaker-recognition.introduction
+- learn.data-ai.recognize-voices-with-speaker-recognition.overview-of-speaker-recognition
+- learn.data-ai.recognize-voices-with-speaker-recognition.exercise-create-a-speaker-recognition-api-subscription
+- learn.data-ai.recognize-voices-with-speaker-recognition.overview-of-speaker-verification
+- learn.data-ai.recognize-voices-with-speaker-recognition.manage-speaker-verification-profiles
+- learn.data-ai.recognize-voices-with-speaker-recognition.overview-of-speaker-identification
+- learn.data-ai.recognize-voices-with-speaker-recognition.manage-speaker-identification-profiles
+- learn.data-ai.recognize-voices-with-speaker-recognition.implement-speaker-recognition-and-identification
+- learn.data-ai.recognize-voices-with-speaker-recognition.knowledge-check
+- learn.data-ai.recognize-voices-with-speaker-recognition.summary
+badge:
+  uid: learn.data-ai.recognize-voices-with-speaker-recognition.badge

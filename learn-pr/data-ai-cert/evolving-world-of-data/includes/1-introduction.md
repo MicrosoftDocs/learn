@@ -4,7 +4,7 @@ It's essential for anyone working with data to understand how the data landscape
 
 ## Learning objectives
 
-In this module, you will:
+In this module you will:
 
 - Learn the key factors driving changes in data generation, roles, and technologies
 - Compare the differences between on-premises data technologies and cloud data technologies

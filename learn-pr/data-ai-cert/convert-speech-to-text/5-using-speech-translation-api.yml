@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.convert-speech-to-text.using-speech-translation-api
+title: Using the API to Perform Speech Translation
+metadata:
+  title: Using the API to Perform Speech Translation
+  description: Gain an understanding of how your application can make use of the API to Perform Speech Translation
+  ms.date: 01/9/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-using-speech-translation-api.md)]

@@ -4,7 +4,7 @@ Assume you are a Data Engineer for Contoso. Your on-premises business intelligen
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - List the types of data warehousing solutions
 - Explain Azure SQL Data Warehouse

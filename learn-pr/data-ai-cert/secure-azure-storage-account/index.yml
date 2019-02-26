@@ -11,7 +11,7 @@ metadata:
 title: Secure your Azure Storage account
 summary: Learn how Azure Storage provides a multi-layered security model to protect your data with access keys, secure networks, and proactive monitoring with Advanced Threat Detection - Learn
 abstract: | 
-  In this module, you will:
+  In this module you will:
   - Explore the Azure Data Lake enterprise-class security features
   - Understand storage account keys
   - Understand shared access signatures
