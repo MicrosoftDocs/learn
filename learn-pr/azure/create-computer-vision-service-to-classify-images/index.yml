@@ -24,9 +24,11 @@ levels:
 - beginner
 roles:
 - developer
+- ai-engineer
 products:
 - azure
 - azure-clis
+- azure-cognitive-services
 units: 
 - learn.create-computer-vision-service.1-intro
 - learn.create-computer-vision-service.2-create-service

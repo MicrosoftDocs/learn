@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Process and classify images with the Azure Cognitive Vision Services/identify-faces-and-expressions-with-the-computer-vision-api-in-azure-cognitive-services</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.2%" y="-6.1%" width="112.5%" height="112.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0995244565 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50.0000638%" y1="98.4140327%" x2="50.0000638%" y2="0.39084701%" id="linearGradient-4">
+            <stop stop-color="#84522D" offset="0%"></stop>
+            <stop stop-color="#CB9B74" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000638%" y1="98.4140327%" x2="50.0000638%" y2="0.39084701%" id="linearGradient-5">
+            <stop stop-color="#84522D" offset="0%"></stop>
+            <stop stop-color="#CB9B74" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000638%" y1="98.4140327%" x2="50.0000638%" y2="0.39084701%" id="linearGradient-6">
+            <stop stop-color="#84522D" offset="0%"></stop>
+            <stop stop-color="#CB9B74" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="25" y="30" width="46" height="46"></rect>
+        <filter x="-2.2%" y="-2.2%" width="104.3%" height="108.7%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Process-and-classify-images-with-the-Azure-Cognitive-Vision-Services" transform="translate(-50.000000, -260.000000)">
+            <g id="Process-and-classify-images-with-the-Azure-Cognitive-Vision-Services/identify-faces-and-expressions-with-the-computer-vision-api-in-azure-cognitive-services" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="facial-identification" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(17.000000, 15.000000)">
+                            <g id="Group-3" transform="translate(0.000000, 23.023168)">
+                                <path d="M0.00941870826,5.41650772 C0.00941870826,8.40013722 2.44135861,10.8188908 5.44125399,10.8188908 L5.44125399,10.8188908 C8.44118615,10.8188908 10.8730893,8.40013722 10.8730893,5.41650772 L10.8730893,5.41650772 C10.8730893,2.43284162 8.44118615,0.0141246427 5.44125399,0.0141246427 L5.44125399,0.0141246427 C2.44135861,0.0141246427 0.00941870826,2.43284162 0.00941870826,5.41650772" id="Fill-1" fill="url(#linearGradient-4)"></path>
+                            </g>
+                            <g id="Group-6" transform="translate(52.060438, 23.023168)">
+                                <path d="M0.0168138659,5.41650772 C0.0168138659,8.40013722 2.44868019,10.8188908 5.44864915,10.8188908 L5.44864915,10.8188908 C8.44854452,10.8188908 10.8804108,8.40013722 10.8804108,5.41650772 L10.8804108,5.41650772 C10.8804108,2.43284162 8.44854452,0.0141246427 5.44864915,0.0141246427 L5.44864915,0.0141246427 C2.44868019,0.0141246427 0.0168138659,2.43284162 0.0168138659,5.41650772" id="Fill-4" fill="url(#linearGradient-5)"></path>
+                            </g>
+                            <g id="Group-9" transform="translate(5.518774, 14.972853)">
+                                <path d="M4.5753215,0.030591195 C2.06166694,0.030591195 0.0239882726,2.20604231 0.0239882726,4.88965123 L0.0239882726,4.88965123 L0.0239882726,21.0172853 C0.0239882726,36.3095529 11.5295291,48.9119543 25.8532504,48.9765031 L25.8532504,48.9765031 C40.1948158,49.0411618 51.9058022,36.6483979 51.9058022,21.3518491 L51.9058022,21.3518491 L51.9058022,4.88965123 C51.9058022,2.20604231 49.8680867,0.030591195 47.354469,0.030591195 L47.354469,0.030591195 L4.5753215,0.030591195 Z" id="Fill-7" fill="url(#linearGradient-6)"></path>
+                            </g>
+                            <g id="Group-24" transform="translate(5.518774, 0.006587)">
+                                <path d="M2.36588754,35.3630262 L2.36588754,35.3630262 C1.06853406,35.3630262 0.016876412,34.3170342 0.016876412,33.0267517 L0.016876412,22.4087163 C0.016876412,21.1183973 1.06853406,20.0724053 2.36588754,20.0724053 L2.36588754,20.0724053 C3.66320422,20.0724053 4.71489866,21.1183973 4.71489866,22.4087163 L4.71489866,33.0267517 C4.71489866,34.3170342 3.66320422,35.3630262 2.36588754,35.3630262" id="Fill-10" fill="#B49278"></path>
+                                <path d="M49.552468,35.3630262 L49.552468,35.3630262 C48.2551513,35.3630262 47.2034569,34.3170342 47.2034569,33.0267517 L47.2034569,22.4087163 C47.2034569,21.1183973 48.2551513,20.0724053 49.552468,20.0724053 C50.8497847,20.0724053 51.9014791,21.1183973 51.9014791,22.4087163 L51.9014791,33.0267517 C51.9014791,34.3170342 50.8497847,35.3630262 49.552468,35.3630262" id="Fill-12" fill="#B49278"></path>
+                                <path d="M51.8955741,13.506931 L51.8955741,32.198883 C51.8955741,33.4830911 50.8321062,34.5339133 49.540897,34.5339133 C48.2494302,34.5339133 47.1862199,33.4830911 47.1862199,32.198883 L47.1862199,18.1596103 C47.0390526,18.1769551 41.3469519,20.4367149 25.9573345,20.4367149 C10.5677171,20.4367149 4.72844909,18.1596103 4.72844909,18.1596103 L4.72844909,32.198883 C4.72844909,33.4830911 3.66509164,34.5339133 2.37366165,34.5339133 C1.08245241,34.5339133 0.0190949593,33.4830911 0.0190949593,32.198883 L0.0190949593,13.506931 C0.0190949593,10.6498744 2.37447107,8.30090246 5.24706671,8.30090246 L6.10685497,8.30090246 C7.84361326,6.9103936 10.0542135,6.07499051 12.4610614,6.07499051 C12.5830631,6.07499051 12.7045865,6.08004025 12.8255581,6.08432156 C15.7976756,2.3807012 20.3754989,0.00889559748 25.510461,0.00889559748 C30.6457173,0.00889559748 35.2235038,2.38278696 38.1956582,6.08640732 C38.3166297,6.08216261 38.4381531,6.07466118 38.560118,6.07466118 C40.9667452,6.07466118 43.1773454,6.9103936 44.9143245,8.30090246 L46.6826502,8.30090246 C49.5552826,8.30090246 51.8955741,10.6498744 51.8955741,13.506931" id="Fill-14" fill="#152F3D"></path>
+                                <path d="M4.72844909,30.2645388 L4.72844909,32.198883 C4.72844909,33.4830911 3.66498127,34.5339133 2.37351448,34.5339133 C1.08230524,34.5339133 0.0190949593,33.4830911 0.0190949593,32.198883 L0.0190949593,30.2645388 C0.0190949593,31.5487469 1.08230524,32.5996057 2.37351448,32.5996057 C3.66498127,32.5996057 4.72844909,31.5487469 4.72844909,30.2645388" id="Fill-16" fill="#07222A"></path>
+                                <path d="M47.1862199,18.1596286 C47.0390526,18.1769734 41.3469151,20.43666 25.9573345,20.43666 C10.5677539,20.43666 4.72844909,18.1596286 4.72844909,18.1596286 L4.72844909,16.225321 C4.72844909,16.225321 10.5677539,18.5022792 25.9573345,18.5022792 C41.3469151,18.5022792 47.0390526,16.2426292 47.1862199,16.225321 L47.1862199,18.1596286 Z" id="Fill-18" fill="#07222A"></path>
+                                <path d="M51.8955741,30.2645388 L51.8955741,32.198883 C51.8955741,33.4830911 50.8321062,34.5339133 49.540897,34.5339133 C48.2494302,34.5339133 47.1862199,33.4830911 47.1862199,32.198883 L47.1862199,30.2645388 C47.1862199,31.5487469 48.2494302,32.5996057 49.540897,32.5996057 C50.8321062,32.5996057 51.8955741,31.5487469 51.8955741,30.2645388" id="Fill-20" fill="#07222A"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Rectangle" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <rect stroke="#9EE5F9" stroke-width="2" stroke-linejoin="square" x="26" y="31" width="44" height="44"></rect>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

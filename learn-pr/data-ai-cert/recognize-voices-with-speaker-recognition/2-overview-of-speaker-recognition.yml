@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.recognize-voices-with-speaker-recognition.overview-of-speaker-recognition
+title: Overview of Speaker Recognition
+metadata:
+  title: Overview of Speaker Recognition
+  description: Overview of Speaker Recognition
+  ms.date: 01/11/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-overview-of-speaker-recognition.md)]

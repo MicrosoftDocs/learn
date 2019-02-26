@@ -42,8 +42,8 @@ Here you'll use the Custom Script Extension to configure IIS remotely on your VM
       --vm-name myVM \
       --name CustomScriptExtension \
       --publisher Microsoft.Compute \
-      --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-iis.ps1"]}' \
-      --protected-settings '{"commandToExecute": "powershell -ExecutionPolicy Unrestricted -File configure-iis.ps1"}'
+      --settings "{'fileUris':['https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-iis.ps1']}" \
+      --protected-settings "{'commandToExecute': 'powershell -ExecutionPolicy Unrestricted -File configure-iis.ps1'}"
     ```
 
     The process to configure IIS, set the contents of the homepage, and start the service takes a couple minutes to complete.
@@ -114,8 +114,8 @@ Here you'll use the Custom Script Extension to configure Nginx remotely on your 
       --vm-name myVM \
       --name customScript \
       --publisher Microsoft.Azure.Extensions \
-      --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
-      --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
+      --settings "{'fileUris':['https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh']}" \
+      --protected-settings "{'commandToExecute': './configure-nginx.sh'}"
     ```
 
     The process to configure Nginx, set the contents of the homepage, and start the service takes a couple minutes to complete.
@@ -146,7 +146,7 @@ Now that Nginx is set up, let's verify that it's running.
       --output tsv
     ```
 
-    You see your VM's public IP address, for example, 104.211.9.245.
+    You see your VM's public IP address, for example, 13.68.195.202.
 
 1. In a new browser tab, navigate to your VM's IP address. You see your welcome message and your VM's name.
 

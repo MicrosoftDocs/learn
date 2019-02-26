@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.create-machine-learning-studio-account.summary
+title: What is Machine Learning?
+metadata:
+  title: What is Machine Learning?
+  description: Introducing machine learning
+  ms.date: 12/12/2018
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

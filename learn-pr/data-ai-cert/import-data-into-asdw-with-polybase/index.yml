@@ -12,7 +12,7 @@ metadata:
 title: Import data into Azure SQL Data Warehouse using PolyBase
 summary: Load petabytes of data into an Azure SQL Data Warehouse database in minutes by using PolyBase.
 abstract: | 
-  In this module, you will:
+  In this module you will:
   - Explore how PolyBase works
   - Upload text data to Azure Blob store
   - Collect the security keys for Azure Blob store

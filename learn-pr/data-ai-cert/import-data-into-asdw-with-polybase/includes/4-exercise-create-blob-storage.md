@@ -26,7 +26,7 @@ Next, we need to create a blob container that will hold our source data.
 1. Select **Go to resource** from the deployment page, or locate your new storage account using the search bar at the top of the window.
 1. Select **Blobs** in the **Services** section of the **Overview** page.
 
-    ![Screenshot showing the creating a Blob in the storage account option](../media/4-exercise-create-blob-storage-blobs.PNG)
+    ![Screenshot showing the creating a Blob in the storage account option](../media/4-exercise-create-blob-storage-blobs.png)
 
 1. You need a container to store the files, click **+ Container** from the top menu.
 1. Name the container **data-files**.
@@ -36,5 +36,5 @@ Next, we need to create a blob container that will hold our source data.
 
 1. Click **OK** to create the container.
 
-![Screenshot showing the data-files container in the Blob account](../media/4-exercise-create-blob-storage-container.PNG)
+![Screenshot showing the data-files container in the Blob account](../media/4-exercise-create-blob-storage-container.png)
 
