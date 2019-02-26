@@ -1,5 +1,8 @@
 Before you can use the Speaker Recognition API, you need to subscribe to the service and get an API key.
 
+> [!IMPORTANT]
+> The Speaker Recognition API is still in preview. Expect changes to some of the functionality before it is finalized.
+
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. Click **+ Create a resource** in the left-hand sidebar, type in "Speaker Recognition" (without quotation marks) in the "Search the Marketplace" entry, then select **Speaker Recognition** from the search drop-down list.

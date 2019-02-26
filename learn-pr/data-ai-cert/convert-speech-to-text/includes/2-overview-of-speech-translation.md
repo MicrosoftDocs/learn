@@ -17,15 +17,18 @@ Access to all the goodness of Microsoft Cognitive Service Translator Speech is p
 
 The Speech Translation API provides algorithms, exposed as simple REST-based service calls, to add end-to-end, real-time, speech translation to apps and services. Exposing service via REST, provides an easy way for developers to add powerful, artificial intelligence-based speech translation features into their apps and services, optimized for real-life conversation. The Speech Translation API also includes support for partial transcriptions, partial text translations, final transcriptions, final text translation, and even audio text-to-speech translation.
 
+> [!NOTE]
+> You might be aware of a similar service in Azure: the Translator Speech API. This is a legacy API which is being replaced by the new Speech Service API. The Translator Speech API will be available until October 2019. Learn more about how to [migrate from the Translator Speech API to the Speech Service API](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-migrate-from-translator-speech-api) before it's turned off.
+
 With the Speech Translation API, client applications stream speech audio to the service and receive back a stream of translated text-based results. The results include the recognized text in the original source language and the translated text in the target language.
 
-> Translated results are produced by applying Automatic Speech Recognition (ASR) powered by deep neural networks to the incoming audio stream.
+Translated results are produced by applying Automatic Speech Recognition (ASR) powered by deep neural networks to the incoming audio stream. The Speech Translation API provides a single method: **Translate** which is used for all aspects of real-time speech translation.
 
-The Speech Translation API provides a single method: **Translate** which is used for all aspects of real-time speech translation.
+## Calling the Speech Translation API
 
-Although fully REST-enabled, calling the Translate method of the Speech Translation API **typically occurs via WebSocket requests**, as opposed to standard HTTP requests to maintain **full-duplex communication channels between the client and the server**. 
+Although fully REST-enabled, calling the **Translate** method of the Speech Translation API is typically done using **WebSocket requests** to maintain **full-duplex communication channels** between the client and the server. 
 
-For example, here's an overly simplified version of what a call to the Speech Translation API might look like in Python:
+For example, here's a simplified version of what a call to the Speech Translation API might look like in Python:
 
 ```Python
 ws = websocket.WebSocketApp('wss://dev.microsofttranslator.com/speech/translate')
@@ -46,4 +49,4 @@ await this.webSocket.ConnectAsync(new Uri("wss://dev.microsofttranslator.com/spe
 ```
 
 > [!IMPORTANT]
-> The Python and C# code snippets above have been greatly scaled back for brevity, and would require a bit more code to function properly in real scenarios.
+> The Python and C# code snippets above have been reduced for brevity and would require more code to function properly in real scenarios.

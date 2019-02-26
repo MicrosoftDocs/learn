@@ -3,9 +3,7 @@ A key factor in AI applications is the ability for a computer, or computer appli
 LUIS is an Azure Cognitive Service API that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information. 
 
 > [!NOTE]
-> For this module, you will use your own subscription to complete the exercises. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work.
-
-[!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
+> This module requires an Azure subscription. The services you create and use are free, but an active subscription or trial will be needed to complete the exercises. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 
 ## Learning objectives
 
