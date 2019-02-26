@@ -12,7 +12,7 @@ metadata:
 title: Design a Data Warehouse with Azure SQL Data Warehouse
 summary: Learn how to create an Azure SQL Data Warehouse in minutes to leverage Massively Parallel Processing (MPP) to run complex queries at Petabyte Scale quickly.
 abstract: | 
-  In this module, you will:
+  In this module you will:
   - List the types of data warehousing solutions
   - Explain Azure SQL Data Warehouse
   - Explain Massively Parallel Processing Concepts

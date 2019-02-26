@@ -4,7 +4,7 @@ Let's say that you're demonstrating to the Contoso team how to set up Azure Stre
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Explore the Streaming Analytics workflow
 - Create a Stream Analytics Job

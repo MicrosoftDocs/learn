@@ -4,7 +4,7 @@ Imagine working for an organization that is starting to explore the capabilities
 
 ## Learning objectives
 
-In this module, you will:
+In this module you will:
 
 - Contrast the differences between structured and non-structured data
 - Explore the common Azure data platform technologies and when to use them

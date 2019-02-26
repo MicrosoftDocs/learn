@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator
+metadata:
+  title: Classify and moderate text with the Azure Content Moderator - Learn
+  description: In this module, we'll introduce you to the Azure Content Moderator and show how to use it for text moderation - Learn
+  ms.date: 1/28/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+abstract: | 
+  In this module you will:
+  - Gain an understanding of what text content moderation is
+  - Learn about key features of Azure Content Moderator for text moderation
+  - Test moderation of text with the API test console
+title: Classify and moderate text with the Azure Content Moderator
+summary: In this module, we'll introduce you to the Azure Content Moderator and show how to use it for text moderation.
+cardDescription: Learn how to implement text moderation with the Azure Content Moderator service
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
+levels: 
+- intermediate
+roles:
+- developer
+- solution-architect
+- ai-engineer
+products: 
+- azure
+- azure-sdks
+- azure-cognitive-services
+units:
+- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.introduction
+- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.overview-of-text-moderation
+- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.exercise-create-moderator-service
+- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.exercise-use-the-api-console
+- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.knowledge-check
+- learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.summary
+badge:
+  uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.badge

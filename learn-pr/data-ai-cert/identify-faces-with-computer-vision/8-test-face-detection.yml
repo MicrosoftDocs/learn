@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.identify-faces-with-computer-vision.test-face-detection
+title: Exercise - Testing the Face Detection API
+metadata:
+  title: Exercise - Testing the Face Detection API
+  description: Test the Face Detection API on your subscription using the web-based testing console
+  ms.date: 01/7/2019
+  #TODO: Update with real author name.
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-test-face-detection.md)]

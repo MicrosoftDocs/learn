@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.recognize-voices-with-speaker-recognition.implement-speaker-recognition-and-identification
+title: Implement Speaker Recognition
+metadata:
+  title: Implement Speaker Recognition
+  description: Learn how to implment speaker recognition and identification
+  ms.date: 01/11/2019
+  #TODO: Update with real author name.
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-implement-speaker-recognition-and-identification.md)]

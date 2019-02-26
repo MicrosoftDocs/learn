@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.create-and-publish-a-luis-model.exercise-create-luis-service
+title: Create a LUIS Service
+metadata:
+  title: Create a LUIS Service
+  description: Learn how to create a LUIS service in the Azure Portal to use with a LUIS application
+  ms.date: 1/24/2019
+  #TODO: Update with real author name.
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-luis-service.md)]

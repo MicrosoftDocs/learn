@@ -12,7 +12,7 @@ metadata:
 title: Work with data streams using Azure Stream Analytics
 summary: Explore how Azure Stream Analytics integrates with your applications or Internet of Things (IoT) devices to gain insights with real-time streaming data. Learn how to consume and analyze data streams and derive actionable results.
 abstract: | 
-  In this module, you will:
+  In this module you will:
   - Understand data streams
   - Understand event processing
   - Learn about processing events with Azure Stream Analytics

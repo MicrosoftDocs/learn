@@ -4,7 +4,7 @@ Suppose that you're a data engineering consultant doing work for Contoso. They'r
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Explain Azure Data Lake Storage
 - Create an Azure Storage Account using the portal
