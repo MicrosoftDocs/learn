@@ -16,8 +16,7 @@ abstract: |
   - Learn what speech translation is all about
   - Explore the Speech to Text API
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/convert-speech-to-text.svg
 levels:
 - intermediate
 roles:

@@ -17,8 +17,7 @@ abstract: |
   - Gain an understanding of concepts related to speaker recognition
   - Explore the Speaker Recognition API
 prerequisites: None
-#todo: replace with real badge
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg
 levels:
 - intermediate
 roles:
