@@ -4,9 +4,9 @@ Recognizing emotion with the Emotion API involves sending an authorized web requ
 - Specifying a (publicly available) image URL.
 
 > [!TIP]
-> For testing purposes, subscribers can practice using the Emotion API via the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/5639d931ca73072154c1ce89 "Emotion API testing console").
+> For testing purposes, subscribers can practice using the Emotion API through the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/5639d931ca73072154c1ce89/?azure-portal=true).
 
-Since no parameters are passed to the Emotion API Recognize method, a simple call to the service endpoint does the job:
+Since no parameters are passed to the Emotion API **Recognize** method, a straight HTTP call to the service endpoint does the job:
 
 ```text
 https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize
@@ -39,14 +39,14 @@ using (ByteArrayContent content = new ByteArrayContent(bytes))
     response = await client.PostAsync(uri, content);
     string contentString = await response.Content.ReadAsStringAsync();
 }
-
 ```
 
-Notice the required use of the `application/octet-stream` content type in the request header to instruct the method as to the type of content being delivered, just like submitting images using the Computer Vision API.
+> [!TIP]
+> Notice the required use of the `application/octet-stream` content type in the request header which informs the endpoint that it will be receiving a binary payload.
 
 ### Return values
 
-Information is returned from the Emotion API in JSON payloads. When reading the information returned from the Emotion API, the data is always a well-formatted **JSON object or array**. Here's an example response.
+Information is returned from the Emotion API as a well-formatted **JSON object or array**. Here's an example response.
 
 ```json
 [{

@@ -27,8 +27,6 @@ products:
 - azure-cost-management
 - azure-advisor
 - azure-monitor
-- azure-application-insights
-- azure-log-analytics
 units:
 - learn.design-for-efficiency-and-operations.1-introduction
 - learn.design-for-efficiency-and-operations.2-maximize-efficiency-of-cloud-spend
