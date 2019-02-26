@@ -4,7 +4,7 @@ After being convinced that ASDW can solve the issue of loading the business inte
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Create an Azure SQL Data Warehouse sample database.
 - Query the sample database with the SELECT statement and its clauses.

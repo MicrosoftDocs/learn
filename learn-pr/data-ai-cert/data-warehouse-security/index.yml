@@ -12,7 +12,7 @@ metadata:
 title: Data Warehouse Security
 summary: Learn the various security controls Azure SQL Data Warehouse exposes to secure your data warehouse infrastructure and the data that is stored in it.
 abstract: | 
-  In this module, you will:
+  In this module you will:
   - Configure access controls to the server.
   - Configure authentication to the data warehouse server.
   - Configure authorization to the data warehouse database.

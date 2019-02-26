@@ -6,7 +6,7 @@ You will then provide more granular access at the database level by creating a d
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Configure access controls to the server.
 - Configure authentication to the data warehouse server.

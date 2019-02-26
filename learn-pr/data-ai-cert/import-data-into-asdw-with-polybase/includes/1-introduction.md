@@ -4,7 +4,7 @@ Suppose you want to resolve a long-running data load that is delaying the daily 
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Explore how PolyBase works
 - Upload text data to Azure Blob store

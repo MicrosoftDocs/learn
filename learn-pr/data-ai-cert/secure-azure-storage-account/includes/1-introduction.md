@@ -4,7 +4,7 @@ Imagine that the network administrator at Contoso is performing a security audit
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Investigate the ways Azure Storage protects your data
 - Explore the authentication options available to access data

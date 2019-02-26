@@ -4,7 +4,7 @@ You want to show Contoso the different ways in which you can upload data into Az
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Create an Azure Data Lake Gen2 Store
 - Upload data into the Data Lake Storage Gen2 using Azure Storage Explorer

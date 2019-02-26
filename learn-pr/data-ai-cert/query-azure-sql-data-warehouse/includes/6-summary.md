@@ -4,7 +4,7 @@ In this module, you have explored how to create a sample database with Azure SQL
 
 To avoid additional costs in your Azure account, make sure to delete the **mslearn-demodw** resource group. This will remove all of the resources we created in this module. Here's the steps you need to do.
 
-1. Find the **mslearn-demodw** resource group - an easy way to locate it is to select **Resource groups** in the Azure sidebar.
+1. Find the **mslearn-demodw** resource group. Select **Resource groups** in the Azure sidebar to quickly locate it.
 
 1. Select the resource group and either right-click on the row, or use the "..." button on the far-right side of the row to open the context menu.
 
