@@ -9,24 +9,27 @@ Now that you have a service available on Azure for content moderation, and you h
     ![Paste API key into header key text box](../media/4-exercise-paste-key.png)
 
 1. Leave the sample text in place and click **Send**.
-1. Scroll down on the page and evaluate the response that is returned.
 
-This first test was accomplished using _classification_ because the **Classify** parameter was set to **True** at the top of the page. Note the following information in the response:
+## Evaluate the response
+
+Scroll down on the page and evaluate the response that was returned.
+
+This first test was accomplished using _classification_ because the **Classify** parameter was set to **True** at the top of the page. The following information is contained in the response:
     - A review is recommended
     - The text was classified as category 3 (potential presence of language that may be considered offensive in certain situations)
     - The "offending" term that was found was 'crap'
 
 1. Scroll to the top of the page and set the PII parameter to **true**.
 
-    ![Set PII parameter to true](../media/4-exercise-set-pii.PNG)
+    ![Set PII parameter to true](../media/4-exercise-set-pii.png)
 
 1. Click **Send** again.
 
-Notice that PII content is now displayed showing that the email, IP address, phone, address, and social security numbers are all considered PII.
+    Notice that PII content is now displayed showing that the email, IP address, phone, address, and social security numbers are all considered PII.
 
 1. Locate, or enter, some of your own text values from an existing document and run the tests again to see the results returned
 
 1. Evaluate the JSON response and the Request URL to gain an understanding of how your custom applications may call this API
 
 > [!TIP]
-> If you want to test this API using a C# application, complete the [Quickstart on the docs site](https://docs.microsoft.com/en-us/azure/cognitive-services/content-moderator/text-moderation-quickstart-dotnet).
+> If you want to test this API using a C# application, complete the [Quickstart on the docs site](https://docs.microsoft.com/azure/cognitive-services/content-moderator/text-moderation-quickstart-dotnet).

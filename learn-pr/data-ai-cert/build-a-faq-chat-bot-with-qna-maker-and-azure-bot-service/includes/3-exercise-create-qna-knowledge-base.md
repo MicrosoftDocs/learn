@@ -1,16 +1,18 @@
-Let's start by creating a new QnA Maker knowledge base.
+Let's start by creating a new QnA Maker knowledge base (KB).
 
-1. Navigate to the [QnA Portal](https://www.qnamaker.ai/?azure-portal=true).
+1. Navigate to the [QnA Maker portal](https://www.qnamaker.ai/?azure-portal=true).
 1. Click the "Sign in" button in the top-right corner and sign in with your Azure credentials.
 1. Assuming you have no existing knowledge bases, the portal will indicate you have no existing knowledge bases yet
 
-![Web portal for QnA Maker with no existing knowledge bases](../media/3-exercise-create-qna-kb-portal.png)
+    ![Web portal for QnA Maker with no existing knowledge bases](../media/3-exercise-create-qna-kb-portal.png)
 
 1. In the top nav bar, click **Create a knowledge base**
 1. Click the **Create a QnA service** button. This will navigate into the Azure portal using your same credentials to create the QnA Maker service and associated Azure App Service that will host it.
 
 > [!NOTE]
 > You can create a QnA Service in the Microsoft Azure Portal prior to creating a knowledge base as well.
+
+## Fill in the QnA Maker service details
 
 Fill out the details to create the Qn Maker service.
 

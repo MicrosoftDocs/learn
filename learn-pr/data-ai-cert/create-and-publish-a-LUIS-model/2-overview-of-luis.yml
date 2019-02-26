@@ -5,7 +5,6 @@ metadata:
   title: Overview of LUIS
   description: Gain and understanding of the key concepts around language understanding (LUIS)
   ms.date: 1/24/2019
-  #TODO: Update with real author name.
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial

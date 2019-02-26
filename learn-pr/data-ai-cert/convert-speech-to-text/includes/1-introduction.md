@@ -13,4 +13,4 @@ In this module you will:
 - Explore the Speech to Text API
 
 > [!IMPORTANT]
-> The new Speech Service and SDK is replacing the Translator Speech API, which will no longer work starting October 15, 2019. For information on switching to the Speech Service, see [Migrating from the Translator Speech API to the Speech Service](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/how-to-migrate-from-translator-speech-api).
+> The new Speech Service and SDK is replacing the Translator Speech API, which will no longer work starting October 15, 2019. For information on switching to the Speech Service, see [Migrating from the Translator Speech API to the Speech Service](https://docs.microsoft.com/azure/cognitive-services/speech-service/how-to-migrate-from-translator-speech-api).

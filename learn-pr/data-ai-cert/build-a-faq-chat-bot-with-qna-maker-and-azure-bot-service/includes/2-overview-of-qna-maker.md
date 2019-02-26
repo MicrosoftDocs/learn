@@ -1,9 +1,8 @@
-
 One way to improve customer satisfaction is to help them quickly locate answers to their questions. The information they're looking for might be in Frequently Asked Questions (FAQs), support documentation, or even product manuals. 
 
-Search pages can help with this effort, but many organizations look for ways to interact more personally with customers while still using automated mechanisms. The QnA Maker service answers your users' natural language question by matching it with the best possible answer from your knowledge base. Customers can have an interactive "conversation" with the automated service naturally to help them locate the necessary information.
+Search pages can help with this effort, but many organizations look for ways to interact more personally with customers while still using automated mechanisms. The QnA Maker service answers your users' natural language question by matching it with the best possible answer from your knowledge base (KB). Customers can have an interactive "conversation" with the automated service naturally to help them locate the necessary information.
 
-You create a Knowledge Base for QnA Maker through an easy-to-use web portal.  Through the portal, you can create, manage, train, and publish your service without any developer experience. Once the service is published to an endpoint, a client application such as a chatbot can use the service to process a conversation with a user to determine the asked question and respond with the best answer.
+You create a QnA Maker knowledge base (KB) using a web portal. In the portal, you can create, manage, train, and publish your service without any developer experience. Once the service is published to an endpoint, a client application such as a ChatBot can use the service to process a conversation with a user to determine the asked question and respond with the best answer.
 
 ## Architecture
 

@@ -3,9 +3,8 @@ uid: learn.data-ai.recognize-voices-with-speaker-recognition.implement-speaker-r
 title: Implement Speaker Recognition
 metadata:
   title: Implement Speaker Recognition
-  description: Learn how to implment speaker recognition and identification
+  description: Learn how to implement speaker recognition and identification
   ms.date: 01/11/2019
-  #TODO: Update with real author name.
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial

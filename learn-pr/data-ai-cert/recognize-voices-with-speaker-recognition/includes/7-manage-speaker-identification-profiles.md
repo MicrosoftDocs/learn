@@ -50,7 +50,6 @@ using (ByteArrayContent content = new ByteArrayContent(bytes))
     response = await client.PostAsync(uri, content);
     string contentString = await response.Content.ReadAsStringAsync();
 }
-
 ```
 
 Notice the use of the optional "shortAudio" parameter to instruct the method to waive the recommended minimum audio limit needed for enrollment, and allow audio length of as little as 1 second long.

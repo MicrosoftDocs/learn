@@ -32,7 +32,7 @@ Next, let's create the entities we need. In this case, we'll create an entity th
 1. Click on **Entities** in the left-hand column and then click **Create new entity**.
 1. Give it an entity name "facet" and entity type **Simple**. Then click **Done**.
 
-    ![Adding an entity called facet, of type Simple](../media/4-exercise-add-intents-entity.PNG)
+    ![Adding an entity called facet, of type Simple](../media/4-exercise-add-intents-entity.png)
 
 1. Create a new Intent called "SearchPics". Use the same steps as above.
 1. Add the following values as utterances for the SearchPics intent:
@@ -61,7 +61,7 @@ Once we have some utterances, we have to teach LUIS how to pick out the search t
 
 1. Your progress should look similar to this.
 
-    ![Keywords selected as facets, shown by the term facet in square brackets](../media/4-exercise-add-intents-facet-entity.PNG)
+    ![Keywords selected as facets, shown by the term facet in square brackets](../media/4-exercise-add-intents-facet-entity.png)
 
 1. Add two more Intents with related utterances according to this list:
     - SharePic - "Share this pic", "Can you tweet that?", "post to Twitter"

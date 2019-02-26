@@ -5,7 +5,6 @@ metadata:
   title: Exercise - Testing the Face Detection API
   description: Test the Face Detection API on your subscription using the web-based testing console
   ms.date: 01/7/2019
-  #TODO: Update with real author name.
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial

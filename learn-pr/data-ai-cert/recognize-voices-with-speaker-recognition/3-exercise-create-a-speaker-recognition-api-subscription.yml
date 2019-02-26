@@ -5,7 +5,6 @@ metadata:
   title: Exercise - Create a Speaker Recognition API Subscription
   description: Create a subscription to the speaker recognition API
   ms.date: 01/11/2019
-  #TODO: Update with real author name.
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial

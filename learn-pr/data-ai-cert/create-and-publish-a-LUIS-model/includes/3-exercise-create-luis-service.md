@@ -8,7 +8,7 @@ Let’s look at how we can use LUIS to add some natural language capabilities. L
 1. Select **Language Understanding**.
 1. Click **Create**.
 
-![Click Create to create a LUIS service](../media/3-create-luis-service-create.png)
+    ![Click Create to create a LUIS service](../media/3-create-luis-service-create.png)
 
 1. Enter a unique name for your LUIS service, choose a subscription, select a location close to you.
 1. Select the **S0** pricing tier for this service.

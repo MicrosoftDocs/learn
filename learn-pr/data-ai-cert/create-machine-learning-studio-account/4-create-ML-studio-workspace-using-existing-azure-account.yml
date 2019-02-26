@@ -5,7 +5,6 @@ metadata:
   title: Create a Machine Learning Studio Workspace with an Existing Microsoft Azure Account
   description: Create a Machine Learning Studio Workspace with an Existing Microsoft Azure Account
   ms.date: 12/12/2018
-  #TODO: Update with real author name.
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
