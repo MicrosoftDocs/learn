@@ -3,9 +3,7 @@ A Bot is an autonomous program that interacts with people or computer systems in
 QnA Maker is one of those AI services to help a Bot answer your users' natural language questions by matching it with the best possible answer from your knowledge base.
 
 > [!NOTE]
-> For this module, you will use your own subscription to complete the exercises. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work.
-
-[!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
+> This module requires an Azure subscription. The services you create and use are free, but an active subscription or trial will be needed to complete the exercises. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 
 ## Learning objectives
 

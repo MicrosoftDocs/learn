@@ -5,9 +5,7 @@ Faces are everywhere. Earth is filled with over 7,500,000,000 faces - every one 
 By leveraging the power of Azure Cognitive Services artificial intelligence algorithms, processes that were difficult, or even impossible, are now a few lines of code away, using the Microsoft Cognitive Vision Services Face API.
 
 > [!NOTE]
-> For this module, you will use your own subscription to complete the exercises. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work.
-
-[!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
+> This module requires an Azure subscription. The services you create and use are free, but an active subscription or trial will be needed to complete the exercises. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 
 ## Learning objectives
 

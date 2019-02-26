@@ -1,9 +1,7 @@
 Moderating content for specific aspects that may be problematic can be a time-consuming task. Microsoft Azure Content Moderator can perform machine-assisted content moderation for images, text, and video. This module will cover key aspects of using the content moderator features to do text moderation.
 
 > [!NOTE]
-> For this module, you will use your own subscription to complete the exercises. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work.
-
-[!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
+> This module requires an Azure subscription. The services you create and use are free, but an active subscription or trial will be needed to complete the exercises. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 
 ## Learning objectives
 
