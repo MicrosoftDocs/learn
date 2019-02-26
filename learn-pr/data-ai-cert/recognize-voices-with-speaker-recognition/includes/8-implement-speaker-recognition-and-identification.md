@@ -33,7 +33,6 @@ using (ByteArrayContent content = new ByteArrayContent(bytes))
     response = await client.PostAsync(uri, content);
     string contentString = await response.Content.ReadAsStringAsync();
 }
-
 ```
 
 ## Return values

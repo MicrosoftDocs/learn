@@ -25,7 +25,7 @@ quiz:
     - content: Creating an audio file from a famous quote
       isCorrect: false
       explanation: "The Speech Translation API is not designed to translate written content into other languages, or perform non-translated speech recognition or synthesis, as these features are part of the Bing Speech API."
-  - content: "Which of the following text to speech output formats are supported by the Translator Speech Translate method?"
+  - content: "Which of the following text-to-speech output formats are supported by the Translator Speech Translate method?"
     choices:
     - content: audio/wav
       isCorrect: true
