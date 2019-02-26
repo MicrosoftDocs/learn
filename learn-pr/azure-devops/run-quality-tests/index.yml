@@ -1,7 +1,7 @@
 ### YamlMime:Module
-uid: learn.test-applications-with-azure-test-plans
+uid: learn.run-quality-tests-when-your-application-builds
 metadata:
-  title: Test your applications with Azure Test Plans - Learn
+  title: Run quality tests when your application builds - Learn
   description: TBD.
   ms.date: 1/1/2019
   author: tpetchel
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Test your applications with Azure Test Plans
+title: Run quality tests when your application builds
 summary: TBD.
 abstract: |
   In this module, you will:
@@ -30,6 +30,6 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.test-applications-with-azure-test-plans.1-introduction
+- learn.run-quality-tests-when-your-application-builds.1-introduction
 badge:
-  uid: learn.test-applications-with-azure-test-plans.badge
+  uid: learn.run-quality-tests-when-your-application-builds.badge
