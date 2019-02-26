@@ -146,7 +146,7 @@ Now that Nginx is set up, let's verify that it's running.
       --output tsv
     ```
 
-    You see your VM's public IP address, for example, 104.211.9.245.
+    You see your VM's public IP address, for example, 13.68.195.202.
 
 1. In a new browser tab, navigate to your VM's IP address. You see your welcome message and your VM's name.
 
