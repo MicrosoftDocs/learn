@@ -12,10 +12,10 @@ This first exercise will use the Azure CLI. If you have a local installation of 
 
 ## Create a resource group
 
-First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks`.
+First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks` and replace `<location>` in the following command with the name of the region in which you'd like the group to be created. 
 
 ```azurecli
-az group create --name vm-networks
+az group create --location <location> --name vm-networks
 ```
 
 ## Create a virtual network
