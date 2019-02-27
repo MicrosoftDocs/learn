@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.assess-your-development-process.3-design-technology
+title: Recommend technology choices
+metadata:
+  title: Recommend technology choices
+  description: TBD
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-design-technology.md)]

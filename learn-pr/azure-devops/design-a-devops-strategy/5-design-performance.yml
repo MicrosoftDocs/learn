@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.assess-your-development-process.5-design-performance
+title: Recommend ways to measure performance
+metadata:
+  title: Recommend ways to measure performance
+  description: TBD
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-design-performance.md)]
