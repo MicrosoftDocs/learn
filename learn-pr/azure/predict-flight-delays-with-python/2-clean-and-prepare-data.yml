@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.predict-flight-delays-with-python.2-clean-and-prepare-data
+title: Clean and Prepare Data
+metadata:
+  title: Clean and Prepare Data
+  description: Clean and Prepare Data
+  ms.date: 11/22/2018
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-clean-and-prepare-data.md)]

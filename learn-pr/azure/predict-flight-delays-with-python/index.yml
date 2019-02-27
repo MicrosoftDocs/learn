@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.predict-flight-delays-with-python
+metadata:
+  title: Predict flight delays by creating a machine learning model in Python
+  description: Import airline arrival data into a Jupyter notebook and use Pandas to clean it. Then, build a machine learning model with Scikit-Learn and use Matplotlib to visualize output.
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Predict flight delays by creating a machine learning model in Python
+summary: Import airline arrival data into a Jupyter notebook and use Pandas to clean it. Then, build a machine learning model with Scikit-Learn and use Matplotlib to visualize output.
+abstract:  |
+  In this module, you will:
+  - Create an Azure Notebook and import flight data
+  - Use Pandas to clean and prepare data
+  - Use Scikit-learn to build a machine-learning model
+  - Use Matplotlib to visualize the output
+prerequisites: None
+iconUrl: /learn/achievements/predict-flight-delays-with-python.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.predict-flight-delays-with-python.0-introduction
+- learn.predict-flight-delays-with-python.1-create-notebook-and-import-data
+- learn.predict-flight-delays-with-python.2-clean-and-prepare-data
+- learn.predict-flight-delays-with-python.3-build-machine-learning-model
+- learn.predict-flight-delays-with-python.4-visualize-output
+- learn.predict-flight-delays-with-python.5-summary-and-knowledge-check
+# TODO replace with correct badge
+# achievement: learn.predict-flight-delays-with-python.badge 
+achievement: learn.predict-costs-and-optimize-spending.badge
