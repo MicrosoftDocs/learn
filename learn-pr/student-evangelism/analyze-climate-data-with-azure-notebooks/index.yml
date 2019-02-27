@@ -35,6 +35,6 @@ units:
 #- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.create-a-slideshow
 # Creating slideshows in Azure Notebooks is currently broken. See https://github.com/Microsoft/AzureNotebooks/issues/445
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks.share-a-notebook
-- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.summary-and-knowledge-check
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.summary
 badge:
   uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.badge
