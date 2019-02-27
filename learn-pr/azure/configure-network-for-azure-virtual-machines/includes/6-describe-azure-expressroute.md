@@ -52,7 +52,7 @@ IPVPN providers typically provide connectivity between branch offices and your c
 
 ### Virtual cross-connection through an Ethernet Exchange
 
-If your organization is co-located with a cloud exchange facility, you request cross-connections to the Microsoft Cloud though your provider's Ethernet exchange. These cross-connections to the Microsoft Cloud can operate at either layer 2 or layer 3 managed connections, as in the networking OSI model.
+If your organization is co-located with a cloud exchange facility, you request cross-connections to the Microsoft Cloud through your provider's Ethernet exchange. These cross-connections to the Microsoft Cloud can operate at either layer 2 or layer 3 managed connections, as in the networking OSI model.
 
 ### Point-to-point Ethernet connection
 
