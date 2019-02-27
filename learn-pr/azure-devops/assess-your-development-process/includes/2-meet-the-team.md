@@ -10,3 +10,15 @@
 
 [Describe and show a screenshot of our reference application - the external app that the team wants to focus on first. Explain that it's a .NET Core app written in C# that's deployed to Linux.]
 
+### What are the team's biggest challenges?
+
+* Slow to release
+* Release with too many bugs
+* Not shipping the right features to customers
+
+-----
+
+Grab bag to place elsewhere:
+
+* That's painful because it's difficult to scale up or down to accommodate changes in user traffic.
+* Perhaps identify other pain points (things that typically drive cloud migration).
