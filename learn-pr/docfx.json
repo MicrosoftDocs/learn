@@ -7,6 +7,16 @@
                 "dest": "achievements/main/"
             },
             {
+                "src": "advocates",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "aspnetcore",
                 "files": [
                     "**/*.yml"
