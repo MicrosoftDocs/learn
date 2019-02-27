@@ -18,7 +18,8 @@ abstract:  |
   - Use Scikit-learn to build a machine-learning model
   - Use Matplotlib to visualize the output
 prerequisites: None
-iconUrl: /learn/achievements/predict-flight-delays-with-python.svg
+# TODO: create icon
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -26,11 +27,11 @@ roles:
 products:
 - azure
 units:
-- learn.student-evangelism.predict-flight-delays-with-python.0-introduction
-- learn.student-evangelism.predict-flight-delays-with-python.1-create-notebook-and-import-data
-- learn.student-evangelism.predict-flight-delays-with-python.2-clean-and-prepare-data
-- learn.student-evangelism.predict-flight-delays-with-python.3-build-machine-learning-model
-- learn.student-evangelism.predict-flight-delays-with-python.4-visualize-output
-- learn.student-evangelism.predict-flight-delays-with-python.5-summary-and-knowledge-check
+- learn.student-evangelism.predict-flight-delays-with-python.introduction
+- learn.student-evangelism.predict-flight-delays-with-python.create-notebook-and-import-data
+- learn.student-evangelism.predict-flight-delays-with-python.clean-and-prepare-data
+- learn.student-evangelism.predict-flight-delays-with-python.build-machine-learning-model
+- learn.student-evangelism.predict-flight-delays-with-python.visualize-output
+- learn.student-evangelism.predict-flight-delays-with-python.summary
 badge:
   uid: learn.student-evangelism.predict-flight-delays-with-python.badge
