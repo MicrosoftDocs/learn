@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.predict-flight-delays-with-python.3-build-machine-learning-model
+uid: learn.student-evangelism.predict-flight-delays-with-python.build-machine-learning-model
 title: Build Machine Learning Model
 metadata:
   title: Build Machine Learning Model
   description: Build Machine Learning Model
-  ms.date: 11/22/2018
+  ms.date: 02/25/2019
   author: JeffProsise
   ms.author: shanama
   ms.topic: interactive-tutorial

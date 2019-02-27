@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.predict-flight-delays-with-python.5-summary-and-knowledge-check
+uid: learn.student-evangelism.predict-flight-delays-with-python.summary
 title: Summary and knowledge check
 metadata:
   title: Summary and knowledge check
   description: Confirm that you understand the steps required to clean data, create a machine learning model, and visualize the model's output.
-  ms.date: 09/24/2018
+  ms.date: 02/25/2019
   author: JeffProsise
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.predict-flight-delays-with-python.4-visualize-output
+uid: learn.student-evangelism.predict-flight-delays-with-python.visualize-output
 title: Visualize Output of Model
 metadata:
   title: Visualize Output of Model
   description: Visualize Output of Model
-  ms.date: 11/22/2018
+  ms.date: 02/25/2019
   author: JeffProsise
   ms.author: shanama
   ms.topic: interactive-tutorial
