@@ -115,7 +115,7 @@ WITH (
 
 ## Create destination table
 
-The next step is to create a physical table in the Data Warehouse database. In the following example, you will create a table named `dbo.DimDate` that has a clustered column store index define on all the columns and use a table geometry of `round_robin`. This is by design as `round_robin` is the best table geometry to use for loading data.
+The next step is to create a physical table in the Data Warehouse database. In the following example, you will create a table named `dbo.StageDate` that has a clustered column store index define on all the columns and use a table geometry of `round_robin`. This is by design as `round_robin` is the best table geometry to use for loading data.
 
 1. Paste the following code into the query window.
 
