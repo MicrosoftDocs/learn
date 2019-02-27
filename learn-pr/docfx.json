@@ -37,6 +37,16 @@
                 "dest": "modules"
             },
             {
+                "src": "azure-devops",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "data-ai-cert",
                 "files": [
                     "**/*.yml"
