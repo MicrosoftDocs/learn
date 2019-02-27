@@ -48,7 +48,7 @@ quiz:
       explanation: "Billing is performed monthly for each subscription in the account, based on the resource usage."
     - content: "Monthly for each Azure account based on usage."
       isCorrect: false
-      explanation: "Billing is performed monthly at the account level."
+      explanation: "Billing is performed monthly at the subscription level."
     - content: "Daily for each Azure subscription based on usage."
       isCorrect: false
       explanation: "Billing is not charged daily."

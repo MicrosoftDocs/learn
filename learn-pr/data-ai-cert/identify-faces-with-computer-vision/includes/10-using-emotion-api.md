@@ -4,23 +4,17 @@ Recognizing emotion with the Emotion API involves sending an authorized web requ
 - Specifying a (publicly available) image URL.
 
 > [!TIP]
-> For testing purposes, subscribers can practice using the Emotion API through the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/5639d931ca73072154c1ce89/?azure-portal=true).
+> Just like the Face detect API, you can practice calling the Emotion API with the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/5639d931ca73072154c1ce89/?azure-portal=true). The process is identical to what we did earlier.
 
-Since no parameters are passed to the Emotion API **Recognize** method, a straight HTTP call to the service endpoint does the job:
+## Calling the Emotion API
 
-```text
-https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize
-```
-
-> [!NOTE]
-> The Microsoft Cognitive Services Emotion API is currently in **public preview**. The Recognize method may take additional parameters when it moves into production.
-
-## Sending an Image Payload
-
-To send an image payload to the Emotion Recognize method, one of the following needs to be including in the web request, and then **sent via a standard HTTP POST method**:
+The Emotion API **Recognize** method endpoint is at <https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize>. Notice that the location ("westus") is part of the URL - you might need to adjust that based on where you place your service. You must supply an image payload to process as part of the `POST` request to the method. This can be: 
 
 - A **binary file**, such as a stream or byte array, or
 - A **JSON payload** that includes the value of a (publicly available) image URL, formatted as human-readable text.
+
+> [!NOTE]
+> The Azure Cognitive Services Emotion API is currently in **public preview**. The Recognize method may take additional parameters when it moves into production.
 
 ### Binary file payload
 

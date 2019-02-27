@@ -94,11 +94,11 @@ You can start with using an understandable naming convention. We named our resou
 
 ### Organizing principles
 
-Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all storage accounts in another resource group, and all Cosmos DB instances in yet another resource group.
+Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all virtual machines in another resource group, and all Cosmos DB instances in yet another resource group.
 
 ![Image of resources organized by type](../media/2-resource-type-rg.png)
 
-We could organize them by environment (prod, test, dev). In this case, all production resources are in one resource group, all test resources are in another resource group, and so on.
+We could organize them by environment (prod, qa, dev). In this case, all production resources are in one resource group, all test resources are in another resource group, and so on.
 
 ![Image of resources organized by environment](../media/2-environment-rg.png)
 

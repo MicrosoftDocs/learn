@@ -12,8 +12,8 @@ Let's see an example of this. One of the more common scenarios might focus aroun
 
 Entities, as indicated above, are words or phrases, but also simply data, that help to provide specific context for the utterance and aid in more accurately identifying the intent.  Not every utterance will contain entities.  In our utterance for booking the new York flight, we can identify entities such as:
 
-- **New York** - we can classify this entity as Location.Destination
-- **New Year's Eve** - we might classify this entity as Event
-- **3** - This is actually a built-in entity in LUIS known as Prebuilt number
+- **New York** - we can classify this entity as _Location.Destination_.
+- **New Year's Eve** - we might classify this entity as _Event_.
+- The number **2** - this is mapped to a built-in entity in LUIS known as _prebuilt entity_, specifically a prebuilt number.
 
 With this understanding, let's now look at how to create a LUIS app.
