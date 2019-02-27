@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.analyze-review-sentiment-with-keras.0-introduction
+uid: learn.student-ai.analyze-review-sentiment-with-keras.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 09/24/2018
+  ms.date: 02/24/2019
   author: JeffProsise
   ms.author: shanama
   ms.topic: interactive-tutorial

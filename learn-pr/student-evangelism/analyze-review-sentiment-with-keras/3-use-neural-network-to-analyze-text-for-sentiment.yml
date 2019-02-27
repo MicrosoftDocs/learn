@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.analyze-review-sentiment-with-keras.3-use-neural-network-to-analyze-text-for-sentiment
+uid: learn.student-ai.analyze-review-sentiment-with-keras.use-neural-network-to-analyze-text-for-sentiment
 title: Use the Neural Network to Analyze Text for Sentiment
 metadata:
   title: Use the Neural Network to Analyze Text for Sentiment
   description: Use the Neural Network to Analyze Text for Sentiment
-  ms.date: 09/24/2018
+  ms.date: 02/24/2019
   author: JeffProsise
   ms.author: shanama
   ms.topic: interactive-tutorial

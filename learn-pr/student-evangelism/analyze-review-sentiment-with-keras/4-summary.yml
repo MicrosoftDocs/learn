@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.analyze-review-sentiment-with-keras.4-summary-and-knowledge-check
+uid: learn.student-ai.analyze-review-sentiment-with-keras.summary
 title: Summary and knowledge check
 metadata:
   title: Summary and knowledge check
   description: Confirm that you understand the steps required to build and train a neural network to analyze sentiment.
-  ms.date: 09/24/2018
+  ms.date: 02/24/2019
   author: JeffProsise
   ms.author: shanama
   ms.topic: interactive-tutorial
