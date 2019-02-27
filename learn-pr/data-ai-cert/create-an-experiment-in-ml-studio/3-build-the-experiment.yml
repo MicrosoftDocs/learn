@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.create-an-experiment-in-ml-studio.build-the-experiment
+title: Build the Experiment
+metadata:
+  title: Build the Experiment
+  description: Build an Experiment in Microsoft Azure Machine Learning Studio using the designer
+  ms.date: 12/12/2018
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-build-the-experiment.md)]

@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit  
+uid: learn.data-ai.create-machine-learning-studio-account.knowledge-check
+title: Knowledge Check  
+metadata:    
+  title: Knowledge Check    
+  description: Introducing Machine Learning Knowledge Check    
+  ms.date: 12/12/2018    
+  author: gerryaobrien    
+  ms.author: gerryo    
+  ms.topic: interactive-tutorial    
+  ms.prod: learning-azure    
+  ROBOTS: NOINDEX  
+durationInMinutes: 3  
+quiz:
+  title: Check your knowledge - Introducing Machine Learning  
+  questions: 
+  - content: "What is Machine Learning?"
+    choices:
+    - content: "The process of creating data mining on a computer"
+      isCorrect: false
+      explanation: "Data mining can be used as part of a machine learning solution but is not machine learning by itself."
+    - content: "The process of training a software model using available data"
+      isCorrect: true
+      explanation: "Using available data and the various options in the Azure Machine Learning Studio, you can train a software model to aid the computer in machine learning."
+    - content: "Generating Data Science algorithms for use in models"
+      isCorrect: false
+      explanation: "While data science algorithms can be used in machine learning models, they are only one component of machine learning."
+  - content: "How does Machine Learning Studio make your models available for consumption?"
+    choices:
+    - content: "Through a web service"
+      isCorrect: true
+      explanation: "Correct.  Machine Learning Studio allows you to publish your experiments as web services."
+    - content: "As ASP.Net web pages"
+      isCorrect: false
+      explanation: "Machine Learning Studio does not generate ASP.Net we pages as an output."
+    - content: "As a SQL on Azure database"
+      isCorrect: false
+      explanation: "Machine Learning Studio does not create a SQL on Azure database"

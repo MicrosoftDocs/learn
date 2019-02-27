@@ -12,7 +12,7 @@ metadata:
 title: Transform data with Azure Stream Analytics
 summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and output the results.
 abstract: | 
-  In this module, you will:
+  In this module you will:
   - Explore the Streaming Analytics workflow
   - Create a Stream Analytics Job
   - Configure a Stream Analytics job input

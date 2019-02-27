@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit  
+uid: learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.knowledge-check
+title: Knowledge Check  
+metadata:    
+  title: Knowledge Check    
+  description: Check your knowledge around bulding a LUIS application   
+  ms.date: 2/25/2019    
+  author: gerryaobrien    
+  ms.author: gerryo    
+  ms.topic: interactive-tutorial    
+  ms.prod: learning-azure    
+  ROBOTS: NOINDEX  
+durationInMinutes: 7
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: What is the purpose of a knowledge base in QnA Maker?
+    choices:
+    - content: It stores all the questions that users type into the chat window.
+      isCorrect: false
+      explanation: "The knowledge base does not have the ability to collect and store user questions from a chat window."
+    - content: "A set of question/answer (QnA) pairs and optional metadata"
+      isCorrect: true
+      explanation: "Correct. A QnA Maker knowledge base consists of a set of question/answer (QnA) pairs and optional metadata associated with each QnA pair."
+    - content: "A storage blob containing documents that outline the set of documents making up the questions and answers that are supported."
+      isCorrect: false
+      explanation: "While the knowledge base can be built from a set of documents, it does not require you to create a storage account or blob storage to hold the actual documents."
+  - content: "How can a Chat Bot get authorization to your QnA service ?"
+    choices:
+    - content: "Passing an access token as the first field in a JSON request to the service."
+      isCorrect: false
+      explanation: "The QnA service is not looking for an access token in a JSON request."
+    - content: "By setting the Content-Type the HTTP request to application/Bot."
+      isCorrect: false
+      explanation: "The Content-Type field will contain application/json and is not an authorization mechanism."
+    - content: "By using the Knowledge base ID, host endpoint, and Endpoint key values from the QnA service."
+      isCorrect: true
+      explanation: "Correct, these three fields are found in the Applicaiton Settings blade of the service and must be entered into the Bot application."

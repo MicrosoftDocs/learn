@@ -18,6 +18,7 @@ abstract:  |
   - Decide which cloud deployment model is best for you
 prerequisites: None
 iconUrl: /learn/achievements/principles-cloud-computing.svg
+ratingEnabled: true
 levels: 
 - beginner
 roles: 

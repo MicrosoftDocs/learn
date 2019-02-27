@@ -8,7 +8,7 @@ No matter your role, most people get started with the cloud by creating a virtua
 
 ::: zone pivot="linux-cloud"
 
-No matter your role, most people get started with the cloud by creating a virtual machine. Here you'll deploy a virtual machine running Ubuntu 16.04.
+No matter your role, most people get started with the cloud by creating a virtual machine. Here you'll deploy a virtual machine running Ubuntu 18.04.
 
 ::: zone-end
 
@@ -42,7 +42,7 @@ A snapshot of a running VM is called an _image_. Azure provides images for Windo
 
 ::: zone pivot="linux-cloud"
 
-A snapshot of a running VM is called an _image_. Azure provides images for Windows and several flavors of Linux. You can also create your own preconfigured images to make deployments go faster. Here you'll bring up an Ubuntu 16.04 VM, provided by Canonical.
+A snapshot of a running VM is called an _image_. Azure provides images for Windows and several flavors of Linux. You can also create your own preconfigured images to make deployments go faster. Here you'll bring up an Ubuntu 18.04 VM, provided by Canonical.
 
 ::: zone-end
 
@@ -234,7 +234,7 @@ While you're waiting, let's review the command you just ran.
 
 * The VM is named **myVM**. This name identifies the VM in Azure. It also becomes the VM's internal hostname, or computer name.
 * The resource group, or the VM's logical container, is named **<rgn>[sandbox resource group name]</rgn>**.
-* **UbuntuLTS** specifies the Ubuntu 16.04 LTS VM image.
+* **UbuntuLTS** specifies the Ubuntu 18.04 LTS VM image.
 * **Standard_DS2_v2** refers to the size of the VM. This size has two virtual CPUs and 7 GB of memory.
 * The `--admin-username` option specifies **azureuser** as the username for the VM. The username can be whatever you want.
 * The `--generate-ssh-keys` option creates an SSH key pair to enable you to log in to the VM.

@@ -11,7 +11,7 @@ metadata:
 title: Identify the tasks a Data Engineer performs in a cloud-hosted architecture
 summary: Learn the roles and responsibilities of a Data Engineer, and how they interact with other data and AI professionals. Explore the data engineering practices that are commonly undertaken in the role and examine a high-level process for architecting a data engineering project.
 abstract: | 
-  In this module, you will:
+  In this module you will:
   - List the new roles of modern data projects
   - Outline Data Engineering Practices
   - Explore the high-level process for architecting a data engineering project
