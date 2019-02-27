@@ -45,6 +45,9 @@ Here, we create two virtual machines without specifying any virtual network info
         --image Win2016Datacenter
     ```
 
+    > [!NOTE]
+    > Port 3389 is opened automatically by default when you create a Windows VM in Azure.
+
 1. Supply values for your password at the prompts. Remember to write this password down as you'll need it later to access the server.
 
 1. Copy the **publicIpAddress** value in the returned JSON from creating your VM so you can use it later.
