@@ -31,5 +31,9 @@ products:
 #- azure-devops
 units:
 - learn.choose-an-agile-approach.1-introduction
+- learn.choose-an-agile-approach.2-define-agile
+- learn.choose-an-agile-approach.3-define-azure-boards
+- learn.choose-an-agile-approach.4-create-a-backlog
+- learn.choose-an-agile-approach.5-summary
 badge:
   uid: learn.choose-an-agile-approach.badge
