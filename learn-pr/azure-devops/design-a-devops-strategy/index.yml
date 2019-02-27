@@ -29,5 +29,10 @@ products:
 #- azure-devops
 units:
 - learn.design-a-devops-strategy.1-introduction
+- learn.design-a-devops-strategy.2-design-processes
+- learn.design-a-devops-strategy.3-design-culture
+- learn.design-a-devops-strategy.4-design-performance
+- learn.design-a-devops-strategy.5-design-outcomes
+- learn.design-a-devops-strategy.6-summary
 badge:
   uid: learn.design-a-devops-strategy.badge
