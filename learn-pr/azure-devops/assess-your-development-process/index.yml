@@ -31,5 +31,13 @@ products:
 #- azure-devops
 units:
 - learn.assess-your-development-process.1-introduction
+- learn.assess-your-development-process.2-meet-the-team
+- learn.assess-your-development-process.3-assess-processes
+- learn.assess-your-development-process.4-assess-technology
+- learn.assess-your-development-process.5-assess-culture
+- learn.assess-your-development-process.6-assess-performance
+- learn.assess-your-development-process.7-assess-outcomes
+- learn.assess-your-development-process.8-devops-assessment
+- learn.assess-your-development-process.9-summary
 badge:
   uid: learn.assess-your-development-process.badge
