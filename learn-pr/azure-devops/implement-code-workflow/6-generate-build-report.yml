@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-code-workflow.6-generate-build-report
+title: Exercise - Generate a build report
+metadata:
+  title: Exercise - Generate a build report
+  description: TBD
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-generate-build-report.md)

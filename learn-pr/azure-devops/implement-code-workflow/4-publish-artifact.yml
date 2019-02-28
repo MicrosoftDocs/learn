@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.implement-code-workflow.4-publish-artifact
+title: Exercise - Publish the build artifact
+metadata:
+  title: Exercise - Publish the build artifact
+  description: TBD
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-publish-artifact.md)

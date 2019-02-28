@@ -1,0 +1,1 @@
+OK, you've connected your app on GitHub to an Azure pipeline. Now you're ready to start using pipelines for what they're meant for - collaborate with your team to quickly and safely move changes through the pipeline.

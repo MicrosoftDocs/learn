@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.implement-code-workflow
+metadata:
+  title: Implement a code workflow strategy in your build pipeline - Learn
+  description: TBD.
+  ms.date: 1/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Implement a code workflow strategy in your build pipeline
+summary: TBD.
+abstract: |
+  In this module, you will:
+  - TBD
+  - TBD
+  - TBD
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+#TODO: Are there specific roles we should be targetting?
+- administrator
+- developer
+- solution-architect
+products:
+#TODO: Create appropriate product labels
+- azure
+#- azure-devops
+units:
+- learn.implement-code-workflow.1-introduction
+- learn.implement-code-workflow.2-choose-a-code-flow-strategy
+- learn.implement-code-workflow.3-set-up-environment
+- learn.implement-code-workflow.4-publish-artifact
+- learn.implement-code-workflow.5-push-a-change
+- learn.implement-code-workflow.6-generate-build-report
+- learn.implement-code-workflow.7-tbd
+- learn.implement-code-workflow.8-summary
+badge:
+  uid: learn.implement-code-workflow.badge

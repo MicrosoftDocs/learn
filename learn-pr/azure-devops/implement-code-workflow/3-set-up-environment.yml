@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.continuously-build-applications-with-azure-pipelines.1-introduction
-title: Introduction
+uid: learn.implement-code-workflow.3-set-up-environment
+title: Set up your Azure DevOps environment
 metadata:
-  title: Introduction
+  title: Set up your Azure DevOps environment
   description: TBD
   ms.date: 09/24/2018
   author: tpetchel
@@ -12,6 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
-
-
+  [!include[](includes/3-set-up-environment.md)
