@@ -52,6 +52,6 @@ quiz:
       - content: "Have a free account"
         isCorrect: false
         explanation: "Free accounts can't use Azure Reservations."
-      - content: "Sse Spending Limits"
+      - content: "Set Spending Limits"
         isCorrect: false
         explanation: "Spending limits prevent you from exhausting the credit on your account within each billing period."
