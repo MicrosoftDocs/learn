@@ -2,7 +2,7 @@
 
 ## Title
 
-*Build a scalable application with virtual machine scale sets*
+Build a scalable application with virtual machine scale sets
 
 ## Role(s)
 
@@ -24,20 +24,20 @@
 
 ## Summary
 
-Enhance your application to automatically adjust to changes in load and minimize costs with Azure virtual machine scale sets.
+Enable your application to automatically adjust to changes in load while minimizing costs with Azure virtual machine scale sets.
 
 ## Learning objectives
 
-1. Identify the features and capabilities of virtual machine scale sets 
-1. Identify the use cases for running applications on virtual machine scale sets 
-1. Deploy an application on a virtual machine scale set 
+1. Identify the features and capabilities of virtual machine scale sets
+1. Identify the use cases for running applications on virtual machine scale sets
+1. Deploy an application on a virtual machine scale set
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *module title*
+Identify the subtasks of *Build a scalable application with virtual machine scale sets*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-|---|---|---|---|---|
+| ---- |---|---|---|---|
 | TODO | TODO | TODO | TODO | TODO |
 | TODO | TODO | TODO | TODO | TODO |
 | TODO | TODO | TODO | TODO | TODO |
@@ -47,9 +47,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice (from the module proposal):
-
-    *Add your scenario [(Guidance)](id-guidance-scenarios.md)*
+    A domestic shipping company has a web site that customers can use to manage and check the status of their shipments. This site currently runs on virtual machines on-premises, and the company is moving this application to Azure. They currently have a fixed capacity on-premises, and are unable to adjust to fluctuations in load without manually intervening and creating or deallocating virtual machines. They need a solution that will automatically handle these fluctuations in load to ensure consistent performance for their web site. They also need a way to easily roll out application updates to the servers while minimizing impact to end users.
 
 1. **Learning-content unit title**
 
