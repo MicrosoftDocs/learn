@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: 'What is an Azure _region_?'
     choices:
-    - content: 'An Azure data center within a specific geographic location.'
+    - content: 'One or more Azure data centers within a specific geographical location.'
       isCorrect: true
       explanation: 'Azure regions help you deliver your apps and services closest to your users. West US and North Europe are examples.'
     - content: 'A way of breaking networks into smaller networks.'
