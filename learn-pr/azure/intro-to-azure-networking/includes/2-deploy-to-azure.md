@@ -49,7 +49,7 @@ Let's break this down.
     :::column span="3":::
 **What's an Azure region?**
 
-A _region_ is an Azure data center within a specific geographic location. East US, West US, and North Europe are examples of regions. In this instance, you see that the application is running in the East US region.
+A _region_ is one or more Azure data centers within a specific geographic location. East US, West US, and North Europe are examples of regions. In this instance, you see that the application is running in the East US region.
 
   :::column-end:::
 :::row-end:::
