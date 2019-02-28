@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-applications-with-azure-pipelines.1-introduction
-title: Introduction
+uid: learn.build-applications-with-azure-pipelines.2-define-ci
+title: What is continuous integration?
 metadata:
-  title: Introduction
+  title: What is continuous integration?
   description: TBD
   ms.date: 09/24/2018
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/2-define-ci.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-applications-with-azure-pipelines.1-introduction
-title: Introduction
+uid: learn.build-applications-with-azure-pipelines.5-create-the-pipeline
+title: Exercise - Create the pipeline
 metadata:
-  title: Introduction
+  title: Exercise - Create the pipeline
   description: TBD
   ms.date: 09/24/2018
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/5-create-the-pipeline.md)]
