@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.run-quality-tests-when-your-application-builds.1-introduction
-title: Introduction
+uid: learn.run-quality-tests-when-your-application-builds.7-fix-failed-test
+title: Exercise - Fix a failed test
 metadata:
-  title: Introduction
+  title: Exercise - Fix a failed test
   description: TBD
   ms.date: 09/24/2018
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/7-fix-failed-test.md)]

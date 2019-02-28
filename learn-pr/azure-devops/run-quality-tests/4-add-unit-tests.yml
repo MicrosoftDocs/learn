@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-quality-tests-when-your-application-builds.4-add-unit-tests
+title: Exercise - Add unit tests to your application
+metadata:
+  title: Exercise - Add unit tests to your application
+  description: TBD
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-add-unit-tests.md)]
