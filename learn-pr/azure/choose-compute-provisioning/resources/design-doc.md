@@ -84,6 +84,7 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
 ## Notes
+
 State configuration - https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview
 
 Terraform - https://docs.microsoft.com/en-us/azure/terraform/
