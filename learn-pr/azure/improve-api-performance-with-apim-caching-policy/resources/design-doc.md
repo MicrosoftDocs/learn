@@ -37,7 +37,9 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 |---------|-------------------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-|         |                                                                   |                                                          |                                                  |                                                                                                                                |
+| TODO    | TODO                                                              | TODO                                                     | TODO                                             | TODO                                                                                                                           |
+| TODO    | TODO                                                              | TODO                                                     | TODO                                             | TODO                                                                                                                           |
+| TODO    | TODO                                                              | TODO                                                     | TODO                                             | TODO                                                                                                                           |
 
 ## Outline the units
 
@@ -45,19 +47,38 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
 
     You are a developer for a board game company. A product line produced by your company has recently become very popular, and the volume of requests from your retail partners to your inventory API is growing quickly: much faster than the rate that your inventory actually changes. You'd like to be able to respond to requests successfully without incurring load on your API.
 
-*Add additional units. Examples*
+1. **Learning-content unit title**
 
-1. *Learning content unit*
+    List the content that will enable the learner to *subtask*:
 
-    *{List the content that will enable the learner to carry out a subtask.}*
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
 
-1. *Knowledge check or exercise unit*
+1. **Knowledge check**
 
-    *{List the steps of the exercise, or describe the knowledge check questions.}*
+    What types of questions will test *learning objective*?
 
-1. Summary
+    - Question type
+    - Question type
+    
+ 1. **Exercise - exercise unit title**
 
-    *{How did you solve the scenario problem with the knowledge learned in the module?}*
+    List the steps which apply the learning content from previous unit:
+
+    1. Step
+    1. Step
+    1. Step
+
+1. **Summary**
+
+    How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
 ## Notes
 
