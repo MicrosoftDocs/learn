@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Monitor a website hosted with Azure App Service/instrument-server-side-web-application-code-with-application-insights</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.7%" y="-8.0%" width="113.3%" height="116.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0964956975 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Monitor-a-website-hosted-with-Azure-App-Service" transform="translate(-50.000000, -660.000000)">
+            <g id="Monitor-a-website-hosted-with-Azure-App-Service/instrument-server-side-web-application-code-with-application-insights" transform="translate(50.000000, 660.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Code-Editor" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(18.000000, 23.000000)">
+                            <path d="M56.1333333,2 L3.86666667,2 C2.8372,2 2,2.82524 2,3.84 L2,46.16 C2,47.17384 2.8372,48 3.86666667,48 L56.1333333,48 C57.1618667,48 58,47.17384 58,46.16 L58,3.84 C58,2.82524 57.1618667,2 56.1333333,2" id="Fill-1523" fill="#182A37"></path>
+                            <path d="M56.25,0 L3.75,0 C1.6875,0 0,1.66666667 0,3.7037037 L0,46.2962963 C0,48.3333333 1.6875,50 3.75,50 L56.25,50 C58.3125,50 60,48.3333333 60,46.2962963 L60,3.7037037 C60,1.66666667 58.3125,0 56.25,0 Z M56.1333333,2 C57.1618667,2 58,2.82524 58,3.84 L58,46.16 C58,47.17384 57.1618667,48 56.1333333,48 L3.86666667,48 C2.8372,48 2,47.17384 2,46.16 L2,3.84 C2,2.82524 2.8372,2 3.86666667,2 L56.1333333,2 L56.1333333,2 Z" id="Fill-1524" fill="#384B58"></path>
+                            <polygon id="Fill-1525" fill="#384B58" points="11 48 13 48 13 2 11 2"></polygon>
+                            <path d="M8,9 C8,9.828 7.328,10.5 6.5,10.5 C5.67125,10.5 5,9.828 5,9 C5,8.17125 5.67125,7.5 6.5,7.5 C7.328,7.5 8,8.17125 8,9" id="Fill-1528" fill="#E1E4E1"></path>
+                            <path d="M8,16 C8,16.828 7.328,17.5 6.5,17.5 C5.67125,17.5 5,16.828 5,16 C5,15.17125 5.67125,14.5 6.5,14.5 C7.328,14.5 8,15.17125 8,16" id="Fill-1529" fill="#E1E4E1"></path>
+                            <path d="M8,23 C8,23.828 7.328,24.5 6.5,24.5 C5.67125,24.5 5,23.828 5,23 C5,22.17125 5.67125,21.5 6.5,21.5 C7.328,21.5 8,22.17125 8,23" id="Fill-1530" fill="#E1E4E1"></path>
+                            <path d="M8,30 C8,30.828 7.328,31.5 6.5,31.5 C5.67125,31.5 5,30.828 5,30 C5,29.17125 5.67125,28.5 6.5,28.5 C7.328,28.5 8,29.17125 8,30" id="Fill-1528" fill="#E1E4E1"></path>
+                            <path d="M20,44 C19.447,44 19,43.553 19,43 C19,42.447 19.447,42 20,42 L31,42 C31.553,42 32,42.447 32,43 C32,43.553 31.553,44 31,44 L20,44 Z" id="Fill-1531" fill="#FFFFFE"></path>
+                            <path d="M24,39 L20,39 C19.447,39 19,38.553 19,38 C19,37.447 19.447,37 20,37 L24,37 C24.553,37 25,37.447 25,38 C25,38.553 24.553,39 24,39" id="Fill-1533" fill="#EFB252"></path>
+                            <path d="M31,34 L20,34 C19.447,34 19,33.553 19,33 C19,32.447 19.447,32 20,32 L31,32 C31.553,32 32,32.447 32,33 C32,33.553 31.553,34 31,34" id="Fill-1534" fill="#FFFFFE"></path>
+                            <path d="M46,34 L35,34 C34.447,34 34,33.553 34,33 C34,32.447 34.447,32 35,32 L46,32 C46.553,32 47,32.447 47,33 C47,33.553 46.553,34 46,34" id="Fill-1535" fill="#FFFFFE"></path>
+                            <path d="M53,34 L50,34 C49.447,34 49,33.553 49,33 C49,32.447 49.447,32 50,32 L53,32 C53.553,32 54,32.447 54,33 C54,33.553 53.553,34 53,34" id="Fill-1536" fill="#DF5142"></path>
+                            <path d="M39,39 L28,39 C27.447,39 27,38.553 27,38 C27,37.447 27.447,37 28,37 L39,37 C39.553,37 40,37.447 40,38 C40,38.553 39.553,39 39,39" id="Fill-1537" fill="#DF5142"></path>
+                            <path d="M39,29 L35,29 C34.447,29 34,28.553 34,28 C34,27.447 34.447,27 35,27 L39,27 C39.553,27 40,27.447 40,28 C40,28.553 39.553,29 39,29" id="Fill-1538" fill="#EFB252"></path>
+                            <path d="M31,29 L20,29 C19.447,29 19,28.553 19,28 C19,27.447 19.447,27 20,27 L31,27 C31.553,27 32,27.447 32,28 C32,28.553 31.553,29 31,29" id="Fill-1539" fill="#55B7D9"></path>
+                            <path d="M31,24 L20,24 C19.447,24 19,23.553 19,23 C19,22.447 19.447,22 20,22 L31,22 C31.553,22 32,22.447 32,23 C32,23.553 31.553,24 31,24" id="Fill-1540" fill="#FFFFFE"></path>
+                            <g id="Pie-Chart" stroke-width="1" fill="none" transform="translate(40.000000, 6.000000)">
+                                <circle id="Oval" fill="#55B7D9" fill-rule="nonzero" cx="6" cy="6" r="6"></circle>
+                                <path d="M6,0.0156712538 C6.13795849,0.00528531827 6.27731207,0 6.41787917,0 C9.50079938,0 12,2.54230906 12,5.67840621 C12,5.78633388 11.99704,5.89355828 11.9911982,6 L6,6 L6,0.0156712538 Z" id="Combined-Shape" fill="#0095B2" fill-rule="nonzero"></path>
+                            </g>
+                            <g id="Graph" stroke-width="1" fill="none" transform="translate(19.000000, 6.000000)">
+                                <rect id="Blue" fill="#55B7D9" fill-rule="nonzero" x="0" y="0" width="4" height="12"></rect>
+                                <rect id="Red" fill="#DF5142" fill-rule="nonzero" x="6" y="5" width="4" height="7"></rect>
+                                <rect id="Green" fill="#7CB65A" fill-rule="nonzero" x="12" y="3" width="4" height="9"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

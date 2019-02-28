@@ -31,7 +31,7 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     Set the name into an environment variable so we can reuse it.
 
     ```azurecli
-    NS_NAME=myEvt-HubNs1
+    NS_NAME=[name]
     ````
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]

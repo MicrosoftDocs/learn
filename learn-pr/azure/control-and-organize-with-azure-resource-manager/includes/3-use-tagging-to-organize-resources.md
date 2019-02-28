@@ -16,7 +16,7 @@ Tags can be added and manipulated through the Azure portal, Azure CLI, Azure Pow
 ```azurecli
 az resource tag --tags Department=Finance \
        -g msftlearn-core-infrastructure-rg \
-       -name msftlearn-vnet1 \
+       --name msftlearn-vnet1 \
        --resource-type "Microsoft.Network/virtualNetworks"
 ```
 
