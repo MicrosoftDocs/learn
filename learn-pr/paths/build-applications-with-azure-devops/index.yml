@@ -38,7 +38,6 @@ modules:
 - learn.build-applications-with-azure-pipelines
 - learn.continuously-build-applications-with-azure-pipelines
 - learn.run-quality-tests-when-your-application-builds
-- learn.manage-app-config
 - learn.secure-development-and-build-processes
 - learn.secure-build-dependencies
 - learn.manage-build-dependencies
