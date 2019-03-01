@@ -14,3 +14,12 @@ Overall, I get lost pretty quickly.
 
 That said, my initial thinking is outlined here. But we should vet that that's a good plan and squares with what we want to tell customers.
 )
+
+-----
+
+Notes from spike:
+
+References:
+- [Unit testing C# with NUnit and .NET Core](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-nunit)
+- [Visual Studio Test task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)
+- [Build, test, and deploy .NET Core apps in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/dotnet-core?view=azure-devops&tabs=yaml)
