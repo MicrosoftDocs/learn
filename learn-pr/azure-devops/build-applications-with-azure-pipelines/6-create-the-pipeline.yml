@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-applications-with-azure-pipelines.5-create-the-pipeline
+uid: learn.build-applications-with-azure-pipelines.6-create-the-pipeline
 title: Exercise - Create the pipeline
 metadata:
   title: Exercise - Create the pipeline
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-create-the-pipeline.md)]
+  [!include[](includes/6-create-the-pipeline.md)]

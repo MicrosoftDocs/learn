@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-applications-with-azure-pipelines.4-build-locally
+uid: learn.build-applications-with-azure-pipelines.5-build-locally
 title: Exercise - Build the app locally
 metadata:
   title: Exercise - Build the app locally
@@ -12,6 +12,6 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-build-locally.md)]
+  [!include[](includes/5-build-locally.md)]
 
 
