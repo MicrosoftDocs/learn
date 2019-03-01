@@ -10,7 +10,7 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Build applications with Azure Pipelines
-summary: Learn what we mean by _Continuous Integration_ and pipelines. Create a pipeline build an application.
+summary: Learn what we mean by _Continuous Integration_ and build pipelines.
 abstract: |
   In this module, you will:
   - TBD
@@ -31,5 +31,11 @@ products:
 #- azure-devops
 units:
 - learn.build-applications-with-azure-pipelines.1-introduction
+- learn.build-applications-with-azure-pipelines.2-what-is-continuous-integration
+- learn.build-applications-with-azure-pipelines.3-plan-build-tasks
+- learn.build-applications-with-azure-pipelines.4-build-locally
+- learn.build-applications-with-azure-pipelines.5-create-the-pipeline
+- learn.build-applications-with-azure-pipelines.6-add-build-badge
+- learn.build-applications-with-azure-pipelines.7-summary
 badge:
   uid: learn.build-applications-with-azure-pipelines.badge

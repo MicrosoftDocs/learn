@@ -31,5 +31,11 @@ products:
 #- azure-devops
 units:
 - learn.scan-code-for-vulnerabilities.1-introduction
+- learn.scan-code-for-vulnerabilities.2-implement-secure-process
+- learn.scan-code-for-vulnerabilities.3-manage-secrets
+- learn.scan-code-for-vulnerabilities.4-set-up-environment
+- learn.scan-code-for-vulnerabilities.5-tbd1
+- learn.scan-code-for-vulnerabilities.6-tbd2
+- learn.scan-code-for-vulnerabilities.7-summary
 badge:
   uid: learn.scan-code-for-vulnerabilities.badge
