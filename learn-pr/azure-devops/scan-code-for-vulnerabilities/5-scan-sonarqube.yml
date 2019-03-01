@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.scan-code-for-vulnerabilities.5-tbd1
-title: Exercise - TBD1
+title: Exercise - Scan for vulnerabilities using SonarQube
 metadata:
-  title: Introduction
-  description: Exercise - TBD1
+  title: Exercise - Scan for vulnerabilities using SonarQube
+  description: TBD.
   ms.date: 09/24/2018
   author: tpetchel
   ms.author: thpetche

@@ -1,3 +1,7 @@
+TODO: After spiking a bit, I think we can remove this unit.
+
+-----
+
 So far, we used credscan to verify there are no secret files in the app sources.
 
 But what about the application sources themselves?
