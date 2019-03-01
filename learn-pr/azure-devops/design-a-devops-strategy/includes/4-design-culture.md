@@ -7,4 +7,4 @@ Here are some areas from the Self-Assessment and just one example of a good beha
   * There is high cooperation among teams. Risks are shared. Failure leads to learning and inquiry to help the team improve. Innovation is encouraged and implemented
 * How do teams share knowledge and learnings among themselves?
 
-Reference: https://docs.microsoft.com/en-us/azure/devops/learn/what-is-devops-culture
+Reference: https://docs.microsoft.com/azure/devops/learn/what-is-devops-culture

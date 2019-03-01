@@ -8,7 +8,7 @@ Here, you'll learn how to set up automated testing to help ensure that your late
 
 -----
 
-(Before we start - after thinking about this module, [I looked at the documentation](https://docs.microsoft.com/en-us/azure/devops/test/index-tp?view=azdevops). They place heavy emphasis on manual & exploratory testing, which I'd like to avoid. The "Continuous testing" link goes to a [very specific anchor](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/dotnet-core?view=azdevops&tabs=yaml#run-your-tests), and "Unit and functional testing" links out to the [Visual Studio 2017 docs](https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code?view=vs-2017).
+(Before we start - after thinking about this module, [I looked at the documentation](https://docs.microsoft.com/azure/devops/test/index-tp?view=azdevops). They place heavy emphasis on manual & exploratory testing, which I'd like to avoid. The "Continuous testing" link goes to a [very specific anchor](https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core?view=azdevops&tabs=yaml#run-your-tests), and "Unit and functional testing" links out to the [Visual Studio 2017 docs](https://docs.microsoft.com/visualstudio/test/unit-test-your-code?view=vs-2017).
 
 Overall, I get lost pretty quickly.
 

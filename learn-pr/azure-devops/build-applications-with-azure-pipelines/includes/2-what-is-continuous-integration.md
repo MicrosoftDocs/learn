@@ -12,7 +12,7 @@ Here are some starter ideas for sections.
 
 ## What is Azure Pipelines?
 
-We have complete [reference documentation](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/?view=azure-devops).
+We have complete [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops).
 
 ### What are build jobs and tasks?
 

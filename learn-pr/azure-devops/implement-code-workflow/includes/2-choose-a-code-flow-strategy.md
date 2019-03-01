@@ -18,8 +18,8 @@ Discuss how this fits in with a CI pipeline.
 Notes:
 
 * What are triggers?
-  * [Reference](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml)
+  * [Reference](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml)
   * CI trigger vs PR trigger
 * What are approvals and gates?
-  * [Reference](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/approvals/?view=azure-devops)
+  * [Reference](https://docs.microsoft.com/azure/devops/pipelines/release/approvals/?view=azure-devops)
 * Talk about the Triggers tab from the UI
