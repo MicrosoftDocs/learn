@@ -36,7 +36,7 @@ products:
 #- azure-devops
 modules:
 - learn.build-applications-with-azure-pipelines
-- learn.continuously-build-applications-with-azure-pipelines
+- learn.implement-code-workflow
 - learn.run-quality-tests-when-your-application-builds
 - learn.scan-code-for-vulnerabilities
 - learn.secure-build-dependencies
