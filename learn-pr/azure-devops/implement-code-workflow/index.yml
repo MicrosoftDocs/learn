@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.implement-code-workflow
 metadata:
-  title: Implement a code workflow strategy in your build pipeline - Learn
+  title: Implement a code workflow in your build pipeline - Learn
   description: TBD.
   ms.date: 1/1/2019
   author: tpetchel
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Implement a code workflow strategy in your build pipeline
+title: Implement a code workflow in your build pipeline
 summary: TBD.
 abstract: |
   In this module, you will:

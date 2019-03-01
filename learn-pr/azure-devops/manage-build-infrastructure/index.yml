@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.manage-build-infrastructure
 metadata:
-  title: Manage build infrastructure - Learn
+  title: Host your own build server in your build pipeline - Learn
   description: TBD.
   ms.date: 1/1/2019
   author: tpetchel
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Manage build infrastructure
+title: Host your own build server in your build pipeline
 summary: TBD.
 abstract: |
   In this module, you will:
