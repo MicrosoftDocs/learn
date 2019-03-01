@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.manage-build-dependencies
 metadata:
-  title: Manage build dependencies - Learn
+  title: Manage dependencies in your build pipeline - Learn
   description: TBD.
   ms.date: 1/1/2019
   author: tpetchel
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Manage build dependencies
+title: Manage dependencies in your build pipeline
 summary: TBD.
 abstract: |
   In this module, you will:
@@ -31,5 +31,9 @@ products:
 #- azure-devops
 units:
 - learn.manage-build-dependencies.1-introduction
+- learn.manage-build-dependencies.2-tbd
+- learn.manage-build-dependencies.3-set-up-environment
+- learn.manage-build-dependencies.4-tbd
+- learn.manage-build-dependencies.5-summary
 badge:
   uid: learn.manage-build-dependencies.badge
