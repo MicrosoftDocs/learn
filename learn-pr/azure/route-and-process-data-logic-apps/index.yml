@@ -37,3 +37,6 @@ units:
 - learn.azure.route-and-process-data-logic-apps.design-knowledge-check
 - learn.azure.route-and-process-data-logic-apps.detect-external-event-using-trigger
 - learn.azure.route-and-process-data-logic-apps.create-social-media-tracker
+- learn.azure.route-and-process-data-logic-apps.execute-an-action
+- learn.azure.route-and-process-data-logic-apps.analyze-content-of-tweet
+- learn.azure.route-and-process-data-logic-apps.summary
