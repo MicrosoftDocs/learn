@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'which of the following is the definition of the term network latency?'
+  - content: 'Which of the following is the definition of the term network latency?'
     choices:
     - content: 'The amount of throughput available on the network'
       isCorrect: false

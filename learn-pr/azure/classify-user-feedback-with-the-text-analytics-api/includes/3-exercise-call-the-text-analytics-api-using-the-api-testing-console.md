@@ -75,7 +75,7 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
 
 ## Make some API calls
 
-1. Select the **Open API testing console** button to open the live, interactive, API console.
+1. In the **Open API testing console** section of this page, select the button corresponding to the location or region in which you created  the Cognitive Services account. Selecting this button opens the live, interactive, API console.
 
 1. Paste the access key you saved earlier into the field labeled **Ocp-Apim-Subscription-Key**. Notice that the key is written automatically into the HTTP request window as a header value.
 
