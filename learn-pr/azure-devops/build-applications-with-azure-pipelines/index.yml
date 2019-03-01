@@ -36,7 +36,6 @@ units:
 - learn.build-applications-with-azure-pipelines.4-set-up-environment
 - learn.build-applications-with-azure-pipelines.5-build-locally
 - learn.build-applications-with-azure-pipelines.6-create-the-pipeline
-- learn.build-applications-with-azure-pipelines.7-add-build-badge
 - learn.build-applications-with-azure-pipelines.8-summary
 badge:
   uid: learn.build-applications-with-azure-pipelines.badge

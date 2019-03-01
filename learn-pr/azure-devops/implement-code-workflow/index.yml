@@ -35,8 +35,9 @@ units:
 - learn.implement-code-workflow.3-set-up-environment
 - learn.implement-code-workflow.4-publish-artifact
 - learn.implement-code-workflow.5-push-a-change
-- learn.implement-code-workflow.6-generate-build-report
-- learn.implement-code-workflow.7-tbd
-- learn.implement-code-workflow.8-summary
+- learn.implement-code-workflow.6-add-build-badge
+- learn.implement-code-workflow.7-generate-build-report
+- learn.implement-code-workflow.8-tbd
+- learn.implement-code-workflow.9-summary
 badge:
   uid: learn.implement-code-workflow.badge
