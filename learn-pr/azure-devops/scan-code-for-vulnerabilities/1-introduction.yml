@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-your-development-and-build-processes.7-summary
-title: Summary
+uid: learn.scan-code-for-vulnerabilities.1-introduction
+title: Introduction
 metadata:
-  title: Summary
+  title: Introduction
   description: TBD
   ms.date: 09/24/2018
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/1-introduction.md)]
