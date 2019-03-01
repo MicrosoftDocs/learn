@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-build-infrastructure.4-tbd
+title: Exercise - TBD
+metadata:
+  title: Exercise - TBD
+  description: TBD
+  ms.date: 09/24/2018
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-tbd.md)]

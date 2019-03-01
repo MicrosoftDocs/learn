@@ -31,5 +31,9 @@ products:
 #- azure-devops
 units:
 - learn.manage-build-infrastructure.1-introduction
+- learn.manage-build-infrastructure.2-tbd
+- learn.manage-build-infrastructure.3-set-up-environment
+- learn.manage-build-infrastructure.4-tbd
+- learn.manage-build-infrastructure.5-summary
 badge:
   uid: learn.manage-build-infrastructure.badge
