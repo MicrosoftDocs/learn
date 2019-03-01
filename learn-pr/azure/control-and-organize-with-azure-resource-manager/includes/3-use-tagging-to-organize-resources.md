@@ -4,23 +4,23 @@ You've gone through your resources and moved them into resource groups that are 
 
 Tags are name/value pairs of text data that you can apply to resources and resource groups. Tags allow you to associate custom details about your resource, in addition to the standard Azure properties a resource has:
 
-- department (finance, marketing, etc.)
+- department (like finance, marketing, and more)
 - environment (prod, test, dev),
 - cost center
-- life cycle and automation (e.g. shutdown and startup of virtual machines).
+- life cycle and automation (like shutdown and startup of virtual machines).
 
-A resource can have up to 15 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags are not inherited from parent resources. Not all resource types support tags, and tags cannot be applied to classic resources.
+A resource can have up to 15 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags aren't inherited from parent resources. Not all resource types support tags, and tags can't be applied to classic resources.
 
 Tags can be added and manipulated through the Azure portal, Azure CLI, Azure PowerShell, Resource Manager templates, and through the REST API. For example, to add a resource tag to a virtual network using the Azure CLI, you could use the following command:
 
 ```azurecli
 az resource tag --tags Department=Finance \
        -g msftlearn-core-infrastructure-rg \
-       -name msftlearn-vnet1 \
+       --name msftlearn-vnet1 \
        --resource-type "Microsoft.Network/virtualNetworks"
 ```
 
-In addition, you can leverage Azure Policy to add tags to created resources based on conditions such as who is creating the resource, or the type of resource being created. For example, you could add a tag to identify a cost center, or specific environment a resource will be created in.
+You can use Azure Policy to automatically add or enforce tags for resources your organization creates based on policy conditions that you define. For example, you could require that a value for the Department tag is entered when someone in your organization creates a virtual network in a specific resource group.
 
 ## Apply tags to resources
 
@@ -32,7 +32,7 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
     ![Image of portal showing how to add the tags column to the display](../media/3-add-tag-column.PNG)
 
-1. You should now see the tags column, but it will be empty since we've not added any tags yet. We'll add the tags directly here. You can also add tags to any resource that supports it on the resource's **Tags** panel. In the list of resources, you should see a pencil in the **TAGS** column where you can directly edit the tags. Click the pencil for the **msftlearn-vnet1** resource.
+1. You should now see the tags column, but it will be empty since we haven't added any tags yet. We'll add the tags directly here. You can also add tags to any resource that supports it on the resource's **Tags** panel. In the list of resources, you should see a pencil in the **TAGS** column where you can directly edit the tags. Click the pencil for the **msftlearn-vnet1** resource.
 
 1. This will display the dialog to edit the Tags. Let's add a couple tags to this VNet. In the **NAME** box type **Department**, and in the **VALUE** box type **Finance**. Click **Save** to save your changes, then click **Close** to close the dialog.
 
@@ -52,13 +52,13 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
     Back in the resource list you'll now see a **2** displayed as we now have two tags applied to each resource.
 
-1. Let's take a look at how we can use tags to filter your resources. On the main Azure menu on the left select **All resources**.
+1. Let's take a look at how we can use tags to filter your resources. On the main Azure menu on the left, select **All resources**.
 
 1. In the **All tags** drop down, under **Environment** select **Training**. You should see only your two VNets displayed, since we tagged those resources with the **Environment:Training** tag.
 
     ![Image of all resources filtered on the Training tag](../media/3-all-resources-tag-filter.PNG)
 
-1. We can further filter these by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
+1. We can further filter these resources by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
 
 ## Use tags for organization
 
@@ -68,6 +68,6 @@ You can use tags to group your billing data. For example, if you're running mult
 
 You can retrieve all the resources in your subscription with a specific tag name or value. Tags enable you to retrieve related resources from different resource groups. This approach is helpful when you need to organize resources for billing or management.
 
-Tagging resources can also help in monitoring to track down impacted resources. Monitoring systems could include tag data with alerts, giving you the ability to know exactly who is impacted. In our example above, we applied the **Department:Finance** tag to the **msftlearn-vnet1** resource. If an alarm was thrown on **msftlearn-vnet1** and the alarm included the tag, we'd know that the finance department may be impacted by the condition that triggered the alarm. This contextual information can be valuable if and when an issue occurs.
+Tagging resources can also help in monitoring to track down impacted resources. Monitoring systems could include tag data with alerts, giving you the ability to know exactly who is impacted. In our example above, we applied the **Department:Finance** tag to the **msftlearn-vnet1** resource. If an alarm was thrown on **msftlearn-vnet1** and the alarm included the tag, we'd know that the finance department may be impacted by the condition that triggered the alarm. This contextual information can be valuable if an issue occurs.
 
 It's also common for tags to be used in automation. If you want to automate the shutdown and startup of virtual machines in development environments during off-hours to save costs, you can use tags to assist in this. Add a **shutdown:6PM** and **startup:7AM** tag to the virtual machines, then create an automation job that looks for these tags, and shuts them down or starts them up based on the tag value. There are several solutions in the Azure Automation Runbooks Gallery that use tags in a similar manner to accomplish this.

@@ -5,22 +5,23 @@ Tools that are commonly used for day-to-day management and interaction include:
 - **Azure portal** for interacting with Azure via a Graphical User Interface (GUI)
 - **Azure PowerShell** and **Azure Command-Line Interface** (CLI) for command line and automation-based interactions with Azure
 - **Azure Cloud Shell** for a web-based command-line interface
-
-Creating administration scripts and using automation tools is a powerful way to optimize your workflow. You can automate repetitive tasks, and once a script has been verified, it will run consistently, thereby reducing errors.
+- **Azure mobile app** for monitoring and managing your resources from your mobile device
 
 ## Azure portal
 
-The Azure portal is a website that you can access with a web browser, by going to the URL [https://portal.azure.com](https://portal.azure.com). From here, you can interact manually with all the Azure services. You can identify a service you're looking for, get links for help and more learning on particular topics, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
+The [Azure portal](https://portal.azure.com) is a public website that you can access with any web browser. Once you sign in with your Azure account, you can create, manage and monitor any available Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
 
-The dashboard view provides high-level details about your Azure environment. You can customize the portal look as necessary by moving and resizing tiles, displaying particular services of interest, accessing links for help and support, and providing feedback.
+![Screenshot of the Azure portal](../media/2-azure-portal.png)
 
-The portal does not provide any way to automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time by completing the wizard for each VM. This makes the portal approach time-consuming and error-prone for complex tasks.
+The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles, and displaying services you're interested in.
+
+The portal doesn't provide any way to automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time by completing the wizard for each VM. This makes the portal approach time-consuming and error-prone for complex tasks.
  
- ## Azure PowerShell
+## Azure PowerShell
 
-Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core that enables you to connect to your Azure subscription and manage resources. Azure PowerShell requires Windows PowerShell to function. PowerShell provides services such as the shell window and command parsing. Azure PowerShell then adds the Azure-specific commands.
+Azure PowerShell is a module that you can install for Windows PowerShell, or PowerShell Core, which is a cross-platform version of PowerShell that runs on Windows, Linux or macOS. Azure PowerShell enables you to connect to your Azure subscription and manage resources. Windows PowerShell and PowerShell Core provide services such as the shell window and command parsing. Azure PowerShell then adds the Azure-specific commands.
 
-For example, Azure PowerShell provides the `New-AzureRmVM` command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch PowerShell, sign in to your Azure account using the command `Connect-AzureRMAccount`, and then issue a command such as:
+For example, Azure PowerShell provides the `New-AzureRmVM` command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch PowerShell, install the Azure PowerShell module, sign in to your Azure account using the command `Connect-AzureRMAccount`, and then issue a command such as:
 
 ```powershell
 New-AzureRmVm `
@@ -29,8 +30,8 @@ New-AzureRmVm `
     -Image "UbuntuLTS"
     ...
 ```
-> [!NOTE]
-> PowerShell Core is a cross-platform version of PowerShell that runs on Windows, Linux or macOS.
+
+Creating administration scripts and using automation tools is a powerful way to optimize your workflow. You can automate repetitive tasks. Once a script is verified, it runs consistently, which can reduce errors. Another scripting environment is the Azure CLI.
 
 ## Azure CLI
 
@@ -47,17 +48,65 @@ az vm create \
 
 ## Azure Cloud Shell
 
-Azure Cloud Shell is a browser-based scripting environment in your portal. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
+[Azure Cloud Shell](https://shell.azure.com/) is a browser-based scripting environment for command-line administration of Azure resources. It provides support for two shell environments. Linux users can opt for a Bash experience, while Windows users can use PowerShell.
 
-An Azure storage account is required to use the cloud shell, and you will be prompted to create one when accessing the Azure cloud shell.
+![Screenshot of Azure Cloud Shell](../media/2-cloud-shell.png)
 
-In Microsoft Learn, we will use the Cloud Shell for many of the interactive exercises you will use to try out Azure features.
+Both environments support the Azure CLI and Azure PowerShell CLIs. Linux defaults to the Azure CLI (with the `az` command pre-installed), but you can switch to PowerShell for Linux by typing `pwsh`. The Windows-based environment has both CLI tools pre-installed. In addition to these administrative tools, the Cloud Shell has a suite of developer tools, text editors, and other tools available including:
 
-> [!NOTE] 
-> You can access Azure Cloud Shell by going to [https://shell.azure.com/](https://shell.azure.com/).
+:::row:::
+  :::column:::
+**Developer Tools**
+- .NET Core
+- Python
+- Java
+- Node.js
+- Go
+  :::column-end:::
+  :::column:::
+**Editors**
+- code (Cloud Shell Editor)
+- vim
+- nano
+- emacs
+  :::column-end:::
+  :::column:::
+**Other tools**
+- git
+- maven
+- make
+- npm
+- [and more...](https://docs.microsoft.com/azure/cloud-shell/features#tools)
+  :::column-end:::
+:::row-end:::
+
+You can create, build, and deploy apps right from this browser-based environment. It's all persistent as well - you're prompted to create an Azure Storage Account when you access the Azure Cloud Shell. This storage area is used as your $HOME folder and any scripts or data you place here is kept across sessions. Each subscription has a unique storage account associated with it so you can keep the data and tools you need right for each account you manage.
+
+We'll use the Cloud Shell in Microsoft Learn for many of the interactive exercises to try out Azure features.
+
+## Azure mobile app
+
+:::row:::
+  :::column:::
+![Screenshot of the Azure mobile app](../media/2-azure-mobile-app.png)
+  :::column-end:::
+  :::column span="3":::
+The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
+
+- Check the current status and important metrics of your services
+- Stay informed with notifications and alerts about important health issues 
+- Quickly diagnose and fix issues anytime, anywhere
+- Review the latest Azure alerts
+- Start, stop, and restart virtual machines or web apps
+- Connect to your virtual machines
+- Manage permissions with role-based access control (RBAC)
+- Use the Azure Cloud Shell to run saved scripts or perform ad hoc administrative tasks
+- and more...
+  :::column-end:::
+:::row-end:::
 
 ## Other options
 
-There are also Azure SDKs for a range of languages and frameworks, as well as REST APIs that you can use to manage and control Azure resources programmatically. For a full list of tools available, see the [Downloads](https://azure.microsoft.com/en-us/downloads/) page.
+There are also Azure SDKs for a range of languages and frameworks, and REST APIs that you can use to manage and control Azure resources programmatically. For a full list of tools available, see the [Downloads](https://azure.microsoft.com/downloads/) page.
 
-When starting with Azure, you will most often use the Azure portal. Let's take a closer look at the portal approach.
+When starting with Azure, you'll most often use the Azure portal. Let's take a closer look at the portal approach.

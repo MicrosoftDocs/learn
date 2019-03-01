@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.7-bind-the-azure-function-to-twilio
+title: Bind the function to Twilio to send SMS messages
+metadata:
+  title: Bind the function to Twilio to send SMS messages
+  description: Bind the function to Twilio to send SMS messages
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+#labId: 46464
+durationInMinutes: 11
+content: |
+  [!include[](includes/7-bind-the-azure-function-to-twilio.md)]
+  

@@ -9,11 +9,11 @@ Event Grid supports most Azure services as a publisher or subscriber and can be 
 
 There are several concepts in Azure Event Grid that connect a source to a subscriber:
 
-1. **Events:** What happened.
-1. **Event sources:** Where the event took place.
-1. **Topics:** The endpoint where publishers send events.
-1. **Event subscriptions:** The endpoint or built-in mechanism to route events, sometimes to multiple handlers. Subscriptions are also used by handlers to filter incoming events intelligently.
-1. **Event handlers:** The app or service reacting to the event.
+- **Events:** What happened.
+- **Event sources:** Where the event took place.
+- **Topics:** The endpoint where publishers send events.
+- **Event subscriptions:** The endpoint or built-in mechanism to route events, sometimes to multiple handlers. Subscriptions are also used by handlers to filter incoming events intelligently.
+- **Event handlers:** The app or service reacting to the event.
 
 ![An illustration showing an Azure Event Grid positioned between multiple event sources and multiple event handlers. The event sources send events to the Event Grid and the Event Grid forwards relevant events to the subscribers. Event Grid use topics to decide which events to send to which handlers. Events sources tag each event with one or more topics, and event handlers subscribe to the topics they are interested in.](../media/4-event-grid.png)
 
@@ -54,8 +54,7 @@ There are several concepts in Azure Event Grid that connect a source to a subscr
 ### What is an event source?
 Event sources are responsible for sending events to Event Grid. Each event source is related to one or more event types. For example, Azure Storage is the event source for blob created events. IoT Hub is the event source for device created events. Your application is the event source for custom events that you define. We'll look at event sources in more detail in a moment.
 
-> [!NOTE]
-> Azure Event Hub also defines the concept of an Event Publisher. A publisher to Event Hub is the user or organization that decides to send events to Event Grid. For example, Microsoft publishes events for several Azure services. You can publish events from your own application. Organizations that host services outside of Azure can publish events through Event Grid. This often gets mixed with the event source. The event source fully defined is the publisher and the specific service generating the event for that publisher. Here, we will use "publisher" and "event source" interchangeably to represent the entity sending the message to Event Hub.
+Azure Event Hub has the concept of an event publisher which is often confused with the event source. A publisher to Event Hub is the user or organization that decides to send events to Event Grid. For example, Microsoft publishes events for several Azure services. You can publish events from your own application. Organizations that host services outside of Azure can publish events through Event Grid. The event source is the publisher and the specific service generating the event for that publisher. In this unit, we use "publisher" and "event source" interchangeably to represent the entity sending the message to Event Hub.
 
 ### What is an event topic?
 Event topics categorize events into groups. Topics are represented by a public endpoint and are where the event source sends events _to_. When designing your application, you can decide how many topics to create. Larger solutions will create a custom topic for each category of related events, while smaller solutions might send all events to a single topic. For example, consider an application that sends events related to modifying user accounts and processing orders. It's unlikely any event handler wants both categories of events. Create two custom topics and let event handlers subscribe to the one that interests them. Event subscribers can filter for the event types they want from a specific topic.

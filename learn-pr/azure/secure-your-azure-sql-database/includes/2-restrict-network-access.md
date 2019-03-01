@@ -118,6 +118,9 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
 
 1. While still at the sqlcmd prompt, run the following command, replacing the public IP address of your _appServer_ VM in both locations below.
 
+    > [!TIP]
+    > When running T-SQL commands such as the following, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
+
     ```sql
     EXECUTE sp_set_database_firewall_rule N'Allow appServer database level rule', '<From IP Address>', '<To IP Address>';
     GO

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.convert-speech-to-text.knowledge-check
+title: Knowledge check - Speech Translation
+metadata:
+  title: Knowledge check - Speech Translation
+  description: Knowledge check - Speech Translation
+  ms.date: 01/09/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following tasks would be a good fit for the Speech Translation API?"
+    choices:
+    - content: Translating a document written in English, into German
+      isCorrect: false
+      explanation: "The Speech Translation API is not designed to translate written content into other languages, or perform non-translated speech recognition or synthesis, as these features are part of the Bing Speech API."
+    - content:  Real-time voice chat translation between a German and French speaker
+      isCorrect: true
+      explanation: "The Speech Translation API is designed to perform real-time speech translation for scenarios such as in-person or remote translated communications, as well as media subtitling."
+    - content: Creating an audio file from a famous quote
+      isCorrect: false
+      explanation: "The Speech Translation API is not designed to translate written content into other languages, or perform non-translated speech recognition or synthesis, as these features are part of the Bing Speech API."
+  - content: "Which of the following text-to-speech output formats are supported by the Translator Speech Translate method?"
+    choices:
+    - content: audio/wav
+      isCorrect: true
+      explanation: "The Translator Speech Translate method supports 'audio/wav' and 'audio/mp3' as output formats via the format parameter."
+    - content: audio/midi
+      isCorrect: false
+      explanation: "midi is not a supported output format."
+    - content: audio/m4a
+      isCorrect: false
+      explanation: "m4a is not a supported output format"
+    - content: audio/mov
+      isCorrect: false
+      explanation: "mov is not a supported output format"

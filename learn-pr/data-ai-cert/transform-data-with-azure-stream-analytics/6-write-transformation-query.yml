@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.transform-data-with-azure-stream-analytics.write-transformation-query
+title: Exercise - write an Azure Stream Analytics transformation query
+metadata:
+  title: Exercise - write an Azure Stream Analytics transformation query - Learn
+  description: Exercise - write an Azure Stream Analytics transformation query - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-write-transformation-query.md)]

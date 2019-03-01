@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.4-detect-the-users-location
+title: Detect the user's location using Xamarin.Essentials
+metadata:
+  title: Detect the user's location using Xamarin.Essentials
+  description: Detect the user's location using Xamarin.Essentials to provide a cross-platform abstraction over the platform-specific location APIs
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+#labId: 46464
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-detect-the-users-location.md)]
+  

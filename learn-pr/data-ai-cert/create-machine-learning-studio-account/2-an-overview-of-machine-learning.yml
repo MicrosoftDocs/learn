@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.create-machine-learning-studio-account.an-overview-of-machine-learning
+title: An Overview of Machine Learning
+metadata:
+  title: An Overview of Machine Learning
+  description: Get a high-level overview of machine learning
+  ms.date: 12/12/2018
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-an-overview-of-machine-learning.md)]

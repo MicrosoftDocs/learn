@@ -15,3 +15,6 @@ In this module, you will:
 
 - Knowledge of basic cloud computing terms and concepts
 - A valid credit card to register with Azure
+
+    > [!NOTE]
+    > An Azure Account is not required to take the free training provided by Microsoft Learn. Creating an Azure account is optional; you can complete this Learn module without creating an account.

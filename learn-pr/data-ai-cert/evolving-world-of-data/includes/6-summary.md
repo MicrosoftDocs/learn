@@ -1,0 +1,1 @@
+In this module, we demonstrated how the world of data is evolving and its impact on data professionals. We discussed the differences between on-premises and cloud data solutions, and we provided a few sample business cases.

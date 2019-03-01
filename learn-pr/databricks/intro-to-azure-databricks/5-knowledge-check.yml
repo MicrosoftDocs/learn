@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-databricks.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge by answering questions about skills you learned from the lab.
+  ms.date: 02/20/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+ [!include[](includes/5-knowledge-check.md)]
+quiz:
+ questions:
+ - content: 'Which Notebook format is used in Databricks?'
+   choices:
+   - content: DBC
+     explanation: dbc file types are the supported Databricks notebook format.
+     isCorrect: true
+   - content: .notebook
+     isCorrect: false
+     explanation: no .notebook file format available.
+   - content: .spark
+     explanation: no .spark file format available.
+     isCorrect: false
+ - content: 'Which browsers are recommended for best use with Databricks Notebook?'
+   choices:
+   - content: Chrome and Firefox
+     explanation: Chrome and Firefox are the recommended browsers by Databricks.
+     isCorrect: true
+   - content: Microsoft Edge and IE 11
+     isCorrect: false
+     explanation: Not recommended because of faulty rendering of iFrames
+   - content: Safari and Microsoft Edge
+     explanation: Edge is not recommended because of faulty rendering of iFrames, Safari is acceptable.
+     isCorrect: false

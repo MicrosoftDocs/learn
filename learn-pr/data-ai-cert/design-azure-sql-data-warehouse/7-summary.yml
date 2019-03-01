@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.design-azure-sql-data-warehouse.summary
+title: Summary
+metadata:
+  title: Summary - Learn
+  description: Summary - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which of the following terms refer to the scale of compute that is being used in an Azure SQL Data Warehouse database?"
+    choices: 
+    - content: "RTU"
+      isCorrect: false
+      explanation: "RTU is a compute scale unit of Cosmos DB"
+    - content: "DWU"
+      isCorrect: true
+      explanation: "DWU refers to Data Warehouse Units. It is the measure of compute scale that is assigned to an Azure SL Data Warehouse."
+    - content: "DTU"
+      isCorrect: false
+      explanation: "This is a compute scale unit of Azure SQL Database."
+
+  - content: "You have an Azure SQL Data Warehouse database, within this, you have a dimension table named Stores that contains store information. There is a total of 263 stores nationwide. Store information is retrieved in more than half of the queries that are issued against this database. These queries include staff information per store, sales information per store and finance information. You want to improve the query performance of these queries by configuring the table geometry of the stores table. Which is the appropriate table geometry to select for the stores table?"
+    choices: 
+    - content: "Round Robin"
+      isCorrect: false
+      explanation: "Round Robin distribution is a table geometry that is useful to perform initial data loads"
+    - content: "Non Clustered"
+      isCorrect: false
+      explanation: "Non Clustered is not a valid table geometry in Azure SQL Data Warehouse."
+    - content: "Replicated table"
+      isCorrect: true
+      explanation: "A replicated table is an appropriate table geometry choice as the size of the data in the table is less than 200m and the table will be replicated to every distribution node of an Azure SQL Data Warehouse to improve the performance."

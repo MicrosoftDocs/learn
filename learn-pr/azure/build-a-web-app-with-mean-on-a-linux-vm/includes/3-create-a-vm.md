@@ -20,7 +20,7 @@ az group create \
     az vm create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name MeanStack \
-      --image UbuntuLTS \
+      --image Canonical:UbuntuServer:16.04-LTS:latest \
       --admin-username azureuser \
       --generate-ssh-keys
     ```

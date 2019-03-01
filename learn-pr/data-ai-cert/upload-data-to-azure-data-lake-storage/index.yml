@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.data-ai.upload-data-to-azure-data-lake-storage
+metadata:
+  title: Upload data to Azure Data Lake Storage - Learn
+  description: Learn the different ways to upload data to Data Lake Store Gen 2 - the Azure portal, Azure Storage Explorer, .NET or by copying data using Azure Data Factory - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Upload data to Azure Data Lake Storage
+summary: Learn the different ways to upload data to Data Lake Store Gen 2 - the Azure portal, Azure Storage Explorer, .NET or by copying data using Azure Data Factory.
+abstract: | 
+  In this module you will:
+  - Create an Azure Data Lake Store
+  - Upload data to Azure Data Lake Storage Gen2 using Azure Storage Explorer
+prerequisites: An Azure account or active trial.
+iconUrl: /learn/achievements/data-ai/upload-data-to-azure-data-lake-storage-badge.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure
+units:
+- learn.data-ai.upload-data-to-azure-data-lake-storage.introduction
+- learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake
+- learn.data-ai.upload-data-to-azure-data-lake-storage.upload-data-using-explorer
+#- learn.data-ai.upload-data-to-azure-data-lake-storage.upload-files-with-rest-api
+- learn.data-ai.upload-data-to-azure-data-lake-storage.copy-data-from-gen1-to-gen2
+- learn.data-ai.upload-data-to-azure-data-lake-storage.summary
+badge:
+  uid: learn.data-ai.upload-data-to-azure-data-lake-storage.badge

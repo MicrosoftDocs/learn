@@ -30,8 +30,11 @@ roles:
 - developer
 - solution-architect
 - administrator
+- ai-engineer
 - business-analyst
 - business-user
+- data-engineer
+- data-scientist
 products:
 - azure
 - azure-portal

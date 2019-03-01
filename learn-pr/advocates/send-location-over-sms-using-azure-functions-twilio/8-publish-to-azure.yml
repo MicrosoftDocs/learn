@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.8-publish-to-azure
+title: Publish the function to Azure
+metadata:
+  title: Publish the function to Azure
+  description: Publish the function to Azure, configure it, and call it from the mobile app
+  ms.date: 09/24/2018
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+#labId: 46464
+durationInMinutes: 12
+content: |
+  [!include[](includes/8-publish-to-azure.md)]
+
+# TODO: Remove this task validation - it won't work with LOD labs.
+# items:
+# - title: Publish the function to Azure
+#   durationInMinutes: 12
+#   content: |
+#     [!include[](includes/8-publish-to-azure.md)]
+# :
+#   tasks:
+#   - action: exists
+#     environment: Azure
+#     type: group
+#     name: TutorialResourceGroupName
+#     conditions:
+#       - tags:
+#         - name: triplecrown
+#           value: true
+#         - name: unitTitle
+#           value: Creating resource groups
+#         - name: unitTask
+#             value: createresourcegroup
+#       - any_resource_attribute: expected_value_for_that_attribute
+#       - locationid: centralus
+#     hint: "Make sure the resource group name matches 'TutorialResourceGroupName' and it is deployed to the Central US datacenter"

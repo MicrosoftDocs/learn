@@ -32,7 +32,7 @@ Not all scenarios fit the public cloud. Here are some disadvantages to think abo
 
 - There may be specific security requirements that cannot be met by using public cloud
 - There may be government policies, industry standards, or legal requirements which public clouds cannot meet
-- You don't own the hardware or services and cannot manage them as they may wish
+- You don't own the hardware or services and cannot manage them as you may want to
 - Unique business requirements, such as having to maintain a legacy application might be hard to meet
 
 :::row:::
@@ -78,7 +78,8 @@ A hybrid cloud combines public and private clouds, allowing you to run your appl
 This is helpful when you have some things that cannot be put in the cloud, maybe for legal reasons. For example, you may have some specific pieces of data that cannot be exposed publicly (such as medical data) which needs to be held in your private datacenter. Another example is one or more applications that run on old hardware that can’t be updated. In this case, you can keep the old system running locally, and connect it to the public cloud for authorization or storage.
 
 #### Advantages
-Some advantages of a hybrid cloud versus a private cloud are:
+
+Some advantages of a hybrid cloud are:
 
 - You can keep any systems running and accessible that use out-of-date hardware or an out-of-date operating system
 - You have flexibility with what you run locally versus in the cloud

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.understanding-the-sql-dw-connector-with-azure-databricks.4-manage
+title: Manage SQL data warehouse
+metadata:
+  title: Manage SQL data warehouse
+  description: Learn how to manage SQL data warehouse.
+  ms.date: 02/20/2019
+  author: barlanmsft
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-manage.md)]

@@ -75,7 +75,7 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
 
 ## Make some API calls
 
-1. Select the **Open API testing console** button to open the live, interactive, API console.
+1. In the **Open API testing console** section of this page, select the button corresponding to the location or region in which you created  the Cognitive Services account. Selecting this button opens the live, interactive, API console.
 
 1. Paste the access key you saved earlier into the field labeled **Ocp-Apim-Subscription-Key**. Notice that the key is written automatically into the HTTP request window as a header value.
 
@@ -87,7 +87,7 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
 
     ![Screenshot of headers section.](../media/2-marker.PNG)
 
-    Next, we have the request body section, which holds a **documents** array. Each document in the array has three properties. The properties are *"language"*, *"id"*, and *"text"*. The *"id"* is a number in this example, but it can be anything you want as long as it's unique in the documents array. In this example, we're also passing in documents written in three different languages. Over 15 languages are supported in the Sentiment feature of the Text Analytics API. For more information, check out [Supported languages in the Text Analytics API](https://docs.microsoft.com//azure/cognitive-services/text-analytics/text-analytics-supported-languages). The maximum size of a single document is 5,000 characters, and one request can have up to 1,000 documents.
+    Next, we have the request body section, which holds a **documents** array. Each document in the array has three properties. The properties are *"language"*, *"id"*, and *"text"*. The *"id"* is a number in this example, but it can be anything you want as long as it's unique in the documents array. In this example, we're also passing in documents written in three different languages. Over 15 languages are supported in the Sentiment feature of the Text Analytics API. For more information, check out [Supported languages in the Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages). The maximum size of a single document is 5,000 characters, and one request can have up to 1,000 documents.
 
     ![Screenshot of Request Body section](../media/3-marker.PNG)
 

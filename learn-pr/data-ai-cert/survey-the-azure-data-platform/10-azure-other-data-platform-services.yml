@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.survey-the-azure-data-platform.azure-other-data-platform-services
+title: Understand Other Azure Data Platform Services
+metadata:
+  title: Understand Other Azure Data Platform Services - Learn
+  description: Understand Other Azure Data Platform Services - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-azure-other-data-platform-services.md)]

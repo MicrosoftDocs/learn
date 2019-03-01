@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.data-ai.introduction-to-azure-data-lake-storage
+metadata:
+  title: Introduction to Azure Data Lake storage - Learn
+  description: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, redundant and brings new efficiencies to processing big data analytics workloads - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Introduction to Azure Data Lake storage
+summary: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, redundant and brings new efficiencies to processing big data analytics workloads.
+abstract: | 
+  In this module you will:
+  - Decide when you should use Azure Data Lake Storage
+  - Create an Azure Storage Account using the portal
+  - Compare Azure Data Lake Store Gen 2 and Azure Blob Storage
+  - Explore the stages for processing Big Data Using Azure Data Lake Store
+  - List the supported open source platforms
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/introduction-to-azure-data-lake-storage-badge.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure
+units:
+- learn.data-ai-introduction-to-azure-data-lake-storage.introduction
+- learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-gen2
+- learn.data-ai-introduction-to-azure-data-lake-storage.create-data-lake-account
+- learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-and-blob-storage
+- learn.data-ai-introduction-to-azure-data-lake-storage.stages-for-processing-big-data
+- learn.data-ai-introduction-to-azure-data-lake-storage.use-cases
+- learn.data-ai-introduction-to-azure-data-lake-storage.summary
+badge:
+  uid: learn.data-ai-introduction-to-azure-data-lake-storage.badge

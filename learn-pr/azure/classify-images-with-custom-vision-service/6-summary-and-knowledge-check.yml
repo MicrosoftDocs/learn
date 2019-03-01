@@ -17,7 +17,6 @@ durationInMinutes: 10
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "When creating a new Custom Vision Service project, what is a domain used for?"
     choices:
     - content: "Helps you decide what to name your project."
@@ -29,7 +28,6 @@ quiz:
     - content: "Optimizes the classifier for a specific image type."
       isCorrect: true
       explanation: "The domain gives the classifier more information about the expected content of the images."
-
   - content: "Why should you add a tag after uploading images?"
     choices:
     - content: "To help you organize your images in the project for later use"
@@ -41,7 +39,6 @@ quiz:
     - content: "To generate a word cloud after training"
       isCorrect: false
       explanation: "The Custom Vision Service doesn't create word clouds."
-
   - content: "What two values do you need to know in order to make a call to the Prediction API from client code?"
     choices:
     - content: "Prediction URL and Prediction Key"

@@ -27,8 +27,6 @@ products:
 - azure-cost-management
 - azure-advisor
 - azure-monitor
-- azure-application-insights
-- azure-log-analytics
 - azure-cdn
 - azure-active-directory
 modules:

@@ -23,6 +23,7 @@ levels:
 - beginner
 roles:
 - developer
+- solution-architect
 products:
 - azure
 - azure-functions

@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.data-ai.data-warehouse-security
+metadata:
+  title: Data Warehouse Security - Learn
+  description: Learn the various security controls Azure SQL Data Warehouse exposes to secure your data warehouse infrastructure and the data that is stored in it - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Data Warehouse Security
+summary: Learn the various security controls Azure SQL Data Warehouse exposes to secure your data warehouse infrastructure and the data that is stored in it.
+abstract: | 
+  In this module you will:
+  - Configure access controls to the server.
+  - Configure authentication to the data warehouse server.
+  - Configure authorization to the data warehouse database.
+  - Set granular security controls
+  - Setup security auditing and monitor
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/data-warehouse-security-badge.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure
+- azure-sql-data-warehouse
+units:
+- learn.data-ai.data-warehouse-security.introduction
+- learn.data-ai.data-warehouse-security.azure-dw-security-control
+- learn.data-ai.data-warehouse-security.security-monitoring-and-auditing
+- learn.data-ai.data-warehouse-security.summary
+badge:
+  uid: learn.data-ai.data-warehouse-security.badge

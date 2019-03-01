@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.data-engineering-processes.architecturing-project
+title: Analyze the Data Engineer's tasks in a cloud architecture
+metadata:
+  title: Analyze the Data Engineer's tasks in a cloud architecture - Learn
+  description: Architecting a Data Engineering project - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-architecturing-project.md)]

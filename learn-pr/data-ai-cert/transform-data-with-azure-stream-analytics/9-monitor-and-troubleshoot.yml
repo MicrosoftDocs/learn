@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.transform-data-with-azure-stream-analytics.monitor-and-troubleshoot
+title: Monitor and troubleshoot Azure Stream Analytics jobs
+metadata:
+  title: Monitor and troubleshoot Azure Stream Analytics jobs - Learn
+  description: Monitor and troubleshoot Azure Stream Analytics jobs - Learn
+  ms.date: 01/31/2019
+  author: ctesta-oneillmsft
+  ms.author: chris.testaoneill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-monitor-and-troubleshoot.md)]
