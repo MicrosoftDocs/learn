@@ -20,6 +20,8 @@ levels:
 roles:
 - developer
 - solution-architect
+- data-scientist
+- data-engineer
 products:
 - azure
 - azure-databricks
