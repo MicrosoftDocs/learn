@@ -150,8 +150,8 @@ groups:
   pivots:
     - id: rehost
       title: Rehost
-    - id: refractor
-      title: Refractor
+    - id: refactor
+      title: Refactor
     - id: rearchitect
       title: Rearchitect
     - id: rebuild
