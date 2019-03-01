@@ -33,7 +33,7 @@ units:
 - learn.secure-build-dependencies.1-introduction
 - learn.secure-build-dependencies.2-tbd
 - learn.secure-build-dependencies.3-set-up-environment
-- learn.secure-build-dependencies.4-tbd
+- learn.secure-build-dependencies.4-scan-oss-whitesource-bolt
 - learn.secure-build-dependencies.5-summary
 badge:
   uid: learn.secure-build-dependencies.badge

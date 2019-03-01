@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-build-dependencies.4-tbd
-title: Exercise - TBD
+title: Exercise - Scan open source components using WhiteSource Bolt
 metadata:
-  title: Exercise - TBD
+  title: Exercise - Scan open source components using WhiteSource Bolt
   description: TBD
   ms.date: 09/24/2018
   author: tpetchel
