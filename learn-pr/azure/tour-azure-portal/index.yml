@@ -20,6 +20,7 @@ abstract: |
 iconUrl: /learn/achievements/tour-azure-portal-features.svg
 levels:
 - beginner
+prerequisites: None
 roles:
 - administrator
 - solution-architect
