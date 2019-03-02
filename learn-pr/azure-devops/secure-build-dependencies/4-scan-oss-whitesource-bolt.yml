@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-build-dependencies.4-tbd
+uid: learn.secure-build-dependencies.4-scan-oss-whitesource-bolt
 title: Exercise - Scan open source components using WhiteSource Bolt
 metadata:
   title: Exercise - Scan open source components using WhiteSource Bolt
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-tbd.md)]
+  [!include[](includes/4-scan-oss-whitesource-bolt.md)]
