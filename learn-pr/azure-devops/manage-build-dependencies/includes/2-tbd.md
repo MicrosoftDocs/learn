@@ -10,3 +10,13 @@ Discuss concepts you should know and various strategies you can use. The JTA rec
 Perhaps also cover:
 
 * When it's appropriate (and not appropriate) to split your codebase into multiple packages. What are the benefits? What are the tradeoffs?
+
+----
+
+Notes:
+
+Answer: what types of artifact repositories are available?
+- Azure Artifacts
+- NuGet.org
+- Private NuGet repo
+- etc.
