@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-build-infrastructure.4-tbd
-title: Exercise - TBD
+uid: learn.manage-build-infrastructure.4-create-build-server
+title: Exercise - Create your own build server
 metadata:
-  title: Exercise - TBD
+  title: Exercise - Create your own build server
   description: TBD
   ms.date: 09/24/2018
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-tbd.md)]
+  [!include[](includes/4-create-build-server.md)]
