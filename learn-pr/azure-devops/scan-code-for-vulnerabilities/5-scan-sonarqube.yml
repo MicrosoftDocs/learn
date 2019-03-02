@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.scan-code-for-vulnerabilities.5-tbd1
+uid: learn.scan-code-for-vulnerabilities.5-scan-sonarqube
 title: Exercise - Scan for vulnerabilities using SonarQube
 metadata:
   title: Exercise - Scan for vulnerabilities using SonarQube
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-tbd1.md)]
+  [!include[](includes/5-scan-sonarqube.md)]
