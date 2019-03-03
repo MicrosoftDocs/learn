@@ -41,7 +41,7 @@ The first thing we need to do is create an Azure Logic App using the Azure porta
 > [!NOTE]
 > If you do not have a Twitter account and prefer not to create one, you can substitute the **When a feed item is published** trigger from the RSS connector. Set the **RSS feed URL** to http://feeds.reuters.com/reuters/topNews, the **Interval** to 1, and the **Frequency** to Minute. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you many have to wait a while before this trigger activates.
 
-Now that we have our Logic App created, we need to add a trigger. We're going to use the **When a new tweet is posted** polling trigger from the Twitter connector. There are three required parameters:
+Now that we have our Logic App created, we need to add a trigger. We're going to use the **When-a-new-tweet-is-posted** polling trigger from the Twitter connector. There are three required parameters:
 
 * **Search text**: Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
 * **Frequency**: Unit of time for search frequency. For example, Second, Minute, Hour, or Day.

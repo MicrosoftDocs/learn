@@ -1,4 +1,4 @@
-In this exercise, we're going to continue work on our social-media monitor app. Here, we'll analyze whether the tweets about our product are positive or negative. We'll create a Detect Sentiment action which will provide us a numeric *Score* that represents the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we're going to continue work on our social-media monitor app. Here, we'll analyze whether the tweets about our product are positive or negative. We'll create a Detect-sentiment action which will provide us a numeric *Score* that represents the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
 ![An illustration showing the triggers and actions in the social-media monitor Logic App. The third step is an action showing a control action that is testing the sentiment score. If the score is is greater than 0.7 the app branches to an Insert Row action. If the score is less than or equal to 0.7, the app branches to a Send an Email action.](../media-drafts/10-branches.png)
 
@@ -8,7 +8,7 @@ This first step is to add the control action to the app. In programming terms, w
 
 1. Return to the Logic App Designer by selecting **Logic app designer** under the Development Tools section of the left navigation bar.
 
-1. Below the existing Detect Sentiment action, click **New step**.
+1. Below the existing Detect-sentiment action, click **New step**.
 
 1. In the **Search connectors and actions** search box, type "control".
 
@@ -18,7 +18,7 @@ This first step is to add the control action to the app. In programming terms, w
 
 ## Configure Condition control action
 
-Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect Sentiment action returns a *Score* which is a number between zero and one. If the number is greater than .5 we'll consider the tweet positive, otherwise it'll be negative.
+Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect-sentiment action returns a *Score* which is a number between zero and one. If the number is greater than .5 we'll consider the tweet positive, otherwise it'll be negative.
 
 1. In the Condition action, select the leftmost **Choose a value** field.
 
@@ -28,7 +28,7 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Select **is greater than**.
 
-1. Type **.5** in the rightmost Choose a value field.
+1. Type **0.7** in the rightmost Choose a value field.
 
 ## Create a SQL Server and database in Azure
 

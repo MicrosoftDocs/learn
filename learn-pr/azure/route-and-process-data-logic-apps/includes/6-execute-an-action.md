@@ -14,7 +14,7 @@ Actions that let you use services outside of your Logic App are by far the most 
 
 When you use an action to connect to an external service, you typically supply connection and authorization values. It might be a username, a password, a connection string, or an account key. The details will be different for each service.
 
-For example, to connect to Cognitive Services, you give the **Site URL** so your Logic App knows where to send the request and your **Account Key** to prove you are authorized to access the service. Both of these values are available in your Cognitive Services account. You'll typically copy them into the settings for the Detect Sentiment action.
+For example, to connect to Cognitive Services, you give the **Site URL** so your Logic App knows where to send the request and your **Account Key** to prove you are authorized to access the service. Both of these values are available in your Cognitive Services account. You'll typically copy them into the settings for the Detect-sentiment action.
 
 This type of action helps you send out data for processing or pull data into your app. But then what? How do you actually work with that data inside your app. That's what the next category of action is for.
 
@@ -44,19 +44,19 @@ The *control action* feature of Logic Apps lets you add control constructs like 
 
 You can think of actions as function calls that have parameters and return values.
 
-Action *parameters* let you pass values to the operation. The Cognitive Services Detect Sentiment action has a parameter called **Text** that is the string you want it to analyze. It also has an optional parameter named **Language** that lets you provide a hint about the language of the **Text**.
+Action *parameters* let you pass values to the operation. The Cognitive Services Detect-sentiment action has a parameter called **Text** that is the string you want it to analyze. It also has an optional parameter named **Language** that lets you provide a hint about the language of the **Text**.
 
-Action *return values* are the results of the operation. The Detect Sentiment action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the Detect Sentiment action as used by the social-media monitor app.
+Action *return values* are the results of the operation. The Detect-sentiment action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the Detect-sentiment action as used by the social-media monitor app.
 
-![An illustration showing a Logic App using the Detect Sentiment action to invoke the text analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media-drafts/6-action-inputs-and-outputs.png)
+![An illustration showing a Logic App using the Detect-sentiment action to invoke the text analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media-drafts/6-action-inputs-and-outputs.png)
 
 ## Static vs. dynamic parameters
 
-Some of the parameters you send to an action will be the same every time. For example, you might only be interested in tweets in English so you would always pass "en" as the **Language** parameter to the Detect Sentiment action. There's nothing tricky about this type of static parameter. You hard-code the value when you configure the action and that value is used every time the action runs.
+Some of the parameters you send to an action will be the same every time. For example, you might only be interested in tweets in English so you would always pass "en" as the **Language** parameter to the Detect-sentiment action. There's nothing tricky about this type of static parameter. You hard-code the value when you configure the action and that value is used every time the action runs.
 
-Other parameters will be different every time you execute an action. The **Text** parameter in the Detect Sentiment action is a good example of this. You need to pass in the text of the tweet, and that will be different for every run. How do you get access to this dynamic value?
+Other parameters will be different every time you execute an action. The **Text** parameter in the Detect-sentiment action is a good example of this. You need to pass in the text of the tweet, and that will be different for every run. How do you get access to this dynamic value?
 
-Recall that the tweet we're processing was the return value of the "When a new tweet is posted" trigger. This tweet data is packaged inside an object with several fields containing the details of the tweet. Logic Apps automatically makes this object available throughout the rest of the app. The Logic Apps Designer gives you a simple GUI to select the fields you're interested in.
+Recall that the tweet we're processing was the return value of the "When-a-new-tweet-is-posted" trigger. This tweet data is packaged inside an object with several fields containing the details of the tweet. Logic Apps automatically makes this object available throughout the rest of the app. The Logic Apps Designer gives you a simple GUI to select the fields you're interested in.
 
 ## Add and configure an action using the Designer
 
