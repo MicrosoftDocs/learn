@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.6-conclusion
+title: Conclusion
+metadata:
+  title: Conclusion
+  description: Conclusion
+  author: James Turnbul
+  ms.date: 03/03/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-conclusion.md)]

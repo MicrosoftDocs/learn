@@ -1,0 +1,3 @@
+By the end of this module, FashionFindr will have built a compelling pitch for their product prototype. They’ll understand how to identity and articulate their product’s mission to an investor and detail the problem and solution FashionFindr solves. 
+
+FashionFindr will be able to identify specific audiences for future pitches and how to connect with them. They’ll have convinced their potential investor of the value of their product and structured an investment ask that will achieve the company’s objectives.
