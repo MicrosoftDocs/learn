@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.2-develop-your-elevator-pitch
+title: Develop Your Elevator Pitch
+metadata:
+  title: Develop Your Elevator Pitch
+  description: Develop Your Elevator Pitch
+  author: James Turnbull
+  ms.date: 03/03/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-develop-your-elevator-pitch.md)]
