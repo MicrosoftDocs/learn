@@ -2,7 +2,7 @@
 
 ## Title
 
-Secure your data at rest with encryption on Azure
+Introduction to securing data at rest on Azure
 
 ## Role(s)
 
