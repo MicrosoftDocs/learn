@@ -85,3 +85,5 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 ## Notes
 
 This one may not have a ton of interactivity, but should be focused on selecting the right services, how each plays into an overall monitoring strategy, and integrating them together to create a solid monitoring strategy.
+
+https://docs.microsoft.com/en-us/azure/azure-monitor/continuous-monitoring
