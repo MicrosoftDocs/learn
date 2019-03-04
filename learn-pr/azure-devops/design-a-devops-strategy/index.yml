@@ -13,7 +13,9 @@ title: Design a DevOps strategy
 summary: Use the DevOps Self-Assessment to design a DevOps strategy that enables your team to deliver value more quickly.
 abstract: |
   In this module, you will:
-  - Use the DevOps Self-Assessment to recommend process improvements along five key areas &ndash; process, technology and automation, culture, measurement, and outcomes
+  - Track project performance using metrics and KPIs
+  - Recommend process, technology, and culture changes to deliver customer value more quickly
+  - Predict better outcomes by using telemetry, performance data, and customer feedback
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

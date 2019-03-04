@@ -2,7 +2,7 @@
 uid: learn.assess-your-development-process
 metadata:
   title: Assess your existing software development process - Learn
-  description: Follow a fictitious team as they begin their DevOps journey. Explore your existing processes and outcomes. Then take the DevOps Self-Assessment to identify and recommend ways to improve.
+  description: Prepare for the DevOps Self-Assessment by examining your existing processes and technology choices.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,12 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Assess your existing software development process
-summary: Follow a fictitious team as they begin their DevOps journey. Explore your existing processes and outcomes. Then take the DevOps Self-Assessment to identify and recommend ways to improve.
+summary: Prepare for the DevOps Self-Assessment by examining your existing processes and technology choices.
 abstract: |
   In this module, you will:
   - Identify your existing processes and capabilities
   - Analyze which processes work and which don't
-  - Take the DevOps Self-Assessment to help identify areas for improvement.
+  - Take the DevOps Self-Assessment to build a report your team can use to recommend improvements
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

@@ -13,9 +13,9 @@ title: Choose an Agile approach to software development
 summary: TBD.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Describe Agile and the various kinds of Agile methodologies
+  - Choose the appropriate Agile methodology for your project
+  - Create an Azure DevOps project and plan a backlog of work using Azure Boards
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:
