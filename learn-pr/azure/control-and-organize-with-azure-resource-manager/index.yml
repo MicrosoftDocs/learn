@@ -19,6 +19,7 @@ abstract: |
 iconUrl: /learn/achievements/control-and-organize-with-resource-manager.svg
 levels:
 - intermediate
+prerequisites: None
 roles:
 - solution-architect
 - administrator

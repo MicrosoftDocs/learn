@@ -19,6 +19,7 @@ summary: In this module, we'll explore DevOps and learn how to get started with 
 cardDescription: In this module, we'll explore DevOps and learn how to get started with Azure DevOps.
 iconUrl: /learn/achievements/get-started-with-devops.svg
 ratingEnabled: true
+prerequisites: None
 levels: 
 - beginner
 roles:
