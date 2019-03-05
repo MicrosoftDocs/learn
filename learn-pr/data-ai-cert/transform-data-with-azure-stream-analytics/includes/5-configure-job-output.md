@@ -1,7 +1,7 @@
 Stream Analytics jobs support various output sinks such as Azure Blob storage, Azure SQL Database, and Event Hub. There's a full list of output types in the documentation. In this exercise, we will use Blob storage as the output sink for our Stream Analytics job.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved in creating an input source for a Azure Stream Analytics job.
+> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved in creating an output sink for a Azure Stream Analytics job.
 
 The steps will be very similar to what we just did to create the input. Let's start by creating a second Blob Storage account to hold the output.
 
