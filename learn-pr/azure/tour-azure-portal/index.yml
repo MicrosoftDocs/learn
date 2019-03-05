@@ -20,6 +20,8 @@ abstract: |
 iconUrl: /learn/achievements/tour-azure-portal-features.svg
 levels:
 - beginner
+prerequisites: |
+  - Knowledge of basic cloud computing terms and concepts
 roles:
 - administrator
 - solution-architect

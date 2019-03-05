@@ -6,7 +6,7 @@ As the database administrator for your company, it's your job to move existing d
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - List the new roles of modern data projects
 - Outline Data Engineering Practices

@@ -12,10 +12,10 @@ This first exercise will use the Azure CLI. If you have a local installation of 
 
 ## Create a resource group
 
-First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks`.
+First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks` and replace `<location>` in the following command with the name of the region in which you'd like the group to be created. 
 
 ```azurecli
-az group create --name vm-networks
+az group create --location <location> --name vm-networks
 ```
 
 ## Create a virtual network
@@ -44,6 +44,9 @@ Here, we create two virtual machines without specifying any virtual network info
         --admin-username "DataAdmin" \
         --image Win2016Datacenter
     ```
+
+    > [!NOTE]
+    > Port 3389 is opened automatically by default when you create a Windows VM in Azure.
 
 1. Supply values for your password at the prompts. Remember to write this password down as you'll need it later to access the server.
 

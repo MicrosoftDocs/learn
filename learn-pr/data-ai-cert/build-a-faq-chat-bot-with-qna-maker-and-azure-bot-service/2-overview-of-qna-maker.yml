@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.overview-of-qna-maker
+title: Overview of QnA Maker
+metadata:
+  title: Overview of QnA Maker
+  description: Learn about key QnA Maker concepts 
+  ms.date: 2/25/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-overview-of-qna-maker.md)]

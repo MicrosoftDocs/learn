@@ -23,8 +23,11 @@ levels:
 - beginner
 roles:
 - developer
+- ai-engineer
 products:
 - azure
+- azure-cognitive-services
+- azure-portal
 units:
 - learn.classify-images-with-custom-vision-services.0-introduction
 - learn.classify-images-with-custom-vision-services.1-create-custom-vision-service-project

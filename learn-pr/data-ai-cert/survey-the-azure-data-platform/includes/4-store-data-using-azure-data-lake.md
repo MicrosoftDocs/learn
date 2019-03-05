@@ -1,6 +1,6 @@
 Azure Data Lake storage is a Hadoop-compatible data repository that can store any size or type of data.  Azure Data Lake is available in two offerings; Generation 1 (Gen1) or Generation 2 (Gen2).  Gen1 users do not have to upgrade to Gen2., but Gen2 combines the storage services from Gen1 with the benefits of Azure Blob Storage and is performance tuned for processing big data analytics solutions.
 
-Gen2 includes new features like a hierarchical file system, and developers can access the data either through the Blob API or the Azure Data Lake File API (ADLS). An additional benefit to Gen 2 is that it can act a storage layer for a wide range of compute platforms including Azure DataBrick, Hadoop or Azure HDInsight without the need to load the data into those systems.
+Gen2 includes new features like a hierarchical file system, and developers can access the data either through the Blob API or the Azure Data Lake File API (ADLS). An additional benefit to Gen 2 is that it can act a storage layer for a wide range of compute platforms including Azure Databricks, Hadoop or Azure HDInsight without the need to load the data into those systems.
 
 ## When to Use It
 

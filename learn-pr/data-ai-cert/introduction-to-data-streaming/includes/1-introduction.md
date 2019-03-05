@@ -4,7 +4,7 @@ Now that Contoso has gained more confidence with Azure, they're keen to understa
 
 ## Learning Objectives
 
-In this module, you will:
+In this module you will:
 
 - Explain data streams
 - Explain event processing

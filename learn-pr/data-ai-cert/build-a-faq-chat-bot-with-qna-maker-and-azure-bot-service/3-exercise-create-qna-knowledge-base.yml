@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.exercise-create-qna-knowledge-base
+title: Exercise - Create a QnA knowledge base
+metadata:
+  title: Exercise - Create a QnA knowledge base
+  description: Use the QnA Maker web-based portal to create a knowledge base
+  ms.date: 2/25/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-create-qna-knowledge-base.md)]

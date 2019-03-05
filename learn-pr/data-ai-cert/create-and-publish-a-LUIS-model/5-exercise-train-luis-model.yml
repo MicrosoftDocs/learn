@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.create-and-publish-a-luis-model.exercise-train-luis-model
+title: Train the LUIS Model
+metadata:
+  title: Train the LUIS Model
+  description: Training the model for you LUIS app to help it understand new utterances
+  ms.date: 1/24/2019
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-train-luis-model.md)]
