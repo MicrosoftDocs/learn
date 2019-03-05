@@ -94,3 +94,4 @@ Identify the subtasks of *module title*
 - The name Managed Service Identity (MSI) is deprecated, but call it out because it's still commonly used, including in client libraries
 - This module is intended to follow a separate module about service principal authentication that does not use managed identities. That module will be responsible for introducing general application authentication concepts to readers.
 - https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/
+- Unlike standard service principals, managed identities should work in the sandbox. This is expected to be a sandbox-enabled module.
