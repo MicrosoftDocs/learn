@@ -1,20 +1,20 @@
 ### YamlMime:LearningPath
-uid: learn.modern-data-warehouse
+uid: learn.data-engineering-with-databricks
 metadata:
-  title: Build a modern data warehouse with Azure Databricks - Learn
-  description: Learn the modern data warehousing tools and techniques supported by Azure Databricks. 
+  title: Data Engineering with Azure Databricks - Learn
+  description: Learn the data engineering tools and techniques supported by Azure Databricks. 
   brand: azure
   ms.date: 02/19/2019
   author: barlanmsft
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a modern data warehouse with Azure Databricks
+title: Data Engineering with Azure Databricks
 summary: Learn how to use Azure Databricks to accelerate the setup of Databricks in Azure. You'll work with data in an Azure SQL Datawarehouse with the built-in conector services. Explore the data services available with Azure Data Factory. Build streamlined workflows, and work with the interactive analytics workspace powered by Apache Spark.
-cardDescription: Learn the modern data warehousing tools and techniques supported by Azure Databricks.
+cardDescription: Learn the data engineering tools and techniques supported by Azure Databricks.
 prerequisites:  | 
   [!include[](../../includes/azure-subscription-prerequisite.md)]
-iconUrl: /learn/achievements/modern-data-warehouse.svg
+iconUrl: /learn/achievements/data-engineering-with-databricks.svg
 levels:
 - intermediate
 roles:
@@ -36,4 +36,4 @@ modules:
 - learn.streaming-in-azure-databricks
 - learn.create-data-visualizations-using-azure-databricks-and-power-bi
 trophy:
-  uid: learn.modern-data-warehouse.trophy 
+  uid: learn.data-engineering-with-databricks.trophy 
