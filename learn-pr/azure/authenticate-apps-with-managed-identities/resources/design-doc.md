@@ -1,4 +1,4 @@
-# Module Design (template)
+# Module Design
 
 ## Title
 
