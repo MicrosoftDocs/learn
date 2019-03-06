@@ -26,7 +26,7 @@ Protect your applications and data from disasters with a well-designed site reco
 ## Learning objectives
 
 1. Define the site recovery requirements for your applications
-2. Select the proper solutions to provide site recovrey for your applications
+2. Select the proper solutions to provide site recovery for your applications
 
 ## Chunk your content into subtasks
 
