@@ -2,7 +2,7 @@
 uid: learn.design-a-devops-practice
 metadata:
   title: Design a DevOps practice learning path
-  description: TBD
+  description: Azure DevOps enables you to build, test, and deploy any application to any cloud. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
   brand: azure
   ms.date: 1/1/2019
   author: tpetchel
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 title: Design a DevOps practice
 summary: |
-  A DevOps practice often begins by evaluating existing processes. From there, you can identify areas that need improvement the most. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
+  Azure DevOps enables you to build, test, and deploy any application to any cloud. A DevOps practice often begins by evaluating existing processes. From there, you can identify areas that need improvement the most. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
 
   In this learning path, you will:
     - Prepare to take the DevOps Self-Assessment by assessing your existing software development processes
@@ -20,7 +20,7 @@ summary: |
     - Sign up for your free Azure DevOps account
     - Choose an Agile methodology and plan and track work using Azure Boards
 
-cardDescription: TBD.
+cardDescription: Azure DevOps enables you to build, test, and deploy any application to any cloud. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:
