@@ -90,6 +90,8 @@ Identify the subtasks of *Design a geographically distributed application*
 
 We'll have a decent amount of theory in this module, but should also provide details around what services to use to provide geographic diversity for network, application, and data.
 
+Depending on deployment time, we may be able to leverage the following artifacts from the architecture center. If it's too complex to deploy, we can engage the team that owns those artifacts to see about adjustments.
+
 Supporting documentation:
 
 https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/app-service-web-app/multi-region
