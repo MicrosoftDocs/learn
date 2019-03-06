@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.gather-metrics-from-your-azure-blob-storage-containers.8-knowledge-check
+title: "Knowledge check: Gather metrics from your blob storage containers"
+durationInMinutes: 3
+metadata:
+  title: "Knowledge check: Gather metrics from your blob storage containers"
+  description: Questions about blob storage account metrics and logging.
+  ms.date: 18/02/2019
+  #TODO: Update with real author name.
+  author: geoff allix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which of the following is NOT a valid blob type in Azure storage?"
+    choices:
+    - content: "Page blob"
+      isCorrect: false
+      incorrectExplanation: "Page blobs are a valid blob type in Azure storage."
+    - content: "Append blob"
+      isCorrect: false
+      incorrectExplanation: "Append blobs are a valid blob type in Azure storage."
+    - content: "Text blob"
+      isCorrect: true
+      correctExplanation: "Text blobs are not valid blob types in Azure storage. The only valid types are Page blobs, Append blobs, and Block blobs"
+    - content: "Block blob"
+      isCorrect: false
+      incorrectExplanation: "Block blobs are a valid blob type in Azure storage."
+
+  - content: "Which one of the following chart types works best with data that varies rapidly over time?"
+    choices:
+    - content: "Line"
+      isCorrect: false
+      incorrectExplanation: "Scatter charts are better for data that varies rapidly over time."
+    - content: "Area"
+      isCorrect: false
+      incorrectExplanation: "Scatter charts are better for data that varies rapidly over time."
+    - content: "Bar"
+      isCorrect: false
+      incorrectExplanation: "Scatter charts are better for data that varies rapidly over time."
+    - content: "Scatter"
+      isCorrect: true
+      correctExplanation: "Scatter charts are best for data that varies rapidly over time."
+
+
+  - content: "Which of the following types of content cannot be added to a dashboard markdown tile?"
+    choices:
+    - content: "Video"
+      isCorrect: false
+      incorrectExplanation: "Video content can be added to a dashboard markdown tile."
+    - content: "Basic HTML"
+      isCorrect: false
+      incorrectExplanation: "Basic HTML content can be added to a dashboard markdown tile."
+    - content: "Markdown"
+      isCorrect: false
+      correctExplanation: "Markdown content can be added to a dashboard markdown tile."
+    - content: "Javascript"
+      isCorrect: true
+      incorrectExplanation: "Javascript content cannot be added to a dashboard markdown tile."
+
+  - content: "Which of the following security principals can access shared dashboards in Azure?"
+    choices:
+    - content: "Only individual internal user assignments."
+      isCorrect: false
+      incorrectExplanation: "Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group."
+    - content: "Internal users, assigned individually and as part of a security group."
+      isCorrect: true
+      incorrectExplanation: "Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group."
+    - content: "Internal users and external users assigned individually."
+      isCorrect: false
+      correctExplanation: "Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group."
+    - content: "Internal users, individually and as part of a security group, and external users."
+      isCorrect: false
+      incorrectExplanation: "Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group."
+
+  - content: "Which services is Storage Analytics logging available for?"
+    choices:
+    - content: "Blob service only"
+      isCorrect: false
+      incorrectExplanation: "Storage Analytics logging is available for Blob, Queue, and Table services."
+    - content: "Blob and Queue services."
+      isCorrect: false
+      incorrectExplanation: "Storage Analytics logging is available for Blob, Queue, and Table services."
+    - content: "Blob, Queue, and Table services."
+      isCorrect: true
+      correctExplanation: "Storage Analytics logging is available for Blob, Queue, and Table services."
+    - content: "Blob, Queue, and File services."
+      isCorrect: false
+      incorrectExplanation: "Storage Analytics logging is available for Blob, Queue, and Table services."

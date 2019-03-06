@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.gather-metrics-from-your-azure-blob-storage-containers.3-exercise-specify-monitor-blob-metrics
+title: Specify and Monitor Blob Metrics
+metadata:
+  title: Specify and Monitor Blob Metrics
+  description: Specify and Monitor Blob Metrics
+  ms.date:
+  author: geoff allix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+interactive: bash-editor
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-specify-monitor-blob-metrics.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Follow the directions to move files into Azure BLOB storage."
+  azure:
+    resource:
+      type: "Microsoft.Storage/storageAccounts"
+      kind: "StorageV2"

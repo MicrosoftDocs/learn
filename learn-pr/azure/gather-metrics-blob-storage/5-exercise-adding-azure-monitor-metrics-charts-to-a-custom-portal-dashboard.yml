@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.gather-metrics-from-your-azure-blob-storage-containers.5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard
+title: Adding Azure Monitor metrics to a custom portal dashboard
+metadata:
+  title: Adding Azure Monitor metrics to a custom portal dashboard
+  description: Adding Azure Monitor metrics to a custom portal dashboard
+  ms.date: 18/02/2019
+  #TODO: Update with real author name.
+  author: geoff allix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+# TODO: Consider Azure Portal Interactivity
+# interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Follow the directions to create a custom dashboard with storage metrics."
+  azure:
+    resource:
+      type: "Microsoft.Storage/storageAccounts"
+      kind: "StorageV2"
