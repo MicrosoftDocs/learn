@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-applications-with-azure-pipelines.4-set-up-environment
+uid: learn.build-applications-with-azure-pipelines.5-set-up-environment
 title: Set up your Azure DevOps environment
 metadata:
   title: Set up your Azure DevOps environment
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-set-up-environment.md)
+  [!include[](includes/5-set-up-environment.md)
