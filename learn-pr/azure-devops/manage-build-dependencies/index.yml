@@ -16,7 +16,7 @@ abstract: |
   - Refactor your application into reusable packages
   - Describe ways to share packages among applications
   - Create a build pipeline for your package and publish the artifact to a package repository
-  - Update your package and then update your application to use it
+  - Push a change to your package and then update your application to use it
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

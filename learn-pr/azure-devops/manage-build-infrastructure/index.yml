@@ -16,7 +16,7 @@ abstract: |
   - Choose when to use Microsoft-hosted build agents and when to host your own
   - Describe the options you have when managing your own build systems
   - Bring up and configure your own build server to work with Azure Pipelines
-  - Connect your server to a build pipeline and build your application
+  - Connect your server to a pipeline and build your application
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:
