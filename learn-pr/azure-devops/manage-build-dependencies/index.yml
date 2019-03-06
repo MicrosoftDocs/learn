@@ -2,7 +2,7 @@
 uid: learn.manage-build-dependencies
 metadata:
   title: Manage dependencies in your build pipeline - Learn
-  description: TBD.
+  description: Manage your application and the packages it uses across build pipelines.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,13 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Manage dependencies in your build pipeline
-summary: TBD.
+summary: Manage your application and the packages it uses across build pipelines.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Refactor your application into reusable packages
+  - Describe ways to share packages among applications
+  - Create a build pipeline for your package and publish the artifact to a package repository
+  - Update your package and then update your application to use it
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

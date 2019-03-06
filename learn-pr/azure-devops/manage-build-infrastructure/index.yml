@@ -2,7 +2,7 @@
 uid: learn.manage-build-infrastructure
 metadata:
   title: Host your own build server in your build pipeline - Learn
-  description: TBD.
+  description: Use your own build agent when Microsoft-hosted agents don't meet your needs.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,13 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Host your own build server in your build pipeline
-summary: TBD.
+summary: Use your own build agent when Microsoft-hosted agents don't meet your needs.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Choose when to use Microsoft-hosted build agents and when to host your own
+  - Describe the options you have when managing your own build systems
+  - Bring up and configure your own build server to work with Azure Pipelines
+  - Connect your server to a build pipeline and build your application
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

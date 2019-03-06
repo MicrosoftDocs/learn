@@ -1,5 +1,3 @@
-(Swap with unit 3? e.g detect then remediate?)
-
 Here we discuss managing secrets. This unit focuses on surveying the options and making a recommendation. The JTA calls out these areas:
 
 * Azure Key Vault

@@ -2,7 +2,7 @@
 uid: learn.choose-an-agile-approach
 metadata:
   title: Choose an Agile approach to software development - Learn
-  description: Learn how an Agile mindset helps you incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
+  description: Develop an Agile mindset to incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,7 +10,7 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Choose an Agile approach to software development
-summary: Learn how an Agile mindset helps you incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
+summary: Develop an Agile mindset to incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
 abstract: |
   In this module, you will:
   - Describe Agile and the various kinds of Agile methods

@@ -2,7 +2,7 @@
 uid: learn.implement-code-workflow
 metadata:
   title: Implement a code workflow in your build pipeline - Learn
-  description: TBD.
+  description: Collaborate with others and merge only the highest quality code.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,12 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Implement a code workflow in your build pipeline
-summary: TBD.
+summary: Collaborate with others and merge only the highest quality code.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Choose an appropriate merging and branching strategy
+  - Add a badge to your GitHub repository to show the status of the latest build
+  - Add a dashboard widget to visualize your build history
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

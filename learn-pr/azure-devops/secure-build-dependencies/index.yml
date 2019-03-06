@@ -2,7 +2,7 @@
 uid: learn.secure-build-dependencies
 metadata:
   title: Manage security and compliance in your build pipeline - Learn
-  description: TBD.
+  description: Scan third-party components for security and compliance in your build pipeline.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,12 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Manage security and compliance in your build pipeline
-summary: TBD.
+summary: Scan third-party components for security and compliance in your build pipeline.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Describe what tools you can use to inspect open source software packages for security and license ratings
+  - Access package and license ratings for open source components using WhiteSource Bolt
+  - Interpret scan results and take appropriate action
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

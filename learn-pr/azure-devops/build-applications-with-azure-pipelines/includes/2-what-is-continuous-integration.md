@@ -20,6 +20,7 @@ We have complete [reference documentation](https://docs.microsoft.com/azure/devo
 
 (The JTA calls out "AppCenter, VSTS, Jenkins, CircleCI". Do we compare other options here? If so, what's the pitch for Azure Pipelines over other options?)
 (In other words, perhaps do come comparisons and then say "the team decided on Azure Pipelines because XYZ...")
+(Also be sure to call out that if you have something that's working, continue to use it! A benefit of Azure DevOps is that integration among components comes out of the box, but you can also integrate the pieces you need with what you already have. Make the case for Azure DevOps if you don't have an existing process.)
 
 ## How are Azure Pipelines configured?
 

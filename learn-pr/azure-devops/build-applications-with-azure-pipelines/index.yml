@@ -2,7 +2,7 @@
 uid: learn.build-applications-with-azure-pipelines
 metadata:
   title: Build applications with Azure Pipelines - Learn
-  description: TBD.
+  description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,12 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Build applications with Azure Pipelines
-summary: Learn what we mean by _Continuous Integration_ and build pipelines.
+summary: Set up a continuous integration (CI) pipeline that automates the process of building your application.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Define continuous integration
+  - Map manual build steps to automated build tasks
+  - Build a web application using Azure Pipelines
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:
@@ -32,9 +32,9 @@ products:
 units:
 - learn.build-applications-with-azure-pipelines.1-introduction
 - learn.build-applications-with-azure-pipelines.2-what-is-continuous-integration
-- learn.build-applications-with-azure-pipelines.3-plan-build-tasks
-- learn.build-applications-with-azure-pipelines.4-set-up-environment
-- learn.build-applications-with-azure-pipelines.5-build-locally
+- learn.build-applications-with-azure-pipelines.3-build-locally
+- learn.build-applications-with-azure-pipelines.4-plan-build-tasks
+- learn.build-applications-with-azure-pipelines.5-set-up-environment
 - learn.build-applications-with-azure-pipelines.6-create-the-pipeline
 - learn.build-applications-with-azure-pipelines.7-summary
 badge:

@@ -2,7 +2,7 @@
 uid: learn.scan-code-for-vulnerabilities
 metadata:
   title: Scan code for vulnerabilities in your build pipeline - Learn
-  description: TBD.
+  description: Scan for potential vulnerabilities in your source code during the build process.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,12 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Scan code for vulnerabilities in your build pipeline
-summary: TBD.
+summary: Scan for potential vulnerabilities in your source code during the build process.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Describe tools you can use to detect potential vulnerabilities in your source code
+  - Describe options you have to manage secrets in your build pipeline
+  - Scan for potential vulnerabilities in your build pipeline using SonarQube
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

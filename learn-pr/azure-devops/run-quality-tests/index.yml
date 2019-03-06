@@ -2,7 +2,7 @@
 uid: learn.run-quality-tests-when-your-application-builds
 metadata:
   title: Run quality tests when your application builds - Learn
-  description: TBD.
+  description: Set up automated testing in your pipeline to improve code quality.
   ms.date: 1/1/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,14 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Run quality tests when your application builds
-summary: TBD.
+summary: Set up automated testing in your pipeline to improve code quality.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Describe the benefits of automated testing and the kinds of testing you can use
+  - Run unit tests locally and then in your build pipeline
+  - Add a dashboard widget to visualize test runs over time
+  - Perform code coverage testing to see how much of your code is covered by unit tests
+  - See a test fail in the pipeline and then fix the failure
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:

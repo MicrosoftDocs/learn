@@ -6,4 +6,6 @@ Here we have the learner run a [template](https://azuredevopsdemogenerator.azure
 ## Task
 
 - Run template.
-- Move (TBD) card to Doing
+- Add cards to Azure Boards to queue up work.
+    - Move (TBD) card to Doing
+    - For example, maybe Joe is tasked with setting up the build pipeline. Sally might set up the dashboard.

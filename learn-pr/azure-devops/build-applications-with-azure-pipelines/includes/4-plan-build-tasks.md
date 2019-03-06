@@ -1,0 +1,1 @@
+Here we map existing manual build tasks to Azure Pipelines tasks.
