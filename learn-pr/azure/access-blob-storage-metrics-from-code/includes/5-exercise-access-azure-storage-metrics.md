@@ -16,13 +16,13 @@ You must start by using git to clone the application code.
     cd metricapp
     ```
 
-1. To clone the console app from Git Hub, type the following command and then press Enter:
+1. To clone the console app from GitHub, type the following command and then press Enter:
 
     ```bash
     git clone https://github.com/
     ```
 
-<!-- TODO: Add the correct URL to the Git Hub repo when it is known -->
+<!-- TODO: Add the correct URL to the GitHub repo when it is known -->
 
 1. To change to the **starter** folder, type the following command and then press Enter:
 

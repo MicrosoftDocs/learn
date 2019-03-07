@@ -1,6 +1,6 @@
 ## Motivation
 
-Before moving client proofs into Azure Blob storage, you want to see how you can retrieve logging status and how to download the service log files from Azure. After downloading the log files, you want to check what information is included in the log.
+Before moving client proofs into Azure Blob storage, you want to see how you can retrieve logging status and how to download the service log files from Azure. After downloading the log files, you would normally want to check what information is included in the log.
 
 In this exercise, you will check the logging status for your storage account using PowerShell, then download and review a log file.
 
@@ -22,12 +22,12 @@ Notice which operations are currently logged and the log retention period.
 ## Download and install Azure Storage Explorer
 Download the Azure Storage Explorer tool to be able to download the storage analytics log files.
 
-1. Open a new tab in your browser, and navigate to https://azure.microsoft.com/en-gb/features/storage-explorer/.
-2. Ensure you have the right operating system selected, and then clicfk **Download Storage Explorer for free**.
+1. Open a new tab in your browser, and navigate to https://azure.microsoft.com/features/storage-explorer/.
+2. Ensure you have the right operating system selected, and then click **Download Storage Explorer for free**.
 3. If a popup dialog appears asking what to do with the file, click **Save**.
-4. When a message appears saying the download is complete, click **Run** or launch the downloaded file.
+4. When a message appears to say the download is complete, click **Run** or launch the downloaded file.
 5. In the **User Account Control** dialog box, click **Yes**.
-6. In the **Setup - Microsoft Azure Storage Explorer** dialog box, select **I accept the aggreement**, and then click **Install**.
+6. In the **Setup - Microsoft Azure Storage Explorer** dialog box, select **I accept the agreement**, and then click **Install**.
 7. On the **Select Destination Location** page, click **Next**.
 8. On the **Select Start Menu Folder** page, click **Next**.
 9. On the **Completing the Microsoft Azure Storage Explorer Setup Wizard** page, click **Finish**.

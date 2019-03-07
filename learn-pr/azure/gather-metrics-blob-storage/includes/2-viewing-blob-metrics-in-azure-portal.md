@@ -1,12 +1,12 @@
 ## Motivation
 
-In preparation for moving client proof files to Azure Blob storage, you want to identify what metrics are available for the platform, and how easy it is to display metric information on an ad-hoc basis, for example if you wanted to know how much storage is being used in Azure and how much it has increased, or how much latency is involved when clients retrieve files for review.
+In preparation for moving client proof files to Azure Blob storage, you want to identify what metrics are available for the platform. You also want to see how easy it is to display metric information on an ad-hoc basis. For example, you might want to know how much storage is being used in Azure, or how much latency is involved when clients retrieve files for review.
 
-In this unit, you concentrate on using the Azure Portal to view available metrics on-demand.
+In this unit, you concentrate on using the Azure portal to view available metrics on-demand.
 
 ## Learning Objective
 
-By the end of this unit, you will be able to identify, select and display Azure Blob Storage metrics and display those metrics in the Azure Portal.
+By the end of this unit, you'll be able to identify, select, and display Azure Blob Storage metrics and display those metrics in the Azure portal.
 
 ## Azure Storage and Blob Storage
 
@@ -26,7 +26,7 @@ Azure Storage is designed to be durable, highly available, secure, scalable, man
 
 ### Azure Blob Storage
 
-This module concentrates on Azure Blob storage, which is Microsoft's object storage solution for the cloud. Blob storage provides the best solution for storing very large quantities of unstructured data, making it ideal for:
+This module concentrates on Azure Blob storage, which is Microsoft's object storage solution for the cloud. Blob storage provides the best solution for storing large quantities of unstructured data, making it ideal for:
 
 - Serving images to a browser
 - Distributing unstructured files
@@ -42,17 +42,19 @@ Blob storage resources consist of the following three concepts:
 
 A storage account can have unlimited numbers of containers and a container can hold unlimited numbers of blobs.
 
-Access to blob storage can be over http or https from any global Internet connection. Options for accessing blob data include URLs, Azure Storage REST API, Azure PowerShell, Azure CLI, or one of the many Azure Storage client libraries. These client libraries can be in multiple languages, including .NET, Java, Node.js, Python, PHP, and Ruby.
+You can access blob storage over http or https from any global Internet connection. Your options for accessing blob data include URLs, Azure Storage REST API, Azure PowerShell, Azure CLI, or one of the many Azure Storage client libraries. These client libraries can be in multiple languages, including .NET, Java, Node.js, Python, PHP, and Ruby.
 
-Note: Blob storage supports Azure Data Lake Storage Gen2. For more information, see Introduction to Azure Data Lake Storage Gen2 Preview, at https://docs.microsoft.com/en-gb/azure/storage/blobs/data-lake-storage-introduction.
+> [!NOTE]
+> Note: Blob storage supports Azure Data Lake Storage Gen2.
+
 
 ### Blob Types
 
 Azure Blob storage supports three different types of blobs:
 
-- Block Blobs - best for storing text and binary data with a maximu size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually.
-- Append Blobs - these consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines.
-- Page Blobs - these can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines.
+- Block Blobs are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually.
+- Append Blobs consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines.
+- Page Blobs can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines.
 
 ### Importance of Metrics
 
@@ -78,20 +80,18 @@ Transaction metrics include:
 - Success server latency
 - Transactions
 
-Capacity metrics are sent to Azure Monitor every hour and are refreshed daily. Transaction metrics are sent to Azure Monitor every minute, and are available both for the account and service. For more information, see Storage Metrics in Azure Monitor, at https://docs.microsoft.com/en-us/azure/storage/common/storage-metrics-in-azure-monitor. You should be aware that the refresh interval does affect the exercise in the next module, as metrics are not displayed in real time.
-
-Note that you can also specify custom metrics. For more information, see Custom metrics in Azure Monitor, at https://docs.microsoft.com/en-gb/azure/azure-monitor/platform/metrics-custom-overview.
+Capacity metrics are sent to Azure Monitor every hour and are refreshed daily. Transaction metrics are sent to Azure Monitor every minute, and are available both for the account and service. You should be aware that the refresh interval does affect the exercise in the next module, as metrics aren't displayed in real time. You can also specify custom metrics.
 
 ## Viewing Metrics
 
-There are two main mechanisms for viewing Azure blob storage metrics. These are:
+There are two main mechanisms for viewing Azure blob storage metrics:
 
-- the Azure Portal
+- the Azure portal
 - in a custom Dashboard (covered later in a later unit in this module)
 
 ### Portal
 
-Viewing blob storage metrics in the Azure Portal is the simplest way to identify what is going on. The Portal provides two implementations - classic Metrics and the current implementation.
+Viewing blob storage metrics in the Azure portal is the simplest way to view Azure blob storage metrics. The portal provides two implementations - classic Metrics and the current implementation.
 
 ![Monitoring options in a Storage Account](../media/2-monitoring-classic-metrics.PNG)
 
@@ -105,7 +105,7 @@ However, clicking Metrics (Classic) shows four charts for total requests, total 
 
 ### Filtering
 
-With some metrics, you can implement filtering, which enables you to focus on more specific values. For example, if you select the Blob Capacity Average metric, you can then filter by two properties, that is Blob tier and Blob Type. Clicking the Add Filter button and then selecting Blob Type as the filtered property brings up options for:
+With some metrics, you can implement filtering, which enables you to focus on more specific values. For example, if you select the Blob Capacity Average metric, you can then filter by two properties, that are Blob tier and Blob Type. Clicking the Add Filter button and then selecting Blob Type as the filtered property brings up options for:
 
 - Azure Data Lake Storage
 - PageBlob
@@ -125,14 +125,14 @@ For greater granularity with your metrics, you can also apply splitting, using t
 
 ### Chart Types
 
-Within Azure current metrics, you can then select one of four chart types. These are:
+Within Azure current metrics, you can then select one of four chart types:
 
 - Line
 - Area
 - Bar
 - Scatter
 
-The option you select will depend on the metric type that you are displaying and whether it is something that changes over time or has static values. For example, scatter charts work best with data that varies rapidly over time.
+The option you select will depend on the metric type that you are displaying. The option will also depend on whether the values changes over time or are static. For example, scatter charts work best with data that varies rapidly over time.
 
 ### Chart customization
 
@@ -144,4 +144,4 @@ Here you have options to edit the chart title and change the Y-axis range betwee
 
 ## Summary
 
-In this unit, you saw how to identify, select and display Azure Blob Storage metrics and display those metrics in the Azure Portal. In the next unit, you will carry out a practical exercise to reinforce this knowledge.
+In this unit, you saw how to identify, select, and display Azure Blob Storage metrics and display those metrics in the Azure portal. In the next unit, you'll carry out a practical exercise to reinforce this knowledge.

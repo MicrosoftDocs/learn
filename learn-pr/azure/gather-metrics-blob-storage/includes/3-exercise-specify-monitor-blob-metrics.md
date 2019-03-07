@@ -8,13 +8,13 @@ As a proof of concept exercise, you want to move some simple files into Azure Bl
 
 ## Create a storage account
 
-1. In the Azure Portal, in the left-hand pane, click **Storage accounts**, then click **Create storage account**.
+1. In the Azure Portal, in the left-hand pane, click **Storage accounts**, then click **+ Add**.
 
 1. Under **PROJECT DETAILS**, check that **Subscription** is set to your correct subscription, then next to **Resource Group**, click **Create new**.
 
 1. In the **Name** dialog box, enter **MonitorResourceGroup** and click **OK**.
 
-1. Under **INSTANCE DETAILS**, next to **Storage account name**, enter a unique name of between 3 and 24 characters consisting only of lower case letters and numbers, such as **monitor-storage-account**.
+1. Under **INSTANCE DETAILS**, next to **Storage account name**, enter a unique name of between 3 and 24 characters consisting only of lower case letters and numbers, such as **monitorstorageaccount**.
 
 1. Next to **Location**, select a location close to you.
 
@@ -36,11 +36,11 @@ As a proof of concept exercise, you want to move some simple files into Azure Bl
 
 ## View the properties of the storage account
 
-1. In the Overview page, you can see information about the Storage account, including:
+In the Overview page, you can see information about the Storage account, including:
 
 - Resource group name
 - Status
-- location
+- Location
 - Subscription
 - Performance/Access Tier
 - Replication
@@ -106,7 +106,8 @@ Next, you will view the metrics that the storage account generates. To do this, 
 
 1. Under **Monitoring**, click **Metrics**.
 
-1. Next to **New chart**, click the pen icon.
+1. Click **+ New Chart**
+1. Next to **Chart Title**, click the pen icon.
 
 1. Type in **Capacity Chart** as the name for your chart.
 
@@ -122,7 +123,7 @@ Next, you will view the metrics that the storage account generates. To do this, 
 
 1. Under **AGGREGATION**, click **Avg**.
 
-1. Repeat the prevous four steps but this time add **Blob Container Count** to the chart, then **Blob Count**.
+1. Repeat the previous four steps but this time add **Blob Container Count** to the chart, then **Blob Count**.
 
 Note at the bottom of the chart that you now have a colour bar and a count for the current value of the counter. It is highly likely that the counter will initally be zero for all the Capacity metrics, as the values have not been aggregated.
 
@@ -130,7 +131,8 @@ Note at the bottom of the chart that you now have a colour bar and a count for t
 
 Transaction metrics are updated hourly, so you should relatively quickly be able to see changes in these values. To create a transaction metrics chart, carry out the following steps.
 
-1. Next to **New chart**, click the pen icon.
+1. Click **+ New Chart**
+1. Next to **Chart Title**, click the pen icon.
 
 1. Type in **Transaction Chart** as the name for your chart.
 
@@ -148,7 +150,7 @@ Transaction metrics are updated hourly, so you should relatively quickly be able
 
 1. Change the **AGGREGATION** option to **Min**. Again, it is unlikely that there will have been an Azure outage during the time, so the line should stay at 100%. This information generally doesn't change very much.
 
-1. Click the X to the end of the right of the moinitor elipse to close it.
+1. Click the X to the end of the right of the monitor elipse to close it.
 
 1. Click **Add metric**. Both the **RESOURCE** and **METRIC NAMESPACE** values should already be selected.
 
@@ -158,7 +160,7 @@ Transaction metrics are updated hourly, so you should relatively quickly be able
 
 ## Splitting a Metric
 
-Splitting a chart enables you to view additional dimensions in the data, depending on the type of metric that you are viewing. To split a metric, carry out the folling steps:
+Splitting a chart enables you to view additional dimensions in the data, depending on the type of metric that you are viewing. To split a metric, carry out the following steps:
 
 1. Click **Apply splitting**.
 

@@ -4,10 +4,10 @@ You are now satisfied that the metrics will provide enough statistical informati
 You want to see what information is logged by Azure to provide troubleshooting information, and how to access the log files.
 
 ## Learning Objective
-By the end of this unit, you will be able to configure Storage Analytics logging and retrieve log file information to analyse storage transactions.
+By the end of this unit, you will be able to configure Storage Analytics logging and retrieve log file information to analyze storage transactions.
 
 ## Storage Analytics Logging
-Sometimes you will want to see more detail about storage transactions than performance related metrics. Metrics are very useful for tracking overall trends in performance or demand, but monitoring the transaction metrics cannot reveal the requested URLs for example, and none of the available storage metrics can give error messages relating to a specific request. This kind of detailed information is captured by Storage Analytics logging and is useful for examining the detail behind specific requests - for example if you wanted to know how many requests for a specific resource are authenticated or anonymous, or successful or failed.
+Sometimes you will want to see more detail about storage transactions than performance-related metrics. Metrics are useful for tracking overall trends in performance or demand, but monitoring the transaction metrics cannot reveal the requested URLs, for example, and none of the available storage metrics can give error messages relating to a specific request. This kind of detailed information is captured by Storage Analytics logging and is useful for examining the detail behind specific requests - for example if you wanted to know how many requests for a specific resource are authenticated or anonymous, or successful or failed.
 
 Storage Analytics logging records successful and failed requests for a storage account. Requests are recorded as read, write, or delete operations against the specific storage service - Blob, Table, or Queue, and captured into a separate storage blob for analysis later. So you can use Storage Analytics logs to review different types and frequency of request, or in order to troubleshoot failed requests. Logs are only generated when transactions occur, and only for the specific service endpoint, so if you are using storage in the Blob and Queue endpoints, but only the Blob endpoint has requests or transactions, then the system will only create logs for the Blob service.
 
@@ -16,7 +16,7 @@ Storage Analytics logging records successful and failed requests for a storage a
 
 The following table shows which types of request are logged when logging is enabled:
 |---|---|
-|Authenticated requests which are logged|Anonymous requests which are logged|
+|Authenticated requests that are logged|Anonymous requests that are logged|
 |Successful requests|Successful requests|
 |Failed requests, such as timeouts, throttling, network, and authorization errors|Server errors|
 |Requests using a Shared Access Signature (SAS), both failed and successful|Timeout errors for client and server|
@@ -28,7 +28,7 @@ The following table shows which types of request are logged when logging is enab
 ## Analytics log storage
 All analytics logs are stored in blobs, inside a container called $logs. Azure creates this container automatically when creating the storage account, and the container cannot be deleted. However the contents of the container can be deleted. Azure will delete log files automatically after seven days by default.
 
-You can determine the current status of analytics logging for your storage account by using the `Get-AzStorageServiceLoggingProperty` PowerShell cmdlet. For example to check the logging setting for blob storage on a storage account called ContosoStorage1 in a resource group called ContosoRG, you would use the following two commands:
+You can determine the current status of analytics logging for your storage account by using the `Get-AzStorageServiceLoggingProperty` PowerShell cmdlet. For example, to check the logging setting for blob storage on a storage account called ContosoStorage1 in a resource group called ContosoRG, you would use the following two commands:
 
 
 ```powershell
@@ -39,9 +39,9 @@ Get-AzStorageServiceLoggingProperty -ServiceType blob
 
 You can also change the logging settings, including the log retention period and the events that are recorded by using the `Set-AzStorageServiceLoggingProperty` cmdlet.
 
-Logs are stored in the $logs folder of your storage account endpoint, then inside a folder structure denoting the service type, year, month, day, and hour of the events. For example, the logs for files in blob storage between 4pm and 5pm on the 15th February 2019 would use the following path: https://<storageaccountname>.blob.core.windows.net/$logs/blob/2019/02/15/1600/ and the files are numbered starting from 000000.log in each folder.
+Logs are stored in the $logs folder of your storage account endpoint, then inside a folder structure denoting the service type, year, month, day, and hour of the events. For example, the logs for files in blob storage between 4pm and 5pm on the 15 February 2019 would use the following path: https://<storageaccountname>.blob.core.windows.net/$logs/blob/2019/02/15/1600/ and the files are numbered starting from 000000.log in each folder.
 
-Log files can be viewed or retrieved for analysis in a number of different ways. You can download logs using the AzCopy.exe command-line tool (AzCopy is available in the Cloud Shell or you can download the latest version from http://aka.ms/AzCopy) or using Azure Storage Explorer (you can download Azure Storage Explorer from https://azure.microsoft.com/en-gb/features/storage-explorer/), or you can download logs programmatically. You can also view log data with the Log Analytics tool in the Azure Portal.
+Log files can be viewed or retrieved for analysis in a number of different ways. You could download logs using the AzCopy.exe command-line tool (AzCopy is available in the Cloud Shell or you could download the latest version from http://aka.ms/AzCopy) or using Azure Storage Explorer (you can download Azure Storage Explorer from https://azure.microsoft.com/en-gb/features/storage-explorer/), or you could download logs programmatically. You can also view log data with the Log Analytics tool in the Azure portal.
 
 ## Analytics Log Formatting
 Storage Analytics logs are stored according to a standard format and version. There are two versions of log entries, both of which conform to the following rules:
