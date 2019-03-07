@@ -1,19 +1,9 @@
 {
   "redirections": [
     {
-      "source_path": "learn-pr/paths/index.md",
-      "redirect_url": "/learn/browse/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/data-engineering-with-databricks/index.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/data-engineering-with-databricks/",
+      "source_path": "learn-pr/paths/data-engineering-with-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/data-engineering-with-databricks/",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/modules/index.md",
-      "redirect_url": "/learn/browse/",
-      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/intro-to-csharp/index.md",
