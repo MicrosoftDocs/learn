@@ -17,6 +17,7 @@ abstract: |
   - Explore the Speech to Text API
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/convert-speech-to-text.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:

@@ -15,6 +15,7 @@ abstract: |
   - List the new roles of modern data projects
   - Outline Data Engineering Practices
   - Explore the high-level process for architecting a data engineering project
+ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/data-engineering-processes-badge.svg
 levels:

@@ -19,6 +19,7 @@ summary: In this module, we'll introduce you to the concept of language understa
 cardDescription: Introducing conversational intelligence through the use of language understanding (LUIS)
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
+ratingEnabled: true
 levels: 
 - intermediate
 roles:
