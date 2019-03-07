@@ -18,6 +18,7 @@ abstract: |
   - Test the web service
   - View the published web service headers and sample code
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/create-an-experiment-in-ml-studio.svg
 levels:
 - beginner

@@ -19,6 +19,7 @@ abstract: |
   - Explore the stages for processing Big Data Using Azure Data Lake Store
   - List the supported open source platforms
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/introduction-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner

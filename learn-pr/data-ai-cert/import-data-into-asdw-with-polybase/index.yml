@@ -17,6 +17,7 @@ abstract: |
   - Upload text data to Azure Blob store
   - Collect the security keys for Azure Blob store
   - Import data from Blob Storage to the Data Warehouse
+ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/import-data-into-asdw-with-polybase-badge.svg
 levels:

@@ -17,6 +17,7 @@ abstract: |
   - Compare the differences between on-premises data technologies and cloud data technologies
   - Outline how the role of the data professional is changing in organizations
   - Identify use cases that are impacted by these changes
+ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/evolving-world-of-data-badge.svg
 levels:
