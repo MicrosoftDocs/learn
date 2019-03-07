@@ -16,9 +16,9 @@ This first step is to add the control action to the app. In programming terms, w
 
 1. In the Actions section, select **Condition**.
 
-## Configure Condition control action
+## Configure the Condition
 
-Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect-sentiment action returns a *Score* which is a number between zero and one. If the number is greater than .5 we'll consider the tweet positive, otherwise it'll be negative.
+Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect-sentiment action returns a *Score* which is a number between zero and one. If the number is greater than 0.7 we'll consider the tweet positive, otherwise it'll be negative.
 
 1. In the Condition action, select the leftmost **Choose a value** field.
 
@@ -125,9 +125,15 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. In the Dynamic content popup, select **Original tweet text**.
 
+    > [!NOTE]
+    > If you are using the RSS **When a feed item is published** trigger, please use the **FeedSummary** here.
+
 1. Select the **Source** field.
 
 1. In the Dynamic content popup, select **Original tweet tweeted by**.
+
+    > [!NOTE]
+    > If you are using the RSS **When a feed item is published** trigger, please use the **FeedTitle** here.
 
 1. Click **Save**.
 
@@ -151,7 +157,13 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. In the Subject field, type **Negative tweet detected from** and then in the Dynamic content popup select **Original tweet tweeted by**.
 
+    > [!NOTE]
+    > If you are using the RSS **When a feed item is published** trigger, please use the **FeedTitle** here.
+
 1. In the Body field, type **Contents of tweet:** and then in the Dynamic content popup select **Original tweet text**.
+
+    > [!NOTE]
+    > If you are using the RSS **When a feed item is published** trigger, please use the **FeedSummary** here.
 
 1. Click **Save**.
 

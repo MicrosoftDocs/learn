@@ -10,7 +10,7 @@ For example, you might want to route an expense report to a different manager ba
 
 ### Types and operators
 
-You can test numeric, string, and Boolean types in your conditions. The following pseudo-code shows one example of each type:
+You can test numeric, string, Boolean, and JSON objects in your conditions. The following pseudo-code shows one example of each of the simple types:
 
 ```
 if (score is-greater-than 0.7)              ... // Numeric
@@ -18,22 +18,29 @@ if (TweetedBy does-not-contain "MyCompany") ... // String
 if (Favorited is-equal-to true)             ... // Boolean
 ```
 
-Each type has its own set of operators you can use in your comparisons. The following table lists the operators for each type.
+Each type has a set of operators you can use in your comparisons. The following table lists the operators for each type.
 
-| Numeric                     | String              | Boolean         |
-| --------------------------- | ------------------- | --------------- |
-| is-equal-to                 | is-equal-to         | is-equal-to     |
-| is-not-equal-to             | is-not-equal-to     | is-not-equal-to |
-| is-greater-than             | contains            |                 |
-| is-greater-than-or-equal-to | does-not-contain    |                 |
-| is-less-than                | starts-with         |                 |
-| is-less-than-or-equal-to    | does-not-start-with |                 |
-|                             | ends-with           |                 |
-|                             | does-not-end-with   |                  |
-||||
- 
+| Numeric                     | String              | Boolean         | JSON objects    |
+| --------------------------- | ------------------- | --------------- | --------------- |
+| is-equal-to                 | is-equal-to         | is-equal-to     | is-equal-to     |
+| is-not-equal-to             | is-not-equal-to     | is-not-equal-to | is-not-equal-to |
+| is-greater-than             | contains            |                 |                 |
+| is-greater-than-or-equal-to | does-not-contain    |                 |                 |
+| is-less-than                | starts-with         |                 |                 |
+| is-less-than-or-equal-to    | does-not-start-with |                 |                 |
+|                             | ends-with           |                 |                 |
+|                             | does-not-end-with   |                 |                 |
+|||||
+
+Most of the operations are intuitive, but there are two cases worth mentioning:
+
+* String comparisons are all case sensitive.
+* JSON comparisons use what's called *deep* equals. This means operator will compare the entire objects, including any descendant tokens for complex objects.
+
+<!-- TODO in process of verifying with product team whether this is true or a bug
 > [!IMPORTANT]
 > Boolean comparison is case sensitive. For example, if the incoming data uses an uppercase first letter like "True" for a Boolean value, you need to use that same string in your comparison. Please examine the format used by your incoming data to decide what to use in your comparison.
+-->
 
 ### Combine expressions using **AND** and **OR**
 

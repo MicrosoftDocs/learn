@@ -56,7 +56,7 @@ Triggers and actions are essentially function calls to an underlying API operati
 
 ![An illustration of the input and output of the "When a new tweet is posted" trigger and the "Detect sentiment" action.](../media-drafts/3-inputs-and-outputs.png)
 
-Logic Apps automatically places the return values into special variables that are available throughout the rest of the operations. These variables let you pass the results from one operation as input to the next operation. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all of the following steps.
+Logic Apps automatically makes the return values available throughout the rest of the operations. These values let you pass the results from one operation as input to the next operation. The following illustration shows the data flow for the first two operations in the social-media monitor app. Notice that the results from an operation are available in all of the following steps.
 
 ![An illustration showing how the results of all preceding operations are available throughout the rest of the app.](../media-drafts/3-data-flow.png)
 

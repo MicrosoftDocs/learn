@@ -56,11 +56,14 @@ Next, we'll configure our app to pass the tweet text to the Text Analytics servi
 
 1. In the Dynamic content popup, select **Original tweet text**.
 
+    > [!NOTE]
+    > If you are using the RSS **When a feed item is published** trigger, please send the **FeedSummary** to the Text Analytics service.
+
 1. Click **Save** in the Logic App designer.
 
 ## Examine results of Detect-sentiment
 
-Your app is now live. Tweets containing your product name will be processed by the Text Analytics service and you'll be given a numeric score. Recall that a score close to 1 is positive sentiment while a score near 0 is negative. In this section, you'll see how to monitor the executions of your app and view the data flowing through each steps. This is a great technique to know about since it helps you verify your app is working correctly.
+Your app is now live. Tweets containing your product name will be processed by the Text Analytics service and you'll be given a numeric score. Recall that a score close to 1 is positive sentiment while a score near 0 is negative. In this section, you'll see how to monitor the execution of your app and view the data flowing through each steps. This is a great technique to know about since it helps you verify your app is working correctly.
 
 1. In the left navigation bar, select **Overview**.
 
