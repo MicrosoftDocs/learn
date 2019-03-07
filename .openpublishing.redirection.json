@@ -6,7 +6,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/data-engineering-with-databricks/index.md",
+      "source_path": "learn-pr/data-engineering-with-databricks/index.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/data-engineering-with-databricks/",
       "redirect_document_id": true
     },
