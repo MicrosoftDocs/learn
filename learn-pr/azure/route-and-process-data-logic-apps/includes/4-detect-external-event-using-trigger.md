@@ -47,9 +47,9 @@ If push triggers respond more quickly and cost less than polling triggers, then 
 
 You can think of trigger operations as function calls that have parameters and return values.
 
-Trigger *parameters* let us configure the operation. The Twitter "When a new tweet is posted" trigger has a parameter called **Search text** that it uses to select matching tweets for us. Some operations have a mix of required and optional parameters. The SQL Server "When an item is created" trigger has one required parameter named **Table name** and several optional parameters like **Order By** and **Select Query**.
+Trigger *parameters* let you configure the operation. The Twitter "When-a-new-tweet-is-posted" trigger has a parameter called **Search text** that it uses to select matching tweets for us. Some operations have a mix of required and optional parameters. The SQL Server "When an item is created" trigger has one required parameter named **Table name** and several optional parameters like **Order By** and **Select Query**.
 
-Trigger *return values* are the results of the operation. The Bitbucket connector has a "When a pull request is merged" trigger. The trigger returns an object containing things like the identity of the **Repository** and the **Actor** who approved the merge. Most triggers actually return a collection instead of a single object. The Twitter "When a new tweet is posted" trigger returns an array of **TweetModel** objects. Each object contains values like the **Tweet text**, **User name**, and **Followers count**. The following illustration shows a collection being returned from a trigger.
+Trigger *return values* are the results of the operation. The Bitbucket connector has a "When a pull request is merged" trigger. The trigger returns an object containing things like the identity of the **Repository** and the **Actor** who approved the merge. Most triggers actually return a collection instead of a single object. The Twitter "When-a-new-tweet-is-posted" trigger returns an array of **TweetModel** objects. Each object contains values like the **Tweet text**, **User name**, and **Followers count**. The following illustration shows a collection being returned from a trigger.
 
 ![An illustration showing the Twitter trigger interacting with Twitter. The trigger sends the search text to Twitter and Twitter returns an array of objects. Each object in the array contains information about one of the matching tweets.](../media-drafts/4-trigger-returning-a-collection.png)
 
@@ -59,7 +59,8 @@ You can use a loop to process each item or you can ask the trigger to split the 
 
 <!-- 
 > [!NOTE]
-> Since the size of a returned array can be large, there are limits on the number of instances that can run concurrently. By default, the maximum number of concurrent instances for array elements is 20, however, in your Logic App settings you can change this to a maximum of 50. If your returned array contains more elements than the maximum, the remaining items are queued and will run as instances finish.
+> TODO: verify whether this guidance is still technically correct after recent updates to docs.
+Since the size of a returned array can be large, there are limits on the number of instances that can run concurrently. By default, the maximum number of concurrent instances for array elements is 20, however, in your Logic App settings you can change this to a maximum of 50. If your returned array contains more elements than the maximum, the remaining items are queued and will run as instances finish.
 -->
 
 ## How to create a Logic App in the Azure portal
@@ -72,8 +73,10 @@ When you first navigate to your newly deployed Logic App, you'll find a getting-
 
 After you select a starting template, you'll automatically navigate to the Logic Apps Designer.
 
-## What is the Logic Apps Designer?
+## How to add a trigger using the Designer?
 
-The Logic Apps Designer is a graphical tool for creating your workflows. It lets you pick from a gallery of connectors that contain the triggers and actions you can use in your app. We will use Twitter's **When a new tweet is posted** trigger and set the **Search text**, **Frequency**, and **Interval** parameters. The following screenshot shows the social-media monitor Logic App displayed in the Designer; notice that it begins with the Twitter trigger.
+The Logic Apps Designer is lets you pick from a gallery of connectors that contain the triggers and actions you can use in your app. The typical strategy is to use the search feature to locate the connector you are interested it. Then you look through the triggers supplied by the connector to find the one you want. In our case, we will use Twitter's **When-a-new-tweet-is-posted** trigger.
+
+Once you've added the trigger, the Designer gives you a GUI to set its properties. We'll set the **Search text**, **Frequency**, and **Interval** parameters. The following screenshot shows the social-media monitor Logic App displayed in the Designer; notice that it begins with the Twitter trigger.
 
 ![A screenshot showing an example Logic App in the Logic App Designer. The app is displayed using rectangular areas to represent the starting trigger and each of the actions. Arrows connect the rectangles to show the execution flow through the app.](../media-drafts/4-social-media-complete-in-the-designer.png)

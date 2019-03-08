@@ -42,6 +42,6 @@ You job is to map each task in your flowchart to Logic Apps triggers and actions
 
 The Logic Apps Designer is a graphical tool for creating your workflows. It lets you pick from a gallery of connectors that contain the triggers and actions you can use in your app. You'll use the graphical Logic Apps Designer to arrange the trigger, actions, and control actions. The following screenshot shows the Designer with the completed application.
 
-![A screenshot showing the Logic Apps Designer containing the completed social-media monitor app. The app begins with the Twitter trigger. It then has three actions: detect sentiment, insert row, and send email. A control action determines whether the insert row or send email action executes based on the score of the detect sentiment action.](../media-drafts/2-social-media-app-designer-view.png)
+![A screenshot showing the Logic Apps Designer containing the completed social-media monitor app. The app begins with the Twitter trigger. It then has three actions: detect sentiment, insert row, and send email. A control action determines whether the insert row or send email action executes based on the score of the Detect-sentiment action.](../media-drafts/2-social-media-app-designer-view.png)
 
 When you select the "Save" button, your app will be live and will run automatically whenever the trigger activates.
