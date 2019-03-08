@@ -13,4 +13,30 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-summary.md)]
-#TODO: add quiz
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which role works with services such as Cognitive Services, Cognitive Search, and the Bot Framework?"
+    choices: 
+    - content: "Data Engineer"
+      isCorrect: false
+      explanation: "Data Engineers are responsible for the provisioning and configuration of both on-premises and cloud data platform technologies."
+    - content: "Data Scientist"
+      isCorrect: false
+      explanation: "Data Scientists perform advanced analytics work to help drive value from data for a business."
+    - content: "AI Engineer"
+      isCorrect: true
+      explanation: "Correct! Artificial Intelligence (AI) Engineers work with AI services such as Cognitive Services, Cognitive Search, and the Bot Framework."
+
+  - content: "Which Azure Data Platform technology is commonly used to process data in an ELT framework?"
+    choices: 
+    - content: "Azure Data Factory"
+      isCorrect: true
+      explanation: "Correct! Azure Data Factory (ADF) is a cloud integration service that orchestrates that movement of data between various data stores."
+    - content: "Azure Databricks"
+      isCorrect: false
+      explanation: "Azure Data Bricks is a serverless platform optimized for Microsoft Azure which provides one-click setup, streamlined workflows and an interactive workspace for Spark-based applications."
+    - content: "Azure Data Lake"
+      isCorrect: false
+      explanation: "Azure Data Lake storage is a Hadoop-compatible data repository that can store any size or type of data."

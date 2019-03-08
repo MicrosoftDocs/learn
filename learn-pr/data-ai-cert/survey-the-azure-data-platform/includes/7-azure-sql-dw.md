@@ -6,7 +6,7 @@ As data loads increase the processing time of on-premises data warehousing solut
 
 ## Key Features
 
-SQL Data Warehouse uses Massive Parallel Processing (MPP) to run queries across petabytes of data quickly.  Since the storage is separated from the compute nodes, the compute nodes can be scaled independently to meet any demand, at any time.  There is a Data Movement Service (DMS) that coordinates and transports data between compute nodes as required; however, a replicated table feature within the product can be used to reduce data movement and therefore improve performance. Furthermore, there are two types of distributed tables supported, Hash and Round-robin, that provide the Data Engineer performance tuning capability. It has the important capability of pausing and resuming the compute layer. Meaning that you only pay for the compute that you use. This is very useful in Data Warehousing solutions.
+SQL Data Warehouse uses Massive Parallel Processing (MPP) to run queries across petabytes of data quickly.  Since the storage is separated from the compute nodes, the compute nodes can be scaled independently to meet any demand, at any time.  There is a Data Movement Service (DMS) that coordinates and transports data between compute nodes as required; however, a replicated table feature within the product can be used to reduce data movement and therefore improve performance. Furthermore, there are two types of distributed tables supported, Hash and Round-robin, that provide the Data Engineer performance tuning capability. The service also has the important capability of pausing and resuming the compute layer. Meaning that you only pay for the compute that you use. This is very useful in Data Warehousing solutions.
 
 ## Ingesting and Processing Data
 
