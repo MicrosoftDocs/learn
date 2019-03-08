@@ -36,9 +36,9 @@ products:
 - azure
 #- azure-devops
 modules:
-- learn.azdo.assess-your-development-process
+- learn.azdo-assess-your-development-process
 - learn.azdo.design-a-devops-strategy
-- learn.azdo.get-started-with-devops
+- learn.get-started-with-devops
 - learn.azdo.choose-an-agile-approach
 trophy:
   uid: learn.azdo.design-a-devops-practice.trophy

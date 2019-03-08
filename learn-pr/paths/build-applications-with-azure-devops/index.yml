@@ -39,7 +39,7 @@ products:
 modules:
 - learn.azdo.build-applications-with-azure-pipelines
 - learn.azdo.implement-code-workflow
-- learn.azdo.run-quality-tests-when-your-application-builds
+- learn.azdo.run-quality-tests-after-builds
 - learn.azdo.scan-code-for-vulnerabilities
 - learn.azdo.secure-build-dependencies
 - learn.azdo.manage-build-dependencies
