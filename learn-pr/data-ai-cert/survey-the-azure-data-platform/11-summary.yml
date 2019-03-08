@@ -13,3 +13,42 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/11-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What data platform technology is a globally distributed, multi-model database that can offer sub second query performance?"
+    choices: 
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Azure SQL Database is a managed relational database service in Azure."
+    - content: "Azure Cosmos DB"
+      isCorrect: true
+      explanation: "Correct! Azure Cosmos DB is a globally distributed, multi-model database that can offer sub second query performance."
+    - content: "Azure SQL Data Warehouse"
+      isCorrect: false
+      explanation: "Azure SQL Data Warehouse is an enterprise-class cloud-based enterprise data warehouse designed to process massive amounts of data"
+
+  - content: "Which of the following is the cheapest data store to use when you want to store data without the need to query it?"
+    choices: 
+    - content: "Azure Stream Analytics"
+      isCorrect: false
+      explanation: "Azure Stream Analytics will ingest streaming data from applications or IoT devices and gateways into an event hub or an Internet of Things (IoT) hub in real-time. At which point the event or IoT hub will stream the data into Stream Analytics for real-time analysis."
+    - content: "Azure Databricks"
+      isCorrect: false
+      explanation: "Azure Data Bricks is a serverless platform optimized for Microsoft Azure which provides one-click setup, streamlined workflows and an interactive workspace for Spark-based applications."
+    - content: "Azure Storage Account"
+      isCorrect: true
+      explanation: "Correct! Azure Storage offers a massively scalable object store for data objects and file system services for the cloud. Creating a storage account as a Blob means that you cannot query the data directly."
+
+  - content: "Which Azure Service would be used to store documentation about a data source?"
+    choices: 
+    - content: "Azure Data Factory"
+      isCorrect: false
+      explanation: "Azure Data Factory (ADF) is a cloud integration service that orchestrates that movement of data between various data stores."
+    - content: "Azure Data Catalog"
+      isCorrect: true
+      explanation: "Azure Data Catalog is a single, central place for all of an organization's users to contribute their knowledge and build a community and culture of data sources that are owned by an organization."
+    - content: "Azure Data Lake"
+      isCorrect: false
+      explanation: "Correct! Azure Data Lake storage is a Hadoop-compatible data repository that can store any size or type of data."

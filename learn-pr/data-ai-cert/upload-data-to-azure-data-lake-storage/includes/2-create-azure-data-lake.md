@@ -29,7 +29,7 @@ Creating an Azure Data Lake Storage Account Gen2 is the same as creating an Azur
 1. Select **Storage**, and choose **Storage account**.
 1. Select your **Subscription** and the **Resource group** you created earlier (**mslearn-datalake-test**).
 1. Enter a unique name for your storage account. It must be unique across all of Azure, so for example use the prefix "dlakedata" with some numbers. You might have to try a few variations to find a unique name. The portal will display a green checkmark next to the name when you have a valid entry.
-1. Select a location - you typically want to select a region near where the data consumption will occur. Since this is an example, just select a location near you.
+1. Select the location to **Central US**
 1. Make sure the Account kind is **StorageV2 (general-purpose V2)**. The rest of the values can be left as their defaults.
 
     ![Screenshot showing the Basic tab for creating a storage account in the Azure portal](../media/2-create-storage-account-basics.png)

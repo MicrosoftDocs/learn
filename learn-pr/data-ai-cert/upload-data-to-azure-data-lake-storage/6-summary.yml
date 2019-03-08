@@ -13,3 +13,30 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Contoso has a Data Lake Storage Account (Gen 2). Which tool would be the most appropriate tool to perform a one time without the installation or configuration of a tool to upload of a single file?"
+    choices: 
+    - content: "Azure Data Factory"
+      isCorrect: false
+      explanation: "Azure Data Factory requires provisioning and configuring."
+    - content: "Azure Storage Explorer"
+      isCorrect: false
+      explanation: "Azure Storage Explorer requires installing this tool first."
+    - content: "Azure Portal"
+      isCorrect: true
+      explanation: "Correct! The Azure Portal requires no installation or configuration to work, and just requires a sign in and a click of an upload button to perform the upload."
+
+  - content: " Contoso has a Data Lake Storage Account (Gen 2). Which tool would be the most appropriate tool to perform a movement of hundreds of files from Amazon S3 to Azure Data Lake Storage?"
+    choices: 
+    - content: "Azure Data Factory"
+      isCorrect: true
+      explanation: "Correct! Azure Data Factory would efficiently handle the movement of data from Amazon S3 to Azure Data Lake store."
+    - content: "Azure Data Catalog"
+      isCorrect: false
+      explanation: "Azure Data Catalog is the wrong tool for the job required as it is used to document information about data stores."
+    - content: "Azure Portal"
+      isCorrect: false
+      explanation: "The Azure Portal would not support the copy of files from Amazon S3, and just requires a sign in and a click of an upload button to perform the upload."

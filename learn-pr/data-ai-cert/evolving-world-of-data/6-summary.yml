@@ -13,4 +13,43 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-summary.md)]
-#TODO: add quiz
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which data processing framework will be used by Data Engineers to ingest data into cloud data platforms on Azure?"
+    choices: 
+    - content: "Online Transactional Processing (OLTP)."
+      isCorrect: false
+      explanation: "Online Transactional Processing (OLTP) describes a database model for processing tranactional data"
+    - content: "Extract, Transform and Load (ETL)."
+      isCorrect: false
+      explanation: "Extract, Transform and Load (ETL) is a typical process for ingesting data from an on-premises database to an on-premises data warehouse."
+    - content: "Extract, Load and Transform (ELT)."
+      isCorrect: true
+      explanation: "Correct! Extract, Load and Transform (ELT) is a typical process for ingesting data from an on-premises database into the cloud"
+
+  - content: "What type of data can have its own schema at defined at query time?"
+    choices: 
+    - content: "Structured data."
+      isCorrect: false
+      explanation: "Structured data typical has its schema defined at creation time"
+    - content: "Cosmos DB."
+      isCorrect: false
+      explanation: "Cosmos DB is a data platform technology that exists in Microsoft Azure."
+    - content: "Un-structured data."
+      isCorrect: true
+      explanation: "Correct! Un-structured data will typically have its schema defined at query time. This means that data can be loaded into a data platform in its native format."
+
+  
+  - content: "Duplicating customers content for redundancy and meeting Service Level Agreements in Azure meets which cloud technical requirement?"
+    choices: 
+    - content: "Maintainability."
+      isCorrect: false
+      explanation: "Maintainability ensure that a data platform can be easily maintained."
+    - content: "High Availability."
+      isCorrect: true
+      explanation: "Correct! High Availability duplicates customers content for redundancy and meeting Service Level Agreements in Azure."
+    - content: "Multi-lingual support."
+      isCorrect: false
+      explanation: "Multi-lingual support enables a data platform technology to support multiple languages."
