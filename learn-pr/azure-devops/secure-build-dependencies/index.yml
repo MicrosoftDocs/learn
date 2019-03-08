@@ -3,7 +3,7 @@ uid: learn.secure-build-dependencies
 metadata:
   title: Manage security and compliance in your build pipeline - Learn
   description: Scan third-party components for security and compliance in your build pipeline.
-  ms.date: 1/1/2019
+  ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

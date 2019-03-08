@@ -3,7 +3,7 @@ uid: learn.run-quality-tests-when-your-application-builds
 metadata:
   title: Run quality tests when your application builds - Learn
   description: Set up automated testing in your pipeline to improve code quality.
-  ms.date: 1/1/2019
+  ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

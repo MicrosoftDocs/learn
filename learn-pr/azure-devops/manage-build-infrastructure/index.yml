@@ -3,7 +3,7 @@ uid: learn.manage-build-infrastructure
 metadata:
   title: Host your own build server in your build pipeline - Learn
   description: Use your own build agent when Microsoft-hosted agents don't meet your needs.
-  ms.date: 1/1/2019
+  ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
