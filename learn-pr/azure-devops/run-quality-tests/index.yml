@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.run-quality-tests-when-your-application-builds
+uid: learn.azdo.run-quality-tests-after-builds
 metadata:
   title: Run quality tests when your application builds - Learn
   description: Set up automated testing in your pipeline to improve code quality.
@@ -19,7 +19,7 @@ abstract: |
   - Perform code coverage testing to see how much of your code is covered by unit tests
   - See a test fail in the pipeline and then fix the failure
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -32,13 +32,13 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.run-quality-tests-when-your-application-builds.1-introduction
-- learn.run-quality-tests-when-your-application-builds.2-tbd
-- learn.run-quality-tests-when-your-application-builds.3-set-up-environment
-- learn.run-quality-tests-when-your-application-builds.4-add-unit-tests
-- learn.run-quality-tests-when-your-application-builds.5-add-dashboard-widget
-- learn.run-quality-tests-when-your-application-builds.6-perform-code-coverage
-- learn.run-quality-tests-when-your-application-builds.7-fix-failed-test
-- learn.run-quality-tests-when-your-application-builds.8-summary
+- learn.azdo.run-quality-tests-after-builds.1-introduction
+- learn.azdo.run-quality-tests-after-builds.2-tbd
+- learn.azdo.run-quality-tests-after-builds.3-set-up-environment
+- learn.azdo.run-quality-tests-after-builds.4-add-unit-tests
+- learn.azdo.run-quality-tests-after-builds.5-add-dashboard-widget
+- learn.azdo.run-quality-tests-after-builds.6-perform-code-coverage
+- learn.azdo.run-quality-tests-after-builds.7-fix-failed-test
+- learn.azdo.run-quality-tests-after-builds.8-summary
 badge:
-  uid: learn.run-quality-tests-when-your-application-builds.badge
+  uid: learn.azdo.run-quality-tests-after-builds.badge

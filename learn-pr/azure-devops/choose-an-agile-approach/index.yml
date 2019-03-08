@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.choose-an-agile-approach
+uid: learn.azdo.choose-an-agile-approach
 metadata:
   title: Choose an Agile approach to software development - Learn
   description: Develop an Agile mindset to incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
@@ -17,7 +17,7 @@ abstract: |
   - Choose the appropriate Agile method for your project
   - Create an Azure DevOps project and plan a backlog of work using Azure Boards
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -30,10 +30,10 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.choose-an-agile-approach.1-introduction
-- learn.choose-an-agile-approach.2-define-agile
-- learn.choose-an-agile-approach.3-define-azure-boards
-- learn.choose-an-agile-approach.4-create-a-backlog
-- learn.choose-an-agile-approach.5-summary
+- learn.azdo.choose-an-agile-approach.1-introduction
+- learn.azdo.choose-an-agile-approach.2-define-agile
+- learn.azdo.choose-an-agile-approach.3-define-azure-boards
+- learn.azdo.choose-an-agile-approach.4-create-a-backlog
+- learn.azdo.choose-an-agile-approach.5-summary
 badge:
-  uid: learn.choose-an-agile-approach.badge
+  uid: learn.azdo.choose-an-agile-approach.badge

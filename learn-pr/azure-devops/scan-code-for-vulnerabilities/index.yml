@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.scan-code-for-vulnerabilities
+uid: learn.azdo.scan-code-for-vulnerabilities
 metadata:
   title: Scan code for vulnerabilities in your build pipeline - Learn
   description: Scan for potential vulnerabilities in your source code during the build process.
@@ -17,7 +17,7 @@ abstract: |
   - Describe options you have to manage secrets in your build pipeline
   - Scan for potential vulnerabilities in your build pipeline using SonarQube
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -30,12 +30,12 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.scan-code-for-vulnerabilities.1-introduction
-- learn.scan-code-for-vulnerabilities.2-implement-secure-process
-- learn.scan-code-for-vulnerabilities.3-manage-secrets
-- learn.scan-code-for-vulnerabilities.4-set-up-environment
-- learn.scan-code-for-vulnerabilities.5-scan-sonarqube
-- learn.scan-code-for-vulnerabilities.6-tbd2
-- learn.scan-code-for-vulnerabilities.7-summary
+- learn.azdo.scan-code-for-vulnerabilities.1-introduction
+- learn.azdo.scan-code-for-vulnerabilities.2-implement-secure-process
+- learn.azdo.scan-code-for-vulnerabilities.3-manage-secrets
+- learn.azdo.scan-code-for-vulnerabilities.4-set-up-environment
+- learn.azdo.scan-code-for-vulnerabilities.5-scan-sonarqube
+- learn.azdo.scan-code-for-vulnerabilities.6-tbd2
+- learn.azdo.scan-code-for-vulnerabilities.7-summary
 badge:
-  uid: learn.scan-code-for-vulnerabilities.badge
+  uid: learn.azdo.scan-code-for-vulnerabilities.badge

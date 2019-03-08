@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.build-applications-with-azure-pipelines
+uid: learn.azdo.build-applications-with-azure-pipelines
 metadata:
   title: Build applications with Azure Pipelines - Learn
   description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
@@ -17,7 +17,7 @@ abstract: |
   - Map manual build steps to automated build tasks
   - Build a web application using Azure Pipelines
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -30,12 +30,12 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.build-applications-with-azure-pipelines.1-introduction
-- learn.build-applications-with-azure-pipelines.2-what-is-continuous-integration
-- learn.build-applications-with-azure-pipelines.3-build-locally
-- learn.build-applications-with-azure-pipelines.4-plan-build-tasks
-- learn.build-applications-with-azure-pipelines.5-set-up-environment
-- learn.build-applications-with-azure-pipelines.6-create-the-pipeline
-- learn.build-applications-with-azure-pipelines.7-summary
+- learn.azdo.build-applications-with-azure-pipelines.1-introduction
+- learn.azdo.build-applications-with-azure-pipelines.2-what-is-continuous-integration
+- learn.azdo.build-applications-with-azure-pipelines.3-build-locally
+- learn.azdo.build-applications-with-azure-pipelines.4-plan-build-tasks
+- learn.azdo.build-applications-with-azure-pipelines.5-set-up-environment
+- learn.azdo.build-applications-with-azure-pipelines.6-create-the-pipeline
+- learn.azdo.build-applications-with-azure-pipelines.7-summary
 badge:
-  uid: learn.build-applications-with-azure-pipelines.badge
+  uid: learn.azdo.build-applications-with-azure-pipelines.badge

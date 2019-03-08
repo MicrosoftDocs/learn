@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-build-dependencies.4-create-package-pipeline
+uid: learn.azdo.manage-build-dependencies.4-create-package-pipeline
 title: Exercise - Create a pipeline for your package
 metadata:
   title: Exercise - Create a pipeline for your package

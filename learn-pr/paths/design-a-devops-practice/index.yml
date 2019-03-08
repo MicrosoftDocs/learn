@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
-uid: learn.design-a-devops-practice
+uid: learn.azdo.design-a-devops-practice
 metadata:
   title: Design a DevOps practice learning path
   description: Azure DevOps enables you to build, test, and deploy any application to any cloud. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
   brand: azure
-  ms.date: 1/1/2019
+  ms.date: 9/1/2019
   author: tpetchel
   ms.author: thpetche
   #ms.learn-contact: thpetche
@@ -22,7 +22,7 @@ summary: |
 
 cardDescription: Azure DevOps enables you to build, test, and deploy any application to any cloud. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 # TODO
 - beginner
@@ -36,9 +36,9 @@ products:
 - azure
 #- azure-devops
 modules:
-- learn.assess-your-development-process
-- learn.design-a-devops-strategy
-- learn.get-started-with-devops
-- learn.choose-an-agile-approach
+- learn.azdo.assess-your-development-process
+- learn.azdo.design-a-devops-strategy
+- learn.azdo.get-started-with-devops
+- learn.azdo.choose-an-agile-approach
 trophy:
-  uid: learn.design-a-devops-practice.trophy
+  uid: learn.azdo.design-a-devops-practice.trophy

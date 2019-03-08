@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.manage-build-dependencies
+uid: learn.azdo.manage-build-dependencies
 metadata:
   title: Manage dependencies in your build pipeline - Learn
   description: Manage your application and the packages it uses across build pipelines.
@@ -18,7 +18,7 @@ abstract: |
   - Create a build pipeline for your package and publish the artifact to a package repository
   - Push a change to your package and then update your application to use it
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -31,10 +31,10 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.manage-build-dependencies.1-introduction
-- learn.manage-build-dependencies.2-tbd
-- learn.manage-build-dependencies.3-set-up-environment
-- learn.manage-build-dependencies.4-create-package-pipeline
-- learn.manage-build-dependencies.5-summary
+- learn.azdo.manage-build-dependencies.1-introduction
+- learn.azdo.manage-build-dependencies.2-tbd
+- learn.azdo.manage-build-dependencies.3-set-up-environment
+- learn.azdo.manage-build-dependencies.4-create-package-pipeline
+- learn.azdo.manage-build-dependencies.5-summary
 badge:
-  uid: learn.manage-build-dependencies.badge
+  uid: learn.azdo.manage-build-dependencies.badge

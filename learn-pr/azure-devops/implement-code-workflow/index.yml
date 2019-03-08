@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.implement-code-workflow
+uid: learn.azdo.implement-code-workflow
 metadata:
   title: Implement a code workflow in your build pipeline - Learn
   description: Collaborate with others and merge only the highest quality code.
@@ -17,7 +17,7 @@ abstract: |
   - Add a badge to your GitHub repository to show the status of the latest build
   - Add a dashboard widget to visualize your build history
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -30,14 +30,14 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.implement-code-workflow.1-introduction
-- learn.implement-code-workflow.2-choose-a-code-flow-strategy
-- learn.implement-code-workflow.3-set-up-environment
-- learn.implement-code-workflow.4-publish-artifact
-- learn.implement-code-workflow.5-push-a-change
-- learn.implement-code-workflow.6-add-build-badge
-- learn.implement-code-workflow.7-generate-build-report
-- learn.implement-code-workflow.8-tbd
-- learn.implement-code-workflow.9-summary
+- learn.azdo.implement-code-workflow.1-introduction
+- learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy
+- learn.azdo.implement-code-workflow.3-set-up-environment
+- learn.azdo.implement-code-workflow.4-publish-artifact
+- learn.azdo.implement-code-workflow.5-push-a-change
+- learn.azdo.implement-code-workflow.6-add-build-badge
+- learn.azdo.implement-code-workflow.7-generate-build-report
+- learn.azdo.implement-code-workflow.8-tbd
+- learn.azdo.implement-code-workflow.9-summary
 badge:
-  uid: learn.implement-code-workflow.badge
+  uid: learn.azdo.implement-code-workflow.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-build-dependencies.4-scan-oss-whitesource-bolt
+uid: learn.azdo.secure-build-dependencies.4-scan-oss-whitesource-bolt
 title: Exercise - Scan open source components using WhiteSource Bolt
 metadata:
   title: Exercise - Scan open source components using WhiteSource Bolt

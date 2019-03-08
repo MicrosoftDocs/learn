@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.assess-your-development-process
+uid: learn.azdo-assess-your-development-process
 metadata:
   title: Assess your existing software development process - Learn
   description: Prepare for the DevOps Self-Assessment by examining your existing processes and technology choices.
@@ -17,7 +17,7 @@ abstract: |
   - Analyze which processes work and which don't
   - Take the DevOps Self-Assessment to build a report your team can use to recommend improvements
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -30,14 +30,14 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.assess-your-development-process.1-introduction
-- learn.assess-your-development-process.2-meet-the-team
-- learn.assess-your-development-process.3-assess-processes
-- learn.assess-your-development-process.4-assess-technology
-- learn.assess-your-development-process.5-assess-culture
-- learn.assess-your-development-process.6-assess-performance
-- learn.assess-your-development-process.7-assess-outcomes
-- learn.assess-your-development-process.8-devops-assessment
-- learn.assess-your-development-process.9-summary
+- learn.azdo-assess-your-development-process.1-introduction
+- learn.azdo-assess-your-development-process.2-meet-the-team
+- learn.azdo-assess-your-development-process.3-assess-processes
+- learn.azdo-assess-your-development-process.4-assess-technology
+- learn.azdo-assess-your-development-process.5-assess-culture
+- learn.azdo-assess-your-development-process.6-assess-performance
+- learn.azdo-assess-your-development-process.7-assess-outcomes
+- learn.azdo-assess-your-development-process.8-devops-assessment
+- learn.azdo-assess-your-development-process.9-summary
 badge:
-  uid: learn.assess-your-development-process.badge
+  uid: learn.azdo-assess-your-development-process.badge
