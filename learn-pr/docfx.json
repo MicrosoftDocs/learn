@@ -57,6 +57,16 @@
                 "dest": "modules"
             },
             {
+                "src": "wwl-mba",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
