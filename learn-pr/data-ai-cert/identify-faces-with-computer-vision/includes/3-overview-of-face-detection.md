@@ -12,16 +12,13 @@ A *face location* is another term for a collection of _face coordinates_. The lo
 
 ## Landmarks
 
-*Face landmarks* are a collection of detailed points on a face. These points identify common facial elements such as a pupil, nose, or eyebrow by using pixel coordinates.
+*Face landmarks* are a collection of detailed points on a face. These points identify common facial elements such as a pupil, nose, or eyebrow by using pixel coordinates. The Face API can return up to 27 landmarks for each identified face that you can use for analysis.
 
 ![A chart of Face API landmarks](../media/3-face-recognition-landmarks.png)
 
-> [!TIP]
-> Face landmarks are optional attributes that you can analyze during face detection.
-
 ## Attributes
 
-*Face attributes* are predefined properties of a face or a person represented by a face. The Face API identifies the following types of attributes:
+*Face attributes* are predefined properties of a face or a person represented by a face. The Face API can optionally identify and return the following types of attributes for a detected face:
 
 - Age
 - Gender
@@ -29,6 +26,3 @@ A *face location* is another term for a collection of _face coordinates_. The lo
 - Facial hair
 - Head pose (3D)
 - Emotion
-
-> [!IMPORTANT]
-> The Face API detection algorithms are designed to detect faces (and aspects of faces) in images. They aren't designed to do full *facial recognition* by themselves. Facial recognition identifies a _specific_ face.
