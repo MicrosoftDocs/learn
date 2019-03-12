@@ -1,16 +1,16 @@
-Face **recognition** is used in many areas, including security, natural user interfaces, image analysis, mobile apps, and robotics. 
+*Facial recognition* is used in many areas, including security, natural user interfaces, image analysis, mobile apps, and robotics. 
 
-The ability to leverage artificial intelligence to perform face recognition and matching is one of the more powerful aspects of the Azure Cognitive Services Face API offering.
+The ability to use artificial intelligence to recognize and match faces is one of the more powerful aspects of the Face API.
 
-![Face concepts](../media/4-face-recognition-concepts.png)
+![A group of related faces](../media/4-face-recognition-concepts.png)
 
 ## Clarifying terms
 
-To help clarify some differences between detection, and recognition, let's switch it up and by asking (and answering) are a few questions:
+To help clarify some differences between face detection and face recognition, let's ask and answer a few questions:
 
-- Do two faces belong to the same person? This defines **verification**.
-- Does this person "look like" other people? This defines **similarity**.
-- Do all of these faces belong together? This defines **grouping**.
-- Who is this person out of this entire group of people? This defines **identification**.
+- Do two images of a face belong to the same person? This defines *verification*.
+- Does this person look like other people? This defines *similarity*.
+- Do all of these faces belong together? This defines *grouping*.
+- Who is this person in this group of people? This defines *identification*.
 
-All of these aspects define the elements of face **recognition**.
+These are all elements of face *recognition*.
