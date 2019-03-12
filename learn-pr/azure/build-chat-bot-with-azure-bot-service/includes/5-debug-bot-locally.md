@@ -1,5 +1,3 @@
-[!INCLUDE [0-vm-note](0-vm-note.md)]
-
 As with any application code that you write, changes to bot code need to be tested and debugged locally before being deployed to production. To help debug bots, Microsoft offers the Bot Framework Emulator. In this unit, you will learn how to use Visual Studio Code and the emulator to debug your bots.
 
 1. Execute the following command in Visual Studio Code's integrated terminal to install [Restify](http://restify.com/), a popular Node.js package for building and consuming RESTful web services:

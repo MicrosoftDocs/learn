@@ -1,5 +1,3 @@
-[!INCLUDE [0-vm-note](0-vm-note.md)]
-
 When you created an Azure web app bot, an Azure web app was deployed to host it. But the bot does require some code, and it still needs to be deployed to the Azure web app. Fortunately, the code was generated for you by the Azure Bot Service. In this unit, you will use Visual Studio Code to place the code in a local Git repository and publish the bot to Azure by pushing changes from the local repository to a remote repository connected to the Azure web app that hosts the bot — a process known as [continuous integration](https://wikipedia.org/wiki/Continuous_integration).
 
 1. Create a folder named "Factbot" in the location of your choice on your hard disk to hold the bot's source code.
