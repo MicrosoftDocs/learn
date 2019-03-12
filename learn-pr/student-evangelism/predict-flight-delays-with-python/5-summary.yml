@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 content: |
   [!include[](includes/5-summary.md)]
-durationInMinutes: 10
+durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
