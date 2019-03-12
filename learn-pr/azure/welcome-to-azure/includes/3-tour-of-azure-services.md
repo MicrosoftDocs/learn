@@ -154,6 +154,7 @@ Open source cluster technologies have been developed to deal with these large da
 > | Azure SQL Data Warehouse | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
 > | Azure Data Lake Analytics | On-demand ("pay as you go") scalable analytics service that allows you to write queries to transform your data and extract valuable insights. |
+> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
 
 ### Artificial Intelligence
 
