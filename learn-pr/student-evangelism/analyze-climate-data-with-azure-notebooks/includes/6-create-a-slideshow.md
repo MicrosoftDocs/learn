@@ -1,4 +1,4 @@
-# Creating slideshows in Azure Notebooks is currently broken. See https://github.com/Microsoft/AzureNotebooks/issues/445
+<!-- TODO: Creating slideshows in Azure Notebooks is currently broken. See https://github.com/Microsoft/AzureNotebooks/issues/445 -->
 
 What if you wanted to take a notebook you've created and use it in a presentation? You can use create slide shows from the cells in a notebook and play them back when it's presentation time. In this exercise, you will create a slide show from the notebook you built in the previous exercises.
 

@@ -1,6 +1,6 @@
-In this exercise, you will import Matplotlib into the notebook you have been working with and configure the notebook to support inline Matplotlib output.
+In this unit, you'll import Matplotlib into the notebook you've been working with and configure the notebook to support inline Matplotlib output.
 
-1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
+1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook, and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
 
 1. Execute the following statements in a new cell at the end of the notebook. Ignore any warning messages that are displayed related to font caching:
 
@@ -34,7 +34,7 @@ In this exercise, you will import Matplotlib into the notebook you have been wor
 
 The dotted line in the middle of the graph represents a 50-50 chance of obtaining a correct answer. The blue curve represents the accuracy of your model. More importantly, the fact that this chart appears at all demonstrates that you can use Matplotlib in a Jupyter notebook.
 
-The reason you built a machine-learning model is to predict whether a flight will arrive on time or late. In this exercise, you will write a Python function that calls the machine-learning model you built in the previous lab to compute the likelihood that a flight will be on time. Then you will use the function to analyze several flights.
+The reason you built a machine-learning model is to predict whether a flight will arrive on time or late. In this exercise, you'll write a Python function that calls the machine-learning model you built in the previous lab to compute the likelihood that a flight will be on time. Then you'll use the function to analyze several flights.
 
 1. Enter the following function definition in a new cell, and then run the cell.
 
@@ -73,11 +73,12 @@ The reason you built a machine-learning model is to predict whether a flight wil
         return model.predict_proba(pd.DataFrame(input))[0][0]
     ```
 
-    This function takes as input a date and time, an origin airport code, and a destination airport code, and returns a value between 0.0 and 1.0 indicating the probability that the flight will arrive at its destination on time. It uses the machine-learning model you built in the previous lab to compute the probability. And to call the model, it passes a DataFrame containing the input values to ```predict_proba```. The structure of the DataFrame exactly matches the structure of the DataFrame depicted in Exercise 3, Step 3 of Lab 2.
+    This function takes as input a date and time, an origin airport code, and a destination airport code, and returns a value between 0.0 and 1.0 indicating the probability that the flight will arrive at its destination on time. It uses the machine-learning model you built in the previous lab to compute the probability. And to call the model, it passes a DataFrame containing the input values to `predict_proba`. The structure of the DataFrame exactly matches the structure of the DataFrame we used earlier.
 
-    Note that dates input to the ```predict_delay``` function use the international date format ```dd/mm/year```.
+    > [!NOTE]
+    > Date input to the `predict_delay` function use the international date format `dd/mm/year`.
 
-1. Use the code below to compute the probability that a flight from New York to Atlanta on the evening of October 1 will arrive on time. Note that the year you enter is irrelevant because it isn't used by the model.
+1. Use the code below to compute the probability that a flight from New York to Atlanta on the evening of October 1 will arrive on time. The year you enter is irrelevant because it isn't used by the model.
 
     ```python
     predict_delay('1/10/2018 21:45:00', 'JFK', 'ATL')

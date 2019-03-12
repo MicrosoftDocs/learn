@@ -1,4 +1,4 @@
-The first order of business is to create a new Azure notebook. Azure notebooks are contained in *projects* whose primary purpose is to group related notebooks. In this exercise, you will create a new project and then create a notebook inside it.
+The first order of business is to create a new Azure notebook. Azure notebooks are contained in *projects* whose primary purpose is to group related notebooks. In this unit, you'll create a new project and then create a notebook inside it.
 
 1. Navigate to [https://notebooks.azure.com](https://notebooks.azure.com/?azure-portal=true) in your browser.
 
@@ -28,7 +28,7 @@ The first order of business is to create a new Azure notebook. Azure notebooks a
 
     _Creating a notebook_
 
-    If you're curious, the .ipynb file-name extension stands for "IPython notebook." Jupyter notebooks were originally known as IPython (Interactive Python) notebooks, and they only supported Python as a programming language. The name Jupyter is a combination of Julia, Python, and R — the core programming languages that Jupyter supports.
+    If you're curious, the **.ipynb** file-name extension stands for "IPython notebook." Jupyter notebooks were originally known as IPython (Interactive Python) notebooks, and they only supported Python as a programming language. The name Jupyter is a combination of Julia, Python, and R — the core programming languages that Jupyter supports.
 
 1. Click the new notebook. This will launch the notebook and allow you to start editing it.
 

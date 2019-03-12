@@ -1,6 +1,6 @@
-To create a machine learning model, you need two datasets: one for training and one for testing. In practice, you often have only one dataset, so you split it into two. In this exercise, you will perform an 80-20 split on the DataFrame you prepared in the previous lab so you can use it to train a machine learning model. You will also separate the DataFrame into feature columns and label columns. The former contains the columns used as input to the model (for example, the flight's origin and destination and the scheduled departure time), while the latter contains the column that the model will attempt to predict — in this case, the ARR_DEL15 column which indicates whether a flight will arrive on time.
+To create a machine learning model, you need two datasets: one for training and one for testing. In practice, you often have only one dataset, so you split it into two. In this exercise, you will perform an 80-20 split on the DataFrame you prepared in the previous lab so you can use it to train a machine learning model. You will also separate the DataFrame into feature columns and label columns. The former contains the columns used as input to the model (for example, the flight's origin and destination and the scheduled departure time), while the latter contains the column that the model will attempt to predict — in this case, the ARR_DEL15 column, which indicates whether a flight will arrive on time.
 
-1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
+1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook, and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
 
 1. In a new cell at the end of the notebook, enter and execute the following statements:
 
@@ -9,9 +9,9 @@ To create a machine learning model, you need two datasets: one for training and 
     train_x, test_x, train_y, test_y = train_test_split(df.drop('ARR_DEL15', axis=1), df['ARR_DEL15'], test_size=0.2, random_state=42)
     ```
 
-    The first statement imports Sckit-Learn's [train_test_split](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) helper function. The second line uses the function to split the DataFrame into a training set containing 80% of the original data, and a test set containing the remaining 20%. The ```random_state``` parameter seeds the random-number generator used to do the splitting, while the first and second parameters are DataFrames containing the feature columns and the label column.
+    The first statement imports Sckit-Learn's [train_test_split](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) helper function. The second line uses the function to split the DataFrame into a training set containing 80% of the original data, and a test set containing the remaining 20%. The `random_state` parameter seeds the random-number generator used to do the splitting, while the first and second parameters are DataFrames containing the feature columns and the label column.
 
-1. ```train_test_split``` returns four DataFrames. Use the following command to display the number of rows and columns in the DataFrame containing the feature columns used for training:
+1. `train_test_split` returns four DataFrames. Use the following command to display the number of rows and columns in the DataFrame containing the feature columns used for training:
 
     ```python
     train_x.shape
@@ -25,13 +25,13 @@ To create a machine learning model, you need two datasets: one for training and 
 
     How do the two outputs differ, and why?
 
-Can you predict what you would see if you called ```shape``` on the other two DataFrames, ```train_y``` and ```test_y```? If you're not sure, try it and find out.
+Can you predict what you would see if you called `shape` on the other two DataFrames, `train_y` and `test_y`? If you're not sure, try it and find out.
 
-There are many types of machine learning models. One of the most common is the regression model, which uses one of a number of regression algorithms to produce a numeric value — for example, a person's age or the probability that a credit-card transaction is fraudulent. You will train a classification model, which seeks to resolve a set of inputs into one of a set of known outputs. A classic example of a classification model is one that examines e-mails and classifies them as "spam" or "not spam." Your model will be a binary classification model that predicts whether a flight will arrive on-time or late ("binary" because there are only two possible outputs).
+There are many types of machine learning models. One of the most common is the regression model, which uses one of a number of regression algorithms to produce a numeric value — for example, a person's age or the probability that a credit-card transaction is fraudulent. You'll train a classification model, which seeks to resolve a set of inputs into one of a set of known outputs. A classic example of a classification model is one that examines e-mails and classifies them as "spam" or "not spam." Your model will be a binary classification model that predicts whether a flight will arrive on-time or late ("binary" because there are only two possible outputs).
 
 One of the benefits of using Sckit-learn is that you don't have to build these models — or implement the algorithms that they use — by hand. Sckit-learn includes a variety of classes for implementing common machine learning models. One of them is [RandomForestClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), which fits multiple decision trees to the data and uses averaging to boost the overall accuracy and limit [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 
-1. Execute the following code in a new cell to create a ```RandomForestClassifier``` object and train it by calling the [fit](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.fit) method.
+1. Execute the following code in a new cell to create a `RandomForestClassifier` object and train it by calling the [fit](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.fit) method.
 
     ```python
     from sklearn.ensemble import RandomForestClassifier
@@ -40,13 +40,13 @@ One of the benefits of using Sckit-learn is that you don't have to build these m
     model.fit(train_x, train_y)
     ```
 
-    The output shows the parameters used in the classifier, including ```n_estimators```, which specifies the number of trees in each decision-tree forest, and ```max_depth```, which specifies the maximum depth of the decision trees. The values shown are the defaults, but you can override any of them when creating the ```RandomForestClassifier``` object.
+    The output shows the parameters used in the classifier, including `n_estimators`, which specifies the number of trees in each decision-tree forest, and `max_depth`, which specifies the maximum depth of the decision trees. The values shown are the defaults, but you can override any of them when creating the `RandomForestClassifier` object.
 
     ![Training the model](../media/3-fit-model.png)
 
     _Training the model_
 
-2. Now call the [predict](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.predict) method to test the model using the values in ```test_x```, followed by the [score](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.score) method to determine the mean accuracy of the model:
+2. Now call the [predict](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.predict) method to test the model using the values in `test_x`, followed by the [score](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.score) method to determine the mean accuracy of the model:
 
     ```python
     predicted = model.predict(test_x)
@@ -61,7 +61,7 @@ One of the benefits of using Sckit-learn is that you don't have to build these m
 
 The mean accuracy is 86%, which seems good on the surface. However, mean accuracy isn't always a reliable indicator of the accuracy of a classification model. Let's dig a little deeper and determine how accurate the model really is — that is, how adept it is at determining whether a flight will arrive on time.
 
-There are several ways to measure the accuracy of a classification model. One of the best overall measures for a binary classification model is [Area Under Receiver Operating Characteristic Curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) (sometimes referred to as "ROC AUC"), which essentially quantifies how often the model will make a correct prediction regardless of the outcome. In this exercise, you will compute an ROC AUC score for the model you built in the previous exercise and learn about some of the reasons why that score is lower than the mean accuracy output by the ```score``` method. You will also learn about other ways to gauge the accuracy of the model.
+There are several ways to measure the accuracy of a classification model. One of the best overall measures for a binary classification model is [Area Under Receiver Operating Characteristic Curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) (sometimes referred to as "ROC AUC"), which essentially quantifies how often the model will make a correct prediction regardless of the outcome. In this unit, you'll compute an ROC AUC score for the model you built previously and learn about some of the reasons why that score is lower than the mean accuracy output by the `score` method. You'll also learn about other ways to gauge the accuracy of the model.
 
 1. Before you compute the ROC AUC, you must generate *prediction probabilities* for the test set. These probabilities are estimates for each of the classes, or answers, the model can predict. For example, `[0.88199435,  0.11800565]` means that there's an 89% chance that a flight will arrive on time (ARR_DEL15 = 0) and a 12% chance that it won't (ARR_DEL15 = 1). The sum of the two probabilities adds up to 100%.
 
@@ -86,7 +86,7 @@ There are several ways to measure the accuracy of a classification model. One of
 
     Why is the AUC score lower than the mean accuracy computed in the previous exercise?
 
-   The output from the `score` method reflects how many of the items in the test set the model predicted correctly. This score is skewed by the fact that the dataset the model was trained and tested with contains many more rows representing on-time arrivals than rows representing late arrivals. Because of this imbalance in the data, you are more likely to be correct if you predict that a flight will be on time than if you predict that a flight will be late.
+   The output from the `score` method reflects how many of the items in the test set the model predicted correctly. This score is skewed by the fact that the dataset the model was trained and tested with contains many more rows representing on-time arrivals than rows representing late arrivals. Because of this imbalance in the data, you're more likely to be correct if you predict that a flight will be on time than if you predict that a flight will be late.
 
     ROC AUC takes this into account and provides a more accurate indication of how likely it is that a prediction of on-time *or* late will be correct.
 
@@ -99,13 +99,13 @@ There are several ways to measure the accuracy of a classification model. One of
     confusion_matrix(test_y, predicted)
     ```
 
-   The first row in the output represents flights that were on time. The first column in that row shows how many flights were correctly predicted to be on time, while the second column reveals how many flights were predicted as delayed but were not. From this, the model appears to be very adept at predicting that a flight will be on time.
+   The first row in the output represents flights that were on time. The first column in that row shows how many flights were correctly predicted to be on time, while the second column reveals how many flights were predicted as delayed but weren't. From this, the model appears to be adept at predicting that a flight will be on time.
 
    ![Generating a confusion matrix](../media/3-confusion-matrix.png)
 
    _Generating a confusion matrix_
 
-   But look at the second row, which represents flights that were delayed. The first column shows how many delayed flights were incorrectly predicted to be on time. The second column shows how many flights were correctly predicted to be delayed. Clearly, the model isn't nearly as adept at predicting that a flight will be delayed as it is at predicting that a flight will arrive on time. What you *want* in a confusion matrix is big numbers in the upper-left and lower-right corners, and small numbers (preferably zeros) in the upper-right and lower-left corners.
+   But look at the second row, which represents flights that were delayed. The first column shows how many delayed flights were incorrectly predicted to be on time. The second column shows how many flights were correctly predicted to be delayed. Clearly, the model isn't nearly as adept at predicting that a flight will be delayed as it is at predicting that a flight will arrive on time. What you *want* in a confusion matrix is large numbers in the upper-left and lower-right corners, and small numbers (preferably zeros) in the upper-right and lower-left corners.
 
 1. Other measures of accuracy for a classification model include *precision* and *recall*. Suppose the model was presented with three on-time arrivals and three delayed arrivals, and that it correctly predicted two of the on-time arrivals, but incorrectly predicted that two of the delayed arrivals would be on time. In this case, the precision would be 50% (two of the four flights it classified as being on time actually were on time), while its recall would be 67% (it correctly identified two of the three on-time arrivals). You can learn more about precision and recall from <https://en.wikipedia.org/wiki/Precision_and_recall>
 

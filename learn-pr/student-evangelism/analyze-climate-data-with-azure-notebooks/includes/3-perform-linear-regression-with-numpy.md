@@ -31,4 +31,4 @@ Scatter plots offer a handy means for visualizing data, but suppose you wanted t
 
     _Scatter plot with regression line_
 
-From the regression line, you can see that the difference between 30-year mean temperatures and 5-year mean temperatures is increasing over time.  Most of the computational work required to generate the regression line was performed by NumPy's ```polyfit``` function, which computed the values of ```m``` and ```b``` in the equation y = mx + b.
+From the regression line, you can see that the difference between 30-year mean temperatures and 5-year mean temperatures is increasing over time.  Most of the computational work required to generate the regression line was done by NumPy's `polyfit` function, which computed the values of `m` and `b` in the equation y = mx + b.

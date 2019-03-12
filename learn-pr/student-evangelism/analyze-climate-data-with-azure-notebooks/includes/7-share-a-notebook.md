@@ -1,4 +1,4 @@
-One of the value-added features of Azure Notebooks is that it provides a cloud-based hub for sharing notebooks. In this exercise, you will share the notebook you created in previous exercises.
+One of the value-added features of Azure Notebooks is that it provides a cloud-based hub for sharing notebooks. In this unit, you'll share the notebook you created in previous exercises.
 
 1. Select **File** -> **Close and Halt** to close the notebook.
 
@@ -18,4 +18,4 @@ One of the value-added features of Azure Notebooks is that it provides a cloud-b
 
     _Sharing by link_
 
-Another way to share a notebook is to download it as a .ipynb file and send the .ipynb file to whomever you wish to share it with. You can download a notebook by clicking the **Download Project** button. Downloading .ipynb files is also useful for making local copies of your notebooks. You can even run them in other Jupyter environments if you would like because there is nothing proprietary about Azure Notebooks.
+Another way to share a notebook is to download it as a **.ipynb** file and send the **.ipynb** file to whomever you wish to share it with. You can download a notebook and make a local copy by clicking the **Download Project** button. You can even run them in other Jupyter environments if you would like because there's nothing proprietary about Azure Notebooks.

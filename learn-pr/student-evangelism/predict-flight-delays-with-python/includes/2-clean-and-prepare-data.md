@@ -116,7 +116,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
     df[df.isnull().values.any(axis=1)].head()
     ```
 
-    Pandas represents missing values with ```NaN```, which stands for *Not a Number*. The output shows that these rows are indeed missing values in the ARR_DEL15 column:
+    Pandas represents missing values with `NaN`, which stands for *Not a Number*. The output shows that these rows are indeed missing values in the ARR_DEL15 column:
 
     ![Rows with missing values](../media/2-rows-with-missing-values.png)
 
@@ -131,7 +131,7 @@ One of the most important aspects of preparing a dataset for use in machine lear
     df.iloc[177:185]
     ```
 
-    Confirm that the ```NaN```s in rows 177, 179, and 184 were replaced with 1s indicating that the flights arrived late:
+    Confirm that the `NaN`s in rows 177, 179, and 184 were replaced with 1s indicating that the flights arrived late:
 
     ![NaNs replaced with 1s](../media/2-missing-values-filled.png)
 

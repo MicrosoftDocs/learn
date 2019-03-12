@@ -29,4 +29,4 @@ Another popular Python library that is widely used in the research community is 
 
     _Scatter plot with regression line computed by sckikit-learn_
 
-The output is almost identical to the output in the previous exercise. The difference is that scikit-learn did more of the work for you. Specifically, you didn't have to code a line function as you did with NumPy; scikit-learn's ```LinearRegression``` function did it for you. scikit-learn supports *many* different types of regression, which comes in handy when building sophisticated machine-learning models.
+The output is almost identical to the output in the previous exercise. The difference is that scikit-learn did more of the work for you. Specifically, you didn't have to code a line function as you did with NumPy; scikit-learn's `LinearRegression` function did it for you. scikit-learn supports *many* different types of regression, which comes in handy when building sophisticated machine-learning models.
