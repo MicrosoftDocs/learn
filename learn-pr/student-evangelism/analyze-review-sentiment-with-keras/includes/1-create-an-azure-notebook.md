@@ -1,6 +1,10 @@
 The first order of business is to create a new Azure notebook. Azure notebooks are contained in *projects* whose primary purpose is to group related notebooks. In this exercise, you will create a new project and then create a notebook inside it.
 
-1. Navigate to [https://notebooks.azure.com](https://notebooks.azure.com/?azure-portal=true) in your browser and sign in using your Microsoft account. Then click **My Projects**.
+1. Navigate to [https://notebooks.azure.com](https://notebooks.azure.com/?azure-portal=true) in your browser.
+
+1. Sign in using your Microsoft account. 
+
+1. Click **My Projects**.
 
     ![Navigating to the Projects page](../media/1-add-project-1.png)
 

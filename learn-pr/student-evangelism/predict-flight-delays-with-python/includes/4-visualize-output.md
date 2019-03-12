@@ -1,6 +1,6 @@
 In this exercise, you will import Matplotlib into the notebook you have been working with and configure the notebook to support inline Matplotlib output.
 
-1. Return to [Azure Notebooks](https://notebooks.azure.com) and to the notebook that you created. If you closed the notebook, use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
+1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
 
 1. Execute the following statements in a new cell at the end of the notebook. Ignore any warning messages that are displayed related to font caching:
 

@@ -1,6 +1,6 @@
 To create a machine learning model, you need two datasets: one for training and one for testing. In practice, you often have only one dataset, so you split it into two. In this exercise, you will perform an 80-20 split on the DataFrame you prepared in the previous lab so you can use it to train a machine learning model. You will also separate the DataFrame into feature columns and label columns. The former contains the columns used as input to the model (for example, the flight's origin and destination and the scheduled departure time), while the latter contains the column that the model will attempt to predict — in this case, the ARR_DEL15 column which indicates whether a flight will arrive on time.
 
-1. Return to [Azure Notebooks](https://notebooks.azure.com) and to the notebook that you created previously. If you closed the notebook, use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
+1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
 
 1. In a new cell at the end of the notebook, enter and execute the following statements:
 

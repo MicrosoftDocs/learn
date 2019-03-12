@@ -2,7 +2,7 @@ Before you can prepare a dataset, you need to understand its content and structu
 
 A [DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html) is a two-dimensional labeled data structure. The columns in a DataFrame can be of different types, just like columns in a spreadsheet or database table. It is the most commonly used object in Pandas. In this exercise, you will examine the DataFrame — and the data inside it — more closely.
 
-1. Return to [Azure Notebooks](https://notebooks.azure.com) and to the notebook that you created in the previous section. If you closed the notebook, use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
+1. Switch back to the Azure notebook that you created in the previous section. If you closed the notebook, you can sign back into the [Microsoft Azure Notebooks portal](https://notebooks.azure.com?azure-portal=true), open your notebook and use the **Cell** -> **Run All** to rerun the all of the cells in the notebook after opening it.
 
     ![The FlightData notebook](../media/2-load-dataset.png)
 
