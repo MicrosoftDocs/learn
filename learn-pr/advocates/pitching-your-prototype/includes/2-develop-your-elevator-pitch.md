@@ -23,10 +23,10 @@ State the problem you're trying to solve. This should be at the heart of your pr
 
 Once you've articulated the problem, you need to share the solution you've built to solve the problem. This should include any competitive advantage your product brings to the market. In our case, our app makes it easier to identify who makes the clothes you want and links you to a way to buy them. To do this, FashionFindr uses machine learning and AI to enhance the search and buying experience.
 
-![State the solution to the problem](..media/pitch_proto.003.png)
+![State the solution to the problem](../media/pitch_proto.003.png)
 
 ## Why are we the right people
 
 Lastly, we need to tell the audience why you and your team are the right people to solve this problem. This could be based on experience, specialized knowledge, or empathy for the customer. If you don't have relevant experience, then articulating prior success is a good substitute.
 
-![Why are we the best people to solve this problem](..media/pitch_proto.004.png)
+![Why are we the best people to solve this problem](../media/pitch_proto.004.png)
