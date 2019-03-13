@@ -16,7 +16,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "Which of these statements is a good mission statement?"
     choices:
     - content: "We're building a cool product that'll change the world!"
@@ -24,16 +23,7 @@ quiz:
       explanation: "Gives no detail of the product or how it'll change the world."
     - content: "FashionFindr is building a platform that will help consumers find and buy the fashions they love."
       isCorrect: true
-      explanation: ""
+      explanation: "Clear and direct expression of the FashionFindr mission."
     - content: "At FashionFindr, we strive to build an amazing online fashion platform."
       isCorrect: false
       explanation: "Doesn't provide a why for building the product."
-
-  - content: "True or false: ???."
-    choices:
-    - content: "True"
-      isCorrect: false
-      explanation: ""
-    - content: "False"
-      isCorrect: true
-      explanation: ""
