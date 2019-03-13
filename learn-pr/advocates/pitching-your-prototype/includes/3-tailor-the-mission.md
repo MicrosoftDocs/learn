@@ -25,7 +25,7 @@ For FashionFindr, it’ll be key to find an entry point: a resonance that allows
 Once they understand our solution, we can also explain our business model and highlight what our audience will get out of using, buying, or investing in our product.
 
 
-![State the solution to the problem](..media/pitch_proto.003.png)
+![State the solution to the problem](../media/pitch_proto.003.png)
 
 
 •	Explain different types of audiences
