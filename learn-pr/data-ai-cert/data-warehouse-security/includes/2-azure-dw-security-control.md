@@ -1,100 +1,111 @@
-Besides being a fundamental part of IT administration, data warehouse security is an essential and required component of many compliance certifications. Azure SQL Data Warehouse service enables security controls through various layers, namely platform security, infrastructure security, network security, and data security. Data security controls are available for both data at rest and data in transit.
+Besides being a fundamental part of IT administration, data warehouse security is an essential and required component of many compliance certifications. The Azure SQL Data Warehouse service enables security controls through various layers: platform security, infrastructure security, network security, and data security. Data security controls are available for both data at rest and data in transit.
 
-Authentication and authorization controls provide infrastructure security. In the context of the data warehouse, Authentication is a way to verify a user's identity. Authorization is a way to control access to data and objects in the data warehouse. Authorization checks are performed after the authentication checks.
+Authentication and authorization controls provide infrastructure security. In the context of the data warehouse, authentication is a way to verify a user's identity. Authorization is a way to control access to data and objects in the data warehouse. Authorization checks are performed after authentication checks.
 
 ## Create a sample data warehouse
 
-To demonstrate security capabilities of Azure SQL Data Warehouse, we will create an instance of Azure SQL Data Warehouse with a sample database that Azure provides. Create the server and database from Azure portal with the following options.
+To demonstrate the security capabilities of Azure SQL Data Warehouse, we'll create an instance of Azure SQL Data Warehouse with a sample database that Azure provides. Create the server and database from the Azure portal with the following options.
 
-![Screenshot of Creating SQL Data Warehouse using the portal](../media/2-create-dw-portal.png)
+![Screenshot of creating a SQL Data Warehouse instance by using the portal](../media/2-create-dw-portal.png)
 
-## Set Azure Data Warehouse firewall access rules using the portal
+## Set Azure Data Warehouse firewall access rules by using the portal
 
-Azure SQL Data Warehouse provides controls to restrict access to the data warehouse infrastructure via firewall rules. Firewall rules are the first level of defense against unauthorized access to the data warehouse assets. The firewall rules specify which IPs or IP ranges can access the data warehouse assets and reject any connections coming in from IPs other than the allowed list or range. The firewall rules are enforced at server-level granularity. To specify firewall rules:
+Azure SQL Data Warehouse provides controls to restrict access to the data warehouse infrastructure via firewall rules. Firewall rules are the first level of defense against unauthorized access to the data warehouse assets. Firewall rules specify which IPs or IP ranges can access the data warehouse assets, and they reject any connections that come from IPs other than the allowed list or range. The firewall rules are enforced at the server level. 
 
-- Navigate to Azure portal from your browser
-- Select SQL databases in the left pane
-- Select the data warehouse you created according to in the previous section
-- Select **Server name** in the right blade
+To specify firewall rules:
 
-![Screenshot of Selecting Server Name](../media/2-select-server-name.png)
+1. Go to the Azure portal from your browser.
+1. Select **SQL databases** in the left pane.
+1. Select the data warehouse that you created in the previous section.
+1. Select **Server name** in the right blade.
 
-- Select **Show firewall settings**
-- Select a name for **RULE NAME** field and **START IP** and **END IP**
+   ![Screenshot of selecting a server name](../media/2-select-server-name.png)
 
-![Screenshot of Selecting Rule Name, Start IP, and End IP](../media/2-select-server-setting.png)
+1. Select **Show firewall settings**.
+1. Select a name for **RULE NAME**, **START IP**, and **END IP**.
 
-## Create an Azure Data Warehouse login using SQL Server Management Studio
+   ![Screenshot of selecting rule name, start IP, and end IP](../media/2-select-server-setting.png)
 
-Azure SQL Data Warehouse supports two types of authentication to verify the identity of users connecting to it: SQL authentication and Azure Active Directory (AAD) authentication.
-With SQL authentication, users connect to the data warehouse with a username and password combination. Azure portal does not provide the ability to configure SQL authentication. To configure SQL authentication:
+## Create an Azure Data Warehouse login by using SQL Server Management Studio
 
-- Open SQL Server Management Studio that you installed as a prerequisite and connect to the data warehouse. Get the server name from Azure portal by navigating to the data warehouse you previously created and use the username and password you specified when you created the data warehouse.
+Azure SQL Data Warehouse supports two types of authentication to verify the identity of users who connect to it: SQL authentication and Azure Active Directory (Azure AD) authentication.
 
-![Screenshot of Opening SQL Server Management System](../media/2-open-ssms.png)
+With SQL authentication, users connect to the data warehouse by using a username/password combination. The Azure portal does not provide the ability to configure SQL authentication. To configure SQL authentication:
 
-- Select **Connect**, which logs you into the SQL data warehouse
-- Right-click **Logins** under **Security** in the left pane and select **New Login…**
+1. Open SQL Server Management Studio (which you installed as a prerequisite) and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-![Screenshot of Creating New Login](../media/2-create-new-login.png)
+   ![Screenshot of opening SQL Server Management Studio](../media/2-open-ssms.png)
 
-After the query pane appears with commands to create a login, change the username and password as desired and select **Execute**.
+1. Select **Connect**, which logs you in to the data warehouse.
+1. Right-click **Logins** under **Security** in the left pane, and select **New Login**.
 
-![Screenshot of Executing New Query](../media/2-execute-new-query.png)
+   ![Screenshot of creating a new login](../media/2-create-new-login.png)
 
-- Right-click **Logins** under **Security** in the left pane and select Refresh
-- The newly created login appears under Logins in the left pane
+1. After the query pane appears with commands to create a login, change the username and password as desired and select **Execute**.
 
-![Screenshot of Executing Login Query](../media/2-create-login-query.png)
+   ![Screenshot of executing a new query](../media/2-execute-new-query.png)
 
-Azure Active Directory is a central location to manage identities for all of Microsoft online and cloud services. AAD authentication beyond the scope of this lesson; it broadly involves for steps:
+1. Right-click **Logins** under **Security** in the left pane, and select **Refresh**.
+1. The newly created login appears under **Logins** in the left pane.
 
-- creating and populating an Azure Active Directory for your organization,
-- associate the newly created AAD with your Azure subscription,
-- creating an AAD administrator for your SQL Data Warehouse, and
-- mapping database users to AAD identities
+   ![Screenshot of executing a login query](../media/2-create-login-query.png)
 
-## Create a new Azure Data Warehouse user using SQL Server Management Studio
+Azure Active Directory is a central location to manage identities for all Microsoft online and cloud services. Azure AD authentication is beyond the scope of this lesson. It broadly involves four steps:
 
-Creating a login provides access to the data warehouse server but not its databases or objects within it. In order to provide access to logins to specific databases and database objects, a user needs to be created and assigned a role. Roles allow various levels of access to users to a database – this approach to security is called role-based security. You can either use the several built-in roles or create custom roles to control users' access to the databases in the data warehouse. In this example, we will assign the built-in `db_datareader` role to the user we create.
+1. Create and populate an Azure AD instance for your organization.
+1. Associate the newly created Azure AD instance with your Azure subscription.
+1. Create an Azure AD administrator for your data warehouse.
+1. Map database users to Azure AD identities.
 
-- Open SQL Server Management Studio that you installed as a prerequisite and connect to the data warehouse. Get the server name from Azure portal by navigating to the data warehouse you previously created and use the username and password you specified when you created the data warehouse.
+## Create a new Azure Data Warehouse user by using SQL Server Management Studio
 
-![Screenshot of Opening SQL Server Management System for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
+Creating a login provides access to the data warehouse server but not its databases or database objects. To provide access to logins for specific databases and objects, you need to create a user and assign a role. 
 
-- Select **Connect**, which logs you into the SQL data warehouse
-- Expand Databases in the left pane and expand DemoDW that you created in the prerequisites
-- Expand **Security** and expand **Users**
-- Right-click **Users** and select **New User…**
+Roles allow various levels of user access to a database. This approach to security is called role-based security. You can either use the several built-in roles or create custom roles to control users' access to the databases in the data warehouse. In this example, we'll assign the built-in `db_datareader` role to the user that we create.
 
-![Screenshot of Creating New User](../media/2-create-new-user.png)
+1. Open SQL Server Management Studio and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-- After the query pane appears with commands to create a user
-    - change the username parameter to a unique username
-    - change the login you created in the previous section as the login parameter
-    - to the second command in the query pane, type "`db_datareader`" as the first parameter and the database user you selected in the first step as the second parameter
-    - Select **Execute**
-- Right-click **Users** under **Security** in the left pane and select **Refresh**
-- The newly created user appears under Logins in the left pane
+   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
 
-![Screenshot of Showing Newly Created User](../media/2-show-new-user.png)
+1. Select **Connect**, which logs you in to the SQL data warehouse.
+1. Expand **Databases** in the left pane, and expand **DemoDW** (which you created in the prerequisites).
+1. Expand **Security**, and expand **Users**.
+1. Right-click **Users**, and select **New User**.
 
-## Enable data encryption on an Azure Data Warehouse using the portal
+   ![Screenshot of creating a new user](../media/2-create-new-user.png)
 
-### Encrypting data at rest
+1. After the query pane appears with commands to create a user:
+   
+   a. Change the username parameter to a unique username.
+   
+   b. Change the login that you created in the previous section as the login parameter to the second command in the query pane.
+   
+   c Enter `db_datareader` as the first parameter, and enter the database user that you selected in the first step as the second parameter.
+    
+   d. Select **Execute**.
 
-Data encryption at rest protects data in your data warehouse and satisfies a critical compliance requirement. Azure SQL Data Warehouse provides transparent data-at-rest encryption capabilities without impacting the client applications that connect to it. To configure transparent data-at-rest encryption, use the following steps.
+1. Right-click **Users** under **Security** in the left pane, and select **Refresh**.
 
-- Navigate to the database you created in Azure portal
-- Under **Security** in the options pane, select **Transparent data encryption**
-- Select **ON**
-- Select **Save**
+   The newly created user appears under **Users** in the left pane.
 
-![Screenshot of Configuring Encryption](../media/2-configure-encryption.png)
+   ![Screenshot that shows the newly created user](../media/2-show-new-user.png)
+
+## Enable data encryption on a data warehouse by using the portal
+
+### Encrypt data at rest
+
+Data encryption at rest helps protect data in your data warehouse and satisfies a critical compliance requirement. Azure SQL Data Warehouse provides transparent data-at-rest encryption capabilities without affecting the client applications that connect to it. To turn on transparent data-at-rest encryption, use the following steps:
+
+1. Go to the database that you created in the Azure portal.
+1. Under **Security** in the options pane, select **Transparent data encryption**.
+1. Select **ON**.
+1. Select **Save**.
+
+![Screenshot of configuring encryption](../media/2-configure-encryption.png)
 
 ### Encrypt data in transit in your application
 
-Data in transit is a method to prevent man-in-the-middle attacks. To encrypt data in transit, specify **Encrypt=true** in the connection string in your client applications as follows. This ensures that all data sent between your client application and SQL data warehouse is encrypted with SSL.
+Data in transit is a method to prevent man-in-the-middle attacks. To encrypt data in transit, specify `encrypt=true` in the connection string in your client applications as follows. This ensures that all data sent between your client application and SQL data warehouse is encrypted with SSL.
 
 ```sql
 String connectionURL =   
@@ -103,80 +114,80 @@ String connectionURL =
      "encrypt=true ";
 ```
 
-## Restrict data access with granular security controls using SQL Server Management Studio
+## Restrict data access with granular security controls by using SQL Server Management Studio
 
-In specific scenarios, granular security controls are essential for privacy and compliance reasons. For instance, in an employee data warehouse that hosts data for all employees in a company, you would want to provide access to restrict access to individual columns or rows in data warehouse tables to specific groups of management, depending on their role and function. Azure SQL Data Warehouse provides fine-grained security controls via column-level security and row-level security. In this section, we will walk through how to enforce these controls on your data stored in Azure SQL Data Warehouse.
+In specific scenarios, granular security controls are essential for privacy and compliance. For instance, in a data warehouse that hosts data for all employees in a company, you would want to restrict access to individual columns or rows in tables to specific groups of management, depending on their role and function. Azure SQL Data Warehouse provides fine-grained security controls via column-level security and row-level security. In this section, we'll walk through how to enforce these controls on your data stored in Azure SQL Data Warehouse.
 
-### Grant read access to data using column-level security
+### Grant read access to data by using column-level security
 
-Use the following steps to grant access to specific users to only certain columns of a table.
+Use the following steps to grant access to specific users to only certain columns of a table:
 
-- Open SQL Server Management Studio that you installed as a prerequisite and connect to the data warehouse. Get the server name from Azure portal by navigating to the data warehouse you previously created and use the username and password you specified when you created the data warehouse.
+1. Open SQL Server Management Studio and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-![Screenshot of Opening SQL Server Management System for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
+   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
 
-- Select **Connect**, which logs you into the SQL data warehouse
-- Navigate to the DemoDW database and expand Tables node. You will see dbo.DimEmployee table, which is the table we will be limiting access to the user we previously created, namely **demodw_user**.
+1. Select **Connect**, which logs you in to the SQL data warehouse.
+1. Go to the **DemoDW** database and expand the **Tables** node. You see the **dbo.DimEmployee** table, which is the table where we'll limit access to the user that we previously created, **demodw_user**.
 
-![Screenshot of Showing DimEmployee Table](../media/2-show-employee-table.png)
+   ![Screenshot of the dbo.DimEmployee table](../media/2-show-employee-table.png)
 
-- From **File** menu, select **New** and then **Query with Current Connection** menu option
+1. From the **File** menu, select **New** > **Query with Current Connection**.
 
-![Screenshot of Creating New Query with Current Connect](../media/2-query-with-current-connection.png)
+   ![Screenshot of creating a new query with the current connection](../media/2-query-with-current-connection.png)
 
-- In the query pane, type the following command and execute the query by clicking on the Execute button
+1. In the query pane, type the following command and select the **Execute** button.
 
-```sql
-GRANT SELECT ON dbo.DimEmployee (FirstName, MiddleName, LastName, Title) TO demodw_user;
-```
+   ```sql
+   GRANT SELECT ON dbo.DimEmployee (FirstName, MiddleName, LastName, Title) TO demodw_user;
+   ```
 
-![Screenshot of Creating Query](../media/2-create-query.png)
+   ![Command to create a query](../media/2-create-query.png)
 
-- The **user demodw_user** can now only access the four columns in the table for which it has been granted access, and no other columns are visible to that user.
+The user **demodw_user** can now access only the four columns in the table for which it was granted access. No other columns are visible to that user.
 
-### Restrict access to data using row-level security
+### Restrict access to data by using row-level security
 
-Azure SQL Data Warehouse provides predicate-based row-level security. The rows on a table that don't satisfy the predicates are silently excluded from queries. Enforcing row-level security in Azure SQL Data Warehouse is a two-step process, namely:
+Azure SQL Data Warehouse provides predicate-based row-level security. The rows in a table that don't satisfy the predicates are silently excluded from queries. Enforcing row-level security in Azure SQL Data Warehouse is a two-step process:
 
-1. creation of a table-valued function to define the access criteria, and
-2. the creation of a security policy that adds filter predicates created in the previous step to any tables for which row-level access needs to be restricted
+1. Creation of a table-valued function to define the access criteria
+2. Creation of a security policy that adds filter predicates created in the previous step to any tables for which row-level access needs to be restricted
 
-Follow the steps below to enforce row-level security for the table `dbo.DimEmployee` in the `DemoDW` database.
+Follow these steps to enforce row-level security for the **dbo.DimEmployee** table in the **DemoDW** database:
 
-- Open SQL Server Management Studio that you installed as a prerequisite and connect to the data warehouse. Get the server name from Azure portal by navigating to the data warehouse you previously created and use the username and password you specified when you created the data warehouse.
+1. Open SQL Server Management Studio and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-![Screenshot of Opening SQL Server Management System for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
+   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
 
-- Select **Connect**, which logs you into the SQL data warehouse
-- Navigate to DemoDW database and expand Tables node. You will see `dbo.DimEmployee` table, which is the table we will be limiting access to the user we previously created, namely **demodw_user**.
+1. Select **Connect**, which logs you in to the SQL data warehouse.
+1. Go to the **DemoDW** database and expand the **Tables** node. You see the **dbo.DimEmployee** table, which is the table where we'll limit access to the user that we previously created, **demodw_user**.
 
-![Screenshot of Showing DimEmployee Table](../media/2-show-employee-table.png)
+   ![Screenshot of the dbo.DimEmployee table](../media/2-show-employee-table.png)
 
-- From **File** menu, select **New** and then **Query with Current Connection** menu option
+1. From the **File** menu, select **New** > **Query with Current Connection**.
 
-![Screenshot of Creating New Query with Current Connect](../media/2-query-with-current-connection.png)
+   ![Screenshot for creating a new query with the current connection](../media/2-query-with-current-connection.png)
 
-- In the query pane, type the following command and execute the query by clicking on the Execute button
+1. In the query pane, type the following command and select the **Execute** button.
 
-```sql
-CREATE SCHEMA Security
-GO 
-  
-CREATE FUNCTION Security.fn_rowlevel_predicate(@EmployeeLoginId AS sysname)  
-    RETURNS TABLE  
-WITH SCHEMABINDING  
-AS  
-    RETURN SELECT 1 AS fn_rowlevel_predicate_result
-WHERE @EmployeeLoginId = 'demodw_user'
-GO
+    ```sql
+    CREATE SCHEMA Security
+    GO 
+    
+    CREATE FUNCTION Security.fn_rowlevel_predicate(@EmployeeLoginId AS sysname)  
+        RETURNS TABLE  
+    WITH SCHEMABINDING  
+    AS  
+        RETURN SELECT 1 AS fn_rowlevel_predicate_result
+    WHERE @EmployeeLoginId = 'demodw_user'
+    GO
 
-CREATE SECURITY POLICY EmployeeFilter
-ADD FILTER PREDICATE Security.fn_rowlevel_predicate(LoginId)
-ON dbo.DimEmployee
-WITH (STATE = ON)
-GO
-```
+    CREATE SECURITY POLICY EmployeeFilter
+    ADD FILTER PREDICATE Security.fn_rowlevel_predicate(LoginId)
+    ON dbo.DimEmployee
+    WITH (STATE = ON)
+    GO
+    ```
 
-- The rows in table `DimEmployee` can now only be accessed by **demodw_user**.
+Now, only **demodw_user** can access the rows in the **DimEmployee** table.
 
-![Screenshot of Showing Query Result](../media/2-show-query-result.png)
+![Screenshot of the query result](../media/2-show-query-result.png)

@@ -67,6 +67,16 @@
                 "dest": "modules"
             },
             {
+                "src": "wwl-mba",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
@@ -117,7 +127,26 @@
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/learn",
             "clicktale": true,
-            "uhfHeaderId": "MSDocsHeader-Learn"
+            "uhfHeaderId": "MSDocsHeader-Learn",
+            "localization_scopes": [
+                "de-de",
+                "es-es",
+                "fr-fr",
+                "it-it",
+                "ja-jp",
+                "pt-br",
+                "zh-cn",
+                "zh-tw",
+                "ko-kr",
+                "ru-ru",
+                "nl-nl",
+                "hu-hu",
+                "cs-cz",
+                "pl-pl",
+                "pt-pt",
+                "sv-se",
+                "tr-tr"
+            ]
         },
         "fileMetadata": {
             "brand": {

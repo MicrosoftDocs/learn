@@ -1,13 +1,13 @@
-Enterprise data engineering projects require the Data Engineer to provide data to a wide range of professionals, ranging from Information Workers to Data Scientists. Many of today's organizations undertaking data transformation project will still use traditional roles such as Business Analysts, but the evolution of data types and changing methods of analytics means that new roles are appearing on these projects.
+Data engineers who work on enterprise-level projects provide data to a variety of professionals, ranging from information workers to data scientists. Many organizations that pursue data-transformation projects still use traditional work roles such as business analysts. But as data types evolve and analytics methods change, new roles emerge.
 
-Suppose you work for an organization that wishes to undertake a digital transformation project where data plays a key role. You'll still incorporate the best of the organizations current systems such as the OLTP and Data Warehouse systems, but the organization sees the potential to exploit sales opportunities and improve operational expenditure through predictive analytics.
+Suppose your organization is planning a digital-transformation project where data plays a key role. The organization will incorporate the best of their current systems, such as the online transaction processing (OLTP) and data warehousing systems. But the organization also wants to use predictive analytics to take advantage of sales opportunities and improve operational expenditures.
 
-As the database administrator for your company, it's your job to move existing data into new systems and connect it all together. Where do you start? Is your job now obsolete? The short answer is no. You have nothing to lose as your current skills are still essential, and everything to gain in learning new skills and technologies to unlock the potential of modern data engineering techniques.
+As the database administrator for your company, your job is to move existing data into new systems and to connect them together. Where do you start? Is your job obsolete? The short answer is no. You have nothing to lose, because your skills are still essential. And you have everything to gain by learning new skills in technologies that unlock the potential of modern data engineering techniques.
 
-## Learning Objectives
+## Learning objectives
 
 In this module you will:
 
-- List the new roles of modern data projects
-- Outline Data Engineering Practices
-- Explore the high-level process for architecting a data engineering project
+- List the work roles involved in modern data projects.
+- Outline data engineering practices.
+- Explore the high-level process for designing a data engineering project.

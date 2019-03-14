@@ -115,10 +115,10 @@ To do so, you need to:
 1. Once copied, you go back to the **Terminal** window and issue the following Git command with your url:
 
     ```bash
-    git remote add origin https://[your-username]@BESTBIKE.scm.azurewebsites.net:443/BESTBIKE.git
+    git remote add origin https://[your-username]@[your-app-name].scm.azurewebsites.net:443/[your-app-name].git
     ```
 
-    The above Git command connects your local Git repository to the one hosted on Azure, where `[your-username]` is the username that you specified when you created your deployment credentials. Now you can deploy your code by pushing to it.
+    The above Git command connects your local Git repository to the one hosted on Azure, where `[your-username]` is the username that you specified when you created your deployment credentials, and `[your-appname]` is the name of your App Service web app. Now you can deploy your code by pushing to it.
 
 1. To verify the above command, type the following Git command:
 
@@ -129,8 +129,8 @@ To do so, you need to:
     The command above generates the following output:
 
     ```output
-    origin	https://[your-username]@BESTBIKE.scm.azurewebsites.net:443/BESTBIKE.git (fetch)
-    origin	https://[your-username]@BESTBIKE.scm.azurewebsites.net:443/BESTBIKE.git (push)
+    origin	https://[your-username]@[your-app-name].scm.azurewebsites.net:443/[your-app-name].git (fetch)
+    origin	https://[your-username]@[your-app-name].scm.azurewebsites.net:443/[your-app-name].git (push)
     ```
 
 ## Push your code to Azure

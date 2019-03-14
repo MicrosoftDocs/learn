@@ -12,11 +12,11 @@ Batch systems process groups of data stored in an Azure Blob store in a single j
 
 ## Ingesting Data
 
-Data Engineers configure ingestion components of Azure Stream Analytics by configuring data inputs from first-class integration sources including Azure Event Hubs, Azure IoT Hub, and Azure Blob storage.
+Data Engineers configure ingestion components of Azure Stream Analytics by configuring data inputs from first-class integration sources including Azure Event Hubs, Azure IoT Hub, or Azure Blob storage.
 
 IoT hubs are the cloud gateway that connects IoT devices to gather data to drive business insights and automation.  IoT Hub includes features that enrich the relationship between your devices and your back-end systems. Bi-directional communication capabilities mean that while you receive data from devices, you can also send commands and policies back to devices, for example, to update properties or invoke device management actions.   It can also authenticate access between the IoT device and the IoT hub.
 
-Event hubs provide a big data streaming service of Azure. It is designed for high throughput data streaming scenarios where customers may send billions of requests per day. Event Hubs uses a partitioned consumer model to scale out your stream and is integrated into the big data and analytics services of Azure including Databricks, Stream Analytics, ADLS, and HDInsight.  It provides authentication through a shared key.
+Event hubs provide a big data streaming service of Azure. It is designed for high throughput data streaming scenarios where customers may send billions of requests per day. Event Hubs uses a partitioned consumer model to scale out your data stream and is integrated into the big data and analytics services of Azure including Databricks, Stream Analytics, ADLS, and HDInsight.  It provides authentication through a shared key.
 
 Azure Storage can be used to stored data before being batched processed.
 

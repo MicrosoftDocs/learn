@@ -4,7 +4,7 @@ Azure Data Bricks is a serverless platform optimized for Microsoft Azure which p
 
 Azure Data Factory (ADF) is a cloud integration service that orchestrates that movement of data between various data stores.  Data Engineers can create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation. Using Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores.
 
-It can process and transform the data by using compute services such as Azure HDInsight Hadoop, Spark, Azure Data Lake Analytics, and Azure Machine Learning. Additionally, you can publish output data to data stores such as Azure SQL Data Warehouse for business intelligence (BI) applications to consume. Ultimately, through Azure Data Factory, raw data can be organized into meaningful data stores and data lakes for better business decisions.
+It can process and transform the data by using compute services such as Azure HDInsight Hadoop, Spark and Azure Machine Learning. Additionally, you can publish output data to data stores such as Azure SQL Data Warehouse for business intelligence (BI) applications to consume. Ultimately, through Azure Data Factory, raw data can be organized into meaningful data stores and data lakes for better business decisions.
 
 ## Azure Data Catalog
 

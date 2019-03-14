@@ -18,8 +18,11 @@ abstract: |
   - Customize the dashboard
   - Learn how to opt-in to preview services and features
 iconUrl: /learn/achievements/tour-azure-portal-features.svg
+ratingEnabled: true
 levels:
 - beginner
+prerequisites: |
+  - Knowledge of basic cloud computing terms and concepts
 roles:
 - administrator
 - solution-architect

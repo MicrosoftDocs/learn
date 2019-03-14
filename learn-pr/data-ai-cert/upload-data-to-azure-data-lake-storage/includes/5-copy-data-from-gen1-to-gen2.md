@@ -80,7 +80,7 @@ Next, you need to set permissions to enable the Azure Data Factory instance to a
 
 1. In the Azure portal, search for the Data Lake Storage Gen1 named **dlsgen1XXX** that you created.
 1. In the overview blade, click **Access control (IAM)**
-1. In the Access Control (IAM) blade, click on the **+ Add Role Assignment** button.
+1. In the Access Control (IAM) blade, click on the **Add** button in the **Add Role Assignment** box.
 1. In the Add Role Assignment blade, select **Owner** for the **Role**.
 1. Select the text box under **Select** and type in the Azure Data Factory instance name you created.
 1. Click **Save**.

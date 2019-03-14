@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.azure-iot-strategy-and-solutions.4-azure-iot-services
+title: Azure IoT services
+metadata:
+  title: Azure IoT services
+  description: .
+  ms.date: 01/31/2019
+  author: msmkitris1
+  ms.author: mkitris
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-Azure-IoT-services.md)]

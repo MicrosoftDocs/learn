@@ -1,20 +1,20 @@
-Data warehouse security involves hardening of the data warehouse and its related assets to protect privacy, integrity, and availability of the warehouse assets.
+Data warehouse security involves hardening the data warehouse and its related assets to help protect privacy, integrity, and availability.
 
-You have set up an Azure SQL Data Warehouse for Contoso; they now require that access to the server is secured, and that access to the database data is controlled. You will set up the authentication mechanism at the server level and provide further security by configuring the server file wall. Once completed, you will control which Contoso employees can access the server by creating logins.
+You have set up an Azure SQL Data Warehouse instance for Contoso. The company now requires you to secure access to the server and control access to the database data. You'll set up the authentication mechanism at the server level and provide further security by configuring the server file wall. When you've finished that, you'll control which Contoso employees can access the server by creating logins.
 
-You will then provide more granular access at the database level by creating a database user and controlling the level of access to data by using column and row level security.
+You'll then provide more granular access at the database level by creating a database user and controlling the level of access to data by using column-level and row-level security.
 
-## Learning Objectives
+## Learning objectives
 
-In this module you will:
+In this module, you will:
 
 - Configure access controls to the server.
 - Configure authentication to the data warehouse server.
 - Configure authorization to the data warehouse database.
-- Set granular security controls
-- Setup security auditing and monitor
+- Set granular security controls.
+- Set up security auditing and monitoring.
 
 ## Prerequisites
 
-- [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) must be installed
+- Installation of [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)
 - Windows computer capable of running SSMS

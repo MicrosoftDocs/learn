@@ -10,7 +10,7 @@ Again, let's continue using our existing Azure Functions application and add a b
 
 1. Point to **Functions** and select the plus (+) icon.
 
-1. Select **Blob trigger**.
+1. Select **Azure Blob Storage trigger**.
 
 1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes, so please be patient. Wait until the installation completes before continuing.
 
@@ -66,8 +66,6 @@ Our blob trigger is now up and listening for activity. Let's create a blob to se
 1. Select **Upload** from the toolbar.
 
 1. Select any file from your computer.
-
-1. Under **Authentication type**, select **SAS**.
 
 1. Select **Upload**.
 
