@@ -27,12 +27,12 @@ quiz:
       explanation: "Although this Boolean value depends on the scoring values for the categories, it isn't a category score itself."
   - content: "What is the purpose of the ListId value in a response from the profanity check?"
     choices:
-    - content: "It's the ID of the profanity word list that was used for the check."
+    - content: "It's the identifier of the profanity word list that was used for the check."
       isCorrect: false
       explanation: "Although you can create a custom list, this ID doesn't represent a specific list that was used."
     - content: "It's the language ID that the list used for testing."
       isCorrect: false
       explanation: "The ListId isn't used to determine the language."
-    - content: "It's the ID of a term in a custom term list."
+    - content: "It's the identifier of a term in a custom term list."
       isCorrect: true
-      explanation: "Correct. The ListId refers to terms found in custom term lists, if such lists are available."
+      explanation: "Correct. The ListId identifies a specific term found in a custom term list, if such lists are available."
