@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "docsmsft.docs-authoring-pack",
+        "gizmos.docs-yaml",
+        "acrolinx.vscode-sidebar",
+        "swyphcosmo.spellchecker",
+        "redhat.vscode-yaml"
+    ]
+}
