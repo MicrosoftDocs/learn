@@ -25,3 +25,14 @@ quiz:
         - content: Using the REST API Layer
           isCorrect: false
           explanation: Incorrect, not available
+    - content: 'What is the recommended storage format to use with Spark?'
+      choices:
+        - content: Apache Parquet
+          explanation: Apache Parquet is a highly optimized solution for data storage and is the recommended option for storage where possible
+          isCorrect: true
+        - content: JSON
+          isCorrect: false
+          explanation: Incorrect, not an optimal format.
+        - content: XML
+          isCorrect: false
+          explanation: Incorrect, not an optimal format.

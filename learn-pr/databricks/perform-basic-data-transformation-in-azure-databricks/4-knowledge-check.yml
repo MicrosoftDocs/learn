@@ -36,17 +36,6 @@ quiz:
         - content: By calling the .connect() function on the Azure Blob
           isCorrect: false
           explanation: Incorrect, no such method
-    - content: 'How does Spark connect to databases like MySQL, Hive and other data stores?'
-      choices:
-        - content: JDBC
-          explanation: JDBC stands for Java Database Connectivity, and is a Java API for connecting to databases such as MySQL, Hive, and other data stores.
-          isCorrect: true
-        - content: ODBC
-          isCorrect: false
-          explanation: Incorrect, ODBC is not an option
-        - content: Using the REST API Layer
-          isCorrect: false
-          explanation: Incorrect, not available
     - content: 'By default, how are corrupt records dealt with using spark.read.json()?'
       choices:
         - content: They appear in a column called "_corrupt_record"
@@ -58,14 +47,4 @@ quiz:
         - content: They throw an exception and exit the read operation
           isCorrect: false
           explanation: Incorrect, no exception is thrown.
-    - content: 'What is the recommended storage format to use with Spark?'
-      choices:
-        - content: Apache Parquet
-          explanation: Apache Parquet is a highly optimized solution for data storage and is the recommended option for storage where possible
-          isCorrect: true
-        - content: JSON
-          isCorrect: false
-          explanation: Incorrect, not an optimal format.
-        - content: XML
-          isCorrect: false
-          explanation: Incorrect, not an optimal format.
+    

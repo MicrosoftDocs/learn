@@ -45,4 +45,3 @@ quiz:
         - content: Incorrect
           isCorrect: false
           explanation: Azure Databricks includes several out of the box libraries that you traditionally would need to rely on an external library such as matplotlib
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.

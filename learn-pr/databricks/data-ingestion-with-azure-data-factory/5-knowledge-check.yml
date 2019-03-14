@@ -14,36 +14,30 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-    - content: 'What is the DataFrame method call to create temporary view?'
+    - content: 'What is the purpose of Linked Services in Azure Data Factory?'
       choices:
-        - content: createOrReplaceTempView()
-          explanation: This is the correct method name for creating temporary views in DataFrames
+        - content: To represent a data store or a compute resource that can host execution of an activity.
+          explanation: These are the correct purposes of Linked Services in Azure Data Factory. Linked Services define the connection information needed for ADF to connect to external resources.
           isCorrect: true
-        - content: createTempView()
+        - content: To represent a processing step in a pipeline.
           isCorrect: false
-          explanation: Incorrect method name
-        - content: createTempViewDF()
+          explanation: 'Activities, not Linked Services, represent processing steps in an ADF pipeline.'
+        - content: To link data stores or computer resources together for the movement of data between resources.
           isCorrect: false
-          explanation: Incorrect method name
-    - content: 'How do you create a DataFrame object?'
+          explanation: Linked services define the connection information needed for ADF to connect to external resources not the connection between resources.
+    - content: 'Can parameters be passed into an Azure Databricks Notebook from Azure Data Factory?'
       choices:
-        - content:  An object is created by introducing a variable name and equating it to something like myDataFrameDF =
-          explanation: This is the correct way of creating DataFrame Objects.
+        - content: Yes
+          explanation: 'Yes, the target notebook must include widgets configured with the desired parameter names. The values can then be passed as parameters from a Databricks Notebook activity in ADF.'
           isCorrect: true
-        - content: Using the createDataFrame() function
+        - content: No
           isCorrect: false
-          explanation: There is no such method for creating a DataFrame.
-        - content: DF.create()
-          isCorrect: false
-          explanation: Incorrect syntax and wrong way to create DataFrame Objects.
-    - content: 'Why do you chain methods (operations) myDataFrameDF.select().filter().groupBy()?'
+          explanation: 'Parameters can be configured using widget on the Databricks notebook, and then passing in parameters with those names via the Databricks Notebook activity in ADF.'
+    - content: 'Databricks activities (Notebook, JAR, Python) in ADF will fail if the target cluster in Azure Databricks is stopped when called by ADF?'
       choices:
-        - content: To avoid the creation of temporary DataFrames as local variables
-          explanation: You could have written the above as - tempDF1 = myDataFrameDF.select(), tempDF2 = tempDF1.filter() and then tempDF2.groupBy().This is syntatically equivalent, but, notice how you now have extra local variables.
+        - content: No
+          explanation: 'No, if the target cluster is stopped, Databricks will start the cluster before attempting to execute the notebook, JAR, or Python file. This will result in longer execution time since the cluster must start, but it will still execute as expected.'
           isCorrect: true
-        - content: it is the only way to do it
+        - content: Yes
           isCorrect: false
-          explanation: Incorrect, you could have split the line into 3 calls.
-        - content: to get accurate results
-          isCorrect: false
-          explanation: Incorrect, even if you split the calls into 3 lines, the result is accurate, it just wastes unnessessary memory allocations.
+          explanation: 'If the cluster is not running, Databricks will start it automatically when it receives the request for execution from ADF.'

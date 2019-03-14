@@ -61,4 +61,3 @@ quiz:
         - content: print(df)
           isCorrect: false
           explanation: The print method will display the dataframe as a text only table, but not a formatted table.
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.

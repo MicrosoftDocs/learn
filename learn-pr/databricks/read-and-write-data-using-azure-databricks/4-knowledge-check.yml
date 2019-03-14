@@ -14,6 +14,28 @@ content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   questions:
+    - content: 'What is the DataFrame method call to create temporary view?'
+      choices:
+        - content: createOrReplaceTempView()
+          explanation: This is the correct method name for creating temporary views in DataFrames
+          isCorrect: true
+        - content: createTempView()
+          isCorrect: false
+          explanation: Incorrect method name
+        - content: createTempViewDF()
+          isCorrect: false
+          explanation: Incorrect method name
+    - content: 'How do you create a DataFrame object?'
+      choices:
+        - content:  An object is created by introducing a variable name and equating it to something like myDataFrameDF =
+          explanation: This is the correct way of creating DataFrame Objects.
+          isCorrect: true
+        - content: Using the createDataFrame() function
+          isCorrect: false
+          explanation: There is no such method for creating a DataFrame.
+        - content: DF.create()
+          isCorrect: false
+          explanation: Incorrect syntax and wrong way to create DataFrame Objects.
     - content: 'What is the DataFrame equivalent of the SQL statement SELECT count(*) AS total?'
       choices:
         - content: .agg(count("*").alias("total"))
