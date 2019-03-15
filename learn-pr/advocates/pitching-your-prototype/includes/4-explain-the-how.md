@@ -9,3 +9,6 @@ But having a solution isn't enough. You need to show how you'll reach your targe
 
 ## Explain the revenue model
 
+
+## Explain the exit
+
