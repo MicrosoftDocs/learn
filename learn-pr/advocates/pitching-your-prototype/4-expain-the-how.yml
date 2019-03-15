@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.4-explain-the-how
+title: Explain the how
+metadata:
+  title: Explain the how
+  description: Explain the how
+  author: James Turnbull
+  ms.date: 03/03/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-explain-the-how.md)]
