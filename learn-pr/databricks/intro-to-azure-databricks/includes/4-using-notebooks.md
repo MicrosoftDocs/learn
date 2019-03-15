@@ -23,7 +23,7 @@ To learn more about usage of notebooks, clone the labs archive where sample note
    https://github.com/MicrosoftDocs/mslearn-azure-databricks-notebooks-fundamentals/blob/master/DBC/01-notebook-fundamentals.dbc?raw=true
    ```
 1. Select **Import**.
-1. A folder called **01-intro** should appear. Select that folder.
+1. A folder called **01 Notebook Fundamentals** should appear. Select that folder.
 1. The folder should contain a set of notebooks that you'll use in completing this lab.
 
 ## Complete the following notebooks

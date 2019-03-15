@@ -55,4 +55,3 @@ quiz:
         - content: Classification predicts a binary label.
           isCorrect: false
           explanation: Classification algorithms can predict binary labels but can also be used to predict multiple labels.
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
