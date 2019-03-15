@@ -6,7 +6,7 @@ Azure Data Lake Storage Gen2 is easy to set up. It requires a **StorageV2 (Gener
 
     ![Screenshot of the Azure portal showing the Create a resource, Storage account in highlights.](../media/3-azure-portal.png)
 
-1. Next, in the **Create storage account** window, under the **Basics** tab, define a **storage account name** and **location**.
+1. Next, in the **Create storage account** window, under the **Basics** tab, define a **storage account name** and the **location** should be **Central US**
 
 1. In the **Account kind** drop-down list, click to select **StorageV2 (general-purpose v2)** to create a Data Lake Storage Gen2 data store.
 

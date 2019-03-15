@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.instrument-web-app-code-with-application-insights.3-exercise-install-application-insights-sdk
+title: Exercise - Install the Application Insights SDK
+metadata:
+  title: Exercise - Install the Application Insights SDK
+  description: In this unit, you will add the Application Insights SDK to a web app.
+  ms.date: 02/27/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/3-exercise-install-application-insights-sdk.md)]

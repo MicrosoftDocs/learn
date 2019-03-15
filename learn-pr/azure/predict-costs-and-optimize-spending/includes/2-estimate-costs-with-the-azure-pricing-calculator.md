@@ -19,7 +19,7 @@ The options that you can configure in the pricing calculator vary between produc
 
 In another browser window or tab, open the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/). On the pricing calculator page, you'll see three tabs:
 
-1. **Products.** This tab is where you'll do most of your activity. This tab has all the Azure services listed and is where you'll add or remove services to formulate your estimate.
+1. **Products.** This tab is where you'll do most of your activity. This tab has all the Azure services listed and is where you'll add or remove services to put together your estimate.
 2. **Estimates.** This tab has all of your previously saved estimates. We'll go through this process in a moment.
 3. **FAQ.** Just as it says, this tab has answers to some frequently asked questions.
 

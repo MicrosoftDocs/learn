@@ -18,6 +18,7 @@ abstract: |
   - Explain Massively Parallel Processing Concepts
   - Compare Table Geometries
   - Create an Azure SQL Data Warehouse
+ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/design-azure-sql-data-warehouse-badge.svg
 levels:

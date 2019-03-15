@@ -1,31 +1,32 @@
-> [!NOTE]
-> After launching the VM, the username and password you need to sign in with is located on the **Resources** tab next to the instructions.
-
 The first step in creating a bot is to provide a location for the bot to be hosted in Azure. The Web Apps feature of Azure App Service is perfect for hosting bot applications, and the Azure Bot Service is designed to provision them for you. In this unit, you will use the Azure portal to provision an Azure web app bot.
 
-1. Sign into the Azure portal by opening https://portal.azure.com in the VM browser.
+
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
+1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+    > [!IMPORTANT]
+    > Login to the Azure portal using the link above to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
 
 1. Select **+ Create a resource**, followed by **AI + Machine Learning**, then **Web App Bot**.
 
     ![Screenshot of the Azure portal showing the Create a resource blade with the Web App Bot resource type highlighted.](../media/2-new-bot-service.png)
 
-1. Enter a name, such as "qa-factbot", into the **App name** box. *This name must be unique within Azure, so make sure a green check mark appears next to it.*
+1. On the **New Web App Bot** page, enter the following settings for the new Web App Bot, including the location.
 
-1. Under **Subscription** and **Resource group**, select the pre-existing resources.
+    [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select a **Location** from one of the following:
-    - Central US
-    - East US
-    - East US 2
-    - North Central US
-    - South Central US
-    - West US
-    - West US 2
+    Setting|Value|Description
+    ---|---|---
+    Bot name|*choose a unique name*|This name must be unique within Azure, so make sure a green check mark appears next to it.
+    Subscription|*Concierge Subscription*|Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+    Resource Group|Use existing **<rgn>[sandbox resource group name]</rgn>**|Here you would either create a new resource group, or select an existing one in your subscription.
+    Location|*Select the region closest to you from the list above*|Select the location where the database should be located.
+    Pricing tier| S1 | A basic tier for this app.
+    App name|*Leave default*|Feel free to leave the default which is populated based on your bot name.
 
     > [!NOTE]
     > If you see a resource policy error when you create the Web App Bot, then check that its location is set to one of the options above.
-
-1. Select the **S1** pricing tier.
 
 1. Then, select **Bot template**. Select **SDK v3** as the version, **Node.js** as the SDK language, and **Question and Answer** as the template type. Then, select **Select** at the bottom of the blade.
 

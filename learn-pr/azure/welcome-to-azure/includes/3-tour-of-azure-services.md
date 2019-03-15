@@ -43,7 +43,7 @@ Compute services are often one of the primary reasons why companies move to the 
 > | Azure Kubernetes Service  | Enables management of a cluster of VMs that run containerized services   |
 > | Azure Service Fabric      | Distributed systems platform. Runs in Azure or on-premises               |
 > | Azure Batch               | Managed service for parallel and high-performance computing applications |
-> | Azure Container Instances | Provides containers without requiring VM provision or higher services    |
+> | Azure Container Instances | Run containerized apps on Azure without provisioning servers or VMs      |
 > | Azure Functions           | An event-driven, serverless compute service                              |
 
 ### Networking
@@ -153,7 +153,7 @@ Open source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure SQL Data Warehouse | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Data Lake Analytics | On-demand ("pay as you go") scalable analytics service that allows you to write queries to transform your data and extract valuable insights. |
+> | Azure Databricks (preview) | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
 
 ### Artificial Intelligence
 
@@ -182,7 +182,7 @@ A closely related set of products are the _cognitive services_. These are pre-bu
 
 ### DevOps
 
-DevOps (Development and Operations) brings together people, processes, and technology, automating software delivery to provide continuous value to your users. Azure DevOps Services allows you to create, build, and release pipelines that provide continuous integration, delivery, and deployment for your applications. You can integrate repositories and application tests, perform application monitoring, and work with build artifacts. You can also work with and backlog items for tracking, automate infrastructure deployment and integrate a range of third-party tools and services such as Jenkins and Chef. All of these functions and many more are closely integrated with Azure to allow for consistent, repeatable deployments for your applications to provide streamlined build and release processes.
+DevOps (Development and Operations) brings together people, processes, and technology, automating software delivery to provide continuous value to your users. Azure DevOps Services allows you to create _build_ and _release_ pipelines that provide continuous integration, delivery, and deployment for your applications. You can integrate repositories and application tests, perform application monitoring, and work with build artifacts. You can also work with and backlog items for tracking, automate infrastructure deployment and integrate a range of third-party tools and services such as Jenkins and Chef. All of these functions and many more are closely integrated with Azure to allow for consistent, repeatable deployments for your applications to provide streamlined build and release processes.
 
 Some of the main DevOps services available with Azure are Azure DevOps Services and Azure DevTest Labs.
 

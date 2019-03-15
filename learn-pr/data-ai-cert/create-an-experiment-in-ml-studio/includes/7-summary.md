@@ -1,12 +1,12 @@
-You've accomplished quite a bit in this module.  You were created an experiment with an imported dataset and then built the experiment logic in the designer and published it as a web service.
+You've accomplished quite a bit in this module. You used an imported dataset to create an experiment. Then you built the experiment logic in the designer and published the experiment as a web service.
 
-The core parts of using Microsoft Azure ML are:
+By following the steps in this module, you've experienced the core tasks of Azure Machine Learning Studio:
 
-- ingest data
-- create an experiment
-- train the model
-- test and deploy
+- Ingest data
+- Create an experiment
+- Train the model
+- Test and deploy
 
-You have achieved all of these steps in this module and created your first experiment in Azure Machine Learning Studio. You will use similar workflows as you progress to more complex data science and machine learning models and algorithms to use artificial intelligence in your own solutions.
+You completed all of these tasks and created your first experiment in Machine Learning Studio. You'll use similar workflows in your own AI solutions as you progress to more complex data science and machine learning models and algorithms. Use built-in Microsoft AI services or create custom models when the built-in services don't offer what you need. 
 
-Recall, you can use Microsoft's built-in AI services or create custom models, when the built-in services don't offer what you need. Data science is a deeper subject so if you are interested, look to the Azure Data Scientist learning paths on Microsoft Learn.
+If you want to take a deeper dive into data science, look to the Azure Data Scientist learning paths on Microsoft Learn.

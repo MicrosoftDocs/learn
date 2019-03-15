@@ -2,18 +2,10 @@
 
 This repository contains the Microsoft Learn modules and learning paths for Microsoft Azure. Review this README file to understand how you can assist in contributing to the Microsoft Learn training content.
 
-To review Microsoft Learn repositories for other products, click the links below:
+## Other Learn repos  
 
-* [Microsoft Learn - Azure Content Repo](https://github.com/MicrosoftDocs/learn-pr)
-* [Microsoft Learn - Business Applications Content Repo](https://github.com/MicrosoftDocs/learn-bizapps-pr)
-* [Microsoft Learn - Windows Content Repo](https://github.com/MicrosoftDocs/learn-windows-pr)
-* [Microsoft Learn - M365 Content Repo](https://github.com/MicrosoftDocs/learn-m365-pr)
-* [Microsoft Learn - SQL Server Content Repo](https://github.com/MicrosoftDocs/learn-sqlserver-pr)
-* [Microsoft Learn - Worldwide Learning (WWL) Content Repo](https://github.com/MicrosoftDocs/learn-wwl-pr)
-* [Microsoft Learn - Xamarin Content Repo](https://github.com/MicrosoftDocs/learn-xamarin-pr)
-* [Microsoft Learn - Dynamics Content Repo](https://github.com/MicrosoftDocs/learn-dynamics-pr)
-
-Code repos for individual modules follow the naming convention of https://github.com/MicrosoftDocs/mslearn-module-name. To find them all, search in GitHub for all repos in the MicrosoftDocs GitHub organization that start with 'mslearn-'.
+* **Content repos:** To view the list of all Learn content repos, view the [Microsoft Learn repos article](https://review.docs.microsoft.com/en-us/learn-docs/docs/repos-msft-learn) in LearnDocs.
+* **Code repos:** Code repos for individual modules follow the naming convention of https://github.com/MicrosoftDocs/mslearn-module-name. To find them all, search in GitHub for all repos in the MicrosoftDocs GitHub organization that start with 'mslearn-'.
 
 ## Content author and learner experience
 

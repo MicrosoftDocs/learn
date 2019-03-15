@@ -13,7 +13,7 @@ If your business scenario is to provision a data store that will store data, but
 
 ## Key Features
 
-Azure storage accounts are scalable and secure, durable and highly available. Microsoft Azure handles hardware maintenance, updates, and critical issues for you and provides SDKs for Azure Storage in a variety of languages -- .NET, Java, Node.js, Python, PHP, Ruby, Go, and others -- as well as a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI.
+Azure storage accounts are scalable and secure, durable and highly available. Microsoft Azure handles hardware maintenance, updates, and critical issues for you and provides SDKs for Azure Storage in a variety of languages -- .NET, Java, Node.js, Python, PHP, Ruby, Go, and others -- as well as REST APIs. Azure Storage also supports scripting in Azure PowerShell or Azure CLI.
 
 ## Ingesting Data
 

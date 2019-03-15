@@ -18,14 +18,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "In which tab of the Azure pricing calculator will you formulate your estimate?"
+  - content: "Which tab of the Azure pricing calculator will you use to put together your estimate?"
     choices:
     - content: "Estimate"
       isCorrect: false
       explanation: "This tab has all of your previously saved estimates."
     - content: "Products"
       isCorrect: true
-      explanation: "This tab has all the Azure services listed and is where you'll add or remove services to formulate your estimate."
+      explanation: "This tab has all the Azure services listed and is where you'll add or remove services to get your estimate."
   
   - content: "True or false: You can share your estimate through an Excel spreadsheet or through a URL."
     choices:

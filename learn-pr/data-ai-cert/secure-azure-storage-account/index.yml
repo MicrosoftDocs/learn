@@ -19,6 +19,7 @@ abstract: |
   - Understand Advanced Threat Detection
   - Control network access
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/secure-azure-storage-account-badge.svg
 levels:
 - beginner
