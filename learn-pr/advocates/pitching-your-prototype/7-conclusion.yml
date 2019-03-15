@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.pitch-your-product-prototype.6-conclusion
+uid: learn.pitch-your-product-prototype.7-conclusion
 title: Conclusion
 metadata:
   title: Conclusion
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-conclusion.md)]
+  [!include[](includes/7-conclusion.md)]
