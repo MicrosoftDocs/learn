@@ -1,14 +1,14 @@
 Now FashionFindr has a prototype, your team wants to pitch that prototype to a potential investor. When you're pitching to a specific person or group of people, investors, potential new customers, a conference or event audience, you need to tailor your message to that audience. 
 
-Every audience has a different focus, let's look at the two audiences you'll likely most frequently pitch to:
+Every audience has a different focus, let's look at the two audiences you'll likely most frequently pitch to: investors and customers.
 
 ## Investors
 
-Investors are focussed on your product, plans, and your potential. They want to be sure the money they invest with you gives them a return.
+Investors are focussed on your product, plans, and your potential to make money. They want to be sure the money they invest with you gives them a return.
 
 When pitching to investors it is crucial to research them and what they are interested in. For an investor, you would review their prior work history, their other investments, and their interests.
 
-Pay special attention to their prior investments and their investment thesis. Have they invested in other companies like you?
+Pay special attention to those prior investments and their investment thesis. Have they invested in other companies like you?
 
 ## Customers
 

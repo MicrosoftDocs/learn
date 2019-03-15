@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.3-tailor-your-message
+title: Tailor the Message for Your Audience
+metadata:
+  title: Tailor the Message for Your Audience
+  description: Tailor the Message for Your Audience
+  author: James Turnbull
+  ms.date: 03/03/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-tailor-the-message.md)]

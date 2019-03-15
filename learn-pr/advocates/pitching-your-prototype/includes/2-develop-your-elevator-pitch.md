@@ -8,20 +8,19 @@ A prototype pitch is an extension of your elevator pitch, with the bonus of havi
 
 ![Tell your story](../media/pitch_proto.001.png)
 
-Your story is just the start, the initial hook for your audience, you also want to make clear the problem you're solving.
+But since you hopefully have slightly longer than an elevator ride, your story is just the start, the initial hook for your audience, you also want to make clear the problem you're solving.
 
 ## What's the problem
 
-State the problem you're trying to solve. This should be at the heart of your prototype. In our example, identifying a clothing item and brand from an image is hard.
+State the problem you're trying to solve. This should be at the heart of your prototype. In our example, identifying a clothing item and brand from an image is hard. Even if you can, it's often difficult to track the item down to a store to buy it.
 
-> [!NOTE]
-> A quote or statistic that demonstrates the problem is often a useful addition.
+You should include the demographics and scale of the target market of your product and, if possible, some relevant data points like a quote or statistic that demonstrates the problem.
 
 ![Stating the problem that your product prototype is designed to solve](../media/pitch_proto.002.png)
 
 ## Here's the solution
 
-Once you've articulated the problem, you need to share the solution you've built to solve the problem. This should include any competitive advantage your product brings to the market. In our case, our app makes it easier to identify who makes the clothes you want and links you to a way to buy them. To do this, FashionFindr uses machine learning and AI to enhance the search and buying experience.
+Once you've articulated the problem, you need to share the solution you've built to solve the problem. This should include any unique properties or competitive advantages your product brings to the problem. In our case, our FashionFindr app makes it easier to identify who makes the clothes you want using machine learning and AI and allows you to buy those clothes without leaving the app.
 
 ![State the solution to the problem](../media/pitch_proto.003.png)
 
