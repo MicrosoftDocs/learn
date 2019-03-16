@@ -2,6 +2,8 @@
 
 In this unit, you will use QnA Maker to create a knowledge base containing questions such as "What NFL teams have won the most Super Bowls" and "What is the largest city in the world?" Then, you will deploy the knowledge base in an Azure web app so that it can be accessed via an HTTPS endpoint.
 
+## Create a QnA Maker Service
+
 1. Go to the [QnA Maker portal](https://www.qnamaker.ai/?azure-portal=true).
 
 1. Select **Sign in** in the upper-right corner and sign in with the same account you used to create the web app.
@@ -12,28 +14,36 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
 
 1. Select **Create a QnA service**. Selecting this button takes you to the Azure portal and signs you in with the credentials you used earlier. You create the QnA Maker service and the associated Azure app service that will host it in this portal.
 
-> [!NOTE]
-> You can also create a QnA Maker service in the Azure portal before you create a knowledge base.
+    ![Screenshot of the QnA Maker portal showing the Create a Knowledge Base page with the Create a QnA service button highlighted.](../media/3-create-qna-service.png)
 
-1. In the newly-opened Azure portal tab, enter a name into the **Name** box. This name must be unique within Azure, so make sure a green check mark appears next to it *and* in the **App name** box further down the blade.
+    > [!NOTE]
+    > You can also create a QnA Maker service in the Azure portal before you create a knowledge base.
 
-1. Select **Use existing** under **Resource group**, then select the exercise resource group you created earlier (**mslearn-factbot**).
+1. In the newly-opened Azure portal tab enter the following settings for the new QnA Maker service.
 
-1. Select a **Location** from the list available in the dropdown. 
+    Setting|Value|Description
+    ---|---|---
+    Name|*choose a unique name*|This name must be unique within Azure, so make sure a green check mark appears next to it *AND* in the **App name** box further down the blade.
+    Subscription|*Select your subscription*|Select your Azure subscription.
+    Pricing tier|F0|A basic free tier.
+    Location|*Select the region closest to you from the drop-down*|Select the location where the service should be located.
+    Resource Group|*Select the resource group you created in the previous unit*|Select your existing resource group (**mslearn-factbot**) to hold the resources for this exercise.
+    Search pricing tier|F|Select pricing tier for serach service.
+    Search location|*Select the region closest to you from the drop-down*|Select the location where the search service should be located.
+    App name|*Leave default*|The default value is populated based on your QnA Maer name. You can change this if you'd like a different name for the web app, or leave the default value.
+    Website location|*Select the region closest to you from the drop-down*|Select the location where the website should be located.
 
-1. Select **F0** as the **Management pricing tier**. 
+1. Verify the **Name** and  **App name** are unique to Azure.
 
-1. Select **F** for the **Search pricing tier**. 
-
-1. Verify the **App name** is unique to Azure.
-
-1. Select the location nearest you in both location drop-downs, then select the **Create** button at the bottom of the blade.
+1. Select the **Create** button at the bottom of the blade.
 
     ![Screenshot of the Azure portal showing the QnA Maker Create blade with configuration values as described.](../media/3-new-qna-maker-service.png)
 
-1. Select **Resource groups** in the ribbon on the left side of the portal, and locate your **mslearn-factbot** resource group. 
+1. Select **Resource groups** in the ribbon on the left side of the portal, and locate your **mslearn-factbot** resource group.
 
     Wait until "Deploying" changes to "Succeeded" at the top of the blade, indicating that the QnA service and the resources associated with it were successfully deployed. If the message disappears, you can select the bell icon in the menu bar to view the status. You can also select **Refresh** at the top of the blade to refresh the deployment status.
+
+## Create, Populate, and Train Your QnA Maker Knowledge Base
 
 1. Return to **Create a knowledge base** by switching back to the open tab, or by navigating to <https://www.qnamaker.ai/Create> in the browser and scroll to **Step 2** to connect to our QnA service.
 
@@ -45,13 +55,15 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
 
 1. Then, assign the knowledge base a name, such as "Factbot Knowledge Base".
 
-    You can enter questions and answers into a QnA Maker knowledge base manually, or you can import them from online FAQs or local files. Supported formats include tab-delimited text files, Microsoft Word documents, Excel spreadsheets, and PDF files.
+The next step is to populate your knowledge base with questions and answers. You can enter questions and answers into a QnA Maker knowledge base manually, or you can import them from online FAQs or local files. Supported formats include tab-delimited text files, Microsoft Word documents, Excel spreadsheets, and PDF files.
 
-1. Download the sample question file <https://github.com/MicrosoftDocs/mslearn-build-chat-bot-with-azure-bot-service/blob/master/Factbot.tsv.zip> in your browser. 
+1. To populate our knowledge base, open <https://github.com/MicrosoftDocs/mslearn-build-chat-bot-with-azure-bot-service/blob/master/Factbot.tsv.zip> in your browser, and download the **Factbot.tsv.zip** file. This zip folder contains a text file named **Factbot.tsv**.
 
-1. Open the **.zip** file and copy the **Factbot.tsv** to your computer. This file contains 20 questions and answers in tab-delimited format.
+1. Extract and copy the file to your computer. Then, scroll down in the QnA Maker portal and select **+ Add file**, and select **Factbot.tsv**.
 
-1. Scroll down in the QnA Maker portal and select **+ Add file**, and select **Factbot.tsv**.
+    This file contains 20 questions and answers in tab-delimited format.
+
+    ![Screenshot of the QnA Maker portal showing the Populate your KB section with the Factbot.tsv file uploaded.](../media/3-populate-your-kb.png)
 
 1. Select **Create your KB** at the bottom of the page, and wait for the knowledge base to be created. It should take less than a minute.
 
@@ -59,13 +71,15 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
 
     ![Screenshot of the Factbot Knowledge Base site showing the loaded knowledge base data.](../media/3-save-and-train.png)
 
+## Test your Knowledge Base
+
 1. Select the **Test** button to the right of the **Save and train** button. Type "Hi" into the message box and press **Enter**. Confirm that the response is "Welcome to the QnA Factbot," as shown below.
 
     ![Screenshot of a test interaction with the created chat bot.](../media/3-test-kb.png)
 
 1. Type "What book has sold the most copies?" into the message box and press **Enter**. What is the response?
 
-1. Select the **Test** button again to collapse the Test panel. 
+1. Select the **Test** button again to collapse the Test panel.
 
 1. Select **Publish** in the menu at the top of the page, and select the **Publish** button at the bottom of the page to publish the knowledge base. *Publishing* makes the knowledge base available at an HTTPS endpoint.
 

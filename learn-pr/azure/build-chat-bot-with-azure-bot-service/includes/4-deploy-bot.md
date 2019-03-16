@@ -1,4 +1,4 @@
-When you created an Azure web app bot, an Azure web app was deployed to host it. But the bot does require some code, and it still needs to be deployed to the Azure web app. Fortunately, the code was generated for you by the Azure Bot Service. 
+When you created an Azure web app bot, an Azure web app was deployed to host it. But the bot does require some code, and it still needs to be deployed to the Azure web app. Fortunately, the code was generated for you by the Azure Bot Service.
 
 In this unit, you'll use Visual Studio Code to place the code in a local Git repository and publish the bot to Azure by pushing changes from the local repository to a remote repository connected to the Azure web app that hosts the bot — a process known as [continuous integration](https://wikipedia.org/wiki/Continuous_integration).
 
@@ -6,11 +6,11 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Create a folder named "Factbot" in the location of your choice on your hard disk to hold the bot's source code.
 
-1. Return to the Azure portal in the browser and find the resource group created using the search box at the top, or the **Resource groups** section in the left-hand sidebar. 
+1. Return to the Azure portal in the browser and find the resource group created using the search box at the top, or the **Resource groups** section in the left-hand sidebar.
 
 1. Locate and select the Web App Bot you created earlier.
 
-1. Select **Build** in the menu on the left, then select **Download Bot source code** to prepare a zip file containing the bot's source code. 
+1. Select **Build** in the menu on the left, then select **Download Bot source code** to prepare a zip file containing the bot's source code.
 
     ![Screenshot showing the Build > Download Bot source code steps in the Azure portal for the Web app bot](../media/4-download-sourcecode.png)
 
@@ -28,7 +28,7 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Select **Deployment Credentials** from the menu area, and then **User Credentials** in the opened view.
 
-1. Enter a username and password and click **Save Credentials**.
+1. Enter a username and password (must be 10+ characters) and click **Save Credentials**.
 
     ![Screenshot of the Azure portal showing the new bot App Service blade displaying the Deployment credentials screen with the Deployment credentials menu item and Save button highlighted.](../media/4-portal-enter-ci-creds.png)
 
@@ -46,6 +46,8 @@ We are going to use Visual Studio Code for this section which has an integrated 
 
 1. Select the **Initialize Repository** icon at the top (on the right side of the **SOURCE CONTROL** title).
 
+   ![Screenshot of Visual Studio Code with the Initialize Respository icon highlighted.](../media/4-vs-vode-init-repo.png)
+
 1. Select the **Initialize Repository** button in the dialog.
 
 1. Type "First commit." into the entry text box.
@@ -60,7 +62,7 @@ We are going to use Visual Studio Code for this section which has an integrated 
     > git config --global user.name "Your name"
     > ```
 
-1. Select **Terminal** from Visual Studio Code's **View** menu to open an integrated terminal.
+1. Select **Integrated Terminal** from Visual Studio Code's **View** menu to open an integrated terminal.
 
 1. Execute the following command in the integrated terminal, replacing `{git-url}` in the following command with the Git clone URL you found in the Azure portal.
 
@@ -68,7 +70,7 @@ We are going to use Visual Studio Code for this section which has an integrated 
     git remote add qna-factbot {git-url}
     ```
 
-1. Return to the **Source Control** section in Visual Studio Code and select the ellipsis (the three dots) at the top of the SOURCE CONTROL panel. 
+1. Return to the **Source Control** section in Visual Studio Code and select the ellipsis (the three dots) at the top of the SOURCE CONTROL panel.
 
 1. Select **Publish Branch** from the menu to push the bot code from the local repository to Azure. If prompted for credentials, enter the username and password you setup in Deployment Center.
 

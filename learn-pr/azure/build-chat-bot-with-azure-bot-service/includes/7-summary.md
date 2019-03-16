@@ -1,4 +1,4 @@
-You've achieved quite a bit in this module. QnA Maker is an easy way to provide answers to common questions by using existing documents or FAQ lists. 
+You've achieved quite a bit in this module. QnA Maker is an easy way to provide answers to common questions by using existing documents or FAQ lists.
 
 Integrating the QnA Maker service with a bot in Azure can make it easier for users interact with FAQ lists in a conversational way, so they don't have to search through long documents in a browser.
 
@@ -20,10 +20,10 @@ There is more that you can do to leverage the power of the Azure Bot Service.
 
 - Incorporating [Dialogs](http://aihelpwebsite.com/Blog/EntryId/9/Introduction-To-Using-Dialogs-With-The-Microsoft-Bot-Framework)
 - Add support for[FormFlow](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/07/14/building-a-microsoft-bot-using-microsoft-bot-framework-using-formflow/)
-- Support natural language with [Microsoft Language Understanding and Intelligence Services (LUIS)](https://docs.botframework.com/node/builder/guides/understanding-natural-language/). 
+- Support natural language with [Microsoft Language Understanding and Intelligence Services (LUIS)](https://docs.botframework.com/node/builder/guides/understanding-natural-language/).
 
-By using these features in conjunction with others, you can build sophisticated bots that respond to users' queries and commands and interact in a fluid, conversational, and non-linear manner. 
+By using these features in conjunction with others, you can build sophisticated bots that respond to users' queries and commands and interact in a fluid, conversational, and non-linear manner.
 
-For more information, and for ideas to get you started, see the [What is Microsoft Bot Framework Overview](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/04/05/what-is-microsoft-bot-framework-overview/). 
+For more information, and for ideas to get you started, see the [What is Microsoft Bot Framework Overview](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/04/05/what-is-microsoft-bot-framework-overview/).
 
 If you would like to make the bot smarter, consider expanding the knowledge base with additional questions and answers. For example, you could use the [online FAQ](https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-3.0) for the Bot Framework to train the bot to answer questions about the framework itself.

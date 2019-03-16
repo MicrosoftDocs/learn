@@ -1,6 +1,5 @@
 The first step in creating a bot is to provide a location for the bot to be hosted in Azure. The Web Apps feature of Azure App Service is perfect for hosting bot applications, and the Azure Bot Service is designed to provision them for you. In this unit, you'll use the Azure portal to provision an Azure web app bot.
 
-
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. Select **+ Create a resource**, followed by **AI + Machine Learning**, then **Web App Bot**.
@@ -14,8 +13,8 @@ The first step in creating a bot is to provide a location for the bot to be host
     Bot name|*choose a unique name*|This name must be unique within Azure, so make sure a green check mark appears next to it.
     Subscription|*Select your subscription*|Select your Azure subscription.
     Resource Group|Select *Create new* and use the name **mslearn-factbot**|Select an existing or create a new resource group to hold the resources for this exercise.
-    Location|*Select the region closest to you from the drop-down*|Select the location where the database should be located.
-    Pricing tier| S1 | A basic tier for this app.
+    Location|*Select the region closest to you from the drop-down*|Select the location where the bot should be located.
+    Pricing tier|F0| A basic free tier for this app.
     App name|*Leave default*|The default value is populated based on your bot name. You can change this if you'd like a different name for the web app, or leave the default value.
 
 1. Then, select **Bot template**. Select **SDK v3** as the version, **Node.js** as the SDK language, and **Question and Answer** as the template type. Then, click **OK** at the bottom of the view.
@@ -41,9 +40,10 @@ You should now see several resources created for your Azure web app bot.
 
 ![Screenshot of resources created for the web app bot](../media/2-created-resources.png)
 
-Behind the scenes, a lot happened when the Azure web app bot was deployed. 
+Behind the scenes, a lot happened when the Azure web app bot was deployed.
+
 - A bot was created and registered in Azure.
 - An Azure web app was created to host the bot.
-- The bot was configured to work with **Microsoft QnA Maker**. 
+- The bot was configured to work with **Microsoft QnA Maker**.
 
 The next step is to use QnA Maker to create a knowledge base of questions and answers to infuse the bot with intelligence.

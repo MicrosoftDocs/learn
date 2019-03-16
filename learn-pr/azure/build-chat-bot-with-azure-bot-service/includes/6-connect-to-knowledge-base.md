@@ -21,11 +21,11 @@ In this unit, you will connect your bot to the QnA Maker knowledge base you buil
 
     ![Screenshot of the QnA Maker portal showing the Sample HTTP Request with the endpoint knowledge base ID and host name highlighted.](../media/6-copy-endpoint-info.png)
 
-1. Return to the Web App Bot in the Azure portal. Select **Application settings** in the menu on the left, and scroll down until you find application settings named "QnAKnowledgebaseId," "QnAAuthKey," and "QnAEndpointHostName." 
+1. Return to the Web App Bot in the Azure portal. Select **Application settings** in the menu on the left, and scroll down until you find application settings named "QnAKnowledgebaseId," "QnAAuthKey," and "QnAEndpointHostName."
 
 1. Click **Show Values** to display editable fields.
 
-1. Paste the knowledge base ID and host name you just obtained and the endpoint key obtained previously into these fields. 
+1. Paste the knowledge base ID and host name you just obtained and the endpoint key obtained previously into these fields.
 
 1. Select **Save** at the top of the window to persist your changes.
 
@@ -133,7 +133,7 @@ In this unit, you will connect your bot to the QnA Maker knowledge base you buil
 
 ## Test the Azure Web App bot
 
-1. Return to the web app bot in the Azure portal, and select **Test in Web Chat** on the left to open the test console. 
+1. Return to the web app bot in the Azure portal, and select **Test in Web Chat** on the left to open the test console.
 
 1. Type "What's the most popular software programming language in the world?" into the box at the bottom of the chat window and press **Enter**. Confirm that the bot responds.
 
