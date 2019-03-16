@@ -33,7 +33,3 @@ For customers, you need to understand their products, markets, current competito
 ## Connect with the audience
 
 You'll need this information about your audience to both set the stage and to answer questions they will have for you. For FashionFindr, it could also be key to find an entry point: a resonance that allows the investor to see the problem in light of their own experiences, empathize with the customer or engages their economic interests. This entry point will enable us to share, to a more receptive audience, why our solution solves the problem.
-
-## Ready them for your ask
-
-Once they understand our solution, we can also explain our business model and highlight what our audience will get out of using, buying, or investing in our product. We'll see this in the next unit.
