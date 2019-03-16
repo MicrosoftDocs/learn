@@ -10,13 +10,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/2-develop-your-elevator-pitch.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of these statements is a good mission statement?"
+  - content: "Which of these statements is a good elevator pitch?"
     choices:
     - content: "We're building a cool product that'll change the world!"
       isCorrect: false

@@ -1,14 +1,13 @@
-Once you have articulate the story, the problem, and the solution your prototype represents you need to explain how you are going to take your solution to market.
+Once you have articulated your extended elevator pitch and identified what your audience wants addressed, then you can share the operational details of your business.
 
-The most brilliant, beautiful, or useful application is only as good as the go-to-market strategy you adopt. If no one uses your app then you've failed. A go-to-market strategy, the story of how you'll acquire users and generally how you'll make money, is crucial to demonstrate to your audience
+The most brilliant, beautiful, or useful product is only as good as the go-to-market strategy you adopt. If, no one uses your product, then you've failed. A go-to-market strategy, the story of how you'll acquire users and generally how you'll make money, is crucial to demonstrate to your audience
 
+## Explain how you will get customers
 
-## Show them how you'll get customers
+You need to explain your go-to-market plan, most specifically how you will do customer acquisition. This should include the channels you plan to use, for example advertising, influencer outreach, content, or the like. If there are unique or specific marketing techniques or channels that make your go-to-market stand out this is the place to highlight them.
 
-But having a solution isn't enough. You need to show how you'll reach your target market with the app. Explain your marketing plan, focusing on showing how'll you will acquire the customers for the app.
+As well as any techniques planned, you should indicate your targets for customer acquisition and the time frame over which you intend to acquire them.
 
-## Explain the revenue model
+## Explain your revenue model
 
-
-## Explain the exit
-
+The other side of your go-to-market is how you plan to make money: your business model or monetization strategy. Some investors are open to a strategy of building a product and growing its customer base and monetizing later but even those investors are usually interested in your future plans to make money. For a pitch you generally don't need to go deep into numbers, although you should have that data available because you're going to be asked if the investment progresses. You should identify the specific revenue model, for example subscriptions, per unit, and your rough expectations on revenue.

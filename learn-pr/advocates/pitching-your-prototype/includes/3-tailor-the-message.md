@@ -1,10 +1,10 @@
-Now FashionFindr has a prototype that addresses your mission, your team wants to pitch that prototype to a potential investor. When you're pitching to a specific person or group of people, investors, potential new customers, a conference or event audience, you need to tailor your message to that audience. 
+Now FashionFindr has a prototype that addresses your mission, your team wants to pitch that prototype to a potential investor. When you're pitching to a specific person or group of people, investors, potential new customers, a conference or event audience, you need to tailor your message to that audience.
 
 Every audience has a different focus, let's look at the two audiences you'll likely most frequently pitch to: investors and customers.
 
 ## Investors
 
-Investors are focussed on your product, plans, and your potential to make money. They want to be sure the money they invest with you gives them a return.
+Investors are focused on your product, plans, and your potential to make money. They want to be sure the money they invest with you gives them a return.
 
 Investors also want to know the mechanics of your business. You aren't just your product, you're also the go-to-market strategy that explains how you will acquire customers for your product and make money.
 
@@ -20,7 +20,7 @@ You'll need the answers to these questions, and the insights into the investor, 
 
 ## Customers
 
-Customers are focussed on your product and how it helps them. They want to ensure choosing your product is the right solution that will deliver them benefits like more sales, cost savings, productivity increases, or other benefits.
+Customers are focused on your product and how it helps them. They want to ensure choosing your product is the right solution that will deliver them benefits like more sales, cost savings, productivity increases, or other benefits.
 
 For FashionFindr, maybe you're pitching to a fashion or retail company to add their products to your app. The customer will want to understand:
 
@@ -28,7 +28,7 @@ For FashionFindr, maybe you're pitching to a fashion or retail company to add th
 * How any integration will work, and most importantly,
 * How much money they will get from the deal.
 
-For customers, you need to understand their market, their current competitors, their business model and be able to articulate how you fit into their world.
+For customers, you need to understand their products, markets, current competitors, their business model and be able to articulate how you fit into their world.
 
 ## Connect with the audience
 
