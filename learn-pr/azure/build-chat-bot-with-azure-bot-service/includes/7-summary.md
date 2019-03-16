@@ -12,7 +12,7 @@ To avoid any unexpected costs in your Azure account, delete the **mslearn-factbo
 
 1. Select **Delete resource group**.
 
-1. Type the name of the resource group and select **Delete**. Azure will remove all the resources.
+1. Type the name of the resource group and select **Delete**. Azure will remove all the resources - including the Knowledge Base in QnA Maker.
 
 ## Learn more
 
