@@ -19,4 +19,4 @@ It's also important to think about a live demo versus a "canned demo". A "canned
 
 ## What's next
 
-You should conclude your demonstration with a quick walk through of your product road map. This is especially true if your prototype lacks a key feature that will be a differentiation, for example if you haven't built it yet.
+You should conclude your demonstration with a quick walk through of your product road map. This is especially true if your prototype lacks a key feature that represents product differentiation, for example if you haven't built it yet.
