@@ -31,7 +31,9 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
 
     ![Screenshot of the Azure portal showing the QnA Maker Create blade with configuration values as described.](../media/3-new-qna-maker-service.png)
 
-1. Select **Resource groups** in the ribbon on the left side of the portal, and open the pre-created exercise resource group. Wait until "Deploying" changes to "Succeeded" at the top of the blade, indicating that the QnA service and the resources associated with it were successfully deployed. If the message disappears, you can select the bell icon in the menu bar to view the status. You can also select **Refresh** at the top of the blade to refresh the deployment status.
+1. Select **Resource groups** in the ribbon on the left side of the portal, and locate your **mslearn-factbot** resource group. 
+
+    Wait until "Deploying" changes to "Succeeded" at the top of the blade, indicating that the QnA service and the resources associated with it were successfully deployed. If the message disappears, you can select the bell icon in the menu bar to view the status. You can also select **Refresh** at the top of the blade to refresh the deployment status.
 
 1. Return to **Create a knowledge base** by switching back to the open tab, or by navigating to <https://www.qnamaker.ai/Create> in the browser and scroll to **Step 2** to connect to our QnA service.
 
@@ -43,9 +45,13 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
 
 1. Then, assign the knowledge base a name, such as "Factbot Knowledge Base".
 
-1. You can enter questions and answers into a QnA Maker knowledge base manually, or you can import them from online FAQs or local files. Supported formats include tab-delimited text files, Microsoft Word documents, Excel spreadsheets, and PDF files.
+    You can enter questions and answers into a QnA Maker knowledge base manually, or you can import them from online FAQs or local files. Supported formats include tab-delimited text files, Microsoft Word documents, Excel spreadsheets, and PDF files.
 
-    To demonstrate, open https://github.com/MicrosoftDocs/mslearn-build-chat-bot-with-azure-bot-service/blob/master/Factbot.tsv.zip in your browser, and download the **Factbot.tsv.zip** file. This zip folder contains a text file named **Factbot.tsv**. Extract and copy the file to your computer. Then, scroll down in the QnA Maker portal and select **+ Add file**, and select **Factbot.tsv**. This file contains 20 questions and answers in tab-delimited format.
+1. Download the sample question file <https://github.com/MicrosoftDocs/mslearn-build-chat-bot-with-azure-bot-service/blob/master/Factbot.tsv.zip> in your browser. 
+
+1. Open the **.zip** file and copy the **Factbot.tsv** to your computer. This file contains 20 questions and answers in tab-delimited format.
+
+1. Scroll down in the QnA Maker portal and select **+ Add file**, and select **Factbot.tsv**.
 
 1. Select **Create your KB** at the bottom of the page, and wait for the knowledge base to be created. It should take less than a minute.
 
