@@ -10,6 +10,17 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-explain-the-how.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "True or false: When you explain how you are going to acquire customers it's important to mention what color your logo will be."
+    choices:
+    - content: "True"
+      isCorrect: false
+    - content: "False"
+      isCorrect: true
+      explanation: "When you explain how to acquire customers you should mention market size, marketing channels and techniques. The color of your logo isn't crucial."
+ 

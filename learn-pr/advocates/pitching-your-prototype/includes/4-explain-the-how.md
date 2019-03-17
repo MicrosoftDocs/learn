@@ -16,7 +16,7 @@ As well as any techniques planned, you should indicate your targets for customer
 
 ## Explain your revenue model
 
-The other side of your go-to-market is how you plan to make money: your business model or monetization strategy. Some investors are open to a strategy of building a product and growing its customer base and monetizing later but even those investors are usually interested in your future plans to make money. 
+The other side of your go-to-market is how you plan to make money: your business model or monetization strategy. Some investors are open to a strategy of building a product and growing its customer base and monetizing later but even those investors are usually interested in your future plans to make money.
 
 ![FashionFindr's business model](../media/pitch_proto.008.png)
 
