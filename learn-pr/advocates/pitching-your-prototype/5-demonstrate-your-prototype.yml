@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-demonstrate-your-prototype.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "True or false: When you demo your prototype you should demostrate your key user flows."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "It's crucial your audience sees the key user flows so they understand how it works and what customers will experience."
+    - content: "False"
+      isCorrect: false
+  - content: "True or false: You shouldn't talk about future features."
+    choices:
+    - content: "True"
+      isCorrect: false
+    - content: "False"
+      isCorrect: true
+      explanation: "It's important to share your roadmap so your audience understands the future of the product."
+
