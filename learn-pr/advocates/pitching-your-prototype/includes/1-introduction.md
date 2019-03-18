@@ -1,4 +1,4 @@
-You’ve founded your first company, FashionFindr, and build a prototype for your first app, which uses machine learning and AI to identify the items of clothing from images and allow you to easily purchase them.
+You’ve founded your first company, FashionFindr, and built a prototype for your first app, which uses machine learning and AI to identify the items of clothing from images and allow you to purchase them easily.
 
 ![FashionFindr](../media/pitch_proto.001.png)
 
@@ -16,4 +16,4 @@ This module teaches you how to construct a pitch deck. You’ll learn how to:
 * Create a pitch for a product prototype.
 * Create a call to action for your audience.
 
-By the end of this module you’ll be able to write a compelling pitch deck that will resonate with your audience and help share the vision of your prototype.
+By the end of this module, you’ll be able to write a compelling pitch deck that will resonate with your audience and help share the vision of your prototype.
