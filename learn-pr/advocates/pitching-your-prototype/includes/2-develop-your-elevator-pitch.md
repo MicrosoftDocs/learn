@@ -2,17 +2,17 @@ A pitch deck is the medium through which you share your prototype with investors
 
 One of the best ways to open your pitch is to use storytelling. Create a story that wraps your mission and captures why your product is worth investing in:
 
-> Hi, I'm Jane Smith, the CEO of FashionFindr. Last year, I went to a friend's wedding, and I was really taken with one of my fellow guest's outfit. I forgot to ask her where she got the outfit at the wedding but when I got home I realized I had a photo of the outfit. I tried to use the photo to find the outfit but found the experience frustrating and ultimately unsuccessful. That inspired me to build FashionFindr, an app which uses machine learning and AI to identify fashion brands from photographs and makes it easier for you to find and buy the clothes you love. Our users convert 16x times more often than traditional sales techniques. We're seeking investment, and I'd love to demo our product for you.
+> Hi, I'm Jane Smith, the CEO of FashionFindr. Last year, I went to a friend's wedding, and I was really taken with one of my fellow guest's outfit. I forgot to ask her where she got the outfit at the wedding, but when I got home, I realized I had a photo of the outfit. I tried to use the picture to find the outfit but found the experience frustrating and ultimately unsuccessful. That inspired me to build FashionFindr, an app which uses machine learning and AI to identify fashion brands from photographs and makes it easier for you to find and buy the clothes you love. Our users convert 16x times more often than traditional sales techniques. We're seeking investment, and I'd love to demo our product for you.
 
-A prototype pitch is an extension of your elevator pitch, with the bonus of having something to show your audience beyond the story. You can turn your mission into some key opening slides for your pitch deck.
+A prototype pitch is an extension of your elevator pitch, with the bonus of having something to show your audience beyond the story in your elevator pitch. You can turn your mission into some key opening slides for your pitch deck.
 
 ![Tell your story](../media/pitch_proto.002.png)
 
-But since you hopefully have slightly longer than an elevator ride, your story is just the start, the initial hook for your audience, you also want to make clear the problem you're solving.
+Since you hopefully have slightly longer than an elevator ride to explain your product, your story is just the start, the initial hook for your audience. You also want to make clear the problem you're solving.
 
 ## What's the problem
 
-State the problem you're trying to solve. This should be at the heart of your prototype. In our example, identifying a clothing item and brand from an image is hard and time-consuming. Even if you can, it's often difficult to track the item down to a store to buy it.
+State the problem you're trying to solve. This should be at the heart of your prototype. In our example, identifying a clothing item and its brand from an image is hard and time-consuming. Even if you can, it's often difficult to track the item down to a store to buy it.
 
 ![Stating the problem that your product prototype is designed to solve](../media/pitch_proto.003.png)
 
