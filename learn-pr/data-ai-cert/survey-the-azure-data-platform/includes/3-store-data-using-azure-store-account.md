@@ -1,4 +1,4 @@
-Azure storage accounts are the base storage type used within Microsoft Azure.  Azure Storage offers a massively scalable object store for data objects and file system services for the cloud. It can also provide a messaging store for reliable messaging, or act as a NoSQL store. The four configuration options available include:
+Azure storage accounts are the base storage type used within Microsoft Azure. Azure Storage offers a massively scalable object store for data objects and file system services for the cloud. It can also provide a messaging store for reliable messaging, or act as a NoSQL store. The four configuration options available include:
 
 - **Azure Blobs**: A massively scalable object store for text and binary data.
 - **Azure Files**: Managed file shares for cloud or on-premises deployments.
@@ -17,11 +17,11 @@ Azure storage accounts are scalable and secure, durable and highly available. Mi
 
 ## Ingesting Data
 
-To ingest data, a Data Engineer can use either the Azure Data Factory, Azure Storage Explorer or the AzCopy Tool, PowerShell, or Visual Studio.  To import file sizes above 2Gb using the File Upload feature, Data Engineers must use PowerShell or Visual Studio.  The AzCopy Tool supports a maximum file size of 1Tb and will automatically split into multiple files if the data file exceeds 200Gb.
+To ingest data, a Data Engineer can use either the Azure Data Factory, Azure Storage Explorer or the AzCopy Tool, PowerShell, or Visual Studio. To import file sizes above 2Gb using the File Upload feature, Data Engineers must use PowerShell or Visual Studio. The AzCopy Tool supports a maximum file size of 1Tb and will automatically split into multiple files if the data file exceeds 200Gb.
 
 ## Querying Data
 
-Creating a storage account as a Blob means that you cannot query the data directly.  If you need to query it, then you either need to move the data to a store that can support querying or configure the Azure Storage Account for data lake storage account.
+Creating a storage account as a Blob means that you cannot query the data directly. If you need to query it, then you either need to move the data to a store that can support querying or configure the Azure Storage Account for data lake storage account.
 
 ## Securing Data
 

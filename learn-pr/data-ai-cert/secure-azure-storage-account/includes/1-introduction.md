@@ -2,7 +2,7 @@ Azure Storage accounts provide a wealth of security options that protect your cl
 
 Imagine that the network administrator at Contoso is performing a security audit of the assets within the domain. When it comes to cloud-based data, it's essential that she's satisfied that all the data stored in Azure follows the corporate policy of defense in depth. As their primary data consultant, your job is to take her through the available options in Azure Storage to ensure the security requirements meet the needs of the organization.
 
-## Learning Objectives
+## Learning objectives
 
 In this module you will:
 

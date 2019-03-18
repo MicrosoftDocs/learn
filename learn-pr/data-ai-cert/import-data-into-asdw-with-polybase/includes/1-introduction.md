@@ -2,7 +2,7 @@ One of the key benefits of using Azure SQL Data Warehouse is the fast loading of
 
 Suppose you want to resolve a long-running data load that is delaying the daily population of an on-premises data warehouse within Contoso. You've decided that the best approach to solve this problem is to create an Azure SQL Data Warehouse and use PolyBase to perform data loads. Your goal is to explore and understand the steps required so that you can explain it to the rest of the data team at Contoso.
 
-## Learning Objectives
+## Learning objectives
 
 In this module you will:
 

@@ -1,4 +1,4 @@
-Azure Data Lake Store allows you to upload data using REST API’s. You can use any programming language that supports building and sending HTTP-based messages. In this unit, you will try this out using a simple .NET Core app with C#.
+Azure Data Lake Store allows you to upload data using REST API's. You can use any programming language that supports building and sending HTTP-based messages. In this unit, you will try this out using a simple .NET Core app with C#.
 
 > [!NOTE]
 > If you don't have an Azure account, don't want to install .NET Core, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved to invoking the REST API services.
@@ -21,7 +21,7 @@ The first step in using the REST API is to register the application. Azure provi
     3. **Sign-on URL**: Enter a local sign-on URL using your own domain suffix (e.g. http://sample.contoso.com). This is a value used to identify the app and can be changed later as needed.
 1. Click **Create** to create the app registration.
 1. Once completed, in the **Registered app** blade, next to **Application ID**, copy the key into Notepad.
-1.  Click on the **Settings** button, and int the Settings blade go to **Owner**. Make a note of the owner account in Notepad. Note that you can change this to a preferred service account for the registered application.
+1. Click on the **Settings** button, and int the Settings blade go to **Owner**. Make a note of the owner account in Notepad. Note that you can change this to a preferred service account for the registered application.
 1. Go to the **Keys** in the Settings blade. 
 
 ![Screenshot of Collecting details of Azure](../media/4-collect-details.png)
@@ -36,7 +36,7 @@ The first step in using the REST API is to register the application. Azure provi
 
 1. Copy the key value into Notepad. **You won't be able to retrieve after you leave this blade.**
 
-1. Close down the Application Registration blade.  
+1. Close down the Application Registration blade. 
 
 ## Grant Permission in Data Lake Store
 

@@ -15,7 +15,7 @@ Data warehouse solutions can also be classified by their technical _relational c
 
 This approach is based on the notion of "Connected Data Marts." The Data Warehouse creation starts with building individual Data Marts for departmental subject areas and then connecting them via a "Data Warehouse Bus" using the Conforming Dimensions. The core building blocks of this approach are dependent on the star schema model that provides the Multidimensional OLAP Cube capabilities for data analysis within a relational database and SQL. 
 
-This approach offers the benefit of starting small with independent departmental Data Marts and then connecting them via the DW bus using the conformed dimensions common to each star schema.  This approach allows the gradual buildup of the larger warehouse with relatively smaller investments over a period of time, which provides a quicker path to return on investment (ROI) in the solution.
+This approach offers the benefit of starting small with independent departmental Data Marts and then connecting them via the DW bus using the conformed dimensions common to each star schema. This approach allows the gradual buildup of the larger warehouse with relatively smaller investments over a period of time, which provides a quicker path to return on investment (ROI) in the solution.
 
 ### Top-Down Architectural Design by Dr. Bill Inmon 
 
