@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. These triggers are more often associated with migration than modernization."
     - content: "The desire to deliver apps and features faster, address security issues caused by outdated code, and enable new business opportunities"
       isCorrect: true
-      correctExplanation: "Correct. Modernization triggers include wanting to deliver applications and features faster to users and customers, addressing security issues caused by legacy or outdated code, and enabling new business opportunities with innovative applications."
+      explanation: "Correct. Modernization triggers include wanting to deliver applications and features faster to users and customers, addressing security issues caused by legacy or outdated code, and enabling new business opportunities with innovative applications."
     - content: "The need to maintain some apps on-premises, the desire to be an industry disruptor, the need for lift and shift"
       isCorrect: false
       explanation: "Incorrect. These may factor into the migration or modernization strategy, but they are not modernization triggers."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. Rehosting is a migration strategy, not a modernization strategy."
     - content: "Refactor"
       isCorrect: true
-      correctExplanation: "Correct. Refactoring involves moving an app to containers without changing the underlying logic of the code."
+      explanation: "Correct. Refactoring involves moving an app to containers without changing the underlying logic of the code."
   - content: "What are some of the challenges in today’s business environment that are driving the need for application migration and modernization?"
     choices:
     - content: "The need for a hybrid solution and the desire to future-proof LOB applications"
@@ -53,7 +53,7 @@ quiz:
       explanation: "Incorrect. These are not challenges in today’s environment."
     - content: "The speed of change and the need to maintain competitive advantage"
       isCorrect: true
-      correctExplanation: "Correct. In this digital era, keeping up with the speed of change in the business world is challenging as organizations push digital innovation beyond experimentation to drive competitive advantage."
+      explanation: "Correct. In this digital era, keeping up with the speed of change in the business world is challenging as organizations push digital innovation beyond experimentation to drive competitive advantage."
     - content: "The changing political climate and the need to protect intellectual property from theft"
       isCorrect: false
       explanation: "Incorrect. These are not trends in the business environment that are driving migration and modernization."
@@ -70,4 +70,4 @@ quiz:
       explanation: "Incorrect. Conversion to a SaaS solution may be the best strategy for some applications, it may not be appropriate for all applications in an organization’s portfolio."
     - content: "Application Portfolio Assessment"
       isCorrect: true
-      correctExplanation: "Correct. An Application Portfolio Assessment helps an organization better understand its existing application environment. The key focus of the assessment is an understanding of an application's business value and technical characteristics. These two dimensions will help define both the modernization technique to be used and the potential value to the business associated with the change."
+      explanation: "Correct. An Application Portfolio Assessment helps an organization better understand its existing application environment. The key focus of the assessment is an understanding of an application's business value and technical characteristics. These two dimensions will help define both the modernization technique to be used and the potential value to the business associated with the change."
