@@ -10,7 +10,7 @@ SQL Data Warehouse uses Massive Parallel Processing (MPP) to run queries across 
 
 ## Ingesting and Processing Data
 
-SQL Data Warehouse uses the Extract, Loads, and Transform (ELT) approach.  SQL Professionals will already be familiar with tools such as BCP and the SQL Bulk Copy API, but Data Engineers working with SQL Data Warehouse will learn the power of PolyBase that can load data very quickly. PolyBase is a technology that removes the complexity for Data Engineers to leverage big data ingestion and processing techniques by offloading complex calculations to the cloud.  Developers can use stored procedures, labels, views, and SQL to develop applications to make use of PolyBase. You can also use Azure Data Factory to perform the ingestion and processing of data.
+SQL Data Warehouse uses the Extract, Loads, and Transform (ELT) approach. SQL Professionals will already be familiar with tools such as BCP and the SQL Bulk Copy API, but Data Engineers working with SQL Data Warehouse will learn the power of PolyBase that can load data very quickly. PolyBase is a technology that removes the complexity for Data Engineers to leverage big data ingestion and processing techniques by offloading complex calculations to the cloud. Developers can use stored procedures, labels, views, and SQL to develop applications to make use of PolyBase. You can also use Azure Data Factory to perform the ingestion and processing of data.
 
 ## Querying Data
 
@@ -18,4 +18,4 @@ Data Engineers can use the familiar Transact-SQL to query the contents of a SQL 
 
 ## Securing Data
 
-SQL Data Warehouse supports both SQL Server authentication as well as Azure Active Directory.  For higher security environments, the Data Engineer can configure multi-factor authentication.  From a data perspective, SQL Data Warehouse supports both column-level and row-level security.
+SQL Data Warehouse supports both SQL Server authentication as well as Azure Active Directory. For higher security environments, the Data Engineer can configure multi-factor authentication. From a data perspective, SQL Data Warehouse supports both column-level and row-level security.

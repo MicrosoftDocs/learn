@@ -2,7 +2,7 @@ Azure Data Lake Storage Gen2 is easy to set up. It requires a **StorageV2 (Gener
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true)
 1. Click on **Create a resource** and navigate to **Storage**.
-1. In **Featured**, select **Storage account - blob, file, table, queue** as shown in the following screenshot.
+1. In **Featured**, select **Storage account - blob, file, table, queue** as shown in the following Screenshot.
 
     ![Screenshot of the Azure portal showing the Create a resource, Storage account in highlights.](../media/3-azure-portal.png)
 

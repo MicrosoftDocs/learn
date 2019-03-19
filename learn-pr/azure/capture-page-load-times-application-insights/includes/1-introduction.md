@@ -6,7 +6,7 @@ The app was first deployed to Azure a few months ago. No Application Performance
 
 This module will demonstrate how to enable Application Insights for an Azure web app without modifying its source code, and how to use it to capture information about page load times.
 
-## Learning Objectives
+## Learning objectives
 
 At the end of this module, you will be able to:
 

@@ -2,9 +2,9 @@ Microsoft Azure provides many data platform technologies to meet the needs of th
 
 ## Structured Data
 
-In relational database systems like Microsoft SQL Server, Azure SQL Database and Azure SQL Data Warehouse, the structure of the data is defined at design-time in the form of tables, meaning it is designed before any information is loaded into the system.  The data structure includes the relational model, table structure, column width, and data types.
+In relational database systems like Microsoft SQL Server, Azure SQL Database and Azure SQL Data Warehouse, the structure of the data is defined at design-time in the form of tables, meaning it is designed before any information is loaded into the system. The data structure includes the relational model, table structure, column width, and data types.
 
-Relational systems are slow to react to changes in data requirements because the structural database needs to change every time a data requirement change.  When new columns are added to tables, the data may also require a bulk update to all existing records to populate the new column throughout the table.  Relational systems typically leverage a querying language such as Transact SQL (T-SQL).
+Relational systems are slow to react to changes in data requirements because the structural database needs to change every time a data requirement change. When new columns are added to tables, the data may also require a bulk update to all existing records to populate the new column throughout the table. Relational systems typically leverage a querying language such as Transact SQL (T-SQL).
 
 ## Non-structured Data
 

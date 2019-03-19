@@ -39,4 +39,4 @@ quiz:
       explanation: "That is the correct answer. Once the master key and the database scoped credential is created, Mike should create an external data source that contains a url to the Blob location and the name of the database scoped credential."
     - content: "A physical table."
       isCorrect: false
-      explanation: "That is not the correct answer.  Mike must have an external data source and an external table before he can create a physical table."
+      explanation: "That is not the correct answer. Mike must have an external data source and an external table before he can create a physical table."

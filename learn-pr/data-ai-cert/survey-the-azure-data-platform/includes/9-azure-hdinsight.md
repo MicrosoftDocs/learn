@@ -18,11 +18,11 @@ Data Engineers can use Apache Hive to perform ETL operations on the data that is
 
 ## Processing Data
 
-In Hadoop, Data Engineers use Java and Python to process big data.  Mapper consumes input data, analyzes the data and emits tuples for further analysis by Reducer.  Reducer performs summary operations creating a smaller combined result set.  In Spark, streams are processed using Spark Streaming.  Data Engineers can use the 200 pre-loaded Anaconda libraries with Python for machine learning and can use GraphX for graph computations.  Developers can remotely submit and monitor jobs from Apache Spark.  Apache Storm supports common programming languages like Java, C#, and Python.
+In Hadoop, Data Engineers use Java and Python to process big data. Mapper consumes input data, analyzes the data and emits tuples for further analysis by Reducer. Reducer performs summary operations creating a smaller combined result set. In Spark, streams are processed using Spark Streaming. Data Engineers can use the 200 pre-loaded Anaconda libraries with Python for machine learning and can use GraphX for graph computations. Developers can remotely submit and monitor jobs from Apache Spark. Apache Storm supports common programming languages like Java, C#, and Python.
 
 ## Querying Data
 
-In Hadoop, there are two languages, Pig and HiveQL.  In Apache Spark, Data Engineers use Spark SQL.
+In Hadoop, there are two languages, Pig and HiveQL. In Apache Spark, Data Engineers use Spark SQL.
 
 ## Securing Data
 

@@ -2,7 +2,7 @@ Azure Data Lake Storage Generation 2 (Gen2) is a data lake solution explicitly d
 
 You want to show Contoso the different ways in which you can upload data into Azure Data Lake Storage Gen2. This will include examples of how you can perform ad-hoc data loads to integrating the upload capability into applications. You will also demonstrate how you can use Azure Data Factory to copy data into Azure Data Lake Gen 2.
 
-## Learning Objectives
+## Learning objectives
 
 In this module you will:
 
