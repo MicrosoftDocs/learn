@@ -18,7 +18,7 @@ abstract: |
   - Create a Python script that uses the Azure Machine Learning service's AutoML to recommend a model
   - Test the recommended model from your Python script
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/automate-model-selection-with-azure-automl-badge.svg
 levels:
 - beginner
 roles:

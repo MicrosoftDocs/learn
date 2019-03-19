@@ -23,7 +23,7 @@ abstract: |
   - Score new data with the deployed model
   - Manage and monitor models
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/register-and-deploy-model-with-amls-badge.svg
 levels:
 - beginner
 roles:
