@@ -20,7 +20,7 @@ abstract: |
   - Learn where you can get more resources on using HyperDrive
   - Submit the model, monitor the run, and retrieve the results
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/data-ai/train-local-model-with-azure-mls-badge.svg
 levels:
 - beginner
 roles:
