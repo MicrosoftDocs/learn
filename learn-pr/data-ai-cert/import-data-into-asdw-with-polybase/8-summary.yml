@@ -40,4 +40,3 @@ quiz:
     - content: "A physical table."
       isCorrect: false
       explanation: "That's not the correct answer. Mike must have an external data source and an external table before he can create a physical table."
-
