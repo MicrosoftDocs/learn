@@ -1,17 +1,22 @@
-[Introduce the learner to the team, personas, and challenges we'll follow throughout the learning path.]
 
-[Make the case for an organization that has challenges around communication, is slow to release, releases with too many bugs, and tackles security and compliance either too late in the process or not at all.]
+# Introduction
+Do you want to improve your release process? Maybe you want to increase the frequency of your releases. Maybe you want to increase the quality of your software. Maybe you want to get rid of some manual processes and move toward a more automated approach. Whatever your goals, Azure DevOps can help.
 
-[This is an opportunity to connect with the learner. Tell a story that the learner can relate to - either habits they're doing, have seen others do, or can imagine others doing.]
+## What is DevOps
+DevOps brings together people, processes and products, automating software delivery to provide continuous value to your users. 
 
-[Mention that someone on the team has had experience bringing DevOps into his/her prior team. He/she offers to facilitate a discussion these five areas:
+## What is Azure DevOps
+Azure DevOps is a suite of services that spans the entire DevOps lifecycle. Azure DevOps starts with planning and goes all the way through deployment and monitoring. If you already have some pieces in place, you can select which Azure DevOps services you want to use and integrate them with existing tools, such as Jenkins. Azure DevOps consists of: 
 
-* Process
-* Technology
-* Culture
-* Measurement
-* Outcomes
+* Azure Boards. Track your work with Kanban boards, backlogs, team dashboards, and custom reporting.
+* Azure Pipelines. Implement CI/CD with cloud-hosted pipelines for Linux, Windows and macOS.
+* Azure Repos. Get unlimited private Git repo hosting and support for TFVC.
+* Azure Test Plans. Get end-to-end traceability for your applications.
+* Azure Artifacts. Create and share Maven, npm, and NuGet package feeds.
 
-Idea is to identify & analyze current processes (what's currently done, what's working, what's not) and then make recommendations on how to improve and where to start.]
+Remember that you can use all of these services together or select the ones you want and integrate them with your existing toolset. 
 
-[Have the learner get out a sheet of paper and make notes on their team's processes as they follow along. At the end, they'll be able to take our DevOps assessment so they can begin to make recommendations for their own org.]
+Learn more about Azure DevOps at https://azure.com/devops.
+
+## The Azure DevOps Learning Track
+The Azure DevOps Learning Track is an interactive set of modules that will show you how to use the Azure DevOps services. You’ll work with a fictitious team at Tailspin, a game company, as they use Azure DevOps to evaluate and improve their software release process. Let’s get started with Unit 1, Meet the Team.

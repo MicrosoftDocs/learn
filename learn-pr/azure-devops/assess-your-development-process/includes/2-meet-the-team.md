@@ -1,24 +1,42 @@
-[Introduce the learner to the fictitious team they'll follow throughout. Break it down into dev, QA, and ops teams. Mention the size of each team, give names to the major players (team leads and so on), and describe a few interesting characteristics about the team.]
+# Meet the Team
+**Goal**: The goal of this unit is to fill out and submit the Microsoft DevOps Self-Assessment test.
 
-[Don't belabor things here, as folks don't necessarily care about a team that doesn't actually exist. But frame it to say that we'll be following this team through their journey, so it's good to know a little bit about them.]
+Tailspin is a game company with a number of apps. All of them are deployed to an on-prem datacenter. One of the company’s games is a product called Tailspin Galaxies. It’s a .NET Core app written in C# that’s deployed to Linux. One team works on the application itself and another team, the one you’ll be working with, is responsible for the leader board. 
 
-### What applications does the team build?
+Here's what the leaderboard looks like right now.
 
-[Here we identify existing applications, services and hosting infrastructure.]
+[INSERT IMAGE]
 
-[Say that the team has a number of apps that they build on and maintain. Some apps are old and are built using older build tools. Some are newer and are built against more modern tooling. Some apps are internal and are external. Everything is deployed to an on-prem datacenter.]
+Here are your team members.
 
-[Describe and show a screenshot of our reference application - the external app that the team wants to focus on first. Explain that it's a .NET Core app written in C# that's deployed to Linux.]
+[INSERT FACES WHEN THEY'RE AVAILABLE]
 
-### What are the team's biggest challenges?
+**Bob**. Bob is a developer who’s been working with computers since he was a kid. His hobby is working on open source projects with other programmers from all over the world.
 
-* Slow to release
-* Release with too many bugs
-* Not shipping the right features to customers
+**Carol**. Carol is in QA. She’s calm, which helps with some temperamental developers. She’s good at organizing and setting priorities and lives to find edge cases.
 
------
+**Ted**. Ted is in operations. He likes practical solutions and he’s very cautious (although some people might use the word “paranoid”), which makes sense because he’s the person who gets the 3AM call when something goes wrong.
 
-Grab bag to place elsewhere:
+**Alice**. Alice is new. She just joined Tailspin as a developer because she likes games and she thought a smaller company would have lots of opportunity for innovation. She’s a big fan of DevOps.
 
-* That's painful because it's difficult to scale up or down to accommodate changes in user traffic.
-* Perhaps identify other pain points (things that typically drive cloud migration).
+## Good Morning
+The team’s product manager has called everyone into a meeting and he’s in a bad mood. The game’s leaderboard was just released with several new features and he showed it at a Meetup group. Players’ reactions were disappointing, to say the least. He reads off a list of the top problems:
+
+* Some features only work correctly for some game modes.
+* Updating the board takes too long, even with a small number of players.
+* Multiple scores per user show up as multiple users.
+* The new ranking feature returns incorrect results.
+* There’s no way to group scores according to a specific date or game session.
+* It took months to get the new release (and it's broken).
+
+He demands, “How long before these problems are fixed?”
+
+Bob thinks: I bet it takes me a month to write that code.
+
+Carol thinks: It’ll take me at least a week to test this and I can’t start until Bob is finished and he always wants to sneak in new code. 
+
+Ted thinks: It will take me at least a week to set up the environments and deploy this to production. I can’t start until Carol is finished and she’s never willing to call something a release candidate.
+
+Alice thinks: I should have taken that job at Microsoft.
+
+Bob looks around at his team mates and says, “We’ll get back to you.”
