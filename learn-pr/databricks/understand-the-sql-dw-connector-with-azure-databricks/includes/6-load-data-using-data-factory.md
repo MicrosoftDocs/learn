@@ -18,7 +18,7 @@ The steps in this unit guide you on how to load data from a table inside Azure S
 
     ![Select Load Data](../media/sql-dw-load-data-link.png)
 
-1  On Load Data blade, select Azure Data Factory. (Fig. 10.2.2)
+1. On Load Data blade, select Azure Data Factory. (Fig. 10.2.2)
 
     ![Select Azure Data Factory in the Load Data blade](../media/sql-dw-load-data-adf.png)
 

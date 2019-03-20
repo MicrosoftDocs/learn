@@ -11,7 +11,7 @@ metadata:
   #ms.learn-contact: smmark
 title: Choose the Data Science service in Azure you need
 summary: Choose the Data Science service in Azure you need
-cardDescription: Test
+cardDescription: In this module, you will learn about Azure services that support the Data Science process.
 abstract: | 
   In this module, you will:
   - Differentiate each of the Azure machine learning products
