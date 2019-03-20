@@ -24,7 +24,7 @@ Improve the performance of an API by adding a caching policy in Azure API Manage
 
 ## Summary
 
-API Management policies are configurable modules that can be attached to APIs to change their behaviors. Policies can do things like cache responses, transform documents and values, call webhooks for notification or audit purposes, and retry requests in the event of transient failures. This module will use policies to rate-limit API consumers in order to control load.
+API Management policies are configurable modules that can be attached to APIs to change their behaviors. Policies can do things like cache responses, transform documents and values, call webhooks for notification or audit purposes, and retry requests in the event of transient failures. This module will use policies to enable caching in order to improve API performance under load.
 
 ## Learning objectives
 
@@ -60,23 +60,20 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
 
 1. **Choose the right API Management policy**
 
-    List the content that will enable the learner to *subtask*:
-
-    - Identify the architecture of APIM and where policies execute
-        - Define an API gateway in API Management
-        - How an API gateway intercedes between an API and a consumer
-        - Caching in an API gateway
+    - Identify the role of policies in APIM and their overall capabilities
+        - Cross-cutting concerns and things you don't necessarily want to code yourself - the boring business of APIs, as opposed to the business logic
+        - What kinds of problems would you solve with policy? What kinds of problems should be solved in your own API code?
     - Identify the right policy for a task
+        - List the high-level groups of policies that are available and take a closer look at a handful of them (don't drain the documentation)
         - Using the API Management policy documentation
         - Using the Azure portal UI
     - Choose a policy scope
         - Define these scopes: global, product, API, operation.
+        - Portal screenshots and instructions about where to find the editor for the policy document at each scope
     - Choose from inbound, backend, outbound, and on-error tags
         - Explain when policies within each of these tags are applied
 
 1. **Knowledge check**
-
-    What types of questions will test *learning objective*?
 
     Describe a scenario which requires policies to modify the behavior of an API. For example, a scenario that requires throttling.
 
@@ -85,8 +82,6 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
     - Question type: Would you place the policy in the inbound, backend, outbound, or on-error tag?
 
 1. **Write a caching policy**
-
-    List the content that will enable the learner to *subtask*:
 
     - Write XML for a policy
         - How to use the templates provided by the Azure portal
@@ -105,17 +100,14 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
     List the steps which apply the learning content from previous unit:
 
     1. Clone the API code in the Cloud Shell
-    1. Create an API in the Azure App Service
-    1. Configure the API for local git deployment
-    1. Push the API code to the Azure App Service
+    1. Deploy to App Service
     1. Create an API Management instance
     1. Add the new API to API Management
-    1. Add an operation to the API
     1. Test the API
-    1. Add a **&lt;cache-lookup&gt;** policy to the **&lt;inbound&gt;** tag
-    1. Add **&lt;vary-by-header&gt;** and **&lt;vary-by-parameter&gt;** tags
-    1. Add a **&lt;cache-store&gt;** policy to the **&lt;outbound&gt;** tag
-    1. Test the policy
+    2. Add a **&lt;cache-lookup&gt;** policy to the **&lt;inbound&gt;** tag
+    3. Add **&lt;vary-by-header&gt;** and **&lt;vary-by-parameter&gt;** tags
+    4. Add a **&lt;cache-store&gt;** policy to the **&lt;outbound&gt;** tag
+    5. Test the policy. Make sure this makes it clear that APIM is actually successfully caching responses and skipping extraneous calls to the backend API.
 
 1. **Summary**
 
@@ -125,6 +117,8 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
 
 - This module uses caching as a vehicle for introducing policy more generally. The prerequistes only assume the most basic of knowledge around publishing an API in APIM.
 - Policy expressions are not covered in this module.
+- Use zipdeploy to quickly deploy to app service instead of doing the git dance. See https://docs.microsoft.com/en-us/learn/modules/instrument-web-app-code-with-application-insights/5-instrument-the-application for an example.
+- The sample code should be an ASP.NET Core web api and should use Swashbuckle/Swagger to publish an OpenAPI spec that can then be consumed in APIM. At least one operation on the API should be interesting enough to showcase the capabilities of APIM caching policies (varying by param, etc.)
 
 Reference links:
 
