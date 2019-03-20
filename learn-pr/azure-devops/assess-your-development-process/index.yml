@@ -33,11 +33,7 @@ units:
 - learn.azdo-assess-your-development-process.1-introduction
 - learn.azdo-assess-your-development-process.2-meet-the-team
 - learn.azdo-assess-your-development-process.3-assess-processes
-- learn.azdo-assess-your-development-process.4-assess-technology
-- learn.azdo-assess-your-development-process.5-assess-culture
-- learn.azdo-assess-your-development-process.6-assess-performance
-- learn.azdo-assess-your-development-process.7-assess-outcomes
-- learn.azdo-assess-your-development-process.8-devops-assessment
-- learn.azdo-assess-your-development-process.9-summary
+- learn.azdo-assess-your-development-process.4-devops-assessment
+- learn.azdo-assess-your-development-process.5-summary
 badge:
   uid: learn.azdo-assess-your-development-process.badge

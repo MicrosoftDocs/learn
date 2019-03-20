@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo-assess-your-development-process.4-assess-technology
-title: Assess your technology choices
+uid: learn.azdo-assess-your-development-process.5-summary
+title: Summary
 metadata:
-  title: Assess your technology choices
+  title: Summary
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-assess-technology.md)]
+  [!include[](includes/5-summary.md)]
