@@ -4,7 +4,7 @@ Finally, you'll use the Azure DevOps environment to follow up on the results fro
 
 In the real world, website users rarely stay on one page. To make your test scenarios more realistic, you need to include multiple URLs and, if applicable, other options like query string tests. You can use the Azure DevOps Portal to configure performance tests that include these options, but it can be time consuming to configure such tests, and you might still end up with a set of tests that don't correlate closely with how users actually use your site.
 
-In this step, you'll record a sample user session by using browser developer tools and then save the session as an HAR file. The HAR file will include all the pages, links, URLs, and queries from the session. After you record the session, you'll start a new test that will use the HAR file as a test script.
+In this step, you'll record a sample user session by using browser developer tools and then save the session as a HAR file. The HAR file will include all the pages, links, URLs, and queries from the session. After you record the session, you'll start a new test that will use the HAR file as a test script.
 
 1. In Chrome, open a new tab, select the ellipsis button (...), select **More tools**, and then select **Developer Tools**. If you're using Microsoft Edge, open a new tab, select the ellipsis button (...), select **Developer Tools**, and then select the **Network** tab.
 1. Make sure the recording button is on (it should be red) and select the **Preserve log** check box. (Chrome only.)

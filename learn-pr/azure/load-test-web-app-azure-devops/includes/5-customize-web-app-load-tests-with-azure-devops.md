@@ -9,11 +9,11 @@ By using Azure DevOps, you can:
 - Rerun tests and configure new tests that use additional test parameters.
 
 ### Viewing tests
-To use the Azure DevOps Portal to view tests that you've run from the Azure portal, you open a test, and then, in the **Essentials** section, select the **Azure DevOps Account** link to open a new browser tab. If used the same sign in details for the Azure portal and Azure DevOps, selecting this link will automatically sign you in to the Azure DevOps Portal.
+To use the Azure DevOps Portal to view tests that you've run from the Azure portal, you open a test, and then, in the **Essentials** section, select the **Azure DevOps Account** link to open a new browser tab. If you used the same sign in details for the Azure portal and Azure DevOps, selecting this link will automatically sign you in to the Azure DevOps Portal.
 
 ![Link to start Azure DevOps](../media/5-launch-devops.png)
 
-If this is the first time you've opened the Azure DevOps dashboard to view the tests, you'll need to select your Azure DevOps organization and then create a new project. In any project, the **Load test** section under **Test Plans** will list the test runs that you initiated from the Azure portal.
+If this is the first time you've opened the Azure DevOps dashboard to view the tests, you'll need to select your Azure DevOps organization and then create a new project. In any project, the **Load test** section under **Test Plans** will list the test runs that you initiated from the Azure portal:
 
 ![Load tests in Azure DevOps](../media/5-devops-load-test.png)
 >[!NOTE]
@@ -41,21 +41,22 @@ The Azure DevOps Portal provides more test options than the Azure portal.
 - **Warm-up duration**. You can specify a period of time between the start of a test run and the start of data recording. You might use this option together with the step load pattern so that test results only start recording when the number of virtual users has reached a certain load level. Setting a warm-up duration might also be useful if you're trying to identify the effect of server-side issues, like caching.
 
 ### Using recorded user actions in tests
-So far, you've tested with specific URLs and assumed that these URLs reflect your users' typical interactions with your app. But there's another way. You can record all the browser clicks and scrolling from actual user sessions and then use these recordings as basis for your performance testing. This approach can provide more realistic test results, especially if you can involve real users in the process. To use this approach, you need to record *HAR (HTTP Archive)* files.
+So far, you've tested with specific URLs and assumed that these URLs reflect your users' typical interactions with your app. But there's another way. You can record all the browser clicks and scrolling from actual user sessions and then use these recordings as a basis for your performance testing. This approach can provide more realistic test results, especially if you can involve real users in the process. To use this approach, you need to record *HAR (HTTP Archive)* files.
 
-To record an HAR file, you need to first configure your browser. For example, in Chrome, you select F12 to open the developer tools, and then, on the **Network** tab, set the recording button to on and select the **Preserve log** box.
+To record a HAR file, you need to first configure your browser. For example, in Chrome, you select F12 to open the developer tools, and then, on the **Network** tab, set the recording button to on and select the **Preserve log** box:
 
-![Record an HAR in Chrome](../media/5-chrome-devtools-settings.png)
+![Record a HAR in Chrome](../media/5-chrome-devtools-settings.png)
 
 You can now work through a user scenario. Start from the default URL for your app and then follow the actions that a typical user would perform. In the Contoso Rentals scenario, for example, this might involve browsing for a service, checking terms, conditions, and rental locations, and then placing an order.
 
-To finish the recording in Chrome, open the developer tools, set the recording button to off, in the shortcut menu for the URL list, select **Save as HAR with content**, and then save the file.
+To finish the recording in Chrome, open the developer tools and set the recording button to off. In the shortcut menu for the URL list, select **Save as HAR with content**, and then save the file:
 
 ![Save HAR file in Chrome](../media/5-chrome-save-har-file.png)
 
-To use HAR files in testing, start a new HTTP Archive-based test and import your HAR file. After the import finishes, when you open the test all the URLs, headers, and QueryString parameters that were saved to the HAR file will be shown.
+To use HAR files in testing, start a new HTTP Archive-based test and import your HAR file. After the import finishes, when you open the test, all the URLs, headers, and QueryString parameters that were saved to the HAR file will be shown:
 
 ![Imported HAR file in performance test](../media/5-har-test.png)
+
 You then specify the run duration and the geo-location to use and run the test.
 
 In the next unit, you'll open your existing tests in the Azure DevOps Portal and configure new tests that use the extra features available in the Azure DevOps environment.

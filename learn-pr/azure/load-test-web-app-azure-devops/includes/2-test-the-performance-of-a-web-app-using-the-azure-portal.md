@@ -23,7 +23,7 @@ The Azure DevOps Portal provides more control over your performance testing and 
 Azure DevOps includes these features:
 
 - Multiple URLs can be tested concurrently.
-- Requests can be configured to use a specific user-agent string.
+- Requests can be configured to use a specific user agent string.
 - Tests can be configured to simulate a specific mix of user browser types.
 - The user load during a test can be increased gradually or stepwise.
 - Recorded user sessions can be replayed as the test parameters.
@@ -34,17 +34,17 @@ The high-level steps to configure and run a performance test by using the Azure 
 
 ### 1. Open your web app
 
-Open your web app by using the Azure portal, and then open the performance test page.
+Open your web app in the Azure portal, and then open the performance test page:
 
 ![Configuring a new performance test](../media/2-azure-portal-new-performance-test.png)
 
 ### 2. Link to your Azure DevOps account
 
-If you're running the first test for the web app, set up a link to your Azure DevOps organization.
+If you're running the first test for the web app, set up a link to your Azure DevOps organization:
 
 ![Set your Azure DevOps organization](../media/2-set-organization.png)
 
-If you don't have an organization, select **Create new** and then select your Azure subscription.
+If you don't have an organization, select **Create new** and then select your Azure subscription:
 
 ![Create an Azure DevOps organization](../media/2-name-organization.png)
 
@@ -73,7 +73,7 @@ After you've configured your test, simply select **Run test**. Your test is plac
 
 You might want to repeat your test several times in case the first results were not representative. You should also repeat your test after you make changes to your app.
 
-To repeat a test from the Azure portal, simply open the test and click **Rerun**. The test will run again with the same parameters.
+To repeat a test from the Azure portal, simply open the test and select **Rerun**. The test will run again with the same parameters.
 
 > [!NOTE]
 > To compare the results of multiple test runs, you need to use Azure DevOps. You'll do this in a later unit.
