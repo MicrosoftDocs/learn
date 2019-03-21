@@ -138,13 +138,13 @@ You can modify each section by selecting the **Edit** link provided near each se
 
 If all details are correct, click the **Next** button located at the bottom of the page to start deployment.
 
-     ![Screenshot of the Summary tab](../media/sql-dw-load-data-summary.png)
+   ![Screenshot of the Summary tab](../media/sql-dw-load-data-summary.png)
 
 ## Monitor deployment
 
 The Deployment tab helps you retrieve the status of various deployment activities. You'll see the status update for each of the configured steps for the new pipeline as it deploys.
 
-    ![Screenshot of the Deploying section of the Deployment tab](../media/sql-dw-load-data-deploying.png)
+   ![Screenshot of the Deploying section of the Deployment tab](../media/sql-dw-load-data-deploying.png)
 
 1. After validation passes, select the **Monitor** link on top of the page. This displays the Data Factory pipeline monitoring page for the new OneTime pipeline you created.
 
@@ -172,6 +172,6 @@ We can verify this copy activity by checking that the table was created in SQL D
 
 Alternately, you may execute the following query in a new query window:
 
-    ```sql
+ ```sql
     SELECT * FROM [dbo].[AnalyzeCampaigns]
-    ```
+ ```
