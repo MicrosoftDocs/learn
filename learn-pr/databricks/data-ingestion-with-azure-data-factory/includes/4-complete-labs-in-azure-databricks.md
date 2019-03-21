@@ -1,4 +1,4 @@
-You now have your storage account and data factory instance up and running. Switch to your Databricks workspace to complete the rest of the workflow. We'll use a sample dataset to create a Data Factory pipeline and use sample notebooks to transform and analyze the data.
+You now have your storage account and data factory instance up and running. Switch to your Databricks workspace to complete the rest of the workflow. We'll use a sample dataset to create a Data Factory pipeline and use sample notebooks to transform and analyze the data. 
 
 > [!NOTE]
 > To complete the following procedures, you must have already deployed your Databricks workspace in your Azure portal.
