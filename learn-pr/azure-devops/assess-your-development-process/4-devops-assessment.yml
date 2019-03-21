@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo-assess-your-development-process.4-devops-assessment
-title: Take the DevOps Self-Assessment
+title: Exercise - Take the DevOps Self-Assessment
 metadata:
-  title: Take the DevOps Self-Assessment
+  title: Exercise - Take the DevOps Self-Assessment
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 20
 content: |
   [!include[](includes/4-devops-assessment.md)]

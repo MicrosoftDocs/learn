@@ -14,8 +14,8 @@ summary: Prepare for the DevOps Self-Assessment by examining your existing proce
 abstract: |
   In this module, you will:
   - Identify your existing processes and capabilities
-  - Analyze which processes work and which don't
-  - Take the DevOps Self-Assessment to build a report your team can use to recommend improvements
+  - Take the DevOps Self-Assessment to find common ground with your team
+  - See where your team fits in the DevOps maturity model
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
