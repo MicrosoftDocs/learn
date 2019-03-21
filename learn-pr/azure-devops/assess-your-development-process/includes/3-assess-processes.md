@@ -21,4 +21,6 @@ When she looks at her pile of notes, Alice knows she needs to organize all this 
 
 "Have any of you ever taken the Microsoft DevOps Self-Assessment?" Bob rolls his eyes, Carol sighs, and Ted says, "We don't need more paperwork."
 
-"I get it. Leave it to me." Glad to let the newbie handle it, everyone heads back to work.
+Alice says, "I get it. Leave it to me."
+
+Glad to let the newbie handle it, everyone heads back to work.

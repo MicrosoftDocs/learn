@@ -1,4 +1,4 @@
-As you can see, Alice and her team face a number of challenges. Although releases happen, Alice thinks they can happen much for frequently and efficiently. Plus, Alice hates working longer hours when it's not necessary.
+As you can see, Alice and her team face a number of challenges. Although releases happen, Alice feels they can happen much more frequently and efficiently. Plus, Alice hates working longer hours when it's not necessary.
 
 Alice plans to bring her findings to the team. Perhaps that will help convince them that it's at least worth testing out a DevOps approach to finish up work on the _Space Game_ web site.
 
