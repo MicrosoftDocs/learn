@@ -1,4 +1,4 @@
-A **data lake** is a repository of data that is stored in its natural format, usually as blobs or files. **Azure Data Lake Storage** is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. 
+A data lake is a repository of data that is stored in its natural format, usually as blobs or files. Azure Data Lake Storage is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. 
 
 Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. Data Lake Storage Gen2 builds on Azure Blob storage capabilities to optimize it specifically for analytics workloads. This integration enables analytics performance, the tiering and data lifecycle management capabilities of Blob storage, and the high-availability, security, and durability capabilities of Azure Storage.
 
@@ -14,7 +14,7 @@ A benefit of Data Lake Storage Gen2 is that you can treat the data as if it's st
 
 ### Security 
 
-Data Lake Storage Gen2 supports Access control lists (ACLs) and Portable Operating System Interface (POSIX) permissions. You can set permissions at a directory level or file level for the data stored within the Data Lake. This security is configurable through technologies such as Hive and Spark, or utilities such as Azure Storage Explorer. All data that is stored is encrypted at rest by using either Microsoft or customer-managed keys.
+Data Lake Storage Gen2 supports access control lists (ACLs) and Portable Operating System Interface (POSIX) permissions. You can set permissions at a directory level or file level for the data stored within the data lake. This security is configurable through technologies such as Hive and Spark, or utilities such as Azure Storage Explorer. All data that is stored is encrypted at rest by using either Microsoft or customer-managed keys.
 
 ### Performance
 
@@ -22,4 +22,4 @@ Azure Data Lake Storage organizes the stored data into a hierarchy of directorie
 
 ### Data redundancy
 
-Data Lake Storage Gen2 takes advantage of the Azure Blob replication models that provide data redundancy in a single data center with Locally redundant storage (LRS), or to a secondary region by using the Geo-redundant storage (GRS) option. This feature ensures that your data is always available and protected if catastrophe strikes.
+Data Lake Storage Gen2 takes advantage of the Azure Blob replication models that provide data redundancy in a single data center with locally redundant storage (LRS), or to a secondary region by using the Geo-redundant storage (GRS) option. This feature ensures that your data is always available and protected if catastrophe strikes.
