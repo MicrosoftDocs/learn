@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo-assess-your-development-process.7-assess-outcomes
-title: Assess your outcomes
+uid: learn.azdo-assess-your-development-process.5-summary
+title: Summary
 metadata:
-  title: Introduction
+  title: Summary
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-  [!include[](includes/7-assess-outcomes.md)]
+  [!include[](includes/5-summary.md)]

@@ -1,17 +1,11 @@
-[Introduce the learner to the team, personas, and challenges we'll follow throughout the learning path.]
+Do you want to improve your release process? Maybe you want to increase the frequency of your releases. Maybe you want to increase the quality of your software. Maybe you want to get rid of some manual processes and move toward a more automated approach. Whatever your goals, Azure DevOps can help.
 
-[Make the case for an organization that has challenges around communication, is slow to release, releases with too many bugs, and tackles security and compliance either too late in the process or not at all.]
+In this and future modules, you'll join a team at Tailspin Toys, a fictitious video game company, as they use Azure DevOps to evaluate and improve their software release process.
 
-[This is an opportunity to connect with the learner. Tell a story that the learner can relate to - either habits they're doing, have seen others do, or can imagine others doing.]
+## Learning objectives
 
-[Mention that someone on the team has had experience bringing DevOps into his/her prior team. He/she offers to facilitate a discussion these five areas:
+In this module, you will:
 
-* Process
-* Technology
-* Culture
-* Measurement
-* Outcomes
-
-Idea is to identify & analyze current processes (what's currently done, what's working, what's not) and then make recommendations on how to improve and where to start.]
-
-[Have the learner get out a sheet of paper and make notes on their team's processes as they follow along. At the end, they'll be able to take our DevOps assessment so they can begin to make recommendations for their own org.]
+- Identify your existing processes and capabilities
+- Take the DevOps Self-Assessment to find common ground with your team
+- Discover where your team fits in the DevOps maturity model
