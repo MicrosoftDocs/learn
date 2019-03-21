@@ -21,7 +21,7 @@ quiz:
     - content: "It helps you think about your existing processes and where you fit in the DevOps maturity model."
       isCorrect: true
       explanation: "Before you can improve you must understand where you are today."
-    - content: "It helps you gain official DevOps accredidation."
+    - content: "It helps you gain official DevOps accreditation."
       isCorrect: false
       explanation: "Consider your team and your processes &mdash; where do you fit in the DevOps maturity model?"
     - content: "It's just extra paperwork."
