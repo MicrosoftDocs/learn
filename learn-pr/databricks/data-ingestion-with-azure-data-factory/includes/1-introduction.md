@@ -7,5 +7,5 @@ Your team decides to use Azure Data Factory and Azure Databricks to ingest, tran
 In this module, you'll:
 
 - Use Azure Data Factory to ingest data and create a Data Factory pipeline.
-- Use Copy activities within Data Factory to copy data from one location to another.
+- Use copy activities within Data Factory to copy data from one location to another.
 - Use Data Factory to direct data transformations by using a Databricks notebook activity.
