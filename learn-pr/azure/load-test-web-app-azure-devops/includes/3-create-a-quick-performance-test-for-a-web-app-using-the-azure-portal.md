@@ -1,10 +1,10 @@
-During app development, it can be helpful to run quick load tests to help you identify code or other issues that might impact on your users' experience. In this exercise, you'll deploy a basic version of the **Contoso Costume Rentals** app, and then configure and run a test using the Azure portal. You'll then modify the app, by adding some media, and then rerun your test to see if this change has had any effect on the app's performance.
+During app development, running quick load tests can help you identify code issues or other issues that might affect your user experience. In this exercise, you'll deploy a basic version of the Contoso Costume Rentals app. You'll then configure and run a test by using the Azure portal. Finally, you'll modify the app by adding some media and then rerun the test to see if the change has any effect on the app's performance.
 
 [!include[](../../../includes/azure-free-trial-note.md)]
 
 ## Create an Azure DevOps account
 
-You'll need a DevOps account for the exercises in this module. Skip this step if you already have a DevOps account associated with your Azure account.
+You need an Azure DevOps account for the exercises in this module. Skip this step if you already have an Azure DevOps account associated with your Azure account.
 
 1. Go to https://dev.azure.com, and sign up for a DevOps account (if you don't already have one); use your Azure account as login. ***Do not*** create a new organization.
 
