@@ -4,11 +4,11 @@ The team that you'll be working with builds web sites to support new game titles
 
 _Space Game_'s web site is a .NET Core app written in C# that's deployed to Linux. The web site isn't finished yet, but here's what it looks like right now.
 
-![The Space Game web site](../media-draft/space-game-top.png)
+![The Space Game web site](../media-draft/2-space-game-top.png)
 
 And here's what the leaderboard looks like.
 
-![The Space Game leaderboard](../media-draft/space-game-leaderboard.png)
+![The Space Game leaderboard](../media-draft/2-space-game-leaderboard.png)
 
 You can filter the leaderboard by mode or by game map. You can also click on a player name to see his or her profile and game achievements.
 
