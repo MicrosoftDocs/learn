@@ -11,15 +11,10 @@ The team decides to go to a coffee shop to relax and have an informal discussion
 Over coffee, Alice listens and tries to take notes. There's a lot of information and it's not organized. Her overall thoughts about the team are:
 
 * They use a waterfall approach. Management sets the priorities. Developers write code and hand off to QA. QA tests and then hands off to ops for deployment.
-
 * There's no clear definition of what "done" means. Each team member has his or her own definition.
-
 * Some code is in a centralized version-control system. Many tools and scripts exist only on network file shares.
-
 * There are a lot of manual processes.
-
 * Communication is haphazard and depends on email, Word docs, and spreadsheets.
-
 * Feedback is also infrequent and inconsistent.
 
 When she looks at her pile of notes, Alice knows she needs to organize all this information so she can evaluate it. She's convinced that a DevOps approach will solve many of the team's problems, but she needs a way to present her case to the team.
