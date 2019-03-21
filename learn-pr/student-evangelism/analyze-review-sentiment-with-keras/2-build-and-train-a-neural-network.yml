@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-review-sentiment-with-keras.build-and-train-a-neural-network
+title: Build and Train a Neural Network
+metadata:
+  title: Build and Train a Neural Network
+  description: Build and Train a Neural Network
+  ms.date: 02/24/2019
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-build-and-train-a-neural-network.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Based on the first chart you created ('Training and Validation Accuracy'), would you recommend increasing the number of training epochs, decreasing it, or leaving it the same?"
+    choices:
+    - content: "Increasing the number of training epochs"
+      isCorrect: false
+      explanation: "The chart shows validation accuracy leveling off after only 2 epochs. Once validation accuracy levels off, a continued increase in training accuracy indicates overfitting. Since we don't want to overfit the model, we wouldn't want to train the model further by adding more epochs."
+    - content: "Decreasing the number of training epochs."
+      isCorrect: true
+      explanation: "Because validation accuracy leveled off after only 2 epochs, we can tell that we need fewer than 5 to get our best (and least overfit) result."
+    - content: "Leaving 5 training epochs"
+      isCorrect: false
+      explanation: "You can see that the validation accuracy leveled off after only 2 epochs. Once validation accuracy levels off, a continued increase in training accuracy indicates overfitting. Since we don't want to overfit the model, we don't want as many epochs."

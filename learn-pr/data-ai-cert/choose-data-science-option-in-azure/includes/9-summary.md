@@ -1,0 +1,3 @@
+In this module, we discussed each of the products available for machine learning on Azure. They key takeaway is how to differentiate each of them because each product can be utilized in different ways.
+
+Although many of these products provide similar tools, their functionalities vary for example, some of them are meant to be learning tools, while others are more meant for professional use. Our hope is that, now, you can identify which tools are best for you and what it can do for you in your machine learning practice. In the following module, we briefly discuss what has been covered in this course to verify your understanding of the topics explained.

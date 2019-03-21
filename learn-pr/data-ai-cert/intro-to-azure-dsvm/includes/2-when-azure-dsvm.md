@@ -1,0 +1,3 @@
+Data scientists typically need to install and configure a variety of software needed for machine learning development. Once created, these environments frequently need to be reconfigured for additional data science projects. The Azure Data Science Virtual Machines (DSVM) makes it easy to maintain consistency in the environments in which you are working.
+
+Additionally, each DSVM provides code samples to help you learn about Microsoft on-premises and Azure-based machine learning services. Scripts are installed that demonstrate how to use SQL Server/Machine Learning Server, the Azure Machine Learning Service, Cognitive Services, and more.

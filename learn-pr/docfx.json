@@ -67,6 +67,16 @@
                 "dest": "modules"
             },
             {
+                "src": "student-evangelism",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "wwl-mba",
                 "files": [
                     "**/*.yml"

@@ -1,8 +1,8 @@
-Let's examine three use cases for leveraging an Azure Data Lake Store.
+Let's examine three use cases for using an Azure Data Lake Store.
 
 ## Creating a Modern Data Warehouse
 
-Imagine you are a Data Engineering consultant for Contoso. In the past, they've created an on-premises business intelligence solution that used a Microsoft SQL Server Database Engine, Integration Services, Analysis Services, and Reporting Services to provide historical reports. An attempt was made to use the Analysis Services Data Mining component to create a predictive analytics solution to predict the buying behavior of customers. While this approach worked well with low volumes of data, it couldn't scale once more than a gigabyte of data was collected. Furthermore, they were never able to deal with the JSON data that a third-party application generated when a customer used the feedback module of the POS application. 
+Imagine you are a Data Engineering consultant for Contoso. In the past, they've created an on-premises business intelligence solution that used a Microsoft SQL Server Database Engine, Integration Services, Analysis Services, and Reporting Services to provide historical reports. An attempt was made to use the Analysis Services Data Mining component to create a predictive analytics solution to predict the buying behavior of customers. While this approach worked well with low volumes of data, it couldn't scale after more than a gigabyte of data was collected. Furthermore, they were never able to deal with the JSON data that a third-party application generated when a customer used the feedback module of the POS application. 
 
 Contoso has turned to you for help with creating an architecture that can scale with the data needs that is required to create a predictive model and to handle the JSON data so that it's integrated into the BI solution. You suggest the following architecture:
 

@@ -1,0 +1,1 @@
+You learned how to provision, connect to, and use a DSVM and explored the use of Jupyter notebooks, a popular web-based data science. You also learned that a Data Science VM is a powerful learning tool with software, sample code, and data to demonstrate how to use many of the Azure data and AI services.
