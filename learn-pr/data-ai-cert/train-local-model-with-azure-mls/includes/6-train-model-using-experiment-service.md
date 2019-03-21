@@ -46,7 +46,7 @@ folder_training_script= './trial_model_mnist'
 os.makedirs(folder_training_script, exist_ok=True)
 ```
 
-Finally, let's prepare our model training script. Note that in this script, you are defining three parameters. The first parameter is for finding the data stored on the cloud, or for the path. The other two parameters are used to define the parameter k in the kNN algorithm. 'kmax' limits the maximum value of k, and 'kinterval' decides the interval between each k.
+Finally, let's prepare our model training script. Note that in this script, you are defining two parameters. The first parameter is for finding the data stored on the cloud, or for the path. The other is the logistic regression regularization parameter.
 
 ```python
 %%writefile $folder_training_script/train.py
