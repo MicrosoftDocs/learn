@@ -186,9 +186,7 @@ This Screenshot shows the status when the remote resources are running.
 
 ![Screenshot of Job Running](../media/7-job-running.png)
 
-This Screenshot shows the status of the job completed. Highlighted in the red box, you can see that you got the same results as you did earlier in the local machine.
-
-![Screenshot of Job Running](../media/7-job-completion.png)
+Once the job is completed, you can see that you got the same results as you did earlier in the local machine.
 
 After this run finishes, you can print the results. The results were logged since you wrote the code in the training script.
 
