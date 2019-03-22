@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.control-network-traffic-flow-with-routes
+metadata:
+  title: Manage and control traffic flow in your Azure deployment with routes
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage and control traffic flow in your Azure deployment with routes
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+units:
+- learn.control-network-traffic-flow-with-routes.1-introduction
+- learn.control-network-traffic-flow-with-routes.2-routing-capabilities-of-azure-vnets
+- learn.control-network-traffic-flow-with-routes.3-exercise-create-custom-routes
+- learn.control-network-traffic-flow-with-routes.4-network-virtual-appliances
+- learn.control-network-traffic-flow-with-routes.5-exercise-create-nva-and-vm
+- learn.control-network-traffic-flow-with-routes.6-exercise-routing-traffic-through-nva
+- learn.control-network-traffic-flow-with-routes.7-summary
+badge:
+  uid: learn.control-network-traffic-flow-with-routes.badge

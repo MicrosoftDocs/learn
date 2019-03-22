@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.module-uid.6-exercise-routing-traffic-through-nva
+metadata:
+  title: Exercise - title
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - title
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-routing-traffic-through-nva.md)]

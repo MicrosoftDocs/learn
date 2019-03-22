@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.module-uid.4-network-virtual-appliances
+metadata:
+  title: Unit title
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Unit title
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-network-virtual-appliances.md)]
