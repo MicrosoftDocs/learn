@@ -17,7 +17,7 @@ You can filter the leaderboard by mode or by game map. You can also click on a p
 <!-- TODO: Throw a fake DNS name in front of this to hide the fact we're hosting it on Azure - the fictitious team isn't there yet. -->
 
 > [!NOTE]
-> Although the game and the web site aren't yet finished, you can [check it out now](http://tailspin-spacegame-web.azurewebsites.net/) to get a sense of how it works.
+> Although the game and the web site aren't yet finished, you can [check it out now](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.
 
 Here are your team members.
 
