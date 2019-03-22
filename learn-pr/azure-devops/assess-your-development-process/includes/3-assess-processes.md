@@ -8,6 +8,8 @@ Bob looks at Alice. "This is a lot to take in on your first few weeks here."
 
 The team decides to go to a coffee shop to relax and have an informal discussion. Together, they'll try to figure out why they're having so many problems.
 
+<!-- TODO: Might be nice to include a graphic that shows a whiteboard image with stickies or a notebook to represent the coffee-shop conversation. -->
+
 Over coffee, Alice listens and tries to take notes. There's a lot of information and it's not organized. Her overall thoughts about the team are:
 
 * They use a waterfall approach. Management sets the priorities. Developers write code and hand off to QA. QA tests and then hands off to ops for deployment.
@@ -16,6 +18,8 @@ Over coffee, Alice listens and tries to take notes. There's a lot of information
 * There are a lot of manual processes.
 * Communication is haphazard and depends on email, Word docs, and spreadsheets.
 * Feedback is also infrequent and inconsistent.
+
+<!-- TODO: Let's be clearer on why the negatives are negative. At the same time, are there any positives? -->
 
 When she looks at her pile of notes, Alice knows she needs to organize all this information so she can evaluate it. She's convinced that a DevOps approach will solve many of the team's problems, but she needs a way to present her case to the team.
 

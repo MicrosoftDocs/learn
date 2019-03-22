@@ -1,4 +1,4 @@
-Tailspin is a video game company. Tailspin hosts its game servers and web sites in an on-prem datacenter. The company just celebrated the release of a new game and will be releasing another one, called _Space Game_, in the coming months.
+Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts its game servers and web sites in an on-prem datacenter. The company just celebrated the release of a new game and will be releasing another one, called _Space Game_, in the coming months.
 
 The team that you'll be working with builds web sites to support new game titles. These web sites provide information about the game, ways to get it, and leaderboards that show top scores. The team often faces pressure because each web site must go live the same day the game is released.
 
@@ -12,7 +12,18 @@ And here's what the leaderboard looks like.
 
 You can filter the leaderboard by mode or by game map. You can also click on a player name to see his or her profile and game achievements.
 
+<!-- TODO: Host this under our team account. -->
+
+<!-- TODO: Throw a fake DNS name in front of this to hide the fact we're hosting it on Azure - the fictitious team isn't there yet. -->
+
+> [!NOTE]
+> Although the game and the web site aren't yet finished, you can [check it out now](http://tailspin-spacegame-web.azurewebsites.net/) to get a sense of how it works.
+
 Here are your team members.
+
+<!-- TODO: We need final graphics for the team members. -->
+
+<!-- TODO: Fix this layout to make it more pleasing. -->
 
 :::row:::
   :::column span="2":::

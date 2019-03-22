@@ -2,7 +2,7 @@
 uid: learn.azdo-assess-your-development-process
 metadata:
   title: Assess your existing software development process - Learn
-  description: Prepare for the DevOps Self-Assessment by examining your existing processes and technology choices.
+  description: Take the DevOps Self-Assessment to help you examine your existing processes and technology choices.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,7 +10,7 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Assess your existing software development process
-summary: Prepare for the DevOps Self-Assessment by examining your existing processes and technology choices.
+summary: Take the DevOps Self-Assessment to help you examine your existing processes and technology choices.
 abstract: |
   In this module, you will:
   - Identify your existing processes and capabilities
