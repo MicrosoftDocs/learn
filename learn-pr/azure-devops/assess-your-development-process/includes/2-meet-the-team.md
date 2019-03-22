@@ -1,4 +1,4 @@
-Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts its game servers and web sites in an on-prem datacenter. The company just celebrated the release of a new game and will be releasing another one, called _Space Game_, in the coming months.
+Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts its game servers and web sites in an on-prem datacenter. The company just celebrated the release of a new racing game and will be releasing a space-shooter game, called _Space Game_, in the coming months.
 
 The team that you'll be working with builds web sites to support new game titles. These web sites provide information about the game, ways to get it, and leaderboards that show top scores. The team often faces pressure because each web site must go live the same day the game is released.
 
@@ -17,7 +17,7 @@ You can filter the leaderboard by mode or by game map. You can also click on a p
 <!-- TODO: Throw a fake DNS name in front of this to hide the fact we're hosting it on Azure - the fictitious team isn't there yet. -->
 
 > [!NOTE]
-> Although the game and the web site aren't yet finished, you can [check it out now](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.
+> Although the game and the web site aren't yet finished, you can [check out the web site now](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.
 
 Here are your team members.
 
@@ -63,7 +63,7 @@ Alice is new. She just joined Tailspin as a developer because she likes games an
 
 ## Good morning
 
-The team's product manager has called everyone into a meeting and he's in a bad mood. The leaderboard for a recently-released game was just updated with several new features and he showed it at a Meetup group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
+The team's product manager has called everyone into a meeting and he's in a bad mood. The leaderboard for the racing game was just updated with several new features and he showed it at a Meetup group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
 
 * Some features only work correctly for some game modes.
 * Updating the leaderboard takes too long, even with a small number of players.
