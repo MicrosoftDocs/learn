@@ -1,30 +1,33 @@
 ## Title
 
-*Add the working title [(Guidance)](id-guidance-title.md)*
+Design your migration to Azure
 
 ## Role(s)
 
-- *Add the role(s)*
+- Solution Architect
 
 ## Level
 
-- *Add the level*
+- Intermediate
 
 ## Product(s)
 
-- *Add the product(s)*
+- Azure Migrate
+- Azure Site Recovery
+- Azure Database Migration Service
 
 ## Prerequisites
 
-- *List the prerequisites [(Guidance)](id-guidance-prerequisites.md)*
+- Knowledge of cloud and traditional architecture concepts
+- Knowledge of networking, compute, and database systems
 
 ## Summary
 
-*Add the summary [(Guidance)](id-guidance-introductory-summaries.md)*
+Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Site Recovery and Azure Database Migration Service.
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Guidance)](id-guidance-learning-objectives.md)*
+1. Assess your 
 
 ## Chunk your content into subtasks
 
