@@ -8,7 +8,7 @@ In this step, you'll record a sample user session by using browser developer too
 
 1. In Chrome, open a new tab, select the ellipsis button (...), select **More tools**, and then select **Developer Tools**. If you're using Microsoft Edge, open a new tab, select the ellipsis button (...), select **Developer Tools**, and then select the **Network** tab.
 1. Make sure the recording button is on (it should be red) and select the **Preserve log** check box. (Chrome only.)
-1. With the developer tools window open, go to **https&#58;//contosorentalsapp\<_your-number\>.azurewebsites.net**.
+1. With the developer tools window open, go to **https&#58;//contosorentalsapp\<your-number>.azurewebsites.net**.
 1. Click through the following scenario. (Wait for each page to load completely before continuing.)
    1. When the home page is loaded, select the **Services** link.
    1. On the Services page, select the first item.
