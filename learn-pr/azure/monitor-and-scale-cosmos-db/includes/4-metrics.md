@@ -1,10 +1,10 @@
 In the last unit, we added three collections to your Cosmos DB account and populated them. In this unit, we look closely at these collections. We'll learn how to use the portal to check whether any of the collections are overloaded. We'll also run individual operations from the command line to model the capacity required for a specific workload.
 
-## Measuring throughput in Cosmos DB
+## Measuring throughput in Azure Cosmos DB
 
-Recall that in a Cosmos DB, capacity, or throughput, is measured in Request Units (RUs). Every operation on a Cosmos DB has a RU value based on the throughput required to complete the operation. Operations can be simple and require only a small number of RUs. Or they can be complex and require a large number of RUs. The sum of the RUs for all of your operations must stay within the throughput you've configured.
+Recall that in an Azure Cosmos DB database, capacity or throughput is measured in request units (RUs). Every operation on a database has an RU value based on the throughput required to complete the operation. Operations can be simple and require only a small number of RUs. Or they can be complex and require a large number of RUs. The sum of the RUs for all of your operations must stay within the throughput you've configured.
 
-For example, say your configured throughput is 500 RUs per second (RU/s).
+For example, let's say your configured throughput is 500 RUs per second (RU/s), and:
 
 - You need to write 25 documents per second. 
 - Each write requires 20 RUs.
@@ -12,38 +12,38 @@ For example, say your configured throughput is 500 RUs per second (RU/s).
 
 ## Review metrics for your database
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
-1. Search on Cosmos DB.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using your Microsoft Learn account.
+1. Search on Azure Cosmos DB.
 
-   ![Screenshot that shows search in Azure portal](../media/4-search-cosmos-db.png)
+   ![Screenshot that shows search in the Azure portal](../media/4-search-cosmos-db.png)
 
-1. Select your Cosmos DB account.
-1. Look under the **Monitoring** category, and select **Metrics**. You may need to scroll down on the Cosmos DB page to find it.
+1. Select your Azure Cosmos DB account.
+1. Look under the **Monitoring** category, and select **Metrics**. You might need to scroll down on the Azure Cosmos DB page to find it.
 1. Review the **Overview** tab with the aggregated view of all your databases and collections. Here, you see:
-   - Requests that you made over time
-   - How much storage you're using
-   - Any requests that exceeded capacity
+   - Requests that you made over time.
+   - How much storage you're using.
+   - Any requests that exceeded capacity.
 1. Review the chart **Number of request exceeded capacity**. We deliberately overloaded the **Small** collection. So you see that some of the requests exceeded capacity.
 
-   ![Cosmos DB requests exceeding capacity chart](../media/4-requests-exceeding-capacity.png)
+   ![Chart of Azure Cosmos DB requests exceeding capacity](../media/4-requests-exceeding-capacity.png)
 
-   The **HTTP 429** error code indicates that there are too many requests. Future requests will be rate-limited. When you see HTTP 429 responses from Cosmos DB, that means the allocated capacity is exceeded.
+   The HTTP 429 error code indicates that there are too many requests. Future requests will be rate-limited. When you see HTTP 429 responses from Azure Cosmos DB, that means you've exceeded the allocated capacity.
 
-   If the demand on one or more of your collections exceeds its allocated capacity, then you have the following options to fix an overloaded collection:
+   If the demand on one or more of your collections exceeds its allocated capacity, you have the following options to fix an overloaded collection:
 
    - Increase the overloaded collection's capacity.
    - Reduce the demand on your collection.
    - Increase the efficiency of the operations that overload your collection.
 
-In the following sections, we show you how to measure the required capacity of individual operations. You can extrapolate from the individual operation performance costs to the actual scale of your Cosmos DB.
+In the following sections, we show you how to measure the required capacity of individual operations. You can extrapolate from the individual operation performance costs to the scale of your database.
 
-## Measure the throughput required by individual queries using Data Explorer
+## Measure the throughput that individual queries require by using Data Explorer
 
-The exercises in this section have you use the Cosmos DB Data Explorer to compare the performance costs between a query you run within a single partition with one you run across a partition.
+The exercises in this section have you use the Azure Cosmos DB Data Explorer to compare the performance costs between a query that you run within a single partition with one that you run across a partition.
 
 ### Review a database document in Data Explorer
 
-1. In the Azure portal, on your Cosmos DB account, go to **Data Explorer**.
+1. In the Azure portal, on your Azure Cosmos DB account, go to **Data Explorer**.
 
 1. Expand the **mslearn** database. You see the three collections we created in the setup unit: **Small**, **Orders**, and **HotPartition**.
 
@@ -60,24 +60,24 @@ The exercises in this section have you use the Cosmos DB Data Explorer to compar
 
 ### Find a document in a single partition
 
-We're going to use the **Orders** collection where the partition key is set to **/Item/id**. All orders with the same `Item.id` value are stored in the same partition. When we run a query for a specific `Item.id`, the query runs within a single partition.
+We're going to use the **Orders** collection where the partition key is set to **/Item/id**. All orders with the same `Item.id` value are stored in the same partition. When we run a query for a specific `Item.id` value, the query runs within a single partition.
 
-1. In JSON data for the document you selected, under the `Item` field, copy the guid value of the `id`.
+1. In JSON data for the document that you selected, under the `Item` field, copy the GUID value of the `id`.
 
     `"Item": { "id": "..."}`
 
-    ![Select Item id value from Cosmos DB collection document](../media/4-select-item-id.png)
+    ![Selecting the item ID value from an Azure Cosmos DB collection document](../media/4-select-item-id.png)
 
 1. Select **New SQL Query**.
-1. Create the query using the `c.Item.id` value you copied:
+1. Create the query by using the `c.Item.id` value that you copied:
 
    ```sql
     SELECT TOP 1 * FROM c WHERE c.Item.id='<Copied Item id value>'
     ```
 
-    ![Screenshot that shows Cosmos DB create SQL query in portal](../media/4-query.png)
+    ![Screenshot that shows Azure Cosmos DB creating a SQL query in the portal](../media/4-query.png)
 
-1. Click **Execute Query**.
+1. Select **Execute Query**.
 1. Select the **Query Stats** tab.
 
     ![Screenshot that shows the Query Stats tab](../media/4-querystats-tab.png)
@@ -86,7 +86,7 @@ Notice how many RUs the operation took. The **Request Charge** value shown shoul
 
 ### Find a document by querying across partitions
 
-In the previous section, we ran a query within a partition. This time we choose a different property to query: `Customer.id`. Orders made by the same customer aren't guaranteed to be in the same partition. Running a query across partitions takes more RUs than running a query in a single partition.
+In the previous section, we ran a query within a partition. This time, we choose a different property to query: `Customer.id`. Orders that the same customer makes aren't guaranteed to be in the same partition. Running a query across partitions takes more RUs than running a query in a single partition.
 
 1. Go back to the **Orders** collection and select a different document.
 1. Under the `Customer` field, copy the guid value of the `id`.
