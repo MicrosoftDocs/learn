@@ -31,7 +31,7 @@ Minimize the time and resources required to migrate your on-premises environment
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *module title*
+Identify the subtasks of *Design your migration to Azure*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
@@ -84,7 +84,7 @@ Identify the subtasks of *module title*
 
 ## Notes
 
-Discusses using Azure Migrate to assess your existing workloads, then using Azure Site Recovery and Azure Database Migration Service to migrate. This will likely be a topical module with interactivity coming from scenarios and quiz questions. 
+Discusses using Azure Migrate to assess your existing workloads, then using Azure Site Recovery and Azure Database Migration Service to migrate. Identify the capabilities of each service, and how to select the appropriate migration tool for your workload. This will likely be a topical module with interactivity coming from scenarios and quiz questions.
 
 Supporting documentation:
 
