@@ -24,7 +24,7 @@ Design a hub and spoke network architecture on Azure
 
 ## Prerequisites
 
-- Understanding of networking concepts in traditional and cloud networks
+- Basic understanding of networking concepts in traditional and cloud networks
 
 ## Summary
 
@@ -75,7 +75,7 @@ Identify the subtasks of *Design a hub and spoke network architecture on Azure*
         4. Configure NVA routing to allow for spoke to spoke connectivity
         5. Access control with Azure AD
 
-4. **Planning Virtual Networks on Azure**
+4. **Planning virtual networks on Azure**
 
     List the content that will enable the learner to *Identify the components and limitations for connectivity to on-premises networks*:
 
