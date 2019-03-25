@@ -45,11 +45,9 @@ Identify the subtasks of *Design your migration to Azure*
 
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice (from the module proposal):
+    You are the solution architect for a manufacturing company that is planning to move several data centers to Azure. You have been tasked with planning your migration, and need to identity the tools and services you can use to help you plan and execute your migration. Your workloads consist primarily of VMware virtual machine based workloads with data stored in relational databases.
 
-    *Add your scenario [(Guidance)](id-guidance-scenarios.md)*
-
-1. **Learning-content unit title**
+2. **Learning-content unit title**
 
     List the content that will enable the learner to *subtask*:
 
@@ -63,22 +61,22 @@ Identify the subtasks of *Design your migration to Azure*
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
 
-1. **Knowledge check**
+3. **Knowledge check**
 
     What types of questions will test *learning objective*?
 
     - Question type
     - Question type
 
-1. **Exercise - exercise unit title**
+4. **Exercise - exercise unit title**
 
     List the steps which apply the learning content from previous unit:
 
     1. Step
-    1. Step
-    1. Step
+    2. Step
+    3. Step
 
-1. **Summary**
+5. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
