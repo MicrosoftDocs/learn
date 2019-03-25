@@ -2,7 +2,7 @@
 
 ## Title
 
-Design a hub and spoke network architecture on Azure
+Centralize your core services using hub and spoke Azure VNet architecture
 
 ## Role(s)
 
@@ -39,7 +39,7 @@ Design a network architecture in Azure that allows for growth & flexibility, sec
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *Design a hub and spoke network architecture on Azure*
+Identify the subtasks of *Centralize your core services using hub and spoke Azure VNet architecture*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- |---|---|---|---|
