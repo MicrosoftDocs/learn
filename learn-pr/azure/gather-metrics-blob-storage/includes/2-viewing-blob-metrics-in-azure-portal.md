@@ -12,17 +12,18 @@ By the end of this unit, you'll be able to identify, select, and display Azure B
 
 Azure Storage provides cloud-based storage for range of data types with virtually unlimited capacity. The facilities that Azure storage provides include:
 
-- a cloud-based Data object store.
-- a file system service for objects stored in the cloud.
-- a reliable messaging service.
-- a NoSQL store for unstructured data.
+- A cloud-based data object store
+- A file system service for objects stored in the cloud
+- A reliable messaging service
+- A NoSQL store for unstructured data
 
 Azure Storage is designed to be durable, highly available, secure, scalable, managed, and accessible. It consists of the following four storage services:
 
-- Azure Blobs - stores massive amounts of text and binary data
-- Azure Files - provides managed file shares for access from cloud or on-premises locations
-- Azure Queues - implements a reliable messaging store for communication between application components
-- Azure Tables - stores schemaless structured data within a NoSQL environment
+|---|---|
+| Azure Blobs | Stores massive amounts of text and binary data |
+| Azure Files | Provides managed file shares for access from cloud or on-premises locations |
+| Azure Queues | Implements a reliable messaging store for communication between application components |
+| Azure Tables | Stores schemaless structured data within a NoSQL environment |
 
 ### Azure Blob Storage
 
@@ -36,9 +37,10 @@ This module concentrates on Azure Blob storage, which is Microsoft's object stor
 
 Blob storage resources consist of the following three concepts:
 
-- The Storage account - a unique namespace for your data in Azure
-- A container - analogous to a folder in a file system
-- One or more blobs in that container - like files in a file system
+|---|---|
+| A storage account | A unique namespace for your data in Azure |
+| A container | Analogous to a folder in a file system |
+| One or more blobs in that container | Analogous to files in a file system |
 
 A storage account can have unlimited numbers of containers and a container can hold unlimited numbers of blobs.
 
@@ -52,9 +54,10 @@ You can access blob storage over http or https from any global Internet connecti
 
 Azure Blob storage supports three different types of blobs:
 
-- Block Blobs are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually.
-- Append Blobs consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines.
-- Page Blobs can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines.
+|---|---|
+| Block Blobs | These are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually. |
+| Append Blobs | These consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines. |
+| Page Blobs | These can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines. |
 
 ### Importance of Metrics
 
@@ -66,19 +69,22 @@ Metrics are a vital component of your management approach to blob storage. Metri
 - Availability
 - Latency
 
-Azure Blob Storage provides the following metrics, which can be categorized as capacity or transaction metrics. Capacity metrics include:
+Azure Blob Storage provides the following metrics, which can be categorized as capacity or transaction metrics.
 
-- Blob capacity
-- Blob container count
-- Blob count
-- Index capacity
+- Capacity metrics include:
 
-Transaction metrics include:
-- Availability
-- Egress and Ingress
-- Success end to end (E2E) Latency
-- Success server latency
-- Transactions
+   - Blob capacity
+   - Blob container count
+   - Blob count
+   - Index capacity
+
+- Transaction metrics include:
+
+   - Availability
+   - Egress and Ingress
+   - Success end to end (E2E) Latency
+   - Success server latency
+   - Transactions
 
 Capacity metrics are sent to Azure Monitor every hour and are refreshed daily. Transaction metrics are sent to Azure Monitor every minute, and are available both for the account and service. You should be aware that the refresh interval does affect the exercise in the next module, as metrics aren't displayed in real time. You can also specify custom metrics.
 
@@ -86,8 +92,8 @@ Capacity metrics are sent to Azure Monitor every hour and are refreshed daily. T
 
 There are two main mechanisms for viewing Azure blob storage metrics:
 
-- the Azure portal
-- in a custom Dashboard (covered later in a later unit in this module)
+- In the Azure portal
+- In a custom Dashboard (covered later in a later unit in this module)
 
 ### Portal
 
