@@ -4,7 +4,7 @@ Deep learning is a subset of machine learning that uses algorithms based on the 
 Deep-learning techniques have the following advantages:
 
 - **Accuracy:** Deep neural networks produce highly accurate results in some of the most complex situations, such as image classification.
-- **Scalability:** Deep learning methods work efficiently on large volumes of data and are scalable based on the dataset.
+- **Scalability:** Deep-learning methods work efficiently on large volumes of data and are scalable based on the dataset.
 - **Robustness:** Artificial neural networks can work directly on a raw dataset without requiring any cleanup or engineering.
 - **Adaptability:** Pretrained deep neural networks can be easily transferred and used with varied domains.
 
@@ -13,5 +13,5 @@ Deep-learning techniques have the following advantages:
 In this module, you'll:
 
 - Identify how artificial neural networks work and learn about the use cases for deep-learning algorithms.
-- Train and evaluate a classifier built by using Tensorflow.
+- Train and evaluate a classifier built by using TensorFlow.
 - Create an image classifier by using deep learning.

@@ -8,7 +8,7 @@ Artificial neural networks are simpler representations of the complex and dense 
 
 ## What is an artificial neuron?
 
-An artificial neuron is a mathematical function conceived as a model of a biological neuron. The artificial neuron receives one or more inputs (*features* X<sub>0</sub>, X<sub>1</sub>, X<sub>2</sub>, ...). It sums them with different weights (W<sub>0</sub>, W<sub>1</sub>, W<sub>2</sub> ...) and uses this sum as an argument for a nonlinear function (f, also called an *activation function*).
+An artificial neuron is a mathematical function conceived as a model of a biological neuron. The artificial neuron receives one or more inputs (*features* X<sub>0</sub>, X<sub>1</sub>, X<sub>2</sub>, ...). It sums them with different *weights* (W<sub>0</sub>, W<sub>1</sub>, W<sub>2</sub>, ...) and then uses this sum as an argument for a nonlinear function (f, also called an *activation function*).
 
 X<sub>0</sub> typically equals to 1, and it's called the *bias* input. The weights of each of the neurons are determined when we train the neural network. Initially, these weights are randomly assigned.
 
@@ -26,7 +26,7 @@ Here are some of the use cases for deep-learning techniques:
 
 - **Security:** Deep learning is widely used by large companies to mitigate cybersecurity threats. Deep-learning techniques are efficient in detecting cyberattacks and alerting organizations to take preventive measures against them.
 
-## Azure Databricks deep-learning solution
+## Azure Databricks deep-learning solutions
 
 - **Machine-learning pipelines:** A machine-learning pipeline provides an open-source high-level deep-learning API framework that enables lower-level deep-learning libraries by using the Spark MLlib Pipelines API. This API framework currently supports TensorFlow and Keras with the TensorFlow back-end.
 
