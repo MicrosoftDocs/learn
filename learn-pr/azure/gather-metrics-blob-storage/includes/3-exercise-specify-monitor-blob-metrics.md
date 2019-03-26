@@ -14,7 +14,7 @@ As a proof of concept exercise, you want to move some simple files into Azure Bl
 
 1. In the **Name** dialog box, enter **MonitorResourceGroup** and click **OK**.
 
-1. Under **INSTANCE DETAILS**, next to **Storage account name**, enter a unique name of between 3 and 24 characters consisting only of lower case letters and numbers, such as **monitorstorageaccount**.
+1. Under **INSTANCE DETAILS**, next to **Storage account name**, enter a unique name of between 3 and 24 characters consisting only of lower case letters and numbers; for example: **monitorstorageaccount**.
 
 1. Next to **Location**, select a location close to you.
 
@@ -52,9 +52,9 @@ Notice that you can change the storage account to another resource group.
 
 Before you can add blobs to a Storage Account, you need to create a blob container.
 
-1. To add a blob container, under **Services**, click **Blobs**.
+1. To add a blob container, under **Blob service**, click **Blobs**.
 
-1. In the Blobs blade, click **Container**.
+1. In the Blobs blade, click **+ Container**.
 
 1. In the **Name** field, enter **monitor-blobs-container**, then click **OK**. Note the status message **No blobs found.**
 
@@ -70,7 +70,7 @@ You are now ready to upload files to the blob container.
 
 1. Click **Advanced** to view the advanced upload blob options.
 
-1. Click **Blob type** and in the drop-down list, note the options for Block blob, Page blob, and Append blob. Ensure that **Block blob** is selected.
+1. Click **Blob type**, and in the drop-down list, note the options for: **Block blob**, **Page blob**, and **Append blob**. Ensure that **Block blob** is selected.
 
 1. Under **Block size**, select **64 KB**, then click **Upload**. Note when the file upload has completed.
 
@@ -92,7 +92,7 @@ Page blobs are typically for very large files, such as virtual machine images (V
 
 You can simply check the size of the data stored in a container and the number and type of blobs by carrying out the following steps:
 
-1. On the monitor-blobs-container container, click **Properties**.
+1. On the **monitor-blobs-container** container, click **Properties**.
 
 1. On the **Properties** blade, click **Calculate size**. The size and number of blobs will now appear.
 
@@ -102,36 +102,38 @@ Next, you will view the metrics that the storage account generates. To do this, 
 
 1. In the left-hand pane, click **Storage accounts**, and then in the **Storage accounts** pane, click the name of the storage account you created.
 
-1. Scroll down the middle pane to **Monitoring**.
-
-1. Under **Monitoring**, click **Metrics**.
+1. Scroll down the middle pane to the **Monitoring** section, then click **Metrics**.
 
 1. Click **+ New Chart**
+
 1. Next to **Chart Title**, click the pen icon.
 
 1. Type in **Capacity Chart** as the name for your chart.
 
-1. Click **Add metric**.
+1. Add several metrics to your chart:
 
-1. Under **RESOURCE**, click the name of the storage account you created .
+   1. Click **Add metric**.
 
-1. Underneath appears the Subscription name, the name of the Resource Group, and the Resource Type. Note that all resorce types are selected by default.
+   1. Under **RESOURCE**, click the name of the storage account you created .
 
-1. Under **METRIC NAMESPACE**, select **Blob**.
+   1. Underneath appears the Subscription name, the name of the Resource Group, and the Resource Type. Note that all resorce types are selected by default.
 
-1. Under **METRIC**, click **Blob Capacity**.
+   1. Under **METRIC NAMESPACE**, select **Blob**.
 
-1. Under **AGGREGATION**, click **Avg**.
+   1. Under **METRIC**, click **Blob Capacity**.
 
-1. Repeat the previous four steps but this time add **Blob Container Count** to the chart, then **Blob Count**.
+   1. Under **AGGREGATION**, click **Avg**.
 
-Note at the bottom of the chart that you now have a colour bar and a count for the current value of the counter. It is highly likely that the counter will initally be zero for all the Capacity metrics, as the values have not been aggregated.
+   1. Repeat the previous six steps to add **Blob Container Count** and **Blob Count** to the chart.
+
+Note at the bottom of the chart that you now have a color bar and a count for the current value of the counter. It is highly likely that the counter will initally be zero for all the Capacity metrics, as the values have not been aggregated.
 
 ## Creating a Transaction Metrics Chart
 
 Transaction metrics are updated hourly, so you should relatively quickly be able to see changes in these values. To create a transaction metrics chart, carry out the following steps.
 
 1. Click **+ New Chart**
+
 1. Next to **Chart Title**, click the pen icon.
 
 1. Type in **Transaction Chart** as the name for your chart.
@@ -175,7 +177,7 @@ Splitting a chart enables you to view additional dimensions in the data, dependi
 - ListContainers
 - GetBlobproperties
 
-4. Click the X to the right of the **SPLITTING** oval.
+1. Click the X to the right of the **SPLITTING** oval.
 
 ## Adding a Filter
 
@@ -189,7 +191,7 @@ Filtering also enables you to look at the metrics with greater granularity. To a
 
 Note the data values and compare those with the **ListBlobs** value from the splitting exercise.
 
-4. Click the X to the right of the filter oval to remove the filter.
+1. Click the X to the right of the filter oval to remove the filter.
 
 ## Customizing charts
 
@@ -237,4 +239,4 @@ At the end of this lab, do not delete any of the resorces that you have created,
 
 ## Summary
 
-In this exercise, you applied the knowledge you gained in the previous module in a practical environment. You created a storage group with associated blob storage, then viewed the different metrics that appear.
+In this exercise, you applied the knowledge you gained in the previous module in a practical environment. You created a storage account with associated blob storage, then viewed the different metrics that appear.
