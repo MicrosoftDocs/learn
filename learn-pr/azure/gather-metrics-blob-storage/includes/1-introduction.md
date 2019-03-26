@@ -9,12 +9,15 @@ Monitoring is also essential for controlling the costs of Azure storage, which w
 Note that this module deals with Azure Storage Analytics and its use in the portal. No developer subjects are included. A separate module covers how to use the Azure SDK and the Azure Monitor REST API to access Azure Storage Analytics (ASA) data. 
 
 ## Short Abstract
+
 In this module, you'll learn how to use Azure Monitor to gather and view metrics for a blob storage account in Microsoft Azure. 
 
 ## Long Abstract
+
 In this module, you'll gather information about the performance of your Azure Blob storage containers through Azure Storage Analytics (ASA). ASA enables you to trace requests, analyze usage trends, and diagnose issues with your storage account. You can then add these metrics to custom charts that you display in the Azure dashboard. 
 
 ## Learning Objectives
+
 At the end of this module, you'll be able to:
 
 - View Blob metrics in the portal.
@@ -22,11 +25,11 @@ At the end of this module, you'll be able to:
 - Use the portal to enable logging and download the logs.
 
 ## Prerequisites
+
 - Knowledge of Azure portal
 - Knowledge of Azure Blob Storage Containers
 
 ## Expected Duration
 
-45 minutes
-
+80 minutes
 
