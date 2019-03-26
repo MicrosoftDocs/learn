@@ -1,4 +1,4 @@
-In the last unit, we added three collections to your Cosmos DB account and populated them. In this unit, we look closely at these collections. We'll learn how to use the portal to check whether any of the collections are overloaded. We'll also run individual operations from the command line to model the capacity required for a specific workload.
+In the last unit, we added three collections to your Azure Cosmos DB account and populated them. In this unit, we look closely at these collections. We'll learn how to use the portal to check whether any of the collections are overloaded. We'll also run individual operations from the command line to model the capacity required for a specific workload.
 
 ## Measuring throughput in Azure Cosmos DB
 
@@ -39,13 +39,13 @@ In the following sections, we show you how to measure the required capacity of i
 
 ## Measure the throughput that individual queries require by using Data Explorer
 
-The exercises in this section have you use the Azure Cosmos DB Data Explorer to compare the performance costs between a query that you run within a single partition with one that you run across a partition.
+The exercises in this section have you use Data Explorer in Azure Cosmos DB. You'll compare the performance costs between a query that you run within a single partition and one that you run across a partition.
 
 ### Review a database document in Data Explorer
 
-1. In the Azure portal, on your Azure Cosmos DB account, go to **Data Explorer**.
+1. In the Azure portal, in your Azure Cosmos DB account, go to **Data Explorer**.
 
-1. Expand the **mslearn** database. You see the three collections we created in the setup unit: **Small**, **Orders**, and **HotPartition**.
+1. Expand the **mslearn** database. You see the three collections that you created in the setup unit: **Small**, **Orders**, and **HotPartition**.
 
 1. Expand the **Orders** collection and select **Documents**. You see the first 100 documents.
 
@@ -60,9 +60,9 @@ The exercises in this section have you use the Azure Cosmos DB Data Explorer to 
 
 ### Find a document in a single partition
 
-We're going to use the **Orders** collection where the partition key is set to **/Item/id**. All orders with the same `Item.id` value are stored in the same partition. When we run a query for a specific `Item.id` value, the query runs within a single partition.
+We're going to use the **Orders** collection, where the partition key is set to **/Item/id**. All orders with the same `Item.id` value are stored in the same partition. When we run a query for a specific `Item.id` value, the query runs within a single partition.
 
-1. In JSON data for the document that you selected, under the `Item` field, copy the GUID value of the `id`.
+1. In JSON data for the document that you selected, under the `Item` field, copy the GUID value of `id`.
 
     `"Item": { "id": "..."}`
 
@@ -89,27 +89,27 @@ Notice how many RUs the operation took. The **Request Charge** value shown shoul
 In the previous section, we ran a query within a partition. This time, we choose a different property to query: `Customer.id`. Orders that the same customer makes aren't guaranteed to be in the same partition. Running a query across partitions takes more RUs than running a query in a single partition.
 
 1. Go back to the **Orders** collection and select a different document.
-1. Under the `Customer` field, copy the guid value of the `id`.
+1. Under the `Customer` field, copy the GUID value of `id`.
         
     `"Customer": { "id": "..."`
 1. Select **New SQL Query**.
-1. Run the following query where you replace the `c.Customer.id` value with the id value you copied:
+1. Run the following query. Replace the `c.Customer.id` value with the `id` value that you copied.
     ```sql
     SELECT TOP 1 * FROM c WHERE c.Customer.id='<Copied Customer id value>'
     ```
-1. Click **Execute Query**.
+1. Select **Execute Query**.
 1. Select the **Query Stats** tab.
 
-Notice that this time the operation takes more RUs.
+Notice that this time, the operation takes more RUs.
 
 
 ## Measure the throughput required for direct writes and reads for a single document
 
-To look at the performance costs of fine grain operations, like reading a document directly, use the ExerciseCosmosDB utility.
+To look at the performance costs of detailed operations, like reading a document directly, use the ExerciseCosmosDB utility.
 
 ### Check your environment variables
 
-If your cloud shell times out, then you need to reset the `ENDPOINT`, `KEY`, and  `COSMOS_NAME` variables. The console application needs the environment variables to connect to the database. If the cloud shell hasn't timed out, you can skip this step.
+If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `COSMOS_NAME` variables. The console application needs the environment variables to connect to the database. If Cloud Shell hasn't timed out, you can skip this step.
 
 1. Reset the `COSMOS_NAME` value by running the following command.
 
@@ -131,13 +131,13 @@ If your cloud shell times out, then you need to reset the `ENDPOINT`, `KEY`, and
 
 ### Write a single document
 
-1. In the cloud shell, if you need to, change the directory to the `ExerciseCosmosDB` directory.
+1. In Cloud Shell, if you need to, change the directory to `ExerciseCosmosDB`.
 
     ```bash
     cd mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
     ```
 
-1. Run the following command to insert a document to the **Orders** collection.
+1. Run the following command to insert a document into the **Orders** collection.
 
       ```bash
       dotnet run -- -c Orders -o InsertDocument -n 1
@@ -164,18 +164,18 @@ The consumption of this single write operation for a 1-KB document with the defa
         Performed 1 Query operations @ 1 operations/s, 4.6 RU/s (0B max monthly 1KB reads)
     ```
 
-The complexity of a query impacts how many RUs are consumed for an operation. In this case, the query is simple and the volume of data returned is small. The cost is 4.6 RUs.
+The complexity of a query affects how many RUs are consumed for an operation. In this case, the query is simple and the volume of data returned is small. The cost is 4.6 RUs.
 
 ### Read a single document
 
-Reading a document directly from your Cosmos DB collection using its `id` value, and the value of its `partition key` is the least expensive operation.
+Reading a document directly from your Azure Cosmos DB collection by using its `id` and `partition key` values is the least expensive operation.
 
-1. Note the `id` and `Item.id` fields from the results of the previous query.  In the example output given in the previous step, the `id` and `Item.id` are:
+1. Note the `id` and `Item.id` fields from the results of the previous query. In the example output from the previous step, the `id` and `Item.id` values are:
 
    - `"id":"07d34e38-bfab-90dc-6031-bcc9115d30e0"`
    - `"Item":{"id":"780115d0-a6a0-d62c-320e-bdf7b624d241 ...}"`
 
-1. Read a single document directly from the **Orders** collection by adding those values into the following command:
+1. Read a single document directly from the **Orders** collection by adding those values to the following command:
 
     ```bash
     dotnet run -- -o ReadDocument -l dbs/mslearn/colls/Orders/docs/<Document id value> -k <Item id value> -n 1
@@ -189,5 +189,5 @@ Reading a document directly from your Cosmos DB collection using its `id` value,
 
 You see that it consumes 1 RU to directly read one document that's 1 KB.
 
-Now we know how to monitor and measure the cost of our database operations. Next we can look more closely at the design of our collections. It's essential that we model individual costs to understand how the design choices allow us to scale.
+Now you know how to monitor and measure the cost of your database operations. Next we can look more closely at the design of your collections. It's essential that we model individual costs to understand how the design choices allow you to scale.
 
