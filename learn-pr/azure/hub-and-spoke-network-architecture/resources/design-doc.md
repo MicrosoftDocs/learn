@@ -151,3 +151,14 @@ https://techcommunity.microsoft.com/t5/Azure/Microsoft-Azure-Hub-Spoke-model-by-
 http://francescomolfese.it/en/2018/08/azure-networking-introduzione-al-modello-hub-spoke/
 https://azure.microsoft.com/mediahandler/files/resourcefiles/6ce2454f-eead-4b86-9a45-7434f890fea8/Mesh_and_Hub-Spoke_Networking_on_Azure.pdf
 http://www.deployazure.com/network/virtual-network/azure-vnet-peering-gateway-transit-hub-and-spoke/
+
+Comments:
+
+Phillip Stollery (Content Master Ltd) I've moved the design doc to GitHub for you. Overall, you're approved to move forward with content creation. A couple items of feedback:
+
+I've made some minor changes to verbiage and a unit title.
+- We may want to consider swapping unit 3 and 4. It has an overview of virtual networks in Azure, but that's after we create the vnets, this might make more sense before the actual exercise.
+- Consider doing the exercise even later, and using Azure Firewall instead of the NVA
+- NVA's are tricky, and can take time, they also are typically marketplace purchases, which are not available in sandbox. Consider just making that topical to keep the exercise do-able, or do Azure Firewall instead. 
+- Don't use the "security by design" term. We do want to cover security, but that's not a term I've seen used with Azure virtual networking.
+- Make sure to weave the scenario through the content. How does the organization apply these services and capabilities to their architecture?
