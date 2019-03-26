@@ -28,5 +28,5 @@ To learn more about using notebooks, clone the labs archive where sample noteboo
 
 ## Complete the following notebooks
 
-1. **01 Notebook Fundamentals** -  This notebook illustrates the fundamentals of a Databricks notebook.
-1. **Why Apache Spark?** - In this notebook you can practice some of the use cases for Databricks notebook.
+- **01 Notebook Fundamentals** -  This notebook illustrates the fundamentals of a Databricks notebook.
+- **Why Apache Spark?** - In this notebook, you can practice some of the use cases for Databricks notebook.

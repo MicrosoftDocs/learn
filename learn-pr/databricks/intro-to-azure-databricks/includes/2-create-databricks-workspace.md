@@ -7,11 +7,12 @@ The first step to using Azure Databricks is to create and deploy a Databricks wo
 1. Provide the required values to create your Azure Databricks workspace:
 
    - **Subscription**: Choose the Azure subscription in which to deploy the workspace.
-   - **Resource Group**: Leave at Create new and provide a name for the new resource group.
+   - **Resource Group**: Use **Create new** and provide a name for the new resource group.
    - **Location**: Select a location near you for deployment. For the list of regions that are supported by Azure Databricks, see [Azure services available by region](https://azure.microsoft.com/regions/services/).
    - **Workspace Name**: Provide a name for your workspace.
    - **Pricing Tier**: Select **premium**.
 
 1. Accept the terms and conditions.
 1. Select **Purchase**.
-1. The workspace creation takes a few minutes. During workspace creation, the **Submitting deployment for Azure Databricks** tile appears on the right side of the portal. You might need to scroll right on your dashboard to see the tile. There's also a progress bar displayed near the top of the screen. You can watch either area for progress.
+
+The workspace creation takes a few minutes. During workspace creation, the **Submitting deployment for Azure Databricks** tile appears on the right side of the portal. You might need to scroll right on your dashboard to see the tile. There's also a progress bar displayed near the top of the screen. You can watch either area for progress.

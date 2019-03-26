@@ -3,7 +3,7 @@ After creating your Databricks workspace, it's time to create your first noteboo
 
 ## What is Apache Spark notebook?
 
-A notebook is a collection of cells. These cells are run to execute code, render formatted text, or display graphical visualizations.
+A notebook is a collection of cells. These cells are run to execute code, to render formatted text, or to display graphical visualizations.
 
 ## What is a cluster?
 
@@ -11,7 +11,7 @@ The notebooks are backed by clusters, or networked computers, that work together
 
 ## Create a cluster
 
-1. On the left-hand menu of your Databricks workspace, select **Clusters**.
+1. In the left-hand menu of your Databricks workspace, select **Clusters**.
 1. Select **Create Cluster** to add a new cluster.
 
     ![The create cluster page](../media/create-a-cluster.png)
@@ -37,7 +37,7 @@ The notebooks are backed by clusters, or networked computers, that work together
 
 1. Name your notebook **First Notebook**.
 1. Set the **Language** to **Python**.
-1. Select the cluster to which to attach this Notebook.
+1. Select the cluster to which to attach this notebook.
 
      > [!NOTE]
      > This option displays only when a cluster is currently running. You can still create your notebook and attach it to a cluster later.
@@ -52,7 +52,7 @@ To use your notebook to run a code, you must attach it to a cluster. You can als
 
 ![The options that are available when a notebook is attached to a cluster](../media/attach-detach-cluster.png)
 
-If your notebook is attached to a cluster you can:
+If your notebook is attached to a cluster, you can:
 
 - Detach your notebook from the cluster
 - Restart the cluster

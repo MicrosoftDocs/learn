@@ -1,5 +1,5 @@
 
-In this module, you learned the basics about using Databricks workspace and Apache Spark notebooks. The notebooks allow you to interactively work with different types of data. You can use notebooks to process huge data files, query, read, and write data from different sources, and process live data streams.
+In this module, you learned the basics about using Databricks workspace and Apache Spark notebooks. The notebooks allow you to interactively work with different types of data. You can use notebooks to process huge data files, query, read and write data from different sources, and process live data streams.
 
 ## Clean up 
 
