@@ -18,14 +18,14 @@ Execute following statements in the query window to create an external data sour
 
 Replace token **<Name_Of_Storage_Account>** with name of Azure Storage account provisioned in your resource group in the final step of the Setup the Environment unit.
 
-    ```sql
+   ```sql
     CREATE EXTERNAL DATA SOURCE LabAzureStorage
     WITH
     (
       TYPE = Hadoop,
       LOCATION = 'wasbs://labdata@<Name_Of_Storage_Account>.blob.core.windows.net/'
     );
-    ```
+   ```
 
 ![External data source query](../media/sql-dw-external-datasource.png)
 
