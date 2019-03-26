@@ -5,6 +5,8 @@ We're now ready to train our model.
     > [!TIP]
     > Training is not always immediate. Sometimes it gets queued and can take several minutes.
 
+## Create a public endpoint for the LUIS service
+
 1. After training is finished, select **Manage** in the top bar. The following options will appear on the left side of the window:
 
    - **Application information**
@@ -13,9 +15,17 @@ We're now ready to train our model.
    - **Versions**
    - **Collaborators**
 
-1. Select **Keys and endpoints**.
-1. A **Starter_Key** is available for you to use for testing. To use the LUIS service resource that you created in the optional exercise earlier, select **+ Assign Resource**. Follow the steps to assign the subscription key from that resource.
-1. Leave the endpoint slot set to **Production**. In the top bar, select **Publish**.
+1. Select **Keys and endpoints**. This screen is used to manage the URL endpoints used to access the LUIS service.
+
+    > [!NOTE]
+    > An endpoint named **Starter_Key** is automatically created for testing purposes, and you could use that here - however to use the service in a production environment or inside of an application, you will always want to tie it to a real Language Understanding resource created in Azure.
+
+1. Select **+ Assign Resource**. Select your tenant, subscription, and the resource you created in the Azure portal earlier and then select **Assign Resource** to connect the Language Understanding resource to the LUIS service.
+
+## Publish the app
+    
+1. Leave the endpoint slot set to **Production**. 
+1. In the top bar, select **Publish**.
 
    > [!NOTE]
    > You can publish to your **Production** or **Staging** endpoint. Select **Production**, and read about the reasons for the two endpoints.
