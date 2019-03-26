@@ -10,7 +10,7 @@ Design a hybrid network architecture on Azure
 
 ## Level
 
-- Beginner
+- Intermediate
 
 ## Product(s)
 
