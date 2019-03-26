@@ -53,7 +53,7 @@ By default, when you do not define a data distribution method, your table will b
 
 Execute the following statement in a new query window to create a **Round Robin** distributed table:
 
-    ```sql
+   ```sql
     CREATE TABLE [dbo].[Sales]
     (
       [ProductKey] int NOT NULL,
@@ -70,9 +70,9 @@ Execute the following statement in a new query window to create a **Round Robin*
       CLUSTERED COLUMNSTORE INDEX,
       DISTRIBUTION = ROUND_ROBIN
     );
-    ```
+   ```
 
-    - **DISTRIBUTION = ROUND_ROBIN**
+  - **DISTRIBUTION = ROUND_ROBIN**
 
   Distributes the rows evenly across all the distributions in a round-robin fashion. That is, there's no sorting done during the round robin process, which places your data. This is the default for SQL Data Warehouse.
 
@@ -80,7 +80,7 @@ Execute the following statement in a new query window to create a **Round Robin*
 
 Execute the following statement in a new query window to create a **REPLICATE** table. Ensure SQL Data Warehouse is selected as target database in the query window:
 
-    ```sql
+  ```sql
     CREATE TABLE [dbo].[States]
     (
       [StateKey] int NOT NULL,
@@ -91,7 +91,7 @@ Execute the following statement in a new query window to create a **REPLICATE** 
       CLUSTERED COLUMNSTORE INDEX,
       DISTRIBUTION = REPLICATE
     );
-    ```
+  ```
 
 ## Query SQL Data Warehouse
 
@@ -136,7 +136,7 @@ Continue using Azure Data Studio to perform the following queries against your d
 
 You should see 6 messages stating `(1 row affected)`.
 
-    ![Insert rows into the EmployeeBasic table.](../media/azure-data-studio-insert-rows.png)
+   ![Insert rows into the EmployeeBasic table.](../media/azure-data-studio-insert-rows.png)
 
 1. Insert a few rows into the **EmployeeRemuneration** table. Execute the following `INSERT` statements:
 

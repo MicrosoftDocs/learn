@@ -40,9 +40,9 @@ Another pre-requisite is to [create a database master key](https://docs.microsof
 
 You'll receive the following message if you already have a master key defined in the database:
 
-    ```
-    There is already a master key in the database. Please drop it before performing this statement.
-    ```
+  ```
+   There is already a master key in the database. Please drop it before performing this statement.
+  ```
 
 If you see this message, you can ignore it and continue to the following steps.
 
