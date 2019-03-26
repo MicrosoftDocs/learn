@@ -1,72 +1,72 @@
-You understand that using Azure Databricks to connect to your SQL Data Warehouse is the best way forward. Now you would like to try establishing this connection on a sample database so that you completely understand all the required steps. In this module, you're provided with sample exercises to perform end-to-end connectivity procedures.
+You understand that using Azure Databricks to connect to your SQL Data Warehouse is the best way forward. Now you want to try to establish this connection on a sample database so you completely understand all the required steps. In this module, you'll work through end-to-end connectivity procedures.
 
-Let's start by setting up the environment, that includes provisioning a sample SQL Data Warehouse, creating new Azure Data Studio connections, and setting up resources for our exercise.
+Let's start by setting up the environment. Setup includes provisioning a sample SQL data warehouse, creating Azure Data Studio connections, and setting up resources.
 
-## Provision SQL Data Warehouse
+## Set up SQL Data Warehouse
 
-1. In the [Azure portal](https://portal.azure.com), select **+ Create a resource**, enter "SQL Data Warehouse" into the Search the Marketplace box, select **SQL Data Warehouse** from the results, and select **Create**.
+1. In the [Azure portal](https://portal.azure.com), select **Create a resource**, enter **SQL Data Warehouse** into the **Search the Marketplace** box, select **SQL Data Warehouse** in the results, and then select **Create**.
 
-    ![Create SQL Data Warehouse](../media/create-sql-data-warehouse.png)
+    ![Create a SQL data warehouse](../media/create-sql-data-warehouse.png)
 
-1. In the Create SQL Data Warehouse blade, enter the following information:
+1. On the **Create SQL Data Warehouse** blade, enter this information:
 
-   - _Database name_: Enter a unique name (make sure you see a green checkbox)
-   - _Subscription_: Select the subscription you're using for this exercise
-   - _Resource group_: Choose your exercise resource group
-   - _Select source_: Select **Blank database** from the list
-1. Select **Server (Configure required settings)**, then select **Create new server**. In the New server blade, enter the following information:
-   - _Server name_: Enter a unique name (make sure you see a green checkbox)
-   - _Server admin login_: Enter **dwlab**
-   - _Password_: Enter a valid password, then **confirm password**
-   - _Location_: Select the location you're using for resources in this exercise
-   - _Allow Azure services to access server_: Check the checkbox
-   - Click **Select**
-   - _Performance level_: Select Gen2: DW500c
+   - _Database name_: Enter a unique name. (Make sure you see a green check mark.)
+   - _Subscription_: Select the subscription you're using for this exercise.
+   - _Resource group_: Select the resource group you're using for this exercise.
+   - _Select source_: Select **Blank database** in the list.
+1. Select **Server (Configure required settings)**, and then select **Create new server**. In the **New server** blade, enter this information:
+   - _Server name_: Enter a unique name. (Make sure you see a green check mark.)
+   - _Server admin login_: Enter **dwlab**.
+   - _Password_: Enter a valid password, and then confirm the password.
+   - _Location_: Select the location you're using for resources in this exercise.
+   - _Allow Azure services to access server_: Select the check box.
+   - Click **Select**.
+   - _Performance level_: Select **Gen2: DW500c**.
 
-    ![Create SQL Data Warehouse form](../media/create-sql-data-warehouse-form.png )
+    ![Create a SQL data warehouse window](../media/create-sql-data-warehouse-form.png )
 
-> ![Note]
-> Record Username and Password of SQL server which will be used in later steps to connect to SQL Server.
+   > ![Note]
+   > Remember the user name and password for SQL Server. You'll need them.
 
-1. Select **Create**
+1. Select **Create**.
 
 ## Add your client IP address
 
 To connect to your database, add your computer's IP address to the SQL Server instance associated with SQL Data Warehouse.
 
-1. After the SQL Data Warehouse has been provisioned, open it by selecting **Go to resource** under notifications in Azure.
+1. After the SQL Data Warehouse is provisioned, open it by selecting **Go to resource** under notifications in Azure.
 
     ![Select Go to resource](../media/go-to-resource-sqldw.png)
 
-1. On top of the Overview blade, select the **Server name** to navigate to the associated SQL Server instance.
+1. At the top of the **Overview** blade, select the **Server name** link to go to the associated SQL Server instance.
 
-    ![Select the Server name link in the SQL Data Warehouse Overview blade.](../media/sql-dw-server-link.png)
+    ![Select the Server name link](../media/sql-dw-server-link.png)
 
-1. Select **Firewalls and virtual networks** on the left-hand menu.
+1. Select **Firewalls and virtual networks** in the menu on the left.
 
-    ![Select the Firewalls and virtual networks link.](../media/firewall-link.png)
+    ![Select Firewalls and virtual networks](../media/firewall-link.png)
 
-1. In the Firewalls and virtual networks blade, select **Add client IP**. This will automatically add your detected IP address to the allowed IP addresses list. Adding a client IP is required for you to be able to connect to SQL Data Warehouse from your computer. Next, select **Save** to save your changes.
+1. On the **Firewalls and virtual networks** blade, select **Add client IP**. This will add your detected IP address to the allowed IP addresses list. The client IP needs to be added so you can connect to SQL Data Warehouse from your computer. Select **Save**.
 
-   ![Select the Add client IP, then select Save.](../media/add-client-ip.png)
+   ![Select Add client IP](../media/add-client-ip.png)
 
 ## Download and install Azure Data Studio
 
-[Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is?view=sql-server-2017) is a cross-platform database tool that you can run on Windows, MacOS, and Linux. You'll use this tool to connect to SQL Data warehouse and SQL Database.
+[Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is?view=sql-server-2017) is a cross-platform database tool that you can run on Windows, macOS, and Linux. You'll use it to connect to SQL Data Warehouse and Azure SQL Database.
 
-1. Follow [this link](https://docs.microsoft.com/sql/azure-data-studio/download?view=sql-server-2017) to install Azure Data Studio for your operating system.
+1. [Install Azure Data Studio for your operating system.](https://docs.microsoft.com/sql/azure-data-studio/download?view=sql-server-2017)
 
-1. Start the Azure Data Studio app.
+1. Start Azure Data Studio.
 
-## Create new connections in Azure Data Studio
+## Create connections in Azure Data Studio
 
-1. To connect to your data warehouse, you need to connect through the logical SQL server you created when you provisioned SQL Data Warehouse earlier.
-1. Visit Azure portal and Select your data warehouse from resource group created for this exercise.
-1. Find the full name of the logical SQL server on top of the Overview blade, as you did in step 2 of the previous section.
+1. When you connect to your data warehouse, you need to connect through the logical SQL Server instance that you created when you provisioned SQL Data Warehouse earlier.
+1. Go to the Azure portal and select your data warehouse from the resource group that you created for this exercise.
+1. Find the full name of the logical SQL Server instance at the top of the **Overview** blade, as you did in step 2 of the "Add your client IP address" section. Remember this name.
 
-    ![Copy the SQL Server name in the SQL Data Warehouse Overview blade.](../media/sql-dw-server-link.png)
+    ![SQL Server instance name](../media/sql-dw-server-link.png)
 
-1. Switch back to the Azure Data Studio app.
+1. Go back to Azure Data Studio.
 1. Add a new connection. This option will display by default if it is your first time running Azure Data Studio.
 1. Fill in the fields in the Connection window.
 
