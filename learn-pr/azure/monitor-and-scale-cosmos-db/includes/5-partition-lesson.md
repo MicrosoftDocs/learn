@@ -4,7 +4,7 @@ The partition key is a _document_ property. Documents with the same partition ke
 
 ## Avoiding hot partitions 
 
-The Azure Cosmos DB throughput you've configured is divided evenly among partitions. A partition key design that doesn't evenly distribute throughput requests can create _hot_ partitions. A hot partition is accessed more than the other partitions, which results in an inefficient use of the total configured throughput. If the demand on the hot partition is high enough, the partition becomes overloaded and traffic to the database is rate-limited.
+The Azure Cosmos DB throughput you've configured is divided evenly among partitions. A partition key design that doesn't evenly distribute throughput requests can create _hot_ partitions. A hot partition is accessed more than the other partitions. The result is an inefficient use of the total configured throughput. If the demand on the hot partition is high enough, the partition becomes overloaded and traffic to the database is rate-limited.
 
 A good partition design avoids hot partitions.
 

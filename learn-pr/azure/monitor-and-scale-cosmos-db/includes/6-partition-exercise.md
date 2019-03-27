@@ -23,7 +23,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
     ![Screenshot that shows the chart for uneven distribution of partition access](../media/6-hot-partition-throughput.png)
 
-    Notice the imbalance between the two partitions. Most of the requests are for the first partition, which is being overused. The other partition is being underused. The **HotPartition** collection isn't configured to efficiently use its total allocated request units, which is 7,000 RU/s. The first partition is in danger of being throttled, while the second has plenty of capacity available.
+    Notice the imbalance between the two partitions. Most of the requests are for the first partition, which is being overused. The other partition is being underused. The **HotPartition** collection isn't configured to efficiently use its total allocated request units (7,000 RU/s). The first partition is in danger of being throttled, while the second has plenty of capacity available.
 
 1. Select the blue column for the first partition (Partition 0). With the partition selected, you see a list to the right of the chart that shows the partition key values that are dominating the partition. In this case, `Books` values make up the largest logical partition.
 
@@ -37,7 +37,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
     ![Chart for even partition throughput](../media/6-even-partitions-throughput.png)
 
-    You see that the requests are balanced between the two partitions. The **Orders** collection has a more efficient partitioning scheme because it uses the available capacity.
+    You see that the requests are balanced between the two partitions. The Orders collection has a more efficient partitioning scheme because it uses the available capacity.
 
     The line on the chart indicates the throughput limit of each partition. You see that you're well within the configured limit.
 
