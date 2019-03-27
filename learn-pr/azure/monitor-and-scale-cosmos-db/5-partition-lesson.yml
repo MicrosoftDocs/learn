@@ -18,16 +18,16 @@ quiz:
   questions:
   - content: "What causes a hot partition in a distributed NoSQL database collection?"
     choices:
-    - content: "A partition key with a large number of values"
+    - content: "A partition key with a large number of values."
       isCorrect: false
       explanation: "Partition key values with a large number of matches are distributed across partitions."
-    - content: "A partition key that doesn't distribute requests evenly over storage and time"
+    - content: "A partition key that doesn't distribute requests evenly over storage and time."
       isCorrect: true
       explanation: "Access that's concentrated to fewer values of the partition key can cause bottlenecks on a single partition."
-    - content: "A read-heavy workload"
+    - content: "A read-heavy workload."
       isCorrect: false
       explanation: "Requests should be evenly distributed across partitions regardless of workload type, partition key values, and access."
-    - content: "Querying a large volume of data"
+    - content: "Querying a large volume of data."
       isCorrect: false  
       explanation: "Requests should be evenly distributed across partitions regardless of workload type, partition key values, and access."
   - content: "What's the best way to maximize the efficiency of an individual database query?"

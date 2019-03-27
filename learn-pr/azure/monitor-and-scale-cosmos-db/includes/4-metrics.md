@@ -148,7 +148,7 @@ If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `C
       Performed 1 Write operations @ 1 operations/s, 14.1 RU/s (0B max monthly 1KB reads)
       ```
 
-The consumption of this single write operation for a 1-KB document with the default indexing configuration is approximately 13-15 RUs.
+The consumption of this single write operation for a 1-KB document with the default indexing configuration is about 13 to 15 RUs.
 
 ### Query a single document
 
@@ -175,7 +175,7 @@ Reading a document directly from your Azure Cosmos DB collection by using its `i
    - `"id":"07d34e38-bfab-90dc-6031-bcc9115d30e0"`
    - `"Item":{"id":"780115d0-a6a0-d62c-320e-bdf7b624d241 ...}"`
 
-1. Read a single document directly from the **Orders** collection by adding those values to the following command:
+1. Read a single document directly from the **Orders** collection by adding those values to the following command.
 
     ```bash
     dotnet run -- -o ReadDocument -l dbs/mslearn/colls/Orders/docs/<Document id value> -k <Item id value> -n 1

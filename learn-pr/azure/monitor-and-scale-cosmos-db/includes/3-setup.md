@@ -19,7 +19,7 @@ A database account is a container for multiple Azure Cosmos DB databases.
     az cosmosdb create --resource-group <rgn>Sandbox Resource Group</rgn> --name $COSMOS_NAME
     ```
 
-The database account can take 4-5 minutes to provision. Keep reading while the account is being created.
+The database account can take 4 to 5 minutes to provision. Keep reading while the account is being created.
 
 ## Azure Cosmos DB concepts
 

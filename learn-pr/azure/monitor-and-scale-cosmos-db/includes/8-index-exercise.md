@@ -66,7 +66,7 @@ Update the **Orders** collection to index none of the properties.
 
 ## Measure RUs for a partial index
 
-1. Update the **Orders** collection to index on only some of the order properties.
+1. Update the Orders collection to index on only some of the order properties.
 
     ```bash
     az cosmosdb collection update -g <rgn>Sandbox Resource Group</rgn> -n $COSMOS_NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-partial.json
@@ -100,7 +100,7 @@ Update the **Orders** collection to index none of the properties.
 
 In the previous exercises, the index is set to **consistent** so it's updated synchronously. In this exercise, we set the indexing mode to **lazy**. The index is updated when the collection isn't being used.
 
-1. Update the **Orders** collection to lazy index on all properties.
+1. Update the Orders collection to lazy index on all properties.
 
     ```bash
     az cosmosdb collection update -g <rgn>Sandbox Resource Group</rgn> -n $COSMOS_NAME -d mslearn -c Orders --indexing-policy @IndexConfig/index-lazy-all.json
