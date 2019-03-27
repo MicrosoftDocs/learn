@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.gather-metrics-from-your-azure-blob-storage-containers.7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs
+uid: learn.azure.gather-metrics-from-blob-storage.7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs
 title: Exercise - 
 metadata:
   title: Adding Azure Monitor metrics charts to a custom dashboard
