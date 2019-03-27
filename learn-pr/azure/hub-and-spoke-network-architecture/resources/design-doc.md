@@ -63,17 +63,7 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
         - Considerations for identity and access management
         - Peering and traffic management for hub-spoke on Azure
 
-3. **Exercise - Implementing a hub-spoke network topology on Azure**
-
-    List the steps that apply the learning content from previous unit (separate out each language):
-
-        1. Run a script in the Cloud Shell to create foundational hub/spoke components.
-        2. Complete the steps to enable virtual networking configuration.
-        3. Run through virtual networking peering in the portal
-        4. Configure NVA routing to allow for spoke to spoke connectivity
-        5. Access control with Azure AD
-
-4. **Planning virtual networks on Azure**
+3. **Planning virtual networks on Azure**
 
     List the content that will enable the learner to *Identify the components and limitations for connectivity to on-premises networks*:
 
@@ -86,6 +76,16 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
     - Overview of Azure ExpressRoute
         - Summary of Azure ExpressRoute
         - Using Azure ExpressRoute in a hub-spoke topology
+
+4. **Exercise - Implementing a hub-spoke network topology on Azure**
+
+    List the steps that apply the learning content from previous unit (separate out each language):
+
+        1. Run a script in the Cloud Shell to create foundational hub/spoke components.
+        2. Complete the steps to enable virtual networking configuration.
+        3. Run through virtual networking peering in the portal
+        4. Configure NVA routing to allow for spoke to spoke connectivity
+        5. Access control with Azure AD
 
 5. **Knowledge check**
 
@@ -112,7 +112,7 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
     - Network security with Azure Network Security Groups
         - Overview of Azure Network Security Groups
         - Defining security rules
-        - Traffic Flow with NSGs
+        - Traffic Flow with Network Security Groups
         - Additional security considerations
 
 7. **Knowledge check**
@@ -156,7 +156,7 @@ Phillip Stollery (Content Master Ltd) I've moved the design doc to GitHub for y
 
 I've made some minor changes to verbiage and a unit title.
 
-- We may want to consider swapping unit 3 and 4. It has an overview of virtual networks in Azure, but that's after we create the vnets, this might make more sense before the actual exercise
+- We may want to consider swapping unit 3 and 4. It has an overview of virtual networks in Azure, but that's after we create the vnets, this might make more sense before the actual exercise. Done
 - Consider doing the exercise even later, and using Azure Firewall instead of the NVA
 - NVA's are tricky, and can take time, they also are typically marketplace purchases, which are not available in sandbox. Consider just making that topical to keep the exercise do-able, or do Azure Firewall instead.
 - Don't use the "security by design" term. We do want to cover security, but that's not a term I've seen used with Azure virtual networking.
