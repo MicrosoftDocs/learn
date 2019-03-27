@@ -49,35 +49,34 @@ Let's start by creating the server login that we'll use for the exercises in thi
     - *User name:* **Server Admin**
     - *Database:* The SQL Data Warehouse database that you created for this module.
 
-1. Navigate to the Servers list on the left-hand menu in Azure Data Studio. Right-click on the SQL Data Warehouse connection you made to the SQL Data Warehouse database, then select **New Query** from the context menu.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the SQL Data Warehouse connection you made to the SQL Data Warehouse database and select **New Query**.
 
-    ![Right-click on the SQL Data Warehouse connection then click New Query.](../media/azure-data-studio-new-query-dw.png)
+    ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
-1. Check if **SQL data Warehouse** (`sql-dw-exercise`) is selected for the query window.
+1. Check whether **SQL Data Warehouse** (`sql-dw-exercise`) is selected for the query window.
 
-1. To create user in **SQL Data Warehouse** using login created in earlier steps, execute the below statement:
+1. To create a user in SQL Data Warehouse using the login you created earlier, run this statement:
 
     ```sql
     CREATE USER LabUser FOR LOGIN LabUserLogin;
     ```
 
-1. Execute the following statement to allow LabUser to read data from SQL Data Warehouse:
+1. Run this statement to allow LabUser to read data from SQL Data Warehouse:
 
     ```sql
     EXEC sp_addrolemember 'db_datareader', 'LabUser';
     ```
 
-## Assign Resource Class
+## Assign a resource class
 
-Resource Classes manage resource allocation for query execution in SQL Data Warehouse. Resource Classes help to control memory allocation, CPU cycles, and Concurrency Slots given to each query.
+Resource classes manage resource allocation for query execution in SQL Data Warehouse. They help you control memory allocation, CPU cycles, and concurrency slots given to each query.
 
-Click [here](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-develop-concurrency#resource-classes)
-to learn more about resource classes.
+[Learn more about resource classes.](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-develop-concurrency#resource-classes)
 
-To assign resource class to user added in SQL Data Warehouse, execute the below statement in same query window used for the previous step:
+To assign a resource class to the user added to SQL Data Warehouse, run this statement in same query window that you used for the previous step:
 
 ```sql
 EXEC sp_addrolemember 'largerc', 'LabUser';
 ```
 
-The above statement assigns the '**largerc'** resource class to the newly added user.
+This statement assigns the `'largerc'` resource class to the newly added user.
