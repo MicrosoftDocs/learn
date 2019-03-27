@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.gather-metrics-from-blob-storage.7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs
-title: Exercise - 
+title: Exercise - Use the Azure portal to enable logging
 metadata:
-  title: Adding Azure Monitor metrics charts to a custom dashboard
-  description: Adding Azure Monitor metrics charts to a custom dashboard
+  title: Exercise - Use the Azure portal to enable logging
+  description: Use the Azure portal to enable logging
   ms.date: 03/26/2019
   author: rmcmurray
   ms.author: robmcm

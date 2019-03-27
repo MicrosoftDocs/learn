@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.gather-metrics-from-blob-storage.3-exercise-specify-monitor-blob-metrics
-title: Specify and Monitor Blob Metrics
+title: Exercise - Specify and Monitor Blob Metrics
 metadata:
-  title: Specify and Monitor Blob Metrics
+  title: Exercise - Specify and Monitor Blob Metrics
   description: Specify and Monitor Blob Metrics
   ms.date: 03/26/2019
   author: rmcmurray
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-interactive: bash-editor
+interactive: bash
 azureSandbox: true
 durationInMinutes: 15
 content: |
