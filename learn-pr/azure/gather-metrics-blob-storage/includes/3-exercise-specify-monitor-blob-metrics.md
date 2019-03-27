@@ -82,9 +82,9 @@ You are now ready to upload files to the blob container.
 
 1. Ensure that **Block blob** is selected.
 
-1. Under **Block size**, select a file size that is slighlty larger than the largest file you are uploading, then click **Upload**. Note when the file uploads have completed.
+1. Under **Block size**, select a file size that is slightly larger than the largest file you are uploading, then click **Upload**. Note when the file uploads have completed.
 
-Page blobs are typically for very large files, such as virtual machine images (VDHs) and the only block size available is 4 MB. Append blobs are optimised for append operations (such as log file updates).
+Page blobs are typically for very large files, such as virtual machine images (VDHs) and the only block size available is 4 MB. Append blobs are optimized for append operations (such as log file updates).
 
 ## Check size
 
@@ -114,7 +114,7 @@ Next, you will view the metrics that the storage account generates. To do this, 
 
    1. Under **RESOURCE**, click the name of the storage account you created .
 
-   1. Underneath appears the Subscription name, the name of the Resource Group, and the Resource Type. Note that all resorce types are selected by default.
+   1. Underneath appears the Subscription name, the name of the Resource Group, and the Resource Type. Note that all resource types are selected by default.
 
    1. Under **METRIC NAMESPACE**, select **Blob**.
 
@@ -124,7 +124,7 @@ Next, you will view the metrics that the storage account generates. To do this, 
 
    1. Repeat the previous six steps to add **Blob Container Count** and **Blob Count** to the chart.
 
-Note at the bottom of the chart that you now have a color bar and a count for the current value of the counter. It is highly likely that the counter will initally be zero for all the Capacity metrics, as the values have not been aggregated.
+Note at the bottom of the chart that you now have a color bar and a count for the current value of the counter. It is highly likely that the counter will initially be zero for all the Capacity metrics, as the values have not been aggregated.
 
 ## Creating a Transaction Metrics Chart
 
@@ -193,7 +193,7 @@ Note the data values and compare those with the **ListBlobs** value from the spl
 
 ## Customizing charts
 
-You can customise charts in various ways, such as by changing the time range, time granularity, and time zone. To make these changes, carry out the following steps.
+You can customize charts in various ways, such as by changing the time range, time granularity, and time zone. To make these changes, carry out the following steps.
 
 1. At the top of the chart, it says **Last 24 hours (automatic)**. Click this oval and the Time range and Time granularity dialog box appears.
 
@@ -211,7 +211,7 @@ Metric data can be viewed in other formats, including Line charts, bar charts, a
 
 1. Click **Area Chart**, and select **Scatter Chart**. Note that with the low levels of storage activity, the scatter chart will only show the peaks of activity.
 
-1. Click the elipsis next to **Pin to dashboard** and click **Chart Settings**.
+1. Click the ellipsis next to **Pin to dashboard** and click **Chart Settings**.
 
 1. Under **Chart Title**, click **Custom**, then enter a more descriptive name for the chart.
 

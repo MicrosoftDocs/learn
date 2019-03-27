@@ -17,7 +17,7 @@ First, you will create a virtual machine scale set using the Azure portal.
   ```
   Where <StorageAccountNAme> is the name of the storage account you created in the first exercise; for example: **monitorstorageaccount**.
   
-1. Notice which operations are currently logged and the log retention period. If `LoggingOperations` is set to `None`, then you will need to enable logging. To do so, enter the following commannd the Azure Cloud Shell pane:
+1. Notice which operations are currently logged and the log retention period. If `LoggingOperations` is set to `None`, then you will need to enable logging. To do so, enter the following command the Azure Cloud Shell pane:
 
   ```powershell
   Set-AzureStorageServiceLoggingProperty -ServiceType Blob -LoggingOperations read,write,delete -RetentionDays 5
@@ -52,7 +52,7 @@ Download the Azure Storage Explorer tool in order to download the storage analyt
 
 1. Launch the **Microsoft Azure Storage Explorer**.
 
-1. On the left-side toolbar, click the icon for **Add Accont**.
+1. On the left-side toolbar, click the icon for **Add Account**.
 
 1. When the **Connect to Azure Storage** dialog box appears:
 
@@ -70,7 +70,7 @@ Download the Azure Storage Explorer tool in order to download the storage analyt
 
 1. In **Microsoft Azure Storage Explorer**:
 
-  1. If you are prompted to choose an Azure subscription, make sure that you choose the subscription that you used when you creatd your Azure Storage Account, and then click **Apply**.
+  1. If you are prompted to choose an Azure subscription, make sure that you choose the subscription that you used when you created your Azure Storage Account, and then click **Apply**.
 
   1. In the Explorer view, under the associated Azure subscription, expand **Storage Accounts**, expand the storage account you created in the first exercise, and expand **Blob Containers**.
 
