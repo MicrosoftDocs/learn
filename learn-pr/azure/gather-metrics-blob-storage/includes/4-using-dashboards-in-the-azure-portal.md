@@ -2,10 +2,6 @@ You have now identified certain metrics in Azure Blob storage that you'll want t
 
 Management has also asked for regular reports about the use and performance of the platform to ensure clients will be satisfied as more files are moved into Azure. You want to see if management can be given dashboards for this purpose.
 
-## Learning Objective
-
-By the end of this unit, you'll be able to create, customize, and share Azure dashboards in the Azure portal.
-
 ## Azure Dashboards
 
 You'll often want to create the same reports using up-to-date information, such as platform usage or the resultant performance when working with files on a storage platform. However, it is inconvenient to create a fresh chart and configure the settings each time you want to see such a report. 
@@ -71,7 +67,3 @@ For dashboards, this means that you could apply permissions for a security group
 
 > [!NOTE]
 > Note: While you can assign roles to individual user accounts in Azure AD, it is recommended that you assign roles to security groups for easier management as your organization grows.
-
-## Summary
-
-In this unit, you saw how to create, customize, and share Azure dashboards in the Azure portal.

@@ -103,7 +103,3 @@ If you have microsoft Excel, you can download and import the log data for more e
 1. In the log file preview window, ensure that **Delimiter** shows **Semicolon**, and that the entries appear to have columns correctly separated by field, then click **Load**.
 
 1. Review the log data in Excel. You can use the log format reference from the previous unit to identify which columns show which information.
-
-## Summary
-
-In this exercise, you applied the knowledge you gained in the previous module in a practical environment. You checked the logging setting for a storage account, and then used the Azure Storage Explorer to download storage logs.

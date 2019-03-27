@@ -148,7 +148,3 @@ First, you will create a custom dashboard to display the metrics charts.
 1. On the left-side navigation, click **Dashboard**.
 
 After a delay of up to 15 mins, you should see some lines appear on the chart representing the downloads you performed.
-
-## Summary
-
-In this exercise, you applied the knowledge you gained in the previous unit in a practical environment. You created an Azure dashboard, added storage metrics charts to the dashboard, and shared the dashboard with a group in your organization.

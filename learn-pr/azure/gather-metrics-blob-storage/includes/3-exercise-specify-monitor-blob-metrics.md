@@ -232,9 +232,3 @@ Exporting a chart to Excel gives you all the data analysis tools of that platfor
 1. Open the Excel spreadsheet that gets downloaded.
 
 1. View the data that the chart contains.
-
-At the end of this lab, do not delete any of the resorces that you have created, as you will reuse them for Unit 5.
-
-## Summary
-
-In this exercise, you applied the knowledge you gained in the previous module in a practical environment. You created a storage account with associated blob storage, then viewed the different metrics that appear.

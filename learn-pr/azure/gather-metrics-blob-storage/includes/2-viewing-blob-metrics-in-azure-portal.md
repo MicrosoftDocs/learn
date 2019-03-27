@@ -145,7 +145,3 @@ Within each of the four chart types, you can then customize the way in which tho
 ![Chart Customization](../media/2-chart-customization.png)
 
 Here you have options to edit the chart title and change the Y-axis range between set minimum and maximum values.
-
-## Summary
-
-In this unit, you saw how to identify, select, and display Azure Blob Storage metrics and display those metrics in the Azure portal. In the next unit, you'll carry out a practical exercise to reinforce this knowledge.
