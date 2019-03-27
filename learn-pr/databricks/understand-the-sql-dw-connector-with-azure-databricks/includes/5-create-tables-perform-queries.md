@@ -222,7 +222,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-### Perform join queries
+### Run join queries
 
 1. Join the tables **EmployeeBasic** and **EmployeeRemuneration** by using the key **EmployeeID**, and select **EmployeeID**,
     **EmployeeName**, **EmployeeDesignation**, and **Salary**.
@@ -237,9 +237,9 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
     JOIN [dbo].[EmployeeBasic] EB ON ER.EmployeeID = EB.EmployeeID;
     ```
 
-### Use of aggregations with Join operations
+### Use aggregations with join operations
 
-1. Find the details of all employees who receive the maximum salary in their department.
+1. Get details about all employees who receive the maximum salary in their department:
 
     ```sql
     SELECT
@@ -253,7 +253,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
         WHERE ER2.DepartmentID = ER1.DepartmentID );
     ```
 
-1. Select the second maximum salary from each department, if there's only one employee in any department then it will display their salary.
+1. Select the second highest salary in each department. If there's only one employee in any department, return that employee's salary.
 
     ```sql
     SELECT

@@ -49,7 +49,7 @@ Let's start by creating the server login that we'll use for the exercises in thi
     - *User name:* **Server Admin**
     - *Database:* The SQL Data Warehouse database that you created for this module.
 
-1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the SQL Data Warehouse connection you made to the SQL Data Warehouse database and select **New Query**.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection you made to the SQL Data Warehouse database and select **New Query**.
 
     ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
