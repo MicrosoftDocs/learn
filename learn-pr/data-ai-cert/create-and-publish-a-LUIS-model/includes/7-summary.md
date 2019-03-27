@@ -1,15 +1,13 @@
-Language Understanding service (LUIS) allows your application to understand what a person wants in their own words. LUIS uses machine learning to allow developers to build applications that can receive user input in natural language and extract meaning from it.
+Language Understanding Intelligent Service (LUIS) allows your application to understand what people want in their own words. With LUIS, you can build applications that receive user input in natural language and extract meaning from it.
 
-In this module you've created a simple LUIS application using a starter key, added some intents, utterances, and entities to test interaction with a user.  The foundation for building this LUIS application was for integration into a bot application.  You can integrate LUIS into your own AI applications, using the API documentation to understand how to perform that integration.
+In this module, you created a simple LUIS application. You then added some intents, utterances, and entities to test how it interacts with a user. The idea behind building this LUIS application was to integrate it into a bot application. To integrate LUIS into your own AI applications, use the API documentation to understand how to do that integration.
 
 ## Cleanup
 
-To avoid any unexpected costs in your Azure account, delete the **LearnRG** resource group. This will remove all of the resources we created in this module. Here's the steps you need to do.
+1. To avoid any unexpected costs in your Azure account, delete the **LearnRG** resource group. Deleting this group will remove all the resources we created in this module. Here are the steps you need to take:
 
-1. Find the **LearnRG** resource group. Select **Resource groups** in the Azure sidebar to quickly locate it.
-
-1. Select the resource group and either right-click on the row, or use the "..." button on the far-right side of the row to open the context menu.
-
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In the left pane, select **Resource groups**, and then find the **LearnRG** resource group.
+1. Select the resource group, and either right-click the row or use the **ellipsis** (...) button to open the context menu.
 1. Select **Delete resource group**.
-
-1. Type the name of the resource group and click **Delete**. Azure will de-provision all of the resources for you.
+1. Enter the name of the **LearnRG** resource group, and then select **Delete**. Azure will remove all the resources for you.
