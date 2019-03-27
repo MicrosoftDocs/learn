@@ -36,7 +36,6 @@ Design a network architecture in Azure that allows for growth & flexibility, sec
 - Identify the components and limitations for connectivity to on-premises networks
 - Identify methods to secure connectivity in a hub and spoke network
 
-
 ## Chunk your content into subtasks
 
 Identify the subtasks of *Centralize your core services using hub and spoke Azure VNet architecture*
@@ -47,7 +46,6 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
 | Planning Virtual Networks on Azure | Identify the components and limitations for connectivity to on-premises networks | Knowledge Check | 2 | Yes |
 | Security by design with Azure | Identify methods to secure connectivity in a hub and spoke network | Knowledge Check | 3 | Yes |
 ||||||
-
 
 ## Outline the units
 
@@ -61,7 +59,7 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
 
     - Hub and Spoke Architecture Foundations
         - Introduction to the Hub-Spoke topology
-        - Walkthrough of architectural components
+        - Walk through of architectural components
         - Considerations for identity and access management
         - Peering and traffic management for hub-spoke on Azure
 
@@ -146,20 +144,20 @@ Network security groups – Used to restrict access to the services in each VNet
 
 Resources:
 
-Reference architecture: https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services
-https://techcommunity.microsoft.com/t5/Azure/Microsoft-Azure-Hub-Spoke-model-by-Enterprise-Design-1-of-4/td-p/277896
-http://francescomolfese.it/en/2018/08/azure-networking-introduzione-al-modello-hub-spoke/
-https://azure.microsoft.com/mediahandler/files/resourcefiles/6ce2454f-eead-4b86-9a45-7434f890fea8/Mesh_and_Hub-Spoke_Networking_on_Azure.pdf
-http://www.deployazure.com/network/virtual-network/azure-vnet-peering-gateway-transit-hub-and-spoke/
+Reference architecture: <https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services>
+<https://techcommunity.microsoft.com/t5/Azure/Microsoft-Azure-Hub-Spoke-model-by-Enterprise-Design-1-of-4/td-p/277896>
+<http://francescomolfese.it/en/2018/08/azure-networking-introduzione-al-modello-hub-spoke/>
+<https://azure.microsoft.com/mediahandler/files/resourcefiles/6ce2454f-eead-4b86-9a45-7434f890fea8/Mesh_and_Hub-Spoke_Networking_on_Azure.pdf>
+<http://www.deployazure.com/network/virtual-network/azure-vnet-peering-gateway-transit-hub-and-spoke/>
 
 Comments:
 
 Phillip Stollery (Content Master Ltd) I've moved the design doc to GitHub for you. Overall, you're approved to move forward with content creation. A couple items of feedback:
 
 I've made some minor changes to verbiage and a unit title.
-- We may want to consider swapping unit 3 and 4. It has an overview of virtual networks in Azure, but that's after we create the vnets, this might make more sense before the actual exercise.
+
+- We may want to consider swapping unit 3 and 4. It has an overview of virtual networks in Azure, but that's after we create the vnets, this might make more sense before the actual exercise
 - Consider doing the exercise even later, and using Azure Firewall instead of the NVA
-- NVA's are tricky, and can take time, they also are typically marketplace purchases, which are not available in sandbox. Consider just making that topical to keep the exercise do-able, or do Azure Firewall instead. 
+- NVA's are tricky, and can take time, they also are typically marketplace purchases, which are not available in sandbox. Consider just making that topical to keep the exercise do-able, or do Azure Firewall instead.
 - Don't use the "security by design" term. We do want to cover security, but that's not a term I've seen used with Azure virtual networking.
 - Make sure to weave the scenario through the content. How does the organization apply these services and capabilities to their architecture?
-- testing git.
