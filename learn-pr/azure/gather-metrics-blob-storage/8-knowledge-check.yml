@@ -11,10 +11,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
+content: |
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "Which of the following is NOT a valid blob type in Azure storage?"
     choices:
     - content: "Page blob"
@@ -29,7 +29,6 @@ quiz:
     - content: "Block blob"
       isCorrect: false
       incorrectExplanation: "Block blobs are a valid blob type in Azure storage."
-
   - content: "Which one of the following chart types works best with data that varies rapidly over time?"
     choices:
     - content: "Line"
@@ -44,8 +43,6 @@ quiz:
     - content: "Scatter"
       isCorrect: true
       correctExplanation: "Scatter charts are best for data that varies rapidly over time."
-
-
   - content: "Which of the following types of content cannot be added to a dashboard markdown tile?"
     choices:
     - content: "Video"
@@ -60,7 +57,6 @@ quiz:
     - content: "Javascript"
       isCorrect: true
       incorrectExplanation: "Javascript content cannot be added to a dashboard markdown tile."
-
   - content: "Which of the following security principals can access shared dashboards in Azure?"
     choices:
     - content: "Only individual internal user assignments."
@@ -75,7 +71,6 @@ quiz:
     - content: "Internal users, individually and as part of a security group, and external users."
       isCorrect: false
       incorrectExplanation: "Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group."
-
   - content: "Which services is Storage Analytics logging available for?"
     choices:
     - content: "Blob service only"
