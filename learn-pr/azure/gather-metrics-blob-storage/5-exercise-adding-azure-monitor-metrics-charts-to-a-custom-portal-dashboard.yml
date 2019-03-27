@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 # TODO: Consider Azure Portal Interactivity
-interactive: azure
+interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 10
 content: |
