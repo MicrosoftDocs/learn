@@ -23,12 +23,11 @@ This module concentrates on Azure Blob storage, which is Microsoft's object stor
 - Storing backup, archiving, and disaster recovery data
 - Providing storage for data analysis, either on-premises or in Azure
 
-Blob storage resources consist of the following three concepts:
+Blob storage resources consist of the following:
 
-|---|---|
-| A storage account | A unique namespace for your data in Azure |
-| A container | Analogous to a folder in a file system |
-| One or more blobs in that container | Analogous to files in a file system |
+- **A storage account** - A unique namespace for your data in Azure
+- **A container** - Analogous to a folder in a file system
+- **One or more blobs in that container** - Analogous to files in a file system
 
 A storage account can have unlimited numbers of containers and a container can hold unlimited numbers of blobs.
 
