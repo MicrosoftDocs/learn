@@ -2,22 +2,19 @@
 uid: learn.gather-metrics-from-your-azure-blob-storage-containers
 metadata:
   title: Gather metrics from your Azure Blob Storage containers
-  description: Azure Storage Analytics enables you to trace requests, analyze usage trends, and diagnose issues with your storage account. You can then add these metrics to custom charts that you display in the Azure dashboard.
-  ms.date: 18/02/2019
-  #TODO: Update with real author name.
-  author: Geoff Allix
-  ms.author: v-gea
+  description: In this module, you'll gather information about the performance of your Azure Blob storage containers through Azure Storage Analytics (ASA). ASA enables you to trace requests, analyze usage trends, and diagnose issues with your storage account. You can then add these metrics to custom charts that you display in the Azure dashboard. 
+  ms.date: 03/26/2019
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: nakersha
 title: Gather metrics from your Azure Blob Storage containers
-summary: Review the process for gathering information about the performance of your Azure Blob storage containers through Azure Storage Analytics.
+summary: In this module, you'll learn how to use Azure Monitor to gather and view metrics for a blob storage account in Microsoft Azure. 
 abstract: | 
   In this module, you will:
-  - View Blob metrics in the portal.
-  - Add Azure Monitor metrics charts to a custom portal dashboard.
-  - Use the portal to enable logging and download the logs.
+  - View Blob metrics in the portal
+  - Add Azure Monitor metrics charts to a custom portal dashboard
+  - Use the portal to enable logging and download the logs
 prerequisites: |
   - Knowledge of Azure Portal
   - Knowledge of Azure Blob Storage Containers

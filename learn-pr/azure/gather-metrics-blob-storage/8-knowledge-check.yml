@@ -5,10 +5,9 @@ durationInMinutes: 3
 metadata:
   title: "Knowledge check: Gather metrics from your blob storage containers"
   description: Questions about blob storage account metrics and logging.
-  ms.date: 18/02/2019
-  #TODO: Update with real author name.
-  author: geoff allix
-  ms.author: v-gea
+  ms.date: 03/26/2019
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

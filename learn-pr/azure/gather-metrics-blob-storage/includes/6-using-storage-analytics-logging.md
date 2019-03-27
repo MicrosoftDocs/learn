@@ -1,5 +1,3 @@
-## Motivation
-
 You are now satisfied that the metrics will provide enough statistical information about the use and performance of Azure Blob storage for the company. However, before you commit to the platform, you want to be sure that you will be able to troubleshoot any issues that might occur with files that are shared with clients; for example:you want to be able to detect if files are not successfully downloading.
 
 You want to see what troubleshooting information is logged by Azure, and how to access the log files.

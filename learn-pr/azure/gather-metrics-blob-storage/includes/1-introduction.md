@@ -1,6 +1,4 @@
-## Module Motivation
- 
-You're the system administrator for a graphic design company. Teams at your company create large media files to cover online, broadcast, and print-based media, which are currently stored on servers in your datacenter, and heavily compressed before being download by clients via FTP for review. You plan to move all the files for review or handover into Azure Blob Storage, and provide clients with access directly, thus saving time and effort, and enabling clients to review and retrieve their files more easily.
+You're the system administrator for a graphic design company. Teams at your company create large media files to cover online, broadcast, and print-based media, which are currently stored on servers in your datacenter. The data is heavily compressed before being download by clients via FTP for review. You plan to move all the files for review or handover into Azure Blob Storage, and provide clients with access directly, thus saving time and effort, and enabling clients to review and retrieve their files more easily.
 
 Azure blob storage containers enable you to store massive amounts of unstructured data in Azure. Unstructured data includes images, distributed files, streaming video, and audio. You can also use blob storage to store log files, backup data, and data for analysis, either on-premises or by using an Azure-hosted service. 
 
@@ -8,28 +6,15 @@ Monitoring is also essential for controlling the costs of Azure storage, which w
 
 Note that this module deals with Azure Storage Analytics and its use in the portal. No developer subjects are included. A separate module covers how to use the Azure SDK and the Azure Monitor REST API to access Azure Storage Analytics (ASA) data. 
 
-## Short Abstract
-
-In this module, you'll learn how to use Azure Monitor to gather and view metrics for a blob storage account in Microsoft Azure. 
-
-## Long Abstract
-
-In this module, you'll gather information about the performance of your Azure Blob storage containers through Azure Storage Analytics (ASA). ASA enables you to trace requests, analyze usage trends, and diagnose issues with your storage account. You can then add these metrics to custom charts that you display in the Azure dashboard. 
-
 ## Learning Objectives
 
-At the end of this module, you'll be able to:
+In this module, you will:
 
-- View Blob metrics in the portal.
-- Add Azure Monitor metrics charts to a custom portal dashboard.
-- Use the portal to enable logging and download the logs.
+- View Blob metrics in the portal
+- Add Azure Monitor metrics charts to a custom portal dashboard
+- Use the portal to enable logging and download the logs
 
 ## Prerequisites
 
 - Knowledge of Azure portal
 - Knowledge of Azure Blob Storage Containers
-
-## Expected Duration
-
-80 minutes
-

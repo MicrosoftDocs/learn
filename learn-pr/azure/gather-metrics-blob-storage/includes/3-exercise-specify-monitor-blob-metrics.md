@@ -1,5 +1,3 @@
-## Motivation
-
 As a proof of concept exercise, you want to move some simple files into Azure Blob storage to see how the metrics are displayed in the Azure Portal. You will create a new storage group with associated blob storage, then view the different metrics that appear.
 
 ## Log on to Azure Portal

@@ -1,5 +1,3 @@
-## Motivation
-
 To get ready for moving client proofs into Azure Blob storage, you want to see how easy it will be to create the dashboards for ongoing monitoring. You also want to see how easy it will be to share dashboards with the management team. 
 
 In this exercise, you will create an Azure dashboard, add storage metric charts to the dashboard, and share the dashboard with a security group in Azure.

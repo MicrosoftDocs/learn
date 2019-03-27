@@ -4,10 +4,9 @@ title: Exercise -
 metadata:
   title: Adding Azure Monitor metrics charts to a custom dashboard
   description: Adding Azure Monitor metrics charts to a custom dashboard
-  ms.date: 18/02/2019
-  #TODO: Update with real author name.
-  author: geoff allix
-  ms.author: v-gea
+  ms.date: 03/26/2019
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

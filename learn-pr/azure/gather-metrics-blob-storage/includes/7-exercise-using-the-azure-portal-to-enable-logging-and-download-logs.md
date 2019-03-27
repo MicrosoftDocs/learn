@@ -1,5 +1,3 @@
-## Motivation
-
 Before moving client proofs into Azure Blob storage, you want to see how you can retrieve logging status and how to download the service log files from Azure. After downloading the log files, you would normally want to check what information is included in the log.
 
 In this exercise, you will check the logging status for your storage account using PowerShell, then download and review a log file.

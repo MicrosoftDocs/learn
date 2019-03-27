@@ -1,5 +1,3 @@
-## Motivation
-
 In preparation for moving client proof files to Azure Blob storage, you want to identify what metrics are available for the platform. You also want to see how easy it is to display metric information on an ad-hoc basis. For example, you might want to know how much storage is being used in Azure, or how much latency is involved when clients retrieve files for review.
 
 In this unit, you concentrate on using the Azure portal to view available metrics on-demand.
