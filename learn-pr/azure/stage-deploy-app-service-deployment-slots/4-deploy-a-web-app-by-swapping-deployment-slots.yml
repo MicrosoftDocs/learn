@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.stage-deploy-app-service-deployment-slots.4-deploy-a-web-app-by-swapping-deployment-slots
+title: Deploy a web app by swapping deployment slots
+metadata:
+  title: Deploy a web app by swapping deployment slots
+  description: In this unit, you will learn what happens in detail when you swap deployment slots.
+  ms.date: 03/27/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-deploy-a-web-app-by-swapping-deployment-slots.md)]
+quiz:
+  title: Deploy a web app by using deployment slots
+  questions:
+  - content: "Which of the following are always slot settings?"
+    choices:
+    - content: "Connection strings"
+      isCorrect: false
+      explanation: "Connection strings are, by default, non-slot settings, although you can choose to make them slot settings."
+    - content: "Private certificates"
+      isCorrect: true
+      explanation: "Private certificates are always slot settings, which means they are not swapped."
+    - content: "Public certificates"
+      isCorrect: false
+      explanation: "Public certificates are never slot settings, which means they are swapped."
+  - content: "What happens to a slot setting when a web app's staging slot is swapped with it's production slot?"
+    choices:
+    - content: "The value from the production slot moves to the staging slot."
+      isCorrect: false
+      explanation: "A slot setting is not swapped. The value in the production slot will remain in the production slot."
+    - content: "The value from the staging slot moves to the production slot."
+      isCorrect: false
+      explanation: "A slot setting is not swapped. The value in the staging slot will remain in the staging slot."
+    - content: "The value from the staging slot remains in the staging slot."
+      isCorrect: true
+      explanation: "A slot setting is not swapped. Both the staging and production values remain in their original slots."
