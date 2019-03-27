@@ -23,7 +23,7 @@ When you create a new dashboard, you specify a name or title for the dashboard, 
 
 Tiles can display several different types of content. Some tiles will display links to resources, and other tiles can display data about those resources in your Azure subscription, such as virtual machine load, storage account usage, or subscription billing information. Tiles are also kept up-to-date, so that you can use dashboards to display near real-time monitoring information. There are pre-defined tiles for a wide variety of Azure resource types, including device management, databases, resource groups, storage accounts, security, and diagnostics. In addition to the tile gallery, you can also add Azure Monitor charts to a dashboard from the associated resources in the Azure Portal. When viewing resource information and clicking to view metrics, the chart toolbar has the option to add the chart to a dashboard directly.
 
-![Metric chart toolbar](../media/4-metrics-chart-toolbar.PNG)
+![Metric chart toolbar](../media/4-metric-chart-toolbar.PNG)
 
 After adding tiles to a dashboard, you can use your mouse to drag tiles to reorganize the dashboard layout, or resize the tiles within the dashboard grid structure.
 
@@ -41,9 +41,7 @@ Shared dashboards are an Azure resource, which means you can share them by using
 
 When sharing a dashboard in Azure, the shared dashboard will be added to a *resource group* - the portal will prompt you to create a dashboard resource group by default, although you can specify a custom resource group as well.
 
-> [!NOTE]
-> Note: Individual tiles still enforce security on the individual resource or resource group the tile represents.
-> This means that if a user has a dashboard shared with them, but some of the tile resources are not shared with them, those tiles do not display the secure resource information.
+> [!NOTE] Individual tiles still enforce security on the individual resource or resource group the tile represents. This means that if a user has a dashboard shared with them, but some of the tile resources are not shared with them, those tiles do not display the secure resource information.
 
 Azure RBAC assigns a *role* to a *principal* at a *scope*.
 
