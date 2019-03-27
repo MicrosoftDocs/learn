@@ -73,7 +73,3 @@ Version 2.0 log entries use the following format:
 Version 2.0 log entries include all version 1.0 fields, version 2.0 entries add fields to record information about OAuth 2.0 token authorization.
 
 The Blob and Queue services both support log versions 1.0 and 2.0, the Table and File services only support version 1.0.
-
-## Summary
-
-In this unit you learned how Storage Analytics logging records transactions, and how to retrieve log information. 
