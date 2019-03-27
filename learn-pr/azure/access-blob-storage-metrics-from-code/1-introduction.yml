@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.access-blob-storage-metrics-from-code.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 02/06/2019
+  author: alistairmatthews
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
