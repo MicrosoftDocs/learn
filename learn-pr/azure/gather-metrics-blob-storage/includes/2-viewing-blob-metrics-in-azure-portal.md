@@ -36,7 +36,6 @@ You can access blob storage over http or https from any global Internet connecti
 > [!NOTE]
 > Note: Blob storage supports Azure Data Lake Storage Gen2.
 
-
 ### Blob Types
 
 Azure Blob storage supports three different types of blobs:
