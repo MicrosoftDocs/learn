@@ -150,3 +150,4 @@ Identify the subtasks of *Introduction to Azure Search*
 - Use the [portal](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-the-portal) to import the data and set up the indexing, but give a brief overview in the conceptual section about how to do it in [C#](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-net-sdk).
 - Do not use advanced features like AI or cognitive search. Briefly mention their existence and utility in the conceptual sections but do not focus on them and do not use them in the exercise.
 - Creating a user experience/website is out of scope; show code and usage of the index from a simple console app only.
+-adding some notes.
