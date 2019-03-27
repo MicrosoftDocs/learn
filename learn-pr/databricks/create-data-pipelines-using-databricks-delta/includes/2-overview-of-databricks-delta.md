@@ -33,7 +33,7 @@ Notice that there are really two pipelines here, one batch and one streaming. He
 
 It's difficult to combine processing of batch and real-time data, as this diagram shows:
 
-![An image showing the Lambda architecture](../media/lambda.png)
+![A diagram of the Lambda Architecture](../media/lambda.png)
 
 ### Databricks Delta architecture
 
@@ -45,4 +45,4 @@ Text files, RDBMS data, and streaming data are collected into a *raw table*, als
 
 The final outputs are actionable insights, dashboards, and reports of business metrics.
 
-![An image showing the Databricks Delta architecture](../media/delta.png)
+![A diagram of the Databricks Delta architecture](../media/delta.png)

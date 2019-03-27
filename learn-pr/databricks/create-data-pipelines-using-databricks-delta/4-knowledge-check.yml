@@ -17,20 +17,20 @@ quiz:
     - content: 'What is the Databricks Delta command to display metadata?'
       choices:
         - content: DESCRIBE DETAIL tableName
-          explanation: Metadata is displayed through DESCRIBE DETAIL tableName.
+          explanation: Correct. You display metadata by using DESCRIBE DETAIL tableName.
           isCorrect: true
         - content: MSCK DETAIL tablename
           isCorrect: false
-          explanation: MSCK is for repairing tables.
+          explanation: Incorrect. MSCK is for repairing tables.
         - content: SHOW SCHEMA tablename
           isCorrect: false
           explanation: Incorrect. No such command is available.
     - content: 'You just repaired myTable by using MSCK REPAIR TABLE myTable. How do you verify that the repair worked?'
       choices:
-        - content: SELECT count(*) FROM myTable and make sure the count is what was expected.
-          explanation: SELECT count(*) FROM myTable is the correct way to check the result to make sure it's correct.
+        - content: Use SELECT count(*) FROM myTable and make sure the count is what was expected.
+          explanation: Correct. You use SELECT count(*) FROM myTable to check the result and make sure it's correct.
           isCorrect: true
-        - content: Execute Describe Detail myTable.
+        - content: Execute DESCRIBE DETAIL myTable.
           isCorrect: false
           explanation: Incorrect. That command is for displaying metadata.
         - content: display(mytable)
@@ -38,13 +38,13 @@ quiz:
           explanation: Incorrect. That's not a relevant answer.
     - content: 'How do you perform UPSERT in a Databricks Delta dataset?'
       choices:
-        - content: Use the MERGE INTO my-table USING data-to-upsert.
+        - content: Use MERGE INTO my-table USING data-to-upsert.
           explanation: That's the correct syntax to perform UPSERT in a Databricks Delta dataset
           isCorrect: true
-        - content: Use the UPSERT INTO my-table.
+        - content: Use UPSERT INTO my-table.
           isCorrect: false
           explanation: Incorrect. The syntax is not correct for this operation.
-        - content: Use the UPSERT INTO my-table /MERGE.
+        - content: Use UPSERT INTO my-table /MERGE.
           isCorrect: false
           explanation: Incorrect. The syntax is not correct for this operation.
     - content: 'How do you view the list of active streams?'

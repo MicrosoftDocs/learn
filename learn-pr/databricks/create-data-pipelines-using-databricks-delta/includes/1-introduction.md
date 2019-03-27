@@ -10,5 +10,5 @@ In this module, you will:
 
 - Use Databricks Delta to create, append, and upsert tables.
 - Work with streaming data.
-- Perform optimizations in Delta.
-- Implement a lambda architecture by processing batch and streaming data with Delta.
+- Perform optimizations in Databricks Delta.
+- Implement a Lambda Architecture by processing batch and streaming data with Databricks Delta.
