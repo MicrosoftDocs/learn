@@ -65,6 +65,4 @@ The scope determines the level within Azure that the permissions are applied; yo
 
 For dashboards, this means that you could apply permissions for a security group to a single dashboard, or you could apply permissions for a security group to several dashboards individually, or you could put several dashboards in a dedicated resource group and apply permissions for that security group to the resource group. You might also have different security groups for different levels of dashboard use, such as *Dashboard Viewers* for several support teams, and *Dashboard Editors* for the team that maintains the dashboard and adds or removes tiles from the dashboards.
 
-> [!NOTE]
-
-> Note: While you can assign roles to individual user accounts in Azure AD, it is recommended that you assign roles to security groups for easier management as your organization grows.
+> [!NOTE] While you can assign roles to individual user accounts in Azure AD, it is recommended that you assign roles to security groups for easier management as your organization grows.
