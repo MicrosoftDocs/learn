@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Secure your application with OpenID Connect and Azure AD
 
