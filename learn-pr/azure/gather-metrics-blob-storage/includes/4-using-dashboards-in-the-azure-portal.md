@@ -41,7 +41,8 @@ Shared dashboards are an Azure resource, which means you can share them by using
 
 When sharing a dashboard in Azure, the shared dashboard will be added to a *resource group* - the portal will prompt you to create a dashboard resource group by default, although you can specify a custom resource group as well.
 
-> [!NOTE] Individual tiles still enforce security on the individual resource or resource group the tile represents. This means that if a user has a dashboard shared with them, but some of the tile resources are not shared with them, those tiles do not display the secure resource information.
+> [!NOTE]
+> Individual tiles still enforce security on the individual resource or resource group the tile represents. This means that if a user has a dashboard shared with them, but some of the tile resources are not shared with them, those tiles do not display the secure resource information.
 
 Azure RBAC assigns a *role* to a *principal* at a *scope*.
 
@@ -63,4 +64,5 @@ The scope determines the level within Azure that the permissions are applied; yo
 
 For dashboards, this means that you could apply permissions for a security group to a single dashboard, or you could apply permissions for a security group to several dashboards individually, or you could put several dashboards in a dedicated resource group and apply permissions for that security group to the resource group. You might also have different security groups for different levels of dashboard use, such as *Dashboard Viewers* for several support teams, and *Dashboard Editors* for the team that maintains the dashboard and adds or removes tiles from the dashboards.
 
-> [!NOTE] While you can assign roles to individual user accounts in Azure AD, it is recommended that you assign roles to security groups for easier management as your organization grows.
+> [!NOTE] 
+> While you can assign roles to individual user accounts in Azure AD, it is recommended that you assign roles to security groups for easier management as your organization grows.
