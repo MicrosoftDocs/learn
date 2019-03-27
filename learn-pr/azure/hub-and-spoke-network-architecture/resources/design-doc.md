@@ -162,3 +162,4 @@ I've made some minor changes to verbiage and a unit title.
 - NVA's are tricky, and can take time, they also are typically marketplace purchases, which are not available in sandbox. Consider just making that topical to keep the exercise do-able, or do Azure Firewall instead. 
 - Don't use the "security by design" term. We do want to cover security, but that's not a term I've seen used with Azure virtual networking.
 - Make sure to weave the scenario through the content. How does the organization apply these services and capabilities to their architecture?
+- testing git.
