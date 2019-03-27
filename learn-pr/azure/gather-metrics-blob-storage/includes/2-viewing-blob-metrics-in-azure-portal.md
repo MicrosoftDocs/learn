@@ -2,8 +2,6 @@ In preparation for moving client proof files to Azure Blob storage, you want to 
 
 In this unit, you concentrate on using the Azure portal to view available metrics on-demand.
 
-## Learning Objective
-
 By the end of this unit, you'll be able to identify, select, and display Azure Blob Storage metrics and display those metrics in the Azure portal.
 
 ## Azure Storage and Blob Storage
@@ -14,14 +12,6 @@ Azure Storage provides cloud-based storage for range of data types with virtuall
 - A file system service for objects stored in the cloud
 - A reliable messaging service
 - A NoSQL store for unstructured data
-
-Azure Storage is designed to be durable, highly available, secure, scalable, managed, and accessible. It consists of the following four storage services:
-
-|---|---|
-| Azure Blobs | Stores massive amounts of text and binary data |
-| Azure Files | Provides managed file shares for access from cloud or on-premises locations |
-| Azure Queues | Implements a reliable messaging store for communication between application components |
-| Azure Tables | Stores schemaless structured data within a NoSQL environment |
 
 ### Azure Blob Storage
 
@@ -52,10 +42,9 @@ You can access blob storage over http or https from any global Internet connecti
 
 Azure Blob storage supports three different types of blobs:
 
-|---|---|
-| Block Blobs | These are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually. |
-| Append Blobs | These consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines. |
-| Page Blobs | These can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines. |
+- **Block Blobs** - These are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually.
+- **Append Blobs** - These consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines. 
+- **Page Blobs** - These can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines. 
 
 ### Importance of Metrics
 
@@ -69,14 +58,14 @@ Metrics are a vital component of your management approach to blob storage. Metri
 
 Azure Blob Storage provides the following metrics, which can be categorized as capacity or transaction metrics.
 
-- Capacity metrics include:
+**Capacity metrics include:**
 
    - Blob capacity
    - Blob container count
    - Blob count
    - Index capacity
 
-- Transaction metrics include:
+**Transaction metrics include:**
 
    - Availability
    - Egress and Ingress
@@ -91,7 +80,7 @@ Capacity metrics are sent to Azure Monitor every hour and are refreshed daily. T
 There are two main mechanisms for viewing Azure blob storage metrics:
 
 - In the Azure portal
-- In a custom Dashboard (covered later in a later unit in this module)
+- In a custom Dashboard (covered later in this module)
 
 ### Portal
 
