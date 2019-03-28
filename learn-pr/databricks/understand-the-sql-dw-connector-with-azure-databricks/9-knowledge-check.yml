@@ -14,7 +14,7 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-    - content: 'Which of the following is a feature of Azure SQL Data Warehouse that can help you save in compute costs when you don\'t need to run any queries for a while?'
+    - content: "Which of the following is a feature of Azure SQL Data Warehouse that can help you save in compute costs when you don't need to run any queries for a while?"
       choices:
         - content: Scale down the data warehouse units (DWUs).
           explanation: While scaling down DWUs can save you money by reducing the per-hour cost of running your SQL Data Warehouse instance, it's meant to scale your data warehouse to adapt to the data processing needs of your environment.
@@ -25,7 +25,7 @@ quiz:
         - content: Pause the SQL Data Warehouse instance.
           isCorrect: true
           explanation: Pausing allows you to save compute costs, and it only takes seconds to pause and resume an instance.
-    - content: 'What\'s the recommended way to save data if you plan to run several queries against one SQL Data Warehouse table?'
+    - content: "What's the recommended way to save data if you plan to run several queries against one SQL Data Warehouse table?"
       choices:
         - content: Save the data in a format like Parquet.
           explanation: This format is correct for multiple queries on the same table because each query can extract a large amount of data to Blob storage.
@@ -35,8 +35,8 @@ quiz:
           explanation: The SQL Data Warehouse connector would be too slow for constant querying against the table because of the amount of data extracted.
         - content: Save data directly to Azure Blob storage.
           isCorrect: false
-          explanation: Saving data directly to Azure Blog storage isn\'t efficient for querying.
-    - content: 'What are the two prerequisites for connecting Azure Databricks with SQL Data Warehouse that apply to the SQL data warehouse?'
+          explanation: Saving data directly to Azure Blog storage isn't efficient for querying.
+    - content: "What are the two prerequisites for connecting Azure Databricks with SQL Data Warehouse that apply to the SQL data warehouse?"
       choices:
         - content:  Create a database master key and configure the firewall to enable Azure services to connect.
           explanation: Correct!
@@ -44,7 +44,7 @@ quiz:
         - content: A correctly formated ConnectionString and a database master key.
           isCorrect: false
           explanation: Incorrect. You also need to configure the firewall to enable Azure services to connect.
-        - content: Add the client IP address to the firewall\'s permitted access and use the correctly formatted ConnectionString.
+        - content: Add the client IP address to the firewall's permitted access and use the correctly formatted ConnectionString.
           isCorrect: false
           explanation: Incorrect. 
   
