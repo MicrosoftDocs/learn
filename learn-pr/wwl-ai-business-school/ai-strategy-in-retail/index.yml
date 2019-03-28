@@ -1,31 +1,31 @@
 ### YamlMime:Module
-uid: learn-wwl.data-ai-strategy-in-retail #replace with the uid for your module
+uid: learn-wwl.data-ai-strategy-in-retail
 metadata:
-  title: Transform business processes in retail with AI #replace with the title for your module
+  title: Transform business processes in retail with AI
   description: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help retailers to create business value with AI.  #replace with the description for your module
-  ms.date: 04/26/2019 #replace with the latest publish date
+  ms.date: 04/26/2019
   author: barlanmsft #replace with your GitHub username
-  ms.author: barlan #replace with your Microsoft alias
+  ms.author: Rachel.Wortman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: Rachel Wortman Morris **Leave this metadata commented, replace with the learn contact for your module.
-title: Transform business processes in retail with AI #replace with the title for your module
+  #ms.learn-contact: barlanmsft
+title: Transform business processes in retail with AI
 summary: Enterprises can't transform by bringing AI to technical departments only. Business units must partner with data scientists and developers to redefine every business process. Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.  #replace with the summary for your module
-abstract: | #replace with the learning objectives for your module
+abstract: | 
   In this module, you will:
   - Describe the outcomes retailers have achieved through the adoption of AI.
   - Articulate the components of an AI strategy. 
   - Apply the value creation framework.
-prerequisites: None #replace with your module pre-requisites
-iconUrl: http://via.placeholder.com/120x120 #replace with the icon url for your module achievement badge.
-levels: #add levels for your module
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels: 
 - intermediate
-roles: #add roles for your module
+roles: 
 - functional-consultant
 - business-user
-products: #add your products
+products: 
 - azure
-units: #add the uids for your units
+units: 
 - learn-wwl.data-ai-strategy-in-retail.1-introduction
 - learn-wwl.data-ai-strategy-in-retail.2-ai-value-in-retail-insead
 - learn-wwl.data-ai-strategy-in-retail.3-retail-case-study-introduction

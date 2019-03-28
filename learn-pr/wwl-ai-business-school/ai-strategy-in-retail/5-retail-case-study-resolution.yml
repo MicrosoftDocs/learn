@@ -4,13 +4,12 @@ title: Transform business processes in retail with AI - Case study resolution #u
 metadata:
   title: Transform business processes in retail with AI - Case study resolution
   description: Learn how Microsoft Stores transformed their business processes with AI by establishing processes for sustaining employee buy-in, setting parameters on data input to ensure output quality, and optimizing routing of insights for actionability. 
-  ms.date: 04/26/2019 #replace with the latest publish date
+  ms.date: 04/26/2019
   author: barlanmsft #replace with your GitHub username
-  ms.author: barlan #replace with your Microsoft alias
+  ms.author: Rachel.Wortman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10 
-#reference to the content markdown file for this unit
 content: |
   [!include[](includes/5-retail-case-study-resolution.md)] 
