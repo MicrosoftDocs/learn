@@ -27,7 +27,7 @@ quiz:
           explanation: .keys() isn't the correct method name.
     - content: "How do you connect your Spark cluster to Azure Blob storage?"
       choices:
-        - content: By mounting it
+        - content: By mounting it.
           explanation: Correct. Mounts require Azure credentials, such as shared access signature (SAS) keys.
           isCorrect: true
         - content: By calling the .connect() function on the Spark cluster.
