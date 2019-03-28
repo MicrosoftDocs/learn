@@ -11,9 +11,9 @@ Transforming data can range in complexity from simply parsing relevant fields to
 
 ![An image showing relational model and snowflake schemas](../media/data-models.png)
 
-If the structure of your raw data is of more complex nature, or you are required to prepare your data for advanced and complex analytical requirements, the basic transformation techniques may not serve the purpose. Then you need to apply some advanced data transformation methods to clean and prepare your data.
+If the structure of your raw data is more complex, or you are required to prepare your data for advanced and complex analytical requirements, the basic transformation techniques may not be sufficient. In these situations, you need advanced data transformation methods to clean and prepare your data.
 
-In this module, we'll focus on some of these advanced techniques supported by Azure Databricks.
+In this module, we'll focus on some of these advanced techniques that are supported by Azure Databricks.
 
 ## Learning objectives
 

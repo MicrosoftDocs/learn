@@ -2,9 +2,9 @@ Advanced ETL processes include data transformation using custom and advanced use
 
 ## Custom and complex transformations with user-defined functions (UDF)
 
-Spark's highly optimized built-in functions provide a wide array of functionality, covering the vast majority of data transformation use cases. However, there may be a scenario when you need to define logic specific to your use case and when you need to encapsulate that solution for reuse. User-Defined Functions (UDFs) come in handy in such cases. You should use UDFs when there's no clear way to accomplish a task using built-in functions.
+Spark's highly optimized built-in functions provide a wide array of functionality, covering the majority of data transformation use cases. However, there may be a scenario when you need to define logic that is specific to your use case or when you need to encapsulate that solution for reuse. User-Defined Functions (UDFs) come in handy in such cases. Use UDFs when there's no clear way to accomplish a task by using built-in functions.
 
-UDFs provide custom, generalizable code that you can apply to ETL workloads when Spark's built-in functions won't suffice. UDFs can take multiple column inputs, and though they can't return multiple columns, they can return complex, named types that are easily accessible. This approach is especially helpful in ETL workloads that need to clean complex and challenging data structures.
+UDFs provide custom, generalizable code that you can apply to ETL workloads when the built-in functions in Spark won't suffice. UDFs can take multiple column inputs, and though they can't return multiple columns, they can return complex, named types that are easily accessible. This approach is especially helpful in ETL workloads that need to clean complex and challenging data structures.
 
 ![An image showing a comparison between built-in functions and UDFs](../media/built-in-vs-udfs.png)
 
