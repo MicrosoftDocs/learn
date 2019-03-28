@@ -1,4 +1,4 @@
-PolyBase is a technology that accesses data outside of a database via the T-SQL language. In Azure SQL Data Warehouse, you can import/export data from Azure Blob storage and Azure Data Lake Store.
+PolyBase is a technology that accesses data outside of a database via the T-SQL language. In Azure SQL Data Warehouse, you can import and export data to and from Azure Blob storage and Azure Data Lake Store.
 
 In this unit, you'll learn how to load data from Azure Blob storage into SQL Data Warehouse by using PolyBase.
 
@@ -41,7 +41,7 @@ Replace the token `<Name_Of_Storage_Account>` with the name of the Azure storage
 
 A definition of the external file format helps SQL Data Warehouse parse the format of the external file to be loaded. It defines the field terminator, string delimiter, and date field format. These properties help with capturing the fields in a file.
 
-1. Clear the query window and execute these statements to define the external file format:
+- Clear the query window and execute these statements to define the external file format:
 
     ```sql
     CREATE EXTERNAL FILE FORMAT TextFileFormat
@@ -57,16 +57,16 @@ A definition of the external file format helps SQL Data Warehouse parse the form
     );
     ```
 
-- FIELD_TERMINATOR = `field_terminator`. Applies only to delimited text files. This property specifies one or more characters that mark the end of each field (column) in the
+   - FIELD_TERMINATOR = `field_terminator`. Applies only to delimited text files. This property specifies one or more characters that mark the end of each field (column) in the
   text-delimited file. The external file used for this exercise uses the comma (,) as the text delimiter.
 
-- STRING_DELIMITER = `string_delimiter`. Specifies the field terminator for data of type string in the text-delimited file.
+   - STRING_DELIMITER = `string_delimiter`. Specifies the field terminator for data of type string in the text-delimited file.
 
-- DATE_FORMAT = `datetime_format`. Specifies a custom format for all date and time data that appears in a delimited text file. The TransactionDate field holds date values (for example, "2017-01-24 00:00:00.000").
+   - DATE_FORMAT = `datetime_format`. Specifies a custom format for all date and time data that appears in a delimited text file. The TransactionDate field holds date values (for example, "2017-01-24 00:00:00.000").
 
 ## Create a schema for the external table
 
-1. Clear the query window and run these statements to create a schema for the external table:
+- Clear the query window and run this statement to create a schema for the external table:
 
     ```sql
     CREATE SCHEMA [asb];
@@ -110,7 +110,7 @@ External tables refer to data from an external data source. Data isn't stored in
     );
     ```
 
-- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, needs to match the data in the external files. If there's a mismatch, the file rows will be rejected when the data is queried.
+- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, need to match the data in the external files. If there's a mismatch, the file rows will be rejected when the data is queried.
 
 - LOCATION = `folder_or_filepath`. Specifies the folder or the file path and file name for the data in Hadoop or Azure Blob storage. The location starts at the *root folder*. The root folder is the data location specified in the external data source. In the previous statement, the `Transaction.txt` file contains the data. This file is in the container specified in the external data source.
 
@@ -122,11 +122,11 @@ External tables refer to data from an external data source. Data isn't stored in
 
   - REJECT_TYPE = `value | percentage`. Specifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
 
-  - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `reject_value`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `reject_value`. The percentage of failed rows is calculated at intervals.
+  - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `REJECT_VALUE`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `REJECT_VALUE`. The percentage of failed rows is calculated at intervals.
 
     In the above statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
 
-1. Clear the query window and run this statement to get data from the external table:
+2. Clear the query window and run this statement to get data from the external table:
 
     ```sql
     SELECT * FROM [asb].[Transaction]
@@ -142,11 +142,11 @@ External tables refer to data from an external data source. Data isn't stored in
 
 ## Create a SQL Data Warehouse table and load data
 
-Create a table in SQL Data Warehouse by using the `CREATE TABLE AS SELECT` (CTAS) statement. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
+Create a table in SQL Data Warehouse by using the CREATE TABLE AS SELECT (CTAS) statement. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
 
-In this exercise, the CTAS feature is used to create a table in SQL Data Warehouse based on the external table that you defined earlier. CTAS doesn't just create tables. It also loads data obtained via the SELECT statement.
+In this exercise, the CTAS statement is used to create a table in SQL Data Warehouse that's based on the external table that you defined earlier. CTAS doesn't just create tables. It also loads data obtained via the SELECT statement.
 
-1. Clear the query window and run this statement to create a table in SQL Data Warehouse:
+- Clear the query window and run this statement to create a table in SQL Data Warehouse:
 
     ```sql
     CREATE TABLE [cso].[Transaction]
@@ -159,6 +159,6 @@ In this exercise, the CTAS feature is used to create a table in SQL Data Warehou
     OPTION (LABEL = 'CTAS : Load [cso].[Transaction]');
     ```
 
-- DISTRIBUTION = `[ HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE ]`. The CTAS statement requires a distribution option. This option doesn't have a default value. The table in this example is created by using the `HASH` distribution method on the `TransactionId` column.
+   - DISTRIBUTION = `[ HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE ]`. The CTAS statement requires a distribution option. This option doesn't have a default value. The table in this example is created by using the `HASH` distribution method on the `TransactionId` column.
 
-- LABEL. This option labels the query, which makes it easy to identify.
+   - LABEL. This option labels the query, which makes it easy to identify.

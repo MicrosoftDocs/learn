@@ -8,7 +8,7 @@ The steps in this unit show you how to load data from a table in Azure SQL Datab
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Locate the SQL Data Warehouse instance that you created earlier select it to open it.
+1. Locate the SQL Data Warehouse instance that you created earlier and select it to open it.
 
     ![SQL Data Warehouse instance](../media/sql-dw.png)
 
@@ -30,7 +30,7 @@ The steps in this unit show you how to load data from a table in Azure SQL Datab
 
 1. In the **New Data Factory** window, enter the following values and then select **Create** at the bottom of the window.
 
-    - _Data Factory Name_: Enter a name for the data factory, or use the default name.
+    - _Data Factory name_: Enter a name for the data factory, or use the default name.
     - _Subscription_: Select the subscription that you used to create the resources for this module.
     - _Select resource group_: Select the resource group that you created for this module.
     - _Select region_: Select an appropriate region for the deployment of the data factory.
@@ -64,10 +64,10 @@ On the data factory configuration page, you'll provide details for the source an
 
 1. On the **Specify the Azure SQL database** page, enter the following values to set up the source database and then select **Next**.
 
-    - _Connection name_: Enter a connection name for the Azure SQL Database connection, or keep the default name.
+    - _Connection name_: Enter a name for the Azure SQL Database connection, or use the default name.
     - _Server / database selection method_: Select **From Azure subscriptions**.
     - _Azure subscription_: Select the Azure subscription that you used to create the resources for this module.
-    - _Server Name_: Select the name of the SQL Server instance that you created earlier.
+    - _Server name_: Select the name of the SQL Server instance that you created earlier.
     - _Database name_: Select database **retaildb**.
     - _User name_: Enter **dwlab**. This is the user name that you entered when you created the SQL Server instance.
     - _Password_: Enter the password that you entered when you created the SQL Server instance.
@@ -80,7 +80,7 @@ On the data factory configuration page, you'll provide details for the source an
 
 ## Select the destination
 
-On the **Destination** tab, you'll provide details about the SQL data warehouse.
+On the **Destination** tab, you'll provide details about the SQL Data Warehouse instance.
 
 1. Enter the following values and then select **Next**.
 
@@ -88,7 +88,7 @@ On the **Destination** tab, you'll provide details about the SQL data warehouse.
     - _Server / database selection method_: Select **From Azure subscriptions**.
     - _Azure subscription_: Select the Azure subscription that you used to create the resources in this module.
     - _Server name_: Select the name of the SQL Server instance that you created earlier in this module.
-    - _Database name_: Select the SQL data warehouse that you created in earlier in this module.
+    - _Database name_: Select the SQL Data Warehouse instance that you created in earlier in this module.
     - _User name_: Enter **dwlab**. This is the user name that you entered when you created the SQL Server instance.
     - _Password_: Enter the password that you entered when you created the SQL Server instance.
 
@@ -120,7 +120,7 @@ On the **Settings** tab, you'll specify actions to take if there are incompatibl
     - _Connection name_: Enter a name for the connection, or use the default.
     - _Account selection method_: Select **From Azure subscriptions**.
     - _Azure subscription_: Select the Azure subscription that you used to create the resources for this module.
-    - _Storage account name_: Select the name of the storage account that you created in the resource group created for this module. This storage account was created when you ran the PowerShell script.
+    - _Storage account name_: Select the name of the storage account that you created in the resource group created for this module. You created this storage account by running the PowerShell script.
 
     ![Configure settings](../media/sql-dw-load-data-settings.png)
 
@@ -128,7 +128,7 @@ On the **Settings** tab, you'll specify actions to take if there are incompatibl
 
 ## Verify the details
 
-The **Summary** tab summarizes all the details that you've entered and lets you change them.
+The **Summary** tab summarizes all the details that you've entered. You can also change the values on this tab.
 
 Select the **Runtime Region** that corresponds to the region of the resources you've created for this module. This will help ensure that transferred data stays in the same region to reduce costs and transfer lag.
 
@@ -144,7 +144,7 @@ The **Deployment** tab provides the status of various deployment activities. You
 
    ![Deploying section of the Deployment tab](../media/sql-dw-load-data-deploying.png)
 
-1. After validation passes, select the **Monitor** link on top of the page. The data factory pipeline monitoring page for the onetime pipeline that you created will appear.
+1. After validation passes, select the **Monitor** link at the top of the page. The data factory pipeline monitoring page for the onetime pipeline that you created will appear.
 
     ![Monitoring the new onetime deployment pipeline](../media/sql-dw-load-data-monitor.png)
 
@@ -164,7 +164,7 @@ We can verify the copy activity by checking whether the table was created in SQL
 
     ![Right-click the new table and click Select Top 1000](../media/sql-dw-load-data-verify.png)
 
-1. The new query window will automatically execute the `SELECT` statement. You should see results from the new table.
+1. The new query window will automatically execute the SELECT statement. You should see results from the new table.
 
     ![Query results](../media/sql-dw-load-data-verify-results.png)
 

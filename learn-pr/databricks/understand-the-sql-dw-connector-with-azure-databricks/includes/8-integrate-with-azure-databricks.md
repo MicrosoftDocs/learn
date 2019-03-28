@@ -11,20 +11,21 @@ In this unit, you will:
 
 Azure Databricks is a fully managed, cloud-based big data and machine learning platform. It enables developers to accelerate AI implementation by simplifying the process of building enterprise-grade production data applications. Built in a joint effort by Microsoft and the team that started Apache Spark, Azure Databricks provides data science and engineering teams with a single platform for big data processing and machine learning.
 
-By combining Databricks, an end-to-end Apache Spark platform that's optimized for the cloud, with the enterprise scale and security of the Azure platform, you can easily run large-scale Spark workloads.
+By combining an end-to-end, managed Apache Spark platform optimized for the cloud with the enterprise scale and security of the Azure platform, Azure Databricks makes it easy to run large-scale Spark workloads.
 
 ## Azure Databricks and Azure SQL Data Warehouse together
 
-You can access SQL Data Warehouse from Azure Databricks by using the SQL Data Warehouse connector, a data source implementation for Apache Spark that uses Azure Blob storage and PolyBase in SQL Data Warehouse to transfer large volumes of data efficiently between an Azure Databricks cluster and a SQL Data Warehouse instance.
+You can access SQL Data Warehouse from Azure Databricks by using the SQL Data Warehouse connector. SQL Data Warehouse connector is a data source implementation for Apache Spark that uses Azure Blob storage and PolyBase in SQL Data Warehouse to transfer large volumes of data efficiently between an Azure Databricks cluster and a SQL Data Warehouse instance.
 
 Both the Azure Databricks cluster and the SQL Data Warehouse instance access a common Blob storage container to exchange data. In Azure Databricks, Spark jobs are triggered by the SQL Data Warehouse connector to read data from and write data to the Blob storage container. On the SQL Data Warehouse side, data loading and unloading operations performed by PolyBase are triggered by the SQL Data Warehouse connector through JDBC.
 
+> [!NOTE]
 > When you ran the PowerShell script at the beginning of this module, you created a common Blob storage container. As you recall, you copied the account name and account key values after you created it. `dwtemp` is the common container that the Azure Databricks cluster and the SQL Data Warehouse instance will use.
 
 ## Make a connection to SQL Data Warehouse
 
 1. Open Azure Data Studio.
-1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection you made earlier to the SQL Data Warehouse database and select **New Query**.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the SQL Data Warehouse connection that you made earlier and select **New Query**.
 
     ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 

@@ -36,15 +36,15 @@ quiz:
         - content: Save data directly to Azure Blob storage.
           isCorrect: false
           explanation: Saving data directly to Azure Blog storage isn't efficient for querying.
-    - content: "What are the two prerequisites for connecting Azure Databricks with SQL Data Warehouse that apply to the SQL data warehouse?"
+    - content: "What are the two prerequisites for connecting Azure Databricks with SQL Data Warehouse that apply to the SQL Data Warehouse instance?"
       choices:
         - content:  Create a database master key and configure the firewall to enable Azure services to connect.
           explanation: Correct!
           isCorrect: true
-        - content: A correctly formated ConnectionString and a database master key.
+        - content: Use a correctly formatted ConnectionString and create a database master key.
           isCorrect: false
           explanation: Incorrect. You also need to configure the firewall to enable Azure services to connect.
-        - content: Add the client IP address to the firewall's the allowed IP addresses list and use the correctly formatted ConnectionString.
+        - content: Add the client IP address to the firewall's allowed IP addresses list and use the correctly formatted ConnectionString.
           isCorrect: false
           explanation: Incorrect. 
   
