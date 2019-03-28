@@ -40,7 +40,7 @@ Let's start by creating the server login that we'll use for the exercises in thi
 
 ## Add a user to SQL Data Warehouse
 
-1. In Azure Data Studio, connect to the SQL Data Warehouse database located under the SQL Server instance you created earlier in this module. Follow the steps listed in step 2 of the section "Create connections in Azure Data Studio."
+1. In Azure Data Studio, connect to the SQL Data Warehouse database located under the SQL Server instance you created earlier in this module. Follow the steps listed in step 1 of the section "Create connections in Azure Data Studio."
 
     Use these values to make the connection to the SQL Data Warehouse database:
 
