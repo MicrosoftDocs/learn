@@ -38,7 +38,7 @@ quiz:
           explanation: Incorrect. There's no such method.
     - content: "By default, how are corrupt records dealt with when you're using spark.read.json()?"
       choices:
-        - content: They appear in a column called "_corrupt_record".
+        - content: They appear in a column called \"_corrupt_record\".
           explanation: Correct. Corrupt records are the ones that Spark can't read (for example, when characters are missing from a JSON string).
           isCorrect: true
         - content: They get deleted automatically.
