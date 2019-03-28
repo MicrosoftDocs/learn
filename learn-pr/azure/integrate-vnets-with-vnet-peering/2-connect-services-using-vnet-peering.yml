@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.integrate-vnets-with-vnet-peering.2-connect-services-using-vnet-peering
+title: Connect services using VNet peering
+metadata:
+  title: Connect services using VNet peering
+  description: Connect services using VNet peering
+  ms.date: 03/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-connect-services-using-vnet-peering.md)]
