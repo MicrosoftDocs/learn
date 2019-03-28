@@ -44,7 +44,7 @@ quiz:
         - content: A correctly formated ConnectionString and a database master key.
           isCorrect: false
           explanation: Incorrect. You also need to configure the firewall to enable Azure services to connect.
-        - content: Add the client IP address to the firewall's permitted access and use the correctly formatted ConnectionString.
+        - content: Add the client IP address to the firewall's the allowed IP addresses list and use the correctly formatted ConnectionString.
           isCorrect: false
           explanation: Incorrect. 
   

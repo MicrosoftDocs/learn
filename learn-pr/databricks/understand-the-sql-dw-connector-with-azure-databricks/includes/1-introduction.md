@@ -1,6 +1,6 @@
 Suppose you work in the analytics department of a large retail warehouse. Your organization's IT infrastructure is cloud-based, and all data, including customer orders and product information, is stored in Azure SQL Data Warehouse. Your department analyzes customer shopping trends and proposes promotions based on your findings. You've heard about the robust machine learning and deep learning functions of Azure Databricks, but you don't know if it's compatible with SQL Data Warehouse. Your manager asks you explore Azure SQL Data Warehouse and Databricks connectivity options.
 
-Azure Databricks is an Apache Spark–based analytics platform that supports SQL analytics and can be integrated with SQL Data Warehouse to run high-performance analytics. It allows faster interactive processing of batch and streaming data with built-in functions for machine learning and big data processing.
+Azure Databricks is an Apache Spark–based analytics platform that supports SQL analytics and can be integrated with SQL Data Warehouse to run high-performance analytics. It allows faster interactive processing of batch and streaming data and has built-in functions for machine learning and big data processing.
 
 ## Learning objectives
 

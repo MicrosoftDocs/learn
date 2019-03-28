@@ -1,4 +1,4 @@
-SQL Data Warehouse lets you easily scale, pause, and resume your data warehouse. The architecture of SQL Data Warehouse separates storage and compute, allowing you to scale them independently. You can also pause and resume compute resources. 
+SQL Data Warehouse lets you easily scale, pause, and resume your data warehouse. The architecture of SQL Data Warehouse separates storage and compute, allowing you to scale them independently.
 
 Billing for compute and storage is separate. If you don't need to use your data warehouse for a while, you can save compute costs by pausing compute. You can scale out or scale back compute by adjusting the data warehouse units setting for your data warehouse. Loading and query performance can increase linearly as you add more data warehouse units.
 
@@ -8,7 +8,7 @@ To perform a scale operation, SQL Data Warehouse first ends all incoming queries
 
 Each data warehouse is stored as 60 distributions, which are evenly distributed to the Compute nodes. Adding more Compute nodes adds more compute power. As the number of Compute nodes increases, the number of distributions per Compute node decreases, providing more compute power for your queries. Similarly, decreasing data warehouse units reduces the number of Compute nodes, which reduces the compute resources for queries.
 
-To scale your SQL Data Warehouse instance, complete these steps:
+To scale your SQL Data Warehouse instance, take these steps:
 
 1. Go to your data warehouse in the Azure portal.
 1. Under **Common Tasks** in the left pane, select **Scale**.
@@ -29,7 +29,7 @@ You can pause your data warehouse if you don't need to use it for a while. This 
     ![Select Pause](../media/sql-dw-pause.png)
 1. To resume SQL Data Warehouse, go to your data warehouse in the [Azure portal](http://portal.azure.com/) and select **Overview**. Notice that the **Status** is **Paused**.
 
-1. To resume the database select **Start**. When the confirmation message appears, select **Yes** to confirm or **No** to cancel.
+1. To resume the database, select **Start**. When the confirmation message appears, select **Yes** to confirm or **No** to cancel.
 
     ![Select Resume](../media/sql-dw-resume.png)
 
@@ -45,11 +45,11 @@ You can also restore a database. The steps you take depend on whether the data w
     ![Automatic Restore Points](../media/sql-dw-restore-link.png)
 1. In the **Restore Point Type** box, select **Automatic Restore Points**. This restore point type will allow you to select restore points that are automatically created every 8 hours.
 1. Specify a new **Database name**.
-1. Select the latest **Restore point** by selecting the date and time.
-1. Select the destination server and performance level. By default, the database's current server and performance level are selected.
+1. Select the latest restore point by selecting the date and time.
+1. Select the destination **Server** and **Performance level**. By default, the database's current server and performance level are selected.
 
     ![Select the date and time](../media/sql-dw-restore-automatic.png)
-1. Alternatively, select **User-Defined Restore Points** as the **Restore Point Type**. You can then select the **Restore points** option to browse the available user-defined restore points.
+1. Alternatively, select **User-Defined Restore Points** as the **Restore Point Type**. You can then select the **Restore points** option to view the available user-defined restore points.
 
     ![User-Defined Restore Points](../media/sql-dw-restore-user-defined.png)
 
@@ -59,7 +59,7 @@ You can also restore a database. The steps you take depend on whether the data w
 ### Restore a deleted database in the Azure portal
 
 1. Go to your data warehouse in the [Azure portal](http://portal.azure.com/). Select the SQL Server instance associated with your data warehouse by selecting it in the **Overview** blade. You'll be redirected to the SQL Server instance on which the database should be restored.
-1. In navigation pane of SQL Server, select **Deleted databases** in the menu on the left under the **Settings** subsection.
+1. In the navigation pane of SQL Server, select **Deleted databases** in the menu on the left under the **Settings** subsection.
 
     ![Select Deleted Databases](../media/sql-dw-deleted-databases-link.png)
 1. Select the database that you want to restore.

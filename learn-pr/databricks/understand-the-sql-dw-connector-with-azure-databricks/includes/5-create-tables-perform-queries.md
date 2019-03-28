@@ -18,11 +18,11 @@ By default, when you don't define a data distribution method, your table will us
 
 1. Open Azure Data Studio.
 
-1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the SQL Data Warehouse connection you made to the SQL Data Warehouse database and select **New Query**.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection you made to the SQL Data Warehouse database and select **New Query**.
 
     ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
-1. Execute these statements in the new query window to create a hash distributed table:
+1. Run these statements in the new query window to create a hash distributed table:
 
     ```sql
     CREATE TABLE [dbo].[EmployeeBasic]
@@ -120,7 +120,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
 ### Insert rows in both tables
 
-1. Clear the query window and run these `INSERT` statements to insert records in the **EmployeeBasic** table:
+1. Clear the query window and run these INSERT statements to insert records in the **EmployeeBasic** table:
 
     ```sql
     INSERT INTO [dbo].[EmployeeBasic] VALUES
@@ -136,7 +136,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
    ![Insert rows into the EmployeeBasic table](../media/azure-data-studio-insert-rows.png)
 
-1. Insert a few rows into the EmployeeRemuneration table. Run these `INSERT` statements:
+1. Insert a few rows into the EmployeeRemuneration table. Run these INSERT statements:
 
     ```sql
     INSERT INTO [dbo].[EmployeeRemuneration] VALUES (1,'Software Developer',4000,1);
@@ -162,7 +162,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
     WHERE YEAR(dob) = 1996;
     ```
 
-1. Select all the rows of the EmployeeRemuneration
+1. Select all the rows of the **EmployeeRemuneration**
     table with all details:
 
     ```sql
@@ -224,7 +224,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
 ### Run join queries
 
-1. Join the tables **EmployeeBasic** and **EmployeeRemuneration** by using the key **EmployeeID**, and select **EmployeeID**,
+1. Join the tables **EmployeeBasic** and **EmployeeRemuneration** using the key **EmployeeID**, and select **EmployeeID**,
     **EmployeeName**, **EmployeeDesignation**, and **Salary**.
 
     ```sql

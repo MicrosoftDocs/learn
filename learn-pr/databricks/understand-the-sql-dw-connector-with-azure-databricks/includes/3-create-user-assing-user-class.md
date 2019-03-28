@@ -8,7 +8,7 @@ Let's start by creating the server login that we'll use for the exercises in thi
 
 ## Add a user to the master database
 
-1. By using Azure Data Studio, connect to the master database located under the SQL Server instance you created in the previous unit (in the section "Create new connections in Azure Data Studio").
+1. In Azure Data Studio, connect to the master database located under the SQL Server instance you created in the previous unit (in the section "Create new connections in Azure Data Studio").
 
     Use these values to create a connection to the master database:
     - _SQL Server_: The SQL Server instance that you created for this module.
@@ -32,7 +32,7 @@ Let's start by creating the server login that we'll use for the exercises in thi
 
     ![Execute the query](../media/azure-data-studio-new-query.png)
 
-1. Create a user in the master database by using login you created in step 4:
+1. Create a user in the master database by using the login you created in step 4:
 
     ```sql
     CREATE USER LabUser FOR LOGIN LabUserLogin;
@@ -40,7 +40,7 @@ Let's start by creating the server login that we'll use for the exercises in thi
 
 ## Add a user to SQL Data Warehouse
 
-1. By using Azure Data Studio, connect to the SQL Data Warehouse database located under the SQL Server instance you created earlier in this module. Follow the steps listed in step 2 of the section "Create connections in Azure Data Studio."
+1. In Azure Data Studio, connect to the SQL Data Warehouse database located under the SQL Server instance you created earlier in this module. Follow the steps listed in step 2 of the section "Create connections in Azure Data Studio."
 
     Use these values to make the connection to the SQL Data Warehouse database:
 
