@@ -159,7 +159,7 @@ We'll use an open-source C# console application to populate your collections. Th
 
     You can see the other options for this application by running `dotnet run -- --help`.
 
-    While the console application runs, you see one line printed per second that shows the status and request units needed for the database writes.
+    While the console application runs, you see one line printed per second that shows the status and Request Units needed for the database writes.
 
 1. Populate the `HotPartition` collection.
 

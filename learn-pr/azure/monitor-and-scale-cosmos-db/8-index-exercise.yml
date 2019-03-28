@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: Higher-demand writes to the database and lower-demand queries.
       isCorrect: true
-      explanation: More resources are consumed when you're updating the index. But using the index to find documents is more efficient.
+      explanation: More resources are consumed when Azure Cosmos DB is updating the index. But using the index to find documents is more efficient.
     - content: Lower-demand writes to the database and higher-demand queries.
       isCorrect: false
       explanation: The opposite is true. The index needs to be updated whenever a document is written. Indexing all properties would make querying very efficient.

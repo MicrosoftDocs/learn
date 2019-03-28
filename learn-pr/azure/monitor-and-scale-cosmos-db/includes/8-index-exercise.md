@@ -4,7 +4,7 @@ We'll use the Azure CLI to modify the index configuration. You can also use the 
 
 We have provided prebuilt index configuration files for your convenience. You can view these files in the `mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB/IndexConfig` directory.
 
-We ran queries in Unit 3 on our collections with all the document properties indexed. The request units (RUs) that we used were:
+We ran queries in Unit 3 on our collections with all the document properties indexed. The Request Units (RUs) that we used were:
 
 - ~3 RUs to query a 1-KB document within a single partition
 - ~13 RUs to add a 1-KB document

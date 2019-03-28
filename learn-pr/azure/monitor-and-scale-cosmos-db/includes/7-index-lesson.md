@@ -1,6 +1,6 @@
 An index is extra information that sits alongside a collection to make querying more efficient. Queries use the index to locate documents.
 
-The index is updated every time a document is updated or added to a collection. That update adds to the request units used for each write operation.
+The index is updated every time a document is updated or added to a collection. That update adds to the Request Units used for each write operation.
 
 The right indexing strategy depends on the patterns of access to your collections. Read-intensive workloads call for a different indexing strategy from write-intensive ones. Unlike the partitioning configuration, you can change the Azure Cosmos DB indexing configuration after a collection is provisioned. When your database is up and running, measure the performance of your index configuration and tune it.
 

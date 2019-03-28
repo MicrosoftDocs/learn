@@ -1,6 +1,6 @@
 Remember that data in a Cosmos DB is stored in _collections_. Collections are distributed across _partitions_ based on the value of a collection's _partition key_.
 
-The partition key is a _document_ property. Documents with the same partition key value are always located on the same logical partition. A partition supports a fixed maximum amount of storage and request units (RUs). When the capacity of a logical partition gets close to the maximum storage, Azure Cosmos DB allocates another physical partition. Cosmos DB seamlessly splits the logical partitions, the groups of documents with the same partition key value, among the physical partitions.
+The partition key is a _document_ property. Documents with the same partition key value are always located on the same logical partition. A partition supports a fixed maximum amount of storage and Request Units (RUs). When the capacity of a logical partition gets close to the maximum storage, Azure Cosmos DB allocates another physical partition. Cosmos DB seamlessly splits the logical partitions, the groups of documents with the same partition key value, among the physical partitions.
 
 ## Avoiding hot partitions 
 

@@ -23,7 +23,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
     ![Screenshot that shows the chart for uneven distribution of partition access](../media/6-hot-partition-throughput.png)
 
-    Notice the imbalance between the two partitions. Most of the requests are for the first partition, which is being overused. The other partition is being underused. The **HotPartition** collection isn't configured to efficiently use its total allocated request units (7,000 RU/s). The first partition is in danger of being throttled, while the second has plenty of capacity available.
+    Notice the imbalance between the two partitions. Most of the requests are for the first partition, which is being overused. The other partition is being underused. The **HotPartition** collection isn't configured to efficiently use its total allocated Request Units (7,000 RU/s). The first partition is in danger of being throttled, while the second has plenty of capacity available.
 
 1. Select the blue column for the first partition (Partition 0). With the partition selected, you see a list to the right of the chart that shows the partition key values that are dominating the partition. In this case, `Books` values make up the largest logical partition.
 
@@ -31,7 +31,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 1. Filter on the **Orders** collection.
 
-1. On the **Number of requests** chart, find the time that you populated for this collection.
+1. On the **Number of requests** chart, find the time that you populated this collection.
 
 1. Enter that time on the **Max consumed RU/s by each partition key range** chart and select **Apply**.
 
