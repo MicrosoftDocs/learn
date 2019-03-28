@@ -1,0 +1,22 @@
+From search to e-commerce to brick-mining, retail is an important industry for understanding not only the history of digital transformation, but also and critically the acceleration that the adoption of an AI strategy will bring.
+
+Now that you have reviewed this module, you should be able to:
+
+* Describe the outcomes retailers have achieved through the adoption of AI.
+* Articulate the components of an AI strategy.
+* Apply the value creation framework.
+
+## Use these resources to discover more.
+
+Discover new scenarios for the digital age so you can place your bets confidently on the best strategies for engaging your customers and [influencing their shopping behavior](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.microsoft.com%2FAI-for-Retail-Playbook.html&data=02%7C01%7Cjaime.perena%40microsoft.com%7C90e768e7ca204bcf3f7908d6a0fb3eaf%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636873398279845346&sdata=%2B5jWoiICLve%2Bii6TY0%2FdEPOdUdV0BLXfuZvwXLBBtqE%3D&reserved=0). Read the [AI in Retail interactive e-book](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.microsoft.com%2Fww-landing-Artificial-Intelligence-in-Retail-Microsoft-eBook.html%3Flcid%3Den-us&data=02%7C01%7Cjaime.perena%40microsoft.com%7C90e768e7ca204bcf3f7908d6a0fb3eaf%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636873398279855338&sdata=q6nnsSN04YXRTRxhTA1QtoSmvBf0S%2BaVx7UB%2BX4gCfQ%3D&reserved=0), which shows you how AI solutions including chatbots, machine learning, and cognitive services help transform the customer experience. Read the [5 Ways to Optimize Retail Operations](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.microsoft.com%2Fww-landing-5-Ways-to-Optimize-Retail-Operations-with-Artificial-Intelligence-Infographic.html%3Flcid%3Den-us&data=02%7C01%7Cjaime.perena%40microsoft.com%7C90e768e7ca204bcf3f7908d6a0fb3eaf%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636873398279865334&sdata=WQIgJsEZyJX4txi3ODsu7uqemOTsCbWjhlXTp1YtECM%3D&reserved=0) with AI infographic to learn how to Analyze data systems across your business and use insights to create rich experiences for your customers. Read The Economist article: [Retailers get smart about AI](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.microsoft.com%2Frs%2F157-GQE-382%2Fimages%2FEN-CNTNT-TheEconomistIntelligenceUnitRetailersgetsmartaboutAI.pdf&data=02%7C01%7Cjaime.perena%40microsoft.com%7C90e768e7ca204bcf3f7908d6a0fb3eaf%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636873398279875323&sdata=8Jq5TECgcnssJqE2BvHL%2BxLcXtm4E6gxfyCsQyQ3Fhw%3D&reserved=0).  
+  
+Read the [Microsoft-sponsored report](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Finfo.microsoft.com%2Fww-landing-Intelligent-Economies-Microsoft-eBook.html%3Flcid%3Den-us&data=02%7C01%7Cjaime.perena%40microsoft.com%7Cfa1212df7dc54a13f0ea08d6a0ee3f2d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636873342452195112&sdata=0kHPZCOOpcpCiN47Ww2vVYx1z2POIEL59XdOPDuS4Co%3D&reserved=0) from The Economist Intelligence Unit to learn how people are using AI to make the production and distribution of goods and services more intelligent, check out [this e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html?lcid=en-us) for an introduction to AI and tips on how to implement intelligent technologies and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2FPpk).
+
+* [Download PDF](https://aka.ms/AIBSSTRARETCONDWL) of the case study introduction to share with others. 
+* [Download PDF](https://aka.ms/AIBSSTRARETRESDWL) of the case study resolution to share with others.
+
+## References
+
+[(1) Harvard Business Review, “A Study of 46,000 Shoppers Shows That Omnichannel Retailing Works,” 2017](https://hbr.org/2017/01/a-study-of-46000-shoppers-shows-that-omnichannel-retailing-works)  
+[(2) Segment, “2017 State of Personalization Report,” 2017](http://grow.segment.com/Segment-2017-Personalization-Report.pdf)  
+[(3) Relex, “State of the Retail Supply Chain 2017,” 2017](https://hub.relexsolutions.com/state-of-the-retail-supply-chain-2017-b)

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.data-ai-strategy-in-retail.1-introduction
+title: Introduction #unit title
+metadata:
+  title: Introduction
+  description: Introduction to AI strategy in Retail.
+  ms.date: 04/26/2019 #replace with the latest publish date
+  author: barlanmsft #replace with your GitHub username
+  ms.author: barlan #replace with your Microsoft alias
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1 
+#reference to the content markdown file for this unit
+content: |
+  [!include[](includes/1-introduction.md)] 

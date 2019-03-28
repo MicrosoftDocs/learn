@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.data-ai-strategy-in-retail.6-knowledge-check
+title: Knowledge Check #unit title
+metadata:
+  title: Knowledge Check
+  description: A knowledge check for the AI strategy in retail module.
+  ms.date: 04/26/2019 #replace with the latest publish date
+  author: barlanmsft #replace with your GitHub username
+  ms.author: Rachel.Wortman #replace with your Microsoft alias
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Question 1 (True/False)"
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Explanation for the correct answer"
+    - content: "False"
+      isCorrect: false
+      explanation: "Explanation for the incorrect answer"
+  - content: "Question 2 (multiple choice, at this time only one correct answer allowed)"
+    choices:
+    - content: "Answer option 1"
+      isCorrect: false
+      explanation: "Explanation for the incorrect answer"
+    - content: "Answer option 2"
+      isCorrect: false
+      explanation: "Explanation for the incorrect answer"
+    - content: "Answer option 3"
+      isCorrect: true
+      explanation: "Explanation for the correct answer" 
+#reference to the content markdown file for this unit
+#content: |
+#  [!include[](includes/5-retail-case-study-resolution.md)] 

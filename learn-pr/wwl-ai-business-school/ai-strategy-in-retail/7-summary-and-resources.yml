@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.data-ai-strategy-in-retail.7-summary-and-resources
+title: Summary and resources #unit title
+metadata:
+  title: Summary and resources
+  description: An overview of the content covered in the module, and resources for futher learning.
+  ms.date: 04/26/2019 #replace with the latest publish date
+  author: barlanmsft #replace with your GitHub username
+  ms.author: Rachel.Wortman #replace with your Microsoft alias
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2 
+#reference to the content markdown file for this unit
+content: |
+  [!include[](includes/7-summary-and-resources.md)] 
