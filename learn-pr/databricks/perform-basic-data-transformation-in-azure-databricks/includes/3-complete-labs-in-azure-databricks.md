@@ -32,7 +32,7 @@ Now it's time to switch to the Databricks workspace and get hands-on with some b
    - *07-Loading-Data-and-Productionalizing*: Here you use Databricks to query and analyze data stores in Azure Data Lake Storage Gen2.
    - *Parsing-Nested-Data*: This notebook is in the *Optional* subfolder. It includes a sample project you can explore later.
 
-> ![Note]
+> ![NOTE]
 > You'll find corresponding notebooks within the *Solutions* subfolder. These notebooks contain finished cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.
 
 After you've completed the notebooks, return to this screen, and continue to the next step.
