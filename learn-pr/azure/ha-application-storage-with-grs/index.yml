@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn-pr.ha-application-storage-with-grs
+metadata:
+  title: ha-application-storage-with-grs
+  description: ...
+  ms.date: ...
+  author: ...
+  ms.author: ...
+  ms.topic: ...
+  ms.prod: ...
+title: ha-application-storage-with-grs
+summary: ...
+abstract: ...
+prerequisites: ...
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+  units:
+  - learn-pr.ha-application-storage-with-grs.1-introduction
+  - >-
+      learn-pr.ha-application-storage-with-grs.2-storage-account-replication-features
+  - learn-pr.ha-application-storage-with-grs.3-exercise-create-storage-account
+  - learn-pr.ha-application-storage-with-grs.4-designing-applications-ha-dr
+  - learn-pr.ha-application-storage-with-grs.5-deploy-ha-application
+  - learn-pr.ha-application-storage-with-grs.6-summary
+badge:
+  uid: learn-pr.ha-application-storage-with-grs.badge
