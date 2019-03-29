@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.data-ai-strategy-to-create-business-value
+metadata:
+  title: Define an AI strategy to create business value
+  description: The goal of this unit is to provide an introductory view on the need to think strategically about AI and reflect on how AI can create value to your business.
+  ms.date: 04/26/2019
+  author: barlan
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlanmsft
+title: Define an AI strategy to create business value
+summary: AI has the capacity to empower all people to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI, and they need to start today.
+abstract: | 
+  In this module, you will:
+  - Consider various approaches to AI implementation. 
+  - Describe the outcomes organizations have achieved through the adoption of AI.  
+  - Articulate the components of an AI strategy.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+units: 
+- learn-wwl.data-ai-strategy-to-create-business-value.1-introduction
+- learn-wwl.data-ai-strategy-to-create-business-value.2-holistic-business-ai-strategy-insead
+- learn-wwl.data-ai-strategy-to-create-business-value.3-transform-applications-case-study-introduction
+- learn-wwl.data-ai-strategy-to-create-business-value.4-transform-applications-executive-QA
+- learn-wwl.data-ai-strategy-to-create-business-value.5-transform-applications-case-study-resolution
+- learn-wwl.data-ai-strategy-to-create-business-value.6-empowering-every-employee-case-study-introduction
+- learn-wwl.data-ai-strategy-to-create-business-value.7-empowering-every-employee-case-study-resolution
+- learn-wwl.data-ai-strategy-to-create-business-value.8-knowledge-check
+- learn-wwl.data-ai-strategy-to-create-business-value.9-summary-and-resources
+badge: 
+  uid: learn.module-template5.badge #add the uid for your achievement badge.
