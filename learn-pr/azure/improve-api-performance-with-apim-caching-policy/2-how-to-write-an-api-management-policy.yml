@@ -2,7 +2,7 @@
 uid: learn.azure.improve-api-performance-with-apim-caching-policy.2-content
 title: Content
 metadata:
-  title: Content
+  title: How to write an API management policy
   description: Content
   ms.date: 03/06/2019
   author: nickwalkmsft
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-content.md)]
+  [!include[](includes/2-contenthow-to-write-an-api-management-policy.md)]

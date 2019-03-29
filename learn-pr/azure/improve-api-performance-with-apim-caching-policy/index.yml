@@ -21,7 +21,7 @@ products:
 - azure
 units:
 - learn.azure.improve-api-performance-with-apim-caching-policy.1-introduction
-- learn.azure.improve-api-performance-with-apim-caching-policy.2-content
+- learn.azure.improve-api-performance-with-apim-caching-policy.2-contenthow-to-write-an-api-management-policy
 - learn.azure.improve-api-performance-with-apim-caching-policy.3-exercise
 - learn.azure.improve-api-performance-with-apim-caching-policy.4-summary
 badge:
