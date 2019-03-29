@@ -16,14 +16,12 @@ iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner
 roles:
-- developer
+- solution-architect
 products:
 - azure
 units:
-  units:
   - learn-pr.ha-application-storage-with-grs.1-introduction
-  - >-
-      learn-pr.ha-application-storage-with-grs.2-storage-account-replication-features
+  - learn-pr.ha-application-storage-with-grs.2-storage-account-replication-features
   - learn-pr.ha-application-storage-with-grs.3-exercise-create-storage-account
   - learn-pr.ha-application-storage-with-grs.4-designing-applications-ha-dr
   - learn-pr.ha-application-storage-with-grs.5-deploy-ha-application
