@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn-wwl.data-ai-strategy-in-retail
+uid: learn-wwl.data-03-ai-strategy-in-retail
 metadata:
   title: Transform business processes in retail with AI
   description: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help retailers to create business value with AI.  #replace with the description for your module
@@ -26,12 +26,12 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.data-ai-strategy-in-retail.1-introduction
-- learn-wwl.data-ai-strategy-in-retail.2-ai-value-in-retail-insead
-- learn-wwl.data-ai-strategy-in-retail.3-retail-case-study-introduction
-- learn-wwl.data-ai-strategy-in-retail.4-retail-executive-QA
-- learn-wwl.data-ai-strategy-in-retail.5-retail-case-study-resolution
-- learn-wwl.data-ai-strategy-in-retail.6-knowledge-check
-- learn-wwl.data-ai-strategy-in-retail.7-summary-and-resources
+- learn-wwl.data-03-ai-strategy-in-retail.1-introduction
+- learn-wwl.data-03-ai-strategy-in-retail.2-ai-value-in-retail-insead
+- learn-wwl.data-03-ai-strategy-in-retail.3-retail-case-study-introduction
+- learn-wwl.data-03-ai-strategy-in-retail.4-retail-executive-QA
+- learn-wwl.data-03-ai-strategy-in-retail.5-retail-case-study-resolution
+- learn-wwl.data-03-ai-strategy-in-retail.6-knowledge-check
+- learn-wwl.data-03-ai-strategy-in-retail.7-summary-and-resources
 badge: 
-  uid: learn.module-template.badge #add the uid for your achievement badge.
+  uid: learn.module-template3.badge #add the uid for your achievement badge.
