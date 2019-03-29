@@ -22,4 +22,4 @@ Complete the following notebooks in the 08-Streaming folder:
 - **01-Getting started**:  This notebook gets you started with your event hub. If you already created your event hub in the previous unit, you can skip this notebook.
 - **02-Spark-Structured-Streaming**: In this notebook, you work on a sample dataset to perform some batch and interactive processing. You'll also create streaming queries to update the destination dataset.
 - **03-Event-Hubs**: This notebook gives detailed instructions on how to perform processing of messages in near real time through Spark Structured Streaming, by sending a batch of messages to Event Hubs.
-- **04-Streaming-with-Databricks-Delta**: In this notebook, you finally write your streaming data to Azure Data Lake Storage.
+- **04-Streaming-with-Databricks-Delta**: In this notebook, you finally write your streaming data to Azure Data Lake storage.

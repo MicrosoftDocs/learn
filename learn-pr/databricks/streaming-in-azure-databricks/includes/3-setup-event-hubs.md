@@ -27,7 +27,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 1. On the **Create Event Hub** blade, enter:
 
    - **Name**: Enter **databricks-demo-eventhub**.
-   - **Partition count**: Enter **2**.
+   - **Partition Count**: Enter **2**.
     
    Select **Create**.
 
@@ -49,7 +49,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
 1. On the **Add SAS Policy** blade, enter the following information:
 
-   - **Policy name**: Enter both.
+   - **Policy name**: Enter **both**.
    - **Manage**: Leave unselected.
    - **Send**: Select this box.
    - **Listen**: Select this box.

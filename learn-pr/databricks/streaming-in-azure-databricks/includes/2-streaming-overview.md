@@ -1,12 +1,12 @@
-Apache Spark's Structured Streaming is a fast, scalable, and fault-tolerant stream processing API. You can use it to perform near real-time analytics on your streaming data. 
+Apache Spark Structured Streaming is a fast, scalable, and fault-tolerant stream processing API. You can use it to perform analytics on your streaming data in near real time. 
 
 With Structured Streaming, you can use SQL queries to process streaming data in the same way that you would process static data. The API continuously increments and updates the final data.
 
 ## Event Hubs and Spark Structured Streaming
 
-Azure Event Hubs is a scalable real-time data ingestion service that processes millions of data in a matter of seconds. It can receive large amounts of data from multiple sources and stream the prepared data to Azure Data Lake or Blob storage. 
+Azure Event Hubs is a scalable real-time data ingestion service that processes millions of data in a matter of seconds. It can receive large amounts of data from multiple sources and stream the prepared data to Azure Data Lake or Azure Blob storage. 
 
-Azure Event Hubs can be integrated with Spark Structured Streaming to perform near-real time processing of messages. You can query and analyze the processed data as it comes by using a Structured Streaming query and Spark SQL.
+Azure Event Hubs can be integrated with Spark Structured Streaming to perform processing of messages in near real time. You can query and analyze the processed data as it comes by using a Structured Streaming query and Spark SQL.
 
 ## Streaming concepts
 
@@ -16,8 +16,8 @@ Data coming from a stream is typically not ordered in any way.
 
 A streaming system consists of:
 
-- Input source such as Kafka, Azure event hub, files on a distributed system, or TCP-IP sockets
-- Sinks such as Kafka, Azure event hub, various file formats, forEach sinks, console sinks, or memory sinks
+- Input sources such as Kafka, Azure event hubs, files on a distributed system, or TCP-IP sockets
+- Sinks such as Kafka, Azure event hubs, various file formats, forEach sinks, console sinks, or memory sinks
 
 ### Streaming and Databricks Delta
 
