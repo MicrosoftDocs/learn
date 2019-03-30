@@ -5,7 +5,7 @@ metadata:
   title: What is a product road map?
   description: This unit describes the structure of a product road map.
   author: jamtur01
-  ms.date: 03/16/2019
+  ms.date: 04/16/2019
   ms.author: jaturnbu
   ms.topic: interactive-tutorial
   ms.prod: learning-startups
@@ -20,17 +20,21 @@ quiz:
      choices:
      - content: At the end of each quarter.
        isCorrect: false
-     - content: At the the end of the year.
+     - content: At the end of the year.
        isCorrect: false
      - content: Never
        isCorrect: true
-       explanation: "Product road maps are iterative, they are never finished."
+       explanation: "Product road maps are iterative, they're never finished."
      - content: When you launch the product.
        isCorrect: false
-   - content: "True or false: the only people with input into a product road map should be engineers."
+   - content: "Who should have input into the product road map?"
      choices:
-     - content: "True"
+     - content: "Just the product manager and engineers."
        isCorrect: false
-     - content: "False"
+     - content: "Everyone in your organization is a stake-holder."
        isCorrect: true
-       explanation: "Your product road map is a collaboration between many people in your organization including groups like Product, Design, Engineering, Sales, Marketing and Support."
+       explanation: "Your product road map is a collaboration between many people in your organization including groups like Product, Design, Engineering, Sales, Marketing, and Support."
+     - content: "Just the product manager and the marketing team."
+       isCorrect: false
+     - content: "Just the product manager. The road map should be confidential and secret from the organization."
+       isCorrect: false
