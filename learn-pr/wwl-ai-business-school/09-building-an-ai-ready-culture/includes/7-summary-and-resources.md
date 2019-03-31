@@ -8,6 +8,8 @@ Now that you have reviewed this module, you should be able to:
 
 ## Use these resources to discover more.
 
+[!include[](../../../includes/open-link-in-new-tab-note.md)]
+
 * Interested in understanding where your organization happens to be on its journey, start the online assessment [here](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html).
 * [Download PDF](https://aka.ms/AIBSCULTFRAINTDWL) of Discover the characteristics that foster an AI-Ready culture.
 * [Download PDF](https://aka.ms/AIBSCULTFRAFRADWL) of Understand how Prosci's ADKAR framework can help you lead organizational change
