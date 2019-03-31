@@ -10,7 +10,7 @@ Publicis Groupe is one of the “Big Four” multinational advertising and publi
 
 Age brings challenges as well as experience. In recent years, the agency model has stagnated. Established agencies have struggled to offer satisfying solutions to their clients in the face of massive technological change, the mass adoption of online advertising, and small, nimble competitors.
 
-![Image]('../media/1-7-1-A-Publicis-case-study-introduction.jpg')
+![Publicis Income Graph](../media/1-7-1-A-Publicis-case-study-introduction.jpg)
 
 Agencies face the same problem as many old-media companies: diminishing income and relevance. Advertisers have flocked to convenient, highly targeted, and quantifiable online advertising models offered by companies like Google and Facebook. These search and social media platforms are accessible, fast, and often target customers through data analytics and AI. Agencies, on the other hand, have high overhead costs and a far higher price point.
 
