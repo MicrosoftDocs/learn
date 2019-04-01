@@ -2,7 +2,7 @@
 ##  Virtualization
 Formally, virtualization involves the construction of an isomorphism that maps a virtual guest system to a real host system<!-- (Popek and Goldberg, 1974) -->.Video 3.3 and Figure 3.11 illustrates the virtualization process.
 
-> [!VIDEO](https://youtube.com/embed/U6HwG9dc03A)
+> [!VIDEO https://youtube.com/embed/U6HwG9dc03A]
 
  The function V in the figure maps guest state to host state. For a sequence of operations, e, that modifies a guest state, there is a corresponding sequence of operations, e', in the host that performs equivalent modifications. Informally, virtualization creates virtual resources and maps them to physical resources. Virtual resources are created from physical resources and essentially act as proxies to them.
 

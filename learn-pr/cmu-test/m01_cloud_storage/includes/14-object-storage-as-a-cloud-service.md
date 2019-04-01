@@ -10,7 +10,7 @@ An _object_ can be considered as a generic container that can store any arbitrar
 ##  REST
  _Representational state transfer_ (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
 
-> [!VIDEO](https://youtube.com/embed/34iW4tcYGxA)
+> [!VIDEO https://youtube.com/embed/34iW4tcYGxA]
 
 REST is an _architectural style_ for designing networked applications and does not refer to a single protocol. REST is a design strategy for communications among various entities in a networked application. The idea is to use a simple mechanism instead of CORBA, WSDL, or RPC to connect and transfer information between machines over a network. Any interface that uses REST principles is called a _RESTful_ interface. 
 
@@ -35,7 +35,7 @@ The major advantages of REST are that it is
 ##  Object Storage Systems - Amazon S3
 Video 4.11 covers the basics ideas behind Object Storage Systems:
 
-> [!VIDEO](https://youtube.com/embed/Drl9LvRr35Y)
+> [!VIDEO https://youtube.com/embed/Drl9LvRr35Y]
 
  An example of object-based storage on the cloud is Amazon’s Simple Storage Service (S3). S3 allows users to store _objects_ in _buckets_. Each object can be created, read, and deleted. Note that in the S3 model, although no native update-object method exists, <!-- rather, -->an entire object can be deleted and re-created, similar to a file overwrite. However, S3 supports object versioning and can maintain multiple versions of an object on S3 if it is explicitly enabled by the object owner. 
 

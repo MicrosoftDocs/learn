@@ -4,7 +4,7 @@ Google's MapReduce programming model allows computational jobs to be structured 
 
 The MapReduce programming model assumes the availability of a distributed storage system that is available across all the nodes of the cluster, with a single namespace, which is where Google File System (GFS) comes in. GFS is a distributed file system (DFS) that is collocated with the nodes of the MapReduce cluster. GFS is designed to work in tandem with MapReduce and maintains a single namespace for the entire MapReduce cluster.
 
-> [!VIDEO](https://youtube.com/embed/w4hbR_jcfSg)
+> [!VIDEO https://youtube.com/embed/w4hbR_jcfSg]
 
 Both Google's MapReduce and GFS implementations remain proprietary. However, an open-source clone of MapReduce, called Apache Hadoop, has emerged and gained <!-- a lot of -->popularity in big-data circles. HDFS is an open-source clone of GFS. HDFS is designed to be a distributed, scalable, fault-tolerant file system that primarily caters to the needs of the MapReduce programming model. Video 4.12 introduces HDFS.
 
@@ -46,7 +46,7 @@ In the example in Figure 4.26, the distance between Node 1 and itself is zero ho
 
 Video 4.13 walks through file read and write operations in HDFS.
 
-> [!VIDEO](https://youtube.com/embed/YD8_alwBoAM)
+> [!VIDEO https://youtube.com/embed/YD8_alwBoAM]
 
 ![Figure 4.27: File reads in HDFS](../media/file_reads_HDFS.png)
 _Figure 4.27: File reads in HDFS_

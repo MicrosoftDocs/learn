@@ -14,7 +14,7 @@ Software-Defined Networking is an approach to computer networking that decouples
 ![Figure 3.33 : SDN Component Planes](../media/sdn_stack.png)
 _Figure 3.33 : SDN Component Planes_
 
-> [!VIDEO](https://youtube.com/embed/rVxiiJKQ73U)
+> [!VIDEO https://youtube.com/embed/rVxiiJKQ73U]
 
 ###  SDN Architecture
 SDNs are remarkably flexible; they can operate with different types of switches and at different protocol layers. SDN controllers and switches can be implemented for Ethernet switches (Layer 2), Internet routers (Layer 3), transport (Layer 4) switching, and even at the application layer (Layer 7). SDN relies on the common functions found on networking devices, which essentially involve forwarding packets based on some form of flow definition. 

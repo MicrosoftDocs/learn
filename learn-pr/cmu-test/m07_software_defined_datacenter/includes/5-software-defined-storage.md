@@ -8,7 +8,7 @@ _Figure 3.38 : An example IO Path_
 
 Software Defined Storage (SDS) allows clients to specify fine-grained capacity, latency and/or bandwidth requirements, in the form of SLOs, which are mapped to abstract storage services for the client. The cloud provider can assemble and provide a scalable storage service using various storage technologies in the back-end. Client SLOs can be met by managing the storage stack at the provider's side.
 
-> [!VIDEO](https://youtube.com/embed/-JxZM7Y_8sU)
+> [!VIDEO https://youtube.com/embed/-JxZM7Y_8sU]
 
 To better understand how this can be achieved, let's look at one of the emerging technologies that enable SDS, IOFlow . 
 

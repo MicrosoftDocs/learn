@@ -2,7 +2,7 @@
 ##  Ceph
 Ceph is a storage system that can be deployed on large clusters of servers with attached disks. Video 4.14 covers the basic concepts behind Ceph.
 
-> [!VIDEO](https://youtube.com/embed/-WzMtI_SfPI)
+> [!VIDEO https://youtube.com/embed/-WzMtI_SfPI]
 
 The design goals for Ceph include the following:
 - General-purpose storage cluster which is flexible to support a wide range of applications.
@@ -84,7 +84,7 @@ Node failures in RADOS are detected during a failure of communication between OS
 ##  Ceph FS
 As indicated in Figure 4.31 above, the Ceph FS is a layer of abstraction over the RADOS storage system. RADOS does not have any notion of metadata for an object apart from object name. The Ceph file system allows for file metadata to be layered on top of individual file objects stored in RADOS. Video 4.15 explains teh concept of CephFS.
 
-> [!VIDEO](https://youtube.com/embed/hdKxRV4JXhc)
+> [!VIDEO https://youtube.com/embed/hdKxRV4JXhc]
 
 In addition to the cluster node roles of OSDs and Monitors, Ceph FS introduces _metadata (MDS)_ servers (Figure 4.36). These servers store the file system metadata (the directory tree, as well as the access control lists and permissions, mode, ownership information, and timestamps for each file). 
 

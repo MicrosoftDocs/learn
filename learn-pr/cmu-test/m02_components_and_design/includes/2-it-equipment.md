@@ -18,7 +18,7 @@ Last, there are a few servers that look similar to a standard rack-mounted serve
 
 The following video (Video 2.2) describes various server form factors:
 
-> [!VIDEO](https://youtube.com/embed/0EM6jPYafys)
+> [!VIDEO https://youtube.com/embed/0EM6jPYafys]
 
 An important feature found in most rack-mounted servers is hot-swap capability. Components such as PSU, fans, and hard drives can be removed and replaced while the server stays running. This feature increases uptime/reliability on small- and medium-scale deployments. Large-scale application deployments require more sophisticated resiliency to be built into software layers, which is discussed in the next unit. These large-scale systems do not use hot-swap or redundant components for individual servers but instead consider the entire server to be failed (and replaced) as a unit.
 

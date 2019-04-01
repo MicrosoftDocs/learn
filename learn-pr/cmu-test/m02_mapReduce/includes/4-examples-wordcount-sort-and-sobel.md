@@ -21,7 +21,7 @@ Input and output formats can be arbitrary, line-based logs, for example, or imag
 
 The default I/O subclasses are suitable for text processing. Specifically, `TextInputFormat` enables reading text files, with the byte offset of a line being a key and the actual line content being a value. `TextOutputFormat` allows writing files as key-value3 text pairs. Other formatting classes, such as the `SequenceFileInputFormat` and the `SequenceFileOutputFormat` classes, are shipped with Hadoop and allow reading and writing binary files. In addition, Hadoop users can always implement custom input and output format classes tailored for their input datasets. More information on how to do that can be found on the [Yahoo! Hadoop Tutorial](http://developer.yahoo.com/hadoop/tutorial/) and in White's "Hadoop: The Definitive Guide."
 
-> [!VIDEO](https://youtube.com/embed/kXVBsqmSl0k)
+> [!VIDEO https://youtube.com/embed/kXVBsqmSl0k]
 
 Our WordCount example assumes text file inputs. Thus, we can directly use the `TextInputFormat` class, with a key being the byte offset of a line in a file and a value being the line content itself. Furthermore, we can directly use the `TextOutputFormat` class, with a key being a word encountered in the input dataset and a value being the frequency of the word. The key type can be set to Java `Long` ( `LongWritable` in Hadoop) and the value type to Java `String` ( `Text` in Hadoop). The reduce function should receive words from the map tasks as keys and the digit 1 per each word as values,4 so the key type will be that of words ( `Text`) and the value type that of the unit digit (Java `Integer`, `IntWritable` in Hadoop). All that remains is the logic of the map and the reduce functions. For the map function, input splits should be parsed and each word emitted with a count of 1. In the reduce function, each word received can be simply output as is along with its frequency, computed after aggregating all the 1s received with that word.5 Figure 5.17 shows our complete WordCount example code for the new Java MapReduce API released in Hadoop 0.20.0. 
 
@@ -102,9 +102,9 @@ As Figure 5.17 shows, programmers need create only two sequential functions, map
 
 The `map()` and the `reduce()` functions in the `WCMap` and the `WCReduce` inner classes incorporate the actual logic of the WordCount program. The `Context` parameter in both functions performs I/O writes to local disks and HDFS. The `main()` function sets up a job to execute the WordCount program on a set of input files using the `addInputPath()` function. It also specifies where the output files are placed on HDFS using the `setOutputPath()` function. In the `main()` function, `setOutputKeyClass()` and `setOutputValueClass()` specify the key-value pair types emitted by reduce tasks and assume, by default, that these types match the map task output key-value types. If this is not the case, the `main()` function should also call `setMapOutputKeyClass()` and `setMapOutputValueClass()` to specify map task output key-value types. To set the input and output formats, the functions `setInputFormatClass()` and `setOutputFormatClass()` are called. Finally, the `setMapperClass()` and the `setReducerClass()` functions are used to set the job's constituent inner map and reduce classes, `WCMap` and `WCReduce`. Video 5.2 discusses Sort, another classical MapReduce example, and Video 5.3 presents Sobel, an image-processing, edge-detection example.
 
-> [!VIDEO](https://youtube.com/embed/L4t2GgYJs-8)
+> [!VIDEO https://youtube.com/embed/L4t2GgYJs-8]
 
-> [!VIDEO](https://youtube.com/embed/h4hdsqC3Nq0)
+> [!VIDEO https://youtube.com/embed/h4hdsqC3Nq0]
 
 3Note that this is a tab space (not a single space) between the key and the value.
 
