@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.cmu-test.m03-software-stack
+metadata:
+  title: _u02_m03_software_stack - Learn
+  description: _u02_m03_software_stack - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u02_m03_software_stack
+summary: _u02_m03_software_stack
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m03-software-stackmodule-introduction
+- cmu-test.m03-software-stackcloud-middleware
+- cmu-test.m03-software-stackresource-provisioning
+- cmu-test.m03-software-stackmetering-and-monitoring-cloud-services
+- cmu-test.m03-software-stackcloud-orchestration-and-automation
+- cmu-test.m03-software-stackcase-study--openstack
+- cmu-test.m03-software-stacksummary
+badge:
+  uid: learn.cmu-test.m03-software-stack.badge

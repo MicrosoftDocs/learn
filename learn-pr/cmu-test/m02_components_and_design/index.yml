@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.cmu-test.m02-components-and-design
+metadata:
+  title: _u02_m02_components_and_design - Learn
+  description: _u02_m02_components_and_design - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u02_m02_components_and_design
+summary: _u02_m02_components_and_design
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m02-components-and-designmodule-introduction
+- cmu-test.m02-components-and-designit-equipment
+- cmu-test.m02-components-and-designinfrastructure-and-facilities
+- cmu-test.m02-components-and-designgeographic-location-criteria
+- cmu-test.m02-components-and-designcosts
+- cmu-test.m02-components-and-designpower-and-efficiency
+- cmu-test.m02-components-and-designredundancy
+- cmu-test.m02-components-and-designreliability-metrics
+- cmu-test.m02-components-and-designsummary
+badge:
+  uid: learn.cmu-test.m02-components-and-design.badge

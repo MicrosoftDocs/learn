@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.cmu-test.m01-intro
+metadata:
+  title: _u05_m01_intro - Learn
+  description: _u05_m01_intro - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u05_m01_intro
+summary: _u05_m01_intro
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m01-intromodule-introduction
+- cmu-test.m01-introtaxonomy-of-programs
+- cmu-test.m01-intromotivations-for-distributed-programming
+- cmu-test.m01-introdistributed-systems-and-the-cloud
+- cmu-test.m01-introdistributed-systems-and-the-cloud
+- cmu-test.m01-introprogramming-models-for-clouds
+- cmu-test.m01-introsynchronization-models
+- cmu-test.m01-introdata-and-graph-parallelism
+- cmu-test.m01-introsymmetrical-and-asymmetrical-architectural-models
+- cmu-test.m01-intromain-challenges-in-building-cloud-programs
+- cmu-test.m01-introchallenges-in-building-cloud-programs--scalability
+- cmu-test.m01-introchallenges-in-building-cloud-programs--communication
+- cmu-test.m01-introchallenges-in-building-cloud-programs--heterogeneity
+- cmu-test.m01-introchallenges-in-building-cloud-programs--synchronization
+- cmu-test.m01-introchallenges-in-building-cloud-programs--fault-tolerance
+- cmu-test.m01-introchallenges-in-building-cloud-programs--scheduling
+- cmu-test.m01-introsummary
+badge:
+  uid: learn.cmu-test.m01-intro.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockscloud-security--threats
+title: Cloud Security - Threats
+metadata:
+  title: Cloud Security - Threats - Learn
+  description: Cloud Security - Threats - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-cloud-security--threats)]

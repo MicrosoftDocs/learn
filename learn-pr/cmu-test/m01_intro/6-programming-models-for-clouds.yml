@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m01-intro.cmu-test.m01-introprogramming-models-for-clouds
+title: Programming Models for Clouds
+metadata:
+  title: Programming Models for Clouds - Learn
+  description: Programming Models for Clouds - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-programming-models-for-clouds)]

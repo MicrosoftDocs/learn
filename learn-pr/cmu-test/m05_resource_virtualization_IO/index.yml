@@ -1,0 +1,31 @@
+### YamlMime:Module
+uid: learn.cmu-test.m05-resource-virtualization-io
+metadata:
+  title: _u03_m05_resource_virtualization_IO - Learn
+  description: _u03_m05_resource_virtualization_IO - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u03_m05_resource_virtualization_IO
+summary: _u03_m05_resource_virtualization_IO
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m05-resource-virtualization-iomodule-introduction
+- cmu-test.m05-resource-virtualization-ioio-basics
+- cmu-test.m05-resource-virtualization-iovirtualizing-io-devices
+- cmu-test.m05-resource-virtualization-ioxens-approach-to-io-virtualization
+- cmu-test.m05-resource-virtualization-iosummary
+badge:
+  uid: learn.cmu-test.m05-resource-virtualization-io.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m06-case-study.cmu-test.m06-case-studya-taxonomy-of-virtualization-suites
+title: A Taxonomy of Virtualization Suites
+metadata:
+  title: A Taxonomy of Virtualization Suites - Learn
+  description: A Taxonomy of Virtualization Suites - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-a-taxonomy-of-virtualization-suites)]

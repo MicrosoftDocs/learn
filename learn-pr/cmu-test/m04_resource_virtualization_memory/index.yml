@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.cmu-test.m04-resource-virtualization-memory
+metadata:
+  title: _u03_m04_resource_virtualization_memory - Learn
+  description: _u03_m04_resource_virtualization_memory - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u03_m04_resource_virtualization_memory
+summary: _u03_m04_resource_virtualization_memory
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m04-resource-virtualization-memorymodule-introduction
+- cmu-test.m04-resource-virtualization-memoryonelevel-page-mapping
+- cmu-test.m04-resource-virtualization-memorytwolevel-page-mapping
+- cmu-test.m04-resource-virtualization-memorymemory-overcommitment
+- cmu-test.m04-resource-virtualization-memoryreclamation-techniques-and-vmware-memory-ballooning
+- cmu-test.m04-resource-virtualization-memorysummary
+badge:
+  uid: learn.cmu-test.m04-resource-virtualization-memory.badge

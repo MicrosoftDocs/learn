@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedesigning-databases--consistency-and-the-cap-theorem
+title: Designing Databases - Consistency and the CAP Theorem
+metadata:
+  title: Designing Databases - Consistency and the CAP Theorem - Learn
+  description: Designing Databases - Consistency and the CAP Theorem - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-designing-databases--consistency-and-the-cap-theorem)]

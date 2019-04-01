@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m01-intro.cmu-test.m01-intromotivations-for-distributed-programming
+title: Motivations for Distributed Programming
+metadata:
+  title: Motivations for Distributed Programming - Learn
+  description: Motivations for Distributed Programming - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-motivations-for-distributed-programming)]

@@ -1,0 +1,13 @@
+<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m06_case_study\x-oli-workbook_page\_u03_m06_3_summary.xml -->
+##  Case Study Summary
+
+- Many virtualization suites are available from multiple cloud vendors. They have differing architectures and features. Most suites support memory over commitment (which enhances server consolidation) as well as live migration (which allows VMs to be seamlessly moved across physical machines).
+- _Amazon's Elastic Compute Cloud (EC2)_ is Amazon Web Services' primary IaaS offering.
+- _Amazon Machine Images (AMIs)_ can be used to create a VM (or _instance_) in EC2. Dozens of AMIs are available for various environments and prebuilt software stacks.
+- EC2 instances can be created, launched, stopped, resumed, and terminated as needed. EC2 is believed to be using Xen as the hypervisor. Amazon's software completely automates the process of creating instances, configuring their network and storage, and making them accessible to the user.
+- Amazon EC2 offers over 17 different instance types, each of which are configured with differing CPU, memory, local storage, and I/O specifications. EC2 instances typically boot in a minute to a few seconds, depending on the instance type, allowing for elastic scaling of compute resources on demand.
+- EC2 instances are flexible to be configured in any way the user requires because the user has full administrator privileges to the OS running in the instance. Amazon's _Elastic Block Store (EBS)_ service allows for raw block devices to be provisioned and attached or detached to any instance. Amazon also allows for _elastic IPs_ (fixed IP addresses) that can be attached to any instance. All of Amazon's services can be programmatically accessed using APIs, which allows for automated resource control and management.
+- EC2 instances can be launched in one of many _regions_ and _availability zones,_ allowing users to improve the fault tolerance and redundancy of their applications, if they wish to do so.
+- EC2 instances are secured through Amazon's own configurable firewall, called _security groups._ The OS running in an instance is exclusively under the user's domain and cannot be accessed by Amazon. Furthermore, Amazon employs strict security practices with public-key authentication to provide access to instances as well as API interfaces to various AWS services.
+##  Virtualizing Resources for the Cloud Quiz
+This checkpoint will test your understanding of the material you have learned in this unit.

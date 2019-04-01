@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m01-intro.cmu-test.m01-introcloud-deployment-models
+title: Cloud Deployment Models
+metadata:
+  title: Cloud Deployment Models - Learn
+  description: Cloud Deployment Models - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-cloud-deployment-models)]

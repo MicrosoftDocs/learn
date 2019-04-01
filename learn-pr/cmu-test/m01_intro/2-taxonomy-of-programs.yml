@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m01-intro.cmu-test.m01-introtaxonomy-of-programs
+title: Taxonomy of Programs
+metadata:
+  title: Taxonomy of Programs - Learn
+  description: Taxonomy of Programs - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-taxonomy-of-programs)]

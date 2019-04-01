@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m07-software-defined-datacenter.cmu-test.m07-software-defined-datacenterstorage-within-data-centers
+title: Storage within Data Centers
+metadata:
+  title: Storage within Data Centers - Learn
+  description: Storage within Data Centers - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-storage-within-data-centers)]

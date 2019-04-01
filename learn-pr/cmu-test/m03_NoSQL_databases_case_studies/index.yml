@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.cmu-test.m03-nosql-databases-case-studies
+metadata:
+  title: _u04_m03_NoSQL_databases_case_studies - Learn
+  description: _u04_m03_NoSQL_databases_case_studies - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u04_m03_NoSQL_databases_case_studies
+summary: _u04_m03_NoSQL_databases_case_studies
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m03-nosql-databases-case-studiesmodule-introduction
+- cmu-test.m03-nosql-databases-case-studiesapache-hbase
+- cmu-test.m03-nosql-databases-case-studiesmongodb
+- cmu-test.m03-nosql-databases-case-studiesapache-cassandra
+- cmu-test.m03-nosql-databases-case-studiesamazons-dynamodb
+- cmu-test.m03-nosql-databases-case-studiessummary
+badge:
+  uid: learn.cmu-test.m03-nosql-databases-case-studies.badge

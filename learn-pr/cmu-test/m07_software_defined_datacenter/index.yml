@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.cmu-test.m07-software-defined-datacenter
+metadata:
+  title: _u03_m07_software_defined_datacenter - Learn
+  description: _u03_m07_software_defined_datacenter - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u03_m07_software_defined_datacenter
+summary: _u03_m07_software_defined_datacenter
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m07-software-defined-datacentermodule-introduction
+- cmu-test.m07-software-defined-datacenternetworking-within-data-centers
+- cmu-test.m07-software-defined-datacentersoftware-defined-data-centers-and-networking
+- cmu-test.m07-software-defined-datacenterstorage-within-data-centers
+- cmu-test.m07-software-defined-datacentersoftware-defined-storage
+- cmu-test.m07-software-defined-datacentersummary
+badge:
+  uid: learn.cmu-test.m07-software-defined-datacenter.badge

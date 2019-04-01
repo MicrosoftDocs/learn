@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m03-spark.cmu-test.m03-sparkprogramming-in-spark
+title: Programming in Spark
+metadata:
+  title: Programming in Spark - Learn
+  description: Programming in Spark - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-programming-in-spark)]

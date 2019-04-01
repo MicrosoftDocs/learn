@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.cmu-test.m03-spark
+metadata:
+  title: _u05_m03_spark - Learn
+  description: _u05_m03_spark - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u05_m03_spark
+summary: _u05_m03_spark
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m03-sparkmodule-introduction
+- cmu-test.m03-sparkspark-overview
+- cmu-test.m03-sparkresilient-distributed-datasets
+- cmu-test.m03-sparklineage-fault-tolerance-and-recovery
+- cmu-test.m03-sparkprogramming-in-spark
+- cmu-test.m03-sparkthe-spark-ecosystem
+- cmu-test.m03-sparksummary
+badge:
+  uid: learn.cmu-test.m03-spark.badge

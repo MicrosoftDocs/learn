@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducethe-data-structure-and-flow
+title: The Data Structure and Flow
+metadata:
+  title: The Data Structure and Flow - Learn
+  description: The Data Structure and Flow - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-the-data-structure-and-flow)]

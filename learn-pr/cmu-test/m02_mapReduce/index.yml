@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.cmu-test.m02-mapreduce
+metadata:
+  title: _u05_m02_mapReduce - Learn
+  description: _u05_m02_mapReduce - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: _u05_m02_mapReduce
+summary: _u05_m02_mapReduce
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- cmu-test.m02-mapreducemodule-introduction
+- cmu-test.m02-mapreducethe-programming-model
+- cmu-test.m02-mapreducethe-data-structure-and-flow
+- cmu-test.m02-mapreduceexamples-wordcount-sort-and-sobel
+- cmu-test.m02-mapreducethe-computation-and-architectural-models
+- cmu-test.m02-mapreducejob-and-task-scheduling
+- cmu-test.m02-mapreducefault-tolerance
+- cmu-test.m02-mapreduceyarn-the-new-hadoop-mapreduce
+- cmu-test.m02-mapreducesummary
+badge:
+  uid: learn.cmu-test.m02-mapreduce.badge
