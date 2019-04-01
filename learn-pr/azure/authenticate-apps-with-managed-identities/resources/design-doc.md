@@ -94,6 +94,7 @@ Identify the subtasks of *Authenticate apps to Azure services with service princ
 - Mention the existence of user-assigned identity but don’t cover it in the exercise, stick with system-assigned
 - Managed identities are generally preferable, where they are available, to manually managing service principals and credentials. Mention some scenarios where they are not available or where manually configuring a service principal may make more sense.
 - The name Managed Service Identity (MSI) is deprecated, but call it out because it's still commonly used, including in client libraries
-- This module is intended to follow a separate module about service principal authentication that does not use managed identities. That module will be responsible for introducing general application authentication concepts to readers.
+- This module was originally intended to follow a separate module about service principal authentication that does not use managed identities. That module has been canceled and the content coverage merged in with the scope of this module. For reference, here's the design doc for that module.
+  - https://github.com/MicrosoftDocs/learn-pr/blob/NEW-authenticate-apps-with-service-principals/learn-pr/azure/authenticate-apps-with-service-principals/resources/design-doc.md
 - https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/
 - Unlike standard service principals, managed identities should work in the sandbox. This is expected to be a sandbox-enabled module, but will only have hands on exercises for managed identity.
