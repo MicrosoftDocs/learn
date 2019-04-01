@@ -43,10 +43,10 @@ quiz:
           isCorrect: true
         - content: Use UPSERT INTO *my-table*.
           isCorrect: false
-          explanation: Incorrect. The syntax is not correct for this operation.
+          explanation: The syntax isn't correct for this operation.
         - content: Use UPSERT INTO *my-table* /MERGE.
           isCorrect: false
-          explanation: Incorrect. The syntax is not correct for this operation.
+          explanation: The syntax isn't correct for this operation.
     - content: 'How do you view the list of active streams?'
       choices:
         - content:  Invoke **spark.streams.active**.
@@ -54,18 +54,18 @@ quiz:
           isCorrect: true
         - content:  Invoke **spark.streams.show**.
           isCorrect: false
-          explanation: Incorrect. The syntax is not correct for this operation.
+          explanation: The syntax isn't correct for this operation.
         - content:  Invoke **spark.view.active**.
           isCorrect: false
-          explanation: Incorrect. The syntax is not correct for this operation.
-    - content: 'What size does OPTIMIZE compact files to?'
+          explanation: The syntax isn't correct for this operation.
+    - content: 'What size does OPTIMIZE compact small files to?'
       choices:
-        - content: Small files are compacted to around 1 GB.
-          explanation: Correct. This value was determined by the Spark optimization team as a good compromise between speed and performance.
+        - content: Around 1 GB.
+          explanation: Correct. The Spark optimization team determined this value to be a good compromise between speed and performance.
           isCorrect: true
-        - content:  Small files are compacted to around 100 MB.
+        - content:  Around 100 MB.
           isCorrect: false
           explanation: Incorrect. The Spark optimization team decided on 1 GB for speed and performance.
-        - content:  Small files are compacted to around 500 MB.
+        - content:  Around 500 MB.
           isCorrect: false
           explanation: Incorrect. The Spark optimization team decided on 1 GB for speed and performance.
