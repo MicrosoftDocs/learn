@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_1_dc_networks.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_1_dc_networks.xml -->
 ##  Data Center Networks
 Large data centers are part of the core infrastructure that supports cloud services. To be cost-effective, these data centers must have networks that are agile and easy to configure and update. In previous modules, we have already looked at some of the enabling physical technologies used in these networks, as well as a general multi-tier topology. In this module, we will look at some design considerations for the network within cloud data centers, as well as understand how and why Software-defined Networks (SDNs) have gained prominence in this domain. 
 
@@ -40,7 +40,7 @@ Finally, the presence of multiple tenants and the overcommitting of the shared n
 ##  Types of Network Virtualization
 As we have seen above, network virtualization is simply a sharing mechanism that allows multiple isolated virtual networks to use the same physical network infrastructure. This allows virtual networks to be dynamically allocated and deployed on-demand precisely like VMs in virtualized servers . 
 
-![Figure 3.32: Types of network virtualization](..\media\net_virt.png)
+![Figure 3.32: Types of network virtualization]("..\media\net_virt.png")
 _Figure 3.32: Types of network virtualization_
 
 Network virtualization is a broad term that encompasses many different techniques. For e.g. traditional VPNs and VLANs are types of datapath virtualization, where the a physical link is extended virtually. Cloud data centers rely on a combination of all of these virtualization techniques to build a scalable, flexible and agile network. Virtual machines have virtualized Network Interface Cards, which bridge a unique virtual MAC address to the physical NIC. Router virtualization enables the creation of multiple tenant virtual networks, based on “map-and-encap”, where edge routers map the packet to the destination, then encapsulate packets within a network tunnel which are only decoded at the target node. 

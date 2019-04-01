@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_4_block_devices.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_4_block_devices.xml -->
 We will now look at a special class of storage systems that are designed as a cloud service that is provided over the internet. In the context of our discussion on cloud storage thus far, object storage in clouds can be considered to be a special case of key-value stores provided as a service over the Internet.
 
 <!-- To be able to -->Providing storage as a service to clients over the Internet requires<!-- , we have to be able to --> abstracting the underlying storage implementation details and providing a simple and clean interface that can be used in applications. Cloud adopters are increasingly <!-- looking towards -->choosing the cloud object model for storage on the cloud. 
@@ -10,7 +10,7 @@ An _object_ can be considered as a generic container that can store any arbitrar
 ##  REST
  _Representational state transfer_ (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
 
-> [!VIDEO](https://youtube.com/embed/34iW4tcYGxA)
+> [!VIDEO]("https://youtube.com/embed/34iW4tcYGxA")
 
 REST is an _architectural style_ for designing networked applications and does not refer to a single protocol. REST is a design strategy for communications among various entities in a networked application. The idea is to use a simple mechanism instead of CORBA, WSDL, or RPC to connect and transfer information between machines over a network. Any interface that uses REST principles is called a _RESTful_ interface. 
 
@@ -35,7 +35,7 @@ The major advantages of REST are that it is
 ##  Object Storage Systems - Amazon S3
 Video 4.11 covers the basics ideas behind Object Storage Systems:
 
-> [!VIDEO](https://youtube.com/embed/Drl9LvRr35Y)
+> [!VIDEO]("https://youtube.com/embed/Drl9LvRr35Y")
 
  An example of object-based storage on the cloud is Amazon’s Simple Storage Service (S3). S3 allows users to store _objects_ in _buckets_. Each object can be created, read, and deleted. Note that in the S3 model, although no native update-object method exists, <!-- rather, -->an entire object can be deleted and re-created, similar to a file overwrite. However, S3 supports object versioning and can maintain multiple versions of an object on S3 if it is explicitly enabled by the object owner. 
 
@@ -73,19 +73,19 @@ The lack of a common standard for object storage is an issue plaguing cloud obje
 
  The Storage Network Industry Association (SNIA) is promoting an open standard for cloud objects, called _cloud data management interface (CDMI)_. 
 
-![Figure 4.22: CDMI](..\media\cdmi.png)
+![Figure 4.22: CDMI]("..\media\cdmi.png")
 _Figure 4.22: CDMI_
 
 CDMI defines data objects and data containers with tagged metadata (as key-value pairs) and uses RESTful interfaces, with JSON as the data exchange format. CDMI can be used for accessing and managing data on a storage cloud (Figure 4.22). An example of a client interaction with a storage cloud using CDMI is shown in Figure 4.23.
 
-![Figure 4.23: A CDMI client interacting with a CDMI storage cloud](..\media\cdmi_cloud.png)
+![Figure 4.23: A CDMI client interacting with a CDMI storage cloud]("..\media\cdmi_cloud.png")
 _Figure 4.23: A CDMI client interacting with a CDMI storage cloud_
 
 The CDMI client can issue requests over HTTPS, and the _MimeType_ indicates the type of CDMI resource with which the client is interacting (an object, a container) and returns standard HTTP status codes, indicating the status of the request. 
 
 The CDMI model is illustrated in Figure 4.24. A CDMI resource exists on a root location, indicated by the root URI: `https://<offering>`. The example contains two containers, A and B, that contain one object each. Note that each CDMI entity <!-- has the -->can support <!-- for -->metadata, as indicated with the key-value tags associated with every entity.
 
-![Figure 4.24: The CDMI data model](..\media\key_value.png)
+![Figure 4.24: The CDMI data model]("..\media\key_value.png")
 _Figure 4.24: The CDMI data model_
 
  In addition, CDMI supports <!-- additional -->the following resource types: 

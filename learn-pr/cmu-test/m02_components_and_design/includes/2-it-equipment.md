@@ -1,11 +1,11 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_1_IT_Components.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_1_IT_Components.xml -->
 ##     
 In this section, we define IT equipment as anything that is mounted in a rack (called _rack-mounted equipment_). This equipment typically includes servers, dedicated storage arrays, network switches and routers, power distribution, and remote management devices. We are specifically referring to a four-post rack inside a cabinet enclosure. Additional types of racks are described on the next page of this module ("Facilities").
 
 ##  Servers
 A _rack-mounted server_ is similar to a tower PC, except turned horizontally and made to fit into a thinner, deeper chassis (Figure 2.7). The heights are measured in multiples of rack units, where 1U = 1.75 inches (4.45 cm). A 1U server can be CPU and RAM dense but leaves little room for I/O expansion cards (usually two). A server that is 2U or 3U can have six to eight I/O card slots. Smaller chassis must also have smaller fans and therefore make considerable noise compared to your average desktop computer (this is acceptable because most server rooms are not occupied by humans). Systems that are 4U, 5U, or larger chassis usually have a specialized function: one example is an 80-core Intel server, which has CPU sockets and RAM on vertically mounted daughter cards; another is a quad-GPU accelerator server; a third is a server chassis with a 24, 36, or 48 internal hard drives.
 
-![Figure 2.7: (a) Servers and other equipment mounted in a standard 19-inch rack (Source). (b) A 1U server with its top cover removed to reveal internal components (Source).](..\media\standard19_inches_rack.png)
+![Figure 2.7: (a) Servers and other equipment mounted in a standard 19-inch rack (Source). (b) A 1U server with its top cover removed to reveal internal components (Source).]("..\media\standard19_inches_rack.png")
 _Figure 2.7: (a) Servers and other equipment mounted in a standard 19-inch rack (Source). (b) A 1U server with its top cover removed to reveal internal components (Source)._
 
 Rack-mounted servers have their own fans, _power supply units (PSUs)_, network, and I/O, but _blade servers_ share all of these across many nodes within the same blade _enclosure_ (called blade _chassis_). There is no common blade standard, so each vendor's blades work only with its enclosures. Blades are thin, vertical metal enclosures and slide into the front of a blade chassis and attach to a common _backplane_. Each blade has its own motherboard, CPU, RAM, and disk. The shared PSUs are typically more efficient than dedicated rack-mounted versions because they can power up or down incrementally, adjusting PSU capacity to load demand. For example, instead of 10 servers with 2 * 750W redundant PSU, a blade enclosure can power the equivalent of 10 servers with 4 * 2500W PSU, with one being redundant. Blades are denser than their horizontally mounted counterparts, allow for easier maintenance, and require fewer cables. The disadvantage is higher upfront cost if you only need a few servers, plus you are locked-in to a specific vendor.
@@ -18,7 +18,7 @@ Last, there are a few servers that look similar to a standard rack-mounted serve
 
 The following video (Video 2.2) describes various server form factors:
 
-> [!VIDEO](https://youtube.com/embed/0EM6jPYafys)
+> [!VIDEO]("https://youtube.com/embed/0EM6jPYafys")
 
 An important feature found in most rack-mounted servers is hot-swap capability. Components such as PSU, fans, and hard drives can be removed and replaced while the server stays running. This feature increases uptime/reliability on small- and medium-scale deployments. Large-scale application deployments require more sophisticated resiliency to be built into software layers, which is discussed in the next unit. These large-scale systems do not use hot-swap or redundant components for individual servers but instead consider the entire server to be failed (and replaced) as a unit.
 
@@ -67,7 +67,7 @@ Solid-state storage cards are now available, such as those from Fusion-IO. They 
 ##  Storage
 When most people hear the word storage, it is likely that they will envision an HDD (Figure 2.8(a)). Inside an HDD, the rotating platters and moving read/write head have been similar for decades. What has evolved are higher areal density, new recording techniques, faster interfaces, and overall lower power. The two most common form factors of HDDs are 3.5 inches and 2.5 inches. Rotational speeds can vary, but common RPM values are 5400, 5900, 7200, 10,000, and 15,000. The higher the RPM, the lower the latency between random seeks.
 
-![Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head (Source). (b) SSD with the circuitry exposed (Source).](..\media\traditional_hard_disk.png)
+![Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head (Source). (b) SSD with the circuitry exposed (Source).]("..\media\traditional_hard_disk.png")
 _Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head (Source). (b) SSD with the circuitry exposed (Source)._
 
 |Did you know?|
@@ -97,7 +97,7 @@ In addition to servers, a data center houses all of the network equipment that i
 
 One popular design is the _multitier_ topology (Figure 2.9), in which servers connect directly to switches, and those switches link to aggregation switches, which, in turn, connect to the rest of the organization's network (i.e., core switches) and eventually to the upstream ISP.
 
-![Figure 2.9: A stack of network switches mounted in a rack (Source).](..\media\network_switches_mounted.png)
+![Figure 2.9: A stack of network switches mounted in a rack (Source).]("..\media\network_switches_mounted.png")
 _Figure 2.9: A stack of network switches mounted in a rack (Source)._
 
 A _fatter_ (higher bandwidth) connection typically links the bottom-tier and aggregation switches. For example, with 48x1Gb ports connecting the rack servers and the access tier, the access to the aggregation tier might have 2 * 10Gb uplinks.
@@ -110,7 +110,7 @@ A _fatter_ (higher bandwidth) connection typically links the bottom-tier and agg
 
 Ethernet can also travel over fiber (sometimes fibre) optic cable (Figure 2.10(b)). Fiber is unidirectional, so in a cable, you will see two strands, one send and one receive. The electrical signals are converted to photons, which stay inside the fiber due to the differences in indexes of refraction between the core (thin center) and cladding (thicker outside layer). The cladding is covered by a layer of fireproofing material. Fiber cables are thinner and lighter than copper cables, but care has to be taken in routing to maintain a minimum bend radius, otherwise some photons escape causing loss. Multimode fiber is most commonly used inside data centers because the cables and transceivers are much less expensive than single-mode fiber. Single-mode fiber is generally reserved for long-distance (>100m to 40km) connections. Higher speed Ethernet of 40Gbps is actually 4x10Gbps links that work in unison (similar to PCIe lanes); similarly, 100Gbps is 10x10Gbps (copper, fiber) or 4x25Gbps (fiber only).
 
-![Figure 2.10: (a) A cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables (Source). (b) Fiber-optic network cables with LC (top) and ST (bottom) connectors (Source).](..\media\UTP_and_Fiber-optic-network.png)
+![Figure 2.10: (a) A cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables (Source). (b) Fiber-optic network cables with LC (top) and ST (bottom) connectors (Source).]("..\media\UTP_and_Fiber-optic-network.png")
 _Figure 2.10: (a) A cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables (Source). (b) Fiber-optic network cables with LC (top) and ST (bottom) connectors (Source)._
 
  _Fibre Channel (FC)_ is a protocol designed to support SANs and remote block-level storage devices. Even though it typically runs over fiber, it can also run over copper. It can also be encapsulated in Ethernet in the form of Fibre Channel over Ethernet (FCoE) but is not routable like iSCSI. Fibre Channel HCA and switch generations are named by their speed (in Gbps)—#GFC, in which # is 1, 2, 4, 8, 10, or 16. The most common now is 8GFC, which supports 8Gbps links (approximately 800MB/s in each direction).
@@ -125,7 +125,7 @@ Table 2.3: Summary of Infiniband speeds.|SDR|DDR|QDR|FDR-10|FDR|EDR|
 
 Infiniband and 40Gbit Ethernet are also being deployed as a _converged network_, or _virtual fabric_, which, along with virtualization of the OS, allows many virtual adapters (Ethernet, FC-HBAs) to run over fewer high-speed links. The connections can be configured dynamically through software and allow for fewer cables and easier maintenance and management.
 
-![Figure 2.11: An infiniband switch (Source).](..\media\infiniband_switch.png)
+![Figure 2.11: An infiniband switch (Source).]("..\media\infiniband_switch.png")
 _Figure 2.11: An infiniband switch (Source)._
 
 The choice of network technology and topology to deploy in a data center also depends on your applications but will typically include multiple tiers, with the connection between the tiers being high-speed fiber. Copper UTP cabling is prevalent within the rack and will continue to function well for low-speed management networks.

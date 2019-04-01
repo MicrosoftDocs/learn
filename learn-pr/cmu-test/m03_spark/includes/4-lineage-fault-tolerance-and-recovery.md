@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_4_graph_flow_API.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_4_graph_flow_API.xml -->
 ##  Fault Tolerance
 On large, distributed clusters running long jobs on commodity hardware, it is very important to have a fault-tolerant framework in case of any errors. Unlike Hadoop which emphasises quick fault-recovery by replicating data stored on HDFS and straggler jobs, Spark relies on the abstract concept of a lineage to recover from errors. A lineage is a directed acyclic graph that defines the operations required to create an RDD. 
 
@@ -13,7 +13,7 @@ Let us return to the program that we saw on the previous page (describing RDD tr
 
 As RDDs are derived from each other using transformations, Spark keeps track of the dependencies using a lineage graph. This allows the RDDs to be computed lazily (as defined earlier) and provides fault recovery information to the framework. The lineage for the code above is shown here (Figure 5.35).
 
-![Figure 5.35: RDD lineage graph](..\media\spark_example_1.png)
+![Figure 5.35: RDD lineage graph]("..\media\spark_example_1.png")
 _Figure 5.35: RDD lineage graph_
 
 Since RDDs are immutable, these graphs are extremely easy to define. Please note that at no point in the graph above has the RDD been materialized and computation been actually carried out. That occurs at the next line of code, which is the first action in the program: 
@@ -36,7 +36,7 @@ On the other hand, consider a `join()` transformation, which when called on RDDs
 
 Both of the dependencies above are shown in Figure 5.36: 
 
-![Figure 5.36: Narrow and wide dependencies in Spark](..\media\spark_dependencies.png)
+![Figure 5.36: Narrow and wide dependencies in Spark]("..\media\spark_dependencies.png")
 _Figure 5.36: Narrow and wide dependencies in Spark_
 
 ##  Checkpointing

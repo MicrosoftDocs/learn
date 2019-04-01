@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_4_load_balancing.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_4_load_balancing.xml -->
 The need for load balancing in computing stems from two basic requirements: First, high availability can be improved by replicationand and second, performance can be improved through parallel processing. High availability is the property of a service that is available for near 100% of the time when any client tries to access the service. The Quality of Service of a particular service generally includes several considerations such as throughput, latency requirements among others. 
 
 ##  What is Load Balancing?
@@ -6,7 +6,7 @@ The most well-known form of load balancing is “Round robin DNS” employed by 
 
 Before the advent of the cloud, DNS load balancing was a simple way to tackle the latency of long-distance connections. The dispatcher at the DNS server was programmed to respond with the IP address of the server that was geographically nearest to the client. The simplest schemes to do this tried to respond with the IP address from the pool that was numerically the closest to the IP address of the client. This method, of course, was unreliable, as IP addresses are not distributed in a global hierarchy. Current techniques are more sophisticated and rely on a software mapping of IP addresses to locations based on physical maps of Internet Service Providers (ISPs). Since this is implemented as a costly software lookup, this method yields more accurate results, but is expensive to compute. However, the cost of a slow lookup is amortized since the DNS lookup occurs only when the first connection to a server is made by the client. All subsequent communications happen directly between the client and the server that owns the dispatched IP address. An example of a DNS load balancing scheme is shown in the figure below. 
 
-![Figure 2.31: Load Balancing in a Cloud Hosting Environment](..\media\load_balancing_1.png)
+![Figure 2.31: Load Balancing in a Cloud Hosting Environment]("..\media\load_balancing_1.png")
 _Figure 2.31: Load Balancing in a Cloud Hosting Environment_
 
 The downside of this method is in the case of a server failure, the switch over to a different IP address is dependent on the configuration of the Time-To-Live (TTL) of the DNS cache. DNS entries are known to be long-living and updates are known to take over a week to propagate over the Internet. Hence, it is difficult to quickly “hide” a server failure from the client. This can be improved by reducing the validity (TTL) of an IP address in the cache, but this occurs at the cost of performance and increasing the number of lookups. 
@@ -15,7 +15,7 @@ Modern load balancing often refers to the use of a dedicated instance (or a pair
 
 <!-- <image alt="(C) CMU Cloud Computing Course" src=""/> -->Though all types of network load balancers will simply forward the user’s information along with any context to the backend servers, when it comes to serving the response back to the client they may employ one of two basic strategies: 
 1. Proxying - In this approach the load balancer receives the response from the backend and relays it back to the client. The load balancer behaves as a standard web proxy and is involved in both halves of a network transaction, namely forwarding the request to the client and sending back the response. 
-1. TCP Handoff - In this approach the TCP connection with the client is handed off to the backend server and therefore the server sends the response directly to the client, without going through the load balancer. ![Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server.](..\media\tcp_handoff.png)
+1. TCP Handoff - In this approach the TCP connection with the client is handed off to the backend server and therefore the server sends the response directly to the client, without going through the load balancer. ![Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server.]("..\media\tcp_handoff.png")
 _Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server._
 
 

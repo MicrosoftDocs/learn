@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_0_module_intro.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_0_module_intro.xml -->
 We now move on to the next part of the course, namely Cloud Storage. Storage is an important aspect of cloud computing and has seen a lot of innovation in the last decade or so. In fact, Amazon’s first public cloud service was the Simple Storage Service (S3). 
 
 We will begin with a description of the types of and characteristics of data. We will then move to typical applications and thier requirements on storage systems. 

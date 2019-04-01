@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m03_resource_virtualization_CPU\x-oli-workbook_page\_u03_m03_1_intro.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m03_resource_virtualization_CPU\x-oli-workbook_page\_u03_m03_1_intro.xml -->
 A key element, which is also one of the more complex parts of virtualization, is CPU virtualization. Virtualizing a CPU entails two major steps:
 
 

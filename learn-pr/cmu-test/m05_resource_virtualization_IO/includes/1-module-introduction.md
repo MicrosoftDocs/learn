@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m05_resource_virtualization_IO\x-oli-workbook_page\_u03_m05_1_intro.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m05_resource_virtualization_IO\x-oli-workbook_page\_u03_m05_1_intro.xml -->
 Our final segment in resource virtualization concerns IO devices. In this respect, we can consider the VMM or hypervisor the arbiter of communication between multiple guests and the physical hardware, multiplexing the usage (in time/space or both), depending on the actual device being shared. 
 
 The virtualization strategy for a given I/O device type consists of: 

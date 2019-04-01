@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_1_Scalability.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_1_Scalability.xml -->
 ##  Challenges in Building Cloud Programs
 Designing and implementing a distributed program involves, as we have seen, choosing a programming model and addressing issues of synchrony, parallelism, and architecture. Beyond these matters, when developing cloud programs, a designer must also pay careful attention to several other challenges critical to cloud environments. We next discuss challenges associated with scalability, communication, heterogeneity, synchronization, fault tolerance, and scheduling.
 
@@ -11,7 +11,7 @@ The reality of execution on _n_ nodes never meets the ideal of _n_-fold performa
 1. As shown in Figure 5.13, some program parts can never be parallelized (e.g., initialization).
 1. Load imbalance among tasks is highly likely, especially in distributed systems, such as clouds, in which heterogeneity (see the section Heterogeneity) is a major factor. As depicted in Figure 5.13(b), load imbalance usually delays programs so that a program becomes bound to its slowest task. Specifically, even if all tasks in a program finish, the program cannot commit before the last task finishes. 
 1. Other serious overheads, such as communication and synchronization overheads, can significantly impede scalability.
-![Figure 5.13: Parallel speedup: (a) ideal case and (b) real case](..\media\scalability.png)
+![Figure 5.13: Parallel speedup: (a) ideal case and (b) real case]("..\media\scalability.png")
 _Figure 5.13: Parallel speedup: (a) ideal case and (b) real case_
 
 These issues are important when comparing the performance of distributed and sequential programs. A widely used expression that describes speedups and, additionally, accounts for various overheads is Amdahl's law. To illustrate the calculation, we assume that a sequential version of a program _T_ takes _Ts_ time units, while a parallel/distributed version takes _Tp_ time units using a cluster of _n_ nodes. In addition, we suppose that fraction _s_ of the program is not parallelizable, leaving the `(1 – s)` portion parallelizable. According to Amdahl's law, the speedup of the parallel/distributed execution of `P` versus the sequential one can be defined as follows: 

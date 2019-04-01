@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_2_provisioning.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_2_provisioning.xml -->
 The most basic role of a Cloud Service Provider is to package and isolate virtual parts of a physical data center and provide access for cloud users to provision resources on the cloud. Provisioning is the process of mapping abstract resource requests by cloud users to physical resources on servers within a data center. 
 
 In IAAS, this mainly involves launching virtual machines on top of hypervisors (these are special software applications that enable isolation of virtual machines on top of a physical machine- we will read more about them soon), as well as mounting storage volumes from a storage pool and creating a private network overlay for the user’s resources. 
@@ -18,7 +18,7 @@ A resource provisioning system on the cloud generally has the following sub-part
 ##  Cloud End-to-End Service Provisioning Flow
 Figure 2.23 below shows the typical end-to-end steps for a customer provisioning a virtual machine from a Cloud Service Provider (CSP):
 
-![Figure 2.23: Typical End-to-End IaaS provisioning steps](..\media\provisioning.png)
+![Figure 2.23: Typical End-to-End IaaS provisioning steps]("..\media\provisioning.png")
 _Figure 2.23: Typical End-to-End IaaS provisioning steps_
 
 The steps illustrated in Figure 2.23 are explained as follows: 

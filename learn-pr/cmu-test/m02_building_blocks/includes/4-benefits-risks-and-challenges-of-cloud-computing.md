@@ -1,8 +1,8 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_3_benefits_risks_challenges.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_3_benefits_risks_challenges.xml -->
 ##  Benefits of the Cloud
 The popularity of cloud computing is driven by its numerous benefits, including improved economics, simplified IT management, scalability, flexibility, improved utilization, and a reduced carbon footprint. The following video (Video 1.6) discusses these benefits.
 
-> [!VIDEO](https://youtube.com/embed/uKpFLuqOy-o)
+> [!VIDEO]("https://youtube.com/embed/uKpFLuqOy-o")
 
 Although presented earlier and in the video above, let us consider the cloud benefits individually:
 

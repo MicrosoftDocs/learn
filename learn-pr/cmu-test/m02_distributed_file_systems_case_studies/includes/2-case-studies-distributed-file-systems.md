@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_1_intro.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_1_intro.xml -->
 As a recap, a distributed file system (DFS) is a file system that has files distributed among multiple file servers. It is important to note that in a distributed file system, the client views a single, global namespace that encompasses all the files across all the file system servers. A DFS requires metadata management so that clients can locate the required files and file blocks across the file servers. They are typically deployed on multiple file-sharing nodes and are intended for use by multiple users at the same time. As with any shared resource, multiple design considerations must be considered: Performance, consistency, fault tolerance, availability are some of them.
 
 ##  Origins and Evolution of Distributed File Systems

@@ -1,10 +1,10 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_6_tail_latency.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_6_tail_latency.xml -->
 We have already discussed several optimization techniques used on the cloud to reduce latency. Some of the measures we studied include scaling resources horizontally or vertically and using a load balancer to route requests to the nearest available resources. This page delves more deeply into why, in a large data center or cloud application, it is important to minimize latency for all requests, and not just optimize for the general case. We will study how even a few high-latency outliers can significantly degrade the observed performance of a large system. This page also covers various techniques to create services that provide predictable low-latency responses even if the individual components do not guarantee this. This is a problem that is especially significant for interactive applications where the desired latency for an interaction is below 100ms. 
 
 ##  What is Tail Latency?
 Most cloud applications are large, distributed systems often rely on parallelization to reduce latency. A common technique is to fan-out a request received at a root node (e.g. a front-end web server) to many leaf nodes (back-end compute servers). The performance improvement is driven both by the parallelism of the distributed computation, and also by the fact that extremely expensive data-moving costs are avoided. We simply move the computation to the place where the data is stored. Of course, each leaf node concurrently operates on hundreds or even thousands of parallel requests. 
 
-![Figure 2.34: Latency due to scale out](..\media\scaling_out_latency.png)
+![Figure 2.34: Latency due to scale out]("..\media\scaling_out_latency.png")
 _Figure 2.34: Latency due to scale out_
 
 Consider the example of searching for a movie on Netflix. As a user begins to type in the search box, this will generate several parallel events from the root web server, which include at least the following requests: 
@@ -20,14 +20,14 @@ Clearly, the need for scale has led to a large fan-out at the back-end for each 
 
 Like most stochastic processes, the response time of a single leaf node can be expressed as a distribution. Decades of experience have shown that in the general case, most (>99%) requests of a well-configured cloud system will execute extremely quickly. But often, there are very few outliers on a system that execute extremely slowly. 
 
-![Figure 2.35: Tail Latency Example ](..\media\tail_latency.png)
+![Figure 2.35: Tail Latency Example ]("..\media\tail_latency.png")
 _Figure 2.35: Tail Latency Example _
 
 Consider a system where all leaf nodes have an average response time of 1 ms, but there is probability of a 1% that the response time is greater than 1000 ms (one second). If each query is handled by only a single leaf node, the probability of the query taking longer than one second is also 1%. However, as we increase the number of nodes to 100, the probability that the query will complete within one second drops to 36.6%, which means that there is a 63.4% chance that the query duration will be determined by the tail (lowest 1%) of the latency distribution. 
 
 0.99100If we simulate this for a variety of cases, we see that as the number of servers increase, the impact of a single slow query is more pronounced (notice that the graph below is monotonically increasing). Also, as the probability of these outliers decreases from 1% to 0.01%, the system is substantially lower. 
 
-![Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study.](..\media\tail_latency2.png)
+![Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study.]("..\media\tail_latency2.png")
 _Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study._
 
 Just like we designed our applications to be fault-tolerant to deal with resource reliability problems, it should be clear now why it is important for applications to be “tail-tolerant”. To be able to do this, we must understand the sources of these long performance variabilities and identify mitigations where possible and workarounds where not. 

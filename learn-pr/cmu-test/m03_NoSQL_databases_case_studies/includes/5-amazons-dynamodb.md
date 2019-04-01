@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m03_NoSQL_databases_case_studies\x-oli-workbook_page\_u04_m03_5_dynamodb.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m03_NoSQL_databases_case_studies\x-oli-workbook_page\_u04_m03_5_dynamodb.xml -->
 ##  Amazon's DynamoDB
 [DynamoDB](http://aws.amazon.com/dynamodb) is a proprietary, highly available NoSQL data store offered by Amazon Web Services. DynamoDB has evolved from Dynamo, a distributed key-value storage system first described by Amazon in . Dynamo shares some of the properties of databases as well as distributed hash tables (DHTs) and is designed using several techniques in distributed systems, including consistent hashing, quorum, and antientropy<!-- , etc. -->. 
 

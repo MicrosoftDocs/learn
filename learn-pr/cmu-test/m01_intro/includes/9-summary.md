@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_8_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_8_summary.xml -->
 ##  Introduction to Cloud Computing Summary
 
 - Cloud computing is the delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.

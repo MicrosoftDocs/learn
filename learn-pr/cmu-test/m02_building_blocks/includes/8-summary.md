@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_7_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_7_summary.xml -->
 ##  Cloud Building Blocks Summary
 
 - Cloud computing offers many benefits, including a pay-as-you-go economic model, simplified IT management for users, scalability, flexibility, improved utilization, and a decreased carbon footprint.

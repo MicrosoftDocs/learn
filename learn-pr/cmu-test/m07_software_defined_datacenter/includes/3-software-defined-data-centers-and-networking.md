@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_2_sdn.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_2_sdn.xml -->
 ##  Network Virtualization
 An application stack generally includes firewalls, load balancers, web servers, app servers, databases etc. Traditionally, these resources used to run on separate network segments as they needed to communicate with each other using a backplane network before responding back to the external user. In traditional data centers, the network was segmented using [Layer 2](http://en.wikipedia.org/wiki/Data_link_layer) Virtual LANs (VLANs), which are a mechanism to restrict the broadcast domain of each LAN segment and partition the network. 
 
@@ -11,10 +11,10 @@ Network Virtualization technology, and Software-Defined Networking provide a sol
 ###  Software Defined Networking
 Software-Defined Networking is an approach to computer networking that decouples the data plane (that forwards packet in the hardware layer) from the control plane (which decides the packet forwarding rules). SDNs use a centralized controller, which programs the data plane using well-defined APIs to modify the network flow. See Figure 3.33 to understand the various pieces of the stack. 
 
-![Figure 3.33 : SDN Component Planes](..\media\sdn_stack.png)
+![Figure 3.33 : SDN Component Planes]("..\media\sdn_stack.png")
 _Figure 3.33 : SDN Component Planes_
 
-> [!VIDEO](https://youtube.com/embed/rVxiiJKQ73U)
+> [!VIDEO]("https://youtube.com/embed/rVxiiJKQ73U")
 
 ###  SDN Architecture
 SDNs are remarkably flexible; they can operate with different types of switches and at different protocol layers. SDN controllers and switches can be implemented for Ethernet switches (Layer 2), Internet routers (Layer 3), transport (Layer 4) switching, and even at the application layer (Layer 7). SDN relies on the common functions found on networking devices, which essentially involve forwarding packets based on some form of flow definition. 
@@ -40,7 +40,7 @@ Having a central controller allows the control plane to have a global view. This
 
 Isolation between tenants is a critical SDN application on the cloud. By specifying separate network flows depending upon the tenant, multiple _virtual networks_ can be overlaid on a single physical network. These virtual networks can even have overlapping IP address space. Consider the case with two cloud tenants-- `Yellow` and `Red`, colocated on the same rack in the datacenter (Figure 3.34). They can share the same underlying infrastructure, while being isolated using a higher-level abstraction. 
 
-![Figure 3.34 : A Logical View of a Network Overlay](..\media\overlay.png)
+![Figure 3.34 : A Logical View of a Network Overlay]("..\media\overlay.png")
 _Figure 3.34 : A Logical View of a Network Overlay_
 
 One way to achieve isolation between the `Red` and `Yellow` tenant network is by using network tunneling. Typically, the following steps takes place for tunneling traffic, 
@@ -50,7 +50,7 @@ One way to achieve isolation between the `Red` and `Yellow` tenant network is by
 1. The vswitch (virtual switch in the hypervisor) receives the packet from the VM and encapsulates it. The encapsulation method (Figure 3.35) may be any of the following, 
     1. VXLAN (Virtual Extensible LAN) 
     1. NVGRE (Network Virtualization using Generic Routing Encapsulation) 
-![Figure 3.35: Encapsulation Methods](..\media\encap.png)
+![Figure 3.35: Encapsulation Methods]("..\media\encap.png")
 _Figure 3.35: Encapsulation Methods_
 
 
@@ -58,7 +58,7 @@ _Figure 3.35: Encapsulation Methods_
 1. At the destination, the kernel ip-stack strips the outer mac and ip address and reads the encapsulation headers to determine the destination vm and delivers the packet to the VNI of the destination VM. 
 The overall flow of a packet from the source application to the destination application is illustrated in Figure 3.36:
 
-![Figure 3.36: Packet Stages in Virtualized network](..\media\packet_stages.png)
+![Figure 3.36: Packet Stages in Virtualized network]("..\media\packet_stages.png")
 _Figure 3.36: Packet Stages in Virtualized network_
 
 Software defined networking comes into the picture in steps 2 and 3 of the above tunneling process. The software running on the hypervisor vswitch, inspects the packets and requests the centralized SDN controller to add a flow specification for the flow. The flow specification is used to match the {VM, Source Address, Destination Address} tuple to a flow action that adds the Encapsulation Header and the outer MAC and IP header as shown in Figure 3.35. The SDN controller knows what outer header to add because it has a global view of all the resources and the software on the controller route the flows accordingly. 

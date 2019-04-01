@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_8_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_8_summary.xml -->
 ##  Programming the Cloud Summary
 
 - Cloud applications must take precautions to ensure that they use resources that help them meet their bandwidth and latency requirements, as well as follow security best practices. 

@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m02_mapReduce\x-oli-workbook_page\_u05_m02_9_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m02_mapReduce\x-oli-workbook_page\_u05_m02_9_summary.xml -->
 ##  Distributed Analytics Engines for the Cloud: MapReduce Summary
 
 - MapReduce is a data-parallel framework for processing big-data applications on large clusters. Hadoop is an open-source implementation of MapReduce.

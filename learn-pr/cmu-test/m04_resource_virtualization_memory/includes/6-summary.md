@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m04_resource_virtualization_memory\x-oli-workbook_page\_u03_m04_6_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m04_resource_virtualization_memory\x-oli-workbook_page\_u03_m04_6_summary.xml -->
 ##  Resource Virtualization: Memory Summary
 
 - In the earliest days, either a process fit a memory or it could not be run.

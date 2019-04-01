@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_4_HDFS_vs_PVFS.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_4_HDFS_vs_PVFS.xml -->
 ##  HDFS versus Ceph
 We now summarize the primary differences between HDFS and Ceph.
 

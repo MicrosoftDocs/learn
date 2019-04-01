@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_5_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_5_summary.xml -->
 ##  Module Summary
 
 - A Software-defined Data Center (SDCC) automates and makes infrastructure easy to manage by virtualizing all components within a cluster, including servers, networking fabric and storage systems.

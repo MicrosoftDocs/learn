@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_8_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_8_summary.xml -->
 ##  Data Center Components Summary
 
 - Servers mount into racks, come in incremental heights, called rack units (e.g., 1U, 2U, 3U), and have various depths. Larger cases allow for more expansion and/or redundant components.

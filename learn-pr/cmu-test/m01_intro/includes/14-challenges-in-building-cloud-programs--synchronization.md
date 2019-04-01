@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_4_Synchronization.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_4_Synchronization.xml -->
 ##  Synchronization
 To achieve maximum performance, distributed tasks need the ability to operate simultaneously on shared data without risking data corruption or inconsistency. Synchronization mechanisms address this requirement by allowing programmers to control the sequence of operations (reads and writes) that tasks perform. For instance, GraphLab allows multiple tasks to operate on different vertices of the same graph simultaneously. This capability could lead to race conditions in which two tasks try to modify data on a shared edge at the same time, resulting in a corrupted value. The solution lies in a synchronizing means to assure that distributed tasks can obtain mutually exclusive data access, the _mutual exclusion_ property.
 

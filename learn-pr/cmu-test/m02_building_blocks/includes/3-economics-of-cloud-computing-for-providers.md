@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_2_economics.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_2_economics.xml -->
 ##  Cloud Service Provider Economics
 Since the cloud user has no longer needs to invest in Capital Expenditures, from a cloud service provider's perspective, long-term CapEx as well as recurring OpEx costs are unavoidable. An important challenge for cloud service providers is to satisfy the demands of their clients while achieving high-average utilization in order to make a profit, which depends on their ability to build data centers with high efficiency and reliability at manageable costs. Cloud service providers amortize their costs over a large number of users.
 

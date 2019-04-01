@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_5_security_and_privacy_threats.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_5_security_and_privacy_threats.xml -->
 Now that we understand how the agreement between client and provider is met, let's take a look at a major concern for cloud service providers and users alike: security.
 
 As cloud service providers compete for market dominance, their security features have become a key service differentiator. 
@@ -9,12 +9,12 @@ They also generally provide an accessible interface to modify security settings,
 
 Let us look at the cloud from the point of view of a traditional enterprise which used in-house IT infrastructure. Enterprises find that they lose control as a function of asset ownership as they move away from traditional servers towards private clouds and then up the stack from IaaS to SaaS (Figure 1.10). In all three service models, the cloud vendor has full ownership of the underlying infrastructure (networks, storage and hosts). In PaaS, the service provider may additionally claim partial ownership of the application infrastructure. Finally, in the SaaS model, the application infrastructure is fully owned by the service provider. 
 
-![ Figure 1.10 - Enterprises lose control as you move up the public cloud stack](..\media\security_1.jpg)
+![ Figure 1.10 - Enterprises lose control as you move up the public cloud stack]("..\media\security_1.jpg")
 _ Figure 1.10 - Enterprises lose control as you move up the public cloud stack_
 
 In all three models, however, the enterprise has full ownership over all its data. Unfortunately, it does not have full control over this data, as it is stored outside the network perimeter. This lack of control over sensitive data storage and transfer is one of the leading inhibitors to large-scale cloud adoption. Two-thirds of potential adopters have placed “data security and privacy” as the biggest risk in cloud computing (Figure 1.11). 
 
-![Figure 1.11 - Security concerns are the biggest barrier to large-scale cloud adoption](..\media\security_2.jpg)
+![Figure 1.11 - Security concerns are the biggest barrier to large-scale cloud adoption]("..\media\security_2.jpg")
 _Figure 1.11 - Security concerns are the biggest barrier to large-scale cloud adoption_
 
 ##  Threats

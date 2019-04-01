@@ -1,14 +1,14 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_1_big_picture.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_1_big_picture.xml -->
 Data is simply a collection of raw facts and figures. Applications are responsible for generating, storing, analyzing and consuming data, or some combination thereof. 
 
 The nature and properties of data typically influence the design and implementation of storage systems. Some of the properties include volume, content, and the frequency of access of data. As an example, Facebook recently studied the access patterns of image and video content posted by its users to find that the access rate exponentially decreases as time passes. They used these findings to design and implement a storage system specific to their needs. In video 4.1, we will look at the various properties of data that influence the design of storage systems.
 
-> [!VIDEO](https://youtube.com/embed/Y0C5tA4TV0g)
+> [!VIDEO]("https://youtube.com/embed/Y0C5tA4TV0g")
 
 ##  Structure of Data
 Data can be categorized using its dynamicity and structure. Specifically, data can be broadly segmented into one of the four quadrants in Figure 4.1. One categorization represents the structure of the data, which is considered as either _structured_ or _unstructured_.
 
-![Figure 4.1: Segmenting data into various types](..\media\segmenting_data.png)
+![Figure 4.1: Segmenting data into various types]("..\media\segmenting_data.png")
 _Figure 4.1: Segmenting data into various types_
 
  _ Structured data_ have a predefined data model that organizes the data in a form that is relatively easy to process, store, retrieve, and manage. Structured data are usually small data that naturally fit in tabular form and hence can easily be stored in traditional databases (e.g., _relational_ databases). An example of structured data is customers' contact information that is stored in tables in a customer relationship management (CRM) database. These data fit in a fairly rigid model (called _schema_ in relational databases), which can be quickly stored, accessed, and manipulated.
@@ -35,7 +35,7 @@ In this regard, we touch on an often-used term to describe large volumes of data
 
 The rapidly expanding information and communications technology (ICT) that is permeating all aspects of modern life has led to a massive explosion of data over the last few decades. Major advances in the connectivity and digitization of information has led to increasing amounts of data being created on a daily basis. These data are diverse, ranging from images and videos from mobile phones being uploaded to websites such as Facebook and YouTube, to 24/7 digital TV broadcasts, to surveillance footage from hundreds of thousands of security cameras, to large scientific experiments such as the Large Hadron Collider—all of which produce many terabytes of data every day. International Data Corporation's (IDC) latest Digital Universe Study predicts a 300-fold increase in the amount of data created globally from 130 exabytes (1028) in 2012 to 30,000 exabytes in 2020 (Figure 4.2).
 
-![Figure 4.2: Predicted growth of data from 2009 to 2020](..\media\predicted_growth_data.png)
+![Figure 4.2: Predicted growth of data from 2009 to 2020]("..\media\predicted_growth_data.png")
 _Figure 4.2: Predicted growth of data from 2009 to 2020_
 
 Organizations are trying to leverage or, in fact, cope with the massive amounts of data that are growing at ever-increasing rates. Google, Yahoo!, and Facebook have gone from processing gigabytes and terabytes to the petabyte range, which puts immense pressure on their computing infrastructures that need to be available 24/7 and must scale seamlessly as the amount of data produced rises exponentially. These are the challenges to which present and future storage technologies must respond.

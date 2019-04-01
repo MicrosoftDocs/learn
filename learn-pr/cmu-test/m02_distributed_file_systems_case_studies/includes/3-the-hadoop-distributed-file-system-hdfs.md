@@ -1,10 +1,10 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_2_HDFS.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_2_HDFS.xml -->
 ##  HDFS
 Google's MapReduce programming model allows computational jobs to be structured in terms of two functions: map and reduce. Input is fed into MapReduce as key-value pairs, where it is then processed through a map function and fed into a reduce function. The reduce operation then produces a result, which is also in the form of key-value pairs. MapReduce is designed to execute many instances of map and reduce operations in parallel over a large computational cluster. The MapReduce programming model is covered in detail in the next unit of this course.
 
 The MapReduce programming model assumes the availability of a distributed storage system that is available across all the nodes of the cluster, with a single namespace, which is where Google File System (GFS) comes in. GFS is a distributed file system (DFS) that is collocated with the nodes of the MapReduce cluster. GFS is designed to work in tandem with MapReduce and maintains a single namespace for the entire MapReduce cluster.
 
-> [!VIDEO](https://youtube.com/embed/w4hbR_jcfSg)
+> [!VIDEO]("https://youtube.com/embed/w4hbR_jcfSg")
 
 Both Google's MapReduce and GFS implementations remain proprietary. However, an open-source clone of MapReduce, called Apache Hadoop, has emerged and gained <!-- a lot of -->popularity in big-data circles. HDFS is an open-source clone of GFS. HDFS is designed to be a distributed, scalable, fault-tolerant file system that primarily caters to the needs of the MapReduce programming model. Video 4.12 introduces HDFS.
 
@@ -21,7 +21,7 @@ As described earlier, HDFS is a DFS that is designed to run on a cluster of node
 - High availability using commodity hardware
 An HDFS cluster is illustrated in Figure 4.25.
 
-![Figure 4.25: HDFS architecture](..\media\HDFS_architecture.png)
+![Figure 4.25: HDFS architecture]("..\media\HDFS_architecture.png")
 _Figure 4.25: HDFS architecture_
 
 HDFS follows a master-slave design. The master node is called the _NameNode_. The NameNode handles the metadata management for the entire cluster and maintains a single namespace for all the files stored on HDFS. The slave nodes are known as _DataNodes_. The DataNodes store the actual data blocks on the local file system within each node.
@@ -35,7 +35,7 @@ In addition, because HDFS is designed to tolerate failures of individual nodes, 
 ##  Cluster Topology in HDFS
 Hadoop clusters are typically deployed in a data center that consists of multiple racks of servers connected using a fat-tree topology (as discussed in <!-- the unit on data centers -->Unit 2). To this end, HDFS has been designed with cluster-topology awareness, which aids in making block-placement decisions to influence performance and fault tolerance. Common Hadoop clusters have about 30 to 40 servers per rack, with a gigabit switch dedicated to the rack and an uplink to a core switch or router, which has bandwidth that is shared among many racks in the data center (Figure 4.26). 
 
-![Figure 4.26: HDFS cluster topology](..\media\HDFS_cluster_topology.png)
+![Figure 4.26: HDFS cluster topology]("..\media\HDFS_cluster_topology.png")
 _Figure 4.26: HDFS cluster topology_
 
 The salient point to note is that Hadoop assumes that the aggregate bandwidth within the nodes in a rack is higher than the aggregate bandwidth across nodes on different racks. This assumption is engineered into the design of Hadoop when it comes to data access and replica placement (which is discussed in the following sections).
@@ -46,9 +46,9 @@ In the example in Figure 4.26, the distance between Node 1 and itself is zero ho
 
 Video 4.13 walks through file read and write operations in HDFS.
 
-> [!VIDEO](https://youtube.com/embed/YD8_alwBoAM)
+> [!VIDEO]("https://youtube.com/embed/YD8_alwBoAM")
 
-![Figure 4.27: File reads in HDFS](..\media\file_reads_HDFS.png)
+![Figure 4.27: File reads in HDFS]("..\media\file_reads_HDFS.png")
 _Figure 4.27: File reads in HDFS_
 
 Figure 4.27 illustrates the process of a file read in HDFS. An HDFS client (the entity that needs to access a file) first contacts the NameNode when a file is opened for reading. The NameNode then provides the client with a list of block locations of the file. Hadoop also assumes that blocks are replicated across nodes, so the NameNode actually finds the closest block to the client when providing the location of a particular block. The locality is determined in the following order (of decreasing locality): blocks within the same node as the client, blocks in the same rack as the client, and blocks that are off rack to the client. 
@@ -59,14 +59,14 @@ It is important to note that clients contact the DataNode directly to retrieve d
 
 File writes are different from file reads in HDFS (Figure 4.28). A client that needs to write data to HDFS first contacts the NameNode and then notifies it of a file creation. The NameNode checks whether the file already exists and verifies whether the client has permission to create a file. If the checks pass, the NameNode then makes a record of a new file.
 
-![Figure 4.28: File writes in HDFS](..\media\file_reads_HDFS2.png)
+![Figure 4.28: File writes in HDFS]("..\media\file_reads_HDFS2.png")
 _Figure 4.28: File writes in HDFS_
 
 The client then proceeds to write the file to an internal data queue and requests the NameNode for block locations on DataNodes on the cluster. Blocks on the internal queue are then transferred to individual DataNodes in a pipelined fashion. The block is written on the first DataNode, which then pipelines the block to other DataNodes in order to write replicas of the block. Thus the blocks are replicated during the file write itself. It is important to note that HDFS does not acknowledge a write to the client (step 5 in Figure 4.28) until all the replicas for that file have been written by the DataNodes.
 
 Hadoop also uses the notion of rack locality during replica placement. Data blocks are triple replicated in HDFS by default. HDFS attempts to place the first replica on the same node as the client that is writing the block. In case a client process is not running in the HDFS cluster, a node is chosen at random. The second replica is written to a node that is on a different rack from the first (off rack). The third replica of the block is then written to another random node on the same rack as the second. Further replicas are written to random nodes in the cluster, but the system tries to avoid placing too many replicas on the same rack. Figure 4.29 illustrates the replica placement for a triple-replicated block in HDFS. The idea behind HDFS's replica placement is to be able to tolerate node and rack failures. For example, when an entire rack goes offline due to power or networking problems, the requested block can still be located at a different rack.
 
-![Figure 4.29: Replica placement for a triple-replicated block in HDFS](..\media\HDFS_file.png)
+![Figure 4.29: Replica placement for a triple-replicated block in HDFS]("..\media\HDFS_file.png")
 _Figure 4.29: Replica placement for a triple-replicated block in HDFS_
 
 ##  Synchronization: Semantics

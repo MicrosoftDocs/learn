@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m06_case_study\x-oli-workbook_page\_u03_m06_3_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m06_case_study\x-oli-workbook_page\_u03_m06_3_summary.xml -->
 ##  Case Study Summary
 
 - Many virtualization suites are available from multiple cloud vendors. They have differing architectures and features. Most suites support memory over commitment (which enhances server consolidation) as well as live migration (which allows VMs to be seamlessly moved across physical machines).

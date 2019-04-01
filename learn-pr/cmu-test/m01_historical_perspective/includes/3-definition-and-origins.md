@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m01_historical_perspective\x-oli-workbook_page\_u02_m01_2_definition_origins_history.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m01_historical_perspective\x-oli-workbook_page\_u02_m01_2_definition_origins_history.xml -->
 ##  Defining Data centers
 Formally, a data center can be defined as follows:
 
@@ -13,7 +13,7 @@ Modularity is important for data centers because it allows an organization to ex
 |--|
 |The width of early railroad relays dictated the width of a modern 19-in. rack. But the standard gauge of modern railroad tracks (4 ft, 8½ in.) dates back to ancient Greek stone pathways, which the Romans adopted and brought to Europe during the age of the Roman Empire ([Wikipedia](http://en.wikipedia.org/wiki/Railroad_gauge#Early_origins_of_the_standard_gauge), 2014).<!-- [<link href="http://en.wikipedia.org/wiki/Railroad_gauge#Early_origins_of_the_standard_gauge" >link</link>] -->|
 
-![Figure 2.1: 1940s radio operators room showing early equipment racks (Inland Marine Radio History Archive, 2012).](..\media\radio_operators_room.png)
+![Figure 2.1: 1940s radio operators room showing early equipment racks (Inland Marine Radio History Archive, 2012).]("..\media\radio_operators_room.png")
 _Figure 2.1: 1940s radio operators room showing early equipment racks (Inland Marine Radio History Archive, 2012)._
 
 A 1933 U.S. patent, F.C. Lavarack, 1,919,166, is an example of a standardized equipment rack for relays. In Figure 2.2, you can see some of the original drawings in the patent.
@@ -27,5 +27,5 @@ Some of the advantages of Lavarack's design over common predecessors include:
 - Vertical mounting surface: Easier installation, maintenance, and wiring.
 Many of today's standard, 19-inch equipment racks have evolved from Lavarack's design.
 
-![Figure 2.2: Relay rack patent drawings (figure from Relay Rack patent).](..\media\relay_rack_patent.png)
+![Figure 2.2: Relay rack patent drawings (figure from Relay Rack patent).]("..\media\relay_rack_patent.png")
 _Figure 2.2: Relay rack patent drawings (figure from Relay Rack patent)._

@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_4_sla.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_4_sla.xml -->
 In this course so far, we have talked about the fundamental ideas behind cloud computing and some of the service models that have emerged under the cloud computing paradigm. Assuming an organization wants to move their infrastructure and services to a cloud provider, several questions arise. For example, how does an organization:
 - define its requirements in terms of the services that they require from the cloud service provider?
 - identify the type and quantity of the services that it requires?

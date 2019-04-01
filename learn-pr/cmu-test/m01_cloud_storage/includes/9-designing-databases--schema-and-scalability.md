@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_3_1_filesystems6.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_3_1_filesystems6.xml -->
 Databases, as you can imagine, encompass a broad range of applications and requirements. To this end, we will discuss a few specific design patterns that database creators have to make when creating their database systems.
 
 ##  Schema Enforcement
@@ -29,12 +29,12 @@ On the other hand, certain systems aggregate and analyze data in order to gain i
 
 Video 4.6 provides an overview of OLTP vs. OLAP:
 
-> [!VIDEO](https://youtube.com/embed/BNgouADOemg)
+> [!VIDEO]("https://youtube.com/embed/BNgouADOemg")
 
 ##  Scalability
 Over time, when a database system's user base and data grows, it may require some form of _scaling_, which would expand the capacity and/or the performance of the database system in order to support more users or data, or both. Database scaling is complex for a variety of reasons which we will cover in detail in Video 4.7:
 
-> [!VIDEO](https://youtube.com/embed/opYWHWG-vVg)
+> [!VIDEO]("https://youtube.com/embed/opYWHWG-vVg")
 
 ###  Vertical Scaling
 Vertical scaling (or scaling up) is the process of increasing a database’s capacity or ability to handle load without adding more hosts. This can be done by hardware upgrades such as a faster CPU, increased RAM, or disks with more capacity and/or more I/O operations per second (IOPS). The scalability with vertical scaling is limited by the amount of CPU, RAM, and disk that can be configured on a single machine.

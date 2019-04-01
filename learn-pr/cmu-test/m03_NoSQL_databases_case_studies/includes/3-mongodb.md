@@ -1,7 +1,7 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m03_NoSQL_databases_case_studies\x-oli-workbook_page\_u04_m03_3_mongoDB.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m03_NoSQL_databases_case_studies\x-oli-workbook_page\_u04_m03_3_mongoDB.xml -->
 MongoDB is a document-oriented database. MongoDB eschews the relational model in favor of a "schema-less" model, which is designed to be more flexible and mimics the way data is modeled in modern object-oriented programming languages. MongoDB is also designed to be scalable from the ground up, it can automatically split up data among multiple servers and balance load across servers in a cluster. MongoDB also allows for complex queries such as those that involve MapReduce-style aggregations and geo-spatial queries, making MongoDB popular as a data store for mapping-related applications. Video 4.42 covers MongoDB
 
-> [!VIDEO](https://youtube.com/embed/fN8zgNq-pdE)
+> [!VIDEO]("https://youtube.com/embed/fN8zgNq-pdE")
 
 ##  MongoDB Data Model
 A _document_ is the basic unit of data for MongoDB, roughly equivalent to a row in a relational database management system. A document is an ordered set of keys and their associated values. An example of a document is illustrated below:
@@ -44,14 +44,14 @@ MongoDB manages collections and documents as files on a local file system. If an
 
 For small installations, MongoDB is deployed as as a single-node system. In order to scale MongoDB to multiple nodes, MongoDB support two scale-out modes: _replication_ and _sharding_. In replication, multiple copies of the same data are maintained over multiple servers, allowing for MongoDB to tolerate node failures in case a node goes down. A set of mongodb nodes that has the same data is known as a _replica set_. One node in a replica-set is known as the _primary_, the remaining nodes are known as _secondaries_. By default, only the primary node responds to requests from clients for both reads and writes. The primary node sends out messages to update the replicas whenever there is an operation that writes data. In this mode, MongoDB guarantees strict consistency as all requests for data are processed only by the primary node. 
 
-![Figure 4.43: Replication in MongoDB](..\media\mongo_replica.png)
+![Figure 4.43: Replication in MongoDB]("..\media\mongo_replica.png")
 _Figure 4.43: Replication in MongoDB_
 
 A MongoDB replica-set is designed for automatic failover. If a node fails to respond for more than 10 seconds, it is presumed to be dead and the remaining nodes vote on which node should be the new primary node.
 
 In order to distribute data, MongoDB allows for data to be _sharded_ across multiple nodes. Each shard is an independent database, and collectively, the shards make up a single logical database. The architecture of a sharded MongoDB cluster is illustrated below:
 
-![Figure 4.44: Sharding in MongoDB](..\media\mongo_shards.png)
+![Figure 4.44: Sharding in MongoDB]("..\media\mongo_shards.png")
 _Figure 4.44: Sharding in MongoDB_
 
  _Shards_ store the data. To provide high availability and data consistency, in a production sharded cluster, each shard is a replica set. 

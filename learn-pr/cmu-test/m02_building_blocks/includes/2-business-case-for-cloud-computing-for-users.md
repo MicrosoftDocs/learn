@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_1_business_case.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_1_business_case.xml -->
 ##  Evolution of the IT Business Model
 An organization’s IT costs are many-fold, which include expenses for hardware and software as well as expenses for support and management. Typically, these costs fall into two categories:
 
@@ -15,7 +15,7 @@ The business model for IT software has evolved over the years into the following
 1. Cloud computing model: Software is developed and delivered over the Internet to many clients at lower costs.
 The following video (Video 1.7) discusses the evolution of these models with examples:
 
-> [!VIDEO](https://youtube.com/embed/yOTcTwWbEpk)
+> [!VIDEO]("https://youtube.com/embed/yOTcTwWbEpk")
 
 ##  Reducing Capital Expenditure
 Organizations choose to reduce their capital expenditures so that they limit the commitment of large investments for long-lived IT resources. Shifting expenses away from capital expenditures into operational expenditure enables organizations to stretch their IT budgets and limit upfront costs. Specifically, organizations opt to make investments that have a bigger return on investment in the short term rather than investing in long-lived, depreciating IT resources. Operating expenses are pay-as-you-go, meaning organizations pay by the month and get value every month. With cloud computing, they can simply rent the resources and incur little to no capital expenditures.

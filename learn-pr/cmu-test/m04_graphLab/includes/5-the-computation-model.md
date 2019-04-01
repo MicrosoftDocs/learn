@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_5_computation_model.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_5_computation_model.xml -->
 As discussed on the previous page, GraphLab supports multiple engines which can execute the vertex functions either _synchronously_ or _asynchronously_. The three engines currently supported by GraphLab are the following: 
 
 

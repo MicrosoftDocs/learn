@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_3_Heterogeneity.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_3_Heterogeneity.xml -->
 ##  Heterogeneity
 Cloud data centers comprise various collections of components, including computers, networks, operating systems (OSs), code libraries, and programming languages. In principle, if there is variety and difference in data center components, the cloud is referred to as a heterogeneous cloud. Otherwise, the cloud is denoted as a homogenous cloud. In practice, homogeneity does not always hold, mainly due to two reasons: 
 

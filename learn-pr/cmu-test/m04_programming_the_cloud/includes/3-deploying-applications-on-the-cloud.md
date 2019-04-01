@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_2_deployments.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_2_deployments.xml -->
 Once a cloud application has been designed and developed, it can be moved to the deployment phase for release to clients. Deployment can be a multi-stage process, each involving a series of checks to ensure that the goals of the application are met. 
 
 Before deploying a cloud application into production, it is useful to have a checklist to assist in evaluating your application against a list of essential and recommended best practices. Examples include the deployment checklist from [AWS](https://media.amazonwebservices.com/AWS_Operational_Checklists.pdf) and [Azure](https://msdn.microsoft.com/en-us/library/azure/hh694044.aspx). Many cloud providers provide a comprehensive list of tools and services that assist in deployment, such as [this document](http://d0.awsstatic.com/whitepapers/overview-of-deployment-options-on-aws.pdf) from AWS. 
@@ -6,7 +6,7 @@ Before deploying a cloud application into production, it is useful to have a che
 ##  The Deployment Process
 The deployment of a cloud application is an iterative process which starts from the end of development right through to the release of the application on the production resources (Figure 2.28): 
 
-![Figure 2.28: Code deployment process](..\media\deployment.png)
+![Figure 2.28: Code deployment process]("..\media\deployment.png")
 _Figure 2.28: Code deployment process_
 
 It is typical for cloud developers to maintain multiple concurrently running versions of their applications to pipeline deployment of their application to into various stages: 

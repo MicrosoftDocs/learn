@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m03_resource_virtualization_CPU\x-oli-workbook_page\_u03_m03_6_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m03_resource_virtualization_CPU\x-oli-workbook_page\_u03_m03_6_summary.xml -->
 ##  Resource Virtualization: CPU Summary
 
 - Virtualizing a physical CPU (pCPU) involves: (1) timesharing the pCPU among virtual CPUs (vCPUs) contained and executed in VMs (called _vCPU scheduling_) and (2) virtualizing the ISA of the pCPU to make it amenable to host vCPUs with different ISAs.

@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_7_use_cases.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_7_use_cases.xml -->
 ##  Use Cases for the Cloud
 With the rapid evolution of cloud technologies, there are new use cases emerging every day. In this section, we discuss some of the common cloud use cases. 
 

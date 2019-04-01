@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_6_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_6_summary.xml -->
 ##  Cloud Software Stack Summary
 
 - The cloud software stack enables the proivisioning, monitoring and metering of virtual user "resources" on top of a Cloud Service Provider's infrastructure.

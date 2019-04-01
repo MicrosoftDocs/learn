@@ -1,11 +1,11 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_5_case_studies.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_5_case_studies.xml -->
 Earlier, we described OpenStack as a popular solution that allows developers to build both public and private clouds. At the time of writing, OpenStack has mature offerings that cover a large part of the cloud software stack spectrum. We take a very quick conceptual overview of the various pieces of the OpenStack architecture, as the complete description of the OpenStack architecture is beyond the scope of this course. The purpose is to give you an overview of the different components that make up a cloud software stack. 
 
 OpenStack consists of multiple layers that can be used to configure, provision, manage, monitor and deprovision various types of compute, storage and networking resources. 
 
 A high level view of the various services involved in the OpenStack middleware suite is represented in Figure 2.27 below:
 
-![Figure 2.27: OpenStack Service Architecture](..\media\openstack.png)
+![Figure 2.27: OpenStack Service Architecture]("..\media\openstack.png")
 _Figure 2.27: OpenStack Service Architecture_
 
 ##  User Authentication Service (Keystone)

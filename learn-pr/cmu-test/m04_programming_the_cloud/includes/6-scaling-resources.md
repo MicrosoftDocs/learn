@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_5_scaling.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_5_scaling.xml -->
 One of the important advantages of the cloud is the ability scale resources into a system on-demand. Scaling up (provisioning larger resources) or scaling out (provisioning extra resources) can help in reducing the load on a single resources by decreasing utilization as a result of increased capacity or broader distribution of the workload. 
 
 Scaling can help in improving performance by increasing the throughput, since a larger number of requests can now be served. This can also help in decreasing latency during peak loads since a reduced number of requests are queued during peak loads on a single resource. In addition, this can also help in improving the reliability of the system by reducing the resource utilization so as to be farther away from the breaking point of the resource. 
@@ -13,7 +13,7 @@ Horizontal scaling is a strategy where additional resources can be added to the 
 
 A few considerations that make this a challenging task is the spin up time of an instance, the pricing model of the cloud service provider and the potential loss in revenue from degrading Quality of Service by not scaling out in time. As an example let’s consider the following load pattern (Figure 2.33): 
 
-![Figure 2.33: Sample Request Load Pattern](..\media\scaling1.png)
+![Figure 2.33: Sample Request Load Pattern]("..\media\scaling1.png")
 _Figure 2.33: Sample Request Load Pattern_
 
 Let us imagine we are using Amazon’s Web Services, let us also imagine that each unit of time is equivalent to 3 hours of actual time and that we require one server to serve 5k requests. If you consider the load during the time units 16 to 22, there is an enormous fluctuation in the load. We can detect a fall in demand at right around time unit 16 and start to reduce the number of allocated resources. Since we are going from roughly 50k requests to almost 0 requests in the space of 3 hours, academically we can save the cost of 10 instances that would have been up at time 16. 

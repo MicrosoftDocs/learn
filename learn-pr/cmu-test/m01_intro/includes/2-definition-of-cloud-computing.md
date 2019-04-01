@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_1_intro.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_1_intro.xml -->
 ##  Cloud Computing
 Cloud computing offers the use of computing resources as a service over the network. A cloud computer is simply a large distributed computing infrastructure that users have access to over a network. Similar to some other domains, cloud computing came about through the maturity of enabling technologies while attempting to satisfy economic needs. In this course, we will provide an introduction to cloud computing and then cover relevant topics, in varying detail, including hardware and software infrastructure, resource management (virtualization), cloud storage, and programming models.
 
@@ -10,7 +10,7 @@ In the first unit of this course we will start with a simple overview of cloud c
 
 Information technology (IT) has become an essential requirement for most organizations to function effectively. Typically, and depending on a specific organization’s needs, IT has three components associated with it (Figure 1.1) - application software, development platforms and the underlying infrastructure:
 
-![Figure 1.1: Typical Components of Information Technology.](..\media\IT_components.png)
+![Figure 1.1: Typical Components of Information Technology.]("..\media\IT_components.png")
 _Figure 1.1: Typical Components of Information Technology._
 
 Traditionally, an organization that needs to deploy a particular IT solution has to procure, setup and maintain the infrastructure and the application; certain organizations may decide to develop their own software, in which case they need to manage development platforms as well. The organization hence "owns" the solution, which allows full control over the solution, including, for example, access security and customization, however, it has some drawbacks:
@@ -26,7 +26,7 @@ The transformation of a certain technology from a product to a service is not ne
 
 The following video (Video 1.1) discusses the transformation of IT from a product to a service:
 
-> [!VIDEO](https://youtube.com/embed/HaVqHgg7zv4)
+> [!VIDEO]("https://youtube.com/embed/HaVqHgg7zv4")
 
 In cloud computing, users or organizations use computing resources as a service and pay for them as a utility, in a pay-as-you-go model. When a request is made for computing resources, the cloud provider typically _provisions_ these resources, in a rapid manner (minutes or hours). As the need for these resources changes, users or organizations can rapidly scale up or down their resources on demand.
 

@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_2_Infrastructure.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_2_Infrastructure.xml -->
 ##  Data Center Facilities
 A data center's functional units (servers, storage, networking) all rely on a facility's infrastructure, which includes physical space, power, cooling, and safety. In assembling each of the latter component systems, designers prioritize redundancy issues. Redundant power sources, for example, minimize the risk of service outages should the building lose main power. Redundant cooling avoids physical damage to IT equipment during an unplanned outage and enables planned outages for HVAC equipment maintenance. 
 
@@ -7,14 +7,14 @@ A server room can vary in size from a single rack in a closet to several hundred
 
 You were already introduced to the concept of a rack and a rack unit (U). Figure 2.12 shows a rack inside an open cabinet. Sometimes racks are also called cabinets. There are several variations of racks, but the most common are 19 inches wide (measured from the center of each hole on the same U). Some IBM equipment racks measure 24 inches post to post, inherited from older mainframes. Usually, network equipment is designed to mount only on two posts of the rack because wiring closets often have only two posts permanently mounted to the floor and/or wall. Servers, however, are designed to mount on four-post racks. The depth of the rear two posts is not standardized, and in most racks you can adjust the depth. Different rack-mount equipment has different depths, and each server or storage array will come with two mounting rails that connect to the front and rear posts on the left and right sides. There are two types of holes in vertical posts, square and round. Some mounting rails hook directly into square holes and have tool-less installation (fast). For round-hole racks, equipment is directly screwed in (these are more popular for telecom and A/V racks). If you need to mount round-hole style equipment or rails into a square-hole rack, you use cage nuts and bolts.
 
-![Figure 2.12: A 42U, four-post rack/cabinet, with sides and doors removed.](..\media\_42U_4-post_rack.png)
+![Figure 2.12: A 42U, four-post rack/cabinet, with sides and doors removed.]("..\media\_42U_4-post_rack.png")
 _Figure 2.12: A 42U, four-post rack/cabinet, with sides and doors removed._
 
 The most common height rack is 42U, and that is simply to fit through a normal doorway. The overall height, width, and depth of racks by different manufacturers are not exactly the same; the only guarantee is the post widths. Some racks have extended depth, which is useful for larger servers and/or routing cables and mounting zero-U (vertical mount outside of the 42U space) equipment. "Wide" racks have extra space to the left and right of the posts, which is useful for end-of-row networking racks because of the added space to run many cables. Racks also have casters that allow them to be rolled into place or moved if needed. However, these wheels are not meant to permanently support the full weight of a filled rack, which is why you have to screw down the four stabilization feet at each corner. Regions that are prone to earthquakes also have safety regulations that require racks to be bolted into concrete through metal plates on the front and rear of the rack.
 
 Many server rooms have a raised floor, although it is not a strict requirement. This provides a plenum for cold air to be distributed throughout the room (tiles in front of racks have vent holes). Raised floors also provide space to run electrical or network cable or chilled water pipes for in-row cooling. Last, they provide more flexibility for future layout/configuration changes. Figure 2.13 shows what a raised floor looks like. 
 
-![Figure 2.13: An example of a raised floor.](..\media\raised_floor.png)
+![Figure 2.13: An example of a raised floor.]("..\media\raised_floor.png")
 _Figure 2.13: An example of a raised floor._
 
 The floor consists of an array of metal support pedestals, which are mounted to the subfloor; metal stringers that are placed horizontally between pedestals; and strong floor tiles that rest atop the stringers at each corner at a pedestal. When a tile is removed, the holes are large enough for a human to fit through, and the tiles are strong enough to withstand the weight of a filled rack. Tiles do have a rollover rating, however, and for safety reasons, any tile that has been rolled over (moving a filled rack on top of it) more times than it is rated for should be replaced. Also for safety reasons, on a stringerless floor, no more than two or three consecutive tiles should ever be lifted from the floor simultaneously. If there is a problem with one of the pedestals, weight can shift laterally, cascading to a catastrophic floor failure.
@@ -26,7 +26,7 @@ Most data centers implement strict physical security procedures—for good reaso
 ##  Power
 The following video (Video 2.3) discusses various power distribution methods in data centers:
 
-> [!VIDEO](https://youtube.com/embed/Xl4VjEqitSk)
+> [!VIDEO]("https://youtube.com/embed/Xl4VjEqitSk")
 
 Reliability/uptime is often the number-one design consideration for a data center. Unfortunately, the power feeding the data center is not 100% reliable because of events such as bad weather conditions and downed power lines. In some locations, it is possible to get feeds from multiple electrical utility suppliers, but often this is not available. To keep the IT equipment powered on during a power outage, a generator can be installed. Backup generators come in two varieties, powered either by diesel fuel or natural gas. They could power the data center indefinitely as long as fuel is available, but both fuel sources are significantly more expensive than electricity from the grid. Generators are typically mounted outdoors due to fumes, noise, weight, and vibration. An automatic or universal transfer switch is a device that can choose a working power source (utility 1, utility 2, or generator) and connect it to the main power input to the data center.
 
@@ -36,7 +36,7 @@ Between the UPS and the IT equipment, there are power distribution units (PDUs).
 
 For AC, higher voltage (400V and 480V) is more efficient for distributing power throughout a data center than 240V or 208V but still has to be stepped down before going to the actual server. Most server power supplies are universal and will accept input AC voltages ranging from 110V to 240V. The benefits to running at 208 to 240V versus running at 110 to 125V are slightly higher efficiency (5% to 10%) as well as getting the full rated power output (as labeled on the PSU). Most server room/data center installations will run at 200+ VAC for the efficiency, as well as lower pricing for electrical wiring (smaller gauge copper). In order to boost efficiency, some server PSUs also support 277V directly. Instead of traditional wire, some server rooms employ bus bars that mount over head (above the racks) and have circuit breaker whips that can attach at any horizontal location (these are like track lighting, only larger).
 
-![Figure 2.14: Diagrams of the (a)C13 power connector and (b)C19 power connector (Source).](..\media\power_connectors.png)
+![Figure 2.14: Diagrams of the (a)C13 power connector and (b)C19 power connector (Source).]("..\media\power_connectors.png")
 _Figure 2.14: Diagrams of the (a)C13 power connector and (b)C19 power connector (Source)._
 
 Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads.<!-- <link href="http://www.thegreengrid.org/~/media/WhitePapers/White_Paper_16_-_Quantitative_Efficiency_Analysis_30DEC08.pdf?lang=en" >link</link> --> Because DC power supplies are not a commodity, these are only suited for large-scale deployments with custom components.
@@ -44,7 +44,7 @@ Some vendors offer DC distribution, in which the AC-to-DC conversion is done per
 ##  Cooling
 Many of the advances in data center efficiency over the last 10 years have come from new designs and methods for cooling.
 
-![Figure 2.15: Typical data center cooling technique. Figure shows the use of a CRAC and raised floor.](..\media\cooling_technique.png)
+![Figure 2.15: Typical data center cooling technique. Figure shows the use of a CRAC and raised floor.]("..\media\cooling_technique.png")
 _Figure 2.15: Typical data center cooling technique. Figure shows the use of a CRAC and raised floor._
 
 Commonly found in traditional server rooms are computer room air conditioners (CRAC or CAC). These continuously take in hot air and output cold air into the space under a raised floor or into ducts. The difference between a CRAC and a regular air conditioner is that CRACs also provide humidity control. Keeping a relative humidity around 40% is recommended. If the air is too wet, you get condensation (bad for electronics and anything metal), or if it is too dry, you get a higher risk of ESD, or electrostatic discharge (also harmful to electronics). The units' fans have to be sized large enough to create positive pressure and airflow for the volume of the room and have sufficient cooling capacity to maintain the desired "cold-aisle" air temperature (more on hot and cold aisles below and in the next module). The CRACs remove heat through the use of a condenser (similar to what is in your refrigerator at home) or through a heat exchanger that uses chilled water supplied by chillers elsewhere on site.

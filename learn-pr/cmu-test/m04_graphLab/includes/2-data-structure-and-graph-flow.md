@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_2_data_structure_graph_flow.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_2_data_structure_graph_flow.xml -->
 ##  Data Structure and Graph Flow in Graphlab
 Developed by Carnegie Mellon University, GraphLab provides an example of graph-parallel distributed analytics engines for the cloud. As with any graph-parallel engine, GraphLab assumes input problems modeled as graphs, in which vertices represent computations and edges encode data dependencies or communication. 
 
@@ -9,12 +9,12 @@ Developed by Carnegie Mellon University, GraphLab provides an example of graph-p
 In GraphLab, graphs are initially stored as files in an underlying distributed storage layer, such as HDFS, as shown in Figure 5.46. GraphLab is composed of two phases: _initialization_ and _execution_. During initialization, the GraphLab engine reads input graph files from the underlying storage and divides them into multiple partitions that can be distributed among multiple machines in the cluster. During the execution phase, each machine runs the user-defined computation on the graph vertices, transmitting updates and iterating until some convergence condition is met.
 
 ###  Initialization Phase
-![Figure 5.46: The GraphLab system. In the initialization phase the atoms are constructed using MapReduce (for example), and in the GraphLab execution phase, the atoms are assigned to cluster machines and loaded by machines from a distributed file system (e.g., HDFS).](..\media\graphLab_system.png)
+![Figure 5.46: The GraphLab system. In the initialization phase the atoms are constructed using MapReduce (for example), and in the GraphLab execution phase, the atoms are assigned to cluster machines and loaded by machines from a distributed file system (e.g., HDFS).]("..\media\graphLab_system.png")
 _Figure 5.46: The GraphLab system. In the initialization phase the atoms are constructed using MapReduce (for example), and in the GraphLab execution phase, the atoms are assigned to cluster machines and loaded by machines from a distributed file system (e.g., HDFS)._
 
 In the first phase, the input graph is divided into _k_ partitions, called _atoms_, where _k_ is much larger than the number of cluster machines. As demonstrated in Figure 5.46, atoms can be constructed either sequentially or using parallel loading techniques, including MapReduce. GraphLab does not store the actual vertices and edges in atoms but rather the commands to generate them, in the form of a journal. This allows GraphLab to reconstuct portions of the graph in case of node failures. In addition, GraphLab maintains in each atom information about its neighboring vertices and edges. This information, denoted in GraphLab as _ghost_ vertices, provides a caching capability for efficient adjacency data accessibility as explained in the section The Programming Model.
 
-![Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique.](..\media\graph_cuts.png)
+![Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique.]("..\media\graph_cuts.png")
 _Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique._
 
 The graph can be partitioned across the cluster machines in a number of ways (Figure 5.47). A simple technique is _edge-cut_, where graph is partitioned along each vertex (Figure 5.47(a)). Each vertex is randomly assigned to a machine along with all its associated edges. As a result, _ghost_ vertices are generated so that edges can be associated with a vertex that is not in a particular machine. However, for graphs with power-law distribution of edges, this means that the edge-cut partitioning will be unbalanced and some machines will be more loaded than others (due to the star-like motifs of a small number of vertices). To deal with such graphs, GraphLab uses a novel technique (known as _Greedy Vertex Cuts_) to partition high-degree vertices across machines in order to distribute the computation more effectively. Vertices of high degree are replicated across machines, with each machine receiving a subset of the edges for that vertex (Figure 5.47(b)). The machine that holds a given edge for a vertex is decided using the following algorithm: 
@@ -56,26 +56,26 @@ Computation is then represented as a stateless program that is executed on each 
 
  _Gather Phase_: In the gather phase, each vertex (henceforth refferred to as the central vertex) gathers information from adjacent vertices and edges. GraphLab can then apply a user-defined aggregation or sum operation: 
 
-![(C) CMU Cloud Computing Course](..\media\gather.png)
+![(C) CMU Cloud Computing Course]("..\media\gather.png")
 _(C) CMU Cloud Computing Course_
 
 In the equation above Du, Dv, and D(u,v) denote values and metadata for vertices u,v and edge u,v respectively. The user defined sum (CirclePlus) operation must be commutative and associative and can range from a numerical sum to the union of the data on all neighboring vertices and edges. 
 
  _Apply Phase_: In the apply phase, the resulting value sum is used to update the value of the central vertex:
 
-![(C) CMU Cloud Computing Course](..\media\apply.png)
+![(C) CMU Cloud Computing Course]("..\media\apply.png")
 _(C) CMU Cloud Computing Course_
 
  _Scatter Phase_: Finally in the scatter phase, the new value of the central vertex is sent to all adjacent vertices: 
 
-![(C) CMU Cloud Computing Course](..\media\scatter.png)
+![(C) CMU Cloud Computing Course]("..\media\scatter.png")
 _(C) CMU Cloud Computing Course_
 
 With the end of the scatter operation, one iteration of the computation for the vertex is complete. 
 
 The GAS functions are executed on a set of active vertices on every iteration. During the initial iteration, all vertices are placed in the set of active vertices, and based on the logic of the GAS functions, a vertex can mark one of its neighbors as active, so that it can be computed upon in the next iteration. 
 
-![Figure 5.48: Execution of the Gather-Apply-Scatter functions on two machines that a subset of edges of the same vertex.](..\media\gas_execution.png)
+![Figure 5.48: Execution of the Gather-Apply-Scatter functions on two machines that a subset of edges of the same vertex.]("..\media\gas_execution.png")
 _Figure 5.48: Execution of the Gather-Apply-Scatter functions on two machines that a subset of edges of the same vertex._
 
 Figure 5.48 illustrates the resulting communication pattern of employing the GAS functions on a graph partitioned using the Greedy Edge-Cuts algorithm described earlier. Gather functions run locally on each machine that contains the ghost of a vertex. During the accumulation, these gathered values are sent to the machine that has the master copy of the vertex, where it can compute the function defined in the apply stage. Finally, the updated vertex data is copied to all machines that have ghost copies of the vertex and the scatter function is executed to propagate values to the adjacent vertices. 

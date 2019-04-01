@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_2_before_the_cloud.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_2_before_the_cloud.xml -->
 ##  Domains and Application Examples
  Now that we have defined what cloud computing is, let us look at examples of how computing was utilized in different domains such as business computing, scientific computing and personal computing before the emergence of cloud computing. 
 
@@ -26,17 +26,17 @@ Scale has impacted all aspects of business computing. For example, scale has imp
 ##  Rise of Internet Services
 The late 90s marked a steady increase in the adoption of these computing applications and platforms across domains. Soon, software was expected to not only be functional, but also capable of producing value and insight for business and personal requirements. The use of these applications became collaborative; applications were mixed and matched to feed information to each other. IT was no longer just a cost center for a company, but a source of innovation and efficiency. 
 
-![Figure 1.2: Comparing Traditional and Internet-Scale Computing.](..\media\traditional_vs_internet_scale.png)
+![Figure 1.2: Comparing Traditional and Internet-Scale Computing.]("..\media\traditional_vs_internet_scale.png")
 _Figure 1.2: Comparing Traditional and Internet-Scale Computing._
 
 The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the Internet. These changes have led to a network- and data-driven society, where producing, disseminating and accessing digitized information is simplified. The Internet is estimated to have created a global marketplace of billions of users, up from 25 million in 1994 (Figure 1.3 (a)) . This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations and supporting decision-making with automation.  By embracing digital technologies, the world’s top 10 economies are expected to increase their output by over a trillion dollars by 2020. 
 
 The increasing number of connections enabled by the Internet has also driven its value. Researchers have hypothesized that the value of a network varies superlinearly as a function of the number of users. Thus, at internet scale, gaining and retaining customers is a priority, and this is done by building reliable and responsive services, and making changes based on observed data patterns. 
 
-![Figure 1.3 (a): Increasing number of Internet Users per year. ](..\media\n1.png)
+![Figure 1.3 (a): Increasing number of Internet Users per year. ]("..\media\n1.png")
 _Figure 1.3 (a): Increasing number of Internet Users per year. _
 
-![Figure 1.3 (b): Increasing number of data stored per year. ](..\media\n2.png)
+![Figure 1.3 (b): Increasing number of data stored per year. ]("..\media\n2.png")
 _Figure 1.3 (b): Increasing number of data stored per year. _
 
  Some examples of Internet-scale systems include: 

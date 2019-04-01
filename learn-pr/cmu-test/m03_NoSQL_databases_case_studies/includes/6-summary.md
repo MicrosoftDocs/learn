@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m03_NoSQL_databases_case_studies\x-oli-workbook_page\_u04_m03_6_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m03_NoSQL_databases_case_studies\x-oli-workbook_page\_u04_m03_6_summary.xml -->
 ##  Case Studies: NoSQL Databases Summary
 
 - Apache HBase is an open-source version of Google's BigTable distributed storage system. Both systems are distributed, scalable, high-performance, versioned databases.

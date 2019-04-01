@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_5_architectural_model_workflow.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_5_architectural_model_workflow.xml -->
 Now that we have seen the architecture and the computation flow of Spark, it makes sense to look at a simple Spark program. Before doing that, still need to understand some of the common primitive RDD operations. 
 
 We start with some basic single-RDD transformations `(RDD1 = {1,2,3,3})`:
@@ -61,7 +61,7 @@ for (i &lt;- 1 to ITERATIONS)
 
 In this Spark implementation of PageRank, our input dataset consists of a text file of the format `(URL, rank)`. For each iteration, a join operation on `links` and `ranks` is used to aggregate the contribution for each URL. The `contribs` RDD represents the contribution sent by each URL. These are summed up over each key (using a reduce) and this value is then updated using the PageRank formula aN + (1minusa)sumci. Once the `ranks` RDD is updated, the process repeats again for the number of iterations specified. 
 
-![Figure 5.37: Lineage graph for the Spark PageRank example](..\media\spark_example.png)
+![Figure 5.37: Lineage graph for the Spark PageRank example]("..\media\spark_example.png")
 _Figure 5.37: Lineage graph for the Spark PageRank example_
 
 As we mentioned on the previous page, the join operation can be optimized to reduce communication by partitioning the links and the ranks in the same way (for e.g. using a hash-partitioner to partition URLs across nodes). If each link partition and its corresponding rank partition are on the same node, we can eliminate cross-node communication entirely for the join. 

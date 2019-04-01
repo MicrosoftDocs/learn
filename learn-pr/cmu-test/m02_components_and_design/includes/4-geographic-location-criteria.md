@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_3_global_location.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_3_global_location.xml -->
 ##  Geographic Location Requirements
 For a large multinational corporation, there is a good chance that it already has a number of servers at each of its branch offices and would likely build traditional data centers in the countries in which it is already established. The reason for having equipment closer to the users is for better application responsiveness, which (hopefully) yields higher productivity.
 
@@ -17,7 +17,7 @@ There are also basic logistics that are desirable to have available to support t
 ##  Weather
 Also mentioned in the previous module was economization, or mixing of colder outside air with the hot air expelled from the IT equipment. In Figure 2.16, you will notice different colored bands. In regions of yellow or orange, you could use outside cooling during the colder seasons, and in regions of green and blue, you could likely use outside cooling year round. Regions marked as red could still use outside cooling but for a few months of the year. For example, because of its cold average climate and renewable energy sources, Iceland has a growing data center industry.
 
-![Figure 2.16: Global average temperature map (Wikipedia, 2014).](..\media\temperature_map.png)
+![Figure 2.16: Global average temperature map (Wikipedia, 2014).]("..\media\temperature_map.png")
 _Figure 2.16: Global average temperature map (Wikipedia, 2014)._
 
 As you will see in the power usage effectiveness (PUE) section later in this module, the energy utilization will be higher during hot months and lower during cold months. This is due to the efficiency gains from "free cooling" (either using air economizers or naturally cold water.)
@@ -26,28 +26,28 @@ The average amount of annual rainfall might be a factor if you are considering u
 
 Part of a risk assessment for a particular location would include the frequency of natural disasters in the region, such as floods, hurricanes, tornadoes/cyclones, tsunamis, and earthquakes. As you can see in Figure 2.17, different regions have varying levels of susceptibility to a potentially damaging event.
 
-![(a) Earthquake risk map.](..\media\earthquake_risk_map.png)
+![(a) Earthquake risk map.]("..\media\earthquake_risk_map.png")
 _(a) Earthquake risk map._
 
-![(b) Flood risk map.](..\media\flood_risk_map.png)
+![(b) Flood risk map.]("..\media\flood_risk_map.png")
 _(b) Flood risk map._
 
-![(c) Hurricane risk map.](..\media\hurricane_risk_map.png)
+![(c) Hurricane risk map.]("..\media\hurricane_risk_map.png")
 _(c) Hurricane risk map._
 
-![(d) Lightening risk map.](..\media\lightening_risk_map.png)
+![(d) Lightening risk map.]("..\media\lightening_risk_map.png")
 _(d) Lightening risk map._
 
-![(e) Tornado risk map.](..\media\tornado_risk_map.png)
+![(e) Tornado risk map.]("..\media\tornado_risk_map.png")
 _(e) Tornado risk map._
 
-![(f) Thunderstorm risk map.](..\media\thunderstorm_risk_map.png)
+![(f) Thunderstorm risk map.]("..\media\thunderstorm_risk_map.png")
 _(f) Thunderstorm risk map._
 
-![(g) Volcano risk map.](..\media\volcano_risk_map.png)
+![(g) Volcano risk map.]("..\media\volcano_risk_map.png")
 _(g) Volcano risk map._
 
-![(h) Wildfire risk map.](..\media\wildfire_risk_map.png)
+![(h) Wildfire risk map.]("..\media\wildfire_risk_map.png")
 _(h) Wildfire risk map._
 
 Figure 2.17: Natural disaster threat maps ([Global Datavault](http://www.globaldatavault.com/natural-disaster-threat-maps.htm), 2013).<!-- <link href="http://www.globaldatavault.com/natural-disaster-threat-maps.htm" >link</link> --> (Click on each figure for an enlarged view.)
@@ -59,7 +59,7 @@ As broadband adoption among consumers continues to grow, the effectiveness of cl
 
 The Internet relies on fiber optics to send and receive data over long distances. Figure 2.18 shows the relationship between multiple tiers of the Internet, in which tier 1 providers own the actual fiber cables, the network equipment, and the buildings they are housed in; tier 2 providers own large networks as well and peer with (have connections to) other tier 2 providers but also have to lease some connections from tier 1 providers in order to reach the whole Internet; and tier 3 providers are only resellers, which provide connections to end users. A single corporate entity, such as Verizon in the United States, may provide services at all tiers.
 
-![Figure 2.18: Internet connectivity (Wikipedia, 2014).](..\media\Internet_connectivity.png)
+![Figure 2.18: Internet connectivity (Wikipedia, 2014).]("..\media\Internet_connectivity.png")
 _Figure 2.18: Internet connectivity (Wikipedia, 2014)._
 
 In order to support a large amount of users, a cloud provider should choose a data center location that is in a city/region that has a tier 2 or tier 1 provider. This will also decrease the latency to global users due to fewer hops (each router is a hop) between the client and the server. A data center's requirement for uplink to the Internet ranges from a few megabits per second to several hundred gigabits per second, and that much bandwidth simply is not yet available everywhere.

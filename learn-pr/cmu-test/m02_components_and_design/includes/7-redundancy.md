@@ -1,8 +1,8 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_6_redundancy_and_fault_tolerance.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_6_redundancy_and_fault_tolerance.xml -->
 ##  Data Center Redundancy
 The following video (Video 2.5) covers some important aspects of data center redundancy:
 
-> [!VIDEO](https://youtube.com/embed/Vh6RfwiRxNY)
+> [!VIDEO]("https://youtube.com/embed/Vh6RfwiRxNY")
 
 ##  Data Center Tier Classifications
 Data centers can be classified based on reliability. In order to understand the four different tiers, as specified in [TIA-942](http://www.tiaonline.org/standards/) standard, you must first know what is meant by the word _reliable_. Reliability is most frequently measured in uptime, or availability. A service that is 100% reliable is extremely difficult to guarantee, and, therefore, no companies will make that claim in their service-level agreement (SLA) to a customer. But if they did, it would be available to users every second of every year.

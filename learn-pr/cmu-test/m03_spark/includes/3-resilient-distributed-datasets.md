@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_3_data_structure_storage.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_3_data_structure_storage.xml -->
 ##  Spark Resilient Distributed Datasets
 Spark relies on a special abstraction called resilient distributed datasets (RDDs). RDDs are in-memory read-only objects partitioned across the cluster. They let users control persistence and partitioning settings to optimize data placement and manipulate this data using a rich set of operators. An RDD is partitioned across machines either based on a range (partitioning of consecutive records) or the hash of a key in each record. Each partitioning method is optimal for a particular use case (hash partitioning speeds up joins by providing locality to records from different datasets that share keys; range partitions speed up access to a small filtered subset of the data). 
 
@@ -56,7 +56,7 @@ Once created, an RDD supports two types of operations (see Figure 5.34):
 1. _Actions_: Computations on an RDD that return a single object to the driver 
 As mentioned earlier, Spark transformations are lazy by default, i.e. they are not computed immediately, rather they are batched and executed only when an action is executed. The execution of an action causes all RDDs in the lineage to be materialized. However, once the computation is completed, an RDD will persist only if explicitly required to by the program. 
 
-![Figure 5.34 : Operations on RDDs](..\media\RDD.png)
+![Figure 5.34 : Operations on RDDs]("..\media\RDD.png")
 _Figure 5.34 : Operations on RDDs_
 
 Here are some examples of transformations and actions: 

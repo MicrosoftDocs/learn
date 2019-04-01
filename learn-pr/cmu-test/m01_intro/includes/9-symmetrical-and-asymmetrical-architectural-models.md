@@ -1,11 +1,11 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_4_program_cloud_5_Symmetry.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_4_program_cloud_5_Symmetry.xml -->
 ##  Symmetrical and Asymmetrical Architectural Models
 The third design consideration is one of organizational structure. An application developer typically organizes a distributed program in a _master-slave_ (asymmetric) or _peer-to-peer_ (symmetric) architecture, as shown in Figure 5.12. Other organizations, such as hybrids, may be appropriate for special circumstances. For the purpose of this unit, we are only concerned with the master-slave and peer-to-peer organizations. 
 
 ###  Asymetric Master-Slave Organization 
 In a master-slave organization, a central process, called the _master_, handles all the logic and controls, and all other processes are denoted as slave processes. Thus, interaction between processes is asymmetrical: bidirectional connections enable the master to communicate with each slave, and no interconnection is permitted between any two slaves (see Figure 5.12(a)). This situation requires the master to keep track of each slave's network location in what is called a _metadata structure_, and, further, that each slave can always identify and locate the master. 
 
-![Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands). ](..\media\master_slave.png)
+![Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands). ]("..\media\master_slave.png")
 _Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands). _
 
 In asymmetric organizations, the master can distribute work among the slaves using one of two following protocols: 

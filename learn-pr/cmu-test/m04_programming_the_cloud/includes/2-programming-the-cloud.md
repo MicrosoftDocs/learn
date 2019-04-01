@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_1_programming_the_cloud.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_1_programming_the_cloud.xml -->
 ##  Cloud Programming Considerations
 Designing programs that are destined for the cloud requires special considerations. Depending on the type of application and the expected load, developers can utilize some of the features provided by cloud providers to enhance the scalability and maintainability of programs. Use of automatic scaling systems and load balancers allow developers to dynamically grow or shrink infrastructure based on the utilization of hardware or a program-computed load factor. 
 

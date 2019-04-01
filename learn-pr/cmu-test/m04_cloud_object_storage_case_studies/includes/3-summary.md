@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u04_cloud_storage\_u04_m04_cloud_object_storage_case_studies\x-oli-workbook_page\_u04_m04_2_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m04_cloud_object_storage_case_studies\x-oli-workbook_page\_u04_m04_2_summary.xml -->
 ##  Case Studies: Cloud Object Storage Summary
 
 - Amazon Simple Storage Service (S3) is an online file storage Web service offered by Amazon Web Services.
