@@ -8,7 +8,8 @@ Replication produces multiple replicas of data, and consistency ensures that tho
 
 We discuss three consistency models in detail in this unit: _sequential consistency_, _causal consistency_, and _eventual consistency_.
 
-![Figure 4.13: A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks]("..\media\replication.png")
+![Figure 4.13: A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks](..\media\replication.png)
+
 _Figure 4.13: A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks_
 
 ###  Sequential Consistency
