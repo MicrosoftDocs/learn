@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/10-designing-databases--consistency-and-the-cap-theorem)]
+  [!include[](includes/10-designing-databases--consistency-and-the-cap-theorem.md)]

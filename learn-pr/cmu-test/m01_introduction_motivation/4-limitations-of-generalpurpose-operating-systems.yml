@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-limitations-of-generalpurpose-operating-systems)]
+  [!include[](includes/4-limitations-of-generalpurpose-operating-systems.md)]

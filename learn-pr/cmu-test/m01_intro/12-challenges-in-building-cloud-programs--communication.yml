@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/12-challenges-in-building-cloud-programs--communication)]
+  [!include[](includes/12-challenges-in-building-cloud-programs--communication.md)]
