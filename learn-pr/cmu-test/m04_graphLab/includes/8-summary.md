@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_8_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_8_summary.xml -->
 ##  Comparison of the Various Distributed Analytics Engines
 Here we conclude our discussion of distributed analytics engines for the cloud in which we presented Hadoop MapReduce, Spark, and GraphLab as effective and popular frameworks for distributed programming. Each of these three engines take care of the following aspects of distributed computation on behalf of the user:
 

@@ -14,7 +14,7 @@ Xen made many of its original design choices before the availability of HVM exte
 
 The spectrum of virtualization modes can be visualized from Figure 3.33.
 
-![Figure 3.33: The HVM-PV spectrum: S indicates a software virtualized resource, H indicates hardware virtualization and P stands for paravirtualizedGreen indicates good performance, yellow is tolerable and red is extremely poor.]("..\media\PV_HVM_Spectrum.png")
+![Figure 3.33: The HVM-PV spectrum: S indicates a software virtualized resource, H indicates hardware virtualization and P stands for paravirtualizedGreen indicates good performance, yellow is tolerable and red is extremely poor.](../media/PV_HVM_Spectrum.png)
 _Figure 3.33: The HVM-PV spectrum: S indicates a software virtualized resource, H indicates hardware virtualization and P stands for paravirtualizedGreen indicates good performance, yellow is tolerable and red is extremely poor._
 
 Now that we have seen how the role of the hypervisor has evolved, let us also look at some different virtualization suites and how they provide a platform for managing virtual infrastructures. These virtualization suites use the hypervisor as one amongst a set of components used to automate processes within private datacenters and clouds.

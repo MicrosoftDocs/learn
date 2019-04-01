@@ -9,7 +9,7 @@ NoSQL databases are not a good fit in situations in which the data is fairly wel
 
 A good example of a nonrelational database that is a good fit for NoSQL databases is a webtable (Figure 3.38). A webtable is a data structure that holds results of a Web crawl. A Web crawl is the process of visiting a list of Web pages and following the links in them in order to catalog and index the information that is contained in a website. 
 
-![Figure 3.38: A webtable]("..\media\NoSQL_example.png")
+![Figure 3.38: A webtable](../media/NoSQL_example.png)
 _Figure 3.38: A webtable_
 
 Each unique URL in a Web crawl can be stored as a row in a webtable, with the URL being the unique identifying characteristic of that row, which makes the URL<!-- hence being --> the key. The columns of the webtable can store the binary content and metadata of the URL. As the webtable is parsed, new columns can be added with semantic information derived from the HTML content, such as the links of other pages in the URL object, and any other information. The webtable can also act as the database back end for a Web archive service, such as an Internet archive, and hence clients can directly retrieve objects using the URL as the key.

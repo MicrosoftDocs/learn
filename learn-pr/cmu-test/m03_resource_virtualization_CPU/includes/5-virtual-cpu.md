@@ -2,11 +2,11 @@
 ##  Uniprocessor and Multiprocessor VMs
 As described earlier in the unit, a virtual CPU (vCPU) acts as a proxy to a physical CPU (pCPU). In other words, a vCPU is a representation of a pCPU to a guest OS (i.e., an OS that runs on a VM). A vCPU can be initiated in a VM and mapped to an underlying pCPU by the hypervisor. In principle, a VM can have one or many vCPUs. For instance, a VM in VMware ESX 4 can have up to eight vCPUs. The amount of vCPUs represents the width of a VM. A VM with a width greater than one is called a symmetric multiprocessing (SMP) VM. In reverse, a VM with a width equal to one is called a uniprocessor (UP) VM. Video 3.9 discusses Multiprocesseor VMs in detail:
 
-> [!VIDEO]("https://youtube.com/embed/0iZrCvccTdY")
+> [!VIDEO](https://youtube.com/embed/0iZrCvccTdY)
 
 Figure 3.23 demonstrates an SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.
 
-![Figure 3.23: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.]("..\media\SMP_UP_VM.png")
+![Figure 3.23: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.](../media/SMP_UP_VM.png)
 _Figure 3.23: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware._
 
 Similar to a process on a general-purpose OS, a vCPU can be in different states, such as running, ready, and wait states. At a certain point in time, a vCPU can be scheduled by the hypervisor at only a single core (akin to scheduling an OS process on a core). For instance, a UP VM running on a host machine equipped with two Xeon 5405 (i.e., a total of eight pCPUs) will run only on one of the eight available cores. Inherently parallel workloads, such as MapReduce applications, prefer SMP VMs. We next discuss how the hypervisor schedules vCPUs on pCPUs.

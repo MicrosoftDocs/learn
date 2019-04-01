@@ -40,7 +40,7 @@ Finally, the presence of multiple tenants and the overcommitting of the shared n
 ##  Types of Network Virtualization
 As we have seen above, network virtualization is simply a sharing mechanism that allows multiple isolated virtual networks to use the same physical network infrastructure. This allows virtual networks to be dynamically allocated and deployed on-demand precisely like VMs in virtualized servers . 
 
-![Figure 3.32: Types of network virtualization]("..\media\net_virt.png")
+![Figure 3.32: Types of network virtualization](../media/net_virt.png)
 _Figure 3.32: Types of network virtualization_
 
 Network virtualization is a broad term that encompasses many different techniques. For e.g. traditional VPNs and VLANs are types of datapath virtualization, where the a physical link is extended virtually. Cloud data centers rely on a combination of all of these virtualization techniques to build a scalable, flexible and agile network. Virtual machines have virtualized Network Interface Cards, which bridge a unique virtual MAC address to the physical NIC. Router virtualization enables the creation of multiple tenant virtual networks, based on “map-and-encap”, where edge routers map the packet to the destination, then encapsulate packets within a network tunnel which are only decoded at the target node. 

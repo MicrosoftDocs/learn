@@ -4,7 +4,7 @@ A computer program embodies a computational algorithm and comprises variable dec
 
 A _concurrent_ program, in contrast, is a set of sequential programs that, while executing, share one or more CPUs in time. This _timesharing_, defined in Unit 3, "Virtualizing Resources for the Cloud," allows multiple programs to take turns in using a single computational resource. For instance, given that a CPU can run only one program at a time, running multiple sequential programs on one processor requires the operating system (OS) to employ a scheduling strategy, such as round-robin, to allocate the resource to each program for a specified interval. 
 
-![Figure 5.1: Our taxonomy of programs]("..\media\taxonomy_programs.png")
+![Figure 5.1: Our taxonomy of programs](../media/taxonomy_programs.png)
 _Figure 5.1: Our taxonomy of programs_
 
 The general term _application_ refers, often ambiguously, to both sequential and concurrent programs, and the latter are sometimes called parallel programs. <!-- Here we distinguish between the two: -->A parallel program is a set of sequential programs that overlap in time by running on separate CPUs. In multiprocessor systems, such as chip multicore machines, related sequential programs executing in different cores constitute a parallel program. By contrast, related sequential programs sharing a single CPU in time<!-- , on the other hand, --> represent a _concurrent program_. For this unit, we further distinguish a parallel program comprising multiple sequential programs running on distinct, networked machines (versus different cores on one machine) as a _distributed program_. Figure 5.1 illustrates this program taxonomy. 
@@ -15,5 +15,5 @@ The term "thread" was popularized by Pthreads (POSIX threads), which is a specif
 
  _Task_ is another term that refers to a small unit of work, and in this unit, we use it to mean "process." In addition, we collectively denote tasks (possibly only one) that belong to the same program/application as a _job_. An application can encompass several jobs. For instance, a fluid dynamics application typically consists of three jobs, individually responsible for structural, fluid, and thermal analyses. In addition, each job can carry out its work through multiple tasks. Figure 5.2 demonstrates the concepts of processes, threads, tasks, jobs, and applications. 
 
-![Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications ]("..\media\concepts_processes.png")
+![Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications ](../media/concepts_processes.png)
 _Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications _

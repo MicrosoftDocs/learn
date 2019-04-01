@@ -4,7 +4,7 @@
 
 Here, we introduce a stacked abstraction of the cloud through presenting typical building blocks and discuss their association with three service models in cloud computing. We present four main building blocks in cloud computing: application software, development platforms, resource sharing, and infrastructure, as shown in Figure 1.6. The infrastructure includes the physical resources in a data center. The resource sharing layer typically entails software and hardware techniques that allow the sharing of the physical resources while offering a certain level of isolation. The development platforms are utilized to develop cloud applications. 
 
-![Figure 1.6: Cloud computing building blocks.]("..\media\cloud_computing_stack.png")
+![Figure 1.6: Cloud computing building blocks.](../media/cloud_computing_stack.png)
 _Figure 1.6: Cloud computing building blocks._
 
 ##  Cloud Building Blocks
@@ -41,7 +41,7 @@ SaaS is any application in which the end user has access to a software applicati
 
 The following video (Video 1.2) reviews these services:
 
-> [!VIDEO]("https://youtube.com/embed/ltJmJEI0gGA")
+> [!VIDEO](https://youtube.com/embed/ltJmJEI0gGA)
 
 ###  The Software-as-a-Service Model
 > **Software as a Service**
@@ -49,7 +49,7 @@ The following video (Video 1.2) reviews these services:
 
 SaaS is one of the most common cloud service models in which the cloud provider delivers software as an Internet service (as discussed in Video 1.3). SaaS users simply use their browsers to access the software, thus eliminating the need to install, run, and maintain (update, patch, reconfigure etc.) the application on the user's computer. The Web browser loads the SaaS application service dynamically and transparently.
 
-> [!VIDEO]("https://youtube.com/embed/bzfdewWofSU")
+> [!VIDEO](https://youtube.com/embed/bzfdewWofSU)
 
 SaaS has become a common software delivery model for many business applications, including accounting, collaboration, customer relationship management (CRM), management information systems (MIS), enterprise resource planning (ERP), invoicing, human resource management (HRM), content management (CM) as well as service desk management. 
 
@@ -94,7 +94,7 @@ Another popular example of SaaS is online office suites, such as Google Drive an
 
 PaaS-based offerings allow users to develop, deploy, and scale applications on platforms that are offered by cloud providers (Video 1.4). PaaS is analogous to SaaS, except that, rather than software delivered over the Web, it is a platform for the creation of software that is delivered over the Web.
 
-> [!VIDEO]("https://youtube.com/embed/mxXm5s0hK8A")
+> [!VIDEO](https://youtube.com/embed/mxXm5s0hK8A)
 
 ###  Characteristics of PaaS
 PaaS offerings vary among providers but usually feature some basic functionality, which includes:
@@ -129,7 +129,7 @@ Google App Engine is an example of a PaaS. Using Google's APIs, developers can c
 
 In the IaaS model, providers rent out compute resources in the form of instances or virtual machines, which have some form of configurable CPU, memory, disk, and network bandwidth attached to them (Video 1.5). Once provisioned, IaaS users can remotely connect to these instances and configure their choice of platforms and applications. This model offers the most amount of flexibility to the IaaS users in terms of software development and deployment. Rather than purchasing servers, software, data center space, or network equipment, users rent those resources as a fully outsourced service on demand.
 
-> [!VIDEO]("https://youtube.com/embed/sjQSV-5RaLU")
+> [!VIDEO](https://youtube.com/embed/sjQSV-5RaLU)
 
 ##  Characteristics of IaaS
 IaaS has the following characteristics:

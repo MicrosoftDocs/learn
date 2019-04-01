@@ -26,7 +26,7 @@ There are variety of tools which provides orchestration, Puppet and Chef are pop
 ###  Puppet
 Puppet is a tool that can be used to issue service commands to multiple client machines from a master machine. This allows developers and systems administrators to manage client machines from a single master machine, providing commands to individual clients based on code which describes the configuration actions that are to be performed on each machine: 
 
-![Figure 2.26: Puppet]("..\media\puppet.png")
+![Figure 2.26: Puppet](../media/puppet.png)
 _Figure 2.26: Puppet_
 
 Puppet is typically (but not always) used in a client/server formation, with all of the clients talking to one or more central servers. Each client contacts the server periodically (every half hour, by default), downloads the latest configuration, and makes sure it is in sync with that configuration. Once done, the client can send a report back to the server indicating if anything needs to change. Puppet’s functionality is built as a stack of separate layers, each responsible for a fixed aspect of the system, with tight controls on how information passes between layers.

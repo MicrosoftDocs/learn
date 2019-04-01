@@ -1,7 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_1_middleware.xml -->
 Middleware is a general term for software that serves to "glue together" separate, often complex and already existing, programs. The term middleware is used in many contexts. For example, in the context of a single computer, middleware exists between the operating system kernel and application programs in the form of APIs, which manage access to system resources such as hardware devices. 
 
-![Figure 2.22: Cloud Middleware Features]("..\media\middleware.png")
+![Figure 2.22: Cloud Middleware Features](../media/middleware.png)
 _Figure 2.22: Cloud Middleware Features_
 
 Cloud Middleware is a software platform that controls and coordinates different cloud services and makes it possible for users to issue service requests, and cloud providers to manage their infrastructure. Cloud Middleware consists of multiple abstraction layers that hides system complexity and enables communication between various applications, services, and devices that are part of a cloud service. 

@@ -2,7 +2,7 @@
 ##  Server Utilization
 As you recall from the introduction unit, multiple servers are virtualized and consolidated onto fewer physical hosts to increase utilization and decrease energy costs. This improvement is helpful, but the demand for IT-related services in organizations continues to grow, as does the number of Web-based startup companies, which have a higher proportional demand for IT equipment. 
 
-> [!VIDEO]("https://youtube.com/embed/bkjdGO0jz3E")
+> [!VIDEO](https://youtube.com/embed/bkjdGO0jz3E)
 
 To see why server utilization is important, let us discuss power consumption when a server is idle (the CPUs are not doing anything, but the HDDs are spinning, and RAM and I/O devices still consume power) versus when the server is at maximum load (when all CPUs are at 100% utilization).
 
@@ -23,12 +23,12 @@ PUE =total data center powertotal IT equipment powerIf a data center's PUE is 3.
 
 In 2007, the Lawrence Berkeley National Labs (LBNL) ran an energy study for 25 data centers (see Figure 2.19). The best PUE, 1.14, resulted in about 87% of the site energy reaching the IT equipment, while in the worst case (PUE 3.0), only 33% makes it to the IT equipment.
 
-![Figure 2.19: PUE of 25 data centers studied by LBNL (Lawrence Berkeley National Labs, 2007).]("..\media\PUE_25_data_centers.png")
+![Figure 2.19: PUE of 25 data centers studied by LBNL (Lawrence Berkeley National Labs, 2007).](../media/PUE_25_data_centers.png)
 _Figure 2.19: PUE of 25 data centers studied by LBNL (Lawrence Berkeley National Labs, 2007)._
 
 The PUE allows companies to identify areas for improvement, address these areas, and monitor the progress in PUE over time. Google publishes quarterly PUEs for their actual data centers, as shown in Figure 2.20. Because Google's data centers are mostly in the northern hemisphere, the average PUE typically rises in the summer because they require increased use of the cooling equipment.
 
-![Figure 2.20: PUE data for all large-scale Google data centers.]("..\media\PUE_data_large-scale.png")
+![Figure 2.20: PUE data for all large-scale Google data centers.](../media/PUE_data_large-scale.png)
 _Figure 2.20: PUE data for all large-scale Google data centers._
 
 Google improves the efficiency of its data centers using five methods.<!-- <link href="http://www.google.com/about/datacenters/efficiency/external/" >link</link> changed to citation ~C Lallier --> First, they accurately measure and record the PUE as often as possible. Second, they design good air containment to limit the mixing of hot and cold air. Third, they increase the cold air temperatures because equipment manufacturers allow their equipment to run within aisles at higher temperatures. Fourth, they utilize free cooling whenever possible. This possibility is determined by the geographical location of their data centers and the number of hours per year that allow the use of cool ambient air, evaporating power, and large thermal reservoirs. Fifth, they minimize power distribution losses by eliminating several power conversion steps. The lowest recorded PUE to date at a Google data center is 1.08, which is around 92% efficiency.
@@ -40,7 +40,7 @@ In an earlier module, you were introduced to a PDU, or power distribution unit. 
 
 There are several types of power distribution: rack level, row level, and room level. All of them have an input electrical feed and provide one or more branch circuits, with each branch protected by a circuit breaker (a safety device that will "trip" if there is an overload, stopping the flow of electricity). The difference with row-level PDUs is that they typically take a higher voltage and output to a lower voltage using a transformer (transformers generate heat, so you will also find cooling fans inside a row-level PDU).
 
-![Figure 2.21: Row-level and rack-level PDUs.]("..\media\PDUs.png")
+![Figure 2.21: Row-level and rack-level PDUs.](../media/PDUs.png)
 _Figure 2.21: Row-level and rack-level PDUs._
 
 Three-phase power (often denoted with Greek letter phi [3Φ]) is how AC electricity is generated and transmitted, with each phase a sine wave that is 120 degrees apart. It is not common to have three-phase power in homes, but it is common in industrial buildings and a requirement in any modern data center. It is important to keep each phase as evenly loaded as possible. You should not plug all servers into one branch before going on to the next—stagger them instead. The important thing to know is that the total power that can be handled by a three-phase circuit is greater than that of a single phase (1Φ) for each copper wire (same thickness/gauge).

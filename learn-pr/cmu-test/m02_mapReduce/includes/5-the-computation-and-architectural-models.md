@@ -2,7 +2,7 @@
 ##  The Computation Model
 MapReduce jobs, like all distributed programs, can embody either a synchronous or asynchronous computation model (see the section _Synchronous and Asynchronous Distributed Programs_). During each phase and stage, MapReduce tasks execute numerous computations that depend on results from the previous phase or stage and can proceed only after those data arrive. For example, a reduce task cannot begin before all required partitions arrive from the shuffle and the merge and sort stages. Furthermore, in a phase, tasks do not communicate with each other, and interactions occur only at the end of a stage or phase. Any synchronous system must guarantee this interaction property, and MapReduce presents a good example of that computation model. 
 
-![Figure 5.18: A simplified example of the master-slave, tree-style architecture employed by Hadoop MapReduce. The master is denoted as JobTracker and each slave is called TaskTracker. As shown, the JobTracker and the TaskTrackers communicate over the network using a heartbeat mechanism.]("..\media\master-slave.png")
+![Figure 5.18: A simplified example of the master-slave, tree-style architecture employed by Hadoop MapReduce. The master is denoted as JobTracker and each slave is called TaskTracker. As shown, the JobTracker and the TaskTrackers communicate over the network using a heartbeat mechanism.](../media/master-slave.png)
 _Figure 5.18: A simplified example of the master-slave, tree-style architecture employed by Hadoop MapReduce. The master is denoted as JobTracker and each slave is called TaskTracker. As shown, the JobTracker and the TaskTrackers communicate over the network using a heartbeat mechanism._
 
 ##  The Architectural Model

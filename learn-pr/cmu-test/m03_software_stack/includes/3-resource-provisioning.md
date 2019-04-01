@@ -18,7 +18,7 @@ A resource provisioning system on the cloud generally has the following sub-part
 ##  Cloud End-to-End Service Provisioning Flow
 Figure 2.23 below shows the typical end-to-end steps for a customer provisioning a virtual machine from a Cloud Service Provider (CSP):
 
-![Figure 2.23: Typical End-to-End IaaS provisioning steps]("..\media\provisioning.png")
+![Figure 2.23: Typical End-to-End IaaS provisioning steps](../media/provisioning.png)
 _Figure 2.23: Typical End-to-End IaaS provisioning steps_
 
 The steps illustrated in Figure 2.23 are explained as follows: 

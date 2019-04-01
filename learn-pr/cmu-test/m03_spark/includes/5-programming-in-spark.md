@@ -61,7 +61,7 @@ for (i &lt;- 1 to ITERATIONS)
 
 In this Spark implementation of PageRank, our input dataset consists of a text file of the format `(URL, rank)`. For each iteration, a join operation on `links` and `ranks` is used to aggregate the contribution for each URL. The `contribs` RDD represents the contribution sent by each URL. These are summed up over each key (using a reduce) and this value is then updated using the PageRank formula aN + (1minusa)sumci. Once the `ranks` RDD is updated, the process repeats again for the number of iterations specified. 
 
-![Figure 5.37: Lineage graph for the Spark PageRank example]("..\media\spark_example.png")
+![Figure 5.37: Lineage graph for the Spark PageRank example](../media/spark_example.png)
 _Figure 5.37: Lineage graph for the Spark PageRank example_
 
 As we mentioned on the previous page, the join operation can be optimized to reduce communication by partitioning the links and the ranks in the same way (for e.g. using a hash-partitioner to partition URLs across nodes). If each link partition and its corresponding rank partition are on the same node, we can eliminate cross-node communication entirely for the join. 

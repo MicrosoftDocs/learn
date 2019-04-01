@@ -5,7 +5,7 @@ The third design consideration is one of organizational structure. An applicatio
 ###  Asymetric Master-Slave Organization 
 In a master-slave organization, a central process, called the _master_, handles all the logic and controls, and all other processes are denoted as slave processes. Thus, interaction between processes is asymmetrical: bidirectional connections enable the master to communicate with each slave, and no interconnection is permitted between any two slaves (see Figure 5.12(a)). This situation requires the master to keep track of each slave's network location in what is called a _metadata structure_, and, further, that each slave can always identify and locate the master. 
 
-![Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands). ]("..\media\master_slave.png")
+![Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands). ](../media/master_slave.png)
 _Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands). _
 
 In asymmetric organizations, the master can distribute work among the slaves using one of two following protocols: 

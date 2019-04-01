@@ -40,7 +40,7 @@ Amazon documentation also states that simultaneous writes to an object in S3 are
 OpenStack Swift is an object storage service that is part of the OpenStack cloud platform. Swift offers clients a REST-based HTTP interface to interact with binary objects, much like S3. However, unlike S3, Swift is free and open source, and is available for anyone to install and configure on any machine, effectively providing object storage on both public and private clouds.
 
 ###  Swift Data Model and APIs
-![Figure 4.47: Swift Data Model]("..\media\swift_api.png")
+![Figure 4.47: Swift Data Model](../media/swift_api.png)
 _Figure 4.47: Swift Data Model_
 
 In Swift, users have access to an _account_, which can be used to define _containers_, which can be used to store _objects_. As an example, assume a user with an account `123456` on the swift service running on `swift.mycloud.com`, stores the object named `picture.jpg` in the container `images`. The full path to access an object in this example would thus be:
@@ -58,7 +58,7 @@ Swift uses a multi-tiered architecture in the interest of performance, fault-tol
 
 The different components of the SWIFT architecture are as follows:
 
-![Figure 4.48: Swift Cluster Architecture]("..\media\swift_architecture.png")
+![Figure 4.48: Swift Cluster Architecture](../media/swift_architecture.png)
 _Figure 4.48: Swift Cluster Architecture_
 
  _Proxy Nodes_: These are the front-end servers which process incoming API requests. A Swift cluster can have multiple proxy servers to handle bigger loads of incoming requests. The proxy server determines the downstream server to send the request to. Proxy servers also coordinate responses and handle failures.

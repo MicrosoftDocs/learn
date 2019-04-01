@@ -2,7 +2,7 @@
 ##  Events and Innovations
 The cloud-computing concept first appeared during the early 1950s, when several academics, including Herb Grosch, John McCarthy, and Douglas Parkhill, envisioned computing as a utility similar to electric power. Over the next few decades, several emerging technologies laid the foundations for cloud computing (Figure 1.4). More recently, rapid growth of the World Wide Web and the advent of large Internet giants, such as Google and Amazon, finally led to the creation of an economic and business environment that allowed the cloud-computing model to flourish.
 
-![Figure 1.4: Evolution of cloud computing.]("..\media\table.png")
+![Figure 1.4: Evolution of cloud computing.](../media/table.png)
 _Figure 1.4: Evolution of cloud computing._
 
 ##  Evolution of Computing
@@ -27,7 +27,7 @@ The development of these technologies, coupled with the economic model of utilit
 ##  Enabling Technologies
 Cloud computing has various enabling technologies (Figure 1.5), which include networking, virtualization and resource management, utility computing, programming models, parallel and distributed computing, and storage technologies.
 
-![Figure 1.5: The enabling technologies in cloud computing.]("..\media\enabling_technologies.png")
+![Figure 1.5: The enabling technologies in cloud computing.](../media/enabling_technologies.png)
 _Figure 1.5: The enabling technologies in cloud computing._
 
 The emergence of high-speed and ubiquitous networking technologies have greatly contributed to cloud computing as a viable paradigm. Modern networks make it possible for computers to communicate in a fast and reliable manner, which is important if we are to use services from a cloud provider. This enabled the user experience with software running in a remote data center to be comparable to the experience of software running on a personal computer. Webmail is a popular example, as is office productivity software. In addition, virtualization is key to enabling cloud computing. As mentioned above, virtualization allows managing the complexity of the cloud via abstracting and sharing its resources across users through multiple virtual machines. Each virtual machine can execute its own operating system and associated application programs. Virtualization for cloud computing is covered in Unit 3.

@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_6_htap.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_6_htap.xml -->
 In this unit, we have covered the basic ideas behind distributed programming and analytics engines, as well as the challenges of large-scale, big data processing. We saw a number of frameworks, including MapReduce, Spark, GraphLab, as well as Stream Processing frameworks. To cap our discussion, we now present some of the ongoing attempts to define an architectural paradigm to help build systems that can handle both real-time and historical data: The Lambda and Kappa Architectures.
 
 For example digital assistants such as Apple’s Siri often use complex machine learning algorithms for speech recognition and for understanding user queries. Incoming user queries can be considered to be a stream which needs to be responded to in low latency. However, over time the historical data of user queries can be used to re-train the machine learning system for better speech recognition and query understanding. The latter can use some sort of batch processing system to update the machine learning models for future queries. 
@@ -8,7 +8,7 @@ The Lambda Architecture is a data-processing architecture designed to handle mas
 
  The Lambda architecture describes a system consisting of three layers: the batch layer, the speed (or real-time) processing layer, and a serving layer for responding to queries. 
 
-![Figure 5.67: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](..\media\lambda1.png)
+![Figure 5.67: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/lambda1.png)
 _Figure 5.67: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
 
 The flow of data in the lambda architecture can be represented in the Figure (5.67). The steps are as follows:
@@ -42,13 +42,13 @@ The speed layer processes data streams in real time with the lowest possible lat
 
 This layer's views may not be as accurate or complete as the ones eventually produced by the batch layer, but they are available almost immediately after data is received, and can be replaced when the batch layer's views for the same data become available. Using incremental or stream processing approaches, that we discussed previously in this unit, the processing can be done in a more efficient manner if the computation can be expressed as a function of the previous real-time view and the recent data, to produce the updated real time views. 
 
-![Figure 5.68: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](..\media\lambda2.png)
+![Figure 5.68: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/lambda2.png)
 _Figure 5.68: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
 
 Stream-processing technologies typically used in this layer include Apache Samza, Apache Storm, SQLstream and Apache Spark. Output is typically stored on fast NoSQL-style databases for low latency querying. 
 
 ##  Kappa Architecture
-![Figure 5.69: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](..\media\lambda3.png)
+![Figure 5.69: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/lambda3.png)
 _Figure 5.69: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
 
  The Kappa architecture, popularized by LinkedIn is shown in Figure 5.69. One of the important motivations of the Kappa architecture was to avoid maintaining two separate code bases for the batch and speed layers. The key idea is to handle both real-time data processing and continuous data reprocessing using a single stream processing engine. 

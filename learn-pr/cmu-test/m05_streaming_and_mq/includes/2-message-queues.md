@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_2_message_queues.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_2_message_queues.xml -->
 ##  What is a Message Queue?
 A Message Queue is a technique used for inter-process communication (also known as IPC), or between various components of an application, or across applications. Message queues provide a protocol or interface to enable message passing.
 
@@ -8,7 +8,7 @@ For applications that span multiple machines, a number of proprietary and open-s
 
 Employing message queues can add complexity to the application design and increase the number of services that need to be managed when compared to traditional request/response messaging. However, at a certain scale, and for applications such as stream processing, distributed message queue systems are needed to manage the added complexity and scale.
 
-![Figure 5.50: An interface connects to senders (or producers), which create messages and to receivers (or consumers) which can receive the messages.](..\media\mq1.png)
+![Figure 5.50: An interface connects to senders (or producers), which create messages and to receivers (or consumers) which can receive the messages.](../media/mq1.png)
 _Figure 5.50: An interface connects to senders (or producers), which create messages and to receivers (or consumers) which can receive the messages._
 
 ##  Characteristics of Message Queues
@@ -23,7 +23,7 @@ Message queues and their novelty can be understood and appreciated when contrast
 ##  Advantages of Message Queues
 The primary advantage of a message queue is that it provides loose-coupling between various entities in a distributed application. This allows for asynchronous non-blocking communication that provides a higher level of tolerance against failures of processes.
 
-![Figure 5.51: Message queues provide an interface that allows for programs to communicate with each other.](..\media\mq2.png)
+![Figure 5.51: Message queues provide an interface that allows for programs to communicate with each other.](../media/mq2.png)
 _Figure 5.51: Message queues provide an interface that allows for programs to communicate with each other._
 
 

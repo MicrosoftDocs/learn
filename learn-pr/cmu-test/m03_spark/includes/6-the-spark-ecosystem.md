@@ -11,7 +11,7 @@ Applications may run SQL queries programmatically (similar to MySQL) via the sql
 ##  Spark Streaming
 An extension of the core Spark API, Spark Streaming enables scalable, high-throughput, fault-tolerant stream processing of live data streams. 
 
-![Figure 5.38: Spark Streaming]("..\media\spark_streaming.png")
+![Figure 5.38: Spark Streaming](../media/spark_streaming.png)
 _Figure 5.38: Spark Streaming_
 
 Spark streaming allows for a streaming data source to be connected to a Spark cluster (Figure 5.38). The spark streaming system will divide the streaming input into batches which can then be fed into the Spark engine to run the required analytics operations. One example is that a spark cluster can be connected to a twitter stream to filter out tweets that are relevant to a particular company or product, and a sentiment analysis can be run on the filtered tweets to provide real-time reports on product or brand sentiment. 
@@ -20,7 +20,7 @@ The high-level abstraction provided by Spark streaming is the discretized stream
 
 To build a streaming pipeline in Spark streaming, first a Dstream should be constructed from an input data source. The source can be as simple as a network socket or file stream, or can be a more complex system such as [Kakfa](http://kafka.apache.org/), [Flume](https://flume.apache.org/), [Kinesis](http://aws.amazon.com/kinesis/) or a [Twitter feed](https://dev.twitter.com/streaming/overview). Once a `Dstream` is constructed, it can be sent to any number of streaming functions to be transformed. Some of the functions include `map()`, `reduce()`, `join()`, `count()`, etc. Refer to the [API](https://spark.apache.org/docs/latest/streaming-programming-guide.html) for more details. 
 
-![Figure 5.39 : Sliding Window Computation in Spark Streaming]("..\media\sliding_windows.png")
+![Figure 5.39 : Sliding Window Computation in Spark Streaming](../media/sliding_windows.png)
 _Figure 5.39 : Sliding Window Computation in Spark Streaming_
 
 In addition to simple transformations, Spark streaming provides the capability to perform windowed computations, i.e., transformations applied over a sliding window of data (Figure 5.39). In this case, the user can specify both the _window size_ (the number of source RDDs to include in the transformation window) and the _sliding interval_ (the number of source RDDs to slide across at the end of each transformation). 
@@ -59,7 +59,7 @@ val userGraph: Graph[(String, String), String]
 
 
 
-![Figure 5.40 : A property graph in GraphX]("..\media\property_graph.png")
+![Figure 5.40 : A property graph in GraphX](../media/property_graph.png)
 _Figure 5.40 : A property graph in GraphX_
 
 A property graph in GraphX is parameterized over vertex (VD) and edge (ED) types. GraphX provides several ways of constructing this graph, given a collection of vertices and edges in an RDD or a disk. Graphs can be generated from raw files, RDDs or using synthetic generators. 

@@ -2,14 +2,14 @@
 ##  Apache HBase
 Apache HBase is an open-source version of Google's BigTable distributed storage system and is supported by the Apache Software Foundation. BigTable is a distributed, scalable, high-performance, versioned database. BigTable's infrastructure is designed to store billions of rows and<!-- billions of --> columns of data in loosely defined tables, such as the webtable described earlier. Video 4.16 contains an overview of HBase. 
 
-> [!VIDEO]("https://youtube.com/embed/e-ZvIRObAWk")
+> [!VIDEO](https://youtube.com/embed/e-ZvIRObAWk)
 
 <!-- HBase is the open-source version of Google's BigTable, which is supported by the Apache Software Foundation. -->Just as<!-- like how --> traditional RDBMSs are designed to run on top of a local file system, HBase is designed to work on top of the Hadoop Distributed File System (HDFS). As described earlier, HDFS is a distributed file system that stores files as replicated blocks across multiple servers. HDFS lends a scalable and reliable file system back end to HBase.
 
 ###  HBase Data Model
 Applications store data organized as rows and columns in a table, which loosely resemble tables in an RDBMS. To illustrate, we organize the webtable example as an HBase table in Figure 4.39.
 
-![Figure 3.39: Table in HBase]("..\media\HBASE_table.png")
+![Figure 3.39: Table in HBase](../media/HBASE_table.png)
 _Figure 3.39: Table in HBase_
 
 A row in HBase is referenced using a row key, which can be considered to be the primary key of the table in an RDBMS. The primary key of the table has to be unique and hence reference one and only one row. Unlike in RDBMSs (which require primary keys to be of certain types), row keys are raw byte arrays, so theoretically, anything from strings to binary representations of long integers, floats, or even entire data structures that have been serialized (converted to a byte array form) can serve as a row key<!-- from strings to binary representations of long integers, floats, or even entire data structures that have been serialized (converted to a byte array form) -->. HBase automatically sorts table rows by row key when it stores them. By default, this sort is byte ordered. 
@@ -32,7 +32,7 @@ By default, Get, Scan, and Delete operations on an HBase table are performed on 
 ###  HBase Architecture
 HBase is organized as a cluster of HBase nodes. These nodes are of two types: a master node and one or more slave nodes (called _RegionServers_; Figure 4.40). HBase uses Apache ZooKeeper as a distribution coordination service for the entire HBase cluster. For example, it handles master selection (choosing one of the nodes to be the master node), the lookup for the `-ROOT-` catalog table (explained shortly), and node registration (when new regionservers are added)<!-- , and so on -->. The master node that is chosen by ZooKeeper handles such functions as region allocation, failover, and load balancing<!-- , among others -->. 
 
-![Figure 4.40: HBase architecture]("..\media\HBASE_archi.png")
+![Figure 4.40: HBase architecture](../media/HBASE_archi.png)
 _Figure 4.40: HBase architecture_
 
 As with most databases, HBase is able to persist data using an underlying file system. HBase is designed to use HDFS in the back end but also supports various kinds of file systems, including a local file system and even Amazon S3. Typically, every regionserver in HBase is also an HDFS DataNode (an HDFS fileserver), but this is not mandatory in HBase. 
@@ -40,7 +40,7 @@ As with most databases, HBase is able to persist data using an underlying file s
 ####  Data Partitioning
 HBase is designed to scale tables to a large number of rows and columns (in the millions), with the size of each table running into terabytes or petabytes. At this scale, it is impossible to host the data on a single node. To distribute data stored in HBase across the nodes in a cluster, HBase automatically partitions (shards) tables into _regions_, which are groups of consecutive rows in a table (Figure 4.41).
 
-![Figure 4.41: Splitting a table into multiple regions in HBase]("..\media\HBASE_regions.png")
+![Figure 4.41: Splitting a table into multiple regions in HBase](../media/HBASE_regions.png)
 _Figure 4.41: Splitting a table into multiple regions in HBase_
 
 Each region is defined by the base row (inclusive) and the last row (exclusive) as well as a region identifier (a randomly generated number). Tables are initially stored in a single region, but as the size of the table reaches<!-- grows after --> a certain threshold, HBase automatically generates a new region by splitting the data into two nearly equal regions. This process continues as the tables continue to get larger<!-- and larger -->.

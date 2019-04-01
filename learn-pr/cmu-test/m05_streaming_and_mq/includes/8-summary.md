@@ -1,4 +1,4 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_8_summary.xml -->
+<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_8_summary.xml -->
 ##  Message Queues, Stream Processing and Real-time architectures
 Message queues are communication mechanisms used to enable indirect, asynchronous communications by partitioning and storing messages on brokers. This allows easy horizontal scaling of the messaging layer.
 

@@ -5,7 +5,7 @@ As we read in earlier, with the advent of utility computing and better resource 
 
 The success of server virtualization at achieving resource sharing, higher utilization, improved flexibility and elasticity, has led to the advent of the idea of Software Defined Data Center (SDDC). SDDC virtualizes all infrastructure in a manner which can be automated and easy to manage. A virtualized cluster, which includes servers, networking fabric and storage systems, can be decoupled from the physical resources and provided as software resources that can be configured and managed. Instead of building applications using dedicated servers, storage and networking resources, SDDC offers the data center infrastructure as software services since all of the needed resources can be virtualized. 
 
-> [!VIDEO]("https://youtube.com/embed/X2Ppt0MG6as")
+> [!VIDEO](https://youtube.com/embed/X2Ppt0MG6as)
 
 The main technologies that enable an SDDC include:
 1. Server/Compute Virtualization
