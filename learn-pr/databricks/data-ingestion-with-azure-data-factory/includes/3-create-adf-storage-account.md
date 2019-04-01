@@ -8,7 +8,7 @@ Let's start by creating an Azure storage account and an Azure Data Factory.
 
 1. In the Create storage account blade, enter the following:
 
-   - Subscription: Select the subscription you are using for this module.
+   - _Subscription_: Select the subscription you are using for this module.
    - _Resource group_: Choose your module resource group.
    - _Storage account name_: Enter a unique name (make sure you see a green checkbox).
    - _Location_: Select the location you are using for resources in this module.

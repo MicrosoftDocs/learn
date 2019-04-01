@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.integrate-vnets-with-vnet-peering
+metadata:
+  title: Distribute your services across Azure virtual networks and integrate using VNet peering
+  description: Use Vnet peering to enable communications across virtual networks in a secure manner with minimal complexity.
+  ms.date: 03/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Distribute your services across Azure virtual networks and integrate using VNet peering
+summary: Use Vnet peering to enable communications across virtual networks in a secure manner with minimal complexity.
+abstract: | 
+  In this module, you will:
+  - Identify the different use cases for VNet peering
+  - Identify the features and limitations of VNet peering
+  - Configure VNet peering connections between virtual networks
+prerequisites: | 
+  - Knowledge of basic networking concepts, including subnets,and IP addressing
+  - Familiarity with Azure virtual machines
+  - Familiarity with Azure virtual networking
+iconUrl: /learn/achievements/intro-to-azure-networking.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.integrate-vnets-with-vnet-peering.1-introduction
+- learn.integrate-vnets-with-vnet-peering.2-connect-services-using-vnet-peering
+- learn.integrate-vnets-with-vnet-peering.3-exercise-prepare-vnets-for-peering-using-azure-cli-commands
+- learn.integrate-vnets-with-vnet-peering.4-exercise-configure-vnet-peering-connections-using-azure-cli-commands
+- learn.integrate-vnets-with-vnet-peering.5-exercise-verify-vnet-peering
+- learn.integrate-vnets-with-vnet-peering.6-summary
+badge:
+  uid: learn.integrate-vnets-with-vnet-peering.badge
