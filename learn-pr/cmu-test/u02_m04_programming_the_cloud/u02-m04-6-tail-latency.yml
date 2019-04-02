@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-6-tail-latency
+title: Dealing with Tail Latency
+metadata:
+  title: Dealing with Tail Latency - Learn
+  description: Dealing with Tail Latency - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/u02-m04-6-tail-latency.md)]

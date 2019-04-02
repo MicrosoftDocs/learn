@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u03-m01-introduction-motivation.u03-m01-1-intro-2
+title: Virtualization and Cloud Computing
+metadata:
+  title: Virtualization and Cloud Computing - Learn
+  description: Virtualization and Cloud Computing - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/u03-m01-1-intro-2.md)]

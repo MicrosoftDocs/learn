@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u05-m05-streaming-and-mq.u05-m05-3-streaming-architectures
+title: Message Queues- Case Study
+metadata:
+  title: Message Queues- Case Study - Learn
+  description: Message Queues- Case Study - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/u05-m05-3-streaming-architectures.md)]

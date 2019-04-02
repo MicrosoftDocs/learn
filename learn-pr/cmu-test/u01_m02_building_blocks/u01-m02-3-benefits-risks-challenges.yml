@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u01-m02-building-blocks.u01-m02-3-benefits-risks-challenges
+title: Benefits, Risks, and Challenges of Cloud Computing
+metadata:
+  title: Benefits, Risks, and Challenges of Cloud Computing - Learn
+  description: Benefits, Risks, and Challenges of Cloud Computing - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/u01-m02-3-benefits-risks-challenges.md)]

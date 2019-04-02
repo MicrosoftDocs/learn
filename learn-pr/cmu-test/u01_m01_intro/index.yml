@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u01-m01-intro.module-introduction
-- learn.cmu-test.u01-m01-intro.definition-of-cloud-computing
-- learn.cmu-test.u01-m01-intro.precloud-computing-domains-and-applications
-- learn.cmu-test.u01-m01-intro.evolution-of-cloud-computing
-- learn.cmu-test.u01-m01-intro.cloud-building-blocks-and-service-models
-- learn.cmu-test.u01-m01-intro.cloud-deployment-models
-- learn.cmu-test.u01-m01-intro.popular-cloud-stacks
-- learn.cmu-test.u01-m01-intro.cloud-use-cases
-- learn.cmu-test.u01-m01-intro.summary
+- learn.cmu-test.u01-m01-intro.u01-m01-0-module-intro
+- learn.cmu-test.u01-m01-intro.u01-m01-1-intro
+- learn.cmu-test.u01-m01-intro.u01-m01-2-before-the-cloud
+- learn.cmu-test.u01-m01-intro.u01-m01-3-evolution
+- learn.cmu-test.u01-m01-intro.u01-m01-4-service-models
+- learn.cmu-test.u01-m01-intro.u01-m01-5-types
+- learn.cmu-test.u01-m01-intro.u01-m01-6-cloud-stacks
+- learn.cmu-test.u01-m01-intro.u01-m01-7-use-cases
+- learn.cmu-test.u01-m01-intro.u01-m01-8-summary
 badge:
   uid: learn.cmu-test.u01-m01-intro.badge

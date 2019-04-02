@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u03-m01-introduction-motivation.module-introduction
-- learn.cmu-test.u03-m01-introduction-motivation.background-and-motivation
-- learn.cmu-test.u03-m01-introduction-motivation.virtualization-and-cloud-computing
-- learn.cmu-test.u03-m01-introduction-motivation.limitations-of-generalpurpose-operating-systems
-- learn.cmu-test.u03-m01-introduction-motivation.managing-system-complexity-abstractions
-- learn.cmu-test.u03-m01-introduction-motivation.managing-system-complexity-interfaces
-- learn.cmu-test.u03-m01-introduction-motivation.resource-sharing-basics
-- learn.cmu-test.u03-m01-introduction-motivation.resource-sharing-in-multiprocessor-systems
-- learn.cmu-test.u03-m01-introduction-motivation.summary
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-0-module-intro
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-1-intro
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-1-intro-2
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-2-generalos-vs-virtualization
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-3-managing-complexity
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-3-managing-complexity2
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-4-resource-sharing
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-4-resource-sharing2
+- learn.cmu-test.u03-m01-introduction-motivation.u03-m01-summary
 badge:
   uid: learn.cmu-test.u03-m01-introduction-motivation.badge

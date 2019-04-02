@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u02-m04-programming-the-cloud.module-introduction
-- learn.cmu-test.u02-m04-programming-the-cloud.programming-the-cloud
-- learn.cmu-test.u02-m04-programming-the-cloud.deploying-applications-on-the-cloud
-- learn.cmu-test.u02-m04-programming-the-cloud.build-faulttolerant-cloud-services
-- learn.cmu-test.u02-m04-programming-the-cloud.load-balancing
-- learn.cmu-test.u02-m04-programming-the-cloud.scaling-resources
-- learn.cmu-test.u02-m04-programming-the-cloud.dealing-with-tail-latency
-- learn.cmu-test.u02-m04-programming-the-cloud.economics-for-cloud-applications
-- learn.cmu-test.u02-m04-programming-the-cloud.summary
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-0-module-intro
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-1-programming-the-cloud
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-2-deployments
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-3-managing-failures
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-4-load-balancing
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-5-scaling
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-6-tail-latency
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-7-economics
+- learn.cmu-test.u02-m04-programming-the-cloud.u02-m04-8-summary
 badge:
   uid: learn.cmu-test.u02-m04-programming-the-cloud.badge

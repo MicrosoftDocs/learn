@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.module-introduction
-- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.case-studies-distributed-file-systems
-- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.the-hadoop-distributed-file-system-hdfs
-- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.ceph-fs
-- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.hdfs-versus-ceph
-- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.summary
+- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-0-module-intro
+- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-1-intro
+- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-2-hdfs
+- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-3-pvfs
+- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-4-hdfs-vs-pvfs
+- learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-5-summary
 badge:
   uid: learn.cmu-test.u04-m02-distributed-file-systems-case-studies.badge

@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u03-m04-resource-virtualization-memory.module-introduction
-- learn.cmu-test.u03-m04-resource-virtualization-memory.onelevel-page-mapping
-- learn.cmu-test.u03-m04-resource-virtualization-memory.twolevel-page-mapping
-- learn.cmu-test.u03-m04-resource-virtualization-memory.memory-overcommitment
-- learn.cmu-test.u03-m04-resource-virtualization-memory.reclamation-techniques-and-vmware-memory-ballooning
-- learn.cmu-test.u03-m04-resource-virtualization-memory.summary
+- learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-1-intro
+- learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-2-one-level-page-mapping
+- learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-3-two-level-page-mapping
+- learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-4-memory-over-commitment
+- learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-5-reclamation-techniques
+- learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-6-summary
 badge:
   uid: learn.cmu-test.u03-m04-resource-virtualization-memory.badge

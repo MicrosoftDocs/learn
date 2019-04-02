@@ -22,12 +22,12 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u02-m03-software-stack.module-introduction
-- learn.cmu-test.u02-m03-software-stack.cloud-middleware
-- learn.cmu-test.u02-m03-software-stack.resource-provisioning
-- learn.cmu-test.u02-m03-software-stack.metering-and-monitoring-cloud-services
-- learn.cmu-test.u02-m03-software-stack.cloud-orchestration-and-automation
-- learn.cmu-test.u02-m03-software-stack.case-study-openstack
-- learn.cmu-test.u02-m03-software-stack.summary
+- learn.cmu-test.u02-m03-software-stack.u02-m03-0-module-intro
+- learn.cmu-test.u02-m03-software-stack.u02-m03-1-middleware
+- learn.cmu-test.u02-m03-software-stack.u02-m03-2-provisioning
+- learn.cmu-test.u02-m03-software-stack.u02-m03-3-metering
+- learn.cmu-test.u02-m03-software-stack.u02-m03-4-orchestration
+- learn.cmu-test.u02-m03-software-stack.u02-m03-5-case-studies
+- learn.cmu-test.u02-m03-software-stack.u02-m03-6-summary
 badge:
   uid: learn.cmu-test.u02-m03-software-stack.badge

@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u03-m07-software-defined-datacenter.module-introduction
-- learn.cmu-test.u03-m07-software-defined-datacenter.networking-within-data-centers
-- learn.cmu-test.u03-m07-software-defined-datacenter.software-defined-data-centers-and-networking
-- learn.cmu-test.u03-m07-software-defined-datacenter.storage-within-data-centers
-- learn.cmu-test.u03-m07-software-defined-datacenter.software-defined-storage
-- learn.cmu-test.u03-m07-software-defined-datacenter.summary
+- learn.cmu-test.u03-m07-software-defined-datacenter.u03-m07-0-module-intro
+- learn.cmu-test.u03-m07-software-defined-datacenter.u03-m07-1-dc-networks
+- learn.cmu-test.u03-m07-software-defined-datacenter.u03-m07-2-sdn
+- learn.cmu-test.u03-m07-software-defined-datacenter.u03-m07-3-storage
+- learn.cmu-test.u03-m07-software-defined-datacenter.u03-m07-4-sds
+- learn.cmu-test.u03-m07-software-defined-datacenter.u03-m07-5-summary
 badge:
   uid: learn.cmu-test.u03-m07-software-defined-datacenter.badge

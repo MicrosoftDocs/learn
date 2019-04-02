@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u01-m01-intro.u01-m01-3-evolution
+title: Evolution of Cloud Computing
+metadata:
+  title: Evolution of Cloud Computing - Learn
+  description: Evolution of Cloud Computing - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/u01-m01-3-evolution.md)]

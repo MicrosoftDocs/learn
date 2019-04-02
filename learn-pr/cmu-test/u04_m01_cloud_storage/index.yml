@@ -22,20 +22,20 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u04-m01-cloud-storage.module-introduction
-- learn.cmu-test.u04-m01-cloud-storage.data
-- learn.cmu-test.u04-m01-cloud-storage.applications-and-requirements
-- learn.cmu-test.u04-m01-cloud-storage.storage-devices
-- learn.cmu-test.u04-m01-cloud-storage.storage-abstractions
-- learn.cmu-test.u04-m01-cloud-storage.local-file-systems
-- learn.cmu-test.u04-m01-cloud-storage.distributed-file-systems
-- learn.cmu-test.u04-m01-cloud-storage.databases
-- learn.cmu-test.u04-m01-cloud-storage.designing-databases-schema-and-scalability
-- learn.cmu-test.u04-m01-cloud-storage.designing-databases-consistency-and-the-cap-theorem
-- learn.cmu-test.u04-m01-cloud-storage.relational-databases
-- learn.cmu-test.u04-m01-cloud-storage.nosql-databases
-- learn.cmu-test.u04-m01-cloud-storage.newsql-databases
-- learn.cmu-test.u04-m01-cloud-storage.object-storage-as-a-cloud-service
-- learn.cmu-test.u04-m01-cloud-storage.summary
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-0-module-intro
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-1-big-picture
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-2-data-abstractions
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-1-filesystems
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-1-filesystems2
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-1-filesystems3
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-1-filesystems4
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-1-filesystems5
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-1-filesystems6
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-2-databases
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-2-databases2
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-2-databases3
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-3-objects
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-4-block-devices
+- learn.cmu-test.u04-m01-cloud-storage.u04-m01-5-summary
 badge:
   uid: learn.cmu-test.u04-m01-cloud-storage.badge

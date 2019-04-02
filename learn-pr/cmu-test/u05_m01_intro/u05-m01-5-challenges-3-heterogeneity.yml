@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u05-m01-intro.u05-m01-5-challenges-3-heterogeneity
+title: Challenges in Building Cloud Programs - Heterogeneity
+metadata:
+  title: Challenges in Building Cloud Programs - Heterogeneity - Learn
+  description: Challenges in Building Cloud Programs - Heterogeneity - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/u05-m01-5-challenges-3-heterogeneity.md)]

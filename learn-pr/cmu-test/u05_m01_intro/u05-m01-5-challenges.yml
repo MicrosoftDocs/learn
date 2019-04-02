@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u05-m01-intro.u05-m01-5-challenges
+title: Main Challenges in Building Cloud Programs
+metadata:
+  title: Main Challenges in Building Cloud Programs - Learn
+  description: Main Challenges in Building Cloud Programs - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/u05-m01-5-challenges.md)]

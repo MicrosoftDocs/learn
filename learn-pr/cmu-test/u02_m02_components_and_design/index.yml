@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.u02-m02-components-and-design.module-introduction
-- learn.cmu-test.u02-m02-components-and-design.it-equipment
-- learn.cmu-test.u02-m02-components-and-design.infrastructure-and-facilities
-- learn.cmu-test.u02-m02-components-and-design.geographic-location-criteria
-- learn.cmu-test.u02-m02-components-and-design.costs
-- learn.cmu-test.u02-m02-components-and-design.power-and-efficiency
-- learn.cmu-test.u02-m02-components-and-design.redundancy
-- learn.cmu-test.u02-m02-components-and-design.reliability-metrics
-- learn.cmu-test.u02-m02-components-and-design.summary
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-0-module-intro
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-1-it-components
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-2-infrastructure
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-3-global-location
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-4-costs
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-5-power-efficiency
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-6-redundancy-and-fault-tolerance
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-7-design
+- learn.cmu-test.u02-m02-components-and-design.u02-m02-8-summary
 badge:
   uid: learn.cmu-test.u02-m02-components-and-design.badge
