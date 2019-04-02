@@ -13,9 +13,9 @@ title: Choose an Agile approach to software development
 summary: Develop an Agile mindset to incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
 abstract: |
   In this module, you will:
-  - Describe Agile and the various kinds of Agile methods
-  - Choose the appropriate Agile method for your project
-  - Create an Azure DevOps project and plan a backlog of work using Azure Boards
+  - Learn how to create an Azure DevOps project
+  - Learn how to add work items to an Azure Board using the Basic process
+  - Learn how to assign team members to work items
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -33,7 +33,6 @@ units:
 - learn.azdo.choose-an-agile-approach.1-introduction
 - learn.azdo.choose-an-agile-approach.2-define-agile
 - learn.azdo.choose-an-agile-approach.3-define-azure-boards
-- learn.azdo.choose-an-agile-approach.4-create-a-backlog
-- learn.azdo.choose-an-agile-approach.5-summary
+- learn.azdo.choose-an-agile-approach.4-summary
 badge:
   uid: learn.azdo.choose-an-agile-approach.badge
