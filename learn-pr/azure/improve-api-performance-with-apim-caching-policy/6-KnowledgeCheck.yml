@@ -18,13 +18,21 @@ quiz:
   - 
   - content: 'Given that users are not being authenticated which type of throttling would you use to limit access based on IP Address'
     choices:
-    - content: 'Custom throttling'
+    - content: 'Product based throttling'
       isCorrect: false
+      explaination: 'Because rate throttling capabilities are limited to being scoped to a particular Product subscription this type of throttling is no use
+      when trying to individual users accessing your API'
     - content: 'User identity throttling '
       isCorrect: false
+      explaination: 'Because rate throttling capabilities are limited to being scoped to a particular Product subscription this type of throttling is no use
+      when trying to individual users accessing your API'
     - content: 'IP address throttling'
       isCorrect: true
+      explaination: 'Because rate throttling capabilities are limited to being scoped to a particular Product subscription this type of throttling is no use
+      when trying to individual users accessing your API'
     - content: 'client driven throttling.'
       isCorrect: false
+      explaination: 'Because rate throttling capabilities are limited to being scoped to a particular Product subscription this type of throttling is no use
+      when trying to limit access for individual users to your API'
 
   -
