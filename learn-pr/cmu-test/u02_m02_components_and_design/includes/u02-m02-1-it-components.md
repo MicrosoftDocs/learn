@@ -39,21 +39,25 @@ _Onboard management:_ Although many desktop motherboards now have onboard gigabi
 ###  Expansion cards
 
 _PCI Express:_ Often, a server requires additional I/O devices, depending on the applications intended to run on it. PCs and mainframes have always had some notion of expandability, and expansion buses have evolved from ISA to PCI to PCI-X to what is the current standard—PCI Express (PCIe). The biggest difference between PCI and PCIe is that PCIe is based on point-to-point, high-speed serial links, rather than an actual bus, which has multiple devices attached. Each of these high-speed links constitutes a lane, and multiple lanes work in parallel. So a PCIe device that is x8 has eight of these high speed lanes. Each generation of PCIe, from 1.0 to 3.0, effectively doubles the bandwidth of the previous generation.
-Table 2.1: PCIe generations throughput per x1, x4, x8, and x16 lane slots.|PCIe Generation|x1 (MB/s)|x4 (GB/s)|x8 (GB/s)|x16 (GB/s)|
+|PCIe Generation|x1 (MB/s)|x4 (GB/s)|x8 (GB/s)|x16 (GB/s)|
 |--|--|--|--|--|
 |1.0|250|1|2|4|
 |2.0|500|2|4|8|
 |3.0|985|3.94|7.88|15.75|
 
+_Table 2.1: PCIe generations throughput per x1, x4, x8, and x16 lane slots._
+
 
 _RAID:_ RAID (redundant array of inexpensive disks) adapters allow multiple hard drives to act as a single logical unit, with increased performance and redundancy or a mixture of both.
-Table 2.2: Different RAID levels with major advantages and disadvantages.|RAID Level|Name|Advantages|Disadvantages|
+|RAID Level|Name|Advantages|Disadvantages|
 |--|--|--|--|
 |0|Called block-level striping.|Improved performance.|No fault tolerance, and a single drive failure destroys the entire array.|
 |1|Called _mirroring_ because data is replicated entirely.|Can withstand drive failure. It has faster reads (sometimes), and this level maintains performance on failure.|One-half the capacity versus two independent drives. This level has slower writes.|
 |10|Called RAID 1+0 or ten _(mirroring+striping)_. It combines the speed of RAID 0 and redundancy of RAID 1.|Provides fault tolerance. It has improved performance. This level maintains performance on failure. |One-half the capacity versus two independent RAID 0 arrays.|
 |5|Block-level striping with distributed parity.|This level can withstands single drive failure, and it has more capacity versus RAID 1, 10, and 6.|Slower writes than RAID 0, 1, and 10, degraded performance on failure, and slow rebuild process.|
 |6|Block-level striping with double-distributed parity.|Withstands two drive failures and has more capacity versus RAID 1 and 10 (with more than four drives).|Slower writes than RAID 5, degraded performance on failure, and slow rebuild process.|
+
+_Table 2.2: Different RAID levels with major advantages and disadvantages._
 
 
 RAID controllers come with different number of ports (connected drives), support different interfaces (SATA, SAS), vary in amount of built-in cache (e.g., 512MB, 1GB), and have varying performance levels (MB/s throughput, I/O per second). Each of those factors can change the price of the adapter (from a few hundred to over $1000). 
@@ -125,9 +129,11 @@ _Fibre Channel (FC)_ is a protocol designed to support SANs and remote block-lev
 _iSCSI_, or _internet SCSI_ (pronounced "scuzzy"), is a protocol which packetizes SCSI (Small Computer Systems Interface, an old hard drive standard) commands to be transported over LANs or WANs. Many SANs support iSCSI, and it is popular because you can use your existing Ethernet network instead of deploying a dedicated FC network.
 
 _Infiniband (IB)_ has been popular in HPC clusters for almost a decade and is also gaining traction in other areas in the data center. The main advantage of Infiniband is much lower end-to-end latency compared to Ethernet (1.7 microseconds versus 12.5 microseconds for 10GigE versus 30 to 100 microseconds for GigE). It also scales better with the number of nodes in a [cluster](http://www.hpcadvisorycouncil.com/pdf/IB_and_10GigE_in_HPC.pdf). The other key factor in IB performance is that the switches (Figure 2.11) are fully nonblocking, which means that the backplane supports running every single port at full speed, in both directions. Infiniband speeds are summarized by the chart below:
-Table 2.3: Summary of Infiniband speeds.|SDR|DDR|QDR|FDR-10|FDR|EDR|
+|SDR|DDR|QDR|FDR-10|FDR|EDR|
 |--|--|--|--|--|--|
 |8Gbit/s|16Gbit/s|32Gbit/s|40Gbit/s|54.54Gbit/s|100Gbit/s|
+
+_Table 2.3: Summary of Infiniband speeds._
 
 
 Infiniband and 40Gbit Ethernet are also being deployed as a _converged network_, or _virtual fabric_, which, along with virtualization of the OS, allows many virtual adapters (Ethernet, FC-HBAs) to run over fewer high-speed links. The connections can be configured dynamically through software and allow for fewer cables and easier maintenance and management.

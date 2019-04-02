@@ -37,10 +37,12 @@ In large-scale systems, synchronization points can become performance bottleneck
 
 _Figure 5.7. A distributed program that corresponds to the sequential program in Figure 5.5(a) and is coded using the message-passing programming model_
 
-Table 5.1: A comparison between the shared-memory and the message-passing programming models|Aspect|Shared-Memory Model|Message-Passing Model|
+|Aspect|Shared-Memory Model|Message-Passing Model|
 |--|--|--|
 |Communication|Implicit|Explicit|
 |Synchronization|Explicit|Implicit|
 |Hardware Support|Usually required|Not required|
 |Initial Development Effort|Lower|Higher|
 |Tuning Effort upon Scaling Up|Higher|Lower|
+
+_Table 5.1: A comparison between the shared-memory and the message-passing programming models_
