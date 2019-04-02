@@ -141,6 +141,7 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 ## Create a new Azure APIM instance
 
 1. This will deploy a lot faster if the cosumption pricing tier is chosen for deployment.
+<! The preview seems to have caching disabled so we are using the standard tier >
 
 1. This is only available as a preview in the following regions
 
@@ -163,7 +164,24 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 1. Complete the Wizard and press create
 
 
-![Select your API](../media/createfomopenapi.png)]
+![Complete Wizard](../media/createfomopenapi.png)]
 
+
+1. Add the Web Service URL
+
+![Add website URL](../media/settings.png)]
+
+You are now ready to run your managed API  in Test.
+
+
+1. Run with the following parameters.
+
+1. Height 80
+
+1. Width 100
+
+1. Region Code UK
+
+1. Note the result and run again with the same parameters, the date time will increment as this page is not being casched.
 
 
