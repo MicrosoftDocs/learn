@@ -36,6 +36,7 @@ units:
 - learn.azdo.build-applications-with-azure-pipelines.4-plan-build-tasks
 - learn.azdo.build-applications-with-azure-pipelines.5-set-up-environment
 - learn.azdo.build-applications-with-azure-pipelines.6-create-the-pipeline
-- learn.azdo.build-applications-with-azure-pipelines.7-summary
+- learn.azdo.build-applications-with-azure-pipelines.7-build-multiple-configurations
+- learn.azdo.build-applications-with-azure-pipelines.8-summary
 badge:
   uid: learn.azdo.build-applications-with-azure-pipelines.badge

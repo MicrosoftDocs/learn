@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.build-applications-with-azure-pipelines.3-build-locally
-title: Exercise - Build the app locally
+title: Exercise - Get the sample application
 metadata:
-  title: Exercise - Build the app locally
+  title: Exercise - Get the sample application
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel

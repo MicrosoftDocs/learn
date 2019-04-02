@@ -20,3 +20,10 @@ Goals:
   - build it
 - add a build badge
 - dashboard
+ 
+
+------
+
+Scraps:
+
+Perhaps mention other options that are available (the JTA mentions "TFVC, GitHub, & Bitbucket"). Why choose Git? ("Git is popular with the development community because ...")

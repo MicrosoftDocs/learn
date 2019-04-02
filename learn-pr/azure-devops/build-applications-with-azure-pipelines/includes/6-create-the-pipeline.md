@@ -1,257 +1,381 @@
-Create a pipeline, connect it to your GitHub project, and watch it build.
+Talk track:
 
-[Reference](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops#get-your-first-build)
+* Here you'll create the pipeline and produce your first build artifact.
+* Remember (and say this in unit 2 or 4 if we haven't), you'll be using a YAML file to define your pipeline.
+* When you create a pipeline, the process asks you for your YAML file. The project doesn't have this file yet.
+* An easy way to get started is to create a Git branch that contains a basic YAML file, use that branch to set up the pipeline, and then iteratively add tasks to your pipeline and test them out.
+* At a minimum, the YAML file needs to define the image pool to use. Here you'll use the Ubuntu 16.04 image that's hosted by Microsoft.
+* A branch is a good way to do this because it isolates your changes, and doesn't affect the `master` branch or break anything the team is working on.
+* Then, once you have things working, you can merge your change into the `master` branch so everyone can push code into the pipeline.
 
------
+## Configure the basic pipeline
 
-TODO: Let's not go down the msbuild route. Let's keep it more basic.
+1. From Visual Studio Code, navigate to the integrated terminal and run this `git checkout` command to create a branch named **build-pipeline**.
 
-Notes from spike:
+    ```bash
+    git checkout -b build-pipeline
+    ```
+
+    > [!NOTE]
+    > If you're new to Git, just understand for now that a branch is a way to propose changes with affecting anyone else's work. Later, you'll propose and merge your change into the main code base.
+
+1. From the integrated terminal, run the following command to create a file named **azure-pipelines.yml** in your project's root directory.
+
+    **PowerShell**
+
+    ```powershell
+    TBD
+    ```
+
+    **Bash**
+
+    ```bash
+    touch azure-pipelines.yml
+    ```
+
+    <!-- TODO: Add PowerShell equivalent -->
+
+1. In **azure-pipelines.yml**, add the Ubuntu 16.04 image pool, then save the file.
+
+    ```yml
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    ```
+
+1. From the integrated terminal, run `git status`.
+
+    ```bash
+    git status
+    ```
+
+    You see that **azure-pipelines.yml** is untracked. New files are untracked until you add them to Git's index, or staging area.
+
+1. Run `git add` to add the file to the index.
+
+    ```bash
+    git add azure-pipelines.yml
+    ```
+
+1. Run `git commit` to commit the change to your branch.
+
+    ```bash
+    git commit -m "Initial"
+    ```
+
+1. Run `git push` to push, or upload, your branch (including your changes) to your GitHub repository.
+
+    ```bash
+    git push origin build-pipeline
+    ```
 
 ## Create the pipeline
 
-TODO: Change this to exclude docs/ from builds, not filter branches.
+1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
+1. Select **Pipelines**, either from the project page or from the menu on the left.
+1. Click **New pipeline**.
+1. From the **Select a source** pane, select **GitHub**, then click **Authorize using OAuth**.
+    1. Sign in to GitHub from the window that appears.
+    1. Specify your repository by clicking **...** and then selecting your **mslearn-tailspin-spacegame-web** repository.
+    1. Select **build-pipeline** as your default branch.
+1. From the **Select a template** pane, select **YAML** and then click **Apply**.
+1. Fill in the final settings.
+    1. For **Agent pool**, select **Hosted Ubuntu 1604**.
+    1. For **YAML file path**, click **...** and select **azure-pipelines-yml**.
+1. Click **Save & queue** to save your changes and start the build. From the window that appears, click **Save & queue** a second time.
+1. At the top of the page, you see a message that resembles this one.
 
-- Explain how now you need a way to build it. The team currently uses...
-  - Now let's build it using a pipeline
-- From Azure DevOps, navigate to your project.
-- Choose Pipelines
-- Where is your code?
-  - GitHub
-- Select a repository
-  - **Authorize with OAuth**
-  - Select repo
-- Configure your pipeline
-  - Select **ASP.NET Core**
-- Make the .yml file look like this (note change to the build command to match the one you did manually.)
+    ![Build queue message](../media/6-build-queued.png)
+
+    Click the link to go to your build.
+
+## Watch the pipeline run
+
+From the build screen, trace the build process through each of the steps.
+
+Recall that at this point your build definition specifies only the VM image to use. It doesn't yet specify any of the tasks needed to build your app.
+
+Here you see the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, and clean up.
+
+![Initial build configuration](../media/6-build-initial.png)
+
+This configuration is a great first start because now you have a starting point for adding build tasks.
+
+> [!TIP]
+> Check your email. You may have already received a build notification with the results of your run. You can use this to let your team members know when builds complete and whether each build passed or failed.
+
+As an optional step, right click the link to **Hosted Ubuntu 1604** and open it in a new tab.
+
+![Link to build agent information](../media/6-hosted-agent.png)
+
+Then click **Details**.
+
+![](../media/6-hosted-agent-details.png)
+
+You see all the software that's available on the VM, including .NET Core, Docker, and many other development tools and compilers.
+
+## Add build tasks
+
+Now that you have a working build process, you can begin to add build tasks.
+
+Recall that you're working from the `build-pipeline` branch. This gives you a place to experiment and get your build completely working without affecting the rest of the team.
+
+You can add build tasks to **azure-pipelines.yml** directly from Azure DevOps. But here you'll modify **azure-pipelines.yml** locally and upload up your changes to practice your Git skills and watch the pipeline automatically start build the application when you push up changes.
+
+In practice, you might add build tasks one at at time, push up your changes, and see it run. For learning purposes, here you'll add all of the build tasks we identified previously.
+
+1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
+
     ```yml
-    # ASP.NET Core
-    # Build and test ASP.NET Core projects targeting .NET Core.
-    # Add steps that run tests, create a NuGet package, deploy, and more:
-    # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
-    trigger:
-    - master
-
     pool:
       vmImage: 'Ubuntu-16.04'
-
-    variables:
-      buildConfiguration: 'Release'
-
-    steps:
-    - script: dotnet build src --configuration $(buildConfiguration)
-      displayName: 'dotnet build src $(buildConfiguration)'
-    ```
-- Click **Save and run**
-- Click **Save and run** (again)
-- Walk the user through the build process that follows.
-  - Discuss what the learner is seeing as the job runs.
-    - Prepare job, Initialize Agent, etc.
-  - Call out that the build process is specific to ASP.NET Core. Your build process would perform what you need for your app.
-- You see that azure-pipelines.yml is added to your repo.
-  - `git pull origin master`
-  - View on GitHub
-
-> !TIP Check your inbox! You'll receive a build notification. You can configure this ...
-
-> TODO: Show the agent pool from Project settings -> Agent pools (https://dev.azure.com/{your_organization}/_admin/_AgentPool). Click on agent to see what's installed in the image.
-
-## Publish the build artifact
-
-- What you saw so far was a basic process.
-- The team builds on Visual Studio.
-- Need to install build deps, run msbuild, then publish the build artifact.
-- Go into more detail on the dependencies and build process here...
-
-## Knowledge needed
-
-- What are build artifacts?
-  - Artifacts are the files that you want your build to produce. Artifacts can be anything that your team needs to test or deploy your app. (Docs)
-- More about built-in tasks?
-  - What's the @ thing all about?
-
-## Examine existing build process
-
-(TODO: On second thought, maybe we change this to something Linux-based instead of flip-flopping between Linux and Windows.)
-
-Requirements:
-
-- npm
-- node.js
-- msbuild
-- visualstudio
-- nuget packages
-
-Walk through existing commands the team uses. Then map to each of these build tasks:
-
-- NuGetToolInstaller
-- NuGetCommand
-- Npm
-- Grunt
-- powershell
-- VSBuild
-- PublishBuildArtifacts
-
-## Task
-
-- From the pipeline (web interface), modify azure-pipeline.yml like this.
-
-    ```yml
-    pool:
-      vmImage: vs2017-win2016
       demands:
-      - npm
-      - node.js
-      - msbuild
-      - visualstudio
-
-    variables:
-      BuildPlatform: 'any cpu'
-      BuildConfiguration: 'release'
+        - npm
 
     steps:
-    - task: NuGetToolInstaller@0
-      displayName: 'Use NuGet 4.4.1'
-      inputs:
-        versionSpec: 4.4.1
-
-    - task: NuGetCommand@2
-      displayName: 'NuGet restore'
-      inputs:
-        restoreSolution: src/Xamarin.Web.DevConnect.sln
-
     - task: Npm@1
       displayName: 'npm install'
       inputs:
         verbose: false
 
-    - task: Grunt@0
-      displayName: 'grunt '
-      inputs:
-        arguments: 'less:prod'
+    - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
+      displayName: 'node-sass Tailspin.SpaceGame.Web/wwwroot'
 
-    - powershell: '"$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" | Out-File buildinfo.txt'
-      workingDirectory: src/Xamarin.Web.DevConnect/wwwroot
+    - task: gulp@1
+      displayName: 'gulp'
+
+    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+      workingDirectory: Tailspin.SpaceGame.Web/wwwroot
       displayName: 'output build info'
 
-    - task: VSBuild@1
-      displayName: 'Build solution src/Xamarin.Web.DevConnect.sln'
+    - task: DotNetCoreCLI@2
       inputs:
-        solution: src/Xamarin.Web.DevConnect.sln
-        msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\\"'
-        platform: '$(BuildPlatform)'
-        configuration: '$(BuildConfiguration)'
+        command: 'restore'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet build Release'
+      inputs:
+        command: 'build'
+        arguments: '--no-restore --configuration Release'
+        projects: '**/*.csproj'
+    ```
+
+    The `demands` section beneath `pool` specifies that we need npm, the Node.js package manager, installed on the build system.
+
+    Under the `steps` section, you see the build task that maps to each of the script commands that we identified earlier.
+
+    Azure Pipelines provides a built-in build task that maps to many common build activities. For example, the `DotNetCoreCLI@2` task maps to the `dotnet` command-line utility. The pipeline uses `DotNetCoreCLI@2` two times &mdash; one time to restore, or install, the project's dependencies and one time to build the project.
+
+    But not all build activities map to a built-in task. For example, there is no built-in task that runs the `node-sass` utility or write build info to a text file. To run general system commands, you use the `CmdLine@2` or `script` task. The pipeline uses the `script` task because it's a common shortcut for `CmdLine@2`.
+
+    In the build step that writes information about the build to file, notice these elements:
+
+    * `$(Build.DefinitionName)`
+    * `$(Build.BuildId)`
+    * `$(Build.BuildNumber)`
+
+    These are built-in variables that the system provides that you can use in your pipeline.
+
+    * `$(Build.DefinitionName)` specifies the name of the build pipeline, such as "SpaceGame-Web-CI".
+    * `$(Build.BuildId)` is a numeric identifier for the completed build, such as 115.
+    * `$(Build.BuildNumber)` is name of the completed build. You can configure the format, but by default the build number includes the current date followed by the build number for that day. An example build number is "20190329.1".
+
+    You can also define your own variables, which you'll do shortly.
+
+<!-- TODO: Do we need to drill in to how the YAML is written? It's a complete language, so it might be difficult to define comprehensively. One thing that sticks out is the `-` syntax to delimit array elements.
+
+Perhaps we need a knowledge section around YAML syntax (perhaps keep it light and just highlight what's common or what's used in this module), OR we just point to the "Learn YAML in Y minutes" article at the end.
+-->
+
+1. Similar to what you did earlier, run the following Git commands from the integrated terminal to add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+
+    > [!TIP]
+    > Remember to save **azure-pipelines.yml** before running these Git commands.
+
+    ```bash
+    git add azure-pipelines.yml
+    git commit -m "Add build tasks"
+    git push origin build-pipeline
+    ```
+
+1. From Azure DevOps, trace the build process through each of the steps.
+    * **TODO**: Might have to re-orient the learner as to where to pick up the build in the UI. Also, talk about anything interesting you see (especially the last step, as it relates to the next section.)
+
+## Publish the build result
+
+At this point, you're able to build the _Space Game_ web project through the pipeline.
+
+But where do the results of the build go? Right now, the output of the build remains on the temporary build server. You can store build artifacts in Azure Pipelines so that they're available to others on your team.
+
+In .NET Core, you can package your application as a .zip file. You can then use the built-in `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines.
+
+1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
+
+    ```yml
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      demands:
+        - npm
+
+    variables:
+      buildConfiguration: 'Release'
+
+    steps:
+    - task: Npm@1
+      displayName: 'npm install'
+      inputs:
+        verbose: false
+
+    - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
+      displayName: 'node-sass Tailspin.SpaceGame.Web/wwwroot'
+
+    - task: gulp@1
+      displayName: 'gulp'
+
+    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+      workingDirectory: Tailspin.SpaceGame.Web/wwwroot
+      displayName: 'output build info'
+
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'restore'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet build Release'
+      inputs:
+        command: 'build'
+        arguments: '--no-restore --configuration Release'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet publish Release'
+      inputs:
+        command: 'publish'
+        projects: '**/*.csproj'
+        publishWebProjects: false
+        arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
+        zipAfterPublish: true
 
     - task: PublishBuildArtifacts@1
       condition: succeeded()
       displayName: 'Publish Artifact: drop'
     ```
 
-    TODO: Perhaps introduce this (publish only from the `master` branch instead of only _building_ the `master` branch...)
+    This version of **azure-pipelines.yml** resembles the previous version, but adds two additional tasks.
 
-    ```yml
-    - task: PublishBuildArtifacts@1
-      condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+    The first task uses the `DotNetCoreCLI@2` task to _publish_, or package, the application's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
+
+    The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to illustrate its use.
+
+1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+
+    > [!TIP]
+    > Remember to save **azure-pipelines.yml** before running these Git commands.
+
+    ```bash
+    git add azure-pipelines.yml
+    git commit -m "Add publish tasks"
+    git push origin build-pipeline
     ```
 
-    Explain it.
+1. From Azure DevOps, trace the build through each of the steps.
+    When the build completes, you see the **Artifacts** button appear.
+    <!-- TODO: SCREENSHOT -->
 
-- Click **Save and run**.
-- Trace the build through each of the steps.
-- When the build completes, you see the **Artifacts** button appear.
-  - Click it, then click **drop**. The **Artifacts explorer** appears.
-- From the **Artifacts explorer**, expand the **drop** folder.
-  - You see an number of files, including documentation, command (.cmd), and configuration files. (Explain these.)
-  - You also see a .zip file, which contains your package and its dependencies.
+1. Click the **Artifacts** button, then click **drop**. The **Artifacts explorer** appears.
+1. From the **Artifacts explorer**, expand the **drop** folder.
+    You see a .zip file that contains your built application and its dependencies.
+    <!-- TODO: Optionally, download and explore it? -->
 
-## Build Debug and Release configurations
+## Define variables to enhance readability
 
-- Add this to templates/vsbuild.yml
+Recall that Azure Pipelines provides variables that define aspects of your build. You can also define your own variables.
+
+Use variables when you repeat the same value multiple times or when a value, such as a dependency version, might change.
+
+You don't need to create a variable for every piece of your build configuration. In fact, too many variables can make your pipeline code harder for others to read and understand.
+
+Take a moment to examine **azure-pipelines.yml**. Notice that these values are repeated.
+
+* The build configuration, **Release**
+* The location of the **wwwroot** directory, **Tailspin.SpaceGame.Web/wwwroot**
+
+Here you'll use variables to define these values one time, and then reference these variables throughout the pipeline.
+
+1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
     ```yml
-    parameters:
-      BuildConfiguration: 'Release'
-    
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      demands:
+        - npm
+
+    variables:
+      buildConfiguration: 'Release'
+      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+
     steps:
-    - task: VSBuild@1
-      displayName: 'Build solution src/Xamarin.Web.DevConnect.sln - ${{ parameters.BuildConfiguration }}'
+    - task: Npm@1
+      displayName: 'npm install'
       inputs:
-        solution: src/Xamarin.Web.DevConnect.sln
-        msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\${{ parameters.BuildConfiguration }}\\"'
-        platform: '$(BuildPlatform)'
-        configuration: '${{ parameters.BuildConfiguration }}'
+        verbose: false
+
+    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+      displayName: 'node-sass $(wwwrootDir)'
+
+    - task: gulp@1
+      displayName: 'gulp'
+
+    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+      workingDirectory: $(wwwrootDir)
+      displayName: 'output build info'
+
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'restore'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet build $(buildConfiguration)'
+      inputs:
+        command: 'build'
+        arguments: '--no-restore --configuration $(buildConfiguration)'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'dotnet publish $(buildConfiguration)'
+      inputs:
+        command: 'publish'
+        projects: '**/*.csproj'
+        publishWebProjects: false
+        arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+        zipAfterPublish: true
+
+    - task: PublishBuildArtifacts@1
+      condition: succeeded()
+      displayName: 'Publish Artifact: drop'
     ```
 
-- Modify azure-pipeline.yml like this.
+    Notice the `variables` section, which defines `buildConfiguration` to specify the build configuration and `wwwrootDir` to specify the path to the **wwwroot** directory.
 
-```yml
-# trigger:
-# - master
+    To reference these variables, you use the `$()` syntax just as you reference built-in variables. Here's the step that runs node-sass to convert Sass files to CSS. It references the `wwwrootDir` variable to obtain the path to the **wwwroot** directory.
 
-# pr:
-#   branches:
-#     include:
-#     - master
-#   paths:
-#     exclude:
-#     - README.md
+    ```yml
+    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+      displayName: 'node-sass $(wwwrootDir)'
+    ```
 
-pool:
-  vmImage: vs2017-win2016
-  demands:
-  - npm
-  - node.js
-  - msbuild
-  - visualstudio
+    The script command uses this variable to define both the source directory for Sass files and the directory to write CSS files. It also uses this variable to define the task name that's shown in the user interface.
 
-variables:
-  BuildPlatform: 'any cpu'
+1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
 
-steps:
-- task: NuGetToolInstaller@0
-  displayName: 'Use NuGet 4.4.1'
-  inputs:
-    versionSpec: 4.4.1
+    ```bash
+    git add azure-pipelines.yml
+    git commit -m "Refactor common variables"
+    git push origin build-pipeline
+    ```
 
-- task: NuGetCommand@2
-  displayName: 'NuGet restore'
-  inputs:
-    restoreSolution: src/Xamarin.Web.DevConnect.sln
+1. From Azure DevOps, trace the build through each of the steps. As before, you see the **Artifacts** button appear when the build completes.
 
-- task: Npm@1
-  displayName: 'npm install'
-  inputs:
-    verbose: false
-
-- task: Grunt@0
-  displayName: 'grunt '
-  inputs:
-    arguments: 'less:prod'
-
-- powershell: '"$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" | Out-File buildinfo.txt'
-  workingDirectory: src/Xamarin.Web.DevConnect/wwwroot
-  displayName: 'output build info'
-
-- template: vsbuild.yml  # Template reference
-  parameters:
-    BuildConfiguration: 'Debug'
-
-- template: vsbuild.yml  # Template reference
-  parameters:
-    BuildConfiguration: 'Release'
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
-```
-
-- Add, commit, push
-
-```bash
-git checkout ...
-git add .
-git commit -m ""
-git push origin 
-```
-
-- Watch it build. Trace each step. See both artifacts come out the end.
+<!-- TODO: We chose `build-pipeline` as the "default" branch initially, but I don't know where this is used. And I don't see a way to set it to `master`. Let's follow-up on this - if you can set it, let's. -->

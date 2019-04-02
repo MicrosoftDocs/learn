@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.build-applications-with-azure-pipelines.4-plan-build-tasks
-title: Exercise - Plan your build tasks
+title: Plan your build tasks
 metadata:
-  title: Exercise - Plan your build tasks
+  title: Plan your build tasks
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel

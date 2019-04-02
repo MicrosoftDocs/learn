@@ -1,1 +1,0 @@
-If this looks confusing, in practice you would map each of your processes to tasks. You can always practice the build process manually first, then map each step to a build task. (Point back to ref docs?)

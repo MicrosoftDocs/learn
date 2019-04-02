@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.build-applications-with-azure-pipelines.5-set-up-environment
-title: Set up your Azure DevOps environment
+title: Exercise - Set up your Azure DevOps environment
 metadata:
-  title: Set up your Azure DevOps environment
+  title: Exercise - Set up your Azure DevOps environment
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
