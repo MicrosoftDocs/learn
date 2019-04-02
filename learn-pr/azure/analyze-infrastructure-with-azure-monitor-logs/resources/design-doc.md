@@ -34,63 +34,55 @@ Identify the subtasks of *Analyze your Azure infrastructure with Azure Monitor l
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-
-## Outline the units
-
-*Add more units as needed for your content*
+| Identify the features and capabilities of Azure Monitor logs | Show how Azure Monitor works | Knowledge check | 1 | Yes |
+| Create basic Azure Monitor log queries to extract information from log data | Business need to query logs | Exercise | 2 | Yes |
 
 1. **Introduction**
 
     An operations team for an enterprise would like to consolidate their log data in a single service to improve visibility across services and simplify their logging strategy. They've begun implementing Azure Monitor logs and would like to get a full understanding of how it works, and what the capabilities are to query and evaluate the log data being fed into the service.
 
-1. **Learning-content unit title**
+1. **Identify the features and capabilities of Azure Monitor logs**
+    - Foundational concepts of Azure Monitor
+        - How Log data is collected by Azure Monitor
+        - Example scenarios, plus some detail about how it fits this module's scenario
+    - Metrics, copy metrics to logs to perform complex analysis with other data types using Azure - Monitor's rich query language
+        - Where are the queries used and how we can use them to quickly retrieve, consolidate, and analyze collected data
 
-    List the content that will enable the learner to *subtask*:
+    Include a knowledge check in this unit:
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+    - What data does Azure Monitor collect?
+    - What two fundamental types of data are collected by Azure Monitor?
 
-1. **Knowledge check**
+1. **Create basic Azure Monitor log queries to extract information from log data**
+    - Look at a basic Azure Monitor log setup
+        - Azure Monitor Log Analytics in the Azure portal to write Azure Monitor log queries.
+    - How to write queries with the Kusto language. Describe the structure of a query.
+    - Some example queries:
+        - Searching for text in the RenderedDescription field
+        - Searching for events in a given weeke
+        - Searching for the last heartbeat from a computer IP.
 
-    What types of questions will test *learning objective*?
+1. **Exercise - Create basic Azure Monitor log queries to extract information from log data**
+    In the introduction to this unit, describe how the operations team does not have enough information about the behavior of their systems to diagnose problems early. In the exercises, show how the queries can resolve this issue.
 
-    - Question type
-    - Question type
+    1. Goto the following URL: https://portal.loganalytics.io/demo#/discover/query/main 
 
-1. **Exercise - exercise unit title**
+        > [!NOTE]
+        > Students may also want to run queries in your own subscription under Monitor -> Logs. Include a note to say they can do this, but results depend on the resources that are in use in their subscription.
 
-    List the steps which apply the learning content from previous unit:
-
-    1. Step
-    1. Step
-    1. Step
+    1. Enter a basic query where it says Type your query here...
+         - SecurityEvent
+        | take 10
+    1. Click Run and see the output of your query
+    1. Try a Sort query by running the following query:
+        - SecurityEvent
+| top 10 by TimeGenerated
+    1. Enter a query using a Filter clause and Time:
+        - SecurityEvent
+| where TimeGenerated > ago(30m) 
+| where toint(Level) >= 10
 
 1. **Summary**
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module?
-
-## Notes
-
-We likely won't use sandbox for this module, as searchable data won't be prepopulated. We do have a demo portal that is publicly available though, and can probably use that for the hands on portion.
-
-Demo portal - https://portal.loganalytics.io/demo#/discover/query/main
-
-Supporting documentation:
-
-https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/portals
-
-https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal
-
-https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-queries
-
-https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries
+    - Explored the types of data collected by Azure Monitor.
+    - Created Azure Monitor log queries to extract information from the log data
