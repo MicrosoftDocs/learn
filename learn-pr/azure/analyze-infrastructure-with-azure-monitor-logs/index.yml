@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.analyze-infrastructure-with-azure-monitor-logs
+metadata:
+  title: Module title
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Module title
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+units:
+- learn.analyze-infrastructure-with-azure-monitor-logs.1-introduction
+- learn.analyze-infrastructure-with-azure-monitor-logs.2-features-of-azure-monitor-log
+- learn.analyze-infrastructure-with-azure-monitor-logs.3-create-log-queries
+- learn.analyze-infrastructure-with-azure-monitor-logs.4-exercise-create-log-queries
+- learn.analyze-infrastructure-with-azure-monitor-logs.5-summary
+badge:
+  uid: learn.analyze-infrastructure-with-azure-monitor-logs.badge
