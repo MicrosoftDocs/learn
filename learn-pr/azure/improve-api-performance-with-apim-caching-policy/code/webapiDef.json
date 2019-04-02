@@ -1,0 +1,44 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "PrintFramingAPI"
+  },
+  "paths": {
+    "/api/Values/{Height}/{Width}/{ShippingCode}": {
+      "get": {
+        "tags": [ "Values" ],
+        "operationId": "GetQuery",
+        "consumes": [],
+        "produces": [ "text/plain", "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "Height",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Width",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ShippingCode",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
