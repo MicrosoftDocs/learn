@@ -3,7 +3,7 @@ uid: learn.azure.stage-deploy-app-service-deployment-slots.2-create-deployment-s
 title: Create deployment slots
 metadata:
   title: Create deployment slots
-  description: In this unit, you will learn what deployment slots are and why they are helpful.
+  description: Learn what deployment slots are and why they're helpful.
   ms.date: 03/27/2019
   author: nickwalkmsft
   ms.author: nickwalk
@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Create deployment slots
   questions:
-  - content: "How does Azure App Service ensure that there is no drop in the performance of the production slot just after a swap?"
+  - content: "How does Azure App Service ensure that production performance doesn't drop just after a swap?"
     choices:
-    - content: "Azure App Service warms up the app by sending a request to the root of the site."
+    - content: "App Service warms up the app by sending a request to the root of the site."
       isCorrect: true
-      explanation: "The warm-up request ensures that that all compilation and caching tasks are complete before the slots are swapped."
-    - content: "Azure App Service uses the same Virtual Machines for all the slots for a web app."
+      explanation: "The warm-up request ensures that all compilation and caching tasks finish before the slots are swapped."
+    - content: "App Service uses the same virtual machines for all of the slots for a web app."
       isCorrect: false
-      explanation: "It is true that all the slots for a web app share the same Virtual Machines but that does not avoid a drop in performance just after a swap."
-    - content: "Azure App Service uses the same disk quota for all the slots for a web app."
+      explanation: "All of the slots for a web app do share the same virtual machines. But that sharing doesn't stop a performance drop just after a swap."
+    - content: "App Service uses the same disk quota for all of the slots for a web app."
       isCorrect: false
-      explanation: "It is true that all the slots for a web app share the same disk quota but that does not avoid a drop in performance just after a swap."
-  - content: "Which of the following are NOT shared between all the deployment slots in a web app?"
+      explanation: "All of the slots for a web app do share the same disk quota. But that sharing doesn't stop a performance drop just after a swap."
+  - content: "Which of the following are NOT shared between all of the deployment slots for a web app?"
     choices:
     - content: "Virtual machines"
       isCorrect: false
-      explanation: "All the slots for a web app share the same Virtual Machines. However, they have different hostnames."
-    - content: "Hostnames"
+      explanation: "All of the slots for a web app share the same virtual machines. But they have different host names."
+    - content: "Host names"
       isCorrect: true
-      explanation: "The slots in a web app have different hostnames. They share the same Virtual Machines and deployment plans."
+      explanation: "The slots for a web app have different host names. They share the same virtual machines and deployment plans."
     - content: "Deployment plans"
       isCorrect: false
-      explanation: "All the slots for a web app share the same deployment plan. However, they have different hostnames."
+      explanation: "All of the slots for a web app share the same deployment plan. They have different host names."
