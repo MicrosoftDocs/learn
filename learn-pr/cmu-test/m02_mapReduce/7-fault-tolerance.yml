@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducefault-tolerance
+uid: learn.cmu-test.m02-mapreduce.fault-tolerance
 title: Fault Tolerance
 metadata:
   title: Fault Tolerance - Learn

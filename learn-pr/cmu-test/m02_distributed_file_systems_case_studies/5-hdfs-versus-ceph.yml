@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studieshdfs-versus-ceph
+uid: learn.cmu-test.m02-distributed-file-systems-case-studies.hdfs-versus-ceph
 title: HDFS versus Ceph
 metadata:
   title: HDFS versus Ceph - Learn

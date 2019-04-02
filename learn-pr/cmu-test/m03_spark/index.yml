@@ -22,12 +22,12 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m03-spark.cmu-test.m03-sparkmodule-introduction
-- learn.cmu-test.m03-spark.cmu-test.m03-sparkspark-overview
-- learn.cmu-test.m03-spark.cmu-test.m03-sparkresilient-distributed-datasets
-- learn.cmu-test.m03-spark.cmu-test.m03-sparklineage-fault-tolerance-and-recovery
-- learn.cmu-test.m03-spark.cmu-test.m03-sparkprogramming-in-spark
-- learn.cmu-test.m03-spark.cmu-test.m03-sparkthe-spark-ecosystem
-- learn.cmu-test.m03-spark.cmu-test.m03-sparksummary
+- learn.cmu-test.m03-spark.module-introduction
+- learn.cmu-test.m03-spark.spark-overview
+- learn.cmu-test.m03-spark.resilient-distributed-datasets
+- learn.cmu-test.m03-spark.lineage-fault-tolerance-and-recovery
+- learn.cmu-test.m03-spark.programming-in-spark
+- learn.cmu-test.m03-spark.the-spark-ecosystem
+- learn.cmu-test.m03-spark.summary
 badge:
   uid: learn.cmu-test.m03-spark.badge

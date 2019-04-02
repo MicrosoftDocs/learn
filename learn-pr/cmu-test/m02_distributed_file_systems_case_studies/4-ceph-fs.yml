@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studiesceph-fs
+uid: learn.cmu-test.m02-distributed-file-systems-case-studies.ceph-fs
 title: Ceph FS
 metadata:
   title: Ceph FS - Learn

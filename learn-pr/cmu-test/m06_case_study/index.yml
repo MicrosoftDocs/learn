@@ -22,10 +22,10 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m06-case-study.cmu-test.m06-case-studymodule-introduction
-- learn.cmu-test.m06-case-study.cmu-test.m06-case-studya-taxonomy-of-virtualization-suites
-- learn.cmu-test.m06-case-study.cmu-test.m06-case-studyamazons-elastic-compute-cloud
-- learn.cmu-test.m06-case-study.cmu-test.m06-case-studyamazon-ec2-properties
-- learn.cmu-test.m06-case-study.cmu-test.m06-case-studysummary
+- learn.cmu-test.m06-case-study.module-introduction
+- learn.cmu-test.m06-case-study.a-taxonomy-of-virtualization-suites
+- learn.cmu-test.m06-case-study.amazons-elastic-compute-cloud
+- learn.cmu-test.m06-case-study.amazon-ec2-properties
+- learn.cmu-test.m06-case-study.summary
 badge:
   uid: learn.cmu-test.m06-case-study.badge

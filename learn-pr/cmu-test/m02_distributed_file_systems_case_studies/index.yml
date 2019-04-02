@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studiesmodule-introduction
-- learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studiescase-studies-distributed-file-systems
-- learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studiesthe-hadoop-distributed-file-system-hdfs
-- learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studiesceph-fs
-- learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studieshdfs-versus-ceph
-- learn.cmu-test.m02-distributed-file-systems-case-studies.cmu-test.m02-distributed-file-systems-case-studiessummary
+- learn.cmu-test.m02-distributed-file-systems-case-studies.module-introduction
+- learn.cmu-test.m02-distributed-file-systems-case-studies.case-studies-distributed-file-systems
+- learn.cmu-test.m02-distributed-file-systems-case-studies.the-hadoop-distributed-file-system-hdfs
+- learn.cmu-test.m02-distributed-file-systems-case-studies.ceph-fs
+- learn.cmu-test.m02-distributed-file-systems-case-studies.hdfs-versus-ceph
+- learn.cmu-test.m02-distributed-file-systems-case-studies.summary
 badge:
   uid: learn.cmu-test.m02-distributed-file-systems-case-studies.badge

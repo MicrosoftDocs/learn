@@ -22,9 +22,9 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m02-virtualization.cmu-test.m02-virtualizationmodule-introduction
-- learn.cmu-test.m02-virtualization.cmu-test.m02-virtualizationwhat-is-virtualization
-- learn.cmu-test.m02-virtualization.cmu-test.m02-virtualizationvirtual-machine-types
-- learn.cmu-test.m02-virtualization.cmu-test.m02-virtualizationsummary
+- learn.cmu-test.m02-virtualization.module-introduction
+- learn.cmu-test.m02-virtualization.what-is-virtualization
+- learn.cmu-test.m02-virtualization.virtual-machine-types
+- learn.cmu-test.m02-virtualization.summary
 badge:
   uid: learn.cmu-test.m02-virtualization.badge

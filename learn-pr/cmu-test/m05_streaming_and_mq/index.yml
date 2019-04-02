@@ -22,13 +22,13 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqmodule-introduction
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqmessage-queues
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqmessage-queues-case-study
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqstream-processing-systems
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqstreaming-architectures-a-case-study
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqbig-data-processing-architectures
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqrealtime-architectures-in-practice
-- learn.cmu-test.m05-streaming-and-mq.cmu-test.m05-streaming-and-mqsummary
+- learn.cmu-test.m05-streaming-and-mq.module-introduction
+- learn.cmu-test.m05-streaming-and-mq.message-queues
+- learn.cmu-test.m05-streaming-and-mq.message-queues-case-study
+- learn.cmu-test.m05-streaming-and-mq.stream-processing-systems
+- learn.cmu-test.m05-streaming-and-mq.streaming-architectures-a-case-study
+- learn.cmu-test.m05-streaming-and-mq.big-data-processing-architectures
+- learn.cmu-test.m05-streaming-and-mq.realtime-architectures-in-practice
+- learn.cmu-test.m05-streaming-and-mq.summary
 badge:
   uid: learn.cmu-test.m05-streaming-and-mq.badge

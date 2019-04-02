@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designmodule-introduction
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designit-equipment
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designinfrastructure-and-facilities
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designgeographic-location-criteria
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designcosts
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designpower-and-efficiency
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designredundancy
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designreliability-metrics
-- learn.cmu-test.m02-components-and-design.cmu-test.m02-components-and-designsummary
+- learn.cmu-test.m02-components-and-design.module-introduction
+- learn.cmu-test.m02-components-and-design.it-equipment
+- learn.cmu-test.m02-components-and-design.infrastructure-and-facilities
+- learn.cmu-test.m02-components-and-design.geographic-location-criteria
+- learn.cmu-test.m02-components-and-design.costs
+- learn.cmu-test.m02-components-and-design.power-and-efficiency
+- learn.cmu-test.m02-components-and-design.redundancy
+- learn.cmu-test.m02-components-and-design.reliability-metrics
+- learn.cmu-test.m02-components-and-design.summary
 badge:
   uid: learn.cmu-test.m02-components-and-design.badge

@@ -22,20 +22,20 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagemodule-introduction
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedata
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storageapplications-and-requirements
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagestorage-devices
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagestorage-abstractions
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagelocal-file-systems
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedistributed-file-systems
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedatabases
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedesigning-databases-schema-and-scalability
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedesigning-databases-consistency-and-the-cap-theorem
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagerelational-databases
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagenosql-databases
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagenewsql-databases
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storageobject-storage-as-a-cloud-service
-- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagesummary
+- learn.cmu-test.m01-cloud-storage.module-introduction
+- learn.cmu-test.m01-cloud-storage.data
+- learn.cmu-test.m01-cloud-storage.applications-and-requirements
+- learn.cmu-test.m01-cloud-storage.storage-devices
+- learn.cmu-test.m01-cloud-storage.storage-abstractions
+- learn.cmu-test.m01-cloud-storage.local-file-systems
+- learn.cmu-test.m01-cloud-storage.distributed-file-systems
+- learn.cmu-test.m01-cloud-storage.databases
+- learn.cmu-test.m01-cloud-storage.designing-databases-schema-and-scalability
+- learn.cmu-test.m01-cloud-storage.designing-databases-consistency-and-the-cap-theorem
+- learn.cmu-test.m01-cloud-storage.relational-databases
+- learn.cmu-test.m01-cloud-storage.nosql-databases
+- learn.cmu-test.m01-cloud-storage.newsql-databases
+- learn.cmu-test.m01-cloud-storage.object-storage-as-a-cloud-service
+- learn.cmu-test.m01-cloud-storage.summary
 badge:
   uid: learn.cmu-test.m01-cloud-storage.badge

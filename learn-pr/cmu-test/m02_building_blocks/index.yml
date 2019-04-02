@@ -22,13 +22,13 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blocksmodule-introduction
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blocksbusiness-case-for-cloud-computing-for-users
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockseconomics-of-cloud-computing-for-providers
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blocksbenefits-risks-and-challenges-of-cloud-computing
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blocksservice-level-agreements-and-objectives
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockscloud-security-threats
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockscloud-security-control-auditing
-- learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockssummary
+- learn.cmu-test.m02-building-blocks.module-introduction
+- learn.cmu-test.m02-building-blocks.business-case-for-cloud-computing-for-users
+- learn.cmu-test.m02-building-blocks.economics-of-cloud-computing-for-providers
+- learn.cmu-test.m02-building-blocks.benefits-risks-and-challenges-of-cloud-computing
+- learn.cmu-test.m02-building-blocks.service-level-agreements-and-objectives
+- learn.cmu-test.m02-building-blocks.cloud-security-threats
+- learn.cmu-test.m02-building-blocks.cloud-security-control-auditing
+- learn.cmu-test.m02-building-blocks.summary
 badge:
   uid: learn.cmu-test.m02-building-blocks.badge

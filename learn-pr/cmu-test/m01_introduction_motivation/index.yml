@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationmodule-introduction
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationbackground-and-motivation
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationvirtualization-and-cloud-computing
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationlimitations-of-generalpurpose-operating-systems
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationmanaging-system-complexity-abstractions
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationmanaging-system-complexity-interfaces
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationresource-sharing-basics
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationresource-sharing-in-multiprocessor-systems
-- learn.cmu-test.m01-introduction-motivation.cmu-test.m01-introduction-motivationsummary
+- learn.cmu-test.m01-introduction-motivation.module-introduction
+- learn.cmu-test.m01-introduction-motivation.background-and-motivation
+- learn.cmu-test.m01-introduction-motivation.virtualization-and-cloud-computing
+- learn.cmu-test.m01-introduction-motivation.limitations-of-generalpurpose-operating-systems
+- learn.cmu-test.m01-introduction-motivation.managing-system-complexity-abstractions
+- learn.cmu-test.m01-introduction-motivation.managing-system-complexity-interfaces
+- learn.cmu-test.m01-introduction-motivation.resource-sharing-basics
+- learn.cmu-test.m01-introduction-motivation.resource-sharing-in-multiprocessor-systems
+- learn.cmu-test.m01-introduction-motivation.summary
 badge:
   uid: learn.cmu-test.m01-introduction-motivation.badge

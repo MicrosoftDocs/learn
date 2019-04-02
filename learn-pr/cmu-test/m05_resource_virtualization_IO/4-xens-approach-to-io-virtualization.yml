@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m05-resource-virtualization-io.cmu-test.m05-resource-virtualization-ioxens-approach-to-io-virtualization
+uid: learn.cmu-test.m05-resource-virtualization-io.xens-approach-to-io-virtualization
 title: Xen's Approach to I/O Virtualization
 metadata:
   title: Xen's Approach to I/O Virtualization - Learn

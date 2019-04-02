@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m04-resource-virtualization-memory.cmu-test.m04-resource-virtualization-memoryreclamation-techniques-and-vmware-memory-ballooning
+uid: learn.cmu-test.m04-resource-virtualization-memory.reclamation-techniques-and-vmware-memory-ballooning
 title: Reclamation Techniques and VMware Memory Ballooning
 metadata:
   title: Reclamation Techniques and VMware Memory Ballooning - Learn
