@@ -21,14 +21,14 @@ quiz:
           isCorrect: true
         - content: ODBC
           isCorrect: false
-          explanation: Incorrect. ODBC is not an option
+          explanation: Incorrect. ODBC is not an option.
         - content: Using the REST API Layer
           isCorrect: false
-          explanation: Incorrect. THe Rest API Later is not available
+          explanation: Incorrect. The Rest API Layer is not available.
     - content: 'What is the recommended storage format to use with Spark?'
       choices:
         - content: Apache Parquet
-          explanation: Apache Parquet is a highly-optimized solution for data storage and is the recommended option for storage where possible
+          explanation: Apache Parquet is a highly-optimized solution for data storage and is the recommended option for storage where possible.
           isCorrect: true
         - content: JSON
           isCorrect: false

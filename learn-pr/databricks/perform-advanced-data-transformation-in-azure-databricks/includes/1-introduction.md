@@ -1,4 +1,4 @@
-The goal of transformation in Extract Transform Load (ETL) is to transform raw data to populate a data model. The most common models are relational models and snowflake (or star) schemas, though other models such as query-first modeling also exist.
+The goal of transformation in extract, transform, load (ETL) is to transform raw data to populate a data model. The most common models are relational models and snowflake (or star) schemas, though other models such as query-first modeling also exist.
 
 Transforming data can range in complexity from simply parsing relevant fields to handling null values without affecting downstream operations and applying complex conditional logic. Common transformations include:
 
@@ -19,6 +19,6 @@ In this module, we'll focus on some of these advanced techniques that are suppor
 
 In this module, you will:
 
-- Perform basic and complex custom transformations with user-defined functions
+- Perform basic and complex custom transformations by using user-defined functions
 - Clean data
 - Manage tables

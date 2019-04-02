@@ -1,8 +1,8 @@
-Advanced extract, load, and transform (ETL) processes include data transformation by using custom and advanced user-defined functions, managing complex tables, and loading data into multiple databases simultaneously.
+Advanced extract, transform, load (ETL) processes include data transformation by using custom and advanced user-defined functions (UDFs), managing complex tables, and loading data into multiple databases simultaneously.
 
 ## Custom and complex transformations with UDFs
 
-The highly optimized built-in functions in Spark provide a wide array of functionality, covering most data transformation use cases. However, there may be a scenario when you need to define logic that is specific to your use case or when you need to encapsulate that solution for reuse. User-defined functions (UDFs) are helpful in such cases. Use UDFs when there's no clear way to accomplish a task by using built-in functions.
+The highly optimized built-in functions in Spark provide a wide array of functionality, covering most data transformation use cases. However, there may be a scenario when you need to define logic that is specific to your use case or when you need to encapsulate that solution for reuse. UDFs are helpful in such cases. Use UDFs when there's no clear way to accomplish a task by using built-in functions.
 
 UDFs provide custom, generalizable code that you can apply to ETL workloads when the built-in functions in Spark aren't sufficient. UDFs can't return multiple columns. However, they take multiple column inputs, and they return complex named types that are easily accessible. This approach is especially helpful in ETL workloads that need to clean complex and challenging data structures.
 
@@ -32,6 +32,6 @@ When loading data back to the target database, you might want to optimize your d
 
 A managed table is a table that manages both the actual data and the metadata. In this case, a `DROP TABLE` command removes both the metadata for the table and the data itself.
 
-Unmanaged tables manage the metadata from a table, while the actual data is managed separately, often backed by a blob store like the Azure Blob or S3. Dropping an unmanaged table drops only the metadata associated with the table while the data remains in place.
+Unmanaged tables manage the metadata from a table, while the actual data is managed separately and is often backed by a blob store such as Azure Blob storage or Amazon S3. Dropping an unmanaged table drops only the metadata that is associated with the table while the data remains in place.
 
 ![Structure of managed and unmanaged tables in Databricks](../media/managed-and-unmanaged-tables.png)
