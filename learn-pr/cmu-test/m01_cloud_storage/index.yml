@@ -22,20 +22,20 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m01-cloud-storagemodule-introduction
-- cmu-test.m01-cloud-storagedata
-- cmu-test.m01-cloud-storageapplications-and-requirements
-- cmu-test.m01-cloud-storagestorage-devices
-- cmu-test.m01-cloud-storagestorage-abstractions
-- cmu-test.m01-cloud-storagelocal-file-systems
-- cmu-test.m01-cloud-storagedistributed-file-systems
-- cmu-test.m01-cloud-storagedatabases
-- cmu-test.m01-cloud-storagedesigning-databases-schema-and-scalability
-- cmu-test.m01-cloud-storagedesigning-databases-consistency-and-the-cap-theorem
-- cmu-test.m01-cloud-storagerelational-databases
-- cmu-test.m01-cloud-storagenosql-databases
-- cmu-test.m01-cloud-storagenewsql-databases
-- cmu-test.m01-cloud-storageobject-storage-as-a-cloud-service
-- cmu-test.m01-cloud-storagesummary
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagemodule-introduction
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedata
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storageapplications-and-requirements
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagestorage-devices
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagestorage-abstractions
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagelocal-file-systems
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedistributed-file-systems
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedatabases
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedesigning-databases-schema-and-scalability
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagedesigning-databases-consistency-and-the-cap-theorem
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagerelational-databases
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagenosql-databases
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagenewsql-databases
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storageobject-storage-as-a-cloud-service
+- learn.cmu-test.m01-cloud-storage.cmu-test.m01-cloud-storagesummary
 badge:
   uid: learn.cmu-test.m01-cloud-storage.badge

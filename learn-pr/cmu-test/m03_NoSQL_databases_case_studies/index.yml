@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m03-nosql-databases-case-studiesmodule-introduction
-- cmu-test.m03-nosql-databases-case-studiesapache-hbase
-- cmu-test.m03-nosql-databases-case-studiesmongodb
-- cmu-test.m03-nosql-databases-case-studiesapache-cassandra
-- cmu-test.m03-nosql-databases-case-studiesamazons-dynamodb
-- cmu-test.m03-nosql-databases-case-studiessummary
+- learn.cmu-test.m03-nosql-databases-case-studies.cmu-test.m03-nosql-databases-case-studiesmodule-introduction
+- learn.cmu-test.m03-nosql-databases-case-studies.cmu-test.m03-nosql-databases-case-studiesapache-hbase
+- learn.cmu-test.m03-nosql-databases-case-studies.cmu-test.m03-nosql-databases-case-studiesmongodb
+- learn.cmu-test.m03-nosql-databases-case-studies.cmu-test.m03-nosql-databases-case-studiesapache-cassandra
+- learn.cmu-test.m03-nosql-databases-case-studies.cmu-test.m03-nosql-databases-case-studiesamazons-dynamodb
+- learn.cmu-test.m03-nosql-databases-case-studies.cmu-test.m03-nosql-databases-case-studiessummary
 badge:
   uid: learn.cmu-test.m03-nosql-databases-case-studies.badge

@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m01-historical-perspectivemodule-introduction
-- cmu-test.m01-historical-perspectiveintroduction-to-data-centers
-- cmu-test.m01-historical-perspectivedefinition-and-origins
-- cmu-test.m01-historical-perspectivesize-density-and-efficiency-growth
-- cmu-test.m01-historical-perspectivechallenges-in-cloud-data-centers
-- cmu-test.m01-historical-perspectivesummary
+- learn.cmu-test.m01-historical-perspective.cmu-test.m01-historical-perspectivemodule-introduction
+- learn.cmu-test.m01-historical-perspective.cmu-test.m01-historical-perspectiveintroduction-to-data-centers
+- learn.cmu-test.m01-historical-perspective.cmu-test.m01-historical-perspectivedefinition-and-origins
+- learn.cmu-test.m01-historical-perspective.cmu-test.m01-historical-perspectivesize-density-and-efficiency-growth
+- learn.cmu-test.m01-historical-perspective.cmu-test.m01-historical-perspectivechallenges-in-cloud-data-centers
+- learn.cmu-test.m01-historical-perspective.cmu-test.m01-historical-perspectivesummary
 badge:
   uid: learn.cmu-test.m01-historical-perspective.badge

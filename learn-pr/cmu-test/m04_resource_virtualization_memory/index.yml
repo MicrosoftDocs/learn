@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m04-resource-virtualization-memorymodule-introduction
-- cmu-test.m04-resource-virtualization-memoryonelevel-page-mapping
-- cmu-test.m04-resource-virtualization-memorytwolevel-page-mapping
-- cmu-test.m04-resource-virtualization-memorymemory-overcommitment
-- cmu-test.m04-resource-virtualization-memoryreclamation-techniques-and-vmware-memory-ballooning
-- cmu-test.m04-resource-virtualization-memorysummary
+- learn.cmu-test.m04-resource-virtualization-memory.cmu-test.m04-resource-virtualization-memorymodule-introduction
+- learn.cmu-test.m04-resource-virtualization-memory.cmu-test.m04-resource-virtualization-memoryonelevel-page-mapping
+- learn.cmu-test.m04-resource-virtualization-memory.cmu-test.m04-resource-virtualization-memorytwolevel-page-mapping
+- learn.cmu-test.m04-resource-virtualization-memory.cmu-test.m04-resource-virtualization-memorymemory-overcommitment
+- learn.cmu-test.m04-resource-virtualization-memory.cmu-test.m04-resource-virtualization-memoryreclamation-techniques-and-vmware-memory-ballooning
+- learn.cmu-test.m04-resource-virtualization-memory.cmu-test.m04-resource-virtualization-memorysummary
 badge:
   uid: learn.cmu-test.m04-resource-virtualization-memory.badge

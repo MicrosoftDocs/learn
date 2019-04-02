@@ -22,13 +22,13 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m04-graphlabmodule-introduction
-- cmu-test.m04-graphlabdata-structure-and-graph-flow
-- cmu-test.m04-graphlabthe-architectural-model
-- cmu-test.m04-graphlabthe-programming-model
-- cmu-test.m04-graphlabthe-computation-model
-- cmu-test.m04-graphlabfault-tolerance
-- cmu-test.m04-graphlaban-example-application-in-graphlab
-- cmu-test.m04-graphlabsummary
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlabmodule-introduction
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlabdata-structure-and-graph-flow
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlabthe-architectural-model
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlabthe-programming-model
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlabthe-computation-model
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlabfault-tolerance
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlaban-example-application-in-graphlab
+- learn.cmu-test.m04-graphlab.cmu-test.m04-graphlabsummary
 badge:
   uid: learn.cmu-test.m04-graphlab.badge

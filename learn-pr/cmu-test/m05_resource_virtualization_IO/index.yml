@@ -22,10 +22,10 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m05-resource-virtualization-iomodule-introduction
-- cmu-test.m05-resource-virtualization-ioio-basics
-- cmu-test.m05-resource-virtualization-iovirtualizing-io-devices
-- cmu-test.m05-resource-virtualization-ioxens-approach-to-io-virtualization
-- cmu-test.m05-resource-virtualization-iosummary
+- learn.cmu-test.m05-resource-virtualization-io.cmu-test.m05-resource-virtualization-iomodule-introduction
+- learn.cmu-test.m05-resource-virtualization-io.cmu-test.m05-resource-virtualization-ioio-basics
+- learn.cmu-test.m05-resource-virtualization-io.cmu-test.m05-resource-virtualization-iovirtualizing-io-devices
+- learn.cmu-test.m05-resource-virtualization-io.cmu-test.m05-resource-virtualization-ioxens-approach-to-io-virtualization
+- learn.cmu-test.m05-resource-virtualization-io.cmu-test.m05-resource-virtualization-iosummary
 badge:
   uid: learn.cmu-test.m05-resource-virtualization-io.badge

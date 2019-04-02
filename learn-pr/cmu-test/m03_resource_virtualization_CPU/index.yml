@@ -22,11 +22,11 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m03-resource-virtualization-cpumodule-introduction
-- cmu-test.m03-resource-virtualization-cputhe-conditions-for-virtualizing-isas
-- cmu-test.m03-resource-virtualization-cpufull-virtualization-and-paravirtualization
-- cmu-test.m03-resource-virtualization-cpuemulation
-- cmu-test.m03-resource-virtualization-cpuvirtual-cpu
-- cmu-test.m03-resource-virtualization-cpusummary
+- learn.cmu-test.m03-resource-virtualization-cpu.cmu-test.m03-resource-virtualization-cpumodule-introduction
+- learn.cmu-test.m03-resource-virtualization-cpu.cmu-test.m03-resource-virtualization-cputhe-conditions-for-virtualizing-isas
+- learn.cmu-test.m03-resource-virtualization-cpu.cmu-test.m03-resource-virtualization-cpufull-virtualization-and-paravirtualization
+- learn.cmu-test.m03-resource-virtualization-cpu.cmu-test.m03-resource-virtualization-cpuemulation
+- learn.cmu-test.m03-resource-virtualization-cpu.cmu-test.m03-resource-virtualization-cpuvirtual-cpu
+- learn.cmu-test.m03-resource-virtualization-cpu.cmu-test.m03-resource-virtualization-cpusummary
 badge:
   uid: learn.cmu-test.m03-resource-virtualization-cpu.badge

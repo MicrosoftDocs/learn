@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m04-programming-the-cloudmodule-introduction
-- cmu-test.m04-programming-the-cloudprogramming-the-cloud
-- cmu-test.m04-programming-the-clouddeploying-applications-on-the-cloud
-- cmu-test.m04-programming-the-cloudbuild-faulttolerant-cloud-services
-- cmu-test.m04-programming-the-cloudload-balancing
-- cmu-test.m04-programming-the-cloudscaling-resources
-- cmu-test.m04-programming-the-clouddealing-with-tail-latency
-- cmu-test.m04-programming-the-cloudeconomics-for-cloud-applications
-- cmu-test.m04-programming-the-cloudsummary
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-cloudmodule-introduction
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-cloudprogramming-the-cloud
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-clouddeploying-applications-on-the-cloud
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-cloudbuild-faulttolerant-cloud-services
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-cloudload-balancing
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-cloudscaling-resources
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-clouddealing-with-tail-latency
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-cloudeconomics-for-cloud-applications
+- learn.cmu-test.m04-programming-the-cloud.cmu-test.m04-programming-the-cloudsummary
 badge:
   uid: learn.cmu-test.m04-programming-the-cloud.badge

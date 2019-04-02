@@ -22,8 +22,8 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m04-cloud-object-storage-case-studiesmodule-introduction
-- cmu-test.m04-cloud-object-storage-case-studiesobject-storage-amazon-s3-openstack-swift-and-ceph-object-gateway
-- cmu-test.m04-cloud-object-storage-case-studiessummary
+- learn.cmu-test.m04-cloud-object-storage-case-studies.cmu-test.m04-cloud-object-storage-case-studiesmodule-introduction
+- learn.cmu-test.m04-cloud-object-storage-case-studies.cmu-test.m04-cloud-object-storage-case-studiesobject-storage-amazon-s3-openstack-swift-and-ceph-object-gateway
+- learn.cmu-test.m04-cloud-object-storage-case-studies.cmu-test.m04-cloud-object-storage-case-studiessummary
 badge:
   uid: learn.cmu-test.m04-cloud-object-storage-case-studies.badge

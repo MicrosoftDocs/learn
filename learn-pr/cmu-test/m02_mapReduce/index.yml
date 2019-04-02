@@ -22,14 +22,14 @@ roles:
 products:
 - azure
 units:
-- cmu-test.m02-mapreducemodule-introduction
-- cmu-test.m02-mapreducethe-programming-model
-- cmu-test.m02-mapreducethe-data-structure-and-flow
-- cmu-test.m02-mapreduceexamples-wordcount-sort-and-sobel
-- cmu-test.m02-mapreducethe-computation-and-architectural-models
-- cmu-test.m02-mapreducejob-and-task-scheduling
-- cmu-test.m02-mapreducefault-tolerance
-- cmu-test.m02-mapreduceyarn-the-new-hadoop-mapreduce
-- cmu-test.m02-mapreducesummary
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducemodule-introduction
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducethe-programming-model
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducethe-data-structure-and-flow
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreduceexamples-wordcount-sort-and-sobel
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducethe-computation-and-architectural-models
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducejob-and-task-scheduling
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducefault-tolerance
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreduceyarn-the-new-hadoop-mapreduce
+- learn.cmu-test.m02-mapreduce.cmu-test.m02-mapreducesummary
 badge:
   uid: learn.cmu-test.m02-mapreduce.badge
