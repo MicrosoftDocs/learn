@@ -32,12 +32,12 @@ units:
 - cmu-test.m01-introdata-and-graph-parallelism
 - cmu-test.m01-introsymmetrical-and-asymmetrical-architectural-models
 - cmu-test.m01-intromain-challenges-in-building-cloud-programs
-- cmu-test.m01-introchallenges-in-building-cloud-programs--scalability
-- cmu-test.m01-introchallenges-in-building-cloud-programs--communication
-- cmu-test.m01-introchallenges-in-building-cloud-programs--heterogeneity
-- cmu-test.m01-introchallenges-in-building-cloud-programs--synchronization
-- cmu-test.m01-introchallenges-in-building-cloud-programs--fault-tolerance
-- cmu-test.m01-introchallenges-in-building-cloud-programs--scheduling
+- cmu-test.m01-introchallenges-in-building-cloud-programs-scalability
+- cmu-test.m01-introchallenges-in-building-cloud-programs-communication
+- cmu-test.m01-introchallenges-in-building-cloud-programs-heterogeneity
+- cmu-test.m01-introchallenges-in-building-cloud-programs-synchronization
+- cmu-test.m01-introchallenges-in-building-cloud-programs-fault-tolerance
+- cmu-test.m01-introchallenges-in-building-cloud-programs-scheduling
 - cmu-test.m01-introsummary
 badge:
   uid: learn.cmu-test.m01-intro.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockscloud-security--threats
+uid: learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockscloud-security-threats
 title: Cloud Security - Threats
 metadata:
   title: Cloud Security - Threats - Learn
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-cloud-security--threats.md)]
+  [!include[](includes/6-cloud-security-threats.md)]

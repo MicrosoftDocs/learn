@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-test.m04-cloud-object-storage-case-studies.cmu-test.m04-cloud-object-storage-case-studiesobject-storage-amazon-s3-openstack-swift-and-ceph-object-gateway
-title: Object Storage: Amazon S3, OpenStack Swift and Ceph Object Gateway
+title: Object Storage- Amazon S3, OpenStack Swift and Ceph Object Gateway
 metadata:
-  title: Object Storage: Amazon S3, OpenStack Swift and Ceph Object Gateway - Learn
-  description: Object Storage: Amazon S3, OpenStack Swift and Ceph Object Gateway - Learn
+  title: Object Storage- Amazon S3, OpenStack Swift and Ceph Object Gateway - Learn
+  description: Object Storage- Amazon S3, OpenStack Swift and Ceph Object Gateway - Learn
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

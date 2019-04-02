@@ -26,8 +26,8 @@ units:
 - cmu-test.m01-introduction-motivationbackground-and-motivation
 - cmu-test.m01-introduction-motivationvirtualization-and-cloud-computing
 - cmu-test.m01-introduction-motivationlimitations-of-generalpurpose-operating-systems
-- cmu-test.m01-introduction-motivationmanaging-system-complexity--abstractions
-- cmu-test.m01-introduction-motivationmanaging-system-complexity--interfaces
+- cmu-test.m01-introduction-motivationmanaging-system-complexity-abstractions
+- cmu-test.m01-introduction-motivationmanaging-system-complexity-interfaces
 - cmu-test.m01-introduction-motivationresource-sharing-basics
 - cmu-test.m01-introduction-motivationresource-sharing-in-multiprocessor-systems
 - cmu-test.m01-introduction-motivationsummary

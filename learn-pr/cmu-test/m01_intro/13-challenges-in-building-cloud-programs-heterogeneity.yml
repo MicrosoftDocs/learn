@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m01-intro.cmu-test.m01-introchallenges-in-building-cloud-programs--heterogeneity
+uid: learn.cmu-test.m01-intro.cmu-test.m01-introchallenges-in-building-cloud-programs-heterogeneity
 title: Challenges in Building Cloud Programs - Heterogeneity
 metadata:
   title: Challenges in Building Cloud Programs - Heterogeneity - Learn
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/13-challenges-in-building-cloud-programs--heterogeneity.md)]
+  [!include[](includes/13-challenges-in-building-cloud-programs-heterogeneity.md)]

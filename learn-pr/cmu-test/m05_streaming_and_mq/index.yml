@@ -26,7 +26,7 @@ units:
 - cmu-test.m05-streaming-and-mqmessage-queues
 - cmu-test.m05-streaming-and-mqmessage-queues-case-study
 - cmu-test.m05-streaming-and-mqstream-processing-systems
-- cmu-test.m05-streaming-and-mqstreaming-architectures--a-case-study
+- cmu-test.m05-streaming-and-mqstreaming-architectures-a-case-study
 - cmu-test.m05-streaming-and-mqbig-data-processing-architectures
 - cmu-test.m05-streaming-and-mqrealtime-architectures-in-practice
 - cmu-test.m05-streaming-and-mqsummary

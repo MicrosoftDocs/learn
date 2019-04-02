@@ -27,7 +27,7 @@ units:
 - cmu-test.m03-software-stackresource-provisioning
 - cmu-test.m03-software-stackmetering-and-monitoring-cloud-services
 - cmu-test.m03-software-stackcloud-orchestration-and-automation
-- cmu-test.m03-software-stackcase-study--openstack
+- cmu-test.m03-software-stackcase-study-openstack
 - cmu-test.m03-software-stacksummary
 badge:
   uid: learn.cmu-test.m03-software-stack.badge

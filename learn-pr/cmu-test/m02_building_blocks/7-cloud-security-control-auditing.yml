@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockscloud-security--control--auditing
+uid: learn.cmu-test.m02-building-blocks.cmu-test.m02-building-blockscloud-security-control-auditing
 title: Cloud Security - Control & Auditing
 metadata:
   title: Cloud Security - Control & Auditing - Learn
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-cloud-security--control--auditing.md)]
+  [!include[](includes/7-cloud-security-control-auditing.md)]

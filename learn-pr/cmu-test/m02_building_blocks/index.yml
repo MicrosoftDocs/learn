@@ -27,8 +27,8 @@ units:
 - cmu-test.m02-building-blockseconomics-of-cloud-computing-for-providers
 - cmu-test.m02-building-blocksbenefits-risks-and-challenges-of-cloud-computing
 - cmu-test.m02-building-blocksservice-level-agreements-and-objectives
-- cmu-test.m02-building-blockscloud-security--threats
-- cmu-test.m02-building-blockscloud-security--control--auditing
+- cmu-test.m02-building-blockscloud-security-threats
+- cmu-test.m02-building-blockscloud-security-control-auditing
 - cmu-test.m02-building-blockssummary
 badge:
   uid: learn.cmu-test.m02-building-blocks.badge

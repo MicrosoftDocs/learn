@@ -30,8 +30,8 @@ units:
 - cmu-test.m01-cloud-storagelocal-file-systems
 - cmu-test.m01-cloud-storagedistributed-file-systems
 - cmu-test.m01-cloud-storagedatabases
-- cmu-test.m01-cloud-storagedesigning-databases--schema-and-scalability
-- cmu-test.m01-cloud-storagedesigning-databases--consistency-and-the-cap-theorem
+- cmu-test.m01-cloud-storagedesigning-databases-schema-and-scalability
+- cmu-test.m01-cloud-storagedesigning-databases-consistency-and-the-cap-theorem
 - cmu-test.m01-cloud-storagerelational-databases
 - cmu-test.m01-cloud-storagenosql-databases
 - cmu-test.m01-cloud-storagenewsql-databases

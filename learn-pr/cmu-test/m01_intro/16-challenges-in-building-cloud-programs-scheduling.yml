@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-test.m01-intro.cmu-test.m01-introchallenges-in-building-cloud-programs--scheduling
+uid: learn.cmu-test.m01-intro.cmu-test.m01-introchallenges-in-building-cloud-programs-scheduling
 title: Challenges in Building Cloud Programs - Scheduling
 metadata:
   title: Challenges in Building Cloud Programs - Scheduling - Learn
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/16-challenges-in-building-cloud-programs--scheduling.md)]
+  [!include[](includes/16-challenges-in-building-cloud-programs-scheduling.md)]
