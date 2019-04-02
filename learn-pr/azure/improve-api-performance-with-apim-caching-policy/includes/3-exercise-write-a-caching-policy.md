@@ -163,5 +163,7 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 1. Complete the Wizard and press create
 
 
-![Select your API](../media/chooseapi.png)]
+![Select your API](../media/createfomopenapi.png)]
+
+
 
