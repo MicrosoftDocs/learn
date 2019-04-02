@@ -68,7 +68,7 @@ Figure 5.42 illustrates an example of the WebGraph. The vertices denote web page
 
 ![Figure 5.43: Visualization of a Facebook social graph for a limited number of users. Source](../media/facebook-network.png)
 
-_Figure 5.43: Visualization of a Facebook social graph for a limited number of users. Source_
+_Figure 5.43: Visualization of a Facebook social graph for a limited number of users._ ([Source](https://griffsgraphs.wordpress.com/2012/07/02/a-facebook-network/))
 
 
 

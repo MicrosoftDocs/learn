@@ -4,7 +4,7 @@
 Over the past few decades, data centers have grown both in size (in terms of the number of racks and cabinets) and in density. Figure 2.3 is a view of a data center that is owned by Google.
 ![Figure 2.3: A view of one of Google's data centers (Source).](../media/googles_data_centers.png)
 
-_Figure 2.3: A view of one of Google's data centers (Source)._
+_Figure 2.3: A view of one of Google's data centers_ ([Source](http://www.google.com/about/datacenters/))
 
 
 Greater density has become possible because of advances in CPUs, integrated circuits (ICs), and printed circuit board (PCB) design. This leads to faster and more powerful computers within the same area. 
@@ -33,9 +33,8 @@ _Servers:_ Entire servers attempt to reduce power consumption by going into idle
 
 |Did You Know?|
 |--|
-|![(C) CMU Cloud Computing Course](../media/energy_pie_chart.png)
-
-_(C) CMU Cloud Computing Course_<br><br>A study by Google quantified the power consumption of each hardware subsystem in their servers.|
+|<br>![(C) CMU Cloud Computing Course](../media/energy_pie_chart.png)
+<br>A study by Google quantified the power consumption of each hardware subsystem in their servers.|
 
 
 - 

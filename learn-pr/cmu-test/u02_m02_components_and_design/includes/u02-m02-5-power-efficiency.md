@@ -35,7 +35,7 @@ If a data center's PUE is 3.0, then the data center facilities (e.g., power dist
 In 2007, the Lawrence Berkeley National Labs (LBNL) ran an energy study for 25 data centers (see Figure 2.19). The best PUE, 1.14, resulted in about 87% of the site energy reaching the IT equipment, while in the worst case (PUE 3.0), only 33% makes it to the IT equipment.
 ![Figure 2.19: PUE of 25 data centers studied by LBNL (Lawrence Berkeley National Labs, 2007).](../media/PUE_25_data_centers.png)
 
-_Figure 2.19: PUE of 25 data centers studied by LBNL (Lawrence Berkeley National Labs, 2007)._
+_Figure 2.19: PUE of 25 data centers studied by LBNL_ ([Lawrence Berkeley National Labs](http://hightech.lbl.gov/documents/DATA_CENTERS/GSAgovEnergyCard_03_09.pdf))
 
 
 The PUE allows companies to identify areas for improvement, address these areas, and monitor the progress in PUE over time. Google publishes quarterly PUEs for their actual data centers, as shown in Figure 2.20. Because Google's data centers are mostly in the northern hemisphere, the average PUE typically rises in the summer because they require increased use of the cooling equipment.

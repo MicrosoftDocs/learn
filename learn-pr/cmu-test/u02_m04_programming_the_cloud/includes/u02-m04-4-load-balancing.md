@@ -17,7 +17,8 @@ Modern load balancing often refers to the use of a dedicated instance (or a pair
 <!-- <image alt="(C) CMU Cloud Computing Course" src=""/> -->
 Though all types of network load balancers will simply forward the user’s information along with any context to the backend servers, when it comes to serving the response back to the client they may employ one of two basic strategies: 
 1. Proxying - In this approach the load balancer receives the response from the backend and relays it back to the client. The load balancer behaves as a standard web proxy and is involved in both halves of a network transaction, namely forwarding the request to the client and sending back the response. 
-1. TCP Handoff - In this approach the TCP connection with the client is handed off to the backend server and therefore the server sends the response directly to the client, without going through the load balancer. ![Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server.](../media/tcp_handoff.png)
+1. TCP Handoff - In this approach the TCP connection with the client is handed off to the backend server and therefore the server sends the response directly to the client, without going through the load balancer. 
+![Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server.](../media/tcp_handoff.png)
 
 _Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server._
 

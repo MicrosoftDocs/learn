@@ -116,14 +116,16 @@ We use snapshots to detail the execution process of this job on YARN:
 1. The client starts to run the WordCount job.
 1. The RM assigns a `jobID` for this WordCount job.
 1. Information of this WordCount job is saved or copied to HDFS.
-1. The WordCount job is submitted to the RM (Figure 5.27).![Figure 5.27: Job submission log](../media/YARN_log2.png)
+1. The WordCount job is submitted to the RM (Figure 5.27).
+![Figure 5.27: Job submission log](../media/YARN_log2.png)
 
 _Figure 5.27: Job submission log_
 
 
 1. The RM communicates with the NM to allocate a container for the AM.
 1. The NM authenticates the container lease from the RM.
-1. The RM succeeds in launching the AM for the WordCount job (Figure 5.28). ![Figure 5.28 Job allocation log](../media/YARN_log3.png)
+1. The RM succeeds in launching the AM for the WordCount job (Figure 5.28). 
+![Figure 5.28 Job allocation log](../media/YARN_log3.png)
 
 _Figure 5.28 Job allocation log_
 
@@ -132,7 +134,8 @@ _Figure 5.28 Job allocation log_
 1. The RM receives requests from the AM and allocates resources in the form of containers.
 1. The AM sends the lease to NMs and a bunch of containers get running.
 1. The AM starts map task attempts, ready to run in containers. In our case, the AM, in the first place, starts 12 map task attempts because there aren’t enough resources for other container on our 4-node cluster.
-1. The AM then assigns containers to map task attempts based on its knowledge of data locality (Figure 5.29). ![Figure 5.29: Job assignment log](../media/YARN_log4.png)
+1. The AM then assigns containers to map task attempts based on its knowledge of data locality (Figure 5.29). 
+![Figure 5.29: Job assignment log](../media/YARN_log4.png)
 
 _Figure 5.29: Job assignment log_
 
@@ -143,7 +146,8 @@ _Figure 5.29: Job assignment log_
 1. The AM manages all the map and reduce tasks, it waits for their completion. Once the last reduce task finishes, the whole job will be marked FINISHED.
 1. The AM communicates with the NMs to clean up all remaining containers.
 1. The AM will notify the RM that the job is completed.
-1. The RM cleans up the AM. The whole WordCount job ends (Figure 5.30). ![Figure 5.30: Job cleanup log](../media/YARN_log5.png)
+1. The RM cleans up the AM. The whole WordCount job ends (Figure 5.30). 
+![Figure 5.30: Job cleanup log](../media/YARN_log5.png)
 
 _Figure 5.30: Job cleanup log_
 

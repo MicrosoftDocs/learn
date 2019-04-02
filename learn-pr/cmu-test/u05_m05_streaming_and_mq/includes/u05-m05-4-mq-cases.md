@@ -16,12 +16,14 @@ _Figure 5.54: A stream processing system must process data in-stream, with a sep
 
 Stonebraker et. al. described 8 basic rules for stream processing systems.
 
-1. Keep the data moving: A real-time stream-processing framework must be able to process messages “in-stream”, without having to store them on disk, which adds unacceptable latency on the critical path. Additionally, these systems should be active (event-driven) and not passive (whereby applications need to poll the results to detect conditions of interest). ![Figure 5.55: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/streaming1.png)
+1. Keep the data moving: A real-time stream-processing framework must be able to process messages “in-stream”, without having to store them on disk, which adds unacceptable latency on the critical path. Additionally, these systems should be active (event-driven) and not passive (whereby applications need to poll the results to detect conditions of interest). 
+![Figure 5.55: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/streaming1.png)
 
 _Figure 5.55: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
 
 
-1. Streams should support querying using SQL: SQL has emerged as a widely used and familiar standard for querying data. However, traditional SQL operates on a fixed amount of data, whereby reaching the end of the table tells the query it is completed. In streaming scenarios, the data increases continuously. Stonebraker et. al. perceived the need for a StreamSQL language, with variable-length time-based sliding windows defining the scope of a query. Windows could be defined using time, number of messages, or any arbitrary parameters. Additional operators may be needed to merge messages from multiple streams. ![Figure 5.56: StreamSQL should process subsets of the data, and allow relations to be expressed across windows](../media/streaming2.png)
+1. Streams should support querying using SQL: SQL has emerged as a widely used and familiar standard for querying data. However, traditional SQL operates on a fixed amount of data, whereby reaching the end of the table tells the query it is completed. In streaming scenarios, the data increases continuously. Stonebraker et. al. perceived the need for a StreamSQL language, with variable-length time-based sliding windows defining the scope of a query. Windows could be defined using time, number of messages, or any arbitrary parameters. Additional operators may be needed to merge messages from multiple streams. 
+![Figure 5.56: StreamSQL should process subsets of the data, and allow relations to be expressed across windows](../media/streaming2.png)
 
 _Figure 5.56: StreamSQL should process subsets of the data, and allow relations to be expressed across windows_
 

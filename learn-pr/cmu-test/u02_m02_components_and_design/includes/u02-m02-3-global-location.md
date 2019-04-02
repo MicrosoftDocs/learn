@@ -19,7 +19,7 @@ There are also basic logistics that are desirable to have available to support t
 Also mentioned in the previous module was economization, or mixing of colder outside air with the hot air expelled from the IT equipment. In Figure 2.16, you will notice different colored bands. In regions of yellow or orange, you could use outside cooling during the colder seasons, and in regions of green and blue, you could likely use outside cooling year round. Regions marked as red could still use outside cooling but for a few months of the year. For example, because of its cold average climate and renewable energy sources, Iceland has a growing data center industry.
 ![Figure 2.16: Global average temperature map (Wikipedia, 2014).](../media/temperature_map.png)
 
-_Figure 2.16: Global average temperature map (Wikipedia, 2014)._
+_Figure 2.16: Global average temperature map_ ([Wikipedia](http://commons.wikimedia.org/wiki/File:Annual_Average_Temperature_Map.jpg))
 
 
 As you will see in the power usage effectiveness (PUE) section later in this module, the energy utilization will be higher during hot months and lower during cold months. This is due to the efficiency gains from "free cooling" (either using air economizers or naturally cold water.)
@@ -70,7 +70,7 @@ As broadband adoption among consumers continues to grow, the effectiveness of cl
 The Internet relies on fiber optics to send and receive data over long distances. Figure 2.18 shows the relationship between multiple tiers of the Internet, in which tier 1 providers own the actual fiber cables, the network equipment, and the buildings they are housed in; tier 2 providers own large networks as well and peer with (have connections to) other tier 2 providers but also have to lease some connections from tier 1 providers in order to reach the whole Internet; and tier 3 providers are only resellers, which provide connections to end users. A single corporate entity, such as Verizon in the United States, may provide services at all tiers.
 ![Figure 2.18: Internet connectivity (Wikipedia, 2014).](../media/Internet_connectivity.png)
 
-_Figure 2.18: Internet connectivity (Wikipedia, 2014)._
+_Figure 2.18: Internet connectivity_ ([Wikipedia](http://en.wikipedia.org/wiki/File:Internet_Connectivity_Distribution_%26_Core.svg))
 
 
 In order to support a large amount of users, a cloud provider should choose a data center location that is in a city/region that has a tier 2 or tier 1 provider. This will also decrease the latency to global users due to fewer hops (each router is a hop) between the client and the server. A data center's requirement for uplink to the Internet ranges from a few megabits per second to several hundred gigabits per second, and that much bandwidth simply is not yet available everywhere.

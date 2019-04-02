@@ -3,13 +3,13 @@
 When running an application on the cloud, different aspects of security must be controlled by different entities. For instance, Figure 1.12 (from AWS) shows the break up of security responsibilities between the provider and the customer. 
 ![Figure 1.12 Security Responsibilites in AWS. Source](../media/security_3.jpg)
 
-_Figure 1.12 Security Responsibilites in AWS. Source_
+_Figure 1.12 Security Responsibilites in AWS._ ([Source](http://media.amazonwebservices.com/AWS_Auditing_Security_Checklist.pdf))
 
 
 Many classes of applications require different infrastructure, process and security certifications. Most cloud service providers will comply with a majority of the popular certifications and audit requirements followed in the US and Europe. The following table from Putcher et. al. compares the most popular providers (Figure 1.13): 
 ![Figure 1.13 Security Responsibilites in AWS. Source](../media/security_4.jpg)
 
-_Figure 1.13 Security Responsibilites in AWS. Source_
+_Figure 1.13 Security Responsibilites in AWS._ ([Source](http://www.cs.ucsb.edu/~koc/ns/projects/12Reports/PucherDimopoulos.pdf))
 
 
 Understanding the details of these certifications is not a goal for this course, but Mather provides a good reference for those interested in digging deeper into these aspects. 

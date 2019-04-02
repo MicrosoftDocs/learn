@@ -145,8 +145,6 @@ Computation is then represented as a stateless program that is executed on each 
 _Gather Phase_: In the gather phase, each vertex (henceforth refferred to as the central vertex) gathers information from adjacent vertices and edges. GraphLab can then apply a user-defined aggregation or sum operation: 
 ![(C) CMU Cloud Computing Course](../media/gather.png)
 
-_(C) CMU Cloud Computing Course_
-
 
 In the equation above 
 <!-- TODO fix
@@ -193,13 +191,9 @@ _Apply Phase_: In the apply phase, the resulting value
  is used to update the value of the central vertex:
 ![(C) CMU Cloud Computing Course](../media/apply.png)
 
-_(C) CMU Cloud Computing Course_
-
 
 _Scatter Phase_: Finally in the scatter phase, the new value of the central vertex is sent to all adjacent vertices: 
 ![(C) CMU Cloud Computing Course](../media/scatter.png)
-
-_(C) CMU Cloud Computing Course_
 
 
 With the end of the scatter operation, one iteration of the computation for the vertex is complete. 
