@@ -90,7 +90,7 @@ We'll use `git` to clone a Web API project. This Web API includes a frame price 
 
     ```bash
     git clone **GitHub Repo URL**
-    cd PictureFramingAPI
+    cd BoardGamingapi
     ```
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
@@ -129,8 +129,8 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
 1. On the **Overview** response, select **Browse**. The browser displays the home response for the API, which is blank.
-1. In the **Address** bar, append the URL with **/api/values/6/7/uk**. The browser displays a result.
-1. In the **Address** bar, replace **/api/values/6/7** with **/swagger**. The browser displays the Swagger UI.
+1. In the **Address** bar, append the URL with **/api/values/6/7/uk/chess**. The browser displays a result.
+1. In the **Address** bar, replace **/api/values/6/7/uk/chess** with **/swagger**. The browser displays the Swagger UI.
 
 ## Save the OpenAPI definition
 
@@ -140,7 +140,7 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 
 ## Create a new Azure APIM instance
 
-1. This will deploy a lot faster if the cosumption pricing tier is chosen for deployment.
+1. This will deploy a lot faster if the consumption pricing tier is chosen for deployment.
 
 <!--The preview seems to have caching disabled so we are using the standard tier-->
 
