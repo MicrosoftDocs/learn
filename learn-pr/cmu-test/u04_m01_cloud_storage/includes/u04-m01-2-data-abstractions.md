@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_2_data_abstractions.xml -->
+
 Applications can deal with data in many ways. Some applications serve to be storage and retrieval systems of data. They may archive data for a variety of reasons. Backup software archives user data in a snapshot fashion, allowing the user to restore the state their computer and files in the event of a hardware failure or accidental deletion. Large websites such as archive.org crawl popular websites and preserve a snapshot allowing users to view the previous versions. A retailer may want to store information regarding every individual transaction for accounting and tax purposes. 
 
 Other applications retrieve data to enable decision making. One example of this is business intelligence systems. A business intelligence system can process millions of transactions and infer sales trends. This information could be used to enable inventory and marketing decisions to be made by the retailer. 
@@ -6,10 +7,9 @@ Other applications retrieve data to enable decision making. One example of this 
 Applications can also extract knowledge for analysis. As an example, Google recently discovered that search trends of certain keywords is highly correlated with physician visits for influenza-like visits. This enables Google to publish information about flu trends that is updated daily.
 
 Data can also enable a service. Almost any type of dynamic web service which responds to user requests is an example of this. Specific instances include: mapping and navigation software. By collecting information about road networks and addresses, a system (such as Google Maps) can respond to direction-related queries. 
-
 ##  Application Requirements
-Different applications have different requirements of storage systems. Netflix, for example needs to serve high-bandwidth video to millions of users across the countries in which they operate in. Google search, on the other hand, must analyse a query and retrieve accurate results for that query within a very short period of time. In this section, we will look briefly at the various requirements imposed by applications on storage systems:
 
+Different applications have different requirements of storage systems. Netflix, for example needs to serve high-bandwidth video to millions of users across the countries in which they operate in. Google search, on the other hand, must analyse a query and retrieve accurate results for that query within a very short period of time. In this section, we will look briefly at the various requirements imposed by applications on storage systems:
 
 1. _Capacity_: Storage systems must be able to handle the capacity requirements for an application. A storage system should be able to handle the entire volume of data that is required by the application, and must also be scalable in some form to meet the near and future-term requirements of the application. 
 1. _Performance_: Storage systems should be able to handle application expectations of performance. This can be broadly broken down into the following requirements:
@@ -29,6 +29,7 @@ Different applications have different requirements of storage systems. Netflix, 
 
 1. _Security_: How secure does the data need to be when it is stored and accessed by the application? Is it protected against accidental or malicious access and/or modification and deletion? What kind of access restrictions can be imposed on users and applications that access this system?
 1. _Provenance_: The process by which one can trace and record the origin of data as well as its movement between storage systems. For an application, does the functionality of being able to track all this information necessary? For certain applications dealing with sensitive and/or confidential data, it is a requirement.
+
 These requirements dictate the design of applications. Applications that require large capacity or need scalability in the near or long term need to be architected accordingly. As you will see in this Unit, storage systems that deal with large volumes of data are typically too slow or expensive to be contained within a monolithic system, these are typically distributed over multiple machines. 
 
 Strict performance requirements are usually translated into design choices involving caching or replication. Such systems are designed using the access patterns to determine optimal strategies for performance improvement. For applications that are serving clients over the internet, multiple data centers may be involved to provide faster performance and a better user experience by redirecting users to the closest available server that has the required data.

@@ -1,20 +1,20 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_4_mq_cases.xml -->
+
  The frameworks that we have looked at so far (MapReduce, Spark, GraphLab), were primarily designed to perform batch computations. Their inputs are typically large distributed datasets, which are processed for several hours to yield a large, useful output. The use of these frameworks was originally restricted to data scientists and programmers, who used them for specific, large queries where this high latency was tolerable. However, as the use of Big Data gained prevalence within enterprises, there was a move towards ad hoc querying of data, with expected latencies of minutes, not hours. Tools like Pig, Hive, Shark & SparkSQL allowed many businesses to ask complex questions of their data, without relying on a large pool of highly trained programmers. The cloud drove this adoption even further, providing an elastic supply of compute resources for the duration of an ad hoc query. 
 
 Soon, the expectation of latencies got even lower. Big Data began to be received in real-time, and was often only valuable for a short duration. For example, search engines required the best combination of advertisements to be served within milliseconds for each query; social media websites detected trends and trending topics/hashtags and system monitoring tools detected complex patterns across several large infrastructure components. To be able to provide such low latencies, a new class of stream processing frameworks began to take shape. These had fundamentally different requirements and constraints from the batch/interactive processing systems of the past. 
 
  This led to the advent of stream processing systems. 
-
 ##  Stream Processing 
-The stream processing paradigm applies a series of operations on each element of data emitted by an infinitely long input data source. The series of operations are generally pipelined, which adds dependencies between operations. Within the processing application, state information is often read from and written to a small, fast data source. The output of a pipeline of stream operations is also a data stream. This can be used to trigger other applications, or be buffered and stored to stable storage. The basic conceptual architecture of such a system is shown below. 
 
+The stream processing paradigm applies a series of operations on each element of data emitted by an infinitely long input data source. The series of operations are generally pipelined, which adds dependencies between operations. Within the processing application, state information is often read from and written to a small, fast data source. The output of a pipeline of stream operations is also a data stream. This can be used to trigger other applications, or be buffered and stored to stable storage. The basic conceptual architecture of such a system is shown below. 
 ![Figure 5.54: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/streaming0.png)
 
 _Figure 5.54: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
 
 ##  Eight Rules for Stream Processing
-Stonebraker et. al. described 8 basic rules for stream processing systems.
 
+Stonebraker et. al. described 8 basic rules for stream processing systems.
 
 1. Keep the data moving: A real-time stream-processing framework must be able to process messages “in-stream”, without having to store them on disk, which adds unacceptable latency on the critical path. Additionally, these systems should be active (event-driven) and not passive (whereby applications need to poll the results to detect conditions of interest). ![Figure 5.55: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/streaming1.png)
 
@@ -33,6 +33,7 @@ _Figure 5.56: StreamSQL should process subsets of the data, and allow relations 
 1. Support partitioning and auto-scaling: Distributed processing is the standard model of operation for all such large systems. A good stream processing architecture should be non-blocking and exploit modern multi-threaded architectures. Further, it should be able to handle the scaling out/in of the system on its own, by adding or removing machines, either based on increased/decreased data volumes or processing delays/complexities. Additionally, it must automatically and transparently perform load balancing over the available machines. The end-user should not have to deal with any of this complexity.
 1. Make sure it can keep up: All system components should be designed for high-performance, with a minimal number of operations happening out-of-core. The system must be tested and benchmarked based on the target workload, and the throughput and latency goals must be validated.
 ##  Evolution of Stream Processing Engines
+
 Aurora (2002) was one of the earliest stream processing systems, also developed by Stonebraker et. al. at MIT and Brown University. Aurora treated the stream processing problem as a directed acyclic graph (DAG).
 
 The stream input is a sequence of unbounded tuples (a1, a2, … an) over time that flow from upstream (start) to downstream (output). An entire application can be built by adding different combination of processing boxes and drawing links between them. Aurora was a single-node system, which lacked many of the scalability requirements of a stream processing engine. This was rectified in Aurora* (2003), which simply combined many Aurora nodes over a network. Thus, scalability was achieved by partitioning the different stages of the stream processing job over different physical nodes. Finally, the Medusa project (2003) added federation support to Aurora, allowing collaboration and sharing by multiple users.

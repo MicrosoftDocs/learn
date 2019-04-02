@@ -1,7 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_4_HDFS_vs_PVFS.xml -->
 ##  HDFS versus Ceph
-We now summarize the primary differences between HDFS and Ceph.
 
+We now summarize the primary differences between HDFS and Ceph.
 
 - _Architectural differences:_ HDFS follows the model of collocating compute and storage. HDFS DataNodes are typically coresident with MapReduce nodes, and the key idea behind the entire model is to bring the computation to the data. Ceph is designed to be a stand-alone storage service, although the OSDs that store data in Ceph could potentially be co-located with MapReduce nodes.
 - _Compatibility:_ HDFS clients have to be implemented using one of the APIs. HDFS was not designed to be a POSIX file system and does not support some of the POSIX semantics (e.g., opening existing files for writing<!-- is an example -->). Workarounds, such as a FUSE driver, exist that allow HDFS to be mounted. However, most applications will have to be reimplemented with an HDFS client if they do not already support the workaround. Ceph, on the other hand, exposes multiple APIs, including the POSIX-compliant Ceph FS driver, which makes it much easier to integrate with existing applications when compared to HDFS.

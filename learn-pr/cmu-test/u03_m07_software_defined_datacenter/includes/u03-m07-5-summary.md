@@ -11,4 +11,5 @@
 - Cloud data centers rely on shared storage mechanisms to quickly create volumes for many virtual machines. The sharing is generally done over a high-speed network fabric.
 - SDS is a recent approach to provide storage as a service that meets a client SLOs. An example of an SDS system is IOFlow, which allows the application of policies such as data rate metrics or malware detection on IO traffic.
 ##  Storage and Network Virtualization Quiz
+
 This checkpoint will test your understanding of the material you have learned in this unit.

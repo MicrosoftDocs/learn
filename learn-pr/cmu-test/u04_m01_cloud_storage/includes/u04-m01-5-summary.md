@@ -29,4 +29,5 @@
 - Object stores are typically accessed using an API that is accessed over the network using REST/SOAP-style calls.
 - Amazon S3 is an example of an object store, and CDMI is an upcoming open standard that defines a cloud storage environment.
 ##  Cloud Storage Quiz
+
 This checkpoint will test your understanding of the material you have learned in this unit.

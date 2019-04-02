@@ -1,13 +1,14 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_1_middleware.xml -->
-Middleware is a general term for software that serves to "glue together" separate, often complex and already existing, programs. The term middleware is used in many contexts. For example, in the context of a single computer, middleware exists between the operating system kernel and application programs in the form of APIs, which manage access to system resources such as hardware devices. 
 
+Middleware is a general term for software that serves to "glue together" separate, often complex and already existing, programs. The term middleware is used in many contexts. For example, in the context of a single computer, middleware exists between the operating system kernel and application programs in the form of APIs, which manage access to system resources such as hardware devices. 
 ![Figure 2.22: Cloud Middleware Features](../media/middleware.png)
 
 _Figure 2.22: Cloud Middleware Features_
 
-Cloud Middleware is a software platform that controls and coordinates different cloud services and makes it possible for users to issue service requests, and cloud providers to manage their infrastructure. Cloud Middleware consists of multiple abstraction layers that hides system complexity and enables communication between various applications, services, and devices that are part of a cloud service. 
 
+Cloud Middleware is a software platform that controls and coordinates different cloud services and makes it possible for users to issue service requests, and cloud providers to manage their infrastructure. Cloud Middleware consists of multiple abstraction layers that hides system complexity and enables communication between various applications, services, and devices that are part of a cloud service. 
 ##  Cloud Middleware Features
+
 There are a number of distinct and important features that cloud middleware provides, which come with several benefits. Some of the most important responsibilities of a cloud middleware stack are as follows: 
 
 _Interoperability_: Middleware is designed to connect distinct application services with different APIs to one another. Cloud service APIs act as middleware for cloud services by taking instructions from a program (written in languages such as Java, Python etc.), and translating them into service calls that the cloud service can understand. These instructions are further passed down the middleware stack at the cloud service provider’s end to perform actions (such as create virtual machines, allocate disk space, create a database table, etc.). Thus, cloud middleware is the proverbial “glue” that enables multiple distinct applications and services to connect and communicate to each other. 

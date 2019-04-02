@@ -29,4 +29,5 @@
 - Paravirtualization rewrites every critical instruction as a _hypercall_ that traps to the hypervisor (which typically requires modifying guest OSs).
 - As concrete examples, VMware uses full virtualization, while Xen employs paravirtualization.
 ##  Virtualizing Resources for the Cloud Quiz
+
 This checkpoint will test your understanding of the material you have learned in this unit.

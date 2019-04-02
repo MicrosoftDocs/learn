@@ -10,4 +10,5 @@
 - Swift proves an S3-like REST interface to access objects.
 - Ceph object gateway is a access layer over the RADOS distributed object store. This offers both S3 and SWIFT compatible interfaces into RADOS.
 ##  Cloud Storage Quiz
+
 This checkpoint will test your understanding of the material you have learned in this unit.

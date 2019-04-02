@@ -13,4 +13,5 @@
 - Servers are most often cooled through CRACs, which push cold air under a raised floor while taking in hot air and removing the heat through a chilled water loop. That loop is attached to a chiller, which itself removes heat by venting through the air or a secondary loop to a cooling tower. Higher densities/efficiencies can be achieved using in-row cooling with hot-aisle containment. Evaporative cooling is also becoming popular for data centers.
 - Safety is important for both equipment and personnel. FM-200 provides fast, safe fire suppression. All metal surfaces should be properly grounded, and safety equipment should be used appropriately.
 ##  Introduction to Data Centers Quiz
+
 This checkpoint will test your understanding of the material you have learned in this unit so far.

@@ -1,12 +1,13 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_6_tail_latency.xml -->
+
 We have already discussed several optimization techniques used on the cloud to reduce latency. Some of the measures we studied include scaling resources horizontally or vertically and using a load balancer to route requests to the nearest available resources. This page delves more deeply into why, in a large data center or cloud application, it is important to minimize latency for all requests, and not just optimize for the general case. We will study how even a few high-latency outliers can significantly degrade the observed performance of a large system. This page also covers various techniques to create services that provide predictable low-latency responses even if the individual components do not guarantee this. This is a problem that is especially significant for interactive applications where the desired latency for an interaction is below 100ms. 
-
 ##  What is Tail Latency?
-Most cloud applications are large, distributed systems often rely on parallelization to reduce latency. A common technique is to fan-out a request received at a root node (e.g. a front-end web server) to many leaf nodes (back-end compute servers). The performance improvement is driven both by the parallelism of the distributed computation, and also by the fact that extremely expensive data-moving costs are avoided. We simply move the computation to the place where the data is stored. Of course, each leaf node concurrently operates on hundreds or even thousands of parallel requests. 
 
+Most cloud applications are large, distributed systems often rely on parallelization to reduce latency. A common technique is to fan-out a request received at a root node (e.g. a front-end web server) to many leaf nodes (back-end compute servers). The performance improvement is driven both by the parallelism of the distributed computation, and also by the fact that extremely expensive data-moving costs are avoided. We simply move the computation to the place where the data is stored. Of course, each leaf node concurrently operates on hundreds or even thousands of parallel requests. 
 ![Figure 2.34: Latency due to scale out](../media/scaling_out_latency.png)
 
 _Figure 2.34: Latency due to scale out_
+
 
 Consider the example of searching for a movie on Netflix. As a user begins to type in the search box, this will generate several parallel events from the root web server, which include at least the following requests: 
 1. to the autocomplete engine to actually predict the search being made based on past trends and the user’s profile, 
@@ -20,22 +21,22 @@ Such examples are extremely common. A single Facebook request is known to contac
 Clearly, the need for scale has led to a large fan-out at the back-end for each individual request serviced by the front-end. For services that are expected to be “responsive” to retain their user base, heuristics show that responses are expected within 100 ms. As the number of servers required to resolve a query increases, the overall time often depends on the worst performing response from a leaf node to a root node. Assuming that all leaf nodes must complete executing before a result can be returned, the overall latency must always be greater than the latency of the single slowest component.
 
 Like most stochastic processes, the response time of a single leaf node can be expressed as a distribution. Decades of experience have shown that in the general case, most (>99%) requests of a well-configured cloud system will execute extremely quickly. But often, there are very few outliers on a system that execute extremely slowly. 
-
 ![Figure 2.35: Tail Latency Example ](../media/tail_latency.png)
 
 _Figure 2.35: Tail Latency Example _
 
+
 Consider a system where all leaf nodes have an average response time of 1 ms, but there is probability of a 1% that the response time is greater than 1000 ms (one second). If each query is handled by only a single leaf node, the probability of the query taking longer than one second is also 1%. However, as we increase the number of nodes to 100, the probability that the query will complete within one second drops to 36.6%, which means that there is a 63.4% chance that the query duration will be determined by the tail (lowest 1%) of the latency distribution. 
-
-0.99100If we simulate this for a variety of cases, we see that as the number of servers increase, the impact of a single slow query is more pronounced (notice that the graph below is monotonically increasing). Also, as the probability of these outliers decreases from 1% to 0.01%, the system is substantially lower. 
-
+0.99100
+If we simulate this for a variety of cases, we see that as the number of servers increase, the impact of a single slow query is more pronounced (notice that the graph below is monotonically increasing). Also, as the probability of these outliers decreases from 1% to 0.01%, the system is substantially lower. 
 ![Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study.](../media/tail_latency2.png)
 
 _Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study._
 
-Just like we designed our applications to be fault-tolerant to deal with resource reliability problems, it should be clear now why it is important for applications to be “tail-tolerant”. To be able to do this, we must understand the sources of these long performance variabilities and identify mitigations where possible and workarounds where not. 
 
+Just like we designed our applications to be fault-tolerant to deal with resource reliability problems, it should be clear now why it is important for applications to be “tail-tolerant”. To be able to do this, we must understand the sources of these long performance variabilities and identify mitigations where possible and workarounds where not. 
 ##  Variability in the Cloud: Sources and Mitigations 
+
 To resolve the response time variability that leads to this tail latency problem, we must understand the sources of performance variability . 
 1. _The use of shared resources_: Many different VMs (and applications within those VMs) contend for a shared pool of compute resources and in rare cases it is possible that this contention leads to low-latency for some requests. For critical tasks, it may make sense to use dedicated instances and periodically run benchmarks when idle, to ensure that it behaves correctly.
 1. _Background daemons and maintenance_: We have already spoken about the need for background processes to create checkpoints, backups, update logs, collect garbage, and handle resource clean up. However, these can degrade the performance of the system while executing. To mitigate this, it is important to synchronize disruptions due to maintenance threads to minimize the impact on the flow of traffic. This will cause all variation to occur in a short, well-known window rather than randomly over the lifetime of the application.
@@ -45,8 +46,8 @@ To resolve the response time variability that leads to this tail latency problem
 
 
 Experiments conducted on AWS EC2 instances have found that the variability of such systems are much worse on the public cloud, typically due to imperfect performance isolation of virtual resources and the shared processor. This is exacerbated if many latency-sensitive jobs are executed on the same physical node as CPU-intensive jobs. 
-
 ##  Living with Variability: Engineering Solutions
+
 Many of the sources of variability above have no fool-proof solution. Hence, instead of trying to resolve all of the sources that inflate the latency tail, cloud applications must be designed to be tail-tolerant. This, of course, is similar to the way that we design applications to be fault-tolerant since we cannot possibly hope to fix all possible faults. Some of the common techniques to deal with this variability are: 
 1. _"Good enough" results_: Often, when waiting to receive results from 1000s of nodes, the importance of any single result may be assumed to be quite low. Hence, many applications may choose to simply respond to the users with results that arrive within a particular, short latency window and discard the rest.
 1. _Canaries_: Another alternative that is often used for rare code paths is to test a request on a small subset of leaf nodes in order to test if it causes a crash or failure that can impact the entire system. The full fan-out query is only generated if the canary does not cause a failure. This is akin to sending a canary (bird) into a coal mine to test if it is safe for humans.

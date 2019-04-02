@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_1_intro.xml -->
+
 In this module, we will look at message queues and stream processing. With the rise of internet services and the availability of continuous streams of real-time data, the challenge is to process these data streams in near-real time.
 
 Streams should be viewed as an infinite sequence of small messages that arrive continuously with no breaks. The data is not at rest, and the stream processing systems that are responsible for handling these streams should be able to continuously consume and process the data. 

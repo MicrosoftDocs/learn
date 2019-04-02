@@ -11,4 +11,5 @@
 - The shared and public nature of cloud computing introduces new risks in terms of information security. The primary threats are abuse of clouds, insecure interfaces and APIs, malicious insiders, shared technology issues and data loss or leakage.
 - The responsibility of securing applications on the cloud is split between the cloud service provider and the client. The provider must make available controls and systems that can be used to secure applications, resources and data on the cloud. The client must make sure that they make full use of the provided controls and systems and follow best security practices when using clouds.
 ##  Introduction to Cloud Computing Quiz
+
 This checkpoint will test your understanding of the material you have learned in this unit.
