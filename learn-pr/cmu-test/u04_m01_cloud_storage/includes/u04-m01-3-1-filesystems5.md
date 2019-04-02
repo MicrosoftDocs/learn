@@ -12,8 +12,8 @@ The emergence of the _relational database model_ and the subsequent development 
 ##  Types of Database Systems
 Current database systems can be classified into the following types:
 
- _Relational_ databases are the classical database systems which have been around for decades. They follow the relational model of representing data as relations between entities. Relational database systems typically have a rigid schema, use the Structured Query Language (SQL) as the interface to interact with the database, and typically have strong ACID properties. 
+_Relational_ databases are the classical database systems which have been around for decades. They follow the relational model of representing data as relations between entities. Relational database systems typically have a rigid schema, use the Structured Query Language (SQL) as the interface to interact with the database, and typically have strong ACID properties. 
 
- _NoSQL_ databases are a new breed of databases which are markedly different from relational database systems. NoSQL systems typically do not enforce a strong schema or relational model of the data, and instead provide a different abstraction (like a key-value store), instead of a SQL-like interface. NoSQL databases are focused on scalability and performance, and typically do not have strong transactional guarantees for database operations. 
+_NoSQL_ databases are a new breed of databases which are markedly different from relational database systems. NoSQL systems typically do not enforce a strong schema or relational model of the data, and instead provide a different abstraction (like a key-value store), instead of a SQL-like interface. NoSQL databases are focused on scalability and performance, and typically do not have strong transactional guarantees for database operations. 
 
- _NewSQL_ is a class of modern relational database systems that seek to provide the same level of performance and scalability as NoSQL systems but while maintaining some degree of ACID properties that relational database systems offer. 
+_NewSQL_ is a class of modern relational database systems that seek to provide the same level of performance and scalability as NoSQL systems but while maintaining some degree of ACID properties that relational database systems offer. 

@@ -8,7 +8,7 @@ With fault tolerance, we close our discussion on GraphLab. This engine employs g
 
 ______________________________________________________________________________________
 
- _Algorithm 2:_ Capturing Checkpoint at vertex v
+_Algorithm 2:_ Capturing Checkpoint at vertex v
 
 ______________________________________________________________________________________
 

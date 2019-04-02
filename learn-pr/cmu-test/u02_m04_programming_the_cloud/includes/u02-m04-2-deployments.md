@@ -7,6 +7,7 @@ Before deploying a cloud application into production, it is useful to have a che
 The deployment of a cloud application is an iterative process which starts from the end of development right through to the release of the application on the production resources (Figure 2.28): 
 
 ![Figure 2.28: Code deployment process](../media/deployment.png)
+
 _Figure 2.28: Code deployment process_
 
 It is typical for cloud developers to maintain multiple concurrently running versions of their applications to pipeline deployment of their application to into various stages: 
@@ -20,11 +21,11 @@ Each of the three stages mentioned above should ideally have identical resources
 ##  Pipelining Application Changes
 In a typical agile application development scenario (illustrated in the figure above), applications are maintained by a set of engineers and developers who work on issues and bugs using some kind of issue tracking mechanism. The changes to the code are maintained through a code repository system (say, `svn`, `mercurial` or `git`), where separate branches are maintained for release of code. After passing through code changes, reviews and approvals, the code can be pipelined into the testing, staging and production phases. This can be done in multiple ways: 
 
- _Custom Scripts_: Developers can use custom scripts to pull the latest version of the code and run specific commands to build the application and bring it into production state. 
+_Custom Scripts_: Developers can use custom scripts to pull the latest version of the code and run specific commands to build the application and bring it into production state. 
 
- _Pre-Baked Virtual Machine Images_: Developers can also provision and configure a virtual machine with all the required environment and software to deploy their application. Once configured, the virtual machine can be snapshotted and exported to a virtual machine image (such as an AMI in AWS), and this image can be provided to various cloud orchestration systems to be automatically deployed and configured for a production deployment. 
+_Pre-Baked Virtual Machine Images_: Developers can also provision and configure a virtual machine with all the required environment and software to deploy their application. Once configured, the virtual machine can be snapshotted and exported to a virtual machine image (such as an AMI in AWS), and this image can be provided to various cloud orchestration systems to be automatically deployed and configured for a production deployment. 
 
- _Continuous Integration Systems_: In order to simplify the various tasks that are involved in deployment, Continuous integration (CI) tools can be used to automate tasks (such as retrieval of the latest version from a repository, building application binaries and running test cases) that need to be completed in the various machines that make up the production infrastructure. Examples of popular CI tools include: Jenkins, Bamboo, Travis. AWS Code Pipeline is an AWS-specific CI tool designed to work with AWS deployments.
+_Continuous Integration Systems_: In order to simplify the various tasks that are involved in deployment, Continuous integration (CI) tools can be used to automate tasks (such as retrieval of the latest version from a repository, building application binaries and running test cases) that need to be completed in the various machines that make up the production infrastructure. Examples of popular CI tools include: Jenkins, Bamboo, Travis. AWS Code Pipeline is an AWS-specific CI tool designed to work with AWS deployments.
 
 ##  Managing Downtime
 Certain changes to the application may require partial or full termination of the application services to incorporate a change in the application back-end. Developers have to typically schedule a specific time of day to minimize interruptions to customers of the application. Applications that are designed for continuous integration may be able to perform these changes live on production systems with minimal or no interruption to the application’s clients. 

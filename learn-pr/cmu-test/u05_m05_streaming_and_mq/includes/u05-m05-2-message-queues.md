@@ -9,21 +9,23 @@ For applications that span multiple machines, a number of proprietary and open-s
 Employing message queues can add complexity to the application design and increase the number of services that need to be managed when compared to traditional request/response messaging. However, at a certain scale, and for applications such as stream processing, distributed message queue systems are needed to manage the added complexity and scale.
 
 ![Figure 5.50: An interface connects to senders (or producers), which create messages and to receivers (or consumers) which can receive the messages.](../media/mq1.png)
+
 _Figure 5.50: An interface connects to senders (or producers), which create messages and to receivers (or consumers) which can receive the messages._
 
 ##  Characteristics of Message Queues
 Message queues and their novelty can be understood and appreciated when contrasted with traditional RPC and request-response mechanisms. The primary features of a message queue are as follows:
 
- _Storage:_ Unlike traditional request/response systems that rely on basic TCP/UDP protocols over sockets, message queues typically store messages in some type of buffer until it has either been read by a destination process, or is explicitly removed from the message queue.
+_Storage:_ Unlike traditional request/response systems that rely on basic TCP/UDP protocols over sockets, message queues typically store messages in some type of buffer until it has either been read by a destination process, or is explicitly removed from the message queue.
 
- _Asynchronicity:_ In contrast to request/response systems, the buffering of messages allows message queues to expose a degree of asynchronicity in applications, allowing source processes to send messages and let them accumulate in a queue while destination processes pick them up to process. This allows for applications to function under certain failure scenarios, such as intermittent connectivity or failure of either the source or destination processes.
+_Asynchronicity:_ In contrast to request/response systems, the buffering of messages allows message queues to expose a degree of asynchronicity in applications, allowing source processes to send messages and let them accumulate in a queue while destination processes pick them up to process. This allows for applications to function under certain failure scenarios, such as intermittent connectivity or failure of either the source or destination processes.
 
- _Routing:_ Message queues may also provide routing functionality, where multiple processes can read or write messages in the same queue, allowing for broadcast or unicast communication paradigms. 
+_Routing:_ Message queues may also provide routing functionality, where multiple processes can read or write messages in the same queue, allowing for broadcast or unicast communication paradigms. 
 
 ##  Advantages of Message Queues
 The primary advantage of a message queue is that it provides loose-coupling between various entities in a distributed application. This allows for asynchronous non-blocking communication that provides a higher level of tolerance against failures of processes.
 
 ![Figure 5.51: Message queues provide an interface that allows for programs to communicate with each other.](../media/mq2.png)
+
 _Figure 5.51: Message queues provide an interface that allows for programs to communicate with each other._
 
 

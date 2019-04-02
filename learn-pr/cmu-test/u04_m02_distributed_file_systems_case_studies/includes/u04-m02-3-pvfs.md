@@ -14,20 +14,22 @@ Ceph is designed to be accessible through 3 different abstractions, as shown in 
 The _Ceph storage cluster_ is a distributed object store. Layered on top of the storage cluster are different client-facing storage services. The _Ceph object gateway_ service allows for clients to access a Ceph storage cluster using a REST-based HTTP interface that is compatible with Amazon's S3 and Openstack Swift protocols. The _Ceph block device_ service allows for clients to access the storage cluster as block devices, which can be formatted with a local file system and mounted in an operating system, or used as a virtual disk to operate virtual machines in Xen, KVM, VMWare or QEMU. Finally, the _Ceph file system_ (Ceph FS) provides the file and directory abstraction over the entire storage cluster as a POSIX-compliant file system.
 
 ![Figure 4.30 Ceph Ecosystem](../media/ceph.png)
+
 _Figure 4.30 Ceph Ecosystem_
 
 Taking a deeper look, the Architecture of Ceph are illustrated below (Figure 4.31):
 
 ![Figure 4.31: Ceph Architecture](../media/ceph_arch.png)
+
 _Figure 4.31: Ceph Architecture_
 
 At the heart of Ceph is a distributed object storage system called _RADOS_. Clients can interact with RADOS directly using a low level API called _librados_, which is socket-based and supports a number of programming languages. Alternatively, clients can interact with the 3 higher level APIs that provide 3 separate abstractions into RADOS.
 
- _RADOS Gateway_ or _radosgw_ allows for clients to access RADOS through a REST-based gateway over HTTP. This emulates the Amazon S3 object service and is compatible with applications that use the Amazon S3 API or the Openstack SWIFT API.
+_RADOS Gateway_ or _radosgw_ allows for clients to access RADOS through a REST-based gateway over HTTP. This emulates the Amazon S3 object service and is compatible with applications that use the Amazon S3 API or the Openstack SWIFT API.
 
- _RADOS Block Device_ or RBD exposes the RADOS object store as a general-purpose distributed block device, much like a SAN. RBD allows for block devices to be carved out from RADOS and mounted on Linux systems using a kernel driver. RBDs can also be used as virtual disk images for popular virtualization systems such as Xen, VMWare, KVM and QEMU.
+_RADOS Block Device_ or RBD exposes the RADOS object store as a general-purpose distributed block device, much like a SAN. RBD allows for block devices to be carved out from RADOS and mounted on Linux systems using a kernel driver. RBDs can also be used as virtual disk images for popular virtualization systems such as Xen, VMWare, KVM and QEMU.
 
- _Ceph FS_ is a POSIX compliant distributed file system layered over RADOS which can be directly mounted within the file systems of Linux clients. Ceph FS will be discussed in detail later on this page.
+_Ceph FS_ is a POSIX compliant distributed file system layered over RADOS which can be directly mounted within the file systems of Linux clients. Ceph FS will be discussed in detail later on this page.
 
 ##  Ceph Storage Cluster Architecture (RADOS)
 At the heart of Ceph is the _Reliable, Autonomous, Distributed Object Store (RADOS)_. In RADOS, data is stored as objects distributed over a cluster of machines. Clients interact with a RADOS cluster by storing and retrieving objects. An object consists of an object name (which is the key used to identify an object), as well as the binary contents of the object (which is the value associated with a particular object key). The role of RADOS is to store objects in a distributed fashion across a cluster in a scalable, reliable and fault-tolerant manner. 
@@ -35,6 +37,7 @@ At the heart of Ceph is the _Reliable, Autonomous, Distributed Object Store (RAD
 There are two types of nodes in a RADOS cluster: _object storage daemons (OSDs)_ and _monitor nodes_ (Figure 4.32). An OSD stores objects and responds to requests for objects. OSDs stores these objects on nodes using the local file system on each node, and keep a buffer cache to improve performance. Monitor nodes keep a watch on the status of the cluster to keep track of OSDs that are entering and leaving the cluster.
 
 ![Figure 4.32: RADOS Architecture. OSDs are responsible for data on a node (typically one OSD is deployed per physical disk). The nodes marked in M are the Monitor nodes.](../media/rados_1.png)
+
 _Figure 4.32: RADOS Architecture. OSDs are responsible for data on a node (typically one OSD is deployed per physical disk). The nodes marked in M are the Monitor nodes._
 
 ###  Cluster State and Monitors in RADOS
@@ -48,6 +51,7 @@ For a distributed object storage to work correctly, a client must be able to con
 The first step is to determine the _placement group_ of a particular object (Figure 4.33). A placement group can be thought of as a bucket in which an object resides. This is done by using a hash function (the latest hash function to be used is always obtained from the cluster map). Once a placement group for the given object is determined, the client then needs to find the OSD that is responsible for that placement group.
 
 ![Figure 4.33: Locating an Object to a Placement Group and finally to an OSD using the CRUSH algorithm.](../media/crush.png)
+
 _Figure 4.33: Locating an Object to a Placement Group and finally to an OSD using the CRUSH algorithm._
 
 The algorithm used to assign placement groups to OSDs is known as the _Controlled Replication Under Scalable Hashing (CRUSH)_ algorithm (Figure 4.33). CRUSH assigns placement groups across a cluster in a pseudo-random, but deterministic manner. CRUSH is more stable than a hash function, in the sense that when OSDs enter or leave the cluster, CRUSH ensures that most placement groups remain where they are and shifts only a small amount of data to maintain a balanced distribution. A simple hash function, on the other hand would require redistribution of a majority of keys when buckets are added or removed. The entire description of the CRUSH algorithm is beyond the scope of this discussion, interested readers should refer to.
@@ -58,17 +62,19 @@ When an object name is hashed to a placement group, CRUSH produces a list of exa
 In RADOS, an object is replicated among multiple OSDs that are associated with that object's placement group. This ensures that there are multiple copies of a particular object in case a certain OSD fails. RADOS has multiple available schemes in which the replication is actually performed; these are the _primary copy_, _chain_, and _splay_ replication schemes (Figure 4.34). 
 
 ![Figure 4.34: The replication modes supported in RADOS. Figure from .](../media/replication_ceph.png)
+
 _Figure 4.34: The replication modes supported in RADOS. Figure from ._
 
- _Primary Copy Replication_: In the primary copy replication scheme, a client interacts with the first available OSD (the primary replica OSD) to interact with an object. The primary replica OSD will process the request and respond back to the client. In case of a write, the primary replica OSD will forward the write request to _r-1_ replicas which will then update their local copies of the object and respond to the master. The write operation on the master is delayed until all the writes are committed by the other OSDs for that object. The master will then acknowledge the write to the client. The write is not complete until all the replicas have responded to the primary copy OSD. The same process applies for reads, the primary copy will respond to a read only after all replicas have been contacted and the object value is the same across all replicas.
+_Primary Copy Replication_: In the primary copy replication scheme, a client interacts with the first available OSD (the primary replica OSD) to interact with an object. The primary replica OSD will process the request and respond back to the client. In case of a write, the primary replica OSD will forward the write request to _r-1_ replicas which will then update their local copies of the object and respond to the master. The write operation on the master is delayed until all the writes are committed by the other OSDs for that object. The master will then acknowledge the write to the client. The write is not complete until all the replicas have responded to the primary copy OSD. The same process applies for reads, the primary copy will respond to a read only after all replicas have been contacted and the object value is the same across all replicas.
 
- _Chain Replication_: Requests for an object are forwarded down the chain until the rth (final) replica is found. If the operation is a write, it will be committed to each of the replicas on the way to the last replica. The final OSD containing the final replica will finally acknowledge the write to the client. Any read operation will be directed straight to the tail, in order to reduce the number of hops that are required to read the data from a cluster.
+_Chain Replication_: Requests for an object are forwarded down the chain until the rth (final) replica is found. If the operation is a write, it will be committed to each of the replicas on the way to the last replica. The final OSD containing the final replica will finally acknowledge the write to the client. Any read operation will be directed straight to the tail, in order to reduce the number of hops that are required to read the data from a cluster.
 
- _Splay Replication_: Splay replication combines elements of both primary copy replication and chain replication. Read requests are directed to the last OSD in the replica chain, while writes are first sent to the head. Unlike chain, the updates to the middle OSDs are done in parallel, similar to the primary copy replication scheme.
+_Splay Replication_: Splay replication combines elements of both primary copy replication and chain replication. Read requests are directed to the last OSD in the replica chain, while writes are first sent to the head. Unlike chain, the updates to the middle OSDs are done in parallel, similar to the primary copy replication scheme.
 
 In addition to these replication schemes, persistence in RADOS is handled by utilizing two separate acknowledgement messages (Figure 4.35). Each OSD has a buffer cache of the data served by it. Updates are written to the buffer cache and acknowledged back immediately through an _ack_ message. This buffer cache is periodically flushed to disk, and when the last replica has committed the data to disk, a _commit_ message is sent to the client, indicating that the data has been persisted. 
 
 ![Figure 4.35: ack vs. commit messages in RADOS. Figure from .](../media/replication_ceph2.png)
+
 _Figure 4.35: ack vs. commit messages in RADOS. Figure from ._
 
 ###  Consistency Model in RADOS
@@ -89,6 +95,7 @@ As indicated in Figure 4.31 above, the Ceph FS is a layer of abstraction over th
 In addition to the cluster node roles of OSDs and Monitors, Ceph FS introduces _metadata (MDS)_ servers (Figure 4.36). These servers store the file system metadata (the directory tree, as well as the access control lists and permissions, mode, ownership information, and timestamps for each file). 
 
 ![Figure 4.36: Metadata servers in Ceph FS](../media/ceph_fs_arch.png)
+
 _Figure 4.36: Metadata servers in Ceph FS_
 
 The metadata used by Ceph FS differs from the metadata used by local file system in a number of ways. Recall that in a local file system a file is described by an inode, which contains a list of pointers pointing to the data blocks of a file. Directories in a local file system are simply special files which have links to other inodes which may be other directories or files. In Ceph FS, a directory object in the metadata server contains all the inodes embedded inside it.
@@ -97,6 +104,7 @@ The metadata used by Ceph FS differs from the metadata used by local file system
 Initially a single metadata server will be responsible for the entire metadata for the cluster. As metadata servers are added to the cluster, the directory tree of the file system is partitioned and assigned to the resulting group of metadata servers (Figure 4.37). Each MDS measures the popularity of metadata within its directory hierarchy using counters. A weighted scheme is used to not only update the counter of a specific leaf node in the directory, but also for the ancestors of that directory element up to the root. Thus each MDS is able to keep a list of hotspots in the metadata that can be moved off to a new MDS when it's added to the cluster.
 
 ![Figure 4.37: Dynamic subtree partitioning in Ceph FS](../media/dsp_ceph.png)
+
 _Figure 4.37: Dynamic subtree partitioning in Ceph FS_
 
 ###  Caching and Fault Tolerance in Metadata servers

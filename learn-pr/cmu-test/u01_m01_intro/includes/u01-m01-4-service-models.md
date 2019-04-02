@@ -5,14 +5,15 @@
 Here, we introduce a stacked abstraction of the cloud through presenting typical building blocks and discuss their association with three service models in cloud computing. We present four main building blocks in cloud computing: application software, development platforms, resource sharing, and infrastructure, as shown in Figure 1.6. The infrastructure includes the physical resources in a data center. The resource sharing layer typically entails software and hardware techniques that allow the sharing of the physical resources while offering a certain level of isolation. The development platforms are utilized to develop cloud applications. 
 
 ![Figure 1.6: Cloud computing building blocks.](../media/cloud_computing_stack.png)
+
 _Figure 1.6: Cloud computing building blocks._
 
 ##  Cloud Building Blocks
- _Application software: _The top layer in the stack is the application software, which normally is the system component that the end user utilizes.
+_Application software: _The top layer in the stack is the application software, which normally is the system component that the end user utilizes.
 
- _Development platforms: _The next layer, development platforms, allows application developers to write application software in terms of a cloud's application programming interface (API). Development platforms typically provide specifications that developers can use for routines, data structures, object classes, libraries and variables.
+_Development platforms: _The next layer, development platforms, allows application developers to write application software in terms of a cloud's application programming interface (API). Development platforms typically provide specifications that developers can use for routines, data structures, object classes, libraries and variables.
 
- _Resource sharing: _Resource sharing mechanisms, the third layer, embody some key cloud ideas:
+_Resource sharing: _Resource sharing mechanisms, the third layer, embody some key cloud ideas:
 
 
 - Provide software, computation, network and storage services.
@@ -21,7 +22,7 @@ _Figure 1.6: Cloud computing building blocks._
 - Deliver agility and elasticity to rapidly respond to users' resource and service demands.
 These ideas usually are addressed through virtualization, a technology discussed in detail in Unit 3.
 
- _Infrastructure: _Physical resources comprise the bottom layer and, in cloud computing, are primarily deployed on the cloud provider's side. The broad resource classes, detailed in Unit 2, include the following:
+_Infrastructure: _Physical resources comprise the bottom layer and, in cloud computing, are primarily deployed on the cloud provider's side. The broad resource classes, detailed in Unit 2, include the following:
 
 
 - Compute resources, typically servers, which are computers designed for enterprise computing (as opposed to user workstations). They usually are rack mounted to utilize space efficiently.

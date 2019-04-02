@@ -41,6 +41,7 @@ OpenStack Swift is an object storage service that is part of the OpenStack cloud
 
 ###  Swift Data Model and APIs
 ![Figure 4.47: Swift Data Model](../media/swift_api.png)
+
 _Figure 4.47: Swift Data Model_
 
 In Swift, users have access to an _account_, which can be used to define _containers_, which can be used to store _objects_. As an example, assume a user with an account `123456` on the swift service running on `swift.mycloud.com`, stores the object named `picture.jpg` in the container `images`. The full path to access an object in this example would thus be:
@@ -59,20 +60,21 @@ Swift uses a multi-tiered architecture in the interest of performance, fault-tol
 The different components of the SWIFT architecture are as follows:
 
 ![Figure 4.48: Swift Cluster Architecture](../media/swift_architecture.png)
+
 _Figure 4.48: Swift Cluster Architecture_
 
- _Proxy Nodes_: These are the front-end servers which process incoming API requests. A Swift cluster can have multiple proxy servers to handle bigger loads of incoming requests. The proxy server determines the downstream server to send the request to. Proxy servers also coordinate responses and handle failures.
+_Proxy Nodes_: These are the front-end servers which process incoming API requests. A Swift cluster can have multiple proxy servers to handle bigger loads of incoming requests. The proxy server determines the downstream server to send the request to. Proxy servers also coordinate responses and handle failures.
 
- _Object Nodes_: These are the actual object storage devices which can store or retrieve objects.
+_Object Nodes_: These are the actual object storage devices which can store or retrieve objects.
 
- _Zones_: Swift allows availability zones to be configured to isolate failure boundaries. Each replica of the data resides in a separate zone, if possible. At the smallest level, a zone could be a single object server or a grouping of a few object servers. Zones are used to organize server and partitions such that the system can tolerate at least one failure per zone without any loss of data or service availability.
+_Zones_: Swift allows availability zones to be configured to isolate failure boundaries. Each replica of the data resides in a separate zone, if possible. At the smallest level, a zone could be a single object server or a grouping of a few object servers. Zones are used to organize server and partitions such that the system can tolerate at least one failure per zone without any loss of data or service availability.
 
 ###  Data Placement in Swift
- _Rings_: A ring represents a mapping between the names of account/container/objects and their physical location. There are separate rings for accounts, containers, and one object ring per _storage policy_ (explained below). When other components need to perform any operation on an object, container, or account, they need to interact with the appropriate ring to determine its location in the cluster. The Ring maintains this mapping using _zones_, _object servers_, _partitions_, and _replicas_. Each partition in the ring is replicated, by default, 3 times across the cluster, and the locations for a partition are stored in the mapping maintained by the ring. The ring is also responsible for determining which devices are used for handoff in failure scenarios.
+_Rings_: A ring represents a mapping between the names of account/container/objects and their physical location. There are separate rings for accounts, containers, and one object ring per _storage policy_ (explained below). When other components need to perform any operation on an object, container, or account, they need to interact with the appropriate ring to determine its location in the cluster. The Ring maintains this mapping using _zones_, _object servers_, _partitions_, and _replicas_. Each partition in the ring is replicated, by default, 3 times across the cluster, and the locations for a partition are stored in the mapping maintained by the ring. The ring is also responsible for determining which devices are used for handoff in failure scenarios.
 
- _Partition_: Swift uses consistent hashing to determine which object nodes in a zone have to store which objects. Each part of the consistent hashing ring is known as a partition.
+_Partition_: Swift uses consistent hashing to determine which object nodes in a zone have to store which objects. Each part of the consistent hashing ring is known as a partition.
 
- _Storage Policy_: Storage Policies provide a way for object storage providers to differentiate service levels, features and behaviors of a Swift deployment. Each Storage Policy configured in Swift is exposed to the client via an abstract name. Each device in the system is assigned to one or more Storage Policies. This is accomplished through the use of multiple object rings, where each Storage Policy has an independent object ring, which may include a subset of hardware implementing a particular differentiation. Using storage policies, a cloud provider can provide a fast SSD-based access to objects for one client with a higher SLA, while providing traditional disk-based storage for another client with a different SLA.
+_Storage Policy_: Storage Policies provide a way for object storage providers to differentiate service levels, features and behaviors of a Swift deployment. Each Storage Policy configured in Swift is exposed to the client via an abstract name. Each device in the system is assigned to one or more Storage Policies. This is accomplished through the use of multiple object rings, where each Storage Policy has an independent object ring, which may include a subset of hardware implementing a particular differentiation. Using storage policies, a cloud provider can provide a fast SSD-based access to objects for one client with a higher SLA, while providing traditional disk-based storage for another client with a different SLA.
 
 Let us now look at an example of how object operations are performed in Swift. Let's assume a client request consists of an object PUT request to a particular container. The request is first received by a proxy node, which will first authenticate the request to ensure appropriate access. The proxy server will then take the hash of the object name and look up all three partition locations, the drives, of where the data should be stored using the object ring. The process then uses the object ring to look up the IP and other information for those three devices.
 

@@ -11,7 +11,7 @@ To perform this algorithm with GraphLab, we first map the problem to a graph-bas
 
 ______________________________________________________________________________________
 
- _Algorithm 3:_ PageRank(i) Algorithm on GraphLab, executing on page i
+_Algorithm 3:_ PageRank(i) Algorithm on GraphLab, executing on page i
 
 ______________________________________________________________________________________
 

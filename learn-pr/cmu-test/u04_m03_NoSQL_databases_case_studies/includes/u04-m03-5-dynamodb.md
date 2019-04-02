@@ -40,8 +40,8 @@ Data stored in DynamoDB tables are replicated across 3 Amazon data centers to en
 ###  DynamoDB Use Cases
 DynamoDB can be used to meet specific challenges for certain types of applications:
 
- _Latency-sensitive applications_: DynamoDB is engineered to provide extremely low latency, especially for read workloads. 
+_Latency-sensitive applications_: DynamoDB is engineered to provide extremely low latency, especially for read workloads. 
 
- _Applications that require fast scalability and predictable performance_: DynamoDB as a service is extremely easy to scale up as demand increases. AWS provides monitoring systems to inform application developers about the number of requests being served by a table. Based on this information, developers can request additional provisioned capacity from DynamoDB to handle higher loads. This makes DynamoDB one of the easiest services to scale out as demand increases.
+_Applications that require fast scalability and predictable performance_: DynamoDB as a service is extremely easy to scale up as demand increases. AWS provides monitoring systems to inform application developers about the number of requests being served by a table. Based on this information, developers can request additional provisioned capacity from DynamoDB to handle higher loads. This makes DynamoDB one of the easiest services to scale out as demand increases.
 
- _Applications with a simple data model_: DynamoDB's data model is extremely simplified and basically only allows for inserts and updates to data items index with a key. DynamoDB does not support complex queries such as joins and is slow on operations such as aggregations, which require scans of the entire table. DynamoDB is more suited for applications with more transactional workloads than analytical workloads. 
+_Applications with a simple data model_: DynamoDB's data model is extremely simplified and basically only allows for inserts and updates to data items index with a key. DynamoDB does not support complex queries such as joins and is slow on operations such as aggregations, which require scans of the entire table. DynamoDB is more suited for applications with more transactional workloads than analytical workloads. 

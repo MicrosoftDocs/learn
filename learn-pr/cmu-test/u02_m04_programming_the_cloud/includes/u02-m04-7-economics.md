@@ -2,6 +2,7 @@
 CSPs are taking great pains to attract users from their traditional deployments. Public IaaS cloud prices have been steadily and steeply falling ever since the launch of their services. On average, for most major CSPs, prices have fallen by 20-30% per year since 2013. 
 
 ![Figure 2.37: Average cost reduction of CSP Services](../media/cost_reductions.png)
+
 _Figure 2.37: Average cost reduction of CSP Services_
 
 However, despite these decreasing prices, cloud adoption still must be done with care. To truly gain the cost benefits of the cloud, it is important to understand, budget, plan, monitor and carefully analyze your usage. Also, it is difficult to choose between CSPs for individual use cases, since there is no standard way for CSPs to package resources, nor do they always follow the same pricing models. 
@@ -25,6 +26,7 @@ Generally reserved instances should be used to meet the base requirements of the
 To use the cloud in a cost-effective manner, enterprises must develop a mature process for choosing the resources to deploy, monitor and visualize usage, as well as a clear mechanism to identify waste and optimize utilization. 
 
 ![Figure 2.38: Cost Optimization Process](../media/cost_reductions2.png)
+
 _Figure 2.38: Cost Optimization Process_
 
 Before considering cost requirements, an organization must plan the amount of work that it is capable of completing in a given period based on fixed resources like the amount of staff, while dealing with physical constraints like inventory management, overhead due to transportation, material handling, etc. The provisioning of IT resources must be designed to meet or exceed the physical capacity of the organization. This is extremely important, because the elasticity provided by the cloud tempts development teams to simply add resources as needed, without considering the cost implications of their decisions. 
@@ -43,6 +45,7 @@ An important technique that ties into cost optimization is that of tagging resou
 As one of the largest AWS customers in the world, it is crucial for Netflix to have clear visibility about their expenditure. To support this requirement, they use an internally designed tool known as Ice. Ice relies on tags and resource metadata to build a dynamic dashboard that allows resources to be grouped by user, team, region, type, pricing model or any custom tag. It also supports the amortization of one time costs such as reserved instances over the lifetime of the resource. All of the data is periodically generated using AWS Billing APIs. 
 
 ![Figure 2.39: Netflix Ice](../media/netflix.png)
+
 _Figure 2.39: Netflix Ice_
 
 This tool has been released as a part of their Open Source initiative. Many companies (as well as CMU’s cloud computing course staff) use Ice or variants to gain insights into AWS usage and expenditure. It helps influence whether future resources should be reserved for the long-term (at cheaper prices), and identifies users or teams who overspend. All large cloud deployments should follow a similar process of planning & budgeting, monitoring & visualization, and forecasting & optimization. 

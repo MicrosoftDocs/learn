@@ -12,6 +12,7 @@ Carefully inspecting this strategy, we recognize a serious shortcoming that dire
 The standard edge-cut metric thus overcounts communication volume and consequently leads to superfluous network traffic. As a result, interconnection bandwidth can be potentially stressed and performance degraded. Even if the total communication volume (or the number of messages) is minimized more effectively, load imbalance can generate a bottleneck. In particular, it may happen that, although communication volume is minimized, some machines receive larger partitions (with more vertices) than others. An ideal, yet challenging, approach is to minimize communication overheads while circumventing computation skew among machines. This latter strategy strives for effective partitioning of work across machines so that highly communicating entities are colocated. 
 
 ![Figure 5.14: Effective mapping of graph partitions to cluster machines. A mapping of P1 to the other rack while P2 and P3 remain on the same rack causes more network traffic and potentially degraded performance.](../media/mapping.png)
+
 _Figure 5.14: Effective mapping of graph partitions to cluster machines. A mapping of P1 to the other rack while P2 and P3 remain on the same rack causes more network traffic and potentially degraded performance._
 
 ###  Effective Partition Mapping

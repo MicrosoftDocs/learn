@@ -96,7 +96,7 @@ Our WordCount example assumes text file inputs. Thus, we can directly use the `T
 			
 ```
 
- _Figure 5.17:_ The WordCount code using the new Java MapReduce API released in Hadoop 0.20.0
+_Figure 5.17:_ The WordCount code using the new Java MapReduce API released in Hadoop 0.20.0
 
 As Figure 5.17 shows, programmers need create only two sequential functions, map and reduce, encapsulated in two (inner) classes: in this case, the `WCMap` and the `WCReduce` inner classes. The `WCMap` inner class extends the `Mapper` class and overrides its `map()` function. The `Mapper` class maps given input key-value pair types ( `LongWritable` and `Text`) to a set of output key-value pair types ( `Text` and `IntWritable`). Output key-value pair types defined in the `Mapper` class should always match the input key-value pair types in the `Reducer` class. The `WCReduce` inner class extends the `Reducer` class and overrides its `reduce()` function. In addition to defining the input key-value pair types, the `Reducer` class defines the output key-value pair types ( `Text` and `IntWritable`) that will be used by reduce tasks to generate the final results. 
 

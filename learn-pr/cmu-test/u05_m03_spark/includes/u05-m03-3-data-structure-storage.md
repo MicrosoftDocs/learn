@@ -57,6 +57,7 @@ Once created, an RDD supports two types of operations (see Figure 5.34):
 As mentioned earlier, Spark transformations are lazy by default, i.e. they are not computed immediately, rather they are batched and executed only when an action is executed. The execution of an action causes all RDDs in the lineage to be materialized. However, once the computation is completed, an RDD will persist only if explicitly required to by the program. 
 
 ![Figure 5.34 : Operations on RDDs](../media/RDD.png)
+
 _Figure 5.34 : Operations on RDDs_
 
 Here are some examples of transformations and actions: 
@@ -80,7 +81,7 @@ We will explore these in more detail in the next page where we look at some samp
 
 The Python code above filters `log_lines_RDD` to find attacks against a web server by searching for lines matching a particular signature string. 
 
- `filter()` does not modify the original RDD, rather we now have 2 new RDDs. The `log_lines_RDD` can still be used in the future. `union()` is a transformation that acts on 2 RDDs to form a combined owasp_attacks_RDD . 
+`filter()` does not modify the original RDD, rather we now have 2 new RDDs. The `log_lines_RDD` can still be used in the future. `union()` is a transformation that acts on 2 RDDs to form a combined owasp_attacks_RDD . 
 
 
 1. _Actions_

@@ -8,7 +8,7 @@ With the concept of objects, object-based storage systems abstract the existing 
 An _object_ can be considered as a generic container that can store any arbitrary type of information. Designing interfaces for such arbitrary data may be difficult, but in storage parlance, a basic set of operations can be easily defined for any arbitrary object. These operations are create, read, update, and delete (CRUD), which are typically made available through some kind of API that can be accessed through HTTP or other network protocols using REST- or SOAP-style calls. 
 
 ##  REST
- _Representational state transfer_ (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
+_Representational state transfer_ (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
 
 > [!VIDEO https://youtube.com/embed/34iW4tcYGxA]
 
@@ -74,11 +74,13 @@ The lack of a common standard for object storage is an issue plaguing cloud obje
  The Storage Network Industry Association (SNIA) is promoting an open standard for cloud objects, called _cloud data management interface (CDMI)_. 
 
 ![Figure 4.22: CDMI](../media/cdmi.png)
+
 _Figure 4.22: CDMI_
 
 CDMI defines data objects and data containers with tagged metadata (as key-value pairs) and uses RESTful interfaces, with JSON as the data exchange format. CDMI can be used for accessing and managing data on a storage cloud (Figure 4.22). An example of a client interaction with a storage cloud using CDMI is shown in Figure 4.23.
 
 ![Figure 4.23: A CDMI client interacting with a CDMI storage cloud](../media/cdmi_cloud.png)
+
 _Figure 4.23: A CDMI client interacting with a CDMI storage cloud_
 
 The CDMI client can issue requests over HTTPS, and the _MimeType_ indicates the type of CDMI resource with which the client is interacting (an object, a container) and returns standard HTTP status codes, indicating the status of the request. 
@@ -86,6 +88,7 @@ The CDMI client can issue requests over HTTPS, and the _MimeType_ indicates the 
 The CDMI model is illustrated in Figure 4.24. A CDMI resource exists on a root location, indicated by the root URI: `https://<offering>`. The example contains two containers, A and B, that contain one object each. Note that each CDMI entity <!-- has the -->can support <!-- for -->metadata, as indicated with the key-value tags associated with every entity.
 
 ![Figure 4.24: The CDMI data model](../media/key_value.png)
+
 _Figure 4.24: The CDMI data model_
 
  In addition, CDMI supports <!-- additional -->the following resource types: 

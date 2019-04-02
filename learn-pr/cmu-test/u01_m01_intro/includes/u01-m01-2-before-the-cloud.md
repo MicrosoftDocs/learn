@@ -2,13 +2,13 @@
 ##  Domains and Application Examples
  Now that we have defined what cloud computing is, let us look at examples of how computing was utilized in different domains such as business computing, scientific computing and personal computing before the emergence of cloud computing. 
 
- _Business computing_: Examples of traditional management information systems include logistics and operations, enterprise resource planning (ERP), customer relation management (CRM), office productivity and business intelligence (BI). Such tools enabled more streamlined processes that led to improved productivity and reduced cost across a variety of enterprises. 
+_Business computing_: Examples of traditional management information systems include logistics and operations, enterprise resource planning (ERP), customer relation management (CRM), office productivity and business intelligence (BI). Such tools enabled more streamlined processes that led to improved productivity and reduced cost across a variety of enterprises. 
 
 As an example, CRM software allows companies to collect, store, manage and interpret a variety of data about past, current and potential future customers. CRM software offers an integrated view (in real-time or near real-time) of all organizational interactions with customers. For example, for a manufacturing company, CRM software could be used by a sales team to schedule meetings, tasks and follow-ups with clients. A marketing team could target clients with campaigns based on specific patterns. Billing teams can track quotes and invoices. As such, it is a centralized repository for storing this information. To enable this functionality, a variety of hardware and software technologies are utilized by the organization and sales teams in order to collect the data which needs to be stored and analyzed using various database and analytics systems.
 
- _Scientific computing_: Scientific computing uses mathematical models and analysis techniques implemented on computers to attempt to solve scientific problems. A popular example is computer simulation of physical phenomena. This field has disrupted the traditional theoretical and laboratory experimental methods by enabling scientists and engineers to reconstruct known events or to predict future situations through developing programs to simulate and study different systems under different circumstances. Such simulations typically require a very large number of calculations which are often run on expensive supercomputers or distributed computing platforms. 
+_Scientific computing_: Scientific computing uses mathematical models and analysis techniques implemented on computers to attempt to solve scientific problems. A popular example is computer simulation of physical phenomena. This field has disrupted the traditional theoretical and laboratory experimental methods by enabling scientists and engineers to reconstruct known events or to predict future situations through developing programs to simulate and study different systems under different circumstances. Such simulations typically require a very large number of calculations which are often run on expensive supercomputers or distributed computing platforms. 
 
- _Personal computing_: In personal computing, a user runs various applications on a general-purpose computer. Examples of such applications include office productivity software such as word processing and spreadsheets, or communication such as email clients or entertainment such as video games or playing multimedia files. A personal computing user typically owns, installs and maintains the software and hardware utilized to carry out such tasks. 
+_Personal computing_: In personal computing, a user runs various applications on a general-purpose computer. Examples of such applications include office productivity software such as word processing and spreadsheets, or communication such as email clients or entertainment such as video games or playing multimedia files. A personal computing user typically owns, installs and maintains the software and hardware utilized to carry out such tasks. 
 
 ##  Addressing Scale
 Increasing scale in computing has been an ongoing process, whether in increasing the number of customers and events to capture, monitor and analyze in CRM or increasing the precision of numerical simulations in scientific computing or the realism in video gaming applications. Furthermore, the need for larger scale has been driven by the increase in the adoption of technology by various domains or the expansion of businesses and markets as well as the ongoing increase in the number of users and their needs. Organizations have to account for the increase in scale as they plan and budget for the deployment of their solutions. 
@@ -27,6 +27,7 @@ Scale has impacted all aspects of business computing. For example, scale has imp
 The late 90s marked a steady increase in the adoption of these computing applications and platforms across domains. Soon, software was expected to not only be functional, but also capable of producing value and insight for business and personal requirements. The use of these applications became collaborative; applications were mixed and matched to feed information to each other. IT was no longer just a cost center for a company, but a source of innovation and efficiency. 
 
 ![Figure 1.2: Comparing Traditional and Internet-Scale Computing.](../media/traditional_vs_internet_scale.png)
+
 _Figure 1.2: Comparing Traditional and Internet-Scale Computing._
 
 The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the Internet. These changes have led to a network- and data-driven society, where producing, disseminating and accessing digitized information is simplified. The Internet is estimated to have created a global marketplace of billions of users, up from 25 million in 1994 (Figure 1.3 (a)) . This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations and supporting decision-making with automation.  By embracing digital technologies, the world’s top 10 economies are expected to increase their output by over a trillion dollars by 2020. 
@@ -34,9 +35,11 @@ The 21st century has been marked by an explosion in the volume and capacity of w
 The increasing number of connections enabled by the Internet has also driven its value. Researchers have hypothesized that the value of a network varies superlinearly as a function of the number of users. Thus, at internet scale, gaining and retaining customers is a priority, and this is done by building reliable and responsive services, and making changes based on observed data patterns. 
 
 ![Figure 1.3 (a): Increasing number of Internet Users per year. ](../media/n1.png)
+
 _Figure 1.3 (a): Increasing number of Internet Users per year. _
 
 ![Figure 1.3 (b): Increasing number of data stored per year. ](../media/n2.png)
+
 _Figure 1.3 (b): Increasing number of data stored per year. _
 
  Some examples of Internet-scale systems include: 

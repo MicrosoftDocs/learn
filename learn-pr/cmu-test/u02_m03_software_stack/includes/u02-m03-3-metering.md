@@ -9,6 +9,7 @@ From the customer’s point of view, the cost of cloud resources forms an import
 There are various costs included in cloud resources. Fixed costs such as facilities, staff, and servers are easy to calculate. Variable costs, however, require constant metering and monitoring. The advantage of using CSPs comes from paying only for the resources which are used. For example, provisioning an EC2 instance includes the cost of instance usage per hour, storage per GB-month for each storage type, and data transfer per GB-month. Even for this one resource, AWS has to keep track of these metrics for every instance and attached volume. In Figure 2.24, a possible break down of various cost for services can be found. If we imagine doing this for more than 1 million AWS customers for tens of different types of services, this will require the metering and monitoring of gigabytes of logs every minute and charging customers accordingly. The most popular model which is used to define such metrics is called the chargeback model. 
 
 ![Figure 2.24: Metering in Different Types of Cloud Services](../media/metering1.png)
+
 _Figure 2.24: Metering in Different Types of Cloud Services_
 
 ##  Chargeback Model
@@ -21,16 +22,17 @@ From the customer’s point of view, verifiable metering is an important issue. 
 Although the underlying architecture of metering and measuring is hidden by corporate CSPs, Ceilometer is designed for OpenStack metering, billing and rating. The high-level architecture of OpenStack Ceilometer can be summarized as follows (Figure 2.25): 
 
 ![Figure 2.25: Ceilometer Architecture](../media/metering2.png)
+
 _Figure 2.25: Ceilometer Architecture_
 
- _Polling Agent_: A daemon which polls OpenStack services for metering. 
+_Polling Agent_: A daemon which polls OpenStack services for metering. 
 
- _Notification Agent_: A daemon which listens to notifications on the message queue and converts them into samples and events. 
+_Notification Agent_: A daemon which listens to notifications on the message queue and converts them into samples and events. 
 
- _Collector_: Daemon designed to gather metering data created by the notification and polling agents. 
+_Collector_: Daemon designed to gather metering data created by the notification and polling agents. 
 
- _API_: Service to query the data recorded by the collector. 
+_API_: Service to query the data recorded by the collector. 
 
- _Alarming_: Daemons to evaluate and trigger notifications based on predefined rules. 
+_Alarming_: Daemons to evaluate and trigger notifications based on predefined rules. 
 
 Each of these services are designed to scale horizontally. Additional workers and nodes can be added according to expected load.

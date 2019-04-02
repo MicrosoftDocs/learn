@@ -45,6 +45,7 @@ MongoDB manages collections and documents as files on a local file system. If an
 For small installations, MongoDB is deployed as as a single-node system. In order to scale MongoDB to multiple nodes, MongoDB support two scale-out modes: _replication_ and _sharding_. In replication, multiple copies of the same data are maintained over multiple servers, allowing for MongoDB to tolerate node failures in case a node goes down. A set of mongodb nodes that has the same data is known as a _replica set_. One node in a replica-set is known as the _primary_, the remaining nodes are known as _secondaries_. By default, only the primary node responds to requests from clients for both reads and writes. The primary node sends out messages to update the replicas whenever there is an operation that writes data. In this mode, MongoDB guarantees strict consistency as all requests for data are processed only by the primary node. 
 
 ![Figure 4.43: Replication in MongoDB](../media/mongo_replica.png)
+
 _Figure 4.43: Replication in MongoDB_
 
 A MongoDB replica-set is designed for automatic failover. If a node fails to respond for more than 10 seconds, it is presumed to be dead and the remaining nodes vote on which node should be the new primary node.
@@ -52,13 +53,14 @@ A MongoDB replica-set is designed for automatic failover. If a node fails to res
 In order to distribute data, MongoDB allows for data to be _sharded_ across multiple nodes. Each shard is an independent database, and collectively, the shards make up a single logical database. The architecture of a sharded MongoDB cluster is illustrated below:
 
 ![Figure 4.44: Sharding in MongoDB](../media/mongo_shards.png)
+
 _Figure 4.44: Sharding in MongoDB_
 
- _Shards_ store the data. To provide high availability and data consistency, in a production sharded cluster, each shard is a replica set. 
+_Shards_ store the data. To provide high availability and data consistency, in a production sharded cluster, each shard is a replica set. 
 
- _Query Routers_ interface with client applications and direct operations to the appropriate shard or shards. The query router processes and targets operations to shards and then returns results to the clients. A sharded cluster can contain more than one query router to divide the client request load. A client sends requests to one query router. Most sharded clusters have many query routers. 
+_Query Routers_ interface with client applications and direct operations to the appropriate shard or shards. The query router processes and targets operations to shards and then returns results to the clients. A sharded cluster can contain more than one query router to divide the client request load. A client sends requests to one query router. Most sharded clusters have many query routers. 
 
- _Config servers_ store the cluster’s metadata. This data contains a mapping of the cluster’s data set to the shards. The query router uses this metadata to target operations to specific shards. 
+_Config servers_ store the cluster’s metadata. This data contains a mapping of the cluster’s data set to the shards. The query router uses this metadata to target operations to specific shards. 
 
 Data is distributed across multiple nodes using a specific key known as the _shard key_. MongoDB divides the shard key values into _chunks_ and distributes the chunks evenly across the nodes in the cluster. The shard keys can either be _hash-based_ or _range based_. In hash-based sharding the hash-value of a shard key is used to assign a document to a specific chunk. In range-based sharding, each chunk is assigned to a specific range of values of the shard key, and documents can then be assigned to a specific chunk. 
 
@@ -67,10 +69,10 @@ MongoDB allows administrators to direct the balancing policy using _tag aware sh
 ##  MongoDB Use Cases
 MongoDB can be used to meet specific challenges for certain types of applications:
 
- _Large, rapidly evolving data set_: MongoDB supports large amounts of data and has a very flexible schema-less design. For applications that evolve rapidly and require ever-changing schema, MongoDB may be a good choice.
+_Large, rapidly evolving data set_: MongoDB supports large amounts of data and has a very flexible schema-less design. For applications that evolve rapidly and require ever-changing schema, MongoDB may be a good choice.
 
- _Location-based data_: MongoDB is unique in its ability to store and index geo-spatial data in an efficient manner. For this reason, MongoDB is used quite extensively for applications that use geo-spatial or map data. (Examples include booking applications, location-based services, etc)
+_Location-based data_: MongoDB is unique in its ability to store and index geo-spatial data in an efficient manner. For this reason, MongoDB is used quite extensively for applications that use geo-spatial or map data. (Examples include booking applications, location-based services, etc)
 
- _Applications with a high write load_: MongoDB has built-in support for bulk inserts and supports a high-insert rate, while having relaxed transaction safety when compared to RDBMSes.
+_Applications with a high write load_: MongoDB has built-in support for bulk inserts and supports a high-insert rate, while having relaxed transaction safety when compared to RDBMSes.
 
- _High availability in an unreliable environment_: MongoDB's architecture allows for near-instant, automatic recovery from the failure of a Node when replication is configured. This is especially useful in unreliable environments. 
+_High availability in an unreliable environment_: MongoDB's architecture allows for near-instant, automatic recovery from the failure of a Node when replication is configured. This is especially useful in unreliable environments. 

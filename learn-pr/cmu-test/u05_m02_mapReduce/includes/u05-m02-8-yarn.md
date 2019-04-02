@@ -12,10 +12,12 @@ The fundamental change pursued in redesigning MapReduce 1.0 was segregating JT f
 1. Instead of using a single master, JT, for all applications, YARN appoints one master per application, an _ApplicationMaster (AM)_. AMs can be distributed across cluster nodes to avoid application SPOFs and potential performance degradations. 
 1. TTs have remained effectively unchanged but are now called _NodeManagers (NMs)_.
 ![Figure 5.22: Elements of the YARN architecture: one RM, one ASM, one S, many AMs, and many NMs](../media/YARN_architecture.png)
+
 _Figure 5.22: Elements of the YARN architecture: one RM, one ASM, one S, many AMs, and many NMs_
 
 ##  Components of YARN
 ![Figure 5.23: The architecture of a YARN cluster](../media/YARN.png)
+
 _Figure 5.23: The architecture of a YARN cluster_
 
 A per-cluster _Resource Manager (RM)_ resides in the master node (Figure 5.23). The RM accepts application/job submissions by a client, allocates resources to jobs, monitors the cluster state and manages the access to resources. The RM has two components: the Scheduler (S), which schedules job, and the Applications Manager, which creates, manages, monitors, restarts and kills jobs. 
@@ -35,6 +37,7 @@ A _container_ represents a lease for an allocated resource in the cluster. A lea
 When requiring compute resources, the AM presents to the RM Scheduler a series of container requests. The protocol understood by the Scheduler is `<priority, (host, rack, *), resources, #containers>`. The RM Scheduler assigns or allocates containers in the same format. A snapshot from the RM log, shows how the RM allocates a container (Figure 5.24):
 
 ![Figure 5.24: Log snapshot of a container assignment in YARN. The important infromation in this entry are: 1. ContainerID, 2. Computer resources in this ContainerID, 3. ID of the node where the ContainerID resides, and 4. Resource report of this node after allocation ](../media/YARN_log1.png)
+
 _Figure 5.24: Log snapshot of a container assignment in YARN. The important infromation in this entry are: 1. ContainerID, 2. Computer resources in this ContainerID, 3. ID of the node where the ContainerID resides, and 4. Resource report of this node after allocation _
 
 ##  Job and Task Scheduling
@@ -58,6 +61,7 @@ The NM failures can also be detected by the RM. When a NM fails, all containers 
 
 ##  Job Flow for MapReduce on YARN
 ![Figure 5.25: Job flow in YARN executing a MapReduce job](../media/YARN_flow.png)
+
 _Figure 5.25: Job flow in YARN executing a MapReduce job_
 
 Figure 5.25 illustrates a typical MapReduce job flow in YARN. The steps in this flow are the following:
@@ -95,6 +99,7 @@ In the above example, `priority` defines the priority of the container which can
 1. The AM assigns a task to this container based on its knowledge of locality. The task will be executed by a Java application whose main class is `YarnChild`.
 ###  Status reports
 ![Figure 5.26: Heartbeating and Status reports in YARN](../media/YARN_status.png)
+
 _Figure 5.26: Heartbeating and Status reports in YARN_
 
 While the job is running, the tasks keep reporting their progress and status to the corresponding AM, which ensures that the AM has an aggregate view of the job (Figure 5.26). The Node Managers report liveness and resource utilization to the RM, which has a global view of the cluster.
@@ -112,12 +117,14 @@ We use snapshots to detail the execution process of this job on YARN:
 1. The RM assigns a `jobID` for this WordCount job.
 1. Information of this WordCount job is saved or copied to HDFS.
 1. The WordCount job is submitted to the RM (Figure 5.27).![Figure 5.27: Job submission log](../media/YARN_log2.png)
+
 _Figure 5.27: Job submission log_
 
 
 1. The RM communicates with the NM to allocate a container for the AM.
 1. The NM authenticates the container lease from the RM.
 1. The RM succeeds in launching the AM for the WordCount job (Figure 5.28). ![Figure 5.28 Job allocation log](../media/YARN_log3.png)
+
 _Figure 5.28 Job allocation log_
 
 
@@ -126,6 +133,7 @@ _Figure 5.28 Job allocation log_
 1. The AM sends the lease to NMs and a bunch of containers get running.
 1. The AM starts map task attempts, ready to run in containers. In our case, the AM, in the first place, starts 12 map task attempts because there aren’t enough resources for other container on our 4-node cluster.
 1. The AM then assigns containers to map task attempts based on its knowledge of data locality (Figure 5.29). ![Figure 5.29: Job assignment log](../media/YARN_log4.png)
+
 _Figure 5.29: Job assignment log_
 
 
@@ -136,6 +144,7 @@ _Figure 5.29: Job assignment log_
 1. The AM communicates with the NMs to clean up all remaining containers.
 1. The AM will notify the RM that the job is completed.
 1. The RM cleans up the AM. The whole WordCount job ends (Figure 5.30). ![Figure 5.30: Job cleanup log](../media/YARN_log5.png)
+
 _Figure 5.30: Job cleanup log_
 
 
@@ -143,6 +152,7 @@ _Figure 5.30: Job cleanup log_
 Shortly after the job starts, 12 map tasks (blue bars) start running (Figure 5.31). No more map task can be run because no more resources (containers) are available in the cluster to start another map task. We refer to several map tasks running in parallel as a wave, so, we have 12 map tasks in the first wave. After a period of time, some of the map tasks finish. Due to the _early shuffle_ mechanism (by default when 5% of the map tasks finish, reduce tasks are scheduled and the begin to shuffle). In this example, there are enough resources for four reduce tasks to start. Each reduce task has 3 sequential subphases: _shuffle_(red), _merge&sort_(yellow), _reduce function_(pink). While the 4 reduce tasks are performing an early shuffle, the second wave of map tasks begins to run. When the last map task completes, the whole map phase ends. Afterwards, the _merge&sort_ and _reduce functions_ can run. Afterwards, there are enough containers to run 3 more reduce tasks. The job finishes shortly after the last reduce task ends.
 
 ![Figure 5.31: Job execution timeline for wordcount](../media/wordcount_timeline.png)
+
 _Figure 5.31: Job execution timeline for wordcount_
 
 10The number of map and reduce slots are configurable parameters, which the users can set before submitting jobs to Hadoop MapReduce.

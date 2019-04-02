@@ -12,6 +12,7 @@ In the first unit of this course we will start with a simple overview of cloud c
 Information technology (IT) has become an essential requirement for most organizations to function effectively. Typically, and depending on a specific organization’s needs, IT has three components associated with it (Figure 1.1) - application software, development platforms and the underlying infrastructure:
 
 ![Figure 1.1: Typical Components of Information Technology.](../media/IT_components.png)
+
 _Figure 1.1: Typical Components of Information Technology._
 
 Traditionally, an organization that needs to deploy a particular IT solution has to procure, setup and maintain the infrastructure and the application; certain organizations may decide to develop their own software, in which case they need to manage development platforms as well. The organization hence "owns" the solution, which allows full control over the solution, including, for example, access security and customization, however, it has some drawbacks:
