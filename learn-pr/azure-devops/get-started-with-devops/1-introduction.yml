@@ -4,6 +4,6 @@ metadata:
   title: Introduction
   description: Introduction
 title: Introduction
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
  [!include[](includes/1-introduction.md)]

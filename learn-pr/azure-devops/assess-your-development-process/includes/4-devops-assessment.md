@@ -2,7 +2,7 @@ Alice, who is new to the team, is going to take the Microsoft DevOps Self-Assess
 
 The assessment comes in two forms &mdash; a long form and a shorter form. Being new to the team, Alice knows she doesn't understand everything so she's going to use the shorter form. Taking the assessment is a good first step. It will give the team an overall view of where they are in the DevOps process. With the results, everyone on the team has a common starting point for identifying the first steps towards improving Tailspin's development and release processes.
 
-Here's how you can take the assessemet with her. 
+Here's how you can take the assessment with her.
 
 ## Take the assessemt
 

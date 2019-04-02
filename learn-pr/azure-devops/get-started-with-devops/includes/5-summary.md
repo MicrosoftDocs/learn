@@ -1,0 +1,1 @@
+In this module, you learned about what DevOps is (and about what it isn't). You also learned about Microsoft's DevOps suite, Azure DevOps. You also set up an account, an organization and a project so that you can follow along with the Tailspin team as they gradually apply DevOps practices to their release process.
