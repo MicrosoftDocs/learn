@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 28
 content: |
   [!include[](includes/u05-m02-8-yarn.md)]

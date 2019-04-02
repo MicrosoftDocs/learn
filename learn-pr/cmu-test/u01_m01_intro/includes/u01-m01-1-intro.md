@@ -5,6 +5,7 @@ Cloud computing offers the use of computing resources as a service over the netw
 In the first unit of this course we will start with a simple overview of cloud computing, its definition, motivations, evolutions, building blocks, service models and use cases. We will also discuss economics, risks, benefits and security.
 
 ##  What is Cloud Computing?
+> [!TIP]
 > **Cloud Computing**
 > The delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.
 
