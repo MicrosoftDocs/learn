@@ -21,3 +21,118 @@
 -->
 
 <!-- Keep bulleted/numbered lists to seven items max. Break them up into groups with headers if necessary -->
+
+## Comments
+
+To  complete the exercise a WebSPI App and an OpenApi definition file must be available in the Azure sandbox instance.
+Below are instructions for deploying and cloning an existing webApi project. The design however states that this exercise should be about the use of Caching within APIM.
+
+## Required steps before exercise
+
+
+In this unit, you'll use the Cloud Shell code editor to create a .NET Core Web API and deploy it to Azure. 
+
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
+## Create a Web API in Azure Apps Service
+
+Start by creating a new Web API app in Azure Apps Service. You'll use this resource to host a test API, which you'll call from the Logic App later:
+
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. In the portal, select **Create a resource > Web > API App**.
+1. In the **API App** window, enter the following settings, and then click **Create**:
+
+    | Setting | Value |
+    | --- | --- |
+    | App name | Choose a unique name. Make a note of it, you'll need it later on. |
+    | Subscription | *Concierge Subscription* |
+    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group </rgn>* |
+    | App Service plan/Location | Leave default |
+    | Application Insights | Disabled |
+    | | |
+
+    ![Creating a Web API in the Azure portal](../media/3-create-web-api.png)
+
+## Configure git deployment for the API app
+
+We will use the `git` tool to deploy our Web API code. To configure the API app to support `git`:
+
+1. When the API App has been created, select **All resources** and then click the API App.
+1. In the **App Service** page, under **Deployment** click **Deployment Center**.
+
+    ![Configure deployment for an API App](../media/3-configure-deployment.png)
+
+1. Click **Local Git** and then click **Continue**.
+1. Click **App Service Kudu build server**, click **Continue**, and then click **Finish**.
+1. Click **Deployment Credentials** and then click the **User Credentials** tab.
+1. In the **Password** and **Confirm Password** textboxes, type **Pa$$w0rd** and then click **Save Credentials**.
+
+## Configure the git command
+
+[!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
+Before you can deploy the Web API, you must configure the **git** tool with your name and email address:
+
+1. In the Cloud Shell on the right, run the following command to set your full name to be recorded in newly created commits.
+
+    ```bash
+    git config --global user.name "Your Name"
+    ```
+
+1. In the Cloud Shell on the right, run the following command to set your email to be recorded in newly created commits.
+
+    ```bash
+    git config --global user.email "Your Email Address"
+    ```
+
+## Clone a Web API project
+
+We'll use `git` to clone a Web API project. This Web API includes a frame price calculation method That you will call from the Logic App. We'll also configure `git` to deploy code to Azure:
+
+1. In the Cloud Shell on the right, to create a Web API project and add the Swagger tool to it, run the following commands:
+
+    <!-- TODO: when the GitHub repo is ready for this module, add its URL to the git clone command here. The sample Web API is in the code folder. -->
+
+    ```bash
+    git clone **GitHub Repo URL**
+    cd PrintFramerAPI
+    ```
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
+1. On the **Overview** page, to the right of the **Git clone URL** field, select **Click to copy**.
+
+    ![Obtain the git clone URL from the portal](../media/3-obtain-git-url.png)
+
+1. In the Cloud Shell, run the following command, pasting in the URL that you copied:
+
+    ```bash
+    git remote add production **git URL**
+    ```
+
+    This command adds a remote named production for the repository at the URL you gave.
+
+## Deploy the Web API
+
+Now, you can deploy the Web API to Azure:
+
+1. In the Cloud Shell, run the following commands to commit your code:
+
+    ```bash
+    git add .
+    git commit -m "Version 1 completed"
+    ```
+
+1. To deploy the Web API, run the following command, and enter a password. Remember the password you chose,  because you'll need it later.
+
+    ```bash
+    git push --set-upstream production master
+    ```
+
+## Test the deployed Web API
+
+Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition:
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
+1. On the **Overview** page, select **Browse**. The browser displays the home page for the API, which is blank.
+1. In the **Address** bar, append the URL with **/api/values/6/7/uk**. The browser displays a result.
+1. In the **Address** bar, replace **/api/values/6/7** with **/swagger**. The browser displays the Swagger UI.
