@@ -53,7 +53,7 @@ Start by creating a new Web API app in Azure Apps Service. You'll use this resou
 We will use the `git` tool to deploy our Web API code. To configure the API app to support `git`:
 
 1. When the API App has been created, select **All resources** and then click the API App.
-1. In the **App Service** page, under **Deployment** click **Deployment Center**.
+1. In the **App Service** response, under **Deployment** click **Deployment Center**.
 
     ![Configure deployment for an API App](../media/3-configure-deployment.png)
 
@@ -94,7 +94,7 @@ We'll use `git` to clone a Web API project. This Web API includes a frame price 
     ```
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
-1. On the **Overview** page, to the right of the **Git clone URL** field, select **Click to copy**.
+1. On the **Overview** response, to the right of the **Git clone URL** field, select **Click to copy**.
 
     ![Obtain the git clone URL from the portal](../media/3-obtain-git-url.png)
 
@@ -128,7 +128,7 @@ Now, you can deploy the Web API to Azure:
 Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
-1. On the **Overview** page, select **Browse**. The browser displays the home page for the API, which is blank.
+1. On the **Overview** response, select **Browse**. The browser displays the home response for the API, which is blank.
 1. In the **Address** bar, append the URL with **/api/values/6/7/uk**. The browser displays a result.
 1. In the **Address** bar, replace **/api/values/6/7** with **/swagger**. The browser displays the Swagger UI.
 
@@ -141,7 +141,8 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 ## Create a new Azure APIM instance
 
 1. This will deploy a lot faster if the cosumption pricing tier is chosen for deployment.
-<! The preview seems to have caching disabled so we are using the standard tier >
+
+<!--The preview seems to have caching disabled so we are using the standard tier-->
 
 1. This is only available as a preview in the following regions
 
@@ -182,7 +183,7 @@ You are now ready to run your managed API  in Test.
 
 1. Region Code UK
 
-1. Note the result and run again with the same parameters, the date time will increment as this page is not being 
+1. Note the result and run again with the same parameters, the date time will increment as this response is not being cached
 
 This time lets add a policy to control the caching of the  GetQuery Operation.
 
