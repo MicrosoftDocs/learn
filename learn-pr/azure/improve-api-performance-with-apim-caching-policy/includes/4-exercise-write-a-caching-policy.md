@@ -182,6 +182,14 @@ You are now ready to run your managed API  in Test.
 
 1. Region Code UK
 
-1. Note the result and run again with the same parameters, the date time will increment as this page is not being casched.
+1. Note the result and run again with the same parameters, the date time will increment as this page is not being 
+
+This time lets add a policy to control the caching of the  GetQuery Operation.
+
+1. Select the GetQuery operation and choose Inbound Processing
+
+2. Select cache responses and enter a value of 30 to cache the response for 30 seconds.
+
+3. Run in test with the same parameters as before. Note the date time will remain the same until the cache has reached it expiry value.
 
 
