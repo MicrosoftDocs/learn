@@ -1,9 +1,9 @@
-Artificial Intelligence helps organizations digitally transform by infusing new experiences with capabilities to make them smart, fast and helpful. To harness this potential, organizations must be ready to create, own and operate AI-based systems. A successful AI strategy must consider cultural issues as well as business issues. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors.
+Can a finance department intelligently automate processes and empower employees to deliver more forward-looking insights and forecasts with AI?  This module is designed for finance and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
 
 **In this module, you will learn to:**
 
-* Describe the key elements of an AI-ready organizational culture.
-* Identify opportunities for change to achieve an AI-ready culture.
-* Apply the AI Maturity Model Assessment to your business.
+* Recognize the key elements of an AI-ready organizational culture in finance.
+* Explain how Microsoft incorporated AI into our finance processes.
+* Identify opportunities for change to achieve an AI-ready culture in your finance department.
 
-Let’s explore what we mean when ask you to think about what it means for your organization to be AI-ready.
+Let’s explore what we mean when ask you to think about what it means for your finance department to be AI-ready.
