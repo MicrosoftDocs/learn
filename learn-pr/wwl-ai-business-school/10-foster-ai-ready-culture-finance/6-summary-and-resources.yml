@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-10-foster-ai-culture-finance.7-summary-and-resources
+uid: learn-wwl.data-10-foster-ai-culture-finance.6-summary-and-resources
 title: Summary and resources
 metadata:
   title: Summary and resources
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2 
 content: |
-  [!include[](includes/7-summary-and-resources.md)] 
+  [!include[](includes/6-summary-and-resources.md)] 
