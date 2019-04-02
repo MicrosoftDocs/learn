@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
+uid: improve-api-performance-with-apim-caching-policy.7-Knowledge Check
+title: Check your Knowledge
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/1/2018
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+quiz:
+  title: 'Knowledge check'
+  questions:
+  - 
+  - content: 'Given that users are not being authenticated which type of throttling would you use to limit access based on IP Address'
+    choices:
+    - content: 'Custom throttling'
+      isCorrect: false
+    - content: 'User identity throttling '
+      isCorrect: false
+    - content: 'IP address throttling'
+      isCorrect: true
+    - content: 'client Driven Throttling.'
+      isCorrect: false
+
+  -
