@@ -95,16 +95,16 @@ Policys are evaluated in order of scopes Global, Product, API, Operations.
 
 The All APIS menu item is at Global Scope
 
-![Global All API Scope](../media/GlobalScope)]
+![Global All API Scope](../media/GlobalScope.png)
 
 The XML editor is accessed by the </> 
 
-![Global All API Scope](../media/GlobalScopeEditor)]
+![Global Scope Editor](../media/GlobalScopeEditor.png)
 
 
 Choosing Add Policy In the various processing areas launches a wizard to aid adding your values in the correct part of the policy document
 
-![Global All API Scope](../media/GlobalPolicyWiz)]
+![Global All API Scope](../media/globalpolicywiz.png)
 
 
 

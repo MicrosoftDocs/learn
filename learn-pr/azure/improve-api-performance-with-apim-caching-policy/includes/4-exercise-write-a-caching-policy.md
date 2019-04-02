@@ -158,19 +158,19 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 
 ## Import the API into Azure APIM
 
-![Select your API](../media/chooseapi.png)]
+![Select your API](../media/chooseapi.png)
 
 1. Select OpenAPI
 
 1. Complete the Wizard and press create
 
 
-![Complete Wizard](../media/createfomopenapi.png)]
+![Complete Wizard](../media/createfomopenapi.png)
 
 
 1. Add the Web Service URL
 
-![Add website URL](../media/settings.png)]
+![Add website URL](../media/settings.png)
 
 You are now ready to run your managed API  in Test.
 
