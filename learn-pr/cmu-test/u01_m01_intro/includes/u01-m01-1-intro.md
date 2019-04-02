@@ -7,6 +7,7 @@ In the first unit of this course we will start with a simple overview of cloud c
 ##  What is Cloud Computing?
 > [!TIP]
 > **Cloud Computing**
+>
 > The delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.
 
 

@@ -23,4 +23,4 @@ As presented in Video 3.8, binary translation tries to amortize the fetch and an
 |Direct-Threaded Interpreter|High|Slow|Medium|Medium|
 |Binary Translation|High|Very slow|Fast|Poor|
 
-../webcontent/didIGetThis3.xml
+`../webcontent/didIGetThis3.xml`

@@ -18,4 +18,4 @@ If a processor does not satisfy Popek and Goldberg's virtualization requirement,
 
 _Figure 3.22: Code scanning and patching to enforce critical instructions to trap to the hypervisor. The code is shown in a format close to a control flow diagram._
 
-../webcontent/didIGetThis.xml../webcontent/didIGetThis2.xml
+`../webcontent/didIGetThis.xml` `../webcontent/didIGetThis2.xml`

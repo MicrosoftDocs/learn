@@ -4,6 +4,7 @@
 Formally, a data center can be defined as follows:
 > [!TIP]
 > **Data center**
+>
 > Infrastructure dedicated to housing computer and networking equipment, including power, cooling, and networking.
 
 
