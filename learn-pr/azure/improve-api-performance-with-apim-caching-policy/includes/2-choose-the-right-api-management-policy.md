@@ -91,7 +91,7 @@ Transform XML uses an XSLT template to carry out  XSL transformation to XML in t
 
 Policys are evaluated in order of scopes Global, Product, API, Operations.
 
-**The Global Policy Editor**
+**The Global Policy Scope**
 
 The All APIS menu item is at Global Scope
 
@@ -108,3 +108,23 @@ Choosing Add Policy In the various processing areas launches a wizard to aid add
 
 
 
+**The Product Policy Scope**
+
+This is used for configuring various items as well as policies
+
+![Product Scope](../media/ProductsScope.png)
+
+
+**API Policy Scope**
+
+This scope is for all operations of a particular API
+
+![API Scope](../media/APIscope.png)
+
+
+
+**Operation Scope**
+
+This scope is for individual operations of an API
+
+![API Scope](../media/OperationScope.png)

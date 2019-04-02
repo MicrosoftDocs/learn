@@ -46,7 +46,7 @@ Start by creating a new Web API app in Azure Apps Service. You'll use this resou
     | Application Insights | Disabled |
     | | |
 
-    ![Creating a Web API in the Azure portal](../media/3-create-web-api.png)
+    ![Creating a Web API in the Azure portal](../media/-create-web-api.png)
 
 ## Configure git deployment for the API app
 
