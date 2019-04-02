@@ -24,7 +24,7 @@ quiz:
       isCorrect: false
     - content: 'IP address throttling'
       isCorrect: true
-    - content: 'client Driven Throttling.'
+    - content: 'client driven throttling.'
       isCorrect: false
 
   -
