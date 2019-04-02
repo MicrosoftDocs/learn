@@ -45,10 +45,10 @@ Identify the subtasks of *Analyze your Azure infrastructure with Azure Monitor l
     - Foundational concepts of Azure Monitor
         - How Log data is collected by Azure Monitor
         - Example scenarios, plus some detail about how it fits this module's scenario
-    - Metrics, copy metrics to logs to perform complex analysis with other data types using Azure Monitor's rich query language
+    - Metrics, copy metrics to logs to perform complex analysis with other data types using Azure - Monitor's rich query language
         - Where are the queries used and how we can use them to quickly retrieve, consolidate, and analyze collected data
 
-1. **Knowledge check**
+    Include a knowledge check in this unit:
 
     - What data does Azure Monitor collect?
     - What two fundamental types of data are collected by Azure Monitor?
@@ -56,9 +56,20 @@ Identify the subtasks of *Analyze your Azure infrastructure with Azure Monitor l
 1. **Create basic Azure Monitor log queries to extract information from log data**
     - Look at a basic Azure Monitor log setup
         - Azure Monitor Log Analytics in the Azure portal to write Azure Monitor log queries.
+    - How to write queries with the Kusto language. Describe the structure of a query.
+    - Some example queries:
+        - Searching for text in the RenderedDescription field
+        - Searching for events in a given weeke
+        - Searching for the last heartbeat from a computer IP.
 
 1. **Exercise - Create basic Azure Monitor log queries to extract information from log data**
-    1. Goto the following URL: https://portal.loganalytics.io/demo#/discover/query/main or you can access the logs in your own portal under Monitor -> Logs
+    In the introduction to this unit, describe how the operations team does not have enough information about the behavior of their systems to diagnose problems early. In the exercises, show how the queries can resolve this issue.
+
+    1. Goto the following URL: https://portal.loganalytics.io/demo#/discover/query/main 
+
+        > [!NOTE]
+        > Students may also want to run queries in your own subscription under Monitor -> Logs. Include a note to say they can do this, but results depend on the resources that are in use in their subscription.
+
     1. Enter a basic query where it says Type your query here...
          - SecurityEvent
         | take 10
