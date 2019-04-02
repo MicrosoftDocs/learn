@@ -87,3 +87,24 @@ Rewrite URL Converts a request URL from its public form to a form expected a par
 .
 Transform XML uses an XSLT template to carry out  XSL transformation to XML in the request or response body.
 
+## Policy Scopes ##
+
+Policys are evaluated in order of scopes Global, Product, API, Operations.
+
+**The Global Policy Editor**
+
+The All APIS menu item is at Global Scope
+
+![Global All API Scope](../media/GlobalScope)]
+
+The XML editor is accessed by the </> 
+
+![Global All API Scope](../media/GlobalScopeEditor)]
+
+
+Choosing Add Policy In the various processing areas launches a wizard to aid adding your values in the correct part of the policy document
+
+![Global All API Scope](../media/GlobalPolicyWiz)]
+
+
+
