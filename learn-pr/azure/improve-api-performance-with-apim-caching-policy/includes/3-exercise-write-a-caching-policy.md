@@ -22,15 +22,10 @@
 
 <!-- Keep bulleted/numbered lists to seven items max. Break them up into groups with headers if necessary -->
 
-## Comments
-
-To  complete the exercise a WebSPI App and an OpenApi definition file must be available in the Azure sandbox instance.
-Below are instructions for deploying and cloning an existing webApi project. The design however states that this exercise should be about the use of Caching within APIM.
-
-## Required steps before exercise
 
 
-In this unit, you'll use the Cloud Shell code editor to create a .NET Core Web API and deploy it to Azure. 
+In this Exercise, you'll use the Cloud Shell code editor to create a .NET Core Web API and deploy it to Azure. This Api will then be imported into Azure APIM and a caching policy applied to it.
+
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -87,7 +82,7 @@ Before you can deploy the Web API, you must configure the **git** tool with your
 
 ## Clone a Web API project
 
-We'll use `git` to clone a Web API project. This Web API includes a frame price calculation method That you will call from the Logic App. We'll also configure `git` to deploy code to Azure:
+We'll use `git` to clone a Web API project. This Web API includes a frame price calculation method That includes 3 parameters for use with the caching exercise We'll also configure `git` to deploy code to Azure:
 
 1. In the Cloud Shell on the right, to create a Web API project and add the Swagger tool to it, run the following commands:
 
@@ -95,7 +90,7 @@ We'll use `git` to clone a Web API project. This Web API includes a frame price 
 
     ```bash
     git clone **GitHub Repo URL**
-    cd PrintFramerAPI
+    cd PictureFramingAPI
     ```
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
@@ -136,3 +131,37 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 1. On the **Overview** page, select **Browse**. The browser displays the home page for the API, which is blank.
 1. In the **Address** bar, append the URL with **/api/values/6/7/uk**. The browser displays a result.
 1. In the **Address** bar, replace **/api/values/6/7** with **/swagger**. The browser displays the Swagger UI.
+
+## Save the OpenAPI definition
+
+1. Locate the file via the link on the swagger interface
+
+1. Copy the contents and save to a new json file.
+
+## Create a new Azure APIM instance
+
+1. This will deploy a lot faster if the cosumption pricing tier is chosen for deployment.
+
+1. This is only available as a preview in the following regions
+
+    -  westus
+    -  northcentralus
+    -  westeurope
+    - northeurope
+    -  southeastasia
+    -  australiaeast
+
+1. After creation pin this to the dashboard
+
+
+## Import the API into Azure APIM
+
+![Select your API](../media/chooseapi.png)]
+
+1. Select OpenAPI
+
+1. Complete the Wizard and press create
+
+
+![Select your API](../media/chooseapi.png)]
+
