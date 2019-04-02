@@ -100,17 +100,91 @@ Data parallelism is achieved when each node runs one or many tasks on different 
 _Figure 5.10: An MPMD distributed program using the message-passing programming model_
 
 
-_Graph parallelism_, on the other hand, focuses on distributing computation as opposed to data. Most distributed programs actually fall somewhere on a continuum between the two forms. Graph parallelism is widely used in many domains such as machine learning, data mining, physics, and electronic circuit design, among others. Many problems in these domains can be modeled as graphs in which vertices represent computations and edges encode data dependencies or communications. Recall that a graph G is a pair (V,E), where V is a finite set of vertices and E is a finite set of pairwise relationships, Esub(VtimesV), called edges. Weights can be associated with vertices and edges to indicate the amount of work at each vertex and the communication data on each edge. 
+_Graph parallelism_, on the other hand, focuses on distributing computation as opposed to data. Most distributed programs actually fall somewhere on a continuum between the two forms. Graph parallelism is widely used in many domains such as machine learning, data mining, physics, and electronic circuit design, among others. Many problems in these domains can be modeled as graphs in which vertices represent computations and edges encode data dependencies or communications. Recall that a graph 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi></m:mrow></m:math>
+-->
 
-Consider a classical problem from circuit design: the common goal of keeping certain pins of several components electrically equal by wiring them together. If we assume `n` pins, then an arrangement of `(n – 1)` wires, each connecting two pins, can be employed. Of all such arrangements, the one requiring the minimum number of wires is normally the most desirable. Obviously, this wiring problem can be modeled as a graph problem. In particular, each pin can be represented as a vertex, and each interconnection between a pair of pins (u,v) can be represented as an edge. A weight w(u,v) can be set between u and v to encode the cost (the amount of wires needed) to connect u and v. The problem becomes how to find an acyclic subset, S, of edges, E, that connects all the vertices, V, and whose total weight 
-wS=sumu,visinSwu,v
+ is a pair 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+-->
+
+, where 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+-->
+
+ is a finite set of vertices and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+-->
+
+ is a finite set of pairwise relationships, 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi><m:mo lspace="2px" rspace="2px">sub</m:mo><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo lspace="2px" rspace="2px">times</m:mo><m:mi>V</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+-->
+
+, called edges. Weights can be associated with vertices and edges to indicate the amount of work at each vertex and the communication data on each edge. 
+
+Consider a classical problem from circuit design: the common goal of keeping certain pins of several components electrically equal by wiring them together. If we assume `n` pins, then an arrangement of `(n – 1)` wires, each connecting two pins, can be employed. Of all such arrangements, the one requiring the minimum number of wires is normally the most desirable. Obviously, this wiring problem can be modeled as a graph problem. In particular, each pin can be represented as a vertex, and each interconnection between a pair of pins 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+-->
+
+ can be represented as an edge. A weight 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+-->
+
+ can be set between 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
+-->
+
+ and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
+-->
+
+ to encode the cost (the amount of wires needed) to connect 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
+-->
+
+ and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
+-->
+
+. The problem becomes how to find an acyclic subset, 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>S</m:mi></m:mrow></m:math>
+-->
+
+, of edges, 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+-->
+
+, that connects all the vertices, 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+-->
+
+, and whose total weight 
+<!-- TODO fix
+<formula><m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mfenced open="(" close=")"><m:mi>S</m:mi></m:mfenced><m:mo>=</m:mo><m:mrow><m:msub><m:mo>sum</m:mo><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>S</m:mi></m:mrow></m:msub><m:mrow><m:mi>w</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:math></formula>
+-->
+
+
 is the minimum. As _S_ is acyclic and fully connected, it must result in a tree known as the _minimum spanning tree_. Consequently, solving the wiring problem morphs into solving the minimum spanning tree problem, a classical problem that is solvable with Kruskal's and Prim's algorithms, to mention a few.
 ![Figure 5.11: A graph partitioned using the edge-cut metric ](../media/edge_cut_metric.png)
 
 _Figure 5.11: A graph partitioned using the edge-cut metric _
 
 
-Once modeled as a graph, a program can be distributed over machines in a distributed system using a graph-partitioning technique, which involves dividing the work (vertices) over distributed nodes for efficient distributed computation. As with data parallelism, the basic idea is simple: by distributing a large graph across multiple machines, it becomes possible to process different parts of the graph in parallel, resulting in a graph-parallel design. The standard objective of graph partitioning is to distribute work uniformly over _p_ processors by partitioning the vertices into _p_ equally weighted partitions while minimizing internode communication reflected by edges. Such an objective is typically referred to as the standard edge-cut metric. While the graph partitioning problem is NP-hard, heuristics can achieve near optimal solutions. As a specific example, Figure 5.11 demonstrates three partitions, P1, P2, and P3, at which vertices {v1, …, v8} are divided using the edge-cut metric. Each edge has a weight of two corresponding to one unit of data communicated in each direction. Consequently, the total weight of the shown edge cut is 10. Other cuts will result in more communication traffic. Clearly, for communication-intensive applications, graph partitioning is critical and can play a dramatic role in dictating the overall application performance. Some of the challenges pertaining to graph partitioning are discussed in the section _Communication_. Both Pregel and GraphLab employ graph partitioning, and we further discuss each in later sections. 
+Once modeled as a graph, a program can be distributed over machines in a distributed system using a graph-partitioning technique, which involves dividing the work (vertices) over distributed nodes for efficient distributed computation. As with data parallelism, the basic idea is simple: by distributing a large graph across multiple machines, it becomes possible to process different parts of the graph in parallel, resulting in a graph-parallel design. The standard objective of graph partitioning is to distribute work uniformly over _p_ processors by partitioning the vertices into _p_ equally weighted partitions while minimizing internode communication reflected by edges. Such an objective is typically referred to as the standard edge-cut metric. While the graph partitioning problem is NP-hard, heuristics can achieve near optimal solutions. As a specific example, Figure 5.11 demonstrates three partitions, P<sub>1</sub>, P<sub>2</sub>, and P<sub>3</sub>, at which vertices {v<sub>1</sub>, …, v<sub>8</sub>} are divided using the edge-cut metric. Each edge has a weight of two corresponding to one unit of data communicated in each direction. Consequently, the total weight of the shown edge cut is 10. Other cuts will result in more communication traffic. Clearly, for communication-intensive applications, graph partitioning is critical and can play a dramatic role in dictating the overall application performance. Some of the challenges pertaining to graph partitioning are discussed in the section _Communication_. Both Pregel and GraphLab employ graph partitioning, and we further discuss each in later sections. 
 ##  Symmetrical and Asymmetrical Architectural Models
 
 The third design consideration is one of organizational structure. An application developer typically organizes a distributed program in a _master-slave_ (asymmetric) or _peer-to-peer_ (symmetric) architecture, as shown in Figure 5.12. Other organizations, such as hybrids, may be appropriate for special circumstances. For the purpose of this unit, we are only concerned with the master-slave and peer-to-peer organizations. 

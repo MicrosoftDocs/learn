@@ -3,6 +3,8 @@
 We shall now dive into the actual devices used to store and persist data in Video 4.2. This video should serve to be a refresher on various types of storage technologies that are available, with their relative cost-performance tradeoffs. 
 > [!VIDEO https://youtube.com/embed/LljF0TatEGk]
 
+_Video 4.2: Storage Devices_
+
 ##  Memory Hierarchy
 
 As a quick recap, the memory hierarchy is illustrated in Figure 4.3 below. The fastest (and most expensive) storage space in a modern computer is the on-chip registers, which consist of about sixteen 8 byte registers per core. These can be accessed within a single clock cycle (<1 nanosecond). Next, we have static RAM (SRAM), which the storage technology uses in cache memory, which can be accessed between 0.5 to 2.5 nanoseconds, but costs ~$10-50 per megabyte. Modern processors have a few megabytes of this type of memory located within the various levels (L1-L3) cache on the processor die. Each level differs in terms of capacity, access time, bandwidth and organization.

@@ -4,6 +4,8 @@
 Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both BigTable and Amazon's Dynamo. Cassandra uses the data model of BigTable and the implementation architecture of Dynamo. Video 4.18 covers Cassandra.
 > [!VIDEO https://youtube.com/embed/FU_VALh1xN0]
 
+_Video 4.18: Cassandra_
+
 ###  Cassandra Data Model
 
 Cassandra implements the data model of BigTable (which is similar to HBase's data model, as discussed on the previous page), with slightly different terminology. 

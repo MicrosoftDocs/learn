@@ -17,6 +17,9 @@ The business model for IT software has evolved over the years into the following
 The following video (Video 1.7) discusses the evolution of these models with examples:
 > [!VIDEO https://youtube.com/embed/yOTcTwWbEpk]
 
+_Video 1.7: Economics of cloud computing, software service models, and costs_ ([alternative
+							version](../media/video_3_IT_business_model.pdf))
+
 ##  Reducing Capital Expenditure
 
 Organizations choose to reduce their capital expenditures so that they limit the commitment of large investments for long-lived IT resources. Shifting expenses away from capital expenditures into operational expenditure enables organizations to stretch their IT budgets and limit upfront costs. Specifically, organizations opt to make investments that have a bigger return on investment in the short term rather than investing in long-lived, depreciating IT resources. Operating expenses are pay-as-you-go, meaning organizations pay by the month and get value every month. With cloud computing, they can simply rent the resources and incur little to no capital expenditures.

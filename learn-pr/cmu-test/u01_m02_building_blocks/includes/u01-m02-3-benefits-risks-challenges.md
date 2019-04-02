@@ -4,6 +4,9 @@
 The popularity of cloud computing is driven by its numerous benefits, including improved economics, simplified IT management, scalability, flexibility, improved utilization, and a reduced carbon footprint. The following video (Video 1.6) discusses these benefits.
 > [!VIDEO https://youtube.com/embed/uKpFLuqOy-o]
 
+_Video 1.6: The benefits of cloud computing_ ([alternative
+						version](../media/video_2_benefits.pdf))
+
 
 Although presented earlier and in the video above, let us consider the cloud benefits individually:
 

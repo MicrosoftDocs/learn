@@ -4,11 +4,17 @@
 As you recall from the introduction unit, multiple servers are virtualized and consolidated onto fewer physical hosts to increase utilization and decrease energy costs. This improvement is helpful, but the demand for IT-related services in organizations continues to grow, as does the number of Web-based startup companies, which have a higher proportional demand for IT equipment. 
 > [!VIDEO https://youtube.com/embed/bkjdGO0jz3E]
 
+_Video 2.4: Data center efficency._
+
 
 To see why server utilization is important, let us discuss power consumption when a server is idle (the CPUs are not doing anything, but the HDDs are spinning, and RAM and I/O devices still consume power) versus when the server is at maximum load (when all CPUs are at 100% utilization).
 
-To estimate the power consumption (P) at a specific utilization (n%) use the following formula:
-Pn=(PmaxminusPidle)timesn100+Pidle
+To estimate the power consumption ( `P`) at a specific utilization ( `n`%) use the following formula:
+<!-- TODO fix
+<formula><m:math display="block" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>P</m:mi><m:mi mathsize="small">n</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext><m:mo>=</m:mo><m:mo stretchy="false">(</m:mo><m:mi>P</m:mi><m:mi mathsize="small">max</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext><m:mo>minus</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>P</m:mi><m:mi mathsize="small">idle</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext><m:mo stretchy="false">)</m:mo><m:mo lspace="4px" rspace="4px">times</m:mo><m:mfrac><m:mi>n</m:mi><m:mn>100</m:mn></m:mfrac><m:mo lspace="4px" rspace="4px">+</m:mo><m:mi>P</m:mi><m:mi mathsize="small">idle</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext></m:mrow></m:math></formula>
+-->
+
+
 Through empirical measurements, this approximation is accurate to within ±5% across utilization rates.
 
 If an organization wants to decrease its overall monthly operating expenses, it has to do so both inside the rack and outside the rack, and to minimize the latter, you must first understand power usage effectiveness (PUE).
@@ -19,7 +25,11 @@ As we have read earlier, a data center draws a significant amount of power, from
 The power drawn by a data center is shared between the IT equipment and the support equipment, such as the power distribution and cooling facilities. Data center energy efficiency can be thought of as the ratio of the energy delivered to the IT equipment to the total energy delivered to the data center. Clear and standardized efficiency metrics are needed to help data centers to understand their energy efficiency, identify areas for improvement, and perform comparisons over time.
 
 The [Green Grid](http://www.thegreengrid.org/) consortium has developed the PUE and its inverse, the data center infrastructure efficiency (DCIE). The PUE is simply the ratio of the total power entering the data center divided by the power used by the IT equipment. PUE measures how efficiently the power is delivered to the IT equipment in the data center.
-PUE =total data center powertotal IT equipment power
+<!-- TODO fix
+<formula><m:math display="block" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mtext fontfamily="Times New Roman">PUE </m:mtext><m:mo>=</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mfrac><m:mtext>total data center power</m:mtext><m:mtext>total IT equipment power</m:mtext></m:mfrac></m:mrow></m:math></formula>
+-->
+
+
 If a data center's PUE is 3.0, then the data center facilities (e.g., power distribution, cooling) utilizes 2 units of energy for every unit delivered to the IT equipment. The lower the PUE, the more efficient the data center facilities. An ideal PUE is 1.0, which would indicate 100% efficiency, meaning that all the power drawn by the data center was delivered to the IT equipment.
 
 In 2007, the Lawrence Berkeley National Labs (LBNL) ran an energy study for 25 data centers (see Figure 2.19). The best PUE, 1.14, resulted in about 87% of the site energy reaching the IT equipment, while in the worst case (PUE 3.0), only 33% makes it to the IT equipment.
@@ -50,7 +60,7 @@ _Figure 2.21: Row-level and rack-level PDUs._
 Three-phase power (often denoted with Greek letter phi [3Φ]) is how AC electricity is generated and transmitted, with each phase a sine wave that is 120 degrees apart. It is not common to have three-phase power in homes, but it is common in industrial buildings and a requirement in any modern data center. It is important to keep each phase as evenly loaded as possible. You should not plug all servers into one branch before going on to the next—stagger them instead. The important thing to know is that the total power that can be handled by a three-phase circuit is greater than that of a single phase (1Φ) for each copper wire (same thickness/gauge).
 |Phase|1Φ|3Φ|
 |--|--|--|
-|Power Equation|W=VtimesI|3timesVlinetimesIline3|
+|Power Equation|<br><!-- TODO fix<br><m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>W</m:mi><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>=</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>V</m:mi><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo lspace="2px" rspace="2px">times</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>I</m:mi></m:mrow></m:math><br>-->|<br><!-- TODO fix<br><m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mn>3</m:mn><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo lspace="2px" rspace="4px">times</m:mo><m:mfrac><m:mrow><m:mi>V</m:mi><m:mi mathsize="small">line</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext><m:mo lspace="3px" rspace="3px">times</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>I</m:mi><m:mi mathsize="small">line</m:mi></m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mfrac></m:mrow></m:math><br>-->|
 |Wires Needed|Hot, Neutral, Ground|Phase1, Phase2, Phase3, Neutral, Ground|
 |Watts/Wire|1.0x|1.8x|
 

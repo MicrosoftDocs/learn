@@ -38,7 +38,17 @@ Now that we have studied some primitives, let us see how all these operations fi
 
 The PageRank algorithm iteratively updates a rank for each URL by adding contributions from URLs that link to it. PageRank assumes that a web surfer starting on a random page has an 85% chance to select a random link from their current page, and a 15% chance to jump to a random page anywhere on the Internet.
 
- On each iteration, each URL contributes r/n to its neighbors, where r is its own rank, and n is the number of neighbors of that node. It then updates its rank to aN + (1minusa)sumci , where is the sumci is the sum of all received contributions and N is the total number of documents. _a_ indicates the probability that a random surfer starting from a web page will stop clicking through. This is known as the damping factor (as mentioned above, studies have found it to have a probability of about 0.85).
+ On each iteration, each URL contributes r/n to its neighbors, where r is its own rank, and n is the number of neighbors of that node. It then updates its rank to 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo fontfamily="Times New Roman"></m:mo><m:mfrac><m:mi>a</m:mi><m:mi>N</m:mi></m:mfrac><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> + (</m:mo><m:mn>1</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px">minus</m:mo><m:mi>a</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:mrow></m:math>
+-->
+
+ , where is the 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:math>
+-->
+
+ is the sum of all received contributions and N is the total number of documents. _a_ indicates the probability that a random surfer starting from a web page will stop clicking through. This is known as the damping factor (as mentioned above, studies have found it to have a probability of about 0.85).
 
 Consider the following PageRank Scala program: 
 ``` java
@@ -60,7 +70,12 @@ for (i &lt;- 1 to ITERATIONS)
 ```
 
 
-In this Spark implementation of PageRank, our input dataset consists of a text file of the format `(URL, rank)`. For each iteration, a join operation on `links` and `ranks` is used to aggregate the contribution for each URL. The `contribs` RDD represents the contribution sent by each URL. These are summed up over each key (using a reduce) and this value is then updated using the PageRank formula aN + (1minusa)sumci. Once the `ranks` RDD is updated, the process repeats again for the number of iterations specified. 
+In this Spark implementation of PageRank, our input dataset consists of a text file of the format `(URL, rank)`. For each iteration, a join operation on `links` and `ranks` is used to aggregate the contribution for each URL. The `contribs` RDD represents the contribution sent by each URL. These are summed up over each key (using a reduce) and this value is then updated using the PageRank formula 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo fontfamily="Times New Roman"></m:mo><m:mfrac><m:mi>a</m:mi><m:mi>N</m:mi></m:mfrac><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> + (</m:mo><m:mn>1</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px">minus</m:mo><m:mi>a</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:mrow></m:math>
+-->
+
+. Once the `ranks` RDD is updated, the process repeats again for the number of iterations specified. 
 ![Figure 5.37: Lineage graph for the Spark PageRank example](../media/spark_example.png)
 
 _Figure 5.37: Lineage graph for the Spark PageRank example_

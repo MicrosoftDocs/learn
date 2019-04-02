@@ -3,6 +3,8 @@
 File systems are typically used to store arbitrary data as files on disks with some form of metadata (such as a filename) used to identify and locate these files. File systems offer rudimentary search and indexing capabilities, and searching the contents of files to find the information you need is often an involved and laborious process. When the data is amenable to structuring, it is typical to organize it in a _database_, using a well-defined model (also known as a _schema_). Video 4.5 provides an overview of Databases:
 > [!VIDEO https://youtube.com/embed/9f8eIEOrcz8]
 
+_Video 4.5: Databases_
+
 
 A database consists of an organized collection of data for one or more uses, typically in digital form. Databases are one of the most popular information storage and retrieval methods for many types of applications, including financial, manufacturing, business, and personnel data. 
 

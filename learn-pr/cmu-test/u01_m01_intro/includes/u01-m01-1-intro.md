@@ -30,6 +30,8 @@ The transformation of a certain technology from a product to a service is not ne
 The following video (Video 1.1) discusses the transformation of IT from a product to a service:
 > [!VIDEO https://youtube.com/embed/HaVqHgg7zv4]
 
+_Video 1.1: Introduction to Cloud Computing._ ([Alternative version](../media/video_1_intro.pdf))
+
 
 In cloud computing, users or organizations use computing resources as a service and pay for them as a utility, in a pay-as-you-go model. When a request is made for computing resources, the cloud provider typically _provisions_ these resources, in a rapid manner (minutes or hours). As the need for these resources changes, users or organizations can rapidly scale up or down their resources on demand.
 

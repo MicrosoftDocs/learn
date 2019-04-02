@@ -24,23 +24,88 @@ The graph can be partitioned across the cluster machines in a number of ways (Fi
 
 ______________________________________________________________________________________
 
-_Algorithm 1:_ Greedy Edge-Cuts for placement of edge e=lcubvi,vjrcub for vertex vi
+_Algorithm 1:_ Greedy Edge-Cuts for placement of edge 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo></m:mrow></m:math>
+-->
+
+ for vertex 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
+
+
 
 ______________________________________________________________________________________
 
-- _if_ there exists a machine that has been assigned both vi and vj _then_
-    - Assign vj to this machine
+- _if_ there exists a machine that has been assigned both 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
 
-- _else if _vi and vj are assigned to different machines _then_
-    - Assign e to the machine that has the least number of edges assigned to it
+ and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+-->
 
-- _else if _vi and vj are assigned to different machines _then_
-    - Assign e to the machine that has the least number of edges assigned to it
+_then_
+    - Assign 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+-->
+
+ to this machine
+
+- _else if _
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
+
+ and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+-->
+
+ are assigned to different machines _then_
+    - Assign 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+-->
+
+ to the machine that has the least number of edges assigned to it
+
+- _else if _
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
+
+ and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+-->
+
+ are assigned to different machines _then_
+    - Assign 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+-->
+
+ to the machine that has the least number of edges assigned to it
 
 - _else_
-    - Assign e to the least loaded machine
+    - Assign 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+-->
 
-- Mark edge e as assigned
+ to the least loaded machine
+
+- Mark edge 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+-->
+
+ as assigned
 
 ______________________________________________________________________________________
 
@@ -53,7 +118,27 @@ Generating atoms for a given input graph completes the first phase of GraphLab's
 Construction of graph partitions at cluster machines concludes GraphLab's initialization phase, and the execution phase begins. 
 ###  Execution Phase
 
-As shown in Figure 5.46, each cluster machine runs an instance of the GraphLab engine, which incorporates two main parts: the data graph, and the user-defined functions that operate on the data graph. The data graph represents the user program state at a cluster machine and includes a directed graph G=V,E,D , where V is the set of vertices, E is the set of edges, and D is the user-defined data (e.g., parameters, user input data, and even statistical data). In GraphLab, data is associated with both vertices and edges. 
+As shown in Figure 5.46, each cluster machine runs an instance of the GraphLab engine, which incorporates two main parts: the data graph, and the user-defined functions that operate on the data graph. The data graph represents the user program state at a cluster machine and includes a directed graph 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mfenced open="(" close=")"><m:mrow><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo>,</m:mo><m:mi>D</m:mi></m:mrow></m:mfenced></m:mrow></m:math>
+-->
+
+ , where 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+-->
+
+ is the set of vertices, 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+-->
+
+ is the set of edges, and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi></m:mrow></m:math>
+-->
+
+ is the user-defined data (e.g., parameters, user input data, and even statistical data). In GraphLab, data is associated with both vertices and edges. 
 
 Computation is then represented as a stateless program that is executed on each vertex of the graph in parallel. This program consists of three distinct phases namely, _Gather_, _Apply_, and _Scatter_ ( _GAS_). 
 
@@ -63,9 +148,49 @@ _Gather Phase_: In the gather phase, each vertex (henceforth refferred to as the
 _(C) CMU Cloud Computing Course_
 
 
-In the equation above Du, Dv, and D(u,v) denote values and metadata for vertices u,v and edge u,v respectively. The user defined sum (CirclePlus) operation must be commutative and associative and can range from a numerical sum to the union of the data on all neighboring vertices and edges. 
+In the equation above 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi><m:mi mathsize="small">u</m:mi></m:mrow></m:math>
+-->
 
-_Apply Phase_: In the apply phase, the resulting value sum is used to update the value of the central vertex:
+, 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi><m:mi mathsize="small">v</m:mi></m:mrow></m:math>
+-->
+
+, and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi><m:mo mathsize="small" stretchy="false">(</m:mo><m:mi mathsize="small">u</m:mi><m:mo mathsize="small">,</m:mo><m:mi mathsize="small">v</m:mi><m:mo mathsize="small" stretchy="false">)</m:mo></m:mrow></m:math>
+-->
+
+ denote values and metadata for vertices 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
+-->
+
+,
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
+-->
+
+ and edge 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced></m:mrow></m:math>
+-->
+
+ respectively. The user defined sum (
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo lspace="2px" rspace="2px">CirclePlus</m:mo></m:mrow></m:math>
+-->
+
+) operation must be commutative and associative and can range from a numerical sum to the union of the data on all neighboring vertices and edges. 
+
+_Apply Phase_: In the apply phase, the resulting value 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo rspace="2px" largeop="false">sum</m:mo></m:mrow></m:math>
+-->
+
+ is used to update the value of the central vertex:
 ![(C) CMU Cloud Computing Course](../media/apply.png)
 
 _(C) CMU Cloud Computing Course_
@@ -87,4 +212,19 @@ _Figure 5.48: Execution of the Gather-Apply-Scatter functions on two machines th
 
 Figure 5.48 illustrates the resulting communication pattern of employing the GAS functions on a graph partitioned using the Greedy Edge-Cuts algorithm described earlier. Gather functions run locally on each machine that contains the ghost of a vertex. During the accumulation, these gathered values are sent to the machine that has the master copy of the vertex, where it can compute the function defined in the apply stage. Finally, the updated vertex data is copied to all machines that have ghost copies of the vertex and the scatter function is executed to propagate values to the adjacent vertices. 
 
-_Delta Caching_: There are situations where a vertex program will be triggered (made active) because of a change in only few of its neighbors. When the vertex is triggered, it will execute a gather operation from all neighbors, many of whom have not executed and hence will return values which are unchanged since the last time this particular vertex ran. GraphLab introduces a subtle optimization called delta caching, where the result of gather operations from all of the neighbors of a vertex are cached at that vertex. During the scatter operation that is run at the neighbouring vertices, an optional parameter, Deltaa can be sent, summarizing the change in the value of variable a between iterations. This value can be used to bypass the gather phase and added to the cached value of a to speed up execution. 
+_Delta Caching_: There are situations where a vertex program will be triggered (made active) because of a change in only few of its neighbors. When the vertex is triggered, it will execute a gather operation from all neighbors, many of whom have not executed and hence will return values which are unchanged since the last time this particular vertex ran. GraphLab introduces a subtle optimization called delta caching, where the result of gather operations from all of the neighbors of a vertex are cached at that vertex. During the scatter operation that is run at the neighbouring vertices, an optional parameter, 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>Delta</m:mi><m:mi>a</m:mi></m:mrow></m:math>
+-->
+
+ can be sent, summarizing the change in the value of variable 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>a</m:mi></m:mrow></m:math>
+-->
+
+ between iterations. This value can be used to bypass the gather phase and added to the cached value of 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>a</m:mi></m:mrow></m:math>
+-->
+
+ to speed up execution. 

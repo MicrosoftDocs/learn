@@ -156,4 +156,4 @@ Shortly after the job starts, 12 map tasks (blue bars) start running (Figure 5.3
 _Figure 5.31: Job execution timeline for wordcount_
 
 
-10The number of map and reduce slots are configurable parameters, which the users can set before submitting jobs to Hadoop MapReduce.
+<sup>10</sup>The number of map and reduce slots are configurable parameters, which the users can set before submitting jobs to Hadoop MapReduce.

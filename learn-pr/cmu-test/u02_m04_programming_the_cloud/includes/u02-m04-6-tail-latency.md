@@ -27,7 +27,11 @@ _Figure 2.35: Tail Latency Example _
 
 
 Consider a system where all leaf nodes have an average response time of 1 ms, but there is probability of a 1% that the response time is greater than 1000 ms (one second). If each query is handled by only a single leaf node, the probability of the query taking longer than one second is also 1%. However, as we increase the number of nodes to 100, the probability that the query will complete within one second drops to 36.6%, which means that there is a 63.4% chance that the query duration will be determined by the tail (lowest 1%) of the latency distribution. 
-0.99100
+<!-- TODO fix
+<formula><m:math display="block" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mfenced open="(" close=")"><m:msup><m:mn>0.99</m:mn><m:mn>100</m:mn></m:msup></m:mfenced></m:mrow></m:math></formula>
+-->
+
+
 If we simulate this for a variety of cases, we see that as the number of servers increase, the impact of a single slow query is more pronounced (notice that the graph below is monotonically increasing). Also, as the probability of these outliers decreases from 1% to 0.01%, the system is substantially lower. 
 ![Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study.](../media/tail_latency2.png)
 

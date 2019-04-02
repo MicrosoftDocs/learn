@@ -5,6 +5,8 @@ Data is simply a collection of raw facts and figures. Applications are responsib
 The nature and properties of data typically influence the design and implementation of storage systems. Some of the properties include volume, content, and the frequency of access of data. As an example, Facebook recently studied the access patterns of image and video content posted by its users to find that the access rate exponentially decreases as time passes. They used these findings to design and implement a storage system specific to their needs. In video 4.1, we will look at the various properties of data that influence the design of storage systems.
 > [!VIDEO https://youtube.com/embed/Y0C5tA4TV0g]
 
+_Video 4.1: Characterizing Data_
+
 ##  Structure of Data
 
 Data can be categorized using its dynamicity and structure. Specifically, data can be broadly segmented into one of the four quadrants in Figure 4.1. One categorization represents the structure of the data, which is considered as either _structured_ or _unstructured_.
@@ -35,7 +37,7 @@ In addition to the type of data, the volume of data that needs to be stored and 
 
 In this regard, we touch on an often-used term to describe large volumes of data: _big data_. There are many definitions of big data, but one popular description summarizes it as data is too big to be handled using conventional techniques.
 
-The rapidly expanding information and communications technology (ICT) that is permeating all aspects of modern life has led to a massive explosion of data over the last few decades. Major advances in the connectivity and digitization of information has led to increasing amounts of data being created on a daily basis. These data are diverse, ranging from images and videos from mobile phones being uploaded to websites such as Facebook and YouTube, to 24/7 digital TV broadcasts, to surveillance footage from hundreds of thousands of security cameras, to large scientific experiments such as the Large Hadron Collider—all of which produce many terabytes of data every day. International Data Corporation's (IDC) latest Digital Universe Study predicts a 300-fold increase in the amount of data created globally from 130 exabytes (1028) in 2012 to 30,000 exabytes in 2020 (Figure 4.2).
+The rapidly expanding information and communications technology (ICT) that is permeating all aspects of modern life has led to a massive explosion of data over the last few decades. Major advances in the connectivity and digitization of information has led to increasing amounts of data being created on a daily basis. These data are diverse, ranging from images and videos from mobile phones being uploaded to websites such as Facebook and YouTube, to 24/7 digital TV broadcasts, to surveillance footage from hundreds of thousands of security cameras, to large scientific experiments such as the Large Hadron Collider—all of which produce many terabytes of data every day. International Data Corporation's (IDC) latest Digital Universe Study predicts a 300-fold increase in the amount of data created globally from 130 exabytes (10<sup>28</sup>) in 2012 to 30,000 exabytes in 2020 (Figure 4.2).
 ![Figure 4.2: Predicted growth of data from 2009 to 2020](../media/predicted_growth_data.png)
 
 _Figure 4.2: Predicted growth of data from 2009 to 2020_

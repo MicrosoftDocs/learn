@@ -44,6 +44,8 @@ SaaS is any application in which the end user has access to a software applicati
 The following video (Video 1.2) reviews these services:
 > [!VIDEO https://youtube.com/embed/ltJmJEI0gGA]
 
+_Video 1.2: Service Models in Cloud Computing._ ([Alternative version](../media/video_1_service_models.pdf))
+
 ###  The Software-as-a-Service Model
 > [!TIP]
 > **Software as a Service**
@@ -52,6 +54,8 @@ The following video (Video 1.2) reviews these services:
 
 SaaS is one of the most common cloud service models in which the cloud provider delivers software as an Internet service (as discussed in Video 1.3). SaaS users simply use their browsers to access the software, thus eliminating the need to install, run, and maintain (update, patch, reconfigure etc.) the application on the user's computer. The Web browser loads the SaaS application service dynamically and transparently.
 > [!VIDEO https://youtube.com/embed/bzfdewWofSU]
+
+_Video 1.3: Software as a Service._ ([Alternative version](../media/video_2_Software_as_a_Service.pdf))
 
 
 SaaS has become a common software delivery model for many business applications, including accounting, collaboration, customer relationship management (CRM), management information systems (MIS), enterprise resource planning (ERP), invoicing, human resource management (HRM), content management (CM) as well as service desk management. 
@@ -99,6 +103,8 @@ Another popular example of SaaS is online office suites, such as Google Drive an
 PaaS-based offerings allow users to develop, deploy, and scale applications on platforms that are offered by cloud providers (Video 1.4). PaaS is analogous to SaaS, except that, rather than software delivered over the Web, it is a platform for the creation of software that is delivered over the Web.
 > [!VIDEO https://youtube.com/embed/mxXm5s0hK8A]
 
+_Video 1.4: Platform-as-a-Service._ ([Alternative version](../media/video_3_Platform_as_a_Service.pdf))
+
 ###  Characteristics of PaaS
 
 PaaS offerings vary among providers but usually feature some basic functionality, which includes:
@@ -134,6 +140,8 @@ Google App Engine is an example of a PaaS. Using Google's APIs, developers can c
 
 In the IaaS model, providers rent out compute resources in the form of instances or virtual machines, which have some form of configurable CPU, memory, disk, and network bandwidth attached to them (Video 1.5). Once provisioned, IaaS users can remotely connect to these instances and configure their choice of platforms and applications. This model offers the most amount of flexibility to the IaaS users in terms of software development and deployment. Rather than purchasing servers, software, data center space, or network equipment, users rent those resources as a fully outsourced service on demand.
 > [!VIDEO https://youtube.com/embed/sjQSV-5RaLU]
+
+_Video 1.5: Infrastructure-as-a-Service._ ([Alternative version](../media/video_4_Infrastructure_as_a_Service.pdf))
 
 ##  Characteristics of IaaS
 

@@ -4,6 +4,8 @@
 Ceph is a storage system that can be deployed on large clusters of servers with attached disks. Video 4.14 covers the basic concepts behind Ceph.
 > [!VIDEO https://youtube.com/embed/-WzMtI_SfPI]
 
+_Video 4.14: Ceph_
+
 
 The design goals for Ceph include the following:
 - General-purpose storage cluster which is flexible to support a wide range of applications.
@@ -68,7 +70,7 @@ _Figure 4.34: The replication modes supported in RADOS. Figure from ._
 
 _Primary Copy Replication_: In the primary copy replication scheme, a client interacts with the first available OSD (the primary replica OSD) to interact with an object. The primary replica OSD will process the request and respond back to the client. In case of a write, the primary replica OSD will forward the write request to _r-1_ replicas which will then update their local copies of the object and respond to the master. The write operation on the master is delayed until all the writes are committed by the other OSDs for that object. The master will then acknowledge the write to the client. The write is not complete until all the replicas have responded to the primary copy OSD. The same process applies for reads, the primary copy will respond to a read only after all replicas have been contacted and the object value is the same across all replicas.
 
-_Chain Replication_: Requests for an object are forwarded down the chain until the rth (final) replica is found. If the operation is a write, it will be committed to each of the replicas on the way to the last replica. The final OSD containing the final replica will finally acknowledge the write to the client. Any read operation will be directed straight to the tail, in order to reduce the number of hops that are required to read the data from a cluster.
+_Chain Replication_: Requests for an object are forwarded down the chain until the r<sup>th</sup> (final) replica is found. If the operation is a write, it will be committed to each of the replicas on the way to the last replica. The final OSD containing the final replica will finally acknowledge the write to the client. Any read operation will be directed straight to the tail, in order to reduce the number of hops that are required to read the data from a cluster.
 
 _Splay Replication_: Splay replication combines elements of both primary copy replication and chain replication. Read requests are directed to the last OSD in the replica chain, while writes are first sent to the head. Unlike chain, the updates to the middle OSDs are done in parallel, similar to the primary copy replication scheme.
 
@@ -91,6 +93,8 @@ Node failures in RADOS are detected during a failure of communication between OS
 
 As indicated in Figure 4.31 above, the Ceph FS is a layer of abstraction over the RADOS storage system. RADOS does not have any notion of metadata for an object apart from object name. The Ceph file system allows for file metadata to be layered on top of individual file objects stored in RADOS. Video 4.15 explains teh concept of CephFS.
 > [!VIDEO https://youtube.com/embed/hdKxRV4JXhc]
+
+_Video 4.15: CephFS_
 
 
 In addition to the cluster node roles of OSDs and Monitors, Ceph FS introduces _metadata (MDS)_ servers (Figure 4.36). These servers store the file system metadata (the directory tree, as well as the access control lists and permissions, mode, ownership information, and timestamps for each file). 

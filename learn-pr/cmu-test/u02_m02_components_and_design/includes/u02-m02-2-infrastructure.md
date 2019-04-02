@@ -30,6 +30,8 @@ Most data centers implement strict physical security procedures—for good reaso
 The following video (Video 2.3) discusses various power distribution methods in data centers:
 > [!VIDEO https://youtube.com/embed/Xl4VjEqitSk]
 
+_Video 2.3: Data center power distribution methods._
+
 
 Reliability/uptime is often the number-one design consideration for a data center. Unfortunately, the power feeding the data center is not 100% reliable because of events such as bad weather conditions and downed power lines. In some locations, it is possible to get feeds from multiple electrical utility suppliers, but often this is not available. To keep the IT equipment powered on during a power outage, a generator can be installed. Backup generators come in two varieties, powered either by diesel fuel or natural gas. They could power the data center indefinitely as long as fuel is available, but both fuel sources are significantly more expensive than electricity from the grid. Generators are typically mounted outdoors due to fumes, noise, weight, and vibration. An automatic or universal transfer switch is a device that can choose a working power source (utility 1, utility 2, or generator) and connect it to the main power input to the data center.
 
@@ -87,9 +89,9 @@ The preferred system for putting out fires in a server room is to use a _clean a
 
 Halon was the most popular fire suppressant in this category, but it is a CFC (greenhouse gas), and manufacturing of Halons was banned in 1994. The old systems still exist (must use recycled Halon) but cannot be used in new installations.
 
-A popular clean agent of today is DuPont's FM-200 (CF3CHFCF3), which is nontoxic, and with a properly designed system, the gas will fill the room and extinguish all fires within 10 seconds (hint: do not leave the doors open). It is safe for humans to breath but can create fumes when it reacts with fire. Standard practice is to leave the room (sealed) for 10 minutes to ensure all fire is out.
+A popular clean agent of today is DuPont's FM-200 (CF<sub>3</sub>CHFCF<sub>3</sub>), which is nontoxic, and with a properly designed system, the gas will fill the room and extinguish all fires within 10 seconds (hint: do not leave the doors open). It is safe for humans to breath but can create fumes when it reacts with fire. Standard practice is to leave the room (sealed) for 10 minutes to ensure all fire is out.
 
-Another method of fire suppression is the use of inert gases, such as CO2. These gases work by reducing the ratio of oxygen in the air. The problem with these systems is that they are dangerous to humans and also not as effective (depending on type of fire).
+Another method of fire suppression is the use of inert gases, such as CO<sub>2</sub>. These gases work by reducing the ratio of oxygen in the air. The problem with these systems is that they are dangerous to humans and also not as effective (depending on type of fire).
 
 Traditional sprinkler systems use a large amount of water to decrease combustibility of everything in the room. They are not as effective for electrical fires, damage electronics, and require extensive cleanup. Sometimes they are required to be in every room by the municipality, so you might still find sprinklers alongside an FM-200 system. With a wet-pipe system, water is already in the sprinkler pipes, and heat from the fire melts the caps and releases the water. A more appropriate dry-pipe system has normally empty pipes, and smoke detectors will electronically trigger a preaction valve to fill the pipes (but the caps still have to melt before water comes out). The main purpose of sprinklers is to protect the building from collapse, not to protect the electronics in the room.
 

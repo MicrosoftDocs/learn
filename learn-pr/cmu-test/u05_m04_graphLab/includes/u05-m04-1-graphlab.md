@@ -3,7 +3,62 @@
 Machine-learning and data-mining (MLDM) problems are growing exponentially in scale today. Interest in analytics engines that can execute MLDM algorithms efficiently on distributed systems, such as clouds, is increasing correspondingly. Designing, implementing, and testing distributed MLDM applications can be challenging because they usually require experts who know how to address synchronization, deadlocks, communication, scheduling, distributed-state management, and fault-tolerance concerns effectively. Many recent advances in MLDM algorithmic designs have focused on modeling such algorithms as graphs. 
 ##  Expressing Data and Computation using a Graph Abstraction
 
-As a motivating example, lets take a look at a few examples of data modelled as graphs and how computation can be expressed in this model. Mathematically, a graph is modelled as a set: G=lcubV,Ercub , where V is a set of vertices vi and E is a set of edges ei. Furthermore, every edge ei in G represents an edge between exactly two vertices lcubvi,vjrcubisinV . There are many types of graphs; they can be undirected which means e=lcubvi,vjrcub=lcubvj,vircubforalleisinE (i.e. all edges are equivalent and bidirectional), or directed, where the edges are distinct and not equal. Graphs can also be weighted if an additional parameter, known as the weight wi exists foralleisinE . Furthermore, vertices may also be weighted, and as we will see, this comes in handy in different applications. Typical graph computations include the calculation of the shortest path between two points, partitioning the graph into subgraphs based on some optimization metric (minimum number of edges cut, or maximum flow between the graphs), the calculation of maximum degree (the vertex with the most number of edges), and so on. 
+As a motivating example, lets take a look at a few examples of data modelled as graphs and how computation can be expressed in this model. Mathematically, a graph is modelled as a set: 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo></m:mrow></m:math>
+-->
+
+ , where 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+-->
+
+ is a set of vertices 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
+
+ and 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+-->
+
+ is a set of edges 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
+
+. Furthermore, every edge 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
+
+ in 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi></m:mrow></m:math>
+-->
+
+ represents an edge between exactly two vertices 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>V</m:mi></m:mrow></m:math>
+-->
+
+ . There are many types of graphs; they can be undirected which means 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo rspace="3px">forall</m:mo><m:mi>e</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>E</m:mi></m:mrow></m:math>
+-->
+
+ (i.e. all edges are equivalent and bidirectional), or directed, where the edges are distinct and not equal. Graphs can also be weighted if an additional parameter, known as the weight 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+-->
+
+ exists 
+<!-- TODO fix
+<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo rspace="3px">forall</m:mo><m:mi>e</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>E</m:mi></m:mrow></m:math>
+-->
+
+ . Furthermore, vertices may also be weighted, and as we will see, this comes in handy in different applications. Typical graph computations include the calculation of the shortest path between two points, partitioning the graph into subgraphs based on some optimization metric (minimum number of edges cut, or maximum flow between the graphs), the calculation of maximum degree (the vertex with the most number of edges), and so on. 
 ![Figure 5.42: A webgraph where the vertices represent web pages and edges represent the links between pages. As a result of running pagerank on this graph, each vertex has an associated value, known as the rank, which is a representation of the importance of a page, calculated from the number of incoming and outgoing links to that page. ](../media/pagerank.png)
 
 _Figure 5.42: A webgraph where the vertices represent web pages and edges represent the links between pages. As a result of running pagerank on this graph, each vertex has an associated value, known as the rank, which is a representation of the importance of a page, calculated from the number of incoming and outgoing links to that page. _
