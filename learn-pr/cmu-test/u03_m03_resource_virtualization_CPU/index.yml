@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.cmu-test.u03-m03-resource-virtualization-cpu
+metadata:
+  title: u03m03resourcevirtualizationCPU - Learn
+  description: u03m03resourcevirtualizationCPU - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: u03m03resourcevirtualizationCPU
+summary: u03m03resourcevirtualizationCPU
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cmu-test.u03-m03-resource-virtualization-cpu.module-introduction
+- learn.cmu-test.u03-m03-resource-virtualization-cpu.the-conditions-for-virtualizing-isas
+- learn.cmu-test.u03-m03-resource-virtualization-cpu.full-virtualization-and-paravirtualization
+- learn.cmu-test.u03-m03-resource-virtualization-cpu.emulation
+- learn.cmu-test.u03-m03-resource-virtualization-cpu.virtual-cpu
+- learn.cmu-test.u03-m03-resource-virtualization-cpu.summary
+badge:
+  uid: learn.cmu-test.u03-m03-resource-virtualization-cpu.badge

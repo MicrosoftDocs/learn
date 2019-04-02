@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u03-m06-case-study.amazons-elastic-compute-cloud
+title: Amazon's Elastic Compute Cloud
+metadata:
+  title: Amazon's Elastic Compute Cloud - Learn
+  description: Amazon's Elastic Compute Cloud - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-amazons-elastic-compute-cloud.md)]

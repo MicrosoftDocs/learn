@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u03-m02-virtualization.what-is-virtualization
+title: What Is Virtualization?
+metadata:
+  title: What Is Virtualization? - Learn
+  description: What Is Virtualization? - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-virtualization.md)]

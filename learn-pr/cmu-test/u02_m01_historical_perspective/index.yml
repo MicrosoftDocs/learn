@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.cmu-test.u02-m01-historical-perspective
+metadata:
+  title: u02m01historicalperspective - Learn
+  description: u02m01historicalperspective - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: u02m01historicalperspective
+summary: u02m01historicalperspective
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cmu-test.u02-m01-historical-perspective.module-introduction
+- learn.cmu-test.u02-m01-historical-perspective.introduction-to-data-centers
+- learn.cmu-test.u02-m01-historical-perspective.definition-and-origins
+- learn.cmu-test.u02-m01-historical-perspective.size-density-and-efficiency-growth
+- learn.cmu-test.u02-m01-historical-perspective.challenges-in-cloud-data-centers
+- learn.cmu-test.u02-m01-historical-perspective.summary
+badge:
+  uid: learn.cmu-test.u02-m01-historical-perspective.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u05-m04-graphlab.fault-tolerance
+title: Fault Tolerance
+metadata:
+  title: Fault Tolerance - Learn
+  description: Fault Tolerance - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-fault-tolerance.md)]

@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.cmu-test.u01-m01-intro
+metadata:
+  title: u01m01intro - Learn
+  description: u01m01intro - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: u01m01intro
+summary: u01m01intro
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cmu-test.u01-m01-intro.module-introduction
+- learn.cmu-test.u01-m01-intro.definition-of-cloud-computing
+- learn.cmu-test.u01-m01-intro.precloud-computing-domains-and-applications
+- learn.cmu-test.u01-m01-intro.evolution-of-cloud-computing
+- learn.cmu-test.u01-m01-intro.cloud-building-blocks-and-service-models
+- learn.cmu-test.u01-m01-intro.cloud-deployment-models
+- learn.cmu-test.u01-m01-intro.popular-cloud-stacks
+- learn.cmu-test.u01-m01-intro.cloud-use-cases
+- learn.cmu-test.u01-m01-intro.summary
+badge:
+  uid: learn.cmu-test.u01-m01-intro.badge

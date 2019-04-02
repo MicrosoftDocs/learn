@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u05-m02-mapreduce.examples-wordcount-sort-and-sobel
+title: Examples- WordCount, Sort, and Sobel
+metadata:
+  title: Examples- WordCount, Sort, and Sobel - Learn
+  description: Examples- WordCount, Sort, and Sobel - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-examples-wordcount-sort-and-sobel.md)]

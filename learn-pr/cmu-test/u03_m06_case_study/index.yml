@@ -1,0 +1,31 @@
+### YamlMime:Module
+uid: learn.cmu-test.u03-m06-case-study
+metadata:
+  title: u03m06casestudy - Learn
+  description: u03m06casestudy - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: u03m06casestudy
+summary: u03m06casestudy
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cmu-test.u03-m06-case-study.module-introduction
+- learn.cmu-test.u03-m06-case-study.a-taxonomy-of-virtualization-suites
+- learn.cmu-test.u03-m06-case-study.amazons-elastic-compute-cloud
+- learn.cmu-test.u03-m06-case-study.amazon-ec2-properties
+- learn.cmu-test.u03-m06-case-study.summary
+badge:
+  uid: learn.cmu-test.u03-m06-case-study.badge

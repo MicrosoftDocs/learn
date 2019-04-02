@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.cmu-test.u05-m01-intro
+metadata:
+  title: u05m01intro - Learn
+  description: u05m01intro - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: u05m01intro
+summary: u05m01intro
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cmu-test.u05-m01-intro.module-introduction
+- learn.cmu-test.u05-m01-intro.taxonomy-of-programs
+- learn.cmu-test.u05-m01-intro.motivations-for-distributed-programming
+- learn.cmu-test.u05-m01-intro.distributed-systems-and-the-cloud
+- learn.cmu-test.u05-m01-intro.distributed-systems-and-the-cloud
+- learn.cmu-test.u05-m01-intro.programming-models-for-clouds
+- learn.cmu-test.u05-m01-intro.synchronization-models
+- learn.cmu-test.u05-m01-intro.data-and-graph-parallelism
+- learn.cmu-test.u05-m01-intro.symmetrical-and-asymmetrical-architectural-models
+- learn.cmu-test.u05-m01-intro.main-challenges-in-building-cloud-programs
+- learn.cmu-test.u05-m01-intro.challenges-in-building-cloud-programs-scalability
+- learn.cmu-test.u05-m01-intro.challenges-in-building-cloud-programs-communication
+- learn.cmu-test.u05-m01-intro.challenges-in-building-cloud-programs-heterogeneity
+- learn.cmu-test.u05-m01-intro.challenges-in-building-cloud-programs-synchronization
+- learn.cmu-test.u05-m01-intro.challenges-in-building-cloud-programs-fault-tolerance
+- learn.cmu-test.u05-m01-intro.challenges-in-building-cloud-programs-scheduling
+- learn.cmu-test.u05-m01-intro.summary
+badge:
+  uid: learn.cmu-test.u05-m01-intro.badge

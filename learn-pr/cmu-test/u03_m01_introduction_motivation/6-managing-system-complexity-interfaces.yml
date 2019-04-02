@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u03-m01-introduction-motivation.managing-system-complexity-interfaces
+title: Managing System Complexity - Interfaces
+metadata:
+  title: Managing System Complexity - Interfaces - Learn
+  description: Managing System Complexity - Interfaces - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-managing-system-complexity-interfaces.md)]

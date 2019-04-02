@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.cmu-test.u04-m01-cloud-storage
+metadata:
+  title: u04m01cloudstorage - Learn
+  description: u04m01cloudstorage - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: u04m01cloudstorage
+summary: u04m01cloudstorage
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cmu-test.u04-m01-cloud-storage.module-introduction
+- learn.cmu-test.u04-m01-cloud-storage.data
+- learn.cmu-test.u04-m01-cloud-storage.applications-and-requirements
+- learn.cmu-test.u04-m01-cloud-storage.storage-devices
+- learn.cmu-test.u04-m01-cloud-storage.storage-abstractions
+- learn.cmu-test.u04-m01-cloud-storage.local-file-systems
+- learn.cmu-test.u04-m01-cloud-storage.distributed-file-systems
+- learn.cmu-test.u04-m01-cloud-storage.databases
+- learn.cmu-test.u04-m01-cloud-storage.designing-databases-schema-and-scalability
+- learn.cmu-test.u04-m01-cloud-storage.designing-databases-consistency-and-the-cap-theorem
+- learn.cmu-test.u04-m01-cloud-storage.relational-databases
+- learn.cmu-test.u04-m01-cloud-storage.nosql-databases
+- learn.cmu-test.u04-m01-cloud-storage.newsql-databases
+- learn.cmu-test.u04-m01-cloud-storage.object-storage-as-a-cloud-service
+- learn.cmu-test.u04-m01-cloud-storage.summary
+badge:
+  uid: learn.cmu-test.u04-m01-cloud-storage.badge

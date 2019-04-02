@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u01-m01-intro.cloud-use-cases
+title: Cloud Use Cases
+metadata:
+  title: Cloud Use Cases - Learn
+  description: Cloud Use Cases - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-cloud-use-cases.md)]

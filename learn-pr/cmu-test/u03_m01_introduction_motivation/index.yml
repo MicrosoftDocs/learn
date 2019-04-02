@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.cmu-test.u03-m01-introduction-motivation
+metadata:
+  title: u03m01introductionmotivation - Learn
+  description: u03m01introductionmotivation - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: u03m01introductionmotivation
+summary: u03m01introductionmotivation
+abstract: | 
+  In this module, you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cmu-test.u03-m01-introduction-motivation.module-introduction
+- learn.cmu-test.u03-m01-introduction-motivation.background-and-motivation
+- learn.cmu-test.u03-m01-introduction-motivation.virtualization-and-cloud-computing
+- learn.cmu-test.u03-m01-introduction-motivation.limitations-of-generalpurpose-operating-systems
+- learn.cmu-test.u03-m01-introduction-motivation.managing-system-complexity-abstractions
+- learn.cmu-test.u03-m01-introduction-motivation.managing-system-complexity-interfaces
+- learn.cmu-test.u03-m01-introduction-motivation.resource-sharing-basics
+- learn.cmu-test.u03-m01-introduction-motivation.resource-sharing-in-multiprocessor-systems
+- learn.cmu-test.u03-m01-introduction-motivation.summary
+badge:
+  uid: learn.cmu-test.u03-m01-introduction-motivation.badge

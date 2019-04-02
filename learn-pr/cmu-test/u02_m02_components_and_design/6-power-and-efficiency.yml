@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u02-m02-components-and-design.power-and-efficiency
+title: Power and Efficiency
+metadata:
+  title: Power and Efficiency - Learn
+  description: Power and Efficiency - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-power-and-efficiency.md)]

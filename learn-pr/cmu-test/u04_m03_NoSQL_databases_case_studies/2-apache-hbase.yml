@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-test.u04-m03-nosql-databases-case-studies.apache-hbase
+title: Apache HBase
+metadata:
+  title: Apache HBase - Learn
+  description: Apache HBase - Learn
+  ms.date: 06/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-apache-hbase.md)]
