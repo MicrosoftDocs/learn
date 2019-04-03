@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u05-m02-mapreduce
 metadata:
-  title: u05m02mapReduce - Learn
-  description: u05m02mapReduce - Learn
+  title: Distributed Analytics Engines for the Cloud- MapReduce
+  description: Distributed Analytics Engines for the Cloud- MapReduce
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: u05m02mapReduce
-summary: u05m02mapReduce
+title: Distributed Analytics Engines for the Cloud- MapReduce
+summary: Distributed Analytics Engines for the Cloud- MapReduce
 abstract: | 
   In this module, you will:
   - TBD

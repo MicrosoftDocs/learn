@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u05-m04-graphlab
 metadata:
-  title: u05m04graphLab - Learn
-  description: u05m04graphLab - Learn
+  title: Distributed Analytics Engines for the Cloud- GraphLab
+  description: Distributed Analytics Engines for the Cloud- GraphLab
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: u05m04graphLab
-summary: u05m04graphLab
+title: Distributed Analytics Engines for the Cloud- GraphLab
+summary: Distributed Analytics Engines for the Cloud- GraphLab
 abstract: | 
   In this module, you will:
   - TBD

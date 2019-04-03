@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u02-m02-components-and-design
 metadata:
-  title: u02m02componentsanddesign - Learn
-  description: u02m02componentsanddesign - Learn
+  title: Data Center Components
+  description: Data Center Components
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: u02m02componentsanddesign
-summary: u02m02componentsanddesign
+title: Data Center Components
+summary: Data Center Components
 abstract: | 
   In this module, you will:
   - TBD

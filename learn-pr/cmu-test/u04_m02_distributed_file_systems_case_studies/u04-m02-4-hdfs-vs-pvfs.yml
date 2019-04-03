@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-4-hdfs-vs-pvfs
 title: HDFS versus Ceph
 metadata:
-  title: HDFS versus Ceph - Learn
-  description: HDFS versus Ceph - Learn
+  title: HDFS versus Ceph
+  description: HDFS versus Ceph
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u02-m03-software-stack
 metadata:
-  title: u02m03softwarestack - Learn
-  description: u02m03softwarestack - Learn
+  title: Cloud Management
+  description: Cloud Management
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: u02m03softwarestack
-summary: u02m03softwarestack
+title: Cloud Management
+summary: Cloud Management
 abstract: | 
   In this module, you will:
   - TBD

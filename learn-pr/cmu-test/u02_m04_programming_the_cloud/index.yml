@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u02-m04-programming-the-cloud
 metadata:
-  title: u02m04programmingthecloud - Learn
-  description: u02m04programmingthecloud - Learn
+  title: Cloud Software Deployment Considerations
+  description: Cloud Software Deployment Considerations
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: u02m04programmingthecloud
-summary: u02m04programmingthecloud
+title: Cloud Software Deployment Considerations
+summary: Cloud Software Deployment Considerations
 abstract: | 
   In this module, you will:
   - TBD

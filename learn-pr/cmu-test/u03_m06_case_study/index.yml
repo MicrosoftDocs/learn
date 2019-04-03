@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u03-m06-case-study
 metadata:
-  title: u03m06casestudy - Learn
-  description: u03m06casestudy - Learn
+  title: Case Study
+  description: Case Study
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: u03m06casestudy
-summary: u03m06casestudy
+title: Case Study
+summary: Case Study
 abstract: | 
   In this module, you will:
   - TBD

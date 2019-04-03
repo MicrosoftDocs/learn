@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-5-reclamation-techniques
 title: Reclamation Techniques and VMware Memory Ballooning
 metadata:
-  title: Reclamation Techniques and VMware Memory Ballooning - Learn
-  description: Reclamation Techniques and VMware Memory Ballooning - Learn
+  title: Reclamation Techniques and VMware Memory Ballooning
+  description: Reclamation Techniques and VMware Memory Ballooning
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

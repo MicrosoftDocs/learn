@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u05-m03-spark.u05-m03-4-graph-flow-api
 title: Lineage, Fault Tolerance and Recovery
 metadata:
-  title: Lineage, Fault Tolerance and Recovery - Learn
-  description: Lineage, Fault Tolerance and Recovery - Learn
+  title: Lineage, Fault Tolerance and Recovery
+  description: Lineage, Fault Tolerance and Recovery
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

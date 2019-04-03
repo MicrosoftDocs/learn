@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u01-m02-building-blocks
 metadata:
-  title: u01m02buildingblocks - Learn
-  description: u01m02buildingblocks - Learn
+  title: Economics, Benefits, Risks, Challenges and Solutions
+  description: Economics, Benefits, Risks, Challenges and Solutions
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: u01m02buildingblocks
-summary: u01m02buildingblocks
+title: Economics, Benefits, Risks, Challenges and Solutions
+summary: Economics, Benefits, Risks, Challenges and Solutions
 abstract: | 
   In this module, you will:
   - TBD
@@ -23,9 +23,9 @@ products:
 - azure
 units:
 - learn.cmu-test.u01-m02-building-blocks.u01-m02-0-module-intro
+- learn.cmu-test.u01-m02-building-blocks.u01-m02-3-benefits-risks-challenges
 - learn.cmu-test.u01-m02-building-blocks.u01-m02-1-business-case
 - learn.cmu-test.u01-m02-building-blocks.u01-m02-2-economics
-- learn.cmu-test.u01-m02-building-blocks.u01-m02-3-benefits-risks-challenges
 - learn.cmu-test.u01-m02-building-blocks.u01-m02-4-sla
 - learn.cmu-test.u01-m02-building-blocks.u01-m02-5-security-and-privacy-threats
 - learn.cmu-test.u01-m02-building-blocks.u01-m02-6-security

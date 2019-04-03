@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u04-m02-distributed-file-systems-case-studies.u04-m02-2-hdfs
 title: The Hadoop Distributed File System (HDFS)
 metadata:
-  title: The Hadoop Distributed File System (HDFS) - Learn
-  description: The Hadoop Distributed File System (HDFS) - Learn
+  title: The Hadoop Distributed File System (HDFS)
+  description: The Hadoop Distributed File System (HDFS)
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

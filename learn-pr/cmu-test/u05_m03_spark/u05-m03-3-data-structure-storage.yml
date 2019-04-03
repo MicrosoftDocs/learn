@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u05-m03-spark.u05-m03-3-data-structure-storage
 title: Resilient Distributed Datasets
 metadata:
-  title: Resilient Distributed Datasets - Learn
-  description: Resilient Distributed Datasets - Learn
+  title: Resilient Distributed Datasets
+  description: Resilient Distributed Datasets
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

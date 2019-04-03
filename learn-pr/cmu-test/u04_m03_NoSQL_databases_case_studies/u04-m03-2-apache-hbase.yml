@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u04-m03-nosql-databases-case-studies.u04-m03-2-apache-hbase
 title: Apache HBase
 metadata:
-  title: Apache HBase - Learn
-  description: Apache HBase - Learn
+  title: Apache HBase
+  description: Apache HBase
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

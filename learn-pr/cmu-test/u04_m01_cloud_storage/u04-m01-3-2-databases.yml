@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u04-m01-cloud-storage.u04-m01-3-2-databases
 title: Designing Databases - Consistency and the CAP Theorem
 metadata:
-  title: Designing Databases - Consistency and the CAP Theorem - Learn
-  description: Designing Databases - Consistency and the CAP Theorem - Learn
+  title: Designing Databases - Consistency and the CAP Theorem
+  description: Designing Databases - Consistency and the CAP Theorem
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

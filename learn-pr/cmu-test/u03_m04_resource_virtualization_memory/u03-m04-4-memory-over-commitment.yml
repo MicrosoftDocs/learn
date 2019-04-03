@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u03-m04-resource-virtualization-memory.u03-m04-4-memory-over-commitment
 title: Memory Overcommitment
 metadata:
-  title: Memory Overcommitment - Learn
-  description: Memory Overcommitment - Learn
+  title: Memory Overcommitment
+  description: Memory Overcommitment
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

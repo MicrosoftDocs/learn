@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u04-m03-nosql-databases-case-studies.u04-m03-4-apache-cassandra
 title: Apache Cassandra
 metadata:
-  title: Apache Cassandra - Learn
-  description: Apache Cassandra - Learn
+  title: Apache Cassandra
+  description: Apache Cassandra
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark

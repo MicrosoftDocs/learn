@@ -2,8 +2,8 @@
 uid: learn.cmu-test.u05-m02-mapreduce.u05-m02-8-yarn
 title: YARN- The New Hadoop MapReduce
 metadata:
-  title: YARN- The New Hadoop MapReduce - Learn
-  description: YARN- The New Hadoop MapReduce - Learn
+  title: YARN- The New Hadoop MapReduce
+  description: YARN- The New Hadoop MapReduce
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
