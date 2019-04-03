@@ -8,7 +8,6 @@ Apache Cassandra is a fully distributed, structured key-value storage system. Ca
 
 _Video 4.18: Cassandra_
 
-
 ###  Cassandra Data Model
 
 Cassandra implements the data model of BigTable (which is similar to HBase's data model, as discussed on the previous page), with slightly different terminology. 
@@ -19,7 +18,6 @@ A table in Cassandra is referred to as a **column family** (not to be confused w
 
 _Figure 4.45: The Cassandra data model. (a) Logical view of the webtable in Cassandra. (b) A row of the table represented as a nested sequence of key-value pairs._
 
-
 Like BigTable and HBase, Cassandra also allows for nested columns, which are known as **super columns**. Super columns in Cassandra are implemented as nested key-value pairs, where the super column name is the key, and the value is a sequence of key-value pairs that correspond to each column name and value. 
 
 Cassandra allows for data to be stored in the key or value parts of each key-value pair. Values can be stored in column or super column names, if required. Typical operations in Cassandra involve storing and retrieving individual rows using the key as well as updates to parts of a row. The data model in Cassandra is hence similar to BigTable and HBase and is fairly flexible to allow various types of data to be stored. The big difference between HBase's and Cassandra's data models is that Cassandra does not have built-in support for versioning like HBase. 
@@ -29,7 +27,6 @@ Cassandra supports data operations similar to HBase, with a few exceptions. Typi
 ![Figure 4.46: Ranges and slices in Cassandra](../media/cassandra_range.png)
 
 _Figure 4.46: Ranges and slices in Cassandra_
-
 
 ###  Cassandra Architecture
 
@@ -47,7 +44,6 @@ Cassandra automatically distributes rows among the various nodes in the cluster 
 
 _Figure 4.47: Nodes organized as a circular ring of hash values in consistent hashing_
 
-
 In the example, the key `john` has an MD5 hash value that starts with hex value `5`. The node that fits this range in the token ring is B (it accepts hash values ranging from `0x4` to `0x8`). Thus, the row with the key `john` is stored on node B. Similarly, `mary` is stored on node C because its hash value starts with `B`, and node C is responsible for all values from `0x8` to `0xD`. 
 It is important to note that the Cassandra administrator can manually partition the token space among the nodes, assigning specific ranges of the hash space to any node. Thus, consistent hashing provides a natural load-balancing mechanism for a Cassandra cluster. We now explore<!-- see --> how the consistent hashing scheme provides replication and fault tolerance to a Cassandra cluster. 
 
@@ -64,7 +60,6 @@ The process of keeping replicas up to date in Cassandra is called **antientropy*
 ![Figure 4.48: Merkle trees](../media/merkle_trees.png)
 
 _Figure 4.48: Merkle trees_
-
 
 ###  Data Operations in Cassandra
 

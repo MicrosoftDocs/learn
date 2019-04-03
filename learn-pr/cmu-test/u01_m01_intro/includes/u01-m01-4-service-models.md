@@ -10,7 +10,6 @@ Here, we introduce a stacked abstraction of the cloud through presenting typical
 
 _Figure 1.6: Cloud computing building blocks._
 
-
 ##  Cloud Building Blocks
 
 **Application software:** The top layer in the stack is the application software, which normally is the system component that the end user utilizes.
@@ -51,7 +50,6 @@ The following video (Video 1.2) reviews these services:
 
 _Video 1.2: Service Models in Cloud Computing._ ([Alternative version](../media/video_1_service_models.pdf))
 
-
 ###  The Software-as-a-Service Model
 
 > [!div class="alert is-tip"]
@@ -64,7 +62,6 @@ SaaS is one of the most common cloud service models in which the cloud provider 
 > [!VIDEO https://youtube.com/embed/bzfdewWofSU]
 
 _Video 1.3: Software as a Service._ ([Alternative version](../media/video_2_Software_as_a_Service.pdf))
-
 
 SaaS has become a common software delivery model for many business applications, including accounting, collaboration, customer relationship management (CRM), management information systems (MIS), enterprise resource planning (ERP), invoicing, human resource management (HRM), content management (CM) as well as service desk management. 
 
@@ -120,7 +117,6 @@ PaaS-based offerings allow users to develop, deploy, and scale applications on p
 
 _Video 1.4: Platform-as-a-Service._ ([Alternative version](../media/video_3_Platform_as_a_Service.pdf))
 
-
 ###  Characteristics of PaaS
 
 PaaS offerings vary among providers but usually feature some basic functionality, which includes:
@@ -164,7 +160,6 @@ In the IaaS model, providers rent out compute resources in the form of instances
 > [!VIDEO https://youtube.com/embed/sjQSV-5RaLU]
 
 _Video 1.5: Infrastructure-as-a-Service._ ([Alternative version](../media/video_4_Infrastructure_as_a_Service.pdf))
-
 
 ##  Characteristics of IaaS
 

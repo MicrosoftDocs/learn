@@ -27,7 +27,6 @@ When scheduling reduce tasks, however, JT ignores that principle, mainly because
 
 _Figure 5.19: The nodes at which native Hadoop scheduled each map task and reduce task of the WordCount benchmark_
 
-
 To illustrate this locality unawareness and its implications, we deﬁne a total network distance of a reduce task, **R**, (TNDR), as 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:munderover><m:mo>sum</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>ND</m:mi><m:mi>iR</m:mi></m:msub></m:mrow></m:mrow></m:math>
@@ -41,7 +40,6 @@ Hadoop's current reduce task scheduler is not only locality unaware but also par
 
 _Figure 5.20: The sizes of partitions produced by each feeding map task to each reduce task in Sort1, Sort2, WordCount, and k-Means_
 
-
 To make Hadoop MapReduce's reduce task scheduler more effective, it should address data locality and partitioning skew jointly. As a specific example, Figure 5.21 demonstrates a Hadoop cluster with two racks, each including three nodes. We assume a reduce task, **R**, with two feeding nodes, TT1 and TT2. The goal is to schedule **R** at a requesting TT, assuming TTs 1, 2, and, 4 poll JT for a reduce task. With the native Hadoop scheduler, JT can assign **R** to any of the requesting TTs. If **R** is assigned to TT4, **TNDR** will evaluate to 8. On the other hand, if **R** is assigned to TT1 or TT2, **TNDR** will be 2. As discussed earlier, a smaller TND should produce less network trafﬁc and, accordingly, provide better performance. 
 
 Numerous research papers have addressed the need for a task scheduler aware of both data locality and partitioning skew. The center-of-gravity reduce scheduler (CoGRS), for example, represents a locality- and skew-aware reduce task scheduler. To minimize network traffic, it attempts to schedule every reduce task, **R**, at its center-of-gravity node, determined by the network locations of **R**'s feeding nodes and the skew in **R**'s partition sizes. Specifically, CoGRS introduces a new metric called weighted total network distance ( **WTND**) and deﬁnes it for each **R** as **WTND<sub>R</sub>** = 
@@ -54,7 +52,6 @@ Numerous research papers have addressed the need for a task scheduler aware of b
 ![Figure 5.21: Options for scheduling a reduce task, R, with feeding nodes TT1 and TT2 in a cluster with two racks (CS = core switch, RS = rack switch, TT = TaskTracker, and JT = JobTracker)](../media/options_scheduling_Reduce_task .png)
 
 _Figure 5.21: Options for scheduling a reduce task, R, with feeding nodes TT1 and TT2 in a cluster with two racks (CS = core switch, RS = rack switch, TT = TaskTracker, and JT = JobTracker)_
-
 
 <sup>7</sup>A feeding TT of a reduce task, R, is a TT that hosts at least one of R's feeding map tasks.
 

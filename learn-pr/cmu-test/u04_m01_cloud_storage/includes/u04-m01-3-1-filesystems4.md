@@ -6,7 +6,6 @@ Switching gears now, we will discuss distributed file systems. A distributed fil
 
 _Video 4.4: Distributed File Systems_
 
-
 It is important to note that in a distributed file system, the client views a single, global namespace that encompasses all the files across all the file system servers (Figure 4.12).
 
 As with a shared file system, DFSs require metadata management so that clients can locate the required files and file blocks across the file servers. The metadata server can be asymmetric (single metadata server) or symmetric (metadata servers on each file server), similar to shared file systems.
@@ -14,7 +13,6 @@ As with a shared file system, DFSs require metadata management so that clients c
 ![Figure 4.12: Distributed file system](../media/distributed_fs.png)
 
 _Figure 4.12: Distributed file system_
-
 
 ##  Origins and Evolution of Distributed File Systems
 

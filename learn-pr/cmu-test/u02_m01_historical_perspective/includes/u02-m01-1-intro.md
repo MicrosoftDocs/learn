@@ -8,7 +8,6 @@ Data centers include a room or building, IT equipment, and facilities to securel
 
 _Video 2.1: Data centers._
 
-
 Data center design requirements depend on its size and use. Cloud-centric data centers could come in two varieties. An infrastructure as a service (IaaS) cloud provider offers a variety of machine types, and the customers pick and choose to build their own applications. Software as a service (SaaS) and Platform as a service (PaaS) providers typically use large-scale (many thousands) homogenous compute nodes with custom applications that are presented to end users directly. Other types of data centers include enterprise/traditional IT, which houses computers to support functions for day-to-day business operations, and high-performance computing (HPC) data centers, which house large clusters for scientific applications.
 
 In the last 5 years, specific attention has been paid to the efficiency of data centers, dramatically decreasing their operational costs and carbon footprint. This increase in efficiency has led to a fast evolution of data center design, and these trends are likely to continue.

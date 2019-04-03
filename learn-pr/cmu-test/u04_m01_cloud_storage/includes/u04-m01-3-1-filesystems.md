@@ -6,7 +6,6 @@ We shall now dive into the actual devices used to store and persist data in Vide
 
 _Video 4.2: Storage Devices_
 
-
 ##  Memory Hierarchy
 
 As a quick recap, the memory hierarchy is illustrated in Figure 4.3 below. The fastest (and most expensive) storage space in a modern computer is the on-chip registers, which consist of about sixteen 8 byte registers per core. These can be accessed within a single clock cycle (<1 nanosecond). Next, we have static RAM (SRAM), which the storage technology uses in cache memory, which can be accessed between 0.5 to 2.5 nanoseconds, but costs ~$10-50 per megabyte. Modern processors have a few megabytes of this type of memory located within the various levels (L1-L3) cache on the processor die. Each level differs in terms of capacity, access time, bandwidth and organization.
@@ -14,7 +13,6 @@ As a quick recap, the memory hierarchy is illustrated in Figure 4.3 below. The f
 ![Figure 4.3: Memory Hierarchy](../media/memory_triangle.png)
 
 _Figure 4.3: Memory Hierarchy_
-
 
 From here, there is a significant leap in terms of capacity and access time when going to main memory (DRAM). Current DRAM technology allows for access latencies of 50-70 nanoseconds, and consists of multiple gigabytes. DRAM costs about ~$10-30 per GB, allowing for a few gigabytes of storage in personal computers, and up to a terabyte in servers. Recall that all of the memories described thus far are all volatile memories. The data stored in these memories exist as long as they are powered ON. When switched OFF, they lose all information.
 
@@ -33,7 +31,6 @@ However, Magnetic disks are among the slowest storage technologies. Typical acce
 _Figure 4.4: Architecture of a magnetic hard disk drive_
 
 
-
 As a result, magnetic storage disks are slow, particularly for random reads and writes, as the head must keep moving to different areas on the disk to read information, increasing the overall access time. However, they are cheap, and they are the main storage technology used in large-scale storage systems. Magnetic storage tends to be the main storage device located at the end of the spectrum, responsible for persisting large amounts of data in a cost effective manner.
 
 ###  Solid State Disks (SSDs)
@@ -43,7 +40,6 @@ The emergence of the NAND flash technology has brought increased performance and
 ![Figure 4.5: Architecture of a solid state hard drive.](../media/ssd.png)
 
 _Figure 4.5: Architecture of a solid state hard drive._
-
 
 Solid state disks, however, have their own performance and reliability issues. Due to the nature of NAND flash technology, writes to SSDs require an expensive erase cycle that erases an entire page of data (Figure 4.5), which takes time and wears out the flash medium over time. SSDs internally contain logic to level the wear of the medium by spreading out the writes over multiple pages and blocks on the disk. As discussed in Unit 2, there are multiple SSD technologies available in the market, where the primary tradeoff is cost vs. performance and disk life. 
 

@@ -6,7 +6,6 @@ In a local file system, the file system is collocated with the server that runs 
 
 _Figure 4.8: Local file systems_
 
-
 Data stored on a disk are typically represented as **blocks**, or a contiguous, unstructured collection of bytes. Local file systems provide an abstraction of files, which are simply a collection of blocks that represent a file.
 
 Applications using local file systems are not concerned with how files are physically represented on storage media, the amount of data transferred to or from the application per file request (called **record size**), the unit by which data is transferred to or from storage mediums (called **block size**), and so on. All such low-level details are managed by local file systems and are effectively abstracted from user applications. In principle, local file systems are the basic building substrate of every file system type on the cloud. For instance, distributed file systems (e.g., [Hadoop Distributed File System](http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html) which mimics the Google File System) and parallel file systems (e.g., [PVFS](http://www.pvfs.org/)) are built and executed on multiple cooperative local file systems. Moreover, how well a virtual machine or a physical machine can survive software and hardware crashes on the cloud and on other systems depends partly on how well the local file systems are designed to handle such crashes. In short, practically every file system, whether shared or networked, relies on local file systems.
@@ -15,7 +14,6 @@ Applications using local file systems are not concerned with how files are physi
 
 _Figure 4.9: The layout of a file system_
 
-
 The UNIX file system is a classic local file system that was designed in the 1970s and has since been in widespread use in many forms (FFS, EXT-2, etc.). Although the data within a file is distributed as a series of blocks on a storage device, the file system maintains the abstraction of the file along with its associated data. As shown in Figure 4.9, a basic local file system includes a **boot block**, a **superblock**, an **I-list** and a **data region**. The boot block holds the boot program that reads the operating system’s (OS’s) binary image into the memory when the OS is booted. In essence, the boot block has nothing to do with any of the file system management processes and functionalities. The superblock describes the layout and the characteristics of the local file system, including its size, the block size, the blocks’ count, the I-list size and location, and so on.
 
 In the I-list, the state of each file is encapsulated as a UNIX **inode** (index node; Figure 4.10). The inode acts as the primary data structure of a file and stores the metadata about a file, including pointers to the individual file blocks in storage, ownership and access control lists, timestamp of the last access of the file, and so on.
@@ -23,7 +21,6 @@ In the I-list, the state of each file is encapsulated as a UNIX **inode** (index
 ![Figure 4.10: Files, inodes, and blocks](../media/local_fs_design.png)
 
 _Figure 4.10: Files, inodes, and blocks_
-
 
 Examples of local file systems include NTFS, FAT, and EXT. The scalability, performance, and sharing limitations of local file systems can be overcome by using shared/networked file systems. 
 
@@ -69,7 +66,6 @@ To enhance dependability and/or performance, a local file system can be used wit
 
 _Video 4.3: File System Expansion_
 
-
 The three main reasons for expanding disk drives are
 
 1. To attain more disk storage
@@ -91,7 +87,6 @@ In an enterprise IT environment, it is typical for storage to be consolidated so
 ![Figure 4.11: Storage area networks](../media/SAN.png)
 
 _Figure 4.11: Storage area networks_
-
 
 Although the servers share the disk array, they cannot physically share data residing on the disks. Instead, portions of the SAN (identified as logical unit numbers, or LUNs) are carved out and provided for the exclusive use of each server.
 

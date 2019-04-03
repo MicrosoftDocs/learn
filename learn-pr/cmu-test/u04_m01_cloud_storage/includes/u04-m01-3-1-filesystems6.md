@@ -36,7 +36,6 @@ Video 4.6 provides an overview of OLTP vs. OLAP:
 
 _Video 4.6: OLTP vs. OLAP_
 
-
 ##  Scalability
 
 Over time, when a database system's user base and data grows, it may require some form of **scaling**, which would expand the capacity and/or the performance of the database system in order to support more users or data, or both. Database scaling is complex for a variety of reasons which we will cover in detail in Video 4.7:
@@ -44,7 +43,6 @@ Over time, when a database system's user base and data grows, it may require som
 > [!VIDEO https://youtube.com/embed/opYWHWG-vVg]
 
 _Video 4.7: Database Scaling_
-
 
 ###  Vertical Scaling
 

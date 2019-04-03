@@ -16,7 +16,6 @@ An **object** can be considered as a generic container that can store any arbitr
 
 _Video 4.10: HTTP and RESTful Interfaces_
 
-
 REST is an **architectural style** for designing networked applications and does not refer to a single protocol. REST is a design strategy for communications among various entities in a networked application. The idea is to use a simple mechanism instead of CORBA, WSDL, or RPC to connect and transfer information between machines over a network. Any interface that uses REST principles is called a **RESTful** interface. 
 
 A RESTful interface uses HTTP requests to post (create and/or update), read (make queries and get information), and delete data. Thus, a RESTful interface can be used for CRUD operations. 
@@ -44,7 +43,6 @@ Video 4.11 covers the basics ideas behind Object Storage Systems:
 > [!VIDEO https://youtube.com/embed/Drl9LvRr35Y]
 
 _Video 4.11: Object Storage Systems_
-
 
  An example of object-based storage on the cloud is Amazon’s Simple Storage Service (S3). S3 allows users to store **objects** in **buckets**. Each object can be created, read, and deleted. Note that in the S3 model, although no native update-object method exists, <!-- rather, -->an entire object can be deleted and re-created, similar to a file overwrite. However, S3 supports object versioning and can maintain multiple versions of an object on S3 if it is explicitly enabled by the object owner. 
 
@@ -83,13 +81,11 @@ The lack of a common standard for object storage is an issue plaguing cloud obje
 
 _Figure 4.22: CDMI_
 
-
 CDMI defines data objects and data containers with tagged metadata (as key-value pairs) and uses RESTful interfaces, with JSON as the data exchange format. CDMI can be used for accessing and managing data on a storage cloud (Figure 4.22). An example of a client interaction with a storage cloud using CDMI is shown in Figure 4.23.
 
 ![Figure 4.23: A CDMI client interacting with a CDMI storage cloud](../media/cdmi_cloud.png)
 
 _Figure 4.23: A CDMI client interacting with a CDMI storage cloud_
-
 
 The CDMI client can issue requests over HTTPS, and the **MimeType** indicates the type of CDMI resource with which the client is interacting (an object, a container) and returns standard HTTP status codes, indicating the status of the request. 
 
@@ -98,7 +94,6 @@ The CDMI model is illustrated in Figure 4.24. A CDMI resource exists on a root l
 ![Figure 4.24: The CDMI data model](../media/key_value.png)
 
 _Figure 4.24: The CDMI data model_
-
 
  In addition, CDMI supports <!-- additional -->the following resource types: 
 - **cdmi-capability:** A special entity that describes the capabilities of this particular cloud store. This entity is important and can be used to discover the capabilities of a cloud (e.g., backup and replication).

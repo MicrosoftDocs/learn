@@ -51,7 +51,6 @@ OpenStack Swift is an object storage service that is part of the OpenStack cloud
 
 _Figure 4.47: Swift Data Model_
 
-
 In Swift, users have access to an **account**, which can be used to define **containers**, which can be used to store **objects**. As an example, assume a user with an account `123456` on the swift service running on `swift.mycloud.com`, stores the object named `picture.jpg` in the container `images`. The full path to access an object in this example would thus be:
 ``` text
 https://swift.mycloud.com/v1/123456/images/picture.jpg
@@ -71,7 +70,6 @@ The different components of the SWIFT architecture are as follows:
 ![Figure 4.48: Swift Cluster Architecture](../media/swift_architecture.png)
 
 _Figure 4.48: Swift Cluster Architecture_
-
 
 **Proxy Nodes**: These are the front-end servers which process incoming API requests. A Swift cluster can have multiple proxy servers to handle bigger loads of incoming requests. The proxy server determines the downstream server to send the request to. Proxy servers also coordinate responses and handle failures.
 

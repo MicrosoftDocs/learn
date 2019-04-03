@@ -49,7 +49,6 @@ As we have seen above, network virtualization is simply a sharing mechanism that
 
 _Figure 3.32: Types of network virtualization_
 
-
 Network virtualization is a broad term that encompasses many different techniques. For e.g. traditional VPNs and VLANs are types of datapath virtualization, where the a physical link is extended virtually. Cloud data centers rely on a combination of all of these virtualization techniques to build a scalable, flexible and agile network. Virtual machines have virtualized Network Interface Cards, which bridge a unique virtual MAC address to the physical NIC. Router virtualization enables the creation of multiple tenant virtual networks, based on “map-and-encap”, where edge routers map the packet to the destination, then encapsulate packets within a network tunnel which are only decoded at the target node. 
 
 Bandwidth and physical channel virtualization are achieved by sharing slots within the network using traditional techniques like TDM/FDM and circuit switching. Datapath virtualization allows packets to travel along a programmable path, allowing flexible flows and traffic management. In the coming pages, we will also explore SDNs, which are an alternative to simple network virtualization. 

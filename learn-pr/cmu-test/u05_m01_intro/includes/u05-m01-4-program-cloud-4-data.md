@@ -10,13 +10,11 @@ The basic idea of **data parallelism** is simple: by distributing a large file a
 
 _Figure 5.9: An SPMD distributed program using the shared-memory programming model_
 
-
 Data parallelism is achieved when each node runs one or many tasks on different pieces of distributed data. As a specific example, assume array A is shared among three machines in a distributed shared-memory system. Consider also a distributed program that simply adds all elements of array A. It is possible to command machines 1, 2, and 3 to run the addition task, each on one-third of array A, or 50 elements, as shown in Figure 5.9. The data can be allocated across tasks using the shared-memory programming model, which requires a synchronization mechanism. Clearly, such a program is SPMD. In contrast, array A can also be distributed evenly (using message passing) by a (master) task among three machines, including the master's machine, as shown in Figure 5.10. Each machine will run the addition task independently; nonetheless, summation results will have to be eventually aggregated at the master task in order to generate a grand total. In such a scenario, every task is similar in a sense that it is performing the same addition operation, yet on a different part of array A. The master task, however, is also distributing data to all tasks and aggregating summation results, thus making it slightly different from the other two tasks. Clearly, this makes the program MPMD. As will be discussed in the MapReduce section, MapReduce uses data parallelism with MPMD programs. 
 
 ![Figure 5.10: An MPMD distributed program using the message-passing programming model](../media/MPMD.png)
 
 _Figure 5.10: An MPMD distributed program using the message-passing programming model_
-
 
 **Graph parallelism**, on the other hand, focuses on distributing computation as opposed to data. Most distributed programs actually fall somewhere on a continuum between the two forms. Graph parallelism is widely used in many domains such as machine learning, data mining, physics, and electronic circuit design, among others. Many problems in these domains can be modeled as graphs in which vertices represent computations and edges encode data dependencies or communications. Recall that a graph 
 <!-- TODO fix
@@ -101,7 +99,6 @@ is the minimum. As _S_ is acyclic and fully connected, it must result in a tree 
 ![Figure 5.11: A graph partitioned using the edge-cut metric ](../media/edge_cut_metric.png)
 
 _Figure 5.11: A graph partitioned using the edge-cut metric_
-
 
 Once modeled as a graph, a program can be distributed over machines in a distributed system using a graph-partitioning technique, which involves dividing the work (vertices) over distributed nodes for efficient distributed computation. As with data parallelism, the basic idea is simple: by distributing a large graph across multiple machines, it becomes possible to process different parts of the graph in parallel, resulting in a graph-parallel design. The standard objective of graph partitioning is to distribute work uniformly over _p_ processors by partitioning the vertices into _p_ equally weighted partitions while minimizing internode communication reflected by edges. Such an objective is typically referred to as the standard edge-cut metric. While the graph partitioning problem is NP-hard, heuristics can achieve near optimal solutions. As a specific example, Figure 5.11 demonstrates three partitions, P<sub>1</sub>, P<sub>2</sub>, and P<sub>3</sub>, at which vertices {v<sub>1</sub>, …, v<sub>8</sub>} are divided using the edge-cut metric. Each edge has a weight of two corresponding to one unit of data communicated in each direction. Consequently, the total weight of the shown edge cut is 10. Other cuts will result in more communication traffic. Clearly, for communication-intensive applications, graph partitioning is critical and can play a dramatic role in dictating the overall application performance. Some of the challenges pertaining to graph partitioning are discussed in the section. Both Pregel and GraphLab employ graph partitioning, and we further discuss each in later sections. 
 

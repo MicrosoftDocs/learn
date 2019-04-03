@@ -10,7 +10,6 @@ The success of server virtualization at achieving resource sharing, higher utili
 
 _Video 3.13: Software Defined Data Centers (SDDC)._
 
-
 The main technologies that enable an SDDC include:
 1. Server/Compute Virtualization
 1. Software Defined Networking

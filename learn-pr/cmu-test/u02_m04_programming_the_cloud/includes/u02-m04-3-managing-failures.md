@@ -8,7 +8,6 @@ A large part of data center and cloud service management involves designing and 
 
 _Figure 2.29: Reliability Issues from a Google Presentation_
 
-
 A failure in a system occurs as a result of an invalid state introduced within the system due to a fault. Systems typically develop faults of one of the following types: 
 1. **Transient faults**– Temporary fault in the system that corrects itself with time. 
 1. **Permanent faults** – Faults that cannot be recovered from and generally require replacement of resources. 
@@ -51,7 +50,6 @@ There is also a hybrid strategy that is used, called **semi-active**, which is v
 ![Figure 2.30 : Replication Strategies](../media/fault_tolerance_2.png)
 
 _Figure 2.30 : Replication Strategies_
-
 
 An important factor to consider in replication is the number secondary resources to use. Although this differs from application to application based on the criticality of the system- there are 3 formal levels of replication: 
 

@@ -8,7 +8,6 @@ On a fundamental level, data are stored in <!-- some -->binary encoding on some 
 
 _Figure 4.6: Various layers of abstraction of data_
 
-
 It is important to note that applications can interact with any layer of the abstractions, including the block-level (which is rare for any non-system program). Block devices offer the highest performance but have the least metadata, making it very difficult to write programs using this layer. Many applications interact with a file system, and for applications that require more metadata, database systems may offer a better and more efficient abstraction to manage data.
 
 ##  Block Devices
@@ -46,7 +45,6 @@ File systems can be categorized into many types. Figure 4.7 illustrates the hier
 ![Figure 4.7: File system taxonomy](../media/fs_taxonomy.png)
 
 _Figure 4.7: File system taxonomy_
-
 
 Based on their architecture and implementation, file systems can be broadly defined as<!-- into three categories -->
 

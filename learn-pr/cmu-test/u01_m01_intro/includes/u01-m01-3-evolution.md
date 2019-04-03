@@ -8,7 +8,6 @@ The cloud-computing concept first appeared during the early 1950s, when several 
 
 _Figure 1.4: Evolution of cloud computing._
 
-
 ##  Evolution of Computing
 
 Since the 1960s, some of the earliest forms of computers that were used by organizations were mainframe computers. Multiple users could share and connect to mainframes over basic serial connections using terminals. The mainframe was responsible for all the logic, storage, and processing of data, and the terminals connected to them had limited computational power, if any. These systems continued in widespread use for more than 30 years and, to some degree, continue to exist today.
@@ -36,7 +35,6 @@ Cloud computing has various enabling technologies (Figure 1.5), which include ne
 ![Figure 1.5: The enabling technologies in cloud computing.](../media/enabling_technologies.png)
 
 _Figure 1.5: The enabling technologies in cloud computing._
-
 
 The emergence of high-speed and ubiquitous networking technologies have greatly contributed to cloud computing as a viable paradigm. Modern networks make it possible for computers to communicate in a fast and reliable manner, which is important if we are to use services from a cloud provider. This enabled the user experience with software running in a remote data center to be comparable to the experience of software running on a personal computer. Webmail is a popular example, as is office productivity software. In addition, virtualization is key to enabling cloud computing. As mentioned above, virtualization allows managing the complexity of the cloud via abstracting and sharing its resources across users through multiple virtual machines. Each virtual machine can execute its own operating system and associated application programs. Virtualization for cloud computing is covered in Unit 3.
 

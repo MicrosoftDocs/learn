@@ -36,7 +36,6 @@ In addition, users have the flexibility to choose among multiple storage types t
 
 _Figure 3.34: Regions and availability zones in AWS cloud platform. Regions are geographically dispersed to avoid disasters. Availability zones are engineered as autonomous failure zones within regions._
 
-
 To this end, Amazon EC2 users not only have the flexibility of choosing among many instance and storage types but have the capability of mapping elastic IP addresses to EC2 instances without a network administrator's help or the need to wait for DNS to propagate new bindings. Elastic IP addresses are static IP addresses but tailored for the dynamicity of the cloud. For example, unlike a traditional static IP address, an elastic IP address enables tolerating an instance failure by programmatically remapping the address to any other healthy instance under the same user account. Thus, elastic IP addresses are associated with user accounts and not EC2 instances. Elastic IP addresses exist until explicitly removed and persist even when accounts have no current running instances.
 
 ##  Fault Tolerance

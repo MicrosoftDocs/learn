@@ -10,7 +10,6 @@ A high level view of the various services involved in the OpenStack middleware s
 
 _Figure 2.27: OpenStack Service Architecture_
 
-
 ##  User Authentication Service (Keystone)
 
 The primary authentication service in OpenStack is called Keystone. Keystone is an OpenStack project that provides **Identity**, **Token**, **Catalog** and **Policy** services for use specifically by individual services in the OpenStack family.

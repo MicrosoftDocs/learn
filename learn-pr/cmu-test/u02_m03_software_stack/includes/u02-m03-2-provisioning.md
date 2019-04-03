@@ -25,7 +25,6 @@ Figure 2.23 below shows the typical end-to-end steps for a customer provisioning
 
 _Figure 2.23: Typical End-to-End IaaS provisioning steps_
 
-
 The steps illustrated in Figure 2.23 are explained as follows: 
 1. The customer logs on to the portal and is authenticated by the identity management system. 
 1. Based on the customer’s entitlement, the portal extracts a subset of services that the user can order from the service catalogue and constructs a ‘request catalog’. 

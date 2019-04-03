@@ -84,7 +84,6 @@ In this Spark implementation of PageRank, our input dataset consists of a text f
 
 _Figure 5.37: Lineage graph for the Spark PageRank example_
 
-
 As we mentioned on the previous page, the join operation can be optimized to reduce communication by partitioning the links and the ranks in the same way (for e.g. using a hash-partitioner to partition URLs across nodes). If each link partition and its corresponding rank partition are on the same node, we can eliminate cross-node communication entirely for the join. 
 
 Notice that in Figure 5.37 above, the lineage of the ranks RDD in each iteration keeps increasing. Hence, it may be important to adopta strategy to persist some of the versions of ranks for better fault recovery.

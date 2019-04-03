@@ -34,7 +34,6 @@ The late 90s marked a steady increase in the adoption of these computing applica
 
 _Figure 1.2: Comparing Traditional and Internet-Scale Computing._
 
-
 The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the Internet. These changes have led to a network- and data-driven society, where producing, disseminating and accessing digitized information is simplified. The Internet is estimated to have created a global marketplace of billions of users, up from 25 million in 1994 (Figure 1.3 (a)) . This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations and supporting decision-making with automation.  By embracing digital technologies, the world’s top 10 economies are expected to increase their output by over a trillion dollars by 2020. 
 
 The increasing number of connections enabled by the Internet has also driven its value. Researchers have hypothesized that the value of a network varies superlinearly as a function of the number of users. Thus, at internet scale, gaining and retaining customers is a priority, and this is done by building reliable and responsive services, and making changes based on observed data patterns. 
@@ -43,11 +42,9 @@ The increasing number of connections enabled by the Internet has also driven its
 
 _Figure 1.3 (a): Increasing number of Internet Users per year._
 
-
 ![Figure 1.3 (b): Increasing number of data stored per year. ](../media/n2.png)
 
 _Figure 1.3 (b): Increasing number of data stored per year._
-
 
  Some examples of Internet-scale systems include: 
 1. **Search engines** that crawl, store, index, and search (upto petabyte-sized) large data sets. For instance, Google started as a giant web index that crawled and analyzed web traffic, once every few days and matched these indices to keywords. Now, it updates its indices in near-real-time and is one of the most popular ways to access information on the Internet. Their index has trillions of pages with a size of thousands of terabytes. 

@@ -17,7 +17,6 @@ Resource sharing refers to multiplexing or partitioning system resources (e.g., 
 
 _Figure 3.7 Round-robin scheduling. (a) A queue of processes, with the process at the head, A, being currently scheduled at a CPU and the one next to it, B, being ready to get running once A is context switched. (b) The queue when A uses up its quantum, gets context switched, and B gets scheduled._
 
-
 As mentioned previously, resource sharing can be achieved in space as well. A common example of sharing in space is the sharing of the main memory. The main memory usually is partitioned into multiple partitions, each allocated to a process. Thus, the data of all processes will be resident in the memory at the same time. Sharing memory in space makes the system more efficient than allocating the whole memory to a single process. In particular, it allows each process to take turns on the CPU in a much faster way (because it is faster to load the process state from the main memory than from disk). Another common example of sharing in space is the sharing of disk storage in which a disk can hold files from multiple users at the same time. Partitioning memory and disk spaces as well as keeping track of who is using which memory portion and which disk blocks are typical OS tasks. The OS abstracts system components, so resource sharing is eased. For instance, rather than having to worry about sharing the tracks, sectors, cylinders, and bandwidth of a disk drive, we simply deal with files.
 
 ### References

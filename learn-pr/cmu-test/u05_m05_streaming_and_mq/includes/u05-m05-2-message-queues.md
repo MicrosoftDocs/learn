@@ -14,7 +14,6 @@ Employing message queues can add complexity to the application design and increa
 
 _Figure 5.50: An interface connects to senders (or producers), which create messages and to receivers (or consumers) which can receive the messages._
 
-
 ##  Characteristics of Message Queues
 
 Message queues and their novelty can be understood and appreciated when contrasted with traditional RPC and request-response mechanisms. The primary features of a message queue are as follows:
@@ -32,7 +31,6 @@ The primary advantage of a message queue is that it provides loose-coupling betw
 ![Figure 5.51: Message queues provide an interface that allows for programs to communicate with each other.](../media/mq2.png)
 
 _Figure 5.51: Message queues provide an interface that allows for programs to communicate with each other._
-
 
 - **There are no direct connections between programs.** Message queuing allows for indirect program-to-program communication. Senders do not necessarily need to know the receivers of messages and vice-versa. This allows for the logic of routing messages (and potentially work) to be decided by the message queueing system. 
 - **Communication between programs can be independent of time.** Message queues typically buffer messages between programs so they do not have to block or interrupt their execution to send or receive messages. They can do other work, and process the reply either when a message arrives or at a later time. When writing a messaging application, you do not need to know (or be concerned) when a program sends a message, or when the target is able to receive the message. The message is not lost; it is retained by the queue manager until the target is ready to process it. The message stays on the queue until it is removed by a program. This means that the sending and receiving application programs are decoupled; the sender can continue processing without waiting for the receiver to acknowledge receipt of the message. The target application does not even have to be running when the message is sent. It can retrieve the message after it is has been started.

@@ -24,7 +24,6 @@ Also mentioned in the previous module was economization, or mixing of colder out
 
 _Figure 2.16: Global average temperature map_ ([Wikipedia](http://commons.wikimedia.org/wiki/File:Annual_Average_Temperature_Map.jpg))
 
-
 As you will see in the power usage effectiveness (PUE) section later in this module, the energy utilization will be higher during hot months and lower during cold months. This is due to the efficiency gains from "free cooling" (either using air economizers or naturally cold water.)
 
 The average amount of annual rainfall might be a factor if you are considering using rainwater storage/filtration as a water source for cooling your data center. However, the number of sunny days per year in a particular region might convince you to try solar.
@@ -35,41 +34,33 @@ Part of a risk assessment for a particular location would include the frequency 
 
 _(a) Earthquake risk map._
 
-
 ![(b) Flood risk map.](../media/flood_risk_map.png)
 
 _(b) Flood risk map._
-
 
 ![(c) Hurricane risk map.](../media/hurricane_risk_map.png)
 
 _(c) Hurricane risk map._
 
-
 ![(d) Lightening risk map.](../media/lightening_risk_map.png)
 
 _(d) Lightening risk map._
-
 
 ![(e) Tornado risk map.](../media/tornado_risk_map.png)
 
 _(e) Tornado risk map._
 
-
 ![(f) Thunderstorm risk map.](../media/thunderstorm_risk_map.png)
 
 _(f) Thunderstorm risk map._
-
 
 ![(g) Volcano risk map.](../media/volcano_risk_map.png)
 
 _(g) Volcano risk map._
 
-
 ![(h) Wildfire risk map.](../media/wildfire_risk_map.png)
 
 _(h) Wildfire risk map._
-
 
 Figure 2.17: Natural disaster threat maps ([Global Datavault](http://www.globaldatavault.com/natural-disaster-threat-maps.htm), 2013).<!-- <link href="http://www.globaldatavault.com/natural-disaster-threat-maps.htm" >link</link> --> (Click on each figure for an enlarged view.)
 
@@ -84,6 +75,5 @@ The Internet relies on fiber optics to send and receive data over long distances
 ![Figure 2.18: Internet connectivity (Wikipedia, 2014).](../media/Internet_connectivity.png)
 
 _Figure 2.18: Internet connectivity_ ([Wikipedia](http://en.wikipedia.org/wiki/File:Internet_Connectivity_Distribution_%26_Core.svg))
-
 
 In order to support a large amount of users, a cloud provider should choose a data center location that is in a city/region that has a tier 2 or tier 1 provider. This will also decrease the latency to global users due to fewer hops (each router is a hop) between the client and the server. A data center's requirement for uplink to the Internet ranges from a few megabits per second to several hundred gigabits per second, and that much bandwidth simply is not yet available everywhere.

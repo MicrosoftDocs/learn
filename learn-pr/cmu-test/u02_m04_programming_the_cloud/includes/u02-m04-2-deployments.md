@@ -12,7 +12,6 @@ The deployment of a cloud application is an iterative process which starts from 
 
 _Figure 2.28: Code deployment process_
 
-
 It is typical for cloud developers to maintain multiple concurrently running versions of their applications to pipeline deployment of their application to into various stages: 
 1. Testing 
 1. Staging 

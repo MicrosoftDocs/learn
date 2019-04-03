@@ -6,7 +6,6 @@ MongoDB is a document-oriented database. MongoDB eschews the relational model in
 
 _Video 4.42: MongoDB_
 
-
 ##  MongoDB Data Model
 
 A **document** is the basic unit of data for MongoDB, roughly equivalent to a row in a relational database management system. A document is an ordered set of keys and their associated values. An example of a document is illustrated below:
@@ -55,7 +54,6 @@ For small installations, MongoDB is deployed as as a single-node system. In orde
 
 _Figure 4.43: Replication in MongoDB_
 
-
 A MongoDB replica-set is designed for automatic failover. If a node fails to respond for more than 10 seconds, it is presumed to be dead and the remaining nodes vote on which node should be the new primary node.
 
 In order to distribute data, MongoDB allows for data to be **sharded** across multiple nodes. Each shard is an independent database, and collectively, the shards make up a single logical database. The architecture of a sharded MongoDB cluster is illustrated below:
@@ -63,7 +61,6 @@ In order to distribute data, MongoDB allows for data to be **sharded** across mu
 ![Figure 4.44: Sharding in MongoDB](../media/mongo_shards.png)
 
 _Figure 4.44: Sharding in MongoDB_
-
 
 **Shards** store the data. To provide high availability and data consistency, in a production sharded cluster, each shard is a replica set. 
 

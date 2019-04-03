@@ -8,7 +8,6 @@ To begin, each I/O device has a device controller. A device controller can typic
 
 _Figure 3.28: Memory mapped I/O with a specific region in the RAM address space for accessing I/O devices._
 
-
 Because I/O operations are executed in system mode, user programs can only invoke them through OS system calls (assuming traditional systems). The OS abstracts most of the details of I/O devices and makes them accessible through only well-defined interfaces. Figure 3.29 shows the three major interfaces that come into play when a user program places an I/O request. These are the **system call interface**, the **device driver interface**, and the **operation-level interface**. Starting an I/O operation, a user I/O request causes an OS system call that transfers control to the OS. Next, the OS calls device drivers (a set of software routines) via the device driver interface. A relevant device driver routine converts the I/O request to an operation specific to the requested physical device. The converted operation is subsequently carried through the operation-level interface to the corresponding physical device.
 
 ![Figure 3.29: The three major interfaces involved in I/O operations: system call, device driver, and operation-level interfaces.](../media/IO_operations.png)

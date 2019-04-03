@@ -20,7 +20,6 @@ A few considerations that make this a challenging task is the spin up time of an
 
 _Figure 2.33: Sample Request Load Pattern_
 
-
 Let us imagine we are using Amazon’s Web Services, let us also imagine that each unit of time is equivalent to 3 hours of actual time and that we require one server to serve 5k requests. If you consider the load during the time units 16 to 22, there is an enormous fluctuation in the load. We can detect a fall in demand at right around time unit 16 and start to reduce the number of allocated resources. Since we are going from roughly 50k requests to almost 0 requests in the space of 3 hours, academically we can save the cost of 10 instances that would have been up at time 16. 
 
 Now let us imagine instead that each time unit is equal to 20 mins of actual time. In that case spinning down the all the resources at time unit 16 only to spin up new resources after 20 mins will actually increase the cost instead of saving, since AWS bills each compute instance on an hourly basis. 

@@ -8,10 +8,8 @@ Contrary to OSs in traditional systems, with system virtualization, the hypervis
 
 _Video 3.10: Memory Virtualization._
 
-
 ![Figure 3.25: Memory virtualization in a native system VM.](../media/native_system_VM.png)
 
 _Figure 3.25: Memory virtualization in a native system VM._
-
 
 Similar to any general-purpose OS, a guest OS would still own its set of page tables. In addition, the hypervisor would own another set of page tables for mapping real-to-physical addresses. The page tables in the hypervisor are called real map tables. Figure 3.25 demonstrates system memory virtualization in a native system VM. It shows page tables maintained by guest VMs and real map tables maintained by the hypervisor. Each entry in a page table maps a virtual page of a program to a real page in the respective VM. Likewise, each entry in a real map table maps a real page in a VM to a physical page in the physical memory. When a guest OS attempts to establish a valid mapping entry in its page table, it traps to the hypervisor. Subsequently, the hypervisor establishes a corresponding mapping in the relevant VM's real map table. 

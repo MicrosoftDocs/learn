@@ -20,7 +20,6 @@ The goal of any distributed programming framework is to support the execution of
 
 _Figure 5.32 shows the most important parts of the Spark framework._
 
-
 Spark is implemented in about 14,000 lines of Scala, a statically typed high-level programming language for the Java VM. 
 
 Spark relies on resilient distributed datasets (RDDs), a distributed memory abstraction to support fault-tolerant, in-memory computations on large datasets. Programmers invoke operations on RDDs by passing closures (functions) to workers, which are copied to and executed at these workers. We will explore each part of this system in detail. 
@@ -32,7 +31,6 @@ The `SparkContext` object can connect to several types of cluster managers that 
 ![Figure 5.33: Spark Architecture](../media/spark_cluster.png)
 
 _Figure 5.33: Spark Architecture_
-
 
 Each Spark application runs as an independent set of processes on a distributed cluster. The driver is the process that runs the main() function of the application and creates a `SparkContext` object. Spark applications are coordinated by the `SparkContext` object. The `SparkContext` in turn connects to a Cluster Manager, which allocates resources across all applications on the cluster. The `SparkContext` object also contains a number of implicit conversions and parameters for use with various Spark features. 
 

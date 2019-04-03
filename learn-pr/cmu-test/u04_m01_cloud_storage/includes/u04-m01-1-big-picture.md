@@ -8,7 +8,6 @@ The nature and properties of data typically influence the design and implementat
 
 _Video 4.1: Characterizing Data_
 
-
 ##  Structure of Data
 
 Data can be categorized using its dynamicity and structure. Specifically, data can be broadly segmented into one of the four quadrants in Figure 4.1. One categorization represents the structure of the data, which is considered as either **structured** or **unstructured**.
@@ -16,7 +15,6 @@ Data can be categorized using its dynamicity and structure. Specifically, data c
 ![Figure 4.1: Segmenting data into various types](../media/segmenting_data.png)
 
 _Figure 4.1: Segmenting data into various types_
-
 
 **Structured data** have a predefined data model that organizes the data in a form that is relatively easy to process, store, retrieve, and manage. Structured data are usually small data that naturally fit in tabular form and hence can easily be stored in traditional databases (e.g., **relational** databases). An example of structured data is customers' contact information that is stored in tables in a customer relationship management (CRM) database. These data fit in a fairly rigid model (called **schema** in relational databases), which can be quickly stored, accessed, and manipulated.
 
@@ -47,7 +45,6 @@ The rapidly expanding information and communications technology (ICT) that is pe
 ![Figure 4.2: Predicted growth of data from 2009 to 2020](../media/predicted_growth_data.png)
 
 _Figure 4.2: Predicted growth of data from 2009 to 2020_
-
 
 Organizations are trying to leverage or, in fact, cope with the massive amounts of data that are growing at ever-increasing rates. Google, Yahoo!, and Facebook have gone from processing gigabytes and terabytes to the petabyte range, which puts immense pressure on their computing infrastructures that need to be available 24/7 and must scale seamlessly as the amount of data produced rises exponentially. These are the challenges to which present and future storage technologies must respond.
 

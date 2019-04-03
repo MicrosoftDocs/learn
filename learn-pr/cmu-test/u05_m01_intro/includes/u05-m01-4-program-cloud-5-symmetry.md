@@ -12,7 +12,6 @@ In a master-slave organization, a central process, called the _master_, handles 
 
 _Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands)._
 
-
 In asymmetric organizations, the master can distribute work among the slaves using one of two following protocols: 
 
 1. The **push-based** strategy assigns work to slaves unilaterally, without their asking. Clearly, this situation allows the master to apply fairness constraints over the slaves via distributing the work equally among them. Alternately, this arrangement could also overwhelm/congest slaves currently experiencing slowness/failures and who are thus unable to keep up with work. Consequently, load imbalance might occur, which usually leads to performance degradation. Nevertheless, the master can implement smart strategies. In particular, the master can assign work if and only if the slave is observed to be ready. For this tactic to work, the master must continuously monitor all slaves and apply some logic (usually complex) to accurately identify available slaves. To maintain fairness and enhance performance, the master must also decide upon the amount of work to assign. In clouds, the probability of faulty and slow processes increases due to heterogeneity, performance unpredictability, and scalability (see the section ). These limitations can make the push-based protocol inefficient on the cloud.

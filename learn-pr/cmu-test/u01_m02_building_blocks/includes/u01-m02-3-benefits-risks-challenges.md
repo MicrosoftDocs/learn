@@ -8,7 +8,6 @@ The popularity of cloud computing is driven by its numerous benefits, including 
 
 _Video 1.6: The benefits of cloud computing_ ([alternative version](../media/video_2_benefits.pdf))
 
-
 Although presented earlier and in the video above, let us consider the cloud benefits individually:
 
 - **Economic model:** Organizations typically estimate their IT requirements for a period of 1 to 5 years in advance in a process called **capacity planning**. Capacity planning leads organizations to estimate IT investments for peak loads, which could lead to either excess capacity at times (underutilized resources) or deficient capacity when loads exceed projections (which could lead to service degradation). With the pay-as-you-go economic model, organizations pay for the resources that they need. Organizations no longer have to pay upfront cost, invest in and procure expensive computing infrastructure, nor do they have to pay recurring costs to manage their infrastructure. This is particularly important for startups because by leasing compute resources they benefit from reduced upfront cost and reduced time to market when creating and making their offerings available to the general public.

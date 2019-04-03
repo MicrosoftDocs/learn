@@ -6,7 +6,6 @@ CSPs are taking great pains to attract users from their traditional deployments.
 
 _Figure 2.37: Average cost reduction of CSP Services_
 
-
 However, despite these decreasing prices, cloud adoption still must be done with care. To truly gain the cost benefits of the cloud, it is important to understand, budget, plan, monitor and carefully analyze your usage. Also, it is difficult to choose between CSPs for individual use cases, since there is no standard way for CSPs to package resources, nor do they always follow the same pricing models. 
 
 ##  Pricing Models
@@ -33,7 +32,6 @@ To use the cloud in a cost-effective manner, enterprises must develop a mature p
 
 _Figure 2.38: Cost Optimization Process_
 
-
 Before considering cost requirements, an organization must plan the amount of work that it is capable of completing in a given period based on fixed resources like the amount of staff, while dealing with physical constraints like inventory management, overhead due to transportation, material handling, etc. The provisioning of IT resources must be designed to meet or exceed the physical capacity of the organization. This is extremely important, because the elasticity provided by the cloud tempts development teams to simply add resources as needed, without considering the cost implications of their decisions. 
 
 The first step when attempting to reduce expenditure on the cloud is to match resource types with the actual requirement for the application. This may mean selecting between EC2 VMs with different memory configurations, or number of cores. There is no simple way to do this, apart from testing and benchmarking the application across different resource types. 
@@ -53,6 +51,5 @@ As one of the largest AWS customers in the world, it is crucial for Netflix to h
 ![Figure 2.39: Netflix Ice](../media/netflix.png)
 
 _Figure 2.39: Netflix Ice_
-
 
 This tool has been released as a part of their Open Source initiative. Many companies (as well as CMU’s cloud computing course staff) use Ice or variants to gain insights into AWS usage and expenditure. It helps influence whether future resources should be reserved for the long-term (at cheaper prices), and identifies users or teams who overspend. All large cloud deployments should follow a similar process of planning & budgeting, monitoring & visualization, and forecasting & optimization. 

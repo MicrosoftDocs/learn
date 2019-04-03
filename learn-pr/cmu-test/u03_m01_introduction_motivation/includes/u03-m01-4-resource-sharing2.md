@@ -8,13 +8,11 @@ What we have discussed so far has to do with sharing a single system component (
 
 _Figure 3.8: Sharing in space of a multiprocessor system._
 
-
 As compared to sharing in space, sharing multiprocessor systems in time makes it possible to partition an _n_-way system into a system with more than _n_ partitions (i.e., we are no longer limited by the number of available physical processors). Figure 3.9 demonstrates a multiprocessor system with physical resources being shared in a time-multiplexed manner. Clearly, sharing in time allows better system utilization because it is permissible for two partitions to share the resources of a single system board. This, however, comes at the cost of requiring mechanisms to provide safe and efficient ways of sharing resources. 
 
 ![Figure 3.9: Sharing in time of a multiprocessor system.](../media/sharing_in_time_multiprocessor.png)
 
 _Figure 3.9: Sharing in time of a multiprocessor system._
-
 
 As pointed out previously, sharing resources in multiprocessor systems is more involved than in uniprocessor systems. For instance, in a uniprocessor system, scheduling is one dimensional. In particular, after the scheduler defines a specific quantum, it mainly decides which process should go next. In a multiprocessor system, however, after defining the quantum, the scheduler has to decide which process should go next and on which CPU. This latter extra dimension introduces some complexity, as illustrated in Figure 3.10. The figure reveals a way to deal with scheduling on multiprocessors in which a single, systemwide data structure (e.g., a list or a queue) is adopted. In Figure 3.10 (a), the four CPUs are busy, and multiple processes are waiting on a shared queue (i.e., seen and accessed by all CPUs), assuming a round-robin algorithm. In Figure 3.10 (b), CPU2 finishes its work and polls for the shared queue. When CPU2 gets access to the queue, it locks it and selects the next ready process as dictated by the round-robin algorithm. Locking the shared queue is done to avoid inconsistent accesses by multiple, idle CPUs. 
 
@@ -25,7 +23,6 @@ Another complexity that has to do with scheduling on multiprocessor systems is t
 ![Figure 3.10: Using a single, system-wide data structure (a queue in this case) to pursue CPU scheduling in a multiprocessor system. The queue is shared across all the CPUs and exemplifies a round-robin algorithm. (a) All CPUs are assumed to be busy. (b) CPU2 finishes its work and gets the next process, B, from the queue. CPU2 has to lock the queue due to being shared by all CPUs before getting B.](../media/single_system-wide_data_structure.png)
 
 _Figure 3.10: Using a single, system-wide data structure (a queue in this case) to pursue CPU scheduling in a multiprocessor system. The queue is shared across all the CPUs and exemplifies a round-robin algorithm. (a) All CPUs are assumed to be busy. (b) CPU2 finishes its work and gets the next process, B, from the queue. CPU2 has to lock the queue due to being shared by all CPUs before getting B._
-
 
 To this end, we note that resource sharing as described in this page (i.e., in the context of the OS) also applies to virtualization. Indeed, a core task of the hypervisor is to share/multiplex the underlying system components among various virtual machines. Similar to traditional OSs, the hypervisor can apply sharing strategies in space and in time. We discuss later in this unit how the hypervisor can pursue such sharing and provide examples of CPU scheduling algorithms from the Xen platform.
 

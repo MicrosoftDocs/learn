@@ -10,12 +10,10 @@ The hypervisor deals with the situation by applying a **reclamation technique**.
 
 _Video 3.11: Advanced Memory Management._
 
-
 One of the popular reclamation techniques is the **ballooning process** introduced in VMware ESX, which has been the basis for similar techniques in other hypervisors.
 
 ![Figure 3.27: The ballooning process in VMware ESX.](../media/ballooning_process.png)
 
 _Figure 3.27: The ballooning process in VMware ESX._
-
 
 In VMware ESX, a balloon driver must be installed and enabled in each guest OS as a pseudo-device driver. The balloon driver regularly polls the hypervisor through a private channel to obtain a target balloon size. As illustrated in Figure 3.27, when the hypervisor experiences memory shortage, it inflates the balloon by setting a proper target balloon size. Figure 3.27(a) shows four real memory pages mapped to four physical pages, of which only two pages are actually active (the red and the yellow ones). Without involving the ballooning process, the hypervisor is unaware of the other two inactive pages (the green and the dark-blue ones) because they are still mapped to physical pages. Consequently, the hypervisor will not be able to reclaim inactive pages unless it is informed by the guest OSs it is managing. <!-- SCG: Not sure I understand "unless getting informed" Do yo mean "unless it is informed by the guest OSs it is managing." --> With memory ballooning, however, the hypervisor can set the balloon target size to an integer number (say 2 or 3). When recognized by the balloon driver at the guest OS, the driver checks out the pages, locates the two inactive pages, and pins them (see Figure 3.27(b)). The pinning process is carried out by the guest OS via ensuring that the pinned pages cannot be read/written by any process during memory reclamation. After pinning the inactive pages, the balloon driver transmits to the hypervisor the addresses of the pinned pages. Subsequently, the hypervisor proceeds safely with reclaiming the respective physical pages and allocating them to needy VMs. Last, to unpin pinned pages, the hypervisor deflates the balloon by setting a smaller target balloon size and communicates that to the balloon driver. When received by the balloon driver, it unpins the pinned pages so the guest OS can utilize them. More information about the ballooning process can be found in VMware ESX's documentation.

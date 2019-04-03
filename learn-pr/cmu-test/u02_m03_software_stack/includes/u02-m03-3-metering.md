@@ -14,7 +14,6 @@ There are various costs included in cloud resources. Fixed costs such as facilit
 
 _Figure 2.24: Metering in Different Types of Cloud Services_
 
-
 ##  Chargeback Model
 
 Basically the chargeback model is the ability of an IT organization to measure the usage of resources and chargeback their customers accordingly. Traditionally the chargeback model is easy to implement since an IT department can easily divide its budget for the business units that it serves like software licences, stand-alone servers etc. This is challenging in cloud because the CSP needs to consider the rate and time of consumption. 
@@ -30,7 +29,6 @@ Although the underlying architecture of metering and measuring is hidden by corp
 ![Figure 2.25: Ceilometer Architecture](../media/metering2.png)
 
 _Figure 2.25: Ceilometer Architecture_
-
 
 **Polling Agent**: A daemon which polls OpenStack services for metering. 
 

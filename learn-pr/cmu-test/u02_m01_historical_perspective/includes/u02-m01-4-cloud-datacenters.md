@@ -16,7 +16,6 @@ On the other hand, even with maximal use of virtualization techniques, at a poin
 
 _Figure 2.5: Traditional hierarchical, tree-style data center network topology._
 
-
 Most of today's data center networks are based on hierarchical, tree-style designs consisting of three main tiers: an access tier, an aggregation tier, and a core tier. Figure 2.5 shows a sample of a traditional tree-style network topology. First, the access tier is made up of cost-effective Ethernet switches connecting rack servers and IP-based storage devices (typically 10/100Mbps or 1GbE connections). Second, multiple access switches are connected via Ethernet (typically 1/10GbE connections) to a single aggregation switch. Third, a set of aggregation switches are connected to a layer of core switches. Because layer 2 VLANs do not involve IP routing, they are typically implemented across access and aggregation tiers. Conversely, layer 3 routing is implemented at core switches that forward traffic between aggregation switches, to an intranet, and to the Internet. A salient point is that the bandwidth between two servers is dependent on their relative locations in the network topology. For instance, nodes that are on the same rack have higher bandwidth between them as opposed to nodes that are off rack.
 
 Indeed, the network is a key component in cloud data centers. Hierarchical topologies as depicted in Figure 2.5 do not truly suit clouds because they enforce inter-server traffic to traverse multiple switch layers, each adding to latency. Latency in this context refers to the delays incurred by the number of switches traversed, required processing and buffering. Minimal delays in clouds can result in poor user performance perception and loss of productivity. Hence, flatter network topologies with fewer layers to accommodate delay- and volume-intensive traffic are typically required for cloud data centers.
@@ -30,7 +29,6 @@ Usually, contemporary tree-style data center networks rely on some variant of th
 ![Figure 2.6: Workload-to-workload communications in a virtualized environment.](../media/communications_virtualized_environment.png)
 
 _Figure 2.6: Workload-to-workload communications in a virtualized environment._
-
 
 In modern data centers, workloads (e.g., databases, user applications, Web hosting) are typically deployed on distinct physical servers, with workload-to-workload communications occurring over physical connections. Accordingly, securing users can be achieved by conventional network-based intrusion detection/prevention systems. On the other hand, in cloud data centers, multiple VMs can be provisioned on a single rack server, with each belonging to a different user. Thus, workload-to-workload communications can occur within the same server over virtual connections in a manner completely transparent to existing security systems (see Fig. 2.6). Therefore, cloud data centers need to isolate users, protect virtual resources, and secure intra-server communications.
 

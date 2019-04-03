@@ -14,7 +14,6 @@ You were already introduced to the concept of a rack and a rack unit (U). Figure
 
 _Figure 2.12: A 42U, four-post rack/cabinet, with sides and doors removed._
 
-
 The most common height rack is 42U, and that is simply to fit through a normal doorway. The overall height, width, and depth of racks by different manufacturers are not exactly the same; the only guarantee is the post widths. Some racks have extended depth, which is useful for larger servers and/or routing cables and mounting zero-U (vertical mount outside of the 42U space) equipment. "Wide" racks have extra space to the left and right of the posts, which is useful for end-of-row networking racks because of the added space to run many cables. Racks also have casters that allow them to be rolled into place or moved if needed. However, these wheels are not meant to permanently support the full weight of a filled rack, which is why you have to screw down the four stabilization feet at each corner. Regions that are prone to earthquakes also have safety regulations that require racks to be bolted into concrete through metal plates on the front and rear of the rack.
 
 Many server rooms have a raised floor, although it is not a strict requirement. This provides a plenum for cold air to be distributed throughout the room (tiles in front of racks have vent holes). Raised floors also provide space to run electrical or network cable or chilled water pipes for in-row cooling. Last, they provide more flexibility for future layout/configuration changes. Figure 2.13 shows what a raised floor looks like. 
@@ -22,7 +21,6 @@ Many server rooms have a raised floor, although it is not a strict requirement. 
 ![Figure 2.13: An example of a raised floor.](../media/raised_floor.png)
 
 _Figure 2.13: An example of a raised floor._
-
 
 The floor consists of an array of metal support pedestals, which are mounted to the subfloor; metal stringers that are placed horizontally between pedestals; and strong floor tiles that rest atop the stringers at each corner at a pedestal. When a tile is removed, the holes are large enough for a human to fit through, and the tiles are strong enough to withstand the weight of a filled rack. Tiles do have a rollover rating, however, and for safety reasons, any tile that has been rolled over (moving a filled rack on top of it) more times than it is rated for should be replaced. Also for safety reasons, on a stringerless floor, no more than two or three consecutive tiles should ever be lifted from the floor simultaneously. If there is a problem with one of the pedestals, weight can shift laterally, cascading to a catastrophic floor failure.
 
@@ -38,7 +36,6 @@ The following video (Video 2.3) discusses various power distribution methods in 
 
 _Video 2.3: Data center power distribution methods._
 
-
 Reliability/uptime is often the number-one design consideration for a data center. Unfortunately, the power feeding the data center is not 100% reliable because of events such as bad weather conditions and downed power lines. In some locations, it is possible to get feeds from multiple electrical utility suppliers, but often this is not available. To keep the IT equipment powered on during a power outage, a generator can be installed. Backup generators come in two varieties, powered either by diesel fuel or natural gas. They could power the data center indefinitely as long as fuel is available, but both fuel sources are significantly more expensive than electricity from the grid. Generators are typically mounted outdoors due to fumes, noise, weight, and vibration. An automatic or universal transfer switch is a device that can choose a working power source (utility 1, utility 2, or generator) and connect it to the main power input to the data center.
 
 Generators have a 15- to 60-second start-up time, so this is where an uninterruptable power supply (UPS) can provide power to the IT equipment until the utility power is restored or the generator is running. UPS have many lead-acid batteries (like in a car) strung in series. For example, a 480-volt UPS would have a string of forty (40) 12-volt batteries. A UPS also act as a line conditioner and will switch to a DC battery source if it detects poor AC conditions, such as surges, sags, overvoltage, undervoltage (brown out), and variations in wave shape or frequency.
@@ -51,7 +48,6 @@ For AC, higher voltage (400V and 480V) is more efficient for distributing power 
 
 _Figure 2.14: Diagrams of the (a)C13 power connector and (b)C19 power connector_ ([Source](http://en.wikipedia.org/wiki/IEC_60320))
 
-
 Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads.<!-- <link href="http://www.thegreengrid.org/~/media/WhitePapers/White_Paper_16_-_Quantitative_Efficiency_Analysis_30DEC08.pdf?lang=en" >link</link> --> Because DC power supplies are not a commodity, these are only suited for large-scale deployments with custom components.
 
 ##  Cooling
@@ -61,7 +57,6 @@ Many of the advances in data center efficiency over the last 10 years have come 
 ![Figure 2.15: Typical data center cooling technique. Figure shows the use of a CRAC and raised floor.](../media/cooling_technique.png)
 
 _Figure 2.15: Typical data center cooling technique. Figure shows the use of a CRAC and raised floor._
-
 
 Commonly found in traditional server rooms are computer room air conditioners (CRAC or CAC). These continuously take in hot air and output cold air into the space under a raised floor or into ducts. The difference between a CRAC and a regular air conditioner is that CRACs also provide humidity control. Keeping a relative humidity around 40% is recommended. If the air is too wet, you get condensation (bad for electronics and anything metal), or if it is too dry, you get a higher risk of ESD, or electrostatic discharge (also harmful to electronics). The units' fans have to be sized large enough to create positive pressure and airflow for the volume of the room and have sufficient cooling capacity to maintain the desired "cold-aisle" air temperature (more on hot and cold aisles below and in the next module). The CRACs remove heat through the use of a condenser (similar to what is in your refrigerator at home) or through a heat exchanger that uses chilled water supplied by chillers elsewhere on site.
 

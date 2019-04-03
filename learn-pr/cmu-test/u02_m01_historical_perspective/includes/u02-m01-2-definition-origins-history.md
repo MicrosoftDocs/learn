@@ -22,7 +22,6 @@ Modularity is important for data centers because it allows an organization to ex
 
 _Figure 2.1: 1940s radio operators room showing early equipment racks_ ([Inland Marine Radio History Archive](http://www.imradioha.org/WMI.htm))
 
-
 A 1933 U.S. patent, F.C. Lavarack, 1,919,166, is an example of a standardized equipment rack for relays. In Figure 2.2, you can see some of the original drawings in the patent.
 
 Some of the advantages of Lavarack's design over common predecessors include:

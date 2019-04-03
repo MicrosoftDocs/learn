@@ -10,13 +10,11 @@ Replication produces multiple replicas of data, and consistency ensures that tho
 
 _Video 4.8: Consistency Models_
 
-
 We discuss three consistency models in detail in this unit: **sequential consistency**, **causal consistency**, and **eventual consistency**.
 
 ![Figure 4.13: A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks](../media/replication.png)
 
 _Figure 4.13: A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks_
-
 
 ###  Sequential Consistency
 
@@ -25,7 +23,6 @@ Also called **strong** or **strict consistency**, sequential consistency entails
 ![Figure 4.14: (a) A sequentially consistent distributed data store, and (b) a nonsequentially consistent distributed data store](../media/sequentialvsnon.png)
 
 _Figure 4.14: (a) A sequentially consistent distributed data store, and (b) a nonsequentially consistent distributed data store_
-
 
 A distributed data store is considered sequentially consistent if all processes see the same interleaving of read and write operations when accessing replicas concurrently. Figure 4.14 demonstrates two distributed data stores: a sequentially consistent data store (Figure 4.14(a)) and a nonsequentially consistent data store (Figure 4.14(b)). The symbols W(x)a and R(x)b denote a write value of _a_ to replica x and a read value of _b_ from replica x, respectively. The figure shows four processes operating on replicas corresponding to data item x. In Figure 4.14(a), process P1 writes _a_ to x, and later (in absolute time), process P2 writes _b_ to x. Subsequently, processes P3 and P4 first receive value _b_ and later value _a_ upon reading x. As such, the write operation carried by process P2 appears to have taken place before that of P1 and of both processes P3 and P4. Nonetheless, Figure 4.14(a) still represents a sequentially consistent distributed data store because processes P3 and P4 experience the same interleaving of operations (i.e., reading first _b_ and then _a_). In contrast, processes P3 and P4 in Figure 4.14(b) see different interleaving of operations, thus violating the condition of sequential consistency. 
 
@@ -36,7 +33,6 @@ The causal consistency model is a weaker variant of the sequential consistency m
 ![Figure 4.15: (a) A causally consistent distributed data store, (b) a noncausally consistent distributed data store, and (c) A causally consistent distributed data store](../media/causal_consistency.png)
 
 _Figure 4.15: (a) A causally consistent distributed data store, (b) a noncausally consistent distributed data store, and (c) A causally consistent distributed data store_
-
 
 ###  Eventual Consistency
 
@@ -69,7 +65,6 @@ It now becomes the database’s responsibility to ensure **atomicity** of this t
 
 _Video 4.9: ACID Properties_
 
-
 - **Atomic:** The transaction is indivisible—either all the statements in the transaction are applied to the database, or none are.
 - **Consistent:** The database remains in a consistent state before and after transaction execution. 
 - **Isolated:** Although multiple transactions can be executed by one or more users simultaneously, one transaction should not see the effects of other concurrent transactions.
@@ -89,7 +84,6 @@ Video 4.9 provides an overview of the CAP theorem:
 
 _Video 4.9: The CAP Theorem_
 
-
 The easiest way to understand CAP is to think of two nodes of a distributed storage system on opposite sides of a network partition (Figure 4.16). Allowing at least one node to update state will cause the nodes to become inconsistent, thus forfeiting C. Likewise, if the choice is to preserve consistency, one side of the partition must act as if it is unavailable, thus forfeiting A. Only when nodes communicate is it possible to preserve both consistency and availability, thereby forfeiting P.
 
 As an example, consider the case of a traditional single-node RDBMS. In this scenario, consistency and availability can be guaranteed, while the concept of partition tolerance does not exist because the database is on a single node.
@@ -99,7 +93,6 @@ When companies such as Google and Amazon were designing large-scale databases to
 ![Figure 4.16: CAP theorem illustrated](../media/CAP_theorem.png)
 
 _Figure 4.16: CAP theorem illustrated_
-
 
 ### References
 

@@ -8,5 +8,4 @@ In memory virtualization, the combined total size of real memories can grow beyo
 
 _Figure 3.26: A hypervisor with 4GB of physical memory, enabling three VMs at once with a total of 6GB of real memory._
 
-
 To this end, in practical situations, some VMs might be lightly loaded, while others might be heavily loaded. Lightly loaded VMs can cause some pages to sit idle, while heavily loaded VMs can result in memory page thrashing. To deal with such a situation, the hypervisor can take (or steal) the inactive physical memory pages away from idle VMs and provide them to heavily loaded VMs. As a side effect, hypervisors usually write zeros to the stolen/reclaimed, inactive physical memory pages in order to avert information leaking among VMs. 

@@ -17,13 +17,11 @@ In GraphLab, graphs are initially stored as files in an underlying distributed s
 
 _Figure 5.46: The GraphLab system. In the initialization phase the atoms are constructed using MapReduce (for example), and in the GraphLab execution phase, the atoms are assigned to cluster machines and loaded by machines from a distributed file system (e.g., HDFS)._
 
-
 In the first phase, the input graph is divided into _k_ partitions, called **atoms**, where _k_ is much larger than the number of cluster machines. As demonstrated in Figure 5.46, atoms can be constructed either sequentially or using parallel loading techniques, including MapReduce. GraphLab does not store the actual vertices and edges in atoms but rather the commands to generate them, in the form of a journal. This allows GraphLab to reconstuct portions of the graph in case of node failures. In addition, GraphLab maintains in each atom information about its neighboring vertices and edges. This information, denoted in GraphLab as **ghost** vertices, provides a caching capability for efficient adjacency data accessibility as explained in the section .
 
 ![Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique.](../media/graph_cuts.png)
 
 _Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique._
-
 
 The graph can be partitioned across the cluster machines in a number of ways (Figure 5.47). A simple technique is **edge-cut**, where graph is partitioned along each vertex (Figure 5.47(a)). Each vertex is randomly assigned to a machine along with all its associated edges. As a result, **ghost** vertices are generated so that edges can be associated with a vertex that is not in a particular machine. However, for graphs with power-law distribution of edges, this means that the edge-cut partitioning will be unbalanced and some machines will be more loaded than others (due to the star-like motifs of a small number of vertices). To deal with such graphs, GraphLab uses a novel technique (known as **Greedy Vertex Cuts**) to partition high-degree vertices across machines in order to distribute the computation more effectively. Vertices of high degree are replicated across machines, with each machine receiving a subset of the edges for that vertex (Figure 5.47(b)). The machine that holds a given edge for a vertex is decided using the following algorithm: 
 
@@ -212,7 +210,6 @@ The GAS functions are executed on a set of active vertices on every iteration. D
 ![Figure 5.48: Execution of the Gather-Apply-Scatter functions on two machines that a subset of edges of the same vertex.](../media/gas_execution.png)
 
 _Figure 5.48: Execution of the Gather-Apply-Scatter functions on two machines that a subset of edges of the same vertex._
-
 
 Figure 5.48 illustrates the resulting communication pattern of employing the GAS functions on a graph partitioned using the Greedy Edge-Cuts algorithm described earlier. Gather functions run locally on each machine that contains the ghost of a vertex. During the accumulation, these gathered values are sent to the machine that has the master copy of the vertex, where it can compute the function defined in the apply stage. Finally, the updated vertex data is copied to all machines that have ghost copies of the vertex and the scatter function is executed to propagate values to the adjacent vertices. 
 

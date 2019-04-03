@@ -12,7 +12,6 @@ In a public cloud, the cloud infrastructure is owned by a cloud provider and is 
 
 _Figure 1.7: Public cloud._
 
-
 ##  Private Cloud
 
 In this second type of cloud, the cloud infrastructure is owned by an organization (Figure 1.8). The infrastructure is accessible to specific users via the organization's intranet. The cloud environment needs to be procured, set up, operated, and maintained by the organization itself. The private cloud resources are typically shared amongst an organizations end users. Unlike the public cloud, security and terms of use of a private cloud are defined by the organization. The entire infrastructure is located in the organization, hence, security can be compliant with the organization's policies.
@@ -21,7 +20,6 @@ In this second type of cloud, the cloud infrastructure is owned by an organizati
 
 _Figure 1.8: Private cloud._
 
-
 ##  Hybrid Cloud
 
 In a hybrid cloud, the infrastructure includes an owned private cloud and a leased public cloud (Figure 1.9). Hybrid clouds enable the idea of "cloud bursting," in which an organization uses its private cloud for most of its needs and dynamically provisions resources in the public cloud when utilization exceeds the capacity of its private cloud.
@@ -29,6 +27,5 @@ In a hybrid cloud, the infrastructure includes an owned private cloud and a leas
 ![Figure 1.9: Hybrid cloud.](../media/hybrid_cloud.png)
 
 _Figure 1.9: Hybrid cloud._
-
 
 Other types of clouds continue to emerge, for example, Community Clouds which share infrastructure among different organizations that have common security or other concerns. For example, various non-profit organizations that work closely with government might build and share a community cloud. Another type is Distributed Cloud which provides cloud computing using a set of distributed machines located at different geographical locations. An example is Cloud@Home which leverages volunteered resources as a shared resource.

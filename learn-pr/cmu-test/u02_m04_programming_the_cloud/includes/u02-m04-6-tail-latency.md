@@ -10,7 +10,6 @@ Most cloud applications are large, distributed systems often rely on paralleliza
 
 _Figure 2.34: Latency due to scale out_
 
-
 Consider the example of searching for a movie on Netflix. As a user begins to type in the search box, this will generate several parallel events from the root web server, which include at least the following requests: 
 1. to the autocomplete engine to actually predict the search being made based on past trends and the user’s profile, 
 1. to the correction engine which finds errors in the typed query based on a constantly adapting language model, 
@@ -28,7 +27,6 @@ Like most stochastic processes, the response time of a single leaf node can be e
 
 _Figure 2.35: Tail Latency Example_
 
-
 Consider a system where all leaf nodes have an average response time of 1 ms, but there is probability of a 1% that the response time is greater than 1000 ms (one second). If each query is handled by only a single leaf node, the probability of the query taking longer than one second is also 1%. However, as we increase the number of nodes to 100, the probability that the query will complete within one second drops to 36.6%, which means that there is a 63.4% chance that the query duration will be determined by the tail (lowest 1%) of the latency distribution. 
 <!-- TODO fix
 <formula><m:math display="block" xmlns:m="m"><m:mrow><m:mfenced open="(" close=")"><m:msup><m:mn>0.99</m:mn><m:mn>100</m:mn></m:msup></m:mfenced></m:mrow></m:math></formula>
@@ -40,7 +38,6 @@ If we simulate this for a variety of cases, we see that as the number of servers
 ![Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study.](../media/tail_latency2.png)
 
 _Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study._
-
 
 Just like we designed our applications to be fault-tolerant to deal with resource reliability problems, it should be clear now why it is important for applications to be “tail-tolerant”. To be able to do this, we must understand the sources of these long performance variabilities and identify mitigations where possible and workarounds where not. 
 

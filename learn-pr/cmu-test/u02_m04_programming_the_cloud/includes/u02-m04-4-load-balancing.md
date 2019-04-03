@@ -12,11 +12,11 @@ Before the advent of the cloud, DNS load balancing was a simple way to tackle th
 
 _Figure 2.31: Load Balancing in a Cloud Hosting Environment_
 
-
 The downside of this method is in the case of a server failure, the switch over to a different IP address is dependent on the configuration of the Time-To-Live (TTL) of the DNS cache. DNS entries are known to be long-living and updates are known to take over a week to propagate over the Internet. Hence, it is difficult to quickly “hide” a server failure from the client. This can be improved by reducing the validity (TTL) of an IP address in the cache, but this occurs at the cost of performance and increasing the number of lookups. 
 
 Modern load balancing often refers to the use of a dedicated instance (or a pair of instances) that directs incoming traffic to the backend servers. For each incoming request on a specified port, the load balancer redirects the traffic to one of the backend servers based on a distribution strategy. In doing so the load balancer maintains the request metadata including information like Application protocol headers (such as HTTP headers). In this situation, there is no problem of stale information as every request passes through the load balancer. 
 <!-- <image alt="(C) CMU Cloud Computing Course" src=""/> -->
+
 Though all types of network load balancers will simply forward the user’s information along with any context to the backend servers, when it comes to serving the response back to the client they may employ one of two basic strategies: 
 1. Proxying - In this approach the load balancer receives the response from the backend and relays it back to the client. The load balancer behaves as a standard web proxy and is involved in both halves of a network transaction, namely forwarding the request to the client and sending back the response. 
 1. TCP Handoff - In this approach the TCP connection with the client is handed off to the backend server and therefore the server sends the response directly to the client, without going through the load balancer. 
@@ -24,7 +24,6 @@ Though all types of network load balancers will simply forward the user’s info
 ![Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server.](../media/tcp_handoff.png)
 
 _Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server._
-
 
 
 

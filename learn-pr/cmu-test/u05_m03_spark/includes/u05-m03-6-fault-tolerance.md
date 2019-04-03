@@ -18,7 +18,6 @@ An extension of the core Spark API, Spark Streaming enables scalable, high-throu
 
 _Figure 5.38: Spark Streaming_
 
-
 Spark streaming allows for a streaming data source to be connected to a Spark cluster (Figure 5.38). The spark streaming system will divide the streaming input into batches which can then be fed into the Spark engine to run the required analytics operations. One example is that a spark cluster can be connected to a twitter stream to filter out tweets that are relevant to a particular company or product, and a sentiment analysis can be run on the filtered tweets to provide real-time reports on product or brand sentiment. 
 
 The high-level abstraction provided by Spark streaming is the discretized stream or `Dstream`, which can be created from an input stream. `Dstreams` are represented internally in Spark as a sequence of RDDs. The APIs in Spark streaming allow for the creation of a stream processing pipeline in Java, Python or Scala. 
@@ -28,7 +27,6 @@ To build a streaming pipeline in Spark streaming, first a Dstream should be cons
 ![Figure 5.39 : Sliding Window Computation in Spark Streaming](../media/sliding_windows.png)
 
 _Figure 5.39 : Sliding Window Computation in Spark Streaming_
-
 
 In addition to simple transformations, Spark streaming provides the capability to perform windowed computations, i.e., transformations applied over a sliding window of data (Figure 5.39). In this case, the user can specify both the **window size** (the number of source RDDs to include in the transformation window) and the **sliding interval** (the number of source RDDs to slide across at the end of each transformation). 
 
@@ -71,7 +69,6 @@ val userGraph: Graph[(String, String), String]
 ![Figure 5.40 : A property graph in GraphX](../media/property_graph.png)
 
 _Figure 5.40 : A property graph in GraphX_
-
 
 A property graph in GraphX is parameterized over vertex (VD) and edge (ED) types. GraphX provides several ways of constructing this graph, given a collection of vertices and edges in an RDD or a disk. Graphs can be generated from raw files, RDDs or using synthetic generators. 
 

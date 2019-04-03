@@ -6,7 +6,6 @@ In the 1970s, Edgar F. Codd pioneered the relational database model, which shift
 
 _Figure 4.17: Relational database tables_
 
-
 The concepts of relational databases were combined with SQL and used by IBM, which designed the System R and the DB2 **relational database management systems** (RDBMS), which were the precursors to all modern RDBMSs. 
 
 The typical features of modern RDBMSs include the following:
@@ -28,7 +27,6 @@ An early example of distributed concurrency control was the **two-phase commit (
 ![Figure 4.18: 2PC - Phase One](../media/2PC_1.png)
 
 _Figure 4.18: 2PC - Phase One_
-
 
 ![Figure 4.19: 2PC - Phase Two](../media/2PC_2.png)
 

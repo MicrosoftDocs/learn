@@ -30,7 +30,6 @@ The default I/O subclasses are suitable for text processing. Specifically, `Text
 
 _Video 5.1: MapReduce Internals_
 
-
 Our WordCount example assumes text file inputs. Thus, we can directly use the `TextInputFormat` class, with a key being the byte offset of a line in a file and a value being the line content itself. Furthermore, we can directly use the `TextOutputFormat` class, with a key being a word encountered in the input dataset and a value being the frequency of the word. The key type can be set to Java `Long` ( `LongWritable` in Hadoop) and the value type to Java `String` ( `Text` in Hadoop). The reduce function should receive words from the map tasks as keys and the digit 1 per each word as values,<sup>4</sup> so the key type will be that of words ( `Text`) and the value type that of the unit digit (Java `Integer`, `IntWritable` in Hadoop). All that remains is the logic of the map and the reduce functions. For the map function, input splits should be parsed and each word emitted with a count of 1. In the reduce function, each word received can be simply output as is along with its frequency, computed after aggregating all the 1s received with that word.<sup>5</sup> Figure 5.17 shows our complete WordCount example code for the new Java MapReduce API released in Hadoop 0.20.0. 
 ``` java
 import java.io.IOException;
@@ -112,11 +111,9 @@ The `map()` and the `reduce()` functions in the `WCMap` and the `WCReduce` inner
 
 _Video 5.2: Sort in MapReduce_ ([Alternate Version](../media/video_5.1.pdf))
 
-
 > [!VIDEO https://youtube.com/embed/h4hdsqC3Nq0]
 
 _Video 5.3: Image Processing in MapReduce_ ([Alternate Version](../media/video_5.2.pdf))
-
 
 <sup>3</sup>Note that this is a tab space (not a single space) between the key and the value.
 

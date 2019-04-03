@@ -12,7 +12,6 @@ A **rack-mounted server** is similar to a tower PC, except turned horizontally a
 
 _Figure 2.7: (a) Servers and other equipment mounted in a standard 19-inch rack_ ([Source](http://en.wikipedia.org/wiki/File:Rack001.jpg))
 
-
 Rack-mounted servers have their own fans, **power supply units (PSUs)**, network, and I/O, but **blade servers** share all of these across many nodes within the same blade **enclosure** (called blade **chassis**). There is no common blade standard, so each vendor's blades work only with its enclosures. Blades are thin, vertical metal enclosures and slide into the front of a blade chassis and attach to a common **backplane**. Each blade has its own motherboard, CPU, RAM, and disk. The shared PSUs are typically more efficient than dedicated rack-mounted versions because they can power up or down incrementally, adjusting PSU capacity to load demand. For example, instead of 10 servers with 2 * 750W redundant PSU, a blade enclosure can power the equivalent of 10 servers with 4 * 2500W PSU, with one being redundant. Blades are denser than their horizontally mounted counterparts, allow for easier maintenance, and require fewer cables. The disadvantage is higher upfront cost if you only need a few servers, plus you are locked-in to a specific vendor.
 
 Last, there are a few servers that look similar to a standard rack-mounted server, except they have two motherboards horizontally per 1U, each mounted on its own tray. They also share a PSU but, unlike blades, have their own fans and I/O. There are variations on this theme, such as four nodes per 2U or two nodes with multiple GPUs.
@@ -27,7 +26,6 @@ The following video (Video 2.2) describes various server form factors:
 > [!VIDEO https://youtube.com/embed/0EM6jPYafys]
 
 _Video 2.2: Server Form Factors._
-
 
 An important feature found in most rack-mounted servers is hot-swap capability. Components such as PSU, fans, and hard drives can be removed and replaced while the server stays running. This feature increases uptime/reliability on small- and medium-scale deployments. Large-scale application deployments require more sophisticated resiliency to be built into software layers, which is discussed in the next unit. These large-scale systems do not use hot-swap or redundant components for individual servers but instead consider the entire server to be failed (and replaced) as a unit.
 
@@ -89,7 +87,6 @@ When most people hear the word storage, it is likely that they will envision an 
 
 _Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head_ ([Source](http://www.flickr.com/photos/auxo/6901630801/))
 
-
 |Did you know?|
 |--|
 |The maximum physical capacity of a hard drive is governed by what is called the [superparamagnetic limit](http://en.wikipedia.org/wiki/Superparamagnetism#Effect_on_hard_drives).|
@@ -123,7 +120,6 @@ One popular design is the **multitier** topology (Figure 2.9), in which servers 
 
 _Figure 2.9: A stack of network switches mounted in a rack_ ([Source](http://www.flickr.com/photos/kenfagerdotcom/7536249106/in/photostream/))
 
-
 A **fatter** (higher bandwidth) connection typically links the bottom-tier and aggregation switches. For example, with 48x1Gb ports connecting the rack servers and the access tier, the access to the aggregation tier might have 2 * 10Gb uplinks.
 
 **Top of rack (TOR)** refers to a configuration in which the lowest tier of network switches are found in each rack. This design can decrease cabling cost and complexity because the wires are shorter and can be copper even at 10Gb speeds. This is especially useful if most of the network traffic is to other servers in the same rack. Apache Hadoop, for example, can take advantage of this topology for choosing which nodes to store data (on rack and off rack) and which nodes from which to retrieve data (on rack). One disadvantage includes limited scalability. Ethernet switches are blocking, which means that if all the ports are busy at the same time, the backplane cannot handle all the traffic, so some requests are postponed. Also, the uplinks that are available are typically less than the full possible bandwidth of the Ethernet switch (e.g., you cannot have a 48Gbps uplink on a 48x1Gb switch). In most real-world scenarios, however, those uplinks are never saturated because not every server is using the full capacity simultaneously. Another disadvantage is port utilization. Switches come with a specific number of ports, typically 24 or 48, so if you have a number of servers in between that, you will have some ports in each rack that are never used.
@@ -137,7 +133,6 @@ Ethernet can also travel over fiber (sometimes fibre) optic cable (Figure 2.10(b
 ![Figure 2.10: (a) A cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables (Source). (b) Fiber-optic network cables with LC (top) and ST (bottom) connectors (Source).](../media/UTP_and_Fiber-optic-network.png)
 
 _Figure 2.10: (a) A cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables_ ([Source](http://en.wikipedia.org/wiki/File:UTP_cable.jpg))
-
 
 **Fibre Channel (FC)** is a protocol designed to support SANs and remote block-level storage devices. Even though it typically runs over fiber, it can also run over copper. It can also be encapsulated in Ethernet in the form of Fibre Channel over Ethernet (FCoE) but is not routable like iSCSI. Fibre Channel HCA and switch generations are named by their speed (in Gbps)—#GFC, in which # is 1, 2, 4, 8, 10, or 16. The most common now is 8GFC, which supports 8Gbps links (approximately 800MB/s in each direction).
 
@@ -157,6 +152,5 @@ Infiniband and 40Gbit Ethernet are also being deployed as a **converged network*
 ![Figure 2.11: An infiniband switch (Source).](../media/infiniband_switch.png)
 
 _Figure 2.11: An infiniband switch_ ([Source](http://en.wikipedia.org/wiki/File:UTP_cable.jpg))
-
 
 The choice of network technology and topology to deploy in a data center also depends on your applications but will typically include multiple tiers, with the connection between the tiers being high-speed fiber. Copper UTP cabling is prevalent within the rack and will continue to function well for low-speed management networks.

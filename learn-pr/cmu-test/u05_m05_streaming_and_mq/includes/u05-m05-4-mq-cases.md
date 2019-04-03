@@ -14,7 +14,6 @@ The stream processing paradigm applies a series of operations on each element of
 
 _Figure 5.54: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
 
-
 ##  Eight Rules for Stream Processing
 
 Stonebraker et. al. described 8 basic rules for stream processing systems.
@@ -25,13 +24,11 @@ Stonebraker et. al. described 8 basic rules for stream processing systems.
 
 _Figure 5.55: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
 
-
 1. Streams should support querying using SQL: SQL has emerged as a widely used and familiar standard for querying data. However, traditional SQL operates on a fixed amount of data, whereby reaching the end of the table tells the query it is completed. In streaming scenarios, the data increases continuously. Stonebraker et. al. perceived the need for a StreamSQL language, with variable-length time-based sliding windows defining the scope of a query. Windows could be defined using time, number of messages, or any arbitrary parameters. Additional operators may be needed to merge messages from multiple streams. 
 
 ![Figure 5.56: StreamSQL should process subsets of the data, and allow relations to be expressed across windows](../media/streaming2.png)
 
 _Figure 5.56: StreamSQL should process subsets of the data, and allow relations to be expressed across windows_
-
 
 1. Handle stream imperfections: In real-time systems, data can be lost, arrive late, and/or out-of-order. A stream processing system cannot wait indefinitely for data, but also may not have the flexibility to ignore/miss any data. Such systems must be resilient against stream imperfections, with mechanisms like configurable timeouts, and “slack times”, during which a late-arrival can be accepted.
 1. Generate predictable outcomes: The outcome of any stream processing system must be deterministic and repeatable by replaying the stream. This is particularly hard when the system is operating on multiple concurrent streams, or when messages arrive out-of-order. Messages must be produced in ascending time-order, irrespective of their arrival time. This property also enables fault-tolerance, by making it reasonable to replay streams upon which processing failed.

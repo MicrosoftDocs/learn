@@ -34,7 +34,6 @@ Puppet is a tool that can be used to issue service commands to multiple client m
 
 _Figure 2.26: Puppet_
 
-
 Puppet is typically (but not always) used in a client/server formation, with all of the clients talking to one or more central servers. Each client contacts the server periodically (every half hour, by default), downloads the latest configuration, and makes sure it is in sync with that configuration. Once done, the client can send a report back to the server indicating if anything needs to change. Puppet’s functionality is built as a stack of separate layers, each responsible for a fixed aspect of the system, with tight controls on how information passes between layers.
 
 ###  Chef

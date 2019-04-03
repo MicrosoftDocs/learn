@@ -8,20 +8,17 @@ A problem arises when an instruction that is both sensitive and unprivileged is 
 
 _Video 3.6: ISA virtualization techniques._
 
-
 The challenge is constructing a hypervisor in the presence of critical instructions. It can be done, but Smith and Nair distinguish between a hypervisor that complies with Popek and Goldberg's theorem and one that does not comply by referring to the former as a **true** or an **efficient** hypervisor and to the latter simply as a hypervisor.
 
 ![Figure 3.21: Instructions that do not satisfy Popek and Goldberg’' theorem. They are called critical instructions.](../media/critical_instruction.png)
 
 _Figure 3.21: Instructions that do not satisfy Popek and Goldberg’' theorem. They are called critical instructions._
 
-
 If a processor does not satisfy Popek and Goldberg's virtualization requirement, a hypervisor can be constructed by using **code patching**, **full virtualization**, and/or **paravirtualization**. As illustrated in Figure 3.22, code patching requires the hypervisor to scan the guest code before execution, discover all critical instructions, and replace them with traps (system calls) to the hypervisor. Full virtualization emulates all instructions in the ISA. Emulation degrades performance because it reproduces the behavior of every source instruction by first translating it to a target instruction, then running it on a target ISA (more on emulation shortly). Paravirtualization deals with critical instructions by modifying guest OSs. Specifically, it entails rewriting every critical instruction as a hypercall that traps to the Xen hypervisor. Accordingly, paravirtualization improves performance by avoiding emulation at the expense of modifying the guest OS. In reverse, full virtualization avoids modifying guest OSs at the expense of degrading system performance. As examples, VMware uses full virtualization, while Xen employs paravirtualization. Xen supports most major OSs, including Windows, Linux, Solaris, and NetBSD.
 
 ![Figure 3.22: Code scanning and patching to enforce critical instructions to trap to the hypervisor. The code is shown in a format close to a control flow diagram.](../media/critical_instructions_trap_hypervisor.png)
 
 _Figure 3.22: Code scanning and patching to enforce critical instructions to trap to the hypervisor. The code is shown in a format close to a control flow diagram._
-
 `../webcontent/didIGetThis.xml` `../webcontent/didIGetThis2.xml`
 
 ### References

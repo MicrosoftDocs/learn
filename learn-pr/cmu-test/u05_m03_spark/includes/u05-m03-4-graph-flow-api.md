@@ -19,7 +19,6 @@ As RDDs are derived from each other using transformations, Spark keeps track of 
 
 _Figure 5.35: RDD lineage graph_
 
-
 Since RDDs are immutable, these graphs are extremely easy to define. Please note that at no point in the graph above has the RDD been materialized and computation been actually carried out. That occurs at the next line of code, which is the first action in the program: 
 ``` text
 &gt;&gt;&gt; print "Number of attacks:" + owasp_lines_RDD.count()
@@ -44,7 +43,6 @@ Both of the dependencies above are shown in Figure 5.36:
 ![Figure 5.36: Narrow and wide dependencies in Spark](../media/spark_dependencies.png)
 
 _Figure 5.36: Narrow and wide dependencies in Spark_
-
 
 ##  Checkpointing
 

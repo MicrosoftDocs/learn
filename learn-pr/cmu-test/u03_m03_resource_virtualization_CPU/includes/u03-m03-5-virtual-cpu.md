@@ -8,13 +8,11 @@ As described earlier in the unit, a virtual CPU (vCPU) acts as a proxy to a phys
 
 _Video 3.9: Multiprocessor VMs._
 
-
 Figure 3.23 demonstrates an SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.
 
 ![Figure 3.23: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.](../media/SMP_UP_VM.png)
 
 _Figure 3.23: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware._
-
 
 Similar to a process on a general-purpose OS, a vCPU can be in different states, such as running, ready, and wait states. At a certain point in time, a vCPU can be scheduled by the hypervisor at only a single core (akin to scheduling an OS process on a core). For instance, a UP VM running on a host machine equipped with two Xeon 5405 (i.e., a total of eight pCPUs) will run only on one of the eight available cores. Inherently parallel workloads, such as MapReduce applications, prefer SMP VMs. We next discuss how the hypervisor schedules vCPUs on pCPUs.
 

@@ -8,7 +8,6 @@ MapReduce jobs, like all distributed programs, can embody either a synchronous o
 
 _Figure 5.18: A simplified example of the master-slave, tree-style architecture employed by Hadoop MapReduce. The master is denoted as JobTracker and each slave is called TaskTracker. As shown, the JobTracker and the TaskTrackers communicate over the network using a heartbeat mechanism._
 
-
 ##  The Architectural Model
 
 As Figure 5.18 shows, MapReduce uses a master-slave architecture. The master node is called **JobTracker** (JT), and each slave is called **TaskTracker** (TT). The JT and TTs communicate over the cluster network via a periodic heartbeat mechanism. By default, TTs send messages (heartbeats) to the JT every three seconds, and the JT replies<sup>6</sup> with a new map or reduce task or with a different message. The JT uses these heartbeats to detect task failures (see the section ). Each TT has, by default, two map slots and two reduce slots at which corresponding tasks can execute. This slot allocation determines the maximum number of map and reduce tasks (degree of task parallelism) that can run simultaneously in the TT. 

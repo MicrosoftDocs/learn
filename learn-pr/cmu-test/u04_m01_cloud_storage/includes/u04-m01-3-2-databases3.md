@@ -27,7 +27,6 @@ A limited taxonomy of NoSQL databases is illustrated in Figure 4.20.
 ![Figure 4.20: A taxonomy of NoSQL databases](../media/taxonomy_NoSQL.png)
 
 _Figure 4.20: A taxonomy of NoSQL databases_
-
 <!-- Figure should be added here -->
 
 ###  Document Stores
@@ -41,8 +40,8 @@ In graph databases, graph structures such as vertices and edges are used to repr
 ![Figure 4.21: An example of a graph database](../media/graph_database.png)
 
 _Figure 4.21: An example of a graph database_
-
 <!-- Figure should be added here -->
+
 Queries in graph databases typically consist of graph traversals. For example, graphs can be used to compute the degrees of separation between two or more people in a social graph. Graph databases thus are great at representing networked information, with the relationship between entities occupying a key aspect of the representation. Examples of graph database software include Neo4j and VertexDB. 
 
 ###  Key-Value Stores

@@ -10,7 +10,6 @@ A **concurrent** program, in contrast, is a set of sequential programs that, whi
 
 _Figure 5.1: Our taxonomy of programs_
 
-
 The general term **application** refers, often ambiguously, to both sequential and concurrent programs, and the latter are sometimes called parallel programs. <!-- Here we distinguish between the two: -->A parallel program is a set of sequential programs that overlap in time by running on separate CPUs. In multiprocessor systems, such as chip multicore machines, related sequential programs executing in different cores constitute a parallel program. By contrast, related sequential programs sharing a single CPU in time<!-- , on the other hand, --> represent a **concurrent program**. For this unit, we further distinguish a parallel program comprising multiple sequential programs running on distinct, networked machines (versus different cores on one machine) as a **distributed program**. Figure 5.1 illustrates this program taxonomy. 
 
 Another term common in parallel/distributed programming is **multitasking**, which refers to overlapping one program's computation with that of another. This concept is central to all modern operating systems and describes a scheduling mechanism that enables an OS to juggle several programs at once. Multitasking has become so useful that almost all modern programming languages now support it through **multithreading** constructs.
@@ -22,7 +21,6 @@ _Task_ is another term that refers to a small unit of work, and in this unit, we
 ![Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications ](../media/concepts_processes.png)
 
 _Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications_
-
 
 ### References
 

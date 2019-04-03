@@ -7,6 +7,7 @@ We will now do a quick run-down of cloud stacks that are currently popular in th
 As of 2015, AWS is a market leader in several cloud computing segments, particularly in the IaaS space. Amazon Web Services started by commoditizing and leasing out several services that were developed in-house by Amazon’s engineering team to the wider public. AWS started by offering S3, the object storage service, and then went on to provide EC2, the elastic compute cloud. AWS is currently one of the largest cloud computing companies.
 
 AWS’s stack primarily consists of the following components: 
+
 **Compute**: Amazon’s primary compute solution is Elastic Compute Cloud (EC2), which provides users with virtual machines, or instances of various capacities for hourly or longer term rentals. EC2 forms the backbone of the AWS cloud stack in terms of compute infrastructure. EC2 instances can be managed directly through the AWS EC2 APIs, or through other services such as AutoScaling. 
 
 **Storage**: AWS offers multiple products in this space. Block storage is provided by Elastic Block Storage (EBS) volumes, which can be attached and detached from EC2 instances. Object storage is provided by the simple storage service (S3), which allows for binary large objects (BLOBs) to be stored and retrieved using a simple HTTP service. AWS also offers a varied suite of database services, including RDS which offers a managed SQL service, DyanmoDB, which offers a highly scalable, low-latency key-value store, and ElastiCache, an in-memory database store. 
@@ -31,6 +32,7 @@ Microsoft Azure is one of the fastest growing cloud services in the market, with
 ##  Google Cloud Platform
 
 Google’s Cloud Platform initially offered only PaaS products and APIs into Google’s most powerful products such as the Translate API. The Google Cloud Platform has now diversified into multiple services in response to the offerings of its competitors. 
+
 **Compute**: Google’s primary compute platform is the Google Compute Engine (GCE), which offers Linux virtual machines of various sizes depending on the application requirements. A unique differentiator of Google’s platform is that instances are billed by the minute, with a minimum charge of 10 minutes. 
 
 **Storage**: Google offers three primary storage services, namely Cloud Storage, which is an object storage service similar to S3 and Azure Blobs. Google’s Cloud Datastore is the managed NoSQL datastore service that allows users to store non-relational data with high scalability, but optionally supports transactions and SQL queries on your data. In addition, Google offers a traditional managed SQL database service called Cloud SQL. 

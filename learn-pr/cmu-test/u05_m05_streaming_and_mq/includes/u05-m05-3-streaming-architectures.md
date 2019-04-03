@@ -10,13 +10,11 @@ Kafka is responsible for handling messages originating from a set of programs (k
 
 _Figure 5.52 : A kafka cluster_
 
-
 Topics: Topics represent a user-defined category to which messages are published. An example topic one might find at an advertising company could be AdClickEvents. All consumers of data can read from one or more topics. Internally, each topic is maintained as a partitioned commit log as illustrated in Figure 5.53. It is important to note that a topic can consist of multiple partitions and a Kafka cluster can handle multiple topics.
 
 ![Figure 5.53 : Message Queuing in Kafka](../media/kafka2.png)
 
 _Figure 5.53 : Message Queuing in Kafka_
-
 
 Formally, each partition is an ordered, immutable sequence of messages that is continually appended to a commit log. The messages in the partitions are each assigned a sequential id number called the offset that uniquely identifies each message within the partition, and cannot be used to order messages in a topic across partitions.
 
@@ -43,7 +41,6 @@ Notice that the delivery guarantees are not very strict. This includes the fact 
 ![Figure 5.54 : Kafka Architecture](../media/kafka3.png)
 
 _Figure 5.54 : Kafka Architecture_
-
 
 The servers that transfer messages from publishers (producers) to subscribers (consumers) are known as the Kafka brokers. The Kafka brokers are responsible for message persistence and replication. The partitions of each topic are distributed over the brokers, and each broker stores one or more partitions. 
 

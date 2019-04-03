@@ -65,7 +65,6 @@ As mentioned earlier, Spark transformations are lazy by default, i.e. they are n
 
 _Figure 5.34 : Operations on RDDs_
 
-
 Here are some examples of transformations and actions: 
 
 |Transformation|Meaning|Action|Meaning|
@@ -104,19 +103,25 @@ Here, the Python code counts the number of attacks in our combined `owasp_attack
 Clearly, RDDs are best suited for batch operations where the same operations are applied to all elements of the dataset. Applications requiring asynchronous, fine-grained updates would need more specialized systems. Since they are immutable, the overhead of computing new RDDs for each additional input item is very high. Hence, even when dealing with real-time data inputs, Spark often batches the changes over short periods of time. 
 
 1. **Persisting RDDs**
+
 RDDs may be persisted in four ways:
     1. **In-memory as deserialized objects**: 
+
 A deserialized object expresses a data structure as a set of bytes. Storing the raw deserialized RDD objects in-memory has the highest performance, since the framework can access the elements natively in code. However, there is a some overhead, since apart from the data, the metadata of the object is also stored. For e.g., Java objects are fast to access, but consume 2-5x more space than the raw data that they encapsulate. 
 
     1. 
+
 **In-memory as serialized data**: 
+
 By serializing the RDD, the associated data is stored in a well-defined format. This method is slower than storing deserialized objects, but is more memory-efficient than storing object graphs.
 
 
     1. **On-disk storage**: 
+
 This helps store really large RDDs that do not fit in-memory but shouldn’t be continuously recomputed. 
 
     1. **Off-heap storage**: 
+
 Off-heap storage is provided by a special memory-centric storage system called Tachyon, which enables cluster-wide reliable data sharing at memory-speed.
 
 
