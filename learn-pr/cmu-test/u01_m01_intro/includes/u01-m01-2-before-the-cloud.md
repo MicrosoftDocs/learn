@@ -36,11 +36,11 @@ The 21st century has been marked by an explosion in the volume and capacity of w
 The increasing number of connections enabled by the Internet has also driven its value. Researchers have hypothesized that the value of a network varies superlinearly as a function of the number of users. Thus, at internet scale, gaining and retaining customers is a priority, and this is done by building reliable and responsive services, and making changes based on observed data patterns. 
 ![Figure 1.3 (a): Increasing number of Internet Users per year. ](../media/n1.png)
 
-_Figure 1.3 (a): Increasing number of Internet Users per year. _
+_Figure 1.3 (a): Increasing number of Internet Users per year._
 
 ![Figure 1.3 (b): Increasing number of data stored per year. ](../media/n2.png)
 
-_Figure 1.3 (b): Increasing number of data stored per year. _
+_Figure 1.3 (b): Increasing number of data stored per year._
 
 
  Some examples of Internet-scale systems include: 

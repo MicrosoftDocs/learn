@@ -18,7 +18,7 @@ The term "thread" was popularized by Pthreads (POSIX threads), which is a specif
 _Task_ is another term that refers to a small unit of work, and in this unit, we use it to mean "process." In addition, we collectively denote tasks (possibly only one) that belong to the same program/application as a _job_. An application can encompass several jobs. For instance, a fluid dynamics application typically consists of three jobs, individually responsible for structural, fluid, and thermal analyses. In addition, each job can carry out its work through multiple tasks. Figure 5.2 demonstrates the concepts of processes, threads, tasks, jobs, and applications. 
 ![Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications ](../media/concepts_processes.png)
 
-_Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications _
+_Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications_
 
 
 ### References

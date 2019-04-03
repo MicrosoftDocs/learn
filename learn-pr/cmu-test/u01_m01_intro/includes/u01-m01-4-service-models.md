@@ -49,6 +49,7 @@ _Video 1.2: Service Models in Cloud Computing._ ([Alternative version](../media/
 
 ###  The Software-as-a-Service Model
 
+> [!div class="alert is-tip"]
 > ### Software as a Service
 >
 > _(definition)_ Software as a service (SaaS) is a software delivery model in which software and associated data are hosted on a cloud. SaaS applications typically are accessed by users using a thin client via a Web browser.
@@ -98,6 +99,7 @@ Web mail is one of the early examples of SaaS. Webmail enabled users with a brow
 Another popular example of SaaS is online office suites, such as Google Drive and Microsoft Office 365, which allow users to create, edit, and share documents online. Google utilizes the freemium model for individual users. Microsoft has a charge model based on the features required and the number of users per month.
 ###  The Platform-as-a-Service Model
 
+> [!div class="alert is-tip"]
 > ### Platform as a Service
 >
 > _(definition)_ Platform as a service (PaaS) is a computing platform that allows for the creation of Web applications in a simplified manner without the complexity of purchasing and maintaining any of the underlying software and infrastructure.
@@ -137,6 +139,7 @@ There are certain scenarios in which PaaS may not be ideal, such as:
 Google App Engine is an example of a PaaS. Using Google's APIs, developers can create Web and mobile applications that run on Google's infrastructure.
 ##  The Infrastructure-as-a-Service Model
 
+> [!div class="alert is-tip"]
 > ### Infrastructure as a service
 >
 > _(definition)_ Infrastructure as a service (IaaS) is a cloud computing model in which cloud providers make computing resources available to clients, usually in the form of instances or virtual machines.

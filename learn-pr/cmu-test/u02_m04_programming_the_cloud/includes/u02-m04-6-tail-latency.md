@@ -23,7 +23,7 @@ Clearly, the need for scale has led to a large fan-out at the back-end for each 
 Like most stochastic processes, the response time of a single leaf node can be expressed as a distribution. Decades of experience have shown that in the general case, most (>99%) requests of a well-configured cloud system will execute extremely quickly. But often, there are very few outliers on a system that execute extremely slowly. 
 ![Figure 2.35: Tail Latency Example ](../media/tail_latency.png)
 
-_Figure 2.35: Tail Latency Example _
+_Figure 2.35: Tail Latency Example_
 
 
 Consider a system where all leaf nodes have an average response time of 1 ms, but there is probability of a 1% that the response time is greater than 1000 ms (one second). If each query is handled by only a single leaf node, the probability of the query taking longer than one second is also 1%. However, as we increase the number of nodes to 100, the probability that the query will complete within one second drops to 36.6%, which means that there is a 63.4% chance that the query duration will be determined by the tail (lowest 1%) of the latency distribution. 

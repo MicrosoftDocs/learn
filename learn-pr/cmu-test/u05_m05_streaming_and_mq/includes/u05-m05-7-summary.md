@@ -6,7 +6,7 @@ Many web-scale enterprises have now begun to use message queues and stream proce
 As a young technology company, LinkedIn often found itself building and adopting a large number of disruptive technologies, each to solve a specific requirement. Their services ran on a custom backend that use LinkedIn’s own low-latency distributed key-value store (Voldemort), a distributed document-store (Espresso) and an Oracle RDBMS. Front-end web services, analytics, emails and notifications were driven by tasks of different complexity. These included batch jobs using Hadoop, queries on a large data warehouse, a separate infrastructure for searches, all supported by a layer of logging, monitoring and user/metric tracking. 
 ![Figure 5.70: Data Integration disaster at LinkedIn ](../media/linkedin1.png)
 
-_Figure 5.70: Data Integration disaster at LinkedIn _
+_Figure 5.70: Data Integration disaster at LinkedIn_
 
 
 A few years ago, engineers at LinkedIn realized that their system had grown too complicated. Communications between services, front-ends and back-ends were all-to-all, since each component had its own latency and throughput requirements. The addition of a single service required connections to a large number of components, which in turn led to very fragile endpoints. This also led to siloes, as individual service owners were less likely to share their data. 
@@ -14,19 +14,19 @@ A few years ago, engineers at LinkedIn realized that their system had grown too 
 The first change at LinkedIn was a move towards using a centralized Kafka-driven data pipeline. This allowed each service to produce data and emit it using a specific topic. Accessing data from another service now became as simple as subscribing to that particular topic. Since the pipeline is internally run on a distributed cluster, it is expected to be inherently scalable. 
 ![Figure 5.71: A single, distributed, asynchronous data pipeline ](../media/linkedin2.png)
 
-_Figure 5.71: A single, distributed, asynchronous data pipeline _
+_Figure 5.71: A single, distributed, asynchronous data pipeline_
 
 
 Another service was now needed to manage membership of nodes within a data center. Since scaling up/down was now simply a matter of adding/removing nodes from the system, a new service called Zookeeper was used to manage membership within the cluster, distribute ownership of partitions and topics within the broker tier, and correctly handle offsets on the consumer tier. 
 ![Figure 5.72: High-velocity data processing using Kafka topics ](../media/linkedin3.png)
 
-_Figure 5.72: High-velocity data processing using Kafka topics _
+_Figure 5.72: High-velocity data processing using Kafka topics_
 
 
 The changes in their architecture were also driven by a move towards more reactive systems. In their original architecture (around 2010), all user activity logs were scraped by a batch process every few hours and this was used to generate new graphs and dashboards on the front-end. This architecture allowed LinkedIn to have hourly or daily updates of view counts, user recommendations, and trending topics. 
 ![Figure 5.73: Before-- Offline processing of user activity logs ](../media/linkedin4.png)
 
-_Figure 5.73: Before-- Offline processing of user activity logs _
+_Figure 5.73: Before-- Offline processing of user activity logs_
 
 
 However, latencies of a few hours were no longer acceptable; neither to the end-users who wanted to know page view statistics and trends from the last five minutes, nor to advertisers and data analytics folks who needed to be able to display the most relevant information in real-time. Advertisements are no longer driven solely by offline analysis of clickstreams in data warehouses, but in fact, are increasingly impacted by real-time models that are updated online. 

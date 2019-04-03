@@ -15,7 +15,7 @@ One of the frameworks attempting to address these issues is Spark. Spark relies 
 The goal of any distributed programming framework is to support the execution of a parallel computation across multiple nodes in a performant manner. Consider an iterative application that runs a machine learning algorithm on a large graph. Spark would store this graph as a _Resilient Distributed Dataset (RDD)_ (Figure 5.32). The Spark Client would store the details of the program to be executed and map it to Spark-specific operations for a cluster, which comprises of many workers. There is a cluster manager that converts these operations into tasks and executes them on the worker nodes. Any cluster requires applications to be scheduled well to maximise the utilization and improve performance. Spark allows different policies to be used to schedule tasks on the cluster depending upon factors such as the priority, duration, and resources required by each task. 
 ![Figure 5.32 shows the most important parts of the Spark framework. ](../media/spark_overview.png)
 
-_Figure 5.32 shows the most important parts of the Spark framework. _
+_Figure 5.32 shows the most important parts of the Spark framework._
 
 
 Spark is implemented in about 14,000 lines of Scala, a statically typed high-level programming language for the Java VM. 

@@ -38,7 +38,7 @@ A _container_ represents a lease for an allocated resource in the cluster. A lea
 When requiring compute resources, the AM presents to the RM Scheduler a series of container requests. The protocol understood by the Scheduler is `<priority, (host, rack, *), resources, #containers>`. The RM Scheduler assigns or allocates containers in the same format. A snapshot from the RM log, shows how the RM allocates a container (Figure 5.24):
 ![Figure 5.24: Log snapshot of a container assignment in YARN. The important infromation in this entry are: 1. ContainerID, 2. Computer resources in this ContainerID, 3. ID of the node where the ContainerID resides, and 4. Resource report of this node after allocation ](../media/YARN_log1.png)
 
-_Figure 5.24: Log snapshot of a container assignment in YARN. The important infromation in this entry are: 1. ContainerID, 2. Computer resources in this ContainerID, 3. ID of the node where the ContainerID resides, and 4. Resource report of this node after allocation _
+_Figure 5.24: Log snapshot of a container assignment in YARN. The important infromation in this entry are: 1. ContainerID, 2. Computer resources in this ContainerID, 3. ID of the node where the ContainerID resides, and 4. Resource report of this node after allocation_
 
 ##  Job and Task Scheduling
 
