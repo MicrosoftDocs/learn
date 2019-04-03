@@ -1,6 +1,6 @@
-To get ready for moving client proofs into Azure Blob storage, you want to see how easy it will be to create the dashboards for ongoing monitoring. You also want to see how easy it will be to share dashboards with the management team. 
+To get ready for moving client proofs into Azure Blob storage, you want to see how easy it will be to create the dashboards for ongoing monitoring.
 
-In this exercise, you will create an Azure dashboard, add storage metric charts to the dashboard, and share the dashboard with a security group in Azure.
+In this exercise, you will create an Azure dashboard, and add storage metric charts to the dashboard.
 
 ## Create a custom dashboard
 
@@ -34,9 +34,9 @@ First, you will create a custom dashboard to display the metrics charts.
 
 1. In the **Select a resource** panel:
 
-  1. In the **Subscription** drop-down, ensure that only the subscription you are using for the exercises is selected.
+  1. In the **Subscription** drop-down, ensure that only the concierge subscription you are using for the exercises is selected.
    
-  1. In the **Resource group** drop-down, ensure that only the **MonitorResourceGroup** is selected.
+  1. In the **Resource group** drop-down, ensure that **<rgn>** is selected.
    
   1. Under **RESOURCE**, click the name of the storage account you created in Unit 3; for example: **monitorstorageaccount**.
    
@@ -60,7 +60,7 @@ First, you will create a custom dashboard to display the metrics charts.
 
   1. In the **Subscription** drop-down, ensure that only the subscription you are using for the exercises is selected.
    
-  1. In the **Resource group** drop-down, ensure that only **MonitorResourceGroup** is selected.
+  1. In the **Resource group** drop-down, ensure that only **<rgn>** is selected.
    
   1. Under **RESOURCE**, click the name of the storage account you created in Unit 3; for example: **monitorstorageaccount**.
    
@@ -91,39 +91,6 @@ First, you will create a custom dashboard to display the metrics charts.
 1. Under the dashboard title, click **UTC Time: Past 24 hours**.
 
 1. In the drop-down, click **Past 48 hours**, then click **Apply**.
-
-## Create an Azure AD Group and share the Storage dashboard
-
-1. On the left-side navigation, click **Dashboard**.
-
-1. In the Azure toolbar at the top of the page, click the **Cloud Shell** button:
-
-  1. When the Azure Cloud Shell appears, click **PowerShell**. Click **Confirm** if prompted to switch shells.
-
-  1. If the message **You have no storage mounted** appears, click **Create storage**.
-
-  1. At the cloud shell prompt, type the following and press ENTER:
-
-  ```powershell
-  New-AzureADGroup -DisplayName "Dashboard Readers" -SecurityEnabled $true -MailEnabled $false -MailNickName "DashboardReaders"
-  ```
-  1. Close the Azure Cloud Shell.
-
-1. On the dashboard toolbar, next to the dashboard title, click the **Share** button:
-
-  1. In the **Sharing + access control** panel, click **Publish**.
-
-  1. In the **Sharing + access control** panel, click **Manage users**.
-
-  1. On the **Access Control** page, click **Add** in the **Add role assignment** section.
-
-  1. In the **Add role assignment** panel:
-   
-    1. In the **Role** drop-down, select **Reader**
-    1. In the **Select** drop-down, click **Dashboard Readers**
-    1. Click **Save**.
-
-1. On the left-side navigation, click **Dashboard**.
 
 ## Generate some metrics data to display on the dashboard (optional)
 
