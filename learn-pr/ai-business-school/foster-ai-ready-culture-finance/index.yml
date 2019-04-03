@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn-wwl.data-10-foster-ai-culture-finance
+uid: learn-wwl.foster-ai-culture-finance
 metadata:
   title: Discover how to foster an AI-ready culture in finance
   description: This module is designed for finance and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -26,11 +26,11 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.data-10-foster-ai-culture-finance.1-introduction
-- learn-wwl.data-10-foster-ai-culture-finance.2-finance-case-study-introduction
-- learn-wwl.data-10-foster-ai-culture-finance.3-finance-executive-qa
-- learn-wwl.data-10-foster-ai-culture-finance.4-finance-case-study-resolution
-- learn-wwl.data-10-foster-ai-culture-finance.5-knowledge-check
-- learn-wwl.data-10-foster-ai-culture-finance.6-summary-and-resources
+- learn-wwl.foster-ai-culture-finance.introduction
+- learn-wwl.foster-ai-culture-finance.finance-case-study-introduction
+- learn-wwl.foster-ai-culture-finance.finance-executive-qa
+- learn-wwl.foster-ai-culture-finance.finance-case-study-resolution
+- learn-wwl.foster-ai-culture-finance.knowledge-check
+- learn-wwl.foster-ai-culture-finance.summary-and-resources
 badge: 
-  uid: learn.module-template10.badge #add the uid for your achievement badge.
+  uid: learn-wwl.foster-ai-culture-finance.badge #add the uid for your achievement badge.
