@@ -13,3 +13,18 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/u05-m05-5-streaming-cases.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following provides parallelism in Samza?"
+    choices:
+    - content: "Tasks, by running on multiple threads for a single job"
+      isCorrect: false
+      explanation: "Incorrect. The real source of parallelism depends on how the flow of data can be managed."
+    - content: "YARN, by running multiple node managers"
+      isCorrect: false
+      explanation: "Incorrect. The real source of parallelism depends on how the flow of data can be managed."
+    - content: "Paritioning, by dividing the input data into more pieces, allowing parallel processing by multiple tasks"
+      isCorrect: true
+      explanation: "Correct! More partitions enable more parallelism."
+

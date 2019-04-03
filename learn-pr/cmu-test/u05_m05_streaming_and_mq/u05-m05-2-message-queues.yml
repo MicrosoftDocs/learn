@@ -13,3 +13,18 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/u05-m05-2-message-queues.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is NOT an advantage of message queues over traditional messaging approaches?"
+    choices:
+    - content: "Message queue systems are simpler to set up and less complex architecturally"
+      isCorrect: true
+      explanation: "Correct! Message queues add complexity to a system's architecture."
+    - content: "Message queue systems allow for loose coupling between communicating entities"
+      isCorrect: false
+      explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches."
+    - content: "Message queue systems provide asynchronous comminication through buffering"
+      isCorrect: false
+      explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches."
+

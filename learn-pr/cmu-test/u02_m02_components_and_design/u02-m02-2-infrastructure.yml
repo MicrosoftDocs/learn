@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 29
 content: |
   [!include[](includes/u02-m02-2-infrastructure.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is *NOT* a typical feature in a data center server room?"
+    choices:
+    - content: "Raised floor"
+      isCorrect: false
+      explanation: "Incorrect. Raised floors are fairly common in data centers."
+    - content: "Computer room air conditioner (CRAC)"
+      isCorrect: false
+      explanation: "Incorrect. CRACs are common in data centers."
+    - content: "Power distribution units (PDUs)"
+      isCorrect: false
+      explanation: "Incorrect. PDUs are common in data centers."
+    - content: "Display walls"
+      isCorrect: true
+      explanation: "Correct! Display walls are not common in data centers but may be used in data center monitoring and control rooms."
+

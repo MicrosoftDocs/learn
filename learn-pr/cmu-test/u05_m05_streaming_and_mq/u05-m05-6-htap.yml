@@ -13,3 +13,18 @@ metadata:
 durationInMinutes: 13
 content: |
   [!include[](includes/u05-m05-6-htap.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the main difference between the Lambda and Kappa Architectures?"
+    choices:
+    - content: "Lambda architectures include a layer for batch processing, while Kappa architectures do not."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Kappa architectures include a layer for batch processing, while Lambda does not"
+      isCorrect: false
+      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Please review the material if you are not sure."
+    - content: "Both architectures are fundamentally the same."
+      isCorrect: false
+      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Please review the material if you are not sure."
+

@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/u02-m01-2-definition-origins-history.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which industry was one of the earliest to utilize standard width racks for equipment?"
+    choices:
+    - content: "Railroads"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Television companies"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Radio stations"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Military communications"
+      isCorrect: false
+      explanation: "Incorrect."
+

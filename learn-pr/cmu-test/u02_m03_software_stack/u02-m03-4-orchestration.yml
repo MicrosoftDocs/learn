@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/u02-m03-4-orchestration.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is NOT an effect of cloud orchestration?"
+    choices:
+    - content: "Need for many more administrators within a data center to manage complicated tools like Chef and Puppet"
+      isCorrect: true
+      explanation: "Correct! Cloud orchestration simplifies the management of resources and can reduce the number of administrators needed to perform routine tasks in a data center."
+    - content: "Easy-to-use web portals to provision and monitor resources"
+      isCorrect: false
+      explanation: "Incorrect. This is an effect of cloud orchestration."
+    - content: "Readymade scripts that allow various parts of the infrastructure to be automatically created."
+      isCorrect: false
+      explanation: "Incorrect. This is an effect of cloud orchestration."
+    - content: "Improved collaboration between multiple technical teams in a large cloud application"
+      isCorrect: false
+      explanation: "Incorrect. This is an effect of cloud orchestration."
+

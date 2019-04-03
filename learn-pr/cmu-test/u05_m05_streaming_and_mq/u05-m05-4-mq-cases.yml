@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 14
 content: |
   [!include[](includes/u05-m05-4-mq-cases.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is desirable in stream processing engines?"
+    choices:
+    - content: "Passive (poll-driven) querying"
+      isCorrect: false
+      explanation: "Incorrect. Active querying is a desireable trait."
+    - content: "Partitioning data for scale"
+      isCorrect: true
+      explanation: "Correct! These systems are inherently horizontally scalable as long as the data can be sharded across all wordkers"
+    - content: "Backup and manual recovery"
+      isCorrect: false
+      explanation: "Incorrect. Manual recovery is undesireable."
+    - content: "Integrating stored state from a remote database"
+      isCorrect: false
+      explanation: "Incorrect. Remote databases lead to a very high latency."
+

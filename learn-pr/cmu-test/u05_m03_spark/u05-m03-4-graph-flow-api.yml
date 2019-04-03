@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/u05-m03-4-graph-flow-api.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is an “RDD”?"
+    choices:
+    - content: "Distributed collection of objects on disk"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Distributed collection of objects in memory"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Distributed collection of objects in Cassandra"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct!"
+

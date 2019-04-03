@@ -13,3 +13,48 @@ metadata:
 durationInMinutes: 48
 content: |
   [!include[](includes/u05-m01-5-challenges.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why does it make sense to colocate highly communicating entities?"
+    choices:
+    - content: "A. Improvement in performance"
+      isCorrect: false
+      explanation: "That is not quite right. Colocating highly communicating entities does improve performance, but is that the only correct answer?"
+    - content: "B. Reduction of network traffic"
+      isCorrect: false
+      explanation: "That is not quite right. Colocating highly communicating entities does reduce network traffic, but is that the only correct answer?"
+    - content: "C. (A and B)"
+      isCorrect: true
+      explanation: "Correct! Highly communicating entities should ideally be Colocating as closely as possible for both the reasons listed above."
+
+  - content: "What will be the result?"
+    choices:
+    - content: "A will have $140 and B will have $60."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent."
+    - content: "A will have $60 and B will have $90."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent."
+    - content: "A will have $110 and B will have $90."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent."
+    - content: "The transactions will never complete due to a deadlock."
+      isCorrect: true
+      explanation: "Correct! The simultaneous acquisition of locks on both A and B by two separate transactions will lead to a deadlock because transaction 1 will fail to acquire the second lock on account B, and transaction 2 will fail to acquire the second lock on account A. At least one of them have to release the lock and start over for the transactions to proceed."
+
+  - content: "Which checkpoints at P and Q form a recovery line with which processes P and Q can roll back to?"
+    choices:
+    - content: "P3 and Q2"
+      isCorrect: true
+      explanation: "Correct! There are no messages sent between P and Q in between checkpoints P3 and Q2; hence, the checkpoint leads to a consistent state from which the system can recover."
+    - content: "P1 and Q1"
+      isCorrect: false
+      explanation: "Incorrect. A number of messages are sent between P and Q; therefore, a recovery line cannot be formed."
+    - content: "P5 and Q3"
+      isCorrect: false
+      explanation: "Incorrect. A number of messages are sent between P and Q; therefore, a recovery line cannot be formed."
+    - content: "P2 and Q2"
+      isCorrect: false
+      explanation: "Incorrect. A number of messages are sent between P and Q; therefore, a recovery line cannot be formed."
+

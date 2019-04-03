@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 17
 content: |
   [!include[](includes/u02-m04-6-tail-latency.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is not a recommended way to solve the variability problem that leads to a long tail?"
+    choices:
+    - content: "Speculative replication of jobs when resources are available"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Scheduling the shortest jobs to run first to reduce queuing delay"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Simply accept the results that are returned within the first 50 ms and generate the final response to the user based on incomplete or inaccurate data"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Turn off power saving and idling mechanisms on the servers"
+      isCorrect: false
+      explanation: "Incorrect."
+

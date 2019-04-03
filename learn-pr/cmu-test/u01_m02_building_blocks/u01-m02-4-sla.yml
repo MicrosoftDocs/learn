@@ -13,3 +13,18 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/u01-m02-4-sla.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Who is responsible for defining the service level objectives required from a cloud provider?"
+    choices:
+    - content: "The cloud provider"
+      isCorrect: false
+      explanation: "Incorrect. Think carefully about the entity who defines the SLOs."
+    - content: "The client"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "The auditing agency"
+      isCorrect: false
+      explanation: "Incorrect. Think carefully about the entity who defines the SLOs."
+

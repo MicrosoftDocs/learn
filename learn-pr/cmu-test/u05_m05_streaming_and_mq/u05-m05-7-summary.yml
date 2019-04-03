@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/u05-m05-7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is true about LinkedIn's original architecture?"
+    choices:
+    - content: "It was log-oriented"
+      isCorrect: false
+      explanation: "Incorrect. This is true about their final architecture."
+    - content: "It uses all-to-all communication between production services and backend databases"
+      isCorrect: true
+      explanation: "Correct! The system had individual links between each communicating component."
+    - content: "Cluster membership was highly automated"
+      isCorrect: false
+      explanation: "Incorrect. This is true about their final architecture."
+    - content: "Insight was provided in real-time using online analysis"
+      isCorrect: false
+      explanation: "Incorrect. This is true about their final architecture."
+

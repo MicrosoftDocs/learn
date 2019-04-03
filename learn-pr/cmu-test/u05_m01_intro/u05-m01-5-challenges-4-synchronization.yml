@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/u05-m01-5-challenges-4-synchronization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What will be the result?"
+    choices:
+    - content: "A will have $140 and B will have $60."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent."
+    - content: "A will have $60 and B will have $90."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent."
+    - content: "A will have $110 and B will have $90."
+      isCorrect: false
+      explanation: "Incorrect. The presence of locks guarantees that the result will never be inconsistent."
+    - content: "The transactions will never complete due to a deadlock."
+      isCorrect: true
+      explanation: "Correct! The simultaneous acquisition of locks on both A and B by two separate transactions will lead to a deadlock because transaction 1 will fail to acquire the second lock on account B, and transaction 2 will fail to acquire the second lock on account A. At least one of them have to release the lock and start over for the transactions to proceed."
+
