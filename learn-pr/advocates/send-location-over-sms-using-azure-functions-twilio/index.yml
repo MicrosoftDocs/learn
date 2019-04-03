@@ -43,7 +43,7 @@ units:
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.6-call-the-mobile-backend
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.7-bind-the-azure-function-to-twilio
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.8-publish-to-azure
-- learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.9-summary-and-cleanup
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.10-knowledge-check
+- learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.9-summary-and-cleanup
 badge:
   uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge

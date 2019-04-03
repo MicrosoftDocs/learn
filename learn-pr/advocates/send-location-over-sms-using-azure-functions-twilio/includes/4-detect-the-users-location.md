@@ -1,7 +1,5 @@
 The app has a UI and a ViewModel. In this unit, you'll add location lookup to the ViewModel using Xamarin.Essentials.
 
-<!--[!include[](../../../includes/azure-lab-environment-not-available.md)]-->
-
 ## Enable location permissions
 
 All mobile platforms have security around user information and certain hardware, such as camera, photo library, and the user's location. Before an app can access the user's location, the user has to grant permission - either by implicitly granting these permissions at install time or by choosing to grant a permission at runtime. When you view a UWP app in the store, the listing will show the permissions that the app needs. By installing the app, you implicitly grant permission. These permissions are configured in an app manifest file.
