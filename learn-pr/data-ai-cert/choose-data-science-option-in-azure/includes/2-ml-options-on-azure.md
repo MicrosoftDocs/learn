@@ -1,14 +1,14 @@
 Microsoft provides seven different Azure platforms designed for aiding the machine learning process. Even though many of the platforms have similar functionalities, each was designed to solve different types of problems.
 
-The table below summarizes these services.
+The table below summarizes some of these services.
 
 | Product | What it is | What you can do with it |
 | ------- | ---------- | ----------------------- |
 | Azure Machine Learning Service | Managed cloud service for Machine Learning | Train, deploy, and manage models, in Azure using Python, the Azure CLI, and the portal |
-Azure Machine Learning Studio | Drag-and-drop visual interface for Machine Learning | Build, experiment, and deploy models using preconfigured algorithms. Ideal for learning about machine learning |
-Azure Databricks | Spark-based analytics platform with an integrated notebook  interface that seamlessly integrates with Azure AD and data services | Build and deploy models and data workflows with Big Data |
-Azure Data Science Virtual Machine | A virtual machine with pre-installed data science tools | Develop machine learning solutions in a pre-configured data science environment |
-SQL Server / Machine Learning Server | Integrated with SQL Server, this scalable analytics server supports the Python and R language. | Build and develop models inside on-premises SQL server that scale to match the SQL Server engine. Note:  Machine Learning Server is also available as a cluster type in HDInsight. |
+| Azure Machine Learning Studio | Drag-and-drop visual interface for Machine Learning | Build, experiment, and deploy models using preconfigured algorithms. Ideal for learning about machine learning |
+| Azure Databricks | Spark-based analytics platform with an integrated notebook  interface that seamlessly integrates with Azure AD and data services | Build and deploy models and data workflows with Big Data |
+| Azure Data Science Virtual Machine | A virtual machine with pre-installed data science tools | Develop machine learning solutions in a pre-configured data science environment |
+| SQL Server / Machine Learning Server | Integrated with SQL Server, this scalable analytics server supports the Python and R language. | Build and develop models inside on-premises SQL server that scale to match the SQL Server engine. Note:  Machine Learning Server is also available as a cluster type in HDInsight. |
 
 ## Differences Between Products
 
@@ -37,7 +37,7 @@ Example of tools included:
 
 ### Azure Databricks
 
-Azure Databricks provides a GUI based cloud portal that makes using the Spark big data platform a snap! Creating and modifying Spark clusters can be done easily and clusters can be turned off when not in use without losing data. Azure Databricks is a secure, all-in-one, data science team collaboration platform, that includes a powerful notebooks interface, job scheduling, active directory integration, granular security control, and seamless Azure integration.
+Azure Databricks provides a GUI-based cloud portal that simplifies using the Spark big data platform. Creating and modifying Spark clusters can be done easily and clusters can be turned off when not in use without losing data. Azure Databricks is a secure, all-in-one, data science team collaboration platform, that includes a powerful notebooks interface, job scheduling, active directory integration, granular security control, and seamless Azure integration.
 
 Features include:
 
@@ -69,7 +69,3 @@ Tools include:
 
 - Commercial High Scale Python Modules
 - Commercial High Scale R Packages
-
-## Summary
-
-All the products described above simplify the data science process in unique ways. They each have different features and purposes. Azure ML Studio is primarily a learning platform and for limited scale uses. The rest can be used for professional scalable data-driven projects.
