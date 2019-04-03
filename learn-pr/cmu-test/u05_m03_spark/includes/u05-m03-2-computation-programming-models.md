@@ -50,6 +50,7 @@ The driver is the process where the `main()` method of the program runs. It has 
 Executors are worker processes that are created when the Spark application starts and they run until it ends. Executors run the tasks scheduled by the driver and return the results. Each executor consists of a `BlockManager` which provides in-memory storage for caching RDDs. 
 
 The core of Spark is the execution and storage of Resilient Distributed Datasets, which is explained next. 
+
 |A Note on the Spark Shell|
 |--|
 | Apart from writing programs, Spark also provides an interactive shell. This provides an easy way to explore Spark’s APIs and allows a tool for interactive analysis of large datasets. The shell supports both Python and Scala (but not Java). |

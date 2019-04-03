@@ -2,6 +2,7 @@
 ##  MapReduce Program Examples
 
 As a simple MapReduce example, we can write a job/program that counts the times that each word appears in a file or a set of files. For instance, if we assume two files, _A_ and _B_, with contents "This is a cloud computing course" and "This is Unit 5 in the cloud computing course," we would expect an output similar to what is shown in Table 5.1. Such a program is commonly called _WordCount_. The WordCount program is included in the Hadoop distribution and is readily available for running and testing. It represents a large spectrum of text-processing algorithms in big-data applications. As such, many consider it a state-of-the-art benchmark workload for evaluating Hadoop's efficiency. The original MapReduce paper has indeed used WordCount as a benchmark workload. Yahoo! uses it also for evaluating Hadoop on its data centers.
+
 |Word|Count|
 |--|--|
 |This|2|
@@ -23,6 +24,7 @@ MapReduce programs can be written in the Java programming language. To write a W
 Input and output formats can be arbitrary, line-based logs, for example, or images, videos, multiline records, or something totally different. Hadoop can process any file format, from flat text, through binary, to structured databases. To arrange this, users can override Hadoop's `InputFormat` (default `TextInputFormat`) and `OutputFormat` (default `TextOutputFormat`) classes. The former defines how input files are read as key-value pairs and constructs the corresponding input splits for map tasks. The Hadoop engine spawns one map task per each input split thus generated. The `OutputFormat` class similarly defines how key-value pairs are written by reduce tasks as output files to HDFS (watch Video 5.1 for a detailed illustration on how the `InputFormat` and the `OutputFormat` classes are used in Hadoop MapReduce). 
 
 The default I/O subclasses are suitable for text processing. Specifically, `TextInputFormat` enables reading text files, with the byte offset of a line being a key and the actual line content being a value. `TextOutputFormat` allows writing files as key-value<sup>3</sup> text pairs. Other formatting classes, such as the `SequenceFileInputFormat` and the `SequenceFileOutputFormat` classes, are shipped with Hadoop and allow reading and writing binary files. In addition, Hadoop users can always implement custom input and output format classes tailored for their input datasets. More information on how to do that can be found on the [Yahoo! Hadoop Tutorial](http://developer.yahoo.com/hadoop/tutorial/) and in White's "Hadoop: The Definitive Guide."
+
 > [!VIDEO https://youtube.com/embed/kXVBsqmSl0k]
 
 _Video 5.1: MapReduce Internals_
@@ -106,9 +108,11 @@ _Figure 5.17:_ The WordCount code using the new Java MapReduce API released in H
 As Figure 5.17 shows, programmers need create only two sequential functions, map and reduce, encapsulated in two (inner) classes: in this case, the `WCMap` and the `WCReduce` inner classes. The `WCMap` inner class extends the `Mapper` class and overrides its `map()` function. The `Mapper` class maps given input key-value pair types ( `LongWritable` and `Text`) to a set of output key-value pair types ( `Text` and `IntWritable`). Output key-value pair types defined in the `Mapper` class should always match the input key-value pair types in the `Reducer` class. The `WCReduce` inner class extends the `Reducer` class and overrides its `reduce()` function. In addition to defining the input key-value pair types, the `Reducer` class defines the output key-value pair types ( `Text` and `IntWritable`) that will be used by reduce tasks to generate the final results. 
 
 The `map()` and the `reduce()` functions in the `WCMap` and the `WCReduce` inner classes incorporate the actual logic of the WordCount program. The `Context` parameter in both functions performs I/O writes to local disks and HDFS. The `main()` function sets up a job to execute the WordCount program on a set of input files using the `addInputPath()` function. It also specifies where the output files are placed on HDFS using the `setOutputPath()` function. In the `main()` function, `setOutputKeyClass()` and `setOutputValueClass()` specify the key-value pair types emitted by reduce tasks and assume, by default, that these types match the map task output key-value types. If this is not the case, the `main()` function should also call `setMapOutputKeyClass()` and `setMapOutputValueClass()` to specify map task output key-value types. To set the input and output formats, the functions `setInputFormatClass()` and `setOutputFormatClass()` are called. Finally, the `setMapperClass()` and the `setReducerClass()` functions are used to set the job's constituent inner map and reduce classes, `WCMap` and `WCReduce`. Video 5.2 discusses Sort, another classical MapReduce example, and Video 5.3 presents Sobel, an image-processing, edge-detection example.
+
 > [!VIDEO https://youtube.com/embed/L4t2GgYJs-8]
 
 _Video 5.2: Sort in MapReduce_ ([Alternate Version](../media/video_5.1.pdf))
+
 
 > [!VIDEO https://youtube.com/embed/h4hdsqC3Nq0]
 

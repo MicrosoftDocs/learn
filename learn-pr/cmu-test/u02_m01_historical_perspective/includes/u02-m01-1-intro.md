@@ -2,6 +2,7 @@
 ##  Data Centers
 
 Data centers include a room or building, IT equipment, and facilities to securely house, power, and cool that equipment. Over the years, data centers have evolved from a location of concentrated IT equipment to modular, agile, and highly virtualized compute centers. With growing use of Web-based services, explosion of mobile devices, and ever-increasing rates of data generation (and consumption), the demand for new data centers continues to grow. One of the main contributors to this growth has been the advent of the cloud computing paradigm, in which cost effectiveness is directly linked to economies of scale and the efficiencies gained with new data center design. All layers of cloud software and services run on top of physical resources, largely servers, storage, and networking equipment, and all of these require power. This equipment also generates heat and so requires cooling. A small data center might fit in one specialized room, while a large installation might be a dedicated, warehouse-sized facility (see Video 2.1).
+
 > [!VIDEO https://youtube.com/embed/ouhskMuknoM]
 
 _Video 2.1: Data centers._

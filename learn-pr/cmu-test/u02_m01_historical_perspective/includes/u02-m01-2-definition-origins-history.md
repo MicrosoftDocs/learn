@@ -2,15 +2,15 @@
 ##  Defining Data centers
 
 Formally, a data center can be defined as follows:
-> [!TIP]
-> **Data center**
->
-> Infrastructure dedicated to housing computer and networking equipment, including power, cooling, and networking.
 
+> ## Data center
+>
+> _(definition)_ Infrastructure dedicated to housing computer and networking equipment, including power, cooling, and networking.
 
 The term _data center_ became popular in 1990s, referring to large rooms dedicated to housing computer and networking equipment, though computer rooms themselves date back much further. Early computers (mainframes) were massive—the size of many refrigerators. They also generated a lot of heat and required clean air filtration to increase reliability. For these reasons, early computers could not be placed into a regular office, so custom rooms were built. A lot of these same ideas go into server rooms today. The only difference is that instead of housing one computer, they hold from dozens to hundreds to even tens of thousands of servers in a single facility.
 
 Modularity is important for data centers because it allows an organization to expand as needed. One of the enablers of a modular data center has been standardized racks onto which IT equipment is mounted. Historically, server racks have evolved from early relay racks found in railroad signaling. It is unclear why the railroad companies chose the original 19-inch, post-to-post width, but the same form factor made its way into early telecommunications and then audiovisual equipment at radio and television stations. Figure 2.1 shows early equipment racks in a radio operators room.
+
 |Did you know?|
 |--|
 |The width of early railroad relays dictated the width of a modern 19-in. rack. But the standard gauge of modern railroad tracks (4 ft, 8½ in.) dates back to ancient Greek stone pathways, which the Romans adopted and brought to Europe during the age of the Roman Empire ([Wikipedia](http://en.wikipedia.org/wiki/Railroad_gauge#Early_origins_of_the_standard_gauge), 2014).<!-- [<link href="http://en.wikipedia.org/wiki/Railroad_gauge#Early_origins_of_the_standard_gauge" >link</link>] -->|

@@ -5,11 +5,10 @@ Cloud computing offers the use of computing resources as a service over the netw
 
 In the first unit of this course we will start with a simple overview of cloud computing, its definition, motivations, evolutions, building blocks, service models and use cases. We will also discuss economics, risks, benefits and security.
 ##  What is Cloud Computing?
-> [!TIP]
-> **Cloud Computing**
->
-> The delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.
 
+> ## Cloud Computing
+>
+> _(definition)_ The delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.
 
 Information technology (IT) has become an essential requirement for most organizations to function effectively. Typically, and depending on a specific organization’s needs, IT has three components associated with it (Figure 1.1) - application software, development platforms and the underlying infrastructure:
 ![Figure 1.1: Typical Components of Information Technology.](../media/IT_components.png)
@@ -29,6 +28,7 @@ Many of the disadvantages listed above emanate from the ownership of IT. However
 The transformation of a certain technology from a product to a service is not new. A similar transformation evolved for electricity, which initially had to be produced near the device or service requiring it. The development of large power plants, electric transmission systems and grids has led to the rise of electric power as a _utility_, (a service that people can obtain and pay for as needed).
 
 The following video (Video 1.1) discusses the transformation of IT from a product to a service:
+
 > [!VIDEO https://youtube.com/embed/HaVqHgg7zv4]
 
 _Video 1.1: Introduction to Cloud Computing._ ([Alternative version](../media/video_1_intro.pdf))

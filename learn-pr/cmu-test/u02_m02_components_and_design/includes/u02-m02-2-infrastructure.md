@@ -28,6 +28,7 @@ Most data centers implement strict physical security procedures—for good reaso
 ##  Power
 
 The following video (Video 2.3) discusses various power distribution methods in data centers:
+
 > [!VIDEO https://youtube.com/embed/Xl4VjEqitSk]
 
 _Video 2.3: Data center power distribution methods._
@@ -60,6 +61,7 @@ Measurement of energy for electronics is usually in kW, but most HVAC equipment 
 
 - 1 kW = 3412 Btu/h
 - 1 ton = 12,000 Btu/h
+
 |Did you know?|
 |--|
 |A BTU, or British thermal unit, is the amount of energy needed to heat 1 pound of water to 1°F, and a ton is the heat absorbed by melting 1 ton of ice in 24 hours.|

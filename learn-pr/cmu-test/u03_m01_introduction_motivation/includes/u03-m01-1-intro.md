@@ -2,6 +2,7 @@
 ##  Virtualization
 
 Virtualization is at the core of the cloud computing paradigm. It lies on top of the cloud infrastructure (or the data center) whereby virtual resources (e.g., virtual CPUs, memories, disks, networks) are constructed from the underlying physical resources and act as proxies to them. As is the case with the idea of cloud computing, which was first introduced in the 1960s, virtualization can be traced back to the 1970s. Forty years ago, the mainframe computer systems were extremely large and expensive. To address expanding user needs and costly machine ownership, the IBM 370 architecture, announced in 1970, offered complete virtual machines (VMs) (virtual hardware images) to different programs running on the same computer hardware. Over time, computer hardware became less expensive, and users started migrating to low-priced desktop machines. This migration drove the adoption of the virtualization technology to fade for a period of time. Today, virtualization is enjoying a resurgence in popularity, with a number of research projects and commercial systems providing virtualization solutions for commodity PCs, servers, and the cloud. The following video (Video 3.1) is a brief introduction to virtualization.
+
 > [!VIDEO https://youtube.com/embed/x2rzUi9fIHU]
 
 _Video 3.1: Introduction to Virtualization._

@@ -2,6 +2,7 @@
 ##  Data Center Redundancy
 
 The following video (Video 2.5) covers some important aspects of data center redundancy:
+
 > [!VIDEO https://youtube.com/embed/Vh6RfwiRxNY]
 
 _Video 2.5: Data center redundancy._
@@ -9,6 +10,7 @@ _Video 2.5: Data center redundancy._
 ##  Data Center Tier Classifications
 
 Data centers can be classified based on reliability. In order to understand the four different tiers, as specified in [TIA-942](http://www.tiaonline.org/standards/) standard, you must first know what is meant by the word _reliable_. Reliability is most frequently measured in uptime, or availability. A service that is 100% reliable is extremely difficult to guarantee, and, therefore, no companies will make that claim in their service-level agreement (SLA) to a customer. But if they did, it would be available to users every second of every year.
+
 | _Tier_| _Name_| _Availability (%)_| _Downtime/Year_|
 |--|--|--|--|
 |1|Basic|99.671|28 hr, 49.37 min|

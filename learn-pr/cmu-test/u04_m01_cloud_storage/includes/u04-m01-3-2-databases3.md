@@ -48,6 +48,7 @@ Columnar databases are a hybrid of RDBMSs and KV stores. Like relational databas
 ###  Comparing Popular Databases
 
 The following table illustrates the differences between various popular databases that belong to each category. 
+
 ||MySQL|MongoDB|Neo4j|DynamoDB|HBASE|
 |--|--|--|--|--|--|
 |Type|Relational database|NoSQL document store|NoSQL graph database|NoSQL key-value store|NoSQL columnar database|

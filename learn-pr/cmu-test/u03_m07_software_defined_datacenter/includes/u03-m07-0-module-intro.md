@@ -5,6 +5,7 @@ A typical data center architecture consists of many loosely integrated component
 As we read in earlier, with the advent of utility computing and better resource sharing technologies, such as server virtualization, it is possible for the applications and data of multiple tenants to co-exist within the same physical servers while maintaining a certain degree of isolation. This idea was achieved by adding a software layer that enables the sharing of physical resources. Since data centers also include large scale storage systems (SANs) and hierarchical networking fabric (switches and routers), could this same idea of utilizing a software layer by be applied to enable the sharing of storage and networking? 
 
 The success of server virtualization at achieving resource sharing, higher utilization, improved flexibility and elasticity, has led to the advent of the idea of Software Defined Data Center (SDDC). SDDC virtualizes all infrastructure in a manner which can be automated and easy to manage. A virtualized cluster, which includes servers, networking fabric and storage systems, can be decoupled from the physical resources and provided as software resources that can be configured and managed. Instead of building applications using dedicated servers, storage and networking resources, SDDC offers the data center infrastructure as software services since all of the needed resources can be virtualized. 
+
 > [!VIDEO https://youtube.com/embed/X2Ppt0MG6as]
 
 _Video 3.13: Software Defined Data Centers (SDDC)._

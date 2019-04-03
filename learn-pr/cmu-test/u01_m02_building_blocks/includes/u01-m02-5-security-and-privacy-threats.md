@@ -26,6 +26,7 @@ The biggest threats at a high-level are those caused due to vendor lock-in (sinc
 At a lower level, the threats are due to shared infrastructure, lack of a hard perimeter, and limited control over physical data storage and deletion. It must be noted that attacks against hypervisors and shared hosting are significantly rarer and more difficult than attacks against OSes and networks that plague traditionally deployed applications.
 
 The Cloud Security Alliance provides a taxonomy of threats, which are summarized here: 
+
 |Threat|Affected Services|
 |--|--|
 | **Threat #1: Abuse and Nefarious Use of Cloud Computing**<br>Criminals can leverage the anonymity provided by public clouds to launch malicious attacks at low cost. Public clouds have been used for Command and Control Botnets, CAPTCHA cracking, rainbow table computation, launching dynamic attacks. Each of these is a malicious action that relies on brute force, which is provided by the data center.<br><br> Vendors have attempted to counter this threat by adding strict registration checks and comprehensively monitoring all network traffic. For instance, a cloud service provider may monitor metadata about all emails originating from it to find out if a customer is misusing it to send spam.|IaaS, PaaS|

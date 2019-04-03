@@ -2,6 +2,7 @@
 ##  Virtualization
 
 Formally, virtualization involves the construction of an isomorphism that maps a virtual guest system to a real host system<!-- (Popek and Goldberg, 1974) -->.Video 3.3 and Figure 3.11 illustrates the virtualization process.
+
 > [!VIDEO https://youtube.com/embed/U6HwG9dc03A]
 
 _Video 3.3: Definition of Virtualization._

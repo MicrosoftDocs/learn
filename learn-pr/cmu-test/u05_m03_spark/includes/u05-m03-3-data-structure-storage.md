@@ -6,6 +6,7 @@ Spark relies on a special abstraction called resilient distributed datasets (RDD
 Despite not needing to exist on physical storage, RDDs can be fault-tolerant. However, they do not need to be replicated; rather they have a notion of lineage by which they “remember” the set of operations that were executed to construct them, allowing them to be rebuilt if they lose data. A handle to an RDD contains enough information to recompute it from a version of the data stored on-disk. 
 
 All work in Spark is expressed either as creating new RDDs, transforming existing RDDs or running operations on RDDs. One important thing to realize about RDDs is that they are _lazily computed_ and _ephemeral_. Lazy computation is an optimization whereby many transformations are pipelined, and the RDD is computed only when it is first used with an “action”. Ephemeral means that RDDs may be materialized (computed and loaded in memory) when used in a parallel application but that they are subsequently discarded from memory. 
+
 |Aspect|RDDs|Distributed Shared Memory|
 |--|--|--|
 |Reads|Coarse or Fine-Grained|Fine-Grained|
@@ -62,6 +63,7 @@ _Figure 5.34 : Operations on RDDs_
 
 
 Here are some examples of transformations and actions: 
+
 |Transformation|Meaning|Action|Meaning|
 |--|--|--|--|
 | `map(func)`|Return a new RDD formed by passing each element of the source through function func.| `reduce(func)`|Aggregate the elements of the dataset using function func (which takes two arguments and returns one). The function should be associative so that it can be computed correctly in parallel.|
@@ -119,6 +121,7 @@ Off-heap storage is provided by a special memory-centric storage system called T
 In all four cases, the RDD is stored in partitions across the workers. Each partition is an atomic piece of the dataset. When running out of memory because of a high rate of incoming data, in-memory RDD partitions are generally dealt with using an LRU eviction policy. However, if the least-recently used partition belongs to the same RDD as the arriving partition, it is not evicted to prevent thrashing. 
 
 RDDs are recomputed by default for every action executed on them. In order to reuse an RDD in multiple actions, the RDD. `persist()` method can be called. RDDs can be persisted in several places as outlined in the following table: 
+
 |Level|Space used|CPU time|In memory|On disk|Comments|
 |--|--|--|--|--|--|
 | `MEMORY_ONLY`|High|Low|Y|N||
@@ -131,6 +134,7 @@ RDDs are recomputed by default for every action executed on them. In order to re
 Spark also allows data to be persisted into a cluster-wide in-memory cache. When data is accessed frequently, for e.g. a small “hot” dataset or when running an iterative algorithm, this technique can be extremely useful to improve performance. RDDs also have an `unpersist()` method to remove it from the persistent store. 
 
 Of course, to achieve all these properties using RDDs, we also must choose a suitable representation to store them. Any representation must be able to track lineage across a wide range of transformations, which users can combine in arbitrary ways. Spark uses a simple graph-based representation for RDDs. Each RDD is accessed through a common interface which exposes five features: a set of partitions (atomic pieces of the dataset), a set of dependencies (on parent RDDs), a function for computing the dataset based on its parent(s), metadata about the partitioner, and a list of preferred nodes where each partition can be accessed faster due to locality. 
+
 |Operation|Meaning|
 |--|--|
 | `partitions()`|Return a list of Partition objects|

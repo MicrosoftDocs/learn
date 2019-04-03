@@ -13,12 +13,14 @@ _Figure 2.7: (a) Servers and other equipment mounted in a standard 19-inch rack_
 Rack-mounted servers have their own fans, _power supply units (PSUs)_, network, and I/O, but _blade servers_ share all of these across many nodes within the same blade _enclosure_ (called blade _chassis_). There is no common blade standard, so each vendor's blades work only with its enclosures. Blades are thin, vertical metal enclosures and slide into the front of a blade chassis and attach to a common _backplane_. Each blade has its own motherboard, CPU, RAM, and disk. The shared PSUs are typically more efficient than dedicated rack-mounted versions because they can power up or down incrementally, adjusting PSU capacity to load demand. For example, instead of 10 servers with 2 * 750W redundant PSU, a blade enclosure can power the equivalent of 10 servers with 4 * 2500W PSU, with one being redundant. Blades are denser than their horizontally mounted counterparts, allow for easier maintenance, and require fewer cables. The disadvantage is higher upfront cost if you only need a few servers, plus you are locked-in to a specific vendor.
 
 Last, there are a few servers that look similar to a standard rack-mounted server, except they have two motherboards horizontally per 1U, each mounted on its own tray. They also share a PSU but, unlike blades, have their own fans and I/O. There are variations on this theme, such as four nodes per 2U or two nodes with multiple GPUs.
+
 |Did you know?|
 |--|
 |A 1U rack-mounted server is sometimes referred to as a "pizza box."|
 
 
 The following video (Video 2.2) describes various server form factors:
+
 > [!VIDEO https://youtube.com/embed/0EM6jPYafys]
 
 _Video 2.2: Server Form Factors._
@@ -39,6 +41,7 @@ _Onboard management:_ Although many desktop motherboards now have onboard gigabi
 ###  Expansion cards
 
 _PCI Express:_ Often, a server requires additional I/O devices, depending on the applications intended to run on it. PCs and mainframes have always had some notion of expandability, and expansion buses have evolved from ISA to PCI to PCI-X to what is the current standard—PCI Express (PCIe). The biggest difference between PCI and PCIe is that PCIe is based on point-to-point, high-speed serial links, rather than an actual bus, which has multiple devices attached. Each of these high-speed links constitutes a lane, and multiple lanes work in parallel. So a PCIe device that is x8 has eight of these high speed lanes. Each generation of PCIe, from 1.0 to 3.0, effectively doubles the bandwidth of the previous generation.
+
 |PCIe Generation|x1 (MB/s)|x4 (GB/s)|x8 (GB/s)|x16 (GB/s)|
 |--|--|--|--|--|
 |1.0|250|1|2|4|
@@ -49,6 +52,7 @@ _Table 2.1: PCIe generations throughput per x1, x4, x8, and x16 lane slots._
 
 
 _RAID:_ RAID (redundant array of inexpensive disks) adapters allow multiple hard drives to act as a single logical unit, with increased performance and redundancy or a mixture of both.
+
 |RAID Level|Name|Advantages|Disadvantages|
 |--|--|--|--|
 |0|Called block-level striping.|Improved performance.|No fault tolerance, and a single drive failure destroys the entire array.|
@@ -77,6 +81,7 @@ When most people hear the word storage, it is likely that they will envision an 
 ![Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head (Source). (b) SSD with the circuitry exposed (Source).](../media/traditional_hard_disk.png)
 
 _Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head_ ([Source](http://www.flickr.com/photos/auxo/6901630801/))
+
 
 |Did you know?|
 |--|
@@ -129,6 +134,7 @@ _Fibre Channel (FC)_ is a protocol designed to support SANs and remote block-lev
 _iSCSI_, or _internet SCSI_ (pronounced "scuzzy"), is a protocol which packetizes SCSI (Small Computer Systems Interface, an old hard drive standard) commands to be transported over LANs or WANs. Many SANs support iSCSI, and it is popular because you can use your existing Ethernet network instead of deploying a dedicated FC network.
 
 _Infiniband (IB)_ has been popular in HPC clusters for almost a decade and is also gaining traction in other areas in the data center. The main advantage of Infiniband is much lower end-to-end latency compared to Ethernet (1.7 microseconds versus 12.5 microseconds for 10GigE versus 30 to 100 microseconds for GigE). It also scales better with the number of nodes in a [cluster](http://www.hpcadvisorycouncil.com/pdf/IB_and_10GigE_in_HPC.pdf). The other key factor in IB performance is that the switches (Figure 2.11) are fully nonblocking, which means that the backplane supports running every single port at full speed, in both directions. Infiniband speeds are summarized by the chart below:
+
 |SDR|DDR|QDR|FDR-10|FDR|EDR|
 |--|--|--|--|--|--|
 |8Gbit/s|16Gbit/s|32Gbit/s|40Gbit/s|54.54Gbit/s|100Gbit/s|

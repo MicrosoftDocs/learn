@@ -10,6 +10,7 @@ An _object_ can be considered as a generic container that can store any arbitrar
 ##  REST
 
 _Representational state transfer_ (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
+
 > [!VIDEO https://youtube.com/embed/34iW4tcYGxA]
 
 _Video 4.10: HTTP and RESTful Interfaces_
@@ -37,6 +38,7 @@ The major advantages of REST are that it is
 ##  Object Storage Systems - Amazon S3
 
 Video 4.11 covers the basics ideas behind Object Storage Systems:
+
 > [!VIDEO https://youtube.com/embed/Drl9LvRr35Y]
 
 _Video 4.11: Object Storage Systems_

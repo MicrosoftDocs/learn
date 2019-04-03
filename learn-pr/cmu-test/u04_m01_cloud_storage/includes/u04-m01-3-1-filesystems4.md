@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_3_1_filesystems4.xml -->
 
 Switching gears now, we will discuss distributed file systems. A distributed file system is a file system that has files distributed among multiple file servers (Video 4.4). 
+
 > [!VIDEO https://youtube.com/embed/_1pef4h38wY]
 
 _Video 4.4: Distributed File Systems_

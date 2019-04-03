@@ -2,6 +2,7 @@
 ##  Full Virtualization and Paravirtualization
 
 A problem arises when an instruction that is both sensitive and unprivileged is issued by a process running on a VM in user mode. According to Popek and Goldberg (1974), sensitive instructions have to trap to the hypervisor if executed in user mode. However, as explained earlier, sensitive instructions can be privileged (e.g., LPSW) and unprivileged (e.g., POPF). Unprivileged instructions do not trap to the hypervisor. Instructions that are sensitive and unprivileged are called critical (see Fig. 3.21). ISAs that contain critical instructions do not satisfy Popek and Goldberg's theorem. Video 3.6 covers this concept and ways around it:
+
 > [!VIDEO https://youtube.com/embed/ay0ZpkMbw_8]
 
 _Video 3.6: ISA virtualization techniques._

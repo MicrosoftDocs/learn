@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_3_1_filesystems.xml -->
 
 We shall now dive into the actual devices used to store and persist data in Video 4.2. This video should serve to be a refresher on various types of storage technologies that are available, with their relative cost-performance tradeoffs. 
+
 > [!VIDEO https://youtube.com/embed/LljF0TatEGk]
 
 _Video 4.2: Storage Devices_

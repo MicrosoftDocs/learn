@@ -15,6 +15,7 @@ The business model for IT software has evolved over the years into the following
 1. Cloud computing model: Software is developed and delivered over the Internet to many clients at lower costs.
 
 The following video (Video 1.7) discusses the evolution of these models with examples:
+
 > [!VIDEO https://youtube.com/embed/yOTcTwWbEpk]
 
 _Video 1.7: Economics of cloud computing, software service models, and costs_ ([alternative

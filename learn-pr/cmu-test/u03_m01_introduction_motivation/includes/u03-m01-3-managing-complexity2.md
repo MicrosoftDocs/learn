@@ -2,6 +2,7 @@
 ##  Well-Defined Interfaces
 
 A system (or subsystem) interface is defined as a set of function calls that <!-- SCG: don't understand the use of the word "leverage" --> allow users to leverage the underlying system's functionalities without needing to know any of its details. The two most popular interfaces in systems are the Application Programming Interface (API) and the Instruction Set Architecture (ISA) interface. Another interface that is less popular, yet important (especially in virtualization), is the Application Binary Interface (ABI). The following video (Video 3.2) describes API, ABI, and ISA.
+
 > [!VIDEO https://youtube.com/embed/BFvKY7GpWbM]
 
 _Video 3.2: Computer System Architecture and Interfaces._ ([Alternative version](../media/video_1_computer_system_architecture_and_interfaces.pdf))

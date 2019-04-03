@@ -3,6 +3,7 @@
 Now that we have seen the architecture and the computation flow of Spark, it makes sense to look at a simple Spark program. Before doing that, still need to understand some of the common primitive RDD operations. 
 
 We start with some basic single-RDD transformations `(RDD1 = {1,2,3,3})`:
+
 |Function name|Purpose|Example|Result|
 |--|--|--|--|
 | `map()`|Apply a function to each element in the RDD and return an RDD of the result.| `rdd.map(x => x + 1)`| `{2, 3, 4, 4}`|
@@ -12,6 +13,7 @@ We start with some basic single-RDD transformations `(RDD1 = {1,2,3,3})`:
 
 
 Transformations may also have more than one RDD as the input. Here we look at transformations having two RDDs as the input `(RDD1 = {1,2,3}; RDD2 = {3,4,5})`: 
+
 |Function name|Purpose|Example|Result|
 |--|--|--|--|
 | `union()`|Produce an RDD containing elements from both RDDs.| `rdd.union(other)`| `{1, 2, 3, 3, 4, 5}`|
@@ -21,6 +23,7 @@ Transformations may also have more than one RDD as the input. Here we look at tr
 
 
 Finally, we look at some actions, again on a single RDD = `{1,2,3,3}`
+
 |Function name|Purpose|Example|Result|
 |--|--|--|--|
 | `collect()`|Return all elements from the RDD.| `rdd.collect()`| `{1, 2, 3, 3}`|

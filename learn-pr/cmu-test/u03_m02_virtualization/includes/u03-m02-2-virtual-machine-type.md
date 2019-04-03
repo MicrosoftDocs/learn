@@ -2,6 +2,7 @@
 ##  Virtual Machine Types
 
 There are two main implementations of virtual machines (VMs): process VMs and system VMs. The following video (Video 3.4) covers the taxonomy of Virtual Machine Types:
+
 > [!VIDEO https://youtube.com/embed/15DGinFJwFg]
 
 _Video 3.4: Virtual Machine Types._

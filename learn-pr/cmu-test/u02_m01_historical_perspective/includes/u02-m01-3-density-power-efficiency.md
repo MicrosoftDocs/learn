@@ -31,6 +31,7 @@ Efforts in improving power efficiency in IT exist across many parts of the data 
 - 
 _Servers:_ Entire servers attempt to reduce power consumption by going into idle states, in which they temporarily power down or reduce the power consumption of components when the system is underutilized. For example, a typical server that typically consumes 650W when busy can scale down to about 200W when idle. In addition, virtualization enables better management of IT resources and allows organizations to consolidate individual servers onto fewer physical servers.
 
+
 |Did You Know?|
 |--|
 |<br>![(C) CMU Cloud Computing Course](../media/energy_pie_chart.png)
@@ -54,6 +55,7 @@ The leading driver of increasing power efficiency in the data center is to decre
 
 
 Techniques to calculate and improve power efficiency in data centers are covered in a later module in this Unit.
+
 |Did you know?|
 |--|
 |Each time you convert from AC to DC, or vice-versa, energy is lost. Similarly, conversions between voltage levels are never 100% efficient.|

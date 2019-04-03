@@ -2,6 +2,7 @@
 ##  Ceph
 
 Ceph is a storage system that can be deployed on large clusters of servers with attached disks. Video 4.14 covers the basic concepts behind Ceph.
+
 > [!VIDEO https://youtube.com/embed/-WzMtI_SfPI]
 
 _Video 4.14: Ceph_
@@ -92,6 +93,7 @@ Node failures in RADOS are detected during a failure of communication between OS
 ##  Ceph FS
 
 As indicated in Figure 4.31 above, the Ceph FS is a layer of abstraction over the RADOS storage system. RADOS does not have any notion of metadata for an object apart from object name. The Ceph file system allows for file metadata to be layered on top of individual file objects stored in RADOS. Video 4.15 explains teh concept of CephFS.
+
 > [!VIDEO https://youtube.com/embed/hdKxRV4JXhc]
 
 _Video 4.15: CephFS_

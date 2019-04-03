@@ -2,6 +2,7 @@
 ##  Apache Cassandra
 
 Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both BigTable and Amazon's Dynamo. Cassandra uses the data model of BigTable and the implementation architecture of Dynamo. Video 4.18 covers Cassandra.
+
 > [!VIDEO https://youtube.com/embed/FU_VALh1xN0]
 
 _Video 4.18: Cassandra_
@@ -70,6 +71,7 @@ As the Cassandra instance is running, it may have collected multiple SSTables (t
 ####  Tunable Consistency
 
 Unlike other NoSQL database systems, Cassandra has a tunable consistency model. Applications that make requests to Cassandra for read and write operations can specify a consistency level required from Cassandra for that operation. Thus, the application can specify the consistency level required for each operation. Cassandra supports up to five consistency levels, as outlined in the following table. 
+
 |Consistency Level|Implication for Reads|Implication for Writes|
 |--|--|--|
 | `ZERO`|Unsupported for reads.|The write operation returns immediately, without confirmation. |

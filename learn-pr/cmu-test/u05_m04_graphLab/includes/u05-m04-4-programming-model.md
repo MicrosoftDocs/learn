@@ -9,7 +9,7 @@ Thus, to increase parallelism and support a broader range of consistency setting
 _Figure 5.49: The full consistency, the edge consistency, and the vertex consistency models guaranteed by GraphLab. The full consistency model is the strongest, and the vertex consistency is the most relaxed one. As consistency is relaxed, parallelism is increased and vice versa._
 
 
-As part of its shared-memory view, GraphLab stores ghosts, the adjacency information/data of each vertex (see the section The Data Structure and Graph Flow), in local memories. A vertex ghost ensures that the vertex's update function has direct memory access to all data within its scope. 
+As part of its shared-memory view, GraphLab stores ghosts, the adjacency information/data of each vertex (see the section ), in local memories. A vertex ghost ensures that the vertex's update function has direct memory access to all data within its scope. 
 
 ### References
 

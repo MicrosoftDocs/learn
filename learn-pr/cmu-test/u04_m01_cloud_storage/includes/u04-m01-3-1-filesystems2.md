@@ -15,6 +15,7 @@ In the previous pages you learned about different types of data and storage devi
 A _block_ is simply a collection of bytes that is grouped together. The _block size_ indicates how many bytes are in that block, such as 512 bytes, 64kiB, or 1MiB. Block sizes are usually represented as a power of 2. A single block is the smallest unit that can be addressed, so all of the bytes in a block must be read or written at the same time. This is similar to how a CPU accesses memory in _words_ (either 32 bits or 64 bits) at a time; if you want to modify a single byte of data either in registers or main memory during a CPU instruction, you have to _read_ 8 bytes (in case of a 64-bit CPU), _modify_ 1, and then _write_ the new word (1 new byte + 7 original bytes) back to memory. This process is amplified with blocks, so an application that modifies a single byte requires reading, say, 512 bytes, modifying 1 byte, and then writing back 512 bytes. This is a rare case, since applications typically read a number of contiguous blocks at a time and may be cached somewhere along the memory hierarchy.
 
 A _block device_ provides an OS access to blocks through an interface. In practice, block devices can be physical or virtual, and can be local or remote. A taxonomy of block devices along with examples are presented below:
+
 |Local|Remote|
 |--|--|--|
 |Physical|Internal: HDD, SSD, optical, tape drives. External: direct-attached storage (DAS), removable drives (USB, Firewire, eSATA) |SAN (with one-to-one mapping)|

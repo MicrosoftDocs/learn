@@ -2,6 +2,7 @@
 ##  Data Structure and Graph Flow in Graphlab
 
 Developed by Carnegie Mellon University, GraphLab provides an example of graph-parallel distributed analytics engines for the cloud. As with any graph-parallel engine, GraphLab assumes input problems modeled as graphs, in which vertices represent computations and edges encode data dependencies or communication. 
+
 |A Note on GraphLab's Evolution and Versions|
 |--|
 | _GraphLab_ was initially developed as a graph processing framework that targets shared memory systems (multi-core machines). GraphLab then included a distributed execution engine to allow for computation of extremely large graphs across a cluster of machines. _PowerGraph_ (also known as GraphLab 2.0), emerged using techniques that allowed for faster distributed processing of graphs that followed the power-law distribution (such as social graphs). GraphLab has been since spun-off into a commercial startup called Dato Inc., which provides the [GraphLab Create](https://dato.com/products/create/) software package. Our discussion on GraphLab in this module will cover the latest open-source version, PowerGraph (GraphLab 2.0)|
@@ -14,7 +15,7 @@ In GraphLab, graphs are initially stored as files in an underlying distributed s
 _Figure 5.46: The GraphLab system. In the initialization phase the atoms are constructed using MapReduce (for example), and in the GraphLab execution phase, the atoms are assigned to cluster machines and loaded by machines from a distributed file system (e.g., HDFS)._
 
 
-In the first phase, the input graph is divided into _k_ partitions, called _atoms_, where _k_ is much larger than the number of cluster machines. As demonstrated in Figure 5.46, atoms can be constructed either sequentially or using parallel loading techniques, including MapReduce. GraphLab does not store the actual vertices and edges in atoms but rather the commands to generate them, in the form of a journal. This allows GraphLab to reconstuct portions of the graph in case of node failures. In addition, GraphLab maintains in each atom information about its neighboring vertices and edges. This information, denoted in GraphLab as _ghost_ vertices, provides a caching capability for efficient adjacency data accessibility as explained in the section The Programming Model.
+In the first phase, the input graph is divided into _k_ partitions, called _atoms_, where _k_ is much larger than the number of cluster machines. As demonstrated in Figure 5.46, atoms can be constructed either sequentially or using parallel loading techniques, including MapReduce. GraphLab does not store the actual vertices and edges in atoms but rather the commands to generate them, in the form of a journal. This allows GraphLab to reconstuct portions of the graph in case of node failures. In addition, GraphLab maintains in each atom information about its neighboring vertices and edges. This information, denoted in GraphLab as _ghost_ vertices, provides a caching capability for efficient adjacency data accessibility as explained in the section .
 ![Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique.](../media/graph_cuts.png)
 
 _Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique._

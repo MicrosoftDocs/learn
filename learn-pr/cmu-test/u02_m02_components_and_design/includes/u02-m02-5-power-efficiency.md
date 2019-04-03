@@ -2,6 +2,7 @@
 ##  Server Utilization
 
 As you recall from the introduction unit, multiple servers are virtualized and consolidated onto fewer physical hosts to increase utilization and decrease energy costs. This improvement is helpful, but the demand for IT-related services in organizations continues to grow, as does the number of Web-based startup companies, which have a higher proportional demand for IT equipment. 
+
 > [!VIDEO https://youtube.com/embed/bkjdGO0jz3E]
 
 _Video 2.4: Data center efficency._
@@ -58,6 +59,7 @@ _Figure 2.21: Row-level and rack-level PDUs._
 
 
 Three-phase power (often denoted with Greek letter phi [3Φ]) is how AC electricity is generated and transmitted, with each phase a sine wave that is 120 degrees apart. It is not common to have three-phase power in homes, but it is common in industrial buildings and a requirement in any modern data center. It is important to keep each phase as evenly loaded as possible. You should not plug all servers into one branch before going on to the next—stagger them instead. The important thing to know is that the total power that can be handled by a three-phase circuit is greater than that of a single phase (1Φ) for each copper wire (same thickness/gauge).
+
 |Phase|1Φ|3Φ|
 |--|--|--|
 |Power Equation|<br><!-- TODO fix<br><m:math display="inline" xmlns:m="m"><m:mrow><m:mi>W</m:mi><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>=</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>V</m:mi><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo lspace="2px" rspace="2px">times</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>I</m:mi></m:mrow></m:math><br>-->|<br><!-- TODO fix<br><m:math display="inline" xmlns:m="m"><m:mrow><m:mn>3</m:mn><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo lspace="2px" rspace="4px">times</m:mo><m:mfrac><m:mrow><m:mi>V</m:mi><m:mi mathsize="small">line</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext><m:mo lspace="3px" rspace="3px">times</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>I</m:mi><m:mi mathsize="small">line</m:mi></m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mfrac></m:mrow></m:math><br>-->|
@@ -68,6 +70,7 @@ Three-phase power (often denoted with Greek letter phi [3Φ]) is how AC electric
 For example, given V = 120 volts and I = 15 amps, then single-phase power = 1800W per three wires; and given Vline = 208 volts and Iline = 15 amps, then three-phase power = 5410W per five wires. (Recall that it is only the current/amps that determines how thick the copper has to be.)
 
 Knowing the maximum power of any branch is important for choosing the number and size of PDU(s) to power your IT equipment. U.S. electric code states that the line current should not exceed 80% of the rating of the breaker (or fuse).
+
 |Label (Amps)|15|20|30|50|70|
 |--|--|--|--|--|--|
 |80% derated limit|12|16|24|40|56|

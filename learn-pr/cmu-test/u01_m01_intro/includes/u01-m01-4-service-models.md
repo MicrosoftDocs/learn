@@ -42,18 +42,19 @@ In a broad sense, cloud services differ based on the needs of different users. T
 SaaS is any application in which the end user has access to a software application over the network and pays based on a variety of business models some of which are free. PaaS is the offering of software development platforms as a service which are utilized to develop SaaS applications. Finally, IaaS, is the leasing of virtualized infrastructure over the network. In this last model, the end user has the flexibility to install and use any software they please on the leased infrastructure. 
 
 The following video (Video 1.2) reviews these services:
+
 > [!VIDEO https://youtube.com/embed/ltJmJEI0gGA]
 
 _Video 1.2: Service Models in Cloud Computing._ ([Alternative version](../media/video_1_service_models.pdf))
 
 ###  The Software-as-a-Service Model
-> [!TIP]
-> **Software as a Service**
->
-> Software as a service (SaaS) is a software delivery model in which software and associated data are hosted on a cloud. SaaS applications typically are accessed by users using a thin client via a Web browser.
 
+> ## Software as a Service
+>
+> _(definition)_ Software as a service (SaaS) is a software delivery model in which software and associated data are hosted on a cloud. SaaS applications typically are accessed by users using a thin client via a Web browser.
 
 SaaS is one of the most common cloud service models in which the cloud provider delivers software as an Internet service (as discussed in Video 1.3). SaaS users simply use their browsers to access the software, thus eliminating the need to install, run, and maintain (update, patch, reconfigure etc.) the application on the user's computer. The Web browser loads the SaaS application service dynamically and transparently.
+
 > [!VIDEO https://youtube.com/embed/bzfdewWofSU]
 
 _Video 1.3: Software as a Service._ ([Alternative version](../media/video_2_Software_as_a_Service.pdf))
@@ -96,13 +97,13 @@ Web mail is one of the early examples of SaaS. Webmail enabled users with a brow
 
 Another popular example of SaaS is online office suites, such as Google Drive and Microsoft Office 365, which allow users to create, edit, and share documents online. Google utilizes the freemium model for individual users. Microsoft has a charge model based on the features required and the number of users per month.
 ###  The Platform-as-a-Service Model
-> [!TIP]
-> **Platform as a Service**
->
-> Platform as a service (PaaS) is a computing platform that allows for the creation of Web applications in a simplified manner without the complexity of purchasing and maintaining any of the underlying software and infrastructure.
 
+> ## Platform as a Service
+>
+> _(definition)_ Platform as a service (PaaS) is a computing platform that allows for the creation of Web applications in a simplified manner without the complexity of purchasing and maintaining any of the underlying software and infrastructure.
 
 PaaS-based offerings allow users to develop, deploy, and scale applications on platforms that are offered by cloud providers (Video 1.4). PaaS is analogous to SaaS, except that, rather than software delivered over the Web, it is a platform for the creation of software that is delivered over the Web.
+
 > [!VIDEO https://youtube.com/embed/mxXm5s0hK8A]
 
 _Video 1.4: Platform-as-a-Service._ ([Alternative version](../media/video_3_Platform_as_a_Service.pdf))
@@ -135,13 +136,13 @@ There are certain scenarios in which PaaS may not be ideal, such as:
 
 Google App Engine is an example of a PaaS. Using Google's APIs, developers can create Web and mobile applications that run on Google's infrastructure.
 ##  The Infrastructure-as-a-Service Model
-> [!TIP]
-> **Infrastructure as a service**
->
-> Infrastructure as a service (IaaS) is a cloud computing model in which cloud providers make computing resources available to clients, usually in the form of instances or virtual machines.
 
+> ## Infrastructure as a service
+>
+> _(definition)_ Infrastructure as a service (IaaS) is a cloud computing model in which cloud providers make computing resources available to clients, usually in the form of instances or virtual machines.
 
 In the IaaS model, providers rent out compute resources in the form of instances or virtual machines, which have some form of configurable CPU, memory, disk, and network bandwidth attached to them (Video 1.5). Once provisioned, IaaS users can remotely connect to these instances and configure their choice of platforms and applications. This model offers the most amount of flexibility to the IaaS users in terms of software development and deployment. Rather than purchasing servers, software, data center space, or network equipment, users rent those resources as a fully outsourced service on demand.
+
 > [!VIDEO https://youtube.com/embed/sjQSV-5RaLU]
 
 _Video 1.5: Infrastructure-as-a-Service._ ([Alternative version](../media/video_4_Infrastructure_as_a_Service.pdf))

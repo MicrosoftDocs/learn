@@ -4,6 +4,7 @@
 Without replication, consistency is not a concern. Replication entails maintaining multiple copies (or replicas) of the same data across multiple machines, whereas consistency provides a system-wide consistent view/state of replicas across multiple clients/processes. As pointed out earlier, data items are replicated for two primary reasons: performance and reliability. Regarding performance, replication is crucial when the system needs to scale in numbers (as is mainly the case with storages in private and public clouds) and in geographical areas (as is usually the case with storages in public clouds). For instance, when an increased number of processes must access data that are managed by a single storage server, performance can be improved by replicating the data across multiple servers (instead of having only one server) and subsequently dividing the work across the servers. This division allows requests to be served concurrently and thereby increases system speed. In contrast, replication across geographical areas (e.g., as applied by Amazon S3) can be ensured by replicating copies of data in the proximity of the requesting processes to minimize data access times. Concerning reliability, replication makes it possible to provide better fault tolerance against corrupted and lost data, a key requirement on the cloud. In particular, if a replica is lost or corrupted, another valid replica (if maintained) can be alternatively accessed. 
 
 Replication produces multiple replicas of data, and consistency ensures that those replicas remain uniform so that different processes can access (i.e., read and write) them. Specifically, a collection of replicas are considered to be consistent when they appear identical to concurrently accessing processes. The ability to handle concurrent operations on replicas while maintaining consistency is fundamental to distributed storage in general and cloud storage in particular. In this unit, consistency is discussed in the context of read and write operations performed on shared replicas in a distributed data store (Figure 4.13). The distributed data store can be a DFS, a parallel file system, or a distributed database. Consistency can be achieved by employing a _consistency model_. We define a consistency model as a contract between processes and the distributed data store, which implies that if processes agree to obey certain rules, the distributed data store promises to enforce those rules. Video 4.8 covers a number of consistency models.
+
 > [!VIDEO https://youtube.com/embed/tNUARdbuUtQ]
 
 _Video 4.8: Consistency Models_
@@ -55,6 +56,7 @@ To solve this problem, the operations can be defined as a transaction, as follow
 1. End transaction.
 
 It now becomes the database’s responsibility to ensure _atomicity_ of this transaction—that the transaction is either successful in its entirety (committed) or not performed at all (rollback). The database should be _consistent_ after the transaction is complete; that is, the database should be in a valid state after the transaction is committed, and any rules defined for records in the database should not be violated (e.g., a savings account may not have a negative balance). Any transactions that are happening concurrently to the accounts must not interfere with each other, thus providing _isolation_. Finally, the transaction must be _durable_, which means that the actions performed in the transaction should persist after the transaction is committed to the database. The properties of atomicity, consistency, isolation, and durability are collectively known as the _ACID_ properties of transactions and are expected to be followed by most RDBMS that are used for transaction processing. Video 4.9 provides an overview of ACID properties in databases:
+
 > [!VIDEO https://youtube.com/embed/jt2eq7BgcvM]
 
 _Video 4.9: ACID Properties_
@@ -73,6 +75,7 @@ In 1999, Brewer proposed a theorem describing the limitations of distributed dat
 - _Partition tolerance:_ A network partition is a condition where the nodes of a distributed system cannot contact each other. Partition tolerance means that the system continues to operate normally despite arbitrary message loss or failure of part of the system.
 
 Video 4.9 provides an overview of the CAP theorem:
+
 > [!VIDEO https://youtube.com/embed/i90_daid8FI]
 
 _Video 4.9: The CAP Theorem_

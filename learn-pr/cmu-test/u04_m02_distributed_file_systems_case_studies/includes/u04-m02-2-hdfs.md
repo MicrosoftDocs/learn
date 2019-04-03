@@ -4,6 +4,7 @@
 Google's MapReduce programming model allows computational jobs to be structured in terms of two functions: map and reduce. Input is fed into MapReduce as key-value pairs, where it is then processed through a map function and fed into a reduce function. The reduce operation then produces a result, which is also in the form of key-value pairs. MapReduce is designed to execute many instances of map and reduce operations in parallel over a large computational cluster. The MapReduce programming model is covered in detail in the next unit of this course.
 
 The MapReduce programming model assumes the availability of a distributed storage system that is available across all the nodes of the cluster, with a single namespace, which is where Google File System (GFS) comes in. GFS is a distributed file system (DFS) that is collocated with the nodes of the MapReduce cluster. GFS is designed to work in tandem with MapReduce and maintains a single namespace for the entire MapReduce cluster.
+
 > [!VIDEO https://youtube.com/embed/w4hbR_jcfSg]
 
 _Video 4.12: Hadoop Distributed File System_
@@ -50,6 +51,7 @@ When HDFS is deployed on a cluster, system administrators can configure it with 
 In the example in Figure 4.26, the distance between Node 1 and itself is zero hops (the case when two processes are communicating on the same node). The distance between Node 1 and Node 2 is two hops, while the distance between Node 3 and Node 4 is four hops. 
 
 Video 4.13 walks through file read and write operations in HDFS.
+
 > [!VIDEO https://youtube.com/embed/YD8_alwBoAM]
 
 _Video 4.13: HDFS Operations_

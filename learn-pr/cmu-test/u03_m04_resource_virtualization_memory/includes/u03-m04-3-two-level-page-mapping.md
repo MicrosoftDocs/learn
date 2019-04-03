@@ -2,6 +2,7 @@
 ##  Two-Level Page Mapping
 
 Contrary to OSs in traditional systems, with system virtualization, the hypervisor allocates a contiguous addressable memory space for each created VM (not process). This memory space, allocated per a VM, is called _real memory_. In return, each guest OS running in a VM allocates a contiguous, addressable memory space for each process in its real memory. This memory space per process is called virtual memory (the same name as in traditional systems). Each guest OS maps the virtual memories of its processes to the real memory of the underlying VM, while the hypervisor maps the real memories of its VMs to the system physical memory. Clearly, in contrast to traditional OSs, this entails two levels of mappings between <!-- SCG: How do you want to differentiate between an OS that uses multi-level page tables and this two-level page mapping. Without some mention of this I think it could be confusing. --> three types of addresses: virtual, real, and physical. In fact, these virtual-to-real and real-to-physical mappings define system memory virtualization. This basic idea of memory virtualization via two-level page mapping is summarized in Video 3.10:
+
 > [!VIDEO https://youtube.com/embed/Gl0Dw7G9V5U]
 
 _Video 3.10: Memory Virtualization._

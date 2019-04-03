@@ -29,6 +29,7 @@ Transactional workloads, also known as _Online Transactional Processing (OLTP)_,
 On the other hand, certain systems aggregate and analyze data in order to gain insights and derive information from the data. Such systems are called _Online Analytic Processing (OLAP) systems_. OLAP systems generally involve a lower volume of transactions but individual queries may be complex and involve aggregate computations that span multiple rows and multiple tables. Typical OLAP queries thus are significantly longer running than OLTP queries.
 
 Video 4.6 provides an overview of OLTP vs. OLAP:
+
 > [!VIDEO https://youtube.com/embed/BNgouADOemg]
 
 _Video 4.6: OLTP vs. OLAP_
@@ -36,6 +37,7 @@ _Video 4.6: OLTP vs. OLAP_
 ##  Scalability
 
 Over time, when a database system's user base and data grows, it may require some form of _scaling_, which would expand the capacity and/or the performance of the database system in order to support more users or data, or both. Database scaling is complex for a variety of reasons which we will cover in detail in Video 4.7:
+
 > [!VIDEO https://youtube.com/embed/opYWHWG-vVg]
 
 _Video 4.7: Database Scaling_

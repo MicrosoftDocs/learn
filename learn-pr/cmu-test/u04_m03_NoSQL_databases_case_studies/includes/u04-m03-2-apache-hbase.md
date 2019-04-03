@@ -2,6 +2,7 @@
 ##  Apache HBase
 
 Apache HBase is an open-source version of Google's BigTable distributed storage system and is supported by the Apache Software Foundation. BigTable is a distributed, scalable, high-performance, versioned database. BigTable's infrastructure is designed to store billions of rows and<!-- billions of --> columns of data in loosely defined tables, such as the webtable described earlier. Video 4.16 contains an overview of HBase. 
+
 > [!VIDEO https://youtube.com/embed/e-ZvIRObAWk]
 
 _Video 4.16: HBase_

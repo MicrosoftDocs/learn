@@ -2,6 +2,7 @@
 ##  Virtualizing an ISA
 
 The key to virtualizing a CPU lies in the execution of both privileged and unprivileged instructions issued by guest virtual processors. The set of any processor instructions is documented and provided in the ISA. The following video (Video 3.5) outlines the issues regarding virtualizing an ISA:
+
 > [!VIDEO https://youtube.com/embed/L55ut9i10O8]
 
 _Video 3.5: Virtualizing an ISA._

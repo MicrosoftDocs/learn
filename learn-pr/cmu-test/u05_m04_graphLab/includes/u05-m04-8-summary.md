@@ -10,6 +10,7 @@ Here we conclude our discussion of distributed analytics engines for the cloud i
 - Implement an effective task/vertex scheduling strategy (push based or pull based)
 
 Table 5.4 compares the three engines on each of these dimensions: MapReduce and Spark employ a data-parallel design, while GraphLab programs are executed in graph-parallel fashion. MapReduce and Spark both suggest synchronous computation models, while GraphLab make both synchronous and asynchronous engines available to the user. MapReduce suits applications relatively loosely connected or embarrassingly parallel (with little or no dependency/communication between parallel tasks) and that involve noniterative computations with large data volumes. Spark optimizes the MapReduce model for applications that need to iteratively apply Map and Reduce functions to data. On the other hand, GraphLab fits more strongly connected applications (with high degrees of dependency between parallel tasks/vertices) and that involve iterative computations with little data per a task/vertex. GraphLab also includes specific optimizations that allow for balanced and efficient distribution of work among nodes processing graphs that have power-law distribution, such as social and web-graphs.
+
 ||MapReduce|Spark|GraphLab|
 |--|--|--|--|
 |Programming Model|Message Passing|Message passing|Message Passing|
