@@ -33,7 +33,7 @@ The following list shows which types of requests are logged when logging is enab
 
 ## Analytics log storage
 
-All analytics logs are stored in blobs, inside a container called $logs. Azure creates this container automatically when creating the storage account, and the container cannot be deleted. However the contents of the container can be deleted. Azure will delete log files automatically after seven days by default.
+All analytics logs are stored in blobs, inside a container called `$logs`. Azure creates this container automatically when creating the storage account, and the container cannot be deleted. However the contents of the container can be deleted. Azure will delete log files automatically after seven days by default.
 
 You can determine the current status of analytics logging for your storage account by using the `Get-AzStorageServiceLoggingProperty` PowerShell cmdlet. For example, to check the logging setting for blob storage on a storage account called *ContosoStorage1* in a resource group called *ContosoRG*, you would use the following two commands:
 
@@ -44,12 +44,12 @@ Get-AzStorageServiceLoggingProperty -ServiceType blob
 
 You can also change the logging settings, including the log retention period and the events that are recorded by using the `Set-AzStorageServiceLoggingProperty` cmdlet.
 
-Logs are stored in the $logs folder of your storage account endpoint, then inside a folder structure denoting the service type, year, month, day, and hour of the events. For example, the logs for files in blob storage between 4pm and 5pm on the 15 February 2019 would use the following path: https://<storageaccountname>.blob.core.windows.net/$logs/blob/2019/02/15/1600/ and the files are numbered starting from 000000.log in each folder.
+Logs are stored in the `$logs` folder of your storage account endpoint, then inside a folder structure denoting the service type, year, month, day, and hour of the events. For example, the logs for files in blob storage between 4pm and 5pm on the 15 February 2019 would use the following path: https://<storageaccountname>.blob.core.windows.net/$logs/blob/2019/02/15/1600/ and the files are numbered starting from 000000.log in each folder.
 
 Log files can be viewed or retrieved for analysis in a number of different ways:
 
 - You can download logs using the AzCopy.exe command-line tool. AzCopy is available in the Cloud Shell, or you can download the latest version from http://aka.ms/AzCopy.
-- You can use the Azure Storage Explorer. You can download Azure Storage Explorer from https://azure.microsoft.com/features/storage-explorer/)
+- You can use the Azure Storage Explorer. You can download Azure Storage Explorer from https://azure.microsoft.com/features/storage-explorer/.
 - You can download logs programmatically.
 - You can view log data with the Log Analytics tool in the Azure portal.
 
