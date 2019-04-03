@@ -10,19 +10,19 @@ First, you will create a virtual machine scale set using the Azure portal.
 
 1. In the Azure Cloud Shell pane, enter the following commands:
 
-  ```powershell
-  Get-AzStorageAccount
-  Set-AzCurrentStorageAccount -Name <StorageAccountName> -ResourceGroupName <rgn>
-  Get-AzStorageServiceLoggingProperty -ServiceType blob
-  ```
+   ```powershell
+   Get-AzStorageAccount
+   Set-AzCurrentStorageAccount -Name <StorageAccountName> -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+   Get-AzStorageServiceLoggingProperty -ServiceType blob
+   ```
 
-  Where `<StorageAccountName>` is the name of the storage account you created in the first exercise; for example: **monitorstorageaccount**.
+   Where `<StorageAccountName>` is the name of the storage account you created in the first exercise; for example: **monitorstorageaccount**.
   
 1. Notice which operations are currently logged and the log retention period. If `LoggingOperations` is set to `None`, then you will need to enable logging. To do so, enter the following command the Azure Cloud Shell pane:
 
-  ```powershell
-  Set-AzureStorageServiceLoggingProperty -ServiceType Blob -LoggingOperations read,write,delete -RetentionDays 5
-  ```
+   ```powershell
+   Set-AzureStorageServiceLoggingProperty -ServiceType Blob -LoggingOperations read,write,delete -RetentionDays 5
+   ```
 
 > [!NOTE]
 > For more information, see [Enabling Storage Logging and Accessing Log Data](https://docs.microsoft.com/rest/api/storageservices/enabling-storage-logging-and-accessing-log-data).
@@ -57,31 +57,31 @@ Download the Azure Storage Explorer tool in order to download the storage analyt
 
 1. When the **Connect to Azure Storage** dialog box appears:
 
-  1. Click **Add an Azure Account**, and then click **Sign in**.
+   1. Click **Add an Azure Account**, and then click **Sign in**.
 
-  1. In the **Sign in** dialog box, enter your username for your Azure subscription, and then click **Next**.
+   1. In the **Sign in** dialog box, enter your username for your Azure subscription, and then click **Next**.
 
-  1. If a page appears asking you to select between **Work or school account** and **Personal account**, select the appropriate option for your account.
+   1. If a page appears asking you to select between **Work or school account** and **Personal account**, select the appropriate option for your account.
 
-  1. Enter your password, and then click **Sign In**.
+   1. Enter your password, and then click **Sign In**.
   
-  1. If you are prompted for a Two-Factor Authentication (2FA) code, enter the code from your authenticator app, and then click **Verify**.
+   1. If you are prompted for a Two-Factor Authentication (2FA) code, enter the code from your authenticator app, and then click **Verify**.
 
-   1. If a dialog box appears with the message **Let Us Know What You Think**, click **Dismiss**.
+    1. If a dialog box appears with the message **Let Us Know What You Think**, click **Dismiss**.
 
 1. In **Microsoft Azure Storage Explorer**:
 
-  1. If you are prompted to choose an Azure subscription, make sure that you choose the subscription that you used when you created your Azure Storage Account, and then click **Apply**.
+   1. If you are prompted to choose an Azure subscription, make sure that you choose the subscription that you used when you created your Azure Storage Account, and then click **Apply**.
 
-  1. In the Explorer view, under the associated Azure subscription, expand **Storage Accounts**, expand the storage account you created in the first exercise, and expand **Blob Containers**.
+   1. In the Explorer view, under the associated Azure subscription, expand **Storage Accounts**, expand the storage account you created in the first exercise, and expand **Blob Containers**.
 
-  1. Click **$logs**.
+   1. Click **$logs**.
 
-  1. In the details pane, double-click the **blob** folder, double-click the folder for the current year, double-click the folder for the current month, double-click the folder for the current day, double-click a folder for the hour.
+   1. In the details pane, double-click the **blob** folder, double-click the folder for the current year, double-click the folder for the current month, double-click the folder for the current day, double-click a folder for the hour.
 
-  1. Select one of the log files, and on the toolbar, click **Open**. A notepad window should open showing the log entries. Note that semicolons delimit each of the fields captured in an entry, and a new line denotes the next entry.
+   1. Select one of the log files, and on the toolbar, click **Open**. A notepad window should open showing the log entries. Note that semicolons delimit each of the fields captured in an entry, and a new line denotes the next entry.
 
-  1. Close the **Notepad** window showing the contents of the log file.
+   1. Close the **Notepad** window showing the contents of the log file.
 
 ## Optional - View log data in Excel
 
