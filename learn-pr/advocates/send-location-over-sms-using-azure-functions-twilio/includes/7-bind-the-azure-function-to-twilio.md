@@ -4,8 +4,6 @@ Azure Functions can be connected to other services, either in Azure or third-par
 
 Bindings for Azure Functions created in Visual Studio are defined using parameters to the function, decorated with attributes.
 
-<!--[!include[](../../../includes/azure-lab-environment-not-available.md)]-->
-
 ## Bind the Azure Functions to Twilio
 
 Sending SMS messages via Twilio requires an output binding that is configured with your account subscription ID (SID) and Auth Token.
