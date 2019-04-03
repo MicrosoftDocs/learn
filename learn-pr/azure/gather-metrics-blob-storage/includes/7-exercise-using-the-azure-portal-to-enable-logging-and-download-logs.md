@@ -12,10 +12,11 @@ First, you will create a virtual machine scale set using the Azure portal.
 
   ```powershell
   Get-AzStorageAccount
-  Set-AzCurrentStorageAccount -Name <StorageAccountName> -ResourceGroupName MonitorResourceGroup
+  Set-AzCurrentStorageAccount -Name <StorageAccountName> -ResourceGroupName <rgn>
   Get-AzStorageServiceLoggingProperty -ServiceType blob
   ```
-  Where <StorageAccountNAme> is the name of the storage account you created in the first exercise; for example: **monitorstorageaccount**.
+
+  Where `<StorageAccountName>` is the name of the storage account you created in the first exercise; for example: **monitorstorageaccount**.
   
 1. Notice which operations are currently logged and the log retention period. If `LoggingOperations` is set to `None`, then you will need to enable logging. To do so, enter the following command the Azure Cloud Shell pane:
 
@@ -32,7 +33,7 @@ Download the Azure Storage Explorer tool in order to download the storage analyt
 
 1. Open a new tab in your browser, and navigate to https://azure.microsoft.com/features/storage-explorer/.
 
-1. Ensure you have the right operating system selected, and then click **Download Storage Explorer free**.
+1. Ensure you have the correct operating system selected, and then click **Download Storage Explorer free**.
 
 1. If a popup dialog appears asking what to do with the file, click **Save**.
 
