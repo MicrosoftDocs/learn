@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-03-ai-strategy-in-retail.4-retail-executive-QA
+uid: learn-wwl.ai-strategy-in-retail.retail-executive-QA
 title: Transform business processes in retail with AI – Executive Q&A
 metadata:
   title: Transform business processes in retail with AI – Executive Q&A
   description: In this lecture, David Porter, Corporate Vice President Microsoft Store, reflects on why should retailers develop a comprehensive AI strategy. He shares how is his organization approaching, identifying and prioritizing AI use cases. Finally he provides specific advice on how other senior decision-makers should think about building their own AI strategy.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

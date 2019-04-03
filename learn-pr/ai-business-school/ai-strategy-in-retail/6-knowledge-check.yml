@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-03-ai-strategy-in-retail.6-knowledge-check
+uid: learn-wwl.ai-strategy-in-retail.knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: A knowledge check for the AI strategy in retail module.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

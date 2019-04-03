@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-03-ai-strategy-in-retail.2-ai-value-in-retail-insead
+uid: learn-wwl.ai-strategy-in-retail.ai-value-in-retail-insead
 title: Identify the business value of AI in retail with INSEAD
 metadata:
   title: Identify the business value of AI in retail with INSEAD
   description: In this lecture, Peter Zemsky, INSEAD's Eli Lily Chaired Professor of Strategy and Innovation, illustrates how retail companies are rethinking their strategy in the highly disrupted and dynamic retail market. With powerful and clear examples, he demonstrates how a solid data & AI strategy can be critical in both physical and electronic marketplaces. 
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
