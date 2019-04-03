@@ -1,10 +1,8 @@
 As a proof of concept exercise, you want to move some simple files into Azure Blob storage to see how the metrics are displayed in the Azure Portal. You will create a new storage group with associated blob storage, then view the different metrics that appear.
 
-## Log on to Azure Portal
+## Create a storage account in the Azure Portal
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
-
-## Create a storage account
 
 1. In the Azure Portal, in the left-hand pane, click **Storage accounts**, then click **+ Add**.
 
