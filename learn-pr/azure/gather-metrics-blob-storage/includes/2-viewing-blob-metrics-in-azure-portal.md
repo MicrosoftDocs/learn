@@ -1,6 +1,6 @@
-In preparation for moving client proof files to Azure Blob storage, you want to identify what metrics are available for the platform. You also want to see how easy it is to display metric information on an ad-hoc basis. For example, you might want to know how much storage is being used in Azure, or how much latency is involved when clients retrieve files for review.
+In preparation for moving your client proof files to Azure Blob storage, you want to identify what metrics are available for the platform. You also want to see how easy it is to display metric information on an ad-hoc basis. For example, you might want to know how much storage is being used in Azure, or how much latency is involved when clients retrieve files for review.
 
-In this unit, you concentrate on using the Azure portal to view available metrics on-demand.
+In this unit, you'll focus on using the Azure portal to view available metrics on-demand.
 
 By the end of this unit, you'll be able to identify, select, and display Azure Blob Storage metrics and display those metrics in the Azure portal.
 
@@ -25,24 +25,28 @@ This module concentrates on Azure Blob storage, which is Microsoft's object stor
 
 Blob storage resources consist of the following:
 
-- **A storage account** - A unique namespace for your data in Azure
-- **A container** - Analogous to a folder in a file system
-- **One or more blobs in that container** - Analogous to files in a file system
+| Resource Types | Description |
+|-----|-----|
+| **A storage account** | A unique namespace for your data in Azure |
+| **A container** | Analogous to a folder in a file system |
+| **One or more blobs in that container** | Analogous to files in a file system |
 
 A storage account can have unlimited numbers of containers and a container can hold unlimited numbers of blobs.
 
 You can access blob storage over http or https from any global Internet connection. Your options for accessing blob data include URLs, Azure Storage REST API, Azure PowerShell, Azure CLI, or one of the many Azure Storage client libraries. These client libraries can be in multiple languages, including .NET, Java, Node.js, Python, PHP, and Ruby.
 
 > [!NOTE]
-> Note: Blob storage supports Azure Data Lake Storage Gen2.
+> Note: Blob storage supports Azure Data Lake Storage Gen2. Fore more information, see [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction).
 
 ### Blob Types
 
 Azure Blob storage supports three different types of blobs:
 
-- **Block Blobs** - These are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually.
-- **Append Blobs** - These consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines. 
-- **Page Blobs** - These can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines. 
+| Blob Types | Description |
+|-----|-----|
+| **Block Blobs** | These are best for storing text and binary data with a maximum size of about 4.7 TB. Block blobs consist of blocks of data that are managed individually. |
+| **Append Blobs** | These consist of blocks, just like block blobs, but are optimized for append operations. Append blobs are ideal for scenarios such as logging data from virtual machines. |
+| **Page Blobs** | These can store random access files up to 8 TB in size, such as virtual hard drive (VHD) files in Azure virtual machines. |
 
 ### Importance of Metrics
 
@@ -58,18 +62,18 @@ Azure Blob Storage provides the following metrics, which can be categorized as c
 
 **Capacity metrics include:**
 
-   - Blob capacity
-   - Blob container count
-   - Blob count
-   - Index capacity
+- Blob capacity
+- Blob container count
+- Blob count
+- Index capacity
 
 **Transaction metrics include:**
 
-   - Availability
-   - Egress and Ingress
-   - Success end to end (E2E) Latency
-   - Success server latency
-   - Transactions
+- Availability
+- Egress and Ingress
+- Success end to end (E2E) Latency
+- Success server latency
+- Transactions
 
 Capacity metrics are sent to Azure Monitor every hour and are refreshed daily. Transaction metrics are sent to Azure Monitor every minute, and are available both for the account and service. You should be aware that the refresh interval does affect the exercise in the next module, as metrics aren't displayed in real time. You can also specify custom metrics.
 
@@ -82,7 +86,7 @@ There are two main mechanisms for viewing Azure blob storage metrics:
 
 ### Portal
 
-Viewing blob storage metrics in the Azure portal is the simplest way to view Azure blob storage metrics. The portal provides two implementations - classic Metrics and the current implementation.
+Viewing blob storage metrics in the Azure portal is the simplest way to view Azure blob storage metrics. The portal provides two implementations - classic metrics and the current implementation.
 
 ![Monitoring options in a Storage Account](../media/2-monitoring-classic-metrics.PNG)
 
