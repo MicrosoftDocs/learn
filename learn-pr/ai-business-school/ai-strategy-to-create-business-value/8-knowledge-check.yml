@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-ai-strategy-to-create-business-value.8-knowledge-check
+uid: learn-wwl.ai-strategy-to-create-business-value.knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: A knowledge check for the define an AI strategy to create business value module.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

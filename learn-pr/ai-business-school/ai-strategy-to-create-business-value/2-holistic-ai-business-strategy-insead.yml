@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-ai-strategy-to-create-business-value.2-holistic-business-ai-strategy-insead
+uid: learn-wwl.ai-strategy-to-create-business-value.holistic-business-ai-strategy-insead
 title: Define a holistic AI strategy for your business with INSEAD
 metadata:
   title: Define a holistic AI strategy for your business with INSEAD
   description: Enterprises need to think strategically about AI and they need to start today. This video provides an introduction to a framework that will help companies strategically select the right AI use cases and extract business value from AI. Peter Zemsky, INSEAD's Eli Lily Chaired Professor of Strategy and Innovation, introduces how AI is driving business value across industries and companies.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

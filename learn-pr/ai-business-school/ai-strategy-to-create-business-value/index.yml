@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn-wwl.data-ai-strategy-to-create-business-value
+uid: learn-wwl.ai-strategy-to-create-business-value
 metadata:
   title: Define an AI strategy to create business value
   description: The goal of this unit is to provide an introductory view on the need to think strategically about AI and reflect on how AI can create value to your business.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -26,14 +26,14 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.data-ai-strategy-to-create-business-value.1-introduction
-- learn-wwl.data-ai-strategy-to-create-business-value.2-holistic-business-ai-strategy-insead
-- learn-wwl.data-ai-strategy-to-create-business-value.3-transform-applications-case-study-introduction
-- learn-wwl.data-ai-strategy-to-create-business-value.4-transform-applications-executive-QA
-- learn-wwl.data-ai-strategy-to-create-business-value.5-transform-applications-case-study-resolution
-- learn-wwl.data-ai-strategy-to-create-business-value.6-empowering-every-employee-case-study-introduction
-- learn-wwl.data-ai-strategy-to-create-business-value.7-empowering-every-employee-case-study-resolution
-- learn-wwl.data-ai-strategy-to-create-business-value.8-knowledge-check
-- learn-wwl.data-ai-strategy-to-create-business-value.9-summary-and-resources
+- learn-wwl.ai-strategy-to-create-business-value.introduction
+- learn-wwl.ai-strategy-to-create-business-value.holistic-business-ai-strategy-insead
+- learn-wwl.ai-strategy-to-create-business-value.transform-applications-case-study-introduction
+- learn-wwl.ai-strategy-to-create-business-value.transform-applications-executive-QA
+- learn-wwl.ai-strategy-to-create-business-value.transform-applications-case-study-resolution
+- learn-wwl.ai-strategy-to-create-business-value.empowering-every-employee-case-study-introduction
+- learn-wwl.ai-strategy-to-create-business-value.empowering-every-employee-case-study-resolution
+- learn-wwl.ai-strategy-to-create-business-value.knowledge-check
+- learn-wwl.ai-strategy-to-create-business-value.summary-and-resources
 badge: 
-  uid: learn.module-template5.badge #add the uid for your achievement badge.
+  uid: learn-wwl.ai-strategy-to-create-business-value.badge #add the uid for your achievement badge.
