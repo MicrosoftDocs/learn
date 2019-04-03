@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-09-building-an-ai-ready-culture.1-introduction
+uid: learn-wwl.build-an-ai-ready-culture.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction to understanding the importance of building an AI-ready culture.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

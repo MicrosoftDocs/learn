@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-09-building-an-ai-ready-culture.5-apply-ai-maturity-model-assessment
+uid: learn-wwl.build-an-ai-ready-culture.apply-ai-maturity-model-assessment
 title: Discover how to apply the AI Maturity Model Assessment to your business
 metadata:
   title: Discover how to apply the AI Maturity Model Assessment to your business
   description: Now that you have learned about the basics of an AI-centric organization, it is important to understand the current maturity of your organization to determine where to start the transformation. In this video, Norm Judah, Enterprise CTO at Microsoft discusses the different stages of maturity in which your company or department might be and how to leverage a maturity model tool to understand how to advance to the next level.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
