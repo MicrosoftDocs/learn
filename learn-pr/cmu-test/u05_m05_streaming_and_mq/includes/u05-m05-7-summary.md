@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_7_summary.xml -->
 
 Many web-scale enterprises have now begun to use message queues and stream processing frameworks within their applications. This is primarily because these companies have begun to gain significant value from the use of fresh data. Now that we have covered the basic concepts of message queues, stream processing and lambda architectures, it may be interesting to look at a real-world example of how a low-latency data-intensive architecture provides value to a large company, in this case, LinkedIn. Specifically, we will illustrate how incorporating Kafka and Samza allowed LinkedIn to feed many different real-time systems.
+
 ##  Incorporating Kafka and Samza at LinkedIn
 
 As a young technology company, LinkedIn often found itself building and adopting a large number of disruptive technologies, each to solve a specific requirement. Their services ran on a custom backend that use LinkedIn’s own low-latency distributed key-value store (Voldemort), a distributed document-store (Espresso) and an Oracle RDBMS. Front-end web services, analytics, emails and notifications were driven by tasks of different complexity. These included batch jobs using Hadoop, queries on a large data warehouse, a separate infrastructure for searches, all supported by a layer of logging, monitoring and user/metric tracking. 

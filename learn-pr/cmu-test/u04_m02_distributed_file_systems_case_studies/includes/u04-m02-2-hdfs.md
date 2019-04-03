@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_2_HDFS.xml -->
+
 ##  HDFS
 
 Google's MapReduce programming model allows computational jobs to be structured in terms of two functions: map and reduce. Input is fed into MapReduce as key-value pairs, where it is then processed through a map function and fed into a reduce function. The reduce operation then produces a result, which is also in the form of key-value pairs. MapReduce is designed to execute many instances of map and reduce operations in parallel over a large computational cluster. The MapReduce programming model is covered in detail in the next unit of this course.
@@ -13,6 +14,7 @@ _Video 4.12: Hadoop Distributed File System_
 Both Google's MapReduce and GFS implementations remain proprietary. However, an open-source clone of MapReduce, called Apache Hadoop, has emerged and gained <!-- a lot of -->popularity in big-data circles. HDFS is an open-source clone of GFS. HDFS is designed to be a distributed, scalable, fault-tolerant file system that primarily caters to the needs of the MapReduce programming model. Video 4.12 introduces HDFS.
 
 It is important to note that HDFS is not POSIX-compliant and is not a mountable file system on its own. HDFS is typically accessed via HDFS clients or by using application programming interface (API) calls from the Hadoop libraries. However, the development of a File system in User SpacE (FUSE) driver for ([HDFS](http://wiki.apache.org/hadoop/MountableHDFS)) allows it to be mounted as a virtual device in UNIX-like operating systems. 
+
 ##  HDFS Architecture
 
 As described earlier, HDFS is a DFS that is designed to run on a cluster of nodes and is architected with the following goals:
@@ -37,6 +39,7 @@ Files in HDFS are split into **blocks** (also called **chunks**), with a default
 A single map task in MapReduce is configured by default to work on a single HDFS block independently, and hence multiple map tasks can process multiple HDFS blocks in parallel. If the block size is too small, <!-- there will be -->a large number of map tasks <!-- that -->will need to be distributed across the nodes of the cluster, and the overhead of doing so might negatively impact performance. On the other hand, if the block is too large, the number of map tasks that can process the file in parallel is reduced, thereby affecting parallelism. HDFS allows block sizes to be specified on a per-file basis, so users can tune the block size to achieve the level of parallelism they desire. MapReduce's interaction with HDFS is discussed in detail in Unit 5.
 
 In addition, because HDFS is designed to tolerate failures of individual nodes, data blocks are **replicated** across nodes to provide data redundancy. This process is<!-- will be --> elaborated in the following sections. 
+
 ##  Cluster Topology in HDFS
 
 Hadoop clusters are typically deployed in a data center that consists of multiple racks of servers connected using a fat-tree topology (as discussed in <!-- the unit on data centers -->Unit 2). To this end, HDFS has been designed with cluster-topology awareness, which aids in making block-placement decisions to influence performance and fault tolerance. Common Hadoop clusters have about 30 to 40 servers per rack, with a gigabit switch dedicated to the rack and an uplink to a core switch or router, which has bandwidth that is shared among many racks in the data center (Figure 4.26). 
@@ -85,14 +88,17 @@ Hadoop also uses the notion of rack locality during replica placement. Data bloc
 
 _Figure 4.29: Replica placement for a triple-replicated block in HDFS_
 
+
 ##  Synchronization: Semantics
 
 HDFS's semantics have changed a bit. Early versions of HDFS followed strict **immutable semantics**. Once a file was written in the earlier versions of HDFS, it could never again be re-opened for writes. Files could still be deleted. However, current versions of HDFS support appends in a limited manner. This is still quite limited in the sense that existing binary data once written to HDFS cannot be modified in place.
 
 This design choice in HDFS was made because some of the most common MapReduce workloads follow the **write once, read many** data-access pattern. MapReduce is a restricted computational model with predefined stages, and outputs of reducers in MapReduce write independent files to HDFS as output. HDFS focuses on simultaneous, fast read accesses for multiple clients at a time.
+
 ##  Consistency Model
 
 HDFS is a strongly consistent file system. Each data block is replicated to multiple nodes, but a write is declared to be successful only after all the replicas have been written successfully. Hence all clients should see the file as soon as the file is written, and the view of the file across all the clients will be the same. The immutable semantics of HDFS make this comparatively easy to implement because a file can be opened for writing only once during its lifetime.
+
 ##  Fault Tolerance in HDFS
 
 The primary fault-tolerance mechanism in HDFS is **replication**. As pointed out earlier, by default, every block written to HDFS is replicated three times, but this can be changed by the users on a per-file basis, if needed.
@@ -102,6 +108,7 @@ The NameNode keeps track of DataNodes through a **heartbeat** mechanism. Each Da
 The NameNode is a **single point of failure (SPOF)** in HDFS because a failure of the NameNode will bring the entire file system down. Internally, the NameNode maintains two on-disk data structures that store the state of the file system: an **image file** and an **edit log**. The image file is a checkpoint of the file system metadata at some point in time, while the edit log is a log of all of the transactions of the file system metadata since the image file was last created. All incoming changes to the file system metadata are written to the edit log. At periodic intervals, the edit logs and image file are merged to create a new image file snapshot, and the edit log is cleared out. On a NameNode failure, however, the metadata would be unavailable, and a disk failure on the NameNode would be catastrophic because the file metadata would be lost.
 
 To back up the metadata on the NameNode, HDFS allows for the creation of a secondary NameNode, which periodically copies the image files from the NameNode. These copies will help in recovering the file system in the event of data loss on the NameNode, but the final few changes that were in the edit log of the NameNode would be lost. Ongoing work in the latest versions of Hadoop aims at creating a true over-abundant, secondary NameNode that would automatically take over when the NameNode fails. 
+
 ##  HDFS in Practice
 
 Although HDFS was primarily designed to support Hadoop MapReduce jobs by providing a DFS for map and reduce operations, HDFS has found a myriad of uses with big-data tools.

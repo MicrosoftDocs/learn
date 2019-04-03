@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m01_introduction_motivation\x-oli-workbook_page\_u03_m01_4_resource_sharing.xml -->
+
 ##  Effective Resource Sharing
 
 The underlying infrastructure of the cloud (or the data center) might consist of thousands of processors connected to terabytes of memory and petabytes of disk capacity. Often, there is a mismatch between the ideal number of processors a certain application requires and the actual number of physical processors available. It is more frequently the case that an application cannot exploit more than a fraction of the processors available due to two main limitations:
@@ -7,6 +8,7 @@ The underlying infrastructure of the cloud (or the data center) might consist of
 - Amenability of the application to scale well with more processors
 
 These limitations led to the examination of techniques that can help utilize hardware resources more effectively. Among these techniques is resource sharing.
+
 ##  Resource Sharing in Space and in Time
 
 Resource sharing refers to multiplexing or partitioning system resources (e.g., CPUs, memory) among application processes. Resource sharing is not a new idea, and it has been applied traditionally to uniprocessor and multiprocessor systems via the operating system (OS). Typically, there are two ways to implement resource sharing, either in space or in time. Sharing in time (or timesharing) allows processes to take turns in using a resource component, while sharing in space enables each process to have exclusive access to a specific portion of a component. For instance, with a single CPU and multiple processes, the OS can allocate the CPU to each process for a certain time interval under the rule that only one process can run at a time on the CPU, which can be achieved by using a specific CPU scheduling mechanism. The part of the OS that performs scheduling, or more precisely decides which process runs next on the CPU, is called the scheduler. The strategy that the scheduler uses for multiplexing between processes is called the scheduling algorithm. One popular strategy for scheduling processes on a CPU is the round-robin algorithm (see Fig. 3.7). With round-robin, each process is assigned a time interval (or a quantum) during which it is allowed to execute. The OS can maintain a queue of processes, as shown in Figure 3.7 (a). When a process is scheduled on a CPU, and it completes execution for its time quantum, it gets preempted and added to the tail of waiting processes. The process at the head of the queue is then granted to run on the CPU, as depicted in Figure 3.7 (b). This is also called **context switching**.

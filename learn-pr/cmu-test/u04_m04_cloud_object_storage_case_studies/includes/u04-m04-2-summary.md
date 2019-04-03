@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m04_cloud_object_storage_case_studies\x-oli-workbook_page\_u04_m04_2_summary.xml -->
+
 ##  Case Studies: Cloud Object Storage Summary
 
 - Amazon Simple Storage Service (S3) is an online file storage Web service offered by Amazon Web Services.
@@ -9,6 +10,7 @@
 - OpenStack Swift is an open-source object storage system that be deployed in public or private clouds.
 - Swift proves an S3-like REST interface to access objects.
 - Ceph object gateway is a access layer over the RADOS distributed object store. This offers both S3 and SWIFT compatible interfaces into RADOS.
+
 ##  Cloud Storage Quiz
 
 This checkpoint will test your understanding of the material you have learned in this unit.

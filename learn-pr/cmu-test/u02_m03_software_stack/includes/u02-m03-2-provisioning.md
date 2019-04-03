@@ -5,6 +5,7 @@ The most basic role of a Cloud Service Provider is to package and isolate virtua
 In IAAS, this mainly involves launching virtual machines on top of hypervisors (these are special software applications that enable isolation of virtual machines on top of a physical machine- we will read more about them soon), as well as mounting storage volumes from a storage pool and creating a private network overlay for the user’s resources. 
 
 The techniques behind virtualizing compute, storage or networking resources are dealt with in future modules. Here, we focus on understanding some of the high level steps that a CSP must take to create and allocate a publicly accessible virtual machine with a fixed set of resources to an end user. 
+
 ##  Components of a Resource Provisioning System
 
 A resource provisioning system on the cloud generally has the following sub-parts: 
@@ -14,6 +15,7 @@ A resource provisioning system on the cloud generally has the following sub-part
 1. A billing and charge management system to map the metered resources to physical costs and take appropriate actions based on the user’s allowed privileges. 
 1. A resource manager that works with a hypervisor to map physical resources to virtual abstractions. 
 1. Often, the provisioning system will have a web front-end or an API. 
+
 
 ##  Cloud End-to-End Service Provisioning Flow
 

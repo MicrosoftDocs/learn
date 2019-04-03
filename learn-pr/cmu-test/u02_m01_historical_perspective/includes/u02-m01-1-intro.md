@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m01_historical_perspective\x-oli-workbook_page\_u02_m01_1_intro.xml -->
+
 ##  Data Centers
 
 Data centers include a room or building, IT equipment, and facilities to securely house, power, and cool that equipment. Over the years, data centers have evolved from a location of concentrated IT equipment to modular, agile, and highly virtualized compute centers. With growing use of Web-based services, explosion of mobile devices, and ever-increasing rates of data generation (and consumption), the demand for new data centers continues to grow. One of the main contributors to this growth has been the advent of the cloud computing paradigm, in which cost effectiveness is directly linked to economies of scale and the efficiencies gained with new data center design. All layers of cloud software and services run on top of physical resources, largely servers, storage, and networking equipment, and all of these require power. This equipment also generates heat and so requires cooling. A small data center might fit in one specialized room, while a large installation might be a dedicated, warehouse-sized facility (see Video 2.1).
@@ -13,6 +14,7 @@ Data center design requirements depend on its size and use. Cloud-centric data c
 In the last 5 years, specific attention has been paid to the efficiency of data centers, dramatically decreasing their operational costs and carbon footprint. This increase in efficiency has led to a fast evolution of data center design, and these trends are likely to continue.
 
 Effective use of cloud resources and development of large-scale, dynamic applications for the cloud require an understanding of the physical resources that make up the cloud. In this unit, we start with trends in data centers, present components that make up a data center, and discuss data center design considerations and requirements.
+
 ##  Why Study Data Centers?
 
 If you think of the cloud as a massive computer, you can still break it down into its constituent parts—processors, memory, and switch. When you are programming for the cloud, you are writing programs that solve a problem or provide a service but with the ability to scale.

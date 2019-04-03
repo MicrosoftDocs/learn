@@ -8,6 +8,7 @@ _Figure 2.37: Average cost reduction of CSP Services_
 
 
 However, despite these decreasing prices, cloud adoption still must be done with care. To truly gain the cost benefits of the cloud, it is important to understand, budget, plan, monitor and carefully analyze your usage. Also, it is difficult to choose between CSPs for individual use cases, since there is no standard way for CSPs to package resources, nor do they always follow the same pricing models. 
+
 ##  Pricing Models
 
 Cloud providers generally charge for resources based on one of the following 3 types of parameters: 
@@ -23,6 +24,7 @@ Based on these charging parameters, CSPs, such as AWS, use one of the following 
 
 
 Generally reserved instances should be used to meet the base requirements of the system. If an application needs 2 instances 80% of the time, 3 instances 15% of the time and 4 instances 5% of the time, you would generally reserve 2 instances for the lifetime of the application and scale out either using on-demand or spot instances. As mentioned, on-demand instances should only be chosen while scaling out if the application is business critical or if the differential between the on-demand price and the current spot price is offset by the risk of sudden termination. This is often a business-case specific decision. 
+
 ##  How to Optimize Cost Utilization
 
 To use the cloud in a cost-effective manner, enterprises must develop a mature process for choosing the resources to deploy, monitor and visualize usage, as well as a clear mechanism to identify waste and optimize utilization. 
@@ -43,6 +45,7 @@ It is important to build a monitoring and visualization system to monitor the va
 That being said, organizations often underestimate the need to scale down and terminate rarely used resources. When planning to run different components of an application, it is important to categorize the utilization into different bins, based on the approximate duration for which it will be used. For instance, any jobs that are run for a short time on a nightly or weekly basis should not use resources 24/7. Idle resources should also be flagged and terminated (based on certain rules) by the monitoring system. 
 
 An important technique that ties into cost optimization is that of tagging resources. Tagging is the process of assigning labels to resources that allow them to be identified by monitoring and analytics tools. Tagging also enables custom rules to be defined per-tag, including access control lists to resources, billing alerts and specific scaling policies. Commonly used tags specify the owner (user or group) of a particular resource, the environment to which it belongs (e.g. production, backup, staging, testing), the cost center in charge of paying the bill, etc. When analyzing expenditure, this enables the generation of grouped views based on particular applications, as well as on specific development or testing teams. 
+
 ##  Case Study: Netflix's Ice System
 
 As one of the largest AWS customers in the world, it is crucial for Netflix to have clear visibility about their expenditure. To support this requirement, they use an internally designed tool known as Ice. Ice relies on tags and resource metadata to build a dynamic dashboard that allows resources to be grouped by user, team, region, type, pricing model or any custom tag. It also supports the amortization of one time costs such as reserved instances over the lifetime of the resource. All of the data is periodically generated using AWS Billing APIs. 

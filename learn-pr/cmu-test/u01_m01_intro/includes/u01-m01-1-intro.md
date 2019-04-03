@@ -1,9 +1,11 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_1_intro.xml -->
+
 ##  Cloud Computing
 
 Cloud computing offers the use of computing resources as a service over the network. A cloud computer is simply a large distributed computing infrastructure that users have access to over a network. Similar to some other domains, cloud computing came about through the maturity of enabling technologies while attempting to satisfy economic needs. In this course, we will provide an introduction to cloud computing and then cover relevant topics, in varying detail, including hardware and software infrastructure, resource management (virtualization), cloud storage, and programming models.
 
 In the first unit of this course we will start with a simple overview of cloud computing, its definition, motivations, evolutions, building blocks, service models and use cases. We will also discuss economics, risks, benefits and security.
+
 ##  What is Cloud Computing?
 
 > [!div class="alert is-tip"]

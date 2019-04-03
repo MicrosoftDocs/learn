@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_6_Fault-Tolerance.xml -->
+
 ##  Fault Tolerance in GraphLab
 
 To tolerate faults in the event of failures, GraphLab suggests using distributed checkpointing (see the section ) and promotes two distributed checkpointing mechanisms: synchronous and asynchronous. To capture a distributed checkpoint, the synchronous mechanism suspends the entire execution of the update functions across cluster machines. By doing so, the mechanism flushes out all in-transit communication messages (induced internally by the engines) and takes a local checkpoint (snapshot) of all altered data at each machine since the last captured checkpoint. The captured local checkpoints collectively form a distributed checkpoint, which is then stored in files<sup>6</sup> in the engine's underlying storage layer (e.g., HDFS). In case of a machine/engine failure, the distributed checkpoint can be exploited to restart execution.

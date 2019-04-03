@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_5_summary.xml -->
+
 ##  Cloud Storage Summary
 
 - Data can be characterized by its structure, dynamicity, and volume. It usually can be fixed or structured, static or dynamic.
@@ -28,6 +29,7 @@
 - Object stores provide an abstraction of an object (which is a generic container to store any arbitrary type of information) and a set of very basic operations—create, read, update, and delete (CRUD)—to enable online storage. They can be considered to be a service-oriented version of key-value stores.
 - Object stores are typically accessed using an API that is accessed over the network using REST/SOAP-style calls.
 - Amazon S3 is an example of an object store, and CDMI is an upcoming open standard that defines a cloud storage environment.
+
 ##  Cloud Storage Quiz
 
 This checkpoint will test your understanding of the material you have learned in this unit.

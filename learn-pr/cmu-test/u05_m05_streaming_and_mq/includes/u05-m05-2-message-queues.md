@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m05_streaming_and_mq\x-oli-workbook_page\_u05_m05_2_message_queues.xml -->
+
 ##  What is a Message Queue?
 
 A Message Queue is a technique used for inter-process communication (also known as IPC), or between various components of an application, or across applications. Message queues provide a protocol or interface to enable message passing.
@@ -13,6 +14,7 @@ Employing message queues can add complexity to the application design and increa
 
 _Figure 5.50: An interface connects to senders (or producers), which create messages and to receivers (or consumers) which can receive the messages._
 
+
 ##  Characteristics of Message Queues
 
 Message queues and their novelty can be understood and appreciated when contrasted with traditional RPC and request-response mechanisms. The primary features of a message queue are as follows:
@@ -22,6 +24,7 @@ Message queues and their novelty can be understood and appreciated when contrast
 **Asynchronicity:** In contrast to request/response systems, the buffering of messages allows message queues to expose a degree of asynchronicity in applications, allowing source processes to send messages and let them accumulate in a queue while destination processes pick them up to process. This allows for applications to function under certain failure scenarios, such as intermittent connectivity or failure of either the source or destination processes.
 
 **Routing:** Message queues may also provide routing functionality, where multiple processes can read or write messages in the same queue, allowing for broadcast or unicast communication paradigms. 
+
 ##  Advantages of Message Queues
 
 The primary advantage of a message queue is that it provides loose-coupling between various entities in a distributed application. This allows for asynchronous non-blocking communication that provides a higher level of tolerance against failures of processes.

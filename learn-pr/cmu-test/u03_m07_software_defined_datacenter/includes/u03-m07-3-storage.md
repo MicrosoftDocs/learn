@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_3_storage.xml -->
+
 ##  Typical Data Center Storage Systems
 
 In previous units, we discussed the various types of on-line storage devices that are in use - primarily **magnetic** and **solid-state drives**. We also looked at how these devices can be deployed in a number of ways in a data center. They are reproduced here for your convenience:

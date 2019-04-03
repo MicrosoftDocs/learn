@@ -6,6 +6,7 @@ MongoDB is a document-oriented database. MongoDB eschews the relational model in
 
 _Video 4.42: MongoDB_
 
+
 ##  MongoDB Data Model
 
 A **document** is the basic unit of data for MongoDB, roughly equivalent to a row in a relational database management system. A document is an ordered set of keys and their associated values. An example of a document is illustrated below:
@@ -31,6 +32,7 @@ Finally, a group of collections make a MongoDB **database**. Just like collectio
 MongoDB supports a rich array of data types, including 32/64 bit integers, 64-bit floats, boolean values, dates, strings, regexes, javascript code, arrays and more. Documents can also be nested, i.e. a document can contain other documents within it, making MongoDB's data model fully nested. 
 
 Internally, documents are stored in MongoDB using a format called BSON (Binary JSON). The size of an individual document in MongoDB is restricted to 4MB. 
+
 ##  Operations in MongoDB
 
 The main operations in MongoDB to manipulated data are as follows: **insert**, **remove** and **updates**. MongoDB allows batch inserts, which lets an application insert multiple documents in a single request. The only restriction in MongoDB is the message size, which is 16MB. MongoDB also allows for a special kind of operation, known as an **upsert**. This operation will update an existing document or will insert a new document if it does not exist. 
@@ -42,6 +44,7 @@ Apart from simple queries, MongoDB provides a set of aggregation tools that can 
 As with most database systems, MongoDB allows for the creation of **indices** on specific keys to be created for a collection. This can be used to reduce the time taken to execute certain types of queries. A salient feature of MongoDB is the ability to create indices on **geospatial data keys**, such as latitude and longitude. MongoDB can handle range queries on geo-spatial data efficiently. 
 
 MongoDB also allows administrators to ask the system to **explain** queries, similar to the capabilities afforded by popular RDBMSes. This allows administrators to analyze and optimize query execution in MongoDB. 
+
 ##  MongoDB Architecture
 
 MongoDB manages collections and documents as files on a local file system. If an index is created on a particular key, then MongoDB uses a B-Tree structure to store the index information. MongoDB essentially works on these files on disk in a memory-mapped fashion, leaving it to the OS and file system to manage the in-memory buffer for the files containing the data.
@@ -71,6 +74,7 @@ _Figure 4.44: Sharding in MongoDB_
 Data is distributed across multiple nodes using a specific key known as the **shard key**. MongoDB divides the shard key values into **chunks** and distributes the chunks evenly across the nodes in the cluster. The shard keys can either be **hash-based** or **range based**. In hash-based sharding the hash-value of a shard key is used to assign a document to a specific chunk. In range-based sharding, each chunk is assigned to a specific range of values of the shard key, and documents can then be assigned to a specific chunk. 
 
 MongoDB allows administrators to direct the balancing policy using **tag aware sharding**. Administrators create and associate tags with ranges of the shard key, and then assign those tags to the shards. Then, the balancer migrates tagged data to the appropriate shards and ensures that the cluster always enforces the distribution of data that the tags describe.
+
 ##  MongoDB Use Cases
 
 MongoDB can be used to meet specific challenges for certain types of applications:

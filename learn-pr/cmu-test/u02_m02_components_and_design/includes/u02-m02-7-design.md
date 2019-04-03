@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_7_Design.xml -->
+
 ##  Mean Time Between Failures (MTBF)
 
 Sometimes, when you read material referencing availability and reliability, you will see the term _nines_ used. Five nines or nine nines refers to the number of nines in a percentage of availability. Two nines is 99%, three nines is 99.9%, four is 99.99%, and so on.

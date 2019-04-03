@@ -1,9 +1,11 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m02_mapReduce\x-oli-workbook_page\_u05_m02_8_YARN.xml -->
+
 ##  Hadoop 2.0 and YARN
 
 Hadoop has undergone a major overhaul to address several inherent technical deficiencies, including the reliability and availability of the JobTracker (JT) and the static resource (map and reduce slots) allocation at TaskTrackers (TTs), to mention a few. The redesigned framework addresses such problems in the JT, Hadoop's master node and, therefore, a single point of failure (SPOF). Another major objective for the new Hadoop is to support, in addition to MapReduce, other distributed analytics engines. This allows for increased utilization of Hadoop clusters and eliminates the need for a large cluster to be deployed for each framework. For Hadoop, the result is a new version named **Yet Another Resource Negotiator** (YARN). We next introduce YARN and point out how it differs from the previous Hadoop MapReduce, which we call MapReduce 1.0.
 
 YARN is the second generation Hadoop (version 2.0 and higher). The main advantage of YARN from the previous generation of Hadoop is that the resource allocation is no longer fixed, and YARN is not bound to any single programming framework. This allows YARN to function as an independent cluster scheduler, which is capable of scheduling different workloads and applications. YARN is a two-level scheduler, the responsibility of the Job Tracker in Hadoop v1 in YARN is separated into resource allocation and task management, which enables YARN clusters to easily scale up.
+
 ##  Architecture and Workflow
 
 The fundamental change pursued in redesigning MapReduce 1.0 was segregating JT functionalities into multiple, independent daemons, illustrated in Figure 5.22. YARN still employs a master-slave topology but adds several enhancements:
@@ -15,6 +17,7 @@ The fundamental change pursued in redesigning MapReduce 1.0 was segregating JT f
 ![Figure 5.22: Elements of the YARN architecture: one RM, one ASM, one S, many AMs, and many NMs](../media/YARN_architecture.png)
 
 _Figure 5.22: Elements of the YARN architecture: one RM, one ASM, one S, many AMs, and many NMs_
+
 
 ##  Components of YARN
 
@@ -43,6 +46,7 @@ When requiring compute resources, the AM presents to the RM Scheduler a series o
 
 _Figure 5.24: Log snapshot of a container assignment in YARN. The important infromation in this entry are: 1. ContainerID, 2. Computer resources in this ContainerID, 3. ID of the node where the ContainerID resides, and 4. Resource report of this node after allocation_
 
+
 ##  Job and Task Scheduling
 
 YARN is a two-level scheduler, the RM schedules jobs and the AM schedules its tasks on the containers it gets allocated by the RM. The Scheduler, which is responsible for job scheduling in the RM employs different scheduling strategies:
@@ -55,6 +59,7 @@ YARN is a two-level scheduler, the RM schedules jobs and the AM schedules its ta
 The strategies of scheduling can be configured in the file `yarn-site.xml`. There are also many properties that can be set in `yarn-site.xml` to tune the operational parameters of the schedulers mentioned above.
 
 After a job is allocated resources (containers), the AM is in charge of scheduling a job’s tasks on these containers. The AM schedules tasks in the same way the JobTracker does in Hadoop version 1.0. Moreover, the AM also takes the responsibility of monitoring the status of tasks, which is done by TaskTracker in Hadoop version 1.0.
+
 ##  Fault Tolerance in YARN
 
 The Resource Manager (RM) is a single point of failure (SPOF) of a YARN cluster. The Resource Manager checkpoints its state to persistent storage periodically. If the RM fails, it can be restarted from one of the checkpoints. All running AMs are then killed and restarted and the applications and tasks that are pending from the checkpoint state can be scheduled and executed. 
@@ -62,6 +67,7 @@ The Resource Manager (RM) is a single point of failure (SPOF) of a YARN cluster.
 Any AM may fail. The RM will notice an AM’s failure to send a heartbeat, and will restart the AM. However, the AM has to resync with all running containers to ensure the job finishes smoothly.
 
 The NM failures can also be detected by the RM. When a NM fails, all containers on this node will be killed and the failure will be reported to all running AMs. The AMs are responsible for acquiring new resources in the form of containers from the RM to run the killed tasks, and no more containers will be assigned on the failed node in the cluster until it recovers and reports back to the RM.
+
 ##  Job Flow for MapReduce on YARN
 
 ![Figure 5.25: Job flow in YARN executing a MapReduce job](../media/YARN_flow.png)
@@ -70,18 +76,21 @@ _Figure 5.25: Job flow in YARN executing a MapReduce job_
 
 
 Figure 5.25 illustrates a typical MapReduce job flow in YARN. The steps in this flow are the following:
+
 ###  Job submission
 
 1. The MapReduce client uses the same API as Hadoop version 1.0 to submit a job to YARN. When `mapreduce.framework.name` is set to `yarn` in the job configuration, the `ClientProtocol` of YARN is activated. A job is referred to as an application in YARN.
 1. Unlike in Hadoop version 1.0 where the JobTacker manages all jobs in the cluster, in YARN, the new job ID is retrieved from the RM. However, sometimes a `jobID` in YARN is also called `applicationID`.
 1. Necessary job resources, such as the job JAR, configuration files, and split information are copied to a shared file system in preparation to run the job.
 1. The job client calls `submitApplication()` on the RM to submit the job.
+
 ###  Job initialization
 
 1. The RM will pass the job request to its Scheduler after it receives the call of **submitApplication()**. The Scheduler allocates resources to run a container where the Application Master (AM) will reside. Then the RM sends the resource lease to some Node Manager (NM).
 1. The NM receives a message form RM and launches a container for the AM.
 1. The AM takes the responsibility of initializing the job. Several bookkeeping objects are created to monitor the job. Afterwards, while the job is running, the AM will keep receive updates with the progress of its tasks.
 1. The AM interacts with the shared file system (e.g. HDFS) to get its input splits and other information which were copied to the shared file system in Step 3.
+
 ###  Task assignment
 
 1. 
@@ -100,6 +109,7 @@ In the above example, `priority` defines the priority of the container which can
 1. & 11. After the RM responds with container leases, the AM communicates with the NMs, and the NMs start the containers.
 
 1. The AM assigns a task to this container based on its knowledge of locality. The task will be executed by a Java application whose main class is `YarnChild`.
+
 ###  Status reports
 
 ![Figure 5.26: Heartbeating and Status reports in YARN](../media/YARN_status.png)
@@ -108,9 +118,11 @@ _Figure 5.26: Heartbeating and Status reports in YARN_
 
 
 While the job is running, the tasks keep reporting their progress and status to the corresponding AM, which ensures that the AM has an aggregate view of the job (Figure 5.26). The Node Managers report liveness and resource utilization to the RM, which has a global view of the cluster.
+
 ###  Job completion
 
 Every five seconds the job client checks the job status to see if the job has finished. The function called is `waitForCompletion()`. Once the job completes, the clean-up method is called. All containers and the working state of the AM will be cleaned up. The job history server keeps track of the information related to this job. 
+
 ##  An example: WordCount
 
 Here we present an example of running WordCount on a YARN cluster consisting of 1 master node and 4 slave nodes. We employ the m1.large instance (2 vCPU, 6.5ECU, 7.5GB Memory) offered by Amazon Web Service (AWS). The input data is partitioned as 39 plain text files on the distributed file system, which are 2.32 GB in total. The number of map tasks is computed to be 39, and we manually configure the number of reduce tasks in the job configuration file to be 7.
@@ -158,6 +170,7 @@ _Figure 5.29: Job assignment log_
 ![Figure 5.30: Job cleanup log](../media/YARN_log5.png)
 
 _Figure 5.30: Job cleanup log_
+
 
 
 ###  A timeline of tasks for an example WordCount job:

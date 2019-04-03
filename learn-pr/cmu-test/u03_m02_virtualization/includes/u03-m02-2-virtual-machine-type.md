@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m02_virtualization\x-oli-workbook_page\_u03_m02_2_virtual_machine_type.xml -->
+
 ##  Virtual Machine Types
 
 There are two main implementations of virtual machines (VMs): process VMs and system VMs. The following video (Video 3.4) covers the taxonomy of Virtual Machine Types:
@@ -9,6 +10,7 @@ _Video 3.4: Virtual Machine Types._
 
 
 We first cover process VMs and then system VMs.
+
 ##  Process Virtual Machines
 
 ![Figure 3.14: Process virtual machine (VM).](../media/process_vm.png)
@@ -24,6 +26,7 @@ _Figure 3.15: The emulation process._
 
 
 Finally, a process VM may not directly correspond to any physical platform; it is employed mainly to offer cross-platform portability. Such kinds of process VMs are called high-level language VMs (HLL VMs). An HLL VM abstracts away details of the underlying hardware resources and the OS and allows programs to run the same way on any platform. Java VM (JVM) and Microsoft Common Language Infrastructure (CLI) are examples of HLL VMs. In summary, a process VM is similar to a regular process running on an OS. However, a process VM allows, via emulation, the execution of an application compiled for an ISA different than that of the host machine.
+
 ##  System Virtual Machines
 
 Contrary to process VMs, a system VM is a VM capable of virtualizing a full set of hardware resources, including processors, memories, and I/O devices, thus providing a complete system environment. A system VM can support an OS along with its associated processes as long as the system environment is alive. Figure 3.16 illustrates system VMs. As defined previously, the hypervisor (or the VM monitor [VMM]) is a piece of software that provides the abstraction for the system VM. It can be placed at the ISA level directly on top of the raw hardware and below system images (e.g., OSs). The hardware resources of the host platform can be shared among multiple guest VMs. The hypervisor manages the allocation of and access to the hardware resources by the guest VMs. In practice, the hypervisor provides an elegant way to logically isolate multiple guest VMs sharing a single physical system. Each guest VM is given the illusion of acquiring all of the underlying hardware resources.

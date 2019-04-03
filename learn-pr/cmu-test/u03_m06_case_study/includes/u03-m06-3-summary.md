@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m06_case_study\x-oli-workbook_page\_u03_m06_3_summary.xml -->
+
 ##  Case Study Summary
 
 - Many virtualization suites are available from multiple cloud vendors. They have differing architectures and features. Most suites support memory over commitment (which enhances server consolidation) as well as live migration (which allows VMs to be seamlessly moved across physical machines).
@@ -9,6 +10,7 @@
 - EC2 instances are flexible to be configured in any way the user requires because the user has full administrator privileges to the OS running in the instance. Amazon's **Elastic Block Store (EBS)** service allows for raw block devices to be provisioned and attached or detached to any instance. Amazon also allows for **elastic IPs** (fixed IP addresses) that can be attached to any instance. All of Amazon's services can be programmatically accessed using APIs, which allows for automated resource control and management.
 - EC2 instances can be launched in one of many **regions** and **availability zones,** allowing users to improve the fault tolerance and redundancy of their applications, if they wish to do so.
 - EC2 instances are secured through Amazon's own configurable firewall, called **security groups.** The OS running in an instance is exclusively under the user's domain and cannot be accessed by Amazon. Furthermore, Amazon employs strict security practices with public-key authentication to provide access to instances as well as API interfaces to various AWS services.
+
 ##  Virtualizing Resources for the Cloud Quiz
 
 This checkpoint will test your understanding of the material you have learned in this unit.

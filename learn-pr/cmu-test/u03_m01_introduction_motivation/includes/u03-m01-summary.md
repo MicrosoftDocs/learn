@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m01_introduction_motivation\x-oli-workbook_page\_u03_m01_summary.xml -->
+
 ##  Introduction and Motivation Summary
 
 - Virtualization is at the core of cloud computing. It allows the construction and provision of virtual hardware images (called virtual machines) from underlying physical machines.

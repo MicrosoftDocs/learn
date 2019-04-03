@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_3_1_filesystems6.xml -->
 
 Databases, as you can imagine, encompass a broad range of applications and requirements. To this end, we will discuss a few specific design patterns that database creators have to make when creating their database systems.
+
 ##  Schema Enforcement
 
 Database systems, in general, require some information regarding the types and structures of the data to be stored in the database. With relational database systems, the schema is formally defined in terms of :
@@ -20,6 +21,7 @@ However, the rigid enforcement of a schema is also a barrier to flexibility. As 
 On the other hand, there are systems that have either flexible schema, or no schema whatsoever. An example of a system with practically no schema is a generic **key-value store**, which basically acts as mapping between keys or a certain type and an associated value. Some key-value stores are very flexible; they allow for any arbitrary binary data to be stored under a particular key. Some key value stores, such as Dynamo, require that the type of the key (i.e. string, integer, etc.) should be made explicit when creating a new table. Some systems allow for nested values to be present in data attributes, typically stored as JSON or XML.
 
 Another variation is systems like BigTable and HBase, which have a semi-flexible schema. These systems require the number of columns to be declared when a table is created, but a column can have any number of nested sub-columns. These systems will be covered in detail in the next module.
+
 ##  Transaction vs. Analytical Processing
 
 A key design choice that needs to be made when optimizing a database system is to optimize for the common case of the type of queries that it will receive. There are two main patterns in database workloads that have emerged. 
@@ -34,6 +36,7 @@ Video 4.6 provides an overview of OLTP vs. OLAP:
 
 _Video 4.6: OLTP vs. OLAP_
 
+
 ##  Scalability
 
 Over time, when a database system's user base and data grows, it may require some form of **scaling**, which would expand the capacity and/or the performance of the database system in order to support more users or data, or both. Database scaling is complex for a variety of reasons which we will cover in detail in Video 4.7:
@@ -42,9 +45,11 @@ Over time, when a database system's user base and data grows, it may require som
 
 _Video 4.7: Database Scaling_
 
+
 ###  Vertical Scaling
 
 Vertical scaling (or scaling up) is the process of increasing a database’s capacity or ability to handle load without adding more hosts. This can be done by hardware upgrades such as a faster CPU, increased RAM, or disks with more capacity and/or more I/O operations per second (IOPS). The scalability with vertical scaling is limited by the amount of CPU, RAM, and disk that can be configured on a single machine.
+
 ###  Horizontal Scaling
 
 Horizontal scaling (or scaling out) <!-- with regards to databases -->means the scaling of databases by adding more nodes to handle database queries. Different RDBMS products offer different ways of scaling out, including **replication** and database **sharding**. With replication, the same data is stored across multiple nodes. This enables the RDBMS to handle additional requests in parallel, thereby increasing the number of transactions per second. This approach works when the database is read-heavy. In sharding, a large table is partitioned across multiple nodes (typically on an index or key). <!-- The amount of data shared across nodes is limited in this case, and in-fact, is preferred in order to reduce issues with consistency of replicated data. -->The amount of data shared across nodes is limited in this case, and limited sharing is preferred because it reduce issues with consistency of replicated data.

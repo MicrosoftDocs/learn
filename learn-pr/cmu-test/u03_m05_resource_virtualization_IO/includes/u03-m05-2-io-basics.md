@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m05_resource_virtualization_IO\x-oli-workbook_page\_u03_m05_2_IO_basics.xml -->
+
 ##  Basics of I/O
 
 To begin, each I/O device has a device controller. A device controller can typically be signaled either by a **privileged I/O instruction** or **memory-mapped I/O**. I/O instructions are provided by some ISAs. Intel-32 is an example of a processor that provides I/O instructions in its ISA. Many recent processors, however, allow performing I/O between the CPU and the device controllers through memory-mapped I/O (e.g., RISC processors). As shown in Figure 3.28, with memory-mapped I/O, a specific region of the physical memory address space is reserved for accessing I/O devices. These addresses are recognized by the memory controller as commands to I/O devices and do not correspond to actual physical memory locations. Different memory-mapped addresses are used for different I/O devices. Finally, in order to protect I/O devices, both I/O instructions and memory-mapped addresses are handled in system mode, thus becoming privileged.

@@ -6,6 +6,7 @@ NoSQL databases have been quite successful in very specific domains. The most po
 
 1. **Shared-Nothing Architectures**: A common design pattern in NewSQL systems is the adoption of a shared-nothing architecture. This is a system in which each node is completely independent (sometimes down to the level of individual threads), thus ensuring that there is no single point of contention across the system. This enables systems to have a high performance at scale because there is no need for expensive locking protocols. 
 1. **In-Memory Systems**: Another avenue for improving performance in database systems is to reduce the number of trips made to disk for a given query. An extreme version of this philosophy is to operate an entire database from memory, so that the database never has to go to disk. 
+
 ##  H-Store and VoltDB
 
 H-Store is a good example of a NewSQL system. H-Store is deployed on a cluster of nodes, using a shared-nothing architecture. At the heart of H-Store is a highly optimized single-threaded database engine which quickly processes individual queries. The database is then sharded across the cluster such that every individual core is responsible for a disjoint subset of the data. The data in h-store is stored in the memory of each of the nodes in the system.

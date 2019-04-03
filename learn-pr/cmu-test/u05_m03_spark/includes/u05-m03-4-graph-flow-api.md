@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_4_graph_flow_API.xml -->
+
 ##  Fault Tolerance
 
 On large, distributed clusters running long jobs on commodity hardware, it is very important to have a fault-tolerant framework in case of any errors. Unlike Hadoop which emphasises quick fault-recovery by replicating data stored on HDFS and straggler jobs, Spark relies on the abstract concept of a lineage to recover from errors. A lineage is a directed acyclic graph that defines the operations required to create an RDD. 
@@ -26,6 +27,7 @@ Since RDDs are immutable, these graphs are extremely easy to define. Please note
 
 
 Since none of the RDDs were persisted, only the `owasp_lines_RDD` will be stored in memory at this point. By achieving fault-tolerance using in-memory data structures, Spark focuses on reducing the overhead of fault tolerance due to deplicated writes on HDFS. By storing RDDs in memory and recomputing lost partitions, Spark can avoid the high-cost of Hadoop fault-tolerance technique including replication and the consequent disk IO. On the other hand, Hadoop has much faster fault recovery by simply switching to one of the other replicas. 
+
 ##  Dependencies
 
 One of the interesting challenges faced by the creators of Spark was to have a suitable way to represent dependencies between RDDs. They classified dependencies into two types: 
@@ -42,6 +44,7 @@ Both of the dependencies above are shown in Figure 5.36:
 ![Figure 5.36: Narrow and wide dependencies in Spark](../media/spark_dependencies.png)
 
 _Figure 5.36: Narrow and wide dependencies in Spark_
+
 
 ##  Checkpointing
 

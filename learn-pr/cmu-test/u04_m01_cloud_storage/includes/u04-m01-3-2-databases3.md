@@ -19,6 +19,7 @@ The typical characteristics of NoSQL databases include
 - Consistency traded in favor of availability
 
 The tradeoff with NoSQL databases is between ACID properties (most notably consistency) and performance and scalability.
+
 ##  Types of NoSQL Databases
 
 A limited taxonomy of NoSQL databases is illustrated in Figure 4.20.
@@ -28,9 +29,11 @@ A limited taxonomy of NoSQL databases is illustrated in Figure 4.20.
 _Figure 4.20: A taxonomy of NoSQL databases_
 
 <!-- Figure should be added here -->
+
 ###  Document Stores
 
 In contrast to RDBMSs, where data is stored as records with fixed-length fields, document stores store a document in some standard format or encoding. These DBs because popular because they can store a variety of data and their schema can change with time. The encoding may be in XML or JSON, as well as any arbitrary binary format such as PDFs or Office documents. These are typically called **binary large objects (BLOBs)**. A document is addressed using a key, which can be indexed for fast retrieval. Clearly, document stores can be used to store and index documents or individual media in a manner than can be indexed using metadata. This allows document stores to outperform traditional file systems in searching and indexing capabilities. Examples of document stores include MongoDB and CouchDB. 
+
 ###  Graph Databases
 
 In graph databases, graph structures such as vertices and edges are used to represent and store data. Graph databases can be used to store data that has network-like properties between elements (e.g., a social network graph). Graph databases are a powerful tool for graph-like queries, for example, where you might want to find the shortest path between two elements. Figure 4.21 illustrates an example of a graph database with a vertex representing a person or a club and the edges representing membership or familiarity. Alice and Bob are represented using vertices with an edge that signifies the “knows” relationship connecting them. From this, we can see that Alice and Bob know each other. The relationship is further quantified using the “since” tag, which specifies that Alice has known Bob since 2001/10/03 and Bob has known Alice since 2001/10/04. Likewise, a group entity called “Chess” is defined with relationships indicated by edges to both Alice and Bob, which signifies that they are both members of a chess group. 
@@ -41,12 +44,15 @@ _Figure 4.21: An example of a graph database_
 
 <!-- Figure should be added here -->
 Queries in graph databases typically consist of graph traversals. For example, graphs can be used to compute the degrees of separation between two or more people in a social graph. Graph databases thus are great at representing networked information, with the relationship between entities occupying a key aspect of the representation. Examples of graph database software include Neo4j and VertexDB. 
+
 ###  Key-Value Stores
 
 Key-value (KV) store is a database model that maps keys to (possibly) more complex values. This type of database has the most amount of flexibility because keys can be mapped to arbitrary values or structures such as lists. The key-value pair constitutes an individual record in this model, and the keys are typically stored as a hash table. Hash lookups are fast and can be distributed easily, and for this reason, key-value stores can be scaled horizontally. Key-value stores typically support no more than the regular CRUD (create, read, update and delete) operations and may not natively support more advanced operations such as aggregations (e.g., averaging the values across key-value pairs) and joins (e.g., combining multiple-key value pairs into another key-value pair). Key-value stores are great for storing semi-structured information that is difficult to encapsulate within a rigid schema. The key-value relationship thus enables fast retrieval of data through an indexed key. Examples of key-value stores include Amazon DynamoDB and Apache Cassandra.
+
 ###  Columnar Databases
 
 Columnar databases are a hybrid of RDBMSs and KV stores. Like relational databases, they store values in groups of zero or more columns, and as in key-value stores, values are queried by matching keys. However, in columnar databases, data is physically transposed and stored in column order instead of in row-order as in traditional RDBMSs. Operations such as modification of a subset of columns or aggregation of a column across all rows become more efficient, as entire rows do not have to be read to obtain the value of a single column. Furthermore, addition of columns to an existing table is inexpensive compared to traditional RDBMSs. Columnar databases have been traditionally developed with horizontal scalability as a primary design goal. As such, they are particularly suited to “big data” problems, living in clusters of tens, hundreds, or thousands of nodes. They also tend to have built-in support for features such as compression and versioning. Examples of columnar databases include HBASE and Vertica.
+
 ###  Comparing Popular Databases
 
 The following table illustrates the differences between various popular databases that belong to each category. 

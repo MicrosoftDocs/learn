@@ -1,9 +1,11 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_2_Communication.xml -->
+
 ##  Communication
 
 Even with distributed shared-memory systems, such as DSM, messages are passed internally between machines, albeit in a manner totally transparent to users. Hence, coordination all boils down to passing messages. We can argue, then, that the only way distributed systems can communicate is by passing messages. In fact, Coulouris and associates adopt just this definition for distributed systems. Distributed systems, such as the cloud, rely heavily on the underlying network to deliver messages rapidly enough to destination entities for three main reasons: performance, cost, and quality of service (QoS). Specifically, fast message delivery minimizes execution times, reduces costs (because cloud applications can commit earlier), and raises QoS, especially for audio and video applications. This condition makes the issue of communication a principal theme in developing cloud programs. Indeed, some might argue that communication lies at the heart of the cloud and constitutes one of its major bottlenecks. 
 
 Distributed programs can apply two techniques to address cloud communication bottlenecks.
+
 ###  Colocation
 
 Distributing/partitioning work across machines attempts to place highly communicating entities together. This strategy can mitigate pressure on the cloud network and subsequently improve performance. Realizing this goal, however, is not as easy as it might seem. For instance, the standard edge-cut strategy seeks to partition graph vertices into _p_ equally weighted partitions over _p_ processors so that the total weight of the edges crossing between partitions is minimized (see the section ). 
@@ -15,6 +17,7 @@ The standard edge-cut metric thus overcounts communication volume and consequent
 ![Figure 5.14: Effective mapping of graph partitions to cluster machines. A mapping of P1 to the other rack while P2 and P3 remain on the same rack causes more network traffic and potentially degraded performance.](../media/mapping.png)
 
 _Figure 5.14: Effective mapping of graph partitions to cluster machines. A mapping of P1 to the other rack while P2 and P3 remain on the same rack causes more network traffic and potentially degraded performance._
+
 
 ###  Effective Partition Mapping
 

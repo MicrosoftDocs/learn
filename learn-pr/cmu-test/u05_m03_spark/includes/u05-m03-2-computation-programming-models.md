@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_2_computation_programming_models.xml -->
+
 ##  Motivation
 
 MapReduce and similar data-parallel frameworks fail to express many types of distributed applications efficiently. Spark targets a specific subset of these applications- those that reuse a working set of data across multiple rounds of computation. These applications fall in one of three categories: 
@@ -10,6 +11,7 @@ MapReduce and similar data-parallel frameworks fail to express many types of dis
 Generally speaking, MapReduce lacks a data sharing abstraction for leveraging distributed memory. Such an abstraction would allow many applications to have concurrent data access to memory across the cluster. It also suffers from many performance problems due to its inefficient use of resources (e.g. poor memory utilization by spilling to disk after each job). 
 
 One of the frameworks attempting to address these issues is Spark. Spark relies on a special abstraction called **resilient distributed datasets** (RDDs)  to support iterative, interactive and streaming applications. Before discussing RDDs, we first present a high-level overview of the Spark framework. 
+
 ##  An Overview of Spark
 
 The goal of any distributed programming framework is to support the execution of a parallel computation across multiple nodes in a performant manner. Consider an iterative application that runs a machine learning algorithm on a large graph. Spark would store this graph as a **Resilient Distributed Dataset (RDD)** (Figure 5.32). The Spark Client would store the details of the program to be executed and map it to Spark-specific operations for a cluster, which comprises of many workers. There is a cluster manager that converts these operations into tasks and executes them on the worker nodes. Any cluster requires applications to be scheduled well to maximise the utilization and improve performance. Spark allows different policies to be used to schedule tasks on the cluster depending upon factors such as the priority, duration, and resources required by each task. 

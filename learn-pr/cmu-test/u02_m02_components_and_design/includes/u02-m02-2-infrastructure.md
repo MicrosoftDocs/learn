@@ -1,7 +1,9 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_2_Infrastructure.xml -->
+
 ##  Data Center Facilities
 
 A data center's functional units (servers, storage, networking) all rely on a facility's infrastructure, which includes physical space, power, cooling, and safety. In assembling each of the latter component systems, designers prioritize redundancy issues. Redundant power sources, for example, minimize the risk of service outages should the building lose main power. Redundant cooling avoids physical damage to IT equipment during an unplanned outage and enables planned outages for HVAC equipment maintenance. 
+
 ##  Server Room
 
 A server room can vary in size from a single rack in a closet to several hundred square feet to a warehouse the size of a football field. Some authors use the phrases server room and data center interchangeably. For the purpose of the course, we define a **server room** as the actual room that houses all of the racks full of IT equipment, and a **data center** as the server room plus all of the power and HVAC equipment that may be located outside of that room.
@@ -27,6 +29,7 @@ The floor consists of an array of metal support pedestals, which are mounted to 
 Above the racks are cable trays that run horizontally between racks. There are options to hang these from the ceiling, or some racks have optional trays that mount on top. For electrical safety, these are required to be properly earth grounded, even if they are carrying only network cable. When there are a many wires to run between two racks, hook-and-loop (Velcro) fasteners are most often used to bundle the wires together.
 
 Most data centers implement strict physical security procedures—for good reason. If someone with bad intentions had physical access to a server, they could, for example, gain administrative privileges, steal data, eavesdrop network connections, and install viruses/Trojans. Common practice includes keycard/pin access and/or biometric scanner, full time security guard, cameras, and break-in detectors. In shared data centers with multiple tenants, one technique is to have a perimeter chain-link fence with a padlock around each customer's set of racks. Watch Google's security practices [here](http://youtu.be/cLory3qLoY8).
+
 ##  Power
 
 The following video (Video 2.3) discusses various power distribution methods in data centers:
@@ -50,6 +53,7 @@ _Figure 2.14: Diagrams of the (a)C13 power connector and (b)C19 power connector_
 
 
 Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads.<!-- <link href="http://www.thegreengrid.org/~/media/WhitePapers/White_Paper_16_-_Quantitative_Efficiency_Analysis_30DEC08.pdf?lang=en" >link</link> --> Because DC power supplies are not a commodity, these are only suited for large-scale deployments with custom components.
+
 ##  Cooling
 
 Many of the advances in data center efficiency over the last 10 years have come from new designs and methods for cooling.
@@ -86,9 +90,11 @@ Although it has been mainstream amongst overclocking enthusiasts for years, wate
 One vendor even offers an extreme liquid cooling technique. The (sealed) rack is turned sideways and filled with mineral oil (nonconductive dielectric), and the servers are fully submersed vertically. The fans are removed, and the hard drives have to be sealed (or use SSD). It is best to use servers with front-facing I/O ports.
 
 Many modern buildings' HVAC systems are designed to reclaim heat that is produced in the server room and use it elsewhere, such as hot water or heating (in cold climates), thus reducing overall energy costs.
+
 ##  Safety
 
 In addition to the safety notes mentioned earlier, there are some features of a data center that are safety specific.
+
 ###  Fire Suppression
 
 The preferred system for putting out fires in a server room is to use a **clean agent**. These agents are stored and transported under high pressure so that it is a liquid and takes up less space. When activated, they are a gas that comes out of misting nozzles in the ceiling. The "clean" term means they do not leave residue or require cleanup as do handheld fire extinguishers (dry chemical) or water sprinkler systems.
@@ -102,6 +108,7 @@ Another method of fire suppression is the use of inert gases, such as CO<sub>2</
 Traditional sprinkler systems use a large amount of water to decrease combustibility of everything in the room. They are not as effective for electrical fires, damage electronics, and require extensive cleanup. Sometimes they are required to be in every room by the municipality, so you might still find sprinklers alongside an FM-200 system. With a wet-pipe system, water is already in the sprinkler pipes, and heat from the fire melts the caps and releases the water. A more appropriate dry-pipe system has normally empty pipes, and smoke detectors will electronically trigger a preaction valve to fill the pipes (but the caps still have to melt before water comes out). The main purpose of sprinklers is to protect the building from collapse, not to protect the electronics in the room.
 
 No matter what system is in place, modern facilities have electronic sensors throughout for monitoring and alerting building engineers, security, the fire department, and other pertinent parties in an automated fashion.
+
 ###  OSHA Compliance
 
 Occupational Safety and Health Administration (OSHA) is a governmental entity (under the U.S. Department of Labor) that is tasked with providing regulations to maintain a safe workplace environment. Some of the rules you might find in a data center are not as common elsewhere.

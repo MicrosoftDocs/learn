@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_5_summary.xml -->
+
 ##  Case Studies: Distributed File Systems Summary
 
 - The Hadoop Distributed File System (HDFS) is an open-source clone of Google File System (GFS).

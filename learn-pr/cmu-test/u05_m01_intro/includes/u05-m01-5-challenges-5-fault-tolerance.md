@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_5_challenges_5_Fault_Tolerance.xml -->
+
 ##  Fault Tolerance
 
 One basic feature that distinguishes clouds and other distributed systems from uniprocessor systems is the concept of partial failures. Specifically, if one node or component fails in a distributed system, the whole system may be able to continue functioning. On the other hand, if one component (e.g., the RAM) fails in a uniprocessor system, the whole system will also fail. A crucial objective in designing distributed systems/programs is to construct them in a way that they can tolerate partial failures automatically, without seriously affecting performance. A key technique for masking faults in distributed systems is to use hardware redundancy, such as the RAID technology (see Unit 4). In most cases, however, distributed programs cannot depend solely on the underlying hardware fault-tolerance techniques of distributed systems. Among the popular techniques that the distributed programs can apply is software redundancy. 

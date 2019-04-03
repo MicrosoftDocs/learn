@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_1_business_case.xml -->
+
 ##  Evolution of the IT Business Model
 
 An organization’s IT costs are many-fold, which include expenses for hardware and software as well as expenses for support and management. Typically, these costs fall into two categories:
@@ -19,6 +20,7 @@ The following video (Video 1.7) discusses the evolution of these models with exa
 > [!VIDEO https://youtube.com/embed/yOTcTwWbEpk]
 
 _Video 1.7: Economics of cloud computing, software service models, and costs_ ([alternative version](../media/video_3_IT_business_model.pdf))
+
 
 ##  Reducing Capital Expenditure
 

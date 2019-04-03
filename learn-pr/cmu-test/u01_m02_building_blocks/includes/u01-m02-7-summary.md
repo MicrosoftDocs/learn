@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_7_summary.xml -->
+
 ##  Cloud Building Blocks Summary
 
 - Cloud computing offers many benefits, including a pay-as-you-go economic model, simplified IT management for users, scalability, flexibility, improved utilization, and a decreased carbon footprint.
@@ -10,6 +11,7 @@
 - Auditing evaluates whether the cloud services comply with the SLA through monitoring. As with auditing in other fields, a mutually trusted third party is involved in the process to ensure compliance and fairness.
 - The shared and public nature of cloud computing introduces new risks in terms of information security. The primary threats are abuse of clouds, insecure interfaces and APIs, malicious insiders, shared technology issues and data loss or leakage.
 - The responsibility of securing applications on the cloud is split between the cloud service provider and the client. The provider must make available controls and systems that can be used to secure applications, resources and data on the cloud. The client must make sure that they make full use of the provided controls and systems and follow best security practices when using clouds.
+
 ##  Introduction to Cloud Computing Quiz
 
 This checkpoint will test your understanding of the material you have learned in this unit.

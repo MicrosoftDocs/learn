@@ -7,6 +7,7 @@ We will now look at a special class of storage systems that are designed as a cl
 With the concept of objects, object-based storage systems abstract the existing file system approach at a higher level. Object-based storage systems are typically layered over existing file systems. There is no notion of hierarchies in object-based storage systems, which instead use a flat data environment. 
 
 An **object** can be considered as a generic container that can store any arbitrary type of information. Designing interfaces for such arbitrary data may be difficult, but in storage parlance, a basic set of operations can be easily defined for any arbitrary object. These operations are create, read, update, and delete (CRUD), which are typically made available through some kind of API that can be accessed through HTTP or other network protocols using REST- or SOAP-style calls. 
+
 ##  REST
 
 **Representational state transfer** (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
@@ -35,6 +36,7 @@ The major advantages of REST are that it is
 - A language-independent interface because all instructions are passed over HTTP so that, for example,<!-- In this manner, --> a C# client can talk to a Python server. 
 -  A standards-based communication because it runs on top of HTTP.
 - <!-- Can be used -->Operational in the presence of firewalls as long as HTTP or HTTPS traffic is not filtered. 
+
 ##  Object Storage Systems - Amazon S3
 
 Video 4.11 covers the basics ideas behind Object Storage Systems:
@@ -70,6 +72,7 @@ Server: AmazonS3
 
 
 In the response, Amazon has acknowledged the request, indicated that the request was successful (with a "200 OK" message), and returned some information regarding the request. The `x-amz-id-2` and `x-amz-request-id` fields are unique identifiers that can be used to keep track of responses for troubleshooting and debugging purposes. 
+
 ##  Cloud Object Storage Standards: CDMI
 
 The lack of a common standard for object storage is an issue plaguing cloud object storage. The most popular cloud-based object storage system is Amazon S3, which is proprietary.

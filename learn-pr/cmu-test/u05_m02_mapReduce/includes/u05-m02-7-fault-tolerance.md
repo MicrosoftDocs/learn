@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m02_mapReduce\x-oli-workbook_page\_u05_m02_7_fault-tolerance.xml -->
+
 ##  Fault Tolerance in MapReduce
 
 MapReduce's objective is to divide jobs into tasks that effectively exploit task parallelism and, consequently, complete jobs earlier. Although this approach is quite effective in theory, it exposes its own challenges in practice. For instance, it takes only one slow/faulty task to make the whole job consume significantly more time than expected. In reality, Hadoop MapReduce tasks fail and slow due to hardware degradation, software misconfiguration, heterogeneity, and/or data locality, to mention a few problems. Tolerating faulty and slow tasks in clouds is not easy. In particular, when the volumes of data flowing through an I/O system are as big as those processed by Hadoop, the chance of data pieces getting corrupted increases. Furthermore, when tasks and nodes operate in the thousands and beyond (typical for Hadoop), chances of failure increase. 

@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_3_benefits_risks_challenges.xml -->
+
 ##  Benefits of the Cloud
 
 The popularity of cloud computing is driven by its numerous benefits, including improved economics, simplified IT management, scalability, flexibility, improved utilization, and a reduced carbon footprint. The following video (Video 1.6) discusses these benefits.
@@ -16,6 +17,7 @@ Although presented earlier and in the video above, let us consider the cloud ben
 - **Flexibility:** For certain cloud services, providers offer their users the flexibility to configure any software platform to run on any available operating system as a virtualized image on custom-provisioned, rented infrastructure. Cloud offers a shift from an organization's inflexible IT design decisions (that are tied to specific development platforms and infrastructure) to more flexible, elastic, and modular choices.
 - **Improved utilization:** Resource utilization is significantly improved with cloud computing because physical resources are shared across users ( **multitenancy**). Through virtualization, servers are now consolidated as operating system images that are sharing the same system resources. Hence, utilization is improved, which leads to overall savings in power and cooling and reduces the carbon footprint.
 - **Rapid and Global Deployment:** By employing the services of cloud service providers that also have a global data center presence, startups can compete with established players by rapidly rolling out applications and services across a global audience. This is particularly important of social media startups which may see viral growth trends as services become popular across multiple countries. 
+
 ##  Risks of Cloud Computing
 
 By embracing cloud services, users and organizations can take advantage of the above benefits, however, using these services introduces several risks, such as:
@@ -26,6 +28,7 @@ By embracing cloud services, users and organizations can take advantage of the a
 - **Reliability risks:** Clouds are also plagued with reliability issues. In December 2012, Netflix users experienced a service outage due to Amazon's "connectivity issues and degraded performance" from their servers in Virginia. Amazon EC2's Northern Virginia data center, one of the most popular public clouds, went down for a few days in 2011, affecting websites such as Reddit and Foursquare. Windows Azure also faced a similar problem, and their services went down for 2½ hours in Western Europe. Public clouds hence are a potential reliability risk that can affect organizations. Clients must design for failures and use features such as Amazon's multiple availability zones, in which clients can set up failover and redundant infrastructures to take over in case of failure, which comes at a price, of course. Cloud users attempt to mitigate the cloud reliability risk by signing Service Level Agreements (SLAs) that enable compensation when exposed to such events. Since cloud services can only be accessed over the network, any disruption of connectivity will cause the application to fail, leading to a loss of reputation and/or revenue.
 
 Some of these risks are not specific only to cloud computing, but are typical for any service provider- be they banking or health services. As with any other service, cloud service providers must carefully consider the implications of these risks and design solutions to mitigate them as their credibility and reputation directly impacts their rate of adoption. Cloud adopters who offer their own services must also safeguard their reputation against these risks. 
+
 ##  Challenges in Cloud Computing
 
 Along with the benefits and risks, there are several challenges associated with the adoption of cloud computing:

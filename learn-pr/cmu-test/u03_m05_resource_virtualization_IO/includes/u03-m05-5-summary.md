@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m05_resource_virtualization_IO\x-oli-workbook_page\_u03_m05_5_summary.xml -->
+
 ##  Resource Virtualization: I/O Summary
 
 - To virtualize an I/O device, we ought to follow two main steps: (1) construct a virtual version of the device and (2) virtualize the I/O activity routed to the device.

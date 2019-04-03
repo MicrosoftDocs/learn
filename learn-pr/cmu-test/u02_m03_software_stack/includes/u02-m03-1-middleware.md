@@ -8,6 +8,7 @@ _Figure 2.22: Cloud Middleware Features_
 
 
 Cloud Middleware is a software platform that controls and coordinates different cloud services and makes it possible for users to issue service requests, and cloud providers to manage their infrastructure. Cloud Middleware consists of multiple abstraction layers that hides system complexity and enables communication between various applications, services, and devices that are part of a cloud service. 
+
 ##  Cloud Middleware Features
 
 There are a number of distinct and important features that cloud middleware provides, which come with several benefits. Some of the most important responsibilities of a cloud middleware stack are as follows: 

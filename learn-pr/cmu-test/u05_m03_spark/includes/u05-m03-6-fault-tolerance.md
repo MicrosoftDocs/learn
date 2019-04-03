@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_6_Fault-Tolerance.xml -->
 
 Spark has built-in libraries or modules that include [Spark SQL](https://spark.apache.org/sql/) for SQL and structured data processing, [Spark Streaming](https://spark.apache.org/streaming/), [MLlib](https://spark.apache.org/mllib/) for machine learning and [GraphX ](https://spark.apache.org/graphx/)for graph processing. This basically presents an unified platform to perform ETL, MapReduce, and complex analytics. 
+
 ##  Spark SQL
 
 Apache Spark provides a module for structured data processing - Spark SQL. With Spark SQL, users have the ability to run SQL-style queries against Spark RDDs. There are two main advantages to using Spark SQL: 1) A wide user base of SQL programmers and developers can use Spark to run analytics jobs, and 2) This allows application developers to use Spark RDDs as a database backend, similar to MySQL or Hive. 
@@ -8,6 +9,7 @@ Apache Spark provides a module for structured data processing - Spark SQL. With 
 Spark SQL provides a programming abstraction for its users in the form of `DataFrames` -- which is a distributed collection of data organized into columns. `DataFrames` also allows the integration of SQL commands into applications that use the MLlib library. This is explained a bit more in the MLlib section. The [API](https://spark.apache.org/docs/latest/sql-programming-guide.html) for `DataFrames` is available in Java, Scala and Python. `DataFrames` may be constructed from tables in Hive, external databases, structured data files or RDDs. 
 
 Applications may run SQL queries programmatically (similar to MySQL) via the sql function in `sqlContext`. The result is returned as a `DataFrame`. Similarly, the schema for a table can also be specified programmatically. There are a variety of options for specifying data sources through the `DataFrame` interface and Spark SQL offers support for a variety of data sources (for example, json, parquet). Like other operations on a table, data may also be loaded programmatically. 
+
 ##  Spark Streaming
 
 An extension of the core Spark API, Spark Streaming enables scalable, high-throughput, fault-tolerant stream processing of live data streams. 
@@ -31,6 +33,7 @@ _Figure 5.39 : Sliding Window Computation in Spark Streaming_
 In addition to simple transformations, Spark streaming provides the capability to perform windowed computations, i.e., transformations applied over a sliding window of data (Figure 5.39). In this case, the user can specify both the **window size** (the number of source RDDs to include in the transformation window) and the **sliding interval** (the number of source RDDs to slide across at the end of each transformation). 
 
 Once the source RDDs in a `Dstream` have been computed, Spark streaming provides various output options, including write to binary or text or Hadoop-compatible files, or save the RDDs for future processing. 
+
 ##  MLlib
 
 Spark provides a scalable machine learning library called [MLlib](https://spark.apache.org/mllib/). This fits into the APIs for Apache Spark and is available to use in Java, Scala and Python. Using MLlib with Python requires the [NumPy](http://www.numpy.org/) module. The Hadoop file system (HDFS) and other Hadoop based data sources (such as HBase) may be used with this, hence making it easier for the modules in the libraries of MLlib to be easily plugged into Hadoop workflows. MLlib consists of common machine learning algorithms including those for classification, regression, clustering, dimensionality reduction, transformation and extraction of features and collaborative filtering. There are also libraries for basic statistics. Additionally, there are a few optimization libraries such as stochastic gradient descent and BFGS. 
@@ -44,6 +47,7 @@ Another feature that simplifies handling data that is included in the Spark ML A
 For example, `NaiveBayes` implements a multinomial naive Bayes classifier. The output is a `NaiveBayesModel` which can be used for prediction on test data. `NaiveBayes`, in this case is the `Estimator` and the model learnt, `NaiveBayesModel`, may be used as a `Transformer`. 
 
 The workflow of an entire machine learning process - from taking in data, converting it to the required format, fitting it to a model - is represented in the form of a Pipeline in Spark ML, consisting of a series of `PipelineStages`. One can specify the sequence of operations in Spark ML for their ML job via a Pipeline. 
+
 ##  GraphX
 
 GraphX is used for graphs and graph parallel computation. GraphX is an extension of RDDs and although both have similar basic operations, GraphX extends Spark RDD by adding a new graph abstraction. The idea behind GraphX is to support some of the operations and techniques used by graph-specific frameworks such as Pregel and GraphLab (covered in the next Module). As a result, GraphX allows Spark to efficiently run graph-parallel computation such as PageRank and connected components at performance comparable to these graph-specific frameworks. 

@@ -15,11 +15,13 @@ As with a shared file system, DFSs require metadata management so that clients c
 
 _Figure 4.12: Distributed file system_
 
+
 ##  Origins and Evolution of Distributed File Systems
 
 Examples of DFSs<!-- distributed file systems --> include the Andrew File System (AFS). AFS is a distributed file system that enables cooperating hosts (clients and servers) to efficiently share file system resources across both local area and wide area networks. AFS consists of cells, an administrative grouping of servers that present a single cohesive file system. Cells can be combined to form a single global namespace. Any client that accesses data from AFS will first copy the file locally to the client. Changes to the file will be made locally as long as the file is open. When the file is closed, the AFS client will sync the changes back to the server. An evolution of AFS is CODA, which is a distributed file system that improves on AFS, particularly with respect to sharing semantics and replication.
 
 In 2003, Google revealed the design of its distributed file system, called GFS, which was designed from scratch to provide efficient, reliable access to data using large clusters of commodity hardware. GFS is designed to store very large files as chunks (typically of size 64MB), in a replicated fashion. Although GFS has a singular client view like AFS, the location of file chunks is exposed to the user, given opportunities to fetch files from the closest available replica. GFS is the inspiration behind the Hadoop Distributed File Systems (HDFS), which is covered in detail in the next module.
+
 ##  Design Characteristics in Distributed File Systems
 
 

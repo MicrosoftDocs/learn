@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_3_global_location.xml -->
+
 ##  Geographic Location Requirements
 
 For a large multinational corporation, there is a good chance that it already has a number of servers at each of its branch offices and would likely build traditional data centers in the countries in which it is already established. The reason for having equipment closer to the users is for better application responsiveness, which (hopefully) yields higher productivity.
@@ -14,6 +15,7 @@ In addition to power, if you want to take advantage of evaporative cooling techn
 For a smaller scale data center, another factor to consider is the cost of real estate and taxes. For a large deployment, however, the cost of the IT and facilities equipment are much higher than the cost of land, and monthly energy costs far outweigh any taxes.
 
 There are also basic logistics that are desirable to have available to support the data center and its life cycle. A supply chain is needed to procure the goods and services, not just servers but all equipment and building materials. There also should be adequate ports/rails/highways to deliver standard shipping containers (40' × 8' × 8'6"; or 12.19m × 2.43m x 2.59m) to your site. Small and medium sized data centers will typically buy servers from companies such as IBM, Dell, or HP, whereas big companies have custom servers, but none of these are manufactured on site and so have to be purchased and delivered. Containerized/modular solutions do more of the manufacturing off site so that installation is faster at the data center. Recycling of raw materials should occur at the end of the life span of the hardware or for failed components, such as hard drives, so recycling availability should also be considered.
+
 ##  Weather
 
 Also mentioned in the previous module was economization, or mixing of colder outside air with the hot air expelled from the IT equipment. In Figure 2.16, you will notice different colored bands. In regions of yellow or orange, you could use outside cooling during the colder seasons, and in regions of green and blue, you could likely use outside cooling year round. Regions marked as red could still use outside cooling but for a few months of the year. For example, because of its cold average climate and renewable energy sources, Iceland has a growing data center industry.
@@ -72,6 +74,7 @@ _(h) Wildfire risk map._
 Figure 2.17: Natural disaster threat maps ([Global Datavault](http://www.globaldatavault.com/natural-disaster-threat-maps.htm), 2013).<!-- <link href="http://www.globaldatavault.com/natural-disaster-threat-maps.htm" >link</link> --> (Click on each figure for an enlarged view.)
 
 As a cloud user, or cloud provider, it is beneficial to have two (or more) geographically distinct data centers for your services to mitigate risks of natural disaster, excluding large asteroid impacts, of course.
+
 ##  Connectivity
 
 As broadband adoption among consumers continues to grow, the effectiveness of cloud computing will increase. You can find trending graphs and current broadband adoption at [Akamai](http://www.akamai.com/html/technology/dataviz5.html).

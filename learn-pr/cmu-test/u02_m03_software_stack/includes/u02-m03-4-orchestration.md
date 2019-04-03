@@ -9,6 +9,7 @@ Cloud Orchestration is the process by which all of the provisioning, middleware 
 - DNS and Virtual Network (VLANs) 
 - Software configuration and setup (typically in the form of bootstrapping scripts) 
 
+
 ##  Benefits of Orchestration
 
 Cloud orchestration is a method to fully realize the dynamic potential of cloud infrastructure, by allowing users to specify and configure a complete application encompassing multiple resource types. One of the most important aspects of the cloud is the rapid service delivery which is made possible by cloud orchestration. It also saves cost by eliminating manual intervention and management of IT services. Benefits of cloud orchestration can be summarized as follows: 
@@ -20,9 +21,11 @@ Cloud orchestration is a method to fully realize the dynamic potential of cloud 
 - Real-time monitoring of physical and virtual cloud resources, as well as usage and accounting chargeback capabilities to track and optimize system usage. 
 - Making adoption of best practices easy by prepackaging automation templates and workflows for the most common resource types.
 
+
 ##  Orchestrator Tools
 
 There are variety of tools which provides orchestration, Puppet and Chef are popular examples. 
+
 ###  Puppet
 
 Puppet is a tool that can be used to issue service commands to multiple client machines from a master machine. This allows developers and systems administrators to manage client machines from a single master machine, providing commands to individual clients based on code which describes the configuration actions that are to be performed on each machine: 
@@ -33,6 +36,7 @@ _Figure 2.26: Puppet_
 
 
 Puppet is typically (but not always) used in a client/server formation, with all of the clients talking to one or more central servers. Each client contacts the server periodically (every half hour, by default), downloads the latest configuration, and makes sure it is in sync with that configuration. Once done, the client can send a report back to the server indicating if anything needs to change. Puppet’s functionality is built as a stack of separate layers, each responsible for a fixed aspect of the system, with tight controls on how information passes between layers.
+
 ###  Chef
 
 Chef uses the same concepts as Puppet, but differs in deployment. Chef operates using user-specified recipes, which describe the state of the resources in the system, such as the packages (and versions) to install, start up daemons or services to execute, or an data to be downloaded/created. This ensures an identical operating environment with the same resources and configurations across all systems. Using Chef, it is possible to automate the creation of a complex distributed system, stitching together various components and workflows. 

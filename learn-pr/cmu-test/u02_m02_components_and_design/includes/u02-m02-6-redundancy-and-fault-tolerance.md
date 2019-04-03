@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_6_redundancy_and_fault_tolerance.xml -->
+
 ##  Data Center Redundancy
 
 The following video (Video 2.5) covers some important aspects of data center redundancy:
@@ -6,6 +7,7 @@ The following video (Video 2.5) covers some important aspects of data center red
 > [!VIDEO https://youtube.com/embed/Vh6RfwiRxNY]
 
 _Video 2.5: Data center redundancy._
+
 
 ##  Data Center Tier Classifications
 

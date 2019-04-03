@@ -1,10 +1,12 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_4_program_cloud_2_Models.xml -->
+
 ##  Models for Building Cloud Programs
 
 Programming models embody concepts and offer tools that support developers in building large computational systems. A distributed programming model, in particular, facilitates translating sequential algorithms into distributed programs that can execute over distributed systems. The model's design determines how easily a programmer can specify an algorithm as a distributed program. A model that abstracts architectural/hardware details, automatically parallelizes and distributes computation, and transparently supports fault tolerance is considered easy to use. 
 
 A model's efficiency, however, depends on the effectiveness of its underlying techniques. For a distributed program running on a system of distributed computers, one essential requirement is a communication mechanism that enables coordinating component tasks across multiple, networked resources. Two traditional models, message passing and shared memory, meet this need, although in a relatively basic form. Additional challenges in the distributed programs typical of cloud environments have led to more sophisticated programming models that, when implemented as distributed analytics engines, can automatically parallelize and distribute tasks and can tolerate faults. 
 <!-- Hadoop MapReduce <cite entry="_25" /> <cite entry="_26" /> , Pregel <cite entry="_42" /> and GraphLab <cite entry="_40" /> -->
+
 ###  The Shared-Memory Model
 
 ![Figure 5.4: Tasks running in parallel and sharing an address space](../media/tasks.png)
@@ -19,6 +21,7 @@ Figure 5.5 shows an example that transforms a simple sequential program into a d
 ![Figure 5.5: Sequential and shared-memory versions ](../media/sequential_program.png)
 
 _Figure 5.5: Sequential and shared-memory versions_
+
 
 ###  The Message-Passing Programming Model
 

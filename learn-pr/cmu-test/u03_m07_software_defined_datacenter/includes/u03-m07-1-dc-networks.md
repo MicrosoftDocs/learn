@@ -1,9 +1,11 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m07_software_defined_datacenter\x-oli-workbook_page\_u03_m07_1_dc_networks.xml -->
+
 ##  Data Center Networks
 
 Large data centers are part of the core infrastructure that supports cloud services. To be cost-effective, these data centers must have networks that are agile and easy to configure and update. In previous modules, we have already looked at some of the enabling physical technologies used in these networks, as well as a general multi-tier topology. In this module, we will look at some design considerations for the network within cloud data centers, as well as understand how and why Software-defined Networks (SDNs) have gained prominence in this domain. 
 
 Computer networks are a collection of nodes and links. A node can be any network equipment, such as a switch, router or server. A link is a physical or logical connection between two nodes in the network. Networks also comprise of identification resources (addresses) and labeling tags. Often, a mechanism for the management of the identification for devices (IP address and MAC address), links (flow ID), and networks (VLAN ID, VPN ID) is needed for the management and monitoring of a virtualized infrastructure. High-level organizational structures such as a network topologies can be created by assembling these resources. The topics we discuss below are extremely large and complex, this page merely introduces them to motivate the need for network virtualization within cloud data centers. 
+
 ##   Data Center Networks: Challenges and Design Considerations 
 
 Designers of large data-center networks have to contend with several (sometimes contradictory) requirements . They must: 
@@ -22,6 +24,7 @@ Apart from the topology and addressing scheme, it is important to decide on the 
 Traffic within large data centers may be carefully engineered to reduce congestion and latency. To do this, groups of packets are categorized as “flows” if they are sequentially or logically related. The routing protocols above perform load-balancing by distributing these as a flow between two nodes among multiple parallel paths. The design of a data center must be optimized for the specific flow patterns within it, which is why the ability to analyze traffic is important for a data center designer. Routing protocols must be state-aware, so that idle routes are favored over busy ones, and flows are dispersed over multiple parallel paths. 
 
 Finally, data center networks must be designed for fault-tolerance. Such networks often use gossip protocols, where neighbors talk to each other to disseminate information about failures quickly. It is important to design such mechanisms to not use a large amount of bandwidth. There must also be mechanisms to recover from failure and re-incorporate failed components within the network. 
+
 ##  Cloud Data Center Networks: Need for Virtualization
 
  By now, it should be clear that implementing a large data center network is extremely complex and needs a higher level abstraction to be easy to design and configure. However, the situation is even more complex for cloud data centers, largely due to multi-tenancy requirements. The cloud computing paradigm is only relevant if it can ensure isolation amongst multiple tenants. A cloud service provider (CSP) must ensure traffic isolation, so that one tenant’s traffic is not visible to another. The address space must also be isolated, so that each tenant has access to their own private address space. 
@@ -37,6 +40,7 @@ Another driver for virtualization is the increased complexity in maintaining for
 Virtualization also helps provide individual tenants with control over the addresses they use within their view of the network.Thus, the overlay network must provide tenants access to use any address that they want, without having to check the networks of all of the neighboring tenants. These addresses should also be independent of the addresses used by the CSP’s infrastructure. Virtual networks use this address separation to limit the scope of packets that are sent on it. Packets are allowed to cross network boundaries only through controlled exit points. 
 
 Finally, the presence of multiple tenants and the overcommitting of the shared network bandwidth leads to a traffic and flow management challenge. CSPs must ensure a QoS in line with the guaranteed SLAs and must shape traffic from each tenant according to the peak utilization provisioned. 
+
 ##  Types of Network Virtualization
 
 As we have seen above, network virtualization is simply a sharing mechanism that allows multiple isolated virtual networks to use the same physical network infrastructure. This allows virtual networks to be dynamically allocated and deployed on-demand precisely like VMs in virtualized servers . 

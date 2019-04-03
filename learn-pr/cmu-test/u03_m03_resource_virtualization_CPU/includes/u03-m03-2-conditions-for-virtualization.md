@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m03_resource_virtualization_CPU\x-oli-workbook_page\_u03_m03_2_conditions_for_virtualization.xml -->
+
 ##  Virtualizing an ISA
 
 The key to virtualizing a CPU lies in the execution of both privileged and unprivileged instructions issued by guest virtual processors. The set of any processor instructions is documented and provided in the ISA. The following video (Video 3.5) outlines the issues regarding virtualizing an ISA:

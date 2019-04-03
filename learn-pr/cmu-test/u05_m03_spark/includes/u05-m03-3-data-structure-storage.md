@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m03_spark\x-oli-workbook_page\_u05_m03_3_data_structure_storage.xml -->
+
 ##  Spark Resilient Distributed Datasets
 
 Spark relies on a special abstraction called resilient distributed datasets (RDDs). RDDs are in-memory read-only objects partitioned across the cluster. They let users control persistence and partitioning settings to optimize data placement and manipulate this data using a rich set of operators. An RDD is partitioned across machines either based on a range (partitioning of consecutive records) or the hash of a key in each record. Each partitioning method is optimal for a particular use case (hash partitioning speeds up joins by providing locality to records from different datasets that share keys; range partitions speed up access to a small filtered subset of the data). 
@@ -23,6 +24,7 @@ The RDD abstraction is a type of distributed shared collection system, similar t
 Unlike DSMs, which allow read/writes to individual memory locations, Spark only allows coarse-grained transformations of RDDs. Also, RDDs enable a low overhead recovery mechanism using lineage, unlike the coordinated checkpointing needed by DSM systems. Similar to MapReduce, stragglers can be mitigated using speculative execution of slow tasks. 
 
 Next, let’s discuss the lifecycle of an RDD. 
+
 ##  Creating RDDs
 
 By default, in the Spark programming model, an RDD is represented as a Scala object (though it could also be a Python or Java object). It can be constructed in several ways: 
@@ -47,6 +49,7 @@ Examples of creating new RDDs (these commands can be tried out in the Spark Scal
 ``` java
 &gt;&gt;&gt; greeting_lines_RDD = sc.parallelize(["hello", "world"]) 
 ```
+
 
 
 ##  Operations on RDDs

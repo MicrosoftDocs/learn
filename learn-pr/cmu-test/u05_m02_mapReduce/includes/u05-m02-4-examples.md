@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m02_mapReduce\x-oli-workbook_page\_u05_m02_4_Examples.xml -->
+
 ##  MapReduce Program Examples
 
 As a simple MapReduce example, we can write a job/program that counts the times that each word appears in a file or a set of files. For instance, if we assume two files, **A** and **B**, with contents "This is a cloud computing course" and "This is Unit 5 in the cloud computing course," we would expect an output similar to what is shown in Table 5.1. Such a program is commonly called **WordCount**. The WordCount program is included in the Hadoop distribution and is readily available for running and testing. It represents a large spectrum of text-processing algorithms in big-data applications. As such, many consider it a state-of-the-art benchmark workload for evaluating Hadoop's efficiency. The original MapReduce paper has indeed used WordCount as a benchmark workload. Yahoo! uses it also for evaluating Hadoop on its data centers.

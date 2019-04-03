@@ -5,6 +5,7 @@
 Soon, the expectation of latencies got even lower. Big Data began to be received in real-time, and was often only valuable for a short duration. For example, search engines required the best combination of advertisements to be served within milliseconds for each query; social media websites detected trends and trending topics/hashtags and system monitoring tools detected complex patterns across several large infrastructure components. To be able to provide such low latencies, a new class of stream processing frameworks began to take shape. These had fundamentally different requirements and constraints from the batch/interactive processing systems of the past. 
 
  This led to the advent of stream processing systems. 
+
 ##  Stream Processing 
 
 The stream processing paradigm applies a series of operations on each element of data emitted by an infinitely long input data source. The series of operations are generally pipelined, which adds dependencies between operations. Within the processing application, state information is often read from and written to a small, fast data source. The output of a pipeline of stream operations is also a data stream. This can be used to trigger other applications, or be buffered and stored to stable storage. The basic conceptual architecture of such a system is shown below. 
@@ -12,6 +13,7 @@ The stream processing paradigm applies a series of operations on each element of
 ![Figure 5.54: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/streaming0.png)
 
 _Figure 5.54: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
+
 
 ##  Eight Rules for Stream Processing
 
@@ -37,6 +39,7 @@ _Figure 5.56: StreamSQL should process subsets of the data, and allow relations 
 1. Guarantee high availability: Stream processing systems work in real-time, and often cannot tolerate restart-recoveries. Such systems must allow a hot-switchover to a backup/shadow, which must be regularly synchronized with the primary. The integrity of the data must be guaranteed, in accordance with rule 4.
 1. Support partitioning and auto-scaling: Distributed processing is the standard model of operation for all such large systems. A good stream processing architecture should be non-blocking and exploit modern multi-threaded architectures. Further, it should be able to handle the scaling out/in of the system on its own, by adding or removing machines, either based on increased/decreased data volumes or processing delays/complexities. Additionally, it must automatically and transparently perform load balancing over the available machines. The end-user should not have to deal with any of this complexity.
 1. Make sure it can keep up: All system components should be designed for high-performance, with a minimal number of operations happening out-of-core. The system must be tested and benchmarked based on the target workload, and the throughput and latency goals must be validated.
+
 ##  Evolution of Stream Processing Engines
 
 Aurora (2002) was one of the earliest stream processing systems, also developed by Stonebraker et. al. at MIT and Brown University. Aurora treated the stream processing problem as a directed acyclic graph (DAG).

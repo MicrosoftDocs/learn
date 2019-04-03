@@ -3,6 +3,7 @@
 In this unit, we have covered the basic ideas behind distributed programming and analytics engines, as well as the challenges of large-scale, big data processing. We saw a number of frameworks, including MapReduce, Spark, GraphLab, as well as Stream Processing frameworks. To cap our discussion, we now present some of the ongoing attempts to define an architectural paradigm to help build systems that can handle both real-time and historical data: The Lambda and Kappa Architectures.
 
 For example digital assistants such as Apple’s Siri often use complex machine learning algorithms for speech recognition and for understanding user queries. Incoming user queries can be considered to be a stream which needs to be responded to in low latency. However, over time the historical data of user queries can be used to re-train the machine learning system for better speech recognition and query understanding. The latter can use some sort of batch processing system to update the machine learning models for future queries. 
+
 ##  Lambda Architecture
 
 The Lambda Architecture is a data-processing architecture designed to handle massive quantities of data by taking advantage of both batch and stream processing methods. Lambda attempts to balance latency, throughput, and fault-tolerance by using batch processing to provide comprehensive and accurate views of batch data, while simultaneously using real-time stream processing to provide views of online data.
@@ -21,6 +22,7 @@ The flow of data in the lambda architecture can be represented in the Figure (5.
 1. The serving layer indexes the batch views so that they can be queried in a low-latency, ad-hoc manner. 
 1. The speed layer builds real-time views of the incoming data in a manner that is much faster than the batch+serving layers, but may not be as accurate. 
 1. Any incoming query can be answered by merging results from batch views and real-time views. 
+
 ###  Batch Layer
 
 The batch layer has a number of important functions within the lambda architecture: 
@@ -29,6 +31,7 @@ The batch layer has a number of important functions within the lambda architectu
 1. Second, the batch layer builds the batch views of the data. The batch layer aims at perfect or near-perfect accuracy by being able to process all available data when generating the batch views. This means it can fix any errors by recomputing against the complete data set, then updating the existing batch views. Output from the batch layer is stored in the serving layer. 
 
 Apache Hadoop is the de facto standard batch-processing system used in most high-throughput architectures, and is the typical choice for implementing the batch layer. The processing can be done using MapReduce or any of the higher-level batch processing systems that are built on top of Hadoop.
+
 ###  Serving Layer 
 
 Output from the batch layers (the batch views) are stored in the serving layer and made available for querying by applications. It is tightly tied to the batch layer. The serving layer is typically distributed among many machines for scalability. The serving layer typically comprises of some type of database and is typically NoSQL in nature. The serving layer requirements are as follows: 
@@ -39,6 +42,7 @@ Output from the batch layers (the batch views) are stored in the serving layer a
 - Fault-tolerant - Because a serving layer database is distributed, it must be tolerant of machine failures.
 
 Common examples of datastores used in the serving layer include Apache Hive, HBase and Impala. 
+
 ###  Speed Layer 
 
 The speed layer processes data streams in real time with the lowest possible latency to generate real-time views of the data. Essentially, the speed layer is responsible for filling the "gap" caused by the batch layer's lag in providing views based on the most recent data. 
@@ -51,6 +55,7 @@ _Figure 5.68: A stream processing system must process data in-stream, with a sep
 
 
 Stream-processing technologies typically used in this layer include Apache Samza, Apache Storm, SQLstream and Apache Spark. Output is typically stored on fast NoSQL-style databases for low latency querying. 
+
 ##  Kappa Architecture
 
 ![Figure 5.69: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/lambda3.png)

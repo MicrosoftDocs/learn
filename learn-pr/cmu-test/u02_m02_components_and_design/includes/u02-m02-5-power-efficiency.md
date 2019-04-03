@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_5_power_efficiency.xml -->
+
 ##  Server Utilization
 
 As you recall from the introduction unit, multiple servers are virtualized and consolidated onto fewer physical hosts to increase utilization and decrease energy costs. This improvement is helpful, but the demand for IT-related services in organizations continues to grow, as does the number of Web-based startup companies, which have a higher proportional demand for IT equipment. 
@@ -19,6 +20,7 @@ To estimate the power consumption ( `P`) at a specific utilization ( `n`%) use t
 Through empirical measurements, this approximation is accurate to within ±5% across utilization rates.
 
 If an organization wants to decrease its overall monthly operating expenses, it has to do so both inside the rack and outside the rack, and to minimize the latter, you must first understand power usage effectiveness (PUE).
+
 ##  Power Usage Effectiveness (PUE)
 
 As we have read earlier, a data center draws a significant amount of power, from kilowatts to several megawatts. The cost of power is a significant element of the operating expenses of a data center and hence contributes to the total cost of ownership (TCO). As companies are offering more Web-based services, which are housed at a data center, the cost of power becomes an important element in the cost of offering services on the Web. Furthermore, some projections claim that data center related emissions will triple by 2020. These economic and environmental factors have accelerated the interest in measuring and improving the energy efficiency of data centers.
@@ -50,6 +52,7 @@ _Figure 2.20: PUE data for all large-scale Google data centers._
 Google improves the efficiency of its data centers using five methods.<!-- <link href="http://www.google.com/about/datacenters/efficiency/external/" >link</link> changed to citation ~C Lallier --> First, they accurately measure and record the PUE as often as possible. Second, they design good air containment to limit the mixing of hot and cold air. Third, they increase the cold air temperatures because equipment manufacturers allow their equipment to run within aisles at higher temperatures. Fourth, they utilize free cooling whenever possible. This possibility is determined by the geographical location of their data centers and the number of hours per year that allow the use of cool ambient air, evaporating power, and large thermal reservoirs. Fifth, they minimize power distribution losses by eliminating several power conversion steps. The lowest recorded PUE to date at a Google data center is 1.08, which is around 92% efficiency.
 
 PUE simply measures the efficient use of power. Understanding the energy contributors to PUE is important to improve data center design practices. However, PUE is not sufficient as the only measure because it does not account for the load on the IT equipment. If PUE is low, but the IT equipment is not doing useful work, then the data center is losing money. Some recent practices include utilizing a TCO metric that accounts for the cost of the server, which is the total cost of energy that it will consume while running a specific workload over its lifespan. Using this approach, data centers will utilize application-specific optimizations, which will lead to more effective use of the data center equipment.
+
 ##  PDU Branches (Optional Reading)
 
 In an earlier module, you were introduced to a PDU, or power distribution unit. You also learned about inefficiencies related to multiple conversions. This section shows you the advantages of using three-phase power and some common pitfalls to avoid when choosing the size and number of PDUs. This section is optional reading as it goes into specific details concerning electrical engineering

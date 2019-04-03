@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m02_virtualization\x-oli-workbook_page\_u03_m02_1_what_is_virtualization.xml -->
+
 ##  Virtualization
 
 Formally, virtualization involves the construction of an isomorphism that maps a virtual guest system to a real host system<!-- (Popek and Goldberg, 1974) -->.Video 3.3 and Figure 3.11 illustrates the virtualization process.

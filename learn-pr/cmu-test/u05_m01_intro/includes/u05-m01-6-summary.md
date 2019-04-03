@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_6_summary.xml -->
+
 ##  Introduction to Distributed Programming for the Cloud Summary
 
 - Computer programs can be classified as sequential, parallel, distributed, and concurrent programs.
@@ -26,4 +27,5 @@
 - Robust synchronization techniques are a must in distributed programming to deal with issues such as deadlocks.
 - Fault tolerance poses a serious challenge in programming for clouds. Programs must anticipate for and recover against failures of software and hardware while running in the cloud. 
 - Task and job scheduling techniques take into account the unique nature of cloud resources in order to maximize performance. 
+
 ##  Unit 5 Checkpoint Quiz

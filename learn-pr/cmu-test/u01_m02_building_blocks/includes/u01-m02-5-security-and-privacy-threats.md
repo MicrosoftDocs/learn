@@ -21,6 +21,7 @@ In all three models, however, the enterprise has full ownership over all its dat
 
 _Figure 1.11 - Security concerns are the biggest barrier to large-scale cloud adoption_
 
+
 ##  Threats
 
 The biggest threats at a high-level are those caused due to vendor lock-in (since applications are not very portable between platforms), compliance risks (e.g. meeting most compliance standards is more complex on public clouds), and a loss of governance (most cloud service providers do not provide SLAs related to data security assurances). 

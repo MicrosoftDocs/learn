@@ -1,7 +1,9 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_1_IT_Components.xml -->
+
 ##     
 
 In this section, we define IT equipment as anything that is mounted in a rack (called **rack-mounted equipment**). This equipment typically includes servers, dedicated storage arrays, network switches and routers, power distribution, and remote management devices. We are specifically referring to a four-post rack inside a cabinet enclosure. Additional types of racks are described on the next page of this module ("Facilities").
+
 ##  Servers
 
 A **rack-mounted server** is similar to a tower PC, except turned horizontally and made to fit into a thinner, deeper chassis (Figure 2.7). The heights are measured in multiples of rack units, where 1U = 1.75 inches (4.45 cm). A 1U server can be CPU and RAM dense but leaves little room for I/O expansion cards (usually two). A server that is 2U or 3U can have six to eight I/O card slots. Smaller chassis must also have smaller fans and therefore make considerable noise compared to your average desktop computer (this is acceptable because most server rooms are not occupied by humans). Systems that are 4U, 5U, or larger chassis usually have a specialized function: one example is an 80-core Intel server, which has CPU sockets and RAM on vertically mounted daughter cards; another is a quad-GPU accelerator server; a third is a server chassis with a 24, 36, or 48 internal hard drives.
@@ -32,6 +34,7 @@ An important feature found in most rack-mounted servers is hot-swap capability. 
 The electrical components (e.g., capacitors, voltage regulators) of a server are typically more expensive and longer lasting than those parts used on desktop systems because the servers are designed to run 24/7 for many years on end. A workstation is similar to a server class computer, with similar CPU, high RAM capacity, and added reliability. The difference is that a workstation sits at the user's desk, so it requires quieter fans. To add to the confusion, there are also rack-mount workstations, which are just like a server, but have remote viewing capability, so the end user sits at a thin client.
 
 Newer servers are now being designed to run reliably at higher ambient room temperatures (up to 95°F, or 35°C), which decreases cooling requirements and therefore lowers operational expense.
+
 ###  On the Motherboard/Mainboard
 
 **CPU and memory:** A typical server motherboard has more CPU sockets than a desktop system, and each of those sockets can control more DIMMs (dual inline memory modules). Another primary difference of server-class CPUs versus desktop class (Intel Xeon versus i3/i5/i7; AMD Opteron versus FX/A/Phenom) is more onboard cache, support for registered DIMMs, and support for error-correcting code (ECC) RAM.
@@ -39,6 +42,7 @@ Newer servers are now being designed to run reliably at higher ambient room temp
 Server-class CPUs also have dedicated circuitry that allows them to communicate with each other through dedicated channels in the motherboard. For Intel, this is known as QuickPath Interconnect (QPI), and for AMD, it is known as HyperTransport (HT). These follow a nonuniform memory access (NUMA) model, in which processes running on other CPUs (sockets) can access large amounts of RAM by going through QPI or HT to the RAM attached to another CPU. Combining high-density, [registered DIMMs](http://en.wikipedia.org/wiki/Registered_DIMM) (16GB or 32GB), more DIMM slots per server (9 or 16), and multiple sockets with onboard interconnect, a single server can have 512GB or even 1TB of RAM available to a single process (although you get higher performance when you have multiple processes with multiple threads each, but that is a topic for another course).
 
 **Onboard management:** Although many desktop motherboards now have onboard gigabit Ethernet (GigE) networking, this trend started with servers, and on modern servers, you will find two to four GigE ports. Other onboard devices that a server includes are a serial port for console redirection and an embedded management controller, which allows remote management even if the system is powered off (but still plugged in) or if the OS is not responding (i.e., kernel panic). Many server motherboards have onboard hard drive controllers, but these are also common in the form of an expansion card, which is discussed below.
+
 ###  Expansion cards
 
 **PCI Express:** Often, a server requires additional I/O devices, depending on the applications intended to run on it. PCs and mainframes have always had some notion of expandability, and expansion buses have evolved from ISA to PCI to PCI-X to what is the current standard—PCI Express (PCIe). The biggest difference between PCI and PCIe is that PCIe is based on point-to-point, high-speed serial links, rather than an actual bus, which has multiple devices attached. Each of these high-speed links constitutes a lane, and multiple lanes work in parallel. So a PCIe device that is x8 has eight of these high speed lanes. Each generation of PCIe, from 1.0 to 3.0, effectively doubles the bandwidth of the previous generation.
@@ -76,6 +80,7 @@ A host channel adapter (HCA) refers to a high-speed, low-latency interconnect ad
 Solid-state storage cards are now available, such as those from Fusion-IO. They provide much faster performance than RAID controllers, especially on random I/O. They have a very high cost per gigabyte compared to hard disk drives (HDDs) or even solid-state drives (SSDs) (see the following "Storage" section).
 
 **Accelerators:** Video cards, started in desktop computers, use GPUs for fast 3D rendering. These GPUs can also be used for scientific computation, so they made their way into HPC server markets, and now nVidia Tesla series accelerators can be found in more than 50 of the top 500 supercomputers list. Recently, Intel released an accelerator product, the Xeon Phi, which is based on Many Integrated Cores (MIC) architecture and is similar in performance to Tesla product (>1 teraFLOPs). These cost approximately $3000 but can increase performance 2.5x to 10x (often) to 100x (atypical) for math-intensive applications. Note, however, that these will not fit into your average server case due to the large size of the card and additional PSU requirements.
+
 ##  Storage
 
 When most people hear the word storage, it is likely that they will envision an HDD (Figure 2.8(a)). Inside an HDD, the rotating platters and moving read/write head have been similar for decades. What has evolved are higher areal density, new recording techniques, faster interfaces, and overall lower power. The two most common form factors of HDDs are 3.5 inches and 2.5 inches. Rotational speeds can vary, but common RPM values are 5400, 5900, 7200, 10,000, and 15,000. The higher the RPM, the lower the latency between random seeks.
@@ -107,6 +112,7 @@ Most commercial SAN products span multiple rack units or even multiple racks, an
 Last, there are also many [Distributed Parallel File Systems](http://en.wikipedia.org/wiki/List_of_file_systems#Distributed_file_systems), which are typically used in compute clusters and implement a many-to-many scheme. These provide a much higher combined throughput than any single SAN or NAS and can scale in both performance and capacity.
 
 The choice on which type of storage to use is largely dependent on the application, and most organizations will use a combination of the above. For example, a large storage array uses a parallel distributed file system on its internal back-end network but presents both SAN-style LUNs and provides NAS capability for other clients. A Windows file server will look like a NAS to a client mapping a network drive, but it is likely that the storage device in which files actually reside are in a SAN, which is outside of the Windows server itself. When you learn about resource sharing in the next unit, some of those features (live migration, fault tolerance) require a SAN storage device.
+
 ##  Networking
 
 In addition to servers, a data center houses all of the network equipment that is used to connect those servers to each other and to the outside world.

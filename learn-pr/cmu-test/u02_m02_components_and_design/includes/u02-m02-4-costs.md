@@ -1,9 +1,11 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m02_components_and_design\x-oli-workbook_page\_u02_m02_4_costs.xml -->
+
 ##  Data Center Costs
 
 As you may recall from Unit 1, organizations have to deal with capital expenses and operating expenses for their IT projects. For new companies with an anticipated need for many servers, or for existing companies that have outgrown their existing infrastructure, a decision must be made to build a new data center, expand existing facilities, or migrate some (or all) of their IT services to a cloud provider. With rising energy costs, companies with existing (but outdated) data centers would also consider building a new data center or retrofitting the existing one with new power/cooling. Many scenarios, such a retrofit, might cause unacceptable downtime, so they would instead choose to go to a new location and migrate servers/services from the old location to a new data center. In any of the above scenarios, a detailed cost analysis would be helpful in making the decision (and likely required before any budgetary approvals).
 
 Prices fluctuate often. What was valid in 2011 might not be valid in 2014. The intent of this section is not to give you the tools to do an entire cost analysis on your own but rather to help you understand the types of expenses that go into building a data center.
+
 ##  Capital Expenditures (CapEx)
 
 Capital expenses (which occur only once) for data centers include upfront planning, cost of property and/or construction, facilities equipment (power, HVAC, safety, and security), as well as IT equipment (servers, network switches, initial network connectivity). A more detailed explanation of each follows:
@@ -25,6 +27,7 @@ Estimates for the cost of HVAC and electrical equipment are approximately $7,000
 **IT equipment and connectivity:** Once the data center facility is ready, equipment can be moved in and installed. Typically, this involves purchasing rack-mountable servers and networking and rack power distribution equipment. In larger data center environments, it is becoming increasingly popular to roll out fully containerized servers with integrated power, cooling, and network management. IT equipment costs can vary widely depending on the size and configuration of the hardware.
 
 In addition to IT equipment, the data center needs to have a dedicated network connection in order for it to be accessible to the organization that is using it. Network service providers typically charge an upfront average of $10,000/mile to install and commission fiber to a data center.
+
 ##  Operating Expenditures
 
 Operational expenditures (periodically recurring) for data centers typically include electrical power, staffing, cooling/HVAC, Internet uplink, maintenance, taxes, and/or leasing.

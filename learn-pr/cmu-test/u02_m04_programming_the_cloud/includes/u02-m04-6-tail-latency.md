@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_6_tail_latency.xml -->
 
 We have already discussed several optimization techniques used on the cloud to reduce latency. Some of the measures we studied include scaling resources horizontally or vertically and using a load balancer to route requests to the nearest available resources. This page delves more deeply into why, in a large data center or cloud application, it is important to minimize latency for all requests, and not just optimize for the general case. We will study how even a few high-latency outliers can significantly degrade the observed performance of a large system. This page also covers various techniques to create services that provide predictable low-latency responses even if the individual components do not guarantee this. This is a problem that is especially significant for interactive applications where the desired latency for an interaction is below 100ms. 
+
 ##  What is Tail Latency?
 
 Most cloud applications are large, distributed systems often rely on parallelization to reduce latency. A common technique is to fan-out a request received at a root node (e.g. a front-end web server) to many leaf nodes (back-end compute servers). The performance improvement is driven both by the parallelism of the distributed computation, and also by the fact that extremely expensive data-moving costs are avoided. We simply move the computation to the place where the data is stored. Of course, each leaf node concurrently operates on hundreds or even thousands of parallel requests. 
@@ -42,6 +43,7 @@ _Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latenc
 
 
 Just like we designed our applications to be fault-tolerant to deal with resource reliability problems, it should be clear now why it is important for applications to be “tail-tolerant”. To be able to do this, we must understand the sources of these long performance variabilities and identify mitigations where possible and workarounds where not. 
+
 ##  Variability in the Cloud: Sources and Mitigations 
 
 To resolve the response time variability that leads to this tail latency problem, we must understand the sources of performance variability . 
@@ -53,6 +55,7 @@ To resolve the response time variability that leads to this tail latency problem
 
 
 Experiments conducted on AWS EC2 instances have found that the variability of such systems are much worse on the public cloud, typically due to imperfect performance isolation of virtual resources and the shared processor. This is exacerbated if many latency-sensitive jobs are executed on the same physical node as CPU-intensive jobs. 
+
 ##  Living with Variability: Engineering Solutions
 
 Many of the sources of variability above have no fool-proof solution. Hence, instead of trying to resolve all of the sources that inflate the latency tail, cloud applications must be designed to be tail-tolerant. This, of course, is similar to the way that we design applications to be fault-tolerant since we cannot possibly hope to fix all possible faults. Some of the common techniques to deal with this variability are: 

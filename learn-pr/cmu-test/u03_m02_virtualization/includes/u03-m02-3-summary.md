@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m02_virtualization\x-oli-workbook_page\_u03_m02_3_summary.xml -->
+
 ##  Virtualization Summary
 
 - Virtualization involves the construction of an _isomorphism_ that maps a virtual _guest_ system to a real (or physical) _host_ system.

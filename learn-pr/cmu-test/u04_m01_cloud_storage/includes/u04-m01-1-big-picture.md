@@ -8,6 +8,7 @@ The nature and properties of data typically influence the design and implementat
 
 _Video 4.1: Characterizing Data_
 
+
 ##  Structure of Data
 
 Data can be categorized using its dynamicity and structure. Specifically, data can be broadly segmented into one of the four quadrants in Figure 4.1. One categorization represents the structure of the data, which is considered as either **structured** or **unstructured**.
@@ -22,6 +23,7 @@ _Figure 4.1: Segmenting data into various types_
 **Unstructured data**, on the other hand, may not necessarily have a predefined, rigid organizational model. Unstructured data may be larger and may not fit naturally in tabular form, making the data unsuitable for storage in a relational database. Thus, unstructured data may be relatively difficult to organize in a form that is simple to process, store, retrieve, and manage. Examples of unstructured data are flat binary files containing text, video, or audio information. It is important to note that unstructured data is not necessarily devoid of structure; a document, video, or audio file may have a file encoding structure or metadata with which it is associated. Hence, data with some form of structure may still be characterized as unstructured if their structure is not helpful to the processing task for which the data are needed. To illustrate, a large cache of text documents (which are unstructured) is difficult to index and search when compared to a relational database containing customer information (which is structured). For the purposes of this course, unstructured data can be defined as data that do not fit naturally in a relational database. In addition, some data may be treated as unstructured (not stored in a database) because they will be accessed using unpredictable access patterns; traditional database optimizations are pointless for such data.
 
 There is a type of data that lies between structured and unstructured, referred to as **semi-structured data**. Semi-structured data does not conform with the formal structure of data models associated with relational databases or other forms of data tables, but nonetheless contains tags or other markers to separate semantic elements and enforce hierarchies of records and fields within the data. Data that is described using markup languages, for example web pages, clickstream data, web objects are examples of semi-structured data. XML and JSON are classic examples of representations of semi-structured data as they inline data with tags that describe the data as well.
+
 ##  Dynamicity of Data
 
 Another characterization is the **dynamicity** of the data, which is an indication of how often the data changes. Dynamic data, such as Microsoft Office documents and transactional entries in a financial database, change relatively frequently, whereas fixed data, once created, may not be altered. Examples of fixed data include medical imaging data from MRI and CT scans and broadcast video footage that is archived in a video library.
@@ -33,6 +35,7 @@ The structure and dynamicity of data provide guidance on how a storage system ca
 Certain types of file systems, such as earlier versions of the Hadoop Distributed File System (HDFS), are designed for relatively static data. They allow a file to be written only once, and the file cannot be modified after it is written. Static data, such as drive images and snapshots for backups, can be archived on relatively inexpensive offline storage systems if they do not need to be accessed frequently.
 
 In summary, the nature of data used by an application must be considered before its appropriate storage architecture is chosen.
+
 ##  Granularity and Volume of Data
 
 In addition to the type of data, the volume of data that needs to be stored and processed for a particular application must be considered. The volume of data is characterized along two dimensions, the overall size of data (total volume), versus the size of a useful segment of the data (the granularity of data). As an example, consider the case of a photo sharing website that has millions of users posting tens to hundreds of photos to the website. The total size of the data may be tens or hundreds of terabytes or even petabytes, but the average photo may be a few megabytes. Contrast this to a website like youtube, where the total size of all the videos in youtube is many petabytes, and the size of an video can range from a few hundred megabytes to even gigabytes in size.

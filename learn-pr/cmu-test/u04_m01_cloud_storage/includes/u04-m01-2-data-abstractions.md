@@ -7,6 +7,7 @@ Other applications retrieve data to enable decision making. One example of this 
 Applications can also extract knowledge for analysis. As an example, Google recently discovered that search trends of certain keywords is highly correlated with physician visits for influenza-like visits. This enables Google to publish information about flu trends that is updated daily.
 
 Data can also enable a service. Almost any type of dynamic web service which responds to user requests is an example of this. Specific instances include: mapping and navigation software. By collecting information about road networks and addresses, a system (such as Google Maps) can respond to direction-related queries. 
+
 ##  Application Requirements
 
 Different applications have different requirements of storage systems. Netflix, for example needs to serve high-bandwidth video to millions of users across the countries in which they operate in. Google search, on the other hand, must analyse a query and retrieve accurate results for that query within a very short period of time. In this section, we will look briefly at the various requirements imposed by applications on storage systems:

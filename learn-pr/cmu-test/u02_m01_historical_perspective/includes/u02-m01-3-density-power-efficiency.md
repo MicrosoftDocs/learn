@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m01_historical_perspective\x-oli-workbook_page\_u02_m01_3_density_power_efficiency.xml -->
+
 ##  Growth of Data Centers
 
 Over the past few decades, data centers have grown both in size (in terms of the number of racks and cabinets) and in density. Figure 2.3 is a view of a data center that is owned by Google.
@@ -21,6 +22,7 @@ A large data center now consumes several megawatts of power, which is roughly th
 ![Figure 2.4: Trends in power density.](../media/trends_power_density.png)
 
 _Figure 2.4: Trends in power density._
+
 
 ##  Data Center Efficiency
 

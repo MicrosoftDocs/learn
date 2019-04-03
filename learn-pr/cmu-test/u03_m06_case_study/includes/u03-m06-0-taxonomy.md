@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m06_case_study\x-oli-workbook_page\_u03_m06_0_taxonomy.xml -->
+
 ##  The PV/HVM Spectrum
 
 In the early days of virtualization, hypervisors had to virtualize all of the resources that they provided to a VM, including: page tables (memory), disk, network and other devices, as well as device buses, timers and interrupts. A guest would typically start in 16-bit mode, run a BIOS that loaded the guest kernel and boot into a 32-bit VM. All the privileged instructions executed by the guest kernel had to be emulated, as well as the page tables. Thus, the guest was fooled into thinking that it was running on actual hardware, hence it was fully virtualized.
@@ -21,6 +22,7 @@ _Figure 3.33: The HVM-PV spectrum: S indicates a software virtualized resource, 
 
 
 Now that we have seen how the role of the hypervisor has evolved, let us also look at some different virtualization suites and how they provide a platform for managing virtual infrastructures. These virtualization suites use the hypervisor as one amongst a set of components used to automate processes within private datacenters and clouds.
+
 ##  Virtualization Suites
 
 We briefly survey some of the current and common virtualization software suites and distinguish between virtualization suites and hypervisors. Many vendors often use _hypervisor_ and _virtualization suite_<!-- these terms -->interchangeably. As discussed throughout this chapter, a hypervisor is primarily responsible for running multiple virtual machines (VMs) on a single physical host. A virtualization suite comprises various software components and individual hypervisors that enable the management of many physical hosts and VMs. A management component typically issues commands to the hypervisor to create, destroy, manage, and migrate VMs across multiple physical hosts.

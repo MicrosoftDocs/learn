@@ -1,4 +1,5 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m01_introduction_motivation\x-oli-workbook_page\_u03_m01_1_intro_2.xml -->
+
 ##  Why Virtualization?
 
 Virtualization is predominantly used by programmers to ease software development and testing. It is used by IT data centers to consolidate dedicated servers into more cost effective hardware and by the cloud (e.g., Amazon EC2) to isolate users sharing a single hardware layer and offer elasticity, among other features. Next, we discuss six areas that virtualization enables on the cloud.

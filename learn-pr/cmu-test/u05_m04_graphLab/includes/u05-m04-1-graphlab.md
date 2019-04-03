@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m04_graphLab\x-oli-workbook_page\_u05_m04_1_graphLab.xml -->
 
 Machine-learning and data-mining (MLDM) problems are growing exponentially in scale today. Interest in analytics engines that can execute MLDM algorithms efficiently on distributed systems, such as clouds, is increasing correspondingly. Designing, implementing, and testing distributed MLDM applications can be challenging because they usually require experts who know how to address synchronization, deadlocks, communication, scheduling, distributed-state management, and fault-tolerance concerns effectively. Many recent advances in MLDM algorithmic designs have focused on modeling such algorithms as graphs. 
+
 ##  Expressing Data and Computation using a Graph Abstraction
 
 As a motivating example, lets take a look at a few examples of data modelled as graphs and how computation can be expressed in this model. Mathematically, a graph is modelled as a set: 

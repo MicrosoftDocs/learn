@@ -16,6 +16,7 @@ The typical features of modern RDBMSs include the following:
 - Tables are defined, accessed, and modified through a query language (typically SQL).
 
 Modern RDBMSs provide application developers a complete data management solution that abstracts the notion of data management away from the application developer. Once a schema is designed, applications can store, retrieve, and modify records based on the rules specified in the schema. By specifying constraints on information in a database, applications can handle data in a more robust fashion, which is crucial to avoiding data inconsistencies in application programs. For example, a user database can validate the age of each user to be a non-negative integer between, say, 1 and 130. The database can then refuse to add a user whose age does not meet this constraint and can provide an automatic validation mechanism as the data is being stored. 
+
 ##  Scaling in Traditional Databases
 
 Traditional RDBMSs have been designed to run on a single machine, but as the amount of data or the number of concurrent users increase, the database must be scaled. Recall that databases can be scaled either **vertically** or **horizontally**.
