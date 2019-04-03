@@ -174,6 +174,11 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 
 You are now ready to run your managed API  in Test.
 
+1. Click test from the menu
+
+1. select the get operation
+
+![Add website URL](../media/Testnocache.png)
 
 1. Run with the following parameters.
 
@@ -185,14 +190,30 @@ You are now ready to run your managed API  in Test.
 
 1. Game Chess
 
+1. click the send button
+
+
+![Add website URL](../media/resultintest.png)
+
 1. Note the result and run again with the same parameters, the date time will increment as this response is not being cached
+
+
 
 This time lets add a policy to control the caching of the  GetQuery Operation.
 
-1. Select the GetQuery operation and choose Inbound Processing
+1. Click on design
 
-2. Select cache responses and enter a value of 30 to cache the response for 30 seconds.
+1. Select the Get operation  to put you into operation scope
 
-3. Run in test with the same parameters as before. Note the date time will remain the same until the cache has reached it expiry value.
+1. In Inbound Processing select Add Policy
+
+1. Select cache responses and enter a value of 30 to cache the response for 30 seconds.
+
+1. Run in test with the same parameters as before. Note the date time will remain the same until the cache has reached it expiry value.
+
+Why not try changing your policy to include vary-by-Query-parameter or 
+any of the attributes you learned about in the previous learning module
+
+
 
 

@@ -76,7 +76,7 @@ You can add items to a policy template
 
 1. **vary-by-header** caches responses per value of specified headerch i.e. Accept, Accept-Charset, Accept-Encoding, Accept-Language. Not required
 
-1. **vary-by-query-parameter** caches responses per value of the query parameters  specified. They can be single or multiple seperated by semiscolon. If no parameters are specified  all used.Not required.
+1. **vary-by-query-parameter** caches responses per value of the query parameters  specified. They can be single or multiple seperated by semiscolon. If no parameters are specified  all used. Not required.
 
 ## Attributes in a document
 
