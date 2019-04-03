@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn-wwl.data-ai-strategy-in-healthcare
+uid: learn-wwl.ai-strategy-in-healthcare
 metadata:
   title: Define an AI strategy to create business value in healthcare
   description: Decision-makers in healthcare have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help the healthcare sector create business value with AI.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlanmsft
+  #ms.learn-contact: barlan
 title: Define an AI strategy to create business value in healthcare
 summary: Enterprises can not transform by bringing AI to just technical departments. Business units have to partner with data scientists and developers so you can redefine every business process. This unit is designed for healthcare industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
 abstract: | 
@@ -26,12 +26,12 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.data-ai-strategy-in-healthcare.1-introduction
-- learn-wwl.data-ai-strategy-in-healthcare.2-ai-value-in-healthcare-insead
-- learn-wwl.data-ai-strategy-in-healthcare.3-healthcare-case-study-introduction
-- learn-wwl.data-ai-strategy-in-healthcare.4-healthcare-executive-QA
-- learn-wwl.data-ai-strategy-in-healthcare.5-healthcare-case-study-resolution
-- learn-wwl.data-ai-strategy-in-healthcare.6-knowledge-check
-- learn-wwl.data-ai-strategy-in-healthcare.7-summary-and-resources
+- learn-wwl.ai-strategy-in-healthcare.introduction
+- learn-wwl.ai-strategy-in-healthcare.ai-value-in-healthcare-insead
+- learn-wwl.ai-strategy-in-healthcare.healthcare-case-study-introduction
+- learn-wwl.ai-strategy-in-healthcare.healthcare-executive-QA
+- learn-wwl.ai-strategy-in-healthcare.healthcare-case-study-resolution
+- learn-wwl.ai-strategy-in-healthcare.knowledge-check
+- learn-wwl.ai-strategy-in-healthcare.summary-and-resources
 badge: 
-  uid: learn.module-template.badge #add the uid for your achievement badge.
+  uid: learn-wwl.ai-strategy-in-healthcare.badge #add the uid for your achievement badge.
