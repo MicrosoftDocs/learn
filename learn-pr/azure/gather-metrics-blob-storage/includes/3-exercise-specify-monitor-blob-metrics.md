@@ -8,21 +8,25 @@ As a proof of concept exercise, you want to move some simple files into Azure Bl
 
 1. In the Azure Portal, in the left-hand pane, click **Storage accounts**, then click **+ Add**.
 
-1. Under **PROJECT DETAILS**, check that **Subscription** is set to your correct subscription, then next to **Resource Group**, click **Create new**.
+1. In the **Create storage account** page, find the **PROJECT DETAILS** section:
 
-1. In the **Name** dialog box, enter **MonitorResourceGroup** and click **OK**.
+   1. Verify that the **Subscription** is set to your concierge subscription.
 
-1. Under **INSTANCE DETAILS**, next to **Storage account name**, enter a unique name of between 3 and 24 characters consisting only of lower case letters and numbers; for example: **monitorstorageaccount**.
+   1. Verify that the **Resource Group** is set to <rgn>.
 
-1. Next to **Location**, select a location close to you.
+1. In the **INSTANCE DETAILS** section:
 
-1. Next to  **Performance**, select **Standard**.
+   1. For the **Storage account name**, enter a unique name of between 3 and 24 characters consisting only of lower case letters and numbers; for example: **monitorstorageaccount**.
 
-1. Nest to **Account kind**, select **StorageV2**.
+   1. For the **Location**, select a location close to you.
 
-1. Next to **Replication**, select **Locally-redundant storage**.
+   1. For **Performance**, select **Standard**.
 
-1. Next to **Access tier**, ensure **Hot** is selected.
+   1. For the **Account kind**, select **StorageV2**.
+
+   1. For **Replication**, select **Locally-redundant storage**.
+
+   1. For the **Access tier**, ensure that **Hot** is selected.
 
 1. Click the **Next: Advanced** button and review the options.
 
@@ -54,7 +58,7 @@ Before you can add blobs to a Storage Account, you need to create a blob contain
 
 1. In the Blobs blade, click **+ Container**.
 
-1. In the **Name** field, enter **monitor-blobs-container**, then click **OK**. Note the status message **No blobs found.**
+1. In the **Name** field, enter **monitor-blobs-container**, then click **OK**. When you click on your new container, notice the **No blobs found** status message.
 
 You are now ready to upload files to the blob container.
 
@@ -84,7 +88,7 @@ You are now ready to upload files to the blob container.
 
 1. Under **Block size**, select a file size that is slightly larger than the largest file you are uploading, then click **Upload**. Note when the file uploads have completed.
 
-Page blobs are typically for very large files, such as virtual machine images (VDHs) and the only block size available is 4 MB. Append blobs are optimized for append operations (such as log file updates).
+Page blobs are typically for very large files, such as virtual machine disk images (VHDs) and the only block size available is 4 MB. Append blobs are optimized for append operations (such as log file updates).
 
 ## Check size
 
@@ -92,7 +96,9 @@ You can simply check the size of the data stored in a container and the number a
 
 1. On the **monitor-blobs-container** container, click **Properties**.
 
-1. On the **Properties** blade, click **Calculate size**. The size and number of blobs will now appear.
+1. On the **Properties** blade, click **Calculate size**.
+
+1. The size and number of blobs will now appear.
 
 ## Creating a Capacity Metrics Chart
 
