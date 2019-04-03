@@ -9,13 +9,32 @@
 <!-- Don't include a summary section in individual units -->
 
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
- Many organizations use APIs to publish data and services. Customers and partners can call these APIs from any kind of client: desktop applications, mobile apps, web apps, and other systems. If your API is popular, you may need to optimize its performance to guarantee a good service to users.
+Many firms need to optimize access to and serving of Web pages. Caching enables you to serve an already constructed page or response without having to create it again.
 
-    Suppose you are a developer for a board game company. A product line produced by your company has recently become very popular, and the volume of requests from your retail partners to your inventory API is growing quickly: much faster than the rate that your inventory actually changes. You'd like to be able to respond to requests successfully without incurring load on your API.
+As the developer at a Board Game company you need to investigate the various types of tags and attributes that can be used in a caching policy at caching 
+ 
+## Write a aching policy
 
-    You use Azure API Management to host your API. You've read that you can configure an API Management policy to cache compiled responses to requests and you think that this will be a good way to optimize performance. You want to learn how to write API Management policies and how to use them to set up and control a cache. Then you want to write a policy that accelerates responses to users.
+The **cache-lookup policy** is placed in the inbound tag it must have a corresponding **cache-store policy** in the outbound tag
 
-## Choosing the right policy
+To do this first Add an inbound Policy selecting cache responses
 
-Policies in Azure API Management - APIM can be used to control many aspects of an already deployed API changing its behaviour via configuration. 
-The statements which form a policy are executed sequentially on either outbound responses  or inbound requests.
+![Add website URL](../media/cacheinbound.png)
+
+set the number of seconds to cache the operation for.
+
+![Add website URL](../media/cachesetduration.png)
+
+You will note a corresponding **cache-store** policy has been created in the outbound tag
+
+
+![Add website URL](../media/cachein-out.png)
+
+
+Access to the editor can now be gained. Note the sets of snippets available on the right hand side.
+
+![Add website URL](../media/cacheeditorview.png)
+
+
+
+
