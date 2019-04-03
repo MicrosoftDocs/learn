@@ -12,8 +12,6 @@ You can use the provided sample data or you can import your own data to try diff
 
 There are different experiment samples available that demonstrate different ways to train models. Below is a sample experiment showing how to implement a restaurant recommender system.
 
-## Summary
-
 Azure Machine Learning Studio allows you to bring in data, cleanse and transform the data, train and score a model with the option of deploying it on the web. If you are beginning your journey to learning data science, this platform is an intuitive way to help you understand the data science process.
 
 ![Screenshot of Azure Data Science Portal](../media/4-azure-ds-portal.png)
