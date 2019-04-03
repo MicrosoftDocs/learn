@@ -10,11 +10,11 @@ _Figure 1.6: Cloud computing building blocks._
 
 ##  Cloud Building Blocks
 
-_Application software: _The top layer in the stack is the application software, which normally is the system component that the end user utilizes.
+**Application software: **The top layer in the stack is the application software, which normally is the system component that the end user utilizes.
 
-_Development platforms: _The next layer, development platforms, allows application developers to write application software in terms of a cloud's application programming interface (API). Development platforms typically provide specifications that developers can use for routines, data structures, object classes, libraries and variables.
+**Development platforms: **The next layer, development platforms, allows application developers to write application software in terms of a cloud's application programming interface (API). Development platforms typically provide specifications that developers can use for routines, data structures, object classes, libraries and variables.
 
-_Resource sharing: _Resource sharing mechanisms, the third layer, embody some key cloud ideas:
+**Resource sharing: **Resource sharing mechanisms, the third layer, embody some key cloud ideas:
 
 - Provide software, computation, network and storage services.
 - Allow a shared environment whereby multiple hardware images (e.g., virtual machines) and system images (e.g., general-purpose OSs) can run side by side on a single infrastructure along with security, resource, and failure isolations. These isolation properties are provided by a combination of hardware and software techniques that are covered in detail in Unit 3.
@@ -23,7 +23,7 @@ _Resource sharing: _Resource sharing mechanisms, the third layer, embody some ke
 
 These ideas usually are addressed through virtualization, a technology discussed in detail in Unit 3.
 
-_Infrastructure: _Physical resources comprise the bottom layer and, in cloud computing, are primarily deployed on the cloud provider's side. The broad resource classes, detailed in Unit 2, include the following:
+**Infrastructure: **Physical resources comprise the bottom layer and, in cloud computing, are primarily deployed on the cloud provider's side. The broad resource classes, detailed in Unit 2, include the following:
 
 - Compute resources, typically servers, which are computers designed for enterprise computing (as opposed to user workstations). They usually are rack mounted to utilize space efficiently.
 - Storage resources maintain the cloud's data, and application storage use usually is charged in terms of capacity usage (e.g., per gigabyte or terabyte usage).

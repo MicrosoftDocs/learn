@@ -26,14 +26,14 @@ Although the underlying architecture of metering and measuring is hidden by corp
 _Figure 2.25: Ceilometer Architecture_
 
 
-_Polling Agent_: A daemon which polls OpenStack services for metering. 
+**Polling Agent**: A daemon which polls OpenStack services for metering. 
 
-_Notification Agent_: A daemon which listens to notifications on the message queue and converts them into samples and events. 
+**Notification Agent**: A daemon which listens to notifications on the message queue and converts them into samples and events. 
 
-_Collector_: Daemon designed to gather metering data created by the notification and polling agents. 
+**Collector**: Daemon designed to gather metering data created by the notification and polling agents. 
 
-_API_: Service to query the data recorded by the collector. 
+**API**: Service to query the data recorded by the collector. 
 
-_Alarming_: Daemons to evaluate and trigger notifications based on predefined rules. 
+**Alarming**: Daemons to evaluate and trigger notifications based on predefined rules. 
 
 Each of these services are designed to scale horizontally. Additional workers and nodes can be added according to expected load.

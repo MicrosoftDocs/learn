@@ -51,7 +51,7 @@ The PageRank algorithm iteratively updates a rank for each URL by adding contrib
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:math>
 -->
 
- is the sum of all received contributions and N is the total number of documents. _a_ indicates the probability that a random surfer starting from a web page will stop clicking through. This is known as the damping factor (as mentioned above, studies have found it to have a probability of about 0.85).
+ is the sum of all received contributions and N is the total number of documents. **a** indicates the probability that a random surfer starting from a web page will stop clicking through. This is known as the damping factor (as mentioned above, studies have found it to have a probability of about 0.85).
 
 Consider the following PageRank Scala program: 
 ``` java

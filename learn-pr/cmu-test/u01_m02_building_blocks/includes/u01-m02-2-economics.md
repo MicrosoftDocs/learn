@@ -14,8 +14,8 @@ Cloud service providers organize their infrastructure into large data centers, w
 
 Cloud service providers undertake the difficult task of building and maintaining data centers for users. For this model to be feasible, cloud service providers will have to leverage economies of scale and bring in many users. Providers benefit from economies of scale in the following areas:
 
-- _Cost of power:_ Electricity is rapidly becoming the largest element of total cost of ownership (TCO) in a data center, contributing to approximately 15% to 20% of total costs. Large cloud service providers can place their data centers in locations with lower cost of power and sign bulk purchase agreements with electric providers to reduce electric costs significantly.
-- _Infrastructure labor costs:_ Cloud computing enables repetitive management tasks to be automated. In addition, in larger facilities, a single system administrator can service thousands of servers with the use of advanced management software.
-- _Buying power:_ Cloud service providers can purchase equipment in bulk from manufacturers, which can lead to major discounts over smaller buyers. In addition, cloud providers standardize their servers and equipment, which helps in lowering purchase and support costs compared to smaller IT departments.
+- **Cost of power:** Electricity is rapidly becoming the largest element of total cost of ownership (TCO) in a data center, contributing to approximately 15% to 20% of total costs. Large cloud service providers can place their data centers in locations with lower cost of power and sign bulk purchase agreements with electric providers to reduce electric costs significantly.
+- **Infrastructure labor costs:** Cloud computing enables repetitive management tasks to be automated. In addition, in larger facilities, a single system administrator can service thousands of servers with the use of advanced management software.
+- **Buying power:** Cloud service providers can purchase equipment in bulk from manufacturers, which can lead to major discounts over smaller buyers. In addition, cloud providers standardize their servers and equipment, which helps in lowering purchase and support costs compared to smaller IT departments.
 
 Technologies in data centers and their design considerations are covered in detail in Unit 2.

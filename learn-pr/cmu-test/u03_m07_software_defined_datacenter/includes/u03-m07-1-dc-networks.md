@@ -28,7 +28,7 @@ Finally, data center networks must be designed for fault-tolerance. Such network
 
  Both traffic and address-space isolation are achieved by building “virtual networks” for each tenant, and traffic between these networks is restricted to a few strictly defined points. These virtual networks are generally built as an “overlay” on top of the real (physical) network. We refer to network virtualization as the process of provisioning these overlays, associating them with the tenant’s network interfaces and maintaining the lifecycle of this network as VM instances are launched, stopped or terminated. 
 
-_Overlay network_ : A virtual network in which the separation of tenants is hidden from the underlying physical infrastructure, such that the underlying transport network does not need to know about the different tenants to correctly forward traffic.
+**Overlay network** : A virtual network in which the separation of tenants is hidden from the underlying physical infrastructure, such that the underlying transport network does not need to know about the different tenants to correctly forward traffic.
 
 One of the important benefits of virtualizing the network is that it allows VM migration between hosts while retaining its network state (IP and MAC addresses). Changes in MAC addresses can cause many unexpected disruptions, for e.g. by invalidating software licenses. Thus, physical hosts can be assigned IP addresses hierarchically, whereas VMs can have an IP address that is within a pool of valid addresses for that subnet. 
 

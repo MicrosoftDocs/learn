@@ -55,8 +55,8 @@ Azure provides health-checks via three types of probes - Guest Agent probe (on P
 ###  Other Popular Strategies
 
 There are several other strategies used to balance load across multiple resources. Each of them uses different metrics to gauge the most appropriate resource node for a particular request:
-- _Request execution time based strategies_ - These strategies use a priority scheduling algorithm, whereby request execution times are used in order to judge the most appropriate order of load distribution. The main challenge in using this approach is to accurately predict the execution time of a particular request.
-- _Resource utilization based strategies_ – These strategies use the CPU utilization on each resource node to balance the utilization across each node. The load balancers maintain an ordered list of resources based on their utilization and then directs requests to the least loaded node. 
+- **Request execution time based strategies** - These strategies use a priority scheduling algorithm, whereby request execution times are used in order to judge the most appropriate order of load distribution. The main challenge in using this approach is to accurately predict the execution time of a particular request.
+- **Resource utilization based strategies** – These strategies use the CPU utilization on each resource node to balance the utilization across each node. The load balancers maintain an ordered list of resources based on their utilization and then directs requests to the least loaded node. 
 
 ##  Other Benefits of Employing a Load Balancer
 

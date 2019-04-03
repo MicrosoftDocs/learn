@@ -6,17 +6,17 @@ We will now look at a special class of storage systems that are designed as a cl
 
 With the concept of objects, object-based storage systems abstract the existing file system approach at a higher level. Object-based storage systems are typically layered over existing file systems. There is no notion of hierarchies in object-based storage systems, which instead use a flat data environment. 
 
-An _object_ can be considered as a generic container that can store any arbitrary type of information. Designing interfaces for such arbitrary data may be difficult, but in storage parlance, a basic set of operations can be easily defined for any arbitrary object. These operations are create, read, update, and delete (CRUD), which are typically made available through some kind of API that can be accessed through HTTP or other network protocols using REST- or SOAP-style calls. 
+An **object** can be considered as a generic container that can store any arbitrary type of information. Designing interfaces for such arbitrary data may be difficult, but in storage parlance, a basic set of operations can be easily defined for any arbitrary object. These operations are create, read, update, and delete (CRUD), which are typically made available through some kind of API that can be accessed through HTTP or other network protocols using REST- or SOAP-style calls. 
 ##  REST
 
-_Representational state transfer_ (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
+**Representational state transfer** (REST) relies on a stateless, client-server, cacheable communications protocol and is typically implemented over HTTP. A stateless protocol treats each request as an independent operation, and each communication between a client and server is treated as an independent pair of requests and responses. Video 4.10 discusses HTTP and RESTful interfaces
 
 > [!VIDEO https://youtube.com/embed/34iW4tcYGxA]
 
 _Video 4.10: HTTP and RESTful Interfaces_
 
 
-REST is an _architectural style_ for designing networked applications and does not refer to a single protocol. REST is a design strategy for communications among various entities in a networked application. The idea is to use a simple mechanism instead of CORBA, WSDL, or RPC to connect and transfer information between machines over a network. Any interface that uses REST principles is called a _RESTful_ interface. 
+REST is an **architectural style** for designing networked applications and does not refer to a single protocol. REST is a design strategy for communications among various entities in a networked application. The idea is to use a simple mechanism instead of CORBA, WSDL, or RPC to connect and transfer information between machines over a network. Any interface that uses REST principles is called a **RESTful** interface. 
 
 A RESTful interface uses HTTP requests to post (create and/or update), read (make queries and get information), and delete data. Thus, a RESTful interface can be used for CRUD operations. 
 
@@ -44,7 +44,7 @@ Video 4.11 covers the basics ideas behind Object Storage Systems:
 _Video 4.11: Object Storage Systems_
 
 
- An example of object-based storage on the cloud is Amazon’s Simple Storage Service (S3). S3 allows users to store _objects_ in _buckets_. Each object can be created, read, and deleted. Note that in the S3 model, although no native update-object method exists, <!-- rather, -->an entire object can be deleted and re-created, similar to a file overwrite. However, S3 supports object versioning and can maintain multiple versions of an object on S3 if it is explicitly enabled by the object owner. 
+ An example of object-based storage on the cloud is Amazon’s Simple Storage Service (S3). S3 allows users to store **objects** in **buckets**. Each object can be created, read, and deleted. Note that in the S3 model, although no native update-object method exists, <!-- rather, -->an entire object can be deleted and re-created, similar to a file overwrite. However, S3 supports object versioning and can maintain multiple versions of an object on S3 if it is explicitly enabled by the object owner. 
 
 Here is an example of a RESTful HTTP call to Amazon S3 to create a bucket named `mybucket`. The HTTP call includes authorization information for the client to access the bucket. 
 ``` text
@@ -74,7 +74,7 @@ In the response, Amazon has acknowledged the request, indicated that the request
 
 The lack of a common standard for object storage is an issue plaguing cloud object storage. The most popular cloud-based object storage system is Amazon S3, which is proprietary.
 
- The Storage Network Industry Association (SNIA) is promoting an open standard for cloud objects, called _cloud data management interface (CDMI)_. 
+ The Storage Network Industry Association (SNIA) is promoting an open standard for cloud objects, called **cloud data management interface (CDMI)**. 
 ![Figure 4.22: CDMI](../media/cdmi.png)
 
 _Figure 4.22: CDMI_
@@ -86,7 +86,7 @@ CDMI defines data objects and data containers with tagged metadata (as key-value
 _Figure 4.23: A CDMI client interacting with a CDMI storage cloud_
 
 
-The CDMI client can issue requests over HTTPS, and the _MimeType_ indicates the type of CDMI resource with which the client is interacting (an object, a container) and returns standard HTTP status codes, indicating the status of the request. 
+The CDMI client can issue requests over HTTPS, and the **MimeType** indicates the type of CDMI resource with which the client is interacting (an object, a container) and returns standard HTTP status codes, indicating the status of the request. 
 
 The CDMI model is illustrated in Figure 4.24. A CDMI resource exists on a root location, indicated by the root URI: `https://<offering>`. The example contains two containers, A and B, that contain one object each. Note that each CDMI entity <!-- has the -->can support <!-- for -->metadata, as indicated with the key-value tags associated with every entity.
 ![Figure 4.24: The CDMI data model](../media/key_value.png)
@@ -95,15 +95,15 @@ _Figure 4.24: The CDMI data model_
 
 
  In addition, CDMI supports <!-- additional -->the following resource types: 
-- _cdmi-capability:_ A special entity that describes the capabilities of this particular cloud store. This entity is important and can be used to discover the capabilities of a cloud (e.g., backup and replication).
-- _cdmi-domain:_ Allows for the creation of domains (e.g., groups of users with object access permissions).
-- _cdmi-queues:_ Allow for the creation of queues of objects that operate in first in, first out (FIFO) order. Applications can use such queues to implement notification or messaging systems.
+- **cdmi-capability:** A special entity that describes the capabilities of this particular cloud store. This entity is important and can be used to discover the capabilities of a cloud (e.g., backup and replication).
+- **cdmi-domain:** Allows for the creation of domains (e.g., groups of users with object access permissions).
+- **cdmi-queues:** Allow for the creation of queues of objects that operate in first in, first out (FIFO) order. Applications can use such queues to implement notification or messaging systems.
 
 
 The advantages of CDMI include the following:
 
 - Its vendor-neutral specification of a cloud object storage system allows for simpler data migration from one cloud to another.
-- It enables _cloud peering_ for storage, which is a concept wherein resources from different clouds can be connected to enable seamless data sharing between clouds. 
+- It enables **cloud peering** for storage, which is a concept wherein resources from different clouds can be connected to enable seamless data sharing between clouds. 
 - It adheres to existing standards, such as RESTful interface for data access, and can work with multiple underlying storage abstractions, such as shared and networked file systems.
 - It is a mature standard, which has a reference implementation and ISO standardization.
 

@@ -5,7 +5,7 @@ Spark relies on a special abstraction called resilient distributed datasets (RDD
 
 Despite not needing to exist on physical storage, RDDs can be fault-tolerant. However, they do not need to be replicated; rather they have a notion of lineage by which they “remember” the set of operations that were executed to construct them, allowing them to be rebuilt if they lose data. A handle to an RDD contains enough information to recompute it from a version of the data stored on-disk. 
 
-All work in Spark is expressed either as creating new RDDs, transforming existing RDDs or running operations on RDDs. One important thing to realize about RDDs is that they are _lazily computed_ and _ephemeral_. Lazy computation is an optimization whereby many transformations are pipelined, and the RDD is computed only when it is first used with an “action”. Ephemeral means that RDDs may be materialized (computed and loaded in memory) when used in a parallel application but that they are subsequently discarded from memory. 
+All work in Spark is expressed either as creating new RDDs, transforming existing RDDs or running operations on RDDs. One important thing to realize about RDDs is that they are **lazily computed** and **ephemeral**. Lazy computation is an optimization whereby many transformations are pipelined, and the RDD is computed only when it is first used with an “action”. Ephemeral means that RDDs may be materialized (computed and loaded in memory) when used in a parallel application but that they are subsequently discarded from memory. 
 
 |Aspect|RDDs|Distributed Shared Memory|
 |--|--|--|
@@ -31,8 +31,8 @@ By default, in the Spark programming model, an RDD is represented as a Scala obj
 1. By parallelizing a collection/array and distributing it to many nodes 
 1. By transforming an existing RDD (we will discuss transform operations below) 
 1. By changing the persistence level of an existing RDD using one of two actions: 
-    - _cache_: this is a hint to the framework to keep the RDD in-memory after the first computation to ensure reuse 
-    - _save_: writes the data to a distributed filesystem like HDFS
+    - **cache**: this is a hint to the framework to keep the RDD in-memory after the first computation to ensure reuse 
+    - **save**: writes the data to a distributed filesystem like HDFS
 
 
 Examples of creating new RDDs (these commands can be tried out in the Spark Scala shell): 
@@ -53,8 +53,8 @@ Examples of creating new RDDs (these commands can be tried out in the Spark Scal
 
 Once created, an RDD supports two types of operations (see Figure 5.34): 
 
-1. _Transformations_: Operations that create new RDDs from existing ones 
-1. _Actions_: Computations on an RDD that return a single object to the driver 
+1. **Transformations**: Operations that create new RDDs from existing ones 
+1. **Actions**: Computations on an RDD that return a single object to the driver 
 
 As mentioned earlier, Spark transformations are lazy by default, i.e. they are not computed immediately, rather they are batched and executed only when an action is executed. The execution of an action causes all RDDs in the lineage to be materialized. However, once the computation is completed, an RDD will persist only if explicitly required to by the program. 
 ![Figure 5.34 : Operations on RDDs](../media/RDD.png)
@@ -73,7 +73,7 @@ Here are some examples of transformations and actions:
 
 We will explore these in more detail in the next page where we look at some sample programs. For now, let us look at a few simple examples to understand the basic operations allowed by an RDD. 
 
-1. _Transformations_
+1. **Transformations**
 ``` text
 &gt;&gt;&gt; log_lines_RDD = sc.textFile("server.logs")
 &gt;&gt;&gt; xss_RDD =  log_lines_RDD.filter(lambda x: "%3C%73%63%72%69%70%74%3E" in x)
@@ -86,7 +86,7 @@ The Python code above filters `log_lines_RDD` to find attacks against a web serv
 
 `filter()` does not modify the original RDD, rather we now have 2 new RDDs. The `log_lines_RDD` can still be used in the future. `union()` is a transformation that acts on 2 RDDs to form a combined owasp_attacks_RDD . 
 
-1. _Actions_
+1. **Actions**
 ``` text
 &gt;&gt;&gt; log_lines_RDD = sc.textFile("server.logs")
 &gt;&gt;&gt; xss_RDD =  log_lines_RDD.filter(lambda x: "%3C%73%63%72%69%70%74%3E" in x)
@@ -99,20 +99,20 @@ Here, the Python code counts the number of attacks in our combined `owasp_attack
 
 Clearly, RDDs are best suited for batch operations where the same operations are applied to all elements of the dataset. Applications requiring asynchronous, fine-grained updates would need more specialized systems. Since they are immutable, the overhead of computing new RDDs for each additional input item is very high. Hence, even when dealing with real-time data inputs, Spark often batches the changes over short periods of time. 
 
-1. _Persisting RDDs_
+1. **Persisting RDDs**
 RDDs may be persisted in four ways:
-    1. _In-memory as deserialized objects_: 
+    1. **In-memory as deserialized objects**: 
 A deserialized object expresses a data structure as a set of bytes. Storing the raw deserialized RDD objects in-memory has the highest performance, since the framework can access the elements natively in code. However, there is a some overhead, since apart from the data, the metadata of the object is also stored. For e.g., Java objects are fast to access, but consume 2-5x more space than the raw data that they encapsulate. 
 
     1. 
-_In-memory as serialized data_: 
+**In-memory as serialized data**: 
 By serializing the RDD, the associated data is stored in a well-defined format. This method is slower than storing deserialized objects, but is more memory-efficient than storing object graphs.
 
 
-    1. _On-disk storage_: 
+    1. **On-disk storage**: 
 This helps store really large RDDs that do not fit in-memory but shouldn’t be continuously recomputed. 
 
-    1. _Off-heap storage_: 
+    1. **Off-heap storage**: 
 Off-heap storage is provided by a special memory-centric storage system called Tachyon, which enables cluster-wide reliable data sharing at memory-speed.
 
 

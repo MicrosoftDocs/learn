@@ -43,16 +43,16 @@ where
 
 As you may have noticed, the above equation is recursive, the PageRank value of different pages may mutually dependent on each other. Therefore, the computing process of PageRank often starts with a set of initial values, and each page iteratively applies the above equation to update its value until reaching convergence. 
 
-To perform this algorithm with GraphLab, we first map the problem to a graph-based abstraction. For PageRank, this should be intuitive; the vertices of the graph correspond to pages and edges correspond to links of the pages. We also add a per-vertex parameter, the rank of the page, denoted as _R[i]_. Now that the data is represented in GraphLab, we decompose the operation expressed in the PageRank equation to Gather, Apply, Scatter steps in GraphLab’s abstraction: 
+To perform this algorithm with GraphLab, we first map the problem to a graph-based abstraction. For PageRank, this should be intuitive; the vertices of the graph correspond to pages and edges correspond to links of the pages. We also add a per-vertex parameter, the rank of the page, denoted as **R[i]**. Now that the data is represented in GraphLab, we decompose the operation expressed in the PageRank equation to Gather, Apply, Scatter steps in GraphLab’s abstraction: 
 
 
 ______________________________________________________________________________________
 
-_Algorithm 3:_ PageRank(i) Algorithm on GraphLab, executing on page i
+**Algorithm 3:** PageRank(i) Algorithm on GraphLab, executing on page i
 
 ______________________________________________________________________________________
 
-- _Gather(_j,i _)_ Function:
+- **Gather(**j,i **)** Function:
     - return 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">ji</m:mi><m:mtext mathsize="small"></m:mtext><m:mo lspace="2px" rspace="2px">times</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>j</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math>
@@ -60,7 +60,7 @@ ________________________________________________________________________________
 
 
 
-- _Sum(_a,b _)_ Function:
+- **Sum(**a,b **)** Function:
     - return 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>a</m:mi><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>+</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>b</m:mi></m:mrow></m:math>
@@ -68,7 +68,7 @@ ________________________________________________________________________________
 
 
 
-- _Apply(_i,Sigma _)_ Function:
+- **Apply(**i,Sigma **)** Function:
     - 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>=</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mn>0.15</m:mn><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>+</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo rspace="2px" largeop="false">sum</m:mo></m:mrow></m:math>
@@ -76,7 +76,7 @@ ________________________________________________________________________________
 
 
 
-- _Scatter(_i,j _)_ Function:
+- **Scatter(**i,j **)** Function:
     - if 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math>
@@ -93,4 +93,4 @@ ________________________________________________________________________________
 ______________________________________________________________________________________
 
 
-In the Gather phase, page _i_ goes through each of its in-edges, and gathers the corresponding values from its neighbors. The gathered values will be accumulated using the Sum function, which simply adds all the in-edge values in this algorithm. Next, page _i_ performs Apply function to update its PageRank value to the sum of _0.15_ and the aggregated result. Finally, it checks if the updated PageRank is different from the previous one, and goes through each out-edge to trigger the recomputation of its neighbors if the PageRank value is changed. Pagerank will iteratively run the GAS functions defined above for all active vertices until the values do not change beyond a certain threshold. When there are no more active vertices, the algorithm is said to have _converged_ to the required result.
+In the Gather phase, page **i** goes through each of its in-edges, and gathers the corresponding values from its neighbors. The gathered values will be accumulated using the Sum function, which simply adds all the in-edge values in this algorithm. Next, page **i** performs Apply function to update its PageRank value to the sum of **0.15** and the aggregated result. Finally, it checks if the updated PageRank is different from the previous one, and goes through each out-edge to trigger the recomputation of its neighbors if the PageRank value is changed. Pagerank will iteratively run the GAS functions defined above for all active vertices until the values do not change beyond a certain threshold. When there are no more active vertices, the algorithm is said to have **converged** to the required result.

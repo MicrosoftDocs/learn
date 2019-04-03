@@ -6,9 +6,9 @@ With the rapid evolution of cloud technologies, there are new use cases emerging
 
 A main driver for cloud computing comes from Web hosting. Websites and Web applications typically are hosted on a server with a dedicated internet connection. Older Web hosting services either provided dedicated servers to clients or gave a fraction of a larger UNIX system to multiple clients. Now, with the advent of cloud computing, Web/mobile applications can be built on top of existing IaaS/PaaS or even SaaS services.
 
-- _SaaS based:_ Using the SaaS model, organizations can deploy one-size-fits-all applications on the Web. Common examples include WebMail, social networking sites, and utility websites, such as personal organizers, calendars, and planners.
-- _PaaS based:_ Application developers can use a range of online platforms and tools to create SaaS and mobile applications. Platforms such as Google App Engine, Parse, and AppScale are popular platforms on which Web and mobile applications can be built.
-- _IaaS based:_ Applications that need even more customization and flexibility can adopt the IaaS model by renting out virtual machines from providers such as EC2 and Rackspace and deploy a fully customized software stack to run the Web application.
+- **SaaS based:** Using the SaaS model, organizations can deploy one-size-fits-all applications on the Web. Common examples include WebMail, social networking sites, and utility websites, such as personal organizers, calendars, and planners.
+- **PaaS based:** Application developers can use a range of online platforms and tools to create SaaS and mobile applications. Platforms such as Google App Engine, Parse, and AppScale are popular platforms on which Web and mobile applications can be built.
+- **IaaS based:** Applications that need even more customization and flexibility can adopt the IaaS model by renting out virtual machines from providers such as EC2 and Rackspace and deploy a fully customized software stack to run the Web application.
 
 Consider the following scenarios:
 
@@ -34,10 +34,10 @@ Scientists are now increasingly looking toward the cloud for HPC resource demand
 
 One of the important resources that is available through cloud computing is storage. From personal storage solutions, such as Dropbox, to large-scale Internet storage systems, such as Amazon S3, online storage is a major cloud computing use case. The online storage options include:
 
-- _Web-based object storage:_ Services such as Amazon S3 allow users to store terabytes of data as simple objects that can be accessed over HTTP. Many websites use Amazon S3 to store static content, such as images.
-- _Backup and recovery:_ Services such as CrashPlan and Carbonite provide online backup of customer data, which is a great option as a secure, off-site backup solution.
-- _Media streaming and content distribution:_ Services such as Amazon CloudFront not only store large amounts of data but assist in content delivery. Requests to pull data from CloudFront are automatically routed to the nearest server, thereby decreasing latency for time-sensitive media, such as video.
-- _Personal storage:_ Services such as Dropbox and Google Drive are popular among users to store personal documents online for anytime, anywhere access.
+- **Web-based object storage:** Services such as Amazon S3 allow users to store terabytes of data as simple objects that can be accessed over HTTP. Many websites use Amazon S3 to store static content, such as images.
+- **Backup and recovery:** Services such as CrashPlan and Carbonite provide online backup of customer data, which is a great option as a secure, off-site backup solution.
+- **Media streaming and content distribution:** Services such as Amazon CloudFront not only store large amounts of data but assist in content delivery. Requests to pull data from CloudFront are automatically routed to the nearest server, thereby decreasing latency for time-sensitive media, such as video.
+- **Personal storage:** Services such as Dropbox and Google Drive are popular among users to store personal documents online for anytime, anywhere access.
 ##  Rapid Application Development and Testing
 
 One of the major advantages of the cloud is the ability to rapidly deploy and test applications. An entire computing environment can be deployed in minutes and then torn down and discarded just as easily after the testing is complete. For many companies, the value is in allowing developers to quickly create enhancements and features and test them without any risk. Specialized hardware and servers do not need to be ordered and installed. Within mere minutes, a virtual server can be spun up on EC2. Applications can also be easily stress/load tested. Existing servers can be cloned to perform scalability studies as well.

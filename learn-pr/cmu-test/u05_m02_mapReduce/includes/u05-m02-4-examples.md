@@ -1,7 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m02_mapReduce\x-oli-workbook_page\_u05_m02_4_Examples.xml -->
 ##  MapReduce Program Examples
 
-As a simple MapReduce example, we can write a job/program that counts the times that each word appears in a file or a set of files. For instance, if we assume two files, _A_ and _B_, with contents "This is a cloud computing course" and "This is Unit 5 in the cloud computing course," we would expect an output similar to what is shown in Table 5.1. Such a program is commonly called _WordCount_. The WordCount program is included in the Hadoop distribution and is readily available for running and testing. It represents a large spectrum of text-processing algorithms in big-data applications. As such, many consider it a state-of-the-art benchmark workload for evaluating Hadoop's efficiency. The original MapReduce paper has indeed used WordCount as a benchmark workload. Yahoo! uses it also for evaluating Hadoop on its data centers.
+As a simple MapReduce example, we can write a job/program that counts the times that each word appears in a file or a set of files. For instance, if we assume two files, **A** and **B**, with contents "This is a cloud computing course" and "This is Unit 5 in the cloud computing course," we would expect an output similar to what is shown in Table 5.1. Such a program is commonly called **WordCount**. The WordCount program is included in the Hadoop distribution and is readily available for running and testing. It represents a large spectrum of text-processing algorithms in big-data applications. As such, many consider it a state-of-the-art benchmark workload for evaluating Hadoop's efficiency. The original MapReduce paper has indeed used WordCount as a benchmark workload. Yahoo! uses it also for evaluating Hadoop on its data centers.
 
 |Word|Count|
 |--|--|
@@ -101,7 +101,7 @@ public class WordCount {
 ```
 
 
-_Figure 5.17:_ The WordCount code using the new Java MapReduce API released in Hadoop 0.20.0
+**Figure 5.17:** The WordCount code using the new Java MapReduce API released in Hadoop 0.20.0
 
 As Figure 5.17 shows, programmers need create only two sequential functions, map and reduce, encapsulated in two (inner) classes: in this case, the `WCMap` and the `WCReduce` inner classes. The `WCMap` inner class extends the `Mapper` class and overrides its `map()` function. The `Mapper` class maps given input key-value pair types ( `LongWritable` and `Text`) to a set of output key-value pair types ( `Text` and `IntWritable`). Output key-value pair types defined in the `Mapper` class should always match the input key-value pair types in the `Reducer` class. The `WCReduce` inner class extends the `Reducer` class and overrides its `reduce()` function. In addition to defining the input key-value pair types, the `Reducer` class defines the output key-value pair types ( `Text` and `IntWritable`) that will be used by reduce tasks to generate the final results. 
 

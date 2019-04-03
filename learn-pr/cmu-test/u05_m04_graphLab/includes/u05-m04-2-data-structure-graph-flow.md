@@ -5,27 +5,27 @@ Developed by Carnegie Mellon University, GraphLab provides an example of graph-p
 
 |A Note on GraphLab's Evolution and Versions|
 |--|
-| _GraphLab_ was initially developed as a graph processing framework that targets shared memory systems (multi-core machines). GraphLab then included a distributed execution engine to allow for computation of extremely large graphs across a cluster of machines. _PowerGraph_ (also known as GraphLab 2.0), emerged using techniques that allowed for faster distributed processing of graphs that followed the power-law distribution (such as social graphs). GraphLab has been since spun-off into a commercial startup called Dato Inc., which provides the [GraphLab Create](https://dato.com/products/create/) software package. Our discussion on GraphLab in this module will cover the latest open-source version, PowerGraph (GraphLab 2.0)|
+| **GraphLab** was initially developed as a graph processing framework that targets shared memory systems (multi-core machines). GraphLab then included a distributed execution engine to allow for computation of extremely large graphs across a cluster of machines. **PowerGraph** (also known as GraphLab 2.0), emerged using techniques that allowed for faster distributed processing of graphs that followed the power-law distribution (such as social graphs). GraphLab has been since spun-off into a commercial startup called Dato Inc., which provides the [GraphLab Create](https://dato.com/products/create/) software package. Our discussion on GraphLab in this module will cover the latest open-source version, PowerGraph (GraphLab 2.0)|
 
 
-In GraphLab, graphs are initially stored as files in an underlying distributed storage layer, such as HDFS, as shown in Figure 5.46. GraphLab is composed of two phases: _initialization_ and _execution_. During initialization, the GraphLab engine reads input graph files from the underlying storage and divides them into multiple partitions that can be distributed among multiple machines in the cluster. During the execution phase, each machine runs the user-defined computation on the graph vertices, transmitting updates and iterating until some convergence condition is met.
+In GraphLab, graphs are initially stored as files in an underlying distributed storage layer, such as HDFS, as shown in Figure 5.46. GraphLab is composed of two phases: **initialization** and **execution**. During initialization, the GraphLab engine reads input graph files from the underlying storage and divides them into multiple partitions that can be distributed among multiple machines in the cluster. During the execution phase, each machine runs the user-defined computation on the graph vertices, transmitting updates and iterating until some convergence condition is met.
 ###  Initialization Phase
 ![Figure 5.46: The GraphLab system. In the initialization phase the atoms are constructed using MapReduce (for example), and in the GraphLab execution phase, the atoms are assigned to cluster machines and loaded by machines from a distributed file system (e.g., HDFS).](../media/graphLab_system.png)
 
 _Figure 5.46: The GraphLab system. In the initialization phase the atoms are constructed using MapReduce (for example), and in the GraphLab execution phase, the atoms are assigned to cluster machines and loaded by machines from a distributed file system (e.g., HDFS)._
 
 
-In the first phase, the input graph is divided into _k_ partitions, called _atoms_, where _k_ is much larger than the number of cluster machines. As demonstrated in Figure 5.46, atoms can be constructed either sequentially or using parallel loading techniques, including MapReduce. GraphLab does not store the actual vertices and edges in atoms but rather the commands to generate them, in the form of a journal. This allows GraphLab to reconstuct portions of the graph in case of node failures. In addition, GraphLab maintains in each atom information about its neighboring vertices and edges. This information, denoted in GraphLab as _ghost_ vertices, provides a caching capability for efficient adjacency data accessibility as explained in the section .
+In the first phase, the input graph is divided into _k_ partitions, called **atoms**, where _k_ is much larger than the number of cluster machines. As demonstrated in Figure 5.46, atoms can be constructed either sequentially or using parallel loading techniques, including MapReduce. GraphLab does not store the actual vertices and edges in atoms but rather the commands to generate them, in the form of a journal. This allows GraphLab to reconstuct portions of the graph in case of node failures. In addition, GraphLab maintains in each atom information about its neighboring vertices and edges. This information, denoted in GraphLab as **ghost** vertices, provides a caching capability for efficient adjacency data accessibility as explained in the section .
 ![Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique.](../media/graph_cuts.png)
 
 _Figure 5.47 Graph Paritioning Strategies. (a) Illustrates the edge-cut partitioning technique, while (b) illustrates the vertex cut technique._
 
 
-The graph can be partitioned across the cluster machines in a number of ways (Figure 5.47). A simple technique is _edge-cut_, where graph is partitioned along each vertex (Figure 5.47(a)). Each vertex is randomly assigned to a machine along with all its associated edges. As a result, _ghost_ vertices are generated so that edges can be associated with a vertex that is not in a particular machine. However, for graphs with power-law distribution of edges, this means that the edge-cut partitioning will be unbalanced and some machines will be more loaded than others (due to the star-like motifs of a small number of vertices). To deal with such graphs, GraphLab uses a novel technique (known as _Greedy Vertex Cuts_) to partition high-degree vertices across machines in order to distribute the computation more effectively. Vertices of high degree are replicated across machines, with each machine receiving a subset of the edges for that vertex (Figure 5.47(b)). The machine that holds a given edge for a vertex is decided using the following algorithm: 
+The graph can be partitioned across the cluster machines in a number of ways (Figure 5.47). A simple technique is **edge-cut**, where graph is partitioned along each vertex (Figure 5.47(a)). Each vertex is randomly assigned to a machine along with all its associated edges. As a result, **ghost** vertices are generated so that edges can be associated with a vertex that is not in a particular machine. However, for graphs with power-law distribution of edges, this means that the edge-cut partitioning will be unbalanced and some machines will be more loaded than others (due to the star-like motifs of a small number of vertices). To deal with such graphs, GraphLab uses a novel technique (known as **Greedy Vertex Cuts**) to partition high-degree vertices across machines in order to distribute the computation more effectively. Vertices of high degree are replicated across machines, with each machine receiving a subset of the edges for that vertex (Figure 5.47(b)). The machine that holds a given edge for a vertex is decided using the following algorithm: 
 
 ______________________________________________________________________________________
 
-_Algorithm 1:_ Greedy Edge-Cuts for placement of edge 
+**Algorithm 1:** Greedy Edge-Cuts for placement of edge 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo></m:mrow></m:math>
 -->
@@ -39,7 +39,7 @@ _Algorithm 1:_ Greedy Edge-Cuts for placement of edge
 
 ______________________________________________________________________________________
 
-- _if_ there exists a machine that has been assigned both 
+- **if** there exists a machine that has been assigned both 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
@@ -49,7 +49,7 @@ ________________________________________________________________________________
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
 -->
 
-_then_
+**then**
     - Assign 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
@@ -57,7 +57,7 @@ _then_
 
  to this machine
 
-- _else if _
+- **else if **
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
@@ -67,7 +67,7 @@ _then_
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
 -->
 
- are assigned to different machines _then_
+ are assigned to different machines **then**
     - Assign 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
@@ -75,7 +75,7 @@ _then_
 
  to the machine that has the least number of edges assigned to it
 
-- _else if _
+- **else if **
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
@@ -85,7 +85,7 @@ _then_
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
 -->
 
- are assigned to different machines _then_
+ are assigned to different machines **then**
     - Assign 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
@@ -93,7 +93,7 @@ _then_
 
  to the machine that has the least number of edges assigned to it
 
-- _else_
+- **else**
     - Assign 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
@@ -114,7 +114,7 @@ Loading of these partitions can be done in a distributed and coordinated manner,
 
 Users, however, do need to store graphs in formats that can be consumed and parsed by GraphLab during its initialization phase. Clearly, this depends on the underlying storage layer and the parsing engine that GraphLab employs. For instance, if MapReduce is used to read and parse input graph files from HDFS, the input graph files have to be formatted using MapReduce's key-value data structure. 
 
-Generating atoms for a given input graph completes the first phase of GraphLab's partitioning strategy. Subsequently, the engine stores the connectivity structure and atom locations in an index file denoted also as a _meta-graph_ (Figure 5.46). The atom index file encompasses _k_ vertices, each corresponding to an atom, and edges encoding connectivity among them. In the second phase, the atom index file is split evenly across cluster machines. Atoms are then loaded by cluster machines, and each machine constructs its partition(s) of the given graph by executing the journal in each of its assigned atoms. By generating partitions from atom journals (and not directly mapping partitions to cluster machines), GraphLab allows future graph changes to be simply appended as journal commands, without needing to repartition the entire graphs. Furthermore, the same graph atoms can be reused for different cluster sizes by simply re-dividing the corresponding atom index file and re-executing atom journals, thus repeating only the second partitioning phase. 
+Generating atoms for a given input graph completes the first phase of GraphLab's partitioning strategy. Subsequently, the engine stores the connectivity structure and atom locations in an index file denoted also as a **meta-graph** (Figure 5.46). The atom index file encompasses _k_ vertices, each corresponding to an atom, and edges encoding connectivity among them. In the second phase, the atom index file is split evenly across cluster machines. Atoms are then loaded by cluster machines, and each machine constructs its partition(s) of the given graph by executing the journal in each of its assigned atoms. By generating partitions from atom journals (and not directly mapping partitions to cluster machines), GraphLab allows future graph changes to be simply appended as journal commands, without needing to repartition the entire graphs. Furthermore, the same graph atoms can be reused for different cluster sizes by simply re-dividing the corresponding atom index file and re-executing atom journals, thus repeating only the second partitioning phase. 
 
 Construction of graph partitions at cluster machines concludes GraphLab's initialization phase, and the execution phase begins. 
 ###  Execution Phase
@@ -141,9 +141,9 @@ As shown in Figure 5.46, each cluster machine runs an instance of the GraphLab e
 
  is the user-defined data (e.g., parameters, user input data, and even statistical data). In GraphLab, data is associated with both vertices and edges. 
 
-Computation is then represented as a stateless program that is executed on each vertex of the graph in parallel. This program consists of three distinct phases namely, _Gather_, _Apply_, and _Scatter_ ( _GAS_). 
+Computation is then represented as a stateless program that is executed on each vertex of the graph in parallel. This program consists of three distinct phases namely, **Gather**, **Apply**, and **Scatter** ( **GAS**). 
 
-_Gather Phase_: In the gather phase, each vertex (henceforth refferred to as the central vertex) gathers information from adjacent vertices and edges. GraphLab can then apply a user-defined aggregation or sum operation: 
+**Gather Phase**: In the gather phase, each vertex (henceforth refferred to as the central vertex) gathers information from adjacent vertices and edges. GraphLab can then apply a user-defined aggregation or sum operation: 
 ![(C) CMU Cloud Computing Course](../media/gather.png)
 
 
@@ -184,7 +184,7 @@ In the equation above
 
 ) operation must be commutative and associative and can range from a numerical sum to the union of the data on all neighboring vertices and edges. 
 
-_Apply Phase_: In the apply phase, the resulting value 
+**Apply Phase**: In the apply phase, the resulting value 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mo rspace="2px" largeop="false">sum</m:mo></m:mrow></m:math>
 -->
@@ -193,7 +193,7 @@ _Apply Phase_: In the apply phase, the resulting value
 ![(C) CMU Cloud Computing Course](../media/apply.png)
 
 
-_Scatter Phase_: Finally in the scatter phase, the new value of the central vertex is sent to all adjacent vertices: 
+**Scatter Phase**: Finally in the scatter phase, the new value of the central vertex is sent to all adjacent vertices: 
 ![(C) CMU Cloud Computing Course](../media/scatter.png)
 
 
@@ -207,7 +207,7 @@ _Figure 5.48: Execution of the Gather-Apply-Scatter functions on two machines th
 
 Figure 5.48 illustrates the resulting communication pattern of employing the GAS functions on a graph partitioned using the Greedy Edge-Cuts algorithm described earlier. Gather functions run locally on each machine that contains the ghost of a vertex. During the accumulation, these gathered values are sent to the machine that has the master copy of the vertex, where it can compute the function defined in the apply stage. Finally, the updated vertex data is copied to all machines that have ghost copies of the vertex and the scatter function is executed to propagate values to the adjacent vertices. 
 
-_Delta Caching_: There are situations where a vertex program will be triggered (made active) because of a change in only few of its neighbors. When the vertex is triggered, it will execute a gather operation from all neighbors, many of whom have not executed and hence will return values which are unchanged since the last time this particular vertex ran. GraphLab introduces a subtle optimization called delta caching, where the result of gather operations from all of the neighbors of a vertex are cached at that vertex. During the scatter operation that is run at the neighbouring vertices, an optional parameter, 
+**Delta Caching**: There are situations where a vertex program will be triggered (made active) because of a change in only few of its neighbors. When the vertex is triggered, it will execute a gather operation from all neighbors, many of whom have not executed and hence will return values which are unchanged since the last time this particular vertex ran. GraphLab introduces a subtle optimization called delta caching, where the result of gather operations from all of the neighbors of a vertex are cached at that vertex. During the scatter operation that is run at the neighbouring vertices, an optional parameter, 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>Delta</m:mi><m:mi>a</m:mi></m:mrow></m:math>
 -->

@@ -3,8 +3,8 @@
 
 An organization’s IT costs are many-fold, which include expenses for hardware and software as well as expenses for support and management. Typically, these costs fall into two categories:
 
-- _Capital expenses (CapEx):_ The initial investment for a particular IT service or solution. For example, when an organization decides to implement a software solution to address a particular need, say, enterprise resource planning (ERP), CapEx would include all physical hardware and software purchases. CapEx investments are for the lifetime of the long-lived solution. CapEx are an upfront expense, which are either paid as a lump sum or financed with extra charges.
-- _Operational expenses (OpEx):_ The recurring costs incurred while operating a particular system. For the ERP case, that would include utility fees (such as power and cooling) to keep the infrastructure running, space leases if the facility is rented, personnel costs to support the system, and software support and license fees. OpEx are typically a monthly recurring charge.
+- **Capital expenses (CapEx):** The initial investment for a particular IT service or solution. For example, when an organization decides to implement a software solution to address a particular need, say, enterprise resource planning (ERP), CapEx would include all physical hardware and software purchases. CapEx investments are for the lifetime of the long-lived solution. CapEx are an upfront expense, which are either paid as a lump sum or financed with extra charges.
+- **Operational expenses (OpEx):** The recurring costs incurred while operating a particular system. For the ERP case, that would include utility fees (such as power and cooling) to keep the infrastructure running, space leases if the facility is rented, personnel costs to support the system, and software support and license fees. OpEx are typically a monthly recurring charge.
 
 The business model for IT software has evolved over the years into the following forms:
 

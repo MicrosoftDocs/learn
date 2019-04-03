@@ -26,7 +26,7 @@ To build a streaming pipeline in Spark streaming, first a Dstream should be cons
 _Figure 5.39 : Sliding Window Computation in Spark Streaming_
 
 
-In addition to simple transformations, Spark streaming provides the capability to perform windowed computations, i.e., transformations applied over a sliding window of data (Figure 5.39). In this case, the user can specify both the _window size_ (the number of source RDDs to include in the transformation window) and the _sliding interval_ (the number of source RDDs to slide across at the end of each transformation). 
+In addition to simple transformations, Spark streaming provides the capability to perform windowed computations, i.e., transformations applied over a sliding window of data (Figure 5.39). In this case, the user can specify both the **window size** (the number of source RDDs to include in the transformation window) and the **sliding interval** (the number of source RDDs to slide across at the end of each transformation). 
 
 Once the source RDDs in a `Dstream` have been computed, Spark streaming provides various output options, including write to binary or text or Hadoop-compatible files, or save the RDDs for future processing. 
 ##  MLlib

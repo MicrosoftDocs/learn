@@ -11,7 +11,7 @@ _Figure 2.27: OpenStack Service Architecture_
 
 ##  User Authentication Service (Keystone)
 
-The primary authentication service in OpenStack is called Keystone. Keystone is an OpenStack project that provides _Identity_, _Token_, _Catalog_ and _Policy_ services for use specifically by individual services in the OpenStack family.
+The primary authentication service in OpenStack is called Keystone. Keystone is an OpenStack project that provides **Identity**, **Token**, **Catalog** and **Policy** services for use specifically by individual services in the OpenStack family.
 
 The identity service provides authentication credential validation as well as data about users and groups. The token service validates and manages session tokens used for authenticating requests once a user’s credentials have already been verified. The catalog service provides an endpoint registry used for endpoint discovery. The policy service provides a rule-based authorization engine and the associated rule management interface which can be used to dynamically grant or deny resource privileges to specific applications and services.
 ##  Monitoring Service (Ceilometer) 
