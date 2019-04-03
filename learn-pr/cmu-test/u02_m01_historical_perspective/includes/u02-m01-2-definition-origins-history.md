@@ -3,7 +3,7 @@
 
 Formally, a data center can be defined as follows:
 
-> ## Data center
+> ### Data center
 >
 > _(definition)_ Infrastructure dedicated to housing computer and networking equipment, including power, cooling, and networking.
 

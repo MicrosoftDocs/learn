@@ -83,7 +83,6 @@ Figure 5.25 illustrates a typical MapReduce job flow in YARN. The steps in this 
 1. 
 The AM computes the number of map tasks, which is decided by the number of input splits (similar to Hadoop version 1.0). The number of reduce tasks is a configurable parameter which is set in the configuration file. The AM requests resources for all the map and reduce tasks from the RM in the form of a request for containers. A request includes preferences in terms of data locality (for map tasks), the amount of memory and the number of CPUs in each container.
 ``` text
-
 ResourceRequest: &lt;Priority: 20,
 Resource: &lt;vCores: 1, memory: 1024&gt;,
 Num Containers: 2,

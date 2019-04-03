@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/u02-m03-2-provisioning.md)]
 quiz:

@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 8
+durationInMinutes: 9
 content: |
   [!include[](includes/u05-m05-5-streaming-cases.md)]
 quiz:

@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 9
+durationInMinutes: 10
 content: |
   [!include[](includes/u05-m05-2-message-queues.md)]
 quiz:

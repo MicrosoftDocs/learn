@@ -48,28 +48,24 @@ _Video 4.11: Object Storage Systems_
 
 Here is an example of a RESTful HTTP call to Amazon S3 to create a bucket named `mybucket`. The HTTP call includes authorization information for the client to access the bucket. 
 ``` text
-
-				PUT /mybucket HTTP/1.1
-				Content-Length: 0
-				User/Agent: jClientUpload
-				Host: s3.amazonaws.com
-				Date: Sun, 05 Aug 2007 15:33:59 GMT
-				Authorization: AWS 15B4D3461F177624206A:YFhSWKDg3qDnGbV7JCnkfdz/IHY= LE:k3nL7gH3+PadhTEVn5EXAMPLE
-			
+PUT /mybucket HTTP/1.1
+Content-Length: 0
+User/Agent: jClientUpload
+Host: s3.amazonaws.com
+Date: Sun, 05 Aug 2007 15:33:59 GMT
+Authorization: AWS 15B4D3461F177624206A:YFhSWKDg3qDnGbV7JCnkfdz/IHY= LE:k3nL7gH3+PadhTEVn5EXAMPLE
 ```
 
 
 S3 can process the request and will send back an HTTP response similar to the following:
 ``` text
-
-					HTTP/1.1 200 OK
-					x-amz-id-2: tILPE8NBqoQ2Xn9BaddGf/YlLCSiwrKP+OQOpbi5zazMQ3pC56KQgGk
-					x-amz-request-id: 676918167DFF7F8C
-					Date: Sun, 05 Aug 2007 15:30:28 GMT
-					Location: /mybucket
-					Content-Length: 0
-					Server: AmazonS3
-				
+HTTP/1.1 200 OK
+x-amz-id-2: tILPE8NBqoQ2Xn9BaddGf/YlLCSiwrKP+OQOpbi5zazMQ3pC56KQgGk
+x-amz-request-id: 676918167DFF7F8C
+Date: Sun, 05 Aug 2007 15:30:28 GMT
+Location: /mybucket
+Content-Length: 0
+Server: AmazonS3
 ```
 
 

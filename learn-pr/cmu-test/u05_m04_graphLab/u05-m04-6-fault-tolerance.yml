@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/u05-m04-6-fault-tolerance.md)]
 quiz:

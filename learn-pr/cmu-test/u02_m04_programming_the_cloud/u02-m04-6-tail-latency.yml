@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 17
+durationInMinutes: 18
 content: |
   [!include[](includes/u02-m04-6-tail-latency.md)]
 quiz:
