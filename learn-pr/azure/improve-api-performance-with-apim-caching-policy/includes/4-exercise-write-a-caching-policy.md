@@ -199,7 +199,7 @@ You are now ready to run your managed API  in Test.
 
 
 
-This time lets add a policy to control the caching of the  GetQuery Operation.
+This time lets add a policy to control the caching of the  Get Operation.
 
 1. Click on design
 
