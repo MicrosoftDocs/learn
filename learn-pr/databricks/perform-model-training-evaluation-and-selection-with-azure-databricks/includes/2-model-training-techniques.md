@@ -11,27 +11,27 @@ The process of training your machine-learning process includes the following bro
 
 - **Split the dataset:** Before you start training your machine-learning model, you must prepare your dataset by splitting it into training and testing data.
 
-  Learning the parameters of a prediction function and then testing it on the same data is a methodological mistake. A sufficiently advanced model will repeat the labels of the samples that it's seen. In this case, the model will have a perfect score but will fail to predict anything useful on yet-unseen data. This situation is called *overfitting*.
+  Learning the parameters of a prediction function and then testing it on the same data is a methodological mistake. A sufficiently advanced model repeats the labels of the samples that it's seen. In this case, the model has a perfect score but fails to predict anything useful on data it hasn't seen yet. This situation is called *overfitting*.
 
   To avoid overfitting when you're working with (supervised) machine learning, split the data into at least two categories:
 
   - **Training data:** Use this data to teach the algorithm. Training data is the data that the algorithm will learn from.
   - **Test data:** Keep this data "secret" and don't share it with the algorithm during the learning phase. After the system has been trained, use this data to test the performance of the trained system.
 
-- **Identify the technique:** Depending on your dataset and the outcome you require, select the type of machine-learning technique. You can choose either basic regression, classification, or advanced regression techniques.
+- **Identify the technique:** Depending on your dataset and the outcomes you require, select the type of machine-learning technique. You can choose basic regression, classification, or advanced regression techniques.
 
-- **Tune the model:** *Model tuning* is the process of achieving optimal performance of your machine-learning model. To tune your model, make it go through several iterations of the following steps until you achieve the result you want:
+- **Tune the model:** *Model tuning* is the process of achieving optimal performance of your machine-learning model. To tune your model, send it through the following steps multiple times, until you achieve the result you want:
 
   1. Select the parameters.
   1. Train the model by using the selected parameters.
   1. Use the model to make predictions on a test dataset.
   1. Correct the errors by adjusting the parameters.
 
-- **Minimize cost functions:** One of the important aims while training your model is to reduce the *cost function*. The cost function, also called the *sum of squared errors cost function*, is a measure of how far your model is from correctly predicting the relationship between two values.
+- **Minimize cost functions:** One of the important aims when you're training your model is to reduce the *cost function*. The cost function, also called the *sum of squared errors cost function*, is a measure of how far your model is from correctly predicting the relationship between two values.
 
 - **Evaluate and validate your model:** An important step in creating a robust machine-learning model is to evaluate and validate the predictive accuracy of your model. Cross validation is a method of validating the stability and performance of your machine-learning model.
 
-  For example, you can't adjust the attributes in your model based on the test dataset to improve its performance. You also can't base the model's performance on a single test dataset and hope that it works accurately in real-world scenarios. Training your model multiple times by using different datasets is required to cross-validate your model's stability.
+  For example, you can't adjust the attributes in your model based on the test dataset to improve its performance. You also can't base the model's performance on a single test dataset and hope that it works accurately in real-world scenarios. To cross-validate your model's stability, you must train your model multiple times by using different datasets.
 
 ## Techniques to train machine-learning models
 
@@ -49,7 +49,7 @@ In machine learning and statistics, classification is the problem of identifying
 
 - **Support-vector machines:** Support-vector machines are supervised machine-learning models with associated algorithms that are primarily used for classification problems and regression challenges. These models are used in high-dimensional spaces. To learn more about support-vector machines, see [this article](https://scikit-learn.org/stable/modules/svm.html).
 
-- **Decision-tree classifier:** The decision tree is popular for working with classification problems, both two-class and multiclass types. Models that are based on multiple decision trees, Random Forests, boosted trees, and XDGBoost are common in machine learning today. Single decision trees are also used partly because they're easier to plot and inspect.
+- **Decision-tree classifier:** The decision tree is popular for working with classification problems, both two-class and multiclass types. Models that are based on multiple decision trees, Random Forests, boosted trees, and XDGBoost are common in machine learning today. Single decision trees are also used, partly because they're easier to plot and inspect.
 
 ### Advanced regression
 
