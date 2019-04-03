@@ -1,13 +1,13 @@
-Let's suppose you work in the analytics department of a large used-car dealer. You're working on creating a machine-learning model that will make predictions for sales prices and affordability in the used-car market. Your team has decided to use Azure Databricks to train your machine-learning model to achieve the following results:
+Let's suppose you work in the analytics department of a large used-car dealer. You're working on creating a machine-learning model that will make predictions about sales prices and affordability in the used-car market. Your team has decided to use Azure Databricks to train your machine-learning model to achieve the following results:
 
 - Investigate how the age of a used car influences its sales price.
 - Find cars with specific features that a person with a set budget can afford.
 
-Azure Databricks provides capabilities to train and evaluate your machine learning model. You can create your model from a base dataset and then further train and polish your model by using different datasets.
+Azure Databricks provides capabilities to train and evaluate your machine-learning model. You can create your model from a base dataset and then further train and polish your model by using different datasets.
 
 ## Train your machine-learning model
 
-The process of training your machine-learning process includes the following broad steps:
+The process of training your machine-learning model includes the following broad steps:
 
 - **Split the dataset:** Before you start training your machine-learning model, you must prepare your dataset by splitting it into training and testing data.
 
@@ -16,11 +16,11 @@ The process of training your machine-learning process includes the following bro
   To avoid overfitting when you're working with (supervised) machine learning, split the data into at least two categories:
 
   - **Training data:** Use this data to teach the algorithm. Training data is the data that the algorithm will learn from.
-  - **Test data:** Keep this data "secret" and don't share it with the algorithm during the learning phase. After the system has been trained, use this data to test the performance of the trained system.
+  - **Test data:** Keep this data "secret," and don't share it with the algorithm during the learning phase. After the system has been trained, use this data to test the performance of the trained system.
 
 - **Identify the technique:** Depending on your dataset and the outcomes you require, select the type of machine-learning technique. You can choose basic regression, classification, or advanced regression techniques.
 
-- **Tune the model:** *Model tuning* is the process of achieving optimal performance of your machine-learning model. To tune your model, send it through the following steps multiple times, until you achieve the result you want:
+- **Tune the model:** *Model tuning* is the process of achieving optimal performance of your machine-learning model. To tune your model, send it through the following steps multiple times, until you achieve the results you want:
 
   1. Select the parameters.
   1. Train the model by using the selected parameters.
