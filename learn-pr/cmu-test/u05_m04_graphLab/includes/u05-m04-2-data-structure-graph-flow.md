@@ -59,7 +59,7 @@ ________________________________________________________________________________
 
  to this machine
 
-- **else if **
+- **else if** 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
@@ -77,7 +77,7 @@ ________________________________________________________________________________
 
  to the machine that has the least number of edges assigned to it
 
-- **else if **
+- **else if** 
 <!-- TODO fix
 <m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
