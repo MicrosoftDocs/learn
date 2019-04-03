@@ -14,9 +14,9 @@ Learn [how AI is helping businesses boost their team collaborations](https://inf
 
 Azure Machine Learning and Cortana Intelligence Suite enable analysts at Microsoft to make [financial forecasts faster](https://www.microsoft.com/itshowcase/Article/Content/771/Using-predictive-analytics-to-improve-financial-forecasting). New predictive analytics tools allow us to analyze larger data sets and do more sophisticated calculations, which frees financial analysts to do more interesting, profitable, and creative work.
 
-[See how Microsoft uses blockchain](https://customers.microsoft.com/en-us/story/microsoft-financial-operations-professional-services-azure) to deliver royalty statement to Xbox game publishers faster with significant efforts reduction.
+[See how Microsoft uses blockchain](https://customers.microsoft.com/story/microsoft-financial-operations-professional-services-azure) to deliver royalty statement to Xbox game publishers faster with significant efforts reduction.
 
-Explore [Anomaly Detection API](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/apps-anomaly-detection-api) is an example built with Azure Machine Learning that detects anomalies in time series data with numerical values that are uniformly spaced in time.
+Explore [Anomaly Detection API](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/apps-anomaly-detection-api) is an example built with Azure Machine Learning that detects anomalies in time series data with numerical values that are uniformly spaced in time.
 
 * [Download PDF](https://aka.ms/AIBSCULTFINCONDWL) of the case study introduction to share with others.
 * [Download PDF](https://aka.ms/AIBSCULTFINRESDWL)  of the case study resolution to share with others.
