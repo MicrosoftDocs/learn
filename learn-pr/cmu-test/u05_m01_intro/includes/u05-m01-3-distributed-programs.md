@@ -10,3 +10,9 @@ _Figure 5.3: (a) A sequential program with serial (S1) and parallel (P1) parts. 
 Distributed programs have also found broad applications beyond science, such as search engines, Web servers, and databases. For instance, much of Google's success can be traced back to the effectiveness of algorithms such as PageRank, a distributed program that ranks Web pages and runs in Google's search engine on thousands of machines. Without parallelization, PageRank could not achieve its goals. Parallelization also contributes in leveraging available resources. For example, running a Hadoop MapReduce program on a single Amazon EC2 instance is not as effective as running it on a large-scale cluster of EC2 instances. Of course, committing jobs earlier on the cloud leads to a reduction in cost, which is a key objective for cloud users.
 
 Distributed programs also help alleviate subsystem bottlenecks. For instance, I/O devices, such as disks and network <!-- card --> interface cards, typically represent major bottlenecks in terms of bandwidth, performance, and/or throughput. By distributing work across machines, data can be served from multiple disks simultaneously, offering an increased aggregate I/O bandwidth, improving performance, and maximizing throughput. In summary, distributed programs play a critical role in rapidly solving various computing problems and effectively mitigating resource bottlenecks. This action improves performance, increases throughput, and reduces cost, especially in the cloud. 
+
+### References
+
+1. _Y. Solihin (2009). Fundamentals of Parallel Computer Architecture Solihin Books_
+2. _A. N. Langville and C. D. Meyer (February 6, 2012). Google's PageRank and Beyond: The Science of Search Engine Rankings Princeton University Press_
+3. _Hadoop ().  http://hadoop.apache.org/_

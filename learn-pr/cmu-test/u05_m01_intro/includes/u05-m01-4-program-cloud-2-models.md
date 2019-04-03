@@ -46,3 +46,13 @@ _Figure 5.7. A distributed program that corresponds to the sequential program in
 |Tuning Effort upon Scaling Up|Higher|Lower|
 
 _Table 5.1: A comparison between the shared-memory and the message-passing programming models_
+
+
+### References
+
+1. _A. S. Tanenbaum (September 4, 1994). Distributed Operating Systems Prentice Hall, First Edition_
+2. _K. Li (1986). Shared Virtual Memory on Loosely Coupled Multiprocessors Yale University, NewHaven, CT (USA)_
+3. _A. S.Tanenbaum (September 4, 1994). Distributed Operating Systems Prentice Hall, First Edition_
+4. _OpenMP ().  http://openmp.org/wp/_
+5. _Message Passing Interface ().  http://www.mcs.anl.gov/research/projects/mpi/_
+6. _MPICH ().  http://www.mpich.org/_

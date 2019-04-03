@@ -28,7 +28,7 @@ _Figure 5.19: The nodes at which native Hadoop scheduled each map task and reduc
 
 To illustrate this locality unawareness and its implications, we deﬁne a total network distance of a reduce task, _R_, (TNDR), as 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:munderover><m:mo>sum</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>ND</m:mi><m:mi>iR</m:mi></m:msub></m:mrow></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:munderover><m:mo>sum</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>ND</m:mi><m:mi>iR</m:mi></m:msub></m:mrow></m:mrow></m:math>
 -->
 
 , where _n_ is the number of partitions that are fed to _R_ from _n_ nodes, and _ND_ is the network distance required to shuffle a partition _i_ to _R_. Clearly, as TNDR increases, more time is taken to shufﬂe _R_'s partitions, and additional network bandwidth is dissipated. Figure 5.19 lists the nodes at which each map task, _M<sub>i</sub>_, and reduce task, _R<sub>i</sub>_, of the WordCount benchmark were scheduled by native Hadoop. In this case, every map task is feeding every reduce task, and every map task is scheduled at a distinct node. Nodes 1 through 7 are housed in one rack and the rest in another. Hadoop schedules reduce tasks _R<sub>0</sub>_, _R<sub>1</sub>_, and _R<sub>2</sub>_ at nodes 13, 12, and 3, respectively. This results in _TND<sub>R<sub>0</sub></sub>_ = 30, _TND<sub>R<sub>1</sub></sub>_ = 32, and _TND<sub>R</sub>_ = 34. If, however, _R<sub>1</sub>_ and _R<sub>2</sub>_ are scheduled at nodes 11 and 8, respectively, this would result in _TND<sub>R<sub>1</sub></sub>_ = 30 and _TND<sub>R<sub>2</sub></sub>_ = 30. Hadoop, in its present design, cannot make such controlled scheduling decisions. 
@@ -43,7 +43,7 @@ To make Hadoop MapReduce's reduce task scheduler more effective, it should addre
 
 Numerous research papers have addressed the need for a task scheduler aware of both data locality and partitioning skew. The center-of-gravity reduce scheduler (CoGRS), for example, represents a locality- and skew-aware reduce task scheduler. To minimize network traffic, it attempts to schedule every reduce task, _R_, at its center-of-gravity node, determined by the network locations of _R_'s feeding nodes and the skew in _R_'s partition sizes. Specifically, CoGRS introduces a new metric called weighted total network distance ( _WTND_) and deﬁnes it for each _R_ as _WTND<sub>R</sub>_ = 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:munderover><m:mo>sum</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>ND</m:mi><m:mi>iR</m:mi></m:msub><m:mo lspace="2px" rspace="2px">times</m:mo><m:msub><m:mi>w</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:munderover><m:mo>sum</m:mo><m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>0</m:mn></m:mrow><m:mi>n</m:mi></m:munderover><m:mrow><m:msub><m:mi>ND</m:mi><m:mi>iR</m:mi></m:msub><m:mo lspace="2px" rspace="2px">times</m:mo><m:msub><m:mi>w</m:mi><m:mi>i</m:mi></m:msub></m:mrow></m:mrow></m:math>
 -->
 
  , where _n_ is the number of partitions needed by _R_, _ND_ is the network distance required to shufﬂe a partition, _i_, to _R_, and _w<sub>i</sub>_ is the weight of a partition, _i_. In principle, the center of gravity of _R_ is always one of _R_'s feeding nodes because it is less expensive to access data locally than to shufﬂe them over the network. Therefore, CoGRS designates the center of gravity of _R_ to be the feeding node of _R_ that provides the minimum _WTND_. 
@@ -55,3 +55,19 @@ _Figure 5.21: Options for scheduling a reduce task, R, with feeding nodes TT1 an
 <sup>7</sup>A feeding TT of a reduce task, R, is a TT that hosts at least one of R's feeding map tasks.
 
 <sup>8</sup>This is the Apache Mahout k-Means clustering program. K-means is a well-known clustering algorithm for knowledge discovery and data mining.
+
+### References
+
+1. _S. Ibrahim, H. Jin, L. Lu, S. Wu, B. He, and L. Qi (Dec. 2010). LEEN: Locality/Fairness-Aware Key Partitioning for MapReduce in the Cloud CloudComm_
+2. _M. Hammoud and M. F. Sakr (2011). Locality-Aware Reduce Task Scheduling for MapReduce CloudCom_
+3. _M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic CLOUD_
+4. _Hadoop-scheduling ().  http://www.ibm.com/developerworks/linux/library/os-hadoop-scheduling/index.html_
+5. _Hadoop ().  http://hadoop.apache.org/docs/r1.1.2/fair_scheduler.html_
+6. _B. Thirumala Rao and L. S. S. Reddy (November 2011). Survey on Improved Scheduling in Hadoop MapReduce in Cloud Environments International Journal of Computer Applications_
+7. _M. Zaharia, D. Borthakur, J. S. Sarma, K. Elmeleegy, S. Shenker, and I. Stoica (April 2010). Delay Scheduling: A Simple Technique for Achieving Locality and Fairness in Cluster Scheduling EuroSys, pp. 265-278_
+8. _Mahout Homepage ().  http://mahout.apache.org/_
+9. _S. Huang, J. Huang, J. Dai, T. Xie, and B. Huang (2010). The HiBench Benchmark Suite: Characterization of the MapReduce-Based Data Analysis ICDEW_
+10. _P. C. Chen, Y. L. Su, J. B. Chang, and C. K. Shieh (2010). Variable-Sized Map and Locality-Aware Reduce on Public-Resource Grids GPC_
+11. _S. Seo, I. Jang, K. Woo, I. Kim, J. Kim, and S. Maeng (2009). HPMR: Prefetching and Pre-Shufﬂing in Shared MapReduce Computation Environment CLUSTER_
+12. _M. Isard, V. Prabhakaran, J. Currey, U. Wieder, K. Talwar, and A. Goldberg (2009). Quincy: Fair Scheduling for Distributed Computing Clusters SOSP_
+13. _A. C. Murthy, C. Douglas, M. Konar, O. O'Malley, S. Radia, S. Agarwal, and K. V. Vinod (2011). Architecture of Next Generation Apache Hadoop MapReduce Framework Apache Jira_

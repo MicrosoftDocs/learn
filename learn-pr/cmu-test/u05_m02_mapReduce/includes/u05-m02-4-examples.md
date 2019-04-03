@@ -120,3 +120,10 @@ _Video 5.3: Image Processing in MapReduce_ ([Alternate Version](../media/video_5
 <sup>4</sup>The digit 1 per a word, W, is output to indicate that W has appeared in an input split. This allows the reduce task, which receives W, to simply increment its counter for W.
 
 <sup>5</sup>Each reduce task can receive multiple words from multiple map tasks, but each word appears at only one reduce task.
+
+### References
+
+1. _J. Dean and S. Ghemawat (Dec. 2004). MapReduce: Simplified Data Processing on Large Clusters OSDI_
+2. _M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). Improving MapReduce Performance in Heterogeneous Environments OSDI_
+3. _Hadoop ().  http://developer.yahoo.com/hadoop/tutorial/_
+4. _T. White (2011). Hadoop: The Definitive Guide 2nd Edition O'Reilly_

@@ -80,3 +80,8 @@ _Figure 4.11: Storage area networks_
 
 
 Although the servers share the disk array, they cannot physically share data residing on the disks. Instead, portions of the SAN (identified as logical unit numbers, or LUNs) are carved out and provided for the exclusive use of each server.
+
+### References
+
+1. _Thomas Rivera (2012). The Evolution of File Systems SNIA Tutorial_
+2. _Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung (2003). The Google File Systems 19th ACM Symposium on Operating Systems Principles_

@@ -13,3 +13,8 @@ As Figure 5.18 shows, MapReduce uses a master-slave architecture. The master nod
 Hadoop assumes a hierarchical, tree-style network topology with rack and core switches, as shown in Figure 5.18. TTs are spread over different racks and may reside in one or several data centers. Between any two TTs, communication bandwidth depends on their relative locations in the network topology. For instance, TTs on the same rack can interact with each other much faster than with off-rack counterparts. Measuring bandwidth between any two TTs is difficult in practice, so Hadoop employs a simple, distance-based approach, representing TT network positions as strings (e.g., `TaskTracker5`'s location in Figure 5.18 is `/CoreSwtich/RackSwitch1/TaskTracker5`). Hadoop assumes a unit distance between any TT and its parent switch, so the total distance between any two TTs can be calculated by simply adding up the distances to their closest common ancestor. In our example, `Total-Distance(/CoreSwitch/RackSwitch2/TaskTracker1, /CoreSwitch/RackSwitch2/JobTracker) = 4`. 
 
 <sup>6</sup>The JT does not reply to every heartbeat sent by a TT. TTs can send heartbeats just to indicate that they are still alive. If a TT includes in its heartbeat a request (e.g., a request for a map or a reduce task), the JT replies with a heartbeat that satisfies the TT's request (e.g., a map or a reduce task). 
+
+### References
+
+1. _T. White (2011). Hadoop: The Definitive Guide 2nd Edition O'Reilly_
+2. _D. P. Bertsekas and J. N. Tsitsiklis (January 1, 1997). Parallel and Distributed Computation: Numerical Methods Athena Scientific, First Edition_

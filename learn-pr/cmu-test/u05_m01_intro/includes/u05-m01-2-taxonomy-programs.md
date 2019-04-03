@@ -19,3 +19,9 @@ _Task_ is another term that refers to a small unit of work, and in this unit, we
 ![Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications ](../media/concepts_processes.png)
 
 _Figure 5.2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications _
+
+
+### References
+
+1. _POSIX Threads Programming ().  https://computing.llnl.gov/tutorials/pthreads/_
+2. _M. Ben-Ari (March 6, 2006). Principles of Concurrent and Distributed Programming Addison-Wesley_

@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 9
+durationInMinutes: 10
 content: |
   [!include[](includes/u04-m01-3-1-filesystems4.md)]

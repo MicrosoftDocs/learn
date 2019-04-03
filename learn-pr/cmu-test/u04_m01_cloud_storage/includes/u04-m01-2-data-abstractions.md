@@ -35,3 +35,7 @@ These requirements dictate the design of applications. Applications that require
 Strict performance requirements are usually translated into design choices involving caching or replication. Such systems are designed using the access patterns to determine optimal strategies for performance improvement. For applications that are serving clients over the internet, multiple data centers may be involved to provide faster performance and a better user experience by redirecting users to the closest available server that has the required data.
 
 In order to use certain replication or caching techniques, the applicaiton must decide on what level or accuracy or freshness it needs of the data retreived from the system. Certain applications may be ok it they recieve stale data, but others require the most accurate and up-to-date data. This in turn affects the level of consistency that the storage system must provide to the application.
+
+### References
+
+1. _Ginsberg, Jeremy and Mohebbi, Matthew H and Patel, Rajan S and Brammer, Lynnette and Smolinski, Mark S and Brilliant, Larry (2009). Detecting influenza epidemics using search engine query data Nature_

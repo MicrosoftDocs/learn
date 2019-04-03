@@ -26,3 +26,7 @@ A related aspect of multi-tenancy is the issue of _provisioning variation_, wher
 Public clouds are subject to increased attack vectors, as we saw in Unit 1. Developers must be extremely cautious in ensuring that they follow best practices, protocols and procedures when deploying and maintaining applications on the cloud. As a result, additional performance overheads may be experienced due to the use of security protocols mandated by public clouds.
 
 Since we have already discussed these protocols in a previous module, we will not discuss it in detail again. Any code deployed on a public cloud should go through a strict process of manual and automated source code reviews and static analysis, as well as dynamic vulnerability analysis and penetration testing. Guidelines for deploying applications securely are shown on the next page. 
+
+### References
+
+1. _Rehman, M.S and Sakr, M.F (2010). Initial Findings for Provisioning Variation in Cloud Computing  2010 IEEE Second International Conference on Cloud Computing Technology and Science (CloudCom)_

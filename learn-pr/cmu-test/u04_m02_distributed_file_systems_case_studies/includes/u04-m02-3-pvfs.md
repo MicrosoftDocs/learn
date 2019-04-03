@@ -114,3 +114,9 @@ _Figure 4.37: Dynamic subtree partitioning in Ceph FS_
 ###  Caching and Fault Tolerance in Metadata servers
 
 Metadata servers in Ceph FS typically cache metadata information in memory and serve most requests out of memory. In addition, MDS servers use a form of _journalling_ wherein updates are sent downstream to RADOS as journal objects, and these are written out per metadata server. In the event of a failure of a metadata server, the journal can be replayed to rebuild the failed MDS server's portion of the tree on a new MDS or an existing MDS.
+
+### References
+
+1. _Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006). CRUSH: Controlled, scalable, decentralized placement of replicated data In Proceedings of the 2006 ACM/IEEE conference on Supercomputing 122_
+2. _Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006). Ceph: A scalable, high-performance distributed file system Proceedings of the 7th symposium on Operating systems design and implementation (OSDI) 307-320_
+3. _Weil, S. A., Pollack, K. T., Brandt, S. A., & Miller, E. L. (2004). Dynamic metadata management for petabyte-scale file systems In Proceedings of the 2004 ACM/IEEE conference on Supercomputing 4_

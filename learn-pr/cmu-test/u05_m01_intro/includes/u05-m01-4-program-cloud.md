@@ -104,79 +104,79 @@ _Figure 5.10: An MPMD distributed program using the message-passing programming 
 
 _Graph parallelism_, on the other hand, focuses on distributing computation as opposed to data. Most distributed programs actually fall somewhere on a continuum between the two forms. Graph parallelism is widely used in many domains such as machine learning, data mining, physics, and electronic circuit design, among others. Many problems in these domains can be modeled as graphs in which vertices represent computations and edges encode data dependencies or communications. Recall that a graph 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>G</m:mi></m:mrow></m:math>
 -->
 
  is a pair 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
 -->
 
 , where 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
 -->
 
  is a finite set of vertices and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
 -->
 
  is a finite set of pairwise relationships, 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi><m:mo lspace="2px" rspace="2px">sub</m:mo><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo lspace="2px" rspace="2px">times</m:mo><m:mi>V</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>E</m:mi><m:mo lspace="2px" rspace="2px">sub</m:mo><m:mo stretchy="false">(</m:mo><m:mi>V</m:mi><m:mo lspace="2px" rspace="2px">times</m:mo><m:mi>V</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
 -->
 
 , called edges. Weights can be associated with vertices and edges to indicate the amount of work at each vertex and the communication data on each edge. 
 
 Consider a classical problem from circuit design: the common goal of keeping certain pins of several components electrically equal by wiring them together. If we assume `n` pins, then an arrangement of `(n – 1)` wires, each connecting two pins, can be employed. Of all such arrangements, the one requiring the minimum number of wires is normally the most desirable. Obviously, this wiring problem can be modeled as a graph problem. In particular, each pin can be represented as a vertex, and each interconnection between a pair of pins 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
 -->
 
  can be represented as an edge. A weight 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">(</m:mo><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:math>
 -->
 
  can be set between 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
 -->
 
  and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
 -->
 
  to encode the cost (the amount of wires needed) to connect 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
 -->
 
  and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
 -->
 
 . The problem becomes how to find an acyclic subset, 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>S</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>S</m:mi></m:mrow></m:math>
 -->
 
 , of edges, 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
 -->
 
 , that connects all the vertices, 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
 -->
 
 , and whose total weight 
 <!-- TODO fix
-<formula><m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mfenced open="(" close=")"><m:mi>S</m:mi></m:mfenced><m:mo>=</m:mo><m:mrow><m:msub><m:mo>sum</m:mo><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>S</m:mi></m:mrow></m:msub><m:mrow><m:mi>w</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:math></formula>
+<formula><m:math display="inline" xmlns:m="m"><m:mrow><m:mi>w</m:mi><m:mfenced open="(" close=")"><m:mi>S</m:mi></m:mfenced><m:mo>=</m:mo><m:mrow><m:msub><m:mo>sum</m:mo><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>S</m:mi></m:mrow></m:msub><m:mrow><m:mi>w</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:math></formula>
 -->
 
 
@@ -207,3 +207,26 @@ To this end, we note that the master-slave organization suffers from a single po
 ###  Symmetric Peer-to-Peer Organization 
 
 In symmetric organizations, all tasks are equal, with logic, control, and work distributed evenly among them. Specifically, each task can communicate directly with those around it, without having to contact a master process (see Figure 5.12(b)). A master may be adopted, however, but only for purposes such as monitoring the system and/or injecting administrative commands. In other words, peer tasks do not require a master to function correctly. Moreover, although tasks communicate with one another, their work can be totally independent and may even be unrelated. Peer-to-peer organizations eliminate the potential for an SPOF and bandwidth bottlenecks, thus they typically exhibit good scalability and robust fault tolerance. Making decisions in peer-to-peer organizations, however, must be carried out collectively, usually through voting mechanisms. This arrangement typically implies increased implementation complexity as well as higher communication overhead and latency, especially in large-scale systems such as the cloud. GraphLab, which we discuss in later sections, employs a peer-to-peer organization. 
+
+### References
+
+1. _A. S. Tanenbaum (September 4, 1994). Distributed Operating Systems Prentice Hall, First Edition_
+2. _Hadoop ().  http://hadoop.apache.org/_
+3. _Hadoop Tutorial ().  http://developer.yahoo.com/hadoop/tutorial/_
+4. _G. Malewicz, M. H. Austern, A. J. Bik, J. C. Dehnert, I. Horn, N. Leiser, and G. Czajkowski (2010). Pregel: A System for Large-Scale Graph Processing In Proceedings of the 2010 ACM SIGMOD International Conference on Management of_
+5. _Y. Low, D. Bickson, J. Gonzalez, C. Guestrin, A. Kyrola, and J. M. Hellerstein (2012). Distributed GraphLab: A Framework for Machine Learning and Data Mining in the Cloud Proceedings of the VLDB Endowment_
+6. _K. Li (1986). Shared Virtual Memory on Loosely Coupled Multiprocessors Yale University, NewHaven, CT (USA)_
+7. _A. S.Tanenbaum (September 4, 1994). Distributed Operating Systems Prentice Hall, First Edition_
+8. _OpenMP ().  http://openmp.org/wp/_
+9. _Message Passing Interface ().  http://www.mcs.anl.gov/research/projects/mpi/_
+10. _MPICH ().  http://www.mpich.org/_
+11. _A. S. Tanenbaum and M. V. Steen (October 12, 2006). Distributed Systems: Principles and Paradigms Prentice Hall, Second Edition_
+12. _L. G. Valiant (1990). A Bridging Model for Parallel Computation Communications of the ACM_
+13. _D. P. Bertsekasand and J. N. Tsitsiklis (January 1, 1997). Parallel and Distributed Computation: Numerical Methods Athena Scientific; First Edition_
+14. _T. H. Cormen, C. E. Leiserson, R. L. Rivest, and C. Stein (July 31, 2009). Introduction to Algorithms MIT Press, Third Edition_
+15. _B. Hendrickson and T. G. Kolda (2000). Graph Partitioning Models for Parallel Computing Parallel Computing_
+16. _M. R. Garey, D. S. Johnson, and L. Stockmeyer (1976). Some Simplified NP-Complete Graph Problems Theoretical Computer Science_
+17. _B. Hendrickson and R. Leland (1995). The Chaco User's Guide Version 2.0 Technical Report SAND95-2344, Sandia National Laboratories_
+18. _G. Karypis and V. Kumar (1998). A Fast and High Quality Multilevel Scheme for Partitioning Irregular Graphs SIAM Journal on Scientific Computing_
+19. _R. H. Thomas (1979). A Majority Consensus Approach to Concurrency Control for Multiple Copy Databases ACM Transactions on Database Systems (TODS)_
+20. _D. K. Gifford (1979). Weighted Voting for Replicated Data In Proceedings of the Seventh ACM Symposium on Operating Systems Principles_

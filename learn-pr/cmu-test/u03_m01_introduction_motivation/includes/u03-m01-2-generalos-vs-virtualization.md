@@ -12,3 +12,9 @@ Figure 3.4 demonstrates approximate logical locations of the two leading example
 ![Figure 3.4: Traditional OSs and popular hypervisors along the efficiency and isolation dimensions.](../media/OSs_hypervisors_isolationDimensions.png)
 
 _Figure 3.4: Traditional OSs and popular hypervisors along the efficiency and isolation dimensions._
+
+
+
+### References
+
+1. _Soltesz et al. (2007). Container-Based Operating System Virtualization: A Scalable, High-Performance Alternative to Hypervisors  In ACM SIGOPS Operating Systems Review (Vol. 41, No. 3, pp. 275-287), ACM_

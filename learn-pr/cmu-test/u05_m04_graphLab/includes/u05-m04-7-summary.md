@@ -4,39 +4,39 @@ In this section, we explore the abstraction of GraphLab by walking through the P
 
 PageRank has various implementations, but its idea can be demonstrated with the following equation: 
 <!-- TODO fix
-<m:math display="block" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo lspace="0px" rspace="0px">] =</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>15</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> +</m:mo><m:mrow><m:munder><m:mo>sum</m:mo><m:mrow><m:mi>j</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>Nbr</m:mi><m:mo fence="false" stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo></m:mrow></m:munder><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">ji</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext><m:mo lspace="2px" rspace="2px">times</m:mo><m:mi>R</m:mi><m:mo fence="false" stretchy="false">[</m:mo><m:mi>j</m:mi><m:mo fence="false" stretchy="false" form="infix">]</m:mo></m:mrow></m:mrow><m:mo fontfamily="Times New Roman"></m:mo></m:mrow></m:math>
+<m:math display="block" xmlns:m="m"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo lspace="0px" rspace="0px">] =</m:mo><m:mn>0</m:mn><m:mo>.</m:mo><m:mn>15</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> +</m:mo><m:mrow><m:munder><m:mo>sum</m:mo><m:mrow><m:mi>j</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>Nbr</m:mi><m:mo fence="false" stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo></m:mrow></m:munder><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">ji</m:mi><m:mtext fontfamily="Times New Roman" mathsize="small"></m:mtext><m:mo lspace="2px" rspace="2px">times</m:mo><m:mi>R</m:mi><m:mo fence="false" stretchy="false">[</m:mo><m:mi>j</m:mi><m:mo fence="false" stretchy="false" form="infix">]</m:mo></m:mrow></m:mrow><m:mo fontfamily="Times New Roman"></m:mo></m:mrow></m:math>
 -->
 
 
 
 where 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo fence="false" stretchy="false" form="infix">]</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo fence="false" stretchy="false" form="infix">]</m:mo></m:mrow></m:math>
 -->
 
  represents the PageRank value of page 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>i</m:mi></m:mrow></m:math>
 -->
 
 , 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>Nbr</m:mi><m:mo fence="false" stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>Nbr</m:mi><m:mo fence="false" stretchy="false">(</m:mo><m:mi>i</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo></m:mrow></m:math>
 -->
 
  is the set of pages pointing to page 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>i</m:mi></m:mrow></m:math>
 -->
 
  and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">ji</m:mi><m:mtext mathsize="small"></m:mtext></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">ji</m:mi><m:mtext mathsize="small"></m:mtext></m:mrow></m:math>
 -->
 
  is a weight associated with this link, which is normally defined as the inverse of page 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>j</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>j</m:mi></m:mrow></m:math>
 -->
 
 ’s outdegree.
@@ -55,7 +55,7 @@ ________________________________________________________________________________
 - _Gather(_j,i _)_ Function:
     - return 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">ji</m:mi><m:mtext mathsize="small"></m:mtext><m:mo lspace="2px" rspace="2px">times</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>j</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">ji</m:mi><m:mtext mathsize="small"></m:mtext><m:mo lspace="2px" rspace="2px">times</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>j</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math>
 -->
 
 
@@ -63,7 +63,7 @@ ________________________________________________________________________________
 - _Sum(_a,b _)_ Function:
     - return 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>a</m:mi><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>+</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>b</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>a</m:mi><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>+</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mi>b</m:mi></m:mrow></m:math>
 -->
 
 
@@ -71,7 +71,7 @@ ________________________________________________________________________________
 - _Apply(_i,Sigma _)_ Function:
     - 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>=</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mn>0.15</m:mn><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>+</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo rspace="2px" largeop="false">sum</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>=</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mn>0.15</m:mn><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo>+</m:mo><m:mtext fontfamily="Times New Roman"></m:mtext><m:mo rspace="2px" largeop="false">sum</m:mo></m:mrow></m:math>
 -->
 
 
@@ -79,12 +79,12 @@ ________________________________________________________________________________
 - _Scatter(_i,j _)_ Function:
     - if 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">[</m:mo><m:mi>i</m:mi><m:mo stretchy="false">]</m:mo></m:mrow></m:math>
 -->
 
  changed, then trigger 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>j</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>j</m:mi></m:mrow></m:math>
 -->
 
  to be recomputed (to be made active)

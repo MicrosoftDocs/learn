@@ -22,3 +22,14 @@ The combiner function is best illustrated through an example. Assume a map funct
 <sup>1</sup>The number of HDFS blocks of a job can be computed by dividing the job's dataset size by the configurable HDFS block size.
 
 <sup>2</sup>Each reduce task processes one or many values produced by one or many map tasks.
+
+### References
+
+1. _S. Ibrahim, H. Jin, L. Lu, S. Wu, B. He, and L. Qi (Dec. 2010). LEEN: Locality/Fairness-Aware Key Partitioning for MapReduce in the Cloud CloudComm_
+2. _M. Hammoud and M. F. Sakr (2011). Locality-Aware Reduce Task Scheduling for MapReduce CloudCom_
+3. _M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). Improving Mapreduce Performance in Heterogeneous Environments OSDI_
+4. _Hadoop ().  http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html_
+5. _S. Ghemawat, H. Gobioff, and S. T. Leung (Oct. 2003). The Google File System SOSP_
+6. _S. Chen and S. W. Schlosser (May 2008). Map-Reduce Meets Wider Varieties of Applications Intel Research Pittsburgh, Tech. Rep. IRP-TR-08-05_
+7. _M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic CLOUD_
+8. _J. Gray, S. Chaudhuri, A. Bosworth, A. Layman, D. Reichart, M. Venkatrao, and H. Pirahesh (1997). Data Cube: A Relational Aggregation Operator Generalizing Group-by, Cross-tab, and Sub-totals Data Mining and Knowledge Discovery_

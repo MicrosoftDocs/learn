@@ -42,3 +42,9 @@ Utility computing offers numerous charging structures for the leasing of compute
 Parallel and distributed computing allow distributed entities located at networked computers to communicate and coordinate their actions in order to solve certain problems, represented as parallel programs. Writing parallel programs for distributed clusters is inherently difficult. To achieve high programming efficiency and flexibility in the cloud, a programming model is required.
 
 Programming models for clouds give users the flexibility to express parallel programs as sequential computation units (e.g., functions as in MapReduce and vertices as in GraphLab). Such programming models' runtime systems typically parallelize, distribute, and schedule computational units, manage inter-unit communication, and tolerate failures. Cloud programming models are covered in Unit 5.
+
+### References
+
+1. _Simson L. Garfinkel (1999). Architects of the Information Society: Thirty-Five Years of the Laboratory for Computer Science at MIT MIT Press_
+2. _Douglas J. Parkhill (1966). The Challenge of the Computer Utility Addison-Wesley Publishing Company, Reading, MA_
+3. _Michelle Bailey (2009). The Economics of Virtualization: Moving Toward an Application-Based Cost Model VMware Sponsored IDC Whitepaper_

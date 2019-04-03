@@ -48,3 +48,7 @@ In case a lineage chain grows extremely long or has very wide dependencies, it m
 Checkpointing is done for tracking metadata (job configuration, job state) and saving some of the generated RDDs to reliable storage (HDFS). 
 
 Using the techniques of lineage and checkpointing, Spark achieves fault-tolerance and recovery. 
+
+### References
+
+1. _Zaharia, Matei and Chowdhury, Mosharaf and Das, Tathagata and Dave, Ankur and Ma, Justin and McCauley, Murphy and Franklin, Michael J and Shenker, Scott and Stoica, Ion (2012). Resilient distributed datasets: A fault-tolerant abstraction for in-memory cluster computing Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation_

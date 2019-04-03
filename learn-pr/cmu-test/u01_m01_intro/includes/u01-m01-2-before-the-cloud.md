@@ -80,3 +80,13 @@ Clearly, these systems are expected to deal with a high volume of concurrent use
  The cloud was a logical successor that combined many of the features of the solutions above. For example, instead of universities contributing and sharing access to a pool of resources using a Grid, the cloud allows them to lease computing infrastructure that was centrally administered by a Cloud Service Provider (CSP). As the central provider maintained a large resource pool to satisfy all clients, the cloud made it easier to dynamically scale up and down demand within a short period of time. Instead of open standards like the grid, however, cloud computing relies on proprietary protocols and needs the user to place a certain level of trust in the CSP. 
 
  The rest of this unit covers how the cloud evolved to make computing a public utility that could be metered and used. 
+
+### References
+
+1. _Real Time Statistics Project (2015). Internet Live Stats www.internetlivestats.com/_
+2. _IBM (2015). What is Big Data? www-01.ibm.com/software/data/bigdata/what-is-big-data.html_
+3. _Accenture (2015). Increased Use of Digital Technologies Could Add $1.36 Trillion to World’s Top 10 Economies in 2020 newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm_
+4. _Google Inc. (2015). How Search Works https://www.google.com/insidesearch/howsearchworks/thestory/_
+5. _Hilbert, Martin and Lopez, Priscila (2011). The world’s technological capacity to store, communicate, and compute information_
+6. _Hamilton, James R and others (2007). On Designing and Deploying Internet-Scale Services_
+7. _Brewer, Eric and others (2001). Lessons from giant-scale services_

@@ -115,3 +115,8 @@ The primary disadvantages of HDFS include the following:
 - _Write-once model:_ The write-once model is a potential drawback for applications that require concurrent write accesses to the same file. However, the latest version of HDFS now supports file appends.
 
 In short, HDFS is a good option as a storage back end for distributed applications that follow the MapReduce model or have been specifically written to use HDFS. HDFS can be used efficiently with a small number of large files rather than a large number of small files.
+
+### References
+
+1. _Ghemawat, Sanjay, Gobioff, Howard, and Leung, Shun-Tak (October 2003). 19th Symposium on Operating Systems Principles (conference), Lake George, NY The Google File System_
+2. _White, Tom (2012). Hadoop: The Definitive Guide O'Reilly Media, Yahoo Press_

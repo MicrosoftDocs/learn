@@ -56,3 +56,8 @@ In an ideal case, a sharded database will evenly spread out the data across all 
 Consistent hashing is a special kind of hashing technique which allows for a hash table to be expanded in an efficient manner. If `K` is the total number of keys and n is the number of buckets in a given hash table, consistent hashing requires only `K/n` keys to be remapped on average every time a new bucket is added to the hash table. More details on consistent hashing can be read here.
 
 Some systems use a combination of replication and sharding to provide high performance while maintaining high availability and fault tolerance. However, when using replication, a major concern is consistency, which will be discussed next.
+
+### References
+
+1. _Karger, David and Lehman, Eric and Leighton, Tom and Panigrahy, Rina and Levine, Matthew and Lewin, Danielr (1997). Consistent Hashing and Random Trees: Distributed Caching Protocols for Relieving Hot Spots on the World Wide Web Proceedings of the Twenty-ninth Annual ACM Symposium on Theory of Computing_
+2. _Eric Brewer (2000). Towards Robust Distributed Systems Proceedings of the Annual ACM Symposium on Principles of Distributed Computing_

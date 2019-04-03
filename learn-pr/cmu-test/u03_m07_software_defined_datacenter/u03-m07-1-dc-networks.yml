@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 13
+durationInMinutes: 14
 content: |
   [!include[](includes/u03-m07-1-dc-networks.md)]

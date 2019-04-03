@@ -21,3 +21,8 @@ A few decades ago, to be a computer _user_ meant to be a _programmer_. Early pro
 Fast forward to today, when you are developing applications on the cloud, there does _not yet exist_ a compiler that allocates massive virtualized resources automatically to solve your specific problem. It is up to you, the cloud programmer, to do the management and to make your applications cost efficient at scale. Analogous to understanding the components within a single computer, knowing the underlying components of a data center will improve your abilities to program and debug your cloud-based applications.
 
 Most of you will never go on to design and build your own large-scale data center, but understanding what goes into implementing the underlying infrastructure will help you appreciate all of things that cloud providers are doing for you.
+
+### References
+
+1. _Barroso, Luiz André, and Urs Hölzle (2009). The datacenter as a computer: An introduction to the design of warehouse-scale machines Synthesis Lectures on Computer Architecture_
+2. _Gordon Bell and Allen Newell (1970). The PMS and ISP descriptive systems for computer structures Joint Computer Conference_

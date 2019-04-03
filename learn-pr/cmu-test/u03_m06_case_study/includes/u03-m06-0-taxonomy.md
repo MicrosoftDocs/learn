@@ -38,3 +38,8 @@ To elaborate on some of the features, live migration allows running VMs to be se
 |Live Migration Support|Yes|Yes|Yes|Yes|
 |Contains Device Drivers|Yes|No|No|Yes|
 |Common Cloud Vendors|[vCloud Hybrid Service](http://www.vmware.com/products/vcloud-hybrid-service)|[Microsoft Azure](http://www.windowsazure.com/en-us/)|[Amazon EC2](http://aws.amazon.com/ec2) and [Rackspace](http://www.rackspace.com/)|[IBM SmartCloud](http://www.ibm.com/cloud-computing/us/en/)|
+
+
+### References
+
+1. _XenProject (2014). Virtualization Spectrum Source: http://wiki.xenproject.org/wiki/Virtualization_Spectrum_

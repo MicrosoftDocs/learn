@@ -41,3 +41,15 @@ Last, EC2 instances that are attached to Amazon EBS volumes can attain improved 
 ##  Security
 
 Security in Amazon EC2 is provided at multiple levels. First, as pointed out earlier, EC2 instances are controlled completely by users. Users have full root access, or administrative control, over their instances, accounts, services, and applications. AWS does not have any access rights to user instances and cannot log into their guest OSs. Second, Amazon EC2 provides a complete firewall solution, whereby the default state is to deny all incoming traffic to any user instance. Users must explicitly open ports for specific inbound traffic. Third, API calls to start/stop/terminate instances, alter firewall configurations, and perform other related functions are all signed by the user's Amazon Secret Access Key. Without the Amazon Secret Access Key, API calls on Amazon EC2 instances cannot be made. Fourth, the virtualized environment provided by Xen provides a clear security separation between EC2 instances and the hypervisor as they run at different privileged modes. Fifth, the AWS firewall is placed in the hypervisor between the physical network interface and the virtual interfaces of instances. Hence, because packet requests are all privileged, they must trap to the hypervisor and accordingly pass through the AWS firewall. Consequently, any two communicating instances are treated as separate virtual machines on the Internet, even if they are placed on the same physical machine. Finally, because Amazon EBS volumes can be associated with EC2 instances, their accesses are restricted to the AWS accounts that created the volumes. This indirectly denies all other AWS accounts (and corresponding users) from viewing and accessing the volumes. We note, however, that this does not impact the flexibility of sharing data on the AWS cloud platform. In particular, users can still create Amazon S3 snapshots of their Amazon EBS volumes and share them with other AWS accounts/users. Nevertheless, only the users who own the volumes are allowed to delete or alter EBS snapshots.
+
+### References
+
+1. _Xen 4.1 Release Notes ().  http://wiki.xen.org/wiki/Xen 4.1 Release Notes_
+2. _Xen 4.0 Release Notes ().  http://wiki.xen.org/wiki/Xen 4.0 Release Notes_
+3. _Amazon Elastic Compute Cloud ().  http://aws.amazon.com/ec2/_
+4. _B. Farley, V. Varadarajan, K. Bowers, A. Juels, T. Ristenpart, and M. Swift (2012). More for Your Money: Exploiting Performance Heterogeneity in Public Clouds Heterogeneity in Public Clouds_
+5. _S. Ghemawat, H. Gobioff, and S. T. Leung (Oct. 2003). The Google File System SOSP_
+6. _Hadoop ().  http://hadoop.apache.org/_
+7. _J. Dean and S. Ghemawat (Dec. 2004). MapReduce: Simplified Data Processing On Large Clusters OSDI_
+8. _M. S. Rehman and M. F. Sakr (Nov. 2010). Initial Findings for Provisioning Variation in Cloud Computing CloudCom_
+9. _Amazon (May 2011). Amazon Web Services: Overview of Security Processes Amazon Whitepaper_

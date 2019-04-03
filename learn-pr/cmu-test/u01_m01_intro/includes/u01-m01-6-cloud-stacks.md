@@ -47,3 +47,7 @@ _Storage_: OpenStack offers two types of storage services: an object storage ser
 _Networking_: OpenStack offers a pluggable, scalable and API-driven system called Neutron to manage networks, VLANs and IP address pools for virtual machines. A novel feature of OpenStack networking is support for Software Defined Networks such as OpenFlow, which enable fine-grained configuration of networking hardware in response to provisioning or traffic requirements. More information on Software Defined Networks will be covered later. 
 
 _PaaS Products_: OpenStack itself does not have any PaaS services, but public cloud providers that are built on top of OpenStack have a few. For example, Rackspace provides several platforms for website hosting and managed Hadoop clusters.
+
+### References
+
+1. _Li Ang, et. al.  (2010). CloudCmp: Shopping for a Cloud Made Easy  Proceedings of the 2nd USENIX conference on Hot topics in cloud computing_

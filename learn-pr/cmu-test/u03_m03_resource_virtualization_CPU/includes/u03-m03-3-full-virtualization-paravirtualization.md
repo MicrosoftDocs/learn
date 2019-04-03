@@ -19,3 +19,8 @@ If a processor does not satisfy Popek and Goldberg's virtualization requirement,
 _Figure 3.22: Code scanning and patching to enforce critical instructions to trap to the hypervisor. The code is shown in a format close to a control flow diagram._
 
 `../webcontent/didIGetThis.xml` `../webcontent/didIGetThis2.xml`
+
+### References
+
+1. _Popek, J., and Goldberg, R. (1974). Formal Requirements for Virtualizable Third Generation Architectures Commun. ACM, Vol. 17, No. 7._
+2. _Smith, J. E., and Nair, R. (2005). The Architecture of Virtual Machines Computer, 38(5), 32-38._

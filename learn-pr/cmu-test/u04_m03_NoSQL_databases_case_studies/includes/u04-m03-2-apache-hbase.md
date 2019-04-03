@@ -81,3 +81,7 @@ HBase is best suited for big-data storage, which requires fast access to multipl
 
 HBase does not support the join operation, where data from two or more tables are combined on a common column to create another table. If your application is dependent on joins, then HBase may not be the right choice. In addition, HBase's relaxed consistency model places additional burdens on the application developer, for example, to verify the results of scans.<!-- , for example -->
 <!-- Activity goes here -->
+
+### References
+
+1. _Apache Software Foundation (2014). The Apache HBase™ Reference Guide O'Reilly Media/Yahoo Press_

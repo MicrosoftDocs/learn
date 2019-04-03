@@ -143,3 +143,10 @@ Of course, to achieve all these properties using RDDs, we also must choose a sui
 Consider that our input dataset consists of files on HDFS. By default, `partitions()` returns a list for each HDFS block encompassed by the file. Each Partition object in this list is represented by the block’s offset. Since this is an HDFS system, `preferredLocations(p)` returns the list of nodes storing a local copy of the block. The `iterator(p, parentIters)` simply reads the block. 
 
 At this stage, we have looked at RDDs and some of the basic operations on them. In the next pages, we will cover more detailed examples to understand how RDDs help Spark achieve very high performance for many types of applications and also how they enable fault tolerance and recovery. 
+
+### References
+
+1. _Zaharia, Matei and Chowdhury, Mosharaf and Das, Tathagata and Dave, Ankur and Ma, Justin and McCauley, Murphy and Franklin, Michael J and Shenker, Scott and Stoica, Ion (2012). Resilient distributed datasets: A fault-tolerant abstraction for in-memory cluster computing Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation_
+2. _Janakiraman, G and Tamir, Yuval (1994). Coordinated checkpointing-rollback error recovery for distributed shared memory multicomputers Reliable Distributed Systems, 1994. Proceedings., 13th Symposium on_
+3. _Holden Karau, Andy Konwinski, Patrick Wendell, Matei Zaharia (2015). Learning Spark: Lightning-Fast Big Data Analytics O'Reilly Media_
+4. _Li, Haoyuan and Ghodsi, Ali and Zaharia, Matei and Shenker, Scott and Stoica, Ion (2014). Tachyon: Reliable, memory speed storage for cluster computing frameworks Proceedings of the ACM Symposium on Cloud Computing_

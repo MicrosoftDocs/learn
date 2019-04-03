@@ -44,3 +44,9 @@ _Figure 4.2: Predicted growth of data from 2009 to 2020_
 
 
 Organizations are trying to leverage or, in fact, cope with the massive amounts of data that are growing at ever-increasing rates. Google, Yahoo!, and Facebook have gone from processing gigabytes and terabytes to the petabyte range, which puts immense pressure on their computing infrastructures that need to be available 24/7 and must scale seamlessly as the amount of data produced rises exponentially. These are the challenges to which present and future storage technologies must respond.
+
+### References
+
+1. _John Gantz and David Reinsel (2012). The Digital Universe in 2020 IDC White paper_
+2. _Subramanian Muralidhar, Wyatt Lloyd, Sabyasachi Roy, Cory Hill, Ernest Lin, Weiwen Liu, Satadru Pan, Shiva Shankar, Viswanath Sivakumar, Linpeng Tang and Sanjeev Kumar (2014). f4: Facebook's Warm BLOB Storage System 11th USENIX Symposium on Operating Systems Design and Implementation (OSDI 14) 383-398 USENIX Association_
+3. _Thomas Rivera (2012). The Evolution of File Systems SNIA Tutorial_

@@ -24,3 +24,7 @@ _Figure 3.10: Using a single, system-wide data structure (a queue in this case) 
 
 
 To this end, we note that resource sharing as described in this page (i.e., in the context of the OS) also applies to virtualization. Indeed, a core task of the hypervisor is to share/multiplex the underlying system components among various virtual machines. Similar to traditional OSs, the hypervisor can apply sharing strategies in space and in time. We discuss later in this unit how the hypervisor can pursue such sharing and provide examples of CPU scheduling algorithms from the Xen platform.
+
+### References
+
+1. _Raj Vaswani and John Zahorjan (1991). The Implications of Cache Affinity on Processor Scheduling for Multiprogrammed, Shared Memory Multiprocessors SIGOPS Oper. Syst. Rev. 25, 5_

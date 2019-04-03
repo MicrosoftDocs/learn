@@ -29,3 +29,14 @@ _Figure 3.3: Mixed-OS environment offered by system virtualization._
 
 
 1. _Facilitating research:_ Running an OS on a VM allows the hypervisor to instrument accesses to hardware resources and count specific event types (e.g., page faults) or even log detailed information about the nature and origin of each event and then record how each operation is satisfied. Moreover, traces of executions and dumps of machine states at points of interests can be taken at the VM level, an action that cannot be performed on native systems. Last, system execution can be replayed on VMs from some saved state for analyzing system behavior under various scenarios. Indeed, the complete state of a VM can be saved, cloned, encrypted, moved, and/or restored; actions that are not so easy to perform with physical machines. As such, it has become common for OS researchers to conduct most of their experiments using VMs rather than native hardware platforms.
+
+### References
+
+1. _Barham et al. (2003). Xen and The Art of Virtualization In Proceedings of the nineteenth ACM symposium on operating systems principles (SOSP '03). ACM, New York, NY, USA_
+2. _Michelle Bailey (2009). The Economics of Virtualization: Moving Toward an Application-Based Cost Model VMware Sponsored Whitepaper_
+3. _Chen and Noble (2001). When Virtual Is Better Than Real IEEE Computer Society, Washington, DC, USA_
+4. _JE Smith and Nair (2005). Virtual Machines: Versatile Platforms For Systems and Processes Morgan Kaufmann_
+5. _A. Beloglazov and R. Buyya (2010). Energy Efficient Allocation of Virtual Machines in Cloud Data Centers CCGrid_
+6. _A. Beloglazov, J. Abawajy, and R. Buyya (2012). Energy-Aware Resource Allocation Heuristics for Efficient Management of Data Centers for Cloud Computing Future Generation Computer Systems_
+7. _Y. Jin, Y. Wen, and Q. Chen (2012). Energy Efficiency and Server Virtualization in Data Centers: An Empirical Investigation Computer Communications Workshops (INFOCOM WKSHPS)_
+8. _Silicon Valley Leadership Group (2008). Accenture, Data Centre Energy Forecast Report Technical Report_

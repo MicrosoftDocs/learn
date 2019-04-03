@@ -104,3 +104,10 @@ Cassandra is also among the most powerful for its write performance, which is in
 Another feature that is useful in Cassandra is that it has out-of-the-box support for replicating across multiple data centers. The fault-tolerance mechanism is more dynamic in nature (compared to HBase/Hadoop) and will not mistake long latencies as failures. The schema-free data model is also good for evolving applications, where application changes may occur frequently. 
 
 The Cassandra project [wiki](http://wiki.apache.org/cassandra/UseCases) has many use-case examples as well. 
+
+### References
+
+1. _Chang, Fay, et al. (2008). BigTable: A distributed storage system for structured data ACM Transactions on Computer Systems (TOCS) 2_
+2. _Merkle, R. (1988). A digital signature based on a conventional encryption function Proceedings of CRYPTO (pp. 369–378). Springer-Verlag_
+3. _Hayashibara, Naohiro, et al. (2004). "The φ accrual failure detector." Reliable Distributed Systems, 2004. Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems. IEEE_
+4. _DeCandia, Giuseppe, et al. (2007). "Dynamo: Amazon's highly available key-value store." ACM SIGOPS Operating Systems Review. Vol. 41. No. 6 ACM_

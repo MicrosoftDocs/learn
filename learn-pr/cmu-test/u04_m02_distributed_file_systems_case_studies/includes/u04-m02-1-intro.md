@@ -14,3 +14,9 @@ In 2003, Google revealed the design of its distributed file system, called GFS, 
 In 2006, Ceph was first described in a paper by Weil et.al. Ceph is designed to be a distributed object storage service that can be scaled to hundreds of thousands of machines, while storing petabytes of data. Applications then talk to Ceph through various APIs, ranging from a native API that is similar to the way GFS works, to a POSIX-compliant file system API called Ceph FS. Ceph also supports a block device abstraction, which makes it a file system that is suitable for storing virtual machine images.
 
 This domain is changing quite fast. Google has evolved GFS into a system known as Colossus. Although details are sketchy, it appears that Google has moved away from GFS's design of a single metadata master and instead use multiple metadata servers. It also appears that they have moved away from simple replication to a scheme based on Reed-Solomon encoding to ensure that data is recoverable in case of failures.
+
+### References
+
+1. _Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006). Ceph: A scalable, high-performance distributed file system Proceedings of the 7th symposium on Operating systems design and implementation (OSDI) 307-320_
+2. _Ghemawat, Sanjay, Gobioff, Howard, and Leung, Shun-Tak (October 2003). 19th Symposium on Operating Systems Principles (conference), Lake George, NY The Google File System_
+3. _McKusick, Kirk and Quinlan, Sean (March 2010). GFS: Evolution on Fast-forward Communications of the ACM_

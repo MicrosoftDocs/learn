@@ -40,3 +40,9 @@ _Connectivity:_ In addition to upfront installation and commissioning costs, net
 _Maintenance:_ Purpose-built data centers also incur significant maintenance overheads in order to keep the facility running smoothly and to minimize downtime. This cost could be 3% to 5% of the initial construction costs. In addition, facilities equipment may need periodic replacement or repair. For example, UPS batteries are replaced once in 5 years, on average. 
 
 _Taxes and/or leasing:_ Building permits are required when building new data center shells or if an existing building's structure is altered significantly. Organizations also need to pay some form of annual property tax on the property owned. This cost, like others, can vary considerably from region to region. Average taxes are estimated to be $70 per square foot in the United States. If you are leasing a property, many of these taxes are included in the monthly price of your lease. 
+
+### References
+
+1. _Rachel Dines, et al. (2011). Build or Buy? The Economics of Data Center Facilities Forrester Research_
+2. _U.S. Energy Information Administration.  (May 7, 2014). Annual Energy Outlook 2014 http://www.eia.gov/electricity/_
+3. _Barroso, Luiz André, and Hölzle, Urs.  (2009). The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines http://bnrg.eecs.berkeley.edu/~randy/Courses/CS294.F09/wharehousesizedcomputers.pdf_

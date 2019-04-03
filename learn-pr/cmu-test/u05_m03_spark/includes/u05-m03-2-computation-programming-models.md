@@ -53,3 +53,11 @@ The core of Spark is the execution and storage of Resilient Distributed Datasets
 |A Note on the Spark Shell|
 |--|
 | Apart from writing programs, Spark also provides an interactive shell. This provides an easy way to explore Spark’s APIs and allows a tool for interactive analysis of large datasets. The shell supports both Python and Scala (but not Java). |
+
+
+### References
+
+1. _Zaharia, Matei and Chowdhury, Mosharaf and Franklin, Michael J and Shenker, Scott and Stoica, Ion (2010). Spark: cluster computing with working sets Proceedings of the 2nd USENIX conference on Hot topics in cloud computing_
+2. _Zaharia, Matei and Chowdhury, Mosharaf and Das, Tathagata and Dave, Ankur and Ma, Justin and McCauley, Murphy and Franklin, Michael J and Shenker, Scott and Stoica, Ion (2012). Resilient distributed datasets: A fault-tolerant abstraction for in-memory cluster computing Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation_
+3. _Hindman, Benjamin and Konwinski, Andy and Zaharia, Matei and Ghodsi, Ali and Joseph, Anthony D and Katz, Randy H and Shenker, Scott and Stoica, Ion (2012). Mesos: A Platform for Fine-Grained Resource Sharing in the Data Center. NSDI_
+4. _Vavilapalli, Vinod Kumar and Murthy, Arun C and Douglas, Chris and Agarwal, Sharad and Konar, Mahadev and Evans, Robert and Graves, Thomas and Lowe, Jason and Shah, Hitesh and Seth, Siddharth and others (2013). Apache hadoop yarn: Yet another resource negotiator Proceedings of the 4th annual Symposium on Cloud Computing_

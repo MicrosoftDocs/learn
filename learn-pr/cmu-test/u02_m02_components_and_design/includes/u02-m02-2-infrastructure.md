@@ -111,3 +111,7 @@ For server rooms in older buildings, all locations of asbestos should be clearly
 Servers can be heavy, even 75 lb (35 kg) for a 4U server. Even some large network switches cannot be lifted and must be delivered by forklift. To reduce back strain and risk of injury, you should use teamwork to mount servers. There are also server lifts that can align a server to the appropriate height for installation and removal.
 
 There should be an adequate number of well-marked emergency exits. This seems obvious but is more difficult in large, containerized data centers and where there a multiple floors in the same facility.
+
+### References
+
+1. _The Green Grid (2008). Quantitative Efficiency Analysis of Power Distribution Configuration for Data Centers www.thegreengrid.org/~/media/WhitePapers/White_Paper_16_-_Quantitative_Efficiency_Analysis_30DEC08.pdf?lang=en_

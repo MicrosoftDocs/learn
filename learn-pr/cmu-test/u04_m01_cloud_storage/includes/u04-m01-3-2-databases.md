@@ -86,3 +86,8 @@ When companies such as Google and Amazon were designing large-scale databases to
 ![Figure 4.16: CAP theorem illustrated](../media/CAP_theorem.png)
 
 _Figure 4.16: CAP theorem illustrated_
+
+
+### References
+
+1. _Eric Brewer (2000). Towards Robust Distributed Systems Proceedings of the Annual ACM Symposium on Principles of Distributed Computing_

@@ -19,3 +19,9 @@ To this end, we note that the master-slave organization suffers from a single po
 ###  Symmetric Peer-to-Peer Organization 
 
 In symmetric organizations, all tasks are equal, with logic, control, and work distributed evenly among them. Specifically, each task can communicate directly with those around it, without having to contact a master process (see Figure 5.12(b)). A master may be adopted, however, but only for purposes such as monitoring the system and/or injecting administrative commands. In other words, peer tasks do not require a master to function correctly. Moreover, although tasks communicate with one another, their work can be totally independent and may even be unrelated. Peer-to-peer organizations eliminate the potential for an SPOF and bandwidth bottlenecks, thus they typically exhibit good scalability and robust fault tolerance. Making decisions in peer-to-peer organizations, however, must be carried out collectively, usually through voting mechanisms. This arrangement typically implies increased implementation complexity as well as higher communication overhead and latency, especially in large-scale systems such as the cloud. GraphLab, which we discuss in later sections, employs a peer-to-peer organization. 
+
+### References
+
+1. _A. S. Tanenbaum and M. V. Steen (October 12, 2006). Distributed Systems: Principles and Paradigms Prentice Hall, Second Edition_
+2. _R. H. Thomas (1979). A Majority Consensus Approach to Concurrency Control for Multiple Copy Databases ACM Transactions on Database Systems (TODS)_
+3. _D. K. Gifford (1979). Weighted Voting for Replicated Data In Proceedings of the Seventh ACM Symposium on Operating Systems Principles_

@@ -50,3 +50,7 @@ Based on their architecture and implementation, file systems can be broadly defi
 ##  Databases
 
 Another layer of abstraction in storage systems is Databases. Databases are typically run on top of file systems, but there are instances where databases are run directly on top of block devices in order to improve performance, but these are rare. As we will see in detail in this module, databases are designed to store and retrieve information for applications. Databases have higher visibility into the data, sometimes allowing for complicated queries and operations on the data. 
+
+### References
+
+1. _Thomas Rivera (2012). The Evolution of File Systems SNIA Tutorial_

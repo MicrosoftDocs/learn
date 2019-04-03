@@ -24,3 +24,7 @@ _Resource Monitoring_: A crucial responsibility of middleware is the monitoring 
 _User Management and Security_: Cloud middleware also must also provide support for access control of users, and use standard security practices for the management of various types of credentials to control access to individual resources. The user management system in the middleware should provide features that allow cloud clients to create and destroy entities such as users and groups, and configure the Access Control Lists (ACLs) that define the resources that individual users and groups have access to. 
 
 _User Interface and APIs_: Finally, cloud middleware must make available a client-facing set of APIs. It is also typical of cloud middleware to provide user-friendly interfaces (typically in the form of Web interfaces), where clients can log in and manage their provisioned resources and make service requests. 
+
+### References
+
+1. _Amrani C., Filali K., Ahmed K., Diallo A., Telolahy S. (2012). A Comparative Study of Cloud Computing Middleware 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing_

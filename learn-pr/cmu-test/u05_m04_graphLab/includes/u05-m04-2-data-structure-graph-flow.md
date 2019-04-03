@@ -26,12 +26,12 @@ ________________________________________________________________________________
 
 _Algorithm 1:_ Greedy Edge-Cuts for placement of edge 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo></m:mrow></m:math>
 -->
 
  for vertex 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
 
@@ -40,54 +40,54 @@ ________________________________________________________________________________
 
 - _if_ there exists a machine that has been assigned both 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
  and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
 -->
 
 _then_
     - Assign 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
 -->
 
  to this machine
 
 - _else if _
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
  and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
 -->
 
  are assigned to different machines _then_
     - Assign 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
 -->
 
  to the machine that has the least number of edges assigned to it
 
 - _else if _
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
  and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi></m:mrow></m:math>
 -->
 
  are assigned to different machines _then_
     - Assign 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
 -->
 
  to the machine that has the least number of edges assigned to it
@@ -95,14 +95,14 @@ _then_
 - _else_
     - Assign 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
 -->
 
  to the least loaded machine
 
 - Mark edge 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi></m:mrow></m:math>
 -->
 
  as assigned
@@ -120,22 +120,22 @@ Construction of graph partitions at cluster machines concludes GraphLab's initia
 
 As shown in Figure 5.46, each cluster machine runs an instance of the GraphLab engine, which incorporates two main parts: the data graph, and the user-defined functions that operate on the data graph. The data graph represents the user program state at a cluster machine and includes a directed graph 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mfenced open="(" close=")"><m:mrow><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo>,</m:mo><m:mi>D</m:mi></m:mrow></m:mfenced></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mfenced open="(" close=")"><m:mrow><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo>,</m:mo><m:mi>D</m:mi></m:mrow></m:mfenced></m:mrow></m:math>
 -->
 
  , where 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
 -->
 
  is the set of vertices, 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
 -->
 
  is the set of edges, and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>D</m:mi></m:mrow></m:math>
 -->
 
  is the user-defined data (e.g., parameters, user input data, and even statistical data). In GraphLab, data is associated with both vertices and edges. 
@@ -148,44 +148,44 @@ _Gather Phase_: In the gather phase, each vertex (henceforth refferred to as the
 
 In the equation above 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi><m:mi mathsize="small">u</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>D</m:mi><m:mi mathsize="small">u</m:mi></m:mrow></m:math>
 -->
 
 , 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi><m:mi mathsize="small">v</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>D</m:mi><m:mi mathsize="small">v</m:mi></m:mrow></m:math>
 -->
 
 , and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>D</m:mi><m:mo mathsize="small" stretchy="false">(</m:mo><m:mi mathsize="small">u</m:mi><m:mo mathsize="small">,</m:mo><m:mi mathsize="small">v</m:mi><m:mo mathsize="small" stretchy="false">)</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>D</m:mi><m:mo mathsize="small" stretchy="false">(</m:mo><m:mi mathsize="small">u</m:mi><m:mo mathsize="small">,</m:mo><m:mi mathsize="small">v</m:mi><m:mo mathsize="small" stretchy="false">)</m:mo></m:mrow></m:math>
 -->
 
  denote values and metadata for vertices 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>u</m:mi></m:mrow></m:math>
 -->
 
 ,
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi></m:mrow></m:math>
 -->
 
  and edge 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>u</m:mi><m:mo>,</m:mo><m:mi>v</m:mi></m:mrow></m:mfenced></m:mrow></m:math>
 -->
 
  respectively. The user defined sum (
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo lspace="2px" rspace="2px">CirclePlus</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo lspace="2px" rspace="2px">CirclePlus</m:mo></m:mrow></m:math>
 -->
 
 ) operation must be commutative and associative and can range from a numerical sum to the union of the data on all neighboring vertices and edges. 
 
 _Apply Phase_: In the apply phase, the resulting value 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo rspace="2px" largeop="false">sum</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo rspace="2px" largeop="false">sum</m:mo></m:mrow></m:math>
 -->
 
  is used to update the value of the central vertex:
@@ -208,17 +208,23 @@ Figure 5.48 illustrates the resulting communication pattern of employing the GAS
 
 _Delta Caching_: There are situations where a vertex program will be triggered (made active) because of a change in only few of its neighbors. When the vertex is triggered, it will execute a gather operation from all neighbors, many of whom have not executed and hence will return values which are unchanged since the last time this particular vertex ran. GraphLab introduces a subtle optimization called delta caching, where the result of gather operations from all of the neighbors of a vertex are cached at that vertex. During the scatter operation that is run at the neighbouring vertices, an optional parameter, 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>Delta</m:mi><m:mi>a</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>Delta</m:mi><m:mi>a</m:mi></m:mrow></m:math>
 -->
 
  can be sent, summarizing the change in the value of variable 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>a</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>a</m:mi></m:mrow></m:math>
 -->
 
  between iterations. This value can be used to bypass the gather phase and added to the cached value of 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>a</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>a</m:mi></m:mrow></m:math>
 -->
 
  to speed up execution. 
+
+### References
+
+1. _Y. Low, J. Gonzalez, A. Kyrola, D. Bickson, C. Guestrin, and J. M. Hellerstein (2010). GraphLab: A New Parallel Framework for Machine Learning Conference on Uncertainty in Artificial Intelligence (UAI)_
+2. _Y. Low, J. Gonzalez, A. Kyrola, D. Bickson, C. Guestrin, and J. M. Hellerstein (2012). Distributed GraphLab: A Framework for Machine Learning and Data Mining in the Cloud PVLDB_
+3. _J. Gonzalez, Y. Low, H. Gu, D. Bickson, and C. Guestrin (October, 2012). PowerGraph: Distributed Graph-Parallel Computation on Natural Graphs In Proc. of the 10th USENIX Conference on Operating Systems Design and Implementation_

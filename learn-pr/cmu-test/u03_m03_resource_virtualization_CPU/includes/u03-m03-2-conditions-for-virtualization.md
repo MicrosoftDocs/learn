@@ -25,3 +25,8 @@ Finally, let us discuss how a trap can be handled in a system. Specifically, we 
 ![Figure 3.20: Demonstration of a trap to a hypervisor. The hypervisor includes three main components: the dispatcher, the allocator, and the interpreter routines.](../media/trap_to_hypervisor.png)
 
 _Figure 3.20: Demonstration of a trap to a hypervisor. The hypervisor includes three main components: the dispatcher, the allocator, and the interpreter routines._
+
+
+### References
+
+1. _Popek, J., and Goldberg, R. (1974). Formal Requirements for Virtualizable Third Generation Architectures Commun. ACM, Vol. 17, No. 7._

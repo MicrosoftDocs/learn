@@ -161,3 +161,10 @@ _Figure 5.31: Job execution timeline for wordcount_
 
 
 <sup>10</sup>The number of map and reduce slots are configurable parameters, which the users can set before submitting jobs to Hadoop MapReduce.
+
+### References
+
+1. _Big-Data Analytics Predictions for 2011 ().  http://tdwi.org/articles/2011/03/16/big-data-analytics-predictions.aspx/_
+2. _T. White (2012). Hadoop: The Definitive Guide, 3nd Edition O'Reilly_
+3. _A. C. Murthy, C. Douglas, M. Konar, O. O'Malley, S. Radia, S. Agarwal, and K. V. Vinod (2011). Architecture of Next Generation Apache Hadoop MapReduce Framework Apache Jira_
+4. _Vavilapalli, Vinod Kumar and Murthy, Arun C and Douglas, Chris and Agarwal, Sharad and Konar, Mahadev and Evans, Robert and Graves, Thomas and Lowe, Jason and Shah, Hitesh and Seth, Siddharth and others (2013). Apache hadoop yarn: Yet another resource negotiator Proceedings of the 4th annual Symposium on Cloud Computing_

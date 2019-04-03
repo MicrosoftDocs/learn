@@ -9,3 +9,7 @@ You will find this unit to be more systems focused than the previous units, but 
 In this module of this unit, we will look at virtualization in general and understand some of the key motivations behind virtual machines, the limitations of general purpose operating systems that led to the emergence of virtualization, and a whirlwind tour of the interfaces and abstractions in a modern computer system. We will then look at the bigger picture of resource sharing and what it means to share a resource in time and space. 
 
 The material presented in this Unit should contain sufficient detail for the course, but interested readers can refer to this popular book on virtual machines to be a fairly comprehensive reference for all virtualization-related concepts. 
+
+### References
+
+1. _JE Smith and Nair (2005). Virtual Machines: Versatile Platforms For Systems and Processes Morgan Kaufmann_

@@ -5,57 +5,57 @@ Machine-learning and data-mining (MLDM) problems are growing exponentially in sc
 
 As a motivating example, lets take a look at a few examples of data modelled as graphs and how computation can be expressed in this model. Mathematically, a graph is modelled as a set: 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>G</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>V</m:mi><m:mo>,</m:mo><m:mi>E</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo></m:mrow></m:math>
 -->
 
  , where 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>V</m:mi></m:mrow></m:math>
 -->
 
  is a set of vertices 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
  and 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>E</m:mi></m:mrow></m:math>
 -->
 
  is a set of edges 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
 . Furthermore, every edge 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
  in 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>G</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>G</m:mi></m:mrow></m:math>
 -->
 
  represents an edge between exactly two vertices 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>V</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>V</m:mi></m:mrow></m:math>
 -->
 
  . There are many types of graphs; they can be undirected which means 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo rspace="3px">forall</m:mo><m:mi>e</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>E</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>e</m:mi><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo>=</m:mo><m:mo lspace="0px" rspace="0px" fence="true">lcub</m:mo><m:mi>v</m:mi><m:mi mathsize="small">j</m:mi><m:mo>,</m:mo><m:mi>v</m:mi><m:mi mathsize="small">i</m:mi><m:mo lspace="0px" rspace="0px" fence="true" form="postfix">rcub</m:mo><m:mo rspace="3px">forall</m:mo><m:mi>e</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>E</m:mi></m:mrow></m:math>
 -->
 
  (i.e. all edges are equivalent and bidirectional), or directed, where the edges are distinct and not equal. Graphs can also be weighted if an additional parameter, known as the weight 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mi>w</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:math>
 -->
 
  exists 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo rspace="3px">forall</m:mo><m:mi>e</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>E</m:mi></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo rspace="3px">forall</m:mo><m:mi>e</m:mi><m:mo lspace="2px" rspace="2px">isin</m:mo><m:mi>E</m:mi></m:mrow></m:math>
 -->
 
  . Furthermore, vertices may also be weighted, and as we will see, this comes in handy in different applications. Typical graph computations include the calculation of the shortest path between two points, partitioning the graph into subgraphs based on some optimization metric (minimum number of edges cut, or maximum flow between the graphs), the calculation of maximum degree (the vertex with the most number of edges), and so on. 
@@ -93,3 +93,7 @@ In this module, we present GraphLab, a variant graph-parallel distributed analyt
 1. We present the programming model employed by GraphLab and the consistency mechanisms supported for protecting shared data from read-write/write-write conflicts. 
 1. We discuss the asynchronous computation model that underlies GraphLab. 
 1. We examine GraphLab's fault-tolerance techniques.
+
+### References
+
+1. _J. Gonzalez, Y. Low, H. Gu, D. Bickson, and C. Guestrin (October, 2012). PowerGraph: Distributed Graph-Parallel Computation on Natural Graphs In Proc. of the 10th USENIX Conference on Operating Systems Design and Implementation_

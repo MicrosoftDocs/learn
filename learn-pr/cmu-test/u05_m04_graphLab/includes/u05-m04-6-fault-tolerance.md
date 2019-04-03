@@ -28,3 +28,8 @@ ________________________________________________________________________________
 ______________________________________________________________________________________
 
 <sup>6</sup>The distributed checkpoint consists of every local checkpoint captured at every cluster machine. Each local checkpoint can be stored in a file, and all files corresponding to local checkpoints can be associated together (in metadata) in order to indicate that they all belong to the same distributed checkpoint.
+
+### References
+
+1. _K. M. Chandy and L. Lamport (1985). Distributed Snapshots: Determining Global States of Distributed Systems ACM Trans. Comput. Syst., 3(1):63–75_
+2. _J. W. Young (1974). A First Order Approximation to the Optimum Checkpoint Interval Commun. ACM, 17:530–531_

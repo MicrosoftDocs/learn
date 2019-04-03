@@ -11,3 +11,7 @@ We now summarize the primary differences between HDFS and Ceph.
 - _Consistency model:_ HDFS guarantees consistency by restricting writes to a single client and not allowing any file updates, while Ceph can guarantee sequential consistency except in rare situations involving a network partition of some of the OSDs.
 - _Caching:_ HDFS supports read-ahead caching on the client side through the streaming model. Clients in Ceph can possess read caches and write buffers only if the client has been provided a lease by the MDS (when the client has exclusive access to a file). When multiple clients are accessing the same file in Ceph, these leases are revoked, forcing the I/O to be synchrononous, in order to manage consistency. 
 - _Fault tolerance:_ HDFS is built for fault tolerance with built-in support for replication at the block level and is rack aware, however, the Namenode is a single-point of failure in HDFS. Ceph, on the other hand is quite robust as it uses complex peer-to-peer protocols to ensure that it is quite faullt tolerant. Failure recovery in Ceph is also quite fast due to the presence of write logs that can be replayed to bring a node up to speed. 
+
+### References
+
+1. _Maltzahn, C., Molina-Estolano, E., Khurana, A., Nelson, A. J., Brandt, S. A., & Weil, S. (2010). Ceph as a scalable alternative to the Hadoop Distributed File System login: The USENIX Magazine vol.35_

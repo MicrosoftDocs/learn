@@ -28,7 +28,7 @@ _Figure 2.35: Tail Latency Example _
 
 Consider a system where all leaf nodes have an average response time of 1 ms, but there is probability of a 1% that the response time is greater than 1000 ms (one second). If each query is handled by only a single leaf node, the probability of the query taking longer than one second is also 1%. However, as we increase the number of nodes to 100, the probability that the query will complete within one second drops to 36.6%, which means that there is a 63.4% chance that the query duration will be determined by the tail (lowest 1%) of the latency distribution. 
 <!-- TODO fix
-<formula><m:math display="block" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mfenced open="(" close=")"><m:msup><m:mn>0.99</m:mn><m:mn>100</m:mn></m:msup></m:mfenced></m:mrow></m:math></formula>
+<formula><m:math display="block" xmlns:m="m"><m:mrow><m:mfenced open="(" close=")"><m:msup><m:mn>0.99</m:mn><m:mn>100</m:mn></m:msup></m:mfenced></m:mrow></m:math></formula>
 -->
 
 
@@ -63,3 +63,11 @@ Many of the sources of variability above have no fool-proof solution. Hence, ins
 
 
 Using these techniques, it is possible to significantly improve the experience of the end-users of a cloud application to the peculiar problem of a long tail. 
+
+### References
+
+1. _Li, J., Sharma, N. K., Ports, D. R., & Gribble, S. D. (2014). Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency. Proceedings of the ACM Symposium on Cloud Computing  ACM_
+2. _Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). ICTCP: Incast Congestion Control for TCP in Data-Center Networks IEEE/ACM Transactions on Networking (TON)  IEEE Press_
+3. _Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). Bobtail: Avoiding Long Tails in the Cloud. 10th USENIX Conference on Networked Systems Design and Implementation  USENIX Association_
+4. _Dean, Jeffrey and Barroso, Luiz Andr{\'e} (2013). The tail at scale Communications of the ACM  ACM_
+5. _Tene, Gil (2014). Understanding Latency - Some Key Lessons and Tools. QCon London_

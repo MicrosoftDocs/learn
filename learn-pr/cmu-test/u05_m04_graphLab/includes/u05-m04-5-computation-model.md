@@ -18,3 +18,15 @@ Although asynchronous engines can result in empirical and algorithmic gains for 
 ##  Asynchronous-Serializable Engine
 
 Graphlab provides a balanced tradeoff between the synchronous and asynchronous engines with the option of using the asynchronous-serializable engine. In this engine. GraphLab prevents adjacent vertices’ GAS functions from running concurrently by using fine-grained, parallel locking protocol, known as the Chandy-Misra scheme. Using this scheme, a machine executing a vertex acquires locks on adjacent edges that are present on the machine (this is determined during the Greedy-Edge cut partitioning described earlier). The resulting execution is guaranteed to be _serializable_; i.e. there exists some serial ordering of execution whose results are equivalent to the results when executed using the asynchronous-seralizable engine. The asynchronous-serializable execution of a graph is equivalent to the _edge consistency_ model as discussed in the previous page.
+
+### References
+
+1. _Y. Low, J. Gonzalez, A. Kyrola, D. Bickson, C. Guestrin, and J. M. Hellerstein (2012). Distributed GraphLab: A Framework for Machine Learning and Data Mining in the Cloud PVLDB_
+2. _J. Gonzalez, Y. Low, H. Gu, D. Bickson, and C. Guestrin (October, 2012). PowerGraph: Distributed Graph-Parallel Computation on Natural Graphs In Proc. of the 10th USENIX Conference on Operating Systems Design and Implementation_
+3. _D. P. Bertsekas and J. N. Tsitsiklis (1989). Parallel and Distributed Computation: Numerical Methods Prentice Hall_
+4. _J. Gonzalez, Y. Low, and C. Guestrin (2009). Residual Splash for Optimally Parallelizing Belief Propagation In AISTATS, vol. 5, pp. 177–184_
+5. _R. Neal and G. Hinton (1998). A View of the EM Algorithm that Justiﬁes Incremental, Sparse, and Other Variants In Learning in Graphical Models, pp. 355–368_
+6. _A. G. Siapas (1996). Criticality and Parallelism in Combinatorial Optimization PhD thesis, Massachusetts Institute of Technology_
+7. _A. J. Smola and S. Narayanamurthy (2010). An Architecture for Parallel Topic Models PVLDB, 3(1):703-710_
+8. _J. Gonzalez, Y. Low, A. Gretton, and C. Guestrin (2011). Parallel Gibbs Sampling: From Colored Felds to Thin Junction Trees In AISTATS, vol. 15, pp. 324-332_
+9. _Chandy, K. M. and Misra, J. (1984). The Drinking Philosophers Problem ACM Trans. Program. Lang. Syst.  632--646_

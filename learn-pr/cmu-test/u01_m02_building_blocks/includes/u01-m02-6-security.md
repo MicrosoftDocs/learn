@@ -30,3 +30,9 @@ For an IaaS cloud, the following table gives an overview of the security control
 Most providers will often build in services simplifying the process for customers to implement security controls. For e.g. AWS provides Security Groups, which is simply an external network firewalls. 
 
 The process of verifying the presence of these controls is known as a security audit. These can be done internally (by hiring a technical consultant) or externally (by a certifying agency). To host sensitive information on the cloud, both the provider and the customer must pass these audits. However, the lack of demarcation of responsibilities in case of a breach have meant that in most cases, applications using sensitive information like bank records or medical data cannot be hosted “on-the-cloud”.
+
+### References
+
+1. _Mather, Tim et. al. (2009). Cloud security and privacy: an enterprise perspective on risks and compliance. O'Reilly Media_
+2. _Winkler, Vic J.R.  (2011). Securing the Cloud: Cloud Computer Security Techniques and Tactics  Elsevier_
+3. _Pucher, Alex et. al. (2012). A Survey on Cloud Provider Security Measures . University of California Santa Barbara_

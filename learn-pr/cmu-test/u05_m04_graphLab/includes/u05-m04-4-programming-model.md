@@ -10,3 +10,9 @@ _Figure 5.49: The full consistency, the edge consistency, and the vertex consist
 
 
 As part of its shared-memory view, GraphLab stores ghosts, the adjacency information/data of each vertex (see the section The Data Structure and Graph Flow), in local memories. A vertex ghost ensures that the vertex's update function has direct memory access to all data within its scope. 
+
+### References
+
+1. _Yucheng Low and Joseph Gonzalez and Aapo Kyrola and Danny Bickson and Carlos Guestrin and Joseph M. Hellerstein (2010). GraphLab: A New Parallel Framework for Machine Learning Conference on Uncertainty in Artificial Intelligence (UAI)_
+2. _Low, Y., Gonzalez, J., Kyrola, A., Bickson, D., Guestrin, C., and Hellerstein, J. M. (2012). Distributed GraphLab: A Framework for Machine Learning and Data Mining in the Cloud PVLDB_
+3. _J. Gonzalez, Y. Low, H. Gu, D. Bickson, and C. Guestrin (October, 2012). PowerGraph: Distributed Graph-Parallel Computation on Natural Graphs In Proc. of the 10th USENIX Conference on Operating Systems Design and Implementation_

@@ -23,3 +23,8 @@ On the other hand, when virtualization is applied to an entire machine, it provi
 ![Figure 3.13: Virtualization as applied to an entire physical system. An OS running on a VM is called a guest OS, and every physical machine is called a host. Compared to a host, a VM can have virtual resources different in quantity and type.](../media/virtualization_on_entire_physical_system.png)
 
 _Figure 3.13: Virtualization as applied to an entire physical system. An OS running on a VM is called a guest OS, and every physical machine is called a host. Compared to a host, a VM can have virtual resources different in quantity and type._
+
+
+### References
+
+1. _Popek, J., and Goldberg, R. (1974). Formal Requirements for Virtualizable Third Generation Architectures Commun. ACM, Vol. 17, No. 7._

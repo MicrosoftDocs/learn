@@ -57,3 +57,8 @@ Techniques to calculate and improve power efficiency in data centers are covered
 |Did you know?|
 |--|
 |Each time you convert from AC to DC, or vice-versa, energy is lost. Similarly, conversions between voltage levels are never 100% efficient.|
+
+
+### References
+
+1. _GeSI (2008). SMART 2020: Enabling the low-carbon economy in the information age Global e-Sustainability Initiative Report_

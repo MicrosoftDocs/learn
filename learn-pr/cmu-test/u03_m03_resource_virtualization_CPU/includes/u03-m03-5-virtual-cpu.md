@@ -26,3 +26,7 @@ CS converts each vCPU's weight to credits. Credits from a vCPU will be deducted 
 
 Xen is an open source hypervisor. Hence, it is possible to devise and add your own scheduler. Chisnall provides an excellent and comprehensive coverage of Xen's internals as well as step-by-step instructions for adding a new scheduler to Xen.
 ##     
+
+### References
+
+1. _David Chisnall (2007). The Definitive Guide to the Xen Hypervisor Prentice Hall_

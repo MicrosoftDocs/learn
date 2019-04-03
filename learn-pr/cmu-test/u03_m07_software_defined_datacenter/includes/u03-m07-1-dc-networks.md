@@ -50,3 +50,9 @@ Network virtualization is a broad term that encompasses many different technique
 Bandwidth and physical channel virtualization are achieved by sharing slots within the network using traditional techniques like TDM/FDM and circuit switching. Datapath virtualization allows packets to travel along a programmable path, allowing flexible flows and traffic management. In the coming pages, we will also explore SDNs, which are an alternative to simple network virtualization. 
 
 In conclusion, cloud data centers rely on a group of techniques to decouple network services from the hardware network, making it easy to programmatically configure and deploy them. 
+
+### References
+
+1. _Liu, Yang and Muppala, Jogesh K and Veeraraghavan, Malathi and Lin, Dong and Hamdi, Mounir (2013). Data Center Networks: Topologies, Architectures and Fault-Tolerance Characteristics Springer Science and Business Media_
+2. _Liu, Yang and Muppala, Jogesh K and Veeraraghavan, Malathi and Lin, Dong and Hamdi, Mounir (2014). Problem statement: Overlays for network virtualization RFC 7364_
+3. _Wen, Heming and Tiwary, Prabhat Kumar and Le-Ngoc, Tho (2013). Wireless virtualization Springer_

@@ -66,3 +66,7 @@ Having a centralized load balancer lends itself to several strategies that can u
 - TCP Buffering - This is a strategy to offload clients with slow connections on to the load balancer in order to relieve servers that are serving responses to these clients. 
 - Caching - In certain scenarios, the load balancer can maintain a cache for the most popular requests (or request that can be handled without going to the servers, like static content) so that it reduces the load on the servers. 
 - Traffic Shaping - For some applications a load balancer can be used to delay/reprioritize the flow of packets such that traffic can molded to suit the server configuration. This does affect the QoS for some requests, but makes sure that the incoming load can be served.
+
+### References
+
+1. _Aron, Mohit and Sanders, Darren and Druschel, Peter and Zwaenepoel, Willy (2000). Scalable content-aware request distribution in cluster-based network servers Proceedings of the 2000 Annual USENIX technical Conference_

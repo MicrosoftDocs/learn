@@ -40,12 +40,12 @@ The PageRank algorithm iteratively updates a rank for each URL by adding contrib
 
  On each iteration, each URL contributes r/n to its neighbors, where r is its own rank, and n is the number of neighbors of that node. It then updates its rank to 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo fontfamily="Times New Roman"></m:mo><m:mfrac><m:mi>a</m:mi><m:mi>N</m:mi></m:mfrac><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> + (</m:mo><m:mn>1</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px">minus</m:mo><m:mi>a</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo fontfamily="Times New Roman"></m:mo><m:mfrac><m:mi>a</m:mi><m:mi>N</m:mi></m:mfrac><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> + (</m:mo><m:mn>1</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px">minus</m:mo><m:mi>a</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:mrow></m:math>
 -->
 
  , where is the 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:math>
 -->
 
  is the sum of all received contributions and N is the total number of documents. _a_ indicates the probability that a random surfer starting from a web page will stop clicking through. This is known as the damping factor (as mentioned above, studies have found it to have a probability of about 0.85).
@@ -72,7 +72,7 @@ for (i &lt;- 1 to ITERATIONS)
 
 In this Spark implementation of PageRank, our input dataset consists of a text file of the format `(URL, rank)`. For each iteration, a join operation on `links` and `ranks` is used to aggregate the contribution for each URL. The `contribs` RDD represents the contribution sent by each URL. These are summed up over each key (using a reduce) and this value is then updated using the PageRank formula 
 <!-- TODO fix
-<m:math display="inline" xmlns:m="urn:http://namespaceurl.com"><m:mrow><m:mo fontfamily="Times New Roman"></m:mo><m:mfrac><m:mi>a</m:mi><m:mi>N</m:mi></m:mfrac><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> + (</m:mo><m:mn>1</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px">minus</m:mo><m:mi>a</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:mrow></m:math>
+<m:math display="inline" xmlns:m="m"><m:mrow><m:mo fontfamily="Times New Roman"></m:mo><m:mfrac><m:mi>a</m:mi><m:mi>N</m:mi></m:mfrac><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px"> + (</m:mo><m:mn>1</m:mn><m:mo fontfamily="Times New Roman" lspace="0px" rspace="0px">minus</m:mo><m:mi>a</m:mi><m:mo fence="false" stretchy="false" form="infix">)</m:mo><m:mrow><m:mo>sum</m:mo><m:mrow><m:mi>c</m:mi><m:mi mathsize="small">i</m:mi></m:mrow></m:mrow></m:mrow></m:math>
 -->
 
 . Once the `ranks` RDD is updated, the process repeats again for the number of iterations specified. 
@@ -86,3 +86,8 @@ As we mentioned on the previous page, the join operation can be optimized to red
 Notice that in Figure 5.37 above, the lineage of the ranks RDD in each iteration keeps increasing. Hence, it may be important to adopta strategy to persist some of the versions of ranks for better fault recovery.
 
 Decisions about partitioning, persistence and choosing the optimal set of operations to define a computation are some of the features that make developing optimal Spark programs challenging. However, if implemented correctly, Spark jobs can have a huge speedup over traditional MapReduce jobs. 
+
+### References
+
+1. _Zaharia, Matei and Chowdhury, Mosharaf and Das, Tathagata and Dave, Ankur and Ma, Justin and McCauley, Murphy and Franklin, Michael J and Shenker, Scott and Stoica, Ion (2012). Resilient distributed datasets: A fault-tolerant abstraction for in-memory cluster computing Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation_
+2. _Holden Karau, Andy Konwinski, Patrick Wendell, Matei Zaharia (2015). Learning Spark: Lightning-Fast Big Data Analytics O'Reilly Media_
