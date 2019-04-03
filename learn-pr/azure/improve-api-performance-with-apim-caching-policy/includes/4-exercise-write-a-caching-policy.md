@@ -183,6 +183,8 @@ You are now ready to run your managed API  in Test.
 
 1. Region Code UK
 
+1. Game Chess
+
 1. Note the result and run again with the same parameters, the date time will increment as this response is not being cached
 
 This time lets add a policy to control the caching of the  GetQuery Operation.
