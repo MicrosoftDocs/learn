@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-04-ai-strategy-in-manufacturing.4-manufacturing-executive-QA
+uid: learn-wwl.ai-strategy-in-manufacturing.manufacturing-executive-QA
 title: Transform business processes in manufacturing with AI - Executive Q&A
 metadata:
   title: Transform business processes in manufacturing with AI - Executive Q&A
   description: In the highly competitive manufacturing business, Jabil is focused on becoming the world's most technologically advanced manufacturing solutions provider. Listen directly from Gary Cantrell, Senior Vice President and Chief Information Officer  of Jabil, about how he is leading the digital transformation of the company and the strategic role that AI is playing.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

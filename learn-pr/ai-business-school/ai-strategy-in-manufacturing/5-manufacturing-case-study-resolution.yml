@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-04-ai-strategy-in-manufacturing.5-manufacturing-case-study-resolution
+uid: learn-wwl.ai-strategy-in-manufacturing.manufacturing-case-study-resolution
 title: Transform business processes in manufacturing with AI - Case study resolution
 metadata:
   title: Transform business processes in manufacturing with AI - Case study resolution
   description: In this unit, you will learn how Jabil transformed manufacturing outcomes with AI.  You will be shown the importance of aligning AI investments with business priorities to leverage AI in a way that provides immediate value.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

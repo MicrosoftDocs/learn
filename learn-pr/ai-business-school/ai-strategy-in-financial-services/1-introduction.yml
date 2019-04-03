@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.data-02-ai-strategy-in-financial-services.1-introduction
+uid: learn-wwl.ai-strategy-in-financial-services.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction to AI strategy in financial services.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

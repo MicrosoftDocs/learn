@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn-wwl.data-02-ai-strategy-in-financial-services
+uid: learn-wwl.ai-strategy-in-financial-services
 metadata:
   title: Define an AI strategy to create business value in financial services
   description: Decision-makers in financial services have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help the financial services sector create business value with AI.
   ms.date: 04/26/2019
-  author: barlan
+  author: barlanmsft
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -26,12 +26,12 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.data-02-ai-strategy-in-financial-services.1-introduction
-- learn-wwl.data-02-ai-strategy-in-financial-services.2-ai-value-in-financial-services-insead
-- learn-wwl.data-02-ai-strategy-in-financial-services.3-financial-services-case-study-introduction
-- learn-wwl.data-02-ai-strategy-in-financial-services.4-financial-services-executive-QA
-- learn-wwl.data-02-ai-strategy-in-financial-services.5-financial-services-case-study-resolution
-- learn-wwl.data-02-ai-strategy-in-financial-services.6-knowledge-check
-- learn-wwl.data-02-ai-strategy-in-financial-services.7-summary-and-resources
+- learn-wwl.ai-strategy-in-financial-services.introduction
+- learn-wwl.ai-strategy-in-financial-services.ai-value-in-financial-services-insead
+- learn-wwl.ai-strategy-in-financial-services.financial-services-case-study-introduction
+- learn-wwl.ai-strategy-in-financial-services.financial-services-executive-QA
+- learn-wwl.ai-strategy-in-financial-services.financial-services-case-study-resolution
+- learn-wwl.ai-strategy-in-financial-services.knowledge-check
+- learn-wwl.ai-strategy-in-financial-services.summary-and-resources
 badge: 
-  uid: learn.module-template2.badge #add the uid for your achievement badge.
+  uid: learn-wwl.ai-strategy-in-financial-services.badge #add the uid for your achievement badge.
