@@ -34,13 +34,13 @@ First, you will create a custom dashboard to display the metrics charts.
 
 1. In the **Select a resource** panel:
 
-  1. In the **Subscription** drop-down, ensure that only the concierge subscription you are using for the exercises is selected.
+   1. In the **Subscription** drop-down, ensure that only the concierge subscription you are using for the exercises is selected.
    
-  1. In the **Resource group** drop-down, ensure that **<rgn>** is selected.
+   1. In the **Resource group** drop-down, ensure that **<rgn>** is selected.
    
-  1. Under **RESOURCE**, click the name of the storage account you created in Unit 3; for example: **monitorstorageaccount**.
+   1. Under **RESOURCE**, click the name of the storage account you created in Unit 3; for example: **monitorstorageaccount**.
    
-  1. Click **Apply**.
+   1. Click **Apply**.
 
 1. Under the chart toolbar, in the **METRIC NAMESPACE** drop-down, select **Blob**.
 
@@ -58,13 +58,13 @@ First, you will create a custom dashboard to display the metrics charts.
 
 1. In the **Select a resource** panel:
 
-  1. In the **Subscription** drop-down, ensure that only the subscription you are using for the exercises is selected.
+   1. In the **Subscription** drop-down, ensure that only the subscription you are using for the exercises is selected.
    
-  1. In the **Resource group** drop-down, ensure that only **<rgn>** is selected.
+   1. In the **Resource group** drop-down, ensure that only **<rgn>** is selected.
    
-  1. Under **RESOURCE**, click the name of the storage account you created in Unit 3; for example: **monitorstorageaccount**.
+   1. Under **RESOURCE**, click the name of the storage account you created in Unit 3; for example: **monitorstorageaccount**.
    
-  1. Click **Apply**.
+   1. Click **Apply**.
 
 1. Under the chart toolbar, in the **METRIC NAMESPACE** drop-down, select **Blob**.
 
@@ -78,11 +78,11 @@ First, you will create a custom dashboard to display the metrics charts.
 
 1. In the **Chart settings** panel:
 
-  1. Under **Chart title**, click **Custom**.
+   1. Under **Chart title**, click **Custom**.
 
-  1. Under **Custom**, clear the text box, and then type **Blob transactions split by API**.
+   1. Under **Custom**, clear the text box, and then type **Blob transactions split by API**.
 
-  1. Close the **Chart settings** panel.
+   1. Close the **Chart settings** panel.
 
 1. On the chart toolbar, click the **Pin to dashboard** menu, and then click **Pin to current dashboard**.
 
@@ -104,13 +104,13 @@ First, you will create a custom dashboard to display the metrics charts.
 
 1. On the **monitor-blobs-container** page:
 
-  1. Click the name of a file that you previously uploaded.
+   1. Click the name of a file that you previously uploaded.
 
-  1. On the overview page for the file, click **Download** on the toolbar.
+   1. On the overview page for the file, click **Download** on the toolbar.
 
-  1. Download the file when prompted to do so.
+   1. Download the file when prompted to do so.
   
-  1. Repeat the previous three steps with several other files.
+   1. Repeat the previous three steps with several other files.
 
 1. On the left-side navigation, click **Dashboard**.
 
