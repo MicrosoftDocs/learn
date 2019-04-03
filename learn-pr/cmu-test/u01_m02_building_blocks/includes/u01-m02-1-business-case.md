@@ -18,8 +18,7 @@ The following video (Video 1.7) discusses the evolution of these models with exa
 
 > [!VIDEO https://youtube.com/embed/yOTcTwWbEpk]
 
-_Video 1.7: Economics of cloud computing, software service models, and costs_ ([alternative
-							version](../media/video_3_IT_business_model.pdf))
+_Video 1.7: Economics of cloud computing, software service models, and costs_ ([alternative version](../media/video_3_IT_business_model.pdf))
 
 ##  Reducing Capital Expenditure
 

@@ -5,8 +5,7 @@ The popularity of cloud computing is driven by its numerous benefits, including 
 
 > [!VIDEO https://youtube.com/embed/uKpFLuqOy-o]
 
-_Video 1.6: The benefits of cloud computing_ ([alternative
-						version](../media/video_2_benefits.pdf))
+_Video 1.6: The benefits of cloud computing_ ([alternative version](../media/video_2_benefits.pdf))
 
 
 Although presented earlier and in the video above, let us consider the cloud benefits individually:

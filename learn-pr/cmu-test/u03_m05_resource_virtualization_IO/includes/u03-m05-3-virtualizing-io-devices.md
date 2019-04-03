@@ -14,8 +14,7 @@ If the hypervisor intercepts an I/O request at the operation-level interface, so
 
 > [!VIDEO https://youtube.com/embed/tMOAx08Ws3w]
 
-_Video 3.12: Shared Devices in Virtualization._ ([Alternative
-							version](../media/video_4_shared_devices.pdf))
+_Video 3.12: Shared Devices in Virtualization._ ([Alternative version](../media/video_4_shared_devices.pdf))
 
 
 As explained in Video 3.12, one physical adapter card can appear as multiple virtual network interface cards (vNICs), each with a separate MAC address and on the same network as the physical one. To network infrastructures, such as LANs and SANs, vNICs appear as regular physical cards.
