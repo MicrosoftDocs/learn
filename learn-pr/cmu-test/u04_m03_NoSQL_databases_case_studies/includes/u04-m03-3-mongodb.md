@@ -47,6 +47,7 @@ MongoDB also allows administrators to ask the system to **explain** queries, sim
 MongoDB manages collections and documents as files on a local file system. If an index is created on a particular key, then MongoDB uses a B-Tree structure to store the index information. MongoDB essentially works on these files on disk in a memory-mapped fashion, leaving it to the OS and file system to manage the in-memory buffer for the files containing the data.
 
 For small installations, MongoDB is deployed as as a single-node system. In order to scale MongoDB to multiple nodes, MongoDB support two scale-out modes: **replication** and **sharding**. In replication, multiple copies of the same data are maintained over multiple servers, allowing for MongoDB to tolerate node failures in case a node goes down. A set of mongodb nodes that has the same data is known as a **replica set**. One node in a replica-set is known as the **primary**, the remaining nodes are known as **secondaries**. By default, only the primary node responds to requests from clients for both reads and writes. The primary node sends out messages to update the replicas whenever there is an operation that writes data. In this mode, MongoDB guarantees strict consistency as all requests for data are processed only by the primary node. 
+
 ![Figure 4.43: Replication in MongoDB](../media/mongo_replica.png)
 
 _Figure 4.43: Replication in MongoDB_
@@ -55,6 +56,7 @@ _Figure 4.43: Replication in MongoDB_
 A MongoDB replica-set is designed for automatic failover. If a node fails to respond for more than 10 seconds, it is presumed to be dead and the remaining nodes vote on which node should be the new primary node.
 
 In order to distribute data, MongoDB allows for data to be **sharded** across multiple nodes. Each shard is an independent database, and collectively, the shards make up a single logical database. The architecture of a sharded MongoDB cluster is illustrated below:
+
 ![Figure 4.44: Sharding in MongoDB](../media/mongo_shards.png)
 
 _Figure 4.44: Sharding in MongoDB_

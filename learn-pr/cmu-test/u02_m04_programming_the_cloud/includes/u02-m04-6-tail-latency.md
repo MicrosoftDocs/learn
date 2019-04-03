@@ -4,6 +4,7 @@ We have already discussed several optimization techniques used on the cloud to r
 ##  What is Tail Latency?
 
 Most cloud applications are large, distributed systems often rely on parallelization to reduce latency. A common technique is to fan-out a request received at a root node (e.g. a front-end web server) to many leaf nodes (back-end compute servers). The performance improvement is driven both by the parallelism of the distributed computation, and also by the fact that extremely expensive data-moving costs are avoided. We simply move the computation to the place where the data is stored. Of course, each leaf node concurrently operates on hundreds or even thousands of parallel requests. 
+
 ![Figure 2.34: Latency due to scale out](../media/scaling_out_latency.png)
 
 _Figure 2.34: Latency due to scale out_
@@ -21,6 +22,7 @@ Such examples are extremely common. A single Facebook request is known to contac
 Clearly, the need for scale has led to a large fan-out at the back-end for each individual request serviced by the front-end. For services that are expected to be “responsive” to retain their user base, heuristics show that responses are expected within 100 ms. As the number of servers required to resolve a query increases, the overall time often depends on the worst performing response from a leaf node to a root node. Assuming that all leaf nodes must complete executing before a result can be returned, the overall latency must always be greater than the latency of the single slowest component.
 
 Like most stochastic processes, the response time of a single leaf node can be expressed as a distribution. Decades of experience have shown that in the general case, most (>99%) requests of a well-configured cloud system will execute extremely quickly. But often, there are very few outliers on a system that execute extremely slowly. 
+
 ![Figure 2.35: Tail Latency Example ](../media/tail_latency.png)
 
 _Figure 2.35: Tail Latency Example_
@@ -33,6 +35,7 @@ Consider a system where all leaf nodes have an average response time of 1 ms, bu
 
 
 If we simulate this for a variety of cases, we see that as the number of servers increase, the impact of a single slow query is more pronounced (notice that the graph below is monotonically increasing). Also, as the probability of these outliers decreases from 1% to 0.01%, the system is substantially lower. 
+
 ![Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study.](../media/tail_latency2.png)
 
 _Figure 2.36: Response time probability and the 50%ile, 95%ile and 99%ile latency of requests in a recent study._

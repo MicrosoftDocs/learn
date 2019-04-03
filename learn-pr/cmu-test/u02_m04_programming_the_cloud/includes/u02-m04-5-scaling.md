@@ -13,6 +13,7 @@ Scaling resources is facilitated by load balancing (we discussed this earlier), 
 Horizontal scaling is a strategy where additional resources can be added to the system or extraneous resources can be removed from the system. This type of scaling is beneficial for the server tier, when the load on the system is unpredictable and fluctuates inconsistently. The nature of the fluctuating load makes it essential to efficiently provision the correct amount of resources to handle the load at all times. 
 
 A few considerations that make this a challenging task is the spin up time of an instance, the pricing model of the cloud service provider and the potential loss in revenue from degrading Quality of Service by not scaling out in time. As an example let’s consider the following load pattern (Figure 2.33): 
+
 ![Figure 2.33: Sample Request Load Pattern](../media/scaling1.png)
 
 _Figure 2.33: Sample Request Load Pattern_

@@ -34,12 +34,14 @@ The [Green Grid](http://www.thegreengrid.org/) consortium has developed the PUE 
 If a data center's PUE is 3.0, then the data center facilities (e.g., power distribution, cooling) utilizes 2 units of energy for every unit delivered to the IT equipment. The lower the PUE, the more efficient the data center facilities. An ideal PUE is 1.0, which would indicate 100% efficiency, meaning that all the power drawn by the data center was delivered to the IT equipment.
 
 In 2007, the Lawrence Berkeley National Labs (LBNL) ran an energy study for 25 data centers (see Figure 2.19). The best PUE, 1.14, resulted in about 87% of the site energy reaching the IT equipment, while in the worst case (PUE 3.0), only 33% makes it to the IT equipment.
+
 ![Figure 2.19: PUE of 25 data centers studied by LBNL (Lawrence Berkeley National Labs, 2007).](../media/PUE_25_data_centers.png)
 
 _Figure 2.19: PUE of 25 data centers studied by LBNL_ ([Lawrence Berkeley National Labs](http://hightech.lbl.gov/documents/DATA_CENTERS/GSAgovEnergyCard_03_09.pdf))
 
 
 The PUE allows companies to identify areas for improvement, address these areas, and monitor the progress in PUE over time. Google publishes quarterly PUEs for their actual data centers, as shown in Figure 2.20. Because Google's data centers are mostly in the northern hemisphere, the average PUE typically rises in the summer because they require increased use of the cooling equipment.
+
 ![Figure 2.20: PUE data for all large-scale Google data centers.](../media/PUE_data_large-scale.png)
 
 _Figure 2.20: PUE data for all large-scale Google data centers._
@@ -53,6 +55,7 @@ PUE simply measures the efficient use of power. Understanding the energy contrib
 In an earlier module, you were introduced to a PDU, or power distribution unit. You also learned about inefficiencies related to multiple conversions. This section shows you the advantages of using three-phase power and some common pitfalls to avoid when choosing the size and number of PDUs. This section is optional reading as it goes into specific details concerning electrical engineering
 
 There are several types of power distribution: rack level, row level, and room level. All of them have an input electrical feed and provide one or more branch circuits, with each branch protected by a circuit breaker (a safety device that will "trip" if there is an overload, stopping the flow of electricity). The difference with row-level PDUs is that they typically take a higher voltage and output to a lower voltage using a transformer (transformers generate heat, so you will also find cooling fans inside a row-level PDU).
+
 ![Figure 2.21: Row-level and rack-level PDUs.](../media/PDUs.png)
 
 _Figure 2.21: Row-level and rack-level PDUs._

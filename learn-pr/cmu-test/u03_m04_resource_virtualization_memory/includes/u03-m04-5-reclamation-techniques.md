@@ -11,6 +11,7 @@ _Video 3.11: Advanced Memory Management._
 
 
 One of the popular reclamation techniques is the **ballooning process** introduced in VMware ESX, which has been the basis for similar techniques in other hypervisors.
+
 ![Figure 3.27: The ballooning process in VMware ESX.](../media/ballooning_process.png)
 
 _Figure 3.27: The ballooning process in VMware ESX._

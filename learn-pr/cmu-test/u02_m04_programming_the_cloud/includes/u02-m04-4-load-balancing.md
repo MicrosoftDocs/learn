@@ -6,6 +6,7 @@ The need for load balancing in computing stems from two basic requirements: Firs
 The most well-known form of load balancing is “Round robin DNS” employed by many large web services to load balance requests among a number of servers. Specifically, multiple front-end web servers, each with a unique IP address share a DNS name. To balance the number of requests on each of these web servers, large companies like Google maintain and curate a pool of IP addresses associated with a single DNS entry. When a client makes a request (e.g. to the domain www.google.com), Google’s DNS would select one of the available addresses from the pool and sends it to the client. The simplest strategy employed to dispatch IP addresses is to use a simple round-robin queue, where after each DNS response, the list of addresses are permuted. 
 
 Before the advent of the cloud, DNS load balancing was a simple way to tackle the latency of long-distance connections. The dispatcher at the DNS server was programmed to respond with the IP address of the server that was geographically nearest to the client. The simplest schemes to do this tried to respond with the IP address from the pool that was numerically the closest to the IP address of the client. This method, of course, was unreliable, as IP addresses are not distributed in a global hierarchy. Current techniques are more sophisticated and rely on a software mapping of IP addresses to locations based on physical maps of Internet Service Providers (ISPs). Since this is implemented as a costly software lookup, this method yields more accurate results, but is expensive to compute. However, the cost of a slow lookup is amortized since the DNS lookup occurs only when the first connection to a server is made by the client. All subsequent communications happen directly between the client and the server that owns the dispatched IP address. An example of a DNS load balancing scheme is shown in the figure below. 
+
 ![Figure 2.31: Load Balancing in a Cloud Hosting Environment](../media/load_balancing_1.png)
 
 _Figure 2.31: Load Balancing in a Cloud Hosting Environment_
@@ -18,6 +19,7 @@ Modern load balancing often refers to the use of a dedicated instance (or a pair
 Though all types of network load balancers will simply forward the user’s information along with any context to the backend servers, when it comes to serving the response back to the client they may employ one of two basic strategies: 
 1. Proxying - In this approach the load balancer receives the response from the backend and relays it back to the client. The load balancer behaves as a standard web proxy and is involved in both halves of a network transaction, namely forwarding the request to the client and sending back the response. 
 1. TCP Handoff - In this approach the TCP connection with the client is handed off to the backend server and therefore the server sends the response directly to the client, without going through the load balancer. 
+
 ![Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server.](../media/tcp_handoff.png)
 
 _Figure 2.32: TCP Handoff mechanism from the dispatcher to the backend server._

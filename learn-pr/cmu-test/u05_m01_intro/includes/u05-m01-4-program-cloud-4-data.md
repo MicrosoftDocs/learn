@@ -4,12 +4,14 @@
 A second consideration in developing distributed programs involves specifying the type of parallelism, data or graph parallelism. The data parallelism design emphasizes the distributed nature of data and spreads it across multiple machines. Computation, meanwhile, can remain the same among all nodes and be applied on different data. Alternately, tasks on different machines can perform different computational tasks. When the tasks are identical, we classify the distributed program as single program, multiple data (SPMD); otherwise, we categorize it as multiple program, multiple data (MPMD). 
 
 The basic idea of **data parallelism** is simple: by distributing a large file across multiple machines, it becomes possible to access and process different parts of the file in parallel. As discussed in Unit 4, one popular technique for distributing data is file striping, in which a single file is partitioned and distributed across multiple servers. Another form of data parallelism is to distribute whole files (without partitioning) across machines, especially if files are small and their contained data exhibit very irregular structures. We note that data can be distributed among distributed tasks either explicitly, by using message passing, or implicitly, by using shared memory, assuming the underlying distributed system supports shared memory. 
+
 ![Figure 5.9: An SPMD distributed program using the shared-memory programming model](../media/SPMD.png)
 
 _Figure 5.9: An SPMD distributed program using the shared-memory programming model_
 
 
 Data parallelism is achieved when each node runs one or many tasks on different pieces of distributed data. As a specific example, assume array A is shared among three machines in a distributed shared-memory system. Consider also a distributed program that simply adds all elements of array A. It is possible to command machines 1, 2, and 3 to run the addition task, each on one-third of array A, or 50 elements, as shown in Figure 5.9. The data can be allocated across tasks using the shared-memory programming model, which requires a synchronization mechanism. Clearly, such a program is SPMD. In contrast, array A can also be distributed evenly (using message passing) by a (master) task among three machines, including the master's machine, as shown in Figure 5.10. Each machine will run the addition task independently; nonetheless, summation results will have to be eventually aggregated at the master task in order to generate a grand total. In such a scenario, every task is similar in a sense that it is performing the same addition operation, yet on a different part of array A. The master task, however, is also distributing data to all tasks and aggregating summation results, thus making it slightly different from the other two tasks. Clearly, this makes the program MPMD. As will be discussed in the MapReduce section, MapReduce uses data parallelism with MPMD programs. 
+
 ![Figure 5.10: An MPMD distributed program using the message-passing programming model](../media/MPMD.png)
 
 _Figure 5.10: An MPMD distributed program using the message-passing programming model_
@@ -94,6 +96,7 @@ Consider a classical problem from circuit design: the common goal of keeping cer
 
 
 is the minimum. As _S_ is acyclic and fully connected, it must result in a tree known as the _minimum spanning tree_. Consequently, solving the wiring problem morphs into solving the minimum spanning tree problem, a classical problem that is solvable with Kruskal's and Prim's algorithms, to mention a few.
+
 ![Figure 5.11: A graph partitioned using the edge-cut metric ](../media/edge_cut_metric.png)
 
 _Figure 5.11: A graph partitioned using the edge-cut metric_

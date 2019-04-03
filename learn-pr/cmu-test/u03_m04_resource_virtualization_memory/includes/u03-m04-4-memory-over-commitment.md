@@ -2,6 +2,7 @@
 ##  Memory Overcommitment
 
 In memory virtualization, the combined total size of real memories can grow beyond the actual size of physical memory. This concept is typically called memory overcommitment. Memory overcommitment ensures that physical memory is highly utilized by active, real memories (assuming multiple VMs running simultaneously). Indeed, without memory overcommitment, the hypervisor can only run VMs with a total size of real memories less than that of the physical memory. For instance, Figure 3.26 shows a hypervisor with 4GB of physical memory and three VMs, each with 2GB of real memory. Without memory overcommitment, the hypervisor can only run one VM because of not having enough physical memory to assign to two VMs at once. Although each VM would require only 2GB of memory, wherein the hypervisor has 4GB of physical memory, this memory cannot be afforded because hypervisors generally require overhead memories (e.g., to maintain various virtualization data structures).
+
 ![Figure 3.26: A hypervisor with 4GB of physical memory, enabling three VMs at once with a total of 6GB of real memory.](../media/4GB_physical_memory.png)
 
 _Figure 3.26: A hypervisor with 4GB of physical memory, enabling three VMs at once with a total of 6GB of real memory._

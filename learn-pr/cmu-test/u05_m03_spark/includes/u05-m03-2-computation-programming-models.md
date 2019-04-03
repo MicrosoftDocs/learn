@@ -13,6 +13,7 @@ One of the frameworks attempting to address these issues is Spark. Spark relies 
 ##  An Overview of Spark
 
 The goal of any distributed programming framework is to support the execution of a parallel computation across multiple nodes in a performant manner. Consider an iterative application that runs a machine learning algorithm on a large graph. Spark would store this graph as a **Resilient Distributed Dataset (RDD)** (Figure 5.32). The Spark Client would store the details of the program to be executed and map it to Spark-specific operations for a cluster, which comprises of many workers. There is a cluster manager that converts these operations into tasks and executes them on the worker nodes. Any cluster requires applications to be scheduled well to maximise the utilization and improve performance. Spark allows different policies to be used to schedule tasks on the cluster depending upon factors such as the priority, duration, and resources required by each task. 
+
 ![Figure 5.32 shows the most important parts of the Spark framework. ](../media/spark_overview.png)
 
 _Figure 5.32 shows the most important parts of the Spark framework._
@@ -25,6 +26,7 @@ Spark relies on resilient distributed datasets (RDDs), a distributed memory abst
 Spark application developers write a driver program to connect to a cluster of workers. The driver defines one or more RDDs and invokes actions on them. The driver also tracks the RDDs’ lineage, which records the history of how this RDD is generated as a Directed Acyclic Graph (DAG). The workers are long-lived processes (running for the entire lifetime of an application) that can store RDD partitions in RAM across operations. 
 
 The `SparkContext` object can connect to several types of cluster managers that handle the scheduling of applications and tasks (Figure 5.33). The cluster manager isolates multiple Spark programs from each other- each application has its own driver and runs on isolated executors coordinated by the cluster manager. Currently, Spark supports applications written in Scala, Java and Python. 
+
 ![Figure 5.33: Spark Architecture](../media/spark_cluster.png)
 
 _Figure 5.33: Spark Architecture_

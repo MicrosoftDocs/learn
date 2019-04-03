@@ -12,6 +12,7 @@ _Video 4.18: Cassandra_
 Cassandra implements the data model of BigTable (which is similar to HBase's data model, as discussed on the previous page), with slightly different terminology. 
 
 A table in Cassandra is referred to as a **column family** (not to be confused with HBase's column family, which is a group of associated columns in a table); see Figure 4.45(a). A **record** (or **row** ) is treated as a key-value pair, with the key being an identifying characteristic of the record. The value is also considered to be a set of key-value pairs, where each key is the name of each column, and each value is the value in the column (Figure 4.45(b)). 
+
 ![Figure 4.45: The Cassandra data model. (a) Logical view of the webtable in Cassandra. (b) A row of the table represented as a nested sequence of key-value pairs.](../media/cassandra.png)
 
 _Figure 4.45: The Cassandra data model. (a) Logical view of the webtable in Cassandra. (b) A row of the table represented as a nested sequence of key-value pairs._
@@ -22,6 +23,7 @@ Like BigTable and HBase, Cassandra also allows for nested columns, which are kno
 Cassandra allows for data to be stored in the key or value parts of each key-value pair. Values can be stored in column or super column names, if required. Typical operations in Cassandra involve storing and retrieving individual rows using the key as well as updates to parts of a row. The data model in Cassandra is hence similar to BigTable and HBase and is fairly flexible to allow various types of data to be stored. The big difference between HBase's and Cassandra's data models is that Cassandra does not have built-in support for versioning like HBase. 
 
 Cassandra supports data operations similar to HBase, with a few exceptions. Typical operations in Cassandra are expressed as **Gets**, **Inserts**, and **Deletes**. Operations can be performed on a single row or a set of rows (called a **range**). In addition, operations<!-- they --> can be performed on a set of columns of a database (called a **slice**), as illustrated in Figure 4.46. 
+
 ![Figure 4.46: Ranges and slices in Cassandra](../media/cassandra_range.png)
 
 _Figure 4.46: Ranges and slices in Cassandra_
@@ -35,6 +37,7 @@ Client requests to read or write data in Cassandra can be serviced by any node i
 ####  Consistent Hashing
 
 Cassandra automatically distributes rows among the various nodes in the cluster using the hash value of the key of each row. In the default case, Cassandra uses a Message Digest 5 (MD5) hashing algorithm on the key of each row, generating hashes that are 128 bits long. The hash value of a key determines where the row is stored in the cluster. In order to distribute rows across the nodes in a Cassandra cluster evenly, each node in the cluster is given a unique token. A token is a range of hash values that is assigned to each node. By default, node tokens are a range of values from 0 to 2127, which are equally divided by the number of nodes in the cluster. The collection of all of the nodes of the cluster is collectively referred to as a **token ring**, with the nodes arranged in order. Every node in the token ring is aware of the other nodes in the token ring and the range of hash values for which they are responsible. An example is illustrated in Figure 4.47. <!-- Figure Reference Fix -->
+
 ![Figure 4.47: Nodes organized as a circular ring of hash values in consistent hashing](../media/cassandra_nodes_token_ring.png)
 
 _Figure 4.47: Nodes organized as a circular ring of hash values in consistent hashing_
@@ -51,6 +54,7 @@ Although the data distribution policy in Cassandra evenly distributes the data a
 Nodes can be added to a Cassandra cluster at any time, which is handled in two ways. Either the administrator manually reassigns tokens for the new incoming node, or Cassandra automatically finds the node with the most data and divides its token in half, giving one half of the hash space to the new incoming node. The new node will not immediately accept requests <!-- so that it has time to -->because it must first learn the topology of the ring and accept data that it may also be responsible for. After it<!-- does this --> has done so, it can join the ring as a full member and begin accepting requests. Cassandra then reshuffles the data among the nodes in the cluster. 
 
 The process of keeping replicas up to date in Cassandra is called **antientropy**. Antientropy in Cassandra is achieved using Merkle trees. A Merkle tree (Figure 4.48) is a hash tree in which the leaves are hashes of the values of individual keys. Parent nodes higher in the tree are hashes of their respective children. The principal advantage of Merkle trees is that each branch of the tree can be checked independently without having to scan the entire branch. Cassandra periodically computes the Merkle trees for each column family and exchanges it among replica members to quickly compute differences in the tables so that they can be synchronized. Compared to other techniques in Cassandra, antientropy is an expensive operation that is not performed often. Cassandra also has techniques to perform instantaneous repairs to replicas during reads (called a **read repair**, which is<!-- and will be --> described later). 
+
 ![Figure 4.48: Merkle trees](../media/merkle_trees.png)
 
 _Figure 4.48: Merkle trees_

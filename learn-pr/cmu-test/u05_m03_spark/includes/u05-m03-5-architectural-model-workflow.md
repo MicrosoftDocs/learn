@@ -79,6 +79,7 @@ In this Spark implementation of PageRank, our input dataset consists of a text f
 -->
 
 . Once the `ranks` RDD is updated, the process repeats again for the number of iterations specified. 
+
 ![Figure 5.37: Lineage graph for the Spark PageRank example](../media/spark_example.png)
 
 _Figure 5.37: Lineage graph for the Spark PageRank example_

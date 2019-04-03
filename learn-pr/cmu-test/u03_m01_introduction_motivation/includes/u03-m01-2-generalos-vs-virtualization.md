@@ -9,6 +9,7 @@ Nonetheless, the unique benefits offered by virtualization come at some cost. Fo
 
 Figure 3.4 demonstrates approximate logical locations of the two leading examples in virtualization, Xen and VMware ESX (more on these later in the module), vis-à-vis some traditional OSs along the efficiency and isolation dimensions. The x axis indicates the kind of isolation supported by the shown hypervisors and OSs, and the y axis exhibits qualitative efficiency. A basic observation is that, to date (March 2013), there is no VM technology that has reached the ideal case of maximizing both efficiency and isolation.
 
+
 ![Figure 3.4: Traditional OSs and popular hypervisors along the efficiency and isolation dimensions.](../media/OSs_hypervisors_isolationDimensions.png)
 
 _Figure 3.4: Traditional OSs and popular hypervisors along the efficiency and isolation dimensions._

@@ -59,12 +59,14 @@ As a motivating example, lets take a look at a few examples of data modelled as 
 -->
 
  . Furthermore, vertices may also be weighted, and as we will see, this comes in handy in different applications. Typical graph computations include the calculation of the shortest path between two points, partitioning the graph into subgraphs based on some optimization metric (minimum number of edges cut, or maximum flow between the graphs), the calculation of maximum degree (the vertex with the most number of edges), and so on. 
+
 ![Figure 5.42: A webgraph where the vertices represent web pages and edges represent the links between pages. As a result of running pagerank on this graph, each vertex has an associated value, known as the rank, which is a representation of the importance of a page, calculated from the number of incoming and outgoing links to that page. ](../media/pagerank.png)
 
 _Figure 5.42: A webgraph where the vertices represent web pages and edges represent the links between pages. As a result of running pagerank on this graph, each vertex has an associated value, known as the rank, which is a representation of the importance of a page, calculated from the number of incoming and outgoing links to that page._
 
 
 Figure 5.42 illustrates an example of the WebGraph. The vertices denote web pages and the edges denote links between web pages. The canonical example of computation performed on a webgraph is PageRank, which calculates the importance of a webpage, based on the pages that are linked to it. Recall the detailed description of PageRank we covered in the previous module. Similarly a social network graph illustrated in Figure 5.43 shows people represented as vertices and edges representing a relationship such as "is a friend", or "follows". Interesting computations here include calculation of the most popular people (calculating the vertices with the most number of edges), or finding strongly knit communities of people who all know each other (triangle counting). 
+
 
 ![Figure 5.43: Visualization of a Facebook social graph for a limited number of users. Source](../media/facebook-network.png)
 
@@ -73,6 +75,7 @@ _Figure 5.43: Visualization of a Facebook social graph for a limited number of u
 
 
 As you can imagine, some of the problems mentioned above are growing in scale and complexity. One of the largest publicly available [webgraphs](http://webdatacommons.org/hyperlinkgraph/) consists of 1.7 billion web pages and 64 billion hyperlinks, and is widely believed to be a much smaller than the data handled by production systems of web services companies such as Google and Microsoft. It would be impossible to encapsulate all this data into the memory of a single computer, but we still need efficient systems that can handle the processing of such large-scale data.
+
 ![Figure 5.44 : The Bulk-Synchronous Parallel (BSP) parallel paradigm.](../media/bsp.png)
 
 _Figure 5.44 : The Bulk-Synchronous Parallel (BSP) parallel paradigm._
@@ -81,6 +84,7 @@ _Figure 5.44 : The Bulk-Synchronous Parallel (BSP) parallel paradigm._
 An example of a system designed to process large graphs in a distributed manner is Google's **Pregel**. Pregel performs computations on Graphs in an iterative, lock-step manner (also known as the **Bulk-Synchronous Parallel** or BSP approach). A Pregel program runs in a series of globally-synchronized iterations, which can result in some computation performed in the context of each vertex in a graph (Figure 5.44). The vertices can then exchange messages with their neighbours, typically this is done to update state or other variables. Pregel then runs the next iteration once all the vertices have completed processing the current execution. Messages exchanged between machines in iteration `i` are delivered in iteration `i+1`. The program will run subsequent iterations until either a convergence condition is met or it completed `N` iterations, where `N` is a user defined number of maximum iterations to be executed. 
 
 Although Pregel offers a promising option as a distributed, graph-parallel analytics engine it suffers from a major deficiency: Pregel runs computation synchronously, which can impact performance as the runtime of each iteration is always dictated by the last thread to complete execution. One can also imagine the implications if a graph is unbalanced in terms of the degree of vertices. This is in fact the case with a large number of graphs of interest to big data analytics. Social graphs, for example, show a power-law distribution, wherein a small number of vertices, have a large number of edges. An example of this phenomenon is the Twitter followers graph (Figure 5.45), where celebrities and influential people have millions of followers, while most other normal users have a much smaller number of followers. 
+
 ![Figure 5.45 : Power-law distribution in the Twitter follower graph. Notice how a small number of vertices (< 100) have a very high in and out-degree (>>10,000) Graph from ](../media/power_law.png)
 
 _Figure 5.45 : Power-law distribution in the Twitter follower graph. Notice how a small number of vertices (< 100) have a very high in and out-degree (>>10,000) Graph from_

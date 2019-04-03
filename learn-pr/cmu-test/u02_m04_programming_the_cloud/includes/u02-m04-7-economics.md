@@ -1,6 +1,7 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m04_programming_the_cloud\x-oli-workbook_page\_u02_m04_7_economics.xml -->
 
 CSPs are taking great pains to attract users from their traditional deployments. Public IaaS cloud prices have been steadily and steeply falling ever since the launch of their services. On average, for most major CSPs, prices have fallen by 20-30% per year since 2013. 
+
 ![Figure 2.37: Average cost reduction of CSP Services](../media/cost_reductions.png)
 
 _Figure 2.37: Average cost reduction of CSP Services_
@@ -25,6 +26,7 @@ Generally reserved instances should be used to meet the base requirements of the
 ##  How to Optimize Cost Utilization
 
 To use the cloud in a cost-effective manner, enterprises must develop a mature process for choosing the resources to deploy, monitor and visualize usage, as well as a clear mechanism to identify waste and optimize utilization. 
+
 ![Figure 2.38: Cost Optimization Process](../media/cost_reductions2.png)
 
 _Figure 2.38: Cost Optimization Process_
@@ -44,6 +46,7 @@ An important technique that ties into cost optimization is that of tagging resou
 ##  Case Study: Netflix's Ice System
 
 As one of the largest AWS customers in the world, it is crucial for Netflix to have clear visibility about their expenditure. To support this requirement, they use an internally designed tool known as Ice. Ice relies on tags and resource metadata to build a dynamic dashboard that allows resources to be grouped by user, team, region, type, pricing model or any custom tag. It also supports the amortization of one time costs such as reserved instances over the lifetime of the resource. All of the data is periodically generated using AWS Billing APIs. 
+
 ![Figure 2.39: Netflix Ice](../media/netflix.png)
 
 _Figure 2.39: Netflix Ice_

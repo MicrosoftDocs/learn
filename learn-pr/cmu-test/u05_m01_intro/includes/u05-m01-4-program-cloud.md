@@ -30,6 +30,7 @@ Programming models embody concepts and offer tools that support developers in bu
 A model's efficiency, however, depends on the effectiveness of its underlying techniques. For a distributed program running on a system of distributed computers, one essential requirement is a communication mechanism that enables coordinating component tasks across multiple, networked resources. Two traditional models, message passing and shared memory, meet this need, although in a relatively basic form. Additional challenges in the distributed programs typical of cloud environments have led to more sophisticated programming models that, when implemented as distributed analytics engines, can automatically parallelize and distribute tasks and can tolerate faults. 
 <!-- Hadoop MapReduce <cite entry="_25" /> <cite entry="_26" /> , Pregel <cite entry="_42" /> and GraphLab <cite entry="_40" /> -->
 ###  The Shared-Memory Model
+
 ![Figure 5.4: Tasks running in parallel and sharing an address space](../media/tasks.png)
 
 _Figure 5.4: Tasks running in parallel and sharing an address space_
@@ -38,6 +39,7 @@ _Figure 5.4: Tasks running in parallel and sharing an address space_
 The shared-memory model's key abstraction says that every task can access any location in an application's distributed memory space. Tasks thus communicate by reading from and writing to memory locations in the distributed memory space, as is the case with threads in a single process, where all threads share the process address space (Figure 5.4). With shared memory, tasks exchange data implicitly via sharing and not by explicitly sending and receiving messages. The shared-memory model, consequently, supports synchronization mechanisms that distributed programs must use to control the order in which various tasks can perform read/write operations. In particular, multiple tasks must not be able to write simultaneously to a shared-data location, which could corrupt data or make it inconsistent. This goal typically can be achieved using semaphores, locks, and/or barriers. A semaphore is a point-to-point synchronization mechanism that involves two parallel/distributed tasks. Semaphores use two operations: post and wait. The post operation acts like depositing a token, signaling that data has been produced. The wait operation blocks until signaled by the post operation that it can proceed to consume data. Locks protect critical sections, which are regions that only one task can access (typically write) at a time. Locks involve two operations, lock and unlock, for acquiring and releasing a lock associated with a critical section. A lock can be held by only one task at a time, and other tasks cannot acquire it until released. Last, a barrier defines a point beyond which a task is not allowed to proceed until every other task reaches that point. The efficiency of semaphores, locks, and barriers is a critical and challenging goal in developing distributed/parallel programs for the shared-memory programming model (see the section ). 
 
 Figure 5.5 shows an example that transforms a simple sequential program into a distributed one using the shared-memory programming model. The sequential program adds the elements of two arrays, `b` and `c`, storing the results in array `a`. Subsequently, any element greater than `0` in `a` is added to a grand sum. The corresponding distributed version assumes only two tasks and splits the work evenly between them. For every task, start and end variables are specified to correctly index the (shared) arrays, obtain data, and apply the given algorithm. Clearly, the grand sum is a critical section and so protected by a lock. In addition, no task can print the grand sum before every other task has finished its work, thus inserting a barrier before the printing statement. As shown in the program, communication between the two tasks is implicit (via reads and writes to shared arrays and variables) and synchronization is explicit (via locks and barriers). Last, as pointed out earlier, the underlying distributed system must provide data-sharing functionality. Specifically, the infrastructure must create the illusion that the memories of all computers in the system form a single, shared space that is addressable by all tasks. A common example of systems that offer such an underlying shared (virtual) address space on a cluster of computers (connected by a LAN) is called DSM. A common programming language that can be used on DSMs and other distributed shared systems is OpenMP.
+
 ![Figure 5.5: Sequential and shared-memory versions ](../media/sequential_program.png)
 
 _Figure 5.5: Sequential and shared-memory versions_
@@ -45,6 +47,7 @@ _Figure 5.5: Sequential and shared-memory versions_
 ###  The Message-Passing Programming Model
 
 In the message-passing programming model, distributed tasks communicate by sending and receiving messages. Here, distributed tasks do not share an address space in which they can access each other’s data (see Figure 5.6), and the key abstraction resembles processes that, unlike threads, each maintain a private memory space. To send and receive data via explicit messages, this model incurs communication overheads (e.g., variable network latency and potentially excessive data transfers). Balancing these overheads, the explicit message exchanges implicitly synchronize the operation sequence in communicating tasks. Figure 5.7 demonstrates an example that transforms the sequential program shown in Figure 5.5(a) into a distributed version that uses message passing. Initially, only a main task with `id = 0` can access the arrays `b` and `c`. Thus, assuming the existence of only two tasks, the main task first sends parts of the arrays to the other task (using an explicit send operation) in order to split the work evenly between the two tasks. The second task receives the required data (using an explicit receive operation) and performs a local sum. When done, it sends back its local sum to the main task. Likewise, the main task performs a local sum on its data part and collects the local sum of the other task before aggregating and printing a grand sum. As shown, for every send operation, there is a corresponding receive operation, and no explicit synchronization is needed. Last, the message-passing programming model does not necessitate any support from the underlying distributed system. Specifically, the interacting tasks require no illusion of a single, shared address space. A popular example of a message-passing programming model is provided by the message passing interface (MPI). MPI is an industry-standard, message-passing library (more precisely, a specification of what a library can do) for writing message-passing programs. A popular high-performance and widely portable implementation of MPI is MPICH.
+
 ![Figure 5.6: Tasks running in parallel using the message-passing programming model whereby the interactions happen only via sending and receiving messages over the network ](../media/message-passing.png)
 
 _Figure 5.6: Tasks running in parallel using the message-passing programming model whereby the interactions happen only via sending and receiving messages over the network_
@@ -57,6 +60,7 @@ Shared-memory programs are initially easier to develop because programmers need 
 How data are laid out and where it is stored begin to affect performance significantly as data and resources scale up. For instance, large-scale distributed systems such as the cloud imply nonuniform access latencies (e.g., accessing remote data takes much more time than accessing local data) thus encouraging programmers to keep data close to the tasks that use them. Although message-passing programmers must plan ahead to partition data across tasks, shared memory programmers will (most of the time) address that issue during postdevelopment, typically through data migration or replication. This adjustment can involve significant tuning effort compared to a message-passing design. 
 
 In large-scale systems, synchronization points can become performance bottlenecks: as the number of users attempting to access a critical section increases, associated delays and waits also increase. We return to synchronization and other challenges involved in programming for the cloud in the section . 
+
 ![Figure 5.7. A distributed program that corresponds to the sequential program in Figure 5.5(a) and is coded using the message-passing programming model](../media/distributed_program.png)
 
 _Figure 5.7. A distributed program that corresponds to the sequential program in Figure 5.5(a) and is coded using the message-passing programming model_
@@ -73,6 +77,7 @@ _Figure 5.7. A distributed program that corresponds to the sequential program in
 _Table 5.1: A comparison between the shared-memory and the message-passing programming models_
 
 ##  Synchronous and Asynchronous Computation Models
+
 ![Figure 5.8: The bulk synchronous parallel (BSP) model ](../media/BSP.png)
 
 _Figure 5.8: The bulk synchronous parallel (BSP) model_
@@ -92,12 +97,14 @@ Across tasks within a super-step, data volumes can still vary, and task loading 
 A second consideration in developing distributed programs involves specifying the type of parallelism, data or graph parallelism. The data parallelism design emphasizes the distributed nature of data and spreads it across multiple machines. Computation, meanwhile, can remain the same among all nodes and be applied on different data. Alternately, tasks on different machines can perform different computational tasks. When the tasks are identical, we classify the distributed program as single program, multiple data (SPMD); otherwise, we categorize it as multiple program, multiple data (MPMD). 
 
 The basic idea of **data parallelism** is simple: by distributing a large file across multiple machines, it becomes possible to access and process different parts of the file in parallel. As discussed in Unit 4, one popular technique for distributing data is file striping, in which a single file is partitioned and distributed across multiple servers. Another form of data parallelism is to distribute whole files (without partitioning) across machines, especially if files are small and their contained data exhibit very irregular structures. We note that data can be distributed among distributed tasks either explicitly, by using message passing, or implicitly, by using shared memory, assuming the underlying distributed system supports shared memory. 
+
 ![Figure 5.9: An SPMD distributed program using the shared-memory programming model](../media/SPMD.png)
 
 _Figure 5.9: An SPMD distributed program using the shared-memory programming model_
 
 
 Data parallelism is achieved when each node runs one or many tasks on different pieces of distributed data. As a specific example, assume array A is shared among three machines in a distributed shared-memory system. Consider also a distributed program that simply adds all elements of array A. It is possible to command machines 1, 2, and 3 to run the addition task, each on one-third of array A, or 50 elements, as shown in Figure 5.9. The data can be allocated across tasks using the shared-memory programming model, which requires a synchronization mechanism. Clearly, such a program is SPMD. In contrast, array A can also be distributed evenly (using message passing) by a (master) task among three machines, including the master's machine, as shown in Figure 5.10. Each machine will run the addition task independently; nonetheless, summation results will have to be eventually aggregated at the master task in order to generate a grand total. In such a scenario, every task is similar in a sense that it is performing the same addition operation, yet on a different part of array A. The master task, however, is also distributing data to all tasks and aggregating summation results, thus making it slightly different from the other two tasks. Clearly, this makes the program MPMD. As will be discussed in the MapReduce section, MapReduce uses data parallelism with MPMD programs. 
+
 ![Figure 5.10: An MPMD distributed program using the message-passing programming model](../media/MPMD.png)
 
 _Figure 5.10: An MPMD distributed program using the message-passing programming model_
@@ -182,6 +189,7 @@ Consider a classical problem from circuit design: the common goal of keeping cer
 
 
 is the minimum. As _S_ is acyclic and fully connected, it must result in a tree known as the _minimum spanning tree_. Consequently, solving the wiring problem morphs into solving the minimum spanning tree problem, a classical problem that is solvable with Kruskal's and Prim's algorithms, to mention a few.
+
 ![Figure 5.11: A graph partitioned using the edge-cut metric ](../media/edge_cut_metric.png)
 
 _Figure 5.11: A graph partitioned using the edge-cut metric_
@@ -194,6 +202,7 @@ The third design consideration is one of organizational structure. An applicatio
 ###  Asymetric Master-Slave Organization 
 
 In a master-slave organization, a central process, called the _master_, handles all the logic and controls, and all other processes are denoted as slave processes. Thus, interaction between processes is asymmetrical: bidirectional connections enable the master to communicate with each slave, and no interconnection is permitted between any two slaves (see Figure 5.12(a)). This situation requires the master to keep track of each slave's network location in what is called a _metadata structure_, and, further, that each slave can always identify and locate the master. 
+
 ![Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands). ](../media/master_slave.png)
 
 _Figure 5.12. (a) A master-slave organization. (b) A peer-to-peer organization. The master in such an organization is optional (usually employed for monitoring the system and/or injecting administrative commands)._

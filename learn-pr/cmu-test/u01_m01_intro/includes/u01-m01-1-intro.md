@@ -12,6 +12,7 @@ In the first unit of this course we will start with a simple overview of cloud c
 > _(definition)_ The delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.
 
 Information technology (IT) has become an essential requirement for most organizations to function effectively. Typically, and depending on a specific organization’s needs, IT has three components associated with it (Figure 1.1) - application software, development platforms and the underlying infrastructure:
+
 ![Figure 1.1: Typical Components of Information Technology.](../media/IT_components.png)
 
 _Figure 1.1: Typical Components of Information Technology._

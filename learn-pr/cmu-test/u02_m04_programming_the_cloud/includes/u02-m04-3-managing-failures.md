@@ -2,6 +2,7 @@
 ##  Failures and Fault Tolerance
 
 A large part of data center and cloud service management involves designing and maintaining a reliable service based on unreliable parts. The slide below (Figure 2.29) is a part of Google’s training for new hires, and should provide an idea of the large number (and types) of failures that are experienced regularly at a large data center. 
+
 ![Figure 2.29: Reliability Issues from a Google Presentation](../media/google.png)
 
 _Figure 2.29: Reliability Issues from a Google Presentation_
@@ -40,6 +41,7 @@ Critical system components can be duplicated by using additional hardware and so
 - Passive Replication, where only the primary unit processes requests and secondary units merely maintain state and take over once the primary unit fails. The client is only in contact with the primary resource, which relays the state change to all secondary resources. The disadvantage of passive replication is that there may be either dropped requests or degraded QoS when switching from the primary to the secondary instance. 
 
 There is also a hybrid strategy that is used, called **semi-active**, which is very similar to the active strategy with the difference that only the output of the primary resource is exposed to the client. The outputs of the secondary resources are suppressed and logged, and are ready to switch over as soon as a failure of the primary resource occurs. Figure 2.30 illustrates the differences between the replication strategies.
+
 ![Figure 2.30 : Replication Strategies](../media/fault_tolerance_2.png)
 
 _Figure 2.30 : Replication Strategies_

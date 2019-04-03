@@ -9,6 +9,7 @@ The adage "use the right tool for the job" is appropriate because<!-- here. --> 
 NoSQL databases are not a good fit in situations in which the data is fairly well structured and defined and may not exceed a few gigabytes or terabytes in size. Most NoSQL databases rely on a large number of machines organized as a cluster to process data in parallel. As an example, if HBase or Cassandra is run on a single node, the performance of either may not match that of MySQL or any other RDMBS product.
 
 A good example of a nonrelational database that is a good fit for NoSQL databases is a webtable (Figure 3.38). A webtable is a data structure that holds results of a Web crawl. A Web crawl is the process of visiting a list of Web pages and following the links in them in order to catalog and index the information that is contained in a website. 
+
 ![Figure 3.38: A webtable](../media/NoSQL_example.png)
 
 _Figure 3.38: A webtable_

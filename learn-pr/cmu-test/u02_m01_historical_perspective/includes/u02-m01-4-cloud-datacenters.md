@@ -8,6 +8,7 @@ With cloud computing, there is an ever-growing need for expansion and high capac
 
 On the other hand, even with maximal use of virtualization techniques, at a point in time it will be necessary to add physical capacity to support growth. As such, cloud data centers need to be based on modular designs in order to support the easy addition of physical capacity without disrupting applications and services. Designers should specify chassis capacity to support long-term growth so that data center operators can include additional components to the chassis as necessary.
 ##  Network Topologies
+
 ![Figure 2.5: Traditional hierarchical, tree-style data center network topology.](../media/tree_style_data_center_network_topology.png)
 
 _Figure 2.5: Traditional hierarchical, tree-style data center network topology._
@@ -20,6 +21,7 @@ Indeed, the network is a key component in cloud data centers. Hierarchical topol
 
 Usually, contemporary tree-style data center networks rely on some variant of the Spanning Tree Protocol (STP) for resiliency. STP is a data link management protocol that ensures a loop-free topology when switches/bridges are interconnected via multiple paths. STP allows only one active path across two switches, with the rest being set inactive (assuming many paths are available). On an active path failure, STP automatically selects another available inactive path instead of the failed one. This selection might take STP several seconds, which could turn unsuitable for delay-sensitive cloud applications (e.g., Web conferencing). Furthermore, setting idle backup paths is not the best choice for cloud data centers, especially with the exponential increase in user demands. Cloud data centers require more streamlined and resilient network designs that make full use of network resources and recover from failures in milliseconds to meet demands speedily and utilize resources efficiently.
 ##  Secure Multitenant Environment
+
 ![Figure 2.6: Workload-to-workload communications in a virtualized environment.](../media/communications_virtualized_environment.png)
 
 _Figure 2.6: Workload-to-workload communications in a virtualized environment._

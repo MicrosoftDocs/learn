@@ -8,6 +8,7 @@ For example digital assistants such as Apple’s Siri often use complex machine 
 The Lambda Architecture is a data-processing architecture designed to handle massive quantities of data by taking advantage of both batch and stream processing methods. Lambda attempts to balance latency, throughput, and fault-tolerance by using batch processing to provide comprehensive and accurate views of batch data, while simultaneously using real-time stream processing to provide views of online data.
 
  The Lambda architecture describes a system consisting of three layers: the batch layer, the speed (or real-time) processing layer, and a serving layer for responding to queries. 
+
 ![Figure 5.67: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/lambda1.png)
 
 _Figure 5.67: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
@@ -43,6 +44,7 @@ Common examples of datastores used in the serving layer include Apache Hive, HBa
 The speed layer processes data streams in real time with the lowest possible latency to generate real-time views of the data. Essentially, the speed layer is responsible for filling the "gap" caused by the batch layer's lag in providing views based on the most recent data. 
 
 This layer's views may not be as accurate or complete as the ones eventually produced by the batch layer, but they are available almost immediately after data is received, and can be replaced when the batch layer's views for the same data become available. Using incremental or stream processing approaches, that we discussed previously in this unit, the processing can be done in a more efficient manner if the computation can be expressed as a function of the previous real-time view and the recent data, to produce the updated real time views. 
+
 ![Figure 5.68: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/lambda2.png)
 
 _Figure 5.68: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_
@@ -50,6 +52,7 @@ _Figure 5.68: A stream processing system must process data in-stream, with a sep
 
 Stream-processing technologies typically used in this layer include Apache Samza, Apache Storm, SQLstream and Apache Spark. Output is typically stored on fast NoSQL-style databases for low latency querying. 
 ##  Kappa Architecture
+
 ![Figure 5.69: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”](../media/lambda3.png)
 
 _Figure 5.69: A stream processing system must process data in-stream, with a separate pipeline for storage, if needed, which does not lie on the “critical path”_

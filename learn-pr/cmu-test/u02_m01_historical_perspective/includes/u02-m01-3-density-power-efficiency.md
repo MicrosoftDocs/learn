@@ -2,6 +2,7 @@
 ##  Growth of Data Centers
 
 Over the past few decades, data centers have grown both in size (in terms of the number of racks and cabinets) and in density. Figure 2.3 is a view of a data center that is owned by Google.
+
 ![Figure 2.3: A view of one of Google's data centers (Source).](../media/googles_data_centers.png)
 
 _Figure 2.3: A view of one of Google's data centers_ ([Source](http://www.google.com/about/datacenters/))
@@ -16,6 +17,7 @@ Within the same thermal constraints, CPUs have gone from single core to 16core, 
 Hence, although the power efficiency of individual components has improved over the years, computers themselves have become more dense, packing in more processing cores, memory, and storage per square foot. This density caused the overall power consumption per rack and per square foot to rise dramatically over the last few years (Figure 2.4). This trend means that both power and cooling requirements also increase per data center.
 
 A large data center now consumes several megawatts of power, which is roughly the same power requirements of a small town.
+
 ![Figure 2.4: Trends in power density.](../media/trends_power_density.png)
 
 _Figure 2.4: Trends in power density._
@@ -34,7 +36,7 @@ Efforts in improving power efficiency in IT exist across many parts of the data 
 
 |Did You Know?|
 |--|
-|<br>![(C) CMU Cloud Computing Course](../media/energy_pie_chart.png)
+|<br><br>![(C) CMU Cloud Computing Course](../media/energy_pie_chart.png)
 <br>A study by Google quantified the power consumption of each hardware subsystem in their servers.|
 
 

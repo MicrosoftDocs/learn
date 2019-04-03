@@ -1,5 +1,6 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u05_distributed_programming_analytics_engines\_u05_m01_intro\x-oli-workbook_page\_u05_m01_4_program_cloud_3_Synchronization.xml -->
 ##  Synchronous and Asynchronous Computation Models
+
 ![Figure 5.8: The bulk synchronous parallel (BSP) model ](../media/BSP.png)
 
 _Figure 5.8: The bulk synchronous parallel (BSP) model_

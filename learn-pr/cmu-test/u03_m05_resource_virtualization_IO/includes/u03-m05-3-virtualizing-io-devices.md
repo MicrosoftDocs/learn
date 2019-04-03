@@ -2,6 +2,7 @@
 ##  I/O Virtualization
 
 I/O virtualization allows a single physical I/O device to be shared by more than one guest OS. Figure 3.30 demonstrates how multiple guest OSs running in native system VMs sharing a single hardware machine. As shown, the hypervisor constructs virtual devices from physical devices. Notice that both the guest OSs and the hypervisor must have device drivers encapsulating the interfaces to the devices. This means that with virtualization, two different device drivers must be supported per each device versus only one without virtualization. In reality, this is a problem because vendors of devices usually supply drivers for only the major OSs but not for hypervisors (though this could change in the near future). One way to circumvent such a problem is to collocate the hypervisor with a major OS (e.g., Linux) on the same machine. This way, I/O requests can be handled by the OS which holds all requisite I/O drivers. This is the approach adopted by Xen and discussed on the next page.
+
 ![Figure 3.30: Logical locations of device drivers in multiple guest OSs in native system VMs sharing a single hardware machine.](../media/multiple_guest_OSs.png)
 
 _Figure 3.30: Logical locations of device drivers in multiple guest OSs in native system VMs sharing a single hardware machine._

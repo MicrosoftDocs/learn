@@ -57,6 +57,7 @@ Once created, an RDD supports two types of operations (see Figure 5.34):
 1. **Actions**: Computations on an RDD that return a single object to the driver 
 
 As mentioned earlier, Spark transformations are lazy by default, i.e. they are not computed immediately, rather they are batched and executed only when an action is executed. The execution of an action causes all RDDs in the lineage to be materialized. However, once the computation is completed, an RDD will persist only if explicitly required to by the program. 
+
 ![Figure 5.34 : Operations on RDDs](../media/RDD.png)
 
 _Figure 5.34 : Operations on RDDs_

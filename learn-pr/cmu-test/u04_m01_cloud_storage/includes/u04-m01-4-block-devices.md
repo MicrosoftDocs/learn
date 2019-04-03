@@ -75,12 +75,14 @@ In the response, Amazon has acknowledged the request, indicated that the request
 The lack of a common standard for object storage is an issue plaguing cloud object storage. The most popular cloud-based object storage system is Amazon S3, which is proprietary.
 
  The Storage Network Industry Association (SNIA) is promoting an open standard for cloud objects, called **cloud data management interface (CDMI)**. 
+
 ![Figure 4.22: CDMI](../media/cdmi.png)
 
 _Figure 4.22: CDMI_
 
 
 CDMI defines data objects and data containers with tagged metadata (as key-value pairs) and uses RESTful interfaces, with JSON as the data exchange format. CDMI can be used for accessing and managing data on a storage cloud (Figure 4.22). An example of a client interaction with a storage cloud using CDMI is shown in Figure 4.23.
+
 ![Figure 4.23: A CDMI client interacting with a CDMI storage cloud](../media/cdmi_cloud.png)
 
 _Figure 4.23: A CDMI client interacting with a CDMI storage cloud_
@@ -89,6 +91,7 @@ _Figure 4.23: A CDMI client interacting with a CDMI storage cloud_
 The CDMI client can issue requests over HTTPS, and the **MimeType** indicates the type of CDMI resource with which the client is interacting (an object, a container) and returns standard HTTP status codes, indicating the status of the request. 
 
 The CDMI model is illustrated in Figure 4.24. A CDMI resource exists on a root location, indicated by the root URI: `https://<offering>`. The example contains two containers, A and B, that contain one object each. Note that each CDMI entity <!-- has the -->can support <!-- for -->metadata, as indicated with the key-value tags associated with every entity.
+
 ![Figure 4.24: The CDMI data model](../media/key_value.png)
 
 _Figure 4.24: The CDMI data model_

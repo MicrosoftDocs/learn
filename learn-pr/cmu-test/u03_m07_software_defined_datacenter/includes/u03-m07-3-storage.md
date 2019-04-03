@@ -2,6 +2,7 @@
 ##  Typical Data Center Storage Systems
 
 In previous units, we discussed the various types of on-line storage devices that are in use - primarily **magnetic** and **solid-state drives**. We also looked at how these devices can be deployed in a number of ways in a data center. They are reproduced here for your convenience:
+
 ![Figure 3.37: Individual Server Storage vs. Shared / Enterprise Storage](../media/storage.png)
 
 _Figure 3.37: Individual Server Storage vs. Shared / Enterprise Storage_

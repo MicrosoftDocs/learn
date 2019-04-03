@@ -9,12 +9,14 @@ At one level, cloud service providers can leverage the economies of scale. By im
 They also generally provide an accessible interface to modify security settings, allowing secure key rotation, timely updates and patches. Additionally, since all actions are virtualized, these can be regularly snapshotted and analyzed forensically for exploitation using vulnerabilities that are yet unknown (also known as zero-day vulnerabilities). 
 
 Let us look at the cloud from the point of view of a traditional enterprise which used in-house IT infrastructure. Enterprises find that they lose control as a function of asset ownership as they move away from traditional servers towards private clouds and then up the stack from IaaS to SaaS (Figure 1.10). In all three service models, the cloud vendor has full ownership of the underlying infrastructure (networks, storage and hosts). In PaaS, the service provider may additionally claim partial ownership of the application infrastructure. Finally, in the SaaS model, the application infrastructure is fully owned by the service provider. 
+
 ![ Figure 1.10 - Enterprises lose control as you move up the public cloud stack](../media/security_1.jpg)
 
 _Figure 1.10 - Enterprises lose control as you move up the public cloud stack_
 
 
 In all three models, however, the enterprise has full ownership over all its data. Unfortunately, it does not have full control over this data, as it is stored outside the network perimeter. This lack of control over sensitive data storage and transfer is one of the leading inhibitors to large-scale cloud adoption. Two-thirds of potential adopters have placed “data security and privacy” as the biggest risk in cloud computing (Figure 1.11). 
+
 ![Figure 1.11 - Security concerns are the biggest barrier to large-scale cloud adoption](../media/security_2.jpg)
 
 _Figure 1.11 - Security concerns are the biggest barrier to large-scale cloud adoption_

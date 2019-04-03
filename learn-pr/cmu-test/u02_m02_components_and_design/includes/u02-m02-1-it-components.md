@@ -5,6 +5,7 @@ In this section, we define IT equipment as anything that is mounted in a rack (c
 ##  Servers
 
 A **rack-mounted server** is similar to a tower PC, except turned horizontally and made to fit into a thinner, deeper chassis (Figure 2.7). The heights are measured in multiples of rack units, where 1U = 1.75 inches (4.45 cm). A 1U server can be CPU and RAM dense but leaves little room for I/O expansion cards (usually two). A server that is 2U or 3U can have six to eight I/O card slots. Smaller chassis must also have smaller fans and therefore make considerable noise compared to your average desktop computer (this is acceptable because most server rooms are not occupied by humans). Systems that are 4U, 5U, or larger chassis usually have a specialized function: one example is an 80-core Intel server, which has CPU sockets and RAM on vertically mounted daughter cards; another is a quad-GPU accelerator server; a third is a server chassis with a 24, 36, or 48 internal hard drives.
+
 ![Figure 2.7: (a) Servers and other equipment mounted in a standard 19-inch rack (Source). (b) A 1U server with its top cover removed to reveal internal components (Source).](../media/standard19_inches_rack.png)
 
 _Figure 2.7: (a) Servers and other equipment mounted in a standard 19-inch rack_ ([Source](http://en.wikipedia.org/wiki/File:Rack001.jpg))
@@ -78,6 +79,7 @@ Solid-state storage cards are now available, such as those from Fusion-IO. They 
 ##  Storage
 
 When most people hear the word storage, it is likely that they will envision an HDD (Figure 2.8(a)). Inside an HDD, the rotating platters and moving read/write head have been similar for decades. What has evolved are higher areal density, new recording techniques, faster interfaces, and overall lower power. The two most common form factors of HDDs are 3.5 inches and 2.5 inches. Rotational speeds can vary, but common RPM values are 5400, 5900, 7200, 10,000, and 15,000. The higher the RPM, the lower the latency between random seeks.
+
 ![Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head (Source). (b) SSD with the circuitry exposed (Source).](../media/traditional_hard_disk.png)
 
 _Figure 2.8: (a) Internal view of a traditional hard disk showing the rotating platters and read/write head_ ([Source](http://www.flickr.com/photos/auxo/6901630801/))
@@ -110,6 +112,7 @@ The choice on which type of storage to use is largely dependent on the applicati
 In addition to servers, a data center houses all of the network equipment that is used to connect those servers to each other and to the outside world.
 
 One popular design is the **multitier** topology (Figure 2.9), in which servers connect directly to switches, and those switches link to aggregation switches, which, in turn, connect to the rest of the organization's network (i.e., core switches) and eventually to the upstream ISP.
+
 ![Figure 2.9: A stack of network switches mounted in a rack (Source).](../media/network_switches_mounted.png)
 
 _Figure 2.9: A stack of network switches mounted in a rack_ ([Source](http://www.flickr.com/photos/kenfagerdotcom/7536249106/in/photostream/))
@@ -124,6 +127,7 @@ A **fatter** (higher bandwidth) connection typically links the bottom-tier and a
 **Ethernet** is by far the most popular type of network in data centers (and elsewhere in organizations). Although its rise in popularity started in the 1980s with 10Mbps, both that and 100Mbps products are obsolete because of the low price and ubiquity of 1Gbps products. The primary driver for Ethernet popularity is the low cost and ease of installation of twisted pair wiring. The most common type of Ethernet wiring is unshielded twisted pair (UTP) (Figure 2.10(a)), which has four pairs of thin (28awg) copper wires and comes in different categories: category 5 (Cat5) is good for 10/100Mbps, Cat5e and Cat6 are good for 1Gbps, and Cat7 can go up to 10Gbps. Each generation has slight design changes over the previous, which allow for greater bandwidth and/or longer runs. Alternatively, shielded twisted pair (STP) has an extra metal shielding on the outside for use in electrically noisy environments (such as a factory or near high power lines). The shielding reduces interference but is generally not needed for most in-rack installations.
 
 Ethernet can also travel over fiber (sometimes fibre) optic cable (Figure 2.10(b)). Fiber is unidirectional, so in a cable, you will see two strands, one send and one receive. The electrical signals are converted to photons, which stay inside the fiber due to the differences in indexes of refraction between the core (thin center) and cladding (thicker outside layer). The cladding is covered by a layer of fireproofing material. Fiber cables are thinner and lighter than copper cables, but care has to be taken in routing to maintain a minimum bend radius, otherwise some photons escape causing loss. Multimode fiber is most commonly used inside data centers because the cables and transceivers are much less expensive than single-mode fiber. Single-mode fiber is generally reserved for long-distance (>100m to 40km) connections. Higher speed Ethernet of 40Gbps is actually 4x10Gbps links that work in unison (similar to PCIe lanes); similarly, 100Gbps is 10x10Gbps (copper, fiber) or 4x25Gbps (fiber only).
+
 ![Figure 2.10: (a) A cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables (Source). (b) Fiber-optic network cables with LC (top) and ST (bottom) connectors (Source).](../media/UTP_and_Fiber-optic-network.png)
 
 _Figure 2.10: (a) A cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables_ ([Source](http://en.wikipedia.org/wiki/File:UTP_cable.jpg))
@@ -143,6 +147,7 @@ _Table 2.3: Summary of Infiniband speeds._
 
 
 Infiniband and 40Gbit Ethernet are also being deployed as a **converged network**, or **virtual fabric**, which, along with virtualization of the OS, allows many virtual adapters (Ethernet, FC-HBAs) to run over fewer high-speed links. The connections can be configured dynamically through software and allow for fewer cables and easier maintenance and management.
+
 ![Figure 2.11: An infiniband switch (Source).](../media/infiniband_switch.png)
 
 _Figure 2.11: An infiniband switch_ ([Source](http://en.wikipedia.org/wiki/File:UTP_cable.jpg))

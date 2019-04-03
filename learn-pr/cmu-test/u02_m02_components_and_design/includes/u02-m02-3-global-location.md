@@ -17,6 +17,7 @@ There are also basic logistics that are desirable to have available to support t
 ##  Weather
 
 Also mentioned in the previous module was economization, or mixing of colder outside air with the hot air expelled from the IT equipment. In Figure 2.16, you will notice different colored bands. In regions of yellow or orange, you could use outside cooling during the colder seasons, and in regions of green and blue, you could likely use outside cooling year round. Regions marked as red could still use outside cooling but for a few months of the year. For example, because of its cold average climate and renewable energy sources, Iceland has a growing data center industry.
+
 ![Figure 2.16: Global average temperature map (Wikipedia, 2014).](../media/temperature_map.png)
 
 _Figure 2.16: Global average temperature map_ ([Wikipedia](http://commons.wikimedia.org/wiki/File:Annual_Average_Temperature_Map.jpg))
@@ -27,33 +28,41 @@ As you will see in the power usage effectiveness (PUE) section later in this mod
 The average amount of annual rainfall might be a factor if you are considering using rainwater storage/filtration as a water source for cooling your data center. However, the number of sunny days per year in a particular region might convince you to try solar.
 
 Part of a risk assessment for a particular location would include the frequency of natural disasters in the region, such as floods, hurricanes, tornadoes/cyclones, tsunamis, and earthquakes. As you can see in Figure 2.17, different regions have varying levels of susceptibility to a potentially damaging event.
+
 ![(a) Earthquake risk map.](../media/earthquake_risk_map.png)
 
 _(a) Earthquake risk map._
+
 
 ![(b) Flood risk map.](../media/flood_risk_map.png)
 
 _(b) Flood risk map._
 
+
 ![(c) Hurricane risk map.](../media/hurricane_risk_map.png)
 
 _(c) Hurricane risk map._
+
 
 ![(d) Lightening risk map.](../media/lightening_risk_map.png)
 
 _(d) Lightening risk map._
 
+
 ![(e) Tornado risk map.](../media/tornado_risk_map.png)
 
 _(e) Tornado risk map._
+
 
 ![(f) Thunderstorm risk map.](../media/thunderstorm_risk_map.png)
 
 _(f) Thunderstorm risk map._
 
+
 ![(g) Volcano risk map.](../media/volcano_risk_map.png)
 
 _(g) Volcano risk map._
+
 
 ![(h) Wildfire risk map.](../media/wildfire_risk_map.png)
 
@@ -68,6 +77,7 @@ As a cloud user, or cloud provider, it is beneficial to have two (or more) geogr
 As broadband adoption among consumers continues to grow, the effectiveness of cloud computing will increase. You can find trending graphs and current broadband adoption at [Akamai](http://www.akamai.com/html/technology/dataviz5.html).
 
 The Internet relies on fiber optics to send and receive data over long distances. Figure 2.18 shows the relationship between multiple tiers of the Internet, in which tier 1 providers own the actual fiber cables, the network equipment, and the buildings they are housed in; tier 2 providers own large networks as well and peer with (have connections to) other tier 2 providers but also have to lease some connections from tier 1 providers in order to reach the whole Internet; and tier 3 providers are only resellers, which provide connections to end users. A single corporate entity, such as Verizon in the United States, may provide services at all tiers.
+
 ![Figure 2.18: Internet connectivity (Wikipedia, 2014).](../media/Internet_connectivity.png)
 
 _Figure 2.18: Internet connectivity_ ([Wikipedia](http://en.wikipedia.org/wiki/File:Internet_Connectivity_Distribution_%26_Core.svg))

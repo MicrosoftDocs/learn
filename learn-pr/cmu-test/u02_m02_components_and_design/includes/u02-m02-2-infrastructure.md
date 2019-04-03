@@ -7,6 +7,7 @@ A data center's functional units (servers, storage, networking) all rely on a fa
 A server room can vary in size from a single rack in a closet to several hundred square feet to a warehouse the size of a football field. Some authors use the phrases server room and data center interchangeably. For the purpose of the course, we define a **server room** as the actual room that houses all of the racks full of IT equipment, and a **data center** as the server room plus all of the power and HVAC equipment that may be located outside of that room.
 
 You were already introduced to the concept of a rack and a rack unit (U). Figure 2.12 shows a rack inside an open cabinet. Sometimes racks are also called cabinets. There are several variations of racks, but the most common are 19 inches wide (measured from the center of each hole on the same U). Some IBM equipment racks measure 24 inches post to post, inherited from older mainframes. Usually, network equipment is designed to mount only on two posts of the rack because wiring closets often have only two posts permanently mounted to the floor and/or wall. Servers, however, are designed to mount on four-post racks. The depth of the rear two posts is not standardized, and in most racks you can adjust the depth. Different rack-mount equipment has different depths, and each server or storage array will come with two mounting rails that connect to the front and rear posts on the left and right sides. There are two types of holes in vertical posts, square and round. Some mounting rails hook directly into square holes and have tool-less installation (fast). For round-hole racks, equipment is directly screwed in (these are more popular for telecom and A/V racks). If you need to mount round-hole style equipment or rails into a square-hole rack, you use cage nuts and bolts.
+
 ![Figure 2.12: A 42U, four-post rack/cabinet, with sides and doors removed.](../media/_42U_4-post_rack.png)
 
 _Figure 2.12: A 42U, four-post rack/cabinet, with sides and doors removed._
@@ -15,6 +16,7 @@ _Figure 2.12: A 42U, four-post rack/cabinet, with sides and doors removed._
 The most common height rack is 42U, and that is simply to fit through a normal doorway. The overall height, width, and depth of racks by different manufacturers are not exactly the same; the only guarantee is the post widths. Some racks have extended depth, which is useful for larger servers and/or routing cables and mounting zero-U (vertical mount outside of the 42U space) equipment. "Wide" racks have extra space to the left and right of the posts, which is useful for end-of-row networking racks because of the added space to run many cables. Racks also have casters that allow them to be rolled into place or moved if needed. However, these wheels are not meant to permanently support the full weight of a filled rack, which is why you have to screw down the four stabilization feet at each corner. Regions that are prone to earthquakes also have safety regulations that require racks to be bolted into concrete through metal plates on the front and rear of the rack.
 
 Many server rooms have a raised floor, although it is not a strict requirement. This provides a plenum for cold air to be distributed throughout the room (tiles in front of racks have vent holes). Raised floors also provide space to run electrical or network cable or chilled water pipes for in-row cooling. Last, they provide more flexibility for future layout/configuration changes. Figure 2.13 shows what a raised floor looks like. 
+
 ![Figure 2.13: An example of a raised floor.](../media/raised_floor.png)
 
 _Figure 2.13: An example of a raised floor._
@@ -41,6 +43,7 @@ Generators have a 15- to 60-second start-up time, so this is where an uninterrup
 Between the UPS and the IT equipment, there are power distribution units (PDUs). Think of PDUs as similar to power strips you use at home but designed for higher voltages and amps, with more outlets and built-in circuit breakers. They often include monitoring features, so you can remotely see the power draw per branch (group of outlets connected to a single breaker). Some also include per-outlet power sensing (POPS) as well as remote ON/OFF switching for each outlet. The outlets for PDUs do not look like the electrical outlets in your house; instead, they are IEC 60320 C13 (said "C thirteen") (Figure 2.14(a)) for 10- to 12-amp rating and C19 for 16 to 20 amps (Figure 2.14(b)).
 
 For AC, higher voltage (400V and 480V) is more efficient for distributing power throughout a data center than 240V or 208V but still has to be stepped down before going to the actual server. Most server power supplies are universal and will accept input AC voltages ranging from 110V to 240V. The benefits to running at 208 to 240V versus running at 110 to 125V are slightly higher efficiency (5% to 10%) as well as getting the full rated power output (as labeled on the PSU). Most server room/data center installations will run at 200+ VAC for the efficiency, as well as lower pricing for electrical wiring (smaller gauge copper). In order to boost efficiency, some server PSUs also support 277V directly. Instead of traditional wire, some server rooms employ bus bars that mount over head (above the racks) and have circuit breaker whips that can attach at any horizontal location (these are like track lighting, only larger).
+
 ![Figure 2.14: Diagrams of the (a)C13 power connector and (b)C19 power connector (Source).](../media/power_connectors.png)
 
 _Figure 2.14: Diagrams of the (a)C13 power connector and (b)C19 power connector_ ([Source](http://en.wikipedia.org/wiki/IEC_60320))
@@ -50,6 +53,7 @@ Some vendors offer DC distribution, in which the AC-to-DC conversion is done per
 ##  Cooling
 
 Many of the advances in data center efficiency over the last 10 years have come from new designs and methods for cooling.
+
 ![Figure 2.15: Typical data center cooling technique. Figure shows the use of a CRAC and raised floor.](../media/cooling_technique.png)
 
 _Figure 2.15: Typical data center cooling technique. Figure shows the use of a CRAC and raised floor._

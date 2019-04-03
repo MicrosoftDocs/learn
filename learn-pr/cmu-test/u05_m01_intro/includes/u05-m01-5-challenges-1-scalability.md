@@ -11,6 +11,7 @@ The reality of execution on _n_ nodes never meets the ideal of _n_-fold performa
 1. As shown in Figure 5.13, some program parts can never be parallelized (e.g., initialization).
 1. Load imbalance among tasks is highly likely, especially in distributed systems, such as clouds, in which heterogeneity (see the section Heterogeneity) is a major factor. As depicted in Figure 5.13(b), load imbalance usually delays programs so that a program becomes bound to its slowest task. Specifically, even if all tasks in a program finish, the program cannot commit before the last task finishes. 
 1. Other serious overheads, such as communication and synchronization overheads, can significantly impede scalability.
+
 ![Figure 5.13: Parallel speedup: (a) ideal case and (b) real case](../media/scalability.png)
 
 _Figure 5.13: Parallel speedup: (a) ideal case and (b) real case_

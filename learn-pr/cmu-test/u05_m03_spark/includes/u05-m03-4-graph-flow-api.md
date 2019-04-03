@@ -13,6 +13,7 @@ Let us return to the program that we saw on the previous page (describing RDD tr
 
 
 As RDDs are derived from each other using transformations, Spark keeps track of the dependencies using a lineage graph. This allows the RDDs to be computed lazily (as defined earlier) and provides fault recovery information to the framework. The lineage for the code above is shown here (Figure 5.35).
+
 ![Figure 5.35: RDD lineage graph](../media/spark_example_1.png)
 
 _Figure 5.35: RDD lineage graph_
@@ -37,6 +38,7 @@ Consider the `map(func)` transformation, which returns a new distributed dataset
 On the other hand, consider a `join()` transformation, which when called on RDDs of type `(K, V)` and `(K, W)`, returns a RDD of `(K, (V, W))` pairs with all pairs of elements for each key. If the parent RDDs are partitioned with the same range/hash partitioner), then this can be represented as two narrow dependencies. If neither RDD has a defined partition, then this is a wide dependency. Finally, if one parent has a partitioner and one does not, then it is categorized as a mixed dependency. In all three cases, the output RDD has a partitioner, this may be inherited from the parents, or a default (hash) partitioner. 
 
 Both of the dependencies above are shown in Figure 5.36: 
+
 ![Figure 5.36: Narrow and wide dependencies in Spark](../media/spark_dependencies.png)
 
 _Figure 5.36: Narrow and wide dependencies in Spark_

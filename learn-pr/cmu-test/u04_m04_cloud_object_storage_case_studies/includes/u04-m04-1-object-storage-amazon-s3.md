@@ -40,6 +40,7 @@ Amazon documentation also states that simultaneous writes to an object in S3 are
 
 OpenStack Swift is an object storage service that is part of the OpenStack cloud platform. Swift offers clients a REST-based HTTP interface to interact with binary objects, much like S3. However, unlike S3, Swift is free and open source, and is available for anyone to install and configure on any machine, effectively providing object storage on both public and private clouds.
 ###  Swift Data Model and APIs
+
 ![Figure 4.47: Swift Data Model](../media/swift_api.png)
 
 _Figure 4.47: Swift Data Model_
@@ -59,6 +60,7 @@ It must be noted that Swift also supports authenticated access of users trying t
 Swift uses a multi-tiered architecture in the interest of performance, fault-tolerance, reliability and durability. Like other distributed data stores, Swift uses replication for fault tolerance. As indicated in the discussion of Swift's API, Swift has to maintain information regarding accounts, containers and objects. Thus Swift runs independent processes to keep track of the information regarding each of these layers in the cluster. 
 
 The different components of the SWIFT architecture are as follows:
+
 ![Figure 4.48: Swift Cluster Architecture](../media/swift_architecture.png)
 
 _Figure 4.48: Swift Cluster Architecture_

@@ -14,6 +14,7 @@ The next bottleneck in HVM systems was the use of emulated interrupt controllers
 Xen made many of its original design choices before the availability of HVM extensions. The latest update on this spectrum uses a fully paravirtualized guest, and only uses HVM extensions to virtualize the page tables, system calls and other privileged operations. This mode is known as PVH (mainly PV, with a bit of HVM), and is expected to combine PV's fast interface and low overhead while maximizing the use of the hardware. 
 
 The spectrum of virtualization modes can be visualized from Figure 3.33.
+
 ![Figure 3.33: The HVM-PV spectrum: S indicates a software virtualized resource, H indicates hardware virtualization and P stands for paravirtualizedGreen indicates good performance, yellow is tolerable and red is extremely poor.](../media/PV_HVM_Spectrum.png)
 
 _Figure 3.33: The HVM-PV spectrum: S indicates a software virtualized resource, H indicates hardware virtualization and P stands for paravirtualizedGreen indicates good performance, yellow is tolerable and red is extremely poor._

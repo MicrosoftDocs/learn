@@ -9,6 +9,7 @@ _Video 3.9: Multiprocessor VMs._
 
 
 Figure 3.23 demonstrates an SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.
+
 ![Figure 3.23: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.](../media/SMP_UP_VM.png)
 
 _Figure 3.23: An SMP native system VM with a width of four and a UP native system VM, both running on the same hardware._

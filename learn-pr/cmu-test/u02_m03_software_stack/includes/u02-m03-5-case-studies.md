@@ -5,6 +5,7 @@ Earlier, we described OpenStack as a popular solution that allows developers to 
 OpenStack consists of multiple layers that can be used to configure, provision, manage, monitor and deprovision various types of compute, storage and networking resources. 
 
 A high level view of the various services involved in the OpenStack middleware suite is represented in Figure 2.27 below:
+
 ![Figure 2.27: OpenStack Service Architecture](../media/openstack.png)
 
 _Figure 2.27: OpenStack Service Architecture_
