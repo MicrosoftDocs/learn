@@ -1,12 +1,3 @@
-<!--
-> [!TIP]
-> The username and password you need to sign in to the VM are located on the **Resources** tab.
-
-> [!NOTE]
-> If you are using a Mac, after launching the VM you may need to use either the lightning icon on the toolbar, or the **Ctrl+Alt+Delete** option from the **Resources** tab next to the instructions to unlock the VM.
--->
-<!--[!include[](../../../includes/azure-lab-environment-not-available.md)]-->
-
 ## Create a Twilio account
 
 To be able to send SMS messages from an Azure Functions, you'll need a Twilio account. The free account is more than enough to get started.
