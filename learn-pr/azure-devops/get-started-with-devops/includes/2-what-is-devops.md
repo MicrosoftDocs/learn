@@ -1,4 +1,4 @@
-Alice has called a short meeting with her teammates. Everyone has showed up but no one wants to be there. She's put a box of donuts on the table.
+Alice has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
 Alice: Hi, thanks for coming. I wanted to show you the results of the DevOps Assessment that I took.
 
