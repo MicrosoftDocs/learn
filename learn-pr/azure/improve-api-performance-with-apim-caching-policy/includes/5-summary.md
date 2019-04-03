@@ -2,7 +2,7 @@
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 <!-- *Optional* for this unit is a a section called "Learn More", with a bulleted list of appropriate external links --> 
-In this module
+In this module you have learned how to deploy a API into Azure APIM. As the developer at the Board gaming company you were then able to apply a caching policy to your get operation to enable a more speedy response to identical queries.
 
 
 ## Learn More
