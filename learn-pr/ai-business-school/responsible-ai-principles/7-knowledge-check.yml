@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-ai-guiding-principles.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: A knowledge check for the identify guiding principles for responsible AI in your business module.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Question 1 (True/False)"
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Explanation for the correct answer"
+    - content: "False"
+      isCorrect: false
+      explanation: "Explanation for the incorrect answer"
+  - content: "Question 2 (multiple choice, at this time only one correct answer allowed)"
+    choices:
+    - content: "Answer option 1"
+      isCorrect: false
+      explanation: "Explanation for the incorrect answer"
+    - content: "Answer option 2"
+      isCorrect: false
+      explanation: "Explanation for the incorrect answer"
+    - content: "Answer option 3"
+      isCorrect: true
+      explanation: "Explanation for the correct answer" 
