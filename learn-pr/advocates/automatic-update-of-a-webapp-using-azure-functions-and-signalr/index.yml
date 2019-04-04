@@ -15,7 +15,7 @@ abstract: |
     - Evaluate an existing project that implements polling
     - Update an application architecture to support push technologies with SignalR and Azure Functions
     - Host a static website in an Azure Storage account
-prerequisites: 
+prerequisites: |
 - Basic familiarity with databases, Azure Functions and SignalR
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
