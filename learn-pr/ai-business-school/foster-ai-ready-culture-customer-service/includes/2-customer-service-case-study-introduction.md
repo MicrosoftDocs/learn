@@ -1,42 +1,49 @@
-## Context
+## Abstract
 
-Sales organizations have more tools and customer information at their fingertips than ever, but they struggle to make this data accessible and turn it into actionable insights. The challenge is to use this data to understand customer behavior so that each seller can deliver the right message to the right customer at the right time—at scale.
+Our customer service organization was looking for ways to meet the ever-growing expectations of our customers at scale. We identified that AI could help us create a better service experience by equipping our agents with predictions and recommendations, surfacing new insights from customer feedback, and streamlining our customers’ self-service experience. Since implementing these solutions, case resolution has sped up dramatically and customer satisfaction scores have increased by nearly a third.
 
-![People involved in decisions](../media/2-4-1-a-sales-case-study-intro.jpg)
+Learn about how we incorporated AI into our customer service processes and consider how AI could transform your own customer service organization.
 
-In addition, sales organizations are struggling to adapt to the changing sales journey. For instance, there are now more decision-makers and influencers involved in a typical sale. CEB has found that there are now an average of 6.8 people involved in each B2B purchase decision up from 5.2 in its previous research.<sup>1</sup> Moreover, decision-makers and influencers are more informed and prefer to do their own research before they engage with a sales representative. With so many stakeholders in play, each more informed than ever before, it’s essential that sellers identify the most engaged contacts and key influencers on an account and know exactly what matters to them.
+## Industry context
 
-## Microsoft context: Sales enablement
+The bar for the customer service experience is higher than ever before. And the quality of the service experience is a key factor in purchasing decisions: 92% of consumers say they would stop purchasing from a company after three or fewer poor service experiences, and 26% of those would stop after just one bad experience.1
 
-At Microsoft, these challenges are compounded by a number of factors, not least of which is our transformation from a company that sells licenses and products to one that sells services. With this transformation, our sales processes and competitor landscape have changed dramatically.
+Customers expect service that is immediate, effective, seamless across channels, and aligned to their goals. The traditional response of hiring more service agents to address this is expensive and is not scalable, in part due to the risk of inconsistent service at scale.
 
-The cloud is one of our most competitive areas and one where we are seeing significant pressure to grow through both net-new and increased consumption. Our sellers are making more calls than they used to, which means they’re spending a lot more time preparing for calls with research and analytics and ensuring data hygiene.
+To deliver on customer expectations at scale, customer service organizations are looking to AI to supplement and augment the skills of their employees. Gartner estimates that 25% of all customer care and support operations will integrate AI technology across engagement channels by 2020, up from less than 2% in 2017.2
 
-In addition, our sellers deal with a much larger suite of services compared to other companies, even other enterprise leaders. With so many services available to pitch to customers, there is a tremendous need for automated recommendations to ensure that sellers are promoting the right services. Moreover, customers come prepared with plenty of research before making a technology stack decision and often don’t engage with a seller until they are close to 60% of the way through their buying journey. This means sellers need to have the right technical understanding of each service so that they’re prepared to establish their relevance by having in-depth conversations from day one. Supporting sellers with robust learning and readiness content is a challenge.
+## Microsoft context: Customer experience
 
-Finally, we identified that we were missing an opportunity to implement centralized governance around lead targeting criteria and thereby align our sellers around a single source of white space that can be quality controlled, governed, and continuously measured.
+At Microsoft, we’ve faced the same hurdles as many other organizations in adapting to meet the needs and expectations of today’s customers. To support our customers more effectively, we envisioned creating better self-service experiences and empowering our service agents with relevant context, insights, and recommendations at their fingertips during interactions with customers. In addition, we hoped to glean more insights from customer chat records and feedback and create processes for surfacing and acting on these insights.
+
+Our goal was to improve customer satisfaction and retention and transform customer service from a cost center to a key differentiator, using AI to drive scale, efficiency, and insights.
 
 ## Questions
 
-The following questions can help guide conversations both internal and external about implementing AI in your sales organization. Think critically about these questions before reviewing the executive perspective video and continuing on to the case study resolution.
+The following are questions you can use to start thinking about how to implement AI in your own customer service organization. Think critically about these questions before reviewing the executive perspective video and continuing on to the case study resolution.
 
 ### Strategy
 
-1. What are the most time-consuming activities for your sales employees? How could you use AI to augment your employees’ capabilities and skills in these areas?
-2. Which stakeholders do you need to gain buy-in from to implement a sales AI initiative? Which scenarios provide a convincing business case and are great candidates for AI?
+1. How well do you understand the preferences of your customers? How will you incorporate the voice of the customer in AI planning, development, and implementation?
+2. How will you prioritize competing objectives? For example, if gains in business efficiency came with the trade-off of a slightly lower-quality customer experience, would you accept that?
+3. How can you use AI to better understand the customer experience and breakpoints in the customer journey?
+4. Customer service is a key differentiator in consumer and business purchasing decisions. How can you use AI to differentiate from your competitors? Do you know what your competitors are doing with AI?
 
 ### Culture
 
-1. How can you use AI to increase sales team satisfaction and decrease frustration?
-2. How will you ensure the voices of all your sales employees are heard in developing and implementing AI? How will you empower your employees to develop innovative AI use cases?
+1. How will you ensure buy-in from both executives and front-line service managers to ensure AI is implemented successfully?
+2. How can you incorporate best practices from your frontline service agents into your AI applications?
+3. How can you use data from AI to coach service agents and improve their performance?
+4. A common use of AI in customer service is a chatbot, which could be perceived as a replacement for service agents. How can you frame AI as empowering your agents and augmenting their skills rather than replacing them?
 
 ### Implementation
 
-1. What will you need to do to ensure that sellers trust and adopt the AI applications that you implement? How can you design the implementation process to cause the least disruption possible to sales operations?
-2. What sources of information do you need to aggregate to build a more comprehensive view of your customers? Is this data currently siloed? How can you maintain unified data into the future?
+1. Do you have the data on past customer service cases necessary to train AI models? If not, what data collection or preparation would be required?
+2. AI in customer service needs to keep up with rapidly evolving product portfolios. How will you ensure that your AI solutions can learn and improve continuously?
+3. How will you monitor how your AI applications are adapting to customer interactions?
 
 ## AI maturity
 
-Depending on your organization’s level of AI maturity, your ability to implement AI will vary. We recommend that you evaluate your AI maturity by asking questions like: Is your organization an early adopter of technology or do you wait to implement technology after it has matured? Do you have governance structures in place to ensure AI applications are driving towards your desired business outcomes?
+Depending on your organization’s level of AI maturity, your ability to implement AI will vary. We recommend that you evaluate your AI maturity by asking questions like: Is your organization an early adopter of technology or do you wait until it has matured? Do you have governance structures in place to ensure AI applications are driving towards your desired business outcomes?
 
-Now that you’ve gained context on the challenges sales organizations face today and considered critical questions to answer before implementing AI, watch the executive perspective video with Jean-Philippe Courtois, Microsoft Executive Vice President and President, Global Sales, Marketing, and Operations.
+Now that you’ve gained context on the challenges customer service organizations face today and considered critical questions to answer before implementing AI, watch the executive perspective video with Aileen Allkins, Microsoft Corporate Vice President of Customer Service & Support.
