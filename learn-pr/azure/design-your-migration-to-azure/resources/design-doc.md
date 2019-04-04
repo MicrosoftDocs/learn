@@ -27,7 +27,8 @@ Minimize the time and resources required to migrate your on-premises environment
 
 ## Learning objectives
 
-1. Assess your 
+1. Discover how Azure Migrate can assess your existing workloads and plan your Azure migration.
+2. Discover how Azure Site Recovery and Azure Database Migration Service can migrate your systems to Azure.
 
 ## Chunk your content into subtasks
 
