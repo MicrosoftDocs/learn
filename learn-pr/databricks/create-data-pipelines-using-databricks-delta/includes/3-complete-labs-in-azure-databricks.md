@@ -13,7 +13,7 @@ Now, let's jump into the Azure Databricks workspace and perform some basic Datab
 
 4. In the **Import Notebooks** dialog box, select **URL** and paste in the following URL:
 
-    ```
+    ```html
     https://github.com/MicrosoftDocs/mslearn-create-data-pipelines-using-databricks-delta/blob/master/DBC/06-Databricks-Delta.dbc?raw=true
 
     ```
