@@ -13,7 +13,7 @@ title: Perform advanced data transformation in Azure Databricks
 summary: Learn how to perform advanced data transformations in Azure Databricks, and encapsulate transformation logic through user-defined functions (UDFs) and libraries.
 abstract:  | 
   In this module, you will:
-  - Perform basic and complex custom transformations with user defined functions
+  - Perform basic and complex custom transformations by using user-defined functions
   - Clean data 
   - Manage tables
 prerequisites:  | 
