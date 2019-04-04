@@ -2,7 +2,7 @@ Now that you've created and published your QnA knowledge base, it's time to lear
 
 ## Search for Web App Bot
 
-1. Sign in to the [Azure portal](https://portal.zure.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Select **Create a resource** in the sidebar.
 1. In the Azure Marketplace search box, enter **bot**, and then select Enter.
 1. Select **Web App Bot**.

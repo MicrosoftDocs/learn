@@ -80,7 +80,7 @@ You'll add data to your new collection using Data Explorer.
      ```json
      {
          "id": "docs",
-         "URL": "https://docs.microsoft.com/azure"
+         "url": "https://docs.microsoft.com/azure"
      }
      ```
 
@@ -101,28 +101,28 @@ You'll add data to your new collection using Data Explorer.
     ```json
     {
         "id": "portal",
-        "URL": "https://portal.azure.com"
+        "url": "https://portal.azure.com"
     }
     ```
 
     ```json
     {
         "id": "learn",
-        "URL": "https://docs.microsoft.com/learn"
+        "url": "https://docs.microsoft.com/learn"
     }
     ```
 
     ```json
     {
         "id": "marketplace",
-        "URL": "https://azuremarketplace.microsoft.com/marketplace/apps"
+        "url": "https://azuremarketplace.microsoft.com/marketplace/apps"
     }
     ```
 
     ```json
     {
         "id": "blog",
-        "URL": "https://azure.microsoft.com/blog"
+        "url": "https://azure.microsoft.com/blog"
     }
     ```
 
