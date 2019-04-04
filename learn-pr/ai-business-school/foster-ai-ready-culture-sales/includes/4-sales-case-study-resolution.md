@@ -23,11 +23,9 @@ There’s a lot that goes into transformation with AI. Developing effective AI t
 
 ![AI-based Guided Selling Application](../media/2-4-3-a-sales-case-study-resolution.jpg)
 
-|  |  |
-| ------------ | -------------|
-|The results have been impressive: sellers have reviewed over 40,000 recommendations and we’ve seen a 4x improvement in recommendation success, raising the recommendation-to-opportunity rate to 40%. This means that for every five recommendations a seller acts on, two will become serious opportunities for a sale. This is significantly higher than the rate we saw with historical business rule–based targeting recommendations, which had a yield of about one in ten. In addition, the Daily Recommender has accelerated the sales cycle. Because sellers have more relevant discussions with the customers from day one, discovery efforts are accelerated. And finally, sellers are spending less time on call preparation. According to an account executive for Microsoft Latin America, “AI has helped me organize my daily calls and raise their productivity by 60%.”|!["AI has helped me organize my daily calls and raise their productivity by 60%"](../media/2-4-3-b-sales-case-study-resolution.jpg)|
+The results have been impressive: sellers have reviewed over 40,000 recommendations and we’ve seen a 4x improvement in recommendation success, raising the recommendation-to-opportunity rate to 40%. This means that for every five recommendations a seller acts on, two will become serious opportunities for a sale. This is significantly higher than the rate we saw with historical business rule–based targeting recommendations, which had a yield of about one in ten. In addition, the Daily Recommender has accelerated the sales cycle. Because sellers have more relevant discussions with the customers from day one, discovery efforts are accelerated. And finally, sellers are spending less time on call preparation. According to an account executive for Microsoft Latin America, “AI has helped me organize my daily calls and raise their productivity by 60%.”
 
-![Four times improvement in recommendation success](../media/2-4-1-b-sales-case-study-intro.jpg)
+!["AI has helped me organize my daily calls and raise their productivity by 60%"](../media/2-4-3-b-sales-case-study-resolution.jpg)
 
 ## Applying these lessons in your organization
 
