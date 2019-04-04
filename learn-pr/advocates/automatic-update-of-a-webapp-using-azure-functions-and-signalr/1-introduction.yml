@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.1-introduction
+metadata:
+  title: introduction
+  description: ...
+  ms.date: ...
+  author: ...
+  ms.author: cshoe
+  ms.topic: ...
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

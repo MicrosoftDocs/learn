@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.6-exercise-host-a-static-website-using-a-storage-account
+metadata:
+  title: Exercise - Use a storage account to host a static website
+  description: ...
+  ms.date: ...
+  author: ...
+  ms.author: cshoe
+  ms.topic: ...
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Exercise - Use a storage account to host a static website
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-host-a-static-website-using-a-storage-accountmd)]

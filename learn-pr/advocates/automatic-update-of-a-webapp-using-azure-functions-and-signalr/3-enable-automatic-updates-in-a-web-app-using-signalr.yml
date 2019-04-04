@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.3-enable-automatic-updates-in-a-web-app-using-signalr
+metadata:
+  title: Enable automatic updates in a web application using SignalR
+  description: ...
+  ms.date: ...
+  author: ...
+  ms.author: cshoe
+  ms.topic: ...
+  ms.prod: ...
+  ROBOTS: NOINDEX
+title: Enable automatic updates in a web application using SignalR
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-enable-automatic-updates-in-a-web-app-using-signalr.md)]
