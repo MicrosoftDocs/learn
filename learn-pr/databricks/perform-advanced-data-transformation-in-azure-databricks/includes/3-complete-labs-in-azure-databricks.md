@@ -1,7 +1,7 @@
 
 Let's use some advanced ETL techniques in the Databricks workspace. 
 
-> ![NOTE]
+> [!NOTE]
 > To complete the following procedures, you must already have deployed your Azure Databricks workspace in your Azure portal.
 
 ## Clone the Databricks archive
@@ -11,7 +11,9 @@ Let's use some advanced ETL techniques in the Databricks workspace.
 3. In the blade that appears, select the arrow next to your name, and select **Import**.
 4. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
-     https\://github.com/MicrosoftDocs/mslearn-perform-advanced-data-transformation-in-azure-databricks/blob/master/DBC/05.2-Advanced-ETL.dbc?raw=true
+  ```html
+       https://github.com/MicrosoftDocs/mslearn-perform-advanced-data-transformation-in-azure-databricks/blob/master/DBC/05.2-Advanced-ETL.dbc?raw=true
+  ```
 
 5. Select **Import**.
 6. A folder that is named after the archive should appear. Select that folder. The folder contains one or more notebooks that you'll use to complete this lab.
@@ -29,7 +31,7 @@ To complete the labs, continue working in your Azure Databricks workspace and op
 - **07-Table-Management** - In this notebook, you handle managed and unmanaged tables to optimize your data storage.
 - **Custom-Transformations** - This notebook is located in the Optional subfolder and includes a sample project for you to explore later.
 
-> ![Note]
+> [!Note]
 > You'll find corresponding notebooks in the Solutions subfolder. These contain completed cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or if you want to see the solution.
 
 After you've completed the notebooks, return to this screen and continue to the next step.
