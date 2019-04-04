@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Use a storage account to host a static website
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-exercise-host-a-static-website-using-a-storage-accountmd)]
+  [!include[](includes/6-exercise-host-a-static-website-using-a-storage-account.md)]
