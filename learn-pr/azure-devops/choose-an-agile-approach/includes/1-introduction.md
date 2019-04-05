@@ -8,4 +8,5 @@ In this module, you will:
 
 - Learn how to create an Azure DevOps project
 - Learn how to add work items to an Azure Board using the Basic process
+- Learn how to set an interation
 - Learn how to assign team members to work items

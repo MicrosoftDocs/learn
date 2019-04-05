@@ -45,7 +45,7 @@ Mara: It's the time we'll allows ourselves to fix those three problems.
 
 Everyone looks nervous.
 
-Mara: Don't worry. We're still learning. We can always change it.
+Mara: Don't worry. We're still learning. We can always change it. Let's give ourselves two weeks and see how it goes.
 
 Andy volunteers to set up the Azure Basic board while everyone watches.
 
@@ -82,23 +82,19 @@ In this procedure, you create a team for the project.
 
 In this procedure, you add members to the team.
 
-1. Click **Project Settings**.
+1. Click **Project Settings** if you're not on that page.
 1. Click **Security**.
-1. Click **Members**.
+1. Click **Members**, in the right-hand column. You'll see your own name listed.
 1. Click **Add**.
-1. Enter **andy@tailspin.com** and click **Save changes**.
+1. Enter **andy@tailspin.com** and click **Save changes**. In a few moments, Andy's name appears.
 1. Do the same for amita@tailspin.com, mara@tailspin.com and tim@tailspin.com.
-
-### Create the Sprint
-
-<!-- TODO -->
 
 ### Create the board
 
 In this procedure, you add three work items to the board.
 
-1. In the left hand column, click **Boards** and select **Boards** from the menu.
-1. Click **Tailspin Build First Steps Team boards**. A Basic board appears.
+1. In the left hand column, point to **Boards** and select **Boards** from the menu.
+1. Click **Tailspin Build First Steps Team boards**. A blank Basic board appears.
 1. In the To Do column, Click the **green + sign** next to the **New item** field.
 1. Enter Stabilize the build server and then return.
 1. Click the **ellipses(…)**.
@@ -109,13 +105,23 @@ In this procedure, you add three work items to the board.
     a. Create a work item called **Increase visibility for all stakeholders**. The description is **The product manager is constantly asking for updates. It's difficult to report status on what each member is doing.  Planning documents quickly go out of date**.
     b. Create a work item called **Standardize handoffs to QA**. The description is **QA doesn't always know when a new build is available. The team tries to schedule handoffs up front but things slip (for example, the build is late or QA forgets).**
 
-The board will look something like this (the work item numbers may be different).
+Mara: Great. Let's define a sprint.
 
-[INSERT IMAGE]
+Tim: What's a sprint?
 
-Tim: What does _Sprint 1_ mean?
+Mara: Good question. A sprint is the amount of time we have to complete our work items.
 
-Mara: Good question. A sprint is amount of time we have to complete our work items. 
+Everyone looks nervous.
+
+Mara: We're still learning. Let's just say two weeks and see how that goes.
+
+### Define a sprint
+1. In the left-hand column, click Sprints.
+1. Click **Set dates** in the upper-right-hand corner.
+1. Leave the Iteration name as Sprint 1.
+1. In the Start date field, click the calendar and pick a date.
+1. In the End date field, click the calendar and pick a date two weeks later than the start date.
+1. Click **Save and close**.
 
 Finally, after a lot of discussion, Mara, Amita and Andy each take on one of the work items.
 
@@ -127,15 +133,18 @@ In this procedure, you assign tasks to team members.
 1. Click the **ellipses (...)**.
 1. Click **Open**.
 1. Click **Unassigned**.
-1. Enter carol@tailspin.com (or select it from the drop-down box).
+1. Enter amita@tailspin.com (or select it from the drop-down box).
 1. Click **Save and close**.
 1. Do the same for the Increase visibility work item and assign it to Mara.
 1. Do the same for the Stabilize build server work item and assign it to Andy.
 
 The board now looks something like this:
 
-[INSERT IMAGE]
+![Tasks to do for sprint 1](../media/3-board-to-do.png)
 
-Mara: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great!
+Mara: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great! Now, Andy, for each item click **To Do** and pick **Doing** from the drop-down menu. Andy does, and the final board looks like this.
 
-Everyone still looks nervous.
+![Tasks being done for sprint 1](../media/3-board-doing.png)
+
+
+Everyone looks even more nervous.
