@@ -1,6 +1,6 @@
 Watch this video from Amy Hood, Chief Financial Officer of Microsoft, as she discusses how is she leading the digital transformation journey in her organization, how has she empowered her employees during this journey, and what has she learned about the role of culture throughout this process.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWv3pu]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWunSH]
 
 With AI, the way finance operates and builds a business partnership, is less about on reporting the past, and far more about influencing the future. This is a significant shift in how to think about a finance department.
 
