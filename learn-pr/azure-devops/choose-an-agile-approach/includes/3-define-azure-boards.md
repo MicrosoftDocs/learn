@@ -1,6 +1,6 @@
 Alice created her own Azure Board using the Basic process. It shows problems in the build process that she and Bob identified.
 
-[INSERT IMAGE AGAIN? WHAT ABOUT DESCRIPTIONS?]
+![Backlog of tasks](../media/3-all-tasks-board.png)
 
 She's gotten the team together to take a look at them and see if there's a few that they can address.
 
