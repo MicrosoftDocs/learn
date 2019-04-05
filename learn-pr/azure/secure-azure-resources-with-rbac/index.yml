@@ -17,7 +17,6 @@ abstract: |
   - Grant access to resources
   - View activity logs of RBAC changes
 
-  [!include[](../../includes/azure-lab-environment-not-available.md)]
 prerequisites: |
   - Knowledge of basic Azure concepts, such as the Azure portal and resource groups
 iconUrl: /learn/achievements/secure-azure-resources-with-rbac.svg
