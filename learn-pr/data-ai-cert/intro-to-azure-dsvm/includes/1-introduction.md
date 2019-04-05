@@ -8,5 +8,5 @@ You can use both Windows-based and Linux-based VMs. Using one of these preconfig
 
 In this module, you will:
 
-- Learn about the types of DSVMs.
-- Learn what type of DSVM to use for each type of use case.
+- Learn about the types of Data Science Virtual Machines
+- Learn what type of DSVM to use for each type of use case
