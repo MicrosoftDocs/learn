@@ -1,38 +1,59 @@
-The Azure Machine Learning service supports integration of your data science pipelines with Azure. It allows you to scale up and automate model management, model training, model selection, hyperparameter tuning, feature selection, and model evaluation. When you are ready, the service allows you to easily deploy your trained models to Azure containers where they can be used. The key advantage of this service is that it makes it easy for your data science project to take advantage of containerization and automation. You get better results in less time.
+**Azure Machine Learning service** provides SDKs and cloud services you can use to integrate your data science pipelines with Azure. It allows you to scale up and automate:
 
-## What it includes
+- Model management
+- Model training
+- Model selection
+- Hyper-parameter tuning
+- Feature selection
+- Model evaluation
 
-The Azure Machine Learning (AML) service supports open-source technologies, which include a plethora of packages for practicing machine learning via Python. AML service includes common data science tools as extensions. If you're wondering why this would be beneficial for a data scientist, this technology permits the use of at scale data because it can run on a local machine then be scaled up to the cloud when needed.
+When you are ready, the service allows you to easily deploy your trained models to Azure containers where they can be used. The key advantage of Azure Machine Learning service is that it makes it easier for your data science project to utilize containerization and automation, meaning you get better results in less time.
 
-![Screenshot of AML Framework](../media/8-aml-framework.png)
+## What is included in Azure Machine Learning service
 
-## How the Data Science Process Looks in AML service
+The Azure Machine Learning service supports open-source technologies, which include a plethora of packages for practicing machine learning via Python. Azure Machine Learning service includes common data science tools as extensions. If you're wondering why this would be beneficial for a data scientist, this technology permits the use of at-scale data because it can run on a local machine, then be scaled up to the cloud when needed.
 
-The roles that have technologies available on this platform are data engineer, data scientist, and developer. We outline below what tools are available for each role in AML service.
+![Screenshot of the Azure Machine Learning framework.](../media/8-aml-framework.png)
 
-![Screenshot of Engineering Icon](../media/8-engineering-icon.png)
+## Roles in Azure Machine Learning service
 
-### Data Engineering
+The platform is designed to support three specific roles:
 
-Data preparation can be done using the open-source AML Data Prep SDK or pandas and you can do your data preparation locally or leverage Azure containers.
+1. Data Engineer
+1. Data Scientist
+1. Developer
+
+### Data Engineer
+
+The primary task a data engineer will do with Azure Machine Learning service is to ingest and prepare data for analysis. You can prepare your data locally, or leverage Azure containers. To prepare/transform the data you can use the open-source Azure Machine Learning Data Prep SDK, or the Pandas open-source library.
 
 ### Data Scientist
 
-The AML service does not replace your data science tool so use whatever Python IDE you like. In fact, bring your existing machine learning pipelines. The AML service can easily be incorporated into your Python code to take advantage of the powerful AML service features. Many model training frameworks are supported including support for Deep Learning. This includes:
+The Azure Machine Learning service doesn't replace any of your data science analysis tools. 
 
+You can bring all of your existing machine learning pipelines into Azure Machine Learning service and incorporate your Python code to utilize the powerful Azure Machine Learning service features. In addition to support for deep learning, many model training frameworks are supported, including:
+
+:::row:::
+  :::column span="3":::
 - Scikit-learn
 - TensorFlow
 - PyTorch
-- CNTK
-- MXNet
-
-![Screenshot of Combined Icons](../media/8-combined-icons.png)
+- Microsoft Cognitive Toolkit (CNTK)
+- Apache MXNet
+  :::column-end:::
+  :::column:::
+![Screenshot of multiple Icons.](../media/8-combined-icons.png)
+  :::column-end:::
+:::row-end:::
 
 ### Developer
 
-The AML service is compatible with four targets for deployment:
+Once a model has been built and trained, you can create an _image_ of the model and all components needed to use the model. An image contains:
 
-- Azure Container Instances
-- Azure Kubernetes Services
-- Azure IoT Edge
-- Field-programmable gate array
+1. The model.
+1. A scoring script or application which passes input to the model and returns the output of the model.
+1. The required dependencies (for example, the Python scripts or packages needed by the model or scoring script).
+
+Images can be packaged either as Docker images, or field programmable gate array (FPGA) images.
+
+Azure Machine Learning service can deploy images to either a web service (running in Azure Container Instance, FPGA, or Azure Kubernetes Services), or an IoT module (using IoT Edge). Once deployed, developers can invoke models from their applications to process data and return results.
