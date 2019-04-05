@@ -14,7 +14,7 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
  questions:
-    - content: 'When you do a write stream command, what does this option do with `outputMode("append")`?'
+    - content: 'When you do a write stream command, what does the `outputMode("append")` option do?'
       choices:
         - content: 'The append outputMode allows records to be added to the output sink.'
           explanation: 'The append outputMode allows records to be added to the output sink.'

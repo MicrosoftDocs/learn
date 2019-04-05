@@ -32,6 +32,6 @@ When loading data back to the target database, you might want to optimize your d
 
 A managed table is a table that manages both the actual data and the metadata. In this case, a `DROP TABLE` command removes both the metadata for the table and the data itself.
 
-Unmanaged tables manage the metadata from a table, while the actual data is managed separately and is often backed by a blob store such as Azure Blob storage or Amazon S3. Dropping an unmanaged table drops only the metadata that is associated with the table while the data remains in place.
+Unmanaged tables manage the metadata from a table, while the actual data is managed separately and is often backed by a blob store such as Azure Blob storage. Dropping an unmanaged table drops only the metadata that is associated with the table while the data remains in place.
 
 ![Structure of managed and unmanaged tables in Databricks](../media/managed-and-unmanaged-tables.png)

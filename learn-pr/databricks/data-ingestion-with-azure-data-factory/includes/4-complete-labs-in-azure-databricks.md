@@ -22,6 +22,6 @@ You now have your storage account and data factory instance up and running. Swit
 
 ## Complete the following notebooks
 
-- **01 Getting Started:** This notebook contains instructions for setting up your storage account and your data factory instance. If you've already set up these items in the previous unit, you can skip this notebook.
-- **02 Data Ingestion:** In this notebook, you create a Data Factory v2 pipeline to ingest data from a public dataset into your storage account. After the data is ingested, you use a Databricks notebook function to examine the data.
-- **03 Data Transformation:** This notebook explains how to create a connection between your data factory and your Databricks workspace. You use a sample notebook to add code to your Data Factory pipeline that will transform and restructure your data. You'll also do some basic aggregation on the sample dataset to generate the required reports.
+1. **01 Getting Started** - This notebook contains instructions for setting up your storage account and Azure Data Factory (ADF). If you've already set up these in the previous unit, you can skip this notebook.
+1. **02 Data Ingestion** - In this notebook, you create a Data Factory v2 pipeline to ingest data from a public dataset into your storage account. After the data is ingested, you use a Databricks notebook function to examine the data.
+1. **03 Data Transformation** - This notebook contains instructions to create connectivity between your Azure Data Factory and Databricks workspace. You will add a Databricks Notebook activity to your ADF pipeline that will run a sample notebook to transform and restructure your data. You'll also perform some basic aggregation on the sample dataset to generate required reports.
