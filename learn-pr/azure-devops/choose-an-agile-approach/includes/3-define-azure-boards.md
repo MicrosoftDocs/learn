@@ -1,22 +1,33 @@
-Alice created her own Azure Board using the Basic process. It shows problems in the build process that she and Bob identified.
+Mara created her own Azure Board using the Basic process. It shows the problems in the build process that she and Andy identified.
 
 ![Backlog of tasks](../media/3-all-tasks-board.png)
 
-She's gotten the team together to take a look at them and see if there's a few that they can address.
+She's gotten the team together to take a look at all the problems to see if there's a few that they can address.
 
 Amita: Wow, that's a lot of problems. How are we ever going to fix all those? Anyways, there's not much about testing in there.
 
 Tim: This doesn't have much to do with me, either. These are mostly dev problems.
 
-Mara: I know it's not complete. And some of them really need to get broken down into smaller tasks. But DevOps is about everyone on the team working together. Even if you don't see anything that affects you now, that'll change. And we all need to understand the process.
+Mara: I know it's not complete. And some of these problems really need to get broken down into smaller tasks. But DevOps is about everyone on the team working together. Even if you don't see anything that affects you now, that'll change. And we all need to understand the process.
 
-I want to pick just a few items from this list and use Azure Boards to define work items.
+I want to pick just a few items from this board and use another board to define work items.
 
 Andy: And a work item is?
 
 Mara: Work items help us plan and manage a project. A work item can track all kinds of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress. I'll show you when we set up an Azure board. We'll use tasks.
 
-So, let's pick three issues we think we can fix in a couple weeks.
+Amita: Is the Basic board the best way to look at our issues? Maybe there's a better way.
+
+Mara: There are four processes to choose from. We can use:
+
+* **Capability Maturity Model Integration (CMMI)**. This is really for large organizations and it's pretty complicated so I didn't use it.
+* **Scrum**. Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practicies and rules. We don't have a Scrum master, who's usually received some training and certification so I didn't pick that one either.
+* **Agile**. This seemed like the obvious choice since I'm always talking about Agile but it has a few more things to consider than the simplest option.
+* **Basic**. Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away. That's why I picked it.
+
+Amita: OK, lets use it to get started. We can switch to something else, right?
+
+Mara: Right! So, let's pick three issues we think we can fix in a couple weeks.
 
 There's a lot of arguing, but the team decides to take on these three issues:
 
@@ -26,7 +37,17 @@ There's a lot of arguing, but the team decides to take on these three issues:
 
 These seem the easiest issues to take on.
 
-Andy volunteers to set up the Azure Basic board while everyone watches. 
+Mara: OK. Lets set up a project, a team, set up a sprint, and then decide who'll do what?
+
+Tim: What's a sprint?
+
+Mara: It's the time we'll allows ourselves to fix those three problems.
+
+Everyone looks nervous.
+
+Mara: Don't worry. We're still learning. We can always change it.
+
+Andy volunteers to set up the Azure Basic board while everyone watches.
 
 ## Set up an Azure board using the Basic process
 
@@ -53,8 +74,8 @@ In this procedure, you create a team for the project.
 2. The Project details page opens
 3. Under **General**, select **Teams**. The Teams page opens.
 4. Click **New team**. The **Create new team** window opens.
-5. In the **Team name** field, type **Spacegame**.
-6. In the **Description** field, type **This team works on the Spacegame project and the build process.**
+5. In the **Team name** field, type **Space Game**.
+6. In the **Description** field, type **This team works on the Space Game project and the build process.**
 7. Click **Create team**.
 
 ### Add team members
@@ -67,6 +88,10 @@ In this procedure, you add members to the team.
 1. Click **Add**.
 1. Enter **andy@tailspin.com** and click **Save changes**.
 1. Do the same for amita@tailspin.com, mara@tailspin.com and tim@tailspin.com.
+
+### Create the Sprint
+
+<!-- TODO -->
 
 ### Create the board
 
@@ -92,7 +117,7 @@ Tim: What does _Sprint 1_ mean?
 
 Mara: Good question. A sprint is amount of time we have to complete our work items. 
 
-Finally, after a lot of discussion, Alice, Carol and Bob each take on one of the work items.
+Finally, after a lot of discussion, Mara, Amita and Andy each take on one of the work items.
 
 ### Assign tasks
 
@@ -104,13 +129,13 @@ In this procedure, you assign tasks to team members.
 1. Click **Unassigned**.
 1. Enter carol@tailspin.com (or select it from the drop-down box).
 1. Click **Save and close**.
-1. Do the same for the Increase visibility work item and assign it to Alice.
-1. Do the same for the Stabilize build server work item and assign it to Bob.
+1. Do the same for the Increase visibility work item and assign it to Mara.
+1. Do the same for the Stabilize build server work item and assign it to Andy.
 
 The board now looks something like this:
 
 [INSERT IMAGE]
 
-Alice: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great!
+Mara: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great!
 
-Everyone looks nervous.
+Everyone still looks nervous.

@@ -12,11 +12,25 @@ Andy: I remember we did the DevOps Assessment but now what? We've got to get sta
 
 Mara: There's a lot more we can do. I think we should take the first step and do some Agile planning. We can use Azure Boards to help us.
 
-Andy: Look, if you know some magic way to make life easier, I'm all for it. My kids are always asleep by the time I get home. I just don't have much time to learn some new application.
+Andy: What do you mean by Agile?
 
-Mara: It's not magic, but we can do it bit by bit and using Azure boards is very easy. Can you explain the build process to me and help me identify the big problems?
+Mara: Agile is an approach to software development. The term “Agile” was coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org?azure-portal=true). The manifesto established some guiding principles for a better approach to software development. The manifesto says...
 
-After a lot of coffee, Mara and Andy identify the biggest problems in the build process. All of the issues came up during the last release. After Andy leaves, Alice looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic process in Azure Boards to get all the problems in one place. Here's what here board looks like:
+We value:
+
+* Individuals and interactions over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over contract negotiation
+* Responding to change over following a plan
+
+
+ Andy: Look, if you know some magic way to make life easier, I'm all for it. My kids are always asleep by the time I get home. But this sounds very touchy-feely without any concrete solutions.
+
+ Mara: It's not magic, but we can do it bit by bit and Azure DevOps gives us the tools we need to implement Agile practicies. For now, when we want to plan, we can use Azure Boards.
+
+ First, can you explain the build process to me and help me identify the big problems?
+
+ After a lot of coffee, Mara and Andy identify the biggest problems in the build process. All of the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic version of Azure boards to get all the problems in one place. Here's what her board looks like:
 
 [INSERT IMAGE]
 
