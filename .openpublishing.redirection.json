@@ -232,7 +232,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assing-user-class ",
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assing-user-class.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assign-resource-class",
       "redirect_document_id": true
     }
