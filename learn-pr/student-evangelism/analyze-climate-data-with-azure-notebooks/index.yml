@@ -23,6 +23,7 @@ levels:
 - beginner
 roles:
 - developer
+- data-scientist
 products:
 - azure
 units:
