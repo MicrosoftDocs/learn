@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-python.1-getting-started
+title: Getting started with Python
+metadata:
+  title: Getting started with Python
+  description: Create an Azure notebook and run your first Python code
+  ms.date: 01/25/2019
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/1-getting-started.md)]
