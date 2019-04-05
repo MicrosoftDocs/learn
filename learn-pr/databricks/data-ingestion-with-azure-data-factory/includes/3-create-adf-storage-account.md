@@ -24,8 +24,8 @@ Let's start by creating an Azure storage account and an Azure Data Factory insta
 1. Select **Next: Advanced >**.
 1. In the **Advanced** tab, use the following settings:
 
-    - **Secure transfer required:** Select **Disabled**.
-    - **Virtual network:** Select **None**.
+    - **Secure transfer required**: Select **Disabled**
+    - **Virtual network**: Select **All networks**
 
    ![Screenshot of the "Create storage account" Advanced tab](../media/create-storage-account-advanced.png)
 
