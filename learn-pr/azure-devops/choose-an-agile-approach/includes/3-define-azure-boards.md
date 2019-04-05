@@ -4,17 +4,17 @@ Alice created her own Azure Board using the Basic process. It shows problems in 
 
 She's gotten the team together to take a look at them and see if there's a few that they can address.
 
-Carol: Wow, that's a lot of problems. How are we ever going to fix all those? Anyways, there's not much about testing in there.
+Amita: Wow, that's a lot of problems. How are we ever going to fix all those? Anyways, there's not much about testing in there.
 
-Ted: This doesn't have much to do with me, either. These are mostly dev problems.
+Tim: This doesn't have much to do with me, either. These are mostly dev problems.
 
-Alice: I know it's not complete. And some of them really need to get broken down into smaller tasks. But DevOps is about everyone on the team working together. Even if you don't see anything that affects you now, that'll change. And we all need to understand the process.
+Mara: I know it's not complete. And some of them really need to get broken down into smaller tasks. But DevOps is about everyone on the team working together. Even if you don't see anything that affects you now, that'll change. And we all need to understand the process.
 
 I want to pick just a few items from this list and use Azure Boards to define work items.
 
-Bob: And a work item is?
+Andy: And a work item is?
 
-Alice: Work items help us plan and manage a project. A work item can track all kinds of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress. I'll show you when we set up an Azure board. We'll use tasks.
+Mara: Work items help us plan and manage a project. A work item can track all kinds of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress. I'll show you when we set up an Azure board. We'll use tasks.
 
 So, let's pick three issues we think we can fix in a couple weeks.
 
@@ -26,7 +26,7 @@ There's a lot of arguing, but the team decides to take on these three issues:
 
 These seem the easiest issues to take on.
 
-Bob volunteers to set up the Azure Basic board while everyone watches. 
+Andy volunteers to set up the Azure Basic board while everyone watches. 
 
 ## Set up an Azure board using the Basic process
 
@@ -65,8 +65,8 @@ In this procedure, you add members to the team.
 1. Click **Security**.
 1. Click **Members**.
 1. Click **Add**.
-1. Enter **bob@tailspin.com** and click **Save changes**.
-1. Do the same for carol@tailspin.com, alice@tailspin.com and ted@tailspin.com.
+1. Enter **andy@tailspin.com** and click **Save changes**.
+1. Do the same for amita@tailspin.com, mara@tailspin.com and tim@tailspin.com.
 
 ### Create the board
 
@@ -87,6 +87,10 @@ In this procedure, you add three work items to the board.
 The board will look something like this (the work item numbers may be different).
 
 [INSERT IMAGE]
+
+Tim: What does _Sprint 1_ mean?
+
+Mara: Good question. A sprint is amount of time we have to complete our work items. 
 
 Finally, after a lot of discussion, Alice, Carol and Bob each take on one of the work items.
 
