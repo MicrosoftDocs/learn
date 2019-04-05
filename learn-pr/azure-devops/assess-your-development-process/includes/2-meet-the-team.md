@@ -30,13 +30,13 @@ Here are your team members.
     ![](../../_shared/media-draft/bob-left.png) 
   :::column-end:::
   :::column:::
-Bob is a developer who's been working with computers since he was a kid. His hobby is working on open source projects with other programmers from all over the world.
+Andy is a developer who's been working with computers since he was a kid. His hobby is working on open source projects with other programmers from all over the world.
   :::column-end:::
 :::row-end:::
 
 :::row:::
   :::column:::
-Carol is in QA. She's calm, which helps with some temperamental developers. She's good at organizing and setting priorities and lives to find edge cases.
+Amita is in QA. She's calm, which helps with some temperamental developers. She's good at organizing and setting priorities and lives to find edge cases.
   :::column-end:::
   :::column span="2":::
 ![](../../_shared/media-draft/carol-right.png) 
@@ -48,13 +48,13 @@ Carol is in QA. She's calm, which helps with some temperamental developers. She'
     ![](../../_shared/media-draft/ted-left.png) 
   :::column-end:::
   :::column:::
-Ted is in operations. He likes practical solutions and he's very cautious (although some people might use the word "paranoid"), which makes sense because he's the person who gets the 3 AM call when something goes wrong.
+Tim is in operations. He likes practical solutions and he's very cautious (although some people might use the word "paranoid"), which makes sense because he's the person who gets the 3 AM call when something goes wrong.
   :::column-end:::
 :::row-end:::
 
 :::row:::
   :::column:::
-Alice is new. She just joined Tailspin as a developer because she likes games and she thought a smaller company would have lots of opportunity for innovation. She's a big fan of DevOps.
+Mara is new. She just joined Tailspin as a developer because she likes games and she thought a smaller company would have lots of opportunity for innovation. She's a big fan of DevOps.
   :::column-end:::
   :::column span="2":::
 ![](../../_shared/media-draft/alice-right.png) 
@@ -74,12 +74,12 @@ The team's product manager has called everyone into a meeting and he's in a bad 
 
 He demands, "How long before these problems are fixed?"
 
-Bob thinks: I bet it takes me a month to write that code.
+Andy thinks: I bet it takes me a month to write that code.
 
-Carol thinks: It'll take me at least a week to test this and I can't start until Bob is finished and he always wants to sneak in new code.
+Amita thinks: It'll take me at least a week to test this and I can't start until Andy is finished and he always wants to sneak in new code.
 
-Ted thinks: It will take me at least a week to set up the environments and deploy this to production. I can't start until Carol is finished and she's never willing to call something a release candidate.
+Tim thinks: It will take me at least a week to set up the environments and deploy this to production. I can't start until Amita is finished and she's never willing to call something a release candidate.
 
-Alice wonders: Was taking this job a mistake?
+Mara wonders: Was taking this job a mistake?
 
-Bob looks around at his team mates and says, "We'll get back to you."
+Andy looks around at his team mates and says, "We'll get back to you."
