@@ -1,56 +1,56 @@
-A deployment slot is an instance of a web app in which you can test a new version of a web app before deployment. You can deploy a new version of an app without any downtime by swapping slots.
+A deployment slot is an instance of a web app in which you can test a new app version before you deploy it. By swapping slots, you can deploy a new version of an app without any downtime.
 
-You have chosen to use Azure App Service deployment slots to streamline the deployment of new versions of your social media web app. Now you want to set up the web app in Azure and configure those deployment slots.
+Suppose you've chosen to use Azure App Service deployment slots to streamline the deployment of new versions of your social media web app. Now you want to set up the web app in Azure and configure the deployment slots.
 
-Here, you will set up a web app and add a new deployment slot to it for staging. You will also deploy different versions of the web app to those slots.
+Here you'll set up a web app and add a new deployment slot to it for staging. You'll also deploy different versions of the web app to those slots.
 
-[!INCLUDE [Activate the Sandbox](../../../includes/azure-sandbox-activate.md)]
+[!INCLUDE [Activate the sandbox](../../../includes/azure-sandbox-activate.md)]
 
-[!INCLUDE [Select an Azure Region](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+[!INCLUDE [Select an Azure region](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-## Create a new web app
+## Create a web app
 
 Start by creating a new web app resource in the Azure portal:
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. Select **+ Create a resource**.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
+1. Select **Create a resource**.
 1. Select **Web** > **Web App**.
 1. Fill out the form like this:
 
     | Field                     | Value                                                                |
     |---------------------------|----------------------------------------------------------------------|
-    | App Name                  | Enter a unique name for the site                                     |
-    | Subscription              | Concierge Subscription                                               |
-    | Resource group            | Select *use existing* and choose <rgn>[Sandbox resource group]</rgn> |
-    | OS                        | Windows                                                              |
-    | Publish                   | Code                                                                 |
-    | App Service plan/Location | Leave default                                                        |
-    | Application Insights      | Leave default                                                        |
+    | **App name**                  | Enter a unique name for the site.                                     |
+    | **Subscription**              | Select **Concierge Subscription**.                                               |
+    | **Resource Group**            | Select **use existing** and choose your sandbox resource group. |
+    | **OS**                        | Select **Windows**.                                                              |
+    | **Publish**                   | Select **Code**.                                                                 |
+    | **App Service plan/Location** | Leave the default value.                                              |
+    | **Application Insights**      | Leave the default value.                                             |
 
+1. Select **Create**. Azure creates the web app and the production deployment slot.
+ 
     ![Create a web app](../media/3-create-a-web-app.png)
-
-1. Click **Create**. Azure creates the web app and the production deployment slot.
 
 ## Configure git deployment
 
-You can use any of the usual deployment tools with your web app and its deployment slots. In this exercise, you will use a local git repository for deployment. Configure the web app to use git by following these steps:
+Use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll use a local git repository for deployment. Set up the web app to use git by following these steps:
 
-1. In the Azure portal, in the navigation on the left, click **All resources** and then click the web app you just created.
-1. In the **App Service** page, under **Deployment**, click **Deployment Center**.
-1. Click **Local Git** and then click **Continue**.
-1. Click **App Service Kudu build server**, click **Continue**, and then click **Finish**.
-1. In the **Deployment Center** page, click **Deployment Credentials**, and then click the **User Credentials** tab.
+1. In the Azure portal, on the left, select **All resources** and then select the web app you created.
+1. On the **App Service** page, under **Deployment**, select **Deployment Center**.
+1. Select **Local Git** > **Continue**.
+1. Select **App Service Kudu build server** > **Continue** > **Finish**.
+1. On the **Deployment Center** page, select **Deployment Credentials**, and then select the **User Credentials** tab.
 1. Enter a new password and save the credentials. Note the password for later.
 
 ## Configure the git client and clone the web app source code
 
-Now you must set up the git client in the Cloud Shell and use it to clone a sample web app. Follow these steps:
+Now you'll set up the git client in Cloud Shell and use it to clone a sample web app. Follow these steps:
 
-1. In the Cloud Shell window on the right, enter the following commands to configure your git username and email address. These are not associated with any kind of account or sign-up, and you can use whatever values you like.
+1. On the right side of the Cloud Shell window, enter the following commands to set up your git username and email address. These commands aren't associated with any account or sign-up, and you can use whatever values you like.
 
     ```bash
-    git config --global user.name "<Your name>"
-    git config --global user.email "<Your email address>"
+    git config --global user.name "<your name>"
+    git config --global user.email "<your email address>"
     ```
 
 1. To create a folder for the source code, enter the following commands:
@@ -69,28 +69,28 @@ Now you must set up the git client in the Cloud Shell and use it to clone a samp
 
 ## Configure a git remote to deploy the app to production
 
-To use git to deploy the source code to the web app's production slot, you configure the git URL of your app as a remote repository. Follow these steps:
+To use git to deploy the source code to the web app's production slot, set up your app's git URL as a remote repository. Follow these steps:
 
-1. In the Azure portal, on the web app's **Overview** page, next to the **Git clone url** click the **Copy** button.
+1. In the Azure portal, on the web app's **Overview** page, next to **Git clone url**, select the **Copy** button.
 
     ![Copy the git clone URL](../media/3-copy-git-clone-url.png)
 
     > [!NOTE]
-    > If you don't see the Git clone URL where it is shown in the screenshot, refresh the portal.
+    > If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
 
-1. In the Cloud Shell, run the following command to configure the URL as a git remote named "production". Replace `git-clone-url` with the URL from the previous step.
+1. In Cloud Shell, run the following command to configure the URL as a git remote named "production". Replace `git-clone-url` with the URL from the previous step.
 
     ```bash
     git remote add production <git-clone-url>
     ```
 
-1. To deploy the web app to the production slot, type the following command and then press enter. When you are prompted for the password, type **Pa$$w0rd** and then press Enter:
+1. To deploy the web app to the production slot, enter the following command. When you're prompted for the password, enter **Pa$$w0rd**.
 
     ```bash
     git push production
     ```
 
-1. When the deployment is complete, in the Azure portal, browse to the web app's **Overview** page and then click **Browse**. Azure displays the web app:
+1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page and then select **Browse**. Azure displays the web app:
 
     ![The web app in the production slot](../media/3-web-app-production-slot.png)
 
@@ -98,67 +98,69 @@ To use git to deploy the source code to the web app's production slot, you confi
 
 ## Create a new staging slot
 
-When you created the web app, only one slot was created: the production slot. This is the slot that you just deploy source code to. Next, let's create a second deployment slot for staging new versions of the web app:
+For the new the web app, you created only one slot: the production slot. You deployed source code to this slot. 
 
-1. In the Azure portal, click **All resources** and then click the web app.
-1. Under **Deployment** click **Deployment slots**.
+Next you'll create a deployment slot where you can stage new versions of the web app:
+
+1. In the Azure portal, select **All resources** and then select the web app.
+1. Under **Deployment**, select **Deployment slots**.
 
     ![Access deployment slots](../media/3-access-deployment-slots.png)
 
-1. On the **Deployment slots** page, click **+ Add slot**.
-1. In the **Name** textbox, type **Staging** and then click **Add**.
-1. When the deployment slot has been added, click **Close**.
+1. On the **Deployment slots** page, select **Add slot**.
+1. In the **Name** box, enter **Staging** and then select **Add**.
+1. After the deployment slot is added, select **Close**.
 
-## Configure git deployment for the staging slot
+## Set up git deployment for the staging slot
 
-You have to configure the new slot to use git deployment, just like you did for the production slot. Follow these steps:
+Set up the new slot to use git deployment, just like you did for the production slot. Follow these steps:
 
-1. In the Azure portal, in the navigation on the left, click **All resources**. In the list of all resources, you'll see both the production web app and the Staging slot represented as separate apps. Select the Staging slot to navigate to its Overview page.
-1. Under **Deployment**, click **Deployment Center**.
-1. Click **Local Git** and then click **Continue**.
-1. Click **App Service Kudu build server**, click **Continue**, and then click **Finish**.
+1. In the Azure portal, on the left, select **All resources**. In the list of all resources, you'll see both the production web app and the staging slot. These are represented as separate apps. Select the staging slot to go to its **Overview** page.
+1. Under **Deployment**, select **Deployment Center**.
+1. Select **Local Git** > **Continue**.
+1. Select **App Service Kudu build server** > **Continue** > **Finish**.
 
-## Configure git to deploy the app to the staging slot
+## Set up git to deploy the app to the staging slot
 
-To use the git client to deploy source code to the new slot, you can add an extra remote to the git configuration. Follow these steps:
+To use the git client to deploy source code to the new slot, add an extra remote to the git configuration. Follow these steps:
 
-1. In the Azure portal, navigate to the Overpage of the Staging slot. Near the top of the page, click the **Copy** button next to the **Git clone url**.
+1. In the Azure portal, go to the **Overview** page of the staging slot. Near the top of the page, next to **Git clone url**, select the **Copy** button.
 
     > [!NOTE]
-    > Note that the git URL for the staging slot is slightly different than the URL for the production slot.
+    > The git URL for the staging slot is slightly different from the URL for the production slot.
 
-1. To add the remote for the **Staging** slot, type the following command. Paste the git clone URL to replace the token:
+1. To add the remote for the staging slot, enter the following command. Paste the git clone URL to replace the token.
 
     ```bash
     git remote add staging <git clone url>
     ```
 
-## Modify the app source code and deploy the app to the staging
+## Modify the app source code and deploy the app to the staging slot
 
-Next, let's make a small change to the web app, and then use git to deploy the new version to the **Staging** slot:
+Next, make a small change to the web app and then use git to deploy the new version to the staging slot:
 
-1. In the Cloud Shell, type the following command and then press Enter:
+1. In Cloud Shell, enter the following command:
 
     ```bash
     code .
     ```
 
-1. In the list of **Files**, expand **aspnet-get-started**, expand **Views**, and then expand **Home**.
-1. Click **Index.cshtml**
+1. In the list of **Files**, expand **aspnet-get-started** > **Views** > **Home**.
+1. Select **Index.cshtml**.
 1. Locate the following code:
 
     ```html
     <h1>ASP.NET</h1>
     ```
 
-1. Replace that code with:
+1. Replace that code with this code:
 
     ```html
     <h1>Web App Version 2</h1>
     ```
 
-1. To save your changes, type CTRL+S.
-1. In the Cloud Shell, enter the following commands to commit the new version of the app to git and deploy it to the staging slot. Enter your deployment password when prompted.
+1. To save your changes, press CTRL+S.
+1. In Cloud Shell, enter the following commands to commit the new version of the app to git and deploy it to the staging slot. Enter your deployment password when you're prompted.
 
     ```bash
     git add .
@@ -168,10 +170,10 @@ Next, let's make a small change to the web app, and then use git to deploy the n
 
 ## Browse the staging slot
 
-Now, you can view the new version of the web app by browsing to the **Staging** deployment slot's URL.
+Now you can view the new version of the web app by browsing to the staging deployment slot's URL.
 
-In the Azure portal, navigate to the Overview page for the staging slot and click the **Browse** button near the top. You'll see the new version of the web app in a new browser tab:
+In the Azure portal, go to the **Overview** page for the staging slot. Near the top of the page, select the **Browse** button. The new version of the web app appears in a browser tab:
 
-    ![The updated web app in the staging slot](../media/3-web-app-staging-slot.png)
+![The updated web app in the staging slot](../media/3-web-app-staging-slot.png)
 
-    At this point, the staging slot has the new version of the code and you can run your tests on it. Remember that the production slot has the previous web app version, and users cannot yet see your new code.
+At this point, the staging slot has the new version of the code, and you can run tests on it. Remember that the production slot has the previous web app version, and users can't yet see your new code.

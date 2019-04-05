@@ -3,7 +3,7 @@ uid: learn.azure.stage-deploy-app-service-deployment-slots.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this unit, you will learn about the kind of problems that deployment slots can solve.
+  description: Learn about the kind of problems that deployment slots can solve.
   ms.date: 03/27/2019
   author: nickwalkmsft
   ms.author: nickwalk

@@ -2,8 +2,6 @@ The application you're building is a cross-platform mobile app that talks to the
 
 To complete the steps in this unit, you need Xamarin.Forms cross-platform UI toolkit installed in your Visual Studio. If you do not have this already, visit [installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/?tabs=windows).
 
-<!-- [!include[](../../../includes/azure-lab-environment-not-available.md)] -->
-
 ## Create the Xamarin.Forms project
 
 1. From Visual Studio, select *File > New > Project...*.

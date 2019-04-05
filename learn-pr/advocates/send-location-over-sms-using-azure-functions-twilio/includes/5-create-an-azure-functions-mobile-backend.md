@@ -1,7 +1,5 @@
 At this point, the app is working to get the user's location and is ready to be sent to the Azure Functions. In this unit, you build your own Azure Functions.
 
-<!-- [!include[](../../../includes/azure-lab-environment-not-available.md)]-->
-
 ## Create an Azure Functions project
 
 1. Right-click on the `ImHere` solution and select *Add > New Project...*.
