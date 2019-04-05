@@ -1,55 +1,55 @@
-Alice has called a short meeting with her teammates. Everyone has showed up but no one wants to be there. She's put a box of donuts on the table.
+Mara has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
-Alice: Hi, thanks for coming. I wanted to show you the results of the DevOps Assessment that I took.
+Mara: Hi, thanks for coming. I wanted to show you the results of the DevOps Assessment that I took.
 
 ![The team's progress for each of the Self-Assessment categories](../media/2-assessment-results.png)
 
-Alice: The graph shows that we're doing better with our culture and our outcomes than with our process, measurements or technology. Just like everybody, we can improve. We can decide which areas to tackle first.
+Mara: The graph shows that we're doing better with our culture and our outcomes than with our process, measurements or technology. Just like everybody, we can improve. We can decide which areas to tackle first.
 
-Bob: This shows us where we have problems but not what to do about them.
+Andy: This shows us where we have problems but not what to do about them.
 
-Alice: Right, it's an assessment that helps point us in the right direction. As for what to do about our problems, I think that DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
+Mara: Right, it's an assessment that helps point us in the right direction. As for what to do about our problems, I think that DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
 
-Ted: I know someone who just got a job as a DevOps engineer. I think it's more for QA. That sounds like you, Carol.
+Tim: I know someone who just got a job as a DevOps engineer. I think it's more for QA. That sounds like you, Amita.
 
-Alice: DevOps isn't a job title.
+Mara: DevOps isn't a job title.
 
-Carol: Is there any software program we can get that will help us along or a template? Maybe there's a DevOps spreadsheet.
+Amita: Is there any software program we can get that will help us along or a template? Maybe there's a DevOps spreadsheet.
 
-Alice: DevOps isn't a piece of software.
+Mara: DevOps isn't a piece of software.
 
-Bob: It's more like a methodology. 
+Andy: It's more like a methodology. 
 
-Alice: Not really.
+Mara: Not really.
 
-Bob, Carol, Ted: So what is it?!
+Andy, Amita, Tim: So what is it?!
 
-Alice: Here's the definition I like to use:
+Mara: Here's the definition I like to use:
 
 > DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.
 
 Our goal is to give our customers games they will love. We do that by working together with a shared set of practices and tools.
 
-Carol: What does that mean? What shared practices? What shared tools?
+Amita: What does that mean? What shared practices? What shared tools?
 
-Alice: Here's what I mean by practices:
+Mara: Here's what I mean by practices:
 
 - **Agile planning**. Together, we'll create a backlog of work that everyone on the team and in management can see. We'll prioritize the items so we know what we need to work on first. The backlog can include user stories, bugs, and any other information that helps us.
 - **Continuous integration (CI)**. We'll automate how we build and test our code and we'll do that every time a team member commits changes to version control.
 - **Continuous delivery (CD)**. This is how we build, test, configure, and deploy from a build to a production environment.
 - **Monitoring**. We'll use telemetry to get information about an application’s performance and usage patterns. We can use that information to improve as we iterate.
 
-Carol: I don't know about automated testing. My tests are manual and I do them after Bob hands the code off to me. I don't have time to change how I do everything.
+Amita: I don't know about automated testing. My tests are manual and I do them after Andy hands the code off to me. I don't have time to change how I do everything.
 
-Raymond: There's no way I'm letting any of you deploy to production.
+Tim: There's no way I'm letting any of you deploy to production.
 
-Bob: This will scare management. They never think further than the next release and they want it yesterday.
+Andy: This will scare management. They never think further than the next release and they want it yesterday.
 
-Alice: I know what you mean about management. I put together this handout about the benefits.
+Mara: I know what you mean about management. I put together this handout about the benefits.
 
 ## The DevOps handout
 
-Here's the handout that Alice prepared.
+Here's the handout that Mara prepared.
 
 DevOps Research and Assessment LLC ([DORA](https://devops-research.com/)) published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today. 
 
