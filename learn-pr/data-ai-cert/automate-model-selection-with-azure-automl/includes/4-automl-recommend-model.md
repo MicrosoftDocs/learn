@@ -51,7 +51,7 @@ In this example, the following properties are set:
 
     ![The screenshot depicts various algorithms listed under the classification, regression, and forecasting models.](../media/4-automl-property.png)
 
-- **primary_metric**: This is the metric that you want AutoML to optimize. In the regression example are several metrics: *normalized_root_mean_squared_error*, *r2_score*, *normalized_mean_absolute_error*, and *spearman_correlation*. In this example, the Spearman correlation was the primary metric, which basically measures the similarity of two datasets. For more information about how these metrics work, refer to the [documentation](https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-configure-auto-train#explore-model-metrics).
+- **primary_metric**: This is the metric that you want AutoML to optimize. In the regression example are several metrics: *normalized_root_mean_squared_error*, *r2_score*, *normalized_mean_absolute_error*, and *spearman_correlation*. In this example, the Spearman correlation was the primary metric, which basically measures the similarity of two datasets. For more information about how these metrics work, refer to the [documentation](https://docs.microsoft.com/azure/machine-learning/service/how-to-configure-auto-train#explore-model-metrics).
 
 - **iterations_time_out_minutes**: Iterations is how many model pipeline executions you want to use and the time limit for each iteration.
 

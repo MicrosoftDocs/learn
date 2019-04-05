@@ -1,4 +1,4 @@
-The steps of going from preparing data, building and training models, and deployment are collectively known as the machine learning *pipeline*. Pipelines can be simple or complex, and the level of automation can vary. However, as the number and complexity of machine learning pipelines increase, the need for automation grows. This is where [Azure Machine Learning pipelines](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-ml-pipelines) comes in.
+The steps of going from preparing data, building and training models, and deployment are collectively known as the machine learning *pipeline*. Pipelines can be simple or complex, and the level of automation can vary. However, as the number and complexity of machine learning pipelines increase, the need for automation grows. This is where [Azure Machine Learning pipelines](https://docs.microsoft.com/azure/machine-learning/service/concept-ml-pipelines) comes in.
 
 Azure Machine Learning pipelines solve the problems of creating and managing machine learning pipelines. It enables data scientists to manage multiple workflows at the same time, whether they are simple or complex, thus enabling data scientists to focus on machine learning rather than the infrastructure.
 
@@ -18,6 +18,6 @@ The first step is to load the source data. This is referred to as _data ingestio
 If you have a lot of data, each of the previous steps could be computationally expensive. Azure Machine Learning pipelines can be used so data sources and intermediate data are automatically reused inside the pipeline, unchanged steps are automatically skipped, and the retraining process becomes much faster and less expensive.
 
 > [!TIP]
-> You can use the [Azure Machine Learning SDK for Python](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-ml-pipelines#the-python-sdk-for-pipelines) to create machine learning pipelines and to submit and track individual pipeline runs.
+> You can use the [Azure Machine Learning SDK for Python](https://docs.microsoft.com/azure/machine-learning/service/concept-ml-pipelines#the-python-sdk-for-pipelines) to create machine learning pipelines and to submit and track individual pipeline runs.
 
 With Azure Machine Learning pipelines and the AutoML capability, you can more easily train your algorithms with just a few lines of code. The next two units discuss AutoML.
