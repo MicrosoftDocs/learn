@@ -1,7 +1,7 @@
 {
   "redirections": [
     {
-      "source_path": "learn-pr/paths/data-engineering-with-databricks/index.md",
+      "source_path": "learn-pr/paths/modern-data-warehouse/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/data-engineering-with-databricks/",
       "redirect_document_id": true
     },
