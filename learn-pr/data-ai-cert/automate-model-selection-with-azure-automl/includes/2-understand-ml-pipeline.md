@@ -6,8 +6,6 @@ The Azure Machine Learning pipeline consists of multiple steps, each of which is
 
 ![The diagram depicts the steps involved in creating a pipeline.](../media/2-azure-ml-pipeline.png)
 
-<!-- TODO: Given what I see in the graphic, I think the first bullet below (ingestion) should be a sentence followed by another sentence, such as, "Data ingestion is the process of loading source data. Following ingestion, data preparation occurs in four stages:" Please verify. Also, I changed the tildes in the normalization bullet to en dashes to indicate ranges; please verify this is ok.-->
-
 The first step is to load the source data. This is referred to as _data ingestion_. Once the data has been loaded, there are several steps that might be necessary to prepare the data for processing including:
 
 - **Data normalization** translates some input data to be in a certain range. For example, normalize the input RGB value of an image pixel, usually from 0–255, to 0–1.
