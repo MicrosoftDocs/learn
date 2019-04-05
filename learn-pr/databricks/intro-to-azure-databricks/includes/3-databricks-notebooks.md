@@ -24,7 +24,7 @@ The notebooks are backed by clusters, or networked computers, that work together
 1. Select **Create Cluster**.
 
 > [!NOTE]
-> Check with your local system administrator to see if there is a recommended default cluster at your company to use for the rest of the class. Making new cluster will incur cost.
+> Check with your local system administrator to see if there is a recommended default cluster at your company to use for the rest of the class. Making new cluster will incur costs.
 
 ## Create a notebook
 
