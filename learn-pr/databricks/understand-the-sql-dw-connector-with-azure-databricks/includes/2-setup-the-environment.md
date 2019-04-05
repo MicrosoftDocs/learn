@@ -25,7 +25,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
     ![Create a SQL data warehouse window](../media/create-sql-data-warehouse-form.png )
 
-   > ![Note]
+   > [!Note]
    > Remember the user name and password for SQL Server. You'll need them.
 
 1. On the **SQL Data Warehouse** blade, under **Performance level**, select **Gen2: DW500c**.
@@ -63,6 +63,7 @@ To connect to your database, add your computer's IP address to the SQL Server in
 ## Create connections in Azure Data Studio
 
 When you connect to your data warehouse, you need to connect through the logical SQL Server instance that you created when you provisioned SQL Data Warehouse earlier.
+
 1. Go to the Azure portal and select your data warehouse from the resource group that you created for this module.
 1. Find the full name of the logical SQL Server instance at the top of the **Overview** blade, as you did in step 2 of the "Add your client IP address" section. Remember this name.
 
@@ -70,9 +71,9 @@ When you connect to your data warehouse, you need to connect through the logical
 
 1. Go back to Azure Data Studio.
 
-Now you need to add a new connection. This option will display by default the first time you run Azure Data Studio. Enter the required information in the Connection window, as described in the following steps.
+    Now you need to add a new connection. This option will display by default the first time you run Azure Data Studio. Enter the required information in the Connection window, as described in the following steps.
 
-   ![The Connection window](../media/connect-sql-dw.png)
+      ![The Connection window](../media/connect-sql-dw.png)
 1. In Azure Data Studio, enter the **Server** name identified in step 2 of the previous procedure.
 1. For the **Authentication type**, select **SQL Login**.
 1. Enter the user name and password that you entered in the "Set up SQL Data Warehouse" section. Select **Remember password**.
@@ -171,6 +172,6 @@ The PowerShell script will create additional resources and copy files into a new
 
 1. After you sign in, you'll be prompted to select the Azure subscription that you want to use from a list of all linked subscriptions. Enter the row number of the subscription that you're using for this module.
 
-1. You'll be prompted to provide the name of the resource group that you created for this module. Enter the name of the resource group that you created in "Deploy an Azure Databricks Workspace." After you complete this step, a storage account will be provisioned with two containers (`labdata` and `dwtemp`) and files will be copied to them from a public storage account.
+1. You'll be prompted to provide the name of the resource group. Enter the resource group that you want to use for this module. After you complete this step, a storage account will be provisioned with two containers (`labdata` and `dwtemp`) and files will be copied to them from a public storage account.
 1. Enter the name of the SQL Server instance that you created earlier, and then enter the password for the **dwlab** user account when prompted. This will create a new Azure SQL Database instance on that server by importing an existing **retaildb** database. This will take some time.
 1. You'll see a console output that says **\*\*COPY THESE VALUES\*\***. Copy the **New storage account name** and **New storage account key** values and save them for later. You'll use these values when you copy files to SQL Data Warehouse by using PolyBase, and when you mount the storage account in Azure Databricks later in the module.
