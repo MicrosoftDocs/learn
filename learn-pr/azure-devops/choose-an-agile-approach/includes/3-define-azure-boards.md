@@ -83,11 +83,11 @@ In this procedure, you create a team for the project.
 In this procedure, you add members to the team.
 
 1. Click **Project Settings** if you're not on that page.
-2. Click **Security**.
-3. Click **Members**, in the right-hand column. You'll see your own name listed.
-4. Click **Add**.
-5. Enter **andy@tailspin.com** and click **Save changes**. In a few moments, Andy's name appears.
-6. Do the same for amita@tailspin.com, mara@tailspin.com and tim@tailspin.com.
+1. Click **Security**.
+1. Click **Members**, in the right-hand column. You'll see your own name listed.
+1. Click **Add**.
+1. Enter **andy@tailspin.com** and click **Save changes**. In a few moments, Andy's name appears.
+1. Do the same for amita@tailspin.com, mara@tailspin.com and tim@tailspin.com.
 
 ### Create the board
 
@@ -142,7 +142,7 @@ The board now looks something like this:
 
 ![Tasks to do for sprint 1](../media/3-board-to-do.png)
 
-Mara: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great! Now, Andy, for each item click **To Do** and pick **Doing from the drop-down menu. Andy does, and the final board looks like this.
+Mara: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great! Now, Andy, for each item click **To Do** and pick **Doing** from the drop-down menu. Andy does, and the final board looks like this.
 
 ![Tasks being done for sprint 1](../media/3-board-doing.png)
 
