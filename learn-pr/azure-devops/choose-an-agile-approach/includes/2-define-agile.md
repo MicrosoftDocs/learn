@@ -14,7 +14,7 @@ Mara: There's a lot more we can do. I think we should take the first step and do
 
 Andy: What do you mean by Agile?
 
-Mara: Agile is an approach to software development. The term “Agile” was coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org?azure-portal=true). The manifesto established some guiding principles for a better approach to software development. The manifesto says...
+Mara: Agile is an approach to software development. The term "Agile" was coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org?azure-portal=true). The manifesto established some guiding principles for a better approach to software development. The manifesto says...
 
 We value:
 
