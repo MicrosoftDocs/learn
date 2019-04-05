@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-your-migration-to-azure.2-plan-your-azure-migration
+metadata:
+  title: Plan your Azure migration
+  description: Plan your Azure migration
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Plan your Azure migration
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-plan-your-azure-migration.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-your-migration-to-azure.3-assess-your-environment
+metadata:
+  title: Assess your environment with Azure Migrate
+  description: Assess your environment with Azure Migrate
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Assess your environment with Azure Migrate
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-assess-your-environment.md)]

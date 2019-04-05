@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-your-migration-to-azure.5-migrate-databases
+metadata:
+  title: Migrate databases with Azure Database Migration Service
+  description: Migrate databases with Azure Database Migration Service
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Migrate databases with Azure Database Migration Service
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-migrate-databases.md)]

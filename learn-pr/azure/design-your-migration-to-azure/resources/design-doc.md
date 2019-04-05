@@ -49,7 +49,7 @@ Identify the subtasks of *Design your migration to Azure*
 
     You are the solution architect for a manufacturing company that is planning to move several data centers to Azure. You have been tasked with planning your migration, and need to identity the tools and services you can use to help you plan and execute your migration. Your workloads consist primarily of VMware virtual machine based workloads with data stored in relational databases.
 
-2. **Overview of the initial migration planning process**
+1. **Plan your Azure migration**
 
     List the content that will enable the learner to *gain knowledge of the Azure Migration Planning Process*:
 
@@ -62,14 +62,14 @@ Identify the subtasks of *Design your migration to Azure*
     - Secure and Monitor
         - Secure your Servers and Data, Monitor Servers Performance
 
-3. **Knowledge check**
+    *Knowledge check*
 
     What types of questions will test *Azure Migration Planning Process*?
 
     - What is the first stage of the Azure Migration Process?
     - In what stage would you consider the tools to be used to perform the migration?
 
-4. **Working with Azure Migrate**
+1. **Assess your environment with Azure Migrate**
 
     List the content that will enable the learner to *Working with Azure Migrate*:
 
@@ -84,7 +84,7 @@ Identify the subtasks of *Design your migration to Azure*
     - Current Limitations of Azure Migrate
         - Not to be used to migrate On Premise Physical Servers
 
-5. **Knowledge check**
+   *Knowledge check*
 
     What types of questions will test *Working with Azure Migrate*?
 
@@ -92,7 +92,7 @@ Identify the subtasks of *Design your migration to Azure*
     - What ports would need to open between your On Premise Environment and your Azure Portal?
     - What are the current limitations of Azure Migrate?
 
-4. **Working with Azure Site Recovery**
+1. **Migrate servers with Azure Site Recovery**
 
     List the content that will enable the learner to *Work with Azure Site Recovery*:
     
@@ -109,7 +109,8 @@ Identify the subtasks of *Design your migration to Azure*
         - Setup the target environment
         - Set a replication policy
         - Source Server Supported O/S's
-5. **Knowledge check**
+
+   *Knowledge check*
 
     What types of questions will test *Working with Azure Site Recovery*?
 
@@ -117,7 +118,7 @@ Identify the subtasks of *Design your migration to Azure*
     - List all pre-requisite tasks required to perform an On Premise to Azure migration?
     - What are the supported source server O/S's for an Azure Site Recovery Migration?
 
-4. **Working with Azure Database Migration Service**
+1. **Migrate databases with Azure Database Migration Service**
 
     List the content that will enable the learner to *Work with the Azure Database Migration Service*:
 
@@ -138,7 +139,7 @@ Identify the subtasks of *Design your migration to Azure*
         - DL the Data Migration Assistant
         - Ensure Credentials are all obtained & correct
 
-5. **Knowledge check**
+   *Knowledge check*
 
     What types of questions will test *Working with the Azure Database Migration Service*?
 
@@ -146,7 +147,7 @@ Identify the subtasks of *Design your migration to Azure*
     - What ports are needed to be open to perform a successful migration?
     - You receive an error when trying to connect to your Source SQL Server relating to permissions? why is this.. (Control Server Permissions on connection account needed) 
 
-5. **Summary**
+1. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 

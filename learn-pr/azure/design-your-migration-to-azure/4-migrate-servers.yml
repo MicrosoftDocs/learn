@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-your-migration-to-azure.4-migrate-servers
+metadata:
+  title: Migrate servers with Azure Site Recovery
+  description: Migrate servers with Azure Site Recovery
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Migrate servers with Azure Site Recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-migrate-servers.md)]
