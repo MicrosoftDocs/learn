@@ -29,7 +29,7 @@ You can pause your data warehouse if you don't need to use it for a while. This 
     ![Select Pause](../media/sql-dw-pause.png)
 1. To resume SQL Data Warehouse, go to your data warehouse in the [Azure portal](http://portal.azure.com/) and select **Overview**. Notice that the **Status** is **Paused**.
 
-1. To resume the database, select **Start**. When the confirmation message appears, select **Yes** to confirm or **No** to cancel.
+1. To resume the database, select **Resume**. When the confirmation message appears, select **Yes** to confirm or **No** to cancel.
 
     ![Select Resume](../media/sql-dw-resume.png)
 
