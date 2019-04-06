@@ -1,4 +1,4 @@
-﻿Pessimistic concurrency prevents other users from modifying data by locking it with a lease. Once the lease has been acquired, other users are prevented from completing actions on that data. The lease defines how long you hold on to the content. Lease times are from between 15 to 60 seconds. A lease can be reacquired before it expires to extend it, and released earlier once you've finished using it. The blob service automatically releases finite leases when they expire.
+﻿Pessimistic concurrency prevents other users from modifying data by locking it with a **lease**. A **lease** locks resticts access to a single client for a pre-determined amount of time. Once the lease has been acquired, other users are prevented from completing actions on that data. The lease defines how long you hold on to the content. Lease times are from between 15 to 60 seconds. A lease can be reacquired before it expires to extend it, and released earlier once you've finished using it. The blob service automatically releases finite leases when they expire.
 
 ![Pessimistic approach to concurrency workflow](../media/pessitimistic.png)
 <!-- TODO replace with studio graphics -->
