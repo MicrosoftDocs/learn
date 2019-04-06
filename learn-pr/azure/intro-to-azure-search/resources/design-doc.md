@@ -29,7 +29,7 @@ Use Azure Search to make your data searchable. Create a search index, import dat
 
 1. Create an Azure Search index
 2. Import data to the index
-3. Query the index from an application
+3. Query the Azure Search index
 
 ## Chunk your content into subtasks
 
@@ -48,7 +48,9 @@ Identify the subtasks of *Introduction to Azure Search*
 
     You work for a fitness startup that publishes exercise videos. You're just getting started establishing your online presence and want to provide a searchable index of your video catalog. You have a number of videos in the catalog and want to search across a number of different properties, such as title, difficulty, length, and publication date.
 
-2. **Create an index in Azure Search**
+<!-- REVIEW - There is too much covered in this single module, so I am changing the outline to reflect a new structure. basically, I am taking out any integration of the search with an app. That can be covered in a subsequent module. This module should focus on introducing Azure Search, and the right location for that is the portal -->
+
+2. **What is Azure Search?**
 
     List the content that will enable the learner to *Create an index in Azure Search*:
 
@@ -67,17 +69,17 @@ Identify the subtasks of *Introduction to Azure Search*
         - Using C#
         - Azure Search REST API
 
-3. **Knowledge check**
+3. **Exercise - Create and Azure Search service in the Azure portal**
 
-    What types of questions will test *Create an Azure Search index*?
+    - Focus here is to get the learner to use the Azure  portal to create an Azure Service in the sandbox resource group
+    - Navigate to sandbox portal
+    - Create Azure Search service
+    - Explain parameters of the Create dialog
+    - Explain the URL endpoint
 
-    - Which data structure is supported by Azure Search?
-    - What is a suggester in Azure Search?
-    - Why are analyzers important in Azure Search?
+4. **Index data with Azure Search**
 
-4. **Load data into Azure Search**
-
-    List the content that will enable the learner to *Load data into Azure Search*:
+    List the content that will enable the learner to *Index data with Azure Search*:
 
     - Loading data into Azure Search
         - Methods for importing data to Azure Search
@@ -92,25 +94,17 @@ Identify the subtasks of *Introduction to Azure Search*
     - Enhancing Azure Search indexes with AI
         - Overview of Cognitive Search
 
-5. **Exercise - Create an Index and load data into Azure Search using the portal**
+5. **Create an Azure Search index for your data in the Azure portal**
 
     List the steps that apply the learning content from previous unit:
 
-    1. Run a script in the Cloud Shell to create an azure search instance.
-    2. git clone source code with sample data.
-    3. Run through the process to create an index
-    4. Run through the process to load data to an index
-    5. Run through the process to rebuild an index
+    1. Introduce the actual data set we'll use - a corpus of fitness center data. 
+    1. Explain the data set
+    1. Run through the process to create an index
+    1. Run through the process to load data to an index
+    1. Run through the process to rebuild an index
 
-6. **Knowledge check**
-
-    What types of questions will test *Import data to the index*?
-
-    - Which of the following data sources can be used as an input data source?
-    - What condition would result in an index rebuild?
-    - What is the maximum payload size for a bulk upload operation?
-
-7. **Search content with Azure Search**
+6. **Query data in an Azure Search index**
 
     List the content that will enable the learner to *Search content with Azure Search*:
 
@@ -124,15 +118,32 @@ Identify the subtasks of *Introduction to Azure Search*
         - Filtering and sorting data
         - Result handling
 
-8. **Exercise - Search content with Azure Search with C#**
+7. **Exercise - Query your data using the Search explorer in the Azure  portal**
 
-    List the steps that apply the learning content from previous unit:
+    <!-- REVIEW - Purpose of this exercise is to get the use familiar with querying their own data using their own index -->
 
-    1. Run a script in the Cloud Shell to create an azure search instance.
-    2. git clone source code with sample data.
-    3. Step through console application code constructs
-    4. Run through result handling in the application code
-    5. Run the sample application.
+    Show the learner how to:
+         -  Do a basic search for a term
+         - Return top N results
+         - Filter the query
+         - Facet the query
+         - Highlight search results
+
+    <!-- REVIEW - You can find details at https://docs.microsoft.com/en-us/azure/search/search-get-started-portal
+    DO NOT copy the tutorial verbatim - we're using  our own fitness data set, for example. The queries should reflect that fact. -->
+
+8. **Knowledge check**
+
+    What types of questions will test *Create an Azure Search index*?
+
+    <!-- REVIEW - Pick 3 questions for the module and feel free to create new questions as you are writing the actual content -->
+
+    - Which data structure is supported by Azure Search?
+    - What is a suggester in Azure Search?
+    - Why are analyzers important in Azure Search?
+    - Which of the following data sources can be used as an input data source?
+    - What condition would result in an index rebuild?
+    - What is the maximum payload size for a bulk upload operation?
 
 9. **Summary**
 
@@ -142,11 +153,13 @@ Identify the subtasks of *Introduction to Azure Search*
     - Overview of the methods to import data into Azure Search.
     - Walk through how to query indexes, the syntax, and handling responses.
 
+    
+  
+
 ## Notes
 
 - Use JSON blobs as the data source for the exercise. https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs. Invent a small data structure for fitness videos with a few interesting properties of different types (string, int, date) and create a small corpus of documents to index.
-- Use a *small* ASP.NET Core C# console app to demonstrate usage of the client library for searching an index. I will leave it up to the author to determine whether or not the app should be started from scratch or from some thin scaffolding.
-- Do all development and running of the app in the Cloud Shell.
 - Use the [portal](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-the-portal) to import the data and set up the indexing, but give a brief overview in the conceptual section about how to do it in [C#](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-net-sdk).
 - Do not use advanced features like AI or cognitive search. Briefly mention their existence and utility in the conceptual sections but do not focus on them and do not use them in the exercise.
 - Creating a user experience/website is out of scope; show code and usage of the index from a simple console app only.
+- Calling the search from an app is out of scope for this module. A module that teaches that for .NEt/Java/Node.js will be planned for the future. 
