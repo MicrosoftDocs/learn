@@ -1,11 +1,8 @@
 <!-- TODO: There's a gap here. We say earlier that the team uses a centralized version control system to store the app sources. But here we jump to GitHub. We need to bridge that gap - either through narrative or explain it away "for learning purposes". -->
 
-Alice and her team use Visual Studio Code to build and run the app, and modify source code files.
+Get ready to start building a CI pipeline with Azure Pipelines. The first step is to build and run the _Space Game_ app on your local machine.
 
-Here you'll get the source code for the _Space Game_ web project from GitHub and build and run it locally, just as Alice does.
-
-> [!NOTE]
-> In this module, you are going to work with Git commands and terminology. If you're not familiar with Git, just follow along for now. We'll explain the concepts as we go and also go deeper into Git in future modules.
+Mara is going to do exactly that and, by following the procedures, you'll be able to do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run applications. However, the team uses a centralized version control system for its code and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub before, don't worry. Just follow along for now. All will be explained here and in later modules.
 
 ## Prepare Visual Studio Code
 
@@ -28,7 +25,7 @@ The first step is to fork the _Space Game_ web project so you can work with and 
 
 A _fork_ is a copy of a GitHub repository. The copy exists in your account, and enables you to make any changes you want without affecting the original project.
 
-Although you can propose changes to the original project, here you'll work with the _Space Game_ web project as though it were the original project owned by Alice and her team.
+Although you can propose changes to the original project, here you'll work with the _Space Game_ web project as though it were the original project owned by Mara and her team.
 
 To fork the _Space Game_ web project into your GitHub account:
 

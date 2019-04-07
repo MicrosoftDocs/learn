@@ -1,19 +1,6 @@
-Talk track: Alice wants to use Azure Pipelines to build the app. We should explain why this is a good next step and what pain it relieves (one idea is that it could notify QA about builds though email.)
-But first, she must understand her existing build process.
+Mara now has a copy of the _Space Game_ code on her local machine. She's going to build it using Azure Pipelines instead of the existing Ubuntu 16.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process. 
 
-(Mention that these are specific to her process. You can perform a similar exercise to identify your build steps.)
-
-Talk track:
-
-* Alice can run the app locally, but she wants to better undertand how the app is built on the build server.
-* She and Bob log in to the build server. Bob walks her through the process and Alice takes notes.
-* Alice sees a lot of complicated scripts, and she's not sure how it all fits together or if all the scripts are necessary.
-* Bob mentions some of the challenges, such as:
-  * Keeping the server updated with patches and security fixes.
-  * Keeping build software and related tools such as NuGet up to date and in sync with what the dev team is using.
-  * Handoffs to QA can be awkward. The QA team doesn't always know when a new build is available. They try to schedule handoffs up-front, but things slip (build is late, QA forgets.)
-
-Here are some notes Alice collected. Turn these into a narrative.
+Here are some notes Alice collected when she talked to Andy, the dev lead. 
 
 * The build machine is running Ubuntu 16.04.
 * It has build tools such as npm (the package manager for Node.js), NuGet (the package manager for .NET), and the .NET runtime installed.
@@ -30,10 +17,10 @@ Here are some notes Alice collected. Turn these into a narrative.
   * Run `dotnet build` to build the app under both Debug and Release configurations.
   * Run `dotnet publish` to package the application as a .zip file and copy the results to a network share for the QA team to pick up.
 
-Talk track: Alice takes her notes and builds a shell script that performs the tasks she's identified. She runs it on her laptop.
+Mara builds a shell script that performs the tasks she's identified. She runs it on her laptop.
 
 > [!NOTE]
-> You don't need to run this .... it's to illustrate ....
+> You don't need to run this script. It's here to illustrate what a typical build script might do.
 
 ```bash
 #!/bin/bash
@@ -59,18 +46,14 @@ dotnet publish --no-build --configuration Release --output /tmp/Release
 
 The `/tmp` directory mimics the team's network share.
 
-Talk track: The script gives Alice a sense of how the build process works, but she realizes it's incomplete. For example, it doesn't deal with errors (e.g. it keeps going even if there are errors and it doesn't notify you if there are errors) or missing or out of date software.
-
-Talk track: Provide a soft CTA here for the learner to consider their build process.
+After she runs the script, Mara realizes that it's incomplete. For example, it doesn't deal with errors. It doesn't notify anyone if there are build errors and, even when there are errors, it keeps running. It also doesn't give the date when the build occurred. 
 
 ## Map script commands to Azure Pipelines tasks
 
-(Unit 2 should already cover some of the basics around what Azure Pipelines is and some of what's in the YAML file. Focus on task mapping here.)
+Next, Mara is going to map the existing script commands to Azure Pipelines tasks. To define a build, she uses Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipeline tasks she she'll use to replace the existing script commands. For example,   
+the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?view=azure-devops&azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
 
-Talk track: 
-  * Microsoft provides [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops&azure-portal=true) for all the Azure Pipelines tasks you can use.
-  * Alice begins to map each script command with an appropriate build task.
-  * For example, the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?view=azure-devops&azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
+This table associates the script commands with the new Azure Pipelines tasks. 
 
 | Script command   | Azure Pipelines task |
 |------------------|----------------------|
@@ -82,9 +65,17 @@ Talk track:
 | `dotnet build`   | `DotNetCoreCLI@2`    |
 | `dotnet publish` | `DotNetCoreCLI@2`    |
 
+She remembers that the build date is missing. The `CmdLine@2` task fixes that problem. It prints the date to `buildinfo.txt`.  
+
 `script` is shortcut for `CmdLine@2`, so you could use the `script` task or `CmdLine@2` to print the date to `buildinfo.txt`.
 
-(Here, it feels like the mapping "just happened". I wonder how we can better showed how she accomplished this without belaboring it.)
+<!-- I don't understand what 'script' refers to-->
+
+<!-- Can we show the YAML file?-->
+
+* Microsoft provides [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops&azure-portal=true) for all the Azure Pipelines tasks you can use.
+
+You're going to create a YAML file of your own in Unit 6.
 
 Reference (remove this later)
 

@@ -1,46 +1,55 @@
-Talk track:
+Mara is excited about replicating the team's build process on Azure Pipelines. Amita, the tester, finally has some free time and she wants to catch up. Mara decides that now is a great time to tell her about her plan: setting up an automated build pipeline for _Space Game_ using Azure Pipelines. 
 
-* Alice and Carol (from QA) sit down over coffee to catch up.
-* Alice tells Carol she's going to set up an automated build pipeline for the Space Game web project.
-* Carol seems a bit hesitant, but curious. Some questions she might have:
-  * What are the benefits?
-  * Will QA still be able to pick up builds?
-    * Yes! And in fact, you can set things up to send email (and other kinds of) notifications when a build passes or fails. (This addresses one of Carol's concerns - QA doesn't always know when the build is ready.)
-  * This sounds pretty big. What's your immediate goal?
-    * To build the app and produce a deployable artifact.
-* In the sections that follow, Alice gives Carol an overview of continuous integration and pipelines, with an emphasis on Azure Pipelines.
+When she hears Mara's plan, Amita is a bit hesitant but since Mara's plan is to replicate the build process but not replace it, she's also curious. She knows the build process could use some improvements.
 
-(Here are some starter ideas for sections.)
+Amita: It sounds like an interesting exercise, but you must want to prove a DevOps point!
 
-## What is continuous integration?
+Alice: You already know me so well!
 
-_Continuous integration_, or CI, is ...
+Amita: What improvements do you expect to see, especially since you're going to do what we already do.
 
-## What are build artifacts?
+Alice: I think that just moving to Azure Pipelines will bring a lot of benefits. Remember, Azure Pipelines is a cloud service that you can use to automatically build and test code and make it available to other users. It works with just about any language or project type.
 
-A _build artifact_ is a file that you want your build to produce. Think of an artifact as the smallest compiled unit that your team needs to test or deploy your app.
+Our build server has problems. Even keeping it up to date is hard. Since Azure Pipelines is a cloud service, it's always got the latest patches and security updates. We won't have to worry about maintaining the pipeline.
 
-Examples:
+Also, we have all kinds of scripts written by different people. We don't even understand how some of them work. Azure Pipelines comes with a catalog of tasks. A task is a packaged script or procedure that has been abstracted with a set of inputs. I'm going to try and map what the scripts do to those tasks. At least we can standardize how things get done and increase the level of automation.
+
+Finally, Azure Pipelines works with many different languages and application types. If we want to expand in those directions, we won't have to retool.
+
+Amita: I know it's selfish but why do I care? One of my big problems is that I never know when a build is ready to test. Sometimes someone remembers to update the spreadsheet but a lot of times they forget. It seems like I'm the last person to know.
+
+Mara: Right, that's a task on our board and we can fix it easily. We can set up the pipeline to notify you automatically, either through email or some other kind of notification when a build is ready. You'll never have to wait for someone to remember you again.
+
+Amita: Okay, so your goal right now is to build the app and let me know when it's ready it?
+
+Mara: Right! Of course, I've got bigger plans. I know you're all going to love this first step so I want to build on it to give us true continuous integration.
+
+Amita: Give me the 5 minute rundown on continuous integration (CI).
+
+Mara: Let me draw you a picture:
+
+<!-- TO DO: get a diagram of the pipeline. It should be informal, handdrawn. It should include what we talk about below and start with source code and end with a build artifact. -->
+
+This is my CI pipeline. Continuous Integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet but give it time.
+
+A _pipeline_ defines the continuous integration process for the app. It's made up of steps called tasks. It can be thought of as a script that defines how your test, build, and deployment steps are run. I'm going to try and map our scripts to tasks.
+
+A _build agent_ builds or deploys the code. When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time. Because we're using Azure Pipelines, we can use a Microsoft-hosted agent. With Microsoft-hosted agents, maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a fresh virtual machine. There are 6 virtual machine images to choose from, including Ubuntu 16.04, which is what we use.
+
+The final product of the pipeline is a _build artifact_. Think of an artifact as the smallest compiled unit that your team needs to test or deploy your app. For example, an artifact can be:
 
 * A Java or .NET application packaged into a .jar or .zip file
 * A C++ or JavaScript library
 * A virtual machine, cloud, or Docker image
 
-Build artifacts typically don't contain the development tools used to create the artifact. Those typically stay on the build server.
+And that's it. I know we can do this.
 
-## What are pipelines?
+Amita: It sounds great. Let's see what you have to do to get it to work and how long it takes you. You can give us all a demo.
 
-A _pipeline_ defines the continuous integration and deployment process for your app. It's made up of steps called tasks. It can be thought of as a script that defines how your test, build, and deployment steps are run.
+Mara: Will do!
 
-(more)
+<!-- I think we should end the unit here. All the other stuff needs to get moved to a different unit or folded in where it's appropriate. It's wordy -->
 
-## What is Azure Pipelines?
-
-(From the other module, perhaps tweak and expand - connect to value.)
-
-Azure Pipelines allows you to build, test, and deploy with CI/CD that works with any language, platform, and cloud. Connect to GitHub or any other Git provider and deploy continuously.
-
-(Talk about how you can use build agents that Microsoft provides for free (and what kinds you can choose from.))
 
 ## What options do we have?
 

@@ -1,12 +1,15 @@
-Talk track:
+The _Space Game_ team is being pulled in many different directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and she hasn't seen him for days. Mara's dream of a true DevOps team is stalled (again). 
 
-* Re-introduce the fictitious team we introduced in the previous learning path.
-* Summarize their existing build workflow. Describe what's painful about it.
-* Recall the 3 things the team wants to tackle first. (I don't think we defined this earlier - go back and do that. We can choose 3 other things if we want to.)
-  * Release faster (provide iterative value to customers more quickly.)
-  * Raise the quality bar. (here I'm thinking code quality.)
-  * Begin deploying to the cloud to achieve better scale while managing costs.
-* Alice is having trouble convincing the team that DevOps is the right way to begin improving their processes. So she decides to just go ahead and try repeating their existing build process to Azure Pipelines.
+But she isn't giving up. She remembers that she and Andy made a list of problems with the build process.
+
+![Backlog of tasks](../media/1-all-tasks-board.png)
+
+
+She also remembers that they picked three of the problems to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
+
+<!--insert image of 3 work items again?-->
+
+Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead she's going to see if she can use Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits that the process will be improved just by using it. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.  
 
 ## Prerequisites
 
