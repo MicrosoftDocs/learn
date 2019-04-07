@@ -26,7 +26,7 @@ BioCatch’s patented technology is in use at major banks and ecommerce institut
 
 “There are many proof points on the return on investment that BioCatch generates for a business,” says Frances Zelazny. “Interestingly enough, this comes not only from the actual fraud that is caught but equally, in the case of identity proofing, the number of false declines that are prevented, or in the authentication use case, the cost savings associated with managing false alarms and unnecessary escalations. During the initial evaluation period, one major credit card client reported that the BioCatch system caught 50 percent more fraud while reducing false declines by 33 percent. Looking at it more broadly, this has immediate impact to the bottom line and translates into significant amount of recouped business and increased customer satisfaction.”
 
-Implementation has been easy for financial organizations—BioCatch is provided as an API service, so there is little to no impact on an organization’s existing tech stack. In 2018, BioCatch placed 12th on Deloitte’s Technology Fast 500, after growing over 10,000 percent over three years.5
+Implementation has been easy for financial organizations—BioCatch is provided as an API service, so there is little to no impact on an organization’s existing tech stack. In 2018, BioCatch placed 12th on Deloitte’s Technology Fast 500, after growing over 10,000 percent over three years.<sup>5</sup>
 
 “Cybersecurity and digital identity are board-level topics today and managing the traditional tradeoff between the user experience and security is something that all business line managers struggle to deal with,” says Frances Zelazny.
 

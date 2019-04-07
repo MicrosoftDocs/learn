@@ -45,7 +45,7 @@ Organizations considering AI often limit their thinking to structured data. But 
 
 ### Embrace the citizen data-scientist culture
 
-When non-technical employees are able to leverage the benefits of AI to explore vast amounts of data, they become “citizen data scientists.” Enabling every employee to become a citizen data scientist is crucial in realizing the full potential of AI. Gartner predicts that “by 2019, citizen data scientists will surpass data scientists in terms of the amount of advanced analysis they produce.”1 Only by taking this step can the whole organization be empowered to glean new insights, make better decisions and perform complex analysis using AI.
+When non-technical employees are able to leverage the benefits of AI to explore vast amounts of data, they become “citizen data scientists.” Enabling every employee to become a citizen data scientist is crucial in realizing the full potential of AI. Gartner predicts that “by 2019, citizen data scientists will surpass data scientists in terms of the amount of advanced analysis they produce.”<sup>1</sup> Only by taking this step can the whole organization be empowered to glean new insights, make better decisions and perform complex analysis using AI.
 
 ### Evaluation of the strategy using the value framework
 

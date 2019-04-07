@@ -20,7 +20,7 @@ Fourth, traditional risk management techniques are no longer adequate to address
 
 For Microsoft, these challenges are compounded by dramatic growth and change. Over the past decade, we have nearly doubled our revenue and quintupled our stock price, while making major changes to our business model. As our revenue grows and our business becomes ever more complex, the challenge for our finance organization has been to serve the company without increasing the number of finance personnel. This has only been possible thanks to technology and cultural shifts.
 
-This follows a trend that analysts are seeing across organizations. According to Accenture, personnel in finance functions like compliance are staying flat, prompting Accenture to advise that finance organizations "can no longer rely on adding headcount to increase effectiveness."2
+This follows a trend that analysts are seeing across organizations. According to Accenture, personnel in finance functions like compliance are staying flat, prompting Accenture to advise that finance organizations "can no longer rely on adding headcount to increase effectiveness."<sup>2</sup>
 
 Because of the need to manage increasing complexity within our current capacity, our finance team is looking to AI solutions.
 
