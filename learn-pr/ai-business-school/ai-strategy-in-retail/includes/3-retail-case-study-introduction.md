@@ -1,6 +1,6 @@
 ## Industry context
 
-Retail today is undergoing massive disruption. Based on shifting demographics and the rise of online-first retailers, customer expectations and behaviors are changing rapidly. Today, customers are shopping across many channels—in fact, 73% of shoppers report using multiple channels during their shopping journey.1
+Retail today is undergoing massive disruption. Based on shifting demographics and the rise of online-first retailers, customer expectations and behaviors are changing rapidly. Today, customers are shopping across many channels—in fact, 73% of shoppers report using multiple channels during their shopping journey.<sup>1</sup>
 
 The emergence of multi-channel retailing has created new challenges for retailers. As customers shop across more channels, they expect their preferences to translate into deeply personalized and consistent experiences whether they’re in store, in browser, or in app. Retailers understand this expectation, but struggle to ensure, for instance, that the offers and messaging a customer sees in their email are both personalized and consistent with what they see in-store and on the retailer’s website. Making this expectation a reality represents a major opportunity for retailers: 44% of consumers say they would become repeat buyers after personalized experiences, but only 22% of consumers actually find their retail shopping experience to be highly personalized.2
 

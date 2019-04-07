@@ -10,7 +10,7 @@ Learn how your company can foster responsible and trustworthy AI, both internall
 
 ## Establishing an AI governance system
 
-AI is more than just a new technology. Because of the far-reaching impacts it will have throughout the business, enterprises are seeing a growing need to create governance systems at the highest level of the company that can help their organization engage with AI responsibly.1
+AI is more than just a new technology. Because of the far-reaching impacts it will have throughout the business, enterprises are seeing a growing need to create governance systems at the highest level of the company that can help their organization engage with AI responsibly.<sup>1</sup>
 
 As discussed in the previous unit, the first step for any AI governance system is to establish guiding ethical principles for the organization. This is especially important because laws and regulations around ethics and technology are relatively nascent. With guiding principles providing a foundation, governance systems are generally tasked with objectives that include developing and implementing policies, standards, and best practices, building a culture of integrity, providing advice, and educating employees.
 

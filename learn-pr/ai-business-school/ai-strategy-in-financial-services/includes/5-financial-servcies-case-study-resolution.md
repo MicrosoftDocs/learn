@@ -2,7 +2,7 @@
 
 BioCatch knew that in order to address authentication successfully, they had to help financial institutions implement an authentication strategy that not only detected and stopped cyber criminals but helped improve customer experience.
 
-With 55 percent of millennials stating that difficulties in resolving problems with their bank are frustrating enough to make them leave and traditional fraud detection measures yielding 30–50 percent false alarm rates,4 BioCatch knew they had to play squarely into next-generation banking approaches to improve business outcomes.
+With 55 percent of millennials stating that difficulties in resolving problems with their bank are frustrating enough to make them leave and traditional fraud detection measures yielding 30–50 percent false alarm rates,<sup>4</sup> BioCatch knew they had to play squarely into next-generation banking approaches to improve business outcomes.
 
 With years of knowledge about white-hat hacking, system vulnerability management, and cyberterrorism from the military intelligence service, BioCatch co-founder Avi Turgeman knew that the methods and attacks used by cybercriminals would only increase in sophistication and frequency. Traditional authentication methods would not be effective against them without vastly inconveniencing users.
 

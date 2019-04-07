@@ -12,15 +12,15 @@ Financial services play a vital intermediary role in the digital economy. An inc
 
 The rapid digitization of these services has caused enormous disruption in the industry. Fast-moving new fintech companies like PayPal and Square have made the most of the opportunity, and while traditional banks and brokers have also modernized, some conventional players are closing thousands of branches to cut costs.
 
-All FSI institutions, old and new, are also scrambling to improve the customer experience, seeing it as a key way to attract and retain customers. An Adobe report found 28 percent of respondents in the FSI industry ranked optimizing the customer experience as the ‘single most exciting opportunity’ in 2018, compared to 18 percent of their peers across all other sectors.1
+All FSI institutions, old and new, are also scrambling to improve the customer experience, seeing it as a key way to attract and retain customers. An Adobe report found 28 percent of respondents in the FSI industry ranked optimizing the customer experience as the ‘single most exciting opportunity’ in 2018, compared to 18 percent of their peers across all other sectors.<sup>1</sup>
 
-Retail banking respondents are even more likely than their FSI counterparts to be focusing on the customer experience, with 41 percent of these participants regarding it as the main focus for differentiation.1
+Retail banking respondents are even more likely than their FSI counterparts to be focusing on the customer experience, with 41 percent of these participants regarding it as the main focus for differentiation.<sup>1</sup>
 
 But this dual focus on online services and improving customer experience creates new risks.
 
 ## Challenge
 
-As businesses and customers rapidly digitize, cybercrime is becoming more and more of a threat. Estimates of the scale of the issue vary, but all experts agree on one thing: that it’s big (the annual cost of cybercrime was estimated at $400 billion USD in 2014)2 and that it’s getting bigger. One survey found that 10 percent of people over the age of 16 had been the victims of identity theft, with 85 percent experiencing fraudulent account use, and about 12 percent suffering personal monetary loss.3
+As businesses and customers rapidly digitize, cybercrime is becoming more and more of a threat. Estimates of the scale of the issue vary, but all experts agree on one thing: that it’s big (the annual cost of cybercrime was estimated at $400 billion USD in 2014)<sup>2</sup> and that it’s getting bigger. One survey found that 10 percent of people over the age of 16 had been the victims of identity theft, with 85 percent experiencing fraudulent account use, and about 12 percent suffering personal monetary loss.<sup>3</sup>
 
 As the scale and cost of cybercrimes have increased, so have the efforts of businesses to protect their customers. User authentication methods such as two-factor authentication are common and offer increased security.
 
