@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit  
 uid: learn.data-ai.recognize-voices-with-speaker-recognition.knowledge-check
-title: Knowledge Check - Speaker Recognition
+title: Knowledge check - speaker recognition
 metadata:    
-  title: Knowledge Check - Speaker Recognition 
-  description: Knowledge Check - Speaker Recognition
+  title: Knowledge check - speaker recognition 
+  description: Knowledge check - speaker recognition
   ms.date: 1/11/2019    
   author: gerryaobrien    
   ms.author: gerryo    
@@ -14,28 +14,28 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge 
   questions: 
-  - content: "What is an acceptable method for authorizing calls to the Speaker Recognition API?"
+  - content: "What's an acceptable method for authorizing calls to the Speaker Recognition APIs?"
     choices:
-    - content: Providing an OAuth v2.0 access token in the request header
+    - content: Provide an OAuth v2.0 access token in the request header
       isCorrect: false
-      explanation: "OAuth is not an acceptable method for authorizing calls, at this time."
-    - content: Providing a subscription key in the request header
+      explanation: "OAuth isn't an acceptable method for authorizing calls at this time."
+    - content: Provide a subscription key in the request header
       isCorrect: true
-      explanation: "Providing a Microsoft Azure account user name and password in the query string is not a secure mechanism and is not supported."
-    - content: Providing a Microsoft Azure account user name and password in the query string
+      explanation: "Correct. Providing a subscription key in the request header is a supported method for authorizing calls."
+    - content: Provide a Microsoft Azure account username and password in the query string
       isCorrect: false
-      explanation: "You can use the Bot Framework to create bots using C# or JavaScript on Node.js but it does not provide Angular as part of the platform"
+      explanation: "Providing a Microsoft Azure account username and password in the query string isn't a secure mechanism and isn't supported."
   - content: "Which of the following enrollment statuses indicate the profile is ready for verification?"
     choices:
     - content: Enrolled
       isCorrect: true
-      explanation: "An enrollment is not ready for verification when the status is 'Enrolling' or 'Training' and is only ready when the status is 'Enrolled'."
+      explanation: "An enrollment isn't ready for verification when the status is \"Enrolling\" or \"Training\". It's ready only when the status is \"Enrolled\"."
     - content: Enrolling
       isCorrect: false
-      explanation: "An enrollment is not ready for verification when the status is 'Enrolling' or 'Training'."
+      explanation: "An enrollment isn't ready for verification when the status is \"Enrolling\" or \"Training\"."
     - content: Training
       isCorrect: false
-      explanation: "An enrollment is not ready for verification when the status is 'Enrolling' or 'Training'."
+      explanation: "An enrollment isn't ready for verification when the status is \"Enrolling\" or \"Training\"."
     - content: All of the above
       isCorrect: false
-      explanation: "An enrollment is not ready for verification when the status is 'Enrolling' or 'Training'."
+      explanation: "An enrollment isn't ready for verification when the status is \"Enrolling\" or \"Training\"."

@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "learn-pr/paths/index.md",
+      "redirect_url": "/learn/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/index.md",
+      "redirect_url": "/learn/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/intro-to-csharp/index.md",
       "redirect_url": "https://docs.microsoft.com/dotnet/csharp/quick-starts/",
       "redirect_document_id": true
@@ -27,6 +37,11 @@
     },
     {
       "source_path": "learn-pr/azure/scale-and-size-virtual-machines/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
       "redirect_document_id": false
     },
@@ -99,41 +114,30 @@
       "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
       "redirect_document_id": false
-
-    },
-    {
-      "source_path": "learn-pr/azure/intro-to-containers/index.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/intro-to-containers/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers/",
-      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-containers/2-create-a-container.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/2-deploy-docker-image-locally",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-containers/3-basic-operations.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/3-exercise-deploy-docker-image-locally",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-containers/4-container-images.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/4-create-custom-docker-image",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-containers/5-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/5-exercise-create-custom-docker-image",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-containers/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/8-summary",
       "redirect_document_id": false
     },
     {
@@ -220,6 +224,11 @@
       "source_path": "learn-pr/azure/tour-azure-services-and-features/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/tour-azure-portal/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assing-user-class.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assign-resource-class",
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/paths/modern-data-warehouse/index.md",
