@@ -1,11 +1,13 @@
-Imagine you're the Solution Architect for an engineering company that has been migrating existing services into Azure. The company has deployed services into separate virtual networks (VNets), but has not configured any private connectivity between them. Several business units have identified services that exist in these VNets that need to communicate with each other. You need to enable this connectivity but you don't want to expose these services to the internet and would like to minimize integration complexity.
+Imagine you're the solution architect for an engineering company that has been migrating services into Azure. The company has deployed services into separate virtual networks. It hasn't configured private connectivity between the virtual networks. 
 
-In this module, you'll learn about the different VNet connection options and why VNet peering is suited to this scenario. You'll create three virtual networks and configure VNet peering between them. You'll then test that your configuration meets your connectivity goals.
+Several business units have identified services in these virtual networks that need to communicate with each other. You need to enable this connectivity, but you don't want to expose these services to the internet. You also want to keep the integration as simple as possible.
+
+In this module, you'll learn about virtual network connection options and why virtual network peering is suited to this scenario. You'll create three virtual networks and configure virtual network peering between them. You'll then test your configuration to make sure it meets your connectivity goals.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Identify the different use-cases for VNet peering
-- Identify the features and limitations of VNet peering
-- Configure peering connections between the virtual networks
+- Identify use cases for virtual network peering.
+- Identify the features and limitations of virtual network peering.
+- Configure peering connections between virtual networks.
