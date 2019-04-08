@@ -14,9 +14,9 @@ Data Factory can orchestrate many data tasks. In this exercise, you'll use it to
 
 The first step is to provision a data factory in the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the left, select **New** > **Data + Analytics** > **Data Factory**.
+1. On the left sidebar, select **+ Create Resource** > **Analytics** > **Data Factory**.
 
     ![Screenshot showing where to select Data Factory](../media/6-select-data-factory.png)
 
@@ -140,7 +140,7 @@ Set permissions to allow the data factory to access the data in your Data Lake S
     ![Screenshot showing where to enter the output folder path](../media/6-choose-output-folder-path.png)
 
 1. On the **Settings** page, select **Next** to use the default settings.
-1. Review the settings, and select **Next**.
+1. Review the settings on the **Summary** page, and select **Next**.
 
     ![Screenshot of the Summary page](../media/6-summary-page.png)
 
