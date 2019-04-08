@@ -9,7 +9,7 @@ There are three common types of data warehouse solutions:
 
 ## Designing a data warehouse solution
 
-Data warehouse solutions can be classified by their technical _relational constructs_ and the methodologies that are used to define them. The following titles describe two typical architectural approaches:
+Data warehouse solutions can be classified by their technical _relational constructs_ and the methodologies that are used to define them. There are two typical architectural approaches used to design data warehouses:
 
 ### Bottom-Up Architectural Design, by Ralph Kimball
 

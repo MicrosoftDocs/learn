@@ -31,4 +31,4 @@ Complete these steps to create a SQL data warehouse that contains the *Adventure
 
 1. Select **Create** to provision the database. Provisioning takes a few minutes.
 
-You can monitor the deployment process through the notifications icon. When the data warehouse is deployed, you have successfully created a data warehouse in Azure SQL Data Warehouse!
+You can monitor the deployment process through the notification ("bell") icon in the top bar - it will animate while the deployment is occuring. When the data warehouse is deployed, you have successfully created a data warehouse in Azure SQL Data Warehouse!
