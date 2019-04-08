@@ -49,7 +49,7 @@ To help you consider how to leverage governance and external engagements in your
 * **Share your AI perspective with the greater community, such as governments, businesses, and standards organizations**, to help guide responsible policies and legislation.
 * **Apply your AI expertise and technologies to benefit your community** and improve the lives of people around the world.
 
-## Use these resources to discover more.
+## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 

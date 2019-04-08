@@ -6,7 +6,7 @@ Now that you have reviewed this module, you should be able to:
 * Describe the outcomes organizations have achieved through the adoption of AI.
 * Articulate the components of an AI strategy.
 
-## Use these resources to discover more.
+## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
