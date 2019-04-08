@@ -26,8 +26,6 @@ Follow these steps to create a workspace in the Azure portal.
 
 1. In the newly created workspace, select **Open Azure Notebooks** to create the first experiment.
 
-    ![The screenshot depicts the docs-ws workgroup. The Experiments tab is selected, and Open Azure Notebooks is selected and highlighted under Getting started on the Welcome to your new Workspace page.](../media/6-create-first-experiment.png)
-    
 1. Sign in with the same Microsoft account you used to create the workspace in the Azure portal.
 
 1. After you sign in, a new tab opens and a "Clone Library" prompt appears. Select **Clone**, and then run the notebook.
@@ -40,9 +38,7 @@ Follow these steps to create a workspace in the Azure portal.
 
 1. After running all the cells in the notebook, you can view the logged values in your workspace.
 
-1. Browse back to the portal page, select **View Experiments**, and then select **my-first-experiment**. The report for the model's run will display.
-
-    ![The number 1 is highlighted under RUN NUMBER in the screenshot of the first experiment report.](../media/6-first-experiment-report.png)
+1. Browse back to the portal page, select **View Experiments**, and then select **my-first-experiment** to see the model run report.
 
 ## Create a workspace by using Python
 
