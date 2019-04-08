@@ -23,6 +23,7 @@ levels:
 - beginner
 roles:
 - developer
+- data-scientist
 products:
 - azure
 units:
@@ -32,4 +33,4 @@ units:
 - learn.student-evangelism.analyze-review-sentiment-with-keras.use-neural-network-to-analyze-text-for-sentiment
 - learn.student-evangelism.analyze-review-sentiment-with-keras.summary
 badge:
-  uid: learn.student-evangelism.analyze-review-sentiment-with-keras.badge 
+  uid: learn.student-evangelism.analyze-review-sentiment-with-keras.badge

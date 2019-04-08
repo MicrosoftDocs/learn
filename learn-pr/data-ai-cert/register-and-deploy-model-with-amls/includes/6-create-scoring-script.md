@@ -1,4 +1,4 @@
-Container images allow users to deploy models reliably since the machine learning model always depends on some other dependencies such as [PyTorch](https://pytorch.org/). Using containers to deploy machine learning models can avoid dependency issues.
+Container images allow users to deploy models reliably since the machine learning model always depends on some other dependencies such as [PyTorch](https://pytorch.org/), or scikit-learn. Using containers to deploy machine learning models can avoid dependency issues.
 
 A container image has the following items packaged, which you need to prepare:
 

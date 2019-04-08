@@ -1,4 +1,4 @@
-In this unit you will deploy a model.  You will create a Logistic Regression model using a well know public dataset called diabetes. Run the code below to prepare the data.
+In this unit you will deploy a model.  You will create a Ridge Regression model using a well know public dataset called diabetes. Run the code below to prepare the data.
 
 ```python
 from sklearn.datasets import load_diabetes
