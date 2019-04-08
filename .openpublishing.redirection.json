@@ -121,11 +121,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-containers/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/azure/containers",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/intro-to-containers/2-create-a-container.md",
       "redirect_url": "https://docs.microsoft.com/azure/containers",
       "redirect_document_id": false
@@ -239,11 +234,6 @@
       "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assing-user-class.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assign-resource-class",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/azure/tour-azure-services-and-features/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/tour-azure-portal/",
-      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/modern-data-warehouse/index.md",
