@@ -5,7 +5,7 @@ Now that you have reviewed this module, you should be able to:
 * Articulate how Microsoft AI technology can solve business problems.
 * Describe the Microsoft AI products, services, and solutions.
 
-## Use these resources to discover more.
+## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 

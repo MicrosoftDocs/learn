@@ -6,7 +6,7 @@ Now that you have reviewed this module, you should be able to:
 * Identify opportunities for change to achieve an AI-ready culture.
 * Apply the AI Maturity Model Assessment to your business.
 
-## Use these resources to discover more.
+## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 

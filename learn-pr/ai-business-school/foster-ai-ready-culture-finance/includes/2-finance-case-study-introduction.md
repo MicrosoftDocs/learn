@@ -8,7 +8,7 @@ Learn about how we incorporated AI into our finance processes and consider how A
 
 The finance organization is at the heart of any business and plays a key role in maintaining fiscal responsibility and controlling vital functions such as budgeting and compliance. It’s essential that businesses keep finance top of mind when reconsidering business processes.
 
-Today, finance organizations face challenges in a number of key areas. The first is the scale and growth of data. According to EY, “many finance teams are simply overwhelmed by the volume and variety” of their data: 49% of finance leaders say they spend more time gathering and processing data than they do analyzing it.1 Meanwhile, the majority of financial analysts continue to use Excel as their primary tool, but growth of data is pushing Excel to its limits. Finance organizations need to augment Excel with intelligent tools that enable them to get the most from their data.
+Today, finance organizations face challenges in a number of key areas. The first is the scale and growth of data. According to EY, “many finance teams are simply overwhelmed by the volume and variety” of their data: 49% of finance leaders say they spend more time gathering and processing data than they do analyzing it.<sup>1</sup> Meanwhile, the majority of financial analysts continue to use Excel as their primary tool, but growth of data is pushing Excel to its limits. Finance organizations need to augment Excel with intelligent tools that enable them to get the most from their data.
 
 Second, finance organizations are struggling to become more forward-looking. Finance has traditionally been conceived as a backward-looking function that deals largely with reporting the past. To become a better partner to the rest of the business, finance needs to offer forward-looking insights and projections, but many companies lack the tools to do this easily.
 
@@ -20,7 +20,7 @@ Fourth, traditional risk management techniques are no longer adequate to address
 
 For Microsoft, these challenges are compounded by dramatic growth and change. Over the past decade, we have nearly doubled our revenue and quintupled our stock price, while making major changes to our business model. As our revenue grows and our business becomes ever more complex, the challenge for our finance organization has been to serve the company without increasing the number of finance personnel. This has only been possible thanks to technology and cultural shifts.
 
-This follows a trend that analysts are seeing across organizations. According to Accenture, personnel in finance functions like compliance are staying flat, prompting Accenture to advise that finance organizations "can no longer rely on adding headcount to increase effectiveness."2
+This follows a trend that analysts are seeing across organizations. According to Accenture, personnel in finance functions like compliance are staying flat, prompting Accenture to advise that finance organizations "can no longer rely on adding headcount to increase effectiveness."<sup>2</sup>
 
 Because of the need to manage increasing complexity within our current capacity, our finance team is looking to AI solutions.
 

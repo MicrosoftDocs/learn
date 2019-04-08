@@ -6,7 +6,7 @@ Now that you have reviewed this module, you should be able to:
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 
-## Use these resources to discover more.
+## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 

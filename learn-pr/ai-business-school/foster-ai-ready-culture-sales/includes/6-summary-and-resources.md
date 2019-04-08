@@ -6,7 +6,7 @@ Now that you have reviewed this module, you should be able to:
 * Explain how Microsoft incorporated AI into our sales processes.
 * Identify opportunities for change to achieve an AI-ready culture in your sales department.
 
-## Use these resources to discover more.
+## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
