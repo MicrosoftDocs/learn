@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.register-and-deploy-model-with-amls.create-environment-yaml
-title: Exercise - create the environment YAML File
+title: Exercise - Create the environment YAML file
 metadata:
-  title: Exercise - create the environment YAML File - Learn
-  description: Exercise - create the environment YAML File - Learn
+  title: Exercise - Create the environment YAML file
+  description: Exercise - Create the environment YAML file
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-create-environment-yaml.md)]
+  [!include[](includes/6-create-environment-yaml.md)]

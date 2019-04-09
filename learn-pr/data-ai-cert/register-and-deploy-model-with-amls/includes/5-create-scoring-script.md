@@ -1,4 +1,4 @@
-Container images allow users to deploy models reliably since the machine learning model always depends on some other dependencies such as [PyTorch](https://pytorch.org/), or scikit-learn. Using containers to deploy machine learning models can avoid dependency issues.
+Container images allow users to deploy models reliably since the machine learning model always depends on some other dependencies such as [PyTorch](https://pytorch.org/). Using containers to deploy machine learning models can avoid dependency issues.
 
 A container image has the following items packaged, which you need to prepare:
 
@@ -11,9 +11,6 @@ The first step is to create the `score.py` file that consumes the model, like be
 
 ```python
 %%writefile score.py
-import pickle
-import json
-import numpy
 from sklearn.externals import joblib
 from sklearn.linear_model import Ridge
 from azureml.core.model import Model
@@ -23,7 +20,6 @@ def init():
     model_path = Model.get_model_path('sklearn_regression_model.pkl')
     # deserialize the model file back into a sklearn model
     model = joblib.load(model_path)
-    
 # note you can pass in multiple rows for scoring
 def run(raw_data):
     try:
@@ -32,7 +28,6 @@ def run(raw_data):
         result = model.predict(data)
         # you can return any datatype if it is JSON-serializable
         return result.tolist()
-        return 0
     except Exception as e:
         error = str(e)
         return error

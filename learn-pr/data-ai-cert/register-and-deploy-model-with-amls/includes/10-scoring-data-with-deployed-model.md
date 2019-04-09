@@ -1,23 +1,14 @@
-Since the model is deployed as a web service that exposes a REST API, it can be tested with many tools. Azure Machine Learning SDK has a built-in testing tool that can work with the deployed web service as shown below.
+Since the model is deployed as a web service that exposes a REST API, it can be tested with many tools. Azure Machine Learning SDK has a built-in testing tool that can work with the deployed web service, like below:
 
 ```python
 import json
-
-# scrape the first row from the test set.
-test_samples = json.dumps({"data": X_test[0:1, :].tolist()})
-
-print(test_samples) # here is what we are sending to the service.
-
-#score on our service
-service.run(input_data = test_samples)
+test_sample = json.dumps({'data': [
+    [1,2,3,4,5,6,7,8,9,10], 
+    [10,9,8,7,6,5,4,3,2,1]
+]})
+test_sample = bytes(test_sample,encoding = 'utf8')
+prediction = service.run(input_data = test_sample)
+print(prediction)
 ```
 
 The key part of the code is the `service.run` call, which sends a JSON formatted document to the deployed web service and the result is displayed.
-
-### Clean up resources
-
-If you are going to continue with this Learning Path, don't run the code below.  If you are done and do not plan to continue with the other modules, you can run the code below to delete the Azure Machine Learning service resources you created. 
-
-```python
-      ws.delete(delete_dependent_resources=True)
-```
