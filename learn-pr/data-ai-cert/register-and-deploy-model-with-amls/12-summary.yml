@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.register-and-deploy-model-with-amls.summary
-title: Summary
+title: Summary and cleanup
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary and cleanup
+  description: Summary and cleanup
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer

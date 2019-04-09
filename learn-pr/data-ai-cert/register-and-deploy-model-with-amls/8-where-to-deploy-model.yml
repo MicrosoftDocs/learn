@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.register-and-deploy-model-with-amls.where-to-deploy-model
-title: Choose where to Deploy your Model
+title: Choose where to Deploy your model
 metadata:
-  title: Choose where to Deploy your Model - Learn
-  description: Choose where to Deploy your Model - Learn
+  title: Choose where to Deploy your model - Learn
+  description: Choose where to Deploy your model - Learn
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-where-to-deploy-model.md)]
+  [!include[](includes/8-where-to-deploy-model.md)]
