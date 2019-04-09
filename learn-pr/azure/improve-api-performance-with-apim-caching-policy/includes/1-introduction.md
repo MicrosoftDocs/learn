@@ -3,8 +3,9 @@
 
 API Management policies are configurable modules that can be attached to APIs to change their behaviors. Policies can do things like cache responses, transform documents and values, call webhooks for notification or audit purposes, and retry requests in the event of transient failures. This module will use policies to enable caching in order to improve API performance under load.
 
-
-## Learning objectives
+ Suppose you are a developer for a board game company. A product line produced by your company has recently become very popular, and the volume of requests from your retail partners to your inventory API is growing quickly: much faster than the rate that your inventory actually changes. You'd like to be able to respond to requests successfully without incurring load on your API.
+ 
+ ## Learning objectives
 
 In this module, you will:
 
