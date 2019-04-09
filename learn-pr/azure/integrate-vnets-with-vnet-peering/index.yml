@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of basic networking concepts, including subnets and IP addressing
   - Familiarity with Azure virtual machines
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/intro-to-azure-networking.svg
+iconUrl: /learn/achievements/integrate-vnets-with-vnet-peering.svg
 levels:
 - beginner
 roles:
