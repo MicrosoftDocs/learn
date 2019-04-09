@@ -8,7 +8,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Analyze climate data with Azure Notebooks
 summary: Create an Azure Notebook and use three popular Python libraries to analyze climate data collected by NASA, then share it.
 abstract: |
@@ -17,8 +16,7 @@ abstract: |
   - Upload, manipulate, and visualize data in a notebook
   - Share notebooks online
 prerequisites: None
-# TODO: create icon
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/analyze-climate-data-with-azure-notebooks-badge.svg
 levels:
 - beginner
 roles:
