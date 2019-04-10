@@ -53,7 +53,7 @@ Access to the editor can now be gained. Note the sets of snippets available on t
 
 ```
 
-You can add items to a policy template
+You can add elements to a policy template
 
 ```xml
 <policies>
@@ -70,15 +70,15 @@ You can add items to a policy template
 </policies>
 ```
 
-## Elements in a document
+## What do the Elements in the policy document provide ?
 
-1. **Cache-lookup** is the root elemt and must be present. 
+1. **cache-lookup** is the root elemt and must be present. 
 
 1. **vary-by-header** caches responses per value of specified headerch i.e. Accept, Accept-Charset, Accept-Encoding, Accept-Language. Not required
 
 1. **vary-by-query-parameter** caches responses per value of the query parameters  specified. They can be single or multiple seperated by semiscolon. If no parameters are specified  all used. Not required.
 
-## Attributes in a document
+## What do the Attributes in a document provide ?
 
 1. The **allow-private-response-caching** when set to true enables the caching of requests that contain an Authorization header.
 
