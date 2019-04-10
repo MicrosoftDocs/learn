@@ -78,7 +78,7 @@ This is used for configuring various items as well as policies
 
 This scope is for all operations of a particular API
 
-![Policy Scope](../media/APIscope.png)
+![APIPolicy Scope](../media/APIscope.png)
 
 
 
