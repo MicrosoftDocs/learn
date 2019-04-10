@@ -16,8 +16,8 @@ quiz:
   title: 'Knowledge check'
   questions:
   - 
-  - content: 'Given that users are not being authenticated which type of throttling would you use to limit access based on IP Address'
-    choices:
+  content: 'Given that users are not being authenticated which type of throttling would you use to limit access based on IP Address'
+  choices:
     - content: 'Product based throttling'
       isCorrect: false
       explaination: 'Because rate throttling capabilities are limited to being scoped to a particular Product subscription this type of throttling is no use
@@ -32,8 +32,8 @@ quiz:
       isCorrect: false
       explaination: 'When the throttling key is defined using a policy expression the provider of the API is controlling the scope. Client driven throttling
               occurs when the client using information provided in the header for the API can decide how they wish to create and distribute rate keys to users.'
-   - content: 'You wish to apply the policy to all of your APIs within your APIM service. Which scope would you place it in ?.'
-    choices:
+  content: 'You wish to apply the policy to all of your APIs within your APIM service. Which scope would you place it in ?.'
+  choices:
     - content: 'Global'
       isCorrect: true
       explaination: 'Policies placed Global Scope by selecting the All APIs menu item are applied to all APIs'
@@ -46,8 +46,8 @@ quiz:
     - content: 'Operation.'
       isCorrect: false
       explaination: 'Only applies to a particular operation in a particular API'
-   - content: 'Where would you place your policy to restrict access ?.'
-    choices:
+  content: 'Where would you place your policy to restrict access ?.'
+  choices:
     - content: 'inbound
       isCorrect: true
       explaination: 'It would be placed in the inbound tag as you are applying a rule to restrict inbound traffic'
@@ -60,5 +60,19 @@ quiz:
     - content: 'on-error.'
       isCorrect: false
       explaination: 'This tag only applies to the handling of errors'
+  content: 'Where would you place your policy for caching ?.'
+  choices:
+    - content: 'In operation scope cache-lookup in inbound and cache-store in outbound'
+      isCorrect: true
+      explaination: 'Your policy would contain both cache-lookup and cache-store elements to provide functionality to select what to cache in the cache-lookup for the request and how long for in the cache-store for the response'
+    - content: 'In Global scope cache-lookup in inbound and cache-store in outbound' '
+      isCorrect: false
+      explaination: 'Global scope applies to all APIs'
+    - content: 'In operation scope cache-lookup in inbound and cache-store in outbound''
+      isCorrect: false
+      explaination: 'API Scope applies to all operations in an individual API not an individual operation'
+    - content: 'In Product Scope.'
+      isCorrect: false
+      explaination: 'This only applies to APIs associated with products'  
   
      
