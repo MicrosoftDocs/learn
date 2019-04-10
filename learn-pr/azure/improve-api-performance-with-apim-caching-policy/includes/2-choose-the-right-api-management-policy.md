@@ -78,7 +78,7 @@ This is used for configuring various items as well as policies
 
 This scope is for all operations of a particular API
 
-![API Scope](../media/APIscope.png)
+![Policy Scope](../media/APIscope.png)
 
 
 
@@ -86,7 +86,27 @@ This scope is for all operations of a particular API
 
 This scope is for individual operations of an API
 
-![API Scope](../media/OperationScope.png)
+![APIOperations Scope](../media/OperationScope.png)
+
+
+**The use of <base/>**
+
+In the example below the base tag element is used to access the backend policy from the parent API level scope
+
+ ``` xml
+<!-- operation level -->
+<policies>
+    <inbound>
+        <base/>
+    </inbound>
+    <backend>
+        <base/>
+    </backend>
+    <outbound>
+        <base/>
+    </outbound>
+</policies>
+```
 
 
 **Elements used for restricting access**

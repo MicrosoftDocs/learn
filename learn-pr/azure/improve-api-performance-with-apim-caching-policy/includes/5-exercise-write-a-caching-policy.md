@@ -212,7 +212,7 @@ This time lets add a policy to control the caching of the  Get Operation.
 1. Run in test with the same parameters as before. Note the date time will remain the same until the cache has reached it expiry value.
 
 Why not try changing your policy to include vary-by-Query-parameter or 
-any of the attributes you learned about in the previous learning module
+any of the attributes you learned about in the previous learning module.
 
 
 
