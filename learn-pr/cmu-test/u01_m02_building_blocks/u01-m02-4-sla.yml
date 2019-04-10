@@ -20,11 +20,11 @@ quiz:
     choices:
     - content: "The cloud provider"
       isCorrect: false
-      explanation: "Incorrect. Think carefully about the entity who defines the SLOs."
+      explanation: "Incorrect. Think carefully about the entity who defines the SLOs. Which entity has to define the service requirements expected from a cloud?"
     - content: "The client"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct!."
     - content: "The auditing agency"
       isCorrect: false
-      explanation: "Incorrect. Think carefully about the entity who defines the SLOs."
+      explanation: "Incorrect. Think carefully about the entity who defines the SLOs. Which entity has to define the service requirements expected from a cloud?"
 

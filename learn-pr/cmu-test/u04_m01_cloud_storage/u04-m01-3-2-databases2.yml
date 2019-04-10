@@ -23,8 +23,8 @@ quiz:
       explanation: "Correct! A monolithic server can be consistent and available but is not partition-tolerant, since there is only a single node."
     - content: "AP"
       isCorrect: false
-      explanation: "That’s not quite right. Since the RDMS is ACID compliant, it must also satisfy C. A monolithic server is not partition-tolerant, since there is only a single node."
+      explanation: "That’s not quite right. Since the RDMS is ACID compliant, it must also satisfy C. A monolithic server is not partition-tolerant, since there is only a single node. If you read carefully, the answer lies in the question itself."
     - content: "CP"
       isCorrect: false
-      explanation: "That’s not quite right. Since the RDMS is always reachable, it must also satisfy A. A monolithic server is not partition-tolerant, since there is only a single node."
+      explanation: "That’s not quite right. Since the RDMS is always reachable, it must also satisfy A. A monolithic server is not partition-tolerant, since there is only a single node. If you read carefully, the answer lies in the question itself."
 

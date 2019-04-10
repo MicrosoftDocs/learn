@@ -20,23 +20,25 @@ quiz:
     choices:
     - content: "The applications deployed on GAE have the same security, privacy, and data protection policies as that of Google's applications. Hence, end users can take advantage of the reliability, performance, and security of Google's infrastructure."
       isCorrect: false
-      explanation: "Incorrect. We are looking for an incorrect statement about GAE. This statement is correct because PaaS has built-in scaling mechanisms of deployed software that are automatically handled by the cloud provider with load-balancing and failover mechanisms."
+      explanation: "Incorrect. We are looking for an incorrect statement about GAE. This statement is correct because PaaS has built-in scaling mechanisms of deployed software that are automatically handled by the cloud provider with load-balancing and failover mechanisms. Think about the difference between GAE and an IaaS service, like Amazon EC2."
     - content: "Customers have the flexibility to decide the number and configuration of physical servers required for hosting an application."
       isCorrect: true
       explanation: "Correct! The user does not have the flexibility to decide the number of physical servers required for hosting an application; the cloud provider makes this decision."
     - content: "GAE provides customers with Web-based user-interface creation tools to help create and modify the application's APIs."
       isCorrect: false
-      explanation: "Incorrect! We are looking for an incorrect statement about GAE. This statement is correct because PaaS providers have Web-based user-interface (UI) creation tools to help create, modify, and test various UI scenarios."
+      explanation: "Incorrect! We are looking for an incorrect statement about GAE. This statement is correct because PaaS providers have Web-based user-interface (UI) creation tools to help create, modify, and test various UI scenarios. Think about the difference between GAE and an IaaS service, like Amazon EC2."
 
   - content: "Which of the following is considered to be a characteristic of IaaS?"
     choices:
     - content: "IaaS providers do not allow clients to scale resources on demand."
       isCorrect: false
-      explanation: "Incorrect. IaaS providers allow clients to scale resource on demand."
+      explanation: "Incorrect. IaaS providers allow clients to scale resource on demand. Consider the service functionality of an IaaS provider such as Amazon EC2. What are 
+				the features? What are the limitations?"
     - content: "IaaS providers provide computing resources to clients in the form of instances, or virtual machines."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct!."
     - content: "Users are aware of whom they share physical resources with."
       isCorrect: false
-      explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users."
+      explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users. Consider the service functionality of an IaaS provider such as Amazon EC2. What are 
+				the features? What are the limitations?"
 

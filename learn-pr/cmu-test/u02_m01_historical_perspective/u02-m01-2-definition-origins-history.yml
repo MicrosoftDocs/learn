@@ -20,14 +20,14 @@ quiz:
     choices:
     - content: "Railroads"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct!."
     - content: "Television companies"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. It was an early pioneering industry which had significant electrical and signalling requirements."
     - content: "Radio stations"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. It was an early pioneering industry which had significant electrical and signalling requirements."
     - content: "Military communications"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. It was an early pioneering industry which had significant electrical and signalling requirements."
 

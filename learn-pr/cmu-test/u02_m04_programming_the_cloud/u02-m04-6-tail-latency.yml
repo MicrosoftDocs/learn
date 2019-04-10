@@ -20,14 +20,14 @@ quiz:
     choices:
     - content: "Speculative replication of jobs when resources are available"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Which of the options presented seems to be counter intuitive?"
     - content: "Scheduling the shortest jobs to run first to reduce queuing delay"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct!."
     - content: "Simply accept the results that are returned within the first 50 ms and generate the final response to the user based on incomplete or inaccurate data"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Which of the options presented seems to be counter intuitive?"
     - content: "Turn off power saving and idling mechanisms on the servers"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Which of the options presented seems to be counter intuitive?"
 

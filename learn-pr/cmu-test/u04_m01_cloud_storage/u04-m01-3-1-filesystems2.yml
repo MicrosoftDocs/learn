@@ -23,8 +23,10 @@ quiz:
       explanation: "Correct! Applications can interact with storage devices using any of the given abstractions."
     - content: "File systems and Databases"
       isCorrect: false
-      explanation: "That’s not quite right. Applications can interact with more than just a file system or a database."
+      explanation: "That’s not quite right. Applications can interact with more than just a file system or a database. If you were to write a program that interacts with a storage device, what kind
+                    of APIs can you access? What abstractions do those APIs provide?"
     - content: "Only Databases"
       isCorrect: false
-      explanation: "That’s not quite right. Applications can interact with more than just a database."
+      explanation: "That’s not quite right. Applications can interact with more than just a database. If you were to write a program that interacts with a storage device, what kind
+                    of APIs can you access? What abstractions do those APIs provide?"
 

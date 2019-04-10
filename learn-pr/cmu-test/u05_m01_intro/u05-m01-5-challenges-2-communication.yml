@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "A. Improvement in performance"
       isCorrect: false
-      explanation: "That is not quite right. Colocating highly communicating entities does improve performance, but is that the only correct answer?"
+      explanation: "That is not quite right. Colocating highly communicating entities does improve performance, but is that the only correct answer?. Think about the benefits of bringing highly communicating entities together."
     - content: "B. Reduction of network traffic"
       isCorrect: false
-      explanation: "That is not quite right. Colocating highly communicating entities does reduce network traffic, but is that the only correct answer?"
+      explanation: "That is not quite right. Colocating highly communicating entities does reduce network traffic, but is that the only correct answer?. Think about the benefits of bringing highly communicating entities together."
     - content: "C. (A and B)"
       isCorrect: true
       explanation: "Correct! Highly communicating entities should ideally be Colocating as closely as possible for both the reasons listed above."

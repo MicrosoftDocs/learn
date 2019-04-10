@@ -23,8 +23,8 @@ quiz:
       explanation: "Correct! Message queues add complexity to a system's architecture."
     - content: "Message queue systems allow for loose coupling between communicating entities"
       isCorrect: false
-      explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches."
+      explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches. Revise this page if you are not sure."
     - content: "Message queue systems provide asynchronous comminication through buffering"
       isCorrect: false
-      explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches."
+      explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches. Revise this page if you are not sure."
 

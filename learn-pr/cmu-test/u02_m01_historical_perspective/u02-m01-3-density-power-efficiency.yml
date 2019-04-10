@@ -23,26 +23,26 @@ quiz:
       explanation: "Correct! The average watts per square foot in 2010 was approximately 500W. The total power consumption of the data center is 500 × 5000 = 2,500,000W = 2.5MW."
     - content: "250kW"
       isCorrect: false
-      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500W. One megawatt = 1,000,000W. Can you do the math?"
+      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500W. One megawatt = 1,000,000W. Can you do the math?. Think about how you can compute total power consumption given area and power density."
     - content: "1.5MW"
       isCorrect: false
-      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500W. One megawatt = 1,000,000W. Can you do the math?"
+      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500W. One megawatt = 1,000,000W. Can you do the math?. Think about how you can compute total power consumption given area and power density."
     - content: "150kW"
       isCorrect: false
-      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500 W. One megawatt = 1,000,000W. Can you do the math?"
+      explanation: "Incorrect. The average watts per square foot in 2010 was approximately 500 W. One megawatt = 1,000,000W. Can you do the math?. Think about how you can compute total power consumption given area and power density."
 
   - content: "Which of the following techniques are *NOT* effective in improving the power efficiency of data centers?"
     choices:
     - content: "Hot-aisle containment and in-row cooling"
       isCorrect: false
-      explanation: "Incorrect. The retro encabulator is a fictional machine and hence NOT effective in improving the power efficiency of data centers!"
+      explanation: "Incorrect. The retro encabulator is a fictional machine and hence NOT effective in improving the power efficiency of data centers!. Consider each of the options individually. Google them if needed."
     - content: "Server consolidation"
       isCorrect: false
-      explanation: "Incorrect. The retro encabulator is a fictional machine and hence NOT effective in improving the power efficiency of data centers!"
+      explanation: "Incorrect. The retro encabulator is a fictional machine and hence NOT effective in improving the power efficiency of data centers!. Consider each of the options individually. Google them if needed."
     - content: "Retro encabulator"
       isCorrect: true
-      explanation: "Correct! The retro encabulator is a fictional machine!"
+      explanation: "Correct! The retro encabulator is a fictional machine!."
     - content: "High-voltage, direct current feeds to servers"
       isCorrect: false
-      explanation: "Incorrect. The retro encabulator is a fictional machine and hence NOT effective in improving the power efficiency of data centers!"
+      explanation: "Incorrect. The retro encabulator is a fictional machine and hence NOT effective in improving the power efficiency of data centers!. Consider each of the options individually. Google them if needed."
 

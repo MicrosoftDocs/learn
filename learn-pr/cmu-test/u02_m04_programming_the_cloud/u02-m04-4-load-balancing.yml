@@ -20,17 +20,17 @@ quiz:
     choices:
     - content: "I and VI"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct!."
     - content: "III and V"
       isCorrect: false
-      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it."
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that the ELB distributes load across multiple machines."
     - content: "III and VI"
       isCorrect: false
-      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it."
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that the ELB distributes load across multiple machines."
     - content: "II and IV"
       isCorrect: false
-      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it."
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that the ELB distributes load across multiple machines."
     - content: "II and III"
       isCorrect: false
-      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it."
+      explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance behind it. Consider the mechanism that the ELB distributes load across multiple machines."
 

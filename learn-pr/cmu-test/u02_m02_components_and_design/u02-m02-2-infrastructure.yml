@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Raised floor"
       isCorrect: false
-      explanation: "Incorrect. Raised floors are fairly common in data centers."
+      explanation: "Incorrect. Raised floors are fairly common in data centers. Which of these options is not vital in modern data centers?"
     - content: "Computer room air conditioner (CRAC)"
       isCorrect: false
-      explanation: "Incorrect. CRACs are common in data centers."
+      explanation: "Incorrect. CRACs are common in data centers. Which of these options is not vital in modern data centers?"
     - content: "Power distribution units (PDUs)"
       isCorrect: false
-      explanation: "Incorrect. PDUs are common in data centers."
+      explanation: "Incorrect. PDUs are common in data centers. Which of these options is not vital in modern data centers?"
     - content: "Display walls"
       isCorrect: true
       explanation: "Correct! Display walls are not common in data centers but may be used in data center monitoring and control rooms."

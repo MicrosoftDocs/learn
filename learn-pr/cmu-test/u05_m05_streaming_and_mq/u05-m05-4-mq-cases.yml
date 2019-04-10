@@ -20,14 +20,14 @@ quiz:
     choices:
     - content: "Passive (poll-driven) querying"
       isCorrect: false
-      explanation: "Incorrect. Active querying is a desireable trait."
+      explanation: "Incorrect. Active querying is a desireable trait. Revise this page if you are not sure."
     - content: "Partitioning data for scale"
       isCorrect: true
-      explanation: "Correct! These systems are inherently horizontally scalable as long as the data can be sharded across all wordkers"
+      explanation: "Correct! These systems are inherently horizontally scalable as long as the data can be sharded across all wordkers."
     - content: "Backup and manual recovery"
       isCorrect: false
-      explanation: "Incorrect. Manual recovery is undesireable."
+      explanation: "Incorrect. Manual recovery is undesireable. Revise this page if you are not sure."
     - content: "Integrating stored state from a remote database"
       isCorrect: false
-      explanation: "Incorrect. Remote databases lead to a very high latency."
+      explanation: "Incorrect. Remote databases lead to a very high latency. Revise this page if you are not sure."
 

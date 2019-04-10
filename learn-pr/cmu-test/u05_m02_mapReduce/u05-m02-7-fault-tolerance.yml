@@ -20,22 +20,28 @@ quiz:
     choices:
     - content: "1"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution."
     - content: "1 and 2"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution."
     - content: "2 and 3"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution."
     - content: "2, 3, and 4"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution."
     - content: "3"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution."
     - content: "3, 4, and 5"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about how having heterogeneous hardware affects the performance of a running application. What impact will
+                that have on speculative execution."
     - content: "2, 3, and 5"
       isCorrect: true
       explanation: "Correct! In a heterogeneous cloud, different TaskTrackers may have different hardware and hence may execute tasks at different rate. In addition, tasks may progress at a different rate. Hence, tasks with low progress scores are not necessarily stragglers."

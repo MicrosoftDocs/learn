@@ -20,11 +20,11 @@ quiz:
     choices:
     - content: "Lambda architectures include a layer for batch processing, while Kappa architectures do not."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct!."
     - content: "Kappa architectures include a layer for batch processing, while Lambda does not"
       isCorrect: false
-      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Please review the material if you are not sure."
+      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Please review the material if you are not sure. Please review the material if you are not sure."
     - content: "Both architectures are fundamentally the same."
       isCorrect: false
-      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Please review the material if you are not sure."
+      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Please review the material if you are not sure. Please review the material if you are not sure."
 

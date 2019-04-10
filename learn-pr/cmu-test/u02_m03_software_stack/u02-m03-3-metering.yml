@@ -20,14 +20,14 @@ quiz:
     choices:
     - content: "The start time of every single EC2 instance that a customer owns"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about the way AWS bills customers for using its services."
     - content: "The number of bytes of data sent out by every EC2 instance"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about the way AWS bills customers for using its services."
     - content: "The number of bytes of storage where data is actually stored on a provisioned EBS storage volume"
       isCorrect: true
       explanation: "Correct! Once disk space is provisioned, the amount that the user actually uses is not billed."
     - content: "All of the above must be monitored by AWS"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think about the way AWS bills customers for using its services."
 

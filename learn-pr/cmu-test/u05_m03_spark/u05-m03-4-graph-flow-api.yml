@@ -20,14 +20,14 @@ quiz:
     choices:
     - content: "Distributed collection of objects on disk"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think of the different ways RDDs can be persisted."
     - content: "Distributed collection of objects in memory"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think of the different ways RDDs can be persisted."
     - content: "Distributed collection of objects in Cassandra"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Think of the different ways RDDs can be persisted."
     - content: "All of the above"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct!."
 
