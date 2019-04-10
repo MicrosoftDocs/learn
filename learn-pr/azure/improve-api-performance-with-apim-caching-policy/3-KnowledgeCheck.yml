@@ -20,59 +20,59 @@ quiz:
   choices:
     - content: 'Product based throttling'
       isCorrect: false
-      explaination: 'Because rate throttling capabilities are limited to being scoped to a particular Product subscription this type of throttling is no use
+      explanation: 'Because rate throttling capabilities are limited to being scoped to a particular Product subscription this type of throttling is no use
       when trying to individual users accessing your API'
     - content: 'User identity throttling '
       isCorrect: false
-      explaination: 'To use user identity throttling your user must be authenticated, in this scenario this is not the case'
+      explanation: 'To use user identity throttling your user must be authenticated, in this scenario this is not the case'
     - content: 'IP address throttling'
       isCorrect: true
-      explaination: 'Even though it may not be that accurate with many users sharing the same IP adress accessing your API via a NAT this is the only option for APIs that allow unauthenticated access'
+      explanation: 'Even though it may not be that accurate with many users sharing the same IP adress accessing your API via a NAT this is the only option for APIs that allow unauthenticated access'
     - content: 'client driven throttling.'
       isCorrect: false
-      explaination: 'When the throttling key is defined using a policy expression the provider of the API is controlling the scope. Client driven throttling
+      explanation: 'When the throttling key is defined using a policy expression the provider of the API is controlling the scope. Client driven throttling
               occurs when the client using information provided in the header for the API can decide how they wish to create and distribute rate keys to users.'
   content: 'You wish to apply the policy to all of your APIs within your APIM service. Which scope would you place it in ?.'
   choices:
     - content: 'Global'
       isCorrect: true
-      explaination: 'Policies placed Global Scope by selecting the All APIs menu item are applied to all APIs'
+      explanation: 'Policies placed Global Scope by selecting the All APIs menu item are applied to all APIs'
     - content: 'Product '
       isCorrect: false
-      explaination: 'Only applies to APIs linked to a Product'
+      explanation: 'Only applies to APIs linked to a Product'
     - content: 'API'
       isCorrect: false
-      explaination: 'Only applies to a particular API'
+      explanation: 'Only applies to a particular API'
     - content: 'Operation.'
       isCorrect: false
-      explaination: 'Only applies to a particular operation in a particular API'
+      explanation: 'Only applies to a particular operation in a particular API'
   content: 'Where would you place your policy to restrict access ?.'
   choices:
     - content: 'inbound'
       isCorrect: true
-      explaination: 'It would be placed in the inbound tag as you are applying a rule to restrict inbound traffic'
+      explanation: 'It would be placed in the inbound tag as you are applying a rule to restrict inbound traffic'
     - content: 'outbound'
       isCorrect: false
-      explaination: 'Outbound only applies to responses, we are trying to restrict requests'
+      explanation: 'Outbound only applies to responses, we are trying to restrict requests'
     - content: 'backend'
       isCorrect: false
-      explaination: 'This tag only applies to activity on the backend'
+      explanation: 'This tag only applies to activity on the backend'
     - content: 'on-error.'
       isCorrect: false
-      explaination: 'This tag only applies to the handling of errors'
+      explanation: 'This tag only applies to the handling of errors'
   content: 'Where would you place your policy for caching ?.'
   choices:
     - content: 'In operation scope cache-lookup in inbound and cache-store in outbound'
       isCorrect: true
-      explaination: 'Your policy would contain both cache-lookup and cache-store elements to provide functionality to select what to cache in the cache-lookup for the request and how long for in the cache-store for the response'
+      explanation: 'Your policy would contain both cache-lookup and cache-store elements to provide functionality to select what to cache in the cache-lookup for the request and how long for in the cache-store for the response'
     - content: 'In Global scope cache-lookup in inbound and cache-store in outbound' 
       isCorrect: false
-      explaination: 'Global scope applies to all APIs'
+      explanation: 'Global scope applies to all APIs'
     - content: 'In operation scope cache-lookup in inbound and cache-store in outbound'
       isCorrect: false
-      explaination: 'API Scope applies to all operations in an individual API not an individual operation'
+      explanation: 'API Scope applies to all operations in an individual API not an individual operation'
     - content: 'In Product Scope.'
       isCorrect: false
-      explaination: 'This only applies to APIs associated with products'  
+      explanation: 'This only applies to APIs associated with products'  
   
      
