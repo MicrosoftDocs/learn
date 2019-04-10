@@ -31,7 +31,7 @@ But with over 80,000 employees in dozens of different organizations spanning ove
 ## Strategy questions
 
 1. What are Publicis’ unique strengths and capabilities that a solution should leverage?
-2. For businesses to be efficient, they need stakeholders to have access the right information, at the right time. In a world drowning in data, how should Publicis approach providing its wealth of information to employees, without generating more surplus data and information?
+2. For businesses to be efficient, they need stakeholders to have access to the right information, at the right time. In a world drowning in data, how should Publicis approach providing its wealth of information to employees, without generating more surplus data and information?
 3. The five characteristics of high-quality information are: that it is accurate, complete, consistent, unique, and timely. How should Publicis ensure the information they provide employees meets this standard?
 4. When a project needs fresh advice, experience, or technical know-how, how can employees in a large organization find the right colleague to help?
 5. Strategically, how should this be approached so that the well-meaning (but ultimately damaging) habits of some managers to keep their groups exclusive and inward-looking is bypassed?

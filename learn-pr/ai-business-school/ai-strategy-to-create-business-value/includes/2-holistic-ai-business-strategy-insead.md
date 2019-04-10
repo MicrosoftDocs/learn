@@ -1,6 +1,6 @@
 AI exists as a point within the broader landscape of digital transformation. Understanding the recent history of AI investment and adoption helps to provide not only context, but also suggests a road map for business decision makers who are looking to define an AI strategy for their own business. Watch this video from Peter Zemsky, INSEAD’s Eli Lily Chaired Professor of Strategy and Innovation as he introduces how AI is driving business value across industries and companies.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYNM]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtTaE]
 
 AI is important for the future evolution of business and our broader society. Peter Zemsky outlines that while there is significant ongoing investment in AI from major technology companies, there remain those who see AI as a threat rather than an opportunity. The complexity underpinning AI is sometimes felt to be intimidating, which becomes its own barrier to the exploration of how AI can be leveraged in one’s business and how organizations can strategically select the right use cases for adopting AI as a part of creating an AI strategy. Peter Zemsky advises building one’s own high-level understanding of AI as a way to remove the barrier. The case studies in this module are a great place to start.
 

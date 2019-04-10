@@ -11,7 +11,7 @@ But this sort of task — near impossible for humans — is exactly what AI is g
 
 ### Marcel is born
 
-Using AI Publicis was able to create an interactive assistant for employees and clients called “Marcel”.
+Using AI, Publicis was able to create an interactive assistant for employees and clients called “Marcel”.
 
 Behind the scenes, Marcel is a platform that uses AI to bring order to Publicis’ vast amount of siloed knowledge. But users don’t see any of this extensive categorisation work. For them, the interface works in a similar way to Microsoft’s Cortana, or Apple’s Siri. It can be used to find expertise, share ideas, and to connect creatives to projects. Employees can ask Marcel questions in plain English, such as “Who has done graphic design work for Samsung in the last six months?” They even can ask Marcel who the right person is to help solve an issue on a particular project.
 
@@ -53,6 +53,6 @@ Let’s examine how Publicis’ AI strategy is creating additional value using t
 
 1. From the **industry environment perspective**, traditional agencies are facing increased competition by new start-ups and born-in-the-cloud agencies while being required to adopt new online advertisement models lowering the potential to add differentiated value.
 2. From the **value creation perspective**, agencies like Publicis are very heavily dependent on human resources. With low operating margins derived productivity can have a big impact on value creation. Also, tools allowing employees to reuse existing knowledge and assets will provide significant value.
-3. From the **organization & execution perspective**, the ability to extract knowledge from vast amount of unstructured data creates immediately new sources of value creation. The ability to increase productivity and free-up time for content creation and innovation will over cost. Also, the use of tools like bots reduces the challenges to deploy the use of the technology reducing the needs for reskilling and training.
+3. From the **organization & execution perspective**, the ability to extract knowledge from vast amounts of unstructured data creates immediately new sources of value creation. The ability to increase productivity and free-up time for content creation and innovation will over cost. Also, the use of tools like bots reduces the challenges to deploy the use of the technology reducing the needs for reskilling and training.
 
 Now that you’ve seen how organizations are approaching their AI strategies, let’s wrap up everything you’ve learned with a knowledge check.

@@ -4,4 +4,4 @@ Thinking about their organization as a data-centric organization has fundamental
 
 Today, cognitive intelligence sits behind all of the channels customer use in interacting with Telefónica. Achieving this required the organization transform the internal applications of their core business. Aura, Telefónica’s digital assistant built on cognitive intelligence, has created a new relationship between the organization and its customers, as customers now talk to Aura, thereby truly communicating more deeply with the company. The upside for the 100-year-old company has been huge.
 
-Next, Let’s look more deeply at how Telefónica transformed its organization with AI.
+Next, let’s look more deeply at how Telefónica transformed its organization with AI.
