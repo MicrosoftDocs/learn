@@ -48,10 +48,10 @@ quiz:
       explaination: 'Only applies to a particular operation in a particular API'
   content: 'Where would you place your policy to restrict access ?.'
   choices:
-    - content: 'inbound
+    - content: 'inbound'
       isCorrect: true
       explaination: 'It would be placed in the inbound tag as you are applying a rule to restrict inbound traffic'
-    - content: 'outbound '
+    - content: 'outbound'
       isCorrect: false
       explaination: 'Outbound only applies to responses, we are trying to restrict requests'
     - content: 'backend'
@@ -65,10 +65,10 @@ quiz:
     - content: 'In operation scope cache-lookup in inbound and cache-store in outbound'
       isCorrect: true
       explaination: 'Your policy would contain both cache-lookup and cache-store elements to provide functionality to select what to cache in the cache-lookup for the request and how long for in the cache-store for the response'
-    - content: 'In Global scope cache-lookup in inbound and cache-store in outbound' '
+    - content: 'In Global scope cache-lookup in inbound and cache-store in outbound' 
       isCorrect: false
       explaination: 'Global scope applies to all APIs'
-    - content: 'In operation scope cache-lookup in inbound and cache-store in outbound''
+    - content: 'In operation scope cache-lookup in inbound and cache-store in outbound'
       isCorrect: false
       explaination: 'API Scope applies to all operations in an individual API not an individual operation'
     - content: 'In Product Scope.'
