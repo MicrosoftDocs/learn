@@ -9,17 +9,83 @@
 <!-- Don't include a summary section in individual units -->
 
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
- Many organizations use APIs to publish data and services. Customers and partners can call these APIs from any kind of client: desktop applications, mobile apps, web apps, and other systems. If your API is popular, you may need to optimize its performance to guarantee a good service to users.
 
-
-You use Azure API Management to host your API. You've read that you can configure an API Management policy to cache compiled responses to requests and you think that this will be a good way to optimize performance. You want to learn how to write API Management policies and how to use them to set up and control a cache. Then you want to write a policy that accelerates responses to users.
 
 ## Choosing the right policy
 
-Policies in Azure API Management - APIM can be used to control many aspects of an already deployed API changing its behaviour via configuration. 
-The statements which form a policy are executed sequentially on either outbound responses  or inbound requests. You therefore need to be aware of the built in configurable policies tat are available in Azure APIM
+You can use APIM to control many aspects of an already deployed API changing its behaviour via the use of policies. Policies are formed of individual statements which are executed in order.You apply them to either the inbound processing tags to modify requests before they reach the backend or the outbound processing tags to modify the response before it is sent to the client. The backend tag can be used control An on error tag can be added to control what happens when an error occurs .
 
-## Inbuilt Policies
+The policy documents themselves are xml structures which contain configurable policy elements used to control the behaviour of the API.
+
+
+```xml
+<policies>
+    <inbound>
+        <base />
+        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal" >
+            <vary-by-query-parameter>version</vary-by-query-parameter>
+        </cache-lookup>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <cache-store duration="seconds" />
+        <base />
+    </outbound>
+    </on-error>
+        <base />
+    </on-error>
+</policies>
+
+For example if you wish to cache a response for a certain amount of time you would first need to choose a scope for the policy ie does it apply to every API, a particular API and all of its operations or a particular operation within an individual API.
+
+You would then add the appropriate policy element to the policy , in this case the cache-lookup  in the inbound tag and the cache-store duration in the outbound tag.
+
+The syntax for the element is the same regardless of the scope chosen.
+
+## Policy Scopes
+
+Policys are evaluated in order of scopes Global, Product, API, Operations.
+
+**The Global Policy Scope**
+
+Choosing the All APIS menu item gives you access to the Global Scope. Policies applied at this level apply to all APIs within the APIM.
+
+![Global All API Scope](../media/GlobalScope.png)
+
+The XML editor is accessed by clicking on the tag symbol **</>**
+
+![Global Scope Editor](../media/GlobalScopeEditor.png)
+
+
+You can select add policy in either the inbound or outbound processing tag areas to open a wizard to apply policy elements rather than selecting the policy tag **</>** and adding elements directly to the xml structure.the menu 
+
+![Global All API Scope](../media/globalpolicywiz.png)
+
+
+
+**The Product Policy Scope**
+
+This is used for configuring various items as well as policies
+
+![Product Scope](../media/ProductsScope.png)
+
+
+**API Policy Scope**
+
+This scope is for all operations of a particular API
+
+![API Scope](../media/APIscope.png)
+
+
+
+**Operation Scope**
+
+This scope is for individual operations of an API
+
+![API Scope](../media/OperationScope.png)
+
 
 **Some access restriction policy examples**
 
@@ -86,44 +152,3 @@ Rewrite URL Converts a request URL from its public form to a form expected a par
 .
 Transform XML uses an XSLT template to carry out  XSL transformation to XML in the request or response body.
 
-## Policy Scopes ##
-
-Policys are evaluated in order of scopes Global, Product, API, Operations.
-
-**The Global Policy Scope**
-
-The All APIS menu item is at Global Scope
-
-![Global All API Scope](../media/GlobalScope.png)
-
-The XML editor is accessed by the </> 
-
-![Global Scope Editor](../media/GlobalScopeEditor.png)
-
-
-Choosing Add Policy In the various processing areas launches a wizard to aid adding your values in the correct part of the policy document
-
-![Global All API Scope](../media/globalpolicywiz.png)
-
-
-
-**The Product Policy Scope**
-
-This is used for configuring various items as well as policies
-
-![Product Scope](../media/ProductsScope.png)
-
-
-**API Policy Scope**
-
-This scope is for all operations of a particular API
-
-![API Scope](../media/APIscope.png)
-
-
-
-**Operation Scope**
-
-This scope is for individual operations of an API
-
-![API Scope](../media/OperationScope.png)
