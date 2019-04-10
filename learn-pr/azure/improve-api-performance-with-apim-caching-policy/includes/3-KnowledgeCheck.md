@@ -11,3 +11,4 @@
 
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
  -
+ You need to restrict access to all of your APIs to a particular range of IP addresses. The APIs do not at present support any form of authentication.You also need to cache one particular operation in a particular API.
