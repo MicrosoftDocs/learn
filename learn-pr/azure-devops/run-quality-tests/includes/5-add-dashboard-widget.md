@@ -1,27 +1,32 @@
-In the previous module, we set up a dashboard so that we can monitor PRs and build health.
+In the previous module, you set up a dashboard so that you can monitor pull requests and visualize the health of your builds.
 
-Here, add a widget to the dashboard to monitor the tests.
+Here, you'll add a widget to the dashboard to monitor the tests.
 
------
+Talk track:
 
-Notes from spike:
+* Cool, we have a passing unit test that's run in the pipeline whenever changes are made.
+* Alice maybe shows Bob and then they both show Carol.
+* Carol: That's certainly cool! I bet that will certainly help us all. But is there a way I can just see a brief overview of test results over time?
+* Alice: Yes. Azure DevOps lets you set up dashboards that you can add widgets to. Dashboards can help the team and other teams see things like build health and tests result trends over time.
 
-In the previous module, we set up a dashboard so that we can monitor PRs and build health.
+TODO: Knowledge needed: 
+  * What is the Marketplace? 
+  * Mention that many add-ons are free, but some still require an evaluation or license key?
 
-Here, add a widget to the dashboard to monitor the tests.
+## Add a widget to the dashboard
 
-- Navigate to **Overview**, **Dashboards**
-- Click **Overview**
-- Click **Edit**
-- Click **Add a widget**
-- Search for **Test Results Trend**.
-- Drag **Test Results Trend** to the (canvas).
-- Click the gear icon to configure the widget.
-  - Keep all the settings at their default, except for:
-    - Build pipeline => (Select the pipeline)
-- Click **Save**.
-- Click **Done Editing**.
+1. From Azure DevOps, select **Overview** and then **Dashboards**.
+1. Click **Add a widget**.
+1. From the **Add Widget** pane, search for **Test Results Trend**.
+1. Drag **Test Results Trend** to the canvas.
+1. Click the gear icon to configure the widget.
+    1. Under **Build pipeline**, select your pipeline.
+    1. Keep all other settings at their default.
+1. Click **Save**.
+1. Click **Done Editing**.
 
-Describe what the widget does and what you can do with it.
+Although the widget shows only one test run, you now have a way to visualize and track test runs over time.
 
-You don't see much yet, but you have a baseline of results that you can monitor over time.
+![](../media/5-test-results-trend-widget.png)
+
+If you begin to see test failures, you can click on a point in the graph to navigate directly to that build.

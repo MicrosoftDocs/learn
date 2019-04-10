@@ -46,7 +46,7 @@ Here you'll create a template that can build any configuration defined in the pr
 
     You can place a template file in any location you choose. You don't need to place them in the **templates** directory.
 
-1. From the integrated terminal, create a file named **build-config.yml** in the **templates** directory.
+1. From the integrated terminal, create a file named **build.yml** in the **templates** directory.
 
     **PowerShell**
 
@@ -57,12 +57,12 @@ Here you'll create a template that can build any configuration defined in the pr
     **Bash**
 
     ```bash
-    touch templates/build-config.yml
+    touch templates/build.yml
     ```
 
     <!-- TODO: Add PowerShell equivalent -->
 
-1. From Visual Studio Code, add this to **build-config.yml**.
+1. From Visual Studio Code, add this to **build.yml**.
 
     ```yml
     parameters:
@@ -108,6 +108,11 @@ Here you'll call the template you just built from the pipeline. You'll do so one
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
 
     steps:
+    - task: DotNetCoreInstaller@0
+      displayName: 'Use .NET Core SDK 2.1.505'
+      inputs:
+        version: 2.1.505
+
     - task: Npm@1
       displayName: 'npm install'
       inputs:
@@ -128,11 +133,11 @@ Here you'll call the template you just built from the pipeline. You'll do so one
         command: 'restore'
         projects: '**/*.csproj'
 
-    - template: templates/build-config.yml
+    - template: templates/build.yml
       parameters:
         buildConfiguration: 'Debug'
 
-    - template: templates/build-config.yml
+    - template: templates/build.yml
       parameters:
         buildConfiguration: 'Release'
 
@@ -144,11 +149,11 @@ Here you'll call the template you just built from the pipeline. You'll do so one
     This file resembles the original, except that it calls the template to perform the build and publish tasks.
 
     ```yml
-    - template: templates/build-config.yml
+    - template: templates/build.yml
       parameters:
         buildConfiguration: 'Debug'
 
-    - template: templates/build-config.yml
+    - template: templates/build.yml
       parameters:
         buildConfiguration: 'Release'
     ```
@@ -159,10 +164,10 @@ Here you'll call the template you just built from the pipeline. You'll do so one
 
 Here you'll push your changes to GitHub and see the pipeline run.
 
-1. From the integrated terminal, add **azure-pipelines.yml** and **templates/build-config.yml** to the index, commit the changes, and push the changes up to GitHub.
+1. From the integrated terminal, add **azure-pipelines.yml** and **templates/build.yml** to the index, commit the changes, and push the changes up to GitHub.
 
     ```bash
-    git add azure-pipelines.yml templates/build-config.yml
+    git add azure-pipelines.yml templates/build.yml
     git commit -m "Support build configurations"
     git push origin build-pipeline
     ```
