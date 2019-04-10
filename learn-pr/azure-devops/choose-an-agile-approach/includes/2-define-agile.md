@@ -30,8 +30,6 @@ We value:
 
  First, can you explain the build process to me and help me identify the big problems?
 
- After a lot of coffee, Mara and Andy identify the biggest problems in the build process. All of the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic version of Azure boards to get all the problems in one place. Here's what her board looks like:
+ After a lot of coffee, Mara and Andy identify the biggest problems in the build process. All of the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic version of Azure boards to get all the problems in one place. 
 
-[INSERT IMAGE]
-
-Her next step is to get the team involved.
+Her next step is to show the board to the team and get them involved.

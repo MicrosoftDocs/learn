@@ -1,6 +1,6 @@
-As you can see, Alice and her team face a number of challenges. Although releases happen, Alice feels they can happen much more frequently and efficiently. Plus, Alice hates working longer hours when it's not necessary.
+As you can see, Mara and her team face a number of challenges. Although releases happen, Mara feels they can happen much more frequently and efficiently. Plus, Mara hates working longer hours when it's not necessary.
 
-Alice plans to bring her findings to the team. Perhaps that will help convince them that it's at least worth testing out a DevOps approach to finish up work on the _Space Game_ web site.
+Mara plans to bring her findings to the team. Perhaps that will help convince them that it's at least worth testing out a DevOps approach to finish up work on the _Space Game_ web site.
 
 ## What is DevOps?
 
@@ -10,7 +10,7 @@ Azure DevOps is a suite of services that spans the entire DevOps lifecycle. Azur
 
 ## Take the assessment for yourself
 
-Try taking the Self-Assessment for your own group. If you have more detailed knowledge of your group than Alice does for hers, use the longer form.
+Try taking the Self-Assessment for your own group. If you have more detailed knowledge of your group than Mara does for hers, use the longer form.
 
 Go to [devopsassessment.net](https://devopsassessment.net?azure-portal=true) to start your assessment.
 
