@@ -1,3 +1,7 @@
+<!--
+    I think this should be moved to the end of the module, even after the summary, except for the info about unit tests. That could go to 4-add-unit-tests. The other info isn't very useful at this point since they don't do anything with it. No one will remember it. Also, I don't think we should say much. There must be docs that already explain all this so, if possible, we should link to them.
+-->
+
 **TODO**: This unit needs a title. But let's settle on what it talks about and then set a title to match.
 
 Here, we survey the various kinds of testing and what test frameworks are available to you.

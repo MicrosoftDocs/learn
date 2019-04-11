@@ -1,21 +1,20 @@
-In the previous module, you set up a dashboard so that you can monitor pull requests and visualize the health of your builds.
+Andy and Amara are excited to show the progress they've made to Amita. They've already set up a dashboard so they can monitor pull requests and visualize the health of their builds. 
 
-Here, you'll add a widget to the dashboard to monitor the tests.
+Amita takes a look and she's excited.
 
-Talk track:
+Amita: This is great progress. Thank you! Not to sound ungrateful, but is there any way I can just see a brief overview of the test results over time?
 
-* Cool, we have a passing unit test that's run in the pipeline whenever changes are made.
-* Mara maybe shows Andy and then they both show Amita.
-* Amita: That's certainly cool! I bet that will certainly help us all. But is there a way I can just see a brief overview of test results over time?
-* Mara: Yes. Azure DevOps lets you set up dashboards that you can add widgets to. Dashboards can help the team and other teams see things like build health and tests result trends over time.
+Mara: Yes! Azure DevOps lets you add widgets your dashboards. It only takes a few minutes. Let me show you both.
 
-TODO: Knowledge needed: 
+TODO: Knowledge needed: <!-- Why do we need to know about Marketplace? It doesn't show up in the docs or the procedures.
+-->
+
   * What is the Marketplace? 
   * Mention that many add-ons are free, but some still require an evaluation or license key?
 
 ## Add a widget to the dashboard
 
-1. From Azure DevOps, select **Overview** and then **Dashboards**.
+1. From your Azure DevOps project, select **Overview** and then **Dashboards**.
 1. Click **Add a widget**.
 1. From the **Add Widget** pane, search for **Test Results Trend**.
 1. Drag **Test Results Trend** to the canvas.

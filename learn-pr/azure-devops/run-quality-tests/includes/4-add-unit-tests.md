@@ -1,17 +1,14 @@
-Talk track:
+Andy is going to work with Mara and add unit tests to the automated build that Mara created with Azure Pipelines. Regressions bugs are creeping into their code and breaking the leaderboard's filtering funtionality. Specifically, the wrong game mode keeps appearing. Here's the problem.
 
-* Amita mentioned an increased workload and some pain she's been seeing with recent builds.
-  * Recall that the leaderboard keeps breaking.
-  * Specifically, the filtering functionality wasn't working correctly. The wrong game mode would show.
-  * (Do we need a screenshot that demonstrates this? I can brew one up. In fact, I think we do need it. Here it is. Notice that although Milky Way is selected, the results contain Andromeda.)
-      ![The leaderboard showing incorrect results](../media/4-leaderboard-bug.png)
-* Mara wants to help. Although Mara and Andy think they fixed the bug, Mara wants to make sure it stays that way.
-* The web application uses a document database to store high scores and player profiles.
-* The app currently uses local test data. They later plan to connect the app to a real database.
-* She decides that unit tests are a good way to verify the leaderboard functionality.
-* There are a number of unit test frameworks available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
+![The leaderboard showing incorrect results](../media/4-leaderboard-bug.png)
 
-The unit test framework you choose largely depends on what programming language you use. We won't go into complete detail, but here's the unit test you'll work with.
+Both Andy and Mara want to catch the error before it reaches Amita, the tester. Unit tests are a great way to automatically test for regression bugs. 
+
+Andy also thinks that adding the unit tests now will give them a head start as they improve the _Space Game_ web app. The application uses a document database to store high scores and player profiles. Right now, it uses local test data. Later, they plan to connect the app to a live database. 
+
+There are a number of unit test frameworks available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
+
+Here's the unit test you'll work with, along with Mara and Andy.
 
 ```csharp
 [TestCase("Milky Way")]
@@ -42,7 +39,7 @@ public void ReturnRequestedGameMode(string gameMode)
 }
 ```
 
-Recall that you can filter the leaderboard by any combination of game type and game map.
+You can filter the leaderboard by any combination of game type and game map.
 
 This test queries the leaderboard for high scores and verifies that each result matches the provided game mode.
 
@@ -69,14 +66,6 @@ Assert.That(scores, Is.All.Matches<Score>(score => score.GameMode == gameMode));
 You might read this line as:
 
 > Assert that the game mode of each returned score matches the provided game mode.
-
------
-
-OLD COPY. MAY OR MAY NOT BE USEFUL.
-
-In this part, Mara adds unit tests to the _Space Game_ web application. Mara chooses NUnit, a popular open-source unit testing framework for .NET. In this part, you'll follow along.
-
-In practice, the unit test framework you choose depends on the programming language your library or application is written in. So for learning purposes, here you'll use unit tests we provide for you.
 
 Here's the process you'll follow.
 
@@ -272,7 +261,7 @@ Here, you'll repeat a similar process to run the unit tests tests and collect th
         testResultsFiles: '**/*.trx'
     ```
 
-    The first task calls the tasks you just defined in **templates/test.yml**. Here, we run the tests only using the Debug build configuration. But you could also call the template a second time using the Release configuration.
+    The first task calls the tasks you just defined in **templates/test.yml**. Here, we run the tests only using the Debug build configuration. You could also call the template a second time using the Release configuration.
 
     The second task uses the `PublishTestResults@2` build task to publish the test results to the pipeline. Similar to the `PublishBuildArtifacts@1` build task you used earlier, this task copies all .trx files from the build server to the pipeline so you can access them later. You'll see how to understand and analyze test results in just a bit.
 
@@ -290,7 +279,7 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
 
 ## Watch Azure Pipelines run the tests
 
-Here you'll see the tests run in the pipeline and then visualize the results from Azure Test Plans.
+Here you'll see the tests run in the pipeline and then visualize the results from Azure Test Plans. Azure Test Plan provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests and collect feedback from users. 
 
 <!-- TODO: We really haven't talked about Azure Test Plans yet. Add it to the knowledge unit? -->
 
@@ -316,4 +305,4 @@ Here you'll see the tests run in the pipeline and then visualize the results fro
 <!-- TODO: When/if do we create a PR and merge the `unit-tests` branch? -->
 <!-- TODO: Later: I think we should do this now so the learner can git checkout -b from master -->
 
-TODO: Perhaps mention that although we only have one test, it's better than nothing. Mara's team now has a place to put them and a way to run them. They can add more in the future.
+Although Mara and Andy have only added one test, it's a good start and fixes the immediate problem. Now, the team has now has a place to add more tests and run them as the improve their process.

@@ -1,10 +1,12 @@
-Talk track:
+Amita leaves, feeling much better. She's seeing actual progress in catching bugs and quickly seeing test results and it hasn't taken long for Andy and Mara to implement the improvements. Andy and Mara decide to talk a bit more about testing.
 
-* Amita leaves, and Andy and Mara talk more about testing.
-* Andy: I like the idea of unit testing, but how do we know when we're done? How do we know if we're covering everything?
-* Mara: We don't have to cover everything right away, but we can add in _code coverage_ testing to see what percentage of our code has unit tests.
-* Andy: That's cool. Sounds like we can establish a baseline and improve over time?
-* Mara: That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help us reduce technical debt (TODO: we can explain why) and it helps keeps us honest. But for now, we just want to see how much is covered.
+Andy: I like the idea of unit testing, but how do we know when we're done? How do we know if we're covering everything?
+
+Mara: We don't have to cover everything right away, but we can add in _code coverage_ testing to see what percentage of our code has unit tests.
+
+Andy: That's cool. Sounds like we can establish a baseline and improve over time?
+
+Mara: That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help us reduce technical debt (TODO: we can explain why) and it helps keeps us honest. But for now, we just want to see how much is covered.
 
 -----
 
@@ -20,7 +22,7 @@ Reviewing the code coverage result helps to identify code path(s) that are not c
 
 Much like unit testing, the tool you use depends on the programming language and application framework you use.
 
-When targeting .NET Core applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. TODO: Perhaps say a bit more.
+When targeting .NET Core applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross platform code coverage library for .NET Core.
 
 -----
 
