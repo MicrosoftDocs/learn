@@ -14,10 +14,10 @@ summary: Introduction to Azure Machine Learning service
 abstract: | 
   In this module, you will:
   - Learn the difference between Azure Machine Learning Studio and Azure Machine Learning service
-  - Understand how Azure Machine Learning service fits into the data science process
+  - See how Azure Machine Learning service fits into the data science process
   - Learn the concepts related to an Azure Machine Learning service experiment
-  - Understand the Azure Machine Learning service pipeline
-  - Train a model using Azure Machine Learning service 
+  - Explore the Azure Machine Learning service pipeline
+  - Train a model using Azure Machine Learning service
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/intro-to-azure-machine-learning-service-badge.svg
 levels:

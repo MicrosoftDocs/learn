@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.0-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Azure Functions and Twilio
+  ms.date: 03/13/2019
+  #TODO: Update with real author name.
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/0-introduction.md)]
