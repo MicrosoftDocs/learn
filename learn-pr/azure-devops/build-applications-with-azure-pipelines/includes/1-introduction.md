@@ -4,7 +4,6 @@ But she isn't giving up. She remembers that she and Andy made a list of problems
 
 ![Backlog of tasks](../media/1-all-tasks-board.png)
 
-
 She also remembers that they picked three of the problems to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
 
 <!--insert image of 3 work items again?-->
@@ -13,20 +12,32 @@ Mara decides to take an initial pass on the biggest issue, **Stabilize the build
 
 ## Prerequisites
 
-To complete this module, you need to install development tools and create a few accounts. These are tasks you only need to perform once.
+If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) account, we highly recommend you go through the [Design a DevOps practice](https://docs.microsoft.com/learn/paths/design-a-devops-practice?azure-portal=true) learning path before continuing this module. 
 
-The software and accounts you set up now will prepare you to complete this and future modules as well as apply what you learned to your own projects.
+You'll also need the following set up for software development on your Windows, macOS, or Linux system.
 
-You can set up everything shown here on a Windows, macOS, or Linux system.
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
 
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
-- [Git](https://git-scm.com/downloads?azure-portal=true)
-- A [GitHub account](https://github.com/join?azure-portal=true)
-- An [Azure DevOps account](https://dev.azure.com?azure-portal=true)
+This setup prepares you for this and future modules. You can also use them to apply your new skills to your own projects.
 
-If you don't already have an Azure DevOps account, we highly recommend you go through the [Design a DevOps practice](https://docs.microsoft.com/learn/paths/design-a-devops-practice?azure-portal=true) learning path before continuing this module. There, you'll:
+<!-- TODOs for next iteration:
+- All tasks - set displayName
+- DotNetCoreCLI@2 - set nobuild: true instead of --no-build
+- Add in DotNetCoreInstaller@0
+- unit-tests: `dotnet add package coverlet.msbuild`
+- Show Summary tab after first build
+- Investigate how to disable Merge button in GitHub until build finishes (and succeeds)
+- I think we need a boilerplate Note box that says something to the effect:
+  - We're using a .NET Core application written in C# for learning purposes.
+  - You don't need to be an expert in .NET or C# to complete this module.
+  - You can apply the patterns you see to your own projects using your favorite programming languages and frameworks.
+-->
 
-* Examine your existing processes
-* Identify the key benefits of DevOps
-* Sign up for your free Azure DevOps account
+<!-- For the next module (adding the note here), we should lock down the Merge button until the build succeeds.
+References:
+- https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops
+- start creating ref/ branches for the final work the user does
+-->

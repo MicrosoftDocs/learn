@@ -50,8 +50,7 @@ After she runs the script, Mara realizes that it's incomplete. For example, it d
 
 ## Map script commands to Azure Pipelines tasks
 
-Next, Mara is going to map the existing script commands to Azure Pipelines tasks. To define a build, she uses Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipeline tasks she she'll use to replace the existing script commands. For example,   
-the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?view=azure-devops&azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
+Next, Mara is going to map the existing script commands to Azure Pipelines tasks. To define a build, she uses Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipeline tasks she she'll use to replace the existing script commands. For example, the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?view=azure-devops&azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
 
 This table associates the script commands with the new Azure Pipelines tasks. 
 

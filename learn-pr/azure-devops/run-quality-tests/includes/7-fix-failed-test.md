@@ -155,6 +155,10 @@ You notice that the errors are off by one.
 
 You look at the source code for the (document DB class), the method being tested, and you notice this.
 
+<!-- TODO: Reference the upstream repo instead and code highlight the `pageSize - 1` line. 
+https://review.docs.microsoft.com/en-us/help/contribute/code-in-docs?branch=master#in-repo-snippet-references
+-->
+
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
     Expression<Func<T, bool>> queryPredicate,

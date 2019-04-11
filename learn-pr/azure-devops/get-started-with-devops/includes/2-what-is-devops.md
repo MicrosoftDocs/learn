@@ -49,6 +49,8 @@ Mara: I know what you mean about management. I put together this handout about t
 
 ## The DevOps handout
 
+<!-- TODO: Consider creating an image that shows the handout. -->
+
 Here's the handout that Mara prepared.
 
 DevOps Research and Assessment LLC ([DORA](https://devops-research.com/)) published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today. 
