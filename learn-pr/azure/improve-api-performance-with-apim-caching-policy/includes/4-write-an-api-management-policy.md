@@ -11,7 +11,7 @@
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
 Many firms need to optimize access to and serving of Web pages. Caching enables you to serve an already constructed page or response without having to create it again.
 
-As the developer at a Board Game company you need to investigate the various types of tags and attributes that can be used in a caching policy at caching 
+As the developer at a Board Game company you need to investigate the various types of tags and attributes that can be used in a caching policy. 
  
 ## Write a caching policy
 
