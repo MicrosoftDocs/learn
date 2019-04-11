@@ -64,7 +64,7 @@ Mara: Will do!
 * They don't have an existing CI system, and Azure Pipelines seems to provide everything they need.
 * Of particular interest is that it comes with free build agents, including Ubuntu, which is what they currently use. This makes it easy for Alice to get started and build a proof of concept (and possibly use in production!)
 
-Carol seems to buy into the idea, and wishes Alice luck. Carol can't wait to see what Alice finds.)
+Amita seems to buy into the idea, and wishes Alice luck. Amita can't wait to see what Alice finds.)
 
 ## How does Azure Pipelines work?
 

@@ -1,9 +1,9 @@
 Talk track:
 
-* Carol leaves, and Bob and Alice talk more about testing.
-* Bob: I like the idea of unit testing, but how do we know when we're done? How do we know if we're covering everything?
+* Amita leaves, and Andy and Alice talk more about testing.
+* Andy: I like the idea of unit testing, but how do we know when we're done? How do we know if we're covering everything?
 * Alice: We don't have to cover everything right away, but we can add in _code coverage_ testing to see what percentage of our code has unit tests.
-* Bob: That's cool. Sounds like we can establish a baseline and improve over time?
+* Andy: That's cool. Sounds like we can establish a baseline and improve over time?
 * Alice: That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help us reduce technical debt (TODO: we can explain why) and it helps keeps us honest. But for now, we just want to see how much is covered.
 
 -----

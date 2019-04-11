@@ -5,8 +5,8 @@ Here, you'll add a widget to the dashboard to monitor the tests.
 Talk track:
 
 * Cool, we have a passing unit test that's run in the pipeline whenever changes are made.
-* Alice maybe shows Bob and then they both show Carol.
-* Carol: That's certainly cool! I bet that will certainly help us all. But is there a way I can just see a brief overview of test results over time?
+* Alice maybe shows Andy and then they both show Amita.
+* Amita: That's certainly cool! I bet that will certainly help us all. But is there a way I can just see a brief overview of test results over time?
 * Alice: Yes. Azure DevOps lets you set up dashboards that you can add widgets to. Dashboards can help the team and other teams see things like build health and tests result trends over time.
 
 TODO: Knowledge needed: 

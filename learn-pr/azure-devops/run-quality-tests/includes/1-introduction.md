@@ -19,23 +19,23 @@ Here, you'll learn how to set up automated testing to help ensure that your late
 (Here a talk track. First read through the entire module and then find the right places for each part)
 
 * The team's been working on the _Space Game_ web site.
-* Carol (from QA) asks Bob (dev lead) and Alice (our hero) to sit down for a chat.
-* Carol is being asked to help test some new game titles coming up. (This is in addition to testing the immediate team's web sites.)
-* Carol is a bit stressed because she has some added responsibilities now. Plus, she's been reporting the same kinds of errors with the _Space Game_ web site over and over lately, and she's getting tired of it.
+* Amita (from QA) asks Andy (dev lead) and Alice (our hero) to sit down for a chat.
+* Amita is being asked to help test some new game titles coming up. (This is in addition to testing the immediate team's web sites.)
+* Amita is a bit stressed because she has some added responsibilities now. Plus, she's been reporting the same kinds of errors with the _Space Game_ web site over and over lately, and she's getting tired of it.
   * The errors are with the leaderboard functionality. She's been finding that the filtering feature keeps breaking.
-  * Basically, these are regression bugs. As Bob and Alice add features, existing behavior keeps breaking.
-  * Carol: (complains a bit about her added workload) "And to make matters worse, the leaderboard keeps breaking. Is there anything we can do to help stabilize this feature?"
+  * Basically, these are regression bugs. As Andy and Alice add features, existing behavior keeps breaking.
+  * Amita: (complains a bit about her added workload) "And to make matters worse, the leaderboard keeps breaking. Is there anything we can do to help stabilize this feature?"
   * Alice: "Perhaps we need to start adding unit tests to our projects."
-  * Bob: "We tried that a while ago. But we had trouble keeping the tests up to date, so we gave up. I think that's partly because when the tests fail on the build server, there was no way to know about it. Plus, we're often in too much of a hurry to worry about failing tests - and there was nothing in place to keep us honest."
-  * Alice: "Bob and I have been working on setting up automated build using Azure Pipelines."
-  * Carol: "Oh yeah, you mentioned you were going to do that. I'm surprised you made progress already! But how does that help us with testing?"
-  * Alice: "You can add unit tests that run automatically when the build runs. If any of the tests fail, the entire build fails. That should help keep us honest, right Bob?"
-  * Bob: "Won't this delay Carol in getting new builds?"
+  * Andy: "We tried that a while ago. But we had trouble keeping the tests up to date, so we gave up. I think that's partly because when the tests fail on the build server, there was no way to know about it. Plus, we're often in too much of a hurry to worry about failing tests - and there was nothing in place to keep us honest."
+  * Alice: "Andy and I have been working on setting up automated build using Azure Pipelines."
+  * Amita: "Oh yeah, you mentioned you were going to do that. I'm surprised you made progress already! But how does that help us with testing?"
+  * Alice: "You can add unit tests that run automatically when the build runs. If any of the tests fail, the entire build fails. That should help keep us honest, right Andy?"
+  * Andy: "Won't this delay Amita in getting new builds?"
   * Alice: "Unit tests are meant to run fast. They're not like other kinds of tests that can take hours to run. Running them shouldn't add more than a couple minutes to the overall process. Plus, there are other kinds of tests we can run as well, such as lint and code coverage tests."
-  * Carol: "I'd take anything to make my life a bit easier. But won't all this automated testing replace my job?"
+  * Amita: "I'd take anything to make my life a bit easier. But won't all this automated testing replace my job?"
   * Alice: "There will still be plenty of opportunity for you to manually test things before we ship. This is just one piece of the puzzle. Plus, it sounds like you have a lot of game testing to do that can _only_ be done manually."
-  * Bob: "Plus, it's our job to make sure we're handing off quality code as best we can. I say we at least try it."
-  * Carol: "Great! I look forward to checking out the next build. We'll see if it helps stabilize things any better."
+  * Andy: "Plus, it's our job to make sure we're handing off quality code as best we can. I say we at least try it."
+  * Amita: "Great! I look forward to checking out the next build. We'll see if it helps stabilize things any better."
 
 In this module, you will:
 

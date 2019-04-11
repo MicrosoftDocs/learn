@@ -1,11 +1,11 @@
 Talk track:
 
-* Carol mentioned an increased workload and some pain she's been seeing with recent builds.
+* Amita mentioned an increased workload and some pain she's been seeing with recent builds.
   * Recall that the leaderboard keeps breaking.
   * Specifically, the filtering functionality wasn't working correctly. The wrong game mode would show.
   * (Do we need a screenshot that demonstrates this? I can brew one up. In fact, I think we do need it. Here it is. Notice that although Milky Way is selected, the results contain Andromeda.)
       ![The leaderboard showing incorrect results](../media/4-leaderboard-bug.png)
-* Alice wants to help. Although Alice and Bob think they fixed the bug, Alice wants to make sure it stays that way.
+* Alice wants to help. Although Alice and Andy think they fixed the bug, Alice wants to make sure it stays that way.
 * The web application uses a document database to store high scores and player profiles.
 * The app currently uses local test data. They later plan to connect the app to a real database.
 * She decides that unit tests are a good way to verify the leaderboard functionality.
