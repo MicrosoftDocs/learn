@@ -68,7 +68,7 @@ quiz:
     - content: 'In Global scope cache-lookup in inbound and cache-store in outbound' 
       isCorrect: false
       explanation: 'Global scope applies to all APIs'
-    - content: 'In operation scope cache-lookup in inbound and cache-store in outbound'
+    - content: 'In API scope cache-lookup in inbound and cache-store in outbound'
       isCorrect: false
       explanation: 'API Scope applies to all operations in an individual API not an individual operation'
     - content: 'In Product Scope.'
