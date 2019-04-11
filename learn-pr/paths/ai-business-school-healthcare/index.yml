@@ -2,7 +2,7 @@
 uid: learn.ai-business-school-healthcare
 metadata:
   title: AI business school for healthcare
-  description: Learners will be able to - Describe how AI is going to play a role within industries and businesses, discuss examples of successful AI implementation across Microsoft and other global businesses, identify key technologies that enable AI, articulate the ethical and cultural considerations of AI for employees and employers, describe how the leading-edge work that Microsoft is engaged in regarding privacy, security, and transparency of data that enables AI applies to my business or my customer’s business
+  description: Decision-makers in healthcare have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. This learning path is designed for healthcare industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
   brand: azure
   ms.date: 04/26/2019
   author: barlanmsft
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: AI business school for healthcare
-summary: Learners will be able to - Describe how AI is going to play a role within industries and businesses, discuss examples of successful AI implementation across Microsoft and other global businesses, identify key technologies that enable AI, articulate the ethical and cultural considerations of AI for employees and employers, describe how the leading-edge work that Microsoft is engaged in regarding privacy, security, and transparency of data that enables AI applies to my business or my customer’s business
+summary: Decision-makers in healthcare have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. This learning path is designed for healthcare industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
 prerequisites: None
 iconUrl: /learn/achievements/ai-business-school-healthcare.svg
 levels:
