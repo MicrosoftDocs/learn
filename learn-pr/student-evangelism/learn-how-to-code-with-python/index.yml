@@ -18,7 +18,7 @@ abstract: |
   - Parse the data file and extract information from it 
 prerequisites: None
 # TODO update iconurl when we have a URL
-iconUrl: /learn/achievements/keep-your-virtual-machines-updated.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
