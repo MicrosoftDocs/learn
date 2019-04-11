@@ -87,41 +87,41 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
 
     1. Setup backend pool via the CLI
 
-    ``` azurecli
-    az network application-gateway address-pool create --resource-group rg-gw-shipping --gateway-name gw-shipping --name ap-backend --servers 10.0.1.1
-    ```
+        ``` azurecli
+        az network application-gateway address-pool create --resource-group rg-gw-shipping --gateway-name gw-shipping --name ap-backend --servers 10.0.1.1
+        ```
 
     1. Create self-signed SSL certificate using openssl to be used for the Application Gateway. This is for demonstration only, you should use a certificate from a trusted provider.
 
-    It will prompt you for some details to add to the SSL certificate, country code, company name etc, you can leave these blank.
+        It will prompt you for some details to add to the SSL certificate, country code, company name etc, you can leave these blank.
 
-    ``` azurecli
-    openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout shipping-ssl.key -out shipping-ssl.crt
-    ```
+        ``` azurecli
+        openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout shipping-ssl.key -out shipping-ssl.crt
+        ```
 
-    Run the following openssl command to export the certificate as pfx, it will prompt you for a password and to confirm  to export it. Choose whatever password you would like.
+        Run the following openssl command to export the certificate as pfx, it will prompt you for a password and to confirm  to export it. Choose whatever password you would like.
 
-    ``` azurecli
-    openssl pkcs12 -export -out shipping-ssl.pfx -inkey shipping-privatekey.key -in shipping-ssl.crt
-    ```
+        ``` azurecli
+        openssl pkcs12 -export -out shipping-ssl.pfx -inkey shipping-privatekey.key -in shipping-ssl.crt
+        ```
 
     1. Upload SSL certificate to be used by the Application Gateway
 
-    ``` azurecli
-    az network application-gateway ssl-cert create --resource-group rg-gw-shipping --gateway-name gw-shipping --name shipping-ssl-cert --cert-file shipping-ssl.pfx --cert-password <your password>
-    ```
+            ``` azurecli
+            az network application-gateway ssl-cert create --resource-group rg-gw-shipping --gateway-name gw-shipping --name shipping-ssl-cert --cert-file shipping-ssl.pfx --cert-password <your password>
+            ```
 
     1. Upload Authorization certificate
 
-    ``` azurecli
-    az network application-gateway auth-cert create --resource-group rg-gw-shipping --gateway-name gw-shipping --name shipping-auth-cert --cert-file shipping-ssl.crt
-    ```
+        ``` azurecli
+        az network application-gateway auth-cert create --resource-group rg-gw-shipping --gateway-name gw-shipping --name shipping-auth-cert --cert-file shipping-ssl.crt
+        ```
 
     1. Create HTTP settings via the CLI
-
-    ``` azurecli
-    az network application-gateway http-settings create --resource-group rg-gw-shipping --gateway-name gw-shipping --name https-settings --port 443 --protocol Https --auth-certs shipping-auth-cert
-    ```
+    
+        ``` azurecli
+        az network application-gateway http-settings create --resource-group rg-gw-shipping --gateway-name gw-shipping --name https-settings --port 443 --protocol Https --auth-certs shipping-auth-cert
+        ```
 
 1. **Configure Application Gateway listener for encryption**
 
@@ -138,25 +138,26 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
 
     1. Create a new frontend port (443) via the CLI
 
-    ``` azurecli
-    az network application-gateway frontend-port create --resource-group rg-gw-shipping --gateway-name gw-shipping --name https-port --port 443
-    ```
+        ``` azurecli
+        az network application-gateway frontend-port create --resource-group rg-gw-shipping --gateway-name gw-shipping --name https-port --port 443
+        ```
 
     1. Create the new Listener with via the CLI
 
-    ``` azurecli
-    az network application-gateway http-listener create --resource-group rg-gw-shipping --gateway-name gw-shipping --name httpslistener --frontend-port https-port --ssl-cert shipping-ssl-cert
-    ```
+        ``` azurecli
+        az network application-gateway http-listener create --resource-group rg-gw-shipping --gateway-name gw-shipping --name httpslistener --frontend-port https-port --ssl-cert shipping-ssl-cert
+        ```
 
     1. Test the Application Gateway  
 
     1. Find the fully qualified domain name of the Application Gateway IP address:
 
-    ```azurecli
-    az network public-ip show --resource-group rg-gw-shipping --name gw-shipping
-    ```
+        ```azurecli
+        az network public-ip show --resource-group rg-gw-shipping --name gw-shipping
+        ```
 
     1. Using a web browser, navigate to \<ip address returned above\>
+
     1. Verify that the web page appears and the connection is over https.
 
 1. **Summary**
