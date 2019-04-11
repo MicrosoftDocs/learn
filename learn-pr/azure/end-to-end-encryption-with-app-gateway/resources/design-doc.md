@@ -49,7 +49,7 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
 
     A retail organization has a new shipping portal they are publishing to allow vendors to ship customer items and track status. This exposes business and customer data, and needs to be encrypted between the user and the back end application to ensure this data is not exposed while transmitted over the network. They have implemented Application Gateway to load balance their traffic, and need to enable TLS encryption between the user and their servers.
 
-2. **Application Gateway and encryption**
+1. **Application Gateway and encryption**
 
     List the content that will enable the learner to *Explain the benefits of using Application Gateway to encrypt network traffic*:
 
@@ -64,14 +64,14 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
         - Backend pool
             - Public certificate to route traffic to the server
 
-3. **Knowledge check**
+   **Knowledge check**
 
-    What types of questions will test *learning objective*?
+    What types of questions will test *Explain the benefits of using Application Gateway to encrypt network traffic*?
 
     - What are the benefits of using an Application Gateway?
     - What is needed to configure an Application Gateway?
 
-4. **Configure backend pools for encryption**
+1. **Configure backend pools for encryption**
 
     - Explain what the backend pool is used for
         - Collection of servers/IP addresses
@@ -79,7 +79,7 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
         - Used to re-encrypt the traffic to send back to the server from the Application Gateway
         - Needs public SSL certificate
 
-5. **Exercise - Configure backend pools for encryption**
+1. **Exercise - Configure backend pools for encryption**
 
     List the steps which apply the learning content from previous unit:
 
@@ -123,7 +123,7 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
     az network application-gateway http-settings create --resource-group rg-gw-shipping --gateway-name gw-shipping --name https-settings --port 443 --protocol Https --auth-certs shipping-auth-cert
     ```
 
-6. **Configure Application Gateway listener for encryption**
+1. **Configure Application Gateway listener for encryption**
 
     - Explain what the listener is for
         - Listens to a Frontend IP configuration for a configured port
@@ -132,7 +132,7 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
         - Frontend port (443)
         - Uploaded SSL certificate
 
-7. **Exercise - Configure Application Gateway listener for encryption**
+1. **Exercise - Configure Application Gateway listener for encryption**
 
     List the steps which apply the learning content from previous unit:
 
@@ -159,7 +159,7 @@ Identify the subtasks of *Encrypt network traffic end-to-end with Azure Applicat
     1. Using a web browser, navigate to \<ip address returned above\>
     1. Verify that the web page appears and the connection is over https.
 
-8. **Summary**
+1. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
     - Explained benefits of Application Gateway
