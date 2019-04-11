@@ -20,7 +20,14 @@ But this dual focus on online services and improving customer experience creates
 
 ## Challenge
 
+:::row:::
+  :::column span="2":::
 As businesses and customers rapidly digitize, cybercrime is becoming more and more of a threat. Estimates of the scale of the issue vary, but all experts agree on one thing: that it’s big (the annual cost of cybercrime was estimated at $400 billion USD in 2014)<sup>2</sup> and that it’s getting bigger. One survey found that 10 percent of people over the age of 16 had been the victims of identity theft, with 85 percent experiencing fraudulent account use, and about 12 percent suffering personal monetary loss.<sup>3</sup>
+  :::column-end:::
+  :::column span="1":::
+    ![Image representing Azure containers](../media/1.jpg)
+  :::column-end:::
+:::row-end:::
 
 As the scale and cost of cybercrimes have increased, so have the efforts of businesses to protect their customers. User authentication methods such as two-factor authentication are common and offer increased security.
 
