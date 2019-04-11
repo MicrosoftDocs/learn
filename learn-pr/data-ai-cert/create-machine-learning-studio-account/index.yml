@@ -28,7 +28,6 @@ roles:
 products:
 - azure
 - azure-machine-learning-studio
-- azure-machine-learning-service
 units:
 - learn.data-ai.create-machine-learning-studio-account.introduction
 - learn.data-ai.create-machine-learning-studio-account.an-overview-of-machine-learning

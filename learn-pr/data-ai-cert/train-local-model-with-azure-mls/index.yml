@@ -27,6 +27,7 @@ roles:
 - data-scientist
 products:
 - azure
+- azure-machine-learning-service
 units:
 - learn.data-ai.train-local-model-with-azure-mls.introduction
 - learn.data-ai.train-local-model-with-azure-mls.simple-log-regression-model

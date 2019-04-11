@@ -22,7 +22,6 @@ roles:
 products:
 - azure
 - azure-portal
-- azure-machine-learning-service
 - azure-machine-learning-studio
 modules:
 - learn.data-ai.create-machine-learning-studio-account

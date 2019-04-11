@@ -25,6 +25,7 @@ roles:
 - data-scientist
 products:
 - azure
+- azure-machine-learning-service
 units:
 - learn.data-ai.automate-model-selection-with-azure-automl.introduction
 - learn.data-ai.automate-model-selection-with-azure-automl.understand-ml-pipeline
