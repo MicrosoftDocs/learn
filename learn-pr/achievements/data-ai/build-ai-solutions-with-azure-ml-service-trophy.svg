@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="118px" viewBox="0 0 100 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Explore Azure Machine Learning Services/explore-azure-machine-learning-services</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M42.7425,1.49663266 C44.3745,0.498877554 46.1865,0 48,0 C49.8135,0 51.627,0.498877554 53.256,1.49663266 L90.591,24.3316189 C93.933,26.3773408 96,30.2031485 96,34.3529027 L96,79.6470973 C96,83.7952317 93.933,87.6242789 90.591,89.6683811 L53.256,112.504987 C51.627,113.501122 49.8135,114 48,114 C46.1865,114 44.3745,113.501122 42.7425,112.504987 L5.409,89.6683811 C2.0655,87.6242789 0,83.7952317 0,79.6470973 L0,34.3529027 C0,30.2031485 2.0655,26.3773408 5.409,24.3316189 L42.7425,1.49663266 Z" id="path-1"></path>
+        <path d="M6.06595626,68.0242569 C6.14397551,67.9683253 7.0904848,59.509725 6.06926227,47.067238 C5.81374155,43.9531543 4.86822887,40.9472586 3.51061375,38.1369667 C1.96630504,34.9397946 0.000430169556,28.9236756 1.11801068,20.3205649 C1.11801068,20.3205649 2.11256269,3.69942417 15.9012176,1.19984833 C22.1532509,0.0668864794 27.5052074,-0.00645660117 31.9570872,0.97981909 L31.9570877,0.97981699 C34.9989359,1.65371231 37.8137826,3.10561757 40.1262868,5.19351119 C44.6549496,9.28231084 47.2217479,13.03333 47.8266814,16.4465685 C48.253678,18.8558269 48.3779772,21.113669 48.1995788,23.2200947 L48.1995795,23.2200948 C47.9377292,26.3118733 48.4795522,29.4188405 49.7724678,32.2394839 L52.4854443,38.1581526 C52.8156334,38.8784979 52.4993493,39.7301244 51.7790039,40.0603135 C51.5914197,40.1462976 51.3874956,40.190808 51.1811436,40.190808 L49.871818,40.1908091 C49.3521881,40.1908091 48.9191438,40.5887907 48.8753732,41.1065738 C48.5397707,45.0765714 47.8362149,48.1016529 46.7647059,50.1818182 C45.8814885,51.896445 42.9402622,52.9110509 37.9410271,53.2256357 L37.9410275,53.2256429 C35.3311679,53.3898724 33.2886838,55.537411 33.2554499,58.1522216 C33.2250082,60.5473499 33.085722,63.8324573 32.8375912,68.0075437 L6.06595626,68.0242569 Z" id="path-3"></path>
+        <filter x="-1.9%" y="-1.5%" width="103.9%" height="105.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.102383379 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M13.9655172,13.6964286 C10.2336207,13.6964286 7.24137931,10.6284286 7.24137931,6.84821429 C7.24137931,3.06457589 10.2336207,0 13.9655172,0 C17.6974138,0 20.6896552,3.06457589 20.6896552,6.84821429 C20.6896552,10.6284286 17.6974138,13.6964286 13.9655172,13.6964286 Z" id="path-5"></path>
+        <filter x="-14.9%" y="-14.6%" width="129.7%" height="143.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M30,18.9642857 C30,21.2905714 28.1586207,23.1785714 25.862069,23.1785714 C23.5655172,23.1785714 21.7241379,21.2905714 21.7241379,18.9642857 C21.7241379,16.6358929 23.5655172,14.75 25.862069,14.75 C28.1586207,14.75 30,16.6358929 30,18.9642857" id="path-7"></path>
+        <filter x="-24.2%" y="-23.7%" width="148.3%" height="171.2%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M8.27586207,22.125 C8.27586207,24.4512857 6.43448276,26.3392857 4.13793103,26.3392857 C1.84137931,26.3392857 0,24.4512857 0,22.125 C0,19.7966071 1.84137931,17.9107143 4.13793103,17.9107143 C6.43448276,17.9107143 8.27586207,19.7966071 8.27586207,22.125" id="path-9"></path>
+        <filter x="-24.2%" y="-23.7%" width="148.3%" height="171.2%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M13.4482759,33.7142857 L23.6136901,33.7142857 C24.7182596,33.7142857 25.6136901,32.8188552 25.6136901,31.7142857 L25.6136901,22.125" id="path-11"></path>
+        <filter x="-16.4%" y="-8.6%" width="132.9%" height="143.1%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M13.5977007,46.1165911 L6.13793103,46.1165911 C5.03336153,46.1165911 4.13793103,45.2211606 4.13793103,44.1165911 L4.13793103,26.3392857" id="path-13"></path>
+        <filter x="-21.1%" y="-5.1%" width="142.3%" height="125.3%" filterUnits="objectBoundingBox" id="filter-14">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Explore-Azure-Machine-Learning-Services" transform="translate(-50.000000, -50.000000)">
+            <g id="Explore-Azure-Machine-Learning-Services/explore-azure-machine-learning-services" transform="translate(50.000000, 50.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Trophy-1" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Head" mask="url(#mask-2)">
+                        <g transform="translate(23.000000, 22.000000)" id="Fill-3787">
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#F65B23" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Circutry" mask="url(#mask-2)">
+                        <g transform="translate(33.000000, 31.000000)">
+                            <g id="Fill-1164" stroke="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use stroke="#182A37" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                            <path d="M13.9655172,9.48214286 C12.5301724,9.48214286 11.3793103,8.30214286 11.3793103,6.84821429 C11.3793103,5.39296875 12.5301724,4.21428571 13.9655172,4.21428571 C15.4008621,4.21428571 16.5517241,5.39296875 16.5517241,6.84821429 C16.5517241,8.30214286 15.4008621,9.48214286 13.9655172,9.48214286 Z" id="Fill-1164" stroke="#182A37" stroke-width="2"></path>
+                            <g id="Fill-1164" stroke="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                <use stroke="#182A37" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                            </g>
+                            <g id="Fill-1164" stroke="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                <use stroke="#182A37" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            </g>
+                            <path d="M-9.37561576,36.5088264 L35.9279557,36.1410099" id="Path-2" stroke="#182A37" stroke-width="2" fill-rule="nonzero" transform="translate(13.517241, 36.589286) rotate(-270.000000) translate(-13.517241, -36.589286) "></path>
+                            <g id="Path-66" stroke="none" fill-rule="nonzero">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                                <use stroke="#182A37" stroke-width="2" xlink:href="#path-11"></use>
+                            </g>
+                            <g id="Path-107" stroke="none" fill-rule="nonzero">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                                <use stroke="#182A37" stroke-width="2" xlink:href="#path-13"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Hex-Border" stroke="#0078D4" stroke-width="4">
+                    <path d="M45.5620146,3.25834407 L6.67338401,26.8942953 C3.79673288,28.6432593 2,31.9508238 2,35.5582677 L2,82.4417323 C2,86.0486597 3.79764663,89.3586805 6.67318764,91.1055853 L45.560618,114.742485 C46.9289662,115.572418 48.4546283,116 50,116 C51.5458817,116 53.0723633,115.572188 54.4362178,114.743457 L93.3268764,91.1055464 C96.2016145,89.3583456 98,86.0476286 98,82.4417323 L98,35.5582677 C98,31.9518547 96.202529,28.6435953 93.3268966,26.8944659 L54.4351916,3.25759524 C53.0721095,2.42798656 51.5462432,2 50,2 C48.4543284,2 46.9293388,2.42772325 45.5620146,3.25834407 Z M45.5620146,3.25834407 C45.5619597,3.25837737 45.5619049,3.25841067 45.5618501,3.25844398 L45.5621963,3.25823359 L45.5620146,3.25834407 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

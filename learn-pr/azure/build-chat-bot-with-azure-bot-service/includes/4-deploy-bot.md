@@ -1,54 +1,77 @@
-When you created an Azure web app bot, an Azure web app was deployed to host it. But the bot does require some code, and it still needs to be deployed to the Azure web app. Fortunately, the code was generated for you by the Azure Bot Service. In this unit, you will use Visual Studio Code to place the code in a local Git repository and publish the bot to Azure by pushing changes from the local repository to a remote repository connected to the Azure web app that hosts the bot — a process known as [continuous integration](https://wikipedia.org/wiki/Continuous_integration).
+When you created an Azure web app bot, an Azure web app was deployed to host it. But the bot does require some code, and it still needs to be deployed to the Azure web app. Fortunately, the code was generated for you by the Azure Bot Service.
+
+In this unit, you'll use Visual Studio Code to place the code in a local Git repository and publish the bot to Azure by pushing changes from the local repository to a remote repository connected to the Azure web app that hosts the bot — a process known as [continuous integration](https://wikipedia.org/wiki/Continuous_integration).
+
+## Download the Web App Bot soure code
 
 1. Create a folder named "Factbot" in the location of your choice on your hard disk to hold the bot's source code.
 
-1. Return to the Azure portal in the VM browser and open the pre-created exercise resource group. Then, select the Web App Bot you created in the prior exercise.
+1. Return to the Azure portal in the browser and find the resource group created using the search box at the top, or the **Resource groups** section in the left-hand sidebar.
 
-1. Select **Build** in the menu on the left, then select **Download Bot source code** to prepare a zip file containing the bot's source code. Once the zip file is prepared, select the **Download Bot source code** button to download it. When the download is complete, extract the contents of the zip file to the "Factbot" folder that you created earlier.
+1. Locate and select the Web App Bot you created earlier.
 
-1. Back in the Web App Bot's Build blade in the Azure portal, select **Configure continuous deployment**.
+1. Select **Build** in the menu on the left, then select **Download Bot source code** to prepare a zip file containing the bot's source code.
 
-1. Select **Setup** at the top of the **Deployments** blade, followed by **Choose Source**.
+    ![Screenshot showing the Build > Download Bot source code steps in the Azure portal for the Web app bot](../media/4-download-sourcecode.png)
 
-1. Then, select **Local Git Repository** as the deployment source.
+1. The portal will take a few minutes to zip up the code and then it should download to your local computer. When the download is complete, extract the contents of the **.zip** file to the "Factbot" folder that you created on your local hard disk.
 
-1. Next, select **Setup connection** and enter a username and password. You will probably have to enter a user name other than "FactbotAdministrator" because the name must be unique within Azure. Then, select **OK** to return to the **Deployment option** blade and **OK** again to return to the **Deployments** blade.
+## Setup the bot Git repository using Deployment Center
+
+1. Return to the Azure portal in the browser.
+
+1. In the Web App Bot's Build blade in the Azure portal, select the **Publish updates automatically to Azure with Continuous Deployment** link under the **Publish** area in the main view.
+
+1. In the **Deployment Center** panel, select **Local Git** as the deployment source and click **Continue**.
+
+1. Select the **App Service Kudu build server** option and click **Continue**.
+
+1. Select **Deployment Credentials** from the menu area, and then **User Credentials** in the opened view.
+
+1. Enter a username and password (must be 10+ characters) and click **Save Credentials**.
 
     ![Screenshot of the Azure portal showing the new bot App Service blade displaying the Deployment credentials screen with the Deployment credentials menu item and Save button highlighted.](../media/4-portal-enter-ci-creds.png)
 
-1. While the deployment system is provisioning, close the **Deployments** blade, and select **All App service settings** in the menu on the left.
+1. Navigate back to the web app bot configuration and select **All App service settings** in the menu on the left. This will display the underlying web app your bot is hosted in.
+
+1. Note the **Git clone url** in the Overview pane. This URL is the cloud-based Git repository that Azure has created to manage the project.
+
+## Create a local Git repository
+
+We are going to use Visual Studio Code for this section which has an integrated Git experience, but you can create the Git repo using any other technique you prefer if you are familiar with the steps. If you don't have Visual Studio Code installed, you can download it for free from [here](https://code.visualstudio.com/).
 
 1. Start **Visual Studio Code**, and use the **File** > **Open Folder...** command to open the "Factbot" folder where you copied the bot's source code.
 
-1. Select the **Source Control** button in the activity bar on the left side of Visual Studio Code.
+1. Select the **Source Control** button in the activity bar on the left side of Visual Studio Code. You can hover over each button if the sidebar is collapsed.
 
-1. Select the **Initialize Repository** icon at the top.
+1. Select the **Initialize Repository** icon at the top (on the right side of the **SOURCE CONTROL** title).
+
+   ![Screenshot of Visual Studio Code with the Initialize Respository icon highlighted.](../media/4-vs-vode-init-repo.png)
 
 1. Select the **Initialize Repository** button in the dialog.
 
-1. Type "First commit." into the message box.
+1. Type "First commit." into the entry text box.
 
 1. Select the check mark to commit your changes, staging all the files when prompted.
 
-    > [!NOTE]
-    > If you get a Git error about not having your identity set in Git, launch a Command Prompt and run the following commands, replacing the placeholder email and name values if you wish. Then retry the commit button.
+    > [!TIP]
+    > If you get a Git error about not having your identity set in Git, launch a Command Prompt and run the following commands, replacing the placeholder email and name values. Then retry the commit button.
     >
     > ```bash
-    > git config --global user.email "Lab User"
-    > git config --global user.name "LabUser#######@learn"
+    > git config --global user.email "Your Email"
+    > git config --global user.name "Your name"
     > ```
 
-1. Select **Terminal** from Visual Studio Code's **View** menu to open an integrated terminal.
+1. Select **Integrated Terminal** from Visual Studio Code's **View** menu to open an integrated terminal.
 
-1. Execute the following command in the integrated terminal, replacing BOT_NAME in the following two places with the bot name you entered in Exercise 1.
-
-    > [!NOTE]
-    > The full Git remote URL can also be found in the App Service resource's **Overview** section under **Git clone url**.
+1. Execute the following command in the integrated terminal, replacing `{git-url}` in the following command with the Git clone URL you found in the Azure portal.
 
     ```bash
-    git remote add qna-factbot https://BOT_NAME.scm.azurewebsites.net:443/BOT_NAME.git
+    git remote add qna-factbot {git-url}
     ```
 
-1. Return to the **Source Control** panel and select the ellipsis (the three dots) at the top of the SOURCE CONTROL panel, and select **Publish Branch** from the menu to push the bot code from the local repository to Azure. If prompted for credentials, enter the username and password you specified previously in this exercise.
+1. Return to the **Source Control** section in Visual Studio Code and select the ellipsis (the three dots) at the top of the SOURCE CONTROL panel.
+
+1. Select **Publish Branch** from the menu to push the bot code from the local repository to Azure. If prompted for credentials, enter the username and password you setup in Deployment Center.
 
 Your bot has been published to Azure. But before you test it there, let's run it locally and learn how to debug it in Visual Studio Code.
