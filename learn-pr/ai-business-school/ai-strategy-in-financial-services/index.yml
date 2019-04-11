@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.ai-strategy-in-financial-services.introduction
 - learn-wwl.ai-strategy-in-financial-services.ai-value-in-financial-services-insead

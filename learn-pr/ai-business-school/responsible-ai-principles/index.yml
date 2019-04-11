@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.responsible-ai-guiding-principles.introduction
 - learn-wwl.responsible-ai-guiding-principles.implications-responsible-ai-leadership
