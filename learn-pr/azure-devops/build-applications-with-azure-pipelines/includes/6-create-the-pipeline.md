@@ -131,6 +131,11 @@ In practice, you might add build tasks one at at time, push up your changes, and
         - npm
 
     steps:
+    - task: DotNetCoreInstaller@0
+      displayName: 'Use .NET Core SDK 2.1.505'
+      inputs:
+        version: 2.1.505
+
     - task: Npm@1
       displayName: 'npm install'
       inputs:
@@ -158,6 +163,8 @@ In practice, you might add build tasks one at at time, push up your changes, and
         arguments: '--no-restore --configuration Release'
         projects: '**/*.csproj'
     ```
+
+    <!-- TODO: Talk about DotNetCoreInstaller - I just added it. We need it later. -->
 
     The `demands` section beneath `pool` specifies that we need npm, the Node.js package manager, installed on the build system.
 
@@ -220,6 +227,11 @@ In .NET Core, you can package your application as a .zip file. You can then use 
       buildConfiguration: 'Release'
 
     steps:
+    - task: DotNetCoreInstaller@0
+      displayName: 'Use .NET Core SDK 2.1.505'
+      inputs:
+        version: 2.1.505
+
     - task: Npm@1
       displayName: 'npm install'
       inputs:
@@ -305,6 +317,8 @@ variables:
   buildConfiguration: 'Release'
 ```
 
+<!-- TODO: Add variable for .NET version -->
+
 Use variables when you repeat the same value multiple times or when a value, such as a dependency version, might change.
 
 You don't need to create a variable for every piece of your build configuration. In fact, too many variables can make your pipeline code harder for others to read and understand.
@@ -327,8 +341,14 @@ Here you'll use variables to define these values one time, and then reference th
     variables:
       buildConfiguration: 'Release'
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+      dotnetSdkVersion: '2.1.505'
 
     steps:
+    - task: DotNetCoreInstaller@0
+      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+      inputs:
+        version: '$(dotnetSdkVersion)'
+
     - task: Npm@1
       displayName: 'npm install'
       inputs:
