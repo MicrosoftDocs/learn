@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.end-to-end-encryption-with-app-gateway.2-application-gateway-and-encryption
+metadata:
+  title: Application Gateway and encryption
+  description: Application gateway and encryption
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Application Gateway and encryption
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-application-gateway-and-encryption.md)]
