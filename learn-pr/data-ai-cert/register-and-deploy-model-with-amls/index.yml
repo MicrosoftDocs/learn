@@ -30,6 +30,7 @@ roles:
 - data-scientist
 products:
 - azure
+- azure-machine-learning-service
 units:
 - learn.data-ai.register-and-deploy-model-with-amls.introduction
 - learn.data-ai.register-and-deploy-model-with-amls.create-deployment-workspace-auzre-portal
