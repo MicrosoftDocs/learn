@@ -8,12 +8,11 @@ In this lesson, you will create  an Azure notebook and use it to run your first 
 
 ## Create an Azure notebook
 
-Jupyter notebooks are composed of *cells*. Each cell is assigned one of four types:
+Jupyter notebooks are composed of *cells*. Each cell is assigned one of three types:
 
 - **Markdown** for entering text in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) format
 - **Code** for entering code that runs interactively
 - **Raw NBConvert** for entering data inline
-- **Heading** for section headers
 
 Code entered into code cells is executed by a *kernel*. The popular IPython kernel supports code written in Python, but [dozens of other kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) are available supporting other languages. Azure notebooks (Jupyter notebooks created in Azure) support Python, R, and F#. They also support numerous packages and libraries that are commonly used in Python.
 
