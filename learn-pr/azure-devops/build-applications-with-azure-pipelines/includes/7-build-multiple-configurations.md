@@ -1,8 +1,8 @@
 In the previous part, you implemented a pipeline that builds the _Space Game_ web site. You started with a script that performs each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a .zip file that contains the compiled web application.
 
-You may have noticed that you built only the application's Release configuration. Say that Carol from QA also requires the Debug configuration so that she can better report crashes and other application failures.
+You may have noticed that you built only the application's Release configuration. What if Amita from QA also needs the Debug configuration so that she can better report crashes and other application failures?
 
-In this part, you'll use a template to define build tasks that can build any configuration defined in the project file.
+In this unit, you'll use a template to define build tasks that can build any configuration defined in the project file. Templates allow you to define your logic once and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
 
 ## How might you define both build configurations?
 
@@ -28,9 +28,9 @@ Consider the following tasks that build and publish the _Space Game_ web project
 
 To build the Debug configuration, you might repeat these two tasks, but replace "Release" with "Debug".
 
-Although that would likely give you the result you're looking for, consider what might happen as your build gains complexity and your requirements change. You would then need to manually locate and modify both variations of each build task. Once you have add additional build requirements, you would also need to create two tasks, one for the Debug configurations and one for Release, to satisfy those requirements.
+That would give you the result you're looking for, but what happens as your build becomes more complex and your requirements change? You would need to manually locate and modify both variations of each build task. Once you added the additional build requirements, you would also need to create two tasks, one for the Debug configuration and one for Release, to satisfy those requirements.
 
-Wouldn't it be better if you could write the build tasks one time and configure those tasks to build the configuration you choose?
+A better solution is to use a template. You can write the build tasks once and configure those tasks to build the configurations you want.
 
 ## Define the template
 

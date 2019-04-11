@@ -1,12 +1,12 @@
-Talk track:
+In Unit 4, you saw Mara define a build for _Space Game_. Now it's your turn. You're going to create a pipeline and produce your first build artifact. 
 
-* Here you'll create the pipeline and produce your first build artifact.
-* Remember (and say this in unit 2 or 4 if we haven't), you'll be using a YAML file to define your pipeline.
-* When you create a pipeline, the process asks you for your YAML file. The project doesn't have this file yet.
-* An easy way to get started is to create a Git branch that contains a basic YAML file, use that branch to set up the pipeline, and then iteratively add tasks to your pipeline and test them out.
-* At a minimum, the YAML file needs to define the image pool to use. Here you'll use the Ubuntu 16.04 image that's hosted by Microsoft.
-* A branch is a good way to do this because it isolates your changes, and doesn't affect the `master` branch or break anything the team is working on.
-* Then, once you have things working, you can merge your change into the `master` branch so everyone can push code into the pipeline.
+As you saw, Mara uses a YAML file to define the build. When you create a pipeline, the process asks you for your YAML file. The project doesn't have this file yet.
+
+An easy way to get started is to create a Git branch that contains a basic YAML file, use that branch to set up the pipeline, and then iteratively add tasks to your pipeline and test them out. (Again, if you're new to Git don't worry. We'll show you what to do.)
+
+A branch is a good way to experiment because it isolates your changes and doesn't affect the `master` branch or break anything the team is working on. Once you have things working, you can merge your change into the `master` branch so everyone can push code into the pipeline.
+
+At a minimum, the YAML file needs to define the image pool to use. Here you'll use the Ubuntu 16.04 image that's hosted by Microsoft. <!-- Should this be agent pool? Add definition: The Microsoft-hosted agent pool provides 6 virtual machine images to choose from:--> That's where we'll start.
 
 ## Configure the basic pipeline
 
@@ -16,8 +16,7 @@ Talk track:
     git checkout -b build-pipeline
     ```
 
-    > [!NOTE]
-    > If you're new to Git, just understand for now that a branch is a way to propose changes with affecting anyone else's work. Later, you'll propose and merge your change into the main code base.
+  
 
 1. From the integrated terminal, run the following command to create a file named **azure-pipelines.yml** in your project's root directory.
 
@@ -302,9 +301,23 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 ## Define variables to enhance readability
 
-<!-- TODO: Add variable for .NET version -->
+Variables enable you to define values one time and refer to those values throughout your pipeline. The system replaces each variable with its current value when the pipeline runs.
 
-Recall that Azure Pipelines provides variables that define aspects of your build. You can also define your own variables.
+Just like with other programming languages, variables enable you to:
+
+* Define values that may change from run to run of your pipeline.
+* Store information that's repeated throughout your pipeline, such as a version number or a file path, in one place. That way, you don't need to update all occurrences when your needs change.
+
+Azure Pipelines provides a number of built-in variables which describe aspects of the build process such as the build identifer and the directory names where your software is built and staged.
+
+You can also define your own variables. Here's an example that shows a variable named `buildConfiguration` that defines the Release build configuration.
+
+```yml
+variables:
+  buildConfiguration: 'Release'
+```
+
+<!-- TODO: Add variable for .NET version -->
 
 Use variables when you repeat the same value multiple times or when a value, such as a dependency version, might change.
 
@@ -399,3 +412,5 @@ Here you'll use variables to define these values one time, and then reference th
 1. From Azure DevOps, trace the build through each of the steps. As before, you see the **Artifacts** button appear when the build completes.
 
 <!-- TODO: We chose `build-pipeline` as the "default" branch initially, but I don't know where this is used. And I don't see a way to set it to `master`. Let's follow-up on this - if you can set it, let's. -->
+
+Congratulations! You've successfully used Azure Pipelines and created your first build artifact.
