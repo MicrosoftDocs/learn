@@ -1,6 +1,6 @@
 Mara now has a copy of the _Space Game_ code on her local machine. She's going to build it using Azure Pipelines instead of the existing Ubuntu 16.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process. 
 
-Here are some notes Alice collected when she talked to Andy, the dev lead. 
+Here are some notes Mara collected when she talked to Andy, the dev lead. 
 
 * The build machine is running Ubuntu 16.04.
 * It has build tools such as npm (the package manager for Node.js), NuGet (the package manager for .NET), and the .NET runtime installed.

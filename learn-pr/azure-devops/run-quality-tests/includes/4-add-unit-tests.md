@@ -5,11 +5,11 @@ Talk track:
   * Specifically, the filtering functionality wasn't working correctly. The wrong game mode would show.
   * (Do we need a screenshot that demonstrates this? I can brew one up. In fact, I think we do need it. Here it is. Notice that although Milky Way is selected, the results contain Andromeda.)
       ![The leaderboard showing incorrect results](../media/4-leaderboard-bug.png)
-* Alice wants to help. Although Alice and Andy think they fixed the bug, Alice wants to make sure it stays that way.
+* Mara wants to help. Although Mara and Andy think they fixed the bug, Mara wants to make sure it stays that way.
 * The web application uses a document database to store high scores and player profiles.
 * The app currently uses local test data. They later plan to connect the app to a real database.
 * She decides that unit tests are a good way to verify the leaderboard functionality.
-* There are a number of unit test frameworks available for C# applications. Alice chooses NUnit because it's popular with the community and she's used it before.
+* There are a number of unit test frameworks available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
 
 The unit test framework you choose largely depends on what programming language you use. We won't go into complete detail, but here's the unit test you'll work with.
 
@@ -74,7 +74,7 @@ You might read this line as:
 
 OLD COPY. MAY OR MAY NOT BE USEFUL.
 
-In this part, Alice adds unit tests to the _Space Game_ web application. Alice chooses NUnit, a popular open-source unit testing framework for .NET. In this part, you'll follow along.
+In this part, Mara adds unit tests to the _Space Game_ web application. Mara chooses NUnit, a popular open-source unit testing framework for .NET. In this part, you'll follow along.
 
 In practice, the unit test framework you choose depends on the programming language your library or application is written in. So for learning purposes, here you'll use unit tests we provide for you.
 
@@ -316,4 +316,4 @@ Here you'll see the tests run in the pipeline and then visualize the results fro
 <!-- TODO: When/if do we create a PR and merge the `unit-tests` branch? -->
 <!-- TODO: Later: I think we should do this now so the learner can git checkout -b from master -->
 
-TODO: Perhaps mention that although we only have one test, it's better than nothing. Alice's team now has a place to put them and a way to run them. They can add more in the future.
+TODO: Perhaps mention that although we only have one test, it's better than nothing. Mara's team now has a place to put them and a way to run them. They can add more in the future.

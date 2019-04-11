@@ -3,7 +3,7 @@ Talk track:
 * (I suspect this might be overwhelming to folks new to testing. So perhaps play that out here.)
 * The team meets?
 * Amita or Tim: Wow, that's a lot of code!
-* Andy or Alice: Yes, but it's all things we do anyway. Because it's code, we have a common vocabulary and a consistent place to keep it all.
+* Andy or Mara: Yes, but it's all things we do anyway. Because it's code, we have a common vocabulary and a consistent place to keep it all.
 
 TODO: What else do we want to summarize here?
 

@@ -4,11 +4,11 @@ When she hears Mara's plan, Amita is a bit hesitant but since Mara's plan is to 
 
 Amita: It sounds like an interesting exercise, but you must want to prove a DevOps point!
 
-Alice: You already know me so well!
+Mara: You already know me so well!
 
 Amita: What improvements do you expect to see, especially since you're going to do what we already do.
 
-Alice: I think that just moving to Azure Pipelines will bring a lot of benefits. Remember, Azure Pipelines is a cloud service that you can use to automatically build and test code and make it available to other users. It works with just about any language or project type.
+Mara: I think that just moving to Azure Pipelines will bring a lot of benefits. Remember, Azure Pipelines is a cloud service that you can use to automatically build and test code and make it available to other users. It works with just about any language or project type.
 
 Our build server has problems. Even keeping it up to date is hard. Since Azure Pipelines is a cloud service, it's always got the latest patches and security updates. We won't have to worry about maintaining the pipeline.
 
@@ -59,12 +59,12 @@ Mara: Will do!
 
 (Call out that if you have something that's working, continue to use it! A benefit of Azure DevOps is that integration among components comes out of the box, but you can also integrate the pieces you need with what you already have. Make the case for Azure DevOps if you don't have an existing process.)
 
-(Alice recommends Azure Pipelines because:
+(Mara recommends Azure Pipelines because:
 
 * They don't have an existing CI system, and Azure Pipelines seems to provide everything they need.
-* Of particular interest is that it comes with free build agents, including Ubuntu, which is what they currently use. This makes it easy for Alice to get started and build a proof of concept (and possibly use in production!)
+* Of particular interest is that it comes with free build agents, including Ubuntu, which is what they currently use. This makes it easy for Mara to get started and build a proof of concept (and possibly use in production!)
 
-Amita seems to buy into the idea, and wishes Alice luck. Amita can't wait to see what Alice finds.)
+Amita seems to buy into the idea, and wishes Mara luck. Amita can't wait to see what Mara finds.)
 
 ## How does Azure Pipelines work?
 
@@ -74,7 +74,7 @@ Talk track:
 * You can choose from two different options when configuring your pipeline:
   * The visual designer
   * Define your pipeline using code (here, YAML files)
-* Alice compares the two approaches and chooses code (YAML files) mainly because:
+* Mara compares the two approaches and chooses code (YAML files) mainly because:
   * It's versionable (You can treat and manage the files like you can any other source code file. You can trace the history if something breaks or changes.)
   * It's easy to integrate. Just drop the YAML file at the root of your code repository and connect it to your Azure Pipelines project.
   * Any other reasons come to mind?
@@ -92,7 +92,7 @@ Talk track:
 
 * [Summarize this](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/pools-queues?view=azure-devops). Key points used in this module are:
   * Defines the VM image to use (for us, Ubuntu 16.04)
-  * Defines what build software you need running on the agent - for example, MSBuild or Visual Studio. Alice needs npm installed.
+  * Defines what build software you need running on the agent - for example, MSBuild or Visual Studio. Mara needs npm installed.
 
 Here's an example that defines an agent pool that uses the Ubuntu 16.04 VM image that has npm, the Node.js package manager, installed.
 
