@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.intro-to-ai-technology.introduction
 - learn-wwl.intro-to-ai-technology.explore-state-of-the-art-ai-technology

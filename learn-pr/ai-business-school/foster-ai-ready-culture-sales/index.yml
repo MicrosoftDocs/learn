@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.foster-ai-culture-sales.introduction
 - learn-wwl.foster-ai-culture-sales.sales-case-study-introduction

@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.ai-strategy-in-healthcare.introduction
 - learn-wwl.ai-strategy-in-healthcare.ai-value-in-healthcare-insead

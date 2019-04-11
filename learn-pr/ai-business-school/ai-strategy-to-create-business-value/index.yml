@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.ai-strategy-to-create-business-value.introduction
 - learn-wwl.ai-strategy-to-create-business-value.holistic-business-ai-strategy-insead
