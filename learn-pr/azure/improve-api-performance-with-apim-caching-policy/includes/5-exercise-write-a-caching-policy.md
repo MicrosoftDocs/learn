@@ -22,10 +22,7 @@
 
 <!-- Keep bulleted/numbered lists to seven items max. Break them up into groups with headers if necessary -->
 
-
-
 In this Exercise, you'll use the Cloud Shell code editor to create a .NET Core Web API and deploy it to Azure. This Api will then be imported into Azure APIM and a caching policy applied to it.
-
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 

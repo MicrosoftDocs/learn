@@ -11,13 +11,13 @@
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
 You can use APIM to control many aspects of an already deployed API changing its behaviour via the use of policies. There is a need on the Board Gaming site to provide a faster response to requests for the costs of various sizes of board for various games shipped to the uk or other areas of the world. API management can by use of its policies and various elements provide a solution t0 this issue. First lets look at what policies can be used to do.
 
+## What are policies?
 
-## What are policies ?
 Policies are formed of individual statements which are executed in order. The policy documents themselves are xml structures which contain configurable policy elements used to control the behaviour of the API.
 
-## Where do policies execute ?
-Policies execute in specific processing areas within the APMI API section.You apply them to either the inbound processing tags to modify requests before they reach the backend or the outbound processing tags to modify the response before it is sent to the client. The backend tag can be used control An on error tag can be added to control what happens when an error occurs .
+## Where do policies execute?
 
+Policies execute in specific processing areas within the APMI API section.You apply them to either the inbound processing tags to modify requests before they reach the backend or the outbound processing tags to modify the response before it is sent to the client. The backend tag can be used control An on error tag can be added to control what happens when an error occurs.
 
 ```xml
 <policies>
@@ -48,9 +48,9 @@ The syntax for the element is the same regardless of the scope chosen.
 
 ## Policy Scopes
 
-Policys are evaluated in order of scopes Global, Product, API, Operations.
+Policies are evaluated in order of scopes Global, Product, API, Operations.
 
-**The Global Policy Scope**
+### The Global Policy Scope
 
 Choosing the All APIS menu item gives you access to the Global Scope. Policies applied at this level apply to all APIs within the APIM.
 
@@ -58,38 +58,31 @@ Choosing the All APIS menu item gives you access to the Global Scope. Policies a
 
 The XML editor is accessed by clicking on the tag symbol **</>**
 
-![Global Scope Editor](../media/GlobalScopeEditor.png)
-
+![Global Scope Editor](../media/GlobalScopeEditor.PNG)
 
 You can select add policy in either the inbound or outbound processing tag areas to open a wizard to apply policy elements rather than selecting the policy tag **</>** and adding elements directly to the xml structure.the menu 
 
-![Global All API Scope](../media/globalpolicywiz.png)
+![Global All API Scope](../media/GlobalpolicyWiz.PNG)
 
-
-
-**The Product Policy Scope**
+### The Product Policy Scope
 
 This is used for configuring various items as well as policies
 
-![Product Scope](../media/ProductsScope.png)
+![Product Scope](../media/productsScope.PNG)
 
-
-**API Policy Scope**
+### API Policy Scope
 
 This scope is for all operations of a particular API
 
-![APIPolicy Scope](../media/APIscope.png)
+![APIPolicy Scope](../media/APIscope.PNG)
 
-
-
-**Operation Scope**
+### Operation Scope
 
 This scope is for individual operations of an API
 
-![APIOperations Scope](../media/OperationScope.png)
+![APIOperations Scope](../media/OperationScope.PNG)
 
-
-**The use of <base/>**
+## The use of <base/>
 
 In the example below the base tag element is used to access the backend policy from the parent API level scope
 
@@ -108,10 +101,9 @@ In the example below the base tag element is used to access the backend policy f
 </policies>
 ```
 
+## Elements used for restricting access
 
-**Elements used for restricting access**
-
-These can be useful when you want to stop access or limit the number of times an API can be accessed from a particular source
+These can be useful when you want to stop access or limit the number of times an API can be accessed from a particular source.
 
 The **Check HTTP header** element is used to check for the existence or a particular value in an HTTP Header.
 
@@ -121,7 +113,7 @@ The **Limit call rate by key** element  limits the call rate based on the key.
 
 The **Restrict caller IPs** element is used to allow or deny calls from specific IPs or ranges of IP adressses.
 
-**Advanced elements**
+## Advanced elements
 
 These can be of use in scenarios when you want a non standard behaviour of as the result of using the request object or a conditional element introduced into the processing logic 
 
@@ -135,7 +127,7 @@ The **Send one way request** element enables sending a request to a URL without 
 
 The **Set variable** element will persist a value in a named variable within the context.
 
-**Elements for Authentication**
+## Elements for Authentication
 
 These provide the ability to enforce Basic Authentication or athentication via client certificates
 
@@ -143,7 +135,7 @@ The **Authenticate with Basic** element as it says, authenticates with Basic Aut
 
 The **Authenticate with client certificate** element provides authenticates with backend services using client certificates
 
-**Caching policies elements**
+## Caching policies elements
 
 These provide various ways of caching responses and accessing the cache.
 
@@ -157,7 +149,7 @@ The **Store value in cache** stores an item in the cache by key.
 
 The **Remove value from cache** element removes an item in the cache by key.
 
-**Cross domain policies elements**
+## Cross domain policies elements
 
 The **Allow cross-domain calls** element enables your API to be called from Adobe Flash and Silverlite
 
@@ -165,7 +157,7 @@ The **CORS** element enables cross-origin resource sharing (CORS) support to an 
 
 The **JSONP** element adds JSON with padding to allow calls  accross domains from JavaScript browser-based clients.
 
-**Transformation policies** 
+## Transformation policies
 
 These can be very useful when a client needs a response or request to be  converted.
 
@@ -183,7 +175,6 @@ The **Set HTTP header** element  adds items to an existing response or request h
 
 The **Set query string parameter** element Adds or  replaces the value of, or deletes request query string parameter.
 
-The **Rewrite URL** element converts a request URL from its public form to a form expected a particularWeb service
-.
-Transform XML uses an XSLT template to carry out  XSL transformation to XML in the request or response body.
+The **Rewrite URL** element converts a request URL from its public form to a form expected a particularWeb service.
 
+Transform XML uses an XSLT template to carry out  XSL transformation to XML in the request or response body.
