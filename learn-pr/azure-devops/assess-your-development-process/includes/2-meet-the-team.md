@@ -26,47 +26,47 @@ Here are your team members.
 <!-- TODO: Fix this layout to make it more pleasing. -->
 
 :::row:::
-  :::column span="2":::
-    ![](../../_shared/media-draft/bob-left.png) 
+  :::column span="4":::
+    Andy is a developer who's been working with computers since he was a kid. His hobby is working on open source projects with other programmers from all over the world.
   :::column-end:::
   :::column:::
-Andy is a developer who's been working with computers since he was a kid. His hobby is working on open source projects with other programmers from all over the world.
+    ![Cartoon depiction of Andy](../../_shared/media-draft/andy.png)
   :::column-end:::
 :::row-end:::
 
 :::row:::
-  :::column:::
-Amita is in QA. She's calm, which helps with some temperamental developers. She's good at organizing and setting priorities and lives to find edge cases.
+  :::column span="4":::
+    Amita is in QA. She's calm, which helps with some temperamental developers. She's good at organizing and setting priorities and lives to find edge cases.
   :::column-end:::
-  :::column span="2":::
-![](../../_shared/media-draft/carol-right.png) 
+  :::column:::
+    ![Cartoon depiction of Amita](../../_shared/media-draft/amita.png)
   :::column-end:::
 :::row-end:::
 
 :::row:::
-  :::column span="2":::
-    ![](../../_shared/media-draft/ted-left.png) 
+  :::column span="4":::
+    Tim is in operations. He likes practical solutions and he's very cautious (although some people might use the word "paranoid"), which makes sense because he's the person who gets the 3 AM call when something goes wrong.
   :::column-end:::
   :::column:::
-Tim is in operations. He likes practical solutions and he's very cautious (although some people might use the word "paranoid"), which makes sense because he's the person who gets the 3 AM call when something goes wrong.
+    ![Cartoon depiction of Tim](../../_shared/media-draft/tim.png)
   :::column-end:::
 :::row-end:::
 
 :::row:::
-  :::column:::
-Mara is new. She just joined Tailspin as a developer because she likes games and she thought a smaller company would have lots of opportunity for innovation. She's a big fan of DevOps.
+  :::column span="4":::
+    Mara is new. She just joined Tailspin as a developer because she likes games and she thought a smaller company would have lots of opportunity for innovation. She's a big fan of DevOps.
   :::column-end:::
-  :::column span="2":::
-![](../../_shared/media-draft/alice-right.png) 
+  :::column:::
+    ![Cartoon depiction of Mara](../../_shared/media-draft/mara.png)
   :::column-end:::
 :::row-end:::
 
 :::row:::
-  :::column span="2":::
-    ![](../../_shared/media-draft/ted-right.png) 
+  :::column span="4":::
+    Irwin is the product manager. He's been in the video game industry for decades. Irwin acts friendly towards the development teams, but everyone knows he favors a tight schedule over people. Irwin has a relatively fixed mindset, but if there's anything that can help teams get games to market faster with less effort, he's all ears.
   :::column-end:::
   :::column:::
-Irwin is the product manager. He's been in the video game industry for decades. Irwin acts friendly towards the development teams, but everyone knows he favors a tight schedule over people. Irwin has a fixed mindset, but if there's anything that can help teams release faster with less effort, he's all ears.
+    ![Cartoon depiction of Irwin](../../_shared/media-draft/irwin.png)
   :::column-end:::
 :::row-end:::
 
