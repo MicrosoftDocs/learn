@@ -61,9 +61,18 @@ Mara is new. She just joined Tailspin as a developer because she likes games and
   :::column-end:::
 :::row-end:::
 
+:::row:::
+  :::column span="2":::
+    ![](../../_shared/media-draft/ted-right.png) 
+  :::column-end:::
+  :::column:::
+Irwin is the product manager. He's been in the video game industry for decades. Irwin acts friendly towards the development teams, but everyone knows he favors a tight schedule over people. Irwin has a fixed mindset, but if there's anything that can help teams release faster with less effort, he's all ears.
+  :::column-end:::
+:::row-end:::
+
 ## Good morning
 
-The team's product manager has called everyone into a meeting and he's in a bad mood. The leaderboard for the racing game was just updated with several new features and he showed it at a Meetup group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
+Irwin, the team's product manager has called everyone into a meeting and he's in a bad mood. The leaderboard for the racing game was just updated with several new features and he showed it at a Meetup group. Players' reactions were disappointing, to say the least. He reads off a list of the top problems:
 
 * Some features only work correctly for some game modes.
 * Updating the leaderboard takes too long, even with a small number of players.
