@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of cloud and traditional architecture concepts
   - Knowledge of networking, compute, and database systems
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/design-your-migration-to-azure.svg
 levels:
 - intermediate
 roles:
