@@ -1,5 +1,5 @@
 <!--
-    I think this should be moved to the end of the module, even after the summary, except for the info about unit tests. That could go to 4-add-unit-tests. The other info isn't very useful at this point since they don't do anything with it. No one will remember it. Also, I don't think we should say much. There must be docs that already explain all this so, if possible, we should link to them.
+    I'm leaving this page as is. I added a little bit about each of the testing types mentioned in unit 6. I still think we should get rid of this page and integrate the content into the appropriate units.
 -->
 
 **TODO**: This unit needs a title. But let's settle on what it talks about and then set a title to match.
