@@ -50,7 +50,7 @@ quiz:
       isCorrect: false
       explanation: "Although AI is heavily used to detect anomalies on production lines, it is not an example of transfer learning."
     - content: "Retraining existing models to address similar problems already solved."
-      isCorrect: false
+      isCorrect: true
       explanation: "Transfer learning is a process in which an existing model, built using a large amount of historical data, can be retrained using only a small amount of new data and repurposed to a new, but similar, problem."
     - content: "Transition aspects of employee, manual work to automation."
       isCorrect: false
