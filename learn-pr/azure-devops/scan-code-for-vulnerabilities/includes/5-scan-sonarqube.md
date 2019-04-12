@@ -16,6 +16,53 @@ Sample flow/ideas:
 
 -----
 
+```yml
+condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+```
+
+-----
+
+At the end --
+
+"Wow, we weren't as clean as we thought!"
+"..."
+
+If you're interested in building .NET applications, as an optional exercise you can practice fixing one or more of these errors.
+You also get to practice the entire process end to and as well as your Git skills - create branch, do work, verify locally, commit, push, see the result
+
+-----
+
+## TBD
+
+(INSTEAD OF -- fetch your project key)
+
+1. **+** > **Analyze new project**
+1. GO THROUGH THE WIZARD
+1. Copy Project key and token to a safe place
+    IMPORTANT - copy it to a safe place. If you lose it, regenerate
+1. Ignore 2 **Run analysis on your project**. You'll do that through the pipeline shortly.
+
+
+SCRATCH:
+
+1. Go to your organization “Administration > Projects Management” page
+1. Click on “Create Project” and set the project name and key (com.github.yeutech-lab.accept-dot-path in your case)
+
+https://community.sonarsource.com/t/project-was-never-analyzed-when-analysing-on-sonarcloud-with-travis/511
+
+
+## Create service connection
+
+1. Azure DevOps > **Project settings** in the lower corner.
+1. Under **Pipelines**, select **Service connections**.
+1. Click **New service connection**, then select **SonarQube**.
+1. In the dialog that appears, enter these fields:
+    * **Connection name**: SonarQube
+    * **Server Url**: https://sonarcloud.io
+    * **Token**: 
+
+----
+
 Notes from spike:
 
 - Sign up at https://sonarcloud.io. Use your GitHub account.
