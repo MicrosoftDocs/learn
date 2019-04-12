@@ -16,22 +16,59 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1 (True/False)"
+  - content: "Question"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Explanation for the correct answer"
-    - content: "False"
+    - content: "c"
       isCorrect: false
-      explanation: "Explanation for the incorrect answer"
-  - content: "Question 2 (multiple choice, at this time only one correct answer allowed)"
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+  - content: "Question"
     choices:
-    - content: "Answer option 1"
+    - content: "c"
       isCorrect: false
-      explanation: "Explanation for the incorrect answer"
-    - content: "Answer option 2"
+      explanation: "e"
+    - content: "c"
       isCorrect: false
-      explanation: "Explanation for the incorrect answer"
-    - content: "Answer option 3"
-      isCorrect: true
-      explanation: "Explanation for the correct answer" 
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+  - content: "Question"
+    choices:
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+  - content: "Question"
+    choices:
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
+    - content: "c"
+      isCorrect: false
+      explanation: "e"
