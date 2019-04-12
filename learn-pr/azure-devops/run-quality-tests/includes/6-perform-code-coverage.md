@@ -1,26 +1,47 @@
-Talk track:
+Amita feels much better. She's seeing actual progress in catching bugs and in easily seeing test results. What's more, it hasn't taken long for Andy and Mara to implement the improvements. She, Andy and Mara talk a bit more about unit testing.
 
-* Amita leaves, and Andy and Mara talk more about testing.
-* Andy: I like the idea of unit testing, but how do we know when we're done? How do we know if we're covering everything?
-* Mara: We don't have to cover everything right away, but we can add in _code coverage_ testing to see what percentage of our code has unit tests.
-* Andy: That's cool. Sounds like we can establish a baseline and improve over time?
-* Mara: That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help us reduce technical debt (TODO: we can explain why) and it helps keeps us honest. But for now, we just want to see how much is covered.
+Andy: I like the idea of unit testing, but I've never found a good way to know when we're done, when we have complete coverage. Are there any good tools we can use with Azure Pipelines?
 
------
+Mara: We can add in _code coverage_. That will tell us the percentage of our code that has unit tests. We can use a tool called Coverlet to collect coverage information when the tests run.
 
-## What is code coverage?
+Andy: That's cool. Sounds like we can establish a baseline and improve over time.
 
-TODO: Lifted this from Docs. Perhaps boil this down and see what we want to include in the narrative or knowledge needed.
+Mara: That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help keep us honest. But for now, we can just see how much is covered.
 
-Code coverage helps you determine the proportion of your project's code that is actually being tested by tests such as unit tests. To increase your confidence of the code changes, and guard effectively against bugs, your tests should exercise - or cover - a large proportion of your code.
+Andy: Great. Getting reports on how much code is covered by unit tests will help us to identify code paths that aren't covered. We can increase the coverage gradually and that will help us from feeling overwhelmed by how much there is to do.
 
-Reviewing the code coverage result helps to identify code path(s) that are not covered by the tests. This information is important to improve the test collateral over time by reducing the test debt.
+Amita: I'm really excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works and that the user has a good experience.
 
-## What tools are available?
+Mara: That perspective is so important and definitely needs a human being. Right now, Andy and I are working on automated tests &mdash; software that tests the software. We're concentrating on tests that execute as the software moves through the build pipeline.
 
-Much like unit testing, the tool you use depends on the programming language and application framework you use.
+That means the two types of tests we've already talked about. The unit tests test individual components and are really fast. Code coverage tells us how much of our code has associated unit tests.
 
-When targeting .NET Core applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. TODO: Perhaps say a bit more.
+Andy: We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors and coding style problems really early.
+
+Amita: What about regression tests?
+
+Mara: I think of regression tests and unit tests as almost the same thing. Once we fix a bug, we should run the unit tests again. This ensures that our changes haven't broken any units that were already tested.
+
+Amita: OK, so does that leave integration testing?
+
+Andy: Integration testing is a bit different. We do integration testing after the build, on the server. While unit tests help you verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests quite yet. 
+
+But some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies.
+
+Mara: Lots to do.
+
+Amita: Thanks for the rundown! I'm off. Keep me posted.
+
+Andy: Ready to do some code coverage?
+
+Mara: Let's get started.
+
+
+## Use a code coverage tool
+
+Much like unit testing, the tool you use for code coverage depends on the programming language and application framework you use.
+
+When targeting .NET Core applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross platform code coverage library for .NET Core.
 
 -----
 

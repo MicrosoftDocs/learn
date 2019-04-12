@@ -1,3 +1,7 @@
+<!--
+    I'm leaving this page as is. I added a little bit about each of the testing types mentioned in unit 6. I still think we should get rid of this page and integrate the content into the appropriate units.
+-->
+
 **TODO**: This unit needs a title. But let's settle on what it talks about and then set a title to match.
 
 Here, we survey the various kinds of testing and what test frameworks are available to you.
