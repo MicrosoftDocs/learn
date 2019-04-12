@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.pitch-your-product-prototype.6-your-ask
-title: Your Ask
+title: Making an ask of your audience
 metadata:
-  title: Your ask
+  title: Making an ask of your audience
   description: This unit teaches how to make an ask of your audience.
   author: jamtur01
   ms.date: 04/25/2019
@@ -22,4 +22,4 @@ quiz:
       isCorrect: false
     - content: "False"
       isCorrect: true
-      explanation: "Your audience is going to want to know what they get for their money. You need to explain what you are going to do with it."
+      explanation: "Your audience is going to want to know what they get for their money and what you are going to do with it."

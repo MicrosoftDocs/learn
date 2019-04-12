@@ -15,14 +15,14 @@ This path shows the typical journey of a user through the product.
 
 Ensure the demo shows the key user flows in your product. Coordinate what you demonstrate with the solution you've articulated to the problem. It should call out the unique features of your product or its differentiation from other products.
 
-It's also important to think about a live demo versus a "canned demo". A "canned demo" is prerecorded or staged. If you're worried about the product crashing or failing then a "canned demo" is an option but remember it's not likely to inspire confidence in your audience. It's always best to show a normal user's experience.
+It's also important to think about a live demo versus a "canned demo". A "canned demo" is prerecorded or staged. If you're worried about the product crashing or failing, then a "canned demo" is an option but remember it's not likely to inspire confidence in your audience. It's always best to show a normal user's experience.
 
 ## What's next
 
-Conclude your demonstration with a quick walk-through of your product road map. The product road map is the list of future features you'd like to develop for your app, for FashionFindr this might be:
+Conclude your demonstration with a quick walk-through of your product road map. The product road map is the list of future features you'd like to develop for your app, for FashionFindr this road map might include:
 
 1. Social sharing of matched fashions.
 1. Integration with more payments platforms.
-1. etc...
+1. etc.
 
-This is especially important if your prototype lacks a key feature that represents product differentiation, for example if you haven't built it yet.
+The road map is especially important if your prototype lacks a key feature that represents product differentiation, for example if you haven't built it yet.
