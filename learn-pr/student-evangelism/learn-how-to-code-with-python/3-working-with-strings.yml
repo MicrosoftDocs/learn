@@ -5,7 +5,7 @@ metadata:
   title: Strings in Python
   description: Parse lines read from a CSV file into airport names, codes, and locations
   ms.date: 01/25/2019
-  author: JeffProsise
+  author: ShanaMatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python

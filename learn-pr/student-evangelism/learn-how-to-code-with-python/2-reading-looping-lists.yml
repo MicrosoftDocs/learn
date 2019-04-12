@@ -6,7 +6,7 @@ metadata:
   description: Load a CSV file into an Azure notebook and read its contents into a list
   ms.date: 01/25/2019
   author: JeffProsise
-  ms.author: shanama
+  ms.author: ShanaMatthews
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   ROBOTS: NOINDEX

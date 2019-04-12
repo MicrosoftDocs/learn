@@ -1,6 +1,6 @@
 Strings are among the most commonly used data types in Python and in other programming languages. Strings contain text — text output to the screen, retrieved from user input, or read from a CSV file. Knowing how to parse and manipulate strings is an essential skill for any programmer, because virtually every program uses strings in some way. Many of today's most commonly used data formats, including [CSV](https://en.wikipedia.org/wiki/Comma-separated_values), [JSON](https://www.json.org/), and [XML](https://www.w3.org/XML/), use strings to store data.
 
-In the previous lesson, you uploaded a CSV file containing a list of airports all over the world to Azure Notebooks and wrote some Python code to read the file and create a list of strings from the file's content. In this lesson, you will parse the content that you read and convert the data into a more useful format.
+In the previous lesson, you downloaded a CSV file containing a list of airports all over the world inside Azure Noteboks and wrote some Python code to read the file and create a list of strings from the file's content. In this lesson, you will parse the content that you read and convert the data into a more useful format.
 
 ## Working with strings
 
@@ -122,16 +122,16 @@ In this exercise, you will use string slicing and string splitting to parse the 
         airport_name = subitems[1][:-2]
 
         # Print the resulting strings
-        print('{0:8}{1:32}{2:1}'.format(airport_code, airport_location, airport_name))
+        print(airport_code, airport_location, airport_name)
     ```
 
-    The purpose of the code in the `for-in` loop is to divide a string containing an airport code, an airport location, and an airport name into three strings, as diagrammed below. First the string is split at "," to produce `items[0]` and `items[1]`. Then the quotation mark is removed from the beginning of `items[0]`, producing an airport code. Next, `items[1]` is split to produce `subitems[0]` and `subitems[1]`. The former is the airport location, and the quotation mark and embedded newline character are removed from the end of `subitems[1]` to get the airport name.
+    The purpose of the code in the `for-in` loop is to divide a string containing an airport code, an airport location, and an airport name into three strings, as diagrammed below. First the string is split at "," to produce `items[0]` and `items[1]` at the top of the diagram. Then the quotation mark is removed from the beginning of `items[0]`, producing an airport code. Next, `items[1]` is split to produce `subitems[0]` and `subitems[1]`. The former is the airport location, and the quotation mark and embedded newline character are removed from the end of `subitems[1]` to get the airport name.
 
     ![Splitting and trimming strings](../media/string-splitting.png)
 
     _Splitting and trimming strings_
 
-    The final line in the `for-in` loop uses the `format` function that can be called on any string in Python to format a string. It left-aligns `airport_code` in a field that is 8 spaces wide, `airport_location` in a field that is 32 spaces wide, and `airport_name` in a field that occupies the remainder of the line. It's one way in Python to align printed output into columns. Based on this, can you predict what the output will be?
+    The final line in the `for-in` loop prints the resulting pieces of data on one line. Based on this, can you predict what the output will be?
 
 1. Now run the modified cell. Confirm that the output resembles the output below.
 
@@ -153,12 +153,16 @@ In this exercise, you will use string slicing and string splitting to parse the 
         airports.append([airport_code, airport_location, airport_name])
 
     for airport in airports:
-        print('{0:8}{1:32}{2:1}'.format(airport[0], airport[1], airport[2]))
+        print(airport)
     ```
 
     This code defines a new list named `airports` and adds to it a list containing the airport code, location, and name for each line in the input. Then it prints each list in the list of lists.
 
-1. Run the cell and confirm that it produces the same output as the previous cell.
+1. Run the cell and confirm that the output resembles the output below.
+
+    ![Printing final transfomed airport data](../media/print-final-airports.png)
+
+    _Printing final transfomed airport data_
 
 1. Use the **File** -> **Save and Checkpoint** command to save the notebook.
 

@@ -4,7 +4,7 @@ metadata:
   title: Learn how to code with Python - Learn
   description: Learn how to write basic Python code by extracting information from a dataset in an Azure notebook.
   ms.date: 01/25/2019
-  author: JeffProsise
+  author: ShanaMatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
@@ -24,6 +24,7 @@ levels:
 roles:
 - developer
 products:
+# TODO - what's the right product to put here?
 - azure
 units:
 - learn.introduction-to-python.0-introduction

@@ -5,7 +5,7 @@ metadata:
   title: Conditional statements in Python
   description: Use conditional statements to filter a list of worldwide airports into a list containing only U.S. airports
   ms.date: 01/25/2019
-  author: JeffProsise
+  author: ShanaMatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python

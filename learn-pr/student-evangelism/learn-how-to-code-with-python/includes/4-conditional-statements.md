@@ -1,4 +1,4 @@
-Programs don't merely crunch numbers. They make *decisions* based on those numbers and modify their behavior accordingly. For example, a program might take one action if the sum of a column of numbers is greater than 100, and another action if it does not. Statements that test a condition and branch accordingly are as old as programming itself. Most programming languages use `if` statements to support such branching, and Python is no exception.
+Programs don't merely crunch numbers. They make *decisions* based on those numbers and modify their behavior accordingly. For example, a program might take one action if the sum of a column of numbers is greater than 100, and another action if it does not. Statements that test a condition and act accordingly are as old as programming itself. Most programming languages use `if` statements to support such branching, and Python is no exception.
 
 Now that the airport data in **airports.csv** has been parsed into a list of lists with each item in the inner list containing strings denoting an airport code, airport location, and airport name, the data can be organized and presented in more meaningful ways. In this lesson, you will filter the list of lists created in the previous lesson so that it includes only U.S. airports. And to do so, you will employ the `if` statement.
 
@@ -61,13 +61,15 @@ Now let's use what you learned about `if` statements, plus the `endswith` functi
             us_airports.append(airport)
     ```
 
-    Notice the call to Python's `tuple` function in the second-to-last line. A tuple is similar to a list, but unlike a list, it is immutable. `endswith` won't accept a list, but it will accept a tuple. The solution, therefore, is to use the `tuple` function to wrap a tuple around the `us_states` list. Now `endswith` will return `True` if the string it is called on is present in the list, or `False` if it is not.
+    Notice the call to [Python's `tuple` function](https://www.w3schools.com/python/ref_func_tuple.asp) in the second-to-last line. A tuple is similar to a list, but unlike a list, it is immutable. `endswith` won't accept a list, but it will accept a tuple. The solution, therefore, is to use the `tuple` function to wrap a tuple around the `us_states` list.
+
+    Now `endswith` will return `True` if the string it is called on (airport[1] - the second string of the airport list) ends with a string provided in the list (all the state abbreviations), or `False` if it does not.
 
 1. Run the cell and verify that it executes without error. Then add the following code to the empty cell at the end of the notebook to list all U.S. airports:
 
     ```python
     for airport in us_airports:
-        print('{0:8}{1:32}{2:1}'.format(airport[0], airport[1], airport[2]))
+        print(airport)
     ```
 
 1. Run the cell and confirm that the output includes only airports in the United States:

@@ -1,10 +1,10 @@
-Functions are blocks of code that are called by name. They can accept parameters containing input to be operated upon, and they can return values. A function that includes parameters can be called many times with different values passed in, allowing it to behave differently each time it is called.
+Functions are named blocks of code that you can use again by calling their name. They can accept parameters containing input to use within the function, and they can return values. A function that includes parameters can be called many times with different values passed in, allowing it to behave slightly differently each time it is called.
 
 Functions are important because they promote code reuse. Rather than copy-and-paste a block of code 10 times, you can place the same code in a function and call the function 10 times. If you later discover that the code needs to be modified (perhaps because you found a bug), you only have to change it one place.
 
-Python contains more than 60 built-in functions that you can call at any time. You have already used some of these functions: `print`, `input`, `len`, and others. A complete list of built-in functions can be found [here](https://docs.python.org/2/library/functions.html). In addition, strings and other data types have functions such as `split` and `endswith` that you can call to manipulate them. Significantly, you can define functions of your own to help organize your code and make it more readable and more maintainable.
+Python contains more than 60 built-in functions that you can call at any time. You have already used some of these functions: `print`, `input`, `len`, and others. A complete list of built-in functions can be found [here](https://docs.python.org/3/library/functions.html). In addition, strings and other data types have functions such as `split` and `endswith` that you can call to manipulate them. Significantly, you can define functions of your own to help organize your code and make it more readable and more maintainable.
 
-In the previous lesson, you used a simple `if` statement to determine whether an airport is located in the United States. Then you used it to filter a list of all the airports in the world into a list of U.S. airports. In this lesson, you will add logic that permits users to enter the abbreviation for a U.S. state and produce a list (as well as a count) of all the airports in that state. And to make the code clean and compact, you will define your own function.
+In the previous lesson, you used a simple `if` statement to determine whether an airport is located in the United States. Then you used it to filter a list of all the airports in the world into a list of U.S. airports. In this lesson, you will add logic that lets users enter the abbreviation for a U.S. state and produce a list (as well as a count) of all the airports in that state. And to make the code clean and compact, you will define your own function.
 
 ## Defining and using functions
 
@@ -31,17 +31,50 @@ sum = add(2, 2)
 By convention, words in multi-word function names are separated by underscores. (This is a convention, not a requirement.) Here's a function that accepts a list and prints the items in the list:
 
 ```python
-def print_list(items):
-    for item_index, item in enumerate(items):
-        print(str(item_index + 1) + '. ' + item)
+def print_items(items):
+    for item in items:
+        print(item)
 ```
 
-The function shown in the previous example calls a built-in function named `enumerate`. `enumerate` iterates over a sequence and returns a tuple. A tuple is an immutable sequence and is a handy way to return multiple values from a function. (From the previous lesson, recall that a tuple is like a list, but unlike a list, its contents can't be changed.) The tuple returned by `enumerate` contains the item's index as well as the item itself. The following code is valid, but less intuitive and harder to read:
+You could call this function on any list and it would print out each list item on a separate line.
 
 ```python
-def print_list(items):
+my_list = ['apples', 'bananas', 'clementines']
+print_items(my_list)
+
+# outputs:
+# apples
+# bananas
+# clementines
+```
+
+```python
+def print_numbered_items(items):
+    for item_index, item in enumerate(items):
+        print(str(item_index + 1) + '. ' + str(item))
+```
+
+The above function does something very similar, but adds a bit more. You'll see it calls a built-in function named `enumerate`. `enumerate` iterates over a sequence and returns a tuple. A tuple is a handy way to return multiple values from a function. (From the previous lesson, recall that a tuple is like a list, but unlike a list, its contents can't be changed.) The tuple returned by `enumerate` contains the item's index as well as the item itself.
+
+If you call this code with any list, it prints out each list item on a separate line, but the line starts with a number.
+
+```python
+my_list = ['apples', 'bananas', 'clementines']
+print_numbered_items(my_list)
+
+# outputs:
+# 1. apples
+# 2. bananas
+# 3. clementines
+```
+
+The following code is also a valid way of accomplishing the same thing without using `enumerate`:
+
+```python
+def print_numbered_items(items):
+    item_index = 0
     for item in items:
-        print(str(item[0] + 1) + '. ' + item[1])
+        print(str(item_index + 1) + '. ' + str(item))
 ```
 
 Separating the tuple into discrete items named `item_index` and `item` is known as *destructuring*. It's a feature of Python that programmers use to write code that is more easily maintained.
@@ -64,7 +97,7 @@ print(type(result)) # outputs: <class 'NoneType'>
 
 ### Defining default parameter values
 
-Function parameters can be assigned default values. The default value is used if an explicit value isn't specified when the function is called. If a value *is* specified, that value overrides the default value:
+Function parameters can be assigned default values. The default value is used if a value isn't given when the function is called. If a value *is* given, that value overrides the default value:
 
 ```python
 def display_message(msg, msg_type = 'INFO'):
@@ -115,16 +148,16 @@ Now let's enhance your notebook to allow users to interactively query for airpor
     state_airports = get_airports_by_state(us_airports, state)
 
     for airport in state_airports:
-        print('{0:8}{1:32}{2:1}'.format(airport[0], airport[1], airport[2]))
+        print(airport)
     ```
 
-1. Run the cell and enter a state abbreviation such as TN or VA. Then press **Enter**. Confirm that the result is a list of airports in that state:
+1. Run the cell and enter a state abbreviation such as WY or VA. Then press **Enter**. Confirm that the result is a list of airports in that state:
 
-    ![Airports in the state of Tennessee](../media/print-tn-airports.png)
+    ![Airports in the state of Wyoming](../media/print-wy-airports.png)
 
-    _Airports in the state of Tennessee_
+    _Airports in the state of Wyoming_
 
-1. On your own, modify the code in the previous cell to show the number of airports in the specified state:
+1. On your own, modify the code in the previous cell to show the **number** of airports in the specified state:
 
     > Hint: You can use the `len` function to count the number of items in a list. And you can use Python's built-in `str` function to convert the number returned by `len` into a string.
 
@@ -138,10 +171,10 @@ Finish up by using the **File** -> **Save and Checkpoint** command to save the n
 
 You have come a long way in a few short lessons. But there is still more that you can do if you would like. Here are a few suggestions:
 
-- Define a function named `print_airport` that replaces the following line in the previous code sample:
+- Define a function named `print_airport` that replaces the following line in the previous code sample and gives the output nicer formatting. See this helpful site for ideas of how to do string formatting: <https://pyformat.info/>
 
     ```python
-    print('{0:8}{1:32}{2:1}'.format(airport[0], airport[1], airport[2]))
+    print(airport)
     ```
 
     Then replace that statement with calls to `print_airport` like this:
@@ -151,7 +184,7 @@ You have come a long way in a few short lessons. But there is still more that yo
         print_airport(airport)
     ```
 
-    What advantages are there to factoring this single line of code out into a function? Is it possible to define the function in such a way that it accepts parameters specifying the widths of the columns? Would default parameters be useful in this regard so callers could opt to use default column widths without specifying those widths in each call?
+    What advantages are there to creating your own function to replace the default? Is it possible to define the function in such a way that it accepts parameters specifying the widths of the columns? Would default parameters be useful in this regard so callers could opt to use default column widths without specifying those widths in each call?
 
 - Write a function that determines which U.S. state has the most airports
 - Write a function that determines which U.S. city has the most airports
