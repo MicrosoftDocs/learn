@@ -1,4 +1,6 @@
-Andy is going to work with Mara and add unit tests to the automated build that Mara created with Azure Pipelines. Regressions bugs are creeping into their code and breaking the leaderboard's filtering funtionality. Specifically, the wrong game mode keeps appearing. Here's the problem.
+Andy is going to work with Mara and add unit tests to the automated build that Mara created with Azure Pipelines. Regression bugs are creeping into their code and breaking the leaderboard's filtering functionality. Specifically, the wrong game mode keeps appearing.
+
+The following image illustrates Amita's problem. When she selects "Milky Way" to show only scores from that game map, she gets results from other game maps such as Andromeda.
 
 ![The leaderboard showing incorrect results](../media/4-leaderboard-bug.png)
 
@@ -9,6 +11,8 @@ Andy also thinks that adding the unit tests now will give them a head start as t
 There are a number of unit test frameworks available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
 
 Here's the unit test you'll work with, along with Mara and Andy.
+
+<!-- TODO: Should be game map in the test? -->
 
 ```csharp
 [TestCase("Milky Way")]
@@ -41,9 +45,9 @@ public void ReturnRequestedGameMode(string gameMode)
 
 You can filter the leaderboard by any combination of game type and game map.
 
-This test queries the leaderboard for high scores and verifies that each result matches the provided game mode.
+This test queries the leaderboard for high scores and verifies that each result matches the provided game map.
 
-In an NUnit test, `TestCase` provides inline data to use to test that method. Here, NUnit calls the `ReturnRequestedGameMode` unit test method like this:
+In an NUnit test method, `TestCase` provides inline data to use to test that method. Here, NUnit calls the `ReturnRequestedGameMode` unit test method like this:
 
 ```csharp
 ReturnRequestedGameMode("Milky Way");
@@ -53,7 +57,7 @@ ReturnRequestedGameMode("NGC 1300");
 ReturnRequestedGameMode("Messier 82");
 ```
 
-Notice the call to the `Assert.That` method at the end of the test. This method verifies whether the result matches the given condition. NUnit records the result as a passing or failing test.
+Notice the call to the `Assert.That` method at the end of the test. An _assertion_ is a condition or statement that you declare to be true. If the condition turns out to be false, that could indicate a bug in your code. NUnit runs each test method using the inline data you specify and records the result as a passing or failing test.
 
 Many unit test frameworks provide verification methods that resemble natural language. This helps make tests easy to read and maps the test to the application's requirements.
 
@@ -65,7 +69,7 @@ Assert.That(scores, Is.All.Matches<Score>(score => score.GameMode == gameMode));
 
 You might read this line as:
 
-> Assert that the game mode of each returned score matches the provided game mode.
+> _Assert that the game mode of each returned score matches the provided game mode._
 
 Here's the process you'll follow.
 
@@ -305,4 +309,4 @@ Here you'll see the tests run in the pipeline and then visualize the results fro
 <!-- TODO: When/if do we create a PR and merge the `unit-tests` branch? -->
 <!-- TODO: Later: I think we should do this now so the learner can git checkout -b from master -->
 
-Although Mara and Andy have only added one test, it's a good start and fixes the immediate problem. Now, the team has now has a place to add more tests and run them as the improve their process.
+Although Mara and Andy have only added one test, it's a good start and fixes the immediate problem. Now, the team has a place to add more tests and run them as they improve their process.

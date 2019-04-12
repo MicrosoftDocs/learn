@@ -2,7 +2,7 @@ Amita feels much better. She's seeing actual progress in catching bugs and in ea
 
 Andy: I like the idea of unit testing, but I've never found a good way to know when we're done, when we have complete coverage. Are there any good tools we can use with Azure Pipelines?
 
-Mara: We can add in _code coverage_. That will tell us the percentage of our code that has unit tests. A tool we can use is ??? <TODO>
+Mara: We can add in _code coverage_. That will tell us the percentage of our code that has unit tests. We can use a tool called Coverlet to collect coverage information when the tests run.
 
 Andy: That's cool. Sounds like we can establish a baseline and improve over time.
 
@@ -12,7 +12,7 @@ Andy: Great. Getting reports on how much code is covered by unit tests will help
 
 Amita: I'm really excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works and that the user has a good experience.
 
-Mara: That perspective is so important and definitely needs a human being. Right now, Andy and I are working on automated tests--software that tests the software. We're concentrating on tests that execute as the software moves through the build pipeline. 
+Mara: That perspective is so important and definitely needs a human being. Right now, Andy and I are working on automated tests &mdash; software that tests the software. We're concentrating on tests that execute as the software moves through the build pipeline.
 
 That means the two types of tests we've already talked about. The unit tests test individual components and are really fast. Code coverage tells us how much of our code has associated unit tests.
 
@@ -20,13 +20,15 @@ Andy: We should also think about doing lint testing from the command line, befor
 
 Amita: What about regression tests?
 
-Mara: I think of regression tests and unit tests as almost the same thing. Once we fix a bug,we should run the unit tests again. This ensures that our changes haven't broken any units that were already tested. 
+Mara: I think of regression tests and unit tests as almost the same thing. Once we fix a bug, we should run the unit tests again. This ensures that our changes haven't broken any units that were already tested.
 
 Amita: OK, so does that leave integration testing?
 
-Andy: We do integration tests after the build, on the server. That's when we put the units together to make sure everything still works. That's an area where we're weak. At some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies.
+Andy: Integration testing is a bit different. We do integration testing after the build, on the server. While unit tests help you verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests quite yet. 
 
-Mara: Lot's to do.
+But some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies.
+
+Mara: Lots to do.
 
 Amita: Thanks for the rundown! I'm off. Keep me posted.
 

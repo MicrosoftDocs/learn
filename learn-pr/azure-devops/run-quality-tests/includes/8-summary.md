@@ -16,3 +16,5 @@ TODO: This is just a dump for now. Think about this more carefully and position 
 * [Build, test, and deploy .NET Core apps in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/dotnet-core?view=azure-devops&tabs=yaml)
 * [Test Results Trend widget](https://docs.microsoft.com/azure/devops/report/dashboards/configure-test-results-trend?view=azure-devops)
 * [View test analytics for builds](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops#view-test-analytics-for-builds)
+* [Unit test your code](https://docs.microsoft.com/visualstudio/test/unit-test-your-code?view=vs-2019)
+* [Coverlet](https://github.com/tonerdo/coverlet)

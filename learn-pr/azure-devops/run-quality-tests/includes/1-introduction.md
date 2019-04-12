@@ -1,4 +1,4 @@
-Mara, the newest member of the _Space Game_ team is slowly introducing her teammates to DevOps and Azure DevOps services. In particular, she's using Azure Boards and Azure Pipelines to get everyone started. 
+Mara, the newest member of the _Space Game_ team, is slowly introducing her teammates to DevOps and Azure DevOps services. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
 
 So far, her efforts have been one-sided. The entire team identified three issues to start with:
 
@@ -43,7 +43,7 @@ You _could_ run the app locally and try a few inputs. But that takes time and do
 
 In this module, you'll learn how to set up automated testing to help ensure that your latest feature will work, and to help make sure you didn't break anything along the way.
 
-Once you finish this moduole, you will be able to:
+Once you finish this module, you will be able to:
 
 * Run unit tests locally and then in your build pipeline
 * Add dashboard widgets to visualize test runs over time
