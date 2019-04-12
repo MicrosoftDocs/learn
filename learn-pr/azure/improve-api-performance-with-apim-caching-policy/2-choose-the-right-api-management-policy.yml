@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.improve-api-performance-with-apim-caching-policy.2-content
-title: Content
+uid: learn.azure.improve-api-performance-with-apim-caching-policy.2-choose-the-right-api-management-policy
+title: Choose the right API Management policy
 metadata:
-  title: How to write an API management policy
-  description: Content
-  ms.date: 03/06/2019
+  title: Choose the right API Management policy
+  description: In this unit, you will learn about API Management policies and how to execute on API requests.
+  ms.date: 04/12/2019
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
