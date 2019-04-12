@@ -23,5 +23,5 @@ Explore [Anomaly Detection API](https://docs.microsoft.com/azure/machine-learnin
 
 ## References
 
-[(1) EY, “Is Everything that Counts Being Counted?,” Peter Wollmert, 12 November 2018.](https://www.ey.com/en_gl/assurance/how-digital-transformation-of-reporting-connects-trust-and-long-term-value)
+[(1) EY, “Is Everything that Counts Being Counted?,” Peter Wollmert, 12 November 2018.](https://www.ey.com/en_gl/assurance/how-digital-transformation-of-reporting-connects-trust-and-long-term-value)  
 [(2) Accenture, “2018 Compliance Risk Study: Comply and Demand,” Samanth Regan, Ben Shorten, Nesrine Besbes, and Rafael Gomes, 2018.](https://www.accenture.com/t20180322T192051Z__w__/us-en/_acnmedia/PDF-74/Accenture-2018-Compliance-Risk-Study.pdf)
