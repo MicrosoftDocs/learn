@@ -33,7 +33,7 @@ quiz:
     choices: 
     - content: "main() and score()"
       isCorrect: false
-      explanation: "That is correct.  main() and score() are not required."
+      explanation: "That is not correct.  main() and score() are not required."
     - content: "base() and train()"
       isCorrect: false
       explanation: "That is not correct.  base() and train() are not required."
