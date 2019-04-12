@@ -1,4 +1,4 @@
-Now that FashionFindr has a prototype that addresses your mission, your team wants to pitch that prototype to a potential investor. When you're pitching to a specific person or group of people, investors, potential new customers, a conference or event audience, you need to tailor your message to that audience.
+Now that FashionFindr has a prototype that addresses your mission, your team wants to pitch that prototype to a potential investor. When you're pitching to a specific person or group of people, investors, potential new customers, a conference, or event audience, you need to tailor your message to that audience.
 
 Every audience has a different focus, let's look at the two audiences you'll likely most frequently pitch to: investors and customers.
 
@@ -6,7 +6,7 @@ Every audience has a different focus, let's look at the two audiences you'll lik
 
 Investors are focused on your product, plans, and your potential to make money. They want to be sure the money they invest with you gives them a return.
 
-Investors also want to know the mechanics of your business. It's not just your product, it's also the go-to-market strategy that explains how you will acquire customers for your product and make money. When pitching to investors, it is crucial to research them and what they are interested in. You should review their prior work history, their other investments, and their interests.
+Investors also want to know the mechanics of your business. It's not just your product, it's also the go-to-market strategy that explains how you'll acquire customers for your product and make money. When pitching to investors, it's crucial to research them and what they're interested in. You should review their prior work history, their other investments, and their interests.
 
 Pay particular attention to those prior investments and their investment thesis. There are some critical questions to answer, that might help understand if this investor is going to be interested in you?
 
@@ -22,12 +22,14 @@ Customers are focused on your product and how it helps them. They want to ensure
 
 For FashionFindr, maybe you're pitching to a fashion or retail company to add their products to your app. The customer will want to understand:
 
-* Why they benefit from being part of your ecosystem.
+* Why their company benefits from being part of your ecosystem.
 * How any integration will work, and most importantly,
-* How much money they will get from the deal.
+* How much money they'll get from the deal.
 
-For customers, you need to understand their products, markets, current competitors, their business model and be able to articulate how you fit into their world.
+For customers, you need to understand their products, markets, current competitors, and their business model. You need to articulate how you fit into their world.
 
 ## Connect with the audience
 
-You'll need this information about your audience to both set the stage and to answer questions they will have for you. For FashionFindr, it could also be essential to find an entry point: a resonance that allows the investor to see the problem in light of their own experiences, empathize with the customer or engages their economic interests. This entry point will enable us to share, to a more receptive audience, why our solution solves the problem.
+You'll need this information about your audience to both set the stage and to answer questions they'll have for you. For FashionFindr, it could also be essential to find an entry point: a resonance that allows the investor to see the problem in light of their own experiences, empathize with the customer or engages their economic interests. This entry point will enable us to share, to a more receptive audience, why our solution solves the problem.
+
+Think through what your audience might ask. Identify a "frequently asked questions" list of things you've been asked or expect to be asked. Have answers to those questions. Looking and acting like you have everything at your fingertips and are the expert will make you appear confident and help earn the respect of the audience.

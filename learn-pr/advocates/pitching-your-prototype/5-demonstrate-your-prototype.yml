@@ -16,18 +16,21 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or false: When you demo your prototype you should demostrate your key user flows."
+  - content: "When you demo your prototype what should you always make sure the audience sees?"
     choices:
-    - content: "True"
+    - content: "Your key user flows."
       isCorrect: true
       explanation: "It's crucial your audience sees the key user flows so they understand how it works and what customers will experience."
-    - content: "False"
+    - content: "The security features of your app."
       isCorrect: false
-  - content: "True or false: You shouldn't talk about future features."
+    - content: "The social sharing features of your app."
+      isCorrect: false  
+  - content: "Why is it important to share your future product roadmap?"
     choices:
-    - content: "True"
+    - content: "It's not and you should avoid it."
       isCorrect: false
-    - content: "False"
+    - content: "So your audience knows how many engineers you need to hire."
+      isCorrect: false
+    - content: "So your audience understands the future of your product."
       isCorrect: true
-      explanation: "It's important to share your roadmap so your audience understands the future of the product."
-
+      explanation: "Your audience wants to know you have a future plan for your product to help them understand how it will grow."

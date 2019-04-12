@@ -18,9 +18,9 @@ quiz:
   questions:
   - content: "Which of these statements is a good elevator pitch?"
     choices:
-    - content: "We're building a cool product that'll change the world!"
+    - content: "We're building a cool product that will change the world!"
       isCorrect: false
-      explanation: "Gives no detail of the product or how it'll change the world."
+      explanation: "Gives no detail of the product or how it will change the world."
     - content: "FashionFindr is building a platform that will help consumers find and buy the fashions they love."
       isCorrect: true
       explanation: "Clear and direct expression of the FashionFindr mission."
