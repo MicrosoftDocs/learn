@@ -24,6 +24,7 @@ roles:
 - developer
 - solution-architect
 products:
+- azure
 - azure-databricks
 units:
 - learn.streaming-in-azure-databricks.1-introduction

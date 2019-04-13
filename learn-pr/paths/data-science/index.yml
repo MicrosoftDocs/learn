@@ -23,6 +23,7 @@ roles:
 - data-engineer
 products:
 - azure
+- azure-databricks
 modules:
 - learn.intro-to-azure-databricks
 - learn.read-and-write-data-using-azure-databricks
