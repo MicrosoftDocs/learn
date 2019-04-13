@@ -1,6 +1,6 @@
-The last component of a pitch is the ask. This ask might be a call to action to use the product, to buy it, or frequently, to raise money to develop the product further. For FashionFindr, they're seeking 2 million dollars in investment that they will use to develop the prototype into a fully fledged product.
+The last component of a pitch is the "ask". This ask might be a call to action to use the product, to buy it, or frequently, to raise money to develop the product further. For FashionFindr, they're seeking 2 million dollars in investment that they will use to develop the prototype into a fully fledged product.
 
-In some regards, the ask is the easiest part of the pitch. You only need to articulate:
+In some regards, the "ask" is the easiest part of the pitch. You only need to articulate:
 
 * What you want.
 * What you are going to do with the results of that ask.

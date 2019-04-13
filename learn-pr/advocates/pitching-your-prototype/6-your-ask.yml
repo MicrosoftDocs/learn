@@ -13,13 +13,3 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-your-ask.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "True or false: You don't need to explain what you're going to do with whatever you ask for."
-    choices:
-    - content: "True"
-      isCorrect: false
-    - content: "False"
-      isCorrect: true
-      explanation: "Your audience is going to want to know what they get for their money and what you are going to do with it."
