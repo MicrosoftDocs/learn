@@ -40,4 +40,4 @@ It was this unique combination of challenges that led to BioCatch’s creation o
 4. How can FSI businesses truly differentiate their products from the competition in the minds of their customers?
 5. How can cybersecurity be proactive, rather than reactive?
 
-Now that you’ve gained context on the challenge of cybercrime that the financial services industry has encountered along with its digital transformation and considered critical questions to answer before implementing AI in the industry, watch the executive perspective video with Ganesh Padmanabhan, Head of Cognitive Scale's Biz Dev & Marketing.
+Now that you understand the context of the digitized financial service industry’s cybercrime challenge, and you’ve considered critical questions to answer before implementing AI in the industry, watch the executive perspective video with Ganesh Padmanabhan, Head of Cognitive Scale's Biz Dev & Marketing.

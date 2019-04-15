@@ -2,7 +2,7 @@
 uid: learn-wwl.ai-strategy-in-financial-services
 metadata:
   title: Define an AI strategy to create business value in financial services
-  description: AI has the capacity to empower all people to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI, and they need to start today.
+  description: To realize the true transformational impact of AI in financial services, decision-makers must consider the special factors that apply only to their industry. To create real business value, a comprehensive understanding of all the strategic components is required.
   ms.date: 04/26/2019
   author: barlanmsft
   ms.author: rawortma
@@ -10,10 +10,10 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlanmsft
 title: Define an AI strategy to create business value in financial services
-summary: AI has the capacity to empower all people to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI, and they need to start today.
+summary: To realize the true transformational impact of AI in financial services, decision-makers must consider the special factors that apply only to their industry. To create real business value, a comprehensive understanding of all the strategic components is required.
 abstract: | 
   In this module, you will:
-  - Describe the outcomes those in the financial services industry have achieved through the adoption of AI.
+  - Describe financial service industry outcomes achieved through the adoption of AI.
   - Articulate the components of an AI strategy.
   - Apply the value creation framework.
 prerequisites: None

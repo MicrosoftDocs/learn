@@ -1,8 +1,8 @@
-In financial services, new technology is being used to replace or improve existing processes, in some cases. In other cases, organizations are leveraging AI to pioneers new, innovative ideas and approaches to the sector. Financial services is an important industry for understanding not only the how organizations have digitally transformed, but also and critically the acceleration that the adoption of an AI strategy will bring.
+In many cases, new technology is being used to replace or improve existing processes in the financial services industry. In other cases, organizations are leveraging AI to pioneer new, innovative ideas and approaches in the sector. The nature of this transformation in the financial services industry is key to understanding not only how organizations have digitally transformed, but also - critically - the acceleration that the adoption of an AI strategy will bring.
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the outcomes those in the financial services industry have achieved through the adoption of AI.
+* Describe the outcomes the financial services industry has achieved through AI adoption.
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 
