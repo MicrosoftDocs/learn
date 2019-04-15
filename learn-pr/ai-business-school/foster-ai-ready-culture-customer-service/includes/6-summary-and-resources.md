@@ -1,10 +1,10 @@
-Across Microsoft we have learned that it’s important to maintain the relevancy of AI solutions by enabling them to learn and improve continuously and by adapting how and where we use them as business evolves. As you think about adopting and implementing AI, consider your AI transformation holistically. 
+Microsoft have learned that it’s important to maintain the relevancy of AI solutions by enabling them to learn and improve continuously – as well as adapting how and where AI solutions are used, as business evolves. As you think about adopting and implementing AI, consider your AI transformation holistically.
 
 Now that you have reviewed this module, you should be able to:
 
-* Recognize the key elements of an AI-ready organizational culture in customer service. 
-* Explain how Microsoft incorporated AI into our customer service processes.
-* Identify opportunities for change to achieve an AI-ready culture in your customer service department. 
+* Recognize the key elements of an AI-ready organizational culture in customer service.
+* Explain how Microsoft incorporated AI into their customer service processes.
+* Identify opportunities for change to achieve an AI-ready culture in your customer service department.
 
 ## Use these resources to discover more
 

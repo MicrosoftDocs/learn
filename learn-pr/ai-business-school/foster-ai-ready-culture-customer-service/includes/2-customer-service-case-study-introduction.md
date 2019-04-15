@@ -46,4 +46,4 @@ The following are questions you can use to start thinking about how to implement
 
 Depending on your organization’s level of AI maturity, your ability to implement AI will vary. We recommend that you evaluate your AI maturity by asking questions like: Is your organization an early adopter of technology or do you wait until it has matured? Do you have governance structures in place to ensure AI applications are driving towards your desired business outcomes?
 
-Now that you’ve gained context on the challenges customer service organizations face today and considered critical questions to answer before implementing AI, watch the executive perspective video with Aileen Allkins, Microsoft Corporate Vice President of Customer Service & Support.
+Now that you understand the context of the challenges customer service organizations face today, and you’ve considered critical questions to answer before implementing AI, watch the executive perspective video with Aileen Allkins, Microsoft Corporate Vice President of Customer Service & Support.
