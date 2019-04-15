@@ -3,7 +3,7 @@ In this module, you learned how to:
 - Scale a web app in and out manually.
 - Scale a web app up and down.
 
-These two features enable you to support a varying load in a web app, while remaining cost effective.
+These two features enable you to support a varying load in a web app while still remaining cost effective.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
