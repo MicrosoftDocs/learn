@@ -13,3 +13,28 @@ title: Features of Azure Monitor logs
 durationInMinutes: 10
 content: |
   [!include[](includes/2-features-of-azure-monitor-log.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What data does Azure Monitor collect?"
+    choices:
+    - content: "To help monitor database performance."
+      isCorrect: true
+      explanation: "In the Azure portal, you can monitor an individual databases utilization by selecting your database and clicking the Monitoring chart. This brings up a Metric window that you can change by clicking the Edit chart button"
+    - content: "Azure Monitor can collects tiers of data monitoring from a variety of sources."
+      isCorrect: true
+      explanation: "Azure Monitor helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on"
+    - content: "Authentication and Authorization."
+      isCorrect: false
+      explanation: "Azure Monitor can collect information regarding application monitoring, performance and functionality."
+  - content: "What two fundamental types of data are collected by Azure Monitor?"
+    choices:
+    - content: "Logs and Metrics"
+      isCorrect: True
+      explanation: "All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs. Metrics are numerical values that describe some aspect of a system at a particular point in time. Logs contain different kinds of data organized into records, such as events"
+    - content: "Username and password"
+      isCorrect: false
+      explanation: "Azure Monitor collects and aggregates data from a variety of sources into a common data platform where it can be used for analysis."
+    - content: "Email notifications and Errors"
+      isCorrect: false
+      explanation: "Use Azure Monitor to send an Email Notifications for Azure Security Center Alerts. Azure Security Center allows you to provide a security contact that will receive email notifications for Security Alerts."
