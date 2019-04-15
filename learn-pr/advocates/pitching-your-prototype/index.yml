@@ -19,7 +19,10 @@ abstract: |
  - Explain how your product will make money.
  - Create a demonstration strategy for a product prototype.
  - Create a call to action for your audience.
-prerequisites: None
+prerequisites: |
+ - You should have a broad understanding of product management and road maps.
+ - You should have given some thought to your proposed revenue model.
+ - You should have given some thought to your company's exit strategy.
 # TODO - update icon URL
 iconUrl: http://via.placeholder.com/120x120
 levels:
