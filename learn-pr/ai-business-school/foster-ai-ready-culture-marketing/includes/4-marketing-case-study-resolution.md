@@ -82,4 +82,4 @@ We designed our AI applications to contribute to these same activities that we r
 
 As you can see, because our AI solutions are built on the same collaborative principles that we recognize and reward our employees for, our entire company is able to achieve more with AI.
 
-Now that you’ve considered various aspects of what it means to have an AI-ready culture, let’s wrap up everything you’ve learned with a knowledge check.
+Now that you’ve considered various aspects of what it means to have an AI-ready culture in marketing, let’s wrap up everything you’ve learned with a knowledge check.

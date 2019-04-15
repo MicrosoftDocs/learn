@@ -1,10 +1,10 @@
-Across Microsoft we have learned that it’s important to maintain the relevancy of AI solutions by enabling them to learn and improve continuously and by adapting how and where we use them as business evolves. As you think about adopting and implementing AI, consider your AI transformation holistically. 
+Microsoft have learned that it’s important to maintain the relevancy of AI solutions by enabling them to learn and improve continuously – as well as adapting how and where AI solutions are used, as business evolves. As you think about adopting and implementing AI, consider your AI transformation holistically.
 
 Now that you have reviewed this module, you should be able to:
 
-* Recognize the key elements of an AI-ready organizational culture in customer service. 
-* Explain how Microsoft incorporated AI into our customer service processes.
-* Identify opportunities for change to achieve an AI-ready culture in your customer service department. 
+* Recognize the key elements of an AI-ready organizational culture in customer service.
+* Explain how Microsoft incorporated AI into their customer service processes.
+* Identify opportunities for change to achieve an AI-ready culture in your customer service department.
 
 ## Use these resources to discover more
 
@@ -17,6 +17,6 @@ Learn [how AI is helping businesses boost their team collaborations](https://inf
 
 ## References
 
-[(1) Gladly, “2018 Customer Service Expectations Report,” 2018.](https://go.gladly.com/2018report)
-[(2) Gartner Press Release, “Gartner Says 25 Percent of Customer Service Operations Will Use Virtual Customer Assistants by 2020,” 19 February 2018.](https://www.gartner.com/newsroom/id/3858564)
-[(3) TSIA, “Meeting Customer Demands with Social Support,” TSIA Public Webinar, Tim Lopez, 10 August 2018.](https://www.tsia.com/webinars/meeting-customer-demands-with-social-support)
+[(1) Gladly, “2018 Customer Service Expectations Report,” 2018.](https://go.gladly.com/2018report)  
+[(2) Gartner Press Release, “Gartner Says 25 Percent of Customer Service Operations Will Use Virtual Customer Assistants by 2020,” 19 February 2018.](https://www.gartner.com/newsroom/id/3858564)  
+[(3) TSIA, “Meeting Customer Demands with Social Support,” TSIA Public Webinar, Tim Lopez, 10 August 2018.](https://www.tsia.com/webinars/meeting-customer-demands-with-social-support)  

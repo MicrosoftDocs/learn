@@ -2,7 +2,7 @@ From search to e-commerce to brick-mining, retail is an important industry for u
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the outcomes retailers have achieved through the adoption of AI.
+* Describe retail industry outcomes achieved through the adoption of AI.
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 

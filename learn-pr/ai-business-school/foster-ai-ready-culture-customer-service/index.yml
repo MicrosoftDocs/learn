@@ -2,7 +2,7 @@
 uid: learn-wwl.foster-ai-culture-customer-service
 metadata:
   title: Discover how to foster an AI-ready culture in customer service
-  description: This unit is designed for customer service and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  description: A successful AI strategy in customer service must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
   ms.date: 04/26/2019
   author: barlanmsft
   ms.author: rawortma
@@ -10,11 +10,11 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlanmsft
 title: Discover how to foster an AI-ready culture in customer service
-summary: A successful AI strategy in customer service must consider cultural issues as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+summary: A successful AI strategy in customer service must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
 abstract: | 
   In this module, you will:
   - Recognize the key elements of an AI-ready organizational culture in customer service. 
-  - Explain how Microsoft incorporated AI into our customer service processes.
+  - Explain how Microsoft incorporated AI into customer service processes.
   - Identify opportunities for change to achieve an AI-ready culture in your customer service department. 
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.foster-ai-culture-customer-service.introduction
 - learn-wwl.foster-ai-culture-customer-service.customer-service-case-study-introduction

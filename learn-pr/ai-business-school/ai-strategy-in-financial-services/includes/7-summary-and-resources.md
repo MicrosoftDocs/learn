@@ -1,8 +1,8 @@
-In financial services, new technology is being used to replace or improve existing processes, in some cases. In other cases, organizations are leveraging AI to pioneers new, innovative ideas and approaches to the sector. Financial services is an important industry for understanding not only the how organizations have digitally transformed, but also and critically the acceleration that the adoption of an AI strategy will bring.
+In many cases, new technology is being used to replace or improve existing processes in the financial services industry. In other cases, organizations are leveraging AI to pioneer new, innovative ideas and approaches in the sector. The nature of this transformation in the financial services industry is key to understanding not only how organizations have digitally transformed, but also - critically - the acceleration that the adoption of an AI strategy will bring.
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the outcomes those in the financial services industry have achieved through the adoption of AI.
+* Describe the outcomes the financial services industry has achieved through AI adoption.
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 
@@ -17,8 +17,8 @@ Check the [Banking on AI e-book](https://info.microsoft.com/ww-landing-Banking-o
 
 ## References
 
-[(1) Adobe and Econsultancy, “2018 Digital Trends in Financial Services,” 2018](https://wwwimages2.adobe.com/content/dam/acom/uk/modal-offers/pdfs/Econsultancy-2018-Digital-Trends-FS_EMEA.pdf)
-[(2) Center for Strategic and International Studies, “Net Losses: Estimating the Global Cost of Cybercrime: Economic impact of cybercrime II,” June 2014](https://csis-prod.s3.amazonaws.com/s3fs-public/legacy_files/files/attachments/140609_rp_economic_impact_cybercrime_report.pdf)
-[(3) Harrel, “Victims of Identity Theft,” 2016](https://www.bjs.gov/content/pub/pdf/vit16.pdf)
-[(4) Medallia, “’Experience Factors’ Have Biggest Impact on Millennials’ Banking Choices, New Study Finds,” 2015](https://www.medallia.com/press-release/experience-factors-have-biggest-impact-on-millennials-banking-choices-new-study-finds/)
-[(5) Mayhew, “BioCatch places 12th on Deloitte’s 2018 Technology Fast 500,” 21, November 2018](https://www.biometricupdate.com/201811/biocatch-places-12th-on-deloittes-2018-technology-fast-500)
+[(1) Adobe and Econsultancy, “2018 Digital Trends in Financial Services,” 2018](https://wwwimages2.adobe.com/content/dam/acom/uk/modal-offers/pdfs/Econsultancy-2018-Digital-Trends-FS_EMEA.pdf)  
+[(2) Center for Strategic and International Studies, “Net Losses: Estimating the Global Cost of Cybercrime: Economic impact of cybercrime II,” June 2014](https://csis-prod.s3.amazonaws.com/s3fs-public/legacy_files/files/attachments/140609_rp_economic_impact_cybercrime_report.pdf)  
+[(3) Harrel, “Victims of Identity Theft,” 2016](https://www.bjs.gov/content/pub/pdf/vit16.pdf)  
+[(4) Medallia, “’Experience Factors’ Have Biggest Impact on Millennials’ Banking Choices, New Study Finds,” 2015](https://www.medallia.com/press-release/experience-factors-have-biggest-impact-on-millennials-banking-choices-new-study-finds/)  
+[(5) Mayhew, “BioCatch places 12th on Deloitte’s 2018 Technology Fast 500,” 21, November 2018](https://www.biometricupdate.com/201811/biocatch-places-12th-on-deloittes-2018-technology-fast-500)  

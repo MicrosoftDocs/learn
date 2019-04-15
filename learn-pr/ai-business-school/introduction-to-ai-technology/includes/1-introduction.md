@@ -1,9 +1,9 @@
-Can AI help sellers generate new business pipeline, pitch the right services at the right time, and streamline their call preparation so they can spend more time bringing value to our customers? This module is designed for sales and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+What is AI? How does it work? What do I need to know to bring AI into my business? Introduction to AI Technology is a starting point for business decision makers who would like to obtain a high-level overview of state-of-the-art AI, the fundamental concepts that make it real today, and the technologies behind it.
 
 **In this module, you will learn to:**
 
-* Recognize the key elements of an AI-ready organizational culture in sales.
-* Explain how Microsoft incorporated AI into our sales processes.
-* Identify opportunities for change to achieve an AI-ready culture in your sales department.
+* Describe the primary technological components of an AI strategy.
+* Describe the methods of Machine Learning.
+* Articulate how AI technology can solve business problems.
 
-Let’s explore what we mean when ask you to think about what it means for your sales department to be AI-ready.
+Next, let’s examine the following question: “Why AI now?”

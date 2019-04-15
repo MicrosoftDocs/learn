@@ -39,4 +39,4 @@ The following questions can help guide conversations both internal and external 
 
 Depending on your organization’s level of AI maturity, your ability to implement AI will vary. We recommend that you evaluate your AI maturity by asking questions like: Is your organization an early adopter of technology or do you wait to implement technology after it has matured? Do you have governance structures in place to ensure AI applications are driving towards your desired business outcomes?
 
-Now that you’ve gained context on the challenges sales organizations face today and considered critical questions to answer before implementing AI, watch the executive perspective video with Jean-Philippe Courtois, Microsoft Executive Vice President and President, Global Sales, Marketing, and Operations.
+Now that you understand the context of the challenges sales organizations face today, and considered critical questions to answer before implementing AI, watch the executive perspective video with Jean-Philippe Courtois, Microsoft Executive Vice President and President, Global Sales, Marketing, and Operations.

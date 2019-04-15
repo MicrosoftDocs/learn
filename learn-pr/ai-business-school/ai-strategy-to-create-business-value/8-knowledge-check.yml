@@ -16,22 +16,59 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question 1 (True/False)"
+  - content: "One way in which companies are integrating AI is the implementation of platforms that customers can interact with. Which type of intelligence are these platforms based on?"
     choices:
-    - content: "True"
+    - content: "Cognitive Intelligence"
       isCorrect: true
-      explanation: "Explanation for the correct answer"
-    - content: "False"
+      explanation: "Cognitive intelligence involves the ability to reason and solve problems. It is cognitive intelligence that AI interactive platforms are based upon."
+    - content: "Naturalistic Intelligence"
       isCorrect: false
-      explanation: "Explanation for the incorrect answer"
-  - content: "Question 2 (multiple choice, at this time only one correct answer allowed)"
+      explanation: "Naturalistic intelligence involves an innate sensitivity to the natural world, which is not what AI is based on."
+    - content: "Intra-personal Intelligence"
+      isCorrect: false
+      explanation: "Intra-personal intelligence involves an understanding of one’s inner self and does not involve AI."
+    - content: "Spatial Intelligence"
+      isCorrect: false
+      explanation: "Spatial intelligence has to do with the ability to think in 3 dimensions, which is not what AI is based on."
+  - content: "From an employee perspective, what is one of the primary goals of digitizing your organization?"
     choices:
-    - content: "Answer option 1"
+    - content: "Create a technical aptitude baseline for all team members."
       isCorrect: false
-      explanation: "Explanation for the incorrect answer"
-    - content: "Answer option 2"
+      explanation: "While creating a technical aptitude baseline for team members is part of the transformation process, it is not a primary goal."
+    - content: "Extend the life cycles of legacy equipment and infrastructure."
       isCorrect: false
-      explanation: "Explanation for the incorrect answer"
-    - content: "Answer option 3"
+      explanation: "Part of the transformational process is to replace and eliminate legacy infrastructure that no longer adds value to the organization."
+    - content: "Break down silos that hamper communication and collaboration."
       isCorrect: true
-      explanation: "Explanation for the correct answer" 
+      explanation: "One of the main goals of digital transformation is to connect all of your data and unify your employees into effective teams."
+    - content: "Transfer all decision-making processes over to AI to eliminate human variability."
+      isCorrect: false
+      explanation: "One of the primary purposes of AI is to give employees more information and tools to empower them to solve customer problems and create value."
+  - content: "What is a crucial step that companies must accomplish in order to realize the full potential of AI?"
+    choices:
+    - content: "Eliminate unstructured data in order to streamline the data retrieval process."
+      isCorrect: false
+      explanation: "Data may be unstructured, but it has value to the organization. Through the integration of AI, this data can be queried and sorted in near real time."
+    - content: "Enable every employee to become a citizen data scientist."
+      isCorrect: true
+      explanation: "Companies must ensure that non-technical employees are able to leverage the benefits of AI as well in order to explore vast amounts of data contained within the organizations."
+    - content: "Rearchitect their enterprise datacenters to become cloud-first organizations."
+      isCorrect: false
+      explanation: "Although cloud integration is helping companies attain greater scalability and agility, being cloud first is not mandatory."
+    - content: "Provide multiple channels for technical and non-technical users alike."
+      isCorrect: false
+      explanation: "The goal of digital transformation and AI is funnel to all interaction into a single channel for all users."
+  - content: "Which is an example of a fundamental technology benefiting from the advances and investment in machine learning-based AI?"
+    choices:
+    - content: "Natural Language Processing"
+      isCorrect: true
+      explanation: "Through natural language processing, companies are leveraging the power of AI to communicate with their customers in real time."
+    - content: "Software defined storage"
+      isCorrect: false
+      explanation: "Although the faster speed of data storage processing is helping to make AI possible, it is not benefitting from AI."
+    - content: "Hyperconverged Infrastructure"
+      isCorrect: false
+      explanation: "Hyperconverged Infrastructure is about datacenter component consolidation, not AI."
+    - content: "DNA storage"
+      isCorrect: false
+      explanation: "Molecular-level data storage into DNA molecules by leveraging biotechnology advances in synthesizing, manipulating and sequencing DNA to develop archival storage is not yet benefitting from AI."

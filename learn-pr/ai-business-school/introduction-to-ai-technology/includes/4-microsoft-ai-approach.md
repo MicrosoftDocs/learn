@@ -1,7 +1,9 @@
-Watch this video from Jean-Phlippe Courtois, Executive Vice President and President, Microsoft Global Sales, Marketing and Operations, as he shares how his leadership team is creating an AI-ready culture, the role of the chain-of-command in building trust in AI, and his reflections on where to start with implementing AI.
+Watch this video from David Carmona, General Manager of Microsoft AI, to hear how Microsoft is turning the latest advances in AI into tools, products, and services that can be leveraged by organizations to implement an AI strategy.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWv3pN]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtIMP]
 
-Your organization’s leadership team is critical to the successful adoption of AI. Leaders have the responsibility to establish the North Star, to inspire the organization, to nurture the cultural transformation, to ensure the initiatives are funded, keep teams on track, and celebrate the milestones. These are the responsibilities of not just the executive leaders but the first-line managers as well.
+David Carmona explains that there are three things you can do to bring AI to your company: create intelligent applications, optimize business processes, and empower your employees through AI.
 
-Next, learn how Microsoft implemented an AI-based guided selling application, the Daily Recommender, which provides sellers with data-driven insights and actionable product recommendations to help them increase conversion rates and productivity.
+Every organization can leverage pre-built AI services to help bring more knowledge to each employee. Organizations can also leverage a conversational AI platform with pre-built AI services to power digital agents and bring knowledge to customers. When optimizing business processes with AI, you can use packaged source solutions or create a custom AI solution. When looking to bring AI to every employee, you need to understand both how employees consume AI, and how new AI models have the potential to turn all employees into citizen data scientists.
+
+Now that you’ve learned how to bring AI to every employee, let’s dive more in to machine learning.

@@ -14,7 +14,7 @@ summary: This module is designed for finance and affiliated business decision-ma
 abstract: | 
   In this module, you will:
   - Recognize the key elements of an AI-ready organizational culture in finance.
-  - Explain how Microsoft incorporated AI into our finance processes. 
+  - Explain how Microsoft incorporated AI into its finance processes. 
   - Identify opportunities for change to achieve an AI-ready culture in your finance department.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- dynamics
+- m365
 units: 
 - learn-wwl.foster-ai-culture-finance.introduction
 - learn-wwl.foster-ai-culture-finance.finance-case-study-introduction

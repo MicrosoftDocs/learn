@@ -1,9 +1,9 @@
-Across Microsoft we have learned the importance of establishing an end-to-end AI strategy supported by leadership and first-line managers, focusing on where AI can drive the most value, and narrowing technology implementation to match AI maturity. As you think about adopting and implementing AI, consider your AI transformation holistically.
+Microsoft have learned the importance of establishing an end-to-end AI strategy supported by leadership and first-line managers, focusing on where AI can drive the most value, and narrowing technology implementation to match AI maturity. As you think about adopting and implementing AI, consider your AI transformation holistically.
 
 Now that you have reviewed this module, you should be able to:
 
 * Recognize the key elements of an AI-ready organizational culture in sales.
-* Explain how Microsoft incorporated AI into our sales processes.
+* Explain how Microsoft incorporated AI into sales processes.
 * Identify opportunities for change to achieve an AI-ready culture in your sales department.
 
 ## Use these resources to discover more

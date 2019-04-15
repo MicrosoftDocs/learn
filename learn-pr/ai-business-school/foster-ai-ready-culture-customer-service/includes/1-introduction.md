@@ -2,8 +2,8 @@ Can AI help create a better service experience by equipping agents with predicti
 
 **In this module, you will learn to:**
 
-* Recognize the key elements of an AI-ready organizational culture in customer service. 
-* Explain how Microsoft incorporated AI into our customer service processes.
-* Identify opportunities for change to achieve an AI-ready culture in your customer service department. 
+* Recognize the key elements of an AI-ready organizational culture in customer service.
+* Explain how Microsoft incorporated AI into customer service processes.
+* Identify opportunities for change to achieve an AI-ready culture in your customer service department.
 
-Let’s explore what we mean when ask you to think about what it means for your customer service department to be AI-ready.
+Let’s explore what it means for your customer service department to be AI-ready.

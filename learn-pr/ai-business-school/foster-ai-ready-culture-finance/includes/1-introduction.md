@@ -3,7 +3,7 @@ Can a finance department intelligently automate processes and empower employees 
 **In this module, you will learn to:**
 
 * Recognize the key elements of an AI-ready organizational culture in finance.
-* Explain how Microsoft incorporated AI into our finance processes.
+* Explain how Microsoft incorporated AI into its finance processes.
 * Identify opportunities for change to achieve an AI-ready culture in your finance department.
 
-Let’s explore what we mean when ask you to think about what it means for your finance department to be AI-ready.
+Let’s explore what we mean when we ask you to think about what it means for your finance department to be AI-ready.

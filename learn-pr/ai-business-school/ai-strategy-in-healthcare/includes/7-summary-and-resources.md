@@ -1,8 +1,8 @@
-There has never been a greater opportunity than now to meaningfully advance and transform every facet of healthcare. Understanding the value creation that AI adoption can bring to patient, providers, and payors, and also the strategies for its adoption in this highly regulated space is critical.
+There has never been a better time than now to meaningfully advance and transform every facet of healthcare. Understanding the value creation that AI adoption can bring to patients, providers, and payors, and having a comprehensive grasp of the strategies for its adoption in this highly regulated space, is critical.
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the outcomes those in the healthcare industry have achieved through the adoption of AI.
+* Describe healthcare industry outcomes achieved through the adoption of AI
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 

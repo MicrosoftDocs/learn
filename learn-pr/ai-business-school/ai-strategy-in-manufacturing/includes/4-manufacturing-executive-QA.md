@@ -2,6 +2,6 @@ In the highly competitive manufacturing business, Jabil is focused on becoming t
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDlg]
 
-Gary Cantrell suggests that with AI, manufacturers will be able to increase throughput and scale products more effectively, and at a higher speed. This will also enable manufacturers to use more interchangeable systems to be more flexible with the products being delivered from a single line and allowing for the manufacture of smaller batches of product. This is cost effective.
+Gary Cantrell suggests that with AI, manufacturers will be able to increase throughput and scale products more effectively, at a higher speed. This will also enable manufacturers to use more interchangeable systems to be more flexible with the products being delivered from a single line, and it will also allow for the manufacture of smaller batches of product – which is much more cost effective.
 
-Next, Let’s look at how Jabil transformed manufacturing outcomes with AI by aligning AI investments with business priorities to leverage it in a way that provided immediate value.
+Next, let’s look at how Jabil transformed manufacturing outcomes with AI by aligning AI investments with business priorities to leverage it in a way that provided immediate value.

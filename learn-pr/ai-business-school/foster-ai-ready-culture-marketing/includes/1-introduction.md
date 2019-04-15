@@ -3,7 +3,7 @@ Can a marketing team intelligently improve conversion rates and reduce the time 
 **In this module, you will learn to:**
 
 * Recognize the key elements of an AI-ready organizational culture in marketing.
-* Explain how Microsoft incorporated AI into our marketing processes.
+* Explain how Microsoft incorporated AI into their marketing processes.
 * Identify opportunities for change to achieve an AI-ready culture in your marketing department.
 
 Let’s explore what we mean when ask you to think about what it means for your marketing department to be AI-ready.

@@ -1,4 +1,4 @@
-How can Microsoft help organizations adopt AI and partner on the implementation of an AI strategy? This module will help you to understand how Microsoft is creating products, services, and solutions for organizations to leverage AI. Here, we will also help you to understand how these technologies relate to business problems.
+How can Microsoft help businesses adopt AI, and how can it partner with organizations to implement an AI strategy? This module will help you to understand how Microsoft is creating products, services, and solutions to help organizations leverage AI. We’ll also help you to understand how these technologies relate to particular business problems.
 
 **In this module, you will learn to:**
 

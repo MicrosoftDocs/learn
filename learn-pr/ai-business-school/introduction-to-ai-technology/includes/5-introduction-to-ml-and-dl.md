@@ -1,7 +1,7 @@
-Watch this video from Jean-Phlippe Courtois, Executive Vice President and President, Microsoft Global Sales, Marketing and Operations, as he shares how his leadership team is creating an AI-ready culture, the role of the chain-of-command in building trust in AI, and his reflections on where to start with implementing AI.
+Watch this video from Matt Winkler, Group Engineering Manager, Azure Customer Advisory Team, to gain a high-level understanding of machine learning and deep learning concepts, as well as an explanation of how these technologies can benefit your business. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWv3pN]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQBv]
 
-Your organization’s leadership team is critical to the successful adoption of AI. Leaders have the responsibility to establish the North Star, to inspire the organization, to nurture the cultural transformation, to ensure the initiatives are funded, keep teams on track, and celebrate the milestones. These are the responsibilities of not just the executive leaders but the first-line managers as well.
+Matt Winkler’s talk showcases the way machine learning is being used in businesses across all kinds of industries. Organizations can leverage huge data sets to make predictions to create better business results. Winkler also reviewed what a machine learning model is, how it is created, and examples of how regression, classification, and clustering models can be built and used.
 
-Next, learn how Microsoft implemented an AI-based guided selling application, the Daily Recommender, which provides sellers with data-driven insights and actionable product recommendations to help them increase conversion rates and productivity.
+Now that you’ve learned how to build machine learning models on a solid data foundation to create value for your business, let’s wrap up everything you’ve learned about AI technology with a knowledge check.

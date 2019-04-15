@@ -2,7 +2,7 @@
 
 Publicis Groupe is facing new and strong competition as its industry evolves and requires new skills. Radical and innovative solutions are required to stay ahead of the curve and attract both clients and new talent. Founded in 1926, the venerable advertising, media, and consulting network – one of the world’s largest – found that their existing processes kept technology, information, and personnel structured in silos, which made it more difficult to execute projects quickly, provide value to customers, and keep ahead of competitors.
 
-Their recently appointed Chairman and CEO, Arthur Sadoun, proposed a remarkable strategic evolution: using a platform powered by AI to “break the silos,” and connect every Publicis Groupe employee together where they could provide the most value. To do this, they created a platform called Marcel, named after founder Marcel Bleustein-Blanchet, which uses AI to structure Publicis Groupe’s vast treasure-trove of institutional knowledge and make it available, useful, and relevant to every employee.
+Their recently appointed Chairman and CEO, Arthur Sadoun, proposed a remarkable strategic evolution: using a platform powered by AI to “break the silos,” and connect every Publicis Groupe employee to teams and tech where they could provide the most value. To do this, they created a platform called Marcel, named after Publicis founder Marcel Bleustein-Blanchet, which uses AI to structure Publicis Groupe’s vast treasure-trove of institutional knowledge and make it available, useful, and relevant to every employee.
 
 ## Industry context
 
@@ -31,7 +31,7 @@ But with over 80,000 employees in dozens of different organizations spanning ove
 ## Strategy questions
 
 1. What are Publicis’ unique strengths and capabilities that a solution should leverage?
-2. For businesses to be efficient, they need stakeholders to have access the right information, at the right time. In a world drowning in data, how should Publicis approach providing its wealth of information to employees, without generating more surplus data and information?
+2. For businesses to be efficient, they need stakeholders to have access to the right information, at the right time. In a world drowning in data, how should Publicis approach providing its wealth of information to employees, without generating more surplus data and information?
 3. The five characteristics of high-quality information are: that it is accurate, complete, consistent, unique, and timely. How should Publicis ensure the information they provide employees meets this standard?
 4. When a project needs fresh advice, experience, or technical know-how, how can employees in a large organization find the right colleague to help?
 5. Strategically, how should this be approached so that the well-meaning (but ultimately damaging) habits of some managers to keep their groups exclusive and inward-looking is bypassed?

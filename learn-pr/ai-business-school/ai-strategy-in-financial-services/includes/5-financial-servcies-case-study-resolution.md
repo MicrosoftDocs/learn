@@ -47,7 +47,7 @@ When a new technology emerges, we tend to use it to replace or improve existing 
 Let’s examine how BioCatch’s approach to AI is creating additional value using the value creation framework developed by Peter Zemsky, INSEAD Dean of Innovation:
 
 1. From the **industry environment** perspective, we have discussed how financial services organizations required more sophisticated security systems to prevent cybercrime, while at the same time they are looking for ways to improve customer experience. This approach is unique in the market and targets these two drivers.
-2. From the **value creation perspective**, we can conclude that this is a very strong use case for AI: the incremental cost is minimal—and may actually reduce costs compared to alternative security systems. While financial institutions won’t be able to extract additional revenue, the value from customer satisfaction and operational improvement it is significant.
+2. From the **value creation perspective**, we can conclude that this is a very strong use case for AI: the incremental cost is minimal—and may actually reduce costs compared to alternative security systems. While financial institutions won’t be able to extract additional revenue, the value from customer satisfaction and operational improvement is significant.
 3. From the **organization & execution perspective**, this is an interesting use case because it does not require a significant amount of internal skills or archived data. This use case builds internal trust of AI while minimizing the impact in the organization.
 
 Now that you’ve seen how financial services organizations are approaching their AI strategy, let’s wrap up everything you’ve learned with a knowledge check.

@@ -12,7 +12,7 @@ Our customer service teams identified reducing case escalation as something that
 
 ### Recommendation engine
 
-Because our agents handle customer service for such a wide range of products and services, they wanted assistance in identifying what’s behind a customer’s issues. To accomplish this, our customer service team created a recommendation engine to support our frontline agents. While human agents chat with customers, machine learning algorithms run in the background to determine the probable issues the customer could be facing. Based on this prediction, the recommendation engine suggests the diagnostics from our library that should be run to determine the root cause. This speeds up case resolution and reduces frustration for our agents.
+Because our agents handle customer service for such a wide range of products and services, they wanted assistance in identifying what’s behind a customer’s issues. To accomplish this, our customer service team created a recommendation engine to support our front-line agents. While human agents chat with customers, machine learning algorithms run in the background to determine the probable issues the customer could be facing. Based on this prediction, the recommendation engine suggests the diagnostics from our library that should be run to determine the root cause. This speeds up case resolution and reduces frustration for our agents.
 
 ### Customer sentiment analysis
 
@@ -72,4 +72,4 @@ Keeping the needs of our customer service teams at the center of our AI strategy
 |Coaching plan|The sentiment analysis tool provided powerful insights on the what specifically drives positive or negative sentiment in an interaction between a customer and an agent. This has enabled supervisors to incorporate these insights into their regular coaching conversations and interactions with agents.|
 |Resistance management plan|Many employees were skeptical about the quality of the information that AI solutions could provide: Could a virtual agent built on machine learning really know more than the agents themselves? They were particularly skeptical during the early stages of machine learning development, when AI did not always provide meaningful or accurate support. To help improve the quality of the AI solutions and win trust from employees, we enrolled a group of agents to help refine the machine learning models by up-voting or down-voting answers produced by the AI.|
 
-Now that you’ve considered various aspects of what it means to have an AI-ready culture, let’s wrap up everything you’ve learned with a knowledge check. 
+Now that you’ve considered various aspects of what it means to have an AI-ready customer service culture, let’s wrap up everything you’ve learned with a knowledge check.

@@ -1,4 +1,4 @@
-Watch this video from Pablo Castro, Director of Engineering Applied AI, to gain a high level understanding of how AI can generate knowledge out of unstructured data and how this technology can benefit your business.
+Watch this video from Pablo Castro, Director of Engineering Applied AI, to gain a high-level understanding of how AI can generate knowledge out of unstructured data, and how this technology can benefit your business.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtG1K]
 

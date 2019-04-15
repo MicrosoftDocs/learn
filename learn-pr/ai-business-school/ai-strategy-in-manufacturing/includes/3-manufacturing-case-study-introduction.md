@@ -36,7 +36,7 @@ To address these challenges, Jabil needed a solution that was both faster and mo
 
 1. What aspects of the production line would decrease a customer’s time to market?
 2. In manufacturing, prototyping and production both require vital refinement processes to ensure the end product meets users’ needs and is reliable. What effects might be felt if these processes were improved?
-3. Digital technology offers manufacturers the opportunity to collect to massive amounts of data. How could Jabil collect and store this data effectively?
+3. Digital technology offers manufacturers the opportunity to collect massive amounts of data. How could Jabil collect and store this data effectively?
 4. How could Jabil use this wealth of data to minimize assembly line downtime?
 5. How can Jabil proactively use analytics to anticipate issues in assembly line processes and increase efficiency?
 6. What are the key metrics of a prototype solution for Jabil to evaluate?
