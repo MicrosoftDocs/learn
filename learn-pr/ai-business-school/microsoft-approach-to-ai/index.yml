@@ -2,7 +2,7 @@
 uid: learn-wwl.microsoft-approach-to-ai
 metadata:
   title: Examine the Microsoft approach to AI
-  description: This module is a starting point for business decision makers who would like to understand how Microsoft is creating products, services, and solutions for organizations to leverage AI. Here, we will also help you to understand how these technologies relate to business problems.
+  description: This module is a starting point for business decision makers who want to understand how Microsoft is creating products, services, and solutions to help organizations leverage AI. We’ll also help you understand how these technologies relate to business problems.
   ms.date: 04/26/2019
   author: barlanmsft
   ms.author: rawortma
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlanmsft
 title: Examine the Microsoft approach to AI 
-summary: This module is a starting point for business decision makers who would like to understand how Microsoft is creating products, services, and solutions for organizations to leverage AI. Here, we will also help you to understand how these technologies relate to business problems.
+summary: This module is a starting point for business decision makers who want to understand how Microsoft is creating products, services, and solutions to help organizations leverage AI. We’ll also help you understand how these technologies relate to business problems.
 abstract: | 
   In this module, you will:
   - Articulate how Microsoft AI technology can solve business problems. 
