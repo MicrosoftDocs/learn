@@ -10,7 +10,7 @@ It’s no surprise then that lack of alignment between sales and marketing is wi
 
 At Microsoft we face many of these same challenges. Although our engagement programs were surfacing plenty of leads, our conversion to sales remained on par with industry benchmarks and we felt that we could do better. Our marketing teams were looking for ways to make better use of our data in identifying and qualifying leads so that we could filter and prioritize them before they are sent to sales to reduce the amount of time sellers spend contacting unproductive leads. By improving marketing lead qualification, we hoped to create a robust foundation for better alignment between marketing and sales.
 
-In short, we face the same challenges as any other marketing organizations and we’ve found that we can address many of them with strategic implementation of AI.
+In short, we face the same challenges as any other marketing organization and we’ve found that we can address many of them with strategic implementation of AI.
 
 ## Questions
 
@@ -38,4 +38,4 @@ The following are questions you can use to start thinking about how to implement
 
 Depending on your organization’s level of AI maturity, your ability to implement AI will vary. We recommend that you evaluate your AI maturity by asking questions like: Does your organization have experience in implementing and maintaining data-focused digital platforms? When it comes to content, is your organization largely digital or still paper-based?
 
-Now that you’ve gained context on the challenges finance organization face today and considered critical questions to answer before implementing AI, watch the executive perspective video with Microsoft Chief Marketing Officer Chris Capossela.
+Now that you’ve gained context on the challenges marketing departments face today and considered critical questions to answer before implementing AI, watch the executive perspective video with Microsoft Chief Marketing Officer Chris Capossela.

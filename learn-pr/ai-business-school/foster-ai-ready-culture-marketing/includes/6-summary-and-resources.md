@@ -1,4 +1,4 @@
-At Microsoft, we’ve discovered the importance of creating an empowering and inclusive environment that enables cross-functional, multidisciplinary collaboration is critical when implementing AI. As you think about adopting and implementing AI, consider your AI transformation holistically.
+Microsoft have discovered the importance of creating an empowering and inclusive environment that enables cross-functional, multidisciplinary collaboration. This is critical when implementing AI. As you think about adopting and implementing AI, consider your AI transformation holistically.
 
 Now that you have reviewed this module, you should be able to:
 
