@@ -1,4 +1,4 @@
-What is AI? How does it work? What do I need to know to bring AI into my business? Introduction to AI Technology is a starting point for business decision makers who would like to obtain a high-level overview of the state-of-the-art AI, the fundamental concepts that make it real today, and the technologies behind it from an agnostic point of view.
+What is AI? How does it work? What do I need to know to bring AI into my business? Introduction to AI Technology is a starting point for business decision makers who would like to obtain a high-level overview of state-of-the-art AI, the fundamental concepts that make it real today, and the technologies behind it.
 
 **In this module, you will learn to:**
 

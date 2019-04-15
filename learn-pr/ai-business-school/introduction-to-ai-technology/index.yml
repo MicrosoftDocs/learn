@@ -2,7 +2,7 @@
 uid: learn-wwl.intro-to-ai-technology
 metadata:
   title: Introduction to AI technology
-  description: This module provides a high-level overview of the primary concepts of AI and the technologies behind it from an agnostic point of view. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations. 
+  description: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
   ms.date: 04/26/2019
   author: barlanmsft
   ms.author: rawortma
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlanmsft
 title: Introduction to AI technology
-summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it from an agnostic point of view. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations. 
+summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
 abstract: | 
   In this module, you will:
   - Describe the primary technological components of an AI strategy.

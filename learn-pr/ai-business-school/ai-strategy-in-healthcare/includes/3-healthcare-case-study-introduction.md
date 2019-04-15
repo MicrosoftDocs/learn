@@ -16,6 +16,7 @@ The key to success is cost-effectiveness. One of the more inefficient areas of t
 To be more cost-effective, healthcare organizations need to better leverage the data already available to them. 30 percent of healthcare executives say their most pressing information technology problem is the difficulty of turning patient data into actionable insights.<sup>1</sup> In the patient monitoring context, leveraging this data could make it possible not only to identify patients who are likely to suffer a heart attack in the long term, but to identify patients who are likely to experience a cardiac arrest in the next shift.
 
 Ochsner maintains a vast electronic record system, and can take automated vital measurements, such as heart rate. Theoretically, this data could be utilized to flag patients who are at higher risk of cardiac or respiratory arrest in the near future, but constantly monitoring and reviewing these tools for every patient would require unaffordable staffing rates.
+
 ## Strategy questions
 
 1. What data could Ochsner take advantage of to create a solution that provides actionable insights?
@@ -24,4 +25,4 @@ Ochsner maintains a vast electronic record system, and can take automated vital 
 4. Medical professionals often report that they do not have time to learn new methods or technologies due to high patient workloads. How might this affect the design goals for a new AI-based technology?
 5. Trained AI systems need to be tested before they are relied upon, especially in a safety-critical environment such as healthcare. How could Ochsner gather enough data to measure the effectiveness of a solution, but also keep patients safe?
 
-Now that you’ve gained context on the challenges Ochsner and similar healthcare organizations face today and considered critical questions to answer before implementing AI, watch the executive perspective video with David Le Penske, Director, Healthcare & Life Sciences at Insight Digital Innovation.
+Now that you understand the context of the challenges Ochsner and similar healthcare organizations face today, and you’ve considered critical questions to answer before implementing AI in the industry, watch the executive perspective video with David Le Penske, Director, Healthcare & Life Sciences at Insight Digital Innovation.

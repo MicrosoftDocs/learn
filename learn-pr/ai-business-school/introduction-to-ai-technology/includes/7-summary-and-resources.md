@@ -1,4 +1,4 @@
-AI has the potential to disrupt every industry and every business. AI will enable companies of all sizes to achieve more business results. Understanding AI as a service that can be leveraged across vision, speech, knowledge, and language is a critical start.
+AI has the potential to disrupt every industry and business - and it will enable fast-moving organizations to achieve superior business results across the board. Understanding AI as a service that can be leveraged across vision, speech, knowledge, and language is vital.
 
 Now that you have reviewed this module, you should be able to:
 

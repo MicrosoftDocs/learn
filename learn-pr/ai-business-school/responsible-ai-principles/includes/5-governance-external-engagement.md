@@ -2,7 +2,7 @@
 
 Each company will have their own guiding principles, but ultimately these principles need to be part of a larger responsible AI strategy to be effective. This strategy should encompass how your organization brings these principles to life both within your organization and beyond.
 
-To provide oversight and guidance within your organization, we recommend establishing a governance system that is tailored to your organization’s unique characteristics, culture, guiding principles, and level of engagement with AI. We also recommend understanding the different ways your governance system can foster responsible and trustworthy AI based on a whether you are using third-party AI systems or developing in-house AI solutions.
+To provide oversight and guidance within your organization, we recommend establishing a governance system that is tailored to your organization’s unique characteristics, culture, guiding principles, and level of engagement with AI. We also recommend understanding the different ways your governance system can foster responsible and trustworthy AI based on whether you are using third-party AI systems or developing in-house AI solutions.
 
 Beyond internal governance, we believe you should consider how to foster responsible and trustworthy AI in your industry and throughout society. We all must work together to maximize AI’s potential for positive change.
 
