@@ -2,7 +2,7 @@
 uid: learn-wwl.ai-strategy-to-create-business-value
 metadata:
   title: Define an AI strategy to create business value
-  description: The goal of this unit is to provide an introductory view on the need to think strategically about AI and reflect on how AI can create value to your business.
+  description: AI has the capacity to empower the whole world to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI – and they need to start today.
   ms.date: 04/26/2019
   author: barlanmsft
   ms.author: rawortma
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlanmsft
 title: Define an AI strategy to create business value
-summary: AI has the capacity to empower all people to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI, and they need to start today.
+summary: AI has the capacity to empower the whole world to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI – and they need to start today.
 abstract: | 
   In this module, you will:
   - Consider various approaches to AI implementation. 

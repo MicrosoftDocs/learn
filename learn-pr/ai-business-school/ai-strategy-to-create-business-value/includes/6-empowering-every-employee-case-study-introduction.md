@@ -2,7 +2,7 @@
 
 Publicis Groupe is facing new and strong competition as its industry evolves and requires new skills. Radical and innovative solutions are required to stay ahead of the curve and attract both clients and new talent. Founded in 1926, the venerable advertising, media, and consulting network – one of the world’s largest – found that their existing processes kept technology, information, and personnel structured in silos, which made it more difficult to execute projects quickly, provide value to customers, and keep ahead of competitors.
 
-Their recently appointed Chairman and CEO, Arthur Sadoun, proposed a remarkable strategic evolution: using a platform powered by AI to “break the silos,” and connect every Publicis Groupe employee together where they could provide the most value. To do this, they created a platform called Marcel, named after founder Marcel Bleustein-Blanchet, which uses AI to structure Publicis Groupe’s vast treasure-trove of institutional knowledge and make it available, useful, and relevant to every employee.
+Their recently appointed Chairman and CEO, Arthur Sadoun, proposed a remarkable strategic evolution: using a platform powered by AI to “break the silos,” and connect every Publicis Groupe employee to teams and tech where they could provide the most value. To do this, they created a platform called Marcel, named after Publicis founder Marcel Bleustein-Blanchet, which uses AI to structure Publicis Groupe’s vast treasure-trove of institutional knowledge and make it available, useful, and relevant to every employee.
 
 ## Industry context
 
