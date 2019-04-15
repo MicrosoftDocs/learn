@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.module-uid.3-storage-metrics
+metadata:
+  title: Troubleshoot with storage metrics
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Troubleshoot with storage metrics
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-storage-metrics.md)]

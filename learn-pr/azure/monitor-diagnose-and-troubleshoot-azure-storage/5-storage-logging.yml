@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.module-uid.5-storage-logging
+metadata:
+  title: Troubleshoot with storage logging
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Troubleshoot with storage logging
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-storage-logging.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.module-uid.4-exercise-storage-metrics
+metadata:
+  title: Exercise - Enabling storage metrics and view metric data
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Enabling storage metrics and view metric data
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-storage-metrics.md)]

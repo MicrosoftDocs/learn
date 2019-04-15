@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.monitor-diagnose-and-troubleshoot-azure-storage
+metadata:
+  title: Monitor, diagnose, and troubleshoot your Azure storage
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor, diagnose, and troubleshoot your Azure storage
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- intermediate
+roles:
+- solution-architect
+- developer
+products:
+- azure
+units:
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.1-introduction
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.2-storage-troubleshooting-tools
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.3-storage-metrics
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.4-exercise-storage-metrics
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.5-storage-logging
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.6-exercise-storage-logging
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.7-message-analyzer
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.8-summary
+badge:
+  uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.badge
