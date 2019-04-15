@@ -1,9 +1,9 @@
-Enterprises can't transform by bringing AI to technical departments only. Business units must partner with data scientists and developers to redefine every business process. Manufacturing decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.
+To achieve meaningful and positive transformation, enterprises need to bring AI to more than just technical departments. Business units must partner with data scientists and developers to redefine every pertinent business process. In manufacturing, decision-makers have considerations that are particular to their industry that must be taken into account in order to realize the true transformational impact of AI in the enterprise.
 
 **In this module, you will learn to:**
 
-* Describe the outcomes those in the manufacturing industry have achieved through the adoption of AI.
+* Describe manufacturing industry outcomes achieved through the adoption of AI.
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 
-Let’s explore what we mean when ask you to think strategically about AI and how AI can create value for your business.
+Let’s explore what we mean when we ask you to think strategically about AI, and identify how AI can create value for your business.

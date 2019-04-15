@@ -1,8 +1,8 @@
-From electronics factories to mines, manufacturing is an important industry for understanding the value creation that AI adoption can bring, and also the strategies for its adoption in this high capital investment sector.
+From electronics factories to mining, manufacturing is a useful example to aid understanding of the value creation that AI adoption can bring, as well as strategies for implementation in other sectors that require high capital investment up-front.
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the outcomes those in the manufacturing industry have achieved through the adoption of AI.
+* Describe the outcomes the manufacturing industry has achieved through AI adoption.
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 
