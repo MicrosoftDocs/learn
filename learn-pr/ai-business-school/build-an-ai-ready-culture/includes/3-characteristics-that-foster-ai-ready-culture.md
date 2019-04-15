@@ -5,10 +5,10 @@ A successful AI strategy must consider cultural issues as well as business issue
 Fostering an AI-ready culture requires:
 
 1. Being a data-driven organization
-2. Empowering people to participate in the AI transformation and creating an inclusive environment that allows cross-functional, multidisciplinary collaboration
+2. Empowering people to participate in the AI transformation, and creating an inclusive environment that allows cross-functional, multidisciplinary collaboration
 3. Creating a responsible approach to AI that addresses the challenging questions AI presents
 
-Of course, this is only possible with strong leadership that drives change by both adopting the changes this transformation will require and actively supporting people through them. Below, we share our perspective on the changes you need to make to achieve an AI-ready culture.
+Of course, this is only possible with strong leadership that drives change by both adopting the changes this transformation will require and actively supporting people throughout. Below, we share our perspective on the changes you need to make to achieve an AI-ready culture.
 
 ## Data-driven
 
@@ -18,7 +18,7 @@ Due to data ownership or storage issues, most organizations generate, organize, 
 
 For instance, a sales department might not have a complete view of a customer, because they’re missing pieces of data, like e-commerce activity and payment status, that are controlled by other departments. In this case, a seller may make the mistake of trying to sell a customer an insurance policy that they had already purchased through an online channel.
 
-By sharing data across the organization, the sum is greater than the parts. It’s no longer each piece of data that matters, but what that data adds up to: a unified view of the customer. **With that unified view, you can make better decisions, act more effectively, and provide a better customer experience**.
+By sharing data across the organization, the sum becomes greater than the parts. It’s no longer each piece of data that matters, but what that data adds up to: a unified view of the customer. **With that unified view, you can make better decisions, act more effectively, and provide a better customer experience**.
 
 The quality of the data is also key. In this example, if the customer data was riddled with errors, like inaccurate contact information, irrelevant data, or duplication, it wouldn’t matter that the data had been unified; the seller could still make significant mistakes in interacting with the customer.
 
