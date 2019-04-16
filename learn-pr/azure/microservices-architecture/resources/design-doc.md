@@ -1,14 +1,15 @@
 ## Title
 
-*Add the working title [(Guidance)](id-guidance-title.md)*
+Decompose a monolithic application into a microservices architecture
 
 ## Role(s)
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+- Solution Architect
+- Developer
 
 ## Level
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+- Intermediate
 
 ## Product(s)
 
@@ -16,19 +17,21 @@
 
 ## Prerequisites
 
-- *List the prerequisites [(Guidance)](id-guidance-prerequisites.md)*
+- Basic understanding of application and system architecture
+- Basic knowledge of Docker containers
 
 ## Summary
 
-*Add the summary [(Guidance)](id-guidance-introductory-summaries.md)*
+Improve development agility, deployment, fault tolerance, and scalability by moderninzing your application with a microservices architecture.
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Guidance)](id-guidance-learning-objectives.md)*
+1. Identify the properties and benefits of a microservices application
+1. Decouple a monolithic application into a microservices architecture
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *module title*
+Identify the subtasks of *Decompose a monolithic application into a microservices architecture*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
@@ -78,3 +81,7 @@ Identify the subtasks of *module title*
 1. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
+
+## Notes
+
+Module based on this document from the Architecture Center - https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
