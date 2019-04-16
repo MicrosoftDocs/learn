@@ -76,7 +76,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 
 1. Click **+ Create a resource** in the top left of the portal.
 
-2. Search for **Storage Account** and select **Storage account - blob, file, table, queue** in the results. Click **Create**.
+2. Search for **Storage Account** and select **Storage account** in the results. Click **Create**.
 
 3. Select your subscription, and the **msftlearn-core-infrastructure-rg** resource group.
 
