@@ -1,4 +1,4 @@
-After the product manager leaves, Amita says, "We need help. I don't know when he wants the new rev, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ web site will have to wait until we get this mess solved &mdash; and the game is releasing soon."
+After Irwin the product manager leaves, Amita says, "We need help. I don't know when he wants the new rev, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ web site will have to wait until we get this mess solved &mdash; and the game is releasing soon."
 
 Andy looks at Mara. "This is a lot to take in on your first few weeks here."
 

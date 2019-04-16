@@ -12,7 +12,7 @@ Mara decides to take an initial pass on the biggest issue, **Stabilize the build
 
 ## Prerequisites
 
-If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) account, we highly recommend you go through the [Design a DevOps practice](https://docs.microsoft.com/learn/paths/design-a-devops-practice?azure-portal=true) learning path before continuing this module. 
+If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) account, we highly recommend you go through the [Evolve your DevOps practices](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before continuing this module. 
 
 You'll also need the following set up for software development on your Windows, macOS, or Linux system.
 

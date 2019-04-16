@@ -14,7 +14,7 @@ quiz:
     choices:
     - content: "A job title for QA engineers."
       isCorrect: false
-      explanation: "DevOps isn't a job title."
+      explanation: "DevOps isn't necessarily a job title or for just one specific role. It brings together people from all disciplines to enable continuous delivery of value to your end users."
     - content: "The union of people, process, and products to enable continuous delivery of value to our end users."
       isCorrect: true
       explanation: "A sign of a healthy DevOps practice is when everyone works together with a shared set of practices and tools."

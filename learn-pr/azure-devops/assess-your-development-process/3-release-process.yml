@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo-assess-your-development-process.3-assess-processes
-title: Assess your processes
+uid: learn.azdo-assess-your-development-process.3-release-process
+title: The team's release process
 metadata:
-  title: Assess your processes
+  title: The team's release process
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-assess-processes.md)]
+  [!include[](includes/3-release-process.md)]

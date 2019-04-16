@@ -1,51 +1,51 @@
 Mara has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
-Mara: Hi, thanks for coming. I wanted to show you the results of the DevOps Assessment that I took.
+**Mara**: Hi, thanks for coming. I wanted to show you the results of the DevOps Assessment that I took.
 
 ![The team's progress for each of the Self-Assessment categories](../media/2-assessment-results.png)
 
-Mara: The graph shows that we're doing better with our culture and our outcomes than with our process, measurements or technology. Just like everybody, we can improve. We can decide which areas to tackle first.
+**Mara**: The graph shows that we're doing better with our culture and our outcomes than with our process, measurements or technology. Just like everybody, we can improve. We can decide which areas to tackle first.
 
-Andy: This shows us where we have problems but not what to do about them.
+**Andy**: This shows us where we have problems but not what to do about them.
 
-Mara: Right, it's an assessment that helps point us in the right direction. As for what to do about our problems, I think that DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
+**Mara**: Right, it's an assessment that helps point us in the right direction. As for what to do about our problems, I think that DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
 
-Tim: I know someone who just got a job as a DevOps engineer. I think it's more for QA. That sounds like you, Amita.
+**Tim**: I know someone who just got a job as a DevOps engineer. I think it's more for QA. That sounds like you, Amita.
 
-Mara: DevOps isn't a job title.
+**Mara**: DevOps isn't a job title.
 
-Amita: Is there any software program we can get that will help us along or a template? Maybe there's a DevOps spreadsheet.
+**Amita**: Is there any software program we can get that will help us along or a template? Maybe there's a DevOps spreadsheet.
 
-Mara: DevOps isn't a piece of software.
+**Mara**: DevOps isn't a piece of software.
 
-Andy: It's more like a methodology. 
+**Andy**: It's more like a methodology. 
 
-Mara: Not really.
+**Mara**: Not really.
 
-Andy, Amita, Tim: So what is it?!
+**Andy, Amita, Tim**: So what is it?!
 
-Mara: Here's the definition I like to use:
+**Mara**: Here's the definition I like to use:
 
-> DevOps is the union of people, process, and products to enable continuous delivery of value to our end users.
+> _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
 Our goal is to give our customers games they will love. We do that by working together with a shared set of practices and tools.
 
-Amita: What does that mean? What shared practices? What shared tools?
+**Amita**: What does that mean? What shared practices? What shared tools?
 
-Mara: Here's what I mean by practices:
+**Mara**: Here's what I mean by practices:
 
 - **Agile planning**. Together, we'll create a backlog of work that everyone on the team and in management can see. We'll prioritize the items so we know what we need to work on first. The backlog can include user stories, bugs, and any other information that helps us.
 - **Continuous integration (CI)**. We'll automate how we build and test our code and we'll do that every time a team member commits changes to version control.
 - **Continuous delivery (CD)**. This is how we build, test, configure, and deploy from a build to a production environment.
 - **Monitoring**. We'll use telemetry to get information about an application’s performance and usage patterns. We can use that information to improve as we iterate.
 
-Amita: I don't know about automated testing. My tests are manual and I do them after Andy hands the code off to me. I don't have time to change how I do everything.
+**Amita**: I don't know about automated testing. My tests are manual and I do them after Andy hands the code off to me. I don't have time to change how I do everything.
 
-Tim: There's no way I'm letting any of you deploy to production.
+**Tim**: There's no way I'm letting any of you deploy to production.
 
-Andy: This will scare management. They never think further than the next release and they want it yesterday.
+**Andy**: This will scare management. They never think further than the next release and they want it yesterday.
 
-Mara: I know what you mean about management. I put together this handout about the benefits.
+**Mara**: I know what you mean about management. I put together this handout about the benefits.
 
 ## The DevOps handout
 
@@ -71,7 +71,7 @@ Here are some additional findings that are detailed in the report.
 
 ### DevOps improves software delivery, which increases competitive advantages
 
-This enables companies to experiment with increasing customer adoption and satisfaction. Leads to better organizational performance, and often higher profitability and market share. Agility allows companies to respond to competitive threats, and pivot more quickly to keep up with compliance and regulatory requirements.
+DevOps enables companies to experiment with increasing customer adoption and satisfaction. It can lead to better organizational performance, and often higher profitability and market share. Agility enables companies to respond to competitive threats and pivot more quickly to keep up with compliance and regulatory requirements.
 
 ### How you implement cloud infrastructure matters
 
@@ -81,7 +81,7 @@ The cloud improves software delivery performance and teams that adopt essential 
 
 High performers are **1.75 times more likely to extensively use open-source software.** They are also 1.5 times more likely to expand open-source usage in future.
 
-### Outsourcing by function is rarely adopted by elite performers and hurts performance
+### Outsourcing by function is rarely adopted by elite performers and it hurts performance
 
 Outsourcing can save money and provide a flexible labor pool, but must be used in the correct areas. Low-performing teams are almost four times as likely to outsource whole functions (testing, operations, and so on) than their higher-performing counterparts.
 

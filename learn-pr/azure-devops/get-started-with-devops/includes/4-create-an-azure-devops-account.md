@@ -1,11 +1,11 @@
-Microsoft provides free Azure DevOps accounts for individuals, small teams and open source projects. Enterprises can also sign up for Azure DevOps accounts that can scale to thousands of team members. We're going to sign up for a free Azure DevOps account to see how products can help us on our DevOps journey.
+Microsoft provides free Azure DevOps accounts for individuals, small teams, and open source projects. Enterprises can also sign up for Azure DevOps accounts that can scale to thousands of team members. We're going to sign up for a free Azure DevOps account to see how products can help us on our DevOps journey.
 
 > [!NOTE]
 > In this learning path, you'll use Azure DevOps Services, which Microsoft hosts for you. There's also [Azure DevOps Server](https://azure.microsoft.com/services/devops/server?azure-portal=true), the on-premises version of Azure DevOps Services that you can install and run on your own network.
 
 ## Create an Azure DevOps account
 
-Follow along with the team by setting up your own Azure DevOps account.
+Follow along with the team by setting up your own free Azure DevOps account.
 
 1. Go to [dev.azure.com](https://dev.azure.com?azure-portal=true).
 1. Click the **Start free** button.
@@ -20,7 +20,7 @@ Follow along with the team by setting up your own Azure DevOps account.
 
 ## Create an organization
 
-Next, set up an organization called Tailspin.
+Next, set up an organization called Tailspin. Here's how.
 
 1. Click the **Create new organization button** in the right pane.
 1. Click **Continue** in the Azure DevOps Terms of Service and Privacy notification window.

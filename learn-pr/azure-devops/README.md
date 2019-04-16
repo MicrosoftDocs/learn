@@ -4,5 +4,5 @@ This is the folder for Azure DevOps learning path content.
 
 Here are the learning paths associated with this content:
 
-* [Design a DevOps practice](https://review.docs.microsoft.com/learn/paths/design-a-devops-practice/?branch=azdo-dev)
+* [Evolve your DevOps practices](https://review.docs.microsoft.com/learn/paths/evolve-your-devops-practices/?branch=azdo-dev)
 * [Build applications with Azure DevOps](https://review.docs.microsoft.com/learn/paths/build-applications-with-azure-devops/?branch=azdo-dev)

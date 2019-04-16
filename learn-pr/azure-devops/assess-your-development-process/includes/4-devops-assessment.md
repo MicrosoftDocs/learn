@@ -75,7 +75,7 @@ Operations holds the SSH keys and passwords to access the servers. That means on
 
 Mara hasn't seen any unit tests in the projects she's looked at, including her current project, the web site for _Space Game_. No wonder Amita from QA is always coming back to the team with bugs because existing functionality breaks when the dev team adds new features.
 
-The teams have pushed back on developing mobile apps for their games because they say maintaining standard web sites is hard enough.
+The teams have held back on developing mobile apps for their games because they say maintaining standard web sites is hard enough.
 
 | Question | Response |
 |----------|----------|
@@ -136,7 +136,7 @@ Click **Get your results**.
 
 ### Examine the results
 
-Mara gets back a graph.
+After completing the assessment, Mara gets back a graph.
 
 ![The team's progress for each of the Self-Assessment categories](../media-draft/4-assessment-results.png)
 

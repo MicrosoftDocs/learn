@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.choose-an-agile-approach.2-define-agile
-title: Understand the Build Process
+uid: learn.azdo.choose-an-agile-approach.2-what-is-agile
+title: What is Agile?
 metadata:
-  title: Understand the Build Process
+  title: What is Agile?
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
-  [!include[](includes/2-define-agile.md)]
+  [!include[](includes/2-what-is-agile.md)]

@@ -14,9 +14,9 @@ Try taking the Self-Assessment for your own group. If you have more detailed kno
 
 Go to [devopsassessment.net](https://devopsassessment.net?azure-portal=true) to start your assessment.
 
-## Additional resources
+## Learn more
 
 We'll go deeper into Azure DevOps in future modules. You can also check out these resources.
 
-* [azure.com/devops](https://azure.com/devops)
-* [DevOps Resource Center](https://docs.microsoft.com/en-us/azure/devops/learn/)
+* [azure.com/devops](https://azure.com/devops?azure-portal=true)
+* [DevOps Resource Center](https://docs.microsoft.com/en-us/azure/devops/learn?azure-portal=true)

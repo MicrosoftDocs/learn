@@ -2,7 +2,7 @@
 uid: learn.azdo.choose-an-agile-approach
 metadata:
   title: Choose an Agile approach to software development - Learn
-  description: Develop an Agile mindset to incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
+  description: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,12 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Choose an Agile approach to software development
-summary: Develop an Agile mindset to incrementally deliver value, all while fostering a culture of continuous planning, collaboration, and learning.
+summary: Learn to foster the DevOps values of transparency and team cooperation with Azure Boards.
 abstract: |
   In this module, you will:
-  - Learn how to create an Azure DevOps project
-  - Learn how to add work items to an Azure Board using the Basic process
-  - Learn how to assign team members to work items
+  - Create an Azure DevOps project
+  - Add work items to an Azure Board using the Basic process
+  - Assign team members to work items
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -31,8 +31,8 @@ products:
 #- azure-devops
 units:
 - learn.azdo.choose-an-agile-approach.1-introduction
-- learn.azdo.choose-an-agile-approach.2-define-agile
-- learn.azdo.choose-an-agile-approach.3-define-azure-boards
+- learn.azdo.choose-an-agile-approach.2-what-is-agile
+- learn.azdo.choose-an-agile-approach.3-plan-work-azure-boards
 - learn.azdo.choose-an-agile-approach.4-summary
 badge:
   uid: learn.azdo.choose-an-agile-approach.badge
