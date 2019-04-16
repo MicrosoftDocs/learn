@@ -21,9 +21,9 @@ quiz:
     - content: "We're building a cool product that will change the world!"
       isCorrect: false
       explanation: "Gives no detail of the product or how it will change the world."
-    - content: "FashionFindr is building a platform that will help consumers find and buy the fashions they love."
+    - content: "Fabrikam is building a platform that will help consumers find and buy the fashions they love."
       isCorrect: true
-      explanation: "Clear and direct expression of the FashionFindr mission."
-    - content: "At FashionFindr, we strive to build an amazing online fashion platform."
+      explanation: "Clear and direct expression of the Fabrikam mission."
+    - content: "At Fabrikam, we strive to build an amazing online fashion platform."
       isCorrect: false
       explanation: "Doesn't provide a why for building the product."

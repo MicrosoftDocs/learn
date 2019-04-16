@@ -1,6 +1,6 @@
-You’ve founded your first company, FashionFindr, and built a prototype for your first app. Your app uses machine learning and AI to identify the items of clothing from images and allow you to purchase them easily.
+You’ve founded your first company, Fabrikam, and built a prototype for your first app. Your app uses machine learning and AI to identify the items of clothing from images and allow you to purchase them easily.
 
-![FashionFindr](../media/pitch_proto.001.png)
+![Fabrikam](../media/pitch_proto.001.png)
 
 The prototype is the first pass of your solution. It's not pretty, nor complete, and often not tested. Frank Robinson said when he coined the MVP term:
 
