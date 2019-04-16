@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure-introduction-to-azure-search
+metadata:
+  title: Introduction to Azure Search
+  description: Use Azure Search to make your data searchable.
+  ms.date: 04/16/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: anbyrne
+title: Introduction to Azure Search
+summary: Use Azure Search to make your data searchable.
+abstract: |
+  In this module, you will:
+  - Explore Azure Search
+  - Create an Azure Search index
+  - Import data to the index
+  - Query the Azure Search index
+prerequisites: None
+cardDescription: Use Azure Search to make your data searchable.
+iconUrl: /learn/achievements/learn.azure-introduction-to-azure-search.svg
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- azure
+- azure-search
+units:
+- learn.azure-introduction-to-azure-search.1-introduction
+- learn.azure-introduction-to-azure-search.2-what-is-azure-search
+- learn.azure-introduction-to-azure-search.3-exercise-create-an-azure-search-service-in-the-portal
+- learn.azure-introduction-to-azure-search.4-index-data-with-azure-search
+- learn.azure-introduction-to-azure-search.5-exercise-create-an-azure-search-index-in-the-portal
+- learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
+- learn.azure-introduction-to-azure-search.7-exercise-query-data-using-search-explorer-in-portal
+- learn.azure-introduction-to-azure-search.8-knowledge-check
+- learn.azure-introduction-to-azure-search.9-summary
+badge:
+  uid: learn.azure-introduction-to-azure-search.badge

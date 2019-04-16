@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.7-exercise-query-data-using-search-explorer-in-portal
+title: Exercise - Query data using Search Explorer in the Azure portal
+metadata:
+  title: Exercise - Query data using Search Explorer in the Azure portal
+  description: Exercise - Query data using Search Explorer in the Azure portal
+  ms.date: 04/16/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-exercise-query-data-using-search-explorer-in-portal.md)]

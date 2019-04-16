@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge by answering questions about skills you learned in this module.
+  ms.date: 04/16/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz:
+ questions:
+    - content: 'Question'
+      choices:
+        - content: 'Answer.'
+          explanation: 'Explanation
+          isCorrect: true
+        - content: 'Answer'
+          isCorrect: false
+          explanation: 'Explanation'
+    
