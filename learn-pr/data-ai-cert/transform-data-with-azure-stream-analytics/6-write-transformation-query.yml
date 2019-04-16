@@ -2,8 +2,8 @@
 uid: learn.data-ai.transform-data-with-azure-stream-analytics.write-transformation-query
 title: Exercise - Write an Azure Stream Analytics transformation query
 metadata:
-  title: Exercise - Write an Azure Stream Analytics transformation query - Learn
-  description: Exercise - Write an Azure Stream Analytics transformation query - Learn
+  title: Exercise - Write an Azure Stream Analytics transformation query
+  description: Exercise - Write an Azure Stream Analytics transformation query
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
