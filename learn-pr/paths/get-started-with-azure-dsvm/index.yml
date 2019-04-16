@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.get-started-with-azure-dsvm
 metadata:
-  title: Get started with Machine Learning with an Azure Data Science Virtual Machine - Learn
+  title: Get started with Machine Learning with an Azure Data Science Virtual Machine
   description: Azure includes a pre-configured virtual machine service for performing Data Science tasks. Learn how to use the Azure Data Science Virtual Machine to do common data analysis and machine learning tasks
   brand: azure
   ms.date: 03/15/2019
