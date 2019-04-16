@@ -48,4 +48,4 @@ quiz:
       explanation: "The board holds the tasks you need to do or are currently working on. A sprint provides a time duration for a set amount of work."
     - content: "Time your team sets aside to work on bugs."
       isCorrect: false
-      explanation: "Although you address bugs during your sprint, a sprint can include almost any sort of work."
+      explanation: "Although you can address bugs during your sprint, a sprint can include almost any sort of work."
