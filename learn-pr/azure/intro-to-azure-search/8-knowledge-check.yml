@@ -16,7 +16,7 @@ quiz:
     - content: 'Question'
       choices:
         - content: 'Answer.'
-          explanation: 'Explanation
+          explanation: 'Explanation'
           isCorrect: true
         - content: 'Answer'
           isCorrect: false
