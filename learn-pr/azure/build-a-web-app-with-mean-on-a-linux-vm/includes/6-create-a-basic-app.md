@@ -183,12 +183,12 @@ You're now back at your Cloud Shell session.
 
     This code creates four routes for the application. Here's a brief overview of each.
 
-    | HTTP verb | Endpoint      | Description                                                                                                           |
-    |-----------|---------------|-----------------------------------------------------------------------------------------------------------------------|
-    | GET       | `/book`       | Retrieves all books from the database.                                                                                |
-    | POST      | `/book`       | Creates a `Book` object based on the fields the user provided on the web form and writes that object to the database. |
-    | DELETE    | `/book/:isbn` | Deletes the book as identified by its ISBN from the database.                                                         |
-    | GET       | `*`           | Returns the index page when no other route is matched.                                                                |
+    | HTTP verb | Endpoint | Description |
+    |---|---|---|
+    | GET | `/book` | Retrieves all books from the database. |
+    | POST | `/book` | Creates a `Book` object based on the fields the user provided on the web form and writes that object to the database. |
+    | DELETE | `/book/:isbn` | Deletes the book as identified by its ISBN from the database. |
+    | GET | `*` | Returns the index page when no other route is matched. |
 
     Express can serve up HTTP responses directly in the route handling code or it can serve up static content from files. This code shows both. The first three routes return JSON data for book API requests. The fourth route (the default case) returns the contents of the index file, `index.html`.
 
@@ -321,13 +321,13 @@ You're now back at your Cloud Shell session.
     app.use(express.static(__dirname + '/public'));
     app.use(bodyParser.json());
     require('./app/routes')(app);
-    app.set('port', 80);
+    app.set('port', 8000);
     app.listen(app.get('port'), function() {
         console.log('Server up: http://localhost:' + app.get('port'));
     });
     ```
 
-    This code creates the web application itself. It serves static files from the `public` directory and uses the routes you defined in previously to handle requests.
+    This code creates the web application itself. It serves static files from the `public` directory and uses the routes you defined in previously to handle requests. Note that this is a development server, so you should specify a port that is above 1024 while you are setting up your environment, although you will create a port redirection that will enable public access to the local port later in this unit.
 
 ### Define package information and dependencies
 
@@ -427,6 +427,12 @@ Keep your SSH connection open for the next part.
 ## Test the application
 
 You're now ready to test out your Node.js web application!
+
+1. Create a port redirection rule that enables public access to the local port.
+
+    ```bash
+    sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to 8000
+    ```
 
 1. From the `~/Books` directory, run this command to start the web application.
 
