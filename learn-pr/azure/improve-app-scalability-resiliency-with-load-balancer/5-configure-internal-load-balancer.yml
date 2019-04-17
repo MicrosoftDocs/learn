@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.5-configure-internal-load-balancer
+metadata:
+  title: Configure an internal load balancer
+  description: TODO
+  ms.date: 05/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Configure an internal load balancer
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-configure-internal-load-balancer.md)]

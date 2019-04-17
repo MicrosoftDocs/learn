@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-app-scalability-resiliency-with-load-balancer.3-exercise-unit
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.4-exercise-configure-public-load-balancer
 metadata:
-  title: Exercise - title
+  title: Exercise - Configure a public load balancer
   description: TODO
   ms.date: 05/31/2019
   author: jboeshart
@@ -14,4 +14,4 @@ durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/3-exercise-unit.md)]
+  [!include[](includes/4-exercise-configure-a-public-load-balancer.md)]

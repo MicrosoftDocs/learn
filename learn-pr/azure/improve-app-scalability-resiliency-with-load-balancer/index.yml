@@ -12,11 +12,11 @@ title: Improve application scalability and resiliency with Azure Load Balancer
 summary: TODO
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Identify the features and capabilities of Azure Load Balancer
+  - Deploy and configure an Azure Load Balancer
 prerequisites: | 
-  - TODO
+  - Basic knowledge of networking concepts
+  - Basic knowledge of Azure virtual machines
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
@@ -27,8 +27,10 @@ products:
 - azure
 units:
 - learn.improve-app-scalability-resiliency-with-load-balancer.1-introduction
-- learn.improve-app-scalability-resiliency-with-load-balancer.2-content-unit
-- learn.improve-app-scalability-resiliency-with-load-balancer.3-exercise-unit
+- learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features
+- learn.improve-app-scalability-resiliency-with-load-balancer.3-configure-public-load-balancer
+- learn.improve-app-scalability-resiliency-with-load-balancer.4-exercise-configure-public-load-balancer
+- learn.improve-app-scalability-resiliency-with-load-balancer.5-configure-internal-load-balancer
 - learn.improve-app-scalability-resiliency-with-load-balancer.6-summary
 badge:
   uid: learn.improve-app-scalability-resiliency-with-load-balancer.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features
+metadata:
+  title: Azure Load Balancer features and capabilities
+  description: TODO
+  ms.date: 05/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Azure Load Balancer features and capabilities
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-load-balancer-features.md)]
