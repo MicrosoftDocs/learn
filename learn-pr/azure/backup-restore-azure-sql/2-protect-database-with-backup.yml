@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.backup-restore-azure-sql.2-protect-database-with-backup
+metadata:
+  title: Protect your Azure SQL Database with backup
+  description: Protect your Azure SQL Database with backup
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Protect your Azure SQL Database with backup
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-protect-database-with-backup.md)]

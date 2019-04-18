@@ -57,14 +57,14 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
         - Where Backups are stored
         - Storage costs for Backups
 
-1. **Knowledge check**
+    *Knowledge check*
 
     What types of questions will test *learning objective*?
 
     - When are backups taken?
     - Where are Azure SQL backups stored?
 
-2. **Exercise - Configure backup for Azure SQL Database**
+1. **Exercise - Configure backup for Azure SQL Database**
 
     List the steps which apply the learning content from previous unit:
 
@@ -92,7 +92,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
 
     3. Add a table and a few sample records to the database. Make sure that the database (with the new table and data) is backed up.
 
-3. **Long-term Retention policies**
+1. **Long-term Retention policies**
 
     List the content that will enable the learner to *Explain the benefits of Long-term retention policies*:
 
@@ -101,7 +101,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
         - Can choose a combination of weekly/monthly/yearly retention policies
         - Can choose how many days/week/months/years you would like these backups to be kept
 
-4. **Exercise - Long-term Retention policies**
+1. **Exercise - Long-term Retention policies**
 
     1. View the Long-term Retention policies configuration in the portal
     2. Set new policy in the portal
@@ -124,7 +124,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
     Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName sql-erp -DatabaseName sql-erp-db -ResourceGroupName rg-sql-erp -WeeklyRetention P12W
     ```
 
-5. **Restore backup to Azure SQL Database**
+1. **Restore backup to Azure SQL Database**
 
     What types of questions will test *learning objective*?
 
@@ -133,7 +133,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
         - Via Azure Powershell
     - How the restore operation works
 
-6. **Exercise - Restore backup to Azure SQL Database**
+1. **Exercise - Restore backup to Azure SQL Database**
 
     List the steps which apply the learning content from previous unit:
 
@@ -169,7 +169,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
     Restore-AzSqlDatabase -FromLongTermRetentionBackup -ResourceId <Resource ID> -ServerName "sql-erp" -ResourceGroupName "rg-sql-erp" -TargetDatabaseName "RestoredDatabaseLTR" -ServiceObjectiveName S2
     ```
 
-7. **Summary**
+1. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 

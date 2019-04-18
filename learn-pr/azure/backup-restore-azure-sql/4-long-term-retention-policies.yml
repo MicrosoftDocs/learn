@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.backup-restore-azure-sql.4-long-term-retention-policies
+metadata:
+  title: Retain backup history with long-term retention policies
+  description: Retain backup history with long-term retention policies
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Retain backup history with long-term retention policies
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-long-term-retention-policies.md)]

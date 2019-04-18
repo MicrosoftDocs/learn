@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.backup-restore-azure-sql.6-restore-database
+metadata:
+  title: Recover data by restoring an Azure SQL Database
+  description: Recover data by restoring an Azure SQL Database
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Recover data by restoring an Azure SQL Database
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-restore-database.md)]
