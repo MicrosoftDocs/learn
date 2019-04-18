@@ -70,27 +70,27 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
 
     1. Create a resource group for the new Azure SQL instance
 
-    ``` CLI
-    az group create --location westeurope --name rg-sql-erp
-    ```
+        ``` CLI
+        az group create --location westeurope --name rg-sql-erp
+        ```
 
     1. Create an Azure SQL server
 
-    ``` CLI
-    az sql server create --resource-group rg-sql-erp --name sql-erp --location westeurope --admin-user dbadmin123 --admin-password StrongPassword123
-    ```
+        ``` CLI
+        az sql server create --resource-group rg-sql-erp --name sql-erp --location westeurope --admin-user dbadmin123 --admin-password StrongPassword123
+        ```
 
     1. Create an Azure SQL server and database instance using the CLI
 
-    ``` CLI
-    az sql db create --resource-group rg-sql-erp --name sql-erp-db --server sql-erp --edition Standard
-    ```
+        ``` CLI
+        az sql db create --resource-group rg-sql-erp --name sql-erp-db --server sql-erp --edition Standard
+        ```
 
     1. Use the portal to view the newly create Azure SQL server and database. View the default policy for PITR (Point In Time Restore) configuration that was setup automatically for this database.
 
-    2. Change the PITR configuration to 28 days. Apply changes, policy is updated within seconds.
+    1. Change the PITR configuration to 28 days. Apply changes, policy is updated within seconds.
 
-    3. Add a table and a few sample records to the database. Make sure that the database (with the new table and data) is backed up.
+    1. Add a table and a few sample records to the database. Make sure that the database (with the new table and data) is backed up.
 
 1. **Long-term Retention policies**
 
@@ -104,25 +104,25 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
 1. **Exercise - Long-term Retention policies**
 
     1. View the Long-term Retention policies configuration in the portal
-    2. Set new policy in the portal
-    3. Apply changes
-    4. View Long-term Retention policies for the whole server with Powershell
+    1. Set new policy in the portal
+    1. Apply changes
+    1. View Long-term Retention policies for the whole server with Powershell
 
-    ``` Powershell
-    Get-AzSqlDatabase -ResourceGroupName rg-sql-erp -ServerName sql-erp | Get-AzSqlDatabaseLongTermRetentionPolicy -Current
-    ```
+        ``` Powershell
+        Get-AzSqlDatabase -ResourceGroupName rg-sql-erp -ServerName sql-erp | Get-AzSqlDatabaseLongTermRetentionPolicy -Current
+        ```
 
     1. View Long-term Retention policies for a specific database
 
-    ``` Powershell
-    Get-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName sql-erp -DatabaseName sql-erp-db  -ResourceGroupName rg-sql-erp -Current
-    ```
+        ``` Powershell
+        Get-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName sql-erp -DatabaseName sql-erp-db  -ResourceGroupName rg-sql-erp -Current
+        ```
 
     1. Create a Long-term Retention policy via Powershell
 
-    ``` Powershell
-    Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName sql-erp -DatabaseName sql-erp-db -ResourceGroupName rg-sql-erp -WeeklyRetention P12W
-    ```
+        ``` Powershell
+        Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName sql-erp -DatabaseName sql-erp-db -ResourceGroupName rg-sql-erp -WeeklyRetention P12W
+        ```
 
 1. **Restore backup to Azure SQL Database**
 
@@ -145,15 +145,15 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
     1. Drop the table again
     1. View the backups available for this database via Azure Powershell.
 
-    ``` CLI
-    $database = Get-AzSqlDatabase -ResourceGroupName "rg-sql-erp" -ServerName "sql-erp" -DatabaseName "sql-erp-db"
-    ```
+        ``` CLI
+        $database = Get-AzSqlDatabase -ResourceGroupName "rg-sql-erp" -ServerName "sql-erp" -DatabaseName "sql-erp-db"
+        ```
 
     1. Restore the database to to the most recent backup containing the table you just dropped, using Azure PowerShell.
 
-    ``` CLI
-    Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -Edition "Standard" -ServiceObjectiveName S2
-    ```
+        ``` CLI
+        Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -Edition "Standard" -ServiceObjectiveName S2
+        ```
 
     1. Verify that the table has been restored again.
 
@@ -161,17 +161,17 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
        
        (note to author, this may not display results due to the time needed for it to take effect)
 
-    ``` CLI
-    Get-AzSqlDatabaseLongTermRetentionBackup -Location "westeurope" -ServerName "sql-erp"
-    ```
+        ``` CLI
+        Get-AzSqlDatabaseLongTermRetentionBackup -Location "westeurope" -ServerName "sql-erp"
+        ```
 
     1. Restore from Long-term Retention backup
 
         (note to author, the database cannot be restored on top of the existing database, so you'll need to account for this in your steps)
 
-    ``` CLI
-    Restore-AzSqlDatabase -FromLongTermRetentionBackup -ResourceId <Resource ID> -ServerName "sql-erp" -ResourceGroupName "rg-sql-erp" -TargetDatabaseName "RestoredDatabaseLTR" -ServiceObjectiveName S2
-    ```
+        ``` CLI
+        Restore-AzSqlDatabase -FromLongTermRetentionBackup -ResourceId <Resource ID> -ServerName "sql-erp" -ResourceGroupName "rg-sql-erp" -TargetDatabaseName "RestoredDatabaseLTR" -ServiceObjectiveName S2
+        ```
 
 1. **Summary**
 
