@@ -1,6 +1,6 @@
 # Title
 
-Backup and restore your Azure SQL database
+Backup and restore a single Azure SQL Database
 
 ## Role(s)
 
@@ -21,12 +21,12 @@ Backup and restore your Azure SQL database
 
 ## Summary
 
-Protect the data in your Azure SQL Database and recover from data loss or corruption with backup and restore.
+Protect the data in a single Azure SQL database and recover from data loss or corruption with backup and restore.
 
 ## Learning objectives
 
-1. Configure backup and retention of an Azure SQL database
-2. Restore an Azure SQL database
+1. Configure backup and retention of a single Azure SQL database
+2. Restore a single Azure SQL database
 
 ## Chunk your content into subtasks
 
@@ -53,7 +53,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
 
     - Define Azure SQL Backups
         - Default backups are set depending on each service tier
-        - All instances have backups enabled
+        - All instances have backups enabled by default
         - Where Backups are stored
         - Storage costs for Backups
 
@@ -158,12 +158,16 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
     1. Verify that the table has been restored again.
 
     1. View the Long-term Retention backups available on the server
+       
+       (note to author, this may not display results due to the time needed for it to take effect)
 
     ``` CLI
     Get-AzSqlDatabaseLongTermRetentionBackup -Location "westeurope" -ServerName "sql-erp"
     ```
 
     1. Restore from Long-term Retention backup
+
+        (note to author, the database cannot be restored on top of the existing database, so you'll need to account for this in your steps)
 
     ``` CLI
     Restore-AzSqlDatabase -FromLongTermRetentionBackup -ResourceId <Resource ID> -ServerName "sql-erp" -ResourceGroupName "rg-sql-erp" -TargetDatabaseName "RestoredDatabaseLTR" -ServiceObjectiveName S2
