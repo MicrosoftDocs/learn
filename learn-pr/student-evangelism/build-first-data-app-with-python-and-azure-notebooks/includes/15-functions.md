@@ -2,7 +2,7 @@ Functions are named blocks of code that you can use again by calling their name.
 
 Functions are important because they promote code reuse. Rather than copy-and-paste a block of code 10 times, you can place the same code in a function and call the function 10 times. If you later discover that the code needs to be modified (perhaps because you found a bug), you only have to change it one place.
 
-Python contains more than 60 built-in functions that you can call at any time. You have already used some of these functions: `print`, `input`, `len`, and others. A complete list of built-in functions can be found [here](https://docs.python.org/3/library/functions.html). In addition, strings and other data types have functions such as `split` and `endswith` that you can call to manipulate them. Significantly, you can define functions of your own to help organize your code and make it more readable and more maintainable.
+Python contains more than 60 built-in functions that you can call at any time. You have already used some of these functions: `print`, `input`, `len`, and others. In addition, strings and other data types have functions such as `split` and `endswith` that you can call to manipulate them. Significantly, you can define functions of your own to help organize your code and make it more readable and more maintainable.
 
 In the previous lesson, you used a simple `if` statement to determine whether an airport is located in the United States. Then you used it to filter a list of all the airports in the world into a list of U.S. airports. In this lesson, you will add logic that lets users enter the abbreviation for a U.S. state and produce a list (as well as a count) of all the airports in that state. And to make the code clean and compact, you will define your own function.
 
@@ -41,12 +41,15 @@ You could call this function on any list and it would print out each list item o
 ```python
 my_list = ['apples', 'bananas', 'clementines']
 print_items(my_list)
-
-# outputs:
-# apples
-# bananas
-# clementines
 ```
+
+```output
+apples
+bananas
+clementines
+```
+
+Let's try this a different way.
 
 ```python
 def print_numbered_items(items):
@@ -61,11 +64,12 @@ If you call this code with any list, it prints out each list item on a separate 
 ```python
 my_list = ['apples', 'bananas', 'clementines']
 print_numbered_items(my_list)
+```
 
-# outputs:
-# 1. apples
-# 2. bananas
-# 3. clementines
+```output
+1. apples
+2. bananas
+3. clementines
 ```
 
 The following code is also a valid way of accomplishing the same thing without using `enumerate`:
@@ -125,68 +129,3 @@ print(airport, end='')
 ```
 
 `end` is one of four named parameters that `print` supports. The others are `sep` (for "separator"), `file`, and `flush`. The latter two enable `print` to send output to a file rather than the screen.
-
-## Filter airport data by state
-
-Now let's enhance your notebook to allow users to interactively query for airports in a specified state. You will use a custom function to make the code compact and tidy, and Python's `input` function to solicit user input.
-
-1. Return to the Azure notebook in which you generated a list of U.S. airports. In the empty cell at the end of the notebook, add the following function definition:
-
-    ```python
-    def get_airports_by_state(airports, state):
-        result = []
-        for airport in airports:
-            if airport[1].endswith(state):
-                result.append(airport)
-        return result
-    ```
-
-1. Run the cell to make sure there are no syntax errors. Then add the following code to the empty cell at the end of the notebook:
-
-    ```python
-    state = input('Enter a state abbreviation: ')
-    state_airports = get_airports_by_state(us_airports, state)
-
-    for airport in state_airports:
-        print(airport)
-    ```
-
-1. Run the cell and enter a state abbreviation such as WY or VA. Then press **Enter**. Confirm that the result is a list of airports in that state:
-
-    ![Airports in the state of Wyoming](../media/print-wy-airports.png)
-
-    _Airports in the state of Wyoming_
-
-1. On your own, modify the code in the previous cell to show the **number** of airports in the specified state:
-
-    > Hint: You can use the `len` function to count the number of items in a list. And you can use Python's built-in `str` function to convert the number returned by `len` into a string.
-
-    ![Modified output](../media/modified-output.png)
-
-    _Modified output_
-
-Finish up by using the **File** -> **Save and Checkpoint** command to save the notebook.
-
-## Show your Pythonic mettle
-
-You have come a long way in a few short lessons. But there is still more that you can do if you would like. Here are a few suggestions:
-
-- Define a function named `print_airport` that replaces the following line in the previous code sample and gives the output nicer formatting. See this helpful site for ideas of how to do string formatting: <https://pyformat.info/>
-
-    ```python
-    print(airport)
-    ```
-
-    Then replace that statement with calls to `print_airport` like this:
-
-    ```python
-    for airport in state_airports:
-        print_airport(airport)
-    ```
-
-    What advantages are there to creating your own function to replace the default? Is it possible to define the function in such a way that it accepts parameters specifying the widths of the columns? Would default parameters be useful in this regard so callers could opt to use default column widths without specifying those widths in each call?
-
-- Write a function that determines which U.S. state has the most airports
-- Write a function that determines which U.S. city has the most airports
-
-There are some great Python tutorials online, including [this one](https://docs.python.org/3/tutorial/) from the Python Software Foundation. Python is a simple language, and yet a powerful one. Learning it opens the door to a whole new world of data exploration, discovery, and even visualization. Now that you've learned the basics, use them as building blocks for Python applications of your own.

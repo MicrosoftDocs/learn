@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-python.5-functions
-title: Functions in Python
+uid: learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.functions
+title: Organize code with functions in Python
 metadata:
-  title: Functions in Python
+  title: Organize code with functions in Python
   description: Use functions to generate a list of airports in a specified U.S. state
-  ms.date: 01/25/2019
+  ms.date: 04/30/2019
   author: ShanaMatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-python.2-reading-looping-lists
+uid: learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.reading-looping-lists
 title: Reading, looping, and lists in Python
 metadata:
   title: Reading, looping, and lists in Python
   description: Load a CSV file into an Azure notebook and read its contents into a list
-  ms.date: 01/25/2019
+  ms.date: 04/30/2019
   author: JeffProsise
   ms.author: ShanaMatthews
   ms.topic: interactive-tutorial

@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks
+metadata:
+  title: Build your first data processing app with Python and Azure Notebooks
+  description: Learn how to write basic Python code by extracting information from a dataset in an Azure notebook.
+  ms.date: 04/30/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+title: Build your first data processing app with Python and Azure Notebooks
+summary: Learn how to write basic Python code by extracting information from a dataset in an Azure notebook.
+abstract: |
+  In this module, you will:
+  - Create a Jupyter notebook in Azure Notebooks
+  - Download a data file from a U.S. Government Web site
+  - Load the data file into the notebook and read its contents
+  - Parse the data file and extract information from it 
+prerequisites: None
+# TODO update iconurl when we have a URL
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+#- azure-notebook  # TODO: add to taxonomy
+units:
+- learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.introduction
+- learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.getting-started
+- learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.reading-looping-lists
+- learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.working-with-strings
+- learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.conditional-statements
+- learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.functions
+- learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.summary
+badge:
+  uid: learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.badge

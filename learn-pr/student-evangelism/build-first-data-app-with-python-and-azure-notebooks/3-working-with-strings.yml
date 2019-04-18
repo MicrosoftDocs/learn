@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-python.3-working-with-strings
-title: Strings in Python
+uid: learn.student-evangelism.build-first-data-app-with-python-and-azure-notebooks.working-with-strings
+title: Work with strings in Python
 metadata:
-  title: Strings in Python
+  title: Work with strings in Python
   description: Parse lines read from a CSV file into airport names, codes, and locations
-  ms.date: 01/25/2019
+  ms.date: 04/30/2019
   author: ShanaMatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
