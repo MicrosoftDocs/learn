@@ -11,7 +11,7 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Create a web API project
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 8
 content: |
   [!include[](includes/2-create-web-api.md)]

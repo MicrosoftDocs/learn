@@ -2,7 +2,7 @@
 uid: learn.persist-data-ef-core
 metadata:
   title: Persist and retrieve relational data with Entity Framework Core
-  description: In this module, you'll learn how to query and manage relational data in a .NET Core app.
+  description: "In this module, you'll learn how to query and manage relational data in a .NET Core app."
   ms.date: 04/20/2019
   author: scottaddie
   ms.author: scaddie
