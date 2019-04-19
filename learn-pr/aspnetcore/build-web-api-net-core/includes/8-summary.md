@@ -1,5 +1,5 @@
 In this module, you've created an ASP.NET Core web API targeting .NET Core. The web API creates, reads, updates, and deletes products from an in-memory database.
 
-## Clean up
+[!INCLUDE[download files](../../includes/summary-download.md)]
 
-The sandbox will clean up your resources automatically for you when you are finished with this module.
+[!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
