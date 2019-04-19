@@ -26,50 +26,15 @@ Here are your team members.
 
 <!-- TODO: Fix this layout to make it more pleasing. -->
 
-:::row:::
-  :::column span="4":::
-    Andy is the development lead who's been working with computers since he was a kid. He enjoys working on personal coding projects in his spare time. Andy always wishes he had more spare time.
-  :::column-end:::
-  :::column:::
-    ![Cartoon depiction of Andy](../../_shared/media-draft/andy.png)
-  :::column-end:::
-:::row-end:::
+[!include[](../../shared/includes/meet-andy-row.md)]
 
-:::row:::
-  :::column span="4":::
-    Amita is in QA. She's calm, which helps with some temperamental developers. She's good at organizing and setting priorities and lives to find edge cases.
-  :::column-end:::
-  :::column:::
-    ![Cartoon depiction of Amita](../../_shared/media-draft/amita.png)
-  :::column-end:::
-:::row-end:::
+[!include[](../../shared/includes/meet-amita-row.md)]
 
-:::row:::
-  :::column span="4":::
-    Tim is in operations. He likes practical solutions and he's very cautious (although some people might use the word "paranoid"), which makes sense because he's the person who gets the 3 AM call when something goes wrong.
-  :::column-end:::
-  :::column:::
-    ![Cartoon depiction of Tim](../../_shared/media-draft/tim.png)
-  :::column-end:::
-:::row-end:::
+[!include[](../../shared/includes/meet-tim-row.md)]
 
-:::row:::
-  :::column span="4":::
-    Irwin is the product manager. He's been in the video game industry for decades. Irwin acts friendly towards the development teams, but everyone knows he favors a tight schedule over people. Irwin has a relatively fixed mindset, but if there's anything that can help teams get games to market faster with less effort, he's all ears.
-  :::column-end:::
-  :::column:::
-    ![Cartoon depiction of Irwin](../../_shared/media-draft/irwin.png)
-  :::column-end:::
-:::row-end:::
+[!include[](../../shared/includes/meet-irwin-row.md)]
 
-:::row:::
-  :::column span="4":::
-    Mara is new. She just joined Tailspin as a developer and reports to Andy. She joined Tailspin because she likes games and she thought a smaller company would have lots of opportunity for innovation. She's a big fan of DevOps.
-  :::column-end:::
-  :::column:::
-    ![Cartoon depiction of Mara](../../_shared/media-draft/mara.png)
-  :::column-end:::
-:::row-end:::
+[!include[](../../shared/includes/meet-mara-row.md)]
 
 ## Good morning
 

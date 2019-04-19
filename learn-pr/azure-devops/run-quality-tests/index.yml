@@ -19,7 +19,7 @@ abstract: |
   - Perform code coverage testing to see how much of your code is covered by unit tests
   - See a test fail in the pipeline and then fix the failure
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/run-quality-tests-when-your-application-builds.svg
 levels:
 - beginner
 roles:

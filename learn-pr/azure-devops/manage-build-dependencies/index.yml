@@ -18,7 +18,7 @@ abstract: |
   - Create a build pipeline for your package and publish the artifact to a package repository
   - Push a change to your package and then update your application to use it
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
 levels:
 - beginner
 roles:

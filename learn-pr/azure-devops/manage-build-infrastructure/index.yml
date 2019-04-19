@@ -18,7 +18,7 @@ abstract: |
   - Bring up and configure your own build server to work with Azure Pipelines
   - Connect your server to a pipeline and build your application
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg
 levels:
 - beginner
 roles:
