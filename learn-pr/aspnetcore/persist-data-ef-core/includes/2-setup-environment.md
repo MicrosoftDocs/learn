@@ -2,10 +2,10 @@ In this unit, you'll set up the development environment for the module. You'll a
 
 ## Set up development environment
 
-Run the following command in the command shell:
+Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.
 
 ```bash
-wget -O setup.sh https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-core/master/modules/persist-data-ef-core/setup/setup.sh && \
+wget -O setup.sh https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-core/live/modules/persist-data-ef-core/setup/setup.sh && \
     chmod 755 setup.sh && \
     . setup.sh
 ```
