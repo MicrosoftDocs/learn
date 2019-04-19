@@ -27,7 +27,7 @@ Improve development agility, deployment, fault tolerance, and scalability by mod
 ## Learning objectives
 
 1. Identify the properties and benefits of a microservices application
-1. Decouple a monolithic application into a microservices architecture
+1. Decompose a monolithic application into a microservices architecture
 
 ## Chunk your content into subtasks
 
