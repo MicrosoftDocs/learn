@@ -8,13 +8,18 @@ Their recently appointed Chairman and CEO, Arthur Sadoun, proposed a remarkable 
 
 Publicis Groupe is one of the “Big Four” multinational advertising and public relations agencies. Publicis is a global leader in marketing, communications, and digital transformation, and its network contains some of the best-known names in communications and media, including Leo Burnett Worldwide, Publicis Worldwide, Saatchi & Saatchi, Zenith, Starcom, and more recently Sapient in the consulting space. With over 80,000 employees spanning 200 specialties over 130 countries, thousands of clients, and an almost hundred-year history, Publicis Groupe is one of the largest and oldest companies of its type in the world.
 
+:::row:::
+:::column span="2":::
 Age brings challenges as well as experience. In recent years, the agency model has stagnated. Established agencies have struggled to offer satisfying solutions to their clients in the face of massive technological change, the mass adoption of online advertising, and small, nimble competitors.
-
-![Publicis Income Graph](../media/1-7-1-A-Publicis-case-study-introduction.jpg)
 
 Agencies face the same problem as many old-media companies: diminishing income and relevance. Advertisers have flocked to convenient, highly targeted, and quantifiable online advertising models offered by companies like Google and Facebook. These search and social media platforms are accessible, fast, and often target customers through data analytics and AI. Agencies, on the other hand, have high overhead costs and a far higher price point.
 
 “This is a race. It’s a race to be relevant,” Publicis CEO Arthur Sadoun told the Financial Times in June 2017. “The big difference between today and yesterday is speed. You need to be much faster on the execution.”
+:::column-end:::
+:::column span="2":::
+!["Publicis Groupe Income Graph"](../media/1-7-1-A-Publicis-case-study-introduction.jpg)
+:::column-end:::
+:::row-end:::
 
 ## Challenge
 

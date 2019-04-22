@@ -1,6 +1,6 @@
 ## Abstract
 
-The financial services industry (FSI) has digitized rapidly in the last 10 to 20 years, creating great convenience to customers, but at the cost of disruption. The rapid pace of change and new technology has also opened a window for cybercrime, which creates numerous problems for financial institutions and their customers. For customers, financial crime creates the risk of asset loss, increases inconvenient security measures, and leads to a lack of trust in financial institutions.
+The financial services industry (FSI) has digitized rapidly in the last 10 to 20 years, creating great convenience to customers. The rapid pace of change and new technology has also opened a window for cybercrime, which creates numerous problems for financial institutions and their customers. For customers, financial crime creates the risk of asset loss, increases inconvenient security measures, and leads to a lack of trust in financial institutions.
 
 This case study details how security platform BioCatch leveraged machine learning to create an “invisible” security solution that identifies users based on a unique biometric signature when interacting with technology. Because user authentication takes place in the background, it’s far less intrusive than other authentication methods, leading to happier customers. The solution also has a very low false positive rate, which helps better prevent cybercrime and its associated costs for FSI businesses.
 
@@ -40,4 +40,4 @@ It was this unique combination of challenges that led to BioCatch’s creation o
 4. How can FSI businesses truly differentiate their products from the competition in the minds of their customers?
 5. How can cybersecurity be proactive, rather than reactive?
 
-Now that you understand the context of the digitized financial service industry’s cybercrime challenge, and you’ve considered critical questions to answer before implementing AI in the industry, watch the executive perspective video with Ganesh Padmanabhan, Head of Cognitive Scale's Biz Dev & Marketing.
+Now that you understand the context of the digitized financial service industry’s cybercrime challenge, and you’ve considered critical questions to answer before implementing AI in the industry, watch the executive perspective video with Ganesh Padmanabhan, Head of Cognitive Scale's Business Development & Worldwide Marketing.

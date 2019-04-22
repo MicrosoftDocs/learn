@@ -1,6 +1,6 @@
 The healthcare industry saw much early excitement about the potential transformative benefits of AI, but in practice, these have proven to be slow to unlock – despite many high-profile projects backed by leading companies. There are numerous barriers to adoption of new technology in the sector, including heavy regulation, high stakes for patients, and system complexity. Despite this, the long-term potential - and need - for AI is huge.
 
-Watch this video from Peter Zemsky, INSEAD’s Eli Lily Chaired Professor of Strategy and Innovation, as he discusses a case involving a telemedicine provider where AI is already delivering real business value today.
+Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he discusses a case involving a telemedicine provider where AI is already delivering real business value today. Peter will cover a wide range of topics from how can AI help unlock the value creation potential of telemedicine, to how MDLIVE used tools like natural language processing (NLP) effectively to improve customer satisfaction.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWtLqR]
 

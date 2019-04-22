@@ -3,9 +3,9 @@ uid: learn-wwl.microsoft-approach-to-ai.pre-trained-cognitive-services
 title: Explore state-of-the-art AI technology
 metadata:
   title: Explore state-of-the-art AI technology
-  description: In this short talk, business decision makers will hear a high level understanding of what pre-trained AI services are, how Microsoft is implementing these technologies and more importantly on how they can benefit your business.
+  description: In this short talk, business decision-makers will hear a high level understanding of what pre-trained AI services are, how Microsoft is implementing these technologies and more importantly on how they can benefit your business.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: rknapp
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

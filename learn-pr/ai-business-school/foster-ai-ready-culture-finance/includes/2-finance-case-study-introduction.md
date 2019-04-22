@@ -33,7 +33,7 @@ Because of the need to manage increasing complexity within our current capacity,
 
 ### Culture
 
-1. How does your finance organization determine business use cases for new technology like AI? Who are the crucial decision makers?
+1. How does your finance organization determine business use cases for new technology like AI? Who are the crucial decision-makers?
 2. What changes would need to be made to institutionalize AI? How would you integrate it into existing finance processes or alter processes to realize the full benefits of AI?
 3. How can AI bridge communication gaps and relieve information request bottlenecks between finance and the greater organization?
 

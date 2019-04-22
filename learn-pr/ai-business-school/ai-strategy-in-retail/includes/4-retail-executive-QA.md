@@ -2,6 +2,6 @@ Watch this video from David Porter, Corporate Vice President, Microsoft Store, a
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWv6eW]
 
-David Porter illustrates how Microsoft Store how is approaching, identifying and prioritizing AI use cases. He also provides specific advice on how other senior decision-makers should think about building their own AI strategy.
+David Porter illustrates how Microsoft Store is approaching, identifying and prioritizing AI use cases. He also provides specific advice on how other senior decision-makers should think about building their own AI strategy.
 
 Next, let’s look at how Microsoft retail stores transformed their business processes with AI by establishing processes for sustaining employee buy-in, setting parameters on data input to ensure output quality, and optimizing routing of insights for actionability.

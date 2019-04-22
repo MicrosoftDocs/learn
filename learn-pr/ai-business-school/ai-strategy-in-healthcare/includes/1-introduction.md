@@ -2,7 +2,7 @@ To achieve meaningful and positive transformation, healthcare service providers 
 
 **In this module, you will learn to:**
 
-* Describe financial services industry outcomes achieved through the adoption of AI.
+* Describe healthcare industry outcomes achieved through the adoption of AI.
 * Articulate the components of an AI strategy.
 * Apply the value creation framework.
 

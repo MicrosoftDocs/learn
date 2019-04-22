@@ -1,6 +1,6 @@
 The financial services industry is a complex setting for understanding the business value of AI.
 
-Watch this video from Peter Zemsky, INSEAD’s Eli Lily Chaired Professor of Strategy and Innovation, as he illustrates how strategic use of AI can help financial services institutions change market perception while providing additional value to customers and stakeholders.
+Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he illustrates how strategic use of AI can help financial services institutions change market perception while providing additional value to customers and stakeholders.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWtGnn]
 

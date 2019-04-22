@@ -2,15 +2,15 @@
 uid: learn-wwl.foster-ai-culture-marketing
 metadata:
   title: Discover how to foster an AI-ready culture in marketing
-  description: A successful AI strategy in marketing must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  description: A successful AI strategy in marketing must consider cultural issues as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: rknapp
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlanmsft
 title: Discover how to foster an AI-ready culture in marketing
-summary: A successful AI strategy in marketing must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+summary: A successful AI strategy in marketing must consider cultural issues as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
 abstract: | 
   In this module, you will:
   - Recognize the key elements of an AI-ready organizational culture in marketing.

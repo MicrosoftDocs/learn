@@ -36,7 +36,7 @@ Organizations should also recognize the value of their existing data. Some healt
 
 ### Evaluation of the strategy using the value framework
 
-Let’s examine the Ochsner AI strategic use case selection using the value creation framework developed by Peter Zemsky, INSEAD Dean of Innovation:
+Let’s examine the Ochsner AI strategic use case selection using the value creation framework developed by Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation:
 
 1. From the **industry perspective** this is an interesting case. While many companies invest heavily in resolving complex healthcare problems with AI, they can run into roadblocks regarding stringent industry and privacy regulations. Ochsner leveraged their preexisting data and implemented a solution that built upon their already-compliant procedures.
 2. From the **value creation perspective** this use case provides a good trade off. With a limited investment that didn’t require purchasing external data or large capital expenditure, Ochsner is creating significant value for patients as well as employees. It would be interesting to see how much of that value they will be able to extract in the future with optimized care utilization, lower customer churn, and better ratings in areas like patient safety, patient experience, and value-based care.

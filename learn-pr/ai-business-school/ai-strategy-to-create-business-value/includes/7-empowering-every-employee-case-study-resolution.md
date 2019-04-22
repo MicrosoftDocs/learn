@@ -1,8 +1,8 @@
 ## Approach
 
-> "(2017) has been a year of transformation for us in an industry that is being totally destroyed"
-> \- Arthur Sadoun, CEO
-
+"(2017) has been a year of transformation for us in an industry that is being totally destroyed"  
+\- Arthur Sadoun, CEO  
+  
 To help create the momentum it needed to survive and thrive in the modern world, Publicis Groupe is strategically looking to innovative solutions to transform the organization from a holding company to a quick and agile “platform,” while making the most of its colossal internal resources and experience. Publicis chose to concentrate resources on a digital transformation project with AI to bring order to the valuable information and data spread across the organization.
 
 Connecting knowledge on 80,000 employees is not a task suited for traditional tools. Simply finding out which employees had previous experience working for a certain client, for example, was a task that would normally require days of emails, instant messages, and phone calls. A traditional central directory was also not an option: Publicis estimated that it had over five million files containing largely unstructured information on expertise and past projects. Even if such data could somehow be organized, sifting through it would require specialist training for each team member.
@@ -31,7 +31,7 @@ Marcel also takes into account existing workloads when making recommendations. T
 
 With the power of AI, the beta version of Marcel is already helping Publicis transform from a holding company into a platform for idea sharing and client engagement, with a goal for 90% of the company to be on the platform by 2020.
 
-Early indications are that Sadoun’s bold silo-breaking strategy is working. After the official unveiling of Marcel in late May 2018, Publicis had a very strong Q3, achieving their aim of organic growth acceleration (up 2.2 percent). Thanks to their unique data strategy and new platform approach, Publicis won four separate pitches with GlaxoSmithKline, alongside key wins with Western Union, Cathay Pacific, and the Government of Singapore.
+Early indications are that Sadoun’s bold silo-breaking strategy is working. After the official unveiling of Marcel in late May 2018, Publicis had a very strong Q3, achieving their aim of organic growth acceleration (up 2.2 percent). Thanks to their unique data strategy and new platform approach, Publicis won four separate pitches with GlaxoSmithKline (GSK), alongside key wins with Western Union, Cathay Pacific, and the Government of Singapore.
 
 “Our model connecting data, dynamic creativity and technology is working beautifully and fits the current and future needs of the clients,” says Sadoun.
 
@@ -41,7 +41,7 @@ Early indications are that Sadoun’s bold silo-breaking strategy is working. Af
 
 ### Don’t limit yourself to structured data
 
-Organizations considering AI often limit their thinking to structured data. But unstructured data is an extremely valuable resource for AI – particularly for employees. Workers waste large amounts of time manually searching, understanding, summarizing, and collating unstructured or complex information. The artificial intelligence engine responsible for Marcel works by interpreting and connecting scattered data to create a unified, interpretable, source of knowledge. This saves valuable time for employees, allowing them to focus on creative and customer-focused activities, which results in satisfied clients and more efficient and happy workplaces.
+Organizations considering AI often limit their thinking to structured data. But unstructured data is an extremely valuable resource for AI – particularly for employees. Workers waste large amounts of time manually searching, understanding, summarizing, and collating unstructured or complex information. The artificial intelligence engine responsible for Marcel works by interpreting and connecting scattered data to create a unified and interpretable source of knowledge. This saves valuable time for employees, allowing them to focus on creative and customer-focused activities, which results in satisfied clients and more efficient and happy workplaces.
 
 ### Embrace the citizen data-scientist culture
 
@@ -49,10 +49,10 @@ When non-technical employees are able to leverage the benefits of AI to explore 
 
 ### Evaluation of the strategy using the value framework
 
-Let’s examine how Publicis’ AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, the INSEAD Dean of Innovation:
+Let’s examine how Publicis’ AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation:
 
 1. From the **industry environment perspective**, traditional agencies are facing increased competition by new start-ups and born-in-the-cloud agencies while being required to adopt new online advertisement models lowering the potential to add differentiated value.
 2. From the **value creation perspective**, agencies like Publicis are very heavily dependent on human resources. With low operating margins derived productivity can have a big impact on value creation. Also, tools allowing employees to reuse existing knowledge and assets will provide significant value.
-3. From the **organization & execution perspective**, the ability to extract knowledge from vast amounts of unstructured data creates immediately new sources of value creation. The ability to increase productivity and free-up time for content creation and innovation will over cost. Also, the use of tools like bots reduces the challenges to deploy the use of the technology reducing the needs for reskilling and training.
+3. From the **organization and execution perspective**, the ability to extract knowledge from vast amounts of unstructured data immediately creates new sources of value creation. The ability to increase productivity and free-up time for content creation and innovation will lower cost. Also, the use of tools, like bots, reduces the challenges to deploy the technology, which in turn decreases the need for reskilling and training.
 
 Now that you’ve seen how organizations are approaching their AI strategies, let’s wrap up everything you’ve learned with a knowledge check.

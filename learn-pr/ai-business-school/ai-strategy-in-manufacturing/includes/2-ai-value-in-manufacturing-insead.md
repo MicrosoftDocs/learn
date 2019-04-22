@@ -1,4 +1,4 @@
-Organizations focused on manufacturing and other large-scale materials processes are at a pivotal point for the deployment of AI. Watch this video from Peter Zemsky, INSEAD’s Eli Lily Chaired Professor of Strategy and Innovation, as he explains that while manufacturing has seen much experimentation with proof of concepts, the move to fully scaled AI solutions has been slower than in other sectors. He also illustrates how manufacturers can surpass barriers to full scale adoption and strategically use AI to extract business value.
+Organizations focused on manufacturing and other large-scale materials processes are at a pivotal point for the deployment of AI. Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he explains that while manufacturing has seen much experimentation with proof of concepts, the move to fully scaled AI solutions has been slower than in other sectors. He also illustrates how manufacturers can surpass barriers to full scale adoption and strategically use AI to extract business value.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWtLs2]
 

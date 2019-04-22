@@ -1,4 +1,4 @@
-Retail has arrived at a pivotal point for the deployment of AI. Watch this video from Peter Zemsky, INSEAD’s Eli Lily Chaired Professor of Strategy and Innovation, as he illustrates how retail companies are rethinking their strategy in the highly disrupted and dynamic retail market.
+Retail has arrived at a pivotal point for the deployment of AI. Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he illustrates how retail companies are rethinking their strategy in the highly disrupted and dynamic retail market.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWtYNM]
 

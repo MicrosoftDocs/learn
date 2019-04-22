@@ -2,7 +2,7 @@ Watch this video from Amy Hood, Chief Financial Officer of Microsoft, as she dis
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWunSH]
 
-With AI, the way finance operates and builds a business partnership is less about on reporting the past, and far more about influencing the future. For finance departments, this is a significant paradigm shift.
+With AI, the way finance operates and builds a business partnership is less about reporting the past, and far more about influencing the future. For finance departments, this is a significant paradigm shift.
 
 That said, to get to such a place within a finance department requires significant change beyond the adoption of new technologies. When exploring digital transformation with AI, the list of questions to consider about how the transformation needs to involve team members is longer than the list of questions about the various technologies. How are you going to make it important and possible for each team member to get comfortable with new technology? How are you going to incentivize them to learn and not be afraid of moving forward with this process? And how are you going to motivate them?
 

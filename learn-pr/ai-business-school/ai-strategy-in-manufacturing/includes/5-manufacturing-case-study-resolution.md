@@ -40,7 +40,7 @@ The end goal of using AI to analyze customer feedback was not just to uncover in
 
 ### Evaluation of the strategy using the value framework
 
-Let’s examine how Jabil’s AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, the INSEAD Dean of Innovation:
+Let’s examine how Jabil’s AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, the INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation:
 
 1. From the **industry environment perspective**, we discussed how customers are demanding faster time to market of more sophisticated customized products which require large CAPEX investments that are elevating the production cost. On the other hand, customers are demanding a broader set of services including logistics and distribution creating a window of opportunity to capture additional value.
 2. From the **value creation perspective**, this case illustrates key lessons for manufacturing and process industries. It is critical to start with applications that have clear value drivers where you can demonstrate impact. Here improved efficiency and agility are clear levers for value creation.

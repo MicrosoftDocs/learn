@@ -50,7 +50,7 @@ The end goal of using AI to analyze customer feedback was not just to uncover in
 
 ### Evaluation of the strategy using the value framework
 
-Let’s examine how Microsoft Store’s AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, the INSEAD Dean of Innovation.
+Let’s examine how Microsoft Store’s AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, the INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation.
 
 1. From the **industry environment perspective**, retail companies are struggling to provide a consistent, personalized customer experience and manage operations across channels in an increasingly multi-channel environment. Building a better understanding of the customer and personalizing their experiences are key to retailers’ success.
 2. From the **value creation perspective**, the customer feedback program enables Microsoft Store to be more agile in response to customer feedback: we can implement changes based on customer suggestions significantly faster. In addition, our other AI solutions increase efficiency of our supply chain by improving prediction of customer demand and behavior.
