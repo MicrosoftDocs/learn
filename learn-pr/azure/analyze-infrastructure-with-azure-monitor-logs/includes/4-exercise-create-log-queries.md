@@ -1,5 +1,7 @@
 The operations team doesn't currently have enough information about the behavior of their systems to diagnose and resolve problems effectively. To address this issue, the team has configured an Azure Monitor workspace with their Azure services. They'll run Kusto queries to interrogate the status of the system, and attempt to identify the causes of any problems that might occur.
 
+In particular, the team is interested in monitoring security events, to check for possible attempts to break into the system. An attacker could attempt to manipulate the applications running on the system, so the team also want to gather application data for further analysis. The team also suspect that an attacker might want to halt the computers that comprise the system, so the team also want to examine how and when machines are stopped and restarted.
+
 In this exercise, you will practice performing Azure Monitor log queries. You'll use a demonstration set of data.
 
 ## Create basic Azure Monitor log queries to extract information from log data
@@ -33,7 +35,7 @@ In this exercise, you will practice performing Azure Monitor log queries. You'll
         | where toint(Level) >= 10
     ```
 
-2. Run the following example. This example searches the Events table for records from the Application event log for the last 24 hours.
+1. Run the following example. This example searches the Events table for records from the Application event log for the last 24 hours.
 
     ```kusto
     Event
@@ -41,7 +43,7 @@ In this exercise, you will practice performing Azure Monitor log queries. You'll
     | where TimeGenerated > ago(24h)
     ```
 
-3. Run the following query. This query displays the number of different computers that generated heartbeat events each week, for the last three weeks. The results are displayed as a bar chart.
+1. Run the following query. This query displays the number of different computers that generated heartbeat events each week, for the last three weeks. The results are displayed as a bar chart.
 
     ```kusto
     Heartbeat
