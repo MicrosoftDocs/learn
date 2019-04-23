@@ -16,7 +16,7 @@ Most of the runtime environments support two ways to execute Python code:
 ![Diagram showing the execution of a .py file through the Python interpreter](../media/2-python-steps.png)
 
 > [!NOTE]
-> Most Python implementations actually do a partial compile of scripts, turning the source code into _byte code_ which can be run on any support platform. This is done automatically to improve performance for subsequent runs of the script. You can also generate a "compiled" version of the script and distribute an app without providing the full source code.
+> Most Python implementations do a partial compile of scripts, turning the source code into _byte code_ which can be run on any supported platform. This is done to improve performance for subsequent runs of the script and happens automatically. You can also generate a "compiled" version of the script and distribute an app without providing the full source code.
 
 ## Python implementations
 
