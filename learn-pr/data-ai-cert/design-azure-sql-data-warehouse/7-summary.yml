@@ -39,4 +39,4 @@ quiz:
       explanation: "Non-clustered is not a valid table geometry in Azure SQL Data Warehouse."
     - content: "Replicated table"
       isCorrect: true
-      explanation: "A replicated table is an appropriate table geometry choice because the size of the data in the table is less than 200 m. The table will be replicated to every distribution node of a data warehouse in Azure SQL Data Warehouse to improve performance."
+      explanation: "A replicated table is an appropriate table geometry choice because the size of the data in the table is less than 200 MB. The table will be replicated to every distribution node of a data warehouse in Azure SQL Data Warehouse to improve performance."
