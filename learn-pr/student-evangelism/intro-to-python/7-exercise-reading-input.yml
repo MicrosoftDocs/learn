@@ -11,5 +11,7 @@ metadata:
   ms.prod: learning-python
   ROBOTS: NOINDEX
 durationInMinutes: 7
+azureSandbox: true
+interactive: bash-editor
 content: |
   [!include[](includes/7-exercise-reading-input.md)]
