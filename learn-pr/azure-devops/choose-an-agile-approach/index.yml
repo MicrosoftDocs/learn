@@ -17,7 +17,7 @@ abstract: |
   - Add work items to an Azure Board using the Basic process
   - Assign team members to work items
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 levels:
 - beginner
 roles:

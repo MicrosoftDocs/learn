@@ -17,7 +17,7 @@ abstract: |
   - Understand how the assessment gives you a good starting place to discuss your current DevOps practices
   - Learn to read the DevOps Self-Assessment summary graph
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/assess-your-software-development-process.svg
 levels:
 - beginner
 roles:
