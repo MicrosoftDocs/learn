@@ -40,7 +40,7 @@ This code will output `<class 'int'>` for the value '5'. You can use the `float`
 
 ### Converting numbers to strings
 
-You can go the other direction as well - the `str` operator will take an integer or float value and turn it into a string. This is required if you are concatenating the number into a string, for example:
+You can go the other direction as well. The `str` operator will take an integer or float value and turn it into a string. This is required if you are concatenating the number into a string, for example:
 
 ```python
 x = 5

@@ -10,8 +10,8 @@ Python is an _interpreted language_ which reduces the edit-test-debug cycle beca
 
 Most of the runtime environments support two ways to execute Python code:
 
-1. Interactive mode. This is where each command you type is interpreted and executed immediately and you see the results each time you press <kbd>ENTER</kbd>. This is the default mode if you don't pass a filename to the interpreter.
-1. Script mode. This is where you put a set of Python statements into a text file with a **.py** extension. You then run the `python` interpreter and point it at the file. The program is executed line-by-line and the output is displayed. There is no compilation step as shown in the following diagram.
+1. Interactive mode: This is where each command you type is interpreted and executed immediately and you see the results each time you press <kbd>ENTER</kbd>. This is the default mode if you don't pass a filename to the interpreter.
+1. Script mode: This is where you put a set of Python statements into a text file with a **.py** extension. You then run the `python` interpreter and point it at the file. The program is executed line-by-line and the output is displayed. There is no compilation step as shown in the following diagram.
 
 ![Diagram showing the execution of a .py file through the Python interpreter](../media/2-python-steps.png)
 
@@ -20,14 +20,14 @@ Most of the runtime environments support two ways to execute Python code:
 
 ## Python implementations
 
-Python is licensed under the OSI open-source license and there are several implementations available depending on your needs. Here are a few of the options available.
+Python is licensed under the OSI open-source license and there are several implementations available depending on your needs. Here are a few of the options available:
 
-- The most popular is the reference implementation (CPython), available from the [Python website](https://www.python.org). There are install packages for Windows and macOS. Linux users can install Python using built-in package managers such as **apt**, **yum**, and **Zypper**. There is also an online playground where you can try Python statements right on the website. Finally, the complete source code is available allowing you to build your own version of the interpreter.
+- The most popular is the reference implementation (CPython), available from the [Python website](https://www.python.org). CPython is commonly used for web development, application developement and scripting. There are install packages for Windows and macOS. Linux users can install Python using built-in package managers such as **apt**, **yum**, and **Zypper**. There is also an online playground where you can try Python statements right on the website. Finally, the complete source code is available allowing you to build your own version of the interpreter.
 
-- You can download and install [Anaconda](https://www.anaconda.com), which is a specialized Python distribution tailored for scientific programming tasks such as data science and machine learning.
+- [Anaconda](https://www.anaconda.com) is a specialized Python distribution tailored for scientific programming tasks such as data science and machine learning.
 
 - [IronPython](https://ironpython.net/) is an open-source implementation of Python built on the .NET runtime.
 
-- [Jupyter notebooks](https://jupyter.org) provides a web-based interactive programming environment that supports a variety of programming languages, including Python. Jupyter notebooks are widely used in research and academia for mathematical modeling, machine learning, statistical analysis, and for teaching and learning how to code.
+- [Jupyter notebooks](https://jupyter.org) is a web-based interactive programming environment that supports a variety of programming languages including Python. Jupyter notebooks are widely used in research and academia for mathematical modeling, machine learning, statistical analysis, and for teaching and learning how to code.
 
-We'll use a built-in shell to play with Python in this module, but the summary has links to download and install Python on your local computer once you have completed this module.
+We'll use the Azure Cloud Shell to develop with Python in this module, but the summary has links to download and install Python on your local computer once you have completed this module.

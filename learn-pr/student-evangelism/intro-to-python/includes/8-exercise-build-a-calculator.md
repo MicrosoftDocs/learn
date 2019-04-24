@@ -12,7 +12,7 @@ Now that you've experimented with reading input and creating variables, let's tr
     - Add the two numbers together and assign the result to variable named _result_.
     - Display the two numbers and the result using `print`. The output should look something like: **2 + 2 = 4** (assuming the two numbers you input were both **2**).
 
-1. Finally, add a few comments into the Python code to document what this simple program does.
+1. Add a few comments into the Python code to document what your program does.
 
 1. Save the file and close the code editor.
 

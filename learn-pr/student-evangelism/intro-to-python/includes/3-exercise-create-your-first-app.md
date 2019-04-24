@@ -4,13 +4,11 @@ A great way to get started with Python is learning how to perform input and outp
 print('Hello World!')
 ```
 
-The argument passed to `print` is a *string*, which is one of the fundamental data types in Python. By default, `print` outputs a newline character at the end of the line so that subsequent output — for example, additional calls to `print` — will start on the next line.
+The argument passed to `print` is a *string*, which is one of the fundamental data types in Python used to store and manage text. By default, `print` outputs a newline character at the end of the line so that subsequent output — for example, additional calls to `print` — will start on the next line.
 
 ## Try your first Python statement
 
-As mentioned earlier, Python supports an interactive console experience which allows you to type in commands and see the results immediately. This is sometimes referred to as a "Read-Eval-Print-Loop" or REPL. We can try this out right in the Cloud Shell to the right.
-
-1. Make sure to activate the Cloud Shell so you get an interactive Linux prompt on the right side of the window.
+Python supports an interactive console experience which allows you to type in commands and see the results immediately. This is sometimes referred to as a "Read-Eval-Print-Loop" or REPL. We can try this in the Cloud Shell to the right.
 
 1. Type `python` to start the Python interpreter in the interactive mode.
 
@@ -106,4 +104,4 @@ If you don't pass an argument to the help function, an interactive help facility
 
 1. Feel free to explore more things here - for example, you can get a list of Python keywords by typing `keywords`.
 
-1. Once you are done exploring, type `quit` to return back to the interactive prompt.
+1. Once you are done, type `quit` to return to the interactive prompt.

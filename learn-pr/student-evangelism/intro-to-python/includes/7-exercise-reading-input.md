@@ -32,9 +32,9 @@ Now let's use what you learned about `print`, `input`, and string concatenation 
     Hello, Hannah
     ```
 
-If you wanted to add an exclamation mark after the name so the greeting reads `"Hello, Hannah!"`, how would you do it?
+If you want to add an exclamation mark after the name so the greeting reads `"Hello, Hannah!"`, how would you do it?
 
 > [!TIP]
 > A single Python statement can use multiple `+` operators to concatenate several strings.
 
-Go ahead and modify the program to add an exclamation point to the end of the output and run the app to verify the results.
+Modify the program to add an exclamation point to the end of the output and run the app to verify the results.

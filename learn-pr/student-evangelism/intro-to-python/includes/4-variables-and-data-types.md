@@ -1,16 +1,16 @@
-Variables are one of the fundamental building blocks of programs written in Python. Variables hold data in memory. They have names, and they can be referenced by name. Variables also have *types* such as string and integer, and they can be used in expressions that use *operators* such as `+` and `-` to manipulate their values.
+Variables are one of the fundamental building blocks of programs written in Python. Variables hold data in memory. They have names, and they can be referenced by name. Variables also have *types* which specify what type of data they can store, such as string and integer, and they can be used in expressions that use *operators* such as `+` and `-` to manipulate their values.
 
 In Python, a variable is declared and assigned a value using the assignment operator `=`. The variable being assigned to is on the left-hand side of the operator, and the value being assigned, which can be an expression such as `2 + 2` and can even include other variables, is on the right-hand side:
 
 ```python
-x = 1         # assign x the value 1
-y = x + 5     # assign y the value of x plus 5
-z = y         # assign z the value of y
+x = 1         # assign variable x the value 1
+y = x + 5     # assign variable y the value of x plus 5
+z = y         # assign variable z the value of y
 ```
 
-These examples assign numbers to variables, but numbers are just one of several data types that Python supports. Notice there is no type declared for the variables. This is because Python is a _dynamically typed_ language, which means the variable type is determined when the line is executed.
+These examples assign numbers to variables, but numbers are just one of several data types that Python supports. Notice there is no type declared for the variables. This is because Python is a _dynamically typed_ language, which means the variable type is determined by the data assigned to it. In the examples above, the x, y, and z variables will be integer types, capable of storing postive and negative whole numbers.
 
-Variable names are case-sensitive and can use any letter, number, and the underscore (`_`) character, however it can't start with a number.
+Variable names are case-sensitive and can use any letter, number, and the underscore (`_`) character, however they can't start with a number.
 
 ### Working with numbers
 
