@@ -11,7 +11,7 @@
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
 Many firms need to optimize access to and serving of Web pages. Caching enables you to serve an already constructed page or response without having to create it again.
 
-As the developer at a Board Game company you need to investigate the various types of tags and attributes that can be used in a caching policy. 
+As the developer at a Board Game company you need to investigate the various types of tags and attributes that can be used in a caching policy.
  
 ## Write a caching policy
 
@@ -19,21 +19,19 @@ The **cache-lookup policy** is placed in the inbound tag it must have a correspo
 
 To do this first Add an inbound Policy selecting cache responses
 
-![Add website URL](../media/cacheinbound.png)
+![Add website URL](../media/cacheinbound.PNG)
 
 set the number of seconds to cache the operation for.
 
-![Add website URL](../media/cachesetduration.png)
+![Add website URL](../media/cachesetduration.PNG)
 
 You will note a corresponding **cache-store** policy has been created in the outbound tag
 
-
-![Add website URL](../media/cachein-out.png)
-
+![Add website URL](../media/cachein-out.PNG)
 
 Access to the editor can now be gained. Note the sets of snippets available on the right hand side.
 
-![Add website URL](../media/cacheeditorview.png)
+![Add website URL](../media/cacheeditorview.PNG)
 
 **A policy statement template**
 
@@ -68,33 +66,22 @@ You can add elements to a policy template
         <base />
     </outbound>
 </policies>
-'''
+```
 
+## What do the Elements in the policy document provide?
 
-## What do the Elements in the policy document provide ?
-
-1. **cache-lookup** is the root elemt and must be present. 
-
-1. **vary-by-header** caches responses per value of specified headerch i.e. Accept, Accept-Charset, Accept-Encoding, Accept-Language. Not required
-
+1. **cache-lookup** is the root element and must be present.
+1. **vary-by-header** caches responses per value of specified headerch i.e. Accept, Accept-Charset, Accept-Encoding, Accept-Language. Not required.
 1. **vary-by-query-parameter** caches responses per value of the query parameters  specified. They can be single or multiple seperated by semiscolon. If no parameters are specified  all used. Not required.
 
-## What do the Attributes in a document provide ?
+## What do the attributes in a document provide?
 
 1. The **allow-private-response-caching** when set to true enables the caching of requests that contain an Authorization header.
-
 1. The **caching-type**	if set to internal  uses the API Management cache. If set to external it uses an external Azure Cache for Redis in Azure API Management.
-
-1.The  **prefer-external** will use external cache if configured or internal cache if an external cache is not configured
-
+1. The  **prefer-external** will use external cache if configured or internal cache if an external cache is not configured
 1. The **downstream-caching-type**can be set to either none, private or public.
-
 1. The **must-revalidate** attribute turns on or off the must-revalidate cache control directive in gateway responses.
-
 1. The **vary-by-developer** attribute when set to true caches responses per subscription key.
-
 1. The **vary-by-developer-groups**	attribute when set to true caches responses per user group.
 
-
 By using combinations of the above elements and attributes caching policies are constructed.
-

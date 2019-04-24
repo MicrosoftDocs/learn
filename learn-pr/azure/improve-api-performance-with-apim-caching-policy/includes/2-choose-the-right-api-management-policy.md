@@ -9,24 +9,26 @@
 <!-- Don't include a summary section in individual units -->
 
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
-You can use API Management policies to control many aspects of a deployed API.
+You can use API Management policies to control the behavior of a deployed API without rewriting its code.
 
-Suppose there is a need on the Board Gaming site to provide a faster response to requests. For example, users often request prices for various sizes of board for games. Your company ships these boards to the UK or other areas of the world. API Management policies can accelerate responses by configuring a cache of compiled responses.
+Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of board for games. API Management policies can accelerate responses by configuring a cache of compiled responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without compiling it again.
 
 First let's look at what you can use policies to do.
 
 ## What are policies?
 
+In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API is fixed by the developers who write the code, but administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we will concentrate on using policies to set up and control a cache.
+
 Policies are formed of individual statements which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
 
 ## When do policies execute?
 
-In Azure API Management, policies execute at four different times:
+In Azure API Management, policy elements execute at four different times:
 
-- **Inbound**. These policies execute when a request is received from a client.
-- **Backend**. These policies execute before a request is forwarded to a managed API.
-- **Outbound**. These policies execute before a response is sent to a client.
-- **On-Error**. These policies execute when an exeception is raised.
+- **Inbound**. These elements execute when a request is received from a client.
+- **Backend**. These elements execute before a request is forwarded to a managed API.
+- **Outbound**. These elements execute before a response is sent to a client.
+- **On-Error**. These elements execute when an exception is raised.
 
 In the policy XML, there is a separate tag for each of these execution times:
 
@@ -34,16 +36,15 @@ In the policy XML, there is a separate tag for each of these execution times:
 <policies>
     <inbound>
         <base />
-        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal" >
-            <vary-by-query-parameter>version</vary-by-query-parameter>
-        </cache-lookup>
+        <check-header name="Authorization" failed-check-httpcode="401" failed-check-error-message="Not authorized" ignore-case="false">
+        </check-header>
     </inbound>
     <backend>
         <base />
     </backend>
     <outbound>
-        <cache-store duration="seconds" />
         <base />
+        <json-to-xml apply="always" consider-accept-header="false" parse-date="false"/>
     </outbound>
     </on-error>
         <base />
@@ -51,47 +52,47 @@ In the policy XML, there is a separate tag for each of these execution times:
 </policies>
 ```
 
-To set up a cache, you use an outbound element to store responses. You also use an inbound element to check if there is a cached response for the current request. You can see these two elements in the above policy.
+In this example, you can see that the policy checks in-bound requests for a header named **Authorization**. If such a header is not present, the policy displays an error message.
+
+This policy also translates any out-bound responses in JSON format into XML.
 
 ## Policy Scopes
 
 A policy's scope determines how broadly it will be applied. There are four possible scopes that you can choose from.
 
-<!-- TODO: Policies are evaluated in order of scopes Global, Product, API, Operations.-->
-
 ### The global policy scope
 
 Policies applied at the global scope affect all APIs within the instance of API Management.
 
-To use the global scope, choose the **All APIS** menu item. You can open the XML editor by clicking on the tag symbol **</>**:
+To use the global scope, in the resource page for the API Management instance, click **APIs** and then click the **All APIS** menu item. You can open the XML editor by clicking on the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections:
 
-![Global All API Scope](../media/GlobalScope.png)
+![Global All API Scope](../media/2-global-scope.png)
 
-This image shows the policy editor and its default XML contents:
+The policy editor that appears contains with default XML content. On the left, you can see shortcuts that add policy elements:
 
-![Global Scope Editor](../media/GlobalScopeEditor.PNG)
+![Global Scope Editor](../media/2-global-scope-editor.png)
 
-With the cursor in the &lt;inbound&gt; or &lt;outbound&gt; tags, click on a policy element on the right to open a wizard that adds that policy element:
+To create policy, you can manually edit the XML in the policy editor. Alternatively, on the **All APIs** page, you can click on **+ Add policy** to start a wizard that helps you to add policy elements with the correct syntax:
 
-![Global All API Scope](../media/GlobalpolicyWiz.PNG)
+![Global All API Scope](../media/2-global-policy-wizard.png)
 
 ### The product policy scope
 
-In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied at the product scope affect all the APIs in that product.
+In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied at the product scope affect all the APIs in that product. APIs in other products are un-affected. When you manage a product in the Azure portal, click the **Policies** page to bring up the XML policy editor:
 
-![Product Scope](../media/productsScope.PNG)
+![Product Scope](../media/2-products-scope.png)
 
 ### The API policy scope
 
-Policies applied at the API scope affect only a single API. Use the **All Operations** option to apply a policy at this scope:
+Policies applied at the API scope affect only a single API. To set a policy at the API scope, in the API Management home page, click **APIs** and then click the API you want to manage. Then click the **All operations** option:
 
-![APIPolicy Scope](../media/APIscope.PNG)
+![API Scope](../media/2-api-scope.png)
 
 ### Operation policy scope
 
-Policies applied at the operation scope affect only one operation within the API, such as a GET or a POST operation:
+Policies applied at the operation scope affect only one operation within the API. In the example below, the administrator has selected the **GetSpeaker** operation within the **Demo Conference API** and can set inbound, outbound, or backend policy elements that apply only to that operation:
 
-![APIOperations Scope](../media/OperationScope.PNG)
+![API Operation Scope](../media/2-operation-scope.png)
 
 ## Which order are policies applied in?
 
@@ -106,23 +107,44 @@ You can use the `<base />` tag to determine when policies from a higher scope ar
 </policies>
 ```
 
-Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure applies policies from the product and global scopes first, and then executes the find-and-replace policy.
+Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure applies policies from the global and product scopes first, and then executes the find-and-replace policy.
 
 ## How to control the API Management cache
 
-When you want to set up and configure a cache, you usually need at least two policies, which apply to inbound and outbound requests. There are some other cache control policies as well:
+To set up a cache, you use an outbound element named `cache-store` to store responses. You also use an inbound element named `cache-lookup` to check if there is a cached response for the current request. You can see these two elements in the example policy below:
 
-- Use the **Get from cache** element on inbound request to perform a cache look up and return a valid response.
-- Use the **Store to cache** element to add a response to the cache for a specific time period.
-- Use the **Get value from cache** element to retrieve a cached item by its key.
-- Use the **Store value in cache** element to add an item to the cache by its key.
-- Use the **Remove value from cache** element to remove an item from the cache by its key.
+```xml
+<policies>
+    <inbound>
+        <base />
+        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal" >
+            <vary-by-query-parameter>version</vary-by-query-parameter>
+        </cache-lookup>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <cache-store duration="60" />
+        <base />
+    </outbound>
+    </on-error>
+        <base />
+    </on-error>
+</policies>
+```
 
-You will learn more about these policies later in this module.
+It's also possible to store individual values in the cache, instead of a complete response. To do this, use the `cache-store-value` element to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` element. If you want to remove a value before it expires, use the `cache-remove-value` element.
 
-## Elements used for restricting access
+You will learn more about these policy elements later in this module.
 
-There are several policies that you can use to prevent or limit access:
+## Common elements in API Management policy
+
+Let's examine some other things you can do with policy elements in API Management:
+
+### Elements used for restricting access
+
+There are several policies that you can use to prevent or limit access to an API or its operations:
 
 - Use the **Check HTTP header** policy to check for a property in an HTTP Header. If the property is not found, Azure drops the request.
 - Use the **Limit call rate by subscription** element to restrict the number of calls that can come from a single API subscription. This policy can ensure that users from one subscription do not use all your bandwidth.
@@ -141,7 +163,7 @@ Several policies enable you to control authentication:
 Cross domain requests are usually considered a security threat and denied by browsers and APIs. However, for specific operations they can be desirable and API Management policies enable you to permit them in a secure manner:
 
 - Use the **Allow cross-domain calls** element to permit calls from Adobe Flash and Silverlight.
-- Use the **CORS** element to permi Cross-Origin Resource Sharing (CORS).
+- Use the **CORS** element to permit Cross-Origin Resource Sharing (CORS).
 - Use the **JSONP** element to add JSON with padding to allow calls across domains from JavaScript browser-based clients.
 
 ## Transformation policies
