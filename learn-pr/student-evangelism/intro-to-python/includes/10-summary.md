@@ -6,7 +6,12 @@ There are some great Python tutorials online, including [the official tutorial](
 
 Here are some useful links to explore some of the topics we've covered in this module.
 
-[Download and Install Python](https://www.python.org/downloads/)
-[String functions available in Python](https://www.w3schools.com/python/python_ref_string.asp)
-[List of built-in functions](https://docs.python.org/3/library/functions.html)
-[Learn the Pythonic way](https://docs.python-guide.org/writing/style/)
+- [Install Python for Windows 10 from the Microsoft Store](https://www.microsoft.com/en-us/p/python-37/9nj46sx7x90p?activetab=pivot:overviewtab)
+
+- [Download and Install Python for Windows, macOS, and Linux](https://www.python.org/downloads/)
+
+- [Learn the Pythonic way](https://docs.python-guide.org/writing/style/)
+
+- [Explore string functions available in Python](https://www.w3schools.com/python/python_ref_string.asp)
+
+- [List of built-in Python functions](https://docs.python.org/3/library/functions.html)
