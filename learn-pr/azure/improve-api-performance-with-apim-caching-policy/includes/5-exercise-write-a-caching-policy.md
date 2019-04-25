@@ -21,14 +21,19 @@
 -->
 
 <!-- Keep bulleted/numbered lists to seven items max. Break them up into groups with headers if necessary -->
+Companies that use Azure API Management to host API can modify their behavior, without rewriting code, by using policies.
 
-In this Exercise, you'll use the Cloud Shell code editor to create a .NET Core Web API and deploy it to Azure. This Api will then be imported into Azure APIM and a caching policy applied to it.
+Suppose you have planned to implement caching for the Board Pricing API. You want to add the API to API Management and write the necessary policies.
+
+In this exercise, you'll import an API into Azure API Management and add a caching policy to it.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
+[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
 ## Create a Web API in Azure Apps Service
 
-Start by creating a new Web API app in Azure Apps Service. You'll use this resource to host a test API, which you'll call from the Logic App later:
+Start by creating a new Web API app in Azure Apps Service. You'll use this resource to host the Board Pricing API:
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. In the portal, select **Create a resource > Web > API App**.
@@ -38,26 +43,23 @@ Start by creating a new Web API app in Azure Apps Service. You'll use this resou
     | --- | --- |
     | App name | Choose a unique name. Make a note of it, you'll need it later on. |
     | Subscription | *Concierge Subscription* |
-    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group </rgn>* |
+    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
     | App Service plan/Location | Leave default |
     | Application Insights | Disabled |
     | | |
 
-    ![Creating a Web API in the Azure portal](../media/-create-web-api.png)
+    ![Creating a Web API in the Azure portal](../media/5-create-api-azure-portal.png)
 
 ## Configure git deployment for the API app
 
-We will use the `git` tool to deploy our Web API code. To configure the API app to support `git`:
+We will use the `git` tool to deploy our Web API code. This relies on the Kudu build server. To configure the API app to support Kudu:
 
 1. When the API App has been created, select **All resources** and then click the API App.
-1. In the **App Service** response, under **Deployment** click **Deployment Center**.
-
-    ![Configure deployment for an API App](../media/3-configure-deployment.png)
-
+1. In the **App Service** resource, under **Deployment** click **Deployment Center**.
 1. Click **Local Git** and then click **Continue**.
-1. Click **App Service Kudu build server**, click **Continue**, and then click **Finish**.
+1. Click **App Service build service**, click **Continue**, and then click **Finish**.
 1. Click **Deployment Credentials** and then click the **User Credentials** tab.
-1. In the **Password** and **Confirm Password** textboxes, type **Pa$$w0rd** and then click **Save Credentials**.
+1. In the **Password** and **Confirm Password** text boxes, type **Pa$$w0rd** and then click **Save Credentials**.
 
 ## Configure the git command
 
@@ -93,7 +95,7 @@ We'll use `git` to clone a Web API project. This Web API includes a frame price 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
 1. On the **Overview** response, to the right of the **Git clone URL** field, select **Click to copy**.
 
-    ![Obtain the git clone URL from the portal](../media/3-obtain-git-url.png)
+    ![Obtain the git clone URL from the portal](../media/5-get-git-deployment-url.png)
 
 1. In the Cloud Shell, run the following command, pasting in the URL that you copied:
 
@@ -107,14 +109,7 @@ We'll use `git` to clone a Web API project. This Web API includes a frame price 
 
 Now, you can deploy the Web API to Azure:
 
-1. In the Cloud Shell, run the following commands to commit your code:
-
-    ```bash
-    git add .
-    git commit -m "Version 1 completed"
-    ```
-
-1. To deploy the Web API, run the following command, and enter a password. Remember the password you chose,  because you'll need it later.
+1. To deploy the Web API, run the following command, and enter the password you set for git deployment:
 
     ```bash
     git push --set-upstream production master
@@ -126,91 +121,97 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
 1. On the **Overview** response, select **Browse**. The browser displays the home response for the API, which is blank.
-1. In the **Address** bar, append the URL with **/api/values/6/7/uk/chess**. The browser displays a result.
-1. In the **Address** bar, replace **/api/values/6/7/uk/chess** with **/swagger**. The browser displays the Swagger UI.
+1. In the **Address** bar, append the URL with **/api/values/6/7/uk/chess**. The browser displays a result in JSON format. Notice that the result includes the server time.
+1. In the **Address** bar, replace **/api/values/6/7/uk/chess** with **/swagger**. The browser displays the Swagger UI. Keep this browser tab open for later.
 
-## Save the OpenAPI definition
+## Create a new Azure API Management instance
 
-1. Locate the file via the link on the swagger interface
+Now that we have a functional API, let's set up API Management:
 
-1. Copy the contents and save to a new json file.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Web > API Management**.
+1. In the **API Management service** window, enter the following settings, and then click **Create**:
 
-## Create a new Azure APIM instance
+    | Setting | Value |
+    | --- | --- |
+    | Name | Choose a unique name. Make a note of it, you'll need it later on. |
+    | Subscription | *Concierge Subscription* |
+    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
+    | Location | Choose from West Europe or Southeast Asia | <!-- These are the only two locations supported by both the sandbox and the consumption tier -->
+    | Organization | BoardGames |
+    | Administrator email | Enter your own email address or use the default |
+    | Pricing tier | Consumption |
+    | | |
 
-1. This will deploy a lot faster if the consumption pricing tier is chosen for deployment.
+## Add the API in API Management
 
-<!--The preview seems to have caching disabled so we are using the standard tier-->
+Before you can apply a policy, you must add the API to the API Management instance
 
-1. This is only available as a preview in the following regions
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources** and then click the management service you just created.
+1. Under **API Management**, click **APIs**, and then click **OpenAPI**.
 
-    -  westus
-    -  northcentralus
-    -  westeurope
-    - northeurope
-    -  southeastasia
-    -  australiaeast
+    ![Adding an API](../media/5-add-api-to-management.png)
 
-1. After creation pin this to the dashboard
+1. Switch to the browser tab that displays the Swagger interface for the API, and then click the link to the **swagger.json** file.
+1. Copy all the text in the address bar.
+1. In the **Create from OpenAPI specification** window, place the cursor in the **OpenAPI specification** textbox, and then press CTRL-V.
+1. Click **Create**. Azure adds the API to the management instance.
 
+    ![Adding an API](../media/5-complete-api-add.png)
 
-## Import the API into Azure APIM
+## Test the API in API Management
 
-![Select your API](../media/chooseapi.png)
+The API is now added to the management instance. Let's test the API before any policy is applied:
 
-1. Select OpenAPI
+1. Click the **Test** tab and then click the **GET** operation.
+1. Use the following values for template parameters and then click **Send**:
 
-1. Complete the Wizard and press create
+    | Name | Value |
+    | --- | --- |
+    | Height | 6 |
+    | Width | 7 |
+    | ShippingCode | UK |
+    | Game | Chess |
+    | | |
 
+    ![Test the API in API Management](../media/5-test-api-in-apim.png)
 
-![Complete Wizard](../media/createfomopenapi.png)
+1. Examine the results. Note the precise time that is included in the response.
+1. Click the **Send** button to resend the request. Notice the the time in the response has changed.
 
+## Add a caching policy
 
-1. Add the Web Service URL
+Now we can enable the cache by adding elements to the policy:
 
-![Add website URL](../media/settings.png)
+1. Click the **Design** tab and then click the **GET** operation.
+1. In the **Inbound processing** section, click **+Add policy**.
 
-You are now ready to run your managed API  in Test.
+    ![Adding a policy](../media/5-add-policy.png)
 
-1. Click test from the menu
+1. Click **Cache responses**.
+1. In the **Duration in seconds** box, type **600**, and then click **Save**.
+1. In the **Inbound processing** section, click **</>**. The portal displays the policy XML editor.
+1. Notice that a **&lt;cache-lookup&gt;** tag has been added to the **&lt;inbound&gt;** section, and a **&lt;cache-store&gt;** tag has been added to the **&lt;outbound&gt;** section.
 
-1. select the get operation
+    ![Policy editor with caching elements](../media/5-policy-editor-with-caching-elements.png)
 
-![Add website URL](../media/Testnocache.png)
+1. Click **Save**.
 
-1. Run with the following parameters.
+## Test the cache
 
-1. Height 80
+We'll run the same test on the API in API Management and observe the results of the cache:
 
-1. Width 100
+1. Click the **Test** tab and then click the **GET** operation.
+1. Use the following values for template parameters and then click **Send**:
 
-1. Region Code UK
+    | Name | Value |
+    | --- | --- |
+    | Height | 6 |
+    | Width | 7 |
+    | ShippingCode | UK |
+    | Game | Chess |
+    | | |
 
-1. Game Chess
+    ![Test the API in API Management](../media/5-test-api-in-apim.png)
 
-1. click the send button
-
-
-![Add website URL](../media/resultintest.png)
-
-1. Note the result and run again with the same parameters, the date time will increment as this response is not being cached
-
-
-
-This time lets add a policy to control the caching of the  Get Operation.
-
-1. Click on design
-
-1. Select the Get operation  to put you into operation scope
-
-1. In Inbound Processing select Add Policy
-
-1. Select cache responses and enter a value of 30 to cache the response for 30 seconds.
-
-1. Run in test with the same parameters as before. Note the date time will remain the same until the cache has reached it expiry value.
-
-Why not try changing your policy to include vary-by-Query-parameter or 
-any of the attributes you learned about in the previous learning module.
-
-
-
-
+1. Examine the results. Note the precise time that is included in the response.
+1. Click the **Send** button to resend the request. Notice the the time in the response has not changed. This is because the cached response has been served.

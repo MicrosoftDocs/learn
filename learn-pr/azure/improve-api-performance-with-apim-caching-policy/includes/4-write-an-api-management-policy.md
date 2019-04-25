@@ -9,79 +9,105 @@
 <!-- Don't include a summary section in individual units -->
 
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
-Many firms need to optimize access to and serving of Web pages. Caching enables you to serve an already constructed page or response without having to create it again.
+Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
 
-As the developer at a Board Game company you need to investigate the various types of tags and attributes that can be used in a caching policy.
- 
-## Write a caching policy
+Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of board for games. API Management policies can accelerate responses by configuring a cache of compiled responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without compiling it again.
 
-The **cache-lookup policy** is placed in the inbound tag it must have a corresponding **cache-store policy** in the outbound tag
+Here, you will learn how to configure such a cache.
 
-To do this first Add an inbound Policy selecting cache responses
+## How to control the API Management cache
 
-![Add website URL](../media/cacheinbound.PNG)
-
-set the number of seconds to cache the operation for.
-
-![Add website URL](../media/cachesetduration.PNG)
-
-You will note a corresponding **cache-store** policy has been created in the outbound tag
-
-![Add website URL](../media/cachein-out.PNG)
-
-Access to the editor can now be gained. Note the sets of snippets available on the right hand side.
-
-![Add website URL](../media/cacheeditorview.PNG)
-
-**A policy statement template**
-
-``` xml
-<cache-lookup vary-by-developer="true | false" vary-by-developer-groups="true | false" caching-type="prefer-external | external | internal" downstream-caching-type="none | private | public" must-revalidate="true | false" allow-private-response-caching="@(expression to evaluate)">
-  <vary-by-header>Accept</vary-by-header>
-  <!-- should be present in most cases -->
-  <vary-by-header>Accept-Charset</vary-by-header>
-  <!-- should be present in most cases -->
-  <vary-by-header>Authorization</vary-by-header>
-  <!-- should be present when allow-private-response-caching is "true"-->
-  <vary-by-header>header name</vary-by-header>
-  <!-- optional, can repeated several times -->
-  <vary-by-query-parameter>parameter name</vary-by-query-parameter>
-  <!-- optional, can repeated several times -->
-</cache-lookup>
-
-```
-
-You can add elements to a policy template
+To set up a cache, you use an outbound element named `cache-store` to store responses. You also use an inbound element named `cache-lookup` to check if there is a cached response for the current request. You can see these two elements in the example policy below:
 
 ```xml
 <policies>
     <inbound>
         <base />
-        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal" >
-            <vary-by-query-parameter>version</vary-by-query-parameter>
-        </cache-lookup>
+        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal" />
     </inbound>
+    <backend>
+        <base />
+    </backend>
     <outbound>
-        <cache-store duration="seconds" />
+        <cache-store duration="60" />
         <base />
     </outbound>
+    </on-error>
+        <base />
+    </on-error>
 </policies>
 ```
 
-## What do the Elements in the policy document provide?
+It's also possible to store individual values in the cache, instead of a complete response. To do this, use the `cache-store-value` element to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` element. If you want to remove a value before it expires, use the `cache-remove-value` element:
 
-1. **cache-lookup** is the root element and must be present.
-1. **vary-by-header** caches responses per value of specified headerch i.e. Accept, Accept-Charset, Accept-Encoding, Accept-Language. Not required.
-1. **vary-by-query-parameter** caches responses per value of the query parameters  specified. They can be single or multiple seperated by semiscolon. If no parameters are specified  all used. Not required.
+```xml
+<policies>
+    <inbound>
+        <cache-lookup-value key="12345"
+            default-value="$0.00"
+            variable-name="boardPrice"
+            caching-type="internal" />
+        <base />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <cache-store-value key="12345"
+            value="$3.60"
+            duration="3600"
+            caching-type="internal" />
+        <base />
+    </outbound>
+    </on-error>
+        <base />
+    </on-error>
+</policies>
+```
 
-## What do the attributes in a document provide?
+## Using vary-by tags
 
-1. The **allow-private-response-caching** when set to true enables the caching of requests that contain an Authorization header.
-1. The **caching-type**	if set to internal  uses the API Management cache. If set to external it uses an external Azure Cache for Redis in Azure API Management.
-1. The  **prefer-external** will use external cache if configured or internal cache if an external cache is not configured
-1. The **downstream-caching-type**can be set to either none, private or public.
-1. The **must-revalidate** attribute turns on or off the must-revalidate cache control directive in gateway responses.
-1. The **vary-by-developer** attribute when set to true caches responses per subscription key.
-1. The **vary-by-developer-groups**	attribute when set to true caches responses per user group.
+It's important to ensure that, if you serve a response from the cache, it is relevant to the original request. Suppose, for example, that the board games Stock Management API received a GET request to the following URL and cached the result:
 
-By using combinations of the above elements and attributes caching policies are constructed.
+`http://<boardgames.domain>/stock/api/product/3416`
+
+This request is intended to check the stock levels for a product with part number 3416. Subsequent requests for the same part number can be served from the cache, as long as the record has not expired. So far so good.
+
+Now suppose that the developers alter the API to use a query parameter to specify the part number. The request for the same product is now:
+
+`http://<boardgames.domain>/stock/api/product?partnumber=3416`
+
+By default, cache entries are not recorded with their query parameters. Suppose a different product is requested:
+
+`http://<boardgames.domain>/stock/api/product?partnumber=5484`
+
+This request is to the same address, so API Management serves the cached response. However, this response is incorrect, because the cached response is for product 3416, not product 5484.
+
+To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element in your policy within the &lt;cache-lookup&gt; element:
+
+```xml
+<policies>
+    <inbound>
+        <base />
+        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal">
+            <vary-by-query-parameter>partnumber</vary-by-query-parameter>
+        </cache-lookup>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <cache-store duration="60" />
+        <base />
+    </outbound>
+    </on-error>
+        <base />
+    </on-error>
+</policies>
+```
+
+With this policy, the cache will store separate responses for each product, because they have different part numbers, even though those numbers are specified in a query parameter.
+
+Like query parameters, Azure does not examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
+
+Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute. This is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.

@@ -11,7 +11,7 @@
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
 You can use API Management policies to control the behavior of a deployed API without rewriting its code.
 
-Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of board for games. API Management policies can accelerate responses by configuring a cache of compiled responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without compiling it again.
+In your board game company, you have a set of APIs that enable partner organizations to obtain price estimates, staff members to check stock levels, and customers to place orders. You want to address a particular issue with performance and investigate what else it is possible to achieve with policies.
 
 First let's look at what you can use policies to do.
 
@@ -44,9 +44,9 @@ In the policy XML, there is a separate tag for each of these execution times:
     </backend>
     <outbound>
         <base />
-        <json-to-xml apply="always" consider-accept-header="false" parse-date="false"/>
+        <json-to-xml apply="always" consider-accept-header="false" parse-date="false" />
     </outbound>
-    </on-error>
+    <on-error>
         <base />
     </on-error>
 </policies>
@@ -109,38 +109,9 @@ You can use the `<base />` tag to determine when policies from a higher scope ar
 
 Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure applies policies from the global and product scopes first, and then executes the find-and-replace policy.
 
-## How to control the API Management cache
-
-To set up a cache, you use an outbound element named `cache-store` to store responses. You also use an inbound element named `cache-lookup` to check if there is a cached response for the current request. You can see these two elements in the example policy below:
-
-```xml
-<policies>
-    <inbound>
-        <base />
-        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal" >
-            <vary-by-query-parameter>version</vary-by-query-parameter>
-        </cache-lookup>
-    </inbound>
-    <backend>
-        <base />
-    </backend>
-    <outbound>
-        <cache-store duration="60" />
-        <base />
-    </outbound>
-    </on-error>
-        <base />
-    </on-error>
-</policies>
-```
-
-It's also possible to store individual values in the cache, instead of a complete response. To do this, use the `cache-store-value` element to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` element. If you want to remove a value before it expires, use the `cache-remove-value` element.
-
-You will learn more about these policy elements later in this module.
-
 ## Common elements in API Management policy
 
-Let's examine some other things you can do with policy elements in API Management:
+Let's examine some things you can do with policy elements in API Management:
 
 ### Elements used for restricting access
 
