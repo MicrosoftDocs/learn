@@ -1,6 +1,6 @@
 In this exercise, we'll create our social-media monitor app using the Azure portal. We'll add a Twitter trigger using the Logic Apps Designer. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
-![An illustration showing the triggers and actions in the social-media monitor Logic App. The first step is a Twitter trigger labeled "When a new tweet is posted". This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media-drafts/5-trigger.png)
+![An illustration showing the triggers and actions in the social-media monitor Logic App. The first step is a Twitter trigger labeled "When a new tweet is posted". This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media-drafts/exercise-add-trigger.png)
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -14,11 +14,11 @@ The first thing we need to do is create an Azure Logic App using the Azure porta
 
 1. In the search box, type **Logic app**.
 
-1. Select the **Logic App** template.
+1. Select the **Logic App** template and then select **Create**.
 
 1. For the name of the Logic App, enter **ShoeTracker**.
 
-1. Select a **Subscription** where you would like the Logic App hosted.
+1. Select the **Concierge** subscription to host the app.
 
 1. Select the existing **Resource group** <rgn>[sandbox resource group name]</rgn>.
 
@@ -34,7 +34,7 @@ The first thing we need to do is create an Azure Logic App using the Azure porta
 
 1. Select the **ShoeTracker** Logic App.
 
-1. In the **Templates** section, select **Blank Logic App**.
+1. Scroll down to the **Templates** section and select **Blank Logic App**.
 
 ## Create a Twitter trigger
 

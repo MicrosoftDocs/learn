@@ -1,6 +1,6 @@
-In this exercise, we're going to continue work on our social-media monitor app. Here, we'll analyze whether the tweets about our product are positive or negative. We'll create a Detect-sentiment action which will provide us a numeric *Score* that represents the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we're going to continue work on our social-media monitor app. Here, we'll add a control action to branch based sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
-![An illustration showing the triggers and actions in the social-media monitor Logic App. The third step is an action showing a control action that is testing the sentiment score. If the score is is greater than 0.7 the app branches to an Insert Row action. If the score is less than or equal to 0.7, the app branches to a Send an Email action.](../media-drafts/10-branches.png)
+![An illustration showing the triggers and actions in the social-media monitor Logic App. The third step is an action showing a control action that is testing the sentiment score. If the score is is greater than 0.7 the app branches to an Insert Row action. If the score is less than or equal to 0.7, the app branches to a Send an Email action.](../media-drafts/exercise-branch.png)
 
 ## Create a Condition control action
 
@@ -29,6 +29,8 @@ Now that we have a Condition control action created, we need to specify what the
 1. Select **is greater than**.
 
 1. Type **0.7** in the rightmost Choose a value field.
+
+1. Select the **Save** button to save your work.
 
 ## Create a SQL Server and database in Azure
 

@@ -10,7 +10,7 @@ The core goal of Logic Apps is to help you get services to work together. There 
 
 Actions that let you use services outside of your Logic App are by far the most common type. In fact, these actions are so common, that they are what most people mean when they use the term *action*. They give you access to hundreds of products like Salesforce, Oracle, YouTube, Dropbox, gmail, GitHub, Twilio, Facebook, Slack, and JIRA. The following illustration shows a few of the available external actions.
 
-![An illustration showing several common external actions. The actions are divided into groups. For example, there is a grouping for database actions which shows Oracle, SQL Server, and Azure Cosmos DB.](../media-drafts/6-external-actions.png)
+![An illustration showing several common external actions. The actions are divided into groups. For example, there is a grouping for database actions which shows Oracle, SQL Server, and Azure Cosmos DB.](../media/external-services.png)
 
 When you use an action to connect to an external service, you typically supply connection and authorization values. It might be a username, a password, a connection string, or an account key. The details will be different for each service.
 
@@ -48,7 +48,7 @@ Action *parameters* let you pass values to the operation. The Cognitive Services
 
 Action *return values* are the results of the operation. The Detect-sentiment action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the Detect-sentiment action as used by the social-media monitor app.
 
-![An illustration showing a Logic App using the Detect-sentiment action to invoke the text analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media-drafts/6-action-inputs-and-outputs.png)
+![An illustration showing a Logic App using the Detect-sentiment action to invoke the text analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media-drafts/action-inputs-and-outputs.png)
 
 ## Static vs. dynamic parameters
 
@@ -64,8 +64,10 @@ The Logic Apps Designer gives you a GUI to add and configure actions. You can ad
 
 The first step is to select the "Add an action" option at the point in your app where you want the new action to appear. This launches the "Choose an action" UI. The following screenshot shows how to add a new action using the Logic Apps Designer.
 
-![A screenshot showing the Logic Apps Designer GUI to choose an action to add to your app. The user can select an action from a list or use a search feature to locate the one they need.](../media-drafts/6-choose-an-action-designer.png)
+![A screenshot showing the Logic Apps Designer GUI to choose an action to add to your app. The user can select an action from a list or use a search feature to locate the one they need.](../media/choose-an-action-designer.png)
 
-Once you add an action, you use the Designer to set configuration parameters. Again, the Designer provides a GUI for you to enter the values. Static content can be added manually or copy-paste. For dynamic content, the Designer can pop up a selection GUI that shows you  data that was returned by previous steps. You choose the field you need and the Designer automatically populates that entry in your action. The following screenshot shows the dynamic tweet data from the social-media monitor app displayed in the Designer.
+Once you add an action, you use the Designer to set configuration parameters. Again, the Designer provides a GUI for you to enter the values. Static content can be added manually. For dynamic content, the Designer can pop up a selection GUI that shows you data that was returned by previous steps. You choose the field you need and the Designer automatically populates that entry in your action. The following screenshot shows the dynamic tweet data from the social-media monitor app displayed in the Designer.
 
-![A screenshot showing the Logic Apps Designer GUI for dynamic content. The example shows tweet data such as "Created at", "Description", and "Location" displayed in a list. The user can select an item from the list to include it in their app.](../media-drafts/6-dynamic-content-designer.png)
+![A screenshot showing the Logic Apps Designer GUI for dynamic content. The example shows tweet data such as "Created at", "Description", and "Location" displayed in a list. The user can select an item from the list to include it in their app.](../media/dynamic-content-designer.png)
+
+The Designer makes it easy to add dynamic content. You don't need to remember the names of the parameters and return values and you don't have to worry about the details of the syntax.

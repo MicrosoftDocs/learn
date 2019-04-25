@@ -6,7 +6,7 @@ A *condition* action is an *if* statement that lets your app do different things
 
 For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether it is flagged as high-priority. In our social-media app, we'll use a *condition* statement to branch based on the sentiment score of the tweet. The following illustration shows the use of the *condition* control action in our app.
 
-![An illustration showing a conceptual view of the entire social-media monitor app. The *condition* control action is highlighted.](../media-drafts/8-if-statement-social-media.png)
+![An illustration showing a conceptual view of the entire social-media monitor app. The *condition* control action is highlighted.](../media-drafts/if-statement-social-media.png)
 
 ### Types and operators
 
@@ -35,7 +35,7 @@ Each type has a set of operators you can use in your comparisons. The following 
 Most of the operations are intuitive, but there are two cases worth mentioning:
 
 * String comparisons are all case sensitive.
-* JSON comparisons use what's called *deep* equals. This means operator will compare the entire objects, including any descendant tokens for complex objects.
+* JSON comparisons use what's called *deep* equals. This means the equality operators will compare the entire objects, including any descendant tokens inside complex objects.
 
 <!-- TODO in process of verifying with product team whether this is true or a bug
 > [!IMPORTANT]
@@ -119,7 +119,7 @@ The *until* loop action runs a group of actions multiple times. You can set thre
 * Count: the maximum number of iterations (the default is 60)
 * Timeout: the maximum clock time allowed specified using ISO 8601 format (the default is one hour).
 
-This loop can be used to process data, but it's also a good option when you need to retry a networking operation until it succeeds to times out. For example, suppose your app needed to run an action that made an HTTP request. You could use an *until* loop similar to that shown in the following pseudo-code (the time value "PT5M" is equal to five minutes):
+This loop can be used to process data, but it's also a good option when you need to retry a networking operation until it succeeds or times out. For example, suppose your app needed to run an action that made an HTTP request. You could use an *until* loop similar to that shown in the following pseudo-code (the time value "PT5M" is equal to five minutes):
 
 ```
 repeat
@@ -131,8 +131,10 @@ until (StatusCode is-equal-to 200 OR Count is-greater-than 3 OR Timeout is-great
 
 The Logic Apps Designer gives you a GUI to add and configure a control action. They are all packaged inside the *Control* connector, so the first step is finding that connector. Once you've located the connector, you'll see the four control actions we discussed and a few others that are useful, but not directly related to our goal of managing control flow. The following screenshot shows the available control actions displayed in the Designer.
 
-![An screenshot showing the contents of the *Control* connector in the Logic Apps Designer. The four control-flow actions are included in the list: *Condition*, *For each*, *Switch*, and *Until*.](../media-drafts/8-control-actions-designer.png)
+![An screenshot showing the contents of the *Control* connector in the Logic Apps Designer. The four control-flow actions are included in the list: *Condition*, *For each*, *Switch*, and *Until*.](../media/control-actions-designer.png)
 
-In our social-media monitor app, we'll be using the *Condition* action to add an if-statement to test the sentiment score. The Designer gives you a GUI that lets you build complex expressions, included groups. The following screenshot shows the condition action for the social-media monitor app displayed in the Designer.
+The Designer gives you a GUI that lets you build complex expressions, included groups. The following screenshot shows a *Condition* action displayed in the Designer.
 
-![An screenshot showing a configured *Condition* action in the Logic Apps Designer. The image contains a Detect-sentiment action followed by a *Condition* action. The *Condition* action has a simple expression that tests whether the sentiment score is greater than 0.7.](../media-drafts/8-condition-action-designer.png)
+![An screenshot showing a configured *Condition* action in the Logic Apps Designer. The image contains a Detect-sentiment action followed by a *Condition* action. The *Condition* action has a simple expression that tests whether the sentiment score is greater than 0.7.](../media/condition-action-designer.png)
+
+In our social-media monitor app, we'll be using the *Condition* action to add an if-statement to test the sentiment score.

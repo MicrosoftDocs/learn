@@ -5,7 +5,7 @@ title: "Exercise - Branch based on tweet sentiment"
 metadata:
   title: "Exercise - Branch based on tweet sentiment"
   description: "Exercise - Branch based on tweet sentiment"
-  ms.date: 4/1/2019
+  ms.date: 5/10/2019
   author: marktap
   ms.author: matapar
   ms.topic: interactive-tutorial
@@ -14,4 +14,4 @@ metadata:
 
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-EX-branch-based-on-tweet-sentiment.md)]
+  [!include[](includes/8-EX-branch-based-on-tweet-sentiment.md)]
