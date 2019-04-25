@@ -22,7 +22,8 @@ namespace BoardGamingapi.Controllers
             string shipping;
             price = CalculatePrice(Double.Parse(Height), Double.Parse(Width));
             shipping = AddShipping(ShippingCode);
-            return Game + " Board  " + price + " Plus " + shipping + DateTime.Now;
+            string jsonResponse = "{ \"Board Type\": \"" + Game + "\", \"Price\": \"" + price + "\", \"Shipping\": \"" + ShippingCode + "\", \"Time\": \"" + DateTime.Now + "\"  }";
+            return jsonResponse;
 
         }
 
