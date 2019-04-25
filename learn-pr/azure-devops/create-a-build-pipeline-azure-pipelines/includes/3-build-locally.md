@@ -54,8 +54,11 @@ To clone the _Space Game_ web project to your computer:
 1. From Visual Studio Code, navigate to the terminal window and run the `git clone` command. Replace the URL that's shown with the contents of your clipboard.
 
     ```bash
-    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web.git
+    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web.git
     ```
+
+    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from Microsoft's repository in later modules. 
+
 1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
 
     ```bash

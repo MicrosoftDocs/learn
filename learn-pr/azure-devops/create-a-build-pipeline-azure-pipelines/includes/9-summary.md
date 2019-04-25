@@ -15,6 +15,10 @@ When you create your own pipeline, you have two choices &mdash; the visual desig
 
 ## Additional resources
 
+Here are some additional resources you can use to further your understanding.
+
+If you're looking for a more academic approach, [Continuous Delivery](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250?azure-portal=true) by Jez Humble, David Farley is a great starting point.
+
 ### Learn YAML
 
 If you're interested in learning YAML, check out [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml?azure-portal=true). You can then review the Azure Pipelines [YAML schema reference](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema&azure-portal=true) to get a greater sense of how pipelines are structured.

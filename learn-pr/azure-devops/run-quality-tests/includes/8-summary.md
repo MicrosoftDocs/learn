@@ -1,20 +1,28 @@
-Talk track:
+Great work. In this module, you added unit tests and code coverage to your build pipeline. You set up dashboard widgets so others can easily track your improvements. You also fixed a build break before it reached anyone else.
 
-* (I suspect this might be overwhelming to folks new to testing. So perhaps play that out here.)
-* The team meets?
-* Amita or Tim: Wow, that's a lot of code!
-* Andy or Mara: Yes, but it's all things we do anyway. Because it's code, we have a common vocabulary and a consistent place to keep it all.
+Defining build tasks locally first helps you understand and verify the process before you add build tasks to your pipeline.
 
-TODO: What else do we want to summarize here?
+Remember, the process you followed was specific to .NET Core applications. The tools and tasks you use depend on the programming language and frameworks you use to build your applications.
+
+Let's check in with the team one last time. They're having their weekly team meeting, and Mara wants to show everyone the latest updates.
+
+**Tim**: I'm glad to see you're making good progress stabilizing our builds. But that sure looks like a lot of code!
+
+**Andy**: Yes, it's a fair amount. But it's all things we do anyway. And now that parts are automated, we only need to define them one time. And because it's code, we have a common vocabulary for defining our build process and a consistent place to keep it all.
+
+**Mara**: Thank you all for giving it a try. Now what's next on the list?
 
 ## Learn more
 
-TODO: This is just a dump for now. Think about this more carefully and position each group of links.
+In this module, you used the `DotNetCoreCLI@2` task to run unit tests through the `dotnet test` command. If you use [Visual Studio](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing?view=vs-2019&azure-portal=true) to run your tests, you can use the [Visual Studio Test task](https://docs.microsoft.com/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&azure-portal=true) in your build pipeline.
 
-* [Unit testing C# with NUnit and .NET Core](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-nunit)
-* [Visual Studio Test task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)
-* [Build, test, and deploy .NET Core apps in Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/dotnet-core?view=azure-devops&tabs=yaml)
-* [Test Results Trend widget](https://docs.microsoft.com/azure/devops/report/dashboards/configure-test-results-trend?view=azure-devops)
-* [View test analytics for builds](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops#view-test-analytics-for-builds)
-* [Unit test your code](https://docs.microsoft.com/visualstudio/test/unit-test-your-code?view=vs-2019)
-* [Coverlet](https://github.com/tonerdo/coverlet)
+If you're interested in unit testing .NET Core applications, here are some additional resources.
+
+* [Unit test your code](https://docs.microsoft.com/visualstudio/test/unit-test-your-code?view=vs-2019&azure-portal=true)
+* [Unit testing C# with NUnit and .NET Core](https://docs.microsoft.com//dotnet/core/testing/unit-testing-with-nunit?azure-portal=true)
+* [Build, test, and deploy .NET Core apps in Azure Pipelines](https://docs.microsoft.com//azure/devops/pipelines/languages/dotnet-core?view=azure-devops&tabs=yaml&azure-portal=true)
+
+Here's more information about how to analyze your test results.
+
+* [Configure the Test Results Trend (Advanced) widget](https://docs.microsoft.com/azure/devops/report/dashboards/configure-test-results-trend?view=azure-devops&azure-portal=true)
+* [Analyze test results](https://docs.microsoft.com/azure/devops/pipelines/test/test-analytics?view=azure-devops&azure-portal=true)

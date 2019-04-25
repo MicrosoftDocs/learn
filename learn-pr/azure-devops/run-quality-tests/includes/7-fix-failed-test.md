@@ -1,12 +1,34 @@
-<!-- TODO: Show the build badge turn red. You set that up in the previous module but I neglected to add it to my flow here. -->
+At this point, you have a way to run unit tests as changes move through the build pipeline. You also have a way to measure the amount of code that's covered by your tests.
 
-Talk track:
+It's always a good idea to run your tests locally before you submit changes to the pipeline. But what happens when someone forgets and submits a change that breaks the build?
 
-* In this part, you'll fix a test that failed in the pipeline.
-* Let's say Andy was working on a feature and accidentally checked in code without running the tests.
-* Luckily, the pipeline can help us catch issues early when there are unit tests.
+In this part, you'll help the team fix a broken build caused by a failing unit test. Here, you'll:
 
-TODO: Position this as a new unit test the learner will work with.
+> [!div class="checklist"]
+> * Get starter code from Microsoft's GitHub repository.
+> * Push the code up to your repository.
+> * Watch the pipeline automatically run and the unit tests fail.
+> * Reproduce the failure locally.
+> * Analyze and fix the failure.
+> * Push up a fix and watch the build succeed.
+
+First, let's check in with Mara and Andy.
+
+## A quick chat
+
+Mara shows Andy the updated build configuration on Azure Pipelines. Andy likes what he sees, especially the dashboard widgets.
+
+**Andy**: Last time we met, we got code coverage working on your laptop. It's great to see the same thing working in the build pipeline!
+
+**Mara**: Yes, I'm glad we got things working locally first. Fitting it into the build pipeline was easy after that.
+
+**Andy**: I'll be sure to add a unit test the next time I add a feature. It'll be great to increase our code coverage! In fact, Amita is waiting on this new leaderboard feature so she can do user testing on it. I promised her I'd have the change ready by today. See you later!
+
+## Review the new unit test
+
+Andy's latest feature involves the leaderboard. He needs to get the number of scores from the database, so he decides to write a unit test to verify the ``IDocumentDBRepository`1.GetItemsAsync`` method.
+
+Here's what the test looks like. You don't need to add any code just yet.
 
 ```csharp
 [TestCase(0, ExpectedResult=0)]
@@ -38,38 +60,22 @@ ReturnRequestedCount(1);
 ReturnRequestedCount(10);
 ```
 
-<!-- TODO: Rebase against code-coverage branch and force push everything up. -->
+This test also uses the `ExpectedResult` property to simplify the test code and help make its intention clear. NUnit automatically compares the return value against the value of this property, removing the need to explicitly call the assertion.
 
-Here you'll download sample code from Microsoft's GitHub repository, upload that code to your repository, and see unit tests fail when they run in the pipeline.
-
-TODO: Overall process:
-
-1. Get starter code from Microsoft's GitHub repository.
-1. Push the code up to your repository.
-1. Watch the tests fail when the pipeline runs.
-1. Verify the failure locally.
-1. Analyze and fix the break.
-1. Push up a fix and watch the build go green again.
- 
------
+Andy chooses a few values that represent typical queries. He also includes 0 to cover that edge case.
 
 ## Fetch the branch from GitHub
 
-TODO: Add lead-in text.
-TODO: Call out that we name the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
+Similar to what you did earlier, here you'll fetch the `failed-test` branch from GitHub and checkout, or switch to, that branch.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git fetch` command to download the `failed-test` branch from Microsoft's repository.
+1. Run the following `git fetch` command to download and switch to the `failed-test` branch from Microsoft's repository.
 
     ```bash
-    git fetch upstream failed-test
+    git checkout --track upstream/failed-test
     ```
 
-1. Run the following `git checkout` command to switch to the `failed-test` branch.
-
-    ```bash
-    git checkout failed-test
-    ```
+    We name the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
 
 1. Run the following `git push` command to upload the branch to your GitHub repository.
 
@@ -77,58 +83,77 @@ TODO: Call out that we name the branch `failed-test` for learning purposes. In p
     git push origin failed-test
     ```
 
-## See the failure in the pipeline
+## See the test failure in the pipeline
 
-TODO: Add lead-in text.
+Let's say that Andy was in a hurry and pushed up his work without running the tests one final time. Luckily, the pipeline can help us catch issues early when there are unit tests. You'll see that here.
 
 1. From Azure Pipelines, trace the build as it runs through the pipeline.
-1. TODO: Talk about where it fails.
+1. Expand the **Run unit tests - Release** task as it runs.
 
-    TODO: Talk more about the failure. Then convert these bullets to use the row/column extension.
+    You see that the `ReturnRequestedCount` test method fails.
 
-    There are several indicators that it failed.
-    * Email notification
+    ![The dashboard showing a failure on the Test Results Trend widget](../media/7-pipeline-test-failure.png)
 
-        ![](../media/7-email-notification.png)
-    * Test Plans
+    The test passes when the input value is 0, but fails when the input value is 1 or 10.
+1. When the build completes, notice that the **Artifacts** button does not appear.
+    The build is published to the pipeline only when the previous task succeeds. Here, the build was not published because the unit tests failed. This prevents others from accidentally obtaining a broken build.
 
-        * From Azure DevOps, select **Test Plans**, **Runs**. You see the recent test runs, including the one that just ran.
-        * Select the latest completed test. You see that one tests failed. (Show screenshot?)
+In practice, you won't always manually trace the build as it runs. Here are a few ways you might discover the failure.
 
-        ![Test run outcome showing two failed tests](../media/7-test-run-outcome.png)
-    * Dashboard
+* An email notification from Azure DevOps.
 
-        ![The dashboard widget showing a failed test](../media/7-dashboard-failed-test.png)
-    * Build badge
+    Azure DevOps sends you an email notification when the build completes. The subject line starts with "[Build failed]" when the build fails.
 
-        ![The build badge on GitHub indicating a failure](https://via.placeholder.com/140x100)
+    ![A portion of a build failed email notification](../media/7-email-notification.png)
+* Azure Test Plans
+
+    From Azure DevOps, select **Test Plans**, then **Runs**. You see the recent test runs, including the one that just ran. Select the latest completed test. You see that two out of the eight tests failed.
+
+    ![Test run outcome showing two failed tests](../media/7-test-run-outcome.png)
+* The dashboard
+
+    From Azure DevOps, navigate to **Overview** and then **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, indicating that code coverage was not run.
+
+    ![The dashboard widget showing a failed test](../media/7-dashboard-failed-test.png)
+* The build badge
+
+    Although the `failed-test` branch does not include the build badge in **README.md**, here's what you would see on GitHub when the build fails.
+
+    ![The build badge on GitHub indicating a failure](../media/7-badge-failed.png)
 
 ## Analyze the test failure
 
-TODO: Flesh out the analysis more. Talking points:
+When unit tests fail, you typically have two choices, depending on the nature of the failure.
 
-* At this point, you have two choices, depending on the nature of the failure.
+1. If the test reveals a defect in the code, you would fix the code and rerun the tests.
+1. If functionality changed, adjust the test to match the new requirements.
 
-    1. If the test revealed a defect in the code, fix the code.
-    1. If functionality changed, adjust the test to match the new requirements.
+Mara notices the build failure and checks in with Andy.
+
+**Mara**: Hey, Andy. I just saw the email notification in my inbox. It looks like the build is broken.
+
+**Andy**: Yes, I just saw that as well. I already started to investigate. It looks like we have a failing unit test. Would you mind taking a look with me?
+
+**Mara**: Sure, let's take a look. I say we start by verifying we can reproduce the failure on your computer.
 
 ### Reproduce the failure locally
 
-TODO: Add lead-in text.
+Here you'll reproduce the failure locally, just like Mara and Andy.
 
-1. From the integrated terminal, build the application.
-
-    ```bash
-    dotnet build
-    ```
-
-1. From the terminal, run the unit tests.
+1. From Visual Studio Code, open the integrated terminal.
+1. From the terminal, run this `dotnet build` command to build the application.
 
     ```bash
-    dotnet test Tailspin.SpaceGame.Web.Tests --no-build
+    dotnet build --configuration Release
     ```
 
-    You see the same errors. Here's part of the output you see.
+1. From the terminal, run this `dotnet test` command to run the unit tests.
+
+    ```bash
+    dotnet test --no-build --configuration Release
+    ```
+
+    You see the same errors as you did in the pipeline. Here's part of the output you see.
 
     ```output
     Failed   ReturnRequestedCount(10)
@@ -151,12 +176,14 @@ TODO: Add lead-in text.
     Test execution time: 1.2035 Seconds
     ```
 
-You notice that the errors are off by one.
+### Find the cause of the error
 
-You look at the source code for the (document DB class), the method being tested, and you notice this.
+Mara notices that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
+
+Mara and Andy look at the source code for the method being tested, ``IDocumentDBRepository`1.GetItemsAsync``. They see this.
 
 <!-- TODO: Reference the upstream repo instead and code highlight the `pageSize - 1` line. 
-https://review.docs.microsoft.com/en-us/help/contribute/code-in-docs?branch=master#in-repo-snippet-references
+https://review.docs.microsoft.com//help/contribute/code-in-docs?branch=master#in-repo-snippet-references
 -->
 
 ```csharp
@@ -177,22 +204,24 @@ public Task<IEnumerable<T>> GetItemsAsync(
 }
 ```
 
-You suspect that `pageSize - 1` is returning one fewer result and that this should be just `pageSize`.
+They examine the file on GitHub and notice that the has recently changed.
 
-You examine the file on GitHub and notice that this has changed recently.
+![GitHub showing a file diff](../media/7-github-diff.png)
 
-![](../media/7-github-diff.png)
+Mara suspects that `pageSize - 1` is returning one fewer results and that this should be just `pageSize`.
 
-You talk to Andy. Andy remembers changing this while trying something out, but forgot to revert it back.
+**Mara**: Andy, do you remember why you made this change?
 
-You decide to change it back and verify that your unit tests continue to pass.
+**Andy**: I was experimenting with something, and I must have forgotten to change it back. It looks like changing this back will fix things.
+
+Mara and Andy decide to change the code back to its original state and then verify that the unit tests pass.
 
 > [!TIP]
-> Mara: Discussion can also happen on GitHub. You can comment on a pull request or open an issue.
+> Discussion and collaboration can also happen on GitHub. You can comment on a pull request or open an issue.
 
 ## Fix the error
 
-TODO: Add lead-in text.
+Here you'll fix the error by changing the code back to its original state and running the tests to verify the fix.
 
 1. From Visual Studio Code, open **Tailspin.SpaceGame.Web/LocalDocumentDBRepository.cs** from the file explorer.
 1. Modify the `GetItemsAsync` method like this.
@@ -221,7 +250,7 @@ TODO: Add lead-in text.
 1. From the integrated terminal, build the application.
 
     ```bash
-    dotnet build
+    dotnet build --configuration Release
     ```
 
     You see that the build succeeds.
@@ -231,17 +260,15 @@ TODO: Add lead-in text.
 1. From the terminal, run the unit tests.
 
     ```bash
-    dotnet test Tailspin.SpaceGame.Web.Tests --no-build
+    dotnet test --no-build --configuration Release
     ```
 
     You see that the tests pass.
 
     ```output
-    Starting test execution, please wait...
-
     Total tests: 8. Passed: 8. Failed: 0. Skipped: 0.
     Test Run Successful.
-    Test execution time: 1.0413 Seconds
+    Test execution time: 1.2248 Seconds
     ```
 
 1. From the integrated terminal, add each modified file to the index, commit the changes, and push the branch up to GitHub.
@@ -252,10 +279,22 @@ TODO: Add lead-in text.
     git push origin failed-test
     ```
 
-1. Return to Azure Pipelines. Watch the change move through the pipeline. You see the tests pass.
+    > [!TIP]
+    > The `.` in this `git add` example is a wildcard. It matches all unstaged files in the current directory and all subdirectories.
+    > It's a good practice to run `git status` to see what would be staged before using this wildcard to ensure you're staging the files you intend.
 
-    All "red" indicators now turn "green". Here's the dashboard widget, for example.
+1. Return to Azure Pipelines. Watch the change move through the pipeline. You see the tests pass and the overall build succeed.
 
-    ![](../media/7-dashboard-passing-test.png)
+    Optionally, you can visit the **Summary** and **Code Coverage** tabs when the build completes to verify the test results.
 
-TODO: Summarize anything?
+    You can also check out the dashboard to see the updated results trend.
+
+    ![The dashboard showing a passing tests on the Test Results Trend widget](../media/7-dashboard-passing-test.png)
+
+    As a bonus, the added unit test increases the percent of code covered from around 14% to 17%.
+
+    ![The Code Coverage widget showing an increased amount of coverage](../media/7-dashboard-widget.png)
+
+**Andy**: Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
+
+**Mara**: That's OK. The fix was easy enough. And we caught it early &mdash; _way_ before it reached QA or production. Now Amita has a clean build to work from.
