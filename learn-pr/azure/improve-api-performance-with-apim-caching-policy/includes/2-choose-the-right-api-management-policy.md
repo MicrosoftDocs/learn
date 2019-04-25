@@ -1,14 +1,3 @@
-<!-- Guidance on writing the introductory text in a learning unit: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#use-the-standard-learning-unit-introduction-format -->
-
-<!-- Use this syntax for any TODOs or notes to yourself or reviewers -->
-
-<!-- If you have any relevant links to other content (in Learn, Docs or anywhere else), include it only in the Learn More section in the final Summary unit. -->
-
-<!-- Images: all images must be original. Work with the team to submit an image creation request if new art is needed. See here for requirements on screenshots: https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-create-screenshot?branch=master -->
-
-<!-- Don't include a summary section in individual units -->
-
-<!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
 You can use API Management policies to control the behavior of a deployed API without rewriting its code.
 
 In your board game company, you have a set of APIs that enable partner organizations to obtain price estimates, staff members to check stock levels, and customers to place orders. You want to address a particular issue with performance and investigate what else it is possible to achieve with policies.
@@ -19,7 +8,7 @@ First let's look at what you can use policies to do.
 
 In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. The primary functionality and behavior of an API is fixed by the developers who write the code, but administrators can use policies to set limits, convert response formats, or enforce security requirements. In this module, we will concentrate on using policies to set up and control a cache.
 
-Policies are formed of individual statements which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
+Policies are formed of individual statements, which are executed in order. The policy documents are XML structures, which contain elements that you can use to control the behavior of the API.
 
 ## When do policies execute?
 
@@ -78,7 +67,7 @@ To create policy, you can manually edit the XML in the policy editor. Alternativ
 
 ### The product policy scope
 
-In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied at the product scope affect all the APIs in that product. APIs in other products are un-affected. When you manage a product in the Azure portal, click the **Policies** page to bring up the XML policy editor:
+In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied at the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, click the **Policies** page to bring up the XML policy editor:
 
 ![Product Scope](../media/2-products-scope.png)
 
@@ -120,18 +109,18 @@ There are several policies that you can use to prevent or limit access to an API
 - Use the **Check HTTP header** policy to check for a property in an HTTP Header. If the property is not found, Azure drops the request.
 - Use the **Limit call rate by subscription** element to restrict the number of calls that can come from a single API subscription. This policy can ensure that users from one subscription do not use all your bandwidth.
 - Use the **Limit call rate by key** element to restrict the number of calls that arrive with a single access key.
-- Use the **Restrict caller IPs** element to allow or deny calls from specific IP addresses or ranges of IP addresses.
+- Use the **Restrict caller IP's** element to allow or deny calls from specific IP addresses or ranges of IP addresses.
 
 ## Elements for Authentication
 
 Several policies enable you to control authentication:
 
 - Use the **Authenticate with Basic** element to enable authentication in plain text. Remember that this kind of authentication should be protected with SSL encryption.
-- Use the **Authenticate with client certificate** element to enable clients authenticate by supplying a client certificate.
+- Use the **Authenticate with client certificate** element to enable clients to authenticate by supplying a client certificate.
 
 ## Cross domain policies elements
 
-Cross domain requests are usually considered a security threat and denied by browsers and APIs. However, for specific operations they can be desirable and API Management policies enable you to permit them in a secure manner:
+Cross domain requests are considered a security threat and denied by browsers and APIs. However, for specific operations they can be desirable and API Management policies enable you to permit them in a secure manner:
 
 - Use the **Allow cross-domain calls** element to permit calls from Adobe Flash and Silverlight.
 - Use the **CORS** element to permit Cross-Origin Resource Sharing (CORS).
@@ -143,19 +132,19 @@ It's often helpful to change the format or content of a response from a managed 
 
 - Use the **Convert JSON to XML** and **Convert XML to JSON** elements to convert to and from JSON and XML.
 - Use the **Find and replace string in body** to execute a string substitution.
-- Use the **Mask URLs in content** element to re-write any links in the response body so that they point to a different location.
+- Use the **Mask URLs in content** element to rewrite any links in the response body so that they point to a different location.
 - Use the **Set body** element to set the message text for incoming and outgoing requests.
 - Use the **Set HTTP header** element to add items to an existing response or request header.
-- Use the **Set query string parameter** element to add replace a query string parameter.
+- Use the **Set query string parameter** element to add or replace a query string parameter.
 - Use the **Rewrite URL** element to convert a request URL from its public form to a form a private destination.
 - Use the **Transform XML** element to use an XSLT template to transform some XML text.
 
 ## Advanced elements
 
-These policy element can be of use in scenarios when you want a non standard behavior:
+These policy elements can be of use in scenarios when you want non-standard behavior:
 
 - Use the **Control flow** element to apply policy statements based on a Boolean expression.
 - Use the **Forward request** element to send on or forward a request to a backend server.
 - Use the **Retry** element to retry the policy statements enclosed until a condition is met. Execution will repeat at the specified time intervals up until the retry count value is reached.
-- Use the **Send one way request** element to send a request to a URL without waiting for a response.
+- Use the **Send one-way request** element to send a request to a URL without waiting for a response.
 - Use the **Set variable** element to persist a value in a named variable within the context.

@@ -1,14 +1,3 @@
-<!-- Guidance on writing the introductory text in a learning unit: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#use-the-standard-learning-unit-introduction-format -->
-
-<!-- Use this syntax for any TODOs or notes to yourself or reviewers -->
-
-<!-- If you have any relevant links to other content (in Learn, Docs or anywhere else), include it only in the Learn More section in the final Summary unit. -->
-
-<!-- Images: all images must be original. Work with the team to submit an image creation request if new art is needed. See here for requirements on screenshots: https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-create-screenshot?branch=master -->
-
-<!-- Don't include a summary section in individual units -->
-
-<!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
 Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
 
 Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of board for games. API Management policies can accelerate responses by configuring a cache of compiled responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without compiling it again.
@@ -38,7 +27,7 @@ To set up a cache, you use an outbound element named `cache-store` to store resp
 </policies>
 ```
 
-It's also possible to store individual values in the cache, instead of a complete response. To do this, use the `cache-store-value` element to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` element. If you want to remove a value before it expires, use the `cache-remove-value` element:
+It's also possible to store individual values in the cache, instead of a complete response. Use the `cache-store-value` element to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` element. If you want to remove a value before it expires, use the `cache-remove-value` element:
 
 ```xml
 <policies>
@@ -110,4 +99,4 @@ With this policy, the cache will store separate responses for each product, beca
 
 Like query parameters, Azure does not examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
 
-Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute. This is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.
+Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute, which is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.

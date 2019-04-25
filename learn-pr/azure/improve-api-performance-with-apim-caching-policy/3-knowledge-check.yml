@@ -23,10 +23,10 @@ quiz:
       explanation: "This policy element permits JSON with padding, which is a cross-domain request technique and has nothing to do with XML. To ensure XML output, use <json-to-xml>."
     - content: "<json-to-xml>"
       isCorrect: true
-      explanation: "This policy element re-codes any response in JSON format as XML text."
+      explanation: "This policy element recodes any response in JSON format as XML text."
     - content: "<find-and-replace>"
       isCorrect: false
-      explanation: "This policy element find a specified string and replaces it with another. To ensure XML output, use <json-to-xml>."
+      explanation: "This policy element finds a specified string and replaces it with another. To ensure XML output, use <json-to-xml>."
   - content: 'Where would you place your policy element to ensure XML responses?'
     choices:
     - content: "Inbound"
@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "Global scope for the API Management instance"
       isCorrect: false
-      explanation: "Do not use the <json-to-xml> element with global scope, because this would force all responses from the Sales API to use XML, but the website expects JSON responses."
+      explanation: "Do not use the <json-to-xml> element with global scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses."
     - content: "Product scope for the Sales product"
       isCorrect: false
-      explanation: "Do not use the <json-to-xml> element with product scope, because this would force all responses from the Sales API to use XML, but the website expects JSON responses. Also, this scope does not apply to the Board Pricing API, which is not part of the Sales product."
+      explanation: "Do not use the <json-to-xml> element with product scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses. Also, this scope does not apply to the Board Pricing API, which is not part of the Sales product."
     - content: "API scope for the Board Pricing API"
       isCorrect: true
       explanation: "Use the <json-to-xml> element with API scope for the Board Pricing API to ensure that all responses are sent in XML, even if developers coded them to return JSON."
