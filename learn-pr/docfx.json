@@ -67,6 +67,16 @@
                 "dest": "modules"
             },
             {
+                "src": "ai-business",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },        
+            {
                 "src": "student-evangelism",
                 "files": [
                     "**/*.yml"
