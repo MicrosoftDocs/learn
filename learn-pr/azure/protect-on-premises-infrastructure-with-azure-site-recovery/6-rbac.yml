@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-rbac
+metadata:
+  title: Role-based access control in Azure Site Recovery
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Role-based access control in Azure Site Recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-rbac.md)]

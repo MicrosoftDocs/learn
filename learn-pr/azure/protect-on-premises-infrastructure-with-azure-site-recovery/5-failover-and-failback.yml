@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.5-failover-and-failback
+metadata:
+  title: Failover and failback
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Failover and failback
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-failover-and-failback.md)]

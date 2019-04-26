@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-by-azure-site-recovery
+metadata:
+  title: Workloads supported for protection with Azure Site Recovery
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Workloads supported for protection with Azure Site Recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-workloads-supported-by-azure-site-recovery.md)]

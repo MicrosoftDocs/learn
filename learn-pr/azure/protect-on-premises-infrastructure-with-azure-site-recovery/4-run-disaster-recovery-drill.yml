@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-disaster-recovery-drill
+metadata:
+  title: Run a disaster recovery drill
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Run a disaster recovery drill
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-run-disaster-recovery-drill.md)]
