@@ -76,27 +76,14 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `reportgenerator` command to convert the Cobertura file to HTML.
 
-    Choose the version that matches your terminal shell.
-
-    # [Bash](#tab/bash)
-
     ```bash
-    $HOME/.dotnet/tools/reportgenerator \
-      -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
-      -targetdir:./CodeCoverage \
-      -reporttypes:HtmlInline_AzurePipelines
+    reportgenerator -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml -targetdir:./CodeCoverage -reporttypes:HtmlInline_AzurePipelines
     ```
 
-    # [PowerShell](#tab/powershell)
+    If `reportgenerator` isn't on your system path, you can use the full path, which is:
 
-    ```powershell
-    $%USERPROFILE%\.dotnet\tools\reportgenerator `
-      -reports:.\Tailspin.SpaceGame.Web.Tests\TestResults\Coverage\coverage.cobertura.xml `
-      -targetdir:.\CodeCoverage `
-      -reporttypes:HtmlInline_AzurePipelines
-    ```
-
-    ---
+    * `$HOME/.dotnet/tools/reportgenerator` on Bash
+    * `%USERPROFILE%\.dotnet\tools\reportgenerator` on PowerShell
 
     You see a number of HTML files appear in the **CodeCoverage** folder in the root of the project.
 1. From Visual Studio Code, expand the **CodeCoverage** folder and right click **index.htm**. Then select **Reveal in Explorer** (**Reveal in Finder** on macOS).
