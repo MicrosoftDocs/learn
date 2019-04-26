@@ -1,10 +1,12 @@
+Microsoft has a free tool called **Microsoft DevOps Self-Assessment** to help you analyze your current release cycle process. Let's see how Tailspin measures up.
+
 Mara, who is new to the team, is going to take the Microsoft DevOps Self-Assessment. This self-assessment gives you the opportunity to reflect on your existing processes. It also provides you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and fewer bugs than less mature teams.
 
 The assessment comes in two forms &mdash; a long form and a shorter form. Being new to the team, Mara knows she doesn't understand everything so she's going to use the shorter form. Taking the assessment is a good first step. It will give the team an overall view of where they are in the DevOps process. With the results, everyone on the team has a common starting point for identifying the first steps towards improving Tailspin's development and release processes.
 
 Here's how you can take the assessment with her.
 
-## Take the assessemt
+## Take the assessment
 
 1. Go to [devopsassessment.net](https://devopsassessment.net?azure-portal=true).
 1. Fill out the personal information:
@@ -25,7 +27,7 @@ For each section that follows, choose the same answer as Mara for each question.
 
 The team follows a waterfall approach. Work already feels ad-hoc, and the deployment process is invisible to her once she hands off new features to QA.
 
-Mara has already seen the team using open source components with various licenses. This can lead to trouble should anyone discover they may not be correctly licensing open source code they use.
+Mara has already seen the team using open-source components with various licenses. This can lead to trouble should anyone discover they may not be correctly licensing open-source code they use.
 
 | Question | Response |
 |----------|----------|
@@ -85,7 +87,7 @@ The teams have held back on developing mobile apps for their games because they 
 
 ### Monitoring
 
-Mara knows that the operations team uses ping requests to monitor their systems for uptime. She's almost certain that they don't monitor resource usage or collect crash data and telemetry of who's accessing the sites, and when.
+Mara knows that the operations team uses ping requests to monitor their systems for uptime. She's almost certain they don't monitor resource usage or collect crash data and telemetry of who's accessing the sites, and when.
 
 | Question | Response |
 |----------|----------|
@@ -122,7 +124,7 @@ Mara joined Tailspin because they make great video games. Both Mara's immediate 
 
 However, Mara already gets the sense that things don't always go as planned and schedules slip. Processes she feels should happen almost instantly can take days or even weeks. Many work weekends to meet deadlines.
 
-In today's market, influencers and critics can have a bit impact on whether your game is a roaring success or a complete flop. Having a successful web site at the launch of each new game is critical because it provides players with the latest game info and a link to download the game.
+In today's market, influencers and critics can have a significant impact on whether your game is a roaring success or a complete flop. At the launch of each new game, it's critical to have a successful web web site. The site provides players with the latest game info and a link to download the game.
 
 | Question | Response |
 |----------|----------|

@@ -32,7 +32,8 @@ products:
 units:
 - learn.azdo.choose-an-agile-approach.1-introduction
 - learn.azdo.choose-an-agile-approach.2-what-is-agile
-- learn.azdo.choose-an-agile-approach.3-plan-work-azure-boards
-- learn.azdo.choose-an-agile-approach.4-summary
+- learn.azdo.choose-an-agile-approach.3-what-is-azure-boards
+- learn.azdo.choose-an-agile-approach.4-plan-work-azure-boards
+- learn.azdo.choose-an-agile-approach.5-summary
 badge:
   uid: learn.azdo.choose-an-agile-approach.badge

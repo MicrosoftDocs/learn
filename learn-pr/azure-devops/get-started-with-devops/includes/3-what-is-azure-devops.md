@@ -1,3 +1,5 @@
+Azure DevOps provides several tools you can use for better team collaboration, automated build processes, testing, version control, and package management. That's quite a bit to cover! We'll get to all of the tools eventually. For now, let's follow the team as they begin with an overview of what Azure DevOps is and how they can get started.
+
 **Mara**: Amita asked about tools and I'm proposing we use Azure DevOps.
 
 **Andy**: How can we use something for Azure if we're not deploying to the cloud? Plus, we deploy to Linux. Does that matter?

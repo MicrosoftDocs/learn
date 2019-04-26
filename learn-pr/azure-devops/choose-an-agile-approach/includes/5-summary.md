@@ -1,4 +1,4 @@
-In this module, you learned how to use Azure Boards to get started with Agile work planning. The board gives you an easy way to see what see what's going on with a project and to manage your work. Some of the things you can do with Azure Boards are:
+In this module, you learned how to use Azure Boards to get started with Agile work planning. The board gives you an easy way to see what's going on with a project and to manage your work. Some of the things you can do with Azure Boards are:
 
 * Create projects
 * Create work items

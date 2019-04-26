@@ -1,60 +1,6 @@
-Mara created her own Azure Board using the Basic process. It shows the problems in the build process that she and Andy identified. Mara gets the team together for a quick demo.
+Here you'll create a project, a team, and a board in Azure DevOps.
 
-**Mara**: Hi everyone. I set up Azure Boards and wanted to show you some work items I came up with.
-
-**Andy**: What's a work item?
-
-**Mara**: Work items help us plan and manage a project. A work item can track all kinds of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress.
-
-Perhaps it's easier to show you. Here's Azure Boards using the Basic process.
-
-![Azure Boards showing the initial three tasks](../media/3-initial-board.png)
-
-**Amita**: Tell us about the Basic process. Are there other options?
-
-**Mara**: There are four processes to choose from. We can use:
-
-* **Capability Maturity Model Integration (CMMI)**. This is really for large organizations and it's pretty complicated so I didn't use it.
-* **Scrum**. Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practices and rules. We don't have a Scrum master, who's usually received some training and certification so I didn't pick that one either.
-* **Agile**. This seemed like the obvious choice since I'm always talking about Agile but it has a few more things to consider than the simplest option.
-* **Basic**. Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away, and that's why I picked it. The Basic workflow is pretty simple; you move work from **To Do** to **Doing** to **Done**.
-
-**Amita**: OK, let's use it to get started. We can switch to something else, right?
-
-**Mara**: Right! So, let's pick a few work items we think we can fix in a couple weeks.
-
-Andy can identify with these issues, but the rest of the team has questions.
-
-**Tim**: These are mostly dev problems. But while we're on the subject, other teams are talking about code vulnerabilities, and I've been asked to show that our code is secure. Is there a way we can add that?
-
-**Mara**: I know it's not complete. These are problems Andy and I talked about earlier. And some of these problems really need to get broken down into smaller tasks. But DevOps is about everyone on the team working together. For now, I wanted us all to understand the process. But this is a perfect time to discuss what's on your minds.
-
-The team likes seeing a central place to keep track of what they need to do.
-
-:::row:::
-  :::column span="4":::
-Each team member shares what they're working on and other concerns they have. As a brainstorming activity, they add sticky notes to a whiteboard. Their whiteboard fills up quickly.
-  :::column-end:::
-  :::column:::
-![A whiteboard containing sticky notes](../media/3-whiteboard.png)
-  :::column-end:::
-:::row-end:::
-
-Eventually they settle on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like.
-
-![Backlog of tasks](../media/3-all-tasks-board.png)
-
-**Amita**: Wow, that's a lot of problems. How are we ever going to fix all those?
-
-**Mara**: We don't have to fix them all right away. For now, we've identified a _backlog_, or list of work we could pull from. When we plan work, we get to choose what's most urgent or important.
-
-After some more discussion, the team decides to take on the three issues Mara originally proposed:
-
-* **Stabilize the build server**
-* **Create a Git-based workflow**
-* **Create unit tests**
-
-**Mara**: These seem the easiest issues to take on, and they address some recent challenges that came up. Let's set up a project, a team, and a sprint. Then we can decide who does what.
+The Tailspin team is eager to see how Azure Boards is going to work. With the pre-planning out of the way, they can start to use the tools and build the solution they planned.
 
 ## Set up Azure Boards using the Basic process
 

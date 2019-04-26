@@ -1,4 +1,6 @@
-Mara felt that she'd made made a few small steps toward interesting her team in DevOps but progress stalled. The team has been too busy fixing bugs in the last release to think about anything else.
+Agile is a process for planning the work that the team will do. It is based on iterative development and will help the team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
+
+Mara felt she'd made a few small steps toward interesting the team in DevOps, but progress has stalled. The team has been too busy fixing bugs in the last release to think about anything else.
 
 Recall that Irwin, the product manager, provided the team with some rather critical customer feedback about the racing game web site. Resolving these issues wasn't fun. Andy and Mara would write code and then hand it to Amita, the tester. Amita always seemed to find new bugs and had to hand the code back. The build server failed. Tim couldn't get the game's web site to work in production, even after it worked in dev and test. Everyone worked long hours and lost a couple weekends.
 
@@ -29,6 +31,6 @@ After they shipped, Mara and Andy sat down for coffee. They're both tired. Mara 
 
  First, can you explain the build process to me and help me identify the big problems?
 
- After a lot of coffee, Mara and Andy identify the biggest problems in the build process. All of the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic version of Azure boards to get all the problems in one place. 
+ After a lot of coffee, Mara and Andy identify the biggest problems in the build process. All of the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic version of Azure Boards to get all the problems in one place. 
 
 Her next step is to show the board to the team and get them involved.

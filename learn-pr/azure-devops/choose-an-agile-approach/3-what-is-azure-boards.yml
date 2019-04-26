@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.choose-an-agile-approach.3-plan-work-azure-boards
-title: Exercise - Plan work using Azure Boards
+uid: learn.azdo.choose-an-agile-approach.3-what-is-azure-boards
+title: What is Azure Boards?
 metadata:
-  title: Exercise - Plan work using Azure Boards
+  title: What is Azure Boards?
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-plan-work-azure-boards.md)]
+  [!include[](includes/3-what-is-azure-boards.md)]
 quiz:
   title: Check your knowledge
   questions:

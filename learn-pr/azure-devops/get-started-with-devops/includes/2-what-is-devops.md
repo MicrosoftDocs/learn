@@ -1,10 +1,12 @@
+DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. But what exactly does that mean? Let's join the team as Mara explains what DevOps is, what it isn't, and what makes elite performers successful.
+
 Mara has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
 **Mara**: Hi, thanks for coming. I wanted to show you the results of the DevOps Assessment that I took.
 
 ![The team's progress for each of the Self-Assessment categories](../media/2-assessment-results.png)
 
-**Mara**: The graph shows that we're doing better with our culture and our outcomes than with our process, measurements or technology. Just like everybody, we can improve. We can decide which areas to tackle first.
+**Mara**: The graph shows that we're doing better with our culture and our outcomes than with our process, measurements, or technology. Just like everybody, we can improve. We can decide which areas to tackle first.
 
 **Andy**: This shows us where we have problems but not what to do about them.
 
@@ -18,7 +20,7 @@ Mara has called a short meeting with her teammates. Everyone has shown up but no
 
 **Mara**: DevOps isn't a piece of software.
 
-**Andy**: It's more like a methodology. 
+**Andy**: It's more like a methodology.
 
 **Mara**: Not really.
 
@@ -28,15 +30,15 @@ Mara has called a short meeting with her teammates. Everyone has shown up but no
 
 > _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
-Our goal is to give our customers games they will love. We do that by working together with a shared set of practices and tools.
+Our goal is to give our customers games they'll love. We do that by working together with a shared set of practices and tools.
 
 **Amita**: What does that mean? What shared practices? What shared tools?
 
 **Mara**: Here's what I mean by practices:
 
 - **Agile planning**. Together, we'll create a backlog of work that everyone on the team and in management can see. We'll prioritize the items so we know what we need to work on first. The backlog can include user stories, bugs, and any other information that helps us.
-- **Continuous integration (CI)**. We'll automate how we build and test our code and we'll do that every time a team member commits changes to version control.
-- **Continuous delivery (CD)**. This is how we build, test, configure, and deploy from a build to a production environment.
+- **Continuous integration (CI)**. We'll automate how we build and test our code. We'll run that every time a team member commits changes to version control.
+- **Continuous delivery (CD)**. CD is how we test, configure, and deploy from a build to a QA or production environment.
 - **Monitoring**. We'll use telemetry to get information about an application’s performance and usage patterns. We can use that information to improve as we iterate.
 
 **Amita**: I don't know about automated testing. My tests are manual and I do them after Andy hands the code off to me. I don't have time to change how I do everything.
@@ -53,7 +55,7 @@ Our goal is to give our customers games they will love. We do that by working to
 
 Here's the handout that Mara prepared.
 
-DevOps Research and Assessment LLC ([DORA](https://devops-research.com/)) published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today. 
+DevOps Research and Assessment LLC ([DORA](https://devops-research.com/)) published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today.
 
 > [!NOTE]
 > The _Accelerate: State of DevOps 2018: Strategies for a New Economy_ report is the largest and longest-running research of its kind representing five years of work surveying over 30,000 technical professionals worldwide.
@@ -79,7 +81,7 @@ The cloud improves software delivery performance and teams that adopt essential 
 
 ### Open-source software improves performance
 
-High performers are **1.75 times more likely to extensively use open-source software.** They are also 1.5 times more likely to expand open-source usage in future.
+High performers are **1.75 times more likely to extensively use open-source software.** They're also 1.5 times more likely to expand open-source usage in future.
 
 ### Outsourcing by function is rarely adopted by elite performers and it hurts performance
 
@@ -96,4 +98,4 @@ When considering what DevOps is, it is also important to also ensure we understa
 - DevOps is not a methodology
 - DevOps is not a specific piece of software
 - DevOps is not a quick-fix for an organization's challenges
-- DevOps is not just a team or a job title (Although these are reasonably common in the industry)
+- DevOps is not just a team or a job title (Although these titles are reasonably common in the industry)

@@ -1,4 +1,4 @@
-Microsoft provides free Azure DevOps accounts for individuals, small teams, and open source projects. Enterprises can also sign up for Azure DevOps accounts that can scale to thousands of team members. We're going to sign up for a free Azure DevOps account to see how products can help us on our DevOps journey.
+Microsoft provides free Azure DevOps accounts for individuals, small teams, and open-source projects. Enterprises can also sign up for Azure DevOps accounts that can scale to thousands of team members. We're going to sign up for a free Azure DevOps account to see how products can help us on our DevOps journey.
 
 > [!NOTE]
 > In this learning path, you'll use Azure DevOps Services, which Microsoft hosts for you. There's also [Azure DevOps Server](https://azure.microsoft.com/services/devops/server?azure-portal=true), the on-premises version of Azure DevOps Services that you can install and run on your own network.
@@ -9,7 +9,7 @@ Follow along with the team by setting up your own free Azure DevOps account.
 
 1. Go to [dev.azure.com](https://dev.azure.com?azure-portal=true).
 1. Click the **Start free** button.
-1. Sign in using your **Microsoft account**, or if you do not have a Microsoft account, click **Create One!** and complete the steps.
+1. Sign in using your **Microsoft account**, or if you don't have a Microsoft account, click **Create One!** and complete the steps.
 
     > [!NOTE]
     > You may have a Microsoft account already. Typically these might end with hotmail.com or outlook.com.
