@@ -1,14 +1,14 @@
-Let's assume that your music streaming application has an equal distribution of users in the western United States and eastern Asia. You'd like to have a failover version of the app, in one of the regions.
+Let's assume that your music streaming application has an equal distribution of users in the western United States and eastern Asia. You'd like to have a failover version of the app in one region.
 
-The sample application we'll use for this exercise will display the region it's running in on the page. One of the two instances will have higher priority and will be the primary endpoint. The other instance will have lower priority and will be the failover endpoint. Taking the primary endpoint offline will automatically route all traffic to failover endpoint.
+The sample application we use for this exercise displays the region it's running in. One of the two instances has higher priority and is the primary endpoint. The other instance has a lower priority and is the failover endpoint. Taking the primary endpoint offline automatically routes all traffic to the failover endpoint.
 
-You'll set up Traffic Manager to use the US endpoint as the primary, failing over to the Asian endpoint if any errors occur.
+In this exercise, you set up Traffic Manager to use the United States endpoint as the primary, failing over to the Asian endpoint if any errors occur.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Create a new Traffic Manager profile
 
-1. In the Cloud Shell, run this command to create a Traffic Manager profile.
+1. In Azure Cloud Shell, run this command to create a Traffic Manager profile.
 
     ```azurecli
     az network traffic-manager profile create \
@@ -18,10 +18,10 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
         --unique-dns-name TM-MusicStream-Priority-$RANDOM
     ```
 
-    There are a couple parameters of note in this command:
+    You use these parameters in this command:
 
-    - **--routing-method Priority** - Create the Traffic Manager profile using the priority routing method.
-    - **--unique-dns-name** - Creates a globally unique domain name `<unique-dns-name>.trafficmanager.net`. We use the `$RANDOM` Bash function to return a random whole number to ensure the name is unique.
+    - **--routing-method Priority**: Creates the Traffic Manager profile by using the priority routing method.
+    - **--unique-dns-name**: Creates the globally unique domain name `<unique-dns-name>.trafficmanager.net`. We use the `$RANDOM` Bash function to return a random whole number to ensure that the name is unique.
 
 ## Deploy the web apps to the regions
 
@@ -44,7 +44,7 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager
     ```
 
-    Note the `--sku S1` parameter when you created the app service plan. Traffic Manager is a premium feature that requires web apps to be running on at least a S1 pricing tier plan.
+    Note the `--sku S1` parameter when you created the Azure App Service plan. Traffic Manager is a premium feature that requires that a web app be running on at least an S1 pricing tier plan.
 
 1. Deploy the West US 2 web app.
 
@@ -65,9 +65,9 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager
     ```
 
-## Add the endpoints to the Traffic Manager
+## Add the endpoints to Traffic Manager
 
-1. With both the web apps created, add them as endpoints to the Traffic Manager profile.
+1. Add the web apps as endpoints to the Traffic Manager profile.
 
     ```azurecli
     WestId=$(az webapp show \
@@ -99,7 +99,7 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
         --target-resource-id $EastId
     ```
 
-    The above commands get the unique IDs from both of the web apps, then uses those IDs to add them as endpoints to the Traffic Manager profile. Using the `--priority` flag to set the West US app to the highest priority.
+    The code gets the unique IDs from both web apps. Then, the code uses the IDs to add them as endpoints to the Traffic Manager profile. The code uses the `--priority` flag to set the West US app to the highest priority.
 
 1. Let's take a quick look at the endpoints we configured.
 
@@ -112,7 +112,7 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
 
 ## Test the app
 
-1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. The following command will output the IP addresses for each of the resources we've created.
+1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. The following command displays the IP addresses for each of the resources we've created.
 
     ```bash
     # Retrieve the address for the West US 2 web app
@@ -129,7 +129,7 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
 
     The address for the Traffic Manager profile should match the West US 2 web app.
 
-1. Navigate to the Traffic Manager profiles Fully Qualified Domain Name (FQDN), your request will be routed to the endpoint that responds with the highest priority.
+1. Go to the Traffic Manager profile's fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the highest priority.
 
     ```bash
     echo http://$(az network traffic-manager profile show \
@@ -139,9 +139,9 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
         --out tsv)
     ```
 
-    The above prints out the FQDN in the Cloud Shell to allow you to click on it to open a new browser window or tab.
+    The code prints out the FQDN in Cloud Shell. You can select the FQDN to open a new browser window or tab.
 
-1. Verify that the application is working and the location shown at the bottom of the page is "West US 2".
+1. Verify that the application is working and the location shown at the bottom of the page is West US 2.
 
     ![Screenshot of the running West US web app](../media/3-west-us-app.png)
 
@@ -156,7 +156,7 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
         --endpoint-status Disabled
     ```
 
-1. Let's again look at what DNS shows for the web apps and for our Traffic Manager profile.
+1. Let's look again at what DNS shows for the web apps and for our Traffic Manager profile.
 
     ```bash
     # Retrieve the address for the West US 2 web app
@@ -173,6 +173,6 @@ You'll set up Traffic Manager to use the US endpoint as the primary, failing ove
 
     The address for the Traffic Manager profile should now match the East Asia web app.
 
-1. Test the application again from your browser by refreshing the web page. Traffic Manager should automatically redirect the traffic to the East Asia endpoint. Depending on your browser, this might take a few minutes for the cached address to expire. Opening the site in a private window should bypass this cache, allowing you to see the change immediately.
+1. Test the application again from your browser by refreshing the web page. Traffic Manager should automatically redirect the traffic to the East Asia endpoint. Depending on your browser, it might take a few minutes for the cached address to expire. Opening the site in a private window should bypass the cache, so you can see the change immediately.
 
     ![Screenshot of the running East Asia web app](../media/3-east-asia-app.png)

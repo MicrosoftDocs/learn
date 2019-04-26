@@ -1,12 +1,12 @@
-Your network architect would like to take advantage of performance routing to ensure customers have the best performance. They need you to deploy the Music Stream app into two more regions and configure performance routing.
+Your network architect would like to take advantage of performance routing to ensure customers have the best performance. They need you to deploy your company's music streaming app to two more regions and configure performance routing.
 
-![World map showing the four endpoints, Central USA, West USA, East Asia, and Northern Europe](../media/5-performance-exercise.svg)
+![World map that shows the four endpoints Central USA, West USA, East Asia, and Northern Europe](../media/5-performance-exercise.svg)
 
-You'll now deploy the application into two more regions. Then you'll create a new Traffic Manager to use all four endpoints.
+Now, you'll deploy the application to two more regions. Then, you'll create a new Traffic Manager instance to use all four endpoints.
 
 ## Deploy additional instances and configure Traffic Manager
 
-1. Create two new endpoints in Central US and North Europe by deploying the application to new instances of App Service in those regions.
+1. Create two new endpoints in Central US and North Europe by deploying the application to new instances of Azure App Service in those regions.
 
     ```azurecli
     CENTRALAPP="MusicStore-CentralUS-$RANDOM"
@@ -40,7 +40,7 @@ You'll now deploy the application into two more regions. Then you'll create a ne
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager
     ```
 
-1. Create a new Traffic Manager profile with performance routing.
+1. Create a new Traffic Manager profile that is set up with performance routing.
 
     ```azurecli
         az network traffic-manager profile create \
@@ -97,7 +97,7 @@ You'll now deploy the application into two more regions. Then you'll create a ne
 
 ## Test the new configuration
 
-1. Navigate to the Traffic Manager profiles Fully Qualified Domain Name (FQDN), your request will be routed to the endpoint that responds with the lowest latency.
+1. Go to the Traffic Manager profiles fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the lowest latency.
 
     ```bash
     echo http://$(az network traffic-manager profile show \
@@ -109,7 +109,7 @@ You'll now deploy the application into two more regions. Then you'll create a ne
 
 1. Depending on where you're located, you'll be directed to the best performing endpoint.
 
-    ![Screenshot of the running the closest web app to you](../media/5-performance-testing.png)
+    ![Screenshot of a webpage running the web app closest to you](../media/5-performance-testing.png)
 
 1. Use `nslookup` to resolve the Traffic Manager profile domain name.
 
@@ -121,7 +121,7 @@ You'll now deploy the application into two more regions. Then you'll create a ne
             --output tsv)
     ```
 
-    `nslookup` will return where the domain name resolves to, for example if you're closest to Europe:
+    The `nslookup` command returns where the domain name resolves. For example, if you're closest to Europe, it returns the following.
 
     ```output
     Non-authoritative answer:
@@ -138,4 +138,4 @@ You'll now deploy the application into two more regions. Then you'll create a ne
     Address: 23.100.56.27
     ```
 
-If your customers have two endpoints that have equal network latency, they could be routed to either endpoint. Refresh your web page to see if you are served the same endpoint.
+If your customers have two endpoints that have equal network latency, they might be routed to either endpoint. Refresh the web page to see if you are served the same endpoint.
