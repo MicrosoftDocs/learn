@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.intro-to-azure-machine-learning-service
 metadata:
-  title: Introduction to Azure Machine Learning service - Learn
-  description: Introduction to Azure Machine Learning service - Learn
+  title: Introduction to Azure Machine Learning service
+  description: Introduction to Azure Machine Learning service
   ms.date: 03/18/2019
   author: bcafferky
   ms.author: brcaffer
@@ -26,6 +26,7 @@ roles:
 - data-scientist
 products:
 - azure
+- azure-machine-learning-service
 units:
 - learn.data-ai.intro-to-azure-machine-learning-service.introduction
 - learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-service-vs-ml-studio

@@ -2,8 +2,8 @@
 uid: learn.data-ai.transform-data-with-azure-stream-analytics.view-job-result
 title: Exercise - View the results from an Azure Stream Analytics job
 metadata:
-  title: Exercise - View the results from an Azure Stream Analytics job - Learn
-  description: Exercise - View the results from an Azure Stream Analytics job - Learn
+  title: Exercise - View the results from an Azure Stream Analytics job
+  description: Exercise - View the results from an Azure Stream Analytics job
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

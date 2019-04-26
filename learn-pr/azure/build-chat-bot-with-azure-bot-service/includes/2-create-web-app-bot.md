@@ -40,10 +40,10 @@ You should now see several resources created for your Azure web app bot.
 
 ![Screenshot of resources created for the web app bot](../media/2-created-resources.png)
 
-Behind the scenes, a lot happened when the Azure web app bot was deployed.
+Behind the scenes, a lot happened when the Azure Web App Bot was deployed.
 
 - A bot was created and registered in Azure.
-- An Azure web app was created to host the bot.
+- An Azure Web App was created to host the bot.
 - The bot was configured to work with **Microsoft QnA Maker**.
 
 The next step is to use QnA Maker to create a knowledge base of questions and answers to infuse the bot with intelligence.

@@ -27,6 +27,16 @@
                 "dest": "modules"
             },
             {
+                "src": "ai-business-school",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "azure",
                 "files": [
                     "**/*.yml"
@@ -66,6 +76,16 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "ai-business",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },        
             {
                 "src": "student-evangelism",
                 "files": [
@@ -133,6 +153,7 @@
         "overwrite": [],
         "externalReference": [],
         "globalMetadata": {
+            "show_latex": true,
             "breadcrumb_path": "/learn/breadcrumb/toc.json",
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/learn",

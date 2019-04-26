@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.modern-data-warehouse
 metadata:
-  title: Perform data engineering with Azure Databricks - Learn
+  title: Perform data engineering with Azure Databricks
   description: Learn the data engineering tools and techniques supported by Azure Databricks. 
   brand: azure
   ms.date: 02/19/2019
