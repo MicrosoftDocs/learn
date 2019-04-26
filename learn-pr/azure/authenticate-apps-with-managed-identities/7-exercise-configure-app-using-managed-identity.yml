@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.authenticate-apps-with-managed-identities.7-exercise-configure-app-using-managed-identity
+metadata:
+  title: Exercise - Configure a custom application in .NET using managed identity
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Configure a custom application in .NET using managed identity
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/7-exercise-configure-app-using-managed-identity.md)]

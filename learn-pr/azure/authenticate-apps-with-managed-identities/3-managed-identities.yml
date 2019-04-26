@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.authenticate-apps-with-managed-identities.3-managed-identities
+metadata:
+  title: Authentication with managed identities
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Authentication with managed identities
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-managed-identities.md)]
