@@ -5,8 +5,8 @@ metadata:
   title: Query data in an Azure Search index
   description: Query data in an Azure Search index
   ms.date: 04/16/2019
-  author: danwarrener
-  ms.author: dwarrener
+  author: andrewjbyrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
