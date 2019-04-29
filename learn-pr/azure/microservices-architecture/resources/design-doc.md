@@ -108,47 +108,48 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
     List the content that will enable the learner to *Analyze an application and identify decomposition boundaries*:
 
     - Use Domain Driven Design (DDD) to establish service boundaries and responsibility
-        - Inventory service, scheduling service, shipping service
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - Identify the natural areas of responsibility to define the scope of a microservice.
+            - Could also rely on organizational boundaries.
+            - Inventory service, scheduling service, shipping service
+        - Services should be fully encapsulated.
+            - Changes should have impact isolated to the service
+            - Services should expose domain model, not implementation details
+        - Development teams should be small, focused, and autonomous
 
-    List the content that will enable the learner to *subtask*:
+    List the content that will enable the learner to *Refactor a service within the monolith as a microservice*:
 
-    - Enabling objective
+    - Identify the contracts and communication mechanisms to dependant services
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
+    - Create new service exposing APIs necessary for dependant services
 
     *Knowledge check*
 
-    What types of questions will test *learning objective*?
+    What types of questions will test *Analyze an application and identify decomposition boundaries* and *Refactor a service within the monolith as a microservice*?
 
-    - Question type
+    - Give an example business architecture, identify the possible domains
     - Question type
 
 1. **Exercise - Refactor a service within the monolith as a microservice**
 
     List the steps which apply the learning content from previous unit:
 
-    1. Step
-    1. Step
-    1. Step
+    1. Pull out the code from the monolith into a microservice project
+    1. Refactor to expose APIs where reliance on the microservice exits in the existing monolithic application.
+        1. Could be handled by creating a proxy service for non-HTTP calls, and redirect clients to the proxy. Can then track and deprecate dependant service calls.
+    1. Commit code changes to app.
 
 1. **Exercise - Deploy a microservice on Azure Functions**
 
     List the steps which apply the learning content from previous unit:
 
-    1. Step
-    1. Step
-    1. Step
+    1. Create Azure Function
+    1. Deploy application
+    1. Configure monolith app to talk to Azure Function instead of service inside monolith.
 
 1. **Summary**
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module?
+    We have identified the features and capabilities of microservices. We've discussed the differences between a monolith and microservices architecture. We've gone through service decomposition for a monolithic application and redeployed it as a microservice.
 
 ## Notes
 
