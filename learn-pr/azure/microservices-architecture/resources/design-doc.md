@@ -53,52 +53,72 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
     List the content that will enable the learner to *Identify the features, benefits, and drawbacks of a microservices architecture*:
 
     - What is a microservices architecture?
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - In a microservices architecture, services are small, independent, and loosely coupled.
+        - A microservice is small enough that a single small team of developers can write and maintain it.
+        - Services can be deployed independently. A team can update an existing service without rebuilding and redeploying the entire application.
+        - Services are responsible for persisting their own data or external state. This differs from the traditional model, where a separate data layer handles data persistence.
+        - Services communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
+        - Services don't need to share the same technology stack, libraries, or frameworks.
     - What are the benefits of a microservices architecture?
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - Agility
+        - Small code, small teams
+        - Mix of technologies
+        - Resiliency
+        - Scalability
+        - Data isolation
     - What are the potential challenges of a microservices architecture?
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - Complexity
+        - Development and testing
+        - Lack of governance
+        - Network congestion and latency
+        - Data integrity
+        - Management
+        - Versioning
+        - Skillset
 
     List the content that will enable the learner to *Compare the monolith and microservices architecture styles*:
 
-    - Enabling objective
+    - Benefits of microservices over monolith
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+    - When to select microservices
+        - Large applications that require a high release velocity.
+        - Complex applications that need to be highly scalable.
+        - Applications with rich domains or many subdomains.
+        - An organization that consists of small development teams.
 
     *Knowledge check*
 
     What types of questions will test *learning objective*?
 
-    - Question type
-    - Question type
+    - What are the benefits of microservices?
+    - Which is an example of a microservices architecture?
+    - What technologies are a requirement of microservices architecture?
 
 1. **Exercise - Deploy a monolithic application on virtual machines**
 
     List the steps which apply the learning content from previous unit:
 
-    1. Step
-    1. Step
-    1. Step
+    1. Create VMs
+    1. Create database (possibly Azure SQL)
+    1. Deploy application
 
 1. **Analyze an application and identify decomposition boundaries**
 
+    List the content that will enable the learner to *Analyze an application and identify decomposition boundaries*:
+
+    - Use Domain Driven Design (DDD) to establish service boundaries and responsibility
+        - Inventory service, scheduling service, shipping service
+        - Information needed to accomplish the enabling objective
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+
     List the content that will enable the learner to *subtask*:
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
     - Enabling objective
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
