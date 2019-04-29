@@ -1,39 +1,35 @@
-- Introduce the actual data set we'll use - a corpus of fitness center data.
-- Explain the data set
-- Run through the process to create an index
-- Run through the process to load data to an index
-- Run through the process to rebuild an index
-
 Azure Search is a rich search experience over a variety of content wherever the content is stored.
 
 Your organization has a large amount of exercise videos publicly available through it's website. Users are struggling to find relevant content or are undertaking exercises beyond their fitness level. As such the exercise videos need to be indexed using the following properties video title, exercise difficulty, video length and publication date.  This will make the user experience exponentially greater and result in less complaints about the available content.
 
 In the unit, you'll load and index data in the Azure Search Service we created earlier.
 
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
+## Create the example video dataset
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with earlier.
+
+1.
+
+    ```azurecli
+    export STORAGENAME="videoblobstorage"$RANDOM
+    az storage account create --name $STORAGENAME -g <rgn>[sandbox resource group name]</rgn> --kind StorageV2 --sku Standard_LRS
+    ```
+    az storage account create --name $STORAGENAME -g 0b715ae6-7bb0-4eb2-8f40-d93cc7ab07ee --kind StorageV2 --sku Standard_LRS
 
 ## Create an Azure Search index for your data in the Azure portal
 
-[!INCLUDE [TODO - azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+![Screenshot of the Azure portal, highlighting the URL field on the Overview page](../media/3-exercise-screenshot-3.png)
 
-1. From the portal, click **contosofitness** tile on the dashboard. This will load the resource we created earlier.
+1. Search **northwindfitness** at the top of the dashboard, then select the search service you created.
+    
+    ![Screenshot of the Azure portal, highlighting the Import data link](../media/4-exercise-screenshot-1.png)
 
-   ![TODO - INSERT SCREENSHOT.](../media/3-exercise-screenshot-2.png)
+1. On the **northwindfitness** search Overview page, select **Import data**.
 
-1. On the **contosofitness** search Overview page, select **Import Data**.
-
-   ![TODO - INSERT SCREENSHOT.](../media/3-exercise-screenshot-2.png)
-
-1. On the **Connect to your data** page, select **Samples**. Select the **contosofitnessdata** sample sql database, click the **Next: Add cognitive search (Optional)** button.
-
-   ![TODO - INSERT SCREENSHOT.](../media/3-exercise-screenshot-2.png)
+1. On the **Connect to your data** page, 
 
 1. On the **Add cognitive search (Optional)** page, select **Skip to: Customize Target Index**.
-
-   ![TODO - INSERT SCREENSHOT.](../media/3-exercise-screenshot-2.png)
 
 1. On the **Customize Target Index** page use the below information to fill out the form fields. Leave the data fields as their default settings picked up by the indexer.
 
