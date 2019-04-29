@@ -46,6 +46,8 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
 
 1. **Introduction**
 
+    Change this to drone delivery scenario.
+
     An organization is running a monolithic application on virtual machines. This application has become difficult to scale, code releases are causing frequent issues and have become increasingly large. This has delayed important features in the application, and is slowing innovation. The organization is interested in the microservices architecture, but are not sure if it's the right fit for their application, and how they would evolve their application into this architecture.
 
 1. **Monolith to microservices**
