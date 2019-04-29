@@ -8,3 +8,5 @@ You are planning API Management policies for your board games company. You have 
 You have added the Stock Management API and the Sales API to an API Management product named **Sales**.
 
 For the Board Pricing API, you want to make sure that all responses are sent in XML, even though developers have written some operations to generate JSON text. The mobile app expects responses in XML, and the website expects responses in JSON.
+
+<!-- REVIEW The first question is broken due to the angle brackets in the answer texts. Refer to them by full policy names instead of the XML elements. -->

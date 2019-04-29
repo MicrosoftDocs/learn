@@ -8,6 +8,7 @@ In this exercise, you'll import an API into Azure API Management and add a cachi
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+<!-- REVIEW Please have the user do the App Service create/deploy in the Cloud Shell, as it can be reduced to two commands: `az appservice plan create` and `az webapp create` with the `--deployment-source-url` argument pointed at the GitHub repo URL. -->
 ## Create a Web API in Azure Apps Service
 
 Start by creating a new Web API app in Azure Apps Service. You'll use this resource to host the Board Pricing API:
@@ -192,3 +193,5 @@ We'll run the same test on the API in API Management and observe the results of 
 
 1. Examine the results. Note the precise time that is included in the response.
 1. Click the **Send** button to resend the request. Notice that the time in the response has not changed, because the cached response has been served.
+
+<!-- REVIEW Please clean up the code a bit and make it more idiomatic. GetQuery()'s name should be more indicative of what it does, and should return a JsonResult with Json() instead of manually constructing a JSON string. "Height" and "Width" inputs should be numbers, not strings. Not sure how the published operation name ended up as "ApiValuesByHeightByWidthByShippingCodeByGameGet", please change it. The calculated shipping value is not included in the response (not that it makes a difference to the exercise, but the code reflects poorly on the overall module). The resource-based URL parameter scheme doesn't make sense and misses out on an opportunity to require the user to modify the caching policy; have it use querystring params instead. -->

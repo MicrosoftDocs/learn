@@ -1,4 +1,6 @@
-Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
+<!-- REVIEW Please retitle this unit to "Configure a caching policy", and update the title of the next unit to match. -->
+
+Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls. <!-- REVIEW You use "compiled" here a few times; use a different verb, like "prepared" -->
 
 Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of board for games. API Management policies can accelerate responses by configuring a cache of compiled responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without compiling it again.
 

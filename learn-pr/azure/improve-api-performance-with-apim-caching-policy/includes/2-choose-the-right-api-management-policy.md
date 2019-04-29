@@ -98,9 +98,12 @@ You can use the `<base />` tag to determine when policies from a higher scope ar
 
 Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure applies policies from the global and product scopes first, and then executes the find-and-replace policy.
 
-## Common elements in API Management policy
+## Commonly-used policies
 
+<!-- REVIEW Use "policies", not "elements" -->
 Let's examine some things you can do with policy elements in API Management:
+
+<!-- REVIEW I like how you've avoided simply enumerating every single documented policy. See if you can turn this into prose paragraphs, keeping the bold policy names, to make it a little more conversational - the bullet lists make this look like this is something the reader needs to memorize immediately -->
 
 ### Elements used for restricting access
 
