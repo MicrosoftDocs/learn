@@ -13,7 +13,7 @@ Decompose a monolithic application into a microservices architecture
 
 ## Product(s)
 
-- *Add the product(s)*
+- Azure Functions
 
 ## Prerequisites
 
@@ -35,21 +35,61 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+| **1** - Identify the features, benefits, and drawbacks of a microservices architecture | Determining if microservices is the right fit for their application | Knowledge check | Identify the properties and benefits of a microservices application | No, 2 |
+| **2** - Compare the monolith and microservices architecture styles | Determining if microservices is the right fit for their application | Knowledge check | Identify the properties and benefits of a microservices application | No, 1 |
+| **3** - Deploy a monolithic application on virtual machines | Running a monolithic application on virtual machines. | Exercise | Decompose a monolithic application into a microservices architecture | Yes |
+| **4** - Analyze an application and identify decomposition boundaries | Evolving the application into a microservices architecture | Knowledge check | Decompose a monolithic application into a microservices architecture | Yes |
+| **5** - Refactor a service within the monolith as a microservice | Evolving the application into a microservices architecture | Exercise | Decompose a monolithic application into a microservices architecture | Yes |
+| **6** - Deploy a microservice on Azure Functions | Evolving the application into a microservices architecture | Exercise | Decompose a monolithic application into a microservices architecture | Yes |
 
 ## Outline the units
 
-*Add more units as needed for your content*
-
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice (from the module proposal):
+    An organization is running a monolithic application on virtual machines. This application has become difficult to scale, code releases are causing frequent issues and have become increasingly large. This has delayed important features in the application, and is slowing innovation. The organization is interested in the microservices architecture, but are not sure if it's the right fit for their application, and how they would evolve their application into this architecture.
 
-    *Add your scenario [(Guidance)](id-guidance-scenarios.md)*
+1. **Monolith to microservices**
 
-1. **Learning-content unit title**
+    List the content that will enable the learner to *Identify the features, benefits, and drawbacks of a microservices architecture*:
+
+    - What is a microservices architecture?
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+    - What are the benefits of a microservices architecture?
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+    - What are the potential challenges of a microservices architecture?
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+
+    List the content that will enable the learner to *Compare the monolith and microservices architecture styles*:
+
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+    - Enabling objective
+        - Information needed to accomplish the enabling objective
+        - Information needed to accomplish the enabling objective
+
+    *Knowledge check*
+
+    What types of questions will test *learning objective*?
+
+    - Question type
+    - Question type
+
+1. **Exercise - Deploy a monolithic application on virtual machines**
+
+    List the steps which apply the learning content from previous unit:
+
+    1. Step
+    1. Step
+    1. Step
+
+1. **Analyze an application and identify decomposition boundaries**
 
     List the content that will enable the learner to *subtask*:
 
@@ -63,14 +103,22 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
 
-1. **Knowledge check**
+    *Knowledge check*
 
     What types of questions will test *learning objective*?
 
     - Question type
     - Question type
 
-1. **Exercise - exercise unit title**
+1. **Exercise - Refactor a service within the monolith as a microservice**
+
+    List the steps which apply the learning content from previous unit:
+
+    1. Step
+    1. Step
+    1. Step
+
+1. **Exercise - Deploy a microservice on Azure Functions**
 
     List the steps which apply the learning content from previous unit:
 
@@ -85,3 +133,5 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
 ## Notes
 
 Module based on this document from the Architecture Center - https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
+
+Related article on monolithic apps - https://docs.microsoft.com/en-us/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/monolithic-applications
