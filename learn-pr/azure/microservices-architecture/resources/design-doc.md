@@ -121,14 +121,14 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
     - Identify the contracts and communication mechanisms to dependant services
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
-    - Create new service exposing APIs necessary for dependant services
+    - Create new service exposing APIs necessary for dependant services and reconfigure consumers to use the new service location.
+    - Track and migrate any remaining legacy service users over to the new microservice.
 
     *Knowledge check*
 
     What types of questions will test *Analyze an application and identify decomposition boundaries* and *Refactor a service within the monolith as a microservice*?
 
     - Give an example business architecture, identify the possible domains
-    - Question type
 
 1. **Exercise - Refactor a service within the monolith as a microservice**
 
