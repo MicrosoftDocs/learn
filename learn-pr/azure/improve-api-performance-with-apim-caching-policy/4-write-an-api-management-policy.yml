@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.improve-api-performance-with-apim-caching-policy.4-write-an-api-management-policy
+title: How to write an API management policy
+metadata:
+  title: How to write an API management policy
+  description: Content
+  ms.date: 04/25/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-write-an-api-management-policy.md)]

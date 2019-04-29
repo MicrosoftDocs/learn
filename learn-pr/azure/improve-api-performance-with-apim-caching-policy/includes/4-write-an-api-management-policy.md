@@ -1,0 +1,102 @@
+Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
+
+Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of board for games. API Management policies can accelerate responses by configuring a cache of compiled responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without compiling it again.
+
+Here, you will learn how to configure such a cache.
+
+## How to control the API Management cache
+
+To set up a cache, you use an outbound element named `cache-store` to store responses. You also use an inbound element named `cache-lookup` to check if there is a cached response for the current request. You can see these two elements in the example policy below:
+
+```xml
+<policies>
+    <inbound>
+        <base />
+        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal" />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <cache-store duration="60" />
+        <base />
+    </outbound>
+    </on-error>
+        <base />
+    </on-error>
+</policies>
+```
+
+It's also possible to store individual values in the cache, instead of a complete response. Use the `cache-store-value` element to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` element. If you want to remove a value before it expires, use the `cache-remove-value` element:
+
+```xml
+<policies>
+    <inbound>
+        <cache-lookup-value key="12345"
+            default-value="$0.00"
+            variable-name="boardPrice"
+            caching-type="internal" />
+        <base />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <cache-store-value key="12345"
+            value="$3.60"
+            duration="3600"
+            caching-type="internal" />
+        <base />
+    </outbound>
+    </on-error>
+        <base />
+    </on-error>
+</policies>
+```
+
+## Using vary-by tags
+
+It's important to ensure that, if you serve a response from the cache, it is relevant to the original request. Suppose, for example, that the board games Stock Management API received a GET request to the following URL and cached the result:
+
+`http://<boardgames.domain>/stock/api/product/3416`
+
+This request is intended to check the stock levels for a product with part number 3416. Subsequent requests for the same part number can be served from the cache, as long as the record has not expired. So far so good.
+
+Now suppose that the developers alter the API to use a query parameter to specify the part number. The request for the same product is now:
+
+`http://<boardgames.domain>/stock/api/product?partnumber=3416`
+
+By default, cache entries are not recorded with their query parameters. Suppose a different product is requested:
+
+`http://<boardgames.domain>/stock/api/product?partnumber=5484`
+
+This request is to the same address, so API Management serves the cached response. However, this response is incorrect, because the cached response is for product 3416, not product 5484.
+
+To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element in your policy within the &lt;cache-lookup&gt; element:
+
+```xml
+<policies>
+    <inbound>
+        <base />
+        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal">
+            <vary-by-query-parameter>partnumber</vary-by-query-parameter>
+        </cache-lookup>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <cache-store duration="60" />
+        <base />
+    </outbound>
+    </on-error>
+        <base />
+    </on-error>
+</policies>
+```
+
+With this policy, the cache will store separate responses for each product, because they have different part numbers, even though those numbers are specified in a query parameter.
+
+Like query parameters, Azure does not examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
+
+Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute, which is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.

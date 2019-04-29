@@ -1,0 +1,50 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "BoardGamingapi"
+  },
+  "paths": {
+    "/api/Values/{Height}/{Width}/{ShippingCode}/{Game}": {
+      "get": {
+        "tags": [ "Values" ],
+        "operationId": "ApiValuesByHeightByWidthByShippingCodeByGameGet",
+        "consumes": [],
+        "produces": [ "text/plain", "application/json", "text/json" ],
+        "parameters": [
+          {
+            "name": "Height",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Width",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ShippingCode",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Game",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {}
+}
