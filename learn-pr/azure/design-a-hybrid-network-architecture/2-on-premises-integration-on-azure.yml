@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azure
+metadata:
+  title: On-premises network integration on Azure
+  description: TODO
+  ms.date: 04/30/2019
+  author: danwarrener
+  ms.author: dwarrener
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: On-premises network integration on Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-on-premises-integration-on-azure.md)]

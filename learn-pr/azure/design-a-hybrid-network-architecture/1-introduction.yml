@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-introduction-to-azure-search.1-introduction
-title: Introduction
+uid: learn.module-uid.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 04/16/2019
+  description: TODO
+  ms.date: 04/30/2019
   author: danwarrener
   ms.author: dwarrener
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 2
+title: Introduction
+durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]

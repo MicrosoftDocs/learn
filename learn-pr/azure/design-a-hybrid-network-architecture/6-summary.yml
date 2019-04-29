@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-introduction-to-azure-search.9-summary
-title: Summary
+uid: learn.design-a-hybrid-network-architecture.6-summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 04/16/2019
+  description: TODO
+  ms.date: 04/30/2019
   author: danwarrener
   ms.author: dwarrener
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 2
+title: Summary
+durationInMinutes: 5
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/6-summary.md)]
