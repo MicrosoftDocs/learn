@@ -34,8 +34,8 @@ units:
 - learn.azure.improve-api-performance-with-apim-caching-policy.1-introduction
 - learn.azure.improve-api-performance-with-apim-caching-policy.2-choose-the-right-api-management-policy
 - learn.azure.improve-api-performance-with-apim-caching-policy.3-knowledge-check
-- learn.azure.improve-api-performance-with-apim-caching-policy.4-write-an-api-management-policy
-- learn.azure.improve-api-performance-with-apim-caching-policy.5-exercise-write-a-caching-policy
+- learn.azure.improve-api-performance-with-apim-caching-policy.4-configure-a-caching-policy
+- learn.azure.improve-api-performance-with-apim-caching-policy.5-exercise-configure-a-caching-policy
 - learn.azure.improve-api-performance-with-apim-caching-policy.6-summary
 badge:
   uid: learn.azure.improve-api-performance-with-apim-caching-policy.badge
