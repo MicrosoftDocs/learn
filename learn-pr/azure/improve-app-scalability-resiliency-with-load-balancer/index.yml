@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of networking concepts
   - Basic knowledge of Azure virtual machines
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/improve-app-scalability-resiliency-with-load-balancer.svg
 levels:
 - beginner
 roles:
