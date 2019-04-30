@@ -64,7 +64,7 @@ Identify the subtasks of *Improve incident response with alerting on Azure*
     - What is an alert rule?
     - When managing an alert, what does the New state mean?
 
-1. **Delve into metric alerts in Azure Monitor**
+1. **Use metric alerts to alert on performance issues in your Azure environment**
 
     List the content that will enable the learner to *Use metric alerts to improve customer satisfaction*:
 
@@ -77,7 +77,7 @@ Identify the subtasks of *Improve incident response with alerting on Azure*
         - Scaling metric alerts
         - Configure and setup of metric alerts
 
-1. **Exercise - view metric alerts in Azure Monitor**
+1. **Exercise - Use metric alerts to alert on performance issues in your Azure environment**
 
     1. Create a VM that spins up a CPU to 100%
     1. Create a CPU alert (with CLI)
@@ -85,7 +85,7 @@ Identify the subtasks of *Improve incident response with alerting on Azure*
     1. Add diagnostic logging
     1. View the CPU alert in Azure Monitor for Virtual Machines
 
-1. **Delve into log alerts in Azure Monitor**
+1. **Use log alerts to alert on events in your application**
 
     List the content that will enable the learner to *use log alerts to improve customer satisfaction*:
 
@@ -106,7 +106,7 @@ Identify the subtasks of *Improve incident response with alerting on Azure*
     - What is the log query?
     - What is the primary consideration when using log alerts?
 
-1. **Delve into activity log alerts in Azure Monitor**
+1. **Use activity log alerts to alert on events within your Azure infrastructure**
 
     List the content that will enable the learner to *use activity log alerts to improve customer satisfaction*:
 
@@ -118,7 +118,7 @@ Identify the subtasks of *Improve incident response with alerting on Azure*
         - Action groups
         - Configure and setup of activity log alerts
 
-1. **Exercise - view activity log alerts in Azure Monitor**
+1. **Exercise - Use activity log alerts to alert on events within your Azure infrastructure**
 
     1. In the Azure portal, go to Azure Monitor
     1. Add a new Alert for the created storage account (used to store diagnostic data in the first exercise)
@@ -126,7 +126,7 @@ Identify the subtasks of *Improve incident response with alerting on Azure*
     1. Delete the storage account
     1. View the Storage alert in Azure Monitor
 
-1. **Explore the benefits of using smart groups to reduce alert noise in Azure Monitor**
+1. **Use smart groups to reduce alert noise in Azure Monitor**
 
     List the content that will enable the learner to *Use smart groups to improve responsiveness and customer satisfaction*:
 

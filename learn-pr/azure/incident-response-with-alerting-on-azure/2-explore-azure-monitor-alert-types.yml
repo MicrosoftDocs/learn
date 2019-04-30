@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.module-uid.2-explore-azure-monitor-alert-types
+metadata:
+  title: Explore the different alert types supported by Azure Monitor
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Explore the different alert types supported by Azure Monitor
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-explore-azure-monitor-alert-types.md)]

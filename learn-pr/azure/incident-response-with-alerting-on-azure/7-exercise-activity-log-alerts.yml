@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.incident-response-with-alerting-on-azure.7-exercise-activity-log-alerts
+metadata:
+  title: Exercise - Use activity log alerts to alert on events within your Azure infrastructure
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Use activity log alerts to alert on events within your Azure infrastructure
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/7-activity-log-alerts.md)]
