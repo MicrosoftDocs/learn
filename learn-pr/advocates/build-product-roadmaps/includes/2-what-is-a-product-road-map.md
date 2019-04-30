@@ -4,7 +4,7 @@ You've just started at a new startup, Fabrikam, who are building a new AI-powere
 
 A product road map is a plan for your product. It's a strategic document that helps you plan for your product, its growth, and keeps your team on track in executing on that growth. It is what allows your Product organization, and your Product Managers, to know and report where you are, where you’re going, and what the steps are along the path.
 
-A good road map is the "north star" for your product. It connects the long-term vision your organization has for the product with the operational and customer reality on the ground. From your road map, your Product and Engineering teams derive the list of work that they'll undertake and populate backlogs.
+A good road map is the "north star" for your product. It connects the long-term vision your organization has for the product with the operational and customer reality on the ground. From your road map, your Product and Engineering teams derive the list of work that they'll undertake, like the features you want to build for the product, and populate backlogs.
 
 A road map is a living document. Its development is iterative and organic. It changes as priorities and focuses change, as the product grows, you learn what product market fit looks like, and you learn from your customers. A real product road map is never finished.
 
@@ -35,3 +35,7 @@ To build a road map, we work top down; from the least granular component to the 
 ![Product road map hierarchy](../media/product_roadmap.png)
 
 This approach is recommended because the top-level components are closer to the mission and should be a logical progression of detail, easily rolled up and tied to that mission. The alternative, starting from the base and writing up a series of user stories, leaves a lot of space between your mission and its practical application. We find if you start with that base you end up twisting the top-level components into the shape of the user stories and not vice-versa.
+
+## What does a road map look like?
+
+The final form of your road map could be represented in a lot of different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's [a spreadsheet](../media/ProductRoadmapTemplate.xlsx) or document, or stored in a specialized road map tool. 

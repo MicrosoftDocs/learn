@@ -4,8 +4,8 @@
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="1":::
-        ![Product road map missions](../media/user_stories.png)
+    :::column align="center" span="1":::
+        ![Product road map user stories](../media/user_stories.png)
     :::column-end:::
 :::row-end:::
 
@@ -28,3 +28,5 @@ They tell the story of what the user wants, expects, and needs from the requirem
 Estimates are controversial and complicated. There are [many](https://www.berteig.com/how-to-apply-agile/9-agile-estimation-techniques/) [ways](https://techbeacon.com/app-dev-testing/fast-estimation-better-approach-agile-estimation) of [estimating](https://www.agilealliance.org/resources/experience-reports/estimates-terrible/) and even variants on the units: [time](https://rubygarage.org/blog/3-reasons-to-estimate-with-story-points) and [points](https://www.atlassian.com/agile/project-management/estimation) for example. There’s even a movement for ["no estimates" that’s worth reading about](https://techbeacon.com/app-dev-testing/noestimates-debate-unbiased-look-origins-arguments-thought-leaders-behind-movement).
 
 This story is a formal user story; many organizations use more lightweight and informal representations. If a story feels like it has too much detail, then the traditional approach is to split the story into smaller stories.
+
+![Product road map structure](../media/structure.png)

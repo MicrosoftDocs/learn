@@ -4,9 +4,14 @@ At Fabrikam, the audiences for our product road map are:
 
 ## Your product engineering team
 
-The engineers, designers, and product managers working on the product. They are looking for lower-level tactical information, sprint, and story-level, that will tell them what to work on right now. This audience will be the primary and default audience for your product road map and this module is designed to produce an artifact that is most suited to help that audience.
+The engineers, designers, and product managers working on the product. They are looking for lower-level tactical information, sprint, and story-level, that will tell them what to work on right now, for example:
 
-## Your executive team
+1. What do we plan to do this sprint.
+1. The status of the work they are doing right now.
+
+This audience will be the primary and default audience for your product road map and this module is designed to produce an artifact that is most suited to help that audience.
+
+## Your executive team and investors
 
 Your executive team are interested your high-level goals, the total time and cost of development work, and how it achieves the company's strategic objectives. Most likely the executive audience will be interested in the reporting outputs from your product management process.
 

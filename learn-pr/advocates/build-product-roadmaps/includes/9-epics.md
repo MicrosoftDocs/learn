@@ -4,17 +4,28 @@
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="1":::
-        ![Product road map missions](../media/epics.png)
+    :::column align="center" span="1":::
+        ![Product road map epics](../media/epics.png)
     :::column-end:::
 :::row-end:::
 
-Contained inside of your themes are epics. Epics are collections of stories, aligned with a feature of some kind. Earlier in the post, we talked about a theme of "reducing customer churn" and how it included working on look and feel, a recommendation engine, and the reporting interface. Each of these items can be broadly considered features. So our recommendation engine feature would be described as an epic. To build that engine you might have an epic called "Recommendation Engine," perhaps containing user stories for:
+Contained inside of your themes are epics. Epics are collections of the work needed to deliver on the theme. Earlier in the module we indicated one of our themes was:
 
-* The back-end engine.
-* A data pipeline.
-* The recommendation algorithm.
-* The recommendations interface.
+### Reducing customer churn
+
+> We're going to reduce customer churn by 20%.
+
+We'd look at this goal in the theme and identify how we might achieve that. This usually means identify new features we could, aspects of the app we could remove, or even things we could remove. For our customer churn theme we've worked with the whole team and identified two features that should help us reduce our customer churn.
+
+* Working on the look and feel of the UI.
+* Adding a recommendation engine.
+
+Each of these features will be made up of many pieces of work that we'll need to manage and deliver. To keep all of these pieces of work organized we collect them into an epic. So the elements needed for our recommendation engine feature would be collected together in an epic called "Recommendation Engine," containing user stories for:
+
+* The recommendation algorithm and model.
+* A data pipeline to feed the engine.
+* The back-end of the engine.
+* An interface to return recommendations to the customer.
 
 Each epic should have a description and measures of success. For our recommendation engine, this description and measure might be:
 

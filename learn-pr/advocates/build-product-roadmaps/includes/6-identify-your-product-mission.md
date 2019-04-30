@@ -4,7 +4,7 @@
     :::column-end:::
 :::row-end:::
 :::row:::
-    :::column span="1":::
+    :::column align="center" span="1":::
         ![Product road map missions](../media/mission.png)
     :::column-end:::
 :::row-end:::
@@ -21,11 +21,11 @@ The product's mission is usually an extension of your elevator pitch with a clea
 
 ## What's the problem
 
-State the problem you're trying to solve. Addressing this problem should be at the heart of your product. At Fabrikam, identifying a clothing item and its brand from an image is hard and time-consuming. Even if you can, it's often difficult to track the item down to a store to buy it.
+State the high-level problem you're trying to solve. Addressing this problem should be at the heart of your product. At Fabrikam, we know the identifying a clothing item and its brand from an image is hard and time-consuming. Even if you can, it's often difficult to track the item down to a store to buy it.
 
 ## What's the solution
 
-Once you've articulated the problem, you need to understand the high-level solution you're building to solve the problem. In our case, the Fabrikam app makes it easier to identify who makes the clothes you want using machine learning and AI. The app then allows you to buy those clothes without leaving the app.
+Once you've articulated the problem, you need to understand the high-level solution you're building to solve the problem. In our case, we're building an app that makes it easier to identify the clothes you want using machine learning and AI. And that then allows you to buy those clothes without leaving the app.
 
 ## Everyone owns the mission
 

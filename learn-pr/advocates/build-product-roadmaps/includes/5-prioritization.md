@@ -42,10 +42,14 @@ Measuring the value of the feature can be hard. It's important to be as objectiv
 
 A good set of criteria to consider for measuring value is:
 
-* Customer/user impact: how many customers will this feature reach? A larger feature that’s invaluable to some of your customers is likely to be of lesser relative value than a smaller feature that is valuable to all of your customers.
-* Revenue/Acquisition: will this feature drive revenue or help you acquire more customers?
-* Quality: Does this feature improve the quality of your product?
-* Marketing/Brand: Does this feature enhance or enable marketing or brand awareness?
+* Customer/user impact
+    * How many customers will this feature reach? A larger feature that’s invaluable to some of your customers is likely to be of lesser relative value than a smaller feature that is valuable to all of your customers.
+* Revenue/Acquisition
+    * Will this feature drive revenue or help you acquire more customers?
+*Quality
+    *Does this feature improve the quality of your product?
+* Marketing/Brand
+    * Does this feature enhance or enable marketing or brand awareness?
 
 This process should be a fast exercise, don't agonize over these decisions.
 
