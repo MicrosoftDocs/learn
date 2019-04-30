@@ -158,7 +158,7 @@ The API is now added to the management instance. Let's test the API before any p
 
 ## Add a caching policy
 
-Now we can enable the cache by adding elements to the policy:
+Now we can enable the cache by adding policies to the XML:
 
 1. Click the **Design** tab and then click the **GET** operation.
 1. In the **Inbound processing** section, click **+Add policy**.
@@ -170,7 +170,7 @@ Now we can enable the cache by adding elements to the policy:
 1. In the **Inbound processing** section, click **</>**. The portal displays the policy XML editor.
 1. Notice that a **&lt;cache-lookup&gt;** tag has been added to the **&lt;inbound&gt;** section, and a **&lt;cache-store&gt;** tag has been added to the **&lt;outbound&gt;** section.
 
-    ![Policy editor with caching elements](../media/5-policy-editor-with-caching-elements.png)
+    ![Policy editor with caching policies](../media/5-policy-editor-with-caching-policies.png)
 
 1. Click **Save**.
 

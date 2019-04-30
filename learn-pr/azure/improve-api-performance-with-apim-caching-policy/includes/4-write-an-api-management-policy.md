@@ -8,7 +8,7 @@ Here, you will learn how to configure such a cache.
 
 ## How to control the API Management cache
 
-To set up a cache, you use an outbound element named `cache-store` to store responses. You also use an inbound element named `cache-lookup` to check if there is a cached response for the current request. You can see these two elements in the example policy below:
+To set up a cache, you use an outbound policy named `cache-store` to store responses. You also use an inbound policy named `cache-lookup` to check if there is a cached response for the current request. You can see these two policies in the example below:
 
 ```xml
 <policies>
@@ -29,7 +29,7 @@ To set up a cache, you use an outbound element named `cache-store` to store resp
 </policies>
 ```
 
-It's also possible to store individual values in the cache, instead of a complete response. Use the `cache-store-value` element to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` element. If you want to remove a value before it expires, use the `cache-remove-value` element:
+It's also possible to store individual values in the cache, instead of a complete response. Use the `cache-store-value` policy to add the value, with an identifying key. Retrieve the value from the cache by using the `cache-lookup-value` policy. If you want to remove a value before it expires, use the `cache-remove-value` policy:
 
 ```xml
 <policies>
@@ -74,7 +74,7 @@ By default, cache entries are not recorded with their query parameters. Suppose 
 
 This request is to the same address, so API Management serves the cached response. However, this response is incorrect, because the cached response is for product 3416, not product 5484.
 
-To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element in your policy within the &lt;cache-lookup&gt; element:
+To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element within the &lt;cache-lookup&gt; policy:
 
 ```xml
 <policies>
