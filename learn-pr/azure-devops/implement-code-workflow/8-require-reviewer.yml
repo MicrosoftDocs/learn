@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.implement-code-workflow.8-tbd
-title: Exercise - TBD
+uid: learn.azdo.implement-code-workflow.8-require-reviewer
+title: Exercise - Add a rule to require a reviewer
 metadata:
-  title: Exercise - TBD
+  title: Exercise - Add a rule to require a reviewer
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-tbd.md)
+  [!include[](includes/8-require-reviewer.md)

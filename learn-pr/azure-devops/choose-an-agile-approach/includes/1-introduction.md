@@ -12,4 +12,4 @@ In this module, you will:
 
 - An account in [Azure DevOps](https://dev.azure.com?azure-portal=true)
 
-If you don't already have an Azure DevOps account, we highly recommend you go through [Get started with Azure DevOps](https://docs.microsoft.com/learn/modules/get-started-with-devops?azure-portal=true) before starting this module.
+If you don't already have an Azure DevOps account, we highly recommend you go through [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true) before starting this module.

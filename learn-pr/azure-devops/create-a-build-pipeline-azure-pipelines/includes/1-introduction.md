@@ -1,3 +1,5 @@
+This module is all about setting up a continuous integration (CI) pipeline for your application.
+
 The _Space Game_ web team is being pulled in many different directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
 
 But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process.
@@ -33,3 +35,13 @@ You'll also need to set up the following for software development on your Window
 This setup prepares you for this and future modules. You can also use them to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in the previous learning path. As a refresher, here's who you'll work with in this module.
+
+[!include[](../../shared/includes/meet-andy-row.md)]
+
+[!include[](../../shared/includes/meet-amita-row.md)]
+
+[!include[](../../shared/includes/meet-mara-row.md)]

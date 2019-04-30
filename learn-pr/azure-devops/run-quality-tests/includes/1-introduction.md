@@ -13,3 +13,21 @@ In this module, you will:
 * Add dashboard widgets to visualize test runs over time
 * Perform code coverage testing to see how much of your code is covered by unit tests
 * See a test fail in the pipeline and then fix the failure
+
+## Prerequisites
+
+The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true) module.
+
+Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in the previous learning path. As a refresher, here's who you'll work with in this module.
+
+[!include[](../../shared/includes/meet-andy-row.md)]
+
+[!include[](../../shared/includes/meet-amita-row.md)]
+
+[!include[](../../shared/includes/meet-tim-row.md)]
+
+[!include[](../../shared/includes/meet-mara-row.md)]

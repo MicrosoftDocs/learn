@@ -92,7 +92,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
     Here, `upstream` refers to Microsoft's GitHub repository. You typically don't use the `--track` flag very often, but here you use it to get starter code from Microsoft's repository. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
-    Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from Microsoft's repository.
+    Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from Microsoft's repository and cloned it locally.
 1. As an optional step, open **azure-pipelines.yml** from Visual Studio code and familiarize yourself with the initial configuration.
     The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
 

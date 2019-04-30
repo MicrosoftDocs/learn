@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.implement-code-workflow.4-publish-artifact
-title: Exercise - Publish the build artifact
+uid: learn.azdo.implement-code-workflow.4-create-pull-request
+title: Exercise - Create a pull request
 metadata:
-  title: Exercise - Publish the build artifact
+  title: Exercise - Create a pull request
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-publish-artifact.md)
+  [!include[](includes/4-create-pull-request.md)

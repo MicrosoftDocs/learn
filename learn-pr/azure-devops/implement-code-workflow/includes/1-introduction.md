@@ -1,29 +1,30 @@
-OK, you've connected your app on GitHub to an Azure pipeline. Now you're ready to start using pipelines for what they're meant for - collaborate with your team to quickly and safely move changes through the pipeline.
+This module is about code collaboration using Git and GitHub.
 
------
+Elite performers deploy code more frequently and experience much faster lead times than low performers. To accomplish that, developers need a way to work with source code and share their changes with others.
 
-Notes:
+Although Azure DevOps works with various kinds of source control, many developers are choosing Git because it's a distributed system that enables every contributor to have their own copy of the work. Here you'll use Git's branching and merging capabilities to more efficiently work with other developers. You'll also use GitHub because it provides a central location for teams to host their projects and share their work.
 
-Goals:
+## Learning objectives
 
-- working with others; group collaboration
-- less emphasis on web interface; more on code and CLI tooling
-  - local Git => .yml for instance
-- triggers
-- approvals and gates
-- propose a change
-  - get it working locally
-  - push up branch; submit PR
-  - watch the branch build and succeed
-  - get reviewer(s)
-  - merge it
-  - build it
-- add a build badge
-- dashboard
- 
+In this module, you will:
 
-------
+* Collaborate with others by choosing an appropriate branching and merging strategy
+* Add a badge to your GitHub repository to show the status of the latest build
+* Add a dashboard widget to visualize your build history
+* Set up a rule on your GitHub repository to require a reviewer
 
-Scraps:
+## Prerequisites
 
-Perhaps mention other options that are available (the JTA mentions "TFVC, GitHub, & Bitbucket"). Why choose Git? ("Git is popular with the development community because ...")
+The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true) module.
+
+Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in the previous learning path. As a refresher, here's who you'll work with in this module.
+
+[!include[](../../shared/includes/meet-andy-row.md)]
+
+[!include[](../../shared/includes/meet-amita-row.md)]
+
+[!include[](../../shared/includes/meet-mara-row.md)]
