@@ -33,7 +33,7 @@ products:
 #- azure-devops
 units:
 - learn.azdo.run-quality-tests-after-builds.1-introduction
-- learn.azdo.run-quality-tests-after-builds.2-tbd
+- learn.azdo.run-quality-tests-after-builds.2-what-is-automated-testing
 - learn.azdo.run-quality-tests-after-builds.3-set-up-environment
 - learn.azdo.run-quality-tests-after-builds.4-add-unit-tests
 - learn.azdo.run-quality-tests-after-builds.5-add-dashboard-widget

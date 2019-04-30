@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-quality-tests-after-builds.2-tbd
-title: TBD
+uid: learn.azdo.run-quality-tests-after-builds.2-what-is-automated-testing
+title: What is automated testing?
 metadata:
-  title: TBD
+  title: What is automated testing?
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-tbd.md)]
+  [!include[](includes/2-what-is-automated-testing.md)]
