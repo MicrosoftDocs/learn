@@ -34,7 +34,7 @@ A dashboard is a customizable area in Azure DevOps where you can add widgets and
 1. You see the **Build History** widget on the dashboard.
 
     ![Azure Pipelines showing the Build History widget](../media/7-build-history-widget.png)
-1. Hover your mouse pointer over each build to see the build number, when it was done, and the elapsed build time. All of your were successful, so the bars are all green. But if there was a failed build, that build would appear in red.
+1. Hover your mouse pointer over each build to see the build number, when it was done, and the elapsed build time. Each build succeeded, so the bars are all green. But if there was a failed build, that build would appear in red.
 1. Click on one of the bars to drill down into that build.
 
 To discover more widgets, click on the **Extension Gallery** link at the bottom of the **Add Widget** pane.
