@@ -17,7 +17,7 @@
     },
     {
         "id": "d3a9f34f-d8a1-421b-bdd3-adbf826dbc84",
-        "Title": "Bums and tums",
+        "Title": "Crunches and Curls",
         "Difficulty": "4",
         "Length": "00:4:12",
         "Publication": "2019-04-22 09:56:26",
@@ -30,5 +30,21 @@
         "Length": "00:07:11",
         "Publication": "2019-04-28 22:56:26",
         "Size": "899"
-    }
+    },
+    {
+        "id": "d3a9f34f-d8a1-421b-bdd3-adbf826dbc84",
+        "Title": "PT Series 1",
+        "Difficulty": "9",
+        "Length": "00:14:12",
+        "Publication": "2019-04-22 09:56:26",
+        "Size": "1532"
+    },
+    {
+        "id": "d3a9f34f-d8a1-421b-bdd3-adbf826dbc84",
+        "Title": "PT Series 2",
+        "Difficulty": "10",
+        "Length": "00:14:12",
+        "Publication": "2019-04-22 10:56:26",
+        "Size": "1332"
+    }    
 ]
