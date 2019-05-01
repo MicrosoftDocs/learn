@@ -98,7 +98,7 @@ You can use the `<base />` tag to determine when policies from a higher scope ar
 
 Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure applies policies from the global and product scopes first, and then executes the find-and-replace policy.
 
-## Commonly-used policies
+## Commonly used policies
 
 Let's examine some things you can do with policies in API Management:
 
@@ -140,7 +140,7 @@ Sometimes you want to keep a response in XML, but alter its schema. In such case
 
 Use **Find and replace string in body** to execute a string substitution. For example, if a brand-name has changed, you could use this policy to ensure that the change is reflected in all responses, even if the underlying data still includes references to the old name.
 
-The **Mask URLs in content** policy can rewrite any links in the response body so that they point to a different location. This is a useful tool when a website or web API has moved.
+The **Mask URLs in content** policy can rewrite any links in the response body so that they point to a different location. This policy is useful when a website or web API has moved.
 
 Use the **Set body** policy to set the message text for incoming and outgoing requests.
 

@@ -1,4 +1,3 @@
-
 You are planning API Management policies for your board games company. You have three APIs:
 
 - **The Board Pricing API**. You manufacture boards of different sizes for partner companies to use with their games. Those partners can use this API to request a price estimate for manufacturing boards of different sizes.
