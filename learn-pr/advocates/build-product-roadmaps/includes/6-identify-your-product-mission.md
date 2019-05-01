@@ -1,17 +1,15 @@
 :::row:::
-    :::column span="2":::
-        **Mission**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column align="center" span="1":::
+  :::column:::
         ![Product road map missions](../media/mission.png)
-    :::column-end:::
-:::row-end:::
+  :::column-end:::
+        :::column span="3":::
 
 The product road map is the strategic guide to building your product. Every road map should be driven by the mission of your product, the answer to the "Why you're building the product?" question.
 
 If you can’t answer this question or haven’t yet done so, then you need to rethink building a road map or developing the product in the first place! 
+
+ :::column-end:::
+:::row-end:::
 
 This mission is often articulated as your "elevator pitch": a pitch given in the 2-3 minutes it takes you to ride an elevator. The Fabrikam team's mission is:
 

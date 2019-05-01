@@ -1,13 +1,8 @@
 :::row:::
-    :::column span="2":::
-        **Epics**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column align="center" span="1":::
-        ![Product road map epics](../media/epics.png)
-    :::column-end:::
-:::row-end:::
+  :::column:::
+       ![Product road map epics](../media/epics.png)
+  :::column-end:::
+        :::column span="3":::
 
 Contained inside of your themes are epics. Epics are collections of the work needed to deliver on the theme. Earlier in the module we indicated one of our themes was:
 
@@ -19,6 +14,9 @@ We'd look at this goal in the theme and identify how we might achieve that. This
 
 * Working on the look and feel of the UI.
 * Adding a recommendation engine.
+
+ :::column-end:::
+:::row-end:::
 
 Each of these features will be made up of many pieces of work that we'll need to manage and deliver. To keep all of these pieces of work organized we collect them into an epic. So the elements needed for our recommendation engine feature would be collected together in an epic called "Recommendation Engine," containing user stories for:
 

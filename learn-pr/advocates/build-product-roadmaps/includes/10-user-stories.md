@@ -1,17 +1,15 @@
 :::row:::
-    :::column span="2":::
-        **User Stories**
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column align="center" span="1":::
-        ![Product road map user stories](../media/user_stories.png)
-    :::column-end:::
-:::row-end:::
+  :::column:::
+       ![Product road map user stories](../media/user_stories.png)
+  :::column-end:::
+        :::column span="3":::
 
 User stories are the base artifacts for Agile planning. A user story is a high-level definition of a requirement. It should contain enough information that the requirement is understood, and a reasonable estimate of the effort required to build it can be made.
 
 User stories are written throughout the development life cycle, but the core of them are written when you create an epic. Typically, the whole team involved, and often stakeholders from the business or even customers, and the stories are written in a workshop-like forum. Further stories will evolve as the epic proceeds, to address new requirements or to split existing stories that have become too complex. Some stories will even evolve into epics in their own right if they turn out to be complex or emerge as functionality worth extending.
+
+ :::column-end:::
+:::row-end:::
 
 A good user story contains a summary of the requirement, no more than one or two sentences, a series of stories about the requirement, a test of the story’s success, and a rough estimate. Those stories typically follow a format something like:
 
