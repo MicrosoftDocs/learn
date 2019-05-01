@@ -1,8 +1,8 @@
 Azure Search is a rich search experience over a variety of content wherever the content is stored.
 
-Your organization has a large amount of exercise videos publicly available through it's website. Users are struggling to find relevant content or are undertaking exercises beyond their fitness level. As such the exercise videos need to be indexed using the following properties video title, exercise difficulty, video length and publication date.  This will make the user experience exponentially greater and result in less complaints about the available content.
+Your organization has a large number of exercise videos publicly available through its website. Users are struggling to find relevant content or are undertaking exercises beyond their fitness level. The exercise videos need to be indexed using the following properties video title, exercise difficulty, video length, and publication date.  It is hoped that these changes will improve user experience and result in fewer complaints about being unable to find relevant content.
 
-In the unit, you'll load and index data in the Azure Search Service we created earlier.
+In the unit, you'll load and index data in the Azure Search service we created earlier.
 
 ## Create the example video data set
 
@@ -16,13 +16,13 @@ In the unit, you'll load and index data in the Azure Search Service we created e
     az storage container create --connection-string $CREDENTIALS --name $CONTAINER
     ```
 
-1. Download the example video catalog.
+1. Download the example video catalog into Cloud Shell storage.
 
     ```bash
     curl ... video-catalog.json
     ```
 
-1. Upload the video catalog to the storage account.
+1. Upload the video catalog to the blob storage account.
 
     ```azurecli
     az storage blob upload --connection-string $CREDENTIALS --container-name $CONTAINER --file video-catalog.json --name VideoCatalog
@@ -108,9 +108,18 @@ In the unit, you'll load and index data in the Azure Search Service we created e
 
     Change the Type of the fields to match the above, and select the checkboxes, then select **Next: Create an indexer**.
 
-1. On the **Create an indexer** page, select **Submit** to begin the indexing process.
+1. On the **Create an indexer** page, select **Submit** to begin building the indexer.
 
     When the process completes, the portal will return you to the Search service overview.
+
+    ![Screenshot of the Azure portal, showing the overview](../media/5-exercise-screenshot-9.png)
+
+1. Select the **indexers** tab, and then select **myindexer**.
+1. At the top of **myindexer** page, select **Run**.
+
+    ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-10.png)
+
+1. The indexer should import the video catalog, and show that 19 documents have been imported into the index.
 
 ## Test the index
 
@@ -124,7 +133,8 @@ In the unit, you'll load and index data in the Azure Search Service we created e
 
     The search query above returns all the documents in the search index, including a count of all the documents.
 
+1. Leave the Azure portal signed in for the next exercise.
+
 ## Edit and then rebuild an Azure Search index
 
-The index can't be rebuilt in the Azure portal, only the REST API and .NET SDK can rebuild an index. If you are in the development stage, and only have access to the portal, you can delete and recreate the index.
-
+The index can't be rebuilt in the Azure portal. You can only rebuild an index programmatically with the REST API and .NET SDK. If you are in the development stage, and only have access to the portal, you can delete and recreate the index.

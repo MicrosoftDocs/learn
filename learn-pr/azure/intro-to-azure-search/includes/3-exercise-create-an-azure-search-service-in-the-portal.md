@@ -19,7 +19,7 @@ In the unit, you'll create the Azure Search Service.
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **URL** | northwindfitness* this needs to be unique  |
+    | **URL** | northwindfitness* this needs to be unique, if this name is unavailable add a random number  |
     | **Resource group** |  Select the concierge resource group <rgn>[sandbox resource group name]</rgn> |
     | **Location** | Select your nearest data center |
 
@@ -35,12 +35,4 @@ In the unit, you'll create the Azure Search Service.
 
     ![Screenshot of the Azure portal, highlighting the URL field on the Overview page](../media/3-exercise-screenshot-4.png)
 
-1. Select **URL** and paste the URL into notepad.
-
-    ![Screenshot of the Azure portal, ](../media/3-exercise-screenshot-5.png)
-
-1. Select on the **Keys** blade in the left hand menu.
-
-1. Select the document icon next to the **Primary Admin Key** to copy the value, and then paste it into notepad.
-
-In the next part, you'll learn how to load data into your newly created Search service and manage indexes.
+1. View the overview page, and note that ability to add indexes, import data, and search created indexes.

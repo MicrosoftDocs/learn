@@ -54,9 +54,11 @@ Usage and Monitoring sections give you the option to view data about query metri
 
 ### Rebuilding indexes
 
-When using Azure Search, there will be situations that will require you to rebuild indexes. This will be the case when developing an index. Rebuilding an index is the process to drop and recreate the physical data structure associated with the index. When an index is rebuilt, all the stored fields are deleted and then recreated based upon revised schema. The index is then repopulated with data, which is either pushed to the index, or pulled from the supported external data source.
+When using Azure Search, there will be situations that will require you to rebuild indexes. An index can't be rebuilt in the Azure portal. You can only rebuild an index programmatically with the REST API and .NET SDK. If you are in the development stage, and only have access to the portal, you can delete and recreate the index which is the equivalent to the programmatic approach.
 
-There are several conditions that will require an index to be rebuilt:
+Rebuilding an index will take the index offline for a few seconds, and response times can be affected for several minutes after the index has been updated.
+
+These ar the conditions that will require you to rebuild an index:
 
 - A field definition is changed
 - An analyzer is assigned to a field
@@ -65,15 +67,29 @@ There are several conditions that will require an index to be rebuilt:
 - A field is deleted
 - The Azure Search service tier is changed
 
-Data refresh for an index runs as a background task, this allows you to add, delete, or update documents in the index with minimal disruption to queries. As is the case for relational database table indexes, queries may take longer to complete. There are certain modifications that can be made to an index that don't result in an index rebuild:
+**Using the REST API**
 
-- A new field is added to the index
-- An existing field has the retrievable attribute set
-- An existing field has the search analyzer set
-- An index has a new analyzer definition set
-- Scoring profiles have been added, updated, or deleted
-- CORS settings have been added, updated, or deleted
-- Synonym maps have been added, updated, or deleted
+If you are reusing the index name, drop the existing index.
+
+`DELETE https://[service name].search.windows.net/indexes/[index name]?api-version=[api-version] api-key:[admin key]`
+
+Create the JSON definition for the index schema and call the update.
+
+`PUT https://[search service name].search.windows.net/indexes/[index name]?api-version=[api-version] api-key: [admin key] Content-Type: application/json`
+
+Re-add all the search documents.
+
+`POST https://[service name].search.windows.net/indexes/[index name]/docs/index?api-version=[api-version] api-key: [admin key] Content-Type: application/json`
+
+
+**Using the .NET SDK**
+
+The .NET SDK provides a single asynchronous method call that drops and recreates the index with one call.
+
+`IIndexesOperations.CreateOrUpdateWithHttpMessagesAsync`
+
+> [!TIP]
+> Rebuilding an index will have customers experiencing an impact to the performance of their search queries. In the worst scenario, an amount of downtime may need to occur. There is another option if it is unacceptable to impact the performance of the current Search service. You can create a new development search service to run alongside the existing production service. Having the new development running in its own Search service means there won't be any resource contention, and performance won't be impacted. When the development is finished you choose to either redirect searches to your new service, or publish an updated index to the original service.
 
 ### Handling large data volumes
 
