@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.4-exercise-create-a-workflow-using-durable-functions
+title: Exercise - Create a workflow using Durable Functions
+metadata:
+  title: Exercise - Create a workflow using Durable Functions
+  description: Exercise - Create a workflow using Durable Functions
+  ms.date: 04/24/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+durationInMinutes: 16
+content: |
+  [!include[](includes/4-exercise-create-a-workflow-using-durable-functions.md)]
