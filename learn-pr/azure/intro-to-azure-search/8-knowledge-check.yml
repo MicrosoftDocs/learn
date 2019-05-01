@@ -9,16 +9,67 @@ metadata:
   ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
 quiz:
- questions:
-    - content: 'Question'
-      choices:
-        - content: 'Answer.'
-          explanation: 'Explanation'
-          isCorrect: true
-        - content: 'Answer'
-          isCorrect: false
-          explanation: 'Explanation'
-    
+  title: Check your knowledge
+  questions:
+  - content: 'What is a suggester in Azure Search?'
+    choices:
+    - content: An element within a field for assigning attributes 
+      isCorrect: false
+      explanation: A suggester is not an element for assigning attributes, this is not the correct terminology. Suggesters are used on individual fields but do not assign attributes.
+    - content: A construct supporting "search-as-you-type"
+      isCorrect: true
+      explanation: A suggester is a construct in an Azure Search index that supports a search-as-you-type or autocomplete experience. It contains a list of fields for which you want to enable for typeahead query inputs.
+    - content: An AI feature providing suggestions to improve the index
+      isCorrect: false
+      explanation: Suggesters do not for providing suggestions to improve the quality of the index.
+    - content: A type of index attribute to filter data
+      isCorrect: false
+      explanation: Suggesters are an attribute of an index in Azure Search but are not used to filter data.
+
+  - content: 'Which of the following data sources can be used as an input data source?'
+    choices:
+    - content: Azure Data Lake 
+      isCorrect: false
+      explanation: Azure Data Lake is not a supported external data source. It is however entirely possible to write code to use the REST API and push data from Azure Data Lake to Azure Search.
+    - content: Azure Virtual Machines
+      isCorrect: false
+      explanation: Azure Virtual Machines are not a supported data source. SQL Server installed on a virtual machine is a supported source however.
+    - content: Azure SQL Database
+      isCorrect: true
+      explanation: Azure SQL Database is one of the supported external data sources in Azure Search. Azure SQL Database has a built-in indexer ready made for Azure Search.
+    - content: Azure Queue Storage
+      isCorrect: false
+      explanation: Azure Queue Storage is not supported. Only Blob and Table Storage are supported external sources within Azure Storage.
+
+  - content: 'What condition would result in an index rebuild?'
+    choices:
+    - content: Adding a new field to the index
+      isCorrect: false
+      explanation: Adding fields to an Azure search index do not require the index to be rebuilt. The index would only require a refresh.
+    - content: Adding a scoring profile to the index
+      isCorrect: false
+      explanation: Adding, updating, or deleting scoring profiles in an index do not require the index to be rebuilt. They simply set an attribute to determine the location of the data in the result set.
+    - content: Running a data refresh for the index
+      isCorrect: false
+      explanation: Running a data refresh is different to rebuilding an index. Data refresh simply updates the data stored in the index from the data source rather than changing a material element of the physical structure.
+    - content: Changing an index field definition
+      isCorrect: true
+      explanation: Changing field definitions of an index are a material change to the physical index structure, as such the index will need to be rebuilt to reflect the changes.
+
+  - content: 'Which data structure is supported by Azure Search?'
+    choices:
+    - content: CSV
+      isCorrect: false
+      explanation: CSV isn't supported.
+    - content: SQL
+      isCorrect: false
+      explanation: SQL isn't supported.
+    - content: XML
+      isCorrect: false
+      explanation: XML isn't supported.
+    - content: JSON
+      isCorrect: true
+      explanation: Documents are stored in the search index as JSON documents. JSON is also used to define index schemas.

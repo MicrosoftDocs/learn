@@ -3,13 +3,15 @@ uid: learn.azure-introduction-to-azure-search.5-exercise-create-an-azure-search-
 title: Exercise - Create an Azure Search index in the Azure portal
 metadata:
   title: Exercise - Create an Azure Search index in the Azure portal
-  description: Exercise - Create an Azure Search index in the Azure portal
+  description: In this exercise, you'll load and index JSON data in the Azure Search service
   ms.date: 04/16/2019
   author: andrewjbyrne
   ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 2
+durationInMinutes: 5
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/5-exercise-create-an-azure-search-index-in-the-portal.md)]

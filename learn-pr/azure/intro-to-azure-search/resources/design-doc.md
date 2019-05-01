@@ -50,7 +50,7 @@ Identify the subtasks of *Introduction to Azure Search*
 
 <!-- REVIEW - There is too much covered in this single module, so I am changing the outline to reflect a new structure. basically, I am taking out any integration of the search with an app. That can be covered in a subsequent module. This module should focus on introducing Azure Search, and the right location for that is the portal -->
 
-2. **What is Azure Search?**
+1. **What is Azure Search?**
 
     List the content that will enable the learner to *Create an index in Azure Search*:
 
@@ -69,7 +69,7 @@ Identify the subtasks of *Introduction to Azure Search*
         - Using C#
         - Azure Search REST API
 
-3. **Exercise - Create and Azure Search service in the Azure portal**
+1. **Exercise - Create an Azure Search service in the Azure portal**
 
     - Focus here is to get the learner to use the Azure  portal to create an Azure Service in the sandbox resource group
     - Navigate to sandbox portal
@@ -77,7 +77,7 @@ Identify the subtasks of *Introduction to Azure Search*
     - Explain parameters of the Create dialog
     - Explain the URL endpoint
 
-4. **Index data with Azure Search**
+1. **Index data with Azure Search**
 
     List the content that will enable the learner to *Index data with Azure Search*:
 
@@ -94,17 +94,17 @@ Identify the subtasks of *Introduction to Azure Search*
     - Enhancing Azure Search indexes with AI
         - Overview of Cognitive Search
 
-5. **Create an Azure Search index for your data in the Azure portal**
+1. **Create an Azure Search index for your data in the Azure portal**
 
     List the steps that apply the learning content from previous unit:
 
-    1. Introduce the actual data set we'll use - a corpus of fitness center data. 
+    1. Introduce the actual data set we'll use - a corpus of fitness center data.
     1. Explain the data set
     1. Run through the process to create an index
     1. Run through the process to load data to an index
     1. Run through the process to rebuild an index
 
-6. **Query data in an Azure Search index**
+1. **Query data in an Azure Search index**
 
     List the content that will enable the learner to *Search content with Azure Search*:
 
@@ -118,7 +118,7 @@ Identify the subtasks of *Introduction to Azure Search*
         - Filtering and sorting data
         - Result handling
 
-7. **Exercise - Query your data using the Search explorer in the Azure  portal**
+1. **Exercise - Query your data using the Search explorer in the Azure portal**
 
     <!-- REVIEW - Purpose of this exercise is to get the use familiar with querying their own data using their own index -->
 
@@ -132,7 +132,7 @@ Identify the subtasks of *Introduction to Azure Search*
     <!-- REVIEW - You can find details at https://docs.microsoft.com/en-us/azure/search/search-get-started-portal
     DO NOT copy the tutorial verbatim - we're using  our own fitness data set, for example. The queries should reflect that fact. -->
 
-8. **Knowledge check**
+1. **Knowledge check**
 
     What types of questions will test *Create an Azure Search index*?
 
@@ -145,7 +145,7 @@ Identify the subtasks of *Introduction to Azure Search*
     - What condition would result in an index rebuild?
     - What is the maximum payload size for a bulk upload operation?
 
-9. **Summary**
+1. **Summary**
 
    *{How did you solve the problem in the initial scenario with the knowledge learned in the module?}*
 
@@ -153,13 +153,17 @@ Identify the subtasks of *Introduction to Azure Search*
     - Overview of the methods to import data into Azure Search.
     - Walk through how to query indexes, the syntax, and handling responses.
 
-    
-  
-
 ## Notes
 
-- Use JSON blobs as the data source for the exercise. https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs. Invent a small data structure for fitness videos with a few interesting properties of different types (string, int, date) and create a small corpus of documents to index.
+- Use JSON blobs as the data source for the exercise. <https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs.> Invent a small data structure for fitness videos with a few interesting properties of different types (string, int, date) and create a small corpus of documents to index.
 - Use the [portal](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-the-portal) to import the data and set up the indexing, but give a brief overview in the conceptual section about how to do it in [C#](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-net-sdk).
 - Do not use advanced features like AI or cognitive search. Briefly mention their existence and utility in the conceptual sections but do not focus on them and do not use them in the exercise.
 - Creating a user experience/website is out of scope; show code and usage of the index from a simple console app only.
-- Calling the search from an app is out of scope for this module. A module that teaches that for .NEt/Java/Node.js will be planned for the future. 
+- Calling the search from an app is out of scope for this module. A module that teaches that for .NEt/Java/Node.js will be planned for the future.
+
+## References
+
+<https://docs.microsoft.com/en-us/azure/search/search-what-is-data-import>
+<https://docs.microsoft.com/rest/api/searchservice/AddUpdate-or-Delete-Documents>
+<https://docs.microsoft.com/dotnet/api/microsoft.azure.search.models.indexaction?view=azure-dotnet>
+<https://docs.microsoft.com/dotnet/api/microsoft.azure.search.models.indexbatch?view=azure-dotnet>
