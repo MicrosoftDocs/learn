@@ -2,17 +2,15 @@ Importing data into an Azure Search index is the first step to enabling your com
 
 Now that you've been through the basics of Azure Search and how to load documents into an index. You want to understand how to query your new index, you'll look at how to query the data stored within an index, work with the results, and understand the basics of query syntax.
 
-In this unit, you'll see how to write simple search queries in the Azure Search explorer, then append extra parameters to manipulate those results.
+In this unit, you'll see how to write simple search queries in the Azure Search Explorer, then append extra parameters to manipulate those results.
 
 ## Searching content using Azure Search
 
 Index and query design are closely linked, a crucial component to understand is that the schema of the index sets what's possible for the kind of query that can be answered.
 
-Azure Search queries work in a similar way to any http or REST API request. They're constructed of two key parts, the request, and the response. Queries take the form of a request specifying a construct, that determines what fields are returned, how the index is returned, or how the index should be filtered or sorted. An unspecified query will execute against all the searchable fields within the index in a full text search operation. This method will return a result in an arbitrary order, and with unscored results.
+Azure Search queries work in a similar way to any HTTP or REST API request. They're constructed of two key parts, the request, and the response. Queries take the form of a request specifying a construct that determines what fields are returned, how the index is returned, or how the index should be filtered or sorted. An unspecified query <!-- REVIEW Define "unspecified" --> will execute against all the searchable fields within the index in a full text search operation. This method will return a result in an arbitrary order, and with unscored results. <!-- REVIEW What is "score"? It hasn't really been called out at this point -->
 
-### Query requests in an Azure Search
-
-Query requests in Azure search are always executed against a single index. As a query request is a rich construct, there are several ways to query an index:
+There are several ways to query an index: <!-- REVIEW Rather than enumerate these in a list, build them up conceptually. Everything uses the REST API, you could use it directly with scripts/tools/custom code or use it with existing HTTP tools like postman/fiddler. Search Explorer is a purpose-built UX in the portal, and SearchIndexClient in the SDK is the programmatic client for it. -->
 
 - **Azure Search explorer** - Uses a search bar and returns results as JSON objects. Has options for parameters and API version selection.
 - **PostMan or Fiddler** - Web testing tools that offer a great alternative for creating REST API calls. They can be used to make REST API calls to your Azure Search service.
@@ -20,6 +18,8 @@ Query requests in Azure search are always executed against a single index. As a 
 - **SearchDocuments in the REST API** - Supports every operation in Azure Search through either a GET or POST request, parameters can be added for greater search capability.
 
 ### Query request Elements and Parsing
+
+<!-- REVIEW The rest of this unit has the same enumeration/documentation-copy-paste issues as elsewhere, it reads like reference documentation, not guided learning. Please rewrite it to conceptually introduce the reader to querying, and pick and choose the aspects of querying that are most important to call out and drill down on. -->
 
 Azure Search queries are constructed of several components. These components have required elements in order for a query request to be successful. A query request is essentially a hit list of what you would like to be returned in a result set. As queries are only against a single index, you're unable to create temporary or custom data structures for a query target, or join indexes together in the syntax of the query.
 

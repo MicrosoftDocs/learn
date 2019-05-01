@@ -1,4 +1,4 @@
-Azure Search is a rich search experience over a variety of content wherever the content is stored.
+Azure Search is a rich search experience over a variety of content wherever the content is stored. <!-- REVIEW This sentence doesn't have any connection to what's happening in this unit, please use a topic sentence that focuses on the contents of the exercise -->
 
 Your organization has a large number of exercise videos publicly available through its website. Users are struggling to find relevant content or are undertaking exercises beyond their fitness level. The exercise videos need to be indexed using the following properties video title, exercise difficulty, video length, and publication date.  It is hoped that these changes will improve user experience and result in fewer complaints about being unable to find relevant content.
 
@@ -28,7 +28,7 @@ In the unit, you'll load and index data in the Azure Search service we created e
     az storage blob upload --connection-string $CREDENTIALS --container-name $CONTAINER --file video-catalog.json --name VideoCatalog
     ```
 
-1. The `video-catalog.json` contains the following data:
+1. The `video-catalog.json` contains the following data: <!-- REVIEW Introduce the file further up. In the scenario, where would this have come from? -->
 
     ```json
     [
@@ -62,31 +62,28 @@ In the unit, you'll load and index data in the Azure Search service we created e
 
 ## Create an Azure Search index for your data in the Azure portal
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    ![Screenshot of the Azure portal, showing search results](../media/3-exercise-screenshot-3.png)
-
-1. Search **northwindfitness** at the top of the dashboard, then select the search service you created.
-
-    ![Screenshot of the Azure portal, highlighting the Import data link](../media/5-exercise-screenshot-1.png)
+1. In the **All Resources** view of the portal, select the Azure Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
 
 1. On the **northwindfitness** search Overview page, select **Import data**.
 
+    ![Screenshot of the Azure portal, highlighting the Import data link](../media/5-exercise-screenshot-1.png)
+
 1. On the **Connect to your data** page, select **Azure Blob Storage** as the **Data Source**.
+1. Enter **videocatalog** in the **Name** field.
+1. Change the **Parsing mode** to **JSON array**.
+1. Select **Choose an existing connection**.
 
     ![Screenshot of the Azure portal, showing the Connect to your data page with the fields completed](../media/5-exercise-screenshot-2.png)
 
-1. Enter **videocatalog** in the **Name** field.
-1. Change the **Parsing mode** to **JSON array**.
-1. Select **Choose and existing connection**.
+1. Select the video storage account.
 
     ![Screenshot of the Azure portal, showing the storage accounts](../media/5-exercise-screenshot-3.png)
 
-1. Select the video storage account.
+1. Select the video container, then click **Select**.
 
     ![Screenshot of the Azure portal, showing the storage container](../media/5-exercise-screenshot-4.png)
-
-1. Select the video container, then press the **Select**.
 
 1. Select **Next: Add cognitive search (Optional)**.
 
@@ -98,15 +95,15 @@ In the unit, you'll load and index data in the Azure Search service we created e
 
     ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-6.png)
 
-1. On the **Customize Target Index** page use the below information to fill out the fields.
+1. On the **Customize Target Index** page use the below information to fill out the fields. <!-- REVIEW Why are we doing this? What are we accomplishing here? -->
 
     | Field | Value |
     | --- | --- |
     | **Key** | Select the **id** field |
     | **Suggester name** |  **northwindfitnesssugg** |
-    | **Search mode** | Select **analyzingInfixMatching** option |
+    | **Search mode** | Select **analyzingInfixMatching** option <!-- REVIEW What is this and what does it do? It's never been mentioned --> |
 
-    Change the Type of the fields to match the above, and select the checkboxes, then select **Next: Create an indexer**.
+    Change the Type of the fields to match the above <!-- REVIEW Specify in a table; don't force the user to rely on a screenshot to set the correct options -->, and select the checkboxes <!-- REVIEW Why? What are we trying to accomplish? -->, then select **Next: Create an indexer**.
 
 1. On the **Create an indexer** page, select **Submit** to begin building the indexer.
 
@@ -133,8 +130,4 @@ In the unit, you'll load and index data in the Azure Search service we created e
 
     The search query above returns all the documents in the search index, including a count of all the documents.
 
-1. Leave the Azure portal signed in for the next exercise.
-
-## Edit and then rebuild an Azure Search index
-
-The index can't be rebuilt in the Azure portal. You can only rebuild an index programmatically with the REST API and .NET SDK. If you are in the development stage, and only have access to the portal, you can delete and recreate the index.
+1. Leave the Azure portal signed in for the next exercise. <!-- REVIEW Call out that this was just a quick sanity check, and that the reader will get more experience with the explorer in the next units -->

@@ -10,7 +10,7 @@ In the unit, you'll use Azure Search explorer and some simple syntax to search f
 
     ![Screenshot of the Azure portal, showing search results](../media/3-exercise-screenshot-3.png)
 
-1. Search **northwindfitness** at the top of the dashboard, then select the Search service you created.
+1. Search **northwindfitness** at the top of the dashboard, then select the Search service you created. <!-- REVIEW I changed this in a couple places but not here and might have missed some - please have them access this via All Resources, and don't assume they named it northwindfitness -->
 
     ![Screenshot of the Azure portal, showing the Search service overview page](../media/5-exercise-screenshot-7.png)
 
@@ -24,7 +24,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
 
 1. Enter `yoga` in the **Query string**, then select **Search**.
 
-1. The search index should return:
+1. The search index should return: <!-- REVIEW What is this calling out? What should the user be noticing about the results?-->
 
     ```json
     {
@@ -94,7 +94,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
     }
     ```
 
-1. Using the `+` operator, can you change the previous query to return the same results above?
+1. Using the `+` operator, can you change the previous query to return the same results above? <!-- REVIEW I like this concept, but we currently aren't structuring exercises this way today. Please direct the user what to do. -->
 
 1. Search for all the videos that have boxing or cardio in the title. Enter `(boxing | boxercise) cardio` in the **Query string**, then select **Search**.
 
@@ -112,9 +112,11 @@ Using the Search explorer you'll build up complex search queries that you can pa
 
 ## Faceting
 
-1. The users need a way to quickly select videos of a specific difficulty. The web team would like to offer faced browsing of the videos. Enter `*&facet=Difficulty` in the **Query string**, then select **Search**.
+<!-- REVIEW Facet/faceting has not been defined yet -->
 
-1. This returns all the videos in the search results, but also includes a facets array:
+1. The users need a way to quickly select videos of a specific difficulty. The web team would like to offer faceted browsing of the videos. Enter `*&facet=Difficulty` in the **Query string**, then select **Search**.
+
+1. This returns all the videos in the search results, but also includes a facets array: <!-- REVIEW What would you use this for? -->
 
     ```JSON
     "@search.facets": {

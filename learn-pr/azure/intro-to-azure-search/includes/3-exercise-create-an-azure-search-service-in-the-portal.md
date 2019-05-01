@@ -13,14 +13,16 @@ In the unit, you'll create the Azure Search Service.
 
 1. From the portal, select **Create a resource** from the upper left-hand corner. Select **Web**, then select **Azure Search**.
 
+    <!-- REVIEW Please scale this screenshot down, it renders very large compared to other images -->
    ![Screenshot of the Azure portal, New Search Service pane](../media/3-exercise-screenshot-2.png)
 
 1. On the **New Search Service** page, fill out the form using this information:
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **URL** | northwindfitness* this needs to be unique, if this name is unavailable add a random number  |
-    | **Resource group** |  Select the concierge resource group <rgn>[sandbox resource group name]</rgn> |
+    | **URL** | Choose a unique name  |
+    | **Subscription** | Concierge Subscription  |
+    | **Resource group** |  Select the existing group <rgn>[sandbox resource group name]</rgn> |
     | **Location** | Select your nearest data center |
 
 1. Select **Create**.
@@ -29,10 +31,6 @@ In the unit, you'll create the Azure Search Service.
 
     If you were to continue to interact with the search service programmatically, you will need to obtain the URL and API key.
 
-   ![Screenshot of the Azure portal, searching for the created search service](../media/3-exercise-screenshot-3.png)
-
-1. Search **northwindfitness** at the top of the dashboard, then select the search service you created.
+1. In the **All Resources** view of the portal, select the Azure Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
 
     ![Screenshot of the Azure portal, highlighting the URL field on the Overview page](../media/3-exercise-screenshot-4.png)
-
-1. View the overview page, and note that ability to add indexes, import data, and search created indexes.

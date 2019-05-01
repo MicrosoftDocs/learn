@@ -6,30 +6,32 @@ Now that the Azure Search service has been created, you'll look at how to load d
 
 Azure Search lets you create empty indexes, in order for indexes to be queried data must be loaded. These queries run over the content loaded and saved to an index. There are two approaches for loading data into an index:
 
-- **Programmatically**: Known as pushing data into the index. A JSON data set is pushed to the Azure Search Index via either the REST API or the .Net SDK. Pushing data has the most flexibility as it has no restrictions on the data source type, or frequency of execution.
+- **Programmatically**: Known as pushing data into the index. A JSON data set is pushed to the Azure Search Index <!-- REVIEW *the* index or *an* index? --> via either the REST API or the .Net SDK. Pushing data has the most flexibility as it has no restrictions on the data source type, or frequency of execution.
 
-- **Use Azure Search indexer**: Known as pulling data into the index. The Azure Search indexer crawls a supported data source and automatically loads data into the index via the use of an indexer. The indexer maps source fields to their matching fields in the index. The indexer transforms the imported data into a JSON format.
+- **Use Azure Search indexer**: <!-- REVIEW All of this should be referring to *an* indexer. You can have multiple indexers; "Azure Search indexer" is not a singular service. What *is* an indexer? --> Known as pulling data into the index. The Azure Search indexer crawls a supported data source and automatically loads data into the index via the use of an indexer. The indexer maps source fields to their matching fields in the index. The indexer transforms the imported data into a JSON format.
 
 ### Methods for importing data to Azure Search
 
-There are three methods to importing data into Azure Search, the indexer functionality embedded in the service is made available through the portal, the Azure Search REST API, and the .NET SDK.
+There are three methods to importing data into Azure Search, the indexer functionality embedded in the service is made available through the portal, the Azure Search REST API, and the .NET SDK. <!-- REVIEW Please rework this section and clean up the language to be more clear. The section above says there are two methods for loading data, pushing and indexers. This says there are 3 ways to use the indexers, then the subsection below talks about connecting to external data sources (nothing about indexers) and pushing data programmatically.-->
 
 **Azure portal**
 
-Contained within the Azure Search Service dashboard in the Azure portal is an Import data wizard. The wizard imports data into the index by connecting to an external data source in the same subscription. The wizard crawls the data source for content and converts it into JSON documents to be imported into the index.
+Contained within the Azure Search Service dashboard in the Azure portal is the Import Data wizard. The wizard imports data into the index by connecting to an external data source in the same subscription. The wizard crawls the data source for content and converts it into JSON documents to be imported into the index.
 
 **Pushing data via the REST API or .NET SDK**
 
-Data can be pushed to Azure Search via an API, this can be used to either load documents individually or in batches up to 1000 documents. There's no option to push data in the portal. The APIs available are:
+Data can be pushed to Azure Search via an API, this can be used to either load documents individually or in batches up to 1000 documents. There's no option to push data in the portal. <!-- REVIEW Restructure the following to indicate that the .NET SDK depends on the REST API, and focus on explaining the shape of the SDK, expanding on the below --> The APIs available are:
 
 - **REST API**: Add, Update, or Delete Documents
 - **.NET SDK**: indexAction class, or indexBatch class
 
 ### Data Source Inputs
 
-Data sources imported via the data wizard in Azure Search create a persistent data source connection to the external source. The supported data sources are Azure SQL databases, Azure Cosmos DB, Azure Blob Storage, and Azure Table Storage (cognitive search pipelines aren't supported). The data must be flattened into a single object (table, view, or data structure) so it can be imported.
+Data sources imported via the Import Data wizard in the portal create a persistent data source connection to the external source. <!-- REVIEW What does this mean, and what does it accomplish? --> The supported data sources are Azure SQL databases, Azure Cosmos DB, Azure Blob Storage, and Azure Table Storage (cognitive search pipelines aren't supported). <!-- REVIEW This should be mentioned up where the wizard is first explained. --> The data must be flattened into a single object (table, view, or data structure) so it can be imported.
 
 ### Index attributes
+
+<!-- REVIEW This section needs to be clarified and expanded. By the end of this section, the reader should have a very good idea of what an index actually is and how it's used to resolve queries. The bullet list is a copy/paste of documentation, and needs to be replaced with something that provides insight and understanding -->
 
 An index is generated loaded with documents from the data source when using the Import data wizard. These documents have attributes associated to them determining how the documents are returned in a query result. These elements must be defined, as if no attributes are set, it's as if your index is empty.
 
@@ -39,26 +41,22 @@ The key attributes for the index are:
 - **Retrievable**: Sets whether the field can be returned in a search result.
 - **Filterable**: Sets whether the field can be used to filter queries.
 - **Sortable**: Sets whether the field can be used to sort search results.
-- **Facetable**: Sets whether the field can be used in a faceted navigation structure as part of user directed filtering.
+- **Facetable**: Sets whether the field can be used in a faceted navigation structure as part of user directed filtering. <!-- REVIEW This is incomprehensible to someone who is new to Azure Search -->
 - **Searchable**: Sets whether the field is full-text searchable.
 
 ### Data import monitoring and verification
 
-The indexing progress can be monitored by clicking on the associated indexer in the indexers list. The document count will grow as documents are loaded to the index. In some instances, the portal page can take a few minutes to display up-to-date document counts. Once the index is ready for querying, you can then use Search Explorer to verify the results. An index is ready when the first document is successfully loaded.
+Indexing <!-- REVIEW "Indexing" or "importing"? Are those the same thing? --> progress can be monitored by clicking on the associated indexer in the indexers list. The document count will grow as documents are loaded to the index. In some instances, the portal page can take a few minutes to display up-to-date document counts. Once the index is ready for querying, you can then use Search Explorer to verify the results. An index is ready when the first document is successfully loaded.
 
-Search Explorer is available in the Azure portal and allows you to submit queries to your Azure Search service. The results are returned as JSON documents. Query expressions can be used to limit which fields are returned. You can write OData expressions if you need to filter the result set.
-
-## Azure Search Index Maintenance
-
-Usage and Monitoring sections give you the option to view data about query metrics, resource usage, and quota availability. Log Analytics can also be configured to add additional reporting capabilities to your Search instance. These reports are useful to monitor search workloads to work out the correct service tier, or if any replication, or partitioning of the indexes is required.
+Search Explorer is available in the Azure portal and allows you to submit queries to your Azure Search service. <!-- REVIEW When and why would you do this? What is the benefit of this tool? It probably deserves its own heading and subsection. --> The results are returned as JSON documents. Query expressions can be used to limit which fields are returned. You can write OData expressions if you need to filter the result set.
 
 ### Rebuilding indexes
 
-When using Azure Search, there will be situations that will require you to rebuild indexes. An index can't be rebuilt in the Azure portal. You can only rebuild an index programmatically with the REST API and .NET SDK. If you are in the development stage, and only have access to the portal, you can delete and recreate the index which is the equivalent to the programmatic approach.
+When using Azure Search, there will be situations that will require you to rebuild indexes. <!-- REVIEW What does that mean? --> An index can't be rebuilt in the Azure portal. You can only rebuild an index programmatically with the REST API and .NET SDK. If you are in the development stage, and only have access to the portal, you can delete and recreate the index which is the equivalent to the programmatic approach.
 
-Rebuilding an index will take the index offline for a few seconds, and response times can be affected for several minutes after the index has been updated.
+Rebuilding an index will take the index offline, and response times can be affected for several minutes after the index has been updated.
 
-These ar the conditions that will require you to rebuild an index:
+These are the conditions that will require you to rebuild an index: <!-- REVIEW This is another partial copy/paste of documentation and does not provide any insight to the reader; rather than enumerating every situation, provide some insight about when the reader should intuit that a rebuild is needed. -->
 
 - A field definition is changed
 - An analyzer is assigned to a field
@@ -66,30 +64,6 @@ These ar the conditions that will require you to rebuild an index:
 - A field is added to a suggester
 - A field is deleted
 - The Azure Search service tier is changed
-
-**Using the REST API**
-
-If you are reusing the index name, drop the existing index.
-
-`DELETE https://[service name].search.windows.net/indexes/[index name]?api-version=[api-version] api-key:[admin key]`
-
-Create the JSON definition for the index schema and call the update.
-
-`PUT https://[search service name].search.windows.net/indexes/[index name]?api-version=[api-version] api-key: [admin key] Content-Type: application/json`
-
-Re-add all the search documents.
-
-`POST https://[service name].search.windows.net/indexes/[index name]/docs/index?api-version=[api-version] api-key: [admin key] Content-Type: application/json`
-
-
-**Using the .NET SDK**
-
-The .NET SDK provides a single asynchronous method call that drops and recreates the index with one call.
-
-`IIndexesOperations.CreateOrUpdateWithHttpMessagesAsync`
-
-> [!TIP]
-> Rebuilding an index will have customers experiencing an impact to the performance of their search queries. In the worst scenario, an amount of downtime may need to occur. There is another option if it is unacceptable to impact the performance of the current Search service. You can create a new development search service to run alongside the existing production service. Having the new development running in its own Search service means there won't be any resource contention, and performance won't be impacted. When the development is finished you choose to either redirect searches to your new service, or publish an updated index to the original service.
 
 ### Handling large data volumes
 
@@ -100,6 +74,8 @@ Working with large volumes of data is a regular occurrence in the modern organiz
 - **Indexers**: Used to crawl external data sources. Indexers have inherent capabilities to handle large data, such as, scheduling to split index packets into manageable chunks, and partitioning of data into smaller data sets to enable parallel index processing.
 
 ## Enhancing Azure Search indexes with AI
+
+<!-- REVIEW Compress this section to a couple paragraphs; drop the bullet list and condense it to prose, calling out the most interesting skills. -->
 
 Azure Search has AI features embedded, it works by using Azure Cognitive Services (Cognitive Search) to add skills that include image processing, content extraction, or natural language processing (NLP). This enables previously unsearchable, or unstructured content, more useable. Many Cognitive Services resources can be added to Azure Search, the algorithms add advanced data science capabilities to full-text search solutions that would otherwise not be available. For example, processing images for text representations so that customers can search for text in images.
 
