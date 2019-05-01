@@ -31,7 +31,7 @@ When your organization has adopted a cloud service provider, it's vital to under
 
 ![Screenshot showing cloud responsibility matrix](../media/1-cloud-responsibility-matrix.png)
 
-The above shows that whatever service is being used an organization remains responsible for classifying their own data. More information on Microsoft's commitments around data classification to its customers can be found in the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/default.aspx).
+The above shows that whatever service is being used an organization remains responsible for classifying their own data. More information on Microsoft's commitments around data classification to its customers can be found in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx).
 
 ## Compliance considerations
 
@@ -95,7 +95,7 @@ There are two main T-SQL functions and a system table for data classification:
 
 - `sys.sensitivity_classifications` - a system table to view all classifications in the database. Requires either Owner, Contributor, Reader, SQL Security Manager, or User Access Administrator roles to be able to read the data classifications.
 
-See the [reference docs](<https://docs.microsoft.com/en-us/rest/api/sql/sensitivitylabels>) for the operations available in the Azure REST API.
+See the [reference docs](<https://docs.microsoft.com/rest/api/sql/sensitivitylabels>) for the operations available in the Azure REST API.
 
 ## Understanding taxonomies
 
