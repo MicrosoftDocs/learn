@@ -29,32 +29,49 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 ## What is Git and distributed version control?
 
 <!-- TODO: Might be nice to draw out distributed vs. centralized on the whiteboard and add a screen cap here. -->
+![A hand-drawn illustration of centralized versus distributed source control](../media/2-whiteboard-centralized-vs-distributed-drawing.png)
 
-Git is a popular version control system among developers because it is powerful, open source, and free to use.
+**Mara:** The drawing on the left is _centralized version control_ like what we are using now. We have a central version of the code base ![Callout 1](../../shared/media-draft/callout-01.png) in Team Foundation Version Control (TFVC) that everyone uses. We each check out the files we need to change and then merge them back into the master repository when we're finished with them. We all need access to the server in order to do that, so we are limited to working on the project only when we can access the server.
 
-Git uses a _distributed_ version control approach. Distributed version control means that contributors have their own copy of the repository. Distributed version control frees you up to experiment and try different approaches without affecting the main repository or locking other developers out of the files they are working with. When your code is working as you want it to, you can then propose your changes for others to review and then merge those changes into the main repository.
+**Andy:** Like when I went to the conference. I couldn't get to the code.
 
-There are other solutions for version control that are not distributed. For example, Team Foundation Version Control (TFVC) is a centralized version control system. With TFVC, there is only one copy of the master repository on a server and all branches will also exist on the server. Although you work with a local copy of a file, that file is the same version that's on the server.
+**Mara:** Right! and you were blocked ![Callout 2](../../shared/media-draft/callout-02.png) from checking out the files you needed today because I have them checked out. Now, we could use a branching strategy with TFVC to solve the blocking issue, but in our current configuration, merging might get a bit more complicated.
 
-Azure DevOps works well with both centralized and distributed version control systems.
+And remember when we had that breaking change ![Callout 3](../../shared/media-draft/callout-03.png) merged into the main repository? No one could get any work done until we got that solved. That problem is always lurking because we are all using the same copy of the code.
+
+Now on the right is a drawing of _distributed version control_. We still have a main or _master_ repository ![Callout 4](../../shared/media-draft/callout-04.png) that is the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media-draft/callout-05.png) of it to work from. This frees us up to experiment and try different approaches without affecting the main repository or locking other developers out of the files they are working with.
+
+This also insures that only working code ![Callout 6](../../shared/media-draft/callout-06.png) gets merged into the master repository. We could even set it up to where code can't merge until it has been reviewed.
+
+And what's cool is that Azure DevOps works well with both centralized and distributed version control systems.
+
+**Andy:** What about the problem of accessing the code when we are not in the building?
+
+**Mara:** I'm glad you asked. That is where hosting comes in.
 
 ## Where can I host my repository?
 
-When deciding where to host your repositories, you have a few options. For example, you can host them on a local server, in Bitbucket, or GitHub. Bitbucket and GitHub are hosting solutions that are web-based.
+**Mara:** When deciding where to host our repositories, we have a few options. For example, we can host them on a local server, in Bitbucket, or GitHub. Bitbucket and GitHub are hosting solutions that are web-based. So we have access to them from anywhere.
 
-GitHub has many features that are important to developers, including easy access to change logs and version control features from either the command line or the online portal.
+**Andy:** Have you used either of these?
+
+**Mara:** I have used Github in the past. It has features that are important to developers, like easy access to change logs and version control features from either the command line or the online portal.
+
+**Andy:** So how does this work?
 
 ## How do I work with Git?
 
-In order for several developers to work together on a project efficiently, each developer needs access to the code files without restrictions. In centralized solutions, a developer "checks out" files they are working on, effectively locking other developers out of those files. With distributed systems, developers are free to access any file they need without affecting other developers' work since they have their own copy of the repository. A _clone_ is your local copy of a repository.
+**Mara:** Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work since they have their own copy of the repository. A _clone_ is your local copy of a repository.
 
-A common scenario for a developer when working on a feature or a bug fix is to try out different code until they find the best solution. But trying out code on your copy of the main codebase is not efficient since you may not want to keep the first few tries.
+And when we are working on a feature or a bug fix, we want to try out different code until we find the best solution. But trying out code on your copy of the main codebase is not efficient since you may not want to keep the first few tries.
 
 To accomplish this, Git has a feature called _branching_ where you can maintain as many copies as you want and only merge back the one you want to keep. This keeps the main branch stable.
 
+**Andy:** I get the concepts so far. How do I check in my code?
+
 ## How do my local changes get up to the main codebase?
 
-In Git, the main branch, or _trunk_, is typically called `master`.
+**Mara:** In Git, the main branch, or _trunk_, is typically called `master`.
 
 Once you feel your code is ready to be merged into the `master` branch in the main repository shared by all developers, you create what's called a _pull request_. When you create a pull request, you are telling the other developers that you have code ready to review and you want it merged into the `master` branch. When your pull request is approved, it becomes part of the master codebase.
 
