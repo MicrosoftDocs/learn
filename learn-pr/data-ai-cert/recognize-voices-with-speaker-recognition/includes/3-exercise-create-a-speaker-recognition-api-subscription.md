@@ -1,54 +1,50 @@
-Before you can use the Speaker Recognition API, you need to subscribe to the service and get an API key.
+Before you can use the Speaker Recognition APIs, you need to subscribe to the service and get a subscription key.
 
 > [!IMPORTANT]
-> The Speaker Recognition API is still in preview. Expect changes to some of the functionality before it is finalized.
+> The Speaker Recognition APIs are still in preview. Expect changes to some of the functionality before it's finalized.
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In the left pane, select **+ Create a resource**.
+1. In the **Search the Marketplace** box, enter **speaker recognition**, and then press Enter.
+1. In the search results, select **Speaker Recognition**.
+1. Select **Create**.
+1. Enter a name for your subscription to the Speaker Recognition APIs, such as **SpeakerRecognition**.
+1. For **Location**, choose the one nearest you.
+1. For **Pricing tier**, select a tier.
+1. Create a new resource group named **mslearn-speakerapi** to hold the resources.
+1. Review and accept the service notice, then select **Create** to create a subscription to the Speaker Recognition APIs.
 
-1. Click **+ Create a resource** in the left-hand sidebar, type in "Speaker Recognition" (without quotation marks) in the "Search the Marketplace" entry, then select **Speaker Recognition** from the search drop-down list.
-
-1. Click **Create**.
-
-1. Enter a name for your Speaker Recognition API subscription, such as "SpeakerRecognition".
-1. Choose the **Location** nearest you.
-
-1. Select a **Pricing tier**.
-
-1. Create a new Resource group named **mslearn-speakerapi** to hold the resources.
-
-1. Review and accept the service notice, then click **Create** to create a subscription to the Speaker Recognition API.
-
-After a short delay, your new Speaker Recognition API subscription will be provisioned and available, and new **API keys** will be generated for programmatic use.
+After a short delay, your new subscription to the Speaker Recognition APIs will be available, and new subscription keys will be generated for programmatic use.
 
 > [!NOTE]
-> Remember, the terms "subscription key" and "API key" are often used synonymously in Cognitive Services documentation, and therefore both terms may be used in this course.
+> The terms *subscription key* and *API key* are often used interchangeably in Cognitive Services documentation.
 
-You can select **Resource groups** in the left sidebar and then click the resource group you created for the Speaker Recognition API to view your new Speaker Recognition subscription.
+To view your new Speaker Recognition subscription, select **Resource groups** in the left pane, and then select the **mslearn-speakerapi** resource group.
 
-### View the subscription key
+To access your Speaker Recognition subscription, you'll need two pieces of information you can get from the Azure portal:
 
-To access your Speaker Recognition subscription, you'll need two pieces of information you can get from the Azure portal.
+- A *subscription key* that allows you to access your subscription. This key must be passed with every web service call you make to the API.
+- The *endpoint* that exposes your service on the network.
 
-1. A **Subscription Key** that allows you to access your speaker subscription. This must be passed with every web service call you make to the subscription.
-1. The **Endpoint** that exposes your service on the network.
+### Copy the subscription key
 
-Let's start by getting the subscription key.
+Let's start by getting the subscription key from the Azure portal:
 
-1. Click **Resource groups** in the left-hand sidebar of the portal, and then click the resource group you created for the Speaker Recognition API.
-
-1. Click the Speaker Recognition subscription name (such as "SpeakerRecognition"), then select **Keys** under the "Resource Management" group to view your new API keys.
-
+1. In the left pane, select **Resource groups**, and then click the resource group you created for the Speaker Recognition API.
+1. Select the Speaker Recognition subscription name (such as **SpeakerRecognition**).
+1. Under **RESOURCE MANAGEMENT**, select **Keys** to view your new subscription keys.
 1. Copy the value of **KEY 1** to the clipboard.
 
-    ![Copying the Speaker Recognition API key to the clipboard](../media/3-subscribe-to-speaker-recognition-api-keys.png)
+    ![Copy the Speaker Recognition subscription key to the clipboard](../media/3-subscribe-to-speaker-recognition-api-keys.png)
 
 > [!TIP]
-> It may be helpful to make note of the location of the keys and paste this value to a text file for use later in the course.
+> You might want to paste this value into a text file for use later in the course.
 
-### View the subscription endpoint
+### Copy the subscription endpoint
 
-Next, let's get the endpoint from the Azure portal.
+Next, let's get the endpoint from the Azure portal:
 
-1. Select **Overview** from the menu group, locate the "Endpoint" label, then copy the value of **Endpoint** to the clipboard.
+1. In the left pane, select **Overview**.
+1. Find **Endpoint**, and copy its value to the clipboard.
 
-    ![Copying the Speaker Recognition API endpoint to the clipboard](../media/3-subscribe-to-speaker-recognition-api-endpoint.png)
+    ![Copy the Speaker Recognition API endpoint to the clipboard](../media/3-subscribe-to-speaker-recognition-api-endpoint.png)

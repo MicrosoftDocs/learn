@@ -9,8 +9,6 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-# interactive: azure-portal
-azureSandbox: true 
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-use-update-management-on-a-virtual-machine.md)]

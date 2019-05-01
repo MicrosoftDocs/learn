@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-review-sentiment-with-keras.summary
+title: Summary and knowledge check
+metadata:
+  title: Summary and knowledge check
+  description: Confirm that you understand the steps required to build and train a neural network to analyze sentiment.
+  ms.date: 02/24/2019
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+content: |
+  [!include[](includes/4-summary.md)]
+durationInMinutes: 10
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What best describes Keras?"
+    choices:
+    - content: "It is a deep learning library to build neural networks."
+      isCorrect: false
+      explanation: "Keras isn't a deep learning library itself, but uses deep learning libraries in the backend."
+    - content: "It is a library to help clean data."
+      isCorrect: false
+      explanation: "While Keras has some helper functions for data, it is mainly to help build deep learning libraries."
+    - content: "It is an API wrapper on top of deep learning libraries such as TensorFlow and the Microsoft Cognitive Toolkit."
+      isCorrect: true
+      explanation: "Keras uses deep learning libraries in the backend to create models, but allows the code to be much simpler."
+
+  - content: "What does calling `model.summary()` do?"
+    choices:
+    - content: "Produces a summary of layers for the compiled model."
+      isCorrect: true
+      explanation: "This function will give a text representation of the different layers of the model."
+    - content: "Produces a summary of the training data used in the model."
+      isCorrect: false
+      explanation: "This function doesn't show about the training data."
+    - content: "Produces a summary of the predictions made from the model."
+      isCorrect: false
+      explanation: "This function doesn't show about predictions."
+
+  - content: "What method on the model is used to make a prediction on new data?"
+    choices:
+    - content: "evaluate"
+      isCorrect: false
+      explanation: "The evaluate method evaluates the performance of the model."
+    - content: "predict"
+      isCorrect: true
+      explanation: "The predict method will predict on new data."
+    - content: "forecast"
+      isCorrect: false
+      explanation: "There is no forecast function on the model."

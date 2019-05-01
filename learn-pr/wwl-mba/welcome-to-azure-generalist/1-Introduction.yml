@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.welcome-to-the-azure-generalist.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This learning experience will take you on a journey beginning with digital transformation, moving through Microsoft Azure solutions that enable robust business opportunities for your organization on a trusted cloud platform.
+  ms.date: 01/31/2019
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
