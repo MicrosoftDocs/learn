@@ -52,6 +52,7 @@ Here, we'll add a Detect-sentiment action to our app and set it to connect to ou
 
 Next, we'll configure our app to pass the tweet text to the Text Analytics service.
 
+1. In the **Detect Sentiment** step, select *Text* from the **Add new parameter** dropdown list.
 1. Select the **Text** field in the Detect-sentiment action.
 
 1. In the Dynamic content popup, select **Original tweet text**.
@@ -67,7 +68,7 @@ Your app is now live. Tweets containing your product name will be processed by t
 
 1. In the left navigation bar, select **Overview**.
 
-1. Click **Refresh** once a minute until you see a row item in the **Runs history** table.
+1. Click **Refresh** once a minute until you see a new row item in the **Runs history** table.
     > [!NOTE]
     > Each item in the **Runs history** table represents a separate tweet that contained the name of the product you entered in the **Search text** of your trigger.
 

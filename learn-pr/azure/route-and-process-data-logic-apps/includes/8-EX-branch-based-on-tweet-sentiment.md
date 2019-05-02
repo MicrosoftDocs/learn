@@ -1,4 +1,4 @@
-In this exercise, we're going to continue work on our social-media monitor app. Here, we'll add a control action to branch based sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we're going to continue work on our social-media monitor app. Here, we'll add a control action to branch based on the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
 ![An illustration showing the triggers and actions in the social-media monitor Logic App. The third step is an action showing a control action that is testing the sentiment score. If the score is is greater than 0.7 the app branches to an Insert Row action. If the score is less than or equal to 0.7, the app branches to a Send an Email action.](../media-drafts/exercise-branch.png)
 
