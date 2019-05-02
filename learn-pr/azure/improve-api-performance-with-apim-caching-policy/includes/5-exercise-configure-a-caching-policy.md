@@ -47,19 +47,58 @@ Now that we have a functional API, let's set up API Management:
     | Name | Choose a unique name. Make a note of it, you'll need it later on. |
     | Subscription | *Concierge Subscription* |
     | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
-    | Location | Choose a location near you in the above list |
+    | Location | Choose from West Europe or Southeast Asia | <!-- These are the only two locations supported by the Sandbox and the Consumption tier -->
     | Organization | BoardGames |
     | Administrator email | Enter your own email address or use the default |
-    | Pricing tier | Developer |
+    | Pricing tier | Consumption |
     | | |
 
-<!-- TODO: The concierge pricing tier cannot be used for this exercise because it does not have a built-in cache. This means the creation of the API management resource takes a long time. See https://azure.microsoft.com/en-us/blog/announcing-azure-api-management-for-serverless-architectures/ -->
+    > [!NOTE]
+    > We're using the consumption tier in this module because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes or so to initiate.
+
+## Create a Redis cache
+
+The consumption tier in API Management is intended for those organizations who prefer to build APIs on serverless principals. One difference with this tier is that it does not have its own internal cache. Therefore, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. Let's create that cache now:
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Databases > Azure Cache for Redis**.
+1. In the **New Redis Cache** page, enter the following settings, and then click **Create**:
+
+    | Setting | Value |
+    | --- | --- |
+    | DNS Name | Choose a unique name. Make a note of it, you'll need it later on. |
+    | Subscription | *Concierge Subscription* |
+    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
+    | Location | Choose the same location you used for the API Management instance |
+    | Pricing tier | Standard C1 |
+    | | |
+
+    ![Creating a Redis cache](../media/5-create-redis-cache.png)
+
+## Configure API Management to use the external cache
+
+The Redis cache takes a few minutes to deploy. When the deployment is complete, you can configure the API Management instance to use it as an external cache:
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources**, and then click the new Redis cache.
+1. Under **Settings**, click **Access keys**.
+1. To the right of the **Primary connection string** textbox, click the **Copy to clipboard** button.
+
+    ![Obtaining the Redis cache connection string](../media/5-obtain-redis-cache-connection-string.png)
+
+1. Click **All Resources**, and then click the management service you created above.
+1. Under **Settings**, click **External cache**, and then click **+ Add**.
+
+    ![Adding an external cache to API Management](../media/5-add-external-cache.png)
+
+1. In the **Cache instance** drop-down list, select **Custom**, and then in the **Use from** textbox, select the same location you used for the API Management instance.
+1. To paste in the connection string, put the cursor in the **Connection string** textbox, press CTRL-V, and then click **Save**.
+
+    ![Configuring the external cache](../media/5-configure-external-cache.png)
 
 ## Add the API in API Management
 
 Before you can apply a policy, you must add the API to the API Management instance
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources** and then click the management service you created above.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources** and then click the API Management service you created above.
 1. Under **API Management**, click **APIs**, and then click **OpenAPI**.
 
     ![Adding an API](../media/5-add-api-to-management.png)
@@ -138,17 +177,6 @@ We'll run the same test on the API in API Management and observe the results of 
 
 1. Examine the results. Note the precise time that is included in the response.
 1. Click the **Send** button to resend the request. Notice that the time in the response has not changed, because the cached response has been served.
-1. Use the following values for template parameters and query parameters and then click **Send**:
-
-    | Name | Value |
-    | --- | --- |
-    | ShippingCode | USA |
-    | Game | Chess |
-    | Height | 8 |
-    | Width | 100 |
-    | | |
-
-1. Examine the results. Although you have used a different query parameter, the result that API Management returns has not changed because, by default, requests to the same URL are returned from the cache even if they have different query parameters.
 
 ## Configure the cache to vary by query parameter
 
@@ -160,17 +188,15 @@ To ensure that the system caches different responses for different board sizes, 
 
     ```xml
     <vary-by-query-parameter>height</vary-by-query-parameter>
-    <vary-by-query-parameter>width</vary-by-query-parameter>
     ```
 
 1. Click **Save**.
 
 ## Test the new cache configuration
 
-The cache should now keep separate responses for different values of the height and width query parameters. Let's test that:
+The cache should now keep separate responses for different values of the height query parameter. Let's test that:
 
-1. Click the **Test** tab and then click the **GET** operation.
-1. Use the following values for template parameters and query parameters and then click **Send**:
+1. Click the **Test** tab, click the **GET** operation, use the following values for template parameters and query parameters and then click **Send**:
 
     | Name | Value |
     | --- | --- |
@@ -182,14 +208,25 @@ The cache should now keep separate responses for different values of the height 
 
 1. Examine the results. Note the precise time that is included in the response.
 1. Click the **Send** button to resend the request. As before, notice that the time in the response has not changed, because the cached response has been served.
-1. Use the following values for template parameters and query parameters and then click **Send**:
+1. To test the height parameter, use the following values for template parameters and query parameters and then click **Send**:
 
     | Name | Value |
     | --- | --- |
     | ShippingCode | USA |
     | Game | Chess |
-    | Height | 8 |
-    | Width | 100 |
+    | Height | 100 |
+    | Width | 8 |
     | | |
 
-1. Examine the results. This time, because a query parameter in the request has changed, the cached response is not used and the result is updated. This behavior is correct for our API.
+1. Examine the results. This time, because the height query parameter in the request has changed, the cached response is not used and the result is updated. This behavior is correct for our API.
+1. To test the width parameter, use the following values for template parameters and query parameters and then click **Send**:
+
+    | Name | Value |
+    | --- | --- |
+    | ShippingCode | USA |
+    | Game | Chess |
+    | Height | 100 |
+    | Width | 500 |
+    | | |
+
+1. Examine the results. This time, although the width query parameter in the request has changed, the cached response is used and the result does not change.
