@@ -24,3 +24,8 @@ Follow these links to find out how to incorporate search into your apps:
 - [.NET](https://azure.microsoft.com/en-gb/resources/samples/search-dotnet-getting-started)
 - [Java](https://azure.microsoft.com/en-gb/resources/samples/search-java-getting-started)
 - [Node.js](https://github.com/Azure-Samples/search-node-indexer-demo)
+
+Follow these links for guidance on performance:
+
+- [High availability and scaling](https://docs.microsoft.com/en-us/azure/search/search-capacity-planning)
+- [Search performance optimization](https://docs.microsoft.com/en-us/azure/search/search-performance-optimization)

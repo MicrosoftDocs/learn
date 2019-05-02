@@ -18,6 +18,7 @@ In the unit, you'll load and index data in the Azure Search service we created e
 
 1. Download the example video catalog into Cloud Shell storage.
 
+    <!-- TODO replace with path to github repo -->
     ```bash
     curl ... video-catalog.json
     ```

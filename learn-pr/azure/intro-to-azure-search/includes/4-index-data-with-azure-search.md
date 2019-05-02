@@ -1,28 +1,30 @@
-As part of the drive to establishing your organization's online presence, you need to implement Azure Search to enable rich search for the online video catalog. You'll be loading data into an existing Azure Search instance so customers can search the catalog by title, difficulty, length, and publication date.
+The Azure Search service needs to have JSON documents loaded into an index. It's these documents that are searched.
 
-Now that the Azure Search service has been created, you'll look at how to load data into an index in Azure Search.
+As part of the drive to establishing your organization's online presence, you need to implement an Azure Search indexer to enable rich search for the online video catalog. You'll be loading data into an existing Azure Search instance so customers can search the catalog by title, difficulty, length, and publication date.
+
+Now that the Azure Search service has been created, you'll look at how to load data into an index.
 
 ## Loading data into Azure Search
 
-Azure Search lets you create empty indexes, in order for indexes to be queried data must be loaded. These queries run over the content loaded and saved to an index. There are two approaches for loading data into an index:
+Azure Search lets you create empty indexes, in order for indexes to be queried data must be loaded. The search queries run over the content loaded and saved to an index. There are two approaches for loading data into an index:
 
-- **Programmatically**: Known as pushing data into the index. A JSON data set is pushed to the Azure Search Index <!-- REVIEW *the* index or *an* index? --> via either the REST API or the .Net SDK. Pushing data has the most flexibility as it has no restrictions on the data source type, or frequency of execution.
+- **Pushing data**: JSON data is pushed into an Azure Search Index via either the REST API or the .Net SDK. Pushing data has the most flexibility as it has no restrictions on the data source type, or frequency of execution.
 
-- **Use Azure Search indexer**: <!-- REVIEW All of this should be referring to *an* indexer. You can have multiple indexers; "Azure Search indexer" is not a singular service. What *is* an indexer? --> Known as pulling data into the index. The Azure Search indexer crawls a supported data source and automatically loads data into the index via the use of an indexer. The indexer maps source fields to their matching fields in the index. The indexer transforms the imported data into a JSON format.
+- **Pulling data**:  Using either the Azure Data Import wizard, or creating a Search service indexer programmatically. Data sources are crawled to load JSON documents into the index. An indexer maps source fields to their matching fields in the index. If required an indexer will transform the imported data into a JSON format.
 
 ### Methods for importing data to Azure Search
-
-There are three methods to importing data into Azure Search, the indexer functionality embedded in the service is made available through the portal, the Azure Search REST API, and the .NET SDK. <!-- REVIEW Please rework this section and clean up the language to be more clear. The section above says there are two methods for loading data, pushing and indexers. This says there are 3 ways to use the indexers, then the subsection below talks about connecting to external data sources (nothing about indexers) and pushing data programmatically.-->
 
 **Azure portal**
 
 Contained within the Azure Search Service dashboard in the Azure portal is the Import Data wizard. The wizard imports data into the index by connecting to an external data source in the same subscription. The wizard crawls the data source for content and converts it into JSON documents to be imported into the index.
 
-**Pushing data via the REST API or .NET SDK**
+**REST API or .NET SDK**
 
-Data can be pushed to Azure Search via an API, this can be used to either load documents individually or in batches up to 1000 documents. There's no option to push data in the portal. <!-- REVIEW Restructure the following to indicate that the .NET SDK depends on the REST API, and focus on explaining the shape of the SDK, expanding on the below --> The APIs available are:
+Data can be pushed or pulled into Azure Search via the Azure Search REST API. THe API can be used to create an indexer, load documents individually, or upload batches up to 1000 documents.
 
-- **REST API**: Add, Update, or Delete Documents
+The .NET SDK is a wrapper around the REST API, with the exposed classes making use of the REST API endpoints.
+
+- **REST API**: Documents and Indexers can be added, updated, or deleted 
 - **.NET SDK**: indexAction class, or indexBatch class
 
 ### Data Source Inputs

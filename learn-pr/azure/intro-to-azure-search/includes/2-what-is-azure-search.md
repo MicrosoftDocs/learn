@@ -1,6 +1,4 @@
-<!-- REVIEW Please rework all learning unit intros to adhere to https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format -->
-
-Companies can add fully featured search experiences for their customers by integrating Azure Search services into the organizations. 
+By integrating Azure Search services into the organizations apps and websites, companies can add fully featured search experiences for their customers. 
 
 Your company wants to maximize the availability of its exercise video content to its customers. As part of establishing a greater online presence there's a need for an indexed and searchable video catalog. Your manager has asked you to look at implementing Azure search to provide a better search experience for your customers.
 
@@ -9,17 +7,17 @@ In this unit, you'll explore all the features of Azure Search, its concepts and 
 ## A brief introduction to Azure Search
 ![The Azure search logo](../media/2-what-is-azure-search.png)
 
-Azure Search is a service that enables rich search experience over different kinds of content. The Azure Search service uses AI-powered indexing to allow apps and website to search over a unified index. You need to decided what data should be imported into the index, and setup indexers to pull that data into it. Wherever your content is stored, Azure Search is a powerful tool that can add intuitive search experiences for your customers.
+Azure Search is a service that enables rich search experience over different kinds of content. The Azure Search service uses AI-powered indexing to allow apps, and websites, to search over a unified index. You decide what data is imported into the index, and setup indexers to pull that data into it, or push JSON formatted documents manually. Wherever your content is stored, once imported, Azure Search becomes a powerful tool that can add intuitive search experiences for your customers.
 
-Azure Search lets you create, manage, and query search indexes. The results only contain your data, searches looking in images, files, entities, or key phrases. It's a Platform as a Service (PaaS) so Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage additional hardware resources.
+Azure Search lets you create, manage, and query search indexes. The results only contain your data, searches can read images, files, entities, or key phrases. It's a Platform as a Service (PaaS) so Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage additional hardware resources.
 
 ### What can Azure Search do?
 
-Search is part of everyday life, especially considering the vast amounts of data generated in the modern interconnected world. Azure Search exists to compliment existing technologies and provides a programmable search engine in Azure built on the same foundations as Bing. Azure Search is a highly available platform offering a 99.9% uptime SLA available for cloud and on-premises assets.
+Search is part of everyday life, especially considering the vast amounts of data generated in the modern interconnected world. Azure Search exists to compliment existing technologies and provides a programmable search engine built on the same foundations as Bing. Azure Search is a highly available platform offering a 99.9% uptime SLA available for cloud and on-premises assets.
 
 Azure Search comes with the following features:
 
-- **Data from any source**: Azure Search accepts data from any source provided in JSON format, with auto crawling support for Azure SQL Database, Azure Blob Storage, and Azure Cosmos DB.
+- **Data from any source**: Azure Search accepts data from any source provided in JSON format, with auto crawling support for data in Azure.
 - **Full text search and analysis**: Azure Search offers full text search capabilities supporting both simple query and full lucerne query syntax.
 - **AI powered search**: Azure Search has Cognitive AI capabilities built in for image and text analysis from raw content.
 - **Multi-lingual**: Azure Search offers linguistic analysis for 56 languages to intelligently handle phonetic matching or language-specific linguistics.
@@ -29,11 +27,11 @@ Azure Search comes with the following features:
 
 ### What is Azure Cognitive Search?
 
-Azure Cognitive search is a feature in Azure Search that uses Cognitive AI. It can enrich your content for greater search capabilities in your Azure Search index. It uses machine learning models from Cognitive Services APIs to extract text from unstructured data sources, such as images, and is implemented by adding cognitive skills to an existing indexing pipeline.
+Azure Cognitive search is a feature in Azure Search that uses Cognitive AI. It can enrich your content for greater search capabilities in your Azure Search index using machine learning models from Cognitive Services APIs. The feature can extract text from unstructured data sources, such as images, and is implemented by adding cognitive skills to an existing indexing pipeline.
 
 ![Screenshot showing azure cognitive search architecture](../media/2-cogsearch-architecture.png)
 
-Azure Cognitive Search comprises both Natural language and image processing skills including:
+Azure Cognitive Search includes both Natural language and image-processing skills including:
 
 - Entity recognition
 - Language detection
@@ -47,52 +45,66 @@ Azure Cognitive Search comprises both Natural language and image processing skil
 
 Azure Cognitive Search can be extended, so that custom skills, and custom processing, can be integrated. Custom skills are currently in preview.
 
+Your company is interested in using these features in the future, but want you to focus on creating a simple search experience, supported by the existing video catalog your development team has created.
+
 ## Azure Search indexes
 
-In Azure Search, an index is a persistent collection of JSON documents and other content used to enable search functionality. The documents within an index can be thought of as rows in a table, each document is a single unit of searchable data in the index. In your company, the index will contain a document for each video in the catalog. The index defines the structure of the data in these documents. For each field in the document, the index stores its name, the data type, and it also stores how the index should process the field. Is the field searchable? Can the field be sorted?
+In Azure Search, an index is a persistent collection of JSON documents and other content used to enable search functionality. The documents within an index can be thought of as rows in a table, each document is a single unit of searchable data in the index. In your company, the index will contain a document for each video in your catalog. The index includes a definition the structure of the data in these documents, in its schema. For each field in the document, the index schema stores its name, the data type, and it also stores what behaviors are supported for the field. Is the field searchable? Can the field be sorted?
 
+A quick way to create an index schema is to use the Azure portal to import data from a supported data source, currently:
 
+- Azure SQL Database
+- SQL Server on an Azure VM
+- Cosmos DB
+- Azure Blob Storage
+- Azure Table Storage
 
+When you import data from one of these sources, the Azure Search service automatically parses the data and populates a target index schema. A step in the import process allows you correctly set the data types, and specify the behaviors you'd like for each field. Using this approach to create your index schema also results in an indexer being automatically created. This indexer can then be run to initially load your search documents. Then, when new videos are created, or the data changes for existing videos, the indexer can be run again to update your index.
 
-
-<!-- REVIEW Expand on this; it is not enough to paint a clear picture of what an index is, what it does, or how it's used. What do the documents represent? Where do they come from? -->
-
-When an index is created, the Azure Search service creates the physical structures based upon the schema provided.
+If you don't use this approach, you'll need to manually create your index, and create the indexer to load your JSON documents into the Search index.
 
 ### Index Design
 
 ![Screenshot showing an example index with different fields](../media/2-index-workflows.png)
 
-Index design is important, a correctly designed index will give better query results. In Azure Search, when designing an index it's key to remember the most effective indexes are an efficient data structure. <!-- REVIEW What does this mean, and how does someone design an index correctly? This module needs to deliver more insight, intuition and understanding about how to use Azure Search. -->
+Index design is important, if you forget to set a required behavior on a field, the only way to get that feature is to rebuild the index. When designing an index, it's key to remember the most effective indexes use only the behaviors that are needed. The smaller an index is, the faster it can return results.
 
-An index in Azure Search is made up of a collection of fields, each field has attributes. <!-- REVIEW Please refine this description; the definition just given a couple sentences back is that an index is a collection of documents --> One of these keys will be defined as the key field, in the example above it's the id field. The key field is a string that is a unique identifier for the document within the index.
+During the design process, keep in mind the data your users will be searching, and how they may want to filter, or sort the results. Indexes consist of the following components:
 
-Further customization to an index is achieved by using additional properties. <!-- REVIEW Please better define these items and give some insight about when you'd use them and how they're used. -->
+- **Fields**: all the largest component in an index. Fields need to have a name, type, and have the behaviors defined for each of them
 
-- **Suggesters**: used to incorporate autocomplete or type-ahead queries in index searches. Suggesters can be enabled on a per field basis and returns responses after a user inputs three characters
-- **Scoring**: lets you customize which results to have them return higher in the query results
-- **Analyzers**: are used to set the language analyzer for the field that processes text in a query. Once set on a field in the index, it can't be changed unless the index is rebuilt
+- **Scoring profiles**: lets you customize results to have certain documents return higher in the query results
 
-   > [!NOTE]
-   > The design of an index will also have implications on performance, scale and redundancy of your search service. It is important to develop a deployment strategy upfront before enabling a high throughput production service. More information can be found in docs [Search Performance Optimization](https://docs.microsoft.com/en-us/azure/search/search-performance-optimization). <!-- REVIEW Please move links like these to the Additional Resources section at the end-->
+- **Cross-Origin Resource Sharing**: browsers prevent cross-origin requests for security reasons. Enable this option if you need your index to be queried via JavaScrip from different urls. You can choose to lock down access to the index using a white list of origins, or allow all origins access.
+
+#### Field Behaviors
+
+All indexes require a unique text field to be defined as the primary key.
+
+When creating your index, you need to choose the behaviors each field supports. The available options depend on what type of data is stored in the field:
+
+- **Retrievable**: can this field be returned in the search results
+- **Filterable**: can this field be used in filter queries
+- **Sortable**: can this field be included in order by queries
+- **Facetable**: can this field be used to facet result sets
+- **Searchable**: only available on text fields. Can this field be searched against
+- **Analyzer to use**: only available on text fields. You choose the language analyzer for the field that processes text in a query.
+- **Suggester**: used to incorporate autocomplete or type-ahead queries in index searches. With this selected, a webpage can use asynchronous JavaScript to offer both suggestions or offer autocomplete functionality.
+
+Storage is always important and in Azure Search it's no different. Remember that the behaviors you enable will have an impact on the size of storage required to store the index. Indexes supporting a full range of attributes will be substantially larger than just a searchable text index on a single field.
 
 ### Index Workflows
 
 A good practice for index design is to use an iterative workflow. Combining tools to complete the index design as quickly as possible:
 
-- Depending on your data source, you could automate part of the index creation. Using the Import Data Wizard to prototype and load data to an index if your data is stored in one of the supported data sources (Azure SQL, Azure Cosmos DB, Azure Blob Storage, or Azure Table Storage).
-- If your data source is not supported by the Import Data Wizard, you can still create an index manually in the portal. This gives you the ability to add fields, data types and assign attributes.
-- When the index is initially created all the physical structures of the index are created in the search service.
-- Index schemas can be downloaded in JSON format using the Azure REST API and tested in an external tool, such as Postman. You may wish to do this if you want to edit or iterate on a created index.
-- The next step is to load data into the index, remember Azure Search only supports JSON documents.
-- Finally you can query the index, analyze the results and if necessary iterate on the index schema until you see your desired results.
-- Use the Search explorer on the Azure portal to see your results in real-time.
+1. Use the Import Data wizard to prototype and load data to an index if your data is stored in one of the supported data sources.
+1. If your data source is not supported by the Import Data wizard, create an index manually in the portal. The portal has an interface to add fields, data types and assign behaviors.
+1. The Index schemas can now be downloaded in JSON format. If you need to iterate on the index, you must now do that with a code-based approach.
+1. The next step is to load data into the index, remember Azure Search only supports JSON documents.
+1. Finally you can query the index, analyze the results, and if necessary iterate on the index schema until it's correct.
+1. Use the Search explorer on the Azure portal to test searches in real time.
 
-Remember to drop and recreate indexes if you make material changes to field definitions. This is because the index has a physical structure created in the service. You'll find it faster using code, as working in the portal requires the index definition to be manually filled out for each rebuild.
-
-### Storage Implications
-
-Storage is always important and in Azure Search it's no different. Remember that the attributes you choose, or enable, will have an impact on storage. Indexes supporting a full range of attributes will be substantially larger than just a full text index.
+Remember you have to drop and recreate indexes if you need to make changes to field definitions. Adding new fields is supported, with all existing documents having null values. You'll find it faster using a code-based approach to iterate your designs, as working in the portal requires the index to be deleted, recreated, and the schema details to be manually filled out.
 
 ## How to create an index
 
@@ -109,7 +121,7 @@ Azure Search indexes can be created in the Azure portal using the index designer
 - Add an index through the designer, giving it a name
 - Add fields to the index, specifying the key field and field attributes
 
-The Import Data Wizard can be used in the portal to create indexes if you're using a data source that's supported.
+The Import Data wizard can be used in the portal to create indexes if you're using a data source that's supported.
 
 #### Using C#
 
@@ -123,13 +135,62 @@ Creating an index in Azure Search using C# requires you to obtain the URL endpoi
 
 #### Azure Search REST API
 
-<!-- REVIEW Rework this to primarily be about PowerShell and the CLI; very few people interact directly the REST interface -->
+You can use PowerShell, or bash, to call the Azure Search Service REST API to manage a search index. The index definition and searchable content are provided in the request body as well-formed JSON content.
 
-You can use PowerShell and the Azure Search Service REST API to manage a search index. The index definition and searchable content are provided in the request body as well-formed JSON content.
+To use the Azure CLI, you'll first need to have created the Search service. In the portal, make a note of the Search service endpoint URL and the primary admin key.
 
-Azure search index can also be created programmatically using the Azure Search Service REST API in tandem with PowerShell (or Bash). This is achieved by:
+The steps are then:
 
-- Connect and authenticate to the Azure Search Service via a GET request, using the URL endpoint and API key
-- Create an index via a JSON schema using either a POST or PUT request, the create index request body must include an index name and fields
+- Create an object to store the header for the REST API call.
 
-If the index creation has been successful, you'll see a **201 Created** status code.
+    ```powershell
+    $headers = @{
+       'api-key' = '<your-admin-api-key>'
+       'Content-Type' = 'application/json'
+       'Accept' = 'application/json' }
+    ```
+
+- Test the details are correct by trying to connect to the API with `Invoke-RestMethod`.
+
+    ```powershell
+    Invoke-RestMethod -Uri <your-search-url> -Headers $headers | ConvertTo-Json
+    ```
+
+- Create an object to store the index schema definition of your index.
+
+    ```powershell
+    $body = @"
+    {
+        "name": "video-catalog",  
+        "fields": [
+            {"name": "id", "type": "Edm.String", "key": true, "searchable": false, "sortable": false, "facetable": false},
+            {"name": "title", "type": "Edm.String", "filterable": false, "sortable": false, "facetable": false, "analyzer": "en.lucene"},
+            {"name": "difficulty", "type": "Edm.Int32"},
+            {"name": "length", "type": "Edm.DateTimeOffset", "facetable": false},
+            {"name": "publication", "type": "Edm.DateTimeOffset", "facetable": false},
+            {"name": "size", "type": "Edm.Int32"}
+        ],
+        "suggesters": [  
+        {  
+           "name": "northwindsuggester",  
+           "searchMode": "analyzingInfixMatching",  
+           "sourceFields": ["title"]  
+        }  
+        ]
+    }
+    "
+    ```
+
+- Create a URL for the REST API endpoint, add the index name to the end of the Search service URL.
+
+    ```powershell
+    $url = "https://<your search service name>.search.windows.net/indexes/video-catalog?api-version=2019-05-01"
+    ```
+
+- Create the index using `Invoke-RestMethod`.
+
+    ```powershell
+    Invoke-RestMethod -Uri $url -Headers $headers -Method Put -Body $body | ConvertTo-Json
+    ```
+
+You have created in index using the REST API. You can load your search documents using the same approach, calling the appropriate REST endpoints.
