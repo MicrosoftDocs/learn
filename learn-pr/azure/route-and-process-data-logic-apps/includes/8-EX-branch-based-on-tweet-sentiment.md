@@ -32,78 +32,33 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Select the **Save** button to save your work.
 
-## Create a SQL Server and database in Azure
+## Create SQL Server database to store positive tweets
 
-1. Select **Create a resource** in the left navigation bar.
+When we receive a positive tweet, we want to save it to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs; the database runs in the sandbox and is free for the purposes of this exercise. 
 
-1. In the Search the Marketplace field, type **sql**.
+1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from Github
 
-1. Select **SQL Database**.
+    ```azurecli
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-sql-database.sh > setup-sql-database.sh
+    ```
 
-1. Click **Create**.
+1. Run the following command to run the script. This will take a couple of minutes. 
 
-1. Enter **PositiveTweetDatabase** in the Database name field.
+    ```azurecli
+    bash setup-exercise.sh
+    ```
 
-1. Select a **Subscription** where you would like the Logic App hosted.
+1. Wait for the script to complete. When it finishes, the Cloud  Shell displays values for the following properties.
+     - **SQL Server name**
+     - **SQL username**
+     - **SQL password**
+     - **SQL database name**
 
-1. Select the existing **Resource group** <rgn>[sandbox resource group name]</rgn>.
-
-1. Make sure the Select source field is set to **Blank database**.
-
-1. Select **Server**.
-
-1. Select **Create a new server**.
-
-1. Enter a globally unique name in the **Server name** field.
-
-1. Enter a username in the **Server admin login** field.
-
-1. Enter a password in the **Password** and **Confirm password** fields.
-
-1. Select a **Location** from the available list below.
-
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
-1. Make sure the **Allow Azure services to access server** checkbox is checked.
-
-1. Set Advanced Threat Protection to **Not now**.
-
-1. Click **Select**.
-
-1. Select **Not now** for Want to use SQL elastic pool.
-
-1. Select **Pricing tier**.
-
-1. Select **Basic**.
-
-1. Click **Apply**.
-
-1. Click **Create**.
-
-1. Once the SQL Server and database are created, select the SQL database in your <rgn>[sandbox resource group name]</rgn> resource group.
-
-1. In the left navigation bar, select **Query editor**.
-
-1. Login using the **Server admin login** and **Password** that you picked when creating the database.
-
-1. Click **OK**.
-
-1. In the **Query 1** tab, paste the following code.
-
-    CREATE TABLE dbo.Mentions
-    (
-      id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
-      Content NVARCHAR(500) NULL,
-      Source  NVARCHAR(500) NULL
-    );
-
-1. Click **Run**.
-
-1. Without saving the query, return to the Logic App designer. 
+    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise as we update our app in the Azure portal. 
 
 ## Save positive sentiment tweets in SQL database
 
-1. In the If true section of the Condition action, select **Add an action**.
+1. In the **If true** section of the Condition action, select **Add an action**.
 
 1. In the Search connectors and actions field, type **SQL**.
 
@@ -113,11 +68,11 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Type **SQLConnection** in the Connection Name field.
 
-1. Select the SQL Server that you created earlier.
+1. Select the SQL Server that you created earlier. 
 
 1. Select the SQL Database that you created earlier.
 
-1. Enter the **Server admin login** and **Password** that you picked when creating the database.
+1. Enter the **SQL username** and **SQL password** that you saved earlier when the setup script finished.
 
 1. Click **Create**.
 
@@ -125,14 +80,14 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Select the **Content** field.
 
-1. In the Dynamic content popup, select **Original tweet text**.
+1. In the Dynamic content popup, select **Tweet text**.
 
     > [!NOTE]
     > If you are using the RSS **When a feed item is published** trigger, please use the **FeedSummary** here.
 
 1. Select the **Source** field.
 
-1. In the Dynamic content popup, select **Original tweet tweeted by**.
+1. In the Dynamic content popup, select **Tweet tweeted by**.
 
     > [!NOTE]
     > If you are using the RSS **When a feed item is published** trigger, please use the **FeedTitle** here.
@@ -141,7 +96,14 @@ Now that we have a Condition control action created, we need to specify what the
 
 ## Email negative sentiment tweets to customer support
 
-1. In the If false section of the Condition action, select **Add an action**.
+1. In the **If false** section of the Condition action, select **Add an action**.
+
+1. Under Choose an action, enter "send an email" as your filter. From the actions list, select the Send an email action for the email provider that you want.
+    -  For personal Microsoft accounts, select Outlook.com.
+    - For Office 365 work or school accounts, select Office 365 Outlook.
+    - For personal Google accounts, select Gmail.
+    
+    When asked for credentials, sign in to your email account so that Logic Apps can create a connection to your email account.
 
 1. In the Search connectors and actions field, type **Outlook**.
 
@@ -175,17 +137,15 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. In the left navigation bar, select **Query editor**.
 
-1. Login using the **Server admin login** and **Password** that you picked when creating the database.
+1. Login using the **Server admin login** and **Password** that you saved when the script in the preceding unit created 
 
 1. Click **OK**.
 
-1. Click **Edit Data (Preview)** on the top navigation bar.
+1. Select **+ New Query** on the top navigation bar.
 
-1. Select the checkbox to agree that this feature is in preview.
+1. In the query editor type `Select * from dbo.mentions` 
 
-1. Click **OK**.
-
-1. Click **Refresh** every few minutes until a row is inserted into the database.
+1. Select  **Run** to run the query and list all positive tweets that have been written to the database.
 
 ## Examine results of negative sentiment tweets
 

@@ -2,35 +2,35 @@ In this exercise, we're going to continue work on our social-media monitor app. 
 
 ![An illustration showing the triggers and actions in the social-media monitor Logic App. The second step is an action labeled Detect Sentiment. This action is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media-drafts/exercise-detect-sentiment.png)
 
-## Generate Text Analytics API key
+[!include[](../../../includes/azure-sandbox-activate.md)]
 
-The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. You need a subscription in order to use the API, so the first thing we need to do is create a free trial. Then we'll grab the the api key we'll use in our Logic App.
+## Get Text Analytics Key and endpoint
 
-1. In a new browser tab, navigate to **https://azure.microsoft.com/en-us/try/cognitive-services/**.
+The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. We'll run a script in this section to programmatically setup a Cognitive Services account in the sandbox, register the Text Analytics service and return a key and the endpoint ULR to us. We'll need those values in this exercises to make calls and get back sentiment scores. 
 
-1. Select the **Language APIs** tab.
+The Cognitive Services account  is created in the sandbox environment and is , therefore, free for use in this module. 
 
-1. Select **Get API Key** in the Text Analytics section.
+1. In the Cloud Shell to the right, run the following curl command to copy the **setup-textanalytics.sh** script from Github
 
-1. In the Guest section, select **Get started**.
+    ```azurecli
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-textanalytics.sh > setup-textanalytics.sh
+    ```
 
-1. Select the checkbox that states that you agree that the free trial is governed by the Microsoft Online Subscription Agreement.
+1. Run the following command to run the script. This will take a couple of minutes. 
 
-1. Select your **Country / Region**.
+    ```azurecli
+    bash setup-exercise.sh
+    ```
 
-1. Select the **I accept** checkbox.
+1. Wait for the script to complete. When it finishes, the Cloud  Shell displays values for the following properties.
+     - **Cognitive Services account key**
+     - **Cognitive Services account endpoint**
 
-1. Click **Next**.
-
-1. Sign-in with your preferred account.
-
-1. In the **Your APIs** section, locate your Text Analytics api key and endpoint address.
-
-1. Save your api key and endpoint address in a text document. We'll use them in the next section.
+    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise when we update our app in the portal. 
 
 ## Create a Detect-sentiment action
 
-Here, we'll add a Detect-sentiment action to our app and set it to connect to our Text Analytics subscription.
+Here, we'll add a Detect-sentiment action to our app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and set it to connect to our Text Analytics subscription.
 
 1. Return to the Logic App designer by selecting **Logic app designer** under the Development Tools section of the left navigation bar.
 
