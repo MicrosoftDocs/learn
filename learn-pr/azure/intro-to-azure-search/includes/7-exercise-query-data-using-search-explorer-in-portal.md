@@ -66,7 +66,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
     > [!IMPORTANT]
     > Note that all the exercise classes are returned. That is because by default the search is for any of the terms, in the above query all of the documents without hatha (the `-hatha` term) will be matched. Search terms are matched as **OR** by default, to ensure all the terms in the query are matched, i.e. **AND**, you can switch the search mode of the index to use all the terms instead of any of them.
 
-1. Change the query to `yoga -hatha&searchMode=all`, then select **Search**. This will ensure that both yoga and NOT hatha are in the title of the videos, returning:
+1. Change the query to `yoga -hatha&searchMode=all`, then select **Search**. This will ensure that both yoga and **NOT** hatha are in the title of the videos, returning:
 
     ```json
     {

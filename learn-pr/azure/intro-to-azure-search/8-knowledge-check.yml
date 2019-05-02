@@ -44,21 +44,6 @@ quiz:
       isCorrect: false
       explanation: Azure Queue Storage is not supported. Only Blob and Table Storage are supported external sources within Azure Storage.
 
-  - content: 'What condition would result in an index rebuild?'
-    choices:
-    - content: Adding a new field to the index
-      isCorrect: false
-      explanation: Adding fields to an Azure search index do not require the index to be rebuilt. The index would only require a refresh.
-    - content: Adding a scoring profile to the index
-      isCorrect: false
-      explanation: Adding, updating, or deleting scoring profiles in an index do not require the index to be rebuilt. They simply set an attribute to determine the location of the data in the result set.
-    - content: Running a data refresh for the index
-      isCorrect: false
-      explanation: Running a data refresh is different to rebuilding an index. Data refresh simply updates the data stored in the index from the data source rather than changing a material element of the physical structure.
-    - content: Changing an index field definition
-      isCorrect: true
-      explanation: Changing field definitions of an index are a material change to the physical index structure, as such the index will need to be rebuilt to reflect the changes.
-
   - content: 'Which data structure is supported by Azure Search?'
     choices:
     - content: CSV

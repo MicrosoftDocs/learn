@@ -1,17 +1,17 @@
 <!-- REVIEW Please rework all learning unit intros to adhere to https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format -->
 
-Your company wants to maximize the availability of its exercise video content to its customers. As part of establishing a greater online presence there's a need for an indexed and searchable video catalog.
+Companies can add fully featured search experiences for their customers by integrating Azure Search services into the organizations. 
 
-Your manager has asked you to look at implementing Azure search to provide a better search experience for your customers.
+Your company wants to maximize the availability of its exercise video content to its customers. As part of establishing a greater online presence there's a need for an indexed and searchable video catalog. Your manager has asked you to look at implementing Azure search to provide a better search experience for your customers.
 
-In this unit, you'll explore Azure Search in more detail, its concepts and how to create an Azure Search index.
+In this unit, you'll explore all the features of Azure Search, its concepts and how to create an Azure Search index.
 
 ## A brief introduction to Azure Search
 ![The Azure search logo](../media/2-what-is-azure-search.png)
 
-Azure Search is a solution available in Azure that enables a rich search experience over different kinds of content. <!-- REVIEW Don't define in terms of what it enables, define in terms of what it *is*. "Azure Search is an Azure service that scans your content..." --> Wherever your content is stored, Azure Search is a powerful tool that can add intuitive search experiences for your customers.
+Azure Search is a service that enables rich search experience over different kinds of content. The Azure Search service uses AI-powered indexing to allow apps and website to search over a unified index. You need to decided what data should be imported into the index, and setup indexers to pull that data into it. Wherever your content is stored, Azure Search is a powerful tool that can add intuitive search experiences for your customers.
 
-Azure Search lets you create, manage, and query search indexes. The results only contain your data, with the ability to enrich your data with AI-powered indexing for feature extraction from images, files, entities, or key phrases. It's a Platform as a Service (PaaS) so Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage additional hardware resources.
+Azure Search lets you create, manage, and query search indexes. The results only contain your data, searches looking in images, files, entities, or key phrases. It's a Platform as a Service (PaaS) so Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage additional hardware resources.
 
 ### What can Azure Search do?
 
@@ -45,11 +45,17 @@ Azure Cognitive Search comprises both Natural language and image processing skil
 - Image interpretation
 - Image recognition
 
-Azure Cognitive Search can also be extended so that custom skills and custom processing can be integrated. Custom skills are currently in preview.
+Azure Cognitive Search can be extended, so that custom skills, and custom processing, can be integrated. Custom skills are currently in preview.
 
 ## Azure Search indexes
 
-In Azure Search, an index is a persistent collection of documents and other content used to enable search functionality. The documents within an index can be thought of as rows in a table, each document is a single unit of searchable data in the index. <!-- REVIEW Expand on this; it is not enough to paint a clear picture of what an index is, what it does, or how it's used. What do the documents represent? Where do they come from? -->
+In Azure Search, an index is a persistent collection of JSON documents and other content used to enable search functionality. The documents within an index can be thought of as rows in a table, each document is a single unit of searchable data in the index. In your company, the index will contain a document for each video in the catalog. The index defines the structure of the data in these documents. For each field in the document, the index stores its name, the data type, and it also stores how the index should process the field. Is the field searchable? Can the field be sorted?
+
+
+
+
+
+<!-- REVIEW Expand on this; it is not enough to paint a clear picture of what an index is, what it does, or how it's used. What do the documents represent? Where do they come from? -->
 
 When an index is created, the Azure Search service creates the physical structures based upon the schema provided.
 
