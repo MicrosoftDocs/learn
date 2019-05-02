@@ -15,7 +15,7 @@ When we receive a positive tweet, we want to save it to a backend database. In t
 1. Run the following command to run the script. This will take a couple of minutes. 
 
     ```azurecli
-    bash setup-exercise.sh
+    bash setup-sql-database.sh
     ```
 
 1. Wait for the script to complete. When it finishes, the Cloud  Shell displays values for the following properties.
@@ -28,7 +28,7 @@ When we receive a positive tweet, we want to save it to a backend database. In t
 
 ## Create a Condition control action
 
-This first step is to add the control action to the appin the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). In programming terms, we're adding an *if statement* that will test a condition.
+This first step is to add the control action to the app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). In programming terms, we're adding an *if statement* that will test a condition.
 
 1. Return to the Logic App Designer by selecting **Logic app designer** under the Development Tools section of the left navigation bar.
 
@@ -72,24 +72,24 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Select the SQL Server that you created earlier. 
 
-1. Select the SQL Database that you created earlier.
+1. in **SQL Database Name**, select `PositiveTweetDatabase`, which is the name of the database we created with our script. 
 
 1. Enter the **SQL username** and **SQL password** that you saved earlier when the setup script finished.
 
 1. Click **Create**.
 
-1. Select the table **Mentions** from the Name of table drop-down list.
+1. Select the table `Mentions` from the **Table name** drop-down list.
 
-1. Select the **Content** field.
+1. Select `Content` from the **Add new parameter** drop-down list.
 
 1. In the Dynamic content popup, select **Tweet text**.
 
     > [!NOTE]
     > If you are using the RSS **When a feed item is published** trigger, please use the **FeedSummary** here.
 
-1. Select the **Source** field.
+1. Select `Source` from the **Add new parameter** drop-down list.
 
-1. In the Dynamic content popup, select **Tweet tweeted by**.
+1. In the Dynamic content popup, select **Tweeted by**.
 
     > [!NOTE]
     > If you are using the RSS **When a feed item is published** trigger, please use the **FeedTitle** here.
@@ -98,14 +98,11 @@ Now that we have a Condition control action created, we need to specify what the
 
 ## Email negative sentiment tweets to customer support
 
-1. In the **If false** section of the Condition action, select **Add an action**.
 
-1. Under Choose an action, enter "send an email" as your filter. From the actions list, select the Send an email action for the email provider that you want.
-    - For personal Microsoft accounts, select Outlook.com.
-    - For Office 365 work or school accounts, select Office 365 Outlook.
-    - For personal Google accounts, select Gmail.
-    
-    When asked for credentials, sign in to your email account so that Logic Apps can create a connection to your email account.
+> [!NOTE]
+> If you do not have an  Outlook.com email account and prefer not to create one, you can change the connectors search filter to *send an email* and select another email provider such as Gmail and Office 365 Outlook. 
+
+1. In the **If false** section of the Condition action, select **Add an action**.
 
 1. In the Search connectors and actions field, type **Outlook**.
 
@@ -135,7 +132,7 @@ Now that we have a Condition control action created, we need to specify what the
 
 ## Examine results of positive sentiment tweets
 
-1. Return to your SQL database.
+1. In the Azure portal left hand navigation bar select **All resources** and then select **PositiveTweetDatabase** from the list of resources.
 
 1. In the left navigation bar, select **Query editor**.
 

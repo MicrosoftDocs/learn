@@ -13,6 +13,6 @@ metadata:
   ROBOTS: NOINDEX
 interactive: bash
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/8-EX-branch-based-on-tweet-sentiment.md)]

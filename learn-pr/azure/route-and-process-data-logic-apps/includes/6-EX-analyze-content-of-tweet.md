@@ -19,7 +19,7 @@ The Cognitive Services account  is created in the sandbox environment and is , t
 1. Run the following command to run the script. This will take a couple of minutes. 
 
     ```azurecli
-    bash setup-exercise.sh
+    bash setup-textanalytics.sh
     ```
 
 1. Wait for the script to complete. When it finishes, the Cloud  Shell displays values for the following properties.
