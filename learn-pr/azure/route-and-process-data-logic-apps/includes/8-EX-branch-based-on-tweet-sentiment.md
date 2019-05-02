@@ -2,9 +2,33 @@ In this exercise, we're going to continue work on our social-media monitor app. 
 
 ![An illustration showing the triggers and actions in the social-media monitor Logic App. The third step is an action showing a control action that is testing the sentiment score. If the score is is greater than 0.7 the app branches to an Insert Row action. If the score is less than or equal to 0.7, the app branches to a Send an Email action.](../media-drafts/exercise-branch.png)
 
+## Create SQL Server database to store positive tweets
+
+When we receive a positive tweet, we want to save it to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs; the database runs in the sandbox and is free for the purposes of this exercise. 
+
+1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from Github
+
+    ```azurecli
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-sql-database.sh > setup-sql-database.sh
+    ```
+
+1. Run the following command to run the script. This will take a couple of minutes. 
+
+    ```azurecli
+    bash setup-exercise.sh
+    ```
+
+1. Wait for the script to complete. When it finishes, the Cloud  Shell displays values for the following properties.
+     - **SQL Server name**
+     - **SQL username**
+     - **SQL password**
+     - **SQL database name**
+
+    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise as we update our app in the Azure portal. 
+
 ## Create a Condition control action
 
-This first step is to add the control action to the app. In programming terms, we're adding an *if statement* that will test a condition.
+This first step is to add the control action to the appin the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). In programming terms, we're adding an *if statement* that will test a condition.
 
 1. Return to the Logic App Designer by selecting **Logic app designer** under the Development Tools section of the left navigation bar.
 
@@ -32,29 +56,7 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Select the **Save** button to save your work.
 
-## Create SQL Server database to store positive tweets
 
-When we receive a positive tweet, we want to save it to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs; the database runs in the sandbox and is free for the purposes of this exercise. 
-
-1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from Github
-
-    ```azurecli
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-sql-database.sh > setup-sql-database.sh
-    ```
-
-1. Run the following command to run the script. This will take a couple of minutes. 
-
-    ```azurecli
-    bash setup-exercise.sh
-    ```
-
-1. Wait for the script to complete. When it finishes, the Cloud  Shell displays values for the following properties.
-     - **SQL Server name**
-     - **SQL username**
-     - **SQL password**
-     - **SQL database name**
-
-    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise as we update our app in the Azure portal. 
 
 ## Save positive sentiment tweets in SQL database
 
@@ -99,7 +101,7 @@ When we receive a positive tweet, we want to save it to a backend database. In t
 1. In the **If false** section of the Condition action, select **Add an action**.
 
 1. Under Choose an action, enter "send an email" as your filter. From the actions list, select the Send an email action for the email provider that you want.
-    -  For personal Microsoft accounts, select Outlook.com.
+    - For personal Microsoft accounts, select Outlook.com.
     - For Office 365 work or school accounts, select Office 365 Outlook.
     - For personal Google accounts, select Gmail.
     
