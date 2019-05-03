@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.analyze-streaming-data
+title: Connect a Stream Analytics job to IoT hub
+metadata:
+  title: Connect a Stream Analytics job to IoT hub
+  description: Connect a Stream Analytics job to IoT hub
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/6-analyze-streaming-data.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the concept of _windowing_ mean within a query in Azure Stream Analytics?"
+    choices:
+    - content: "Grouping windows of queries together"
+      isCorrect: false
+      explanation: "Grouping windows of queries doesn't change the results."
+    - content: "Grouping tables of data together"
+      isCorrect: false
+      explanation: "Tables of data can be grouped by joins instead of windowing."
+    - content: "Grouping results within a window of time"
+      isCorrect: true
+      explanation: "Correct. There are four types of windowing - Tumbling, Hopping, Slidding, and Session."
