@@ -2,12 +2,12 @@
 uid: learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.2-analyze-limitations-of-polling-in-a-web-app
 metadata:
   title: Analyze the limitations of a polling-based web app
-  description: ...
-  ms.date: ...
-  author: ...
+  description: Discuss the drawbacks of a web application that relies on polling to keep the UI updated.
+  ms.date: 04/30/19
+  author: craigshoemaker
   ms.author: cshoe
-  ms.topic: ...
-  ms.prod: ...
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Analyze the limitations of a polling-based web app
 durationInMinutes: 1

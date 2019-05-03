@@ -2,12 +2,12 @@
 uid: learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr
 metadata:
   title: Enable automatic updates in a web application using Azure Functions and SignalR
-  description: ...
-  ms.date: ...
-  author: ...
+  description: Learn to enable automatic updates in a web application using Azure Functions and SignalR
+  ms.date: 04/30/19
+  author: craigshoemaker
   ms.author: cshoe
-  ms.topic: ...
-  ms.prod: ...
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Enable automatic updates in a web application using Azure Functions and SignalR
 summary: Update a web app that polls for updates to use SignalR to support automatic updates.
 abstract: |
@@ -28,11 +28,12 @@ products:
 units:
 - learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.1-introduction
 - learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.2-analyze-limitations-of-polling-in-a-web-app
-- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.3-enable-automatic-updates-in-a-web-app-using-signalr
-- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.4-exercise-enable-automatic-updates-in-a-web-app-using-signalr
-- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.5-host-a-static-website-using-a-storage-account
-- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.6-exercise-host-a-static-website-using-a-storage-account
-- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.7-summary
+- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.3-exercise-analyze-limitations-of-polling-in-a-web-app
+- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.4-enable-automatic-updates-in-a-web-app-using-signalr
+- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.5-exercise-enable-automatic-updates-in-a-web-app-using-signalr
+- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.6-host-a-static-website-using-a-storage-account
+- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.7-exercise-host-a-static-website-using-a-storage-account
+- learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.8-summary
 
 badge:
   uid: learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.badge
