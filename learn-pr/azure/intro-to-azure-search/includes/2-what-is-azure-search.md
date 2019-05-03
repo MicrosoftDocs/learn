@@ -56,8 +56,8 @@ A quick way to create an index schema is to use the Azure portal to import data 
 - Azure SQL Database
 - SQL Server on an Azure VM
 - Cosmos DB
-- Azure Blob Storage
-- Azure Table Storage
+- Azure Blob storage
+- Azure Table storage
 
 When you import data from one of these sources, the Azure Search service automatically parses the data and populates a target index schema. A step in the import process allows you correctly set the data types, and specify the behaviors you'd like for each field. Using this approach to create your index schema also results in an indexer being automatically created. This indexer can then be run to initially load your search documents. Then, when new videos are created, or the data changes for existing videos, the indexer can be run again to update your index.
 
@@ -84,14 +84,14 @@ All indexes require a unique text field to be defined as the primary key.
 When creating your index, you need to choose the behaviors each field supports. The available options depend on what type of data is stored in the field:
 
 - **Retrievable**: can this field be returned in the search results
-- **Filterable**: can this field be used in filter queries
-- **Sortable**: can this field be included in order by queries
-- **Facetable**: can this field be used to facet result sets
+- **Filterable**: can this field be used in filter expressions
+- **Sortable**: can this field be sorted on in order by queries
+- **Facetable**: can this field be used to group results to enable facted navigation of the results
 - **Searchable**: only available on text fields. Can this field be searched against
 - **Analyzer to use**: only available on text fields. You choose the language analyzer for the field that processes text in a query.
 - **Suggester**: used to incorporate autocomplete or type-ahead queries in index searches. With this selected, a webpage can use asynchronous JavaScript to offer both suggestions or offer autocomplete functionality.
 
-Storage is always important and in Azure Search it's no different. Remember that the behaviors you enable will have an impact on the size of storage required to store the index. Indexes supporting a full range of attributes will be substantially larger than just a searchable text index on a single field.
+Storage considerations are always important, and in Azure Search it's no different. Remember that the behaviors you enable will have an impact on the size of storage required to store the index. Indexes supporting a full range of attributes will be substantially larger than just a searchable text index on a single field. Over time, as more documents are added to the index its size will grow.
 
 ### Index Workflows
 
@@ -127,15 +127,15 @@ The Import Data wizard can be used in the portal to create indexes if you're usi
 
 Azure search index can be created programmatically in C#. This is achieved using the .Net SDK. Index creation using this method is a case of following through a few simple tasks:
 
-- Create a client object class for connecting to the search service
-- Create an index object for passing parameters to the Indexes
-- Create method on the client object to send the index object to the search service
+- Create a `SearchServiceClient` object class for connecting to the search service
+- Create an `Index` object
+- Call the `Indexes.Create` method to send the `Index` object to the search service
 
 Creating an index in Azure Search using C# requires you to obtain the URL endpoint and API key of the search service. These are then used to authenticate to the service when sending the create index requests.
 
 #### Azure Search REST API
 
-You can use PowerShell, or bash, to call the Azure Search Service REST API to manage a search index. The index definition and searchable content are provided in the request body as well-formed JSON content.
+You can use PowerShell, or bash, to call the Azure Search Service REST API to manage your search service. The index definition and searchable content are provided in the request body as well-formed JSON content.
 
 To use the Azure CLI, you'll first need to have created the Search service. In the portal, make a note of the Search service endpoint URL and the primary admin key.
 
@@ -164,7 +164,7 @@ The steps are then:
         "name": "video-catalog",  
         "fields": [
             {"name": "id", "type": "Edm.String", "key": true, "searchable": false, "sortable": false, "facetable": false},
-            {"name": "title", "type": "Edm.String", "filterable": false, "sortable": false, "facetable": false, "analyzer": "en.lucene"},
+            {"name": "title", "type": "Edm.String", "filterable": false, "sortable": false, "facetable": false, "analyzer": "en.microsoft"},
             {"name": "difficulty", "type": "Edm.Int32"},
             {"name": "length", "type": "Edm.DateTimeOffset", "facetable": false},
             {"name": "publication", "type": "Edm.DateTimeOffset", "facetable": false},

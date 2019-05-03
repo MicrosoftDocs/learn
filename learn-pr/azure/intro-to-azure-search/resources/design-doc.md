@@ -118,17 +118,12 @@ Identify the subtasks of *Introduction to Azure Search*
 
 1. **Exercise - Query your data using the Search explorer in the Azure portal**
 
-    <!-- REVIEW - Purpose of this exercise is to get the use familiar with querying their own data using their own index -->
-
-    Show the learner how to:
+    - Show the learner how to:
          - Do a basic search for a term
          - Return top N results
          - Filter the query
          - Facet the query
          - Highlight search results
-
-    <!-- REVIEW - You can find details at https://docs.microsoft.com/en-us/azure/search/search-get-started-portal
-    DO NOT copy the tutorial verbatim - we're using  our own fitness data set, for example. The queries should reflect that fact. -->
 
 1. **Knowledge check**
 
