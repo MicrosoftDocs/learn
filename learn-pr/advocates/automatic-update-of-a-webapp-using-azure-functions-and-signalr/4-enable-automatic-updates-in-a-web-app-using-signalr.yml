@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.4-enable-automatic-updates-in-a-web-app-using-signalr
+uid: learn.advocates.azure-functions-and-signalr.4-enable-automatic-updates-in-a-web-app-using-signalr
 metadata:
   title: Enable automatic updates in a web application using SignalR
   description: Learn how a push-based architecture can make a better performing application.

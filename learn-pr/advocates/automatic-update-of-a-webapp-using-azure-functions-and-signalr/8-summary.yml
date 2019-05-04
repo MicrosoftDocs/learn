@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.8-summary
+uid: learn.advocates.azure-functions-and-signalr.8-summary
 metadata:
   title: Summary
   description: Review changes made to your application that removed polling and added server push technologies.

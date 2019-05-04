@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.6-host-a-static-website-using-a-storage-account
+uid: learn.advocates.azure-functions-and-signalr.6-host-a-static-website-using-a-storage-account
 metadata:
   title: Use a storage account to host a static website
   description: Learn how an Azure Storage account is able to host static files over a secure server.

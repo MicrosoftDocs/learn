@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates-automatic-update-of-a-webapp-using-azure-functions-and-signalr.7-exercise-host-a-static-website-using-a-storage-account
+uid: learn.advocates.azure-functions-and-signalr.7-exercise-host-a-static-website-using-a-storage-account
 metadata:
   title: Exercise - Use a storage account to host a static website
   description: Customize your storage account, publish your function app and view your application hosted in the cloud.
