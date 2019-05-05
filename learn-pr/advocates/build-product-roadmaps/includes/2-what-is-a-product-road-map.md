@@ -2,7 +2,7 @@ You've started at a new startup, Fabrikam, who are building a new AI-powered fas
 
 ## What is a product road map?
 
-A product road map is a plan for your product. It's a strategic document that helps you plan for your product, its growth, and keeps your team on track in executing on that growth. It is what allows your Product organization, and your Product Managers, to know and report where you are, where you’re going, and what the steps are along the path.
+A product road map is a plan for your product. It's a strategic document that helps you plan for your product, its growth, and keeps your team on track in executing on that growth. It's what allows your Product organization, and your Product Managers, to know and report where you are, where you’re going, and what the steps are along the path.
 
 A good road map is the "north star" for your product. It connects the long-term vision your organization has for the product with the operational and customer reality on the ground. From your road map, your Product and Engineering teams derive the list of work that they'll undertake, like the features you want to build for the product, and populate backlogs.
 
@@ -10,17 +10,17 @@ A road map is a living document. Its development is iterative and organic. It ch
 
 ## How often do you update your road map?
 
-How often you update your road map usually depends on how mature your organization is, early-stage startups like Fabrikam generally have road maps that range out 3 to 6 months and are updated monthly. A larger or more mature organization might plan quarterly with some, less stable, future plans laid out for future quarters.
+How often you update your road map usually depends on how mature your organization is, early-stage startups like Fabrikam generally have road maps that range out 3 to 6 months and updated monthly. A larger or more mature organization might plan quarterly with some, less stable, future plans laid out for future quarters.
 
 ## Who works on a product road map?
 
-A great product road map is a collaboration between many partners across your organization. Owned and collated by your Product team, it draws on inputs from internal groups like Engineering, Support, Marketing, and Sales. It is also driven by external data collected from your product, your customers, your competitors, your investors, and the market.
+A great product road map is a collaboration between many partners across your organization. Owned and collated by your Product team, it draws on inputs from internal groups like Engineering, Support, Marketing, and Sales. It's driven by external data collected from your product, your customers, your competitors, your investors, and the market.
 
 A good Product Manager is constantly gathering this data, validating, and feeding into the road map, and seeing how, or if, it impacts plans. The Product Manager also feeds in the outcomes of the ongoing work you’re doing, whether the features you have build had an impact on metrics like user adoption, customer satisfaction, or whatever else drives your business.
 
 The outcomes from our road map then become part of the inputs, together with the continuous data gathered from the other sources, and combines to form an iterative, cyclical, document.
 
-A product road map is hard to build. It’s a balancing act of finding the right features to build, evaluating customer asks versus product goals (like avoiding being captured in the orbit of a single large customer!) and then applying the engineering and design resources you have available to you.
+A product road map is hard to build. It’s a balancing act of finding the right features to build, evaluating customer asks versus product goals and then applying the engineering and design resources you have available to you.
 
 ## What does a road map look like?
 
