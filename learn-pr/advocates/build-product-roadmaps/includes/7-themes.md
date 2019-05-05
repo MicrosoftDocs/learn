@@ -16,7 +16,7 @@ Themes allow you to set high-level goals for your product and keep track of ever
 > [!TIP]
 > Themes are also an excellent level in your product road map from which to gather data for communicating progress to stakeholders. 
 
-At Fabrikam, the mission is to make it easier to find and buy the clothes you want. Fabrikam's short term strategic objectives are to grow the user base, retain customers, and make the customer experience better. So, for our first road map at Fabrikam, we have identified three product themes that contribute to these objectives:
+At Fabrikam, the mission is to make it easier to find and buy the clothes you want. Fabrikam's short-term strategic objectives are to grow the user base, retain customers, and make the customer experience better. So, for our first road map at Fabrikam, we have identified three product themes that contribute to these objectives:
 
 ### Acquiring more customers
 

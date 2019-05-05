@@ -33,7 +33,7 @@ quiz:
        isCorrect: false
      - content: "Everyone in your organization is a stake-holder."
        isCorrect: true
-       explanation: "Your product road map is a collaboration between many people in your organization including groups like Product, Design, Engineering, Sales, Marketing, and Support."
+       explanation: "Your product road map is a collaboration between many people in your organization including Product, Design, Engineering, Sales, Marketing, and Support."
      - content: "Just the product manager and the marketing team."
        isCorrect: false
      - content: "Just the product manager. The road map should be confidential and secret from the organization."

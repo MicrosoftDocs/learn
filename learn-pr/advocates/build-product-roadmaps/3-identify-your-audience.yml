@@ -24,6 +24,6 @@ quiz:
        isCorrect: false
      - content: "What you plan to do in the future, what you are achieving now and the time and cost of your development."
        isCorrect: true
-       explanation: "Your executive team is interested in your plans, your progress, and the cost of your development so they can understand how product is contributing to the company's strategic objectives."
+       explanation: "Your executive team is interested in your plans, your progress, and the cost of your development. They want to understand how product is contributing to the company's strategic objectives."
      - content: What snacks you plan to stock in the kitchen.
        isCorrect: false

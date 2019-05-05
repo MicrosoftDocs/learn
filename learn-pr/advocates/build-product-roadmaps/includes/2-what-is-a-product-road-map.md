@@ -1,4 +1,4 @@
-You've just started at a new startup, Fabrikam, who are building a new AI-powered fashion app. At Fabrikam we have an MVP product but now we need to grow. We have to keep our product managers, engineers, and designers on task with specific, attainable goals. You've been tasked by leadership with developing a product road map to keep the product moving forward.
+You've started at a new startup, Fabrikam, who are building a new AI-powered fashion app. At Fabrikam, we have an MVP product but now we need to grow. We have to keep our product managers, engineers, and designers on task with specific, attainable goals. You've been tasked by leadership with developing a product road map to keep the product moving forward.
 
 ## What is a product road map?
 
@@ -24,7 +24,7 @@ A product road map is hard to build. It’s a balancing act of finding the right
 
 ## What does a road map look like?
 
-The final form of your road map could be represented in a lot of different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's [a spreadsheet](../media/ProductRoadmapTemplate.xlsx) or document, or stored in a specialized road map tool. 
+The final form of your road map could be represented in many different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's [a spreadsheet](../media/ProductRoadmapTemplate.xlsx) or document, or stored in a specialized road map tool. 
 
 ![A product road map](../media/story.png)
 

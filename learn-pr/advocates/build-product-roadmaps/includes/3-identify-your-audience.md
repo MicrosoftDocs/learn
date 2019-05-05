@@ -1,10 +1,10 @@
-As you build your product road map you also need to  know who you are building your road map for. Every audience of a road map will have different expectations. Since your road map can’t be all things to all people, you’ll need to consider different formats or documents for these different audiences.
+As you build your product road map, you also need to  know who you are building your road map for. Every audience of a road map will have different expectations. Since your road map can’t be all things to all people, you’ll need to consider different formats or documents for these different audiences.
 
 At Fabrikam, the audiences for our product road map are:
 
 ## Your product engineering team
 
-The engineers, designers, and product managers working on the product. They are looking for lower-level tactical information, sprint, and story-level, that will tell them what to work on right now, for example:
+The engineers, designers, and product managers working on the product. They are looking for lower-level tactical information, sprint, and story-level, that will tell them what to work on right now:
 
 1. What do we plan to do this sprint.
 1. The status of the work they are doing right now.

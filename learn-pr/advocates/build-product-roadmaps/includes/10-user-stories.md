@@ -34,7 +34,7 @@ Our user story starts with a summary of the objective of the story, in our case 
 
 ## Priority
 
-We give the story a priority, here `1`. This priority is derived from the prioritization frameworks we discussed earlier in the module. Remember in our 2x2 prioritization plot that stories in the top left quadrant were the most important, here priority `1` would likely be one of those stories.
+We give the story a priority, here `1`. This priority is derived from the prioritization frameworks we discussed earlier in the module. Remember in our 2x2 prioritization plot that stories in the top-left quadrant were the most important, here priority `1` would likely be one of those stories.
 
 ## Stories
 
@@ -46,11 +46,11 @@ They tell the story of what the user wants, expects, and needs from the requirem
 
 ## Test
 
-The test of the story is the acceptance criteria which indicates successful completion of the story. In our case, our algorithm returning three recommendations for each user. Other tests might include the accuracy of the feature or its performance.
+The test of the story is the acceptance criteria, which indicates successful completion of the story. In our case, our algorithm returning three recommendations for each user. Other tests might include the accuracy of the feature or its performance.
 
 ## Estimate
 
-The estimate is the amount of effort we believe the story will take to complete. Estimates can be complicated and hard to get right. There are [many](https://www.berteig.com/how-to-apply-agile/9-agile-estimation-techniques/) [ways](https://techbeacon.com/app-dev-testing/fast-estimation-better-approach-agile-estimation) of estimating work. A simple, initial, approach is to estimate the amount of time a story will take in days and/or hours. Initially, your estimates might be a little imprecise but as you complete stories you can validate your estimates against reality. This will hopefully help you refine and develop more accurate estimates over time. 
+The estimate is the amount of effort we believe the story will take to complete. Estimates can be complicated and hard to get right. There are [many](https://www.berteig.com/how-to-apply-agile/9-agile-estimation-techniques/) [ways](https://techbeacon.com/app-dev-testing/fast-estimation-better-approach-agile-estimation) of estimating work. A simple, initial, approach is to estimate the amount of time a story will take in days and/or hours. Initially, your estimates might be a little imprecise but as you complete stories you can validate your estimates against reality. This process will hopefully help you refine and develop more accurate estimates over time. 
 
 > [!WARNING]
 > Estimates can be contentious. It's often hard to estimate how much effort is involved in a story. If you or the team get it wrong then avoid recriminations. Instead, focus on identifying why the estimate was wrong and doing better next time. More learning, less blame.
@@ -63,4 +63,4 @@ This story is a formal user story; many organizations use more lightweight and i
 
 ![Product road map structure](../media/structure.png)
 
-From here we can now also see the whole structure of a road map, and how each element, from story to mission rolls up into a plan to build your product.
+From here, we can now also see the whole structure of a road map, and how each component, from user stories to the mission rolls up into the plan to build your product.
