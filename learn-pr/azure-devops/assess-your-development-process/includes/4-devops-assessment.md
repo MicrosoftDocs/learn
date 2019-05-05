@@ -8,6 +8,11 @@ Here's how you can take the assessment with her.
 
 ## Take the assessment
 
+<!-- TODO: Couple issues; need to follow up with marketing
+1. Should we have the learner fill in their own company info? (ask marketing what they want?)
+1. The assessment might go away. The fallback plan is for Mara to dust off an old assessment she took in the past. We would include all responses. The learner would see what Mara picks and then pick their own response.
+-->
+
 1. Go to [devopsassessment.net](https://devopsassessment.net?azure-portal=true).
 1. Fill out the personal information:
     * Tailspin is the company name.

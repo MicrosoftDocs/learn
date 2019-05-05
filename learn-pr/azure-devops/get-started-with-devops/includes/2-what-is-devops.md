@@ -51,7 +51,7 @@ Our goal is to give our customers games they'll love. We do that by working toge
 
 ## The DevOps handout
 
-<!-- TODO: Consider creating an image that shows the handout. -->
+<!-- TODO: Replace reference to DORA with a more appropriate research report. -->
 
 Here's the handout that Mara prepared.
 
