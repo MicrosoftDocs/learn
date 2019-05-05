@@ -1,4 +1,4 @@
-You've just started at a new startup, Fabrikam, who are building a new AI-powered fashion app. Fabrikam have our MVP product but now we need to grow. We have to keep our product managers, engineers, etc. on task with specific, attainable goals. You've been tasked with convincing the leadership team to develop a product road map to keep the product moving forward.
+You've just started at a new startup, Fabrikam, who are building a new AI-powered fashion app. At Fabrikam we have an MVP product but now we need to grow. We have to keep our product managers, engineers, and designers on task with specific, attainable goals. You've been tasked by leadership with developing a product road map to keep the product moving forward.
 
 ## What is a product road map?
 
@@ -10,17 +10,23 @@ A road map is a living document. Its development is iterative and organic. It ch
 
 ## How often do you update your road map?
 
-How often you update your road map usually depends on how mature your organization is, early-stage startups like Fabrikam generally have road maps that range out 3 to 6 months and are updated monthly. A larger or more mature organization might plan quarterly with some, less stable, future plans laid out for coming quarters.
+How often you update your road map usually depends on how mature your organization is, early-stage startups like Fabrikam generally have road maps that range out 3 to 6 months and are updated monthly. A larger or more mature organization might plan quarterly with some, less stable, future plans laid out for future quarters.
 
 ## Who works on a product road map?
 
 A great product road map is a collaboration between many partners across your organization. Owned and collated by your Product team, it draws on inputs from internal groups like Engineering, Support, Marketing, and Sales. It is also driven by external data collected from your product, your customers, your competitors, your investors, and the market.
 
-A good Product Manager is constantly gathering this data, validating, and feeding into the road map, and seeing how, or if, it impacts plans. The Product Manager is also feeding in the outcomes of the ongoing work you’re doing, whether the features you have build had an impact on metrics like user adoption, customer satisfaction, or whatever else drives your business.
+A good Product Manager is constantly gathering this data, validating, and feeding into the road map, and seeing how, or if, it impacts plans. The Product Manager also feeds in the outcomes of the ongoing work you’re doing, whether the features you have build had an impact on metrics like user adoption, customer satisfaction, or whatever else drives your business.
 
 The outcomes from our road map then become part of the inputs, together with the continuous data gathered from the other sources, and combines to form an iterative, cyclical, document.
 
-A product road map is hard to make. It’s a balancing act of finding the right features to build, evaluating customer asks versus product goals (like avoiding being captured in the orbit of a single large customer!) and then applying the engineering and design resources you have available to you.
+A product road map is hard to build. It’s a balancing act of finding the right features to build, evaluating customer asks versus product goals (like avoiding being captured in the orbit of a single large customer!) and then applying the engineering and design resources you have available to you.
+
+## What does a road map look like?
+
+The final form of your road map could be represented in a lot of different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's [a spreadsheet](../media/ProductRoadmapTemplate.xlsx) or document, or stored in a specialized road map tool. 
+
+![A product road map](../media/story.png)
 
 ## What makes up a typical road map?
 
@@ -35,7 +41,3 @@ To build a road map, we work top down; from the least granular component to the 
 ![Product road map hierarchy](../media/product_roadmap.png)
 
 This approach is recommended because the top-level components are closer to the mission and should be a logical progression of detail, easily rolled up and tied to that mission. The alternative, starting from the base and writing up a series of user stories, leaves a lot of space between your mission and its practical application. We find if you start with that base you end up twisting the top-level components into the shape of the user stories and not vice-versa.
-
-## What does a road map look like?
-
-The final form of your road map could be represented in a lot of different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's [a spreadsheet](../media/ProductRoadmapTemplate.xlsx) or document, or stored in a specialized road map tool. 

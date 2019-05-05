@@ -14,7 +14,7 @@ Themes should be tied to measures and metrics that demonstrate the impact of fea
 Themes allow you to set high-level goals for your product and keep track of everything contributing to that goal. You break down the journey to mission success into the current themes you need to focus on to continue that journey. A theme might be: "Acquire more customers!", "Reduce customer churn" or "Increase stability of notifications." They could also reflect internal priorities: "Streamline deployment!" or "Reduce test suite run time."
 
 > [!TIP]
-> Themes are also an excellent level in your product process from which to gather data for communicating progress to stakeholders. 
+> Themes are also an excellent level in your product road map from which to gather data for communicating progress to stakeholders. 
 
 At Fabrikam, the mission is to make it easier to find and buy the clothes you want. Fabrikam's short term strategic objectives are to grow the user base, retain customers, and make the customer experience better. So, for our first road map at Fabrikam, we have identified three product themes that contribute to these objectives:
 
@@ -30,4 +30,4 @@ At Fabrikam, the mission is to make it easier to find and buy the clothes you wa
 
 > We're going to reduce the number of abandoned carts by 25%.
 
-A theme, or a variant of a theme, such as "acquiring customers", will likely be repeated throughout a product’s lifespan, so it’s important to be as explicit as possible about the theme and what it achieves in this particular incarnation. This explication also ensures you keep your theme focused and help you make it achievable.
+These, and other themes are such as "acquiring customers", will likely be repeated throughout a product’s lifespan, so it’s important to be as explicit as possible about the theme and what it achieves in this particular incarnation. This explication also ensures you keep your theme focused and help you make it achievable.

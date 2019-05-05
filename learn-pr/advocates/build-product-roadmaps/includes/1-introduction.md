@@ -10,6 +10,6 @@ You’ll learn how to:
 
 * Describe the basic components and importance of product road maps.
 * Identify your product mission and the appropriate audience(s) for your road map
-* Structure a road map and a prioritization methodology appropriate for your product.
+* Structure a road map and choose a prioritization methodology appropriate for your product.
 
 By the end of this module you’ll be able to construct a product road that your team can use to build and manage your product.

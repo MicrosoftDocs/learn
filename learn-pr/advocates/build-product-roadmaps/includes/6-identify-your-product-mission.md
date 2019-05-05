@@ -4,7 +4,7 @@
   :::column-end:::
         :::column span="3":::
 
-The product road map is the strategic guide to building your product. Every road map should be driven by the mission of your product, the answer to the "Why you're building the product?" question.
+Now we've seen some background product road map, let's look at the components that make up a road map. The product road map is the strategic guide to building your product. Every road map should be driven by the mission of your product, the answer to the "Why you're building the product?" question.
 
 If you can’t answer this question or haven’t yet done so, then you need to rethink building a road map or developing the product in the first place! 
 

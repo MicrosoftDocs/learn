@@ -1,4 +1,4 @@
-One of the critical aspects of a product road map is knowing what to work on and when or proritization. You’re never going to have the resources to work on every aspect of your product at once, so you need to prioritize the work.
+One of the critical aspects of a product road map is knowing what to work on and when or prioritization. You’re never going to have the resources to work on every aspect of your product at once, so you need to prioritize the work.
 
 The prioritization process helps you decide what you should work on, when you should do it, and the order you should work on things in. It helps ensure that, of the thousands of ideas you probably have for your product, that you develop the important ones and put the rest into your backlog. The process also helps you balance out the relative value of an idea versus its cost. Sometimes an amazing idea is going to be expensive, in labor or cost, to develop versus the impact or value it's going to generate for your product. This process helps you decide if that cost is worth it.
 

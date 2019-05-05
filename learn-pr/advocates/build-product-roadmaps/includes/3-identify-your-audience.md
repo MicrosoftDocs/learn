@@ -1,4 +1,4 @@
-In addition to knowing why you are building your product, you should know who you are building your road map for. Every audience of a road map will have different expectations. Since your road map can’t be all things to all people, you’ll need to consider different formats or documents for these different audiences.
+As you build your product road map you also need to  know who you are building your road map for. Every audience of a road map will have different expectations. Since your road map can’t be all things to all people, you’ll need to consider different formats or documents for these different audiences.
 
 At Fabrikam, the audiences for our product road map are:
 
@@ -8,6 +8,8 @@ The engineers, designers, and product managers working on the product. They are 
 
 1. What do we plan to do this sprint.
 1. The status of the work they are doing right now.
+
+![An engineering product road map](../media/story.png)
 
 This audience will be the primary and default audience for your product road map and this module is designed to produce an artifact that is most suited to help that audience.
 
