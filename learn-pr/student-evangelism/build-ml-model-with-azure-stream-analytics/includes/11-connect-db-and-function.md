@@ -170,9 +170,9 @@ To make this work with your created Azure resources, we need to supply some vari
     - Replace `PREDICTION_KEY` on line 3 with the prediction key from your custom vision service.
     - Replace `ACCOUNT_NAME` on line 4 with the name of the storage account.
     - Replace `ACCOUNT_KEY` on line 5 with the storage account's access key.
-    - Replace `SERVER_NAME` on line 6 with the name you assigned to the database server.
-    - Replace `ADMIN_USERNAME` on line 8 with the database user name you specified.
-    - Replace `ADMIN_PASSWORD` on line 9 with the database password you specified.
+    - Replace `SERVER_NAME` on line 6 with the name you assigned to the database server - make sure to keep the `.database.windows.net` suffix.
+    - Replace `ADMIN_USERNAME` on line 7 with the database user name you specified.
+    - Replace `ADMIN_PASSWORD` on line 8 with the database password you specified.
 
 ## Test the connectivity
 
