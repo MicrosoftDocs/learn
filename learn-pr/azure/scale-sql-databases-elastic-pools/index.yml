@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of the Azure Portal
   - Basic knowledge of Azure SQL Server
-iconUrl: /learn/achievements/learn.azure-scale-azure-sql-dbs-elastic-pools.svg
+iconUrl: /learn/achievements/generic-badge.svg
 badge:
   uid: learn.azure-scale-azure-sql-dbs-elastic-pools.badge
 levels: 
