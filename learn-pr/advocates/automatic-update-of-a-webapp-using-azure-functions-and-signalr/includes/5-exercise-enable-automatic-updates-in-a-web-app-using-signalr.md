@@ -10,23 +10,26 @@ The web client uses the SignalR client SDK to establish a connection to the serv
 
     | Name                | Value                          |
     | ------------------- | ------------------------------ |
-    | Function app folder | select the main project folder |
     | Template            | HTTP Trigger                   |
     | Name                | negotiate                      |
     | Authorization level | Anonymous                      |
 
 A folder named *negotiate* is now available in your function app. Open *negotiate/index.js* and add the following SignalR binding to the `bindings` array.
 
+> [!NOTE]
+> Don't forget to add a comma after the last binding in the array before you paste in the SignalR binding.
+
 ```json
 {
     "type": "signalRConnectionInfo",
     "name": "connectionInfo",
     "hubName": "stocks",
-    "direction": "in"
+    "direction": "in",
+    "connectionStringSetting": "AzureSignalRConnectionString"
 }
 ```
 
-This configuration allows the function to return the connection information to the server which is used to identify connected clients. 
+This configuration allows the function to return the connection information to the server which is used to identify connected clients.
 
 Next, open *negotiate/index.js* and update the function to use the following code.
 
@@ -50,7 +53,6 @@ First, you need to create a new Azure Function that listens for changes in the d
 
     | Name                                   | Value                          |
     | -------------------------------------- | ------------------------------ |
-    | Function app folder                    | select the main project folder |
     | Template                               | Azure Cosmos DB Trigger        |
     | Name                                   | stocksChanged                  |
     | App setting for your Cosmos DB account | AzureCosmosDBConnectionString  |
@@ -77,7 +79,7 @@ The Cosmos DB binding for your function should now look like the following code.
 }
 ```
 
-Next, add a SignalR binding to the function so that incoming changes may be broadcast to clients.
+Next, a comma after the Cosmos DB binding and then add the following SignalR binding. 
 
 ```json
 {
@@ -88,6 +90,8 @@ Next, add a SignalR binding to the function so that incoming changes may be broa
   "direction": "out"
 }
 ```
+
+This binding allows the function to broadcast changes to clients.
 
 The beauty of all the configuration is that the function code is simple. Update the *stocksChanged/index.js* file to reflect the following code.
 
@@ -146,7 +150,7 @@ Now open *index.html.js* and replace the file with the following code.
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = ''; // get value from portal
+const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
 
 const getAPIBaseUrl = () => {
     const isLocal = /localhost/.test(window.location.href);
@@ -169,10 +173,10 @@ const app = new Vue({
             } catch (ex) {
                 console.error(ex);
             }
-        },
-        created() {
-            this.getStocks();
         }
+    },
+    created() {
+        this.getStocks();
     }
 });
 
@@ -203,11 +207,11 @@ connect();
 
 The changes you just made accomplished two goals: removed all polling logic from the client and added handlers to listen for messages coming from the server.
 
-When examining the script in sections, the script begins with a helper function that returns the base URL of the script. 
+When examining the script in sections, the script begins with a helper function that returns the base URL of the script.
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = ''; // get value from portal
+const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
 
 const getAPIBaseUrl = () => {
     const isLocal = /localhost/.test(window.location.href);
@@ -220,7 +224,6 @@ When you deploy the application to Azure, you will paste the appropriate remote 
 The Vue.js-related code is streamlined now that changes are pushed to the client. Consider this segment of the code you just pasted in to the script file:
 
 ```javascript
-
 const app = new Vue({
     el: '#app',
     data() {
@@ -237,11 +240,11 @@ const app = new Vue({
             } catch (ex) {
                 console.error(ex);
             }
-        },
-        created() {
-            this.getStocks();
         }
-    }
+    },
+    created() {
+        this.getStocks();
+    },
 });
 ```
 
@@ -326,3 +329,7 @@ Return to Visual Studio Code and enter the the following command in the integrat
 ```bash
 npm run update
 ```
+
+After the database is updated, the UI should look something like the following screenshot:
+
+![End state of serverless web app](../media/serverless-app-beginning-state.png)
