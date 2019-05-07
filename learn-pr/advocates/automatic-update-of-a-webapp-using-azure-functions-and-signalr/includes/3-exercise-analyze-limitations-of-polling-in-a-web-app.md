@@ -2,7 +2,7 @@ Before you begin, make sure you have the following software installed on our mac
 
 - [Node.js](https://nodejs.org/download/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
-- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools)
+- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (latest version)
 - [Visual Studio Code Azure Functions Extension](https://code.visualstudio.com/tutorials/functions-extension/getting-started#_install-the-extension)
 
 To set up the prototype on your machine, clone the application from the following location:
@@ -18,9 +18,9 @@ Next, run the following script in the Cloud Shell:
 
 ```bash
 export RESOURCE_GROUP_NAME=<rgn>[sandbox resource group name]</rgn>
-export COSMOSDB_ACCOUNT_NAME=mslearn-exercise-serverless-cosmos-$(openssl rand -hex 5)
-export STORAGE_ACCOUNT_NAME=mslearn-exercise-serverless-storage-$(openssl rand -hex 5)
-export SIGNALR_ACCOUNT_NAME=mslearn-exercise-serverless-signalr-$(openssl rand -hex 5)
+export COSMOSDB_ACCOUNT_NAME=msl-svrless-cosmos-$(openssl rand -hex 5)
+export STORAGE_ACCOUNT_NAME=mslsvrlessstorage$(openssl rand -hex 5)
+export SIGNALR_ACCOUNT_NAME=msl-svrless-signalr$(openssl rand -hex 5)
 
 echo "Resource Group Name: $RESOURCE_GROUP_NAME"
 echo "Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
@@ -32,6 +32,8 @@ This script generates the resource group and account names used in this lesson. 
 
 The following script uses these variables to create the Azure resources required for this lesson.
 
+TODO: Only general purpose V2 storage accounts support static website hosting
+
 ```bash
 az cosmosdb create  \
   --name $COSMOSDB_ACCOUNT_NAME \
@@ -39,7 +41,9 @@ az cosmosdb create  \
 
 az storage account create \
   --name $STORAGE_ACCOUNT_NAME \
-  --resource-group $RESOURCE_GROUP_NAME>
+  --resource-group $RESOURCE_GROUP_NAME \
+  --kind StorageV2 \
+  --sku Standard_LRS
 
 az extension add -n signalr
 
@@ -59,7 +63,8 @@ Run the following command to get the connection string for your storage account:
 ```shell
 az storage account show-connection-string \
   -g $RESOURCE_GROUP_NAME \
-  -n $STORAGE_ACCOUNT_NAME
+  -n $STORAGE_ACCOUNT_NAME \
+  --query "connectionString" -o tsv
 ```
 
 Copy the connection string from the terminal window and replace `<STORAGE_CONNECTION_STRING>` with the connection string in the terminal.
@@ -73,7 +78,7 @@ az cosmosdb list-connection-strings  \
   --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" -o tsv
 ```
 
-Replace the token `<COSMOSDB_CONNECTION_STRING>` with the Cosmos DB connection string. 
+Replace the token `<COSMOSDB_CONNECTION_STRING>` with the Cosmos DB connection string.
 
 You also need the Cosmos DB master key. Run this command to list the account's keys:
 
@@ -90,7 +95,7 @@ Finally, you'll request the SignalR connection string by using this command:
 
 ```shell
 az signalr key list \
-  --name $SIGNALR_SERVICE_NAME \
+  --name $SIGNALR_ACCOUNT_NAME \
   --resource-group $RESOURCE_GROUP_NAME \
   --query primaryConnectionString -o tsv
 ```
@@ -116,4 +121,6 @@ Next, to run the web application on your machine, open a terminal and run the `n
 npm start
 ```
 
-You can now navigate to [localhost:8080](http://localhost:8080) to see the application working in the browser.
+You can now navigate to [localhost:8080](http://localhost:8080) to see the application working in the browser. After five seconds you should see something similar to the following screenshot.
+
+![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)

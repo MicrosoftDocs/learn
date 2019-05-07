@@ -6,7 +6,7 @@ Beyond bloated headers, timer-based polling is inefficient. In the prototype, th
 
 ## Application design
 
-Before you begin making changes to the application, first take a moment to get acquainted with the initial design of the applicationS.
+Before you begin making changes to the application, first take a moment to get acquainted with the initial design of the application.
 
 ### Server
 
@@ -86,7 +86,7 @@ The logic implemented on the page includes the use of a timer to send a request 
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = ''; // get value from portal
+const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
 
 const getAPIBaseUrl = () => {
     const isLocal = /localhost/.test(window.location.href);
