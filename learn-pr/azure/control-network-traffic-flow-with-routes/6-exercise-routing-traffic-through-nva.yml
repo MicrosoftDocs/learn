@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.module-uid.6-exercise-routing-traffic-through-nva
 metadata:
-  title: Exercise - title
-  description: TODO
+  title: Exercise - Routing traffic through the NVA
+  description: Route traffic through the NVA
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

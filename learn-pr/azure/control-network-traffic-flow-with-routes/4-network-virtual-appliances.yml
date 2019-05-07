@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.module-uid.4-network-virtual-appliances
 metadata:
-  title: Unit title
-  description: TODO
+  title: What is an NVA?
+  description: Explain the purpose and role of an NVA
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

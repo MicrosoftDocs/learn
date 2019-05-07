@@ -13,3 +13,4 @@ _dependentPackages/
 .vscode/settings.json
 .DS_Store
 Thumbs.db
+/learn-pr/azure/authenticate-apps-with-managed-identities/src
