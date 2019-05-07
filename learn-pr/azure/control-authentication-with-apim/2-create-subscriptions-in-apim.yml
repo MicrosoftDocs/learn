@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.control-authentication-with-apim.2-create-subscriptions-in-apim
+metadata:
+  title: Create subscriptions in Azure API Management
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Create subscriptions in Azure API Management
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-subscriptions-in-apim.md)]
