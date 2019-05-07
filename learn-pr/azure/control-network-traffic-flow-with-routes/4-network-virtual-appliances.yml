@@ -13,3 +13,35 @@ title: Unit title
 durationInMinutes: 10
 content: |
   [!include[](includes/4-network-virtual-appliances.md)]
+quiz:
+  ### TBD. FILL IN CORRECT AND POSSIBLE INCORRECT ANSWERS BELOW, TOGETHER WITH EXPLANATIONS
+  title: Check your knowledge
+  questions:
+    - content: "What is the main benefit of using a network virtual appliance?"
+      choices:
+      - content: "Incorrect Answer 1"
+        isCorrect: false
+        explanation: "Explain why answer 1 is false"
+      - content: "Incorrect Answer 2"
+        isCorrect: false
+        explanation: "Explain why answer 2 is false"
+      - content: "Correct Answer"
+        isCorrect: true
+        explanation: "This is the correct answer."
+      - content: "Incorrect Answer 3"
+        isCorrect: false
+        explanation: "Explain why answer 3 is false"
+    - content: "How might you deploy a network virtual appliance?"
+      choices:
+      - content: "Correct Answer"
+        isCorrect: true
+        explanation: "This is the correct answer."
+      - content: "Incorrect Answer 1"
+        isCorrect: false
+        explanation: "Explain why answer 1 is false"
+      - content: "Incorrect Answer 2"
+        isCorrect: false
+        explanation: "Explain why answer 2 is false"
+      - content: "Incorrect Answer 3"
+        isCorrect: false
+        explanation: "Explain why answer 3 is false"        

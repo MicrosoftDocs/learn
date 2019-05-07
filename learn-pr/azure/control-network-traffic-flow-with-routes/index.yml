@@ -12,10 +12,10 @@ title: Manage and control traffic flow in your Azure deployment with routes
 summary: Learn how to control Azure virtual network traffic by implementing custom routes.
 abstract: | 
   In this module, you will:
-  - Identify routing capabilities of an Azure Virtual Network
+  - Identify the routing capabilities of an Azure virtual network
   - Configure routing within a virtual network
-  - Deploy a basic network virtual appliance (NVA)
-  - Configure routing to send traffic through an NVA
+  - Deploy a basic network virtual appliance
+  - Configure routing to send traffic through a network virtual appliance
 prerequisites: | 
   - Knowledge of basic networking concepts
   - Familiarity with Azure virtual networking

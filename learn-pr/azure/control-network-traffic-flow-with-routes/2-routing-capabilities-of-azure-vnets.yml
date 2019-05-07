@@ -13,3 +13,35 @@ title: Unit title
 durationInMinutes: 10
 content: |
   [!include[](includes/2-routing-capabilities-of-azure-vnets.md)]
+quiz:
+  ### TBD. FILL IN CORRECT AND POSSIBLE INCORRECT ANSWERS BELOW, TOGETHER WITH EXPLANATIONS
+  title: Check your knowledge
+  questions:
+    - content: "Why would you use a custom route in a virtual network?"
+      choices:
+      - content: "Incorrect Answer 1"
+        isCorrect: false
+        explanation: "Explain why answer 1 is false"
+      - content: "Incorrect Answer 2"
+        isCorrect: false
+        explanation: "Explain why answer 2 is false"
+      - content: "Correct Answer"
+        isCorrect: true
+        explanation: "This is the correct answer."
+      - content: "Incorrect Answer 3"
+        isCorrect: false
+        explanation: "Explain why answer 3 is false"
+    - content: "Why might you use VNET peering?"
+      choices:
+      - content: "Correct Answer"
+        isCorrect: true
+        explanation: "This is the correct answer."
+      - content: "Incorrect Answer 1"
+        isCorrect: false
+        explanation: "Explain why answer 1 is false"
+      - content: "Incorrect Answer 2"
+        isCorrect: false
+        explanation: "Explain why answer 2 is false"
+      - content: "Incorrect Answer 3"
+        isCorrect: false
+        explanation: "Explain why answer 3 is false"        
