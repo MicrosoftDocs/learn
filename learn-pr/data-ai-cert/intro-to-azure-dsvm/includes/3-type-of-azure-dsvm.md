@@ -14,12 +14,6 @@ Training deep learning models is computationally intense. For better model train
 
 ## Use a geographic information system with DSVM
 
-:::row:::
-    :::column-start:::
 ![Icon for the Geo AI DSVM](../media/3-geo-ai-dsvm.png)
-    :::column-end:::
-    :::column-start span="3":::
-The DSVM has analytic capabilities optimized for geospatial and location data. It has the ArcGIS Pro geographic information system integrated into the VM to support advanced geographic-based AI questions. It also has other conventional data science tools preconfigured and preinstalled for ease-of-use.
-    :::column-end:::
-    :::row-end:::
 
+The DSVM has analytic capabilities optimized for geospatial and location data. It has the ArcGIS Pro geographic information system integrated into the VM to support advanced geographic-based AI questions. It also has other conventional data science tools preconfigured and preinstalled for ease-of-use.
