@@ -5,10 +5,10 @@ az network vnet create --resource-group $rgName --name shippingportalvnet
 az network vnet subnet create --resource-group $rgName --vnet-name shippingportalvnet  --name appgatewaysubnet --address-prefixes "10.0.0.0/24"
 
 # Create public IP address for the gateway
-az network public-ip create --resource-group $rgName --name appgwipaddr --sku Standard 
+az network public-ip create --resource-group $rgName --name appgwipaddr --sku Basic
 
 # Create the App gateway
-az network application-gateway create --name gw-shipping --resource-group $rgName --vnet-name shippingportalvnet --subnet "AppGateway" --capacity 2 --sku Standard_Small --http-settings-cookie-based-affinity Disabled --http-settings-protocol Http --frontend-port 80 --routing-rule-type Basic --http-settings-port 80 --public-ip-address appgwipaddr --no-wait
+az network application-gateway create --name gw-shipping --resource-group $rgName --vnet-name shippingportalvnet --subnet appgatewaysubnet --capacity 2 --sku Standard_Small --http-settings-cookie-based-affinity Disabled --http-settings-protocol Http --frontend-port 80 --routing-rule-type Basic --http-settings-port 80 --public-ip-address appgwipaddr --no-wait
 
 # Create subnet for VM
 az network vnet subnet create --resource-group $rgName --vnet-name shippingportalvnet  --name vmsubnet --address-prefixes "10.0.1.0/24"

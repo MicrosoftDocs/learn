@@ -7,13 +7,21 @@ In this unit, you'll set up the listener with port 443 and with the TLS certific
 1. In the Cloud Shell window on the right, run the following command create a new frontend port (443)
 
     ``` bash
-    az network application-gateway frontend-port create --resource-group $rgName --gateway-name gw-shipping --name https-port --port 443
+    az network application-gateway frontend-port create \
+      --resource-group $rgName \
+      --gateway-name gw-shipping \
+      --name https-port --port 443
     ```
 
 1. Now run the following command to create the new listener
 
     ``` bash
-    az network application-gateway http-listener create --resource-group $rgName --gateway-name gw-shipping --name httpslistener --frontend-port https-port --ssl-cert shipping-ssl-cert
+    az network application-gateway http-listener create \
+      --resource-group $rgName \
+      --gateway-name gw-shipping \
+      --name httpslistener \
+      --frontend-port https-port \
+      --ssl-cert shipping-ssl-cert
     ```
 
 ## Test the Application Gateway
@@ -21,7 +29,9 @@ In this unit, you'll set up the listener with port 443 and with the TLS certific
 1. Find the fully qualified domain name of the Application Gateway IP address:
 
     ```bash
-    az network public-ip show --resource-group $rgName --name gw-shipping
+    az network public-ip show \
+      --resource-group $rgName \
+      --name gw-shipping
     ```
 
 1. Using a web browser, navigate to \<ip address returned above\>
