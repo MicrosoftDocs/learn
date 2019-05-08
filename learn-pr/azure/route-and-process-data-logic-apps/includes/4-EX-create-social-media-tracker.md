@@ -73,7 +73,7 @@ At this point, our Logic App is scanning Twitter every minute for tweets contain
 
 1. While you are waiting, locate the section in the Overview page labeled "EVALUATION". Notice the text that looks something like "Evaluated 12 times, fired 3 times in the last 24 hours". The term *evaluated* means the condition in your trigger was checked; you should see this increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied; in our case, this number represents how many times the trigger found matching tweets.
 
-1. Once you see a row appear, select the row. Selecting a row will navigate your view to something that looks like the Designer you used to create the trigger; however, this view lets you see the data that flowed through each step of this run of your app.
+1. Once you see a row appear, select the row. Selecting a row will navigate your view to something that looks like the Designer you used to create the trigger. This view lets you see the data that flowed through each step of this run of your app.
 
 1. Select the Twitter trigger.
 

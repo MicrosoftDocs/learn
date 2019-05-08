@@ -10,7 +10,7 @@ Most of the examples we've seen are in the *data becomes available* category. Fo
 
 Suppose you wanted to launch your Logic App every Saturday at midnight? This trigger would be great for administrative tasks like running backups or archiving old data. Logic Apps provides a built-in *recurrence* trigger to help you do exactly this type of thing.
 
-There's one more case to consider: suppose you wanted total control? Imagine you need to launch your Logic App using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this.
+There's one more case to consider: suppose you wanted total control? Imagine you need to launch your Logic App using code in your web or mobile applications? You can use the built-in *manual request* trigger to do this action.
 
 This discussion shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
 
@@ -24,7 +24,7 @@ When you create a polling trigger, you set the *Frequency* and an *Interval* to 
 
 Polling triggers force you to make a choice between how much they cost and how quickly they respond to new data. There is often a delay between when new data becomes available and when it is detected by the app. The following illustration shows the issue.
 
-![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at ten minutes.](../media-drafts/polling-trigger.png)
+![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media-drafts/polling-trigger.png)
 
 In the worst case, the potential delay for detecting new data is equal to the polling interval. So why not use a smaller interval? To check for new data, the Logic Apps execution engine needs to run your app, which means you incur a cost. In general, the shorter the interval, the higher the cost but the quicker you respond to new data. The best polling interval for your Logic App depends on your business process and its tolerance for delay.
 

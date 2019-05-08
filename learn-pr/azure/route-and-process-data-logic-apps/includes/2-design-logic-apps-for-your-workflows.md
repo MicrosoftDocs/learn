@@ -4,7 +4,7 @@ Azure Logic Apps gives you pre-built components to connect to hundreds of servic
 
 In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the pre-built components in Azure Logic Apps. Finally, we'll assemble the parts into an app using the Logic Apps Designer. The following illustration shows an overview of the app-development process.
 
-![An illustration showing the typical sequence of activities used to create a Logic App. The process has five steps. First, you plan your business process. Second, you identify the type of each step in your process. Third, you decide which pre-built component will implement each step. Fourth, you use the design tool to build your workflow from the components. Fifth, you save your design. You app will now run automatically in the cloud.](../media-drafts/app-design-process.png)
+![An illustration showing the typical sequence of activities used to create a Logic App. The process has five steps. First, you plan your business process. Second, you identify the type of each step in your process. Third, you decide which pre-built component will implement each step. Fourth, you use the design tool to build your workflow from the components. Fifth, you save your design. Your app will now run automatically in the cloud.](../media-drafts/app-design-process.png)
 
 ## Plan your business process
 
@@ -34,7 +34,7 @@ A group of related triggers and actions are packaged inside a *connector*. Conce
 
 ![An illustration showing the triggers and actions available in the Twitter connector.](../media/twitter-connector-details.png)
 
-You job is to map each task in your flowchart to Logic Apps triggers and actions. The following illustration shows the connectors we'd use in the social-media app with the relevant triggers and actions highlighted.
+Your job is to map each task in your flowchart to Logic Apps triggers and actions. The following illustration shows the connectors we'd use in the social-media app with the relevant triggers and actions highlighted.
 
 ![An illustration showing the operations available in the connectors used by the social-media monitor app. Specifically, it shows the Twitter connector, the Text Analytics connector, the SQL Server connector, and the Office 365 Outlook connector. In addition, the image includes a graphical representation for each of the control actions. The trigger and actions used in the social-media monitor app are highlighted.](../media-drafts/social-media-design-process.png)
 
@@ -44,7 +44,7 @@ The Logic Apps Designer is a graphical tool for creating your workflows. It lets
 
 ![A screenshot showing the Logic Apps Designer containing the completed social-media monitor app. The app begins with the Twitter trigger. It then has three actions: detect sentiment, insert row, and send email. A control action determines whether the insert row or send email action executes based on the score of the Detect-sentiment action.](../media/social-media-app-designer-view.png)
 
-When you save your app, it'll be live and will run automatically whenever the trigger activates.
+When you save your app, it will be live and will run automatically whenever the trigger activates.
 
 ## Knowledge check
 

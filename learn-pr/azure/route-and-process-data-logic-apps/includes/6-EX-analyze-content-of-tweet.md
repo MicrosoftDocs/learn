@@ -1,4 +1,4 @@
-In this exercise, we're going to continue work on our social-media monitor app. Here, we'll analyze whether the tweets about our product are positive or negative. We'll create a Detect-sentiment action which will provide us a numeric *Score* that represents the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we're going to continue work on our social-media monitor app. We'll analyze whether the tweets about our product are positive or negative. We'll create a Detect-sentiment action, which will provide us a numeric *Score* that represents the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
 ![An illustration showing the triggers and actions in the social-media monitor Logic App. The second step is an action labeled Detect Sentiment. This action is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media-drafts/exercise-detect-sentiment.png)
 
@@ -6,17 +6,17 @@ In this exercise, we're going to continue work on our social-media monitor app. 
 
 ## Get Text Analytics Key and endpoint
 
-The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. We'll run a script in this section to programmatically setup a Cognitive Services account in the sandbox, register the Text Analytics service and return a key and the endpoint ULR to us. We'll need those values in this exercises to make calls and get back sentiment scores. 
+The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. We'll run a script in this section to programmatically set up a Cognitive Services account in the sandbox, register the Text Analytics service, and return a key and the endpoint ULR to us. We'll need those values in this exercise to make calls and get back sentiment scores. 
 
-The Cognitive Services account  is created in the sandbox environment and is , therefore, free for use in this module. 
+The Cognitive Services account is created in the sandbox environment and is, therefore, free for use in this module. 
 
-1. In the Cloud Shell to the right, run the following curl command to copy the **setup-textanalytics.sh** script from Github
+1. In the Cloud Shell to the right, run the following curl command to copy the **setup-textanalytics.sh** script from GitHub
 
     ```azurecli
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-textanalytics.sh > setup-textanalytics.sh
     ```
 
-1. Run the following command to run the script. This will take a couple of minutes. 
+1. Run the following command to execute the script. This command will take a couple of minutes. 
 
     ```azurecli
     bash setup-textanalytics.sh
@@ -32,7 +32,7 @@ The Cognitive Services account  is created in the sandbox environment and is , t
 
 Here, we'll add a Detect-sentiment action to our app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and set it to connect to our Text Analytics subscription.
 
-1. Return to the Logic App designer by selecting **Logic app designer** under the Development Tools section of the left navigation bar.
+1. Return to the Logic App designer by selecting **Logic app designer**. This button is located under the Development Tools section of the left navigation bar.
 
 1. Under the Twitter trigger, click **New step**.
 
@@ -44,7 +44,7 @@ Here, we'll add a Detect-sentiment action to our app in the [Azure portal](https
 
 1. In the Connection Name field, type **CognitiveServicesConnection**.
 
-1. Paste your saved api key in the **Account Key** field and your saved endpoint address in the **Site URL** field.
+1. Paste your saved API key in the **Account Key** field and your saved endpoint address in the **Site URL** field.
 
 1. Click **Create**.
 
@@ -64,7 +64,7 @@ Next, we'll configure our app to pass the tweet text to the Text Analytics servi
 
 ## Examine results of Detect-sentiment
 
-Your app is now live. Tweets containing your product name will be processed by the Text Analytics service and you'll be given a numeric score. Recall that a score close to 1 is positive sentiment while a score near 0 is negative. In this section, you'll see how to monitor the execution of your app and view the data flowing through each steps. This is a great technique to know about since it helps you verify your app is working correctly.
+Your app is now live. Tweets containing your product name will be processed by the Text Analytics service and you'll be given a numeric score. Recall that a score close to 1 is positive sentiment while a score near 0 is negative. In this section, you'll see how to monitor the execution of your app and view the data flowing through each step. This tool is great to know about since it helps you verify your app is working correctly.
 
 1. In the left navigation bar, select **Overview**.
 

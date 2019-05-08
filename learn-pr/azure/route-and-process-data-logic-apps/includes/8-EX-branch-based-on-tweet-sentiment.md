@@ -1,18 +1,18 @@
-In this exercise, we're going to continue work on our social-media monitor app. Here, we'll add a control action to branch based on the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we're going to continue work on our social-media monitor app. We'll add a control action to branch based on the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
-![An illustration showing the triggers and actions in the social-media monitor Logic App. The third step is an action showing a control action that is testing the sentiment score. If the score is is greater than 0.7 the app branches to an Insert Row action. If the score is less than or equal to 0.7, the app branches to a Send an Email action.](../media-drafts/exercise-branch.png)
+![An illustration showing the triggers and actions in the social-media monitor Logic App. The third step is an action showing a control action that is testing the sentiment score. If the score is greater than 0.7 the app branches to an Insert Row action. If the score is less than or equal to 0.7, the app branches to a Send an Email action.](../media-drafts/exercise-branch.png)
 
 ## Create SQL Server database to store positive tweets
 
 When we receive a positive tweet, we want to save it to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs; the database runs in the sandbox and is free for the purposes of this exercise. 
 
-1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from Github
+1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from GitHub
 
     ```azurecli
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-sql-database.sh > setup-sql-database.sh
     ```
 
-1. Run the following command to run the script. This will take a couple of minutes. 
+1. Run the following command to run the script. This command will take a couple of minutes. 
 
     ```azurecli
     bash setup-sql-database.sh
@@ -30,7 +30,7 @@ When we receive a positive tweet, we want to save it to a backend database. In t
 
 This first step is to add the control action to the app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). In programming terms, we're adding an *if statement* that will test a condition.
 
-1. Return to the Logic App Designer by selecting **Logic app designer** under the Development Tools section of the left navigation bar.
+1. Return to the Logic App designer by selecting **Logic app designer**. This button is located under the Development Tools section of the left navigation bar.
 
 1. Below the existing Detect-sentiment action, click **New step**.
 
@@ -42,7 +42,7 @@ This first step is to add the control action to the app in the [Azure portal](ht
 
 ## Configure the Condition
 
-Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect-sentiment action returns a *Score* which is a number between zero and one. If the number is greater than 0.7 we'll consider the tweet positive, otherwise it'll be negative.
+Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect-sentiment action returns a *Score*, which is a number between zero and one. If the number is greater than 0.7 we'll consider the tweet positive, otherwise it will be negative.
 
 1. In the Condition action, select the leftmost **Choose a value** field.
 
@@ -64,7 +64,7 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. In the Search connectors and actions field, type **SQL**.
 
-1. Select **SQL Server**.
+1. Select the **SQL Server** connector.
 
 1. Select **Insert row**.
 
@@ -114,16 +114,16 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Sign in using a Microsoft account. If you don't have an account, you can create one now.
 
-1. Click **Yes** to agree to let your Logic App access your email information.
+1. Click **Yes** to let your Logic App have access to your email information.
 
 1. In the **To** field, enter a valid email address. For testing, you can use your own address.
 
-1. In the Subject field, type **Negative tweet detected from** and then in the Dynamic content popup select **Original tweet tweeted by**.
+1. In the Subject field, type **Negative tweet detected from** and then in the Dynamic content popup, select **Original tweet tweeted by**.
 
     > [!NOTE]
     > If you are using the RSS **When a feed item is published** trigger, please use the **FeedTitle** here.
 
-1. In the Body field, type **Contents of tweet:** and then in the Dynamic content popup select **Original tweet text**.
+1. In the Body field, type **Contents of tweet:** and then in the Dynamic content popup, select **Original tweet text**.
 
     > [!NOTE]
     > If you are using the RSS **When a feed item is published** trigger, please use the **FeedSummary** here.
@@ -132,11 +132,11 @@ Now that we have a Condition control action created, we need to specify what the
 
 ## Examine results of positive sentiment tweets
 
-1. In the Azure portal left hand navigation bar select **All resources** and then select **PositiveTweetDatabase** from the list of resources.
+1. In the Azure portal left navigation bar, select **All resources** and then select **PositiveTweetDatabase** from the list of resources.
 
 1. In the left navigation bar, select **Query editor**.
 
-1. Login using the **Server admin login** and **Password** that you saved when the script in the preceding unit created 
+1. Sign in using the **Server admin login** and **Password** that you saved when the script in the preceding unit created 
 
 1. Click **OK**.
 
@@ -148,4 +148,4 @@ Now that we have a Condition control action created, we need to specify what the
 
 ## Examine results of negative sentiment tweets
 
-1. Login to the email account that you provided in the Outlook action and wait for an email notification to arrive.
+1. Sign in to the email account that you provided in the Outlook action and wait for an email notification to arrive.
