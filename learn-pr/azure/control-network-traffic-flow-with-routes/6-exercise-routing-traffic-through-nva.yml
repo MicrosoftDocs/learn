@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.6-exercise-routing-traffic-through-nva
+uid: learn.control-network-traffic-flow-with-routes.6-exercise-routing-traffic-through-nva
 metadata:
   title: Exercise - Routing traffic through the NVA
   description: Route traffic through the NVA
