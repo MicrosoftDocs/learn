@@ -24,7 +24,7 @@ roles:
 - business-user
 products:
 - azure
-- azure-application-insights
+#tdo - azure-application-insights - not accepted
 - azure-portal
 - azure-sql-database
 - azure-virtual-machines
