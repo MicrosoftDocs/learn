@@ -97,13 +97,19 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
     - Which is an example of a microservices architecture?
     - What technologies are a requirement of microservices architecture?
 
-1. **Exercise - Deploy a monolithic application on virtual machines**
+1. **Exercise - Deploy a monolithic application on App Service**
 
     List the steps which apply the learning content from previous unit:
 
-    1. Create VMs
+    1. Create App Service
     1. Create database (possibly Azure SQL)
+    1. Deploy App Insights
     1. Deploy application
+    
+
+1. **Exercise - Load testing of some sort**
+
+    Load test and look at poor performance in App Insights.
 
 1. **Analyze an application and identify decomposition boundaries**
 
