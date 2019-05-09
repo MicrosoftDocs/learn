@@ -156,6 +156,7 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
     1. Create Azure Function
     1. Deploy application
     1. Configure monolith app to talk to Azure Function instead of service inside monolith.
+    1. Re-run the load test and see improvement of performance
 
 1. **Summary**
 
