@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn-wwl.azure-in-action.3-demo--modernizing-.net-applications
+uid: learn-wwl.azure-in-action.3-demo-modernizing-net-applications
 title: Demo - Modernizing .NET Applications
 metadata:
   title: Demo - Modernizing .NET Applications
@@ -12,4 +12,4 @@ metadata:
   ROBOTS:   NOINDEX 
 durationInMinutes: 20
 content: |
-  [!include[](includes/3-demo--modernizing-.net-applications.md)] 
+  [!include[](includes/3-demo-modernizing-net-applications.md)] 

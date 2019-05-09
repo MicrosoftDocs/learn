@@ -30,9 +30,9 @@ products:
 - azure-virtual-machines
 units:
 - learn-wwl.azure-in-action.1-module-overview
-- learn-wwl.azure-in-action.2-demo--microsoft-azure-migration
-- learn-wwl.azure-in-action.3-demo--modernizing-.net-applications
-- learn-wwl.azure-in-action.4-demo--azure-devops
+- learn-wwl.azure-in-action.2-demo-microsoft-azure-migration
+- learn-wwl.azure-in-action.3-demo-modernizing-net-applications
+- learn-wwl.azure-in-action.4-demo-azure-devops
 - learn-wwl.azure-in-action.5-azure-differentiators
 - learn-wwl.azure-in-action.6-knowledge-check
 - learn-wwl.azure-in-action.7-summary-and-resources

@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn-wwl.azure-in-action.2-demo--microsoft-azure-migration
+uid: learn-wwl.azure-in-action.2-demo-microsoft-azure-migration
 title: Demo - Microsoft Azure migration
 metadata:
   title: Demo - Microsoft Azure migration
@@ -12,4 +12,4 @@ metadata:
   ROBOTS:   NOINDEX 
 durationInMinutes: 25
 content: |
-  [!include[](includes/2-demo--microsoft-azure-migration.md)] 
+  [!include[](includes/2-demo-microsoft-azure-migration.md)] 

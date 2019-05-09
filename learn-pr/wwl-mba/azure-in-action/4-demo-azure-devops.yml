@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn-wwl.azure-in-action.4-demo--azure-devops
+uid: learn-wwl.azure-in-action.4-demo-azure-devops
 title: Demo - Azure DevOps
 metadata:
   title: Demo - Azure DevOps
@@ -12,4 +12,4 @@ metadata:
   ROBOTS:   NOINDEX 
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-demo--azure-devops.md)] 
+  [!include[](includes/4-demo-azure-devops.md)] 
