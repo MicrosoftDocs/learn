@@ -11,15 +11,14 @@ sudo apt-get install nginx -y
 
 # Copy SSL certificates to nginx
 sudo mkdir /etc/nginx/ssl
-sudo cp shipping-* /etc/nginx/ssl
+sudo cp /home/azureuser/shippingportal/server-config/shipping-* /etc/nginx/ssl
 
 # Setup nginx reverse proxy for dotnet core
-sudo cp default /etc/nginx/sites-available
+sudo cp /home/azureuser/shippingportal/server-config/default /etc/nginx/sites-available
 
 sudo systemctl restart nginx
 
-# Download shipping portal application from git
-git clone https://github.com/<shippingportal-repo> shippingportal
+# Build the shipping portal application
 dotnet new web -n shippingportal
 cd shippingportal
 dotnet build
@@ -27,9 +26,9 @@ dotnet publish -o published -c Release
 cd /home/azureuser/shippingportal/ShippingPortal/published/
 
 sudo mkdir /var/www/shippingportal
-sudo cp * /var/www/shippingportal
+sudo cp -r * /var/www/shippingportal
 
 
 # Setup systemd
-sudo cp /home/azureuser/server-config/shippingportal.service /etc/systemd/system/
+sudo cp /home/azureuser/shippingportal/server-config/shippingportal.service /etc/systemd/system/
 sudo systemctl start shippingportal.service
