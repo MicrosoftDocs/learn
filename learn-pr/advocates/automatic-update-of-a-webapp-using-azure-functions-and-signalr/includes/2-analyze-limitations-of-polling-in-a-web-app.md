@@ -1,3 +1,5 @@
+![Polling-based web application](../media/serverless-app-polling-concept.png)
+
 The application’s current architecture reports stock information by fetching changes from the server based on a timer. This type of design is accompanied by some significant drawbacks.
 
 As the application scales, the amount of data exchanged between the client and server will become a problem. Each HTTP request header includes hundreds of bytes of data along with the session's cookie. All this overhead, especially when under heavy load, creates wasted resources and unnecessarily taxes the server.
