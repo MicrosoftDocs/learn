@@ -32,8 +32,6 @@ This script generates the resource group and account names used in this lesson. 
 
 The following script uses these variables to create the Azure resources required for this lesson.
 
-TODO: Only general purpose V2 storage accounts support static website hosting
-
 ```bash
 az cosmosdb create  \
   --name $COSMOSDB_ACCOUNT_NAME \
