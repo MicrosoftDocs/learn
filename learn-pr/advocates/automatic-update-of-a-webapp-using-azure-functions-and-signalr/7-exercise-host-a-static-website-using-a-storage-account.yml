@@ -10,6 +10,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Use a storage account to host a static website
+interactive: azure-portal
+azureSandbox: true
 durationInMinutes: 1
 content: |
   [!include[](includes/7-exercise-host-a-static-website-using-a-storage-account.md)]

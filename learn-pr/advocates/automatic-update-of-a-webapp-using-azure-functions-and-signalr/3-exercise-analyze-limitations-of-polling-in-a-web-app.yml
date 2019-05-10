@@ -10,6 +10,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Analyze the limitations of a polling-based web app
-durationInMinutes: 1
+interactive: bash
+azureSandbox: true
+durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-analyze-limitations-of-polling-in-a-web-app.md)]
