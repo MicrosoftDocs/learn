@@ -82,7 +82,7 @@ module.exports = async function (context, req, stocks) {
 The client uses Vue.js for to compose the UI and the axios library to handle requests to the Azure Function.
 
 > [!NOTE]
-> The web client is written in Vue.js, but this is not a requirement or even a recommendation. Other applications using the same underlying application architecture could use any UI framework or even be implemented using a vanilla JavaScript.
+> The web client is written in Vue.js, but this is not a requirement or even a recommendation. Other applications using the same underlying application architecture could use any UI framework or even be implemented using vanilla JavaScript.
 
 The logic implemented on the page includes the use of a timer to send a request to the server every five seconds. The response returns an array of stocks which are then displayed to the user.
 
@@ -118,6 +118,7 @@ const app = new Vue({
         }
     },
     created() {
+        this.update();
         this.startPoll();
     }
 });

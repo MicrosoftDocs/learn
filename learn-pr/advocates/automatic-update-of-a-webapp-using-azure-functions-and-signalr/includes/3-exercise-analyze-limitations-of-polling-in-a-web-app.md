@@ -1,4 +1,4 @@
-Before you begin, make sure you have the following software installed on our machine:
+Before you begin, make sure you have the following software installed on your machine:
 
 - [Node.js](https://nodejs.org/download/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
@@ -60,8 +60,8 @@ Run the following command to get the connection string for your storage account:
 
 ```shell
 az storage account show-connection-string \
-  -g $RESOURCE_GROUP_NAME \
-  -n $STORAGE_ACCOUNT_NAME \
+  -name $STORAGE_ACCOUNT_NAME \
+  -resource-group $RESOURCE_GROUP_NAME \
   --query "connectionString" -o tsv
 ```
 
@@ -78,7 +78,7 @@ az cosmosdb list-connection-strings  \
 
 Replace the token `<COSMOSDB_CONNECTION_STRING>` with the Cosmos DB connection string.
 
-You also need the Cosmos DB master key. Run this command to list the account's keys:
+You also need the Cosmos DB master key. Run this command to list the account's master key:
 
 ```shell
 az cosmosdb list-keys \
@@ -111,14 +111,14 @@ npm install
 > [!NOTE]
 > If there is a problem during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
 
-Press F5 to start debugging the functions.
+Press F5 to start debugging the function app.
 
-Next, to run the web application on your machine, open a terminal and run the `npm start` command:
+Next, to run the web application on your machine, open a Visual Studio Code's integrated terminal and run the command `npm start`.
 
 ```bash
 npm start
 ```
 
-You can now navigate to [localhost:8080](http://localhost:8080) to see the application working in the browser. After five seconds you should see something similar to the following screenshot.
+You can now navigate to *http://localhost:8080* to see the application in the browser.
 
 ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)

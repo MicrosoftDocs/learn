@@ -12,12 +12,12 @@ In contrast to polling, a more favorable design features persistent connections 
 
 **SignalR** is an abstraction for a series of technologies that allows your app to enjoy two-way communication between the client and server. The key benefit of the abstraction provided by SignalR is the way it supports "transport" fallbacks.
 
-A transport is method off communicating between the client and server. A SignalR connection starts with a standard request and then switches to the most appropriate communication method (transport) depending on APIs are supported on the client.
+A transport is method of communicating between the client and server. A SignalR connection starts with a standard request and then switches to the most appropriate communication method (transport) depending on APIs that are supported on the client.
 
-For modern clients that support HTML 5, the WebSockets API is used as the transport. If the client doesn't support WebSockets, then it falls back to Server Sent Events (also known as EventSource). For older clients Ajax long polling or Forever Frame (IE only) are used to mimic two-way communication.
+For clients that support HTML 5, the WebSockets API is used as the transport. If the client doesn't support WebSockets, then SignalR falls back to Server Sent Events (also known as EventSource). For older clients, Ajax long polling or Forever Frame (IE only) are used to mimic two-way communication.
 
-The abstraction layer offered by SignalR provides two benefits to your application. The first is that as the web evolves and an API superior to WebSockets becomes available, your application doesn't need to change. You could update to a version of SignalR that supports the new API and your application code won't need an overhaul.
+The abstraction layer offered by SignalR provides two benefits to your application. The first is that as the web evolves and APIs superior to WebSockets become available, your application doesn't need to change. You could update to a version of SignalR that supports any new APIs and your application code won't need an overhaul.
 
-The second benefit is that the SignalR abstracts allows your application to gracefully degrade depending on  supported technologies of the client.
+The second benefit of SignalR'a abstraction is that it allows your application to gracefully degrade depending on supported technologies of the client. If it doesn't support WebSockets, then Server Sent Events are used. If the client can't handle Server Sent Events, then it uses Ajax long polling, etc.
 
 By leveraging SignalR in this application, your Azure Function can broadcast information from the Cosmos DB change feed to connected clients.
