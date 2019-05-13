@@ -126,4 +126,18 @@ const app = new Vue({
 
 The `update` method is called every five seconds once polling is started by the `startPoll` method. Inside the `update` method, a GET request is sent to the `getStocks` function and the result is set to `app.stocks` which updates the UI.
 
+## Supporting CORS
+
+In the *local.settings.json* file, the `Host` section includes the following settings.
+
+```json
+  "Host" : {
+    "LocalHttpPort": 7071,
+    "CORS": "http://localhost:8080",
+    "CORSCredentials": true
+  }
+```
+
+This configuration tells the locally-running function app that a web application running at *localhost:8080* is allowed to make requests to functions running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookie from the request.
+
 Now that you're more familiar with the starting point of the application, it's time to get the application running on your machine.
