@@ -85,7 +85,7 @@ You use the endpoint value to set up CORS settings for the function app in the n
 7. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You should be able to paste this value in from your clipboard.
 8. Click **Save** to persist the CORS settings.
 
-![Enable CORS support for Azure Functions app](../media/serverless-app-functions-cors.png)
+![Enable CORS support for Azure Functions app](../media/serverless-app-function-cors.png)
 
 ## Deploy the web application to Azure Storage
 
