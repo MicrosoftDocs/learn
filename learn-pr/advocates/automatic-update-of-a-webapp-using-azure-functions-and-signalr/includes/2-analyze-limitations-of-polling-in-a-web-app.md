@@ -138,6 +138,6 @@ In the *local.settings.json* file, the `Host` section includes the following set
   }
 ```
 
-This configuration tells the locally-running function app that a web application running at *localhost:8080* is allowed to make requests to functions running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookie from the request.
+This configuration tells the locally-running function app that a web application running at *localhost:8080* is allowed to make requests to functions running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookies from the request.
 
 Now that you're more familiar with the starting point of the application, it's time to get the application running on your machine.
