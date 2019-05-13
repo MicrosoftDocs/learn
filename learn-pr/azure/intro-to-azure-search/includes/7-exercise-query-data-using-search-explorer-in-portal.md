@@ -8,13 +8,11 @@ In the unit, you'll use Azure Search explorer and some simple syntax to search f
 
 1. If you aren't still signed into the Azure portal, sign in [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    ![Screenshot of the Azure portal, showing search results](../media/3-exercise-screenshot-3.png)
-
-1. Search **northwindfitness** at the top of the dashboard, then select the Search service you created. <!-- REVIEW I changed this in a couple places but not here and might have missed some - please have them access this via All Resources, and don't assume they named it northwindfitness -->
+1. In the **All Resources** view of the portal, select the Azure Search resource you created to navigate to its overview page.
 
     ![Screenshot of the Azure portal, showing the Search service overview page](../media/5-exercise-screenshot-7.png)
 
-1. On the **northwindfitness** Search service overview page, select **Search Explorer**.
+1. On the Search service overview page, select **Search Explorer**.
 
     ![Screenshot of the Azure portal, showing the Search explorer](../media/7-exercise-screenshot-1.png)
 
@@ -24,7 +22,10 @@ Using the Search explorer you'll build up complex search queries that you can pa
 
 1. Enter `yoga` in the **Query string**, then select **Search**.
 
-1. The search index should return: <!-- REVIEW What is this calling out? What should the user be noticing about the results?-->
+1. The search index should return a JSON document containing your search results. The matching documents are contained in the `value` array. Each item in the array is the data related to the video in the catalog.
+
+    > [!NOTE]
+    > See how the results are sorted by `@search.score`. This is the score given by the Search service to how closely the results match the given query. `Yoga Begginners` is a better match because it begins with the search term.
 
     ```json
     {
@@ -66,7 +67,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
     > [!IMPORTANT]
     > Note that all the exercise classes are returned. That is because by default the search is for any of the terms, in the above query all of the documents without hatha (the `-hatha` term) will be matched. Search terms are matched as **OR** by default, to ensure all the terms in the query are matched, i.e. **AND**, you can switch the search mode of the index to use all the terms instead of any of them.
 
-1. Change the query to `yoga -hatha&searchMode=all`, then select **Search**. This will ensure that both yoga and NOT hatha are in the title of the videos, returning:
+1. Change the query to `yoga -hatha&searchMode=all`, then select **Search**. This will ensure that both yoga and **NOT** hatha are in the title of the videos, returning:
 
     ```json
     {
@@ -94,17 +95,17 @@ Using the Search explorer you'll build up complex search queries that you can pa
     }
     ```
 
-1. Using the `+` operator, can you change the previous query to return the same results above? <!-- REVIEW I like this concept, but we currently aren't structuring exercises this way today. Please direct the user what to do. -->
+1. Using the `+` operator, can you change the previous query to return the same results above? Enter `yoga + -hatha` in the **Query string**, then select **Search**.
 
 1. Search for all the videos that have boxing or cardio in the title. Enter `(boxing | boxercise) cardio` in the **Query string**, then select **Search**.
 
-1. Using the suffix operator `*` can you change the query to give the same results?
+1. Using the suffix operator `*` can you change the query to give the same results? Enter `box* cardio` in the **Query string**, then select **Search**.
 
 ## Top three results
 
 1. Write a query to return the top three most difficult exercise videos. Enter `*&$top=3&$orderby=Difficulty desc` in the **Query string**, then select **Search**.
 
-1. Can you enhance the above query to simulate paging through all the exercise videos, using five results per page, to return the third page?
+1. Can you enhance the above query to simulate paging through all the exercise videos, using five results per page, to return the third page? Enter `*&$top=5&$skip=10` in the **Query string**, then select **Search**.
 
 ## Filtering a query
 
@@ -112,11 +113,9 @@ Using the Search explorer you'll build up complex search queries that you can pa
 
 ## Faceting
 
-<!-- REVIEW Facet/faceting has not been defined yet -->
+1. The users need a way to quickly select videos of a specific difficulty. The web team would like to offer faceted browsing on the difficulty of exercises in a video. Enter `*&facet=Difficulty` in the **Query string**, then select **Search**.
 
-1. The users need a way to quickly select videos of a specific difficulty. The web team would like to offer faceted browsing of the videos. Enter `*&facet=Difficulty` in the **Query string**, then select **Search**.
-
-1. This returns all the videos in the search results, but also includes a facets array: <!-- REVIEW What would you use this for? -->
+1. This returns all the videos in the search results, but also includes a facets array:
 
     ```JSON
     "@search.facets": {
@@ -144,11 +143,3 @@ Using the Search explorer you'll build up complex search queries that you can pa
         ]
     },
     ```
-
-### Missing Answers
-
-Below are the answers to the followup questions listed above. 
-
-1. `yoga + -hatha`
-1. `box* cardio`
-1. `*&$top=5&$skip=10`

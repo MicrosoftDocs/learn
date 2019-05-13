@@ -13,7 +13,6 @@ In the unit, you'll create the Azure Search Service.
 
 1. From the portal, select **Create a resource** from the upper left-hand corner. Select **Web**, then select **Azure Search**.
 
-    <!-- REVIEW Please scale this screenshot down, it renders very large compared to other images -->
    ![Screenshot of the Azure portal, New Search Service pane](../media/3-exercise-screenshot-2.png)
 
 1. On the **New Search Service** page, fill out the form using this information:

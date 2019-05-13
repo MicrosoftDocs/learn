@@ -48,8 +48,6 @@ Identify the subtasks of *Introduction to Azure Search*
 
     You work for a fitness startup that publishes exercise videos. You're just getting started establishing your online presence and want to provide a searchable index of your video catalog. You have a number of videos in the catalog and want to search across a number of different properties, such as title, difficulty, length, and publication date.
 
-<!-- REVIEW - There is too much covered in this single module, so I am changing the outline to reflect a new structure. basically, I am taking out any integration of the search with an app. That can be covered in a subsequent module. This module should focus on introducing Azure Search, and the right location for that is the portal -->
-
 1. **What is Azure Search?**
 
     List the content that will enable the learner to *Create an index in Azure Search*:
@@ -120,30 +118,20 @@ Identify the subtasks of *Introduction to Azure Search*
 
 1. **Exercise - Query your data using the Search explorer in the Azure portal**
 
-    <!-- REVIEW - Purpose of this exercise is to get the use familiar with querying their own data using their own index -->
-
-    Show the learner how to:
-         -  Do a basic search for a term
+    - Show the learner how to:
+         - Do a basic search for a term
          - Return top N results
          - Filter the query
          - Facet the query
          - Highlight search results
 
-    <!-- REVIEW - You can find details at https://docs.microsoft.com/en-us/azure/search/search-get-started-portal
-    DO NOT copy the tutorial verbatim - we're using  our own fitness data set, for example. The queries should reflect that fact. -->
-
 1. **Knowledge check**
 
     What types of questions will test *Create an Azure Search index*?
 
-    <!-- REVIEW - Pick 3 questions for the module and feel free to create new questions as you are writing the actual content -->
-
-    - Which data structure is supported by Azure Search?
     - What is a suggester in Azure Search?
-    - Why are analyzers important in Azure Search?
     - Which of the following data sources can be used as an input data source?
-    - What condition would result in an index rebuild?
-    - What is the maximum payload size for a bulk upload operation?
+    - Which data structure is supported by Azure Search?
 
 1. **Summary**
 
