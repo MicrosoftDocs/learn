@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure SQL Database
   - Basic knowledge of Azure PowerShell
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/backup-restore-azure-sql.svg
 levels:
 - beginner
 roles:
