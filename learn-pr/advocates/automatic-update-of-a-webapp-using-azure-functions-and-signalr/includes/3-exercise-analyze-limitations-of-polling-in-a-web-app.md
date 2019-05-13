@@ -60,8 +60,8 @@ Run the following command to get the connection string for your storage account:
 
 ```shell
 az storage account show-connection-string \
-  -name $STORAGE_ACCOUNT_NAME \
-  -resource-group $RESOURCE_GROUP_NAME \
+  -n $STORAGE_ACCOUNT_NAME \
+  -r $RESOURCE_GROUP_NAME \
   --query "connectionString" -o tsv
 ```
 
