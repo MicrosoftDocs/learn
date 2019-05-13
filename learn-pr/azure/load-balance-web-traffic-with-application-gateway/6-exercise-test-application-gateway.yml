@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.load-balance-web-traffic-with-application-gateway.6-exercise-test-application-gateway
+metadata:
+  title: Exercise - Test your Application Gateway
+  description: Connect to the web app through Application Gateway
+  ms.date: 05/02/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Test your Application Gateway
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-test-application-gateway.md)]
