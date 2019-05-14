@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.intro-to-azure-dsvm.type-of-azure-dsvm
+title: Types of Azure Data Science Virtual Machines
+metadata:
+  title: Types of Azure Data Science Virtual Machines
+  description: Types of Azure Data Science Virtual Machines
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-type-of-azure-dsvm.md)]

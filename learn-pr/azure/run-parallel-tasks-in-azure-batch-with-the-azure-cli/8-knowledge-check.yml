@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Knowledge check
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Once an Azure Batch account has been created, what is the next step to take in the workflow of setting up tasks to run on Azure Batch?"
+    choices:
+    - content: "Sign in to the Batch account"
+      isCorrect: true
+      explanation: "Signing in to the created Batch account is a prerequisite before any other tasks can be performed."
+    - content: "Create a pool of virtual nodes"
+      isCorrect: false
+      explanation: "This action is impossible without logging in first."
+    - content: "Create a Batch job"
+      isCorrect: false
+      explanation: "This action is impossible without logging in first."
+  - content: "Which component of Azure Batch allows tasks to be logically grouped together and have settings in common configured?"
+    choices:
+    - content: "Azure Batch account"
+      isCorrect: false
+      explanation: "A Batch account cannot be a container for Batch tasks."
+    - content: "Azure Batch pool"
+      isCorrect: false
+      explanation: "A Batch pool cannot be a container for Batch tasks."
+    - content: "Azure Batch job"
+      isCorrect: true
+      explanation: "An Azure Batch job allows tasks to be logically grouped together and have settings in common configured."

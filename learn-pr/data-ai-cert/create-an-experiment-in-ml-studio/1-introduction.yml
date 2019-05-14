@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-an-experiment-in-ml-studio.introduction
-title: Introduction
+title: Introduction 
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Introduction 
+  description: Introduction to Azure Machine Learning Studio
   ms.date: 12/12/2018
   author: gerryaobrien
   ms.author: gerryo

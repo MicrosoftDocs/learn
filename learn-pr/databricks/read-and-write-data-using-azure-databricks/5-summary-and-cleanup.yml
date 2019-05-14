@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.read-and-write-data-using-azure-databricks.5-summary-and-cleanup
-title: Cleanup the environment
+title: Clean up the environment
 metadata:
-  title: Cleanup the environment
-  description: Cleanup and terminate Azure resources used by this lab.
+  title: Clean up the environment
+  description: Clean up and remove Azure resources used by this lab.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

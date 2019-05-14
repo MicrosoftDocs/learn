@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-manage-apis-with-azure-api-management.8-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 05/02/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

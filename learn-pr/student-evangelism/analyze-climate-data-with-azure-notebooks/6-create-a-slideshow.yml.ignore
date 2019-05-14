@@ -1,0 +1,16 @@
+# Creating slideshows in Azure Notebooks is currently broken. See https://github.com/Microsoft/AzureNotebooks/issues/445
+## YamlMime:ModuleUnit
+uid: learn.analyze-climate-data-with-sklearn.6-create-a-slideshow
+title: Create a Slideshow
+metadata:
+  title: Create a Slideshow
+  description: Create a Slideshow
+  ms.date: 02/25/2018
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-create-a-slideshow.md)]

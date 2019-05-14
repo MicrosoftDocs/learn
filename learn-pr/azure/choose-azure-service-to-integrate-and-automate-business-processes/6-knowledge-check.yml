@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your Knowledge
+  questions:
+  - content: "In the television advert company, which technology would you use for the advert review process?"
+    choices:
+    - content: "Microsoft Flow"
+      isCorrect: true
+      explanation: "Implement the workflow using Microsoft Flow because this allows the creative team, who are not developers, to manage the flow."
+    - content: "Azure Logic Apps"
+      isCorrect: false
+      explanation: "Azure Logic Apps don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Flow."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Azure Functions don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Flow."
+    - content: "Azure App Service WebJobs" 
+      isCorrect: false
+      explanation: "Azure WebJobs don't permit the creative team, who are not developers, to manage the process. Instead use Microsoft Flow."
+  - content: "In the television advert company, which technology would you use for the feedback collection process?"
+    choices: 
+    - content: "Microsoft Flow"
+      isCorrect: false
+      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+    - content: "Azure Logic Apps"
+      isCorrect: false
+      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+    - content: "Azure App Service WebJobs" 
+      isCorrect: true
+      explanation: "WebJobs are the only technology that permits developers to control retry policies."
+  - content: "In the merged camera company, which technology would you use for the lens quality control procedure?"
+    choices: 
+    - content: "Microsoft Flow"
+      isCorrect: false
+      explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+    - content: "Azure Logic Apps"
+      isCorrect: true
+      explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+    - content: "Azure App Service WebJobs" 
+      isCorrect: false
+      explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+  - content: "In the merged camera company, which technology would you use for the ordering and dispatch procedure?"
+    choices: 
+    - content: "Microsoft Flow"
+      isCorrect: false
+      explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+    - content: "Azure Logic Apps"
+      isCorrect: true
+      explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
+    - content: "Azure App Service WebJobs" 
+      isCorrect: false
+      explanation: "Its not necessary to write a WebJob as part of the existing Azure App Service application, because you want to manage the procedure code separately. Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers."
