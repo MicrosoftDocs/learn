@@ -1,6 +1,4 @@
-In the past, companies needed to acquire physical premises and infrastructure to start their business. There was a substantial up-front cost in hardware and infrastructure to start or grow a business. Cloud computing has changed that requirement. 
-
-Today, the cloud can be used to get up and running quickly. You can start providing services to customers without significant upfront costs or equipment setup time.
+In the past, companies needed to acquire physical premises and infrastructure to start their business. There was a substantial up-front cost in hardware and infrastructure to start or grow a business. Cloud computing provides services to customers without significant upfront costs or equipment setup time.
 
 These two approaches to investment are referred to as:
 
@@ -26,7 +24,7 @@ Networking costs include all on-premises hardware components, including cabling,
 
 ### Backup and archive costs
 
-This is the cost to back up, copy, or archive data to the cloud or datacenter. Options might include backing up to or from the cloud. There’s an upfront cost for the hardware and additional costs for backup maintenance and consumables like tapes.
+This is the cost to back up, copy, or archive data. Options might include setting up a backup to or from the cloud. There’s an upfront cost for the hardware and additional costs for backup maintenance and consumables like tapes.
 
 ### Organization continuity and disaster recovery costs
 
@@ -42,7 +40,7 @@ Based on the technology used, you’ll need technical expertise and workforce to
 
 ## OpEx cloud computing costs
 
-With cloud computing, many of the costs associated with an on-premises datacenter are shifted to the cloud service provider. Instead of thinking about physical hardware and datacenter costs, cloud computing has a different set of costs. For accounting purposes, all these costs are operational expenses:
+With cloud computing, many of the costs associated with an on-premises datacenter are shifted to the service provider. Instead of thinking about physical hardware and datacenter costs, cloud computing has a different set of costs. For accounting purposes, all these costs are operational expenses:
 
 ### Leasing a cloud-based server
 
@@ -50,11 +48,11 @@ If you lease a server or use a cloud-based server, the cost is typically based o
 
 ### Leasing software and customized features
 
-Using a pay-per-use model requires actively managing your subscriptions to ensure users do not misuse the cloud, and that provisioned accounts are being utilized and not wasted. As soon as the provider provisions resources, billing starts. It is your responsibility to de-provision the resources when they aren't in use so that you can minimize costs.
+Using a pay-per-use model requires actively managing your subscriptions to ensure users do not misuse the services, and that provisioned accounts are being utilized and not wasted. As soon as the provider provisions resources, billing starts. It is your responsibility to de-provision the resources when they aren't in use so that you can minimize costs.
 
 ### Scaling charges based on usage/demand instead of fixed hardware or capacity. 
 
-Cloud computing can bill in various ways, such as the number of users or CPU usage time. However, billing categories can also include allocated RAM, I/O operations per second (IOPS), and storage space. If you're connecting a datacenter to the cloud or connecting two clouds together, identify how much data needs to be transferred so that you can determine the bandwidth needed. Don’t forget to plan for backup traffic to or from the cloud, the datacenter, and the cloud for data recovery purposes.
+Cloud computing can bill in various ways, such as the number of users or CPU usage time. However, billing categories can also include allocated RAM, I/O operations per second (IOPS), and storage space. Plan for backup traffic and data recovery traffic to determine the bandwidth needed.
 
 ### Billing at the user or organization level.
 

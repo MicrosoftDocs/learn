@@ -1,8 +1,6 @@
-Multiple documents in your database frequently need to be updated at the same time. This unit discusses how to create, register, and run stored procedures from your .NET console application.
+Multiple documents in your database frequently need to be updated at the same time, and stored procedures are a useful method of automating tasks for those types of situations. This unit discusses how to create, register, and run stored procedures from your .NET console application.
 
 ## Create a stored procedure in your app
-
-In this stored procedure, the **OrderId**, which contains a list of all the items in the order, is used to calculate an order total. The order total is calculated from the sum of the items in the order, less any dividends (credits) the customer has, and takes any coupon codes into account.
 
 1. In Visual Studio Code, in the **Azure: Cosmos DB** tab, expand your Azure Cosmos DB account > **Users** > **WebCustomers** and then right-click **Stored Procedures** and then click **Create Stored Procedure**.
 

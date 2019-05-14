@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.introducing-batch-explorer
+metadata:
+  title: Visualize batch jobs with the Batch Explorer
+  description: Visualize batch jobs with the Batch Explorer
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Visualize batch jobs with the Batch Explorer
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-introducing-batch-explorer.md)]
