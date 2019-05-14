@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.distribute-load-with-traffic-manager.4-performance-routing
+metadata:
+  title: Optimize applications across regions by using performance routing
+  description: Learn how to route traffic to the best endpoint for performance
+  ms.date: 04/15/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Optimize applications across regions by using performance routing
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-performance-routing.md)]

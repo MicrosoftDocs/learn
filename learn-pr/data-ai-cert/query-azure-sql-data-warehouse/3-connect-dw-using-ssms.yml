@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.query-azure-sql-data-warehouse.connect-dw-using-ssms
-title: Exercise - connect to an Azure Data Warehouse using SQL Server Management Studio
+title: Exercise - Connect to an Azure SQL data warehouse by using SQL Server Management Studio
 metadata:
-  title: Exercise - connect to an Azure Data Warehouse using SQL Server Management Studio - Learn
-  description: Exercise - connect to an Azure Data Warehouse using SQL Server Management Studio - Learn
+  title: Exercise - Connect to an Azure SQL data warehouse by using SQL Server Management Studio
+  description: Exercise - Connect to an Azure SQL data warehouse by using SQL Server Management Studio
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
