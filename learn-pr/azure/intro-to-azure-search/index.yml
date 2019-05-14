@@ -19,7 +19,7 @@ abstract: |
   - Query the Azure Search index
 prerequisites: None
 cardDescription: Use Azure Search to make your data searchable.
-iconUrl: /learn/achievements/learn.azure-introduction-to-azure-search.svg
+iconUrl: /learn/achievements/azure-introduction-to-azure-search.svg
 levels: 
 - beginner
 roles: 
