@@ -1,20 +1,14 @@
 ![Polling-based web application](../media/serverless-app-polling-concept.png)
 
-The application’s current architecture reports stock information by fetching changes from the server based on a timer. This type of design is accompanied by some significant drawbacks.
+The application’s current architecture reports stock information by fetching changes from the server based on a timer. This design is often called a polling-based design.  
 
-As the application scales, the amount of data exchanged between the client and server will become a problem. Each HTTP request header includes hundreds of bytes of data along with the session's cookie. All this overhead, especially when under heavy load, creates wasted resources and unnecessarily taxes the server.
-
-Beyond bloated headers, timer-based polling is inefficient. In the prototype, the client application contacts the server regardless of whether or not there are any changes to the underlying data. Also, once data is returned from the server the entire list of stocks is updated on the web page - again - whether or not there are any changes in the data.
-
-## Application design
-
-Before you begin making changes to the application, first take a moment to get acquainted with the initial design of the application.
+Before we analyze the limitations of this approach, let's take a look at the current app architecture. The solution is composed of a server component for storing stock information and client component to show this data to users in their browser. 
 
 ### Server
 
-On the server, a Cosmos DB database is used for persistence. When called, an Azure Function configured with Cosmos DB bindings returns the database content.
+The stock price information is stored on the server in a Cosmos DB database. When triggered, an Azure Function configured with Cosmos DB bindings returns the database content.
 
-The function named `getStocks` is responsible for returning all the stocks in the database. Connection to the Cosmos DB database is achieved through bindings which are configured in the *function.json* file:
+The function named `getStocks` is responsible for reading the stock information from the database. Connection to the Cosmos DB database is achieved through bindings, which are configured in the *function.json* file, as shown in the following snippet.
 
 ```json
 {
@@ -43,7 +37,7 @@ The function named `getStocks` is responsible for returning all the stocks in th
 }
 ```
 
-The first binding (`httpTrigger`) in the array defines how the function is called.
+The first binding (`httpTrigger`) in the array defines how the function is triggered.
 
 | The configuration...                                        | via the property:        |
 | ----------------------------------------------------------- | ------------------------ |
@@ -59,17 +53,17 @@ The second binding (`http`) defines what is returned from the function.
 | allows the function to return an HTTP response               | `type`, `direction` |
 | exposes the response context through a parameter named `res` | `name`              |
 
-The third binding (`cosmosDB`) establishes a connection to Cosmos DB. The configuration:
+The third binding (`cosmosDB`) establishes a connection to Cosmos DB. 
 
 | The configuration...                                         | via the property:         |
 | ------------------------------------------------------------ | ------------------------- |
 | makes Cosmos DB data available as the function is called     | `type`, `direction`       |
 | exposes the data to the function through a parameter named `stocks` | `name`                    |
 | connects to the Cosmos DB data with a connection string      | `ConnectionStringSetting` |
-| points to a the `stocksdb` database                          | `databaseName`            |
+| points to the `stocksdb` database                          | `databaseName`            |
 | points to the `stocks` data collection                       | `collectionName`          |
 
-With these bindings, GET requests made to `getStocks` has data available through the `stocks` parameter. In fact, this configuration makes the code for the function trivial.
+With these bindings, GET requests to `getStocks` make data available through the `stocks` parameter. As you can see in the following code snippet, the function code to retrieve stock information is trivial thanks to the power of Azure Functions bindings. 
 
 ```javascript
 module.exports = async function (context, req, stocks) {
@@ -79,12 +73,9 @@ module.exports = async function (context, req, stocks) {
 
 ### Client
 
-The client uses Vue.js for to compose the UI and the axios library to handle requests to the Azure Function.
-
-> [!NOTE]
-> The web client is written in Vue.js, but this is not a requirement or even a recommendation. Other applications using the same underlying application architecture could use any UI framework or even be implemented using vanilla JavaScript.
-
-The logic implemented on the page includes the use of a timer to send a request to the server every five seconds. The response returns an array of stocks which are then displayed to the user.
+The sample client uses Vue.js to compose the UI and the axios HTTP client to handle requests to the Azure Function.
+<!-- REVIEW I removed the note about Vue.js because is was too apologetic and unnecessary -->
+The logic implemented on the page includes the use of a timer to send a request to the server every five seconds. The response returns an array of stocks, which are then displayed to the user.
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
@@ -126,7 +117,10 @@ const app = new Vue({
 
 The `update` method is called every five seconds once polling is started by the `startPoll` method. Inside the `update` method, a GET request is sent to the `getStocks` function and the result is set to `app.stocks` which updates the UI.
 
+The server and client code is relatively straightforward but, as we'll see, this simplicity brings with it some limitations. 
+
 ## Supporting CORS
+<!-- REVIEW - This section is very specific to running the app locally, whereas the analysis and setup aren't. I would consider placing this closer to the actual running of the app locally -->
 
 In the *local.settings.json* file, the `Host` section includes the following settings.
 
@@ -140,4 +134,18 @@ In the *local.settings.json* file, the `Host` section includes the following set
 
 This configuration tells the locally-running function app that a web application running at *localhost:8080* is allowed to make requests to functions running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookies from the request.
 
+## Analysis of current solution
+Let's think about some of the drawbacks of this timer-based polling approach.
+
+Timer-based polling is inefficient. In the prototype, the client application contacts the server regardless of whether or not there are any changes to the underlying data. Also, once data is returned from the server the entire list of stocks is updated on the web page - again - whether or not there are any changes in the data.
+
+Selecting the best polling interval for your scenario is also a challenging. Polling forces you to make a choice between how much each call to the backend costs and how quickly you want your app to respond to new data. There is often a delay between when new data becomes available and when it is detected by the app. The following illustration shows the issue.
+
+![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media/polling-example.png)
+
+In the worst case, the potential delay for detecting new data is equal to the polling interval. So why not use a smaller interval? 
+
+As the application scales, the amount of data exchanged between the client and server will become a problem. Each HTTP request header includes hundreds of bytes of data along with the session's cookie. All this overhead, especially when under heavy load, creates wasted resources and unnecessarily taxes the server.
+
 Now that you're more familiar with the starting point of the application, it's time to get the application running on your machine.
+<!-- REVIEW I'm still considering whether we install and run the app before this analysis. Let's discuss. -->

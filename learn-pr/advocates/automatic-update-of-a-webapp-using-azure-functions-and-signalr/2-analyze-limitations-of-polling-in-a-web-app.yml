@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Analyze the limitations of a polling-based web app
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/2-analyze-limitations-of-polling-in-a-web-app.md)]

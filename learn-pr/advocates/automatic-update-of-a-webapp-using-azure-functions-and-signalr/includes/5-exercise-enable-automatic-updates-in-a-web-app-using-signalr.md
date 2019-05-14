@@ -5,8 +5,8 @@ In order to update the application to support the new functionality, you need to
 The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **negotiate** (by convention) to connect to the service.
 
 1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
-2. Search for and select the **Azure Functions: Create Function** command.
-3. When prompted, provide the following information.
+1. Search for and select the **Azure Functions: Create Function** command.
+1. When prompted, provide the following information.
 
     | Name                | Value                          |
     | ------------------- | ------------------------------ |
@@ -14,42 +14,43 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     | Name                | negotiate                      |
     | Authorization level | Anonymous                      |
 
-A folder named *negotiate* is now available in your function app. Open *negotiate/index.js* and add the following SignalR binding to the `bindings` array.
+    Refresh the Explorer window in VS Code to see the updates. A folder named *negotiate* is now available in your function app.
+1. Open *negotiate/function.json* and add the following SignalR binding to the `bindings` array.
 
-> [!NOTE]
-> Don't forget to add a comma after the last binding in the array before you paste in the SignalR binding.
+    > [!NOTE]
+    > Don't forget to add a comma after the last binding in the array before you paste in the SignalR binding.
+    
+    ```json
+    {
+        "type": "signalRConnectionInfo",
+        "name": "connectionInfo",
+        "hubName": "stocks",
+        "direction": "in",
+        "connectionStringSetting": "AzureSignalRConnectionString"
+    }
+    ```
 
-```json
-{
-    "type": "signalRConnectionInfo",
-    "name": "connectionInfo",
-    "hubName": "stocks",
-    "direction": "in",
-    "connectionStringSetting": "AzureSignalRConnectionString"
-}
-```
+    This configuration allows the function to return the connection information to the server which is used to identify connected clients.
 
-This configuration allows the function to return the connection information to the server which is used to identify connected clients.
+1. Next, open *negotiate/index.js* and update the function to use the following code.
 
-Next, open *negotiate/index.js* and update the function to use the following code.
+    ```javascript
+    module.exports = async function (context, req, connectionInfo) {
+        context.res.body = connectionInfo;
+    };
+    ```
+    
+    As the function is called, the SignalR connection is returned as the response to the function.
 
-```javascript
-module.exports = async function (context, req, connectionInfo) {
-    context.res.body = connectionInfo;
-};
-```
-
-As the function is called, the SignalR connection is returned as the response to the function.
-
-Now that the function responsible for managing connected clients is implemented, you can create a function responsible for pushing changes to the client.
+Now that the function to return the SignalR connection info is implemented, you can create a function responsible for pushing changes to the client.
 
 ## Detect and broadcast database changes
 
 First, you need to create a new Azure Function that listens for changes in the database. This is possible by using the built-in Cosmos DB bindings.
 
 1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
-2. Search for and select the **Azure Functions: Create Function** command.
-3. When prompted, provide the following information.
+1. Search for and select the **Azure Functions: Create Function** command.
+1. When prompted, provide the following information.
 
     | Name                                   | Value                          |
     | -------------------------------------- | ------------------------------ |
@@ -61,7 +62,11 @@ First, you need to create a new Azure Function that listens for changes in the d
     | Collection name for leases             | leases                         |
     | Create lease collection if not exists  | true                           |
 
-Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells the function to wait only a half second (500 milliseconds) after recognizing data changes before contacting connected clients.
+    Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code. 
+
+1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells the function to wait only a half second (500 milliseconds) after recognizing data changes before contacting connected clients.
+1. 
+1. <!-- REVIEW According to the docs, the feedPollDelay means "Gets or sets the delay in between polling a partition for new changes on the feed, after all current changes are drained" That doesn't seem to have anything to do with contacting connected clients. I also still am not sure there is anything different between this CosmosDB binding the one from the preceding exercise -->
 
 The Cosmos DB binding for your function should now look like the following code.
 
@@ -205,6 +210,9 @@ connect();
 
 The changes you just made accomplished two goals: removed all polling logic from the client and added handlers to listen for messages coming from the server.
 
+
+<!-- REVIEW - Consider moving this explanation of the URL switcher to the first exercise, since it's used there too -->
+
 When examining the script in sections, the script begins with a helper function that returns the base URL of the script.
 
 ```javascript
@@ -303,6 +311,8 @@ You can now navigate to *http://localhost:8080* to see the application working i
 Now you can make change to the application's data and observe how to the data is automatically updated. Since the update to the browser happens nearly immediately, consider having Visual Studio Code open one side of your screen and the running application on the other. This way you can see the UI update right after you issue the command to update the database.
 
 Return to Visual Studio Code and enter the the following command in the integrated terminal and watch as the application automatically updates.
+
+<!-- REVIEW We should use npm run update in the preceding exercise to show an update happening due to polling. To see the full effect of this update, consider having the database setup with two or three stock documents, but only update one. -->
 
 ```bash
 npm run update

@@ -74,8 +74,8 @@ Run the following command to get the connection string for your storage account:
 
 ```shell
 az storage account show-connection-string \
-  -n $STORAGE_ACCOUNT_NAME \
-  -r $RESOURCE_GROUP_NAME \
+  --name $STORAGE_ACCOUNT_NAME \
+  --resource-group $RESOURCE_GROUP_NAME \
   --query "connectionString" -o tsv
 ```
 
@@ -124,7 +124,7 @@ npm install
 
 > [!NOTE]
 > If there is a problem during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
-
+<!-- REVIEW - You MUST be in the start folder in order to run the function correctly -->
 Press F5 to start debugging the function app.
 
 Next, to run the web application on your machine, open a Visual Studio Code's integrated terminal and run the command `npm start`.
@@ -136,3 +136,6 @@ npm start
 You can now navigate to *http://localhost:8080* to see the application in the browser.
 
 ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)
+
+
+<!-- REVIEW - I would add in an instruction here to tell the learner how to update the  ABC stock price or add another one to the database, so we can see an update happening. I might be tempted to increase the polling delay so we can really see how polling has the potential to delay updates reaching the client -->

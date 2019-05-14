@@ -12,6 +12,6 @@ metadata:
 title: Exercise - Analyze the limitations of a polling-based web app
 interactive: bash
 azureSandbox: true
-durationInMinutes: 8
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-analyze-limitations-of-polling-in-a-web-app.md)]

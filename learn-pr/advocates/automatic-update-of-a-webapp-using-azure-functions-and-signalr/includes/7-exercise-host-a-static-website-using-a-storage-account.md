@@ -49,6 +49,8 @@ If the message box never appears or has dismissed from Visual Studio Code, you c
 
 ## Configure static websites in Azure Storage
 
+<!-- REVIEW - Need to update prerequisites to include Azure Storage extension -->
+
 Use the following steps to configure the Azure Storage account to host a static website.
 
 1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
