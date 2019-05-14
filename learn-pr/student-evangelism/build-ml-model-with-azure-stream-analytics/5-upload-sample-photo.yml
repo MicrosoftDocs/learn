@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.upload-sample-photo
+title: Test IoT hub connectivity
+metadata:
+  title: Test IoT hub connectivity
+  description: Test IoT hub connectivity
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/5-upload-sample-photo.md)]

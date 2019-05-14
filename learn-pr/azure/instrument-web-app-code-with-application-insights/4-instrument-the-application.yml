@@ -3,7 +3,7 @@ uid: learn.instrument-web-app-code-with-application-insights.4-instrument-the-ap
 title: Instrument the application
 metadata:
   title: Instrument the application
-  description: In this unit, you will learn why and how to add custom telemetry code to a web application.
+  description: In this unit, you'll learn why and how to add custom telemetry code to a web application.
   ms.date: 02/27/2019
   author: nickwalkmsft
   ms.author: nickwalk

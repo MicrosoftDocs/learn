@@ -1,12 +1,12 @@
-The application you're building is a cross-platform mobile app that talks to an Azure function to share your location. In this unit, you create the blank mobile app using Visual Studio and install a NuGet package that has an API for getting the user's location.
+The application you're building is a cross-platform mobile app that talks to the Azure Functions to share your location. In this unit, you'll create a blank mobile app using Visual Studio and install a NuGet package that has an API for getting the user's location.
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
+To complete the steps in this unit, you need Xamarin.Forms cross-platform UI toolkit installed in your Visual Studio. If you do not have this already, visit [installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/?tabs=windows).
 
 ## Create the Xamarin.Forms project
 
-1. From Visual Studio, select *File->New->Project...*.
+1. From Visual Studio, select *File > New > Project...*.
 
-1. From the tree on the left-hand side, select *Visual C#->Cross-Platform* and then select *Mobile App (Xamarin.Forms)* from the panel in the center.
+1. From the tree on the left-hand side, select *Visual C# > Cross-Platform* and then select *Mobile App (Xamarin.Forms)* from the panel in the center.
 
 1. Name the solution "ImHere".
 
@@ -26,7 +26,16 @@ The application you're building is a cross-platform mobile app that talks to an 
 
     ![The configure new solution dialog](../media/2-configure-solution-dialog.png)
 
-Visual Studio will create two projects for you - a UWP app called `ImHere.UWP` and a .NET Standard library, `ImHere`. Xamarin.Forms apps are made up of two parts - one or more platform-specific app projects and one (or more) .NET Standard libraries. The platform-specific app projects contain the platform-specific code needed to run an app on the relevant platform. These projects then launch a Xamarin.Forms app that is defined in a cross-platform .NET Standard library. You build your app in cross-platform code and, at runtime, any user interfaces you create are translated into the relevant platform-specific UI components.
+Visual Studio will create two projects for you
+
+   - a UWP app called `ImHere.UWP`
+   - a .NET Standard library, `ImHere`
+
+Xamarin.Forms apps are made up of two parts
+    - one or more platform-specific app projects, and
+    - one (or more) .NET Standard libraries.
+
+The platform-specific app projects contain the platform-specific code needed to run an app on the relevant platform. These projects then launch a Xamarin.Forms app that is defined in a cross-platform .NET Standard library. You build your app in cross-platform code and, at runtime, any user interfaces you create are translated into the relevant platform-specific UI components.
 
 ## Adding Xamarin.Essentials
 
@@ -61,4 +70,4 @@ The UWP, Android, and iOS platforms provide numerous similar capabilities that t
 
 ## Summary
 
-In this unit, you created a new Xamarin.Forms cross-platform mobile app and added the Xamarin.Essentials NuGet package. Next, you learn how to build up the mobile app UI and logic.
+In this unit, you created a new Xamarin.Forms cross-platform mobile app and added the Xamarin.Essentials NuGet package. Next, you'll learn how to build up the mobile app UI and logic.

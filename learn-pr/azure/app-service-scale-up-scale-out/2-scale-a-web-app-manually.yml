@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.app-service-scale-up-scale-out.2-scale-a-web-app-manually
+title: Scale a web app manually
+metadata:
+  title: Scale a web app manually
+  description: Learn how to use the Azure portal to manually scale a web app in and out.
+  ms.date: 04/11/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-scale-a-web-app-manually.md)]
