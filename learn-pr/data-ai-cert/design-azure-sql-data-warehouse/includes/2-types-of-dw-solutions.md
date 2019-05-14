@@ -1,25 +1,27 @@
 There are three common types of data warehouse solutions:
 
-1. **Enterprise Data Warehouse**: An Enterprise Data Warehouse is a centralized data store that provides analytics and decision support services across the whole enterprise. Data flows into the warehouse from multiple transactional systems, relational databases, and other data sources on a periodic basis. The stored data is used for historical and trend analysis reporting. The data warehouse acts as a central repository for many subject areas and contains the "single source of truth."
-1. **Data Mart**: A Data Mart serves the same purpose as a data warehouse but is designed for the needs of a _single team or business unit_ such as sales or human resources. It's smaller and more focused and tends to serve a single subject area.
-1. **Operational Data Store** (ODS): An ODS is used as an interim store to integrate real-time, or near real-time data from multiple sources for additional operations on the data. Since the data is refreshed in real time, it's widely preferred to perform routine activities such as storing the records of employees, or aggregating data from multiple sites for real-time reporting purposes.
+- **Enterprise data warehouse**: An enterprise data warehouse (EDW) is a centralized data store that provides analytics and decision support services across the entire enterprise. Data flows into the warehouse from multiple transactional systems, relational databases, and other data sources on a periodic basis. The stored data is used for historical and trend analysis reporting. The data warehouse acts as a central repository for many subject areas. It contains the "single source of truth."
+- **Data mart**: A data mart serves the same purpose as a data warehouse, but it's designed for the needs of a _single team or business unit_, like sales or human resources. A data mart is smaller and more focused, and it tends to serve a single subject area.
+- **Operational data store**: An operational data store (ODS) is an interim store that's used to integrate real-time or near real-time data from multiple sources for additional operations on the data. Because the data is refreshed in real time, it's widely preferred for performing routine activities like storing the records of employees or aggregating data from multiple sites for real-time reporting.
 
 > [!TIP]
-> A data warehouse is useful to reduce stress on production systems and to reorganize, index, or filter multiple data sources into a single storage area. To accomplish this goal, deliberate thought and design needs to be put into how you organize and structure the data. It's not a dumping ground for tables from various sources without any design put into it!
+> A data warehouse is useful when the goal is to reduce stress on production systems and to reorganize, index, or filter multiple data sources into a single storage area. To accomplish this goal, the organization should deliberately think about and design how it organizes and structures its data. A data warehouse isn't an unstructured dumping ground for tables from various sources.
 
 ## Designing a data warehouse solution
 
-Data warehouse solutions can also be classified by their technical _relational constructs_ and the methodologies used to define them. Two typical architectural approaches are:
+Data warehouse solutions can be classified by their technical _relational constructs_ and the methodologies that are used to define them. There are two typical architectural approaches used to design data warehouses:
 
-### Bottom-Up Architectural Design by Dr. Ralph Kimball
+### Bottom-Up Architectural Design, by Ralph Kimball
 
-This approach is based on the notion of "Connected Data Marts." The Data Warehouse creation starts with building individual Data Marts for departmental subject areas and then connecting them via a "Data Warehouse Bus" using the Conforming Dimensions. The core building blocks of this approach are dependent on the star schema model that provides the Multidimensional OLAP Cube capabilities for data analysis within a relational database and SQL. 
+Bottom-up architectural design is based on _connected data marts_. You start creating your data warehouse by building individual data marts for departmental subject areas. Then, you connect the data marts via a _data warehouse bus_ by using _conforming dimensions_. The core building blocks of this approach are dependent on the star schema model that provides the multidimensional OLAP cube capabilities for data analysis within a relational database and SQL. 
 
-This approach offers the benefit of starting small with independent departmental Data Marts and then connecting them via the DW bus using the conformed dimensions common to each star schema.  This approach allows the gradual buildup of the larger warehouse with relatively smaller investments over a period of time, which provides a quicker path to return on investment (ROI) in the solution.
+The benefit of this approach is that you can start small. You gradually build up the larger data warehouse through relatively smaller investments over a period of time. This option provides a quicker path to return on investment (ROI) in the solution.
 
-### Top-Down Architectural Design by Dr. Bill Inmon 
+### Top-Down Architectural Design, by Bill Inmon 
 
-This approach is about creating one single integrated "Normalized Warehouse", which means the internal relational constructs follow the rules of normalization. This architectural style supports the transitional integrity followed by the data coming directly from the OLTP source systems. Hence this approach can provide more consistent and reliable data but requires rigor in design, development, and testing. This approach also requires substantial financial investments early on, and the ROI does not start until the entire data warehouse becomes fully functional.
+The top-down architectural approach is about creating a single, integrated _normalized warehouse_. In a normalized warehouse, the internal relational constructs follow the rules of normalization. This architectural style supports transitional integrity because the data comes directly from the OLTP source systems.
+
+This approach can provide more consistent and reliable data, but it requires rigorous design, development, and testing. This approach also requires substantial financial investments early on, and the ROI doesn't start until the entire data warehouse becomes fully functional.
 
 > [!IMPORTANT]
-> A common myth is that these two architectures are incompatible. However, this is false. Kimball and Inmon can be used together as necessary to provide a better solution.
+> A common myth is that bottom-up and top-down architectures are incompatible. However, the principles described by Kimball and Inmon can be used together as needed to provide a better solution.

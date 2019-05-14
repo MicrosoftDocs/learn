@@ -2,8 +2,8 @@
 uid: learn.data-ai.transform-data-with-azure-stream-analytics.stream-analytics-workflow
 title: Understand the Streaming Analytics Workflow
 metadata:
-  title: Understand the Streaming Analytics Workflow - Learn
-  description: Understand the Streaming Analytics Workflow - Learn
+  title: Understand the Streaming Analytics Workflow
+  description: Understand the Streaming Analytics Workflow
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

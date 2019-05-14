@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.data-ai.intro-to-azure-dsvm
+metadata:
+  title: Introduction to the Azure Data Science Virtual Machine
+  description: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
+  ms.date: 03/18/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Introduction to the Azure Data Science Virtual Machine
+summary: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
+abstract: |
+  In this module, you will:
+  - Learn about the types of Data Science Virtual Machines
+  - Learn what type of DSVM to use for each type of use case
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/intro-to-azure-dsvm-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+units:
+- learn.data-ai.intro-to-azure-dsvm.introduction
+- learn.data-ai.intro-to-azure-dsvm.when-azure-dsvm
+- learn.data-ai.intro-to-azure-dsvm.type-of-azure-dsvm
+- learn.data-ai.intro-to-azure-dsvm.use-cases-dsvma
+- learn.data-ai.intro-to-azure-dsvm.summary
+badge:
+  uid: learn.data-ai.intro-to-azure-dsvm.badge

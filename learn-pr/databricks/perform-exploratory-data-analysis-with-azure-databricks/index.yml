@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.performing-exploratory-data-analysis-with-azure-databricks
 metadata:
-  title: Perform exploratory data analysis with Azure Databricks - Learn
-  description: Learn the fundamentals of using Azure Databricks Notebooks to perform basic and advanced exploratory data analysis.
+  title: Perform exploratory data analysis with Azure Databricks
+  description: Learn the fundamentals of using Azure Databricks notebooks to do basic and advanced exploratory data analysis.
   ms.date: 11/05/2018
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Perform exploratory data analysis with Azure Databricks
-summary: Learn the fundamentals of using Azure Databricks Notebooks to perform basic and advanced exploratory data analysis.
+summary: Learn the fundamentals of using Azure Databricks notebooks to do basic and advanced exploratory data analysis.
 abstract: | 
-  In this module, you will:
-  - Load data from a flat file using Azure Databricks
-  - Perform basic exploratory data analysis with Azure Databricks
-  - Create a simple regression model 
+  In this module, you'll:
+  - Load data from a flat file by using Azure Databricks.
+  - Do basic exploratory data analysis with Azure Databricks.
+  - Create a simple regression model. 
 prerequisites:  | 
   [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/performing-exploratory-data-analysis-with-azure-databricks.svg
@@ -26,6 +26,7 @@ roles:
 - solution-architect
 - business-analyst
 products:
+- azure
 - azure-databricks
 units:
   - learn.performing-exploratory-data-analysis-with-azure-databricks.1-introduction

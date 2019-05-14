@@ -30,7 +30,7 @@ Let's assume you want to create a VM running a WordPress website. Setting up a s
 
     As you can see, there are many selectable options. We want to create a VM running a WordPress website. VMs are Azure compute resources, so select the **Compute** option on the available list and then search for WordPress VM images. You can click **See All** to get the full list.
 
-1. Use the **Search the Marketplace** search bar to find "WordPress". You see a list of options. Select the option that reads **WordPress 4.9.7** as shown below.
+1. Use the **Search the Marketplace** search bar to find "WordPress". You see a list of options. Select the option that reads **WordPress Certified by Bitnami** as shown below.
 
     ![A screenshot showing Search the Marketplace with wordpress 4.9.7 highlighted.](../media/3-search-vm-image.png)
 
@@ -46,13 +46,23 @@ We need to configure the basic parameters of our WordPress virtual machine. If s
 
 1. Use the following values on the **Basics** tab.
     - The **Subscription** should be set to _Concierge Subscription_.
+
     - The **Resource Group** should be set to <rgn>[sandbox resource group name]</rgn>.
+
     - Enter the **Virtual machine name** as _test-wp1-eus-vm_.
+
     - Select a **Region** close to you from the following list.
         [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
+
     - For **Availability options**, choose _No infrastructure redundancy required_.
-    - The **Image** should be the _WordPress 4.9.7_ option we selected from the Marketplace.
-    - Leave the **Size** as the default _Standard A1_. That size will give you a single core and 1.75 GB of memory, which should be sufficient for a simple website.
+
+    - The **Image** should be the _WordPress Certified by Bitnami_ option we selected from the Marketplace.
+
+    - Change the **Size** and select _Standard A1_ from the list of options presented. That size will give you a single core and 1.75 GB of memory, which should be sufficient for a simple website.
+
+        > [!IMPORTANT]
+        > Make sure to change the **Size** of your VM. This module's sandbox is enabled to work with a VM size of _Standard A1_. You'll received an error message "_Resource 'name' disallowed by policy_" when you create the VM if you don't set the correct **Size** value.
+
     - For the **Authentication type**, switch to **Password**. Enter a username and password.
 
     ![Screenshot showing the Create a VM screen with details filled out](../media/3-create-vm-1.png)

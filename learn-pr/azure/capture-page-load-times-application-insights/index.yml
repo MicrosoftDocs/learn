@@ -2,7 +2,7 @@
 uid: learn.capture-page-load-times-application-insights
 metadata:
   title: Capture and view page load times in your Azure web app with Application Insights
-  description: In this module, you will configure Application Insights and use it to study page load data for an Azure web app.
+  description: In this module, you'll configure Application Insights and use it to study page load data for an Azure web app.
   ms.date: 01/08/2019
   author: adrianstevens
   ms.author: adrianstevens
@@ -10,21 +10,21 @@ metadata:
   ms.prod: learning-azure
 title: Capture and view page load times in your Azure web app with Application Insights
 summary: >
-  Application Insights is a Microsoft Azure service that you can use to 
+  Application Insights is an Azure service that you can use to 
   monitor the behavior and performance of a web application. If you run 
   a web app in Azure, you can take advantage of several benefits provided 
-  by Application Insights simply by enabling it, without modifying any of 
-  your code. By the end of this module, you will be able to enable 
+  by Application Insights simply by enabling it, without changing any of 
+  your code. When you complete this module, you'll know how to enable 
   Application Insights and client-side monitoring and view metrics in the 
   portal.
 abstract: |
-  In this module, you will:
-  - Enable Application Insights run-time instrumentation on a new or existing Azure web app.
-  - Identify Application Insights telemetry visualization features of the portal.
+  In this module, you'll:
+  - Enable Application Insights runtime instrumentation on an Azure web app.
+  - Learn about the Application Insights telemetry visualization features of the portal.
   - Create a chart to view a specific metric.
 prerequisites: |
-  - Ability to create and deploy Azure App Service web apps
-  - Basic knowledge of web application development
+  - Ability to create and deploy Azure App Service web apps.
+  - Basic knowledge of web application development.
 iconUrl: /learn/achievements/capture-page-load-times-application-insights.svg
 levels:
 - beginner
