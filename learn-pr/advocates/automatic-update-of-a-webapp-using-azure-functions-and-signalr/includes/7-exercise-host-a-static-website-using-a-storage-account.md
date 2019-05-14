@@ -37,7 +37,7 @@ Once complete, the Azure Functions extension reports the primary endpoint of the
 
 The function app name (labeled as **1** in the image) is the unique name you provided to the extension as you created the app. The app end point (labeled as **2**) is the function app name followed by *azurewebsites.net*.
 
-Open *index.html.js* and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
+Open *public/index.html.js* and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
 ### Upload local settings
 
@@ -92,7 +92,7 @@ You use the endpoint value to set up CORS settings for the function app in the n
 1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
 2. Search for and select the **Azure Storage: Deploy to static website** command.
 3. Select the subscription and Storage account.
-4. When prompted for a folder, select **browse** and choose folder containing *index.html*.
+4. When prompted for a folder, select **browse** and *public/index.html*.
 5. A notification should appear that the upload was successful.
 6. Click the button to open the app in a browser.
 

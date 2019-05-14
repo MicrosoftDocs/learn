@@ -113,7 +113,7 @@ The value of the `target` property is used on the client when listening for spec
 
 ## Update the web application
 
-Open index.html paste the the following code in place of the current DIV with the ID of `app`.
+Open *public/index.html* paste the the following code in place of the current DIV with the ID of `app`.
 
 ```html
 <div id="app" class="container">
@@ -146,7 +146,7 @@ Next, add the following script block just above the reference to *index.html.js*
 
 This script adds a reference to the SignalR SDK.
 
-Now open *index.html.js* and replace the file with the following code.
+Now open *public/index.html.js* and replace the file with the following code.
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
