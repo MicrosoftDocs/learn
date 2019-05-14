@@ -25,6 +25,7 @@ To give you control over the settings associated with creating Azure Functions a
    | Function app name | Enter a unique name                                          |
    | OS                | Select **Windows**                                           |
    | Plan              | Select **Consumption**                                       |
+   | Language          | Select **JavaScript**                                        |
    | Resource group    | Select **<rgn>[sandbox resource group name]</rgn>**          |
    | Storage account   | Select the account you created earlier                       |
 
@@ -36,13 +37,7 @@ Once complete, the Azure Functions extension reports the primary endpoint of the
 
 The function app name (labeled as **1** in the image) is the unique name you provided to the extension as you created the app. The app end point (labeled as **2**) is the function app name followed by *azurewebsites.net*.
 
-Open *index.html.js* and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
-
-Next, replace `<FUNCTION_APP_NAME>` with the function app name and run the following script.
-
-```bash
-export FUNCTION_APP_NAME=<FUNCTION_APP_NAME>
-```
+Open *public/index.html.js* and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
 ### Upload local settings
 
@@ -63,7 +58,6 @@ Use the following steps to configure the Azure Storage account to host a static 
    | ----------------- | ----------------------------------------------------------------- |
    | Subscription      | Select your subscription                                          |
    | Storage account   | Select the account you created earlier                            |
-   | Hosting           | Click the **Enable website hosting** button.                      |
    | Default file      | Select **index.html** as the index document name for the account. |
    | Error document    | Press **Enter** to accept the default 404 error document path     |
    | Deployment folder | Select the folder of the functions app                            |
@@ -78,17 +72,7 @@ Now that static website hosting enabled on your storage account, you need to get
 
 ![Copy static website primary endpoint](../media/serverless-app-static-website-endpoint.png)
 
-Replace `<STATIC_WEBSITE_ENDPOINT>` with the primary endpoint value and run the script below.
-
-```bash
-export STATIC_WEBSITE_ENDPOINT=<STATIC_WEBSITE_ENDPOINT>
-```
-
 You use the endpoint value to set up CORS settings for the function app in the next section.
-
-## Enable function app cross origin resource sharing (CORS)
-
-Although there is a CORS setting in *local.settings.json*, it is not propagated to the function app in Azure.
 
 ### Add CORS origin
 
@@ -97,37 +81,18 @@ Although there is a CORS setting in *local.settings.json*, it is not propagated 
 3. Select the subscription and function app name.
 4. Once the portal is open in the browser, click on the **Platform features** tab.
 5. Click **CORS**.
-6. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You should be able to paste this value in from your clipboard.
-7. Click **Save** to persist the CORS settings.
+6. Check the checkbox next to **Enable Access-Control-Allow-Credentials**.
+7. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You should be able to paste this value in from your clipboard.
+8. Click **Save** to persist the CORS settings.
 
-### Enable CORS credentials support
-
-In order for the SignalR JavaScript SDK to function, support for credentials in CORS must be enabled.
-
-Currently, this feature can only be enabled using the Azure command line interface (CLI) or REST APIs. You will execute a command in Azure Cloud Shell to enable this feature.
-
-1. Return to the **Cloud Shell** in the browser.
-
-2. Execute the following command, to update CORS settings.
-
-   ```bash
-   az resource update --resource-group $RESOURCE_GROUP_NAME --parent sites/$FUNCTION_APP_NAME --name web --namespace Microsoft.Web --resource-type config --set properties.cors.supportCredentials=true --api-version 2015-06-01
-   ```
-
-    \*\* ***todo: check with Anthony Chu regarding CORS options***
-
-   ```bash
-   az resource update --name web --resource-group $RESOURCE_GROUP_NAME --namespace Microsoft.Web --resource-type config --parent sites/$FUNCTION_APP_NAME --set properties.cors.allowedOrigins="['$STATIC_WEBSITE_ENDPOINT']" --api-version 2015-06-01
-   ```
-
-Once completed, CORS credentials support is enabled in the function app.
+![Enable CORS support for Azure Functions app](../media/serverless-app-function-cors.png)
 
 ## Deploy the web application to Azure Storage
 
 1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
 2. Search for and select the **Azure Storage: Deploy to static website** command.
 3. Select the subscription and Storage account.
-4. When prompted for a folder, select **browse** and choose folder containing *index.html*.
+4. When prompted for a folder, select **browse** and *public/index.html*.
 5. A notification should appear that the upload was successful.
 6. Click the button to open the app in a browser.
 

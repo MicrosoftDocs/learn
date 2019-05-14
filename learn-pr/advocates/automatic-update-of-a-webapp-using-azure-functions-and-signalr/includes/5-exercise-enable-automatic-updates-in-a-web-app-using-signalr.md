@@ -4,7 +4,7 @@ In order to update the application to support the new functionality, you need to
 
 The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **negotiate** (by convention) to connect to the service.
 
-1. Open the Visual Studio Code command palette by pressing `CTRL/CMD+Shift+P`.
+1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
 2. Search for and select the **Azure Functions: Create Function** command.
 3. When prompted, provide the following information.
 
@@ -47,7 +47,7 @@ Now that the function responsible for managing connected clients is implemented,
 
 First, you need to create a new Azure Function that listens for changes in the database. This is possible by using the built-in Cosmos DB bindings.
 
-1. Open the Visual Studio Code command palette by pressing `CTRL/CMD+Shift+P`.
+1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
 2. Search for and select the **Azure Functions: Create Function** command.
 3. When prompted, provide the following information.
 
@@ -113,7 +113,7 @@ The value of the `target` property is used on the client when listening for spec
 
 ## Update the web application
 
-Open index.html paste the the following code in place of the current DIV with the ID of `app`.
+Open *public/index.html* paste the the following code in place of the current DIV with the ID of `app`.
 
 ```html
 <div id="app" class="container">
@@ -146,7 +146,7 @@ Next, add the following script block just above the reference to *index.html.js*
 
 This script adds a reference to the SignalR SDK.
 
-Now open *index.html.js* and replace the file with the following code.
+Now open *public/index.html.js* and replace the file with the following code.
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
@@ -185,20 +185,18 @@ const connect = () => {
                             .withUrl(`${getAPIBaseUrl()}/api`)
                             .build();
 
-    connection.serverTimeoutInMilliseconds = (1000 * 60) * 5; // 5 minutes
-
     connection.onclose(()  => {
         console.log('SignalR connection disconnected');
         setTimeout(() => connect(), 2000);
     });
 
-    connection.start().then(() => {
-        console.log("SignalR connection established");
-    });
-
     connection.on('updated', updatedStock => {
         const index = app.stocks.findIndex(s => s.id === updatedStock.id);
         app.stocks.splice(index, 1, updatedStock);
+    });
+
+    connection.start().then(() => {
+        console.log("SignalR connection established");
     });
 };
 
@@ -258,20 +256,18 @@ const connect = () => {
                             .withUrl(`${getAPIBaseUrl()}/api`)
                             .build();
 
-    connection.serverTimeoutInMilliseconds = (1000 * 60) * 5; // 5 minutes
-
     connection.onclose(()  => {
         console.log('SignalR connection disconnected');
         setTimeout(() => connect(), 2000);
     });
 
-    connection.start().then(() => {
-        console.log("SignalR connection established");
-    });
-
     connection.on('updated', updatedStock => {
         const index = app.stocks.findIndex(s => s.id === updatedStock.id);
         app.stocks.splice(index, 1, updatedStock);
+    });
+
+    connection.start().then(() => {
+        console.log("SignalR connection established");
     });
 };
 
@@ -279,8 +275,6 @@ connect();
 ```
 
 When the page loads the `connect` function is called. In the body of the `connect` function, the first action is to use the SignalR SDK to create a connection by calling `HubConnectionBuilder`.  The result is a SignalR connection to the server.
-
-Next, the server is set timeout after five minutes by setting the appropriate value to `serverTimeoutInMilliseconds`.
 
 In order to gracefully recover after the server has timed out, the `onclose` handler reestablishes a connection two seconds after the connection has closed by calling `connect` again.
 
@@ -292,22 +286,6 @@ As the client receives messages from the server, it listens for messages via the
 
 Manipulating the array using this approach allows Vue to detect changes in the data and trigger animation effects to notify users of changes.
 
-## Update security settings
-
-As the you run the application on your local machine, you need to update the CORS settings to grant the local web server access to the Azure Functions you created.
-
-Open *local.settings.json* and paste the following code to replace the existing value for `Hosts`.
-
-```json
-  "Host" : {
-    "LocalHttpPort": 7071,
-    "CORS": "http://localhost:8080",
-    "CORSCredentials": true
-  }
-```
-
-Now when you run the web application in along with the functions server, the two can communicate with each other.
-
 ## Run the application
 
 To see the updated application running locally, Press **F5** to start debugging the functions app.
@@ -318,7 +296,7 @@ Next, to run the web application on your machine, open a terminal and run `npm s
 npm start
 ```
 
-You can now navigate to [localhost:8080](http://localhost:8080) to see the application working in the browser.
+You can now navigate to *http://localhost:8080* to see the application working in the browser.
 
 ## Observe automatic updates
 
@@ -332,4 +310,4 @@ npm run update
 
 After the database is updated, the UI should look something like the following screenshot:
 
-![End state of serverless web app](../media/serverless-app-beginning-state.png)
+![End state of serverless web app](../media/serverless-app-end-state.png)
