@@ -53,9 +53,8 @@ In the unit, you'll use the Data Import wizard to create an index, and import yo
 
 1. Download your companies video catalog into the Cloud Shell storage.
 
-    <!-- TODO replace with path to github repo -->
     ```bash
-    curl ... video-catalog.json
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-azure-search/master/video-catalog.json -o video-catalog.json
     ```
 
 1. Upload the video catalog to the blob storage account.
