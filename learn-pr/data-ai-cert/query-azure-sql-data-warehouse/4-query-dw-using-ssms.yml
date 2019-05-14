@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.query-azure-sql-data-warehouse.query-dw-using-ssms
-title: Exercise - execute queries against an Azure Data Warehouse
+title: Exercise - Run queries against an Azure SQL data warehouse
 metadata:
-  title: Exercise - execute queries against an Azure Data Warehouse - Learn
-  description: Exercise - execute queries against an Azure Data Warehouse - Learn
+  title: Exercise - Run queries against an Azure SQL data warehouse
+  description: Exercise - Run queries against an Azure SQL data warehouse
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

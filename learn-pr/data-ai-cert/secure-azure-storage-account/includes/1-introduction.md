@@ -1,13 +1,13 @@
-Azure Storage accounts provide a wealth of security options that protect your cloud-based data. Because many services such as Blob storage, File shares, Table storage, and Azure Data Lake Storage all build on top of Azure Storage, they all benefit from the fine-grained security controls provided.
+Azure Storage accounts provide a wealth of security options that protect your cloud-based data. Azure services such as Blob storage, Files share, Table storage, and Data Lake Store all build on Azure Storage. Because of this foundation, the services benefit from the fine-grained security controls in Azure Storage.
 
-Imagine that the network administrator at Contoso is performing a security audit of the assets within the domain. When it comes to cloud-based data, it's essential that she's satisfied that all the data stored in Azure follows the corporate policy of defense in depth. As their primary data consultant, your job is to take her through the available options in Azure Storage to ensure the security requirements meet the needs of the organization.
+Imagine the network administrator at Contoso is auditing the security of the assets within the domain. At the end of the audit, she needs to be satisfied that all the data stored in Azure strictly follows Contoso's security policy. As Contoso's primary data consultant, you'll help the network administrator understand how Azure Storage can help her meet Contoso's security requirements.
 
-## Learning Objectives
+## Learning objectives
 
 In this module you will:
 
 - Investigate the ways Azure Storage protects your data
-- Explore the authentication options available to access data
-- Learn about Advanced Threat Detection
-- Control network access to the data
+- Explore the authentication options to access data
+- Learn about Advanced Threat Protection
+- Learn how to control network access to data
 - Explore the Azure Data Lake enterprise-class security features

@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.provision-and-use-azure-dsvm.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-summary.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What method did we use to log into a Windows-Based Data Science VM?"
+    choices: 
+    - content: "Remote Desktop Protocol (RDP)"
+      isCorrect: true
+      explanation: "This is correct. A step by step walk through explains all the steps to connect to a Windows-based DSVM."
+    - content: "HTTP"
+      isCorrect: false
+      explanation: "That is not correct. HTTP is not a method used to log into a DSVM."
+    - content: "ODBC"
+      isCorrect: false
+      explanation: "This is not correct.  ODBC is not a method used to log into a DSVM. "
+  
+  - content: "What development environment has pre-loaded sample code available?"
+    choices: 
+    - content: "PyCharm"
+      isCorrect: false
+      explanation: "That is not correct. PyCharm was not discussed in the module."
+    - content: "Zeppelin Notebook"
+      isCorrect: false
+      explanation: "That is not correct. Zeppelin Notebook was not discussed in the module."
+    - content: "Jupyter Notebook"
+      isCorrect: true
+      explanation: "That is correct. We showed that many sample notebooks are installed that demonstrate how to use Microsoft Machine Learning technologies."
+
+  - content: "What type of Jupyter Notebook cell is used to provide annotations?"
+    choices: 
+    - content: "Code cell"
+      isCorrect: false
+      explanation: "That is not correct. Code cells contain programming code to be executed."
+    - content: "Markdown cell"
+      isCorrect: true
+      explanation: "That is correct. Markdown support rich formatting and is ideal for adding comments and annotations to your notebooks."
+    - content: "Raw cell"
+      isCorrect: false
+      explanation: "That is not correct. Raw cells are used to support formatting output when using the NBConvert program."

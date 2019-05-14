@@ -1,96 +1,104 @@
-Many organizations are considering digital transformation projects as their traditional IT hardware and infrastructure comes to the end of life. Here, we'll explore features of both on-premises and cloud environments.  We'll also explore the factors businesses must consider when exploring each option.
+When traditional hardware and infrastructure components near the end of their life cycle, many organizations consider digital transformation projects. Here we'll consider options for those transformations. We'll look at features of both on-premises and cloud environments.  We'll also cover the factors that businesses must consider as they explore each option.
 
-## On-premises
+## On-premises environments
 
-### Computing Environment
+### Computing environment
 
-On-premises environments require an investment in physical equipment to execute applications and services. This equipment includes physical servers, network infrastructure, and storage. The equipment must have power, cooling, and requires periodic maintenance by qualified personnel. The servers must also have at least one operating system (OS) installed, and possibly more than one if the organization is utilizing virtualization technology.  Each installed OS could potentially require its own licensing cost.
+On-premises environments require physical equipment to execute applications and services. This equipment includes physical servers, network infrastructure, and storage. The equipment must have power, cooling, and periodic maintenance by qualified personnel. A server needs at least one operating system (OS) installed. It might need more than one OS if the organization uses virtualization technology.  
 
-### Licensing Model
+### Licensing
 
-With on-premises servers, OS and software licenses were typically sold per server or per CAL (Client Access Licensing). As companies grew, the licensing arrangements became more rigid and restrictive.
+Each OS that's installed on a server might have its own licensing cost. OS and software licenses are typically sold per server or per CAL (Client Access License). As companies grow, licensing arrangements become more restrictive.
 
-### Maintainability
+### Maintenance
 
-Maintaining on-premises systems requires maintaining the hardware, firmware, drivers, BIOS, operating system, software, and anti-virus software. These are additional considerations associated with the operational costs of such an environment. Organizations will look to reduce these costs where it makes sense.
+On-premises systems require maintenance for the hardware, firmware, drivers, BIOS, operating system, software, and antivirus software. Organizations try to reduce the cost of this maintenance where it makes sense.
 
 ### Scalability
 
-When scaling up a server is no longer possible, administrators look to scale out their operations. To scale an on-premises server horizontally, the server administrator would add an additional server node to a cluster.  Clustering leverages either a hardware or software load balancer to distribute incoming network requests to an individual node of the cluster.  A limitation of server clustering is that the hardware for each server in the cluster must be identical. Therefore, once the server cluster reaches maximum capacity, a server administrator must replace or upgrade each node in the cluster.
+When administrators can no longer scale up a server, they can instead scale out their operations. To scale an on-premises server horizontally, server administrators add another server node to a cluster. Clustering uses either a hardware load balancer or a software load balancer to distribute incoming network requests to a node of the cluster.  
 
-### High Availability
+A limitation of server clustering is that the hardware for each server in the cluster must be identical. So when the server cluster reaches maximum capacity, a server administrator must replace or upgrade each node in the cluster.
 
-High availability systems must be available most of the time. Service Level Agreements (SLAs) will dictate specific expectations. Three 9's, four 9's, or five 9's commonly refers to 99.9%, 99.99%, or 99.999% system uptime. To calculate this in terms of the number of hours, multiply these percentages by the number of hours in a single year (8760).
+### Availability
 
-| Uptime Level    | Uptime Hours per Year    | Downtime Hours per Year    |
+High-availability systems must be available most of the time. Service-level agreements (SLAs) specify your organization's availability expectations. 
+
+System uptime can be expressed as three nines, four nines, or five nines. These expressions indicate system uptimes of 99.9 percent, 99.99 percent, or 99.999 percent. To calculate system uptime in terms of hours, multiply these percentages by the number of hours in a year (8,760).
+
+| Uptime level    | Uptime hours per year    | Downtime hours per year    |
 | --------------- | ------------------------ | -------------------------- |
-| 99.9%           | 8751.24                  | (8760 – 8751.24) = 8.76 hrs per year |
-| 99.99%          | 8759.12                  | (8760 – 8759.12) = 0.88 hrs per year |
-| 99.999%         | 8759.91                  | (8760 - 8759.91) = 0.09 |
+| 99.9%           | 8,751.24                  | (8,760 – 8,751.24) = 8.76 |
+| 99.99%          | 8,759.12                  | (8,760 – 8,759.12) = 0.88 |
+| 99.999%         | 8,759.91                  | (8,760 - 8,759.91) = 0.09 |
 
-The higher the uptime required, the more expensive it can become for on-premises servers.
+ For on-premises servers, the more uptime the SLA requires, the higher the cost.
 
-### Supportability
+### Support
 
-There are hundreds of vendors for physical server hardware, requiring server administrators to learn many different platforms.  This makes it more difficult for organizations to find human resources with the diverse skills required to administer, maintain and support these systems.
+Hundreds of vendors sell physical server hardware. This variety means server administrators might need to know how to use many different platforms. Because of the diverse skills required to administer, maintain, and support on-premises systems, organizations sometimes have a hard time finding server administrators to hire.
 
-### Multi-lingual Support
+### Multilingual support
 
-In on-premises SQL Server systems, supporting multi-lingual scenarios is difficult and expensive. One concern with multiple languages is the impact on the sort order of text data, as different languages can sort text data differently. To support this, the SQL Server Database Administrator must install and configure the collation settings for the data. To leverage these settings, SQL Database Developers needed to consider multi-lingual functionality at design time. This increases the complexity of managing and maintaining such systems.
+In on-premises SQL Server systems, multilingual support is difficult and expensive. One issue with multiple languages is the sorting order of text data. Different languages can sort text data differently. To address this issue, the SQL Server database administrator must install and configure the data's collation settings. But these settings can work only if the SQL database developers considered multilingual functionality when they were designing the system. Systems like this are complex to manage and maintain.
 
-### Total Cost of Ownership (TCO)
+### Total cost of ownership
 
-The term Total Cost of Ownership (TCO) is used to describe the total cost of owning a given technology. In on-premises systems, TCO includes:
+The term *total cost of ownership* (TCO) describes the final cost of owning a given technology. In on-premises systems, TCO includes the following costs:
 
-- Hardware Costs
-- Software Licensing Costs
-- Labor Costs (Installation, upgrades, maintenance)
-- Data Center Overhead Costs (power, telecommunications, building, heating & cooling)
+- Hardware 
+- Software licensing
+- Labor (installation, upgrades, maintenance)
+- Datacenter overhead (power, telecommunications, building, heating and cooling)
 
-From a cost perspective, it is difficult to match the on-premises expense to actual usage. Servers are purchased with additional capacity to accommodate future growth, so when a server is purchased there will always be excess capacity that isn't used. When an on-premises server is at maximum capacity, even an incremental increase in resource demand will require the purchase of additional hardware. 
+It's difficult to align on-premises expenses with actual usage. Organizations buy servers that have extra capacity so they can accommodate future growth. A newly purchased server will always have excess capacity that isn't used. When an on-premises server is at maximum capacity, even an incremental increase in resource demand will require the purchase of more hardware. 
 
-From a finance perspective, due to the large expense of on-premises server systems, these costs were often capitalized, meaning that the costs were allocated across the expected lifetime of the server equipment.  Capital expenditures limited IT Managers from being able to upgrade server equipment when it was required during the expected server lifetime, limiting the server system's ability to meet the increased demand.  In cloud solutions, expenses are recorded on the financial statements each month as an expense instead of a capital expenditure. Therefore, there is no expected server lifetime to limit the IT manager's ability to upgrade the system to meet an increase in demand when required.
+Because on-premises server systems are very expensive, costs are often *capitalized*. This means that on financial statements, costs are spread out across the expected lifetime of the server equipment. Capitalization restricts an IT manager's ability to buy upgraded server equipment during the expected lifetime of a server. This restriction limits the server system's ability to accommodate increased demand.  
 
-## Cloud
+In cloud solutions, expenses are recorded on the financial statements each month. They're monthly expenses instead of capital expenses. Because subscriptions are a different kind of expense, the expected server lifetime doesn't limit the IT manager's ability to upgrade to meet an increase in demand.
 
-### Computing Environment
+## Cloud environments
 
-Cloud computing environments contain the physical and logical infrastructure to host services, virtual servers, intelligent applications, and containers as if they belonged to the organization. There is no capital investment required for physical servers. Instead, an organization will provision services in the cloud and only pay for what they use. In addition, operational costs are reduced as the servers and services are moved into the cloud.
+### Computing environment
 
-An organization can provision anything from virtual servers to clusters of containerized apps to Azure services within minutes, and all the physical and logical infrastructure is automatically created and handled in the background, reducing the complexity and cost of creating the services.
+Cloud computing environments provide the physical and logical infrastructure to host services, virtual servers, intelligent applications, and containers for their subscribers. Different from on-premises physical servers, cloud environments require no capital investment. Instead, an organization provisions service in the cloud and pays only for what it uses. Moving servers and services to the cloud also reduces operational costs.
 
-Where on-premises servers used physical and virtual disks, the cloud platform refers to storage more generically as there are many different storage types such as Azure Blob Storage, File Storage, and Disk Storage. Complex systems often leverage each type of storage as part of their technical architecture. With disk storage, customers can choose to either have Microsoft manage their disk storage or the customer can pay a premium to have greater control over disk allocation.
+Within minutes, an organization can provision anything from virtual servers to clusters of containerized apps by using Azure services. Azure automatically creates and handles all of the physical and logical infrastructure in the background. In this way, Azure reduces the complexity and cost of creating the services.
 
-### Maintainability
+On-premises servers store data on physical and virtual disks. On a cloud platform, storage is more generic. Diverse storage types include Azure Blob storage, Azure Files storage, and Azure Disk Storage. Complex systems often use each type of storage as part of their technical architecture. With Azure Disk Storage, customers can choose to have Microsoft manage their disk storage or to pay a premium for greater control over disk allocation.
 
-In the cloud, Microsoft manages many operations to create a stable computing environment that's included as part of the investment for Microsoft Azure products. Microsoft manages key infrastructure services such as physical hardware, computer networking, firewalls and network security, data center fault tolerance, compliance, and physical security over the plant or buildings. Microsoft also spends nearly 1 billion US dollars each year in battling cybersecurity threats and applies operating system updates and firmware updates on behalf of the customer. This allows Data Engineers to focus on more data engineering and eliminating some of the system complexity.
+### Maintenance
+
+In the cloud, Microsoft manages many operations to create a stable computing environment. This service is part of the Azure product benefit. Microsoft manages key infrastructure services such as physical hardware, computer networking, firewalls and network security, datacenter fault tolerance, compliance, and physical security of the buildings. Microsoft also invests heavily to battle cybersecurity threats, and it updates operating systems and firmware for the customer. These services allow data engineers to focus more on data engineering and eliminating system complexity.
 
 ### Scalability
 
-Whereas, achieving scalability in on-premises systems was complicated and time-consuming, achieving scalability in the cloud can be as simple as the point and click of a mouse in many cases. Scalability in the cloud is typically measured in compute units. Compute units may be defined differently for each Microsoft Azure product being evaluated. 
+Scalability in on-premises systems is complicated and time-consuming. But scalability in the cloud can be as simple as a mouse click. Typically, scalability in the cloud is measured in compute units. Compute units might be defined differently for each Azure product. 
 
-### High Availability
+### Availability
 
-In Azure, Microsoft commits to duplicating customers content for redundancy and high availability. Many of the services and platforms also have specific Service Level Agreements (SLAs) to ensure customers are aware of the available capabilities of the platform that they are using.
+Azure duplicates customer content for redundancy and high availability. Many services and platforms use SLAs to ensure that customers know the capabilities of the platform they're using.
 
-### Supportability
+### Support
 
-Cloud systems are easy to support because the environments are standardized. When Microsoft applies an update, the update applies to all consumers of the product.
+Cloud systems are easy to support because the environments are standardized. When Microsoft updates a product, the update applies to all consumers of the product.
 
-### Multi-lingual support
+### Multilingual support
 
-In cloud systems, it's common to store data as a JSON file that includes the Language Code ID (LCID) to identify the language used in the data. Apps processing the data can use translation services such as the Bing Translate API to convert the data into an expected language when the data is consumed or as part of a data preparation process.
+Cloud systems often store data as a JSON file that includes the language code identifier (LCID). The LCID identifies the language that the data uses. Apps that process the data can use translation services such as the Bing Translator API to convert the data into an expected language when the data is consumed or as part of a process to prepare the data.
 
-### Total Cost of Ownership
+### Total cost of ownership
 
-In cloud systems like Microsoft Azure, costs are tracked by subscriptions, which can be based upon usage including compute units, the number of hours, or the number of transactions. The hardware, software, disk storage, and labor costs are included in this amount. Due to economies of scale, it is difficult for an on-premises system to compete with the cloud concerning the measurement of the service usage.
+Cloud systems like Azure track costs by subscriptions. A subscription can be based on usage that's measured in compute units, hours, or transactions. The cost includes hardware, software, disk storage, and labor. Because of economies of scale, an on-premises system can rarely compete with the cloud in terms of the measurement of the service usage.
 
-On-premises server systems rarely matched the cost of operating the system with the actual usage of the system. In cloud systems, the cost more closely matches the actual usage of the system. However, if a cloud administrator provisions a service that isn't used by the business, there will be costs with no usage, referred to as underutilization.  Organizations can reduce underutilization by adopting a best practice to only provision production instances once an application is ready to be deployed to production.  This might require developers to use emulators like the Azure Cosmos DB emulator or the Azure Storage emulator to develop cloud applications without incurring production costs during development and testing.
+The cost of operating an on-premises server system rarely aligns with the actual usage of the system. In cloud systems, the cost usually aligns more closely with the actual usage. 
 
-### Understand Lift and Shift
+In some cases, however, those costs don't align. For example, an organization will be charged for a service that a cloud administrator provisions but doesn't use. This scenario is called *underutilization*. Organizations can reduce the costs of underutilization by adopting a best practice to provision production instances only after their developers are ready to deploy an application to production.  Developers can use tools like the Azure Cosmos DB emulator or the Azure Storage emulator to develop and test cloud applications without incurring production costs.
 
-When moving to the cloud, one strategy that many customers will use is to migrate from physical or virtualized on-premises servers to Azure Virtual Machines. This is known as "Lift and Shift."  In Lift and Shift, server administrators migrate an application from a physical environment to Azure Virtual machines without rearchitecting the applications.
+### Lift and shift
 
-While Lift and Shift provides immediate benefits such as the ability to provide higher availability, reduce operational costs, and be able to transfer workloads from one data center to another, the application is unable to take advantage of the many features available within Azure.
+When moving to the cloud, many customers migrate from physical or virtualized on-premises servers to Azure Virtual Machines. This strategy is known as *lift and shift*.  Server administrators lift and shift an application from a physical environment to Azure Virtual Machines without rearchitecting the application.
 
-While Lift and Shift may seem appealing in the short term, organizations are using the migration as an opportunity to transform their business practices by creating new versions of their applications and databases to take advantage of the new services in Azure such as Cognitive Services, Bots and some of the available machine learning capabilities.
+The lift-and-shift strategy provides immediate benefits. These benefits include higher availability, lower operational costs, and the ability to transfer workloads from one datacenter to another. The disadvantage is that the application can't take advantage of the many features available within Azure.
+
+Consider using the migration as an opportunity to transform your business practices by creating new versions of your applications and databases. Your rearchitected application can take advantage of Azure offerings such as Cognitive Services, Bot Service, and machine learning capabilities.

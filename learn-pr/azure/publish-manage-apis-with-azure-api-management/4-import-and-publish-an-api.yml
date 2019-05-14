@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-manage-apis-with-azure-api-management.4-import-and-publish-an-api
+title: Import and publish an API
+metadata:
+  title: Import and publish an API
+  description: Import and publish an API
+  ms.date: 05/02/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-import-and-publish-an-api.md)]

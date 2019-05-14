@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.copy-blobs-from-command-line-and-code.move-blobs-using-cli
+title: Move Azure storage blobs from the command line with the Azure CLI
+metadata:
+  title: Move Azure storage blobs from the command line with the Azure CLI
+  description: Move Azure storage blobs from the command line with the Azure CLI
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-move-blobs-using-cli.md)]

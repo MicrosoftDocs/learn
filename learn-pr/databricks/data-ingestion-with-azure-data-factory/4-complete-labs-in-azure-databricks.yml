@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ingestion-with-azure-data-factory.4-complete-labs-in-azure-databricks
-title: Exercise - Perform data ingestion using Azure Databricks
+title: Exercise - Ingest data by using Azure Databricks
 metadata:
-  title: Exercise - Perform data ingestion using Azure Databricks
-  description: Learn how to connect to the preconfigured lab environment and import the notebook labs.
+  title: Exercise - Ingest data by using Azure Databricks
+  description: Learn how to connect to the preconfigured lab environment and import the Databricks notebook labs.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

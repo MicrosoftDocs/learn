@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.data-ai.intro-to-azure-machine-learning-service
+metadata:
+  title: Introduction to Azure Machine Learning service
+  description: Introduction to Azure Machine Learning service
+  ms.date: 03/18/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Introduction to Azure Machine Learning service
+summary: Introduction to Azure Machine Learning service
+abstract: | 
+  In this module, you will:
+  - Learn the difference between Azure Machine Learning Studio and Azure Machine Learning service
+  - See how Azure Machine Learning service fits into the data science process
+  - Learn the concepts related to an Azure Machine Learning service experiment
+  - Explore the Azure Machine Learning service pipeline
+  - Train a model using Azure Machine Learning service
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/intro-to-azure-machine-learning-service-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+- azure-machine-learning-service
+units:
+- learn.data-ai.intro-to-azure-machine-learning-service.introduction
+- learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-service-vs-ml-studio
+- learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-service-with-ds-process
+- learn.data-ai.intro-to-azure-machine-learning-service.create-ml-experiment
+- learn.data-ai.intro-to-azure-machine-learning-service.create-pipeline
+- learn.data-ai.intro-to-azure-machine-learning-service.train-model
+- learn.data-ai.intro-to-azure-machine-learning-service.summary
+badge:
+  uid: learn.data-ai.intro-to-azure-machine-learning-service.badge

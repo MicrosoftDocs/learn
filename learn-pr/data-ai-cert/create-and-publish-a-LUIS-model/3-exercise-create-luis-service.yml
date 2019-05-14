@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-and-publish-a-luis-model.exercise-create-luis-service
-title: Create a LUIS Service
+title: Create a LUIS service resource
 metadata:
-  title: Create a LUIS Service
-  description: Learn how to create a LUIS service in the Azure Portal to use with a LUIS application
+  title: Create a LUIS service resource
+  description: Learn how to create a LUIS service resource in the Azure portal to use with a LUIS application.
   ms.date: 1/24/2019
   author: gerryaobrien
   ms.author: gerryo

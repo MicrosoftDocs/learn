@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.create-an-azure-notebook
+title: Create an Azure Notebook
+metadata:
+  title: Create an Azure Notebook
+  description: Create an Azure Notebook
+  ms.date: 02/25/2018
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-create-an-azure-notebook.md)]

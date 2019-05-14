@@ -1,18 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-access-azure-ad-multi-factor-authentication.4-secure-access
 metadata:
-  title: Secure access to resources
+  title: Exercise - Secure access to resources
   description: Learn how to create a conditional access rule to require users to perform multi-factor authentication when they access the Azure portal.
-  ms.date: 09/24/2018
+  ms.date: 04/15/2019
   #TODO: Update with real author name.
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Secure access to resources
-#labId: 46467
-#labModal: true
+title: Exercise - Secure access to resources
 durationInMinutes: 3
 content: |
   [!include[](includes/4-secure-access.md)]
