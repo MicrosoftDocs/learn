@@ -1,30 +1,29 @@
-If you already have a Microsoft Azure account, you can create and manage a Machine Learning Studio Workspace directly from your Azure subscription. To do so, follow these steps:
+If you already have an Azure account, you can use it to create and manage a Machine Learning Studio Workspace. Here's how:
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. At the Dashboard, click **Create a resource**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. On the dashboard, select **Create a resource**.
 
-    ![Click Create a resource](../media/4-create-ml-workspace-with-existing-azure-account-create-resource.png)
+    ![Create a resource](../media/4-create-ml-workspace-with-existing-azure-account-create-resource.png)
 
-1. Type "Machine Learning Studio Workspace" into the search bar.
+1. In the search bar, enter *Machine Learning Studio Workspace*.
 
     > [!IMPORTANT]
-    > Ensure you choose the Learning Studio Workspace and not Learning Service Workspace!
+    > Make sure you choose the Machine Learning Studio Workspace and not the Learning Service Workspace.
 
-1. Click **Create** at the bottom of the page.
+1. At the bottom of the window, select **Create**.
 
     ![Create a new workspace](../media/4-create-ml-workspace-with-existing-azure-account-create-workspace.png)
 
-1. Enter your workspace information. An example is shown here:
+1. Enter your workspace information. Here's an example:
 
     ![Complete workspace details](../media/4-create-ml-workspace-with-existing-azure-account-workspace-details.png)
 
-1. The web service plan you choose (or create), along with the associated pricing tier you select, is used if you deploy web services from this workspace
+    If you'll deploy web services from this workspace, use your web service plan and the associated pricing tier.
 
-1. Click **Create** and wait for the resource to be created and deployed
+1. Select **Create** and wait until the resource is created and deployed.
 
-1. You can now access your new Azure Machine Learning Studio Workspace in one of two ways:
-     1. Go to the resource in your Azure portal
-        - On the Overview page, click the Launch Machine Learning Studio button to open the workspace in Microsoft Azure Machine Learning Studio.
-     2. Sign into the Azure Machine Learning Studio portal at [https://studio.azureml.net/](https://studio.azureml.net/?azure-portal=true).
-        - Select your workspace in the upper-right-hand corner.
-        - Click my experiments.
+Now you can access your new Machine Learning Studio Workspace in one of two ways:
+* Go to the resource in your Azure portal. On the Overview page, select **Launch Machine Learning Studio** to open the workspace in Machine Learning Studio.
+* Sign in to the [Machine Learning Studio portal](https://studio.azureml.net/?azure-portal=true).
+    - In the upper-right corner, select your workspace.
+    - Select **my experiments**.

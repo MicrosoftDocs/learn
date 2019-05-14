@@ -9,7 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-#labId: 45987
 title: Create the MojifyImage Azure function
 durationInMinutes: 15
 content: |
