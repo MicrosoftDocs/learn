@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-intro-to-azure-kubernetes-service.knowledge-check
+title: Knowledge check
+
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 5/14/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+
+quiz:
+
+  questions:
+  
+  - content: "Question"
+    choices:
+    - content: "Answer One"
+      isCorrect: false
+      explanation: "Reason"
+    - content: "Answer Two"
+      isCorrect: true
+      explanation: "Reason"
+    - content: "Answer Three"
+      isCorrect: false
+      explanation: "Reason"

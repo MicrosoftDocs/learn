@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure-intro-to-azure-kubernetes-service
+metadata:
+  title: "Introduction to Azure Kubernetes Service"
+  description: "Introduction Azure to Kubernetes Service"
+  ms.date: 5/14/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Azure Kubernetes Service"
+summary: "Understand how Azure Kubernetes orchestrate deployment, management, failover, and high availability of compute containers and the container host."
+abstract: |
+  In this module, you will:
+  - Evaluate whether Azure Kubernetes Service is appropriate to orchestration your compute containers
+  - Describe how the components of Azure Kubernetes Service work to support compute container orchestration
+prerequisites: |
+  - Basic knowledge of programming concepts such as conditional logic and loops
+  - Basic knowledge of REST services and APIs
+iconUrl: /learn/achievements/intro-to-azure-kubernetes-service.svg
+badge:
+  uid: learn.azure-intro-to-azure-kubernetes-service.badge
+levels: 
+- beginner
+roles: 
+- developer
+- administrator
+- business-analyst
+products:
+- azure
+- azure-portal
+- azure-kubernetes-service
+units:
+- learn.azure-intro-to-azure-kubernetes-service.introduction
+- learn.azure-intro-to-azure-kubernetes-service.what-is-azure-kubernetes-service
+- learn.azure-intro-to-azure-kubernetes-service.how-azure-kubernetes-service-works
+- learn.azure-intro-to-azure-kubernetes-service.when-to-use-azure-kubernetes-service
+- learn.azure-intro-to-azure-kubernetes-service.knowledge-check
+- learn.azure-intro-to-azure-kubernetes-service.summary
