@@ -23,5 +23,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Compute/virtualMachines"
-      name: MeanStack
   hint: "Ensure your VM exists and that your web application comes up as shown."

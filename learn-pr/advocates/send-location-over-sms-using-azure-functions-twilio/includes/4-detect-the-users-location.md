@@ -1,10 +1,8 @@
-The app has a UI and a ViewModel. In this unit, you add location lookup to the ViewModel using Xamarin.Essentials.
-
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
+The app has a UI and a ViewModel. In this unit, you'll add location lookup to the ViewModel using Xamarin.Essentials.
 
 ## Enable location permissions
 
-All mobile platforms have security around user information and certain hardware, such as the camera, photo library, and the user's location. Before an app can access the user's location, the user has to grant permission - either by implicitly granting these permissions at install time or by choosing to grant a permission at runtime. When you view a UWP app on the store, the listing will show the permissions that the app needs. By installing the app, you implicitly grant permission. These permissions are configured in an app manifest file.
+All mobile platforms have security around user information and certain hardware, such as camera, photo library, and the user's location. Before an app can access the user's location, the user has to grant permission - either by implicitly granting these permissions at install time or by choosing to grant a permission at runtime. When you view a UWP app in the store, the listing will show the permissions that the app needs. By installing the app, you implicitly grant permission. These permissions are configured in an app manifest file.
 
 1. In the `ImHere.UWP` app project, open the `Package.appxmanifest` file.
 
@@ -18,7 +16,13 @@ There are two ways to get the user's location - the last known or the current. T
 
 1. Open the `MainViewModel` class in the `ImHere` .NET Standard project.
 
-1. In the `SendLocation` method, make a call to the `GetLastKnownLocationAsync` static method on the `Geolocation` class in the `Xamarin.Essentials` namespace. You will need to add a using directive for the `Xamarin.Essentials` namespace.
+1. Add a using directive for the `Xamarin.Essentials` namespace.
+
+    ```cs
+        using Xamarin.Essentials;
+    ```
+
+1. In the `SendLocation` method, make a call to the `GetLastKnownLocationAsync` static method on the `Geolocation` class in the `Xamarin.Essentials` namespace.
 
     ```csharp
     Location location = await Geolocation.GetLastKnownLocationAsync();
@@ -49,7 +53,7 @@ There are two ways to get the user's location - the last known or the current. T
 
 1. Run the app and click the **Send Location** button to see the location on the UI.
 
-    ![The running app showing the user's location](../media/4-running-app-showing-location.png)    
+    ![The running app showing the user's location](../media/4-running-app-showing-location.png)
 
 > [!NOTE]
 > This app uses the last known location. In a production-quality app, you would want to get the current accurate location with a time-out, and if one is not found in time, fall back to the last known. You can read more on how to do this in the [Xamarin.Essentials Geolocation docs](https://docs.microsoft.com/xamarin/essentials/geolocation?tabs=uwp#using-geolocation?azure-portal=true).
@@ -58,4 +62,4 @@ There are two ways to get the user's location - the last known or the current. T
 
 ## Summary
 
-In this unit, you learned how to use Xamarin.Essentials to get the user's location. In the next unit, you'll create an Azure function to act as a back end for the mobile app.
+In this unit, you learned how to use Xamarin.Essentials to get the user's location. In the next unit, you'll create the Azure Functions to act as a back end for the mobile app.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.viewing-access-keys-and-endpoints
-title: Exercise - Viewing Subscription Keys and Endpoints
+title: Exercise - View subscription keys and endpoints
 metadata:
-  title: Exercise - Viewing Subscription Keys and Endpoints
-  description: Exercise - Viewing Subscription Keys and Endpoints
+  title: Exercise - View subscription keys and endpoints
+  description: Learn how to view subscription keys and endpoints.
   ms.date: 01/11/2019
   author: gerryaobrien
   ms.author: gerryo

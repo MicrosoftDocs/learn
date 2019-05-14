@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-containers.2-deploy-docker-image-locally
+title: Retrieve an existing Docker image and deploy it locally
+metadata:
+  title: Retrieve an existing Docker image and deploy it locally
+  description: Summarize the purpose of Docker and Docker Hub. Explain how to download an image containing an application from Docker Hub, and run the application locally.
+  ms.date: 04/05/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deploy-docker-image-locally.md)]
