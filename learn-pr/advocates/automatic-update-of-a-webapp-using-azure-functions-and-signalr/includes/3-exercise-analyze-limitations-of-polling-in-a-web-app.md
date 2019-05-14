@@ -30,21 +30,35 @@ echo "SignalR Account Name: $SIGNALR_ACCOUNT_NAME"
 
 This script generates the resource group and account names used in this lesson. Take note of these values should your time in the Azure Cloud Shell time out and you need to reestablish the variables.
 
-The following script uses these variables to create the Azure resources required for this lesson.
+The following scripts uses these variables to create the Azure resources required for this lesson.
+
+First, create a new Cosmos DB account by issuing the following command:
 
 ```bash
 az cosmosdb create  \
   --name $COSMOSDB_ACCOUNT_NAME \
   --resource-group $RESOURCE_GROUP_NAME
+```
 
+Next, create a storage account for your function and static website to use by running this command:
+
+```bash
 az storage account create \
   --name $STORAGE_ACCOUNT_NAME \
   --resource-group $RESOURCE_GROUP_NAME \
   --kind StorageV2 \
   --sku Standard_LRS
+```
 
+To allow access to SignalR, add the extension by running the following command:
+
+```bash
 az extension add -n signalr
+```
 
+Finally, create a new SingnalR account by running this command:
+
+```bash
 az signalr create \
   --name $SIGNALR_ACCOUNT_NAME \
   --resource-group $RESOURCE_GROUP_NAME \
