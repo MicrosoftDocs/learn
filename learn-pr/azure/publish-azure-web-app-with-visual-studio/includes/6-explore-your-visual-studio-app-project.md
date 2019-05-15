@@ -2,11 +2,11 @@ You've successfully created your web app and published it to Azure, but what hap
 
 ## Explore the project structure
 
-We've created an ASP.NET web app in Visual Studio, and now you will need to edit and customize your website. Let's explore the project structure to see what Visual Studio has created for us.
+We've created an ASP.NET Core web app in Visual Studio, and now you will need to edit and customize your website. Let's explore the project structure to see what Visual Studio has created for us.
 
 ### Dependencies
 
-Dependencies include the ASP.NET internals to get your app up and running. Unless you are adding specific third-party packages, you won't need to spend much time in this folder.
+Dependencies include the ASP.NET Core internals to get your app up and running. Unless you are adding specific third-party packages, you won't need to spend much time in this folder.
 
 ### Properties
 
@@ -29,7 +29,7 @@ Each page in your site is represented with two code files:
 
 ### appsetting.json
 
-This is a configuration file for ASP.NET.
+This is a configuration file for ASP.NET Core.
 
 ### bundleconfig.json
 

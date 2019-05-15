@@ -1,22 +1,22 @@
-To use Azure Machine Learning Studio, you need to have a Machine Learning Studio workspace. This workspace contains the tools you need to create, manage, and publish experiments. There are two different options available, free or paid. Here are the current options available:
+You'll need a Machine Learning Studio Workspace to access tools to create, publish, and manage experiments. Here are details on your free or paid options:
 
 :::row:::
   :::column:::
-**Guest Workspace**
+**Guest workspace**
   :::column-end:::
   :::column span="3":::
 - 8-hour trial
 - No sign-in required
-- Build ML models in minutes
-- Full range of ML algorithms available
+- Can build machine-learning models in minutes
+- Full range of available machine-learning algorithms
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-**Free Workspace**
+**Free workspace**
   :::column-end:::
   :::column span="3":::
-- Sign-in with Microsoft account
+- Sign in with a Microsoft account
 - Free access with no expiration
 - 10 GB of free storage
 - Support for both Python and R scripts
@@ -25,29 +25,28 @@ To use Azure Machine Learning Studio, you need to have a Machine Learning Studio
 :::row-end:::
 :::row:::
   :::column:::
-**Standard Workspace**
+**Standard workspace**
   :::column-end:::
   :::column span="3":::
 - Azure subscription required
 - $9.99 per month
-- Full SLA (service level agreement) support
+- Full SLA (service-level agreement) support
 - Bring your own Azure storage
 - Parallel graph execution
-- Elastic Web Service endpoints
-- Ideal for enterprise grade usage
+- Elastic web service endpoints
+- Ideal for enterprise-grade usage
   :::column-end:::
 :::row-end:::
 
-## Create an Azure ML Studio Workspace
+## Create a Machine Learning Studio Workspace
 
-1. Open your favorite web browser and navigate to [https://studio.azureml.net/](https://studio.azureml.net/?azure-portal=true)
-1. Click the Sign-up here link under the Sign In button, if you are not a current Azure ML user
+1. In a web browser, go to [Machine Learning Studio](https://studio.azureml.net/?azure-portal=true).
+1. Under the **Sign In** button, select the **Sign up here** link if you're not a current Machine Learning Studio user.
 
-    ![Click Sign-up here link to create a new account](../media/3-setting-up-azure-ML-studio-account-ml-studio-login-small.png)
+    ![Select the Sign up here link to create a new account](../media/3-setting-up-azure-ML-studio-account-ml-studio-login-small.png)
 
-1. Select one of the free options. If you have a Microsoft Account, we recommend using the **Free Workspace** option listed as it will be required to complete the hands-on portions in the  units that follow.
+1. Select one of the free options. If you have a Microsoft account, we recommend using the **Free Workspace** option. You'll need this to complete the hands-on parts of the units that follow.
 
     ![Choose the Free Workspace option](../media/3-setting-up-azure-ML-studio-account-pricing-tier-small.png)
 
-1. You can do this by clicking the Sign In button and sign in using your Microsoft account
-1. You now have a Microsoft Azure Machine Learning Studio workspace and account.
+You now have a Machine Learning Studio Workspace and account.
