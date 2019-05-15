@@ -122,6 +122,7 @@ The `MainPage` will have a text-entry control for phone numbers and a label to d
     {
         SendLocationCommand = new Command(async () => await SendLocation());
     }
+    ```
 
 1. Create a `async` method called `SendLocation` and pass a lambda function that `await`s call to the constructor. The body of this method will be updated later in this module.
 

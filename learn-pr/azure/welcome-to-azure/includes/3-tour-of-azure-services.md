@@ -10,7 +10,7 @@ Let's take a quick tour of the high-level services Azure offers.
 
 Here's a big-picture view of the available services and features in Azure.
 
-[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](#lightbox)
+[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](../media/3-azure-services.png#lightbox)
 
 Let's take a closer look at the most commonly-used categories:
 

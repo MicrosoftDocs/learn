@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.cosmos-db-app-with-vscode
 metadata:
-  title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code - Learn
+  title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
   description: Learn how to create a .NET Core application to store and query data in Azure Cosmos DB by using Visual Studio Code.
   ms.date: 09/24/2018
   author: mimig1
@@ -18,7 +18,7 @@ abstract: |
   - Add Azure Cosmos DB functionality with the help of the Azure Cosmos DB extension for Visual Studio Code
 prerequisites: |
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
-  - Must have [.NET Core 2.1](https://www.microsoft.com/net/download) installed
+  - Must have [.NET Core 2.1 SDK or later versions](https://www.microsoft.com/net/download) installed
   - Must have the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) extension installed
 iconUrl: /learn/achievements/build-cosmos-db-app-with-vscode.svg
 levels:

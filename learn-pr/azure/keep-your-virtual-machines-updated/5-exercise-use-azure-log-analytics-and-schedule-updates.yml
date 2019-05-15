@@ -9,8 +9,6 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-# interactive: azure-portal
-azureSandbox: true
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-use-azure-log-analytics-and-schedule-updates.md)] 

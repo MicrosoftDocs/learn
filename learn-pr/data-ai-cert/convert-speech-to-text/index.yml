@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.convert-speech-to-text
 metadata:
-  title: Translate speech in real time with Azure Cognitive Services - Learn
-  description: Learn how to translate speech and convert it to text through real-time transcription with the Speech Translation API in Azure Cognitive Services - Learn
+  title: Translate speech in real time with Azure Cognitive Services
+  description: Learn how to translate speech and convert it to text through real-time transcription with the Speech Translation API in Azure Cognitive Services 
   ms.date: 1/9/2019
   author: gerryaobrien
   ms.author: gerryo

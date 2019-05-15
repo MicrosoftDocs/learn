@@ -3,7 +3,7 @@ uid: learn.azure.app-service-scale-up-scale-out.2-scale-a-web-app-manually
 title: Scale a web app manually
 metadata:
   title: Scale a web app manually
-  description: Describe how to use the Azure portal to manually scale a web app in and out.
+  description: Learn how to use the Azure portal to manually scale a web app in and out.
   ms.date: 04/11/2019
   author: nickwalkmsft
   ms.author: nickwalk
