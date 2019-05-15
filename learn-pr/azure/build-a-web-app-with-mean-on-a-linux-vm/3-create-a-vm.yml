@@ -23,5 +23,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Compute/virtualMachines"
-      name: MeanStack
   hint: "Run the `az vm create` command as shown to create your virtual machine."

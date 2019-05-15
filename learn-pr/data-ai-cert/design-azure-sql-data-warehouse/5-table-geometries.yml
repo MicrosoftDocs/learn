@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.design-azure-sql-data-warehouse.table-geometries
-title: Table Geometries
+title: Table geometries
 metadata:
-  title: Table Geometries - Learn
-  description: Table Geometries - Learn
+  title: Table geometries
+  description: Table geometries
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

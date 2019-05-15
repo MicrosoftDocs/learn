@@ -80,7 +80,7 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
     ```
 
 1. You can try other psql commands.
-    - `-?` to get help.
+    - `\?` to get help.
     - `\dt` to list the tables.
 
 1. When you're finished executing psql operations on your server, execute the command `\q` to quit psql.

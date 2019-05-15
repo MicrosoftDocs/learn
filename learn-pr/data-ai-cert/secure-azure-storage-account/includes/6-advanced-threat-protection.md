@@ -1,12 +1,13 @@
-Detecting threats to your data is an important part of security. As mentioned earlier, you can check an audit trail for all activity against a storage account. However, that's often only going to show you when an intrusion _has already occurred_. What we really want is a way to be notified when suspicious activity is actively occuring. Enter **Azure Storage Advanced Threat Protection**.
+Detecting threats to your data is an important part of security. You can check an audit trail for all activity against a storage account. But that will often only show you that an intrusion _has already occurred_. What you really want is a way to be notified when suspicious activity is happening. That's where the Advanced Threat Protection feature in Azure Storage can help.
 
-Azure Storage Advanced Threat Protection (preview) detects anomalies in account activity and notifies you of potentially harmful attempts to access your account. This layer of protection allows you to address threats without the need to be a security expert or manage security monitoring systems. Today, Storage Threat Detection is available for the Blob service. Security alerts are integrated with Azure Security Center and are sent by email to subscription admins.
+Advanced Threat Protection, now in public preview, detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account. You don't have to be a security expert or manage security monitoring systems to take advantage of this layer of threat protection. 
 
-You can turn on threat protection in the Azure portal through the configuration page of the Azure Storage account.
+Currently, Advanced Threat Protection for Azure Storage is available for the Blob service. Security alerts are integrated with Azure Security Center. The alerts are sent by email to subscription admins.
 
-1. In the **Settings** page, select **Advanced Threat Protection**.
-3. In the **Advanced Threat Protection** configuration blade
-    - Turn **ON** Advanced Threat Protection
-    - Click **Save** to save the new or updated Advanced Threat Protection policy.
+In the Azure portal, you can turn on threat protection on the configuration page of the Azure Storage account.
 
-![Screenshot of Advanced Threat Protection Preview](../media/6-preview.png)
+1. On the **Settings** page, select **Advanced Threat Protection**.
+1. Turn **ON** Advanced Threat Protection.
+1. Select **Save** to save the Advanced Threat Protection policy.
+
+![Screenshot showing how to enable Advanced Threat Protection (preview)](../media/6-preview.png)

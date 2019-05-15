@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.identify-faces-with-computer-vision.subscribe-to-face-api
-title: Subscribe to the Face API
+title: Subscribing to the Face API
 metadata:
-  title: Subscribe to the Face API
+  title: Subscribing to the Face API
   description: Learn how to create a subscription to the Face API
   ms.date: 01/7/2019
   author: gerryaobrien
