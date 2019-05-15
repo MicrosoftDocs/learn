@@ -24,7 +24,7 @@ A *model* is an algorithm that learns information about the data and then provid
 
 Based on the what you're predicting, you can use either the classification algorithm or the continuous value prediction algorithm. A *classification algorithm* predicts discrete values, and the *continuous value prediction algorithm* predicts continuous values. 
 
-To classify something, the only options are models that are based on that assumption. Some examples of classification models are logistic regression and random forest classifier. The outcome predicted by a classification model is finite—it must be one of a predefined set of values. This is because continuous values are numeric and can take on an infinite number of possible values. For example, in theory, total goods sold is infinite and includes a decimal portion. In reality, factors such as number of goods produced, and number of customers constrain the range of the value. However, it is still considered continuous.
+To classify something, the only options are models that are based on that assumption. Some examples of classification models are logistic regression and random forest classifier. The outcome predicted by a classification model is finite-it must be one of a predefined set of values. This is because continuous values are numeric and can take on an infinite number of possible values. For example, in theory, total goods sold is infinite and includes a decimal portion. In reality, factors such as number of goods produced, and number of customers constrain the range of the value. However, it is still considered continuous.
 
 ## Evaluate the model
 

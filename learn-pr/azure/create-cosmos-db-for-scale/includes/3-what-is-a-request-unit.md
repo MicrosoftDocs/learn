@@ -1,10 +1,12 @@
 Next, let's consider the data for your database. Adequate throughput is important to ensure you can handle the volume of transactions for your business needs. Throughput requirements aren't always consistent. For example, you may be building a shopping website that needs to scale during sales or holidays. We'll start by learning about request units and how to estimate throughput requirements.
 
-## What is database throughput? 
+## Provisioning throughput for containers
 
-Database throughput is the number of reads and writes that your database can perform in a single second.
+In Azure Cosmos DB, you provision throughput for your containers to perform writes, reads, updates, and deletes. You can provision throughput for an entire database and have it shared among containers within the database. You can also provision throughput dedicated to specific containers.
 
-To scale throughput strategically, you need to estimate your throughput needs by estimating the number of reads and writes you'll have to support at different times and for different document sizes. If you estimate correctly, you'll keep your customers happy when demand spikes. If you estimate incorrectly, your requests can get rate-limited and operations will have to wait and retry, likely causing high latency and unhappy customers.
+To scale throughput strategically, you need to estimate your throughput needs by estimating the number of operations you'll have to support at different times. If your requests consume all of the provisioned throughput, Azure Cosmos DB will rate-limit your requests. Operations will have to wait and retry, likely causing higher latency.
+
+
 
 ## What is a request unit?
 
@@ -14,11 +16,11 @@ Azure Cosmos DB measures throughput using something called a **request unit (RU)
 
 A single request unit, 1 RU, is equal to the approximate cost of performing a single GET request on a 1-KB document using a document's ID. Performing a GET by using a document's ID is an efficient means for retrieving a document, and thus the cost is small. Creating, replacing, or deleting the same item requires additional processing by the service, and therefore requires more request units.
 
-The number of request units used for an operation changes depending on the document size, the number of properties in the document, the operation being performed, and some additional complex concepts such as consistency and indexing policy.
+The number of request units consumed for an operation changes depending on the document size, the number of properties in the document, the operation being performed, and some additional concepts such as consistency and indexing policy.
 
-If you need to estimate the throughput needs of an application, the Azure Cosmos DB [Capacity Planner](https://www.documentdb.com/capacityplanner) is an online tool that enables you to upload a sample JSON document and set the number of operations you need to complete per second. It then provides an estimated total to reserve.
+When provisioning throughput you should understand how many RU's your most common operations consume. You can [obtain the request unit charge](/azure/cosmos-db/find-request-unit-charge) for any operation on your Azure Cosmos DB containers. Multiply the amount of consumed RU's of each operation by the estimated number of times each operation will be executed per second. You should take this approach for each type of operation (writes, reads, updates, and deletes). If you run several different queries on your data, you should understand how many RU's each query will consume. By summing the amount of consumed RU's for each operation, you will be able to accurately estimate how many RU's to provision.
 
-To manage and plan capacity, Azure Cosmos DB ensures that the number of RUs for a given database operation over a given dataset is deterministic. You can examine the response header to track the number of RUs that are consumed by any database operation. When you understand the factors that affect RU charges and your application's throughput requirements, you can run your application cost effectively.
+To manage and plan capacity, Azure Cosmos DB ensures that the number of RUs for a given database operation over a given dataset is deterministic. When you understand the factors that affect RU charges and your application's throughput requirements, you can run your application cost effectively.
 
 You provision the number of RUs for your application on a per-second basis in increments of 100 RUs per second. To scale the provisioned throughput for your application, you can increase or decrease the number of RUs at any time. You can scale in increments or decrements of 100 RUs. You can make your changes either programmatically or by using the Azure portal. You are billed on an hourly basis.
 
@@ -58,8 +60,8 @@ If you don’t reserve enough request units, and you attempt to read or write mo
 
 You can change the number of request units provisioned to a database at any time. So, during heavy volume periods, you can scale up to accommodate those high demands, and then reduce provisioned throughput during off peak times to reduce costs.
 
-When you create an account, you can provision a minimum of 400 RU/s, or a maximum of 250,000 RU/s in the portal. If you need even more throughput, fill out a ticket in the Azure portal. Setting the initial throughput to 1000 RU/s is recommended for almost all accounts, as it is the minimum value in which your database will autoscale should you need more than 10 GB of storage. If you set the initial throughput to any value less than 1000 RU/s, your database will not be able to scale to larger than 10 GB unless you reprovision the database and provide a partition key. Partition keys enable quick lookup of data in Azure Cosmos DB and enable it to autoscale your database when needed. Partition keys are discussed a bit later in the module.
+When you create an account, you can provision a minimum of 400 RU/s, or a maximum of 250,000 RU/s in the portal. If you need even more throughput, fill out a ticket in the Azure portal. 
 
 ## Summary
 
-You now understand how to estimate and scope throughput for an Azure Cosmos DB using request units, and can make an appropriate selection when creating a new Azure Cosmos DB collection. Request units can be modified at any time, but setting them to 1000 RU/s when you create an account helps ensure your database is ready to scale later.
+You now understand how to estimate and scope throughput for an Azure Cosmos DB using request units, and can make an appropriate selection when creating a new Azure Cosmos DB collection. Request units can be modified at any time.
