@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.tour-azure-portal-features
 metadata:
-  title: Core Cloud Services - Manage services with the Azure portal - Learn
+  title: Core Cloud Services - Manage services with the Azure portal
   description: "Tour the Azure portal features and services, and customize the portal."
   ms.date: 09/24/2018
   author: markjulmar
