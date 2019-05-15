@@ -71,7 +71,7 @@ In this unit, you'll set up the web application and Application Gateway. Next yo
        --cert-password somepassword
     ```
 
-1. Upload the authorization certificate for the VMs in the backend pool to Application Gateway:
+1. Upload the authorization certificate for the VM in the backend pool to Application Gateway:
 
     ```azurecli
     az network application-gateway auth-cert create \
