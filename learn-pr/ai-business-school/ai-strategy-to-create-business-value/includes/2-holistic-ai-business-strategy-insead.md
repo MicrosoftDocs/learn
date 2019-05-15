@@ -1,0 +1,7 @@
+AI exists within the wider world of digital transformation. Understanding the recent history of AI investment and adoption helps to provide not only this context, but also suggests a road map for business decision-makers who are looking to define an AI strategy for their own business. Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he outlines how AI is driving business value across industries and companies.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtTaE]
+
+AI is important for the future evolution of business and our broader society. Peter Zemsky explains that while there is significant ongoing investment in AI from major technology companies, there remain those who see AI as a threat rather than an opportunity. The complexity underpinning AI is sometimes seen as intimidating, which becomes its own barrier to exploring how AI can be leveraged in business, and how organizations can strategically select the right use cases for adopting AI as a part of creating an AI strategy. Peter Zemsky suggests building a high-level understanding of AI to remove that barrier. The case studies in this module are a great place to start.
+
+Next, let’s see how Telefónica, one of the world’s largest telecommunications companies, used AI to transform its relationship with customers. With AI, they increased customer loyalty and retention by improving their experience while giving them more choice about how they interact with the company and consume its products and services.

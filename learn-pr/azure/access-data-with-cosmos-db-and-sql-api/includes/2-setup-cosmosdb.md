@@ -31,24 +31,16 @@ The Azure sandbox has already selected the Concierge Subscription for you in the
     ```
 ### Setup environment variables
 
-1. Set a few environment variables so you don't have to type the common values each time. Start by setting a name for the Azure Cosmos DB account, for example `export NAME="mycosmosdbaccount"`. The field can contain only lowercase letters, numbers and the '-' character, and must be between 3 and 31 characters.
+1. Set a few environment variables so you don't have to type the common values each time. Start by setting a name for the Azure Cosmos DB account, for example `export NAME="mycosmosdbaccount"`. The field can contain only lowercase letters, numbers and the '-' character, and must be between 3 and 31 characters. Replace `<account-name>` below with an account name of your choice.
 
     ```azurecli
-    export NAME="<Azure Cosmos DB account name>"
+    export NAME="<account-name>"
     ```
 
 1. Set the resource group to use the existing sandbox resource group.
 
     ```azurecli
     export RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
-    ```
-
-1. Select the region closest to you, and set the environment variable, such as `export LOCATION="EastUS"`.
-
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
-
-    ```azurecli
-    export LOCATION="<location>"
     ```
 
 1. Set a variable for the database name. Name it "Products" so it matches the database we created in the last module.

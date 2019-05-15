@@ -1,35 +1,41 @@
-Monitoring is a key part of any mission or business-critical workload. It helps to proactively detect and prevent issues that might otherwise cause application or service downtime. There are several ways to monitor Azure Stream Analytics jobs:
+Monitoring is a key part of any mission-critical workload. It helps to proactively detect and prevent issues that might otherwise cause application or service downtime. 
 
-1. Activity log specific to each running job
-1. Real-time dashboards to show service and application health trends
-1. Alerts on application or service issues
-1. Diagnostic logs to investigate issues
+You can monitor Azure Stream Analytics jobs by using several tools:
 
-## Activity log
+* An activity log for each running job
+* Real-time dashboards that show service and application health trends
+* Alerts on issues in applications or services
+* Diagnostic logs
 
-The Azure Stream Analytics activity log provides details about each job you run. It's a low-level troubleshooting capability that can help identify issues with data sources, outputs, or transformation queries. There's an Activity Log blade available with each job you create. You can expand to see each job and then select each event to see the details in JSON as shown here.
+## Activity logs
 
-![Screenshot of Activity Log](../media/9-activity-log.png)
+The Stream Analytics activity log provides details about each job you run. This low-level troubleshooting tool can help you identify issues with data sources, outputs, or transformation queries. 
+
+Each job you create has an activity log. In the log, expand each job and then select an event to see details in the JSON file.
+
+![Screenshot of an activity log](../media/9-activity-log.png)
 
 ## Dashboards
 
-To view live dashboards for key health metrics of your Stream Analytics jobs, go to the Azure portal, select your Stream Analytics job, and select Metrics under Monitoring.
+Dashboards show key health metrics for your Stream Analytics jobs. To view a live dashboard, go to the Azure portal, select your Stream Analytics job, and under **Monitoring**, select **Metrics**.
 
-![Screenshot of Azure Stream Analytics Dashboard in the Azure portal](../media/9-dashboard.png)
+![Screenshot of a Stream Analytics dashboard in the Azure portal](../media/9-dashboard.png)
 
 ## Alerts
 
-To enable proactive detection of issues, Azure Stream Analytics can be configured to fire alerts based on various metrics and thresholds. To configure alerts in the Azure portal, navigate to your Stream Analytics job, and select **Alert rules** under **Monitoring**. Then select **+ New alert rule**.
+To proactively detect issues, you can set up Stream Analytics to fire alerts based on various metrics and thresholds. To set up alerts in the Azure portal, in your Stream Analytics job, under **Monitoring**, select **Alert rules** > **New alert rule**.
 
-![Screenshot of Showing Alert Rule](../media/9-alert-rule.png)
+![Screenshot showing the Alert rules page in the Azure portal](../media/9-alert-rule.png)
 
-![Screenshot of Creating Alert Rule](../media/9-create-alert-rule.png)
+As you're setting up your rules, you can choose to send alerts by email, SMS, or voicemail. You can also use alerts to trigger workflows.
 
-Alerts can be configured to be sent as emails, SMS, or voicemail. Also, alerts can also be used to trigger other workflows.
+![Screenshot showing how to create an alert rule](../media/9-create-alert-rule.png)
 
-## Diagnostics
-Diagnostic logging is a key part of the operational infrastructure to help root-cause issues in production deployments. Stream Analytics diagnostics, off by default, can be turned on in Azure portal as needed by selecting the Stream Analytics job and selecting **Diagnostic logs** under **Monitoring**. Diagnostic logs can be conveniently delivered to various sinks or destinations for root-cause analysis.
+## Diagnostic logs
+Diagnostic logging is a key part of operational infrastructure. Use diagnostic logs to help find root-cause issues in production deployments. You can conveniently deliver diagnostic logs to various sinks or destinations for root-cause analysis.
 
-Diagnostics settings can be persisted in an Azure Storage account, sent to Azure Event Hub, or sent to Azure Log Analytics. Diagnostics logs can be generated for job execution or job authoring.  
+Stream Analytics diagnostics is turned off by default. But in the Azure portal, you can turn it on when you need it. In the Stream Analytics job, under **Monitoring**, select **Diagnostic logs**. 
 
-![Screenshot of Configuring Diagnostic Settings](../media/9-configure-diagnostic-settings.png)
+You can persist diagnostics settings in an Azure Storage account or send them to Azure Event Hubs or Azure Log Analytics. Generate diagnostics logs for job execution or job authoring. 
+
+![Screenshot showing the Diagnostics settings page in the Azure portal](../media/9-configure-diagnostic-settings.png)
