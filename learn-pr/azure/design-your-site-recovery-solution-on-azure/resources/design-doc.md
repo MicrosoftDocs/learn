@@ -67,7 +67,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
     - List the differences between Azure Backup and Azure Site Recovery and identify a scenario each should be used
     - Describe three Azure features that contribute to High Availability of VMs
 
-1. **Working with Azure Site Recovery**
+1. **BCDR with Azure Site Recovery**
 
     List the content that will enable the learner to *Work with Azure Site Recovery*:
 
@@ -94,7 +94,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
         - Load balanced traffic
         - IP subnet/gateway consistency
 
-1. **Preparing your environment for Azure Recovery**
+1. **Preparing your environment for Azure Site Recovery**
 
    Following on from the introduction scenario, you have created your BCDR plan and are now looking to protect your servers using Site Recovery in the easiest way possible. Those servers already in Azure will be replicated to a secondary region, and those located on-premises on your VMware platform will be replicated into Azure.
 
@@ -128,7 +128,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
     - Which of the following are valid Site Recovery URL's which must be allowed through the firewall?
     - What happens to a VMs network adaptors during migration when the source VM has several connected to different networks?
 
-1. **Setting up Site Recovery**
+1. **Implementing Azure Site Recovery**
 
     Azure virtual machines
 
@@ -175,7 +175,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
         - OVA, OVF, .exe
     - Which particular feature of the configuration server installs the mobility service on to     the replicated VM's?
 
-1. **Monitoring Site Recovery**
+1. **Monitoring Azure Site Recovery**
 
     - Explore the Dashboard which is used to monitor Site Recovery
         - How to use it
