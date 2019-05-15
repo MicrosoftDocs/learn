@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit  
 uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.knowledge-check
-title: Knowledge Check  
+title: Knowledge check  
 metadata:    
-  title: Knowledge Check    
-  description: Check your knowledge around content moderation for text  
+  title: Knowledge check    
+  description: Check your knowledge of content moderation for text.  
   ms.date: 1/28/2019    
   author: gerryaobrien    
   ms.author: gerryo    
@@ -14,25 +14,25 @@ durationInMinutes: 7
 quiz:
   title: Check your knowledge
   questions: 
-  - content: "What type of value is returned for the category, under classification of the text?"
+  - content: "Under the classification of the text, what type of value is returned for the category?"
     choices:
     - content: "A percentage indicating which category is most appropriate"
       isCorrect: false
-      explanation: "Returned results for categories are not in percentages"
-    - content: "Value between 0 and 1"
+      explanation: "Returned results for categories aren't in percentages."
+    - content: "A value between 0 and 1"
       isCorrect: true
-      explanation: "Correct, the categories are rated with a value between 0 and 1 with values closer to 1 being more positive for the match."
-    - content: "Boolean value indicating a human review is necessary"
+      explanation: "Correct. The categories are rated with a value between 0 and 1, with values closer to 1 being more positive for the match."
+    - content: "A Boolean value indicating that a human review is necessary"
       isCorrect: false
-      explanation: "While this value makes use of the scoring values for categories, it is dependant on the internal score thresholds and is not a category score."
+      explanation: "Although this Boolean value depends on the scoring values for the categories, it isn't a category score itself."
   - content: "What is the purpose of the ListId value in a response from the profanity check?"
     choices:
-    - content: "The profanity word list that was used for the checking"
+    - content: "It's the identifier of the profanity word list that was used for the check."
       isCorrect: false
-      explanation: "While you can create a custom list, this ID does not represent a specific list that was used."
-    - content: "The language ID that the list used for testing"
+      explanation: "Although you can create a custom list, this ID doesn't represent a specific list that was used."
+    - content: "It's the language ID that the list used for testing."
       isCorrect: false
-      explanation: "There is no provision to determine the language using a list ID in this API."
-    - content: "The ID of a term in a custom term list that was identified in the text"
+      explanation: "The ListId isn't used to determine the language."
+    - content: "It's the identifier of a term in a custom term list."
       isCorrect: true
-      explanation: "Correct, the ListId refers to terms found in custom term lists, if available."
+      explanation: "Correct. The ListId identifies a specific term found in a custom term list, if such lists are available."

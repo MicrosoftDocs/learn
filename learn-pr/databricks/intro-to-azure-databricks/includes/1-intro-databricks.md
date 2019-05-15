@@ -1,4 +1,4 @@
-Azure Databricks is a fully managed version of the wildly popular open-source [Apache Spark](https://spark.apache.org/) analytics and data processing engine. As a whole, Azure Databricks is a premium offering, that brings you an enterprise-grade and secure cloud-based Big Data and Machine Learning platform.
+Azure Databricks is a fully-managed version of the open-source [Apache Spark](https://spark.apache.org/) analytics and data processing engine. Azure Databricks is an enterprise-grade and secure cloud-based big data and machine learning platform.
 
 Databricks provides a notebook-oriented Apache Spark as-a-service workspace environment, making it easy to manage clusters and explore data interactively.
 
@@ -10,4 +10,4 @@ In this module, you will:
 - Create a notebook inside your home folder in Databricks
 - Understand the fundamentals of Apache Spark notebook
 - Create, or attach to, a Spark cluster
-- Identify the types of tasks well suited to Apache Spark’s Unified Analytics Engine
+- Identify the types of tasks well suited to the unified analytics engine Apache Spark
