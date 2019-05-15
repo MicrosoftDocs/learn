@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.data-engineering-processes.roles-and-responsibilities
-title: Identify the data and AI job roles
+title: Identify job roles
 metadata:
-  title: Identify the data and AI job roles - Learn
-  description: Understand the job roles and responsibilities in modern data projects - Learn
+  title: Identify job roles
+  description: Understand job roles and responsibilities in modern AI data projects
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
