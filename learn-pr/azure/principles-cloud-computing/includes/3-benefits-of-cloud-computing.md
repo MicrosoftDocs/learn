@@ -11,8 +11,8 @@ Cloud computing provides a **pay-as-you-go** or **consumption-based** pricing mo
 This consumption-based model brings with it many benefits, including:
 
 - No upfront costs
-- No need to purchase and manage  costly infrastructure that may or may not use to its fullest
-- The ability to pay for additional resources if and when they are needed
+- No need to purchase and manage costly infrastructure that you may not use to its fullest
+- The ability to pay for additional resources only when they are needed
 - The ability to stop paying for resources that are no longer needed
   :::column-end:::
   :::column:::

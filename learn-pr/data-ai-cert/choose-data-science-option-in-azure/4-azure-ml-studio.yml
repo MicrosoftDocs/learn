@@ -2,8 +2,8 @@
 uid: learn.data-ai.choose-azure-data-science-option.azure-ml-studio
 title: Azure Machine Learning Studio
 metadata:
-  title: Azure Machine Learning Studio - Learn
-  description: Azure Machine Learning Studio - Learn
+  title: Azure Machine Learning Studio
+  description: Azure Machine Learning Studio
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer

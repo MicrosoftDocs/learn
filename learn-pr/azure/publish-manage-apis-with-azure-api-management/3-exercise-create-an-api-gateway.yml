@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-manage-apis-with-azure-api-management.3-exercise-create-an-api-gateway
+title: Exercise - Create an API gateway
+metadata:
+  title: Exercise - Create an API gateway
+  description: Exercise - Create an API gateway
+  ms.date: 05/02/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-an-api-gateway.md)]

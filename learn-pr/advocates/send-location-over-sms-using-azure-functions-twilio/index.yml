@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio
 metadata:
-  title: Share your location as a text message using Azure Functions and Twilio - Learn
-  description: Learn how to use location tracking on your phone mixed with Azure functions and Twilio to share your location with your friends as a text message.
+  title: Share your location as a text message using Azure Functions and Twilio
+  description: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
   ms.date: 09/24/2018
   author: jimbobbennett 
   ms.author: jabenn
@@ -10,19 +10,18 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: luken
 title: Share your location as a text message using Azure Functions and Twilio
-summary: Learn how to use location tracking on your phone mixed with Azure functions and Twilio to share your location with your friends as a text message.
+summary: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
 abstract:  |
   In this module, you will:
   - Create a cross-platform Xamarin.Forms app that uses Xamarin.Essentials
   - Create a cross-platform UI using XAML with application logic in a ViewModel, as well as bind properties in a ViewModel to the UI
   - Detect the user's location
-  - Create an Azure Function with an HTTP trigger and run it locally
-  - Call an Azure Function from a mobile app, passing data as JSON
-  - Bind an Azure Function to Twilio to send an SMS message
-  - Publish an Azure Function to Azure
-
-  [!include[](../../includes/azure-lab-environment-not-available.md)]
-prerequisites: None
+  - Create the Azure Functions with an HTTP trigger and run it locally
+  - Call the Azure Functions from a mobile app, passing data as JSON
+  - Bind the Azure Functions to Twilio to send an SMS message
+  - Publish an Azure Functions app to Azure
+prerequisites: | 
+  [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
 levels:
 - intermediate
@@ -35,6 +34,7 @@ products:
 - azure-portal
 units:
 #TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
+- learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.0-introduction
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.1-create-twilio-account-launch-vs
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.2-create-your-xamarin-forms-app-with-xamarin-essentials
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.3-build-your-xamarin-app
@@ -43,7 +43,7 @@ units:
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.6-call-the-mobile-backend
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.7-bind-the-azure-function-to-twilio
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.8-publish-to-azure
-- learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.9-summary-and-cleanup
 - learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.10-knowledge-check
+- learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.9-summary-and-cleanup
 badge:
   uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
