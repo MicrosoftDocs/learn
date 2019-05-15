@@ -2,8 +2,8 @@
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage.copy-data-from-gen1-to-gen2
 title: Exercise - Use Azure Data Factory to copy data from Data Lake Storage Gen1 to Data Lake Storage Gen2 
 metadata:
-  title: Exercise - Use Azure Data Factory to copy data from Data Lake Storage Gen1 to Data Lake Storage Gen2  - Learn
-  description: Use Azure Data Factory to copy data from Data Lake Storage Gen1 to Data Lake Storage Gen2  - Learn
+  title: Exercise - Use Azure Data Factory to copy data from Data Lake Storage Gen1 to Data Lake Storage Gen2 
+  description: Use Azure Data Factory to copy data from Data Lake Storage Gen1 to Data Lake Storage Gen2  
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
