@@ -22,7 +22,6 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Compute/virtualMachines"
-      name: support-web-vm01
   hint: "Run the `az vm create` command as shown to create your virtual machine."
 # TODO: See https://github.com/MicrosoftDocs/learn-pr/issues/2816
 # - action: exists

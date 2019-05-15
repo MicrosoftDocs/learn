@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-ai-guiding-principles.guiding-principles
+title: Responsible AI - Establishing guiding principles 
+metadata:
+  title: Responsible AI - Establishing guiding principles 
+  description: At Microsoft, we’ve recognized six principles that we believe should guide AI development and use - fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI. We recognize that every individual, company, and region will have their own beliefs and standards which should be reflected in their AI journey. We want to share our perspective as you consider the development of your own guiding principles.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-guiding-principles.md)] 

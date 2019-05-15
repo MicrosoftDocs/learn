@@ -1,21 +1,21 @@
-During app development, it can be helpful to run quick load tests to help you identify code or other issues that might impact on your users' experience. In this exercise, you'll deploy a basic version of the **Contoso Costume Rentals** app, and then configure and run a test using the Azure portal. You'll then modify the app, by adding some media, and then rerun your test to see if this change has had any effect on the app's performance.
+During app development, running quick load tests can help you identify code issues or other issues that might affect your user experience. In this exercise, you'll deploy a basic version of the Contoso Costume Rentals app. You'll then configure and run a test in the Azure portal. Finally, you'll modify the app by adding some media and then rerun the test to see if the change has any effect on the app's performance.
 
 [!include[](../../../includes/azure-free-trial-note.md)]
 
 ## Create an Azure DevOps account
 
-You'll need a DevOps account for the exercises in this module. Skip this step if you already have a DevOps account associated with your Azure account.
+You need an Azure DevOps account for the exercises in this module. Skip this step if you already have an Azure DevOps account associated with your Azure account.
 
-1. Go to https://dev.azure.com, and sign up for a DevOps account (if you don't already have one); use your Azure account as login. ***Do not*** create a new organization.
+- Go to https://dev.azure.com, and sign up for a DevOps account (if you don't already have one). Use your Azure account to sign in. Don't create a new organization.
 
 ## Use Azure CLI to deploy a web app
 
-In this step, you're going to use Azure CLI commands to create a php-based Web app using code from a GitHub repository. 
+In this step, you'll use Azure CLI commands to create a php-based web app by using code from a GitHub repository.
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure subscription. 
-1. In the Azure portal, click **Cloud Shell** on the portal toolbar, and if prompted, select the **Bash** shell option.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using your Azure subscription. 
+2. In the Azure portal, select **Cloud Shell** on the toolbar at the top of the window, and, if prompted, select the **Bash** shell option.
 
-1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you (use `az account list-locations` to get a list of valid locations).
+3. Run the following commands in the Azure Cloud Shell to set some variables, replacing  `<your-local-Azure-region>` with the closest region to you. (Use `az account list-locations` to get a list of valid locations.)
 
     ```azurecli
     gitrepo=https://github.com/MicrosoftDocs/mslearn-load-test-web-app-azure-devops
@@ -25,7 +25,7 @@ In this step, you're going to use Azure CLI commands to create a php-based Web a
     resourcegroupName=contosorentalsRG
     ```
 
-1. Run the following commands in the Cloud Shell to deploy the web app.
+4. Run the following commands in the Cloud Shell to deploy the web app:
     ```azurecli
     # Create a resource group
     az group create --name $resourcegroupName --location $appLocation
@@ -36,7 +36,7 @@ In this step, you're going to use Azure CLI commands to create a php-based Web a
     # Create a web app
     az webapp create --name $appName --resource-group $resourcegroupName --plan $appPlanName
     
-    # Deploy code from GitHub repository
+    # Deploy code from a GitHub repository
     az webapp deployment source config \
         --name $appName \
         --resource-group $resourcegroupName \
@@ -44,57 +44,59 @@ In this step, you're going to use Azure CLI commands to create a php-based Web a
         --branch master --manual-integration
     ```
 
-1. Wait until the commands have completed before continuing with the exercise.
+5. Wait until the commands complete before you continue with the exercise.
 
-### Configure and verify your Web app
+### Configure and verify your web app
 
-In this step, you're going to finalize the deployment of your Web app by editing a configuration file, and then verify that the app works.
+In this step, you'll finalize the deployment of your web app by editing a configuration file. You'll then verify that the app works.
 
-1. In the Azure portal, click **App Services** in the sidebar menu on the left.
-1. In the **App Services** list, click **contosorentals\<_number_\>**, and then in the **Overview** section, click the **Click to copy** to the right of the URL string.
-1. In the **Development Tools** section, click **App Service Editor (Preview)**, and then on the App Service Editor (Preview) pane, click **Go**. 
-1. In the App Service Editor, in the file list, expand **includes**, then click **config.php**, and then in line 10 paste your copied URL string to replace `app-url-here` (do not remove the quote marks).
+1. In the Azure portal, select **App Services** in the left navigation pane.
+1. In the **App Services** list, select **contosorentals\<number\>**. In the **Overview** section, select **Click to copy** to the right of the URL string.
+1. In the **Development Tools** section, select **App Service Editor (Preview)**, and then, in the **App Service Editor (Preview)** pane, select **Go**. 
+1. In the Azure App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 10, paste the copied URL string to replace `app-url-here`. (Don't remove the quotation marks.)
 
-![Configure Web app URL](../media/3-configure-webapp.png)
+   ![Configure web app URL](../media/3-configure-webapp.png)
 
-1. Open a new browser tab, paste your copied URL string into the address box, and press Enter.
-1. Verify that you get the home page for the **Contoso Costume Rentals** website.
+1. Open a new browser tab, paste the URL string you copied earlier into the address box, and select Enter.
+1. Verify that you get the home page for the Contoso Costume Rentals website.
 
-> [!NOTE]
-> This website is text-only at this point.
+   > [!NOTE]
+   > The website is text-only at this point.
 
-![Web app default page](../media/3-webapp-default-page.png)
+   ![Web app home page](../media/3-webapp-default-page.png)
 
 ## Create and run a performance test
-In this step, you're going to create and run a performance test for your Web app. You'll start by creating a new Azure DevOps organization to save the results of the test.
+In this step, you'll create and run a performance test for your web app. You'll start by creating a new Azure DevOps organization so you can save the results of the test.
 
-1. Switch back to the Azure portal, and on the **contosorentals\<_number_\>** App Service pane, in the **Development Tools** section, click **Performance test**.
-1. On the **Performance test** pane, click **Set organization**, and then click **Create New**.
-1. In the **Azure DevOps Organization** box, type **ContosoRentals**.
-1. Click **Subscription**, select your Azure subscription, and then click **OK**.
-1. Wait until the new organization has been created.
-1. Click **+ New** to create a new performance test, with these settings:
+1. Go back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the **Development Tools** section, select **Performance test**.
+1. In the **Performance test** pane, select **Set organization**, and then select **Create New**.
+1. In the **Azure DevOps Organization** box, enter **ContosoRentals**.
+1. Select **Subscription**, select your Azure subscription, and then select **OK**.
+1. Wait until the new organization is created.
+1. Select **New** to create a new performance test. Use these settings:
    - Test type: **Manual Test**, using the default URL
    - Name: **SimplePerfTest01**
-   - Generate load from: Use the default location
+   - Generate load from: the default location
    - User load: **40**
    - Duration (minutes): **1**
-1. Click **Run test**; the test will initially show as **Queued**, and it may be several minutes before the test run starts.
-1. When the test status changes to show. In Progress**, click the test and observe the test as it runs.
-1. When the test has completed, close the performance test pane; you'll look at the results in the next unit.
+1. Select **Run test**. The test will initially show as **Queued**. It might be several minutes before the test run starts.
+1. When the test status changes to **In Progress**, select the test and observe it as it runs.
+1. When the test is finished, close the **Performance test** pane. You'll look at the results in the next unit.
 
-## Modify website and rerun the performance test
+## Change the website and rerun the performance test
 
-You'll now configure and run a new test, after adding graphics to your site.
+ Now, after adding graphics to your site, you'll configure and run a new test
 
 1. In your browser, switch to the App Service Editor browser tab.
-1. In the App Service Editor, in the file list, expand **includes**, then click **config.php**, and then in line 11, change `false` to `true`.
-![Configure EWeb app to display graphics](../media/3-configure-webapp-graphics.png)
-1. Switch to the Web app's browser tab, and refresh the page; you should now see a colored box at top of page that varies by page, and a colored box with text and circles at the bottom of the page that loads a new set of random colors on each page load.
-![Default page with graphics](../media/3-webapp-default-page-with-graphics.png)
-1. You might notice that some of the graphics are slow to load, so you'll now rerun the performance test. 
-1. Switch back to the Azure portal, and on the **contosorentals\<_number_\>** App Service pane, in the **Development Tools** section, click **Performance test**, then click **SimplePerfTest01**, click **Rerun**, and then on the **Rerun performance test** pane, click **Run test**.
-1. Close the performance test pane, and wait for the test run the complete; you'll look at details in the next unit.
+1. In the App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 11, change `false` to `true`:
+
+   ![Configure web app to display graphics](../media/3-configure-webapp-graphics.png)
+1. Switch to the web app's browser tab and refresh the page. You should now see a box at top of the page that varies by page. You'll also see a box containing text and circles at the bottom of the page that loads a new set of random colors on each page load:
+
+   ![Webpage with graphics](../media/3-webapp-default-page-with-graphics.png)
+1. You might notice that some of the graphics are slow to load, so you'll now rerun the performance test.
+1. Switch back to the Azure portal. In the **contosorentals\<number\>** App Service pane, in the **Development Tools** section, select **Performance test**, select **SimplePerfTest01**, select **Rerun**, and then, in the **Rerun performance test** pane, select **Run test**.
+1. Close the performance test pane and wait for the test run to finish. You'll look at the details in the next unit.
 1. You can now close the App Service Editor browser tab.
 
-In the next unit, you'll look at how to use performance test results to help optimize your Web apps.
+In the next unit, you'll learn how to use performance test results to optimize your web apps.

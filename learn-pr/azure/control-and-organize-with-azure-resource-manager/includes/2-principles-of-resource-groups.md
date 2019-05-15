@@ -1,8 +1,5 @@
 In your first week on your new job, you've  looked through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they aren't organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's look at what they are, and how they can be used.
 
-> [!NOTE]
-> For this module, you can use your own subscription to follow along. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work to follow along with these exercises.
-
 [!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
 
 ## What are resource groups?
@@ -56,7 +53,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 ## Explore a resource group and add a resource
 
-In the portal, select **Resource groups** on the left menu, and select your newly created resource group.
+In the portal, select **Resource groups** on the left menu, and select your newly created resource group. Note that you may also see a resource group called **NetworkWatcherRG**. You can ignore this resource group, it's created automatically to enable Network Watcher in Azure virtual networks.
 
 ![Overview panel of resource group](../media/2-rg-overview.png)
 
@@ -74,7 +71,7 @@ We don't have any resources in this resource group yet, so the list at the botto
 
 1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the resource group that you created earlier. Enter **192.168.0.0/24** for both the **Address space** and subnet **Address range**. Leave the defaults for all other options, and click **Create**.
 
-1. Repeat the steps again to create one more VNet. Name it **msftlearn-vnet2**, and make sure to place it in the resource group that you created earlier.
+1. Repeat the steps again to create one more VNet, where both the **Address space** and subnet **Address range** are for a different network than your previous network, (e.g. **192.168.100.0/24**). Name it **msftlearn-vnet2**, and make sure to place it in the resource group that you created earlier.
 
 1. Go back to your resource group, and on the **Overview** panel you should see the two VNets you created.
 

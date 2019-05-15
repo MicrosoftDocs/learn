@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.choose-azure-data-science-option.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-summary.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Azure Machine Learning service supports which programming language."
+    choices: 
+    - content: "R"
+      isCorrect: false
+      explanation: "This is not correct.  R is not supported."
+    - content: "Julia"
+      isCorrect: false
+      explanation: "This is not correct.  Julia is not supported."
+    - content: "Python"
+      isCorrect: true
+      explanation: "This is correct.  Python is supported by Azure Machine Learning service."
+
+  - content: "Azure Databricks is built on which Big Data platform?"
+    choices: 
+    - content: "Azure SQL Data Warehouse"
+      isCorrect: false
+      explanation: "This is not correct.  Azure Databricks does not run on Azure SQL Data Warehouse."
+    - content: "SQL Server"
+      isCorrect: false
+      explanation: "This is not correct.  Azure Databricks does not run on SQL Server."
+    - content: "Apache Spark"
+      isCorrect: true
+      explanation: "This is correct.  Azure Databricks makes using Spark easier."
+
+  - content: "Which is not an operating system available for an Azure Data Science Virtual Machine?"
+    choices: 
+    - content: "Windows"
+      isCorrect: false
+      explanation: "This is not correct.  Data Science VMs running Windows are available."
+    - content: "Linux"
+      isCorrect: false
+      explanation: "This is not correct.  Data Science VMs running Linux are available."
+    - content: "Apple iOS"
+      isCorrect: true
+      explanation: "This is correct.  Data Science VMs running Apple iOS are not available."  
