@@ -1,4 +1,4 @@
-You have now identified certain metrics in Azure Blob storage that you'll want to monitor on an ongoing basis when client proof files are moved onto the platform. Rather than keep creating a chart every time you want to see the metric data, you want to see how to use dashboards to check on specific metrics regularly.
+You have now identified certain metrics in Azure Blob storage that you'll want to monitor on an ongoing basis when client files are moved onto the platform. Rather than keep creating a chart every time you want to see the metric data, you want to see how to use dashboards to check on specific metrics regularly.
 
 Management has also asked for regular reports about the use and performance of the platform to ensure clients will be satisfied as more files are moved into Azure. You want to see if management can be given dashboards for this purpose.
 

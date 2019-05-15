@@ -2,8 +2,8 @@
 uid: learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-service-with-ds-process
 title: Azure Machine Learning Service within a data science process
 metadata:
-  title: Azure Machine Learning Service within a data science process - Learn
-  description: Azure Machine Learning Service within a data science process - Learn
+  title: Azure Machine Learning Service within a data science process
+  description: Azure Machine Learning Service within a data science process
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer

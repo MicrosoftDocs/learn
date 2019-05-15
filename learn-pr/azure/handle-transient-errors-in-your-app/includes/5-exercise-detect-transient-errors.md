@@ -83,7 +83,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
 
-1. Compile and run the .Net Core app.
+1. Compile and run the .NET Core app.
 
     ```bash
     dotnet build
@@ -151,7 +151,7 @@ Let's see what happens when we break the connection to the backend database.
 
 1. Build and run the app.
 
-1. Compile and run the .Net Core app.
+1. Compile and run the .NET Core app.
 
     ```bash
     dotnet build

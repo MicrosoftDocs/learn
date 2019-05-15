@@ -2,8 +2,8 @@
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage.upload-data-using-explorer
 title: Exercise - Use Azure Storage Explorer to upload data to Azure Storage 
 metadata:
-  title: Exercise - Use Azure Storage Explorer to upload data to Azure Storage - Learn
-  description: Use Azure Storage Explorer to upload data to Azure Storage - Learn
+  title: Exercise - Use Azure Storage Explorer to upload data to Azure Storage
+  description: Use Azure Storage Explorer to upload data to Azure Storage 
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

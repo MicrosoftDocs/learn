@@ -18,7 +18,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
 
 1. Make sure you are still in the C# **chatapp-retry** folder with the following command.
     ```bash
-    cd ~/mslearn-handle-transient-errors-in-your-app/java/chatapp-retry/
+    cd ~/mslearn-handle-transient-errors-in-your-app/csharp/chatapp-retry/
     ```
 1. In the cloud shell, add `Microsoft.Extensions.Logging` to the app by installing the following three dependencies.
 
