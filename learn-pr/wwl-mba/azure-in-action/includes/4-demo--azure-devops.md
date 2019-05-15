@@ -42,7 +42,7 @@ First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Ma
 
 **#comment**
 
-Video placeholder for Hridayraj’s on-camera scenario overview video. Video file can be found [here](https://microsoft.sharepoint.com/teams/MBASpecialistTeam/Shared%20Documents/Intelligent%20Cloud/Generalist%201.1/Development/01.%20See%20Azure%20in%20action/Videos/WIP/DevOpsPlaceholders/DevOps_Demo_Scenario_Overview.mp4) pending upload to Red Tiger.
+Video placeholder for Hridayraj’s on-camera scenario overview video. 
 
 ---
 
@@ -72,13 +72,13 @@ Follow along as the Contoso Air DevOps Engineer revamps a critical component of 
 | :--- | :--- |
 | ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn to configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.|
 
->[!VIDEO MISSINGVIDEOURL]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRN]
 
 ---
 
 **#comment**
 
-Placeholder for Hridayraj’s Azure Pipelines demo video. Video file can be found [here](https://microsoft.sharepoint.com/teams/MBASpecialistTeam/Shared%20Documents/Intelligent%20Cloud/Generalist%201.1/Development/01.%20See%20Azure%20in%20action/Videos/WIP/DevOpsPlaceholders/DevOps_Demo_Azure_Pipelines.mp4) pending upload to Red Tiger.
+Placeholder for Hridayraj’s Azure Pipelines demo video.
 
 ---
 
@@ -106,13 +106,13 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 | :--- | :--- |
 | ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn why Application Insights can help you find out how your app is performing.|
 
->[!VIDEO MISSINGVIDEOURL]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRL]
 
 ---
 
 **#comment**
 
-Video placeholder for Hridayraj’s Application Insights demo video. Video can be found [here](https://microsoft.sharepoint.com/teams/MBASpecialistTeam/Shared%20Documents/Intelligent%20Cloud/Generalist%201.1/Development/01.%20See%20Azure%20in%20action/Videos/WIP/DevOpsPlaceholders/DevOps_Application_Insights.mp4) pending upload to Red Tiger.
+Video placeholder for Hridayraj’s Application Insights demo video. 
 
 ---
 
