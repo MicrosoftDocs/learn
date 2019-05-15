@@ -3,7 +3,7 @@ uid: learn.capture-page-load-times-application-insights.4-view-application-insig
 title: Viewing Application Insights metrics in the Azure portal
 metadata:
   title: Viewing Application Insights metrics in the Azure portal
-  description: Find out how to use the rich visualization tools in that Azure portal to investigate web app telemetry.
+  description: Learn how to use the rich visualization tools in the Azure portal to investigate web app telemetry.
   ms.date: 01/08/2019
   author: adrianstevens
   ms.author: adrianstevens
@@ -13,28 +13,28 @@ durationInMinutes: 10
 content: |
   [!include[](includes/4-view-application-insights-metrics.md)]
 quiz:
-  title: Find out about the behavior of an Azure web app with Application Insights
+  title: Examine the behavior of an Azure web app by using Application Insights
   questions:
-  - content: "You have enabled Application Insights for your web app. In which of the following Azure resources will telemetry data be stored for the app?"
+  - content: "You've enabled Application Insights for your web app. In which of the following Azure resources will telemetry data be stored for the app?"
     choices:
     - content: "In the web app."
       isCorrect: false
-      explanation: "The web app sends its telemetry data to the Application Insights resource, where it is stored for analysis."
+      explanation: "The web app sends its telemetry data to the Application Insights resource, where it's stored for analysis."
     - content: "In the Application Insights resource."
       isCorrect: true
-      explanation: "The web app sends its telemetry data to the Application Insights resource, where it is stored for analysis."
+      explanation: "The web app sends its telemetry data to the Application Insights resource, where it's stored for analysis."
     - content: "In the Application Insights dashboard."
       isCorrect: false
-      explanation: "the Application Insights dashboard is only used to display analyses of the telemetry data. The web app sends telemetry data to the Application Insights resource, where it is stored."
-  - content: "You have created a new custom chart and pinned it to an Application Insights dashboard. However, other users of the dashboard cannot see the new chart. What should you do to resolve the problem?"
+      explanation: "The Application Insights dashboard is used only to display an analysis of telemetry data. The web app sends telemetry data to the Application Insights resource, where it's stored."
+  - content: "You create a custom chart and pin it to an Application Insights dashboard. Other users of the dashboard can't see the new chart. What should you do to resolve the problem?"
     choices:
     - content: "Re-publish the Application Insights dashboard."
       isCorrect: true
-      explanation: "When you have made changes to a dashboard in Azure, other dashboard users do not see them until you publish them."
-    - content: "Make sure that you have specified a filter in the chart."
+      explanation: "When you make changes to a dashboard in Azure, other dashboard users won't see the changes until you publish them."
+    - content: "Make sure you've specified a filter in the chart."
       isCorrect: false
-      explanation: "You can use a filter to control the data displayed in the chart, but the chart will not be shown to other users until you re-publish it."
+      explanation: "You can use a filter to control the data displayed in the chart, but the chart won't be visible to other users until you re-publish it."
     - content: "Choose a different aggregation method in the chart."
       isCorrect: false
-      explanation: "You can use an aggregation method to control how data is summarized in the chart, but the chart will not be shown to other users until you re-publish it."
+      explanation: "You can use an aggregation method to control how data is summarized in the chart, but the chart won't be visible to other users until you re-publish it."
       
