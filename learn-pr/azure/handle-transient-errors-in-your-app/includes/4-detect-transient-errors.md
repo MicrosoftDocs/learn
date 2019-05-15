@@ -2,7 +2,6 @@ After exploring the possible transient faults your company's applications could 
 
 Representational State Transfer (REST), is an approach for writing client and server application. RESTful services are stateless, the client and server don't keep track of the state of the other. A REST request is sent from a client, and a response is returned. REST requests are normally sent via HTTP requests (for example GET and POST), so standard HTTP errors can be returned in the response for example:
 
-
 - **404**: URI unavailable, the server can't find the requested resource on the server
 - **408**: Request timeout, client hasn't sent a request in time for the server
 - **449**: Microsoft-specific return code, that gives the client information that can be used to retry the operation
@@ -17,7 +16,7 @@ Azure Cosmos DB databases are RESTful services, so can return all the above plus
 
 Azure SQL Database also has well-defined error codes, for example, **40501**: The service is currently busy. Retry the request after **X** seconds.
 
-Your team's chat app implements a virtual white board. People can leave messages for the whole team to read. It uses a Cosmos DB database as the message store, created with the MongoDB API. The team could quickly create clients for the chat app in C# .Net Core, Java, and Node using their previous MongoDB knowledge.
+Your team's chat app implements a virtual white board. People can leave messages for the whole team to read. It uses a Cosmos DB database as the message store, created with the MongoDB API. The team could quickly create clients for the chat app in .NET Core using C#, Java, and Node using their previous MongoDB knowledge.
 
 The chat app should detect the following types of errors:
 

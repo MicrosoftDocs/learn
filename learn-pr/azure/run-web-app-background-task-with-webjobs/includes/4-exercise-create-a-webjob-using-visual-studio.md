@@ -30,9 +30,9 @@ echo "Created storage account $STORAGE_ACCOUNT_NAME"
 
 Next, use Visual Studio 2017 to create and publish a web app. This will represent the already-deployed production website in our watch-retailer scenario.
 
-1. In the Visual Studio start page, select **File**, click **New**, and then click **Project..**.
-1. In the **New Project** dialog box, on the left-hand pane, select **Web**.
-1. In the center pane, click **ASP.NET Web Application (.Net Framework)**.
+1. From the top menu bar in Visual Studio, select **File** > **New** > **Project**.
+1. In the **New Project** dialog box, on the left-hand pane, expand **Visual C#** and then select **Web**.
+1. In the center pane, click **ASP.NET Web Application (.NET Framework)**.
 1. At the bottom of the dialog box, in the **Name** field, enter **WatchesWebApp**.
 1. Click the **OK** button to create your project.
 1. In the **ASP.NET Web Application** dialog box, you will see a selection of starting templates. For this exercise, select **MVC**, and then click **OK** to create your project.

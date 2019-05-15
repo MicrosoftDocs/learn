@@ -24,7 +24,7 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
 
     The preceding code reads a `Logging:EnableSqlParameterLogging` property value from the environment-specific application settings file. The property value determines whether parameter logging is enabled.
 
-1. Modify the `GetOrderById` method of *Services/OrderService.cs* in the *ContosoPets.Data* project to include the highlighted line. Save your changes.
+1. Modify the `GetOrderById` method of *Services/OrderService.cs* in the *ContosoPets.DataAccess* project to include the highlighted line. Save your changes.
 
     ::: zone pivot="linq"
 
