@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.exercise-use-swagger-ui
+title: Exercise - Customize and extend your Swagger documentation with XML comments and annotations
+metadata:
+  title: Exercise - Customize and extend your Swagger documentation with XML comments and annotations
+  description: Exercise - Customize and extend your Swagger documentation with XML comments and annotations
+  ms.date: 05/06/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: 
+interactive: bash
+azureSandbox: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-use-swagger-ui.md)]

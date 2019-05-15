@@ -82,7 +82,7 @@ Here you'll create an empty data disk and attach it to your VM. Your data disk w
     ```azurecli
     az vm disk attach \
       --vm-name support-web-vm01 \
-      --disk uploadDataDisk1 \
+      --name uploadDataDisk1 \
       --size-gb 64 \
       --sku Premium_LRS \
       --new

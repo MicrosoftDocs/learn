@@ -7,11 +7,11 @@ Our application might have several intents: finding pictures, sharing pictures, 
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. In the left pane, select **+ Create a resource**.
-1. In the **Search the Marketplace** box, enter **luis**, and then press Enter.
+1. In the **Search the Marketplace** box, type **LUIS**, and then press Enter.
 1. In the search results, select **Language Understanding**.
 1. Select **Create**.
 
-    ![Select Create to create a LUIS service](../media/3-create-luis-service-create.png)
+    ![Screenshot showing the LUIS service marketplace information in the Azure portal](../media/3-create-luis-service-create.png)
 
 1. Enter a unique name for your LUIS service.
 1. Choose a subscription.
@@ -20,7 +20,9 @@ Our application might have several intents: finding pictures, sharing pictures, 
 1. Create a new resource group named **LearnRG**.
 1. Select **Create**.
 
-After the deployment has finished, go the resource page for the service. You'll need one of the displayed subscription keys for later exercises.
+    ![Screenshot showing all the options selecting when creating a new LUIS service in the Azure portal](../media/3-create-luis-service-portal.png)
+
+After the deployment has finished, go the resource page for the service. You'll need one of the displayed subscription keys for later exercises. You can either use the "Grab your keys" option in the **Quick start** section, or switch to the **Keys** section to see the two created keys.
 
 ## Create a LUIS app
 
@@ -32,12 +34,16 @@ Azure requires you to create the LUIS app in the same geographic location where 
    - **Europe:** [https://eu.luis.ai/](https://eu.luis.ai/)
    - **Australia:** [https://au.luis.ai/](https://au.luis.ai/)
 
+    > [!NOTE]
+    > There are three LUIS websites, based on region. You must author and publish in the same region. Select the closest region to you.
+
 1. Select the **Sign in** link in the upper-right corner.
 1. Sign in with your Microsoft account.
 1. On the **Welcome** page, select **Create a LUIS app now**.
+1. Select **+ Create a new app**.
 1. Give your LUIS app a name, for example, **PictureBotLUIS**.
 1. For **Culture**, select the appropriate choice.
 1. Give your LUIS app a description so it's clear what the app's purpose is.
-1. Select **Done**. The app opens to the **Intents** page with a single intent named **None**.
+1. Select **Done**. 
 
-You'll enter intents, entities, and utterances in the following exercises.
+The newly created app will show the **Intents** page with a single intent named **None**.

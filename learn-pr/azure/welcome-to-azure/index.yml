@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.welcome-to-azure
 metadata:
-  title: Core Cloud Services - Introduction to Azure - Learn
+  title: Core Cloud Services - Introduction to Azure
   description: Get started with Azure by creating your first virtual machine in the cloud.
   ms.date: 1/1/2019
   author: markjulmar

@@ -27,6 +27,6 @@ If you want to delete each collection individually, you select the ellipse **...
 
 To learn more about Cosmos DB, see the following resources:
 
-- [Cosmos DB documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/): This is the official Microsoft Documentation for Cosmos DB.
+- [Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/): This is the official Microsoft Documentation for Cosmos DB.
 - [Cosmos DB calculator](https://www.documentdb.com/capacityplanner#): Calculates Request Units for different workloads which is useful for estimating the volume of your JSON payload.
 - [Cosmos DB benchmark code](https://github.com/Azure/azure-cosmos-dotnet-v2/tree/master/samples/documentdb-benchmark): The utility code, that you used in this module, is based on this code.
