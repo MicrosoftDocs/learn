@@ -1,14 +1,16 @@
-Much of the data Contoso works with is generated or consumed by custom applications written in a variety of languages. As mentioned, Azure Storage accounts can create authorized apps in Active Directory to control access to the data in blobs and queues. This authentication approach is the best solution if the app is using Blob or Queue storage.
+Much of Contoso's data is generated or consumed by custom applications. The applications are written in various languages. 
 
-For other storage models, clients can use a different approach: a _shared key_ or shared secret. This authentication option supports blobs, files, queues, and tables. It's one of the more straightforward approaches to use: the client embeds the shared key in the HTTP `Authorization` header of every request, and the Storage account validates it.
+Azure Storage accounts can create authorized apps in Active Directory to control access to the data in blobs and queues. This authentication approach is the best solution for apps that use Blob storage or Queue storage.
 
-As an example, an application could issue a `GET` request against a blob resource:
+For other storage models, clients can use a _shared key_, or shared secret. This authentication option is one of the easiest to use, and it supports blobs, files, queues, and tables. The client embeds the shared key in the HTTP `Authorization` header of every request, and the Storage account validates the key.
+
+For example, an application can issue a `GET` request against a blob resource:
 
 ```
 GET http://myaccount.blob.core.windows.net/?restype=service&comp=stats
 ```
 
-with the following HTTP headers that control the version of the REST API, the date, and the encoded shared key.
+HTTP headers control the version of the REST API, the date, and the encoded shared key:
 
 ```
 x-ms-version: 2018-03-28  
@@ -16,24 +18,28 @@ Date: Wed, 23 Oct 2018 21:00:44 GMT
 Authorization: SharedKey myaccount:CY1OP3O3jGFpYFbTCBimLn0Xov0vt0khH/E5Gy0fXvg=
 ```
 
-## Storage Account Keys
+## Storage account keys
 
-Shared keys in Azure Storage accounts are called "Storage Account Keys". Azure creates two of these keys (primary and secondary) for each storage account you create and they give access to _everything_ in the account. You can view the created storage keys in the Azure portal view of the storage account under **Settings** > **Access keys** as shown below. 
+In Azure Storage accounts, shared keys are called *storage account keys*. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to _everything_ in the account. 
+
+You'll find the storage account keys in the Azure portal view of the storage account. Just select **Settings** > **Access keys**. 
 
 ![Screenshot showing the access keys in the Azure portal](../media/3-storage-keys.png)
 
-### Protecting shared keys
+## Protecting shared keys
 
-Because there are only two keys, and they provide full access to the account, it's recommended to only use these keys with _trusted in-house applications_ that you have complete control over. If the keys are compromised, you can change the key values in the Azure portal. There are several other reasons to regenerate your storage account keys.
+The storage account has only two keys, and they provide full access to the account. Because these keys are powerful, use them only with trusted in-house applications that you control completely. 
 
-- You might regenerate them on a regular basis for security reasons.
-- You must regenerate your storage account keys if someone managed to hack into an application and retrieve the key that was hardcoded or saved in a configuration file, giving them full access to your storage account.
-- Another case for key regeneration is if your team is using a Storage Explorer application that retains the storage account key, and one of the team members leaves. The application would continue to work, giving them access to your storage account after they're gone.
+If the keys are compromised, change the key values in the Azure portal. Here are several reasons to regenerate your storage account keys:
 
-The process to refresh keys is simple:
+- For security reasons, you might regenerate keys periodically.
+- If someone hacks into an application and gets the key that was hard-coded or saved in a configuration file, regenerate the key. The compromised key can give the hacker full access to your storage account.
+- If your team is using a Storage Explorer application that keeps the storage account key, and one of the team members leaves, regenerate the key. Otherwise, the application will continue to work, giving the former team member access to your storage account.
 
-1. Change each trusted app to use the _secondary_ key.
-1. Refresh the primary key in the Azure portal. You can consider it the new "secondary" key value.
+To refresh keys:
+
+1. Change each trusted app to use the secondary key.
+1. Refresh the primary key in the Azure portal. Consider this as the new secondary key value.
 
 > [!IMPORTANT]
-> Any client attempting to use the old key value will be refused. You must make sure to identify all clients using the shared key and update them to keep them operational.
+> After your refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key, and update them to keep them operational.

@@ -13,16 +13,10 @@ We'll start by deploying a new Windows VM in an Azure Virtual Machine.
 
 Use the Azure PowerShell to create and deploy a new Windows virtual machine.
 
-1. Start by deciding where to place the new resources. Select a location near you from the following list.
-
-    <!-- Resource selection -->  
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
-    
-
-1. Define a PowerShell variable to hold the selected location. It's defined as "East US" here, change it to your preferred location.
+1. Define a PowerShell variable to hold the selected location. We'll use the same region as the resource group.
 
     ```powershell
-    $location = "eastus"
+    $location = (Get-AzResourceGroup -name <rgn>[sandbox Resource Group]</rgn>).location
     ```
     
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]

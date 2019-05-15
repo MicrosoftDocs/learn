@@ -2,8 +2,8 @@
 uid: learn.data-ai.introduction-to-data-streaming.summary
 title: Summary
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary
+  description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -19,12 +19,12 @@ quiz:
 
   - content: "Which of the following technologies typically provide an ingestion point for data streaming in an event processing solution that uses static data as a source?"
     choices: 
-    - content: "IoT Hubs"
+    - content: "Azure IoT Hub"
       isCorrect: false
-      explanation: "That is not the correct answer. IoT hubs provide an ingestion point for data streaming in an event processing solution that uses streaming data as a source."
+      explanation: "That's not the correct answer. Azure IoT Hub provides an ingestion point for data streaming in an event processing solution that uses streaming data as a source."
     - content: "Azure Blob storage"
       isCorrect: true
-      explanation: "That is the correct answer. Azure Blob storage provide an ingestion point for data streaming in an event processing solution that uses static data as a source."
-    - content: "Event Hubs"
+      explanation: "That's the correct answer. Azure Blob storage provides an ingestion point for data streaming in an event processing solution that uses static data as a source."
+    - content: "Azure Event Hubs"
       isCorrect: false
-      explanation: "That is not the correct answer. Event Hubs provide an ingestion point for data streaming in an event processing solution that uses streaming data as a source."
+      explanation: "That's not the correct answer. Azure Event Hubs provides an ingestion point for data streaming in an event processing solution that uses streaming data as a source."

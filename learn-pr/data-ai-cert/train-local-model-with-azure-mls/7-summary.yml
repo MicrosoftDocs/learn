@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.train-local-model-with-azure-mls.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "An Experiment contains which of the following?"
+    choices: 
+    - content: "A composition of a series of runs"
+      isCorrect: true
+      explanation: "This is correct. Azure ML Studio provides a visual drag and drop machine learning development portal but that is a separate offering."
+    - content: "A Docker image"
+      isCorrect: false
+      explanation: "That is not correct. An Experiment does not contain a Docker image."
+    - content: "The data used for model training"
+      isCorrect: false
+      explanation: "This is not correct.  An Experiment does not contain the data for model training."
+  
+  - content: "A run refers to which of the following?"
+    choices: 
+    - content: "Python code for a specific task such as training a model or tuning hyperparameters. Run does the job of logging metrics and uploading the results to Azure platform."
+      isCorrect: true
+      explanation: "That is correct.  Spark is not a part of the service."
+    - content: "A set of containers managed by Kubertes to run your models."
+      isCorrect: false
+      explanation: "That is not correct.  A run is not containers manged by Kubernetes."
+    - content: "A Spark cluster."
+      isCorrect: false
+      explanation: "That is not correct.  A run is not a Spark cluster."
+  
+  - content: "A hyperparameter is which of the following?"
+    choices: 
+    - content: "A model parameter that cannot be learned by the model training process."
+      isCorrect: true
+      explanation: "This is correct. Hyperparameters control how the model training executes and must be set before model training."
+    - content: "A model feature derived from the source data."
+      isCorrect: false
+      explanation: "That is not correct. Hyperparameters cannot be determined from the source data."
+    - content: "A parameter that automatically and frequently changes value during a single model training run."
+      isCorrect: false
+      explanation: "This is not correct.  A Hyperparameter is set before each model training execution."
+
+  - content: "Before you can train and run experiments in your code, you must do which of the following?"
+    choices: 
+    - content: "Create a virtual machine"
+      isCorrect: false
+      explanation: "That is not correct.  You do not need to create a virtual machine."
+    - content: "Log out of the Azure portal"
+      isCorrect: false
+      explanation: "That is not correct.  You do not need to log out of the Azure portal."
+    - content: "Write a model scoring script"
+      isCorrect: true 
+      explanation: "That is correct.  Your Python script needs to connect to the Azure ML workspace before you can train and run experiments."
+  
+  - content: "Which of the following is a technique for determining hyperparameter values?"
+    choices: 
+    - content: "grid searching"
+      isCorrect: true
+      explanation: "That is correct.  Grid searching is often used by data scientists to find the best hyperparamter value."
+    - content: "Bayesian sampling"
+      isCorrect: false
+      explanation: "That is not correct.  Bayesian sampling is not a valid method to determin hyperparamter values."
+    - content: "hyper searching"
+      isCorrect: false 
+      explanation: "That is not correct.  Hyper searching is not a valid method to determin hyperparamter values."

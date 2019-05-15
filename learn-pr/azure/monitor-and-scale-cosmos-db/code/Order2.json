@@ -1,0 +1,32 @@
+﻿{
+  "OrderTime": "4:21 PM",
+  "id": "c0292ca2-c932-4e7f-a159-330dfd7d18e9",
+  "OrderStatus": "NEW",
+  "Item": {
+    "id": "07f11c55-6a17-3521-9c62-8ec4bf12d75b",
+    "Title": "aqyq0ir54234qz3",
+    "Category": "Books",
+    "UPC": "85:8913:018",
+    "Website": "https://asu.vvkgmfo.com",
+    "ReleaseDate": "2019-01-10T16:21:41.15317-08:00",
+    "Condition": "NEW",
+    "Merchant": "Producer",
+    "ListPricePerItem": 26.4,
+    "PurchasePrice": 23.73,
+    "Currency": "USD"
+  },
+  "Quantity": 80,
+  "PaymentInstrumentType": 2,
+  "PurchaseOrderNumber": "095-59132-06",
+  "Customer": {
+    "id": "b7903b01-2aec-e85e-42b0-4b9f342a8560",
+    "FirstName": "Garland",
+    "LastName": "Murazik",
+    "Email": "Garland33@gmail.com",
+    "StreetAddress": "605 Ritchie Ferry",
+    "ZipCode": "15719",
+    "State": "IA"
+  },
+  "ShippingDate": "2019-01-13T16:21:42.487967-08:00",
+  "Data": "BG4eT0bLt+W5Uw=="
+}
