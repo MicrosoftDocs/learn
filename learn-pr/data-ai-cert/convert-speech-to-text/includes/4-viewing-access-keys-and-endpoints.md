@@ -1,20 +1,21 @@
-To access your Speech Translation subscription, you'll need to get two pieces of information from the Azure portal:
+To access your Speech Translation API subscription, you'll need to get two pieces of information from the Azure portal:
 
-1. A **Subscription Key** that is passed with every request to authenticate the call.
-1. The **Endpoint** that exposes your service on the network.
+- A *subscription key* that's passed with every request to authenticate the call.
+- The *endpoint* that exposes your service on the network.
 
-## View the Subscription Keys
+## View the subscription keys
 
-1. Click **Resource groups** in the left sidebar of the portal, and then click the resource group created for the Translator Speech API.
+1. In the left menu of the portal, select **Resource groups**, and then select the **mslearn-speechapi** resource group that you created for the Speech Translation API.
 
-1. Click the Translator Speech subscription name (such as "Translator Speech").
-1. Select **Keys** under the "Resource Management" group to view your new API keys.
+1. Select the Speech Translation subscription name (such as **SpeechTranslation**).
+1. Under the **RESOURCE MANAGEMENT** group, select **Keys** to view your new API keys.
 1. Copy the value of **KEY 1** or **KEY 2** to the clipboard for use in an application.
 
-    ![Copying the Translator Speech API key to the clipboard](../media/4-access-keys-and-endpoints-keys.png)
+    ![Copying the Speech Translation API key to the clipboard](../media/4-access-keys-and-endpoints-keys.png)
 
 ## View the endpoint
 
-1. Select **Overview** from the menu group, locate the "Endpoint" label, and make note of the **Endpoint** value. This value will be the URL used when generating temporary tokens.
+1. In the left menu of the portal, select **Overview**. 
+1. Find **Endpoint**, and make note of the endpoint value. This URL will be used when temporary tokens are generated.
 
-    ![Reviewing the Translator  Speech API token issuer endpoint](../media/4-access-keys-and-endpoints-url.png)
+    ![Viewing the Speech Translation API token-issuer endpoint](../media/4-access-keys-and-endpoints-url.png)

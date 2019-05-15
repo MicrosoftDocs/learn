@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.data-ai.build-ai-solutions-with-azure-ml-service
+metadata:
+  title: Build AI solutions with Azure Machine Learning service
+  description: Azure includes a variety of services for designing and deploying machine learning models. Learn how to leverage these services in your data analysis
+  brand: azure
+  ms.date: 03/15/2019
+  author: bcafferky
+  ms.author: brcaffer
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build AI solutions with Azure Machine Learning service
+summary: Azure includes a variety of services for designing and deploying machine learning models. Learn how to leverage these services in your data analysis
+prerequisites: |
+  It's recommended that you go through the [Introduction to machine learning with Python and Azure Notebooks Learning Path](https://docs.microsoft.com/learn/paths/intro-to-ml-with-python/) before starting this content.
+iconUrl: /learn/achievements/data-ai/build-ai-solutions-with-azure-ml-service-trophy.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+- azure-portal
+- azure-machine-learning-service
+modules:
+- learn.data-ai.intro-to-azure-machine-learning-service
+- learn.data-ai.train-local-model-with-azure-mls
+- learn.data-ai.automate-model-selection-with-azure-automl
+- learn.data-ai.register-and-deploy-model-with-amls
+trophy:
+  uid: learn.data-ai.build-ai-solutions-with-azure-ml-service.trophy

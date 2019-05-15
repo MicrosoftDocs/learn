@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.gather-metrics-from-blob-storage.4-using-dashboards-in-the-azure-portal
+title: Use dashboards in the azure portal
+metadata:
+  title: Use dashboards in the azure portal
+  description: Use dashboards in the azure portal
+  ms.date: 03/26/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-using-dashboards-in-the-azure-portal.md)]

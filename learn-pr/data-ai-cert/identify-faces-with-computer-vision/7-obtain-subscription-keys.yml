@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.identify-faces-with-computer-vision.obtain-subscription-keys
-title: Exercise - Obtain Subscription Keys
+title: Exercise - Get subscription keys
 metadata:
-  title: Exercise - Obtain Subscription Keys
-  description: Learn how to obtain the subscription keys for your Face API
+  title: Exercise - Get subscription keys
+  description: Learn how to get the subscription keys for your Face API
   ms.date: 01/7/2019
   author: gerryaobrien
   ms.author: gerryo
