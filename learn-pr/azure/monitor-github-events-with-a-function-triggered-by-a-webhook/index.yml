@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Beginner-level knowledge of Azure Functions
   - A GitHub account
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/monitor-github-events-with-a-function-triggered-by-a-webhook.svg
 levels:
 - beginner
 roles:
