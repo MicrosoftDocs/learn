@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.capture-application-logs-app-service.7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu
+title: Exercise - Retrieve Application Log Files using Azure CLI and Kudu
+metadata:
+  title: Exercise - Retrieve Application Log Files using Azure CLI and Kudu
+  description: Retrieve Application Log Files using Azure CLI and Kudu
+  ms.date: 03/20/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu.md)]
