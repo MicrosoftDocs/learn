@@ -18,28 +18,9 @@ Before you begin, make sure you have the following software installed on your ma
 
 2. The as-is state of the app is located in the **start** folder. Make sure you are in that folder for the remainder of this module. 
 
-## Create a Cosmos DB account
-
-1. Execute the following command in the Cloud Shell to define a name for our CosmosDB account.
-
-    ```bash
-    export COSMOSDB_ACCOUNT_NAME=msl-sigr-cosmos-$(openssl rand -hex 5)
-    echo "Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
-    ```
-
-    Remember this  account name for the remainder of the module. 
-
-1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Cosmos DB account in our sandbox resource group. 
-
-    ```bash
-    az cosmosdb create  \
-      --name $COSMOSDB_ACCOUNT_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn>
-    ```
-
-    It can take a few minutes to create a Cosmos Db account. Wait for this step to finish before proceeding.
-
 ## Create a Storage account
+
+We'll need a storage account for our Azure Functions logic and for our web app when we deploy it to the cloud later in the module. 
 
 1.  Execute the following command in the Cloud Shell to define a name for our Azure Storage account.
 
@@ -60,7 +41,39 @@ Before you begin, make sure you have the following software installed on your ma
       --sku Standard_LRS
     ```
 
+    It can take a few minutes to create a storage account. Wait for this step to finish before proceeding.
+
+## Create a Cosmos DB account
+
+We want to store stock prices in a Cosmos DB database, so let's set that up in our sandbox account here. 
+
+1. Execute the following command in the Cloud Shell to define a name for our CosmosDB account.
+
+    ```bash
+    export COSMOSDB_ACCOUNT_NAME=msl-sigr-cosmos-$(openssl rand -hex 5)
+    echo "Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
+    ```
+
+    Remember this  account name for the remainder of the module. 
+
+1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Cosmos DB account in our sandbox resource group. 
+
+    ```bash
+    az cosmosdb create  \
+      --name $COSMOSDB_ACCOUNT_NAME \
+      --resource-group <rgn>[sandbox resource group name]</rgn>
+    ```
+
+    It can take a few minutes to create a Cosmos DB account. Wait for this step to finish before proceeding.
+
 ## Create a SignalR account
+We need to add a SignalR account to our sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI). 
+
+1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
+
+    ```bash
+    az extension add -n signalr
+    ```
 
 1.  Execute the following command in the Cloud Shell to define a name for our Azure Storage account.
 
@@ -70,12 +83,6 @@ Before you begin, make sure you have the following software installed on your ma
     ```
 
     Keep note of  this  account name for the remainder of the module. 
-
-1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
-
-    ```bash
-    az extension add -n signalr
-    ```
 
 1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group.
 
@@ -120,7 +127,7 @@ For the app to run, you need to add the connection strings and keys associated w
     echo "<SIGNALR_CONNECTION_STRING> = $SIGNALR_CONNECTION_STRING"
     ```
 
-1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json*** in the editor so you can update the file.
+1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
 
 1. In **local.settings.json**, update the variables `AzureWebJobsStorage`, `AzureCosmosDBConnectionString`, `AzureCosmosDBMasterKey` and `AzureSignalRConnectionString` with the values listed in the Cloud Shell and save the file.
 
