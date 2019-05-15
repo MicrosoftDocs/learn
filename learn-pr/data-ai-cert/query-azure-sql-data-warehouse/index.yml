@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.query-azure-sql-data-warehouse
 metadata:
-  title: Query data in Azure SQL Data Warehouse - Learn
-  description: Learn how to issue simple queries against Azure SQL Data Warehouse and how to visualize the data in both Excel and Power BI - Learn
+  title: Query data in Azure SQL Data Warehouse
+  description: Learn how to issue simple queries against Azure SQL Data Warehouse and how to visualize the data in both Excel and Power BI
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

@@ -25,20 +25,6 @@ This is the final step of the modeling process. However, since you'll usually ha
 
  When evaluating a classification model a couple of metrics that are useful are accuracy and precision. To understand these terms, it's essential to understand what a confusion matrix is.
 
-A confusion matrix is the following: 
-
-- *True positive* is the number of times a model predicts true (or yes) when it is actually yes
-- *True negative* is the number of times a model predicts false (or no) when it is actually false
-- *False negative* is the number of times a model predicts false when it is actually true
-- *False positive* is the number of times a model predicts true when it is actually false
-
-![Screenshot of the Confusion Matrix.](../media/8-confusion-matrix.png)
-<!-- TODO: Screenshot does not use sentence-style capitalization. Also, same comment about graphic being blurry. I'll stop marking these as this is a consistent problem throughout most of the graphics. -->
-
-<!-- TODO: Aside from Accuracy below, this section is a copy of the section above. Also, should Accuracy be bulleted? If so, change to the format above - no bold, italics instead. -->
-
-A couple of metrics that are useful when evaluating a classification model are accuracy and precision. To understand these terms, it is essential to understand what a confusion matrix is.
-
 A confusion matrix includes the following:
 
 - **True positive**: the number of times a model predicts true (or yes) when it is actually yes
@@ -55,23 +41,16 @@ This data is formatted in a matrix format to understand how accurate the predict
 
 **Accuracy** is the value of accurate predictions of yes and no over the total number of predictions. You want this number to be as close to 1 as possible.
 
-```
-             True Positive + True Negative
-———————————————————————————————————————————————————————————————
-True Positive + True Negative + False Positive + False Negative
-```
+$${\dfrac{true\ positive + true\ negative}{true\ positive + true\ negative + false\ positive + false\ negative}}$$
 
 You want the result to be as close to **one** as possible.
 
 *Precision* is a measure of the consistency of the predictions. This is represented by the following equation.
 
-```
-       True Positive
-——————————————————————————————
-True Positive + False Positive
-```
+$${\dfrac{true\ positive}{true\ positive + false\ positive}}$$
 
 As with accuracy, the precision of your model increases as the result moves closer to **one**.
+
 
 ## Evaluate the metrics with mean squared error
 

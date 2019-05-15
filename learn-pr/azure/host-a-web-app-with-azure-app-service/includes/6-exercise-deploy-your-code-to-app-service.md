@@ -165,9 +165,7 @@ Now that you have your local Git repository hooked to the remote Git repository 
 
     **![Screenshot of the Azure portal showing a recent Git repo deployment in the Development options page.](../media/7-staging-deployment-slot-after-uploading-files.png)**
 
-1. Let's visit the application URL. The URL was mentioned above, however, if you forget that URL, you can always go to the **Overview** page of the staging deployment slot and pick up the URL.
-
-1. Type the URL in your browser address bar.
+1. Let's visit the application URL. Navigate back to the **Overview** page of the web app and click **Browse** to open the app in a new browser tab.
 
     ![Screenshot showing a web browser view of the staging deployment slot web site.](../media/7-staging-slot-hosted-online.png)
 
