@@ -22,5 +22,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.ContainerInstance/containerGroups"
-      name: mycontainer-restart-demo
-  hint: ""
+  hint: "Make sure to create the container groups."

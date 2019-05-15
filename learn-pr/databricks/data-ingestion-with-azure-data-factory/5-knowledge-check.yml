@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -14,36 +14,30 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-    - content: 'What is the DataFrame method call to create temporary view?'
+    - content: "What's the purpose of linked services in Azure Data Factory?"
       choices:
-        - content: createOrReplaceTempView()
-          explanation: This is the correct method name for creating temporary views in DataFrames
+        - content: To represent a data store or a compute resource that can host execution of an activity.
+          explanation: Correct. Linked services define the connection information needed for Data Factory to connect to external resources.
           isCorrect: true
-        - content: createTempView()
+        - content: To represent a processing step in a pipeline.
           isCorrect: false
-          explanation: Incorrect method name
-        - content: createTempViewDF()
+          explanation: "Activities, not linked services, represent processing steps in a Data Factory pipeline."
+        - content: To link data stores or computer resources together for the movement of data between resources.
           isCorrect: false
-          explanation: Incorrect method name
-    - content: 'How do you create a DataFrame object?'
+          explanation: Linked services define the connection information needed for Data Factory to connect to external resources. But linked services aren't the connection between resources.
+    - content: "Can parameters be passed into an Azure Databricks notebook from Azure Data Factory?"
       choices:
-        - content:  An object is created by introducing a variable name and equating it to something like myDataFrameDF =
-          explanation: This is the correct way of creating DataFrame Objects.
+        - content: Yes
+          explanation: "Yes. The target notebook must include widgets configured with the necessary parameter names. The values can then be passed as parameters from a Databricks notebook activity in Data Factory."
           isCorrect: true
-        - content: Using the createDataFrame() function
+        - content: No
           isCorrect: false
-          explanation: There is no such method for creating a DataFrame.
-        - content: DF.create()
-          isCorrect: false
-          explanation: Incorrect syntax and wrong way to create DataFrame Objects.
-    - content: 'Why do you chain methods (operations) myDataFrameDF.select().filter().groupBy()?'
+          explanation: "You can configure parameters by using widgets on the Databricks notebook. You then pass in parameters with those names via a Databricks notebook activity in Data Factory."
+    - content: "Databricks activities (notebook, JAR, Python) in Azure Data Factory will fail if the target cluster in Azure Databricks isn't running when the cluster is called by Data Factory."
       choices:
-        - content: To avoid the creation of temporary DataFrames as local variables
-          explanation: You could have written the above as - tempDF1 = myDataFrameDF.select(), tempDF2 = tempDF1.filter() and then tempDF2.groupBy().This is syntatically equivalent, but, notice how you now have extra local variables.
+        - content: No
+          explanation: "If the target cluster is stopped, Databricks will start the cluster before attempting to execute the notebook, JAR, or Python file. This situation will result in a longer execution time because the cluster must start, but the activity will still execute as expected."
           isCorrect: true
-        - content: it is the only way to do it
+        - content: Yes
           isCorrect: false
-          explanation: Incorrect, you could have split the line into 3 calls.
-        - content: to get accurate results
-          isCorrect: false
-          explanation: Incorrect, even if you split the calls into 3 lines, the result is accurate, it just wastes unnessessary memory allocations.
+          explanation: "No. If the cluster isn't running, Databricks will start it automatically when it receives the request for execution from Data Factory."
