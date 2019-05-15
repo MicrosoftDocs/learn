@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.recognize-voices-with-speaker-recognition.overview-of-speaker-verification
-title: Overview of Speaker Verification Concepts
+title: Overview of speaker verification concepts
 metadata:
-  title: Overview of Speaker Verification Concepts
-  description: Gain an overview of key concepts surrounding speaker verification
+  title: Overview of speaker verification concepts
+  description: Learn about the key concepts involved in speaker verification.
   ms.date: 01/11/2019
   author: gerryaobrien
   ms.author: gerryo

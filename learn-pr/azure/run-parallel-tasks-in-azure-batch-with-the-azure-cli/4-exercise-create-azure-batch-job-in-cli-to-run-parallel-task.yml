@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.exercise-create-azure-batch-job-in-cli-to-run-parallel-task
+metadata:
+  title: Exercise - Create an Azure Batch job in the CLI to run your parallel task
+  description: Exercise - Create an Azure Batch job in the CLI to run your parallel task
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create an Azure Batch job in the CLI to run your parallel task
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-create-azure-batch-job-in-cli-to-run-parallel-task.md)]

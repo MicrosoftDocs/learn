@@ -1,24 +1,23 @@
-Recognizing emotion with the Emotion API involves sending an authorized web request to another subscription endpoint. The primary method used to detect faces in images is the Emotion **Recognize** method. The Recognize method supports either:
-
-- Uploading an image (as a binary file), or
-- Specifying a (publicly available) image URL.
+To recognize emotion, the Emotion API sends an authorized web request to another subscription endpoint. The primary way to detect faces in images is the emotion *Recognize* method. The Recognize method can use either an uploaded an image (a binary file) or a publicly available image URL.
 
 > [!TIP]
-> Just like the Face detect API, you can practice calling the Emotion API with the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/5639d931ca73072154c1ce89/?azure-portal=true). The process is identical to what we did earlier.
+> You can practice calling the Emotion API by using the [Emotion API testing console](https://westus.dev.cognitive.microsoft.com/docs/services/5639d931ca73072154c1ce89/?azure-portal=true). The process is identical to the one we followed for face detection.
 
-## Calling the Emotion API
+## Call the Emotion API
 
-The Emotion API **Recognize** method endpoint is at <https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize>. Notice that the location ("westus") is part of the URL - you might need to adjust that based on where you place your service. You must supply an image payload to process as part of the `POST` request to the method. This can be: 
+The Emotion API Recognize method endpoint is at <https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize>. Notice that the location *westus* is part of this URL. You'll need to adjust this if your service is in a different location. 
 
-- A **binary file**, such as a stream or byte array, or
-- A **JSON payload** that includes the value of a (publicly available) image URL, formatted as human-readable text.
+You'll need to provide an image payload to process as part of the `POST` request to the method. The image can be in one of the following formats: 
+
+- A binary file, such as a stream or byte array
+- A JSON payload that includes the value of a publicly available image URL, formatted as human-readable text
 
 > [!NOTE]
-> The Azure Cognitive Services Emotion API is currently in **public preview**. The Recognize method may take additional parameters when it moves into production.
+> The Cognitive Services Emotion API is currently in public preview. The Recognize method might take additional parameters when it moves into production.
 
-### Binary file payload
+### Create and send a binary file payload
 
-Creating and sending a binary file payload to the Recognize method uses standard, language-specific methods for creating and sending binary content. For example, in C#, a binary payload could come from an image (typically containing a human face) located on a local computer:
+To create and send a binary file payload to the Recognize method, you'll use standard, language-specific methods. For example, in C#, a binary payload can come from an image (typically containing a human face) that's on a local computer:
 
 ```csharp
 string uri = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize";
@@ -36,11 +35,11 @@ using (ByteArrayContent content = new ByteArrayContent(bytes))
 ```
 
 > [!TIP]
-> Notice the required use of the `application/octet-stream` content type in the request header which informs the endpoint that it will be receiving a binary payload.
+> Notice the required use of the `application/octet-stream` content type in the request header which informs the endpoint that it will receive a binary payload.
 
 ### Return values
 
-Information is returned from the Emotion API as a well-formatted **JSON object or array**. Here's an example response.
+Information is returned from the Emotion API as a well-formatted JSON object or array. Here's an example response:
 
 ```json
 [{
