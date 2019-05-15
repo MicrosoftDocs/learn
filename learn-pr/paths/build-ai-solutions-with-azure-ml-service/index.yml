@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.build-ai-solutions-with-azure-ml-service
 metadata:
-  title: Build AI solutions with Azure Machine Learning service - Learn
+  title: Build AI solutions with Azure Machine Learning service
   description: Azure includes a variety of services for designing and deploying machine learning models. Learn how to leverage these services in your data analysis
   brand: azure
   ms.date: 03/15/2019
@@ -23,7 +23,6 @@ products:
 - azure
 - azure-portal
 - azure-machine-learning-service
-- azure-machine-learning-studio
 modules:
 - learn.data-ai.intro-to-azure-machine-learning-service
 - learn.data-ai.train-local-model-with-azure-mls

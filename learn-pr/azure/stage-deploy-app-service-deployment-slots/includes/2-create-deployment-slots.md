@@ -1,30 +1,30 @@
-Organizations often need to run web apps in isolated environments to test them before deployment. They also need to deployment to occur quickly and with no impact on users. 
+Organizations often need to run web apps in isolated environments to test them before deployment. They also need to deploy quickly and without affecting users. 
 
-Suppose you are evaluating deployment slots as a streamlined mechanism for web app deployment in your social media system. You want to find out if deployment slots will reduce downtime during deployments, if they will ease rollbacks, and how to configure them in Azure.
+Suppose you're trying to decide whether to use slots as a streamlined way to deploy a web app in your social media system. You want to find out if deployment slots will reduce downtime during deployments, if they'll ease rollbacks, and if you can set them up in Azure.
 
-Here, you will learn how deployment slots ease testing and roll-out of  new code.
+Here you'll learn how deployment slots ease the testing and rollout of new code.
 
-## What is a deployment slot?
+## Use a deployment slot
 
-Within a single Azure App Service web app, you can create multiple deployment slots. Each slot is a separate instance of that web app with a separate hostname. You can deploy a different version of your web app into each slot.
+Within a single Azure App Service web app, you can create multiple deployment slots. Each slot is a separate instance of that web app, and it has a separate host name. You can deploy a different version of your web app into each slot.
 
-One slot is the production slot; this is the web app that users see when they connect. You should be sure that the app deployed to this slot is stable and well-tested.
+One slot is the production slot. This slot is the web app that users see when they connect. Make sure that the app deployed to this slot is stable and well tested.
 
-You can use additional slots to host new versions of your web app. You can run tests against these instances, including integration tests, acceptance tests, and capacity tests, and fix any problems you find before the code is moved to the production slot. Additional slots behave like their own App Service instances, giving you confidence that any tests you run will reflect the way that the app will run in production.
+Use additional slots to host new versions of your web app. Against these instances, you can run tests such as integration tests, acceptance tests, and capacity tests. Fix any problems before you move the code to the production slot. Additional slots behave like their own App Service instances, so you can have confidence that your tests show how the app will run in production.
 
-When you are satisfied with the results of testing a new version of your app, you can deploy it by swapping its slot with the production slot. Unlike the deployment of code, a slot swap is an instantaneous operation. When you swap slots, the slot hostnames are exchanged, immediately sending production traffic to the new version of the app. When you use slot swaps to deploy, your app will never be exposed to the public web in a partially deployed state.
+After you're satisfied with the test results for a new app version, deploy it by swapping its slot with the production slot. Unlike a code deployment, a slot swap is instantaneous. When you swap slots, the slot host names are exchanged, immediately sending production traffic to the new version of the app. When you use slot swaps to deploy, your app is never exposed to the public web in a partially deployed state.
 
-If you find that, in spite of your careful testing, there is a problem with the new version, you can roll it back by quickly swapping the slots back.
+If you find that, in spite of your careful testing, the new version has a problem, you can roll back the version by swapping the slots back.
 
-## Slots as separate Azure resources
+## Understand slots as separate Azure resources
 
-When you use more than one deployment slot for a web app, those slots are treated as separate instances of that web app. For example, they are listed separately in the **All resources** page in the Azure portal and they each have their own URL. However, each slot shares the resources of the App Service plan, including virtual machine memory and CPU as well as disk space.
+When you use more than one deployment slot for a web app, those slots are treated as separate instances of that web app. For example, they're listed separately on the **All resources** page in the Azure portal. They each have their own URL. However, each slot shares the resources of the App Service plan, including virtual machine memory and CPU as well as disk space.
 
-## Deployment slots and tiers
+## Create deployment slots and tiers
 
-Deployment slots are only available when you web app uses an App Service plan in the Standard, Premium, or Isolated tiers. The maximum numbers of slots you can create are shown in the following table:
+Deployment slots are available only when your web app uses an App Service plan in the Standard, Premium, or Isolated tier. The following table shows the maximum number of slots you can create:
 
-|     Tier | Maximum Staging Slots |
+|     Tier | Maximum staging slots |
 |---------:|:---------------------:|
 |     Free |           0           |
 |   Shared |           0           |
@@ -33,33 +33,39 @@ Deployment slots are only available when you web app uses an App Service plan in
 |  Premium |           20          |
 | Isolated |           20          |
 
-## Avoiding "cold start" during swaps
+## Avoid a cold start during swaps
 
-Many of the technologies that developers use to create web apps require final compilation and other actions on the server before a page can be delivered to a user. Many of these tasks are completed when the app first starts up and receives a request. For example, if you use ASP.NET to build your app, code is compiled and views completed when the first user requests a page. Subsequent requests for the same page will receive a faster response because the code has already been compiled.
+Many of the technologies that developers use to create web apps require final compilation and other actions on the server before they deliver a page to a user. Many of these tasks are completed when the app starts up and receives a request. For example, if you use ASP.NET to build your app, code is compiled and views are completed when the first user requests a page. Subsequent requests for that page receive a faster response because the code is already compiled.
 
-This kind of delay is called a *cold start*, and can be avoided by using slot swaps to deploy to production. Swapping a slot into production "warms up" the app prior to the swap by sending a request to the root of the site. The warm-up request ensures that all compilation and caching tasks are complete. After the swap, the site responds as fast as if it had been deployed for days.
+The initial delay is called a *cold start*. You can avoid a cold start by using slot swaps to deploy to production. When you swap a slot into production, you "warm up" the app because your action sends a request to the root of the site. The warm-up request ensures that all compilation and caching tasks finish. After the swap, the site responds as fast as if it had been deployed for days.
 
-## How to create a deployment slot
+## Create a deployment slot
 
-Before you create a slot, ensure that your web app is running in the Standard, Premium, or Isolated tiers:
+Before you create a slot, make sure your web app is running in the Standard, Premium, or Isolated tier:
 
-Open your web app in the Azure portal and select the **Deployment Slots** page, then click **Add Slot** and give the slot a name. Next, choose whether to clone settings from another slot. If you choose to clone, settings are copied to your new slot from the slot you specify.
+1. Open your web app in the Azure portal.
+1. Select the **Deployment Slots** page. 
+1. Select **Add Slot**.
+1. Name the slot.
+1. Choose whether to clone settings from another slot. If you choose to clone, settings are copied to your new slot from the slot you specify.
 
-![Add a new deployment slot](../media/2-add-a-slot.png)
+    ![Name a new deployment slot and choose whether to clone settings](../media/2-add-a-slot.png)
 
 > [!NOTE]
-> Settings can be cloned to a new slot, but not content. New slots always begin with no content. You must deploy content by using git or another deployment strategy. The clone operation copies the configuration to the new slot. Afterwards, the configuration of the two slots can be changed independently.
+> Although you can clone settings to a new slot, you can't clone content. New slots always begin with no content. You must deploy content by using git or another deployment strategy. The clone operation copies the configuration to the new slot. After you clone the settings, the configuration of the two slots can be changed independently.
 
-Click **Add** to create the new slot. Once the new slot is created, you can see it in the list on the **Deployment Slots** page. You can click on it to view the slot's management page.
+Select **Add** to create the new slot. You now see the new slot in the list on the **Deployment Slots** page. Select the slot to view its management page.
 
 ![The list of deployment slots for a web app](../media/2-list-of-slots.png)
 
-## How to access a slot
+## Access a slot
 
-The new slot has its own hostname that is derived from the web app name and the name of the slot. You can see this hostname when you click on the slot in the **Deployment Slots** page:
+The new slot's host name is derived from the web app name and the name of the slot. You see this host name when you select the slot on the **Deployment Slots** page:
 
 ![Finding the URL for a new slot](../media/2-finding-slot-url.png)
 
-You can deploy your code to the new slot in exactly the same way as you do for the production slot. Just substitute the new slot's name or URL in the configuration of the deployment tool you use. If you use FTP to deploy, you can see the FTP hostname and username to use just underneath the slot's URL.
+You can deploy your code to the new slot the same way you deploy it for the production slot. Just substitute the new slot's name or URL in the configuration of the deployment tool you use. If you use FTP to deploy, you'll see the FTP host name and username just under the slot's URL.
 
-The new slot is effectively a separate web app with a different hostname and as such is accessible to anyone from the internet if they know that hostname. Unless you register the slot with a search engine or link to it from a crawled page, the slot won't appear in search engine indexes so it will remain obscure to the general Internet user. However, you can choose to restrict access to a slot by using IP address restrictions. You can create a list of IP address ranges that are allowed to access the slot or a list of ranges that are denied access to the slot, just like the allow and deny ranges that you can configure on a firewall. Use this list to permit access only to computers that come from your company or development team.
+The new slot is effectively a separate web app with a different host name. That's why anyone on the internet can access it if they know that host name. Unless you register the slot with a search engine or link to it from a crawled page, the slot won't appear in search engine indexes. It will remain obscure to the general internet user. 
+
+You can control access to a slot by using IP address restrictions. Create a list of IP address ranges that you'll allow to access the slot or a list of ranges that you'll deny access to the slot. These lists are like the allow ranges and deny ranges that you can set up on a firewall. Use this list to permit access only to computers that belong to your company or development team.
