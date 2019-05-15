@@ -20,7 +20,9 @@ To learn more about using notebooks, clone the labs archive where sample noteboo
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
-   https\://github.com/MicrosoftDocs/mslearn-azure-databricks-notebooks-fundamentals/blob/master/DBC/01-notebook-fundamentals.dbc?raw=true
+ ```
+  https://github.com/MicrosoftDocs/mslearn-azure-databricks-notebooks-fundamentals/blob/master/DBC/01-notebook-fundamentals.dbc?raw=true
+ ```
 
 1. Select **Import**.
 1. Select the **01 Notebook Fundamentals** folder that appears.
