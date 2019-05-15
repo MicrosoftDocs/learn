@@ -1,0 +1,10 @@
+{
+  "Logging": {
+    "EnableSqlParameterLogging": true,
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  }
+}

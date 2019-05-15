@@ -1,4 +1,6 @@
-As with any application code that you write, changes to bot code need to be tested and debugged locally before being deployed to production. To help debug bots, Microsoft offers the Bot Framework Emulator. In this unit, you will learn how to use Visual Studio Code and the emulator to debug your bots.
+As with any application code that you write, changes to bot code need to be tested and debugged locally before being deployed to production. To help debug bots, Microsoft offers the Bot Framework Emulator. 
+
+In this unit, you will learn how to use Visual Studio Code and the emulator to debug your bots.
 
 ## Install local Node.js packages
 
@@ -101,7 +103,7 @@ Now that we have the emulator installed,
 
 1. Select the **Debug** button in the activity bar, then select the green arrow **Start Debugging** button to start a debugging session.
 
-1. Confirm that "test bot endpoint at <http://localhost:3978/api/messages"> appears in the debug console.
+1. Confirm that "test bot endpoint at <http://localhost:3978/api/messages>" appears in the debug console.
 
     ![Screenshot of Visual Studio Code showing the Debug system with the Debug navigation item and debug play button used to start a debugging session highlighted.](../media/5-vs-launch-debugger.png)
 
@@ -109,7 +111,7 @@ Now that we have the emulator installed,
 
 1. Launch the **Bot Framework Emulator** from the Start Menu or launch icon.
 
-1. Select the **Enter your endpoint URL** field. Enter the bot name and the bot URL displayed in the debug console in the previous step.
+1. Select the **Enter your endpoint URL** field. Enter the bot name and the bot URL `http://localhost:3978/api/messages` displayed in the debug console in the previous step.
 
 1. Leave the Microsoft App ID, Microsoft App Password, and Locale fields empty and select **CONNECT**.
 
