@@ -2,13 +2,15 @@
 
 The application’s current architecture reports stock information by fetching changes from the server based on a timer. This design is often called a polling-based design.  
 
-Before we analyze the limitations of this approach, let's take a look at the current app architecture. The solution is composed of a server component for storing stock information and client component to show this data to users in their browser. 
+Before we analyze the limitations of this approach, let's take a look at the current app architecture. The solution is composed of a server component for storing stock information and client component that renders this data to users in their browser. 
+
+In the next exercise we'll get the code for this solution running on your local machine. 
 
 ### Server
 
 The stock price information is stored on the server in a Cosmos DB database. When triggered, an Azure Function configured with Cosmos DB bindings returns the database content.
 
-The function named `getStocks` is responsible for reading the stock information from the database. Connection to the Cosmos DB database is achieved through bindings, which are configured in the *function.json* file, as shown in the following snippet.
+The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Cosmos DB database is achieved through bindings, which are configured in the *function.json* file, as shown in the following snippet.
 
 ```json
 {
@@ -117,6 +119,20 @@ const app = new Vue({
 
 The `update` method is called every five seconds once polling is started by the `startPoll` method. Inside the `update` method, a GET request is sent to the `getStocks` function and the result is set to `app.stocks` which updates the UI.
 
+The preceding code begins with a helper function that returns the base URL of the script.
+
+```javascript
+const LOCAL_BASE_URL = 'http://localhost:7071';
+const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
+
+const getAPIBaseUrl = () => {
+    const isLocal = /localhost/.test(window.location.href);
+    return isLocal ? LOCAL_BASE_URL : REMOTE_BASE_URL;
+}
+```
+
+Later in this module when we deploy the application to Azure, you'll set the REMOTE_BASE_URL variable with the remote URL,  allowing the app to run either locally on your machine or deployed to the cloud.
+
 The server and client code is relatively straightforward but, as we'll see, this simplicity brings with it some limitations. 
 
 ## Supporting CORS
@@ -133,6 +149,7 @@ In the *local.settings.json* file, the `Host` section includes the following set
 ```
 
 This configuration tells the locally-running function app that a web application running at *localhost:8080* is allowed to make requests to functions running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookies from the request.
+
 
 ## Analysis of current solution
 Let's think about some of the drawbacks of this timer-based polling approach.

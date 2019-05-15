@@ -211,21 +211,10 @@ connect();
 The changes you just made accomplished two goals: removed all polling logic from the client and added handlers to listen for messages coming from the server.
 
 
-<!-- REVIEW - Consider moving this explanation of the URL switcher to the first exercise, since it's used there too -->
+<!-- REVIEW - Consider moving this explanation of the URL switcher to the first exercise, since it's used there too 
 
-When examining the script in sections, the script begins with a helper function that returns the base URL of the script.
+Update - moved the paragraph to unit 2, to see how it fits -->
 
-```javascript
-const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
-
-const getAPIBaseUrl = () => {
-    const isLocal = /localhost/.test(window.location.href);
-    return isLocal ? LOCAL_BASE_URL : REMOTE_BASE_URL;
-}
-```
-
-When you deploy the application to Azure, you will paste the appropriate remote URL value into the script allowing it to run either locally on your machine or deployed to the cloud.
 
 The Vue.js-related code is streamlined now that changes are pushed to the client. Consider this segment of the code you just pasted in to the script file:
 
@@ -311,8 +300,6 @@ You can now navigate to *http://localhost:8080* to see the application working i
 Now you can make change to the application's data and observe how to the data is automatically updated. Since the update to the browser happens nearly immediately, consider having Visual Studio Code open one side of your screen and the running application on the other. This way you can see the UI update right after you issue the command to update the database.
 
 Return to Visual Studio Code and enter the the following command in the integrated terminal and watch as the application automatically updates.
-
-<!-- REVIEW We should use npm run update in the preceding exercise to show an update happening due to polling. To see the full effect of this update, consider having the database setup with two or three stock documents, but only update one. -->
 
 ```bash
 npm run update

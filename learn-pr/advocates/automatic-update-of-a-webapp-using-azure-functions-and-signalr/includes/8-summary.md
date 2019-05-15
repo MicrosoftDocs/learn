@@ -1,11 +1,15 @@
-In this module, you learned to implement an application that uses push technology in order to keep web clients automatically updated. To achieve your goal, you used Cosmos DB and Azure Functions in concert with SignalR to detect and broadcast changes in the database.
+In this module, you updated the design of a stock price service from being polling-based to push-based. The goal was to keep web clients updated automatically as soon as changes to the data were available. 
+
+First, you learned about the limitations of the existing solution, which looked for stock price changes on a schedule. Then, you replaced that polling mechanism  with a SignalR-based solution that pushes updates to registered client application as soon as changes are available. Finally, the solution was deployed to the cloud with the static website hosted in Azure Storage. 
+
+The solution uses Cosmos DB and Azure Functions in combination with SignalR to detect and broadcast changes in the database.
 
 With this new application architecture your application enjoys the following benefits:
 
-- An efficient web application architecture where communication between the client and the server happens only when data is changed
-- Simple data change detection by using Azure Functions to listen to the Cosmos DB change feed
+- An efficient web application architecture, where communication between the client and the server happens only when data is changed
+- Simple data change detection using Azure Functions to listen to the Cosmos DB change feed via the Cosmos DB trigger
 - Server-push architecture with a wide range of support for new and old browsers via SignalR
-- Reduced response time down from five seconds to a little over a half second to automatically update the UI.
+- Improved response time and reduced to a little over a half second to automatically update the UI.
 
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
