@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-flight-delays-with-python.summary
+title: Summary and knowledge check
+metadata:
+  title: Summary and knowledge check
+  description: Confirm that you understand the steps required to clean data, create a machine learning model, and visualize the model's output.
+  ms.date: 02/25/2019
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+content: |
+  [!include[](includes/5-summary.md)]
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What method is used in Pandas to import a CSV file? Assume pandas was loaded as `import pandas as pd`."
+    choices:
+    - content: "pd.load_file('file.csv')"
+      isCorrect: false
+      explanation: ""
+    - content: "pd.read_file('file.csv')"
+      isCorrect: false
+      explanation: "There is no 'load_file' method in pandas."
+    - content: "pd.read_csv('file.csv')"
+      isCorrect: true
+      explanation: "'read_csv is a convenient way to read CSV files in pandas. For other file types, you can use 'read_table'"
+
+  - content: "What is the purpose of splitting data before training a machine learning model?"
+    choices:
+    - content: "To not give the model too much data."
+      isCorrect: false
+      explanation: "The model will give best results with as much data as possible."
+    - content: "One part can be used for training and the other can be used to evaluate the model's performance."
+      isCorrect: true
+      explanation: "It is always best to train your model on data that the model has never seen before to get the most accurate results."
+    - content: "The model doesn't need much data."
+      isCorrect: false
+      explanation: "The model will give best results with as much data as possible."
+
+  - content: "Assuming you've imported Matplotlib as 'plt', what is the method on Matplotlib that you would use to plot a bar chart?"
+    choices:
+    - content: "plt.bar(labels, values)"
+      isCorrect: true
+      explanation: "The 'bar' method creates the bar chart with the given labels and values."
+    - content: "plt.chart(labels, values)"
+      isCorrect: false
+      explanation: "There is no 'chart' method on Matplotlib."
+    - content: "plt.barchart(labels, values)"
+      isCorrect: false
+      explanation: "There is no 'barchart' method on Matplotlib."

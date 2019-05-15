@@ -1,11 +1,9 @@
-At this point, the mobile app is a simple "Hello World" app. In this unit, you add the UI and some basic application logic.
-
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
+At this point, the mobile app is a simple "Hello World" app. In this unit, you'll add the UI and some basic application logic.
 
 The UI for the app will consist of:
 
 - A text-entry control to enter some phone numbers.
-- A button to send your location to those numbers using an Azure function.
+- A button to send your location to those numbers using Azure Functions.
 - A label that will show a message to the user of the current status, such as the location being sent and location sent successfully.
 
 Xamarin.Forms supports a design pattern called Model-View-ViewModel (MVVM). You can read more about MVVM in the [Xamarin MVVM docs](https://docs.microsoft.com/xamarin/xamarin-forms/enterprise-application-patterns/mvvm?azure-portal=true), but the essence of it is, each page (View) has a ViewModel that exposes properties and behavior.
@@ -16,11 +14,24 @@ ViewModel behavior is exposed as command properties, a command being an object t
 
 ## Create a base ViewModel
 
-ViewModels all implement the `INotifyPropertyChanged` interface. This interface has a single event, `PropertyChanged`, which is used to notify the UI of any updates. This event has event args that contain the name of the property that has changed. It's common practice to create a base ViewModel class implementing this interface and providing some helper methods.
+ViewModels implement the `INotifyPropertyChanged` interface. This interface has a single event, `PropertyChanged`, which is used to notify the UI of any updates. This event has event args that contain the name of the property that has changed. It's common practice to create a base ViewModel class implementing this interface and providing some helper methods.
 
-1. Create a new class in the `ImHere` .NET Standard project called `BaseViewModel` by right-clicking on the project, and then selecting *Add->Class...*. Name the new class "BaseViewModel" and click **Add**.
+1. Right-click ImHere project and select _Add_ > _class_.
 
-1. Make the class `public` and derive from `INotifyPropertyChanged`. You'll need to add a using directive for `System.ComponentModel`.
+1. Name the new class "BaseViewModel" and click **Add**.
+
+1. Add a using directive for `System.ComponentModel` and `System.Runtime.CompilerServices`.
+
+   ```cs
+    using System.ComponentModel;
+    using System.Runtime.CompilerServices;
+    ```
+
+1. Make the class `public` and derive from `INotifyPropertyChanged`.
+
+   ```cs
+     public class BaseViewModel : INotifyPropertyChanged
+   ```
 
 1. Implement the `INotifyPropertyChanged` interface by adding the `PropertyChanged` event:
 
@@ -28,7 +39,7 @@ ViewModels all implement the `INotifyPropertyChanged` interface. This interface 
     public event PropertyChangedEventHandler PropertyChanged;
     ```
 
-1. The common pattern for ViewModel properties is to have a public property with a private backing field. In the property setter, the backing field is checked against the new value. If the new value is different to the backing field, the backing field is updated and the `PropertyChanged` event is raised. This logic is easy to factor out into a method, so add the `Set` method. You'll need to add a using directive for the `System.Runtime.CompilerServices` namespace.
+1. Add `Set` method to trigger the `PropertyChanged` event.
 
     ```cs
     protected void Set<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
@@ -39,7 +50,7 @@ ViewModels all implement the `INotifyPropertyChanged` interface. This interface 
     }
     ```
 
-    This method takes a reference to the backing field, the new value, and the property name. If the field hasn't changed, the method returns, otherwise, the field is updated and the `PropertyChanged` event is raised. The `propertyName` parameter on the `Set` method is a default parameter and is marked with the `CallerMemberName` attribute. When this method is called from a property setter, this parameter is normally left as the default value. The compiler will then automatically set the parameter value to be the name of the calling property.
+    This method refers to the backing field, the new value, and the property name. If the field hasn't changed, the method returns, otherwise, the field is updated and the `PropertyChanged` event is raised. The `propertyName` parameter on the `Set` method is a default parameter and is marked with the `CallerMemberName` attribute. When this method is called from a property setter, this parameter is normally left as the default value. The compiler will then automatically set the parameter value to be the name of the calling property.
 
 The full code for this class is below.
 
@@ -69,8 +80,17 @@ The `MainPage` will have a text-entry control for phone numbers and a label to d
 
 1. Create a class called `MainViewModel` in the `ImHere` .NET Standard project.
 
-1. Make this class public and derive from `BaseViewModel`.
+1. Add a using directive for `Xamarin.Forms` and `System.Threading.Tasks`.
 
+    ```cs
+      using Xamarin.Forms;
+      using System.Threading.Tasks;
+     ```
+
+1. Make this class public and derive from `BaseViewModel`.
+    ```cs
+       public class MainViewModel : BaseViewModel
+    ```
 1. Add two `string` properties, `PhoneNumbers` and `Message`, each with a backing field. In the property setter, use the base class `Set` method to update the value and raise the `PropertyChanged` event.
 
    ```cs
@@ -95,20 +115,24 @@ The `MainPage` will have a text-entry control for phone numbers and a label to d
     public ICommand SendLocationCommand { get; }
     ```
 
-1. Add a constructor to the class, and in this constructor, initialize the `SendLocationCommand` as a new Xamarin.Forms `Command`. You will need to add a using directive for the `Xamarin.Forms` namespace. The constructor for this command takes an `Action` to run when the command is invoked, so create an `async` method called `SendLocation` and pass a lambda function that `await`s this call to the constructor. The body of the `SendLocation` method will be implemented in later units in this module. You'll need to add a using directive for the `System.Threading.Tasks` namespace to be able to return a `Task`.
+1. Add a constructor to the class, and in this constructor, initialize the `SendLocationCommand` as a new Xamarin.Forms `Command`.
 
     ```cs
     public MainViewModel()
     {
         SendLocationCommand = new Command(async () => await SendLocation());
     }
+    ```
 
+1. Create a `async` method called `SendLocation` and pass a lambda function that `await`s call to the constructor. The body of this method will be updated later in this module.
+
+    ```cs
     async Task SendLocation()
     {
     }
     ```
 
-The code for this class is shown below.
+The complete code for this class is shown below.
 
 ```cs
 using System.Threading.Tasks;
@@ -156,7 +180,7 @@ Xamarin.Forms UIs can be built using XAML.
     > [!NOTE]
     >  The `ImHere.UWP` project also contains a file called `MainPage.xaml`. Make sure you're editing the one in the .NET Standard library.
 
-1. Before you can bind controls to properties on a ViewModel, you have to set an instance of the ViewModel as the binding context of the page. Add the following XAML inside the top-level `ContentPage`.
+1. Add the following XAML inside the top-level `ContentPage` to set an instance of the ViewModel as the binding context of the page.
 
     ```xml
     <ContentPage.BindingContext>
@@ -172,11 +196,9 @@ Xamarin.Forms UIs can be built using XAML.
         <Editor Text="{Binding PhoneNumbers}" HeightRequest="100"/>
     </StackLayout>
     ```
-    - The `Editor` control will be used to add phone numbers, and the `Label` above describes the purpose of this field to the user. 
-    - `StackLayout`'s stack child controls either horizontally or vertically in the order in which the controls are added, so adding the `Label` first will put it above the `Editor`.
+    - The `Editor` control will be used to add phone numbers, and the `Label` above describes the purpose of this field to the user.
+    - The `StackLayout` child controls stack either horizontally or vertically in the order in which the controls are added, so adding the `Label` first will put it above the `Editor`.
     - `Editor` controls are multi-line entry controls, allowing the user to enter multiple phone numbers, one per line.
-
-   
 
     The `Text` property on the `Editor` is bound to the `PhoneNumbers` property on the `MainViewModel`. The syntax for binding is to set the property value to `"{Binding <property name>}"`. The curly braces will tell the XAML compiler that this value is special and should be treated differently from a simple `string`.
 
@@ -228,4 +250,4 @@ Xamarin.Forms UIs can be built using XAML.
 
 ## Summary
 
-In this unit, you learned how to create the UI for the app using XAML, along with a ViewModel to handle the applications logic. You also learned how to bind the ViewModel to the UI. In the next unit, you add location lookup to the ViewModel.
+In this unit, you learned how to create the UI for the app using XAML, along with a ViewModel to handle the application's logic. You also learned how to bind the ViewModel to the UI. In the next unit, you'll add location lookup to the ViewModel.

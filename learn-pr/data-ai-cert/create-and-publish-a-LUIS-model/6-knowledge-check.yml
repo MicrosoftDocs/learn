@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit  
 uid: learn.data-ai.create-and-publish-a-luis-model.knowledge-check
-title: Knowledge Check  
+title: Knowledge check  
 metadata:    
-  title: Knowledge Check    
-  description: Check your knowledge around bulding a LUIS application   
+  title: Knowledge check    
+  description: Check your knowledge about building a LUIS application.
   ms.date: 1/24/2019    
   author: gerryaobrien    
   ms.author: gerryo    
@@ -14,25 +14,25 @@ durationInMinutes: 7
 quiz:
   title: Check your knowledge
   questions: 
-  - content: "In a LUIS app, what is the purpose of an utterance?"
+  - content: "In a LUIS app, what's the purpose of an utterance?"
     choices:
-    - content: "Represents a task or action the user wants to perform "
+    - content: "An utterance represents a task or action that the user wants to do."
       isCorrect: false
-      explanation: "In LUIS terminology, this definition represents an Intent."
-    - content: "Utterances are input from the user that your app needs to interpret"
+      explanation: "In LUIS terminology, an intent represents a task or action."
+    - content: "Utterances are input from the user that your app needs to interpret."
       isCorrect: true
-      explanation: "Correct. An utterance is equivalent to a phrase a user might employ to interact with the application such as, 'Book a flight to New York'."
-    - content: "Represents a word or phrase inside the Intent"
+      explanation: "Correct. An utterance is a phrase a user might use to interact with the application, such as, \"Book a flight to New York.\""
+    - content: "An utterance represents a word or phrase inside an intent."
       isCorrect: false
-      explanation: "This is definition of an entity and is actually found in an utterance, which ultimately is a part of the entity, but is only assigned in an utterance."
-  - content: "What is the purpose of the 'None' Intent?"
+      explanation: "An entity represents a word or phrase inside an utterance. Entities are used to provide context for determining the user's intent."
+  - content: "What is the purpose of the None intent?"
     choices:
-    - content: "Used when a user sends null requests"
+    - content: "The None intent is used when a user sends null requests."
       isCorrect: false
-      explanation: "Null requests are not technically relevant in the case of interaction with a LUIS app for the purpose of Intents."
-    - content: "Used to remove spaces at  beginning and end of utterances"
+      explanation: "Null requests aren't technically relevant when interacting with a LUIS app."
+    - content: "The None intent is used to remove spaces from the beginnings and endings of utterances."
       isCorrect: false
-      explanation: "There is no provision to remove blank spaces from utterances that are sent to the applicaiton."
-    - content: "Random utterances that don’t map to any of your intents may be mapped to 'None'."
+      explanation: "There's no need to remove blank spaces from utterances that are sent to the application."
+    - content: "Random utterances that don’t map to any of your intents can be mapped to None."
       isCorrect: true
-      explanation: "Correct, it serves as a catch-all for utterances that don't map to existing Intents."
+      explanation: "Correct. The None intent serves as a catchall for utterances that don't map to existing intents."

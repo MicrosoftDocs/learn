@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.exercise-use-the-api-console
-title: Exercise - Test Text Moderation Using the API Test Console
+title: Exercise - Test text moderation by using the API testing console
 metadata:
-  title: Exercise - Test Text Moderation Using the API Test Console
-  description: Use the API web-based console to test your service for text moderation
+  title: Exercise - Test text moderation by using the API testing console
+  description: Learn how to use the API web-based console to run tests of text moderation.
   ms.date: 1/28/2019
   author: gerryaobrien
   ms.author: gerryo
