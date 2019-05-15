@@ -10,7 +10,7 @@ A road map is a living document. Its development is iterative and organic. It ch
 
 ## How often do you update your road map?
 
-How often you update your road map usually depends on how mature your organization is, early-stage startups like Fabrikam generally have road maps that range out 3 to 6 months and updated monthly. A larger or more mature organization might plan quarterly with some, less stable, future plans laid out for future quarters.
+How often you update your road map usually depends on how mature your organization is, early-stage startups like Fabrikam generally have road maps that range out 3 to 6 months and are updated monthly. A larger or more mature organization might plan quarterly with some, less stable, future plans laid out for future quarters.
 
 ## Who works on a product road map?
 

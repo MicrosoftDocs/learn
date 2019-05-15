@@ -11,9 +11,9 @@ Each milestone has themes associated with it. A milestone also allows you to rep
  :::column-end:::
 :::row-end:::
 
-At Fabrikam, we use quarterly (three months) milestones. So our current milestone is Quarter 1 of 2019:
+At Fabrikam, we use quarterly (three months) milestones. So our current milestone is Quarter 1 of this year:
 
-> During Q1 2019 we plan to focus on three themes: "Acquire more customers!", "Reduce customer churn", and "Increase checkouts."
+> During Q1 we plan to focus on three themes: "Acquire more customers!", "Reduce customer churn", and "Increase checkouts."
 
 To work out what you can complete in a milestone, you'll need to work out how long the work you have planned will take. We'll talk more about estimates in the unit on user stories later in this module. You should also know the resources available to you and hence be able to solve for what’s possible in a milestone using this data. Again, having a tool that handles milestones and estimates automatically is useful.
 

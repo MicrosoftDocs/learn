@@ -12,5 +12,6 @@ If you don’t already have a tool, then we recommend you try a few to find one 
 * Does the tool have a means of prioritizing work?
 * Does the tool integrate with other products in your tool chain, for example with version control, CI/CD, and your collaboration and support tools?
 * Does the tool have reporting and analytics capabilities?
+* Will the tool still work for your team in 6, 12, or 18 months?
 
-And, don’t forget to consider some growth: will the tool still work for your team in 6, 12, or 18 months?
+You can use these criteria to evaluate the available solutions to find one that works for your organization.
