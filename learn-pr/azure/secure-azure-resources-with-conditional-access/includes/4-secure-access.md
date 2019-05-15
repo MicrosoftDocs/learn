@@ -1,6 +1,7 @@
-In the previous exercise, we enabled trial licenses, created a directory, created a user, and created a group to test our solution. In this unit, we will create our conditional access rule to require Azure Multi-Factor Authentication for the Azure portal.
+> [!NOTE]
+> This exercise is optional. You may complete the steps below in your own account. Charges may occur.
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
+In the previous exercise, we enabled trial licenses, created a directory, created a user, and created a group to test our solution. In this unit, we will create our conditional access rule to require Azure Multi-Factor Authentication for the Azure portal.
 
 ## Enable conditional access-based Multi-Factor Authentication
 
@@ -9,6 +10,8 @@ Conditional access allows administrators to configure when they do or do not wan
 **When accessing the Azure portal - Require multi-factor authentication**
 
 The steps that follow will walk you through the process to create a conditional access rule to require users to perform multi-factor authentication when they access the Azure portal.
+
+1. log into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. Browse to **Azure Active Directory**, and in the resulting blade locate and select **Conditional access** in the **Security** subsection.
 

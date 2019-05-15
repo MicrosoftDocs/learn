@@ -1,29 +1,37 @@
-At this point, the mobile app is complete and it can send the user's location and list of phone numbers to an Azure function that can deserialize the data. In this unit, you bind the Azure function to Twilio to send SMS messages.
+At this point, the mobile app is complete and it can send the user's location and list of phone numbers to the Azure Functions that can deserialize the data. In this unit, you'll bind your function to Twilio to send SMS messages.
 
-Azure Functions can be connected to other services, either services in Azure or third-party services. These connections, called bindings, exist in two forms - input and output bindings. Input bindings provide data to your function and output bindings take data from your function and send it to another service. You can read about bindings in the [Azure Functions Binding docs](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
+Azure Functions can be connected to other services, either in Azure or third-party. These connections, called bindings, exist in two forms - input and output bindings. Input bindings provide data to your function and output bindings take data from your function and send it to another service. You can read about bindings in the [Azure Functions Binding docs](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
 
 Bindings for Azure Functions created in Visual Studio are defined using parameters to the function, decorated with attributes.
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
-
-## Bind the Azure function to Twilio
+## Bind the Azure Functions to Twilio
 
 Sending SMS messages via Twilio requires an output binding that is configured with your account subscription ID (SID) and Auth Token.
 
 1. Stop the local Azure Functions runtime if it's still running from the previous unit.
 
-2. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
+1. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
+Make sure that you also have NuGet packages for Mcrosoft.Azure.WebJobs and latest .NET SDK installed in your function. The NuGet section for your function should look like the screenshot below:
 
-3. Add a new parameter to the static `Run` method on the `SendLocation` static class called `messages`. This parameter will have a type of `ICollector<CreateMessageOptions>`. You'll need to add a `using` directive for the `Twilio.Rest.Api.V2010.Account` namespace.
+   ![Screenshot showing the function NuGet dependencies](../media/Imhere-function-dependencies.png)
+
+1. Open the SendLocation class in the ImHere.Functions project for editing.
+
+1. Add a using directive for `Twilio.Rest.Api.V2010.Account` to the class.
+
+    ```cs
+      using Twilio.Rest.Api.V2010.Account;
+    
+    ```
+
+1. Add a new parameter called `messages` of type `ICollector<CreateMessageOptions>` to the static `Run` method. 
 
     ```cs
     [FunctionName("SendLocation")]
-    public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous,"get", "post", Route = null)]HttpRequestMessage req,
-                                                ICollector<CreateMessageOptions> messages,
-                                                ILogger log)
+    public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous,"get", "post", Route = null)]HttpRequestMessage req, ICollector<CreateMessageOptions> messages, ILogger log)
     ```
 
-4. Decorate the new `messages` parameter with the `TwilioSms` attribute as follows: 
+1. Decorate the new `messages` parameter with the `TwilioSms` attribute as follows:
 
       ```cs
     [TwilioSms(AccountSidSetting = "TwilioAccountSid",AuthTokenSetting = "TwilioAuthToken", From = "+1xxxxxxxxx")]ICollector<CreateMessageOptions> messages,
@@ -32,11 +40,11 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 
     * **AccountSidSetting** - set this to `"TwilioAccountSid"`
   
-        This is the SID for your Twilio account that you recorded earlier in the module. Rather than set the SID directly, this parameter is the name of a value in the function app settings that will be used to retrieve the SID.
+        This is the SID for your Twilio account that you recorded earlier in the module. Rather than set the SID directly, this parameter is the name of a value in the function app settings that will be used to retrieve the SID. We will define this parameter later.
 
     * **AuthTokenSetting** - set this to `"TwilioAuthToken"`
 
-       This is the Auth Token for your Twilio account that you recorded earlier in the module. Rather than set the Auth Token directly, this parameter is the name of a value in the function app settings that will be used to retrieve the Auth Token.
+       This is the Auth Token for your Twilio account that you recorded earlier in the module. Rather than set the Auth Token directly, this parameter is the name of a value in the function app settings that will be used to retrieve the Auth Token. We will define this parameter later.
 
     * **From** - set this to your Twilio active phone number that you recorded earlier in the module.
 
@@ -45,7 +53,11 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
     > [!IMPORTANT]
     > Make sure to remove all spaces from the phone number.
 
-5. Function app settings can be configured locally inside the `local.settings.json` file. Add your Twilio account SID and Auth Token to this JSON file using the setting names that were passed to the `TwilioSMS` attribute.
+## Define TwilioSMS variables in local settings
+
+Function app settings can be configured locally inside the `local.settings.json` file. Add your Twilio account SID and Auth Token to this JSON file using the setting names that were passed to the `TwilioSMS` attribute.
+
+1. Open the `local.settings.json` file in the ImHere.Functions project and replace the existing code with the following:
 
     ```json
     {
@@ -59,10 +71,10 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
     }
     ```
 
-    Replace \<Your SID\> and \<Your Auth Token\> with the values from your Twilio dashboard.
+1. Replace \<Your SID\> and \<Your Auth Token\> with the values from your Twilio dashboard.
 
     > [!NOTE]
-    > These local settings will be only for running locally. In a production app, these values would be your local development or test account credentials. Once the Azure Function has been deployed to Azure, you'll be able to configure the production values.
+    > These local settings will be only for running locally. In a production app, these values would be your local development or test account credentials. Once the Azure Functions has been deployed to Azure, you'll be able to configure the production values.
 
     > [!NOTE]
     > If you check your code into source control, these local application setting values will be checked in, too, so be careful not to check in any actual values in these files if your code is open source or public in any form.
@@ -71,7 +83,14 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 
 The `ICollector<CreateMessageOptions>` parameter is a collection of `CreateMessageOptions` instances and is used to collect the SMS messages you want to send. After the function has finished running, any instances of `CreateMessageOptions` added to this collection are passed to Twilio and used to create messages to be sent to the relevant recipients.
 
-1. In the `SendLocation` function, add code to loop through the phone numbers in the `PostData` and create an SMS message for each one. You will need to add a using directive for `Twilio.Types`.
+1. In the `SendLocation' class` add a using directive for `Twilio.Types` to the class.
+
+    ```cs
+      using Twilio.Types;
+    
+    ```
+
+1. In the `SendLocation` function, add code to loop through the phone numbers in the `PostData` and create an SMS message for each one.
 
     ```cs
     foreach (string toNo in data.ToNumbers)
@@ -143,9 +162,9 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
 
     ![The Xamarin.Forms app showing the location as sent](../media/7-ui-location-sent.png)
 
-1. In the console logs for the Azure function, you'll see the message being created and sent. If any errors occur (such as, the number is in the wrong format), they will be logged out here.
+1. In the console logs for your function, you'll see the message being created and sent. If any errors occur (such as, the number is in the wrong format), they will be logged out here.
 
-    ![The Azure function console showing the message has been sent](../media/7-function-message-sent.png)
+    ![The Azure Functions console showing the message has been sent](../media/7-function-message-sent.png)
 
 1. Check your phone for a message. Follow the link in the message to see your location.
 
@@ -156,4 +175,4 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
 
 ## Summary
 
-In this unit, you learned how to create a Twilio binding for the Azure function and send an SMS message with the user's location to a function that was running locally. In the next unit, you publish the function to Azure.
+In this unit, you learned how to create a Twilio binding for the Azure Functions and send an SMS message with the user's location to a function that was running locally. In the next unit, you publish the function to Azure.

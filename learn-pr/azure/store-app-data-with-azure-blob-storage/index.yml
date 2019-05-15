@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.store-app-data-with-azure-blob-storage
 metadata:
-  title: Store application data with Azure Blob storage - Learn
+  title: Store application data with Azure Blob storage
   description: Build an app that stores user files with Azure Blob storage.
   ms.date: 09/24/2018
   author: nickwalkmsft

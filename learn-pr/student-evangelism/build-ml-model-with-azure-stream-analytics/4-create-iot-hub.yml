@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-iot-hub
+title: Create an IoT hub to connect to cameras
+metadata:
+  title: Create an Azure IoT hub to connect to cameras
+  description: Create an Azure IoT hub to handle camera uploads
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/4-create-iot-hub.md)]

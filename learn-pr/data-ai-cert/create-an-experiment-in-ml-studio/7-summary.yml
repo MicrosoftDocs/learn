@@ -2,8 +2,8 @@
 uid: learn.data-ai.create-an-experiment-in-ml-studio.summary
 title: Summary
 metadata:
-  title: Summary
-  description: Summary of Creating an experiment in Azure ML Studio
+  title: Summary 
+  description: Summary of creating an experiment in Azure Machine Learning Studio
   ms.date: 12/12/2018
   author: gerryaobrien
   ms.author: gerryo
