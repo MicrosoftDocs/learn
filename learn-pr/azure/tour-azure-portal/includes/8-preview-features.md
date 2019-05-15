@@ -10,7 +10,7 @@ Some of the common areas you will see previews for include:
 > [!IMPORTANT]
 > Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Also, some previews are not covered by customer support.
 
-Once a feature has been evaluated and tested successfully, it might be released to customers as part of Azure's default product set. This release is referred to as **General Availability** (GA). In some cases, it might also be determined that the feature needs additional work. When this happens, it might be removed and replaced with a different implementation.
+Once a feature has been evaluated and tested successfully, it might be released to customers as part of Azure's default product set. This release is referred to as **General Availability** (GA). 
 
 ### Feature preview categories
 
@@ -19,18 +19,17 @@ There are two types of previews available:
 - **Private Preview**. This means that an Azure feature is available to * specific* Azure customers for evaluation purposes. This is typically by invite only and issued directly by the product team responsible for the feature or service.
 - **Public Preview**. This means that an Azure feature is available to *all* Azure customers for evaluation purposes. These previews can be turned on through the preview features page as detailed below.
 
-### Accessing preview features
+### Finding preview features
 
-You can activate specific preview features through the [preview features page](https://azure.microsoft.com/services/preview/?azure-portal=true). This page lists the preview features that are available for evaluation. To preview a feature, select the **Try it** button for the relevant feature. You can get more information about an Azure preview feature before you try it by choosing **Learn more**.
+You can learn about preview features through the [preview features page](https://azure.microsoft.com/services/preview/?azure-portal=true). This page lists the preview features that are available for evaluation. To access a preview feature, select its entry on this page and learn more about how to evaluate it. You can also use the **RSS Feed** button on this page to subscribe to notifications and stay informed.
 
-### Turn off preview features
-To see which preview features you are using and turn them off:
+You can also find Azure preview features in the portal as follows:
 
 - Sign in to Azure portal.
-- Open the **New** blade.
-- Enter the word *preview*.
-- You will see a list of available preview features, with the word **enabled** next to each feature you have activated.
-- Choose **disable** to turn off a preview feature.
+- Select **Create a resource** in the resources panel to open the **New** blade.
+- Enter the word *preview* into the search box at the top of the **New** blade.
+- A list of available preview features is displayed, with the word **(preview)** next to each one.
+
 
 ## Azure portal preview features
 Another preview area you can try is the next version of the Azure portal. Use the URL [https://preview.portal.azure.com](https://preview.portal.azure.com?azure-portal=true) (notice the **preview** prefix).

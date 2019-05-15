@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-and-publish-a-luis-model.exercise-train-luis-model
-title: Train the LUIS Model
+title: Train the LUIS model
 metadata:
-  title: Train the LUIS Model
-  description: Training the model for you LUIS app to help it understand new utterances
+  title: Train the LUIS model
+  description: Learn how to train the model for your LUIS app to help it understand new utterances.
   ms.date: 1/24/2019
   author: gerryaobrien
   ms.author: gerryo
