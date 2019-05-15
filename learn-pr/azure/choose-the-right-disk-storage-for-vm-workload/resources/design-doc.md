@@ -86,4 +86,14 @@ Identify the subtasks of *Choose the right disk storage for your virtual machine
 
 If there's value to it, consider including an exercise to deploy a VM or two with a particular disk requirement. Definitely include some scenarios that the learner has to evaluate to determine the best type of disk storage. We don't need to demonstrate rote memorization, but they should be able to define the differences between the disk types and select the one that best fits the use case, based on size, price, performance, etc.
 
-Doc on different disk types - https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-types  
+Doc on different disk types - https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-types
+
+Should include coverage of:
+
+- Ultra SSD (preview, but worth covering)
+- Premium SSD
+- Standard SSD
+- Standard HDD
+- Temporary disk
+- Ephemeral OS disks (preview, but worth covering)
+- Managed and unmanaged disks
