@@ -20,7 +20,7 @@ In this module, you will:
 - Recognize how Azure differentiators help solve business challenges.
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Does your organization have workloads running on Windows Server 2008/2008 R2? If so, consider whether the scenario demonstrated in the next unit applies to your situation.*|
 |
 

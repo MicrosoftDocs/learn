@@ -169,8 +169,9 @@ The key takeaways of the demo are:
 - Azure offers a practical approach to automation at every step of the DevOps lifecycle that enables companies to focus their efforts on creating business value.
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Think about how you can engage an end-user with in-depth conversation about the automation and integration benefits of Azure DevOps.*|
+|
 
 Next, let's explore how Azure differentiators help solve business challenges.
 
