@@ -30,16 +30,21 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
 
 ## Create an Azure Storage account
 
-[!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-1. Run the following commands in the Cloud Shell to set environment variables that you will use in later commands; these variables specify the name of Azure storage account, a storage container name, the name of the closest geographical region from the list above, and the name resource group that was created when you activated your sandbox account.
 
-   ```bash
+1. Replace the three placeholder variables in the following commands and run the commands in the Cloud Shell. These commands set the environment variables that you will use in the following steps. These variables specify the name of Azure storage account, a storage container name, the name of the closest geographical region, and the name resource group that was created when you activated your sandbox account.
+
+    ```bash
    export AZURE_STORAGE_ACCOUNT=<unique account name>
    export CONTAINER_NAME=<container name>
    export AZURE_REGION=<your region>
    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-  ```
+
+    ```
+
+    For AZURE_REGION, replace "your region" with one of the following values:
+
+    [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
 1. Run the following command to create a new blob storage account.
 
