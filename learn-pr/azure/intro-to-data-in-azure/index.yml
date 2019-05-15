@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-to-data-in-azure
 metadata:
-  title: Core Cloud Services - Azure data storage options - Learn
+  title: Core Cloud Services - Azure data storage options
   description: In this module, we'll explore the benefits of Azure data storage services versus on-premises storage.
   ms.date: 09/24/2018
   author: sowmyasubramaniam 
@@ -17,6 +17,7 @@ abstract:  |
   - Explore how Azure can meet your business demands for storing and analyzing data
   - Compare Azure data options with on-premises storage
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/intro-to-data-in-azure.svg
 levels: 
 - beginner

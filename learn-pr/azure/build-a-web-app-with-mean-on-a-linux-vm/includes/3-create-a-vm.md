@@ -1,4 +1,4 @@
-Like most application frameworks, you can run your MEAN stack application in many different environments. You can run your application on a physical computer in your server room, on a VM, or on containers.
+Like most application frameworks, you can run your MEAN stack application in many different environments. You can run your application on a physical computer in your server room, on a virtual machine, or in containers.
 
 Here you'll run your application on a VM running on Azure. MEAN supports many different operating systems. For learning purposes, here you'll use Ubuntu Linux.
 
@@ -6,7 +6,7 @@ Here you'll run your application on a VM running on Azure. MEAN supports many di
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-Normally, you create a _resource group_ before you create other resources on Azure. A resource group groups related resources. The Azure sandbox provides a resource group for you. When you work in your own Azure subscription, use the following command to create a resource group in a location near you.
+Normally, you create a _resource group_ before you create other resources on Azure. A resource group is a container that holds the resources that are related for an Azure solution. For this exercise, the Azure sandbox provides a resource group for you. However, when you are working in your own Azure subscription, you would use the following command to create a resource group in a location near you.
 
 ```azurecli
 az group create \

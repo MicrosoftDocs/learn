@@ -1,21 +1,22 @@
 ### YamlMime:Module
 uid: learn.data-ai.identify-faces-with-computer-vision
 metadata:
-  title: Identify faces and expressions with the Computer Vision API in Azure Cognitive Services - Learn
-  description: Learn about the Computer Vision API in Azure that allows you to identify facial details in pictures - Learn
+  title: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
+  description: Learn how to use the Computer Vision API in Azure to identify facial details in pictures
   ms.date: 1/4/2019
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: smmark
-title: Identify faces and expressions with the Computer Vision API in Azure Cognitive Services
+title: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
 summary: Learn about the Computer Vision API in Azure that allows you to identify facial details in pictures.
 abstract: |
   In this module you will:
   - Learn what the Face API is
-  - Gain an understanding of concepts related to the Face API
+  - Understand concepts related to the Face API
   - Explore the Emotion API
+ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/identify-faces-with-computer-vision.svg
 levels:
