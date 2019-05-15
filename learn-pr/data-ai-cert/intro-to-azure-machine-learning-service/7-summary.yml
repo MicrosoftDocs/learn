@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.intro-to-azure-machine-learning-service.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "The Azure Machine Learning service SDK is which of the following?"
+    choices: 
+    - content: "A visual machine learning development portal."
+      isCorrect: false
+      explanation: "This is not correct. Azure ML Studio provides a visual drag and drop machine learning development portal but that is a separate offering."
+    - content: "A Python package containing functions to use the Azure ML service."
+      isCorrect: true
+      explanation: "That is correct. The modules provided by the Azure ML SDK provide the functions you need to work with the service in Python."
+    - content: "A special type of Azure virtual machine."
+      isCorrect: false
+      explanation: "This is not correct.  The Azure ML SDK is not a virtual machine."
+  
+  - content: "Which of the following is the underlying technology of the Azure Machine Learning service?"
+    choices: 
+    - content: "Spark"
+      isCorrect: false
+      explanation: "That is not correct. Spark is not a part of the service."
+    - content: "Hadoop"
+      isCorrect: false
+      explanation: "That is not correct. Hadoop is not a part of the service."
+    - content: "Containerization including Docker and Kubernetes"
+      isCorrect: true
+      explanation: "That is correct. Containerization is a key technology used by the Azure ML service."
+
+  - content: "Which of the following is not a component of an Azure Machine Learning service workspace image?"
+    choices: 
+    - content: "An R package"
+      isCorrect: true
+      explanation: "That is correct. R packages are not part of an Azure Machine Learning service workspace image."
+    - content: "An environment file that declares dependencies that are needed by the model, scoring script or application."
+      isCorrect: false
+      explanation: "That is not correct. An environment file is a component of an Azure Machine Learning service workspace image."
+    - content: "A model scoring script"
+      isCorrect: false 
+      explanation: "That is not correct. A model scoring script is component of an Azure Machine Learning service workspace image."

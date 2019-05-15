@@ -1,116 +1,116 @@
-Custom events and metrics can be generated from an app using the `TelemetryClient` object from the Application Insights SDK.
+You can generate custom events and metrics from an app by using the `TelemetryClient` object from the Application Insights SDK.
 
-For the video app, the development team has added and initialized the SDK within their code and is ready to start adding logic to generate data about application-specific events and measurements.
+For the video app, the development team has added and initialized the SDK in their code and is ready to start adding logic to generate data about application-specific events and measurements.
 
-In this exercise, you will instrument your code with a custom event, run it to generate event occurrences, and view the results in the Azure portal.
+In this exercise, you'll instrument your code with a custom event, run it to generate event occurrences, and view the results in the Azure portal.
 
-## Add an example action to the app
+## Add an action to the app
 
-In this example, we're going to track an event based on a user action. In the spirit of the video app scenario, our example app will present a "Like" button to the user. When they click it, the code that runs in response will track an occurrence of an event called "Liked" as part of its work.
+In this exercise, we'll track an event based on a user action. We'll present a **Like** button to users of the video app. When they select it, the code that runs will track an occurrence of an event called `Liked` as part of its work.
 
-Let's add the button and action in the main page of the app.
+Let's add the button and action on the main page of the app.
 
 1. Open the code editor if it isn't open already.
-```bash
-cd videowebapp
-code .
-```
-1. Use the file navigator of the Cloud Shell editor to open  **Views/Home/Index.cshtml**.
+   ```bash
+   cd videowebapp
+   code .
+   ```
+1. Use the file navigator of the Azure Cloud Shell editor to open  *Views/Home/Index.cshtml*.
 1. At the bottom of the file, paste in the following code to add a button:
 
-```html
-<div>
-    @using (Html.BeginForm("Like","Home"))
-    {
-        <input type="submit" value="Like" />
-        <div>@ViewBag.Message</div>
-    }  
-</div>
-```
+   ```html
+   <div>
+       @using (Html.BeginForm("Like","Home"))
+       {
+           <input type="submit" value="Like" />
+           <div>@ViewBag.Message</div>
+       }  
+   </div>
+   ```
 
-1. Use the file navigator to open **Controllers/HomeController.cs**.
-1. To add an action that will run in response to the button click, add the following method inside the **HomeController** class:
+1. Use the file navigator to open *Controllers/HomeController.cs*.
+1. To add an action that will run in response to the button click, add the following method inside the `HomeController` class:
 
-```csharp
-[HttpPost]
-public ActionResult Like(string button)
-{
-    ViewBag.Message = "Thank you for your response";
-    return View("Index");
-}
-```
+   ```csharp
+   [HttpPost]
+   public ActionResult Like(string button)
+   {
+       ViewBag.Message = "Thank you for your response";
+       return View("Index");
+   }
+   ```
 
 ## Instantiate the TelemetryClient object and track metrics
 
-Now we have a button in our app and some code that will run in response to clicking it, we can add code that uses the Application Insights SDK to send telemetry.
+Now that we have a button in our app and some code that will run when a user selects it, we can add code that uses the Application Insights SDK to send telemetry.
 
-1. Still working in **HomeController.cs**, at the top of the code file, add the ApplicationInsights using statement:
+1. Still working in *HomeController.cs*, at the top of the code file, add the `ApplicationInsights` using statement:
 
-```csharp
-using Microsoft.ApplicationInsights;
-```
+   ```csharp
+   using Microsoft.ApplicationInsights;
+   ```
 
-1. At the top of the **HomeController** class, create a **TelemetryClient** field named **aiClient**:
+1. At the top of the `HomeController` class, create a `TelemetryClient` field named `aiClient`:
 
-```csharp
-private TelemetryClient aiClient;
-```
+   ```csharp
+   private TelemetryClient aiClient;
+   ```
 
-1. Add a constructor to the **HomeController** class that accepts a `TelemetryClient` object and assign it to your **aiClient** field:
+1. Add a constructor to the `HomeController` class that accepts a `TelemetryClient` object and assign it to your `aiClient` field:
 
-```csharp
-public HomeController(TelemetryClient aiClient)
-{
-    this.aiClient = aiClient;
-}
-```
+   ```csharp
+   public HomeController(TelemetryClient aiClient)
+   {
+       this.aiClient = aiClient;
+   }
+   ```
 
-1. Within the **Like** action, before the two existing lines of code, call `TrackEvent` on **aiClient**:
+1. Within the **Like** action, before the two existing lines of code, call `TrackEvent` on `aiClient`:
 
-```csharp
-this.aiClient.TrackEvent("LikeClicked");
-```
+   ```csharp
+   this.aiClient.TrackEvent("LikeClicked");
+   ```
 
 1. Save any open files and close the code editor.
 
 ## Deploy the web app and generate data
 
-Run the following commands in the Cloud Shell from within the `videowebapp` folder to build the application and deploy it to App Service.
+Run the following commands in the Cloud Shell from within the *videowebapp* folder to build the application and deploy it to App Service.
 
-```azurecli
-dotnet publish -o pub
-cd pub
-zip -r site.zip *
+   ```azurecli
+   dotnet publish -o pub
+   cd pub
+   zip -r site.zip *
 
-az webapp deployment source config-zip \
-    --src site.zip \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name <your-App-Service-name>
-```
+   az webapp deployment source config-zip \
+       --src site.zip \
+       --resource-group <rgn>[sandbox resource group name]</rgn> \
+       --name <your-App-Service-name>
+   ```
 
 ## Run the app and generate telemetry data
 
 1. When the deployment is complete, switch to the Azure portal. Use the **All resources** view to navigate to your web app.
 1. On the **Overview** page for your web app, select **Browse**. The web app opens in a new tab.
-1. Click the **Like** button near the bottom of the page. The page will reload and display the "Thank you for your response" message. Click the **Like** button a few more times to simulate multiple clicks entering the app.
+1. Select the **Like** button near the bottom of the page. The page will reload and display the "Thank you for your response" message. Select the **Like** button a few more times to simulate multiple clicks entering the app.
 1. Close the browser tab and return to the Azure portal.
 
 ## View information in the Azure portal
 
-We can use the Application Insights **Search** tool to locate and display the events we just created. Take the following steps:
+We can use the Application Insights search tool to locate and display the events we just created. Take the following steps:
 
-1. In the navigation menu of the window for your web app, select **Application Insights**. In the window that opens, select **View Application Insights data** to navigate to the app's Application Insights resource.
-1. In the navigation menu, select **Search**.
+1. On the navigation menu of the window for your web app, select **Application Insights**. In the window that opens, select **View Application Insights data** to go to the app's Application Insights resource.
+1. On the navigation menu, select **Search**.
 
-    ![Access the Search tool in Application Insights](../media/5-access-search-in-app-insights.png)
+    ![Access the search tool in Application Insights](../media/5-access-search-in-app-insights.png)
 
 1. At the top of the window, select **Filters** and then select **Clear filters**.
 1. In the **Filter** window, scroll down to the **Properties** section, and then expand **Event name**.
 1. Select **LikeClicked** and then select **Done**.
 
-    ![Searching for LikedClicked events](../media/5-search-for-likeclicked-event.png)
+    ![Searching for LikeClicked events](../media/5-search-for-likeclicked-event.png)
 
     > [!NOTE]
-    > IF **LikeClicked** is not shown in the Events section, close the Filter window, click the **Refresh** button near the top of the Application Insights window, and wait a moment before re-opening the Filter window to try again. Telemetry data generated by your app is buffered and sent to the Application Insights resource in bursts, and may not arrive for a minute or two after the event has occurred. Until the first occurrence of the LikeClicked event arrives, it will not be available for filtering.
+    > If **LikeClicked** isn't available in the **Event names** section, close the **Filter** window, select the **Refresh** button near the top of the Application Insights window, and wait a moment before re-opening the **Filter** window to try again. Telemetry data generated by your app is buffered and sent to the Application Insights resource in bursts. It might not arrive for a minute or two after the event has occurred. Until the first occurrence of the `LikeClicked` event arrives, it won't be available for filtering.
 
-1. Close the **Filter** window. The search tool shows all the **LikeClicked** events you recorded in a timeline and a list.
+1. Close the **Filter** window. The search tool shows all the `LikeClicked` events you recorded in a timeline and a list.
