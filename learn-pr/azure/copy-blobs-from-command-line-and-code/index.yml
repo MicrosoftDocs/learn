@@ -19,7 +19,7 @@ abstract: >
 prerequisites: |
   - Beginner-level knowledge of Azure storage and blobs
   - Beginner-level knowledge C# .NET
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/copy-blobs-from-command-line-and-code.svg
 levels:
 - beginner
 roles:
