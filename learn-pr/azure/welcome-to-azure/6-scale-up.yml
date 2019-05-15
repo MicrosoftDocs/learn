@@ -23,7 +23,6 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Compute/virtualMachines"
-      name: myVM
       properties:
         hardwareProfile:
           vmSize: Standard_DS3_v2

@@ -4,50 +4,50 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Knowledge Check
+title: Knowledge check
 durationInMinutes: 5
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   questions:
-    - content: 'Which of these best describes the purpose of training data?'
+    - content: "Which of these descriptions best matches the purpose of training data?"
       choices:
-        - content: A subset of the data used to "test" what the algorithm has learned.
-          explanation: This is not the purpose of training data. 
+        - content: A subset of the data that's used to test what the algorithm has learned.
+          explanation: Testing the algorithm isn't the purpose of training data. 
           isCorrect: false
-        - content: The dataset used in its entirety to "teach" the algorithm.
+        - content: The dataset used in its entirety to teach the algorithm.
           isCorrect: false
-          explanation: Only a subet of the complete dataset should be used for training data. 
-        - content: A subset of the data used to "teach" the algorithm. This is the data that the algorithm will learn from.
+          explanation: Only a subset of the complete dataset should be used for training data. 
+        - content: A subset of the data that's used to teach the algorithm. 
           isCorrect: true
-          explanation: This is the best description.   
-    - content: 'What is the likely cause when a supervised model makes predictions perfectly against all the training data, but fails against new data.?'
+          explanation: Correct. This subset is the data that the algorithm will learn from.  
+    - content: "What's the likely cause when a supervised model makes predictions perfectly against all the training data but fails against new data?"
       choices:
-        - content: overfitting
-          explanation: Overfitting occurs when the model has effectively memorized the answers for the data it has seen, but has not "learned" to make predictions against unseen data. 
+        - content: Overfitting
+          explanation: Correct. Overfitting occurs when the model has effectively memorized the answers for the data that it's seen but hasn't learned to make predictions against data that it hasn't yet seen. 
           isCorrect: true
-        - content: underfitting
+        - content: Underfitting
           isCorrect: false
-          explanation: Underfitting would result in bad performance against both training and unseen validation data.
-    - content: 'What is used to guide the improvement of the model during model training?'
+          explanation: Underfitting results in poor performance against both training data and data the model hasn't seen yet.
+    - content: "What's used to guide the improvement of the model during model training?"
       choices:
         - content: Plotting the error
-          explanation: While plotting the error can be helpful to understanding the model performance, this is not what is ultimately used to perform the model training.
+          explanation: While plotting the error can be helpful to understanding the model's performance, it isn't what's ultimately used to train the model.
           isCorrect: false
         - content: Regression
           isCorrect: false
-          explanation: This is a type of algorithm, not an approach used for model training.
-        - content: Minimizing error
+          explanation: Regression is a type of algorithm, not an approach used for model training.
+        - content: Minimizing the error
           isCorrect: true
-          explanation: Supervised models use different variants of error calculations during training to find the coefficients that will minimize the error observed between the prediction and the value expected from the training data.
-    - content: 'Which of these best summarizes the difference between regression and classification?'
+          explanation: Correct. Supervised models use different variants of error calculations during training to find the coefficients that minimize the error observed between the prediction and the value expected from the training data.
+    - content: "Which of these descriptions best summarizes the difference between regression and classification?"
       choices:
-        - content: Regression predicts numeric outcomes and classification predicts labels.
-          explanation: This is the approach of cross-validation.
+        - content: Regression predicts numeric outcomes, and classification predicts labels.
+          explanation: Correct. Regression outputs numeric values, and classification outputs categories.
           isCorrect: true
         - content: Regression predicts a binary outcome.
           isCorrect: false
@@ -55,4 +55,3 @@ quiz:
         - content: Classification predicts a binary label.
           isCorrect: false
           explanation: Classification algorithms can predict binary labels but can also be used to predict multiple labels.
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.

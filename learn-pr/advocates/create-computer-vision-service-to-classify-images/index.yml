@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.create-computer-vision-service
 metadata:
-  title: Process images with the Computer Vision service - Learn
+  title: Process images with the Computer Vision service
   description: Use the Computer Vision API to analyze images for insights, extract text from images, and generate high-quality thumbnails.  
   ms.date: 09/24/2018
   author: MaximRouiller 

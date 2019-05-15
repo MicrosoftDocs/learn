@@ -3,7 +3,7 @@ uid: learn.data-ai.convert-speech-to-text.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
+  description: A summary of the speech-translation services provided by the Speech Translation API in Azure Cognitive Services. 
   ms.date: 01/11/2019
   author: gerryaobrien
   ms.author: gerryo
