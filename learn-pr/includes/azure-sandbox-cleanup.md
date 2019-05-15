@@ -1,5 +1,5 @@
 ## Clean up
 
-The sandbox will clean up your resources automatically for you when you are finished with this module. 
+The sandbox automatically cleans up your resources when you're finished with this module.
 
-However, when you're working in your own subscription it is best practice at the end of a project to identify whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or just delete the resource group to get rid of the entire set.
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.

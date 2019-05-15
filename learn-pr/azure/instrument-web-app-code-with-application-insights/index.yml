@@ -12,7 +12,7 @@ title: Instrument server-side web application code with Application Insights
 summary: Obtain comprehensive diagnostic information from a web app by adding the Application Insights SDK to your server-side code.
 abstract: | 
   In this module, you will:
-  - Identify the benefits of adding the Application Insights SDK to the source code for an Azure App Service web apps 
+  - Learn the benefits of adding the Application Insights SDK to the source code of an Azure App Service web app
   - Install the Application Insights SDK in an ASP.NET Core web app
   - Instrument a web app with code to gather information about custom events
 prerequisites: |

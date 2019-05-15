@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.handle-transient-errors-in-your-app.5-exercise-detect-transient-errors
+title: Exercise - Detect transient errors in code
+metadata:
+  title: Exercise - Detect transient errors in code
+  description: In this hands-on lab, you'll write code in C#, Java, or Node to add exception handling.
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: dev-lang-csharp-java-node
+interactive: bash
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-detect-transient-errors.md)]

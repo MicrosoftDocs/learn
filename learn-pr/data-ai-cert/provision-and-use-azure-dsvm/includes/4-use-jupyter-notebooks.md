@@ -1,44 +1,80 @@
-The Jupyter Notebook is a popular browser-based integrated development environment (IDE) for Data Science. You can use Jupyter Notebooks to explore data and train models. It supports both R and Python programming languages. Specifically, Python 2, Python 3, Open Source R, and the Microsoft R Server. Although notebooks support rich annotations, they are programs that can execute complete data science pipelines.
+The Jupyter Notebook is a popular browser-based IDE for data science that is included in the DSVM. You can use Jupyter Notebooks to explore data and train models. The notebooks support both R and Python programming languages — specifically, Python 2, Python 3, Open Source R, and the Microsoft R Server. Although notebooks support rich annotations, they are programs that can execute entire data science pipelines.
 
 ## Why use Jupyter Notebooks?
 
-### Presentation
+### Create presentations with Jupyter Notebooks
 
-The Jupyter Notebook integrates code, its output, and explanatory text all into a single document. Comparing to a traditional code editor, it is great for presentation because the file can contain visualizations, tables, narrative texts, equations, etc.
+The Jupyter Notebook integrates code, its output, and explanatory text all into a single document. Comparing to a traditional code editor, it's great for presentation because the file can contain items such as visualizations, tables, narrative texts, and equations.
 
-### Collaboration
+### Collaborate with Jupyter Notebooks
 
-You can export a Jupyter Notebook to different formats. By downloading it as an HTML file, you can share the results with a small group of people. Alternatively, you can save the notebook to its native format, with the .ipynb file extension, and upload to GitHub for a more direct sharing.
+You can export a Jupyter Notebook to different formats. By downloading it as an HTML file, you can share the results with a small group of people. Alternatively, you can save the notebook to its native format, with the **.ipynb** file extension, and then upload it to GitHub for a more direct sharing.
 
-### Exploratory analysis
+### Perform exploratory analysis with Jupyter Notebooks
 
-The development process on Jupyter Notebook is very interactive. You write a small piece of code, observe the output immediately, and write another piece of code. This is consistent with what data scientists do in their day-to-day work because data science is an iterative and exploratory process.
+The development process on Jupyter Notebook is extremely interactive. You write a small piece of code, observe the output immediately, and then write another piece of code. This is consistent with what data scientists do in their day-to-day work because data science is an iterative and exploratory process.
 
-### Many Languages Supported
+### Use multiple programming languages with Jupyter Notebooks
 
-Jupyter Notebooks use a kernel-based architecture which separates the language interpreter from the notebook. Any language that has a Jupyter language kernel can be used in a notebook. All popular data science languages including Python, R, Julia, and Java have kernels available. The Jupyter Notebook is a machine learning development environment for virtually any language.
+The Jupyter Notebook is a machine learning development environment for virtually any language. Jupyter Notebooks use a kernel-based architecture that separates the language interpreter from the notebook. Within the notebook you can use any language that has a Jupyter language kernel. All popular data science languages, including Python, R, Julia, and Java have kernels available.
 
-To Use Jupyter Notebook, click on the start menu icon:
+## Create a simple Jupyter notebook.
 
-![Screenshot of Start Menu](../media/4-start-menu.png)
+1. To Use Jupyter Notebook, click the start menu tile, or the **Jupyter** icon on the desktop:
 
-The interface of Jupyter Notebook is intuitive. Under the Files tab, you can see the list of folders and files in the current directory. Select the location where you want to create your notebook. Then click **New** on the right upper corner to create a new notebook and select a language (Python 3 in this example). Notice several language kernels are installed for you but you can install more if you like.
+    ![Screenshot of the Start menu with the Jupyter Notebook tile selected.](../media/4-start-menu.png)
 
-![Screenshot of Code Cell](../media/4-jupyter-code-cell.png)
+1. Under the **Files** tab, you can see the list of folders and files in the current directory. Select the location where you want to create your notebook.
 
-A new notebook is created, and you can see an empty code cell waiting for your input. You can run, add, remove, or edit the cells. The toolbar buttons allow you to do various operations on selected cells, for example, delete, copy, move, run, etc. There are two commonly used keyboard shortcuts listed below, and you can get a full list of keyboard shortcuts by clicking on the keyboard icon in the toolbar, ![Screenshot of Keyboard Icon](../media/4-keyboard-icon.png). Alternatively, you can use the drop-down menus to perform actions on your notebook.
+1. In the right upper corner, click **New** to create a new notebook and select **Python 3** as the target language. Notice several language kernels are installed for you but you can install more if you like.
 
-- Ctrl + Enter: to run the selected cell
-- Shift + Enter: to run the selected cell, move to the next cell when the selected cell is not the last one, otherwise add a new cell.
+    ![Screenshot of the Jupyter, with the File tab selected. The New drop-down menu is selected as well.](../media/4-jupyter-code-cell.png)
 
-![Screenshot of Jupyter Input](../media/4-jupyter-input.png)
+1. A new notebook is created, and an empty code cell waits for your input. You can run, add, remove, or edit the cells. The toolbar buttons allow you to complete various operations on selected cells such as: Delete, Copy, Move, and Run.
 
-By default, a cell is executed in the "kernel", which is a computational engine that executes the code contained in the cell. Alternatively, you could change the cell type to be "Markdown" or "Header", which are used annotations and formatted titles. Note:  The "Header" type is just a Markdown cell that has '##' characters added to format it as a header.
+1. Type the following code into the cell and hit <kbd>Shift</kbd>+<kbd>Enter</kbd> at the end of the line to run the cell.
 
-![Screenshot of Jupyter Executing MarkDown](../media/4-execute-jupyter-markdown.png)
+    ```python
+    print("Hello World")
+    ```
+    > [!TIP]
+    > Two commonly used keyboard shortcuts are <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to run the selected cell, and <kbd>Shift</kbd>+<kbd>Enter</kbd>** to run the selected cell, move to the next cell when the selected cell is not the last one, and add a new cell.
+    >
+    > To open a full list of keyboard shortcuts, click on the keyboard icon in the toolbar.
+    > ![Screenshot of the Keyboard icon.](../media/4-keyboard-icon.png) 
 
-For more information about using Jupyter notebooks, see http://Jupyter.org.
+1. You should see it echo "Hello World" below the cell. By default, cells execute in the *kernel*, which is a computational engine that executes the code contained in the cell.
 
-The output from code executed in a cell is displayed in the cell immediately below in a cell labeled Out followed by the cell number in brackets as shown below.  Note:  Don't worry about the raw cell type. This cell type is used to format output when exporting the notebook using the NBConvert utility.
+1. Jupyter notebooks support other cell types - use the **Insert > Insert Cell Below** menu option to add a new cell to the notebook.
 
-![Screenshot of Showing Jupyter Execution Result](../media/4-jupyter-execution-result.png)
+1. Select the new cell by clicking in the input area (it will have a colored line next to it when selected).
+
+1. In the menu header, find the cell type - it's a drop down list which likely has "Code" selected currently. Select "Heading" from the list.
+
+    ![Screenshot showing the cell type dropdown list.](../media/4-add-heading.png)
+
+    > [!NOTE] 
+    > Don't worry about the raw cell type; this cell type is used to format output when exporting the notebook using the NBConvert tool.
+
+1. Heading cell types are just Markdown headers which are prefixed with `#` to create an H1/H2/H3/H4 heading. Type `### This is a heading` into the cell.
+
+1. Add another cell by typing <kbd>Shift</kbd>+<kbd>Enter</kbd> and change the cell type to "Markdown".
+
+1. Set the value to "\`This is Markdown\`" without the quotes - notice the backtick character - this denotes a "code" block and it will be formatted with a monospace font. You can use any Markdown syntax here to document or annotate your Python code.
+
+    ![Screenshot of Jupyter executing Markdown.](../media/4-execute-jupyter-markdown.png)
+
+1. Notice that the Python cell you entered first has an **In** prefix. Output from the **In** executed code displays in the cell immediately below, and is labeled **Out**.
+
+1. Add a new code cell to the bottom and type in the following Python code.
+
+    ```python
+    %pylab inline
+    print("Python is easy to learn!")
+    
+    plot(randn(100))
+    ```
+
+1. Execute the cell. Notice that it shows an **Out** cell with the cell number in brackets as shown in the following image.
+
+    ![Screenshot of the Jupyter execution results. Under the code is a plot line graph.](../media/4-jupyter-execution-result.png)
