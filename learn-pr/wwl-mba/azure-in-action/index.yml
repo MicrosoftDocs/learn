@@ -3,16 +3,16 @@ uid: learn-wwl.azure-in-action
 metadata:
   title: Azure in Action
   description: The demos in this module provide an opportunity to see and show Azure in action.
-  ms.date: 5/9/2019
+  ms.date: 5/14/2019
   author: kimrit
   ms.author: v-kimrit
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure in Action
-summary: In this module, we will…
+summary: Many organizations are eager to take advantage of the benefits of cloud computing by migrating their existing applications and workloads to the cloud from their on-premises datacenters. The competitive advantages of higher efficiency, greater flexibility, lower costs, and better performance are appealing, but it can feel daunting to get started. To help you get started on this journey, the demos in this module provide an opportunity to see and show Azure in action.
 abstract: |
   In this module, you will:
-  - Review a lift and shift Azure migration demo.
+  - Review a lift and shift migration demo using Azure Migrate.
   - Watch a demo that shows how to modernize an application using Azure Logic Apps.
   - Observe a demo that shows automation and integration benefits of Azure DevOps.
   - Recognize how Azure differentiators help solve business challenges.
@@ -24,15 +24,14 @@ roles:
 - business-user
 products:
 - azure
-#tdo - azure-application-insights - not accepted
 - azure-portal
 - azure-sql-database
 - azure-virtual-machines
 units:
 - learn-wwl.azure-in-action.1-module-overview
-- learn-wwl.azure-in-action.2-demo-microsoft-azure-migration
-- learn-wwl.azure-in-action.3-demo-modernizing-net-applications
-- learn-wwl.azure-in-action.4-demo-azure-devops
+- learn-wwl.azure-in-action.2-demo--microsoft-azure-migration
+- learn-wwl.azure-in-action.3-demo--modernizing-.net-applications
+- learn-wwl.azure-in-action.4-demo--azure-devops
 - learn-wwl.azure-in-action.5-azure-differentiators
 - learn-wwl.azure-in-action.6-knowledge-check
 - learn-wwl.azure-in-action.7-summary-and-resources

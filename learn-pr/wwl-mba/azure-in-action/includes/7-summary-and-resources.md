@@ -4,7 +4,7 @@ If you feel ready to learn how to present a demo, review the links below to find
 
 In this module you have seen:
 
-- A lift-and-shift Azure migration demo.
+- A demo of a lift-and-shift migration using Azure Migrate.
 
 - A demo showing how to modernize an application using Azure Logic Apps.
 

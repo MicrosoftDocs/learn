@@ -1,10 +1,10 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn-wwl.azure-in-action.4-demo-azure-devops
+uid: learn-wwl.azure-in-action.4-demo--azure-devops
 title: Demo - Azure DevOps
 metadata:
   title: Demo - Azure DevOps
   description: Recorded demo for Azure DevOps
-  ms.date: 5/9/2019
+  ms.date: 5/14/2019
   author: kimrit
   ms.author: v-kimrit
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ROBOTS:   NOINDEX 
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-demo-azure-devops.md)] 
+  [!include[](includes/4-demo--azure-devops.md)] 

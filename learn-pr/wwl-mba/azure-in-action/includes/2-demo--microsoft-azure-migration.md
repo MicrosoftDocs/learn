@@ -14,7 +14,7 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 ## Azure Migrate
 
-Before beginning the migration of Contoso's support application, Victor creates a new service ticket and reviews the on-premises virtual machines (VMs). He then uses Azure Migrate to create and provision a new migration project.
+Before beginning the migration of Contoso's support application, Victor creates a new service ticket and reviews the on-premises virtual machines (VMs). He then uses **Azure Migrate** to create and provision a new migration project.
 
 |||
 | :--- | :--- |
@@ -34,7 +34,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 ## Recommendations
 
-Azure Migrate helps Victor visualize dependencies and then makes recommendations that help Victor plan his migration.
+**Azure Migrate** helps Victor visualize dependencies and then makes recommendations that help Victor plan his migration.
 
 |||
 | :--- | :--- |
@@ -44,7 +44,7 @@ Azure Migrate helps Victor visualize dependencies and then makes recommendations
 
 ## Database Migration
 
-With his assessment complete, Victor begins by migrating Contoso's database from SQL Server to Azure SQL Database Managed Instance using Azure Database Migration Service.
+With his assessment complete, Victor begins by migrating Contoso's database from SQL Server to **Azure SQL Database Managed Instance** using **Azure Database Migration Service**.
 
 |||
 | :--- | :--- |
@@ -54,7 +54,7 @@ With his assessment complete, Victor begins by migrating Contoso's database from
 
 ## Application server migration
 
-With the database migration complete, Victor is ready to migrate Contoso's on-premises application servers using Azure Site Recovery.
+With the database migration complete, Victor is ready to migrate Contoso's on-premises application servers using **Azure Site Recovery**.
 
 |||
 | :--- | :--- |
