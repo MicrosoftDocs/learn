@@ -2,8 +2,8 @@
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage.summary
 title: Summary
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary
+  description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -17,26 +17,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Contoso has a Data Lake Storage Account (Gen 2). Which tool would be the most appropriate tool to perform a one time without the installation or configuration of a tool to upload of a single file?"
+  - content: "Your company has a Data Lake Storage Gen2 account. If you want to upload a single file by using a tool that you don't have to install or configure, which tool should you use?"
     choices: 
     - content: "Azure Data Factory"
       isCorrect: false
-      explanation: "Azure Data Factory requires provisioning and configuring."
+      explanation: "Data Factory requires provisioning and configuring."
     - content: "Azure Storage Explorer"
       isCorrect: false
-      explanation: "Azure Storage Explorer requires installing this tool first."
-    - content: "Azure Portal"
+      explanation: "You would have to install Storage Explorer before you could use it."
+    - content: "The Azure portal"
       isCorrect: true
-      explanation: "Correct! The Azure Portal requires no installation or configuration to work, and just requires a sign in and a click of an upload button to perform the upload."
+      explanation: "Correct. The Azure portal requires no installation or configuration. To upload a file, you only have to sign in and a select an Upload button."
 
-  - content: " Contoso has a Data Lake Storage Account (Gen 2). Which tool would be the most appropriate tool to perform a movement of hundreds of files from Amazon S3 to Azure Data Lake Storage?"
+  - content: "Your company has a Data Lake Storage Gen2 account. If you want to move hundreds of files from Amazon S3 to Azure Data Lake Storage, which tool should you use?"
     choices: 
     - content: "Azure Data Factory"
       isCorrect: true
-      explanation: "Correct! Azure Data Factory would efficiently handle the movement of data from Amazon S3 to Azure Data Lake store."
+      explanation: "Correct. Azure Data Factory can efficiently move data from Amazon S3 to Azure Data Lake Storage."
     - content: "Azure Data Catalog"
       isCorrect: false
-      explanation: "Azure Data Catalog is the wrong tool for the job required as it is used to document information about data stores."
-    - content: "Azure Portal"
+      explanation: "Data Catalog is the wrong tool for this job. Its purpose is to record information about data stores."
+    - content: "The Azure portal"
       isCorrect: false
-      explanation: "The Azure Portal would not support the copy of files from Amazon S3, and just requires a sign in and a click of an upload button to perform the upload."
+      explanation: "The Azure portal can't copy files from Amazon S3."

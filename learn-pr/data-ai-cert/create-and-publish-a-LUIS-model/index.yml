@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.create-and-publish-a-luis-model
 metadata:
-  title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS) - Learn
-  description: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to build and publish a LUIS model - Learn
+  title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  description: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to build and publish a LUIS model
   ms.date: 1/24/2019
   author: gerryaobrien
   ms.author: gerryo
