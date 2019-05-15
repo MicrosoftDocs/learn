@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.access-blob-storage-metrics-from-code
+metadata:
+  title: Access metrics from your Azure Blob Storage Containers Programmatically
+  description: In order to provide a reliable service, you should make sure that all your business-critical systems are carefully monitored. For services in Azure, the Azure Monitor provides a unified tool that gathers, stores and displays performance metrics. If you use an Azure Storage account to store blobs, metrics will be added to Azure Monitor to record that account's behavior. In this module, you will learn how to configure and access those metrics from .NET application code, which you might use to develop mobile device apps or web apps.
+  ms.date: 04/12/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Access Metrics from your Azure Blob Storage Containers Programmatically
+summary: Learn how to write C# code that accesses Azure Blob Storage metrics from Azure Monitor.
+abstract: |
+  In this module, you will:
+  - Configure Azure storage metrics in Azure Monitor
+  - Write code that retrieves metrics for an Azure Blob Storage account
+prerequisites: |
+  - Knowledge of the Azure Portal
+  - Knowledge of Azure Blob Storage Containers
+  - Ability to write and understand C# code and .NET framework classes
+  - To complete the optional exercises, you'll need an Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin.
+iconUrl: /learn/achievements/access-blob-storage-metrics-from-code.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.access-blob-storage-metrics-from-code.1-introduction
+- learn.azure.access-blob-storage-metrics-from-code.2-connect-to-storage-metrics
+- learn.azure.access-blob-storage-metrics-from-code.3-exercise-connect-to-storage-metrics
+- learn.azure.access-blob-storage-metrics-from-code.4-access-azure-storage-metrics
+- learn.azure.access-blob-storage-metrics-from-code.5-exercise-access-azure-storage-metrics
+- learn.azure.access-blob-storage-metrics-from-code.6-summary
+badge:
+  uid: learn.azure.access-blob-storage-metrics-from-code.badge

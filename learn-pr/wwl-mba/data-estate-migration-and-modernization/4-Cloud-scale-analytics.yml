@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.data-estate-migration-and-modernization.4-cloud-scale-analytics
+title: Cloud scale analytics
+metadata:
+  title: Cloud scale analytics
+  description: .
+  ms.date: 01/31/2019
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-cloud-scale-analytics.md)]

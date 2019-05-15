@@ -3,7 +3,7 @@ uid: learn.data-ai.identify-faces-with-computer-vision.using-emotion-api
 title: Using the Emotion API
 metadata:
   title: Using the Emotion API
-  description: Learn how you can access the emotion API from a client application
+  description: Learn how to access the Emotion API from a client application
   ms.date: 01/7/2019
   author: gerryaobrien
   ms.author: gerryo

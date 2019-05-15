@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.2-network-security-groups
+metadata:
+  title: Use network security groups to control network access
+  description: Use network security groups to control network access
+  ms.date: 04/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Use network security groups to control network access
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-network-security-groups.md)]
