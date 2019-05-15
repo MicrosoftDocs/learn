@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-intro-mobile-app-service.what-are-mobile-apps
+title: What are Azure Mobile Apps?
+
+metadata:
+  title: What are Azure Mobile Apps?
+  description: What are Azure Mobile Apps?
+  ms.date: 4/26/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-are-mobile-apps.md)]

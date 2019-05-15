@@ -1,7 +1,9 @@
-To gain access to a Microsoft Cognitive Service API, you must subscribe to a specific service, typically through the Azure portal.
+To access a Cognitive Services API, you must subscribe to a specific service. Typically, you do that through the Azure portal.
 
-Since the APIs are exposed through REST-based web services, any language that can build and send an HTTP message can use the services. There are two things needed: a **subscription key** and the **endpoint**.
+Because the APIs are exposed through REST-based web services, any language that can build and send an HTTP message can use the services. Two things are needed: a _subscription key_ and the _endpoint_.
 
-Most Azure Cognitive Services, including the Computer Vision service, requires authorization using a **Subscription Key**. Every web service call to the Computer Vision API requires a subscription key be passed to the service either through a value in the query string or in the request header.
+Most Cognitive Services offerings, including the Computer Vision service, require authorization with a *subscription key*. Every web service call to the Computer Vision API requires a subscription key be passed to the service through a value in either the query string or the request header.
 
-The _endpoint_ is the Internet URL for the service. For applications to use the services, the application must point to the URL specified in the endpoint configuration for that service. The combination of the endpoint and key allows your application to use the service.
+The _endpoint_ is the internet URL for the service. Applications that use the services must point to the URL that the service's endpoint specifies. 
+
+Together, the endpoint and subscription key allow your application to use the services.

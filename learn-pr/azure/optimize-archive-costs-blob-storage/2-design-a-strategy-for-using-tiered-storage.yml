@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-blob-storage-costs.2-design-a-strategy-for-using-tiered-storage
+title: Design a strategy for using tiered storage
+metadata:
+  title: Design a strategy for using tiered storage
+  description: Design a strategy for using tiered storage
+  ms.date: 04/10/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-design-a-strategy-for-using-tiered-storage.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following is not a valid blob storage access tiers?
+    choices:
+    - content: Archive
+      isCorrect: false
+      explanation: Archive is a valid blob storage access tier.
+    - content: Hot
+      isCorrect: false
+      explanation: Hot is a valid blob storage access tier.
+    - content: Standard
+      isCorrect: true
+      explanation: Standard is a storage performance tier, but not an access tier.
+    - content: Cool
+      isCorrect: false
+      explanation: Cool is a valid blob storage access tier.
+  - content: Which of these changes between access tiers will happen immediately?
+    choices:
+    - content: Hot to Cool
+      isCorrect: true
+      explanation: Changes between Hot and Cool, and to Archive, happen immediately.
+    - content: Archive to Cool
+      isCorrect: false
+      explanation: Any change from Archive involves rehydration, which may take several hours to complete.
+    - content: Archive to Hot
+      isCorrect: false
+      explanation: Any change from Archive involves rehydration, which may take several hours to complete.

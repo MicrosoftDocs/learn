@@ -65,8 +65,8 @@ In this unit, you will create a basic console app using the integrated terminal,
     <?xml version="1.0" encoding="utf-8"?>
         <configuration>
           <appSettings>
-            <add key="accountEndpoint" value="<replace with your Endpoint URL>" />
-            <add key="accountKey" value="<replace with your Primary Key>" />
+            <add key="accountEndpoint" value="<replace with your Account Endpoint URL>" />
+            <add key="accountKey" value="<replace with your Account Key>" />
           </appSettings>
     </configuration>
     ```
