@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.handle-transient-errors-in-your-app.3-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check for transient errors
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why should an app back-off from trying to read from a database that is responding too slowly?"
+    choices:
+    - content: "The database could be under heavy load, so backing-off could give it time to recover."
+      isCorrect: true
+      explanation: "If a database is responding, but taking longer than normal, it could be under excessive load."
+    - content: "The database server is being upgraded, so retrying will cause the upgrade to fail."
+      isCorrect: false
+      explanation: "The database is responding, if the service was being upgraded then the app wouldn't be getting any response." 
+    - content: "Backing-off means that the app can retry the operation quicker, to get a faster response."
+      isCorrect: false
+      explanation: "Retrying when a service, or database is slow to respond could make the situation worse by increasing the load on it."
+  - content: "Why is it important that operations are idempotent if they're being retried?"
+    choices:
+    - content: "Retrying the operation leads to data being incremented the number of times the operation is processed successfully."
+      isCorrect: false
+      explanation: "This is an example of the operation not being idempotent. Data can be incorrectly incremented if operations are duplicated." ### REVIEW - add a reason here
+    - content: "If the operation is going to be retried, and previous operations have all failed, the data will be incorrect."
+      isCorrect: false
+      explanation: "This is incorrect because idempotent operations don't rely on previous requests working. They can be applied once or many times." 
+    - content: "If the operation is going to be retried, and previous operations have been successful, the data won't be duplicated or corrupted."
+      isCorrect: true
+      explanation: "Idempotent operations are important to ensure values aren't corrupted if they are applied multiple times."       
+  - content: "What's the main difference between permanent and terminal errors?"
+    choices: 
+    - content: "Permanent errors need to be handled and then quit the app. Terminal errors automatically quit the app."
+      isCorrect: false
+      explanation: "Permanent errors can allow the app to keep running, since data might be available from cache. Terminal errors don't automatically quit the app."
+    - content: "Permanent errors can be handled by using data from elsewhere. Terminal errors mean the app can't continue and should quit."
+      isCorrect: true
+      explanation: "With permanent errors, the app can't expect a response from the service, and it should try to get the data from another service or a local cache. An app can no longer do anything useful when it receives a terminal error and should therefore quit." 
+    - content: "Permanent errors are unrecoverable, log the data and quit. Terminal errors shouldn't log data and quit. "
+      isCorrect: false
+      explanation: "Permanent errors can allow the app to keep running, data might be available from cache. All errors should log data."
+
+
+

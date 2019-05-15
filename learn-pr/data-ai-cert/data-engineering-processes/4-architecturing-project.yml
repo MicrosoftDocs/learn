@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.data-engineering-processes.architecturing-project
-title: Analyze the Data Engineer's tasks in a cloud architecture
+title: Analyze a data engineer's tasks
 metadata:
-  title: Analyze the Data Engineer's tasks in a cloud architecture - Learn
-  description: Architecting a Data Engineering project - Learn
+  title: Analyze a data engineer's tasks
+  description: An example of how to design a data engineering project in a cloud architecture
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

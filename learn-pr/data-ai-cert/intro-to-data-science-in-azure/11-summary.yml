@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.intro-to-data-science-in-azure.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/11-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which of the following is not a specialized role in the Data Science Process?"
+    choices: 
+    - content: "Database Administrator"
+      isCorrect: true
+      explanation: "Correct.  This is not a specialist role in the data science process."
+    - content: "Data Scientist"
+      isCorrect: false
+      explanation: "This is not correct.  A Data Scientist focuses on machine learning model training and evaluation."
+    - content: "Data Engineer"
+      isCorrect: false
+      explanation: "This is not correct.  The Data Engineer prepares the data to be used in machine learning model training."
+
+  - content: "Model feature engineering refers to which of the following?"
+    choices: 
+    - content: "Selecting the best model to use for the experiment."
+      isCorrect: false
+      explanation: "This is not correct.  Selecting the best model is a different step in the Data Science Process."
+    - content: "Determine which data elements will help in making a prediction and preparing these columns to be used in model training."
+      isCorrect: true
+      explanation: "This is correct.  Feature engineering involves the data scientist determining which data to use in model training and preparing the data so it can be used by the model."
+    - content: "Exploring the data to understand it better."
+      isCorrect: false
+      explanation: "This is not correct.  While Exploratory Data Analysis is a valuable part of the process, it is best done before feature engineering."
+
+  - content: "The Model deployment involves."
+    choices: 
+    - content: "Calling a model to score new data."
+      isCorrect: false
+      explanation: "This is not correct.  Scoring data is not the same as deploying the model to where it will be used."
+    - content: "Training a model."
+      isCorrect: false
+      explanation: "This is not correct.  Training the model is a step done before deploying it to where it will be consumed."
+    - content: "Copying a trained model and its code dependencies to an environment where it will be used to score new data."
+      isCorrect: true
+      explanation: "This is correct.  Deploying a model makes it available for use." 

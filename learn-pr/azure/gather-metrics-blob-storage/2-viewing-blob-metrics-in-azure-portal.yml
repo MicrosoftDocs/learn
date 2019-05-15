@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.gather-metrics-from-blob-storage.2-viewing-blob-metrics-in-azure-portal
+title: View Blob Metrics in Azure Portal
+metadata:
+  title: View Blob Metrics in Azure Portal
+  description: View Blob Metrics in Azure Portal
+  ms.date: 03/26/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-viewing-blob-metrics-in-azure-portal.md)]

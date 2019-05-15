@@ -4,11 +4,11 @@
 --->
 At First Up Consultants, you've been granted access to a resource group for the marketing team. You want to familiarize yourself with the Azure portal and see what roles are currently assigned.
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
-
 ## List role assignments for yourself
 
 Follow these steps to see what roles are currently assigned to you.
+
+1. Launch the lab experience. When prompted for an Azure account, use the username/password from the **Resources** tab at the top of the instructions.
 
 1. In the upper-right corner of the Azure portal, click your username to open the menu.
 

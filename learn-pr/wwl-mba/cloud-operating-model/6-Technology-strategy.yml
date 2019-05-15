@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cloud-operating-model.6-technology-strategy
+title: Technology strategy
+metadata:
+  title: Technology strategy
+  description: Learn about the technology component of cloud migration and about five migration strategies
+  ms.date: 1/31/2018
+  author: alinamacelaru
+  ms.author: a-almace
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-technology-strategy.md)]
