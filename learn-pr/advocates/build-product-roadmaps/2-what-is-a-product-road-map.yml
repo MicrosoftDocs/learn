@@ -18,23 +18,23 @@ quiz:
    questions:
    - content: "When is your product road map finished?"
      choices:
-     - content: At the end of each quarter.
+     - content: At the end of each quarter
        isCorrect: false
-     - content: At the end of the year.
+     - content: At the end of the year
        isCorrect: false
      - content: Never
        isCorrect: true
        explanation: "Product road maps are iterative, they're never finished."
-     - content: When you launch the product.
+     - content: When you launch the product
        isCorrect: false
    - content: "Who should have input into the product road map?"
      choices:
-     - content: "Just the product manager and engineers."
+     - content: The product manager and all the engineers
        isCorrect: false
-     - content: "Everyone in your organization is a stake-holder."
+     - content: Everyone in your organization
        isCorrect: true
        explanation: "Your product road map is a collaboration between many people in your organization including Product, Design, Engineering, Sales, Marketing, and Support."
-     - content: "Just the product manager and the marketing team."
+     - content: The product manager and the marketing team
        isCorrect: false
-     - content: "Just the product manager. The road map should be confidential and secret from the organization."
+     - content: The product manager
        isCorrect: false

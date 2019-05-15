@@ -18,23 +18,23 @@ quiz:
    questions:
    - content: "What question should you answer before you build your product road map?"
      choices:
-     - content: The color scheme of the product.
+     - content: The color scheme of the product
        isCorrect: false
-     - content: The mission of the product - why you're building it.
+     - content: The mission of the product
        isCorrect: true
        explanation: "If you don't know why you're building the product, should you be building the product at all?"
-     - content: The versioning scheme for the product.
+     - content: The versioning scheme for the product
        isCorrect: false
-     - content: The product's mascot.
+     - content: The product's mascot
        isCorrect: false
-   - content: "Who needs to know what the product's mission is?"
+   - content: "Short mission statement what element is missing..."
      choices:
-     - content: "The product manager."
+     - content: The product manager
        isCorrect: false
-     - content: "The designers."
+     - content: The designers
        isCorrect: false
-     - content: "The sales team."
+     - content: The sales team
        isCorrect: false
-     - content: "Everyone."
+     - content: Everyone
        isCorrect: true
-       explanation: "Correct- everyone building the product needs to know the mission. Knowing why they're building the product empowers your product engineering team."
+       explanation: "Correct - everyone building the product needs to know the mission. Knowing why they're building the product empowers your product engineering team."

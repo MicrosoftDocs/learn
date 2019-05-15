@@ -16,14 +16,12 @@ content: |
 quiz:
    title: Check your knowledge
    questions:
-   - content: "Your executive team is a key stakeholder in your product road map and process. What aspects of the road map are they interested in knowing?"
+   - content: "Your executive team is a key stakeholder in your product road map. From your road map, your executive team are interested in the future of the product and?"
      choices:
-     - content: What Cloud hosting platform you plan to use.
+     - content: What Cloud hosting platform you plan to use
        isCorrect: false
-     - content: Where the team is located and how you plan to arrange the office.
+     - content: How you intend to structure the team
        isCorrect: false
-     - content: "What you plan to do in the future, what you are achieving now and the time and cost of your development."
+     - content: The effort and cost of product development
        isCorrect: true
-       explanation: "Your executive team is interested in your plans, your progress, and the cost of your development. They want to understand how product is contributing to the company's strategic objectives."
-     - content: What snacks you plan to stock in the kitchen.
-       isCorrect: false
+       explanation: "Your executive team is interested in your plans and the effort and cost of your development. They want to understand how product is contributing to the company's strategic objectives."

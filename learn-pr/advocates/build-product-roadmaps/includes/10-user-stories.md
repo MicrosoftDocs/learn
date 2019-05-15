@@ -14,9 +14,9 @@ User stories are written throughout the development life cycle, but the core of 
 A good user story contains:
 
 * Summary of the requirement, no more than one or two sentences.
-* Priority, to tell us how important the story is.
+* Priority, to tell us how important the story is to the product.
 * Series of "stories" about the requirement, that describes what we expect from it.
-* Test of the story’s success, and
+* Test of the story's success.
 * Estimate of the effort the story will take. 
 
 Let’s look at an example story for our recommendation engine.

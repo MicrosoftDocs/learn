@@ -18,12 +18,12 @@ quiz:
    questions:
    - content: "When using a 2x2 grid for prioritization, what does having a feature in the top-left quadrant mean?"
      choices:
-     - content: You should work on this feature now.
+     - content: You should work on this feature now
        isCorrect: true
        explanation: "Features in the top-left quadrant are high value and low effort. They should be a priority to develop."
-     - content: This feature is too hard to develop.
+     - content: This feature is too hard to develop
        isCorrect: false
-     - content: This feature is important for user acquisition.
+     - content: This feature is important for user acquisition
        isCorrect: false
-       content: This feature does offer any value and isn't important.
+       content: This feature does offer any value and isn't important
        isCorrect: false

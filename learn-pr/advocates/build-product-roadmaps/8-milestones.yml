@@ -13,3 +13,15 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-milestones.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: In a startup, using shorter milestones is a good idea because?
+     choices:
+     - content: Priorities change quickly
+       isCorrect: true
+       explanation: "Shorter milestones are common in startups because your priorities, resourcing, and requirements can all change quickly. With shorter milestones you can be more agile."
+     - content: Longer milestones are harder to track
+       isCorrect: false
+     - content: Users have short attention spans
+       isCorrect: false

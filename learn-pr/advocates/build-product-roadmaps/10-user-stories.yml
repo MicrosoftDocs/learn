@@ -13,3 +13,15 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/10-user-stories.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: What do you do to a user story if it becomes too complex?
+     choices:
+     - content: Stop working on the story
+       isCorrect: false
+     - content: Nothing.
+       isCorrect: false
+     - content: Break the story into smaller stories
+       isCorrect: true
+       explanation: "Complex stories should be broken down into smaller stories."

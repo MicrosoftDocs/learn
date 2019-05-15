@@ -6,7 +6,7 @@
 
 Once we have our mission, we should identify the key themes we're going to work on to achieve the mission. Themes are components that that roll up into delivering some aspect of the overall mission. A good theme can be clearly traced back to the mission but also has direct and immediate outcomes and measures. They represent the product instantiation of the company's current objectives: the glue between the mission and the tactical work to be done to execute on the mission.
 
-Themes should be tied to measures and metrics that demonstrate the impact of features within the theme, for example, if the theme is to acquire new customers, then the measure might be a customer acquisition target. 
+Themes should be tied to measures and metrics that demonstrate the impact of shipping the features within the theme, for example, if the theme is to acquire new customers, then the measure might be a customer acquisition target: "Add 100,000 new customers to Fabrikam." 
 
  :::column-end:::
 :::row-end:::

@@ -18,7 +18,7 @@ We'd look at this goal in the theme and identify how we might achieve that. This
  :::column-end:::
 :::row-end:::
 
-Each of these features will be made up of many pieces of work that we'll need to manage and deliver. To keep all of these pieces of work organized, we collect them into an epic. So the elements needed for our recommendation engine feature would be collected together in an epic called "Recommendation Engine," containing user stories for:
+Each of these features will be made up of many pieces of work, called user stories, that we'll need to manage and deliver. To keep all of these pieces of work organized, we collect them into an epic. So the elements needed for our recommendation engine feature would be collected together in an epic called "Recommendation Engine," containing user stories for:
 
 * The recommendation algorithm and model.
 * A data pipeline to feed the engine.

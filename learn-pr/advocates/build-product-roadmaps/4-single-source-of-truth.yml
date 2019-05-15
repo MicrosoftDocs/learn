@@ -18,12 +18,12 @@ quiz:
    questions:
    - content: "Why might you want to use a tool to manage your product road map?"
      choices:
-     - content: So you know who to blame when things go wrong.
+     - content: So you know who to blame when things go wrong
        isCorrect: false
-     - content: So you and your team can centrally keep track of what you're building and how it is progressing.
+     - content: So you can keep track of what you're building
        isCorrect: true
        explanation: "A product road map management tool helps you maintain a central, single source of truth, for your road map. Making it easier to share the data to a variety of audiences."
-     - content: To make it easier to manage meetings.
+     - content: To make it easier to manage meetings
        isCorrect: false
-       content: To keep track of the names of the features you want to build.
+       content: To keep track of the names of the features you want to build
        isCorrect: false
