@@ -1,37 +1,22 @@
-Azure Databricks is a Spark based, secure, all-in-one, data science team collaboration platform, that includes a powerful notebooks interface, job scheduling, active directory integration, granular security control, and seamless Azure integration. It instantly gives the data science team everything they need to create machine learning pipelines end-to-end with Big Data.
+**Azure Databricks** is a secure, all-in-one collaboration platform for data science teams. It includes a powerful notebooks interface, job scheduling, Active Directory integration, granular security control, and seamless Azure integration. It instantly provides data science teams with everything they need to create end-to-end machine learning pipelines for big data.
 
-## How it works
+![Diagram showing the features of Azure Databricks](../media/7-azure-databricks.png)
 
-To use Azure Databricks, you provision an Azure Databricks Workspace using the portal. The workspace provides all the assets you need. From there, you can add users you want to have access to the workspace and refine the level of access from with Azure Databricks. 
+## How Azure Databricks works
 
-The tools provided include a powerful notebook service that supports Big Data queries and visualizations. These notebooks can include all the languages supported by Spark, i.e. Scala, Java, SQL, Python, and R, all in the same notebook. Use the language you love but switch to another language if you need to. 
+To use Azure Databricks, you provision an Azure Databricks Workspace using the Azure portal. The workspace provides all the assets you need. From there, you can add users that you want to have access to the workspace, and refine the level of access from with Azure Databricks. Here's a screenshot of the Azure Databricks landing page.
 
-An advanced job scheduler allows you to schedule notebooks to run whenever you want and, if the cluster is not running, it will create it automatically and delete it at the end of the job. Assets such as notebooks can be shared and worked on collaboratively. 
+![Screenshot of the Azure Databricks landing page](../media/7-databrick-landing-page.png)
 
-Best of all, you don't need to worry about the complexities of configuring Spark clusters. The Azure Databricks GUI provides an easy to use interface to create and edit your cluster and even set automatic turn off of clusters after a period of nonuse. Clusters can be deleted without losing any data or notebooks so no need to keep clusters running. If you don't need them.
+### Provided tools
 
-![Screenshot of Azure Databricks](../media/7-azure-databricks.png)
+The tools provided include a powerful notebook service that supports big data queries and visualizations. Notebooks can include all Spark-supported languages (including Scala, Java, SQL, Python, and R) in the same notebook. This enables you to use your language of preference, but switch to another language if you need to. 
 
-## Tools Integrated into Databricks
+An advanced job scheduler allows you to schedule notebooks to run whenever you want. If the cluster isn't running, the job scheduler will create it automatically and delete it at the end of the job. 
 
-- Azure Databricks Notebook
-- Job Scheduler
-- Workspaces
-- Granular Security Configuration
-- Spark
-- PySpark, SparkR
-- CLI
+Assets such as notebooks can be shared and worked on collaboratively. Best of all, you don't need to worry about the complexities of configuring Spark clusters. The Azure Databricks GUI provides an easy-to-use interface to create and edit your cluster, and even set automatic turn-off for clusters after a period of disuse. You can delete clusters without losing any data or notebooks, so there's no need to keep clusters running if you don't need them.
 
-## Using Databricks.
-
-Below is a picture of the Databricks landing page, and as you can see, under the 'Common Tasks' there is an option to start a new cluster.
-
-![Sceenshot of Databricks Landing Page](../media/7-databrick-landing-page.png)
-
-1. Start by spinning up a cluster.
-
-2. Once the cluster is running, you can run a notebook on that cluster from the landing page.
-
-3. Now, you have the notebook running on the cluster. You can run Python, R, Spark, PySpark, and other languages from here.
-
-4. You can import the data from different Azure sources inside the notebook and begin the process of EDA, modeling, and evaluation.
+In addition, Azure Databricks has several other features and tools including:
+- Granular security configuration
+- PySpark and SparkR
+- Command-Line interface to perform tasks

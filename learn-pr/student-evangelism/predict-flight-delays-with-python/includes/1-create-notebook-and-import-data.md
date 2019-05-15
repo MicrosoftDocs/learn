@@ -45,7 +45,7 @@ Jupyter notebooks are highly interactive, and since they can include executable 
     ```
 
     > [!TIP]
-    > `curl` is a Bash command. You can execute Bash commands in a Jupyter notebook by prefixing them with an excalamation mark. This command downloads a CSV file from Azure blob storage and saves it using the name **flightdata.csv**.
+    > `curl` is a Bash command. You can execute Bash commands in a Jupyter notebook by prefixing them with an exclamation mark. This command downloads a CSV file from Azure blob storage and saves it using the name **flightdata.csv**.
 
 1. Click the **Run** button to execute the `curl` command.
 

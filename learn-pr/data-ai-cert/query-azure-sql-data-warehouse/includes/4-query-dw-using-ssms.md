@@ -1,4 +1,4 @@
-To extract data from the database, we need to form a _database query_. This is a textual command expressed in one or more SQL statements. Microsoft's variant of SQL is referred to as T-SQL and, although T-SQL is a sophisticated programming language, the most commonly used data queries are very straightforward. The pattern of the query to read data is:
+To extract data from the database, we need to form a _database query_. This query is a textual command expressed in one or more SQL statements. Microsoft's variant of SQL is called T-SQL. Although T-SQL is a sophisticated programming language, the most commonly used data queries are straightforward. The pattern of the query to read data is:
 
 ```sql
 SELECT <column(s)> FROM <fact_table> 
@@ -9,42 +9,42 @@ SELECT <column(s)> FROM <fact_table>
   ORDER BY <source_or_result_column(s)>
 ```
 
-Let's compose a T-SQL query step by step against an existing fact table **FactResellerSales**.
+Compose a T-SQL query step by step against the existing fact table **FactResellerSales**.
 
-1. Expand the **demodw** database node in the SMSS Object Explorer. This will list all the tables available to you.
+1. Expand the **demodw** database node in the SQL Server Management Studio Object Explorer. All the tables that are available to you are listed.
 
 1. Find the fact table **FactResellerSales** and the dimension table **DimReseller**. 
 
 1. Expand these two tables to see their columns. 
 
-1. Right-click each of the the tables and select **Select Top 1000 Rows** in the context menu to view the data of the table.
+1. Right-click each of the tables, and select **Select Top 1000 Rows** to view the data in the tables.
 
-    ![Screenshot showing how to issue query](../media/4-query-top-rows.png)
+    ![How to issue a query](../media/4-query-top-rows.png)
 
     > [!TIP]
-    > The column view in Object Explorer provides complete details about the table structure. For example, from here you can see that the column **ResellerKey** in **FactResellerSales** and the column **ResellerKey** of **DimReseller** are the links on which the two tables can join together.
+    > The column view in Object Explorer provides information about the table structure. For example, from here you can see that the column **ResellerKey** in **FactResellerSales** and the column **ResellerKey** of **DimReseller** are the links on which the two tables can join together.
 
 ## Create a new query
 
-Let's try a custom query. Let's start by querying the fact table, which holds the central data.
+Now create a custom query. Start by querying the fact table, which holds the central data.
 
-1. With the **FactResellerSales** table selected in the tree, click the **New Query** toolbar button to open a new query editor.
-    - You may get a warning about unsupported features such as transactions. That's ok - just dismiss the warning.
+1. With the **FactResellerSales** table selected in the tree, select **New Query** on the toolbar to open a new query editor.
+    - You might get a warning about unsupported features, such as transactions. That's okay. Just dismiss the warning.
 
-1. Type the following SQL into the editor to retrieve the sales information.
+1. Enter the following SQL into the editor to retrieve the sales information:
 
     ```sql
     SELECT S.[SalesAmount] AS [Sales]
     FROM [FactResellerSales] AS S
     ```
 
-    Notice the use of aliases in this query. The table `FactResellerSales` is aliased as `S` so that it is easier to reference in other parts of the query. The column `SalesAmount` is aliased as `Sales` to change its name in the output.
+    Notice the use of aliases in this query. The table `FactResellerSales` is aliased as `S` so that it's easier to reference in other parts of the query. The column `SalesAmount` is aliased as `Sales` to change its name in the output.
 
-1. Click the Execute button in the toolbar (or press <kbd>F5</kbd>); the query will be sent to the ASDW server, executed, and results will be sent back and displayed in the bottom pane of the query window.
+1. Select **Execute** on the toolbar, or select <kbd>F5</kbd>. The query is sent to the Azure SQL Data Warehouse server where it runs. The results are sent back and displayed in the bottom pane of the query window.
 
-    ![Screenshot of Executing a query using the SMSS tool](../media/4-execute-query.png)
+    ![Run a query by using the SQL Server Management Studio tool](../media/4-execute-query.png)
 
-1. Next, let's bring the dimension table in using the shared column. Type the following query into the editor.
+1. Bring the dimension table in by using the shared column. Enter the following query into the editor:
 
     ```sql
     SELECT S.[SalesAmount] AS [Sales], R.[BusinessType],R.[ResellerName]
@@ -52,9 +52,9 @@ Let's try a custom query. Let's start by querying the fact table, which holds th
     JOIN [DimReseller] AS R ON S.[ResellerKey] = R.[ResellerKey]
     ```
 
-    The fact table and dimension table are joined together by the `ResellerKey` columns which provides the relationship between them.
+    The fact table and dimension table are joined together by the `ResellerKey` columns, which provide the relationship between them.
 
-1. Execute the query. Here are the first few rows ..
+1. Run the query. Here are the first few rows.
 
     ```
     Sales      BusinessType          ResellerName
@@ -72,9 +72,9 @@ Let's try a custom query. Let's start by querying the fact table, which holds th
     ... remainder omitted for length
     ```
     
-    By observing the values in the `BusinessType` column, we find out the resellers fall into three types of businesses: **Specialty Bike Shop**, **Warehouse**, and **Value Added Reseller**. If you want to focus on _warehouse resellers_ you can add a `WHERE` condition to the source data.
+    Look at the values in the `BusinessType` column. The resellers fall into three types of businesses: Specialty Bike Shop, Warehouse, and Value Added Reseller. To focus on _warehouse resellers_, add a `WHERE` condition to the source data.
 
-1. Add a `WHERE` clause to the query, it should look something like this:
+1. Add a `WHERE` clause to the query that looks something like the following:
 
     ```sql
     SELECT S.[SalesAmount] AS [Sales], R.[BusinessType],R.[ResellerName]
@@ -83,9 +83,9 @@ Let's try a custom query. Let's start by querying the fact table, which holds th
     WHERE R.[BusinessType] = 'Warehouse'
     ```
 
-1. Execute the query to limit the results. 
+1. Run the query to limit the results. 
 
-1. Since there are only _warehouse resellers_ left, we don't need the `BusinessType` column in the query result, go ahead and remove it.
+1. Because there are only _warehouse resellers_ left, the `BusinessType` column in the query result isn't needed. Go ahead and remove it.
 
     ```sql
     SELECT S.[SalesAmount] AS [Sales], R.[ResellerName]
@@ -94,13 +94,13 @@ Let's try a custom query. Let's start by querying the fact table, which holds th
     WHERE R.[BusinessType] = 'Warehouse'
     ```
 
-## Performing aggregate calculations
+## Perform aggregate calculations
     
-Most of the data analysis tasks involve aggregation calculations, including min/max values, totals, summations, and averaging data.
+Most of the data analysis tasks involve aggregation calculations, which include minimum and maximum values, totals, summations, and averaging data.
 
-For example, if you want to know the sales performance of each reseller, you would calculate the total sales amount for each of the resellers. In T-SQL, this can be done by the `GROUP BY` clause and the `SUM` aggregation function. 
+For example, if you want to know the sales performance of each reseller, calculate the total sales amount for each of the resellers. In T-SQL, use the `GROUP BY` clause and the `SUM` aggregation function. 
 
-1. Type the following query into the editor.
+1. Enter the following query into the editor:
 
     ```sql
     SELECT SUM(S.[SalesAmount]) AS [Sales], R.[ResellerName]
@@ -110,7 +110,7 @@ For example, if you want to know the sales performance of each reseller, you wou
     GROUP BY R.[ResellerName]
     ```
     
-    This returns the following results:
+    The following results are returned:
 
     ```
     Sales          ResellerName
@@ -128,11 +128,11 @@ For example, if you want to know the sales performance of each reseller, you wou
     ... remainder omitted for length
     ```
 
-## Filtering aggregated results
+## Filter aggregated results
 
- Based on the aggregated data, you may want only to keep the resellers whose total sales amount are greater than $700,000. In this case, the `WHERE` clause won't help since it can only be used to filter the _source data_. While the aggregated total sales amount does not exist in the source data; it _is_ part of the query result. To filter the query result, we can add a `HAVING` clause to the query:
+ Based on the aggregated data, you might want to keep only the resellers whose total sales amounts are greater than $700,000. In this case, the `WHERE` clause won't help because it's used to filter only the _source data_. Although the aggregated total sales amount doesn't exist in the source data, it _is_ part of the query result. To filter the query result, add a `HAVING` clause to the query.
 
-1. Adjust the query to include a `HAVING` clause. It should look like this:
+1. Adjust the query to include a `HAVING` clause that looks like this:
 
     ```sql
     SELECT SUM(S.[SalesAmount]) AS [Sales], R.[ResellerName]
@@ -144,15 +144,15 @@ For example, if you want to know the sales performance of each reseller, you wou
     ```
 
     > [!TIP]    
-    > Notice that the `SUM(S.[SalesAmount])` aggregation appears twice - both in `SELECT` and `HAVING`. So far, T-SQL does not support using a column alias in the `HAVING` clause. 
+    > Notice that the `SUM(S.[SalesAmount])` aggregation appears twice, both in `SELECT` and `HAVING`. So far, T-SQL doesn't support the use of a column alias in the `HAVING` clause. 
 
-## Sorting results
+## Sort results
 
-Notice that the results are not sorted - we need to fix that. 
+Notice that the results aren't sorted. We need to fix that. 
 
-To sort the query result, use the `ORDER BY` clause. With an optional `ASC` argument, the `ORDER BY` clause will sort the query result in ascending order. In contrast, using `ORDER BY` with the `DESC` argument will sort the query result descending. To highlight the high-performance resellers, let's sort the query result in descending order. 
+To sort the query result, use the `ORDER BY` clause. With an optional `ASC` argument, the `ORDER BY` clause sorts the query result in ascending order. In contrast, using `ORDER BY` with the `DESC` argument sorts the query result in descending order. To highlight the high-performance resellers, sort the query result in descending order. 
 
-1. Change the query to look like the following.
+1. Change the query to look like the following:
 
     ```sql
     SELECT SUM(S.[SalesAmount]) AS [Sales], R.[ResellerName]
@@ -164,13 +164,13 @@ To sort the query result, use the `ORDER BY` clause. With an optional `ASC` argu
     ORDER BY [Sales] DESC
     ```
     
-1. Run the query; you will see the descended sorted result.
+1. Run the query. The descended sorted result appears.
 
-## Selecting the top section of data
+## Select the top section of data
 
-What if you need to find the "Top 10" best resellers? In SQL, we can use the `TOP` argument of `SELECT`. 
+What if you need to find the "Top 10" best resellers? In SQL, use the `TOP` argument of `SELECT`. 
 
-1. Remove the `HAVING` clause, and add `TOP 10` just between the `SELECT` keyword and `SUM` function call. The query should look something like:
+1. Remove the `HAVING` clause, and add `TOP 10` between the `SELECT` keyword and the `SUM` function call. The query should look something like the following:
 
     ```sql
     SELECT TOP 10 SUM(S.[SalesAmount]) AS [Sales], R.[ResellerName]
@@ -181,7 +181,7 @@ What if you need to find the "Top 10" best resellers? In SQL, we can use the `TO
     ORDER BY [Sales] DESC
     ```
     
-1. Execute the query, and you should see the top 10 best warehouse resellers are listed. Note, the `TOP` filtering occurs later than `ORDER BY`. This is why the result is the top 10 best warehouse resellers.
+1. Run the query. The top 10 best warehouse resellers are listed. The `TOP` filtering occurs later than `ORDER BY`, which is why the result is the top 10 best warehouse resellers.
 
     ```output
     Sales          ResellerName
@@ -197,18 +197,18 @@ What if you need to find the "Top 10" best resellers? In SQL, we can use the `TO
     580222.3286    Registered Cycle Store
     ```
 
-## Exporting results
+## Export results
 
-You can export results right from the query window.
+You can export results directly from the query window by choosing to:
 
-- Copy as text
-- Copy as text with headers
-- Save results to a file (typically comma-delimited)
+- Copy as text.
+- Copy as text with headers.
+- Save results to a file, which is typically comma-delimited.
 
-1. Right-click the data grid of the query result, and click the **Select All** menu item.
-1. Then, right-click the data grid again, and click the **Copy with Headers** menu item.
+1. Right-click the data grid of the query result, and select **Select All**.
+1. Right-click the data grid again, and select **Copy with Headers**.
 
-You can then paste these results wherever necessary. For example, you could paste results to an Excel sheet. Then you can visualize the data either with a pie chart or a bar chart to get some business insight. You can even use PivotTable of Excel to go further. However, this is beyond the scope of this course.
+Paste these results wherever necessary. For example, you can paste results to an Excel sheet. Then you can visualize the data either with a pie chart or a bar chart to gain business insight. You can even use an Excel PivotTable to go further. This option is beyond the scope of this course.
 
 :::row:::
   :::column:::

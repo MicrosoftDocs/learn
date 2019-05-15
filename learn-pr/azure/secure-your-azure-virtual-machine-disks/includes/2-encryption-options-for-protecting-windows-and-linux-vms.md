@@ -25,9 +25,19 @@ The main encryption-based disk protection technologies for Azure VMs are:
 - Storage Service Encryption (SSE)
 - Azure Disk Encryption (ADE)
 
+Storage Service Encryption is performed on the physical disks in the data center. If someone were to directly access the physical disk the data would be encrypted. When the data is accessed from the disk, it is decrypted and loaded into memory.
+
+Azure Disk Encryption encrypts the virtual machine's virtual hard disks (VHDs). If VHD is protected with ADE, the disk image will only be accessible by the virtual machine that owns the disk.
+
+It's possible to use both services to protect your data.
+
 ### Storage Service Encryption
 
 Azure Storage Service Encryption (SSE) is an encryption service built into Azure used to protect data at rest. The Azure storage platform automatically encrypts data before it's stored to several storage services, including Azure Managed Disks. Encryption is enabled by default using 256-bit AES encryption, and is managed by the storage account administrator.
+
+Storage Service Encryption is enabled for all new and existing storage accounts and cannot be disabled. Your data is secured by default; you don't need to modify your code or applications to take advantage of Storage Service Encryption.
+
+Storage Service Encryption does not affect the performance of Azure storage services.
 
 ### Azure Disk Encryption
 

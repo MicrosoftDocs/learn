@@ -151,7 +151,7 @@ Let's add code to connect to the Azure storage account using our stored connecti
 
     ```javascript
     #!/usr/bin/env node
-    require('dotenv').load();
+    require('dotenv').config();
 
     const storage = require('azure-storage');
     ```
@@ -176,7 +176,7 @@ We can use the `BlobService` object to work with blob APIs in Azure storage. As 
 
     ```javascript
     #!/usr/bin/env node
-    require('dotenv').load();
+    require('dotenv').config();
     
     const util = require('util');
     const storage = require('azure-storage');
@@ -240,7 +240,7 @@ The final file should look like this, if you'd like to check your work.
 ```javascript
 #!/usr/bin/env node
 
-require('dotenv').load();
+require('dotenv').config();
 
 const util = require('util');
 

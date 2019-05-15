@@ -1,71 +1,82 @@
-Microsoft provides seven different Azure platforms designed for aiding the machine learning process. Even though many of the platforms have similar functionalities, each was designed to solve different types of problems.
+Microsoft provides several Azure platforms that help with the machine learning process. All these products simplify the data science process in unique ways. They each have different features and purposes which we will explore here.
 
-The table below summarizes some of these services.
+The following table summarizes some of these services.
 
 | Product | What it is | What you can do with it |
 | ------- | ---------- | ----------------------- |
-| Azure Machine Learning Service | Managed cloud service for Machine Learning | Train, deploy, and manage models, in Azure using Python, the Azure CLI, and the portal |
-| Azure Machine Learning Studio | Drag-and-drop visual interface for Machine Learning | Build, experiment, and deploy models using preconfigured algorithms. Ideal for learning about machine learning |
-| Azure Databricks | Spark-based analytics platform with an integrated notebook  interface that seamlessly integrates with Azure AD and data services | Build and deploy models and data workflows with Big Data |
-| Azure Data Science Virtual Machine | A virtual machine with pre-installed data science tools | Develop machine learning solutions in a pre-configured data science environment |
-| SQL Server / Machine Learning Server | Integrated with SQL Server, this scalable analytics server supports the Python and R language. | Build and develop models inside on-premises SQL server that scale to match the SQL Server engine. Note:  Machine Learning Server is also available as a cluster type in HDInsight. |
+| Azure Machine Learning service | A managed cloud service for Machine Learning. | Train, deploy, and manage models in Azure using Python,  Azure CLI, and Azure portal. |
+Azure Machine Learning Studio | A drag-and-drop visual interface for Machine Learning. | Build, experiment, and deploy models using preconfigured algorithms. Ideal for learning about Machine Learning. |
+Azure Databricks | Apache Spark–based analytics platform with an integrated notebook interface that seamlessly integrates with Azure Active Directory (Azure AD) and data services. | Build and deploy models and data workflows with big data. |
+Azure Data Science Virtual Machine. | A virtual machine with preinstalled data science tools. | Develop machine learning solutions in a preconfigured data science environment. |
+SQL Server Machine Learning Services | Integrated with Microsoft SQL Server, this scalable analytics server supports the Python and R language. | Build and develop models in an on-premises SQL server that scales to match the SQL Server engine. Microsoft Machine Learning Server is also available as a cluster type in Azure HDInsight. |
 
-## Differences Between Products
+Let's explore these services in more detail.
 
-With all these options, you may wonder what the differences between them are and when you should use each. Let's take a look at each one is detail.
+## Scale, automate, and deploy with Azure Machine Learning service
 
-## The Azure Machine Learning Service
+The Azure Machine Learning service supports data science pipeline integration with Azure. It allows you to scale up and automate:
 
-The Azure Machine Learning service supports integration of your data science pipelines with Azure. It allows you to scale up and automate model management, model training, model selection, hyperparameter tuning, feature selection, and model evaluation. When you are ready, the service allows you to easily deploy your trained models to Azure containers where they can be used. The key advantage of this service is that is make it easy for your data science project to take advantage of containerization and automation. You get better results in less time.
+- Model management
+- Model training
+- Model selection
+- Hyper-parameter tuning
+- Feature selection
+- Model evaluation
 
-Examples of tools typically used with this service include:
+The Azure Machine Learning service also enables you to more easily deploy your trained models to Azure containers where you can use them. The key advantage of this service is that it makes it easier for your data science project to utilize containerization and automation, resulting in better results in less time.
 
-- Azure ML Service SDK
+Examples of tools you typically use with this service include:
+
+- Azure Machine Learning SDK
 - Python
-- Jupyter Notebook, Visual Studio, PyCharm or your favorite IDE
+- Jupyter Notebook
+- Microsoft Visual Studio
+- JetBrains PyCharm 
+- Your favorite IDE
 
-### Azure Machine Learning Studio
+### Utilize the Azure Machine Learning Studio platform
 
-Azure Machine Learning Studio is a GUI-based platform that is an excellent place for beginner data scientists and analysts learn. It is an interactive platform that gives a visual display for the modeling process, including deployment options. AML Studio integrates a drag-and-drop method of the iterative data science process for simple use. It includes an automated deployment service that supports REST API calls to score data.
+Azure Machine Learning Studio is a GUI-based platform that's an excellent place for beginner data scientists and analysts to learn. As an interactive platform, it provides a visual display for the modeling process, including deployment options. Azure Machine Learning Studio integrates a drag-and-drop method of the iterative data science process for simple use. It  also includes an automated deployment service that supports REST API calls to score data.
 
-Example of tools included:
+Examples of tools included with Azure Machine Learning Studio are:
 
 - Data visualization
 - Drag-and-drop interface
 - Azure (Jupyter) Notebooks
-- Project Samples
+- Project samples
 
-### Azure Databricks
+> [!TIP]
+> Azure Machine Learning Studio is primarily a learning platform and for limited-scale use.
 
-Azure Databricks provides a GUI-based cloud portal that simplifies using the Spark big data platform. Creating and modifying Spark clusters can be done easily and clusters can be turned off when not in use without losing data. Azure Databricks is a secure, all-in-one, data science team collaboration platform, that includes a powerful notebooks interface, job scheduling, active directory integration, granular security control, and seamless Azure integration.
+### Azure Databricks platform
 
-Features include:
+*Azure Databricks* is a secure, all-in-one data science team collaboration platform. It includes a powerful notebook interface, job scheduling, Azure Active Directory integration, granular security control, and seamless Azure integration. Azure Databricks has a GUI-based cloud portal that makes it even easier to use the Spark big data platform. You can more easily create and modify Spark clusters, and turn them off when not using them without losing data. 
 
-- Azure Databricks Notebooks which support SQL, Python, R, Scala, and Java.
-- Active Directory Integration
-- Job Scheduler
-- Local Built-In Blob Storage
-- Seamless Secure Access to Azure Data Services such as Blob, Azure SQL DB, Azure DW, CosmosDB, etc.
-- GUI to Easily Create Spark Clusters
-- Proprietary Spark Optimizations
+Azure Databricks features include, but are not limited to:
+
+- Azure Databricks notebooks, which support SQL, Python, R, Scala, and Java
+- Job scheduler
+- Local built-in Blob Storage
+- Seamless, secure access to Azure data services such as Azure Blob Storage, Azure SQL database, Azure SQL Datawarehouse, and Azure CosmosDB
+- Graphical UI to quickly spin up and scale Spark clusters
+- Proprietary Spark optimizations
 
 ### Azure Data Science Virtual Machine
+Built specifically for data science, *Azure Data Science Virtual Machines* (DSVMs) are preconfigured virtual machines you create in Azure that have many popular machine learning tools preinstalled. It provides data scientists a simple way to begin and iterate through the modeling process.
 
-Built specifically for data science, Azure Data Science Virtual Machines (DSVMs) are pre-configured virtual machines you create in Azure that have many popular machine learning tools pre-installed. It provides data scientists a simple way to begin and iterate through the modeling process.
-
-Examples of tools include:
+Examples of DSVMs tools include:
 
 - SQL Server / Machine Learning Server
 - Microsoft R Open
 - Jupyter notebooks
 - Anaconda Python
-- Sample Code Demonstrating How to Use Various Azure based Machine Learning Services
+- Sample code demonstrating how to use various Azure-based Machine Learning services
 
-### SQL Server / Machine Learning Server
+### SQL Server Machine Learning Services
 
-The SQL Server / Machine Learning Server is a service that runs on the SQL Server on-premises platform and supports scale up and high performance of Python and R code. With it, you can work with SQL Server data in place. You get all the features of SQL Server including tight security, excellent performance, the ability to schedule model training with SQL Agent, and persistence of models to database tables. Python and R code can be encapsulated in stored procedures and can interoperate with T-SQL so you can get the high performance of T-SQL with the advanced machine learning features or R and Python.
+*SQL Server Machine Learning Services* runs on the SQL Server on-premises platform, and supports scale up and high performance of Python and R code. With it, you can work with SQL Server data in place. You also get all the SQL Server features including tighter security, excellent performance, the ability to schedule model training with the SQL Agent service, and persistence of models to database tables. In addition, you can encapsulate Python and R code in stored procedures, and they can interoperate with T-SQL so you can have the high performance of T-SQL with the advanced Machine Learning features or R and Python.
 
-Tools include:
+Along with core Python and R tools, SQL Server Machine Learning Service includes a set of components for data scientists.
 
-- Commercial High Scale Python Modules
-- Commercial High Scale R Packages
+- Python components and packages for data manipulation, transformation, visualization, and analysis.
+- R packages such as RevoScaleR, MicrosoftML (R), opalR, and sqlRUtils to perform data science tasks in the R language.
