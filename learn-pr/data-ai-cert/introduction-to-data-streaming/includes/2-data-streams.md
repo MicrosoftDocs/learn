@@ -8,17 +8,17 @@ In today's world, data streams are ubiquitous. Companies can harness the latent 
 
 :::row:::
     :::column:::
-- Stock market trends
-- Monitoring data of water pipelines, and electrical transmission and distribution systems by utility companies
-- Mechanical component health monitoring data in automotive and automobile industries
-- Monitoring data from industrial and manufacturing equipment
+- Stock market trends.
+- Monitoring data of water pipelines and electrical transmission and distribution systems by utility companies.
+- Mechanical component health monitoring data in automotive and automobile industries.
+- Monitoring data from industrial and manufacturing equipment.
     :::column-end:::
     :::column:::
-- Sensor data in transportation such as traffic management and highway toll lanes
-- Patient health monitoring data in the healthcare industry
-- Satellite data in the space industry
-- Fraud detection in the banking and finance industries
-- Sentiment analysis of social media posts
+- Sensor data in transportation, such as traffic management and highway toll lanes.
+- Patient health monitoring data in the healthcare industry.
+- Satellite data in the space industry.
+- Fraud detection in the banking and finance industries.
+- Sentiment analysis of social media posts.
     :::column-end:::
 :::row-end:::
 
@@ -26,4 +26,6 @@ In today's world, data streams are ubiquitous. Companies can harness the latent 
 
 There are two approaches to processing data streams: on-demand and live. 
 
-Streaming data can be collected over time and persisted in storage as static data. The data can then be processed when convenient, or during times when compute costs are lower. The downside to this approach is the cost of storing the data. In contrast, live data streams have relatively low storage requirements. They also require more processing power to run computations in sliding windows over continuously incoming data to generate the insights.
+Streaming data can be collected over time and persisted in storage as static data. The data can then be processed when convenient or during times when compute costs are lower. The downside to this approach is the cost of storing the data. 
+
+In contrast, live data streams have relatively low storage requirements. They also require more processing power to run computations in sliding windows over continuously incoming data to generate the insights.

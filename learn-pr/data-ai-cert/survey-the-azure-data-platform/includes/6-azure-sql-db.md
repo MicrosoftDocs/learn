@@ -1,33 +1,33 @@
-Azure SQL Database is a managed relational database service in Azure that supports structures such as relational data, and unstructured formats such as spatial, and XML data. It provides Online Transaction Processing (OLTP) that can scale on demand while employing the comprehensive security and availability features that database services on Azure have.
+Azure SQL Database is a managed relational database service. It supports structures such as relational data and unstructured formats such as spatial and XML data. SQL Database provides online transaction processing (OLTP) that can scale on demand. You'll also find the comprehensive security and availability that you appreciate in Azure database services.
 
 > [!IMPORTANT]
-> This unit is focused on **Azure SQL Database**, the _Platform as a Service_ (PaaS) database offering. This unit doesn't cover Microsoft SQL Server installed locally or within an Azure virtual machine (VM). While similar in nature, the setup, configuration, and benefits of Microsoft SQL Server are different from Azure SQL Database.
+> This unit focuses on Azure SQL Database, the _platform as a service_ (PaaS) database offering. Here we don't cover Microsoft SQL Server instances that are installed locally or within an Azure virtual machine (VM). Although these are similar, the configuration and benefits of Microsoft SQL Server differ from those of Azure SQL Database.
 
-## When to Use It
+## When to use SQL Database
 
-Use Azure SQL DB when the scale up and scale down of OLTP systems needs to be performed on demand, and an organization wishes to take advantage of the security and availability features without the risk of investment in capital expenditure, and the inevitable increase in operational spending to invest in these complex on-premises system counterparts.
+Use SQL Database when you need to scale up and scale down OLTP systems on demand. SQL Database is a good solution when your organization wants to take advantage of Azure security and availability features. Organizations that choose SQL Database also avoid the risks of capital expenditures and of increasing operational spending on complex on-premises systems.
 
-Azure SQL DB can prove to be a more flexible platform choice than on-premises SQL Server solution as the provisioning and configuration can be performed in minutes and backed up by the Azure Service Level Agreement (SLA).
+SQL Database can be more flexible than an on-premises SQL Server solution because you can provision and configure it in minutes. Even more, SQL Database is backed up by the Azure service-level agreement (SLA).
 
-## Key Features
+## Key features
 
-Azure SQL Database delivers predictable performance with multiple resource types, service tiers, and compute sizes that provides dynamic scalability with no downtime, built-in intelligent optimization, global scalability and availability, and advanced security options — all with near-zero administration. These capabilities allow you to focus on rapid app development and accelerating your time to market, rather than allocating precious time and resources to managing virtual machines and infrastructure.
+SQL Database delivers predictable performance for multiple resource types, service tiers, and compute sizes. Requiring almost no administration, it provides dynamic scalability with no downtime, built-in intelligent optimization, global scalability and availability, and advanced security options. These capabilities let you focus on rapid app development and on speeding up your time to market. You no longer have to devote precious time and resources to managing virtual machines and infrastructure.
 
-## Ingesting and Processing Data
+## Ingesting and processing data
 
-Azure SQL Database can ingest data through application integration from a wide range of developer Software Development Kits (SDKs) such as .NET, Python, Java, and Node.js. Beyond applications ingestion of data can be performed through Transact-SQL techniques and from the movement of data using Azure Data Factory.
+SQL Database can ingest data through application integration from a wide range of developer SDKs. Allowed programming languages include .NET, Python, Java, and Node.js. Beyond applications, you can also ingest data through Transact-SQL (T-SQL) techniques and from the movement of data using Azure Data Factory.
 
-## Querying Data
+## Queries
 
-Data Engineers can use Transact-SQL (T-SQL) to query the contents of a SQL Database, taking advantage of a wide range of standard SQL features to filter, order, and project the data into whatever form required.
+Use T-SQL to query the contents of a SQL Database. This method benefits from a wide range of standard SQL features to filter, order, and project the data into the form you need.
 
-## Securing Data
+## Data security
 
-Azure SQL Database provides a range of built-in security and compliance features to help your application meet various security and compliance requirements including:
+SQL Database provides a range of built-in security and compliance features. These features help your application meet security and compliance requirements like these:
 
-- Advance Threat Protection
-- SQL Database Auditing
-- Data Encryption
+- Advanced Threat Protection
+- SQL Database auditing
+- Data encryption
 - Azure Active Directory authentication
-- Multi-factor Authentication
+- Multifactor authentication
 - Compliance certification
