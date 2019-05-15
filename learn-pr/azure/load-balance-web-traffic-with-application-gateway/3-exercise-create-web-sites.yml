@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.load-balance-web-traffic-with-application-gateway.3-exercise-create-web-sites
+metadata:
+  title: Exercise - Create web sites
+  description: Create a virtual network and virtual machines for hosting the vehicle registration web app, and an App Service for hosting the license renewal web app
+  ms.date: 05/02/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create web sites
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-web-sites.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.create-deployment-workspace-auzre-ml-sdk
+title: Exercise - Create a deployment workspace using the Azure ML SDK and Python
+metadata:
+  title: Exercise - Create a deployment workspace using the Azure ML SDK and Python
+  description: Exercise - Create a deployment workspace using the Azure ML SDK and Python
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-deployment-workspace-azure-ml-sdk.md)]

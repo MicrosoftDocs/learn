@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.summary
+title: Summary and cleanup
+metadata:
+  title: Summary and cleanup
+  description: Summary and cleanup
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/12-summary.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "To tell the Azure ML service the Python modules needed to support your model, you would do which of the following?"
+    choices: 
+    - content: "Create a YAML file with the module dependency list."
+      isCorrect: true
+      explanation: "This is correct. Hyperparameters control how the model training executes and must be set before model training."
+    - content: "Enter the dependencies in the portal."
+      isCorrect: false
+      explanation: "That is not correct. Hyperparameters cannot be determined from the source data."
+    - content: "Do nothing.  The dependencies will automatically be configured based on your Python scripts."
+      isCorrect: false
+      explanation: "This is not correct.  A Hyperparameter is set before each model training execution."
+  
+  - content: "What two functions must your scoring script include?"
+    choices: 
+    - content: "main() and score()"
+      isCorrect: false
+      explanation: "That is not correct.  main() and score() are not required."
+    - content: "base() and train()"
+      isCorrect: false
+      explanation: "That is not correct.  base() and train() are not required."
+    - content: "init() and run()"
+      isCorrect: true
+      explanation: "That is correct.  init() loads the model and run() provides the information needed to define the model call."
+
+  - content: "You have finished testing your model and want to deploy it to a scalable target for general usage.  Which is the best target?"
+    choices: 
+    - content: "Azure Container Instance (ACI)"
+      isCorrect: false
+      explanation: "That is not correct.  Azure Container Instance is a single container useful for model training but less scalable than an Azure Kubernetes cluster."
+    - content: "Azure Kubernetes Service (AKS)"
+      isCorrect: true
+      explanation: "That is correct.  Azure Kubernetes Services is an orchestrated cluster of containers that can scale to meet demand."
+    - content: "IoT Edge"
+      isCorrect: false 
+      explanation: "That is not correct.  IoT Edge deployment is suitable when you need the model deployed to edge devices for consumption."    
