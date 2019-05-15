@@ -18,7 +18,7 @@ Key management and storing secrets can be complicated and error-prone when perfo
 
 Key Vault allows users to store connection strings, secrets, passwords, certificates, access policies, file locks (making items in Azure read-only), and automation scripts.  It also logs access and activity, allows you to monitor access control (IAM) in your subscription, and it also has diagnostic, metrics, alerts and troubleshooting tools, to ensure you have the access you need.
 
-Learn more about using an Azure Key Vault in [Manage secrets in your server apps with Azure Key Vault](/learn/azure/manage-secrets-with-azure-key-vault/index.yml).
+Learn more about using an Azure Key Vault in [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
 ## Summary
 

@@ -1,1 +1,1 @@
-Now that you've completed all of the notebooks in Azure Databricks, check your knowledge by answering the questions below.
+Now that you've completed all of the notebooks in Azure Databricks, check your knowledge by answering the following questions.

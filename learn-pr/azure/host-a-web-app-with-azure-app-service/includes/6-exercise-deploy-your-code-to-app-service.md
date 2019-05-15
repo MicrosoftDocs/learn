@@ -115,10 +115,10 @@ To do so, you need to:
 1. Once copied, you go back to the **Terminal** window and issue the following Git command with your url:
 
     ```bash
-    git remote add origin https://[your-username]@BESTBIKE.scm.azurewebsites.net:443/BESTBIKE.git
+    git remote add origin https://[your-username]@[your-app-name].scm.azurewebsites.net:443/[your-app-name].git
     ```
 
-    The above Git command connects your local Git repository to the one hosted on Azure, where `[your-username]` is the username that you specified when you created your deployment credentials. Now you can deploy your code by pushing to it.
+    The above Git command connects your local Git repository to the one hosted on Azure, where `[your-username]` is the username that you specified when you created your deployment credentials, and `[your-appname]` is the name of your App Service web app. Now you can deploy your code by pushing to it.
 
 1. To verify the above command, type the following Git command:
 
@@ -129,8 +129,8 @@ To do so, you need to:
     The command above generates the following output:
 
     ```output
-    origin	https://[your-username]@BESTBIKE.scm.azurewebsites.net:443/BESTBIKE.git (fetch)
-    origin	https://[your-username]@BESTBIKE.scm.azurewebsites.net:443/BESTBIKE.git (push)
+    origin	https://[your-username]@[your-app-name].scm.azurewebsites.net:443/[your-app-name].git (fetch)
+    origin	https://[your-username]@[your-app-name].scm.azurewebsites.net:443/[your-app-name].git (push)
     ```
 
 ## Push your code to Azure
@@ -165,9 +165,7 @@ Now that you have your local Git repository hooked to the remote Git repository 
 
     **![Screenshot of the Azure portal showing a recent Git repo deployment in the Development options page.](../media/7-staging-deployment-slot-after-uploading-files.png)**
 
-1. Let's visit the application URL. The URL was mentioned above, however, if you forget that URL, you can always go to the **Overview** page of the staging deployment slot and pick up the URL.
-
-1. Type the URL in your browser address bar.
+1. Let's visit the application URL. Navigate back to the **Overview** page of the web app and click **Browse** to open the app in a new browser tab.
 
     ![Screenshot showing a web browser view of the staging deployment slot web site.](../media/7-staging-slot-hosted-online.png)
 
