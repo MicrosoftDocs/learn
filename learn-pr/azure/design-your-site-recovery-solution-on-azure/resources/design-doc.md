@@ -45,14 +45,13 @@ Identify the subtasks of *Design you site recovery solution on Azure*
 
 *Add more units as needed for your content*
 
-
 1. **Introduction**
 
     You are a solution architect for a retailer and have been tasked with designing your site recovery strategy for your applications. The organization runs a hybrid environment, with some workloads running in the cloud and some remaining on-premises. You need to select the proper solutions to meet your recovery requirements, while keeping costs and complexity down.
 
 1. **Developing a Business Continuity and Disaster Recovery Plan (BCDR)**
-   
-    List the content that will enable the learner to *Develop a Business Continuity and Disaster Recovery Plan*: 
+
+    List the content that will enable the learner to *Develop a Business Continuity and Disaster Recovery Plan*:
 
     - Develop a BCDR Plan
         - Identify key stakeholders, key infrastructure (IaaS)
@@ -95,13 +94,10 @@ Identify the subtasks of *Design you site recovery solution on Azure*
         - Load balanced traffic
         - IP subnet/gateway consistency
 
-    
-
 1. **Preparing your environment for Azure Recovery**
 
    Following on from the introduction scenario, you have created your BCDR plan and are now looking to protect your servers using Site Recovery in the easiest way possible. Those servers already in Azure will be replicated to a secondary region, and those located on-premises on your VMware platform will be replicated into Azure.
 
-   
    Azure virtual machines
 
    - Explore Azure network security group configuration to allow replication to a different region for Azure virtual machines, Site Recovery URLs for the firewall, 
@@ -131,7 +127,6 @@ Identify the subtasks of *Design you site recovery solution on Azure*
 
     - Which of the following are valid Site Recovery URL's which must be allowed through the firewall?
     - What happens to a VMs network adaptors during migration when the source VM has several connected to different networks?
-
 
 1. **Setting up Site Recovery**
 
@@ -179,7 +174,6 @@ Identify the subtasks of *Design you site recovery solution on Azure*
     - What format does the configuration download come in?
         - OVA, OVF, .exe
     - Which particular feature of the configuration server installs the mobility service on to     the replicated VM's?
-
 
 1. **Monitoring Site Recovery**
 
