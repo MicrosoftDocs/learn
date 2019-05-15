@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.copy-blobs-from-command-line-and-code.move-blobs-using-net-storage-client
+title: Move Azure storage blob using .NET Storage Client
+metadata:
+  title: Move Azure storage blob using .NET Storage Client
+  description: Move Azure storage blob using .NET Storage Client
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-move-blobs-using-net-storage-client.md)]

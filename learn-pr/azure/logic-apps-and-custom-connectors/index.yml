@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.logic-apps-and-custom-connectors
+metadata:
+  title:  Call an API from a Logic Apps workflow using a custom connector
+  description: Create a Logic Apps custom connector to call an API from a Logic Apps workflow.
+  ms.date: 04/11/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Call an API from a Logic Apps workflow using a custom connector
+summary: Call any Web API from a Logic App using the custom connector.
+abstract: |
+  In this module, you will:
+  - Create a custom Logic Apps connector
+  - Define the behavior of the connector using an OpenAPI definition
+  - Use the connector from a Logic App
+prerequisites: |
+  - Basic familiarity with the authoring and running of Logic Apps
+  - Basic understanding of APIs and REST
+iconUrl: /learn/achievements/logic-apps-and-custom-connectors.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-logic-apps
+units:
+- learn.azure.logic-apps-and-custom-connectors.1-introduction
+- learn.azure.logic-apps-and-custom-connectors.2-connectors-for-azure-logic-apps
+- learn.azure.logic-apps-and-custom-connectors.3-exercise-setup-a-test-api
+- learn.azure.logic-apps-and-custom-connectors.4-access-an-api-with-a-logic-apps-custom-connector
+- learn.azure.logic-apps-and-custom-connectors.5-exercise-create-and-call-a-logic-apps-custom-connector-that-wraps-an-api
+- learn.azure.logic-apps-and-custom-connectors.6-make-your-custom-connector-available-to-the-entire-organization
+- learn.azure.logic-apps-and-custom-connectors.7-summary
+badge:
+  uid: learn.azure.logic-apps-and-custom-connectors.badge

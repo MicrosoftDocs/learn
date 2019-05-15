@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-azure-bot-services-bot.7-summary
-title: Delete the resource group
+title: Summary and Cleanup
 metadata:
-  title: Delete the resource group
-  description: Delete the resource group
+  title: Summary and Cleanup
+  description: Summary of the module and cleanup instructions.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: JeffProsise
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/7-summary.md)]
