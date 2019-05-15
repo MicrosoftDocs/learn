@@ -13,7 +13,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- General familiarity with:
-  - Cosmos DB
-  - Azure Functions
-  - SignalR
+- Ability to read JavaScript
+- Familiarity with Azure Functions, Cosmos DB and Visual Studio Code.
