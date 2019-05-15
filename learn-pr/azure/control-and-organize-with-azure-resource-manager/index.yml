@@ -20,7 +20,8 @@ iconUrl: /learn/achievements/control-and-organize-with-resource-manager.svg
 ratingEnabled: true
 levels:
 - intermediate
-prerequisites: None
+prerequisites: |
+  - Access to an Azure subscription to complete the exercises
 roles:
 - solution-architect
 - administrator

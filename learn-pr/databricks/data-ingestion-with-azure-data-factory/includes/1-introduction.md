@@ -1,11 +1,11 @@
-Imagine you're part of an analytics team that has recently received a huge assignment of analyzing crime data of several metropolitan cities. The dataset that you received has detailed crime information for major cities. However, each dataset is formatted and structured differently and stored in different data stores. Each city uses a different category and terms for similar type of data. Your team is responsible to analyze all the datasets and report aggregated number of crimes per month in each city.
+Imagine you're part of an analytics team that gets a huge assignment to analyze crime data. The dataset that you receive contains detailed crime information for several major cities. But each city's dataset is formatted and structured differently and stored in different data stores. The cities also use different categories and terms for similar types of data. Your team needs to analyze all the datasets and report the aggregated number of crimes per month in each city.
 
-Your team has decided to leverage the capabilities of Azure Data Factory and Azure Databricks to ingest, transform, and aggregate the required data.
+Your team decides to use Azure Data Factory and Azure Databricks to ingest, transform, and aggregate the required data.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Use Azure Data Factory (ADF) to ingest data and create an ADF pipeline.
-- Use Copy activities within ADF to copy data from one location to another.
-- Use ADF to orchestrate data transformations using a Databricks Notebook activity.
+- Use Azure Data Factory to ingest data and create a Data Factory pipeline.
+- Use copy activities within Data Factory to copy data from one location to another.
+- Use Data Factory to direct data transformations by using a Databricks notebook activity.

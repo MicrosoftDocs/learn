@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.add-azure-function
+title: Create an Azure Function to process images
+metadata:
+  title: Create an Azure Function to process images
+  description: Create an Azure Function to process images
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+azureSandbox: true
+content: |
+  [!include[](includes/7-add-azure-function.md)]
