@@ -6,8 +6,8 @@ Visual Studio and Azure App Service provide a powerful mechanism for creating, p
 
 In this module, you will:
 
-- Create an ASP.NET Core web app in Visual Studio 2017
-- Publish the web app to Azure using Visual Studio 2017
+- Create an ASP.NET Core web app in Visual Studio
+- Publish the web app to Azure using Visual Studio
 - Update the web app in Visual Studio and publish the changes to Azure
 
 ## Prerequisites

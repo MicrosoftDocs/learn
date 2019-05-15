@@ -39,7 +39,7 @@ This will create a new organization for your Azure DevOps projects which can be 
 
 ## Create a new project
 
-Projects in Azure DevOps are generally synonymous with applications in your organization. It is good practice to avoid entering numbers in the project name. For example, try not to name your project something like Payroll 2.0 or Payroll 2018. A better approach would be to name your project **Payroll* and then 2.0 or 2018 are most likely just branches in your source code repository and iterations for your work items.
+Projects in Azure DevOps are generally synonymous with applications in your organization. It is good practice to avoid entering numbers in the project name. For example, try not to name your project something like Payroll 2.0 or Payroll 2018. A better approach would be to name your project **Payroll** and then 2.0 or 2018 are most likely just branches in your source code repository and iterations for your work items.
 
 After completing the steps above to create a new Azure DevOps account, you should be presented with a screen titled "Create a project to get started". If you're using an existing Azure DevOps account, navigate to `https://dev.azure.com/<Orgname>` to be presented with the same screen.
 

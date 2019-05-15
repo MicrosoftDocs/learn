@@ -1,48 +1,46 @@
-In this exercise, you'll create a Face API subscription and access the keys and endpoint for that new subscription.
+In this exercise, you'll create a Face API subscription and access its key and endpoint.
 
-## Create a Face API Subscription
+## Create a Face API subscription
 
-Subscribing to the Face API (and accessing your subscription keys) is a simple process:
+To subscribe to the Face API:
 
-1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in with an active Microsoft Azure subscription.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Click **+ Create a resource**, followed by **AI + Machine Learning** and **Face** and click **Create**.
+1. Select **+ Create a resource** > **AI + Machine Learning** > **Face** > **Create**.
 
-1. Enter a unique name for your Face API subscription, then choose the **Location** nearest you.
+1. Enter a unique name for your Face API subscription, and then choose the **Location** nearest to you.
 
-1. Select the free or lowest cost **Pricing tier**.
+1. Select the free or lowest-cost **Pricing tier**.
 
-1. Create a new Resource group named **mslearn-faceapi**. We will delete these resources at the end.
+1. Create a new Resource group named **mslearn-faceapi**. You'll later delete these resources.
 
-1. Click **Create** to create a subscription to the Face API.
+1. Select **Create** to subscribe to the Face API.
 
-After a short delay, your new Face API subscription will be provisioned and available, and new **API keys** will be generated for programmatic use.
+After a short delay, your new Face API subscription will be provisioned and available, and new API keys will be generated for programmatic use.
 
 > [!NOTE]
-> Remember, the terms "subscription key" and "API key" are often used synonymously in Cognitive Services documentation.
+> Cognitive Services documentation often uses the terms *subscription key* and *API key* synonymously.
 
-You can select **Resource groups** in the left sidebar, and then select the resource group created for the Face API to view your new Face subscription.
+To view your new Face subscription, on the left sidebar, select **Resource groups**. Then select the resource group you created for the Face API.
 
-## Accessing Subscription Keys and Endpoints
+## Access the subscription key and endpoint
 
-With a Face API subscription created, you're almost ready to start experimenting with the Face API.
+After you create a Face API subscription, you're almost ready to start experimenting with the Face API.
 
-Since all Microsoft Cognitive Service Computer Vision APIs are REST-based, you simply need to provide a **Subscription Key** (or API Key) to the Computer Vision API **Endpoint** (or URL) via your language of choice. However, you may be wondering what these values are, and how to access them easily.
+Because all Computer Vision APIs are REST-based, you can use your language of choice to provide a subscription key (or API key) to the Computer Vision API endpoint (or URL).
 
-### Obtain the Subscription Keys
+To view the subscription key and endpoint for your Computer Vision subscription:
 
-To view the Subscription Keys and Endpoint for your Computer Vision subscription:
+1.  On the left sidebar, select **Resource groups**, and then select the resource group you created for the Computer Vision API.
 
-1. Click **Resource groups** in the left sidebar and then click the resource group created for the Computer Vision API.
+1.  To view your new subscription keys, select the Face API subscription name (such as **Face**). Then under **Resource Management**, select **Keys**.
 
-1. Click the Face subscription name (such as "Face"), then select **Keys** under the "Resource Management" group to view your new API keys.
+1. Copy the value of **KEY 1**.
 
-1. Copy the value of **KEY 1** to the clipboard.
+    ![Copy the Face subscription key](../media/6-subscribe-to-face-api-keys.png)
 
-    ![Copying the Face API key to the clipboard](../media/6-subscribe-to-face-api-keys.png)
+1. In the menu group, select **Overview**. Then copy the value under **Endpoint**.
 
-1. Select **Overview** from the menu group, locate the "Endpoint" label, then copy the value of **Endpoint** to the clipboard.
+    ![Copy the Face API endpoint](../media/6-subscribe-to-face-api-endpoint.png)
 
-    ![Copying the Face API endpoint to the clipboard](../media/6-subscribe-to-face-api-endpoint.png)
-
-With the location and values of your Face subscription Endpoint and API Key available, you'll be ready when it's time to start writing some code or test the API with an image.
+Now that you know the location and values of your Face API subscription key and endpoint, you're ready to start writing some code or testing the API with an image.
