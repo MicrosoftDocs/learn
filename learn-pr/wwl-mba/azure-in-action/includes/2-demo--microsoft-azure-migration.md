@@ -40,7 +40,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 | :--- | :--- |
 | ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Azure Migrate uses the data collected to make recommendations for migration.|
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUq]
 
 ## Database Migration
 
@@ -50,7 +50,7 @@ With his assessment complete, Victor begins by migrating Contoso's database from
 | :--- | :--- |
 | ![Icon indicating play video](../media/video_icon.png)| Watch this video to follow the steps to migrate Contoso's database.|
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PBj3]
 
 ## Application server migration
 
