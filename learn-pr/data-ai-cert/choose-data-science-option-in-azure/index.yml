@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.data-ai.choose-azure-data-science-option
+metadata:
+  title: Choose the Data Science service in Azure you need
+  description: In this module, you will learn about Azure services that support the Data Science process. You will learn the features of each service and what use cases each service supports.
+  ms.date: 03/18/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Choose the Data Science service in Azure you need
+summary: Choose the Data Science service in Azure you need
+cardDescription: In this module, you will learn about Azure services that support the Data Science process.
+abstract: | 
+  In this module, you will:
+  - Differentiate each of the Azure machine learning products
+  - Identify key features of each product  
+  - Describe what use cases each product applies to
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/choose-data-science-option-in-azure-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+units:
+- learn.data-ai.choose-azure-data-science-option.introduction
+- learn.data-ai.choose-azure-data-science-option.ml-options-on-azure
+- learn.data-ai.choose-azure-data-science-option.dsvm
+- learn.data-ai.choose-azure-data-science-option.azure-ml-studio
+- learn.data-ai.choose-azure-data-science-option.sql-ml-server
+- learn.data-ai.choose-azure-data-science-option.sqark-on-hdinsight
+- learn.data-ai.choose-azure-data-science-option.azure-databricks
+- learn.data-ai.choose-azure-data-science-option.azure-ml-service
+- learn.data-ai.choose-azure-data-science-option.summary
+badge:
+  uid: learn.data-ai.choose-azure-data-science-option.badge

@@ -4,7 +4,7 @@
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, and then select **Compute** > **Serverless Function App**.
+1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, and then select **Compute** > **Function App**.
 
 1. Enter the function app settings as specified in the following table.
 
@@ -42,9 +42,9 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
 
-1. In the list of all templates available to this function app, select **Queue trigger** .
+1. In the list of all templates available to this function app, select **Azure Queue Storage trigger** .
 
-1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes, so please be patient. Wait until the installation completes before continuing.
+1. If you see a message saying  **Extensions not installed**, select **Install**. Dependency installation can take a couple of minutes. Please wait until the installation completes before continuing.
 
 1. In the **New Function** dialog that appears, enter the following values.
 
@@ -58,7 +58,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. A function is created in your chosen language using the Queue Trigger function template. While we'll implement the function in JavaScript in this module, you can create a function in any [supported language](https://docs.microsoft.com/azure/azure-functions/supported-languages).
 
-When the create process is complete, the code editor opens in the portal and loads the *index.js* page. This file is the code file where we write our function logic.
+    When the create process is complete, the code editor opens in the portal and loads the *index.js* page. This file is the code file where we write our function logic.
 
 ## Try it out
 
@@ -70,6 +70,9 @@ Let's test what we have so far. We haven't written any code yet, so this test is
     ![Screenshot of response message of a successful call to our function.](../media/func-default-run.PNG)
 
     The **Run** button started our function and passed *sample queue data*, the default text from the **Test** request window to our function.
+
+> [!TIP]
+> If the function times out or does not return successfully, try restarting the functions app. Select your functions app in the menu on the left and then select **Restart** from the *Overview* panel. Wait for the functions app to restart and then try running your function again. 
 
 Nice work! You've successfully added a Queue-triggered function to your function app and tested to make sure it's working as expected! We'll add more functionality to the function in the next exercise.
 

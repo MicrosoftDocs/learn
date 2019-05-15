@@ -17,8 +17,6 @@ There are four common techniques for performing compute in Azure:
 
 ## What are containers?
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yMhY]
-
 Containers are a virtualization environment for running applications. Just like virtual machines, containers are run on top of a host operating system but unlike VMs, they don't include an operating system for the apps running _inside_ the container. Instead, containers bundle the libraries and components needed to run the application and use the existing host OS running the container. For example, if five containers are running on a server with a specific Linux kernel, all five containers and the apps within them share that same Linux kernel.
 
 ## What is Azure App Service?
