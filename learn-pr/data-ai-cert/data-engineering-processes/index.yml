@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.data-ai.data-engineering-processes
 metadata:
-  title: Identify the tasks a Data Engineer performs in a cloud-hosted architecture - Learn
-  description: Learn the roles and responsibilities of a Data Engineer, and how they interact with other data and AI professionals. Explore the data engineering practices that are commonly undertaken in the role and examine a high-level process for architecting a data engineering project - Learn
+  title: Identify the tasks of a data engineer in a cloud-hosted architecture
+  description: Learn about the responsibilities of a data engineer. Find out how they relate to the jobs of other data and AI professionals. Explore common data engineering practices and a high-level architecting process for a data-engineering project
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Identify the tasks a Data Engineer performs in a cloud-hosted architecture
-summary: Learn the roles and responsibilities of a Data Engineer, and how they interact with other data and AI professionals. Explore the data engineering practices that are commonly undertaken in the role and examine a high-level process for architecting a data engineering project.
+title: Identify the tasks of a data engineer in a cloud-hosted architecture
+summary: Learn about the responsibilities of a data engineer. Find out how they relate to the jobs of other data and AI professionals. Explore common data engineering practices and a high-level architecting process for a data-engineering project.
 abstract: | 
   In this module you will:
-  - List the new roles of modern data projects
-  - Outline Data Engineering Practices
-  - Explore the high-level process for architecting a data engineering project
+  - List the roles involved in modern data projects.
+  - Outline data-engineering practices.
+  - Explore the high-level process for designing a data-engineering project.
+ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/data-engineering-processes-badge.svg
 levels:

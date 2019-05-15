@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.run-docker-containers-aci
 metadata:
-  title: Run Docker containers with Azure Container Instances - Learn
+  title: Run Docker containers with Azure Container Instances
   description: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
   ms.date: 09/24/2018
   author: neilpeterson
