@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.store-access-data-cosmos-graph-api.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 05/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -13,7 +13,7 @@ Dashboards are stored as JavaScript Object Notation (JSON) files. This means the
 
 ## Explore the default dashboard
 
-The default dashboard is named "Dashboard". When you log into the portal for the first time, you are presented with this dashboard containing four tiles.
+The default dashboard is named "Dashboard". When you log into the portal for the first time, you are presented with this dashboard containing five tiles.
 
 ![Screenshot showing the default dashboard with different parts numbered and highlighted.](../media/6-dashboard-default-webparts.png)
 
