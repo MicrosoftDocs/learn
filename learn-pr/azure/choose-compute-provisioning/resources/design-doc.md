@@ -164,8 +164,8 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
 
 ## Notes
 
-State configuration - https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview
+State configuration - https://docs.microsoft.com/azure/automation/automation-dsc-overview
 
-Terraform - https://docs.microsoft.com/en-us/azure/terraform/
+Terraform - https://docs.microsoft.com/azure/terraform/
 
-Chef - https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/chef
+Chef - https://docs.microsoft.com/azure/virtual-machines/extensions/chef
