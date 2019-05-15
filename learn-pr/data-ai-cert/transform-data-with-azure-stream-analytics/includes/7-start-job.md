@@ -1,14 +1,13 @@
-Now that you have created a job and configured it, it needs to be started to produce an output.
+Now that you've created and set up a job, run it to produce an output. 
 
-Use the following steps in the Azure portal.
+Follow these steps in the Azure portal:
 
-1. In your job, select **Overview** in the menu to get back to the main overview page.
-1. Select **Start** from the menu bar across the top of the overview page.
-1. Select **Now**.
-1. Select **Start**.
+1. On your job menu, select **Overview** to go back to the main overview page.
+1. From the menu at the top of the page, select **Start**.
+1. Select **Now** > **Start**.
 
-    ![Screenshot of starting the job in the Azure portal](../media/7-run-job.png)
+    ![Screenshot showing how to start a job in the Azure portal](../media/7-run-job.png)
 
-The job should transition to the "Starting" and then after a few seconds, the "Running" state. It will run for a few minutes and then finish in the "Completed" state. You should be able to watch this transition on the **Overview** page for your job.
+The job should transition to the **Starting** state. After a few seconds, it will move to the **Running** state. The job will run for a few minutes and then finish in the **Completed** state. You can watch these transitions on the job's **Overview** page.
 
-![Screenshot of the running job in the Azure portal](../media/7-running-job.png)
+![Screenshot of a running a job in the Azure portal](../media/7-running-job.png)

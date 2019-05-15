@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-web-app-background-task-with-webjobs.3-create-a-webjobs-project-using-visual-studio
+title: Create a WebJobs project using Visual Studio
+metadata:
+  title:  Create a WebJobs project using Visual Studio
+  description: In this unit, you will learn how to add a WebJobs project to a web app solution.
+  ms.date: 4/17/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-a-webjobs-project-using-visual-studio.md)]
