@@ -42,7 +42,7 @@ First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Ma
 
 **#comment**
 
-Video placeholder for Hridayraj’s on-camera scenario overview video. 
+Draft video pending final sign-off. 
 
 ---
 
@@ -78,7 +78,7 @@ Follow along as the Contoso Air DevOps Engineer revamps a critical component of 
 
 **#comment**
 
-Placeholder for Hridayraj’s Azure Pipelines demo video.
+Draft video pending final sign-off.
 
 ---
 
@@ -112,7 +112,7 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 
 **#comment**
 
-Video placeholder for Hridayraj’s Application Insights demo video. 
+Draft video pending final sign-off. 
 
 ---
 
@@ -148,7 +148,7 @@ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track proje
 
 **#comment**
 
-Placeholder video for Hridayraj’s Azure Boards demo video.
+Draft video pending final sign-off.
 
 ---
 
