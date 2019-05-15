@@ -28,10 +28,12 @@ products:
 modules:
 - learn.design-for-security
 - learn.top-5-security-items-to-consider
+- learn.azure.secure-azure-storage-account
 - learn.manage-secrets-with-azure-key-vault
 #TODO: Add - secure/protect resources with azure security center (POST-IGNITE)
-#TODO: Add - learn.auth-apps-with-app-services (POST-IGNITE)
+- learn.authenticate-browser-based-apps-with-azure-app-services
 - learn.secure-access-azure-ad-multi-factor-authentication
-#- learn.secure-azure-resources-with-rbac
+- learn.secure-azure-resources-with-rbac
+- learn.secure-your-azure-sql-database
 trophy:
   uid: learn.secure-your-cloud-data.trophy

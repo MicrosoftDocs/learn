@@ -4,9 +4,7 @@ The Data Science Virtual Machine (DSVM) platform is designed to provide a virtua
 
 *Azure DSVM* is a customized virtual machine on Azure Cloud Services, with many popular data science tools preinstalled and preconfigured for building data science applications. These tools are designed to help business analysts, data engineers, data scientists, and developers.
 
-<!-- TODO:  There's a lot going on in this image that is not explained. Also, technically it is not a "screenshot of a virtual machine." -->
-
-![Screenshot of DSVM.](../media/3-dsvm.png)
+![Screenshot of a Data Science VM](../media/3-dsvm.png)
 
 If you are a data scientist looking to maximize your environment with numerous preinstalled data science tools, DSVM is a good option.
 
