@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Introduction
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

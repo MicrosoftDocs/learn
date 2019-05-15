@@ -2,8 +2,8 @@
 uid: learn.data-ai.survey-the-azure-data-platform.stream-analytics
 title: Understand Azure Stream Analytics
 metadata:
-  title: Understand Azure Stream Analytics - Learn
-  description: Understand Azure Stream Analytics - Learn
+  title: Understand Azure Stream Analytics
+  description: Understand Azure Stream Analytics
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
