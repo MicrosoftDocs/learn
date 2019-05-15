@@ -2,8 +2,8 @@
 uid: learn.data-ai.data-warehouse-security.summary
 title: Summary
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary
+  description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -17,26 +17,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Security control designed to verify a user's identity is called:"
+  - content: "A security control that verifies a user's identity is called:"
     choices: 
     - content: "Encryption."
       isCorrect: false
-      explanation: "That is not the correct answer. Encryption is used to secure data on the disk or in transit."
+      explanation: "Encryption is used to secure data on the disk or in transit."
     - content: "Authentication."
       isCorrect: true
-      explanation: "Correct. Authentication is the security control designed to verify a user's identity."
+      explanation: "Correct. Authentication is the security control that verifies a user's identity."
     - content: "Authorization."
       isCorrect: false
-      explanation: "That is not the correct answer. Authorization is used to control access to database resources like tables, columns and rows."
+      explanation: "Authorization is used to control access to database resources like tables, columns, and rows."
 
   - content: "The difference between login and user is:"
     choices: 
     - content: "They are not different. They are the same object."
       isCorrect: false
-      explanation: "That is not the correct answer. Logins and users are not the same objects in SQL Data warehouse."
-    - content: "Logins provide access to the databases within a server and users provide access to the server."
+      explanation: "Logins and users are not the same objects in Azure SQL Data Warehouse."
+    - content: "Logins provide access to the databases within a server, and users provide access to the server."
       isCorrect: false
-      explanation: "That is not the correct answer.  It is logins that provide access to a server and users provide access to databases within it."
-    - content: "Logins provide access to a server and users provide access to databases within it."
+      explanation: "It's logins that provide access to a server. Users provide access to databases within a server."
+    - content: "Logins provide access to a server, and users provide access to databases within it."
       isCorrect: true
-      explanation: "That is the correct answer. Logins provide access to a server and users provide access to databases within it."
+      explanation: "Correct. Logins provide access to a server, and users provide access to databases within it."

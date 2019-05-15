@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.modern-data-warehouse
+metadata:
+  title: Perform data engineering with Azure Databricks
+  description: Learn the data engineering tools and techniques supported by Azure Databricks. 
+  brand: azure
+  ms.date: 02/19/2019
+  author: barlan
+  ms.author: barlan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform data engineering with Azure Databricks
+summary: Learn how to use Azure Databricks to accelerate the setup of Databricks in Azure. You'll work with data in an Azure SQL Data Warehouse with the built-in conector services. Explore the data services available with Azure Data Factory. Build streamlined workflows, and work with the interactive analytics workspace powered by Apache Spark.
+cardDescription: Learn the data engineering tools and techniques supported by Azure Databricks.
+prerequisites:  | 
+  [!include[](../../includes/azure-subscription-prerequisite.md)]
+iconUrl: /learn/achievements/modern-data-warehouse.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+- data-scientist
+- data-engineer
+products:
+- azure
+- azure-databricks
+modules:
+- learn.intro-to-azure-databricks
+- learn.understanding-the-sql-dw-connector-with-azure-databricks
+- learn.data-ingestion-with-azure-data-factory
+- learn.read-and-write-data-using-azure-databricks
+- learn.perform-basic-data-transformation-in-azure-databricks
+- learn.perform-advanced-data-transformation-in-azure-databricks
+- learn.create-data-pipelines-using-databricks-delta
+- learn.streaming-in-azure-databricks
+- learn.create-data-visualizations-using-azure-databricks-and-power-bi
+trophy:
+  uid: learn.modern-data-warehouse.trophy 

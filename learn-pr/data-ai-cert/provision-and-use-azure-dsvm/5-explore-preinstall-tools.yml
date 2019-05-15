@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.provision-and-use-azure-dsvm.explore-preinstall-tools
+title: Explore the pre-installed learning tools
+metadata:
+  title: Explore the pre-installed learning tools
+  description: Explore the pre-installed learning tools
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-explore-preinstall-tools.md)]

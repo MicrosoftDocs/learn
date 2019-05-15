@@ -10,7 +10,7 @@ Let's take a quick tour of the high-level services Azure offers.
 
 Here's a big-picture view of the available services and features in Azure.
 
-[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](#lightbox)
+[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](../media/3-azure-services.png#lightbox)
 
 Let's take a closer look at the most commonly-used categories:
 
@@ -43,7 +43,7 @@ Compute services are often one of the primary reasons why companies move to the 
 > | Azure Kubernetes Service  | Enables management of a cluster of VMs that run containerized services   |
 > | Azure Service Fabric      | Distributed systems platform. Runs in Azure or on-premises               |
 > | Azure Batch               | Managed service for parallel and high-performance computing applications |
-> | Azure Container Instances | Provides containers without requiring VM provision or higher services    |
+> | Azure Container Instances | Run containerized apps on Azure without provisioning servers or VMs      |
 > | Azure Functions           | An event-driven, serverless compute service                              |
 
 ### Networking
@@ -153,7 +153,7 @@ Open source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure SQL Data Warehouse | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Data Lake Analytics | On-demand ("pay as you go") scalable analytics service that allows you to write queries to transform your data and extract valuable insights. |
+> | Azure Databricks (preview) | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
 
 ### Artificial Intelligence
 
