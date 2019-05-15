@@ -18,18 +18,18 @@ A *Controller* is a public class with one or more public methods known as *actio
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
-    using RetailApi.Data;
-    using RetailApi.Models;
+    using ContosoPets.Api.Data;
+    using ContosoPets.Api.Models;
 
-    namespace RetailApi.Controllers
+    namespace ContosoPets.Api.Controllers
     {
         [Route("api/[controller]")]
         [ApiController]
         public class ProductsController : ControllerBase
         {
-            private readonly ProductsContext _context;
+            private readonly ContosoPetsContext _context;
 
-            public ProductsController(ProductsContext context)
+            public ProductsController(ContosoPetsContext context)
             {
                 _context = context;
             }
@@ -56,17 +56,17 @@ A *Controller* is a public class with one or more public methods known as *actio
 
     Within the class definition:
 
-    * [Constructor injection](https://docs.microsoft.com/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ProductsContext` to the controller.
+    * [Constructor injection](https://docs.microsoft.com/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ContosoPetsContext` to the controller.
     * An HTTP GET action named `GetAll` is created for retrieving all products.
 1. Start the web API by running the following command:
 
     ```bash
-    dotnet run > RetailApi.log &
+    dotnet run > ContosoPets.Api.log &
     ```
 1. Run the following command:
 
     ```bash
-    curl -k -s https://localhost:5001/api/products | python -m json.tool
+    curl -k -s https://localhost:5001/api/products | jq
     ```
 
     > [!TIP]
@@ -88,10 +88,7 @@ A *Controller* is a public class with one or more public methods known as *actio
       }
     ]
     ```
-1. Stop all running .NET Core apps:
 
-    ```bash
-    kill $(pidof dotnet)
-    ```
+1. [!INCLUDE[kill command](../../includes/kill-dotnet-processes.md)]
 
 Actions to support CRUD operations on products data will be added to `ProductsController` in the next unit.

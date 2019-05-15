@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.visualize-and-interact-with-api-resources
+title: Enrich your Swagger documentation with XML comments and annotations
+metadata:
+  title: Enrich your Swagger documentation with XML comments and annotations
+  description: Enrich your Swagger documentation with XML comments and annotations
+  ms.date: 05/06/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: 
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-visualize-and-interact-with-api-resources.md)]
+
+
