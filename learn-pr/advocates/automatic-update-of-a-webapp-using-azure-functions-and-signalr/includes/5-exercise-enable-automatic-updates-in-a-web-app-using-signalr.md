@@ -64,9 +64,15 @@ First, you need to create a new Azure Function that listens for changes in the d
 
     Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code. 
 
-1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells the function to wait only a half second (500 milliseconds) after recognizing data changes before contacting connected clients.
-1. 
-1. <!-- REVIEW According to the docs, the feedPollDelay means "Gets or sets the delay in between polling a partition for new changes on the feed, after all current changes are drained" That doesn't seem to have anything to do with contacting connected clients. I also still am not sure there is anything different between this CosmosDB binding the one from the preceding exercise -->
+1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells Cosmos DB how long to wait before checking for changes in the database. While the application you're building is built around a push-based architecture, behind the scenes Cosmos DB is continually looking at the database in order to detect changes. The `feedPollDelay` refers to how the internals of Cosmos DB recognizes changes, not how your web application recognizes changes to the data.
+
+<!-- 
+    REVIEW:
+    According to the docs, the feedPollDelay means "Gets or sets the delay in between polling a partition for new changes on the feed, after all current changes are drained" That doesn't seem to have anything to do with contacting connected clients. I also still am not sure there is anything different between this CosmosDB binding the one from the preceding exercise
+
+    CONCLUSION
+    Reworded paragraph to explain why there is a setting referencing "polling" in a push-based web app.
+-->
 
 The Cosmos DB binding for your function should now look like the following code.
 
@@ -210,11 +216,29 @@ connect();
 
 The changes you just made accomplished two goals: removed all polling logic from the client and added handlers to listen for messages coming from the server.
 
+A new helper function is introduced which makes it easy for the application to work in local and deployed contexts.
 
-<!-- REVIEW - Consider moving this explanation of the URL switcher to the first exercise, since it's used there too 
+```javascript
+const LOCAL_BASE_URL = 'http://localhost:7071';
+const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
 
-Update - moved the paragraph to unit 2, to see how it fits -->
+const getAPIBaseUrl = () => {
+    const isLocal = /localhost/.test(window.location.href);
+    return isLocal ? LOCAL_BASE_URL : REMOTE_BASE_URL;
+}
+```
 
+The `getAPIBaseUrl` function returns the appropriate URL depending on whether the app is running locally or deployed to Azure. The placeholder `<REMOTE_BASE_URL>` is replaced by the storage account endpoint in a coming exercise when you deploy this application to the cloud.
+
+<!-- 
+
+    REVIEW:
+    Consider moving this explanation of the URL switcher to the first exercise, since it's used there too 
+
+    CONCLUSION:
+    Updated code to only use the local variable for the beginning state of the app. Added the code for getAPIBaseUrl in this exercise and added an explanation paragraph.
+
+-->
 
 The Vue.js-related code is streamlined now that changes are pushed to the client. Consider this segment of the code you just pasted in to the script file:
 
@@ -299,7 +323,7 @@ You can now navigate to *http://localhost:8080* to see the application working i
 
 Now you can make change to the application's data and observe how to the data is automatically updated. Since the update to the browser happens nearly immediately, consider having Visual Studio Code open one side of your screen and the running application on the other. This way you can see the UI update right after you issue the command to update the database.
 
-Return to Visual Studio Code and enter the the following command in the integrated terminal and watch as the application automatically updates.
+Return to Visual Studio Code and enter the the following command in the integrated terminal and watch as the application automatically update stock ABC.
 
 ```bash
 npm run update

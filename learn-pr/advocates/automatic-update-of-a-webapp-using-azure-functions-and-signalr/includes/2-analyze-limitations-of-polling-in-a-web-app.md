@@ -76,17 +76,19 @@ module.exports = async function (context, req, stocks) {
 ### Client
 
 The sample client uses Vue.js to compose the UI and the axios HTTP client to handle requests to the Azure Function.
-<!-- REVIEW I removed the note about Vue.js because is was too apologetic and unnecessary -->
+
+<!--
+    REVIEW:
+    I removed the note about Vue.js because is was too apologetic and unnecessary
+
+    CONCLUSION:
+    Acknowledged
+-->
+
 The logic implemented on the page includes the use of a timer to send a request to the server every five seconds. The response returns an array of stocks, which are then displayed to the user.
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
-
-const getAPIBaseUrl = () => {
-    const isLocal = /localhost/.test(window.location.href);
-    return isLocal ? LOCAL_BASE_URL : REMOTE_BASE_URL;
-}
 
 const app = new Vue({
     el: '#app',
@@ -99,7 +101,7 @@ const app = new Vue({
     methods: {
         async update() {
             try {
-                const apiUrl = `${getAPIBaseUrl()}/api/getStocks`;
+                const apiUrl = `${LOCAL_BASE_URL}/api/getStocks`;
                 const response = await axios.get(apiUrl);
                 app.stocks = response.data;
             } catch (ex) {
@@ -119,24 +121,17 @@ const app = new Vue({
 
 The `update` method is called every five seconds once polling is started by the `startPoll` method. Inside the `update` method, a GET request is sent to the `getStocks` function and the result is set to `app.stocks` which updates the UI.
 
-The preceding code begins with a helper function that returns the base URL of the script.
-
-```javascript
-const LOCAL_BASE_URL = 'http://localhost:7071';
-const REMOTE_BASE_URL = '<FUNCTION_APP_ENDPOINT>';
-
-const getAPIBaseUrl = () => {
-    const isLocal = /localhost/.test(window.location.href);
-    return isLocal ? LOCAL_BASE_URL : REMOTE_BASE_URL;
-}
-```
-
-Later in this module when we deploy the application to Azure, you'll set the REMOTE_BASE_URL variable with the remote URL,  allowing the app to run either locally on your machine or deployed to the cloud.
-
-The server and client code is relatively straightforward but, as we'll see, this simplicity brings with it some limitations. 
+The server and client code is relatively straightforward but, as we'll see, this simplicity brings with it some limitations.
 
 ## Supporting CORS
-<!-- REVIEW - This section is very specific to running the app locally, whereas the analysis and setup aren't. I would consider placing this closer to the actual running of the app locally -->
+
+<!-- 
+    REVIEW:
+    This section is very specific to running the app locally, whereas the analysis and setup aren't. I would consider placing this closer to the actual running of the app locally
+
+    CONCLUSION:
+    We decided to keep it as-is in order to avoid a large-scale content refactoring.
+-->
 
 In the *local.settings.json* file, the `Host` section includes the following settings.
 
@@ -150,8 +145,8 @@ In the *local.settings.json* file, the `Host` section includes the following set
 
 This configuration tells the locally-running function app that a web application running at *localhost:8080* is allowed to make requests to functions running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookies from the request.
 
-
 ## Analysis of current solution
+
 Let's think about some of the drawbacks of this timer-based polling approach.
 
 Timer-based polling is inefficient. In the prototype, the client application contacts the server regardless of whether or not there are any changes to the underlying data. Also, once data is returned from the server the entire list of stocks is updated on the web page - again - whether or not there are any changes in the data.
@@ -160,9 +155,16 @@ Selecting the best polling interval for your scenario is also a challenging. Pol
 
 ![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media/polling-example.png)
 
-In the worst case, the potential delay for detecting new data is equal to the polling interval. So why not use a smaller interval? 
+In the worst case, the potential delay for detecting new data is equal to the polling interval. So why not use a smaller interval?
 
 As the application scales, the amount of data exchanged between the client and server will become a problem. Each HTTP request header includes hundreds of bytes of data along with the session's cookie. All this overhead, especially when under heavy load, creates wasted resources and unnecessarily taxes the server.
 
 Now that you're more familiar with the starting point of the application, it's time to get the application running on your machine.
-<!-- REVIEW I'm still considering whether we install and run the app before this analysis. Let's discuss. -->
+
+<!-- 
+    REVIEW:
+    I'm still considering whether we install and run the app before this analysis. Let's discuss.
+
+    CONCLUSION:
+    We decided to leave as is, for cost/benefit reasons.
+-->
