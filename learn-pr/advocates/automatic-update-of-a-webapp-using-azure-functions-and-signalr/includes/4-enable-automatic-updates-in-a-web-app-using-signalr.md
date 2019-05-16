@@ -4,9 +4,17 @@ In this unit, we'll look at a way to move away from a polling-based solution to 
 
 As data changes in the database, **Cosmos DB** exposes a "change feed". Change feed support in Azure Cosmos DB works by listening to an Azure Cosmos DB container for any changes. It then outputs the sorted list of documents that were changed in the order in which they were modified. By listening to the change feed your application can automatically respond to data changes.
 
+Currently there is an Azure Function this returns data from Cosmos DB, but you must call the function to return data on-demand. The new implementation uses a function that is triggered only as data changes.
+
 **Azure Functions** features binding that runs code anytime there is an update to the Cosmos DB change feed. Once a  function is listening to the change feed, then you can work with a subset of your data that just represents data changes. When paired with a persistent connection to the client, the function can contact individual clients on-demand, which is the foundation for a real-time application architecture.
 
-<!-- REVIEW -We used a Cosmos DB binding in the as-is architecture. Is there anything new here? -->
+<!--
+    REVIEW:
+    We used a Cosmos DB binding in the as-is architecture. Is there anything new here?
+
+    CONCLUSION:
+    Added detail to discuss the difference between polling and push uses a trigger which is designed around the change feed that only exposes changes.
+-->
 
 ## SignalR and Persistent connections
 

@@ -11,5 +11,7 @@ With this new application architecture your application enjoys the following ben
 - Server-push architecture with a wide range of support for new and old browsers via SignalR
 - Improved response time and reduced to a little over a half second to automatically update the UI.
 
+To verify your implementation you can reference the *end* folder in the folder where you cloned the sample code repository, or you can [view the code on GitHub](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/tree/master/end).
+
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
