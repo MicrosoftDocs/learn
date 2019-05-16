@@ -22,10 +22,10 @@ quiz:
       isCorrect: false
       explanation: "No. Although Application Gateway can use SSL to protect communications with clients, you still need to encrypt data that passes between Application Gateway and the servers running your application."
     - content: "Application Gateway can implement an SSL connection with clients. Application Gateway can also implement an SSL connection with the servers running your application."
-      isCorrect: yes
+      isCorrect: true
       explanation: "This answer is correct."
     - content: "Application Gateway doesn't require an SSL connection with clients. All encryption is carried out by the connection with the servers running your application."
-      isCorrect: true
+      isCorrect: false
       explanation: "No. You should configure Application Gateway to use SSL to communicate with clients and for connecting to the servers running your application."
     - content: "Application Gateway automatically protects the communications between clients and the servers running your application. You don't need to do any additional configuration."
       isCorrect: false
