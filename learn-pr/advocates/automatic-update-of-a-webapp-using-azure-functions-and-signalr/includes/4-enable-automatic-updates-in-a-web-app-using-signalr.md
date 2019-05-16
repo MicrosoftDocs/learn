@@ -4,7 +4,7 @@ In this unit, we'll look at a way to move away from a polling-based solution to 
 
 As data changes in the database, **Cosmos DB** exposes a "change feed". Change feed support in Azure Cosmos DB works by listening to an Azure Cosmos DB container for any changes. It then outputs the sorted list of documents that were changed in the order in which they were modified. By listening to the change feed your application can automatically respond to data changes.
 
-Currently there is an Azure Function this returns data from Cosmos DB, but you must call the function to return data on-demand. The new implementation uses a function that is triggered only as data changes.
+To summarize, the key difference between this function and the original `getStocks` function is that we are now triggering our function based on changes to our data. In the preceding exercise, we triggered our function based on requests from the client and pulled back all data through a Cosmos DB input binding. Using the Cosmos DB trigger automatically makes our data retrieval more efficient
 
 **Azure Functions** features binding that runs code anytime there is an update to the Cosmos DB change feed. Once a  function is listening to the change feed, then you can work with a subset of your data that just represents data changes. When paired with a persistent connection to the client, the function can contact individual clients on-demand, which is the foundation for a real-time application architecture.
 
