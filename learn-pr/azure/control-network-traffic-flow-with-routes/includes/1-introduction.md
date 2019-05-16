@@ -8,7 +8,7 @@ In this module, you'll learn about Azure routing, how you can create custom rout
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Identify the routing capabilities of an Azure virtual network
 - Configure routing within a virtual network
