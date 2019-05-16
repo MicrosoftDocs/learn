@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Unit title
+title: Identify routing capabilities of an Azure Virtual Network
 durationInMinutes: 10
 content: |
   [!include[](includes/2-routing-capabilities-of-azure-vnets.md)]
