@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Azure Solution Architect - Networking Infrastructure/secure-and-isolate-to-azure-resources-using-network-security-groups-and-service-endpoints</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-7.1%" y="-6.2%" width="114.3%" height="112.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.102921196 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-4" x="13" y="17" width="29" height="29" rx="14.5"></rect>
+        <filter x="-3.4%" y="-3.4%" width="106.9%" height="113.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Solution-Architect---Networking-Infrastructure" transform="translate(-50.000000, -660.000000)">
+            <g id="Azure-Solution-Architect---Networking-Infrastructure/secure-and-isolate-to-azure-resources-using-network-security-groups-and-service-endpoints" transform="translate(50.000000, 660.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Shield" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(20.000000, 16.000000)">
+                            <path d="M28,2 C22.54832,8.10813333 12.946,10.1333333 2,10.1333333 L2,26.4 C2,43.1709333 9.60448,53.9638667 28,63 C46.39448,53.9638667 54,43.1709333 54,26.4 L54,10.1333333 C43.05504,10.1333333 33.45168,8.10813333 28,2" id="Fill-22" fill="#7CB65A" fill-rule="evenodd"></path>
+                            <path d="M27.6842105,2 L27.6842105,43.6833333 C20.4821053,43.6833333 14.5926316,38.3051667 14.0526316,31.4833333 C14.0263158,31.81985 14,32.1563667 14,32.5 C14,38.9294 18.7547368,44.28825 25.0536842,45.4726667 C26.5652632,45.7573333 27.6842105,46.9885167 27.6842105,48.4759 L27.6842105,63 C46.3021053,53.9638667 54,43.1709333 54,26.4 L54,10.1333333 C42.9221053,10.1333333 33.2021053,8.10813333 27.6842105,2" id="Fill-23" fill="#629E3F" fill-rule="evenodd"></path>
+                            <path d="M4.14814815,12.1359096 L4.14814815,26.387104 C4.14814815,42.1261831 11.0755556,52.1239565 28,60.6866575 C44.9244444,52.1239565 51.8518519,42.1261831 51.8518519,26.387104 L51.8518519,12.1359096 C40.9494815,11.8738794 33.1063704,9.49732618 28,4.90570349 C22.8936296,9.49732618 15.0505185,11.8738794 4.14814815,12.1359096 Z M28,65 C27.6805926,65 27.3622222,64.9278909 27.0687407,64.7836727 C8.09614815,55.4419905 0,43.9583634 0,26.387104 L0,10.1290425 C0,9.00678122 0.928148148,8.09678478 2.07407407,8.09678478 C14.0145185,8.09678478 21.9831111,5.66538803 26.4371852,0.66345444 C27.2253333,-0.22115148 28.7746667,-0.22115148 29.5628148,0.66345444 C34.0168889,5.66538803 41.9854815,8.09678478 53.9259259,8.09678478 C55.0708148,8.09678478 56,9.00678122 56,10.1290425 L56,26.387104 C56,43.9583634 47.9038519,55.4419905 28.9312593,64.7836727 C28.6377778,64.9278909 28.3194074,65 28,65 L28,65 Z" id="Fill-24" fill="#629E3F" fill-rule="evenodd"></path>
+                            <g id="Rectangle" fill="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" mask="url(#mask-2)" fill="#55A2FF">
+                        <g transform="translate(36.000000, 43.000000)" id="Fill-1541">
+                            <path d="M18.2346836,9.92623611 C17.9186836,9.92623611 17.6026836,9.80464352 17.3619805,9.56269907 C16.8793398,9.07756944 16.8793398,8.2934213 17.3619805,7.80829167 L20.1924023,4.96327315 L17.3619805,2.11825463 C16.8793398,1.633125 16.8793398,0.848976852 17.3619805,0.363847222 C17.8446211,-0.121282407 18.6247461,-0.121282407 19.1073867,0.363847222 L22.8105117,4.08606944 C23.2931523,4.57119907 23.2931523,5.35534722 22.8105117,5.84047685 L19.1073867,9.56269907 C18.8666836,9.80464352 18.5506836,9.92623611 18.2346836,9.92623611"></path>
+                            <path d="M1.23468359,9.92623611 C0.918683594,9.92623611 0.602683594,9.80464352 0.361980469,9.56269907 C-0.120660156,9.07756944 -0.120660156,8.2934213 0.361980469,7.80829167 L3.19240234,4.96327315 L0.361980469,2.11825463 C-0.120660156,1.633125 -0.120660156,0.848976852 0.361980469,0.363847222 C0.844621094,-0.121282407 1.62474609,-0.121282407 2.10738672,0.363847222 L5.81051172,4.08606944 C6.29315234,4.57119907 6.29315234,5.35534722 5.81051172,5.84047685 L2.10738672,9.56269907 C1.86668359,9.80464352 1.55068359,9.92623611 1.23468359,9.92623611" transform="translate(3.086246, 4.963118) scale(-1, 1) translate(-3.086246, -4.963118) "></path>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)" fill="#7CB65A">
+                        <g transform="translate(43.000000, 47.000000)" id="Oval">
+                            <circle cx="1" cy="1" r="1"></circle>
+                            <circle cx="5" cy="1" r="1"></circle>
+                            <circle cx="9" cy="1" r="1"></circle>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.create-linux-vm-in-azure
 metadata:
-  title: Create a Linux virtual machine in Azure - Learn
+  title: Create a Linux virtual machine in Azure
   description: In this module, we'll discuss how to create a Linux virtual machine using the Azure portal.
   ms.date: 09/24/2018
   author: markjulmar

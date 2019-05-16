@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-and-publish-a-luis-model.exercise-add-intents-and-entities
-title: Exercise - Add Intents and Entities
+title: Exercise - Add intents and entities
 metadata:
-  title: Exercise - Add Intents and Entities
-  description: Add user intents and entities to the LUIS app for image searching
+  title: Exercise - Add intents and entities
+  description: Add user intents and entities to the LUIS app for image searching.
   ms.date: 1/24/2019
   author: gerryaobrien
   ms.author: gerryo

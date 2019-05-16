@@ -1,0 +1,16 @@
+log/
+obj/
+raw/
+viewmodel/
+_model/
+_viewmodel/
+_site/
+.optemp/
+_themes*/
+_dependentPackages/
+
+.openpublishing.buildcore.ps1
+.vscode/settings.json
+.vs/
+.DS_Store
+Thumbs.db

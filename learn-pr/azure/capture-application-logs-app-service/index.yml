@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.capture-application-logs-app-service
+metadata:
+  title: Capture Web Application Logs with App Service Diagnostics Logging
+  description: Learn about how to capture trace output from your Azure web apps. View a live log stream and download logs files for offline analysis.
+  ms.date: 03/20/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Capture Web Application Logs with App Service Diagnostics Logging
+summary: Use application logs in Azure Web Apps to help debug web app code.
+abstract: | 
+  In this module, you will:
+  - Enable application logging on an Azure Web App
+  - View live application logging activity with the log streaming service
+  - Retrieve application log files from an application with Kudu or the Azure CLI
+prerequisites: | 
+  - Experience in basic web app development and deployment, including creating trace output from applications
+  - Understanding of Web apps in Microsoft Azure
+iconUrl: /learn/achievements/capture-application-logs-app-service.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.capture-application-logs-app-service.1-introduction
+- learn.azure.capture-application-logs-app-service.2-enable-and-configure-app-service-application-logging
+- learn.azure.capture-application-logs-app-service.3-enable-and-configure-app-service-application-logging-using-the-azure-portal
+- learn.azure.capture-application-logs-app-service.4-view-live-application-logging-activity-with-the-log-streaming-service
+- learn.azure.capture-application-logs-app-service.5-view-live-application-logging-activity-with-the-log-streaming-service-using-azure-cli
+- learn.azure.capture-application-logs-app-service.6-retrieve-application-log-files-from-an-application
+- learn.azure.capture-application-logs-app-service.7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu
+- learn.azure.capture-application-logs-app-service.8-summary
+badge:
+  uid: learn.azure.capture-application-logs-app-service.badge
