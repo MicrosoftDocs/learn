@@ -61,7 +61,7 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
     - **Azure Automation State Configuration** - Azure Automation provides complete control of automation and configuration service. It is cloud-based automation and configuration service that provides consistent management across your Azure and non-Azure environments. Azure Automation State Configuration is an Azure service that enables you to write, manage, and compile PowerShell Desired State Configuration (DSC) configurations. It lets you import DSC Resources, and assign configurations to target nodes in the cloud. it also has built in templates that you can use. It lets you set up runbooks to respond to triggers.
     - **Azure Resource Manager templates** – Azure Resource Manager allows you to provision your applications by using a declarative template. ARM templates use a simple JSON file. JSON is an open-standard file format derived from JavaScript. In a single template, you can deploy multiple services along with their dependencies. You use the same template to repeatedly deploy your application during every stage of the application lifecycle.
 
-1. **Analyse the decision criteria**
+1. **Choose a native Azure solution**
 
     So, the big question now is how do you decide which tools to use to provision compute?
 
@@ -84,9 +84,10 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
         - Interoperability - The custom script extension integrates with Azure Resource Manager templates, and can be run using the Azure CLI, PowerShell, Azure portal, or the Azure Virtual Machine REST API.
         - Configuration language – PowerShell
         - Limitations/Drawbacks - There are 90 minutes allowed for each script to run. Anything longer will result in a failed provision of the extension. Don't put reboots inside the script - this action will cause issues with other extensions that are being installed. After a reboot, the extension won't continue. If you have a script that will cause a reboot, then install applications and run scripts, you can schedule the reboot using a Windows Scheduled Task, or use tools such as DSC or Chef extensions. The extension will only run a script once. If you want to run a script on every boot, then you need to use the extension to create a Windows Scheduled Task
+        - Scenario - Present a short scenario, in which the best solution is to use custom scripts.
         - Summary - the custom script extension is useful for post-deployment configuration, software installation, or any other configuration or management task. It’s imperative for ad-hoc cross-platform scripting. But for large infrastructure deployment and automation, it is not ideal.  
 
-    - Azure Desired State COnfiguration (DSC) extension:
+    - Azure Desired State Configuration (DSC) extension:
 
         - Scalability – The DSC extension is more scalable than custom scripts.
         - Ease of set up – The primary use case for the DSC extension is to bootstrap a VM to the Azure Automation State Configuration (DSC) service. The setup is fairly easy.
@@ -94,6 +95,7 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
         - Interoperability – to deploy DSC you can use Azure portal or the Azure PowerShell SDK 
         - Configuration language - PowerShell
         - Limitations/Drawbacks – DSC is not automating continuance compliance checks and enforcing continuance compliance. It lacks the ability to track changes, compliance across environments or orchestrate configuration changes.
+        - Scenario - Present a short scenario, in which the best solution is to use DSC.
         - Summary – DSC is a management platform that enables you to manage your IT and development infrastructure with configuration as code. But it lacks the ability to automate continuance compliance checks across environments or orchestrate configuration changes.
 
     - Azure Automation State Configuration
@@ -103,9 +105,10 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
         - Management - Very easy to manage. All Nodes that are managed with Azure Automation State Configuration send detailed reporting status data to the built-in pull server. You can configure Azure Automation State Configuration to send this data to your Log Analytics workspace.
         - Interoperability - Azure Automation State Configuration provides a DSC pull server similar to the Windows Feature DSC-Service so that target nodes automatically receive configurations, conform to the desired state, and report back on their compliance. Azure Automation can target virtual or physical Windows or Linux machines, in the cloud or on-premises.
         - Configuration language – PowerShell
+        - Scenario - Present a short scenario, in which the best solution is to use Automation State Configuration.
         - Summary - The Azure Automation service allows you to manage DSC configurations, resources, and managed nodes from within Azure. Using PowerShell DSC is great when you have few VMs to administrate.  However, if you have many VMs, Azure Automation State Configuration is ideal for handling them and ensuring that all have uniform features and configurations. Azure Automation State Configuration is an Azure service that allows you to write, manage, and compile PowerShell Desired State Configuration (DSC) configurations, import DSC Resources, and assign configurations to target nodes, all in the cloud.
 
-    - Azure Resource manager templates
+    - Azure resource manager templates
 
         - Scalability – Highly scalable for provisioning compute reousrces from small to large infrastructures.
         - Ease of set up - Creating ARM templates is really easy. You have various templates available from the GitHub community, which you can use or build upon. Alternatively, you can create your own from Azure.
@@ -113,7 +116,14 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
         - Interoperability - you can use other tools to provision ARM Templates – Azure Cli, Azure Portal, PowerShell and Terraform.
         - Configuration language – JSON
         - Limitation/drawbacks - Certain regions are not supported for certain resources.
+        - Scenario - Present a short scenario, in which the best solution is to use resource manager templates.
         - Summary - ARM Templates are ideal for deploying large infrastructure with multiple services along with their dependencies. You use the same template to repeatedly deploy your application during every stage of the application lifecycle. 
+
+    Knowledge check: include two questions at the end of this module that present simple scenarios and ask the student to select the most appropriate native Azure solution.
+
+1. **Choose a third party solution**
+
+Consider Chef and Terraform against the same criteria as in the previous module:
 
     - Chef
 
@@ -123,6 +133,7 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
         - Interoperability - Chef server only works under Linux/Unix, but the Chef client can be on Windows.
         - Configuration language – Ruby
         - Limitation/drawbacks - Templating language can be hard to learn, especially for those not already familiar with the Ruby programming language. Other platforms have better pre-configured deployment scripts.
+        - Scenario - Present a short scenario, in which the best solution is to use Chef.
         - Summary - Chef provides a powerful DevOps automation platform that transforms VM infrastructure on Azure into code. Chef automates how infrastructure is configured, deployed, and managed across your network, no matter its size.
 
     - Terraform
@@ -133,7 +144,10 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
         - Interoperability - Supports Amazon Web Services, Microsoft Azure, and Google cloud platform.
         - Configuration language – Terraform uses Hashicorp Configuration Language (HCL). Alternately you can also use JSON (JavaScript Object Notation).
         - Limitation/Drawbacks - Resources in Terraform are created by Hashicorp, so there is potential for a delay between Azure resources being released by Microsoft and them being available to create in Terraform. Terraform uses the state files to monitor the IAAS and only deploy things that have changed. However, there are some downsides too. Firstly, you have an extra file that is critical to your deployments that you need to manage and keep safe. If you lose your state file or it gets overwritten, you are really in a lot of trouble. You can use the “Terraform Refresh” command to refresh your state file against the existing infrastructure, which can fix accidental changes, but you can’t get a whole new state file with this approach. The metadata that Terraform records in the state file is stored nowhere else but in the state file. You can work with this by storing your state file in a central location that is backed up. Additionally, state is tied to your environment, so each time you want to deploy another instance of your infrastructure you are going to need to manage another state file.
+        - Scenario - Present a short scenario, in which the best solution is to use Terrform.
         - Summary - Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, so it helps to minimize errors in configuration. Terraform provides an easy way to define, preview, and deploy cloud infrastructure.
+
+    Knowledge check: include two questions at the end of this module that present simple scenarios and ask the student to select from Chef, Terrform, or a native Azure solution.
 
 1. **Exercise - Analyse a scenario and map it to a technology option**
 
