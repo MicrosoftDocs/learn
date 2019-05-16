@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-azure-areas-and-solutions.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: .
+  ms.date: 01/31/2019
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-Knowledge-check.md)]
+quiz:
+  title: Introduction to Azure solutions
+  questions:
+  - content: "Artificial intelligence combined with Microsoft tools, services, and infrastructure can make AI real for your organization. Which of the following describes a scenario that uses AI to improve business outcomes?"
+    choices:
+    - content: "Transforming a company’s data to support informed decision-making"
+      isCorrect: false
+      explanation: "Incorrect. This scenario is supported by business intelligence solutions."
+    - content: "Strategically moving on-premises applications and workloads to the cloud"
+      isCorrect: false
+      explanation: "Incorrect. This scenario is supported by apps and infrastructure migration and modernization"
+    - content: "The need to use both proprietary and open-source technologies across both public and private clouds"
+      isCorrect: false
+      explanation: "Incorrect. This scenario is supported by data estate migration and modernization"
+    - content: "Unlocking latent data with knowledge mining"
+      isCorrect: true
+      explanation: "Correct. AI scenarios include building AI apps and agents, unlocking latent data with knowledge mining, and developing AI models with machine learning"
+  - content: "Azure provides unique value in four areas: productive, hybrid, intelligent, trusted. What are the capabilities that support the first area, productive?"
+    choices:
+    - content: "Integrated tooling for developers, 100+ cloud services, and unified management for IT admins"
+      isCorrect: true
+      explanation: "Correct. A key value driver of Azure is the instant productivity that's enabled through integrated tooling for developers, 100+ cloud services, and unified management for IT admins."
+    - content: "Developer platform, DevOps, data platform, identity, and security & management"
+      isCorrect: false
+      explanation: "Incorrect. Developer platform, DevOps, data platform, identity, and security & management support one of the areas, but not the productive area."
+    - content: "AI apps & agents, knowledge mining, and machine learning"
+      isCorrect: false
+      explanation: "Incorrect. AI apps & agents, knowledge mining, and machine learning are aspects of artificial intelligence, but they are not the key capabilities supporting the productive area."
+    - content: "Apps and infrastructure, data estate migration and modernization, business intelligence, and artificial intelligence"
+      isCorrect: false
+      explanation: "Incorrect. Apps and infrastructure, data estate migration and modernization, business intelligence, and artificial intelligence are not capabilities that support the productive area."
+  - content: "What is the Microsoft solution that allows you to run your own copy of Azure within your datacenter, letting you build once and deploy seamlessly on-premises or to the cloud?"
+    choices:
+    - content: "Azure Cloud Services"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cloud Services is not a Microsoft solution."
+    - content: "Azure Stack"
+      isCorrect: true
+      explanation: "Correct. You can extend your on-premises datacenter with Azure Stack, which enables you to add cloud services into your on-premises solutions."
+    - content: "Azure Server"
+      isCorrect: false
+      explanation: "Incorrect. Azure Server is not a Microsoft solution."
+    - content: "Azure on-premises"
+      isCorrect: false
+      explanation: "Incorrect. Azure on-premises is not a Microsoft solution."
+  - content: "Microsoft has support and coverage for certification and regulations worldwide. We cover certifications in the US Government, Industry, and what other areas?"
+    choices:
+    - content: "ISO 27001"
+      isCorrect: false
+      explanation: "Incorrect. ISO 27001 is only one of many specific certifications held by Microsoft."
+    - content: "Regional and Global certification support"
+      isCorrect: true
+      explanation: "Correct. Microsoft has global, regional, US government, and industry certifications."
+    - content: "EU Model Clauses"
+      isCorrect: false
+      explanation: "Incorrect. EU Model Clauses is only one of many specific certifications held by Microsoft."
+    - content: "All currently available certifications worldwide"
+      isCorrect: false
+      explanation: "Incorrect. Although Microsoft has more industry certifications than any other cloud provider, it does not hold all currently available certifications."

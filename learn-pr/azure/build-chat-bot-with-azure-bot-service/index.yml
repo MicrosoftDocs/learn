@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.build-azure-bot-services-bot
 metadata:
-  title: Build a chat bot with the Azure Bot Service - Learn
+  title: Build a chat bot with the Azure Bot Service
   description: The Azure Bot Service, combined with Microsoft QnA Maker, provide the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
   ms.date: 09/26/2018
-  author: lnyswonger
-  ms.author: luken
+  author: JeffProsise
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
+  #ms.learn-contact: smmark
 title: Build a chat bot with the Azure Bot Service
 summary: The Azure Bot Service, combined with Microsoft QnA Maker, provide the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
 abstract: |
@@ -19,7 +19,7 @@ abstract: |
   - Publish bots and use continuous integration to keep them up to date
   - Debug bots locally using Visual Studio Code and the Microsoft Bot Framework Emulator
 prerequisites: |
-  None
+  You will need an active Azure subscription (or trial) along with a local install of Visual Studio Code to complete the exercises in this module.
 iconUrl: /learn/achievements/build-chat-bot-with-azure-bot-service.svg
 levels:
 - beginner
@@ -38,7 +38,7 @@ units:
 - learn.build-azure-bot-services-bot.4-deploy-bot
 - learn.build-azure-bot-services-bot.5-debug-bot-locally
 - learn.build-azure-bot-services-bot.6-connect-to-knowledge-base
-- learn.build-azure-bot-services-bot.7-summary
 - learn.build-azure-bot-services-bot.8-knowledge-check
+- learn.build-azure-bot-services-bot.7-summary
 badge:
   uid: learn.build-azure-bot-services-bot.badge

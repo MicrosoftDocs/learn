@@ -11,6 +11,6 @@ _dependentPackages/
 
 .openpublishing.buildcore.ps1
 .vscode/settings.json
+.vs/
 .DS_Store
 Thumbs.db
-/learn-pr/azure/authenticate-apps-with-managed-identities/src
