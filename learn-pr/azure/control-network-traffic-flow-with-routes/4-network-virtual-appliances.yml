@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Unit title
+title: What is an NVA?
 durationInMinutes: 10
 content: |
   [!include[](includes/4-network-virtual-appliances.md)]
