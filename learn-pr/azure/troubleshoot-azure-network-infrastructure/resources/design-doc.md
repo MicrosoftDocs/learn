@@ -37,7 +37,7 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
 | Identify the purpose of Azure Network Watcher features    | Identifying the right tools for troubleshooting                                                         | Knowledge check                                                     | 1                                             | Yes                                                         |
 | Evaluate the Azure Network Watcher features   | How to restore connectivity                                                       | Knowledge check                                                     | 1 & 2                                            | Yes                                                        |
 | Determine the cause of the fault     |        Identifying where connectivity is failing                                                   | Knowledge check                                                     | 1                                            | Yes                                                          |
-|Enable Network Watcher and utilise its features     |        Basic familiarity with Azure Network Feature                                                  | Exercise                                                     | 1 & 2                                            | Yes                                                          |
+|Enable Network Watcher and utilize its features     |        Basic familiarity with Azure Network Feature                                                  | Exercise                                                     | 1 & 2                                            | Yes                                                          |
 
 ## Outline the units
 
@@ -47,7 +47,7 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
 
    You are the Azure architect at for an engineering company. One of your colleagues has deployed a VM in Azure and is having network connectivity issues. You’re the Azure architect for the project, so they have come to you for help. You’ve worked through these issues in the past and would like to help your colleague learn how they can troubleshoot these issues themselves if they come up in the future. You take them through the tools in Azure Network Watcher to help them identify and remediate the issues.
 
-   Azure Network Watcher empowers engineers to monitor, diagnose, and gain insight into their network health and performance with metrics. The features can be broken down into 4 areas: monitoring, network diagnostic tools, metrics, and logs.
+   Engineers can use Azure Network Watcher to monitor, diagnose, and gain insight into their network health and performance with metrics. The features can be broken down into four areas: monitoring, network diagnostic tools, metrics, and logs.
 
    In this module, you will about the facilities within Network Watcher and use them to diagnose a communication problem between two VMs.
 
@@ -57,17 +57,17 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
 
    1. Describe the main monitoring tools:
 
-      - Topology - helps to see network level topology overview, various interconnections and associations between network resources in an Azure Resource Group.
+      - Topology - helps to see network level topology overview, various interconnections, and associations between network resources in an Azure Resource Group.
       - Connection Monitor - enables you to configure and track connection reachability, latency, and network topology changes. If there is an issue, it tells you why it occurred and how to fix it.
       - Network Performance Monitor - gives you the ability to track and alert on latency/packet drops over time. It enables you to have a centralized view of your network monitoring requirements. To monitor your hybrid connections using Network Performance Monitor (NPM), ensure that the workspace associated with NPM is in a supported region. NPM can monitor connectivity between networks and applications in any part of the world, from a workspace that is hosted in one of the following regions: West Europe, West Central US, East US, East Japan, South East Asia, South East Australia, South UK, and US Government Virginia.
 
    1. Describe the main network diagnostic tools:
 
       - IP flow verify - 5-Tuple packet parameter-based verification mechanism to detect if a packet is allowed or denied
-      - Next hop - determine the next hop for packets routed in the azure network topology, primary helping in troubleshooting user defined routing.
-      - Effective security rules - enables you to view network security groups associated with the chosen interface. You can view inbound and outbound rules. This is really handy when you have to view more than one rule or route.
+      - Next hop - determine the next hop for packets routed in the azure network topology, primary helping in troubleshooting user-defined routing.
+      - Effective security rules - enables you to view network security groups associated with the chosen interface. You can view inbound and outbound rules. This tool is handy when you have to view more than one rule or route.
       - VPN troubleshoot - provides the ability to troubleshoot virtual network gateway and connections
-      - Packet capture - allows you to capture incoming and outgoing network traffic packets of a virtual machine. You can also automate remote packet capture with triggers to proactively  capture traffic.  100 Packet capture sessions per region is the default limit and maximum limit is 10,000. These are for number of sessions only, not saved captures. You can save packets captured in Azure storage or locally on your pc.
+      - Packet capture - allows you to capture incoming and outgoing network traffic packets of a virtual machine. You can also automate remote packet capture with triggers to proactively  capture traffic.  The default limit is 100 Packet capture sessions per region and maximum limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure storage or locally on your pc.
       - Connection troubleshoot - provides the capability to check a direct TCP connection from a virtual machine (VM) to a VM, fully qualified domain name (FQDN), URI, or IPv4 address  
 
    1. Provide four use case scenarios for troubleshooting using Azure Network Watcher monitoring and diagnostics. Use this format:
@@ -82,20 +82,39 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
          - No servers listening on designated destination ports
          - Diagnose network routing problems from a VM
 
+   Knowledge check:
+
+      A. To capture traffic on VM, Azure Network Watcher requires the:
+
+         - Network watcher Agent VM Extension
+         - Azure Traffic Manager
+         - Azure Load Balance
+         - Azure Storage Account  
+
+      B. To resolve latency issues on the network, which Azure Network Watcher features can you use?
+
+         - IP flow verify
+         - Next hop
+         - VPN Gateway Troubleshooting  
+         - Connection troubleshoot
+
+
 1. **Exercise - Troubleshoot networking using Network Watcher monitoring and diagnostic tools**
 
     1. Create the virtual network
     1. Add subnets (front-end and back-end)
     1. Create the first VM with Network watcher Agent VM Extension and assign to Frontend
-    1. Create the 2nd VM Network watcher Agent VM Extension and assign to Backend
+    1. Create the second VM Network watcher Agent VM Extension and assign to Backend
+    1. Introduce a configuration mistake that impacts on communication between the VMs.
     1. Enable Network Watcher
 
-       *The steps below are better suited for Azure Portal, as the novice user may not be able comprehend the output of PowerShell commands, plus GUI displays some features better than PowerShell*
+       *The steps below are better suited for Azure portal, as the novice user may not be able comprehend the output of PowerShell commands, plus GUI displays some features better than PowerShell*
 
     1. Check connectivity between two virtual machines in the same resource group over port 80
     1. View Network Topology
     1. Determine the Next Hop
-    1. Use Connection Troubleshoot between the 2 VMs  
+    1. Use Connection Troubleshoot between the two VMs to diagnose the configuration mistake that you introduced earlier.
+
 1. **Troubleshoot networking using Network Watcher metrics and logs**
 
    The main focus for this unit to be on Flow logs.
@@ -123,39 +142,37 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
         - Virtual machine firewall rules blocking traffic
         - Frontend and backend subnet unable to communicate
 
-1. **Knowledge Check**
+   Knowledge check:
 
-   A. To capture traffic on VM, Azure Network Watcher requires the
+      A. How can you automate remote network monitoring with packet capture?
 
-      - Network watcher Agent VM Extension
-      - Azure Traffic Manager
-      - Azure Load Balance
-      - Azure Storage Account  
+         - Use Azure Traffic Manager  
+         - Use Azure Load Balancer
+         - Use IP flow verify
+         - Trigger packet capture by setting alerts
 
-   B. To resolve latency issues on the network which Azure Network Watcher features can you use
+      B. Which feature helps to see network level topology overview, various interconnections, and associations between network resources in an Azure Resource Group?
 
-     - IP flow verify
-     - Next hop
-     - VPN Gateway Troubleshooting  
-     - Connection troubleshoot
+         - Topology
+         - Connection troubleshoots
+         - Role Based Access Control
+         - Network Security Group View
 
-   C. How can you Automate remote network monitoring with packet capture?
+1. **Exercise - Troubleshoot networking using Network Watcher metrics and logs**
 
-     - Use Azure Traffic Manager  
-     - Use Azure Load Balancer
-     - Use IP flow verify
-     - Trigger packet capture by setting alerts
+   In this exercise, students configure NSG flow logs for the VMs they created in the previous exercise. They use the flow logs to troubleshoot an incorrect configuration.
 
-   D. Which feature helps to see network level topology overview, various interconnections and associations between network resources in an Azure Resource Group?
-
-      - Topology
-      - Connection troubleshoots
-      - Role Based Access Control
-      - Network Security Group View
+   1. Introduce a configuration problem that prevents correct communication between the VMs. This problem should be something that can be diagnosed from a flow log.
+   1. Configure a Network Security Group (NSG)
+   1. Register the Microsoft.Insights provider
+   1. Enable the NSG flow log
+   1. Generate network traffic between VMs that will be caught in the flow log.
+   1. Download and view the flow log. Diagnose the problem.
+   1. Fix the problem.
 
 1. **Summary**
 
-   Azure Network Watcher empowers engineers to *monitor*, *diagnose*,and *gain insight* into their network health and performance with metrics. It offers various tools and features to achieve this , in this module we looked at four categories and the features offered. Azure Network Watcher provides all the tools needed to monitor, troubleshoot and optimize your network. For more information check out the Supporting resources.  
+   Azure Network Watcher empowers engineers to *monitor*, *diagnose*, and *gain insight* into their network health and performance with metrics. In this module, we looked at four tool categories and the features offered. Azure Network Watcher provides all the tools needed to monitor, troubleshoot, and optimize your network. For more information check out the Supporting resources.  
 
 Supporting resources
 
