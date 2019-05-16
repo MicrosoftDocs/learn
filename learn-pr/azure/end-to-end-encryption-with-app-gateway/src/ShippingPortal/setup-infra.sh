@@ -8,7 +8,7 @@ az network vnet subnet create --resource-group $rgName --vnet-name shippingporta
 az network public-ip create --resource-group $rgName --name appgwipaddr --sku Basic
 
 # Create the App gateway
-az network application-gateway create --name gw-shipping --resource-group $rgName --vnet-name shippingportalvnet --subnet appgatewaysubnet --capacity 2 --sku Standard_Small --http-settings-cookie-based-affinity Disabled --http-settings-protocol Http --frontend-port 80 --routing-rule-type Basic --http-settings-port 80 --public-ip-address appgwipaddr --no-wait
+az network application-gateway create --name gw-shipping --resource-group $rgName --vnet-name shippingportalvnet --subnet appgatewaysubnet --capacity 2 --sku Standard_Small --http-settings-cookie-based-affinity Disabled --http-settings-protocol Http --frontend-port 80 --routing-rule-type Basic --http-settings-port 80 --public-ip-address appgwipaddr
 
 # Create subnet for VM
 az network vnet subnet create --resource-group $rgName --vnet-name shippingportalvnet  --name vmsubnet --address-prefixes "10.0.1.0/24"
@@ -22,6 +22,16 @@ az vm open-port --port 80 --resource-group $rgName --name webservervm1
 # Open port 443 to allow web traffic to host.
 az vm open-port --port 443 --resource-group $rgName --name webservervm1 --priority 110
 
+# Get the FQDN of the Application Gateway
+fqdn="$(az network public-ip show \
+      --resource-group $rgName \
+      --name appgwipaddr \
+      --query "dnsSettings.fqdn")"
+
+# Create SSL certificate for termination at Application Gateway
+openssl req -x509 -subj '/O=RetailCo/C=US/CN='$fqdn -sha256 -nodes -days 365 -newkey "rsa:2048" -keyout server-config/appgateway-privatekey.key -out server-config/appgateway.crt
+openssl pkcs12 -export -out server-config/appgateway.pfx -inkey server-config/appgateway-privatekey.key -in server-config/appgateway.crt  -passout pass:somepassword
+
 # Get the private IP address of the VM
 privateip="$(az vm list-ip-addresses \
       --resource-group $rgName \
@@ -29,7 +39,7 @@ privateip="$(az vm list-ip-addresses \
       --query "[0].virtualMachine.network.privateIpAddresses[0]" \
       --output tsv)"
 
-# Create SSL certificate
+# Create SSL certificate for the VM
 openssl req -x509 -subj '/O=RetailCo/C=US/CN='$privateip -sha256 -nodes -days 365 -newkey "rsa:2048" -keyout server-config/shipping-privatekey.key -out server-config/shipping-ssl.crt
 openssl pkcs12 -export -out server-config/shipping-ssl.pfx -inkey server-config/shipping-privatekey.key -in server-config/shipping-ssl.crt  -passout pass:somepassword
 

@@ -19,7 +19,6 @@ sudo cp /home/azureuser/shippingportal/server-config/default /etc/nginx/sites-av
 sudo systemctl restart nginx
 
 # Build the shipping portal application
-dotnet new web -n shippingportal
 cd shippingportal
 dotnet build
 dotnet publish -o published -c Release

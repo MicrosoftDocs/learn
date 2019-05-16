@@ -18,7 +18,7 @@ server {
                 # First attempt to serve request as file, then
                 # as directory, then fall back to displaying a 404.
                 try_files $uri $uri/ =404;
-                proxy_pass http://localhost:5000;
+                proxy_pass         https://10.0.1.4:5001;
                 proxy_http_version 1.1;
                 proxy_set_header   Upgrade $http_upgrade;
                 proxy_set_header   Connection keep-alive;
