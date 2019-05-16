@@ -17,7 +17,7 @@ Before you begin, make sure you have the following software installed on your ma
     > [!IMPORTANT]
     > Do not run `npm install` until you have completed the steps that update the *local.settings.json*. There is a post-install script that sets up your database and adds some data to the database.
 
-2. The beginning state of the app is located in the **start** folder. *Make sure you are in that folder for the remainder of this module*. To open the *start* folder in Visual Studio Code, you can run the following command in the folder where you cloned the sample repository:
+2. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the remainder of this module. To open the *start* folder in Visual Studio Code, you can run the following command in the folder where you cloned the sample repository:
 
     ```bash
     code start
@@ -161,7 +161,7 @@ For the app to run, you need to add the connection strings and keys associated w
 
     ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)
 
-1. Return to Visual Studio Code and enter the the following command in the integrated terminal to update the stock prices. Observe that the values in the browser updates after a few seconds too. 
+1. Return to Visual Studio Code and enter the the following command in the integrated terminal to update the stock prices. Observe that the values for stock ABC update in the browser after a few seconds.
 
     ```bash
     npm run update

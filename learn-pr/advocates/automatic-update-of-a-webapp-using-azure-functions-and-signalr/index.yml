@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.advocates.azure-functions-and-signalr
 metadata:
-  title: Enable automatic push-based updates in a web application using Azure Functions and SignalR
-  description: Update polling-based web app to feature automatic push-based updates with SignalR, Cosmos DB and Azure Functions.
+  title: Enable automatic updates in a web application using Azure Functions and SignalR
+  description: Update a web app's notification mechanism from polling to push-based architecture with SignalR, Cosmos DB and Azure Functions.
   ms.date: 05/24/19
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enable automatic push-based updates in a web application using Azure Functions and SignalR
-summary: Update polling-based web app to feature automatic push-based updates with SignalR, Cosmos DB and Azure Functions.
+title: Enable automatic updates in a web application using Azure Functions and SignalR
+summary: Update a web app's notification mechanism from polling to push-based architecture with SignalR, Cosmos DB and Azure Functions.
 abstract: |
   In this module, you will:
     - Evaluate an existing project that implements polling

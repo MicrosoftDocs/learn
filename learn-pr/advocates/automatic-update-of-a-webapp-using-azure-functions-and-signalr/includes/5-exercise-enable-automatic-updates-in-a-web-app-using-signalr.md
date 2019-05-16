@@ -323,7 +323,7 @@ You can now navigate to *http://localhost:8080* to see the application working i
 
 Now you can make change to the application's data and observe how to the data is automatically updated. Since the update to the browser happens nearly immediately, consider having Visual Studio Code open one side of your screen and the running application on the other. This way you can see the UI update right after you issue the command to update the database.
 
-Return to Visual Studio Code and enter the the following command in the integrated terminal and watch as the application automatically updates.
+Return to Visual Studio Code and enter the the following command in the integrated terminal and watch as the application automatically update stock ABC.
 
 ```bash
 npm run update
