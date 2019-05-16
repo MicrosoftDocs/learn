@@ -66,7 +66,7 @@ Now suppose that the developers alter the API to use a query parameter to specif
 
 `http://<boardgames.domain>/stock/api/product?partnumber=3416`
 
-By default, cache entries are not recorded with their query parameters. Suppose a different product is requested:
+By default, cache entries are not recorded with their query parameters. <!-- REVIEW I experimented with this and this statement is not correct; it appears the default is to vary by *all* query parameters. If you start specifying vary-by-query-parameters modifiers, it only uses those. The scenario here should be a case where changes in some parameters should still use the cached value; you'd want to call out all the *other* parameters with vary-by-query-parameters elements --> Suppose a different product is requested:
 
 `http://<boardgames.domain>/stock/api/product?partnumber=5484`
 
@@ -97,7 +97,7 @@ To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element
 
 With this policy, the cache will store separate responses for each product, because they have different part numbers, even though those numbers are specified in a query parameter.
 
-Like query parameters, Azure does not examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
+Like query parameters, Azure does not examine HTTP headers to determine whether a cached response is suitable for a given request. <!-- REVIEW Please check on this relative to the above and confirm --> If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
 
 Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute, which is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.
 

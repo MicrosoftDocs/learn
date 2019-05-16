@@ -14,16 +14,14 @@ Start by creating a new Web API app in Azure Apps Service. You'll use this resou
 
 1. To create an App Service plan for the web API, in the Cloud Shell on the left, type this command and then press Enter:
 
-    ```bash
-    az appservice plan create --name BoardGamingServicePlan --resource-group *<rgn>Sandbox resource group</rgn>*
+    ```azurecli
+    az appservice plan create --name BoardGamingServicePlan --resource-group <rgn>Sandbox resource group</rgn>
     ```
 
 1. To create the web API by deploying code from a GitHub repository, type this command and then press Enter:
 
-    <!-- TODO: The deployment source URL in this command must be updated when the sample Web API has a public GitHub respository. -->
-
-    ```bash
-    az webapp create --name <unique name> --plan BoardGamingServicePlan --resource-group *<rgn>Sandbox resource group</rgn>* --deployment-source-url http://github/source
+    ```azurecli
+    az webapp create --name <unique name> --plan BoardGamingServicePlan --resource-group <rgn>Sandbox resource group</rgn> --deployment-source-url https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
     ```
 
 ## Test the deployed Web API
@@ -31,7 +29,8 @@ Start by creating a new Web API app in Azure Apps Service. You'll use this resou
 Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
-1. On the **Overview** response, select **Browse**. The browser displays the home response for the API, which is blank.
+1. On the **Overview** response, select **Browse**. The browser will indicate that the page can't be found &mdash; this is just because our app is an API and does not serve a webpage.
+<!-- REVIEW Please include a very brief introduction of the API near the top of this unit; this URL is introduced from nowhere -->
 1. In the **Address** bar, append the URL with **/api/quotes/usa/chess?height=7&width=6**. The browser displays a result in JSON format. Notice that the result includes the server time.
 1. In the **Address** bar, replace **/api/quotes/usa/chess?height=7&width=6** with **/swagger**. The browser displays the Swagger UI. Keep this browser tab open for later.
 
@@ -47,7 +46,7 @@ Now that we have a functional API, let's set up API Management:
     | Name | Choose a unique name. Make a note of it, you'll need it later on. |
     | Subscription | *Concierge Subscription* |
     | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
-    | Location | Choose from West Europe or Southeast Asia | <!-- These are the only two locations supported by the Sandbox and the Consumption tier -->
+    | Location | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
     | Organization | BoardGames |
     | Administrator email | Enter your own email address or use the default |
     | Pricing tier | Consumption |
@@ -111,6 +110,8 @@ Before you can apply a policy, you must add the API to the API Management instan
     ![Adding an API](../media/5-complete-api-add.png)
 
 ## Configure the new API in API Management
+
+<!-- REVIEW This shouldn't be necessary, the OpenAPI document should include this information and it should auto-populate. Please see what was done in https://docs.microsoft.com/en-us/learn/modules/publish-manage-apis-with-azure-api-management/ to avoid this step.-->
 
 Next, let's configure the API in API Management with its original URL. This setting ensures that API Management trusts requests from that domain:
 
@@ -180,11 +181,12 @@ We'll run the same test on the API in API Management and observe the results of 
 
 ## Configure the cache to vary by query parameter
 
+<!-- REVIEW See comment in previous unit about the need for this element. I'd still like to illustrate its use; the scenario/API may need to be altered a bit. -->
 To ensure that the system caches different responses for different board sizes, you must configure the cache to vary by query parameters:
 
 1. Click the **Design** tab and then click the **GET** operation.
 1. In the **Inbound processing** section, click **</>**.
-1. Within the `<cache-lookup>` policy, add the following XML:
+1. Within the `<cache-lookup>` policy, add the following XML: <!-- REVIEW Please be more clear here; it's not obvious that the user needs to rework the existing element into separate open/close tags and put this inside -->
 
     ```xml
     <vary-by-query-parameter>height</vary-by-query-parameter>

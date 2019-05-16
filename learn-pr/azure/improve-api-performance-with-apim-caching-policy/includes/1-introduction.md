@@ -1,3 +1,5 @@
+<!-- REVIEW Please update durationInMinutes times to realistic values in the unit yml files, including the wait in the exercise for the Redis cache creation -->
+
 Many organizations use APIs to publish data and services. Customers and partners can call these APIs from any kind of client: desktop applications, mobile apps, web apps, and other systems. If your API is popular, you may need to optimize its performance to guarantee a good service to users.
 
 Suppose you are a developer for a board game company. A product line produced by your company has recently become popular. The volume of requests from your retail partners to your inventory API is growing quickly: much faster than the rate that your inventory actually changes. You'd like your API to respond to requests rapidly without incurring load on your API.
