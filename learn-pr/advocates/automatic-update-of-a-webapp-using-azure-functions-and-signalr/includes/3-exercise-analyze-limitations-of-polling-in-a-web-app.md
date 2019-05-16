@@ -23,7 +23,7 @@ Before you begin, make sure you have the following software installed on your ma
     code start
     ```
 
-While the beginning state of the project is in the *start* folder, the finished state is available in the *end* folder for your reference.
+    You'll the beginning state of the project in the **start** folder. For your reference, the finished solution is available in the folder called **end**.
 
 ## Create a Storage account
 
