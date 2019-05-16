@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise - title
+title: Exercise - Routing traffic through the NVA
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
