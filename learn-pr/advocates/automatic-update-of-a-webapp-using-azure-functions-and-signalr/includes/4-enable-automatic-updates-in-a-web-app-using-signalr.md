@@ -1,12 +1,12 @@
 ![Polling-based web application](../media/serverless-app-signalr-concept.png)
 
-In this unit, we'll look at a way to move away from a polling-based solution to one that pushes data updates to clients as they occur. Using this approach, we reduce traffic between our server and the clients and make our UI more efficient, by only updating when something has changed. The three technologies that we'll use to deliver this updated solution are **Cosmos DB**, **Azure Functions**, and **SignalR**.
+In this unit, we'll look at a way to move away from a polling-based solution to one that pushes data updates to clients as they occur. Using this approach, we reduce traffic between our server and the clients and make our UI more efficient, by only updating when something has changed. The three technologies that we'll use to deliver this updated solution are **Azure Cosmos DB**, **Azure Functions**, and **SignalR**.
 
-As data changes in the database, **Cosmos DB** exposes a "change feed". Change feed support in Azure Cosmos DB works by listening to an Azure Cosmos DB container for any changes. It then outputs the sorted list of documents that were changed in the order in which they were modified. By listening to the change feed your application can automatically respond to data changes.
+As data changes in the database, **Azure Cosmos DB** exposes a "change feed". Change feed support in Azure Cosmos DB works by listening to an Azure Cosmos DB container for any changes. It then outputs the sorted list of documents that were changed in the order in which they were modified. By listening to the change feed your application can automatically respond to data changes.
 
-To summarize, the key difference between this function and the original `getStocks` function is that we are now triggering our function based on changes to our data. In the preceding exercise, we triggered our function based on requests from the client and pulled back all data through a Cosmos DB input binding. Using the Cosmos DB trigger automatically makes our data retrieval more efficient
+To summarize, the key difference between this function and the original `getStocks` function is that we are now triggering our function based on changes to our data. In the preceding exercise, we triggered our function based on requests from the client and pulled back all data through an Azure Cosmos DB input binding. Using the Azure Cosmos DB trigger automatically makes our data retrieval more efficient
 
-**Azure Functions** features binding that runs code anytime there is an update to the Cosmos DB change feed. Once a  function is listening to the change feed, then you can work with a subset of your data that just represents data changes. When paired with a persistent connection to the client, the function can contact individual clients on-demand, which is the foundation for a real-time application architecture.
+**Azure Functions** features binding that runs code anytime there is an update to the Azure Cosmos DB change feed. Once a  function is listening to the change feed, then you can work with a subset of your data that just represents data changes. When paired with a persistent connection to the client, the function can contact individual clients on-demand, which is the foundation for a real-time application architecture.
 
 <!--
     REVIEW:
@@ -30,4 +30,4 @@ The abstraction layer offered by SignalR provides two benefits to your applicati
 
 The second benefit of SignalR'a abstraction is that it allows your application to gracefully degrade depending on supported technologies of the client. If it doesn't support WebSockets, then Server Sent Events are used. If the client can't handle Server Sent Events, then it uses Ajax long polling, etc.
 
-Let's look at how to use SignalR in our app, so our Azure Function can broadcast information from the Cosmos DB change feed to connected clients.
+Let's look at how to use SignalR in our app, so our Azure Function can broadcast information from the Azure Cosmos DB change feed to connected clients.

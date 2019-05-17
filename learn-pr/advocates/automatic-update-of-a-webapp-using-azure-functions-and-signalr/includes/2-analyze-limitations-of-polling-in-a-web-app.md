@@ -8,9 +8,9 @@ In the next exercise we'll get the code for this solution running on your local 
 
 ### Server
 
-The stock price information is stored on the server in a Cosmos DB database. When triggered, an Azure Function configured with Cosmos DB bindings returns the database content.
+The stock price information is stored on the server in a Azure Cosmos DB database. When triggered, an Azure Function configured with Azure Cosmos DB bindings returns the database content.
 
-The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Cosmos DB database is achieved through bindings, which are configured in the *function.json* file, as shown in the following snippet.
+The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Azure Cosmos DB database is achieved through bindings, which are configured in the *function.json* file, as shown in the following snippet.
 
 ```json
 {
@@ -55,13 +55,13 @@ The second binding (`http`) defines what is returned from the function.
 | allows the function to return an HTTP response               | `type`, `direction` |
 | exposes the response context through a parameter named `res` | `name`              |
 
-The third binding (`cosmosDB`) establishes a connection to Cosmos DB. 
+The third binding (`cosmosDB`) establishes a connection to Azure Cosmos DB.
 
 | The configuration...                                         | via the property:         |
 | ------------------------------------------------------------ | ------------------------- |
-| makes Cosmos DB data available as the function is called     | `type`, `direction`       |
+| makes an Azure Cosmos DB data available as the function is called     | `type`, `direction`       |
 | exposes the data to the function through a parameter named `stocks` | `name`                    |
-| connects to the Cosmos DB data with a connection string      | `ConnectionStringSetting` |
+| connects to the Azure Cosmos DB data with a connection string      | `ConnectionStringSetting` |
 | points to the `stocksdb` database                          | `databaseName`            |
 | points to the `stocks` data collection                       | `collectionName`          |
 

@@ -39,14 +39,14 @@ The web client uses the SignalR client SDK to establish a connection to the serv
         context.res.body = connectionInfo;
     };
     ```
-    
+
     As the function is called, the SignalR connection is returned as the response to the function.
 
 Now that the function to return the SignalR connection info is implemented, you can create a function responsible for pushing changes to the client.
 
 ## Detect and broadcast database changes
 
-First, you need to create a new Azure Function that listens for changes in the database. This is possible by using the built-in Cosmos DB bindings.
+First, you need to create a new Azure Function that listens for changes in the database. This is possible by using the built-in Azure Cosmos DB bindings.
 
 1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
 1. Search for and select the **Azure Functions: Create Function** command.
@@ -56,7 +56,7 @@ First, you need to create a new Azure Function that listens for changes in the d
     | -------------------------------------- | ------------------------------ |
     | Template                               | Azure Cosmos DB Trigger        |
     | Name                                   | stocksChanged                  |
-    | App setting for your Cosmos DB account | AzureCosmosDBConnectionString  |
+    | App setting for your Azure Cosmos DB account | AzureCosmosDBConnectionString  |
     | Database name                          | stocksdb                       |
     | Collection name                        | stocks                         |
     | Collection name for leases             | leases                         |
@@ -64,7 +64,7 @@ First, you need to create a new Azure Function that listens for changes in the d
 
     Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code. 
 
-1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells Cosmos DB how long to wait before checking for changes in the database. While the application you're building is built around a push-based architecture, behind the scenes Cosmos DB is continually looking at the database in order to detect changes. The `feedPollDelay` refers to how the internals of Cosmos DB recognizes changes, not how your web application recognizes changes to the data.
+1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. While the application you're building is built around a push-based architecture, behind the scenes Azure Cosmos DB is continually looking at the database in order to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognizes changes, not how your web application recognizes changes to the data.
 
 <!-- 
     REVIEW:
@@ -74,7 +74,7 @@ First, you need to create a new Azure Function that listens for changes in the d
     Reworded paragraph to explain why there is a setting referencing "polling" in a push-based web app.
 -->
 
-The Cosmos DB binding for your function should now look like the following code.
+The Azure Cosmos DB binding for your function should now look like the following code.
 
 ```json
 {
@@ -90,7 +90,7 @@ The Cosmos DB binding for your function should now look like the following code.
 }
 ```
 
-Next, a comma after the Cosmos DB binding and then add the following SignalR binding. 
+Next, a comma after the Azure Cosmos DB binding and then add the following SignalR binding. 
 
 ```json
 {
