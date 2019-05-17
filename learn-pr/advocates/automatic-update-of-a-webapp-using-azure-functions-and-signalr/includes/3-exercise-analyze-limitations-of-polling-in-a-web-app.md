@@ -50,15 +50,15 @@ We'll need a storage account for our Azure Functions logic and for our web app w
 
     It can take a few minutes to create a storage account. Wait for this step to finish before proceeding.
 
-## Create a Cosmos DB account
+## Create an Azure Cosmos DB account
 
-We want to store stock prices in a Cosmos DB database, so let's set that up in our sandbox account here. 
+We want to store stock prices in an Azure Cosmos DB database, so let's set that up in our sandbox account here.
 
 1. Execute the following command in the Cloud Shell to define a name for our CosmosDB account.
 
     ```bash
     export COSMOSDB_ACCOUNT_NAME=msl-sigr-cosmos-$(openssl rand -hex 5)
-    echo "Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
+    echo "Azure Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
     ```
 
     Remember this  account name for the remainder of the module. 
@@ -71,10 +71,11 @@ We want to store stock prices in a Cosmos DB database, so let's set that up in o
       --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-    It can take a few minutes to create a Cosmos DB account. Wait for this step to finish before proceeding.
+    It can take a few minutes to create an Azure Cosmos DB account. Wait for this step to finish before proceeding.
 
 ## Create a SignalR account
-We need to add a SignalR account to our sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI). 
+
+We need to add a SignalR account to our sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI).
 
 1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
 
