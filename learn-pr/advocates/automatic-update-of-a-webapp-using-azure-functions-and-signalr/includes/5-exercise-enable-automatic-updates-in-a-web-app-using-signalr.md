@@ -64,7 +64,7 @@ First, you need to create a new Azure Function that listens for changes in the d
 
     Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code. 
 
-1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. While the application you're building is built around a push-based architecture, behind the scenes Azure Cosmos DB is continually looking at the database in order to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognizes changes, not how your web application recognizes changes to the data.
+1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. While the application you're building is built around a push-based architecture, behind the scenes Azure Cosmos DB is continually looking at the database in order to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognizes changes, not how your web application exposes changes to the data.
 
 <!-- 
     REVIEW:
@@ -90,7 +90,7 @@ The Azure Cosmos DB binding for your function should now look like the following
 }
 ```
 
-Next, a comma after the Azure Cosmos DB binding and then add the following SignalR binding. 
+Next, add a comma after the Azure Cosmos DB binding and then add the following SignalR binding. 
 
 ```json
 {
