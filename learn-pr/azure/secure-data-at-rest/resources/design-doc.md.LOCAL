@@ -80,17 +80,17 @@ List the steps which apply the learning content from previous unit (separate out
     6. Access sensitive data on the sql database
     7. Audit sensitive data access using SQL DB audit.
 
-1. **Knowledge check**
+4. **Knowledge check**
 
     What types of questions will test *Identify the types of data your organization is using and the security requirements surrounding that data*?
 
     - Which is the correct data classification process?
-    - Why are compliance considerations important?
+    - Why are compliance considerations important? 
     - What is the correct T-SQL statement for data classification in Azure SQL?
 
-1. **Data at rest Encryption on Azure**
+5. **Data at rest Encryption on Azure**
 
-    List the content that will enable the learner to *Identify the encryption capabilities for services on Azure*:
+    List the content that will enable the learner to *Data at rest Encryption on Azure*:
 
     - What is encryption at rest on Azure
         - Introduction to encryption at rest
@@ -109,16 +109,16 @@ List the steps which apply the learning content from previous unit (separate out
         - Azure SQL DW
         - Azure Data Lake
 
-1. **Knowledge check**
+6. **Knowledge check**
 
-    What types of questions will test *Data at rest Encryption on Azure*?
+    What types of questions will test *Identify the encryption capabilities for services on Azure*?
 
     - What is the prime consideration for encrypting data at rest on Azure?
     - Which are the correct features of Azure encryption at rest?
     - Which method is used to invoke keys from Azure Key Vault?
     - Which Azure services have encryption at rest enabled by default?
 
-1. **Summary**
+7. **Summary**
 
    *{How did you solve the problem in the initial scenario with the knowledge learned in the module?}*
 
@@ -127,17 +127,18 @@ List the steps which apply the learning content from previous unit (separate out
     - Walk through the capabilities of at rest encryption on Azure.
     - Whistle stop tour of encryption at rest for key data services
 
+
 ## Notes
 
-Encryption at rest doc - <https://docs.microsoft.com/en-us/azure/security/azure-security-encryption-atrest>
+Encryption at rest doc - https://docs.microsoft.com/en-us/azure/security/azure-security-encryption-atrest
 
-Storage security guide - <https://docs.microsoft.com/en-us/azure/storage/common/storage-security-guide?toc=/azure/security/toc.json&bc=/azure/security/breadcrumb/toc.json#encryption-at-rest>
+Storage security guide - https://docs.microsoft.com/en-us/azure/storage/common/storage-security-guide?toc=/azure/security/toc.json&bc=/azure/security/breadcrumb/toc.json#encryption-at-rest
 
 This module may be limited on interactivity, as it's more of a tour of the encryption capabilities on Azure, and properly classifying data. If a good hands on exercise is identified though, we can look at incorporating it.
 
 Resources:
 
-<https://docs.microsoft.com/en-us/azure/sql-database/sql-database-data-discovery-and-classification>
-<https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/securing-data-solutions>
-<https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview>
-<https://docs.microsoft.com/en-us/azure/security/azure-security-services-technologies>
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-data-discovery-and-classification
+https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/securing-data-solutions
+https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview
+https://docs.microsoft.com/en-us/azure/security/azure-security-services-technologies

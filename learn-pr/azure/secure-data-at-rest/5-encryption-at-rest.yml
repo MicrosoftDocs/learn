@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-data-at-rest.5-encryption-at-rest
+title: Data at rest Encryption on Azure
+metadata:
+  title: Data at rest Encryption on Azure
+  description: Understand encryption-at-rest capabilities for key data services on Azure.
+  ms.date: 29/03/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-encryption-at-rest.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What is the prime consideration for encrypting data at rest on Azure?'
+    choices:
+    - content: Data is now stored in the cloud 
+      isCorrect: false
+      explanation: Data encryption applies whether data is stored on-premises or in the cloud.
+    - content: To prevent a data breach
+      isCorrect: false
+      explanation: Encrypting data at rest will not prevent a data breach or attack on its own.
+    - content: To protect sensitive data once stored in a service
+      isCorrect: true
+      explanation: The purpose for encrypting stored data is to provide a further protective layer in the the event of data loss to an attacker.
+    - content: To restrict access to Azure services
+      isCorrect: false
+      explanation: Encrypting data at rest does not restrict access to Azure services.
+
+  - content: 'Why does Azure not decrypt data when using the client-side encryption model?'
+    choices:
+    - content: Encryption happens outside of Azure.
+      isCorrect: true
+      explanation: Encryption keys are typically stored outside of Azure but most importantly the encryption happens before being received by Azure.
+    - content: Encryption keys are customer-controlled 
+      isCorrect: false
+      explanation: Azure supports encrypted keys controlled by a customer.
+    - content: Azure does not support client-side encryption 
+      isCorrect: false
+      explanation: Azure does provide support for the client-side encryption model.
+    - content: Azure does not decrypt stored data
+      isCorrect: false
+      explanation: Azure resource providers perform decryption of data, although it will be transparent to a user.
+
+  - content: 'How are keys invoked in Azure Key Vault?'
+    choices:
+    - content: Keys are retrieved automatically with no user intervention 
+      isCorrect: false
+      explanation: Keys are not retrieved automatically an application or service has to request them.
+    - content: Keys can be retrieved by entering the master secret for the vault
+      isCorrect: false
+      explanation: There is no master secret for an Azure Key Vault.
+    - content: Keys are retrieved by invoking the Key Vault URI
+      isCorrect: true
+      explanation: Azure Key Vault is automatically linked with the Azure AD tenant of the subscription upon creation. Access is then granted either through User plus application access or Application-only access. Either method requires a token for a resource to grant access, this token in combination with the vault URI can be used to make a REST API request to the Key Vault.
+    - content: Keys are retrieved by visiting the Key Vault service through the portal
+      isCorrect: false
+      explanation: Invoking of keys is a programmatic term not a manual user process.
+
+  - content: 'What Azure services have encryption at rest enabled by default?'
+    choices:
+    - content: Azure Storage, Azure SQL Database, Azure SQL Data Warehouse and Azure Cosmos DB
+      isCorrect: false
+      explanation: Azure SQL Data Warehouse does not have at rest encryption enabled by default.
+    - content: Azure Storage, Azure SQL Database and Azure Cosmos DB
+      isCorrect: true
+      explanation: At present, not all services have encryption enabled by default. This is vitally important to remember if you you plan to store sensitive data or your organizations security policies state all data stored must be encrypted.
+    - content: Azure Storage, Azure Virtual Machines Data Disks, Azure SQL Database and Azure SQL Data Warehouse
+      isCorrect: false
+      explanation: Azure virtual machine data disks do not encrypt data at rest by default.
+    - content: Azure SQL Database, Azure SQL Data Warehouse and Azure Cosmos DB
+      isCorrect: false
+      explanation: Azure SQL Data Warehouse does not provide at rest encryption by default.
