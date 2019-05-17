@@ -23,11 +23,11 @@ Before you begin, make sure you have the following software installed on your ma
     code start
     ```
 
-    You'll the beginning state of the project in the **start** folder. For your reference, the finished solution is available in the folder called **end**.
+    You'll find the beginning state of the project in the **start** folder. For your reference, the finished solution is available in the folder called **end**.
 
 ## Create a Storage account
 
-We'll need a storage account for our Azure Functions logic and for our web app when we deploy it to the cloud later in the module. 
+We'll need a storage account for our Azure Functions logic and for our web app when we deploy it to the cloud later in the module.
 
 1.  Execute the following command in the Cloud Shell to define a name for our Azure Storage account.
 
