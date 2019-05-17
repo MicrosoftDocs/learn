@@ -32,7 +32,7 @@ The web client uses the SignalR client SDK to establish a connection to the serv
 
     This configuration allows the function to return the connection information to the server which is used to identify connected clients.
 
-1. Next, open *negotiate/index.js* and update the function to use the following code.
+1. Next, open *negotiate/index.js* and replace the existing function code with the following code.
 
     ```javascript
     module.exports = async function (context, req, connectionInfo) {
