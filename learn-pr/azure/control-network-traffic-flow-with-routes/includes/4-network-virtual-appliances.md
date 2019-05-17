@@ -52,44 +52,4 @@ An NVA can be implemented in a DMZ in many forms. For example, you can deploy an
 
 You can deploy more than one NVA in an availability set to provide high availability. If one NVA fails, another is still online to service the inbound and outbound traffic rules.
 
-The architectures described in the following sections summarize the resources and configurations required to deploy highly available NVAs in a variety of situations.
-
-### Ingress with layer 7 NVAs
-
-| Benefits | Considerations |
-| ------| --------    | --------------- |
-| All NVAs are Active | Both NVAs are active in this design, so traffic flow from the load balancer is sent to both NVAs. Can be used only when traffic originates from outside Azure. This solution requires one set of NVAs for traffic coming from Azure, and another set for traffic received from external sources such as the Internet. This architecture is targeted specifically for Layer 7 traffic such as HTTP and HTTPS requests. The NVAs in this design need to terminate traffic, which is intended for the Web tier.
-
-![NVAs and Web tier](../media/4-nva-web-tier.png)
-
-Egress with layer 7 NVAs
-
-| Benefits | Considerations |
-| ------| --------    | --------------- |
-| All NVAs are Active |NVAs that are deployed in this architecture need to be able to terminate connections and implement SNAT (source network address translation). Traffic from Azure is routed to an internal load balancer, and the load balancer forwards the requests to the NVAs which then forward the traffic out to the internet.  This solution is designed for HTTP and HTTPS traffic.
-
-![Load balancers and NVAs](../media/4-load-balancer-nva.png)
-
-### Ingress-egress with layer 7 NVAs
-
-| Benefits | Considerations |
-| ------| --------    | --------------- |
-| All NVAs are Active |This approach requires one set of NVAs to service traffic from the Internet, and another set to handle Azure traffic. In this model, you can combine both ingress and egress for layer 7 traffic for HTTP and HTTPS.  This architecture is designed to allow the NVAs to process incoming traffic from the Application Layer, as well as outgoing traffic from the backend Web tier VMs.
-
-![Application gateways and NVAs](../media/4-application-gateway-nva.png)
-
-### Public IP-UDR switch with layer 4 NVAs
-
-| Benefits | Considerations |
-| ------| --------    | --------------- |
-| Active / Passive Setup | In this architecture, you have one active NVA and a standby NVA.  If the active NVA fails, the standby NVA is made active, and the UDR and public IP endpoint are changed to point to the now active NVA.  This process is either done manually, or automated by a monitoring service or daemon. The NVAs in this model can handle all traffic for both ingress and egress.
-
-![PIP-UDR switch with NVAs](../media/4-pip-udr-nvas.png)
-
-### Public IP-UDR NVAs without SNAT
-
-| Benefits | Considerations |
-| ------| --------    | --------------- |
-| Active / Passive Setup |Use this architecture when the NVAs don't support SNAT (SNAT hides the original source client IP address). Fail over in this solution between and active and passive NVA is automated. This solution involves deploying a single set of NVAs.
-
-![PIP-UDR without SNAT NVAs](../media/4-pip-without-snat.png)
+You can find more information about using NVAs in highly available scenarios at [Deploy highly available network virtual appliances](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha)

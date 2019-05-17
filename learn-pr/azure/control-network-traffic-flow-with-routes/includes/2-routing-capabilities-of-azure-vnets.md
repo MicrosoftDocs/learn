@@ -2,9 +2,9 @@ As part of the project to control the flow of traffic within your virtual networ
 
 ## Azure Routing
 
-By default, network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. This routing is controlled by **system routes, which are assigned by default to each subnet in a virtual network. This means that, by default, any Azure virtual machine that is deployed to a virtual network can communicate with all other Azure virtual machines in the same or different subnets in that virtual network. These virtual machines are also potentially accessible from on-premises through a hybrid network or the Internet.
+By default, network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. This routing is controlled by system routes, which are assigned by default to each subnet in a virtual network. This means that, by default, any Azure virtual machine that is deployed to a virtual network can communicate with all other Azure virtual machines in the same or different subnets in that virtual network. These virtual machines are also potentially accessible from on-premises through a hybrid network or the Internet.
 
-You can't create or delete system routes, but you can over-ride the system routes by adding custom routes to control the flow of traffic to the next hop.
+You can't create or delete system routes, but you can override the system routes by adding custom routes to control the flow of traffic to the next hop.
 
 Every subnet has these default system routes:
 
@@ -72,22 +72,23 @@ When creating user-defined routes, you can specify these next hop types:
 
 With user-defined routes, you aren't able to specify virtual network peering, *VirtualNetworkServiceEndpoint*, as the next hop type.
 
-## Border gateway protocol
+### Border gateway protocol
 
 A network gateway in your on-premises network can exchange routes with a virtual network gateway in Azure by using border gateway protocol (BGP).
 
-BGP is a routing protocol used to exchange routing information between two or more networks. With BGP, there's no need for routers or to manually configure routes because BGP can identify the routes, which are connected via Site-to-Site VPN connections.
+BGP is a routing protocol used to exchange routing information between two or more networks. With BGP, there's no need to configure routes manually.
 
 The diagram below shows a topology with paths that can transit between Azure VPN Gateway and on-premises networks
 
 ![Diagram showing an example of using the Border Gateway Protocol](../media/2-bgp.png)
 
-Use BGP to advertise on-premises routes to Azure, whether you connect using Express Route or by using a VPN. These routes are added to the routing table in Azure with **Virtual network gateway** as the next hop type.
+Use BGP to advertise on-premises routes to Azure, whether you connect using Express Route or by using a VPN. These routes are added to the routing table in Azure with **Virtual network gateway** as the next hop type. THis type of routing supplants custom routes.
 
 BGP (Border Gateway Protocol) is the standard routing protocol that is normally used to exchange routing and information between two or more networks.  BGP is used to transfer data and information between different host gateways such as the Internet or autonomous systems. BGP discovers prefixes (prefixes are subnets, for example, 10.0.0.0/16) from various networks by enabling connections from multiple gateways, which allows BGP gateways to learn of routes from other BGP peers.  These routes are then used to transfer data between gateways or routers.
 
 BGP offers network stability because routers can quickly change connections to send packets if a connection path goes down. BGP makes routing decisions based on paths, rules, or network policies. Each BGP router/gateway manages a local routing table to direct packets in transit, but this is used in conjunction with a routing table called routing information base (RIB). The Routing information base (RIB) contains route information from externally connected BGP peers and internal peers.
 BGP works with Azure Virtual Networks and communicates with Azure VPN Gateways and your on-premise VPNs.  This allows both Azure VPNs and on-premise VPNs to exchange routes between each other so that they inform the gateways on the availability and reachability of these routes. However, before enabling the BGP feature, you should make sure the VPN devices support BGP.
 
-> [!IMPORTANT]
-> BGP is not supported on the Basic SKU Azure VPN Gateways.
+## Route priority
+
+All routes have an assigned priority. This is a numeric value, specified when you add the route to the routing table. The lower this value, the higher the priority. In the event of two conflicting routes occurring in routing table, the route with the highest priority (lowest numeric value) will be used.

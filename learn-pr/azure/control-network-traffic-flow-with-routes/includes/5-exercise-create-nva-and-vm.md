@@ -1,6 +1,6 @@
 In the next stage of your security implementation, you'll deploy a network virtual appliance to secure and monitor traffic between your front-end public servers and internal private servers. You'll configure the appliance to forward IP traffic. If IP forwarding isn't enabled, then traffic that has been routed through your appliance will never be received by its intended destination servers.
 
-In this exercise, you'll deploy the **fashionnva** network appliance to the **fashiondmznet** subnet. You'll then enable IP forwarding so that traffic from **fashionpublicnet**, and traffic that uses the custom route, is sent to the **fashionprivatenet** subnet.
+In this exercise, you'll deploy the **nva** network appliance to the **dmzsubnet** subnet. You'll then enable IP forwarding so that traffic from **publicsubnet**, and traffic that uses the custom route, is sent to the **privatesubnet** subnet.
 
 ![Network virtual appliance with IP forwarding enabled](../media/5-nva-ip-forwarding.png)
 
@@ -15,9 +15,9 @@ To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
     ```azurecli
     az vm create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name fashionnva \
-        --vnet-name fashionvnet \
-        --subnet fashiondmznet \
+        --name nva \
+        --vnet-name vnet \
+        --subnet dmzsubnet \
         --image UbuntuLTS \
         --admin-username azureuser \
         --admin-password <password>
@@ -28,7 +28,7 @@ To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name fashionnva \
+        --name nva \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"
 
@@ -37,14 +37,14 @@ To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
 
 ## Enable IP forwarding for the Azure network interface
 
-The next step is to enable IP forwarding for **fashionnva.** When traffic is sent to the NVA, if the traffic, which is received by the NVA is for another target, the NVA will route that traffic to its correct destination.
+The next step is to enable IP forwarding for **nva.** When traffic is sent to the NVA, if the traffic, which is received by the NVA is for another target, the NVA will route that traffic to its correct destination.
 
 1. Run the following command to obtain the ID of the NVA network interface.
 
     ```azurecli
     NICID=$(az vm nic list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --vm-name fashionnva \
+        --vm-name nva \
         --query "[].{id:id}" --output tsv)
 
     echo $NICID
@@ -55,7 +55,7 @@ The next step is to enable IP forwarding for **fashionnva.** When traffic is sen
     ```azurecli
     NICNAME=$(az vm nic show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --vm-name fashionnva \
+        --vm-name nva \
         --nic $NICID \
         --query "{name:name}" --output tsv)
 
@@ -77,7 +77,7 @@ The next step is to enable IP forwarding for **fashionnva.** When traffic is sen
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name fashionnva \
+        --name nva \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"
 
