@@ -2,7 +2,7 @@
 
 In this unit, we'll look at a way to move away from a polling-based solution to one that pushes data updates to clients as they occur. Using this approach, we reduce traffic between our server and the clients and make our UI more efficient, by only updating when something has changed. The three technologies that we'll use to deliver this updated solution are **Azure Cosmos DB**, **Azure Functions**, and **SignalR**.
 
-As data changes in the database, **Azure Cosmos DB** exposes a "change feed". Change feed support in Azure Cosmos DB works by listening to an database container for changes. It then outputs the sorted list of documents that were changed in the order in which they were modified. By listening to the change feed, your application can automatically respond to data changes.
+As data changes in the database, **Azure Cosmos DB** exposes a "change feed". Change feed support in Azure Cosmos DB works by listening to a database container for changes. It then outputs the sorted list of documents that were changed in the order in which they were modified. By listening to the change feed, your application can automatically respond to data changes.
 
 To summarize, the key difference between this function and the original `getStocks` function is that we are now triggering our function based on changes to our data. In the preceding exercise, we triggered our function based on requests from the client and pulled back all data through an Azure Cosmos DB input binding. Using the Azure Cosmos DB trigger automatically makes our data retrieval more efficient
 
