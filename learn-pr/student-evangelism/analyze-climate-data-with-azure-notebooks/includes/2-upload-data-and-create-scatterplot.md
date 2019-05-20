@@ -1,4 +1,4 @@
-Jupyter notebooks are composed of *cells*. Each cell is assigned one of four types:
+Jupyter notebooks are composed of *cells*. Each cell is assigned one of three types:
 
 - **Markdown** for entering text in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) format
 - **Code** for entering code that runs interactively
