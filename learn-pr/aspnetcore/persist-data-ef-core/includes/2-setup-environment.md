@@ -10,6 +10,8 @@ wget -O setup.sh https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-
     . setup.sh
 ```
 
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
 The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
 * Clones the ASP.NET Core starter code from a GitHub repository.
