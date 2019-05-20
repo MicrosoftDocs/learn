@@ -10,10 +10,8 @@ In this unit, you'll set up the web application and Application Gateway. Next yo
 
 1. In the Cloud Shell window on the right, run the following command to download the source code for the shipping portal:
 
-    <!-- IMPORTANT - FOR REVIEWER. CHANGE THE LOCATION OF THE REPO BELOW AS APPROPRIATE ONCE THE MODULE HAS BEEN FINALIZED. -->
-
     ```bash
-    git clone http://github.com/<location of repository>/shippingportal shippingportal
+    git clone https://github.com/MicrosoftDocs/mslearn-end-to-end-encryption-with-app-gateway/shippingportal shippingportal
     ```
 
 2. Move to the *shippingportal* folder:
@@ -34,7 +32,7 @@ In this unit, you'll set up the web application and Application Gateway. Next yo
 
 ## Verify that the web server is configured correctly
 
-1. Run the following commands to display the public IP address of the web server created by the setup script:
+1. Run the following commands to display the URL of the web server created by the setup script:
 
     ```bash
     ipaddress="$(az vm show \
@@ -43,10 +41,10 @@ In this unit, you'll set up the web application and Application Gateway. Next yo
       --show-details \
       --query [publicIps] --output tsv)"
 
-    echo $ipaddress
+    echo https://$ipaddress
     ```
 
-1. In your web browser, navigate to the URL https://*\<ip address\>* where *\<ip address\>* is the public IP address of the web server.
+2. In your web browser, navigate to this URL.
   
   You will most likely receive a warning message from your browser similiar to that shown in the following image. This warning occurs because the web server is configured using a self-signed certificate that can't be authenticated:
 

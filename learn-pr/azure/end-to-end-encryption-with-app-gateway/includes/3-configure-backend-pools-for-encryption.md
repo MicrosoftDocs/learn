@@ -1,6 +1,6 @@
 The backend pool contains the servers that implement the application. Application Gateway routes requests to these servers, and can load balance the traffic across these servers.
 
-In the shipping portal, the application servers in the backend pool must use SSL to encrypt the data that passes between Application Gateway and the servers in the backend pool. In this unit, you'll see how to create the backend pool and install the necessary certificates in Application Gateway to protect the messages that are transmitted to and from the backend pool.
+In the shipping portal, the application servers in the backend pool must use SSL to encrypt the data that passes between Application Gateway and the servers in the backend pool. The Application Gateway uses an SSL certificate with a public key to encrypt the data. The servers use the corresponding private key to decrypt the data as it is received. In this unit, you'll see how to create the backend pool and install the necessary certificates in Application Gateway to protect the messages that are transmitted to and from the backend pool.
 
 ## Backend pool
 

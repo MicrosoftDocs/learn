@@ -10,7 +10,7 @@ Application Gateway allows you to encrypt application traffic. You can protect d
 
 The benefits of terminating your SSL connection at the Application Gateway mean you offload the CPU intensive workload of SSL termination from your servers. It also means that you don't need to configure SSL on your servers and install the certificates.
 
-If you require end-to-end encryption, Application Gateway can decrypt the traffic on the gateway using your private key (the same private certificate that you install on your server), and then re-encrypt again with your public key (the same public certificate that users have in their browsers).
+If you require end-to-end encryption, Application Gateway can decrypt the traffic on the gateway using your private key (the same private certificate that you install on your server), and then re-encrypt again with the public key of the service running in the backend pool.
 
 Exposing your website or web application through the Application Gateway also means that you don't directly connect your servers to the web. You're only opening port 80 and port 443, and directing traffic that appears on these ports to your web servers. Your web servers aren't publicly accessible through other ports, reducing vulnerabilities that might exist outside of the Internet traffic on ports 80 and 443.
 

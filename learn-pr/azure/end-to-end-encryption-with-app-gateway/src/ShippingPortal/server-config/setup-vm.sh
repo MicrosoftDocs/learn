@@ -1,4 +1,5 @@
 # Install .net core
+echo "Installing packages"
 wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get install apt-transport-https
@@ -7,6 +8,7 @@ sudo apt-get install dotnet-sdk-2.2 -y
 export DOTNET_CLI_HOME=/home/azureuser
 
 # Install nginx
+echo "Installing and configuring nginx"
 sudo apt-get install nginx -y
 
 # Copy SSL certificates to nginx
@@ -19,6 +21,7 @@ sudo cp /home/azureuser/shippingportal/server-config/default /etc/nginx/sites-av
 sudo systemctl restart nginx
 
 # Build the shipping portal application
+echo "Building and configuring shipping portal"
 cd shippingportal
 dotnet build
 dotnet publish -o published -c Release
