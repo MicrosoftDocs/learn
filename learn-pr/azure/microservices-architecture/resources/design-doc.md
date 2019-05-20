@@ -18,7 +18,7 @@ Decompose a monolithic application into a microservices architecture
 ## Prerequisites
 
 - Basic understanding of application and system architecture
-- Basic knowledge of Docker containers
+- Basic knowledge of C#
 
 ## Summary
 
@@ -114,7 +114,7 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
 
     Discussion of performance issues the application exhibits. Discussion of how this particular application is performing poorly as a monolith.
 
-1. **Exercise - Load testing of some sort**
+1. **Exercise - Identify performance issues in a monolithic app**
 
     Load test and look at poor performance in App Insights.
 
