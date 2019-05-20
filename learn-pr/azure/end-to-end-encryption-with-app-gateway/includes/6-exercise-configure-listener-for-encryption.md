@@ -59,19 +59,21 @@ In this unit, you'll set up the listener with port 443 and with the TLS certific
 
 ## Test the Application Gateway
 
-1. Find the fully qualified domain name of the Application Gateway IP address:
+1. Find the public URL of the Application Gateway:
 
-    ```azurecli
-    az network public-ip show \
+    ```bash
+    gatewayAddress="$(az network public-ip show \
       --resource-group $rgName \
       --name appgwipaddr \
-      --query "dnsSettings.fqdn"
+      --query ipAddress)"
+
+    echo https://`eval echo $gatewayAddress`
     ```
 
-1. Using a web browser, navigate to **https://\<fqdn\>** where *\<fqdn\>* is the address of the Application Gateway returned by the previous command.
+2. Using a web browser, move to this URL.
 
     As before, your browser might display a warning message stating that the SSL connection is being made using an unauthenticated certificate. You can ignore this warning and continue to the web site.
 
-1. Verify that the home page for the Shipping Portal appears.
+3. Verify that the home page for the Shipping Portal appears.
 
 You've now configured the listener to listen on port 443 and decrypt the data ready to be passed to the backend pool. The data is re-encrypted when it is transmitted from the gateway to a server in the backend pool. With this listener in place, you have set up end-to-end encryption for the shipping portal.
