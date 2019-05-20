@@ -110,6 +110,10 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
     1. Deploy App Insights
     1. Deploy application
 
+1. **Performance constraints of a monolithic application**
+
+    Discussion of performance issues the application exhibits. Discussion of how this particular application is performing poorly as a monolith.
+
 1. **Exercise - Load testing of some sort**
 
     Load test and look at poor performance in App Insights.
