@@ -148,4 +148,4 @@ The following table summarizes the results we've gotten in previous exercises. T
 | Insert document | Some properties indexed | 6 |
 | Insert document | No properties indexed | 5 |
 
-You see that as indexing complexity goes up, the write consumption goes down, and the read consumption goes up. The indexing strategy that you choose depends on your data and the workloads that it supports.
+You see that as indexing complexity goes up, the write consumption goes up, and the read consumption goes down. The indexing strategy that you choose depends on your data and the workloads that it supports.
