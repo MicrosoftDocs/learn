@@ -79,13 +79,13 @@ The results would look something like:
 
 ## FROM clause
 
-The `FROM` clause specifies the data source upon which the query operates. You can make the whole collection the source of the query or you can specify a subset of the collection instead. The FROM clause is optional unless the source is filtered or projected later in the query.
+The `FROM` clause specifies the data source upon which the query operates. You can make the whole container the source of the query or you can specify a subset of the container instead. The FROM clause is optional unless the source is filtered or projected later in the query.
 
-A query such as `SELECT * FROM Products` indicates that the entire Products collection is the source over which to enumerate the query.
+A query such as `SELECT * FROM Products` indicates that the entire Products container is the source over which to enumerate the query.
 
 ### Using aliases
 
-A collection can be _aliased_ with the `AS` keyword. This allows you to refer to the collection using a shorter or more descriptive name.
+A container can be _aliased_ with the `AS` keyword. This allows you to refer to the container using a shorter or more descriptive name.
 
 ```sql
 SELECT p.id FROM Products AS p
