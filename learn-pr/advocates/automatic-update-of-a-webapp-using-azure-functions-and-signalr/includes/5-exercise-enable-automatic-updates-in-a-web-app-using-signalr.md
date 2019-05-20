@@ -4,8 +4,10 @@ In order to update the application to support the new functionality, you need to
 
 The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **negotiate** (by convention) to connect to the service.
 
-1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
+1. Open the Visual Studio Code command palette by pressing **F1**.
+
 1. Search for and select the **Azure Functions: Create Function** command.
+
 1. When prompted, provide the following information.
 
     | Name                | Value                          |
@@ -15,11 +17,9 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     | Authorization level | Anonymous                      |
 
     Refresh the Explorer window in VS Code to see the updates. A folder named *negotiate* is now available in your function app.
+
 1. Open *negotiate/function.json* and add the following SignalR binding to the `bindings` array.
 
-    > [!NOTE]
-    > Don't forget to add a comma after the last binding in the array before you paste in the SignalR binding.
-    
     ```json
     {
         "type": "signalRConnectionInfo",
@@ -64,7 +64,7 @@ First, you need to create a new Azure Function that listens for changes in the d
 
     Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code. 
 
-1. Add a trailing comma after the last `cosmosDBTrigger` property and then add the property `"feedPollDelay": 500`. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. While the application you're building is built around a push-based architecture, behind the scenes Azure Cosmos DB is continually looking at the database in order to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognizes changes, not how your web application exposes changes to the data.
+1. Append the property `"feedPollDelay": 500` to the existing trigger binding definition. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. The application you're building is built around a push-based architecture. However behind the scenes, Azure Cosmos DB is continually monitoring the change feed to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognizes changes, not how your web application exposes changes to the data.
 
 <!-- 
     REVIEW:
@@ -90,7 +90,7 @@ The Azure Cosmos DB binding for your function should now look like the following
 }
 ```
 
-Next, add a comma after the Azure Cosmos DB binding and then add the following SignalR binding. 
+Next, append the following SignalR output binding definition to the `bindings` collection.
 
 ```json
 {
@@ -311,24 +311,26 @@ Manipulating the array using this approach allows Vue to detect changes in the d
 
 To see the updated application running locally, Press **F5** to start debugging the functions app.
 
-Next, to run the web application on your machine, open a terminal and run `npm start`:
+Next, to run the web application on your machine, open a new terminal and run `npm start`:
 
 ```bash
 npm start
 ```
 
-You can now navigate to *http://localhost:8080* to see the application working in the browser.
+You can now navigate again to http://localhost:8080 to see the application working in the browser.
 
 ## Observe automatic updates
 
 Now you can make change to the application's data and observe how to the data is automatically updated. Since the update to the browser happens nearly immediately, consider having Visual Studio Code open one side of your screen and the running application on the other. This way you can see the UI update right after you issue the command to update the database.
 
-Return to Visual Studio Code and enter the the following command in the integrated terminal and watch as the application automatically update stock ABC.
+Return to Visual Studio Code and enter the the following command in a new integrated terminal. Again watch as the application automatically updates the stock ABC.
 
 ```bash
 npm run update
 ```
 
-After the database is updated, the UI should look something like the following screenshot:
+After the database is updated, the UI looks something like the following screenshot:
 
 ![End state of serverless web app](../media/serverless-app-end-state.png)
+
+When you are done, stop the running processes.
