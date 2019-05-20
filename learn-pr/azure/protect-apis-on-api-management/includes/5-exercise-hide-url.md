@@ -2,7 +2,7 @@ If an API that you host includes it original URL in responses, clients may be ab
 
 The Government census API includes its URL in this way. You want to make sure that all requests go through API Management.
 
-In this unit you will mask some of the data returned in the body of the census API. You will learn how to use a transformation policy to rewrite the URL data exposed in the body of the response.
+In this unit, you will mask some of the data returned in the body of the census API. You will learn how to use a transformation policy to rewrite the URL data exposed in the body of the response.
 
 ## Mask URLs
 

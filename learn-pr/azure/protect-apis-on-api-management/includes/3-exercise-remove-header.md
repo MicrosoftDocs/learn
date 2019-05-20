@@ -1,6 +1,6 @@
 Companies that publish web APIs often need to carefully control the HTTP headers that their APIs return, preferably without rewriting the API source code.
 
-The Government has decided to share census data with its agencies through RESTful APIs. The critical requirements are that this is done securely and can be easily amended to facilitate quick integration. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Census API that exposes an OpenAPI endpoint using modern security standards.
+The Government has decided to share census data with its agencies through RESTful APIs. The critical requirements are that the data is shared securely and can be easily amended to facilitate quick integration. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Census API that exposes an OpenAPI endpoint using modern security standards.
 
 Here, you will:
 - Publish a RESTful Census API.
@@ -19,9 +19,9 @@ You have developed a .NET Core app that returns sensitive census information. Th
 To save time, let's start by running a script to host our RESTful API in Azure. The script performs the following steps:
 
 - It creates an Azure App Service plan in the free tier.
-- It create a Web API within an Azure App Service, which is configured for Git deployment from a local repo.
+- It creates a Web API within an Azure App Service, which is configured for Git deployment from a local repo.
 - It sets account-level deployment credentials for our app.
-- It configure Git locally.
+- It configures Git locally.
 - It deploys our Web API to our App Service instance.
 
 1. To clone the repo that contains the source for our app, run the following `git clone` command in the Cloud Shell:
@@ -50,7 +50,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
     - **api/census**, which returns a census and associated people
     - **api/census/{censusYear}**, which returns a census and associated people for the specified year
-    - **api/people/{reference}**, which returns returns detailed information about a specific person
+    - **api/people/{reference}**, which returns detailed information about a specific person
 
     ![Swagger view](../media/3-swagger-home.png)
 
@@ -70,7 +70,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     |**Name** | Type `apim-CensusData<random number>`; the random number is to ensure that the name is globally unique. |
     | **Subscription** | Concierge Subscription |
     | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
-    | **Location** | Select a location near you from the above list. | 
+    | **Location** | Select West Europe or South East Asia. | <!-- These are the only two locations supported by both the consumption tier and the sandbox. --> 
     | **Organization Name** | Type `Government-Census`. |
     | **Administrator Email** | Type your own email address. |
     | **Pricing Tier** | Select `Consumption (preview)`. |
@@ -78,8 +78,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     > [!NOTE]
     > You're using the consumption plan because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
 
-1. Click **Create**.
-1. Deployment may take several minutes. You'll get a message to your specified email address when the deployment has completed. You'll also see the gateway listed in Azure resources.
+1. Click **Create**. Deployment may take several minutes. You'll get a message to your specified email address when the deployment has completed. You'll also see the gateway listed in Azure resources.
 
 ## Import the API
 
@@ -112,7 +111,7 @@ The final step is to remove the two headers **X-Powered-By** and **Server**:
 
     ![Policy with remove headers](../media/3-remove-header-policy.png)
 
-1. Modify your outbound configuration to look like this:
+1. Modify your outbound configuration to look like this code:
 
     ```XML
     <outbound>

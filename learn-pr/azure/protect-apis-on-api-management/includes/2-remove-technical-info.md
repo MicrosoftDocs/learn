@@ -1,6 +1,6 @@
 Any organization that publishes an API needs to make sure that users can access it securely and that malicious users cannot successfully attack it.
 
-Governments store a lot of personal data regarding citizens. Census data reveals a lot about each citizen, and their life. This data could be exploited to harm people.  It is imperative that any data exposed through API endpoints are secured through modern standards.
+Governments store much personal data regarding citizens. Census data reveals a lot about each citizen, and their life. This data could be exploited to harm people.  It is imperative that any data exposed through API endpoints are secured through modern standards.
 
 As the lead developer, you'll look at how to set up a secured API gateway, which will protect the census data from unauthorized access. It will also protect the endpoints from denial-of-service attacks.
 
@@ -33,5 +33,5 @@ In the census example, it is important that you remove the following headers:
 To set up API management, you will perform the following tasks:
 
 - **Create an API Management gateway**. In this step, you create the API Management resource in the Azure portal. You also assign properties to the gateway, such as an FQDN and a pricing tier.
-- **Register an existing Web API with the gateway**. In this step, you add the web API to the gateway. The API already has its own Azure app service host but you must add this to API Management in order to use policies and other API Management tools.
+- **Register an existing Web API with the gateway**. In this step, you add the web API to the gateway. The API already has its own Azure app service host but you must add it to API Management in order to use policies and other API Management tools.
 - **Remove headers from the response**. In this step, you will apply a policy that removes the insecure headers from all responses.
