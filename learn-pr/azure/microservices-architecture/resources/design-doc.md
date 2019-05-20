@@ -46,9 +46,13 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
 
 1. **Introduction**
 
-    Change this to drone delivery scenario.
-
     An organization is running a monolithic application on virtual machines. This application has become difficult to scale, code releases are causing frequent issues and have become increasingly large. This has delayed important features in the application, and is slowing innovation. The organization is interested in the microservices architecture, but are not sure if it's the right fit for their application, and how they would evolve their application into this architecture.
+
+    **Delivery drone scenario**
+
+    Fabrikam, Inc. is starting a drone delivery service, to compliment their existing shipping business. The company manages a fleet of drone aircraft. Businesses register with the service, and users can request a drone to pick up goods for delivery. When a customer schedules a pickup, a backend system assigns a drone and notifies the user with an estimated delivery time. While the delivery is in progress, the customer can track the location of the drone, with a continuously updated ETA.
+
+    This scenario involves a fairly complicated domain. Some of the business concerns include scheduling drones, tracking packages, managing user accounts, and storing and analyzing historical data. Moreover, Fabrikam wants to get to market quickly and then iterate quickly, adding new functionality and capabilities. The application needs to operate at cloud scale, with a high service level objective (SLO). Fabrikam also expects that different parts of the system will have very different requirements for data storage and querying. All of these considerations lead Fabrikam to choose a microservices architecture for the Drone Delivery application.
 
 1. **Monolith to microservices**
 
@@ -105,7 +109,6 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
     1. Create database (possibly Azure SQL)
     1. Deploy App Insights
     1. Deploy application
-    
 
 1. **Exercise - Load testing of some sort**
 
