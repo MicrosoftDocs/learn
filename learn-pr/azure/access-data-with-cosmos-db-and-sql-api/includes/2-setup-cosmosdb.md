@@ -1,4 +1,4 @@
-The first thing we need to do is create an empty Azure Cosmos DB database and collection to work with. We want them to match the ones you created in the last module in this Learning Path: a database named **"Products"** and a collection named **"Clothing"**. Use the following instructions and the Azure Cloud Shell on the right side of the screen to recreate the database.
+The first thing we need to do is create an empty Azure Cosmos DB database and container to work with. We want them to match the ones you created in the last module in this Learning Path: a database named **"Products"** and a container named **"Clothing"**. Use the following instructions and the Azure Cloud Shell on the right side of the screen to recreate the database.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -91,7 +91,7 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
     }
     ```
 
-1. Finally, create the `Clothing` collection with the `cosmosdb collection create` command in the Cloud Shell.
+1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell.
 
     ```azurecli
     az cosmosdb collection create \
@@ -103,4 +103,4 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-Now that you have your Azure Cosmos DB account, database, and collection, let's go add some data!
+Now that you have your Azure Cosmos DB account, database, and container, let's go add some data!

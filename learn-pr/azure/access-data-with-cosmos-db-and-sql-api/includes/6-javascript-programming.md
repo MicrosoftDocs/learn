@@ -1,4 +1,4 @@
-Let's start by creating a new stored procedure in the portal. The portal automatically populates a simple stored procedure that retrieves the first item in the collection, so we'll run this stored procedure first.
+Let's start by creating a new stored procedure in the portal. The portal automatically populates a simple stored procedure that retrieves the first item in the container, so we'll run this stored procedure first.
 
 1. Switch back to the Data Explorer window.
 
@@ -16,7 +16,7 @@ Let's start by creating a new stored procedure in the portal. The portal automat
 
     ![Run a stored procedure in the portal](../media/6-stored-procedure.png)
 
-    The **Result** pane displays the feed from the first document in the collection.
+    The **Result** pane displays the feed from the first document in the container.
 
 ```json
 {

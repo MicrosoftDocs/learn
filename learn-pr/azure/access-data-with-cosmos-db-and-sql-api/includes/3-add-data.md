@@ -25,7 +25,7 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
    ![Screenshot showing the steps to create new documents in Data Explorer in the Azure portal](../media/3-azure-cosmosdb-data-explorer-new-document.png)
 
-1. Now, add a document to the collection with the following structure. Paste the following JSON block into the **Items** tab, overwriting the current content:
+1. Now, add a document to the container with the following structure. Paste the following JSON block into the **Items** tab, overwriting the current content:
 
      ```json
     {

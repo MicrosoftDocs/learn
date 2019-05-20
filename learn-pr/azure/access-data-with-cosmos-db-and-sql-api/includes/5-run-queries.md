@@ -1,6 +1,6 @@
 Now that you've learned about the kinds of queries you can create, let's use the Data Explorer in the Azure portal to retrieve and filter your product data.
 
-Switch back to the Data Explorer window. Notice that by default, the query on the **Items** tab is set to `SELECT * FROM c` as shown in the following image. This default query retrieves and displays all documents in the collection.
+Switch back to the Data Explorer window. Notice that by default, the query on the **Items** tab is set to `SELECT * FROM c` as shown in the following image. This default query retrieves and displays all documents in the container.
 
 ![Screenshot showing the default query in Data Explorer is SELECT * FROM c](../media/5-azure-cosmosdb-data-explorer-query.png)
 
@@ -10,7 +10,7 @@ Switch back to the Data Explorer window. Notice that by default, the query on th
 
     ![Screenshot showing the New SQL Query option in the Data Explorer](../media/5-create-new-sql-query.png)
 
-    The default query on the new  **Query 1** tab is again `SELECT * from c`, which will return all documents in the collection.
+    The default query on the new  **Query 1** tab is again `SELECT * from c`, which will return all documents in the container.
 
 1. Select **Execute Query** to run the SQL statement. This query returns all results in the database.
 
