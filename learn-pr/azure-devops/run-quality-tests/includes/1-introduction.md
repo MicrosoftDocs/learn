@@ -22,12 +22,12 @@ Make sure you have the _Space Game_ project loaded in Visual Studio Code and you
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in the previous learning path. As a refresher, here's who you'll work with in this module.
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
 
-[!include[](../../shared/includes/meet-andy-row.md)]
+[!include[](../../shared/includes/meet-andy-short-row.md)]
 
-[!include[](../../shared/includes/meet-amita-row.md)]
+[!include[](../../shared/includes/meet-amita-short-row.md)]
 
-[!include[](../../shared/includes/meet-tim-row.md)]
+[!include[](../../shared/includes/meet-tim-short-row.md)]
 
-[!include[](../../shared/includes/meet-mara-row.md)]
+[!include[](../../shared/includes/meet-mara-short-row.md)]
