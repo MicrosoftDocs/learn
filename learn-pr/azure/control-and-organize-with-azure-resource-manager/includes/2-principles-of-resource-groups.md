@@ -35,7 +35,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 1. Open a web browser and sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
     > [!IMPORTANT]
-    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
+    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are using by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
 
 1. On the left pane, select **+ Create a resource**
 
