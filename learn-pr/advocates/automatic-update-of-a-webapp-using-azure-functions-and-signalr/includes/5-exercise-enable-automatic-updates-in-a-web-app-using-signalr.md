@@ -57,7 +57,7 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     | Name                | negotiate                      |
     | Authorization level | Anonymous                      |
 
-    Refresh the Explorer window in VS Code to see the updates. A folder named *negotiate* is now available in your function app.
+    Refresh the Explorer window in Visual Studio Code to see the updates. A folder named *negotiate* is now available in your function app.
 
 1. Open *negotiate/function.json* and add the following SignalR binding to the `bindings` array.
 
@@ -103,7 +103,7 @@ First, you need to create a new Azure Function that listens for changes in the d
     | Collection name for leases             | leases                         |
     | Create lease collection if not exists  | true                           |
 
-    Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code. 
+    Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code.
 
 1. Append the property `"feedPollDelay": 500` to the existing trigger binding definition. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. The application you're building is built around a push-based architecture. However behind the scenes, Azure Cosmos DB is continually monitoring the change feed to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognizes changes, not how your web application exposes changes to the data.
 
@@ -350,9 +350,11 @@ Manipulating the array using this approach allows Vue to detect changes in the d
 
 ## Run the application
 
-To see the updated application running locally, Press **F5** to start debugging the functions app.
+Now you can see the new version of the app running locally.
 
-Next, to run the web application on your machine, open a new terminal and run `npm start`:
+Press **F5** to start debugging the functions app.
+
+Next, open a new terminal window in Visual Studio Code and run `npm start`:
 
 ```bash
 npm start
@@ -374,4 +376,4 @@ After the database is updated, the UI looks something like the following screens
 
 ![End state of serverless web app](../media/serverless-app-end-state.png)
 
-When you are done, stop the running processes.
+When you are done, stop the web server and functions processes.

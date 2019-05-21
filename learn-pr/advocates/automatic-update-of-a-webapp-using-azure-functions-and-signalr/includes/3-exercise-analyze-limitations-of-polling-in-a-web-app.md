@@ -116,7 +116,7 @@ For the app to run, you need to add the connection strings and keys associated w
 
 ## Run the application
 
-1. In the VS Code terminal window, run the following command to install dependencies and set up the database:
+1. In the Visual Studio Code terminal window, run the following command to install dependencies and set up the database:
 
     ```bash
     npm install
@@ -142,6 +142,8 @@ For the app to run, you need to add the connection strings and keys associated w
     ```bash
     npm run update
     ```
+
+When you are done, stop the web server and functions processes.
 
 <!--
     REVIEW:
