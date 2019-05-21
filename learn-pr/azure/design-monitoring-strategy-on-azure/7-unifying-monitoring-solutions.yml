@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-monitoring-strategy-on-azure.7-unifying-monitoring-solutions
+metadata:
+  title: Unifying monitoring solutions in Azure
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Unifying monitoring solutions in Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-unifying-monitoring-solutions.md)]

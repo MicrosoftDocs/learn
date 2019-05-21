@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-monitoring-strategy-on-azure.6-sentinel
+metadata:
+  title: Analyze enterprise security using Azure Sentinel
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Analyze enterprise security using Azure Sentinel
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-sentinel.md)]
