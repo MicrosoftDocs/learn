@@ -51,7 +51,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 
     A financial organization is moving its systems to Azure, a mixture of IaaS and PaaS services. They have had several instances in their previous environment where systems failed, or issues arose, and extended delay to engage resources and resolve the issue occurred. This impacted customers ability to access their accounts, and has hurt customer satisfaction. They want to design a monitoring strategy that encompasses all solutions they use, provides insights and alerting into the log data they accumulate, and ensures they can quickly identify and minimize impact if and when systems fail in the future.
 
-1. **Introduction to Continuous monitoring in Azure**
+1. **Introduction to continuous monitoring in Azure**
 
     List the content that will enable the learner to *Continuous monitoring in Azure*:
 
@@ -63,7 +63,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
         - Obtain platform metrics
         - Enable deeper monitoring of VMs and Azure Kubernetes clusters
 
-1. **Technology options available in Azure**
+1. **Monitoring options available in Azure**
 
     List the content that will enable the learner to *understand the monitoring technology options available in Azure*:
 
@@ -72,7 +72,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     - What is Azure sentinel?
     - What is Azure monitor?
 
-1. **Analyze infrastructure security using security center in Azure**
+1. **Analyze infrastructure security using Azure Security Center**
 
     List the content that will enable the learner to *assess the usefulness of security center in their solution*:
 
@@ -89,7 +89,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     - How would you use security center to protect your infrastructure?
     - What is the key tool for providing continuous monitoring?
 
-1. **Analyze web applications using application insights in Azure**
+1. **Analyze web applications using Azure Application Insights**
 
     List the content that will enable the learner to *access the viability of application insights as a monitoring solution*:
 
@@ -107,31 +107,31 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     - What alerts can you draw upon to detect application failure and resolution?
     - What would you use to monitor responsiveness and performance of your dependencies?
 
-1. **Analyze enterprise security using Azure sentinel in Azure**
+1. **Analyze enterprise security using Azure Sentinel**
 
-    List the content that will enable the learner to *access the viability of Azure sentinel as a monitoring solution*:
+    List the content that will enable the learner to *access the viability of Azure Sentinel as a monitoring solution*:
 
-    - Criteria for assessing Azure sentinel
+    - Criteria for assessing Azure Sentinel
     - Enterprise level monitoring
     - Accessing multiple data sources
     - Using cases to reduce incident noise
 
    **Knowledge check**
 
-    What types of questions will test *how Azure sentinel can improve enterprise security monitoring*?
+    What types of questions will test *how Azure Sentinel can improve enterprise security monitoring*?
 
-    - Why would you use Azure sentinel?
-    - How does Azure sentinel monitor your enterprise?
-    - What are the strengths of user analytics?
+    - Why would you use Azure Sentinel?
+    - How does Azure Sentinel monitor your enterprise?
+    - What are the Strengths of user analytics?
 
 1. **Unifying monitoring solutions in Azure**
 
-    List the content that will enable the learner to *understand how Azure monitor can provide a unified monitoring solution*:
+    List the content that will enable the learner to *understand how Azure Monitor can provide a unified monitoring solution*:
 
     - Criteria for assessing Azure Monitor
-    - The benefits of Azure monitor
-    - Integration with security center
-    - Integration with application insights
+    - The benefits of Azure Monitor
+    - Integration with Azure Security Center
+    - Integration with Application Insights
 
 1. **Summary**
 
@@ -155,7 +155,6 @@ During design investigation, the following URLs were considered.
 - Azure Sentinel: https://docs.microsoft.com/en-us/azure/sentinel/overview
 - Azure Security Center: https://docs.microsoft.com/en-us/azure/security-center/security-center-intro
 - Permission in Azure Security Center: https://docs.microsoft.com/en-us/azure/security-center/security-center-permissions
-
 
 During the design, the following considerations were made
 
