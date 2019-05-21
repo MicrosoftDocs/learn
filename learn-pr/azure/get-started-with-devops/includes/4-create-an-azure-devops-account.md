@@ -13,8 +13,8 @@ To create an Azure DevOps account, carry out the following procedure:
 
 1. Sign in using your **Microsoft Account**, or if you do not have a Microsoft account, click **Create One!** and complete the steps to create a new Microsoft account.
 
-> [!NOTE]
-> You may have a Microsoft account already. Typically these might end with hotmail.com or outlook.com.
+    > [!NOTE]
+    > You may have a Microsoft account already. Typically these might end with hotmail.com or outlook.com.
 
 1. Review the Terms of Service, Privacy Statement, and Code of Conduct and click **Continue** if you agree to these.
 
