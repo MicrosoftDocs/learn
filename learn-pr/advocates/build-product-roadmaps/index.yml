@@ -17,8 +17,7 @@ abstract: |
  - Identify and develop themes, milestones, epics, and user stories for your product road map.
 prerequisites: |
  - Basic knowledge of Agile development concepts.
-# TODO update icon
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/build-product-road-maps.svg
 levels:
 - beginner
 roles:
