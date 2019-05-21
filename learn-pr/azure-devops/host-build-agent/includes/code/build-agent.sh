@@ -37,7 +37,6 @@ if [ -n "$AZP_WORK" ]; then
 fi
 
 # Create a working directory to extract the agent package to
-rm -rf $HOME/azp/agent
 mkdir -p $HOME/azp/agent
 
 # Move to the working directory
@@ -47,10 +46,11 @@ cd $HOME/azp/agent
 tar zxvf $HOME/Downloads/vsts-agent-linux-x64-$AZP_AGENT_VERSION.tar.gz
 
 # Install the agent software
-sudo ./bin/installdependencies.sh
+./bin/installdependencies.sh
 
-# Configure the agent
-./config.sh --unattended \
+# Configure the agent as the sudo (non-root) user
+chown $SUDO_USER $HOME/azp/agent
+sudo -u $SUDO_USER ./config.sh --unattended \
   --agent "${AZP_AGENT_NAME:-$(hostname)}" \
   --url "$AZP_URL" \
   --auth PAT \
@@ -61,5 +61,5 @@ sudo ./bin/installdependencies.sh
   --acceptTeeEula
 
 # Install and start the agent service
-sudo ./svc.sh install
-sudo ./svc.sh start
+./svc.sh install
+./svc.sh start

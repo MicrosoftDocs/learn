@@ -60,6 +60,8 @@ Here you'll create a VM running Ubuntu 16.04 that will serve as your build agent
       --generate-ssh-keys
     ```
 
+    Your VM will take about two minutes to come up.
+
     [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size provided by Microsoft-hosted agents. In practice, you can choose a different size that provides more compute power or additional capabilities such as graphics processing.
 
 ## Create the agent pool
@@ -163,12 +165,6 @@ Let's start by updating Ubuntu's package manager, named **apt**. This fetches th
 
     `sudo` runs the command with administrator, or root, priviledges.
 
-1. Install `curl` so that you can download the shell script.
-
-    ```bash
-    sudo apt-get install -y curl
-    ```
-
 1. Run the following `curl` command to download a shell script named **build-tools.sh** from GitHub.
 
     ```bash
@@ -205,6 +201,9 @@ Now it's time to install the agent software on your VM. This software enables th
 The registration process checks for installed software before it registers the agent with Azure Pipelines. Therefore, it's important that you set up the agent after installing all other software. In practice, you can register the agent a second time if you need to install additional software.
 
 The documentation explains how to set up [self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?view=azure-devops&azure-portal=true) as well as macOS and Windows agents manually. Here you'll run a shell script to configure your agent, similar to how you set up build tools in the last part.
+
+> [!IMPORTANT]
+> The script you'll run here is for learning purposes. In practice, understand how each command in the scripts you build impact the overall system. We'll point you to documentation that more completely describes your options at the end of this module.
 
 1. Run the following `curl` command to download a shell script named **build-agent.sh** from GitHub.
 
@@ -251,7 +250,7 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
 
     For now, we recommend that you leave the other variables unset, but you can set them if you'd like.
 
-1. Set the `AZP_AGENT_NAME` environment variable to specify your agent's name. We commend **MyLinuxAgent**.
+1. Set the `AZP_AGENT_NAME` environment variable to specify your agent's name. We recommend **MyLinuxAgent**.
 
     ```bash
     export AZP_AGENT_NAME=MyLinuxAgent
@@ -283,8 +282,10 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
 
     ```bash
     chmod u+x build-agent.sh
-    ./build-agent.sh
+    sudo -E ./build-agent.sh
     ```
+
+    `sudo` enables the script to run as the root user. The `-E` argument preserves the current environment variables, including the ones you set, so that they are available to the script.
 
     During the process, you see the agent connect to Azure DevOps, add the agent to the pool, and test the agent connection.
 
@@ -303,6 +304,10 @@ You successfully installed build tools and the agent software on your VM. As a v
     You see that your agent is online and ready to accept build jobs.
 
     ![](../media/4-project-settings-agent-details.png)
+
+    > [!TIP]
+    > If your build agent shows as **Offline**, try waiting a few moments and then refresh the page.
+
 1. Select your agent, **MyLinuxAgent**.
 1. Select the **Capabilities** tab.
 
