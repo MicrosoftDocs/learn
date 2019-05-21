@@ -2,7 +2,7 @@ Before you begin, make sure you have the following software installed on your ma
 
 - [Node.js](https://nodejs.org/download/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
-- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (latest version)
+- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (min. version 2.6.666)
 - [Azure Functions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 - [Azure Storage extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
 
