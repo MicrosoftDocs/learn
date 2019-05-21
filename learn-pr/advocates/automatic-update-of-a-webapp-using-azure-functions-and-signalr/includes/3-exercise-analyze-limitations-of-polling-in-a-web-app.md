@@ -124,7 +124,7 @@ For the app to run, you need to add the connection strings and keys associated w
     npm start
     ```
 
-1. Navigate to http://localhost:8080 to see the application in the browser.
+1. The script automatically opens the browser and navigates to http://localhost:8080. If the browser fails to open automatically, you can navigate to http://localhost:8080 manually.
 
     ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)
 

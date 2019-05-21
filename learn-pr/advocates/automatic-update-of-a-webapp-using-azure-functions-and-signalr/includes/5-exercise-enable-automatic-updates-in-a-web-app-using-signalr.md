@@ -360,7 +360,7 @@ Next, open a new terminal window in Visual Studio Code and run `npm start`:
 npm start
 ```
 
-You can now navigate again to http://localhost:8080 to see the application working in the browser.
+The script automatically opens the browser and navigates to http://localhost:8080. If the browser fails to open automatically, you can navigate to http://localhost:8080 manually.
 
 ## Observe automatic updates
 
