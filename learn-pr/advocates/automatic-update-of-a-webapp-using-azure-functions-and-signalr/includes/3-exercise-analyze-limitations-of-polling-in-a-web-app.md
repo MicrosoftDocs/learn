@@ -17,21 +17,27 @@ Before you begin, make sure you have the following software installed on your ma
     > [!IMPORTANT]
     > Do not run `npm install` until you have completed the steps that update the *local.settings.json*. There is a post-install script that sets up your database and adds some data to the database.
 
-2. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the remainder of this module. To open the *start* folder in Visual Studio Code, you can run the following command in the folder where you cloned the sample repository:
+1. Run the following command to navigate to the new folder into which you cloned the repo:
+
+    ```bash
+    cd mslearn-advocates.azure-functions-and-signalr
+    ```
+
+1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the remainder of this module. Use the following command to open the *start* folder in Visual Studio Code:
 
     ```bash
     code start
     ```
 
-    You'll find the beginning state of the project in the **start** folder. For your reference, the finished solution is available in the folder called **end**.
+    For your reference, the finished solution is available in the folder called **end**.
 
 ## Create a Storage account
 
-We'll need a storage account for our Azure Functions logic and for our web app when we deploy it to the cloud later in the module.
+Azure Functions requires a storage account, and you'll need it when you deploy the web app to the cloud later in the module.
 
-1.  Execute the following command in the Cloud Shell to define a name for our Azure Storage account.
+1. Execute the following command in the Cloud Shell to define a name for your Azure Storage account.
 
-    ```bash
+    ```azurecli-interactive
     export STORAGE_ACCOUNT_NAME=mslsigrstorage$(openssl rand -hex 5)
     echo "Storage Account Name: $STORAGE_ACCOUNT_NAME"
     ```
@@ -40,7 +46,7 @@ We'll need a storage account for our Azure Functions logic and for our web app w
 
 1. Run the following `az storage account create` command in the Cloud Shell to create a storage account for your function and static website.
 
-    ```bash
+    ```azurecli-interactive
     az storage account create \
       --name $STORAGE_ACCOUNT_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -52,20 +58,20 @@ We'll need a storage account for our Azure Functions logic and for our web app w
 
 ## Create an Azure Cosmos DB account
 
-We want to store stock prices in an Azure Cosmos DB database, so let's set that up in our sandbox account here.
+You store stock prices in an Azure Cosmos DB database, so you'll set that up in the sandbox account.
 
-1. Execute the following command in the Cloud Shell to define a name for our CosmosDB account.
+1. Execute the following command in the Cloud Shell to generate a name for your Azure Cosmos DB account.
 
-    ```bash
+    ```azurecli-interactive
     export COSMOSDB_ACCOUNT_NAME=msl-sigr-cosmos-$(openssl rand -hex 5)
     echo "Azure Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
     ```
 
     Remember this  account name for the remainder of the module. 
 
-1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Cosmos DB account in our sandbox resource group. 
+1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group. 
 
-    ```bash
+    ```azurecli-interactive
     az cosmosdb create  \
       --name $COSMOSDB_ACCOUNT_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn>
@@ -75,26 +81,26 @@ We want to store stock prices in an Azure Cosmos DB database, so let's set that 
 
 ## Create a SignalR account
 
-We need to add a SignalR account to our sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI).
+You'll need to add a SignalR account to your sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI).
 
 1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
 
-    ```bash
+    ```azurecli-interactive
     az extension add -n signalr
     ```
 
-1.  Execute the following command in the Cloud Shell to define a name for our Azure Storage account.
+1. Execute the following command in the Cloud Shell to generate a name for your SignalR account.
 
-    ```bash
+    ```azurecli-interactive
     export SIGNALR_ACCOUNT_NAME=msl-sigr-signalr$(openssl rand -hex 5)
     echo "SignalR Account Name: $SIGNALR_ACCOUNT_NAME"
     ```
 
-    Keep note of  this  account name for the remainder of the module. 
+    Keep note of this account name for the remainder of the module. 
 
 1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group.
 
-    ```bash
+    ```azurecli-interactive
     az signalr create \
       --name $SIGNALR_ACCOUNT_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -104,15 +110,21 @@ We need to add a SignalR account to our sandbox subscription. The first step is 
 
 ## Update local settings
 
-For the app to run, you need to add the connection strings and keys associated with your Azure Storage, Functions and database services to your local settings. 
+For the app to run, you need to add the connection strings and keys associated with your Azure Storage, Functions and database services to your local settings.
 
 1. Run the following commands in the Cloud Shell  to get the connection strings for the resources we created in this exercise.
 
-    ```bash
+    ```azurecli-interactive
     STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
-      --name $STORAGE_ACCOUNT_NAME \
+    --name $(az storage account list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query "connectionString" -o tsv)
+      --query [0].name -o tsv) \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --query "connectionString" -o tsv)
+
+    COSMOSDB_ACCOUNT_NAME=$(az cosmosdb list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --query [0].name -o tsv)
 
     COSMOSDB_CONNECTION_STRING=$(az cosmosdb list-connection-strings  \
       --name $COSMOSDB_ACCOUNT_NAME \
@@ -125,7 +137,9 @@ For the app to run, you need to add the connection strings and keys associated w
     --query primaryMasterKey -o tsv)
 
     SIGNALR_CONNECTION_STRING=$(az signalr key list \
-      --name $SIGNALR_ACCOUNT_NAME \
+      --name $(az signalr list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+            --query [0].name -o tsv) \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --query primaryConnectionString -o tsv)
 
@@ -137,7 +151,7 @@ For the app to run, you need to add the connection strings and keys associated w
 
 1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
 
-1. In **local.settings.json**, update the variables `AzureWebJobsStorage`, `AzureCosmosDBConnectionString`, `AzureCosmosDBMasterKey` and `AzureSignalRConnectionString` with the values listed in the Cloud Shell and save the file.
+1. In **local.settings.json**, update the variables `AzureWebJobsStorage`, `AzureCosmosDBConnectionString`, `AzureCosmosDBMasterKey` and `AzureSignalRConnectionString` with the values listed in the Cloud Shell and save the file. The local.settings.json file should only exist on your local computer.
 
 ## Run the application
 
@@ -150,19 +164,19 @@ For the app to run, you need to add the connection strings and keys associated w
     > [!NOTE]
     > If there is a problem during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
 
-1. Press F5 to start debugging the function app.
+1. Press F5 to start debugging the function app. The function app startup is shown in a terminal window.
 
-1. To run the web application on your machine, open a Visual Studio Code's integrated terminal and run the command `npm start`.
+1. To run the web application on your machine, open a second integrated terminal instance and run the following command to start the web app.
 
     ```bash
     npm start
     ```
 
-1. Navigate to *http://localhost:8080* to see the application in the browser.
+1. Navigate to http://localhost:8080 to see the application in the browser.
 
     ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)
 
-1. Return to Visual Studio Code and enter the the following command in the integrated terminal to update the stock prices. Observe that the values for stock ABC update in the browser after a few seconds.
+1. Return to Visual Studio Code, open a third terminal instance, and enter the the following command to update the stock prices. Immediately return to the browser and observe that the values for stock ABC change within a few seconds.
 
     ```bash
     npm run update

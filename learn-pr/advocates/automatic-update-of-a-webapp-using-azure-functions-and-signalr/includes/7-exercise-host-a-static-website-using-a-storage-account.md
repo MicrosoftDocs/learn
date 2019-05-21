@@ -12,15 +12,18 @@ To give you control over the settings associated with creating Azure Functions a
 
 ## Deploy the function app
 
-1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
+1. Press the F1 key to open the Visual Studio Code command palette.
 
-2. Search for and select the **Azure Functions: Deploy to Function App** command.
+1. If you are already signed-in to Azure in Visual Studio Code with a different account, use the **Azure: Sign Out** command to sign out. Otherwise, you create the function app outside of the Learn sandbox and may incur costs. 
 
-3. When prompted, provide the following information.
+1. Search for and select the **Azure Functions: Deploy to Function App** command.
+
+1. When prompted, select **Sign in to Azure** and sign in with the same account you used to sign into the Learn sandbox.  
+
+1. Follow the prompts to provide the following information.
 
    | Name              | Value                                                        |
    | ----------------- | ------------------------------------------------------------ |
-   | Subscription      | Select your subscription                                     |
    | Function app      | Select **Create new Function App in Azure**                  |
    | Function app name | Enter a unique name                                          |
    | OS                | Select **Windows**                                           |
@@ -29,7 +32,7 @@ To give you control over the settings associated with creating Azure Functions a
    | Resource group    | Select **<rgn>[sandbox resource group name]</rgn>**          |
    | Storage account   | Select the account you created earlier                       |
 
-    A new function app is created in Azure and the deployment begins. The Azure Functions Visual Studio Code extension first creates the Azure resources and deploys the function app.
+    A new function app is created in Azure and the deployment begins. The Azure Functions Visual Studio Code extension first creates the Azure resources and then deploys the function app.
     
     Once complete, the Azure Functions extension reports the primary endpoint of the function in a message box as shown by this screenshot.
     
@@ -39,12 +42,11 @@ To give you control over the settings associated with creating Azure Functions a
 
 1. Open **public/index.html.js** and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
-
 1. Another message appears in Visual Studio code asking if you want to upload local settings. Select  **Upload settings**  to copy the values from **local.settings.json** to the server.
 
     ![Upload local settings](../media/serverless-app-upload-local-settings.png)
 
-    If the message box doesn't appear or has been dismissed from Visual Studio Code, you can still upload your local settings by opening the Visual Studio Code command palette via **CTRL/CMD+Shift+P** and select **Azure Functions: Upload local settings**.
+    If the message box doesn't appear or has been dismissed from Visual Studio Code, you can still upload your local settings by opening the Visual Studio Code command palette via **CTRL/CMD+Shift+P** and select **Azure Functions: Upload local settings**. If prompted, choose to overwrite any existing settings.
 
 ## Configure static websites in Azure Storage
 
@@ -58,51 +60,49 @@ To give you control over the settings associated with creating Azure Functions a
 
 Use the following steps to configure the Azure Storage account to host a static website.
 
-1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
-2. Search for and select the **Azure Storage: Configure static website** command.
+1. Open the Visual Studio Code command palette via **F1**.
+
+1. Search for and select the **Azure Storage: Configure static website** command.
 
    | Name              | Value                                                             |
    | ----------------- | ----------------------------------------------------------------- |
-   | Subscription      | Select your subscription                                          |
    | Storage account   | Select the account you created earlier                            |
    | Default file      | Select **index.html** as the index document name for the account. |
    | Error document    | Press **Enter** to accept the default 404 error document path     |
-   | Deployment folder | Select the folder of the functions app                            |
-
-## Determine the primary endpoint address of our static website
-Now that static website hosting enabled on your storage account, you need to get the primary endpoint of the website.
-
-1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
-2. Search for and select the **Azure Storage: Open in portal** command.
-3. Select and subscription and storage account
-4. Once the portal is open in the browser, navigate to **Settings > Static Website**
-5. Click the **Copy** button next to the *Primary endpoint* box
-
-    ![Copy static website primary endpoint](../media/serverless-app-static-website-endpoint.png)
-
-    You use the endpoint value to set up CORS settings for the function app in the next section.
-
-## Setup CORS in our function 
-
-1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
-2. Search for and select the **Azure Functions: Open in portal** command.
-3. Select the subscription and function app name.
-4. Once the portal is open in the browser, click on the **Platform features** tab.
-5. Click **CORS**.
-6. Check the checkbox next to **Enable Access-Control-Allow-Credentials**.
-7. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You should be able to paste this value in from your clipboard.
-8. Click **Save** to persist the CORS settings.
-
-    ![Enable CORS support for Azure Functions app](../media/serverless-app-function-cors.png)
 
 ## Deploy the web application to Azure Storage
 
-1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
-2. Search for and select the **Azure Storage: Deploy to static website** command.
-3. Select the subscription and Storage account.
-4. When prompted for a folder, select **browse** and *public/index.html*.
-5. A notification should appear that the upload was successful.
-6. Click the button to open the app in a browser.
+1. Open the Visual Studio Code command palette via **F1**.
+
+1. Search for and select the **Azure Storage: Deploy to static website** command.
+
+1. Select the Storage account you created earlier.
+
+1. When prompted for a folder, select **browse** and choose the *public* subfolder, which contains the web app.
+
+1. A notification appears that the upload was successful. The upload can take several minutes.
+ 
+## Determine the primary endpoint address of the static website
+
+1. In the command palette, search for **Azure Storage: Browse static website** and choose your Storage account. The site opens in the browser. At this point, the app won't run because of CORS requirements of Azure Functions.
+
+1. Copy the URL in the browser, which is the endpoint of the static site hosted in your Storage account. You use the endpoint value to set up CORS settings for the function app in the next section.
+
+## Setup CORS in our function app 
+
+1. In the command palette, search for and select the **Azure Functions: Open in portal** command.
+
+1. Select the subscription and function app name.
+
+1. Once the portal is open in the browser, select the **Platform features** tab and select **CORS**.
+
+1. Check the checkbox next to **Enable Access-Control-Allow-Credentials**. 
+
+1. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You should be able to paste this value in from your clipboard.
+
+1. Click **Save** to persist the CORS settings.
+
+    ![Enable CORS support for Azure Functions app](../media/serverless-app-function-cors.png)
 
 ## Test our solution 
 

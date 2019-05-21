@@ -8,9 +8,9 @@ In the next exercise we'll get the code for this solution running on your local 
 
 ### Server
 
-The stock price information is stored on the server in an Azure Cosmos DB database. When triggered, an Azure Function configured with Azure Cosmos DB bindings returns the database content.
+The stock price information is stored on the server in an Azure Cosmos DB database. When triggered by an HTTP request, the function uses bindings to return content from Azure Cosmos DB database.
 
-The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Azure Cosmos DB database is achieved through bindings, which are configured in the *function.json* file, as shown in the following snippet.
+The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Azure Cosmos DB database is achieved using an input binding, which is configured in the *function.json* file, as shown in the following snippet.
 
 ```json
 {
