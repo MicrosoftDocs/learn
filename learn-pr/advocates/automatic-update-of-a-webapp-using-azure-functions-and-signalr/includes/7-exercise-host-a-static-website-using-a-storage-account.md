@@ -12,7 +12,7 @@ To give you control over the settings associated with creating Azure Functions a
 
 ## Deploy the function app
 
-1. Press the F1 key to open the Visual Studio Code command palette.
+1. Press the **CTRL/CMD+Shift+P** to open the Visual Studio Code command palette.
 
 1. If you are already signed-in to Azure in Visual Studio Code with a different account, use the **Azure: Sign Out** command to sign out. Otherwise, you create the function app outside of the Learn sandbox and may incur costs. 
 
@@ -60,7 +60,7 @@ To give you control over the settings associated with creating Azure Functions a
 
 Use the following steps to configure the Azure Storage account to host a static website.
 
-1. Open the Visual Studio Code command palette via **F1**.
+1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
 
 1. Search for and select the **Azure Storage: Configure static website** command.
 
@@ -72,7 +72,7 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 ## Deploy the web application to Azure Storage
 
-1. Open the Visual Studio Code command palette via **F1**.
+1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
 
 1. Search for and select the **Azure Storage: Deploy to static website** command.
 

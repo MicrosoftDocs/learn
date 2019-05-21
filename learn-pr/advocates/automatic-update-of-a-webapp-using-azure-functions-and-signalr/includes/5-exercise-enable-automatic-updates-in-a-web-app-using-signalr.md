@@ -4,7 +4,7 @@ In order to update the application to support the new functionality, you need to
 
 The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **negotiate** (by convention) to connect to the service.
 
-1. Open the Visual Studio Code command palette by pressing **F1**.
+1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
 
 1. Search for and select the **Azure Functions: Create Function** command.
 
