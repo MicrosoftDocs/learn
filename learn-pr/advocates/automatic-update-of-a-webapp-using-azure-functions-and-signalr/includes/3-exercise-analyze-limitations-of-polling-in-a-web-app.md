@@ -107,7 +107,7 @@ For the app to run, you need to add the connection strings and keys associated w
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query primaryMasterKey -o tsv)
 
-echo "<STORAGE_CONNECTION_STRING> = $STORAGE_CONNECTION_STRING"
+    echo "<STORAGE_CONNECTION_STRING> = $STORAGE_CONNECTION_STRING"
     echo "<COSMOSDB_CONNECTION_STRING> = $COSMOSDB_CONNECTION_STRING"
     echo "<COSMOSDB_MASTER_KEY> = $COSMOSDB_MASTER_KEY"
     ```
