@@ -107,9 +107,7 @@ For the app to run, you need to add the connection strings and keys associated w
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query primaryMasterKey -o tsv)
 
-    echo "<STORAGE_CONNECTION_STRING> = $STORAGE_CONNECTION_STRING"
-    echo "<COSMOSDB_CONNECTION_STRING> = $COSMOSDB_CONNECTION_STRING"
-    echo "<COSMOSDB_MASTER_KEY> = $COSMOSDB_MASTER_KEY"
+    printf "\n\n<STORAGE_CONNECTION_STRING>=\n$STORAGE_CONNECTION_STRING\n\n<COSMOSDB_CONNECTION_STRING>=\n$COSMOSDB_CONNECTION_STRING\n\n<COSMOSDB_MASTER_KEY>=\n$COSMOSDB_MASTER_KEY\n\n"
     ```
 
 1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.

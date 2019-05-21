@@ -34,10 +34,7 @@ For the app to run, you need to add the SignalR connection string saved to your 
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --query primaryConnectionString -o tsv)
 
-    echo ""
-    echo "Connection string"
-    echo "-------------------"
-    echo "<SIGNALR_CONNECTION_STRING> = $SIGNALR_CONNECTION_STRING"
+    printf "\n\n<SIGNALR_CONNECTION_STRING>=\n$SIGNALR_CONNECTION_STRING\n\n"
     ```
 
 1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
