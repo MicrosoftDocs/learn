@@ -2,16 +2,23 @@
 uid: learn-pr.ha-application-storage-with-grs
 metadata:
   title: ha-application-storage-with-grs
-  description: ...
-  ms.date: ...
+  description: Learn how to make your application storage highly available by ensuring you can fail over resources if there's an Azure region failure.
+  ms.date: 05/21/19
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: ha-application-storage-with-grs
-summary: ...
-abstract: ...
-prerequisites: ...
+summary: Learn how to make your application storage highly available by ensuring you can fail over resources if there's an Azure region failure.
+abstract: >
+  In this module, you will:
+  - Identify the features of RA-GRS storage 
+  - Identify the application design considerations when using RA-GRS 
+  - Implement the circuit breaker pattern in a sample application 
+prerequisites: >
+  - Basic knowledge of Azure Storage accounts
+  - Familiarity with C#
+  - Familiarity with Fiddler or similar HTTP inspection tool
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner

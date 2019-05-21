@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.ha-application-storage-with-grs.1-introduction
+uid: make-your-application-storage-highly-available-with-read-access-geo-redundant-storage.1-introduction
+title: Introduction
 metadata:
-  title: 1-introduction
-  description: ...
-  ms.date: ...
-  author: jboeshart
-  ms.author: jaboes
+  title: Introduction
+  description: Introduction
+  ms.date: 04/11/2019
+  author: balbirdayal
+  ms.author: balbirdayal
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: 1-introduction
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
