@@ -27,7 +27,7 @@ quiz:
     - content: Network Integration, Flexible Failovers, Physical Unix Server Recovery
       isCorrect: False
       explanation: A physical Unix server is not a supported Operating System that can be used 	with Azure Site Recovery.
-  - content: Which of these source server Operating Systems are supported by Azure Site 	Recovery?
+  - content: Which of these source server Operating Systems are supported by Azure Site	Recovery?
     choices:
     - content: VMware VM's, Physical Unix, Physical Windows
       isCorrect: false

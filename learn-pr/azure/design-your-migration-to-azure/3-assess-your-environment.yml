@@ -23,18 +23,18 @@ quiz:
       explanation: All three are valid reasons to use Azure Migrate
     - content: Assess Azure readiness, Migrate with confidence, Migrate databases
       isCorrect: false
-      explanation: Migrate databases is not a valid feature of Azure Migrate, the Azure 		Database Migration service should be used for database migration.
+      explanation: Migrate databases is not a valid feature of Azure Migrate, the Azure Database Migration service should be used for database migration.
     - content: Obtain VM size recommendations, Assess Azure readiness, Assess Physical Servers
       isCorrect: False
-      explanation: Azure Migrate cannot be used to assess physical servers, third party 		partner tools are needed for this
-  - content: Which of these port or ports are required for Azure Migrate communications?
+      explanation: Azure Migrate cannot be used to assess physical servers, third party partner tools are needed for this
+  - content: How are the steps ordered to complete an Azure readiness assessment?
     choices:
-    - content: Collector to Azure Migrate - 443, Collector to vCenter Server - 80, On Premises 	VM to Log Analystics Workspace - 902
+    - content: Install dependency agents on each on-premise VM, install the collector appliance on the vCenter Server, edit the default properties of an assessment, and then create the assessment.
       isCorrect: false
-      explanation: Port 80 is unencrypted web traffic and Port 902 is for vSphere console 		access
-    - content: Collector to Azure Migrate - 389, Collector to vCenter Server - 443, On-			premises VM to Log Analytics Workspace - 902
+      explanation: The collector appliance needs to be downloaded and installed first and the dependency agents. You can't change the properties of an assessment until one has been created.
+    - content: Install dependency agents on each on-premise VM, install the collector appliance on the vCenter Server, create the assessment, and then edit the default properties of the assessment to your requirements.
       isCorrect: false
-      explanation: Port 389 is for LDAP traffic and Port 902 is for vSphere console access
-     - content: Collector to Azure Migrate - 443, Collector to vCenter Server - 443, On-		premises VM to Log Analytics Workspace - 443
+      explanation: The collector appliance needs to be downloaded and installed first and the dependency agents.
+     - content: Install the collector appliance on the vCenter Server, install dependency agents on each on-premise VM, create the assessment, and then edit the default properties of the assessment to your requirements.
       isCorrect: true
-      explanation: Port 443 is required to be open in all cases
+      explanation: This is the correct answer, remember that installing the dependency agents are optional. Also you don't need to edit the assessment if the defaults are sufficient.

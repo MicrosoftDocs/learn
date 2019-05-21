@@ -27,7 +27,7 @@ quiz:
     - content: Optimise
       isCorrect: False
       explanation: This is not the first stage of the migration process, this come third in the plan.
-  - content: In which stage would you identify the tools rquired for the migration?
+  - content: In which stage would you identify the tools required for the migration?
     - content: Migrate
       isCorrect: True
       explanation: This is correct, at the early migration stages the tools to be used should be identified. 

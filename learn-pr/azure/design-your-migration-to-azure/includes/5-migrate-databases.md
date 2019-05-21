@@ -2,7 +2,7 @@ During the early stages of the migration project the IT Director requested that 
 
 In this unit you will discover the **Azure Database Migration Service** which has been designed to offer a single tool that provides an end to end solution to move on-premises SQL server databases to the Azure cloud.
 
- ## Azure Database Migration Service
+## Azure Database Migration Service
 
 The migration service is similar to Azure Migrate as it offers a guided solution with recommendations to migrate your on-premise SQL environment to the Azure cloud. It uses the technology behind the Data Migration Assistant to assess and guide through the initial planning steps for the migration and ultimately carries out the migration when required.
 
@@ -29,7 +29,7 @@ On completion the assessment will generate a report with a set of recommendation
 
 A sample report produced can be referred to below
 
-<-- Insert picture similar to this, Azure Migrate Architecture -->
+<!-- Insert picture similar to this, Azure Migrate Architecture -->
 
 ![Sample DMA Report](../media/2dma-assessment.png)
 
@@ -50,31 +50,3 @@ Before starting the database data migration Azure must be prepared in readiness.
 - **Identify the databases**- Once the credentials are entered correctly the list of available databases on the source server appear, they should now be mapped to their relevant target database on the target server
 - **Run and monitor the migration**- Once the databases have been selected, you can select the **Run migration** button to start the migration. The migration activity screen will appear where progress can be tracked until the process shows as 'completed'.
 - **Check the migrated databases** - Once all the required databases have been migrated they should be checked to ensure they are working as expected.
-
-## Knowledge Check
-
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: Which of the following ports are need to be open on your Azure VNET NSG to allow the Database Migration Service to communicate inbound from an On-Premise environment ?
-    choices:
-    - content: 443, 53, 9354
-      isCorrect: True
-      explanation: These are all valid ports which need to be opened up for inbound 	communications to your Azure environment
-    - content: 80, 54, 9354
-      isCorrect: Fals
-      explanation: 80 is unencrypted HTTP traffic, and 54 is a Xerox network service
-    - content: 443, 54, 9534
-      isCorrect: False
-      explanation: 443 is correct, however 54 is a Xerox network service and 9534 is from a 	range of unassigned ports
-  - content: Name the two permissions that are required to be added to the credentials used to connect to your source SQL instance during a planned migration
-    choices:
-    - content: Control Services, Control Database
-      isCorrect: false
-      explanation: Control Services is not a valid permission
-    - content: Control Server, Control Database
-      isCorrect: True
-      explanation: These are both valid permissions that need to be added to the account used 	to connect to the source SQL instance during a planned migration
-     - content: Control Services, Control Data Type 
-      isCorrect: False
-      explanation: Neither Control Services or Control Data Type are supported permissions
