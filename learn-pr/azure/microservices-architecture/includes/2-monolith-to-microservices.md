@@ -4,6 +4,8 @@ Fabrikam has integrated their new drone service into their existing application,
 
 A monolithic architecture is an architecture where all components for an application are co-located within a single unit. This unit is typically constrained within a single runtime instance of the application. Traditional applications often consist of a web interface, a services layer, and a data layer. In a monolithic architecture, these are combined on an instance of the application.
 
+![Logical diagram of a monolithic architecture](../media/2-monolith.png)
+
 Monolithic architecture are often suitable solutions for small applications, but can become unwieldy as the application grows. What was originally a small application, can quickly become a giant ball of mud that is difficult to scale, difficult to deploy to, and difficult to innovate on.
 
 Because the all services are contained within a single unit, it brings challenges especially as their business, and subsequent system load, grows. Some of these challenges are:
@@ -101,5 +103,3 @@ So with all this background information, in what situations is a microservices a
 - Complex applications that need to be highly scalable.
 - Applications with rich domains or many subdomains.
 - An organization that consists of small development teams.
-
-<!-- Now that we've talked a bit about monolithic and microservices architectures, let's deploy a monolithic application and dive further into how we can evolve it to a microservices architecture. -->

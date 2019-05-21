@@ -1,4 +1,4 @@
-Summary of module
+We have identified the features and capabilities of microservices. We've discussed the differences between a monolith and microservices architecture. We've gone through service decomposition for a monolithic application and redeployed it as a microservice.
 
 ## Learn more
 
