@@ -15,7 +15,7 @@ Before you begin, make sure you have the following software installed on your ma
     ```
 
     > [!IMPORTANT]
-    > Do not run `npm install` until you have completed the steps that update the *local.settings.json*. There is a post-install script that sets up your database and adds some data to the database.
+    > Do not run `npm install` until you have completed the steps that update the *local.settings.json*. A post-install script is included to set up your database and add some data to the database.
 
 1. Run the following command to navigate to the new folder into which you cloned the repo:
 
@@ -114,7 +114,7 @@ For the app to run, you need to add the connection strings and keys associated w
     ```
 
     > [!NOTE]
-    > If there is a problem during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
+    > If a problem arises during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
 
 1. Press F5 to start debugging the function app. The function app startup is shown in a terminal window.
 

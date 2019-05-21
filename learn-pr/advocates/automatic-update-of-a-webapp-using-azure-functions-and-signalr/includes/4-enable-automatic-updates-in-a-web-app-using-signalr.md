@@ -6,7 +6,7 @@ As data changes in the database, **Azure Cosmos DB** exposes a "change feed". Ch
 
 To summarize, the key difference between this function and the original `getStocks` function is that we are now triggering our function based on changes to our data. In the preceding exercise, we triggered our function based on requests from the client and pulled back all data through an Azure Cosmos DB input binding. Using the Azure Cosmos DB trigger automatically makes our data retrieval more efficient
 
-**Azure Functions** features binding that runs code anytime there is an update to the Azure Cosmos DB change feed. Once a  function is listening to the change feed, then you can work with a subset of your data that just represents data changes. When paired with a persistent connection to the client, the function can contact individual clients on-demand, which is the foundation for a real-time application architecture.
+**Azure Functions** features binding that runs code anytime data is updated in the Azure Cosmos DB change feed. Once a  function is listening to the change feed, then you can work with a subset of your data that just represents data changes. When paired with a persistent connection to the client, the function can contact individual clients on-demand, which is the foundation for a real-time application architecture.
 
 <!--
     REVIEW:

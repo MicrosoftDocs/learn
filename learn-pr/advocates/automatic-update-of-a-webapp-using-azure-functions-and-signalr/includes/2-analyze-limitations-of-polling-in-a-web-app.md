@@ -2,15 +2,15 @@
 
 The application’s current architecture reports stock information by fetching changes from the server based on a timer. This design is often called a polling-based design.  
 
-Before we analyze the limitations of this approach, let's take a look at the current app architecture. The solution is composed of a server component for storing stock information and client component that renders this data to users in their browser. 
+Before we analyze any limitations, let's review the current architecture. The server is responsible for storing stock information and the client renders data in the browser.
 
-In the next exercise we'll get the code for this solution running on your local machine. 
+In the next exercise, we'll get the code for this solution running on your local machine.
 
 ### Server
 
 The stock price information is stored on the server in an Azure Cosmos DB database. When triggered by an HTTP request, the function uses bindings to return content from Azure Cosmos DB database.
 
-The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Azure Cosmos DB database is achieved using an input binding, which is configured in the *function.json* file, as shown in the following snippet.
+The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Azure Cosmos DB database is achieved by using an input binding. This binding is configured in the *function.json* file, as shown in the following snippet.
 
 ```json
 {
@@ -143,15 +143,15 @@ In the *local.settings.json* file, the `Host` section includes the following set
   }
 ```
 
-This configuration tells the locally-running function app that a web application running at *localhost:8080* is allowed to make requests to functions running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookies from the request.
+This configuration allows a web application running at *localhost:8080* to make requests to the function app running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookies from the request.
 
 ## Analysis of current solution
 
 Let's think about some of the drawbacks of this timer-based polling approach.
 
-Timer-based polling is inefficient. In the prototype, the client application contacts the server regardless of whether or not there are any changes to the underlying data. Also, once data is returned from the server the entire list of stocks is updated on the web page - again - whether or not there are any changes in the data.
+Timer-based polling is inefficient. In the prototype, the client application contacts the server whether or not changes exist to the underlying data. Once data is returned from the server the entire list of stocks is updated on the web page - again - regardless of any changes in the data.
 
-Selecting the best polling interval for your scenario is also a challenging. Polling forces you to make a choice between how much each call to the backend costs and how quickly you want your app to respond to new data. There is often a delay between when new data becomes available and when it is detected by the app. The following illustration shows the issue.
+Selecting the best polling interval for your scenario is also a challenging. Polling forces you to make a choice between how much each call to the backend costs and how quickly you want your app to respond to new data. Delays also often exist between when new data becomes available and when it's detected by the app. The following illustration shows the issue.
 
 ![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media/polling-example.png)
 

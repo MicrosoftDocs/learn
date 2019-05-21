@@ -4,7 +4,7 @@ Up to this point you have only run the application on your machine. The next ste
 
 To give you control over the settings associated with creating Azure Functions apps, update the Azure Functions extension to enable advanced settings.
 
-1. Click **File > Preferences > Settings**
+1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
 2. Navigate through **User Settings > Extensions > Azure Functions**
 3. Check the checkbox for **Azure Function: Advanced Creation**
 
