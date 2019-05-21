@@ -13,3 +13,28 @@ title: Migrate databases with Azure Database Migration Service
 durationInMinutes: 10
 content: |
   [!include[](includes/5-migrate-databases.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following ports are need to be open on your Azure VNET NSG to allow the Database Migration Service to communicate inbound from an On-Premise environment ?
+    choices:
+    - content: 443, 53, 9354
+      isCorrect: True
+      explanation: These are all valid ports which need to be opened up for inbound communications to your Azure environment
+    - content: 80, 54, 9354
+      isCorrect: Fals
+      explanation: 80 is unencrypted HTTP traffic, and 54 is a Xerox network service
+    - content: 443, 54, 9534
+      isCorrect: False
+      explanation: 443 is correct, however 54 is a Xerox network service and 9534 is from a 	range of unassigned ports
+  - content: Name the two permissions that are required to be added to the credentials used to connect to your source SQL instance during a planned migration
+    choices:
+    - content: Control Services, Control Database
+      isCorrect: false
+      explanation: Control Services is not a valid permission
+    - content: Control Server, Control Database
+      isCorrect: True
+      explanation: These are both valid permissions that need to be added to the account used to connect to the source SQL instance during a planned migration
+     - content: Control Services, Control Data Type 
+      isCorrect: False
+      explanation: Neither Control Services or Control Data Type are supported permissions

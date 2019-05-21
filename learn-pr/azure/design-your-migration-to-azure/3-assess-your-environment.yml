@@ -13,3 +13,28 @@ title: Assess your environment with Azure Migrate
 durationInMinutes: 10
 content: |
   [!include[](includes/3-assess-your-environment.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following are valid reasons to use Azure Migrate?
+    choices:
+    - content: Assess Azure readiness, Obtain VM size recommendations, Migrate with confidence
+      isCorrect: True
+      explanation: All three are valid reasons to use Azure Migrate
+    - content: Assess Azure readiness, Migrate with confidence, Migrate databases
+      isCorrect: false
+      explanation: Migrate databases is not a valid feature of Azure Migrate, the Azure 		Database Migration service should be used for database migration.
+    - content: Obtain VM size recommendations, Assess Azure readiness, Assess Physical Servers
+      isCorrect: False
+      explanation: Azure Migrate cannot be used to assess physical servers, third party 		partner tools are needed for this
+  - content: Which of these port or ports are required for Azure Migrate communications?
+    choices:
+    - content: Collector to Azure Migrate - 443, Collector to vCenter Server - 80, On Premises 	VM to Log Analystics Workspace - 902
+      isCorrect: false
+      explanation: Port 80 is unencrypted web traffic and Port 902 is for vSphere console 		access
+    - content: Collector to Azure Migrate - 389, Collector to vCenter Server - 443, On-			premises VM to Log Analytics Workspace - 902
+      isCorrect: false
+      explanation: Port 389 is for LDAP traffic and Port 902 is for vSphere console access
+     - content: Collector to Azure Migrate - 443, Collector to vCenter Server - 443, On-		premises VM to Log Analytics Workspace - 443
+      isCorrect: true
+      explanation: Port 443 is required to be open in all cases
