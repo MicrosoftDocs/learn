@@ -92,7 +92,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. In the right-hand panel, select **View Files**. You might have to scroll horizontally to the right in order to see this menu. 
 
-1. Select **function.json** to view the bindings associated with your new function. TThis information specifies any authentication requirements, together with the HTTP methods that can trigger the function. This file also specifies that the function is a client that starts the orchestration process. The file should look like this:
+1. Select **function.json** to view the bindings associated with your new function. This information specifies any authentication requirements, together with the HTTP methods that can trigger the function. This file also specifies that the function is a client that starts the orchestration process. The file should look like this:
 
     > [!NOTE]
     > A binding associates resources and other items with a trigger. It is a declarative mechanism that removes the need to hard-code references to other services and functions in your code.
