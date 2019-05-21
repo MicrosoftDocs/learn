@@ -11,9 +11,12 @@ If the traffic directed to the backend pool is protected by using SSL, then each
 > [!IMPORTANT]
 > The exercise that follows uses the *openssl* utility to create self-signed certificates. It is important to understand that these certificates are for testing only. They are unverifiable, and you should never use them in a real system.
 
-## Client-side certificates for the backend pool
+## Client-side certificates for the backend pool in Application Gateway v1
 
-Application Gateway requires that you install the client-side certificate (also called the *authorization certificate*) for the servers in the gateway configuration. This certificate contains the public key that Application Gateway can use to encrypt messages and authenticate your servers. You can create this certificate by exporting it from the server. The server-side certificate contains the private key for decrypting these messages, and should only be stored in your application servers.
+> [!NOTE]
+> If you are using Azure App Service to host the backend application, you don't need to install any certificates in Application Gateway to connect to the backend pool. ALl communications are automatically encrypted, and the servers are trusted by Application Gateway because they are managed by Azure.
+
+Application Gateway v1 requires that you install the client-side certificate (also called the *authorization certificate*) for the servers in the gateway configuration. This certificate contains the public key that Application Gateway can use to encrypt messages and authenticate your servers. You can create this certificate by exporting it from the server. The server-side certificate contains the private key for decrypting these messages, and should only be stored in your application servers.
 
 You can add a client-side certificate to Application Gateway using the `az network application-gateway auth-cert create` command from the Azure CLI. The following example illustrates the syntax of this command. The *\<certificate name>* argument is a name that you use to reference the certificate in Application Gateway. The *\<client-side certificate>* argument specifies a file containing the certificate. The certificate should be in CER (Claim, Evidence, and Reasoning) format.
 
@@ -27,11 +30,26 @@ az network application-gateway auth-cert create \
 
 Application Gateway provides other commands that you can use to list and manage client-side certificates. For example, the `az network application-gateway auth-cert list` command shows the certificates that have been installed, the `az network application-gateway auth-cert update` command can be used to change the certificate, and the `az network application-gateway auth-cert delete` command removes a certificate.
 
+## Certificates for the backend pool in Application Gateway v2
+
+Application Gateway v2 has slightly different authentication requirements. You provide the certificate for the certification authority (CA) that has authenticated the SSL certificate for the servers in the backend pool. You add this certificate as a trusted root certificate to Application Gateway. Use the `az network application-gateway root-cert create` command from the Azure CLI:
+
+```azurecli
+az network application-gateway root-cert create \
+      --resource-group <resource group name> \
+      --gateway-name <application gateway name> \
+      --name <certificate name> \
+      --cert-file <trusted CA certificate>
+```
+
+> [!NOTE]
+> If your servers are using a self-signed certificate, add this certificate as the trusted root certificate in Application Gateway.
+
 ## HTTP settings
 
 Application Gateway uses a *rule* to specify how to direct the messages that it receives on its incoming port to the servers in the backend pool. If the servers are using SSL, then you must configure the *rule* to indicate that the servers expect traffic using the HTTPS protocol, and which certificate to use to encrypt traffic and authenticate the connection to a server. You define this configuration information using an *HTTP Setting*.
 
-Define HTTP setting information using the `az network application-gateway http-settings create` command in the Azure CLI. The example below shows the syntax for creating a setting that routes traffic using the HTTPS protocol to port 443 on the servers in the backend pool. The *\<certificate name>* argument is the name of the client-side certificate that you added to Application Gateway previously.
+Define HTTP setting information using the `az network application-gateway http-settings create` command in the Azure CLI. The example below shows the syntax for creating a setting that routes traffic using the HTTPS protocol to port 443 on the servers in the backend pool. If you're using Application Gateway v1, the *\<certificate name>* argument is the name of the client-side certificate that you added to Application Gateway previously.
 
 ```azurecli
 az network application-gateway http-settings create \
@@ -42,3 +60,5 @@ az network application-gateway http-settings create \
     --protocol Https \
     --auth-certs <certificate name>
 ```
+
+If you're using Application Gateway v2, **you should omit the `--auth-certs` parameter**. Application Gateway contacts the backend server, and verifies the authenticity of the certificate presented by the server against the CAs specified by its list of trusted root certificates. If there's no match, then Application Gateway won't connect to the backend server, and will fail with an HTTP 502 (Bad Gateway) error.

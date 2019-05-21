@@ -1,6 +1,8 @@
 Having configured the certificates for Application Gateway and the backend pool, you can create a listener to handle incoming requests. The listener will wait for messages, decrypt them using the private certificate, and then route theses messages to the backend pool.
 
-In this unit, you'll set up the listener with port 443 and with the TLS certificate you created in the first exercise.
+In this unit, you'll set up the listener with port 443 and with the SSL certificate you created in the first exercise. The image below highlights the elements you'll set up in this exercise.
+
+![Image highlighting the elements (frontend port, SSL certificate for App Gateway, listener, and rule) created in this exercise](../media/6-exercise-elements.png)
 
 ## Configure listener
 
@@ -56,6 +58,19 @@ In this unit, you'll set up the listener with port 443 and with the TLS certific
         --http-settings https-settings \
         --rule-type Basic
     ```
+
+<!-- To get this working, perform the following additional steps using PowerShell 
+
+```PowerShell
+$gw = Get-AzApplicationGateway -Name gw-shipping -ResourceGroupName $rgName
+
+$trustcert = Get-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw
+
+$poolSetting01 = set-AzApplicationGatewayBackendHttpSettings -ApplicationGateway $gw -Name https-settings -Port 443 -Protocol Https -CookieBasedAffinity Disabled -TrustedRootCertificate $trustcert -HostName 10.0.1.4
+
+Set-AzApplicationGateway -ApplicationGateway $gw
+```
+-->
 
 ## Test the Application Gateway
 

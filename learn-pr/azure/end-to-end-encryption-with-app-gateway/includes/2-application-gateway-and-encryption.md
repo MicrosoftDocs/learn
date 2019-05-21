@@ -24,4 +24,8 @@ Traffic enters the gateway through a frontend port. You can open many ports, and
 
 ### Backend pool
 
-The Backend Pool contains your application servers. Incoming requests can be load-balanced across the servers in this pool. The Backend Pool has an HTTP setting that references your public certificate. The gateway re-encrypts the traffic using this certificate before sending it to one of your servers in the Backend Pool.
+The Backend Pool contains your application servers. Incoming requests can be load-balanced across the servers in this pool. The Backend Pool has an HTTP setting that references a certificate used to authenticate the backend servers. The gateway re-encrypts the traffic using this certificate before sending it to one of your servers in the Backend Pool.
+
+The following image shows how incoming traffic from a client to Application Gateway over SSL is decrypted and then re-encrypted when it is sent to server in the backend pool.
+
+![Image showing how messages are decrypted and re-encrypted in an end-to-end SSL configuration with Application Gateway ](../media/1-components.png)
