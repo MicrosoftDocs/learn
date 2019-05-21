@@ -37,7 +37,7 @@ Azure Functions requires a storage account, and you'll need it when you deploy t
 
 1. Execute the following command in the Cloud Shell to define a name for your Azure Storage account.
 
-    ```azurecli-interactive
+    ```bash
     export STORAGE_ACCOUNT_NAME=mslsigrstorage$(openssl rand -hex 5)
     echo "Storage Account Name: $STORAGE_ACCOUNT_NAME"
     ```
@@ -46,7 +46,7 @@ Azure Functions requires a storage account, and you'll need it when you deploy t
 
 1. Run the following `az storage account create` command in the Cloud Shell to create a storage account for your function and static website.
 
-    ```azurecli-interactive
+    ```bash
     az storage account create \
       --name $STORAGE_ACCOUNT_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -62,7 +62,7 @@ You store stock prices in an Azure Cosmos DB database, so you'll set that up in 
 
 1. Execute the following command in the Cloud Shell to generate a name for your Azure Cosmos DB account.
 
-    ```azurecli-interactive
+    ```bash
     export COSMOSDB_ACCOUNT_NAME=msl-sigr-cosmos-$(openssl rand -hex 5)
     echo "Azure Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
     ```
@@ -71,7 +71,7 @@ You store stock prices in an Azure Cosmos DB database, so you'll set that up in 
 
 1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group. 
 
-    ```azurecli-interactive
+    ```bash
     az cosmosdb create  \
       --name $COSMOSDB_ACCOUNT_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn>
@@ -85,13 +85,13 @@ You'll need to add a SignalR account to your sandbox subscription. The first ste
 
 1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
 
-    ```azurecli-interactive
+    ```bash
     az extension add -n signalr
     ```
 
 1. Execute the following command in the Cloud Shell to generate a name for your SignalR account.
 
-    ```azurecli-interactive
+    ```bash
     export SIGNALR_ACCOUNT_NAME=msl-sigr-signalr$(openssl rand -hex 5)
     echo "SignalR Account Name: $SIGNALR_ACCOUNT_NAME"
     ```
@@ -100,7 +100,7 @@ You'll need to add a SignalR account to your sandbox subscription. The first ste
 
 1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group.
 
-    ```azurecli-interactive
+    ```bash
     az signalr create \
       --name $SIGNALR_ACCOUNT_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -114,7 +114,7 @@ For the app to run, you need to add the connection strings and keys associated w
 
 1. Run the following commands in the Cloud Shell  to get the connection strings for the resources we created in this exercise.
 
-    ```azurecli-interactive
+    ```bash
     STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
     --name $(az storage account list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
