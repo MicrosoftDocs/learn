@@ -67,7 +67,7 @@ You store stock prices in an Azure Cosmos DB database, so you'll set that up in 
     echo "Azure Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
     ```
 
-    Remember this  account name for the remainder of the module. 
+    Remember this  account name for the remainder of the module.
 
 1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group. 
 
@@ -79,40 +79,11 @@ You store stock prices in an Azure Cosmos DB database, so you'll set that up in 
 
     It can take a few minutes to create an Azure Cosmos DB account. Wait for this step to finish before proceeding.
 
-## Create a SignalR account
-
-You'll need to add a SignalR account to your sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI).
-
-1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
-
-    ```bash
-    az extension add -n signalr
-    ```
-
-1. Execute the following command in the Cloud Shell to generate a name for your SignalR account.
-
-    ```bash
-    export SIGNALR_ACCOUNT_NAME=msl-sigr-signalr$(openssl rand -hex 5)
-    echo "SignalR Account Name: $SIGNALR_ACCOUNT_NAME"
-    ```
-
-    Keep note of this account name for the remainder of the module. 
-
-1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group.
-
-    ```bash
-    az signalr create \
-      --name $SIGNALR_ACCOUNT_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --sku Free_DS2 \
-      --unit-count 1
-    ```
-
 ## Update local settings
 
 For the app to run, you need to add the connection strings and keys associated with your Azure Storage, Functions and database services to your local settings.
 
-1. Run the following commands in the Cloud Shell  to get the connection strings for the resources we created in this exercise.
+1. Run the following commands in the Cloud Shell to get the connection strings for the resources we created in this exercise.
 
     ```bash
     STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
@@ -136,22 +107,14 @@ For the app to run, you need to add the connection strings and keys associated w
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query primaryMasterKey -o tsv)
 
-    SIGNALR_CONNECTION_STRING=$(az signalr key list \
-      --name $(az signalr list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-            --query [0].name -o tsv) \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query primaryConnectionString -o tsv)
-
-    echo "<STORAGE_CONNECTION_STRING> = $STORAGE_CONNECTION_STRING"
+echo "<STORAGE_CONNECTION_STRING> = $STORAGE_CONNECTION_STRING"
     echo "<COSMOSDB_CONNECTION_STRING> = $COSMOSDB_CONNECTION_STRING"
     echo "<COSMOSDB_MASTER_KEY> = $COSMOSDB_MASTER_KEY"
-    echo "<SIGNALR_CONNECTION_STRING> = $SIGNALR_CONNECTION_STRING"
     ```
 
 1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
 
-1. In **local.settings.json**, update the variables `AzureWebJobsStorage`, `AzureCosmosDBConnectionString`, `AzureCosmosDBMasterKey` and `AzureSignalRConnectionString` with the values listed in the Cloud Shell and save the file. The local.settings.json file should only exist on your local computer.
+1. In **local.settings.json**, update the variables `AzureWebJobsStorage`, `AzureCosmosDBConnectionString`, and `AzureCosmosDBMasterKey` with the values listed in the Cloud Shell and save the file. The *local.settings.json* file should only exist on your local computer.
 
 ## Run the application
 

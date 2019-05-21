@@ -1,5 +1,49 @@
 In order to update the application to support the new functionality, you need to create a few new functions and update the JavaScript on the client.
 
+## Create a SignalR account
+
+You'll need to add a SignalR account to your sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI).
+
+1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
+
+    ```bash
+    az extension add -n signalr
+    ```
+
+1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group.
+
+    ```bash
+    az signalr create \
+      --name msl-sigr-signalr$(openssl rand -hex 5) \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --sku Free_DS2 \
+      --unit-count 1
+    ```
+
+## Update local settings
+
+For the app to run, you need to add the SignalR connection string saved to your local settings.
+
+1. Run the following commands in the Cloud Shell  to get the connection strings for the resources we created in this exercise.
+
+    ```bash
+    SIGNALR_CONNECTION_STRING=$(az signalr key list \
+      --name $(az signalr list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --query [0].name -o tsv) \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --query primaryConnectionString -o tsv)
+
+    echo ""
+    echo "Connection string"
+    echo "-------------------"
+    echo "<SIGNALR_CONNECTION_STRING> = $SIGNALR_CONNECTION_STRING"
+    ```
+
+1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
+
+1. In **local.settings.json**, update the variable `AzureSignalRConnectionString` with the value listed in the Cloud Shell and save the file.
+
 ## Manage client connections
 
 The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **negotiate** (by convention) to connect to the service.
