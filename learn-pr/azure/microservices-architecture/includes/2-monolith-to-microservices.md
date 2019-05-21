@@ -1,4 +1,4 @@
-Fabrikam has integrated their new drone service into their existing application, but they realize that this isn't a good plan for thier application moving forward. The existing system is a monolithic architecture, but what exactly does that mean?
+Fabrikam has integrated their new drone service into their existing application, but they realize that this isn't a good plan for their application moving forward. The existing system is a monolithic architecture, but what exactly does that mean?
 
 ## What is a monolithic architecture?
 
