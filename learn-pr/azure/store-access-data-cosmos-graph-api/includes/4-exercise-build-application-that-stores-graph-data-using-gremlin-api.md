@@ -42,7 +42,7 @@ It might take a few minutes for Azure to create your new Cosmos DB account. When
 
 1. Click **Data Explorer**, and then click **New Graph**.
 
-1. In the **Add graph** page, enter the settings for your new graph. Take not of the values that you choose for the **Database ID** and **Graph ID**; you will use these values when you create your application in the next section.
+1. In the **Add graph** page, enter the settings for your new graph. Take note of the values that you choose for the **Database ID** and **Graph ID**; you will use these values when you create your application in the next section.
 
    | Setting| Suggested value | Description |
    | --- | --- | --- |
