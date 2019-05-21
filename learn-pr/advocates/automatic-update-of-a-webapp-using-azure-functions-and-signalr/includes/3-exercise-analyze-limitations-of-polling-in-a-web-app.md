@@ -60,20 +60,11 @@ Azure Functions requires a storage account, and you'll need it when you deploy t
 
 You store stock prices in an Azure Cosmos DB database, so you'll set that up in the sandbox account.
 
-1. Execute the following command in the Cloud Shell to generate a name for your Azure Cosmos DB account.
-
-    ```bash
-    export COSMOSDB_ACCOUNT_NAME=msl-sigr-cosmos-$(openssl rand -hex 5)
-    echo "Azure Cosmos DB Account Name: $COSMOSDB_ACCOUNT_NAME"
-    ```
-
-    Remember this  account name for the remainder of the module.
-
-1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group. 
+1. Run the following `az cosmosdb create` command in the Cloud Shell to create a new Azure Cosmos DB account in your sandbox resource group.
 
     ```bash
     az cosmosdb create  \
-      --name $COSMOSDB_ACCOUNT_NAME \
+      --name msl-sigr-cosmos-$(openssl rand -hex 5) \
       --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
