@@ -75,7 +75,7 @@ module.exports = async function (context, req, stocks) {
 
 ### Client
 
-The sample client uses Vue.js to compose the UI and the axios HTTP client to handle requests to the Azure Function.
+The sample client uses Vue.js to compose the UI and the axios HTTP client to handle requests to the function.
 
 <!--
     REVIEW:

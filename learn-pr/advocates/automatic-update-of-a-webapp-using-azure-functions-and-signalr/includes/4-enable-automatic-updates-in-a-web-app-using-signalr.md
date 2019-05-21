@@ -30,4 +30,4 @@ The abstraction layer offered by SignalR provides two benefits to your applicati
 
 The second benefit of SignalR'a abstraction is that it allows your application to gracefully degrade depending on supported technologies of the client. If it doesn't support WebSockets, then Server Sent Events are used. If the client can't handle Server Sent Events, then it uses Ajax long polling, etc.
 
-Let's look at how to use SignalR in our app, so our Azure Function can broadcast information from the Azure Cosmos DB change feed to connected clients.
+Let's look at how to use SignalR in our app, so our function can broadcast information from the Azure Cosmos DB change feed to connected clients.

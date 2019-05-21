@@ -87,7 +87,7 @@ Now that the function to return the SignalR connection info is implemented, you 
 
 ## Detect and broadcast database changes
 
-First, you need to create a new Azure Function that listens for changes in the database. This is possible by using the built-in Azure Cosmos DB bindings.
+First, you need to create a new function that listens for changes in the database. This is possible by using the built-in Azure Cosmos DB bindings.
 
 1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
 1. Search for and select the **Azure Functions: Create Function** command.
