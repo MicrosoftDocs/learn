@@ -6,13 +6,13 @@ You'll use network security groups to secure network traffic for virtual machine
 
 In this module, you will:
 
-- Identify the capabilities and features of network security groups
-- Identify the capabilities and features of virtual network service endpoints
-- Use network security groups to restrict network connectivity
-- Use virtual network service endpoints to control network traffic to and from Azure services
+- Identify the capabilities and features of network security groups.
+- Identify the capabilities and features of virtual network service endpoints.
+- Use network security groups to restrict network connectivity.
+- Use virtual network service endpoints to control network traffic to and from Azure services.
 
 ## Prerequisites
 
 - Knowledge of basic networking concepts, including subnets and IP addressing.
-- Basic familiarity with Azure services, specifically Azure SQL Database, and Azure Storage Accounts.
+- Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
 - Familiarity with Azure virtual machines and virtual networking.
