@@ -1,4 +1,4 @@
-In this module, you learned how organizations that use tables in Azure Storage accounts can rapidly migrate their data to Cosmos DB to gain performance, scalability, and availability advantages. Another good reason to move to Cosmos DB is that users can connect to writable replicas of the data in their own regions, and Cosmos DB will replicate their changes throughout the world.
+In this module, you learned how organizations that use tables in Azure Storage accounts can rapidly migrate their data to Azure Cosmos DB to gain performance, scalability, and availability advantages. Another good reason to move to Azure Cosmos DB is that users can connect to writable replicas of the data in their own regions, and Azure Cosmos DB will replicate their changes throughout the world.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

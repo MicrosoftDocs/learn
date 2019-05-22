@@ -1,6 +1,6 @@
 Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry and you return the URL. The following flowchart explains the flow:
 
-![Flow diagram showing the process of finding a bookmark in our Cosmos DB back-end. When the Azure function receives a request with the bookmark id, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark id is present in the Cosmos DB, if not present an error response is generated. If the bookmark id is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
+![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark id, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark id is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark id is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
@@ -9,7 +9,7 @@ You need to store the data somewhere. In this flowchart, the data store is an Az
 ## Create an Azure Cosmos DB account
 
 > [!NOTE]
-> This unit is not intended to be a tutorial on Azure Cosmos DB. There is a complete learning path on Cosmos DB if you are interested in learning more after finishing this module.
+> This unit is not intended to be a tutorial on Azure Cosmos DB. There is a complete learning path on Azure Cosmos DB if you are interested in learning more after finishing this module.
 
 ### Create a database account
 
@@ -47,7 +47,7 @@ A database account is a container for managing one or more databases. Before we 
 
 ### Add a collection
 
-In Cosmos DB, a *container* holds arbitrary user-generated entities. For SQL and MongoDB API accounts, a container maps to a *collection*. Inside a collection, we store documents.
+In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. For SQL and MongoDB API accounts, a container maps to a *collection*. Inside a collection, we store documents.
 
 Let's use the Data Explorer tool in the Azure portal to create a database and collection.
 
@@ -62,7 +62,7 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
     |---|---|---|
     |Database ID|[!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]| Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You are free to enter whatever you want here, but we suggest [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] as the name for the new database, and that's what we'll refer to in this unit. |
     |Collection ID|[!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]|Enter [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] as the name for our new collection. Collection IDs have the same character requirements as database names.|
-    |Partition key|**/id**| The partition key specifies how the documents in Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Cosmos DB partition key strategies, please explore the Microsoft Learn Cosmos DB modules.|
+    |Partition key|**/id**| The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, please explore the Microsoft Learn Azure Cosmos DB modules.|
     |Throughput|1000 RU|Change the throughput to 1000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later.|
 
 3. Click **OK**. The Data Explorer displays the new database and collection. So, now we have a database. Inside the database, we've defined a collection. Next, we'll add some data, also known as documents.
@@ -200,7 +200,7 @@ You want to look up a bookmark with a specific ID, so let's tie the ID we receiv
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
     |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
     |SQL Query (optional)    |   leave blank       |   We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection.|
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection.|
 
 9. Select **Save** to save all changes to this binding configuration.
 
@@ -214,7 +214,7 @@ Now that you have your binding defined, it's time to use it in your function.
 
    [!code-javascript[](../code/find-bookmark-single.js)]
 
-An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Cosmos DB input binding. If the database finds a document that matches this ID, then the `bookmark` parameter will be set to the located document. In that case, we construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, we would respond with a payload and status code that tells the user the bad news.
+An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Azure Cosmos DB input binding. If the database finds a document that matches this ID, then the `bookmark` parameter will be set to the located document. In that case, we construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, we would respond with a payload and status code that tells the user the bad news.
 
 ## Try it out
 

@@ -47,7 +47,7 @@ For other unknown errors, quit the app.
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Open File ...**. Select  **Program.cs** in the file chooser dialog, and press Enter.
 
-1. Update the `connectionString` variable in this class to the value of the connection string of your Cosmos DB database we found earlier. 
+1. Update the `connectionString` variable in this class to the value of the connection string of your Azure Cosmos DB database we found earlier. 
 
 1. Scroll down to the `getAllChats()` method.
 
@@ -361,7 +361,7 @@ For other unknown errors, quit the app.
 
 ## Test the retry code
 
-If the firewall is still switched on for the Cosmos DB, the chat app can't connect to the database. Otherwise, if the chat app is still working then follow these steps to switch on the firewall.
+If the firewall is still switched on for the Azure Cosmos DB, the chat app can't connect to the database. Otherwise, if the chat app is still working then follow these steps to switch on the firewall.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
@@ -369,7 +369,7 @@ If the firewall is still switched on for the Cosmos DB, the chat app can't conne
 
 1. In the list of database accounts, select the database account with a name beginning with **learn-cosmos-db-**.
 
-1. In the Cosmos DB panel, select **Firewall and virtual networks**.
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
 
 1. In *Allow access from*, choose the option **Selected networks**.
 
@@ -377,7 +377,7 @@ If the firewall is still switched on for the Cosmos DB, the chat app can't conne
 
 1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
 
-1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.

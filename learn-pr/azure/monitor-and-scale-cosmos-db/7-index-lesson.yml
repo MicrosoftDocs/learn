@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-azure-cosmos-db.7-index-lesson
-title: Identify indexing strategies for your Cosmos DB data
+title: Identify indexing strategies for your Azure Cosmos DB data
 metadata:
   title: Learn how to index data in an NoSQL database
   description: Indexing policy impacts the request units of read and write operations, and can be optimized according to workload

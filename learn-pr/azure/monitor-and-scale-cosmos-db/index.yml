@@ -12,12 +12,12 @@ title: Optimize performance of Azure Cosmos DB by using partitioning and indexin
 summary: Learn how to measure the throughput of your NoSQL database and assess the impact of partition key and indexing strategies on throughput.  
 abstract: | 
   In this module, you will:
-  - Measure the throughput of your Cosmos DB
-  - Identify partition strategy for your Cosmos DB data
+  - Measure the throughput of your Azure Cosmos DB
+  - Identify partition strategy for your Azure Cosmos DB data
   - Measure the impact of different indexing strategies
 prerequisites: |
   - Familiarity with NoSQL database concepts
-  - Familiarity with Cosmos DB concepts like databases, collections, and documents
+  - Familiarity with Azure Cosmos DB concepts like databases, collections, and documents
 iconUrl: /learn/achievements/monitor-azure-cosmos-db.svg
 levels:
 - intermediate
