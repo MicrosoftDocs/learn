@@ -20,4 +20,4 @@ Let's look at the services available in Azure DevOps:
 |![Azure Test Plans](../media/azure-test-plans.png)|[Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/) help you ship with confidence by providing manual and exploratory testing tools.|
 |![Azure Artifacts](../media/azure-artifacts.png)|[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/) give you the ability to create, host, and share packages with your team. You can easily add artifacts to your CI/CD pipelines with a single click.|
 
-DevOps is not just about the toolchain you use but also about people and process. That said, the choice of an enterprise-class, modern DevOps friendly toolchain is an integral component you need to consider. In the next topic, you'll complete an exercise to sign up for a free Azure DevOps account.
+DevOps is not just about the toolchain you use but also about people and process. That said, the choice of an enterprise-class, modern DevOps friendly toolchain is an integral component you need to consider. In the next topic, you'll complete an exercise to sign up for a free Azure DevOps organization.
