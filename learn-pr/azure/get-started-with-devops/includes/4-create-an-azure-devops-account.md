@@ -3,7 +3,7 @@ Microsoft provides free Azure DevOps organizations for individuals, small teams,
 ## Create an Azure DevOps organization
 
 > [!NOTE]
-> If you already have an Azure DevOps organization, you can skip the following section and move on to **Create a new project**
+> If you already have an Azure DevOps organization, you can skip the following section and move on to **Create a new project**.
 
 To create an Azure DevOps organization, carry out the following procedure:
 
