@@ -1,16 +1,16 @@
-You're now ready to complete your site-to-site VPN gateway by creating the public IP addresses, virtual network gateways, and connections. Remember that when you created your local network gateways you used dummy public IP address references. So one of your tasks now is to update these gateways with the actual public IP addresses assigned to your virtual network gateways.
+You're now ready to complete your site-to-site VPN gateway by creating the public IP addresses, virtual network gateways, and connections. Remember that you used placeholders for the public IP address references when you created your local network gateways. So one of your tasks now is to update these gateways with the actual public IP addresses assigned to your virtual network gateways.
 
-Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you'll see how to update the local network gateways. The same commands are used to update any configuration element in the local network gateways, such as remote network address spaces.
+Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you'll see how to update the local network gateways. The same commands are used to update any configuration elements in the local network gateways, like remote network address spaces.
 
-Virtual network gateway creation is a long-running process and can take up to 45 minutes. To avoid the delay, you'll use Azure CLI commands with the `--no-wait` parameter to allow you to create the second virtual network gateway that simulates your on-premises device in the HQ-Network.
+It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create the second virtual network gateway that simulates your on-premises device in the HQ-Network while you're deploying the first one.
 
 ## Create virtual machines
 
-To verify that your virtual networks are connected you'll create two Ubuntu VMs, one in each of the virtual networks. You'll then use SSH to connect from the VM in the **HQ-Network** to the virtual network in the **Azure-VNet-1** virtual network using its private IP address.
+To verify that your virtual networks are connected, you'll create two Ubuntu VMs, one in each of the virtual networks. You'll then use SSH to connect from the VM in the HQ-Network to the virtual machine in the Azure-VNet-1 virtual network by using its private IP address.
 
-To save time, you'll create these VMs while your VPN Gateways are deploying. It takes a few minutes to create the VMs, so to avoid the delay, you'll use Azure CLI commands will with the `--no-wait` parameter.
+To save time, you'll create these VMs while your VPN gateways are deploying. It takes a few minutes to create the VMs, so to avoid the delay, you'll use Azure CLI commands will with the `--no-wait` parameter.
 
-1. Run the following command in the Cloud Shell to create an Ubuntu VM in the **HQ-Network** virtual network, replacing `<password>` with a string to use for the admin password.
+1. In the Cloud Shell, run this command to create an Ubuntu VM in the **HQ-Network** virtual network. Replace `<password>` with a string to use for the admin password.
 
     ```azurecli
     az vm create \
@@ -24,7 +24,7 @@ To save time, you'll create these VMs while your VPN Gateways are deploying. It 
         --admin-password <password>
     ```
 
-1. Run the following command in the Cloud Shell to create an Ubuntu VM in the **Azure-VNet-1** virtual network, replacing `<password>` with a string to use for the admin password. To prove you are making a connection through the VPN Gateways, you'll provision this VM *without* a public IP address.
+1. Run this command to create an Ubuntu VM in the **Azure-VNet-1** virtual network. Replace `<password>` with a string to use for the admin password. To prove that you're making a connection through the VPN gateways, you'll provision this VM *without* a public IP address.
 
     ```azurecli
     az vm create \
@@ -43,7 +43,7 @@ To save time, you'll create these VMs while your VPN Gateways are deploying. It 
 
 Next, you'll create the VPN gateway for the Azure end of the connection.
 
-1. Run the following command in the Cloud Shell to create the **PIP-VNG-Azure-VNet-1** Public IP Address.
+1. In the Cloud Shell, run this command to create the **PIP-VNG-Azure-VNet-1** public IP address:
 
     ```azurecli
     az network public-ip create \

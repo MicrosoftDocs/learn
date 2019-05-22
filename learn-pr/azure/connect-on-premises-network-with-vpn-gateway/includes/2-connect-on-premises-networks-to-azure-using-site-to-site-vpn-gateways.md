@@ -90,14 +90,14 @@ There are several ways to ensure you have a fault-tolerant configuration.
 
 By default, VPN gateways are deployed as two instances in an *active/standby* configuration. When planned maintenance or unplanned disruption affects the active instance, the standby instance automatically assumes responsibility for connections. Connections are interrupted during this failover, but they're typically restored within a few seconds for planned maintenance and within 90 seconds for unplanned disruptions.
 
-![Active/standby VNet gateway](../media/2-active-standby.svg)
+![Active/standby virtual network gateway](../media/2-active-standby.svg)
 
 ### Active/active
 
 You can also deploy VPN gateways in an *active/active* configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
 
-![Active-standby VNet Gateway](../media/2-dual-redundancy.svg)
+![Active/active virtual network Gateway](../media/2-dual-redundancy.svg)
 
 ### ExpressRoute failover
 
-Another high availability option is to configure a VPN Gateway as a secure failover path for ExpressRoute connections. ExpressRoute circuits have resiliency built in but are not immune to physical problems affecting the cables delivering connectivity. In high availability scenarios, where there is risk associated with an outage of an ExpressRoute circuit, you can also provision a VPN Gateway. By using a second gateway, which uses the internet as an alternative method of connectivity, you help ensure that there is always a connection to the Azure virtual networks.
+Another high availability option is to configure a VPN gateway as a secure failover path for ExpressRoute connections. ExpressRoute circuits have resiliency built in but aren't immune to physical problems that affect the cables delivering connectivity. In high availability scenarios, where there's risk associated with an outage of an ExpressRoute circuit, you can also provision a VPN gateway. By using a second gateway, which uses the internet as an alternative method of connectivity, you help ensure that there's always a connection to the Azure virtual networks.
