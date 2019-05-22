@@ -33,6 +33,16 @@
                 "dest": "modules"
             },
             {
+                "src": "ai-school",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "ai-business-school",
                 "files": [
                     "**/*.yml",
