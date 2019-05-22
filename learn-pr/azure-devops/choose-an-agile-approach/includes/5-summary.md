@@ -5,8 +5,9 @@ In this module, the Tailspin team took their first steps towards adopting DevOps
 * Assign work items to team members
 * Associate work items with a sprint, or iteration
 
-##Continue the journey
-You've seen the team identify their top-priority problems but how will they solve them? If you want to work along with them and learn how to configure build pipelines that continuously build, test, and verify your applications, go to [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
+## Continue the journey
+
+You've seen the team identify their top-priority problems, but how will they solve them? If you want to work along with them and learn how to configure build pipelines that continuously build, test, and verify your applications, go to [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
 
 ## Learn more
 
