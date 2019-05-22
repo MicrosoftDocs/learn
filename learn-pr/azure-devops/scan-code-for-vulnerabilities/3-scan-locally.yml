@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.scan-code-for-vulnerabilities.6-tbd2
-title: Exercise - TBD2
+uid: learn.azdo.scan-code-for-vulnerabilities.3-scan-locally
+title: Exercise - Scan the project locally using SonarCloud
 metadata:
-  title: Exercise - TBD2
+  title: Exercise - Scan the project locally using SonarCloud
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-tbd2.md)]
+  [!include[](includes/3-scan-locally.md)]

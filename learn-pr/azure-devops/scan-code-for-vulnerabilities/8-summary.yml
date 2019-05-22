@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.scan-code-for-vulnerabilities.3-manage-secrets
-title: Manage secrets, tokens, and certificates
+uid: learn.azdo.scan-code-for-vulnerabilities.8-summary
+title: Summary
 metadata:
-  title: Manage secrets, tokens, and certificates
+  title: Summary
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-manage-secrets.md)]
+  [!include[](includes/8-summary.md)]

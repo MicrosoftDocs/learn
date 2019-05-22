@@ -1,10 +1,99 @@
-Describe the value of including security and compliance scanning against the codebase as part of your development process.
+It's important to be sure that your code doesn't open the door to an attacker. A vulnerability that is exploitable in your code base is an operations nightmare. In this part, you'll learn about a vulnerability found in the _Space Game_ game code and how the team plans to make sure that doesn't happen to them.
 
-Discuss how these can fit into your pipeline (local dev, CI).
+Let's check in on the discussion.
 
-Discuss some of the options you have when implementing a code analysis security workflow:
+## What happens when a vulnerability is found?
 
-* Visual Studio Code Analysis
-* Roslyn Security Analyzers (perhaps focus on this more than the former bullet because it looks like [it will eventually replace it](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#roslyn-analyzers-vs-static-code-analysis).)
-* OWASP
-* SonarQube
+Tim finds Andy and Mara talking in the break room.
+
+**Tim:** Andy, do you have a minute? We need to talk.
+
+**Andy:** Sure, you have been a hard guy to locate today, Tim. I've been hearing about some issue with game code. Is that what this is about?
+
+**Tim:** Yes, there was a code vulnerability found in the _Space Game_ game code last night. We have been code-red in operations and development all day. We think we have it patched up, but it's causing quite a stir among the leadership teams. They have brought in a consultant on code security and integrity. And, well, that's where you come in.
+
+**Andy:** Me? I didn't write any of that code!
+
+**Tim:** No, but I have been tasked with reporting on potential vulnerabilities in our entire codebase, and that *does* include you. So, I need a report on the quality and safety of our team's code. We need something with real numbers and concrete examples.
+
+**Mara:** That is a big request! I don't think we have any ways to analyze our code easily.
+
+**Andy:** I saw something at a user group meeting I went to a few weeks ago. I saved a document with some links.
+
+## What tools or frameworks can we use?
+
+There are many tools and processes you can use to analyze your code. You can evaluate each to find the one that best suits the kinds of software you create. Here are a few.
+
+### OWASP
+
+[OWASP](http://www.owasp.org?azure-portal=true), or Open Web Application Security Project, is a not-for-profit organization focused on improving the security of software. OWASP hosts global and regional events where practitioners from all industries can meet to share and learn the latest best practices around security management.
+
+OWASP also provides tools, code, and documentation to help practitioners understand potential threats in their code and take action.
+
+One notable project is the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project?azure-portal=true). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the important and common risks that many organizations can tackle first.
+
+You'll see the OWASP Top Ten in action when you scan the _Space Game_ project later in this module.
+
+### Roslyn analyzers
+
+Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#roslyn-analyzers-vs-static-code-analysis&azure-portal=true) highlight potential problems in your code. Categories include code style, quality and maintainability, and design.
+
+You can run Roslyn analyzers from Visual Studio or from the command line. The following shows an example of running the Roslyn analyzers on the _Space Game_ web project from Visual Studio.
+
+![](../media/2-roslyn-results.png)
+
+### SonarCloud
+
+[SonarCloud](https://sonarcloud.io?azure-portal=true) by SonarSource helps you  analyze code for both vulnerabilities and code smells.
+
+A _code smell_ refers to a code construct that, although may be syntactically correct, can indicate a deeper problem in how that code is designed or how easy it is to maintain.
+
+Code smells are subjective and can vary from one programming language to another. For example, many languages support the `goto` statement as a way to control the flow of operations. Although the use of `goto` statements can result in correct code, they can result in "spaghetti code" that's more difficult for others to read and maintain. Constructs such as loops, return codes, and exception handling are a few ways you might express `goto` constructs more clearly.
+
+SonarCloud works with many programming languages, including Java, C++, C#, and Python. SonarCloud provides tools that can analyze your code from the command line or your build pipeline.
+
+When the analysis completes, SonarCloud can upload the results so that they are available from its web interface. Here's an example showing the summary for an analysis run on the _Space Game_ web project.
+
+![The summary for the analysis on SonarCloud](../media/3-sonar-scan-summary.png)
+
+You can select a category to learn more about the potential bugs or vulnerabilities the scan discovered.
+
+In this module, you'll run SonarCloud locally and then from Azure Pipelines.
+
+### CWE
+
+[Common Weakness Enumeration](https://cwe.mitre.org/index.html?azure-portal=true), or CWE, is a list of common software security weaknesses and vulnerabilities maintained by the security community.
+
+For example, [CWE-259](https://cwe.mitre.org/data/definitions/259.html?azure-portal=true) relates to use of hard-coded passwords in source code. If the password becomes compromised, anyone who knows the password can access the system or service, such as a database or web server. Because the password is hard-coded, it can be difficult to update each installation that uses it once a security breach is discovered.
+
+Many tools scan for CWE recommendations and provide pointers to those recommendations as part of the generated report. These recommendations provide developers and security practitioners with a a common language for describing software security weaknesses.
+
+### CVE
+
+A list of cybersecurity vulnerabilities that's related to the Common Weakness Enumeration is the [Common Vulnerabilities and Exposures](https://cve.mitre.org/cve/?azure-portal=true), or CVE.
+
+While the CWE defines security vulnerabilities in the general sense, the CVE focuses on specific instances in generally-available software. A CVE commonly refers to a security weakness that would allow an attacker to compromise the system through techniques such as arbitrary code execution and buffer overflows.
+
+We won't call out any specific CVEs here, but they apply to a wide range of software including web browsers, databases, and productivity software. When a CVE is discovered, it's the responsibility of the maintainer of that software to provide users with a security patch. End users and administrators are responsible for installing that patch so help ensure they're no longer exposed to that threat.
+
+Like the CWE, many tools scan for CVE recommendations. Common CVEs development teams face relate to use of open source components. When a scan reveals a CVE in your software, you and your team would assess the risk and prioritize a fix. A fix might include updating to a newer version of that open source component that does not contain the vulnerability or possibly removing that component and providing its functionality in some other way.
+
+## What does the team choose?
+
+**Mara** Do any of these tools work with our current build strategy?
+
+**Andy:** All of them do. It just depends on when and where. For example, we could use Roslyn analyzers to find issues as we go.  Roslyn analyzers can help us identify and fix potential issues in our development environment, before any potential issues make their way into QA or production.
+
+**Tim:** I'm looking for something that will give me a report I can show to leadership.
+
+**Andy**: In that case, let's try SonarCloud. SonarCloud gives you a report on your codebase with the numbers and specific code lines that you are looking for. SonarCloud provides its own security rules and also reports issues from the CWE and the OWASP Top Ten. And, it works with a lot of different code languages. We can try it out locally first, and if it works for what we need, we can add it to our build pipeline.
+
+**Mara:** I remember reading something about SonarCloud. I thought it was just for finding technical debt.
+
+**Tim:** What's technical debt?
+
+**Mara:** Technical debt, whether deliberate or accidental, refers to fast or poor choices made up front that require significant time to fix later. For example, when pressured for time, it's easy to let a proof-of-concept become production code. If the proof-of-concept isn't designed well, it can cause extra work when we want to add new features later.
+
+**Andy:** Yes, SonarCloud can help us maintain our technical debt. The demo I saw used it as part of Azure Pipelines so scans are done on a regular basis. He called that *shifting-left* because scans are done early in the development cycle. Let's go with this one and see what we find.
+
+**Tim:** If it helps us get the report we need, I'm all for it. I can see this being nearly impossible otherwise.
