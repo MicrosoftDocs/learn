@@ -55,7 +55,7 @@ Our goal is to give our customers games they'll love. We do that by working toge
 
 Here's the handout that Mara prepared.
 
-DevOps Research and Assessment LLC ([DORA](https://devops-research.com/)) published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today.
+DevOps Research and Assessment LLC, or DORA (now a part of Google Cloud), published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today.
 
 > [!NOTE]
 > The _Accelerate: State of DevOps 2018: Strategies for a New Economy_ report is the largest and longest-running research of its kind representing five years of work surveying over 30,000 technical professionals worldwide.

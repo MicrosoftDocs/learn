@@ -2,7 +2,7 @@ The first step to setting up a DevOps practice is to assess your current process
 
 After Irwin the product manager leaves, Amita says, "We need help. I don't know when the new rev is due, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ web site will have to wait until we get this mess solved &mdash; and the game is releasing soon."
 
-Andy looks at Mara. "This is a lot to take in on your first few weeks here."
+Andy looks at Mara. "This is a lot to take in on your first few weeks."
 
 "That's okay," Mara answers. "Maybe you can explain to me how things work around here. How does a game move from dev to production?"
 
@@ -15,11 +15,14 @@ The team decides to go to a coffee shop to relax and have an informal discussion
 Over coffee, Mara listens and tries to take notes. There's a lot of information and it's not organized. Her overall thoughts about the team are:
 
 * They use a waterfall approach. Management sets the priorities. Developers write code and hand the build off to QA. QA tests and then hands off to ops for deployment.
-* There's no clear definition of what "done" means. Each team member has their own definition.
+* Waterfall could be acceptable for a small team but here the goals aren't always clear and they seem to change frequently.
+* Testing is delayed until late in the process. That means its harder and more expensive to fix bugs and make changes.
+* There's no clear definition of what "done" means. Each team member has their own definition. There's no overall business goal that everyone wants. 
 * Some code is in a centralized version-control system. Many tools and scripts exist only on network file shares.
 * There are many manual processes.
 * Communication is haphazard and depends on email, Word docs, and spreadsheets.
 * Feedback is also infrequent and inconsistent.
+* On the plus side, the team seems to get along and they want to make things better. 
 
 <!-- TODO: Let's be clearer on why the negatives are negative. At the same time, are there any positives? -->
 

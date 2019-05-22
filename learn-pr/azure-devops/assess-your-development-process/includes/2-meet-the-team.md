@@ -2,7 +2,7 @@ DevOps has many features and tools to help a team collaborate and improve proces
 
 Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts its game servers and web sites in an on-prem datacenter. The company just celebrated the release of a new racing game. They'll be releasing a space shooter game, called _Space Game_, in the coming months.
 
-The team that you'll be working with builds web sites to support new game titles. These web sites provide information about the game, ways to get it, and leaderboards that show top scores. Each web site must go live the same day the game is released, which requires coordination among the teams and adds a sense of pressure on the web team.
+The team that you'll be working with builds web sites to support new game titles. These web sites provide information about the game, ways to get it, and leaderboards that show top scores. Each web site must go live the same day the game is released, which requires coordination among the teams and puts some extra pressure on the web team.
 
 The _Space Game_ web site is a .NET Core app written in C# that's deployed to Linux. The web site isn't finished yet, but here's what it looks like right now.
 

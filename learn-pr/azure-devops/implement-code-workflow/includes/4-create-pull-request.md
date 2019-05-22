@@ -10,9 +10,9 @@ Recall that a _pull request_ tells the other developers that you have code ready
 
 Before we start, let's check in with Mara and Andy.
 
-**Andy**: Hi, Mara. You showed us your build pipeline running on Azure. I'm adding a feature to the web site and I want to see the build process for myself. Are we ready to do that?
+**Andy**: Hi, Mara. I know you've got a build pipeline running on Azure. I'm adding a feature to the web site and I want to see the build process for myself. Are we ready to do that?
 
-**Mara**: Absolutely. I set this up on a branch. Why don't we set up a pull request and get it merged into `master` so you can use it?
+**Mara**: Absolutely. I created the pipeline on a branch. Why don't we set up a pull request and get it merged into `master` so you can use the pipeline, too?
 
 **Andy**: Sounds great. Let's take a look.
 
@@ -65,7 +65,7 @@ Your GitHub repository likely already has your latest changes to your `build-pip
 
 1. From a browser, navigate to [github.com](https://www.github.com?azure-portal=true) and sign in.
 1. Navigate to your **mslearn-tailspin-spacegame-web** repository.
-1. From the dropdown menu, to navigate to your `build-pipeline` branch.
+1. From the dropdown menu, navigate to your `build-pipeline` branch.
 
     ![The branch choice dropdown](../media/4-github-select-branch.png)
 
@@ -105,7 +105,7 @@ Your GitHub repository likely already has your latest changes to your `build-pip
 
 1. Navigate back to your pull request on GitHub.
 
-    You see that the build succeeded. You are now ready to merge your pull request.
+    You see that the build succeeded. You're now ready to merge your pull request.
 
     ![A pull request on GitHub showing a successful build](../media/4-github-build-succeeded.png)
 
@@ -116,6 +116,6 @@ Your GitHub repository likely already has your latest changes to your `build-pip
 
     It's completely safe to delete a branch from GitHub once you've merged your pull request. In fact, it's a common practice because the branch is no longer needed. The changes are merged and you can still find the details about the changes on GitHub or from the command line. Deleting merged branches also helps others see what work is currently active.
 
-    Git branches are typically meant to be short-lived. After you merge a branch, you typically do not push additional commits onto it or merge it a second time. In most cases, you start with a clean branch that's based on the `master` branch every time you start on a new feature or bug fix.
+    Git branches are typically meant to be short-lived. After you merge a branch, you typically don't push additional commits onto it or merge it a second time. In most cases, you start with a clean branch that's based on the `master` branch every time you start on a new feature or bug fix.
 
-    Deleting a branch on GitHub does not delete that branch from your local system. To do that, you would pass the `-d` switch to the `git branch` command.
+    Deleting a branch on GitHub doesn't delete that branch from your local system. To do that, you would pass the `-d` switch to the `git branch` command.

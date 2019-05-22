@@ -1,8 +1,8 @@
 Microsoft has a free tool called **Microsoft DevOps Self-Assessment** to help you analyze your current release cycle process. Let's see how Tailspin measures up.
 
-Mara, who is new to the team, is going to take the Microsoft DevOps Self-Assessment. This self-assessment gives you the opportunity to reflect on your existing processes. It also provides you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and fewer bugs than less mature teams.
+Mara, who is new to the team, is going to take the Microsoft DevOps Self-Assessment. This self-assessment gives you the opportunity to reflect on your existing processes. It also provides you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
-The assessment comes in two forms &mdash; a long form and a shorter form. Being new to the team, Mara knows she doesn't understand everything so she's going to use the shorter form. Taking the assessment is a good first step. It will give the team an overall view of where they are in the DevOps process. With the results, everyone on the team has a common starting point for identifying the first steps towards improving Tailspin's development and release processes.
+The assessment comes in two forms &mdash; a long form and a shorter form. Being new to the team, Mara knows she doesn't understand everything so she's going to use the shorter form. Taking the assessment is a good first step. It will give the team an overall view of where they are in the DevOps process. With the results, everyone on the team has a common starting point for identifying the first steps towards improving how Tailspin develops and releases their games.
 
 Here's how you can take the assessment with her.
 
@@ -24,13 +24,12 @@ Here's how you can take the assessment with her.
 1. Select the short form. Click **Take the Assessment**.
 
 > [!NOTE]
-> For now, just follow Mara's responses. You'll have the opportunity to go through the assessment a second time, so think about what selection you would make for your team.
+> For now, choose the same answers as Mara for each section. You'll have the opportunity to go through the assessment a second time, so think about what selections you would make for your team.
 
-For each section that follows, choose the same answer as Mara for each question.
 
 ### Process and Agility
 
-The team follows a waterfall approach. Work already feels ad-hoc, and the deployment process is invisible to her once she hands off new features to QA.
+The team follows a waterfall approach. Work can feel ad-hoc, and the deployment process is invisible to developers once they hand off new features to QA.
 
 Mara has already seen the team using open-source components with various licenses. This can lead to trouble should anyone discover they may not be correctly licensing open-source code they use.
 
@@ -80,7 +79,7 @@ Operations holds the SSH keys and passwords to access the servers. That means on
 
 ### Testing
 
-Mara hasn't seen any unit tests in the projects she's looked at, including her current project, the web site for _Space Game_. No wonder Amita from QA is always coming back to the team with bugs because existing functionality breaks when the dev team adds new features.
+Mara hasn't seen any unit tests in the projects she's looked at, including her current project, the web site for _Space Game_. No wonder Amita from QA is always coming back to the team with bugs.  Existing functionality always seems to break when the dev team adds new features.
 
 The teams have held back on developing mobile apps for their games because they say maintaining standard web sites is hard enough.
 
@@ -127,9 +126,9 @@ Click **Next Category**.
 
 Mara joined Tailspin because they make great video games. Both Mara's immediate coworkers and the game design and development teams seem to like working at Tailspin.
 
-However, Mara already gets the sense that things don't always go as planned and schedules slip. Processes she feels should happen almost instantly can take days or even weeks. Many work weekends to meet deadlines.
+However, Mara already gets the sense that things don't always go as planned and schedules slip. Processes she feels should happen almost instantly can take days or even weeks. Many people work weekends to meet deadlines.
 
-In today's market, influencers and critics can have a significant impact on whether your game is a roaring success or a complete flop. At the launch of each new game, it's critical to have a successful web web site. The site provides players with the latest game info and a link to download the game.
+In today's market, influencers and critics can have a significant impact on whether your game is a roaring success or a complete flop. At the launch of each new game, it's critical to have a successful web site. The site provides players with the latest game info and a link to download the game.
 
 | Question | Response |
 |----------|----------|

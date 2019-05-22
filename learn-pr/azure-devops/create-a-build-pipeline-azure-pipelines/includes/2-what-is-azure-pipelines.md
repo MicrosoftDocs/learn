@@ -34,11 +34,11 @@ Mara moves to the whiteboard and draws the pipeline.
 
 ![A hand-drawn illustration of a CI pipeline](../media/2-whiteboard-pipeline-with-callouts.png)
 
-This is my CI pipeline. Continuous Integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet but give it time.
+This is my continuous integration (CI) pipeline. CI is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet but give it time.
 
 A _pipeline_ defines the continuous integration process for the app. It's made up of steps called _tasks_ ![Callout 1](../../shared/media-draft/callout-01.png). It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try and map our scripts to tasks.
 
-The pipeline runs when you submit code changes ![Callout 2](../../shared/media-draft/callout-02.png). You can configure the pipeline to run automatically or you can run it manually. You connect your pipeline to a source repository such as GitHub, Bitbucket, or Subversion. We're using GitHub.
+The pipeline runs when you submit code changes ![Callout 2](../../shared/media-draft/callout-02.png). You can configure the pipeline to run automatically or you can run it manually. You connect your pipeline to a source repository such as GitHub, Bitbucket, or Subversion. We'll use GitHub. One of our tasks for this sprint is to start using GitHub.
 
 A _build agent_ ![Callout 3](../../shared/media-draft/callout-03.png) builds or deploys the code. When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time. Because we're using Azure Pipelines, we can use a Microsoft-hosted agent. With Microsoft-hosted agents, maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a fresh virtual machine. There are six virtual machine images to choose from, including Ubuntu 16.04, which is what we use.
 

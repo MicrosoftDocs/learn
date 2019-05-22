@@ -1,6 +1,6 @@
 It's important for members of the team to know the status of the build. An easy way to quickly discover the build status is to add a build badge to the **README.md** file on GitHub. Here we check in on the team to see how it's done.
 
-Andy is at his desk sifting through his emails. He is answering the third email related to the status of the build for the _Space Game_ web site.
+Andy is at his desk sifting through his emails. He's answering the third email related to the status of the build for the _Space Game_ web site.
 
 **Andy**: There has to be some way to automate a status message. We have the pipeline, so we should be able to put a status somewhere. Maybe Mara knows how we can do it.
 
@@ -12,7 +12,7 @@ Andy finds Mara talking with Amita in the break room.
 
 **Mara**: Hi Andy. What's up?
 
-**Andy**: I am liking the changes we have made to our build pipeline and this new Git version control, but I was wondering, is there a way to let people know the status of the build?
+**Andy**: I really like the changes we've made to our build pipeline by using Azure Pipelines and Git is a great version control system. I was wondering, is there a way to let people know the status of the build?
 
 **Mara**: Yes, actually. We can use a build badge.
 
@@ -64,12 +64,12 @@ Here you'll commit your changes to the `master` branch on GitHub.
 
     In practice, you would switch to the `master` branch and pull the latest changes from GitHub the next time you need to add a feature or address a bug.
 
-**Andy**: Mara, you just made a change directly to master. Why didn't you use the flow you taught us? You know, with the feature branches.
+**Andy**: Mara, you just made a change directly to master. Why didn't you use the flow you taught me? You know, with the feature branches.
 
-**Mara**: Yes, we could have done that. But sometimes when people are only changing the Readme file or other documentation files, they commit to master right then. Plus, you and I were able to verify the work together before we merged the change. 
+**Mara**: We could have done that. But sometimes when people are only changing the Readme file or other documentation files, they commit to master right then. Plus, you and I were able to verify the work together before we merged the change. 
 But this brings up a good point. If we can all just commit to master when we want to, we could be letting problems in the code slip into our master branch.
 
-**Andy**: I have been meaning to talk to you about that.
+**Andy**: I've been meaning to talk to you about that.
 
-Andy and Mara continue this conversation while walking back to the offices.
+Andy and Mara continue this conversation while walking back to their offices.
 

@@ -57,7 +57,7 @@ FetchOnlyRequestedGameRegion("Messier 82");
 
 Notice the call to the `Assert.That` method at the end of the test. An _assertion_ is a condition or statement that you declare to be true. If the condition turns out to be false, that could indicate a bug in your code. NUnit runs each test method using the inline data you specify and records the result as a passing or failing test.
 
-Many unit test frameworks provide verification methods that resemble natural language. This helps make tests easy to read and maps the test to the application's requirements.
+Many unit test frameworks provide verification methods that resemble natural language. This helps make tests easy to read and to map the test to the application's requirements.
 
 Consider the assertion made in this example.
 

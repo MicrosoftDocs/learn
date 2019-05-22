@@ -48,7 +48,7 @@ Here you'll add members to the **Web development** team.
 
 ### Create the board
 
-Although Mara and her team identified a number of issues, here you'll add  the three work items Mara originally proposed to your board to practice the process.
+Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to your board to practice the process.
 
 1. In the left hand column, point to **Boards** and select **Boards** from the menu that appears.
 1. Click **Web development boards**. A blank board appears.
@@ -120,4 +120,4 @@ You have an initial set of work items and a timeline for your first sprint. Here
 
 **Mara**: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great! As Andy and I do this work, we'll move each work item to the **Doing** state.
 
-**Amita**: Sounds good. I enjoyed discussing what's important to us right now. And now we have a way to see everything all in one place.
+**Amita**: Sounds good. I enjoyed getting together and deciding what's important to us right now. And, like Andy said, now we have a way to see everything all in one place.

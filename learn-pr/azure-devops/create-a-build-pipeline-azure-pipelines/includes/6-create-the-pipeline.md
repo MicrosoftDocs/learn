@@ -1,4 +1,4 @@
-At this point, Mara defined a build configuration for the _Space Game_ web site. Now it's your turn. You're going to create a pipeline and produce your first build artifact.
+At this point, Mara has defined a build configuration for the _Space Game_ web site. Now it's your turn. You're going to create a pipeline and produce your first build artifact.
 
 As you saw, Mara uses a YAML file to define the build. When you create a pipeline, the process asks you for your YAML file. The project doesn't have this file yet.
 
@@ -6,7 +6,6 @@ You'll begin by creating a starter YAML file that contains a basic build definit
 
 > [!NOTE]
 > Again, don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail around Git in future modules.
-From there, you'll create a Git branch and iteratively add tasks to your pipeline and test them out.
 
 A branch is a good way to experiment because it isolates your changes and doesn't affect the `master` branch or break anything the team is working on. Once you have things working, you can merge your change into the `master` branch so everyone can push code into the pipeline.
 
@@ -105,7 +104,7 @@ Now that you have a working build process, you can begin to add build tasks.
 
 Recall that you're working from the `master` branch. To give you a place to experiment and get your build completely working without affecting the rest of the team, here you'll start by creating a branch named `build-pipeline` to hold your work.
 
-You can add build tasks to **azure-pipelines.yml** directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify **azure-pipelines.yml** locally and upload up your changes to practice your Git skills and watch the pipeline automatically build the application when you push up changes.
+You can add build tasks to **azure-pipelines.yml** directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify **azure-pipelines.yml** locally and upload your changes to practice your Git skills and watch the pipeline automatically build the application when you push up changes.
 
 In practice, you might add build tasks one at at time, push up your changes, and see it run. For learning purposes, here you'll add all of the build tasks we identified previously.
 
@@ -180,7 +179,7 @@ In practice, you might add build tasks one at at time, push up your changes, and
 
     You can also define your own variables, which you'll do shortly.
 
-    You may have also noticed the `DotNetCoreInstaller@0` task as the first build step. Mara remembered that her build script did not install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task enables her to easily specify the version she needs to use on the build agent.
+    You may have also noticed the `DotNetCoreInstaller@0` task as the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task enables her to easily specify the version she needs to use on the build agent.
 
 1. Similar to what you did earlier, run the following Git commands from the integrated terminal to add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
 

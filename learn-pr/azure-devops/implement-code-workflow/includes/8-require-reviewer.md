@@ -1,20 +1,20 @@
-In this part, you'll set up a rule on GitHub that requires a review to approve changes before those changes can be merged into the `master` branch. As a bonus, you'll fix the spelling error on the _Space Game_ web site's home page.
+In this part, you'll set up a rule on GitHub that requires a reviewer to approve changes before those changes can be merged into the `master` branch. As a bonus, you'll fix the spelling error on the _Space Game_ web site's home page.
 
-Currently, the team allows anyone who makes a pull request to merge the code into the `master` branch. Incorrect or unstable code could cause the integrity of the branch to be in question.
+Currently, the team allows anyone who makes a pull request to merge the code into the `master` branch. Since there's no review required, it's possible for incorrect or unstable code to creep in.
 
-The team decides to add a check to the pull request in the form of another pair of eyes. They will set up GitHub to require someone else review the code before it's merged. Let's see how this comes about.
+Andy decides that he wants to add a check to the pull request in the form of another pair of eyes. He wants to set up GitHub to require someone else to review the code before it's merged. Let's see how to do this.
 
 Andy heads off to find Mara and spots her at her desk working away, her head bobbing to the music in her earbuds.
 
-**Andy**: Mara, I have been meaning to talk to you about something.
+**Andy**: Mara, I've been meaning to talk to you about something.
 
 Mara looks up.
 
 **Mara**: What can I help you with?
 
-**Andy**: Several small mistakes are making it through to our build. Just today, a typing error on the home page made its way into the build. Amita is spending too much time on these things. We need to stop them before they make it to the master branch. We need another pair of eyes on the code before the pull request is approved.
+**Andy**: Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the master branch. We need another pair of eyes on the code before the pull request is approved.
 
-**Mara**: I can set that up. In GitHub, there is a way to make sure no pull request is approved before someone else reviews it.
+**Mara**: I can set that up. In GitHub, there's a way to make sure no pull request is approved before someone else reviews it.
 
 ## Set up approvals
 

@@ -64,7 +64,7 @@ After she runs the script, Mara realizes that it's incomplete. For example, it d
 
 ## What are Azure Pipelines tasks?
 
-A task abstracts away the underlying details, making it easier to run common build functions, such as downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
+An Azure Pipelines task abstracts away the underlying details, making it easier to run common build functions, such as downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
 
 Here's an example that uses the `DotNetCoreCLI@2` task to build a C# project that targets .NET Core.
 
