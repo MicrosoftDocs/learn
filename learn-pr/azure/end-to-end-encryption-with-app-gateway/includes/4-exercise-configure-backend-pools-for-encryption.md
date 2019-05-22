@@ -39,13 +39,11 @@ The following image highlights the elements you'll configure in this exercise.
 1. Run the following commands to display the URL of the web server created by the setup script:
 
     ```bash
-    ipaddress="$(az vm show \
+    echo https://"$(az vm show \
       --name webservervm1 \
       --resource-group $rgName \
       --show-details \
       --query [publicIps] --output tsv)"
-
-    echo https://$ipaddress
     ```
 
 2. In your web browser, navigate to this URL.
