@@ -11,7 +11,7 @@ Before you begin, make sure you have the following software installed on your ma
 1. Run the following command on your local machine to clone the app from GitHub.
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr. ~serverless-demo
+    git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr.git ~/serverless-demo
     ```
 
     > [!IMPORTANT]
