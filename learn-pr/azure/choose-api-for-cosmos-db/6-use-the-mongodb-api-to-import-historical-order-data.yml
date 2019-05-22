@@ -3,7 +3,7 @@ uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.6-use-the-mong
 title: Use MongoDB to import historical order data
 metadata:
   title: Use MongoDB to import historical order data
-  description: Describe a scenario where MongoDB might be a good choice for Cosmos DB.
+  description: Describe a scenario where MongoDB might be a good choice for Azure Cosmos DB.
   ms.date: 04/24/2019
   author: rmcmurray
   ms.author: robmcm

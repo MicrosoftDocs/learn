@@ -14,7 +14,7 @@ Using the decision matrix from earlier in this learning module, you can see why 
 
 | API | Description |
 |---|---|
-| **Azure Table** | This API should only be used to allow existing apps that are based on the Table API access to Cosmos DB. |
+| **Azure Table** | This API should only be used to allow existing apps that are based on the Table API access to Azure Cosmos DB. |
 | **Core (SQL)** | All of the requirements for your web analytics application can be satisfied by Core (SQL), which makes your decision difficult when chooseing between Core (SQL) and Cassandra. Since the web team is already using their Cassandra-based application, and because of their prior experience using the Cassandra Query Language (CQL) for some of their reporting, Cassandra is the right choice for this scenario, although Core (SQL) is still a close second choice. |
 | **Gremlin** | This API isn't a good choice because the data isn't graph based. |
 | **MongoDB** | The flexibility of a document-based data store is not enough of a reason to use MongoDB. |

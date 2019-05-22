@@ -1,6 +1,6 @@
 To demonstrate index monitoring and tuning, we use the collections that we set up in unit 2 and modify the indexing configuration.
 
-We'll use the CLI to modify the index configuration. You can also use the Azure portal, the Cosmos DB REST API, or any of the Cosmos DB SDKs.
+We'll use the CLI to modify the index configuration. You can also use the Azure portal, the Azure Cosmos DB REST API, or any of the Azure Cosmos DB SDKs.
 
 We have provided pre-built index configuration files for your convenience. You can view these files in the `mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB/IndexConfig` directory.
 

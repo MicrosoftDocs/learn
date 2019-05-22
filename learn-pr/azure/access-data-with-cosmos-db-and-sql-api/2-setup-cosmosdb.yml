@@ -21,4 +21,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.DocumentDB/databaseAccounts"
-  hint: "Run the commands shown to create your Cosmos DB account, database and container."
+  hint: "Run the commands shown to create your Azure Cosmos DB account, database and container."

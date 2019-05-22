@@ -20,7 +20,7 @@ Contoso's network operations manager confirms the problem. It's that the company
 
 ## Key features
 
-Azure Cosmos DB supports 99.999 percent uptime. You can invoke a regional failover by using programing or the Azure portal. A Cosmos DB database will automatically fail over if there's a regional disaster. 
+Azure Cosmos DB supports 99.999 percent uptime. You can invoke a regional failover by using programing or the Azure portal. An Azure Cosmos DB database will automatically fail over if there's a regional disaster. 
 
 By using multimaster replication in Azure Cosmos DB, you can often achieve a response time of less than one second from anywhere in the world. Azure Cosmos DB is guaranteed to achieve a response time of less than 10 ms for reads and writes.
 

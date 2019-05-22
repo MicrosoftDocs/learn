@@ -60,7 +60,7 @@ The EF Core Provider translates object graph changes to SQL.
 
 The Database Provider:
 
-* Is a plug-in library designed for a specific database engine, such as SQL Server, Cosmos DB, or PostgreSQL.
+* Is a plug-in library designed for a specific database engine, such as SQL Server, Azure Cosmos DB, or PostgreSQL.
 * Accepts SQL from the EF Core Provider and executes it in the database.
 * Extends EF Core to enable functionality that's unique to the database engine.
 
