@@ -14,7 +14,7 @@ To give you control over the settings associated with creating Azure Functions a
 
 1. Press the **CTRL/CMD+Shift+P** to open the Visual Studio Code command palette.
 
-1. If you are already signed-in to Azure in Visual Studio Code with a different account, use the **Azure: Sign Out** command to sign out. Otherwise, you create the function app outside of the Learn sandbox and may incur costs.
+1. If you're already signed-in to Azure in Visual Studio Code with a different account, use the **Azure: Sign Out** command to sign out. Otherwise, you create the function app outside of the Learn sandbox and may incur costs.
 
 1. Search for and select the **Azure Functions: Deploy to Function App** command.
 
@@ -38,7 +38,7 @@ To give you control over the settings associated with creating Azure Functions a
 
     ![New function app](../media/serverless-app-new-function-app.png)
 
-    The function app name (labeled as **1** in the image) is the unique name you provided to the extension as you created the app. The app end point (labeled as **2**) is the function app name followed by *azurewebsites.net*.
+    The functions app name (labeled as **1** in the image) is the unique name you provided as you created the app. The app end point (labeled as **2**) is the function app name followed by *azurewebsites.net*.
 
 1. Open **public/index.html.js** and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
@@ -46,7 +46,7 @@ To give you control over the settings associated with creating Azure Functions a
 
     ![Upload local settings](../media/serverless-app-upload-local-settings.png)
 
-    If the message box doesn't appear or has been dismissed from Visual Studio Code, you can still upload your local settings by opening the Visual Studio Code command palette via **CTRL/CMD+Shift+P** and select **Azure Functions: Upload local settings**. If prompted, choose to overwrite any existing settings.
+    If the message box doesn't appear (or was dismissed) in Visual Studio Code, you can still upload your local settings. Opening the Visual Studio Code command palette via **CTRL/CMD+Shift+P** and select **Azure Functions: Upload local settings**. Choose to overwrite any existing settings, if prompted.
 
 ## Configure static websites in Azure Storage
 
@@ -98,7 +98,7 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 1. Check the checkbox next to **Enable Access-Control-Allow-Credentials**.
 
-1. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You should be able to paste this value in from your clipboard.
+1. Add an entry with the *static website* **primary endpoint** as the value (make sure to remove the trailing `/`). You can paste this value in from your clipboard.
 
 1. Click **Save** to persist the CORS settings.
 

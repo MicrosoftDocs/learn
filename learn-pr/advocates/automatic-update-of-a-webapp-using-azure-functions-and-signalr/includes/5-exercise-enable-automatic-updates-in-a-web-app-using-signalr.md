@@ -1,4 +1,4 @@
-In order to update the application to support the new functionality, you need to create a few new functions and update the JavaScript on the client.
+To support the new functionality, you need to create a few new functions and update the JavaScript on the client.
 
 ## Create a SignalR account
 
@@ -71,7 +71,7 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     }
     ```
 
-    This configuration allows the function to return the connection information to the server which is used to identify connected clients.
+    This configuration allows the function to return the connection information to the server, which is used to identify connected clients.
 
 1. Next, open *negotiate/index.js* and replace the existing function code with the following code.
 
@@ -87,7 +87,7 @@ Now that the function to return the SignalR connection info is implemented, you 
 
 ## Detect and broadcast database changes
 
-First, you need to create a new function that listens for changes in the database. This is possible by using the built-in Azure Cosmos DB bindings.
+First, you need to create a new function that listens for changes in the database. This function uses the built-in Azure Cosmos DB bindings.
 
 1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
 1. Search for and select the **Azure Functions: Create Function** command.
@@ -105,7 +105,7 @@ First, you need to create a new function that listens for changes in the databas
 
     Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code.
 
-1. Append the property `"feedPollDelay": 500` to the existing trigger binding definition. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. The application you're building is built around a push-based architecture. However behind the scenes, Azure Cosmos DB is continually monitoring the change feed to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognizes changes, not how your web application exposes changes to the data.
+1. Append the property `"feedPollDelay": 500` to the existing trigger binding definition. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. The application you're building is built around a push-based architecture. However behind the scenes, Azure Cosmos DB is continually monitoring the change feed to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognize changes, not how your web application exposes changes to the data.
 
 <!-- 
     REVIEW:
@@ -165,7 +165,7 @@ The value of the `target` property is used on the client when listening for spec
 
 ## Update the web application
 
-Open *public/index.html* paste the the following code in place of the current DIV with the ID of `app`.
+Open *public/index.html* paste the following code in place of the current DIV with the ID of `app`.
 
 ```html
 <div id="app" class="container">
@@ -188,7 +188,7 @@ Open *public/index.html* paste the the following code in place of the current DI
 </div>
 ```
 
-This markup adds a transition element which allows Vue.js to add and remove CSS classes in order to achieve a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
+This markup adds a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
 
 Next, add the following script block just above the reference to *index.html.js*.
 
@@ -281,7 +281,7 @@ The `getAPIBaseUrl` function returns the appropriate URL depending on whether th
 
 -->
 
-The Vue.js-related code is streamlined now that changes are pushed to the client. Consider this segment of the code you just pasted in to the script file:
+The Vue.js-related code is streamlined now that changes are pushed to the client. Consider this segment of the code you pasted in to the script file:
 
 ```javascript
 const app = new Vue({
@@ -336,9 +336,9 @@ const connect = () => {
 connect();
 ```
 
-When the page loads the `connect` function is called. In the body of the `connect` function, the first action is to use the SignalR SDK to create a connection by calling `HubConnectionBuilder`.  The result is a SignalR connection to the server.
+When the page loads, the `connect` function is called. In the body of the `connect` function, the first action is to use the SignalR SDK to create a connection by calling `HubConnectionBuilder`.  The result is a SignalR connection to the server.
 
-In order to gracefully recover after the server has timed out, the `onclose` handler reestablishes a connection two seconds after the connection has closed by calling `connect` again.
+To gracefully recover after the server has timed out, the `onclose` handler reestablishes a connection two seconds after the connection has closed by calling `connect` again.
 
 As the client receives messages from the server, it listens for messages via the `on('updated',...` syntax. Once an update is received, the following actions take place:
 
@@ -346,7 +346,7 @@ As the client receives messages from the server, it listens for messages via the
 - The old version is removed.
 - The new version is inserted at the same index position in the array.
 
-Manipulating the array using this approach allows Vue to detect changes in the data and trigger animation effects to notify users of changes.
+Manipulating the array this way allows Vue to detect changes in the data and trigger animation effects to notify users of changes.
 
 ## Run the application
 
@@ -364,9 +364,9 @@ The script automatically opens the browser and navigates to http://localhost:808
 
 ## Observe automatic updates
 
-Now you can make change to the application's data and observe how to the data is automatically updated. Since the update to the browser happens nearly immediately, consider having Visual Studio Code open one side of your screen and the running application on the other. This way you can see the UI update right after you issue the command to update the database.
+Now you can change the application's data and observe how to the UI automatically updates. Since the browser updates nearly immediately, consider having Visual Studio Code open on one side of your screen and the browser on the other. With these windows side-by-side you can see the UI change right after you update the database.
 
-Return to Visual Studio Code and enter the the following command in a new integrated terminal. Again watch as the application automatically updates the stock ABC.
+Return to Visual Studio Code and enter the following command in a new integrated terminal. Again, watch as the application automatically updates the stock ABC.
 
 ```bash
 npm run update
@@ -376,4 +376,7 @@ After the database is updated, the UI looks something like the following screens
 
 ![End state of serverless web app](../media/serverless-app-end-state.png)
 
-When you are done, stop the web server and functions processes.
+When you're done, stop the running processes:
+
+- For the web server, press **CTRL/CMD + C** in the terminal window running the web server
+- For the functions app, click the **Stop** button or press **Shift + F5**

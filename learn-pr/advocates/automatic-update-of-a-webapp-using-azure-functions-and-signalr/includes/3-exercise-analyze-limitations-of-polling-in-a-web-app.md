@@ -23,7 +23,7 @@ Before you begin, make sure you have the following software installed on your ma
     cd serverless-demo
     ```
 
-1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the remainder of this module. Use the following command to open the *start* folder in Visual Studio Code:
+1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the rest of this module. Use the following command to open the *start* folder in Visual Studio Code:
 
     ```bash
     code start
@@ -72,7 +72,7 @@ You store stock prices in an Azure Cosmos DB database, so you'll set that up in 
 
 ## Update local settings
 
-For the app to run, you need to add the connection strings and keys associated with your Azure Storage, Functions and database services to your local settings.
+For the app to run, you need to add the connection settings for your cloud services to the local settings file.
 
 1. Run the following commands in the Cloud Shell to get the connection strings for the resources we created in this exercise.
 
@@ -128,13 +128,16 @@ For the app to run, you need to add the connection strings and keys associated w
 
     ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)
 
-1. Return to Visual Studio Code, open a third terminal instance, and enter the the following command to update the stock prices. Immediately return to the browser and observe that the values for stock ABC change within a few seconds.
+1. Return to Visual Studio Code, open a third terminal instance, and enter the following command to update the stock prices. Immediately return to the browser and observe that the values for stock ABC change within a few seconds.
 
     ```bash
     npm run update
     ```
 
-When you are done, stop the web server and functions processes.
+When you're done, stop the running processes:
+
+- For the web server, press **CTRL/CMD + C** in the terminal window running the web server
+- For the functions app, click the **Stop** button or press **Shift + F5**
 
 <!--
     REVIEW:

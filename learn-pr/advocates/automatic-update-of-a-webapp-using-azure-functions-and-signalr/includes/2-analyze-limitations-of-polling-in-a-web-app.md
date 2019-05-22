@@ -85,7 +85,7 @@ The sample client uses Vue.js to compose the UI and the axios HTTP client to han
     Acknowledged
 -->
 
-The logic implemented on the page includes the use of a timer to send a request to the server every five seconds. The response returns an array of stocks, which are then displayed to the user.
+The page uses a timer to send a request to the server every five seconds to request stocks. The response returns an array of stocks, which are then displayed to the user.
 
 ```javascript
 const LOCAL_BASE_URL = 'http://localhost:7071';
