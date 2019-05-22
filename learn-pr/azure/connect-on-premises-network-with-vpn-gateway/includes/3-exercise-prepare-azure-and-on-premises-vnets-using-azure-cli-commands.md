@@ -1,4 +1,4 @@
-Your company is now ready to deploy a site-to-site VPN. This will allow your on-premises servers to connect to resources in Azure. You can then start to securely share data from each of your sites, and use resources hosted in Azure across your organization. You'll start by creating your Azure side resources and the on-premises network resources. For this deployment, you'll use this network topology.
+Your company is now ready to deploy a site-to-site VPN. This will allow your on-premises servers to connect to resources in Azure. You can then start to securely share data from each of your sites, and use resources hosted in Azure across your organization. You'll start by creating your Azure-side resources and the on-premises network resources. For this deployment, you'll use this network topology.
 
 ![Network topology for unit 3 exercise](../media/3-network-topology-used-in-exercise.svg)
 
@@ -12,7 +12,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a Gateway
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
-## Create the Azure side resources
+## Create the Azure-side resources
 
 1. Run the following command in the Cloud Shell to create the **Azure-VNet-1** virtual network and the **Services** subnet.
 
