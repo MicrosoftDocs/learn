@@ -66,7 +66,7 @@ Next, you'll create the VPN gateway for the Azure end of the connection.
         --no-wait
     ```
 
-## Create the On-Premises side VPN gateway
+## Create the on-premises-side VPN gateway
 
 Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
