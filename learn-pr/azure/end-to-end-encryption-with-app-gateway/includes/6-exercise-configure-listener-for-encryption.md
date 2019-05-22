@@ -77,12 +77,11 @@ Set-AzApplicationGateway -ApplicationGateway $gw
 1. Find the public URL of the Application Gateway:
 
     ```bash
-    gatewayAddress="$(az network public-ip show \
+    echo https://$(az network public-ip show \
       --resource-group $rgName \
       --name appgwipaddr \
-      --query ipAddress)"
-
-    echo https://`eval echo $gatewayAddress`
+      --query ipAddress \
+      --output tsv)
     ```
 
 2. Using a web browser, move to this URL.
