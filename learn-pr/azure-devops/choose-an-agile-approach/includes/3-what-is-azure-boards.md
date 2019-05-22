@@ -29,9 +29,11 @@ Andy can identify with these issues, but the rest of the team has questions.
 
 **Tim**: These are mostly dev problems. But while we're on the subject, other teams are talking about code vulnerabilities, and I've been asked to show that our code is secure. Is there a way we can add that?
 
-**Mara**: I know the list isn't complete. The problems on the board are ones Andy and I talked about earlier. And even some of these problems really need to get broken down into smaller tasks. I understand your concerns about code vulnerabilities but I don't think we can take it on right now.
+**Mara**: I know the list isn't complete. The problems on the board are ones Andy and I talked about earlier. And even some of these problems really need to get broken down into smaller tasks. I understand your concerns about code vulnerabilities. Andy, what do you think?
 
-**Andy** Yes, sorry Tim. Right now, just getting a build out the door is hard. Let's see how we do with some of the basic problems. I do like that we have a central place where we can keep track of our issues.
+**Andy**: Right now, just getting a build out the door is hard. Let's start with some of the basic problems. I do like that we have a central place where we can keep track of our issues. We can add issues to the backlog and prioritize them once we're ready.
+
+**Mara**: Before we add any issues, let's talk a bit more about what everyone is working on.
 
 :::row:::
   :::column span="4":::
