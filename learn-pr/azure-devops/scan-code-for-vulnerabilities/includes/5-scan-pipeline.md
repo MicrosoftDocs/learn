@@ -25,7 +25,7 @@ The SonarCloud marketplace extension provides the service connection type you'll
 
 ## Create a SonarCloud service connection
 
-Your pipeline tasks will require access SonarCloud. Here you'll create a service connection from the Azure DevOps portal.
+Your pipeline tasks require access to SonarCloud. Here you'll create a service connection from the Azure DevOps portal.
 
 1. From Azure DevOps, click **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Service connections**.
@@ -70,7 +70,7 @@ Let's add a few variables to the pipeline.
 
 ## Add tasks to the pipeline configuration
 
-Here you'll add tasks to perform the scan to **azure-pipelines.yml**.
+Here you'll add the tasks that perform the scan to **azure-pipelines.yml**.
 
 Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet sonarscanner begin` command you ran to prepare the scanner to collect build and test data.
 
@@ -126,7 +126,7 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
 
 ## Analyze the results
 
-Return to the SonarCloud portal and examine the results. You see the same results as when you scanned locally because the project sources have not changed.
+Return to the SonarCloud portal and examine the results. You see the same results as when you scanned locally because the project sources haven't changed.
 
 But as you resolve issues from the report and add new features to your application, your report will change over time. Issues you resolve will be removed from the report. Likewise, new issues may appear as you add features or the security community provides new recommendations.
 

@@ -1,4 +1,4 @@
-At this point, your build configuration scans your code whenever there is a change pushed to the repository. But you may have noticed the scanning process adds time to the overall build process. You don't want to scan on every small commit. Instead, you want to scan less often, such as on pull requests only. You'll use conditions in your pipeline to accomplish this.
+At this point, your build configuration scans your code whenever a change is pushed to the repository. But you may have noticed the scanning process adds time to the overall build process. You don't want to scan on every small commit. Instead, you want to scan less often, such as on pull requests only. You can use conditions in your pipeline to accomplish this.
 
 In this part, you'll modify your build configuration to run the SonarCloud scanner only when the build is happening in response to a pull request.
 
@@ -35,7 +35,7 @@ steps:
 
 The `always()` condition causes this task to print "Hello!" unconditionally, even if previous tasks have failed.
 
-Here;s the condition that's used if you don't specify one:
+Here's the condition that's used if you don't specify one:
 
 ```yml
 condition: succeeded()
@@ -95,9 +95,9 @@ In this part, you'll provide a condition to each build task that relates to Sona
 
 1. From a browser, navigate to [github.com](https://www.github.com?azure-portal=true) and sign in.
 1. Navigate to your **mslearn-tailspin-spacegame-web** repository.
-1. From the dropdown menu, to navigate to your `security-scan` branch.
+1. From the dropdown menu, navigate to your `security-scan` branch.
 
-1. Click **New pull request** button to start your pull request.
+1. Click the **New pull request** button to start your pull request.
 
 1. Ensure that **base** specifies your forked repository and not Microsoft's repository.
 

@@ -1,10 +1,10 @@
-In this part, you'll add a quality badge to your GitHub README file so that there is a way to quickly see the status of your code quality.
+In this part, you'll add a quality badge to your GitHub README file so that there's a way to quickly see the status of your code quality.
 
-Let's check in with the team to see how this comes about.
+Let's check in with the team to see how this happens.
 
 **Tim:** This is all impressive, but is there a way that I can get a quick sense of the security of the codebase without having to log on to another portal?
 
-**Amita**: It would be great if Tim could get a status on GitHub just like I can with the build results.
+**Amita**: It would be great if Tim could get a quick status on GitHub just like I can with the build results. Is there a badge?
 
 **Mara**: I'll look into that. Perhaps there's a way.
 
@@ -31,7 +31,7 @@ Here, you'll follow a similar process. You'll get the Markdown code you need fro
 1. Select **Markdown** from the **Format** drop-down.
 1. Click **Copy** to copy the Markdown code to your clipboard.
 1. From GitHub, navigate to your project page.
-1. Make sure you are on the `master` branch. Then locate **README.md** from the files area and click the file to open it.
+1. Make sure you're on the `master` branch. Then locate **README.md** from the files area and click the file to open it.
 1. Click the pencil icon to open the file in the editor.
 1. At the top of the page, paste the contents of the clipboard. You can add the quality badge on the same line as your build badge or on a separate line. It's common to maintain all badges on the same line.
 1. Click the **Preview changes** tab to see your proposed changes.

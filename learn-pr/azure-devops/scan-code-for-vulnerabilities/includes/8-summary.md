@@ -1,4 +1,4 @@
-In this module, you helped the team to shift left when it comes to code vulnerabilities and technical debt. Finding these issues early in the development process will help your team write more secure code as well as help with the maintainability of your code. 
+In this module, you helped the team to shift left to search for code vulnerabilities and technical debt. They can now find problems early in the development process, which makes it easier to write code that's secure and maintainable. Because the scans are a part of the automated pipeline, they know the results are current. Not only that, but Tim now has an easy way to understand the state of the code in terms of security and quality. 
 
 What happens if you find a vulnerability? You'll need to investigate it to determine if it is a security issue and a real threat. Some vulnerabilities are reported because one of your dependencies is out of date. This may or may not be a security issue. This is the sort of thing that can be addressed on a case-by-case basis.
 
@@ -8,7 +8,7 @@ Let's check in with the team.
 
 **Amita**: Right! Do we need to fix all of these issues right away?
 
-**Andy**: Yes, there are some issues to fix. But at least now we know where the issues are. We can discuss and prioritize fixing these based on their severity. We can even start with a few easy ones just to get a feel for the process.
+**Andy**: Yes, there are some issues to fix. But at least now we know where the issues are. We can discuss and prioritize fixing them based on their severity. We can even start with a few easy ones just to get a feel for the process.
 
 **Mara**: We may never get a completely clean report given that the community will always have new recommendations and some issues are low severity. But getting a handle on things will go a long way to managing our technical debt.
 

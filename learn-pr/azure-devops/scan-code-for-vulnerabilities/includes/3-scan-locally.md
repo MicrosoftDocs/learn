@@ -2,7 +2,7 @@ Here you'll create a project on SonarCloud so you can analyze the _Space Game_ w
 
 ## Create the project on SonarCloud
 
-Let's set up a project on SonarCloud. You'll need to save off some strings from the SonarCloud portal to set up your scan later.
+Let's set up a project on SonarCloud. You'll need to save some information, such as a token and keys, from the SonarCloud portal to set up your scan later.
 
 1. From a browser tab, navigate to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in.
 1. From the upper corner, click **+** and then **Analyze new project**.
@@ -18,7 +18,7 @@ Let's set up a project on SonarCloud. You'll need to save off some strings from 
 1. From the **Analyze your project** screen:
     1. Under **Provide a token**:
         * Click **Generate**.
-        * Save the generated key somewhere safe.
+        * Save the generated token somewhere safe.
         * Notice **Project Key** and **Organization Key** on the right. Save those values as well.
         * Click **Continue**.
     1. Under **Run analysis on your project**:
@@ -43,11 +43,11 @@ Here you'll get a copy of the _Space Game_ web project and work from a branch.
     As you did in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 1. As an optional step, open **azure-pipelines.yml** from Visual Studio code and familiarize yourself with the initial configuration.
 
-    The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests?azure-portal=true) module. It builds application's Release configuration, runs unit tests, and produces a code coverage report.
+    The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests?azure-portal=true) module. It builds the application's Release configuration, runs unit tests, and produces a code coverage report.
 
 ## Scan locally
 
-Here you'll set up the SonarCloud scanner and scan your code locally. You will then upload the scan data to SonarCloud so you can analyze the results.
+Here you'll set up the SonarCloud scanner and scan your code locally. You'll then upload the scan data to SonarCloud so you can analyze the results.
 
 1. From the integrated terminal, run the following `dotnet tool install` command to install **dotnet-sonarscanner**.
 
@@ -57,7 +57,7 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You will t
 
     There are a few ways to install the SonarCloud tools. **dotnet-sonarscanner** is an easy way to scan .NET Core code.
 
-1. Create the variables you will need to run a scan. The values for these variables are the strings you saved off earlier.
+1. Create the variables you'll need to run a scan. The values for these variables are the keys you saved earlier.
 
     **Bash:**
 

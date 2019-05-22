@@ -1,4 +1,4 @@
-It's important to be sure that your code doesn't open the door to an attacker. A vulnerability that is exploitable in your code base is an operations nightmare. In this part, you'll learn about a vulnerability found in the _Space Game_ game code and how the team plans to make sure that doesn't happen to them.
+It's important that your code doesn't open the door to an attacker. A vulnerability that is exploitable in your codebase is an operations nightmare. In this part, you'll learn about a vulnerability found in the _Space Game_ game code and how the team plans to make sure that a vulnerability doesn't happen again.
 
 Let's check in on the discussion.
 
@@ -8,15 +8,15 @@ Tim finds Andy and Mara talking in the break room.
 
 **Tim:** Andy, do you have a minute? We need to talk.
 
-**Andy:** Sure, you have been a hard guy to locate today, Tim. I've been hearing about some issue with game code. Is that what this is about?
+**Andy:** Sure, you've been a hard guy to locate today, Tim. I've been hearing about some issue with the game code. Is that what this is about?
 
-**Tim:** Yes, there was a code vulnerability found in the _Space Game_ game code last night. We have been code-red in operations and development all day. We think we have it patched up, but it's causing quite a stir among the leadership teams. They have brought in a consultant on code security and integrity. And, well, that's where you come in.
+**Tim:** You got it. Someone found a code vulnerability in the _Space Game_ game code last night. We've been code red in operations and development all day. We think we have it patched up, but it's causing quite a stir among the leadership teams. They've brought in a consultant on code security and integrity. And, well, that's where you come in.
 
 **Andy:** Me? I didn't write any of that code!
 
-**Tim:** No, but I have been tasked with reporting on potential vulnerabilities in our entire codebase, and that *does* include you. So, I need a report on the quality and safety of our team's code. We need something with real numbers and concrete examples.
+**Tim:** No, but I've been tasked with reporting on potential vulnerabilities in our entire codebase, and that *does* include you. So, I need a report on the quality and safety of our team's code. We need something with real numbers and concrete examples.
 
-**Mara:** That is a big request! I don't think we have any ways to analyze our code easily.
+**Mara:** That's a big request! I don't think we have any ways to analyze our code easily.
 
 **Andy:** I saw something at a user group meeting I went to a few weeks ago. I saved a document with some links.
 
@@ -28,9 +28,9 @@ There are many tools and processes you can use to analyze your code. You can eva
 
 [OWASP](http://www.owasp.org?azure-portal=true), or Open Web Application Security Project, is a not-for-profit organization focused on improving the security of software. OWASP hosts global and regional events where practitioners from all industries can meet to share and learn the latest best practices around security management.
 
-OWASP also provides tools, code, and documentation to help practitioners understand potential threats in their code and take action.
+OWASP also provides tools, code, and documentation to help practitioners understand potential threats in their code and to take action.
 
-One notable project is the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project?azure-portal=true). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the important and common risks that many organizations can tackle first.
+One notable project is the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project?azure-portal=true). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the most important and most common risks that many organizations can tackle first.
 
 You'll see the OWASP Top Ten in action when you scan the _Space Game_ project later in this module.
 
@@ -46,9 +46,9 @@ You can run Roslyn analyzers from Visual Studio or from the command line. The fo
 
 [SonarCloud](https://sonarcloud.io?azure-portal=true) by SonarSource helps you  analyze code for both vulnerabilities and code smells.
 
-A _code smell_ refers to a code construct that, although may be syntactically correct, can indicate a deeper problem in how that code is designed or how easy it is to maintain.
+A _code smell_ refers to a code construct that, although it may be syntactically correct, can indicate a deeper problem in how that code is designed or how easy it is to maintain.
 
-Code smells are subjective and can vary from one programming language to another. For example, many languages support the `goto` statement as a way to control the flow of operations. Although the use of `goto` statements can result in correct code, they can result in "spaghetti code" that's more difficult for others to read and maintain. Constructs such as loops, return codes, and exception handling are a few ways you might express `goto` constructs more clearly.
+Code smells are subjective and can vary from one programming language to another. For example, many languages support the `goto` statement as a way to control the flow of operations. Even if the `goto` statements in the code are syntactically correct, using a lot of them can result in "spaghetti code" that's difficult for others to read and maintain. Constructs such as loops, return codes, and exception handling are a few ways you might express `goto` constructs more clearly.
 
 SonarCloud works with many programming languages, including Java, C++, C#, and Python. SonarCloud provides tools that can analyze your code from the command line or your build pipeline.
 
@@ -64,7 +64,7 @@ In this module, you'll run SonarCloud locally and then from Azure Pipelines.
 
 [Common Weakness Enumeration](https://cwe.mitre.org/index.html?azure-portal=true), or CWE, is a list of common software security weaknesses and vulnerabilities maintained by the security community.
 
-For example, [CWE-259](https://cwe.mitre.org/data/definitions/259.html?azure-portal=true) relates to use of hard-coded passwords in source code. If the password becomes compromised, anyone who knows the password can access the system or service, such as a database or web server. Because the password is hard-coded, it can be difficult to update each installation that uses it once a security breach is discovered.
+For example, [CWE-259](https://cwe.mitre.org/data/definitions/259.html?azure-portal=true) relates to the use of hard-coded passwords in source code. If the password becomes compromised, anyone who knows the password can access the system or service, such as a database or web server. Because the password is hard-coded, it can be difficult to update each installation that uses it once a security breach is discovered.
 
 Many tools scan for CWE recommendations and provide pointers to those recommendations as part of the generated report. These recommendations provide developers and security practitioners with a a common language for describing software security weaknesses.
 
@@ -72,11 +72,11 @@ Many tools scan for CWE recommendations and provide pointers to those recommenda
 
 A list of cybersecurity vulnerabilities that's related to the Common Weakness Enumeration is the [Common Vulnerabilities and Exposures](https://cve.mitre.org/cve/?azure-portal=true), or CVE.
 
-While the CWE defines security vulnerabilities in the general sense, the CVE focuses on specific instances in generally-available software. A CVE commonly refers to a security weakness that would allow an attacker to compromise the system through techniques such as arbitrary code execution and buffer overflows.
+While the CWE defines security vulnerabilities in the general sense, the CVE focuses on specific instances in software that's generally available. A CVE commonly refers to a security weakness that would allow an attacker to compromise the system through techniques such as arbitrary code execution and buffer overflows.
 
-We won't call out any specific CVEs here, but they apply to a wide range of software including web browsers, databases, and productivity software. When a CVE is discovered, it's the responsibility of the maintainer of that software to provide users with a security patch. End users and administrators are responsible for installing that patch so help ensure they're no longer exposed to that threat.
+We won't call out any specific CVEs here, but they apply to a wide range of software including web browsers, databases, and productivity software. When a CVE is discovered, it's the responsibility of the maintainer of that software to provide users with a security patch. End users and administrators are responsible for installing that patch to help ensure they're no longer exposed to that threat.
 
-Like the CWE, many tools scan for CVE recommendations. Common CVEs development teams face relate to use of open source components. When a scan reveals a CVE in your software, you and your team would assess the risk and prioritize a fix. A fix might include updating to a newer version of that open source component that does not contain the vulnerability or possibly removing that component and providing its functionality in some other way.
+Like the CWE, many tools scan for CVE recommendations. Common CVEs that development teams face relate to the use of open source components. When a scan reveals a CVE in your software, you and your team assess the risk and prioritize a fix. A fix might include updating to a newer version of that open source component that does not contain the vulnerability or possibly removing that component and providing its functionality in some other way.
 
 ## What does the team choose?
 
