@@ -1,19 +1,19 @@
-In this unit, you'll create a Cosmos DB account and use a console application to populate the database.
+In this unit, you'll create an Azure Cosmos DB account and use a console application to populate the database.
 
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Create your database account
 
-A database account is a container for multiple Cosmos DB databases.
+A database account is a container for multiple Azure Cosmos DB databases.
 
-1. Add a unique name for your database account. The database account name must be unique across all Cosmos DB instances. Use the command below to generate a random database account name, using the **Bash** `$RANDOM` variable, and store it in an environment variable to use later.
+1. Add a unique name for your database account. The database account name must be unique across all Azure Cosmos DB instances. Use the command below to generate a random database account name, using the **Bash** `$RANDOM` variable, and store it in an environment variable to use later.
 
     ```bash
     export COSMOS_NAME=cosmos$RANDOM
     ```
 
-1. Create a Cosmos DB account using the following command:
+1. Create an Azure Cosmos DB account using the following command:
 
     ```bash
     az cosmosdb create --resource-group <rgn>Sandbox Resource Group</rgn> --name $COSMOS_NAME
@@ -21,13 +21,13 @@ A database account is a container for multiple Cosmos DB databases.
 
 The database account can take 4-5 minutes to provision. Keep reading while the account is being created.
 
-## Cosmos DB concepts: resources, partitioning, and indexing
+## Azure Cosmos DB concepts: resources, partitioning, and indexing
 
-### Cosmos DB resources
+### Azure Cosmos DB resources
 
-A Cosmos DB account is a container for one or more _databases_. A Cosmos DB database is a container for one or more _collections_. A collection contains _documents_. A document is an unstructured set of key value pairs, read and written in JSON format.
+An Azure Cosmos DB account is a container for one or more _databases_. An Azure Cosmos DB database is a container for one or more _collections_. A collection contains _documents_. A document is an unstructured set of key value pairs, read and written in JSON format.
 
-### Partitioning in Cosmos DB
+### Partitioning in Azure Cosmos DB
 
  _Partitioning_ is the distribution and grouping of your data across the underlying resources. Documents are grouped in a partition based on the value of the partition key. You specify the partition key when you create the collection. To understand the partition key concept better, let's review the property and values in the following JSON example document.
 
@@ -41,9 +41,9 @@ You choose how to partition your data at design time. The partitioning configura
 
 We examine partitioning concepts and examples in detail in Units 4 and 5.
 
-### Indexing in Cosmos DB
+### Indexing in Azure Cosmos DB
 
-An index is a catalog of document properties and their values. It includes links to documents that contain properties equal to each property value. Indexing makes searching a collection more efficient. But the search efficiency is balanced with the resources required to insert or change a document. When a document is inserted or changed, Cosmos DB has to update the index. The optimal indexing strategy for your collection depends on your workload.
+An index is a catalog of document properties and their values. It includes links to documents that contain properties equal to each property value. Indexing makes searching a collection more efficient. But the search efficiency is balanced with the resources required to insert or change a document. When a document is inserted or changed, Azure Cosmos DB has to update the index. The optimal indexing strategy for your collection depends on your workload.
 
 Unlike partitioning, you can change indexing at run-time.
 

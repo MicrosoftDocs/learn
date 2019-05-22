@@ -66,7 +66,7 @@ Next, you'll create the VPN gateway for the Azure end of the connection.
         --no-wait
     ```
 
-## Create the On-Premises side VPN gateway
+## Create the on-premises-side VPN gateway
 
 Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
@@ -89,10 +89,28 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --vnet HQ-Network \
         --gateway-type Vpn \
         --vpn-type RouteBased \
-        --sku VpnGw1
+        --sku VpnGw1 \
+        --no-wait
     ```
 
     This can take several minutes to create the gateway.
+
+1. To monitor the progress of the gateway creation, run the following command. This uses the Linux `watch` command to execute the `az network vnet-gateway list` command periodically, allowing you to monitor the progress.
+
+    ```bash
+    watch -d -n 5 az network vnet-gateway list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output table
+    ```
+
+    Once each VPN gateway shows a **ProvisioningState** of **Succeeded**, you are ready to continue. Press `Ctrl-c` to halt the command once gateway creation is complete.
+
+    ```output
+    ActiveActive    EnableBgp    GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
+    --------------  -----------  -------------  --------------  ----------------  -------------------  ------------------------------------  ------------------------------------  ----------
+    False           False        Vpn            southcentralus  VNG-Azure-VNet-1  Succeeded            <rgn>[sandbox resource group name]</rgn>  48dc714e-a700-42ad-810f-a8163ee8e001  RouteBased
+    False           False        Vpn            southcentralus  VNG-HQ-Network    Succeeded            <rgn>[sandbox resource group name]</rgn>  49b3041d-e878-40d9-a135-58e0ecb7e48b  RouteBased
+    ```
 
 ## Update local network gateway IP references
 

@@ -62,7 +62,7 @@ The function, which is invoked each time Stream Analytics produces an output, ca
 
     ![Creating an output](../media/7-add-output-2.png)
 
-    Just as a Stream Analytics job will accept multiple inputs, it supports multiple outputs, too. In addition to passing the output to an Azure Function, you could easily add outputs to log the output from the job in an Azure SQL database, a Cosmos DB database, blob storage, and other locations.
+    Just as a Stream Analytics job will accept multiple inputs, it supports multiple outputs, too. In addition to passing the output to an Azure Function, you could easily add outputs to log the output from the job in an Azure SQL database, an Azure Cosmos DB database, blob storage, and other locations.
 
 1. Wait for the output to appear in the list of outputs, indicating that it has been successfully added to the Stream Analytics job.
 

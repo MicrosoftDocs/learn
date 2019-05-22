@@ -12,7 +12,7 @@ In the rare event of an Azure regional outage or data center outage, Azure Cosmo
 
 **What happens if a read region has an outage?**
 
-Azure Cosmos DB accounts with a read region in one of the affected regions are automatically disconnected from their write region and marked offline. The Cosmos DB SDKs implement a regional discovery protocol that allows them to automatically detect when a region is available and redirect read calls to the next available region in the preferred region list. If none of the regions in the preferred region list is available, calls automatically fall back to the current write region. No changes are required in your application code to handle regional failovers. During this entire process, consistency guarantees continue to be honored by Azure Cosmos DB.
+Azure Cosmos DB accounts with a read region in one of the affected regions are automatically disconnected from their write region and marked offline. The Azure Cosmos DB SDKs implement a regional discovery protocol that allows them to automatically detect when a region is available and redirect read calls to the next available region in the preferred region list. If none of the regions in the preferred region list is available, calls automatically fall back to the current write region. No changes are required in your application code to handle regional failovers. During this entire process, consistency guarantees continue to be honored by Azure Cosmos DB.
 
 Once the affected region recovers from the outage, all the affected Azure Cosmos DB accounts in the region are automatically recovered by the service. Azure Cosmos DB accounts that had a read region in the affected region will then automatically sync with current write region and turn online. The Azure Cosmos DB SDKs discover the availability of the new region and evaluate whether the region should be selected as the current read region based on the preferred region list configured by the application. Subsequent reads are redirected to the recovered region without requiring any changes to your application code.
 
@@ -22,13 +22,13 @@ If the affected region is the current write region and automatic failover is ena
 
 During automatic failovers, Azure Cosmos DB automatically chooses the next write region for a given Azure Cosmos DB account based on the specified priority order. Applications can use the WriteEndpoint property of DocumentClient class to detect the change in write region.
 
-Once the affected region recovers from the outage, all the affected Cosmos DB accounts in the region are automatically recovered by the service.
+Once the affected region recovers from the outage, all the affected Azure Cosmos DB accounts in the region are automatically recovered by the service.
 
 Now let's modify the read region for your database.
 
 ## Set read region priorities
 
- The following steps apply when you have a single-region write Cosmos DB account. If you enabled multi-region writes when you created your Cosmos DB account, you can't complete the following steps.
+ The following steps apply when you have a single-region write Azure Cosmos DB account. If you enabled multi-region writes when you created your Azure Cosmos DB account, you can't complete the following steps.
 
 1. In the Azure portal, on the **Replicate data globally** screen, click **Automatic Failover**. Automatic failover is only enabled if the database has already been replicated to more than one region.
 2. On the **Automatic Failover** screen, change **Enable Automatic Failover** to **ON**.

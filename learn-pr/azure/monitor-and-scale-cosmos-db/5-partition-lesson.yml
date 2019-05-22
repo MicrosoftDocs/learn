@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-azure-cosmos-db.5-partition-lesson
-title: Identify partition strategy for your Cosmos DB data
+title: Identify partition strategy for your Azure Cosmos DB data
 metadata:
   title: Learn the best methods of data distribution in a NoSQL database
   description: Partition design is fundamental to scaling unstructured data collections
@@ -40,4 +40,4 @@ quiz:
       explanation: "To use your allocated throughput efficiently, both write and query workloads should be distributed across partitions."
     - content: "Design a partition key strategy so that your most frequent queries don't cross partitions."
       isCorrect: true
-      explanation: "Querying within a partition places far fewer demands on Cosmos DB than querying across partitions."  
+      explanation: "Querying within a partition places far fewer demands on Azure Cosmos DB than querying across partitions."  

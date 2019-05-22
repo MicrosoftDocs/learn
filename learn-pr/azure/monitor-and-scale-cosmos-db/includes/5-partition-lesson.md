@@ -1,10 +1,10 @@
-Remember that data in a Cosmos DB is stored in _collections_. Collections are distributed across _partitions_ based on the value of a collection's _partition key_.
+Remember that data in an Azure Cosmos DB is stored in _collections_. Collections are distributed across _partitions_ based on the value of a collection's _partition key_.
 
-The partition key is a _document_ property. Documents with the same partition key value are always located on the same logical partition. A partition supports a fixed maximum amount of storage and Request Units (RUs). When the capacity of a logical partition gets close to the maximum storage, Cosmos DB allocates another physical partition. Cosmos DB seamlessly splits the logical partitions, the groups of documents with the same partition key value, among the physical partitions.
+The partition key is a _document_ property. Documents with the same partition key value are always located on the same logical partition. A partition supports a fixed maximum amount of storage and Request Units (RUs). When the capacity of a logical partition gets close to the maximum storage, Azure Cosmos DB allocates another physical partition. Azure Cosmos DB seamlessly splits the logical partitions, the groups of documents with the same partition key value, among the physical partitions.
 
 ## Don't create hot partitions 
 
-The Cosmos DB throughput you've configured is divided evenly among partitions. So a partition key design that doesn't evenly distribute the throughput requests can create _hot_ partitions. A hot partition is accessed more than the other partitions, which result in an inefficient use of the total configured throughput. If the demand on the hot partition is high enough, the partition becomes overloaded and traffic to the database is rate-limited.
+The Azure Cosmos DB throughput you've configured is divided evenly among partitions. So a partition key design that doesn't evenly distribute the throughput requests can create _hot_ partitions. A hot partition is accessed more than the other partitions, which result in an inefficient use of the total configured throughput. If the demand on the hot partition is high enough, the partition becomes overloaded and traffic to the database is rate-limited.
 
 A good partition design avoids hot partitions.
 
@@ -69,7 +69,7 @@ Using the information from the previous sections, let's propose some different v
 
         If we use the `Item/Category` property as a partition key, then it has a small cardinality. Even if the documents are evenly distributed across the collection, for large collections, any category could outgrow a single partition.
 
-    - If the categories aren't evenly distributed across the documents in the collection, then the problem is even worse. The dominant category restricts the ability of Cosmos DB to scale.
+    - If the categories aren't evenly distributed across the documents in the collection, then the problem is even worse. The dominant category restricts the ability of Azure Cosmos DB to scale.
 
     Item/Category is **not** a good choice for partition key.
 
