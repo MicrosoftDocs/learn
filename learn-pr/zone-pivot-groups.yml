@@ -164,3 +164,11 @@ groups:
       title: LINQ
     - id: fluent
       title: Fluent
+- id: aspnet-core-identity-data-store
+  title: Identity-Data-Store
+  prompt: Choose the ASP.NET Core Identity data store
+  pivots:
+    - id: pg
+      title: PostgreSQL
+    - id: sql
+      title: SQL Server
