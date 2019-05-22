@@ -103,7 +103,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --output table
     ```
 
-    Once each VPN gateway shows a **ProvisioningState** of **Succeeded**, you are ready to continue.
+    Once each VPN gateway shows a **ProvisioningState** of **Succeeded**, you are ready to continue. Press `Ctrl-c` to halt the command once gateway creation is complete.
 
     ```output
     ActiveActive    EnableBgp    GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
