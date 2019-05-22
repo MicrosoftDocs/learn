@@ -11,7 +11,7 @@ Before you begin, make sure you have the following software installed on your ma
 1. Run the following command on your local machine to clone the app from GitHub.
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr.git ~/serverless-demo
+    git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr.git serverless-demo
     ```
 
     > [!IMPORTANT]
@@ -20,7 +20,7 @@ Before you begin, make sure you have the following software installed on your ma
 1. Run the following command to navigate to the new folder into which you cloned the repo:
 
     ```bash
-    cd ~serverless-demo
+    cd serverless-demo
     ```
 
 1. The beginning state of the app is located in the **start** folder. Make sure you are in that folder for the remainder of this module. Use the following command to open the *start* folder in Visual Studio Code:
