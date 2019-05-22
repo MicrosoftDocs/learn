@@ -1,9 +1,5 @@
-In this module you've have learned about RA-GRS and how to create an application for high availability.  You also learned about the various replication features available and what to take into consideration when configuring and deploying an application for high availability
-
-You can now use Fiddler and RA-GRS storage accounts to configure applications in the cloud with high availability 
-
-
+In this module you've learned about RA-GRS storage, and how to create an application for high availability. You've also learned about  features available, and what to take into consideration when configuring and deploying an application for high availability. In particular, you saw how to use the Circuit Breaker pattern to handle situations where connection can occur.
 
 ## Cleanup
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)] 
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
