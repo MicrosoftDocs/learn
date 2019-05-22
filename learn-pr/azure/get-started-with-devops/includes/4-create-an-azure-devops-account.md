@@ -1,4 +1,4 @@
-Microsoft provides free Azure DevOps organizations for individuals, small teams, and open-source projects. Enterprises can also sign up for Azure DevOps organization that can scale to thousands of team members. We're going to sign up for a free Azure DevOps organization to see how Azure DevOps can help us on our DevOps journey.
+Microsoft provides free Azure DevOps organizations for individuals, small teams, and open-source projects. Enterprises can also sign up for Azure DevOps organizations that can scale to thousands of team members. We're going to sign up for a free Azure DevOps organization to see how Azure DevOps can help us on our DevOps journey.
 
 ## Create an Azure DevOps organization
 
