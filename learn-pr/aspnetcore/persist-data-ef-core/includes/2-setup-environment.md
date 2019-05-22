@@ -1,13 +1,13 @@
 In this unit, you'll set up the development environment for the module. You'll also gain an understanding of the resulting project.
 
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
 ## Set up development environment
 
 Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.
 
 ```bash
-wget -O setup.sh https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-core/live/modules/persist-data-ef-core/setup/setup.sh && \
-    chmod 755 setup.sh && \
-    . setup.sh
+. <(wget -q -O - https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-core/live/modules/persist-data-ef-core/setup/setup.sh)
 ```
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
@@ -20,9 +20,6 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 * Sets environment variables that are required for this module.
 * Displays connection information for the Azure resources.
 * Launches the Cloud Shell Editor to view the starter code.
-
-> [!IMPORTANT]
-> If the Cloud Shell session ever times out or disconnects, reconnect and re-run the preceding command to ensure the required environment variables are defined. The Azure resources won't be duplicated because they're only created on the initial run of the script.
 
 ## Review starter code
 
