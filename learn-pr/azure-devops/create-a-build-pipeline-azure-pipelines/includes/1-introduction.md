@@ -40,8 +40,14 @@ This environment lets you complete the excercises in this and future modules. Yo
 
 You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
 
+:::row:::
+
 [!include[](../../shared/includes/meet-andy-short-row.md)]
 
 [!include[](../../shared/includes/meet-amita-short-row.md)]
 
 [!include[](../../shared/includes/meet-mara-short-row.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.

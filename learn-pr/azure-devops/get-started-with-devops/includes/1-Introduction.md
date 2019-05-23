@@ -11,3 +11,21 @@ In this module, you will:
 - Learn what DevOps is and identify what separates elite performers from low performers
 - Identify what services Azure DevOps provides
 - Set up an account in Azure DevOps
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in the previous module. As a refresher, here's who you'll work with in this module.
+
+:::row:::
+
+[!include[](../../shared/includes/meet-andy-short-row.md)]
+
+[!include[](../../shared/includes/meet-amita-short-row.md)]
+
+[!include[](../../shared/includes/meet-tim-short-row.md)]
+
+[!include[](../../shared/includes/meet-mara-short-row.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.

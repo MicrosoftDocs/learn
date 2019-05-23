@@ -18,3 +18,21 @@ In this module, you will:
 The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true) module.
 
 Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+
+:::row:::
+
+[!include[](../../shared/includes/meet-andy-short-row.md)]
+
+[!include[](../../shared/includes/meet-amita-short-row.md)]
+
+[!include[](../../shared/includes/meet-tim-short-row.md)]
+
+[!include[](../../shared/includes/meet-mara-short-row.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
