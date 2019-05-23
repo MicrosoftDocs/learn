@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hpc.5-scenarios-for-hpc-and-batch
+metadata:
+  title: Scenarios for HPC and Batch technologies
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Scenarios for HPC and Batch technologies
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-scenarios-for-hpc-and-batch.md)]

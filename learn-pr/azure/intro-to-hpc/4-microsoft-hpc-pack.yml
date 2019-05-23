@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hpc.4-microsoft-hpc-pack
+metadata:
+  title: Microsoft HPC Pack
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Microsoft HPC Pack
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-microsoft-hpc-pack.md)]

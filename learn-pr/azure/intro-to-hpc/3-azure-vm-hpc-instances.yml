@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
+metadata:
+  title: Azure VM HPC instances
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Azure VM HPC instances
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-azure-vm-hpc-instances.md)]
