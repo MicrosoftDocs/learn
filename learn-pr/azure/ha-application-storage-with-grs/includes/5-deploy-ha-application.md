@@ -56,9 +56,193 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     ![Fiddler, showing the **HTTPS** tab in the **Options** dialog box](../media/5-fiddler-options.png)
 
-## Test the application and trigger a failover
+## Examine the sample application
 
 1. Start Visual Studio, and open the *CircuitBreaker.sln* solution that you downloaded from GitHub. This application implements the Circuit Breaker pattern to manage connections to a replicated Azure storage account. The circuit breaker detects whether the connection to the primary location is available, and if not, switches to the secondary account for a short while before retrying the primary location again.
+
+1. In the **Solution Explorer** window, double-click the **Program.cs** file. This file contains the C# source code for the application.
+
+1. Scroll down to the start of the **RunCircuitBreakerAsync** method:
+
+    ```C#
+    /// <summary>
+    /// Main method. Sets up the objects needed, then performs a loop
+    ///   to perform a blob operation repeatedly, responding to the Retry and Response Received events.
+    /// </summary>
+    private static async Task RunCircuitBreakerAsync()
+    ```
+
+1. In this method, locate the following block of code:
+
+    ```C#
+    // Define a reference to the actual blob.
+    CloudBlockBlob blockBlob = null;
+
+    // Upload a BlockBlob to the newly created container.
+    blockBlob = container.GetBlockBlobReference(ImageToUpload);
+    await blockBlob.UploadFromFileAsync(ImageToUpload);
+    ```
+
+    This code uploads the sample data (an image file) to a blob in your storage account.
+
+1. Examine the block of code that follows these statements:
+
+    ```C#
+    // Set the location mode to secondary so you can check just the secondary data center.
+    BlobRequestOptions options = new BlobRequestOptions();
+    options.LocationMode = LocationMode.SecondaryOnly;
+
+    // Before proceeding, wait until the blob has been replicated to the secondary data center.
+    // Loop and check for the presence of the blob once a second
+    //   until it hits 60 seconds or it finds it.
+    int counter = 0;
+    while (counter < 60)
+    {
+        counter++;
+
+        Console.WriteLine("Attempt {0} to see if the blob has replicated to secondary yet.", counter);
+
+        if (await blockBlob.ExistsAsync(options, null))
+        {
+            break;
+        }
+
+        // Wait a second, then loop around and try again.
+        // When it's finished replicating to the secondary, continue on.
+            await Task.Delay(1000);
+    }
+    if (counter >= 60)
+    {
+        throw new Exception("Unable to find the image on the secondary endpoint.");
+    }
+    ```
+
+    This code attempts to verify that the data has been replicated to the secondary location. If the blob does not appear in this location after 60 seconds, the code times out with an exception.
+
+1. Examine the following statement:
+
+    ```C#
+    // Set the starting LocationMode to PrimaryThenSecondary. 
+    // Note that the default is PrimaryOnly. 
+    // You must have RA-GRS enabled to use this.
+    blobClient.DefaultRequestOptions.LocationMode = LocationMode.PrimaryThenSecondary;
+    ```
+
+    This statement specifies that the application should attempt to read from the primary storage location first, and then the secondary if the primary location is unavailable.
+
+1. Scroll down to the following block of code:
+
+    ```C#
+    for (int i = 0; i < 1000; i++)
+    {
+        if (blobClient.DefaultRequestOptions.LocationMode == LocationMode.SecondaryOnly)
+        {
+            Console.Write("S{0} ", i.ToString());
+        }
+        else
+        {
+            Console.Write("P{0} ", i.ToString());
+        }
+        ...
+    ```
+
+    This code iterates for 1000 times, downloading the data from blob storage. The first `if..else` block displays the iteration number of the download attempt (starting at 0), together with a prefix (either "P" or "S"), indicating whether the blob was downloaded using the primary or secondary storage location.
+
+1. Examine the following block. Some statements have been omitted, to focus on the logic of this code:
+
+    ```C#
+        // Set up an operation context for the downloading the blob.
+        OperationContext operationContext = new OperationContext();
+
+        try
+        {
+            // Hook up the event handlers for the Retry event and the Request Completed event
+            // These events are used to trigger the change from primary to secondary and back.
+            operationContext.Retrying += OperationContextRetrying;
+            operationContext.RequestCompleted += OperationContextRequestCompleted;
+
+            // Download the file.
+            Task task = blockBlob.DownloadToFileAsync(string.Format("./CopyOf{0}", ImageToUpload), FileMode.Create, null, null, operationContext);
+            ...
+            await task;
+            ...
+        }
+        catch (Exception ex)
+        {
+            // If you get a Gateway error here, check and make sure your storage account redundancy is set to RA-GRS.
+            Console.WriteLine(ex.ToString());
+        }
+        finally
+        {
+            // Unhook the event handlers so everything can be garbage collected properly.
+            operationContext.Retrying -= OperationContextRetrying;
+            operationContext.RequestCompleted -= OperationContextRequestCompleted;
+        }
+    }
+    ```
+
+    This block implements part of the Circuit Breaker pattern. The `OperationContext` object provides events that you can use for retrying a failed request. The `Retrying` event occurs when a request fails and is being retried, and the `RequestCompleted` event is raised when the request has finished (either successfully, or with a failure). The `DownloadToFileAsync` method downloads the blob data from storage, but also takes the `OperationContext` object as a parameter. If the download fails, the operation will run the `OperationContextRetrying` method. When the download completes, it will run the `OperationContextRequestCompleted` method.
+
+1. Scroll down to the **OperationContextRetrying** method:
+
+    ```C#
+    /// Retry Event handler 
+    /// If it has retried more times than allowed, and it's not already pointed to the secondary,
+    ///   flip it to the secondary and reset the retry count.
+    /// If it has retried more times than allowed, and it's already pointed to secondary, throw an exception. 
+    private static void OperationContextRetrying(object sender, RequestEventArgs e)
+    {
+        retryCount++;
+        Console.WriteLine("Retrying event because of failure reading the primary. RetryCount = " + retryCount);
+
+        // Check if we have had more than n retries in which case switch to secondary.
+        if (retryCount >= retryThreshold)
+        {
+
+            // Check to see if we can fail over to secondary.
+            if (blobClient.DefaultRequestOptions.LocationMode != LocationMode.SecondaryOnly)
+            {
+                blobClient.DefaultRequestOptions.LocationMode = LocationMode.SecondaryOnly;
+                retryCount = 0;
+            }
+            else
+            {
+                throw new ApplicationException("Both primary and secondary are unreachable. Check your application's network connection. ");
+            }
+        }
+    }
+    ```
+
+    This method tracks how many times in succession the request has failed. If this number exceeds a specified threshold, the method changes the `LocationMode` property of the blob client to force it to download data from the secondary location.
+
+1. Find the **OperationContextRequestCompleted** method
+
+    ```C#
+    /// RequestCompleted Event handler 
+    /// If it's not pointing at the secondary, let it go through. It was either successful, 
+    ///   or it failed with a nonretryable event (which we hope is temporary).
+    /// If it's pointing at the secondary, increment the read count. 
+    /// If the number of reads has hit the threshold of how many reads you want to do against the secondary
+    ///   before you switch back to primary, switch back and reset the secondaryReadCount. 
+    private static void OperationContextRequestCompleted(object sender, RequestEventArgs e)
+    {
+        if (blobClient.DefaultRequestOptions.LocationMode == LocationMode.SecondaryOnly)
+        {
+            // You're reading the secondary. Let it read the secondary [secondaryThreshold] times, 
+            //    then switch back to the primary and see if it's available now.
+            secondaryReadCount++;
+            if (secondaryReadCount >= secondaryThreshold)
+            {
+                blobClient.DefaultRequestOptions.LocationMode = LocationMode.PrimaryThenSecondary;
+                secondaryReadCount = 0;
+            }
+        }
+    }
+    ```
+
+    If the download has been successful, this method checks to see which location was used (primary or secondary). The method tracks the number of successive downloads performed using the secondary location. When this number exceeds a threshold value, the code forces a switch back to the primary location. If the primary location is now available, it will be used for the remaining downloads. If the primary location is still unavailable, the download operation will fire the `Retrying` event of the `OperationContext` object, which will switch back to the secondary location again.
+
+## Test the application and trigger a failover
 
 1. On the **Debug** menu, click **Start Debugging** to run the application.
 
@@ -66,15 +250,15 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     ![The output of the sample application, showing the messages displayed as the data is repeatedly downloaded](../media/5-app-download.png)
 
-1. While the app is running, switch to Fiddler. Fiddler shows the HTTP traffic uploading the file to your storage account and then downloading the data again. The left-hand pane should display a list of requests sent to your storage account, similar to the following image:
+2. While the app is running, switch to Fiddler. Fiddler shows the HTTP traffic uploading the file to your storage account and then downloading the data again. The left-hand pane should display a list of requests sent to your storage account, similar to the following image:
 
     ![Fiddler, showing the traffic sent to your Azure storage account by the sample application](../media/5-fiddler-status.png)
 
-1. Return to the application window and press any key to pause it.
+3. Return to the application window and press any key to pause it.
 
-1. In Fiddler, on the **Rules** menu, click **Customize Rules**.
+4. In Fiddler, on the **Rules** menu, click **Customize Rules**.
 
-1. Search for the **OnBeforeResponse** function. Add the following code to this function, after the existing statements in this function. Replace *\<storage account name\>* with the name of the storage account you created in the previous exercise:
+5. Search for the **OnBeforeResponse** function. Add the following code to this function, after the existing statements in this function. Replace *\<storage account name\>* with the name of the storage account you created in the previous exercise:
 
     ```JavaScript
     if (oSession.hostname == "<storage account name>.blob.core.windows.net") {
@@ -84,20 +268,20 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     The JavaScript code you added to the Fiddler **OnBeforeResponse** function returns an HTTP 503 (Service Unavailable) error for requests to the primary storage account location, to simulate the storage endpoint being unaccessible. The circuit breaker code in the sample application should detect this failure and fail over to using the secondary storage location. The data was previously replicated from the primary to the secondary storage location by Azure, so the data should be accessible.
 
-1. On the **File** menu, click **Save**.
+6. On the **File** menu, click **Save**.
 
-1. Return to your application and press any key to continue running it.
+7. Return to your application and press any key to continue running it.
 
-1. In Fiddler, you'll see HTTP 503 errors being generated against the primary location. The application window will display the message *Retrying event because of error reading the primary*. After five retries, the circuit breaker in the application switches to the secondary location and starts reading from there instead. You'll see messages with the "S" prefix (for secondary) rather than "P". After reading from the secondary account for a short period, the circuit breaker will attempt to switch back to the primary location. This will fail, so the circuit breaker will revert to the secondary location for another period. This process will continue until the primary location becomes available again:
+8. In Fiddler, you'll see HTTP 503 errors being generated against the primary location. The application window will display the message *Retrying event because of error reading the primary*. After five retries, the circuit breaker in the application switches to the secondary location and starts reading from there instead. You'll see messages with the "S" prefix (for secondary) rather than "P". After reading from the secondary account for a short period, the circuit breaker will attempt to switch back to the primary location. This will fail, so the circuit breaker will revert to the secondary location for another period. This process will continue until the primary location becomes available again:
 
     ![The output of the sample application, showing the switch from the primary account to the secondary account](../media/5-app-switch.png)
 
-1. Press a key to pause the application once again.
+9. Press a key to pause the application once again.
 
-1. In Fiddler, remove the code that you added earlier to the **OnBeforeResponse** function, and save the script.
+10. In Fiddler, remove the code that you added earlier to the **OnBeforeResponse** function, and save the script.
 
-1. Return to your application and press any key to continue running it. You'll see that the application now successfully reverts to the primary storage account location.
+11. Return to your application and press any key to continue running it. You'll see that the application now successfully reverts to the primary storage account location.
 
-1. Close the application, close Fiddler, and then Visual Studio.
+12. Close the application, close Fiddler, and then Visual Studio.
 
 You've verified that data uploaded to Azure storage is replicated across a storage account in different regions. You've seen how an application can use the Circuit Breaker pattern to handle connection failures, and switch from the primary to secondary storage account locations. The application can revert back to the primary location when the connection becomes available again.
