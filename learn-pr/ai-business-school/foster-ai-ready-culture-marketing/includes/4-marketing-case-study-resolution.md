@@ -13,14 +13,19 @@ First, we wanted to identify and eliminate leads with fake names or invalid cont
 Next, we implemented machine learning–driven lead scoring. Marketing employees partnered with a team of data scientists to create machine learning models that weigh thousands of variables to score our leads. This initiative brought together our marketing employees’ knowledge on lead quality and the desired business outcomes with the machine learning expertise of our data scientists. The lead score helps us predict the probability that a lead will convert with any given sales channel so we can send the lead to the channel with the best probability. This not only helps us increase our conversion rates, it also ensures that we are engaging with customers in the way that serves them best based on their needs.
 
 Leads are then rescored in real time after every new activity, and there are multiple models, optimized for different geographies and products. Importantly, the models are self-learning, adjusting for changing conditions.
-
+:::row:::
+:::column span="2":::
 Since a lead score is just a prediction of the customer’s likelihood to convert, we wanted to find a way to confirm each customer’s interest to ensure that we send only the best possible leads to sales. We created an AI-based lead qualification assistant that emails customers to determine interest. When the customer responds, the assistant uses natural language processing to understand the customer’s intent, classifying leads as "interested", "not interested", or "hot". The assistant even understands when the customer actually needs support help and classifies the lead accordingly. The assistant is very valuable in identifying what we call “diamonds in the rough,” leads that we deemed low propensity but express interest to buy, and “fool’s gold,” leads that were scored as hot but were found to be uninterested.
 
 The lead qualification assistant has also been implemented after a marketing-qualified lead has expired. The assistant emails the lead again to reevaluate interest, preventing interested customers from falling through the cracks. Earlier this year, after the assistant reached out to an expired lead, the customer expressed interest, leading to a $250,000 sale.
-
+:::column-end:::
+:::column span="2":::
+![The AI lead qualification assistant discovered an opportunity that led to a $250k sale](../media/2.3.3.B.Marketing-case-study-resolution1.jpg)
+:::column-end:::
+:::row-end:::
 Following qualification, marketing hands off the lead to the appropriate sales channel with the entire email conversation, which provides valuable context. For instance, if the customer expressed interest in getting more technical details in their response to the bot, the seller can bring a technical specialist to their very first conversation, accelerating the sales cycle.
 
-![Conversion to sales before and after ai](../media/11-4-a.png)
+![Conversion to sales before and after ai](../media/11-4-a1.png)
 
 ## Account-based marketing recommendations
 
