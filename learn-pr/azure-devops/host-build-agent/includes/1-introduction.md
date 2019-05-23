@@ -1,4 +1,4 @@
-In this module, you'll set up a build agent running on Azure.
+In this module, you'll set up your own build agent running on an Azure virtual machine.
 
 Up until now, you used a Microsoft-hosted agent running Ubuntu to build the _Space Game_ web application. Many times, a Microsoft-hosted agent can do everything you need.
 
