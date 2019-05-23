@@ -1,24 +1,68 @@
 Up to this point you have only run the application on your machine. The next step is to deploy the app to Azure.
 
-## Enable advanced creation of Azure Functions in the Visual Studio Code Azure Functions extension
+## Customize Visual Studio Code
 
-To give you control over the settings associated with creating Azure Functions apps, update the Azure Functions extension to enable advanced settings.
+Before you begin, there are two adjustments you need to make to Visual Studio Code. The first grants the Azure extension access to Learn's concierge Azure subscription. This subscription is created as you activate the sandbox and allows you to use Azure services without incurring any costs.
+
+The second customization tells the Azure Functions extension to use the advanced creation process. If you skip this step, then the extension uses default values and won't create your function correctly to work with the sandbox.
+
+### Add concierge tenant to Visual Studio Code
+
+In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
+
+```bash
+az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
+```
 
 1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
-2. Navigate through **User Settings > Extensions > Azure Functions**
-3. Check the checkbox for **Azure Function: Advanced Creation**
+
+1. Navigate through **User Settings > Extensions > Azure configuration**
+
+1. Enter the tenant in the **Azure: Tenant** textbox.
+
+![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant.png)
+
+### Enable Azure Functions advanced creation
+
+1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
+
+1. Navigate through **User Settings > Extensions > Azure Functions**
+
+1. Check the checkbox for **Azure Function: Advanced Creation**
 
     ![Enable advanced Functions creation](../media/serverless-app-extension-adv-creation.png)
 
-## Deploy the function app
+### Log out and back in
+
+Now that you've made these changes, you need to log out and back into the Azure extension.
 
 1. Press the **CTRL/CMD+Shift+P** to open the Visual Studio Code command palette.
 
-1. If you're already signed-in to Azure in Visual Studio Code with a different account, use the **Azure: Sign Out** command to sign out. Otherwise, you create the function app outside of the Learn sandbox and may incur costs.
+1. Search for and select **Azure: Sign Out**.
+
+1. Press the **CTRL/CMD+Shift+P** again.
+
+1. Search for and select **Azure: Sign In** and sign in with the same account you used to sign into the Learn sandbox.
+
+### Select subscription
+
+1. Click on the Azure extension icon.
+
+    ![Visual Studio Code Azure extension icon](../media/serverless-app-azure-extension-icon.png)
+
+1. Under the *Functions* heading, click on **Select Subscriptions**.
+
+    ![Visual Studio Code Azure extension Functions section](../media/serverless-app-select-subscriptions.png)
+
+1. Next, the command palette appears appears. Select **Concierge Subscription** and click **OK**.
+
+    ![Visual Studio Code Azure extension select concierge subscription](../media/serverless-app-select-concierge.png)
+
+Now Visual Studio Code is configured to use the sandbox resources and avoid any billing against your account.
+
+## Deploy the function app
 
 1. Search for and select the **Azure Functions: Deploy to Function App** command.
-
-1. When prompted, select **Sign in to Azure** and sign in with the same account you used to sign into the Learn sandbox.  
 
 1. Follow the prompts to provide the following information.
 
@@ -46,17 +90,9 @@ To give you control over the settings associated with creating Azure Functions a
 
     ![Upload local settings](../media/serverless-app-upload-local-settings.png)
 
-    If the message box doesn't appear (or was dismissed) in Visual Studio Code, you can still upload your local settings. Opening the Visual Studio Code command palette via **CTRL/CMD+Shift+P** and select **Azure Functions: Upload local settings**. Choose to overwrite any existing settings, if prompted.
+    If the message box doesn't appear or was dismissed, you can still upload your local settings. Opening the the command palette via **CTRL/CMD+Shift+P** and select **Azure Functions: Upload local settings**. Choose to overwrite any existing settings, if prompted.
 
 ## Configure static websites in Azure Storage
-
-<!-- 
-    REVIEW:
-    Need to update prerequisites to include Azure Storage extension
-
-    CONCLUSION
-    Done
- -->
 
 Use the following steps to configure the Azure Storage account to host a static website.
 
@@ -88,7 +124,7 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 1. Copy the URL in the browser, which is the endpoint of the static site hosted in your Storage account. You use the endpoint value to set up CORS settings for the function app in the next section.
 
-## Setup CORS in our function app
+## Setup CORS in the function app
 
 1. In the command palette, search for and select the **Azure Functions: Open in portal** command.
 
@@ -104,11 +140,11 @@ Use the following steps to configure the Azure Storage account to host a static 
 
     ![Enable CORS support for Azure Functions app](../media/serverless-app-function-cors.png)
 
-## Test the deployed application
+## Run the deployed application
 
 Now you can make change to the application's data and observe how to the data is automatically updated.
 
-Again, consider having Visual Studio Code on one side of the screen and the running application on the other. This way you can see the UI update as changes are made to the database.
+1. Arrange Visual Studio Code on one side of the screen and the web browser on the other. This way you can see the UI update as changes are made to the database.
 
 1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
 

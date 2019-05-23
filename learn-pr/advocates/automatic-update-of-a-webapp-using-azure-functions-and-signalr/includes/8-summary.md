@@ -15,3 +15,21 @@ To verify your implementation, you can reference the *end* folder or you can [vi
 
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
+
+## Restore Visual Studio Code settings
+
+### Disable advanced creation of Azure Functions
+
+1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
+2. Navigate through **User Settings > Extensions > Azure Functions**
+3. Uncheck the checkbox for **Azure Function: Advanced Creation**
+
+### Remove tenant from configuration
+
+1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
+2. Navigate through **User Settings > Extensions > Azure configuration**
+3. Clear the tenant in the **Azure: Tenant** textbox.
+
+![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant-blank.png)
+
+### Log out and back in 

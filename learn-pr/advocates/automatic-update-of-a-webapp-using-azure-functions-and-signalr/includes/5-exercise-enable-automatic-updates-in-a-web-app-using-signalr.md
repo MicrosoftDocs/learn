@@ -364,13 +364,15 @@ The script automatically opens the browser and navigates to http://localhost:808
 
 ## Observe automatic updates
 
-Now you can change the application's data and observe how to the UI automatically updates. Since the browser updates nearly immediately, consider having Visual Studio Code open on one side of your screen and the browser on the other. With these windows side-by-side you can see the UI change right after you update the database.
+Now you can change the application's data and observe how to the UI automatically updates.
 
-Return to Visual Studio Code and enter the following command in a new integrated terminal. Again, watch as the application automatically updates the stock ABC.
+1. Arrange Visual Studio Code on one side of the screen and the web browser on the other. This way you can see the UI update as changes are made to the database.
 
-```bash
-npm run update
-```
+1. Return to Visual Studio Code and enter the following command in a new integrated terminal. Again, watch as the application automatically updates the stock ABC.
+
+    ```bash
+    npm run update
+    ```
 
 After the database is updated, the UI looks something like the following screenshot:
 
@@ -379,4 +381,5 @@ After the database is updated, the UI looks something like the following screens
 When you're done, stop the running processes:
 
 - For the web server, press **CTRL/CMD + C** in the terminal window running the web server
+
 - For the functions app, click the **Stop** button or press **Shift + F5**
