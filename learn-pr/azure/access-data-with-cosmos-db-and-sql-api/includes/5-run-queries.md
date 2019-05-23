@@ -1,18 +1,26 @@
-Now that you've learned about what kinds of queries you can create, let's use the Data Explorer in the Azure portal to retrieve and filter your product data.
+Now that you've learned about the kinds of queries you can create, let's use the Data Explorer in the Azure portal to retrieve and filter your product data.
 
-In your Data Explorer window, by default, the query on the **Document** tab is set to `SELECT * FROM c` as shown in the following image. This default query retrieves and displays all documents in the collection.
+Switch back to the Data Explorer window. Notice that by default, the query on the **Items** tab is set to `SELECT * FROM c` as shown in the following image. This default query retrieves and displays all documents in the container.
 
-![Default query in Data Explorer is SELECT * FROM c](../media/5-azure-cosmosdb-data-explorer-query.png)
+![Screenshot showing the default query in Data Explorer is SELECT * FROM c](../media/5-azure-cosmosdb-data-explorer-query.png)
 
 ## Create a new query
 
-1. In Data Explorer, click **New SQL Query**. The default query on the new  **Query 1** tab is again `SELECT * from c`, which will return all documents in the collection. 
+1. In Data Explorer, select **New SQL Query** from the toolbar as shown below.
 
-1. Click **Execute Query**. This query returns all results in the database.
+    ![Screenshot showing the New SQL Query option in the Data Explorer](../media/5-create-new-sql-query.png)
 
-    ![Change the default query by adding ORDER BY c._ts DESC and clicking Apply Filter](../media/5-azure-cosmosdb-data-explorer-edit-query.png)
+    The default query on the new  **Query 1** tab is again `SELECT * from c`, which will return all documents in the container.
 
-2. Now, let's run some of the queries discussed in the previous unit. On the query tab, delete `SELECT * from c`, copy and paste the following query, and then click **Execute Query**:
+1. Select **Execute Query** to run the SQL statement. This query returns all results in the database.
+
+    ![Screenshot showing how to execute the query using the Data Explorer](../media/5-azure-cosmosdb-data-explorer-edit-query.png)
+
+### Run custom queries
+
+Let's run some of the queries we learned earlier.
+
+1. Replace the `SELECT * from c` query and paste the following query into the text box.
 
     ```sql
     SELECT * 
@@ -20,11 +28,36 @@ In your Data Explorer window, by default, the query on the **Document** tab is s
     WHERE p.id ="1"
     ```
 
-    The results return the product whose `id` is 1.
+1. Select **Execute Query** to run the modified SQL.
 
-    ![Query for an id of 1](../media/5-azure-cosmosdb-data-explorer-query-by-id.png)
+    The results return the product whose `id` is 1 as shown here.
 
-3. Delete the previous query, copy and paste the following query, and click **Execute Query**. This query returns the price, description, and product ID for all products, ordered by price, in ascending order.
+    ```json
+    [
+        {
+            "id": "1",
+            "productId": "33218896",
+            "category": "Women's Clothing",
+            "manufacturer": "Contoso Sport",
+            "description": "Quick dry crew neck t-shirt",
+            "price": "14.99",
+            "shipping": {
+                "weight": 1,
+                "dimensions": {
+                    "width": 6,
+                    "height": 8,
+                    "depth": 1
+                }
+            },
+            "_rid": "hxoKANnJfPQBAAAAAAAAAA==",
+            "_self": "dbs/hxoKAA==/colls/hxoKANnJfPQ=/docs/hxoKANnJfPQBAAAAAAAAAA==/",
+            "_etag": "\"0b011de9-0000-0500-0000-5cdc96250000\"",
+            "_attachments": "attachments/",
+            "_ts": 1557960229
+        }
+    ]
+    ```
+1. Replace the query with the following text and click **Execute Query**. This query returns the price, description, and product ID for all products, ordered by price, in ascending order.
  
     ```sql
     SELECT p.price, p.description, p.productId 
@@ -32,6 +65,21 @@ In your Data Explorer window, by default, the query on the **Document** tab is s
     ORDER BY p.price ASC
     ```
 
-## Summary
+    The output pane should show results similar to:
 
-You've now completed some basic queries on your data in Azure Cosmos DB. 
+    ```json
+    [
+        {
+            "price": "14.99",
+            "description": "Quick dry crew neck t-shirt",
+            "productId": "33218896"
+        },
+        {
+            "price": "49.99",
+            "description": "Black wool pea-coat",
+            "productId": "33218897"
+        }
+    ]
+    ```
+
+Now that we've tried out some queries, let's learn how to build more complex queries and user-defined functions.

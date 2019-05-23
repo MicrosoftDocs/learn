@@ -4,15 +4,15 @@ In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database
 
 [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-## Create a Cosmos DB account
+## Create an Azure Cosmos DB account
 
-Start by creating the database in Azure, by adding a Cosmos DB account that uses the Graph API.
+Start by creating the database in Azure, by adding an Azure Cosmos DB account that uses the Graph API.
 
 1. Browse to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and log in using the account that you used when you activated the sandbox.
 
 1. Click **+ Create a resource**, then **Databases**, and then click **Azure Cosmos DB**.
 
-   ![Screenshot showing creating a new Cosmos DB Account](../media/5-create-cosmos-db.png)
+   ![Screenshot showing creating a new Azure Cosmos DB Account](../media/5-create-cosmos-db.png)
 
 1. In the **Create Azure Cosmos DB Account** wizard, complete the **Basics** page with these values, and then click **Review + create**.
 
@@ -20,17 +20,17 @@ Start by creating the database in Azure, by adding a Cosmos DB account that uses
    | --- | --- |
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
-   | Account name | Use a globally unique value for your Cosmos DB account. |
+   | Account name | Use a globally unique value for your Azure Cosmos DB account. |
    | API | Gremlin (graph) |
    | Location | Choose a region near you from the above list. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
 
-   ![Screenshot showing creating a new Cosmos DB Account](../media/5-azure-cosmos-db-create-new-account.png)
+   ![Screenshot showing creating a new Azure Cosmos DB Account](../media/5-azure-cosmos-db-create-new-account.png)
 
 1. If your settings are correct, click **Create**.
 
-It might take a few minutes for Azure to create your new Cosmos DB account. When you account has been created, the portal will display **Congratulations! Your Azure Cosmos DB account was created**.
+It might take a few minutes for Azure to create your new Azure Cosmos DB account. When you account has been created, the portal will display **Congratulations! Your Azure Cosmos DB account was created**.
 
 ## Add a graph
 
@@ -42,7 +42,7 @@ It might take a few minutes for Azure to create your new Cosmos DB account. When
 
 1. Click **Data Explorer**, and then click **New Graph**.
 
-1. In the **Add graph** page, enter the settings for your new graph. Take not of the values that you choose for the **Database ID** and **Graph ID**; you will use these values when you create your application in the next section.
+1. In the **Add graph** page, enter the settings for your new graph. Take note of the values that you choose for the **Database ID** and **Graph ID**; you will use these values when you create your application in the next section.
 
    | Setting| Suggested value | Description |
    | --- | --- | --- |
@@ -61,7 +61,7 @@ It might take a few minutes for Azure to create your new Cosmos DB account. When
 
 ## Create a .NET Core app
 
-Now you'll create a .NET Core application that will allow you to run Gremlin API queries with the Cosmos DB account that you just created.
+Now you'll create a .NET Core application that will allow you to run Gremlin API queries with the Azure Cosmos DB account that you just created.
 
 1. In the Cloud Shell, enter the following commands to scaffold a new .NET app, and then change to your new app's directory.
 
@@ -131,7 +131,7 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    using Microsoft.Extensions.Configuration.Json;
    ```
 
-1. Replace the default `Main()` method with the following code. This method reads your configuration settings from your appsettings.json file, initializes the connection to your Cosmos DB account using the Gremlin.NET driver, sends a graph query to the server, and displays the number of items that were returned by the query.
+1. Replace the default `Main()` method with the following code. This method reads your configuration settings from your appsettings.json file, initializes the connection to your Azure Cosmos DB account using the Gremlin.NET driver, sends a graph query to the server, and displays the number of items that were returned by the query.
 
 
    ```csharp
@@ -204,7 +204,7 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    Please enter a Gremlin/Graph Query.
    ```
 
-1. Your new Cosmos DB account should not contain any data, but just to make sure, run the following command to remove all of the nodes:
+1. Your new Azure Cosmos DB account should not contain any data, but just to make sure, run the following command to remove all of the nodes:
 
    ```bash
    dotnet run "g.V().drop()"

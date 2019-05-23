@@ -64,4 +64,4 @@ When you create an account, you can provision a minimum of 400 RU/s, or a maximu
 
 ## Summary
 
-You now understand how to estimate and scope throughput for an Azure Cosmos DB using request units, and can make an appropriate selection when creating a new Azure Cosmos DB collection. Request units can be modified at any time.
+You now understand how to estimate and scope throughput for an Azure Cosmos DB using request units, and can make an appropriate selection when creating a new Azure Cosmos DB container. Request units can be modified at any time.

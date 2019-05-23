@@ -25,11 +25,11 @@ This diagram illustrates a typical global data architecture. High-availability a
 
 Now that you’ve learned how data flows in a typical global architecture, take a look at how Azure Cosmos DB is used.
 
-### How is Cosmos DB being used?
+### How is Azure Cosmos DB being used?
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn how e-commerce retailer ASOS is using Cosmos DB to enable new cloud applications.|
+|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB to enable new cloud applications.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrrJr ]
 
