@@ -10,14 +10,14 @@ In this module you have seen:
 
 - A demo that shows automation and integration benefits of Azure DevOps.
 
-- The Azure differentiators that help solve business challenges.
+- The value of Azure illustrated by these demos.
 
 ## Key takeaways
 
 Here are the key takeaways:
 
 :::row:::
-![Icon of lightbulb](../media/Key_Takeaway.png)
+![Icon of key](../media/Key_Takeaway.png)
 :::column:::
 1. Be aware of opportunities for application migration and modernization to Azure, such as End of Support (EOS) for Windows Server 2008/R2.
 
