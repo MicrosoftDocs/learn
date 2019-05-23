@@ -116,7 +116,7 @@ For the app to run, you need to add the connection settings for your cloud servi
     > [!NOTE]
     > If a problem arises during the install process and the database is not correctly setup, you can run `npm run setup` to manually seed the database.
 
-1. Press F5 to start debugging the function app. The function app startup is shown in a terminal window.
+1. Press **F5** to start debugging the function app. The function app startup is shown in a terminal window.
 
 1. To run the web application on your machine, open a second integrated terminal instance and run the following command to start the web app.
 
@@ -134,10 +134,11 @@ For the app to run, you need to add the connection settings for your cloud servi
     npm run update
     ```
 
-When you're done, stop the running processes:
+When you're done, stop the running processes.
 
-- For the web server, press **CTRL/CMD + C** in the terminal window running the web server
-- For the functions app, click the **Stop** button or press **Shift + F5**
+- For the web server, press **CTRL/CMD + C** in the terminal window running the web server.
+
+- For the functions app, click the **Stop** button or press **Shift + F5**.
 
 <!--
     REVIEW:
