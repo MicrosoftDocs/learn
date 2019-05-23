@@ -62,7 +62,7 @@ Identify the subtasks of *Introduction to high performance computing (HPC) on Az
         - Explain how Azure Batch handles scheduling, management, autoscale
         - Explain why Azure Batch is well-suited for large-scale parallel workloads
 
-1. **Knowledge check**
+   **Knowledge check**
 
     What types of questions will test *Identify the HPC and batch solutions available on Azure*?
 
@@ -79,7 +79,7 @@ Identify the subtasks of *Introduction to high performance computing (HPC) on Az
         - Large memory and HPC-class CPU SKUs
         - The ways in which these features are particularly well-suited for HPC workloads  
 
-1. **Knowledge check**
+   **Knowledge check**
 
     What types of questions will test *Identify the HPC and batch solutions available on Azure*?
 
@@ -94,7 +94,7 @@ Identify the subtasks of *Introduction to high performance computing (HPC) on Az
         - Both Windows and Linux flavours (and some sample use cases)
         - Can be combined with the H-Series VM instances previously described
 
-1. **Knowledge check**
+   **Knowledge check**
 
     What types of questions will test *Identify the HPC and batch solutions available on Azure*?
 
@@ -117,7 +117,7 @@ Identify the subtasks of *Introduction to high performance computing (HPC) on Az
     - Azure Batch (which if any of the above use cases are particularly suitable, and also in relation to the intro scenario)- Azure HPC Instances (which if any of the above use cases are particularly suitable, and also in relation to the intro scenario)
     - Microsoft HPC Pack
 
-1. **Knowledge check**
+   **Knowledge check**
 
     What types of questions will test *Identify the scenarios where HPC and batch technologies are a fit*?
 
