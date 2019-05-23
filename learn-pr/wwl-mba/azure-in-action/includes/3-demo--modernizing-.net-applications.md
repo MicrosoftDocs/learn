@@ -23,8 +23,9 @@ David Sanchez, Senior Product Marketing Manager for Azure Application Developmen
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ZSs8]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Recap icon](../media/Recap.png)| *Azure offers tools and capabilities that simplify the process of migrating your existing workloads to the cloud, where you can immediately take advantage of cloud scale and elasticity and easily modernize to align to changing business goals.*|
+|
 
 ## Migrate
 
@@ -37,8 +38,9 @@ The Tailwind Traders Rewards app is migrated to **Azure App Service** using the 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2U0kL]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Recap icon](../media/Recap.png)| *Azure App Service provides a way to easily migrate applications to Azure using the publishing tools available in Visual Studio, a very common development tool that can automatically create necessary resources such as an Azure SQL Database.*|
+|
 
 ## Explore
 
@@ -79,8 +81,9 @@ Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Recap icon](../media/Recap.png)| *Azure Logic Apps makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.*|
+|
 
 ---
 

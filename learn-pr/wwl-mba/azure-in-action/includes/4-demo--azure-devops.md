@@ -37,8 +37,9 @@ First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Ma
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2V0I8]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Recap icon](../media/Recap.png)| *With the integration between Azure DevOps and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.*|
+|
 
 Now, let's learn how to implement a pipeline for any application.
 
@@ -65,8 +66,9 @@ Follow along as the Contoso Air DevOps Engineer sets up a CI pipeline so that co
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRN]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Recap icon](../media/Recap.png)| *Azure Pipelines allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.* **|
+|
 
 Let’s continue our demo to learn how to detect application issues with Application Insights.
 
@@ -93,8 +95,9 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRL]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Recap icon](../media/Recap.png)| *Application Insights allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because Application Insights captures errors in real-time so your team can identify the root cause and make fixes quickly.*|
+|
 
 Next, we’ll continue our solution demo to learn more about Azure Boards.
 
@@ -121,8 +124,9 @@ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track proje
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Recap icon](../media/Recap.png)| *Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*|
+|
 
 ## Conclusion
 
@@ -139,8 +143,9 @@ The key takeaways of the demo are:
 - Azure offers a practical approach to automation at every step of the DevOps lifecycle that enables companies to focus their efforts on creating business value.
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Think about how you can engage an end-user with in-depth conversation about the automation and integration benefits of Azure DevOps.*|
+|
 
 Now that you've experienced Azure in action, let's complete the knowledge check.
 

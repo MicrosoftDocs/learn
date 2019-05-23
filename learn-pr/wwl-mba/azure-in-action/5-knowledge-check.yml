@@ -95,7 +95,7 @@ quiz:
       isCorrect: true
       explanation: "Insert the correct answer feedback in this cell."
     - content: "Insert the fourth incorrect answer text in this cell."
-      isCorrect: false
+      isCorrect: true
       explanation: "Insert the fourth incorrect answer feedback in this cell."
     - content: "Insert the first incorrect answer text in this cell."
       isCorrect: false
