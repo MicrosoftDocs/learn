@@ -6,7 +6,7 @@ It can take up to 45 minutes to create a virtual network gateway. To save time, 
 
 ## Create virtual machines
 
-To verify that your virtual networks are connected, you'll create two Ubuntu VMs, one in each of the virtual networks. You'll then use SSH to connect from the VM in the HQ-Network to the virtual machine in the Azure-VNet-1 virtual network by using its private IP address.
+To verify that your virtual networks are connected, you'll create two Ubuntu VMs, one in each of the virtual networks. You'll then use SSH to connect from the VM in the HQ-Network to the VM in the Azure-VNet-1 virtual network by using its private IP address.
 
 To save time, you'll create these VMs while your VPN gateways are deploying. It takes a few minutes to create the VMs, so to avoid the delay, you'll use Azure CLI commands will with the `--no-wait` parameter.
 
@@ -202,9 +202,9 @@ You've now finished the configuration of the site-to-site connection. The tunnel
 
 ## Verification steps
 
-To verify that your virtual networks are connected, you'll use SSH to connect from the VM in the **HQ-Network** to the virtual network in the **Azure-VNet-1** virtual network using its private IP address.
+To verify that your virtual networks are connected, you'll use SSH to connect from the VM in **HQ-Network** to the VM in the **Azure-VNet-1** virtual network by using its private IP address.
 
-1. Run the following command in the Cloud Shell to show the public IPv4 address assigned to the **HQ-VM** VM. Make a note of this address, as you'll need it to connect to the **HQ-VM** VM.
+1. Run the following command in the Cloud Shell to show the public IPv4 address assigned to the **HQ-VM** VM. Remember this address. You'll need it to connect to **HQ-VM**.
 
     ```azurecli
     az vm list-ip-addresses \
@@ -213,7 +213,7 @@ To verify that your virtual networks are connected, you'll use SSH to connect fr
         --output table
     ```
 
-1. Run the following command in the Cloud Shell to show the private IPv4 address assigned to the **Azure-VM** VM. Make a note of this address, as you'll need it to connect to the **Azure-VM** VM.
+1. Run the following command in the Cloud Shell to show the private IPv4 address assigned to the **Azure-VM** VM. Remember this address. You'll need it to connect to **Azure-VM**.
 
     ```azurecli
     az vm list-ip-addresses \
@@ -222,38 +222,38 @@ To verify that your virtual networks are connected, you'll use SSH to connect fr
         --output table
     ```
 
-    Remember that you provisioned **Azure-VM** *without* a public IP address. The private IPv4 address assigned to the **Azure-VM** VM should be 10.0.0.4. You'll use this IPv4 address to connect from the **HQ-VM** VM across the site-to-site connection to the **Azure-VM** VM.
+    Remember that you provisioned **Azure-VM** *without* a public IP address. The private IPv4 address assigned to **Azure-VM** should be 10.0.0.4. You'll use this IPv4 address to connect from **HQ-VM** across the site-to-site connection to **Azure-VM**.
 
-1. Run the following command in the Cloud Shell to open an SSH connection to the **HQ-VM** VM using the public IPv4 address.
+1. Run this command in the Cloud Shell to open an SSH connection to **HQ-VM** by using the public IPv4 address:
 
     ```bash
     ssh azureuser@<public-ip-address-of-hq-vm>
     ```
 
-1. You'll get a security notification when you first connect. Type `yes` when prompted, and then type the password you used when you created the VM.
+1. You'll get a security notification when you first connect. Enter **yes** when prompted, and then enter the password you used when you created the VM.
 
-1. You are now connected to the **HQ-VM** VM at HQ. To prove you can connect to a VM in the **Azure-VNet-1** virtual network and that data can flow, open an SSH session to the private IPv4 address. Still logged on to the **HQ-VM**, use the following command.
+1. You're now connected to **HQ-VM** at HQ. To prove you can connect to a VM in the **Azure-VNet-1** virtual network and that data can flow, open an SSH session to the private IPv4 address. While still signed in to **HQ-VM**, use the following command:
 
     ```bash
     ssh azureuser@10.0.0.4
     ```
 
-1. You'll get a security notification when you first connect. Type `yes` when prompted, and then type the password you used when you created the VM.
+1. You'll get a security notification when you first connect. Enter **yes** when prompted, and then enter the password you used when you created the VM.
 
-    You should now be connected to the Azure-VM VM. This machine was not assigned a public IP address. You can only access this VM through the site-to-site connection.
+    You should now be connected to the **Azure-VM**. This machine wasn't assigned a public IP address. You can access this VM only through the site-to-site connection.
 
-1. Use the following command to close the SSH session from HQ-VM to Azure-VM.
-
-    ```bash
-    exit
-    ```
-
-1. Use the following command to close the SSH session from the Cloud Shell to HQ-VM.
+1. Use this command to close the SSH session from **HQ-VM** to **Azure-VM**:
 
     ```bash
     exit
     ```
 
-This completes the site-to-site configuration. Your final topology, including the VMs, subnets, and connections with logical connection points is shown in the diagram below:
+1. Use this command to close the SSH session from the Cloud Shell to **HQ-VM**:
+
+    ```bash
+    exit
+    ```
+
+The site-to-site configuration is now complete. Your final topology, including the VMs, subnets, and connections with logical connection points, is shown in this diagram:
 
 ![Resources deployed during unit 4 exercise](../media/4-resources-deployed-during-exercise-final.svg)
