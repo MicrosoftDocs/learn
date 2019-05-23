@@ -2,9 +2,9 @@ An easy way to track important events in your Azure DevOps project is to create 
 
 In this part, you'll set up a dashboard and add widgets to track your build history.
 
-Andy is putting together a report of the progress the team is making. He is in the middle of searching through all of the build reports and pull requests to try to get the big picture when Mara walks in.
+Andy is putting together a report of the progress the team is making. He's in the middle of searching through all of the build reports and pull requests to try to get the big picture when Mara walks in.
 
-**Mara**: Hi Andy, I have a question on a feature I am working on. Do you have a minute?
+**Mara**: Hi Andy, I have a question on a feature I'm working on. Do you have a minute?
 
 **Andy**: Sure! I could use a break. There has to be an easier way to sum up the builds and see if there are patterns of failure.
 
@@ -34,7 +34,7 @@ A dashboard is a customizable area in Azure DevOps where you can add widgets and
 1. You see the **Build History** widget on the dashboard.
 
     ![Azure Pipelines showing the Build History widget](../media/7-build-history-widget.png)
-1. Hover your mouse pointer over each build to see the build number, when it was done, and the elapsed build time. Each build succeeded, so the bars are all green. But if there was a failed build, that build would appear in red.
+1. Hover your mouse over each build to see the build number, when it was done, and the elapsed build time. Each build succeeded, so the bars are all green. But if there was a failed build, that build would appear in red.
 1. Click on one of the bars to drill down into that build.
 
 To discover more widgets, click on the **Extension Gallery** link at the bottom of the **Add Widget** pane.

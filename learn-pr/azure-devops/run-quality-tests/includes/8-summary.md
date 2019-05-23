@@ -1,4 +1,4 @@
-Great work. In this module, you added unit tests and code coverage to your build pipeline. You set up dashboard widgets so others can easily track your improvements. You also fixed a build break before it reached anyone else.
+Great work. In this module, you and the team added unit tests and code coverage to the build pipeline. You set up dashboard widgets so others can easily track your improvements. You also fixed a build break before it reached anyone else.
 
 Defining build tasks locally first helps you understand and verify the process before you add build tasks to your pipeline.
 

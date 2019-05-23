@@ -12,6 +12,8 @@ Here are the steps you'll follow:
 
 There are many ways to create a virtual machine on Azure. Here, you'll create an Ubuntu virtual machine using an interactive terminal called Cloud Shell.
 
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
 To configure your VM, you have several choices. For a Linux VM, you can connect directly over SSH and interactively configure your system. Or you can automate the deployment by using an Azure Resource Manager template. If you need to deploy many build agents, you can create a VM image that has all the software pre-installed.
 
 Configuring a system interactively is a good way to get started because it helps you understand the process and what's needed. To simplify the process, here you'll connect to your Ubuntu VM over SSH and run shell scripts to set up your build agent.
@@ -19,35 +21,11 @@ Configuring a system interactively is a good way to get started because it helps
 > [!NOTE]
 > If you're not familiar with connecting to or configuring Linux systems, just follow along. You can apply the concepts to Windows build agents.
 
-## What is Azure Cloud Shell?
-
-Azure Cloud Shell is a browser-based command-line experience for managing and developing Azure resources. Think of Cloud Shell as an interactive console that you run in the cloud.
-
-Cloud Shell provides two experiences to choose from: Bash and PowerShell. Both include access to the Azure CLI, the command-line interface for Azure.
-
-You can use any Azure management interface, including the Azure portal, Azure CLI, and Azure PowerShell, to manage any kind of VM. For learning purposes, here you'll use the Azure CLI to create and manage a Linux VM.
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
-## Creating resources in Azure
-
-Normally, the first thing we'd do is to create a _resource group_ to hold all the things that we need to create. This allows us to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. We can use the Azure CLI to create a resource group with the `az group create` command. It takes a `--name` to give it a unique name in our subscription, and a `--location` to tell Azure what area of the world we want the resources to be located by default.
-
-Since we are in the free Azure sandbox environment, you don't need to do this step, instead, you will use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**.
-
-> [!IMPORTANT]
-> The Azure sandbox gives you temporary access to Azure resources. When your session expires, the VM you create here will no longer be accessible to you as a build agent. In practice, you would set up a build agent using your own Azure subscription or a system running in your datacenter.
-
-## Choosing a location
-
-<!-- Resource selection -->
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
-
 ## Create a Linux virtual machine
 
 Here you'll create a VM running Ubuntu 16.04 that will serve as your build agent. The VM won't yet be set up to be a build agent or have any of the tools needed to build the _Space Game_ web application. You'll set that up shortly.
 
-1. From Cloud Shell on the side of this page, run the `az vm create` command to create your VM. This command creates the VM in the "East US" location, you can change that to any of the locations listed above.
+1. From Cloud Shell on the side of this page, run the `az vm create` command to create your VM.
 
     ```azurecli
     az vm create \
@@ -63,6 +41,11 @@ Here you'll create a VM running Ubuntu 16.04 that will serve as your build agent
     Your VM will take about two minutes to come up.
 
     [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size provided by Microsoft-hosted agents. In practice, you can choose a different size that provides more compute power or additional capabilities such as graphics processing.
+
+    The `--resource-group` argument specifies the _resource group_ that holds all the things that we need to create. A resource group enables you to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. Normally, you would create your own resource group before creating Azure resources. Since you are in the free Azure sandbox environment, you don't need to do this step. Instead, you will use the pre-created resource group <rgn>[Resource Group Name]</rgn>.
+
+    > [!IMPORTANT]
+    > The Azure sandbox gives you temporary access to Azure resources. When your session expires, the VM you create here will no longer be accessible to you as a build agent. In practice, you would set up a build agent using your own Azure subscription or a system running in your datacenter.
 
 ## Create the agent pool
 

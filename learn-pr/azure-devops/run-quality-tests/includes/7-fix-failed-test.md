@@ -204,7 +204,7 @@ public Task<IEnumerable<T>> GetItemsAsync(
 }
 ```
 
-They examine the file on GitHub and notice that the has recently changed.
+They examine the file on GitHub and notice that it was recently changed.
 
 ![GitHub showing a file diff](../media/7-github-diff.png)
 
@@ -212,7 +212,7 @@ Mara suspects that `pageSize - 1` is returning one fewer results and that this s
 
 **Mara**: Andy, do you remember why you made this change?
 
-**Andy**: I was experimenting with something, and I must have forgotten to change it back. It looks like changing this back will fix things.
+**Andy**: I was experimenting with something and I must have forgotten to change it back. It looks like changing back to the original code will fix things.
 
 Mara and Andy decide to change the code back to its original state and then verify that the unit tests pass.
 

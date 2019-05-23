@@ -30,7 +30,7 @@ That means the two types of tests we've already talked about. The unit tests tes
 
 **Andy**: Integration testing is a bit different. We do integration testing after the build, on the server. While unit tests help you verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests quite yet. 
 
-But some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies.
+But at some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies. I remember that was a concern of Tim's and I'd like to bring him into the process more.
 
 **Mara**: Lots to do.
 
@@ -89,7 +89,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 1. From Visual Studio Code, expand the **CodeCoverage** folder and right click **index.htm**. Then select **Reveal in Explorer** (**Reveal in Finder** on macOS).
 1. From Windows Explorer (Finder on macOS), double click **index.htm** to open it in a web browser.
 
-    You see a the coverage report summary.
+    You see the coverage report summary.
 
     ![The coverage report summary](../media/6-coverage-report-summary.png)
 

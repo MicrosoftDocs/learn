@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.manage-build-dependencies
 metadata:
-  title: Manage dependencies in your build pipeline - Learn
+  title: Manage build dependencies in Azure Pipelines - Learn
   description: Manage your application and the packages it uses across build pipelines.
   ms.date: 09/01/2019
   author: tpetchel
@@ -9,14 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Manage dependencies in your build pipeline
+title: Manage build dependencies in Azure Pipelines
 summary: Manage your application and the packages it uses across build pipelines.
 abstract: |
   In this module, you will:
-  - Refactor your application into reusable packages
-  - Describe ways to share packages among applications
-  - Create a build pipeline for your package and publish the artifact to a package repository
-  - Push a change to your package and then update your application to use it
+  - Describe ways to create and share packages that can be used by multiple applications
+  - Create a build pipeline for your package and publish your package to Azure Artifacts
+  - Connect an application to your package and build the application in Azure Pipelines
+  - Push up a change to your package and update your application to use it
 prerequisites: None
 iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
 levels:
@@ -32,9 +32,12 @@ products:
 #- azure-devops
 units:
 - learn.azdo.manage-build-dependencies.1-introduction
-- learn.azdo.manage-build-dependencies.2-tbd
+- learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline
 - learn.azdo.manage-build-dependencies.3-set-up-environment
-- learn.azdo.manage-build-dependencies.4-create-package-pipeline
-- learn.azdo.manage-build-dependencies.5-summary
+- learn.azdo.manage-build-dependencies.4-create-feed
+- learn.azdo.manage-build-dependencies.5-create-package-pipeline
+- learn.azdo.manage-build-dependencies.6-consume-package
+- learn.azdo.manage-build-dependencies.7-push-a-change
+- learn.azdo.manage-build-dependencies.8-summary
 badge:
   uid: learn.azdo.manage-build-dependencies.badge

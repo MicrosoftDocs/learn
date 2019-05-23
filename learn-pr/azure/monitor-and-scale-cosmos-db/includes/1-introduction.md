@@ -2,7 +2,7 @@ Azure Cosmos DB allows you to build highly responsive and highly available appli
 
 Imagine you work for a retail startup which is designing a database to manage online orders. You're working on a proposal for an efficient database design. The operating budget must be kept within tight constraints. You've prototyped several designs for your data architecture. But you need to understand how to monitor and optimize the performance of each design. With this knowledge in hand, you can tune and optimize your solution.
 
-In this module, you'll use a console application to populate the database and simulate a set of queries. Then you use the Cosmos DB monitoring tools to observe and understand the following key metrics of Cosmos DB:
+In this module, you'll use a console application to populate the database and simulate a set of queries. Then you use the Azure Cosmos DB monitoring tools to observe and understand the following key metrics of Azure Cosmos DB:
 
 - **Total requests** made per second and the proportion of requests rejected because the provisioned throughput is exceeded
 - **Total throughput**, measured in Request Units per second (RU/s), and the distribution of throughput across partitions
@@ -14,11 +14,11 @@ After you understand these key metrics, we assess different partitioning and ind
 
 In this module, you will:
 
-- Use monitoring tools to measure the throughput of your Cosmos DB
-- Identify partition strategy for your Cosmos DB data
+- Use monitoring tools to measure the throughput of your Azure Cosmos DB
+- Identify partition strategy for your Azure Cosmos DB data
 - Measure the impact of different indexing strategies
 
 Prerequisites:
 
 - Familiarity with NoSQL database concepts
-- Familiarity with Cosmos DB concepts like databases, collections, and documents
+- Familiarity with Azure Cosmos DB concepts like databases, collections, and documents

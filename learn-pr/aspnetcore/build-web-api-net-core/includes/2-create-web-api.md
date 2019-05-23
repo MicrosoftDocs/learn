@@ -14,6 +14,8 @@ In this unit, you'll use the .NET Core CLI to create a web API within the Cloud 
     dotnet new webapi -o contoso-pets/src/ContosoPets.Api
     ```
 
+    [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
     The preceding command uses an ASP.NET Core project template, aliased as *webapi*, to scaffold a C#-based starter web API project. The *contoso-pets/src/ContosoPets.Api* directory structure is created, which contains an ASP.NET Core project targeting .NET Core. The project name matches the *ContosoPets.Api* directory name.
 
 1. Run the following command in the command shell:

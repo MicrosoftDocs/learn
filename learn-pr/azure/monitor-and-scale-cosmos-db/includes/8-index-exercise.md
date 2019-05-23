@@ -1,6 +1,6 @@
 To demonstrate index monitoring and tuning, we use the collections that we set up in unit 2 and modify the indexing configuration.
 
-We'll use the CLI to modify the index configuration. You can also use the Azure portal, the Cosmos DB REST API, or any of the Cosmos DB SDKs.
+We'll use the CLI to modify the index configuration. You can also use the Azure portal, the Azure Cosmos DB REST API, or any of the Azure Cosmos DB SDKs.
 
 We have provided pre-built index configuration files for your convenience. You can view these files in the `mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB/IndexConfig` directory.
 
@@ -148,4 +148,4 @@ The following table summarizes the results we've gotten in previous exercises. T
 | Insert document | Some properties indexed | 6 |
 | Insert document | No properties indexed | 5 |
 
-You see that as indexing complexity goes up, the write consumption goes down, and the read consumption goes up. The indexing strategy that you choose depends on your data and the workloads that it supports.
+You see that as indexing complexity goes up, the write consumption goes up, and the read consumption goes down. The indexing strategy that you choose depends on your data and the workloads that it supports.

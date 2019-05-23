@@ -1,34 +1,31 @@
-<!-- TODO: Change code coverage format in run-quality-tests to opencover. It's needed for this module. -->
+This module shows you how to make sure you're writing code that's secure by scanning it for potential vulnerabilities. You'll also learn some techniques that can ensure that the code you write is of high quality and is easily maintainable.
 
-<!-- DUMPING NOTES:
+Are you certain that the code you're writing is secure? Have you ever inadvertently added a vulnerability that could be exploited? As a developer, you need to be sure that you're not deploying code that could compromise the integrity of your software. You can detect potential code security issues by _shifting left_, which means scanning your code for potential issues early in the development process.
 
-* 1-introduction
-* 2-knowledge?
-* 3-setup/add key
-* 4-scan locally
-    * Use dotnet tool
-* 5-analyze the results
-* 6-scan from pipeline
-    * Marketplace ext.
-    * Service connection
-    * Build tasks
-    * Run it.
-* 7-Limit testing to PRs only
-    * using triggers
-* 8-summary
+In this module, you'll learn about tools and procedures that you can use to give your team and your stakeholders peace of mind when it comes to understanding the possible vulnerabilities in your codebase. You'll also examine the codebase to find *code smells*, or maintainability issues, that will likely add time to the maintenance of your code. This maintenance time is called *technical debt*.
 
-SonarCloud works with many kinds of languages such as Java, C#, C++, JavaScript, and more.
+In this module, you'll:
 
--->
+* Learn what resources are available to scan your code for security vulnerabilities, bugs, and code smells
+* Use SonarCloud to scan your code locally and as part of your build pipeline
+* Limit your scanning to pull requests only by using conditions
 
-Here we talk about securing the development process.
+## Prerequisites
 
-Perhaps the narrative goes like:
+The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true) module.
 
-* A team member discovered that some sort of secret data (TBD which kind specifically) was included in the source code.
-* The team decides it needs to make their development process more secure.
+You'll also need an account on [SonarCloud](https://sonarcloud.io?azure-portal=true). Sign in using your GitHub or Azure DevOps account.
 
-Resources:
+Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
 
-- https://azure.microsoft.com/en-us/blog/managing-azure-secrets-on-github-repositories/
-- https://secdevtools.azurewebsites.net/helpcredscan.html
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in the previous learning path. As a refresher, here's who you'll work with in this module.
+
+[!include[](../../shared/includes/meet-andy-row.md)]
+
+[!include[](../../shared/includes/meet-amita-row.md)]
+
+[!include[](../../shared/includes/meet-tim-row.md)]
+
+[!include[](../../shared/includes/meet-mara-row.md)]

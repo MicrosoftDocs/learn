@@ -6,9 +6,9 @@ Let's begin by checking in with Mara and Amita.
 
 ## The demo
 
-Mara, excited to share her results, sits down to show Amita the build pipeline.
+Mara, excited to share her results, tracks down Amita to show her the build pipeline.
 
-**Amita**: I'm impressed you got this working so quickly! But I see that it builds only the Release configuration. We also use Debug builds so we can capture additional information if the application crashes. Can we add that?
+**Amita**: I'm impressed you got this working so quickly! In fact, I was just going to see you because I got an email telling me the build was ready. Thank you! But I see that the pipeline builds only the Release configuration. We also use Debug builds so we can capture additional information if the application crashes. Can we add that?
 
 **Mara**: Absolutely. I forgot to consider Debug builds when I set this up. How about we sit down together and add it?
 

@@ -12,21 +12,15 @@ So far, her efforts have been one-sided. The entire team identified these three 
 * **Create a Git-based workflow**
 * **Create unit tests**
 
-But Mara's the only one on the team who's done any work. Amita, the tester, is busy helping other teams. Andy, the lead dev, seems to spend all his time in meetings. Tim, from ops, hasn't seen any good reason to get involved at all.
+But Mara's the only one on the team who's done any work, although Andy is starting to get involved. Unfortunatley, he seems to spend most of his days in meetings. Amita, the tester, is busy helping other teams. Tim, from ops, hasn't seen any good reason to get involved at all.
 
 In fact, things are about to change. Amita is stressed and frustrated. She's stressed because she's helping out other teams as well as working on _Space Game_. She's frustrated because she's seeing the same errors with the _Space Game_ web site over and over again, particularly with the leaderboard. They're all regression bugs. As Andy and Mara add features to the leaderboard, the existing features break.
 
-Mara has already taken on the first two issues and has started thinking about the third issue. And it couldn't come at a better time. Amita asked if Andy and Mara can work with her to improve the code quality and eliminate those bugs.
+Mara has already taken on the first two issues and has started thinking about the third issue, creating unit tests. And it couldn't come at a better time. Amita has already pinged Andy and Mara about the problem. She wants to know if they'll work with her to improve the code quality and eliminate those bugs.
 
-**Amita**: Thanks for meeting with me. I wanted to see if we can come up with a way to stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now and reporting the same broken functionality over and over on something that should work is driving me crazy!
+**Amita**: Thanks for meeting with me. I wanted to see if we can stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now and reporting the same broken functionality over and over on something that should work is driving me crazy!
 
-**Mara**: I have an idea. Let me just show you the automated build server I put together with Azure Pipelines. 
-
-She runs through the Azure Pipelines build process, just as you did in the last module. The build completes and Amita gets an email letting her know the build is ready for her.
-
-**Amita**: That's great and I do appreciate how it fixes my problem of never knowing when to pick up a build. But how does this help me now? That's not why I called the meeting.
-
-**Mara**: I thought we could add unit tests to the automated build. Unit testing is about testing a single piece of functionality in isolation, like the filtering feature. We'd catch regression errors before they ever got to you.
+**Mara**: I have an idea. You've seen the automated pipeline. I think we can add unit tests to the automated build. Unit testing is about testing a single piece of functionality, like the filtering feature, in isolation. We'd catch regression errors before they ever got to you.
 
 **Andy**: We tried unit testing a while ago but we had trouble keeping the tests up to date so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and there was nothing in place to keep us honest.
 
@@ -38,7 +32,7 @@ She runs through the Azure Pipelines build process, just as you did in the last 
 
 **Andy**: I agree. It's our job to make sure we're handing off quality code to you. I say we at least try it. Unit tests run fast. They should add only a minute to the build process, at most. Plus, there are other kinds of tests we can run as well, such as lint and code coverage tests.
 
-Honestly, I've wanted to do this for a long time. Mara's given us a good start with the automated build pipeline. I think it's time for me to get involved.
+Honestly, I've wanted to do this for a long time. Mara's given us a good start with the automated build pipeline. I think it's time for me to get more involved.
 
 **Amita**: Thank you both! I can't wait to see the results.
 
@@ -54,19 +48,19 @@ When thinking about automated testing, it's common to separate tests into layers
 
 ![The test pyramid showing the unit and UI layers](../media/2-test-pyramid.png)
 
-Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media-draft/callout-01.png) of your software &ndash; such as functions, classes, and methods &ndash; and progressively less effort as features are combined, such as the user interface (UI) layer ![Callout 2](../../shared/media-draft/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, then tests at the higher levels need only to verify that multiple components work together to get the expected result.
+Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media-draft/callout-01.png) of your software &ndash; such as functions, classes, and methods &ndash; and progressively less effort as features are combined, such as at the user interface (UI) layer ![Callout 2](../../shared/media-draft/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, then tests at the higher levels need only verify that multiple components work together to get the expected result.
 
 ### When should I write tests?
 
-The answer mainly depends on your needs and experience writing tests.
+The answer mainly depends on your needs and experience in writing tests.
 
 It's never too late to start adding tests for code you've already written and deployed. This is especially true for features that often break or require the most effort from your test team.
 
-Relating testing to continuous integration and continuous delivery pipelines, two concepts you'll hear about are _continuous testing_ and _shifting left_.
+In terms of relating testing to continuous integration and continuous delivery pipelines, two concepts you'll hear about are _continuous testing_ and _shifting left_.
 
 Continuous testing means that tests are run early in the development process and as every change moves through the pipeline. Shifting left means considering software quality and testing earlier in the development process.
 
-As an example, developers will often add test cases as they develop their feature and run the entire suite of tests before submitting the change to the pipeline. This helps ensure that the feature they are building behaves as expected and also doesn't break exiting features.
+As an example, developers will often add test cases as they develop their feature and run the entire suite of tests before submitting the change to the pipeline. This helps ensure that the feature they are building behaves as expected and also doesn't break existing features.
 
 Shifting left also often requires testers to get involved in the design process even before any code for the feature is written. Compare this to the "handoff" model where the test team is presented with new features to test only after the software is designed and written. A bug discovered late in the process can impact the team's delivery schedule. Plus, bugs may be discovered weeks or even months after the developer originally built the feature.
 
@@ -74,7 +68,7 @@ Shifting left also often requires testers to get involved in the design process 
 
 With automated testing, there comes a tradeoff. Although automated testing enables testers to focus their time verifying the end-user experience, developers may need to dedicate more time to writing and maintaining their test code.
 
-However, the point of automated testing is to help ensure that testers receive only the highest quality code &ndash; code that's been proven to function as expected. Therefore, developers can receive some of their time back by not having to handle as many bugs or needing to rewrite their code because of an edge-case they had not originally considered.
+However, the point of automated testing is to help ensure that testers receive only the highest quality code &ndash; code that's been proven to function as expected. Therefore, developers can receive some of their time back by not having to handle as many bugs or needing to rewrite their code because of an edge-case they hadn't originally considered.
 
 ### Added benefits
 
@@ -84,7 +78,7 @@ Documentation and the ability to more easily refactor your code are two added be
 
 Manual test plans can serve as a type of documentation as to how software should behave and why certain features exist.
 
-Automated tests can serve the same purpose. Automated test code often follows a human-readable format. The set of inputs you provide represent values your users might enter. Each associated output specifies the result your user should expect.
+Automated tests can serve the same purpose. Automated test code often use a human-readable format. The set of inputs you provide represent values your users might enter. Each associated output specifies the result your user should expect.
 
 In fact, many developers follow the _test-driven development_, or TDD, method by writing their test code _before_ implementing a new feature. The idea is to write a set of tests, often called _specs_, that initially fail. Then, the developer incrementally writes code to implement the feature until all tests pass. Not only do the specs document the requirements, but the TDD process helps ensure that only the necessary amount of code is written to implement the feature.
 
@@ -104,7 +98,7 @@ For example, _lint testing_, a form of static code analysis, examines your sourc
 
 In this module, you'll work with _unit testing_ and _code coverage testing_.
 
-Unit testing verifies the most fundamental level of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks whether the actual and expected results match.
+Unit testing verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks whether the actual and expected results match.
 
 As an example, say you have a function that performs an arithmetic operation that includes division. You might specify a few values you might expect your user to enter along with edge case values such as 0 and -1. If a given input produces an error or exception, you can verify that the function produces the same error.
 
@@ -118,9 +112,9 @@ When learning about unit testing, you might hear terms such as _mocks_, _stubs_,
 
 Recall that a unit test should verify an individual function or method and not how multiple components interact. But say you have a function that calls a database or web server. How do you handle that?
 
-Not only does a call to an external service break isolation, it can slow things down. It can also cause a disruption to your test run if the database or web server go down or are otherwise unavailable.
+Not only does a call to an external service break isolation, it can slow things down. It can also cause a disruption to your test run if the database or web server goes down or is otherwise unavailable.
 
-Techniques such as mocking and dependency injection enable you to create components that mimic this functionality. You'll see an example later in this module.
+Techniques such as mocking and dependency injection enable you to create components that mimic this external functionality. You'll see an example later in this module.
 
 Later, you can run _integration tests_ to verify that your application works correctly with a real database or web server.
 

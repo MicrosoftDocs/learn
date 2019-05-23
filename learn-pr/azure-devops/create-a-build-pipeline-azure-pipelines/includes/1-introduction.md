@@ -23,16 +23,16 @@ In this module, you will:
 
 ## Prerequisites
 
-If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) account, we highly recommend you go through the [Evolve your DevOps practices](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
+If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) account, go through the [Evolve your DevOps practices](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
 
-You'll also need to set up the following for software development on your Windows, macOS, or Linux system.
+You'll also need to set up a development environment on your Windows, macOS, or Linux system. You'll need:
 
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 
-This setup prepares you for this and future modules. You can also use them to apply your new skills to your own projects.
+This environment lets you complete the excercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
 

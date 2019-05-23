@@ -18,7 +18,7 @@ Azure storage includes four types of data:
 - **Blobs**: A massively scalable object store for text and binary data.
 - **Files**: Managed file shares for cloud or on-premises deployments.
 - **Queues**: A messaging store for reliable messaging between application components.
-- **Tables**: A NoSQL store for schemaless storage of structured data. This service has been replaced by Cosmos DB and will not be discussed here.
+- **Tables**: A NoSQL store for schemaless storage of structured data. This service has been replaced by Azure Cosmos DB and will not be discussed here.
 
 All of these data types in Azure Storage are accessible from anywhere in the world over HTTP or HTTPS. Microsoft provides SDKs for Azure Storage in a variety of languages, as well as a REST API. You can also visually explore your data right in the Azure portal.
 

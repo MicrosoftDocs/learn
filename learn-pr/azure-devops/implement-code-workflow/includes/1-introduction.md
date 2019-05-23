@@ -1,6 +1,6 @@
 This module is about code collaboration using Git and GitHub.
 
-Elite performers deploy code more frequently and experience much faster lead times than low performers. To accomplish that, developers need a way to work with source code and share their changes with others.
+Elite performers deploy code more frequently and experience much faster lead times than other performers. To become elite performers, developers need a way to work with source code and share their changes with others. Collaboration is a key DevOps value and a source control system that fosters cooperation is a great DevOps tool.
 
 Although Azure DevOps works with various kinds of source control, many developers are choosing Git because it's a distributed system that enables every contributor to have their own copy of the work. Here you'll use Git's branching and merging capabilities to more efficiently work with other developers. You'll also use GitHub because it provides a central location for teams to host their projects and share their work.
 

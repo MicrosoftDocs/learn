@@ -64,7 +64,7 @@ After she runs the script, Mara realizes that it's incomplete. For example, it d
 
 ## What are Azure Pipelines tasks?
 
-A task abstracts away the underlying details, making it easier to run common build functions, such as downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
+An Azure Pipelines task abstracts away the underlying details, making it easier to run common build functions, such as downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
 
 Here's an example that uses the `DotNetCoreCLI@2` task to build a C# project that targets .NET Core.
 
@@ -90,8 +90,10 @@ Let's break this down a bit more.
 * `inputs` defines arguments that are passed to the command.
   * `command` specifies to run the `dotnet build` subcommand.
   * `arguments` specifies additional arguments to pass to the command.
-  * `projects` specifies which projects to build. This example uses the wildcard `**/*.csproj` which means all .csproj files in all directories beneath the current directory.
-
+  * `projects` specifies which projects to build. This example uses the wildcard pattern `**/*.csproj`.
+    Both `**` and `*.csproj` are examples of what are called _glob patterns_.
+    The `**` part specifies to search the current directory and all child directories. The `*.csproj` part specifies any .csproj file.
+    Wildcards enable you to act on multiple files without the need to specify each one. If you need to act on a specific file only, you can specify that file instead of using wildcards.
 
 The "@" in the task name, such as `DotNetCoreCLI@2`, refers to the task's version. As new task versions become available, you can gradually migrate to the latest version to take advantage of new features.
 

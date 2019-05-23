@@ -36,7 +36,7 @@ Here you'll prepare Visual Studio Code for development, get the latest source co
 
 In the last part, you created a pull request and merged your `build-pipeline` branch into the `master` branch on GitHub. Now you need to pull the changes to `master` back to your local branch.
 
-The `git pull` command fetches the latest code from the remote repository and merges it into your local repository. This way you know you are working with the latest codebase.
+The `git pull` command fetches the latest code from the remote repository and merges it into your local repository. This way you know you're working with the latest codebase.
 
 1. From your terminal, run `git checkout master` to switch to the `master` branch.
 
@@ -97,11 +97,11 @@ In development mode, the _Space Game_ web site is configured to run on port 5000
 
 ## Create a feature branch
 
-Here you'll create a Git branch so that you can work on files with the confidence that you are the only one working on these files and no one else is aware of it until you are ready to push it up to the remote repository.
+Here you'll create a Git branch so that you can work on files without impacting anyone else. No one will even know you're working on those files until you push them to the remote repository.
 
 To create a branch, you use the `git checkout` command and give your branch a name.
 
-Before you create a branch, it is a good idea to adhere to a naming convention. For example, if your branch is for working on a new feature, you might use `feature/<branch-name>`. For a bug fix, you could use `bugfix/<bug-number>`. Here your branch name will be `feature/home-page-text`.
+Before you create a branch, it's a good idea to adhere to a naming convention. For example, if your branch is for working on a new feature, you might use `feature/<branch-name>`. For a bug fix, you could use `bugfix/<bug-number>`. Here your branch name will be `feature/home-page-text`.
 
 1. From your terminal, run the following `git checkout` command.
 
@@ -109,11 +109,11 @@ Before you create a branch, it is a good idea to adhere to a naming convention. 
     git checkout -b feature/home-page-text
     ```
 
-    The `-b` argument specifies to create a new branch and check it out. Omit the `-b` argument when you want to switch to an existing branch.
+    The `-b` argument specifies to create a new branch if it doesn't exist. Omit the `-b` argument when you want to switch to an existing branch.
 
     By default, your new branch builds on the previous branch from where you ran the `git checkout` command. Here, the parent branch is `master`. But the parent branch can be another one, such as a feature branch someone else started that you want to build on or experiment with.
 
-    It is now safe to make whatever changes you need since you are on your own local branch. If you want to see which branch you are on, run `git branch -v`.
+    It's now safe to make whatever changes you need since you are on your own local branch. If you want to see which branch you are on, run `git branch -v`.
 
 ## Make changes and test it locally
 
@@ -176,12 +176,12 @@ Here you'll stage your changes to **Index.cshtml**, commit the change to your br
     git commit -m "Improve the text at the top of the home page"
     ```
 
-    The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. They help reviewers understand the change as well as help future maintainers understand how the file changed over time.
+    The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change as well as help future maintainers understand how the file changed over time.
 
     > [!TIP]
     > The best commit messages complete the sentence "If you apply this commit, you will ___."
 
-    If you omit the `-m` argument, Git brings up a text editor where you can detail the change. This option is useful when you want to specify a commit message that spans multiple lines. The text up to the fist blank line specifies the commit title.
+    If you omit the `-m` argument, Git brings up a text editor where you can detail the change. This option is useful when you want to specify a commit message that spans multiple lines. The text up to the first blank line specifies the commit title.
 
 1. Run this `git push` command to push, or upload, the `feature/home-page-text` branch to your repository on GitHub.
 
@@ -201,9 +201,9 @@ As an optional step, trace the build as it moves through the pipeline and verify
 
 ## Synchronize any changes to the master branch
 
-While your were busy working on your feature, there may have been changes made to the remote `master` branch. Before creating a pull request, it's common practice to get the latest from the remote `master` branch.
+While you were busy working on your feature, there may have been changes made to the remote `master` branch. Before creating a pull request, it's common practice to get the latest from the remote `master` branch.
 
-To do so, you first checkout, or switch to, the `master` branch. You then merge the remote `master` branch with your local `master` branch.
+To do this, you first checkout, or switch to, the `master` branch. You then merge the remote `master` branch with your local `master` branch.
 
 Next, you checkout your feature branch. Then you merge your feature branch with the `master` branch.
 
@@ -273,7 +273,7 @@ Here you'll submit a pull request just as you did in the previous part.
 
 1. From a browser, navigate to [github.com](https://www.github.com?azure-portal=true) and sign in.
 1. Navigate to your **mslearn-tailspin-spacegame-web** repository.
-1. From the dropdown menu, to navigate to your `feature/home-page-text branch`.
+1. From the dropdown menu, navigate to your `feature/home-page-text branch`.
 1. Click **New pull request** button to start your pull request.
 1. Ensure that **base** specifies your repository and not Microsoft's repository.
 
@@ -289,7 +289,7 @@ Here you'll submit a pull request just as you did in the previous part.
 
 1. Click the **Create pull request** button to complete your pull request.
 
-    This step does not merge any code. It tells others that you have changes that you are proposing be merged.
+    This step doesn't merge any code. It tells others that you have changes that you are proposing be merged.
 
     You see the pull request screen. Just like before, by default a pull request triggers Azure Pipelines to build your application.
 

@@ -1,28 +1,28 @@
-It's important to choose a code flow strategy that will work well for your team's collaboration. There are several strategies to consider and links to different strategies will be available at the end of the module. The Tailspin web team chooses a code flow strategy based on Git and GitHub.
+It's important to choose a code flow strategy that fits in with how your team works. There are several strategies to consider and you'll find links that explain them at the end of the module. The Tailspin web team will use a code flow strategy based on Git and GitHub.
 
-When Mara set up Azure Boards, she identified a few initial problems to fix. One of them was to create a Git-based workflow because she knows Git is a source control tool that provides for excellent team collaboration.
+When Mara set up Azure Boards, she and the team identified a few initial tasks to address. One of them was to create a Git-based workflow.
 
 ![Azure Boards showing the initial three tasks](../media/1-initial-board.png)
 
-Let's listen in on the team as they work out a better way to collaborate. Currently, they are using a centralized version control system and will move to a distributed system using Git.
+Let's listen in on the team as they work out a better way to collaborate. Currently, they are using a centralized version control system but the plan is to move to Git, a distributed system.
 
 Mara is diligently working on her assigned features when Andy walks in.
 
-**Andy**: Hi Mara, are you finished with those files yet? I need them released to finish my build. I'm blocked until I get those files.
+**Andy**: Hi Mara, are you finished with those files yet? I need them released to finish my build. I'm blocked until I can get them.
 
-**Mara**: I have one more small bug to fix and then I want to test it all together. I should be done with them in a few hours.
+**Mara**: I have one more small bug to fix and then I want to test all the files together. I should be done with them in a few hours.
 
 Andy gives a heavy sigh.
 
 **Andy**: Fine, just let me know when they are available.
 
-**Mara**: You know Andy, if we were working with distributed version control instead of centralized, I would not be blocking you. It would be much easier for all of us to work together on the same project. And one of my tasks on our board is to increase visibility for stakeholders so we all know what the other person is working on. I think we can do that with a distributed system.
+**Mara**: You know Andy, maybe we should think about implementing a Git workflow now. It's on our board. If we were using distributed version control, you wouldn't be blocked. It would be much easier for all of us to work together on the same project. It's also a task on our board to increase visibility so all the stakeholders know what everyone is doing. I think a distributed source control system like Git would help there as well.
 
-**Andy**: Git is a distributed system, right? I have been wanting to try working with Git. Is it difficult to learn or set up?
+**Andy**: I've been wanting to try Git for a while. I just never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off. 
 
-**Mara**: Let me explain it, and then you can decide if it is something you want to try on our projects.
+It would be nice to be able to see what everyone is doing and to have access to the entire repository. OK, what's it all about?
 
-**Andy**: It would be nice to be able to see what the others are doing, and to have access to the entire repository. OK, what is this all about?
+**Mara**: Let me explain it, and then you can decide if it sounds like a good fit.
 
 Mara and Andy move to the whiteboard for a discussion on version control.
 
@@ -35,15 +35,15 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 **Andy:** Like when I went to the conference. I couldn't get to the code.
 
-**Mara:** Right! And you were blocked ![Callout 2](../../shared/media-draft/callout-02.png) from checking out the files you needed today because I have them checked out. Now, we could use a branching strategy with TFVC to solve the blocking issue, but in our current configuration, merging might get a bit more complicated.
+**Mara:** Right! And you were blocked ![Callout 2](../../shared/media-draft/callout-02.png) from checking out the files you needed today because I have them checked out. We could use a branching strategy with TFVC to solve the blocking issue, but in our current configuration, merging might get a bit more complicated.
 
 And remember when we had that breaking change ![Callout 3](../../shared/media-draft/callout-03.png) merged into the main repository? No one could get any work done until we got that solved. That problem is always lurking because we're all using the same copy of the code.
 
-Now on the right is a drawing of _distributed version control_. We still have a main or _master_ repository ![Callout 4](../../shared/media-draft/callout-04.png) that is the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media-draft/callout-05.png) of it to work from. This frees us up to experiment and try different approaches without affecting the main repository or locking other developers out of the files they're working with.
+On the right is a drawing of _distributed version control_. We still have a main or _master_ repository ![Callout 4](../../shared/media-draft/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media-draft/callout-05.png) of it to work from. This frees us up to experiment and try different approaches without affecting the main repository or locking other developers out of the files they're working with.
 
-This also ensures that only working code ![Callout 6](../../shared/media-draft/callout-06.png) gets merged into the master repository. We could even set it up to where code can't merge until it has been reviewed.
+Distributed version control also ensures that only working code ![Callout 6](../../shared/media-draft/callout-06.png) gets merged into the master repository. We could even set it up to where code can't merge until it has been reviewed.
 
-And what's cool is that Azure DevOps works well with both centralized and distributed version control systems.
+What's cool about Azure DevOps is that it works well with both centralized and distributed version control systems.
 
 **Andy:** What about the problem of accessing the code when we're not in the building?
 
@@ -51,21 +51,21 @@ And what's cool is that Azure DevOps works well with both centralized and distri
 
 ## Where can I host my repository?
 
-**Mara:** When deciding where to host our repositories, we have a few options. For example, we can host them on a local server, in Bitbucket, or GitHub. Bitbucket and GitHub are hosting solutions that are web-based. So we have access to them from anywhere.
+**Mara:** When deciding where to host our repositories, we have a few options. For example, we can host them on a local server, in Bitbucket, or GitHub. Bitbucket and GitHub are hosting solutions that are web-based. We can access them from anywhere.
 
 **Andy:** Have you used either of these?
 
-**Mara:** I have used GitHub in the past. It has features that are important to developers, like easy access to change logs and version control features from either the command line or the online portal.
+**Mara:** I've used GitHub in the past. It has features that are important to developers, like easy access to change logs and version control features from either the command line or the online portal.
 
-**Andy:** So how does this work?
+**Andy:** So how does Git work?
 
 ## How do I work with Git?
 
 **Mara:** Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work since they have their own copy of the repository. A _clone_ is your local copy of a repository.
 
-And when we are working on a feature or a bug fix, we want to try out different code until we find the best solution. But trying out code on your copy of the main codebase is not efficient since you may not want to keep the first few tries.
+When we work on a feature or a bug fix, we usually want to try out different approaches until we find the best solution. But trying out code on your copy of the main codebase isn't a good idea since you may not want to keep the first few tries.
 
-To accomplish this, Git has a feature called _branching_ where you can maintain as many copies as you want and only merge back the one you want to keep. This keeps the main branch stable.
+To give you a better option, Git has a feature called _branching_ where you can maintain as many copies as you want and only merge back the one you want to keep. This keeps the main branch stable.
 
 **Andy:** I get the concepts so far. How do I check in my code?
 
@@ -73,7 +73,7 @@ To accomplish this, Git has a feature called _branching_ where you can maintain 
 
 **Mara:** In Git, the main branch, or _trunk_, is typically called `master`.
 
-Once you feel your code is ready to be merged into the `master` branch in the main repository shared by all developers, you create what's called a _pull request_. When you create a pull request, you are telling the other developers that you have code ready to review and you want it merged into the `master` branch. When your pull request is approved, it becomes part of the master codebase.
+Once you feel your code is ready to be merged into the `master` branch in the main repository shared by all developers, you create what's called a _pull request_. When you create a pull request, you're telling the other developers that you have code ready to review and you want it merged into the `master` branch. When your pull request is approved, it becomes part of the master codebase.
 
 ## What does a branching workflow look like?
 
@@ -100,7 +100,7 @@ Before you make changes to a file, you check out a new branch so that you know y
  :::row:::
     :::column span="8":::
 **Step 3:**
-You are now safe to make whatever changes you want to make since these changes are only in your branch. As you are working, you can _commit_ your changes to your branch to make sure you don't lose any work and to provide a way to roll back any changes you have made to previous versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
+You're now safe to make whatever changes you want because these changes are only in your branch. As you work, you can _commit_ your changes to your branch to make sure you don't lose any work and to provide a way to roll back any changes you've made to previous versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
     :::column-end:::
     :::column:::
         ![A commit of work on your branch](../media/2-github-paths-3.png)
@@ -109,7 +109,7 @@ You are now safe to make whatever changes you want to make since these changes a
  :::row:::
     :::column span="8":::
 **Step 4:**
-The next step is to _push_, or upload, your local branch up to the remote repository (such as GitHub) so that others can see what you are working on. Don't worry, this won't merge your changes yet. You can push up your work as often as you'd like. In fact, doing so is a good way to backup your work or allow you to work from multiple computers.
+The next step is to _push_, or upload, your local branch up to the remote repository (such as GitHub) so that others can see what you're working on. Don't worry, this won't merge your changes yet. You can push up your work as often as you'd like. In fact, that's a good way to backup your work or allow you to work from multiple computers.
     :::column-end:::
     :::column:::
         ![A push of a local branch to remote](../media/2-github-paths-4.png)
@@ -118,9 +118,9 @@ The next step is to _push_, or upload, your local branch up to the remote reposi
 :::row:::
     :::column span="8":::
 **Step 5:**
-This step is common, but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `master` branch back into your local  `master` branch. Changes have been taking place there that your local `master` branch does not yet have. Once you have synchronized the remote master branch into yours, merge your local `master` branch into your working branch and test your build again.
+This step is a common one, but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `master` branch back into your local  `master` branch. Changes have been taking place there that your local `master` branch doesn't have yet. Once you've synchronized the remote master branch into yours, merge your local `master` branch into your working branch and test your build again.
 
-This process helps ensure your feature works with the latest code. It also helps ensure that your work will integrate smoothly when you submit your pull request.
+This process helps ensure that your feature works with the latest code. It also helps ensure that your work will integrate smoothly when you submit your pull request.
     :::column-end:::
     :::column:::
         ![A pull of the remote master](../media/2-github-paths-5.png)
@@ -138,7 +138,7 @@ Your local code now needs to be committed and pushed up to the hosted repository
 :::row:::
     :::column span="8":::
 **Step 7:**
-You are finally ready to propose your changes to the remote `master` branch. To do this, you begin a pull request. This triggers your CI build process, such as Azure Pipelines, and you can watch your changes move through the process. After the build succeeds and others approve your pull request, your code is merged into the remote `master` branch.
+You're finally ready to propose your changes to the remote `master` branch. To do this, you begin a pull request. This triggers your CI build process, such as Azure Pipelines, and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code is merged into the remote `master` branch.
     :::column-end:::
     :::column:::
         ![A pull request](../media/2-github-paths-7.png)
@@ -147,7 +147,7 @@ You are finally ready to propose your changes to the remote `master` branch. To 
 
 **Andy**: This all looks complicated and hard to learn.
 
-**Mara**: Yes, Git is pretty powerful, but once you get a hang of the flow it becomes a rather natural process.
+**Mara**: Git can seem intimidating because it's so powerful but once you get a hang of the flow it starts to feel natural.
 
 There are really only a few commands you'll use daily. Here's a summary.
 

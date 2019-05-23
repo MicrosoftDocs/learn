@@ -1,6 +1,8 @@
-Great work! You covered a lot of ground in this module. You learned how to map script commands on a build server to automated pipeline tasks that run when you push code to GitHub. The result of the pipeline was a .zip file that contains the built _Space Game_ web application.
+Great work! You covered a lot of ground in this module. You and the team have come a long way in creating an automated pipeline. You've learned how to map script commands on a build server to automated pipeline tasks that run when you push code to GitHub. The result of the pipeline was a .zip file that contains the built _Space Game_ web application.
 
-You also learned how to use templates to encapsulate sets of tasks you can repeat throughout your build process. Here, you used a template to build both the application's Release and the Debug configurations.
+Along the way, you learned how to use variables to simplify your code. 
+
+You also learned how to use templates to encapsulate sets of tasks you can repeat throughout your build process. Here, you used a template to build both the application's Release and Debug configurations.
 
 Finally, you practiced your Git skills by pushing commits to a branch and building from that branch. Working from a branch enables you to work in isolation from the main code base. That helps you experiment and try new things without affecting the main development branch, `master`.
 
@@ -11,7 +13,7 @@ When approaching your own builds, a good way to start is to ensure that you can 
 When you create your own pipeline, you have two choices &mdash; the visual designer or YAML files. If you choose the visual designer to get started, you can switch to the YAML version of your configuration to learn how each task is structured.
 
 > [!NOTE]
-> At this point, you have a build artifact that you could deploy to a quality or production environment. For the rest of this learning path, you'll focus on using Azure Pipelines to build and test your software. You'll learn how to use Azure Pipelines to deploy your applications in a future learning path.
+> At this point, you have a build artifact that you could deploy to a QA or production environment. For the rest of this learning path, you'll focus on using Azure Pipelines to build and test your software. You'll learn how to use Azure Pipelines to deploy your applications in a future learning path.
 
 ## Additional resources
 
