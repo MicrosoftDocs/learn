@@ -6,11 +6,18 @@ Learn about how we incorporated AI into our customer service processes and consi
 
 ## Industry context
 
+:::row:::
+:::column span="2":::
 The bar for the customer service experience is higher than ever before. And the quality of the service experience is a key factor in purchasing decisions: 92% of consumers say they would stop purchasing from a company after three or fewer poor service experiences, and 26% of those would stop after just one bad experience.<sup>1</sup>
 
 Customers expect service that is immediate, effective, seamless across channels, and aligned to their goals. The traditional response of hiring more service agents to address this is expensive and is not scalable, in part due to the risk of inconsistent service at scale.
 
 To deliver on customer expectations at scale, customer service organizations are looking to AI to supplement and augment the skills of their employees. Gartner estimates that 25% of all customer care and support operations will integrate AI technology across engagement channels by 2020, up from less than 2% in 2017.<sup>2</sup>
+:::column-end:::
+:::column span="2":::
+![92% of consumers would stop purchasing after three or fewer bad experiences, 26% of consumers would stop purchasing after a single bad experience](../media/2.5.1.A.Customer-Service-case-study-intro.jpg)
+:::column-end:::
+:::row-end:::
 
 ## Microsoft context: Customer experience
 

@@ -2,11 +2,18 @@
 
 At Microsoft Store, we are thinking broadly about AI and exploring various applications and potential impacts across the retail organization. We’ve identified several areas where we could enhance our retail organization with AI solutions, from fulfillment and pricing to recommendations and reviews. Incorporating AI across Microsoft Store business processes has enabled us to efficiently scale and derive meaningful customer insight across an increasing number of data channels.
 
+:::row:::
+:::column span="2":::
 To bring intelligence to our fulfillment process, we partnered with JDA. Previously, use of traditional physical merchandising tools caused our forecast accuracy for physical goods to be lower than it could be. Now with JDA, we’ve been able to automate the initial forecasting and replenishment for merchandising across our physical and digital stores. As we continue to refine these forecasting models and incorporate AI, we anticipate forecast accuracy to increase dramatically.
 
 AI also plays an integral role within our digital store operations through the mediation of product ratings and reviews. Due to the volume of ratings and reviews we receive, we needed to use tools to create greater efficiency. Now with our AI-mediated process, two things happen automatically whenever a product review is submitted: 1) reviews are scanned for profanity and these words are redacted, and 2) every 24 hours, all new reviews are scanned for spam and flagged posts are removed.
 
 We have also leveraged the power of AI to increase the relevancy of product recommendations within our digital channels. We create a personal score based on machine learning algorithms, which is analyzed in relation to product inventory and release dates to generate the most optimal product recommendation lists for each browsing customer.
+:::column-end:::
+:::column span="2":::
+![AI Across Microsoft Store Business Processes: A. AI anticipates forecast accuracy, B. AI mediates in product ratings and reviews, C. AI increases the relevance of product recommendations, D. AI helps to process customer feedback](../media/1.4.4.B.Retail-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
 
 Finally, one of the key ways we’ve leveraged AI is with customer feedback. We receive a high volume of customer feedback across numerous channels, including in-store visitor feedback, email post-purchase surveys, employee notes on their customer interactions, and customer reviews posted to our online store. AI is helping us efficiently process this information and surface key trends from the signals that we’re receiving from our customers across channels.
 
@@ -50,7 +57,7 @@ The end goal of using AI to analyze customer feedback was not just to uncover in
 
 ### Evaluation of the strategy using the value framework
 
-Let’s examine how Microsoft Store’s AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, the INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation.
+Let’s examine how Microsoft Store’s AI strategy is creating additional value using the value creation framework developed by Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation:
 
 1. From the **industry environment perspective**, retail companies are struggling to provide a consistent, personalized customer experience and manage operations across channels in an increasingly multi-channel environment. Building a better understanding of the customer and personalizing their experiences are key to retailers’ success.
 2. From the **value creation perspective**, the customer feedback program enables Microsoft Store to be more agile in response to customer feedback: we can implement changes based on customer suggestions significantly faster. In addition, our other AI solutions increase efficiency of our supply chain by improving prediction of customer demand and behavior.
