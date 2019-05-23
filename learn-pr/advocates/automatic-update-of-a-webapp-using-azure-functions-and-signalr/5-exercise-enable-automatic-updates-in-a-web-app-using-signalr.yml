@@ -11,6 +11,7 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise – Enable automatic updates in a web application using SignalR
 interactive: bash
+azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-enable-automatic-updates-in-a-web-app-using-signalr.md)]
