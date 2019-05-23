@@ -52,7 +52,7 @@ Next, you'll create the VPN gateway for the Azure end of the connection.
         --allocation-method Dynamic
     ```
 
-1. Run the following command in the Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway named.
+1. Run this command to create the **VNG-Azure-VNet-1** virtual network gateway:
 
     ```azurecli
     az network vnet-gateway create \
@@ -66,11 +66,11 @@ Next, you'll create the VPN gateway for the Azure end of the connection.
         --no-wait
     ```
 
-## Create the on-premises-side VPN gateway
+## Create the on-premises VPN gateway
 
 Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
-1. Run the following command in the Cloud Shell to create the **PIP-VNG-HQ-Network** Public IP Address.
+1. In the Cloud Shell, run this command to create the **PIP-VNG-HQ-Network** public IP address:
 
     ```azurecli
     az network public-ip create \
@@ -79,7 +79,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --allocation-method Dynamic
     ```
 
-1. Run the following commands in the Cloud Shell to create the **VNG-HQ-Network** virtual network gateway.
+1. Run these commands to create the **VNG-HQ-Network** virtual network gateway:
 
     ```azurecli
     az network vnet-gateway create \
@@ -93,9 +93,9 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --no-wait
     ```
 
-    This can take several minutes to create the gateway.
+    It can take several minutes to create the gateway.
 
-1. To monitor the progress of the gateway creation, run the following command. This uses the Linux `watch` command to execute the `az network vnet-gateway list` command periodically, allowing you to monitor the progress.
+1. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
 
     ```bash
     watch -d -n 5 az network vnet-gateway list \
@@ -103,7 +103,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --output table
     ```
 
-    Once each VPN gateway shows a **ProvisioningState** of **Succeeded**, you are ready to continue. Press `Ctrl-c` to halt the command once gateway creation is complete.
+    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Select Ctrl+C to halt the command after the gateway is created.
 
     ```output
     ActiveActive    EnableBgp    GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
