@@ -62,6 +62,8 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 ## Deploy the function app
 
+1. Press the **CTRL/CMD+Shift+P** to open the Visual Studio Code command palette.
+
 1. Search for and select the **Azure Functions: Deploy to Function App** command.
 
 1. Follow the prompts to provide the following information.
@@ -110,7 +112,7 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
 
-1. Search for and select the **Azure Storage: Deploy to static website** command.
+1. Search for and select the **Azure Storage: Deploy to Static Website** command.
 
 1. Select the Storage account you created earlier.
 
@@ -123,6 +125,8 @@ Use the following steps to configure the Azure Storage account to host a static 
 1. In the command palette, search for **Azure Storage: Browse static website** and choose your Storage account. The site opens in the browser. At this point, the app won't run because of CORS requirements of Azure Functions.
 
 1. Copy the URL in the browser, which is the endpoint of the static site hosted in your Storage account. You use the endpoint value to set up CORS settings for the function app in the next section.
+
+Keep this browser window open. You will return refresh this window once the CORS settings are updated in your function app.
 
 ## Set up CORS in the function app
 
@@ -144,7 +148,7 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 Now you can make change to the application's data and observe how to the data is automatically updated.
 
-1. Arrange Visual Studio Code on one side of the screen and the web browser on the other. This way you can see the UI update as changes are made to the database.
+1. Arrange Visual Studio Code on one side of the screen and the web browser running the static site on the other. This way you can see the UI update as changes are made to the database.
 
 1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
 
