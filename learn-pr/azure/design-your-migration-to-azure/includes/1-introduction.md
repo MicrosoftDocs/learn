@@ -1,5 +1,4 @@
-There are several tools that can help you achieve a successful migration of services to Azure – such as 
-**Azure Migrate**, **Azure Site Recovery** and the **Azure Database Migration service**.
+There are several tools that can help you achieve a successful migration of services to Azure these include **Azure Migrate**, **Azure Site Recovery** and the **Azure Database Migration service**.
 
 You're the solution architect for a manufacturing company that is planning to move several data centers to Azure. You've been asked to plan your migration, and identity the tools and services you can use to migrate your company's services. Your workloads consist primarily of VMware virtual machine-based workloads with data stored in relational databases.
 
@@ -8,12 +7,11 @@ In this module, you'll investigate Azure Migrate, which helps to assess your env
 ## Learning objectives
 
 In this module, you'll:
-- Learn about the Azure migration planning process
-- Get an introduction to Azure Migrate
-- Get an introduction to Azure Site Recovery
-- Get an introduction to the Azure Database Migration Service
+
+- Discover how Azure Migrate can assess your existing workloads and plan your Azure Migration
+- Discover how Azure Site Recovery and the Azure Database Migration Service can migrate your systems to Azure
 
 ## Prerequisites
 
-  - Knowledge of cloud and traditional architecture concepts
-  - Knowledge of networking, compute, and database systems
+- Knowledge of cloud and traditional architecture concepts
+- Knowledge of networking, compute, and database systems

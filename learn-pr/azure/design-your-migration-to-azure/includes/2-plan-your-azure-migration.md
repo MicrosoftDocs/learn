@@ -1,6 +1,6 @@
 Your first task is to plan your company's migration to Azure. You have a set amount of time to put this plan together before presenting it to the IT Director and other leaders around the business.
 
-In this unit, you'll cover some of the considerations and methods you can use to form a plan for your migration to Azure. Every situation is different but, by following some principles, you can achieve your goals in the best possible way, in the shortest amount of time.
+In this unit, you'll cover some of the considerations and methods you can use to plan for your migration to Azure. Every situation is different but, by following some principles, you can achieve your goals in the best possible way, in the shortest amount of time.
 
 ## Planning your migration to Azure
 
