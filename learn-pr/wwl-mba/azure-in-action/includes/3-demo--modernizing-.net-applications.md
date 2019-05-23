@@ -52,6 +52,7 @@ Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TSyp]
 
+---
 :::row:::
 ![Recap icon](../media/Recap.png)
 :::column:::
@@ -69,6 +70,7 @@ Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the
 
 :::column-end:::
 :::row-end:::
+---
 
 ## Modernize
 
