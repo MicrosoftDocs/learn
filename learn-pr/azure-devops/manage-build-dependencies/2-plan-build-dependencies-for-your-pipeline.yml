@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline
+title: Plan build dependencies for your pipeline
+metadata:
+  title: Plan build dependencies for your pipeline
+  description: Share code using packages and consume the packages in your pipeline
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-plan-build-dependencies-for-your-pipeline.md)]

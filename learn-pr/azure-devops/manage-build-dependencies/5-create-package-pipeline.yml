@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.manage-build-dependencies.4-create-package-pipeline
+uid: learn.azdo.manage-build-dependencies.5-create-package-pipeline
 title: Exercise - Create a pipeline for your package
 metadata:
   title: Exercise - Create a pipeline for your package
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
-  [!include[](includes/4-create-package-pipeline.md)]
+  [!include[](includes/5-create-package-pipeline.md)]

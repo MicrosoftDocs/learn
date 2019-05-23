@@ -1,8 +1,32 @@
-Here, we talk about managing dependencies.
+In this module, you'll create a build pipeline that produces a package that you can reuse among applications.
 
-Here's a sample scenario:
+You've likely used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
 
-* The team identifies code that can be shared among multiple applications.
-* The team contacts the owner of that code and they agree to split it.
-* The team splits the code, including relevant tests, and creates a pipeline for it. The pipeline produces a package.
-* The team changes the app codebase to use the package. They also update the build pipeline to support the change.
+You may also have your own application code that you can move into a library or package so that others can use it, whether as an open source project or software that only your team can access.
+
+There are many ways to build and host your packages. The right solution depends largely on the kinds of programming languages and frameworks you use. Here you'll continue your work with the Tailspin web team by creating a NuGet package for .NET that's hosted on Azure Artifacts.
+
+In this module, you will:
+
+- Describe ways to create and share packages that can be used by multiple applications
+- Create a build pipeline for your package and publish your package to Azure Artifacts
+- Connect an application to your package and build the application in Azure Pipelines
+- Push up a change to your package and update your application to use it
+
+## Prerequisites
+
+The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true) module.
+
+Make sure you have Visual Studio Code and your _Space Game_ project on GitHub handy.
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in the previous learning path. As a refresher, here's who you'll work with in this module.
+
+[!include[](../../shared/includes/meet-andy-row.md)]
+
+[!include[](../../shared/includes/meet-amita-row.md)]
+
+[!include[](../../shared/includes/meet-tim-row.md)]
+
+[!include[](../../shared/includes/meet-mara-row.md)]
