@@ -46,7 +46,7 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
 
 ### Open the project and examine the configuration
 
-In Visual Studio Code, your terminal window points to the root directory of the**mslearn-tailspin-spacegame-web-modules** projects. Here you'll open the project from the file explorer so that you can view its structure and work with files.
+In Visual Studio Code, your terminal window points to the root directory of the **mslearn-tailspin-spacegame-web-modules** projects. Here you'll open the project from the file explorer so that you can view its structure and work with files.
 
 1. From the **File** menu, select **Open**.
 1. Navigate to the root directory of the **mslearn-tailspin-spacegame-web-modules** project.
@@ -97,7 +97,7 @@ In Visual Studio Code, your terminal window points to the root directory of the*
 
 ## Create the pipeline in Azure Pipelines
 
-You learned how to set up an Azure Pipeline in a previous module. We won't go into as much detail here since you have done this before, but if you need a refresher, head over to [Create a build pipeline](/learn/modules/create-a-build-pipeline-azure-pipelines/index?azure-portal=true).
+You learned how to set up an Azure Pipeline in a previous module. We won't go into as much detail here since you've done this before, but if you need a refresher, head over to [Create a build pipeline](/learn/modules/create-a-build-pipeline-azure-pipelines/index?azure-portal=true).
 
 Here you'll set up a second pipeline to build the package and put it in Azure Artifacts.
 
@@ -112,4 +112,4 @@ Here you'll set up a second pipeline to build the package and put it in Azure Ar
 1. Watch the pipeline run.
 1. Navigate to your Azure Artifacts tab.
 
-    You see you new **Tailspin.SpaceGame.Web.Models** Azure Artifact. Note the version number.
+    You see your new **Tailspin.SpaceGame.Web.Models** Azure Artifact. Note the version number.

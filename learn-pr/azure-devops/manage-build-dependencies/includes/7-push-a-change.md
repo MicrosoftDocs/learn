@@ -9,7 +9,7 @@ Here we push a change to the Models project, build and publish the package to Az
     [!code-csharp[](code/7-score-property.cs?highlight=23-25)]
 
     > [!NOTE]
-    > We are making a change to a file in the project to show a scenario where you'll bump up the version number. We won't update any code or database to use this property, however.
+    > We're making a change to a file in the project to show a scenario where you'll bump up the version number. We won't update any code or database to show this, however.
 
 1. Save the file.
 
