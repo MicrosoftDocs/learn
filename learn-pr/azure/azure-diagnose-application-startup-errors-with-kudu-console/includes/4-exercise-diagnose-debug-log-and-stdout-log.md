@@ -26,8 +26,6 @@ Disable stdout logging when troubleshooting is complete:
 
 > [!WARNING]
 > Failure to disable the stdout log can lead to app or server failure. There's no limit on log file size or the number of log files created. Only use stdout logging to troubleshoot app startup problems.
->
-> For general logging in an ASP.NET Core app after startup, use a logging library that limits log file size and rotates logs. For more information, see [third-party logging providers](xref:fundamentals/logging/index#third-party-logging-providers).
 
 ### ASP.NET Core Module debug log
 
@@ -52,6 +50,3 @@ Disable debug logging when troubleshooting is complete:
 
 > [!WARNING]
 > Failure to disable the debug log can lead to app or server failure. There's no limit on log file size. Only use debug logging to troubleshoot app startup problems.
->
-> For general logging in an ASP.NET Core app after startup, use a logging library that limits log file size and rotates logs. For more information, see [third-party logging providers](xref:fundamentals/logging/index#third-party-logging-providers).
-

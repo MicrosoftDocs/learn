@@ -13,8 +13,8 @@ Diagnose startup errors in your application using Kudu console
 
 ## Product(s)
 
-- Azure App Service
-- ASP.NET Core
+- Azure
+- .NET
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ This module explains how to use kudu console to examine the application event lo
 
 1. Describe the different types of App startup errors  
 1. Use kudu console to examine the application event log
-1. Analyze errors using kudu remote execution console and diagnostic console
+1. Analyze errors using kudu diagnostic console
 
 ## Chunk your content into subtasks
 
@@ -47,7 +47,7 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
     You are an IT admin supporting a leading hotel and resort company using Azure web apps. The hospitality group is rolling out a new service to its gold tier members to support digital room selection.  This service however returns an application process failure message. 
 
-    In this module, you will learn how to diagnose the app startup error by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you will use the Kudu remote execution console to discover the error.
+    In this module, you will learn how to diagnose the app startup error by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you will use the Kudu diagnostic console to discover the error.
 
 1. **Describe the different App startup errors and App Service diagnostic technique**
     
@@ -89,7 +89,7 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
 1. **Summary**
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module?
+    In this module, you learned about the different application startup errors. As an IT admin of hotel and resort company, you learned how to use kudu console to examine the application event log and gather useful information to diagnose startup errors. You also learned how to analyze errors using kudu diagnostic console.
 
 1. **References**
 
