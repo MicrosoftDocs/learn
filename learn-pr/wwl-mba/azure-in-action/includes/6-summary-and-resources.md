@@ -33,7 +33,8 @@ Here are the key takeaways:
 Use these resources to discover more.
 
 > [!TIP]
-> To open a resource link, right-click and select "Open in a new tab or window". That way, you can check out the resource and easily return to the module tab to unlock your achievement when done.
+> To open a resource link, right-click and select "Open in a new tab or window". That way, you can check out the resource and easily return to the module tab to unlock your achievement when done.
+
 ### Introduction
 
 - [Applications and infrastructure migration and modernization](https://docs.microsoft.com/en-us/learn/modules/app-and-infra-migration-and-modernization/index)
@@ -51,8 +52,3 @@ Use these resources to discover more.
 ### Demo - Azure DevOps
 
 - [GitHub-AzureDevOps](https://github.com/hsachinraj/GitHub-AzureDevOps/blob/master/readme.md) demo
-
-### Azure differentiators
-
-- Sign in or create a free [Microsoft Azure](https://azure.microsoft.com/en-us/) account today.
-
