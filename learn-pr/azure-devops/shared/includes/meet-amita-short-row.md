@@ -2,4 +2,4 @@
 ![Cartoon depiction of Amita](../../shared/media-draft/amita.png)
 
 Amita is in QA.
-:::column-end::
+:::column-end::::
