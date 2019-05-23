@@ -31,10 +31,15 @@ Before beginning the migration of Contoso's support application, Victor creates 
 
 **#comment**
 
-Alternative presentation of value prop text:
+Alternative presentations of value prop text below - you cannot remove the titles that say "Important" and "Note":
 
 > [!IMPORTANT]
 > Use the Azure Migrate solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.
+
+or
+
+>[!NOTE]
+>Use the Azure Migrate solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.
 
 ---
 
