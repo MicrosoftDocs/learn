@@ -33,7 +33,7 @@ At this point, your SonarCloud project is created. You need to do a few more thi
 Here you'll get a copy of the _Space Game_ web project and work from a branch.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git checkout` command to create a branch named `security-scan` from Microsoft's repository.
+1. Run the following `git` commands to fetch a branch named `security-scan` from Microsoft's repository and switch to that branch.
 
     ```bash
     git fetch upstream security-scan

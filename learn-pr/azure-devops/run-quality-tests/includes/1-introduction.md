@@ -9,7 +9,7 @@ In this module, you'll learn how to set up automated testing to help ensure that
 In this module, you will:
 
 * Learn the benefits of automated testing and the kinds of testing you can use
-* Run unit tests locally and then in your build pipeline
+* Run unit tests locally and then in Azure Pipelines
 * Add dashboard widgets to visualize test runs over time
 * Perform code coverage testing to see how much of your code is covered by unit tests
 * See a test fail in the pipeline and then fix the failure
