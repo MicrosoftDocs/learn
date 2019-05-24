@@ -16,4 +16,4 @@ In this module, you will:
 
 - Basic knowledge of Azure Storage accounts
 - Familiarity with C#
-- Familiarity with Fiddler or similar HTTP inspection tool
+- Ability to install software locally (Visual Studio, Fiddler, Git)
