@@ -36,11 +36,11 @@ az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
 
 Now that you've made these changes, you need to sign out and back into the Azure extension.
 
-1. Press the **F1** to open the Visual Studio Code command palette.
+1. Press **F1** to open the Visual Studio Code command palette.
 
 1. Search for and select **Azure: Sign Out**.
 
-1. Press the **F1** again.
+1. Press **F1** again.
 
 1. Search for and select **Azure: Sign In** and sign in with the same account you used to sign into the Learn sandbox.
 
@@ -62,7 +62,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 ## Deploy the function app
 
-1. Press the **F1** to open the Visual Studio Code command palette.
+1. Press **F1** to open the Visual Studio Code command palette.
 
 1. Search for and select the **Azure Functions: Deploy to Function App** command.
 
