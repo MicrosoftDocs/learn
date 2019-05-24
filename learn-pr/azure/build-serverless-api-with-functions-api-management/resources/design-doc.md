@@ -44,7 +44,17 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Scenario <!-- TODO Flesh out -->: Online store has built multiple Functions apps in a microservices architecture, and wants to stitch them together into a unified API to expose to partners.
+You can use Azure Functions and Azure API Management to build complete APIs with a microservices architecture.
+
+Suppose you work for an online store that has built multiple Azure Functions. You have been asked to integrate these functions into a unified API to expose to partners. A visitor to the website store will need to be able to see products details and place orders.
+
+You want to implement this system by using separate microservices such as:
+
+- A product details service
+- An order placement service
+- An order shipping status service
+
+In this module, you will learn how to use API Management to assemble multiple microservices, implemented as Azure Functions, into a single API.
 
 1. **Learning: Create a new API in API Management from a Function App**
 
