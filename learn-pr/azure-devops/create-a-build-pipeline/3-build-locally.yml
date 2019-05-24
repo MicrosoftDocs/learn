@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.host-build-agent.5-build-application
-title: Exercise - Build the application using your agent
+uid: learn.azdo.create-a-build-pipeline.3-build-locally
+title: Exercise - Get the sample application
 metadata:
-  title: Exercise - Build the application using your agent
+  title: Exercise - Get the sample application
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,6 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-build-application.md)]
+  [!include[](includes/3-build-locally.md)]
+
+

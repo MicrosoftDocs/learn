@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.scan-open-source.2-choose-a-scanning-tool
+title: Choose a tool for scanning open source dependencies
+metadata:
+  title: Choose a tool for scanning open source dependencies
+  description: Choose a tool to integrate with Azure DevOps Pipelines that scans open source libraries for known vulnerabilities and licensing ratings.
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-choose-a-scanning-tool.md)]

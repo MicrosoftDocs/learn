@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.manage-build-infrastructure.2-choose-a-build-agent
+uid: learn.azdo.host-build-agent.2-choose-a-build-agent
 title: Choose a Microsoft-hosted or self-hosted build agent
 metadata:
   title: Choose a Microsoft-hosted or self-hosted build agent
