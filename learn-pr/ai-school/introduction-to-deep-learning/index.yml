@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn-wwl.deep-learning
+metadata:
+  title: Deep Learning
+  description: A high level overview of deep learning and the types of solutions you can use.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlanmsft
+title: Deep Learning
+summary: A high level overview of deep learning and the types of solutions you can use.
+abstract: | 
+  In this module, you will:
+  - Learn about deep learning applications.
+  - Learn about cnns and rnns.
+  - Learn about tools for deep learning.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles: 
+- functional-consultant
+- business-user
+- ai-engineer
+- developer
+products: 
+- azure
+units: 
+- learn-wwl.deep-learning.introduction-to-deep-learning
+- learn-wwl.deep-learning.deep-learning-applications
+- learn-wwl.deep-learning.introduction-to-cnns
+- learn-wwl.deep-learning.tools-for-deep-learning
+- learn-wwl.deep-learning.introduction-to-rnns
+badge: 
+  uid: learn-wwl.deep-learning.badge #add the uid for your achievement badge.

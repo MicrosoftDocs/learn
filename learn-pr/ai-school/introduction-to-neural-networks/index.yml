@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.neural-networks
+metadata:
+  title: Neural Networks
+  description: Here we cover one of the hottest topics in computer systems - neural networks. We’ll work through the core principles behind neural networks, and how to make them easily with TensorFlow and Keras.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlanmsft
+title: Neural Networks
+summary: Here we cover one of the hottest topics in computer systems - neural networks. We’ll work through the core principles behind neural networks, and how to make them easily with TensorFlow and Keras.
+abstract: | 
+  In this module, you will:
+  - Learn about layer edges and weights.
+  - Learn about activation functions.
+  - Learn about types of gradient descent.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles: 
+- functional-consultant
+- business-user
+- ai-engineer
+- developer
+products: 
+- azure
+units: 
+- learn-wwl.neural-networks.introduction-to-neural-networks
+- learn-wwl.neural-networks.layers-edges-and-weights
+- learn-wwl.neural-networks.programming-exercise-introduction-to-neural-networks
+- learn-wwl.neural-networks.activation-functions
+- learn-wwl.neural-networks.types-of-gradient-descent
+- learn-wwl.neural-networks.programming-exercise-advanced-neural-networks
+- learn-wwl.neural-networks.outro
+badge: 
+  uid: learn-wwl.neural-networks.badge #add the uid for your achievement badge.

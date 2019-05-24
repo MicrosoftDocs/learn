@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn-wwl.advanced-classification-models
+metadata:
+  title: Advanced Classification Models
+  description: Here we look more into classification models using one of the most elegant machine learning algorithms - support vector machines.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlanmsft
+title: Advanced Classification Models
+summary: Here we look more into classification models using one of the most elegant machine learning algorithms - support vector machines.
+abstract: | 
+  In this module, you will:
+  - Learn about cost functions and gradient descent.
+  - Learn about support vector machines and advanced vector machines.
+  - Learn about testing models.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles: 
+- functional-consultant
+- business-user
+- ai-engineer
+- developer
+products: 
+- azure
+units: 
+- learn-wwl.advanced-classification-models.cost-function-and-gradient-descent
+- learn-wwl.advanced-classification-models.support-vector-machines
+- learn-wwl.advanced-classification-models.testing-a-model
+- learn-wwl.advanced-classification-models.advanced-svms
+badge: 
+  uid: learn-wwl.advanced-classification-models.badge #add the uid for your achievement badge.

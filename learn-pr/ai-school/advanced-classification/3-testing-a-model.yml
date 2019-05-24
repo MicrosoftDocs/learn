@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.advanced-classification-models.testing-a-model
+title: Testing a Model
+metadata:
+  title: Testing a Model
+  description: Here we go through how we test a model, and common problems with models.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-testing-a-model.md)] 

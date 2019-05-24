@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-regression.multiple-linear-regression
+title: Multiple Linear Regression
+metadata:
+  title: Multiple Linear Regression
+  description: Here we use linear regression again - but this time we use multiple features.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 40
+content: |
+  [!include[](includes/3-multiple-linear-regression.md)] 

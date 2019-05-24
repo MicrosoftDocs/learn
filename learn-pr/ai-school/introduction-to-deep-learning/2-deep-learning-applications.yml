@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.deep-learning.deep-learning-applications
+title: Deep Learning Applications
+metadata:
+  title: Deep Learning Applications
+  description: Here we'll go over common applications of deep learning.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-deep-learning-applications.md)] 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.neural-networks.introduction-to-neural-networks
+title: Introduction to Neural Networks
+metadata:
+  title: Introduction to Neural Networks
+  description: Here we introduce neural networks and look at what they are made up of - nodes.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/1-introduction-to-neural-networks.md)] 

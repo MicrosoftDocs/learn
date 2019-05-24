@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.neural-networks.types-of-gradient-descent
+title: Types of Gradient Descent
+metadata:
+  title: Types of Gradient Descent
+  description: Here we go over some variations of gradient descent that we can use with neural networks to improve efficiency.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-types-of-gradient-descent.md)] 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.advanced-classification-models.advanced-svms
+title: Advanced SVMs
+metadata:
+  title: Advanced SVMs
+  description: Here we go into some variations of SVMs we can try to improve our accuracy.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-advanced-svms.md)] 

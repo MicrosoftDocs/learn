@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
+title: Non-linear Data Sets and Polynomial Regression
+metadata:
+  title: Non-linear Data Sets and Polynomial Regression
+  description: Here we look at non-linear data sets and a model that can predict them accurately - polynomial regression.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 45
+content: |
+  [!include[](includes/4-non-linear-data-sets-and-polynomial-regression.md)] 

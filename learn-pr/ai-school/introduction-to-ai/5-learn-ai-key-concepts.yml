@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-ai.learn-ai-key-concepts
+title: Learn AI key concepts
+metadata:
+  title: Learn AI key concepts
+  description: Here we introduce some key concepts to AI - models and error.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 20 
+content: |
+  [!include[](includes/5-learn-ai-key-concepts.md)] 

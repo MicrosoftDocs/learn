@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.advanced-classification-models.cost-function-and-gradient-descent
+title: Cost Function and Gradient Descent
+metadata:
+  title: Cost Function and Gradient Descent
+  description: Here we look at the two main methods that improve our models behind the scenes - cost function and gradient descent.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-cost-function-and-gradient-descent.md)] 

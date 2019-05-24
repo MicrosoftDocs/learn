@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.deep-learning.introduction-to-rnns
+title: Introduction to RNNs
+metadata:
+  title: Introduction to RNNs
+  description: Here we take a quick look at the standard tools used for custom deep learning.
+  ms.date: 04/26/2019
+  author: barlanmsft
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-introduction-to-rnns.md)] 
