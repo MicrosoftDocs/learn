@@ -11,3 +11,7 @@ In this module, you will:
 - Learn what DevOps is and identify what separates elite performers from low performers
 - Identify what services Azure DevOps provides
 - Set up an account in Azure DevOps
+
+## Prerequisites
+
+The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.

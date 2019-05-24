@@ -32,7 +32,7 @@ You'll also need to set up a development environment on your Windows, macOS, or 
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 
-This environment lets you complete the excercises in this and future modules. You can also use it to apply your new skills to your own projects.
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
 

@@ -17,7 +17,12 @@ abstract: |
   - Create a build pipeline for your package and publish your package to Azure Artifacts
   - Connect an application to your package and build the application in Azure Pipelines
   - Push up a change to your package and update your application to use it
-prerequisites: None
+prerequisites:
+- An Azure DevOps account
+- Visual Studio Code
+- .NET Core 2.1
+- Git
+- A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
 levels:
 - beginner
