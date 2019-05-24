@@ -4,7 +4,7 @@ title: Introduction to CNNs
 metadata:
   title: Introduction to CNNs
   description: Here we take a look at how CNNs work, what convolutional means, advantages of CNNs and a popular implementation of real time image analysis - YOLO.
-  ms.date: 04/26/2019
+  ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial

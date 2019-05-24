@@ -4,7 +4,7 @@ title: Programming exercise - Advanced Neural Networks
 metadata:
   title: Programming exercise - Advanced Neural Networks
   description: Here we'll play around a bit with neural networks - changing the activation functions of different layers to try and improve accuracy.
-  ms.date: 04/26/2019
+  ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial

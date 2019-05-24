@@ -4,7 +4,7 @@ title: Activation Functions
 metadata:
   title: Activation Functions
   description: Here we describe how nodes regulate their output, and can turn “on” and “off” - by using activation functions.
-  ms.date: 04/26/2019
+  ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
