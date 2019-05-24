@@ -20,13 +20,12 @@ prerequisites: |
   - Understanding of App Service in Microsoft Azure
 iconUrl: /learn/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
 levels:
-- Intermediate
+- intermediate
 roles:
 - administrator
 - developer
 products:
-- Azure
-- .NET
+- azure
 units:
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.1-introduction
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.2-app-startup-errors-and-app-service-diagnostic

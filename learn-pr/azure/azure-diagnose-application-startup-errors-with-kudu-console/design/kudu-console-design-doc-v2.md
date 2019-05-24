@@ -1,3 +1,5 @@
+# Design Document
+
 ## Title
 
 Diagnose startup errors in your application using Kudu console
@@ -14,7 +16,6 @@ Diagnose startup errors in your application using Kudu console
 ## Product(s)
 
 - Azure
-- .NET
 
 ## Prerequisites
 
