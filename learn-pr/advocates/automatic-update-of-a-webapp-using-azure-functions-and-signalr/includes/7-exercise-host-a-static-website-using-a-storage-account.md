@@ -104,9 +104,9 @@ Use the following steps to configure the Azure Storage account to host a static 
 
    | Name              | Value                                                             |
    | ----------------- | ----------------------------------------------------------------- |
-   | Storage account   | Select the account you created earlier                            |
+   | Storage account   | Select the account you created earlier.                           |
    | Default file      | Select **index.html** as the index document name for the account. |
-   | Error document    | Press **Enter** to accept the default 404 error document path     |
+   | Error document    | Press **Enter** to accept the default 404 error document path.    |
 
 ## Deploy the web application to Azure Storage
 
@@ -114,11 +114,12 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 1. Search for and select the **Azure Storage: Deploy to Static Website** command.
 
-1. Select the Storage account you created earlier.
+   | Name              | Value                                                             |
+   | ----------------- | ----------------------------------------------------------------- |
+   | Storage account   | Select the Storage account you created earlier.                   |
+   | Select folder     | Select **browse** and choose the *public* subfolder containing the web app. |
 
-1. When prompted for a folder, select **browse** and choose the *public* subfolder, which contains the web app.
-
-1. A notification appears that the upload was successful. The upload can take several minutes.
+After the extension is done deploying your application, a notification appears that the upload was successful. The upload can take several minutes.
 
 ## Determine the primary endpoint address of the static website
 
@@ -149,6 +150,8 @@ Keep this browser window open. You will return refresh this window once the CORS
 Now you can make change to the application's data and observe how to the data is automatically updated.
 
 1. Arrange Visual Studio Code on one side of the screen and the web browser running the static site on the other. This way you can see the UI update as changes are made to the database.
+
+1. Refresh the browser. It make take a moment for stocks to appear as the serverless functions are running for the first time.
 
 1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
 
