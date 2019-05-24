@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.ha-application-storage-with-grs.2-storage-account-replication-features
+uid: learn.ha-application-storage-with-grs.2-storage-account-replication-features
 metadata:
   title: Understand the role of an Azure Storage account and the associated replication features 
   description: Understand the role of an Azure Storage account and the associated replication features 
