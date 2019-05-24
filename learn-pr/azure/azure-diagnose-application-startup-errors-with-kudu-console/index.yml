@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Diagnose startup errors in your application using Kudu console
-summary: 
+summary: This module explains how to use kudu console to examine the application event log to identify the event that caused the error.
 abstract: |
   In this module, you'll:
   - Describe the different types of App startup errors  
