@@ -2,7 +2,7 @@ In this module, you'll set up your own build agent running on an Azure virtual m
 
 Up until now, you used a Microsoft-hosted agent running Ubuntu to build the _Space Game_ web application. Many times, a Microsoft-hosted agent can do everything you need.
 
-However, there are times when you need additional processing power, disk space, or time to build your applications. In this module, you'll see how to set up your own build agent &mdash; running in the cloud or on-premises. You'll follow along with the Tailspin web team as they set up a build agent running on an Azure virtual machine.
+However, there are times when you need additional processing power, disk space, or time to build your applications. In this module, you'll see how to set up your own build agent, which can run either in the cloud or on-premises. You'll follow along with the Tailspin web team as they set up a build agent running on an Azure virtual machine (VM).
 
 ## Learning objectives
 
