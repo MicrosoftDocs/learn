@@ -7,7 +7,7 @@ Here you'll:
 > * Add build tasks to your pipeline configuration
 > * Analyze the results from Azure Pipelines
 
-In practice, you might scan your project locally from the command-line as you did in previous modules. Doing so helps you understand the process and see what results to expect.
+In practice, you might scan your project locally from the command line as you did in previous modules. Doing so helps you understand the process and see what results to expect.
 
 For brevity, here you'll add a task directly to **azure-pipelines.yml** and run the change through your pipeline.
 
@@ -59,7 +59,7 @@ Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the W
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=54-55)]
 
-    Highlighted is the `WhiteSource Bolt@19` task, which runs before the `PublishBuildArtifacts@1` task. It analyzes your open source dependencies for known vulnerabilities as well as licenses and prepare reports you can review directly from Azure Pipelines.
+    The `WhiteSource Bolt@19` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open source dependencies for known vulnerabilities as well as licenses and prepares reports you can review directly from Azure Pipelines.
 
 ## Watch Azure Pipelines build the application
 
@@ -107,9 +107,9 @@ The team gets together to look at the results.
 
 **Amita**: Wow, we use more open source than I thought!
 
-**Tim**: And our vulnerability score is listed as high. This isn't going to look good.
+**Tim**: And our vulnerability score is listed as medium. Is that okay?
 
-**Andy**: Those points are both true. But it's too early to draw conclusions. For right now, our job is to identify what we're using, how each component is licensed, and which potential vulnerabilities we see.
+**Andy**: It's too early to draw conclusions. For right now, our job is to identify what we're using, how each component is licensed, and which potential vulnerabilities we see.
 
 **Tim**: I have some experience working with the CVE recommendations. I can take some more time to analyze the results and summarize what we're using ahead of our meeting with the legal team.
 

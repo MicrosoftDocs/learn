@@ -12,6 +12,10 @@ In this module, you will:
 - Identify what services Azure DevOps provides
 - Set up an account in Azure DevOps
 
+## Prerequisites
+
+The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
+
 ## Meet the team
 
 You met the _Space Game_ web team at Tailspin Toys in the previous module. As a refresher, here's who you'll work with in this module.

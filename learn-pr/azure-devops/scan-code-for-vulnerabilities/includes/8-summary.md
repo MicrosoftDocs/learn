@@ -26,7 +26,7 @@ See if you can locate this issue in the source code based on the report. Once yo
 
 ## Learn more
 
-Thinking about security is part of every phase of your development lifecycle. Microsoft provides a place to go to learn more about security and privacy in all phases of development. We recommend that you check out [Microsoft Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl/?azure-portal=true).
+Thinking about security is part of every phase of your development lifecycle. Microsoft provides a place to go to learn more about security and privacy in all phases of development. We recommend that you check out [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/?azure-portal=true).
 
 In this module, you learned about some of the tools and processes you can use to analyze your code. Here's where you can learn more.
 

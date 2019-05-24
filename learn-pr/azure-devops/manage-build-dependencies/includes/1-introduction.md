@@ -1,6 +1,6 @@
-In this module, you'll create a build pipeline that produces a package that you can reuse among applications.
+In this module, you'll create a build pipeline that produces a package that can be used by multiple applications.
 
-You've likely used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
+It's likely that you've used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
 
 You may also have your own application code that you can move into a library or package so that others can use it, whether as an open source project or software that only your team can access.
 
@@ -8,7 +8,7 @@ There are many ways to build and host your packages. The right solution depends 
 
 In this module, you will:
 
-- Describe ways to create and share packages that can be used by multiple applications
+- Learn ways to create and share packages that can be used by multiple applications
 - Create a build pipeline for your package and publish your package to Azure Artifacts
 - Connect an application to your package and build the application in Azure Pipelines
 - Push up a change to your package and update your application to use it

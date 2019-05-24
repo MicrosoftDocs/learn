@@ -16,7 +16,7 @@ abstract: |
   - Create an Azure DevOps project
   - Add work items to an Azure Board using the Basic process
   - Assign team members to work items
-prerequisites: None
+prerequisites: An Azure DevOps account
 iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 levels:
 - beginner

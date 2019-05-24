@@ -60,6 +60,12 @@ You can select a category to learn more about the potential bugs or vulnerabilit
 
 In this module, you'll run SonarCloud locally and then from Azure Pipelines.
 
+## What are CWE, CVE, and CVSS?
+
+There are few standard classification systems that many security tools use. These classification systems help provide a common way for both people and tools to categorize and compare a vulnerability's impact.
+
+Here we'll discuss three important classification systems &mdash; CWE, CVE, and CVSS.
+
 ### CWE
 
 [Common Weakness Enumeration](https://cwe.mitre.org/index.html?azure-portal=true), or CWE, is a list of common software security weaknesses and vulnerabilities maintained by the security community.
@@ -77,6 +83,16 @@ While the CWE defines security vulnerabilities in the general sense, the CVE foc
 We won't call out any specific CVEs here, but they apply to a wide range of software including web browsers, databases, and productivity software. When a CVE is discovered, it's the responsibility of the maintainer of that software to provide users with a security patch. End users and administrators are responsible for installing that patch to help ensure they're no longer exposed to that threat.
 
 Like the CWE, many tools scan for CVE recommendations. Common CVEs that development teams face relate to the use of open source components. When a scan reveals a CVE in your software, you and your team assess the risk and prioritize a fix. A fix might include updating to a newer version of that open source component that does not contain the vulnerability or possibly removing that component and providing its functionality in some other way.
+
+### CVSS
+
+Also related to the CWE and the CVE is the CVSS, which stands for Common Vulnerability Scoring System. The CVSS is a scoring system for security vulnerabilities.
+
+The CVSS assigns a score from 0&mdash;10 to give you a sense of how severe a vulnerability is. Vulnerabilities with higher scores are more severe than ones with lower scores.
+
+As an example, Shellshock was a vulnerability in the Unix Bash shell that would allow an attacker to gain control of a vulnerable system. It was originally reported as CVE-2014-6271. The more general flaw is categorized as CWE-78: OS Command Injection. Its CVSS score is 10.0, which indicates the highest severity.
+
+A vulnerability's CVSS score is not the only factor to consider, but it can help teams prioritize which issues to address first.
 
 ## What does the team choose?
 

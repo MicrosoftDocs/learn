@@ -10,9 +10,9 @@ In this module, you will:
 
 ## Prerequisites
 
-- An account in [Azure DevOps](https://dev.azure.com?azure-portal=true)
+The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
 
-If you don't already have an Azure DevOps account, go through [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true) before starting this module.
+If you'd rather take just this module, go through [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true) first to set up your Azure DevOps account.
 
 ## Meet the team
 
