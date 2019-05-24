@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.ha-application-storage-with-grs.5-deploy-ha-application
+uid: learn.ha-application-storage-with-grs.5-exercise-deploy-ha-application
 metadata:
   title: Exercise - Deploy a highly available application
   description: Exercise - Deploy a highly available application
@@ -10,6 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Deploy a highly available application
+azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-deploy-ha-application.md)]
+  [!include[](includes/5-exercise-deploy-ha-application.md)]
