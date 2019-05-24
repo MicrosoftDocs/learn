@@ -12,9 +12,6 @@ There are different variations of SGD you can try, such as __Adam__ and __RMSPro
 
 If a neural network model is taking a long time to train, you can try SGD instead. Using SGD instead of normal gradient descent is similar to changing the kernel in a SVM - it’s a built in option that you need to select.
 
-
 ## Forward propagation and backpropagation
 
 Forward propagation and backpropagation are how neural networks optimise their weights and produce accurate output. Don't worry about the details - here’s a nice diagram showing how they work!
-
-![Neutral Networks BP FP](../media/Neutral_Networks_BP_FP.mp4)
