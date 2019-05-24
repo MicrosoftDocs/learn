@@ -31,7 +31,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
     ```azurecli
     az storage account show-connection-string \
         --name $STORAGEACCT \
-        --resource-group [sandbox resource group]
+        --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
 
 1. Copy the output connection string to the clipboard.
