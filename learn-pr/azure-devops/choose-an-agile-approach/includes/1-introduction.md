@@ -13,3 +13,21 @@ In this module, you will:
 - An account in [Azure DevOps](https://dev.azure.com?azure-portal=true)
 
 If you don't already have an Azure DevOps account, go through [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true) before starting this module.
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+
+:::row:::
+
+[!include[](../../shared/includes/meet-andy-short-col.md)]
+
+[!include[](../../shared/includes/meet-amita-short-col.md)]
+
+[!include[](../../shared/includes/meet-tim-short-col.md)]
+
+[!include[](../../shared/includes/meet-mara-short-col.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
