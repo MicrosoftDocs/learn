@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.assess-your-development-process.1-introduction
-title: Introduction
+uid: learn.azdo.scan-for-vulnerabilities.7-add-quality-badge
+title: Exercise - Add a quality badge
 metadata:
-  title: Introduction
+  title: Exercise - Add a quality badge
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/7-add-quality-badge.md)]

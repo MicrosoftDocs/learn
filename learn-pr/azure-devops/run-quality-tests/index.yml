@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azdo.run-quality-tests-after-builds
+uid: learn.azdo.run-quality-tests
 metadata:
   title: Run quality tests in Azure Pipelines - Learn
   description: Set up automated testing in your pipeline to improve code quality.
@@ -37,13 +37,13 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.azdo.run-quality-tests-after-builds.1-introduction
-- learn.azdo.run-quality-tests-after-builds.2-what-is-automated-testing
-- learn.azdo.run-quality-tests-after-builds.3-set-up-environment
-- learn.azdo.run-quality-tests-after-builds.4-add-unit-tests
-- learn.azdo.run-quality-tests-after-builds.5-add-dashboard-widget
-- learn.azdo.run-quality-tests-after-builds.6-perform-code-coverage
-- learn.azdo.run-quality-tests-after-builds.7-fix-failed-test
-- learn.azdo.run-quality-tests-after-builds.8-summary
+- learn.azdo.run-quality-tests.1-introduction
+- learn.azdo.run-quality-tests.2-what-is-automated-testing
+- learn.azdo.run-quality-tests.3-set-up-environment
+- learn.azdo.run-quality-tests.4-add-unit-tests
+- learn.azdo.run-quality-tests.5-add-dashboard-widget
+- learn.azdo.run-quality-tests.6-perform-code-coverage
+- learn.azdo.run-quality-tests.7-fix-failed-test
+- learn.azdo.run-quality-tests.8-summary
 badge:
-  uid: learn.azdo.run-quality-tests-after-builds.badge
+  uid: learn.azdo.run-quality-tests.badge

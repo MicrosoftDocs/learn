@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.assess-your-development-process.1-introduction
-title: Introduction
+uid: learn.azdo.scan-for-vulnerabilities.3-scan-locally
+title: Exercise - Scan the project locally using SonarCloud
 metadata:
-  title: Introduction
+  title: Exercise - Scan the project locally using SonarCloud
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/3-scan-locally.md)]

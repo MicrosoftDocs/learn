@@ -12,7 +12,6 @@ metadata:
   ms.prod: learning-azure
 title: Build applications with Azure DevOps
 summary: |
-
   Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how configure build pipelines that continuously build, test, and verify your applications.
 
   In this learning path, you will:
@@ -38,12 +37,12 @@ products:
 - azure
 #- azure-devops
 modules:
-- learn.azdo.create-a-build-pipeline-azure-pipelines
+- learn.azdo.create-a-build-pipeline
 - learn.azdo.implement-code-workflow
-- learn.azdo.run-quality-tests-after-builds
-- learn.azdo.scan-code-for-vulnerabilities
-- learn.azdo.secure-build-dependencies
+- learn.azdo.run-quality-tests
+- learn.azdo.scan-for-vulnerabilities
+- learn.azdo.scan-open-source
 - learn.azdo.manage-build-dependencies
-- learn.azdo.manage-build-infrastructure
+- learn.azdo.host-build-agent
 trophy:
   uid: learn.azdo.build-applications-with-azure-devops.trophy

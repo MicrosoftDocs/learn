@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-quality-tests.4-add-unit-tests
-title: Exercise - Add unit tests to your application
+uid: learn.azdo.create-a-build-pipeline.6-create-the-pipeline
+title: Exercise - Create the pipeline
 metadata:
-  title: Exercise - Add unit tests to your application
+  title: Exercise - Create the pipeline
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-add-unit-tests.md)]
+  [!include[](includes/6-create-the-pipeline.md)]

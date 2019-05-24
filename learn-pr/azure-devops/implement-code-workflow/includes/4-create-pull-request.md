@@ -1,6 +1,6 @@
 Here you'll practice the process of submitting a pull request and merging your changes into the `master` branch so everyone can benefit from your work.
 
-In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true), you created a Git branch named `build-pipeline` where you defined a basic build pipeline for the _Space Game_ web site. Recall that your build definition goes in a file named **azure-pipelines.yml**.
+In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true), you created a Git branch named `build-pipeline` where you defined a basic build pipeline for the _Space Game_ web site. Recall that your build definition goes in a file named **azure-pipelines.yml**.
 
 Although your branch produces a build artifact, that work only exists on the `build-pipeline` branch. You need to merge your branch into `master`.
 

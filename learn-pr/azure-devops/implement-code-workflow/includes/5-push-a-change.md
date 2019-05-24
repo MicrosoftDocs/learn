@@ -13,7 +13,7 @@ Let's briefly review steps you'll follow to complete the task.
 > * Push up any remaining changes, watch Azure Pipelines build the application, and submit your pull request.
 
 > [!IMPORTANT]
-> This part builds on work you did in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true) module. Be sure to complete that module before you continue with this one &mdash; it provides everything you need to get set up.
+> This part builds on work you did in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module. Be sure to complete that module before you continue with this one &mdash; it provides everything you need to get set up.
 
 ## Get the latest code from GitHub
 
