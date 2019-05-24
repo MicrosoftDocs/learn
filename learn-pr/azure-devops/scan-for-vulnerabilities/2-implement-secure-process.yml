@@ -23,7 +23,7 @@ quiz:
       explanation: "This is not always possible, since many code constructs need to be accessible from other code. Plus, this won't protect against other types of vulnerabilities."
     - content: "Never run SQL queries."
       isCorrect: false
-      explanation: "Although you'll want to guard against exploits such as SQL injection attacks, this alone protect against other types of vulnerabilities."
+      explanation: "Although you'll want to guard against exploits such as SQL injection attacks, this alone won't protect against other types of vulnerabilities."
     - content: "Scan your code regularly for known vulnerabilities."
       isCorrect: true
       explanation: "By shifting left, you can identify potential vulnerabilities early in the process."
