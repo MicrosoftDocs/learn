@@ -25,7 +25,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
     ```Command Prompt
     git clone https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-ha-ra-grs <location>
     ```
-
+<!--
 ## Connect to the storage account
 
 1. Switch to the Cloud Shell window in the browser, and run the following command to obtain the connection string for the storage account you created in the previous exercise:
@@ -45,7 +45,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
     ```Powershell
     setx storageconnectionstring <connection string>
     ```
-
+-->
 ## Configure Fiddler
 
 1. Start Fiddler.
