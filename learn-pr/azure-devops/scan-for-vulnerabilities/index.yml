@@ -23,7 +23,7 @@ prerequisites: |
   - .NET Core 2.1
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/scan-for-vulnerabilities-in-your-build-pipeline.svg
+iconUrl: /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-build-pipeline.svg
 levels:
 - beginner
 roles:
