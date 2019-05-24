@@ -20,35 +20,32 @@ quiz:
     choices:
     - content: "Reusable code that other developers can use in their own projects."
       isCorrect: true
-      explanation: "A package is code that can be easily shared and reused across multiple applications."
-    - content: "A GitHub construct for moving a repository."
+      explanation: "You can host packages on a network share or use a web service. Authenticated users can download your package and use it in their own applications."
+    - content: "A Git construct for moving a repository."
       isCorrect: false
-      explanation: "A package is not something specific to GitHub and cannot be used to move repositories. A package is code that can be easily shared and reused across multiple applications."
-    - content: "A pre-release version of your application"
+      explanation: "A package is not something specific to Git."
+    - content: "A preview version of your library."
       isCorrect: false
-      explanation: "Although you could package a pre-release version of your library, a package is not defined as a pre-release version of an application. A package is code that can be easily shared and reused across multiple applications."
-  - content: "Where can you host a package?"
+      explanation: "Packages relate to both pre-release and stable versions of your library."
+  - content: "Say you've built a package that you want to share publicly. What's the easiest way to do that?"
     choices:
-    - content: "On a hosting service."
+    - content: "A public hosting service, such as NuGet."
+      isCorrect: true
+      explanation: "Hosting services such as NuGet make it easy for you to upload packages as well as for others to discover and use them."
+    - content: "On a public network file share."
       isCorrect: false
-      explanation: "You can host your package on a hosting service, but also on a network file share and behind your firewall."
-    - content: "On a network file share."
-      isCorrect: false
-      explanation: "You can host your package on a network file share, but also on a hosting service and behind your firewall."
+      explanation: "Although this is possible, others may not be able to discover your package. It also adds responsibilty on your part to ensure the network share is secure."
     - content: "Behind your firewall."
       isCorrect: false
-      explanation: "You can host your package behind your firewall, but also on a hosting service and on a network share."
-    - content: "All of the above."
-      isCorrect: true
-      explanation: "You can host your package in any of these places."
+      explanation: "Others won't be able to access packages behind your firewall."
   - content: "What is Azure Artifacts?"
     choices:
-    - content: "Azure Artifacts is a set of binaries that are produced from an Azure Pipeline."
+    - content: "A place to upload your applications."
       isCorrect: false
-      explanation: "It is true that the binary that is created at the end of an Azure Pipeline is called an _artifact_, but Azure Artifacts is a repository in your Azure DevOps organization where you can manage the dependencies for your codebase."
-    - content: "Azure Artifacts is a repository in your Azure DevOps organization where you can manage the dependencies for your codebase."
+      explanation: "Azure Artifacts enables you to create and share packages, not complete applications."
+    - content: "A place to share package feeds for Maven, npm, NuGet, and Python libraries."
       isCorrect: true
-      explanation: "Azure Artifacts allows you to create your own package feeds in your Azure DevOps organization where you can manage the dependencies for your codebase."
-    - content: "Azure Artifacts is a repository in your Azure DevOps organization where you store old code that is no longer in use."
+      explanation: "You can configure your feeds to allow public access or access only from select users."
+    - content: "A place to archive old code that is no longer in use."
       isCorrect: false
-      explanation: "While you could have old packages that no one uses in your Azure Artifacts repository, Azure Artifacts is a repository in your Azure DevOps organization where you can manage the dependencies for your codebase."
+      explanation: "While you could maintain old versions of your package on Azure Artifacts, Azure Artifacts is not an archive system."

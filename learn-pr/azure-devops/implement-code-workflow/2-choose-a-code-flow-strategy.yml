@@ -16,33 +16,33 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What type of version control has a developer work from their own copy of the master repository?"
+  - content: "Which type of version control enables you to work from your own copy of the main repository?"
     choices:
     - content: "Centralized version control"
       isCorrect: false
-      explanation: "Centralized version control has each developer work from the same master repository. Files are checked out as needed and checked in with changes."
+      explanation: "With centralized version control, everyone works from the same main repository."
     - content: "Team Foundation Version Control"
       isCorrect: false
-      explanation: "Team Foundation Version Control (TFVC) is a tool from Microsoft that can be used for centralized version control."
+      explanation: "Team Foundation Version Control (TFVC) is a form of centralized version control. With centralized version control, everyone works from the same main repository."
     - content: "Distributed version control"
       isCorrect: true
-      explanation: "Distributed version control has each developer working from their own copy of the master repository. This ensures that no one is blocked from accessing the files they need."
-  - content: "A Git branch is used to ___________________."
+      explanation: "With distributed version control, everyone works from their own copy of the main repository. This ensures that no one is blocked from accessing the files they need."
+  - content: "A Git branch is used to:"
     choices:
-    - content: "copy only the part of the master repository that you want to work with."
+    - content: "Copy only the part of the repository that you want to work with."
       isCorrect: false
-      explanation: "A Git branch is a copy of the master branch that you can use to make whatever changes you need to make. You can choose to merge those changes into the master branch or discard them."
-    - content: "create a copy of the master branch that you can experiment on without affecting other developers' work."
+      explanation: "A Git branch points to a particular commit, or snapshot, of your entire repository."
+    - content: "Make changes and experiment with the codebase without affecting other developers' work."
       isCorrect: true
-      explanation: "A Git branch is a copy of the master branch that you can use to make whatever changes you need to make. You can choose to merge those changes into the master branch or discard them."
-    - content: "make an entirely new repository that is not connected to the master branch."
+      explanation: "A Git branch points to a particular commit, or snapshot, of your entire repository. You can then propose your changes for others to review or discard them and try something else."
+    - content: "Create an entirely new repository that's not connected to the main repository."
       isCorrect: false
-      explanation: "A Git branch is a copy of the master branch that you can use to make whatever changes you need to make. You can choose to merge those changes into the master branch or discard them."
-  - content: "True or False. A `git pull` command will merge your local changes up to the remote repository"
+      explanation: "You create a new repository from GitHub or run the `git init` command."
+  - content: "The `git pull` command:"
     choices:
-    - content: "True"
+    - content: "Uploads changes from your local repository to the remote repository."
       isCorrect: false
-      explanation: "A `git pull` command will download a branch from a remote repository."
-    - content: "False"
+      explanation: "Use `git push` to upload your local changes to the remote repository."
+    - content: "Downloads and merges the latest changes from the remote repository into your local repository."
       isCorrect: true
-      explanation: "A `git pull` command will download a branch from a remote repository."
+      explanation: "Run `git pull` when you want to synchronize with the latest changes from your team."

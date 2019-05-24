@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "Make every code construct private."
       isCorrect: false
-      explanation: "It is usually not practical to make all constructs private, and this will not protect against other types of vulnerabilities."
-    - content: "Never use a SQL query."
+      explanation: "This is not always possible, since many code constructs need to be accessible from other code. Plus, this won't protect against other types of vulnerabilities."
+    - content: "Never run SQL queries."
       isCorrect: false
-      explanation: "You can cut down on the chance of a SQL injection attack by not using SQL queries directly in your code, but this will not protect against other types of vulnerabilities."
-    - content: "Scan your code for known vulnerabilities regularly."
+      explanation: "Although you'll want to guard against exploits such as SQL injection attacks, this alone protect against other types of vulnerabilities."
+    - content: "Scan your code regularly for known vulnerabilities."
       isCorrect: true
-      explanation: "It is good practice to _shift-left_ and scan your code regularly for known vulnerabilities."
+      explanation: "By shifting left, you can identify potential vulnerabilities early in the process."
   - content: "What is the OWASP Top Ten?"
     choices:
     - content: "The top critical security risks to web applications."
       isCorrect: true
       explanation: "The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts."
-    - content: "The top critical security risks to Ruby applications."
+    - content: "The top critical security risks for Ruby applications."
       isCorrect: false
-      explanation: "Not specifically Ruby applications. The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts."
+      explanation: "The OWASP Top Ten isn't limited to Ruby applications."
     - content: "The top critical security risks to all types of applications."
       isCorrect: false
-      explanation: "Not all types of applications. The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts."
-  - content: "What is a CVE?"
+      explanation: "The OWASP Top Ten focuses on critical security risks specifically to web applications."
+  - content: "Which of these is an example of a CVE?"
     choices:
-    - content: "A specific software instance that exposes a security weakness."
+    - content: "Buffer overruns in a specific piece of web server software."
       isCorrect: true
-      explanation: "While the CWE lists a vulnerability, a CVE shows us where it might show up in our code."
-    - content: "A list of all security weaknesses for web applications."
+      explanation: "The CVE focuses on specific instances in software that's generally available."
+    - content: "Access of an uninitialized pointer."
       isCorrect: false
-      explanation: "A CVE can show up in any code you are writing, not just web applications."
-    - content: "A _Critical Value Exploit_."
+      explanation: "You would likely find this in the CWE, which defines security vulnerabilities in the general sense."
+    - content: "A severity score of 9.0."
       isCorrect: false
-      explanation: "There is no _Critical Value Exploit_. I made that up. The CWE lists a vulnerability, a CVE shows us where it might show up in our code."
+      explanation: "This is likely an example of a CVSS score, which gives you a sense of how severe a vulnerability is."
