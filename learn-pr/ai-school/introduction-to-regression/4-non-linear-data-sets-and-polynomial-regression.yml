@@ -5,7 +5,7 @@ metadata:
   title: Non-linear Data Sets and Polynomial Regression
   description: Here we look at non-linear data sets and a model that can predict them accurately - polynomial regression.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

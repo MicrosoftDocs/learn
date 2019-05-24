@@ -4,11 +4,11 @@ metadata:
   title: Advanced Classification Models
   description: Here we look more into classification models using one of the most elegant machine learning algorithms - support vector machines.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlanmsft
+  #ms.learn-contact: markjulmar
 title: Advanced Classification Models
 summary: Here we look more into classification models using one of the most elegant machine learning algorithms - support vector machines.
 abstract: | 

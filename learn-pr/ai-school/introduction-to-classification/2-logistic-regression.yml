@@ -5,7 +5,7 @@ metadata:
   title: Logistic Regression
   description: Here we use Azure Notebooks to introduce a simple but powerful classification algorithm - logistic regression. 
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

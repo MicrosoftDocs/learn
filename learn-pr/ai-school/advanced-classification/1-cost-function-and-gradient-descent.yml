@@ -5,7 +5,7 @@ metadata:
   title: Cost Function and Gradient Descent
   description: Here we look at the two main methods that improve our models behind the scenes - cost function and gradient descent.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

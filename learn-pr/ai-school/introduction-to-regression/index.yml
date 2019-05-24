@@ -4,11 +4,11 @@ metadata:
   title: Introduction to Regression
   description: This is an introduction to regression - predicting numbers using an AI model - Linear Regression.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlanmsft
+  #ms.learn-contact: markjulmar
 title: Introduction to Regression
 summary: This is an introduction to regression - predicting numbers using an AI model - Linear Regression.
 abstract: | 

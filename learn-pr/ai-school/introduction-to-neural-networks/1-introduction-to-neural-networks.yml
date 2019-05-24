@@ -5,7 +5,7 @@ metadata:
   title: Introduction to Neural Networks
   description: Here we introduce neural networks and look at what they are made up of - nodes.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

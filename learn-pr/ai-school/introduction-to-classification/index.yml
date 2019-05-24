@@ -4,11 +4,11 @@ metadata:
   title: Introduction to Classification
   description: Here we introduce you the other main type of AI model - classification models.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlanmsft
+  #ms.learn-contact: markjulmar
 title: Introduction to Classification 
 summary: Here we introduce you the other main type of AI model - classification models.
 abstract: | 

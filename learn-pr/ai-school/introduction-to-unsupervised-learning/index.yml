@@ -4,11 +4,11 @@ metadata:
   title: Unsupervised Learning
   description: Here we cover modelling data without labels - unsupervised learning.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlanmsft
+  #ms.learn-contact: markjulmar
 title: Unsupervised Learning
 summary: Here we cover modelling data without labels - unsupervised learning.
 abstract: | 

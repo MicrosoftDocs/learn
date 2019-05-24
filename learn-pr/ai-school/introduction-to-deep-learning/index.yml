@@ -4,11 +4,11 @@ metadata:
   title: Deep Learning
   description: A high level overview of deep learning and the types of solutions you can use.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlanmsft
+  #ms.learn-contact: markjulmar
 title: Deep Learning
 summary: A high level overview of deep learning and the types of solutions you can use.
 abstract: | 

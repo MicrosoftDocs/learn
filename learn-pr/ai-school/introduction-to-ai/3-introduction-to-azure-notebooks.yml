@@ -5,7 +5,7 @@ metadata:
   title: Introduction to Azure Notebooks
   description: A quick walkthrough of how to set up your Azure Notebooks library.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -5,7 +5,7 @@ metadata:
   title: Types of Gradient Descent
   description: Here we go over some variations of gradient descent that we can use with neural networks to improve efficiency.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

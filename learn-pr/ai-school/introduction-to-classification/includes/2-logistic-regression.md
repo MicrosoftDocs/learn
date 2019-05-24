@@ -10,7 +10,6 @@ Logistic regression can plot a curve that can help us predict the likelihood tha
 
 Logistic regression is a nice, easy introduction to classification algorithms. Similar to the variations of linear regression we have covered, variations of logistic regression can model some quite complicated data and even predict multiple categories.
 
-
 ## Programming exercise
 
 > Next up we have a programming exercise to do - we'll use logistic regression to predict which team will win a football (soccer) match.  

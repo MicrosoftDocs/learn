@@ -5,7 +5,7 @@ metadata:
   title: Introduction to RNNs
   description: Here we take a quick look at the standard tools used for custom deep learning.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

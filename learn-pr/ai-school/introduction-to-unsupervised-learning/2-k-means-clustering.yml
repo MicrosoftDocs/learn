@@ -5,7 +5,7 @@ metadata:
   title: k-means clustering
   description: Here we cover the most popular type of unsupervised learning - k-means clustering.
   ms.date: 04/26/2019
-  author: barlanmsft
+  author: markjulmar
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
