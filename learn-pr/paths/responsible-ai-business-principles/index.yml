@@ -20,6 +20,8 @@ roles:
 - business-user
 products:
 - azure
+- dynamics
+- m365
 modules:
 - learn-wwl.responsible-ai-guiding-principles
 trophy:

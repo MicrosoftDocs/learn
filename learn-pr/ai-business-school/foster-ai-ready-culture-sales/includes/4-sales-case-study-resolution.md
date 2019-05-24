@@ -6,6 +6,8 @@ We implemented an AI-based guided selling application, the Daily Recommender, wh
 
 Daily Recommender harnesses our data to predict the likelihood for a customer to buy products, consume services, and churn. Recommendations based on the AI predictions are then curated and presented to sellers in a contextually relevant manner, connected to our sales plays, processes, and strategies. Sellers can take action on recommendations within the app (actions include accept and make a call, snooze, and delete)—each action feeds into a supervised learning process that enables the AI to improve over time. Daily Recommender helps sellers become more targeted, increasing the conversion rate. It also reduces seller preparation and analysis time and facilitates consistency across the salesforce by providing seller-facing call preparation content and readymade customer-facing content, including case studies and email templates.
 
+![Daily Recommender program preview](../media/daily-recommender-sales.png)
+
 To realize the full benefits of AI, we needed to ensure that the Daily Recommender would be adopted by our full salesforce, a diverse group of sellers who were reluctant to depart from their existing sales tools and methods. With this in mind, we executed an enterprise-grade enablement strategy that focused on sustained behavioral change rather than short-term training.
 
 This included:
@@ -17,15 +19,17 @@ This included:
 
 There’s a lot that goes into transformation with AI. Developing effective AI that could accurately predict customer behavior and offer useful recommendations was highly complex. But that was just the start. Our transformation was as much dependent on strategy, people, processes, and IT, as it was dependent on AI.
 
-![Daily Recommender program preview](../media/daily-recommender-sales.png)
-
 ## Results
 
-![AI-based Guided Selling Application](../media/2-4-3-a-sales-case-study-resolution.jpg)
-
+:::row:::
+:::column span="2":::
 The results have been impressive: sellers have reviewed over 40,000 recommendations and we’ve seen a 4x improvement in recommendation success, raising the recommendation-to-opportunity rate to 40%. This means that for every five recommendations a seller acts on, two will become serious opportunities for a sale. This is significantly higher than the rate we saw with historical business rule–based targeting recommendations, which had a yield of about one in ten. In addition, the Daily Recommender has accelerated the sales cycle. Because sellers have more relevant discussions with the customers from day one, discovery efforts are accelerated. And finally, sellers are spending less time on call preparation. According to an account executive for Microsoft Latin America, “AI has helped me organize my daily calls and raise their productivity by 60%.”
-
-!["AI has helped me organize my daily calls and raise their productivity by 60%"](../media/2-4-3-b-sales-case-study-resolution.jpg)
+:::column-end:::
+:::column span="2":::
+![AI-based Guided Selling Application - results of implementation. 4x improvement in recommendation success, 2 of 3 recommendations will become serious opportunities for a sale, 40,000 recommendations reviewed, 40% increase of recommendation-to-opportunity rate](../media/2.4.3.A.Sales-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
+!["AI has helped me organize my daily calls and raise their productivity by 60%" - account executive for Microsoft Latin America](../media/2-4-3-b-sales-case-study-resolution.jpg)
 
 ## Applying these lessons in your organization
 
