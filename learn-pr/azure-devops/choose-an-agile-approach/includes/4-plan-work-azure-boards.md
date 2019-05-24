@@ -27,19 +27,18 @@ Here you'll create a team for the project.
 
 1. Click **Project settings** in the bottom left-hand corner.
 1. From the **Project details** page, under **General**, select **Teams**.
-1. Click **New team**.
-1. From the **Create new team** window, in the **Team name** field, type **Web development**.
-1. In the **Description** field, type **The Tailspin web development team.**
-1. Click **Create team**.
+
+    You'll see that a default team based on the name of the project, **Space Game - web Team**, has been created. We'll use this team, but in practice you may want a few teams in one project.
+
+1. Click on **Space Game - web Team**.
+
+    You'll see that you are already a member of this team. Let's add more members to the team.
 
 ### Add team members
 
-Here you'll add members to the **Web development** team.
+Here you'll add members to the **Space Game - web Team** team.
 
-1. Click **Project Settings** if you're not on that page.
-1. Under **General**, click **Security**.
-1. Click **Members**, in the right-hand column. You see your own name listed.
-1. Click **+ Add**.
+1. Under **Members** click **+ Add**.
 1. Enter "andy@tailspin.com" and click **Save changes**. In a few moments, Andy's name appears.
 1. Do the same for "amita@tailspin.com", "mara@tailspin.com", and "tim@tailspin.com".
 
@@ -51,7 +50,7 @@ Here you'll add members to the **Web development** team.
 Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to your board to practice the process.
 
 1. In the left hand column, point to **Boards** and select **Boards** from the menu that appears.
-1. Click **Web development boards**. A blank board appears.
+1. Click ***Space Game - web Team boards**. A blank board appears.
 
     ![Azure Boards showing an initially empty board.](../media/3-blank-board.png)
 
@@ -93,11 +92,11 @@ Everyone looks nervous.
 When you create an Azure Boards project, you get an initial sprint called **Sprint 1**. All you need to do is assign dates to the sprint and add tasks. Here's how to follow along with the team.
 
 1. In the left-hand column, click **Sprints**.
-1. Click **Set dates** from the **Sprint Dates** column.
+1. Click **Set dates** from the upper right.
 1. Leave the name as **Sprint 1**.
 1. In the **Start** date field, click the calendar and pick today's dates.
 1. In the **End** date field, click the calendar and pick a date two weeks from today.
-1. Click **Save**.
+1. Click **Save and Close**.
 
 ### Assign tasks and set the iteration
 
