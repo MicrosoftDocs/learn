@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.manage-build-infrastructure.5-build-application
+uid: learn.azdo.host-build-agent.5-build-application
 title: Exercise - Build the application using your agent
 metadata:
   title: Exercise - Build the application using your agent

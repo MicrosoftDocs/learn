@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azdo.manage-build-infrastructure
+uid: learn.azdo.host-build-agent
 metadata:
   title: Host your own build agent in Azure Pipelines - Learn
   description: Use your own build agent when Microsoft-hosted agents don't meet your needs.
@@ -36,11 +36,11 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.azdo.manage-build-infrastructure.1-introduction
-- learn.azdo.manage-build-infrastructure.2-choose-a-build-agent
-- learn.azdo.manage-build-infrastructure.3-set-up-environment
-- learn.azdo.manage-build-infrastructure.4-create-build-agent
-- learn.azdo.manage-build-infrastructure.5-build-application
-- learn.azdo.manage-build-infrastructure.6-summary
+- learn.azdo.host-build-agent.1-introduction
+- learn.azdo.host-build-agent.2-choose-a-build-agent
+- learn.azdo.host-build-agent.3-set-up-environment
+- learn.azdo.host-build-agent.4-create-build-agent
+- learn.azdo.host-build-agent.5-build-application
+- learn.azdo.host-build-agent.6-summary
 badge:
-  uid: learn.azdo.manage-build-infrastructure.badge
+  uid: learn.azdo.host-build-agent.badge

@@ -22,7 +22,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
 1. As an optional step, open **azure-pipelines.yml** from Visual Studio Code and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
+    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
 
 ## Modify the build configuration
 
@@ -73,7 +73,7 @@ Here you'll see the build run in the pipeline using your build agent.
 
 For future reference, you can keep the build pool configuration in your Azure DevOps account. But keep in mind that the VM we provide will no longer be available to you after your sandbox session ends.
 
-In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines would check for an available agent the next time a build is queued using the **MyAgentPool** pool.
+In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines will check for an available agent the next time a build is queued using the **MyAgentPool** pool.
 
 ![](../media/5-agent-pools-offline-agent.png)
 
