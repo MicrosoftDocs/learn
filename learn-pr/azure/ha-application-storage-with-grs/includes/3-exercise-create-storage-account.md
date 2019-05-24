@@ -39,7 +39,7 @@ In this step you'll specify the replication policy on the storage account as RA-
 
    ```azurecli
    az storage account show \
-     --name $STORAGEACC \
+     --name $STORAGEACCT \
      --query "[statusOfPrimary, statusOfSecondary]"
    ```
 
