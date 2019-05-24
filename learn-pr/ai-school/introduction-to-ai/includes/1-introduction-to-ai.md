@@ -2,16 +2,16 @@
 
 This course is a high-level overview of artificial intelligence (AI) for people with little or no knowledge of computer science and statistics. In it we’ll cover the essential concepts of AI and show you how to apply custom AI solutions with free, easy to use tools, all in your browser.
 
-The course will show you some some simple but powerful ways that data scientists make predictions about objects, people, and the future. Later, we’ll cover exciting, complex topics you may have heard of, such as neural networks, computer vision, deep learning, and unsupervised learning. 
+The course will show you some some simple but powerful ways that data scientists make predictions about objects, people, and the future. Later, we’ll cover exciting, complex topics you may have heard of, such as neural networks, computer vision, deep learning, and unsupervised learning.
 
-In this lesson we’ll introduce you to some key concepts and get you trying out some AI tools. 
+In this lesson we’ll introduce you to some key concepts and get you trying out some AI tools.
   
-
-## What is artificial intelligence?
+## What is artificial intelligence
 
 AI is the study of how to make computers perform tasks that humans consider difficult through the creation of intelligent agents. The study of AI began in the 1950s, and it has improved dramatically over time with better statistical methods and greater computing power. 
 
 AI is now used for all sorts of things, such as intelligent opponents in video games, accurate medical diagnosis, speech commands on mobile phones, and keeping email inboxes clear of spam. People who use AI often want it to perform repetitive tasks that take a lot of time for a person to do, or to solve problems which seem almost impossible to solve with a calculator. For example, AI can be used to:
+
 * intelligently guess the products that someone may want to buy
 * count cells in a microscope picture
 * find the optimum number of taxis that a city needs
@@ -20,15 +20,13 @@ AI is now used for all sorts of things, such as intelligent opponents in video g
 
 Although this sounds very difficult, there are free tools available online which make it easy to get started.
 
-
-### What is machine learning?
+### What is machine learning
 
 ![1.1 WhatIsAI fixed](../media/1-1-a.png)
 
-__Machine learning__ is a subset of AI. When normal computer software needs to be improved, people edit it. Machine learning, on the other hand, is software that rewrites itself to get better at a specific task. For example, some online stores use machine learning to review your previous spending habits to give you personalised recommendations. There are lots of kinds of machine learning, including neural networks and deep learning.
+__Machine learning__ is a subset of AI. When normal computer software needs to be improved, people edit it. Machine learning, on the other hand, is software that rewrites itself to get better at a specific task. For example, some online stores use machine learning to review your previous spending habits to give you personalized recommendations. There are lots of kinds of machine learning, including neural networks and deep learning.
 
-
-### What are neural networks? What is deep learning?
+### What are neural networks and deep learning
 
 ![1.1 NN Diagram](../media/1-1-b.gif)
 
