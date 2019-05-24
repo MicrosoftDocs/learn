@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-approach-to-ai.pre-trained-cognitive-services
+title: Examine the Microsoft approach to pre-trained cognitive services
+metadata:
+  title: Examine the Microsoft approach to pre-trained cognitive services
+  description: In this short talk, business decision-makers will hear a high level understanding of what pre-trained AI services are, how Microsoft is implementing these technologies and more importantly on how they can benefit your business.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-pre-trained-cognitive-services.md)] 
