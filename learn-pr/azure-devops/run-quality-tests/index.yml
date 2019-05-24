@@ -18,12 +18,12 @@ abstract: |
   - Add a dashboard widget to visualize test runs over time
   - Perform code coverage testing to see how much of your code is covered by unit tests
   - See a test fail in the pipeline and then fix the failure
-prerequisites:
-- An Azure DevOps account
-- Visual Studio Code
-- .NET Core 2.1
-- Git
-- A GitHub account
+prerequisites: |
+  - An Azure DevOps account
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-quality-tests-when-your-application-builds.svg
 levels:
 - beginner

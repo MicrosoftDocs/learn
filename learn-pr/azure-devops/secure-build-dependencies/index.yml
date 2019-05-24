@@ -16,12 +16,12 @@ abstract: |
   - Describe what tools you can use to inspect open source software packages for security and license ratings
   - Access package and license ratings for open source components using WhiteSource Bolt
   - Analyze the results of the scan so you can take the appropriate action
-prerequisites:
-- An Azure DevOps account
-- Visual Studio Code
-- .NET Core 2.1
-- Git
-- A GitHub account
+prerequisites: |
+  - An Azure DevOps account
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-security-and-compliance-in-your-build-pipeline.svg
 levels:
 - beginner

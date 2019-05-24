@@ -17,12 +17,12 @@ abstract: |
   - Map manual build steps to automated build tasks
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
-prerequisites:
-- An Azure DevOps account
-- Visual Studio Code
-- .NET Core 2.1
-- Git
-- A GitHub account
+prerequisites: |
+  - An Azure DevOps account
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
 levels:
 - beginner

@@ -17,12 +17,12 @@ abstract: |
   - Describe the options you have when managing your own build agents
   - Bring up and configure your own agent to work with Azure Pipelines
   - Connect your agent to a pipeline and build your application
-prerequisites:
-- An Azure DevOps account
-- Visual Studio Code
-- .NET Core 2.1
-- Git
-- A GitHub account
+prerequisites: |
+  - An Azure DevOps account
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
 iconUrl: /learn/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg
 levels:
 - beginner
