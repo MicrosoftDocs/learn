@@ -19,7 +19,7 @@ To configure your VM, you have several choices. For a Linux VM, you can connect 
 Configuring a system interactively is a good way to get started because it helps you understand the process and what's needed. To simplify the process, here you'll connect to your Ubuntu VM over SSH and run shell scripts to set up your build agent.
 
 > [!NOTE]
-> If you're not familiar with connecting to or configuring Linux systems, just follow along. You can apply the concepts to Windows build agents.
+> If you're not familiar with connecting to or configuring Linux systems, just follow along. You can apply the same concepts to Windows build agents.
 
 ## Create a Linux virtual machine
 
@@ -67,7 +67,7 @@ Recall that an agent pool organizes build agents. Here you'll create the agent p
 
 In order for your build agent to register itself with Azure DevOps, you need a way for it to authenticate itself.
 
-To do that, here you'll create a personal access token. A personal access token, or PAT, is an alternate to passwords that you can use to authenticate with services such as Azure DevOps.
+To do that, here you'll create a personal access token. A personal access token, or PAT, is an alternative to passwords that you can use to authenticate with services such as Azure DevOps.
 
 > [!IMPORTANT]
 > Like a password, be sure to keep your access token in a safe place. In this module, you'll store your access token as an environment variable so that it doesn't appear in your shell script.
@@ -166,7 +166,7 @@ Let's start by updating Ubuntu's package manager, named **apt**. This fetches th
 
     You see that the script installs Node.js, npm, gulp, and .NET Core.
 
-    The `DOTNET_VERSION` environment variable enables you to specify the .NET version to install. If you don't set this variable, the script installs the version your existing build configuration uses. For learning purposes, you won't set this variable and allow the script to use the default version.
+    The `DOTNET_VERSION` environment variable enables you to specify the .NET version to install. If you don't set this variable, the script installs the version your existing build configuration uses. For learning purposes, you won't set this variable and will allow the script to use the default version.
 
 1. Make the script executable and then run the script.
 
@@ -175,7 +175,7 @@ Let's start by updating Ubuntu's package manager, named **apt**. This fetches th
     sudo ./build-tools.sh
     ```
 
-    In practice, you might now run commands to verify that each software component was successfully installed.
+    In practice, you could now run commands to verify that each software component was successfully installed.
 
 ## Install agent software on your VM
 
@@ -231,7 +231,7 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
     * `AZP_AGENT_NAME`
     * `AZP_POOL`
 
-    For now, we recommend that you leave the other variables unset, but you can set them if you'd like.
+    For now, we recommend that you leave the other variables unset.
 
 1. Set the `AZP_AGENT_NAME` environment variable to specify your agent's name. We recommend **MyLinuxAgent**.
 
@@ -241,7 +241,7 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
 
 1. Set the `AZP_URL` environment variable to specify the URL to your Azure DevOps account.
 
-    Replace **username** with yours. You can get the name from the your browser tab that's showing Azure DevOps.
+    Replace **username** with yours. You can get the name from the browser tab that's showing Azure DevOps.
 
     ```bash
     export AZP_URL=https://dev.azure.com/username
@@ -270,7 +270,7 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
 
     `sudo` enables the script to run as the root user. The `-E` argument preserves the current environment variables, including the ones you set, so that they are available to the script.
 
-    During the process, you see the agent connect to Azure DevOps, add the agent to the pool, and test the agent connection.
+    As the script runs, you'll see the agent connect to Azure DevOps, see it added to the agent pool, and see the agent connection tested.
 
 ## Verify the agent is running
 

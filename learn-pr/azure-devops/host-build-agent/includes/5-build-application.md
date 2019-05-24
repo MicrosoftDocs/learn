@@ -73,7 +73,7 @@ Here you'll see the build run in the pipeline using your build agent.
 
 For future reference, you can keep the build pool configuration in your Azure DevOps account. But keep in mind that the VM we provide will no longer be available to you after your sandbox session ends.
 
-In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines would check for an available agent the next time a build is queued using the **MyAgentPool** pool.
+In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines will check for an available agent the next time a build is queued using the **MyAgentPool** pool.
 
 ![](../media/5-agent-pools-offline-agent.png)
 
