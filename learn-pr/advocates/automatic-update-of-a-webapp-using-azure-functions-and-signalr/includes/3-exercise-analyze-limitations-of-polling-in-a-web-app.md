@@ -136,9 +136,9 @@ For the app to run, you need to add the connection settings for your cloud servi
 
 When you're done, stop the running processes.
 
-- For the web server, press **CTRL/CMD + C** in the terminal window running the web server.
+- To stop the web server, click the **kill process** (trash can icon) on the terminal window that is running the web server.
 
-- For the functions app, click the **Stop** button or press **Shift + F5**.
+- To stop the functions app, click the **Stop** button or press **Shift + F5**.
 
 <!--
     REVIEW:
