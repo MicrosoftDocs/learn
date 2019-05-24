@@ -13,3 +13,39 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/2-implement-secure-process.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How can you make sure your code isn't exploitable?"
+    choices:
+    - content: "Make every code construct private."
+      isCorrect: false
+      explanation: "It is usually not practical to make all constructs private, and this will not protect against other types of vulnerabilities."
+    - content: "Never use a SQL query."
+      isCorrect: false
+      explanation: "You can cut down on the chance of a SQL injection attack by not using SQL queries directly in your code, but this will not protect against other types of vulnerabilities."
+    - content: "Scan your code for known vulnerabilities regularly."
+      isCorrect: true
+      explanation: "It is good practice to _shift-left_ and scan your code regularly for known vulnerabilities."
+  - content: "What is the OWASP Top Ten?"
+    choices:
+    - content: "The top critical security risks to web applications."
+      isCorrect: true
+      explanation: "The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts."
+    - content: "The top critical security risks to Ruby applications."
+      isCorrect: false
+      explanation: "Not specifically Ruby applications. The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts."
+    - content: "The top critical security risks to all types of applications."
+      isCorrect: false
+      explanation: "Not all types of applications. The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts."
+  - content: "What is a CVE?"
+    choices:
+    - content: "A specific software instance that exposes a security weakness."
+      isCorrect: true
+      explanation: "While the CWE lists a vulnerability, a CVE shows us where it might show up in our code."
+    - content: "A list of all security weaknesses for web applications."
+      isCorrect: false
+      explanation: "A CVE can show up in any code you are writing, not just web applications."
+    - content: "A _Critical Value Exploit_."
+      isCorrect: false
+      explanation: "There is no _Critical Value Exploit_. I made that up. The CWE lists a vulnerability, a CVE shows us where it might show up in our code."

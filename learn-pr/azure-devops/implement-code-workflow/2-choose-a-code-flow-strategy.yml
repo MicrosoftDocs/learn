@@ -13,3 +13,36 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-choose-a-code-flow-strategy.md)
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What type of version control has a developer work from their own copy of the master repository?"
+    choices:
+    - content: "Centralized version control"
+      isCorrect: false
+      explanation: "Centralized version control has each developer work from the same master repository. Files are checked out as needed and checked in with changes."
+    - content: "Team Foundation Version Control"
+      isCorrect: false
+      explanation: "Team Foundation Version Control (TFVC) is a tool from Microsoft that can be used for centralized version control."
+    - content: "Distributed version control"
+      isCorrect: true
+      explanation: "Distributed version control has each developer working from their own copy of the master repository. This ensures that no one is blocked from accessing the files they need."
+  - content: "A Git branch is used to ___________________."
+    choices:
+    - content: "copy only the part of the master repository that you want to work with."
+      isCorrect: false
+      explanation: "A Git branch is a copy of the master branch that you can use to make whatever changes you need to make. You can choose to merge those changes into the master branch or discard them."
+    - content: "create a copy of the master branch that you can experiment on without affecting other developers' work."
+      isCorrect: true
+      explanation: "A Git branch is a copy of the master branch that you can use to make whatever changes you need to make. You can choose to merge those changes into the master branch or discard them."
+    - content: "make an entirely new repository that is not connected to the master branch."
+      isCorrect: false
+      explanation: "A Git branch is a copy of the master branch that you can use to make whatever changes you need to make. You can choose to merge those changes into the master branch or discard them."
+  - content: "True or False. A `git pull` command will merge your local changes up to the remote repository"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "A `git pull` command will download a branch from a remote repository."
+    - content: "False"
+      isCorrect: true
+      explanation: "A `git pull` command will download a branch from a remote repository."

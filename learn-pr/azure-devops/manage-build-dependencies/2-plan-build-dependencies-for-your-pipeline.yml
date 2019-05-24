@@ -13,3 +13,42 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-build-dependencies-for-your-pipeline.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a package?"
+    choices:
+    - content: "Reusable code that other developers can use in their own projects."
+      isCorrect: true
+      explanation: "A package is code that can be easily shared and reused across multiple applications."
+    - content: "A GitHub construct for moving a repository."
+      isCorrect: false
+      explanation: "A package is not something specific to GitHub and cannot be used to move repositories. A package is code that can be easily shared and reused across multiple applications."
+    - content: "A pre-release version of your application"
+      isCorrect: false
+      explanation: "Although you could package a pre-release version of your library, a package is not defined as a pre-release version of an application. A package is code that can be easily shared and reused across multiple applications."
+  - content: "Where can you host a package?"
+    choices:
+    - content: "On a hosting service."
+      isCorrect: false
+      explanation: "You can host your package on a hosting service, but also on a network file share and behind your firewall."
+    - content: "On a network file share."
+      isCorrect: false
+      explanation: "You can host your package on a network file share, but also on a hosting service and behind your firewall."
+    - content: "Behind your firewall."
+      isCorrect: false
+      explanation: "You can host your package behind your firewall, but also on a hosting service and on a network share."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "You can host your package in any of these places."
+  - content: "What is Azure Artifacts?"
+    choices:
+    - content: "Azure Artifacts is a set of binaries that are produced from an Azure Pipeline."
+      isCorrect: false
+      explanation: "It is true that the binary that is created at the end of an Azure Pipeline is called an _artifact_, but Azure Artifacts is a repository in your Azure DevOps organization where you can manage the dependencies for your codebase."
+    - content: "Azure Artifacts is a repository in your Azure DevOps organization where you can manage the dependencies for your codebase."
+      isCorrect: true
+      explanation: "Azure Artifacts allows you to create your own package feeds in your Azure DevOps organization where you can manage the dependencies for your codebase."
+    - content: "Azure Artifacts is a repository in your Azure DevOps organization where you store old code that is no longer in use."
+      isCorrect: false
+      explanation: "While you could have old packages that no one uses in your Azure Artifacts repository, Azure Artifacts is a repository in your Azure DevOps organization where you can manage the dependencies for your codebase."

@@ -13,3 +13,36 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/2-choose-a-scanning-tool-for-dependencies.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How can you make sure your open source code isn't exploitable?"
+    choices:
+    - content: "Their README file will have a statement about vulnerabilities."
+      isCorrect: false
+      explanation: "It is not good practice to rely on the authors of an open source project to report vulnerabilities. You may not be aware of their use of other open source as well. It is good practice to _shift-left_ and scan your open source references regularly for known vulnerabilities."
+    - content: "Scan your open source references regularly for know vulnerabilities."
+      isCorrect: true
+      explanation: "It is good practice to _shift-left_ and scan your open source references regularly for known vulnerabilities."
+    - content: "Only use open source code from reputable authors."
+      isCorrect: false
+      explanation: "Even reputable authors can inadvertently open the code to exploitation. It is good practice to _shift-left_ and scan your open source references regularly for known vulnerabilities."
+  - content: "Why is knowing what open source licenses are being used in your project important?"
+    choices:
+    - content: "Some licenses have provisions that might not be acceptable to your company's code sharing policies."
+      isCorrect: true
+      explanation: "It is important the your legal advisor knows the licenses you are agreeing to. They may have parts that are not acceptable for th company."
+    - content: "So you can use them to create your own licenses."
+      isCorrect: false
+      explanation: "While you may want to create your own licenses, this is not the reason for knowing your open source license agreements."
+    - content: "It is not important because it is open source."
+      isCorrect: false
+      explanation: "It is always important to know what you are agreeing to."
+  - content: "True or False. Each programming language has their own tool for scanning open source projects for vulnerabilities."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Many of the tools we mentioned work with several programming languages."
+    - content: "False"
+      isCorrect: true
+      explanation: "Many of the tools we mention work with several programming languages."
