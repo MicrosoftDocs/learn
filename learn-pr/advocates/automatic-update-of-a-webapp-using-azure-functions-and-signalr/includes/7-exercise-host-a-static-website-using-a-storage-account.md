@@ -36,11 +36,11 @@ az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
 
 Now that you've made these changes, you need to sign out and back into the Azure extension.
 
-1. Press the **CTRL/CMD+Shift+P** to open the Visual Studio Code command palette.
+1. Press the **F1** to open the Visual Studio Code command palette.
 
 1. Search for and select **Azure: Sign Out**.
 
-1. Press the **CTRL/CMD+Shift+P** again.
+1. Press the **F1** again.
 
 1. Search for and select **Azure: Sign In** and sign in with the same account you used to sign into the Learn sandbox.
 
@@ -62,7 +62,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 ## Deploy the function app
 
-1. Press the **CTRL/CMD+Shift+P** to open the Visual Studio Code command palette.
+1. Press the **F1** to open the Visual Studio Code command palette.
 
 1. Search for and select the **Azure Functions: Deploy to Function App** command.
 
@@ -92,13 +92,13 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
     ![Upload local settings](../media/serverless-app-upload-local-settings.png)
 
-    If the message box doesn't appear or was dismissed, you can still upload your local settings. Opening the command palette via **CTRL/CMD+Shift+P** and select **Azure Functions: Upload local settings**. Choose to overwrite any existing settings, if prompted.
+    If the message box doesn't appear or was dismissed, you can still upload your local settings. Opening the command palette via **F1** and select **Azure Functions: Upload local settings**. Choose to overwrite any existing settings, if prompted.
 
 ## Configure static websites in Azure Storage
 
 Use the following steps to configure the Azure Storage account to host a static website.
 
-1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
+1. Open the Visual Studio Code command palette via **F1**.
 
 1. Search for and select the **Azure Storage: Configure static website** command.
 
@@ -110,7 +110,7 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 ## Deploy the web application to Azure Storage
 
-1. Open the Visual Studio Code command palette via **CTRL/CMD+Shift+P**.
+1. Open the Visual Studio Code command palette via **F1**.
 
 1. Search for and select the **Azure Storage: Deploy to Static Website** command.
 

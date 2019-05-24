@@ -45,7 +45,7 @@ For the app to run, you need to add the SignalR connection string saved to your 
 
 The web client uses the SignalR client SDK to establish a connection to the server. The SDK retrieves the connection via a function named **negotiate** (by convention) to connect to the service.
 
-1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
+1. Open the Visual Studio Code command palette by pressing **F1**.
 
 1. Search for and select the **Azure Functions: Create Function** command.
 
@@ -89,7 +89,7 @@ Now that the function to return the SignalR connection info is implemented, you 
 
 First, you need to create a new function that listens for changes in the database. This function uses the built-in Azure Cosmos DB bindings.
 
-1. Open the Visual Studio Code command palette by pressing **CTRL/CMD+Shift+P**.
+1. Open the Visual Studio Code command palette by pressing **F1**.
 1. Search for and select the **Azure Functions: Create Function** command.
 1. When prompted, provide the following information.
 
