@@ -18,7 +18,9 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/).
 
-2. Open a Git command prompt window, and run the following command to download the CircuitBreaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
+1. Download the source code from the Azure Samples repository. You can download this directly from this URL: https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-ha-ra-grs/archive/master.zip
+
+    Alternatively, you can use Git to download the sample. Open a Git command prompt window, and run the following command to download the CircuitBreaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
 
     ```Command Prompt
     git clone https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-ha-ra-grs <location>
