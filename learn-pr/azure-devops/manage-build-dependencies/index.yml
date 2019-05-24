@@ -13,7 +13,7 @@ title: Manage build dependencies in Azure Pipelines
 summary: Manage your application and the packages it uses across build pipelines.
 abstract: |
   In this module, you will:
-  - Describe ways to create and share packages that can be used by multiple applications
+  - Learn ways to create and share packages that can be used by multiple applications
   - Create a build pipeline for your package and publish your package to Azure Artifacts
   - Connect an application to your package and build the application in Azure Pipelines
   - Push up a change to your package and update your application to use it

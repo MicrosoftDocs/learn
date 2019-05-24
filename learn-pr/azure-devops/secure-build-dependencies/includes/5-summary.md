@@ -1,4 +1,4 @@
-The team has taken another step toward ensuring the quality of their code. THey've added a tool to the pipeline that automatically scans open-source software for vulnerabilities and identifies how it's licensed. Whenever they add a new feature or library, they can easily check to make sure that any open-source component meets all security and legal requirements.
+The team has taken another step toward ensuring the quality of their code. They've added a tool to the pipeline that automatically scans open-source software for vulnerabilities and identifies how it's licensed. Whenever they add a new feature or library, they can easily check to make sure that any open-source component meets all security and legal requirements.
 
 We all strive to deliver quality, secure products to our users. We want to be sure that all of our code, including the open source libraries we use, meet security standards. We all want to avoid any legal problems that might result if we don't comply with the conditions set out in the license.
 

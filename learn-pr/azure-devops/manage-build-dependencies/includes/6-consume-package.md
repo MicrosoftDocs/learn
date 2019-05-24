@@ -29,26 +29,26 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
 ## Reference the Models package
 
-1. Open the **Tailspin.SpaceGame.Web.csproj** file, add the following `PackageReference` and save the file.
+1. Open the **Tailspin.SpaceGame.Web.csproj** file, add the following `PackageReference`, and save the file.
 
     ```xml
-        <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0" />
+    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0" />
     ```
 
-    This will reference your Tailspin.SpaceGame.Web.Models package that you created in Azure Artifacts. Notice the version number.
+    This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number.
 
 > [!NOTE]
-> When you save the file, Visual Studio Code may ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies. Accessing your Azure Artifacts feed locally requires you to add a package source to Visual Studio and to set up authentication. We'll skip that here for brevity.
+> When you save the file, Visual Studio Code may ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies. Accessing your Azure Artifacts feed locally requires you to add a package source to set up authentication. We'll skip that here for brevity.
 
 ## Add a pipeline file for the modified build
 
-1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as `~/mslearn-tailspin-spacegame-web`.
+1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as **~/mslearn-tailspin-spacegame-web**.
 
-1. Copy the following yaml into that file:
+1. Copy the following YAML code into that file:
 
     [!code-yml[](code/6-azure-pipelines-yaml.yml?highlight=36-42)]
 
-      The highlighted code shows where the pipeline will restore dependencies and look in your Azure Artifacts feed for the dependencies that might be there.
+    The highlighted code shows where the pipeline will restore dependencies and look in your Azure Artifacts feed for the dependencies that might be there.
 
 1. Stage, commit, and push your work.
 
