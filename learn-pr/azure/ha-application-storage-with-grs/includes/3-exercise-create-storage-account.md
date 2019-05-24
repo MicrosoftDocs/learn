@@ -43,6 +43,18 @@ In this step you'll specify the replication policy on the storage account as RA-
      --query "[statusOfPrimary, statusOfSecondary]"
    ```
 
+## Retrieve the connection string for the storage account
+
+1. Switch to the Cloud Shell window in the browser, and run the following command to obtain the connection string for the storage account you created in the previous exercise:
+
+    ```azurecli
+    az storage account show-connection-string \
+        --name $STORAGEACCT \
+        --resource-group <rgn>[Sandbox resource group]</rgn>
+    ```
+
+1. Copy the output connection string and save it for reference later on in this module.
+
 ## Azure storage account failover
 
 In this step you will use the Cloud Shell to view the replication status of your storage account.  
