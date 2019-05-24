@@ -1,4 +1,12 @@
-Here you'll get the team's new code for the **Tailspin.SpaceGame.Web.Models** project that is now separate from the **Tailspin.SpaceGame.Web** project. You'll create an Azure pipeline for the Models project and see the new Azure Artifact with a version number of `1.0.0` in your feed.
+Here you'll get the team's new code for the **Tailspin.SpaceGame.Web.Models** project that is now separate from the **Tailspin.SpaceGame.Web** project. You'll create an Azure Pipelines project for the Models project and see the artifact in Azure Artifacts with a version number of 1.0.0 in your feed.
+
+## What changes were made to the project?
+
+Recall that the _Space Game_ web site is an ASP.NET Core application. It uses the Model-View-Controller, or MVC, pattern to separate data from how that data is displayed in the user interface. Andy and Mara want to move the model classes to a separate library so that multiple projects can use those classes.
+
+To do that, they create a new C# project, called **Tailspin.SpaceGame.Web.Models**, that contains only the model classes. At the same time, they remove the model classes from their existing project, **Tailspin.SpaceGame.Web**. They replace the model classes in their existing project with a reference to the **Tailspin.SpaceGame.Web.Models** project.
+
+To build these projects, Andy and Mara use two pipelines, one for each project. You already have the first project and its associated Azure Pipelines configuration. Here you'll fork the second project on GitHub and create an Azure Pipelines configuration to build it and publish the resulting package to Azure Artifacts.
 
 ## Prepare Visual Studio Code
 
@@ -7,17 +15,13 @@ Here you'll set up Visual Studio Code so you can work with source files.
 1. From Visual Studio Code, open the integrated terminal.
 1. Navigate to a directory to work from, such as your home directory (`~`). We suggest using the parent directory from where your **mslearn-tailspin-spacegame-web** project is located.
 
-    ```bash
-    cd ~
-    ```
-
 ## Get the source code
 
-Here you'll get the source code from GitHub and set up Visual Studio Code so you can work with the files.
+Here you'll get the source code for the second project from GitHub and set up Visual Studio Code so you can work with the files.
 
 ### Create a fork
 
-The first step is to fork the **mslearn-tailspin-spacegame-web-models** project so you can work with and modify the source files. Recall that Mara put the **Models** directory in a new project and removed it from the web project.
+The first step is to fork the **mslearn-tailspin-spacegame-web-models** repository so you can work with and modify the source files. Recall that Mara put the **Models** directory in a new project and removed it from the web project.
 
 To fork the **mslearn-tailspin-spacegame-web-models** project into your GitHub account:
 
@@ -57,7 +61,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
     You see the steps where the package is built, the version is set, and the package is added to Azure Artifacts.
 
-    This code builds the project:
+    This `DotNetCoreCLI@2` task builds the project:
 
     ``` yml
     - task: DotNetCoreCLI@2
@@ -68,7 +72,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
         projects: '**/*.csproj'
     ```
 
-    This code packages the project with a version of `1.0.0`:
+    This `DotNetCoreCLI@2` task packages the project with a version of 1.0.0:
 
     ``` yml
     - task: DotNetCoreCLI@2
@@ -83,7 +87,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
         patchVersion: '0'
     ```
 
-    This code pushes the package to your **Tailspin.SpaceGame.Web.Models** Azure Artifacts feed:
+    This `NuGetCommand@2` task pushes the package to your **Tailspin.SpaceGame.Web.Models** Azure Artifacts feed:
 
     ```yml
     - task: NuGetCommand@2
@@ -99,7 +103,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You learned how to set up Azure Pipelines in an earlier module. We won't go into as much detail here since you've done this before, but if you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline-azure-pipelines?azure-portal=true).
 
-Here you'll set up a second pipeline to build the package and put it in Azure Artifacts.
+Here you'll set up a second pipeline to build the package and upload that package to Azure Artifacts.
 
 1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
 1. Select **Pipelines**, either from the project page or from the menu on the left.

@@ -19,4 +19,4 @@ Go to [devopsassessment.net](https://devopsassessment.net?azure-portal=true) to 
 We'll go deeper into Azure DevOps in future modules. You can also check out these resources.
 
 * [azure.com/devops](https://azure.com/devops?azure-portal=true)
-* [DevOps Resource Center](https://docs.microsoft.com/en-us/azure/devops/learn?azure-portal=true)
+* [DevOps Resource Center](https://docs.microsoft.com/azure/devops/learn?azure-portal=true)

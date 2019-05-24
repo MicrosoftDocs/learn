@@ -46,7 +46,7 @@ When multiple applications can benefit from the same code, the advantages far ou
 
 Each programming language or framework provides its own way to build packages. Popular package systems provide documentation on how the process works.
 
-Here are a few popular package systems you may already be familiar with.
+Here are just a few popular package systems you may already be familiar with.
 
 * **NuGet**: packages .NET libraries
 * **Maven**: packages Java libraries
@@ -96,11 +96,11 @@ The **-Suffix** part is optional and identifies the package as a pre-release ver
 
 When you reference a package, you do so by version number.
 
-Here is an example of installing a package using a specific version number.
+Here is an example of installing a package using PowerShell using a specific version number.
 
-    Install-Package -Name "Json.NET" -Version 12.0.2
-
-This will add a reference to the Json.NET package version 12.0.2. Your code project will use that version of the package.
+```powershell
+Install-Package -Name "Json.NET" -Version 12.0.2
+```
 
 ## What happens when the package changes?
 
@@ -123,11 +123,11 @@ As each maintainer releases a new package version, you can evaluate what's chang
 
 Here's an example of the package dependencies from our Tailspin-SpaceGame-Web project file. In this project, we depend on packages like Newtonsoft.Json, and you can see that we specify version 12.0.1 of that package.
 
-```
+```xml
 <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  <PackageReference Include="Microsoft.AspNetCore.App" />
+  <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
 </ItemGroup>
 ```
 
@@ -151,15 +151,21 @@ Andy moves to the whiteboard.
 
 ![Whiteboard showing the steps to create and use a package](../media/2-azure-artifacts-whiteboard.png)
 
-### Creation
+### Creating the package
 
-First, we'll need to create a project in Azure Artifacts. ![Callout 1](../../shared/media-draft/callout-01.png) We can do this from Azure DevOps. Then, we'll create a pipeline in Azure Pipelines that connects to the GitHub repo for the package code, builds it, packages it, and pushes the package to Azure Artifacts. ![Callout 2](../../shared/media-draft/callout-02.png) We'll need to update the application that consumes this package to point to the Azure Artifacts feed that we created. ![Callout 3](../../shared/media-draft/callout-03.png) After that, we update the pipeline that creates our application to use our Azure Artifacts feed to pull the new package dependency and build as normal. ![Callout 4](../../shared/media-draft/callout-04.png)
+First, we'll need to create a project in Azure Artifacts. ![Callout 1](../../shared/media-draft/callout-01.png) We can do this from Azure DevOps.
 
-### Updates
+Then, we'll create a pipeline in Azure Pipelines that connects to the GitHub repo for the package code, builds it, packages it, and pushes the package to Azure Artifacts. ![Callout 2](../../shared/media-draft/callout-02.png)
+
+We'll need to update the application that consumes this package to point to the Azure Artifacts feed that we created. ![Callout 3](../../shared/media-draft/callout-03.png)
+
+After that, we update the pipeline that creates our application to use our Azure Artifacts feed to pull the new package dependency and build as normal. ![Callout 4](../../shared/media-draft/callout-04.png)
+
+### Updating the package
 
 **Tim:** What if someone updates the package?
 
-**Andy:** When you update the package with a new feature or bug fix, and run tests to make sure it works correctly, bump up the version number of the package and commit the change. The pipeline for the package will see the commit and create a new Azure Artifact with the new version number. Don't worry, the old package with the lower version number is still there for applications that depend on that version. For this reason, you don't typically unlist a package.
+**Andy:** When you update the package with a new feature or bug fix, and run tests to make sure it works correctly, bump up the version number of the package and commit the change. The pipeline for the package will see the commit and create a new artifact in Azure Artifacts with the new version number. Don't worry, the old package with the lower version number is still there for applications that depend on that version. For this reason, you don't typically unlist a package.
 
 Our application might want to use this newer version of the package. In that case, we update the application to reference the newer version and run the tests locally to make sure this new version works with our application. Once we're satisfied that everything works,  we submit the application change to the pipeline and it will build with the new version of the package dependency.
 
