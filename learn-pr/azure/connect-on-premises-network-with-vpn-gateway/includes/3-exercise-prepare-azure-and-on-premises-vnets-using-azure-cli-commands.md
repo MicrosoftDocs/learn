@@ -1,12 +1,12 @@
 Your company is now ready to deploy a site-to-site VPN. This VPN will allow your on-premises servers to connect to resources in Azure. You can then start to securely share data from each of your sites, and you can use resources hosted in Azure across your organization. 
 
-You'll start by creating your Azure-side resources and the on-premises network resources. For this deployment, you'll use this network topology:
+You'll start by creating your Azure-side resources and on-premises network resources. For this deployment, you'll use this network topology:
 
 ![Network topology for unit 3 exercise](../media/3-network-topology-used-in-exercise.svg)
 
-In this exercise, you'll simulate an on-premises datacenter (HQ-Network) by using an additional Azure virtual network. There are many makes and models of on-premises VPN devices, and it isn't possible to demonstrate their configuration in this unit. The logical method of configuration is the same for a VPN device, but you'd need to replace the steps for HQ-Network with steps tailored to your on-premises device.
+In this exercise, you'll simulate an on-premises datacenter (HQ-Network) by using an additional Azure virtual network. There are many makes and models of on-premises VPN devices, and it won't be possible to describe their configuration in this unit. The logical method of configuration is the same for a VPN device. You just need to replace the steps for HQ-Network with steps tailored to your on-premises device.
 
-In the diagram, notice that the local network gateway names in each location reflect the *target* networks rather than the *source* network. This is good practice. It clarifies that the local network gateway refers to the *other* network that you're connecting to.
+In the diagram, notice that the local network gateway names in each location reflect the *target* networks rather than the *source* network. This is a good practice. It clarifies that the local network gateway refers to the *other* network that you're connecting to.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -92,7 +92,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
     az network vnet list --output table
     ```
 
-1. Run this command in the Cloud Shell to verify that the local network gateways have been successfully created.
+1. Run this command in the Cloud Shell to verify that the local network gateways have been successfully created:
 
     ```azurecli
     az network local-gateway list \

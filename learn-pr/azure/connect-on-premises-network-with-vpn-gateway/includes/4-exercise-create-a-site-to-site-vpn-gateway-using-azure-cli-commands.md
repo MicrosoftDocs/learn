@@ -1,6 +1,6 @@
 You're now ready to complete your site-to-site VPN gateway by creating the public IP addresses, virtual network gateways, and connections. Remember that you used placeholders for the public IP address references when you created your local network gateways. So one of your tasks now is to update these gateways with the actual public IP addresses assigned to your virtual network gateways.
 
-Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you'll see how to update the local network gateways. The same commands are used to update any configuration elements in the local network gateways, like remote network address spaces.
+Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you'll see how to update the local network gateways. You can use the same commands to update any configuration elements in the local network gateways, like remote network address spaces.
 
 It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create the second virtual network gateway that simulates your on-premises device in the HQ-Network while you're deploying the first one.
 
@@ -8,7 +8,7 @@ It can take up to 45 minutes to create a virtual network gateway. To save time, 
 
 To verify that your virtual networks are connected, you'll create two Ubuntu VMs, one in each of the virtual networks. You'll then use SSH to connect from the VM in the HQ-Network to the VM in the Azure-VNet-1 virtual network by using its private IP address.
 
-To save time, you'll create these VMs while your VPN gateways are deploying. It takes a few minutes to create the VMs, so to avoid the delay, you'll use Azure CLI commands will with the `--no-wait` parameter.
+To save time, you'll create these VMs while your VPN gateways are deploying. It takes a few minutes to create the VMs, so to avoid the delay, you'll use Azure CLI commands with the `--no-wait` parameter.
 
 1. Run this command in the Cloud Shell to create an Ubuntu VM in the **HQ-Network** virtual network. Replace `<password>` with a string to use for the admin password.
 
@@ -115,9 +115,9 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 ## Update the local network gateway IP references
 
 > [!IMPORTANT]
-> Your virtual network gateways must be successfully deployed before you start this next exercise.
+> Your virtual network gateways must be successfully deployed before you start the next exercise.
 
-In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address has been assigned to and associated with them. You can use this Azure CLI command to check whether both virtual network gateways have been created:
+In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them. You can use this Azure CLI command to check whether both virtual network gateways have been created:
 
 ```azurecli
 az network vnet-gateway list \
@@ -168,7 +168,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
 
 ## Create the connections
 
-You'll now finalize the configuration by creating the connections from each VPN gateway to the local network gateway that contains the public IP address references for that gateway's remote network.
+You'll now complete the configuration by creating the connections from each VPN gateway to the local network gateway that contains the public IP address references for that gateway's remote network.
 
 1. Create the shared key to use for the connections. In the following command, replace `<shared key>` with a text string to use for the IPSec pre-shared key. The pre-shared key is a string of printable ASCII characters no longer than 128 characters. You'll use this pre-shared key on both connections.
 

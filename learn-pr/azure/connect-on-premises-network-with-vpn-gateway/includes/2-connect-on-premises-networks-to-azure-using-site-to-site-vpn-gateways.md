@@ -1,10 +1,10 @@
-A virtual private network (VPN) is a type of private interconnected network. VPNs use an encrypted tunnel within another network. They're typically deployed to connect two or more private networks to one another when there's no other private connectivity option available. VPNs are generally used to connect private networks across the internet. Network encryption is used to keep the data private.
+A virtual private network (VPN) is a type of private interconnected network. VPNs use an encrypted tunnel within another network. They're typically deployed to connect two or more private networks to one another when no other private connectivity option is available. VPNs are generally used to connect private networks across the internet. Network encryption is used to keep the data private.
 
 For the healthcare provider in our scenario, VPNs can enable health professionals to share sensitive information between locations. For example, say a patient requires surgery at a specialist facility. The surgical team needs to be able to see the details of the patient's medical history. This medical data is stored on a system in Azure. A VPN that connects the facility to Azure allows the surgical team to securely access this information.
 
 ## Azure VPN gateways
 
-A VPN gateway is a type of virtual network gateway. VPN gateways are deployed in an Azure virtual networks and enable the following connectivity:
+A VPN gateway is a type of virtual network gateway. VPN gateways are deployed in Azure virtual networks and enable the following connectivity:
 
 - Connect on-premises datacenters to Azure virtual networks through a *site-to-site* connection.
 - Connect individual devices to Azure virtual networks through a *point-to-site* connection.
@@ -12,7 +12,7 @@ A VPN gateway is a type of virtual network gateway. VPN gateways are deployed in
 
 ![Visualization of a VPN connection to Azure](../media/2-vpngateway-site-to-site-connection-diagram.svg)
 
-All data transferred is encrypted in a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, including other Azure virtual networks or on-premises datacenters.
+All transferred data is encrypted in a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, including other Azure virtual networks or on-premises datacenters.
 
 When you deploy a VPN gateway, you specify the VPN type: either policy-based or route-based.
 
@@ -37,7 +37,7 @@ Key features of route-based VPNs include:
 
 - Supports IKEv2.
 - Uses any-to-any (wildcard) traffic selectors.
-- Uses *dynamic routing*, where routing/forwarding tables direct traffic to different IPSec tunnels. The source and destination networks aren't defined, as they are in policy-based VPNs, but data packets are encrypted as they traverse interfaces based on network routing tables.
+- Uses *dynamic routing*, where routing/forwarding tables direct traffic to different IPSec tunnels. The source and destination networks aren't defined, as they are in policy-based VPNs. But data packets are encrypted as they traverse interfaces based on network routing tables.
 
 Both types use pre-shared key as the only method of authentication. Both types also rely on Internet Key Exchange (IKE) in either version 1 or version 2 and Internet Protocol Security (IPSec). IKE is used to set up a security association (an agreement of the encryption) between two endpoints. This association is then passed to the IPSec suite, which encrypts and decrypts data packets encapsulated in the VPN tunnel.
 
@@ -79,8 +79,8 @@ The following diagram shows this combination of resources and their relationship
 
 To connect your datacenter to a VPN gateway, you'll need these on-premises resources:
 
-- A VPN device that supports policy-based or route-based VPN gateways.
-- A public-facing (internet-routable) IPv4 address.
+- A VPN device that supports policy-based or route-based VPN gateways
+- A public-facing (internet-routable) IPv4 address
 
 ## High-availability scenarios
 
@@ -100,4 +100,4 @@ You can also deploy VPN gateways in an *active/active* configuration. In this co
 
 ### ExpressRoute failover
 
-Another high availability option is to configure a VPN gateway as a secure failover path for ExpressRoute connections. ExpressRoute circuits have resiliency built in but aren't immune to physical problems that affect the cables delivering connectivity. In high availability scenarios, where there's risk associated with an outage of an ExpressRoute circuit, you can also provision a VPN gateway. By using a second gateway, which uses the internet as an alternative method of connectivity, you help ensure that there's always a connection to the Azure virtual networks.
+Another high availability option is to configure a VPN gateway as a secure failover path for ExpressRoute connections. ExpressRoute circuits have resiliency built in but aren't immune to physical problems that affect the cables delivering connectivity. In high availability scenarios, where there's risk associated with an outage of an ExpressRoute circuit, you can also provision a VPN gateway. By using a second gateway, which uses the internet as an alternative method of connectivity, you help ensure there's always a connection to the Azure virtual networks.
