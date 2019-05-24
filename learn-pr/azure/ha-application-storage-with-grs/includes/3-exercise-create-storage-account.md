@@ -16,7 +16,7 @@ In this step, you'll create a new storage account. This storage account will be 
 
     ```bash
     STORAGEACCT=$(az storage account create \
-            --resource-group [sandbox resource group name] \
+            --resource-group <rgn>[Sandbox resource group]</rgn> \
             --name easyhealthcareapp$RANDOM \
             --sku Standard_LRS \
             --query "name" | tr -d '"')
@@ -30,7 +30,7 @@ In this step you'll specify the replication policy on the storage account as RA-
 
     ```azurecli
     az storage account update \
-      --resource-group [sandbox resource group name] \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
       --name $STORAGEACCT \
       --sku Standard_RAGRS
     ```
