@@ -6,13 +6,13 @@ Simple linear regression tries to draw a straight line as near to the data point
 
 ### How does it know where to put the line?
 
-All data contains variability. This means that a straight line prediction will almost never perfectly pass through every data point. In the graph below, the dashed red lines show the error in our model. For example, at x = 1, the model predicts that y = 5. We have a data point, however, at x=1 and can see that the value is actually 6. This means the predicted error for this data point is 1.
+All data contains variability. This means that a straight-line prediction will almost never perfectly pass through every data point. In the graph below, the dashed red lines show the error in our model. For example, at x = 1, the model predicts that y = 5. We have a data point, however, at x=1 and can see that the value is actually 6. This means the predicted error for this data point is 1.
 
 ![2.2 Simple Linear Regression-02](../media/2-2-b.png)
 
-Error is a natural part of building a model. In AI, it’s a tool rather than something to avoid. *Simple linear regression finds a best line by calculating which straight line would give the least amount of error*. 
+Error is a natural part of building a model. In AI, it’s a tool rather than something to avoid. *Simple linear regression finds a best line by calculating which straight line would give the least amount of error*.
 
-In this course, we don’t need to get into the math, but understanding the error function can be helpful with interpreting results. If you’d like to get into how the math works, go through the optional sections below. 
+In this course, we don’t need to get into the math, but understanding the error function can be helpful with interpreting results. If you’d like to get into how the math works, go through the optional sections below.
 
 :::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;The&nbsp;math&nbsp;behind&nbsp;linear&nbsp;regression}
 To calculate the error for regression, we calculate the __difference__ between each __data point__ and the __predicted value__ given by the model (green lines). We then square each of these numbers, then add them together.  

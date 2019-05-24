@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-regression.simple-linear-regression
-title: Data for AI
+title: Simple Linear Regression
 metadata:
-  title: Data for AI
-  description: Here we go over what data is, and the key kinds of data we use in AI.
+  title: Simple Linear Regression
+  description: Let's quickly go through predicting a number using one feature.
   ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma
