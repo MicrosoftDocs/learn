@@ -12,7 +12,7 @@ In this step, you'll create a new storage account. This storage account will be 
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-1. Run the following command in the Cloud Shel, to create a storage account for the EasyHealthCare application.
+1. Run the following command in the Cloud Shell, to create a storage account for the EasyHealthCare application.
 
     ```bash
     STORAGEACCT=$(az storage account create \
