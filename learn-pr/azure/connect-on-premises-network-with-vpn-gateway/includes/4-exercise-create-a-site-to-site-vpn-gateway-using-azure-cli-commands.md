@@ -126,7 +126,7 @@ az network vnet-gateway list \
     --output table
 ```
 
-Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the *remote* gateway and network's settings that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
+Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
 
 1. Run this command in the Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1**:
 
