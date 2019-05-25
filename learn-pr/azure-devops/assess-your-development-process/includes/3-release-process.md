@@ -1,6 +1,6 @@
 The first step to setting up a DevOps practice is to assess your current process. Let's begin with the team's current release process and see how DevOps can help.
 
-After Irwin the product manager leaves, Amita says, "We need help. I don't know when the new rev is due, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ web site will have to wait until we get this mess solved &mdash; and the game is releasing soon."
+After Irwin the product manager leaves, Amita says, "We need help. I don't know when these fixes are due, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ web site will have to wait until we get this mess solved &mdash; and the game is releasing soon."
 
 Andy looks at Mara. "This is a lot to take in on your first few weeks."
 

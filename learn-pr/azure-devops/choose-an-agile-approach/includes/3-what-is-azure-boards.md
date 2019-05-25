@@ -1,6 +1,6 @@
 Azure Boards is a tool in Azure DevOps to help teams plan the work that needs to be done. The Tailspin team will use this tool to get a better idea of what work needs to be done and how to prioritize it.
 
-Mara created her own Azure Board using the Basic process. It shows the problems in the build process that she and Andy identified. Mara gets the team together for a quick demo.
+Mara created her own project on Azure Boards using the Basic process. It shows the problems in the build process that she and Andy identified. Mara gets the team together for a quick demo.
 
 **Mara**: Hi everyone. I set up Azure Boards and wanted to show you some work items I came up with.
 
@@ -60,4 +60,4 @@ After some more discussion, the team decides to take on the three issues Mara or
 
 **Mara**: These seem the easiest issues to take on, and they address some recent challenges that came up. Let's set up a project, a team, and a sprint. Then we can decide who does what.
 
-Mara and the team are off to a good start. Next, you will set up the project, team, and some tasks on the Azure Board.
+Mara and the team are off to a good start. Next, you will set up the project, team, and some tasks on Azure Boards.

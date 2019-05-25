@@ -1,4 +1,4 @@
-Microsoft has a free tool called **Microsoft DevOps Self-Assessment** to help you analyze your current release cycle process. Let's see how Tailspin measures up.
+Microsoft has a free tool called **DevOps Self-Assessment** to help you analyze your current release cycle process. Let's see how Tailspin measures up.
 
 Mara, who is new to the team, is going to take the Microsoft DevOps Self-Assessment. This self-assessment gives you the opportunity to reflect on your existing processes. It also provides you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
