@@ -1,23 +1,20 @@
-## Some key concepts
+In AI we talk about building __models__, which are shaped by __cost functions__ to measure __error__. So what does this all mean?
 
-In AI we talk about building __models__, which are shaped by __cost functions__ to measure __error__. So what does this all mean? 
+## What are models
 
-### What are models
-
-Models are an estimation of how reality works. These are not just part of AI; our brains use models every day. For example, while driving, we might be able to estimate how fast our car will accelerate if we push down its accelerator pedal. We have a __model__ in our head of the relationship between the pedal and the speed of the car. 
+Models are an estimation of how reality works. These are not just part of AI; our brains use models every day. For example, while driving, we might be able to estimate how fast our car will accelerate if we push down its accelerator pedal. We have a __model__ in our head of the relationship between the pedal and the speed of the car.
 
 We say this model is an __estimation__ of reality, because when we think about how fast the car will run, we don’t take into account the position of every atom in the engine, wind resistance, and so on. In fact, we may know nothing about how a car engine works, and yet we can still make good guesses as to how fast we will travel.
 
 AI is the process of building models like this by using __data__, just like we do in everyday life. When people learn to drive, they will often be surprised at how fast (or slow) the car goes when the accelerator pedal is pushed. The model in our head starts off very inaccurately. With experience (data), we improve it more and more, until we can estimate very well how the car will react. AI works in a similar way. If we give a computer a large amount of data about car speeds when the accelerator is pushed, then, using AI, the computer can build a model that is more accurate than we are.
 
+## What is error
 
-### What is error
-
-Error is a measure of how accurate a model is at estimating or predicting something. Small amounts of error mean the model is accurate. Large amounts of error mean the model makes a lot of mistakes - or that it sometimes makes very bad mistakes. 
+Error is a measure of how accurate a model is at estimating or predicting something. Small amounts of error mean the model is accurate. Large amounts of error mean the model makes a lot of mistakes - or that it sometimes makes very bad mistakes.
 
 For example, when learning to drive, we might estimate that we will travel 10 mph faster if we push the pedal down to the floor. We find out that we travel 50 mph faster. This means we have an error of 40 mph.
 
-### What are cost functions
+## What are cost functions
 
 We learn from our mistakes, and so does AI. Some mistakes need to be taken a lot more seriously than others, though.
 

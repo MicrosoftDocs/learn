@@ -1,5 +1,3 @@
-## Introduction to Azure Notebooks
-
 This section will guide you through setting up your Azure Notebooks library, so you can do AI in your browser. The next section will be our first, very simple, programming exercise.
 
 In this course we will do exercises using Jupyter Notebooks. These webpages let you run code, right in the browser. We offer AI programming exercises in both Python and R, which are both great for beginners. We suggest using Python, unless you have experience in R or you plan on using R in the near future. We will keep things simple. The important things to remember are:

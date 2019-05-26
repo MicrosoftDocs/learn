@@ -1,5 +1,3 @@
-## Introduction
-
 This course is a high-level overview of artificial intelligence (AI) for people with little or no knowledge of computer science and statistics. In it we’ll cover the essential concepts of AI and show you how to apply custom AI solutions with free, easy to use tools, all in your browser.
 
 The course will show you some some simple but powerful ways that data scientists make predictions about objects, people, and the future. Later, we’ll cover exciting, complex topics you may have heard of, such as neural networks, computer vision, deep learning, and unsupervised learning.

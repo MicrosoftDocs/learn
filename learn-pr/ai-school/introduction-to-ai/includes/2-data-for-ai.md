@@ -1,5 +1,3 @@
-## Data for AI
-
 AI uses data at every step of the journey. So what is data? Data is everything you could record on paper. For example:
 
 * *__Continuous__* variables (things which can be measured as numbers) like times, sizes, weights, temperatures, colors.
