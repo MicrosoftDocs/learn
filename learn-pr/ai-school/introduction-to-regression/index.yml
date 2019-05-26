@@ -32,5 +32,6 @@ units:
 - learn-wwl.introduction-to-regression.multiple-linear-regression
 - learn-wwl.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
 - learn-wwl.introduction-to-regression.tips-for-applying-machine-learning
+- learn-wwl.introduction-to-regression.knowledge-check
 badge: 
   uid: learn-wwl.introduction-to-regression.badge #add the uid for your achievement badge.

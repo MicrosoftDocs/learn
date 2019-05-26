@@ -28,3 +28,13 @@ In this section we will cover two kinds of simple regression. These work in a si
 
 * __Linear regression__ fits *straight* lines.
 * __Polynomial regression__ fits *curved* lines.
+
+## Summaries
+
+That's the introduction done! In this, we covered: 
+
+* __Regression__ - looking for a trend in data, predicting a number.
+* __Linear regression__ - fits straight line relationships.
+* __Polynomial regression__ - fits curved line relationships.
+
+Next we'll look at simple linear regression - predicting a value using one feature.
