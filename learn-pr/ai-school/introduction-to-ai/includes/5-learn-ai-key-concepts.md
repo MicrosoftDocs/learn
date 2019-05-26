@@ -25,3 +25,13 @@ __Cost__ is the number we learn from (e.g. the size of the fine). It is calculat
 A __cost function__ is the way we convert error into cost. The cost function above would be “cost is $100 if they are more than 5 mph over the limit, $200 if they are more than 10 mph over the limit. If they are between the limit and 5 mph over the limit, the cost is $0”.
 
 In AI, things are a little more mathematical than the examples above, but the general concepts are the same. Note that in AI, cost functions are not in dollars, but in unitless numbers. The example above gives an intuitive understanding of how these work. In AI the goal is to minimize error as much as possible - which will make our result as accurate as possible.
+
+## Summary
+
+Congratulations! You've just completed the first module of the course. Take a moment to read this recap of what we covered:
+* __Models__ - in AI, models are software that gives a prediction (or estimation) to an example, using data provided to it. For example, an AI model could predict how fast a car will go based on the type of car and how much the accelerator pedal is pushed. 
+* __Error__ - how accurate a model is at predicting something.
+* __Cost__ - the error metric models learn from and try to decrease, calculated from the error.
+* __Cost functions__ - a mathematical formula run by software to determine for us the cost of a model. Different models have different cost functions and they are built into the model for us already. 
+  
+Next we will look at some easy to understand AI models, and how they work.

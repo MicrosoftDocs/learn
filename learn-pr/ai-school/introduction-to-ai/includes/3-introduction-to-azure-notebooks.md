@@ -29,3 +29,7 @@ Click [here](https://notebooks.azure.com/home/libraries/Python "Link to crash co
 
 Click on the exercise you wish to do, and it will appear in a new tab.
 ![Select Exercise](../media/1-3-d.png)
+
+Next, we'll do a short walkthrough of a programming exercise that will introduce you to Azure Notebooks.
+
+Click on __'Next Step'__ below and we will have a direct link to the first programming exercise to get you started.
