@@ -1,5 +1,3 @@
-## Logistic regression
-
 Logistic regression is a binary classification algorithm. Don’t be fooled by the ‘regression’ in the name, this simply means that it predicts the probability of a category.
 
 In the plot below we compare customer satisfaction with different cocoa percentages using logistic regression.

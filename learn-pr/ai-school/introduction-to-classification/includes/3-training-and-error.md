@@ -26,3 +26,30 @@ It is common in machine learning and statistics to have datasets that have missi
 ### Outro
 
 Now you’ve been walked through the basics of classification algorithms, and used logistic regression to predict the probability of a team winning a football (soccer) match! We’ve also covered training a model, and error. Well done.
+
+## Summary
+
+That's the end of this section and this module! During this section we learned:
+
+* __Training__ - the AI algorithm changes the variables it uses to make predictions until it reaches its lowest error rate.
+* __Irreducible error__ - examples that the model can not possibly predict accurately.
+* __Bayes error__ - the lowest possible error rate, where an algorithm cannot become any more accurate.  
+
+During this module we walked through the basics of classification algorithms, and learned:
+
+__Classification__
+
+* __Classification__ is assigning labels to new data. For example, predicting whether a future soccer match will be a “win” or “loss”.
+
+__Logistic regression__
+
+* Is a classification algorithm.  
+* Produces a line of best fit to data from previous events.  
+* Can be used to give us the probability that something is true, or an event will happen.  
+  
+__Models__
+
+* __AI often learns iteratively__ - starting with a bad approximation and changing variables (like line-slope) until a model becomes accurate.
+* The real world is very variable, and so __we cannot expect our models to become 100% accurate__.
+  
+Up next is advanced classification models. We’ll walk you through using one of the most powerful and elegant AI models, support vector machines. Let's go!

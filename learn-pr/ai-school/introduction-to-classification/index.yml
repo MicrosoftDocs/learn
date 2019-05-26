@@ -29,5 +29,6 @@ units:
 - learn-wwl.introduction-to-classification.introduction-to-classification
 - learn-wwl.introduction-to-classification.logistic-regression
 - learn-wwl.introduction-to-classification.training-and-error
+- learn-wwl.introduction-to-classification.knowledge-check
 badge: 
   uid: learn-wwl.introduction-to-classification.badge #add the uid for your achievement badge.

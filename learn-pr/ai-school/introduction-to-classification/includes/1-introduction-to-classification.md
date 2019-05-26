@@ -1,6 +1,4 @@
-## Introduction
-
-Models that sort examples into categories are called __classification algorithms__. The graph below shows a logistic regression, an example of a classification algorithm, where the values are classified into two categories - satisfied customers and dissatisfied customers. 
+Models that sort examples into categories are called __classification algorithms__. The graph below shows a logistic regression, an example of a classification algorithm, where the values are classified into two categories - satisfied customers and dissatisfied customers.
 
 ![3.1 LogisticRegression-01](../media/3.1_LogisticRegression-01.png)
 
@@ -8,16 +6,15 @@ If you have done some data science before you might be used to seeing logistic r
 
 ![3.1 LogisticRegression-02](../media/3.1_LogisticRegression-02.png)  
   
-Email spam filters are another example of a classification algorithm (spam or not spam). 
+Email spam filters are another example of a classification algorithm (spam or not spam).
 
 Classification differs from the regression algorithms we have covered so far – where we try to predict a number rather than a category. If we wanted to predict the speed a bird can fly or the price of a house, that would be a regression problem. Here we're going to predict if a customer is satisfied or dissatisfied. This is a classification problem.
-  
-  
+
 ### Classification predicts labels
 
 In AI, when we predict an example’s category, we __label__ the example with a category. Labels don’t have to be binary - a label might be a breed of a dog or the species of a tree.  
   
-### How do we predict labels?  
+#### How we predict labels
   
 To build a classification model we need to use examples that are already labeled.  The model learns from these labelled examples, and will be able to predict labels for new unlabelled examples.
 
@@ -30,3 +27,12 @@ In this course we will primarily cover supervised learning – teaching AI model
  
 Unsupervised AI models can make some predictions without an output set, but the predictions are very limited in comparison to supervised AI models. Some applications include clustering, anomaly detection, and general adversarial networks (GANs). We cover supervised learning in the final module of this course.
 :::
+
+## Summary
+
+Well done! In this step, we covered:
+
+* __Classification models__ sort examples into different categories.
+* __Logisitic regression__ a classification algorithm that can use one or many features to predict a category.
+
+Stay with us! Don't worry if you feel a bit lost right now - next up we'll walk you through logistic regression.
