@@ -1,9 +1,6 @@
-## Support vector machines
-
 Support vector machines (SVMs) are one of the most elegant solutions in machine learning. They can be used for both classification and regression problems, and can be easily coded in Python and R. In this course we'll use them for classification.
 
 SVMs are vital tools in biology, and many other areas of science and industry. Let's take a look at how they work, then make a model using one line of code.
-
 
 ### Hyperplanes
 
@@ -40,3 +37,14 @@ New examples introduced to an SVM model are labelled with a category based on wh
 > Then click then click __'Run on Free Compute'__.  
 >  
 > If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
+
+## Summary
+
+Well done! That's support vector machines done for now!  
+  
+Here we covered:
+* __Hyperplanes__ - the line separating categories for SVMs.
+* __Support vectors__ - the data points from different categories that are closest to those of the other category.
+* __Margin__ - the boundary between categories in which no data points are placed - decided by the support vectors.  
+  
+Next up we cover how we test models and two common problems models face - overfitting and underfitting.

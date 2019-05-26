@@ -61,3 +61,17 @@ A one-hot vector is a vector (list) where each position in the list represents a
 > Then click then click __'Run on Free Compute'__.  
 >  
 > If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
+
+## Summary
+
+Congratulations for finishing this module!
+
+There was a lot to take in, so let’s recap.
+
+We learned that during training AI knows how well it is doing by comparing its predictions to reality using a cost function. Minimising this cost means increasing accuracy. To do so, AI often uses "gradient descent" - a procedure where slight changes are made a model’s parameters each time it runs. Each time, the changes made are likely to result in slightly better performance, and the process is repeated until no further improvements are expected.
+
+We also learned all about how we test models. Recall that a big dataset is normally split into data for training the model and data to test the model once it is trained. We learned that it's possible for models to be "underfitted" (to perform poorly on all datasets) or to be "overfitted" (perform well on the training data but poorly on test data).
+
+We also learned that Support Vector Machines try to label data by finding a hyperplane that separates data points of different classes from each other. In 2D this is like trying to draw a line, while in 3D this is like trying to place a 2D plane. When this can’t be done easily, often the “kernel trick” is used to look at the data in a special way. We also learned that there are different ways to fit a hyperplane, and that sometimes it can be better to accept a little error than to be very strict and overfit the training data.
+
+In the next section we’ll walk you through one of the most exciting areas in technology right now - neural networks.

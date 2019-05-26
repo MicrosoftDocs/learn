@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.advanced-classification-models.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: A knowledge check for advanced classification.
+  ms.date: 06/30/2019
+  author: markjulmar
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-advanced-svms-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A soft margin SVM gives a:"
+    choices:
+    - content: "Lower penalty for datapoints within the margin."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Higher penalty for datapoints within the margin."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "No penalty for datapoints within the margin."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Negative penalty for datapoints within the margin."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "The Kernel trick allows:"
+    choices:
+    - content: "Kernels that are not straight lines, flat planes, or similar."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Unrelated operating systems to pass information freely between one another for improved training performance."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The soft-margin SVM to be mathematically possible."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Predicting of only one category."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Fill in here"
+    choices:
+    - content: "Hi"
+      isCorrect: true
+      explanation: "Correct. It is a binary classification algorithm."
+    - content: "3 categories"
+      isCorrect: false
+      explanation: "Incorrect. Simple logistic regression a binary classification algorithm - it does not predict several categories."
+    - content: "As many as the data provides"
+      isCorrect: false
+      explanation: "Incorrect. Simple logistic regression cannot predict several categories even if the data set provides them."
+    - content: "0"
+      isCorrect: false
+      explanation: "Incorrect. Simple logistic regression has to predict categories."

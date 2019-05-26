@@ -1,5 +1,3 @@
-## Advanced Classification Models
-
 In the previous section you saw the logistic regression algorithm optimize the number of correctly classified examples. Optimization is achieved by two methods that happen behind the scenes in AI: cost function and gradient descent.
  
 ### Cost function refresher
@@ -34,3 +32,13 @@ In practice it’s a good idea to find an adequate learning rate, rather than sp
 ![2.3 LearningRate-01](../media/2.3_LearningRate-01.png)
 
 :::
+
+## Summary
+
+We’ve covered the two core methods powering AI:
+
+* __Cost__ - our error metric.
+* __Cost function__ - calculates the cost of an AI model.
+* __Gradient descent__ - changes a model’s predictions to decrease the cost, making predictions more accurate.
+  
+Next up we'll look at one of the most elegant solutions in machine learning - support vector machines.

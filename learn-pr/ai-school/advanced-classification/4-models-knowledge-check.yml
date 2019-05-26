@@ -1,0 +1,102 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.advanced-classification-models.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: A knowledge check for advanced classification.
+  ms.date: 06/30/2019
+  author: markjulmar
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-models-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Gradient Descent tries to find parameters to get a cost to be:"
+    choices:
+    - content: "As high as possible."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "As low as possible."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Even."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Negative."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "An SVM uses a hyperplane to:"
+    choices:
+    - content: "Separate data points into categories."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Evenly distribute data of different classes across the feature space."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Shuttle data efficiently through memory."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Predict another dimension."
+      isCorrect: false
+      explanation: "Incorrect. "
+  - content: "The margins play what role in SVMs?"
+    choices:
+    - content: "Define where the support vectors fall"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Modify input data to ensure it is homogeneous."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Ensure that the algorithm only reports two classes."
+      isCorrect: false
+      explanation: "Incorrect. SVMs are able to predict as many classes as desired, assuming sufficient data are available."
+    - content: "No role."
+      isCorrect: false
+      explanation: "Incorrect. SVMs use margins for predictions."
+  - content: "Test data is:"
+    choices:
+    - content: "A copy of the training data."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "Entirely unlike the training data."
+      isCorrect: false
+      explanation: "Incorrect. Test and training datasets should be similar, but not have any identical data points."
+    - content: "Important to test that a model has not trained too tightly to the training data set."
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "Only used in algorithms more advanced than SVMs."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Overfitting is:"
+    choices:
+    - content: "When support vectors come too close to a datapoint."
+      isCorrect: false
+      explanation: "Incorrect. Although it may do this as a consequence of overfitting, this is not a problem, per se."
+    - content: "When a model is trained on a data set that is too large."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "When an model is trained so intensely that it becomes less accurate on data it has never seen before."
+      isCorrect: true
+      explanation: "Correct. When a model is too well trained on the training data, it learns its noise rather than only its general trends, making it less accurate on other datasets."
+    - content: "When we reach minimum cost."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Underfitting is:"
+    choices:
+    - content: "When a model is trained but has parameters that are too small."
+      isCorrect: false
+      explanation: "Incorrect. Although it may do this as a consequence of overfitting, this is not a problem, per se."
+    - content: "When a SVM has been trained too well on the training dataset, and becomes inaccurate on other data sets."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "When a model is too simple to represent real patterns in the training and test data sets."
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "When we reach maximum cost."
+      isCorrect: false
+      explanation: "Incorrect."

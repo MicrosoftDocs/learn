@@ -1,5 +1,3 @@
-## Testing a model
-
 We need training data to train a model. Once trained, we need to check how well our model will work with other similar datasets. To test a model for this, we need separate *test data*.
 
 The larger our training set is, the more accurate our model can be overall. The larger our test set is, the more confident we can be in the model’s accuracy with new data. So, the more data the better.
@@ -26,10 +24,10 @@ The simplest way to reduce overfitting can be to reduce the number of features. 
   
 An alternative way to avoid overfitting is regularisation.  
   
-###### Regularisation
+### Regularisation
   
 Regularisation lets you keep all the features to train your model, but can reduce how much each individual feature affects the training of the model. Regularisation tends to work well when some of the features are only slightly useful. Many modern machine learning models can apply regularisation automatically for you.  
-    
+
 ![2.5.6.7 Regularisation (1)](../media/2.5.6.7_Regularisation__1_.png)
   
 Regularisation occurs in the cost function, where we add a regularisation parameter that will simplify the model. This will give more generalised predictions that will hopefully correspond to greater accuracy in the test set.  
@@ -50,18 +48,29 @@ It can be time consuming and computationally expensive to use a large training d
 ![2.8 Training Validation TestSets-02](../media/2.8_Training_Validation_TestSets-02.png)
 
 The size of your validation set varies depending upon your application. A good starting point is to allocate 60% of your data to a training set, 20% to a validation set, and 20% to a test set.
- 
+
 If the validation sets error begins to increase by a certain amount, overfitting may be occurring, and training can be stopped. This process is called early stopping.
- 
+
 While using a validation set, your model may be caught at a point where it can still improve its accuracy through gradient descent by starting at a new random point. You can select how much error in the validation set is tolerated, but many modern machine learning tools can do this automatically for you.
- 
+
 Validation sets are particularly useful when using regularization with a lot of semi-useful data. This allows you to increase the accuracy of your model by the correct amount of regularization, simplifying your model enough to fit general data but not enough to lose accuracy.
- 
+
 #### Validation set methods
- 
+
 You can use a method called __holdout__ to select your validation set from your training set. This randomly partitions a portion of your training set data to a new validation set, which helps improve accuracy.
- 
+
 __k-fold cross-validation__ is commonly used by AI practitioners. It randomly partitions the training data into k-number of sets. So a 4-fold cross validation set would make 4 sets from the data.
- 
+
 Each set is able to be used as a validation set once, while the other 3 are used for your training set. So you would have 4 different validation sets, which helps improve accuracy. If you have a large dataset it is common to use 10-fold cross-validation.
 :::
+
+## Summary
+
+Well done! Here we covered:
+
+* __Test sets__ - data to test a model’s accuracy on - separate from the training data.
+* __Noise__ - natural variation in the data which we are not interested in.
+* __Overfitting__ - when a model is trained too well and learns the noise in the training set, giving poor results on the test set.
+* __Underfitting__ - when a model isn’t trained well enough and has mediocre performance on both training and test datasets.
+
+Next up we have advanced classification models - different SVM variations.
