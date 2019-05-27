@@ -90,7 +90,7 @@ quiz:
     choices:
     - content: "When a model is trained but has parameters that are too small."
       isCorrect: false
-      explanation: "Incorrect. Although it may do this as a consequence of overfitting, this is not a problem, per se."
+      explanation: "Incorrect. Although it may do this as a consequence of underfitting, this is not a problem, in itself."
     - content: "When an SVM has been trained too well on the training dataset, and becomes inaccurate on other data sets."
       isCorrect: false
       explanation: "Incorrect."

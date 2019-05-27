@@ -4,11 +4,11 @@ The larger our training set is, the more accurate our model can be overall. The 
 
 ![2.8 Training Validation TestSets-01](../media/2.8_Training_Validation_TestSets-01.png)
 
-Normally, we start with a big dataset and split it into training data and test data. How much data goes to testing and training is different for each application, but it’s normal to start out by assigning about 80% of your data to training, and 20% to testing.  
+Normally, we start with a large dataset and split it into training data and test data. How much data goes to testing and training is different for each application, but it’s normal to start out by assigning about 80% of your data to training, and 20% to testing.  
   
 ## Overfitting
 
-Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualize. If we collect two datasets of the same thing (e.g. leaf size versus trunk girth), these should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. In practice this is shown by a model having high accuracy on a training set, but low accuracy on the test set.
+Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualize. If we collect two datasets of the same thing (for example, leaf size versus trunk girth), these should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. In practice this is shown by a model having high accuracy on a training set, but low accuracy on the test set.
 
 The black line in the graph below is an example of overfitting. The *__red__* line is more generalized. Although the red line may be less accurate than the green line on the *training* set, on the test set and future datasets it will give a much better result.  
   
@@ -20,7 +20,7 @@ A balance has to be struck, however, because if a model becomes too simple, it w
 
 :::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Methods&nbsp;to&nbsp;avoid&nbsp;overfitting}
 
-The simplest way to reduce overfitting can be to reduce the number of features. Datasets may have a lot of features, with some of them not very useful for predictions, or they may have missing data points. Using your own knowledge to manually select which features should be use can work well to improve the accuracy of your machine learning models. However, unbeknown to you, some of this data may hold useful information.
+The simplest way to reduce overfitting can be to reduce the number of features. Datasets may have many features, with some of them not useful for predictions, or they may have missing data points. Using your own knowledge to manually select which features should be used can work well to improve the accuracy of your machine learning models. However, unbeknown to you, some of this data may hold useful information.
   
 An alternative way to avoid overfitting is regularization.  
   
@@ -28,7 +28,7 @@ An alternative way to avoid overfitting is regularization.
   
 Regularization lets you keep all the features to train your model, but can reduce how much each individual feature affects the training of the model. Regularization tends to work well when some of the features are only slightly useful. Many modern machine learning models can apply regularization automatically for you.  
 
-![2.5.6.7 Regularization (1)](../media/2.5.6.7_Regularisation__1_.png)
+![2.5.6.7 Regularization (1)](../media/2.5.6.7_Regularization__1_.png)
   
 Regularization occurs in the cost function, where we add a regularization parameter that will simplify the model. This will give more generalized predictions that will hopefully correspond to greater accuracy in the test set.  
 :::
@@ -43,7 +43,7 @@ To address underfitting problems you may move onto a more complex algorithm (suc
 
 :::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Validation&nbsp;sets}
 
-It can be time consuming and computationally expensive to use a large training dataset only to find out at the end of training that overfitting has occurred and you have a low accuracy on your test set. Using a validation set alongside your training set gives an unbiased result for your model to use to detect overfitting as it is occurring.
+It can be time consuming and computationally expensive to use a large training dataset only to find out at the end of training that overfitting has occurred and you have low accuracy on your test set. Using a validation set alongside your training set gives an unbiased result for your model to use to detect overfitting as it is occurring.
 
 ![2.8 Training Validation TestSets-02](../media/2.8_Training_Validation_TestSets-02.png)
 

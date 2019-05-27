@@ -1,6 +1,6 @@
 Artificial intelligence (AI) is the study of how to make computers perform tasks that humans consider difficult through the creation of intelligent agents. The study of AI began in the 1950s, and it has improved dramatically over time with better statistical methods and greater computing power. 
 
-AI is now used for all sorts of things, such as intelligent opponents in video games, accurate medical diagnosis, speech commands on mobile phones, and keeping email inboxes clear of spam. People who use AI often want it to perform repetitive tasks that take a lot of time for a person to do, or to solve problems which seem almost impossible to solve with a calculator. For example, AI can be used to:
+AI is now used for all sorts of things, such as intelligent opponents in video games, accurate medical diagnosis, speech commands on mobile phones, and keeping email inboxes clear of spam. People who use AI often want it to perform repetitive tasks that take a lot of time for a person to do, or to solve problems, which seem almost impossible to solve with a calculator. For example, AI can be used to:
 
 * intelligently guess the products that someone may want to buy
 * count cells in a microscope picture
@@ -8,7 +8,7 @@ AI is now used for all sorts of things, such as intelligent opponents in video g
 * read the license plates of cars in a video
 * predict the quantity of ingredients a restaurant needs to order to minimize waste, but not run out of stock.
 
-Although this sounds very difficult, there are free tools available online which make it easy to get started.
+Although this sounds difficult, there are free tools available online which makes it easy to get started.
 
 ### What is machine learning
 
