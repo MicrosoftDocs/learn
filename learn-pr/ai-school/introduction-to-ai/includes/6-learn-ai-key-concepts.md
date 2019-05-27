@@ -34,4 +34,4 @@ Congratulations! You've just completed the first module of the course. Take a mo
 * __Cost__ - the error metric models learn from and try to decrease, calculated from the error.
 * __Cost functions__ - a mathematical formula run by software to determine for us the cost of a model. Different models have different cost functions and they are built into the model for us already. 
   
-Next we will look at some easy to understand AI models, and how they work.
+Now that you’ve had an introduction to AI, let’s wrap up everything you’ve learned with a knowledge check.

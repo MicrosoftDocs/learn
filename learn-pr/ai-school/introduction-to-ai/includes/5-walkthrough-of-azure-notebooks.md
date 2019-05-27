@@ -1,5 +1,3 @@
-## This is a simple walkthrough of using Azure Notebooks and Python.  
-
 **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
 Select the exercise `01. Introduction to Jupyter Notebooks and Data - Python.ipynb`.  
 Then click then click __'Run on Free Compute'__.  

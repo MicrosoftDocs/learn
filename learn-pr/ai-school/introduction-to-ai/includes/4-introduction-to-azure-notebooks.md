@@ -2,7 +2,7 @@ This section will guide you through setting up your Azure Notebooks library, so 
 
 In this course we will do exercises using Jupyter Notebooks. These webpages let you run code, right in the browser. We offer AI programming exercises in both Python and R, which are both great for beginners. We suggest using Python, unless you have experience in R or you plan on using R in the near future. We will keep things simple. The important things to remember are:
 
-* Follow the instructions carefully. 
+* Follow the instructions carefully.
 * Be careful not to add spaces or tabs unless asked.
 * Remember that things are CaSe SeNsiTiVe. So if you are asked to write in lower case, don’t write in UPPER case.
 
@@ -31,5 +31,3 @@ Click on the exercise you wish to do, and it will appear in a new tab.
 ![Select Exercise](../media/1-3-d.png)
 
 Next, we'll do a short walkthrough of a programming exercise that will introduce you to Azure Notebooks.
-
-Click on __'Next Step'__ below and we will have a direct link to the first programming exercise to get you started.

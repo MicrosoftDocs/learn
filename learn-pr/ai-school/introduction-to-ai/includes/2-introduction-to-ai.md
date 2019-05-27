@@ -1,10 +1,4 @@
-This course is a high-level overview of artificial intelligence (AI) for people with little or no knowledge of computer science and statistics. In it we’ll cover the essential concepts of AI and show you how to apply custom AI solutions with free, easy to use tools, all in your browser.
-
-The course will show you some some simple but powerful ways that data scientists make predictions about objects, people, and the future. Later, we’ll cover exciting, complex topics you may have heard of, such as neural networks, computer vision, deep learning, and unsupervised learning.
-  
-## What is artificial intelligence
-
-AI is the study of how to make computers perform tasks that humans consider difficult through the creation of intelligent agents. The study of AI began in the 1950s, and it has improved dramatically over time with better statistical methods and greater computing power. 
+Artificial intelligence (AI) is the study of how to make computers perform tasks that humans consider difficult through the creation of intelligent agents. The study of AI began in the 1950s, and it has improved dramatically over time with better statistical methods and greater computing power. 
 
 AI is now used for all sorts of things, such as intelligent opponents in video games, accurate medical diagnosis, speech commands on mobile phones, and keeping email inboxes clear of spam. People who use AI often want it to perform repetitive tasks that take a lot of time for a person to do, or to solve problems which seem almost impossible to solve with a calculator. For example, AI can be used to:
 
