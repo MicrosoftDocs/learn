@@ -1,5 +1,3 @@
-### k-means clustering
-
 K-means clustering lives true to its name - it separates examples into k number of clusters (so if k is 5, it will divide the examples into 5 clusters) and it partitions the examples by the average (mean) of the clusters.
 
 All k-means needs to run is the dataset and the number of clusters the user wants to map out.
@@ -9,6 +7,7 @@ It is very common for AI practitioners to decide the number of clusters by runni
 ![kmeans](../media/kmeans.gif)
 
 The starting points of the clusters begin at random, then k-means has two steps:
+
 1. Examples are assigned to the cluster that they is closest to.
 2. The starting points of the clusters move to the average value of the examples grouped to that cluster.
 
@@ -27,3 +26,9 @@ These steps then repeat several times and the clustering is complete.
 > Then click then click __'Run on Free Compute'__.  
 >  
 > If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
+
+## Summary
+
+Well done! You’ve complete the module on unsupervised learning. 
+
+We read that unsupervised learning algorithms can split data into categories without ever having been trained and not having labels to judge its own accuracy from. These methods can be very helpful with large unlabelled datasets or ambiguous problems and a commonly seen in the fields of science and statistics. We learned about K-means clustering, which can be given unlabelled data and identify a number of clusters in that data in a few seconds.

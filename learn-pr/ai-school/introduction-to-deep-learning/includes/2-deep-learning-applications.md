@@ -17,3 +17,12 @@ Computer vision has significantly enhanced the ability to use search engines for
 ### Recommendations
 
 TV shows you may be interested in, new products based on your previous purchases, friends to add to your networks, and advertisements that appear when you browse the web are all applications of deep learning recommendation systems.
+
+## Summary
+
+That's an overview of the usual deep learning applications:
+* __Natural Language Processing__ - speech and text analysis.
+* __Computer Vision__ - image and video analysis.
+* __Recommendations__ - personalised recommendations based on your personal details.
+
+Next up is an introduction to convolutional neural networks (CNNs).

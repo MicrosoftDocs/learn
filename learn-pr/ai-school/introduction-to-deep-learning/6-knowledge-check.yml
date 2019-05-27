@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.deep-learning.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: A knowledge check for deep learning.
+  ms.date: 06/30/2019
+  author: markjulmar
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Deep learning refers to:"
+    choices:
+    - content: "Neural networks with at least one hidden layer, sometimes many more."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Neural networks with many nodes per layer."
+      isCorrect: false
+      explanation: "Incorrect. Although deep neural nets often have many nodes per layer, this is not required."
+    - content: "All neural networks that are trained for a very long time."
+      isCorrect: false
+      explanation: "Incorrect. Although they can take a very long time to train, 'deep' does not refer to how long it takes to train a network."
+    - content: "Random forest."
+      isCorrect: false
+      explanation: "Incorrect. Random forest is a different type of machine learning model."
+  - content: "Deep learning is:"
+    choices:
+    - content: "Only used for image processing."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Only used for language processing."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Likely to be useful for all datasets."
+      isCorrect: false
+      explanation: "Incorrect. Deep learning requires a large amount of labelled training data, which is often not possible for a given problem."
+    - content: "Used for many different applications."
+      isCorrect: true
+      explanation: "Correct."
+  - content: "Convolutional neural networks (CNNs):"
+    choices:
+    - content: "Are mostly used for image and video analysis."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Avoid problems with over fitting seen in more traditional neural networks."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Require much smaller datasets than other types of machine learning."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Train faster than traditional large neural networks."
+      isCorrect: false
+      explanation: "Incorrect. The feature extraction performed by CNNs can increase the training time required."
+  - content: "Keras, Tensorflow and Pytorch are:"
+    choices:
+    - content: "Software packages to design and run neural networks."
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "Kinds of deep neural networks."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Common neural network design patterns."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Types of gradient boosted tree models."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Recurrent Neural Networks (RNNs) are useful when:"
+    choices:
+    - content: "Prior information (context) is important for understanding."
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "One wishes to use a neural network without having a training dataset."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Neural networks need to be used on specialised hardware."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "You have very small amounts of data."
+      isCorrect: false
+      explanation: "Incorrect. RNNs do not generally perform well with very small datasets."

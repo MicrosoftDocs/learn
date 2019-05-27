@@ -39,3 +39,33 @@ With GRUs, what you need to know for now is that they hold some advantages over 
 > Then click then click __'Run on Free Compute'__.  
 >  
 > If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
+
+## Summary 
+
+That’s that! Congratulations for finishing this module. You're almost finished.
+
+In this section we covered:
+
+* __Recurrent neural network__ (RNN) - a class of neural network that excels at analyzing and predicting data in a sequence.
+* __LSTM__ - a variation of RNNs that is very good at connecting previous data to current data where there is a long gap.
+* __GRU__ - a variation of LSTM that is simpler - meaning a decrease in training time, which can be quite beneficial sometimes.
+
+Let’s recap on what we’ve learned in this module.
+
+- __Deep learning__ simply means using neural networks with many layers
+* By having many layers, these networks have more room to learn abstract information, like what a nose or dog looks like.
+* Deep learning can have very long training times.
+* There are different ways these can be organised.
+ - Convolutional neural networks are often used for image processing.
+  - __Recurrent neural networks__ are often used for data like text or music
+ * RNNs have a special kind of memory for things seen recently. 
+ * There are many different variants of RNNs, each with different advantages.
+
+Those of us who read the optional information will have learned that:
+
+* there are a wide variety of ways to organize a neural network
+      - Which you choose depends on what you want to achieve and some degree of experimentation.
+* To build a deep network one needs to pick tools to do so. There are many tools available, including TensorFlow and Keras.bb
+
+
+Deep learning is an immensely deep field that is constantly improving. The next module is a short one - unsupervised learning. Let's get to it!

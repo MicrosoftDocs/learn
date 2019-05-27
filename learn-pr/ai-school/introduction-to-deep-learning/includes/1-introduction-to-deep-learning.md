@@ -25,3 +25,16 @@ Deep neural networks are neural networks with multiple hidden layers - RNNs can 
 ![6.1 VideoExample](../media/6.1_VideoExample.png)
 
 Deep neural networks are particularly prone to overfitting and long training times. Because of this, it is best to spend a good proportion of your time preparing your data - so you do not train a model for two days only to realize your dataset needs more work.
+
+## Summary
+
+That's the introduction! We covered:
+
+* __Deep learning__ is primarily variations of __neural networks__.
+* Deep learning models learn what different data represents, rather than solve one specific task.
+* Deep learning algorithms can learn which features should be represented at each layer of the network by themselves.
+* The user still has to tell the model the size and number of hidden layers, and which activation functions the layers use.
+* __Recurrent neural networks__ (RNNs) analyse data that is in a sequence.
+* __Convolutional neural networks__ (CNNs) are primarily used for image applications.
+
+Next we will look over different applications of deep learning.
