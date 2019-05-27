@@ -1,8 +1,8 @@
-**Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
+**Python users** - your library can be found __[here](https://notebooks.azure.com/home/libraries/Python "here")__.  
 Select the exercise `01. Introduction to Jupyter Notebooks and Data - Python.ipynb`.  
 Then click __'Run on Free Compute'__.  
 
-**R users** click __[here](https://notebooks.azure.com/home/libraries/R-Exercises "here")__ to go to your library.  
+**R users** - your library can be found __[here](https://notebooks.azure.com/home/libraries/R-Exercises "here")__.  
 Select the exercise `01. Introduction to Jupyter Notebooks and Data - R.ipynb`.  
 Then click __'Run on Free Compute'__.  
 

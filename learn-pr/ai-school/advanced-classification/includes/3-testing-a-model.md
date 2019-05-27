@@ -8,7 +8,7 @@ Normally, we start with a large dataset and split it into training data and test
   
 ## Overfitting
 
-Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualize. If we collect two datasets of the same thing (for example, leaf size versus trunk girth), these should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. In practice this is shown by a model having high accuracy on a training set, but low accuracy on the test set.
+Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualize. If we collect two datasets of the same thing (for example, leaf size versus trunk girth), these datasets should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. In practice this is shown by a model having high accuracy on a training set, but low accuracy on the test set.
 
 The black line in the graph below is an example of overfitting. The *__red__* line is more generalized. Although the red line may be less accurate than the green line on the *training* set, on the test set and future datasets it will give a much better result.  
   
@@ -37,7 +37,7 @@ Regularization occurs in the cost function, where we add a regularization parame
 
 Models that are too simple or undertrained fail to find true relationships in our data. This is called *underfitting* and reflected by poor accuracy in both training and test data. Underfitting typically occurs when there is not enough training data, when useful features are not used, or when the type of model is not suitable for the data at hand. For example, the graph below shows underfitting occurring in a linear model which is trying to predict a non-linear problem. While the line does separate the red and blue dots somewhat, a non-linear line is likely to do a better job.
   
-![2.5.6.7 Overfitting Regularsation Underfitting-03](../media/2.5.6.7_Overfitting_Regularsation_Underfitting-03.png)
+![2.5.6.7 Overfitting Regularsation Underfitting-03](../media/2.5.6.7_Overfitting_Regularization_Underfitting-03.png)
 
 To address underfitting problems you may move onto a more complex algorithm (such as an SVM), get more training data, or add more features to your data set.
 

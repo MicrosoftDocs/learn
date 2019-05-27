@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Predicting whether a person will buy a product or not."
       isCorrect: true
-      explanation: "Correct. This is predicting whether someone is going to be 'a customer' or 'not a customer'."
+      explanation: "Correct. Predicting whether someone is going to be 'a customer' or 'not a customer' is a classification problem."
     - content: "Predicting the amount of wheat that a field will grow."
       isCorrect: false
       explanation: "Incorrect. The amount of wheat that a field will grow is a number, not a category."

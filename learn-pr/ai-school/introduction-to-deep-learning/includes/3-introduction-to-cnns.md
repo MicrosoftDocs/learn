@@ -18,7 +18,7 @@ YOLO is a popular CNN algorithm written in Python which is used for real-time ob
 
 Having the entire detection pipeline in a single neural network gives YOLO major performance benefits. YOLO can perform accurate analysis of over 9000 different object categories in real-time.
 
-YOLO can analyse every frame from most cameras. You are able to make a tradeoff - increasing the speed of analysis for a slight decrease in accuracy. However YOLO performs quite well analysing between 30 and 60 images per second.
+YOLO can analyse every frame from most cameras. You are able to make a tradeoff - increasing the speed of analysis for a slight decrease in accuracy. However YOLO performs quite well analyzing between 30 and 60 images per second.
 
 ### Optional: Softmax
 Softmax is an activation function used in neural networks. CNNs commonly use softmax in the final layers of a classification model because softmax outputs probabilities for multiple classes. This has proven to be quite successful for multiclass classifications using CNNs and other deep neural networks.  
@@ -29,7 +29,7 @@ As you can see above, Softmax outputs multiple probabilities adding up to 1. The
 
 ### Programming exercise
  
-> Let's try out making a simple CNN in Azure Notebooks. We’re going to use a CNN to recognise handwritten digits.
+> Let's try out making a simple CNN in Azure Notebooks. We’re going to use a CNN to recognize handwritten digits.
 >  
 > **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
 > Select the exercise `10. Convolutional Neural Networks - Python.ipynb`.  

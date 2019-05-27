@@ -9,8 +9,8 @@ In this course we will do exercises using Jupyter Notebooks. These webpages let 
 Follow these five steps to get started:
   
 1. Go to the programming exercises in Azure Notebooks.
-   * For the Python programming exercises click [__here__](https://notebooks.azure.com/MLCrashCourse/libraries/Python "here").
-   * For the R programming exercises click [__here__](https://notebooks.azure.com/MLCrashCourse/projects/R-Exercises "here").
+   * Python programming exercises can be found [__here__](https://notebooks.azure.com/MLCrashCourse/libraries/Python "here").
+   * R programming exercises can be found [__here__](https://notebooks.azure.com/MLCrashCourse/projects/R-Exercises "here").
 2. Click the ‘Sign In’ link in the top right-hand corner.
 ![Sign in](../media/1-3-a.png)
 3. Follow the prompts to sign in, or create a free account.
