@@ -6,13 +6,13 @@ Supervised learning is much more common than unsupervised learning, but unsuperv
 
 ![7.1 ClusteringAnimated](../media/7.1_ClusteringAnimated.gif)
 
-In the example above the model finds four groups in the unlabelled data - commonly referred to as clusters.
+In the example above the model finds four groups in the unlabeled data - commonly referred to as clusters.
 
 Unsupervised learning is commonly used in science and industry for cluster analysis and anomaly detection.
 
 ### Cluster analysis
 
-Cluster analysis is a method of finding groupings, known as clusters, in datasets. As the datasets are unlabelled, cluster analysis tries to group similar examples using the examples features.
+Cluster analysis is a method of finding groupings, known as clusters, in datasets. As the datasets are unlabeled, cluster analysis tries to group similar examples using the examples features.
 
 ![7.1 cluster (1)](../media/7.1_cluster__1_.png)
 

@@ -16,7 +16,7 @@ In AI, when we predict an example’s category, we __label__ the example with a 
   
 #### How we predict labels
   
-To build a classification model we need to use examples that are already labeled.  The model learns from these labelled examples, and will be able to predict labels for new unlabelled examples.
+To build a classification model we need to use examples that are already labeled.  The model learns from these labeled examples, and will be able to predict labels for new unlabeled examples.
 
 So if we want to predict the breed of dogs, we would create a data set and label the examples ourselves with the features of dogs (height, weight, fur color, ear shape, etc).  If we label enough features in a big enough data set of dogs, we can create an AI model that can guess the breed of any new dog we meet.
 

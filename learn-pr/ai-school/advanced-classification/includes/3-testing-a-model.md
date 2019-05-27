@@ -8,9 +8,9 @@ Normally, we start with a big dataset and split it into training data and test d
   
 ## Overfitting
 
-Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualise. If we collect two datasets of the same thing (e.g. leaf size versus trunk girth), these should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. In practice this is shown by a model having high accuracy on a training set, but low accuracy on the test set.
+Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualize. If we collect two datasets of the same thing (e.g. leaf size versus trunk girth), these should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. In practice this is shown by a model having high accuracy on a training set, but low accuracy on the test set.
 
-The black line in the graph below is an example of overfitting. The *__red__* line is more generalised. Although the red line may be less accurate than the green line on the *training* set, on the test set and future datasets it will give a much better result.  
+The black line in the graph below is an example of overfitting. The *__red__* line is more generalized. Although the red line may be less accurate than the green line on the *training* set, on the test set and future datasets it will give a much better result.  
   
 ![4.3 Overfitting](../media/4.3_Overfitting.png)
 
@@ -22,15 +22,15 @@ A balance has to be struck, however, because if a model becomes too simple, it w
 
 The simplest way to reduce overfitting can be to reduce the number of features. Datasets may have a lot of features, with some of them not very useful for predictions, or they may have missing data points. Using your own knowledge to manually select which features should be use can work well to improve the accuracy of your machine learning models. However, unbeknown to you, some of this data may hold useful information.
   
-An alternative way to avoid overfitting is regularisation.  
+An alternative way to avoid overfitting is regularization.  
   
-### Regularisation
+### Regularization
   
-Regularisation lets you keep all the features to train your model, but can reduce how much each individual feature affects the training of the model. Regularisation tends to work well when some of the features are only slightly useful. Many modern machine learning models can apply regularisation automatically for you.  
+Regularization lets you keep all the features to train your model, but can reduce how much each individual feature affects the training of the model. Regularization tends to work well when some of the features are only slightly useful. Many modern machine learning models can apply regularization automatically for you.  
 
-![2.5.6.7 Regularisation (1)](../media/2.5.6.7_Regularisation__1_.png)
+![2.5.6.7 Regularization (1)](../media/2.5.6.7_Regularisation__1_.png)
   
-Regularisation occurs in the cost function, where we add a regularisation parameter that will simplify the model. This will give more generalised predictions that will hopefully correspond to greater accuracy in the test set.  
+Regularization occurs in the cost function, where we add a regularization parameter that will simplify the model. This will give more generalized predictions that will hopefully correspond to greater accuracy in the test set.  
 :::
   
 ## Underfitting

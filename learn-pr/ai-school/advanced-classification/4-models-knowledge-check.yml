@@ -49,12 +49,12 @@ quiz:
     - content: "Define where the support vectors fall"
       isCorrect: true
       explanation: "Correct."
-    - content: "Modify input data to ensure it is homogeneous."
+    - content: "Margins modify input data to ensure it's of the same kind."
       isCorrect: false
       explanation: "Incorrect."
     - content: "Ensure that the algorithm only reports two classes."
       isCorrect: false
-      explanation: "Incorrect. SVMs are able to predict as many classes as desired, assuming sufficient data are available."
+      explanation: "Incorrect. SVMs can predict as many classes as needed, if sufficient data is available."
     - content: "No role."
       isCorrect: false
       explanation: "Incorrect. SVMs use margins for predictions."
@@ -74,16 +74,16 @@ quiz:
       explanation: "Incorrect."
   - content: "Overfitting is:"
     choices:
-    - content: "When support vectors come too close to a datapoint."
+    - content: "When support vectors are too close to a datapoint."
       isCorrect: false
-      explanation: "Incorrect. Although it may do this as a consequence of overfitting, this is not a problem, per se."
+      explanation: "Incorrect. Although support vectors may be close to a datapoint as a consequence of overfitting, this is not a problem, in itself."
     - content: "When a model is trained on a data set that is too large."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "When an model is trained so intensely that it becomes less accurate on data it has never seen before."
+    - content: "When a model is trained so intensely that it becomes less accurate on data it has never seen before."
       isCorrect: true
       explanation: "Correct. When a model is too well trained on the training data, it learns its noise rather than only its general trends, making it less accurate on other datasets."
-    - content: "When we reach minimum cost."
+    - content: "When we reach a minimum cost."
       isCorrect: false
       explanation: "Incorrect."
   - content: "Underfitting is:"
@@ -91,12 +91,12 @@ quiz:
     - content: "When a model is trained but has parameters that are too small."
       isCorrect: false
       explanation: "Incorrect. Although it may do this as a consequence of overfitting, this is not a problem, per se."
-    - content: "When a SVM has been trained too well on the training dataset, and becomes inaccurate on other data sets."
+    - content: "When an SVM has been trained too well on the training dataset, and becomes inaccurate on other data sets."
       isCorrect: false
       explanation: "Incorrect."
     - content: "When a model is too simple to represent real patterns in the training and test data sets."
       isCorrect: true
       explanation: "Correct. "
-    - content: "When we reach maximum cost."
+    - content: "When we reach a maximum cost."
       isCorrect: false
       explanation: "Incorrect."

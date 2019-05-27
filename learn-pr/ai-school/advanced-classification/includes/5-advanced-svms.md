@@ -1,8 +1,6 @@
-## Advanced SVM’s
+In a previous programming exercise we made a linear SVM because it fit well to our simple data set. SVMs also perform well with complex and unlabeled data sets because support vectors help optimize the margins to minimize misclassifications.
 
-In a previous programming exercise we made a linear SVM because it fit well to our simple data set. SVMs also perform well with complex and unlabelled data sets because support vectors help optimize the margins to minimize misclassifications.
-
-Previously we talked about having a hard margin - an area around the hyperplane where no data points pass through. Our previous SVM moved our hyperplane (line) to try to maximise how wide this margin could be. 
+Previously we talked about having a hard margin - an area around the hyperplane where no data points pass through. Our previous SVM moved our hyperplane (line) to try to maximize how wide this margin could be.
 
 The problem with this approach is that real world data has noise, which means that it’s normal for the odd datapoint to fall near to ‘best’ hyperplane. If we are using a hard margin, we will move the hyperplane to avoid these noisy data points. This is akin to overfitting.
 
@@ -10,11 +8,11 @@ Instead, a soft-margin SVM can be used to increase your accuracy. Soft-margin us
 
 ![2.9 AdvancedSVMs-02](../media/2.9_AdvancedSVMs-02.png)
 
-The plot above is an example of a hard-margin SVM. The hyperplane (black line) is currently doing a good job of separating blue and green dots. However, if the green dot labelled ‘violation’ was introduced and the SVM retrained, this line would have to move substantially, because it is within the margin. If it was moved even closer to the red dots, the SVM might fail to separate the dots properly and report that it ‘failed’, even though a 100% accuracy rate is unlikely on most datasets. A soft-margin SVM allows some degree of mis-labelling, and so may be more useful here.  
+The plot above is an example of a hard-margin SVM. The hyperplane (black line) is currently doing a good job of separating blue and green dots. However, if the green dot labeled ‘violation’ was introduced and the SVM retrained, this line would have to move substantially, because it is within the margin. If it was moved even closer to the red dots, the SVM might fail to separate the dots properly and report that it ‘failed’, even though a 100% accuracy rate is unlikely on most datasets. A soft-margin SVM allows some degree of mislabeling, and so may be more useful here.  
   
 ![2.9 AdvancedSVMs-01](../media/2.9_AdvancedSVMs-01.png)
 
-The plot above is a soft-margin SVM, where the algorithm is penalised less for data points that fall within the margin. As such, it fits a sensible hyperplane to the data rather than being skewed by a few data points. In practice, it can be worth experimenting with both types of SVMs to try and achieve a higher accuracy.
+The plot above is a soft-margin SVM, where the algorithm is penalized less for data points that fall within the margin. As such, it fits a sensible hyperplane to the data rather than being skewed by a few data points. In practice, it can be worth experimenting with both types of SVMs to try and achieve a higher accuracy.
 
 Advanced SVMs are easy to use on complex data sets. You don’t need to know the details in depth, but it’s good to have an idea of what different tools can do if you run into a difficult data set. One of the most well known tools are kernels.
 
@@ -68,7 +66,7 @@ Congratulations for finishing this module!
 
 There was a lot to take in, so let’s recap.
 
-We learned that during training AI knows how well it is doing by comparing its predictions to reality using a cost function. Minimising this cost means increasing accuracy. To do so, AI often uses "gradient descent" - a procedure where slight changes are made a model’s parameters each time it runs. Each time, the changes made are likely to result in slightly better performance, and the process is repeated until no further improvements are expected.
+We learned that during training AI knows how well it is doing by comparing its predictions to reality using a cost function. Minimizing this cost means increasing accuracy. To do so, AI often uses "gradient descent" - a procedure where slight changes are made a model’s parameters each time it runs. Each time, the changes made are likely to result in slightly better performance, and the process is repeated until no further improvements are expected.
 
 We also learned all about how we test models. Recall that a big dataset is normally split into data for training the model and data to test the model once it is trained. We learned that it's possible for models to be "underfitted" (to perform poorly on all datasets) or to be "overfitted" (perform well on the training data but poorly on test data).
 

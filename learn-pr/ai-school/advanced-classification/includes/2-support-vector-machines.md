@@ -22,7 +22,7 @@ Data points on the margin are called support vectors (hence, the model is called
 
 ![2.4 SupportVectorMachines-02](../media/2.4_SupportVectorMachines-02.png)
 
-New examples introduced to an SVM model are labelled with a category based on which side of the margin they fall upon. If desired, the number of hyperplanes can be increased, allowing many different types of labels. This is useful in text and image classification. SVMs have been widely applied in biology in areas such as accurately classifying proteins and DNA sequences.    
+New examples introduced to an SVM model are labeled with a category based on which side of the margin they fall upon. If desired, the number of hyperplanes can be increased, allowing many different types of labels. This is useful in text and image classification. SVMs have been widely applied in biology in areas such as accurately classifying proteins and DNA sequences.    
   
 ## Programming exercise
 

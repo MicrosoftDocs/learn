@@ -20,7 +20,7 @@ __Machine learning__ is a subset of AI. When normal computer software needs to b
 
 ![1.1 NN Diagram](../media/1-1-b.gif)
 
-Stick around and see! These are fairly advanced AI methods that we’ll cover later in the course. In short, __neural networks__ are a type of machine learning algorithm, modelled on how we thought the human brain worked. __Deep learning__ is a particular way of organizing a neural network, which can solve very difficult problems, like identifying faces from photos or videos.
+Stick around and see! These are fairly advanced AI methods that we’ll cover later in the course. In short, __neural networks__ are a type of machine learning algorithm, modeled on how we thought the human brain worked. __Deep learning__ is a particular way of organizing a neural network, which can solve very difficult problems, like identifying faces from photos or videos.
 
 ## Summary
 
