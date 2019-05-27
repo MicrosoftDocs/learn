@@ -14,13 +14,12 @@ Gradient descent alters model predictions to decrease the error by using calculu
 
 ![Artboard 1](../media/Artboard_1.png)
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Further&nbsp;explanation}
+### Optional: Further explanation
 As you can see above, gradient descent chooses a random starting point then alters the variables which guide the model's predictions, until a local minimum for cost is found. The variables at this minimum are then stored.  
   
 Gradient descent will then start again in a new random starting point to find a new minimum - in case the previous minimum could be improved upon.
-:::
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Learning&nbsp;rate}
+### Optional: Learning rate
 Using calculus, gradient descent repeatedly changes the variables models use to decrease the error rate. How much the variables change each time is called the __learning rate__. 
 
 Learning rates are particularly important in complex models - if a learning rate is too small, the training will take a long time. If it is too large, it is not likely to ever train to be accurate.
@@ -30,8 +29,6 @@ Learning rates are particularly important in complex models - if a learning rate
 In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that gradient descent can be used efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate through trial and error.
 
 ![2.3 LearningRate-01](../media/2.3_LearningRate-01.png)
-
-:::
 
 ## Summary
 

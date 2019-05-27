@@ -36,13 +36,12 @@ There are several types of kernels you can use for the kernel trick, including l
 
 You just need to know the different kernels exist, and you should try several of them to try to improve your models accuracy. Luckily, it’s very easy to try different kernels, so let’s give it a go.
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Using&nbsp;a&nbsp;category&nbsp;as&nbsp;a&nbsp;feature&nbsp;-&nbsp;one-hot&nbsp;vectors}
+### Optional: Using a category as a feature - one-hot vectors
 Often you may have a category in your dataset you want to use as a feature – such as a products country of origin. To use a category as a feature you represent the category as a __one-hot vector__.
 
 ![3.2 OneHotVector](../media/3.2_OneHotVector.png)
 
 A one-hot vector is a vector (list) where each position in the list represents a different category. The vector is filled with 0’s and with one 1. In the example above we are representing 4 animals, where a 1 in the first position represents a cat, and a 1 in the fourth position represents a rabbit. Now your category is useable by a machine learning model.
-:::
 
 ## Programming exercise
 

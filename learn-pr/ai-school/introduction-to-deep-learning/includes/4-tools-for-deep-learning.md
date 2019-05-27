@@ -32,7 +32,7 @@ Despite this, PyTorch is extremely popular and is known especially for its ease 
 
 NumPy is an open source Python library which provides a large toolkit of mathematical functions and support for large data structures. Similar to how we have used it in this course, NumPy is extremely popular for data pre-processing before we build sophisticated AI models.
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;ResNets}
+### Optional: ResNets
 Residual Networks (ResNet) is a specialised type of neural network, usually implemented to handle difficult problems that require deep neural networks. The ‘Res’ in ResNet refers to a residual block - a part of the neural network which allows data to skip layers.  
   
 ![6.4 Resnet](../media/6.4_Resnet.png)
@@ -40,4 +40,3 @@ Residual Networks (ResNet) is a specialised type of neural network, usually impl
 This helps solve a common problem with deep neural networks - degradation of accuracy with many hidden layers. Data is transformed as it travels from layer to layer, and low accuracy can occur when data transformation is too high.
   
 Implementations of ResNets have shown very high accuracy for image analysis.
-:::

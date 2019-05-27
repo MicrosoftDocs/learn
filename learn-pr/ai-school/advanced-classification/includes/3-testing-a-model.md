@@ -18,7 +18,7 @@ Overfitting tends to be encouraged by two major factors. Firstly, it can be more
   
 A balance has to be struck, however, because if a model becomes too simple, it won’t fit either training or test data well.
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Methods&nbsp;to&nbsp;avoid&nbsp;overfitting}
+### Optional: Methods to avoid overfitting
 
 The simplest way to reduce overfitting can be to reduce the number of features. Datasets may have many features, with some of them not useful for predictions, or they may have missing data points. Using your own knowledge to manually select which features should be used can work well to improve the accuracy of your machine learning models. However, unbeknown to you, some of this data may hold useful information.
   
@@ -31,7 +31,7 @@ Regularization lets you keep all the features to train your model, but can reduc
 ![2.5.6.7 Regularization (1)](../media/2.5.6.7_Regularization__1_.png)
   
 Regularization occurs in the cost function, where we add a regularization parameter that will simplify the model. This will give more generalized predictions that will hopefully correspond to greater accuracy in the test set.  
-:::
+
   
 ## Underfitting
 
@@ -41,7 +41,7 @@ Models that are too simple or undertrained fail to find true relationships in ou
 
 To address underfitting problems you may move onto a more complex algorithm (such as an SVM), get more training data, or add more features to your data set.
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Validation&nbsp;sets}
+### Optional: Validation sets
 
 It can be time consuming and computationally expensive to use a large training dataset only to find out at the end of training that overfitting has occurred and you have low accuracy on your test set. Using a validation set alongside your training set gives an unbiased result for your model to use to detect overfitting as it is occurring.
 
@@ -62,7 +62,6 @@ You can use a method called __holdout__ to select your validation set from your 
 __k-fold cross-validation__ is commonly used by AI practitioners. It randomly partitions the training data into k-number of sets. So a 4-fold cross validation set would make 4 sets from the data.
 
 Each set is able to be used as a validation set once, while the other 3 are used for your training set. So you would have 4 different validation sets, which helps improve accuracy. If you have a large dataset it is common to use 10-fold cross-validation.
-:::
 
 ## Summary
 

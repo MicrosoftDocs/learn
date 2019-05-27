@@ -14,5 +14,4 @@ We learned that:
   - __Back propagation__ identifies which weights need to change and by how much
   - Back propagation calculates error for each edge by working backwards from the output toward the input node.
 
-
 Next up we’ll cover some variations of neural networks in deep learning, and their modern applications.

@@ -20,13 +20,12 @@ Having the entire detection pipeline in a single neural network gives YOLO major
 
 YOLO can analyse every frame from most cameras. You are able to make a tradeoff - increasing the speed of analysis for a slight decrease in accuracy. However YOLO performs quite well analysing between 30 and 60 images per second.
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;Softmax}
+### Optional: Softmax
 Softmax is an activation function used in neural networks. CNNs commonly use softmax in the final layers of a classification model because softmax outputs probabilities for multiple classes. This has proven to be quite successful for multiclass classifications using CNNs and other deep neural networks.  
   
 ![6.3 CNN (2)](../media/6.3_CNN__2_.png)
   
 As you can see above, Softmax outputs multiple probabilities adding up to 1. The probability that the data softmax has analysed represents a lion is given as 0.98, whereas the next closest  is a wolf at 0.008 - we will predict the original image is a lion.  
-:::
 
 ### Programming exercise
  

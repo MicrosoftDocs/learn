@@ -17,7 +17,6 @@ In this course, we don’t need to get into the math, but understanding the erro
 To calculate the error for regression, we calculate the __difference__ between each __data point__ and the __predicted value__ given by the model (green lines). We then square each of these numbers, then add them together.  
   
 __Why square the numbers?__ Using a squared value ensures that the model pays attention to data that are far from the average. Without this, values that are particularly high or low can be mostly ignored by the model, or the model can end up biased (not pass through the average position of all data points). A side effect of this is that our models can sometimes be ruined by bad data points - for example, data that wasn’t collected properly, or an outlier measurement that is unlikely to occur again. There are also other, more complex mathematical reasons for using a squared value, but these go beyond the scope of this course.
-:::
 
 ### Programming exercise
 

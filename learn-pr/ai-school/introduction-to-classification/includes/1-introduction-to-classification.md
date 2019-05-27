@@ -22,11 +22,10 @@ So if we want to predict the breed of dogs, we would create a data set and label
 
 There are lots of different classification algorithms we can use. We’ll use a simple, but powerful, classification algorithm next - __logistic regression__.
 
-:::tutorial-optional-section {tutorial-optional-section=Optional:&nbsp;What&nbsp;if&nbsp;we&nbsp;don't&nbsp;have&nbsp;labels?}
+### Optional: What if we don't have labels?
 In this course we will primarily cover supervised learning – teaching AI models to map an input set to an output set, based on a data set we provide. However, you may have heard about unsupervised learning – AI models making predictions without an output set in the data set.
  
 Unsupervised AI models can make some predictions without an output set, but the predictions are very limited in comparison to supervised AI models. Some applications include clustering, anomaly detection, and general adversarial networks (GANs). We cover supervised learning in the final module of this course.
-:::
 
 ## Summary
 

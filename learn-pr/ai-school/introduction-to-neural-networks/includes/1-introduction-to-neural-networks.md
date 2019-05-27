@@ -4,7 +4,6 @@ Now we’ve covered the fundamentals and core algorithms of machine learning, we
 
 Originally hypothesised in the 1940s, neural networks are now one of the main tools used in modern machine learning. Neural networks can be used for both regression and categorisation applications. Recent advances with storage, processing power, and open-source tools have allowed many successful applications of neural networks in medical diagnosis, filtering explicit content, speech recognition and machine translation.
 
-
 ### Nodes
 
 Neural networks are made up of connected __nodes__, which data passes through. A node combines data sent to it from other nodes, then outputs the combined data to nodes further down the neural network. (Like brain pathways made up of neurons connected together by synapses.)
