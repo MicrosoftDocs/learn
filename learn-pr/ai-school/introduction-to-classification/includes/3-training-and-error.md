@@ -6,7 +6,7 @@ So in the programming exercise, how did the models we built ‘train’ themselv
 
 The diagram above shows an algorithm trying to find the line that best separates the blue from the green dots. As you can see above, the algorithm changes its variables (the starting point and gradient of the line) until it finds the line that most accurately does so. This process of adjusting these variables is called __training__. Once the algorithm has completed training, and we can use it to predict new examples, it’s called a model.
 
-There are lots of different ways training can work. One common method is to start with a random guess (in this case, a random line), and see whether adjustments (for example, a more or less steep gradient) give a better result. This is repeated until adjustments do not  improve the model any further, until the improvements for a change are very small, or some sort of attempt limit is hit.
+There are many different ways training can work. One common method is to start with a random guess (in this case, a random line), and see whether adjustments (for example, a more or less steep gradient) give a better result. This is repeated until adjustments do not  improve the model any further, until the improvements for a change are very small, or some sort of attempt limit is reached.
 
 ## Error
 
@@ -25,7 +25,7 @@ It is common in machine learning and statistics to have datasets that have missi
 
 Now you’ve been walked through the basics of classification algorithms, and used logistic regression to predict the probability of a team winning a football (soccer) match! We’ve also covered training a model, and error. Well done.
 
-That's the end of this section and this module! During this section we learned:
+That's the end of this unit and this module! During this unit we learned:
 
 * __Training__ - the AI algorithm changes the variables it uses to make predictions until it reaches its lowest error rate.
 * __Irreducible error__ - examples that the model cannot possibly predict accurately.
