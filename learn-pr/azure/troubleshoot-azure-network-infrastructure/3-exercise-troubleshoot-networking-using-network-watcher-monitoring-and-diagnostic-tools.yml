@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.3.exercise-troubleshoot-networking-using-network-watcher-monitoring-and-diagnostic-tools
+metadata:
+  title: Exercise - Troubleshoot networking using Network Watcher monitoring and diagnostic tools
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Troubleshoot networking using Network Watcher monitoring and diagnostic tools
+durationInMinutes: 10
+content: |
+  [!include[](includes/3.exercise-troubleshoot-networking-using-network-watcher-monitoring-and-diagnostic-tools.md)]
