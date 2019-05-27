@@ -23,5 +23,11 @@ products:
 - azure
 modules:
 - learn-wwl.introduction-to-ai
+- learn-wwl.introduction-to-regression
+- learn-wwl.introduction-to-classification
+- learn-wwl.advanced-classification-models
+- learn-wwl.neural-networks
+- learn-wwl.deep-learning
+- learn-wwl.unsupervised-learning
 trophy:
   uid: learn.ml-crash-course.trophy
