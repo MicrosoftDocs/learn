@@ -4,13 +4,13 @@ Every time you use a voice assistant on your mobile phone or there’s a suggest
 
 ### Natural language processing
 
-Natural language processing (NLP) uses AI models to analyse language for you. NLP includes spell checking, translation between languages, speech recognition, chatbots, sentiment analysis and key phrases extraction, and many other areas.  
+Natural language processing (NLP) uses AI models to analyze language for you. NLP includes spell checking, translation between languages, speech recognition, chatbots, sentiment analysis and key phrases extraction, and many other areas.  
 
 ![6.2 NLPExampleVideo](../media/6.2_NLPExampleVideo.png)
 
 ### Computer vision
 
-Computer vision, sometimes known as image recognition, can analyse images and extract features from them (such as objects, colors, locations, or animals). Computer vision can be extended to videos for real-time information. Some services combine this with speech recognition for video analytics.
+Computer vision, sometimes known as image recognition, can analyze images and extract features from them (such as objects, colors, locations, or animals). Computer vision can be extended to videos for real-time information. Some services combine this with speech recognition for video analytics.
 
 ![Man swimming with a bounding box identifying his face a 28 year old male](../media/face-api.png)
 

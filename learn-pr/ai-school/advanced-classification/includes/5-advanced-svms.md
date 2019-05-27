@@ -18,7 +18,7 @@ Advanced SVMs are easy to use on complex data sets. You don’t need to know the
 
 ## Kernels
 
-SVMs can optimize predictions by use of kernel methods - a type of algorithm that analyses patterns. The kernel trick is the most widely used kernel method. It uses calculus to separate the data and calculate a line of best fit that can be non-linear.
+SVMs can optimize predictions by use of kernel methods - a type of algorithm that analyzes patterns. The kernel trick is the most widely used kernel method. It uses calculus to separate the data and calculate a line of best fit that can be non-linear.
 
 There are several types of kernels you can use for the kernel trick, including linear, polynomial, gaussian, and sigmoid (S-shaped) kernels. These have different properties which give different margins to separate your examples. While practitioners tend to try polynomial kernels and gaussian kernels first, there is no general best choice of kernel.
 
