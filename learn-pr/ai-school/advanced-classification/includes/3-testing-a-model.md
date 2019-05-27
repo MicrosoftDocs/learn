@@ -35,9 +35,9 @@ Regularization occurs in the cost function, where we add a regularization parame
   
 ## Underfitting
 
-Models that are too simple or undertrained fail to find true relationships in our data. This is called *underfitting* and reflected by poor accuracy in both training and test data. Underfitting typically occurs when there is not enough training data, when useful features are not used, or when the type of model is not suitable for the data at hand. For example, the graph below shows underfitting occurring in a linear model which is trying to predict a non-linear problem. While the line does separate the red and blue dots somewhat, a non-linear line is likely to do a better job.
+Models that are too simple or undertrained fail to find true relationships in our data. This is called *underfitting* and reflected by poor accuracy in both training and test data. Underfitting typically occurs when there is not enough training data, when useful features are not used, or when the type of model is not suitable for the data at hand. For example, the graph below shows underfitting occurring in a linear model that is trying to predict a non-linear problem. While the line does separate the red and blue dots somewhat, a non-linear line is likely to do a better job.
   
-![2.5.6.7 Overfitting Regularsation Underfitting-03](../media/2.5.6.7_Overfitting_Regularization_Underfitting-03.png)
+![2.5.6.7 Overfitting Regularization Underfitting-03](../media/2.5.6.7_Overfitting_Regularization_Underfitting-03.png)
 
 To address underfitting problems you may move onto a more complex algorithm (such as an SVM), get more training data, or add more features to your data set.
 
@@ -61,14 +61,14 @@ You can use a method called __holdout__ to select your validation set from your 
 
 __k-fold cross-validation__ is commonly used by AI practitioners. It randomly partitions the training data into k-number of sets. So a 4-fold cross validation set would make 4 sets from the data.
 
-Each set is able to be used as a validation set once, while the other 3 are used for your training set. So you would have 4 different validation sets, which helps improve accuracy. If you have a large dataset it is common to use 10-fold cross-validation.
+Each set is able to be used as a validation set once, while the other 3 are used for your training set. So you would have 4 different validation sets, which helps improve accuracy. If you have a large dataset, it is common to use 10-fold cross-validation.
 
 ## Summary
 
 Well done! Here we covered:
 
 * __Test sets__ - data to test a model’s accuracy on - separate from the training data.
-* __Noise__ - natural variation in the data which we are not interested in.
+* __Noise__ - natural variation in the data that we are not interested in.
 * __Overfitting__ - when a model is trained too well and learns the noise in the training set, giving poor results on the test set.
 * __Underfitting__ - when a model isn’t trained well enough and has mediocre performance on both training and test datasets.
 
