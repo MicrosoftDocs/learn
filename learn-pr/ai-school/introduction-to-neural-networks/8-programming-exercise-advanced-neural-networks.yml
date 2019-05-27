@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-programming-exercise-advanced-neural-networks.md)] 
+  [!include[](includes/8-programming-exercise-advanced-neural-networks.md)] 
