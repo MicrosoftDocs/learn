@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-knowledge-check.md)] 
+  [!include[](includes/3-knowledge-check.md)] 
 quiz:
   title: Check your knowledge
   questions:
@@ -53,7 +53,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Algorithms have to have at least one step."
     - content: "Two."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. k-means has a step that assigns examples to clusters, and then a step that moves the starting points to the average value of the examples grouped to that cluster."
     - content: "Four."
       isCorrect: false
