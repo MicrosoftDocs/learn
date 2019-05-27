@@ -8,11 +8,11 @@ Natural language processing (NLP) uses AI models to analyze language for you. NL
 
 ### Computer vision
 
-Computer vision, sometimes known as image recognition, can analyze images and extract features from them (such as objects, colors, locations, or animals). Computer vision can be extended to videos for real-time information. Some services combine this with speech recognition for video analytics.
+Computer vision, sometimes known as image recognition, can analyze images and extract features from them (such as objects, colors, locations, or animals). Computer vision can be extended to videos for real-time information. Some services combine computer vision with speech recognition for video analytics.
 
 ![Person swimming with a bounding box identifying their face a 28-year old male](../media/face-api.png)
 
-Computer vision has significantly enhanced the ability to use search engines for images. Custom vision allows users to easily train their own computer vision models in the browser for individual applications, such as checking for hard-hat compliance in dangerous work areas.
+Computer vision has significantly enhanced the ability to use search engines for images. Custom vision allows users to easily train their own computer vision models in the browser. Users can then use these models in their own individual applications, such as checking for hard-hat compliance in dangerous work areas.
 
 ### Recommendations
 

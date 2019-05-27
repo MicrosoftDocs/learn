@@ -1,5 +1,3 @@
-## Introduction to CNNs
-
 Convolutional neural networks (CNNs) are a class of deep neural networks, most commonly used in computer vision applications. 
 
 Convolutional refers to the network pre-processing data for you. This task was traditionally programmed by data scientists. The neural network can learn how to do pre-processing, applying filters for things such as edge detection.
