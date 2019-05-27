@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.neural-networks.knowledge-check-2
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: The second knowledge check for neural networks.
+  ms.date: 06/30/2019
+  author: markjulmar
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which is correct?"
+    choices:
+    - content: "Activation functions change whether data flows from one node to another."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "It is obvious which activation function to use, before starting training."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "There are only two activation functions available: ReLu and tanh."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Sigmoid is always the first activation function you should try."
+      isCorrect: false
+      explanation: "Incorrect. There is no rule that you have to try a specific activation function first."
+  - content: "Back Propagation:"
+    choices:
+    - content: "Helps to undo design errors when setting up a neural network."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Is one method by which neural networks learn."
+      isCorrect: true
+      explanation: "Incorrect. If the error is large, this means that the predicted values do not match the data well."
+    - content: "Is used to determine how accurate a neural network is."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Negative error."
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Stochastic gradient descent (SGD) is a:"
+    choices:
+    - content: "Variation of gradient descent particularly suited for training large neural networks."
+      isCorrect: true
+      explanation: "Correct. SGD uses a single example per iteration, which helps train large neural networks efficiently."
+    - content: "Type of node."
+      isCorrect: false
+      explanation: "Incorrect. SGD is a method we use."
+    - content: "Variation of labels for neural networks"
+      isCorrect: false
+      explanation: "Incorrect. We use the same labels for neural networks as we do other machine learning algorithms."
+    - content: "An activation function."
+      isCorrect: false
+      explanation: "Incorrect. SGD is a method we use to optimize machine learning models."

@@ -42,3 +42,13 @@ This result is evaluated by the activation function as it is leaving the node, w
 Edges connect nodes from different layers together, and contain a weight. Weights are a value which is multiplied to the data coming into the node. The weights are initially random, and are optimized by gradient descent.  
   
 Each layer in a neural network can optionally contain a bias - a single node which does not take input and is always “on”.
+
+## Summary
+
+That's activation functions! To recap:
+
+* __Activation functions__ regulate the output of nodes, and can stop the node outputting any data at all (turning the node “off”).
+* The type of activation functions are user decided, and AI practitioners experiment with different activation functions to see which one gives the best result.
+* __ReLu__ and __tanh__ are two of the most popular activation functions and are generally tried first.
+
+Next up we'll cover a different type of gradient descent - stochastic gradient descent (SGD), and see how neural networks use gradient descent with an animation.
