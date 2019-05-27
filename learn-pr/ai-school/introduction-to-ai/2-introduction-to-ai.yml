@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/1-introduction-to-ai.md)] 
+  [!include[](includes/2-introduction-to-ai.md)] 

@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 20 
 content: |
-  [!include[](includes/5-learn-ai-key-concepts.md)] 
+  [!include[](includes/6-learn-ai-key-concepts.md)] 

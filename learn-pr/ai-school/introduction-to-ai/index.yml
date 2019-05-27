@@ -8,7 +8,7 @@ metadata:
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
+  #ms.learn-contact: markjulmar
 title: Introduction to AI
 summary: A brief introduction to AI and some of the fundamental concepts.
 abstract: | 
@@ -28,10 +28,13 @@ roles:
 products: 
 - azure
 units: 
+- learn-wwl.introduction-to-ai.introduction
 - learn-wwl.introduction-to-ai.introduction-to-ai
 - learn-wwl.introduction-to-ai.data-for-ai
 - learn-wwl.introduction-to-ai.introduction-to-azure-notebooks
 - learn-wwl.introduction-to-ai.walkthrough-of-azure-notebooks
 - learn-wwl.introduction-to-ai.learn-ai-key-concepts
+- learn-wwl.introduction-to-ai.knowledge-check
+- learn-wwl.introduction-to-ai.summary-and-resources
 badge: 
   uid: learn-wwl.introduction-to-ai.badge #add the uid for your achievement badge.

@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-ai.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: A knowledge check for simple linear regression.
+  ms.date: 06/30/2019
+  author: markjulmar
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What kind of line does linear regression fit?"
+    choices:
+    - content: "Straight or curved, whichever best fits the data."
+      isCorrect: false
+      explanation: "Incorrect. Linear regression finds the best straight line that fits the data. It does not check if a curved line is a better fit."
+    - content: "Straight."
+      isCorrect: true
+      explanation: "Correct. Linear regression tries to find the optimal angle and position for a straight line."
+    - content: "Curved."
+      isCorrect: false
+      explanation: "Incorrect. Linear regression finds the best linear line that fits the data."
+    - content: "Jagged."
+      isCorrect: false
+      explanation: "Incorrect. Linear regression finds a regular line that fits the data."
+  - content: "A line that fits well will have a:"
+    choices:
+    - content: "Small error."
+      isCorrect: true
+      explanation: "Correct. If the error is small, this means that the predicted values are close to the data points."
+    - content: "Large error."
+      isCorrect: false
+      explanation: "Incorrect. If the error is large, this means that the predicted values do not match the data well."
+    - content: "Unknown error."
+      isCorrect: false
+      explanation: "Incorrect. The error must be known to know how well the line fits the data."
+    - content: "Negative error."
+      isCorrect: false
+      explanation: "Incorrect. The error can not be negative."
+  - content: "For linear regression: At x=10, we have a data point at y=4. At x=10, our line gives a predicted value of y= 7. What is the error (squared difference) at this data point?"
+    choices:
+    - content: "0"
+      isCorrect: false
+      explanation: "Incorrect. Error comes from the y component, not the x."
+    - content: "3"
+      isCorrect: false
+      explanation: "Incorrect. Remember to square the difference."
+    - content: "9"
+      isCorrect: true
+      explanation: "Correct. y=4 for the data point, but y=7 for the predicted value. 7 – 4 = 3. We then square the value: 3 ^ 2 = 9."
+    - content: "-9"
+      isCorrect: false
+      explanation: "Incorrect. As the error is the squared difference, the error cannot be negative."
+  - content: "The word ‘multiple’ in the name ‘multiple linear regression’ means that:"
+    choices:
+    - content: "It predicts multiple features using one feature."
+      isCorrect: false
+      explanation: "Incorrect. It only predicts one feature."
+    - content: "It predicts multiple features using multiple features."
+      isCorrect: false
+      explanation: "Incorrect. Many features are used but it only predicts one feature."
+    - content: "It uses multiple features to predict one other feature."
+      isCorrect: true
+      explanation: "Correct. For example, we might use height and weight to predict shoe size."
+    - content: "It predicts one feature to using one feature."
+      isCorrect: false
+      explanation: "Incorrect. Multiple features are used."
