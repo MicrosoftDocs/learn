@@ -2,7 +2,7 @@ Up to this point you have only run the application on your machine. The next ste
 
 ## Customize Visual Studio Code
 
-Before you begin, there are two changes you need to make to Visual Studio Code. The first grants the Azure extension access to Learn's concierge Azure subscription. This subscription is created as you activate the sandbox and allows you to use Azure services without incurring any costs.
+Before you begin, there are two changes you need to make to Visual Studio Code. The first grants Visual Studio Code access to Learn's concierge Azure subscription. This subscription is created as you activate the sandbox and allows you to use Azure services without incurring any costs.
 
 The second customization tells the extension to use the advanced creation process. If you skip this step, the extension uses default values and won't create your function to work with the sandbox.
 
