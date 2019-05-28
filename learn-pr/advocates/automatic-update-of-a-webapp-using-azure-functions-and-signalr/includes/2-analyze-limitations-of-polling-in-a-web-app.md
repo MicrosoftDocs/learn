@@ -4,7 +4,7 @@ The application’s current architecture reports stock information by fetching c
 
 Before we analyze any limitations, let's review the current architecture. The server is responsible for storing stock information and the client renders data in the browser.
 
-We'll se up the current solution on your local machine in the next unit. 
+We'll set up the current solution on your local machine in the next unit. 
 
 ### Server
 
