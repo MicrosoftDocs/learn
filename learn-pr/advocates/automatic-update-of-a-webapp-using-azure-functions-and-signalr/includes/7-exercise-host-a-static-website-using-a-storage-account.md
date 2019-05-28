@@ -88,12 +88,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 1. Open **public/index.html.js** and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
-1. Another message appears in Visual Studio code asking if you want to upload local settings. Select  **Upload settings** to copy the values from **local.settings.json** to the server.
-
-    ![Upload local settings](../media/serverless-app-upload-local-settings.png)
-
-    If the message box doesn't appear or was dismissed, you can still upload your local settings. Opening the command palette via **F1** and select **Azure Functions: Upload local settings**.  
-    When prompted, choose to overwrite all settings.
+1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose to overwrite all settings.
 
 ## Configure static websites in Azure Storage
 
