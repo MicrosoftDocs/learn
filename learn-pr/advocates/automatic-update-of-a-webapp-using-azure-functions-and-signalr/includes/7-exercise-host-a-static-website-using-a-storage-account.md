@@ -129,7 +129,7 @@ Keep this browser window open. You will return refresh this window once the CORS
 
 1. In the command palette, search for and select the **Azure Functions: Open in portal** command.
 
-1. Select the subscription and function app name.
+1. Select the function app name.
 
 1. Once the portal is open in the browser, select the **Platform features** tab and under **API** select **CORS**.
 
