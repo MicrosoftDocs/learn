@@ -98,7 +98,7 @@ For the app to run, you need to add the connection settings for your cloud servi
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --query primaryMasterKey -o tsv)
 
-    printf "\n\n<STORAGE_CONNECTION_STRING>=\n$STORAGE_CONNECTION_STRING\n\n<COSMOSDB_CONNECTION_STRING>=\n$COSMOSDB_CONNECTION_STRING\n\n<COSMOSDB_MASTER_KEY>=\n$COSMOSDB_MASTER_KEY\n\n"
+    printf "\n\nReplace <STORAGE_CONNECTION_STRING> with:\n$STORAGE_CONNECTION_STRING\n\nReplace <COSMOSDB_CONNECTION_STRING> with:\n$COSMOSDB_CONNECTION_STRING\n\nReplace <COSMOSDB_MASTER_KEY> with:\n$COSMOSDB_MASTER_KEY\n\n"
     ```
 
 1. Navigate to where you cloned the application and open the **start** folder in Visual Studio Code. Open **local.settings.json** in the editor so you can update the file.
