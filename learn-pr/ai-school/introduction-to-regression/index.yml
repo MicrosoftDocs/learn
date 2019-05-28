@@ -13,7 +13,8 @@ title: Introduction to Regression
 summary: This is an introduction to regression - predicting numbers using an AI model - Linear Regression.
 abstract: | 
   In this module, you will:
-  - Learn about regression, simple linear regression, multiple linear regression, and polynomial regression.
+  - Learn the fundamentals of regression.
+  - Learn how to make simple linear regression, multiple linear regression, and polynomial regression predictive models.
   - Learn about non-linear data sets.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
@@ -28,10 +29,13 @@ products:
 - azure
 units: 
 - learn-wwl.introduction-to-regression.introduction
+- learn-wwl.introduction-to-regression.introduction-to-regression
 - learn-wwl.introduction-to-regression.simple-linear-regression
 - learn-wwl.introduction-to-regression.multiple-linear-regression
 - learn-wwl.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
 - learn-wwl.introduction-to-regression.tips-for-applying-machine-learning
 - learn-wwl.introduction-to-regression.knowledge-check
+- learn-wwl.introduction-to-regression.summary
+
 badge: 
   uid: learn-wwl.introduction-to-regression.badge #add the uid for your achievement badge.

@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 20 
 content: |
-  [!include[](includes/5-tips-for-applying-machine-learning.md)] 
+  [!include[](includes/6-tips-for-applying-machine-learning.md)] 
