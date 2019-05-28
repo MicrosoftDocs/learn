@@ -1,6 +1,4 @@
-As their drone shipping business grows, system load increases. The current architecture is straining under the load and they would like to be able to provide better flexibility in scaling the application.
-
-This scalability issue with the application is one of the drivers for Fabrikam to look at moving their application to a microservices architecture.
+As their drone shipping business grows, system load increases. The current architecture is straining under the load and they would like to be able to provide better flexibility in scaling the application. Improving the application's scalability is one of the drivers for Fabrikam to look at moving their application to a microservices architecture.
 
 ## Scaling monolith vs scaling microservices
 
