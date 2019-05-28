@@ -17,7 +17,7 @@ To verify your implementation, you can reference the *end* folder or you can [vi
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Restore Visual Studio Code settings
-
+The following steps return the settings of your Visual Studio Code instance back to how it was before you completed the tutorial. If you don't restore the previous settings, you won't be able to connect to your Azure subscriptions from Visual Studio Code. 
 ### Disable advanced creation of Azure Functions
 
 1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
