@@ -17,7 +17,7 @@ In this module you have seen:
 Here are the key takeaways:
 
 :::row:::
-![Icon of key](../media/Key_Takeaway.png)
+![Icon of key](../media/key-takeaway.png)
 :::column:::
 1. Be aware of opportunities for application migration and modernization to Azure, such as End of Support (EOS) for Windows Server 2008/R2.
 
@@ -37,9 +37,9 @@ Use these resources to discover more.
 
 ### Introduction
 
-- [Applications and infrastructure migration and modernization](https://docs.microsoft.com/en-us/learn/modules/app-and-infra-migration-and-modernization/index)
+- [Applications and infrastructure migration and modernization](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization/index)
 
-- [Introduction to Microsoft data estate migration and modernization](https://docs.microsoft.com/en-us/learn/modules/data-estate-migration-and-modernization/1-introduction-to-microsoft-data-estate-migration-and-modernization)
+- [Introduction to Microsoft data estate migration and modernization](https://docs.microsoft.com/learn/modules/data-estate-migration-and-modernization/1-introduction-to-microsoft-data-estate-migration-and-modernization)
 
 ### Demo - Microsoft Azure migration
 

@@ -14,7 +14,7 @@ We will take on the role of helping Contoso Air move to a DevOps practice. Letâ€
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this brief animation introducing the segments of the Azure DevOps demo.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this brief animation introducing the segments of the Azure DevOps demo.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2VqHn]
 
@@ -32,7 +32,7 @@ First, letâ€™s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Ma
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video from Hridayraj to learn about the automation and integration benefits of Azure DevOps.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video from Hridayraj to learn about the automation and integration benefits of Azure DevOps.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2V0I8]
 
@@ -59,7 +59,7 @@ Follow along as the Contoso Air DevOps Engineer sets up a CI pipeline so that co
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn to configure a CI/CD pipeline with Azure Pipelines.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn to configure a CI/CD pipeline with Azure Pipelines.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRN]
 
@@ -86,7 +86,7 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn why Application Insights can help you find out how your app is performing.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn why Application Insights can help you find out how your app is performing.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRL]
 
@@ -113,7 +113,7 @@ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track proje
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to learn why integrating Azure Boards can help make end users successful.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn why integrating Azure Boards can help make end users successful.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 

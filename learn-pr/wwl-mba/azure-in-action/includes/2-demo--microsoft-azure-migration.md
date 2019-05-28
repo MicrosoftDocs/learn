@@ -8,7 +8,7 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this brief animation for a visual roadmap of the demo.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this brief animation for a visual roadmap of the demo.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2QLWz]
 
@@ -18,7 +18,7 @@ Before beginning the migration of Contoso's support application, Victor creates 
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch as Victor prepares to migrate Contoso's service ticket application.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch as Victor prepares to migrate Contoso's service ticket application.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM6]
 
@@ -32,7 +32,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Victor uses the Azure Migrate collector VM to gather the data needed for migration.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Victor uses the Azure Migrate collector VM to gather the data needed for migration.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
 
@@ -45,7 +45,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Azure Migrate uses the data collected to make recommendations for migration.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Azure Migrate uses the data collected to make recommendations for migration.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUq]
 
@@ -58,7 +58,7 @@ With his assessment complete, Victor begins by migrating Contoso's database from
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to follow the steps to migrate Contoso's database.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to follow the steps to migrate Contoso's database.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PBj3]
 
@@ -71,7 +71,7 @@ With the database migration complete, Victor is ready to migrate Contoso's on-pr
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Victor migrates the application servers.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Victor migrates the application servers.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PLJp]
 
@@ -84,7 +84,7 @@ With the migration complete, Victor needs to complete a couple of final steps to
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video for a demonstration of these post-migration steps.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video for a demonstration of these post-migration steps.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUr]
 

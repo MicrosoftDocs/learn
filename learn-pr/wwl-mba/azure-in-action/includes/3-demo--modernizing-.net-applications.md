@@ -8,7 +8,7 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this brief animation introducing the application innovation demo.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this brief animation introducing the application innovation demo.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9t]
 
@@ -18,7 +18,7 @@ David Sanchez, Senior Product Marketing Manager for Azure Application Developmen
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this introductory video with David Sanchez.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this introductory video with David Sanchez.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ZSs8]
 
@@ -31,7 +31,7 @@ The Tailwind Traders Rewards app is migrated to **Azure App Service** using the 
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see a demo of application migration to Azure App Service.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see a demo of application migration to Azure App Service.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2U0kL]
 
@@ -44,7 +44,7 @@ Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to explore the capabilities and benefits of Azure App Service.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to explore the capabilities and benefits of Azure App Service.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TSyp]
 
@@ -62,7 +62,7 @@ Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Tailwind Traders can add automation to their Rewards application without touching the code.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Tailwind Traders can add automation to their Rewards application without touching the code.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
 
