@@ -240,7 +240,7 @@ To verify that your virtual networks are connected, you'll use SSH to connect fr
 
 1. You'll get a security notification when you first connect. Enter **yes** when prompted, and then enter the password you used when you created the VM.
 
-    You should now be connected to the **Azure-VM**. This machine wasn't assigned a public IP address. You can access this VM only through the site-to-site connection.
+    You should now be connected to **Azure-VM**. This machine wasn't assigned a public IP address. You can access this VM only through the site-to-site connection.
 
 1. Use this command to close the SSH session from **HQ-VM** to **Azure-VM**:
 
