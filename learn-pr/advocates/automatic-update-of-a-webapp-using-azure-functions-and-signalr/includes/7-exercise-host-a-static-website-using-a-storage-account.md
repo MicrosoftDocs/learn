@@ -92,7 +92,8 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
     ![Upload local settings](../media/serverless-app-upload-local-settings.png)
 
-    If the message box doesn't appear or was dismissed, you can still upload your local settings. Opening the command palette via **F1** and select **Azure Functions: Upload local settings**. Choose to overwrite any existing settings, if prompted.
+    If the message box doesn't appear or was dismissed, you can still upload your local settings. Opening the command palette via **F1** and select **Azure Functions: Upload local settings**.  
+    When prompted, choose to overwrite all settings.
 
 ## Configure static websites in Azure Storage
 
