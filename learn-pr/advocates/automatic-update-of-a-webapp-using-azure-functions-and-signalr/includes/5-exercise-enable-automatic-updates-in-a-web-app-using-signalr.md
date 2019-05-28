@@ -107,61 +107,53 @@ First, you need to create a new function that listens for changes in the databas
 
 1. Append the property `"feedPollDelay": 500` to the existing trigger binding definition. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. The application you're building is built around a push-based architecture. However behind the scenes, Azure Cosmos DB is continually monitoring the change feed to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognize changes, not how your web application exposes changes to the data.
 
-<!-- 
-    REVIEW:
-    According to the docs, the feedPollDelay means "Gets or sets the delay in between polling a partition for new changes on the feed, after all current changes are drained" That doesn't seem to have anything to do with contacting connected clients. I also still am not sure there is anything different between this CosmosDB binding the one from the preceding exercise
+    The Azure Cosmos DB binding for your function should now look like the following code.
 
-    CONCLUSION
-    Reworded paragraph to explain why there is a setting referencing "polling" in a push-based web app.
--->
+    ```json
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "AzureCosmosDBConnectionString",
+      "databaseName": "stocksdb",
+      "collectionName": "stocks",
+      "createLeaseCollectionIfNotExists": "true",
+      "feedPollDelay": 500
+    }
+    ```
 
-The Azure Cosmos DB binding for your function should now look like the following code.
+1. Next, append the following SignalR output binding definition to the `bindings` collection.
 
-```json
-{
-  "type": "cosmosDBTrigger",
-  "name": "documents",
-  "direction": "in",
-  "leaseCollectionName": "leases",
-  "connectionStringSetting": "AzureCosmosDBConnectionString",
-  "databaseName": "stocksdb",
-  "collectionName": "stocks",
-  "createLeaseCollectionIfNotExists": "true",
-  "feedPollDelay": 500
-}
-```
+    ```json
+    {
+      "type": "signalR",
+      "name": "signalRMessages",
+      "connectionString": "AzureSignalRConnectionString",
+      "hubName": "stocks",
+      "direction": "out"
+    }
+    ```
 
-Next, append the following SignalR output binding definition to the `bindings` collection.
+    This binding allows the function to broadcast changes to clients.
 
-```json
-{
-  "type": "signalR",
-  "name": "signalRMessages",
-  "connectionString": "AzureSignalRConnectionString",
-  "hubName": "stocks",
-  "direction": "out"
-}
-```
+1. Update the *stocksChanged/index.js* file to reflect the following code. The beauty of all the configuration is that the function code is simple.
 
-This binding allows the function to broadcast changes to clients.
-
-The beauty of all the configuration is that the function code is simple. Update the *stocksChanged/index.js* file to reflect the following code.
-
-```javascript
-module.exports = async function (context, documents) {
-    const updates = documents.map(stock => ({
-        target: 'updated',
-        arguments: [stock]
-    }));
-
-    context.bindings.signalRMessages = updates;
-    context.done();
-}
-```
-
-An array of changes is prepared by creating an object formatted to be read by SignalR. Every updated stock is provided to the `arguments` array along with a `target` property set to `updated`.
-
-The value of the `target` property is used on the client when listening for specific messages broadcast by SignalR.
+    ```javascript
+    module.exports = async function (context, documents) {
+        const updates = documents.map(stock => ({
+            target: 'updated',
+            arguments: [stock]
+        }));
+    
+        context.bindings.signalRMessages = updates;
+        context.done();
+    }
+    ```
+    
+    An array of changes is prepared by creating an object formatted to be read by SignalR. Every updated stock is provided to the `arguments` array along with a `target` property set to `updated`.
+    
+    The value of the `target` property is used on the client when listening for specific messages broadcast by SignalR.
 
 ## Update the web application
 
