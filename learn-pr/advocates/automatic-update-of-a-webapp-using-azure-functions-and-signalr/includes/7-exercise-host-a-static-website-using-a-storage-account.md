@@ -136,7 +136,7 @@ Keep this browser window open. You will return refresh this window once the CORS
 
 1. Select the subscription and function app name.
 
-1. Once the portal is open in the browser, select the **Platform features** tab and select **CORS**.
+1. Once the portal is open in the browser, select the **Platform features** tab and under **API** select **CORS**.
 
 1. Check the checkbox next to **Enable Access-Control-Allow-Credentials**.
 
