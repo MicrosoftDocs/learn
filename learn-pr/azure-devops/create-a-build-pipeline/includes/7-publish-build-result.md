@@ -13,7 +13,7 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
-    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=40-)]
+    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=40-51)]
 
     This version of **azure-pipelines.yml** resembles the previous version, but adds two additional tasks.
 
