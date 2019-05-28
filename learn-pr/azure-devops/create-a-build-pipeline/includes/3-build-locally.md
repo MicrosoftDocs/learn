@@ -18,6 +18,22 @@ Visual Studio Code comes with an integrated terminal so you can edit files and w
 
 By default, the terminal shell you see maps to PowerShell on Windows 10 and your default shell on macOS and Linux. You can install additional shells and configure Visual Studio Code to work with them.
 
+## Configure Git
+
+If you're new to Git and GitHub, you'll need to first run a few commands to prepare associate your identity with Git and authenticate with GitHub.
+
+[Set up Git](https://help.github.com/articles/set-up-git) explains the process in greater detail.
+
+At a minimum, you'll need to perform these steps. Run these commands from Visual Studio Code's integrated terminal.
+
+1. [Set your username](https://help.github.com/articles/setting-your-username-in-git?azure-portal=true)
+1. [Set your commit email address](https://help.github.com/articles/setting-your-commit-email-address-in-git?azure-portal=true)
+1. [Cache your GitHub password](https://help.github.com/articles/caching-your-github-password-in-git?azure-portal=true)
+
+> [!NOTE]
+> If you're already using two-factor authentication with GitHub, [Create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line?azure-portal=true) and use your token in place of your password when prompted later.
+> Treat your access token like you would a password and keep it in a safe place.
+
 ## Get the source code
 
 Here you'll get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
@@ -57,7 +73,7 @@ To clone the _Space Game_ web project to your computer:
     git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web.git
     ```
 
-    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from Microsoft's repository in later modules. 
+    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from Microsoft's repository in later modules.
 
 1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
 
@@ -92,6 +108,7 @@ Now that you have the web application, you can build and run it locally.
     ```bash
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
+
     .NET Core solution files can contain more than one project. The `--project` argument specifies the project for _Space Game_ web application.
 
 ## Verify the application is running
@@ -103,6 +120,11 @@ From a new browser tab, navigate to [http://localhost:5000](http://localhost:500
 You see this.
 
 ![The Space Game web site](../media/3-space-game-top.png)
+
+> [!TIP]
+> If you see an error in your browser relating to a certificate error, press <kbd>Control+C</kbd> to from your terminal to stop the running application.
+> Then run `dotnet dev-certs https --trust` and then click **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
+> Once your computer trusts your local SSL certificate, run the `dotnet run` command a second time and navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) from a new browser tab to see the running application.
 
 You can interact with the page, including the leaderboard. When you click a player's name, you see details about that player.
 
