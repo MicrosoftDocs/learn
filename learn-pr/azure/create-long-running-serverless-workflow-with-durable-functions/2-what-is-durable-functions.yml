@@ -27,7 +27,7 @@ quiz:
     - content: "Durable Functions is a serverless compute service that enables you to run code on-demand without having to explicitly provision or manage infrastructure."
       isCorrect: false
       explanation: "No. This is a description of Azure Functions."
-  - content: "Which of the following best describes the role of the Orchestrator fucntion in a workflow?"
+  - content: "Which of the following best describes the role of the Orchestrator function in a workflow?"
     choices:
     - content: "It's used as the basic unit of work (actions and tasks) in a durable function orchestration."
       isCorrect: false
