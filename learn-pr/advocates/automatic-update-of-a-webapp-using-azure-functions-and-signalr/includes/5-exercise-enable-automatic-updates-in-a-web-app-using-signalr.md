@@ -59,7 +59,7 @@ The web client uses the SignalR client SDK to establish a connection to the serv
 
     Refresh the Explorer window in Visual Studio Code to see the updates. A folder named *negotiate* is now available in your function app.
 
-1. Open *negotiate/function.json* and add the following SignalR binding to the `bindings` array.
+1. Open *negotiate/function.json* and add the following SignalR binding definition to the `bindings` array.
 
     ```json
     {
