@@ -73,7 +73,12 @@ As you can see from this exercise so far, you have to select a trigger type when
 
 ![The default JavaScript implementation of an HTTP-triggered Azure function](../media/3-default-http-trigger-implementation-small.PNG)
 
-All of this code is in the **index.js** file in this function's folder. Let's look briefly at the function's other file, the **function.json** config file. This configuration data is shown in the following JSON listing.
+All of this code is in the **index.js** file in this function's folder. 
+
+>[!TIP]
+>You can see the **index.js** and **function.json** files by expanding the **View Files** menu that you'll see on the right hand side of the screen when you have your function selected. You might have to scroll to the right to see this menu.
+
+Let's look briefly at the function's other file, the **function.json** config file. This configuration data is shown in the following JSON listing.
 
 ```json
 {
@@ -100,8 +105,7 @@ All of this code is in the **index.js** file in this function's folder. Let's lo
 
 As you can see, this function has a trigger binding named **req** of type `httpTrigger` and an output binding named **res**  of type `HTTP`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **req** parameter. Similarly, we sent an HTTP response simply by setting our **res** parameter. Bindings really do take care of some of the heavy lifting for us.
 
->[!TIP]
->You can see the **index.js** and **function.json** files by expanding the **View Files** menu that you'll see on the right hand side of the screen when you have your function selected. You might have to scroll to the right to see this menu.
+
 
 ### Explore binding types
 
