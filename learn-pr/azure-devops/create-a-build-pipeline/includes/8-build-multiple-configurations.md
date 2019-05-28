@@ -20,23 +20,7 @@ Mara, excited to share her results, tracks down Amita to show her the build pipe
 
 Consider the following tasks that build and publish the _Space Game_ web project's Release configuration. (Don't add this code to your **azure-pipelines.yml** file.)
 
-```yml
-- task: DotNetCoreCLI@2
-  displayName: 'Build the project - Release'
-  inputs:
-    command: 'build'
-    arguments: '--no-restore --configuration Release'
-    projects: '**/*.csproj'
-
-- task: DotNetCoreCLI@2
-  displayName: 'Publish the project - Release'
-  inputs:
-    command: 'publish'
-    projects: '**/*.csproj'
-    publishWebProjects: false
-    arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
-    zipAfterPublish: true
-```
+[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=3,6,10,15)]
 
 To build the Debug configuration, you might repeat these two tasks, but replace "Release" with "Debug".
 
@@ -66,31 +50,11 @@ Here you'll create a template that can build any configuration defined in the pr
 
     In practice, you can place a template file in any location you choose. You don't need to place them in the **templates** directory.
 
-1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **build.yml** in your project's **templates** directory, such as `~/mslearn-tailspin-spacegame-web/templates`.
+1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **build.yml** in your project's **templates** directory, such as **~/mslearn-tailspin-spacegame-web/templates**.
 
 1. From Visual Studio Code, add this to **build.yml**.
 
-    ```yml
-    parameters:
-      buildConfiguration: 'Release'
-
-    steps:
-    - task: DotNetCoreCLI@2
-      displayName: 'Build the project - ${{ parameters.buildConfiguration }}'
-      inputs:
-        command: 'build'
-        arguments: '--no-restore --configuration ${{ parameters.buildConfiguration }}'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Publish the project - ${{ parameters.buildConfiguration }}'
-      inputs:
-        command: 'publish'
-        projects: '**/*.csproj'
-        publishWebProjects: false
-        arguments: '--no-build --configuration ${{ parameters.buildConfiguration }} --output $(Build.ArtifactStagingDirectory)/${{ parameters.BuildConfiguration }}'
-        zipAfterPublish: true
-    ```
+    [!code-yml[](code/8-build.yml?highlight=2-3,7,10,14,19)]
 
     These tasks resemble the ones you defined earlier to build and publish the application. However, in a template, you work with input parameters differently than you do normal variables. Here are two differences:
 
@@ -104,56 +68,7 @@ Here you'll call the template you just built from the pipeline. You'll do so one
 
 1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
-    ```yml
-    pool:
-      vmImage: 'Ubuntu-16.04'
-      demands:
-        - npm
-
-    variables:
-      buildConfiguration: 'Release'
-      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '2.1.505'
-
-    steps:
-    - task: DotNetCoreInstaller@0
-      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
-      inputs:
-        version: $(dotnetSdkVersion)
-
-    - task: Npm@1
-      displayName: 'Run npm install'
-      inputs:
-        verbose: false
-
-    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
-      displayName: 'Compile Sass assets'
-
-    - task: gulp@1
-      displayName: 'Run gulp tasks'
-
-    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-      displayName: 'Write build info'
-      workingDirectory: $(wwwrootDir)
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-        command: 'restore'
-        projects: '**/*.csproj'
-
-    - template: templates/build.yml
-      parameters:
-        buildConfiguration: 'Debug'
-
-    - template: templates/build.yml
-      parameters:
-        buildConfiguration: 'Release'
-
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifact: drop'
-      condition: succeeded()
-    ```
+    [!code-yml[](code/8-azure-pipelines.yml?highlight=39-45)]
 
     This file resembles the original, except that it calls the template to perform the build and publish tasks.
 
