@@ -15,6 +15,8 @@ Domain-driven design (DDD) provides a framework that can get you most of the way
 
 ![Diagram of the steps for domain-driven design](../media/6-ddd-process.png)
 
+During the strategic phase of DDD, you are mapping out the business domain and defining bounded contexts for your domain models. Tactical DDD is when you define your domain models with more precision. The tactical patterns are applied within a single bounded context. In a microservices architecture, we are particularly interested in the entity and aggregate patterns. Applying these patterns will help us to identify natural boundaries for the services in our application. As a general principle, a microservice should be no smaller than an aggregate, and no larger than a bounded context.
+
 At a high level, you can break this process into four steps:
 
 1. Start by analyzing the business domain to understand the application's functional requirements. The output of this step is an informal description of the domain, which can be refined into a more formal set of domain models.
@@ -22,19 +24,18 @@ At a high level, you can break this process into four steps:
 3. Within a bounded context, apply tactical DDD patterns to define entities, aggregates, and domain services.
 4. Identify the microservices in your application using the results from the previous step.
 
-
-
 ## Drone app decomposition
 
 After analyzing the application, Fabrikam has defined the following bounded contexts for their application:
 
-![Diagram of the bounded contexts for the drone application](../media/6-bounded-contexts.png)
+![Diagram of the bounded contexts for the drone application](../media/6-bounded-contexts.svg)
 
-
+Looking further at the shipping bounded context, we can see the following model.
 
 ![Diagram of the shipping boundd context](../media/6-shipping-bounded-context.png)
 
-- Use domain-driven design (DDD) to establish service boundaries and responsibility
+
+<!-- - Use domain-driven design (DDD) to establish service boundaries and responsibility
   - Identify the natural areas of responsibility to define the scope of a microservice.
     - Could also rely on organizational boundaries.
     - Inventory service, scheduling service, shipping service
@@ -46,4 +47,4 @@ After analyzing the application, Fabrikam has defined the following bounded cont
   - Information needed to accomplish the enabling objective
   - Information needed to accomplish the enabling objective
 - Create new service exposing APIs necessary for dependant services and reconfigure consumers to use the new service location.
-- Track and migrate any remaining legacy service users over to the new microservice.
+- Track and migrate any remaining legacy service users over to the new microservice. -->
