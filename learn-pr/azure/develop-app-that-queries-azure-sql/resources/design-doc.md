@@ -51,8 +51,7 @@ Identify the subtasks of *Develop and configure an app that queries an Azure SQL
     List the content that will enable the learner to *Create an Azure SQL Database*:
 
     - Create database
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - Use the portal to create a database
 
 1. **Exercise - Create an Azure SQL Database to store relational data**
 
