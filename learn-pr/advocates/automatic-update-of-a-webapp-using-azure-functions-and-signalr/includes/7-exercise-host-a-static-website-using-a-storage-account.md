@@ -70,7 +70,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
    | Name              | Value                                                                    |
    | ----------------- | ------------------------------------------------------------------------ |
-   | Function app      | Select **Create new Function App in Azure**                              |
+   | Function app      | Select **Create Function App in Azure**                              |
    | Function app name | Enter a globally unique name. Valid characters are `a-z`, `0-9`, and `-`.|
    | OS                | Select **Windows**                                                       |
    | Plan              | Select **Consumption**                                                   |
