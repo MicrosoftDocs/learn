@@ -4,11 +4,11 @@ The application’s current architecture reports stock information by fetching c
 
 Before we analyze any limitations, let's review the current architecture. The server is responsible for storing stock information and the client renders data in the browser.
 
-In the next exercise, we'll get the code for this solution running on your local machine.
+We'll se up the current solution on your local machine in the next unit. 
 
 ### Server
 
-The stock price information is stored on the server in an Azure Cosmos DB database. When triggered by an HTTP request, the function uses bindings to return content from Azure Cosmos DB database.
+The stock price information is stored on the server in an Azure Cosmos DB database. When triggered by an HTTP request, the function uses bindings to return content from the database.
 
 The function named `getStocks` is responsible for reading the stock information from the database. As mentioned, the connection to the Azure Cosmos DB database is achieved by using an input binding. This binding is configured in the *function.json* file, as shown in the following snippet.
 
@@ -149,7 +149,7 @@ This configuration allows a web application running at *localhost:8080* to make 
 
 Let's think about some of the drawbacks of this timer-based polling approach.
 
-Timer-based polling is inefficient. In the prototype, the client application contacts the server whether or not changes exist to the underlying data. Once data is returned from the server the entire list of stocks is updated on the web page - again - regardless of any changes in the data.
+In the timer-based polling prototype, the client application contacts the server whether or not changes exist to the underlying data. Once data is returned from the server the entire list of stocks is updated on the web page - again - regardless of any changes in the data. This polling mechanism is an inefficient solution. 
 
 Selecting the best polling interval for your scenario is also a challenging. Polling forces you to make a choice between how much each call to the backend costs and how quickly you want your app to respond to new data. Delays also often exist between when new data becomes available and when it's detected by the app. The following illustration shows the issue.
 

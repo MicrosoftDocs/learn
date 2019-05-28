@@ -6,6 +6,9 @@ Before you begin, make sure you have the following software installed on your ma
 - [Azure Functions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 - [Azure Storage extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
 
+
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
 ## Download sample app code
 
 1. Run the following command on your local machine to clone the app from GitHub.

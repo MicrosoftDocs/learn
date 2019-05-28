@@ -1,5 +1,5 @@
 
-The Contoso Financial Group is planning to launch a new website that provides stock price information to customers. Recently, an intern created a website prototype for the new application and the Lead Architect has now asked you to step in and improve the solution.
+Consider the following scenario. Your company is planning to launch a new website that provides stock price information to customers. Recently, an intern created a website prototype for the new application and the Lead Architect has now asked you to step in and improve the solution.
 
 Your objective is to update the app to implement automatic updates, but ensure communication between the client and server happens only when data changes on the server.
 

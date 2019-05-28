@@ -2,19 +2,21 @@ Up to this point you have only run the application on your machine. The next ste
 
 ## Customize Visual Studio Code
 
-Before you begin, there are two changes you need to make to Visual Studio Code. The first grants Visual Studio Code access to Learn's concierge Azure subscription. This subscription is created as you activate the sandbox and allows you to use Azure services without incurring any costs.
+Before you begin, there are two changes you need to make to Visual Studio Code. 
+
+The first change grants Visual Studio Code access to the Azure subscription used by the sandbox.  This subscription was created when you activate the sandbox and allows you to use Azure services without incurring any costs.
 
 The second customization tells the Azure Functions extension to use the advanced creation process. If you skip this step, the extension uses default values and won't create your function to work with the sandbox.
 
 ### Add concierge tenant to Visual Studio Code
 
-In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
+1. In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
 
-```bash
-az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
-```
+    ```bash
+    az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
+    ```
 
-1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
+1. Open settings in Visual Studio Code. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
 
 1. Navigate through **User Settings > Extensions > Azure configuration**
 
@@ -96,7 +98,7 @@ Use the following steps to configure the Azure Storage account to host a static 
 
 1. Open the Visual Studio Code command palette via **F1**.
 
-1. Search for and select the **Azure Storage: Configure static website** command.
+1. Search for and select the **Azure Storage: Configure Static Website** command.
 
    | Name              | Value                                                             |
    | ----------------- | ----------------------------------------------------------------- |

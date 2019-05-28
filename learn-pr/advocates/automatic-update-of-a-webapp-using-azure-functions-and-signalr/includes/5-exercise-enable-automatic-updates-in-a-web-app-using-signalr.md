@@ -10,7 +10,7 @@ You'll need to add a SignalR account to your sandbox subscription. The first ste
     az extension add -n signalr
     ```
 
-1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group.
+1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so please wait for it to finish before proceeding to the next step. 
 
     ```bash
     az signalr create \
@@ -103,7 +103,9 @@ First, you need to create a new function that listens for changes in the databas
     | Collection name for leases             | leases                         |
     | Create lease collection if not exists  | true                           |
 
-    Now a folder named *stocksChanged* is created and contains the files for the new function. Open *stocksChanged/function.json* in Visual Studio Code.
+    Now a folder named *stocksChanged* is created and contains the files for the new function. 
+
+1. Open *stocksChanged/function.json* in Visual Studio Code.
 
 1. Append the property `"feedPollDelay": 500` to the existing trigger binding definition. This setting tells Azure Cosmos DB how long to wait before checking for changes in the database. The application you're building is built around a push-based architecture. However behind the scenes, Azure Cosmos DB is continually monitoring the change feed to detect changes. The `feedPollDelay` refers to how the internals of Azure Cosmos DB recognize changes, not how your web application exposes changes to the data.
 
@@ -157,7 +159,7 @@ First, you need to create a new function that listens for changes in the databas
 
 ## Update the web application
 
-Open *public/index.html* paste the following code in place of the current DIV with the ID of `app`.
+Open *public/index.html* and paste the following code in place of the current DIV with the ID of `app`.
 
 ```html
 <div id="app" class="container">
