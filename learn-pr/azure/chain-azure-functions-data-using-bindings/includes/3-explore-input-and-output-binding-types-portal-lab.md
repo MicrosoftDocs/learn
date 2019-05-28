@@ -124,7 +124,7 @@ As you can see, this function has a trigger binding named **req** of type `httpT
 
 1. We'll get back to adding input bindings later in the module but, for now, select **Cancel** to dismiss this list.
 
-1. Select **+ New Output** under the **Outputs** column. A list of all possible output binding types is displayed as shown in the following screenshot.\
+1. Select **+ New Output** under the **Outputs** column. A list of all possible output binding types is displayed as shown in the following screenshot.
 
     ![Screenshot showing the list of possible output bindings.](../media/3-func-output-bindings-selector-small.PNG)
 
