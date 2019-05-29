@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: "Azure Hybrid Benefit"
       isCorrect: false
-      explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure, but it is not an configurable option provided by Azure App Service."
+      explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure, but it is not a configurable option provided by Azure App Service."
     - content: "An unlimited number of free apps and disk space"
       isCorrect: false
       explanation: "Incorrect. Azure App Service does not allow for an unlimited number of free apps and disk space to be configured."

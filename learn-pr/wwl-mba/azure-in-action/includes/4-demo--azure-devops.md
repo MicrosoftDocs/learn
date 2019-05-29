@@ -91,7 +91,7 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRL]
 
 >[!NOTE]
->Application Insights allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because Application Insights captures errors in real-time so your team can identify the root cause and make fixes quickly.
+>Application Insights allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because Application Insights captures errors in real time so your team can identify the root cause and make fixes quickly.
 
 Next, we’ll continue our solution demo to learn more about Azure Boards.
 

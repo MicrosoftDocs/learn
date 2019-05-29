@@ -45,11 +45,11 @@ Use these resources to discover more.
 
 - [Microsoft Hands-on Labs](https://www.microsoft.com/handsonlabs) - search on **migration** to find the labs listed below
 
-- Assessing on-premises VMware environments with Azure Migrate
+  - Assessing on-premises VMware environments with Azure Migrate
 
-- Migration Using SQL Managed Instance
+  - Migration Using SQL Managed Instance
 
-- SQL Migration Using Azure Data Migration Services (DMS)
+  - SQL Migration Using Azure Data Migration Services (DMS)
 
 ### Demo - Modernizing .NET Applications
 
