@@ -28,25 +28,25 @@ quiz:
       explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure."
     - content: "Azure Site Recovery"
       isCorrect: false
-      explanation: "Incorrect. Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking the servers down by replicating those VMs from a primary site (on-premises) to a secondary location (Azure)."
+      explanation: "Incorrect. Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking down the servers by replicating those VMs from a primary site (on-premises) to a secondary location (Azure)."
   - content: "What is the name of the Azure feature that captures application performance, once the application is released?"
     choices:
     - content: "Azure Migrate Collector."
       isCorrect: false
-      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
     - content: "Application Authenticator."
       isCorrect: false
-      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
     - content: "Application Insights."
       isCorrect: true
-      explanation: "Correct. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+      explanation: "Correct. The Application Insights feature captures application performance and detects application issues in real time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
     - content: "Azure Boards."
       isCorrect: false
-      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
     - content: "Azure DevOps."
       isCorrect: false
-      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
-  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many benefits available. Which of the following is an option that can be configured by Azure App Service?"
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many benefits available. Which of the following choices is an option that can be configured by Azure App Service?"
     choices:
     - content: "Azure Hybrid Benefit"
       isCorrect: false

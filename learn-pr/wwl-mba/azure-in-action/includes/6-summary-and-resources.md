@@ -17,7 +17,7 @@ In this module you have seen:
 Here are the key takeaways:
 
 :::row:::
-![Icon of key](../media/key_takeaway.png)
+![Icon of key](../media/key-takeaway.png)
 :::column:::
 1. Be aware of opportunities for application migration and modernization to Azure, such as End of Support (EOS) for Windows Server 2008/R2.
 
