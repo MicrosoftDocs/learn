@@ -46,25 +46,12 @@ Identify the subtasks of *Develop and configure an ASP.NET application that quer
 
     An educational institution is creating a web application that academic advisors can use to discuss courses and plans of study with students. The development team would like to use Azure SQL Database to store their data, which is currently stored as comma delimited data in text files. They are planning to create a .NET Core app for the advisors to use initially. They need to know how to create and manipulate an Azure SQL Database, and how to connect an ASP.NET application to an Azure SQL Database to query data.
 
-1. **Create an Azure SQL Database to store relational data**
-
-    List the content that will enable the learner to *Create an Azure SQL Database*:
-
-    - Create database
-        - Use the portal to create a database
-
-1. **Exercise - Create an Azure SQL Database to store relational data**
-
-    List the steps which apply the learning content from previous unit:
-
-    1. Create database in the portal
-    1. Enable access from Azure services
-    1. Connect to database with Query Editor
-
 1. **Create tables, bulk import, and query data**
 
     List the content that will enable the learner to *Manipulate an Azure SQL Database* and *Import data into an Azure SQL Database*:
 
+    - Create database
+        - Use the portal to create a database
     - Create tables
         - Discuss tables and schema
         - Use the Query editor in the portal to create tables
@@ -79,6 +66,9 @@ Identify the subtasks of *Develop and configure an ASP.NET application that quer
 
 1. **Exercise - Create tables, bulk import, and query data**
 
+    1. Create database in the portal
+    1. Enable access from Azure services
+    1. Connect to database with Query Editor
     1. Download sample data in Cloud shell
     1. Create tables in Query editor or Cloud Shell
     1. Use `bcp` in Cloud Shell to import data
