@@ -89,15 +89,8 @@ Identify the subtasks of *Develop and configure an ASP.NET application that quer
 
     List the content that will enable the learner to *Connect an ASP.NET application to query data from Azure SQL*:
 
-    - Obtain connection string
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Create new .NET Core application
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
     - Use `System.Data.SqlClient` to connect and query data
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - Discuss how SqlClient works and how to use the connection string to to easily connect the application to Azure SQL
 
 1. **Exercise - Connect an ASP.NET application to Azure SQL Database**
 
