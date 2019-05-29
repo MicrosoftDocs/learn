@@ -105,7 +105,7 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
            - Can I have more than one circuit to cover for a failure?
            - Can ExpressRoute cover multiple networks?  
     
-        - Describe the role and function of ExpressRoute circuits, Local Edge routers, Microsoft Edge routers and Azure virtual networks?
+       - Describe the role and function of ExpressRoute circuits, Local Edge routers, Microsoft Edge routers and Azure virtual networks?
             - What is the purpose of these features?
             - How do they interact with ExpressRoute?
             - Show a table listing the properties of each feature and a diagram showing where the components fit into an Azure ExpressRoute connection
@@ -126,10 +126,10 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
         - Large datacenters, with high numbers of users and systems accessing SaaS offerings
 
     - List the benefits of implementing ExpressRoute
-	    - Mention the advantages of using ExpressRoute with Office365
-	    - SLA targets
-	    - Latency
-	    - Security benefits
+        - Mention the advantages of using ExpressRoute with Office365
+        - SLA targets
+        - Latency
+        - Security benefits
 
     - Contrast with other connectivity options: Point to SIte, Site to Site
         - Is ExpressRoute the best connection tool for a company to use?
