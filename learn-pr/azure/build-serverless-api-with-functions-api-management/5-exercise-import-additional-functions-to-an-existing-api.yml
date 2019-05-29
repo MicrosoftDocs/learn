@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-serverless-api-with-functions-api-management.5-exercise-import-additional-functions-to-an-existing-api
+title: Exercise - Import additional Functions to an existing API
+metadata:
+  title: Exercise - Import additional Functions to an existing API
+  description: In this unit, you will add an second function to a product in Azure API Management and test your integrated API.
+  ms.date: 05/29/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+interactive: bash
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-import-additional-functions-to-an-existing-api.md)]

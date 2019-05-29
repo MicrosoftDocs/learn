@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.build-serverless-api-with-functions-api-management
+metadata:
+  title: Publish a serverless API with multiple Azure Functions apps and Azure API Management
+  description: In this module, you will learn how to assemble multiple Azure Functions into a single API product by using Azure API Management.
+  ms.date: 05/29/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish a serverless API with multiple Azure Functions apps and Azure API Management
+summary: Build a simplified online store API with Azure Functions and expose it through Azure API Management.
+abstract: | 
+  In this module, you will:
+  - Identify the value of API Management in a serverless application.
+  - Import Function Apps as APIs.
+  - Expose multiple Function Apps through a single API in API Management.
+prerequisites: |
+  - Basic knowledge of Azure API Management and Azure Functions
+iconUrl: /learn/achievements/build-serverless-api-with-functions-api-management.svg
+levels: 
+- beginner
+roles: 
+- developer
+products:
+- azure
+units:
+- learn.build-serverless-api-with-functions-api-management.1-introduction
+- learn.build-serverless-api-with-functions-api-management.2-create-a-new-api-in-api-management-from-a-function-app
+- learn.build-serverless-api-with-functions-api-management.3-exercise-create-a-new-api-in-api-management-from-a-function-app
+- learn.build-serverless-api-with-functions-api-management.4-import-additional-functions-to-an-existing-api
+- learn.build-serverless-api-with-functions-api-management.5-exercise-import-additional-functions-to-an-existing-api
+- learn.build-serverless-api-with-functions-api-management.6-summary
+badge:
+  uid: learn.build-serverless-api-with-functions-api-management.badge

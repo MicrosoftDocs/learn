@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-serverless-api-with-functions-api-management.2-create-a-new-api-in-api-management-from-a-function-app
+title: Create a new API in API Management from a Function App
+metadata:
+  title: Create a new API in API Management from a Function App
+  description: In this unit, you will learn about serverless apps and microservices and how you can build such architectures by using API Management.
+  ms.date: 05/29/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-create-a-new-api-in-api-management-from-a-function-app.md)]
