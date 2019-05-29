@@ -14,7 +14,7 @@ There's one more case to consider: suppose you wanted total control? Imagine you
 
 This discussion shows that we have three broad categories of triggers: data, time, and manual. Data triggers use two different techniques to detect that new data is available: some use *polling* and some rely on the external service to *push* a notification. These two types of data triggers are so different, that we should think of them as separate categories. Altogether, we have four types of triggers, the following illustration shows a summary of the cases.
 
-![An illustration showing the four types of triggers: polling, push, recurrence, and manual.](../media-drafts/trigger-types.png)
+![An illustration showing the four types of triggers: polling, push, recurrence, and manual.](../media/trigger-types.png)
 
 ## What is a polling trigger?
 
@@ -24,7 +24,7 @@ When you create a polling trigger, you set the *Frequency* and an *Interval* to 
 
 Polling triggers force you to make a choice between how much they cost and how quickly they respond to new data. There is often a delay between when new data becomes available and when it is detected by the app. The following illustration shows the issue.
 
-![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media-drafts/polling-trigger.png)
+![An illustration showing a timeline and a polling trigger checking for new data every five minutes. New data becomes available after seven minutes. The app isn't aware of the new data until the next poll, which occurs at 10 minutes.](../media/polling-trigger.png)
 
 In the worst case, the potential delay for detecting new data is equal to the polling interval. So why not use a smaller interval? To check for new data, the Logic Apps execution engine needs to run your app, which means you incur a cost. In general, the shorter the interval, the higher the cost but the quicker you respond to new data. The best polling interval for your Logic App depends on your business process and its tolerance for delay.
 
@@ -37,7 +37,7 @@ A *push trigger* subscribes to an event offered by the external service to get n
 
 The nice thing about push triggers is that they don't incur any costs polling for data when none is available. They also respond immediately when new data is ready. The following illustration shows this immediate response.
 
-![An illustration showing a timeline with a marker indicating when new data becomes available. A push trigger notifies the Logic App immediately when the data is ready.](../media-drafts/push-trigger.png)
+![An illustration showing a timeline with a marker indicating when new data becomes available. A push trigger notifies the Logic App immediately when the data is ready.](../media/push-trigger.png)
 
 If push triggers respond more quickly and cost less than polling triggers, then why not use them all the time? The reason is that not every connector offers a push trigger. Sometimes the trigger author chose not to implement push and sometimes the external service didn't support push. Generally, you'll find a connector offers either push or polling triggers but not both. In the rare cases where both options are available, consider using the push trigger because it should be more efficient.
 
@@ -51,11 +51,11 @@ Trigger *parameters* let you configure the operation. The Twitter "When-a-new-tw
 
 Trigger *return values* are the results of the operation. The Bitbucket connector has a "When a pull request is merged" trigger. The trigger returns an object containing things like the identity of the **Repository** and the **Actor** who approved the merge. Most triggers actually return a collection instead of a single object. The Twitter "When-a-new-tweet-is-posted" trigger returns an array of **TweetModel** objects. Each object contains values like the **Tweet text**, **User name**, and **Followers count**. The following illustration shows a collection being returned from a trigger.
 
-![An illustration showing the Twitter trigger interacting with Twitter. The trigger sends the search text to Twitter and Twitter returns an array of objects. Each object in the array contains information about one of the matching tweets.](../media-drafts/trigger-returning-a-collection.png)
+![An illustration showing the Twitter trigger interacting with Twitter. The trigger sends the search text to Twitter and Twitter returns an array of objects. Each object in the array contains information about one of the matching tweets.](../media/trigger-returning-a-collection.png)
 
 You can use a loop to process each item or you can ask the trigger to split the array up for you. The default behavior for most triggers, including the Twitter trigger, is to automatically split the array. The Logic Apps execution engine will create one instance of your Logic App for each data item and the instances will run in parallel. The following illustration shows how each item in the returned array is sent to a different instance of the Logic App.
 
-![An illustration showing three tweets returned from the Twitter trigger and three instances of the social-media monitor Logic App. An arrow connects each tweet in the array with one of the instances of the Logic App.](../media-drafts/trigger-splitting-an-array.png)
+![An illustration showing three tweets returned from the Twitter trigger and three instances of the social-media monitor Logic App. An arrow connects each tweet in the array with one of the instances of the Logic App.](../media/trigger-splitting-an-array.png)
 
 ## How to create a Logic App in the Azure portal
 

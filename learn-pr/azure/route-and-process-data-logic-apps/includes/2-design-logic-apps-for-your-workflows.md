@@ -4,7 +4,7 @@ Azure Logic Apps gives you pre-built components to connect to hundreds of servic
 
 In this unit, we'll plan the sequence of steps needed to implement a business process. Then we'll map those steps to the pre-built components in Azure Logic Apps. Finally, we'll assemble the parts into an app using the Logic Apps Designer. The following illustration shows an overview of the app-development process.
 
-![An illustration showing the typical sequence of activities used to create a Logic App. The process has five steps. First, you plan your business process. Second, you identify the type of each step in your process. Third, you decide which pre-built component will implement each step. Fourth, you use the design tool to build your workflow from the components. Fifth, you save your design. Your app will now run automatically in the cloud.](../media-drafts/app-design-process.png)
+![An illustration showing the typical sequence of activities used to create a Logic App. The process has five steps. First, you plan your business process. Second, you identify the type of each step in your process. Third, you decide which pre-built component will implement each step. Fourth, you use the design tool to build your workflow from the components. Fifth, you save your design. Your app will now run automatically in the cloud.](../media/app-design-process.png)
 
 ## Plan your business process
 
@@ -36,7 +36,7 @@ A group of related triggers and actions are packaged inside a *connector*. Conce
 
 Your job is to map each task in your flowchart to Logic Apps triggers and actions. The following illustration shows the connectors we'd use in the social-media app with the relevant triggers and actions highlighted.
 
-![An illustration showing the operations available in the connectors used by the social-media monitor app. Specifically, it shows the Twitter connector, the Text Analytics connector, the SQL Server connector, and the Office 365 Outlook connector. In addition, the image includes a graphical representation for each of the control actions. The trigger and actions used in the social-media monitor app are highlighted.](../media-drafts/social-media-design-process.png)
+![An illustration showing the operations available in the connectors used by the social-media monitor app. Specifically, it shows the Twitter connector, the Text Analytics connector, the SQL Server connector, and the Office 365 Outlook connector. In addition, the image includes a graphical representation for each of the control actions. The trigger and actions used in the social-media monitor app are highlighted.](../media/social-media-design-process.png)
 
 ## Define your app using the Logic Apps Designer
 
@@ -52,5 +52,5 @@ The questions in this Knowledge Check relate to the workflows shown in the follo
 
 | Social media workflow | Email attachment processing workflow |
 | --- | --- |
-| ![An illustration of a social-media monitoring workflow. This workflow triggers when a user posts a new tweet that mentions a specific product. It sends the text of the tweet through Text Analytics to determine sentiment. If the sentiment score is greater than 0.7, then a row containing the tweet is added to a database. If the tweet is rated less than 0.7, an email will be sent to customer support.](../media/social-media-monitor-logic-app.png) | ![An illustration of an email attachment processing workflow. This workflow is triggered when a new email arrives. Next, there is a *if* statement that checks if the email has an attachment. If there are no attachments on the email, the workflow ends. If there are attachments, the workflow creates a Blob for the email body. Next, a *foreach* loop creates a blob for every attachment. Finally, an email is sent for review.](../media-drafts/email-workflow.png) |
+| ![An illustration of a social-media monitoring workflow. This workflow triggers when a user posts a new tweet that mentions a specific product. It sends the text of the tweet through Text Analytics to determine sentiment. If the sentiment score is greater than 0.7, then a row containing the tweet is added to a database. If the tweet is rated less than 0.7, an email will be sent to customer support.](../media/social-media-monitor-logic-app.png) | ![An illustration of an email attachment processing workflow. This workflow is triggered when a new email arrives. Next, there is a *if* statement that checks if the email has an attachment. If there are no attachments on the email, the workflow ends. If there are attachments, the workflow creates a Blob for the email body. Next, a *foreach* loop creates a blob for every attachment. Finally, an email is sent for review.](../media/email-workflow.png) |
 | | |

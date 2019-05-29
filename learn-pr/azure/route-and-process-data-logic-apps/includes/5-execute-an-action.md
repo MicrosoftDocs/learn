@@ -48,7 +48,7 @@ Action *parameters* let you pass values to the operation. The Cognitive Services
 
 Action *return values* are the results of the operation. The Detect-sentiment action returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. The following illustration summarizes the data flow for the Detect-sentiment action as used by the social-media monitor app.
 
-![An illustration showing a Logic App using the Detect-sentiment action to invoke the text analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media-drafts/action-inputs-and-outputs.png)
+![An illustration showing a Logic App using the Detect-sentiment action to invoke the text analytics service. The app passes the tweet text to the service and gets back a numeric sentiment score.](../media/action-inputs-and-outputs.png)
 
 ## Static vs. dynamic parameters
 
