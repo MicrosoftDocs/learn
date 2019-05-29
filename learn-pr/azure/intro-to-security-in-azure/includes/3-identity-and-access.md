@@ -115,7 +115,7 @@ Roles can be granted at the individual service instance level, but they also flo
 
 Here's a diagram that shows this relationship. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
-![An illustration showing the hierarchal representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
+![An illustration showing the hierarchical representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
 
 ### Privileged Identity Management
 
