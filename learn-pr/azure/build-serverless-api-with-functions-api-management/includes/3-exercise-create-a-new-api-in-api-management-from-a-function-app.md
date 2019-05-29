@@ -1,8 +1,12 @@
-<!-- TODO: Add introduction -->
+You can add Functions to Azure API Management, to present them to users as parts of a single API.
+
+In your online store company, your developers have created multiple Azure Functions as micro-services. Each function implements a small part of the store's functionality. You want to assemble these functions into single API.
+
+Here, you will create a new API Management instance and then add a Product Details function to it.
 
 ## Create functions
 
-<!-- TODO: add some blurb -->
+In this exercise, you will add an Azure Function to Azure API Management. Later you will add a second Function to the same resource in order to create a single serverless API from multiple Functions. Let's start by using a script to create the Functions:
 
 1. To clone the functions project, in the Cloud Shell on the right, execute this command:
 
@@ -21,7 +25,7 @@
 
 ## Test the product details function
 
-<!-- TODO: Add some blurb -->
+Now, test the Product Details Function. This is not part of  API Management yet:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. Click **All Resources** and then click the product function.
@@ -39,6 +43,27 @@
 
 1. At the top of the page, click **</> Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison.
 
+## Create a new API Management instance
+
+Now that we have a working Function, let's create the API Management resource:
+
+1. In the Azure portal, select **Create a resource > Integration > API management**, and then click **Create**.
+1. In the API Management service window, enter these settings and then click **Create**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Name | Use a unique name within the **azure-api.net** domain |
+    | Subscription | Concierge |
+    | Resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Location | Choose either **West Europe** or **Southeast Asia** | <!-- NOTE: these are the only two locations that are supported by both the sandbox and the consumption tier -->
+    | Organization name | OnlineStore |
+    | Administrator email | Use the default value |
+    | Pricing tier | Consumption |
+    | | | 
+
+    ![Screenshot of the Azure portal showing the Create a new API management instance.](../media/3-create-api-mgmt-instance.png)
+
+<!-- NOTE: this is currently resulting in a sandbox policy error. Take it up with MS? -->
 
 
 
