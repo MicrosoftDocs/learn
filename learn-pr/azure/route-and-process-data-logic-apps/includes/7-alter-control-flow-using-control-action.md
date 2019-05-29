@@ -6,7 +6,7 @@ A *condition* action is an *if* statement that lets your app do different things
 
 For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether it is flagged as high-priority. In our social-media app, we'll use a *condition* statement to branch based on the sentiment score of the tweet. The following illustration shows the use of the *condition* control action in our app.
 
-![An illustration showing a conceptual view of the entire social-media monitor app. The *condition* control action is highlighted.](../media-drafts/if-statement-social-media.png)
+![An illustration showing a conceptual view of the entire social-media monitor app. The *condition* control action is highlighted.](../media/if-statement-social-media.png)
 
 ### Types and operators
 

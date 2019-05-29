@@ -1,6 +1,6 @@
 In this exercise, we're going to continue work on our social-media monitor app. We'll analyze whether the tweets about our product are positive or negative. We'll create a Detect-sentiment action, which will provide us a numeric *Score* that represents the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
-![An illustration showing the triggers and actions in the social-media monitor Logic App. The second step is an action labeled Detect Sentiment. This action is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media-drafts/exercise-detect-sentiment.png)
+![An illustration showing the triggers and actions in the social-media monitor Logic App. The second step is an action labeled Detect Sentiment. This action is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media/exercise-detect-sentiment.png)
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
