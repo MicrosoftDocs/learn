@@ -21,13 +21,13 @@ quiz:
     - content: "Customized recovery plans, Flexible Failovers, Storage Replication"
       isCorrect: false
       explanation: "Storage Replication is not a feature of Azure Site Recovery."
-    - content: "On-Premise VM Replication, Flexible failovers, Customized recovery plans"
+    - content: "On-premises VM Replication, Flexible failovers, Customized recovery plans"
       isCorrect: true
       explanation: "These are all valid features provided by Azure Site Recovery."
     - content: "Network Integration, Flexible Failovers, Physical Unix Server Recovery"
       isCorrect: false
       explanation: "A physical Unix server is not a supported Operating System that can be used 	with Azure Site Recovery."
-  - content: "Which of these source server Operating Systems are supported by Azure Site Recovery?"
+  - content: "Which of these source server configurations are supported by Azure Site Recovery?"
     choices:
     - content: "VMware VMs, Physical Unix, Physical Windows"
       isCorrect: false
@@ -37,4 +37,4 @@ quiz:
       explanation: "Physical Unix or Physical Sun Operating systems are not supported"
     - content: "Azure VMs, VMware VMs, Physical Windows"
       isCorrect: true
-      explanation: "All three are supported source operating systems."
+      explanation: "All three configurations are supported."

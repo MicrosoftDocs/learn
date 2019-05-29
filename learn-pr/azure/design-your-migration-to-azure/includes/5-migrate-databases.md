@@ -2,7 +2,7 @@ The Azure Database Migration Service enables online and offline migrations from 
 
 During the early stages of the migration project the IT Director requested that the current SQL cluster, which hosts several lines of business application databases, be included. With the required due diligence completed and the finer details that make up the SQL cluster have been noted, the migration can now take place.
 
-In this unit, you'll see how to use the **Azure Database Migration Service** (DMS), which provides a way to move on-premises SQL server databases efficiently to the Azure cloud.
+In this unit, you'll see how to use the **Azure Database Migration Service** (DMS), which provides a way to move on-premises SQL server databases efficiently to Azure.
 
 ## Offline vs online migration
 
@@ -13,18 +13,37 @@ The Azure DMS has two pricing tiers:
 1. Standard: Allows only offline migrations, there's no charge for using this tier
 1. Premium: Allows for both offline and online migrations, there's no charge for the first six months, after this period you'll incur charges
 
-## Prerequisites
+### Destinations
+
+Your relational database can be migrated to a number of different destinations in Azure:
+
+- **Single Azure SQL DB**: Fully managed single SQL database-as-a-service
+- **Azure SQL Managed Instance**: 100% compatible with SQL Server Enterprise Edition Database Engine, missing a minimal number of SQL Server features
+- **SQL Server on Azure VM**: IaaS running a full version of SQL Server supporting all the features of SQL Server
+- **Azure DB for MySQL**: An Azure database based on the MySQL Community Edition, version 5.6 and 5.7
+- **Azure DB for PostgresSQL**: An Azure database based on the community version of the PostgreSQL database engine
+- **Azure Cosmos DB**: Globally distributed, multi-model, fully managed database service
+
+As your companies database needs are simple, the fastest and cheapest option is to migrate your database workloads to a single Azure SQL DB.
+
+## Overview of database migrations
+
+![text](../media/database-migration.png)
+
+The **Data Migration Assistant (DMA)** will guide you through the process. You'll take your existing relational databases, split out the database schema, and then recreate them in the destination Azure SQL database. With the new schema in place, the data for each database can then be copied to Azure. Finally, you'll check the new databases are performing as expected.
+
+### Prerequisites
 
 Both offline and online migrations have the same prerequisite tasks, they are:
 
-- **Download the Data Migration Assistant (DMA)** - Download and install it locally on your on-premise SQL servers
+- **Download the DMA** - Download and install it locally on your on-premises SQL servers
 - **Create an Azure VNET** - Created for the Azure Database Migration Service using the Azure Resource Manager deployment model, it provides connectivity to the on-premises environment
 - **Configure the NSG (Network Security Group)** - The NSG associated with the new VNET should allow inbound connectivity to the service via ports 443, 53, 9354, 445, and 12000
 - **Configure the Windows Firewall** - Using Windows Firewall you must configure it to allow the Database Migration Service to connect over port 1433. 1434 can also be opened up if multiple named instances on dynamic ports exist on the same server
 - **Configure credentials** - Add **Control Server** permissions to the credentials used to connect to the source SQL server instance. Add **Control Database** permissions to the credentials used to connect to the target Azure SQL database
 - **Provision your target database in Azure**- Create the database for the target of the migration, it should be sized appropriately for the migrated workload
 
-## Assessing the on-premises databases
+### Assessing the on-premises databases
 
 Ensure all the communication ports are open, and check the connectivity between the source and destination servers before the migration tasks take place. Use the Data Migration Assistant, once installed create an **Assessment** project, give the project a name, and select the source and target servers. Connection details of the source server should be provided including credentials with permission to access it. On the database selection screen, choose the database you want to migrate.
 
@@ -34,15 +53,15 @@ The assessment will generate a report on completion, with a set of recommendatio
 
 A sample Data Migration Assistant report.  
 
-## Migrating the Schema
+### Migrating the Schema
 
-Each database has a schema, which represents the structure of the entire database. The schema defines the rules of how the data contained within it is organized, and the relationships between it. Before migrating all the data in the database, migrate the schema. Doing this creates the empty structure on the new Azure SQL database matching the on-premise source database. Migrating the schema also validates the connectivity before actually doing the full data migration.
+Each database has a schema, which represents the structure of the entire database. The schema defines the rules of how the data contained within it is organized, and the relationships between it. Before migrating all the data in the database, migrate the schema. Doing this creates the empty structure on the new Azure SQL database matching the on-premises source database. Migrating the schema also validates the connectivity before actually doing the full data migration.
 
-To use the DMA to migrate the schema, create a new **Migration** project. Select the source server as your on-premise SQL server, and the target server to be your Azure SQL database. Set the scope of the migration to **Schema Only**. After you connect to the source database, choose the schema objects to deploy to the new Azure SQL database. The DMA will create a script to do the required actions, selecting **Deploy Schema** will run the script. Once complete check the target server to ensure the database has been configured correctly.
+To use the DMA to migrate the schema, create a new **Migration** project. Select the source server as your on-premises SQL server, and the target server to be your Azure SQL database. Set the scope of the migration to **Schema Only**. After you connect to the source database, choose the schema objects to deploy to the new Azure SQL database. The DMA will create a script to do the required actions, selecting **Deploy Schema** will run the script. Once complete check the target server to ensure the database has been configured correctly.
 
 ![Screenshot of the DMA exporting a schema](../media/dma-migrate-schema.png)
 
-## Preparing your Azure environment
+### Preparing your Azure environment
 
 There are several steps you need to take to prepare Azure before starting the full database data migration:
 

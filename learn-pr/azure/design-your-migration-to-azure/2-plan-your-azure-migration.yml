@@ -27,14 +27,14 @@ quiz:
     - content: "Optimize"
       isCorrect: false
       explanation: "This is not the first stage of the migration process, this comes third in the plan."
-  - content: "In which stage would you identify the tools required for the migration?"
+  - content: "In your scenario which two tools will your company be using in the migrate phase?"
     choices:  
-    - content: "Migrate"
+    - content: "Azure Site Recovery, Azure Database Migration Service"
       isCorrect: true
-      explanation: "This is correct, at the early migration stages the tools to be used should be identified." 
-    - content: "Secure & Monitor"
+      explanation: "This is correct, as you have VMware workloads and relational databases to migrate." 
+    - content: "Azure Migrate, Azure Data Box"
       isCorrect: false
-      explanation: "This is incorrect and is the last stage of the migration process."
-    - content: "Assess"
+      explanation: "This is incorrect, you will use Azure Migrate but this is in the assess phase, and Azure Data Box isn't required in your scenario."
+    - content: "Data Migration Tool, Azure Backup"
       isCorrect: false
-      explanation: "This is incorrect, the tools for the migration aren't discussed at this point."
+      explanation: "This is incorrect, the Data Migration Tool is used to migrate data into Azure Cosmos DB, and Azure Backup is used in the monitor phase."

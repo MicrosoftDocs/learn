@@ -1,8 +1,10 @@
-After running Azure Migrate, a decision can be made about which of your servers make good candidates to be migrated to Azure. Azure Site Recovery is another migration tool provided by Microsoft. It's normally used to manage disaster recovery of on-premise workloads, but its ability to manage failing over between machines means it's a great tool for migration as well.
+After running Azure Migrate, a decision can be made about which of your servers make good candidates to be migrated to Azure. Azure Site Recovery is another migration tool provided by Microsoft. It's normally used to manage disaster recovery of on-premises workloads, but its ability to manage failing over between machines means it's a great tool for migration as well.
 
 You've presented your findings to the IT Director and you now wish to continue with a test migration to assess the end to end process. You have chosen to use Azure Site Recovery as the tool to complete the migration.
 
 In this unit, you'll review Azure Site Recovery and how it can be used to migrate specific workloads to Azure.
+
+![Screenshot of the Azure Backup and Site Recovery creation](../media/azure-site-recovery.png)
 
 ## What is Azure Site Recovery?
 
@@ -20,20 +22,18 @@ Before you can start to use Site Recovery for either a failover or a straight mi
 
 ## Preparing the VMware environment
 
-For your company, you are focused on moving VMware and database workloads to Azure. Azure Site Recovery also supports replicating on-premise hardware and Hyper-V workloads. For more information, see the summary for moving these types of workloads to Azure.
-
-The above section focused on Azure tasks, this section details the preparation that needs to take place on the on-premises VMware estate to ensure connectivity to Azure.
+For your company, you are focused on moving VMware and database workloads to Azure. The above section focused on Azure tasks, this section details the preparation that needs to take place on the on-premises VMware estate to ensure connectivity to Azure.
 
 - **Automatic discovery account** - Create an account at vCenter level and then assign the relevant permissions.
 - **Mobility service account**- Install the Mobility service on each virtual machine. You can do the service by a push installation from the Azure console, or a manual install. If using the push installation, the account needs permission to install software on each of the virtual machines.
 - **Connection after migration** - Enable Remote Desktop Protocol (RDP) on each virtual machine, and configure the Windows Firewall appropriately **before** migration.
 - **Setup the configuration server** - The configuration server coordinates the communication between the on-premises environment and Azure. Deploy the 'Open Virtualization Application' (OVA) template to a highly available virtual machine in your VMware environment.
 
-## Migrating on-premise to Azure
+## Migrating on-premises VMs to Azure
 
 There are also several settings that need to be configured for the task of migrating on-premises virtual machines to Azure, they are:
 
-- **Set a protection goal** - For VMware environments set the goal to, on-premise migration to Azure using the VMware vSphere Hypervisor
+- **Set a protection goal** - For VMware environments set the goal to, on-premises migration to Azure using the VMware vSphere Hypervisor
 - **Setup the target environment** - The target environment is set in the portal by selecting the Azure subscription and Resource Manger deployment model you wish to use. Select migrating VMware to Azure, Site Recovery will then verify a valid network exists in Azure that the migrated virtual machines will connect to
 - **Create a replication policy** - A replication policy contains settings such as a Recovery Point Objective (RPO) threshold. The policy is associated with the configuration server that has been deployed
 - **Enable replication** - Enable the replication the Recovery Service vault level.
@@ -44,6 +44,8 @@ There are also several settings that need to be configured for the task of migra
     - Select the replication policy, this policy sets the App-consistent snapshot frequency, RPO threshold, and recovery point retention period
 
 ## Starting the migration
+
+![Screenshot of the Azure Site Recovery dashboard](../media/azure-site-recovery-dashboard.png)
 
 Once the steps to configure the source and target environments are complete, the migration can take place.
 
@@ -59,4 +61,4 @@ Review the security settings of the virtual machine after the migration. Restric
 
 Consider improving the resilience of the migrated machines by adding a backup schedule using Azure Backup, and replicating the machines to at least a secondary region.
 
-Complete tidy up tasks for the remaining on-premise servers, such as removing the servers from local backups, removing their raw disk files from SAN storage to free up space. Documentation related to that replatformed servers should be updated to reflect their new IP addresses and locations in Azure.
+Complete tidy up tasks for the remaining on-premises servers, such as removing the servers from local backups, removing their raw disk files from SAN storage to free up space. Documentation related to that replatformed servers should be updated to reflect their new IP addresses and locations in Azure.
