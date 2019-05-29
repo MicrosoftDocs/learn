@@ -50,7 +50,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUq]
 
 >[!NOTE]
->The collector appliance gathers metadata from on-premises servers running both Windows and Linux and sends it to the migration project. Azure Migrate then uses the collector appliance data to make application-specific migration recommendations including cost estimates for both migration and operation in the cloud. The Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure.
+>Azure Migrate saves time and money by pulling data from the collector appliance and telling you exactly what servers are ready to migrate, and what costs they would incur running in the cloud.  Additionally, the Azure Hybrid Use Benefit can lower costs by up to 1/5 by leveraging existing on-premises licenses (see more detail at the URL provided on the resources page).
 
 ## Database Migration
 

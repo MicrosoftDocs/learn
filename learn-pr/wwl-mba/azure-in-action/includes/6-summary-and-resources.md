@@ -17,7 +17,7 @@ In this module you have seen:
 Here are the key takeaways:
 
 :::row:::
-![Icon of key](../media/key-takeaway.png)
+![Icon of key](../media/key_takeaway.png)
 :::column:::
 1. Be aware of opportunities for application migration and modernization to Azure, such as End of Support (EOS) for Windows Server 2008/R2.
 
@@ -37,13 +37,19 @@ Use these resources to discover more.
 
 ### Introduction
 
-- [Applications and infrastructure migration and modernization](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization/index)
+- [Applications and infrastructure migration and modernization](https://docs.microsoft.com/en-us/learn/modules/app-and-infra-migration-and-modernization/index)
 
-- [Introduction to Microsoft data estate migration and modernization](https://docs.microsoft.com/learn/modules/data-estate-migration-and-modernization/1-introduction-to-microsoft-data-estate-migration-and-modernization)
+- [Introduction to Microsoft data estate migration and modernization](https://docs.microsoft.com/en-us/learn/modules/data-estate-migration-and-modernization/1-introduction-to-microsoft-data-estate-migration-and-modernization)
 
 ### Demo - Microsoft Azure migration
 
-- [Datacenter Migration DemoMate Demo](https://microsoft.sharepoint.com/sites/infopedia/pages/layouts/kcdoc.aspx?k=g01kc-1-37010)
+- [Microsoft Hands-on Labs](https://www.microsoft.com/handsonlabs) - search on **migration** to find the labs listed below
+
+- Assessing on-premises VMware environments with Azure Migrate
+
+- Migration Using SQL Managed Instance
+
+- SQL Migration Using Azure Data Migration Services (DMS)
 
 ### Demo - Modernizing .NET Applications
 
@@ -52,3 +58,4 @@ Use these resources to discover more.
 ### Demo - Azure DevOps
 
 - [GitHub-AzureDevOps](https://github.com/hsachinraj/GitHub-AzureDevOps/blob/master/readme.md) demo
+

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: 3-5 multiple-choice questions
-  ms.date: 5/23/2019
+  ms.date: 5/29/2019
   author: kimrit
   ms.author: v-kimrit
   ms.topic: interactive-tutorial
@@ -15,88 +15,49 @@ content: |
   [!include[](includes/5-knowledge-check.md)] 
 quiz:
   questions:
-  - content: "Insert the question text in this cell."
+  - content: "What is the name of the Azure tool that gathers metadata from on-premises servers to assist with making cloud migration and operation recommendations?"
     choices:
-    - content: "Insert the fourth incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the fourth incorrect answer feedback in this cell."
-    - content: "Insert the third incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the third incorrect answer feedback in this cell."
-    - content: "Insert the correct answer text in this cell."
+    - content: "Azure Migrate Collector"
       isCorrect: true
-      explanation: "Insert the correct answer feedback in this cell."
-    - content: "Insert the second incorrect answer text in this cell."
+      explanation: "Correct. The Azure Migrate Collector is a virtual appliance that collects metadata from on-premises servers and sends it to the migration project. Azure Migrate then uses the collector appliance data to make application-specific migration recommendations including cost estimates for both migration and operation in the cloud."
+    - content: "Azure Load Balancer"
       isCorrect: false
-      explanation: "Insert the second incorrect answer feedback in this cell."
-    - content: "Insert the first incorrect answer text in this cell."
+      explanation: "Incorrect. Azure Load Balancer is a service that is used post-migration to keep servers from bogging down, allowing a smooth flow of traffic."
+    - content: "Azure Hybrid Benefit"
       isCorrect: false
-      explanation: "Insert the first incorrect answer feedback in this cell."
-  - content: "Insert the question text in this cell."
+      explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure."
+    - content: "Azure Site Recovery"
+      isCorrect: false
+      explanation: "Incorrect. Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking the servers down by replicating those VMs from a primary site (on-premises) to a secondary location (Azure)."
+  - content: "What is the name of the Azure feature that captures application performance, once the application is released?"
     choices:
-    - content: "Insert the correct answer text in this cell."
+    - content: "Azure Migrate Collector."
+      isCorrect: false
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+    - content: "Application Authenticator."
+      isCorrect: false
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+    - content: "Application Insights."
       isCorrect: true
-      explanation: "Insert the correct answer feedback in this cell."
-    - content: "Insert the second incorrect answer text in this cell."
+      explanation: "Correct. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+    - content: "Azure Boards."
       isCorrect: false
-      explanation: "Insert the second incorrect answer feedback in this cell."
-    - content: "Insert the third incorrect answer text in this cell."
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+    - content: "Azure DevOps."
       isCorrect: false
-      explanation: "Insert the third incorrect answer feedback in this cell."
-    - content: "Insert the first incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the first incorrect answer feedback in this cell."
-    - content: "Insert the fourth incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the fourth incorrect answer feedback in this cell."
-  - content: "Insert the question text in this cell."
+      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real-time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
+  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many benefits available. Which of the following is an option that can be configured by Azure App Service?"
     choices:
-    - content: "Insert the correct answer text in this cell."
+    - content: "Azure Hybrid Benefit"
+      isCorrect: false
+      explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure, but it is not an configurable option provided by Azure App Service."
+    - content: "An unlimited number of free apps and disk space"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service does not allow for an unlimited number of free apps and disk space to be configured."
+    - content: "Application authentication"
       isCorrect: true
-      explanation: "Insert the correct answer feedback in this cell."
-    - content: "Insert the third incorrect answer text in this cell."
+      explanation: "Correct. Administrators can fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant."
+    - content: "Mixed reality experiences"
       isCorrect: false
-      explanation: "Insert the third incorrect answer feedback in this cell."
-    - content: "Insert the fourth incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the fourth incorrect answer feedback in this cell."
-    - content: "Insert the second incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the second incorrect answer feedback in this cell."
-    - content: "Insert the first incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the first incorrect answer feedback in this cell."
-  - content: "Insert the question text in this cell."
-    choices:
-    - content: "Insert the first incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the first incorrect answer feedback in this cell."
-    - content: "Insert the correct answer text in this cell."
-      isCorrect: true
-      explanation: "Insert the correct answer feedback in this cell."
-    - content: "Insert the second incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the second incorrect answer feedback in this cell."
-    - content: "Insert the fourth incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the fourth incorrect answer feedback in this cell."
-    - content: "Insert the third incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the third incorrect answer feedback in this cell."
-  - content: "Insert the question text in this cell."
-    choices:
-    - content: "Insert the third incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the third incorrect answer feedback in this cell."
-    - content: "Insert the second incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the second incorrect answer feedback in this cell."
-    - content: "Insert the correct answer text in this cell."
-      isCorrect: true
-      explanation: "Insert the correct answer feedback in this cell."
-    - content: "Insert the fourth incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the fourth incorrect answer feedback in this cell."
-    - content: "Insert the first incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Insert the first incorrect answer feedback in this cell."
+      explanation: "Incorrect. While Azure supports development for mixed reality experiences on several devices such as HoloLens and iOS, this service is not configured using Azure App Service."
+  
