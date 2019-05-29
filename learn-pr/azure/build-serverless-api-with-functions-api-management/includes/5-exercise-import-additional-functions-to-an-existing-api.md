@@ -42,6 +42,16 @@ The import of an Azure Function App automatically generates:
 1. Select **Function App settings** from the overview
 1. The key is located in the **Host Keys** section
 
+
+## Create a product
+
+<!-- TODO: Add a product here and then add the functions to it here-->
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
+1. Under **API Management**, click **Products**, and then click **Add**.
+
+
+
 ## Access the named value in Azure API Management
 
 Navigate to your Azure API Management instance and select **Named values** from the menu on the left. The Azure Function App key is stored there.

@@ -49,7 +49,7 @@ Now, test the Product Details Function. This is not part of  API Management yet:
 
 Now that we have a working Function, let's create the API Management resource:
 
-1. In the Azure portal, select **Create a resource > Integration > API management**, and then click **Create**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Integration > API management**, and then click **Create**.
 1. In the API Management service window, enter these settings and then click **Create**:
 
     | Setting | Value |
@@ -65,98 +65,41 @@ Now that we have a working Function, let's create the API Management resource:
 
     ![Screenshot of the Azure portal showing the Create a new API management instance.](../media/3-create-api-mgmt-instance.png)
 
-<!-- NOTE: this is currently resulting in a sandbox policy error. Take it up with MS? -->
+<!-- NOTE: this is currently resulting in a sandbox policy error. Engineering must review the policies -->
 
+## Import an Azure Function App as a new API
 
+Now, we can add the **Product Details** function to the API Management instance and create a product for it:
 
-<!-- TODO: This seems incomplete. WHat we actually need are:
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
+1. Under **API Management**, click **APIs** and then, under **Add a new API**, click **Function App**.
 
-1. A VS Code project in a Git Hub location that implements the two functions
-1. Clone that.
-1. Include a script that installs the Azure FUnctions Core Tools by using npm, creates a resource group, storage account, and two function resources in azure.
-1. Script or get the students to deploy the functions to azure.
- -->
+    ![Adding a Azure Function App](../media/3-import-azure-function-app.png)
 
-You must have a function app to host the execution of your functions. The function app provides an environment for serverless execution of your function code. It lets you group functions as a logic unit for easier management, deployment, and sharing of resources. Create a function app by using the az functionapp create command.
+1. To select your function, click **Browse** and then click on the **Function App** section.
 
-For this exercise you will create 2 Function Aps with HTTP trigger Functions. You can use the script below to setup a Function App (currently named as "func-App-instance1). Create a second name by changing the name to something similar such as (func-App-stance2) and running the serverless function app script below
+    ![Selecting an existing Function App](../media/3-import-azure-function-app-03.png)
 
-```bash
-#!/bin/bash
+1. In the list of Function Apps, click the **ProductFunction** and then click **Select**.
+1. Ensure that **ProductDetails** is checked, click **Select**, and then click **Create**
+1. In the **API URL suffix** textbox, type **products**, and then click **Create**. 
 
-# Function app and storage account names must be unique.
-storageName=mystorageaccount$RANDOM
-functionAppName=func-App-instance1$RANDOM
+    ![Completing the import of a Function App](../media/3-complete-import-of-function.png)
 
-# Create a resource group.
-az group create --name myResourceGroup --location westeurope
+## Test the OnlineStore product
 
-# Create an Azure storage account in the resource group.
-az storage account create \
-  --name $storageName \
-  --location westeurope \
-  --resource-group myResourceGroup \
-  --sku Standard_LRS
+You now have a functional product details API in the API Management instance that you created. Let's test that API, by using the API Management tools in the Azure Portal:
 
-# Create a serverless function app in the resource group.
-az functionapp create \
-  --name $functionAppName \
-  --storage-account $storageName \
-  --consumption-plan-location westeurope \
-  --resource-group myResourceGroup
-```
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
+1. Under **API Management**, click **APIs** and then click the **ProductFunction** API.
+1. In the list of operations, click **GET ProductDetails** and then click the **Test** tab.
 
-Run the following to create HTTP trigger function or alternatively use the Azure Portal to create two Azure Functions
+    ![Browsing to the test tool](../media/3-browse-the-test-tool.png)
 
-<!-- TODO: This command is not available unless you've installed the Azure Functions Core Tools (which you can do with npm) -->
+1. Under **Query parameters**, click **Add parameter**.
+1. In the **name** textbox, type **id**.
+1. In the **value** textbox, type **1**, and then click **Send**.
 
-```bash
-func new --name Product --template "HttpTrigger" 
-func new --name Order --template "HttpTrigger"
-```
+    ![Testing the Product Details API](../media/3-complete-the-product-details-test.png)
 
-<!-- TODO: This might be "Http Trigger" with a space? -->
-<!-- TODO: The functions are not published. We have to do that before we can add them to an APIM instance -->
-
-<!-- TODO: show that one of the functions is working in Azure -->
-
-## Create a new API Management instance
-
-1. In the Azure portal, select **Create a resource** > **Integration** > **API management**
-    Alternatively, choose New, type API management in the search box, and press Enter. Click Create
-
-1. In the API Management service window, enter settings
-
-    ![Screenshot of the Azure portal showing the Create a new API management instance.](../media/3-create-api-mgmt-instance.png)
-
-> [!TIP]
-> It usually takes between 20 and 30 minutes to create an API Management service. You can pin the newly created service to the dashboard by selecting Pin
-
-### Import an Azure Function App as a new API
-
-Follow the steps below to create a new API from an Azure Function App
-
-1. In your **Azure API Management** service instance, select **APIs** from the menu on the left
-
-1. In the **Add a new API** list, select **Function App**
-
-    ![Screenshot of the Azure portal showing the adding of an Azure Function App to import.](../media/3-import-azure-function-app.png)
-
-1. Click **Browse** to select Functions for import
-
-    ![Screenshot of the Azure portal showing selecting an existing Function App](../media/3-import-azure-function-app-02.png)
-
-1. Click on the **Function App** section to choose from the list of available Function Apps.
-
-    ![Screenshot to select an existing Function App](../media/3-import-azure-function-app-03.png)
-
-1. Find the **Function App** you want to import Functions from, click on it and press **Select**
-
-    ![Screenshot to select an existing Function App](../media/3-import-azure-function-app-04.png)
-
-1. Select the Functions you would like to import and click **Select**
-
-    ![Screenshot to select an existing Function App](../media/3-import-azure-function-app-06.png)
-
-1. Switch to the **Full** view and assign **Product** to your new API. If needed, edit other pre-populated fields
-1. Click **Create**
+1. In the **HTTP response**, notice that the details of a product have been returned in JSON format. Also notice the the **HTTP request** was sent to a destination within the **azure-api.net** domain. This is different to the **azurewebsites.net** domain where the original function app is hosted.
