@@ -46,7 +46,7 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
 
     A financial organization has begun migrating resources to Azure. They have systems that need to communicate between their on-premises network and Azure, and they do not want this traffic traversing the internet. They have higher bandwidth requirements and need the ability to have consistent network performance. They also use Office 365 and would like to reduce traffic over their internet pipe and send this traffic over a dedicated connection to Azure. They believe ExpressRoute meets their needs but need to understand more about the service to include it in their infrastructure.
 
-2. **What is the Azure ExpressRoute service**
+1. **What is the Azure ExpressRoute service**
 
    - Describe the Azure ExpressRoute service
        - What is Azure ExpressRoute?
@@ -78,38 +78,38 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
       - What are the requirements to implement Azure ExpressRoute?
       - What security benefits does Azure ExpressRoute provide? 
       
-3.  **How Azure ExpressRoute works**
+1.  **How Azure ExpressRoute works**
 
-   - What are the prerequisites for ExpressRoute?
-       -  What needs to be configured for connectivity from on-premises to Azure?
-       - What are the requirements to access services, such as Office 365, from on-premises networks?
-       - What are ExpressRoute circuits, and why do I need them?
-       - ExpressRoute requires you to setup and manage routing to access Microsoft cloud services.  How can you do this?
-
-   - Explain what ExpressRoute Microsoft peering is
-       - Why do you need ExpressRoute Microsoft Peering?
-       - Which Azure services can you access with Peering?	
-       - Add some steps here or a diagram showing how you can create circuits and peering
-
-   - Describe the process behind linking virtual networks to an ExpressRoute circuit
-       - Why is this action needed?  
-       - What will it enable me to do? 
-	
-   - Describe virtual network gateways and FastPath
-      - Why do you need to setup a virtual network gateway?
-      - What steps are required to implement this?
-      - What is FastPath?
-
-   - Describe high availability and failover with ExpressRoute
-       - What high availability options are available with ExpressRoute?
-       - Can I have more than one circuit to cover for a failure?
-       - Can ExpressRoute cover multiple networks?  
-
-    - Describe the role and function of ExpressRoute circuits, Local Edge routers, Microsoft Edge routers and Azure virtual networks?
-        - What is the purpose of these features?
-        - How do they interact with ExpressRoute?
-        - Show a table listing the properties of each feature and a diagram showing where the components fit into an Azure ExpressRoute connection
-
+       - What are the prerequisites for ExpressRoute?
+           -  What needs to be configured for connectivity from on-premises to Azure?
+           - What are the requirements to access services, such as Office 365, from on-premises networks?
+           - What are ExpressRoute circuits, and why do I need them?
+           - ExpressRoute requires you to setup and manage routing to access Microsoft cloud services.  How can you do this?
+    
+       - Explain what ExpressRoute Microsoft peering is
+           - Why do you need ExpressRoute Microsoft Peering?
+           - Which Azure services can you access with Peering?	
+           - Add some steps here or a diagram showing how you can create circuits and peering
+    
+       - Describe the process behind linking virtual networks to an ExpressRoute circuit
+           - Why is this action needed?  
+           - What will it enable me to do? 
+    	
+       - Describe virtual network gateways and FastPath
+          - Why do you need to setup a virtual network gateway?
+          - What steps are required to implement this?
+          - What is FastPath?
+    
+       - Describe high availability and failover with ExpressRoute
+           - What high availability options are available with ExpressRoute?
+           - Can I have more than one circuit to cover for a failure?
+           - Can ExpressRoute cover multiple networks?  
+    
+        - Describe the role and function of ExpressRoute circuits, Local Edge routers, Microsoft Edge routers and Azure virtual networks?
+            - What is the purpose of these features?
+            - How do they interact with ExpressRoute?
+            - Show a table listing the properties of each feature and a diagram showing where the components fit into an Azure ExpressRoute connection
+    
 1. **Knowledge check**
 
       - What is Microsoft Peering?
