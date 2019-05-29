@@ -72,7 +72,7 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
 	   - Can you control who has access to create and manage the circuits?
 	   - How can you ensure data is not compromised?  Summarize security options with Azure ExpressRoute.
 
-1. **Knowledge check**
+    **Knowledge check**
 
       - What is the Azure ExpressRoute service?
       - What are the requirements to implement Azure ExpressRoute?
@@ -110,7 +110,7 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
             - How do they interact with ExpressRoute?
             - Show a table listing the properties of each feature and a diagram showing where the components fit into an Azure ExpressRoute connection
     
-1. **Knowledge check**
+    **Knowledge check**
 
       - What is Microsoft Peering?
       - What is an Azure ExpressRoute circuit?
@@ -138,7 +138,7 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
         - Pricing details for ExpressRoute compared with Point-to-Site and Site-to-Site VPNs
 	    - Briefy compare scenarios for using each connectivity option
 
-1. **Knowledge check**
+    **Knowledge check**
 
       - When should you use Azure ExpressRoute compared to Azure Site to Site connectivity?
       - Which connection type is best to use for Office 365 users?
