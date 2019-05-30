@@ -67,7 +67,7 @@ Some reasons teams move away from the private cloud are:
 - Owning the equipment limits the agility - to scale you must buy, install, and setup new hardware
 - Private clouds require IT skills and expertise that's hard to come by
 
-A use case scenario for a private cloud would be when an organization has data that cannot be put in the public cloud, perhaps for legal reasons. For example, they may have medical data that cannot be exposed publicly. Another scenario may be where government policy requires specific data to be kept in-country or privately.
+A use case scenario for a private cloud would be when an organization has data that cannot be put in the public cloud, perhaps for legal reasons. An example scenario may be where government policy requires specific data to be kept in-country or privately.
 
 A private cloud can provide cloud functionality to external customers as well, or to specific internal departments such as Accounting or Human Resources.
 
