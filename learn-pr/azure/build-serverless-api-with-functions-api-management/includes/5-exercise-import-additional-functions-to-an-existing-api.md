@@ -30,7 +30,7 @@ Now, add the Order function to the API Management resource that you created in u
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
 1. Under **API Management**, click **APIs** and then under **Add a new API**, click **Function App**.
 
-    ![Adding a Azure Function App](../media/5-import-azure-function-app.png)
+    ![Adding an Azure Function App](../media/5-import-azure-function-app.png)
 
 1. To select your function, click **Browse** and then click on the **Function App** section.
 
@@ -45,13 +45,13 @@ Now, add the Order function to the API Management resource that you created in u
 
 ## Test the Orders and Products APIs
 
-We can now use the `curl` command-line tool to submit requests to our API. To do this, we need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions. We also need to pass the correct subscription key with each request. 
+We can now use the `curl` command-line tool to submit requests to our API. To submit requests, we need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions. We also need to pass the correct subscription key with each request. 
 
 To test the API:
 
 1. To obtain the API's URL, In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
 1. To the right of the **Gateway URL** value, click the **Copy to clipboard** button.
-1. In the Cloud Shell on the right, type the following command, paste the **Gateway URL** value that you just copied in place of the token, and then press Enter:
+1. In the Cloud Shell on the right, type the following command, paste the **Gateway URL** value that you copied in place of the token, and then press Enter:
 
     ```bash
     GATEWAY_URL=<paste the URL here>
@@ -59,8 +59,8 @@ To test the API:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in your **Azure API Management** instance, under **API Management**, click **Subscriptions**.
 1. To the right of the **Built-in all-access subscription**, click **...** and then click **SHow/hide keys**.
-1. To the right of the **PRIMARY KEY** click the **Copy to clipboard** button.
-1. In the Cloud Shell on the right, type the following command, paste the **PRIMARY KEY** value that you just copied in place of the token, and then press Enter:
+1. To the right of the **PRIMARY KEY**, click the **Copy to clipboard** button.
+1. In the Cloud Shell on the right, type the following command, paste the **PRIMARY KEY** value that you copied in place of the token, and then press Enter:
 
     ```bash
     SUB_KEY=<paste the key here>

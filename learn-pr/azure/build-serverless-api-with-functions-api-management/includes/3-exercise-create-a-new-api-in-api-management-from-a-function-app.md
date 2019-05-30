@@ -27,7 +27,7 @@ In this exercise, you will add an Azure Function to Azure API Management. Later 
 
 ## Test the product details function
 
-Now, test the Product Details Function. This is not part of  API Management yet:
+Now, test the Product Details Function. This function is not part of  API Management yet:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. Click **All Resources** and then click the product function.
@@ -74,7 +74,7 @@ Now, we can add the **Product Details** function to the API Management instance 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
 1. Under **API Management**, click **APIs** and then, under **Add a new API**, click **Function App**.
 
-    ![Adding a Azure Function App](../media/3-import-azure-function-app.png)
+    ![Adding an Azure Function App](../media/3-import-azure-function-app.png)
 
 1. To select your function, click **Browse** and then click on the **Function App** section.
 
@@ -88,7 +88,7 @@ Now, we can add the **Product Details** function to the API Management instance 
 
 ## Test the OnlineStore product
 
-You now have a functional product details API in the API Management instance that you created. Let's test that API, by using the API Management tools in the Azure Portal:
+You now have a functional product details API in the API Management instance that you created. Let's test that API, by using the API Management tools in the Azure portal:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
 1. Under **API Management**, click **APIs** and then click the **ProductFunction** API.
@@ -102,4 +102,4 @@ You now have a functional product details API in the API Management instance tha
 
     ![Testing the Product Details API](../media/3-complete-the-product-details-test.png)
 
-1. In the **HTTP response**, notice that the details of a product have been returned in JSON format. Also notice the the **HTTP request** was sent to a destination within the **azure-api.net** domain. This is different to the **azurewebsites.net** domain where the original function app is hosted.
+1. In the **HTTP response**, notice that the details of a product have been returned in JSON format. Also notice the **HTTP request** was sent to a destination within the **azure-api.net** domain. This location is different to the **azurewebsites.net** domain where the original function app is hosted.

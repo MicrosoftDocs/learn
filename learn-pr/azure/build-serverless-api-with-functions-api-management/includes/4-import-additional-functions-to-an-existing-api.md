@@ -6,20 +6,20 @@ Here, you will see how API Management can be used to assemble disparate microser
 
 ## Microservices architecture challenges
 
-The microservices approach to archtitecture creates a modular application in which each part is loosely coupled to the others. This makes it easier to implement continous delivery because new versions of each service can be deployed independently of the others. If bugs are not detected during testing and make it through to production, their impact is reduced and it is easier to roll back to a stable version. Also, you can create small, autonomous teams of developers for each microservice. This fits well with modern Agile practices.
+The microservices approach to architecture creates a modular application in which each part is loosely coupled to the others. This method makes it easier to implement continuous delivery because new versions of each service can be deployed independently of the others. If bugs are not detected during testing and make it through to production, their impact is reduced and it is easier to roll back to a stable version. Also, you can create small, autonomous teams of developers for each microservice. This division fits well with modern Agile practices.
 
-However, the microservices architecture can also preent challenges, such as:
+However, the microservices architecture can also present challenges, such as:
 
 - Client apps are coupled to microservices. If you want to change the location or definition of the microservice, you may have to reconfigure or update the client app.
-- Each microservice may be presented under different domain names or IP addresses. This presentation can give an impression of inconsistency to users and can negatively effect your branding.
-- It can be difficult to enforce consistent API rules and standards across all microservices. For example, one team mat prefer to respond with XML and another may prefer JSON.
+- Each microservice may be presented under different domain names or IP addresses. This presentation can give an impression of inconsistency to users and can negatively affect your branding.
+- It can be difficult to enforce consistent API rules and standards across all microservices. For example, one team may prefer to respond with XML and another may prefer JSON.
 - You are reliant on individual teams to implement security in their microservice correctly. It is difficult to impose these requirements centrally.
 
-By using Azure API Management, you can address this issues.
+By using Azure API Management, you can address these issues.
 
 ## How does API Management help?
 
-By adding multiple APIs, Functions, and other services to API Management, you can assemble those components into a integrated product that presents a single entry point to client applications. This has advantages that include:
+By adding multiple APIs, Functions, and other services to API Management, you can assemble those components into an integrated product that presents a single entry point to client applications. This construction has advantages that include:
 
 - Client apps are coupled to the API Management product, not the individual microservices. You can change the location and definition of the services without necessarily reconfiguring or updating the client apps.
 - Client apps always connect to the domain name or IP address of the API Management product. API Management acts as an intermediary. It forwards requests to the right microservice, wherever it is located, and returns responses to users. Users never see the different URIs where microservices are hosted.

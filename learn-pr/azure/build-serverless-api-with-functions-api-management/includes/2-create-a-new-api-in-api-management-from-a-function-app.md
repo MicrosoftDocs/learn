@@ -1,4 +1,4 @@
-Many organizations that build distroubted applications implement them by using microservices architectures.
+Many organizations that build distributed applications implement them by using microservices architectures.
 
 In your online store, you want to implement each part of the application as a microservice - one for the product details, one for order placement, and so on. You have assigned a separate team to develop each microservice and each team will use continuous development and delivery to update and deploy their code on a regular basis. You want to find a way to assemble these microservices into a single product and then manage that product centrally.
 
