@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "Artificial intelligence (AI) and machine learning are:"
     choices:
-    - content: "Completely separate fields of study."
+    - content: "Separate fields of study."
       isCorrect: false
       explanation: "Incorrect. Machine learning is a subset of AI."
     - content: "AI is computers performing tasks that humans consider difficult through the creation of intelligent agents, and machine learning is type of AI that rewrites itself to get better at a specific task."
@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: "Neural networks, organized in a particular way so they can solve very complex problems."
       isCorrect: true
-      explanation: "Correct. Deep learning involves various types of neural networks which can solve very difficult problems, like identifying faces from photos or videos."
+      explanation: "Correct. Deep learning involves various types of neural networks, which can solve very difficult problems, like identifying faces from photos or videos."
     - content: "A type of machine learning algorithm that predicts categories."
       isCorrect: false
       explanation: "Incorrect. While deep learning is a type of machine learning algorithm, deep learning can predict more than just categories."
@@ -46,29 +46,29 @@ quiz:
       explanation: "Incorrect. While deep learning is a machine learning algorithm, in many cases it outperforms other solutions and is ready for production environments."
   - content: "Continuous variables and categories are:"
     choices:
-    - content: "Continuous variables are a class of something (approved / unapproved, fixed / broken), while categories are things that can be measured in numbers (height, weight etc)."
+    - content: "Continuous variables are a class of something (approved and unapproved, fixed and broken), while categories are things that can be measured in numbers (height, weight etc.)."
       isCorrect: false
       explanation: "Incorrect. Continuous variables are not a class, and categories are not measured in numbers."
-    - content: "Continuous variables are things that can be measured in numbers (height, weight etc), while categories are a specific set of numbers to represent something."
+    - content: "Continuous variables are things that can be measured in numbers (height, weight etc.), while categories are a specific set of numbers to represent something."
       isCorrect: false
       explanation: "Incorrect. While continuous variables are measurable data points, categories are not a class not a specific set of numbers."
-    - content: "Continuous variables are things that can be measured in numbers (height, weight etc), while categories are a class of something (approved / unapproved, fixed / broken)."
+    - content: "Continuous variables are things that can be measured in numbers (height, weight etc.), while categories are a class of something (approved and unapproved, fixed and broken)."
       isCorrect: true
       explanation: "Correct. Continuous variables are measurable data points, and categories are a distinct class of something."
-    - content: "Continuous variables whole numbers that represent data points, while categories are a class of something (approved / unapproved, fixed / broken)."
+    - content: "Continuous variables whole numbers that represent data points, while categories are a class of something (approved and unapproved, fixed and broken)."
       isCorrect: false
       explanation: "Incorrect. Continuous variables do not need to be whole numbers."
   - content: "How does error differ from cost?"
     choices:
     - content: "Error is a measure of how accurate a model is, whereas cost is a penalty calculated from the error."
       isCorrect: true
-      explanation: "Correct. Error is a measure of how accurate the model is overall, whereas cost is an metric calculated from the error using a cost function."
+      explanation: "Correct. Error is a measure of how accurate the model is overall, whereas cost is a metric calculated from the error using a cost function."
     - content: "Error is calculated from the cost, using a cost function."
       isCorrect: false
       explanation: "Incorrect. Cost is calculated from the error."
     - content: "The are not different."
       isCorrect: false
       explanation: "Incorrect. Cost is a metric we use in training a model, which is calculated from the error."
-    - content: "Cost is measure of how accurate a model is, whereas error is a the overall penalty calculated from the cost."
+    - content: "Cost is measure of how accurate a model is, whereas error is the overall penalty calculated from the cost."
       isCorrect: false
       explanation: "Incorrect. Cost is the overall penalty calculated from the error."

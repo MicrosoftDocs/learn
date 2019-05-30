@@ -30,9 +30,9 @@ In AI, things are a little more mathematical than the examples above, but the ge
 
 Congratulations! You've completed the first module of the course. Take a moment to read this recap of what we covered:
 
-* __Models__ - in AI, models are software that gives a prediction (or estimation) to an example, using data provided to it. For example, an AI model could predict how fast a car will go based on the type of car and how much the accelerator pedal is pushed. 
+* __Models__ - in AI, models are software that gives a prediction (or estimation) to an example, using data provided to it. For example, an AI model could predict how fast a car will go based on the type of car and how much the accelerator pedal is pushed.
 * __Error__ - how accurate a model is at predicting something.
 * __Cost__ - the error metric models learn from and try to decrease, calculated from the error.
-* __Cost functions__ - a mathematical formula run by software to determine for us the cost of a model. Different models have different cost functions and they are built into the model for us already. 
+* __Cost functions__ - a mathematical formula run by software to determine for us the cost of a model. Different models have different cost functions and they are built into the model for us already.
   
 Now that you’ve had an introduction to AI, let’s wrap up everything you’ve learned with a knowledge check.

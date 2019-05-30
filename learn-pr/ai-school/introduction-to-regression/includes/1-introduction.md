@@ -1,6 +1,6 @@
 Now you’ve had an overview of the fundamentals of AI, we’ll go over more commonly-used models, as well as introducing some best practices that will help you get good results from your AI models.
 
-In this module, we’ll work through using a linear and polynomial regression algorithms.
+In this module, we’ll work through using linear regression and polynomial regression algorithms.
 
 **In this module, you will learn to:**
 
