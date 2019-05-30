@@ -8,7 +8,7 @@ In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database
 
 Start by creating the database in Azure, by adding an Azure Cosmos DB account that uses the Graph API.
 
-1. Browse to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and log in using the account that you used when you activated the sandbox.
+1. Browse to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and sign in using the account that you used when you activated the sandbox.
 
 1. Click **+ Create a resource**, then **Databases**, and then click **Azure Cosmos DB**.
 
@@ -36,32 +36,33 @@ It might take a few minutes for Azure to create your new Azure Cosmos DB account
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then click the Cosmos database you created.
 
-1. On the **Overview** tab, copy the value for the **Gremlin Endpoint**; you will use this value when you create your application in the next section.
+1. On the **Overview** tab, copy the value for the **Gremlin Endpoint**; you'll use this value when you create your application in the next section.
 
    ![Screenshot showing how to copy the Gremlin Endpoint](../media/5-copy-gremlin-endpoint.png)
 
 1. Click **Data Explorer**, and then click **New Graph**.
 
-1. In the **Add graph** page, enter the settings for your new graph. Take note of the values that you choose for the **Database ID** and **Graph ID**; you will use these values when you create your application in the next section.
+1. In the **Add graph** page, enter the settings for your new graph. Take note of the values that you choose for the **Database ID** and **Graph ID**; you'll use these values when you create your application in the next section.
 
    | Setting| Suggested value | Description |
    | --- | --- | --- |
-   | **Database ID** | sample-database | Enter sample-database as the name for the new database. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space. |
-   | **Graph ID** | sample-graph | Enter sample-graph as the name for your new collection. Graph names have the same character requirements as database IDs. |
-   | **Storage Capacity** | Fixed (10 GB) | Specify a fixed value of 10 GB. This value is the storage capacity of the database |
-   | **Throughput** | 400 RUs | Change the throughput to 400 request units per second (RU/s). If you want to reduce latency, you can scale up the throughput later. |
+   | **Database id** | `sample-database` | Enter sample-database as the name for the new database. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space. |
+   | **Graph id** | `sample-graph` | Enter sample-graph as the name for your new collection. Graph names have the same character requirements as database IDs. |
+   | **Storage capacity** | `Fixed (10 GB)` | Specify a fixed value of 10 GB. This value is the storage capacity of the database |
+   | **Partition key** | n/a | You will only see this setting if you did not set the **Storage capacity** to `Fixed (10 GB)`. |
+   | **Throughput** | `400 RUs` | Change the throughput to 400 request units per second (RU/s). If you want to reduce latency, you can scale up the throughput later. |
 
    ![Screenshot showing creating a new Graph](../media/5-azure-cosmosdb-data-explorer-graph.png)
 
 1. Click **OK** to add the graph to your database.
 
-1. Click **Keys**, then copy the value for the **PRIMARY KEY**; you will use this value when you create your application in the next section.
+1. Click **Keys**, then copy the value for the **PRIMARY KEY**; you'll use this value when you create your application in the next section.
 
    ![Screenshot showing how to copy the access key](../media/5-copy-gremlin-key.png)
 
 ## Create a .NET Core app
 
-Now you'll create a .NET Core application that will allow you to run Gremlin API queries with the Azure Cosmos DB account that you just created.
+Now you'll create a .NET Core application that will allow you to run Gremlin API queries with the Azure Cosmos DB account that you created.
 
 1. In the Cloud Shell, enter the following commands to scaffold a new .NET app, and then change to your new app's directory.
 
@@ -110,11 +111,11 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
 
    | Field | Description |
    |---|---|
-   | `HostName` | Replace this with just the domain name from the **Gremlin Endpoint** value; for example *fabrikamgraph.gremlin.cosmos.azure.com*. |
-   | `Port` | Replace this with just the port from the **Gremlin Endpoint** value; this should be *443*. |
-   | `AuthKey` | Replace this with the **PRIMARY KEY** value. |
-   | `Database` | Replace this with your **Database ID** value; for example: *sample-database*. |
-   | `Collection` | Replace this with your **Graph ID** value; for example: *sample-graph*. |
+   | `HostName` | Replace the example value with just the domain name from the **Gremlin Endpoint** value; for example: *fabrikamgraph.gremlin.cosmos.azure.com*. |
+   | `Port` | Replace the example value with just the port from the **Gremlin Endpoint** value; this value should be *443*. |
+   | `AuthKey` | Replace the example value with the **PRIMARY KEY** value. |
+   | `Database` | Replace the example value with your **Database ID** value; for example: *sample-database*. |
+   | `Collection` | Replace the example value with your **Graph ID** value; for example: *sample-graph*. |
 
 1. To save your changes, press **Ctrl-S** to save the file.
 
@@ -199,7 +200,7 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    ```bash
    dotnet run
    ```
-   Your app should display a simple help message; for example:
+   Your app should display a basic help message; for example:
    ```
    Please enter a Gremlin/Graph Query.
    ```
@@ -259,12 +260,12 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    {"Returned": "1"}
    ```
 
-1. Verify that all of your edges/relationships have been added to your database. To do so, run the following command.
+1. Verify that all of your edges/relationships have been added to your database. To do so, run the following command:
 
    ```bash
    dotnet run "g.E()"
    ```
-   Your app should display a message indicating that 3 edges/relationships were returned; for example.
+   Your app should display a message indicating that 3 edges/relationships were returned; for example:
    ```json
    {"Returned": "3"}
    ```
