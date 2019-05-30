@@ -3,7 +3,7 @@ uid: learn-wwl.introduction-to-regression.multiple-linear-regression
 title: Multiple Linear Regression
 metadata:
   title: Multiple Linear Regression
-  description: Here we use linear regression again - but this time we use multiple features.
+  description: Here we use linear regression again - but this time we use multiple features for predictions.
   ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma

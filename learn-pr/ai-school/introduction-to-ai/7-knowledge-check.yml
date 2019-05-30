@@ -3,7 +3,7 @@ uid: learn-wwl.introduction-to-ai.knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
-  description: A knowledge check for simple linear regression.
+  description: A knowledge check for the introduction to AI module.
   ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma
@@ -16,59 +16,59 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What kind of line does linear regression fit?"
+  - content: "Artificial intelligence (AI) and machine learning are:"
     choices:
-    - content: "Straight or curved, whichever best fits the data."
+    - content: "Completely separate fields of study."
       isCorrect: false
-      explanation: "Incorrect. Linear regression finds the best straight line that fits the data. It does not check if a curved line is a better fit."
-    - content: "Straight."
+      explanation: "Incorrect. Machine learning is a subset of AI."
+    - content: "AI is computers performing tasks that humans consider difficult through the creation of intelligent agents, and machine learning is type of AI that rewrites itself to get better at a specific task."
       isCorrect: true
-      explanation: "Correct. Linear regression tries to find the optimal angle and position for a straight line."
-    - content: "Curved."
+      explanation: "Correct. AI is a broad field, and machine learning is a subset of AI."
+    - content: "Related fields of study written in Python."
       isCorrect: false
-      explanation: "Incorrect. Linear regression finds the best linear line that fits the data."
-    - content: "Jagged."
+      explanation: "Incorrect. Machine learning is a subset of AI, and both can be written in many different programming languages."
+    - content: "Different words for the same thing - predictive models."
       isCorrect: false
-      explanation: "Incorrect. Linear regression finds a regular line that fits the data."
-  - content: "A line that fits well will have a:"
+      explanation: "Incorrect. While AI and machine learning both include predictive models, they involve many other aspects."
+  - content: "Deep learning involves:"
     choices:
-    - content: "Small error."
+    - content: "Neural networks, organized in a particular way so they can solve very complex problems."
       isCorrect: true
-      explanation: "Correct. If the error is small, this means that the predicted values are close to the data points."
-    - content: "Large error."
+      explanation: "Correct. Deep learning involves various types of neural networks which can solve very difficult problems, like identifying faces from photos or videos."
+    - content: "A type of machine learning algorithm that predicts categories."
       isCorrect: false
-      explanation: "Incorrect. If the error is large, this means that the predicted values do not match the data well."
-    - content: "Unknown error."
+      explanation: "Incorrect. While deep learning is a type of machine learning algorithm, deep learning can predict more than just categories."
+    - content: "A specific type of cost, used to lower error in models."
       isCorrect: false
-      explanation: "Incorrect. The error must be known to know how well the line fits the data."
-    - content: "Negative error."
+      explanation: "Incorrect. While deep learning involves cost and models, but deep learning is a specific type of machine learning."
+    - content: "A new type of machine learning algorithm that is not ready for production environments as the error is too high."
       isCorrect: false
-      explanation: "Incorrect. The error can not be negative."
-  - content: "For linear regression: At x=10, we have a data point at y=4. At x=10, our line gives a predicted value of y= 7. What is the error (squared difference) at this data point?"
+      explanation: "Incorrect. While deep learning is a machine learning algorithm, in many cases it outperforms other solutions and is ready for production environments."
+  - content: "Continuous variables and categories are:"
     choices:
-    - content: "0"
+    - content: "Continuous variables are a class of something (approved / unapproved, fixed / broken), while categories are things that can be measured in numbers (height, weight etc)."
       isCorrect: false
-      explanation: "Incorrect. Error comes from the y component, not the x."
-    - content: "3"
+      explanation: "Incorrect. Continuous variables are not a class, and categories are not measured in numbers."
+    - content: "Continuous variables are things that can be measured in numbers (height, weight etc), while categories are a specific set of numbers to represent something."
       isCorrect: false
-      explanation: "Incorrect. Remember to square the difference."
-    - content: "9"
+      explanation: "Incorrect. While continuous variables are measurable data points, categories are not a class not a specific set of numbers."
+    - content: "Continuous variables are things that can be measured in numbers (height, weight etc), while categories are a class of something (approved / unapproved, fixed / broken)."
       isCorrect: true
-      explanation: "Correct. y=4 for the data point, but y=7 for the predicted value. 7 – 4 = 3. We then square the value: 3 ^ 2 = 9."
-    - content: "-9"
+      explanation: "Correct. Continuous variables are measurable data points, and categories are a distinct class of something."
+    - content: "Continuous variables whole numbers that represent data points, while categories are a class of something (approved / unapproved, fixed / broken)."
       isCorrect: false
-      explanation: "Incorrect. As the error is the squared difference, the error cannot be negative."
-  - content: "The word ‘multiple’ in the name ‘multiple linear regression’ means that:"
+      explanation: "Incorrect. Continuous variables do not need to be whole numbers."
+  - content: "How does error differ from cost?"
     choices:
-    - content: "It predicts multiple features using one feature."
-      isCorrect: false
-      explanation: "Incorrect. It only predicts one feature."
-    - content: "It predicts multiple features using multiple features."
-      isCorrect: false
-      explanation: "Incorrect. Many features are used but it only predicts one feature."
-    - content: "It uses multiple features to predict one other feature."
+    - content: "Error is a measure of how accurate a model is, whereas cost is a penalty calculated from the error."
       isCorrect: true
-      explanation: "Correct. For example, we might use height and weight to predict shoe size."
-    - content: "It predicts one feature to using one feature."
+      explanation: "Correct. Error is a measure of how accurate the model is overall, whereas cost is an metric calculated from the error using a cost function."
+    - content: "Error is calculated from the cost, using a cost function."
       isCorrect: false
-      explanation: "Incorrect. Multiple features are used."
+      explanation: "Incorrect. Cost is calculated from the error."
+    - content: "The are not different."
+      isCorrect: false
+      explanation: "Incorrect. Cost is a metric we use in training a model, which is calculated from the error."
+    - content: "Cost is measure of how accurate a model is, whereas error is a the overall penalty calculated from the cost."
+      isCorrect: false
+      explanation: "Incorrect. Cost is the overall penalty calculated from the error."

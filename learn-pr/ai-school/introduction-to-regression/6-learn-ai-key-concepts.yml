@@ -3,7 +3,7 @@ uid: learn-wwl.introduction-to-regression.tips-for-applying-machine-learning
 title: ips for applying machine learning
 metadata:
   title: Tips for applying machine learning
-  description: Here we will briefly cover how to use feature scaling - a great trick that will help almost any AI model.
+  description: Here we will briefly cover some tips for selecting features for your data set, and how to use feature scaling - a great trick that will help almost any AI model.
   ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma

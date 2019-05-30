@@ -5,14 +5,15 @@ AI uses data at every step of the journey. So what is data? Data is everything y
 
 There are two key kinds of data we will use again and again:
 
-1. __Features__ are aspects of an event/object/person that we are interested in. These can be continuous or categorical. For example, a person’s features might include their height (continuous) and favourite sport (categorical).
+1. __Features__ are aspects of an event/object/person that we are interested in. These can be continuous or categorical. For example, a person’s features might include their height (continuous) and favorite sport (categorical).
 2. __Labels__ are categories we put events/objects/people into. For example, we might label a cake “good” or “bad”; label a person a “republican”, “independent”, or “democrat”, or label a particular image as “containing fish” or “not containing fish”.
   
 ## Summary
 
 Here we introduced:
-* __Continuous variables__ - measurable data points, such as weight and temperature
-* __Categories__ - such as fixed / broken, acceptable / unacceptable
+
+* __Continuous variables__ - measurable data points, such as weight and temperature.
+* __Categories__ - such as fixed / broken, acceptable / unacceptable.
 * __Features__ - data points for an example (event/object/person) such as hair color or height. Features can be continuous variables or categories.
 * __Labels__ - categories we assign to data points.
 
