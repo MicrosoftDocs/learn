@@ -34,7 +34,7 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
     | Registry | Select your registry. |
     | Image | `webimage` |
     | Tag | `latest` |
-    | Startup File | Leave this empty. |
+    | Startup Command | Leave this empty. |
 
 1. Select **Review and create**, and then click **Create**. Wait until the web app has been deployed before you continue.
 
