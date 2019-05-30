@@ -13,10 +13,11 @@ In this unit you will:
 Firstly, you will use the Cloud Shell to create a Self Signed Certificate, this will be used for the authentication between the client and the API Management gateway
 
 ```PowerShell
-$pwd = '<password>'
-$ApiGatewayName = '<name>'
-openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out selfsigncert.crt
-openssl pkcs12 -export -out selfsigncert.pfx -inkey privateKey.key -in selfsigncert.crt
+$pwd = '<enter-a-password>'
+$ApiGatewayName = '<name-of-your-gateway>'
+$pfxFilePath = 'selfsigncert.pfx'
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out selfsigncert.crt -subj /CN=localhost
+openssl pkcs12 -export -out $pfxFilePath -inkey privateKey.key -in selfsigncert.crt -password pass:$pwd
 ```
 
 ## Export certificate as Bytes
@@ -24,7 +25,7 @@ openssl pkcs12 -export -out selfsigncert.pfx -inkey privateKey.key -in selfsignc
 Next, we will export the certificate as a ```Byte[]```, this is to prepare for the upload into the API Management gateway. Run the following commands in the Cloud Shell
 
 ```PowerShell
-$pfxFilePath = 'selfsigncert.pfx'
+
 $flag = [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable
 $collection = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2Collection 
 $collection.Import($pfxFilePath, $pwd, $flag)
@@ -38,7 +39,7 @@ You will now upload the self signed certificate into the gateway. Run the follow
 
 ```PowerShell
 $ApiMgmtContext = New-AzApiManagementContext  -ResourceGroupName "<resource-group>"  -ServiceName $ApiGatewayName
-New-AzApiManagementCertificate  -Context $ApiMgmtContext  -PfxBytes $clearBytes  -PfxPassword $pwd
+New-AzApiManagementCertificate -Context $ApiMgmtContext -PfxBytes $clearBytes -PfxPassword $pwd
 ```
 
 ## Edit inbound policy to only allow requests with a valid certificate
@@ -87,17 +88,17 @@ openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem –nodes
 
 Within the Azure Cloud Shell copy and paste the following cURL command, using the subscription key from the first exercise.
 
-```Azure Cloud Shell
+```PowerShell
 curl -X GET `
-  https://api-management-gateway.azure-api.net/api/Weather/53/-1 `
-   -H 'Ocp-Apim-Subscription-Key: [Subscription Key]' `
+  https://[gateway-name].azure-api.net/api/Weather/53/-1 `
+   -H 'Ocp-Apim-Subscription-Key: [subscription-key]' `
   --cert-type pem `
   --cert selfsigncert.pem
 ```
 
 This should result in a successful response similar to below
 
-```Azure Cloud Shell
+```JSON
 {"mainOutlook":{"temperature":32,"humidity":34},"wind":{"speed":11,"direction":239.0},"date":"2019-05-16T00:00:00+00:00","latitude":53.0,"longitude":-1.0}
 ```
 
@@ -105,7 +106,7 @@ This should result in a successful response similar to below
 
 Run the following command within the Cloud Shell
 
-```Azure Cloud Shell
+```PowerShell
 curl -X GET `
   https://[api-gateway-name].azure-api.net/api/Weather/53/-1
   -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
