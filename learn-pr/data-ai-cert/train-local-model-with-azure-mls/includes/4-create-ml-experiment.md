@@ -43,7 +43,7 @@ run.log("trial",1)
 run.complete()
 ```
 
-> [!Important]
+> [!IMPORTANT]
 > If you have more than 300 megabytes of content or 2000 files in the current notebook folder, you will get the error below.
 >
 > ![Error when you the current folder has > 300 MB.](../media/6-experiment_over300mberror.png)
