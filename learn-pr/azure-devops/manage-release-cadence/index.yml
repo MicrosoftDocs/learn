@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azdo.manage-release-cadence
+metadata:
+  title: Manage release cadence using deployment patterns - Learn
+  description: Manage release cadence using deployment patterns
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Manage release cadence using deployment patterns
+summary: Manage release cadence using deployment patterns
+abstract: |
+  In this module, you will:
+  - A
+  - B
+  - C
+prerequisites: |
+  - An Azure DevOps account
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+#TODO: Are there specific roles we should be targetting?
+- administrator
+- developer
+- solution-architect
+products:
+#TODO: Create appropriate product labels
+- azure
+#- azure-devops
+units:
+- learn.azdo.manage-release-cadence.1-introduction
+- learn.azdo.manage-release-cadence.9-summary
+badge:
+  uid: learn.azdo.manage-release-cadence.badge
