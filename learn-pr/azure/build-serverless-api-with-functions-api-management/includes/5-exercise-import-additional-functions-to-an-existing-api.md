@@ -1,4 +1,8 @@
-<!-- TODO: Intro -->
+API Management can be used to present multiple Azure Functions as parts of a single API.
+
+Recall that you want to integrate all of the separate microservices in the Online Store, which are Azure Functions, into a single API. You have already added the Products function to a new instance of API Management. Now you want to add more functions.
+
+Here, you will add the Orders function to the API and use the `curl` tool to test the integrated system.
 
 ## Test the Orders function
 
@@ -21,7 +25,7 @@ Before we add the Orders function to the API, let's test it:
 
 ## Append a Function App to an existing API
 
-<!-- TODO: Add some blurb -->
+Now, add the Order function to the API Management resource that you created in unit 3:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
 1. Under **API Management**, click **APIs** and then under **Add a new API**, click **Function App**.
@@ -41,7 +45,9 @@ Before we add the Orders function to the API, let's test it:
 
 ## Test the Orders and Products APIs
 
-<!-- Add blurb -->
+We can now use the `curl` command-line tool to submit requests to our API. To do this, we need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions. We also need to pass the correct subscription key with each request. 
+
+To test the API:
 
 1. To obtain the API's URL, In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
 1. To the right of the **Gateway URL** value, click the **Copy to clipboard** button.
