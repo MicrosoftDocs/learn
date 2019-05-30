@@ -23,6 +23,7 @@ Multiple linear regression is very similar to simple linear regression, but rath
 ## Summary
 
 That's it! Here we covered:
+
 * __Multiple linear regression__ - linear regression that uses more than one feature.
 
 You’ve built a multiple linear regression model and visualized it. Next we'll use a linear regression again with a slight modification: polynomial regression. This will allow linear regression to fit complex, non-linear data sets.

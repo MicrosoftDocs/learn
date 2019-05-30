@@ -14,7 +14,7 @@ As polynomial regression and multiple linear regression are easy and quick to us
 
 ### Programming exercise
 
-> Next up we'll go through a programming exercise on polynomial regression. 
+> Next up we'll go through a programming exercise on polynomial regression.
 >    
 > **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
 > Select the exercise `04. Polynomial Regression - Python.ipynb` exercise.  
