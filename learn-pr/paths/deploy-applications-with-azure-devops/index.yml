@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.azdo.deploy-applications-with-azure-devops
+metadata:
+  title: Deploy applications with Azure DevOps learning path
+  description: Learn how configure release pipelines that continuously build, test, and deploy your applications.
+  brand: azure
+  ms.date: 9/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  #ms.learn-contact: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy applications with Azure DevOps
+summary: |
+  Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how configure release pipelines that continuously build, test, and deploy your applications.
+
+  In this learning path, you will:
+  - A
+  - B
+  - C
+
+cardDescription: Learn how configure release pipelines that continuously build, test, and deploy your applications.
+prerequisites: None
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+# TODO
+- intermediate
+roles:
+#TODO: Are there specific roles we should be targetting?
+- administrator
+- developer
+- solution-architect
+products:
+#TODO: Create appropriate product labels
+- azure
+#- azure-devops
+modules:
+- learn.azdo.create-release-pipeline
+- learn.azdo.create-a-release-management-workflow
+- learn.azdo.run-quality-tests-release-pipeline
+- learn.azdo.manage-release-cadence
+trophy:
+  uid: learn.azdo.deploy-applications-with-azure-devops.trophy
