@@ -1,5 +1,13 @@
 As their drone shipping business grows, system load increases. The current architecture is straining under the load and they would like to be able to provide better flexibility in scaling the application. Improving the application's scalability is one of the drivers for Fabrikam to look at moving their application to a microservices architecture.
 
+## Details on the organizational benefits and challenges of the monolith
+
+- The package service has been identified as a critical part of the business and was originally part of the monolith
+- Setting up a "tiger team" that is going to have full control over this piece of the business
+- Because it's in the monolith, the team cannot operate autonomously, has to rely on shared data and data structures, and is unable to iterate as quickly as they need
+- They want to move fast and break things
+- Need independent scalability for their service to meet customer demands
+
 ## Scaling monolith vs scaling microservices
 
 One of the primary benefits to a microservices architecture comes in the increased scaling capabilities. Because services are separated out, it's much easier to scale each service individually as load increases across them.
