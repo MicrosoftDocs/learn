@@ -2,10 +2,10 @@ Artificial intelligence (AI) is the study of how to make computers perform tasks
 
 AI is now used for all sorts of things, such as intelligent opponents in video games, accurate medical diagnosis, speech commands on mobile phones, and keeping email inboxes clear of spam. People who use AI often want it to perform repetitive tasks that take a lot of time for a person to do, or to solve problems, which seem almost impossible to solve with a calculator. For example, AI can be used to:
 
-* intelligently guess the products that someone may want to buy
-* count cells in a microscope picture
-* find the optimum number of taxis that a city needs
-* read the license plates of cars in a video
+* intelligently guess the products that someone may want to buy.
+* count cells in a microscope picture.
+* find the optimum number of taxis that a city needs.
+* read the license plates of cars in a video.
 * predict the quantity of ingredients a restaurant needs to order to minimize waste, but not run out of stock.
 
 Although this sounds difficult, there are free tools available online which makes it easy to get started.

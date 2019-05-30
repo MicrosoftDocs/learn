@@ -26,7 +26,7 @@ There many types of cluster analysis, but AI practitioners tend to use k-means c
 
 Well done! In this section we covered:
 * __Unsupervised learning__ - when we don't have labels for our data sets.
-* Unsupervised learning is discovering patterns or groupings in this unlabelled data.
+* Unsupervised learning is discovering patterns or groupings in this unlabeled data.
 * __Cluster analysis__ - a popular type of unsupervised learning.
 * __k-means clustering__ - a popular type of cluster analysis used by AI practitioners.
 

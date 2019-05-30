@@ -24,7 +24,7 @@ quiz:
     - content: "It is usually much slower than supervised learning."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "It does not require a training phase with labelled datasets."
+    - content: "It does not require a training phase with labeled datasets."
       isCorrect: true
       explanation: "Correct. "
     - content: "It only involves neural networks."

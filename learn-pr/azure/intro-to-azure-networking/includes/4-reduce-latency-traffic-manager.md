@@ -38,7 +38,7 @@ Think about the cost of building a data center. Equipment costs aren't the only 
 
 One way to reduce latency is to provide exact copies of your service in more than one region. The following illustration shows an example of global deployment.
 
-![An illustration showing a world map with three Azure data centers highlighted. Each data center is labelled with a unique domain name.](../media/4-global-deployment.png)
+![An illustration showing a world map with three Azure data centers highlighted. Each data center is labeled with a unique domain name.](../media/4-global-deployment.png)
 
 The diagram shows your e-commerce site running in three Azure regions: East US, North Europe, and East Asia. Notice the DNS name for each. How can you connect users to the service that's closest geographically, but under the contoso.com domain?
 
