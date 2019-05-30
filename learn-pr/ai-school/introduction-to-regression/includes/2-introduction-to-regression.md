@@ -10,8 +10,8 @@ Regression can be thought of as looking for a trend in data, or looking at relat
   In this case the features are __car weight__, __horsepower__, and __fuel efficiency__.
 ![Introduction Regression fixed](../media/2-1-c.png)
 
-This is all a complicated way of saying that __regression fits a line through data__. For example:
-![Introduction Regression shoe](../media/2-1-d.png)
+   This is all a complicated way of saying that __regression fits a line through data__. For example:
+   ![Introduction Regression shoe](../media/2-1-d.png)
 Because these __regression models__ let us understand relationships like height in relation to shoe size, we can also use them to predict future events or estimate features of things we haven’t seen before. From the three examples above we might be able to:
 
 * predict the average temperature next year.
