@@ -1,14 +1,14 @@
 ﻿### YamlMime:Module
 uid: learn-wwl.azure-in-action
 metadata:
-  title: Azure in Action
+  title: See Azure in Action
   description: The demos in this module provide an opportunity to see and show Azure in action.
   ms.date: 5/23/2019
   author: kimrit
   ms.author: v-kimrit
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure in Action
+title: See Azure in Action
 summary: Many organizations are eager to take advantage of the benefits of cloud computing by migrating their existing applications and workloads to the cloud from their on-premises datacenters. The competitive advantages of higher efficiency, greater flexibility, lower costs, and better performance are appealing, but it can feel daunting to get started. To help you get started on this journey, the demos in this module provide an opportunity to see and show Azure in action.
 abstract: |
   In this module, you will:
