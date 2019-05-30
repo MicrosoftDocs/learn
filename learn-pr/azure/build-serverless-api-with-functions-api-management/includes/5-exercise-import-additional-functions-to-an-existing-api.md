@@ -1,71 +1,79 @@
+<!-- TODO: Intro -->
 
-## Append Azure Function App to an existing API
+## Test the Orders function
 
-Follow the steps below to append Azure Function App to an existing API
+Before we add the Orders function to the API, let's test it:
 
-1. In your **Azure API Management** service instance, select **APIs** from the menu on the left
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the Order Function.
+1. Under **Functions** click **OrderDetails**, and then click **Test**.
 
-1. Choose an API you want to import an Azure Function App to. Click ... and select **Import** from the context menu
+    ![Browsing to the test tool for the Order Details function](../media/5-test-order-details.png)
 
-  ![Screenshot of the showing the importing of an existing Azure Function App.](../media/4-append-azure-function-app-01.png)
+1. In the **HTTP method** drop-down list, select **GET**, and then click **Add parameter**.
+1. In the **name** textbox, type **name** and in the **value** textbox, type **Chiba**.
+1. Click **Run** and then examine the results in the **Output** box.
 
-1. In the pop-up window, click **Browse**
+    ![Test results from the Order Details function](../media/5-order-test-results.png)
 
- ![Screenshot of the showing the importing of an existing Azure Function App.](../media/5-append-azure-function-app-02.png)
+    The output pain displays the details of an order in JSON format. You can also test the function with the names "Henri" and "Barriclough" for different orders.
 
-1. Click on the **Function App** section to choose from the list of available Function Apps.
+1. At the top of the page, click **</> Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison.
 
- ![Screenshot of the showing the importing of an existing Azure Function App.](../media/5-append-azure-function-app-03.png)
+## Append a Function App to an existing API
 
-1. Find the second Function App you want to import Functions from, click on it and press **Select**
-
- ![Screenshot of the showing the importing of an existing Azure Function App.](../media/3-import-azure-function-app-04.png)
-
-1. Select the second Function App (Order)
-
- ![Screenshot of the showing the second Azure Function App to bring into an existing API ](../media/5-append-azure-function-app-05.png)
-
-1. Click **Import**
-
- ![Screenshot of the showing the second Azure Function App to import into an existing API ](../media/5-append-azure-function-app-06.png)
-
-## Authorization
-
-The import of an Azure Function App automatically generates:
-
-- Host key inside the Function App with the name apim-{your Azure API Management service instance name},
-- Named value inside the Azure API Management instance with the name {your Azure Function App instance name}-key, which contains the created host key
-
-## Access Azure Function App host key
-
-1. Navigate to your Azure Function App instance
-1. Select **Function App settings** from the overview
-1. The key is located in the **Host Keys** section
-
-
-## Create a product
-
-<!-- TODO: Add a product here and then add the functions to it here-->
+<!-- TODO: Add some blurb -->
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
-1. Under **API Management**, click **Products**, and then click **Add**.
+1. Under **API Management**, click **APIs** and then under **Add a new API**, click **Function App**.
+
+    ![Adding a Azure Function App](../media/5-import-azure-function-app.png)
+
+1. To select your function, click **Browse** and then click on the **Function App** section.
+
+    ![Selecting an existing Function App](../media/5-import-azure-function-app-03.png)
+
+1. In the list of Function Apps, click the **OrderFunction** and then click **Select**.
+1. Ensure that **OrderDetails** is checked, and then click **Select**.
+1. In the **API URL suffix** textbox, type **orders**, and then click **Create**. 
+
+    ![Importing the Orders function](../media/5-complete-function-import.png)
 
 
+## Test the Orders and Products APIs
 
-## Access the named value in Azure API Management
+<!-- Add blurb -->
 
-Navigate to your Azure API Management instance and select **Named values** from the menu on the left. The Azure Function App key is stored there.
+1. To obtain the API's URL, In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click your **Azure API Management** service instance.
+1. To the right of the **Gateway URL** value, click the **Copy to clipboard** button.
+1. In the Cloud Shell on the right, type the following command, paste the **Gateway URL** value that you just copied in place of the token, and then press Enter:
 
-## Test the function in Azure
+    ```bash
+    GATEWAY_URL=<paste the URL here>
+    ```
 
-Use cURL to test the deployed function. Using the URL that you copied from the previous step, append the query string &name=<yourname> to the URL, as in the following example: In this case the API created earlier is called **Demo Store API** and the Function App is **func-App-instance**
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in your **Azure API Management** instance, under **API Management**, click **Subscriptions**.
+1. To the right of the **Built-in all-access subscription**, click **...** and then click **SHow/hide keys**.
+1. To the right of the **PRIMARY KEY** click the **Copy to clipboard** button.
+1. In the Cloud Shell on the right, type the following command, paste the **PRIMARY KEY** value that you just copied in place of the token, and then press Enter:
 
-```bash
-curl -v -X GET "https://apim-store-instance.azure-api.net/func-App-instance/Product"
--H "Ocp-Apim-Subscription-Key: {subscription key}"
+    ```bash
+    SUB_KEY=<paste the key here>
+    ```
 
-curl -v -X GET "https://apim-store-instance.azure-api.net/func-App-instance/Order"
--H "Ocp-Apim-Subscription-Key: {subscription key}"
-```
+1. To request the details of a product, type the following command and then press Enter:
 
-As you can see both the APIs are exposed via the same endpoint
+    ```bash
+    curl -v GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
+    ```
+
+    The command returns the details of a product. You can also try the command with IDs 1 and 3 for different results.
+
+1. To request the details of an order, type the following command and then press Enter:
+
+    ```bash
+    curl -v GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
+    ```
+
+    The command returns the details of an order. You can also try the command with the names "Chiba" and "Barriclough" for different results.
+
+Notice that both the functions can now be called at the same location within the **azure-api.net** domain.

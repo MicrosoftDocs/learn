@@ -81,7 +81,7 @@ Now, we can add the **Product Details** function to the API Management instance 
     ![Selecting an existing Function App](../media/3-import-azure-function-app-03.png)
 
 1. In the list of Function Apps, click the **ProductFunction** and then click **Select**.
-1. Ensure that **ProductDetails** is checked, click **Select**, and then click **Create**
+1. Ensure that **ProductDetails** is checked, and then click **Select**.
 1. In the **API URL suffix** textbox, type **products**, and then click **Create**. 
 
     ![Completing the import of a Function App](../media/3-complete-import-of-function.png)
