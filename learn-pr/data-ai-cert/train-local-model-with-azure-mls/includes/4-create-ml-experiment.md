@@ -42,6 +42,20 @@ run = experiment.start_logging()
 run.log("trial",1)
 run.complete()
 ```
+### Warning: 
+
+If you have more than 300 megabytes of content or 2000 files in the current notebook folder, you will get the error below.
+
+![Error when you the current folder has > 300 MB.](../media/6-experiment_over300mberror.png)
+
+You get this error because Azure Machine Learning runs training scripts by copying the entire script folder to the target compute context, and then takes a snapshot. The storage limit for experiment snapshots is 300 MB and/or 2000 files.
+
+There are a number of ways to resolve this issue.  If you don't need all the files and can work within the default space constraints, the easiest solution is to exit the notebook, create a new folder with only what you need, open that folder and create the notebook there.  On a local machine, you can stop the Jupyter Notebook service, change to the new folder at a command prompt and restart Jupyter Notebook.  On Azure Notebook, just create a new project and copy what you need to it. Then create your notebook there.  
+
+If you cannot get the data within the constraints, then follow the link below for information about the options available and how to implement them.
+
+https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-save-write-experiment-files#limits
+
 
 ## View the logged results
 
