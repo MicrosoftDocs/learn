@@ -2,7 +2,7 @@ K-means clustering lives true to its name - it separates examples into k number 
 
 All k-means needs to run is the dataset and the number of clusters the user wants to map out.
 
-It is very common for AI practitioners to decide the number of clusters by running k-means with several different numbers of clusters. The results are then visualised for the users decision. There is a cost function to determine an error rate but analyzing cost for k-means is often ambiguous as to the correct number of clusters.
+It is very common for AI practitioners to decide the number of clusters by running k-means with several different numbers of clusters. The results are then visualized for the users decision. There is a cost function to determine an error rate but analyzing cost for k-means is often ambiguous as to the correct number of clusters.
 
 ![kmeans](../media/kmeans.gif)
 

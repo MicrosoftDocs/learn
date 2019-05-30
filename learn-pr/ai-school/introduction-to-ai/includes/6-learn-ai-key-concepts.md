@@ -2,7 +2,7 @@ In AI we talk about building __models__, which are shaped by __cost functions__ 
 
 ## What are models
 
-Models are an estimation of how reality works. These are not just part of AI; our brains use models every day. For example, while driving, we might be able to estimate how fast our car will accelerate if we push down its accelerator pedal. We have a __model__ in our head of the relationship between the pedal and the speed of the car.
+Models are an estimation of how reality works. These models are not just part of AI; our brains use models every day. For example, while driving, we might be able to estimate how fast our car will accelerate if we push down its accelerator pedal. We have a __model__ in our head of the relationship between the pedal and the speed of the car.
 
 We say this model is an __estimation__ of reality, because when we think about how fast the car will run, we don’t take into account the position of every atom in the engine, wind resistance, and so on. In fact, we may know nothing about how a car engine works, and yet we can still make good guesses as to how fast we will travel.
 
