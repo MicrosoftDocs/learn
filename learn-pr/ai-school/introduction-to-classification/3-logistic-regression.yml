@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-logistic-regression.md)] 
+  [!include[](includes/3-logistic-regression.md)] 

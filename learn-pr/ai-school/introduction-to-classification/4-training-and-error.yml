@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-training-and-error.md)] 
+  [!include[](includes/4-training-and-error.md)] 
