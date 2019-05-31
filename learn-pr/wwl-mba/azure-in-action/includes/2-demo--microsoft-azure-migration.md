@@ -134,8 +134,9 @@ Before beginning the migration of Contoso's support application, Victor creates 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM6]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Use the Azure Migrate solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.*|
+|
 
 ## Data collection
 
@@ -148,8 +149,9 @@ Victor deploys and configures an appliance called a "collector," which will disc
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Deploying the Azure Migrate Collector will not only help you evaluate your physical on-premises servers but will also work with vSphere to assess virtual servers.*|
+|
 
 ## Recommendations
 
@@ -162,8 +164,9 @@ Victor deploys and configures an appliance called a "collector," which will disc
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUq]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Azure Migrate saves time and money by pulling data from the collector appliance and telling you exactly what servers are ready to migrate, and what costs they would incur running in the cloud.  Additionally, the Azure Hybrid Use Benefit can lower costs by up to 1/5 by leveraging existing on-premises licenses (see more detail at the URL provided on the resources page).*|
+|
 
 ## Database Migration
 
@@ -176,8 +179,9 @@ With his assessment complete, Victor begins by migrating Contoso's database from
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PBj3]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Azure Database Migration Service is a seamless, end-to-end solution for moving on-premises SQL Server databases to a managed SQL environment with minimal downtime, replacing multiple tools with a single comprehensive service. After moving to Azure you can save as much as 80% by reserving capacity rather than using the pay-as-you-go model.*|
+|
 
 ## Application server migration
 
@@ -190,8 +194,9 @@ With the database migration complete, Victor is ready to migrate Contoso's on-pr
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PLJp]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking the servers down by replicating those VMs from a primary site (on-premises) to a secondary location (Azure). The Azure Hybrid Benefit allows you to save costs by using your existing Windows Server license.*|
+|
 
 ## Post-migration
 
@@ -204,6 +209,7 @@ With the migration complete, Victor needs to complete a couple of final steps to
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUr]
 
 | | |
-| ---: | ---: |
+| ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Connecting to a load balancer in Azure keeps your servers from bogging down, allowing a smooth flow of traffic. The availability set ensures that your site is always up and running without the need for duplicate servers.*|
+|
 
