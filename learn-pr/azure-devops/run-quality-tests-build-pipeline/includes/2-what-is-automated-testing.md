@@ -78,7 +78,7 @@ Documentation and the ability to more easily refactor your code are two added be
 
 Manual test plans can serve as a type of documentation as to how software should behave and why certain features exist.
 
-Automated tests can serve the same purpose. Automated test code often use a human-readable format. The set of inputs you provide represent values your users might enter. Each associated output specifies the result your user should expect.
+Automated tests can serve the same purpose. Automated test code often uses a human-readable format. The set of inputs you provide represent values your users might enter. Each associated output specifies the result your user should expect.
 
 In fact, many developers follow the _test-driven development_, or TDD, method by writing their test code _before_ implementing a new feature. The idea is to write a set of tests, often called _specs_, that initially fail. Then, the developer incrementally writes code to implement the feature until all tests pass. Not only do the specs document the requirements, but the TDD process helps ensure that only the necessary amount of code is written to implement the feature.
 
@@ -100,7 +100,7 @@ In this module, you'll work with _unit testing_ and _code coverage testing_.
 
 Unit testing verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks whether the actual and expected results match.
 
-As an example, say you have a function that performs an arithmetic operation that includes division. You might specify a few values you might expect your user to enter along with edge case values such as 0 and -1. If a given input produces an error or exception, you can verify that the function produces the same error.
+As an example, say you have a function that performs an arithmetic operation that includes division. You might specify a few values you expect your users to enter along with edge case values such as 0 and -1. If a given input produces an error or exception, you can verify that the function produces the same error.
 
 Code coverage testing computes the percentage of your code that's covered by your unit tests. Code coverage testing can include conditional branches in your code to ensure a function is completely covered.
 

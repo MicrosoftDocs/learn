@@ -179,7 +179,7 @@ Here you'll stage your changes to **Index.cshtml**, commit the change to your br
     The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change as well as help future maintainers understand how the file changed over time.
 
     > [!TIP]
-    > The best commit messages complete the sentence "If you apply this commit, you will ___."
+    > The best commit messages complete the sentence "If you apply this commit, you will ..."
 
     If you omit the `-m` argument, Git brings up a text editor where you can detail the change. This option is useful when you want to specify a commit message that spans multiple lines. The text up to the first blank line specifies the commit title.
 
@@ -285,7 +285,7 @@ Here you'll submit a pull request just as you did in the previous part.
     * Title:
     > _Improve the text at the top of the home page_
     * Description:
-    > _Received the latest home page text from Irwin in product_
+    > _Received the latest home page text from the product team_
 
 1. Click the **Create pull request** button to complete your pull request.
 

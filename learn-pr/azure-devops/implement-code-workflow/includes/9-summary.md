@@ -4,7 +4,7 @@ Andy and Mara are well on their way to implementing a system that will allow the
 
 A build badge and dashboard widgets help the team and others understand the state of the latest build and track the build history over time.
 
-Although Andy and Mara are the primary code contributors, setting up a rule on GitHub to require a reviewer is a good way to enforce a good code review practice. Even minor changes can cause the build to break or a mistake to slip through. Here, you saw a typing error make its way through the build and into QA's hands.
+Although Andy and Mara are the primary code contributors, setting up a rule on GitHub to require a reviewer is a good way to enforce a good code review practice. Even minor changes can cause the build to break or a mistake to slip through. Here, you saw a spelling error make its way through the build and into QA's hands.
 
 ## Learn more
 

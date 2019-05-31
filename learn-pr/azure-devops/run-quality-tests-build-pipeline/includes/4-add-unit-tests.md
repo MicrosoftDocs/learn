@@ -84,15 +84,15 @@ Here you'll fetch the `unit-tests` branch from GitHub and checkout, or switch to
 This branch contains the _Space Game_ project you worked with in the previous modules and an Azure Pipelines configuration to start with.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git checkout` command to create a branch named `unit-tests` using what's called a _tracking branch_ from Microsoft's repository.
+1. Run the following `git` commands to fetch a branch named `unit-tests` from Microsoft's repository and switch to that branch.
 
     ```bash
-    git checkout --track upstream/unit-tests
+    git fetch upstream unit-tests
+    git checkout unit-tests
     ```
 
-    Here, `upstream` refers to Microsoft's GitHub repository. You typically don't use the `--track` flag very often, but here you use it to get starter code from Microsoft's repository. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
-    Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from Microsoft's repository and cloned it locally.
 1. As an optional step, open **azure-pipelines.yml** from Visual Studio code and familiarize yourself with the initial configuration.
     The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
 
@@ -152,90 +152,17 @@ Here you'll configure the build pipeline to run your unit tests and collect the 
 
 1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
-    ```yml
-    pool:
-      vmImage: 'Ubuntu-16.04'
-      demands:
-        - npm
-
-    variables:
-      buildConfiguration: 'Release'
-      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '2.1.505'
-
-    steps:
-    - task: DotNetCoreInstaller@0
-      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
-      inputs:
-        version: '$(dotnetSdkVersion)'
-
-    - task: Npm@1
-      displayName: 'Run npm install'
-      inputs:
-        verbose: false
-
-    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
-      displayName: 'Compile Sass assets'
-
-    - task: gulp@1
-      displayName: 'Run gulp tasks'
-
-    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-      displayName: 'Write build info'
-      workingDirectory: $(wwwrootDir)
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-        command: 'restore'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Build the project - $(buildConfiguration)'
-      inputs:
-        command: 'build'
-        arguments: '--no-restore --configuration $(buildConfiguration)'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Run unit tests - $(buildConfiguration)'
-      inputs:
-        command: 'test'
-        arguments: '--no-build --configuration $(buildConfiguration)'
-        publishTestResults: true
-        projects: '**/*.Tests.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Publish the project - $(buildConfiguration)'
-      inputs:
-        command: 'publish'
-        projects: '**/*.csproj'
-        publishWebProjects: false
-        arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
-        zipAfterPublish: true
-
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifact: drop'
-      condition: succeeded()
-    ```
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=45-51)]
 
     This version introduces this `DotNetCoreCLI@2` build task.
 
-    ```yml
-    - task: DotNetCoreCLI@2
-      displayName: 'Run unit tests - $(buildConfiguration)'
-      inputs:
-        command: 'test'
-        arguments: '--no-build --configuration $(buildConfiguration)'
-        publishTestResults: true
-        projects: '**/*.Tests.csproj'
-    ```
+    [!code-yml[](code/4-azure-pipelines.yml?range=45-51)]
 
     This build task runs the `dotnet test` command.
 
     Notice that this task does not specify the `--logger trx` argument that you used when you ran the tests manually. The `publishTestResults` argument adds that for you. This argument tells the pipeline to generate the TRX file to a temporary directory, accessible through the `$(Agent.TempDirectory)` built-in variable. It also publishes the task results to the pipeline.
 
-    The `projects` argument specifies all C# projects that match "**/*.Tests.csproj". The "\*\*" part matches all directories and the "\*.Tests.csproj" part matches all projects whose file name ends with ".Tests.csproj". The `unit-tests` branch contains just one unit test project, **Tailspin.SpaceGame.Web.Tests.csproj**. But specifying a pattern enables you to run additional test projects without the need to modify your build configuration.
+    The `projects` argument specifies all C# projects that match **"\*\*/*.Tests.csproj"**. The **"\*\*"** part matches all directories and the **"\*.Tests.csproj"** part matches all projects whose file name ends with **".Tests.csproj**". The `unit-tests` branch contains just one unit test project, **Tailspin.SpaceGame.Web.Tests.csproj**. But specifying a pattern enables you to run additional test projects without the need to modify your build configuration.
 
 ## Push the branch to GitHub
 
@@ -267,13 +194,11 @@ Here you'll see the tests run in the pipeline and then visualize the results fro
 
     ![Azure Pipelines showing the Summary tab](../media/4-summary-report.png)
 
-1. Click the link that refers to the pass rate to access the test failure report.
+1. Move to the **Tests** tab.
 
-    The report is empty because there were no failures. Open the status filter and select **Passed** to see both failed and passed tests.
+    You see a summary of the test run. All five tests have passed.
 
-    ![Filtering both failed and passing unit tests](../media/4-test-failures-filter.png)
-
-    At the bottom of the page, you see details about each individual test. If the test run included failures, you can select a failed test to learn more about the failure.
+    ![](../media/4-test-tab-summary.png)
 
 1. From Azure DevOps, select **Test Plans**. Then select **Runs**.
 

@@ -69,10 +69,11 @@ Andy chooses a few values that represent typical queries. He also includes 0 to 
 Similar to what you did earlier, here you'll fetch the `failed-test` branch from GitHub and checkout, or switch to, that branch.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git fetch` command to download and switch to the `failed-test` branch from Microsoft's repository.
+1. 1. Run the following `git fetch` and `git checkout` commands to download a branch named `failed-test` from Microsoft's repository and switch to that branch.
 
     ```bash
-    git checkout --track upstream/failed-test
+    git fetch upstream failed-test
+    git checkout failed-test
     ```
 
     We name the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.

@@ -47,7 +47,7 @@ What's cool about Azure DevOps is that it works well with both centralized and d
 
 **Andy:** What happens when more than one person changes the same file?
 
-**Mara:** Often, Git can merge multiple changes automatically. Of course, we want to always make sure the combination of changes results in working code. When Git can't automatically merge changes, it marks the conflicts directly in the files so that a human can choose what changes to accept.
+**Mara:** Often, Git can merge multiple changes automatically. Of course, we want to always make sure the combination of changes results in working code. When Git can't automatically merge changes, it marks the conflicts directly in the files so that a human can choose which changes to accept.
 
 **Andy:** What about the problem of accessing the code when we're not in the building?
 
