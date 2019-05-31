@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.6-summary
+uid: learn.control-authentication-with-apim.6-summary
 metadata:
   title: Summary
-  description: TODO
+  description: In this unit, you will review what you have learned about API Management and authentication.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

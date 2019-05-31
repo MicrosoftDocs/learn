@@ -1,6 +1,6 @@
 You configure API Management to accept client certificates by using inbound policies.
 
-Suppose your weather company has decided to secure its API through certificate authentication for certain clients. They already use certificate authentication within other systems. This will allow clients to use their existing certificates to authenticate themselves against the API Management gateway.
+Suppose your weather company has decided to secure its API through certificate authentication for certain clients. They already use certificate authentication within other systems. This setup will allow clients to use their existing certificates to authenticate themselves against the API Management gateway.
 
 In this unit you will:
 
@@ -92,7 +92,7 @@ openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem –nodes
       --cert selfsigncert.pem
     ```
 
-    This should result in a successful response similar to below:
+    This command should result in a successful response similar to below:
 
     ```json
     {"mainOutlook":{"temperature":32,"humidity":34},"wind":{"speed":11,"direction":239.0},"date":"2019-05-16T00:00:00+00:00","latitude":53.0,"longitude":-1.0}
@@ -106,4 +106,4 @@ openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem –nodes
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
     ```
 
-    This should return a 403 Client certificate error, and no data will be returned.
+    This command should return a 403 Client certificate error, and no data will be returned.

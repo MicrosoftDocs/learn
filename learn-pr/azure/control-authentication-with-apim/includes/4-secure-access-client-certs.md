@@ -1,4 +1,4 @@
-Certicates can be used to provide TLS mutual authentication between the client and the API gateway. You can configure the API Management gateway to allow only requests with certificates containing a specific thumbprint. The authorisation at the gateway level is handled through inbound policies.
+Certificates can be used to provide TLS mutual authentication between the client and the API gateway. You can configure the API Management gateway to allow only requests with certificates containing a specific thumbprint. The authorization at the gateway level is handled through inbound policies.
 
 For your meteorological app, you have some customers who have client certificates issued by a certificate authority that you both trust. You want to allow those customers to authenticate by passing those certificates.
 
@@ -6,7 +6,7 @@ Here, you will learn how to configure API Management to accept client certificat
 
 ## TLS Client Authentication
 
-In a classic TLS handshake, the client authenticates the server that it is communicating with, by using a protocol known as TLS mutual authentication. However, for our example, we want the server to authenticate the request of the client, so you will be using TLS client authentication. This allows the API Management gateway to inspect the certificate contained within the client request and check for properties like:
+In a classic TLS handshake, the client authenticates the server that it is communicating with, by using a protocol known as TLS mutual authentication. However, for our example, we want the server to authenticate the request of the client, so you will be using TLS client authentication. This technique allows the API Management gateway to inspect the certificate contained within the client request and check for properties like:
 
 | Property | Reason |
 | -------- | ------ |
@@ -16,7 +16,7 @@ In a classic TLS handshake, the client authenticates the server that it is commu
 | **Expiration Date** | Only allow certificates that have not expired |
 | | |
 
-These properties are not mutually exclusive and they can mixed together to form your own policy requirements. For instance, you can specify that the certificate passed in the request is signed by a certain certificate authority and hasn't expired.
+These properties are not mutually exclusive and they can be mixed together to form your own policy requirements. For instance, you can specify that the certificate passed in the request is signed by a certain certificate authority and hasn't expired.
  
 ## Certificate Authorization Policies
 

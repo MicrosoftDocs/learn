@@ -2,7 +2,7 @@
 uid: learn.control-authentication-with-apim.2-create-subscriptions-in-apim
 metadata:
   title: Create subscriptions in Azure API Management
-  description: TODO
+  description: In this unit, you will learn how subscriptions and keys secure access to APIs in API Management.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

@@ -1,6 +1,6 @@
 Azure API Management makes it easy to create subscriptions and obtain subscription keys for use in client apps.
 
-Suppose your weather company has decided to make its meteorlogical data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You will then secure the endpoint and allocate a client key.
+Suppose your weather company has decided to make its meteorological data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You will then secure the endpoint and allocate a client key.
 
 In this unit, you will:
 
@@ -37,7 +37,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
     cd WeatherData
     ```
 
-1. As its name suggests, `setup.sh` is the script you will run to create our API. This will generate a public web app that exposes an OpenAPI interface
+1. As its name suggests, `setup.sh` is the script you will run to create our API. It will generate a public web app that exposes an OpenAPI interface:
 
     ```bash
     bash setup.sh
@@ -45,14 +45,14 @@ To save time, let's start by running a script to host our API in Azure. The scri
 
     The script takes about a minute to run. When the script finishes, it displays two URLs that you can use to test the app deployment. Observe that during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
 
-1. To test that our app deployed correctly, copy and paste the first URL from the Cloud Shell output into your favourite browser. The browser should display the Swagger UI for our app and declare the following RESTful endpoints
+1. To test that our app deployed correctly, copy and paste the first URL from the Cloud Shell output into your favorite browser. The browser should display the Swagger UI for our app and declare the following RESTful endpoints
 
     - **api/weather/{latitude}/{longitude}**, which returns meteorological data for the current day at the specified latitude and longitude (double values).
     - **api/weather/{date}/{latitude}/{longitude}**, which returns meteorological data for the specified day (date value) at the specified latitude and longitude (double values).
 
     ![Swagger view](../media/3-swagger.png)
 
-1. Finally, copy the last URL from the Cloud Shell output. This is the Swagger JSON URL, you will need later in this exercise.
+1. Finally, copy the last URL from the Cloud Shell output. This location is the Swagger JSON URL, you will need later in this exercise.
 
 ## Deploy an API gateway
 
@@ -108,7 +108,7 @@ The final step is to add a subscription key for the weather API:
 
     ![Screenshot showing how to add a new subscription](../media/3-add-subscription.png)
 
-1. Finally, copy the first key from the newly added subscription to your clipboard. You will need this for the next step.
+1. Finally, copy the first key from the newly added subscription to your clipboard. You will need this key for the next step.
 
 ## Test the subscription key
 
@@ -121,13 +121,13 @@ Now the API is secured with a key, we can test the API with and without a key:
       https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
     ```
 
-    This should return a 401 Access Denied error, similar to the one below
+    This command should return a 401 Access Denied error, similar to the one below:
 
     ```json
     { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
     ```
 
-1. Finally, add the subscription key to the request and re-run it:
+1. Finally, add the subscription key to the request and rerun it:
 
     ```Azure Cloud Shell
     curl -X GET \
@@ -135,7 +135,7 @@ Now the API is secured with a key, we can test the API with and without a key:
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
     ```
 
-    This should result in a succesfull response similar to below
+    This command should result in a successful response similar to the one below:
 
     ```json
     {"mainOutlook":{"temperature":32,"humidity":34},"wind":{"speed":11,"direction":239.0},"date":"2019-05-16T00:00:00+00:00","latitude":53.0,"longitude":-1.0}
