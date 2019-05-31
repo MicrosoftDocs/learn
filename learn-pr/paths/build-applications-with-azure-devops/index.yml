@@ -37,7 +37,7 @@ products:
 modules:
 - learn.azdo.create-a-build-pipeline
 - learn.azdo.implement-code-workflow
-- learn.azdo.run-quality-tests
+- learn.azdo.run-quality-tests-build-pipeline
 - learn.azdo.scan-for-vulnerabilities
 - learn.azdo.scan-open-source
 - learn.azdo.manage-build-dependencies

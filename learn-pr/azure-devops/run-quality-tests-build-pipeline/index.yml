@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azdo.run-quality-tests
+uid: learn.azdo.run-quality-tests-build-pipeline
 metadata:
   title: Run quality tests in Azure Pipelines - Learn
   description: Set up automated testing in your pipeline to improve code quality.
@@ -24,7 +24,7 @@ prerequisites: |
   - .NET Core 2.1
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/run-quality-tests-when-your-application-builds.svg
+iconUrl: /learn/achievements/azure-devops/run-quality-tests-build-pipeline-when-your-application-builds.svg
 levels:
 - intermediate
 roles:
@@ -35,13 +35,13 @@ roles:
 products:
 - azure-devops
 units:
-- learn.azdo.run-quality-tests.1-introduction
-- learn.azdo.run-quality-tests.2-what-is-automated-testing
-- learn.azdo.run-quality-tests.3-set-up-environment
-- learn.azdo.run-quality-tests.4-add-unit-tests
-- learn.azdo.run-quality-tests.5-add-dashboard-widget
-- learn.azdo.run-quality-tests.6-perform-code-coverage
-- learn.azdo.run-quality-tests.7-fix-failed-test
-- learn.azdo.run-quality-tests.8-summary
+- learn.azdo.run-quality-tests-build-pipeline.1-introduction
+- learn.azdo.run-quality-tests-build-pipeline.2-what-is-automated-testing
+- learn.azdo.run-quality-tests-build-pipeline.3-set-up-environment
+- learn.azdo.run-quality-tests-build-pipeline.4-add-unit-tests
+- learn.azdo.run-quality-tests-build-pipeline.5-add-dashboard-widget
+- learn.azdo.run-quality-tests-build-pipeline.6-perform-code-coverage
+- learn.azdo.run-quality-tests-build-pipeline.7-fix-failed-test
+- learn.azdo.run-quality-tests-build-pipeline.8-summary
 badge:
-  uid: learn.azdo.run-quality-tests.badge
+  uid: learn.azdo.run-quality-tests-build-pipeline.badge
