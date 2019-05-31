@@ -28,7 +28,7 @@ iconUrl: /learn/achievements/azure-devops/run-quality-tests-when-your-applicatio
 levels:
 - beginner
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect

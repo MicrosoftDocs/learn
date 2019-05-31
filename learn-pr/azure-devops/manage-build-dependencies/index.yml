@@ -27,7 +27,7 @@ iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipe
 levels:
 - beginner
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect

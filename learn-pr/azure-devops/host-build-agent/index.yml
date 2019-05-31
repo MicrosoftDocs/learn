@@ -27,7 +27,7 @@ iconUrl: /learn/achievements/azure-devops/host-your-own-build-server-in-your-bui
 levels:
 - beginner
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect

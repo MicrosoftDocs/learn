@@ -22,7 +22,10 @@ prerequisites: None
 levels: 
 - beginner
 roles:
+- devops-engineer
+- administrator
 - developer
+- solution-architect
 products:
 - azure-devops
 units:

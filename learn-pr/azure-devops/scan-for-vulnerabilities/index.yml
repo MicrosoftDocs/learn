@@ -27,7 +27,7 @@ iconUrl: /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-
 levels:
 - beginner
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect

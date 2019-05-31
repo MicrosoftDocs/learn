@@ -21,7 +21,7 @@ iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-d
 levels:
 - beginner
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect

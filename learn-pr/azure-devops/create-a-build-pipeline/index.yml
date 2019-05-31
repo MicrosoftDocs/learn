@@ -27,7 +27,7 @@ iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipeline
 levels:
 - beginner
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
