@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.1-introduction
+uid: learn.control-authentication-with-apim.1-introduction
 metadata:
   title: Introduction
-  description: TODO
+  description: In this unit, you will learn about a business problem that can be addressed by using API Management to control access to an API.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

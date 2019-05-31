@@ -2,14 +2,14 @@
 uid: learn.control-authentication-with-apim
 metadata:
   title: Control authentication for your APIs with Azure API Management
-  description: Discover how to protect your APIs from unauthorized use through the use of API keys and client certificate authentication.
+  description: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Control authentication for your APIs with Azure API Management
-summary: Discover how to protect your APIs from unauthorized use through the use of API keys and client certificate authentication.
+summary: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
 abstract: | 
   In this module, you will:
   - Use API keys to secure your APIs

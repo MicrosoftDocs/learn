@@ -1,14 +1,18 @@
-The Weather company has decided to make its meteorlogical data available to clients that subscribe and pay for this. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You will then secure the endpoint and allocate a client key
+Azure API Management makes it easy to create subscriptions and obtain subscription keys for use in client apps.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+Suppose your weather company has decided to make its meteorlogical data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You will then secure the endpoint and allocate a client key.
 
-In this unit you will:
+In this unit, you will:
+
 - Publish a RESTful Weather API
 - Deploy an API Management gateway
 - Expose the Weather API through the gateway endpoint
 - Restrict access based on a subscription key
 
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
 ## Deploy the Weather Web API
+
 You have developed a .NET Core app that returns weather information. The app includes Swashbuckle to generate OpenAPI documentation.
 
 To save time, let's start by running a script to host our API in Azure. The script performs the following steps:
@@ -21,130 +25,118 @@ To save time, let's start by running a script to host our API in Azure. The scri
 
 1. Run the following git clone command in the Cloud Shell to clone the repo that contains the source for our app, as well as our setup script from GitHub.
 
-```bash
-git clone https://github.com/GeekEffect/WeatherData.git
-```
+    <!-- TODO: the URL in the git clone command must be updated with the location of the repo, when its location is known -->
 
-2. Navigate into the repo folder locally by running the following cd command.
+    ```bash
+    git clone https://github.com/<repo>/WeatherData.git
+    ```
 
-```bash
-cd WeatherData
-```
+1. Navigate into the repo folder locally by running the following cd command.
 
-3. As its name suggests, setup.sh is the script you will run to create our API. This will generate a public web app that exposes an OpenAPI interface
+    ```bash
+    cd WeatherData
+    ```
 
-```bash
-bash setup.sh
-```
+1. As its name suggests, `setup.sh` is the script you will run to create our API. This will generate a public web app that exposes an OpenAPI interface
 
-The script takes about a minute to run. When the script finishes, it will display two URLs that you can use to test the app deployment. Observe that during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
+    ```bash
+    bash setup.sh
+    ```
 
-4. To test that our app deployed correctly, copy and paste the first URL from the Cloud Shell output into your favourite browser. The browser should display the swagger UI for our app and declare the following RESTful endpoints
+    The script takes about a minute to run. When the script finishes, it displays two URLs that you can use to test the app deployment. Observe that during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
 
-- **api/weather/{latitude}/{longitude}**, which returns meteorological data for the current day at the specified latitude and longitude (double values)
-- **api/weather/{date}/{latitude}/{longitude}**, which returns meteorological data for the specified day (date value) at the specified latitude and longitude (double values)
+1. To test that our app deployed correctly, copy and paste the first URL from the Cloud Shell output into your favourite browser. The browser should display the Swagger UI for our app and declare the following RESTful endpoints
 
-![Swagger view](../media/3-swagger.png)
+    - **api/weather/{latitude}/{longitude}**, which returns meteorological data for the current day at the specified latitude and longitude (double values).
+    - **api/weather/{date}/{latitude}/{longitude}**, which returns meteorological data for the specified day (date value) at the specified latitude and longitude (double values).
 
-Finally, copy the last URL from the Cloud Shell output, this is the swagger JSON URL, you will need later in this exercise.
+    ![Swagger view](../media/3-swagger.png)
+
+1. Finally, copy the last URL from the Cloud Shell output. This is the Swagger JSON URL, you will need later in this exercise.
 
 ## Deploy an API gateway
+
 The next step in this exercise is to create an API gateway in the Azure portal. In the next exercise, you'll use this gateway to publish your API.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-
 1. In the left menu, click **+ Create a resource**.
-
 1. Click **Integration**, and then click **API management**.
+1. In the **API Management service** page, enter the following details and then click **Create**:
 
- In the **API Management service** page, enter the following details:
-
-   Field | Details
-   --- | ---
-   **Name** | type `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique.
-   **Subscription** | Concierge Subscription
-   **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>**
-   **Location** | the sandbox location should be selected for you by default. 
-   **Organization Name** | type `Weather-Company`.
-   **Administrator Email** | type your own email address.
-   **Pricing Tier** | select `Consumption (preview)`.
+   | Field | Details |
+   | --- | --- |
+   | **Name** | Type `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. |
+   | **Subscription** | Concierge Subscription |
+   | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
+   | **Location** | The sandbox location should be selected for you by default. |
+   | **Organization Name** | Type `Weather-Company`. |
+   | **Administrator Email** | Type your own email address. |
+   | **Pricing Tier** | Select `Consumption (preview)`. |
 
    > [!NOTE]
-   > Note: You're using the consumption plan because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
-
-1. Click **Create**.
+   > You're using the **Consumption** tier because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
 
 1. Deployment may take several minutes. You'll get a message to your specified email address when the deployment has completed. You'll also see the gateway listed in Azure resources.
 
 ## Import the API
 
-Now you will need to import the Weather API into the API Management gateway.
+Now, import the Weather API into the API Management gateway:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. In the left menu, click **All Resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**.
 1. On the **Add a new API** page, click **OpenAPI**.
-1. On the **Create from OpenAPI specification** page, enter the following details:
-   **OpenAPI specification**: paste the swagger JSON URL that you saved earlier in the exercise.
+1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
+1. Leave the other settings at their defaults, and then click **Create**.
+1. On the API details page, click **Settings**, and then click **Save**.
 
-   >   You will notice when you tab out of the box, some of the other fields will be populated for you, this is because you have used OpenAPI which specifies all of the required connection details
-1. Leave the other settings at their defaults.
-1. Click **Create**.
-1. On the API details page, click **Settings**.
-1. Click **Save**.
+## Add a subscription key to access the Weather API
 
-## Add a Subscription Key to access the Weather API
+The final step is to add a subscription key for the weather API:
 
-The final step is to add a subscription key to the weather API
+1. Select **Subscriptions**, and then on the top of the screen, select **Add subscription**.
 
-1. Select **Subscriptions**.
-1. On the top of the screen, select **Add subscription**.
+    ![Screenshot showing how to add a new subscription](../media/3-subscriptions.png)
 
-![Screenshot showing how to add a new subscription](../media/3-subscriptions.png)
+1. In the **New subscription** section, enter the following details, and then click **Save**:
 
-3. In the **New subscription** section, enter the following details:
-Field | Details
-   --- | ---
-   **Name** | type  `Weather Data Subscription`
-   **Scope** | API
-   **API** | Click and select the Weather Data API from the list
-4. Click `Save`
+    | Field | Details |
+    | --- | --- |
+    | **Name** | Type  `Weather Data Subscription` |
+    | **Scope** | API |
+    | **API** | Click and select the Weather Data API from the list |
 
-![Screenshot showing how to add a new subscription](../media/3-add-subscription.png)
+    ![Screenshot showing how to add a new subscription](../media/3-add-subscription.png)
 
-5. Finally, Copy the first key from the newly added subscription to your clipboard, you will need this for the next step
+1. Finally, copy the first key from the newly added subscription to your clipboard. You will need this for the next step.
 
 ## Test the subscription key
 
-Now the API is secured with a key, we can test the API with and without a key
+Now the API is secured with a key, we can test the API with and without a key:
 
-1. **Call the API without using the key**
+1. Within the Azure Cloud Shell, copy and paste the following cURL command
 
-Within the Azure Cloud Shell copy and paste the following cURL command
+    ```bash
+    curl -X GET \
+      https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
+    ```
 
-```Azure Cloud Shell
-curl -X GET \
-  https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
-```
+    This should return a 401 Access Denied error, similar to the one below
 
-This should return a 401 Access Denied error, similar to the one below
+    ```json
+    { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
+    ```
 
-```Azure Cloud Shell
-{ "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
-```
+1. Finally, add the subscription key to the request and re-run it:
 
-2. **Call the API using the key**
+    ```Azure Cloud Shell
+    curl -X GET \
+      https://api-management-gateway.azure-api.net/api/Weather/53/-1 \
+      -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
+    ```
 
-Finally, you will now add the subscription key into the request and re-run it
+    This should result in a succesfull response similar to below
 
-```Azure Cloud Shell
-curl -X GET \
-  https://api-management-gateway.azure-api.net/api/Weather/53/-1 \
-   -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
-```
-
-This should result in a succesfull response similar to below
-
-```Azure Cloud Shell
-{"mainOutlook":{"temperature":32,"humidity":34},"wind":{"speed":11,"direction":239.0},"date":"2019-05-16T00:00:00+00:00","latitude":53.0,"longitude":-1.0}
-```
+    ```json
+    {"mainOutlook":{"temperature":32,"humidity":34},"wind":{"speed":11,"direction":239.0},"date":"2019-05-16T00:00:00+00:00","latitude":53.0,"longitude":-1.0}
+    ```
