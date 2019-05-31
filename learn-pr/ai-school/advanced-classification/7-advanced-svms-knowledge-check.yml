@@ -16,45 +16,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
+  - content: "The margins play what role in SVMs?"
+    choices:
+    - content: "Define where the support vectors fall"
+      isCorrect: true
+      explanation: "Correct. Support vectors fall upon margins."
+    - content: "Margins modify input data to ensure it's of the same kind."
+      isCorrect: false
+      explanation: "Incorrect. Margins do not modify the input data."
+    - content: "Ensure that the algorithm only reports two classes."
+      isCorrect: false
+      explanation: "Incorrect. SVMs can predict as many classes as needed, if sufficient data is available."
+    - content: "No role."
+      isCorrect: false
+      explanation: "Incorrect. SVMs use margins for predictions."
   - content: "A soft margin SVM gives a:"
     choices:
     - content: "Lower penalty for datapoints within the margin."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. The soft margin SVMs have a lower penalty for datapoints that fall within the margin."
     - content: "Higher penalty for datapoints within the margin."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Soft margin SVMs have a low penalty for datapoints that fall within the margin."
     - content: "No penalty for datapoints within the margin."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Soft margin SVMs still give a penalty for datapoints that fall within the margin."
     - content: "Negative penalty for datapoints within the margin."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. The penalty for datapoints that fall within the margin is positive."
   - content: "The Kernel trick allows:"
     choices:
     - content: "Kernels that are not straight lines, flat planes, or similar."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. The kernel trick allows far more complicated categorization of examples."
     - content: "Unrelated operating systems to pass information freely between one another for improved training performance."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. The kernel trick helps categorize examples."
     - content: "The soft-margin SVM to be mathematically possible."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. The kernel trick allows for multiple different types of algorithms to perform pattern analysis."
     - content: "Predicting of only one category."
       isCorrect: false
-      explanation: "Incorrect."
-  - content: "Fill in here"
-    choices:
-    - content: "Hi"
-      isCorrect: true
-      explanation: "Correct. It is a binary classification algorithm."
-    - content: "3 categories"
-      isCorrect: false
-      explanation: "Incorrect. Simple logistic regression a binary classification algorithm - it does not predict several categories."
-    - content: "As many as the data provides"
-      isCorrect: false
-      explanation: "Incorrect. Simple logistic regression cannot predict several categories even if the data set provides them."
-    - content: "0"
-      isCorrect: false
-      explanation: "Incorrect. Simple logistic regression has to predict categories."
+      explanation: "Incorrect. The kernel trick allows for predicting multiple categories."

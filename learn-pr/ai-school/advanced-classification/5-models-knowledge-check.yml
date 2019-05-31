@@ -44,20 +44,6 @@ quiz:
     - content: "Predict another dimension."
       isCorrect: false
       explanation: "Incorrect. Hyperplanes don't predict dimensions."
-  - content: "The margins play what role in SVMs?"
-    choices:
-    - content: "Define where the support vectors fall"
-      isCorrect: true
-      explanation: "Correct. Support vectors fall upon margins."
-    - content: "Margins modify input data to ensure it's of the same kind."
-      isCorrect: false
-      explanation: "Incorrect. Margins do not modify the input data."
-    - content: "Ensure that the algorithm only reports two classes."
-      isCorrect: false
-      explanation: "Incorrect. SVMs can predict as many classes as needed, if sufficient data is available."
-    - content: "No role."
-      isCorrect: false
-      explanation: "Incorrect. SVMs use margins for predictions."
   - content: "Test data is:"
     choices:
     - content: "A copy of the training data."
