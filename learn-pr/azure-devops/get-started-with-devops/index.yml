@@ -20,11 +20,14 @@ iconUrl: /learn/achievements/azure-devops/get-started-with-devops.svg
 ratingEnabled: true
 prerequisites: None
 levels: 
-- beginner
+- intermediate
 roles:
+#- devops-engineer
+- administrator
 - developer
-products: 
-- azure
+- solution-architect
+products:
+- azure-devops
 units:
 - learn.get-started-with-devops.1-introduction
 - learn.get-started-with-devops.2-what-is-devops

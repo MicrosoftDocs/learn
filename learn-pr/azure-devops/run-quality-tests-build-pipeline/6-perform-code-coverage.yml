@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-quality-tests.2-what-is-automated-testing
-title: What is automated testing?
+uid: learn.azdo.run-quality-tests-build-pipeline.6-perform-code-coverage
+title: Exercise - Perform code coverage testing
 metadata:
-  title: What is automated testing?
+  title: Exercise - Perform code coverage testing
   description: TBD
   ms.date: 09/01/2019
   author: tpetchel
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-what-is-automated-testing.md)]
+  [!include[](includes/6-perform-code-coverage.md)]
