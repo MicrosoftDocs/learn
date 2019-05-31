@@ -24,7 +24,7 @@ prerequisites: |
   - .NET Core 2.1
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/run-quality-tests-build-pipeline-when-your-application-builds.svg
+iconUrl: /learn/achievements/azure-devops/run-quality-tests-when-your-application-builds.svg
 levels:
 - intermediate
 roles:
