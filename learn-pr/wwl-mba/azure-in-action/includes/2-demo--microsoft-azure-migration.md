@@ -4,13 +4,124 @@ Victor Melo is the Cloud Administrator at Contoso, a small technology company ju
 
 Victor has decided to move the support application to Azure using a lift and shift strategy. He will rehost the application web servers to Azure IaaS virtual machines and move the SQL Server database to a fully managed Azure database service.
 
-The process Victor follows as he completes the lift and shift migration of Contoso's support application is separated into six segments, as illustrated by the following animation:
+The process Victor follows as he completes the lift and shift migration of Contoso's support application is separated into six segments, as illustrated by the following table:
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this brief animation for a visual roadmap of the demo.|
+:::row:::
+:::column:::
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2QLWz]
+![Azure Migrate icon](../media/azure-migrate.png)
+
+:::column-end:::
+:::column:::
+
+### Azure Migrate
+
+- Create a service ticket
+
+- Review VMs
+
+- Create migration project
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![Data collection icon](../media/data-collection.png)
+
+:::column-end:::
+:::column:::
+
+### Data collection
+
+- Deploy collector
+
+- Configure collector
+
+- Assess environment
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![Recommendations icon](../media/recommendations.png)
+
+:::column-end:::
+:::column:::
+
+### Recommendations
+
+- Visualize dependencies
+
+- Group machines
+
+- View assessment
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![Database migration icon](../media/database-migration.png)
+
+:::column-end:::
+:::column:::
+
+### Database migration
+
+- Create database migration project
+
+- Configure migration
+
+- Run migration
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![Application server migration icon](../media/server-migration.png)
+
+:::column-end:::
+:::column:::
+
+### Application server migration
+
+- Replicate machines
+
+- Verify sizing
+
+- Run test failover
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![Post-migration icon](../media/post-migration.png)
+
+:::column-end:::
+:::column:::
+
+### Post-migration
+
+- Connect to load balancers
+
+- Perform cutover
+
+- Verify functionality
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+:::column-end:::
+:::column:::
+
+:::column-end:::
+:::row-end:::
 
 ## Azure Migrate
 
@@ -18,13 +129,13 @@ Before beginning the migration of Contoso's support application, Victor creates 
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch as Victor prepares to migrate Contoso's service ticket application.|
+| ![Icon indicating play video](../media/video_icon.png)| Watch as Victor prepares to migrate Contoso's service ticket application.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM6]
 
->[!NOTE]
->Use the Azure Migrate solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.
-
+| | |
+| ---: | ---: |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Use the Azure Migrate solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.*|
 
 ## Data collection
 
@@ -32,12 +143,13 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Victor uses the Azure Migrate collector VM to gather the data needed for migration.|
+| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Victor uses the Azure Migrate collector VM to gather the data needed for migration.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
 
->[!NOTE]
->Deploying the Azure Migrate Collector will not only help you evaluate your physical on-premises servers but will also work with vSphere to assess virtual servers.
+| | |
+| ---: | ---: |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Deploying the Azure Migrate Collector will not only help you evaluate your physical on-premises servers but will also work with vSphere to assess virtual servers.*|
 
 ## Recommendations
 
@@ -45,12 +157,13 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Azure Migrate uses the data collected to make recommendations for migration.|
+| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Azure Migrate uses the data collected to make recommendations for migration.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUq]
 
->[!NOTE]
->Azure Migrate saves time and money by pulling data from the collector appliance and telling you exactly what servers are ready to migrate, and what costs they would incur running in the cloud.  Additionally, the Azure Hybrid Use Benefit can lower costs by up to 1/5 by leveraging existing on-premises licenses (see more detail at the URL provided on the resources page).
+| | |
+| ---: | ---: |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Azure Migrate saves time and money by pulling data from the collector appliance and telling you exactly what servers are ready to migrate, and what costs they would incur running in the cloud.  Additionally, the Azure Hybrid Use Benefit can lower costs by up to 1/5 by leveraging existing on-premises licenses (see more detail at the URL provided on the resources page).*|
 
 ## Database Migration
 
@@ -58,12 +171,13 @@ With his assessment complete, Victor begins by migrating Contoso's database from
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to follow the steps to migrate Contoso's database.|
+| ![Icon indicating play video](../media/video_icon.png)| Watch this video to follow the steps to migrate Contoso's database.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PBj3]
 
->[!NOTE]
->Azure Database Migration Service is a seamless, end-to-end solution for moving on-premises SQL Server databases to a managed SQL environment with minimal downtime, replacing multiple tools with a single comprehensive service. After moving to Azure you can save as much as 80% by reserving capacity rather than using the pay-as-you-go model.
+| | |
+| ---: | ---: |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Azure Database Migration Service is a seamless, end-to-end solution for moving on-premises SQL Server databases to a managed SQL environment with minimal downtime, replacing multiple tools with a single comprehensive service. After moving to Azure you can save as much as 80% by reserving capacity rather than using the pay-as-you-go model.*|
 
 ## Application server migration
 
@@ -71,12 +185,13 @@ With the database migration complete, Victor is ready to migrate Contoso's on-pr
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Victor migrates the application servers.|
+| ![Icon indicating play video](../media/video_icon.png)| Watch this video to see how Victor migrates the application servers.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PLJp]
 
->[!NOTE]
->Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking the servers down by replicating those VMs from a primary site (on-premises) to a secondary location (Azure). The Azure Hybrid Benefit allows you to save costs by using your existing Windows Server license.
+| | |
+| ---: | ---: |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking the servers down by replicating those VMs from a primary site (on-premises) to a secondary location (Azure). The Azure Hybrid Benefit allows you to save costs by using your existing Windows Server license.*|
 
 ## Post-migration
 
@@ -84,9 +199,11 @@ With the migration complete, Victor needs to complete a couple of final steps to
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video for a demonstration of these post-migration steps.|
+| ![Icon indicating play video](../media/video_icon.png)| Watch this video for a demonstration of these post-migration steps.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUr]
 
->[!NOTE]
->Connecting to a load balancer in Azure keeps your servers from bogging down, allowing a smooth flow of traffic. The availability set ensures that your site is always up and running without the need for duplicate servers.
+| | |
+| ---: | ---: |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Connecting to a load balancer in Azure keeps your servers from bogging down, allowing a smooth flow of traffic. The availability set ensures that your site is always up and running without the need for duplicate servers.*|
+
