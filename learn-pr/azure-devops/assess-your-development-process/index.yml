@@ -21,7 +21,7 @@ iconUrl: /learn/achievements/azure-devops/assess-your-software-development-proce
 levels:
 - intermediate
 roles:
-- #- devops-engineer
+#- devops-engineer
 - administrator
 - developer
 - solution-architect

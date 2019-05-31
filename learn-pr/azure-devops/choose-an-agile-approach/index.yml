@@ -21,7 +21,7 @@ iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-d
 levels:
 - intermediate
 roles:
-- #- devops-engineer
+#- devops-engineer
 - administrator
 - developer
 - solution-architect

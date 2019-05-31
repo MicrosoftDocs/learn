@@ -22,7 +22,7 @@ prerequisites: None
 levels: 
 - intermediate
 roles:
-- #- devops-engineer
+#- devops-engineer
 - administrator
 - developer
 - solution-architect

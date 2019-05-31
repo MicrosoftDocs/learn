@@ -27,7 +27,7 @@ iconUrl: /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-
 levels:
 - intermediate
 roles:
-- #- devops-engineer
+#- devops-engineer
 - administrator
 - developer
 - solution-architect
