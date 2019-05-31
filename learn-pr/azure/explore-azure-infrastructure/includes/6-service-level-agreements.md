@@ -31,7 +31,7 @@ The following table lists the potential cumulative downtime for various SLA leve
 | 99.99 |1.01 minutes |4.32 minutes |52.56 minutes |
 | 99.999 |6 seconds |25.9 seconds |5.26 minutes |
 
-For example, the SLA for the Azure Cosmos DB (Database) service SLA offers 99.99 percent uptime, which includes low-latency commitments of less than 10 milliseconds on DB read operations and less than 15 milliseconds on DB write operations.
+For example, the SLA for the Azure Cosmos DB (Database) service SLA offers 99.999 percent uptime, which includes low-latency commitments of less than 10 milliseconds on DB read operations as well as on DB write operations.
 
 ### Service Credits
 SLAs also describe how Microsoft will respond if an Azure product or service fails to perform to its governing SLA's specification.
