@@ -23,8 +23,8 @@ levels:
 - beginner
 roles:
 - developer
-products: 
-- azure
+products:
+- azure-devops
 units:
 - learn.get-started-with-devops.1-introduction
 - learn.get-started-with-devops.2-what-is-devops

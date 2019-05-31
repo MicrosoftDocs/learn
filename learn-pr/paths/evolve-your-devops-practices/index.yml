@@ -23,17 +23,14 @@ cardDescription: DevOps is the union of people, process, and products to enable 
 prerequisites: None
 iconUrl: /learn/achievements/azure-devops/evolve-your-devops-practices.svg
 levels:
-# TODO
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
-- azure
-#- azure-devops
+- azure-devops
 modules:
 - learn.azdo.assess-your-development-process
 - learn.get-started-with-devops

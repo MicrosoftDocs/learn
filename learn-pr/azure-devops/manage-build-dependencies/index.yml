@@ -32,9 +32,7 @@ roles:
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
-- azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.manage-build-dependencies.1-introduction
 - learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline

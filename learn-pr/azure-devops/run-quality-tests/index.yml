@@ -33,9 +33,7 @@ roles:
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
-- azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.run-quality-tests.1-introduction
 - learn.azdo.run-quality-tests.2-what-is-automated-testing
