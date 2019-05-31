@@ -22,7 +22,7 @@ Mara has already taken on the first two issues and has started thinking about th
 
 **Mara**: I have an idea. You've seen the automated pipeline. I think we can add unit tests to the automated build. Unit testing is about testing a single piece of functionality, like the filtering feature, in isolation. We'd catch regression errors before they ever got to you.
 
-**Andy**: We tried unit testing a while ago but we had trouble keeping the tests up to date so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and t nothing was in place to keep us honest.
+**Andy**: We tried unit testing a while ago but we had trouble keeping the tests up to date so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and nothing was in place to keep us honest.
 
 **Mara**: If we add tests to the Azure Pipelines build, the build will fail if any tests fail. That should certainly keep us honest! Andy and I could do this and it will make life better for you, Amita.
 
