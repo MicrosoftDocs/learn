@@ -6,13 +6,15 @@ Victor has decided to move the support application to Azure using a lift and shi
 
 The process Victor follows as he completes the lift and shift migration of Contoso's support application is separated into six segments, as illustrated by the following table:
 
+
+
 :::row:::
-:::column:::
 
 ![Azure Migrate icon](../media/azure-migrate.png)
 
-:::column-end:::
-:::column:::
+
+:::column span="1":::
+
 
 ### Azure Migrate
 
@@ -24,13 +26,12 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 :::column-end:::
 :::row-end:::
+
 :::row:::
-:::column:::
 
 ![Data collection icon](../media/data-collection.png)
 
-:::column-end:::
-:::column:::
+:::column span="1":::
 
 ### Data collection
 
@@ -42,13 +43,13 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 :::column-end:::
 :::row-end:::
+
 :::row:::
-:::column:::
+
 
 ![Recommendations icon](../media/recommendations.png)
 
-:::column-end:::
-:::column:::
+:::column span="1":::
 
 ### Recommendations
 
@@ -60,13 +61,13 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 :::column-end:::
 :::row-end:::
+
 :::row:::
-:::column:::
+
 
 ![Database migration icon](../media/database-migration.png)
 
-:::column-end:::
-:::column:::
+:::column span="1":::
 
 ### Database migration
 
@@ -78,13 +79,13 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 :::column-end:::
 :::row-end:::
+
 :::row:::
-:::column:::
+
 
 ![Application server migration icon](../media/server-migration.png)
 
-:::column-end:::
-:::column:::
+:::column span="1":::
 
 ### Application server migration
 
@@ -96,13 +97,13 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 :::column-end:::
 :::row-end:::
+
 :::row:::
-:::column:::
+
 
 ![Post-migration icon](../media/post-migration.png)
 
-:::column-end:::
-:::column:::
+:::column span="1":::
 
 ### Post-migration
 
@@ -111,14 +112,6 @@ The process Victor follows as he completes the lift and shift migration of Conto
 - Perform cutover
 
 - Verify functionality
-
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
-
-:::column-end:::
-:::column:::
 
 :::column-end:::
 :::row-end:::
