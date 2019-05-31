@@ -1,4 +1,4 @@
-Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to other users. It works with just about any language or project type.
+Azure Pipelines is a cloud service that you can use to automatically build and test your code project. You can also make it available to other users. And, it works with just about any language or project type.
 
 Mara is excited about replicating the team's build process on Azure Pipelines. Amita, the tester, finally has some free time and she wants to catch up. Mara decides that now is a great time to tell her about her plan: setting up an automated build pipeline for the _Space Game_ web site using Azure Pipelines.
 
@@ -10,7 +10,7 @@ When she hears Mara's plan, Amita is a bit hesitant. But since Mara's plan is to
 
 **Amita**: What improvements do you expect to see, especially since you're going to do what we already do?
 
-**Mara**: I think that just moving to Azure Pipelines will bring a lot of benefits. Remember, Azure Pipelines is a cloud service that you can use to automatically build and test code and make it available to others. It works with just about any language or project type.
+**Mara**: I think that just moving to Azure Pipelines will bring a lot of benefits. Remember, Azure Pipelines is a cloud service. We can use it to automatically build and test code. And it will be available to others as well. It works with just about any language or project type.
 
 Our build server has problems. Even keeping it up to date is hard. Since Azure Pipelines provides build servers that Microsoft hosts and maintains, it's always got the latest patches and security updates. We won't have to worry about maintaining build servers.
 
