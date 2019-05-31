@@ -2,7 +2,7 @@ In the last unit, we added three collections to your Azure Cosmos DB account and
 
 ## Measuring throughput in Azure Cosmos DB
 
-Recall that in an Azure Cosmos DB database, capacity or throughput is measured in Request Units (RUs). Every operation on a database has an RU value based on the throughput required to complete the operation. Operations can be simple and require only a small number of RUs. Or they can be complex and require a large number of RUs. The sum of the RUs for all of your operations must stay within the throughput you've configured.
+Recall that in Azure Cosmos DB, capacity or throughput is measured in Request Units (RUs). Every operation on a database has an RU value based on the throughput required to complete the operation. Operations can be simple and require only a small number of RUs. Or they can be complex and require a large number of RUs. The sum of the RUs for all of your operations must stay within the throughput you've configured.
 
 For example, let's say your configured throughput is 500 RUs per second (RU/s), and:
 

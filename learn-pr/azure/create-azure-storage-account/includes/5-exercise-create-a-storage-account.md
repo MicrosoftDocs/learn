@@ -28,7 +28,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 Under **PROJECT DETAILS**:
 
-1. Select the appropriate **Subscription**.
+1. Select the _Concierge Subscription_ from the **Subscription** drop-down list.
 
 1. Select the existing Resource Group ("**<rgn>[sandbox resource group name]</rgn>**") from the drop-down list.
 
@@ -64,6 +64,8 @@ The following screenshot shows the completed settings for the **Basics** tab. No
 
 1. Set the **Virtual networks** option to _All networks_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
 
+1. Leave the **Blob Soft delete** option set to _Disabled_. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten.
+
 1. Leave the **Data Lake Storage Gen2** option as _Disabled_. This is for big-data applications that aren't relevant to this module.
 
 The following screenshot shows the completed settings for the **Advanced** tab.
@@ -83,20 +85,5 @@ It will take a few minutes to deploy the account. While Azure is working on that
 1. Select the **Storage accounts** link in the left sidebar.
 
 1. Locate the new storage account in the list to verify that creation succeeded.
-
-<!-- Cleanup sandbox -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
-When you're working in your own subscription, you can use the following steps in the Azure portal to delete the resource group and all associated resources.
-
-1. Select the **Resource groups** link in the left sidebar.
-
-1. Locate the resource group you created in the list.
-
-1. Right-click on the resource group entry and select **Delete resource group** from the context menu. You can also click the "..." menu element on the right side of the entry to get to the same context menu.
-
-1. Type the resource group name into the confirmation field.
-
-1. Click the **Delete** button. This may take several minutes.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.

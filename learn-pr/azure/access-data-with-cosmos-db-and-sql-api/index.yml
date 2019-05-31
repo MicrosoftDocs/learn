@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.access-data-with-cosmos-db-and-sql-api
 metadata:
-  title: Insert and query data in your Azure Cosmos DB database - Learn
+  title: Insert and query data in your Azure Cosmos DB database
   description: Learn how to add data and query NoSQL data in your Azure Cosmos DB database.
   ms.date: 09/24/2018
   author: mimig1
@@ -35,6 +35,7 @@ units:
 - learn.access-data-with-cosmos-db-and-sql-api.3-add-data
 - learn.access-data-with-cosmos-db-and-sql-api.4-query-types
 - learn.access-data-with-cosmos-db-and-sql-api.5-run-queries
+- learn.access-data-with-cosmos-db-and-sql-api.stored-procs-and-udfs
 - learn.access-data-with-cosmos-db-and-sql-api.6-javascript-programming
 - learn.access-data-with-cosmos-db-and-sql-api.7-summary
 badge:

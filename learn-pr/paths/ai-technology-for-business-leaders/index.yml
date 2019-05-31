@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.ai-technology-for-business-leaders
+metadata:
+  title: Introduction to AI technology for business leaders
+  description: In this learning path, you will be provided with a high-level overview of the primary concepts of AI. You will be able to describe what AI happens to be and the technologies that underpin it. You will be able to share  how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
+  brand: azure
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to AI technology for business leaders
+summary: In this learning path, you will be provided with a high-level overview of the primary concepts of AI. You will be able to describe what AI happens to be and the technologies that underpin it. You will be able to share  how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
+prerequisites: None
+iconUrl: /learn/achievements/ai-technology-for-business-leaders.svg
+levels:
+- beginner
+roles:
+- functional-consultant
+- business-user
+products:
+- azure
+- dynamics
+- m365
+modules:
+- learn-wwl.intro-to-ai-technology
+- learn-wwl.microsoft-approach-to-ai
+trophy:
+  uid: learn.ai-technology-for-business-leaders.trophy

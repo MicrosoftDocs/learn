@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.responsible-ai-business-principles
+metadata:
+  title: Identify guiding principles for responsible AI in your business
+  description: It is imperative to reflect on the implications of AI in business. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your organization, as well as resources, best practices, and tools.
+  brand: azure
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Identify guiding principles for responsible AI in your business
+summary: It is imperative to reflect on the implications of AI in business. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your organization, as well as resources, best practices, and tools.
+prerequisites: None
+iconUrl: /learn/achievements/responsible-ai-business-principles.svg
+levels:
+- intermediate
+roles:
+- functional-consultant
+- business-user
+products:
+- azure
+- dynamics
+- m365
+modules:
+- learn-wwl.responsible-ai-guiding-principles
+trophy:
+  uid: learn.responsible-ai-business-principles.trophy

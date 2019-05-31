@@ -5,39 +5,39 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-    - content: 'What is the purpose of Linked Services in Azure Data Factory?'
+    - content: "What's the purpose of linked services in Azure Data Factory?"
       choices:
         - content: To represent a data store or a compute resource that can host execution of an activity.
-          explanation: These are the correct purposes of Linked Services in Azure Data Factory. Linked Services define the connection information needed for ADF to connect to external resources.
+          explanation: Correct. Linked services define the connection information needed for Data Factory to connect to external resources.
           isCorrect: true
         - content: To represent a processing step in a pipeline.
           isCorrect: false
-          explanation: 'Activities, not Linked Services, represent processing steps in an ADF pipeline.'
+          explanation: "Activities, not linked services, represent processing steps in a Data Factory pipeline."
         - content: To link data stores or computer resources together for the movement of data between resources.
           isCorrect: false
-          explanation: Linked services define the connection information needed for ADF to connect to external resources not the connection between resources.
-    - content: 'Can parameters be passed into an Azure Databricks Notebook from Azure Data Factory?'
+          explanation: Linked services define the connection information needed for Data Factory to connect to external resources. But linked services aren't the connection between resources.
+    - content: "Can parameters be passed into an Azure Databricks notebook from Azure Data Factory?"
       choices:
         - content: Yes
-          explanation: 'Yes, the target notebook must include widgets configured with the desired parameter names. The values can then be passed as parameters from a Databricks Notebook activity in ADF.'
+          explanation: "Yes. The target notebook must include widgets configured with the necessary parameter names. The values can then be passed as parameters from a Databricks notebook activity in Data Factory."
           isCorrect: true
         - content: No
           isCorrect: false
-          explanation: 'Parameters can be configured using widget on the Databricks notebook, and then passing in parameters with those names via the Databricks Notebook activity in ADF.'
-    - content: 'Databricks activities (Notebook, JAR, Python) in ADF will fail if the target cluster in Azure Databricks is stopped when called by ADF?'
+          explanation: "You can configure parameters by using widgets on the Databricks notebook. You then pass in parameters with those names via a Databricks notebook activity in Data Factory."
+    - content: "Databricks activities (notebook, JAR, Python) in Azure Data Factory will fail if the target cluster in Azure Databricks isn't running when the cluster is called by Data Factory."
       choices:
         - content: No
-          explanation: 'No, if the target cluster is stopped, Databricks will start the cluster before attempting to execute the notebook, JAR, or Python file. This will result in longer execution time since the cluster must start, but it will still execute as expected.'
+          explanation: "If the target cluster is stopped, Databricks will start the cluster before attempting to execute the notebook, JAR, or Python file. This situation will result in a longer execution time because the cluster must start, but the activity will still execute as expected."
           isCorrect: true
         - content: Yes
           isCorrect: false
-          explanation: 'If the cluster is not running, Databricks will start it automatically when it receives the request for execution from ADF.'
+          explanation: "No. If the cluster isn't running, Databricks will start it automatically when it receives the request for execution from Data Factory."

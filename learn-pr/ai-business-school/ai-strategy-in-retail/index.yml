@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.ai-strategy-in-retail
+metadata:
+  title: Define an AI strategy to create business value in retail
+  description: In retail, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlanmsft
+title: Define an AI strategy to create business value in retail
+summary: In retail, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
+abstract: | 
+  In this module, you will:
+  - Describe retail industry outcomes achieved through the adoption of AI.
+  - Articulate the components of an AI strategy. 
+  - Apply the value creation framework.
+prerequisites: None
+iconUrl: /learn/achievements/ai-strategy-in-retail.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.ai-strategy-in-retail.introduction
+- learn-wwl.ai-strategy-in-retail.ai-value-in-retail-insead
+- learn-wwl.ai-strategy-in-retail.retail-case-study-introduction
+- learn-wwl.ai-strategy-in-retail.retail-executive-QA
+- learn-wwl.ai-strategy-in-retail.retail-case-study-resolution
+- learn-wwl.ai-strategy-in-retail.knowledge-check
+- learn-wwl.ai-strategy-in-retail.summary-and-resources
+badge: 
+  uid: learn-wwl.ai-strategy-in-retail.badge #add the uid for your achievement badge.

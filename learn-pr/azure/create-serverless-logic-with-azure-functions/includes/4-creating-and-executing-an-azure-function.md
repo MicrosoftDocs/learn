@@ -11,7 +11,7 @@ Azure supports triggers for the following services.
 | Service                 | Trigger description  |
 |-------------------------|---------|
 | Blob storage            | Start a function when a new or updated blob is detected.       |
-| Cosmos DB               | Start a function when inserts and updates are detected.      |
+| Azure Cosmos DB               | Start a function when inserts and updates are detected.      |
 | Event Grid              | Start a function when an event is received from Event Grid.       |
 | HTTP                    | Start a function with an HTTP request.      |
 | Microsoft Graph Events  | Start a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type.       |
@@ -77,7 +77,7 @@ The selection of Quickstart templates provides easy access to the most common sc
 - Timer trigger w/ C#, F#, or JavaScript
 - Queue trigger w/ C#, F#, or JavaScript
 - Service Bus Queue trigger w/ C#, F#, or JavaScript
-- Cosmos DB trigger w/ C# or JavaScript
+- Azure Cosmos DB trigger w/ C# or JavaScript
 - IoT Hub (Event Hub) w/ C#, F#, or JavaScript
 - ... and many more
 

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.secure-and-isolate-with-nsg-and-service-endpoints
+metadata:
+  title: Secure and isolate access to Azure resources by using network security groups and service endpoints
+  description: Learn to use the Azure virtual network features of network security groups and service endpoints, to ensure your virtual machines and Azure services are secured from unauthorized network access.
+  ms.date: 04/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure and isolate access to Azure resources by using network security groups and service endpoints
+summary: Network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access.
+abstract: | 
+  In this module, you will:
+  - Identify the capabilities and features of network security groups.
+  - Identify the capabilities and features of virtual network service endpoints.
+  - Use network security groups to restrict network connectivity.
+  - Use virtual network service endpoints to control network traffic to and from Azure services.
+prerequisites: | 
+  - Knowledge of basic networking concepts, including subnets and IP addressing
+  - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage
+  - Familiarity with Azure virtual machines and virtual networking
+iconUrl: /learn/achievements/secure-and-isolate-with-nsg-and-service-endpoints.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+units:
+- learn.secure-and-isolate-with-nsg-and-service-endpoints.1-introduction
+- learn.secure-and-isolate-with-nsg-and-service-endpoints.2-network-security-groups
+- learn.secure-and-isolate-with-nsg-and-service-endpoints.3-exercise-network-security-groups
+- learn.secure-and-isolate-with-nsg-and-service-endpoints.4-vnet-service-endpoints
+- learn.secure-and-isolate-with-nsg-and-service-endpoints.5-exercise-vnet-service-endpoints
+- learn.secure-and-isolate-with-nsg-and-service-endpoints.6-summary
+badge:
+  uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.badge

@@ -1,4 +1,4 @@
-In an Azure Cosmos DB database, throughput is the rate at which data is processed. It's measured in _Request Units (RUs)_. An RU is the amount of CPU, disk I/O, and memory required to read 1 KB of data in 1 second. Other operations like reading more data, writing data, or querying data take more RUs. The greater the demand on the underlying physical resources, the higher the number of RUs used.
+In Azure Cosmos DB, throughput is the rate at which data is processed. It's measured in _Request Units (RUs)_. An RU is the amount of CPU, disk I/O, and memory required to read 1 KB of data in 1 second. Other operations like reading more data, writing data, or querying data take more RUs. The greater the demand on the underlying physical resources, the higher the number of RUs used.
 
 The number of RUs that a specific operation uses depends on the following factors:
 

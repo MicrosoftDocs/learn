@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.ai-business-school-retail
+metadata:
+  title: AI business school for retail
+  description: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.
+  brand: azure
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: AI business school for retail
+summary: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.
+prerequisites: None
+iconUrl: /learn/achievements/ai-business-school-retail.svg
+levels:
+- beginner
+- intermediate
+roles:
+- functional-consultant
+- business-user
+products:
+- azure
+- dynamics
+- m365
+modules:
+- learn-wwl.ai-strategy-to-create-business-value
+- learn-wwl.ai-strategy-in-retail
+- learn-wwl.build-an-ai-ready-culture
+- learn-wwl.foster-ai-culture-finance
+- learn-wwl.foster-ai-culture-marketing
+- learn-wwl.foster-ai-culture-sales
+- learn-wwl.foster-ai-culture-customer-service
+- learn-wwl.responsible-ai-guiding-principles
+- learn-wwl.intro-to-ai-technology
+- learn-wwl.microsoft-approach-to-ai
+trophy:
+  uid: learn.ai-business-school-retail.trophy

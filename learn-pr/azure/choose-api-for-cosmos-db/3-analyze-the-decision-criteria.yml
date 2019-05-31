@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.3-analyze-the-decision-criteria
+title: Analyze the decision criteria
+metadata:
+  title: Analyze the decision criteria
+  description: Create a matrix that can be used in the decision-making process when choosing an API to use with Azure Cosmos DB.
+  ms.date: 04/24/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-analyze-the-decision-criteria.md)]

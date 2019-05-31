@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.7-use-the-cassandra-api-for-web-analytics
+title: Use Cassandra for web analytics
+metadata:
+  title: Use Cassandra for web analytics
+  description: Describe a scenario where the Cassandra API might be a good choice for Azure Cosmos DB.
+  ms.date: 04/24/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-use-the-cassandra-api-for-web-analytics.md)]

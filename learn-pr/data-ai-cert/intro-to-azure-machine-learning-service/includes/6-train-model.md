@@ -1,156 +1,173 @@
-Time to finally get your hands dirty! 
+Let's create a new workspace and experiment. You can quickly set up a workspace by using the Azure portal or via Python code. We'll go through each approach here.
 
-In this unit, you create a new workspace and experiment. There are two ways to quickly set up a workspace, using the Azure portal and via Python code.
+## Create a workspace by using the Azure portal
 
-## Create Workspace Using Portal
+Follow these steps to create a workspace in the Azure portal.
 
-Here are the quick steps
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true]) using your Azure subscription.
 
-1. Login in to the Azure portal, and find the search bar on top of the dashboard
-2. In the search bar, enter machine learning service workspaces, you will find the item under services, click on it
+1. In the Search box at the top of the portal, type **machine learning service workspaces**. 
 
-![Screenshot of Selecting Machine Learning Service Workspace](../media/6-select-ml-service-workspace.png)
+1. Select the "Machine Learning Service Workspaces" option under SERVICES.
 
-3. Click Add button on top left then enter the information needed to create the workspace. Below are descriptions for each field.
+    ![The screenshot depicts Machine Learning service workspaces being selected in the search box results.](../media/6-select-ml-service-workspace.png)
 
-![Screenshot of Creating Machine Learning Service Workspace](../media/6-create-ml-service-workspace.png)
+1. Select **Add** at the top left of the Machine Learning service workspaces pane, and then enter the necessary information to create the workspace.
 
-|    Field    |    Description    |
-|    -----    |    -----------    |
-| Workspace name | Enter a unique name for your workspace. In this example, you use **docs-ws**. The names must be unique across the resource group. Use a name that's easy to remember and different from workspaces created by others. |
-| Subscription | Select the Azure subscription that you want to use. |
-| Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A resource group is a container that holds related resources for an Azure solution. In this example, you use **docs-aml**. |
-| Location | Select the location closest to your users and the data resources. This location is where the workspace is created. |
+    | Field | Description |
+    |-------|-------------|
+    | Workspace name | Enter a unique name for your workspace. In this example, you use **docs-ws**. The names must be unique across the resource group. Use a name that is easy to remember and different from workspaces that others create. |
+    | Subscription | Select the Azure subscription that you want to use. |
+    | Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A *resource group* is a container that holds related resources for an Azure solution. In this example, you use **docs-aml**. |
+    | Location | Select the location closest to your users and the data resources. This location is where the workspace is created. |
+    
+    ![The screenshot depicts the required information for creating a Machine Learning service workspace, which includes boxes for Workspace name, Subscription, Resource group, and Location.](../media/6-create-ml-service-workspace.png)
+    
 
+1. In the newly created workspace, select **Open Azure Notebooks** to create the first experiment.
 
-4. It may take a few minutes for the workspace to be created.  The bell icon in the Azure portal will show a moving line under it while Azure is creating the workspace.  Once the line disappears, click on the bell and select 'Go to resource'.  
+1. Sign in with the same Microsoft account you used to create the workspace in the Azure portal.
 
-![Screenshot of New Workspace](../media/6-open-new-amls-workspace.png)
+1. After you sign in, a new tab opens and a "Clone Library" prompt appears. Select **Clone**, and then run the notebook.
 
-Click on 'Go to resource' to view the properties of the Azure Machine Learning service workspace.
+1. Along with two notebooks, you will see a **Config.json** file. This configuration file contains information about the workspace that you created.
 
-## Running the code samples
+1. Select **01.run-experiment.ipynb** to open the notebook.
 
-Although you can use any Python IDE to use the Azure Machine Learning service, you're going to use Azure Notebooks because it has the required Python modules pre-installed.  
+1. Run the cells one at a time (<kbd>Shift</kbd>+<kbd>Enter</kbd>) or select **Cells** > **Run All** to run the entire notebook. When you see an asterisk (*) next to a cell, it's running. After the code for that cell finishes, a number appears.
 
-### What are Azure Notebooks?
+1. After running all the cells in the notebook, you can view the logged values in your workspace.
 
-Azure Notebooks is a free hosted service to develop and run Jupyter notebooks in the cloud with no installation. Jupyter (formerly IPython) is an open source project that lets you easily combine markdown text, executable code (Python, R, and F#), persistent data, graphics, and visualizations onto a single, sharable canvas called a notebook.
+1. Browse back to the portal page, select **View Experiments**, and then select **my-first-experiment** to see the model run report.
 
-To get started with Azure Notebooks, use this link:
+## Create a workspace by using Python
 
-https://docs.microsoft.com/azure/notebooks/quickstart-sign-in-azure-notebooks
+To create a workspace by using Python:
 
-Follow the directions on the web page to get yourself set up and started with Azure Notebooks.
+1. Install a Python environment like Anaconda, Miniconda, or Python virtual environment.
 
-There's lot of documentation at that link to help you learn how to use all the features of Azure Notebooks.
+1. Create an isolated Python environment.
 
-Once you have your Azure Notebook environment set up and you are logged in, follow the instructions below to use Azure Machine Learning service with Python.
+1. In a command-line or terminal window, create a new Conda environment named **myenv** with Python 3.6:
 
-1. In Azure Notebook, create a new notebook, choose the `Python 3.6` kernel. Sign in to the Azure portal if necessary.  
+    ```bash
+    # Create
+    conda create -n myenv -y Python=3.6
+    # Activate
+    conda activate myenv
+    ```
+    
+1. Install the SDK.
 
-You already created an Azure Machine Learning service workspace in the portal so you need run the code below to get a reference to it.
+1. Install the core components of the Machine Learning SDK and Jupyter Notebook server with the following code:
 
-```python
-from azureml.core import Workspace, Experiment, Run
+    ```bash
+    # Install Jupyter
+    conda install nb_conda
+    
+    # Install the base SDK and Jupyter Notebook
+    pip install azureml-sdk[notebooks]
+    ```
+    
+1. Start Jupyter Notebook:
 
-ws = Workspace.get(name='myworkspace',
-                      subscription_id='<azure-subscription-id>', 
-                      resource_group='myresourcegroup' 
-                     )
-```
+    ```bash
+    # Launch
+    jupyter notebook
+    ```
+    
+1. In your browser, create a new notebook, choose the `Python 3` kernel, and then sign in to the Azure portal if necessary.
 
-When you run the code above, you will be prompted to log your device into Azure via the link in the output cell.  Copy the code provided, click the link, and paste the code  into the log in screen.
+1. Run the following Python code replacing each of the `{placeholder}`s with the proper values for your subscription.
 
-![Screenshot of New Workspace](../media/6-azure-notebook-login.png)
+    ```python
+    import azureml.core
+    print(azureml.core.VERSION)
+    
+    from azureml.core import Workspace
+    ws = Workspace.create(name='myworkspace',
+                subscription_id='{azure-subscription-id}', 
+                resource_group='{resource-group-name}',
+                create_resource_group = True,
+                location='{location}'
+                )
+    ```
+    
+    |    Field    |    Description    |
+    |    -----    |    -----------    |
+    | Workspace name | Enter a unique name for your workspace. In this example, you use **docs-ws**. The names must be unique across the resource group. Use a name that is easy to remember and different from workspaces that others create. |
+    | Subscription | Select the Azure subscription that you want to use. |
+    | Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A *resource group* is a container that holds related resources for an Azure solution. In this example, you use **docs-aml**. |
+    | Location | Select the location closest to your users and the data resources. This location is where the workspace is created. |
+    
+1. To view workspace details such as associated storage, container registry, and key vault, use the following code:
 
+    ```python
+    ws.get_details()
+    ```
+    
+1. Write a configuration file.
 
-For parameters in workspace, refer to below table,
+    Details of your workspace must be saved to a configuration JSON file in the current directory. The `write_config()` application programming interface (API) call creates the configuration file in the current directory. The **config.json** file contains the following:
 
-|    Field    |    Description    |
-|    -----    |    -----------    |
-| Workspace name | Enter a unique name for your workspace. In this example, you use **myworkspace**. The names must be unique across the resource group. Use a name that's easy to remember and different from workspaces created by others. |
-| Subscription | Select the Azure subscription that you want to use. |
-| Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A resource group is a container that holds related resources for an Azure solution. In this example, you use **myresourcegroup**. |
-| Location | Select the location closest to your users and the data resources. This location is where the workspace is created. |
+    ```json
+    {
+        "subscription_id": "{azure-subscription-id}",
+        "resource_group": "{resource-group-name}",
+        "workspace_name": "myworkspace"
+    }
+    ```
+    
+1. The following code will create the configuration file:
 
-Since the workspace already exists, we don't need to create it.  However, if you wanted to, you could create the workspace in Python code as shown below.  Don't run this code though since the workspace already exists. The code is just presented to show you how it would look. 
+    ```python
+    # Create the configuration file.
+    ws.write_config()
+    ```
+    
+1. Use the workspace:
 
-```python
-import azureml.core
-print(azureml.core.VERSION)
+    ```python
+    from azureml.core import Experiment
+    
+    # create an experiment
+    exp = Experiment(workspace=ws, name='trial_exp')
+    
+    # start a run
+    run = exp.start_logging()
+    
+    # log a number
+    run.log('trail', 30)
+    
+    # log a list (Fibonacci numbers)
+    run.log_list('my list', [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]) 
+    
+    # finish the run
+    run.complete()
+    ```
 
-from azureml.core import Workspace
+> [!IMPORTANT]
+> If you have more than 300 MB of content or 2000 files in the current notebook folder, you might get the following error:
+>
+> ![Screenshot of error when you the current folder has > 300 MB.](../media/6-experiment_over300mberror.png)
+>
+> This happens because Azure Machine Learning runs training scripts by copying the entire script folder to the target compute context, and then takes a snapshot. The storage limit for experiment snapshots is 300 MB and/or 2000 files.
+>
+> There are a number of ways to resolve this issue.  If you don't need all the files and can work within the default space constraints, the easiest solution is to exit the notebook, create a new folder with only what you need, open that folder and create the notebook there. On a local machine, you can stop the Jupyter Notebook service, change to the new folder at a command prompt and restart Jupyter Notebook.  On Azure Notebook, just create a new project and copy what you need to it. Then create your notebook there.  
+>
+> If you cannot get the data within the constraints, then read through [the documentation](https://docs.microsoft.com/azure/machine-learning/service/how-to-save-write-experiment-files#limits) to explore other options.
 
-ws = Workspace.create(name='myworkspace',
-                      subscription_id='<azure-subscription-id>', 
-                      resource_group='myresourcegroup',
-                      create_resource_group=True,
-                      location='eastus2' # Or other supported Azure region   
-                     )
-```
+    
+1. View the logged results:
 
-2. To view the workspace details, such as associated storage, container registry, and key vault, use code below:
+    ```python
+    print(run.get_portal_url())
+    ```
+    
+    The link directs you to logged values in the Azure portal.
 
-```python
-ws.get_details()
-```
+1. Clean up the resources:
 
-3. Write a configuration file.
-
-Details of your workspace need to be saved to a configuration Json file to the current directory.
-The `write_config()` API call creates the configuration file in the current directory. The `config.json` file contains the following:
-
-```python
-{
-    "subscription_id": "<azure-subscription-id>",
-    "resource_group": "myresourcegroup",
-    "workspace_name": "myworkspace"
-}
-```
-
-This line will create the configuration file.
-
-```python
-# Create the configuration file.
-ws.write_config()
-```
-
-4. Log something to the workspace with the code below.  This may take a few minutes to run.
-
-```python
-from azureml.core import Experiment
-
-# create an experiment
-exp = Experiment(workspace=ws, name='trial_exp')
-
-# start a run
-run = exp.start_logging()
-
-# log a number
-run.log('trial', 30)
-
-# log a list (Fibonacci numbers)
-run.log_list('my list', [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]) 
-
-# finish the run
-run.complete()
-
-print('Execution complete')
-```
-
-5. View logged results using the code below.
-
-```python
-   print(run.get_portal_url())
-```
-
-The link directs you to logged values in the Azure portal
-
-6. Clean up resources
-
-If you are going to continue with this Learning Path, don't run the code below.  If you are done and do not plan to continue with the other modules, you can run the code below to delete the Azure Machine Learning service resources you created. 
-
-```python
-      ws.delete(delete_dependent_resources=True)
-```
+    ```python
+    ws.delete(delete_dependent_resources=True)
+    ```
