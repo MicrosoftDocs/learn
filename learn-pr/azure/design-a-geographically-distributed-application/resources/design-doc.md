@@ -79,6 +79,10 @@ Identify the subtasks of *Design a geographically distributed application*
         - Describe how the architecture should be upgraded to provide fault-tolerance across regions.
             - You need to replicate those parts of the system which can be replicated in a pair of regions. This includes Azure App Service, Function App, Redis Cache. For other services like SQL DB and Cosmos DB it's more a case of flipping a switch so that they become present in other regions. The architecture uses some supporting services which are inherently multi-region, like Azure DNS, Azure AD, and Azure CDN. Finally, the Traffic Manager service is used as an orchestrator to switch incoming traffic from one region to another in case of regional failure.
 
+    **Knowledge Check**
+    
+    What types of questions will test *Understand geographically distributed architectures*?
+    
 1. **Overview of a geographically distributed networking architecture**
 
     List the content that will enable the learner to *Design networking architecture for a geographically distributed application*:
@@ -96,6 +100,10 @@ Identify the subtasks of *Design a geographically distributed application*
         - Illustrate this priority routing mode with a simplified diagram based on https://docs.microsoft.com/azure/traffic-manager/traffic-manager-routing-methods#priority-traffic-routing-method with just a single failover but clearly shown in a separate region
         - Traffic Manager uses highly configurable endpoint monitoring. You can define the protocol, port, path, custom header settings, expected status code ranges, tolerated number of failures and so on to get a continuous idea of the overall health of all parts of your application, and you can configure the system to fail over to another region if the primary endpoint becomes unreachable.
         - In the case of a regional failure, the failed region should be manually removed from Traffic Manager's rotation until all application subsystems have been definitively restored. Otherwise partial recovery of the region could lead to Traffic Manager flip-flopping between the regions.
+        
+    **Knowledge Check**
+    
+    What types of questions will test *Design a geographically distributed network architecture*?
 
 1. **Overview of a geographically distributed application architecture**
 
@@ -105,6 +113,10 @@ Identify the subtasks of *Design a geographically distributed application*
     - You can group these resources together in logical Resource Group combinations. For example the primary and secondary region App Service, Function App, and Redis Cache will be managed together in this way. This will let you manage the resources deployed to each region as a single collection.
     - Other services are inherently less tied to a single region. This is the case for Azure AD and Azure DNS. Azure Storage is also designed in such a way that data is replicated to both a primary and secondary region, and in the case of the primary region experiencing problems, provides a number of contingencies to keep reading a copy of the data and/or fail over to the secondary region.
     - Describe cases where a regional failover could cause some data loss. Data replication to the secondary region is performed asynchronously. Therefore, if a geo-failover is performed, some data loss is possible if the data can't be recovered from the primary region.
+    
+    **Knowledge Check**
+    
+    What types of questions will test *Design a geographically distributed application architecture*?
 
 1. **Overview of a geographically distributed data architecture**
 
@@ -115,9 +127,9 @@ Identify the subtasks of *Design a geographically distributed application*
     - As with Azure RA-GRS, Azure SQL may only allow for read access to a secondary until the decision is made to fail over, but the queue will help to mitigate the effects of that.
     - Describe recovery point objectives (RPO) and estimated recovery time (ERT) in assessing the possible impact of regional failure.
 
-1. **Knowledge check**
+   **Knowledge check**
 
-    What types of questions will test *Design a geographically distributed application*?
+    What types of questions will test *Design a geographically distributed data architecture*?
 
     - How can Azure CDN be configured in such a way as not to be tightly coupled to a single region?
     - When might it be appropriate to use Cosmos DB instead of Azure SQL?
