@@ -28,7 +28,7 @@ iconUrl: /learn/achievements/azure-devops/implement-a-code-workflow-in-your-buil
 levels:
 - intermediate
 roles:
-- devops-engineer
+- #- devops-engineer
 - administrator
 - developer
 - solution-architect

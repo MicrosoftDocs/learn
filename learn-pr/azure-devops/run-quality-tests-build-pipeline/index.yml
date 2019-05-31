@@ -28,7 +28,7 @@ iconUrl: /learn/achievements/azure-devops/run-quality-tests-build-pipeline-when-
 levels:
 - intermediate
 roles:
-- devops-engineer
+- #- devops-engineer
 - administrator
 - developer
 - solution-architect

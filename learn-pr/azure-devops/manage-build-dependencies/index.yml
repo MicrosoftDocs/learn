@@ -27,7 +27,7 @@ iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipe
 levels:
 - intermediate
 roles:
-- devops-engineer
+- #- devops-engineer
 - administrator
 - developer
 - solution-architect
