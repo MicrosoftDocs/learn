@@ -145,13 +145,13 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
     1. Drop the table again
     1. View the backups available for this database via Azure Powershell.
 
-        ``` CLI
+        ``` Powershell
         $database = Get-AzSqlDatabase -ResourceGroupName "rg-sql-erp" -ServerName "sql-erp" -DatabaseName "sql-erp-db"
         ```
 
     1. Restore the database to to the most recent backup containing the table you just dropped, using Azure PowerShell.
 
-        ``` CLI
+        ``` Powershell
         Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -Edition "Standard" -ServiceObjectiveName S2
         ```
 
@@ -161,7 +161,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
        
        (note to author, this may not display results due to the time needed for it to take effect)
 
-        ``` CLI
+        ``` Powershell
         Get-AzSqlDatabaseLongTermRetentionBackup -Location "westeurope" -ServerName "sql-erp"
         ```
 
@@ -169,7 +169,7 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
 
         (note to author, the database cannot be restored on top of the existing database, so you'll need to account for this in your steps)
 
-        ``` CLI
+        ``` Powershell
         Restore-AzSqlDatabase -FromLongTermRetentionBackup -ResourceId <Resource ID> -ServerName "sql-erp" -ResourceGroupName "rg-sql-erp" -TargetDatabaseName "RestoredDatabaseLTR" -ServiceObjectiveName S2
         ```
 

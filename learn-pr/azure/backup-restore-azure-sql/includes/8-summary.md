@@ -1,0 +1,1 @@
+In this module, you learned about Azure backups and rention policies and how to protect the data in a single Azure SQL database and recover from data loss or corruption by performing backup and restore operations
