@@ -19,7 +19,7 @@ abstract: |
 prerequisites: An Azure DevOps account
 iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
 - administrator

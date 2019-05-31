@@ -24,7 +24,7 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-security-and-compliance-in-your-build-pipeline.svg
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
 - administrator

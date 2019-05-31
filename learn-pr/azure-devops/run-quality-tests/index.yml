@@ -26,7 +26,7 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-quality-tests-when-your-application-builds.svg
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
 - administrator
