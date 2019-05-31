@@ -32,6 +32,6 @@ The following steps return the settings of your Visual Studio Code instance back
 
 ![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant-blank.png)
 
-### Log out and back in
+### Sign out and back in
 
 Once the tenant is removed from the Azure extension settings, open the command palette and select **Azure: Sign Out** and then **Azure: Sign In**.
