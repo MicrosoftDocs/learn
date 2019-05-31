@@ -19,16 +19,14 @@ abstract: |
 prerequisites: An Azure DevOps account
 iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 levels:
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+#- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
-- azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.choose-an-agile-approach.1-introduction
 - learn.azdo.choose-an-agile-approach.2-what-is-agile
