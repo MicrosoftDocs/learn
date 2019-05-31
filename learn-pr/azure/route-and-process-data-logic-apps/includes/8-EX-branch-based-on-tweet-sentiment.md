@@ -42,7 +42,7 @@ This first step is to add the control action to the app in the [Azure portal](ht
 
 ## Configure the Condition
 
-Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect-sentiment action returns a *Score*, which is a number between zero and one. If the number is greater than 0.7 we'll consider the tweet positive, otherwise it will be negative.
+Now that we have a Condition control action created, we need to specify what the condition is. Remember that the Detect-sentiment action returns a *Score*, which is a number between zero and one. If the number is greater than 0.7, we'll consider the tweet positive, otherwise it will be negative.
 
 1. In the Condition action, select the leftmost **Choose a value** field.
 
@@ -56,9 +56,9 @@ Now that we have a Condition control action created, we need to specify what the
 
 1. Select the **Save** button to save your work.
 
-
-
 ## Save positive sentiment tweets in SQL database
+
+The condition action is configured to detect if the **Score** value is greater than **0.7**; however, we haven't specified what should happen in that case. Let's now save some of the tweet information into a SQL database when the condition is true.
 
 1. In the **If true** section of the Condition action, select **Add an action**.
 
@@ -98,6 +98,7 @@ Now that we have a Condition control action created, we need to specify what the
 
 ## Email negative sentiment tweets to customer support
 
+When the **Score** value is greater than **0.7**, we add the tweet to a SQL database. Let's now take tweets that are **0.7** or less and forward them to customer support through email.
 
 > [!NOTE]
 > If you do not have an  Outlook.com email account and prefer not to create one, you can change the connectors search filter to *send an email* and select another email provider such as Gmail and Office 365 Outlook. 
@@ -132,6 +133,8 @@ Now that we have a Condition control action created, we need to specify what the
 
 ## Examine results of positive sentiment tweets
 
+The control action is now properly configured and running. Let's examine the SQL database to see our positive tweets.
+
 1. In the Azure portal left navigation bar, select **All resources** and then select **PositiveTweetDatabase** from the list of resources.
 
 1. In the left navigation bar, select **Query editor**.
@@ -147,5 +150,7 @@ Now that we have a Condition control action created, we need to specify what the
 1. Select  **Run** to run the query and list all positive tweets that have been written to the database.
 
 ## Examine results of negative sentiment tweets
+
+Finally, Let's check our email account to see if we received any messages about negative tweets.
 
 1. Sign in to the email account that you provided in the Outlook action and wait for an email notification to arrive.
