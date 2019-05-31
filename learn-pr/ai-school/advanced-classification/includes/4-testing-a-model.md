@@ -72,4 +72,4 @@ Well done! Here we covered:
 * __Overfitting__ - when a model is trained too well and learns the noise in the training set, giving poor results on the test set.
 * __Underfitting__ - when a model isn’t trained well enough and has mediocre performance on both training and test datasets.
 
-Next up we have advanced classification models - different SVM variations.
+Now that you’ve been introduced to support vector machines, let’s wrap up what you’ve learned with a knowledge check.

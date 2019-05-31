@@ -48,5 +48,5 @@ __Models__
 
 * __AI often learns iteratively__ - starting with a bad approximation and changing variables (like line-slope) until a model becomes accurate.
 * The real world is very variable, and so __we cannot expect our models to become 100% accurate__.
-  
-Up next is advanced classification models. We’ll walk you through using one of the most powerful and elegant AI models, support vector machines. Let's go!
+
+Now that you’ve had an introduction to classification, let’s wrap up everything you’ve learned with a knowledge check.

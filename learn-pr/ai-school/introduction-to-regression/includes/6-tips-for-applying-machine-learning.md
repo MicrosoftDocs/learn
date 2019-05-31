@@ -33,5 +33,5 @@ Well done! Here we covered:
 * Do not contain anomalies (unless you're trying to predict anomalies).  
 
 __Feature scaling__ - adjusting the values of your features so they are are within a similar range.
-  
-Congratulations, that's the end of the module! In the next module, we have an introduction to classification.
+
+Now that you’ve had an introduction to regression, let’s wrap up everything you’ve learned with a knowledge check.

@@ -1,8 +1,8 @@
-Support vector machines (SVMs) are one of the most elegant solutions in machine learning. They can be used for both classification and regression problems, and can be easily coded in Python and R. In this course we'll use them for classification.
+Support vector machines (SVMs) are one of the most elegant solutions in machine learning. They can be used for both classification and regression problems, and can be easily coded in Python and R. In this course, we'll use them for classification.
 
 SVMs are vital tools in biology, and many other areas of science and industry. Let's take a look at how they work, then make a model using one line of code.
 
-### Hyperplanes
+## Hyperplanes
 
 A hyperplane is a boundary that divides data points - SVMs can try to find a hyperplane that separates different kinds of data points as accurately as possible. In the example below, it has separated the dots on the bottom left (blue) from those in the top right (green) using the black line (hyperplane). Data points are classified based on which side of the black line they fall upon.
 
@@ -10,9 +10,9 @@ A hyperplane is a boundary that divides data points - SVMs can try to find a hyp
 
 This is like our logistic regression programming exercise, but the SVM tries to make the margin between the two lines as large as possible. This is known as a maximum margin SVM. This is done so the SVM is as accurate as possible when you introduce new data.
 
-### Support vectors and margins
+## Support vectors and margins
 
-The SVM calculates the hyperplanes and margins by using the data points from the different categories which are closest together.  
+The SVM calculates the hyperplanes and margins by using the data points from the different categories that are closest together.  
   
 These data points are called support vectors - this is where SVMs get their name from.
   

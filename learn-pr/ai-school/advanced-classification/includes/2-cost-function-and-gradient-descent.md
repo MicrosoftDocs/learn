@@ -1,5 +1,5 @@
-In the previous section you saw the logistic regression algorithm optimize the number of correctly classified examples. Optimization is achieved by two methods that happen behind the scenes in AI: cost function and gradient descent.
- 
+In the previous module, you saw the logistic regression algorithm optimize the number of correctly classified examples. Optimization is achieved by two methods that happen behind the scenes in AI: cost function and gradient descent.
+
 ### Cost function refresher
 
 * __Cost__ is our error metric, which we want to get as low as possible.
@@ -15,7 +15,7 @@ Gradient descent alters model predictions to decrease the error by using calculu
 ![Artboard 1](../media/Artboard_1.png)
 
 ### Optional: Further explanation
-As you can see above, gradient descent chooses a random starting point then alters the variables which guide the model's predictions, until a local minimum for cost is found. The variables at this minimum are then stored.  
+As you can see above, gradient descent chooses a random starting point then alters the variables which guide the model's predictions, until a local minimum for cost is found. The variables at this minimum are then stored.
   
 Gradient descent will then start again in a new random starting point to find a new minimum - in case the previous minimum could be improved upon.
 
