@@ -52,7 +52,7 @@ The `git pull` command fetches the latest code from the remote repository and me
 
     You see the list of files that were changed. As an optional step, you can open **azure-pipelines.yml** to verify that it contains your complete build configuration.
 
-    A Git repository where team members collaborate (such as on GitHub) is called a _remote_. Here, _origin_ specifies your repository on GitHub.
+    Recall that a Git repository where team members collaborate (such as on GitHub) is called a _remote_. Here, _origin_ specifies your repository on GitHub.
 
     Later, you'll fetch starter code from Microsoft's GitHub repository, known as _upstream_.
 

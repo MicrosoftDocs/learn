@@ -20,11 +20,36 @@ Before we start, let's check in with Mara and Andy.
 
 If you went through the previous module and have the `build-pipeline` branch locally, move to the next step.
 
-Otherwise, if you don't have the `build-pipeline` branch, run this `git checkout` command to get it from Microsoft's repository.
+Otherwise, if you don't have the `build-pipeline` branch, start by making sure your Git configuration is set up fetch code from Microsoft's repository.
 
 ```bash
-git checkout --track upstream/build-pipeline
+git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git
 ```
+
+A _remote_ is a Git repository where team members collaborate (such as on GitHub). Here, _origin_ specifies your repository on GitHub. Microsoft's GitHub repository is known here as _upstream_.
+
+Run the following `git remote` command to list your remotes.
+
+```bash
+git remote -v
+```
+
+You see that you have both fetch (download) and push (upload) access to your repository and fetch access only to Microsoft's repository.
+
+```output
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
+```
+
+Next, run these Git commands to get the starter code from Microsoft's repository.
+
+```bash
+git fetch upstream ref-build-pipeline
+git checkout -b build-pipeline ref-build-pipeline
+```
+
+These commands create a branch named `build-pipeline` based on the `ref-build-pipeline` from Microsoft's GitHub repository.
 
 ## Push your branch to GitHub
 

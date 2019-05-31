@@ -81,6 +81,45 @@ To clone the _Space Game_ web project to your computer:
     cd mslearn-tailspin-spacegame-web
     ```
 
+### Set the upstream remote
+
+A _remote_ is a Git repository where team members collaborate (such as on GitHub).
+
+Run the following `git remote` command to list your remotes.
+
+```bash
+git remote -v
+```
+
+You see that you have both fetch (download) and push (upload) access to your repository.
+
+```output
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+```
+
+Here, _origin_ specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as _upstream_.
+
+Run the following `git remote add` command to create a remote named _upstream_ which points to Microsoft's repository.
+
+```bash
+git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git
+```
+
+Run `git remote` a second time to see the changes.
+
+```bash
+git remote -v
+```
+
+You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from Microsoft's repository.
+
+```output
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
+```
+
 ### Open the project in the file explorer
 
 In Visual Studio Code, your terminal window points to the root directory of the _Space Game_ web project. Here you'll open the project from the file explorer so that you can view its structure and work with files.

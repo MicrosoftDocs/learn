@@ -45,6 +45,10 @@ Distributed version control also ensures that only working code ![Callout 6](../
 
 What's cool about Azure DevOps is that it works well with both centralized and distributed version control systems.
 
+**Andy:** What happens when more than one person changes the same file?
+
+**Mara:** Often, Git can merge multiple changes automatically. Of course, we want to always make sure the combination of changes results in working code. When Git can't automatically merge changes, it marks the conflicts directly in the files so that a human can choose what changes to accept.
+
 **Andy:** What about the problem of accessing the code when we're not in the building?
 
 **Mara:** I'm glad you asked. That's where hosting comes in.
@@ -80,7 +84,7 @@ Once you feel your code is ready to be merged into the `master` branch in the ma
  :::row:::
     :::column span="8":::
 **Step 1:**
-When you begin to work on a new feature or bug fix, the first thing you want to do is make sure you are starting with the latest stable codebase. To do this, you can synchronize your clone of the `master` branch on the server with your local `master` branch. This pulls down all of the other developers' changes that have been pushed up to the `master` branch on the server since your last synchronization.
+When you begin to work on a new feature or bug fix, the first thing you want to do is make sure you are starting with the latest stable codebase. To do this, you can synchronize your local copy of the `master` branch with the server's copy. This pulls down all of the other developers' changes that have been pushed up to the `master` branch on the server since your last synchronization.
     :::column-end:::
     :::column:::
         ![A pull of the remote master branch](../media/2-github-paths-1.png)
