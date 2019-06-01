@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.11-summary
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.summary
 title: Summary
 metadata:
   title: Summary
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/11-summary.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.8-exercise-upload-resources-with-storage-library
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-upload-resources-with-storage-library
 title: Exercise - Upload resources to be used by a Batch with the .NET storage library
 metadata:
   title: Exercise - Upload resources to be used by a Batch with the .NET storage library

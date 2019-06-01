@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.5-exercise-access-your-batch-account-using-the-dotnet-client-library
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-access-your-batch-account-using-the-dotnet-client-library
 title: Exercise - Access your Batch account using the .NET client library
 metadata:
   title: Exercise - Access your Batch account using the .NET client library

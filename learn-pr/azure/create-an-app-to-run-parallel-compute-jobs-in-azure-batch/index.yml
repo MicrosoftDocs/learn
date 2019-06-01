@@ -30,16 +30,16 @@ products:
 - dotnet
 - dotnet-core
 units:
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.1-introduction
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.2-manage-azure-batch-workloads-from-dotnet-app
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.3-exercise-setup-batch-and-storage-accounts-in-the-azure-portal
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.4-access-your-batch-account-using-the-dotnet-client-library
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.5-exercise-access-your-batch-account-using-the-dotnet-client-library
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.6-exercise-create-a-pool-of-compute-nodes-to-run-our-jobs
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.7-create-and-run-a-batch-job-using-the-dotnet-client-library
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.8-exercise-upload-resources-with-storage-library
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.9-exercise-manage-and-deploy-applications-on-compute-nodes
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.10-monitor-and-log-job-progress
-- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.11-summary
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.introduction
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.manage-azure-batch-workloads-from-dotnet-app
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-setup-batch-and-storage-accounts-in-the-azure-portal
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.access-your-batch-account-using-the-dotnet-client-library
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-access-your-batch-account-using-the-dotnet-client-library
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-create-a-pool-of-compute-nodes-to-run-our-jobs
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.create-and-run-a-batch-job-using-the-dotnet-client-library
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-upload-resources-with-storage-library
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-manage-and-deploy-applications-on-compute-nodes
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.monitor-and-log-job-progress
+- learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.summary
 badge:
   uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.badge
