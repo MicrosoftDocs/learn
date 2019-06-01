@@ -1,4 +1,4 @@
-To run a batch job, we need to add a *pool* to our Batch account. As mentioned earlier, a pool contains compute nodes, which are the engines that run your Batch job. You specify the number, size, and operating system of nodes at creation time. In this exercise, you'll modify the console app you made in the previous exercise to add a pool to your Batch account.
+To run a batch job, we need to add a *pool* to our Batch account. A pool contains compute nodes, which are the engines that run your Batch job. You specify the number, size, and operating system of nodes at creation time. In this exercise, you'll modify the console app you made in the previous exercise to add a pool to your Batch account.
 
 Your company wants to control the costs of the app, and have asked you to use a fixed number of nodes.
 

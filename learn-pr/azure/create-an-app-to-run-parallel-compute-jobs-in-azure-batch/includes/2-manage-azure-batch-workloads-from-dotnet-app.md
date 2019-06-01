@@ -10,12 +10,12 @@ Azure Batch is used in combination with Azure Storage. Azure Storage provides th
 
 The components of Azure Batch are:
 
-- **Azure Batch account**: A container that holds the following resources needed for our Azure Batch solution:
-    - **Application Package**: Used to add applications that can be used by tasks in a Batch. An Azure Batch account can contain up to 20 application packages. A request can be made to increase this limit if your company requires more.
-    - **Pool**: Contains compute nodes, which are the engines that run your Batch job. You specify the number, size, and operating system of nodes at creation time. An Azure Batch account can contain many pools.
-        - **Node**: Each node can be assigned a number of tasks to run, the tasks are allocated and managed by Azure Batch. Nodes are associated with a specific pool.
-    - **Job**: Jobs manage collections of tasks. A job is associated with a specific pool. An Azure Batch account can have many jobs.
-        - **Task**: Tasks run applications. These can be contained in an application package, or in an Azure Storage container. Tasks process input files, and on completion can write to output containers.
+**Azure Batch account**: A container that holds the following resources needed for our Azure Batch solution:
+- **Application Package**: Used to add applications that can be used by tasks in a Batch. An Azure Batch account can contain up to 20 application packages. A request can be made to increase this limit if your company requires more.
+- **Pool**: Contains compute nodes, which are the engines that run your Batch job. You specify the number, size, and operating system of nodes at creation time. An Azure Batch account can contain many pools.
+- **Node**: Each node can be assigned a number of tasks to run, the tasks are allocated and managed by Azure Batch. Nodes are associated with a specific pool.
+- **Job**: Jobs manage collections of tasks. A job is associated with a specific pool. An Azure Batch account can have many jobs.
+- **Task**: Tasks run applications. These can be contained in an application package, or in an Azure Storage container. Tasks process input files, and on completion can write to output containers.
 
 Before you can start to manage the Azure Batch components from within a .NET application, you have to create the Azure Batch account and Azure Storage account. You can use Azure portal, Powershell, or Azure CLI to create these accounts.
 

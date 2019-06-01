@@ -12,7 +12,7 @@ In this unit, you'll create an Azure Batch and Azure Storage account using the A
 
 1. In the **Search the Marketplace** search box type **storage**, then select **Storage account**.
 
-1. Select the default resource group
+1. Select an existing resource group or create a new one.
 
 1. Select **Create** to open the **Create storage account** form, as shown in the following screenshot.
 

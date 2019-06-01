@@ -6,7 +6,7 @@ In the exercises, you've seen how applications like  **FFmpeg** are added as app
 
 ## Clean up
 
-When working in your own subscription, it is best practice at the end of a module to decide whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or just delete the resource group to get rid of the entire set.
+When working in your own subscription, it is best practice at the end of a module to decide whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or delete the resource group that holds the resources to delete the entire set.
 
 ## Learn more
 
