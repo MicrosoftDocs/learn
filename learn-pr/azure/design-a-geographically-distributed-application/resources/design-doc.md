@@ -52,7 +52,7 @@ Identify the subtasks of *Design a geographically distributed application*
 
     A shipping company is building a new portal on Azure for customers to create, manage, and track shipments. This portal is a critical part of their business, and needs to be highly available and tolerant of faults across geographic regions. They need an architecture that will provide these capabilities and identify the services to provide the features they need.
 
-1. **Understand geographically distributed architectures**
+1. **Design a geographically distributed architecture**
 
     List the content that will enable the learner to *Understand geographically distributed architectures*:
 
@@ -83,7 +83,7 @@ Identify the subtasks of *Design a geographically distributed application*
     
     What types of questions will test *Understand geographically distributed architectures*?
     
-1. **Overview of a geographically distributed networking architecture**
+1. **Design a geographically distributed networking architecture**
 
     List the content that will enable the learner to *Design networking architecture for a geographically distributed application*:
 
@@ -105,7 +105,7 @@ Identify the subtasks of *Design a geographically distributed application*
     
     What types of questions will test *Design a geographically distributed network architecture*?
 
-1. **Overview of a geographically distributed application architecture**
+1. **Design a geographically distributed application architecture**
 
     List the content that will enable the learner to *Design the application architecture for a geographically distributed application*:
 
@@ -118,7 +118,7 @@ Identify the subtasks of *Design a geographically distributed application*
     
     What types of questions will test *Design a geographically distributed application architecture*?
 
-1. **Overview of a geographically distributed data architecture**
+1. **Design a geographically distributed data architecture**
 
     List the content that will enable the learner to *Design the data architecture for a geographically distributed application*:
 
