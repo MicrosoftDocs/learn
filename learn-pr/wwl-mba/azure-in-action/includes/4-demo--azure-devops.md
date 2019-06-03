@@ -36,8 +36,13 @@ First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Ma
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2V0I8]
 
->[!NOTE]
->With the integration between Azure DevOps and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+:::column span="1":::
+*With the integration between Azure DevOps and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.*
+:::column-end:::
+:::row-end:::
+---
 
 Now, let's learn how to implement a pipeline for any application.
 
@@ -63,8 +68,13 @@ Follow along as the Contoso Air DevOps Engineer sets up a CI pipeline so that co
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRN]
 
->[!NOTE]
->Azure Pipelines allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+:::column span="1":::
+*Azure Pipelines allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.*
+:::column-end:::
+:::row-end:::
+---
 
 Let’s continue our demo to learn how to detect application issues with Application Insights.
 
@@ -90,8 +100,13 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRL]
 
->[!NOTE]
->Application Insights allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because Application Insights captures errors in real time so your team can identify the root cause and make fixes quickly.
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+:::column span="1":::
+*Application Insights allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because Application Insights captures errors in real time so your team can identify the root cause and make fixes quickly.*
+:::column-end:::
+:::row-end:::
+---
 
 Next, we’ll continue our solution demo to learn more about Azure Boards.
 
@@ -117,8 +132,13 @@ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track proje
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
->[!NOTE]
->Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+:::column span="1":::
+*Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
+:::column-end:::
+:::row-end:::
+---
 
 ## Conclusion
 
