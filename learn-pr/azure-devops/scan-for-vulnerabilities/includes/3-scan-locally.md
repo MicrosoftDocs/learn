@@ -83,7 +83,7 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You'll the
       /o:"$ORGANIZATION"
     ```
 
-    TODO: PowerShell equivalent.
+    **TODO: PowerShell equivalent.**
 
     This command uses the information you stored in variables and other information to help the scanner know where to store the results.
 
@@ -152,7 +152,7 @@ Here you'll see the results from the SonarCloud portal.
 
     In practice, your team would assess each bug and prioritize whether to fix it. This bug is categorized as **Minor**, which  you can use to rank its importance among other reported issues.
 
-1. As an optional step, return to the ***Overview** tab and explore the results from other categories.
+1. As an optional step, return to the **Overview** tab and explore the results from other categories.
 
     For example, from the **Security** section, you can examine reported vulnerabilities and security hotspots.
 
