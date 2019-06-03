@@ -1,0 +1,15 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.5-ready
+title: Ready
+metadata:
+  title: Ready
+  description: Ready
+  ms.date: 5/27/2019
+  author: ariciroz
+  ms.author: a-bidrag
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-ready.md)] 

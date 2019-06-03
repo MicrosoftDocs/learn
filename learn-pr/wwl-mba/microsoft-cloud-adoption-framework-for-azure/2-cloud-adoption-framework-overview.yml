@@ -1,0 +1,15 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.2-cloud-adoption-framework-overview
+title: Cloud Adoption Framework overview
+metadata:
+  title: Cloud Adoption Framework overview
+  description: Cloud Adoption Framework overview
+  ms.date: 5/27/2019
+  author: ariciroz
+  ms.author: a-bidrag
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-cloud-adoption-framework-overview.md)] 
