@@ -114,6 +114,7 @@ Before beginning the migration of Contoso's support application, Victor creates 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM6]
 
 | | |
+|  |  |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Use the Azure Migrate solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.*|
 |
 
