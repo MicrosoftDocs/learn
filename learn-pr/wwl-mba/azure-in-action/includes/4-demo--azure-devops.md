@@ -12,19 +12,58 @@ We will take on the role of helping Contoso Air move to a DevOps practice. Letâ€
 
 ### Visual roadmap
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this brief animation introducing the segments of the Azure DevOps demo.|
+:::row:::
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2VqHn]
+![DevOps icon](../media/azure-devops.png)
 
-Through this demo, you will see how Azure DevOps enables you to:
+:::column span="1":::
 
-- set up automated CI/CD pipelines with Azure Pipelines
 
-- handle issues with Application Insights
+### Azure DevOps 
 
-- manage GitHub projects with Azure Boards
+Automation and integration benefits
+
+:::column-end:::
+:::row-end:::
+
+:::row:::
+
+![Azure Pipelines icon](../media/azure-pipelines.png)
+
+:::column span="1":::
+
+### Azure Pipelines
+
+Set up automated CI/CD pipelines
+
+:::column-end:::
+:::row-end:::
+
+:::row:::
+
+![Application Insights icon](../media/application-insights.png)
+
+:::column span="1":::
+
+### Application Insights
+
+Assess app performance
+
+:::column-end:::
+:::row-end:::
+
+:::row:::
+
+![Azure Boards icon](../media/azure-boards.png)
+
+:::column span="1":::
+
+### Azure Boards
+
+Manage GitHub projects
+
+:::column-end:::
+:::row-end:::
 
 ## Automation and integration benefits of Azure DevOps
 
@@ -132,7 +171,7 @@ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track proje
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
-*Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
+**Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.**
 
 ---
 

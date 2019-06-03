@@ -14,7 +14,7 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 
 ### Migrate
 
-Using the publishing tools in Visual Studio
+...using the publishing tools in Visual Studio
 
 :::column-end:::
 :::row-end:::
@@ -27,7 +27,7 @@ Using the publishing tools in Visual Studio
 
 ### Explore
 
-The benefits of Azure App Services
+...the benefits of Azure App Services
 
 :::column-end:::
 :::row-end:::
@@ -41,7 +41,7 @@ The benefits of Azure App Services
 
 ### Modernize
 
-Without touching the code using Azure Logic Apps
+...without touching the code using Azure Logic Apps
 
 :::column-end:::
 :::row-end:::
@@ -122,3 +122,5 @@ Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the
 :::column-end:::
 :::row-end:::
 ---
+
+Next, we'll see demo that showcases the benefits of Azure Dev Ops.
