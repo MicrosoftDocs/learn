@@ -128,7 +128,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
 
-
+|||
 | ---: | :--- |
 | ![Icon of lightbulb](../media/lightbulb.png)| *Deploying the Azure Migrate Collector will not only help you evaluate your physical on-premises servers but will also work with vSphere to assess virtual servers.*|
 |
