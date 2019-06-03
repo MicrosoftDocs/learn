@@ -132,12 +132,8 @@ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track proje
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
-:::row:::
-![Icon of lightbulb](../media/lightbulb.png)
-:::column span="1":::
 *Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
-:::column-end:::
-:::row-end:::
+
 ---
 
 ## Conclusion
@@ -154,8 +150,10 @@ The key takeaways of the demo are:
 
 - Azure offers a practical approach to automation at every step of the DevOps lifecycle that enables companies to focus their efforts on creating business value.
 
-*Think about how you can engage an end-user with in-depth conversation about the automation and integration benefits of Azure DevOps.*
----
+| | |
+| ---: | :--- |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Think about how you can engage an end-user with in-depth conversation about the automation and integration benefits of Azure DevOps.*|
+|
 
 Now that you've experienced Azure in action, let's complete the knowledge check.
 
