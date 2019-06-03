@@ -171,8 +171,12 @@ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track proje
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
-**Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.**
-
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+:::column span="1":::
+*Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
+:::column-end:::
+:::row-end:::
 ---
 
 ## Conclusion

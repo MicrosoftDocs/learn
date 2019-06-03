@@ -129,6 +129,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
 
+
 *Deploying the Azure Migrate Collector will not only help you evaluate your physical on-premises servers but will also work with vSphere to assess virtual servers.*
 ---
 
@@ -141,6 +142,7 @@ In the next video, Victor uses **Azure Migrate** to visualize dependencies and g
 | ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Azure Migrate uses the data collected to make recommendations for migration.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PQUq]
+
 
 **Azure Migrate** saves time and money by pulling data from the collector appliance and telling you exactly what servers are ready to migrate, and what costs they would incur running in the cloud.  Additionally, the **Azure Hybrid Use Benefit** can lower costs by up to 1/5 by leveraging existing on-premises licenses (see more detail at the URL provided on the resources page).
 ---
