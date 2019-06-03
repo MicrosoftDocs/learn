@@ -143,7 +143,7 @@ Click **Get your results**.
 
 After completing the assessment, Mara gets back a graph.
 
-![The team's progress for each of the Self-Assessment categories](../media-draft/4-assessment-results.png)
+![The team's progress for each of the Self-Assessment categories](../media/4-assessment-results.png)
 
 The graph summarizes the team's progress for each of the Self-Assessment categories. Each category is a point. The further the point is from the center, the more mature the team is for that category.
 

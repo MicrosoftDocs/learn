@@ -27,7 +27,7 @@ Over coffee, Mara listens and tries to take notes. There's a lot of information 
 When she looks at her pile of notes, Mara knows she needs to organize all this information. Organizing it will make it easier to evaluate the processes. She's convinced a DevOps approach will solve many of the team's problems, but she needs a way to present her case to the team.
 :::column-end:::
 :::column:::
-![](../media-draft/3-taking-notes.jpg)
+![](../media/3-taking-notes.jpg)
 :::column-end:::
 :::row-end:::
 

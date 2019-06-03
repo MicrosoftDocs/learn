@@ -9,15 +9,15 @@ The _Space Game_ web site is a .NET Core app written in C# that's deployed to Li
 <!-- TODO: Host this under our team account. -->
 <!-- TODO: Throw a fake DNS name in front of this to hide the fact we're hosting it on Azure - the fictitious team isn't there yet. -->
 
-![The Space Game web site](../media-draft/2-space-game-top.png)
+![The Space Game web site](../media/2-space-game-top.png)
 
 And here's what the leaderboard looks like.
 
-![The Space Game leaderboard](../media-draft/2-space-game-leaderboard.png)
+![The Space Game leaderboard](../media/2-space-game-leaderboard.png)
 
 You can filter the leaderboard by mode or by game map. You can also click on a player name to see their profile and game achievements.
 
-![The Space Game web site](../media-draft/2-player-profile.png)
+![The Space Game web site](../media/2-player-profile.png)
 
 > [!NOTE]
 > Although the game and the web site aren't yet finished, you can [check out the web site now](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) to get a sense of how it works.

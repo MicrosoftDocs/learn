@@ -48,7 +48,7 @@ When thinking about automated testing, it's common to separate tests into layers
 
 ![The test pyramid showing the unit and UI layers](../media/2-test-pyramid.png)
 
-Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media-draft/callout-01.png) of your software &ndash; such as functions, classes, and methods &ndash; and progressively less effort as features are combined, such as at the user interface (UI) layer ![Callout 2](../../shared/media-draft/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, then tests at the higher levels need only verify that multiple components work together to get the expected result.
+Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media/callout-01.png) of your software &ndash; such as functions, classes, and methods &ndash; and progressively less effort as features are combined, such as at the user interface (UI) layer ![Callout 2](../../shared/media/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, then tests at the higher levels need only verify that multiple components work together to get the expected result.
 
 ### When should I write tests?
 
