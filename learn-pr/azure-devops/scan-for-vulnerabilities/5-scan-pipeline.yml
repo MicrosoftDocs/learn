@@ -3,7 +3,7 @@ uid: learn.azdo.scan-for-vulnerabilities.5-scan-pipeline
 title: Exercise - Scan from the build pipeline using SonarCloud
 metadata:
   title: Exercise - Scan from the build pipeline using SonarCloud
-  description: TBD.
+  description: Add tasks to your Azure Pipelines configuration to run the SonarCloud scanner during the build.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
