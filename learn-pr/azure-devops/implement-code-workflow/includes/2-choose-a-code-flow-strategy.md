@@ -28,7 +28,6 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 ## What is Git and distributed version control?
 
-<!-- TODO: Might be nice to draw out distributed vs. centralized on the whiteboard and add a screen cap here. -->
 ![A hand-drawn illustration of centralized versus distributed source control](../media/2-whiteboard-centralized-vs-distributed-drawing.png)
 
 **Mara:** The drawing on the left is _centralized version control_ like what we are using now. We have a central version of the code base ![Callout 1](../../shared/media-draft/callout-01.png) in Team Foundation Version Control (TFVC) that everyone uses. We each check out the files we need to change and then merge them back into the master repository when we're finished with them. We all need access to the server in order to do that, so we are limited to working on the project only when we can access the server.

@@ -183,10 +183,6 @@ Mara notices that each failed test produces a result that's off by one. For exam
 
 Mara and Andy look at the source code for the method being tested, ``IDocumentDBRepository`1.GetItemsAsync``. They see this.
 
-<!-- TODO: Reference the upstream repo instead and code highlight the `pageSize - 1` line. 
-https://review.docs.microsoft.com//help/contribute/code-in-docs?branch=master#in-repo-snippet-references
--->
-
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
     Expression<Func<T, bool>> queryPredicate,

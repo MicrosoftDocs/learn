@@ -26,7 +26,6 @@ Here's how you can take the assessment with her.
 > [!NOTE]
 > For now, choose the same answers as Mara for each section. You'll have the opportunity to go through the assessment a second time, so think about what selections you would make for your team.
 
-
 ### Process and Agility
 
 The team follows a waterfall approach. Work can feel ad-hoc, and the deployment process is invisible to developers once they hand off new features to QA.

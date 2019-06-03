@@ -180,8 +180,6 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
 
 Here you'll see the tests run in the pipeline and then visualize the results from Azure Test Plans. Azure Test Plans provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests and collect feedback from stakeholders.
 
-<!-- TODO: We really haven't talked about Azure Test Plans yet. Add it to the knowledge unit? -->
-
 1. From Azure DevOps, trace the build through each of the steps.
 
     You see that the **Run unit tests - Release** task runs the unit tests just as you did manually from the command line.

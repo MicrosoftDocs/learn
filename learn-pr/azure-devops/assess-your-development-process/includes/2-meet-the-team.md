@@ -26,8 +26,6 @@ Here are your team members.
 
 <!-- TODO: We need final graphics for the team members. -->
 
-<!-- TODO: Fix this layout to make it more pleasing. -->
-
 [!include[](../../shared/includes/meet-andy-row.md)]
 
 [!include[](../../shared/includes/meet-amita-row.md)]

@@ -51,8 +51,6 @@ Our goal is to give our customers games they'll love. We do that by working toge
 
 ## The DevOps handout
 
-<!-- TODO: Replace reference to DORA with a more appropriate research report. -->
-
 Here's the handout that Mara prepared.
 
 DevOps Research and Assessment LLC, or DORA (now a part of Google Cloud), published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today.
