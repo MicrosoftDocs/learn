@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-geographically-distributed-application.5-geo-distributed-data
+metadata:
+  title: Design a geographically distributed data architecture
+  description: Design a geographically distributed data architecture
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Design a geographically distributed data architecture
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-geo-distributed-data.md)]
