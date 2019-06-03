@@ -2,7 +2,7 @@
 uid: learn.authenticate-apps-with-managed-identities.2-service-principals
 metadata:
   title: Authentication with service principals in Azure AD
-  description: TODO
+  description: Authentication with service principals in Azure AD
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -13,3 +13,65 @@ title: Authentication with service principals in Azure AD
 durationInMinutes: 10
 content: |
   [!include[](includes/2-service-principals.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is a key thing to remember when creating a service principal?'
+    choices:
+    - content: To ensure the sign-on URL for the application is valid 
+      isCorrect: false
+      explanation: The sign-on URL, although required in most instances, does not have to be a valid URL.
+    - content: To copy the value of the authentication key 
+      isCorrect: true
+      explanation: The authentication key value is only displayed once at the time of creation.
+    - content: To ensure the application name follows best practice naming conventions.
+      isCorrect: false
+      explanation: It is only a display name for the application, best practice is recommended not a necessity.
+    - content: To create the service principal programmatically
+      isCorrect: false
+      explanation: There are several pathways to create service principals which includes the portal.
+
+  - content: 'Which role needs to be removed in order for a service principals permissions to be restricted?'
+    choices:
+    - content: The Security Admin role
+      isCorrect: false
+      explanation: The security admin role grants permissions to elements within Azure Security Centre.
+    - content: The Reader role
+      isCorrect: false
+      explanation: It grants read only permissions to Azure resources.
+    - content: The Contributor role
+      isCorrect: true
+      explanation: Its the default role for a service principal with full permissions to read and write.
+    - content: The Owner role
+      isCorrect: false
+      explanation: The owner role has full unrestricted permissions but has to be user assigned.
+
+  - content: 'Which three items are needed for a custom app to authenticate with an Azure AD application?'
+    choices:
+    - content: Tenant ID, Application ID and Object ID.  
+      isCorrect: false
+      explanation: The Object ID is the identifier for the application object rather than the application itself.
+    - content: Object ID, Application ID and authentication key.  
+      isCorrect: false
+      explanation: Specifying a tenant is a key component of an authentication request.
+    - content: Tenant ID, public key and authentication key. 
+      isCorrect: false
+      explanation: Both a public key or an authentication key can be used but both are not required.
+    - content: Tenant ID, Application ID and authentication key. 
+      isCorrect: true
+      explanation: The tenant id, application id and authentication key are required for successful authorization request.
+
+  - content: 'What service is called when your application is passing a token to Azure?'
+    choices:
+    - content: Azure Active Directory
+      isCorrect: false
+      explanation: Authentication is completed using Azure Active Directory (AD) but the token is not passed to Azure AD.
+    - content: Azure Resource Manager
+      isCorrect: true
+      explanation: Azure Resource manager is the framework used to connect or authenticate to Azure resources from a custom application.
+    - content: Azure REST API 
+      isCorrect: false
+      explanation: The REST API can be used for such a request but it is not the service called.
+    - content: The service principal application 
+      isCorrect: false
+      explanation: The service principal application is used to govern permissions and access.

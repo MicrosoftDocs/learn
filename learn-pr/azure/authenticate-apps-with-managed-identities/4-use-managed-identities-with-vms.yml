@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.authenticate-apps-with-managed-identities.4-user-managed-identities-with-vms
+uid: learn.authenticate-apps-with-managed-identities.4-use-managed-identities-with-vms
 metadata:
   title: Using managed identities with Azure virtual machines
   description: TODO
@@ -12,4 +12,4 @@ metadata:
 title: Using managed identities with Azure virtual machines
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-user-managed-identities-with-vms.md)]
+  [!include[](includes/4-use-managed-identities-with-vms.md)]

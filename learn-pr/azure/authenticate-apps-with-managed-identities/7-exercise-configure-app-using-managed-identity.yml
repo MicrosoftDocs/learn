@@ -2,7 +2,7 @@
 uid: learn.authenticate-apps-with-managed-identities.7-exercise-configure-app-using-managed-identity
 metadata:
   title: Exercise - Configure a custom application in .NET using managed identity
-  description: TODO
+  description: Exercise - Configure a custom application in .NET using managed identity
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

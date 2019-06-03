@@ -2,7 +2,7 @@
 uid: learn.authenticate-apps-with-managed-identities.6-build-applications-using-managed-identities
 metadata:
   title: Build applications using Azure AD managed identities
-  description: TODO
+  description: Build applications using Azure AD managed identities
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
