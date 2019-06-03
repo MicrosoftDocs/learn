@@ -4,7 +4,7 @@ When an application is outgrowing the local infrastructure on which it is hosted
 
 Tailwind Traders is a local retail company. They are in the process of expanding their business worldwide and, in order to do that, they need to scale their applications with robust solutions that allow them to reach more customers without worrying about their application performance.
 
-The process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic Apps** has been separated into three segments as illustrated by the following animation:
+The process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic Apps** has been separated into three segments as illustrated by the following table:
 
 :::row:::
 
@@ -64,9 +64,10 @@ David Sanchez, Senior Product Marketing Manager for Azure Application Developmen
 :::row-end:::
 ---
 
+In the next video, the Tailwind Traders Rewards app is migrated to **Azure App Service** using the publishing tools in Visual Studio.
+
 ## Migrate
 
-The Tailwind Traders Rewards app is migrated to **Azure App Service** using the publishing tools in Visual Studio.
 
 |||
 | :--- | :--- |
@@ -82,9 +83,9 @@ The Tailwind Traders Rewards app is migrated to **Azure App Service** using the 
 :::row-end:::
 ---
 
-## Explore
+In the next video, we’ll take a closer look at the **Azure App Service** benefits.
 
-Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the cloud, where the benefits of hosting on a modern managed platform are immediately available.
+## Explore
 
 |||
 | :--- | :--- |
@@ -105,9 +106,9 @@ Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the
 :::row-end:::
 ---
 
-## Modernize
+In the next video, we’ll modernize the application with **Azure Logic Apps**.
 
-**Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
+## Modernize
 
 |||
 | :--- | :--- |
