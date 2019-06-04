@@ -34,7 +34,6 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 
 :::row:::
 
-
 ![Azure Logic Apps icon](../media/azure-logic-apps.png)
 
 :::column span="1":::
@@ -106,13 +105,13 @@ In the next video, we’ll take a closer look at the **Azure App Service** benef
 :::row-end:::
 ---
 
-In the next video, we’ll modernize the application with **Azure Logic Apps**.
+In the next two videos, we’ll modernize the application with **Azure Logic Apps**.
 
-## Modernize
+## Modernize Part 1
 
 |||
 | :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Tailwind Traders can add automation to their Rewards application without touching the code.|
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Tailwind Traders can create an Azure Logic App to add automation to their Rewards application without touching the code.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
 
@@ -120,6 +119,24 @@ In the next video, we’ll modernize the application with **Azure Logic Apps**.
 ![Icon of lightbulb](../media/lightbulb.png)
 :::column span="1":::
 *Azure Logic Apps makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.*
+:::column-end:::
+:::row-end:::
+---
+
+In the next video, we'll finish creating the Logic App and test both conditions.
+
+## Modernize Part 2
+
+|||
+| :--- | :--- |
+| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see Azure Logic Apps in action.|
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
+
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+:::column span="1":::
+*Azure Logic Apps simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.*
 :::column-end:::
 :::row-end:::
 ---

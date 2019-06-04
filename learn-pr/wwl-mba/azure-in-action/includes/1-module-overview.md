@@ -5,7 +5,7 @@ The demonstrations in this module show you the ease with which you can adopt Azu
 A key time to consider migration and modernization to Azure is when your business is on the verge of an expansion or upgrade. For instance, maybe your server hardware is reaching the end of its lifecycle, or you need to add capacity to your data center. These can be opportune moments to consider the cloud as part of your new or upgraded infrastructure.
 
 > [!NOTE]
-> Extended support ends for workloads on Windows Server 2008/2008 R2 on January 14, 2020 and for SQL Server 2008/2008 R2 on July 9, 2019 , making this a good time to evaluate new options for innovation and modernization with cloud technologies.
+> Extended support ends for Windows Server 2008/2008 R2 on January 14, 2020 and for SQL Server 2008/2008 R2 on July 9, 2019, making this a good time to evaluate new options for innovation and modernization with cloud technologies.
 
 The demos in this module provide an opportunity to see and show Azure in action.
 

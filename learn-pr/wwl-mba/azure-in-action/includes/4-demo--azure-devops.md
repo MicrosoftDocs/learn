@@ -19,7 +19,7 @@ We will take on the role of helping Contoso Air move to a DevOps practice. Letâ€
 :::column span="1":::
 
 
-### Azure DevOps 
+### Azure DevOps
 
 Automation and integration benefits
 

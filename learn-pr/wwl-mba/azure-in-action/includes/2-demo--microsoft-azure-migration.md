@@ -192,7 +192,7 @@ In the next video, Victor will migrate Contoso's on-premises application servers
 :::row-end:::
 ---
 
-In the next video, Victor completes a the final steps to bring the migrated systems to full functionality in Azure.
+In the next video, Victor completes the final steps to bring the migrated systems to full functionality in Azure.
 
 ## Post-migration
 
