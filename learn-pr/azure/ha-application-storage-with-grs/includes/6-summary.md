@@ -1,7 +1,5 @@
-In this module you've learned about RA-GRS storage, and how to create an application for high availability. You've also learned about  features available, and what to take into consideration when configuring and deploying an application for high availability. In particular, you saw how to use the Circuit Breaker pattern to handle situations where connection can occur.
-
-## Cleanup
-
-Make sure that you have removed the HTTPS inspection certificate for Fiddler.
+In this module you've learned about RA-GRS storage, and how to create an application that uses the high availability that RA-GRS storage can provide. You've also learned about considerations for configuring and deploying an application for high availability. In particular, you saw how to use the Circuit Breaker pattern to handle situations where connection failure can occur.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
+
+Make sure you've removed the HTTPS inspection certificate for Fiddler.
