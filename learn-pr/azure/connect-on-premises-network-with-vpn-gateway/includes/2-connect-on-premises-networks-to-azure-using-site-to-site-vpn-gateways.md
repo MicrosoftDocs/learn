@@ -18,7 +18,7 @@ When you deploy a VPN gateway, you specify the VPN type: either policy-based or 
 
 ### Policy-based VPNs
 
-You typically use policy-based VPNs on firewall devices that are used for packet filtering. This type of device interrogates every data packet against a set of criteria and then accepts or drops the packet, depending on the type of filter.  When you deploy the VPN, you're adding IPSec tunnel encryption and decryption to the packet filtering and processing engine. Key features of policy-based VPNs include:
+You typically use policy-based VPNs on firewall devices that are used for packet filtering. This type of device evaluates every data packet against a set of criteria and then accepts or drops the packet, depending on the type of filter.  When you deploy the VPN, you're adding IPSec tunnel encryption and decryption to the packet filtering and processing engine. Key features of policy-based VPNs include:
 
 - Support for IKEv1 only.
 - Use of *static routing*, where combinations of address prefixes from both networks control how traffic is encrypted and decrypted through the IPSec tunnel. The source and destination of the tunneled networks are declared in the policy and don't need to be declared in routing tables.
