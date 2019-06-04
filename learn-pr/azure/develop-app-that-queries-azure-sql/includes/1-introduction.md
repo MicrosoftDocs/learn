@@ -1,0 +1,17 @@
+Azure SQL Database is a service that enables you to create a relational database in the cloud. It provides a high degree of compatibility with Microsoft SQL Server. You can define tables, import, update, delete, and query data. It is also a highly scalable service, capable of supporting many thousands of concurrent requests.
+
+Imagine that you work as a developer for an educational institution. The institution is creating a web application that academic advisors can use to discuss courses and plans of study with students. The development team would like to use Azure SQL Database to store their data, which is currently held as comma-delimited data in text files. They're planning to create a .NET Core app for the advisors to use initially. They need to know how to create and manipulate an Azure SQL Database, and how to connect an ASP.NET application to an Azure SQL Database to query data.
+
+In this module, you'll learn how to create a database using the Azure SQL Database service. You'll see how to import and query data held in a database. Finally, you'll learn how to build a web application that can retrieve and display data held in a database.
+
+## Learning objectives
+
+In this module, you will:
+
+- Create, configure, and populate an Azure SQL Database
+- Develop an ASP.NET application that queries an Azure SQL Database
+
+## Prerequisites
+
+- Basic familiarity with relational databases
+- Basic knowledge of C#
