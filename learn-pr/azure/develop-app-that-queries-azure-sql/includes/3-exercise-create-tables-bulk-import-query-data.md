@@ -47,6 +47,63 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
 
 ## Create the tables
 
+1. In the left-hand pane of the Azure portal, click **SQL databases**
+
+1. On the **SQL databases** page, click ***\<your-database-name\>***
+
+1. On the ***\<your-database-name\>*** page, under **Overview**, click **Query editor**.
+
+    ![Screenshot of the database page in the Azure portal highlighting the Query editor option](../media/2-query-editor-annotated.png)
+
+1. On the ***\<your-database-name\>* - Query editor** page, enter the following details, and then click **OK** to connect to database service:
+
+    | Property  | Value  |
+    |---|---|
+    | Authorization type | SQL server authentication |
+    | Login | azuresql |
+    | Password | Pa55w.rd |
+
+1. In the **Query 1** pane, enter the following SQL statement, and then click **Run**. This statement creates a new table for holding course information. Verify that the statement runs without any errors:
+
+    ```SQL
+    CREATE TABLE Courses
+    (
+        CourseID INT NOT NULL PRIMARY KEY,
+        CourseName VARCHAR(50) NOT NULL
+    )
+    ```
+
+    ![Screenshot of the Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/2-create-table-courses-annotated.png)
+
+1. Overwrite the existing statement with the following statement that creates a table for holding modules. Click **Run** and verify that the statement runs without any errors. A student taking a course has to complete a number of modules.
+
+    ```SQL
+    CREATE TABLE Modules
+    (
+        ModuleCode VARCHAR(5) NOT NULL PRIMARY KEY,
+        ModuleTitle VARCHAR(50) NOT NULL
+    )
+    ```
+
+1. Change the statement to create another table named **StudyPlans**, and then click **Run**. This table maps courses to modules; it indicates which modules a student has to pass to complete a course successfully. The **ModuleSequence** column specifies the order in which the student should take each module. For example, the student should take module CS101, *Introduction to Computer Science*, before attempting module CS102, *Java Programming*.
+
+    ```SQL
+    CREATE TABLE StudyPlans
+    (
+        CourseID INT NOT NULL,
+        ModuleCode VARCHAR(5) NOT NULL,
+        ModuleSequence VARCHAR(50) NOT NULL,
+        PRIMARY KEY(CourseID, ModuleCode)
+    )
+    ```
+
+1. In the database window, click the **Refresh** button in the toolbar. Then expand **Tables**, and expand each table in turn. You should see the three tables, **dbo.Courses**, **dbo.Modules**, and **dbo.StudyPlans**, together with the columns and primary key for each table.
+
+    > [NOTE!]
+    > *dbo* stands for *database owner*, and is the default schema in the database. All three tables were created in this schema.
+
+    ![Screenshot of the database window in the Azure portal, showing the tables and columns](../media/2-tables-and-columns-annotated.png)
+
 ## Import the data
 
 ## Query the data
