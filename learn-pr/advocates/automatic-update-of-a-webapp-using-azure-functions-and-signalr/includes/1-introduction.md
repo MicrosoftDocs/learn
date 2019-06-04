@@ -8,7 +8,7 @@ Your objective is to update the app to implement automatic updates, but ensure c
 In this module, you will:
 
 - Implement a function in Azure Functions that runs only when data changes in an Azure Cosmos DB.
-- Implement a function in Azure Functions to broadcast changes to connected clients using SignalR.
+- Implement a function in Azure Functions to broadcast changes to connected clients using SignalR Service.
 - Update the client web application to respond to SignalR messages.
 
 ## Prerequisites
