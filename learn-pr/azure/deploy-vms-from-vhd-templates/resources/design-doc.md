@@ -51,7 +51,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
 
     An organization is building out a new environment on Azure that uses virtual machines. They would like to have a customized image with their organizational standards included and need a method to store and create virtual machines from these images.
 
-1. Features of Azure Virtual Hard Disks (VHD)
+1. **Features of Azure Virtual Hard Disks (VHD)**
 
     In this unit, you will explore the features of Azure Virtual Hard Disks. By the end of this unit, you will be able to:
 
@@ -89,7 +89,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
       - If you wanted to mass use a machine image for mass deploying new identical VM's would you select a Generalized or Specialized virtual disk? 
 
 
-1. How to Generalize a Windows Server or Linux VM and create an image of a VM
+1. **How to Generalize a Windows Server or Linux VM and create an image of a VM**
 
     In this unit, you will learn the approaches for generalizing a Windows Server or Linux VM. By the end of this unit, you will be able to:
 
@@ -121,7 +121,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
         - Using PowerShell [Link](https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource#create-an-image-of-a-vm-using-powershell)
         - From a snapshot created,  this gives you the ability to failback as you still have the original VHD. 
 
-1. Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.
+1. **Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.**
 
     You need to take an existing VM and turn it into a reusable custom image that you can use to create new VM instances. To complete the example in this tutorial, you must have an existing virtual machine. If needed, this [script](https://docs.microsoft.com/azure/virtual-machines/scripts/virtual-machines-linux-cli-sample-create-vm-nginx) sample can create one for you. When working through the tutorial, replace the resource group and VM names and IPs where needed.
 
@@ -144,7 +144,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
         --generate-ssh-keys
        ```
 
-1. Exercise - Create an image from a Snapshot.
+1. **Exercise - Create an image from a Snapshot.**
 
     You need to take an existing VM and create an image while retaining the original VHD as a failback. You can achieve this situation by utilizing Snapshots and creating a disk from the Snapshot.
 
@@ -168,7 +168,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
       16) On the Basics page for the new VM, enter a Virtual machine name and select an existing Resource group and choosing an appropriate size, existing Virtual network and network security group 
       17) Select Review + create to start the new deployment from your Snapshot.
 
-1. Summary + Cleanup
+1. **Summary + Cleanup**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
