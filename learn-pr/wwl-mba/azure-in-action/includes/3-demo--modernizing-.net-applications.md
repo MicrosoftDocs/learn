@@ -141,4 +141,4 @@ In the next video, we'll finish creating the Logic App and test both conditions.
 :::row-end:::
 ---
 
-Next, we'll see demo that showcases the benefits of Azure Dev Ops.
+Next, we'll see a demo that showcases the benefits of Azure Dev Ops.
