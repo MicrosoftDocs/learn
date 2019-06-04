@@ -2,13 +2,11 @@ You're now ready to complete your site-to-site VPN gateway by creating the publi
 
 Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you'll see how to update the local network gateways. You can use the same commands to update any configuration elements in the local network gateways, like remote network address spaces.
 
-It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create the second virtual network gateway that simulates your on-premises device in the HQ-Network while you're deploying the first one.
-
 ## Create virtual machines
 
 To verify that your virtual networks are connected, you'll create two Ubuntu VMs, one in each of the virtual networks. You'll then use SSH to connect from the VM in the HQ-Network to the VM in the Azure-VNet-1 virtual network by using its private IP address.
 
-To save time, you'll create these VMs while your VPN gateways are deploying. It takes a few minutes to create the VMs, so to avoid the delay, you'll use Azure CLI commands with the `--no-wait` parameter.
+To save time, you'll start the deployment of these virtual machines using the `--no-wait` parameter. This will continue deployment, but allow you to continue on with the exercise.
 
 1. Run this command in the Cloud Shell to create an Ubuntu VM in the **HQ-Network** virtual network. Replace `<password>` with a string to use for the admin password.
 
@@ -41,9 +39,9 @@ To save time, you'll create these VMs while your VPN gateways are deploying. It 
 
 ## Create the Azure-side VPN gateway
 
-Next, you'll create the VPN gateway for the Azure end of the connection.
+Next, you'll create the VPN gateway for the Azure end of the connection. It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create both virtual network gateways simultaneously to minimize the overall time required to create these resources.
 
-1. Run this command in the Cloud Shell to create the **PIP-VNG-Azure-VNet-1** public IP address:
+1. Run this command in the Cloud Shell to create the **PIP-VNG-Azure-VNet-1** public IP address.
 
     ```azurecli
     az network public-ip create \
@@ -52,7 +50,7 @@ Next, you'll create the VPN gateway for the Azure end of the connection.
         --allocation-method Dynamic
     ```
 
-1. Run this command in the Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway:
+1. Run this command in the Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway.
 
     ```azurecli
     az network vnet-gateway create \
@@ -70,7 +68,7 @@ Next, you'll create the VPN gateway for the Azure end of the connection.
 
 Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
-1. Run this command in the Cloud Shell to create the **PIP-VNG-HQ-Network** public IP address:
+1. Run this command in the Cloud Shell to create the **PIP-VNG-HQ-Network** public IP address.
 
     ```azurecli
     az network public-ip create \
@@ -79,7 +77,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --allocation-method Dynamic
     ```
 
-1. Run these commands in the Cloud Shell to create the **VNG-HQ-Network** virtual network gateway:
+1. Run these commands in the Cloud Shell to create the **VNG-HQ-Network** virtual network gateway.
 
     ```azurecli
     az network vnet-gateway create \
@@ -103,7 +101,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --output table
     ```
 
-    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Select Ctrl+C to halt the command after the gateway is created.
+    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Press Ctrl+C to halt the command after the gateway is created.
 
     ```output
     ActiveActive    EnableBgp    GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
@@ -128,7 +126,7 @@ az network vnet-gateway list \
 
 Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
 
-1. Run this command in the Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1**:
+1. Run this command in the Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1**.
 
     ```bash
     PIPVNGAZUREVNET1="$(az network public-ip show \
@@ -138,7 +136,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
         --output tsv)"
     ```
 
-1. Run this command in the Cloud Shell to update the **LNG-Azure-VNet-1** local network gateway so that it points to the public IP address attached to the **VNG-Azure-VNet-1** virtual network gateway:
+1. Run this command in the Cloud Shell to update the **LNG-Azure-VNet-1** local network gateway so that it points to the public IP address attached to the **VNG-Azure-VNet-1** virtual network gateway.
 
     ```azurecli
     az network local-gateway update \
@@ -147,7 +145,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
         --gateway-ip-address $PIPVNGAZUREVNET1
     ```
 
-1. Run this command in the Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-HQ-Network**:
+1. Run this command in the Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-HQ-Network**.
 
     ```bash
     PIPVNGHQNETWORK="$(az network public-ip show \
@@ -157,7 +155,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
         --output tsv)"
     ```
 
-1. Run this command in the Cloud Shell to update the **LNG-HQ-Network** local network gateway so that it points to the public IP address attached to the **VNG-HQ-Network** virtual network gateway:
+1. Run this command in the Cloud Shell to update the **LNG-HQ-Network** local network gateway so that it points to the public IP address attached to the **VNG-HQ-Network** virtual network gateway.
 
    ```azurecli
    az network local-gateway update \
@@ -176,7 +174,7 @@ You'll now complete the configuration by creating the connections from each VPN 
     SHAREDKEY=<shared key>
     ```
 
-1. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in the Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**:
+1. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in the Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
 
     ```azurecli
     az network vpn-connection create \
@@ -187,7 +185,7 @@ You'll now complete the configuration by creating the connections from each VPN 
         --local-gateway2 LNG-HQ-Network
     ```
 
-1. Remember that **LNG-Azure-VNet-1** contains a reference to the public IP address associated with the **VNG-Azure-VNet-1** VPN gateway. This connection would normally be created from your on-premises device. Run this command in the Cloud Shell to create a connection from **VNG-HQ-Network** to **LNG-Azure-VNet-1**:
+1. Remember that **LNG-Azure-VNet-1** contains a reference to the public IP address associated with the **VNG-Azure-VNet-1** VPN gateway. This connection would normally be created from your on-premises device. Run this command in the Cloud Shell to create a connection from **VNG-HQ-Network** to **LNG-Azure-VNet-1**.
 
     ```azurecli
     az network vpn-connection create \
@@ -224,7 +222,7 @@ To verify that your virtual networks are connected, you'll use SSH to connect fr
 
     Remember that you provisioned **Azure-VM** *without* a public IP address. The private IPv4 address assigned to **Azure-VM** should be 10.0.0.4. You'll use this IPv4 address to connect from **HQ-VM** across the site-to-site connection to **Azure-VM**.
 
-1. Run this command in the Cloud Shell to open an SSH connection to **HQ-VM** by using the public IPv4 address:
+1. Run this command in the Cloud Shell to open an SSH connection to **HQ-VM** by using the public IPv4 address.
 
     ```bash
     ssh azureuser@<public-ip-address-of-hq-vm>
@@ -232,7 +230,7 @@ To verify that your virtual networks are connected, you'll use SSH to connect fr
 
 1. You'll get a security notification when you first connect. Enter **yes** when prompted, and then enter the password you used when you created the VM.
 
-1. You're now connected to **HQ-VM** at HQ. To prove you can connect to a VM in the **Azure-VNet-1** virtual network and that data can flow, open an SSH session to the private IPv4 address. While still signed in to **HQ-VM**, use the following command:
+1. You're now connected to **HQ-VM** at HQ. To prove you can connect to a VM in the **Azure-VNet-1** virtual network and that data can flow, open an SSH session to the private IPv4 address. While still signed in to **HQ-VM**, use the following command.
 
     ```bash
     ssh azureuser@10.0.0.4
@@ -242,13 +240,13 @@ To verify that your virtual networks are connected, you'll use SSH to connect fr
 
     You should now be connected to **Azure-VM**. This machine wasn't assigned a public IP address. You can access this VM only through the site-to-site connection.
 
-1. Use this command to close the SSH session from **HQ-VM** to **Azure-VM**:
+1. Run this command to close the SSH session from **HQ-VM** to **Azure-VM**.
 
     ```bash
     exit
     ```
 
-1. Use this command to close the SSH session from the Cloud Shell to **HQ-VM**:
+1. Run this command to close the SSH session from the Cloud Shell to **HQ-VM**.
 
     ```bash
     exit
