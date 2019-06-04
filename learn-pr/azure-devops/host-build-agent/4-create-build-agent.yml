@@ -3,7 +3,7 @@ uid: learn.azdo.host-build-agent.4-create-build-agent
 title: Exercise - Create a build agent running on Azure
 metadata:
   title: Exercise - Create a build agent running on Azure
-  description: TBD
+  description: Use a virtual machine running on Azure to configure a build agent you can use in Azure Pipelines. 
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

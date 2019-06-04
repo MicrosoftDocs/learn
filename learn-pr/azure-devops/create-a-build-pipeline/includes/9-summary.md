@@ -19,7 +19,7 @@ When you create your own pipeline, you have two choices &mdash; the visual desig
 
 Here are some additional resources you can use to further your understanding.
 
-If you're looking for a more academic approach, [Continuous Delivery](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250?azure-portal=true) by Jez Humble, David Farley is a great starting point.
+If you're looking for a more academic approach, [Continuous Delivery](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250?azure-portal=true) by Jez Humble and David Farley is a great starting point.
 
 ### Learn YAML
 

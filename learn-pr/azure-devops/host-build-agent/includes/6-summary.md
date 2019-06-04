@@ -33,6 +33,8 @@ The focus of this learning path is on building applications and receiving build 
 
 You can automate the handoff process by deploying build artifacts to running infrastructure automatically when the build successfully completes. Check back soon with Microsoft Learn &mdash; we're working on additional learning paths that cover deployment, automation, and monitoring topics, all using Azure DevOps.
 
+For more self-paced, hands-on learning around Azure DevOps, check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true) and [courses.microsoft.com](https://courses.microsoft.com?azure-portal=true).
+
 ## Learn more
 
 Check out the documentation to learn more about build agents and agent pools. Here are a few resources to start with.

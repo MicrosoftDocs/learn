@@ -3,7 +3,7 @@ uid: learn.azdo.host-build-agent.5-build-application
 title: Exercise - Build the application using your agent
 metadata:
   title: Exercise - Build the application using your agent
-  description: TBD
+  description: Configure the pipeline to use your build agent and watch the build in action.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

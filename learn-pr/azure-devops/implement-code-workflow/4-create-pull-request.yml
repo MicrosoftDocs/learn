@@ -3,7 +3,7 @@ uid: learn.azdo.implement-code-workflow.4-create-pull-request
 title: Exercise - Create a pull request
 metadata:
   title: Exercise - Create a pull request
-  description: TBD
+  description: Use a pull request to propose changes you'd like to make to the codebase.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

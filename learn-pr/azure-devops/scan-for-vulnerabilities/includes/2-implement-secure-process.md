@@ -40,7 +40,7 @@ Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.mic
 
 You can run Roslyn analyzers from Visual Studio or from the command line. The following shows an example of running the Roslyn analyzers on the _Space Game_ web project from Visual Studio.
 
-![](../media/2-roslyn-results.png)
+![Visual Studio showing a run of Roslyn analyzers](../media/2-roslyn-results.png)
 
 ### SonarCloud
 

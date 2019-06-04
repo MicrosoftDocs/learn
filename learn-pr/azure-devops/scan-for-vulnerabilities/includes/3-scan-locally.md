@@ -8,7 +8,7 @@ Let's set up a project on SonarCloud. You'll need to save some information, such
 1. From the upper corner, click **+** and then **Analyze new project**.
 1. Go to the **Setup manually** tab.
     * Your organization is filled in automatically.
-    * For **Project key**, create a unique name. For example, **space-game-web-0430**.
+    * For **Project key**, create a unique name. For example, **space-game-web-333**.
     * The **Display name** is filled in with the same text as the **Project key**.
     * Keep **Public** selected.
     * Click **Set Up**
@@ -83,7 +83,7 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You'll the
       /o:"$ORGANIZATION"
     ```
 
-    TODO: PowerShell equivalent.
+    **TODO: PowerShell equivalent.**
 
     This command uses the information you stored in variables and other information to help the scanner know where to store the results.
 
@@ -152,7 +152,7 @@ Here you'll see the results from the SonarCloud portal.
 
     In practice, your team would assess each bug and prioritize whether to fix it. This bug is categorized as **Minor**, which  you can use to rank its importance among other reported issues.
 
-1. As an optional step, return to the ***Overview** tab and explore the results from other categories.
+1. As an optional step, return to the **Overview** tab and explore the results from other categories.
 
     For example, from the **Security** section, you can examine reported vulnerabilities and security hotspots.
 

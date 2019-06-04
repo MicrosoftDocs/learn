@@ -28,22 +28,25 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 ## What is Git and distributed version control?
 
-<!-- TODO: Might be nice to draw out distributed vs. centralized on the whiteboard and add a screen cap here. -->
 ![A hand-drawn illustration of centralized versus distributed source control](../media/2-whiteboard-centralized-vs-distributed-drawing.png)
 
-**Mara:** The drawing on the left is _centralized version control_ like what we are using now. We have a central version of the code base ![Callout 1](../../shared/media-draft/callout-01.png) in Team Foundation Version Control (TFVC) that everyone uses. We each check out the files we need to change and then merge them back into the master repository when we're finished with them. We all need access to the server in order to do that, so we are limited to working on the project only when we can access the server.
+**Mara:** The drawing on the left is _centralized version control_ like what we are using now. We have a central version of the code base ![Callout 1](../../shared/media/callout-01.png) in Team Foundation Version Control (TFVC) that everyone uses. We each check out the files we need to change and then merge them back into the master repository when we're finished with them. We all need access to the server in order to do that, so we are limited to working on the project only when we can access the server.
 
 **Andy:** Like when I went to the conference. I couldn't get to the code.
 
-**Mara:** Right! And you were blocked ![Callout 2](../../shared/media-draft/callout-02.png) from checking out the files you needed today because I have them checked out. We could use a branching strategy with TFVC to solve the blocking issue, but in our current configuration, merging might get a bit more complicated.
+**Mara:** Right! And you were blocked ![Callout 2](../../shared/media/callout-02.png) from checking out the files you needed today because I have them checked out. We could use a branching strategy with TFVC to solve the blocking issue, but in our current configuration, merging might get a bit more complicated.
 
-And remember when we had that breaking change ![Callout 3](../../shared/media-draft/callout-03.png) merged into the main repository? No one could get any work done until we got that solved. That problem is always lurking because we're all using the same copy of the code.
+And remember when we had that breaking change ![Callout 3](../../shared/media/callout-03.png) merged into the main repository? No one could get any work done until we got that solved. That problem is always lurking because we're all using the same copy of the code.
 
-On the right is a drawing of _distributed version control_. We still have a main or _master_ repository ![Callout 4](../../shared/media-draft/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media-draft/callout-05.png) of it to work from. This frees us up to experiment and try different approaches without affecting the main repository or locking other developers out of the files they're working with.
+On the right is a drawing of _distributed version control_. We still have a main or _master_ repository ![Callout 4](../../shared/media/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media/callout-05.png) of it to work from. This frees us up to experiment and try different approaches without affecting the main repository or locking other developers out of the files they're working with.
 
-Distributed version control also ensures that only working code ![Callout 6](../../shared/media-draft/callout-06.png) gets merged into the master repository. We could even set it up to where code can't merge until it has been reviewed.
+Distributed version control also ensures that only working code ![Callout 6](../../shared/media/callout-06.png) gets merged into the master repository. We could even set it up to where code can't merge until it has been reviewed.
 
 What's cool about Azure DevOps is that it works well with both centralized and distributed version control systems.
+
+**Andy:** What happens when more than one person changes the same file?
+
+**Mara:** Often, Git can merge multiple changes automatically. Of course, we want to always make sure the combination of changes results in working code. When Git can't automatically merge changes, it marks the conflicts directly in the files so that a human can choose which changes to accept.
 
 **Andy:** What about the problem of accessing the code when we're not in the building?
 
@@ -80,7 +83,7 @@ Once you feel your code is ready to be merged into the `master` branch in the ma
  :::row:::
     :::column span="8":::
 **Step 1:**
-When you begin to work on a new feature or bug fix, the first thing you want to do is make sure you are starting with the latest stable codebase. To do this, you can synchronize your clone of the `master` branch on the server with your local `master` branch. This pulls down all of the other developers' changes that have been pushed up to the `master` branch on the server since your last synchronization.
+When you begin to work on a new feature or bug fix, the first thing you want to do is make sure you are starting with the latest stable codebase. To do this, you can synchronize your local copy of the `master` branch with the server's copy. This pulls down all of the other developers' changes that have been pushed up to the `master` branch on the server since your last synchronization.
     :::column-end:::
     :::column:::
         ![A pull of the remote master branch](../media/2-github-paths-1.png)

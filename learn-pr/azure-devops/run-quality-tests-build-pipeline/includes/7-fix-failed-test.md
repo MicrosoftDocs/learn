@@ -69,10 +69,11 @@ Andy chooses a few values that represent typical queries. He also includes 0 to 
 Similar to what you did earlier, here you'll fetch the `failed-test` branch from GitHub and checkout, or switch to, that branch.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git fetch` command to download and switch to the `failed-test` branch from Microsoft's repository.
+1. 1. Run the following `git fetch` and `git checkout` commands to download a branch named `failed-test` from Microsoft's repository and switch to that branch.
 
     ```bash
-    git checkout --track upstream/failed-test
+    git fetch upstream failed-test
+    git checkout failed-test
     ```
 
     We name the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
@@ -181,10 +182,6 @@ Here you'll reproduce the failure locally, just like Mara and Andy.
 Mara notices that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
 
 Mara and Andy look at the source code for the method being tested, ``IDocumentDBRepository`1.GetItemsAsync``. They see this.
-
-<!-- TODO: Reference the upstream repo instead and code highlight the `pageSize - 1` line. 
-https://review.docs.microsoft.com//help/contribute/code-in-docs?branch=master#in-repo-snippet-references
--->
 
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(

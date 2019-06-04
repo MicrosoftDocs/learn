@@ -3,13 +3,13 @@ uid: learn.azdo.scan-for-vulnerabilities.8-summary
 title: Summary
 metadata:
   title: Summary
-  description: TBD
+  description: Summarize what you've learned and discover resources to learn more.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/8-summary.md)]

@@ -153,13 +153,13 @@ Andy moves to the whiteboard.
 
 ### Creating the package
 
-First, we'll need to create a project in Azure Artifacts. ![Callout 1](../../shared/media-draft/callout-01.png) We can do this from Azure DevOps.
+First, we'll need to create a project in Azure Artifacts. ![Callout 1](../../shared/media/callout-01.png) We can do this from Azure DevOps.
 
-Then, we'll create a pipeline in Azure Pipelines that connects to the GitHub repo for the package code, builds it, packages it, and pushes the package to Azure Artifacts. ![Callout 2](../../shared/media-draft/callout-02.png)
+Then, we'll create a pipeline in Azure Pipelines that connects to the GitHub repo for the package code, builds it, packages it, and pushes the package to Azure Artifacts. ![Callout 2](../../shared/media/callout-02.png)
 
-We'll need to update the application that consumes this package to point to the Azure Artifacts feed that we created. ![Callout 3](../../shared/media-draft/callout-03.png)
+We'll need to update the application that consumes this package to point to the Azure Artifacts feed that we created. ![Callout 3](../../shared/media/callout-03.png)
 
-After that, we update the pipeline that creates our application to use our Azure Artifacts feed to pull the new package dependency and build as normal. ![Callout 4](../../shared/media-draft/callout-04.png)
+After that, we update the pipeline that creates our application to use our Azure Artifacts feed to pull the new package dependency and build as normal. ![Callout 4](../../shared/media/callout-04.png)
 
 ### Updating the package
 
