@@ -1,0 +1,30 @@
+/*HERE IS THE FIDDLER SCRIPT TO SIMULATE FAULTS
+Open Fiddler. 
+Go to Rules > Customize Rules.
+Find the OnBeforeResponse method. Add the commented-out code given below.
+Be sure the hostname is [yourstorageaccount].blob.core.windows.net. 
+Start the app, then pause it after it's working and 
+uncomment the if clause to intercept the response and return a 503 error to the client application.
+The script change must be commented out when you first run the application.
+*/
+
+    static function OnBeforeResponse(oSession: Session) {
+        if (m_Hide304s && oSession.responseCode == 304) {
+            oSession["ui-hide"] = "true";
+        }
+        
+	// Simulate data center failure
+	// After it is successfully downloading the blob, pause the code in the sample,
+	// uncomment these lines of script, and save the script.
+	// It will intercept the (probably successful) responses and send back a 503 error. 
+	// When you're ready to stop sending back errors, comment these lines of script out again 
+	//     and save the changes.
+	
+	/*
+	if ((oSession.hostname == "YOURSTORAGEACCOUNTNAME.blob.core.windows.net") 
+	&& (oSession.PathAndQuery.Contains("HelloWorld"))) {
+	   oSession.responseCode = 503;  
+        }
+	*/
+
+    }
