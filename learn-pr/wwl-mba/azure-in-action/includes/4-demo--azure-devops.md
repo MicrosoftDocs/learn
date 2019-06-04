@@ -69,21 +69,22 @@ Manage GitHub projects
 
 First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Manager, Azure Marketing, about how Azure DevOps can help you deliver value at a faster speed.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video from Hridayraj to learn about the automation and integration benefits of Azure DevOps.|
+:::row:::
+
+![Icon indicating play video](../media/video-icon.png)
+
+:::column span="1":::
+
+ Watch this video from Hridayraj to learn about the automation and integration benefits of Azure DevOps.
+
+:::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2V0I8]
 
 :::row:::
-![Icon of lightbulb](../media/lightbulb.png)
-:::column span="1":::
-*With the integration between Azure DevOps and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.*
-:::column-end:::
-:::row-end:::
----
 
-Now, let's learn how to implement a pipeline for any application.
+With the integration between Azure DevOps and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.
 
 ## Setting up automated CI/CD pipelines with Azure Pipelines
 
@@ -101,21 +102,20 @@ In this segment, you'll see how Azure Pipelines enables you to:
 
 Follow along as the Contoso Air DevOps Engineer sets up a CI pipeline so that commits to the GitHub repository trigger a continuous integration build in Azure DevOps.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn to configure a CI/CD pipeline with Azure Pipelines.|
+:::row:::
+
+![Icon indicating play video](../media/video-icon.png)
+
+:::column span="1":::
+ Now, let's learn how to implement a pipeline for any application. Watch this video to learn to configure a CI/CD pipeline with Azure Pipelines.
+ 
+ :::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRN]
 
-:::row:::
-![Icon of lightbulb](../media/lightbulb.png)
-:::column span="1":::
-*Azure Pipelines allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.*
-:::column-end:::
-:::row-end:::
----
 
-Let’s continue our demo to learn how to detect application issues with Application Insights.
+**Azure Pipelines** allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.
 
 ## Using Application Insights
 
@@ -133,19 +133,19 @@ When Contoso Air releases a new feature or improvement, they need to know how we
 
 Follow along as the Contoso Air DevOps Engineer uses Application Insights to detect issues before their users do.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn why Application Insights can help you find out how your app is performing.|
+:::row:::
+
+![Icon indicating play video](../media/video-icon.png)
+
+:::column span="1":::
+ Let’s continue our demo to learn how to detect application issues with Application Insights. Watch this video to learn why Application Insights can help you find out how your app is performing.
+
+ :::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRL]
 
-:::row:::
-![Icon of lightbulb](../media/lightbulb.png)
-:::column span="1":::
-*Application Insights allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because Application Insights captures errors in real time so your team can identify the root cause and make fixes quickly.*
-:::column-end:::
-:::row-end:::
----
+**Application Insights** allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because **Application Insights** captures errors in real time so your team can identify the root cause and make fixes quickly.
 
 Next, we’ll continue our solution demo to learn more about Azure Boards.
 
@@ -163,29 +163,22 @@ In this segment, you’ll see how Azure Boards enables you to:
 
 Contoso Air wants to track what their teams are working on. They find it hard to gauge current commitments and plan for future projects.
 
-Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track projects.
+![Icon indicating play video](../media/video-icon.png)
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn why integrating Azure Boards can help make end users successful.|
+:::column span="1":::
+ Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track projects. Watch this video to learn why integrating Azure Boards can help make end users successful.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
-:::row:::
-![Icon of lightbulb](../media/lightbulb.png)
-:::column span="1":::
-*Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because Azure Boards are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
-:::column-end:::
-:::row-end:::
----
+**Azure Boards** allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because **Azure Boards** are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
 
 ## Conclusion
 
 Azure Pipelines enables you to continuously build, test, and deploy to any platform or cloud. In addition to Azure Pipelines, GitHub users can also benefit from Azure Boards, a set of features that enable you to plan, track, and discuss work across your teams using Kanban boards, backlogs, team dashboards, and custom reporting. And with the Application Insights feature, you get visibility into how your application is running once it’s released.
 
-### Key takeaways
+### Key points
 
-The key takeaways of the demo are:
+The key points of the demo are:
 
 - Microsoft provides the only comprehensive DevOps solution that spans from development to project management to deployment to operations.
 
@@ -199,4 +192,3 @@ The key takeaways of the demo are:
 |
 
 Now that you've experienced Azure in action, let's complete the knowledge check.
-
