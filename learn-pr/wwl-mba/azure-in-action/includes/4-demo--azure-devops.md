@@ -69,15 +69,13 @@ Manage GitHub projects
 
 ## Automation and integration benefits of Azure DevOps
 
-First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Manager, Azure Marketing, about how Azure DevOps can help you deliver value at a faster speed.
-
 :::row:::
 
 ![Icon indicating play video](../media/video-icon.png)
 
 :::column span="1":::
 
- Watch this video from Hridayraj to learn about the automation and integration benefits of Azure DevOps.
+ First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Manager, Azure Marketing, about how Azure DevOps can help you deliver value at a faster speed. Watch this video to learn about the automation and integration benefits of Azure DevOps.
 
 :::column-end:::
 :::row-end:::

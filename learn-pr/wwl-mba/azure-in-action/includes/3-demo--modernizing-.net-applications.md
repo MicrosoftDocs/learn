@@ -49,8 +49,6 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 
 ## Scenario
 
-David Sanchez, Senior Product Marketing Manager for Azure Application Development, sets the scene for this demonstration of the capabilities of Azure Application Service and Azure Logic Apps.
-
 :::row:::
 
 ![Icon indicating play video](../media/video-icon.png)
@@ -148,7 +146,5 @@ Once an application is running in **Azure App Service**, administrators can take
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
 
 **Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
-
----
 
 Next, we'll see a demo that showcases the benefits of Azure Dev Ops.

@@ -213,6 +213,4 @@ Victor completes the final steps to bring the migrated systems to full functiona
 
 Connecting to a load balancer in Azure keeps your servers from bogging down, allowing a smooth flow of traffic. The availability set ensures that your site is always up and running without the need for duplicate servers.
 
----
-
 Next, we'll see how easy it is to migrate and modernize an application without changes to the code.

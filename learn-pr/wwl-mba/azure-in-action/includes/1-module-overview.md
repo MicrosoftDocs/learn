@@ -25,4 +25,3 @@ In this module, you will:
 |
 
 Next, let's review an example of a lift and shift Azure migration demo.
-
