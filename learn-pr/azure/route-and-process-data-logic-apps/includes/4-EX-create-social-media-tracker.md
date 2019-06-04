@@ -4,9 +4,9 @@ In this exercise, we'll create our social-media monitor app using the Azure port
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-## Create an Azure Logic App
+## Locate the Azure Logic App resource
 
-The first thing we need to do is create an Azure Logic App using the Azure portal.
+The first thing we need to do is create an Azure Logic App. In order to do that, we need to locate the Azure Logic App resource type in the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
@@ -14,7 +14,13 @@ The first thing we need to do is create an Azure Logic App using the Azure porta
 
 1. In the search box, type **Logic app**.
 
-1. Select the **Logic App** template and then select **Create**.
+1. Select the **Logic App** template.
+
+1. Click **Create**.
+
+## Configure your Azure Logic App resource
+
+Now that the Azure Logic App resource was located, let's configure basic settings like it's resource group and location.
 
 1. For the name of the Logic App, enter **ShoeTracker**.
 
@@ -27,6 +33,10 @@ The first thing we need to do is create an Azure Logic App using the Azure porta
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Create** and wait until the resource is created.
+
+## Use a template for your Azure Logic App
+
+When you create an Azure Logic App in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our Logic App from scratch.
 
 1. In the left navigation bar, select **Resource groups**.
 
@@ -63,7 +73,7 @@ Let's now create the trigger and provide values for all required parameters.
 
 1. Click **Save**. Your app will be live as soon as you save it.
 
-## Examine results of Twitter trigger
+## Examine the results of your Twitter trigger
 
 At this point, our Logic App is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the **Runs history** table.
 
