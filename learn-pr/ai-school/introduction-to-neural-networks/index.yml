@@ -28,6 +28,7 @@ roles:
 products: 
 - azure
 units: 
+- learn-wwl.neural-networks.introduction
 - learn-wwl.neural-networks.introduction-to-neural-networks
 - learn-wwl.neural-networks.layers-edges-and-weights
 - learn-wwl.neural-networks.knowledge-check-1
