@@ -82,9 +82,7 @@ First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Ma
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2V0I8]
 
-:::row:::
-
-With the integration between Azure DevOps and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.
+With the integration between **Azure DevOps** and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.
 
 ## Setting up automated CI/CD pipelines with Azure Pipelines
 
