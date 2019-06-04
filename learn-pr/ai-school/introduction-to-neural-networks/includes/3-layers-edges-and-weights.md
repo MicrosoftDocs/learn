@@ -24,7 +24,9 @@ The connections between nodes from one layer to the next are called edges. Edges
 
 When data travels through the edges, it is multiplied by a value that we call a weight. Each edge has a different weight that starts off as a random value. The value of weights can be positive or negative. Weights are then optimized by gradient descent to give accurate outcomes.
 
-## Summary In this section we have covered the core components of neural networks - nodes, layers, and edges (connections). We have learnt that:
+## Summary
+
+In this section we have covered the core components of neural networks - nodes, layers, and edges (connections). We have learnt that:
 
 * __Neural networks__ are systems made up of nodes. Nodes combine data coming in, and output the combined data to other nodes.
 * __Nodes__ are contained within __layers__. We can alter the size of layers, and the number of layers, to give us the most accurate results.

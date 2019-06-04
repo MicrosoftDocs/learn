@@ -1,5 +1,3 @@
-## Types of gradient descent
-
 As you might imagine, gradient descent can be very computationally expensive on a large neural network, as you’re trying to optimize so many weights. Even with modern increases in processing power, normal gradient descent is often impractical with neural networks.
 
 We can use a variation of gradient descent called __stochastic gradient descent__ (__SGD__) to make this faster.
@@ -14,7 +12,7 @@ If a neural network model is taking a long time to train, you can try SGD instea
 
 ## Forward propagation and backpropagation
 
-Forward propagation and backpropagation are how neural networks optimise their weights and produce accurate output. Don't worry about the details - here’s a nice diagram showing how they work!
+Forward propagation and backpropagation are how neural networks optimize their weights and produce accurate output. Don't worry about the details - here’s a nice diagram showing how they work!
 
 ## Summary
 
@@ -27,5 +25,3 @@ Well done! To recap on SGD:
 * Forward propagation and back-propagation exist, and the algorithm does them for you. You don't need to know the details.
 
 That's it! Next up we'll do a programming exercise in Azure notebooks - advanced neural networks (don't worry, we'll easily walk you through it).
-
-Click __'Next Step'__ to get started!

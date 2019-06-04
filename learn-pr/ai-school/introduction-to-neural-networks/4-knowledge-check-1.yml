@@ -18,26 +18,26 @@ quiz:
   questions:
   - content: "Artificial Neural Networks can perform:"
     choices:
-    - content: "Categorization."
+    - content: "Classification."
       isCorrect: false
-      explanation: "Incorrect."
-    - content: "Both Categorization and Regression."
+      explanation: "Incorrect. Neural networks can perform regression functions also."
+    - content: "Both classification and regression."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. Neural networks can both predict categories and numbers."
     - content: "Regression."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Neural networks can also easily perform classification using the softmax function."
     - content: "Abstract thought."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Neural networks are not capable of performing abstract thought."
   - content: "Which is correct? Artificial neural networks:"
     choices:
     - content: "Have two or more layers, each of which contains many nodes."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. Neural networks must have at least an input layer and an output layer."
     - content: "Have two or more nodes, each of which contains many layers."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Nodes reside in layers."
     - content: "Can hide layers from the programmer."
       isCorrect: false
       explanation: "Incorrect. Although middle layers are named  as 'hidden' they are visible to the programmer."
@@ -48,27 +48,27 @@ quiz:
     choices:
     - content: "Connect nodes to one another"
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. Edges connect nodes from layer to layer."
     - content: "Are nodes that are at the edge of layers"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Edges are not a type of node, edges connect nodes."
     - content: "Are layers that are at the front or end of the neural network"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Edges connect nodes (and thus layers) together, but edges are not layers themselves."
     - content: "Hide layers from the programmer."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Edges can't hide layers, they connect nodes (and thus layers) together."
   - content: "Before training, weights are usually:"
     choices:
     - content: "All very high (positive) numbers"
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. If the weights are all very high the neural network is likely to have very poor performance."
     - content: "Random numbers."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. We randomize the weights so the cost does not get stuck in a local minima."
     - content: "All zeros."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. If the weights are all zeros no data will flow through the neural network."
     - content: "All very low (negative) numbers."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. While weights can be negative, they do not all start out negative."
