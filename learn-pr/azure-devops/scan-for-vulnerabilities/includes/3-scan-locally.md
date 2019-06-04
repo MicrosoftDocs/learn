@@ -8,7 +8,7 @@ Let's set up a project on SonarCloud. You'll need to save some information, such
 1. From the upper corner, click **+** and then **Analyze new project**.
 1. Go to the **Setup manually** tab.
     * Your organization is filled in automatically.
-    * For **Project key**, create a unique name. For example, **space-game-web-0430**.
+    * For **Project key**, create a unique name. For example, **space-game-web-333**.
     * The **Display name** is filled in with the same text as the **Project key**.
     * Keep **Public** selected.
     * Click **Set Up**
