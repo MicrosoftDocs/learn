@@ -52,7 +52,7 @@ quiz:
     - content: "Entirely unlike the training data."
       isCorrect: false
       explanation: "Incorrect. Test and training datasets should be similar, but not have any identical data points."
-    - content: "Important to test that a model has not trained too tightly to the training data set."
+    - content: "Important to test that a model hasn't trained too tightly to the training data set."
       isCorrect: true
       explanation: "Correct. Test data is used to measure how accurate the model will be on examples it has not been trained on."
     - content: "Only used in algorithms more advanced than SVMs."
@@ -62,7 +62,7 @@ quiz:
     choices:
     - content: "When support vectors are too close to a datapoint."
       isCorrect: false
-      explanation: "Incorrect. Although support vectors may be close to a datapoint as a consequence of overfitting, this is not a problem, in itself."
+      explanation: "Incorrect. Although support vectors may be close to a datapoint as a consequence of overfitting, this isn't a problem, in itself."
     - content: "When a model is trained on a data set that is too large."
       isCorrect: false
       explanation: "Incorrect. Large training data sets tend to help prevent overfitting."
@@ -82,7 +82,7 @@ quiz:
       explanation: "Incorrect. Underfitting can occur on any model, not just an SVM."
     - content: "When a model is too simple to represent real patterns in the training and test data sets."
       isCorrect: true
-      explanation: "Correct. When a model is underfitting the data it is too simple to properly represent patterns in the data sets."
+      explanation: "Correct. When a model is underfitting the data, it is too simple to properly represent patterns in the data sets."
     - content: "When we reach a maximum cost."
       isCorrect: false
       explanation: "Incorrect. Underfitting means a model is too simple, but that does not mean we have reached maximum cost."
