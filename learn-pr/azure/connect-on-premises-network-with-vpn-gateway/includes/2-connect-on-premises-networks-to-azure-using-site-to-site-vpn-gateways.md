@@ -82,7 +82,7 @@ To connect your datacenter to a VPN gateway, you'll need these on-premises resou
 - A VPN device that supports policy-based or route-based VPN gateways
 - A public-facing (internet-routable) IPv4 address
 
-## High-availability scenarios
+## High availability scenarios
 
 There are several ways to ensure you have a fault-tolerant configuration.
 
