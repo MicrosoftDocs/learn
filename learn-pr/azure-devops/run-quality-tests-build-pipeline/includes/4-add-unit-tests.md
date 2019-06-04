@@ -196,7 +196,7 @@ Here you'll see the tests run in the pipeline and then visualize the results fro
 
     You see a summary of the test run. All five tests have passed.
 
-    ![](../media/4-test-tab-summary.png)
+    ![Azure Pipelines showing the Tests tab](../media/4-test-tab-summary.png)
 
 1. From Azure DevOps, select **Test Plans**. Then select **Runs**.
 

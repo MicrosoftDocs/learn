@@ -109,10 +109,10 @@ You have an initial set of work items and a timeline for your first sprint. Here
 1. Select **Stabilize the build server**.
 1. From the **Iteration** drop-down, select **Sprint 1**.
 
-    ![](../media/3-assign-sprint.png)
+    ![Assigning an iteration to a Sprint](../media/3-assign-sprint.png)
 1. From the same window, click **Unassigned** and set yourself as the task owner.
 
-    ![](../media/3-assign-owner.png)
+    ![Assigning the task owner](../media/3-assign-owner.png)
 1. Repeat the process for the other two work items.
 
     * **Create a Git-based workflow**
