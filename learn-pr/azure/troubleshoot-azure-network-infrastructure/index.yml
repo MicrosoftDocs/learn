@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools
+metadata:
+  title: Monitor and troubleshoot your end-to-end Azure network infrastructure using network monitoring tools
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and troubleshoot your end-to-end Azure network infrastructure using network monitoring tools
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - Identify the tools available to manage and troubleshoot network connectivity in Azure
+  - Select the proper tool to manage and troubleshoot network connectivity for various use cases
+prerequisites: | 
+  - Basic familiarity with Azure networking concepts (IP addressing, subnetting, routing, network security groups) 
+  - Basic familiarity with Azure network integration concepts (VPN, ExpressRoute, peering)
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.1-introduction
+- learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.2-troubleshoot-networking-using-network-watcher-monitoring-and-diagnostic-tools
+- learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.3-exercise-troubleshoot-networking-using-network-watcher-monitoring-and-diagnostic-tools
+- learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.4-troubleshoot-networking-using-network-watcher-metrics-and-logs
+- learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.5-exercise-troubleshoot-networking-using-network-watcher-metrics-and-logs
+- learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.6-summary
+badge:
+  uid: learn.learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.badge
