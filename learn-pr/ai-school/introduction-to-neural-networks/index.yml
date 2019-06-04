@@ -13,9 +13,9 @@ title: Neural Networks
 summary: Here we cover one of the hottest topics in computer systems - neural networks. We’ll work through the core principles behind neural networks, and how to make them easily with TensorFlow and Keras.
 abstract: | 
   In this module, you will:
-  - Learn about layer edges and weights.
-  - Learn about activation functions.
-  - Learn about types of gradient descent.
+  - Learn about neural network structures, layers, edges, and weights.
+  - Learn about different types of activation functions.
+  - Learn about practical types of gradient descent.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels: 
@@ -36,6 +36,6 @@ units:
 - learn-wwl.neural-networks.types-of-gradient-descent
 - learn-wwl.neural-networks.knowledge-check-2
 - learn-wwl.neural-networks.programming-exercise-advanced-neural-networks
-- learn-wwl.neural-networks.outro
+- learn-wwl.neural-networks.summary
 badge: 
   uid: learn-wwl.neural-networks.badge #add the uid for your achievement badge.

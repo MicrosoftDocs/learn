@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/1-introduction-to-neural-networks.md)] 
+  [!include[](includes/2-introduction-to-neural-networks.md)] 

@@ -1,3 +1,5 @@
+Layers, edges, and weights are the structural components of neural networks.
+
 ## Layers
 
 ![5.2 NetworkDescription](../media/5.2_NetworkDescription.png)
@@ -20,13 +22,13 @@ The connections between nodes from one layer to the next are called edges. Edges
 
 ### Weights
 
-When data travels through the edges, it is multiplied by a value which we call a weight. Each edge has a different weight which starts off as a random value. The value of weights can be positive or negative. Weights are then optimized by gradient descent to give accurate outcomes.
+When data travels through the edges, it is multiplied by a value that we call a weight. Each edge has a different weight that starts off as a random value. The value of weights can be positive or negative. Weights are then optimized by gradient descent to give accurate outcomes.
 
-## Summary In this section we have covered the core components of neural networks - nodes, layers and edges (connections). We have learnt that:
+## Summary In this section we have covered the core components of neural networks - nodes, layers, and edges (connections). We have learnt that:
 
-* __Neural networks__ are systems made up of nodes. Nodes combine data coming in, and output the combined data to other nodes. 
+* __Neural networks__ are systems made up of nodes. Nodes combine data coming in, and output the combined data to other nodes.
 * __Nodes__ are contained within __layers__. We can alter the size of layers, and the number of layers, to give us the most accurate results.
-* Each __layer__ is connected by __edges__, which join nodes from different layers together. 
+* Each __layer__ is connected by __edges__, which join nodes from different layers together.
 * As data travels through the neural network, it is modified by the __weights__ of the connections.
 * __Weights__ start off as a random value, and are optimized by gradient descent to give accurate outcomes.
 

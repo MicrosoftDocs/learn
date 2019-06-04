@@ -1,5 +1,3 @@
-## Activation functions
-
 Edges are not always active - nodes can turn themselves “off” if all the value of the data that has arrived at the node is too low. Nodes are turned on and off by an activation function - which is chosen by the user.
 
 Activation functions are similar in practice to using different kernels in support vector machines. You don’t need to know the details of how they work, you just need to know that you need to try different activation functions and see which one gives you the best result.
@@ -10,7 +8,6 @@ When you have a large neural network, it might seem that a lot of data will be t
 
 There are many activation functions that we can apply to a neural network. ReLu and tanh are two of the most popular activation functions used with neural networks today.
 
-### Optional: activation functions explained
 ### Optional: Activation functions explained
 
 Based on the output of the node, an activation function determines if the node should be turned “on”. It evaluates the value of the output, and if it is below a certain threshold it stops the output - turning the node “off”.  
@@ -19,8 +16,8 @@ Different activation functions have different thresholds for turning a node off.
   
 Some modern algorithms, such as reptile, can automatically test different activation functions and give you the best result.
 
-  
 ### Optional: Bias
+
 Each layer in a neural network can optionally contain a bias. A bias is a node which does not take in any data, but is always “on”. This allows for more flexibility of neural networks.  
   
 ![5.4 Bias fixed (2)](../media/5.4_Bias_fixed__2_.png)
