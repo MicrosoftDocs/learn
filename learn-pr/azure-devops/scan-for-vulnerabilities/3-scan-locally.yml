@@ -3,7 +3,7 @@ uid: learn.azdo.scan-for-vulnerabilities.3-scan-locally
 title: Exercise - Scan the project locally using SonarCloud
 metadata:
   title: Exercise - Scan the project locally using SonarCloud
-  description: TBD
+  description: Scan a sample project for potential vulerabilities using SonarCloud and examine the results.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

@@ -7,8 +7,5 @@
 
 - Run template.
 - Add cards to Azure Boards to queue up work.
-    - Move (TBD) card to Doing
+    - Move card to Doing
     - For example, maybe Mara is tasked with setting up the build pipeline. Someone else might set up the dashboard.
-
-
-<!-- I'm not sure what to do with this unit. -->

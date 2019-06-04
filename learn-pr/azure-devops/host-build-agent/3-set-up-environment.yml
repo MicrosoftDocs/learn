@@ -3,7 +3,7 @@ uid: learn.azdo.host-build-agent.3-set-up-environment
 title: Set up your Azure DevOps environment
 metadata:
   title: Set up your Azure DevOps environment
-  description: TBD
+  description: Run a template to set up your Azure DevOps environment.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

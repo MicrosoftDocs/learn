@@ -3,7 +3,7 @@ uid: learn.azdo.create-a-build-pipeline.4-plan-build-tasks
 title: Plan your build tasks
 metadata:
   title: Plan your build tasks
-  description: TBD
+  description: See how the team maps scripted build steps to Azure Pipelines tasks.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

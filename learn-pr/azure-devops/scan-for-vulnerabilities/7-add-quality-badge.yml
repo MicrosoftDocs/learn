@@ -3,7 +3,7 @@ uid: learn.azdo.scan-for-vulnerabilities.7-add-quality-badge
 title: Exercise - Add a quality badge
 metadata:
   title: Exercise - Add a quality badge
-  description: TBD
+  description: Add a quality badge to the README.md file on GitHub so others can see its status at a glance.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

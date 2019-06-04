@@ -3,7 +3,7 @@ uid: learn.azdo.manage-build-dependencies.4-create-feed
 title: Exercise - Create a package feed in Azure Artifacts
 metadata:
   title: Exercise - Create a package feed in Azure Artifacts
-  description: TBD
+  description: Set up Azure Artifacts and create a new feed that hosts your package.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
