@@ -65,6 +65,8 @@ Manage GitHub projects
 :::column-end:::
 :::row-end:::
 
+![](../media/clear.png)
+
 ## Automation and integration benefits of Azure DevOps
 
 First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Manager, Azure Marketing, about how Azure DevOps can help you deliver value at a faster speed.
@@ -83,6 +85,8 @@ First, let’s hear from Sachin Hridayraj, Microsoft Senior Product Marketing Ma
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2V0I8]
 
 With the integration between **Azure DevOps** and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.
+
+![](../media/clear.png)
 
 ## Setting up automated CI/CD pipelines with Azure Pipelines
 
@@ -114,6 +118,8 @@ Follow along as the Contoso Air DevOps Engineer sets up a CI pipeline so that co
 
 
 **Azure Pipelines** allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.
+
+![](../media/clear.png)
 
 ## Using Application Insights
 
@@ -147,6 +153,8 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 
 Next, we’ll continue our solution demo to learn more about Azure Boards.
 
+![](../media/clear.png)
+
 ## Managing GitHub Projects with Azure Boards
 
 With Azure Boards, you can plan, track, and discuss work across your teams.
@@ -171,6 +179,8 @@ Contoso Air wants to track what their teams are working on. They find it hard to
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
 **Azure Boards** allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because **Azure Boards** are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
+
+![](../media/clear.png)
 
 ## Conclusion
 

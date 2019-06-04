@@ -45,6 +45,8 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 :::column-end:::
 :::row-end:::
 
+![](../media/clear.png)
+
 ## Scenario
 
 David Sanchez, Senior Product Marketing Manager for Azure Application Development, sets the scene for this demonstration of the capabilities of Azure Application Service and Azure Logic Apps.
@@ -64,6 +66,8 @@ David Sanchez, Senior Product Marketing Manager for Azure Application Developmen
 
 Azure offers tools and capabilities that simplify the process of migrating your existing workloads to the cloud, where you can immediately take advantage of cloud scale and elasticity and easily modernize to align to changing business goals.
 
+![](../media/clear.png)
+
 ## Migrate
 
 :::row:::
@@ -81,6 +85,8 @@ Azure offers tools and capabilities that simplify the process of migrating your 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2U0kL]
 
 **Azure App Service** provides a way to easily migrate applications to Azure using the publishing tools available in Visual Studio, a very common development tool that can automatically create necessary resources such as an **Azure SQL Database**.
+
+![](../media/clear.png)
 
 ## Explore
 
@@ -105,6 +111,8 @@ Once an application is running in **Azure App Service**, administrators can take
 - Scale out - Increase the number of instances running.
 - Diagnostics monitoring - Get real-time insights using alerts, logs, and performance testing.
 
+![](../media/clear.png)
+
 ## Modernize Part 1
 
 :::row:::
@@ -121,6 +129,8 @@ Once an application is running in **Azure App Service**, administrators can take
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
 
 **Azure Logic Apps** makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.
+
+![](../media/clear.png)
 
 ## Modernize Part 2
 
