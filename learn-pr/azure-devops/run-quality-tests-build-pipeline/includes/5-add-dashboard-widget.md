@@ -1,8 +1,8 @@
-Andy and Mara are excited to show Amita the progress they've made. They've already set up a dashboard so they can monitor pull requests and visualize the health of their builds.
+Andy and Mara are excited to show Amita the progress they've made. They've already set up a dashboard. Now they can monitor pull requests and visualize the health of their builds.
 
 Here you'll add a widget to your dashboard to help you visualize your test runs over time.
 
-Amita takes a look and she's excited.
+Amita takes a look and is excited.
 
 **Amita**: This is great progress. Thank you! Not to sound ungrateful, but is there any way I can just see a brief overview of the test results over time?
 

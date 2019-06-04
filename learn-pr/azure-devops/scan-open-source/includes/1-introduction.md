@@ -1,17 +1,17 @@
 In this module, you'll scan open-source components for security vulnerabilities and assess their license ratings.
 
-It's important to have an inventory of the open source components your project uses. You need to understand what libraries have vulnerability issues, when those vulnerabilities were addressed, and what versions you can use. Based on this information, you may even choose to use a different library or write your own.
+It's important to have an inventory of the open-source components your project uses. You need to understand what libraries have vulnerability issues, when those vulnerabilities were addressed, and what versions you can use. Based on this information, you may even choose to use a different library or write your own.
 
 You also need to understand what licenses these libraries use. Some licenses require you to make public any code that uses that library if you have made changes to the library's code. This is problematic when your source code is not open source as well. Of course, you'll need to check with your own legal team to determine what licenses you can use.
 
 In [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-code-for-vulnerabilities?azure-portal=true), you used SonarCloud to scan for potential vulnerabilities in your source code during the build process.
 
-In this module, you'll perform a similar process. Here you'll use WhiteSource Bolt, by WhiteSource, to scan open source components for known vulnerabilities and license ratings.
+In this module, you'll perform a similar process. Here you'll use WhiteSource Bolt, by WhiteSource, to scan open-source components for known vulnerabilities and license ratings.
 
 In this module, you will:
 
-* Describe what tools you can use to inspect open source software packages for security and license ratings
-* Access package and license ratings for open source components using WhiteSource Bolt
+* Describe what tools you can use to inspect open-source software packages for security and license ratings
+* Access package and license ratings for open-source components using WhiteSource Bolt
 * Analyze the results of the scan so you can take the appropriate action
 
 ## Prerequisites

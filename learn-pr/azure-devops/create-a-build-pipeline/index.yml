@@ -14,7 +14,7 @@ summary: Set up a continuous integration (CI) pipeline that automates the proces
 abstract: |
   In this module, you will:
   - Create a build pipeline in Azure Pipelines
-  - Map manual build steps to automated build tasks
+  - Map the manual build steps to automated build tasks
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
 prerequisites: |

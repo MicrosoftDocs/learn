@@ -1,10 +1,10 @@
-Azure DevOps provides several tools you can use for better team collaboration, automated build processes, testing, version control, and package management. That's quite a bit to cover! We'll get to all of the tools eventually. For now, let's follow the team as they begin with an overview of what Azure DevOps is and how they can get started.
+Azure DevOps provides several tools you can use for better team collaboration. It also has tools for automated build processes, testing, version control, and package management. That's quite a bit to cover! We'll get to all of the tools eventually. For now, let's follow the team as they begin with an overview of what Azure DevOps is and how they can get started.
 
 **Mara**: Amita asked about tools and I'm proposing we use Azure DevOps.
 
 **Andy**: How can we use something for Azure if we're not deploying to the cloud? Plus, we deploy to Linux. Does that matter?
 
-**Mara**: These tools are great whether you're in the cloud or on-prem. It also doesn't matter if we're deploying to Linux or Windows or another platform. Azure DevOps is a suite of services that provide an end-to-end solution for anyone who wants an enterprise-grade toolchain. Those tools will help us implement all the practices we just talked about. Here's what you get:
+**Mara**: These tools are great whether you're in the cloud or on-prem. It also doesn't matter if we're deploying to Linux or Windows or another platform. Azure DevOps is a suite of services that provide a solution for anyone who wants an enterprise-grade toolchain. Those tools will help us implement all the practices we just talked about. Here's what you get:
 
 | | |
 |-|-|
@@ -16,7 +16,7 @@ Those are the three I was thinking about using now. There are two other services
 
 | | |
 |-|-|
-|![Azure Repos](../media/azure-repos.png)|[Azure Repos](https://azure.microsoft.com/services/devops/repos/). These give us provide unlimited, cloud-hosted private and public Git repos.|
+|![Azure Repos](../media/azure-repos.png)|[Azure Repos](https://azure.microsoft.com/services/devops/repos/). These give us provide unlimited, cloud-hosted private, and public Git repos.|
 |![Azure Artifacts](../media/azure-artifacts.png)|[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/). These let us create, host, and share packages.|
 
 **Amita**: This sounds like a lot. Where do we start?
@@ -25,4 +25,4 @@ Those are the three I was thinking about using now. There are two other services
 
 **Tim**: What do we have to do?
 
-**Mara**: It's easy. All we do is set up an account and an organization. It only takes a couple minutes.
+**Mara**: It's easy. All we do is set up an account and an organization. The whole process only takes a couple minutes.
