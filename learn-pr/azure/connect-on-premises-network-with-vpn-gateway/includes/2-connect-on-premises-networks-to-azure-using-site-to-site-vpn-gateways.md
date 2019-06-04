@@ -22,7 +22,7 @@ You typically use policy-based VPNs on firewall devices that are used for packet
 
 - Support for IKEv1 only.
 - Use of *static routing*, where combinations of address prefixes from both networks control how traffic is encrypted and decrypted through the IPSec tunnel. The source and destination of the tunneled networks are declared in the policy and don't need to be declared in routing tables.
-- Enforced use of policy-based VPNs in specific scenarios that require them, such as for compatibility with legacy on-premises VPN devices.
+- Policy-based VPNs must be used in specific scenarios that require them, such as for compatibility with legacy on-premises VPN devices.
 
 ### Route-based VPNs
 
