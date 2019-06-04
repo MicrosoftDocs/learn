@@ -135,14 +135,14 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
       5) Set the state of the VM as generalized so the Azure platform knows the VM has been generalized
       `az vm generalize --resource-group myResourceGroup --name myVM`
       6) Create VMs from the image 
-      ```
-      az vm create \
-        --resource-group myResourceGroup \
-        --name myVMfromImage \
-        --image myImage \
-        --admin-username azureuser \
-        --generate-ssh-keys
-       ```
+          ```
+          az vm create \
+            --resource-group myResourceGroup \
+            --name myVMfromImage \
+            --image myImage \
+            --admin-username azureuser \
+            --generate-ssh-keys
+           ```
 
 1. **Exercise - Create an image from a Snapshot.**
 
