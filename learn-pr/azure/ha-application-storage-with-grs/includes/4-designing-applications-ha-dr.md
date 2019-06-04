@@ -1,4 +1,4 @@
-You've created your storage account in Azure and configured the replication settings to enable RA-GRS.  Now you're ready to start designing the EasyHealthCare application to make use of the RA-GRS storage account. This approach helps to ensure the application is highly available for doctors and consultants in the field.  Doctors and consultants can access data and upload records 24/7, even if there's an outage in their Primary region.
+You've created your storage account in Azure and configured the replication settings to enable RA-GRS.  Now you're ready to start designing the health care application to make use of the RA-GRS storage account. This approach helps to ensure the application is highly available for doctors and consultants in the field.  Doctors and consultants can access data and upload records 24/7, even if there's an outage in their Primary region.
 
 In this unit, you'll look at how to design and configure an application that can handle disaster recovery and fail over. You'll learn about considerations that must be taken when designing applications for high availability.
 
@@ -30,7 +30,7 @@ There are a number of factors you need to consider when designing your applicati
 
 - **Disaster recovery** - This is the ability to recover the application if there's a major incident impacting the services hosting the application such as a datacenter outage, or complete regional outage.  Disaster recovery includes manually failing over an application using ASR (Azure Site Recovery). ASR enables you to fail over servers between Azure regions or Azure backups. You can then restore a database or application from backup.
 
-- **Eventual consistency** - Read Access-Geo Redundant Storage (RA-GRS) works by replicating data from the primary endpoint to the secondary endpoint.  The data, which is replicated between the regions is not available at the secondary location immediately.  Eventual consistency means that all the transactions on the primary region will eventually appear at the secondary region. The data isn't lost, but there may be some lag. The table below shows the effects of eventual consistency in the EasyHealthCare system. When a doctor uploads a new record to primary region, or when a consultant updates an existing record, the latest records are immediately available in the primary storage location. The updates are eventually propagated to the secondary regions, but there may be a delay before this occurs. An application reading data from a secondary location may see out-of-date data for a short while.
+- **Eventual consistency** - Read Access-Geo Redundant Storage (RA-GRS) works by replicating data from the primary endpoint to the secondary endpoint.  The data, which is replicated between the regions is not available at the secondary location immediately.  Eventual consistency means that all the transactions on the primary region will eventually appear at the secondary region. The data isn't lost, but there may be some lag. The table below shows the effects of eventual consistency in the health care system. When a doctor uploads a new record to primary region, or when a consultant updates an existing record, the latest records are immediately available in the primary storage location. The updates are eventually propagated to the secondary regions, but there may be a delay before this occurs. An application reading data from a secondary location may see out-of-date data for a short while.
 
 | Time  | Transaction | Replication     | Last Sync Time  | Result |
 | ------| --------    | --------------- | --------------- | ------ |
@@ -40,23 +40,7 @@ There are a number of factors you need to consider when designing your applicati
 | T3    | Read records from secondary region | | | When you read data from the secondary, you get stale data as this hasn't yet been replicated from the primary |
 | T4    |    -        | Records replicate |    -           | Data at secondary now updated. Last Sync Time updated |
 
-## Azure Features that support high availability
-
-There are several features available within Azure that you can use to make an application redundant at various levels, from a server failure, hardware fault, or an entire region outage.
-
-![Azure features](../media/4-azure-features.png).
-
-- **Availability sets**. If your application is hosted on virtual machines, you should deploy two or more virtual machines in an Azure availability set. Using an availability set protects your application against hardware faults, servers issues, server maintenance, and network faults.  With availability sets, servers are split across different fault and update domains, to provide resiliency against all issues listed above
-
-- **Availability Zones**. An availability zone (AZ) is a separate facility within an Azure region.  A facility is commonly known as a datacenter.  There are usually two or three AZs within one region. Each AZ has access to its own set of hardware, power, and networks. Deploying your application across AZs will protect your application from a datacenter failure by ensuring that servers are still accessible in the other AZs.
-
-- **Azure Site Recovery**. Using Azure Site Recovery (ASR) you can replicate virtual machines to another Azure region for disaster recovery and business continuity.  Virtual machines replicate across from primary to secondary regions based on a replication policy you set. In the event of an Azure region failure, you can invoke disaster recovery by bringing the virtual machines online in the secondary region.  Once the primary region is back online, you can easily fail back the virtual machines.
-
-- **Azure Health Dashboard**. The health dashboard tracks the health of your applications and Azure Services.  An application must be designed to cope with network blips, so set up alerting for monitoring possible outages.
-
-- **Azure Backup**. USe this service to ensure that you have a backup of your data and virtual machines to recover from a complete service failure.
-
-## Best practices for cloud-based applications
+## Best practices for cloud-based applications with RA-GRS
 
 This section summarizes some general guidelines you should follow when developing an application for the cloud.
 
@@ -64,19 +48,25 @@ This section summarizes some general guidelines you should follow when developin
 
 Transient failures can be caused by a number of conditions from a disconnected database, temporary loss of network, latency issues causing slow response from service. Applications must detect the faults and determine whether it's simply a blip in the service, or a more severe outage.  The application must have the capability to retry a service if it believes the fault is likely to be transient, before listing it as failed.
 
-### Load balance across virtual machines
+### Handle failed writes
 
-When you deploy an application in the cloud, you can load balance the traffic to the application by placing the virtual machines behind a load balancer and distributing the traffic to the virtual machines. If there's a fault with one of the servers, the load balancer will detect this and take the server out of service.
+RA-GRS replicates writes across locations. If the primary location fails, read operations can be directed towards the secondary location. However, this secondary location is read-only. If a long-lasting outage (more than a few seconds) occurs at the primary location, your application must be able to run in read-only mode. You can achieve this in several ways:
 
-You can also scale out the application across more than one virtual machine. If demand increases to your application, the application can spread the load across virtual machines to help improve performance.
+- Temporarily return an error from all write operations, until write capability is restored.
+- Buffer write operations, perhaps by using a queue, and enact them later when the write location becomes available.
+- Write updates to a different storage account in another location. Merge these changes into the storage account at the primary location when it becomes available.
+- Trigger the application to disable all write operations, and inform the user that the application is running in read-only mode. You can also use this mechanism if you need to upgrade the application and ensure that no-one is using the primary location while the upgrade is taking place.
 
-Use Azure Traffic Manager to distribute traffic across endpoints. You can distribute traffic to your application running in the primary region. If there's a failure with the servers in the primary region, Azure Traffic Manager will detect this failure and redirect the traffic to the secondary region.
+An application using the Azure Storage client library can set the **LocationMode** of a read request to one of the following values:
 
-### Replicate data
+- PrimaryOnly. The read will fail if the primary location is unavailable. This is the default behavior.
+- PrimaryThenSecondary. Try the primary location first, and then try the secondary location if the primary location is unavailable. Fail if the secondary location is also unavailable.
+- SecondaryOnly. Only try the secondary location, and fail if it is not available.
+- SecondaryThenPrimary. Try the secondary location first, and then the primary.
 
-Replicate data across to secondary regions, so that the data can still be accessed if there's an outage in the primary region.  Use geo-redundant storage accounts across regions. If you're deploying applications that use databases like SQL or Cosmos DB, use the replication features of these services to copy the data across to a secondary region.
+### Handle eventual consistency
 
-You can also make use of ASR to replicate virtual machines between regions. ASR replicates the data to a target region and when an outage occurs you can fail over to the secondary location.
+Be prepared to handle stale data if it is read from a secondary region. As described above, it takes time to replicate data between regions, and an outage can occur between writing to the primary location and the data being replicated to each secondary location.
 
 ### Use the Circuit Breaker pattern
 
@@ -91,6 +81,8 @@ The difference between the Circuit Breaker pattern and the Retry pattern, is tha
 
 The purpose of implementing a Circuit Breaker pattern is to provide stability to your application while the system recovers from a failure.
 
-Use the Circuit Breaker pattern to prevent an application from trying connections to resources, which have failed, and instead redirecting the connection to working resources to minimize disruption. Don't't use the Circuit Breaker pattern for accessing local or in-memory data structures, as circuit breakers would add overhead to the system.
+Use the Circuit Breaker pattern to prevent an application from trying connections to resources, which have failed, and instead redirecting the connection to working resources to minimize disruption. Don't use the Circuit Breaker pattern for accessing local or in-memory data structures, as circuit breakers would add overhead to the system.
+
+When you implement the circuit breaker pattern, set the **LocationMode** of read requests appropriately. Most of the time, you should set this mode to **PrimaryThenSecondary**. If the read from the primary location times out, then the secondary location will be used. However, this process can slow an application down if performed repeatedly. Once the circuit breaker has detected that the primary location is unavailable, it should switch the mode to **SecondaryOnly**. This switch will ensure that read operations don't wait for a timeout from the primary location before trying the secondary. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the **PrimaryThenSecondary** mode.
 
 For more information, see [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)

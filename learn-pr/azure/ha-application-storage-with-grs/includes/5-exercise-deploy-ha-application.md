@@ -1,6 +1,6 @@
-As the Solution Architect for EasyHealthCare, you now want to start implementing the design to deploy a highly available application. As a first step, you're going to download and install Fiddler that will be used run the steps to deploy and test the application.
+As the Solution Architect for the health care system, you now want to start implementing the design to deploy a highly available application. As a first step, you're going to download and install Fiddler that will be used run the steps to deploy and test the application.
 
-In the EasyHealthCare application, if there's a failure connecting to the primary region holding your data in Azure storage, the application should automatically fail over and use the storage accounts at the secondary location.  The circuit breaker should force the application to behave in this manner and when the primary location is back online, it should reroute the application back to the primary region. Before committing to full-blown development of the EasyHealthCare application, you want to test this approach using a sample application with dummy data.
+In the health care application, if there's a failure connecting to the primary region holding your data in Azure storage, the application should automatically fail over and use the storage accounts at the secondary location.  The circuit breaker should force the application to behave in this manner and when the primary location is back online, it should reroute the application back to the primary region. Before committing to full-blown development of the health care application, you want to test this approach using a sample application with dummy data.
 
 In this exercise, you’ll run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account.  The application switches to the secondary storage account when a problem is detected, and fails back to the primary location when it's available again. The application uploads a file to blob storage, it then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation.  If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but returns to the secondary location if the primary location is still unavailable.
 
@@ -8,7 +8,7 @@ In this exercise, you’ll run an application that shows how you can use the Cir
 
 ## Install Fiddler
 
-The Fiddler tool is a third-party tool, which is used to help you debug applications, in particular web applications.  It captures network traffic between computers, and based on the result, uses its event-based scripting subsystem to halt connections.  In this exercise, you'll use Fiddler to monitor the connection to the storage account for the EasyHealthCare application. When the application detects that consultants are no longer able to download blobs from storage, it will initiate failover to the secondary storage account.  When it detects that the primary connection is available again, it will redirect the connections to the primary location. You'll see the traffic being directed to the different storage account endpoints in Fiddler.
+The Fiddler tool is a third-party tool, which is used to help you debug applications, in particular web applications.  It captures network traffic between computers, and based on the result, uses its event-based scripting subsystem to halt connections.  In this exercise, you'll use Fiddler to monitor the connection to the storage account for the health care application. When the application detects that consultants are no longer able to download blobs from storage, it will initiate failover to the secondary storage account.  When it detects that the primary connection is available again, it will redirect the connections to the primary location. You'll see the traffic being directed to the different storage account endpoints in Fiddler.
 
 - If you don't have Fiddler installed already, download it and install from the [Telerik Fiddler home page](https://www.telerik.com/fiddler).
 
@@ -18,34 +18,14 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/).
 
-1. Download the source code from the Azure Samples repository. You can download this directly from this URL: https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-ha-ra-grs/archive/master.zip
+1. Use Git to download the sample code. Open a Git command prompt window, and run the following command to download the CircuitBreaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
 
-    Alternatively, you can use Git to download the sample. Open a Git command prompt window, and run the following command to download the CircuitBreaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
+    <!-- NOTE TO REVIEWER. REPLACE <git repo> WITH THE URL OF THE CODE REPOSITORY FOR THIS MODULE -->
 
     ```Command Prompt
-    git clone https://github.com/Azure-Samples/storage-dotnet-circuit-breaker-ha-ra-grs <location>
-    ```
-<!--
-## Connect to the storage account
-
-1. Switch to the Cloud Shell window in the browser, and run the following command to obtain the connection string for the storage account you created in the previous exercise:
-
-    ```azurecli
-    az storage account show-connection-string \
-        --name $STORAGEACCT \
-        --resource-group <rgn>[Sandbox resource group]</rgn>
+    git clone https://github.com/<git repo> <location>
     ```
 
-1. Copy the output connection string to the clipboard.
-
-1. Start Powershell on your local computer
-
-1. Run the following command. This command creates an environment variable that the sample application will use to connect to your storage account. Paste in the connection string you copied from step 1:
-
-    ```Powershell
-    setx storageconnectionstring <connection string>
-    ```
--->
 ## Configure Fiddler
 
 1. Start Fiddler.
@@ -60,11 +40,29 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 ## Examine the sample application
 
-1. Start Visual Studio, and open the *CircuitBreaker.sln* solution that you downloaded from GitHub. This application implements the Circuit Breaker pattern to manage connections to a replicated Azure storage account. The circuit breaker detects whether the connection to the primary location is available, and if not, switches to the secondary account for a short while before retrying the primary location again.
+1. Switch to the Cloud Shell window in the browser, and run the following command to obtain the connection string for the storage account you created in the previous exercise:
 
-1. In the **Solution Explorer** window, double-click the **Program.cs** file. This file contains the C# source code for the application.
+    ```azurecli
+    az storage account show-connection-string \
+        --name $STORAGEACCT \
+        --resource-group <rgn>[Sandbox resource group]</rgn>
+    ```
 
-1. Scroll down to the start of the **RunCircuitBreakerAsync** method:
+2. Copy the output connection string to the clipboard.
+
+3. Start Visual Studio, and open the *CircuitBreaker.sln* solution that you downloaded from GitHub. This application implements the Circuit Breaker pattern to manage connections to a replicated Azure storage account. The circuit breaker detects whether the connection to the primary location is available, and if not, switches to the secondary account for a short while before retrying the primary location again.
+
+4. In the **Solution Explorer** window, double-click the **Program.cs** file. This file contains the C# source code for the application.
+
+5. In the **Program** class, locate the following statement:
+
+    ```C#
+    static string storageConnectionString = "<Add your storage connection string here>";
+    ```
+
+    Replace the text `<Add you storage connection string here>` with the connection string from the clipboard.
+
+6. Scroll down to the start of the **RunCircuitBreakerAsync** method:
 
     ```C#
     /// <summary>
@@ -74,7 +72,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
     private static async Task RunCircuitBreakerAsync()
     ```
 
-1. In this method, locate the following block of code:
+7. In this method, locate the following block of code:
 
     ```C#
     // Define a reference to the actual blob.
@@ -87,7 +85,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     This code uploads the sample data (an image file) to a blob in your storage account.
 
-1. Examine the block of code that follows these statements:
+8. Examine the block of code that follows these statements:
 
     ```C#
     // Set the location mode to secondary so you can check just the secondary data center.
@@ -121,7 +119,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     This code attempts to verify that the data has been replicated to the secondary location. If the blob does not appear in this location after 60 seconds, the code times out with an exception.
 
-1. Examine the following statement:
+9. Examine the following statement:
 
     ```C#
     // Set the starting LocationMode to PrimaryThenSecondary. 
@@ -132,7 +130,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     This statement specifies that the application should attempt to read from the primary storage location first, and then the secondary if the primary location is unavailable.
 
-1. Scroll down to the following block of code:
+10. Scroll down to the following block of code:
 
     ```C#
     for (int i = 0; i < 1000; i++)
@@ -150,7 +148,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     This code iterates for 1000 times, downloading the data from blob storage. The first `if..else` block displays the iteration number of the download attempt (starting at 0), together with a prefix (either "P" or "S"), indicating whether the blob was downloaded using the primary or secondary storage location.
 
-1. Examine the following block. Some statements have been omitted, to focus on the logic of this code:
+11. Examine the following block. Some statements have been omitted, to focus on the logic of this code:
 
     ```C#
         // Set up an operation context for the downloading the blob.
@@ -185,7 +183,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     This block implements part of the Circuit Breaker pattern. The `OperationContext` object provides events that you can use for retrying a failed request. The `Retrying` event occurs when a request fails and is being retried, and the `RequestCompleted` event is raised when the request has finished (either successfully, or with a failure). The `DownloadToFileAsync` method downloads the blob data from storage, but also takes the `OperationContext` object as a parameter. If the download fails, the operation will run the `OperationContextRetrying` method. When the download completes, it will run the `OperationContextRequestCompleted` method.
 
-1. Scroll down to the **OperationContextRetrying** method:
+12. Scroll down to the **OperationContextRetrying** method:
 
     ```C#
     /// Retry Event handler 
@@ -217,7 +215,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     This method tracks how many times in succession the request has failed. If this number exceeds a specified threshold, the method changes the `LocationMode` property of the blob client to force it to download data from the secondary location.
 
-1. Find the **OperationContextRequestCompleted** method
+13. Find the **OperationContextRequestCompleted** method
 
     ```C#
     /// RequestCompleted Event handler 
@@ -284,6 +282,14 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 11. Return to your application and press any key to continue running it. You'll see that the application now successfully reverts to the primary storage account location.
 
-12. Close the application, close Fiddler, and then Visual Studio.
+12. Close the application, and then close Visual Studio.
+
+13. In Fiddler, on the **Tools** menu, click **Options**.
+
+14. In the **Options** dialog box, click the **HTTPS** tab.
+
+15. On the **HTTPS** tab, click **Actions**, and then click **Reset All Certificates**. Allow Fiddler to remove its certificates from the Trusted Root List and the Root Store. This action removes HTTPS inspection certificate installed by Fiddler earlier.
+
+16. Click **OK**, and then close Fiddler.
 
 You've verified that data uploaded to Azure storage is replicated across a storage account in different regions. You've seen how an application can use the Circuit Breaker pattern to handle connection failures, and switch from the primary to secondary storage account locations. The application can revert back to the primary location when the connection becomes available again.

@@ -2,4 +2,6 @@ In this module you've learned about RA-GRS storage, and how to create an applica
 
 ## Cleanup
 
+Make sure that you have removed the HTTPS inspection certificate for Fiddler.
+
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
