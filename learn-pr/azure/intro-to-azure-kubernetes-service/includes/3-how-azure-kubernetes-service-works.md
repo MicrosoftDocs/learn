@@ -25,7 +25,7 @@ Both `az aks` and `kubectl` are available as defaults when using Cloud Shell. It
 
 ## How workloads are developed and deployed to AKS
 
-![Image to accelerate development and deployment](../media/3-development-accelerate.png)
+![Image showing combined services used to accelerate development and deployment](../media-draft/3-development-accelerate.png)
 
 AKS supports the Docker image format. The compatibility with Docker means that you can use any development environment to create a workload, package the workload as a container and deploy the container as a Kubernetes pod.
 

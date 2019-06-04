@@ -12,13 +12,13 @@ Suppose your fleet management solution includes three major applications:
 
 You realize that you have to scale out your solution to meet customer demands. One option is to deploy a new virtual machine (VM) for each application and then deploy the applications to the VMs. However, doing so will make you responsible for the management of each additional VM. For example, you’ll have to make sure the correct operating system (OS) versions and dependencies for each application is installed and configured. You also have to make sure you're installing and upgrading the correct versions of the applications. If there are errors, you have to make sure you can roll back the installation with the least amount of disruption to your solution.
 
-![Image of problem](../media/2-deploy-mutile-instances.png)
+![Image of replicated servers as VMs in the cloud and how this problem raises migration questions and problems](../media-draft/2-deploy-mutile-instances.png)
 
 The above deployment is cumbersome, sometimes error prone and doesn't easily scale single services. For example, you might find you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
 
 A container is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. Containers allows us to split up a monolithic application into the individual services that makes up the solution. You then deploy these separate services via containers.
 
-![Image of problem](../media/2-container.png)
+![Image of a server or application replicated as containers for cloud deployment](../media-draft/2-container.png)
 
 The container concept gives us three mayor benefits.
 
@@ -32,7 +32,7 @@ The above benefits make containers a popular choice for developers and IT operat
 
 ## What is container management?
 
-![Image of problem](../media/2-deploy-mutile-containers.png)
+![Image of replicated servers as multiple containers in the cloud](../media-draft/2-deploy-mutile-containers.png)
 
 Even though you can think of containers as VMs, you have to keep in mind that they aren't. A container has a distinct life cycle. It's deployed, started, stopped, and destroyed as requested. This life cycle makes containers disposable and impacts how developers and IT operations should think about the management of large container deployments.
 
@@ -46,7 +46,7 @@ These types of questions justify some sort of system to help you manage your con
 
 ## What is Kubernetes?
 
-![Image of problem](../media/2-deploy-mutile-containers-k8s.png)
+![Image of replicated servers as multiple containers in a Kubernetes cluster](../media-draft/2-deploy-mutile-containers-k8s.png)
 
 Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides us with declarative configuration to orchestrate containers in different compute environments. This orchestration gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
 
@@ -75,7 +75,7 @@ A Kubernetes pod, in its simplest form, is the same as a container. However, a p
 
 ## What is Azure Kubernetes Service?
 
-![Image of problem](../media/2-deploy-AKS.png)
+![Image of replicated servers as multiple containers in a AKS Kubernetes cluster](../media-draft/2-deploy-AKS.png)
 
 Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment and makes it simple to deploy and managed containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. The Kubernetes cluster master is managed by Azure and is free. You manage the agent nodes in the cluster, and only pay for the VMs your nodes are running on.
 
@@ -84,8 +84,6 @@ You can either create your cluster in the Azure portal or use the Azure CLI. Whe
 With AKS, we get the benefits of open-source Kubernetes without the complexity or operational overhead compared to running our own custom Kubernetes cluster.
 
 ## Azure Kubernetes Service features
-
-![Image of problem](../media/2-manage.png)
 
 AKS integrates into the various Azure platform features that enhance the standard Kubernetes offering.
 
