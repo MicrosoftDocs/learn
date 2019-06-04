@@ -161,6 +161,8 @@ In this segment, you’ll see how Azure Boards enables you to:
 
 Contoso Air wants to track what their teams are working on. They find it hard to gauge current commitments and plan for future projects.
 
+:::row:::
+
 ![Icon indicating play video](../media/video-icon.png)
 
 :::column span="1":::

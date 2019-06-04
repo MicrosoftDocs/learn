@@ -14,6 +14,7 @@ The process Victor follows as he completes the lift and shift migration of Conto
 
 :::column span="1":::
 
+![](../media/clear.png)
 
 ### Azure Migrate
 
