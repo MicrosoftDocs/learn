@@ -47,7 +47,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
         --local-address-prefixes 172.16.0.0/16
     ```
 
-    This gateway represents the "on-premises" network that you're connecting to. So the IP address specified as the remote gateway (which is the simulated on-premises network) will need to be updated later because it doesn't exist yet in our scenario.
+    This gateway represents the on-premises network that you're connecting to. The IP address specified as the remote gateway (which is the simulated on-premises network) will need to be updated later because it doesn't exist yet in our scenario.
 
 ## Create the simulated on-premises network and supporting resources
 
