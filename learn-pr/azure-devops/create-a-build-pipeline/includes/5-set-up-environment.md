@@ -16,7 +16,7 @@ You can continue with your existing project if you completed the previous module
 <!-- TODO: Update URL with prod -->
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-mslearn.azurewebsites.net/?name=create-build-pipeline)
+> [Run the template](https://azuredevopsdemogenerator-mslearn.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
@@ -29,7 +29,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Click **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](9-clean-up-environment.md) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/modules/create-a-build-pipeline/includes/9-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Move the work item to Doing
 
