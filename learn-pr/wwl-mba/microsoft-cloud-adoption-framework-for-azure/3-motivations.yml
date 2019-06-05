@@ -1,0 +1,15 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.3-motivations
+title: Motivations
+metadata:
+  title: Motivations
+  description: Motivations
+  ms.date: 5/27/2019
+  author: ariciroz
+  ms.author: a-bidrag
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-motivations.md)] 
