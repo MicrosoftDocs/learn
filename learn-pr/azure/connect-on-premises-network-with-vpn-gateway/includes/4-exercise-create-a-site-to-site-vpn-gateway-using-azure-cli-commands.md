@@ -246,7 +246,7 @@ To verify that your virtual networks are connected, you'll use SSH to connect fr
     exit
     ```
 
-1. Run this command to close the SSH session from the Cloud Shell to **HQ-VM**.
+1. Run this command to close the SSH session from Cloud Shell to **HQ-VM**.
 
     ```bash
     exit
