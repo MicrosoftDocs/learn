@@ -6,9 +6,7 @@ Here, you will troubleshooting connectivity between two VMs in different subnets
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-[!include[](../../../includes/azure-cloud-shell-copy-paste-tip.md)]
-
-This exercise will be broken down into 2 parts. First, you will create a VNet with 2 subnets *(frontend and backend)*. Deploy VM inside each subnet and enable Azure Network Watcher. This will be done using the Azure CLI. In the second part, you will use the Azure portal to troubleshooting connectivity between 2 VMs in different subnets.
+[!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 ## Configure a virtual network and VMs
 
