@@ -1,35 +1,63 @@
-5. **Exercise - Troubleshoot networking using Network Watcher metrics and logs**
+In Network Watcher, metrics and logs can diagnose complexe configuration problems.
 
-In this module, you will do an exercise which involves troubleshooting using network watcher metrics and logs. In this exercise, you will use the NSG flow logs to diagnose the connectivity issue between the 2 VMs.
+Suppose you have two Virtual Machines (VMs) that cannot communicate. You want to obtain as much information as you can to diagnose the problem.
 
-1. There is connectivity issue from the backend subnet to everywhere over ports 80,443 and 3389.
- 
-1. Register for the Microsoft.Insights provider - NSG flow logging requires Microsoft.Insights provider. To register for the Microsoft.Insights provider, complete the following steps:
-    ![The following picture shows the user what they need to do and provides visual guidance.](../media/microsoft-insights.png)
-    - In the top, left corner of portal, select All services. In the Filter box, type Subscriptions. When Subscriptions appear in the search results, select it.
-    - From the list of subscriptions, select the subscription you want to enable the Microsoft.Insights provider for.
-    - Select Resource providers, under *Settings*.
-    - In search bar type in *microsoft.insights*, confirm that the *Status* for the *microsoft.insights* the provider is *Registered*. If the status is *Unregistered*, then select *Register*, to the right of the provider.
-      
-1. Create storage account - If you don’t have an existing Azure Storage account, you need to create a storage account for the NSG flow logs. Go to *All services* search *Storage Account*  click *add* then fill in the details below
-      ![The following picture provides visual aid.](../media/storage-account.png)
-    - Subscription - Keep it in the same subscription as your VNET.
-    - Resource group - Keep it in the same resource group as your VNET.
-    - Storage account Name - nsglogstorage101
-    - Location - East US
-    - Performence - Standard
-    - Account kind - StorageV2
-    - Replication - RA-GRS
-    - Access tier - Hot
+In this unit, you will troubleshoot by using Network Watcher metrics and logs. You will use the NSG flow logs to diagnose the connectivity issue between the two VMs.
 
-     Once you have filled in all the details hit *review and create*.
+## Register the Insights provider
 
-1. Create log analytics workspace - To view the NSG flow logs you will use log analytics. To install log analytics 
-    ![The following picture provides a visual aid.](../media/log-analytics-workspace.png)
-   - Go to *All services* then search for *log analytics*.
-   - Create log analytics workspace, use the same subscription, resource groups and location as the virtual network.  
+NSG flow logging requires Microsoft.Insights provider. To register for the Microsoft.Insights provider, complete the following steps:
 
-     Once you have filled in all the details hit *ok*.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
+1. In the top left corner of portal, click **All services**. In the Filter box, type **Subscriptions**. When **Subscriptions** appears in the search results, click it.
+1. Select the **Conciege** subscription, and then under **Settings**, click **Resource providers**.
+1. In the search bar, type **microsoft.insights**. 
+1. If the status of the **microsoft.insghts** provider is **Unregistered**, then click **Register**.
+
+    ![Registering the Insights provider](../media/microsoft-insights.png)
+
+## Create a storage account
+
+Now, create a storage account for the NSG flow logs:
+
+1. In the top left corner of portal, click **Create a resource > Storage > Storage account**.
+1. In the **Create storage account** page, fill in these settings:
+
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | Concierge |
+    | Resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Storage account name | nsglogstorage1 |
+    | Location | East US |
+    | Performance | Standard |
+    | Account kind | StorageV2 |
+    | Replication | Read-access geo-redundant storage |
+    | Access tier | Hot |
+
+1. Click **Review + create** and then click **Create**.
+
+    ![Creating a storage account](../media/storage-account.png)
+
+## Create log analytics workspace
+
+To view the NSG flow logs you will use log analytics. To install log analytics:
+
+1. In the top left corner of portal, click **All services**. In the Filter box, type **Log analytics**. When **Log analytics workspaces** appears in the search results, click it.
+1. Click **+ Add**, complete the page with these values, and then click **OK**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Log Analytics Workspace | testsworkspace |
+    | Subscription | Concierge |
+    | Resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Location | East US |
+    | Pricing tier | Per GB |
+    | | |
+
+    ![Creating a log analytics workspace](../media/log-analytics-workspace.PNG)
+
+
+<!-- TODO: revise from here -->
 
 1. Next step is to enable flow logging, add the storage account and add traffic analytics for your NSGs. In the portal
     ![The following picture provides a visual aid.](../media/nsg-flow-log-enabled.png)
