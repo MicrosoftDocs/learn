@@ -2,7 +2,7 @@ There are many modern tools for deep learning. Services such as text analytics, 
 
 ## TensorFlow
 
-![Logos Tensorflow](../media/Logos_Tensorflow.png)
+![Logos TensorFlow](../media/Logos_TensorFlow.png)
 
 TensorFlow is a Python library that can be extended to multiple languages. TensorFlow can be run on different types of processors, from cloud and desktop CPUs and GPUs, to small IoT devices, and in your browser. TensorFlow has many different capabilities, but it primarily excels at neural networks and deep learning.
 

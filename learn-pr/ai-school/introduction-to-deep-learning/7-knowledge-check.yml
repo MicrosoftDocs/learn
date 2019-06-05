@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Neural networks with at least one hidden layer, sometimes many more."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. Deep learning tends to have many hidden layers, causing long training times."
     - content: "Neural networks with many nodes per layer."
       isCorrect: false
       explanation: "Incorrect. Although deep neural nets often have many nodes per layer, many nodes per layer are not required."
@@ -34,55 +34,55 @@ quiz:
     choices:
     - content: "Only used for image processing."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. There are many applications for deep learning, not just image processing."
     - content: "Only used for language processing."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. While deep learning is particularly good at language processing, there are many other applications for deep learning."
     - content: "Likely to be useful for all datasets."
       isCorrect: false
       explanation: "Incorrect. Deep learning requires a large amount of labeled training data, which is often not possible for a given problem."
     - content: "Used for many different applications."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. There are many different variations of deep learning, allowing it to be applied successfully to many different applications."
   - content: "Convolutional neural networks (CNNs):"
     choices:
     - content: "Are mostly used for image and video analysis."
       isCorrect: true
-      explanation: "Correct."
-    - content: "Avoid problems with over fitting seen in more traditional neural networks."
+      explanation: "Correct. While there are many applications for CNNs, they are most popular for image and video analysis."
+    - content: "Avoid problems with overfitting seen in more traditional neural networks."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. CNNs can still run into similar overfitting issues as traditional neural networks."
     - content: "Require much smaller datasets than other types of machine learning."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. CNNs tend to require larger datasets than traditional machine learning."
     - content: "Train faster than traditional large neural networks."
       isCorrect: false
       explanation: "Incorrect. The feature extraction performed by CNNs can increase the training time required."
-  - content: "Keras, Tensorflow, and Pytorch are:"
+  - content: "Keras, TensorFlow, and Pytorch are:"
     choices:
     - content: "Software packages to design and run neural networks."
       isCorrect: true
-      explanation: "Correct. "
+      explanation: "Correct. Keras, TensorFlow, and Pytorch are all very popular libraries for neural networks."
     - content: "Kinds of deep neural networks."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Keras, TensorFlow, and Pytorch all allow neural networks to be built, but are not kinds of neural networks themselves."
     - content: "Common neural network design patterns."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. While Keras, TensorFlow, and Pytorch each have popular design patterns, they are not design patterns themselves."
     - content: "Types of gradient boosted tree models."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Keras, TensorFlow, and Pytorch are all related to neural networks."
   - content: "Recurrent Neural Networks (RNNs) are useful when:"
     choices:
     - content: "Prior information (context) is important for understanding."
       isCorrect: true
-      explanation: "Correct. "
+      explanation: "Correct. RNNs are provide the ability for models to better use recent historical data for predictions."
     - content: "One wishes to use a neural network without having a training dataset."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. RNNs still require a training set."
     - content: "Neural networks need to be used on specialized hardware."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. RNNs do not require specialized hardware compared to other machine learning models."
     - content: "You have very small amounts of data."
       isCorrect: false
       explanation: "Incorrect. RNNs do not generally perform well with very small datasets."
