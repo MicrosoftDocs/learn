@@ -13,9 +13,9 @@ title: Deep Learning
 summary: A high-level overview of deep learning and the types of solutions you can use.
 abstract: | 
   In this module, you will:
-  - Learn about deep learning applications.
-  - Learn about cnns and rnns.
-  - Learn about tools for deep learning.
+  - Articulate common applications for deep learning.
+  - Apply convolutional neural networks and recurrent neural networks.
+  - Describe the functions of popular deep learning tools.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels: 
@@ -28,11 +28,13 @@ roles:
 products: 
 - azure
 units: 
+- learn-wwl.deep-learning.introduction
 - learn-wwl.deep-learning.introduction-to-deep-learning
 - learn-wwl.deep-learning.deep-learning-applications
 - learn-wwl.deep-learning.introduction-to-cnns
 - learn-wwl.deep-learning.tools-for-deep-learning
 - learn-wwl.deep-learning.introduction-to-rnns
 - learn-wwl.deep-learning.knowledge-check
+- learn-wwl.deep-learning.summary
 badge: 
   uid: learn-wwl.deep-learning.badge #add the uid for your achievement badge.

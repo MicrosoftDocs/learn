@@ -18,9 +18,9 @@ quiz:
   questions:
   - content: "Which is correct?"
     choices:
-    - content: "Activation functions change if data flows from one node to another."
+    - content: "Activation functions determine if data flows from one node to another."
       isCorrect: true
-      explanation: "Correct. Activation functions can turn a node 'off', meaning that no data flows from that node to another."
+      explanation: "Correct. Activation functions can turn a node 'off', meaning that no data flows from that node to others."
     - content: "It is obvious which activation function to use, before starting training."
       isCorrect: false
       explanation: "Incorrect. You must experiment with different activation functions to optimize your neural network models."
@@ -35,9 +35,9 @@ quiz:
     - content: "Helps to undo design errors when setting up a neural network."
       isCorrect: false
       explanation: "Incorrect. Back propagation helps neural networks optimize their predictions, but don't undo design errors."
-    - content: "Is one method by which neural networks learn."
+    - content: "Is a method by which neural networks learn."
       isCorrect: true
-      explanation: "Correct. Back propagation helps neural networks optimize their weights, increasing accuracy."
+      explanation: "Correct. Back propagation helps neural networks optimize their weights effectively, increasing accuracy."
     - content: "Is used to determine how accurate a neural network is."
       isCorrect: false
       explanation: "Incorrect. Back propagation helps improve accuracy for the neural network, but it does not determine how accurate the neural network is."

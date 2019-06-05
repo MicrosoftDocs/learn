@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-introduction-to-rnns.md)] 
+  [!include[](includes/6-introduction-to-rnns.md)] 

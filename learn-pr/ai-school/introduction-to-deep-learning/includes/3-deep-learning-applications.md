@@ -21,8 +21,9 @@ TV shows you may be interested in, new products based on your previous purchases
 ## Summary
 
 That's an overview of the usual deep learning applications:
+
 * __Natural Language Processing__ - speech and text analysis.
 * __Computer Vision__ - image and video analysis.
-* __Recommendations__ - personalised recommendations based on your personal details.
+* __Recommendations__ - personalized recommendations based on your personal details.
 
 Next up is an introduction to convolutional neural networks (CNNs).

@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/2-deep-learning-applications.md)] 
+  [!include[](includes/3-deep-learning-applications.md)] 

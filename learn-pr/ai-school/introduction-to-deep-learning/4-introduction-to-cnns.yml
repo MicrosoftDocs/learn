@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-introduction-to-cnns.md)]
+  [!include[](includes/4-introduction-to-cnns.md)]

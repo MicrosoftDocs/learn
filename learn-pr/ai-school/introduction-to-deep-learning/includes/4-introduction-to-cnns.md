@@ -10,15 +10,16 @@ Pre-processing allows the data to be transformed into a state where the neural n
 
 ## You Only Look Once - YOLO
 
-YOLO is a popular CNN algorithm written in Python which is used for real-time object detection. YOLO uses a single neural network on an image - predicting bounding boxes and class probabilities.
+YOLO is a popular CNN algorithm written in Python that is used for real-time object detection. YOLO uses a single neural network on an image - predicting bounding boxes and class probabilities.
 
 ![6.3 YoloStatic](../media/6.3_YoloStatic.png)
 
-Having the entire detection pipeline in a single neural network gives YOLO major performance benefits. YOLO can perform accurate analysis of over 9000 different object categories in real-time.
+Having the entire detection pipeline in a single neural network gives YOLO major performance benefits. YOLO can perform accurate analysis of over 9000 different object categories in real time.
 
 YOLO can analyze every frame from most cameras. You are able to make a tradeoff - increasing the speed of analysis for a slight decrease in accuracy. However YOLO performs quite well analyzing between 30 and 60 images per second.
 
 ### Optional: Softmax
+
 Softmax is an activation function used in neural networks. CNNs commonly use softmax in the final layers of a classification model because softmax outputs probabilities for multiple classes. This has proven to be quite successful for multiclass classifications using CNNs and other deep neural networks.  
   
 ![6.3 CNN (2)](../media/6.3_CNN__2_.png)
@@ -26,7 +27,7 @@ Softmax is an activation function used in neural networks. CNNs commonly use sof
 As you can see above, Softmax outputs multiple probabilities adding up to 1. The probability that the data softmax has analyzed represents a lion is given as 0.98, whereas the next closest  is a wolf at 0.008 - we will predict the original image is a lion.  
 
 ### Programming exercise
- 
+
 > Let's try out making a simple CNN in Azure Notebooks. We’re going to use a CNN to recognize handwritten digits.
 >  
 > **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  

@@ -1,6 +1,6 @@
 There are many modern tools for deep learning. Services such as text analytics, custom vision, and content moderator all allow custom applications of deep learning with ease. Engineering tools such as TensorFlow, Keras, and PyTorch are also extremely popular open-source libraries.
 
-#### TensorFlow
+## TensorFlow
 
 ![Logos Tensorflow](../media/Logos_Tensorflow.png)
 
@@ -8,7 +8,7 @@ TensorFlow is a Python library that can be extended to multiple languages. Tenso
 
 It's sometimes considered a ‘low-level’ library because other libraries, such as Keras, use TensorFlow behind the scenes to produce models and analyze data.
 
-#### Keras
+## Keras
 
 ![Logos Keras](../media/Logos_Keras.png)
 
@@ -16,15 +16,15 @@ Keras is a ‘high-level’ neural networks Python library. Keras uses TensorFlo
 
 It's common for AI practitioners to use Keras to test if a certain type of model could be successfully applied to a problem. If the Keras model shows potential, it may be worth investing time to build and tune a model using TensorFlow.
 
-#### PyTorch
+## PyTorch
 
 ![Logos Pytorch](../media/Logos_Pytorch.png)
 
 PyTorch is a deep learning research platform that allows flexibility and performance. PyTorch is still in its early stages of development - version 1.0 hasn’t been released yet.
 
-Despite this, PyTorch is extremely popular and is known especially for its ease of use and customizable CNN models. PyTorch also contains many tools for pre-processing of data, replacing NumPy which is commonly used elsewhere.
+Despite this, PyTorch is extremely popular and is known especially for its ease of use and customizable CNN models. PyTorch also contains many tools for pre-processing of data, replacing NumPy that is commonly used elsewhere.
 
-#### NumPy
+## NumPy
 
 ![Logos Numpy](../media/Logos_Numpy.png)
 

@@ -14,7 +14,7 @@ Standard RNNs struggle when there is a large gap between previous data that is r
 
 ### LSTM
 
-LSTMs are a special type of RNN which dramatically improves the model’s ability to connect previous data to current data where there is a long gap. For example, a standard RNN may struggle to accurately predict the sentence “My favourite artist is Mozart” because there may be a large gap between information about the context of the word artist - the context may have previously been about a painter.
+LSTMs are a special type of RNN which dramatically improves the model’s ability to connect previous data to current data where there is a long gap. For example, a standard RNN may struggle to accurately predict the sentence “My favorite artist is Mozart” because there may be a large gap between information about the context of the word artist - the context may have previously been about a painter.
 
 LSTMs are quite complex behind the scenes so we won’t worry about the in-depth details for now. Where a normal RNN contains a single layer per cell, LSTMs contain four interacting layers.
 
@@ -27,7 +27,7 @@ LSTMs are quite complex behind the scenes so we won’t worry about the in-depth
 With GRUs, what you need to know for now is that they hold some advantages over LSTM networks for sequence problems because they are simpler. Training time decreases with simplification, allowing better results in some circumstances because training is more effective overall.
 
 ### Programming exercise
- 
+
 > Let's try out RNNs in Azure Notebooks.  
 >  
 > **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
@@ -40,32 +40,10 @@ With GRUs, what you need to know for now is that they hold some advantages over 
 >  
 > If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
 
-## Summary 
-
-That’s that! Congratulations for finishing this module. You're almost finished.
+## Summary
 
 In this section we covered:
 
 * __Recurrent neural network__ (RNN) - a class of neural network that excels at analyzing and predicting data in a sequence.
 * __LSTM__ - a variation of RNNs that is very good at connecting previous data to current data where there is a long gap.
 * __GRU__ - a variation of LSTM that is simpler - meaning a decrease in training time, which can be quite beneficial sometimes.
-
-Let’s recap on what we’ve learned in this module.
-
-- __Deep learning__ simply means using neural networks with many layers
-* By having many layers, these networks have more room to learn abstract information, like what a nose or dog looks like.
-* Deep learning can have very long training times.
-* There are different ways these can be organised.
- - Convolutional neural networks are often used for image processing.
-  - __Recurrent neural networks__ are often used for data like text or music
- * RNNs have a special kind of memory for things seen recently. 
- * There are many different variants of RNNs, each with different advantages.
-
-Those of us who read the optional information will have learned that:
-
-* there are a wide variety of ways to organize a neural network
-      - Which you choose depends on what you want to achieve and some degree of experimentation.
-* To build a deep network one needs to pick tools to do so. There are many tools available, including TensorFlow and Keras.bb
-
-
-Deep learning is an immensely deep field that is constantly improving. The next module is a short one - unsupervised learning. Let's get to it!
