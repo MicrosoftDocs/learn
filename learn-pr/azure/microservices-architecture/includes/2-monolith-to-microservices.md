@@ -35,7 +35,14 @@ Microservice architectures are technology agnostic, but you will often see conta
 
 Why would you choose a microservices architecture? There are several primary benefits to a microservices architecture.
 
-#### Agility
+- Agility
+- Small code, small teams
+- Mix of technologies
+- Resiliency
+- Scalability
+- Data isolation
+
+<!-- #### Agility
 
 Because microservices are deployed independently, it's easier to manage bug fixes and feature releases. You can update a service without redeploying the entire application, and roll back an update if something goes wrong. In many traditional applications, if a bug is found in one part of the application, it can block the entire release process; as a result, new features may be held up waiting for a bug fix to be integrated, tested, and published.
 
@@ -57,13 +64,22 @@ A microservices architecture allows each microservice to be scaled independently
 
 #### Data isolation
 
-It improves the ability to perform data schema updates, because only a single microservice is affected. In a monolithic application, schema updates can become very challenging, because different parts of the application may all touch the same data, making any alterations to the schema risky. You can update a schema, but keep your API surface intact so that service consumers have the same experience, regardless of the underlying data architecture.
+It improves the ability to perform data schema updates, because only a single microservice is affected. In a monolithic application, schema updates can become very challenging, because different parts of the application may all touch the same data, making any alterations to the schema risky. You can update a schema, but keep your API surface intact so that service consumers have the same experience, regardless of the underlying data architecture. -->
 
 ### Potential challenges of a microservices architecture
 
 While there are numerous benefits, a microservices architecture is not a fix-all, and does bring its own set of challenges.
 
-#### Complexity
+- Complexity
+- Development and testing
+- Lack of governance
+- Network congestion and latency
+- Data integrity
+- Management
+- Versioning
+- Skill set
+
+<!-- #### Complexity
 
 A microservices application has more moving parts than the equivalent monolithic application. Each service is simpler, but the entire system as a whole is more complex. With service discovery, orchestration, and automation tools, there can be more pieces to manage in the overall application.
 
@@ -93,7 +109,7 @@ Updates to a service must not break services that depend on it. Multiple service
 
 #### Skill set
 
-Microservices are highly distributed systems. These distributed systems often require a different skill set to properly develop, manage, and maintain. Carefully evaluate whether the team has the skills and experience to be successful, and allow for the time and planning your teams will need to evolve their abilities.
+Microservices are highly distributed systems. These distributed systems often require a different skill set to properly develop, manage, and maintain. Carefully evaluate whether the team has the skills and experience to be successful, and allow for the time and planning your teams will need to evolve their abilities. -->
 
 ## When should you choose a microservices architecture?
 
