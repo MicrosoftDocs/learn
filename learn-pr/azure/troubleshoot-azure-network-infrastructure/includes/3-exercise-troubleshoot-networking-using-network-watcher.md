@@ -10,7 +10,7 @@ Here, you will troubleshooting connectivity between two VMs in different subnets
 
 ## Configure a virtual network and VMs
 
-Let's start by creating the problematic infrastructure, which includes a configuraion error:
+Let's start by creating the problematic infrastructure, which includes a configuration error:
 
 1. To create the virtual network **MyVNet1** and **FrontendSubnet**, run this command:
 
@@ -93,40 +93,131 @@ Let's start by creating the problematic infrastructure, which includes a configu
       --network-security-group MyNsg
     ```
 
-1. To enable Network Watcher, run this command:
+## Enable Network Watcher for your region
 
-    <!-- TODO: This command currently causes a policy error in the sandbox. Policy to be updated to allow network watcher. -->
+Now let's use the Azure CLI to set up Network Watcher in the same region as the infrastructure. 
 
-    ```bash
-    az network watcher configure --resource-group <rgn>[sandbox resource group name]</rgn> \ 
-      --locations EastUS \
-      --enabled
-    ```
+To enable Network Watcher, run this command:
 
-## Use Network Watcher to diagnose a problem
+<!-- TODO: This command currently causes a policy error in the sandbox. Policy to be updated to allow network watcher. -->
 
-Now let's use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported connectivity issue over HTTP/HTTPS and RDP protocol between the 2 VMs: 
+```bash
+az network watcher configure --resource-group <rgn>[sandbox resource group name]</rgn> \ 
+  --locations EastUS \
+  --enabled
+```
+
+## Use Network Watcher to show the topology
+
+Now you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported connectivity issue over HTTP/HTTPS and RDP protocol between the two VMs. First, investigate the network topology: 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
-1. Navigate to **All Services > Networking > Network Watcher** and then click **Network Topology**.
-1. Use connection monitor - test the connection from the backendVM to frontendVM.
-   
-   - back-to-front-RDPtest - test from backend VM to frontend VM on the RDP port (3389). Set the probe interval to be 30 secs.
-   - back-to-front-HTTPtest - test from backend VM to frontend VM on the RDP port (80). Set the probe interval to be 30 secs.
- 
-     If you click on each test, what you will see its 100% probes failure and the device is unreachable. Now perform the same test but from frontend to backend.
-     
-   - front-to-back-RDPtest - test from frontend VM to backend VM on the RDP port (3389). Set the probe interval to be 30 secs.
-   - front-to-back-HTTPtest -  test from frontend VM to backend VM on the RDP port (80). Set the probe interval to be 30 secs.
+1. Navigate to **All Services > Networking > Network Watcher** and then click **Topology**.
+1. In the drop-down lists, select the only subscription and resource group. Network Watcher displays your network topology:
 
-     If you click on each test, what you will see device status is reachable. Now you have established that the connectivity is working frontend to the backend but not the other way around.
+    ![Network topology](../media/network-topology.png)
 
-1. Use IP flow verify to determine why access is denied? and identify the what is blocking the traffic? Run the 2 tests below.
 
-     - back-front-RDPtest - test from backend VM to frontend VM on the RDP port (3389).
-     - back-front-HTTPtest - test from backend VM to frontend VM on the RDP port (80).
+## Use connection monitor to run tests from the backend to the frontend
 
-       What you will see is access is denied due to NSG and security rule. In this exercise, you have successfully used network watcher tools to discover the connectivity issue between the 2 subnets. One way communication is allowed but one way is to blocked due to NSG rules.
+The topology appears to be correct. Let's set up some tests in connection monitor to obtain more information. Start by creating two tests from the backend VM to the frontend VM:
+
+1. Under **Monitoring**, click **Connection monitor**, and then click **+ Add**.
+1. Configure the connection monitor with these values, and then click **Add**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Name | Back-to-front-RDP-test |
+    | Subscription | Concierge |
+    | Virtual machine | BackendVM |
+    | Destination virtual machine | FrontendVM |
+    | Port | 3389 |
+    | Probing interval | 30 seconds |
+    | | |
+
+    ![Back-to-front RDP test](../media/back-to-front-rdp-test.png)
+
+1. Click **+ Add** and then configure a second test with these values, and then click **Add**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Name | Back-to-front-HTTP-test |
+    | Subscription | Concierge |
+    | Virtual machine | BackendVM |
+    | Destination virtual machine | FrontendVM |
+    | Port | 80 |
+    | Probing interval | 30 seconds |
+    | | |
+
+1. In the list of tests, click **Back-to-front-RDP-test**, click **...**. and then click **Start**.
+1. Examine the results.
+1. In the list of tests, click **Back-to-front-HTTP-test**, click **...**. and then click **Start**.
+1. Examine the results. 
+
+The results should show that no traffic flows from the backend VM to the frontend VM.
+
+## Use connection monitor to run tests from the frontend to the backend
+
+Run the same tests in the opposite direction:
+
+1. Under **Monitoring**, click **Connection monitor**, and then click **+ Add**.
+1. Configure the connection monitor with these values, and then click **Add**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Name | front-to-back-RDP-test |
+    | Subscription | Concierge |
+    | Virtual machine | FrontendVM |
+    | Destination virtual machine | BackendVM |
+    | Port | 3389 |
+    | Probing interval | 30 seconds |
+    | | |
+
+1. Click **+ Add** and then configure a second test with these values, and then click **Add**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Name | Front-to-back-HTTP-test |
+    | Subscription | Concierge |
+    | Virtual machine | FrontendVM |
+    | Destination virtual machine | BackendVM |
+    | Port | 80 |
+    | Probing interval | 30 seconds |
+    | | |
+
+1. In the list of tests, click **Front-to-back-RDP-test**, click **...**. and then click **Start**.
+1. Examine the results.
+1. In the list of tests, click **Front-to-back-HTTP-test**, click **...**. and then click **Start**.
+1. Examine the results.
+
+The results should show that traffic flows without problems from the frontend VM to the backend VM.
+
+## Use IP flow to test the connection
+
+Let's use the IP flow test tool to obtain more information:
+
+1. Under **Network diagnostic tools**, click **IP flow verify**.
+1. Configure the test with these values, and then click **Check**:
+
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | Concierge |
+    | Resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Virtual machine | BackendVM |
+    | Network interface | BackendVMVMNic |
+    | Protocol | TCP |
+    | Direction | Outbound |
+    | Local IP address | 10.10.2.4 |
+    | Local port | 3389 |
+    | Remote port | 10.10.1.4 |
+    | Remote port | 3389 |
+    | | |
+
+    ![IP flow test](../media/ip-flow-test.png)
+
+1. Examine the results. They show that access is denied due to NSG and security rule. 
+
+In this exercise, you have successfully used network watcher tools to discover the connectivity issue between the 2 subnets. One way communication is allowed but one way is to blocked due to NSG rules.
 
 
 
