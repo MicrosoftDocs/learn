@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/2-k-means-clustering.md)] 
+  [!include[](includes/3-k-means-clustering.md)] 

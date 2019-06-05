@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-knowledge-check.md)] 
+  [!include[](includes/4-knowledge-check.md)] 
 quiz:
   title: Check your knowledge
   questions:
@@ -21,12 +21,12 @@ quiz:
     - content: "Training and test results do not need to be checked."
       isCorrect: false
       explanation: "Incorrect. Although sometimes training is not separate to use on a final dataset, parameters and results still need to be 'sanity checked'"
-    - content: "It is usually much slower than supervised learning."
+    - content: "Training time is usually much slower than supervised learning."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. Training time is situationally dependent."
     - content: "It does not require a training phase with labeled datasets."
       isCorrect: true
-      explanation: "Correct. "
+      explanation: "Correct. Unsupervised learning does not require labels."
     - content: "It only involves neural networks."
       isCorrect: false
       explanation: "Incorrect. There are many different methods for unsupervised learning."
@@ -34,13 +34,13 @@ quiz:
     choices:
     - content: "The number of clusters it will attempt to find."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct. The number of clusters k-means will attempt to find is also directed by the user."
     - content: "The number of iterations it will perform."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. k-means will attempt to find k-number of clusters."
     - content: "The number of datapoints it will process."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. The 'k' does not involve the number of data points, rather the number of clusters it will attempt to find."
     - content: "An optimizer for machine learning algorithms."
       isCorrect: false
       explanation: "Incorrect. k-means clustering is an algorithm itself."

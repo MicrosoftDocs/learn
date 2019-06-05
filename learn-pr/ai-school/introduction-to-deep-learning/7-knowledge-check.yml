@@ -76,7 +76,7 @@ quiz:
     choices:
     - content: "Prior information (context) is important for understanding."
       isCorrect: true
-      explanation: "Correct. RNNs are provide the ability for models to better use recent historical data for predictions."
+      explanation: "Correct. RNNs provide the ability for models to better use recent historical data for predictions."
     - content: "One wishes to use a neural network without having a training dataset."
       isCorrect: false
       explanation: "Incorrect. RNNs still require a training set."

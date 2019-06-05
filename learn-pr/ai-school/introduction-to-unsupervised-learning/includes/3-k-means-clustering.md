@@ -14,7 +14,7 @@ The starting points of the clusters begin at random, then k-means has two steps:
 These steps then repeat several times and the clustering is complete.
 
 ### Programming exercise
- 
+
 > Let's try out k-means clustering in Azure Notebooks.  
 >  
 > **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
@@ -26,9 +26,3 @@ These steps then repeat several times and the clustering is complete.
 > Then click then click __'Run on Free Compute'__.  
 >  
 > If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
-
-## Summary
-
-Well done! You’ve complete the module on unsupervised learning. 
-
-We read that unsupervised learning algorithms can split data into categories without ever having been trained and not having labels to judge its own accuracy from. These methods can be very helpful with large unlabeled datasets or ambiguous problems and a commonly seen in the fields of science and statistics. We learned about K-means clustering, which can be given unlabeled data and identify a number of clusters in that data in a few seconds.
