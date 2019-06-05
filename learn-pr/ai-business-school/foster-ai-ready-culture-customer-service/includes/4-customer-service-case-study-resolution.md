@@ -16,17 +16,31 @@ Because our agents handle customer service for such a wide range of products and
 
 ### Customer sentiment analysis
 
+:::row:::
+:::column span="2":::
 It’s important to our customer service employees to hear and act on the feedback from our customers. But given the amount of feedback we receive, it would take a human 4+ years of work to read a single year’s worth of verbatim feedback for just a few of our product lines and even longer to analyze it. Meanwhile, when we have surfaced and acted on customer feedback in the past, we did so using siloed, disjointed processes and ad-hoc solutions that didn’t scale. We needed to find a better way to process and route relevant feedback from our customers so that employees could implement it at the front line.
 
 Our customer service team partnered with data scientists to use machine learning to create a sentiment analysis tool that automates this work. It analyzes sentiment not only in customer feedback, but also in customer chat conversations. They are experimenting with analyzing sentiment in real time, which would enable us to track customer sentiment throughout their service journey and better identify breakpoints where our service didn’t live up to their expectations. If supervisors can identify breakpoints as they occur, they can intervene proactively to mitigate negative experiences.
 
 We’ve found a set of positive and negative factors that drive sentiment: the customer service experience, product satisfaction, and company procedures and policies, among other drivers (e.g. tools, third parties, etc.). Identifying these has given us actionable insights that help us build our service experience accordingly.
+:::column-end:::
+:::column span="2":::
+![Customer Sentiment Analysis Tool. Issue resolved - Feedback sent to customer service team. Issue unresolved - case sent to recovery manager for resolution. Key learning sent from recovery manager to customer service team to improve future interactions.](../media/2.5.3.A.Customer-Service-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
 
+:::row:::
+:::column span="2":::
 Our customer service team now has two processes for acting on customer feedback. The first is the service professional feedback route, which uses our analytics tool to automatically route relevant feedback. Positive feedback is routed to our agents. 96% have found value in having this feedback sent to them. In addition, a trend analysis of customer sentiment is routed to managers, along with examples of chat sentiment outliers. Through coaching based on this data, low-performing agents have received 23% less negative feedback.
 
 The second process is the customer recovery feedback loop. If customer feedback indicates a lack of resolution, machine learning models detect this and the case is automatically routed to a recovery manager, who researches the case, contacts the customer, and ensures issue resolution. Then, our customer service team takes the opportunity to learn why the initial interaction did not resolve the issue.
 
 The results have been impressive: our customers are happier, and our agents are able to help them more effectively. Sentiment scores for recovered customers increased on average by 180% compared to their first interaction with support.
+:::column-end:::
+:::column span="2":::
+![Low-performing agents have received 23% less negative feedback](../media/2.5.3.B.Customer-Service-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
 
 ### Virtual Agent
 
