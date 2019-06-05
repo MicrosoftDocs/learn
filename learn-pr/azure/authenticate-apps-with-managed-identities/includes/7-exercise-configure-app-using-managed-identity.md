@@ -1,29 +1,16 @@
 You can store application secrets, credentials, passwords, and other sensitive information in Azure Key Vault. However, you also need to provide credentials to access Key Vault itself. If you're using Managed Identity, you can utilize the service principal created for your service to generate an access token to identify yourself to Azure key vault.
 
-In the sample scenario, the stock-tracking application requires access to secret information in Key Vault. The stock-tracking application runs on a virtual machine. You can use the service principal assigned by the Managed Identity service for your VM. Add a policy to your Key Vault that assigns the appropriate permissions to the service principal for the VM.
+In the sample scenario, the stock-tracking application requires access to secret information in Key Vault. The stock-tracking application runs on a virtual machine. Your current app can only run on a single VM, so you are going to use the system-assigned managed identity you created for your VM. Then you'll add a policy to your Key Vault that assigns the appropriate permissions to the VMs' service principal.
 
 In this exercise, you'll create a secret and store it in Key Vault. Then, you'll assign the service principal for the VM you created in the earlier exercises permissions to retrieve this secret. Finally, build and run an app on the VM that uses the service principal to access Key Vault and retrieve the secret.
 
 ## Use Key Vault to store a secret
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
-1. Run the following command to create a new key vault. Select a unique name for your key vault.
-
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
-    ```azurecli
-    az keyvault create \
-      --name <key vault name> \
-      --resource-group <rgn>[Sandbox resource group]</rgn>
-      --location <location>
-    ```
-
 1. Add a secret named *MySecret* with the value *Secret app data* to the key vault:
 
     ```azurecli
     az keyvault secret set \
-      --vault-name <key vault name> \
+      --vault-name furniture-secrets \
       --name MySecret \
       --value "Secret app data"
     ```
@@ -33,31 +20,28 @@ In this exercise, you'll create a secret and store it in Key Vault. Then, you'll
 1. Sign in to the VM you created earlier:
 
     ```bash
-    ssh <public ip address of VM>
+    ssh $publicIP
     ```
 
     > [!NOTE]
-    > If you can't recall the IP address of your VM, run the following command:
+    > If the environment variable `publicIP` isn't set, reset it with the following command to:
     >
     > ```azurecli
-    > az vm list-ip-addresses \
-    >     --name <vm name> \
-    >     --resource-group <rgn>[Sandbox resource group]</rgn> \
-    >| grep ipAddress
+    > export publicIP=$(az vm show \
+    > --name prodserver \
+    > --resource-group <rgn>[Sandbox resource group]</rgn> \
+    > --show-details \
+    > --query [publicIps] \
+    > --o tsv)
     >```
+    >
+    > Then rerun `ssh $publicIP`
 
-1. Run the following command to download the source code for the sample app for this exercise:
 
-    <!-- TODO: Replace <location of repository> with the name of the repository containing the sample code in GitHub. The source code is currently supplied in the src folder for this module -->
-
-    ```bash
-    git clone http://github.com/<location of repository> secrets
-    ```
-
-1. Move to the `secrets/secretapp` folder:
+1. Move to the `identity/secretapp` folder:
 
     ```bash
-    cd secrets/secretapp
+    cd ~/identity/secretapp
     ```
 
 1. Open the `Program.cs` file using the *nano* editor:
@@ -115,11 +99,14 @@ In this exercise, you'll create a secret and store it in Key Vault. Then, you'll
     }
     ```
 
-    Replace *\<key vault name\>* with the name of the key vault you created earlier. Replace *\<secret name\>* with *"MySecret", the name of the secret you creates in the key vault.
+    Replace `"<key vault name>"` with the name with `"furniture-secrets"`. Replace `<secret name>` with `"MySecret"`, the name of the secret you creates in the key vault.
 
     This block of code calls the `GetSecretAsync` method of the `KeyVaultClient` object to retrieve a specific secret and display its value. If the client doesn't have permission to access the key, then this code throws and exception and displays an error message.
 
-1. Save your changes (press CTRL-O), and close the editor (press CTRL-X).
+    > [!NOTE]
+    > There is no password, certificate, or client secret being stored in the code.
+
+1. Save your changes (press `CTRL-O`), and close the editor (press `CTRL-X`).
 
 ## Test the application
 
@@ -136,7 +123,9 @@ In this exercise, you'll create a secret and store it in Key Vault. Then, you'll
     dotnet run
     ```
 
-    You haven't authorized the service principal associated with the VM to access your key vault yet, so the application should respond with the error message *Something went wrong: Operation returned an invalid status code 'Forbidden'*
+    You haven't authorized the service principal associated with the VM to access your key vault yet, so the application should respond with the error message:
+
+    `Something went wrong: Operation returned an invalid status code 'Forbidden'`
 
 ## Grant permissions to enable the service principal to retrieve secrets from Key Vault
 
@@ -150,7 +139,7 @@ In this exercise, you'll create a secret and store it in Key Vault. Then, you'll
 
     ```azurecli
     az vm identity show \
-      --name <vm name> \
+      --name prodserver \
       --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
 
@@ -165,14 +154,14 @@ In this exercise, you'll create a secret and store it in Key Vault. Then, you'll
     }
     ```
 
-    Make a note of the value for the *principalId*.
+    You can use the above to return just the principalID in the next command.
 
 1. Authorize the VM to be able to retrieve and list secrets in your key vault using this principal ID.
 
     ```azurecli
         az keyvault set-policy \
-          --name "<key vault name>" \
-          --object-id "<principal id>" \
+          --name furniture-secrets \
+          --object-id $(az vm identity show --name prodserver --resource-group azure-backup --o tsv --query principalId) \
           --secret-permissions get list
     ```
 
@@ -181,13 +170,13 @@ In this exercise, you'll create a secret and store it in Key Vault. Then, you'll
 1. Sign in to your VM again:
 
     ```bash
-    ssh <public ip address of VM>
+    ssh $publicIP
     ```
 
-1. Move to the `secrets/secretapp` folder:
+1. Move to the `identity/secretapp` folder:
 
     ```bash
-    cd secrets/secretapp
+    cd ~/identity/secretapp
     ```
 
 1. Run the application:
@@ -197,4 +186,6 @@ In this exercise, you'll create a secret and store it in Key Vault. Then, you'll
     dotnet run
     ```
 
-    This time the application should successfully retrieve the secret from Key Vault and display its value, *Secret app data*.
+    This time the application should successfully retrieve the secret from Key Vault and display its value:
+
+    `Secret: Secret app data`

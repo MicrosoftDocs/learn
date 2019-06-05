@@ -1,8 +1,10 @@
-When working with software of any kind access, authentication and security should always be at the forefront of your thoughts. A common problem is how best to handle authentication requests, and which method meets your requirements. You should consider which options are available to avoid storing credentials, tokens, or secrets in either code or configuration files. This problem is magnified when working with an application hosted in a cloud platform, such as Microsoft Azure. 
+A common problem when accessing Azure services is how to handle authentication. Access, authentication, and security are always important when working with software of any kind. Consider the options available that avoid storing your credentials, tokens, or secrets in either code or configuration files.
 
-Authenticating with Azure Active Directory provides a solution with **Service Principals** and **Managed Identities**. Both of these features have been designed to solve this problem allowing you to use a single identity to integrate your application through Azure AD.
+Using Azure Active Directory provides a solution with **Service Principals** and **Managed Identities**. Both of these features have been designed to solve this problem allowing you to use a single identity to integrate your application through Azure AD.
 
-In this module, you'll look at what service principals are and how they work with Azure AD, Azure-Managed identities, and the scenarios in which to use them for your applications.
+You're a developer at a furniture company that is migrating a stock-tracking application to Azure VMs. The application needs to access secrets in Key Vault to do part of its work. You want the deployment and management tasks for the application to be as streamlined as possible, and want to avoid handling credentials in configuration. You'd like to use an identity for Azure resources to automatically authenticate the application when it's running in Azure.
+
+In this module, you'll look at what service principals are and how they work with Azure AD, managed identities for apps running on an Azure VM, and the scenarios in which you might be able to use them for your application.
 
 ## Learning objectives
 

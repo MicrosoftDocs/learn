@@ -1,6 +1,6 @@
 Managed Identity delegates the responsibility for creating and managing identity information for your services and other resources to Azure. Azure stores identity information in Active Directory. You can then assign access policies, which determine which identities can access your resources.
 
-In the example scenario, you want to use managed identities to authenticate requests emanating from a virtual machine, to enable these requests to be able to retrieve secret information from Azure Key Vault.
+You have setup your Azure VM with a system-managed identity and now want to use it to authenticate requests from your companies app. Instead of using the VMs' identity you're going to create a user-assigned managed identity. After updating your app, it will be able to retrieve secrets from an Azure Key Vault, no matter which VM it's installed on.
 
 In this unit, you'll learn more about how applications can use managed identities to authenticate requests. You'll see how to define an authorization policy with Azure Key Vault to enable an authenticated identity to read secret information.
 
@@ -8,7 +8,7 @@ In this unit, you'll learn more about how applications can use managed identitie
 
 Recall from an earlier unit that Azure supports system-assigned identities and user-assigned identities. A system-assigned identity is created and managed by Azure, and is closely tied to a specific resource. For example, if you create a VM with a system-assigned identity, Azure creates the identity automatically and associates it with the VM. If the VM is deleted, the identity also disappears.
 
-User-assigned identities are independent of any specific resource. You create a user-assigned identity manually, and you can assign it to a resource or service such as an Azure Function App. When the Function App runs, it uses the specified identity. You can assign access rights to this identity to the resources that the Function App needs to access. In this way, you can closely control the privileges that the Function App has.
+User-assigned identities are independent of any specific resource. You create a user-assigned identity manually, and you can assign it to a resource or service such as your stock-tracking app. When the app runs, it uses the user-assigned identity. You can assign access rights to this identity to the resources that the app needs to access. Using this approach means that you could deploy your app on multiple VMs, and the app can use this single user-assigned identity instead of setting up a system-assigned identity for each VM.
 
 ## Create and manage a user-assigned identity
 

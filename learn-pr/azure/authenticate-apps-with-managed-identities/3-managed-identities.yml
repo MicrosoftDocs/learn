@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is the Azure Instance Metadata Service?'
+  - content: "What is the Azure Instance Metadata Service?"
     choices:
     - content: The framework used for authenticating to a IaaS VM
       isCorrect: false
@@ -30,8 +30,7 @@ quiz:
     - content: The service used for service principal objects
       isCorrect: false
       explanation: IMDS is not a service used for service principal objects, it is only applicable to Azure IaaS VMs.
-
-  - content: 'Why cant a custom application hosted on-premises use managed identities?'
+  - content: "Why cant a custom application hosted on-premises use managed identities?"
     choices:
     - content: Custom applications are not supported with managed identities
       isCorrect: false
@@ -45,18 +44,3 @@ quiz:
     - content: Managed identities is a feature of Azure Virtual Machines
       isCorrect: false
       explanation: Managed identities can be enabled on Azure VMs not a feature
-
-  - content: 'What is a limitation of a system-assigned identity?'
-    choices:
-    - content: It needs to be cleaned up if a resource is deleted
-      isCorrect: false
-      explanation: System-assigned identities are automatically cleaned up if a resource is deleted
-    - content: It can only be provisioned using the portal
-      isCorrect: false
-      explanation: System-assigned identities can be created using the portal, Azure CLI, Azure Resource Manager, Azure SDKs, REST and PowerShell.
-    - content: They incur a cost per node on the Azure resource
-      isCorrect: false
-      explanation: Managed identities are a free feature of Azure Active Directory
-    - content: It has to be enabled in isolation for each supported resource
-      isCorrect: true
-      explanation: They are tied to individual resources, the limitation is that it must be enabled on a per resource basis.

@@ -1,4 +1,4 @@
-Azure-Managed Identity is a free feature included with Azure Active Directory that offers the functionality to authenticate an identity to any service that supports Azure AD.
+Azure-Managed Identity is a free feature included with Azure Active Directory that offers the functionality to authenticate an identity to any Azure service that supports Azure AD.
 
 In this module, you explored service principals in the Azure platform. YOu saw how to use managed identities instead of service principals to authenticate your applications. If your code runs on a supported service, managed identities offer a more automated and secure method to code credential management, taking the hassle out of application authentication.
 
