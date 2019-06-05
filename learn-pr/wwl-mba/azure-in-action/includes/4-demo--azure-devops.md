@@ -149,7 +149,6 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 
 **Application Insights** allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because **Application Insights** captures errors in real time so your team can identify the root cause and make fixes quickly.
 
-Next, we’ll continue our solution demo to learn more about Azure Boards.
 
 ![](../media/clear.png)
 
@@ -176,7 +175,7 @@ Contoso Air wants to track what their teams are working on. They find it hard to
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
-**Azure Boards** allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because **Azure Boards** are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.*
+**Azure Boards** allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because **Azure Boards** are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.
 
 ![](../media/clear.png)
 
