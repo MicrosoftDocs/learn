@@ -15,3 +15,8 @@ Unit 2 and 4 covered a variety of use case scenarios for some of the tools. Thes
 Unit 3 and 5 , you did some troubleshooting using Azure Network Watcher.
 
  Azure Network Watcher empowers engineers to *monitor*, *diagnose*, and *gain insight* into their network health and performance . Hopefully, this Module has helped to empower you with the knowledge to utilize Network Watcher tools to diagnose and troubleshoot problems.
+
+## Learn more
+
+- [Visualizing Network Security Group flow logs with Power BI](https://docs.microsoft.com/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-power-bi)
+- [Visualize Azure Network Watcher NSG flow logs using open source tools](https://docs.microsoft.com/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-open-source-tools)

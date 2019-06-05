@@ -1,103 +1,116 @@
-3. **Exercise - Troubleshoot networking using Network Watcher monitoring and diagnostic tools**
+Network Watcher makes it easier to diagnose configuration errors prevent Virtual Machines (VMs) from communicating.
 
-In this module, you will do an exercise which involves troubleshooting connectivity between 2 VMs in different subnets. This exercise will be broken down into 2 parts. First, you will create a VNet with 2 subnets *(frontend and backend)*. Deploy VM inside each subnet and enable Azure Network Watcher. This will be done using the Azure CLI. In the second part, you will use the Azure portal to troubleshooting connectivity between 2 VMs in different subnets.
+Suppose you have two VMs that cannot communicate. You want to diagnose the problem and resolve it as fast as possible. You want to use Network Watcher to do that.
 
-## Exercise - Troubleshoot networking using Network Watcher monitoring and diagnostic tools
+Here, you will troubleshooting connectivity between two VMs in different subnets. 
 
+[!include[](../../../includes/azure-sandbox-activate.md)]
 
-1.Run the following command to create the virtual network **MyVNet1** and **FrontendSubnet**.
+[!include[](../../../includes/azure-cloud-shell-copy-paste-tip.md)]
 
-```
-az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
---name MyVNet1 \
---address-prefix 10.10.0.0/16 \
---subnet-name FrontendSubnet \
---subnet-prefix 10.10.1.0/24 \
---location EastUS
-```
+This exercise will be broken down into 2 parts. First, you will create a VNet with 2 subnets *(frontend and backend)*. Deploy VM inside each subnet and enable Azure Network Watcher. This will be done using the Azure CLI. In the second part, you will use the Azure portal to troubleshooting connectivity between 2 VMs in different subnets.
 
-2.Run the following commands to deploy virtual machine in **Frontend subnet**.
+## Configure a virtual network and VMs
 
-```
-az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
---no-wait \
---name FrontendVM \
---location EastUS \
---vnet-name MyVNet1 \
---subnet FrontendSubnet \
---image Win2012R2Datacenter \
---admin-username azureuser \
---admin-password Demouser@123
-```
+Let's start by creating the problematic infrastructure, which includes a configuraion error:
 
-3.Run the following command to create the **Backend subnet**.
+1. To create the virtual network **MyVNet1** and **FrontendSubnet**, run this command:
 
-```
-New-AzVirtualNetworkSubnetConfig
---Name BackendSubnet \
---AddressPrefix 10.10.2.0/24 \
-```
+    ```bash
+    az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name MyVNet1 \
+      --address-prefix 10.10.0.0/16 \
+      --subnet-name FrontendSubnet \
+      --subnet-prefix 10.10.1.0/24 \
+      --location EastUS
+    ```
 
-4.Run the following commands to deploy virtual machine in **Backend subnet**.
+1. To deploy a VM in **Frontend subnet**, run this command:
 
-```
-az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
---no-wait \
---name BackendVM \
---location EastUS \
---vnet-name MyVNet1 \
---subnet BackendSubnet \
---image Win2012R2Datacenter \
---admin-username azureuser \
---admin-password Demouser@123
-````
+    ```bash
+    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --no-wait \
+      --name FrontendVM \
+      --location EastUS \
+      --vnet-name MyVNet1 \
+      --subnet FrontendSubnet \
+      --image Win2012R2Datacenter \
+      --admin-username azureuser \
+      --admin-password Demouser@123
+    ```
 
-5. NSG configuration mistake that impacts communication between the VMs.
+1. To create the **Backend subnet**, run this command:
 
-```
-az network nsg rule create --resource-group <rgn>[sandbox resource group name]</rgn> \
---Name MyNSGRule \
---nsg-name MyNsg \
---priority 4096 \
---source-address-prefixes 10.10.2/24
---source-port-ranges 80 443 3389 \
---destination-address-prefixes '*' \
---destination-port-ranges 80 443 3389
---access Deny \
---protocol TCP \
---description "Deny from specific IP address ranges on 80, 443 and 3389." 
-```
+    ```bash
+    az network vnet subnet create --address-prefixes 10.10.2.0/24 \
+      --name BackendSubnet \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --vnet-name MyVNet1
+    ```
 
-6. Associate a network security group to a subnet.
+1. To deploy a virtual machine in **Backend subnet**, run this command:
 
-```
-az network vnet subnet update --resource-group <rgn>[sandbox resource group name]</rgn> \
---name BackendSubnet \
---vnet-name MyVNet1 \
---network-security-group MyNsg\
-```
+    ```bash
+    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --no-wait \
+      --name BackendVM \
+      --location EastUS \
+      --vnet-name MyVNet1 \
+      --subnet BackendSubnet \
+      --image Win2012R2Datacenter \
+      --admin-username azureuser \
+      --admin-password Demouser@123
+    ```
 
-7. Enable Network Watcher
+1. To create a Network Security Group, run this command:
 
-```
-az network watcher configure \
---resource-group <rgn>[sandbox resource group name]</rgn> \ 
---locations EastUS \
---enabled
-```
+    ```bash
+    az network nsg create --name MyNsg \
+       --resource-group <rgn>[sandbox resource group name]</rgn> \
+       --location EastUS
+    ```
 
-*The steps below are better suited for Azure portal, as the novice user may not be able comprehend the output of PowerShell commands, plus GUI displays some features better than PowerShell*
+1. To create an NSG configuration mistake that prevents communication between the VMs, run this command:
 
-## Azure portal
+    ```bash
+    az network nsg rule create --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name MyNSGRule \
+      --nsg-name MyNsg \
+      --priority 4096 \
+      --source-address-prefixes 10.10.2.0/24 \
+      --source-port-ranges 80 443 3389 \
+      --destination-address-prefixes '*' \
+      --destination-port-ranges 80 443 3389 \
+      --access Deny \
+      --protocol TCP \
+      --description "Deny from specific IP address ranges on 80, 443 and 3389." 
+    ```
 
-In this step, you are going to use Network Watcher from the Azure portal to troubleshoot connectivity between 2 VMs in different subnets. Your colleague has reported connectivity issue over HTTP/HTTPS and RDP protocol between the 2 VMs. 
+1. To associate a network security group to a subnet, run this command:
 
-1. Sign into the Azure portal using the same account you activated the sandbox with.
+    ```bash
+    az network vnet subnet update --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name BackendSubnet \
+      --vnet-name MyVNet1 \
+      --network-security-group MyNsg
+    ```
 
-1. Navigate to **All Services > Networking > Network Watcher**, select it
+1. To enable Network Watcher, run this command:
 
-1. View Network Topology to visualize your network
+    <!-- TODO: This command currently causes a policy error in the sandbox. Policy to be updated to allow network watcher. -->
 
+    ```bash
+    az network watcher configure --resource-group <rgn>[sandbox resource group name]</rgn> \ 
+      --locations EastUS \
+      --enabled
+    ```
+
+## Use Network Watcher to diagnose a problem
+
+Now let's use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported connectivity issue over HTTP/HTTPS and RDP protocol between the 2 VMs: 
+
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
+1. Navigate to **All Services > Networking > Network Watcher** and then click **Network Topology**.
 1. Use connection monitor - test the connection from the backendVM to frontendVM.
    
    - back-to-front-RDPtest - test from backend VM to frontend VM on the RDP port (3389). Set the probe interval to be 30 secs.
