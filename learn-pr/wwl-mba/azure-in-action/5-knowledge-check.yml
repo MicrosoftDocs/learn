@@ -89,7 +89,7 @@ quiz:
     choices:
     - content: "Azure Load Balancer"
       isCorrect: false
-      explanation: "Insert the third incorrect answer feedback in this cell."
+      explanation: "Incorrect. Azure Load Balancer is a service that is used post-migration to keep servers from bogging down, allowing a smooth flow of traffic."
     - content: "Azure Boards"
       isCorrect: true
       explanation: "Correct. Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive."
@@ -99,6 +99,4 @@ quiz:
     - content: "Azure Pipelines"
       isCorrect: false
       explanation: "Incorrect. Azure Pipelines enables you to continuously build, test, and deploy to any platform or cloud."
-    - content: "Insert the fourth incorrect answer text in this cell."
-      isCorrect: false
-      explanation: "Incorrect. Azure Load Balancer is a service that is used post-migration to keep servers from bogging down, allowing a smooth flow of traffic."
+    
