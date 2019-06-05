@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.advanced-classification-models.summary
+uid: learn-wwl.unsupervised-learning.summary
 title: Summary
 metadata:
   title: Summary
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2 
 content: |
-  [!include[](includes/8-summary.md)] 
+  [!include[](includes/5-summary.md)] 
