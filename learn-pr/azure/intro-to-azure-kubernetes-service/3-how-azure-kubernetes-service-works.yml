@@ -14,4 +14,4 @@ metadata:
 
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-how-logic-apps-works.md)]
+  [!include[](includes/3-how-azure-kubernetes-service-works.md)]
