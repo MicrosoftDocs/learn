@@ -117,7 +117,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-    ![Screenshot of the New page in the Azure portal showing the Databases options available in the Azure Marketplace](../media/2-new-database-annotated.png)
+    ![Screenshot of the New page in the Azure portal showing the Databases options available in the Azure Marketplace](../media/3-new-database-annotated.png)
 
 3. On the **Create SQL Database** page, specify the values in the following table for the properties of the database.
 
@@ -156,7 +156,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
 
 1. On the ***\<your-database-name\>*** page, under **Overview**, click **Query editor**.
 
-    ![Screenshot of the database page in the Azure portal highlighting the Query editor option](../media/2-query-editor-annotated.png)
+    ![Screenshot of the database page in the Azure portal highlighting the Query editor option](../media/3-query-editor-annotated.png)
 
 1. On the ***\<your-database-name\>* - Query editor** page, enter the following details, and then click **OK** to connect to database service:
 
@@ -176,7 +176,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
     )
     ```
 
-    ![Screenshot of the Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/2-create-table-courses-annotated.png)
+    ![Screenshot of the Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/3-create-table-courses-annotated.png)
 
 1. Overwrite the existing statement with the following statement that creates a table for holding modules. Click **Run** and verify that the statement runs without any errors.
 
@@ -205,7 +205,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
     > [NOTE!]
     > *dbo* stands for *database owner*, and is the default schema in the database. All three tables were created in this schema.
 
-    ![Screenshot of the database window in the Azure portal, showing the tables and columns](../media/2-tables-and-columns-annotated.png)
+    ![Screenshot of the database window in the Azure portal, showing the tables and columns](../media/3-tables-and-columns-annotated.png)
 
 ## Import the data
 
@@ -332,7 +332,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
 
     This statement retrieves the data from the **Courses** table. The results window should display nine rows.
 
-    ![Screenshot of the Query Editor in the Azure portal, showing the data retrieved from the Courses table](../media/2-query-results-annotated.png)
+    ![Screenshot of the Query Editor in the Azure portal, showing the data retrieved from the Courses table](../media/3-query-results-annotated.png)
 
 1. Change the query as follows, and then click **Run**:
 
