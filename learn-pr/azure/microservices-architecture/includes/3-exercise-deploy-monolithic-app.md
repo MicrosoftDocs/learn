@@ -40,7 +40,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
 
 1. Run this command to set a variable with the name of the App Service.
 
-    ```azurecli
+    ```bash
     APPSERVICENAME="$(az webapp list --query '[].name' --output tsv)"
     ```
 
@@ -54,13 +54,13 @@ Let's start by deploying the application. First, we'll need to great the Azure r
 
 1. Run this command to add the git location as a remote. Replace `<deploymentuser>` with the deployment user you created earlier.
 
-    ```azurecli
-    git remote add azure https://<deploymentuser>@$APPSERVICENAME.scm.azurewebsites.net/microserviceslearnmodule-osg.git
+    ```bash
+    git remote add azure https://<deploymentuser>@$APPSERVICENAME.scm.azurewebsites.net/$APPSERVICENAME.git
     ```
 
 1. Run the following command to deploy the application to App Service.
 
-    ```azurecli
+    ```bash
     git push azure master
     ```
 

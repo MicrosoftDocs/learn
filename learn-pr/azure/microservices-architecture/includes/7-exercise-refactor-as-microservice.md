@@ -5,11 +5,103 @@ Need a diagram of what we're updating and deploying
 
 ## Refactor application
 
-1. Pull out the code from the monolith into a microservice project
-1. Refactor to expose APIs where reliance on the microservice exits in the existing monolithic application.
-    1. Could be handled by creating a proxy service for non-HTTP calls, and redirect clients to the proxy. Can then track and deprecate dependant service calls.
-1. Commit code changes to app.
+Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. The Fabrikam team pulled this out into the microservice. 
 
-## Redeploy monolith with updates
+Now let's redeploy the application. We'll deploy our refactored service on Azure Functions first, then deploy the refactored application on App Service, and point it to the function.
 
-How do we want to do this, update the code, and redeploy or just redeploy an already updated app and show the changes in code snippets?
+## Deploy Azure Function
+
+1. Run this command to set up environment variables pointed to our services.
+
+    ```azurecli
+    APPSERVICENAME="$(az webapp list --query '[].name' --output tsv)"
+    FUNCTIONAPPNAME="$(az functionapp list --query '[].name' --output tsv)"
+    ```
+
+1. Run this command to set up git for our function.
+
+    ```azurecli
+    az functionapp deployment source config-local-git \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --name $FUNCTIONAPPNAME
+    ```
+
+1. Run this command to add a remote repo pointing to the function app.
+
+    ```bash
+    git remote add azurefunction https://jbuser12345@$FUNCTIONAPPNAME.scm.azurewebsites.net/$FUNCTIONAPPNAME.git
+    ```
+
+1. Run this command to push the code to the Azure Function.
+
+    ```bash
+    git push azurefunction master
+    ```
+
+## Deploy the updated DroneDelivery application
+
+<!-- get the function URL and token -->
+1. Now that our service is running on an Azure Function, we need to point our Drone application to that Function. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. Select **App Services** on the left, then select your **packageservicefunction** function.
+
+1. In the Function Apps overview, select your **PackageServiceFunction** function.
+
+    TODO - insert screenshot
+
+1. Select **</> Get function URL**, copy the URL and keep handy. You'll need it again shortly.
+
+<!-- # update appsettings.json with Function URL and token -->
+1. Back in Cloud Shell run these commands to open *appsettings.json* in the Code editor.
+
+    ```bash
+    cd ~/mslearn-microservices-architecture
+    code src/DroneDelivery-after/appsettings.json
+    ```
+
+1. Now we need the URL that we copied a couple steps ago. The URL should look something like this:
+
+    `https://packageservicefunction-abc.azurewebsites.net/api/packages/{id}?code=SvrbiyhjXJUdTPXrkcUtY6bQaUf7OXQjWvnM0Gq63hFUhbH2vn6qYA==`
+
+    In the Code editor, there are two values you need to replace with values from this URL, `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri` replace `<URL_OF_PackageService_Function>` with the corresponding value from your URL.
+
+    In `PackageServiceFunctionCode` replace the `<PackageServiceFunction code>` with the code in your URL. You'll want everything after the `code=` and will include the `==` at the end. Once complete, your *appsettings.json* file should look like this:
+
+    ```json
+    {
+      "Logging": {
+        "LogLevel": {
+          "Default": "Warning"
+        }
+      },
+      "AllowedHosts": "*",
+      "PackageServiceUri": "https://packageservicefunction-abc.azurewebsites.net/api/packages/",
+      "PackageServiceFunctionCode": "SvrbiyhjXJUdTPXrkcUtY6bQaUf7OXQjWvnM0Gq63hFUhbH2vn6qYA=="
+    }
+    ```
+
+1. Press **Ctrl-s** to save the file, and **Ctrl-q** to close the Code editor.
+
+1. Run this command to open up the *.deployment* file in the Code editor.
+
+    ```bash
+    code .deployment
+    ```
+
+1. In the *.deployment* file, replace `DroneDelivery-before` with `DroneDelivery-after` in both occurrences. The file should look like this:
+
+    ```text
+    [config]
+    project = src/DroneDelivery-after/DroneDelivery-after.csproj
+    ```
+
+1. Press **Ctrl-s** to save the file, and **Ctrl-q** to close the Code editor.
+
+1. Run this command to add and commit the updated files and deploy the application.
+
+    ```bash
+    git add .deployment src/DroneDelivery-after/appsettings.json
+    git commit -m "Updating application to use the Azure Function"
+    git push azure master
+    ```
+
