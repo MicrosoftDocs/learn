@@ -3,7 +3,7 @@ In this unit, we’ll learn about application modernization—modifying an app t
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about key capabilities for application modernization.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about key capabilities for application modernization.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWqMf5]
 
@@ -17,7 +17,7 @@ To address their challenges, The Absolut Company chose to move its web propertie
 
 :::row:::
 :::column:::
-![Absolut Logo Banner](../media/AbsoluteLogoBanner.png)
+![Absolut Logo Banner](../media/absolutelogobanner.png)
 :::column-end:::
 
 :::row-end:::

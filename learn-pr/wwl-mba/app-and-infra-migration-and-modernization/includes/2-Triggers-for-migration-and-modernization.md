@@ -5,7 +5,7 @@ Businesses that decide to adopt the cloud are often motivated by specific trigge
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to understand common triggers to modernize your apps.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to understand common triggers to modernize your apps.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1Vt]
 
@@ -25,7 +25,7 @@ A great online shopping experience begins with great software, and Alaska Airlin
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to see how Alaska Airlines modernized their business using Microsoft Azure.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Alaska Airlines modernized their business using Microsoft Azure.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NNJa]
 
@@ -34,7 +34,7 @@ As you saw in the video, Alaska Airlines migrated from a traditional online shop
 
 |  |  |
 | ------------ | -------------:|
-|![Icon of lightbulb](../media/Lightbulb_icon.png)|*Which of the common migration and modernization triggers might be relevant for your business? Are you facing urgent capacity needs or new security threats? Can your business improve by delivering applications and features faster? Or, perhaps you are planning for change with expiring datacenter contracts or software end of support. There are many reasons for modernization. Write down your top three.*
+|![Icon of lightbulb](../media/lightbulb.png)|*Which of the common migration and modernization triggers might be relevant for your business? Are you facing urgent capacity needs or new security threats? Can your business improve by delivering applications and features faster? Or, perhaps you are planning for change with expiring datacenter contracts or software end of support. There are many reasons for modernization. Write down your top three.*
 |
 
 Now that we’ve explored common modernization triggers, let’s look more closely at application portfolio modernization.
