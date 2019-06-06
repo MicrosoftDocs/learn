@@ -42,6 +42,7 @@ units:
 - learn.azdo.run-quality-tests-build-pipeline.5-add-dashboard-widget
 - learn.azdo.run-quality-tests-build-pipeline.6-perform-code-coverage
 - learn.azdo.run-quality-tests-build-pipeline.7-fix-failed-test
-- learn.azdo.run-quality-tests-build-pipeline.8-summary
+- learn.azdo.run-quality-tests-build-pipeline.8-clean-up-environment
+- learn.azdo.run-quality-tests-build-pipeline.9-summary
 badge:
   uid: learn.azdo.run-quality-tests-build-pipeline.badge

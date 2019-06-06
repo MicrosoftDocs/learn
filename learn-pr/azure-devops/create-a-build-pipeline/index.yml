@@ -42,6 +42,7 @@ units:
 - learn.azdo.create-a-build-pipeline.6-create-the-pipeline
 - learn.azdo.create-a-build-pipeline.7-publish-build-result
 - learn.azdo.create-a-build-pipeline.8-build-multiple-configurations
-- learn.azdo.create-a-build-pipeline.9-summary
+- learn.azdo.create-a-build-pipeline.9-clean-up-environment
+- learn.azdo.create-a-build-pipeline.10-summary
 badge:
   uid: learn.azdo.create-a-build-pipeline.badge

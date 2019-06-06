@@ -23,7 +23,7 @@ In this module, you will:
 
 ## Prerequisites
 
-If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) organization, go through the [Evolve your DevOps practices](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
+If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) organization, go through the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
 
 You'll also need to set up a development environment on your Windows, macOS, or Linux system. You'll need:
 
