@@ -172,6 +172,9 @@ Contoso Air wants to track what their teams are working on. They find it hard to
 
 :::column span="1":::
  Follow along as the Contoso Air DevOps Engineer uses Azure Boards to track projects. Watch this video to learn why integrating Azure Boards can help make end users successful.
+ 
+ :::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
