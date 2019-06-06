@@ -38,6 +38,8 @@ Let's start by deploying the application. First, we'll need to great the Azure r
     az webapp deployment user set --user-name <username> --password <password>
     ```
 
+    Note this username and password for later use.
+
 1. Run this command to set a variable with the name of the App Service.
 
     ```bash
@@ -58,9 +60,19 @@ Let's start by deploying the application. First, we'll need to great the Azure r
     git remote add azure https://<deploymentuser>@$APPSERVICENAME.scm.azurewebsites.net/$APPSERVICENAME.git
     ```
 
-1. Run the following command to deploy the application to App Service.
+1. Run the following command to deploy the application to App Service. Enter the password of the deployment user you created in a previous step.
 
     ```bash
     git push azure master
     ```
 
+1. Once complete, you can confirm the deployment was successful by visting the web site of your App Service. Run this command to get the URL, and click on it to open the page.
+
+    ```bash
+    echo https://$(az webapp config hostname list \
+                    --resource-group <rgn>[sandbox resource group]</rgn> \
+                    --webapp-name $APPSERVICENAME \
+                    --query [].name \
+                    --output tsv)
+
+TODO - add screenshot
