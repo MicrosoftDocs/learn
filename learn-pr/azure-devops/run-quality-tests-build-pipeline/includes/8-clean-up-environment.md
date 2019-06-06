@@ -1,11 +1,11 @@
 You're all done with the tasks for this module. Here, you'll move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
-> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module. 
+> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
 
 ## Move the work item to Done
 
-Here, you'll move the work item you assigned to yourself earlier in this module, **Create a Git-based workflow**, to the **Done** state.
+Here, you'll move the work item you assigned to yourself earlier in this module, **Create unit tests**, to the **Done** state.
 
 In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here we'll mark this work as complete because you have a working build system on Azure Pipelines.
 
@@ -14,9 +14,9 @@ At the end of each Sprint, or work iteration, you and your team might hold a ret
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Create a Git-based workflow** work item from the **Doing** to the **Done** column.
+1. Move the **Create unit tests** work item from the **Doing** to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column](../media/9-azure-boards-wi2-done.png)
+    ![Azure Boards showing the card in the Done column](../media/8-azure-boards-wi3-done.png)
 
 ## Disable the pipeline or delete your project
 
@@ -52,7 +52,7 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 
 To delete the project:
 
-1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Workflow**.
+1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Tests**.
 1. Click the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over that area.

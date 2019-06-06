@@ -41,6 +41,7 @@ units:
 - learn.azdo.scan-for-vulnerabilities.5-scan-pipeline
 - learn.azdo.scan-for-vulnerabilities.6-scan-pull-request
 - learn.azdo.scan-for-vulnerabilities.7-add-quality-badge
-- learn.azdo.scan-for-vulnerabilities.8-summary
+- learn.azdo.scan-for-vulnerabilities.8-clean-up-environment
+- learn.azdo.scan-for-vulnerabilities.9-summary
 badge:
   uid: learn.azdo.scan-for-vulnerabilities.badge

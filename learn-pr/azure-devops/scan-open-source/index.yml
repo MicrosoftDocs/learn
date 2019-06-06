@@ -37,6 +37,7 @@ units:
 - learn.azdo.scan-open-source.2-choose-a-scanning-tool
 - learn.azdo.scan-open-source.3-set-up-environment
 - learn.azdo.scan-open-source.4-scan-whitesource-pipeline
-- learn.azdo.scan-open-source.5-summary
+- learn.azdo.scan-open-source.5-clean-up-environment
+- learn.azdo.scan-open-source.6-summary
 badge:
   uid: learn.azdo.scan-open-source.badge

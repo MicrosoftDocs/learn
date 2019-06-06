@@ -41,6 +41,7 @@ units:
 - learn.azdo.manage-build-dependencies.5-create-package-pipeline
 - learn.azdo.manage-build-dependencies.6-consume-package
 - learn.azdo.manage-build-dependencies.7-push-a-change
-- learn.azdo.manage-build-dependencies.8-summary
+- learn.azdo.manage-build-dependencies.8-clean-up-environment
+- learn.azdo.manage-build-dependencies.9-summary
 badge:
   uid: learn.azdo.manage-build-dependencies.badge

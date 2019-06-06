@@ -40,6 +40,7 @@ units:
 - learn.azdo.host-build-agent.3-set-up-environment
 - learn.azdo.host-build-agent.4-create-build-agent
 - learn.azdo.host-build-agent.5-build-application
-- learn.azdo.host-build-agent.6-summary
+- learn.azdo.host-build-agent.6-clean-up-environment
+- learn.azdo.host-build-agent.7-summary
 badge:
   uid: learn.azdo.host-build-agent.badge

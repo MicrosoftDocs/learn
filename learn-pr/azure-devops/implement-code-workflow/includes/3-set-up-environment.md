@@ -1,17 +1,17 @@
-In this part, you'll make sure that your Azure DevOps organization is set up with what you need to complete the remainder of this module.
+In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
 
-This learning path also builds on the [Evolve your DevOps practices](/paths/evolve-your-devops-practices?azure-portal=true) learning path. There you set up your Azure DevOps organization and created a task backlog on Azure Boards using the Basic process.
+This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards using the Basic process.
 
 ## Run the template
 
 At this point, you have two options:
 
 1. Continue with the project you created in the _Evolve your DevOps practices_ learning path.
-1. Run a template that sets everything up for you in your Azure DevOps organization.
+1. Run a template that sets up everything for you in your Azure DevOps organization.
 
-You can continue with your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
+You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
 
 <!-- TODO: Update URL with prod -->
 
@@ -63,6 +63,6 @@ To set up the work item:
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](..//media/3-azure-boards-wi2-doing.png)
+    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi2-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
