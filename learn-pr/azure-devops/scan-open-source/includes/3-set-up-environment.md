@@ -8,7 +8,7 @@ This learning path also builds on the [Evolve your DevOps practices](/learn/path
 
 At this point, you have two options:
 
-1. Continue with the project you created in the _Evolve your DevOps practices_ learning path.
+1. Continue with the Azure DevOps project you created in the _Evolve your DevOps practices_ learning path.
 1. Run a template that sets up everything for you in your Azure DevOps organization.
 
 You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
@@ -21,7 +21,7 @@ You can continue using your existing project if you completed the previous modul
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Click **Sign In** and accept the usage terms.
-1. From the **Create New Project** screen, select your Azure DevOps organization and enter a project name, such as **Space Game - web - WhiteSource**.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - WhiteSource**.
 1. Select **Fork repository on GitHub** and then click **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
@@ -38,7 +38,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the card to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
+In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress, or WIP, limits so that the team doesn't take on too much work at one time.
 

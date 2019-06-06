@@ -7,9 +7,9 @@ You're all done with the tasks for this module. Here, you'll move the work item 
 
 Here, you'll move the work item you assigned to yourself earlier in this module, **Investigate hosted vs private build servers**, to the **Done** state.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here we'll mark this work as complete because you have a working build system on Azure Pipelines.
+In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because you have a private build agent working on Azure Pipelines.
 
-At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed and what went well in the Sprint, and what could be improved.
+At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the Sprint, and what could be improved.
 
 To complete the work item:
 
@@ -25,7 +25,7 @@ To complete the work item:
 
 Each module in this learning path provides a template you can run to create a clean environment for the duration of the module.
 
-Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This can cause multiple pipelines to run each time you push a change to your GitHub repository, which can cause you to run out of build minutes on our hosted agents. Therefore, it's important that you disable your delete your pipeline before moving on to the next module.
+Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This can trigger multiple pipelines to run each time you push a change to your GitHub repository, which can cause you to run out of free build minutes on our hosted agents. Therefore, it's important that you disable your delete your pipeline before moving on to the next module.
 
 Choose one of the following options.
 
