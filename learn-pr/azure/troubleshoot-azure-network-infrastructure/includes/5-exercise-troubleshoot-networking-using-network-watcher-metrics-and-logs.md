@@ -68,37 +68,67 @@ To set up flow logging, you must configure the NSG to connect to the storage acc
 1. Click **Log Analytics workspace** and then click **testworkspace**.
 1. Click **Save**.
 
+## Install Telnet on the frontend VM
 
-1. Now you are ready to generate some network traffic between VMs that will be caught in the flow log. Poke a hole in backend VM NSG and enable RDP inbound access.
-    - RDP on to the backend VM and try to remote onto Frontend VM - this will fail after few seconds.
-    - Search for "turn on or off windows feature" 
-      - Scroll down the list and chose telnet client 
-      - Open up command line interface
-      - Type telnet *10.10.1.4 80* - after 10-20 seconds you will receive the message "*Could not open connection to the host, on port 80: Connect failed*"
-      - Type telnet *10.10.1.4 443* - after 10-20 seconds you will receive the message "*Could not open connection to the host, on port 443: Connect failed*"
+You will use the Telnet client to test connections between the VMs. Let's install that client now:
 
+1. In the top left corner of the portal, click **All resources**, click **FrontendVM**, and then click **Connect**.
+1. Click **Download RDP File** and then click **OK**. If you see a warning about the publihser of the remote connection, click **Connect**.
+1. Sign in with the username **azureuser** and the password **Demouser@123** and then click **Yes**.
+1. Click the **Start** button, type **Windows features**, and then click **Turn Windows features on or off**
+1. In the **Add Roles and Features** wizard, click **Next** four times to advance to the **Features** page.
+1. Select **Telnet Client**, click **Next**, and then click **Install**.
+1. When the installation is complete, click **Close**.
 
-1. Diagnose the problem - Use log analytics to view the NSG flow logs. Got to *Network Watcher* then click on *Traffic Analytics*  and add your log analytics workspace. Determine the NSG rule causing the problem. Using log analytics you can display by flows, packets and bytes.
-   - Traffic visualization - You can view traffic by inbound, outbound, allowed, blocked, benign and malicious.
-   - Traffic distribution - View analytics of traffic flows across host, subnet and VNet.
-   - NSG hits - View analytics for NSGs and NSG rules across your environment.
-   - Application ports - View analytics for application ports utilized across your environment.
+## Generate test traffic
 
-1.  Fix the problem - There is NSG rule that is blocking outbound traffic from the backend subnet to everywhere over the ports 80, 443 and 3389. Remove the NSG rule and configure new rules that enable backend to talk to the frontend inbound and outbound using 80,443 and 1443. NSGs are similar to access control list, NSG work top down. The lower the rule priority, the higher the rule will be in the NSG. Backend subnet should deny all other traffic. Add the rules below to the backend VM NSG.
+Now you are ready to generate some network traffic between VMs that will be caught in the flow log:
 
-Outbound security rules
-|Priority|Name|Port|Protocol|Source|Destination|Action|
-|---|---|---|---|---|---|---|
-|200| HTTP-allow | 80 | TCP | 10.10.2.0/24 | 10.10.1.0/24 | Allow |
-|210| HTTPS-allow | 443 | TCP | 10.10.2.0/24 | 10.10.1.0/24 | Allow |
-|220| SQL-allow | 1443 | TCP | 10.10.2.0/24 | 10.10.1.0/24 | Allow |
-|230| Block-all | Any | Any | Any | Any | Deny |
+1. Open an command prompt, and then execute this command:
 
-Inbound security rules 
-|Priority|Name|Port|Protocol|Source|Destination|Action|
-|---|---|---|---|---|---|---|
-|200| HTTP-allow | 80 | TCP |  10.10.1.0/24 | 10.10.2.0/24| Allow |
-|210| HTTPS-allow | 443 | TCP |  10.10.1.0/24 | 10.10.2.0/24| Allow |
-|220| SQL-allow | 1443 | TCP |  10.10.1.0/24 | 10.10.2.0/24 | Allow |
-|230|  Block-all | Any | Any | Any | Any | Deny |
+    ```cmd
+    telnet 10.10.2.4 80
+    ```
 
+1. Execute this command:
+
+    ```cmd
+    telnet 10.10.2.4 443
+    ```
+    
+Both connections fail after a few seconds. 
+
+## Diagnose the problem
+
+Now, lets use log analytics to view the NSG flow logs:
+
+1. In to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All services**, type **Network Watcher**, and then click the **Network Watcher** resource.
+1. Under **Logs** click **Traffic Analytics**.
+1. In the **Log Analytics workspace** drop-down list, select **testworkspace**.
+1. Use the different views to diagnose the problem that prevents communication from the frontend VM to the backend VM.
+
+## Fix the problem
+
+There is NSG rule that is blocking outbound traffic from the backend subnet to everywhere over the ports 80, 443 and 3389. Let's reconfigure that rule now:
+
+1. Click **All resources**, and then click **MyVNet1**.
+1. Under **Settings**, click **Subnets**, and then click **BackendSubnet**.
+1. Click **Network security group**, click **None**, and then click **Save**.
+
+## Retest the connection
+
+Connections on ports 80 and 443 should now work without problems:
+
+1. In the RDP client, connected to **FrontendVM**, at the command prompt, execute this command:
+
+    ```cmd
+    telnet 10.10.2.4 80
+    ```
+
+1. Execute this command:
+
+    ```cmd
+    telnet 10.10.2.4 443
+    ```
+    
+Both connections should work. 
