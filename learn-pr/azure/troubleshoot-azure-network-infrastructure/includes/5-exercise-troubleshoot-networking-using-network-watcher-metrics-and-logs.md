@@ -56,20 +56,17 @@ To view the NSG flow logs you will use log analytics. To install log analytics:
 
     ![Creating a log analytics workspace](../media/log-analytics-workspace.PNG)
 
+## Enable flow logging
 
-<!-- TODO: revise from here -->
+To set up flow logging, you must configure the NSG to connect to the storage account, and add traffic analytics for the NSG:
 
-1. Next step is to enable flow logging, add the storage account and add traffic analytics for your NSGs. In the portal
-    ![The following picture provides a visual aid.](../media/nsg-flow-log-enabled.png)
-
-   - Go to Network security groups, chose the *NSG*.
-   - Under the monitoring tab for the NSG, click on *NSG flow logs*
-   - Chose all NSG groups and turn on the flow logs
-   - Add storage account you created(nsglogstorage101)
-   - Turn on traffic analytics status and change the interval to 10 mins
-   - Add  log analytics workspace you created
-
-    Once you have filled in all the details hit *save*.
+1. In the top left corner of the portal, click **All resources** and then click the **MyNSG** network security group.
+1. Under **Monitoring**, click **NSG flow logs**.
+1. Click **MyNSG** and then click **On**.
+1. Under **Storage account**, click **Configure**, in the **Storage account** drop-down list select the **nslogstorage1** account, and then click **OK**.
+1. Under **Traffic Analytics status** click **On**, and then in the **Traffic Analytics processing interval** drop-down list, select **Every 10 mins**.
+1. Click **Log Analytics workspace** and then click **testworkspace**.
+1. Click **Save**.
 
 
 1. Now you are ready to generate some network traffic between VMs that will be caught in the flow log. Poke a hole in backend VM NSG and enable RDP inbound access.
