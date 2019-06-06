@@ -15,11 +15,52 @@ What we're deploying:
 
 ## Deploy a monolithic application on Azure App Service
 
-Run the following command to deploy the shipping application on App Service.
+Let's start by deploying the application. First, we'll need to great the Azure resources to host the application.
 
-Steps...
+1. Run this command to deploy the resources needed for this application.
 
-1. Create App Service
-1. Create database (possibly Azure SQL)
-1. Deploy App Insights
-1. Deploy application
+    ```azurecli
+    az group deployment create \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
+    ```
+
+1. Now that we have the resources created, lets deploy the application. First, run this command to pull down the source code from the sample repository.
+
+    ```azurecli
+    git clone https://github.com/MicrosoftDocs/mslearn-microservices-architecture.git
+    cd mslearn-microservices-architecture
+    ```
+
+1. Next, run this command to set up a deployment user. This user will be used to access the git repo on the App Service. Replace `<username>` and `<password>`, including the brackets, with a new username and password. The username must be unique within Azure. The password must be at least eight characters long, with two of the following three elements: letters, numbers, and symbols.
+
+    ```azurecli
+    az webapp deployment user set --user-name <username> --password <password>
+    ```
+
+1. Run this command to set a variable with the name of the App Service.
+
+    ```azurecli
+    APPSERVICENAME="$(az webapp list --query '[].name' --output tsv)"
+    ```
+
+1. Now let's set up the App Service to use local git, allowing us to deploy code to the site. Run the following command.
+
+    ```azurecli
+    az webapp deployment source config-local-git \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --name $APPSERVICENAME
+    ```
+
+1. Run this command to add the git location as a remote. Replace `<deploymentuser>` with the deployment user you created earlier.
+
+    ```azurecli
+    git remote add azure https://<deploymentuser>@$APPSERVICENAME.scm.azurewebsites.net/microserviceslearnmodule-osg.git
+    ```
+
+1. Run the following command to deploy the application to App Service.
+
+    ```azurecli
+    git push azure master
+    ```
+
