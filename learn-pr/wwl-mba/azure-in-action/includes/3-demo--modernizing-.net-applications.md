@@ -102,12 +102,11 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TSyp]
 
 >**Key ideas**: Once an application is running in **Azure App Service**, administrators can take advantage of the many benefits available. Just a few of the options that can be configured using **Azure App Service** are:
-
-- Application authentication or authorization -  Fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant.
-- Networking - Connect to on-premises resources, such as a database, and fully customize security, using networking policy to define how traffic and data flows through an app.
-- Scale up - Increase the size of an instance by adding more resources.
-- Scale out - Increase the number of instances running.
-- Diagnostics monitoring - Get real-time insights using alerts, logs, and performance testing.
+>- Application authentication or authorization -  Fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant.
+>- Networking - Connect to on-premises resources, such as a database, and fully customize security, using networking policy to define how traffic and data flows through an app.
+>- Scale up - Increase the size of an instance by adding more resources.
+>- Scale out - Increase the number of instances running.
+>- Diagnostics monitoring - Get real-time insights using alerts, logs, and performance testing.
 
 ![](../media/clear.png)
 
