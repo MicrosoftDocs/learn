@@ -82,7 +82,7 @@ Manage GitHub projects
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2V0I8]
 
-With the integration between **Azure DevOps** and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.
+>**Key ideas**: With the integration between **Azure DevOps** and GitHub you’ll get the best of both worlds. You’ll get the power of open source development that GitHub provides, combined with the end-to-end traceability and continuous delivery that’s Azure.
 
 ![](../media/clear.png)
 
@@ -115,7 +115,7 @@ Follow along as the Contoso Air DevOps Engineer sets up a CI pipeline so that co
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRN]
 
 
-**Azure Pipelines** allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.
+>**Key ideas**: **Azure Pipelines** allows you to configure and manage CI/CD for the application and platform of your choice. You can configure a CI/CD pipeline for any Azure application—using your preferred language and framework as part of your GitHub workflow—in just a few simple steps.
 
 ![](../media/clear.png)
 
@@ -147,7 +147,7 @@ Follow along as the Contoso Air DevOps Engineer uses Application Insights to det
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2XjRL]
 
-**Application Insights** allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because **Application Insights** captures errors in real time so your team can identify the root cause and make fixes quickly.
+>**Key ideas**: **Application Insights** allows you to monitor your application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues. You won't spend time logging and tracking bugs because **Application Insights** captures errors in real time so your team can identify the root cause and make fixes quickly.
 
 
 ![](../media/clear.png)
@@ -175,7 +175,7 @@ Contoso Air wants to track what their teams are working on. They find it hard to
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2USUv]
 
-**Azure Boards** allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because **Azure Boards** are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.
+>**Key ideas**: **Azure Boards** allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive. And because **Azure Boards** are versatile, you use boards for IT related projects and other projects; such as managing marketing campaigns, sales pipelines, customer service tickets, event-planning, and more.
 
 ![](../media/clear.png)
 

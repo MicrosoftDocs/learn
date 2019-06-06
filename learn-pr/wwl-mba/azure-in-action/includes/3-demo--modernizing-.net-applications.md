@@ -62,7 +62,7 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ZSs8]
 
-Azure offers tools and capabilities that simplify the process of migrating your existing workloads to the cloud, where you can immediately take advantage of cloud scale and elasticity and easily modernize to align to changing business goals.
+>**Key ideas**: Azure offers tools and capabilities that simplify the process of migrating your existing workloads to the cloud, where you can immediately take advantage of cloud scale and elasticity and easily modernize to align to changing business goals.
 
 ![](../media/clear.png)
 
@@ -82,7 +82,7 @@ Azure offers tools and capabilities that simplify the process of migrating your 
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2U0kL]
 
-**Azure App Service** provides a way to easily migrate applications to Azure using the publishing tools available in Visual Studio, a very common development tool that can automatically create necessary resources such as an **Azure SQL Database**.
+>**Key ideas**: **Azure App Service** provides a way to easily migrate applications to Azure using the publishing tools available in Visual Studio, a very common development tool that can automatically create necessary resources such as an **Azure SQL Database**.
 
 ![](../media/clear.png)
 
@@ -101,7 +101,7 @@ Azure offers tools and capabilities that simplify the process of migrating your 
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TSyp]
 
-Once an application is running in **Azure App Service**, administrators can take advantage of the many benefits available. Just a few of the options that can be configured using **Azure App Service** are:
+>**Key ideas**: Once an application is running in **Azure App Service**, administrators can take advantage of the many benefits available. Just a few of the options that can be configured using **Azure App Service** are:
 
 - Application authentication or authorization -  Fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant.
 - Networking - Connect to on-premises resources, such as a database, and fully customize security, using networking policy to define how traffic and data flows through an app.
@@ -126,7 +126,7 @@ Once an application is running in **Azure App Service**, administrators can take
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
 
-**Azure Logic Apps** makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.
+>**Key ideas**: **Azure Logic Apps** makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.
 
 ![](../media/clear.png)
 
@@ -143,8 +143,8 @@ Once an application is running in **Azure App Service**, administrators can take
 :::column-end:::
 :::row-end:::
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE36YbN]
 
-**Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
+>**Key ideas**: **Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
 
 Next, we'll see a demo that showcases the benefits of Azure Dev Ops.
