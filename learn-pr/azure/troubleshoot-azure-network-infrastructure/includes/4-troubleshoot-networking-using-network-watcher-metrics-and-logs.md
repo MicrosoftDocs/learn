@@ -1,12 +1,12 @@
-If you want diagnose a problem quickly, you have to understand the information that is available in the Network Watcher logs.
+If you want to diagnose a problem quickly, you have to understand the information that is available in the Network Watcher logs.
 
-In your engineering company, you want to ensure that your staff can minimize the time it takes to diagnose and resolve any network configuration problem. To do this, you want to ensure that they know which information is available in which logs.
+In your engineering company, you want to ensure that your staff can minimize the time it takes to diagnose and resolve any network configuration problem. You want to ensure that they know which information is available in which logs.
 
-In this module, you will focus on flow logs, diagnostic logs and traffic analytics. You will learn how these tools can help to troubleshoot the Azure network. You will also look at the use case scenarios for some of the tools towards the end of the module. 
+In this module, you will focus on flow logs, diagnostic logs, and traffic analytics. You will learn how these tools can help to troubleshoot the Azure network. You will also look at the use case scenarios for some of the tools towards the end of the module. 
 
 ## Usage and quotas
 
-Each Microsoft Azure resource can be used up to its quota. Each subscription has separate quotas and usage is tracked per subscription. Only one instance of Network Watcher is required per subscription per region. This gives you a view of usage and quotas, so that you can see if you are at risk of hitting a quota. 
+Each Microsoft Azure resource can be used up to its quota. Each subscription has separate quotas and usage is tracked per subscription. Only one instance of Network Watcher is required per subscription per region. This instance gives you a view of usage and quotas, so that you can see if you are at risk of hitting a quota. 
 
 To view the usage and quota information, navigate to **All Services > Networking > Network Watcher**, and then scroll to the bottom of the list and select **usage and quota**. You can view more granular data based on usage and the location where the resources are being used. You can view data for metrics such as:
 
@@ -40,9 +40,9 @@ If you have a large infrastructure in Azure, you may have to view 100 logs or mo
 - Flows by decision (allowed and denied)
 - Flows by destination port
 
-There are many more ways to customize PowerBI to match your needs. 
+There are many more ways to customize Power BI to match your needs. 
 
-You can also use open source tools to analyse your logs, such as Elastic Stack, Grafana, and Graylog.
+You can also use open-source tools to analyze your logs, such as Elastic Stack, Grafana, and Graylog.
 
 > [!NOTE]
 > NSG flow logs do not support storage accounts on classic Azure portal. 
@@ -83,9 +83,9 @@ To resolve slow performance issues, we need to determine the root cause of the p
 - Are there any malicious attacks happening? 
 - Is the VM storage configuration correct?
 
-First, check that the VM size is appropriate for the job. Next, enable Azure Diagnostics on the VM to get more granular data for specific metrics, such as CPU usage and memory usage. To enable VM diagnostics via the portal, go to the **VM**, click **Diagnostics  Settings**, and then turn diagnostics on. 
+First, check that the VM size is appropriate for the job. Next, enable Azure Diagnostics on the VM to get more granular data for specific metrics, such as CPU usage and memory usage. To enable VM diagnostics via the portal, go to the **VM**, click **Diagnostics  Settings**, and then turn on diagnostics. 
 
-In order to identify if we have any resource bottlenecks, we will need to review the data. If we find that the machine has been running fine, but it has been reported that the performance has recently degraded, we should review a time range of data before, during, and after the issue. These graphs can also be useful for cross-referencing difference resource behaviours in the same time period. We will check for:
+In order to identify if we have any resource bottlenecks, we will need to review the data. If we find that the machine has been running fine, but it has been reported that the performance has recently degraded, we should review a time range of data before, during, and after the issue. These graphs can also be useful for cross-referencing difference resource behaviors in the same time period. We will check for:
 
 - CPU bottlenecks
 - Memory bottlenecks
@@ -93,12 +93,12 @@ In order to identify if we have any resource bottlenecks, we will need to review
 
 #### CPU bottlenecks
 
-When looking at performance issues, examine trends and understand if they affect our server. Use the monitoring graphs from the portal to spot trends. There are different type of trends that you may see on the monitoring graph:
+When looking at performance issues, examine trends and understand if they affect our server. Use the monitoring graphs from the portal to spot trends. There are different types of trends that you may see on the monitoring graph:
 
 - **Isolated spikes**. A spike could be related to a scheduled task or expected event. If you know what this task is, does it run at the required performance level? If the performance is OK, you may not need to increase capacity.
-- **Spike up and constant**. This trend could be caused by a new workload. Is it a workload you aware of? If not, enable monitoring in the VM to find out what processes cause this. Is the increased consumption caused by inefficient code, or is this normal consumption? If it's normal consumption, does the process operate at the required performance level?
+- **Spike up and constant**. This trend could be caused by a new workload. Is it a workload you aware of? If not, enable monitoring in the VM to find out what processes cause the load. Is the increased consumption caused by inefficient code, or is this normal consumption? If it is normal consumption, does the process operate at the required performance level?
 - **Constant**. Has your VM always been like this? If so you should identify the processes that consume most resources and consider adding more capacity.
-- **Steadily increasing**. Do you see a constant increase in consumption? If so, this could be inefficient code or a process taking on more user workload.
+- **Steadily increasing**. Do you see a constant increase in consumption? If so, this trend could indicate inefficient code or a process taking on more user workload.
 
 If you do observe high CPU utilization, you can either:
 
@@ -109,16 +109,16 @@ If you have increased the VM and the CPU is still running at above 95%, is this 
 
 #### Memory bottleneck
 
-The memory usage shows you how much memory is being consumed with the VM. Use logs to understand the trend and if it maps to the time you see issues. You should not have less than 100MB of available memory at any time. Watch out for the following trends:
+The memory usage shows you how much memory is being consumed with the VM. Use logs to understand the trend and if it maps to the time you see issues. You should not have less than 100 MB of available memory at any time. Watch out for the following trends:
 
-- **Spike up and constant consumption**. Just because you have high memory utilization may not mean it is the cause of bad performance. Some applications, such as relational database engines, are memory intensize by design. However, if there are multiple memory hungry applications, you may see bad performance because memory contention causes trimming and paging to disk. This will cause a negative performance impact.
-- **Steadily increasing consumption**. This trend could be an application *warming up*. This trend is common when database engines starting up. However, this could also be a sign of a memory leak in an application. You should identify the application and understand if it is expected behaviour.
+- **Spike up and constant consumption**. Just because you have high memory utilization may not mean it is the cause of bad performance. Some applications, such as relational database engines, are memory intensive by design. However, if there are multiple memory hungry applications, you may see bad performance because memory contention causes trimming and paging to disk. These processes will cause a negative performance impact.
+- **Steadily increasing consumption**. This trend could be an application *warming up*. It is common when database engines starting up. However, it could also be a sign of a memory leak in an application. Identify the application and understand if it is expected behavior.
 - **Page or swap file usage**. Check if you are using the Windows Paging file heavily, or the Linux swap file, located on /dev/sdb.
 
 To resolve this high memory utilization, consider these solutions:
 
 - For immediate relief or page file usage, increase the size of the VM to add memory, then monitor.
-- Inverstigate the issue further. Locate that application or process and troubleshoot it. If you know the application, see if the memory allocation can be capped.
+- Investigate the issue further. Locate that application or process and troubleshoot it. If you know the application, see if the memory allocation can be capped.
     
 #### Disk bottleneck
 
@@ -146,4 +146,4 @@ If you have reached this point and still not diagnosed the problem, then there m
 
 By default all subnets can communicate in Azure. So, if two VMs on two subnets cannot communicate, there must be configuration that is blocking communication. Before checking the flow logs, run the IP Flow Verify tool from the frontend VM to the backend VM. This tool runs a logical test on the rules on the network.
 
-If the result is that there is an NSG on the backend subnet that is blocking all communication, reconfigure that NSG. For security purposes, you must block some communication with the frontend because the frontend is exposed to the public internet. By blocking communication to the backend, we limit the amount of exposure in the event of malware or security attack. However, if the NSG blocks everything, then it is incorrectly configured. Enable the sepcifc protocols and ports that are required. 
+If the result is that there is an NSG on the backend subnet that is blocking all communication, reconfigure that NSG. For security purposes, you must block some communication with the frontend because the frontend is exposed to the public internet. By blocking communication to the backend, we limit the amount of exposure in the event of a malware or security attack. However, if the NSG blocks everything, then it is incorrectly configured. Enable the sepcifc protocols and ports that are required. 

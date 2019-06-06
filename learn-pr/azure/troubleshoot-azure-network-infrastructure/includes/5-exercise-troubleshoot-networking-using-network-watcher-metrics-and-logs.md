@@ -1,4 +1,4 @@
-In Network Watcher, metrics and logs can diagnose complexe configuration problems.
+In Network Watcher, metrics and logs can diagnose complex configuration problems.
 
 Suppose you have two Virtual Machines (VMs) that cannot communicate. You want to obtain as much information as you can to diagnose the problem.
 
@@ -9,8 +9,8 @@ In this unit, you will troubleshoot by using Network Watcher metrics and logs. Y
 NSG flow logging requires Microsoft.Insights provider. To register for the Microsoft.Insights provider, complete the following steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
-1. In the top left corner of portal, click **All services**. In the Filter box, type **Subscriptions**. When **Subscriptions** appears in the search results, click it.
-1. Select the **Conciege** subscription, and then under **Settings**, click **Resource providers**.
+1. In the top-left corner of portal, click **All services**. In the Filter box, type **Subscriptions**. When **Subscriptions** appears in the search results, click it.
+1. Select the **Concierge** subscription, and then under **Settings**, click **Resource providers**.
 1. In the search bar, type **microsoft.insights**. 
 1. If the status of the **microsoft.insghts** provider is **Unregistered**, then click **Register**.
 
@@ -20,7 +20,7 @@ NSG flow logging requires Microsoft.Insights provider. To register for the Micro
 
 Now, create a storage account for the NSG flow logs:
 
-1. In the top left corner of portal, click **Create a resource > Storage > Storage account**.
+1. In the top-left corner of portal, click **Create a resource > Storage > Storage account**.
 1. In the **Create storage account** page, fill in these settings:
 
     | Setting | Value |
@@ -40,9 +40,9 @@ Now, create a storage account for the NSG flow logs:
 
 ## Create log analytics workspace
 
-To view the NSG flow logs you will use log analytics. To install log analytics:
+To view the NSG flow logs, you will use log analytics. To install log analytics:
 
-1. In the top left corner of portal, click **All services**. In the Filter box, type **Log analytics**. When **Log analytics workspaces** appears in the search results, click it.
+1. In the top-left corner of portal, click **All services**. In the Filter box, type **Log analytics**. When **Log analytics workspaces** appears in the search results, click it.
 1. Click **+ Add**, complete the page with these values, and then click **OK**:
 
     | Setting | Value |
@@ -60,7 +60,7 @@ To view the NSG flow logs you will use log analytics. To install log analytics:
 
 To set up flow logging, you must configure the NSG to connect to the storage account, and add traffic analytics for the NSG:
 
-1. In the top left corner of the portal, click **All resources** and then click the **MyNSG** network security group.
+1. In the top-left corner of the portal, click **All resources** and then click the **MyNSG** network security group.
 1. Under **Monitoring**, click **NSG flow logs**.
 1. Click **MyNSG** and then click **On**.
 1. Under **Storage account**, click **Configure**, in the **Storage account** drop-down list select the **nslogstorage1** account, and then click **OK**.
@@ -72,8 +72,8 @@ To set up flow logging, you must configure the NSG to connect to the storage acc
 
 You will use the Telnet client to test connections between the VMs. Let's install that client now:
 
-1. In the top left corner of the portal, click **All resources**, click **FrontendVM**, and then click **Connect**.
-1. Click **Download RDP File** and then click **OK**. If you see a warning about the publihser of the remote connection, click **Connect**.
+1. In the top-left corner of the portal, click **All resources**, click **FrontendVM**, and then click **Connect**.
+1. Click **Download RDP File** and then click **OK**. If you see a warning about the publisher of the remote connection, click **Connect**.
 1. Sign in with the username **azureuser** and the password **Demouser@123** and then click **Yes**.
 1. Click the **Start** button, type **Windows features**, and then click **Turn Windows features on or off**
 1. In the **Add Roles and Features** wizard, click **Next** four times to advance to the **Features** page.
@@ -84,7 +84,7 @@ You will use the Telnet client to test connections between the VMs. Let's instal
 
 Now you are ready to generate some network traffic between VMs that will be caught in the flow log:
 
-1. Open an command prompt, and then execute this command:
+1. Open a command prompt, and then execute this command:
 
     ```cmd
     telnet 10.10.2.4 80
@@ -102,7 +102,7 @@ Both connections fail after a few seconds.
 
 Now, lets use log analytics to view the NSG flow logs:
 
-1. In to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All services**, type **Network Watcher**, and then click the **Network Watcher** resource.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All services**, type **Network Watcher**, and then click the **Network Watcher** resource.
 1. Under **Logs** click **Traffic Analytics**.
 1. In the **Log Analytics workspace** drop-down list, select **testworkspace**.
 1. Use the different views to diagnose the problem that prevents communication from the frontend VM to the backend VM.

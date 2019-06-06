@@ -2,9 +2,9 @@ You can use Network Watcher to monitor virtual networks and their Virtual Machin
 
 Suppose you are the Azure architect for an engineering company. One of your colleagues has deployed a VM in Azure and is having network connectivity issues. They have come to you for help. You want to help your colleague learn how they can troubleshoot these issues themselves if they come up in the future. 
 
-In this module, you will learn about the facilities within Network Watcher and use them to diagnose a communication problem between two VMs. You will also use the Network Watcher monitor and diagnostic tools to diagnose and troubleshoot a VM issues.
+In this module, you will learn about the facilities within Network Watcher and use them to diagnose a communication problem between two VMs. You will also use the Network Watcher monitor and diagnostic tools to diagnose and troubleshoot a VM issue.
 
-By the end of this module, you will be able to diagnose and troubleshoot connectivity problemsby using Network Watcher.
+By the end of this module, you will be able to diagnose and troubleshoot connectivity problems by using Network Watcher.
 
 ## Learning objectives
 

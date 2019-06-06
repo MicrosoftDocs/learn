@@ -2,7 +2,7 @@ Network Watcher makes it easier to diagnose configuration errors prevent Virtual
 
 Suppose you have two VMs that cannot communicate. You want to diagnose the problem and resolve it as fast as possible. You want to use Network Watcher to do that.
 
-Here, you will troubleshooting connectivity between two VMs in different subnets. 
+Here, you will troubleshoot connectivity between two VMs in different subnets. 
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -217,7 +217,7 @@ Let's use the IP flow test tool to obtain more information:
 
 1. Examine the results. They show that access is denied due to NSG and security rule. 
 
-In this exercise, you have successfully used network watcher tools to discover the connectivity issue between the 2 subnets. One way communication is allowed but one way is to blocked due to NSG rules.
+In this exercise, you have successfully used network watcher tools to discover the connectivity issue between the two subnets. One way communication is allowed but one way is to blocked due to NSG rules.
 
 
 
