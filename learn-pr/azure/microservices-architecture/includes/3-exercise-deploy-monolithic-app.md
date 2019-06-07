@@ -25,6 +25,13 @@ Let's start by deploying the application. First, we'll need to great the Azure r
         --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
     ```
 
+1. Git is already installed Azure Cloud Shell but you'll want to set your username and email for your cloud shell account. In the Cloud Shell on the right, type the following commands, replacing the `<your name>` and `<your email>` placeholders with your own name and email (without the braces):
+
+    ```bash
+    git config --global user.name "<your name>"
+    git config --global user.email "<your email>"
+    ```
+
 1. Now that we have the resources created, lets deploy the application. First, run this command to pull down the source code from the sample repository.
 
     ```azurecli
@@ -66,7 +73,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
     git push azure master
     ```
 
-1. Once complete, you can confirm the deployment was successful by visting the web site of your App Service. Run this command to get the URL, and click on it to open the page.
+1. Once complete, you can confirm the deployment was successful by visiting the web site of your App Service. Run this command to get the URL, and click on it to open the page.
 
     ```bash
     echo https://$(az webapp config hostname list \
