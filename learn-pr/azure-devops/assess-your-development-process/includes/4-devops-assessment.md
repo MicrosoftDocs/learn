@@ -1,151 +1,63 @@
-Microsoft has a free tool called **Microsoft DevOps Self-Assessment** to help you analyze your current release cycle process. Let's see how Tailspin measures up.
+Creating a Value Stream Map (VSM) helps you analyze your current release cycle process. The purpose of a VSM is to provide optimum value to the customer through the creation process with minimum waste. Let's see how Tailspin measures up.
 
-Mara, who is new to the team, is going to take the Microsoft DevOps Self-Assessment. This self-assessment gives you the opportunity to reflect on your existing processes. It also provides you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
+Mara, who is new to the team, is going to create a quick value stream map so she can reflect on the existing processes. Creating this map will provide you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
-The assessment comes in two forms &mdash; a long form and a shorter form. Being new to the team, Mara knows she doesn't understand everything so she's going to use the shorter form. Taking the assessment is a good first step. It will give the team an overall view of where they are in the DevOps process. With the results, everyone on the team has a common starting point for identifying the first steps towards improving how Tailspin develops and releases their games.
+Being new to the team, Mara knows she doesn't understand everything so she's going to create a temporary VSM that will have some gaps and questions on the whiteboard in a conference room. She will share this with the team later. With the map in place, everyone on the team has a common starting point for identifying the first steps towards improving how Tailspin develops and releases their games.
 
-Here's how you can take the assessment with her.
+Let's take a look at her map.
 
-## Take the assessment
+## Understand the current process
 
-<!-- TODO: Couple issues; need to follow up with marketing
-1. Should we have the learner fill in their own company info? (ask marketing what they want?)
-1. The assessment might go away. The fallback plan is for Mara to dust off an old assessment she took in the past. We would include all responses. The learner would see what Mara picks and then pick their own response.
--->
+Mara gathers the team in the conference room to present her value stream map.
 
-1. Go to [devopsassessment.net](https://devopsassessment.net?azure-portal=true).
-1. Fill out the personal information:
-    * Tailspin is the company name.
-    * Company size is 50-249.
-    * Select **Other** for Title.
-    * Select **Other** for Industry.
+(Whiteboard of current process here with numbers to correlate with narrative)
 
-1. Click **Start the Assessment**.
-1. Select the short form. Click **Take the Assessment**.
+**Mara:** A value stream map helps to measure where a process has value and where it is spending time with no value. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through the process currently. After that, we can create a value stream map of our ideal process.
 
-> [!NOTE]
-> For now, choose the same answers as Mara for each section. You'll have the opportunity to go through the assessment a second time, so think about what selections you would make for your team.
+*Eyes roll, but Mara presses on.*
 
+Creating a new feature currently means creating a label in source control and starting from there. Currently we have one person that can do this, Andy. We request a label using an email and Andy waits until all code is checked in and stable to create the label. Once it is created, we get an email saying we can begin work. This process takes up to 3 days and has no value to the customer. Things with no value to the customer should take as little time as possible.
 
-### Process and Agility
+Coding a feature takes about 4 days for one person if we can get access to all the files we need. We need to be on the corporate network and not be blocked by source control. This time has value to the customer. They want this feature.
 
-The team follows a waterfall approach. Work can feel ad-hoc, and the deployment process is invisible to developers once they hand off new features to QA.
+Once we decide that we have a stable build we update a spreadsheet to tell Amita that there is a build ready for testing and where to find it.
 
-Mara has already seen the team using open-source components with various licenses. This can lead to trouble should anyone discover they may not be correctly licensing open-source code they use.
+She manually tests the build. This process gets longer as the code grows. For now, let's say 3 days. She then emails Andy with bug reports.
 
-| Question | Response |
-|----------|----------|
-| How do you plan, prioritize and schedule work? | By feature completion against spec |
-| How do you manage suppliers for outsourced development? | None of the above/not applicable |
-| What is your definition of done? | The person doing the work decides if work is complete |
-| How do development and operations teams collaborate during a production issue? | Not applicable because Ops handles production issues independently |
-| What are your policies around open software? | We do not have a policy about using open source |
+Andy has to take time to triage the bugs and assign work.
 
-Click **Next Category**.
+Meanwhile, Tim gets an email from Andy at some point with the requirements for the servers. Tim waits for hardware to be approved and ordered, and then begins setting up the servers. Say this takes 15 days. And I have no idea what to put here for scaling it out. Maybe Tim can speak to that later.
 
-### Version Control
+Leadership needs to approve a release before it can be deployed. This happens in a meeting.
 
-The team uses centralized version control, which makes it difficult for developers to contribute to the same source files. It also makes it difficult to work when not connected to the corporate network.
+Eventually, Tim will deploy our feature and it will make it to the customer here on the upper right.
 
-Mara also wonders why Andy hasn't yet reviewed any of her code. She only hopes that her new features are written correctly and function as she intends.
+### Calculate the value
 
-| Question | Response |
-|----------|----------|
-| What files do you keep under version control? | Application source code |
-| What is your branching policy? | We have no branches and develop only in the trunk or master |
-| How do you review code changes? | We review code changes infrequently |
-| How do you manage code dependencies across teams? | We track them in a spreadsheet or document |
+So now we can look at the key performance metrics and see how we measure up. 
 
-### Continuous Integration and Continuous Delivery
+Total lead time is the time it takes for a feature to make it to the customer. Process time is the time spent on the feature that has value to the customer. Activity ratio is process time divided by the lead time. This is our efficiency. As you can see, we have a lot of room for improvement.
 
-When QA has identified a release candidate, the team schedules a review with the company's leadership team. The leadership team decides whether the release candidate goes out or if more work is needed.
+(some grumbling from the team)
 
-These meetings cause the team some anxiety, as they've put in a lot of effort before getting feedback.
+**Tim:** So how does this help us? 
 
-| Question | Response |
-|----------|----------|
-| How do you roll out new features to users? | We deploy when the appropriate manager approves |
+## What is the ideal process?
 
-### Cloud and Infrastructure
+**Mara:** It helps to see where we are now so that we can minimize the waste. That is, the time we spend that has no value to the customer.
 
-The operations team deploys each web site to an on-prem datacenter. Players report that the site is slow during weekends and holidays.
+Over on the other whiteboard, I created an *ideal* VSM using DevOps. This is where we want to be eventually. Here, processes are fast and automated where it makes sense.
 
-Operations holds the SSH keys and passwords to access the servers. That means only they can take action when the site goes down or needs maintenance.
+(Whiteboard with ideal process and calculations)
 
-| Question | Response |
-|----------|----------|
-| What is your policy for using the public cloud? | None of the above/not applicable |
-| How are passwords and other secrets managed? | Secrets are managed by Operations |
+*The team's eyes get wide and the grumbling continues.*
 
-### Testing
+Don't panic. I'm not suggesting we drop our current processes and adopt all of this. But I think we can work toward it in small increments without disrupting what we have in place.
 
-Mara hasn't seen any unit tests in the projects she's looked at, including her current project, the web site for _Space Game_. No wonder Amita from QA is always coming back to the team with bugs.  Existing functionality always seems to break when the dev team adds new features.
+**Tim:** I don't like the way the operations side looks at all. I will never agree to this.
 
-The teams have held back on developing mobile apps for their games because they say maintaining standard web sites is hard enough.
+**Amita:** I'm with Tim. There is no way QA can be automated. I need to have control of it.
 
-| Question | Response |
-|----------|----------|
-| What does your team consider good testing? | We do not have a standard for good testing |
-| When do you test for security? | We do not have a prescribed cadence for security tests |
-| How do you test mobile apps? | We don't develop mobile apps |
+**Andy:** And just how do you expect us to get builds out that fast? Can't be done. 
 
-### Monitoring
-
-Mara knows that the operations team uses ping requests to monitor their systems for uptime. She's almost certain they don't monitor resource usage or collect crash data and telemetry of who's accessing the sites, and when.
-
-| Question | Response |
-|----------|----------|
-| What instrumentation do you use to monitor applications running in production? | Availability monitoring via pinging or synthetic transactions |
-
-Click **Next Category**.
-
-### Culture
-
-The teams get along, but don't always communicate their plans, decisions, or failures. In fact, Andy has told Mara that change is hard because the leadership team has called out failures (and who caused them) through emails and at all-hands meetings.
-
-| Question | Response |
-|----------|----------|
-| Who makes decisions in the organization? | Decision making is inconsistent |
-| How does your team collaborate, share risks, innovate, and learn? | There is some communication. When mistakes are made, there is justice for the responsible person |
-| When corporate governance discovers that a project "is breaking the rules," what happens? | The corporate governance body will negotiate with the business unit to replace a non-compliant project |
-
-Click **Next Category**.
-
-### Measurement
-
-Amita from QA receives a quarterly bonus based on the number of bugs she's found. Although she's well-intentioned, Amita has the incentive to report the same bug repeatedly rather than trying to solve the underlying problem.
-
-| Question | Response |
-|----------|----------|
-| How do you measure code quality? | Based on bugs found |
-| What decisions do you make by looking at usage data from your applications? | None of the above/not applicable |
-
-Click **Next Category**.
-
-### Outcomes
-
-Mara joined Tailspin because they make great video games. Both Mara's immediate coworkers and the game design and development teams seem to like working at Tailspin.
-
-However, Mara already gets the sense that things don't always go as planned and schedules slip. Processes she feels should happen almost instantly can take days or even weeks. Many people work weekends to meet deadlines.
-
-In today's market, influencers and critics can have a significant impact on whether your game is a roaring success or a complete flop. At the launch of each new game, it's critical to have a successful web site. The site provides players with the latest game info and a link to download the game.
-
-| Question | Response |
-|----------|----------|
-| For the application or service you work on, how often does your organization deploy code to production? | Between once per month and once every 6 months |
-| What is your lead time for changes (i.e., how long does it take to go from "code committed" to "code successfully running in production")? | Between one week and one month |
-| How long does it generally take to restore service when a service incident occurs (e.g., unplanned outage, service impairment, etc.)? | Between one day and one week |
-| When you deploy a change to the primary application or service you work on, what percentage of the changes result in degraded service or subsequently require remediation? | 31%-45% |
-| How satisfied are you with your job? | I like my job |
-
-Click **Get your results**.
-
-### Examine the results
-
-After completing the assessment, Mara gets back a graph.
-
-![The team's progress for each of the Self-Assessment categories](../media-draft/4-assessment-results.png)
-
-The graph summarizes the team's progress for each of the Self-Assessment categories. Each category is a point. The further the point is from the center, the more mature the team is for that category.
-
-The blue boundary that connects the points makes it easy to see the team's overall progress. For example, the Tailspin team is further along in Culture, Technology, and Outcomes than it is in Measurement and Process. You can also hover over a point to get a numerical value, which is another way to compare results for each category.
+*Mara looks at the team.* I understand your concerns. Let's just continue where we are now, but keep this in mind as you work through Irwin's request. I think eventually you will see how we can improve a little here and there by incorporating DevOps in our processes.

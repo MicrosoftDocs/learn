@@ -28,7 +28,7 @@ Over coffee, Mara listens and tries to take notes. There's a lot of information 
 
 When she looks at her pile of notes, Mara knows she needs to organize all this information. Organizing it will make it easier to evaluate the processes. She's convinced a DevOps approach will solve many of the team's problems, but she needs a way to present her case to the team.
 
-"Have any of you ever taken the Microsoft DevOps Self-Assessment?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
+"Have any of you ever developed a **Value Stream Map** for a project?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
 
 Mara says, "I get it. Leave it to me."
 
