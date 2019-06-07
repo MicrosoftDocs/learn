@@ -50,7 +50,7 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
 
     Suppose you are the solution architect for an organization that is moving several applications to Azure Virtual Machines (VMs). The company needs to scale out to a many VMs now and in the future. Their current manual process is time consuming and error prone. They want to automate the scale out process to improve operational abilities. They are unsure of what tools are available on Azure to provision compute resource, and where each fits in to the overall provisioning process.
 
-1. **Identify the technology options**
+1. **Identify the provisioning solutions for Azure compute infrastructure**
 
     There are several solutions available to provision compute on Azure. VM extensions provide post-deployment configuration, automation, software installation, or any other configuration or management task. There are few extensions available to help you systemize and automate VM deployment:
 
@@ -164,7 +164,9 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
      1. Import the file into Azure with the Azure portal
      1. Deploy the network from the ARM template
 
-1. **Knowledge check**
+   **Knowledge check**
+
+    I'm removing this as a standalone unit, but leaving the question notes here for use in the other units if needed. We don't need a KC at the end of this unit since it's an exercise.
 
     - What can be used to deploy an entire 3 tier infrastructure into Azure?
     - What Azure features can you use to create event driven tasks?
