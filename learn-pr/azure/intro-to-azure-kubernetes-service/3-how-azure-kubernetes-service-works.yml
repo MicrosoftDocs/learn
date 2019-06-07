@@ -12,6 +12,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-kubernetes-service-works.md)]
