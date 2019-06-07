@@ -10,9 +10,9 @@ Let's take a look at her map.
 
 Mara gathers the team in the conference room to present her value stream map.
 
-(Whiteboard of current process here with numbers to correlate with narrative)
+![AWhiteboard showing the value stream map](../media-draft/4-vsm-whiteboard1.png)
 
-**Mara:** A value stream map helps to measure where a process has value and where it is spending time with no value. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through the process currently. After that, we can create a value stream map of our ideal process.
+**Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through the process currently. 
 
 *Eyes roll, but Mara presses on.*
 
@@ -24,9 +24,9 @@ Coding a feature takes about four days for one person if we can get access to al
 
 ### Test processes
 
-Once we decide that we have a stable build we update a spreadsheet to tell Amita that there is a build ready for testing and where to find it.
+Once we decide that we have a stable build we update a spreadsheet to tell Amita that there is a build ready for testing and where to find it. It takes her two days to get notified.
 
-She manually tests the build. This process gets longer as the code grows. For now, let's say three days. She then emails Andy with bug reports.
+She manually tests the build. This process gets longer as the code grows. For now, let's say three days. She then emails Andy with bug reports. Testing is not a value-add, but it is necessary.
 
 Andy has to take time to triage the bugs and assign work.
 
@@ -34,7 +34,7 @@ Andy has to take time to triage the bugs and assign work.
 
 When Amita approves of a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for beta testers. Often, the test servers and pre-production servers are out of sync with the latest patches and installs that are needed to run the web site. It takes Tim about two days to deploy to pro-production.
 
-Once a build is deemed ready for production, leadership needs to approve the release before it can be deployed. This happens in a meeting.
+Once a build is deemed ready for production, leadership needs to approve the release before it can be deployed. This happens in a meeting. It takes four days to get leadership to review and meet.
 
 Eventually, Tim will deploy our feature and it will make it to the customer here on the upper right. Once again, the production server will have drifted out od sync with pre-production, so this will take Tim one day.
 
@@ -42,7 +42,7 @@ Eventually, Tim will deploy our feature and it will make it to the customer here
 
 So now we can look at the key performance metrics and see how we measure up. 
 
-*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on the feature that has value to the customer. *Activity ratio* is process time divided by the lead time. This is our **efficiency**. As you can see, we have a lot of room for improvement.
+*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on the feature that has value to the customer. *Activity ratio* is process time divided by the lead time. This is our **efficiency**. As you can see, we have a lot of room for improvement. And 22 days for a feature is too long. 
 
 (some grumbling from the team)
 
