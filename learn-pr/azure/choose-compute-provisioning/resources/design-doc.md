@@ -125,27 +125,25 @@ Identify the subtasks of *Choose a compute provisioning solution for your applic
 
     Consider Chef and Terraform against the same criteria as in the previous module:
 
-        - Chef
+    - Chef
+        - Scalability – Highly scalable for provisioning compute resources from small to large infrastructure.
+        - Ease of set up - Master/agent set up. The Chef server runs on the master machine and the Chef clients run as agents on each client machine. Once the Chef extension on the Azure portal is provisioned, VMs are ready to be managed by a Chef server.
+        - Ease of management – The management of Chef can be difficult as it uses its own configuration language called Ruby. So, you may need a programmer to manage the configuration.
+        - Interoperability - Chef server only works under Linux/Unix, but the Chef client can be on Windows.
+        - Configuration language – Ruby
+        - Limitation/drawbacks - Templating language can be hard to learn, especially for those not already familiar with the Ruby programming language. Other platforms have better pre-configured deployment scripts.
+        - Scenario - Present a short scenario, in which the best solution is to use Chef.
+        - Summary - Chef provides a powerful DevOps automation platform that transforms VM infrastructure on Azure into code. Chef automates how infrastructure is configured, deployed, and managed across your network, no matter its size.
 
-            - Scalability – Highly scalable for provisioning compute resources from small to large infrastructure.
-            - Ease of set up - Master/agent set up. The Chef server runs on the master machine and the Chef clients run as agents on each client machine. Once the Chef extension on the Azure portal is provisioned, VMs are ready to be managed by a Chef server.
-            - Ease of management – The management of Chef can be difficult as it uses its own configuration language called Ruby. So, you may need a programmer to manage the configuration.
-            - Interoperability - Chef server only works under Linux/Unix, but the Chef client can be on Windows.
-            - Configuration language – Ruby
-            - Limitation/drawbacks - Templating language can be hard to learn, especially for those not already familiar with the Ruby programming language. Other platforms have better pre-configured deployment scripts.
-            - Scenario - Present a short scenario, in which the best solution is to use Chef.
-            - Summary - Chef provides a powerful DevOps automation platform that transforms VM infrastructure on Azure into code. Chef automates how infrastructure is configured, deployed, and managed across your network, no matter its size.
-
-        - Terraform
-
-            - Scalability – Highly scalable for provisioning compute resources from small to large infrastructure.
-            - Ease of set up - To install Terraform, download the appropriate package for your operating system.
-            - Management - Terraform is very easy to manage.
-            - Interoperability - Supports Amazon Web Services, Microsoft Azure, and Google cloud platform.
-            - Configuration language – Terraform uses Hashicorp Configuration Language (HCL). Alternately you can also use JSON (JavaScript Object Notation).
-            - Limitation/Drawbacks - Resources in Terraform are created by Hashicorp, so there is potential for a delay between Azure resources being released by Microsoft and them being available to create in Terraform. Terraform uses the state files to monitor the IAAS and only deploy things that have changed. However, there are some downsides too. Firstly, you have an extra file that is critical to your deployments that you need to manage and keep safe. If you lose your state file or it gets overwritten, you are really in a lot of trouble. You can use the “Terraform Refresh” command to refresh your state file against the existing infrastructure, which can fix accidental changes, but you can’t get a whole new state file with this approach. The metadata that Terraform records in the state file is stored nowhere else but in the state file. You can work with this by storing your state file in a central location that is backed up. Additionally, state is tied to your environment, so each time you want to deploy another instance of your infrastructure you are going to need to manage another state file.
-            - Scenario - Present a short scenario, in which the best solution is to use Terrform.
-            - Summary - Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, so it helps to minimize errors in configuration. Terraform provides an easy way to define, preview, and deploy cloud infrastructure.
+    - Terraform
+        - Scalability – Highly scalable for provisioning compute resources from small to large infrastructure.
+        - Ease of set up - To install Terraform, download the appropriate package for your operating system.
+        - Management - Terraform is very easy to manage.
+        - Interoperability - Supports Amazon Web Services, Microsoft Azure, and Google cloud platform.
+        - Configuration language – Terraform uses Hashicorp Configuration Language (HCL). Alternately you can also use JSON (JavaScript Object Notation).
+        - Limitation/Drawbacks - Resources in Terraform are created by Hashicorp, so there is potential for a delay between Azure resources being released by Microsoft and them being available to create in Terraform. Terraform uses the state files to monitor the IAAS and only deploy things that have changed. However, there are some downsides too. Firstly, you have an extra file that is critical to your deployments that you need to manage and keep safe. If you lose your state file or it gets overwritten, you are really in a lot of trouble. You can use the “Terraform Refresh” command to refresh your state file against the existing infrastructure, which can fix accidental changes, but you can’t get a whole new state file with this approach. The metadata that Terraform records in the state file is stored nowhere else but in the state file. You can work with this by storing your state file in a central location that is backed up. Additionally, state is tied to your environment, so each time you want to deploy another instance of your infrastructure you are going to need to manage another state file.
+        - Scenario - Present a short scenario, in which the best solution is to use Terrform.
+        - Summary - Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, so it helps to minimize errors in configuration. Terraform provides an easy way to define, preview, and deploy cloud infrastructure.
 
         Knowledge check: include two questions at the end of this module that present simple scenarios and ask the student to select from Chef, Terrform, or a native Azure solution.
 
