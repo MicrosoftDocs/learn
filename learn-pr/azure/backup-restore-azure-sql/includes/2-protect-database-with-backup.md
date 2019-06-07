@@ -1,46 +1,42 @@
-## Azure SQL Backups
+If the data that you keep in Azure SQL Database is critical, you must think carefully about how to back it up to ensure that you can restore it reliably and quickly if a problem arises.
 
-SQL Database automatically creates the database backups that are kept between 7 and 35 days and the time frame also depends on the purchasing model and the service tier. The database used SQL Server Technology to allow for complete backups every week, transaction log backups every 5-10 minutes and differential backups every 12 hours. When the backups are complete they are stored in RA-GRS storage blobs; to ensure protection against a data centre outage, they are replicated to a paired data centre.
+The retail organization that you work for uses Azure SQL Database to underpin its Enterprise Resource Planning (ERP) system. The company uses this system for all its accounting, customer relationship management, sales management, and corporate governance procedures. Therefore the ERP data is business critical and, if it were to be lost, the business would suffer huge loses and might even have to cease trading. The board given you responsibility for the protection of this data. You want to be sure that, if a disaster took place, you could restore all the data up to the failure within three hours.
 
-These backups can be used to restore an existing database, restore a deleted database from when it was deleted, restore the database to an alternative location or region, geographically and also restoring a database from a long term back up using LTR (Long Term Retention).
+Here, you will learn about Azure SQL Database backups and how to use them effectively.
 
-### Default backups are set depending on each service tier
+## Azure SQL Database backups storage
 
-Default backup retention period is when you create a database and the retention period is seven days. After the database had been created the backup retention period can be modified from 0 to 35 days. When a database is created using the DTU based purchasing model, the default retention period for that database depends on the service tier.
+SQL Database automatically creates database backups. These are kept for between 7 and 35 days. The retention time depends on the purchasing model and the service tier you chose when you created your database. The system uses SQL Server Ttechnology to execute complete backups every week, transaction log backups every fice to ten minutes, and differential backups every 12 hours. When the backups are complete, they are stored as blobs in a Read-Access Geo Redundant Storage (RA-GRS) account in your Azure subscription. To ensure protection against a data centre outage, they are replicated to a paired data centre.
 
-- Basic service tier is one week
-- Standard service tier is five weeks
-- Premium service tier is five weeks.
+These backups can be used to restore an existing database, restore a deleted database up to the point in time when it was deleted, restore the database to an alternative location or region, and to restore a database from a long term back up using Long Term Retention (LTR).
 
-### How often do backups happen?
+## Backups and service tiers
 
-There are backups for point in time restore and there are backups for long term retention. Point In Time Restore is fully supported by SQL databases, they automatically create full backup, differential backups, and transaction log backups.
+The default backup retention period is set to seven days when you create a database. Later, you can change that period to a duration from zero to 35 days. When a database is created using the Data Transaction Unit (DTU) based purchasing model, the default retention period for that database depends on the service tier:
 
-The first full backup is scheduled as soon as the database is created. It completes within 30 minutes. If the database is of significant time it may take longer. Following the first full backup, all further backups are scheduled automatically and managed silently in the background. The exact timing of all database backups is determined by the SQL Database service as it balances the overall system workload. You cannot change or disable the backup jobs.
+- **Basic service tier**. The default retention period is one week.
+- **Standard service tier**. The default retention period is five weeks.
+- **Premium service tier**. The default retention period is five weeks.
 
-Backups for long-term retention offer full term backups for 10 years in the Azure Blob storage. The LTR policy can be enabled to allow automatic weekly full backups. Storage of those depends on the frequency chosen and the retention period being used.
+## How often do backups happen?
 
-### Storage costs
+There are backups for point-in-time restore and there are backups for Long Term Retention (LTR).
+
+Point-in-time restore is fully supported by SQL databases. They automatically create full backups, differential backups, and transaction log backups. The first full backup is scheduled as soon as the database is created. It usually completes within 30 minutes but, ff the database is of significant size, it may take longer. Following the first full backup, all further backups are scheduled automatically and managed silently in the background. The exact timing of all database backups is determined by the SQL Database service as it balances the overall system workload. You cannot change or disable the backup jobs.
+
+Backups for LTR offer full term backups that are kept for ten years in Azure Blob Storage accounts. You can configure the LTR policy to perform automatic weekly full backups. The storage of LTR backups depends on the frequency chosen and the retention period being used.
+
+## Storage costs
 
 Microsoft provides Azure Backup services to create all-encompassing backups with a predictable pricing system that lets you easily keep track of any Azure data backup costs. Pricing for Azure Backup for SQL Server is based on paying for both instance costs (the data getting protected) and storage costs each month.
 
 Seven days of automated backups of your databases are copied to RA-GRS Standard blob storage by default. The storage is used by weekly full backups, daily differential backups, and transaction log backups copied every 5 minutes. The size of the transaction log depends on the rate of change of the database. A minimum storage amount equal to 100% of database size is provided at no extra charge. Additional consumption of backup storage will be charged in GB/month.
 
-### Benefits of using Azure Backups
+## Benefits of using Azure Backups
 
-Azure backup contains the following benefits:
+Azure backup realizes the following benefits:
 
-- Reduction in your infrastructure costs, minimum upfront costs and minimal operational expense.
-- Provide enterprise features to ensure your data is backed up, secure and most importantly, offsite.
-- Azure backup stores three copies of your data in three different locations in the primary Azure data center, and another three copies in an alternative remote Azure data center. Your data is also encrypted before it leaves the source, or whether it's in transit or held in the Azure backup vault.
-
-## Knowledge check
-
-    - When are backups taken?
-        - After a day
-        - Immediately (correct answer)
-        - It's a manual process
-    - Where are Azure SQL backups stored?
-        - Locally
-        - You have to specify their location
-        - In RA-GRS storage blobs (correct answer)
+- You can reduce your infrastructure costs, because there are minimal upfront costs and minimal operational expenses.
+- You can use a range of enterprise-level features to ensure your data is backed up, secure, and most importantly, offsite.
+- You can store three copies of your data in three different locations in the primary Azure data center, and another three copies in an alternative remote Azure data center. This arrangement protects against all but the most severe of disasters.
+- Your data is encrypted before it leaves the source database, whether it's in transit or held in the Azure backup vault.
