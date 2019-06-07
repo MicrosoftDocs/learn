@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.6-summary
+uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.7-summary
 title: Summary
 metadata:
   title: Summary
   description: Summary
   ms.date: 05/22/2019
-  author: 
-  ms.author: 
+  author: sowmyasubramaniam 
+  ms.author: sosubra 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]

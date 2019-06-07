@@ -1,5 +1,3 @@
-# Design Document
-
 ## Title
 
 Diagnose startup errors in your application using Kudu console
@@ -11,11 +9,11 @@ Diagnose startup errors in your application using Kudu console
 
 ## Level
 
-- Intermediate
+- intermediate
 
 ## Product(s)
 
-- Azure
+- azure
 
 ## Prerequisites
 
@@ -30,7 +28,6 @@ This module explains how to use kudu console to examine the application event lo
 
 1. Describe the different types of App startup errors  
 1. Use kudu console to examine the application event log
-1. Analyze errors using kudu diagnostic console
 
 ## Chunk your content into subtasks
 
@@ -48,15 +45,15 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
     You are an IT admin supporting a leading hotel and resort company using Azure web apps. The hospitality group is rolling out a new service to its gold tier members to support digital room selection.  This service however returns an application process failure message. 
 
-    In this module, you will learn how to diagnose the app startup error by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you will use the Kudu diagnostic console to discover the error.
+    In this module, you will learn how to diagnose the app startup error by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you will use the Kudu remote execution console to discover the error.
 
-1. **Describe the different App startup errors and App Service diagnostic technique**
+1. **Describe Kudu console purpose and functionalities**
     
     Azure App Service diagnostic tools help to diagnose ASP.NET Core app startup issues. 
 
     App startup errors - 502.5 Process Failure, 500 Internal Server Error, Connection reset
 
-1. **Exercise -  Run the ASP.NET Core Module app in kudu console**
+1. **Exercise -  Create and configure a web app**
 
     1. Create an Azure web app
     1. Configure the web app
@@ -64,22 +61,11 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
     1. Examine the application event log using kudu console
     1. Run the app in the kudu console    
 
-1. **Exercise - Diagnose the ASP.NET Core Module stdout log and debug log**
+1. **Describe the application startup errors and starter web project development process**
 
-    **ASP.NET Core Module stdout log**
+1. **Exercise -  Implement a web application**
 
-    1. When you are unable to retrieve the desired information from the Application Event log then you can use the ASP.NET Core Module stdout log to obtain useful error information
-    1. Edit the web.config file to update the stdoutlogfile path
-    1. Make a request to the app
-    1. Select the LogFiles folder in kudu console and inspect the log file to verify the error
-    1. Disable the stdout logging when troubleshooting is complete
-
-    **ASP.NET Core Module debug log**
-
-    1.  Configure the app for Enhanced diagnostics log and redeploy the app
-    1. Add the `<handlerSettings>` to the app's ***web.config*** file using kudu console
-    1. Navigate to the location of the *aspnetcore-debug.log* file and review the file
-    1. Disable the enhanced debug log file
+1. **Exercise -  Diagnose application event log using kudu console**
 
 1. **Knowledge check**
 
@@ -90,12 +76,13 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
 1. **Summary**
 
-    In this module, you learned about the different application startup errors. As an IT admin of hotel and resort company, you learned how to use kudu console to examine the application event log and gather useful information to diagnose startup errors. You also learned how to analyze errors using kudu diagnostic console.
+   In this module, you learned about the different application startup errors. As an IT admin of hotel and resort company, you learned how to use kudu console to examine the application event log and gather useful information to diagnose startup errors. You also learned how to analyze errors using kudu diagnostic console.
+
 
 1. **References**
 
-    - Azure DevOps Work Item - https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/53156/
+    - [Azure DevOps Work Item](https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/53156/)
 
-    - Docs guide - https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2
+    - [Docs guide](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2)
 
 

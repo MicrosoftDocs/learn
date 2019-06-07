@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.4-app-startup-errors
+title: Describe the application startup errors and starter web project development process
+metadata:
+  title: Describe the application startup errors and starter web project development process
+  description: Describe the application startup errors and starter web project development process
+  ms.date: 05/22/2019
+  author: sowmyasubramaniam 
+  ms.author: sosubra 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-diagnose-debug-log-and-stdout-log.md)]
