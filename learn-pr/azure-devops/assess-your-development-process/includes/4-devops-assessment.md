@@ -16,48 +16,55 @@ Mara gathers the team in the conference room to present her value stream map.
 
 *Eyes roll, but Mara presses on.*
 
-Creating a new feature currently means creating a label in source control and starting from there. Currently we have one person that can do this, Andy. We request a label using an email and Andy waits until all code is checked in and stable to create the label. Once it is created, we get an email saying we can begin work. This process takes up to 3 days and has no value to the customer. Things with no value to the customer should take as little time as possible.
+### Development processes
 
-Coding a feature takes about 4 days for one person if we can get access to all the files we need. We need to be on the corporate network and not be blocked by source control. This time has value to the customer. They want this feature.
+Creating a new feature currently means creating a label in source control and starting from there. Currently we have one person that can do this, Andy. We request a label using an email and Andy waits until all code is checked in and stable to create the label. Once it is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
+
+Coding a feature takes about four days for one person if we can get access to all the files we need. We need to be on the corporate network and not be blocked by source control. This time has value to the customer. They want this feature.
+
+### Test processes
 
 Once we decide that we have a stable build we update a spreadsheet to tell Amita that there is a build ready for testing and where to find it.
 
-She manually tests the build. This process gets longer as the code grows. For now, let's say 3 days. She then emails Andy with bug reports.
+She manually tests the build. This process gets longer as the code grows. For now, let's say three days. She then emails Andy with bug reports.
 
 Andy has to take time to triage the bugs and assign work.
 
-Meanwhile, Tim gets an email from Andy at some point with the requirements for the servers. Tim waits for hardware to be approved and ordered, and then begins setting up the servers. Say this takes 15 days. And I have no idea what to put here for scaling it out. Maybe Tim can speak to that later.
+### Operations processes
 
-Leadership needs to approve a release before it can be deployed. This happens in a meeting.
+When Amita approves of a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for beta testers. Often, the test servers and pre-production servers are out of sync with the latest patches and installs that are needed to run the web site. It takes Tim about two days to deploy to pro-production.
 
-Eventually, Tim will deploy our feature and it will make it to the customer here on the upper right.
+Once a build is deemed ready for production, leadership needs to approve the release before it can be deployed. This happens in a meeting.
 
-### Calculate the value
+Eventually, Tim will deploy our feature and it will make it to the customer here on the upper right. Once again, the production server will have drifted out od sync with pre-production, so this will take Tim one day.
+
+### Calculate the customer value metrics
 
 So now we can look at the key performance metrics and see how we measure up. 
 
-Total lead time is the time it takes for a feature to make it to the customer. Process time is the time spent on the feature that has value to the customer. Activity ratio is process time divided by the lead time. This is our efficiency. As you can see, we have a lot of room for improvement.
+*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on the feature that has value to the customer. *Activity ratio* is process time divided by the lead time. This is our **efficiency**. As you can see, we have a lot of room for improvement.
 
 (some grumbling from the team)
 
 **Tim:** So how does this help us? 
 
-## What is the ideal process?
+## Where do we go from here?
 
-**Mara:** It helps to see where we are now so that we can minimize the waste. That is, the time we spend that has no value to the customer.
+**Mara:** It helps to see where we are now so that we can minimize the waste. That is, the time we spend that has no value to the customer. I believe we can improve this number greatly by adopting a DevOps approach. We can automate a lot of this and cut down on the waste.
 
-Over on the other whiteboard, I created an *ideal* VSM using DevOps. This is where we want to be eventually. Here, processes are fast and automated where it makes sense.
+I'm not suggesting we drop our current processes, but I think we can work toward a more efficient process in small increments without disrupting what we have in place.
 
-(Whiteboard with ideal process and calculations)
+Let's look at just a couple of places where we can improve.
 
-*The team's eyes get wide and the grumbling continues.*
+**Andy:** Might as well start at the beginning. It takes me a long time to get a label on the code so we can start the new feature. I have to literally walk around to the developers and beg them to check in what they have so we can build and test. If you can figure out how to speed that up you might have my attention.
 
-Don't panic. I'm not suggesting we drop our current processes and adopt all of this. But I think we can work toward it in small increments without disrupting what we have in place.
+Also, I noticed that you don't have time in there for the build itself. That is taking half a day right now. It would be nice to see that time improve.
 
-**Tim:** I don't like the way the operations side looks at all. I will never agree to this.
+**Amita:** And dev doesn't always update the spreadsheet to let me know there is a new build that needs testing. It would save time if there was some way to ensure that part gets done.
 
-**Amita:** I'm with Tim. There is no way QA can be automated. I need to have control of it.
+**Mara:** Great! I think DevOps can help us out with all of these concerns.
 
-**Andy:** And just how do you expect us to get builds out that fast? Can't be done. 
+**Andy:** We don't have time to change the process now. You heard Irwin. We are in crisis mode here!
 
-*Mara looks at the team.* I understand your concerns. Let's just continue where we are now, but keep this in mind as you work through Irwin's request. I think eventually you will see how we can improve a little here and there by incorporating DevOps in our processes.
+**Mara:** I understand your hesitation. Let's continue on the way we are for now. But think about your part in the process and we can revisit this in small steps along side our current processes. That will let us see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics we have now. If we end up adopting DevOps practices we can come back to the numbers.
+ 
