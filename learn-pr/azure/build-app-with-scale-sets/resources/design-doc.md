@@ -270,8 +270,8 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
             --protected-settings customConfigProtected.json
           ```
 
-      > [NOTE!]
-      > At this point, you might need to return to the portal, go to the Virtual Machine Scale Set, click Instances, click each instance in turn, and click Upgrade, to force the VMs to be upgraded immediately. Otherwise you may need to wait until they are next rebooted.
+          > [NOTE!]
+          > At this point, you might need to return to the portal, go to the Virtual Machine Scale Set, click Instances, click each instance in turn, and click Upgrade, to force the VMs to be upgraded immediately. Otherwise you may need to wait until they are next rebooted.
   
       1. Navigate to the public address of the scale set load balancer in the web browser (specify the domain label that you used when you created the scale set in the first lab). Leave this page open.
 
