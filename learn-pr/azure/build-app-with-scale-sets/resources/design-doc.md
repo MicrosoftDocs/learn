@@ -172,90 +172,90 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
 
       1. Use the code editor to create a script that install nginx. Name the script install-ngingx.sh
 
-      ```bash
-      code install-nginx.sh
-      ```
+          ```bash
+          code install-nginx.sh
+          ```
 
       1. Add the following command to the script, then save the script and close the editor:
 
-      ```bash
-      apt-get update -y && apt-get upgrade -y
-      apt-get install -y nginx
-      echo "Hello World from host" $HOSTNAME "!" | sudo tee -a /var/www/html/index.html
-      ```
+          ```bash
+          apt-get update -y && apt-get upgrade -y
+          apt-get install -y nginx
+          echo "Hello World from host" $HOSTNAME "!" | sudo tee -a /var/www/html/index.html
+          ```
 
       1. Create an Azure blob storage account:
 
-      ```azurecli
-      az storage account create \
-        --name <unique name> \
-        --resource-group <sandbox resource group> \
-        --location <sandbox resource group location> \
-        --sku Standard_LRS
-      ```
+          ```azurecli
+          az storage account create \
+            --name <unique name> \
+            --resource-group <sandbox resource group> \
+            --location <sandbox resource group location> \
+            --sku Standard_LRS
+          ```
 
       1. Find the storage account key:
 
-      ```azurecli
-      az storage account keys list \
-        --account-name <account name from previous step> \
-        --resource-group <sandbox resource group> \
-        --output table
-      ```
+          ```azurecli
+          az storage account keys list \
+            --account-name <account name from previous step> \
+            --resource-group <sandbox resource group> \
+            --output table
+          ```
 
       1. Create environment variables for the account name and key1:
 
-      ```bash
-      export AZURE_STORAGE_ACCOUNT=<account name>
-      export AZURE_STORAGE_KEY=<key1>
-      ```
+          ```bash
+          export AZURE_STORAGE_ACCOUNT=<account name>
+          export AZURE_STORAGE_KEY=<key1>
+          ```
 
       1. Create a container:
 
-      ```azurecli
-      az storage container create --name filecontainer
-      ```
+          ```azurecli
+          az storage container create --name filecontainer
+          ```
 
       1. Upload the install-nginx.sh file to a blob in the container:
 
-      ```azurecli
-      az storage blob upload \
-        --container-name filecontainer \
-        --name install-nginx.sh \
-        --file install-nginx.sh
-      ```
+          ```azurecli
+          az storage blob upload \
+            --container-name filecontainer \
+            --name install-nginx.sh \
+            --file install-nginx.sh
+          ```
   
       1. Create the Custom Script Extension definition using the code editor:
 
-      ```bash
-      code customConfig.json
-      ```
+          ```bash
+          code customConfig.json
+          ```
 
       1. Add the following JSON script to the customConfig.json file:
 
-      ```JSON
-      {
-        "fileUris": ["https://<storage account name>.blob.core.windows.net/filecontainer/install-nginx.sh"]
-      }
-      ```
+          ```JSON
+          {
+            "fileUris": ["https://<storage account name>.blob.core.windows.net/filecontainer/install-nginx.sh"]
+          }
+          ```
 
       1. Save the file and close the editor.
 
       1. Create the a script containing the protected settings for the Custom Extension using the code editor:
 
-      ```bash
-      code customConfigProtected.json
-      ```
+          ```bash
+          code customConfigProtected.json
+          ```
 
       1. Add the following JSON script to the customConfigProtected.json file:
 
-      ```JSON
-      {
-        "storageAccountName": "<storage account name from earlier>",
-        "storageAccountKey": "<key1 from earlier>"
-        "commandToExecute": "./install-nginx.sh"
-      }
-      ```
+          ```JSON
+          {
+            "storageAccountName": "<storage account name from earlier>",
+            "storageAccountKey": "<key1 from earlier>"
+            "commandToExecute": "./install-nginx.sh"
+          }
+          ```
 
       1. Apply the custom script to the VMs in the scale set.
 
@@ -277,36 +277,36 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
 
       1. Create a custom script extension named **update-nginx.sh** that modifies the default NGINX page with a different message. Add the following commands to this script:
   
-      ```bash
-      echo "This is the updated app installed on host" $HOSTNAME "!" | sudo tee -a /var/www/html/index.html
-      ```
+          ```bash
+          echo "This is the updated app installed on host" $HOSTNAME "!" | sudo tee -a /var/www/html/index.html
+          ```
 
       1. Upload the update-nginx.sh file to a blob in the container:
 
-      ```azurecli
-      az storage blob upload \
-        --container-name filecontainer \
-        --name update-nginx.sh \
-        --file update-nginx.sh
-      ```
+          ```azurecli
+          az storage blob upload \
+            --container-name filecontainer \
+            --name update-nginx.sh \
+            --file update-nginx.sh
+          ```
 
       1. Edit the customConfig.json file, and change the file URI to reference the new script:
 
-      ```JSON
-      {
-        "fileUris": ["https://jpwsstorageaccount.blob.core.windows.net/filecontainer/update-nginx.sh"],
-      }
-      ```
+          ```JSON
+          {
+            "fileUris": ["https://jpwsstorageaccount.blob.core.windows.net/filecontainer/update-nginx.sh"],
+          }
+          ```
 
       1. Edit the customConfigProtected.json file, and change the `commandToExecute` parameter to reference the new script:
 
-      ```JSON
-      {
-        "storageAccountName": "<storage account name from earlier>",
-        "storageAccountKey": "<key1 from earlier>"
-        "commandToExecute": "./update-nginx.sh"
-      }
-      ```
+          ```JSON
+          {
+            "storageAccountName": "<storage account name from earlier>",
+            "storageAccountKey": "<key1 from earlier>"
+            "commandToExecute": "./update-nginx.sh"
+          }
+          ```
 
       1. Apply the Custom Script Extension to the VM instances in the Scale Set
 
