@@ -46,7 +46,7 @@ Next, upload the JSON file to a Blob storage container:
 1. Select the **learn-container** container you created. It should be empty.
 1. Select **Upload**. Next to the Files input, select the folder icon, and then select the JSON file.
 1. Expand the **Advanced** options if they're not expanded already.
-1. In the **Upload to folder** field, enter **input/[YYYY-MM-DD]**. Here, _YYYY-MM-DD_ is the current date.
+1. In the **Upload to folder** field, enter **input/[YYYY-MM-DD]**. Here, _YYYY-MM-DD_ is the current date and needs to be entered using the data format you noted in the exercise "Configure the Azure Stream Analytics job input".
 1. Leave the default values in the other fields.
 1. Select **Upload**.
 
