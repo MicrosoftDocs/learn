@@ -26,13 +26,13 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
         --name $FUNCTIONAPPNAME
     ```
 
-1. Run this command to add a remote repo pointing to the function app.
+1. Run this command to add a remote repo pointing to the function app. Replace `<deploymentuser>` with the deployment user you created earlier.
 
     ```bash
-    git remote add azurefunction https://jbuser12345@$FUNCTIONAPPNAME.scm.azurewebsites.net/$FUNCTIONAPPNAME.git
+    git remote add azurefunction https://<deploymentuser>@$FUNCTIONAPPNAME.scm.azurewebsites.net/$FUNCTIONAPPNAME.git
     ```
 
-1. Run this command to push the code to the Azure Function.
+1. Run this command to push the code to the Azure Function. Enter the password of the deployment user you created earlier.
 
     ```bash
     git push azurefunction master
