@@ -44,13 +44,13 @@ Identify the subtasks of *Assign management access to subscription with Azure ro
 
 1. **Introduction**
 
-    You're a global administrator in Azure Active Directory (Azure AD) for a large organization. The administrator for the marketing department's Azure subscription recently left the organization. You've been asked to give management access for the subscription to someone else in the marketing department.  That person needs to be able to manage Azure resources created under that subscription. They also need have to access to the billing information for that subscription.
+    You're a global administrator in Azure Active Directory (Azure AD) for a large organization. The only administrator for the marketing department's Azure subscription recently left the organization. You've been asked to give management access for the subscription to someone else in the marketing department.  That person needs to be able to manage Azure resources created under that subscription. They also need have to access to the billing information for that subscription.
 
 1. **Elevate your access to User Access Administrator**
 
     List the content that will enable the learner to *Identify scenarios where the global administrator for Azure AD may need to elevate their access in Azure*:
 
-    - Azure AD and RBAC permissions are independent of one another. However, the global admin for Azure AD can grant themselves all RBAC permissions. Some typical use cases:
+    - Azure AD and RBAC permissions are independent of one another. RBAC is for managing resource access like VMs.  Azure AD admin roles are for managing directory resources like user accounts. By default, the Global Administrator doesn't have access to Azure resources. (See [Do Azure RBAC roles and Azure AD administrator roles overlap?](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#do-azure-rbac-roles-and--azure-ad-administrator-roles-overlap) for reference.) However, the global admin for Azure AD can temporarily elevate their perms to the RBAC role User Access Administrator. They'd do this to grant others RBAC permissions so that they can manage Azure resources. Some typical use cases:
         - Regain lost access to a given Azure subscription or management group
         - Grant an administrator or another user access to a given Azure subscription or management group
         - View all Azure subscriptions or management groups in an organization
@@ -71,7 +71,7 @@ Identify the subtasks of *Assign management access to subscription with Azure ro
     What types of questions will test *Identify scenarios where the global administrator for Azure AD may need to elevate their access in Azure*?
 
     - A user who had owner access to a subscription has left your company. How can their access be revoked and reassigned to another employee?
-    - A
+    - Needs additional question
 
 1. **Identify the appropriate role to assign**
 
@@ -101,9 +101,8 @@ Identify the subtasks of *Assign management access to subscription with Azure ro
 
     What types of questions will test *Identify the appropriate role to assign to an employee*?
 
-    - When should you use the User Access Administrator RBAC role, instead of the User Administrator AD role?
-    - What is the effect of the Global admin can manage Azure Subscriptions and Management Groups setting?
-
+    - When should you use the User Access Administrator RBAC role, instead of the User Administrator AD role? (Notes as discussed with SME: The default for User Access Admin is at the root but you could scope it to something like a resource group. So then you could manage perms for a resource group (as an ongoing task). Seems like something you'd delegate to someone else though not the global admin (with that elevate perm).)
+    - What is the effect of the **Access management for Azure resources** setting?
     
 
 1. **Exercise - Elevate permissions and grant management access to a subscription**
@@ -112,9 +111,9 @@ Identify the subtasks of *Assign management access to subscription with Azure ro
 
     1. Log in to the Azure Portal as Azure AD global admin.
     1. Go to the properties section of AAD and toggle 'Access Management for Azure Resources' on. This causes the 'User Access Administrator' role to be assigned at root scope.
-    1. For the purposes of this exercise, you can add an external user (this could also be another MS ID you own) and assign ownership of a given subscription to that email.
-    1. Verify that this additional user / email can make changes reflective of the assigned permissions.
-    1. Log back in to the Azure Portal as Azure AD global admin, i.e. the account previously used to make the change.
+    1. Sign out and sign back in the refresh your access. (There is a bug with the toggle UI. If you click away and go back to that UI, it'll show as "no" unless you sign out and back in. It'll look like they don't need to turn it back off when they go back to that UI. So to avoid confusion they need to sign out and back in so the toggle looks like yes. And it'll be clear they need to hit No to disable it.)
+    1. Verify that you have the User Access Administrator role at root scope. Azure AD > Users > (user) > Azure resources. (Include a screenshot as this isn't that easy to find.)
+    1. To assign an owner at the subscription scope, go to ...(basically word this like it's just a walk through and to not actually have them do it. SME thinks it'll be less risky if they don't actually do a dummy assignment. Just show them where they'd go to do the assignment) 
     1. Go to the properties section of AAD and toggle 'Access Management for Azure Resources' off. This causes the 'User Access Administrator' role to be revoked at root scope.
 
 1. **Summary**
