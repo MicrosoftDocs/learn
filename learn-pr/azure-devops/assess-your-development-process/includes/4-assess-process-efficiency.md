@@ -12,7 +12,7 @@ Mara gathers the team in the meeting room to present her value stream map.
 
 ![A whiteboard showing the value stream map](../media/4-vsm-whiteboard2.png)
 
-**Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through our current process.
+**Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through our current release cycle process.
 
 *Some people roll their eyes, but Mara presses on.*
 
@@ -36,7 +36,7 @@ When Amita approves a build, she hands the build off to Tim. Tim needs to deploy
 
 After a build is ready for production, leadership needs to approve the release before the release can be deployed. This happens in a meeting. It takes four days to get leadership to review and meet.
 
-Eventually, Tim deploys the feature and the features makes it to the customer here on the upper right. Once again, the production server will have drifted out of sync with pre-production, so this will take Tim one day ![Callout 6](../../shared/media/callout-06.png).
+Eventually, Tim deploys the feature and the feature makes it to the customer here on the upper right. Once again, the production server will have drifted out of sync with pre-production, so this will take Tim one day ![Callout 6](../../shared/media/callout-06.png).
 
 ### Calculate the customer value metrics
 
@@ -50,7 +50,7 @@ This is our **efficiency**. Multiply this number by 100 to get a percentage. The
 
 Substitute our numbers and we get:
 
-$${Activity\ ratio = }{\dfrac{5\ days}{22\ days}}{*\ 100\%}{= 23\%}$$
+$${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{ \ *\ 100\ \%}{\ = 23\ \%}$$
 
 As you can see, we have a lot of room for improvement. And 22 days for a feature is too long.
 

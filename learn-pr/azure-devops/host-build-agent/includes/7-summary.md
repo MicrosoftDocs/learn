@@ -24,11 +24,11 @@ In the _Assess your existing software development process_ module, Mara performe
 
 Recall that the *activity ratio*, or efficiency, is process time divided by total lead time.
 
-$${Activity\ ratio = }{\dfrac{Process\ time}{Total\ lead\ time}}{*\ 100\%}$$
+$${Activity\ ratio\ =\ }{\dfrac{Process\ time}{Total\ lead\ time}}{ \ *\ 100\ \%}$$
 
 The Tailspin web team initially determined they were 23% efficient against this metric.
 
-Although the team has not yet transitioned to full delivery cycle using DevOps processes, they've already reduced some inefficiencies.
+Although the team has not yet transitioned to a full delivery cycle using DevOps processes, they've already reduced some inefficiencies.
 
 So far, the team has reduced:
 
@@ -40,13 +40,13 @@ So far, the team has reduced:
     They did this by moving their build process to Azure Pipelines. Azure Pipelines automatically notifies Amita when a build is available, so the developers no longer need to update Amita's spreadsheet.
 * The time it takes Amita to test new features from three days to one day.
 
-    They did this by unit testing their code. By running unit tests run each time a change moves through the build pipeline, fewer bugs and regressions reach Amita, which enables her to complete each manual test pass much faster.
+    They did this by unit testing their code. By running unit tests each time a change moves through the build pipeline, fewer bugs and regressions reach Amita, which enables her to complete each manual test pass much faster.
 
 These changes reduce the total lead time from 22 days to 15 days. Substitute these numbers into the equation and we get:
 
-$${Activity\ ratio = }{\dfrac{5\ days}{15\ days}}{*\ 100\%}{= 33\%}$$
+$${Activity\ ratio\ =\ }{\dfrac{5\ days}{15\ days}}{ \ *\ 100\ \%}{\ = 33\ \%}$$
 
-Although there's always room for improvement, this is a very positive change for the team. Not only do customers receive value more quickly, the Tailspin team now spends less time waiting and more time doing what they love &mdash; delivering features they know their customers will love.
+Although there's always room for improvement, this is a very positive change for the team. Not only do customers receive value more quickly, the Tailspin team now spends less time waiting and more time doing what they enjoy most &mdash; delivering features they know their customers will love.
 
 Even management is beginning to take notice. The team plans to share their secret with management after they've had some more time to prove that the process works.
 
