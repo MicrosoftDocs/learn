@@ -50,7 +50,9 @@ This is our **efficiency**. Multiply this number by 100 to get a percentage. The
 
 Substitute our numbers and we get:
 
-$${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{ \ *\ 100\ \%}{\ = 23\ \%}$$
+$${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{ = .23}$$
+
+Multiply the result by 100% and you get **23%**.
 
 As you can see, we have a lot of room for improvement. And 22 days for a feature is too long.
 

@@ -24,7 +24,7 @@ In the _Assess your existing software development process_ module, Mara performe
 
 Recall that the *activity ratio*, or efficiency, is process time divided by total lead time.
 
-$${Activity\ ratio\ =\ }{\dfrac{Process\ time}{Total\ lead\ time}}{ \ *\ 100\ \%}$$
+$${Activity\ ratio\ =\ }{\dfrac{Process\ time}{Total\ lead\ time}}$$
 
 The Tailspin web team initially determined they were 23% efficient against this metric.
 
@@ -44,7 +44,9 @@ So far, the team has reduced:
 
 These changes reduce the total lead time from 22 days to 15 days. Substitute these numbers into the equation and we get:
 
-$${Activity\ ratio\ =\ }{\dfrac{5\ days}{15\ days}}{ \ *\ 100\ \%}{\ = 33\ \%}$$
+$${Activity\ ratio\ =\ }{\dfrac{5\ days}{15\ days}}{ = .33}$$
+
+Multiply the result by 100% and you get **33%**.
 
 Although there's always room for improvement, this is a very positive change for the team. Not only do customers receive value more quickly, the Tailspin team now spends less time waiting and more time doing what they enjoy most &mdash; delivering features they know their customers will love.
 
