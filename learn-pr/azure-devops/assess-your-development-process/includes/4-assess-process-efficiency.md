@@ -42,9 +42,17 @@ Eventually, Tim will deploy our feature and it will make it to the customer here
 
 So now we can look at the key performance metrics and see how we measure up.
 
-*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on the feature that has value to the customer. *Activity ratio* is process time divided by the lead time. This is our **efficiency**. As you can see, we have a lot of room for improvement. And 22 days for a feature is too long.
+*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on the feature that has value to the customer. The *activity ratio* is process time divided by total lead time.
 
-(some grumbling from the team)
+$${Activity\ ratio = }{\dfrac{Process\ time}{Total\ lead\ time}}$$
+
+This is our **efficiency**. Multiply this number by 100 to get a percentage. The result is greater than 0% and typically less than 100%. A higher percentage means we are more efficient than a lower percentage.
+
+Substitute our numbers and we get:
+
+$${Activity\ ratio = }{\dfrac{5}{22}}{* 100}{= 23\%}$$
+
+As you can see, we have a lot of room for improvement. And 22 days for a feature is too long.
 
 **Tim:** So how does this help us?
 
