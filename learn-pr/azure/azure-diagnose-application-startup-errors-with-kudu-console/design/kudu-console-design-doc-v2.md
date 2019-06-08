@@ -1,3 +1,5 @@
+# Design Document
+
 ## Title
 
 Diagnose startup errors in your application using Kudu console
