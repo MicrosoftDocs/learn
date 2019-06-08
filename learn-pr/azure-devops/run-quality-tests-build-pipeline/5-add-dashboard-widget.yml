@@ -3,7 +3,7 @@ uid: learn.azdo.run-quality-tests-build-pipeline.5-add-dashboard-widget
 title: Exercise - Add a testing widget to your dashboard
 metadata:
   title: Exercise - Add a testing widget to your dashboard
-  description: TBD
+  description: Add a widget to the dashboard that visualizes the results of test runs over time.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

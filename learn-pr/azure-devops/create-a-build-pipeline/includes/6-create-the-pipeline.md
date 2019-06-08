@@ -7,8 +7,6 @@ You'll begin by creating a starter YAML file that contains a basic build definit
 > [!NOTE]
 > Again, don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail around Git in future modules.
 
-A branch is a good way to experiment because it isolates your changes and doesn't affect the `master` branch or break anything the team is working on. Once you have things working, you can merge your change into the `master` branch so everyone can push code into the pipeline.
-
 At a minimum, the YAML file needs to define the agent to use. Recall that a _build agent_ builds or deploys the code. Here you'll use the Ubuntu 16.04 agent that's hosted by Microsoft. That's where we'll start.
 
 ## Configure the basic pipeline
@@ -48,6 +46,8 @@ At a minimum, the YAML file needs to define the agent to use. Recall that a _bui
     git push origin master
     ```
 
+    If this is your first time running `git push`, you'll be prompted to enter your GitHub credentials. Remember, if you're using two-factor authentication with GitHub, enter your personal access token instead of your password.
+
 If you return to your repo on GitHub and refresh the page, you see that **azure-pipelines.yml** is part of your `master` branch. You can select the file to verify its contents.
 
 ![The YAML file on GitHub](../media/6-github-view-file.png)
@@ -57,21 +57,12 @@ If you return to your repo on GitHub and refresh the page, you see that **azure-
 1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
 1. Select **Pipelines**, either from the project page or from the menu on the left.
 1. Select **New pipeline**.
-1. From the **Select a source** pane, select **GitHub**, then click **Authorize using OAuth**.
-    1. Sign in to GitHub from the window that appears.
-    1. Specify your repository by clicking the ellipsis (**...**) and then selecting your **mslearn-tailspin-spacegame-web** repository.
-    1. Select **master** as your default branch.
-    1. Click **Continue**.
-1. From the **Select a template** pane, select **YAML** and then click **Apply**.
-1. Fill in the final settings.
-    1. For **Agent pool**, select **Hosted Ubuntu 1604**.
-    1. For **YAML file path**, click the ellipsis (**...**) and then select **azure-pipelines-yml**.
-1. Click **Save & queue** to save your changes and start the build. From the window that appears, click **Save & queue** a second time.
-1. At the top of the page, you see a message that resembles this one.
+1. From the **Connect** tab, select **GitHub**.
 
-    ![Build queue message](../media/6-build-queued.png)
-
-    Click the link to go to your build.
+    When prompted, enter your GitHub credentials.
+1. From the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
+1. Click **Approve and install**.
+1. From the **Review** tab, click **Run** to save your changes and start the build.
 
 ## Watch the pipeline run
 

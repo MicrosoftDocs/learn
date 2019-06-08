@@ -16,15 +16,8 @@ Before we start, let's check in with Mara and Andy.
 
 **Andy**: Sounds great. Let's take a look.
 
-## Get the branch from GitHub
-
-If you went through the previous module and have the `build-pipeline` branch locally, move to the next step.
-
-Otherwise, if you don't have the `build-pipeline` branch, run this `git checkout` command to get it from Microsoft's repository.
-
-```bash
-git checkout --track upstream/build-pipeline
-```
+> [!IMPORTANT]
+> If you don't have the build pipeline for the _Space Game_ web site set up or the `build-pipeline` Git branch, go through [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) to get set up. Then come back here to continue where you left off.
 
 ## Push your branch to GitHub
 
@@ -114,7 +107,7 @@ Your GitHub repository likely already has your latest changes to your `build-pip
 
     ![Deleting a branch on GitHub](../media/4-github-delete-branch.png)
 
-    It's completely safe to delete a branch from GitHub once you've merged your pull request. In fact, it's a common practice because the branch is no longer needed. The changes are merged and you can still find the details about the changes on GitHub or from the command line. Deleting merged branches also helps others see what work is currently active.
+    It's completely safe to delete a branch from GitHub once you've merged your pull request. In fact, it's a common practice because the branch is no longer needed. The changes are merged and you can still find the details about the changes on GitHub or from the command line. Deleting merged branches also helps others see only the work that's currently active.
 
     Git branches are typically meant to be short-lived. After you merge a branch, you typically don't push additional commits onto it or merge it a second time. In most cases, you start with a clean branch that's based on the `master` branch every time you start on a new feature or bug fix.
 

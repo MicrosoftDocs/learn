@@ -12,7 +12,7 @@ Mara gathers the team in the conference room to present her value stream map.
 
 ![AWhiteboard showing the value stream map](../media-draft/4-vsm-whiteboard1.png)
 
-**Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through the process currently. 
+**Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through the process currently.
 
 *Eyes roll, but Mara presses on.*
 
@@ -40,13 +40,13 @@ Eventually, Tim will deploy our feature and it will make it to the customer here
 
 ### Calculate the customer value metrics
 
-So now we can look at the key performance metrics and see how we measure up. 
+So now we can look at the key performance metrics and see how we measure up.
 
-*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on the feature that has value to the customer. *Activity ratio* is process time divided by the lead time. This is our **efficiency**. As you can see, we have a lot of room for improvement. And 22 days for a feature is too long. 
+*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on the feature that has value to the customer. *Activity ratio* is process time divided by the lead time. This is our **efficiency**. As you can see, we have a lot of room for improvement. And 22 days for a feature is too long.
 
 (some grumbling from the team)
 
-**Tim:** So how does this help us? 
+**Tim:** So how does this help us?
 
 ## Where do we go from here?
 
@@ -67,4 +67,3 @@ Also, I noticed that you don't have time in there for the build itself. That is 
 **Andy:** We don't have time to change the process now. You heard Irwin. We are in crisis mode here!
 
 **Mara:** I understand your hesitation. Let's continue on the way we are for now. But think about your part in the process and we can revisit this in small steps along side our current processes. That will let us see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics we have now. If we end up adopting DevOps practices we can come back to the numbers.
- 

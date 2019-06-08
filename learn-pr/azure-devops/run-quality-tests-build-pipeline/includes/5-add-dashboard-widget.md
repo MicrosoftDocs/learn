@@ -1,8 +1,8 @@
-Andy and Mara are excited to show Amita the progress they've made. They've already set up a dashboard so they can monitor pull requests and visualize the health of their builds.
+Andy and Mara are excited to show Amita the progress they've made. They've already set up a dashboard. Now they can monitor pull requests and visualize the health of their builds.
 
 Here you'll add a widget to your dashboard to help you visualize your test runs over time.
 
-Amita takes a look and she's excited.
+Amita takes a look and is excited.
 
 **Amita**: This is great progress. Thank you! Not to sound ungrateful, but is there any way I can just see a brief overview of the test results over time?
 
@@ -11,7 +11,7 @@ Amita takes a look and she's excited.
 ## Add the widget to the dashboard
 
 1. From your Azure DevOps project, select **Overview** and then **Dashboards**.
-1. Click **Add a widget**.
+1. Click **Edit**.
 1. From the **Add Widget** pane, search for **Test Results Trend**.
 1. Drag **Test Results Trend** to the canvas.
 1. Click the gear icon to configure the widget.
@@ -20,7 +20,7 @@ Amita takes a look and she's excited.
 1. Click **Save**.
 1. Click **Done Editing**.
 
-Although the widget shows only one test run, you now have a way to visualize and track test runs over time.
+Although the widget shows only one test run, you now have a way to visualize and track test runs over time. Here's an example that shows a few successful test runs.
 
 ![The Test Results Trend widget showing passing tests](../media/5-test-results-trend-widget.png)
 

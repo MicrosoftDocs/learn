@@ -52,7 +52,7 @@ The `git pull` command fetches the latest code from the remote repository and me
 
     You see the list of files that were changed. As an optional step, you can open **azure-pipelines.yml** to verify that it contains your complete build configuration.
 
-    A Git repository where team members collaborate (such as on GitHub) is called a _remote_. Here, _origin_ specifies your repository on GitHub.
+    Recall that a Git repository where team members collaborate (such as on GitHub) is called a _remote_. Here, _origin_ specifies your repository on GitHub.
 
     Later, you'll fetch starter code from Microsoft's GitHub repository, known as _upstream_.
 
@@ -179,7 +179,7 @@ Here you'll stage your changes to **Index.cshtml**, commit the change to your br
     The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change as well as help future maintainers understand how the file changed over time.
 
     > [!TIP]
-    > The best commit messages complete the sentence "If you apply this commit, you will ___."
+    > The best commit messages complete the sentence "If you apply this commit, you will ..."
 
     If you omit the `-m` argument, Git brings up a text editor where you can detail the change. This option is useful when you want to specify a commit message that spans multiple lines. The text up to the first blank line specifies the commit title.
 
@@ -285,7 +285,7 @@ Here you'll submit a pull request just as you did in the previous part.
     * Title:
     > _Improve the text at the top of the home page_
     * Description:
-    > _Received the latest home page text from Irwin in product_
+    > _Received the latest home page text from the product team_
 
 1. Click the **Create pull request** button to complete your pull request.
 

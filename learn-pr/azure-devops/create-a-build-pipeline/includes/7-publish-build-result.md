@@ -13,59 +13,7 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
-    ```yml
-    pool:
-      vmImage: 'Ubuntu-16.04'
-      demands:
-        - npm
-
-    steps:
-    - task: DotNetCoreInstaller@0
-      displayName: 'Use .NET Core SDK 2.1.505'
-      inputs:
-        version: 2.1.505
-
-    - task: Npm@1
-      displayName: 'Run npm install'
-      inputs:
-        verbose: false
-
-    - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
-      displayName: 'Compile Sass assets'
-
-    - task: gulp@1
-      displayName: 'Run gulp tasks'
-
-    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-      displayName: 'Write build info'
-      workingDirectory: Tailspin.SpaceGame.Web/wwwroot
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-        command: 'restore'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Build the project - Release'
-      inputs:
-        command: 'build'
-        arguments: '--no-restore --configuration Release'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Publish the project - Release'
-      inputs:
-        command: 'publish'
-        projects: '**/*.csproj'
-        publishWebProjects: false
-        arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
-        zipAfterPublish: true
-
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifact: drop'
-      condition: succeeded()
-    ```
+    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=40-51)]
 
     This version of **azure-pipelines.yml** resembles the previous version, but adds two additional tasks.
 
@@ -133,64 +81,7 @@ Here you'll use variables to define these values one time, and then reference th
 
 1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
-    ```yml
-    pool:
-      vmImage: 'Ubuntu-16.04'
-      demands:
-        - npm
-
-    variables:
-      buildConfiguration: 'Release'
-      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '2.1.505'
-
-    steps:
-    - task: DotNetCoreInstaller@0
-      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
-      inputs:
-        version: $(dotnetSdkVersion)
-
-    - task: Npm@1
-      displayName: 'Run npm install'
-      inputs:
-        verbose: false
-
-    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
-      displayName: 'Compile Sass assets'
-
-    - task: gulp@1
-      displayName: 'Run gulp tasks'
-
-    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-      displayName: 'Write build info'
-      workingDirectory: $(wwwrootDir)
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-        command: 'restore'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Build the project - $(buildConfiguration)'
-      inputs:
-        command: 'build'
-        arguments: '--no-restore --configuration $(buildConfiguration)'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Publish the project - $(buildConfiguration)'
-      inputs:
-        command: 'publish'
-        projects: '**/*.csproj'
-        publishWebProjects: false
-        arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
-        zipAfterPublish: true
-
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifact: drop'
-      condition: succeeded()
-    ```
+    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=6-9,39,42,46,51,22,30,13,15)]
 
     Notice the `variables` section, which defines these variables:
 

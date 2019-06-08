@@ -12,7 +12,7 @@ Mara looks up.
 
 **Mara**: What can I help you with?
 
-**Andy**: Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the master branch. We need another pair of eyes on the code before the pull request is approved.
+**Andy**: Several small mistakes are making it through the build. Just today, a spelling error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `master` branch. We need another pair of eyes on the code before the pull request is approved.
 
 **Mara**: I can set that up. In GitHub, there's a way to make sure no pull request is approved before someone else reviews it.
 

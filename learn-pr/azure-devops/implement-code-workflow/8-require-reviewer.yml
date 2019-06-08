@@ -3,7 +3,7 @@ uid: learn.azdo.implement-code-workflow.8-require-reviewer
 title: Exercise - Add a rule to require a reviewer
 metadata:
   title: Exercise - Add a rule to require a reviewer
-  description: TBD
+  description: Set up a rule on GitHub that requires a reviewer to approve changes before those changes can be merged into the master branch.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

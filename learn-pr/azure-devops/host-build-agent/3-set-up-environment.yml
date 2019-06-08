@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.host-build-agent.3-set-up-environment
-title: Set up your Azure DevOps environment
+title: Exercise - Set up your Azure DevOps environment
 metadata:
-  title: Set up your Azure DevOps environment
-  description: TBD
+  title: Exercise - Set up your Azure DevOps environment
+  description: Run a template to set up your Azure DevOps environment.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

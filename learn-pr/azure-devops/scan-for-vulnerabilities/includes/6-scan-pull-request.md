@@ -79,7 +79,7 @@ In YAML, the `|` syntax enables you to define a string that spans multiple lines
 
 In this part, you'll provide a condition to each build task that relates to SonarCloud. This condition will limit scans to only when the build is for a pull request to the `master` branch.
 
-1. From Visual Studio Code, modify **azure-pipelines.yml** like this. 
+1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=49-55,85-91,95-101)]
 
@@ -131,10 +131,10 @@ In this part, you'll provide a condition to each build task that relates to Sona
 
     You see that the SonarCloud tasks are skipped. That's because the CI build is a normal build against the `security-scan` branch.
 
-    ![](../media/6-ci-build-tasks.png)
+    ![Azure Pipelines showing a CI build that skips unneeded tasks](../media/6-ci-build-tasks.png)
 
     You see that all tasks, including the SonarCloud tasks, are run in the pull request build. That's because your pull request targets the `master` branch.
 
-    ![](../media/6-pr-build-tasks.png)
+    ![Azure Pipelines showing a PR build that runs all tasks](../media/6-pr-build-tasks.png)
 
 For brevity, you won't merge your pull request here. But in practice, you might merge your pull request only after all build checks pass and another team member approves your changes.

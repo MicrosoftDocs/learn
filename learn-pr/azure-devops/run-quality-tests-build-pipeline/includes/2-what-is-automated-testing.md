@@ -12,19 +12,19 @@ So far, her efforts have been one-sided. The entire team identified these three 
 * **Create a Git-based workflow**
 * **Create unit tests**
 
-But Mara's the only one on the team who's done any work, although Andy is starting to get involved. Unfortunatley, he seems to spend most of his days in meetings. Amita, the tester, is busy helping other teams. Tim, from ops, hasn't seen any good reason to get involved at all.
+But Mara's the only one on the team who's done any work, although Andy is starting to get involved. Unfortunately, he seems to spend most of his days in meetings. Amita, the tester, is busy helping other teams. Tim, from ops, hasn't seen any good reason to get involved at all.
 
-In fact, things are about to change. Amita is stressed and frustrated. She's stressed because she's helping out other teams as well as working on _Space Game_. She's frustrated because she's seeing the same errors with the _Space Game_ web site over and over again, particularly with the leaderboard. They're all regression bugs. As Andy and Mara add features to the leaderboard, the existing features break.
+In fact, things are about to change. Amita is stressed and frustrated. She's stressed because she's helping out other teams as well as working on _Space Game_. She's frustrated because she's seeing the same errors with the _Space Game_ web site repeatedly, particularly with the leaderboard. They're all regression bugs. As Andy and Mara add features to the leaderboard, the existing features break.
 
 Mara has already taken on the first two issues and has started thinking about the third issue, creating unit tests. And it couldn't come at a better time. Amita has already pinged Andy and Mara about the problem. She wants to know if they'll work with her to improve the code quality and eliminate those bugs.
 
-**Amita**: Thanks for meeting with me. I wanted to see if we can stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now and reporting the same broken functionality over and over on something that should work is driving me crazy!
+**Amita**: Thanks for meeting with me. I wanted to see if we can stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now. Reporting the same broken functionality over and over on something that should work is driving me crazy!
 
 **Mara**: I have an idea. You've seen the automated pipeline. I think we can add unit tests to the automated build. Unit testing is about testing a single piece of functionality, like the filtering feature, in isolation. We'd catch regression errors before they ever got to you.
 
-**Andy**: We tried unit testing a while ago but we had trouble keeping the tests up to date so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and there was nothing in place to keep us honest.
+**Andy**: We tried unit testing a while ago but we had trouble keeping the tests up to date so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and nothing was in place to keep us honest.
 
-**Mara**: If we add tests to the Azure Pipelines build, the build will fail if any tests fail. That should certainly keep us honest! This is something Andy and I could do and it will make life better for you, Amita.
+**Mara**: If we add tests to the Azure Pipelines build, the build will fail if any tests fail. That should certainly keep us honest! Andy and I could do this and it will make life better for you, Amita.
 
 **Amita**: I'm all for an easier life but you're not going to put me out of a job, are you?
 
@@ -48,7 +48,7 @@ When thinking about automated testing, it's common to separate tests into layers
 
 ![The test pyramid showing the unit and UI layers](../media/2-test-pyramid.png)
 
-Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media-draft/callout-01.png) of your software &ndash; such as functions, classes, and methods &ndash; and progressively less effort as features are combined, such as at the user interface (UI) layer ![Callout 2](../../shared/media-draft/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, then tests at the higher levels need only verify that multiple components work together to get the expected result.
+Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media/callout-01.png) of your software &ndash; such as functions, classes, and methods &ndash; and progressively less effort as features are combined, such as at the user interface (UI) layer ![Callout 2](../../shared/media/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, then tests at the higher levels need only verify that multiple components work together to get the expected result.
 
 ### When should I write tests?
 
@@ -56,9 +56,9 @@ The answer mainly depends on your needs and experience in writing tests.
 
 It's never too late to start adding tests for code you've already written and deployed. This is especially true for features that often break or require the most effort from your test team.
 
-In terms of relating testing to continuous integration and continuous delivery pipelines, two concepts you'll hear about are _continuous testing_ and _shifting left_.
+When relating testing to continuous integration and continuous delivery pipelines, two concepts you'll hear about are _continuous testing_ and _shifting left_.
 
-Continuous testing means that tests are run early in the development process and as every change moves through the pipeline. Shifting left means considering software quality and testing earlier in the development process.
+Continuous testing means tests are run early in the development process and as every change moves through the pipeline. Shifting left means considering software quality and testing earlier in the development process.
 
 As an example, developers will often add test cases as they develop their feature and run the entire suite of tests before submitting the change to the pipeline. This helps ensure that the feature they are building behaves as expected and also doesn't break existing features.
 
@@ -78,7 +78,7 @@ Documentation and the ability to more easily refactor your code are two added be
 
 Manual test plans can serve as a type of documentation as to how software should behave and why certain features exist.
 
-Automated tests can serve the same purpose. Automated test code often use a human-readable format. The set of inputs you provide represent values your users might enter. Each associated output specifies the result your user should expect.
+Automated tests can serve the same purpose. Automated test code often uses a human-readable format. The set of inputs you provide represent values your users might enter. Each associated output specifies the result your user should expect.
 
 In fact, many developers follow the _test-driven development_, or TDD, method by writing their test code _before_ implementing a new feature. The idea is to write a set of tests, often called _specs_, that initially fail. Then, the developer incrementally writes code to implement the feature until all tests pass. Not only do the specs document the requirements, but the TDD process helps ensure that only the necessary amount of code is written to implement the feature.
 
@@ -100,7 +100,7 @@ In this module, you'll work with _unit testing_ and _code coverage testing_.
 
 Unit testing verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks whether the actual and expected results match.
 
-As an example, say you have a function that performs an arithmetic operation that includes division. You might specify a few values you might expect your user to enter along with edge case values such as 0 and -1. If a given input produces an error or exception, you can verify that the function produces the same error.
+As an example, say you have a function that performs an arithmetic operation that includes division. You might specify a few values you expect your users to enter along with edge case values such as 0 and -1. If a given input produces an error or exception, you can verify that the function produces the same error.
 
 Code coverage testing computes the percentage of your code that's covered by your unit tests. Code coverage testing can include conditional branches in your code to ensure a function is completely covered.
 

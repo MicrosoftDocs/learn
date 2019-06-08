@@ -86,7 +86,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
     * `%USERPROFILE%\.dotnet\tools\reportgenerator` on PowerShell
 
     You see a number of HTML files appear in the **CodeCoverage** folder in the root of the project.
-1. From Visual Studio Code, expand the **CodeCoverage** folder and right click **index.htm**. Then select **Reveal in Explorer** (**Reveal in Finder** on macOS).
+1. From Visual Studio Code, expand the **CodeCoverage** folder and right click **index.htm**. Then select **Reveal in Explorer** (**Reveal in Finder** on macOS or **Open Containing Folder** on Linux).
 1. From Windows Explorer (Finder on macOS), double click **index.htm** to open it in a web browser.
 
     You see the coverage report summary.
@@ -124,89 +124,7 @@ Here, you'll add tasks to your build pipeline that measure code coverage.
 
 1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
-    ```yml
-    pool:
-      vmImage: 'Ubuntu-16.04'
-      demands:
-        - npm
-
-    variables:
-      buildConfiguration: 'Release'
-      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '2.1.505'
-
-    steps:
-    - task: DotNetCoreInstaller@0
-      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
-      inputs:
-        version: '$(dotnetSdkVersion)'
-
-    - task: Npm@1
-      displayName: 'Run npm install'
-      inputs:
-        verbose: false
-
-    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
-      displayName: 'Compile Sass assets'
-
-    - task: gulp@1
-      displayName: 'Run gulp tasks'
-
-    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-      displayName: 'Write build info'
-      workingDirectory: $(wwwrootDir)
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-        command: 'restore'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Build the project - $(buildConfiguration)'
-      inputs:
-        command: 'build'
-        arguments: '--no-restore --configuration $(buildConfiguration)'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Install ReportGenerator'
-      inputs:
-        command: custom
-        custom: tool
-        arguments: 'install --global dotnet-reportgenerator-globaltool'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Run unit tests - $(buildConfiguration)'
-      inputs:
-        command: 'test'
-        arguments: '--no-build --configuration $(buildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
-        publishTestResults: true
-        projects: '**/*.Tests.csproj'
-
-    - script: |
-        reportgenerator -reports:$(Build.SourcesDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines
-      displayName: 'Create code coverage report'
-
-    - task: PublishCodeCoverageResults@1
-      displayName: 'Publish code coverage report'
-      inputs:
-        codeCoverageTool: 'cobertura'
-        summaryFileLocation: '$(Build.SourcesDirectory)/**/coverage.cobertura.xml'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Publish the project - $(buildConfiguration)'
-      inputs:
-        command: 'publish'
-        projects: '**/*.csproj'
-        publishWebProjects: false
-        arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
-        zipAfterPublish: true
-
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifact: drop'
-      condition: succeeded()
-    ```
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=45-68)]
 
     This version builds upon your existing configuration. Here's a summary of what's new.
 
@@ -249,7 +167,7 @@ In the previous part, you added the **Test Results Trend** widget to your dashbo
 Here you'll add a second widget that summarizes code coverage.
 
 1. From a new browser tab, navigate to [marketplace.visualstudio.com](https://marketplace.visualstudio.com?azure-portal=true)
-1. Search for "code coverage".
+1. From the **Azure DevOps** tab, search for "code coverage".
 1. Select **Code Coverage Widgets**.
 1. Click **Get it free**.
 1. Select your Azure DevOps organization from the drop-down box.
