@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 20
+durationInMinutes: 8
 content: |
   [!include[](includes/4-assess-process-efficiency.md)]
 quiz:
