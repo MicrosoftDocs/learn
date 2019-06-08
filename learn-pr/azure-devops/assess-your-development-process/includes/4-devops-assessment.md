@@ -10,11 +10,11 @@ Let's take a look at her map.
 
 Mara gathers the team in the conference room to present her value stream map.
 
-![AWhiteboard showing the value stream map](../media-draft/4-vsm-whiteboard1.png)
+![A whiteboard showing the value stream map](../media/4-vsm-whiteboard1.png)
 
 **Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through the process currently.
 
-*Eyes roll, but Mara presses on.*
+*Some people roll their eyes, but Mara presses on.*
 
 ### Development processes
 
