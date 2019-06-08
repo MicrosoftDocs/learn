@@ -1,8 +1,8 @@
-Creating a value stream map, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to provide optimum value to the customer through the creation process with minimum waste. Let's see how Tailspin measures up.
+Creating a value stream map, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to provide maximum value to the customer through the creation process with minimum waste. Let's see how Tailspin measures up.
 
 Mara, who is new to the team, is going to create a quick value stream map so she can reflect on the existing processes. Creating this map provides you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
-Being new to the team, Mara knows she doesn't understand everything so she's going to create a temporary VSM that will have some gaps and questions on the whiteboard in a meeting room. She will share this with the team later. With the map in place, everyone on the team has a common starting point for identifying the first steps towards improving how Tailspin develops and releases their web sites.
+Being new to the team, Mara knows she doesn't understand everything. So she's going to create a temporary VSM that will have some gaps and questions on the whiteboard in a meeting room. She'll share her VSM with the team later. With the map in place, everyone on the team has a common starting point for identifying the first steps towards improving how Tailspin develops and releases their web sites.
 
 Let's take a look at her map.
 
@@ -12,13 +12,13 @@ Mara gathers the team in the meeting room to present her value stream map.
 
 ![A whiteboard showing the value stream map](../media/4-vsm-whiteboard2.png)
 
-**Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through our current release cycle process.
+**Mara:** A value stream map helps to measure where a process has value to the customer and where it's spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We'll follow just one feature through the process to see how it moves through our current release cycle process.
 
 *Some people roll their eyes, but Mara presses on.*
 
 ### Development processes
 
-Creating a new feature currently starts with creating a label in source control ![Callout 1](../../shared/media/callout-01.png). We have one person who can do this, and that's Andy. We request a label over email and Andy waits until all code is checked in and stable to create the label. After the label is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
+Creating a new feature currently starts with creating a label in source control ![Callout 1](../../shared/media/callout-01.png). We have one person who can create labels, and that's Andy. We request a label over email. Then Andy waits until all code is checked in and stable to create the label. After the label is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
 
 Coding a feature takes about four days for one person once we get access to all the files we need ![Callout 2](../../shared/media/callout-02.png). We need to be on the corporate network in order to access source control. This time has no value to the customer. They want this feature.
 
@@ -46,7 +46,7 @@ So now we can look at the key performance metrics and see how we measure up.
 
 $${Activity\ ratio = }{\dfrac{Process\ time}{Total\ lead\ time}}$$
 
-This is our **efficiency**. Multiply this number by 100 to get a percentage. The result is greater than 0% and typically less than 100%. A higher percentage indicates greater efficiency.
+This is our **efficiency**. Multiply efficiency by 100 to get a percentage. The result is greater than 0% and typically less than 100%. A higher percentage indicates greater efficiency.
 
 Substitute our numbers and we get:
 
@@ -54,13 +54,13 @@ $${Activity\ ratio\ =\ }{\dfrac{5\ days}{22\ days}}{ = .23}$$
 
 Multiply the result by 100% and you get **23%**.
 
-As you can see, we have a lot of room for improvement. And 22 days for a feature is too long.
+As you can see, we have much room for improvement. And taking 22 days to develop a feature is too long.
 
 **Tim:** So how does this help us?
 
 ## Where do we go from here?
 
-**Mara:** It helps to see where we are now so that we can minimize waste. That is, we need to minimize the time we spend that has no value to the customer. I believe we can improve this number greatly by adopting a DevOps approach. We can automate a lot of this and cut down on the waste.
+**Mara:** It helps to see where we are now so that we can minimize waste. That is, we need to minimize the time we spend that has no value to the customer. I believe we can improve this number greatly by adopting a DevOps approach. We can automate much of this and cut down on the waste.
 
 I'm not suggesting we drop our current processes, but I think we can work toward a more efficient process in small increments without disrupting what we currently have in place.
 
@@ -76,4 +76,4 @@ Also, I noticed that you don't have time in there for the build itself. That is 
 
 **Andy:** We don't have time to change the process now. You heard Irwin. We are in crisis mode here!
 
-**Mara:** I understand your hesitation. Let's continue on the way we are for now. But think about your part in the process and we can revisit this in small steps alongside our current processes. That will let us see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics we have for now. If we end up adopting DevOps practices we can revisit the numbers.
+**Mara:** I understand your hesitation. Let's continue on the way we are for now. But think about your part in the process and we can revisit this in small steps alongside our current processes. That will let us see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics we have for now. If we end up adopting DevOps practices, then we can revisit the numbers.

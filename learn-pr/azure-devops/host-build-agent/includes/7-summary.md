@@ -32,13 +32,13 @@ Although the team has not yet transitioned to a full delivery cycle using DevOps
 
 So far, the team has reduced:
 
-* The time it takes to set up source control from three days to zero days.
+* The time it takes to set up source control for new features from **three days** to **zero days**.
 
     They did so by moving from centralized source control to Git, a form of distributed source control. With distributed source control, there's no need to wait for files to be unlocked.
-* The time it takes to hand off code to Amita, the tester, from two days to zero days.
+* The time it takes to hand off code to Amita, the tester, from **two days** to **zero days**.
 
     They did this by moving their build process to Azure Pipelines. Azure Pipelines automatically notifies Amita when a build is available, so the developers no longer need to update Amita's spreadsheet.
-* The time it takes Amita to test new features from three days to one day.
+* The time it takes Amita to test new features from **three days** to **one day**.
 
     They did this by unit testing their code. By running unit tests each time a change moves through the build pipeline, fewer bugs and regressions reach Amita, which enables her to complete each manual test pass much faster.
 
