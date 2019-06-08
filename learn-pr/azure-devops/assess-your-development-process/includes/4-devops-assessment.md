@@ -1,4 +1,4 @@
-Creating a Value Stream Map (VSM) helps you analyze your current release cycle process. The purpose of a VSM is to provide optimum value to the customer through the creation process with minimum waste. Let's see how Tailspin measures up.
+Creating a value stream map, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to provide optimum value to the customer through the creation process with minimum waste. Let's see how Tailspin measures up.
 
 Mara, who is new to the team, is going to create a quick value stream map so she can reflect on the existing processes. Creating this map will provide you with a greater understanding of where you fit in the DevOps maturity model. More mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
