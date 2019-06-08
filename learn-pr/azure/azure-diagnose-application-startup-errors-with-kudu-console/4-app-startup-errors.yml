@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-diagnose-debug-log-and-stdout-log.md)]
+  [!include[](includes/4-app-startup-errors.md)]
