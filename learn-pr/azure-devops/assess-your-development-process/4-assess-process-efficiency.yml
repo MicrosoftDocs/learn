@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.assess-your-development-process.4-devops-assessment
+uid: learn.azdo.assess-your-development-process.4-assess-process-efficiency
 title: Assess your current process efficiency with value stream maps
 metadata:
   title: Assess process efficiency with value stream maps
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-devops-assessment.md)]
+  [!include[](includes/4-assess-process-efficiency.md)]
 quiz:
   title: Check your knowledge
   questions:
