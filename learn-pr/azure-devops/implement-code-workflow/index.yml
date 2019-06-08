@@ -26,16 +26,14 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/implement-a-code-workflow-in-your-build-pipeline.svg
 levels:
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
-- azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.implement-code-workflow.1-introduction
 - learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy
@@ -45,6 +43,7 @@ units:
 - learn.azdo.implement-code-workflow.6-add-build-badge
 - learn.azdo.implement-code-workflow.7-track-build-history
 - learn.azdo.implement-code-workflow.8-require-reviewer
-- learn.azdo.implement-code-workflow.9-summary
+- learn.azdo.implement-code-workflow.9-clean-up-environment
+- learn.azdo.implement-code-workflow.10-summary
 badge:
   uid: learn.azdo.implement-code-workflow.badge

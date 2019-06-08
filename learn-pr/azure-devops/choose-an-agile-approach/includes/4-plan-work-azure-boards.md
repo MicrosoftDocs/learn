@@ -12,12 +12,13 @@ Here you'll create an Azure DevOps project.
 
 1. Sign into your account at [dev.azure.com](https://dev.azure.com).
 1. Click **+ Create project**.
-1. The **Create new project window** opens.
+
+    The **Create new project window** opens. Or if this is your first project, you'll already be prompted to create your project.
 1. In the **Project name** field, type **Space Game - web**.
 1. In the **Description** field, type **The Space Game web site**.
 1. Click **Advanced**.
 1. From the work item process drop-down box, select **Basic**.
-1. Click **Create**.
+1. Click **Create** or **Create project**.
 
 After just a few moments, you're taken to your new project.
 
@@ -28,7 +29,7 @@ Here you'll create a team for the project.
 1. Click **Project settings** in the bottom left-hand corner.
 1. From the **Project details** page, under **General**, select **Teams**.
 
-    You'll see that a default team based on the name of the project, **Space Game - web Team**, has been created. We'll use this team, but in practice you may want a few teams in one project.
+    You see that a default team based on the name of the project, **Space Game - web Team**, has been created. We'll use this team, but in practice you may have multiple teams that contribute to the same project.
 
 1. Click on **Space Game - web Team**.
 
@@ -50,7 +51,7 @@ Here you'll add members to the **Space Game - web Team** team.
 Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to your board to practice the process.
 
 1. In the left hand column, point to **Boards** and select **Boards** from the menu that appears.
-1. Click ***Space Game - web Team boards**. A blank board appears.
+1. Click **Space Game - web Team boards**. A blank board appears.
 
     ![Azure Boards showing an initially empty board.](../media/3-blank-board.png)
 
@@ -59,7 +60,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
     If you choose a different process, such as Scrum, you would see a layout that supports that process.
 
 1. In the **To Do** column, click the green **+** button next to the **New item** field.
-1. Enter **Stabilize the build server** and then hit <kbd>Enter</kbd>.
+1. Enter **Stabilize the build server** and then press <kbd>Enter</kbd>.
 1. Click the ellipses (**...**), then click **Open**.
 1. In the **Description** field, enter this text:
 
@@ -108,15 +109,15 @@ You have an initial set of work items and a timeline for your first sprint. Here
 1. Select **Stabilize the build server**.
 1. From the **Iteration** drop-down, select **Sprint 1**.
 
-    ![](../media/3-assign-sprint.png)
+    ![Assigning an iteration to a Sprint](../media/3-assign-sprint.png)
 1. From the same window, click **Unassigned** and set yourself as the task owner.
 
-    ![](../media/3-assign-owner.png)
+    ![Assigning the task owner](../media/3-assign-owner.png)
 1. Repeat the process for the other two work items.
 
     * **Create a Git-based workflow**
     * **Create unit tests**
 
-**Mara**: We did it! We created our first Azure Board and we identified the first tasks we'll take on. It's great! As Andy and I do this work, we'll move each work item to the **Doing** state.
+**Mara**: We did it! We created our first project on Azure Boards and we identified the first tasks we'll take on. It's great! As Andy and I do this work, we'll move each work item to the **Doing** state.
 
 **Amita**: Sounds good. I enjoyed getting together and deciding what's important to us right now. And, like Andy said, now we have a way to see everything all in one place.

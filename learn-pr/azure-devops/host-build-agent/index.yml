@@ -25,22 +25,22 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg
 levels:
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
+- azure-devops
 - azure
-#- azure-devops
 units:
 - learn.azdo.host-build-agent.1-introduction
 - learn.azdo.host-build-agent.2-choose-a-build-agent
 - learn.azdo.host-build-agent.3-set-up-environment
 - learn.azdo.host-build-agent.4-create-build-agent
 - learn.azdo.host-build-agent.5-build-application
-- learn.azdo.host-build-agent.6-summary
+- learn.azdo.host-build-agent.6-clean-up-environment
+- learn.azdo.host-build-agent.7-summary
 badge:
   uid: learn.azdo.host-build-agent.badge

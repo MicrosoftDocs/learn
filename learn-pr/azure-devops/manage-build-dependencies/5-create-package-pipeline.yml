@@ -3,7 +3,7 @@ uid: learn.azdo.manage-build-dependencies.5-create-package-pipeline
 title: Exercise - Create a pipeline for your package
 metadata:
   title: Exercise - Create a pipeline for your package
-  description: TBD
+  description: Create a project in Azure Pipelines to build your package.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

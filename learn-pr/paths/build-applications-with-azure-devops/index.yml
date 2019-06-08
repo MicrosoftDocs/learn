@@ -25,21 +25,19 @@ cardDescription: Learn how configure build pipelines that continuously build, te
 prerequisites: None
 iconUrl: /learn/achievements/azure-devops/build-applications-with-azure-devops.svg
 levels:
-# TODO
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+#- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
 - azure
-#- azure-devops
+- azure-devops
 modules:
 - learn.azdo.create-a-build-pipeline
 - learn.azdo.implement-code-workflow
-- learn.azdo.run-quality-tests
+- learn.azdo.run-quality-tests-build-pipeline
 - learn.azdo.scan-for-vulnerabilities
 - learn.azdo.scan-open-source
 - learn.azdo.manage-build-dependencies

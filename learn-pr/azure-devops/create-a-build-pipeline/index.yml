@@ -14,7 +14,7 @@ summary: Set up a continuous integration (CI) pipeline that automates the proces
 abstract: |
   In this module, you will:
   - Create a build pipeline in Azure Pipelines
-  - Map manual build steps to automated build tasks
+  - Map the manual build steps to automated build tasks
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
 prerequisites: |
@@ -25,16 +25,14 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
 levels:
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
-- azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.create-a-build-pipeline.1-introduction
 - learn.azdo.create-a-build-pipeline.2-what-is-azure-pipelines
@@ -44,6 +42,7 @@ units:
 - learn.azdo.create-a-build-pipeline.6-create-the-pipeline
 - learn.azdo.create-a-build-pipeline.7-publish-build-result
 - learn.azdo.create-a-build-pipeline.8-build-multiple-configurations
-- learn.azdo.create-a-build-pipeline.9-summary
+- learn.azdo.create-a-build-pipeline.9-clean-up-environment
+- learn.azdo.create-a-build-pipeline.10-summary
 badge:
   uid: learn.azdo.create-a-build-pipeline.badge

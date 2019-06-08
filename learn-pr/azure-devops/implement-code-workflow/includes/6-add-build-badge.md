@@ -64,12 +64,12 @@ Here you'll commit your changes to the `master` branch on GitHub.
 
     In practice, you would switch to the `master` branch and pull the latest changes from GitHub the next time you need to add a feature or address a bug.
 
-**Andy**: Mara, you just made a change directly to master. Why didn't you use the flow you taught me? You know, with the feature branches.
+**Andy**: Mara, you just made a change directly to `master`. Why didn't you use the flow you taught me? You know, with the feature branches.
 
-**Mara**: We could have done that. But sometimes when people are only changing the Readme file or other documentation files, they commit to master right then. Plus, you and I were able to verify the work together before we merged the change. 
+**Mara**: We could have done that. But sometimes when people are only changing the Readme file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
+
 But this brings up a good point. If we can all just commit to master when we want to, we could be letting problems in the code slip into our master branch.
 
 **Andy**: I've been meaning to talk to you about that.
 
 Andy and Mara continue this conversation while walking back to their offices.
-

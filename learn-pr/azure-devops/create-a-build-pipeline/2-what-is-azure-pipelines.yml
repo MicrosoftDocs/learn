@@ -3,7 +3,7 @@ uid: learn.azdo.create-a-build-pipeline.2-what-is-azure-pipelines
 title: What is Azure Pipelines?
 metadata:
   title: What is Azure Pipelines?
-  description: TBD
+  description: See how Azure Pipelines automatically builds and tests your code projects and makes it available to others.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

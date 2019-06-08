@@ -3,7 +3,7 @@ uid: learn.azdo.create-a-build-pipeline.8-build-multiple-configurations
 title: Exercise - Build multiple configurations using templates
 metadata:
   title: Exercise - Build multiple configurations using templates
-  description: TBD
+  description: Use a template to define build tasks that can build any configuration defined in the project file.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

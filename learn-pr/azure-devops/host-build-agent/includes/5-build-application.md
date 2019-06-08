@@ -67,7 +67,7 @@ Here you'll see the build run in the pipeline using your build agent.
 
     You see that the build succeeds using your build agent from your agent pool.
 
-    ![](../media/5-build-results-private-pool.png)
+    ![Azure Pipelines showing the private agent running the build](../media/5-build-results-private-pool.png)
 
 ## Optional: Remove your build pool
 
@@ -75,7 +75,7 @@ For future reference, you can keep the build pool configuration in your Azure De
 
 In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines will check for an available agent the next time a build is queued using the **MyAgentPool** pool.
 
-![](../media/5-agent-pools-offline-agent.png)
+![Azure DevOps showing the private agent as offline](../media/5-agent-pools-offline-agent.png)
 
 As an optional step, you can remove the build pool configuration from Azure DevOps. Here's now.
 
@@ -83,7 +83,7 @@ As an optional step, you can remove the build pool configuration from Azure DevO
 1. Select **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Agent pools**.
 
-    ![](../media/4-project-settings-agent-pools.png)
+    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. From the entry for **MyAgentPool**, click the trash can icon. Then click **Delete**.
 
-    ![](../media/5-agent-pools-delete-agent.png)
+    ![Azure DevOps showing where to delete the private agent](../media/5-agent-pools-delete-agent.png)

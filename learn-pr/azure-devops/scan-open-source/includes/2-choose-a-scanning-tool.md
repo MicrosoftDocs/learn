@@ -1,4 +1,4 @@
-In this part, you'll examine a few tools that can scan for known vulnerabilities and for license ratings in the open source components your application uses.
+In this part, you'll examine a few tools that can scan for known vulnerabilities and for license ratings in the open-source components your application uses.
 
 Recall that in [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-code-for-vulnerabilities?azure-portal=true), Tim from the Tailspin web team needed to provide a report to the security consultant that showed what security vulnerabilities were in the code and the potential impact of those vulnerabilities. The team used SonarCloud to perform the scan, which provided Tim with the report he needed.
 
@@ -14,29 +14,29 @@ Let's check in with the team at their weekly meeting and see how things are prog
 
 **Andy**: I've heard of GPL. That stands for GNU General Public License. What's the issue?
 
-**Tim**: Well, it turns out that if you modify certain open source libraries, even if it's to fix a bug or make a minor enhancement, you may be required to make those changes publicly available. Those changes could include intellectual property we want to protect. There's this big conversation happening with our legal team to identify what's next. I'm worried this might affect our team as well.
+**Tim**: Well, it turns out that if you modify certain open-source libraries, even if it's to fix a bug or make a minor enhancement, you may be required to make those changes publicly available. Those changes could include intellectual property we want to protect. There's this big conversation happening with our legal team to identify what's next. I'm worried this might affect our team as well.
 
-**Amita**: I wasn't aware this project used much open source software.
+**Amita**: I wasn't aware this project used much open-source software.
 
 **Andy**: That's correct. But some components might include other components that we haven't checked for security vulnerabilities or how they're licensed. We'd better make sure of where we stand before we move forward.
 
 **Amita**: Licenses can be hard to read and interpret. Do we need a lawyer to help?
 
-**Tim**: The legal team wants to meet with us next week. But first they want us to investigate what open source components we're using and how those components are licensed. Andy, Mara, you're most familiar with how the code is structured. Would you mind doing some investigation for the team?
+**Tim**: The legal team wants to meet with us next week. But first they want us to investigate what open-source components we're using and how those components are licensed. Andy, Mara, you're most familiar with how the code is structured. Would you mind doing some investigation for the team?
 
 **Andy**: Sure, we got this. We'll take a look after this meeting and report back with what we find.
 
-## How can I access security and license ratings in open source software?
+## How can I access security and license ratings in open-source software?
 
 Andy and Mara return to their desks.
 
-**Andy**: I was at a user conference a few months ago where they talked about licenses and security in open source software. I can bring up the slides from the presentation. Maybe we can identify a tool or process we can use.
+**Andy**: I was at a user conference a few months ago where they talked about licenses and security in open-source software. I can bring up the slides from the presentation. Maybe we can identify a tool or process we can use.
 
 Andy and Mara review the slides and investigate further. They find a few options.
 
 ### Black Duck
 
-[Black Duck](https://www.blackducksoftware.com?azure-portal=true) by Synopsys scans your open source dependencies against their own database. They keep that database up to date with the latest vulnerabilities and give you timely information on fixes, workarounds, and on the exploits. They cover over 80 programming languages, and get their information from many sources. 
+[Black Duck](https://www.blackducksoftware.com?azure-portal=true) by Synopsys scans your open-source dependencies against their own database. They keep that database up to date with the latest vulnerabilities and give you timely information on fixes, workarounds, and on the exploits. They cover over 80 programming languages, and get their information from many sources. 
 
 Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=black-duck-software.detect-for-tfs&azure-portal=true) enables you to set policies that affect the build and send alerts.
  
@@ -60,7 +60,7 @@ Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?ite
 
 ### WhiteSource Bolt
 
-[WhiteSource Bolt](https://bolt.whitesourcesoftware.com?azure-portal=true) is a tool for scanning open source dependencies for vulnerabilities and licensing. It supports over 200 programming languages and gives guidance on fixing the vulnerabilities. There are reports for vulnerabilities, licensing, and inventory. 
+[WhiteSource Bolt](https://bolt.whitesourcesoftware.com?azure-portal=true) is a tool for scanning open-source dependencies for vulnerabilities and licensing. It supports over 200 programming languages and gives guidance on fixing the vulnerabilities. There are reports for vulnerabilities, licensing, and inventory. 
 
 Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt&azure-portal=true) allows for extensive policy configuration as well as viewing the results from the Azure Pipelines portal.
 

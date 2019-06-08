@@ -55,7 +55,7 @@ Recall that an agent pool organizes build agents. Here you'll create the agent p
 1. Select **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Agent pools**.
 
-    ![](../media/4-project-settings-agent-pools.png)
+    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Click **Add pool**.
 1. From the **Add agent pool** window, select **New** and enter **MyAgentPool** in the text box.
 
@@ -74,7 +74,7 @@ To do that, here you'll create a personal access token. A personal access token,
 
 1. From Azure DevOps, open your profile. Then select **Security**.
 
-    ![](../media/4-settings-security.png)
+    ![Locating Security in the menu](../media/4-settings-security.png)
 1. Click **+ New Token**.
 1. Enter a name for your token, such as **Build agent**.
 1. Under **Scopes**, select **Show all scopes**.
@@ -280,13 +280,13 @@ You successfully installed build tools and the agent software on your VM. As a v
 1. Select **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Agent pools**.
 
-    ![](../media/4-project-settings-agent-pools.png)
+    ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Select **MyAgentPool**.
 1. Select the **Agents** tab.
 
     You see that your agent is online and ready to accept build jobs.
 
-    ![](../media/4-project-settings-agent-details.png)
+    ![Azure DevOps showing the private agent's status](../media/4-project-settings-agent-details.png)
 
     > [!TIP]
     > If your build agent shows as **Offline**, try waiting a few moments and then refresh the page.
@@ -296,6 +296,6 @@ You successfully installed build tools and the agent software on your VM. As a v
 
     During setup, the configuration process scanned your build agent for tool capabilities. You see that `npm` is listed as one of them. Recall that your original build configuration specified that `npm` must be installed on the agent.
 
-    ![](../media/4-project-settings-agent-capabilities.png)
+    ![Locating npm in the list of capabilities](../media/4-project-settings-agent-capabilities.png)
 
     When you specify which agent pool to use, you can include any of these entries in your `demands` section. This ensures that Azure Pipelines chooses a build agent that has the software you need to build your application. It also enables you to create agent pools with various software configurations &mdash; Azure Pipelines will select the correct one based on your requirements.

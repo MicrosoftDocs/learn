@@ -2,17 +2,19 @@ DevOps is the union of people, process, and products to enable continuous delive
 
 Mara has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
-**Mara**: Hi, thanks for coming. I wanted to show you the results of the DevOps Assessment that I took.
+**Mara**: Hi, thanks for coming. I wanted to talk more about our value stream map and how we can make our processes more efficient.
 
-![The team's progress for each of the Self-Assessment categories](../media/2-assessment-results.png)
+Mara's value stream map is still on the whiteboard from their previous meeting.
 
-**Mara**: The graph shows that we're doing better with our culture and our outcomes than with our process, measurements, or technology. Just like everybody, we can improve. We can decide which areas to tackle first.
+![A whiteboard showing the value stream map](../media/2-vsm-whiteboard1.png)
+
+**Mara**: Our value stream map shows where we lose efficiency delivering value to our customers. Just like everybody, we can improve. We can decide which areas to tackle first.
 
 **Andy**: This shows us where we have problems but not what to do about them.
 
-**Mara**: Right, it's an assessment that helps point us in the right direction. As for what to do about our problems, I think that DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
+**Mara**: Right, it's an exercise that helps point us in the right direction. As for what to do about our problems, I think that DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
 
-**Tim**: I know someone who just got a job as a DevOps engineer. I think it's more for QA. That sounds like you, Amita.
+**Tim**: I know someone who just got a job as a DevOps engineer. I think it's more for developers. That sounds like you, Andy.
 
 **Mara**: DevOps isn't a job title.
 
@@ -50,8 +52,6 @@ Our goal is to give our customers games they'll love. We do that by working toge
 **Mara**: I know what you mean about management. I put together this handout about the benefits.
 
 ## The DevOps handout
-
-<!-- TODO: Replace reference to DORA with a more appropriate research report. -->
 
 Here's the handout that Mara prepared.
 

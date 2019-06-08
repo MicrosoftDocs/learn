@@ -8,7 +8,7 @@ Let's set up a project on SonarCloud. You'll need to save some information, such
 1. From the upper corner, click **+** and then **Analyze new project**.
 1. Go to the **Setup manually** tab.
     * Your organization is filled in automatically.
-    * For **Project key**, create a unique name. For example, **space-game-web-0430**.
+    * For **Project key**, create a unique name. For example, **space-game-web-333**.
     * The **Display name** is filled in with the same text as the **Project key**.
     * Keep **Public** selected.
     * Click **Set Up**
@@ -43,7 +43,7 @@ Here you'll get a copy of the _Space Game_ web project and work from a branch.
     As you did in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 1. As an optional step, open **azure-pipelines.yml** from Visual Studio code and familiarize yourself with the initial configuration.
 
-    The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests?azure-portal=true) module. It builds the application's Release configuration, runs unit tests, and produces a code coverage report.
+    The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module. It builds the application's Release configuration, runs unit tests, and produces a code coverage report.
 
 ## Scan locally
 
@@ -83,7 +83,7 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You'll the
       /o:"$ORGANIZATION"
     ```
 
-    TODO: PowerShell equivalent.
+    **TODO: PowerShell equivalent.**
 
     This command uses the information you stored in variables and other information to help the scanner know where to store the results.
 
@@ -94,7 +94,7 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You'll the
       * `/d:sonar.exclusions` specifies code paths to exclude from the scan
       * `/o:` specifies your SonarCloud organization
 
-    In [Run quality tests in your build pipeline](/learn/modules/run-quality-tests?azure-portal=true), you analyzed the amount of code covered by unit tests. SonarCloud can also display this coverage. The `/d:sonar.cs.opencover.reportsPaths` specifies where to find that code coverage information.
+    In [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you analyzed the amount of code covered by unit tests. SonarCloud can also display this coverage. The `/d:sonar.cs.opencover.reportsPaths` specifies where to find that code coverage information.
 
     When running this kind of analysis, it's common to scan only the source code your team has written so that you can more easily focus on just your code. This example uses wildcards to exclude all source code under the **wwwroot/lib** directory. This directory includes open source components such as Bootstrap and JQuery.
 
@@ -152,7 +152,7 @@ Here you'll see the results from the SonarCloud portal.
 
     In practice, your team would assess each bug and prioritize whether to fix it. This bug is categorized as **Minor**, which  you can use to rank its importance among other reported issues.
 
-1. As an optional step, return to the ***Overview** tab and explore the results from other categories.
+1. As an optional step, return to the **Overview** tab and explore the results from other categories.
 
     For example, from the **Security** section, you can examine reported vulnerabilities and security hotspots.
 
