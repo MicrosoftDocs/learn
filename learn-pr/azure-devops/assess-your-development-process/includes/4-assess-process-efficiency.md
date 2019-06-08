@@ -10,7 +10,7 @@ Let's take a look at her map.
 
 Mara gathers the team in the conference room to present her value stream map.
 
-![A whiteboard showing the value stream map](../media/4-vsm-whiteboard1.png)
+![A whiteboard showing the value stream map](../media/4-vsm-whiteboard2.png)
 
 **Mara:** A value stream map helps to measure where a process has value to the customer and where it is spending time with no value to the customer. Our map begins on the upper left with the functional specification for the software. We will follow just one feature through the process to see how it moves through the process currently.
 
@@ -18,25 +18,25 @@ Mara gathers the team in the conference room to present her value stream map.
 
 ### Development processes
 
-Creating a new feature currently means creating a label in source control and starting from there. Currently we have one person that can do this, Andy. We request a label using an email and Andy waits until all code is checked in and stable to create the label. Once it is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
+Creating a new feature currently starts with creating a label in source control ![Callout 1](../../shared/media/callout-01.png). We have one person that can do this, and that's Andy. We request a label using an email and Andy waits until all code is checked in and stable to create the label. Once it is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
 
-Coding a feature takes about four days for one person if we can get access to all the files we need. We need to be on the corporate network and not be blocked by source control. This time has value to the customer. They want this feature.
+Coding a feature takes about four days for one person if we can get access to all the files we need ![Callout 2](../../shared/media/callout-02.png). We need to be on the corporate network and not be blocked by source control. This time has no value to the customer. They want this feature.
 
 ### Test processes
 
-Once we decide that we have a stable build we update a spreadsheet to tell Amita that there is a build ready for testing and where to find it. It takes her two days to get notified.
+Once we decide that we have a stable build we update a spreadsheet to tell Amita that there is a build ready for testing and where to find it ![Callout 3](../../shared/media/callout-03.png). It takes her two days to get notified.
 
-She manually tests the build. This process gets longer as the code grows. For now, let's say three days. She then emails Andy with bug reports. Testing is not a value-add, but it is necessary.
+Amita manually tests the build ![Callout 4](../../shared/media/callout-04.png). This process gets longer as the code grows. For now, let's say three days. She then emails Andy with bug reports. Testing does not add value, but it is necessary.
 
 Andy has to take time to triage the bugs and assign work.
 
 ### Operations processes
 
-When Amita approves of a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for beta testers. Often, the test servers and pre-production servers are out of sync with the latest patches and installs that are needed to run the web site. It takes Tim about two days to deploy to pro-production.
+When Amita approves of a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for beta testers. Often, the test servers and pre-production servers are out of sync with the latest patches and installs that are needed to run the web site. It takes Tim about two days to deploy to pre-production ![Callout 5](../../shared/media/callout-05.png).
 
-Once a build is deemed ready for production, leadership needs to approve the release before it can be deployed. This happens in a meeting. It takes four days to get leadership to review and meet.
+Once a build is ready for production, leadership needs to approve the release before it can be deployed. This happens in a meeting. It takes four days to get leadership to review and meet.
 
-Eventually, Tim will deploy our feature and it will make it to the customer here on the upper right. Once again, the production server will have drifted out od sync with pre-production, so this will take Tim one day.
+Eventually, Tim will deploy our feature and it will make it to the customer here on the upper right. Once again, the production server will have drifted out od sync with pre-production, so this will take Tim one day ![Callout 6](../../shared/media/callout-06.png).
 
 ### Calculate the customer value metrics
 
