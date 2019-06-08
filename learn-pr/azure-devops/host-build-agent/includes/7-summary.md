@@ -18,6 +18,38 @@ The Tailspin web team finished their experiment with private build agents. Let's
 
 **Tim**: Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know little bit more about how VMs work on Azure!
 
+## How is the team measuring up?
+
+In the _Assess your existing software development process_ module, Mara performed a [value stream mapping exercise](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) to help the team analyze their current release cycle process.
+
+Recall that the *activity ratio*, or efficiency, is process time divided by total lead time.
+
+$${Activity\ ratio = }{\dfrac{Process\ time}{Total\ lead\ time}}{*\ 100\%}$$
+
+The Tailspin web team initially determined they were 23% efficient against this metric.
+
+Although the team has not yet transitioned to full delivery cycle using DevOps processes, they've already reduced some inefficiencies.
+
+So far, the team has reduced:
+
+* The time it takes to set up source control from three days to zero days.
+
+    They did so by moving from centralized source control to Git, a form of distributed source control. With distributed source control, there's no need to wait for files to be unlocked.
+* The time it takes to hand off code to Amita, the tester, from two days to zero days.
+
+    They did this by moving their build process to Azure Pipelines. Azure Pipelines automatically notifies Amita when a build is available, so the developers no longer need to update Amita's spreadsheet.
+* The time it takes Amita to test new features from three days to one day.
+
+    They did this by unit testing their code. By running unit tests run each time a change moves through the build pipeline, fewer bugs and regressions reach Amita, which enables her to complete each manual test pass much faster.
+
+These changes reduce the total lead time from 22 days to 15 days. Substitute these numbers into the equation and we get:
+
+$${Activity\ ratio = }{\dfrac{5\ days}{15\ days}}{*\ 100\%}{= 33\%}$$
+
+Although there's always room for improvement, this is a very positive change for the team. Not only do customers receive value more quickly, the Tailspin team now spends less time waiting and more time doing what they love &mdash; delivering features they know their customers will love.
+
+Even management is beginning to take notice. The team plans to share their secret with management after they've had some more time to prove that the process works.
+
 ## Learning path summary
 
 Congratulations. You've completed the final module in the _Build applications with Azure DevOps_ learning path. In this learning path, you accomplished a lot, including:
