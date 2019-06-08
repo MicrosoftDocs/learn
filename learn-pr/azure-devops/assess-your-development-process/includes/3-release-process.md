@@ -31,7 +31,7 @@ When she looks at her pile of notes, Mara knows she needs to organize all this i
 :::column-end:::
 :::row-end:::
 
-"Have any of you ever taken the Microsoft DevOps Self-Assessment?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
+"Have any of you ever performed a _value stream mapping_ exercise?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
 
 Mara says, "I get it. Leave it to me."
 

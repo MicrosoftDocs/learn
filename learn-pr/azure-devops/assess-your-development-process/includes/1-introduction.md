@@ -4,6 +4,6 @@ Do you want to improve your release process? Maybe you want to increase the freq
 
 In this module, you will:
 
-- Take the DevOps Self-Assessment
-- Understand how the assessment gives you a good starting place to discuss your current DevOps practices
-- Learn to read the DevOps Self-Assessment summary graph
+- Use a value stream map (VSM) to get a sense of where the process needs improvement
+- Understand how the VSM gives you a good starting place to discuss your current DevOps practices
+- Learn to read the current VSM and plan an ideal VSM
