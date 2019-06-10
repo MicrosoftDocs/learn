@@ -1,47 +1,92 @@
-Let's use the Azure CLI to create a resource group, and then to create an Azure Sql Server and database instance into this resource group.
+Although the default Azure SQL Database configuration includes automated backups, most organizations will modify the default setup to tailor it to thier needs.
+
+Now that you have planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
+
+Here, you will create a database in Azure, with content and then configure backups.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-1. Create a resource group for the new Azure SQL instance
+## Create a server and database
 
-``` cli
-    az group create --location westeurope --name rg-sql-erp
-```
+Let's use the Azure CLI to create an Azure SQL Server and database instance in that resource group:
 
-1. Create an Azure SQL server
+1. In the Cloud Shell, to set up some variables for the SQL Server creation, run these commands:
 
-``` cli
-    az sql server create --resource-group rg-sql-erp --name sql-erp --location westeurope --admin-user dbadmin123 --admin-password StrongPassword123
-```
+    ```bash
+    SERVER_NAME=ERPServer-$RANDOM
+    ADMIN_PASSWORD=P4ssw0rd
+    ```
 
-1. Create an Azure SQL server and database instance using the CLI
+1. To create an Azure SQL server, execute this command:
 
-``` cli
-    az sql db create --resource-group rg-sql-erp --name sql-erp-db --server sql-erp --edition Standard
-```
+    ```bash
+    az sql server create --resource-group <rgn>[sandbox resource group name]</rgn> --name $SERVER_NAME \
+      --location westeurope --admin-user dbadmin --admin-password $ADMIN_PASSWORD
+    ```
 
-1. Use the portal to view the newly create Azure SQL server and database. View the default policy for PITR (Point In Time Restore) configuration that was setup automatically for this database.
+1. To create a database, run this command:
 
-1. In the Azure portal, select the newly created SQL server database and under settings click **Manage Backups**
-1. Under the **Configure policies** click the **Configure retention** tab and making sure your SQL server database is selected
-1. Click the **Point In Time Restore Configuration** drop down and select **28**
-1. Click **Apply** and the policy is updated within seconds.
+    ```bash
+    az sql db create --resource-group <rgn>[sandbox resource group name]</rgn> --name sql-erp-db \
+      --server $SERVER_NAME --edition Standard
+    ```
 
-![Screenshot of the Azure portal showing the database restore options for PITR](../media/3-configure-backup-point-in-time-backup.PNG)
+## Configure the database retention policy
 
-    Lets add a table and a few sample records to the database. Make sure that the database (with the new table and data) is backed up.
+In the portal, you can examine the default retention policy and adapt it to your needs:
 
-``` SQL
--- Create Person table
-CREATE TABLE Person
-(
-    PersonId INT IDENTITY PRIMARY KEY,
-    FirstName NVARCHAR(50) NOT NULL,
-    LastName NVARCHAR(50) NOT NULL,
-    DateOfBirth DATE NOT NULL
-)
--- Add the following record
-INSERT INTO PERSON (FirstName, LastName, DateOfBirth)
-VALUES ('Lucas', 'Ball', '1987-11-03');
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **ERPServer** database server.
+1. Under **Settings**, click **Manage Backups**.
+1. On the **Configure policies** tab, click the **sql-erp-db** database, and then click **Configure retention**.
+1. In the **Point In Time Restore Configuration** drop-down list, select **28**.
 
-  ```
+    ![Screenshot of the Azure portal showing the database restore options for PITR](../media/3-configure-backup-pitr-retention.PNG)
+
+1. Click **Apply**, and then click **Yes**.
+
+## Permit access for your IP address
+
+By default, Azure SQL Database prevents access to the server to execute queries. Enable access for your IP address with these steps:
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **ERPServer** database server.
+1. Under **Security**, click **Firewalls and virtual networks**.
+1. At the top of the page, click **Add client IP**.
+1. Under **Allow access to Azure services**, click **ON** and then click **Save**
+
+    ![Add a client IP address rule](../media/3-add-client-ip.png)
+
+## Add data to the database
+
+Now let's add a table and a sample record to the database: 
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **sql-erp-db** database.
+1. Click **Query editor**, and then sign in with the credentials **dbadmin** and **P4ssw0rd**.
+1. To create a table, in the **Query 1** window, type this SQL command, and then click **Run**:
+
+    ```SQL
+    CREATE TABLE Person
+    (
+        PersonId INT IDENTITY PRIMARY KEY,
+        FirstName NVARCHAR(50) NOT NULL,
+        LastName NVARCHAR(50) NOT NULL,
+        DateOfBirth DATE NOT NULL
+    )
+    ```
+
+1. To add a record, click **+ New Query** and then, in the **Query 2** window, type this SQL command, and then click **Run**:
+
+    ```SQL
+    INSERT INTO PERSON (FirstName, LastName, DateOfBirth)
+    VALUES ('Lucas', 'Ball', '1987-11-03');
+    ```
+
+1. To query the database, click **+ New Query** and then, in the **Query 3** window, type this SQL command, and then click **Run**:
+
+    ```SQL
+    SELECT * FROM dbo.Person
+    ```
+
+    The **Results** window displays the record for Lucas Ball.
+
+
+  <!-- TODO: Can we confirm that the database is backed up? -->
