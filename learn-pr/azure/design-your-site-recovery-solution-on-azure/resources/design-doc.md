@@ -73,51 +73,48 @@ Identify the subtasks of *Design you site recovery solution on Azure*
 
     **Knowledge check**
 
-    - List 3 key benefits of using Azure Site Recovery as part of your BCDR solution.
+    - List three key benefits of using Azure Site Recovery as part of your BCDR solution.
         - Azure VM replication
         - On-premises replication to Azure
         - Consistency with failover
-    - List 3 key considerations relating to VM networking for replicated VMs
+    - List three key considerations relating to VM networking for replicated VMs
         - IP reservations
         - Load balanced traffic
         - IP subnet/gateway consistency
 
-1. **Securing your data with Azure Backup**
-
-    - Overiew of Azure Backup
-        - Automatically back on-premsises machines and cloud VMs
-        - Different approaches that can be taken (MARS or Backup Servers)
-    - 
-
 1. **Building resilience into your application suite with Azure Traffic Manager**
 
     - Adding geo-redundancy to cloud and on-premises workloads
-    - Failing over and falling back, from your on-premsises archticture to the cloud and back
+    - Failing over and falling back, from your on-premises architecture to the cloud and back
     - High-availability clustering, pros and cons of active/active or active/passes architectures
-    - Implimenting a monitoring and notification strategy
+    - Implementing a monitoring and notification strategy
 
-1.  **Knowledge check**
+    **Knowledge check**
     
-    Using a scenario that describes the on-premises and cloud server architecture for the retailers online store. Your company has recently had a lengthy period of downtime due to a power outage.
+    Using a scenario that describes the on-premises and cloud server architecture for the retailers online store. Your company has recently had a lengthy period of downtime due to a power outage. This will be a high-level diagram to enable the questions below to target it.
 
-    - How could you enable relatime switching of traffic in case of future power issues?
-    - Your company is lauching in a new region, how can you enure there aren't performance issues for the new region?
+    - How could you enable real-time switching of traffic if there's future power issues?
+    - Your company is launching in a new region, how can you ensure there aren't performance issues for the new region?
+    - Identify your resources that could be restored from backups, and why
 
 1. **Building resilience into your data suite with Azure**
 
     - Cosmos DB - with replication in multiple regions
-    - Failover groups
-    - Always on Availability groups
+    - SQL Automated backups
+    - SQL Server Auto-failover groups
+    - SQL Server Always on Availability groups
 
     **Knowledge check**
 
-    - You can't loose any data in your online transactional SQL database, how should you architect it's resilience?
+    - You can't lose any data in your online transactional SQL database, how should you architect its resilience?
         - Geo-replication (https://docs.microsoft.com/en-us/azure/sql-database/sql-database-designing-cloud-solutions-for-disaster-recovery#scenario-2-azure-regions-for-business-continuity-with-maximum-data-preservation)
-    - What are the benefits of moving your data workloads to Cosmos DB now that your online store is moving to mulitple regions?
+    - What are the benefits of moving your data workloads to Cosmos DB now that your online store is moving to multiple regions?
 
 1. **Summary**
 
-    You firstly discovered the features and benefits of Azure Site Recovery and where it can play a part in your site recovery plan. Then you explored building better resilience and recovery abilities with Azure Traffic Manager and Azure data services. You then learnt how you would setup Replication/Recovery of a VM which is already in Azure, compared with that of a VM which was hosted on-premises using VMware.
+    You firstly discovered the features and benefits of Azure Site Recovery and where it can play a part in your site recovery plan. Then you explored building better resilience and recovery abilities with Azure Traffic Manager and Azure data services.
+
+    By the end of the module you've built a robust site recovery plan to enable your company to recover from issues if they occur in the future.
 
 ## Notes
 
@@ -128,3 +125,15 @@ Supporting documentation:
 https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-workload
 
 https://docs.microsoft.com/en-us/azure/architecture/checklist/resiliency-per-service
+
+## Review comments
+
+I merged this, but after looking at it further, I think it still needs work. We're missing the architecture angle on this, and overly focusing on Azure Site Recovery. Units 4 and 5 go through implementation details, which is out of scope for what we want to focus on for this module. The focus of much of this is on VMs, which for modern design patterns should be a small part of what we're including in an architecture. 
+
+We're missing details on how to handle PaaS services. We're missing details on how to choose an active/active vs active/passive architecture. There's no discussion about fault detection and what services to leverage to provide failover. There's little mention of testing. There's also a decision point about having resources readily available, vs deploying them if there's a disaster, and making sure you're deployment scripts/code/etc. has the proper protection.
+
+I want to avoid this being solely focused on ASR. That's a fantastic solution and most definitely takes a large role as a BCDR solution, but we need to discuss how to build coverage for all of our resources if things fail, and how we need to make tradeoffs between cost and failure handling.
+
+## Comments
+
+Azure Backup isn't specifically a unit, mentioned but is listed in the products, should Traffic Manager and SQL Databases be also listed, or should we not be covering these?
