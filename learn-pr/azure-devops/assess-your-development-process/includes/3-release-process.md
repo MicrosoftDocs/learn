@@ -1,6 +1,6 @@
-The first step to setting up a DevOps practice is to assess your current process. Let's begin with the team's current release process and see how DevOps can help.
+The first step to setting up a DevOps practice is to assess your current process. Let's do that with the Tailspin team and see how DevOps can help.
 
-After Irwin the product manager leaves, Amita says, "We need help. I don't know when these fixes are due, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ web site will have to wait until we get this mess solved &mdash; and the game is releasing soon."
+After Irwin the product manager leaves, Amita says, "We need help. I don't know when these fixes are due, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ web site will have to wait until we get this mess solved &mdash; and that game is coming up fast."
 
 Andy looks at Mara. "This is a lot to take in on your first few weeks."
 
@@ -15,7 +15,7 @@ Over coffee, Mara listens and tries to take notes. There's a lot of information 
 * They use a waterfall approach. Management sets the priorities. Developers write code and hand the build off to QA. QA tests and then hands off to ops for deployment.
 * Waterfall could be acceptable for a small team but here the goals aren't always clear and they seem to change frequently.
 * Testing is delayed until late in the process. That means its harder and more expensive to fix bugs and make changes.
-* There's no clear definition of what "done" means. Each team member has their own definition. There's no overall business goal that everyone wants.
+* There's no clear definition of what "done" means. Each team member has their own idea. There's no overall business goal that everyone wants.
 * Some code is in a centralized version-control system. Many tools and scripts exist only on network file shares.
 * There are many manual processes.
 * Communication is haphazard and depends on email, Word docs, and spreadsheets.
@@ -31,7 +31,7 @@ When she looks at her pile of notes, Mara knows she needs to organize all this i
 :::column-end:::
 :::row-end:::
 
-"Have any of you ever performed a _value stream mapping_ exercise?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
+She asks, "Have any of you ever performed a _value stream mapping_ exercise?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
 
 Mara says, "I get it. Leave it to me."
 

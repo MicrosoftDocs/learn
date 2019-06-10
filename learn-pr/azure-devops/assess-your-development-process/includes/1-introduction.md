@@ -4,6 +4,7 @@ Do you want to improve your release process? Maybe you want to increase the freq
 
 In this module, you will:
 
-- Use a value stream map (VSM) to get a sense of where the process needs improvement
+- Learn about value stream maps (VSMs)
+- Use a VSM to get a sense of where the release process needs improvement
 - Understand how the VSM gives you a good starting place to discuss your current DevOps practices
-- Learn to read the current VSM and plan an ideal VSM
+

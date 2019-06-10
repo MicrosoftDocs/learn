@@ -1,6 +1,6 @@
-As you can see, Mara and her team face a number of challenges. Although releases happen, Mara feels they can happen much more frequently and efficiently. Plus, Mara hates working longer hours when it's not necessary.
+As you can see, Mara and her team face a number of challenges. Although releases happen, Mara feels they can happen much more frequently and efficiently. 
 
-Mara hopes she can convince the team it's at least worth testing out a DevOps approach. Perhaps they can apply at least a few DevOps practices to finish up work on the _Space Game_ web site.
+Mara hopes she can convince the team it's at least worth testing out a DevOps approach. Perhaps they can apply a few DevOps practices to finish up work on the _Space Game_ web site.
 
 ## What is DevOps?
 
