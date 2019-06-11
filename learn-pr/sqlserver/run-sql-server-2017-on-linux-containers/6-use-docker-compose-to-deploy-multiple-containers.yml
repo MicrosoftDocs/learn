@@ -1,20 +1,20 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.run-sql-server-2017-on-linux-containers.6-using-docker-compose-to-deploy-multiple-containers
-title: Using Docker Compose to deploy multiple containers
+uid: learn-sqlserver.run-sql-server-2017-on-linux-containers.6-use-docker-compose-to-deploy-multiple-containers
+title: Use Docker Compose to deploy multiple containers
 metadata:
-  title: Using Docker Compose to deploy multiple containers
-  description: Using Docker Compose to deploy multiple containers
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  title: Use Docker Compose to deploy multiple containers
+  description: In this unit, you will learn how to deploy several containers in Docker by using Docker Compose.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-using-docker-compose-to-deploy-multiple-containers.md)]
+  [!include[](includes/6-use-docker-compose-to-deploy-multiple-containers.md)]
 quiz:
-  title: "Using Docker Compose to deploy multiple containers"
+  title: "Check your knowledge"
   questions:
   - content: "You receive an 'Access denied' message when you run the command 'docker-compose up'. How should you resolve the problem?"
     choices:

@@ -1,32 +1,32 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.introduction-to-sql-server-on-linux.5-knowledge-check
-title: Knowledge check - SQL Server on Linux features
+uid: learn-sqlserver.introduction-to-sql-server-on-linux.3-sql-server-on-linux-features
+title: SQL Server on Linux features
 metadata:
-  title: Knowledge check - SQL Server on Linux features
-  description: Knowledge check - SQL Server on Linux features
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  title: SQL Server on Linux features
+  description: In this unit, you will learn the features of SQL Server, so that you can decide whether it supports a specific workload.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
-durationInMinutes: 2
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-sql-server-on-linux-features.md)]
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "What features does SQL Server on Linux provide to support business continuity?"
     choices:
     - content: "Always On availability groups, Always On failover cluster instances, and Log Shipping."
       isCorrect: true
-      explanation: "These features all support high availability and are key to providing business continuity."   
+      explanation: "These three features all support high availability and are key to providing business continuity."   
     - content: "Always Encrypted, Row-level security, and dynamic data masking."
       isCorrect: false
-      explanation: "These three features are security related."
+      explanation: "These three features are security-related."
     - content: "In-Memory OLTP, Columnstore Index, and the Query Store."
       isCorrect: false
-      explanation: "These three features are performance related."
-
+      explanation: "These three features are performance-related."
   - content: "If data is encrypted using Always Encrypted, when will the data be decrypted?"
     choices:
     - content: "In the database"

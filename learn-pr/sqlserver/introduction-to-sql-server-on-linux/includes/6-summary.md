@@ -1,4 +1,4 @@
-In this module, you learned the benefits of installing SQL Server on Linux, learned the features that make SQL Server a good database choice for administrators with Linux distributions, and learned the benefits of running SQL Server on Linux virtual machines in Azure and in Docker containers.
+In this module, you learned about the benefits of installing SQL Server on Linux, learned the features that make SQL Server a good database choice for administrators with Linux distributions, and learned the benefits of running SQL Server on Linux virtual machines in Azure and in Docker containers.
 
 ## Learn more
 
