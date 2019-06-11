@@ -4,7 +4,7 @@ In this exercise, you will run the DMA compatibility and performance assessments
 
 ## Start the DMA
 
-Start the exercise by logging on and starting the DMA:
+If you logged out of the VM, start this exercise by logging on and starting the DMA:
 
 1. Sign into the VM with your Microsoft account.
 1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the **Administrator** password **`Pa55w.rd`**.

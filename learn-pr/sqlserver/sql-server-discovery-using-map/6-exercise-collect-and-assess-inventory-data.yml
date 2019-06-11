@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 labId: 46781
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-collect-and-assess-inventory-data.md)]

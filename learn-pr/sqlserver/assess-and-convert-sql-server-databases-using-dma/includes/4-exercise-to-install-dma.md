@@ -22,3 +22,4 @@ Continue by using the installer to set up the Data Migration Assistant.
 1. In the **Microsoft Data Migration Assistant Setup** window, click **Install**.
 1. On the **Completed the Microsoft Data Migration Assistant Setup Wizard** page, when the installation has finished, select the **Launch Microsoft Data Migration Assistant** check box, and then click **Finish**. The **Data Migration Assistant** launches.
 1. If the **A new version is available** dialog box appears, click **Cancel**. Leave the application open.
+1. Leave the VM window open for the next exercise. 
