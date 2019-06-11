@@ -9,7 +9,7 @@ In this unit, you will lay the groundwork for this solution, by creating a basic
 Start by creating an App Service Plan, ready for your web apps.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu in the portal, select **+  Create a resource**.
+1. In the left menu in the portal, select **+Create a resource**.
 1. In the marketplace search field, enter **App Service Plan** and then select the *App Service Plan* item from the dropdown list of search results. 
 1. Select **Create** to open the **New App Service Plan** pane.
 1. In the **New App Service Plan** pane, enter or select the following information:
@@ -32,13 +32,13 @@ Now create a web app. Note that web app names must be unique across Azure, so yo
 1. In the left menu of the portal, select **+ Create a resource**, then in the **New** pane, select **Web**, and then select **Web App**.
 1. In the **Web App** pane, enter or select the following information:
     - App name: **my-webapp-\<_random_number_\>**
-
     - Subscription: **Concierge subscription**
     - Resource group: Select **Use existing**, and choose <rgn>[sandbox resource group name]</rgn>
-    - OS: Select **Windows**
     - Publish: Keep the default selection
-    - App Service plan/Location: Ensure that **myAppServicePlan(\<_your location_\>)** is selected
-    - Application Insights: Leave with default value
+    - Runtime stack: Select Node 8.9
+    - OS: Select **Windows**
+    - App Service plan/Location: Ensure that **myAppServicePlan** previously created gets selected
+    - Sku and size: Leave with default value
 1. Select **Create**.
 1. Wait until the web App has deployed before continuing with the exercise. As you saw earlier in this exercise, you can verify status of the deployment through the notification bell icon on the top menu.
 
@@ -51,12 +51,12 @@ Before you do anything else, do a quick check that your web app has been success
 1. Open a new browser tab, paste the URL that was copied to the clipboard, and press Enter.
 1. Verify that you get the default page, and then close the browser tab.
 
-
 ### Set Node.js version for the Web App
-The app we'll deploy to the WQeb App is a Node.js app. To make sure it runs, we need to set the Node.js version for the Web App using a new App Setting as follows.
+
+The app we'll deploy to the Web App is a Node.js app. To make sure it runs, we need to set the Node.js version for the Web App using a new App Setting as follows.
 
 1. In the Web App pane in the portal, select **Configuration**.
-1. Under **Applciation Settings**, select **+new application setting** to open.
+1. Under **Application Settings**, select **+new application setting** to open.
 1. In the new setting form, enter the following name and value for our new setting:
     - *Name* **WEBSITE_NODE_DEFAULT_VERSION**
     - *Value* **8.9.4**

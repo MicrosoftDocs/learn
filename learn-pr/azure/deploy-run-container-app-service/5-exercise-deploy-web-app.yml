@@ -11,7 +11,5 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/5-exercise-deploy-web-app.md)]

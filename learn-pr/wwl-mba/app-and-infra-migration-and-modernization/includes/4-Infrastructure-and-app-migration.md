@@ -42,9 +42,7 @@ Microsoft is running SAP S/4HANA on Azure for their internal operations. Microso
 
 To succeed in today’s disruptive business environment, you can’t afford to wait to start planning the move of your SAP systems to the cloud. By marrying your SAP data to other data on Azure now, you’ll be able to use end-to-end, real-time insights to quickly enter new markets, fend off disruptive competition, improve your margins, and grow your business right away.
 
-Let’s hear from some of our customers about this partnership.
-
-The strategic partnership announced between Microsoft and SAP is an extremely important development for the Coca-Cola System. The value of aligned engineering, sales, and delivery between these two strategic partners will allow our system to accelerate our digital agenda.  
+Let’s hear from some of our customers about this partnership.  
 
 ---------------
 *The strategic partnership announced between Microsoft and SAP is an extremely important development for the Coca-Cola System. The value of aligned engineering, sales, and delivery between these two strategic partners will allow our system to accelerate our digital agenda.*
