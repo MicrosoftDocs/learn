@@ -8,7 +8,6 @@ The Microsoft Assessment and Planning Toolkit collects inventory information in 
 
 ## Further reading
 
-- (Download the Microsoft Assessment and Planning Toolkit)[https://www.microsoft.com/en-us/download/details.aspx?id=7826]
-- (Microsoft Assessment and Planning (MAP) Toolkit Team Blog)[https://blogs.technet.microsoft.com/mapblog/]
-- (Microsoft Assessment and Planning Toolkit
- Technet Article)[https://social.technet.microsoft.com/wiki/contents/articles/1640.microsoft-assessment-and-planning-toolkit.aspx]
+- [Download the Microsoft Assessment and Planning Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=7826)
+- [Microsoft Assessment and Planning (MAP) Toolkit Team Blog](https://blogs.technet.microsoft.com/mapblog/)
+- [Microsoft Assessment and Planning Toolkit Technet Article](https://social.technet.microsoft.com/wiki/contents/articles/1640.microsoft-assessment-and-planning-toolkit.aspx)

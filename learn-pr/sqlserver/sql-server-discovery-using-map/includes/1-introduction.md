@@ -1,10 +1,12 @@
-Suppose you have just been hired as database administrator for an international company that has SQL Server instances located across the globe. The outgoing DBA has provided you with a list of server names and logins in a spreadsheet. You have no other detailed or up-to-date information about these servers and you want to take an inventory of the version, edition, services packs, installed components, and underlying hardware for each instance.
+The **Microsoft Assessment and Planning (MAP)** toolkit is an agentless inventory, assessment, and reporting tool that will analyze your IT environment, and return a report with information that can be exported to Excel.
 
-You begin by connecting to each server, but find that this manual process is taking too long and that you are repeating the same tasks each time. You also realize that you'll need to repeat this exercise on a regular basis, to ensure you have current data in line with hardware upgrades undertaken by the operations teams, as well as changes you apply to SQL Server.
+Suppose you have been hired as database administrator for an international company that has SQL Server instances located across the globe. The outgoing DBA has provided you with a list of server names and logins in a spreadsheet. You don't have detailed or up-to-date information about these servers. You know you should take an inventory of the version, edition, services packs, installed components, and underlying hardware for each SQL Server instance.
 
-You can solve this problem by installing the **Microsoft Assessment and Planning (MAP)** toolkit on your local machine and connecting to each instance to audit. The toolkit will analyze each instance and return a report that can be exported to Excel. You want to automate this process, because some of the SQL Servers you have already discovered need to be upgraded, and the process needs repeating to maintain a current inventory.
+You begin by connecting to each server, but find this manual process is taking too long and you're repeating the same tasks each time. You also realize you'll need to repeat this exercise on a regular basis. Repeating inventorying will ensure you have up-to-date information in line with the hardware upgrades undertaken by the operations teams, and changes you apply to SQL Server.
 
-Here, you will see how to leverage the Microsoft Assessment and Planning toolkit to audit your database landscape, and repeat this process time and again in future.
+You want to automate this process, because some of the SQL Servers you have already discovered need to be upgraded, and the process needs repeating to maintain a current inventory.
+
+In this module, you'll see how to use the Microsoft Assessment and Planning toolkit to audit your database landscape, and repeat this process in future.
 
 ## Learning Objectives
 

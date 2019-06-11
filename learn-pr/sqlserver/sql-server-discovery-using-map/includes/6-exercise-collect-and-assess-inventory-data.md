@@ -33,6 +33,8 @@ Begin your analysis by using MAP to collect inventory data. Follow these steps:
 1. The collection process may take 5-10 minutes to complete; when collection has finished, the **Assessment** process starts, and shows as **Running**.
 1. When the **Assessment** shows as **Completed**, click **Close**.
 
+<!-- TODO this is a painful thing to wait for, is there a chance we could have a video here? https://channel9.msdn.com/Shows/Edge/Edge-Show-99-Assess-VM-Migration-to-Azure-with-MAP?ocid=player -->
+
 ## Assess SQL Server versions and editions
 
 Now that data has been collected, you can use MAP to assess this inventory. To find out about the versions and editions of SQL Server in your organization, follow these steps:
@@ -43,6 +45,9 @@ Now that data has been collected, you can use MAP to assess this inventory. To f
     > [!NOTE]
     > The server versions are represented in the pie chart in chronological order. This shows that less than 25% of the total 230 servers are SQL Server 2012 or above. If the organization you work for wants SQL Server 2012 as a minimum version for its servers, a lot of work is required to upgrade the versions below 2012.
 
+    > [!IMPORTANT]
+    > If the pie charts aren't showing scroll the window to refresh the diagrams.
+
 1. Look at the **Developer and Free Editions** section at the bottom of the tab (you may need to scroll down). There are 107 instances that are not production servers, so when planning your upgrades, you can optionally return to the Express and Desktop editions at a later date, and potentially ignore the Evaluation editions. Conversely you may want to upgrade certain development databases prior to upgrading the production version, in order to test the upgrade.
 
 ## Assess SQL Server components
@@ -52,8 +57,8 @@ Next, examine which SQL Server services are present in your organization:
 1. Look at the **SQL Server Components** chart. Instantly you can see that **Database Engine Services** is the dominant service, as you would expect to find in most setups. Notice that there is only one SQL Server R Services component in use. If this was your organization, this would suggest that data science has not yet been widely adopted across the business.
 1. In the **Options** box in the top right-hand corner of the tab, click **Generate SQL Server Assessment Report**. The **Report Generation Status** dialog opens. When the report has been created, click **Close**.
 1. Again, in the **Options** box in the top right-hand corner of the tab, click **Generate SQL Server Database Details Report**. The **Report Generation Status** dialog opens. When the report has been created, click **Close**.
-1. A **Windows Explorer** window should open automatically to display the two new files. If not, click **Start**, and type **Windows Explorer**, and navigate to **C:\Users\Administrator\Documents\MAP\MapTraining**.
-1. Double-click on **SqlServerAssessment-MM-DD-YYYY-HHh-MMm-SSs.xls**; the file will be date and time stamped from when you generated it; leave the Windows Explorer window open.
+1. A **File Explorer** window should open automatically to display the two new files. If not, click **Start**, and type **File Explorer**, and navigate to **C:\Users\Administrator\Documents\MAP\MapTrainingDatabase**.
+1. Double-click on **SqlServerAssessment-MM-DD-YYYY-HHh-MMm-SSs.xls**; the file will be date and time stamped from when you generated it; leave the File Explorer window open.
 1. When the file opens in Excel, take a look at the list of components in the **Summary** tab. Again, you will see the single instance of SQL Server R Services listed.
 
 ## Drill into the Excel file

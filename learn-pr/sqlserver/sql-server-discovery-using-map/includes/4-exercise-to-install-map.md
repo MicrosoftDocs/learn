@@ -22,10 +22,6 @@ Start by using the installer to set up the Microsoft Assessment and Planning Too
 
 Now that MAP is installed, you can use it to analyze a database. Follow these steps:
 
-<!-- TODO: providerId 1 - what is that? **https://labondemand.com/AuthenticatedLaunch/46781?providerId=1**. -->
-1. Click **Commands**, click **CTRL+ALT+DEL**, and login with the **Administrator** password **`Pa55w.rd`**.
-1. If a **Networks** dialog box appears, click **Yes**.
-1. Close the Server Manager window.
 1. On the **Start** menu, click **Microsoft Assessment and Planning Toolkit**.
 1. The toolkit opens, if the **Microsoft Assessment and Planning Toolkit** dialog box does not automatically open, on the **File** menu, click **Create/Select Database**.
 1. In the **Microsoft Assessment and Planning Toolkit** dialog box, click **Manage**.
