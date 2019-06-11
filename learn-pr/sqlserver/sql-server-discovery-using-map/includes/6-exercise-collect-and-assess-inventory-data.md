@@ -6,8 +6,7 @@ In this exercise, you will add a new SQL Server to the database of servers that 
 
 Start by logging into the server:
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46874?providerId=4.
-1. Sign with a Microsoft account, or create a new account.
+1. Sign into the VM with a Microsoft account, or create a new account.
 1. Click **Commands**, and then click **CTRL+ALT+DEL**, and login with the Administrator password: **Pa55w.rd**.
 
 ## Collect inventory data

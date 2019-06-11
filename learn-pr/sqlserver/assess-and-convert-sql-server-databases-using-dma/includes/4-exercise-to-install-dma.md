@@ -6,9 +6,8 @@ In this exercise, you will install the Data Migration Assistant.
 
 Start by logging into the database server:
 
-<!--TODO: Verify how LOD links are supposed to launch.-->
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46511?providerId=4.
-1. Sign with a Microsoft account, or create a new account.
+<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/46511?providerId=4 -->
+1. Sign into the VM with a Microsoft account, or create a new account.
 1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the **Administrator** password **`Pa55w.rd`**.
 1. Close the Server Manager window.
 
@@ -23,7 +22,3 @@ Continue by using the installer to set up the Data Migration Assistant.
 1. In the **Microsoft Data Migration Assistant Setup** window, click **Install**.
 1. On the **Completed the Microsoft Data Migration Assistant Setup Wizard** page, when the installation has finished, select the **Launch Microsoft Data Migration Assistant** check box, and then click **Finish**. The **Data Migration Assistant** launches.
 1. If the **A new version is available** dialog box appears, click **Cancel**. Leave the application open.
-
-## Summary
-
-Here, you setup the Microsoft Data Migration Assistant. You can connect to the databases across your landscape to run compatibility assessments, and upgrade databases.

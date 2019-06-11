@@ -6,8 +6,8 @@ In this exercise, you will install the Microsoft Assessment and Planning Toolkit
 
 Start by using the installer to set up the Microsoft Assessment and Planning Toolkit.
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46781?providerId=4.
-1. Sign with a Microsoft account, or create a new account.
+<!-- replaced in the YAML https://labondemand.com/AuthenticatedLaunch/46781?providerId=4. -->
+1. Sign into the VM with a Microsoft account, or create a new account.
 1. Click **Commands**, and then click **CTRL+ALT+DEL**, and login with the Administrator password: **Pa55w.rd**.
 1. Close the Server Manager window.
 1. Double-click on the **MAPSetup.exe** shortcut on your desktop.
@@ -22,8 +22,7 @@ Start by using the installer to set up the Microsoft Assessment and Planning Too
 
 Now that MAP is installed, you can use it to analyze a database. Follow these steps:
 
-1. Open a new web browser tab and navigate to **https://labondemand.com/AuthenticatedLaunch/46781?providerId=1**.
-1. Sign with a Microsoft account, or create a new account.
+<!-- TODO: providerId 1 - what is that? **https://labondemand.com/AuthenticatedLaunch/46781?providerId=1**. -->
 1. Click **Commands**, click **CTRL+ALT+DEL**, and login with the **Administrator** password **`Pa55w.rd`**.
 1. If a **Networks** dialog box appears, click **Yes**.
 1. Close the Server Manager window.
