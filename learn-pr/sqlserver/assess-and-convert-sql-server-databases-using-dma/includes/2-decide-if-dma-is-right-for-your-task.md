@@ -1,6 +1,6 @@
 Suppose you are a database administrator, and you have compiled a list of the various SQL Server databases in your organization. You have then identified those databases that require upgrading to SQL Server 2017. Currently, all databases are hosted on-premise, but the CTO has asked you to move a selection of databases to the cloud in preparation for some up-coming infrastructure changes. Furthermore, she would like a report detailing the changes that will be required, in order to allocate the resource needed to perform the upgrades.
 
-Under time pressure to deliver these results, you realize that it will be impossible to perform the necessary checks and create a report, in time for the CTO’s deadline. You have searched for a suitable solution to this problem and have found the **Microsoft Data Migration Assistant (DMA)** tool. You now need to decide if this is the most appropriate tool for your task.
+Under time pressure to deliver these results, you realize that it will be impossible to perform the necessary checks and create a report, in time for the CTO's deadline. You have searched for a suitable solution to this problem and have found the **Microsoft Data Migration Assistant (DMA)** tool. You now need to decide if this is the most appropriate tool for your task.
 
 ## Using backup and restore to upgrade/migrate SQL Server
 

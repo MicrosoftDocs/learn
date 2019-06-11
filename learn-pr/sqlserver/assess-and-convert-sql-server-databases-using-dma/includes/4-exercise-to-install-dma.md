@@ -6,9 +6,8 @@ In this exercise, you will install the Data Migration Assistant.
 
 Start by logging into the database server:
 
-<!--TODO: Verify how LOD links are supposed to launch.-->
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46511?providerId=4.
-1. Sign with a Microsoft account, or create a new account.
+<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/46511?providerId=4 -->
+1. Sign into the VM with a Microsoft account, or create a new account.
 1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the **Administrator** password **`Pa55w.rd`**.
 1. Close the Server Manager window.
 

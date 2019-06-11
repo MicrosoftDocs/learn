@@ -6,8 +6,7 @@ In this exercise, you will upgrade a database from SQL Server 2008 R2, to SQL Se
 
 Start by logging on and accessing the DMA:
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46778?providerId=4.
-1. Sign with your Microsoft account.
+1. Sign into the VM with your Microsoft account.
 1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the **Administrator** password **`Pa55w.rd`**.
 1. Close the Server Manager window.
 1. On the **Desktop**, double-click **Microsoft Data Migration Assistant**.
