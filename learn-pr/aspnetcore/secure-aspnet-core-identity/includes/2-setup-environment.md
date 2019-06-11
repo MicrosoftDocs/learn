@@ -35,15 +35,26 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 ## Review starter code
 
-The app, *ContosoPets.Ui*, is a user interface to product data stored and managed by the API.
+The app, *ContosoPets.Ui*, is a user interface for product data stored and managed by the API.
 
 <!-- TODO: Diagram depicting starter app architecture and discussion -->
 
+Your stakeholders have defined the following business requirements:
+
+<!-- * General Data Protection Regulation (GDPR) requirements should be met with regards to data retention and protection. -->
+* There are three types of users for the system: anonymous, customers, and administrators. Customers and administrators must register.
+* Support logging in with two-factor authentication.
+* Anonymous users can only view the product catalog.
+* Customers can access their order history.
+* Administrators can modify products, but can't view order history for privacy reasons.
+
 Your team makes the following technical decisions:
 
-* yada
-* yada
-* yada
+* The database tables supporting Identity should reside in an `auth` schema.
+* Each record in the existing `Customers` table should be associated with an account.
+* Administrators will self-enroll using a single-use token created by an existing administrator.
+
+<!-- TODO: add the database diagram showing existing tables -->
 
 ## Review ASP.NET Core Identity architecture
 
@@ -56,10 +67,18 @@ Run the following command:
 ::: zone pivot="pg"
 
 ```bash
-# psql command goes here
+db -c "SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema'"
 ```
 
-<!-- TODO: talk database stuff like with SQL -->
+The script created a `db` alias. The alias corresponds to `psql` with `--host` (server hostname), `--port` (port number), `--username`, and `--dbname` (database name) options. psql obtains the password from an environment variable named `PGPASSWORD`. [psql](http://postgresguide.com/utilities/psql.html) is a cross-platform command-line tool for administering and querying PostgreSQL databases. The preceding command retrieves a list of non-system tables from the PostgreSQL database that was created earlier.
+
+As expected, the list is empty because the database only contains system tables.
+
+```console
+ tablename 
+-----------
+(0 rows)
+```
 
 ::: zone-end
 
@@ -69,7 +88,7 @@ Run the following command:
 db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
 ```
 
-The script created a `db` alias. The alias corresponds to `sqlcmd` with `-U` (username), `-P` (password), `-S` (server hostname), and `-d` (database name) options. [sqlcmd](https://docs.microsoft.com/sql/tools/sqlcmd-utility) is a cross-platform command-line tool for administering and querying SQL Server databases. The preceding command retrieves a list of tables from the Azure SQL Database that was created earlier.
+The script created a `db` alias. The alias corresponds to `sqlcmd` with `-U` (username), `-P` (password), `-S` (server hostname), and `-d` (database name) options. [sqlcmd](https://docs.microsoft.com/sql/tools/sqlcmd-utility) is a cross-platform command-line tool for administering and querying SQL Server databases. The preceding command retrieves a list of non-system tables from the Azure SQL Database that was created earlier.
 
 As expected, the list is empty because there are no tables in the database's `dbo` schema.
 

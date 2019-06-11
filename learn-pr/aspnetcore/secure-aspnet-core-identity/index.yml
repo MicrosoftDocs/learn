@@ -35,6 +35,7 @@ products:
 units:
 - learn.secure-aspnet-core-identity.1-introduction
 - learn.secure-aspnet-core-identity.2-setup-environment
-iconUrl: /learn/achievements/secure-aspnet-core-identity.svg
+- learn.secure-aspnet-core-identity.3-module
+iconUrl: /learn/achievements/aspnetcore/secure-aspnet-core-identity.svg
 badge:
   uid: learn.secure-aspnet-core-identity.badge

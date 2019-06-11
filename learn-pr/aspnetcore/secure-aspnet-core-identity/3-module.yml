@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-aspnet-core-identity.3-module
+metadata:
+  title: Configure Identity support
+  description: Configure Identity framework support in an existing ASP.NET Core web app.
+  ms.date: 05/22/2019
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+  zone_pivot_groups: aspnet-core-identity-data-store
+title: Configure Identity support
+azureSandbox: true
+interactive: bash
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-module.md)]
