@@ -20,11 +20,11 @@ To streamline this startup process, you can use Docker Compose. With this tool, 
 
 ## How to create an application with Docker Compose
 
-Start by defining all the images in the applications individually by developing and troubleshooting a Dockerfile for each one. Then you can proceed to define the complete application by creating a docker-compose.yml file.
+Start by defining all the images in the applications individually by developing and troubleshooting a Dockerfile for each one. Then you can proceed to define the complete application by creating a **docker-compose.yml** file.
 
-A docker-compose.yml file defines a set of services. Each service is one or more containers created from a single Docker image. For each service, you can specify properties such as TCP or UDP port mappings, CPU resources, or memory resources. The syntax of this file is the YAML markup language.
+A **docker-compose.yml** file defines a set of services. Each service is one or more containers created from a single Docker image. For each service, you can specify properties such as TCP or UDP port mappings, CPU resources, or memory resources. The syntax of this file is the YAML markup language.
 
-The following code shows an example docker-compose.yml file that creates two services, a web server and a database server:
+The following code shows an example **docker-compose.yml** file that creates two services, a web server and a database server:
 
 ```yaml
 version: "3"
@@ -44,8 +44,8 @@ services:
             - "1500:1433
 ```
 
-Once you have created the docker-compose.yml file, you can start all the services it defines by issuing the following command in the same folder:
+Once you have created the **docker-compose.yml** file, you can start all the services it defines by issuing the following command in the same folder:
 
-```Bash
+```bash
 sudo docker-compose up
 ```

@@ -1,8 +1,8 @@
 In Docker, containers are created from images, which are templates for a virtual environment.
 
-You have chosen to use containers to deploy a SQL Server 2017 image to the test environments for your photo-sharing application. You want the same sample database, which contains test data, to be deployed for each integration testing cycle. Now, you want to plan the image that will deploy the container.
+You have chosen to use containers to deploy a SQL Server 2017 image to the test environments for your photo sharing application. You want the same sample database, which contains test data, to be deployed for each integration testing cycle. Now, you want to plan the image that will deploy the container.
 
-In this unit, you will learn how to create Docker images.
+In this unit, you will learn how to create customized Docker images.
 
 ## What is a Dockerfile?
 
@@ -12,20 +12,20 @@ An image is a template for a container. The contents of the image are fixed by a
 
 A Dockerfile is a text file. Each line of the file is either a comment or an instruction.
 
-Comments start with a "#" and usually contain text that describes the image or an instruction to other administrators or developers.
+Comments start with a `#` and usually contain text that describes the image or an instruction to other administrators or developers.
 
 Instructions consist of the name of the command and its arguments. Although Dockerfile syntax is not case-sensitive, the name is usually in uppercase to make it easier to distinguish it from the arguments.
 
-Every Dockerfile must have a FROM instruction. This determines the base image. It can be an image in your local registry or from any registry that Docker is configure to access.
+Every Dockerfile must have a `FROM` instruction. This determines the base image. It can be an image in your local registry or from any registry that Docker is configure to access.
 
 Other common instructions in Dockerfile include:
 
-- **COPY**. This instruction copies a file from the source you specify into the container at the destination your specify.
-- **CMD**. This instruction provides the default executable for the container. There can only be one **CMD** instruction in each Dockerfile.
-- **ENV**. This instruction sets a value for an environment variable in the container.
-- **EXPOSE**. This instruction informs Docker that the container listens on a specific TCP or UDP port.
-- **RUN**. This instruction executes a command in a new layer on the current image and commits the results to the new image.
-- **WORKDIR**. This instruction sets the working directory within the container for **CMD**, **RUN**, and any other instruction that executes commands.
+- `COPY`. This instruction copies a file from the source you specify into the container at the destination your specify.
+- `CMD`. This instruction provides the default executable for the container. There can only be one `CMD` instruction in each Dockerfile.
+- `ENV`. This instruction sets a value for an environment variable in the container.
+- `EXPOSE`. This instruction informs Docker that the container listens on a specific TCP or UDP port.
+- `RUN`. This instruction executes a command in a new layer on the current image and commits the results to the new image.
+- `WORKDIR`. This instruction sets the working directory within the container for `CMD`, `RUN`, and any other instruction that executes commands.
 
 ## How to write a Dockerfile for SQL Server containers
 
@@ -45,8 +45,8 @@ CMD ["/opt/mssql/bin/sqlservr"]
 
 ## How to build an image from a Dockerfile
 
-To build an container from a Dockerfile, use the **docker build** command. You must have elevated privileges to execute this command so, on Linux, use it in conjunction with the **sudo** tool. Use the -t option to fix a name for the new container:
+To build an container from a Dockerfile, use the **docker build** command. You must have elevated privileges to execute this command so, on Linux, use it in conjunction with the **sudo** tool. Use the `-t` option to fix a name for the new container:
 
-```Bash
+```bash
 sudo docker build . -t photo-sharing-sql-server
 ```
