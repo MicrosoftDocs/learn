@@ -1,6 +1,6 @@
-Suppose you are a database administrator for a retail organization and you need to upgrade several CRM databases to SQL Server 2017; the source databases include versions from SQL Server 2008R2 through to SQL Server 2016. You have chosen to use the **Microsoft Data Migration Assistant (DMA)** to first check the compatibility of these older databases before upgrading to SQL Server 2017. 
+Suppose you're a database administrator for a retail organization and you need to upgrade several CRM databases to SQL Server 2017. The source databases include versions from SQL Server 2008R2 through to SQL Server 2016. You're going to use the **Microsoft Data Migration Assistant (DMA)** to first check the compatibility of these older databases before upgrading to SQL Server 2017. 
 
-In this exercise, you will run the Data Migration Assistant compatibility and performance assessments on a SQL Server 2008 database, and view the results for a SQL Server 2017 target.
+In this exercise, you will run the DMA compatibility and performance assessments on a SQL Server 2008 database, and view the results for a SQL Server 2017 target.
 
 ## Start the DMA
 
@@ -53,4 +53,4 @@ To export the results into a flexible file format, follow these steps:
 
 ## Summary
 
-Here, you ran the Microsoft Data Migration Assistant compatibility and recommendations assessments against a SQL Server 2008 database. The results showed there are a number of compatibility issues to be fixed prior to upgrading, along with some benefits to be gained by leveraging new features in SQL Server 2017.
+Here, you ran the Microsoft Data Migration Assistant compatibility and recommendations assessments against a SQL Server 2008 database. The results showed there are a number of compatibility issues to be fixed prior to upgrading, along with some benefits to be gained by using new features in SQL Server 2017.
