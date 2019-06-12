@@ -51,7 +51,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
 
     An organization is building out a new environment on Azure that uses virtual machines. They would like to have a customized image with their organizational standards included and need a method to store and create virtual machines from these images.
 
-1. **Features of Azure Virtual Hard Disks (VHD)**
+1. **Disk imaging capabilities for Azure virtual machines**
 
     In this unit, you will explore the features of Azure Virtual Hard Disks. By the end of this unit, you will be able to:
 
@@ -87,7 +87,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
       - What is the tool for Generalizing a Linux VM
       - If you wanted to mass use a machine image for mass deploying new identical VM's would you select a Generalized or Specialized virtual disk? 
 
-1. **How to generalize a server and create an image of a VM**
+1. **Generalize a server and create an image of a VM**
 
     (This unit will use zone pivots for the Linux and Windows instructions)
 
@@ -161,8 +161,6 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
             --admin-username azureuser \
             --generate-ssh-keys
           ```
-
-    
 
 1. **Summary + Cleanup**
 
