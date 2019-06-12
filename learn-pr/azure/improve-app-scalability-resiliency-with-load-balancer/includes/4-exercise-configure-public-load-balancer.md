@@ -127,9 +127,12 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
 1. Firstly, you will need to create a new Public IP address
 
     ```Powershell
+    RgName=`az group list --query '[0].name' --output tsv`
+    Location=`az group list --query '[0].location' --output tsv`
+
     $publicIP = New-AzPublicIpAddress `
-      -ResourceGroupName "myResourceGroupLB" `
-      -Location "EastUS" `
+      -ResourceGroupName $RgName `
+      -Location $Location `
       -AllocationMethod "Static" `
       -Name "myPublicIP"
     ```
@@ -142,7 +145,7 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
       -PublicIpAddress $publicIP
     ```
 
-1. You will now create create a back-end address pool with ```New-AzLoadBalancerBackendAddressPoolConfig```. The VMs attach to this back-end pool in the remaining steps. The following example creates a back-end address pool named myBackEndPool:
+1. You will now create create a back-end address pool with ```New-AzLoadBalancerBackendAddressPoolConfig```. The VMs attach to this back-end pool in the final steps. The following example creates a back-end address pool named myBackEndPool:
 
     ```Powershell
     $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name "myBackEndPool"
@@ -153,7 +156,6 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
     ```Powershell
     $probe = New-AzLoadBalancerProbeConfig `
       -Name "myHealthProbe" `
-      -RequestPath healthcheck2.aspx `
       -Protocol http `
       -Port 80 `
       -IntervalInSeconds 4 `
@@ -177,20 +179,26 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
 
     ```Powershell
     $lb = New-AzLoadBalancer `
-      -ResourceGroupName 'myResourceGroupLB' `
+      -ResourceGroupName $RgName `
       -Name 'MyLoadBalancer' `
-      -Location 'eastus' `
+      -Location $Location `
       -FrontendIpConfiguration $frontendIP `
       -BackendAddressPool $backendPool `
       -Probe $probe `
       -LoadBalancingRule $lbrule
     ```
 
+1. Now we need to connect the VMs to the backend pool by updating the NICs we created in the script earlier with the backendpool information
+
+    ```Powershell
+      Find out how to update a NIC with a backendpool
+    ```
+
 1. Finally, run the following cmd to get the public IP address of the load balancer, you will need this for the next section
 
     ```Powershell
     Get-AzPublicIPAddress `
-      -ResourceGroupName "myResourceGroupLB" `
+      -ResourceGroupName $RgName `
       -Name "myPublicIP" | select IpAddress
     ```
 

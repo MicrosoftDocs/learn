@@ -21,7 +21,7 @@ Load Balancers are not physical instances. Load balancer objects are used to exp
 
 ### Availability Sets
 
-An Availability Set is a logical grouping capability for isolating VM resources from each other when they're deployed. Azure makes sure that the VMs you place within an Availability Set run across multiple physical servers, compute racks, storage units, and network switches. If a hardware or software failure happens, only a subset of your VMs are impacted and your overall solution stays operational. Availability Sets are essential for building reliable cloud solutions.
+An Availability Set is a logical grouping for isolating VM resources from each other when they're deployed. Azure makes sure that the VMs you place within an Availability Set run across multiple physical servers, compute racks, storage units, and network switches. If a hardware or software failure happens, only a subset of your VMs are impacted and your overall solution stays operational. Availability Sets are essential for building reliable cloud solutions.
 
 ![Overview of Availability Sets](../media/2-availability-sets.png)
 
@@ -31,6 +31,8 @@ This offers groups of one or more data centers that have completely independent 
 
 ![Overview of Availability Zones](../media/2-az-graphic-two.png)
 
+> [!NOTE]
+> Availability Zones don't support all VM sizes.
 
 ## Selecting the right SKU
 
@@ -64,9 +66,4 @@ All of the Basic features, along with
 
 An external load balancer operates by distributing client traffic (browsers, mobile apps) across multiple front end VMs. Using the healthcare example, this would distribute the load of all the browsers operating the client healthcare application
 
-An internal load balancer distributes load internally across the data tier. Using the healthcare example this would distribute load across the databases that serve the business layer.
-
-## External Load balancer for the healthcare portal
-
-Revisiting the healthcare portal. The external load balancer can be used to distribute the client load between the healthy VMs
-
+An internal load balancer distributes load internally across the backend tiers. Using the healthcare example this would distribute load across the application tier.

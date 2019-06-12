@@ -4,7 +4,7 @@ In the current healthcare portal scenario, there is a business tier which is use
 
 You want the business tier servers behind a load balancer but that load balancer should not be exposed as a public load balancer and the VMs in the pool of that load balancer will also not be public. If all the VMs hosting the business tier are in one vnet then internal load balancer can be used to distribute traffic to those VMs.
 
-Not only can the load balancer manage public traffic, it can also be used to manage the internal load balancing of calls to buissness layers. In our healthcare portal example. The portal is made up of a standard 3 tiered architecture
+Not only can the load balancer manage public traffic, it can also be used to manage the internal load balancing of calls to buisness layers. In our healthcare portal example. The portal is made up of a standard 3 tiered architecture
 
 - Presentation (Client) Tier
 - Application Tier
