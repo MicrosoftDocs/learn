@@ -195,7 +195,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
     (
         CourseID INT NOT NULL,
         ModuleCode VARCHAR(5) NOT NULL,
-        ModuleSequence VARCHAR(50) NOT NULL,
+        ModuleSequence INT NOT NULL,
         PRIMARY KEY(CourseID, ModuleCode)
     )
     ```
@@ -295,7 +295,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
         3
         1       SQLCHAR             0       12      ","      1     CourseID                                                     ""
         2       SQLCHAR             0       5       ","      2     ModuleCode                                                   SQL_Latin1_General_CP1_CI_AS
-        3       SQLCHAR             0       50      "\r\n"   3     ModuleSequence                                               SQL_Latin1_General_CP1_CI_AS
+        3       SQLCHAR             0       12      "\r\n"   3     ModuleSequence                                               ""
         ```
 
     1. Import the data from the **studyplans.csv** file into the **StudyPlans** table in the database:
