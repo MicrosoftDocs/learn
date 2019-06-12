@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.sql-server-discovery-using-map.5-collect-and-assess-inventory-data
-title: Collect and aAssess inventory data
+title: Collect and assess inventory data
 metadata:
-  title: Collect and aAssess inventory data
-  description: Collect and aAssess inventory data
+  title: Collect and assess inventory data
+  description: See how MAP can collect the information you need to inventory your companies SQL Servers, and find the servers and databases that need upgrading.
   ms.date: 01/31/2019
   author: geoffallix
   ms.author: v-gea
