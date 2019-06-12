@@ -13,7 +13,7 @@ The three primary productivity benefits that Azure provides are integrated tooli
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about how Azure makes developers and IT professionals more productive, as well as the importance of Azure open-source support.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about how Azure makes developers and IT professionals more productive, as well as the importance of Azure open-source support.|
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU6r]
 
 ## Hybrid
@@ -22,7 +22,7 @@ Azure is the only consistent hybrid cloud on the market, allowing your business 
 
   |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about the hybrid cloud.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about the hybrid cloud.|
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqP24]
 
 ## Intelligent
@@ -31,7 +31,7 @@ With Azure, you can create intelligent apps by using powerful data services and 
 
   |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about how to apply intelligence to large data sets by using Azure, and see an example of an intelligent agent application.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about how to apply intelligence to large data sets by using Azure, and see an example of an intelligent agent application.|
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1Y5]
 
 ## Trusted
@@ -40,7 +40,7 @@ Azure provides a safe and secure environment that you can trust, as evidenced by
 
   |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about Azure as the *trusted* cloud.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about Azure as the *trusted* cloud.|
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWG1]
 
 In summary, Azure provides unique value as a productive, hybrid, intelligent, and trusted cloud service that's designed to help organizations achieve their business objectives.
