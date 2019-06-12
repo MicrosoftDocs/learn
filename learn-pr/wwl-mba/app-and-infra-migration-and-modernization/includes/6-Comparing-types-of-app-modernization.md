@@ -4,19 +4,17 @@ In this unit, we’ll talk about modernizing your applications by refactoring wi
 
 Containers are a packaging mechanism in which applications are abstracted from the environment in which they run, allowing your applications to be more portable.
 
-
-
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn about refactoring your applications with container technology.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about refactoring your applications with container technology.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr240]
 
 
 
 |  |  |
-| ------------ | -------------:|
-|![Icon of lightbulb](../media/Lightbulb_icon.png)|*Here’s one way to think about containers. Say you are packing up your kitchen. You put all the appliances and furniture, along with pots and pans into a moving van. This is the container. Wherever you decide to move, you take the container with you and it will be the same kitchen. With container technology, applications can be built to run in any environment. Additional tools, such as Kubernetes, help orchestrate the containers, so you can deploy and scale with confidence.*
+| ------------ | -------------|
+|![Icon of lightbulb](../media/lightbulb.png)|*Here’s one way to think about containers. Say you are packing up your kitchen. You put all the appliances and furniture, along with pots and pans into a moving van. This is the container. Wherever you decide to move, you take the container with you and it will be the same kitchen. With container technology, applications can be built to run in any environment. Additional tools, such as Kubernetes, help orchestrate the containers, so you can deploy and scale with confidence.*
 |
 
 Let’s look at how Xerox uses Azure containers.
@@ -31,7 +29,7 @@ When Xerox chose to refactor their applications with containers in Azure, they w
 - No code modification required
 
 --------------
-*Thanks to Azure Kubernetes Service, we can now spin up customer environments in 10 minutes instead of 24 hours. Moving DocuShare Flex from virtual machines to containers in Azure allows us to provision environments faster, empowering our sales and partner network.* 
+![image of quotes](../media/quote.png)*Thanks to Azure Kubernetes Service, we can now spin up customer environments in 10 minutes instead of 24 hours. Moving DocuShare Flex from virtual machines to containers in Azure allows us to provision environments faster, empowering our sales and partner network.* 
 
 ⸺Robert Bingham, Director of DocuShare Cloud Operations, Xerox
 
@@ -65,7 +63,7 @@ Done correctly, microservices can provide several benefits:
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn about rearchitecting with microservices.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about rearchitecting with microservices.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWroKB]
 
@@ -81,7 +79,7 @@ Serverless computing is a cloud-computing execution model in which the cloud pro
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch the video to learn about cloud native capabilities.|
+|![Icon indicating play video](../media/video-icon.png)|Watch the video to learn about cloud native capabilities.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWqP1K] 
 
