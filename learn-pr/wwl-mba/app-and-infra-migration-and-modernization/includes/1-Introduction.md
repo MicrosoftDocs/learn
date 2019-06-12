@@ -2,7 +2,7 @@ Organizations preparing to digitally transform their business must determine how
 
 
 |  |  |
-| ------------ | -------------:|
+| ------------ | -------------|
 |![Icon of lightbulb](../media/lightbulb.png)|*The decision to migrate or modernize is a big one. You may have some questions, including: How do I ensure that my existing applications take maximum advantage of the cloud? How can server migration help my business save money? How can I minimize disruption to my business as I modernize my apps? We will answer these questions as you complete this module.*
 |
 

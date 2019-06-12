@@ -16,7 +16,7 @@ Now that we’ve reviewed modernization triggers, let’s look at one example of
 A great online shopping experience begins with great software, and Alaska Airlines uses Microsoft Azure services—microservices and Windows Server Containers with Docker—to launch new e-commerce features faster: in minutes, not days. Travelers get new offers sooner, which in turn translates to happier customers and higher revenues. By running its e-commerce engine in Azure in hybrid fashion, Alaska can also scale more easily and cost-effectively, ensuring its sites run at the optimum point of performance and cost.
 
 -----------------------
-*Going forward, all new features will be built in the cloud. We’re best at building applications that our customers love, and Microsoft is best at putting software and servers in the cloud. It’s a good partnership.*
+![image of quotes](../media/quote.png)*Going forward, all new features will be built in the cloud. We’re best at building applications that our customers love, and Microsoft is best at putting software and servers in the cloud. It’s a good partnership.*
 
 ⸺Ralph Feltis, Senior Software Engineer, Alaska Airlines
 
@@ -33,7 +33,7 @@ As you saw in the video, Alaska Airlines migrated from a traditional online shop
 
 
 |  |  |
-| ------------ | -------------:|
+| ------------ | -------------|
 |![Icon of lightbulb](../media/lightbulb.png)|*Which of the common migration and modernization triggers might be relevant for your business? Are you facing urgent capacity needs or new security threats? Can your business improve by delivering applications and features faster? Or, perhaps you are planning for change with expiring datacenter contracts or software end of support. There are many reasons for modernization. Write down your top three.*
 |
 
