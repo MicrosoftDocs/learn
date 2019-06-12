@@ -2,10 +2,10 @@ Microsoft Azure is an ever-expanding set of cloud services that help organizatio
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video as Julia White, Azure Corporate Vice President, reviews the Azure opportunity and describes the topics that will be covered in this learning path.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video as Julia White, Azure Corporate Vice President, reviews the Azure opportunity and describes the topics that will be covered in this learning path.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1uy]
 
 Select the image to view the full learning path.
 
-[ ![Image of learning path. Drag up and down to view the full image.](../media/Intro_IC_Thumbnail.png) ](../media/MBA_Intro_IC_Infographic_FullJourney.png#lightbox)
+[ ![Image of learning path. Drag up and down to view the full image.](../media/intro-ic-thumbnail.png) ](../media/mba-intro-ic-infographic-fulljourney.png#lightbox)
