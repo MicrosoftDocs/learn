@@ -3,10 +3,10 @@ uid: learn-sqlserver.automatically-tune-sql-server-on-linux.3-exercise-monitor-s
 title: Exercise - Monitor SQL performance in Linux
 metadata:
   title: Exercise - Monitor SQL performance in Linux
-  description: Exercise - Monitor SQL performance in Linux
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: In this exercise, you will install Azure Data Studio on your Linux server and use it to monitor the performance of SQL Server counters.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX

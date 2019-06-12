@@ -6,8 +6,10 @@ You want to use Azure Data Studio to display SQL Server performance counters and
 
 ## Start and configure the server image
 
-1. To log on to the **RHELSQLServer** image, click **Administrator**, type the password **Pa$$w0rdLinux**, and then click **Sign In**.
-1. At the top-left of the desktop, click **Applications**, click **System Tools** and then click **Settings**.
+Start by connecting to the LInux server:
+
+1. To sign in to the **RHELSQLServer** image, click **Administrator**, type the password **Pa$$w0rdLinux**, and then click **Sign In**.
+1. At the top-left of the desktop, click **Applications**, click **System Tools**, and then click **Settings**.
 1. Click **Network** and then click the **+** button adjacent to **Wired**.
 1. In **Name**, type **Ethernet** and then in **MAC Address** box, select the **eth0** address.
 1. Click **Add**.
@@ -15,7 +17,7 @@ You want to use Azure Data Studio to display SQL Server performance counters and
 
 ## Install Azure Data Studio
 
-SQL Server 2017 is already installed on your Red Hat Enterprise Linux (RHEL) server however, you would like a Graphical User Interface (GUI) to administer it and display performance information. To do this, you will install Azure Data Studio, which has already been downloaded to your computer.
+SQL Server 2017 is already installed on your Red Hat Enterprise Linux (RHEL) server however, you would like a Graphical User Interface (GUI) to administer it and display performance information. Install Azure Data Studio, which has already been downloaded to your computer.
 
 1. At the top-left of the desktop, click **Applications**, click **System Tools**, and then click **Terminal**.
 1. To stop the built-in package updater **packagekit**, which would block your install happening until it had finished its updates, type the following command, and then press Enter:
@@ -31,13 +33,13 @@ SQL Server 2017 is already installed on your Red Hat Enterprise Linux (RHEL) ser
     cd Downloads
     ```
 
-1. To check your version of Azure Data Studio, next list the files in the **Downloads** folder, by typing the following command, and then pressing Enter:
+1. To check your version of Azure Data Studio, list the files in the **Downloads** folder, by typing the following command, and then pressing Enter:
 
     ```bash
     ls
     ```
 
-1. To install Azure Data Studio, type the following command, replacing **&lt;version&gt;** with the file version number of the **.rpm** file in the Downloads directory, and then press Enter:
+1. To install Azure Data Studio, type the following command, replacing `<version>` with the file version number of the **.rpm** file in the Downloads directory, and then press Enter:
 
     ```bash
     sudo yum install azuredatastudio-linux-<version>.rpm

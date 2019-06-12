@@ -3,10 +3,10 @@ uid: learn-sqlserver.automatically-tune-sql-server-on-linux.2-monitor-sql-perfor
 title: Monitor SQL performance in Linux
 metadata:
   title: Monitor SQL performance in Linux
-  description: Description of performance management tools in Linux.
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: In this unit, you will learn about the tools you can use under Linux to monitor the performance on SQL Server.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
@@ -14,7 +14,7 @@ durationInMinutes: 5
 content: |
   [!include[](includes/2-monitor-sql-performance-in-linux.md)]
 quiz:
-  title: "Monitor SQL performance in Linux"
+  title: "Check your knowledge"
   questions:
   - content: "You have noticed that the 'Page Life Expectancy' counters averages around 200 seconds. What should you do to optimize performance?"
     choices:
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "count"
       isCorrect: false
-      explanation: "You should use the timeSeries chart type to show data points on a time line joined by a line."
+      explanation: "Use the timeSeries chart type to show data points on a time line joined by a line."
     - content: "scatter"
       isCorrect: false
-      explanation: "You should use the timeSeries chart type to show data points on a time line joined by a line."
+      explanation: "Use the timeSeries chart type to show data points on a time line joined by a line."
     - content: "timeSeries"
       isCorrect: true
-      explanation: "You should use the timeSeries chart type to show data points on a time line joined by a line."
+      explanation: "Use the timeSeries chart type to show data points on a time line joined by a line."
