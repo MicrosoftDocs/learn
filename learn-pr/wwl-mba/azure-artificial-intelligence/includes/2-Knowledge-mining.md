@@ -1,6 +1,6 @@
 ## What is knowledge mining?
 
-Real-world data is messy. It often spans media types, such as text documents, PDF files, images, and databases. It changes constantly, it’s constantly growing, and it carries valuable knowledge in ways that aren’t readily usable. **Knowledge mining** refers to the ability to retrieve information and extract insights within a vast amount of data. Azure Search enables knowledge mining by using built-in AI capabilities to uncover latent insights from all your content–documents, images and media. Azure Search is the only cloud search service with built-in AI capabilities that enable you to discover patterns and relationships in your content, understand sentiment, extract key phrases and more. Customer support organizations, for example, often use knowledge mining to extract data and intelligence out of case documentation. They can analyze customer sentiment to improve agent productivity and customer experience.
+Real-world data is messy. It often spans media types, such as text documents, PDF files, images, and databases. It changes constantly, it’s constantly growing, and it carries valuable knowledge in ways that aren’t readily usable. **Knowledge mining** refers to the ability to retrieve information and extract insights within a vast amount of data. Azure Search enables knowledge mining by using built-in AI capabilities to uncover latent insights from all your content–documents, images, and media. Azure Search is the only cloud search service with built-in AI capabilities that enable you to discover patterns and relationships in your content, understand sentiment, extract key phrases and more. Customer support organizations, for example, often use knowledge mining to extract data and intelligence out of case documentation. They can analyze customer sentiment to improve agent productivity and customer experience.
 
 |  |  |
 | ------------ | -------------| 
@@ -18,9 +18,9 @@ Now that you understand more about how knowledge mining is used to interpret dat
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrH6A]
 
-As you saw in the video, Azure Cognitive Search ingested data in the form of PDFs into Azure Blob Storage. Then, with key phrase extraction and named entity recognition, language detection, and automatic translation, cognitive services enriched the data and created a custom General Data Protection Regulation (GDPR) risk model. When connected to Azure web apps, this created a searchable experience than enabled two million users to manage more than five million contracts.
+As you saw in the video, Azure Cognitive Search ingested data in the form of PDFs into Azure Blob Storage. Then, with key phrase extraction and named entity recognition, language detection, and automatic translation, cognitive services enriched the data and created a custom General Data Protection Regulation (GDPR) risk model. When connected to Azure web apps, it created a searchable experience that enabled two million users to manage more than five million contracts.
 
-Here is a diagram of the knowledge mining process similar to that used by iCertis, that illustrates how content is ingested, cracked, enriched, and indexed to allow for data mining and search through various applications such as websites and chatbots.  
+Here is a diagram of the knowledge mining process similar to the process used by iCertis. This diagram illustrates how content is ingested, cracked, enriched, and indexed in order to allow for data mining and search through various applications (such as websites and chatbots).  
 
 ![Azure Search and Cognitive Services](../media/ic-gm06-ai-diagram-cognitive.png)
 
