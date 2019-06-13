@@ -21,4 +21,10 @@ The internal load balancer should only be visible to the front end presentation 
 ------Can we change this diagram to have an API layer over port 80 rather than SQL
 ![Diagram of Internal Load Balancer](../media/5-internal-load-balancer.png)
 
+## Choose Distribution Mode
 
+Using the healthcare portal example. A requirement of the application tier is that it uses in memory sessions, therefore the load balancer must provide source IP affinity to maintain a users session. When we create the load balancer we must specify the distribution mode this can easily be done, like the PowerShell example below.
+
+```Azure CLI
+    Set-AzureLoadBalancedEndpoint -ServiceName MyService -LBSetName LBSet1 -Protocol TCP -LocalPort 80 -ProbeProtocolTCP -ProbePort 8080 –LoadBalancerDistribution sourceIP
+```

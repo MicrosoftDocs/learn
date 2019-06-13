@@ -1,0 +1,3 @@
+In this module, you learnt about Azure Load Balancers and how they can be used to minimise the impact of failures and increase resilience and stability. You've learned how to group VMs behind a load balancer to increase availability. You've learned how to configure an internal load balancer on a private VNET as well as configuring an external load balancer with a public facing IP. You have also discovered how the load balancer can be configured to provide availability across data centres with the use of availability zones.
+
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
