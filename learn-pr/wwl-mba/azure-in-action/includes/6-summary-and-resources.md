@@ -43,7 +43,13 @@ Use these resources to discover more.
 
 ### Demo - Microsoft Azure migration
 
-- [Datacenter Migration DemoMate Demo](https://microsoft.sharepoint.com/sites/infopedia/pages/layouts/kcdoc.aspx?k=g01kc-1-37010)
+- [Microsoft Hands-on Labs](https://www.microsoft.com/handsonlabs) - search on **migration** to find the labs listed below
+
+  - Assessing on-premises VMware environments with Azure Migrate
+
+  - Migration Using SQL Managed Instance
+
+  - SQL Migration Using Azure Data Migration Services (DMS)
 
 ### Demo - Modernizing .NET Applications
 
@@ -52,3 +58,4 @@ Use these resources to discover more.
 ### Demo - Azure DevOps
 
 - [GitHub-AzureDevOps](https://github.com/hsachinraj/GitHub-AzureDevOps/blob/master/readme.md) demo
+

@@ -4,77 +4,146 @@ When an application is outgrowing the local infrastructure on which it is hosted
 
 Tailwind Traders is a local retail company. They are in the process of expanding their business worldwide and, in order to do that, they need to scale their applications with robust solutions that allow them to reach more customers without worrying about their application performance.
 
-The process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic Apps** has been separated into three segments as illustrated by the following animation:
+The process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic Apps** has been separated into three segments as illustrated by the following table:
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this brief animation introducing the application innovation demo.|
+:::row:::
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9t]
+![Visual Studio icon](../media/vs-migrate.png)
+
+:::column span="1":::
+
+### Migrate
+
+...using the publishing tools in Visual Studio
+
+:::column-end:::
+:::row-end:::
+
+:::row:::
+
+![Azure App Services icon](../media/azure-app-services.png)
+
+:::column span="1":::
+
+### Explore
+
+...the benefits of Azure App Services
+
+:::column-end:::
+:::row-end:::
+
+:::row:::
+
+![Azure Logic Apps icon](../media/azure-logic-apps.png)
+
+:::column span="1":::
+
+### Modernize
+
+...without touching the code using Azure Logic Apps
+
+:::column-end:::
+:::row-end:::
+
+![](../media/clear.png)
 
 ## Scenario
 
-David Sanchez, Senior Product Marketing Manager for Azure Application Development, sets the scene for this demonstration of the capabilities of **Azure Application Service** and **Azure Logic Apps**.
+:::row:::
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this introductory video with David Sanchez.|
+![Icon indicating play video](../media/video-icon.png)
+
+:::column span="1":::
+
+ David Sanchez, Senior Product Marketing Manager for Azure Application Development, sets the scene for this demonstration of the capabilities of Azure Application Service and Azure Logic Apps. Watch this introductory video before continuing to the demo.
+ 
+:::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ZSs8]
 
->[!NOTE]
->Azure offers tools and capabilities that simplify the process of migrating your existing workloads to the cloud, where you can immediately take advantage of cloud scale and elasticity and easily modernize to align to changing business goals.
+**Key ideas**: Azure offers tools and capabilities that simplify the process of migrating your existing workloads to the cloud, where you can immediately take advantage of cloud scale and elasticity and easily modernize to align to changing business goals.
+
+![](../media/clear.png)
 
 ## Migrate
 
-The Tailwind Traders Rewards app is migrated to **Azure App Service** using the publishing tools in Visual Studio.
+:::row:::
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see a demo of application migration to Azure App Service.|
+![Icon indicating play video](../media/video-icon.png)
+
+:::column span="1":::
+
+ In the next video, the Tailwind Traders Rewards app is migrated to Azure App Service using the publishing tools in Visual Studio.
+ Watch this video to see a demo of application migration to Azure App Service.
+ 
+:::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2U0kL]
 
->[!NOTE]
->Azure App Service provides a way to easily migrate applications to Azure using the publishing tools available in Visual Studio, a very common development tool that can automatically create necessary resources such as an Azure SQL Database.
+**Key ideas**: **Azure App Service** provides a way to easily migrate applications to Azure using the publishing tools available in Visual Studio, a very common development tool that can automatically create necessary resources such as an **Azure SQL Database**.
+
+![](../media/clear.png)
 
 ## Explore
 
-Using **Azure App Service**, Tailwind Traders has moved their Rewards app to the cloud, where the benefits of hosting on a modern managed platform are immediately available.
+:::row:::
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to explore the capabilities and benefits of Azure App Service.|
+![Icon indicating play video](../media/video-icon.png)
+
+:::column span="1":::
+
+ Next, we’ll take a closer look at the Azure App Service benefits. Watch this video to explore the capabilities and benefits of Azure App Service.
+ 
+:::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TSyp]
 
->[!NOTE]
->Once an application is running in Azure App Service, administrators can take advantage of the many benefits available. Just a few of the options that can be configured using Azure App Service are:
->- Application authentication or authorization - Fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant.
->- Networking - Connect to on-premises resources, such as a database, and fully customize security, using networking policy to define how traffic and data flows through an app.
->- Scale up - Increase the size of an instance by adding more resources.
->- Scale out - Increase the number of instances running.
->- Diagnostics monitoring - Get real-time insights using alerts, logs, and performance testing.
+**Key ideas**: Once an application is running in **Azure App Service**, administrators can take advantage of the many benefits available. Just a few of the options that can be configured using **Azure App Service** are:
+- Application authentication or authorization -  Fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant.
+- Networking - Connect to on-premises resources, such as a database, and fully customize security, using networking policy to define how traffic and data flows through an app.
+- Scale up - Increase the size of an instance by adding more resources.
+- Scale out - Increase the number of instances running.
+- Diagnostics monitoring - Get real-time insights using alerts, logs, and performance testing.
 
-## Modernize
+![](../media/clear.png)
 
-**Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
+## Modernize Part 1
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to see how Tailwind Traders can add automation to their Rewards application without touching the code.|
+:::row:::
+
+![Icon indicating play video](../media/video-icon.png)
+
+:::column span="1":::
+
+ Watch this video to see how Tailwind Traders can create an Azure Logic App to add automation to their Rewards application without touching the code.
+ 
+:::column-end:::
+:::row-end:::
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TV9s]
 
->[!NOTE]
->Azure Logic Apps makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.
+**Key ideas**: **Azure Logic Apps** makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.
 
+![](../media/clear.png)
 
----
+## Modernize Part 2
 
-**#comment**
+:::row:::
 
-The videos in this module are placeholders using a self-recorded demo. They will be replaced by the demo recorded in the studio.
+![Icon indicating play video](../media/video-icon.png)
 
----
+:::column span="1":::
 
+ Next, we'll finish creating the Logic App and test both conditions. Watch this video to see Azure Logic Apps in action.
+ 
+:::column-end:::
+:::row-end:::
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE36YbN]
+
+**Key ideas**: **Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
+
+Next, we'll see a demo that showcases the benefits of Azure DevOps.
