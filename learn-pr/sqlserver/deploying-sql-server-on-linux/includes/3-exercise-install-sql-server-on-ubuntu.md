@@ -1,6 +1,8 @@
-You are a database administrator at the wholesale company WorldWide Importers and want to benefit from SQL Server without having to change the server operating systems. You have decided to deploy SQL Server on an Ubuntu server and will configure the SQL Server package and install command line tools so that SQL Server is ready to be used by your developers.
+To install SQL Server on Ubuntu, you use the `apt-get` tool.
 
-In this tutorial, you will see how to  deploy SQL Server on Ubuntu, install command-line tools and Azure Data Studio, and create a database on SQL Server.
+You are a database administrator at the wholesale company Wide World Importers. You want to benefit from SQL Server without having to change the server operating systems. You have decided to deploy SQL Server on an Ubuntu server and will configure the SQL Server package and install command-line tools so that SQL Server is ready to be used by your developers.
+
+Here, you will see how to  deploy SQL Server on Ubuntu, install command-line tools and Azure Data Studio, and create a database on SQL Server.
 
 ## Start the lab
 
@@ -9,18 +11,18 @@ Start by logging into the database server:
 <!--TODO: This link must be corrected when we know where the lab is hosted.-->
 1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/47218?providerId=4.
 1. Sign with a Microsoft account, or create a new account.
-1. To log on, type **student**, and then press Enter.
+1. To sign in, type **student**, and then press Enter.
 1. Type **Pa55w.rd**, and then press Enter.
 
 ## Install the SQL Server package
 
-SQL Server needs to be installed and then configured. The first task is installation.
+Now, let's install and configure SQL Server:
 
-1. Click **Show Applications**, and click **Terminal**.
+1. Click **Show Applications**, and then click **Terminal**.
 
     ![Ubuntu Terminal](../media/ubuntu_terminal.PNG "Terminal")
 
-1. For the following steps to run in a more straightforward way, you need to install curl if have not already installed it. To install Curl, type the following command , and then press Enter:
+1. To install Curl, type the following command, and then press Enter:
 
     ```bash
     sudo apt install -y curl
@@ -32,7 +34,7 @@ SQL Server needs to be installed and then configured. The first task is installa
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     ```
 
-1. To register the Microsoft SQL Server Ubuntu repository, type the following, and then press Enter:
+1. To register the Microsoft SQL Server Ubuntu repository, type the following command, and then press Enter:
 
     ```bash
     sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/16.04/mssql-server-2017.list)"
@@ -44,7 +46,7 @@ SQL Server needs to be installed and then configured. The first task is installa
     sudo apt-get update
     ```
 
-1. To install the libcurl3 URL transfer library, type the following, and then press Enter:
+1. To install the **libcurl3** URL transfer library, type the following, and then press Enter:
 
     ```bash
     sudo apt-get install -y libcurl3
@@ -66,7 +68,7 @@ SQL Server needs to be installed and then configured. The first task is installa
 
 ## Configure SQL Server
 
-Before you use SQL Server, you must specify the edition that you want and specify the system administrator password.
+Before you use SQL Server, you must specify the edition that you want and the system administrator password:
 
 1. To configure SQL Server, in the Terminal window, type the following command, and then press Enter:
 
@@ -75,14 +77,14 @@ Before you use SQL Server, you must specify the edition that you want and specif
     ```
 
 1. If prompted for your password, type your password and press Enter.
-1. To select the Evaluation edition, press 1, and then press Enter.
+1. To select the **Evaluation edition**, press 1, and then press Enter.
 1. Type **Yes** and press Enter to accept the license terms.
-1. Type your new SQL Server administrator password and press Enter to set the system administrator password.
-1. Type your new SQL Server administrator password and press Enter to confirm the password.
+1. Type your new SQL Server administrator password and press Enter.
+1. Type your new SQL Server administrator password and press Enter.
 
 ## Install SQL Server tools
 
-SQL Server is now installed, but you will now install tools to work with SQL Server.
+SQL Server is now installed. Next, install tools to work with SQL Server.
 
 1. To register the repository for the Microsoft SQL Server tools package, type the following command, and then press Enter:
 
@@ -129,7 +131,7 @@ Next, install the Azure Data Studio tool:
     sudo apt -y --fix-broken-install
     ```
 
-1. To install Git, type the following command, and then press Enter:
+1. To install `git`, type the following command, and then press Enter:
 
     ```bash
     sudo apt-get install -y git
@@ -144,8 +146,8 @@ Now, you can use the Azure Data Studio to create and query a database:
 
     ![New Connection](../media/new_connection.PNG "New Connection")
 
-1. In **Server**, type **localhost** if connecting locally, or the server name if connecting remotely.
-1. In **User name**, type **sa**, in **Password**, type your SQL Server administrator password.
+1. In **Server**, type **localhost**.
+1. In **User name**, type **sa**, and then in **Password**, type your SQL Server administrator password.
 1. Click **Connect**.
 1. Click **New Query**. In the query window, type the following command, and then click **Run**:
 

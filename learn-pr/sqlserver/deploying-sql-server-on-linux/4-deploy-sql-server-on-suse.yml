@@ -3,10 +3,10 @@ uid: learn-sqlserver.deploying-sql-server-on-linux.4-deploy-sql-server-on-suse
 title: Deploy SQL Server on SUSE
 metadata:
   title: Deploy SQL Server on SUSE
-  description: Deploy SQL Server on SUSE
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: In this unit, you'll learn about the requirements for SQL Server on SUSE and the tools that you can use to administer it.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX

@@ -1,33 +1,33 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.automatically-tune-sql-server-on-linux.4-choosing-to-use-query-store-and-automatic-tuning
-title: Choosing to use Query Store and automatic tuning
+uid: learn-sqlserver.automatically-tune-sql-server-on-linux.4-choose-to-use-query-store-and-automatic-tuning
+title: Choose to use Query Store and automatic tuning
 metadata:
-  title: Choosing to use Query Store and automatic tuning
-  description: Choosing to use query store and automatic tuning
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  title: Choose to use Query Store and automatic tuning
+  description: In this unit, you will learn about the Query Store and automatic tuning in SQL Server on Linux.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-choosing-to-use-query-store-and-automatic-tuning.md)]
+  [!include[](includes/4-choose-to-use-query-store-and-automatic-tuning.md)]
 quiz:
-  title: "Choosing to use Query Store and automatic tuning"
+  title: "Check your knowledge"
   questions:
   - content: "You want to record telemetry about the performance of query plans. Which technology should you enable?"
     choices:
     - content: "Automatic Tuning"
       isCorrect: false
-      explanation: "Automatic tuning uses the data in query store to automatically recover from query plan regressions. If you only want to record telemetry, query store is the rigth technology."
+      explanation: "Automatic tuning uses the data in query store to automatically recover from query plan regressions. If you only want to record telemetry, query store is the right technology."
     - content: "Query Store"
       isCorrect: true
       explanation: "Query store records telemetry about queries, query plans, and performance."
     - content: "Query Optimizer"
       isCorrect: false
       explanation: "Query optimizer always runs and creates and compiles the best query plans. To store telemetry about performance, use query store."
-  - content: "When you attempted to enable automatic tuning an error occured. What should you do to resolve this error?"
+  - content: "When you attempted to enable automatic tuning an error occurred. What should you do to resolve this error?"
     choices:
     - content: "Enable query store."
       isCorrect: true
