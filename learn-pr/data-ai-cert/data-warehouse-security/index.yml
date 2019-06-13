@@ -19,7 +19,6 @@ abstract: |
   - Set detailed security controls
   - Set up security auditing and monitoring
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/data-warehouse-security-badge.svg
 levels:
 - beginner
