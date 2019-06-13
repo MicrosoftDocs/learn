@@ -1,6 +1,6 @@
-You have upgraded several CRM databases to SQL Server 2017, and you are using a staging area to so that you can identify any performance issues, before you deploy to your production platform. You are using the Microsoft Database Experimentation Assistant (DEA) to help with this task.
+You have upgraded several CRM databases to SQL Server 2017, and you're using a staging area to so that you can identify any performance issues, before you deploy to your production platform. You're using the Microsoft Database Experimentation Assistant (DEA) to help with this task.
 
-In this exercise, you will configure a new capture using DEA, running a workload on a SQL Server 2008R2 database, and then replaying this capture against a SQL Server 2017 database.
+In this exercise, you'll configure a new capture using DEA, running a workload on a SQL Server 2008R2 database, and then replaying this capture against a SQL Server 2017 database.
 
 ## Start the lab
 
@@ -33,14 +33,14 @@ Now use DEA to create a baseline capture of database events.
 1. Leave the **Server Type** selection as **SqlServer**, and in the **Server name** field, type `localhost`.
 1. Check the **Authentication Type** is **Windows**, and in the **Database name (optional)** field, type `AdventureWorks`.
 1. Uncheck the **Encrypt connection** box.
-1. The **Start** button should now be enabled. Click the button to start the capture, if you can't resize the window to see the button press **Enter**. You will see the capture details page, and the countdown timer.
+1. The **Start** button should now be enabled. Click the button to start the capture, if you can't resize the window to see the button press **Enter**. You'll see the capture details page, and the countdown timer.
 1. Return to **SQL Server Management Studio**, and the workload file. Click **Execute**. Leave this to run. If the timer in the **Database Experimentation Assistant** stops before the workload script has completed, click **Cancel Executing Query**.
-1. When the timer runs out in the **Database Experimentation Assistant**, you will see the message **This capture trace is ready for replay**.
+1. When the timer runs out in the **Database Experimentation Assistant**, you'll see the message **This capture trace is ready for replay**.
 1. Leave the **Database Experimentation Assistant** window open.
 
 ## Create the Target 1 database
 
-The next step is to restore your backed up database as "Target 1", and with SQL Server 2008 compatibility level.
+The next step is to restore your database backup as "Target 1", and with SQL Server 2008 compatibility level.
 
 1. In **SQL Server Management Studio**, in **Object Explorer**, right-click **Databases**, and select **Restore Database...***.
 1. When the **Restore Database** window appears, click **Device**, and then click the browse **...** button.
@@ -57,7 +57,7 @@ The next step is to restore your backed up database as "Target 1", and with SQL 
 
 ## Create the Target 2 database
 
-Next, restore your backed up database again, this time as "Target 2", and with SQL Server 2017 compatibility level.
+Next, restore your database backup again, this time as "Target 2", and with SQL Server 2017 compatibility level.
 
 1. In **Object Explorer**, right-click **Databases**, and select **Restore Database...**.
 1. When the **Restore Database** window appears, click **Device**, and then click the browse **...** button.
@@ -67,7 +67,7 @@ Next, restore your backed up database again, this time as "Target 2", and with S
 1. In the **Restore Database** window, you should now see a status of **Ready** in the top left-hand corner.
 1. Under **Destination**, in the **Database** field, type `Target_2`.
 1. From the **Select a page** tab, click **Files**. Click **Relocate all files to folder**. Click **OK**.
-1. When you see the message **Database 'Target_2' restored successfully.**, click **OK** to return to Management Studio.
+1. When you see the message **Database 'Target_2' restored successfully**, click **OK** to return to Management Studio.
 1. In **Object Explorer**, under **Databases**, right-click **Target_2**, and select **Properties**.
 1. In the **Database Properties - Target_2**, from the **Select a page** tab, click **Options**. In the **Compatability level** select list, choose **SQL Server 2017 (140)**. Click **OK**
 
@@ -82,9 +82,9 @@ Now run the trace files from your DEA capture against both the Target 1 and Targ
 1. In the **Replay name** field, type `ReplayTarget1`.
 1. Select **XEvents** from the **Source Trace Format** select list, and leave **Location** selected as **Local**.
 1. Set the **Replay Trace Location** to `C:\replay`, and click to agree, **Yes, I have manually restored the database(s).**
-1. Leave the **Server Type** as **SqlServer**, and enter `localhost` in the **Server name** field. The **Authentical Type** should be selected as **Windows**.
-1. In the **Database name (optional)** field, type `Target_1`. Unclick **Encrypt connection**, and click **Start**. This takes you to the Replay window, where you will see the progress of the replay.
-1. When the replay has completed, you will see the message **This replay trace is ready for analysis**.
+1. Leave the **Server Type** as **SqlServer**, and enter `localhost` in the **Server name** field. The **Authenticate Type** should be selected as **Windows**.
+1. In the **Database name (optional)** field, type `Target_1`. Unclick **Encrypt connection**, and click **Start**. This takes you to the Replay window, where you'll see the progress of the replay.
+1. When the replay has completed, you'll see the message **This replay trace is ready for analysis**.
 1. On the same screen in the top right, click **Clone**.
 1. In the **Replay name** field, type `ReplayTarget2`.
 1. Select **XEvents** from the **Source Trace Format** select list, and leave **Location** selected as **Local**.

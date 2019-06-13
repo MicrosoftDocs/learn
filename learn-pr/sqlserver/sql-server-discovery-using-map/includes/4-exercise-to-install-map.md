@@ -1,6 +1,6 @@
-Suppose you are a new database administrator for a law firm with branch offices across the country. You are going to use the **Microsoft Assessment and Planning (MAP)** toolkit to create an inventory of all the SQL Server instances in the organization. As a first step you will install the toolkit on test machine, and configure the toolkit to use a sample MAP database.
+Suppose you're a new database administrator for a law firm with branch offices across the country. You're going to use the **Microsoft Assessment and Planning (MAP)** toolkit to create an inventory of all the SQL Server instances in the organization. As a first step You'll install the toolkit on test machine, and configure the toolkit to use a sample MAP database.
 
-In this exercise, you will install the Microsoft Assessment and Planning Toolkit a test computer, and then restore the sample backup database.
+In this exercise, you'll install the Microsoft Assessment and Planning Toolkit a test computer, and then restore the sample backup database.
 
 ## Install the Microsoft Assessment and Planning Toolkit
 
@@ -12,7 +12,7 @@ Start by using the installer to set up the Microsoft Assessment and Planning Too
 1. Close the Server Manager window.
 1. Double-click on the **MAPSetup.exe** shortcut on your desktop.
 1. In the **Microsoft Assessment and Planning Toolkit** window, click **Next**.
-1. On the **License Agreement** page, click **I accept the terms in the License Agreement.**, and then click **Next**.
+1. On the **License Agreement** page, click **I accept the terms in the License Agreement**, and then click **Next**.
 1. On the **Installation Folder** page, leave the default location as **C:\Program Files\Microsoft Assessment and Planning Toolkit**, and click **Next**.
 1. On the **Begin the installation** page, click **Install**.
 1. The **Configuring Microsoft Assessment and Planning Toolkit** page displays the progress of the installation.
@@ -36,4 +36,4 @@ Now that MAP is installed, you can use it to analyze a database. Follow these st
 
 ## Summary
 
-Here, you setup the Microsoft Assessment and Planning Toolkit, and connected to the sample training database. You can use the toolkit locally to familiarize yourself with its functionality using the sample database, before running it on your production servers.
+You setup the Microsoft Assessment and Planning Toolkit, and connected to the sample training database. You can use the toolkit locally to familiarize yourself with its functionality using the sample database, before running it on your production servers.
