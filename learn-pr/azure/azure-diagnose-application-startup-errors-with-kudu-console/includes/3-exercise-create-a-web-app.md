@@ -17,13 +17,15 @@ We'll start by creating a web app to monitor. Follow these steps:
 
 You need to set up a name, a resource group, a location, and some other properties for your web app. Follow these steps:
 
-1. In the **App name** box, enter a unique name for your app. For example, you could use **&lt;yourname&gt;HotelApp**. The name you choose must be unique within the `.azurewebsites.net` domain.
 1. In the **Subscription** list, select **Concierge subscription**.
-1. Under **Resource Group**, select **Use existing** and then select the sandbox resource group, <rgn>[Sandbox resource group]</rgn>.
-1. Leave the default values for the **Publish**, **Location**, **Plan**, and **Sku and size** options.
-1. Select **Windows** for Operating System.
+1. Under **Resource Group**, select existing sandbox resource group from the drop down, <rgn>[Sandbox resource group]</rgn>.
+1. In the **App name** box, enter a unique name for your app. For example, you could use **&lt;yourname&gt;HotelApp**. The name you choose must be unique within the `.azurewebsites.net` domain.
+1. Leave the default values for **Publish** field.
 1. Select *`.NET Core 2.2`* for Runtime stack.
-1. In the **Monitoring** tab, select **No** for **Enable Application Insights**.
+1. Select **Windows** for Operating System.
+1. Use the default selection for **Region** and **Plan**
+1. Select **Standard S1** for **Sku and size** options.
+1. Optional - In the **Monitoring** tab, select **No** for **Enable Application Insights**.
 1. At the bottom of the blade, select **Review and Create**.
 1. Review the summary screen details and select **Create**.
 1. When the web app is created, in the left pane, select **All resources**.
