@@ -4,7 +4,7 @@ Savvy businesses draw upon data from employees, customers, operations, and produ
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about the digital feedback loop and how it's implemented at Tesla.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about the digital feedback loop and how it's implemented at Tesla.|
 >[!video https://www.microsoft.com/videoplayer/embed/RWr1Vs]
 
 As the video shows, using the power of Azure to apply intelligence and improve decision-making can fundamentally transform your business. Azure provides unique value in four areas, which we explore next.
@@ -23,7 +23,7 @@ Microsoft will be a partner with you throughout your digital transformation jour
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about the unique value of Azure.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about the unique value of Azure.|
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqRy7]
 
 Now, let’s take a more in-depth look at the benefits of Azure.
