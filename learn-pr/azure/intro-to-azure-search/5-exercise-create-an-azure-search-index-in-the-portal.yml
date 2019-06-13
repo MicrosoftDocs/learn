@@ -4,7 +4,7 @@ title: Exercise - Create an Azure Search index in the Azure portal
 metadata:
   title: Exercise - Create an Azure Search index in the Azure portal
   description: In this exercise, you'll load and index JSON data in the Azure Search service
-  ms.date: 04/16/2019
+  ms.date: 06/13/2019
   author: andrewjbyrne
   ms.author: anbyrne
   ms.topic: interactive-tutorial
