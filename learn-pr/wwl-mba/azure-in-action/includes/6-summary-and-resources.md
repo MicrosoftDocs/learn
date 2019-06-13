@@ -37,9 +37,9 @@ Use these resources to discover more.
 
 ### Introduction
 
-- [Applications and infrastructure migration and modernization](https://docs.microsoft.com/en-us/learn/modules/app-and-infra-migration-and-modernization/index)
+- [Applications and infrastructure migration and modernization](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization/index)
 
-- [Introduction to Microsoft data estate migration and modernization](https://docs.microsoft.com/en-us/learn/modules/data-estate-migration-and-modernization/1-introduction-to-microsoft-data-estate-migration-and-modernization)
+- [Introduction to Microsoft data estate migration and modernization](https://docs.microsoft.com/learn/modules/data-estate-migration-and-modernization/1-introduction-to-microsoft-data-estate-migration-and-modernization)
 
 ### Demo - Microsoft Azure migration
 
