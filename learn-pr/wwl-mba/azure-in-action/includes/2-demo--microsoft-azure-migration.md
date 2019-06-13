@@ -116,7 +116,7 @@ Before beginning the migration of Contoso's support application, Victor creates 
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM6]
 
->**Key ideas**: Use the **Azure Migrate** solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.
+**Key ideas**: Use the **Azure Migrate** solution to easily discover and assess your on-premises virtual machines, eliminating the need for your IT department to manually count servers and determine specs.
 
 ![](../media/clear.png)
 
@@ -135,7 +135,7 @@ Victor deploys and configures an appliance called a "collector," which will disc
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2PyM7]
 
->**Key ideas**: Deploying the **Azure Migrate Collector** will not only help you evaluate your physical on-premises servers but will also work with vSphere to assess virtual servers.
+**Key ideas**: Deploying the **Azure Migrate Collector** will not only help you evaluate your physical on-premises servers but will also work with vSphere to assess virtual servers.
 
 ![](../media/clear.png)
 
