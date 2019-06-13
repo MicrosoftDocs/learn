@@ -4,7 +4,7 @@ Real-world data is messy. It often spans media types, such as text documents, PD
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn how knowledge mining can help you unlock valuable information lying latent in all your content.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn how knowledge mining can help you unlock valuable information lying latent in all your content.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWDE]
 
@@ -14,7 +14,7 @@ Now that you understand more about how knowledge mining is used to interpret dat
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Now let’s take a look at how knowledge mining works, and how it was applied by iCertis, a contract management company, to draw valuable insights from a large amount of unstructured data.|
+|![Icon indicating play video](../media/video-icon.png)|Now let’s take a look at how knowledge mining works, and how it was applied by iCertis, a contract management company, to draw valuable insights from a large amount of unstructured data.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrH6A]
 
@@ -22,7 +22,7 @@ As you saw in the video, Azure Cognitive Search ingested data in the form of PDF
 
 Here is a diagram of the knowledge mining process similar to that used by iCertis, that illustrates how content is ingested, cracked, enriched, and indexed to allow for data mining and search through various applications such as websites and chatbots.  
 
-![Azure Search and Cognitive Services](../media/IC-GM06-AI_Diagram-Cognitive.png)
+![Azure Search and Cognitive Services](../media/ic-gm06-ai-diagram-cognitive.png)
 
 Now that you’ve seen an example of how knowledge mining works, here are a few other industry examples where knowledge mining is applied to solve a business problem.
 
