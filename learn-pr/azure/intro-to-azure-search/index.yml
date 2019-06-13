@@ -17,7 +17,9 @@ abstract: |
   - Create an Azure Search index
   - Import data to the index
   - Query the Azure Search index
-prerequisites: None
+prerequisites: |
+  - Beginner-level experience with C#
+  - Familiarity with Azure Blob storage
 cardDescription: Use Azure Search to make your data searchable.
 iconUrl: /learn/achievements/azure-introduction-to-azure-search.svg
 levels: 
