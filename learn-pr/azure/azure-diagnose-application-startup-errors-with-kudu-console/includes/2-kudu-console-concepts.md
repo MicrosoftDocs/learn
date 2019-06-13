@@ -4,19 +4,19 @@ Azure App Service is a web hosting service that helps you deploy your ASP.NET Co
 
 ## What is Kudu console?
 
-Kudu is a troubleshooting and analysis tool for capturing memory dump using logs and configuration parameters on Microsoft Azure Web Apps. Kudu Console provides both command line and file browser access to your sites. You can access the kudu console of the web page, use    *`{yoursite}.scm.azurewebsites.net`* URL and click on **Debug Console**. 
+Kudu is a troubleshooting and analysis tool for capturing memory dump using logs and configuration parameters on Microsoft Azure Web Apps. Kudu Console provides both command line and file browser access to your sites. To access the Kudu console of the web page, go to the `{yoursite}.scm.azurewebsites.net` URL and click on **Debug Console**.
 
-The Source Control Management (SCM) service site runs Kudu service and other site extensions. The services offered by Kudu manages deployment and troubleshooting for Azure Web Apps, including options for viewing and downloading log files.
+The Source Control Management (SCM) service site runs the Kudu service and other site extensions. The services offered by Kudu manages deployment and troubleshooting for Azure Web Apps, including options for viewing and downloading log files.
 
-## Kudu console functionalities
+## Kudu console functionality
 
 Some of the things you can do with kudu console:
 
 1. Run commands - Use it to do most standard console operations: changing folder, copy/rename/delete files, and so on. You can also run git commands like git log, git status to diagnose some issues.
 
-1. Navigate folder UI - You can access the site folder and the console window simultaneously navigates to the same folder, so the two halves of the Kudu console work together. 
+1. Navigate folder UI - You can use a GUI to select the site folder, and the console window simultaneously navigates to the same folder, so the two halves of the Kudu console work together. 
 
-1. Download files and folder - For files and folders, you can download the file or a zip file containing the contents of the folder, respectively. 
+1. Download files and folder - For files and folders, you can download the file or a zip file containing the contents of the folder.
 
 1. Upload files and folder - Use drag and drop into the Kudu Console's file explorer UI.
 

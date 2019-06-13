@@ -12,8 +12,9 @@ title: Diagnose startup errors in your application using Kudu console
 summary: This module will help you understand the common startup errors in a ASP.NET Core application and diagnose them using Kudu console.
 abstract: |
   In this module, you'll:
-  - Describe the different types of App startup errors  
-  - Use kudu console to examine the application event log
+  - Learn about the concepts of Kudu console
+  - Learn various types of App startup errors
+  - Use Kudu console to examine the application event log
 prerequisites: |
   - Experience in basic web app development and deployment
   - Understanding of App Service in Microsoft Azure

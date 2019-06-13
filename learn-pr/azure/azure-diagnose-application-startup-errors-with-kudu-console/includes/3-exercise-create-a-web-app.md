@@ -12,7 +12,6 @@ We'll start by creating a web app to monitor. Follow these steps:
 1. In the left pane, select **Create a resource**.
 1. In the **Search the Marketplace** box, enter **web app**, and then select Enter.
 1. In the list of results, select **Web App**.
-1. On the **Web App** blade, select **Create**.
 
 ## Configure the web app
 

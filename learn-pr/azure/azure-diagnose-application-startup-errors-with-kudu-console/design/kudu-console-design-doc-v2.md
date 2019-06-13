@@ -47,7 +47,7 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
     You are an IT admin supporting a leading hotel and resort company using Azure web apps. The hospitality group is rolling out a new service to its gold tier members to support digital room selection.  This service however returns an application process failure message. 
 
-    In this module, you will learn how to diagnose the app startup error by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you will use the Kudu remote execution console to discover the error.
+    In this module, you'll learn how to diagnose the app startup error by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you'll use the Kudu diagnostic console to discover the error.
 
 1. **Describe Kudu console purpose and functionalities**
     
