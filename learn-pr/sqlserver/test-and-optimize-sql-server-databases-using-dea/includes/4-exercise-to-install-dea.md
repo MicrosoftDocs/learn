@@ -1,6 +1,8 @@
-You are in the process of upgrading several CRM databases to SQL Server 2017, and these databases include versions from SQL Server 2008 R2 through to SQL Server 2016. These databases are critical to your organization’s business, so you must be able to identify any potential performance issues, before the upgraded databases go live into production. You have chosen to use the Microsoft Database Experimentation Assistant (DEA) to help with this task. As a first step, you need to install DEA.
+Installing the **Database Experimentation Assistant (DEA)** is easy, and once installed it can be rerun at any time. 
 
-In this exercise, you will install the Database Experimentation Assistant on your local machine.
+You are in the process of upgrading several CRM databases to SQL Server 2017, and these databases include versions from SQL Server 2008 R2 through to SQL Server 2016. These databases are critical to your organization's business, so you must be able to identify any potential performance issues, before the upgraded databases go live into production. You have chosen to use the DEA to help with this task. As a first step, you need to install DEA.
+
+In this exercise, you will install the DEA on your local machine.
 
 ## Start the lab
 
@@ -19,7 +21,3 @@ Use the installer to set up the Database Experimentation Assistant.
 1. When the **Setup Options** screen appears, click **OK**.
 1. When you see the message **Installation Successfully Completed**, click **Close**.
 1. Click **Start**, and type **Database Experimentation Assistant**, and click to open the application.
-
-## Summary
-
-Here, you setup the Microsoft Database Experimentation Assistant on your client machine. You can now connect to your migrated databases to test their performance in the upgraded version of SQL Server.

@@ -3,10 +3,10 @@ uid: learn-sqlserver.deploying-sql-server-on-linux.6-deploy-sql-server-on-redhat
 title: Deploy SQL Server on Red Hat
 metadata:
   title: Deploy SQL Server on Red Hat
-  description: Deploy SQL Server on Red Hat
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: In this unit, you will learn how to install, configure, and update SQL Server on Red Hat servers.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
