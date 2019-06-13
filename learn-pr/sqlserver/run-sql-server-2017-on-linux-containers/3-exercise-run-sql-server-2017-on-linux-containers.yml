@@ -11,5 +11,7 @@ metadata:
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 10
+## TODO: Insert the correct Lab ID here when we have it.
+labId: 51799
 content: |
   [!include[](includes/3-exercise-run-sql-server-2017-on-linux-containers.md)]

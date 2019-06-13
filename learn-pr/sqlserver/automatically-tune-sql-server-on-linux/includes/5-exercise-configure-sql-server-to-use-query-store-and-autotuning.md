@@ -2,13 +2,20 @@ Now that you can monitor SQL Server performance counters by using Azure Data Stu
 
 You want to evaluate using the query store to identify query plan regressions and obtain recommended scripts to correct them. Also, you want to evaluate the possibility of using automatic tuning to correct those problems.
 
-## Ensure that the Query Store is cleared and autotuning is disabled
+## Start Azure Data Studio
 
-In order to ensure that Query Store contains only relevant information, you want to start by emptying the Query Store and ensuring that automatic tuning is switched off.
+If you logged out of the VM, start this exercise by logging on and starting Azure Data Studio:
 
-1. Sign in to the **RHELSQLServer** image, by clicking **Administrator**, typing the password **Pa$$w0rdLinux** and clicking **Sign In**.
+1. Sign into the VM with your Microsoft account.
+1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the username **Administrator** and the password **Pa$$w0rdLinux**.
+1. Close the **Server Manager** window.
 1. At the top-left of the desktop, click **Applications**, click **System Tools**, and then click **Terminal**.
 1. Type **azuredatastudio** and then press Enter.
+
+## Initialize the exercise
+
+Now, run a SQL script that sets up the necessary resources for the lab:
+
 1. In **Azure Data Studio**, on the **File** menu, click **Open File** and then browse to the **Downloads/sqllinuxautotune** folder.
 1. Click **initialize.sql** and then click **Open**. This script ensures that the query store is empty and that auto tuning is disabled.
 1. In the top-left of the script window, click **Run** and then in the **Connection** window, under **Recent history** click **localhost**.

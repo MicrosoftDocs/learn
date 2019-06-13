@@ -11,5 +11,7 @@ metadata:
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 5
+## TODO: Update this when we have the correct Lab ID
+labId: 47218
 content: |
   [!include[](includes/5-exercise-configure-sql-server-to-use-query-store-and-autotuning.md)]

@@ -4,16 +4,18 @@ Suppose you are a database administrator for a global novelty goods importer cal
 
 You want to use Azure Data Studio to display SQL Server performance counters and how they vary over time.
 
-## Start and configure the server image
+## Start the lab
 
-Start by connecting to the LInux server:
+Start by logging into the database server:
 
-1. To sign in to the **RHELSQLServer** image, click **Administrator**, type the password **Pa$$w0rdLinux**, and then click **Sign In**.
+<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/46511?providerId=4 -->
+1. Sign into the VM with a Microsoft account, or create a new account.
+1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with theusername **Administrator** and the password **Pa$$w0rdLinux**.
+1. Close the Server Manager window.
 1. At the top-left of the desktop, click **Applications**, click **System Tools**, and then click **Settings**.
 1. Click **Network** and then click the **+** button adjacent to **Wired**.
 1. In **Name**, type **Ethernet** and then in **MAC Address** box, select the **eth0** address.
-1. Click **Add**.
-1. Close **Settings**.
+1. Click **Add**, and then close **Settings**.
 
 ## Install Azure Data Studio
 

@@ -4,15 +4,19 @@ Suppose you are the system architect for a company that retails bicycle parts. Y
 
 Here, you will use Docker Compose to automate the creation of a complete test environment for your bike parts database.
 
-## Sign in to the image
+## Start the exercise
 
-Connect to the image:
+If you logged out of the VM, start this exercise by logging on and starting the terminal:
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/51800?providerId=4.
-1. Sign with a Microsoft account, or create a new account and start the virtual machine.
-1. If using the virtual machine lab steps, scroll down to Exercise 7.
-1. Sign in, by clicking **Administrator**, typing the password **Pa$$w0rdLinux** and clicking **Sign In**.
-1. At the top-left of the desktop, click **Applications**, click **System Tools**, and then click **Terminal**.
+1. Sign into the VM with your Microsoft account.
+1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the username **Administrator** and the password **Pa$$w0rdLinux**.
+1. Close the **Server Manager** window.
+1. At the bottom-left of the desktop, click **Show Applications**, and then click **Terminal**.
+1. To ensure you are in the home folder, type the following command and then press Enter:
+
+    ```bash
+    cd ~
+    ```
 
 ## Install Docker Compose
 

@@ -4,18 +4,19 @@ Suppose you are the system architect for a company that has created a text messa
 
 Here, you will install Docker and a SQL Server image on an Ubuntu server.
 
-## Start the Host Virtual Machine
+## Start the lab
 
-Begin by starting the Labs On Demand virtual machine that will act as a Docker host:
+Start by logging into the Docker hoar server:
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/51799?providerId=4.
-1. Sign with a Microsoft account, or create a new account and start the virtual machine.
+<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/51799?providerId=4 -->
+1. Sign into the VM with a Microsoft account, or create a new account.
+1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the **Administrator** password **Pa$$w0rdLinux**.
+1. Close the Server Manager window.
 
 ## Install Prerequisites
 
 Before you can install Docker, add all the dependency packages that docker requires:
 
-1. To sign in, click **Administrator**, type the password **Pa$$w0rdLinux**, and then click **Sign In**.
 1. At the bottom-left of the desktop, click **Show Applications**, and then click **Terminal**.
 1. To update the package index, type the following command, and then press Enter:
 

@@ -6,13 +6,12 @@ Here, you will see how to  deploy SQL Server on Ubuntu, install command-line too
 
 ## Start the lab
 
-Start by logging into the database server:
+Start by logging into the Ubuntu server:
 
-<!--TODO: This link must be corrected when we know where the lab is hosted.-->
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/47218?providerId=4.
-1. Sign with a Microsoft account, or create a new account.
-1. To sign in, type **student**, and then press Enter.
-1. Type **Pa55w.rd**, and then press Enter.
+<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/47218?providerId=4 -->
+1. Sign into the VM with a Microsoft account, or create a new account.
+1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the username **student**, and the password **Pa55w.rd**.
+1. Close the Server Manager window.
 
 ## Install the SQL Server package
 

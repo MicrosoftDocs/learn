@@ -11,5 +11,7 @@ metadata:
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 7
+## TODO: Insert the correct Lab ID here when we have it.
+labId: 51799
 content: |
   [!include[](includes/7-exercise-use-docker-compose-to-deploy-multiple-containers.md)]
