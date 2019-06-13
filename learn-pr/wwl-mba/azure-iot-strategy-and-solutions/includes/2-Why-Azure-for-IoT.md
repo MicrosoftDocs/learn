@@ -18,7 +18,7 @@ For organizations across all industries, Azure IoT can help solve a common set o
 
 The diagram illustrates a recommended IoT solution architecture that is cloud native, microservices, and serverless-based.
 
-![Azure IoT reference architecture illustration](../media/IC-GM07-diagram.png)
+![Azure IoT reference architecture illustration](../media/ic-gm07-diagram.png)
 
 An IoT application consists of the following subsystems:
 

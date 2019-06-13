@@ -16,8 +16,8 @@ Now that you’ve learned about how Azure IoT has been applied to various indust
 >For more details on the full set of Azure IoT products and services, use the products tab on azure.com. See links in the “Summary and resources” unit at the end of the module.
 
 |  |  |
-| ------------ | -------------:|
-|![Icon of lightbulb](../media/lightbulb_icon.png)|*Azure IoT solutions offer a wide range of capabilities while adapting to your existing infrastructure. Whether you are just embarking on your IoT journey, or you already have IoT assets to manage and deploy, Azure IoT solutions can help you take your next step. First, take a moment to reflect on the outcomes you would like to achieve. Then, consider any possibilities you can imagine with IoT to further drive your digital transformation.*
+| ------------ | -------------|
+|![Icon of lightbulb](../media/lightbulb.png)|*Azure IoT solutions offer a wide range of capabilities while adapting to your existing infrastructure. Whether you are just embarking on your IoT journey, or you already have IoT assets to manage and deploy, Azure IoT solutions can help you take your next step. First, take a moment to reflect on the outcomes you would like to achieve. Then, consider any possibilities you can imagine with IoT to further drive your digital transformation.*
 |
 
 Now, let's wrap up everything you've learned with a knowledge check.
