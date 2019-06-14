@@ -4,6 +4,9 @@
 
 Across organization types, sizes,  and industries, the decision to invest in cloud technologies is tightly connected to some critical business events, as the cloud may be the appropriate solution enabler for such events.  Moreover, proper cloud technologies implementation may turn a reactive response into an innovation opportunity to drive growth for the organization.
 
+:::row:::
+:::column:::
+
 **Critical Business Events**
 
 :::column-end:::
