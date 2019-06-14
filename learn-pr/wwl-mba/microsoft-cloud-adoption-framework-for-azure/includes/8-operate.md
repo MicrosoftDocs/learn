@@ -1,0 +1,316 @@
+﻿Adopting the cloud is a journey, not a destination. Along the way, there are clear milestones and tangible business benefits. However, the final state of cloud adoption is unknown when a company begins the journey. As your organization moves or deploys new applications to the cloud, this final state starts to form. It’s important to consider the following aspects of managing and operating a cloud platform:
+
+- **Define governance solutions for your cloud environment** that meet your organization’s business needs, provide agility, and control risks.
+
+- **Manage your cloud environment** to allow it to evolve, grow, and adapt to your organization’s changing business needs.
+
+## Cloud Govern
+
+Cloud governance creates guardrails that keep the company on a safe path throughout the journey. The Cloud Adoption Framework governance model identifies key areas of importance during the journey. Each area relates to different types of risks the company must address as it adopts more cloud services.
+
+## Define Corporate Policy
+
+:::row:::
+:::column:::
+
+![business risk icon](../media/business-risk.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Business risks**
+
+Document evolving business risks and the business' tolerance for risk, based on data classification and application critically.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![policy and compliance icon](../media/policy-compliance.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Policy & Compliance**
+
+Convert Risk decisions into policy statements to establish cloud adoption boundries.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![process icon](../media/process.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Process**
+
+Establish processes to monitor violations and adherence to corporate policies.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+:::column-end:::
+:::column:::
+
+:::column-end:::
+:::row-end:::
+
+**Five Disciplines of Cloud Governance**
+
+:::row:::
+:::column:::
+
+![cost management icon](../media/cost-management.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Cost Management**
+
+Evaluate & monitor costs, limit IT spend, scale to meet need, create cost accountability.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![security baseline icon](../media/security-baseline.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Security Baseline**
+
+Ensure compliance with IT Security requirements by applying a security baseline to all adoption efforts.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![resource consistency icon](../media/resource-consistency.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Resource Consistency**
+
+Ensure consistency in resource configuration. Enforce practices for on-boarding, recovery and discoverability.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![identity baseline icon](../media/identity-baseline.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Identity Baseline**
+
+Ensure the baseline for identity and access are enforced by consistently applying role definitions and assignments.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![deployment acceleration icon](../media/deployment-acceleration.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Deployment Acceleration**
+
+Accelerate deployment through centralization, consistency and standardization across deployment templates.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+:::column-end:::
+:::column:::
+
+:::column-end:::
+:::row-end:::
+
+Because governance requirements will evolve throughout the cloud adoption journey, a different approach to governance is required. Companies can no longer wait for a small team to build guardrails and roadmaps on every highway before taking the first step. Business results are expected more quickly and smoothly. IT governance must also move quickly and keep pace with business demands to stay relevant during cloud adoption and avoid "shadow IT."
+
+An **incremental governance** approach empowers these traits. Incremental governance relies on a small set of corporate policies, processes, and tools to establish a foundation for adoption and governance. That foundation is called a **minimum viable product (MVP)**. An MVP allows the governance team to quickly incorporate governance into implementations throughout the adoption lifecycle. An MVP can be established at any point during the cloud adoption process. However, it’s a good practice to adopt an MVP as early as possible. Once this MVP has been deployed, additional layers of governance can be quickly incorporated into the environment. 
+
+| | |
+| ---| --- |
+| ![Icon of lightbulb](../media/lightbulb.png)| *Now that you know how cloud governance is defined, are you ready to evaluate where you should start implementing your own cloud governance? See the Summary and Resources section for a link to the Cloud Governance Tool.*|
+|
+
+## Cloud Operate
+
+As learned in the Plan stage, the first step in the cloud adoption journey is identifying the business problems to be solved by adopting Azure. The next step is to determine a high-level solution to the problem, such as migrating a workload to the cloud, or adapting an existing on-premises service to include cloud functionality. Finally, the solution is designed and implemented (in the Adopt stage for the Cloud Adoption Framework).
+
+Throughout Plan, Ready, and Adopt phases, business value is hypothetical and aspirational. Only when the solution moves into operations can it provide actual business returns. The goal of the Cloud Adoption Framework Operate methodology is to maximize on-going business returns by creating balance between stability and operational costs. Stable business operations lead to stable revenue streams, while controlled operational costs reduce the overhead to drive more profit from the business processes. Creating this balance is a two-step process outlined below.
+
+## Business Stability
+
+:::row:::
+:::column:::
+
+![Critically icon](../media/criticality.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Critically**
+
+Document the critically and relative business value of each workload.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![Impact icon](../media/impact.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Impact**
+
+Establish clear performance expectations and business interruption time/value metrics.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![Commitment icon](../media/commitment.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Commitment**
+
+Document, track, and report on commitments to cost and performance.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+:::column-end:::
+:::column:::
+
+:::column-end:::
+:::row-end:::
+
+**Cloud Operations**
+
+:::row:::
+:::column:::
+
+![inventory and visibility icon](../media/inventory-visibility.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Inventory & Visibility**
+
+Establish a defined inventory of assets. Develop visibility into the asset telemetry.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![operational compliance icon](../media/operational-compliance.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Operational Compliance**
+
+Manage configuration drift and standards. Apply management automation and controls.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![protect and recover icon](../media/protect-recover.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Protect & Recover**
+
+Implement solutions to minimize performance interruptions and ensure rapid recovery when needed.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![platform operations icon](../media/platform-operations.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Platform Operations**
+
+Customize operations to improve performance aspects specific to the commonly leveraged platforms.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+![workload operations icon](../media/workload-operations.png)
+
+:::column-end:::
+:::column span="3":::
+
+**Workload Operations**
+
+Understand workload telemetry. Customize operations to maximize workload performance and functionality.
+
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column:::
+
+:::column-end:::
+:::column:::
+
+:::column-end:::
+:::row-end:::
+
+**Business stability** requirements are defined through negotiations with the business regarding Criticality, Impact, and Commitment. During criticality processes, each workload is assigned a mission criticality and relative business value. These values can often come from the Migration Backlog efforts during the Plan phase. Criticality will drive the level of operational support. During Impact processes, the architecture is reviewed to determine clearly defined performance expectations. Those expectations would include resource scalability, availability, and resiliency needs. During the process, the cloud operations team also documents clear time/value metrics to help communicate the business losses experienced during an outage, often measured in $/hour of downtime. During Commitment processes, the cloud operations team communicates architectural changes and establishes processes for tracking and reporting on commitments to cost and performance. Communicating commitments in SLA terms such as 99.99% of availability is common. However, more effective commitments communicate in terms of “time/value impact” vs “cost of impact avoidance.” Cost of impact avoidance captures the additional operating costs required to achieve performance expectations.
+
+> [!TIP]
+> Links to the scalability, availability, and resiliency resources are available in the “Summary and resources” unit at the end of this module.
+
+**Cloud Operations** creates a maturity model that helps the cloud operations team fulfill commitments to the business. In the early stages of maturity, customer focus on basic needs such as inventory and visibility into cloud assets and performance. As operations in the cloud mature, the cloud ops team can use cloud native or hybrid approaches to maintaining operational compliance, which reduces likelihood of interruptions through configuration and state management. Once compliance is achieved, protection and recovery services provide low impact ways to reduce the duration and impact of business process interruptions. During Platform operations, aspects of various platforms (like containers or data platforms) are adjusted and automated to improve performance. At the highest stage of evolution, the cloud operations team can partner with cloud adoption teams and business stakeholders to improve the architecture and operations of mission critical workloads. This phase builds on monitoring data, commitments, and Common Design Principles to implement workload level performance improvements.
+
+Next, let's see what you've learned about the Cloud Adoption Framework with a knowledge check.
+
+:::row:::
+![Icon of lightbulb](../media/key-takeaway.png)
+:::column:::
+
+Here are the key points from this module:
+
+- As your organization moves or deploys new applications to the cloud, it’s important to consider the aspects of managing and operating a cloud platform: defining governance solutions for your cloud environment, and managing your cloud environment.
+
+- The Cloud Adoption Framework governance model identifies key areas of importance, each relating to different types of risks the company must address as it adopts more cloud services. There are five disciplines of cloud governance: cost management, security baseline, resource consistency, identity baseline, and deployment acceleration.
+
+- The goal of the Cloud Adoption Framework Operate methodology is to maximize ongoing business returns by creating balance between business stability and cloud operations costs.
+
+:::column-end:::
+:::row-end:::
