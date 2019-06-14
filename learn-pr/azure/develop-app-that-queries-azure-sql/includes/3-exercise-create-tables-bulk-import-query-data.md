@@ -1,8 +1,6 @@
-Azure SQL Database runs as a cloud service. The simplest way to create a database is to use the Azure portal. You can import data to a database in many different ways, but if you want to insert a large number of rows quickly, use the bulk copy command, **bcp**. Once you have the data in your tables, you can run some queries. The Azure portal provides the Query Editor for defining queries graphically, or you can use the **sqlcmd** utility from the Cloud Shell if you're familiar with SQL.
+The educational institute currently stores their data in a series of comma-delimited files. You must migrate this data to Azure SQL Database. The simplest way to do this is to use the bulk copy command, **bcp**.
 
-The educational institute currently stores their data in a series of comma-delimited files. You must migrate this data to Azure SQL Database.
-
-In this exercise, you'll create an instance of the Azure SQL Database service and a database. Next, you'll create tables and import data into the database. Finally, you'll query the data using the Query Editor and the **sqlcmd** utility.
+In this exercise, you'll create a database server, and a database, using the Azure SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll query the data using the Query Editor and the **sqlcmd** utility.
 
 ## Examine the existing comma-delimited data
 
@@ -109,7 +107,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
     ...
     ```
 
-## Create an Azure SQL Database instance and database
+## Create a database server and database with the Azure SQL Database service
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
 
@@ -131,7 +129,7 @@ In this exercise, you'll create an instance of the Azure SQL Database service an
     | Database name | *\<your-database-name\>* |
     | Server | Click **Create new**, and enter the details shown in the table below |
     | Want to use SQL elastic pool? | No |
-    | Compute + storage | Standard S0 |
+    | Compute + storage | General Purpose|
 
     For the server, specify the following details in the **New server** pane, and then click **Select**:
 

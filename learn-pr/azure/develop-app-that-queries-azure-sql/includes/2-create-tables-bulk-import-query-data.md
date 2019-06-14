@@ -1,29 +1,29 @@
-Microsoft provides several tools that you can use to upload data to Azure SQL Database. These tools include SQL Server Integration Services (SSIS), the SQL `BULK INSERT` statement, and the Bulk Copy Program (bcp) utility. This unit focuses on **bcp** because it's convenient, and ideally suited to Azure SQL Database.
+Microsoft provides several tools that you can use to upload data to Azure SQL Database. These tools include SQL Server Integration Services (SSIS), the SQL `BULK INSERT` statement, and the Bulk Copy Program (bcp) utility. This unit focuses on **bcp** because it's convenient, and can be easily scripted if you are importing data into multiple tables.
 
-Before you can import data, you must first create a database, so this unit also shows you how to configure an instance of Azure SQL Database service, and connect to this service to set up a database.
+Before you can import data, you must first create a logical database server to host and manage the single database, so this unit also shows you how to create a this database server, and connect to this server to create and use the database.
 
-In this unit, you'll see how to create a database and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the **sqlcmd** utility from the command line to connect to a database. You'll see how to use the **bcp** utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the **sqlcmd** utility.
+In this unit, you'll see how to create a single database, and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the **sqlcmd** utility from the command line to connect to a database. You'll see how to use the **bcp** utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the **sqlcmd** utility.
 
-## Create a database using the Azure SQL Database service
+## Create a database using the Azure portal
 
 The easiest way to create a new database is through the Azure portal. Either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**.
 
 ![Screenshots of the Azure portal, showing the ways to create a new Azure SQL Database](../media/2-create-database.png)
 
-When you create a database, you'll be prompted for the server to use to host the database. A server is an instance of the SQL Database service. You can create a new server, or you can select an instance that you've created previously. If you create a new server, you'll be asked to specify a server admin username and password. You use these credentials to connect to the server to perform administrative tasks and access the databases on this server.
+When you create a database, you'll be prompted for the server to use to host the database. You can create a new server, or you can select an instance that you've created previously. If you create a new server, you'll be asked to specify a server admin username and password. You use these credentials to connect to the server to perform administrative tasks and access the databases on this server.
 
 > [NOTE!]
 > Azure SQL Database supports authentication using Azure Active Directory. However, you always have to create an admin account when first creating a new server, and then grant access to accounts stored in Azure Active Directory.
 
-Each server is protected by a firewall, to block access to potentially malicious processes. You can open the firewall to enable access by other Azure services, and you can selectively enable access to other computers based on their IP address. Azure SQL Server also provides advanced data security, enabling you to specify the sensitivity of data in individual columns in tables, assess the vulnerability of your databases and take the necessary remediation steps, and send alerts when a threat is detected.
+Each database server is protected by a firewall, to block access to potentially malicious processes. You can open the firewall to enable access by other Azure services, and you can selectively enable access to other computers based on their IP address or address range. Azure SQL Server also provides advanced data security, enabling you to specify the sensitivity of data in individual columns in tables, assess the vulnerability of your databases and take the necessary remediation steps, and send alerts when a threat is detected.
 
-You allocate resources to a database in terms of Database Transaction Units (DTUs). A DTU is a measure of the calibrated cost of the resources (memory, I/O, and CPU) required to perform a benchmarked transaction, defined by Microsoft. For a detailed description of the DTU model, see [Service tiers in the DTU-based purchase model](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-dtu). Alternatively, you can provision resources using the virtual core (vCore) model, which provides a finer granularity of resources, and enables you to scale compute and storage resources independently. You can find a description of this model at [Choose among the vCore service tiers and migrate from the DTU service tiers](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-vcore)
+You can provision resources using the virtual core (vCore) model, which specifies the resources (memory, I/O, and CPU) to allocate, and enables you to scale compute and storage resources independently. You can find a description of this model at [Choose among the vCore service tiers and migrate from the DTU service tiers](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-vcore). Alternatively, you can assign resources in terms of Database Transaction Units (DTUs). A DTU is a measure of the calibrated cost of the resources required to perform a benchmarked transaction, defined by Microsoft. For a detailed description of the DTU model, see [Service tiers in the DTU-based purchase model](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-dtu).
 
-If you have a number of databases, and the resource requirements of these databases fluctuate, you can use SQL elastic pool. SQL elastic pool provides a pool of resources that can be shared between databases as demand requires.
+If you have a number of databases, and the resource requirements of these databases fluctuate, you can use SQL elastic pool. SQL elastic pool provides a pool of resources that can be shared between pooled databases as demand requires.
 
-One final choice that you make when creating a database is to specify how data should be collated. A collation defines the rules that the database uses for sorting and comparing data, and sets the character set used for text data. The default collection, *SQL_Latin1_General_CP1_CI_AS*, which treats strings as ASCII text using the character set defined by Code Page 1252. You can't change the code page once you've created the database. If you're using Azure SQL Database to migrate data from an existing database held on-premises, select the same collation as your on-premise database.
+One final choice that you make when creating a database is to specify how data should be collated. A collation defines the rules that the database uses for sorting and comparing data, and sets the character set used for text data. The default collection, *SQL_Latin1_General_CP1_CI_AS*, which treats strings as ASCII text using the character set defined by Code Page 1252. You can change the code page after you've created the database, but it is discouraged once the database contains data. For more information see [COLLATE (Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/collations?view=sql-server-2017).
 
-If you prefer to use the Azure CLI, you can create a server and database with the `az sql server create` and `az sql db create` commands. Create the server first. For some examples, visit [Azure CLI samples for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-cli-samples)
+If you prefer to use the Azure CLI, you can create a server and database with the `az sql server create` and `az sql db create` commands. Create the server first. For some examples, visit [Azure CLI samples for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-cli-samples). If you prefer PowerShell, there are a number of cmdlets available. The page [Azure PowerShell samples for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples) provides some examples.
 
 ## Create tables
 
@@ -55,7 +55,7 @@ You enter your SQL code in the query pane, and click **Run** to execute it. If t
 
 ![Screenshot of the Query editor in the Azure portal with the various panes highlighted](../media/2-query-editor-annotated.png)
 
-To use the **sqlcmd** utility, go to the Cloud Shell, and run the following command. Replace *\<server\>* with the name of the Azure SQL Database instance that you created, *\<database\> with the name of your database, and *\<username\>* and *\<password\>* with your credentials:
+To use the **sqlcmd** utility, go to the Cloud Shell, and run the following command. Replace *\<server\>* with the name of the database server that you created, *\<database\> with the name of your database, and *\<username\>* and *\<password\>* with your credentials:
 
 ```bash
 sqlcmd -S <server>.database.windows.net -d <database> -U <username> -P <password>
@@ -65,7 +65,7 @@ If sign-in is successful, you'll see a *1>* prompt. You can enter SQL commands o
 
 ## Bulk import data with bcp
 
-Bcp is a command-line utility that you can use to upload and download data from a database. For importing data, **bcp** requires three things:
+Bcp is a command-line utility that you can use to upload data to, and download data from a database. For importing data, **bcp** requires three things:
 
 1. The source data to upload,
 2. An existing table in the destination database, and

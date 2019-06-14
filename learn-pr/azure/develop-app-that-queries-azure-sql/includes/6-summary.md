@@ -1,10 +1,9 @@
 In this module, you learned how to:
 
-- Create, configure, and populate an Azure SQL Database
-- Develop an ASP.NET application that queries an Azure SQL Database
+- Create, configure, and populate a single database in Azure SQL Database
+- Develop an ASP.NET application that queries this database
 
 You now know how to create, manipulate, and load an Azure SQL database, and can create an ASP.NET application to query the database.
-
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
