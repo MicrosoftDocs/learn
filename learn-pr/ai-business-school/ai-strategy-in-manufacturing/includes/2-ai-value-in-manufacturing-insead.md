@@ -2,6 +2,6 @@ Organizations focused on manufacturing and other large-scale materials processes
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLs2]
 
-The manufacturing and resources industry is a sector where the efficiency AI can bring will have a big impact on value creation given the large capital outlays that are necessary for sophisticated equipment and developing worksites, as well as mineral rights in the case of mining. Data integration and the dissemination of insights from the data are a critical first step. Data insights which drive improved efficiency, better yields, and enhanced worker safety, are high powered levers for value creation in manufacturing and become a jumping off point for more advanced AI adoption in the industry.
+The manufacturing and resources industry is a sector where the efficiency AI can bring will have a large impact on value creation given the large capital outlays that are necessary for sophisticated equipment and developing worksites, as well as mineral rights in the case of mining. Data integration and the dissemination of insights from the data are a critical first step. Data insights that drive improved efficiency, better yields, and enhanced worker safety, are high powered levers for value creation in manufacturing and become a jumping off point for more advanced AI adoption in the industry.
 
 Let’s see how one of the world’s largest manufacturers, Jabil, was able to reduce overhead costs and increase production quality by using AI strategically, to check electronic products as they were manufactured.
