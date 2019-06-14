@@ -15,17 +15,17 @@ Azure Search easily adds sophisticated cloud search capabilities to your organiz
 
 Follow these links for more examples of search queries:
 
-- [Simple query examples](https://docs.microsoft.com/en-gb/azure/search/search-query-simple-examples#how-to-invoke-simple-query-parsing)
-- [Lucene query examples](https://docs.microsoft.com/en-gb/azure/search/search-query-lucene-examples#how-to-invoke-full-lucene-parsing)
-- [OData filter examples](https://docs.microsoft.com/en-gb/azure/search/query-odata-filter-orderby-syntax#filter-examples)
+- [Simple query examples](https://docs.microsoft.com/azure/search/search-query-simple-examples#how-to-invoke-simple-query-parsing)
+- [Lucene query examples](https://docs.microsoft.com/azure/search/search-query-lucene-examples#how-to-invoke-full-lucene-parsing)
+- [OData filter examples](https://docs.microsoft.com/azure/search/query-odata-filter-orderby-syntax#filter-examples)
 
 Follow these links to find out how to incorporate search into your apps:
 
-- [.NET](https://azure.microsoft.com/en-gb/resources/samples/search-dotnet-getting-started)
-- [Java](https://azure.microsoft.com/en-gb/resources/samples/search-java-getting-started)
+- [.NET](https://azure.microsoft.com/resources/samples/search-dotnet-getting-started)
+- [Java](https://azure.microsoft.com/resources/samples/search-java-getting-started)
 - [Node.js](https://github.com/Azure-Samples/search-node-indexer-demo)
 
 Follow these links for guidance on performance:
 
-- [High availability and scaling](https://docs.microsoft.com/en-us/azure/search/search-capacity-planning)
-- [Search performance optimization](https://docs.microsoft.com/en-us/azure/search/search-performance-optimization)
+- [High availability and scaling](https://docs.microsoft.com/azure/search/search-capacity-planning)
+- [Search performance optimization](https://docs.microsoft.com/azure/search/search-performance-optimization)

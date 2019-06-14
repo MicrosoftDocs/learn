@@ -36,4 +36,4 @@ Move to end.
     <https://mva.microsoft.com/training-courses/introduction-to-azure-iot-17611?l=uxXUIs4rD_606218965>
 
 -   Azure Internet of Things:
-    <https://www.microsoft.com/en-ca/internet-of-things/>-->
+    <https://www.microsoft.com/internet-of-things/>-->
