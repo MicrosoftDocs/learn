@@ -46,7 +46,9 @@ Each landing zone is part of a broader solution for organizing resources across 
 
 - **Resource organization decision guide** - Once each of the primitives is understood, the resource organization decision guide can help make decisions that will shape the landing zone. Azure offers many services that help you organize resources, control costs, and secure and manage your organization’s Azure subscription.
 
-  - Organize resources: set up a management hierarchy to consistently apply access control, policy, and compliance to groups of resources and use tagging to track related resources. The organizing structure for resources in Azure has four levels: ![Image of Organizing structure for resources in Azure](../media/organize-resources.png)
+  - Organize resources: set up a management hierarchy to consistently apply access control, policy, and compliance to groups of resources and use tagging to track related resources. The organizing structure for resources in Azure has four levels:
+
+  ![Image of Organizing structure for resources in Azure](../media/organize-resources.png)
 
   - Management groups: these are containers that help you manage access, policy, and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group.
 
