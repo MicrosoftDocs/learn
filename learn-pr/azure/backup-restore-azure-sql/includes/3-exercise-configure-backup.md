@@ -51,9 +51,11 @@ By default, Azure SQL Database prevents access to the server to execute queries.
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **ERPServer** database server.
 1. Under **Security**, click **Firewalls and virtual networks**.
 1. At the top of the page, click **Add client IP**.
-1. Under **Allow access to Azure services**, click **ON** and then click **Save**
+1. Under **Allow access to Azure services**, click **ON**:
 
     ![Add a client IP address rule](../media/3-add-client-ip.png)
+
+1.  Click **Save**, and then when the rule has been saved, click **OK**.
 
 ## Add data to the database
 
@@ -63,7 +65,7 @@ Now let's add a table and a sample record to the database:
 1. Click **Query editor**, and then sign in with the credentials **dbadmin** and **P4ssw0rd**.
 1. To create a table, in the **Query 1** window, type this SQL command, and then click **Run**:
 
-    ```SQL
+    ```sql
     CREATE TABLE Person
     (
         PersonId INT IDENTITY PRIMARY KEY,
@@ -73,20 +75,23 @@ Now let's add a table and a sample record to the database:
     )
     ```
 
+    ![Create a new table in the sql-erp-db database](../media/3-create-table.png)
+
 1. To add a record, click **+ New Query** and then, in the **Query 2** window, type this SQL command, and then click **Run**:
 
-    ```SQL
+    ```sql
     INSERT INTO PERSON (FirstName, LastName, DateOfBirth)
     VALUES ('Lucas', 'Ball', '1987-11-03');
     ```
 
+    ![Insert a record into the sql-erp-db database](../media/3-insert-record.png)
+
 1. To query the database, click **+ New Query** and then, in the **Query 3** window, type this SQL command, and then click **Run**:
 
-    ```SQL
+    ```sql
     SELECT * FROM dbo.Person
     ```
 
     The **Results** window displays the record for Lucas Ball.
 
-
-  <!-- TODO: Can we confirm that the database is backed up? -->
+    ![Query the person table in the sql-erp-db database](../media/3-query-person-table.png)

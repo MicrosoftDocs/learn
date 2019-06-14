@@ -11,7 +11,7 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Configure long-term retention policies
 durationInMinutes: 10
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-configure-long-term-retention-policies.md)]
