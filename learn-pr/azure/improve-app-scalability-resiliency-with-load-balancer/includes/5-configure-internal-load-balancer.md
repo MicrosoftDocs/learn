@@ -23,8 +23,6 @@ The internal load balancer should only be visible to the front end presentation 
 
 ## Choose Distribution Mode
 
-Using the healthcare portal example. A requirement of the application tier is that it uses in memory sessions, therefore the load balancer must provide source IP affinity to maintain a users session. When we create the load balancer we must specify the distribution mode this can easily be done, like the PowerShell example below.
+Using the healthcare portal example. The application tier is completely stateless, so we don't need to use Source IP affinity distribution. Therefore, the default distribution mode of a 5 tuple hash can be used. This offers the greatest scalability and resilience as the VM that will handle the request is decided by the load balancer, purely on the basis of the healthiest and least worked VM in the set.
 
-```Azure CLI
-    Set-AzureLoadBalancedEndpoint -ServiceName MyService -LBSetName LBSet1 -Protocol TCP -LocalPort 80 -ProbeProtocolTCP -ProbePort 8080 –LoadBalancerDistribution sourceIP
-```
+
