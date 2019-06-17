@@ -5,7 +5,7 @@ Your retail organization must comply with data protection regulations in your ju
 Here, you will use the Azure portal to set up a policy and then check it in PowerShell.
 
 ## Use the Azure portal to configure long-term retention
-
+6
 Let's start by configuring the 2 year retention by using the portal:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click **ERPServer**

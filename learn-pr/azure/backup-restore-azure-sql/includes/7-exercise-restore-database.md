@@ -1,68 +1,70 @@
-As part of this exercise we will drop the table created earlier and aim to restore the database from the available backups and determine if the table gets restored. We'll do this in both the Portal and then use Poershell to perform the same operation.
+Trial restores are a key component of any disaster recovery strategy.
 
-   1. So lets drop the table you created in the earlier exercise.
-   1. Verify that this table is no longer available.
+You want to reassure yourself that you can restore a backed up database to a specific point-in-time should it become necessary. You also want to investigate how long a restore operation will take so that, if the worst happens, you can inform stake holders and manage their expectations correctly. 
 
-    > [!NOTE]
-    > You will have to use either the Query editor or SQL Management Studio to drop the table
+Here, you will perform trial restores from automated Azure SQL Database backups.
 
-## View backups and restore from a backup using Azure portal
+> [!NOTE]
+> The first automatic backup operation must be complete before your can restore a database. Don't start this exercise until 15 minutes or so after you completed the exercise in unit 3.
 
-View the backups that are retained for a specific database with a LTR policy, and restore from those backups
+## Add a new table to the database
 
-   1. In the Azure portal, select your SQL server and then click **Manage Backups**. On the **Available backups** tab, select the database for which you want to see available backups.
+Let's start by simulating a mistaken database modification:
 
-![Screenshot of the available backups](../media/7-view-available-backups.PNG)
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **sql-erp-db** database.
+1. Click **Query editor**, and then sign in with the username **dbadmin** and the password **P4ssw0rd**.
+1. To create a new table, in the **Query 1** window, run this command:
 
-   1. In the **Available backups** pane, review the available backups.
+    ```sql
+    CREATE TABLE Company
+    (
+        PersonId INT IDENTITY PRIMARY KEY,
+        CompanyName NVARCHAR(50) NOT NULL,
+    )
+    ```
 
-![Screenshot of the available backups](../media/7-ltr-available-backups.PNG)
+1. To check the tables in the database, click **New Query**, and then in the **Query 2** window, run this command:
 
-Lets restore the database to to the most recent backup containing the table you just dropped, in the portal.
+    ```sql
+    SELECT schema_name(t.schema_id) as schema_name,
+        t.name as table_name
+    FROM sys.tables t
+    ORDER BY schema_name, table_name;
+    ```
 
-   1. Select the backup from which you want to restore, and then specify the new database name.
+## Run a point-in-time backups
 
-![Screenshot of restoring from a selected backup](../media/7-ltr-restore.PNG)
+The **Company** table has been mistakenly created. Now, let's restore the database to it's previous state:
 
-   1. Click **Apply** to restore your database from the backup in Azure SQL storage to the new database.
-   1. When the restore job is completed, open the SQL databases page to view the newly restored database
-   1. Verify that the table has been restored.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **sql-erp-db** database.
+1. At the top of the **Overview** page, click **Restore**.
+1. Complete the **Restore** page with these values, and then click **OK**:
 
-   1. Drop the table again
+    | Setting | Value |
+    | --- | --- |
+    | Select source | Point-in-time |
+    | Database name | sql-erp-db-restored |
+    | Restore point | Select a time ten minutes ago, before you added the **Company** table |
+    | Target server | ERPServer |
+    | Elastic pool | None |
+    | Pricing tier | Default value |
+    | | |
 
-## View available backups using Powershell
+    ![Restoring a database in the portal](../media/7-restoring-a-database-pitr.png)
 
-   1. Use the Azure Cloud Shell terminal on the right to run the following PowerShell commands to view the backups available:
+## View the restored database
 
-    > [!NOTE]
-    > Switch your Cloud Shell session to **PowerShell** before trying these commands, if it isn't already.
+The restored database should not contain the **Company** table. You can check that in the portal:
 
-   1. View the backups available for this database via Azure Powershell.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **sql-erp-db-restored** database.
+1. Click **Query editor**, and then sign in with the username **dbadmin** and the password **P4ssw0rd**.
+1. To check the tables in the database, in the **Query 1** window, run this command:
 
-        ``` Powershell
-        $database = Get-AzSqlDatabase -ResourceGroupName "rg-sql-erp" -ServerName "sql-erp" -DatabaseName "sql-erp-db"
-        ```
-
-   1. Restore the database to to the most recent backup containing the table you just dropped, using Azure PowerShell.
-
-        ``` Powershell
-        Restore-AzSqlDatabase -FromPointInTimeBackup -PointInTime UTCDateTime -ResourceGroupName $Database.ResourceGroupName -ServerName $Database.ServerName -TargetDatabaseName "RestoredDatabase" -ResourceId $Database.ResourceID -Edition "Standard" -ServiceObjectiveName S2
-        ```
-
-   1. Verify that the table has been restored again.
-
-   1. View the Long-term Retention backups available on the server
-
-       (note to author, this may not display results due to the time needed for it to take effect)
-
-        ``` Powershell
-        Get-AzSqlDatabaseLongTermRetentionBackup -Location "westeurope" -ServerName "sql-erp"
-        ```
-
-   1. Restore from Long-term Retention backup
-
-        (note to author, the database cannot be restored on top of the existing database, so you'll need to account for this in your steps)
-
-        ``` Powershell
-        Restore-AzSqlDatabase -FromLongTermRetentionBackup -ResourceId <Resource ID> -ServerName "sql-erp" -ResourceGroupName "rg-sql-erp" -TargetDatabaseName "RestoredDatabaseLTR" -ServiceObjectiveName S2
-        ```
+    ```sql
+    SELECT schema_name(t.schema_id) as schema_name,
+        t.name as table_name
+    FROM sys.tables t
+    ORDER BY schema_name, table_name;
+    ```
+     
+1. Examine the results. The **Company** table should not be present. 

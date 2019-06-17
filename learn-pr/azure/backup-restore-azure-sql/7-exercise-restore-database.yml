@@ -11,7 +11,6 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Recover data by restoring an Azure SQL Database
 durationInMinutes: 10
-interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/7-exercise-restore-database.md)]
