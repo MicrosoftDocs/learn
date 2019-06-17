@@ -143,15 +143,15 @@ Identify the subtasks of *Introduction to Azure Search*
 
 ## Notes
 
-- Use JSON blobs as the data source for the exercise. <https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs.> Invent a small data structure for fitness videos with a few interesting properties of different types (string, int, date) and create a small corpus of documents to index.
-- Use the [portal](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-the-portal) to import the data and set up the indexing, but give a brief overview in the conceptual section about how to do it in [C#](https://docs.microsoft.com/en-us/azure/search/search-howto-index-json-blobs#use-net-sdk).
+- Use JSON blobs as the data source for the exercise. <https://docs.microsoft.com/azure/search/search-howto-index-json-blobs> Invent a small data structure for fitness videos with a few interesting properties of different types (string, int, date) and create a small corpus of documents to index.
+- Use the [portal](https://docs.microsoft.com/azure/search/search-howto-index-json-blobs#use-the-portal) to import the data and set up the indexing, but give a brief overview in the conceptual section about how to do it in [C#](https://docs.microsoft.com/azure/search/search-howto-index-json-blobs#use-net-sdk).
 - Do not use advanced features like AI or cognitive search. Briefly mention their existence and utility in the conceptual sections but do not focus on them and do not use them in the exercise.
 - Creating a user experience/website is out of scope; show code and usage of the index from a simple console app only.
 - Calling the search from an app is out of scope for this module. A module that teaches that for .NEt/Java/Node.js will be planned for the future.
 
 ## References
 
-<https://docs.microsoft.com/en-us/azure/search/search-what-is-data-import>
+<https://docs.microsoft.com/azure/search/search-what-is-data-import>
 <https://docs.microsoft.com/rest/api/searchservice/AddUpdate-or-Delete-Documents>
 <https://docs.microsoft.com/dotnet/api/microsoft.azure.search.models.indexaction?view=azure-dotnet>
 <https://docs.microsoft.com/dotnet/api/microsoft.azure.search.models.indexbatch?view=azure-dotnet>
