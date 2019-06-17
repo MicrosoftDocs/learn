@@ -132,7 +132,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     | Compute + storage | General Purpose |
 
     >[!NOTE]
-    > The **General Purpose** option is suitable for workloads that generate up ti 7,000 IOPS. Latency will be between 5 and 10ms. If you require more IOPS and a lower latency, click **Configure** under **Compute + storage**. You'll be presented with a range of options that you can fine tune. You can also select between pre-allocated, provisioned resources, or a serverless model, where compute resources are auto-scaled.
+    > The **General Purpose** option is suitable for workloads that generate up to 7,000 IOPS. Latency will be between 5ms and 10ms. If you require more IOPS and a lower latency, click **Configure** under **Compute + storage**. You'll be presented with a range of options that you can fine tune. You can also select between pre-allocated, provisioned resources, or a serverless model, where compute resources are auto-scaled.
 
     For the server, specify the following details in the **New server** pane, and then click **Select**:
 
