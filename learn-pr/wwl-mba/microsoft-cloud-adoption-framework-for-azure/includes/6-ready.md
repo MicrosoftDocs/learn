@@ -62,7 +62,7 @@ Each landing zone is part of a broader solution for organizing resources across 
 
   - *Azure Cost Management*: provides a few ways to help you predict, analyze, and manage costs. You can view aggregated cost for your account or view accumulated costs over time. You can create a budget and then configure alerts to warn you when you are close to exceeding it. Manage your invoices and payments for visibility on your cloud investment.
 
-  - *Billing and subscription support*: create support requests to help you understand your usage, billing, and subscription details directly from Azure Portal.
+  - *Billing and subscription support*: create support requests to help you understand your usage, billing, and subscription details directly from the Azure portal.
 
 - **Plan for governance, security, and compliance** - Enforce and automate policies and security settings that help you follow applicable legal requirements.
 
