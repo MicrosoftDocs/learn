@@ -37,7 +37,7 @@ Use these resources to discover more.
 
 Microsoft Cloud Adoption Framework for Azure:
 
-- [Microsoft Cloud Adoption Framework for Azure in Documentation](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/)
+- [Microsoft Cloud Adoption Framework for Azure in Documentation](https://docs.microsoft.com/azure/architecture/cloud-adoption/)
 
 Financial Planning:
 
@@ -47,52 +47,52 @@ Financial Planning:
 
 - [Cost management](https://azure.microsoft.com/en-in/services/cost-management/)
 
-- [Creating financial model for cloud transformation](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/financial-models)
+- [Creating financial model for cloud transformation](https://docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/financial-models)
 
 Skill readiness paths:
 
-- [Azure Fundamentals](https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/)
+- [Azure Fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals/)
 
-- [Principles of cloud computing](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/)
+- [Principles of cloud computing](https://docs.microsoft.com/learn/modules/principles-cloud-computing/)
 
-- [Microsoft Certified: Azure Solutions Architect Expert](https://www.microsoft.com/en-us/learning/azure-solutions-architect.aspx)
+- [Microsoft Certified: Azure Solutions Architect Expert](https://www.microsoft.com/learning/azure-solutions-architect.aspx)
 
-- [Solutions Architect – Learning Path](https://docs.microsoft.com/en-us/learn/browse/?roles=solution-architect&resource_type=learning%20path)
+- [Solutions Architect – Learning Path](https://docs.microsoft.com/learn/browse/?roles=solution-architect&resource_type=learning%20path)
 
 Cloud Migration:
 
-- [Migration in Documentation](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/)
+- [Migration in Documentation](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/)
 
-- [Migration considerations](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/migrate/migration-considerations/)
+- [Migration considerations](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/migration-considerations/)
 
-- [Migration tools decision guide](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide/)
+- [Migration tools decision guide](https://docs.microsoft.com/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide/)
 
 Cloud Governance:
 
 - [Governance Assessment Tool](https://aka.ms/CAF/gov/Assess)
 
-- [Governance in Documentation](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/governance/)
+- [Governance in Documentation](https://docs.microsoft.com/azure/architecture/cloud-adoption/governance/)
 
 Cloud adoption plan:
-- Review [sample business outcomes](https://review.docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/business-outcomes/index).
+- Review [sample business outcomes](https://review.docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/business-outcomes/index).
 
 - Document those in the provided [business outcome template](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx) to share with internal partners during the transformation journey.
 
-- Identify the [learning metrics](https://review.docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/learning-metrics) that would best represent progress toward the identified business outcomes.
+- Identify the [learning metrics](https://review.docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/learning-metrics) that would best represent progress toward the identified business outcomes.
 
-- Establish a [financial model](https://review.docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/financial-models) that aligns with the outcomes and learning metrics.
+- Establish a [financial model](https://review.docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/financial-models) that aligns with the outcomes and learning metrics.
 
-- Document and incorporate the [digital estate](https://review.docs.microsoft.com/en-us/azure/architecture/cloud-adoption/digital-estate/index) in the current environment to populate the financial model.
+- Document and incorporate the [digital estate](https://review.docs.microsoft.com/azure/architecture/cloud-adoption/digital-estate/index) in the current environment to populate the financial model.
 
 Business stability:
 
-- [Scalability](https://docs.microsoft.com/en-us/azure/architecture/checklist/scalability)
+- [Scalability](https://docs.microsoft.com/azure/architecture/checklist/scalability)
 
-- [Availability](https://docs.microsoft.com/en-us/azure/architecture/checklist/availability)
+- [Availability](https://docs.microsoft.com/azure/architecture/checklist/availability)
 
-- [Resiliency](https://docs.microsoft.com/en-us/azure/architecture/resiliency/index)
+- [Resiliency](https://docs.microsoft.com/azure/architecture/resiliency/index)
 
 Discover more:
 
-- [Microsoft Azure: The only consistent and comprehensive hybrid cloud](https://azure.microsoft.com/en-us/blog/microsoft-azure-the-only-consistent-comprehensive-hybrid-cloud/)
+- [Microsoft Azure: The only consistent and comprehensive hybrid cloud](https://azure.microsoft.com/blog/microsoft-azure-the-only-consistent-comprehensive-hybrid-cloud/)
 
