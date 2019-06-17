@@ -13,3 +13,28 @@ title: Azure Load Balancer features and capabilities
 durationInMinutes: 10
 content: |
   [!include[](includes/2-load-balancer-features.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What is the default distribution type for traffic through a load balancer?'
+    choices:
+    - content: 'Sticky session'
+      isCorrect: false
+      explanation: 'Sticky sessions are not default'
+    - content: '5 tuple hash'
+      isCorrect: true
+    - content: '3 tuple hash'
+      isCorrect: false
+      explanation: 'There are five items that make up the default hash'
+
+  - content: 'What is the main advantage of an availability set'
+    choices:
+    - content: 'It allows VMs to  be available across data centre failures'
+      isCorrect: false
+      explanation: 'Availability Zones, not sets provide availability across data centre failures'
+    - content: 'It allows VMs to be available across a physical server failures'
+      isCorrect: true
+    - content: 'It allows Vms to be grouped into logical categories'
+      isCorrect: false
+      explanation: 'Whilst, this is a benefit, it is not the main reason for availability sets'

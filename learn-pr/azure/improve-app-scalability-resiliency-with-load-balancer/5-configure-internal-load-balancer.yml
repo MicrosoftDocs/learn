@@ -13,3 +13,28 @@ title: Configure an internal load balancer
 durationInMinutes: 10
 content: |
   [!include[](includes/5-configure-internal-load-balancer.md)]
+  quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'In order to configure an internal load balancer. Which of the following is required?'
+    choices:
+    - content: 'VMs should be in the same VNET'
+      isCorrect: true      
+    - content: 'VMs must be publicly accessible'
+      isCorrect: false
+      explanation: 'VMs behind an internal load balancer should not accessed publicly, the load balancer provides the access point'
+    - content: 'VMs must be within an availability set'
+      isCorrect: false
+      explanation: 'Although, this is an option, it is not a requirement'
+
+  - content: 'With regard external load balancers, which of the following is correct?'
+    choices:
+    - content: 'They have a private front facing IP address'
+      isCorrect: false
+      explanation: 'External load balancers have public IP addresses'
+    - content: 'They don't have a listener IP address'
+      isCorrect: false
+      explanation: 'External load balancers have public IP addresses'
+    - content: 'They have a public IP address'
+      isCorrect: true
