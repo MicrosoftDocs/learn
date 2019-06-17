@@ -1,4 +1,4 @@
-﻿How the cloud can advance your business strategy depends on your situation. The cloud delivers fundamental technology benefits that can aid in executing multiple business strategies. Using cloud-based approaches can improve basic business agility, reduce costs, accelerate time to market, and even allow businesses to quickly expand into new markets.
+How the cloud can advance your business strategy depends on your situation. The cloud delivers fundamental technology benefits that can aid in executing multiple business strategies. Using cloud-based approaches can improve basic business agility, reduce costs, accelerate time to market, and even allow businesses to quickly expand into new markets.
 
 However, as your organization moves forward in your cloud adoption journey, proper planning is key to your success. Since your organization has already technology investments you must start by understanding your current state, and then defining a prioritization plan for your cloud journey. In this stage, focus on two main actions:
 
