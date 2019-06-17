@@ -8,4 +8,4 @@ Microsoft Azure is an ever-expanding set of cloud services that help organizatio
 
 Select the image to view the full learning path.
 
-[ ![Image of learning path. Drag up and down to view the full image.](../media/intro-ic-thumbnail.png) ](../media/mba-intro-ic-infographic-fulljourney.png#lightbox)
+[ ![Image of learning path. Drag up and down to view the full image.](../media/intro-ic-thumbnail-inline.png) ](../media/mba-intro-ic-infographic-fulljourney-expanded.png#lightbox)
