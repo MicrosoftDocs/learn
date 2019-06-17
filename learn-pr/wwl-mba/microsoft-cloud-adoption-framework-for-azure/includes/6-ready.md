@@ -23,7 +23,7 @@ Before you begin to build and deploy solutions with Azure services, you need to 
 
 There are major considerations when implementing any landing zone. These considerations, also commonly referred to as Azure Foundations, can be broken into three categories or types of considerations: hosting, Azure primitives, and governance.
 
-![](../media/ic-caf-3.jpg)
+![Image of Table. Primitives, under Compute and Network, includes management groups, resource groups, naming standards, and subscription design. Governance, under Storage and Data, includes cost, policy, monitoring, and identity.](../media/ic-caf-3.jpg)
 
 
 ### Hosting considerations

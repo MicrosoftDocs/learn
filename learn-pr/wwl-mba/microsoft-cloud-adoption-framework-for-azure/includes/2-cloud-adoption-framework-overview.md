@@ -8,7 +8,7 @@ The cloud fundamentally changes how organizations procure and use technology res
 
 The Cloud Adoption Framework helps customers undertake a simplified cloud journey, in three main stages (Plan, Ready, and Adopt) preceded by a business strategy phase, and surrounded by a ubiquitous Operations phase expanding through the cloud adoption journey.
 
-![](../media/ic-caf-2.jpg)
+![Diagram of the three stages of the Microsoft Cloud Adoption Framework - Plan, Ready, and Adopt. These stages are preceded by the Strategy phase and surrounded by the Operate phase, which spans the cloud adoption journey. ](../media/ic-caf-2.jpg)
 
 This framework contains detailed information covering an end-to-end cloud adoption journey. It begins with setting the business strategy, properly aligned to actionable technology projects, and then delivering on the desired business outcomes. It then describes how the organization must prepare its people with technical readiness, adjust business processes to drive business and technology changes, and enable business outcomes through implementation of the defined technology plan. Finally, it covers cloud operations aspects, such as governance and resources, as well as people  and change management, to successfully embrace the cloud platform.
 
