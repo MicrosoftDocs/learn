@@ -8,7 +8,7 @@ The `System.Data.SqlClient` library is a collection of types and methods that yo
 
 The `System.Data.SqlClient` library is available in the **System.Data.SqlClient** NuGet package.
 
-## Connect to a database
+## Connect to a single database
 
 You create a database connection using a `SqlConnection` object. You provide a *connection string* that specifies the name and location of the database, the credentials to use, and other connection-related parameters. A typical database connection string looks like this:
 
@@ -16,7 +16,7 @@ You create a database connection using a `SqlConnection` object. You provide a *
 Server=tcp:myserver.database.windows.net,1433;Initial Catalog=mydatabase;Persist Security Info=False;User ID=myusername;Password=my[assword];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
-You can find the connection string for your database in the Azure portal, on the **Connection strings** page for your database.
+You can find the connection string for a single database in the Azure portal, on the **Connection strings** page for your database.
 
 The following code example shows how to create a `SqlConnection` object:
 

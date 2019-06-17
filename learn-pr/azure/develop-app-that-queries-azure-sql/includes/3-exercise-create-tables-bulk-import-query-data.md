@@ -129,7 +129,10 @@ In this exercise, you'll create a database server, and a database, using the Azu
     | Database name | *\<your-database-name\>* |
     | Server | Click **Create new**, and enter the details shown in the table below |
     | Want to use SQL elastic pool? | No |
-    | Compute + storage | General Purpose|
+    | Compute + storage | General Purpose |
+
+    >[!NOTE]
+    > The **General Purpose** option is suitable for workloads that generate up ti 7,000 IOPS. Latency will be between 5 and 10ms. If you require more IOPS and a lower latency, click **Configure** under **Compute + storage**. You'll be presented with a range of options that you can fine tune. You can also select between pre-allocated, provisioned resources, or a serverless model, where compute resources are auto-scaled.
 
     For the server, specify the following details in the **New server** pane, and then click **Select**:
 
@@ -200,7 +203,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
 
 1. In the database window, click the **Refresh** button in the toolbar. Then expand **Tables**, and expand each table in turn. You should see the three tables, **dbo.Courses**, **dbo.Modules**, and **dbo.StudyPlans**, together with the columns and primary key for each table.
 
-    > [NOTE!]
+    > [!NOTE]
     > *dbo* stands for *database owner*, and is the default schema in the database. All three tables were created in this schema.
 
     ![Screenshot of the database window in the Azure portal, showing the tables and columns](../media/3-tables-and-columns-annotated.png)

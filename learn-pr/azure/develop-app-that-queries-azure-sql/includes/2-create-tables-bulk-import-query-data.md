@@ -4,15 +4,20 @@ Before you can import data, you must first create a logical database server to h
 
 In this unit, you'll see how to create a single database, and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the **sqlcmd** utility from the command line to connect to a database. You'll see how to use the **bcp** utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the **sqlcmd** utility.
 
-## Create a database using the Azure portal
+## Create a single database using the Azure portal
 
-The easiest way to create a new database is through the Azure portal. Either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**.
+The easiest way to create a new single database (as opposed to a managed instance database) is through the Azure portal. Either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**.
 
 ![Screenshots of the Azure portal, showing the ways to create a new Azure SQL Database](../media/2-create-database.png)
 
-When you create a database, you'll be prompted for the server to use to host the database. You can create a new server, or you can select an instance that you've created previously. If you create a new server, you'll be asked to specify a server admin username and password. You use these credentials to connect to the server to perform administrative tasks and access the databases on this server.
+When you create a single database, you'll be prompted for the server to use to manage the database. You can create a new server, or you can select a server that you've created previously.
 
-> [NOTE!]
+> [!NOTE]
+> Azure Managed Instance implements a different deployment architecture. 
+
+If you create a new server, you'll be asked to specify a server admin username and password. You use these credentials to connect to the server to perform administrative tasks and access the databases controlled by this server.
+
+> [!NOTE]
 > Azure SQL Database supports authentication using Azure Active Directory. However, you always have to create an admin account when first creating a new server, and then grant access to accounts stored in Azure Active Directory.
 
 Each database server is protected by a firewall, to block access to potentially malicious processes. You can open the firewall to enable access by other Azure services, and you can selectively enable access to other computers based on their IP address or address range. Azure SQL Server also provides advanced data security, enabling you to specify the sensitivity of data in individual columns in tables, assess the vulnerability of your databases and take the necessary remediation steps, and send alerts when a threat is detected.
