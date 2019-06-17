@@ -34,7 +34,7 @@ Document evolving business risks and the business' tolerance for risk, based on 
 
 **Policy & Compliance**
 
-Convert Risk decisions into policy statements to establish cloud adoption boundries.
+Convert Risk decisions into policy statements to establish cloud adoption boundaries.
 
 :::column-end:::
 :::row-end:::
