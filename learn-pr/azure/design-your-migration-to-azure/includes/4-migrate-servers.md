@@ -4,9 +4,11 @@ You've presented your findings to the IT Director and you now wish to continue w
 
 In this unit, you'll review Azure Site Recovery and how it can be used to migrate specific workloads to Azure.
 
-![Screenshot of the Azure Backup and Site Recovery creation](../media/azure-site-recovery.png)
+![The flow of migration from on-premises vCenter VMWare virtual machines to Azure with Azure Site Recovery](../media/vm-migration.png)
 
 ## What is Azure Site Recovery?
+
+![Screenshot of the Azure Backup and Site Recovery creation](../media/azure-site-recovery.png)
 
 Azure Site Recovery is designed to manage a disaster recovery plan, and can replicate workloads from a primary site to a secondary site if there's an outage. When an issue occurs at the primary site, the Site Recovery service can be automatically invoked and the virtual machines that are protected will be replicated to a secondary location to continue running. The failover could be an on-premises to Azure failover, or a failover from one Azure region to another. 
 

@@ -2,7 +2,7 @@ The Azure Database Migration Service enables online and offline migrations from 
 
 During the early stages of the migration project the IT Director requested that the current SQL cluster, which hosts several lines of business application databases, be included. With the required due diligence completed and the finer details that make up the SQL cluster have been noted, the migration can now take place.
 
-In this unit, you'll see how to use the **Azure Database Migration Service** (DMS), which provides a way to move on-premises SQL server databases efficiently to Azure.
+In this unit, you'll see how to use the the **Data Migration Assistant (DMA)** and **Azure Database Migration Service (DMS)** together. They provide a way to move on-premises SQL server databases efficiently to Azure.
 
 ## Offline vs online migration
 
@@ -53,7 +53,7 @@ The assessment will generate a report on completion, with a set of recommendatio
 
 A sample Data Migration Assistant report.  
 
-### Migrating the Schema
+### Migrating the Schema using the DMA
 
 Each database has a schema, which represents the structure of the entire database. The schema defines the rules of how the data contained within it is organized, and the relationships between it. Before migrating all the data in the database, migrate the schema. Doing this creates the empty structure on the new Azure SQL database matching the on-premises source database. Migrating the schema also validates the connectivity before actually doing the full data migration.
 
@@ -63,9 +63,14 @@ To use the DMA to migrate the schema, create a new **Migration** project. Select
 
 ### Preparing your Azure environment
 
-There are several steps you need to take to prepare Azure before starting the full database data migration:
+There is an important step you need to take to prepare Azure to use the DMS before starting the full database data migration:
 
 - **Register the Microsoft.DataMigration resource provider** - In the Azure portal check that the **Microsoft.DataMigration** resource provider is enabled for your subscription
+
+### Migrate your data with a DMS
+
+In the Azure portal follow these steps to create a DMS instance, and then run it to migrate the data in your databases:
+
 - **Create an instance of the Azure Database Migration Service** - Create an Azure Database Migration Service, choosing the pricing tier depending on whether you need an online or offline migration
 - **Create a migration project** - Create a new migration project, choosing the type of migration you wish to perform, either offline or online
 - **Specify source and target server details** - Complete the source and target server details, including the authentication information
