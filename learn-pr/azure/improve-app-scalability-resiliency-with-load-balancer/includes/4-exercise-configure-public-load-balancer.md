@@ -1,8 +1,9 @@
-In the healthcare example, we want to load balance the client traffic, to provide a consistent response based on the health of the patient portal web servers. In order to setup the load balancer, we first need setup two VMs within an availability set to act as our healthcare portal web application.
+In the healthcare example, you want to load balance the client traffic, to provide a consistent response based on the health of the patient portal web servers. In order to setup the load balancer, you first need setup two virtual machines within an availability set to act as our healthcare portal web application.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Deploy the patient portal web application
+
 Your first task is to deploy your patient portal application across two VMs within a single availability set
 
 To save time, let's start by running a script to create this for us
@@ -127,8 +128,9 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
 1. Firstly, you will need to create a new Public IP address
 
     ```Powershell
-    RgName=`az group list --query '[0].name' --output tsv`
-    Location=`az group list --query '[0].location' --output tsv`
+    $RgList = Get-AzureRmResourceGroup
+    $RgName = $RgList[0].ResourceGroupName
+    $Location = $RgList[0].Location
 
     $publicIP = New-AzPublicIpAddress `
       -ResourceGroupName $RgName `
@@ -158,8 +160,9 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
       -Name "myHealthProbe" `
       -Protocol http `
       -Port 80 `
-      -IntervalInSeconds 4 `
-      -ProbeCount 2
+      -IntervalInSeconds 5 `
+      -ProbeCount 2 `
+      -RequestPath "/"
     ```
 
 1. You will now need a load balancer rule, which is used to define how traffic is distributed to the VMs. You define the frontend IP configuration for the incoming traffic and the backend IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
@@ -191,7 +194,14 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
 1. Now we need to connect the VMs to the backend pool by updating the NICs we created in the script earlier with the backendpool information
 
     ```Powershell
-      Find out how to update a NIC with a backendpool
+      $nic1 = Get-AzureRmNetworkInterface -ResourceGroupName $RgName -Name "webNic1"
+      $nic2 = Get-AzureRmNetworkInterface -ResourceGroupName $RgName -Name "webNic2"
+
+      $nic1.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
+      $nic2.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
+
+      Set-AzureRmNetworkInterface -NetworkInterface $nic1 -AsJob
+      Set-AzureRmNetworkInterface -NetworkInterface $nic2 -AsJob
     ```
 
 1. Finally, run the following cmd to get the public IP address of the load balancer, you will need this for the next section
@@ -200,6 +210,82 @@ The script takes about 2 minutes to run. When the script finishes. Observe that 
     Get-AzPublicIPAddress `
       -ResourceGroupName $RgName `
       -Name "myPublicIP" | select IpAddress
+    ```
+
+::: zone-end
+::: zone pivot="azure cli"
+
+## Azure CLI section
+
+1. Firstly, you will need to create a new Public IP address
+
+    ```Azure CLI
+    RgName=`az group list --query '[0].name' --output tsv`
+    Location=`az group list --query '[0].location' --output tsv`
+
+    az network public-ip create \
+      --resource-group $RgName \
+      --location $Location \
+      --allocation-method Static \
+      --name myPublicIP
+    ```
+
+1. Create the Load Balancer
+
+    ```Azure CLI
+    az network lb create \
+      --resource-group $RgName \
+      --name myLoadBalancer \
+      --public-ip-address myPublicIP \
+      --frontend-ip-name myFrontEndPool \
+      --backend-pool-name myBackEndPool
+    ```
+
+1. To allow the load balancer to monitor the status of your healthcare portal, you will now create a health probe. The health probe dynamically adds or removes VMs from the load balancer rotation based on their response to health checks
+
+    ```Azure CLI
+    az network lb probe create \
+      --resource-group $RgName \
+      --lb-name myLoadBalancer \
+      --name myHealthProbe \
+      --protocol tcp \
+      --port 80  
+    ```
+
+1. You will now need a load balancer rule, which is used to define how traffic is distributed to the VMs. You define the frontend IP configuration for the incoming traffic and the backend IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
+
+    ```Azure CLI
+    az network lb rule create \
+      --resource-group $RgName \
+      --lb-name myLoadBalancer \
+      --name myHTTPRule \
+      --protocol tcp \
+      --frontend-port 80 \
+      --backend-port 80 \
+      --frontend-ip-name myFrontEndPool \
+      --backend-pool-name myBackEndPool \
+      --probe-name myHealthProbe
+    ```
+
+1. Now we need to connect the VMs to the backend pool by updating the NICs we created in the script earlier with the backendpool information
+
+    ```Azure CLI
+    az network nic ip-config update \
+      --resource-group $RgName \
+      --nic-name webNic2 \
+      --name ipconfig1 \
+      --lb-name myLoadBalancer \
+      --lb-address-pools myBackEndPool
+    ```
+
+1. Finally, run the following cmd to get the public IP address of the load balancer, you will need this for the next section
+
+    ```Azure CLI
+    az network public-ip show \
+      --resource-group $RgName \
+      --name myPublicIP \
+      --query [ipAddress] \
+      --output tsv
     ```
 
 ::: zone-end
