@@ -1,6 +1,6 @@
 Trial restores are a key component of any disaster recovery strategy.
 
-You want to reassure yourself that you can restore a backed up database to a specific point-in-time should it become necessary. You also want to investigate how long a restore operation will take so that, if the worst happens, you can inform stake holders and manage their expectations correctly. 
+You want to reassure yourself that you can restore a backed-up database to a specific point-in-time should it become necessary. You also want to investigate how long a restore operation will take so that, if the worst happens, you can inform stake holders and manage their expectations correctly. 
 
 Here, you will perform trial restores from automated Azure SQL Database backups.
 
@@ -32,9 +32,9 @@ Let's start by simulating a mistaken database modification:
     ORDER BY schema_name, table_name;
     ```
 
-## Run a point-in-time backups
+## Run a point-in-time restore
 
-The **Company** table has been mistakenly created. Now, let's restore the database to it's previous state:
+The **Company** table has been mistakenly created. Now, let's restore the database to its previous state:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **sql-erp-db** database.
 1. At the top of the **Overview** page, click **Restore**.
@@ -44,7 +44,7 @@ The **Company** table has been mistakenly created. Now, let's restore the databa
     | --- | --- |
     | Select source | Point-in-time |
     | Database name | sql-erp-db-restored |
-    | Restore point | Select a time ten minutes ago, before you added the **Company** table |
+    | Restore point | Select a time 10 minutes ago, before you added the **Company** table |
     | Target server | ERPServer |
     | Elastic pool | None |
     | Pricing tier | Default value |

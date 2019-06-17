@@ -1,6 +1,6 @@
 Always plan your restore strategy as carefully as you plan your backup configuration to ensure that you can recover from all disasters as fast as possible.
 
-In your retail organization, the board has made you responsible for disaster recovery. You want to review plans for restore operations to reassure yourself that, should the worst happen, you're protected from data loss and can minimize the impact on users. 
+In your retail organization, the board has made you responsible for disaster recovery. You want to review plans for restore operations to reassure yourself that, if the worst happens, you're protected from data loss and can minimize the impact on users. 
 
 Here, you'll learn how to restore an Azure SQL Server database from automated database backups.
 
@@ -15,7 +15,7 @@ Automated backups in Azure SQL Database copy databases to blobs in Read-Access G
 
 ## How restore works
 
-To complete a restore, Azure copies the database from the storage account to the Azure SQL Database server that you specify. In a point-in-time restore, SQL Database follows that by applying transaction logs to the restored database, up to the time you chose. The length of this process varies widely and depends on the databse size, the transaction logs, network bandwidth, and the number of concurrent restore operations. Most restore operations complete in less than 12 hours but the only way to know how long your restore operation takes is to perform a practice restore. It's good practice to perform trial restores occasionally to time them and to ensure your complete backup and restore strategy works as you expect.
+To complete a restore, Azure copies the database from the storage account to the Azure SQL Database server that you specify. In a point-in-time restore, SQL Database follows that by applying transaction logs to the restored database, up to the time you chose. The length of this process varies widely and depends on the database size, the transaction logs, network bandwidth, and the number of concurrent restore operations. Most restore operations complete in less than 12 hours but the only way to know how long your restore operation takes is to perform a practice restore. It's good practice to perform trial restores occasionally to time them and to ensure your complete backup and restore strategy works as you expect.
 
 ### Executing a point-in-time restore
 
@@ -24,7 +24,7 @@ You can perform database restores by using the Azure portal, PowerShell, or the 
 - **Database replacement.** If you want to replace the original database with the restored one, make sure you specify the same compute size and service tier as the original. Then rename the original database and give the restored database the original name by using T-SQL `ALTER DATABASE` commands. 
 - **Data recovery.** If you want to retrieve data from the restored database to mitigate an error, you don't need to rename the original and restored databases. Instead, uses T-SQL commands to extract the data you need from the restored database and insert it into the original database. 
 
-Both these option begin with the restoration of a database backup from storage. To do this in the Azure portal, click the **Restore** button on the database overview page, then sepcify the time to restore to. You'll do this in the next exercise. 
+Both these options begin with the restoration of a database backup from storage. To recover in the Azure portal, click the **Restore** button on the database overview page, then specify the time to restore to. 
 
 In PowerShell, use the `Restore-AzSqlDatabase` cmdlet to execute restorations. In Azure CLI, use the `az sql db restore` command.
 
@@ -36,6 +36,6 @@ In the portal, go to the database server's **Overview** page and then, in the **
 
 ### Executing a geo-restore
 
-Azure SQL Database automatically replicates backed-up databases to datacenters in other regions. If the database in the original region is unavailable, for example because of a datacenter outage, you can restore from one of these replicated backup copies up to the point in time when the backup was made. Note that the latest backup may not have fully replicated to your region so you may lose some recent changes.
+Azure SQL Database automatically replicates backed-up databases to datacenters in other regions. If the database in the original region is unavailable, for example because of a datacenter outage, you can restore from one of these replicated backup copies up to the point in time when the backup was made. The latest backup may not have fully replicated to your region so you may lose some recent changes.
 
-To execute a geo-restore in the Azure portal, add a new database to an Azure SQL Database server. Then in the **Select source** drop-down list, select **Backup** and choose the backup to restore from.
+To execute a geo-restore in the Azure portal, add a new database to an Azure SQL Database server. Then in the **Select source** drop-down list, select **Backup**, and choose the backup to restore from.

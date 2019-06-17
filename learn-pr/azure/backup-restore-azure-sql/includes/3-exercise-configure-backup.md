@@ -1,4 +1,4 @@
-Although the default Azure SQL Database configuration includes automated backups, most organizations will modify the default setup to tailor it to thier needs.
+Although the default Azure SQL Database configuration includes automated backups, most organizations will modify the default setup to tailor it to their needs.
 
 Now that you have planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
 

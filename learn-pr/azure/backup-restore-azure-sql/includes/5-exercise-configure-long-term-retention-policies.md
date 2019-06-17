@@ -1,12 +1,12 @@
 It's easy to configure long-term retention.
 
-Your retail organization must comply with data protection regulations in your jurisdiction. You need to keep all data for 2 years and you want to keep one backup each month for 6 months. You have been asked to configure a long-term retention policy in Azure SQL Database to implement these requirements.
+Your retail organization must comply with data protection regulations in your jurisdiction. You need to keep all data for two years and you want to keep one backup each month for six months. You have been asked to configure a long-term retention policy in Azure SQL Database to implement these requirements.
 
 Here, you will use the Azure portal to set up a policy and then check it in PowerShell.
 
 ## Use the Azure portal to configure long-term retention
-6
-Let's start by configuring the 2 year retention by using the portal:
+
+Let's start by configuring the two-year retention by using the portal:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click **ERPServer**
 1. Under **Settings**, click **Manage Backups**
@@ -14,7 +14,7 @@ Let's start by configuring the 2 year retention by using the portal:
 1. Select the **Yearly LTR Backups** checkbox.
 1. In the **How long would you like this annual backup to be kept?** controls, select **2 Year(s)**.
 
-    ![Configure a yearly rentention policy](../media/5-configure-ltr-policy.png)
+    ![Configure a yearly retention policy](../media/5-configure-ltr-policy.png)
 
 1. Click **Apply**, and then click **Yes**.
 

@@ -2,13 +2,13 @@ As well as backups for regular administrative protection, such as to restore acc
 
 Suppose, for example, that data protection laws in at least one country where your retail organization operates require you to keep records of all customer transactions for five years. You need to ensure that data in Azure SQL Database, which underpins your Enterprise Resource Planning (ERP) system, is kept for at least that long.
 
-Here, you will learn about long-term retention policies in Azure SQL Database and how to use them when you need backups to be kept for more than 35 days.
+Here, you'll learn about long-term retention policies in Azure SQL Database and how to use them when you need backups to be kept for more than 35 days.
 
 ## Long-term Retention policies
 
-Azure SQL Database automatic backups remain available to restore for up to 35 days. This is usually more than enough for the purposes of day-to-day administration. However, sometimes you may need to retain data for longer periods. For example, data protection regulations in your local jurisdiction may require you to keep backups for several years.
+Azure SQL Database automatic backups remain available to restore for up to 35 days. This time period is enough for the purposes of day-to-day administration. However, sometimes you may need to retain data for longer periods. For example, data protection regulations in your local jurisdiction may require you to keep backups for several years.
 
-For these requirements, use the Long-Term Retention (LTR) feature. This way, you can store Azure SQL Database backups in Read-Access Geo-Redundant Storage (RA-GRS) blobs for up to ten years. If you need access to any backup in LTR, you can restore it as a new database by using either the Azure portal or PowerShell. 
+For these requirements, use the Long-Term Retention (LTR) feature. This way, you can store Azure SQL Database backups in Read-Access Geo-Redundant Storage (RA-GRS) blobs for up to 10 years. If you need access to any backup in LTR, you can restore it as a new database by using either the Azure portal or PowerShell. 
 
 ## How SQL Database long-term retention works
 
@@ -25,7 +25,7 @@ The long-term retention policy sets:
 
 If you use **Y** for yearly backups, you can specify the week of the year when that backup is copied by using the **WeekOfYear** parameter. 
 
-For each policy letter, you use numbers to indicate how long the backup should be retained for. For example, to keep the weekly backup for ten weeks, use **W=10**. To keep the annual backup for three years, use **Y=3**.
+For each policy letter, you use numbers to indicate how long the backup should be retained for. For example, to keep the weekly backup for 10 weeks, use **W=10**. To keep the annual backup for three years, use **Y=3**.
 
 ## Example long-term retention policies
 
