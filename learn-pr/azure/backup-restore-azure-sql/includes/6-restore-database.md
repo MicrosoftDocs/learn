@@ -1,33 +1,41 @@
-By default, SQL Database backups are stored in geo-replicated blob storage (RA-GRS). The following options are available for database recovery using automated database backups:
+Always plan your restore strategy as carefully as you plan your backup configuration to ensure that you can recover from all disasters as fast as possible.
 
-- Create a new database on the same SQL Database server recovered to a specified point in time within the retention period.
-- Create a database on the same SQL Database server recovered to the deletion time for a deleted database.
-- Create a new database on any SQL Database server in the same region recovered to the point of the most recent backups.
-- Create a new database on any SQL Database server in any other region recovered to the point of the most recent replicated backups.
+In your retail organization, the board has made you responsible for disaster recovery. You want to review plans for restore operations to reassure yourself that, should the worst happen, you're protected from data loss and can minimize the impact on users. 
 
-Restoring an Azure SQL Database takes a few clicks through the Azure Portal to restore it to a desired point in time. Just keep in mind that those backups are retained for either 7 or 35 days, depending on your service-tier.
+Here, you'll learn how to restore an Azure SQL Server database from automated database backups.
 
-## Point-in-time restore
+## What you can restore
 
-You can restore a standalone, pooled, or instance database to an earlier point in time using the Azure portal, PowerShell or the REST API
+Automated backups in Azure SQL Database copy databases to blobs in Read-Access Geo-Redundant Storage (RA-GRS) accounts on the schedule you specify. If you want to restore one of these backups, you must create a new database to contain the restored data. You can create this database on same server where the backup was taken or on another server with these options:
 
-You generally restore a database to an earlier point for recovery purposes. You can treat the restored database as a replacement for the original database or use it as a source data to update the original database.
+- On the backup server, if the database wasn't deleted, you can recover up to any time in the retention period, right up to the moment of failure. You can specify this time when you restore the database. Azure uses transaction logs to recover beyond the time of the most recent backup. This technique is called point-in-time restore.
+- On the backup server, if the database was deleted, you can recover up to the moment that database was deleted.
+- On a different server in the same region, you can recover up to the time that the last backup was taken. That's because there are no transaction logs available on these servers to recover to the point of failure.
+- On a different server in any other region, you can recover up to the time that the most recent replicated backup was taken. It's possible that the most recent backup taken in the original region has not yet replicated to other regions, so this backup may not always be available in remote locations. This technique is called geo-restore.
 
-To recover a single, pooled, or instance database to a point in time using the Azure portal, open the page for your database and click **Restore** on the toolbar.
+## How restore works
 
-## Deleted database restore
+To complete a restore, Azure copies the database from the storage account to the Azure SQL Database server that you specify. In a point-in-time restore, SQL Database follows that by applying transaction logs to the restored database, up to the time you chose. The length of this process varies widely and depends on the databse size, the transaction logs, network bandwidth, and the number of concurrent restore operations. Most restore operations complete in less than 12 hours but the only way to know how long your restore operation takes is to perform a practice restore. It's good practice to perform trial restores occasionally to time them and to ensure your complete backup and restore strategy works as you expect.
 
-You can restore a deleted database to the deletion time or an earlier point in time on the same SQL Database server using the Azure portal, PowerShell, or the REST (createMode=Restore). You can restore deleted database on Managed Instance using PowerShell.
+### Executing a point-in-time restore
 
-### Deleted database restore using the Azure portal
+You can perform database restores by using the Azure portal, PowerShell, or the Azure CLI. If you are performing a point-in-time restore on the original SQL Database server, you can choose:
 
-To recover a deleted database using the Azure portal, open the page for your server and in the Operations area, click **Deleted databases**. Select the database from the list of deleted databases and you will have the option to set the **Database name**, **Target server** and **Restore point**
+- **Database replacement.** If you want to replace the original database with the restored one, make sure you specify the same compute size and service tier as the original. Then rename the original database and give the restored database the original name by using T-SQL `ALTER DATABASE` commands. 
+- **Data recovery.** If you want to retrieve data from the restored database to mitigate an error, you don't need to rename the original and restored databases. Instead, uses T-SQL commands to extract the data you need from the restored database and insert it into the original database. 
 
-## Geo-restore
+Both these option begin with the restoration of a database backup from storage. To do this in the Azure portal, click the **Restore** button on the database overview page, then sepcify the time to restore to. You'll do this in the next exercise. 
 
-You can restore a SQL database on any server in any Azure region from the most recent geo-replicated backups. Geo-restore uses a geo-replicated backup as its source. It can be requested even if the database or data center is inaccessible due to an outage.
+In PowerShell, use the `Restore-AzSqlDatabase` cmdlet to execute restorations. In Azure CLI, use the `az sql db restore` command.
 
-Geo-restore is the default recovery option when your database is unavailable because of an incident in the hosting region. You can restore the database to a server in any other region. There is a delay between when a backup is taken and when it is geo-replicated to an Azure blob in a different region. As a result, the restored database can be up to one hour behind the original database. The following illustration shows restore of the database from the last available backup in another region.
+### Executing a deleted database restore
 
-   > [!NOTE]
-   > Geo-restore using the Azure portal is not available in Managed Instance. Please use PowerShell instead
+If a database has been mistaken deleted, you can restore it from backup to the deletion time by using the Azure portal or PowerShell. 
+
+In the portal, go to the database server's **Overview** page and then, in the **Operations** area, click **Deleted databases**. You can specify a point in time up to the deletion time, and then click **OK** to recover.
+
+### Executing a geo-restore
+
+Azure SQL Database automatically replicates backed-up databases to datacenters in other regions. If the database in the original region is unavailable, for example because of a datacenter outage, you can restore from one of these replicated backup copies up to the point in time when the backup was made. Note that the latest backup may not have fully replicated to your region so you may lose some recent changes.
+
+To execute a geo-restore in the Azure portal, add a new database to an Azure SQL Database server. Then in the **Select source** drop-down list, select **Backup** and choose the backup to restore from.
