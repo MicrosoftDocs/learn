@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-app-with-scale-sets.exercise-deploy-a-scale-set-in-the-azure-portal
+title: Exercise - Deploy a scale set in the Azure portal
+
+metadata:
+  title: Exercise - Deploy a scale set in the Azure portal
+  description: Exercise - Deploy a scale set in the Azure portal
+  ms.date: 6/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-deploy-a-scale-set-in-the-azure-portal.md)]
