@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: deploy-vms-from-vhd-templates.exercise-create-an-image-of-an-azure-vm-from-the-azure-cli-and-provision-a-new-vm.
+title: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.
+
+metadata:
+  title: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.
+  description: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.
+  ms.date: 6/12/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-create-an-image-of-an-azure-vm-from-the-azure-cli-and-provision-a-new-vm..md)]
