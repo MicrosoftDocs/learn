@@ -43,9 +43,9 @@ Financial Planning:
 
 - [Total Cost of Ownership (TCO) Calculator](https://www.tco.microsoft.com/)
 
-- [Pricing calculator](https://azure.microsoft.com/en-in/pricing/)
+- [Pricing calculator](https://azure.microsoft.com/pricing/)
 
-- [Cost management](https://azure.microsoft.com/en-in/services/cost-management/)
+- [Cost management](https://azure.microsoft.com/services/cost-management/)
 
 - [Creating financial model for cloud transformation](https://docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/financial-models)
 
