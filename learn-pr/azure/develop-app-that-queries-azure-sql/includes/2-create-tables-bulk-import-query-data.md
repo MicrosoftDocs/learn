@@ -2,11 +2,11 @@ Microsoft provides several tools that you can use to upload data to Azure SQL Da
 
 Before you can import data, you must first create a logical database server to host and manage the single database, so this unit also shows you how to create a this database server, and connect to this server to create and use the database.
 
-In this unit, you'll see how to create a single database, and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the **sqlcmd** utility from the command line to connect to a database. You'll see how to use the **bcp** utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the **sqlcmd** utility.
+In this unit, you'll see how to create a single database, and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the `sqlcmd` utility from the command line to connect to a database. You'll see how to use the `bcp` utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the `sqlcmd` utility.
 
 ## Create a single database using the Azure portal
 
-The easiest way to create a new single database (as opposed to a managed instance database) is through the Azure portal. Either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**.
+You can create a single database through several methods, including Azure CLI, Azure PowerShell, and the Azure portal. When creating a single database in the portal, either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**.
 
 ![Screenshots of the Azure portal, showing the ways to create a new Azure SQL Database](../media/2-create-database.png)
 
