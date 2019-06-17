@@ -1,4 +1,3 @@
-# Module Design
 ## Title
 
 Build a scalable application with virtual machine scale sets
@@ -13,17 +12,17 @@ Build a scalable application with virtual machine scale sets
 
 ## Product(s)
 
-- Azure virtual machine scale sets
+- virtual machine scale sets
 - Azure custom script extension
 
 ## Prerequisites
 
 - Basic knowledge of Azure virtual machines
-- Basic knowledge of load-balancing concepts
+- Basic knowledge of load balancing concepts
 
 ## Summary
 
-Enable your application to automatically adjust to changes in load while minimizing costs with Azure virtual machine scale sets.
+Enable your application to automatically adjust to changes in load while minimizing costs with virtual machine scale sets.
 
 ## Learning objectives
 
@@ -37,10 +36,9 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- |---|---|---|---|
-| Features and benefits of Azure Virtual Machine Scale Set | Review the concepts and components of an Azure Scale Set  | Exercise | Identify the features and capabilities of Azure Virtual Machine Scale Sets | Yes |
-| Configuring an Azure Virtual Machine Scale Set | Understanding and implementing a Horizontally scaling Virtual Scale Set to meet demand | Exercise  | Identify and implement a solution to scale to demand | Yes |
+| Features and benefits of virtual machine scale set | Review the concepts and components of an virtual machine scale set  | Exercise | Identify the features and capabilities of virtual machine scale sets | Yes |
+| Configuring an virtual machine scale set | Understanding and implementing a Horizontally scaling Virtual Scale Set to meet demand | Exercise  | Identify and implement a solution to scale to demand | Yes |
 | Installing and Updating Applications in Scale Sets | Need to quickly roll out application updates | Exercise | Implementing a Custom Script extension and performing an Application update | Yes |
-||||||
 
 ## Outline the units
 
@@ -48,21 +46,21 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
 
     A domestic shipping company has a web site that customers can use to manage and check the status of their shipments. This site currently runs on virtual machines on-premises, and the company is moving this application to Azure. They currently have a fixed capacity on-premises and are unable to adjust to fluctuations in load without manually intervening and creating or deallocating virtual machines. They need a solution that will automatically handle these fluctuations in load to ensure consistent performance for their web site. They also need a way to quickly roll out application updates to the servers while minimizing impact to end users.
 
-1. **Features and benefits of Azure Virtual Machine Scale Set**
+1. **Features and benefits of virtual machine scale sets**
 
-    In this unit, you'll explore the features of Azure Virtual Machine Scale Sets. By the end of this unit, you'll be able to:
+    In this unit, you'll explore the features of virtual machine scale sets. By the end of this unit, you'll be able to:
   
-    - Understand the Azure virtual machine scale set offerings, including scheduled and autoscaling.
+    - Understand the virtual machine scale set offerings, including scheduled and autoscaling.
     - Understand Horizontal-vs-Vertical scaling.
     - Understand the Low-Priority Scale Set offering.
 
     Cover the following points:
 
-    - What is an Azure Virtual Machine Scale Set (virtual machine scale set)
+    - What is an virtual machine scale set (virtual machine scale set)
       - A scale set is a group of identically configured virtual machines for horizontal scaling within Azure 
       - It can be used to provide a Highly Available environment while introducing the potential for scaling to meet planned and unplanned demand.
       - Horizontal scaling is deploying multiple matching instances of a server to achieve load balancing and load sharing.  This differs from Vertical sharing, which is increasing the physical amount of CPU and memory on the VM and typically require outage in the form of a reboot.
-      - Azure Scale Sets address the need to quickly create and manage the VMs for a workload, which fluctuates in load. This can be achieved via:
+      - Virtual machine scale sets address the need to quickly create and manage the VMs for a workload, which fluctuates in load. This can be achieved via:
         - A scheduled configuration. When you know there will be a spike in demand, you can proactively schedule the scale set to deploy one or N number of additional instances to fulfill the spike in traffic and then scale back down once the spike ends.
         - Autoscaling.  Where the workload is variable, and not always able to be scheduled, you can employ metric based threshold scaling.  This will horizontally scale out based upon node utilization,  then scale back in when the resources have returned to a baseline level.
         - Both these options address the requirement to scale while managing the costs associated with that.
@@ -83,61 +81,61 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
 
       1. In the Cloud Shell, use the Code editor to create the following YAML file. Name file **cloud-init.yaml** The YAML file contains the configuration information for installing nginx on the VMs in a scale set:
 
-      ```yaml
-      #cloud-config
-      package_upgrade: true
-      packages:
-        - nginx
-      write_files:
-        - owner: www-data:www-data
-        - path: /var/www/html/index.html
-          content: |
-            Hello world from VM Scale Set !
-      runcmd:
-        - service nginx restart
-      ```
+          ```yaml
+          #cloud-config
+          package_upgrade: true
+          packages:
+            - nginx
+          write_files:
+            - owner: www-data:www-data
+            - path: /var/www/html/index.html
+              content: |
+                Hello world from VM Scale Set !
+          runcmd:
+            - service nginx restart
+          ```
 
-      2. Create the scale set with the following command:
+      1. Create the scale set with the following command:
 
-      ```azurecli
-      az vmss create \
-        --resource-group <sandbox resource group> \
-        --name webServerScaleSet \
-        --image UbuntuLTS \
-        --upgrade-policy-mode automatic \
-        --custom-data cloud-init.yaml \
-        --admin-username azureuser \
-        --generate-ssh-keys
-      ```
+          ```azurecli
+          az vmss create \
+            --resource-group <sandbox resource group> \
+            --name webServerScaleSet \
+            --image UbuntuLTS \
+            --upgrade-policy-mode automatic \
+            --custom-data cloud-init.yaml \
+            --admin-username azureuser \
+            --generate-ssh-keys
+          ```
 
-      By default, the virtual machine scale set is created with two instances and a load balancer.
+          By default, the virtual machine scale set is created with two instances and a load balancer.
 
-      3. Add a health probe to the load balancer (the load balancer may fail to route traffic to a web server if it cannot detect the health of any servers)
+      1. Add a health probe to the load balancer (the load balancer may fail to route traffic to a web server if it cannot detect the health of any servers)
 
-      ```azurecli
-      az network lb probe create \
-        --lb-name webServerScaleSetLB \
-        --resource-group <sandbox resource group> \
-        --name webServerHealth \
-        --port 80 \
-        --protocol Http \
-        --path /
-      ```
+          ```azurecli
+          az network lb probe create \
+            --lb-name webServerScaleSetLB \
+            --resource-group <sandbox resource group> \
+            --name webServerHealth \
+            --port 80 \
+            --protocol Http \
+            --path /
+          ```
 
-      4. Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set.
+      1. Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set.
 
-      ```azurecli
-      az network lb rule create \
-        --resource-group <sandbox resource group> \
-        --name webServerLoadBalancerRuleWeb \
-        --lb-name webServerScaleSetLB \
-        --probe-name webServerHealth \
-        --backend-pool-name webServerScaleSetLBBEPool \
-        --backend-port 80 \
-        --frontend-ip-name loadBalancerFrontEnd \
-        --frontend-port 80 \
-        --protocol tcp
-      ```
+          ```azurecli
+          az network lb rule create \
+            --resource-group <sandbox resource group> \
+            --name webServerLoadBalancerRuleWeb \
+            --lb-name webServerScaleSetLB \
+            --probe-name webServerHealth \
+            --backend-pool-name webServerScaleSetLBBEPool \
+            --backend-port 80 \
+            --frontend-ip-name loadBalancerFrontEnd \
+            --frontend-port 80 \
+            --protocol tcp
+          ```
 
     Examine the Scale Set in Azure portal:
 
@@ -152,18 +150,18 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
       1. In the web browser, navigate to the public IP address of the scale set:
       2. Verify that the message **Hello World from virtual machine scale set** appears
 
-2. **Configuring an Azure Virtual Machine Scale Set**
+1. **Configuring a virtual machine scale set**
 
     You need to set up an environment, which can horizontally scale when demand and load increases. By the end of this unit, you will be able to:
   
-    - Understand Azure Scale Set Autoscale approaches.
-    - Understand Azure Scale Set Autoscale rules.
+    - Understand virtual machine scale set autoscale approaches.
+    - Understand virtual machine scale set autoscale rules.
   
     Cover the following points:
-    - A key benefit of a scale set is employing Autoscale. There are three ways to configure Autoscale, which can be done via the Portal or programmatically via the API/SDK.
+    - A key benefit of a scale set is employing autoscale. There are three ways to configure autoscale, which can be done via the Portal or programmatically via the API/SDK.
       - Manually by increasing or decreasing the Azure instance count.
       - Schedule based - if you know you will have an increased workload on a specified date/time window you can proactively plan for that
-      - Metric-based - using a variety of resource can determine how and when to scale out your Azure scale set, and how and when to return to your baseline.
+      - Metric-based - using a variety of resource can determine how and when to scale out your virtual machine scale set, and how and when to return to your baseline.
         - A scale set will have a series of rules, defaults, and limits. It is essential to set limits so you can define the outer parameters for the size of your scale set. This includes the minimum number of nodes in a scale set, the maximum, and the default.
         - An autoscale set rule defines the criteria for horizontally scaling your application; for example, increase the instance count by one when CPU utilization crosses a predefined threshold for example, 70%.
         - Creating a scale rule brings together a set of conditions for example
@@ -177,7 +175,7 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
           - [Example](https://docs.microsoft.com/azure/virtual-machine-scale-sets/media/virtual-machine-scale-sets-autoscale-portal/rule-increase.png) 
         - As a default, a scale in rule is not created. For every scale set at least one scale in rule should be set.
 
-3. **Exercise - Configuring a Scale Set**
+1. **Exercise - Configuring a virtual machine scale set**
 
     You need to set up an environment, which can horizontally scale when demand and load increases. In this unit, you will:
 
@@ -188,7 +186,7 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
       1. Open the Azure portal and navigate to virtual machine scale set
       2. Select the scale set created in unit 2.
       3. In settings panel, select scaling
-      4. Select Enable Autoscale
+      4. Select Enable autoscale
       5. Select scale based upon a metric
       6. Select add a rule
       7. Time aggregation: Average
@@ -201,7 +199,7 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
       14. Set cool down period to 5 minutes and save.
       15. To add a scale down route repeat steps 6-14 replacing step 11 with 60 and step 13 with a decrease by 1.
 
-4. **Installing and Updating Applications in Scale Sets**
+1. **Installing and updating applications in virtual machine scale sets**
 
     You need to configure your virtual machines when they start in the scale set and periodically will need to update the application running on your virtual machine. By the end of this unit, you'll understand how to:
 
@@ -221,30 +219,30 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
           2) Rolling.  The scale set rolls out the update in batches with an optional pause to minimize or eliminate service outage.
           3) Manual. When you update the scale set model,  no actions to existing VMs
   
-5. **Exercise - Updating Applications in Scale Sets**
+1. **Exercise - Updating applications in virtual machine scale sets**
 
-    You have previously installed the nginx web server across your Azure Virtual Machine Scale Set. In this exercise, you wicode cloud- ll use a Custom Script Extension to roll out an update to the web app served by nginx. In this exercise, you will simply amend the message displayed by the web app, but you can use the same principle to perform more substantial updates.
+    You have previously installed the nginx web server across your virtual machine scale set. In this exercise, you wicode cloud- ll use a Custom Script Extension to roll out an update to the web app served by nginx. In this exercise, you will simply amend the message displayed by the web app, but you can use the same principle to perform more substantial updates.
   
       1. In the Azure Cloud shell, run the following command:
 
-      ```azurecli
-      az vmss extension set \
-        --vmss-name webServerScaleSet \
-        --name customScript \
-        --resource-group <Sandox Resource Group> \
-        --force-update \
-        --version 2.0 \
-        --publisher Microsoft.Azure.Extensions \
-        --settings '{"commandToExecute": "echo This is the updated app installed on the VM Scale Set ! > /var/www/html/index.html"}'
-      ```
+          ```azurecli
+          az vmss extension set \
+            --vmss-name webServerScaleSet \
+            --name customScript \
+            --resource-group <Sandox Resource Group> \
+            --force-update \
+            --version 2.0 \
+            --publisher Microsoft.Azure.Extensions \
+            --settings '{"commandToExecute": "echo This is the updated app installed on the VM Scale Set ! > /var/www/html/index.html"}'
+          ```
   
-      2. Navigate to the public address of the scale set load balancer in the web browser. Verify that the message. This is the updated app installed on the virtual machine scale set** appears
+      1. Navigate to the public address of the scale set load balancer in the web browser. Verify that the message. This is the updated app installed on the virtual machine scale set** appears
 
-6. **Summary + Cleanup**
+1. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    - Explained the features of Azure Virtual Machine Scale Set.
+    - Explained the features of virtual machine scale set.
     - Described how Scale Sets could be configured to autoscale manually, based upon a schedule, or via metrics
     - Configured an autoscale set based upon Metrics
     - Configured a Custom Script Agent to update an application across the scale set
