@@ -4,7 +4,7 @@ The web application for the educational institute must fetch and display the dat
 
 ## Overview of the System.Data.SqlClient library
 
-The `System.Data.SqlClient` library is a collection of types and methods that you can use to connect to a SQL Server database, running either on-premises or in the cloud as Azure SQL Database. The library provides a generalized interface for retrieving and maintaining data. Using the `System.Data.SqlClient` library, you can run SQL commands, perform transactional operations, and retrieve data. You can parameterize these operations to avoid problems associated with SQL Injection attacks. If an operation fails, the `System.Data.SqlClient` library makes any error information available through specialized exception and error classes. You can handle these exceptions just like any other type of exception in a .NET application.
+The `System.Data.SqlClient` library is a collection of types and methods that you can use to connect to a SQL Server database, running either on-premises or in the cloud as Azure SQL Database. The library provides a generalized interface for retrieving and maintaining data. Using the `System.Data.SqlClient` library, you can run SQL commands, perform transactional operations, and retrieve data. You can parameterize these operations to avoid problems associated with SQL injection attacks. If an operation fails, the `System.Data.SqlClient` library makes any error information available through specialized exception and error classes. You can handle these exceptions just like any other type of exception in a .NET application.
 
 The `System.Data.SqlClient` library is available in the **System.Data.SqlClient** NuGet package.
 
@@ -13,7 +13,7 @@ The `System.Data.SqlClient` library is available in the **System.Data.SqlClient*
 You create a database connection using a `SqlConnection` object. You provide a *connection string* that specifies the name and location of the database, the credentials to use, and other connection-related parameters. A typical database connection string looks like this:
 
 ```Text
-Server=tcp:myserver.database.windows.net,1433;Initial Catalog=mydatabase;Persist Security Info=False;User ID=myusername;Password=my[assword];MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+Server=tcp:myserver.database.windows.net,1433;Initial Catalog=mydatabase;Persist Security Info=False;User ID=myusername;Password=mypassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
 You can find the connection string for a single database in the Azure portal, on the **Connection strings** page for your database.
@@ -41,7 +41,7 @@ Some databases only support a finite number of concurrent connections, so when y
 con.Close();
 ```
 
-Another common approach is to create the connection in a `using` statement. This strategy automatically closes the connection when the `using` statement completes, although you can still explicitly call the `Close` method as well:
+Another common approach is to create the connection in a `using` statement. This strategy automatically closes the connection when the `using` statement completes, although you can still explicitly call the `Close` method as well.
 
 ```C#
 using (SqlConnection con = new SqlConnection(connectionString))
@@ -55,7 +55,7 @@ using (SqlConnection con = new SqlConnection(connectionString))
 
 ## Define a SQL command or query
 
-Create a `SqlCommand` object to specify a SQL command or query to run. The following example shows a SQL **DELETE** statement that removes rows for a given customer from a table named **Orders**. You can parameterize commands; this example uses a parameter named **CustID** for the **CustomerID** value. Additionally, the line that sets the `CommandType` property of the `SqlCommand` object to `Text` indicates that the command is an SQL statement. You can run a stored procedure rather than an SQL statement, in which case you set the `CommandType` to `StoredProcedure`:
+Create a `SqlCommand` object to specify a SQL command or query to run. The following example shows a SQL **DELETE** statement that removes rows for a given customer from a table named **Orders**. You can parameterize commands; this example uses a parameter named **CustID** for the **CustomerID** value. Additionally, the line that sets the `CommandType` property of the `SqlCommand` object to `Text` indicates that the command is an SQL statement. You can run a stored procedure rather than an SQL statement, in which case you set the `CommandType` to `StoredProcedure`.
 
 ```C#
 SqlCommand deleteOrdersForCustomer = "DELETE FROM Orders WHERE CustomerID = @custID";
@@ -78,7 +78,7 @@ queryCmd.CommandType = CommandType.Text;
 
 ## Run a command
 
-If your `SqlCommand` object references a SQL statement that doesn't return a result set, you run the command with the `ExecuteNonQuery` method. if the command is successful, it returns the number of rows affected by the operation. The next example shows how to run the **deleteOrdersForCustomer** command shown earlier:
+If your `SqlCommand` object references a SQL statement that doesn't return a result set, you run the command with the `ExecuteNonQuery` method. if the command is successful, it returns the number of rows affected by the operation. The next example shows how to run the **deleteOrdersForCustomer** command shown earlier.
 
 ```C#
 int numDeleted = deleteOrdersForCustomer.ExecuteNonQuery();
@@ -109,7 +109,7 @@ while (rdr.Read())
 
 Exceptions and errors can occur when using a database for any number of reasons. For example, you might attempt to access a table that no longer exists. You can catch SQL errors using the `SqlException` type.
 
-An exception might have been triggered by a number of events or problems in the database. An `SqlException` object has a property named `Errors` that contains a collection of `SqlError` objects. These objects provide the details for each error. The example below shows how to catch a `SqlException`, and process the errors it contains:
+An exception might have been triggered by a number of events or problems in the database. An `SqlException` object has a property named `Errors` that contains a collection of `SqlError` objects. These objects provide the details for each error. The example below shows how to catch a `SqlException`, and process the errors it contains.
 
 ```C#
 ...
