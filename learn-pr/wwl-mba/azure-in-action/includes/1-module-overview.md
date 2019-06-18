@@ -15,8 +15,6 @@ In this module, you will:
 
 - Watch a demo that shows how to modernize an application using Azure Logic Apps.
 
-- Observe a demo that shows automation and integration benefits of Azure DevOps.
-
 - Recognize the value of Azure as illustrated by these demos.
 
 | | |

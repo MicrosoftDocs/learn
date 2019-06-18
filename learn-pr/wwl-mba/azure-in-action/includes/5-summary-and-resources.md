@@ -8,8 +8,6 @@ In this module you have seen:
 
 - A demo showing how to modernize an application using Azure Logic Apps.
 
-- A demo that shows automation and integration benefits of Azure DevOps.
-
 - The value of Azure illustrated by these demos.
 
 ## Key takeaways
@@ -54,8 +52,4 @@ Use these resources to discover more.
 ### Demo - Modernizing .NET Applications
 
 - [Modernizing .NET Apps](https://github.com/Microsoft/TailwindTraders/tree/master/Documents/DemoScripts/Modernizing%20.NET%20Apps) demo
-
-### Demo - Azure DevOps
-
-- [GitHub-AzureDevOps](https://github.com/hsachinraj/GitHub-AzureDevOps/blob/master/readme.md) demo
 

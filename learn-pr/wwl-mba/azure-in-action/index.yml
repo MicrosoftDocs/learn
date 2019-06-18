@@ -14,7 +14,6 @@ abstract: |
   In this module, you will:
   - Review a lift and shift migration demo using Azure Migrate.
   - Watch a demo that shows how to modernize an application using Azure Logic Apps.
-  - Observe a demo that shows automation and integration benefits of Azure DevOps.
   - Recognize the value of Azure as illustrated by these demos.
 prerequisites: None
 iconUrl: /learn/achievements/azure-in-action.svg
@@ -31,8 +30,7 @@ units:
 - learn-wwl.azure-in-action.1-module-overview
 - learn-wwl.azure-in-action.2-demo--microsoft-azure-migration
 - learn-wwl.azure-in-action.3-demo--modernizing-.net-applications
-- learn-wwl.azure-in-action.4-demo--azure-devops
-- learn-wwl.azure-in-action.5-knowledge-check
-- learn-wwl.azure-in-action.6-summary-and-resources
+- learn-wwl.azure-in-action.4-knowledge-check
+- learn-wwl.azure-in-action.5-summary-and-resources
 badge: 
   uid: learn-wwl.azure-in-action.badge

@@ -4,46 +4,7 @@ When an application is outgrowing the local infrastructure on which it is hosted
 
 Tailwind Traders is a local retail company. They are in the process of expanding their business worldwide and, in order to do that, they need to scale their applications with robust solutions that allow them to reach more customers without worrying about their application performance.
 
-The process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic Apps** has been separated into three segments as illustrated by the following table:
-
-:::row:::
-
-![Visual Studio icon](../media/vs-migrate.png)
-
-:::column span="1":::
-
-### Migrate
-
-...using the publishing tools in Visual Studio
-
-:::column-end:::
-:::row-end:::
-
-:::row:::
-
-![Azure App Services icon](../media/azure-app-services.png)
-
-:::column span="1":::
-
-### Explore
-
-...the benefits of Azure App Services
-
-:::column-end:::
-:::row-end:::
-
-:::row:::
-
-![Azure Logic Apps icon](../media/azure-logic-apps.png)
-
-:::column span="1":::
-
-### Modernize
-
-...without touching the code using Azure Logic Apps
-
-:::column-end:::
-:::row-end:::
+This unit will demonstrate the process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic Apps**.
 
 ![](../media/clear.png)
 
@@ -146,4 +107,4 @@ The process by which Tailwind Traders can host their Rewards application in **Az
 
 **Key ideas**: **Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
 
-Next, we'll see a demo that showcases the benefits of Azure DevOps.
+Now that you've experienced Azure in action, let's complete the knowledge check.
