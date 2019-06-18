@@ -162,10 +162,10 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     ![Screenshot of the connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
-9. Return to the code editor, and replace the value of the connectionString variable with the value from the clipboard. In the connection string, replace the text **{your_username}** with the value **azuresql**, and replace the text **{your_password}** with **Pa55w.rd**:
+9. Return to the code editor, and replace the value of the connectionString variable with the value from the clipboard. In the connection string, replace the text `{your_username}` with the value `azuresql`, and replace the text `{your_password}` with the password for this account.
 
     ```C#
-    private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=Pa55w.rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     ```
 
 10. After the comment **//TDO: Connect to the database**, replace the commented out **using** statement with the following code:
