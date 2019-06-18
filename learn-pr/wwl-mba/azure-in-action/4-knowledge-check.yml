@@ -12,7 +12,7 @@ metadata:
   ROBOTS:   NOINDEX 
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-knowledge-check.md)] 
+  [!include[](includes/4-knowledge-check.md)] 
 quiz:
   questions:
   - content: "What is the name of the Azure tool that gathers metadata from on-premises servers to assist with cloud migration and operation recommendations?"
