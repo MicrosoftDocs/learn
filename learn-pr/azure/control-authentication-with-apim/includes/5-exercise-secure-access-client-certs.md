@@ -11,7 +11,7 @@ In this unit you will:
 
 ## Create Self-Signed Certificate
 
-Firstly, you will use the Cloud Shell to create a self-signed certificate, which you will use for the authentication between the client and the API Management gateway:
+First, use the Cloud Shell to create a self-signed certificate, which you will use for the authentication between the client and the API Management gateway. Run the following commands in the Cloud Shell:
 
 ```PowerShell
 $pwd = '<enter-a-password>'

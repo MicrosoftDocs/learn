@@ -25,16 +25,14 @@ To save time, let's start by running a script to host our API in Azure. The scri
 
 1. Run the following git clone command in the Cloud Shell to clone the repo that contains the source for our app, as well as our setup script from GitHub.
 
-    <!-- TODO: the URL in the git clone command must be updated with the location of the repo, when its location is known -->
-
     ```bash
-    git clone https://github.com/<repo>/WeatherData.git
+    git clone https://github.com/MicrosoftDocs/mslearn-control-authentication-with-apim.git
     ```
 
 1. Navigate into the repo folder locally by running the following cd command.
 
     ```bash
-    cd WeatherData
+    cd mslearn-control-authentication-with-apim
     ```
 
 1. As its name suggests, `setup.sh` is the script you will run to create our API. It will generate a public web app that exposes an OpenAPI interface:
@@ -60,7 +58,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. In the left menu, click **+ Create a resource**.
-1. Click **Integration**, and then click **API management**.
+1. Click **Developer tools**, and then click **API Management**.
 1. In the **API Management service** page, enter the following details and then click **Create**:
 
    | Field | Details |
@@ -76,19 +74,15 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
    > [!NOTE]
    > You're using the **Consumption** tier because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
 
-1. Deployment may take several minutes. You'll get a message to your specified email address when the deployment has completed. You'll also see the gateway listed in Azure resources.
-
 ## Import the API
 
-Now, import the Weather API into the API Management gateway:
+Once deployment has completed, import the Weather API into the API Management gateway:
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu, click **All Resources**, and then select your API gateway.
+1. In the Azure portal, click **All Resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**.
 1. On the **Add a new API** page, click **OpenAPI**.
 1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
 1. Leave the other settings at their defaults, and then click **Create**.
-1. On the API details page, click **Settings**, and then click **Save**.
 
 ## Add a subscription key to access the Weather API
 
