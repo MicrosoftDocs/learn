@@ -22,7 +22,7 @@ Mara gathers the team in the meeting room to present her VSM.
 
 Creating a new feature currently starts with creating a label in source control ![Callout 1](../../shared/media/callout-01.png). We have one person who can create labels, and that's Andy. We request a label over email. We use a centralized version control system so Andy waits until all the existing code is checked in and stable before he creates the label. After the label is created, we get an email saying we can begin work. This process takes up to three days and has no value to the customer. Things with no value to the customer should take as little time as possible.
 
-Coding a feature takes about four days for one person once we get access to all the files we need ![Callout 2](../../shared/media/callout-02.png). We have to be on the corporate network in order to access source control. This time has no value to the customer. They want this feature.
+Coding a feature takes about four days for one person once we get access to all the files we need ![Callout 2](../../shared/media/callout-02.png). We have to be on the corporate network in order to access source control. This time has value to the customer. They want this feature.
 
 ### Test processes
 
