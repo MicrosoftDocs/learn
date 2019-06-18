@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic familiarity with relational databases
   - Basic knowledge of C#
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/develop-app-that-queries-azure-sql.svg
 levels:
 - beginner
 roles:
