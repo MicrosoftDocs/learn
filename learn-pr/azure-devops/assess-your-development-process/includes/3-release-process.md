@@ -25,13 +25,15 @@ Over coffee, Mara listens and tries to take notes. There's a lot of information 
 :::row:::
 :::column span="4":::
 When she looks at her pile of notes, Mara knows she needs to organize all this information. Organizing it will make it easier to evaluate the processes. She's convinced a DevOps approach will solve many of the team's problems, but she needs a way to present her case to the team.
+
+A DevOps practice often begins with an understanding of your existing processes. From there, you can evaluate what's working well, what's not, and focus on what to fix first.
 :::column-end:::
 :::column:::
 ![Mara at the coffee shop taking notes on her tablet](../media/3-taking-notes.jpg)
 :::column-end:::
 :::row-end:::
 
-She asks, "Have any of you ever performed a _value stream mapping_ exercise?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
+Mara asks, "Have any of you ever performed a _value stream mapping_ exercise?" Andy rolls his eyes, Amita sighs, and Tim says, "We don't need more paperwork."
 
 Mara says, "I get it. Leave it to me."
 
