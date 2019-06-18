@@ -28,7 +28,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     bash setup.sh
     ```
 
-4. When the web application has been deployed, the script finishes with the message **Web app deployed to https://educationapp\<*nnn*\>.azurewebsites.net/**. Click this link to display the web app in your browser:
+4. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
 
     ![Screenshot of the education web app running. Currently, no data appears](../media/5-web-app-no-data.png)
 
@@ -168,7 +168,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     ```
 
-10. After the comment **//TDO: Connect to the database**, replace the commented out **using** statement with the following code:
+10. After the comment **//TODO: Connect to the database**, replace the commented out **using** statement with the following code:
 
     ```C#
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -239,7 +239,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
         public class DataAccessController
         {
             // Add your connection string in the following statements
-            private string connectionString = "Server=tcp:courseserver101.database.windows.net,1433;Initial Catalog=coursedatabase101;Persist Security Info=False;User ID=azuresql;Password=Pa55w.rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            private string connectionString = "Server=tcp:courseserver-101.database.windows.net,1433;Initial Catalog=coursedatabase-101;Persist Security Info=False;User ID=azuresql;Password=Pa55w.rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             // Retrieve all details of courses and their modules    
             public IEnumerable<CoursesAndModules> GetAllCoursesAndModules()
