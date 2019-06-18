@@ -1,4 +1,4 @@
-﻿Welcome to the Azure demonstration module. This module allows you to *see* how Azure can be used to solve some of the most common challenges in moving to the cloud. You will see a series of three demos. Each demo has been broken into short segments that focus on specific capabilities of the products.
+﻿Welcome to the Azure demonstration module. This module allows you to *see* how Azure can be used to solve some of the most common challenges in moving to the cloud. You will see two demos. Each demo has been broken into short segments that focus on specific capabilities of the products.
 
 The demonstrations in this module show you the ease with which you can adopt Azure, as well as some of the benefits of running your solutions on Azure. Specific tools are available within Azure to aid in the process of migrating to the cloud, modernizing your solutions using new cloud capabilities, and even continuously monitoring and updating your solutions in the cloud.  
 
