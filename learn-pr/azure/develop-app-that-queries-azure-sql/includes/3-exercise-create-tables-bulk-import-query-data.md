@@ -2,9 +2,9 @@ The educational institute currently stores their data in a series of comma-delim
 
 In this exercise, you'll create a database server, and a database, using the Azure SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll query the data using the Query Editor and the **sqlcmd** utility.
 
-## Examine the existing comma-delimited data
-
 [!include[](../../../includes/azure-sandbox-activate.md)]
+
+## Examine the existing comma-delimited data
 
 1. In the Cloud Shell window on the right, run the following command to download the data files and application code for the educational institute system.
 
@@ -14,13 +14,13 @@ In this exercise, you'll create a database server, and a database, using the Azu
     git clone http://github.com/<location of repository> education
     ```
 
-2. Run this command to move to the **education/data** folder.
+1. Run this command to move to the **education/data** folder.
 
     ```bash
     cd ~/education/data
     ```
 
-3. Run this command to browse the files in this folder.
+1. Run this command to browse the files in this folder.
 
     ```bash
     ls
@@ -28,7 +28,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
 
     This folder contains three files; **courses.csv**, **modules.csv**, and **studyplans.csv**.
 
-4. View the contents of the **courses.csv** file.
+1. View the contents of the **courses.csv** file.
 
     ```bash
     cat courses.csv
@@ -49,7 +49,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     Chemistry,9
     ```
 
-5. View the contents of the **modules.csv** file.
+1. View the contents of the **modules.csv** file.
 
     ```bash
     cat modules.csv
@@ -77,7 +77,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     CH104,Chemical Engineering
     ```
 
-6. View the contents of the **studyplans.csv** file.
+1. View the contents of the **studyplans.csv** file.
 
     ```bash
     cat studyplans.csv
@@ -207,7 +207,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     cd ~/education/data
     ```
 
-1. Run the **bcp** utility to create a format file from the schema of the **courses** table in the database. The format file specifies that the data will be in character format (-c), and separated by commas (-t,). Replace \<*nnn\>* with the number that you used for your database and server, and use the password you specified for the **azuresql** user.
+1. Run the **bcp** utility to create a format file from the schema of the **courses** table in the database. The format file specifies that the data will be in character format (`-c`), and separated by commas (`-t,`). Replace `<nnn>` with the number that you used for your database and server, and use the password you specified for the **azuresql** user.
 
     ```bash
     bcp coursedatabase-<nnn>.dbo.courses format nul -c -f courses.fmt -t, -S courseserver-<nnn>.database.windows.net -U azuresql -P <password>
@@ -228,7 +228,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     2       SQLCHAR             0       50      "\n"   2     CourseName                                   SQL_Latin1_General_CP1_CI_AS
     ```
 
-1. The ID and name fields in the **courses.csv** data file are in a different order to the columns in the table. Change the field numbers in the **courses.fmt** file so that the data will be imported into the correct columns. Additionally, change the field separator for the **CourseName** field to **\r\n**. The data file is a DOS format text file:
+1. The ID and name fields in the **courses.csv** data file are in a different order to the columns in the table. Change the field numbers in the sixth column of the **courses.fmt** file so that the data will be imported into the correct columns. Additionally, change the field separator for the **CourseName** field to `\r\n`.
 
     ```text
     14.0
@@ -239,7 +239,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
 
 1. Save the file, and then close the editor.
 
-1. Run the following command to import the data in the **courses.csv** file using format specified in the amended **courses.fmt** file. The **-F 2** flag causes the bcp to start importing data from line 2 in the data file; the first line contains headers. Replace `<password>` with the password for the **azuresql** user.
+1. Run the following command to import the data in the **courses.csv** file using format specified in the amended **courses.fmt** file. The `-F 2` flag causes the bcp to start importing data from line 2 in the data file; the first line contains headers. Replace `<password>` with the password for the **azuresql** user.
 
     ```bash
     bcp coursedatabase-<nnn>.dbo.courses in courses.csv -f courses.fmt -S courseserver-<nnn>.database.windows.net -U azuresql -P <password> -F 2
@@ -255,7 +255,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
         bcp coursedatabase-<nnn>.dbo.modules format nul -c -f modules.fmt -t, -S courseserver-<nnn>.database.windows.net -U azuresql -P <password>
         ```
 
-    1. Open the **modules.fmt** file in the code editor, and change the field separator for the **ModuleTitle** field to "\r\n". This time you don't need to change the field order as the columns in the **Modules** table are in the same order as the fields in the **modules.csv** file:
+    1. Open the **modules.fmt** file in the code editor, and change the field separator for the **ModuleTitle** field to `\r\n`. This time you don't need to change the field order as the columns in the **Modules** table are in the same order as the fields in the **modules.csv** file:
 
         ```text
         14.0
@@ -277,7 +277,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     1. Generate a format file:
 
         ```bash
-        bcp coursedatabase<nnn>.dbo.studyplans format nul -c -f studyplans.fmt -t, -S courseserver<nnn>.database.windows.net -U azuresql -P <password>
+        bcp coursedatabase-<nnn>.dbo.studyplans format nul -c -f studyplans.fmt -t, -S courseserver-<nnn>.database.windows.net -U azuresql -P <password>
         ```
 
     1. Open the **studyplans.fmt** file in the code editor, and change the field separator for the **ModuleSequence** field to "\r\n":
@@ -293,7 +293,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     1. Import the data from the **studyplans.csv** file into the **StudyPlans** table in the database. Replace `<password>` with the password for the **azuresql** user.
 
         ```bash
-        bcp coursedatabase<nnn>.dbo.studyplans in studyplans.csv -f studyplans.fmt -S courseserver<nnn>.database.windows.net -U azuresql -P <password> -F 2
+        bcp coursedatabase-<nnn>.dbo.studyplans in studyplans.csv -f studyplans.fmt -S courseserver-<nnn>.database.windows.net -U azuresql -P <password> -F 2
         ```
 
         Verify that this command imports 45 rows.
@@ -340,7 +340,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     sqlcmd -S courseserver-<nnn>.database.windows.net -d coursedatabase-<nnn> -U azuresql -P <password>
     ```
 
-1. At the **1>** prompt, enter the following SQL command to fetch the data in the **StudyPlans** table.
+1. At the `1>` prompt, enter the following SQL command to fetch the data in the **StudyPlans** table.
 
     ```SQL
     SELECT * FROM StudyPlans;  
