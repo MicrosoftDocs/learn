@@ -16,19 +16,19 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     git clone http://github.com/<location of repository> education
     ```
 
-2. Move to the **education** folder:
+1. Move to the **education** folder:
 
     ```bash
     cd ~/education
     ```
 
-3. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed:
+1. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed:
 
     ```bash
     bash setup.sh
     ```
 
-4. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
+1. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
 
     ![Screenshot of the education web app running. Currently, no data appears](../media/5-web-app-no-data.png)
 
@@ -44,7 +44,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This folder contains two files, **CoursesAndModules.cs** and **DataAccessController.cs**.
 
-2. Open the **CoursesAndModules.cs** file using the **Code** editor:
+1. Open the **CoursesAndModules.cs** file using the **Code** editor:
 
     ```bash
     code CoursesAndModules.cs
@@ -64,7 +64,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     }
     ```
 
-3. Replace the comment **// TODO: Define the CourseName, ModuleTitle, and Sequence read-only properties** with the following code:
+1. Replace the comment **// TODO: Define the CourseName, ModuleTitle, and Sequence read-only properties** with the following code:
 
     ```C#
     public string CourseName { get; }
@@ -74,7 +74,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This code defines a set of read-only fields that will contain the data for each row displayed by the web application.
 
-4. Replace the comment **// TODO: Create a constructor that initializes the fields behind the properties** with the following constructor:
+1. Replace the comment **// TODO: Create a constructor that initializes the fields behind the properties** with the following constructor:
 
     ```C#
     public CoursesAndModules(string courseName, string moduleTitle, int sequence)
@@ -106,9 +106,9 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     }
     ```
 
-5. Save the file, and close the **Code** editor.
+1. Save the file, and close the **Code** editor.
 
-6. Open the **DataAccessController.cs** file using the **Code** editor:
+1. Open the **DataAccessController.cs** file using the **Code** editor:
 
     ```bash
     code DataAccessController.cs
@@ -156,19 +156,19 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This class will contain the data access logic for connecting to the database and retrieving the course and module data. It will populate a list of **CoursesAndModules** objects with this data.
 
-7. Leave the **Code** editor open, and switch to the Azure portal. In the left-hand pane, click **SQL databases**, and select your database. 
+1. Leave the **Code** editor open, and switch to the Azure portal. In the left-hand pane, click **SQL databases**, and select your database. 
 
-8. Under **Settings**, click **Connection strings**. Copy the ADO.NET connection string to the clipboard:
+1. Under **Settings**, click **Connection strings**. Copy the ADO.NET connection string to the clipboard:
 
     ![Screenshot of the connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
-9. Return to the code editor, and replace the value of the connectionString variable with the value from the clipboard. In the connection string, replace the text `{your_username}` with the value `azuresql`, and replace the text `{your_password}` with the password for this account.
+1. Return to the code editor, and replace the value of the connectionString variable with the value from the clipboard. In the connection string, replace the text `{your_username}` with the value `azuresql`, and replace the text `{your_password}` with the password for this account.
 
     ```C#
     private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     ```
 
-10. After the comment **//TODO: Connect to the database**, replace the commented out **using** statement with the following code:
+1. After the comment **//TODO: Connect to the database**, replace the commented out **using** statement with the following code:
 
     ```C#
     using (SqlConnection con = new SqlConnection(connectionString))
@@ -176,7 +176,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This code creates a new **SqlConnection** object that connects to the database using your connection string.
 
-11. Replace the comment **// TODO: Specify the SQL query to run** with the following statements:
+1. Replace the comment **// TODO: Specify the SQL query to run** with the following statements:
 
     ```C#
     SqlCommand cmd = new SqlCommand(
@@ -191,7 +191,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     The **SqlCommand** object contains an SQL statement that retrieves the data for all courses and modules, joining them using the information in the **StudyPlan** table.
 
-12. Replace the comment **// TODO: Execute the query** with the following code:
+1. Replace the comment **// TODO: Execute the query** with the following code:
 
     ```C#
     con.Open();
@@ -200,7 +200,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     These statements open the connection to the database and run the SQL statement. You can use the **SqlDataReader** object to fetch the results a row at a time.
 
-13. Replace the comment **// TODO: Read the data a row at a time** with the following block of code:
+1. Replace the comment **// TODO: Read the data a row at a time** with the following block of code:
 
     ```C#
     while (rdr.Read())
@@ -215,7 +215,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This block iterates through the rows returned in the **SqlDataReader** object. The code extracts the data in the fields in each row and uses them to populate a new **CoursesAndModules** object. This object is then added to a list.
 
-14. Replace the comment **// TODO: Close the database connection** with the following statement:
+1. Replace the comment **// TODO: Close the database connection** with the following statement:
 
     ```C#
     con.Close();
@@ -223,7 +223,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This statement closes the connection to the database and releases and resources held.
 
-15. The completed class should look like this:
+1. The completed class should look like this:
 
     ```C#
     using Microsoft.Extensions.Options;
@@ -294,7 +294,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This folder contains the .cshtml pages and code files that the web application uses to display information.
 
-2. Using the **Code** editor, open the **Index.cshtml.cs** file. It should look like this:
+1. Using the **Code** editor, open the **Index.cshtml.cs** file. It should look like this:
 
     ```C#
     using System;
@@ -323,7 +323,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This file contains code that the **Index** page runs when it's displayed. The code defines a class named **CoursesAndModulesModel**. The **Index** page will display the details of courses and modules using this model. In this file, you need to add the code that uses a **DataAccessController** object to fetch this data.
 
-3. Replace the comment **// TODO: Create a DataAccessController object** with the following statement:
+1. Replace the comment **// TODO: Create a DataAccessController object** with the following statement:
 
     ```C#
     DataAccessController dac = new DataAccessController();
@@ -331,13 +331,13 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This statement creates a new **DataAccessController** object.
 
-4. Replace the comment **// TODO: Create a collection for holding CoursesAndModules object** with the following statement:
+1. Replace the comment **// TODO: Create a collection for holding CoursesAndModules object** with the following statement:
 
     ```C#
     public List<CoursesAndModules> CoursesAndModules;
     ```
 
-5. In the **OnGet** method, replace the comment **// TODO: Retrieve the data using the DataAccessController object and populate the CoursesAndModules object** with the following statement:
+1. In the **OnGet** method, replace the comment **// TODO: Retrieve the data using the DataAccessController object and populate the CoursesAndModules object** with the following statement:
 
     ```C#
     CoursesAndModules = dac.GetAllCoursesAndModules().ToList();
@@ -345,7 +345,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This statement uses the **DataAcessController** object to populate the list with the data from the database.
 
-6. The completed file should look like this:
+1. The completed file should look like this:
 
     ```C#
     using System;
@@ -377,7 +377,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     Save the file and close the **Code** editor**
 
-7. Open the file **Index.cshtml** using the **Code** editor:
+1. Open the file **Index.cshtml** using the **Code** editor:
 
     ```bash
     code Index.cshtml
@@ -411,7 +411,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     </div>
     ```
 
-8. Replace the comment **\<!-- TODO: Display the data from the CoursesAndModules collection --\>** with the following markup:
+1. Replace the comment **\<!-- TODO: Display the data from the CoursesAndModules collection --\>** with the following markup:
 
     ```cshtml
     @foreach(var courseAndModule in Model.CoursesAndModules)
@@ -432,7 +432,7 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
     This code iterates through the rows in the model, and outputs the data in each field.
 
-9. The completed file should look like this:
+1. The completed file should look like this:
 
     ```cshtml
     @page
@@ -487,13 +487,13 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     cd ~/education
     ```
 
-2. Run the following commands to commit your changes, and build and deploy the updated web application. Note that the script creates a new web application, leaving the existing web application in place for comparison purposes:
+1. Run the following commands to commit your changes, and build and deploy the updated web application. Note that the script creates a new web application, leaving the existing web application in place for comparison purposes:
 
     ```bash
     git commit -m "Added SQL Server Code" -a
     bash setup.sh
     ```
 
-3. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database:
+1. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database:
 
     ![Screenshot of the education web app running, showing the data](../media/5-web-app-with-data.png)
