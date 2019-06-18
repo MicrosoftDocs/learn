@@ -25,7 +25,7 @@ To complete the work item:
 
 Each module in this learning path provides a template you can run to create a clean environment for the duration of the module.
 
-Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This can trigger multiple pipelines to run each time you push a change to your GitHub repository, which can cause you to run out of free build minutes on our hosted agents. Therefore, it's important that you disable your delete your pipeline before moving on to the next module.
+Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This can trigger multiple pipelines to run each time you push a change to your GitHub repository, which can cause you to run out of free build minutes on our hosted agents. Therefore, it's important that you disable or delete your pipeline before moving on to the next module.
 
 Choose one of the following options.
 
