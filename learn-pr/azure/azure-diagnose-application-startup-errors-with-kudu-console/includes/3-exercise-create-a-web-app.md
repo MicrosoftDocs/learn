@@ -23,7 +23,8 @@ You need to set up a name, a resource group, a location, and some other properti
 1. Leave the default values for **Publish** field.
 1. Select *`.NET Core 2.2`* for Runtime stack.
 1. Select **Windows** for Operating System.
-1. Use the default selection for **Region** and **Plan**
+1. Select your closest location for **Region**.
+1. USe the default selection for **Plan**.
 1. Select **Standard S1** for **Sku and size** options.
 1. Optional - In the **Monitoring** tab, select **No** for **Enable Application Insights**.
 1. At the bottom of the blade, select **Review and Create**.

@@ -2,7 +2,7 @@
 
 ## Create a new web project
 
-The heart of the .NET CLI tools is the `dotnet` command line tool. Using this command, you will create a new ASP.NET Core web project.
+Use the `dotnet` command line tool to create a new ASP.NET Core web project.
 
 1. In the Cloud Shell on the right, create a new ASP.NET Core MVC application. Name it "HotelApp".
 
@@ -30,7 +30,7 @@ Application started.
 
 The output describes the situation after starting your app: the application is running and listening at port 5000.
 
-If we were running the app on our own machine, we'd be able to open a browser to http://localhost:5000. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.
+If you were running the app on our own machine, we'd be able to open a browser to http://localhost:5000. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that. Press Ctrl+C to shut down the application.
 
 ## Update the web project code
 
@@ -40,7 +40,8 @@ If we were running the app on our own machine, we'd be able to open a browser to
 cd HotelApp
 ```
 
-2. Access the Program.cs file and edit it to update the file to include a startup exception.
+2. Access the Program.cs file and edit it using `code Program.cs` command to update the file to include a startup exception. Save the file after editing and close the editor.
+
 
 ```csharp
 public class Program
@@ -56,9 +57,7 @@ public class Program
 }
 ```
 
-Save the file.
-
-3. Deploy the web app the implement the changes
+3. Deploy the web app the implement the changes after updating the web app name:
 
 ```bash
 az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku S1
