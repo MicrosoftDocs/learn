@@ -56,21 +56,19 @@ It's also possible to store individual values in the cache, instead of a complet
 
 ## Using vary-by tags
 
-It's important to ensure that, if you serve a response from the cache, it is relevant to the original request. Suppose, for example, that the board games Stock Management API received a GET request to the following URL and cached the result:
+It's important to ensure that, if you serve a response from the cache, it is relevant to the original request but also to use the cache as much as possible. Suppose, for example, that the board games Stock Management API received a GET request to the following URL and cached the result:
 
-`http://<boardgames.domain>/stock/api/product/3416`
+`http://<boardgames.domain>/stock/api/product?partnumber=3416&customerid=1128`
 
-This request is intended to check the stock levels for a product with part number 3416. Subsequent requests for the same part number can be served from the cache, as long as the record has not expired. So far so good.
+This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy as does not alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record has not expired. So far so good.
 
-Now suppose that the developers alter the API to use a query parameter to specify the part number. The request for the same product is now:
+Now suppose that a different customer requests the same product:
 
-`http://<boardgames.domain>/stock/api/product?partnumber=3416`
+`http://<boardgames.domain>/stock/api/product?partnumber=3416&customerid=5238`
 
-By default, cache entries are not recorded with their query parameters. <!-- REVIEW I experimented with this and this statement is not correct; it appears the default is to vary by *all* query parameters. If you start specifying vary-by-query-parameters modifiers, it only uses those. The scenario here should be a case where changes in some parameters should still use the cached value; you'd want to call out all the *other* parameters with vary-by-query-parameters elements --> Suppose a different product is requested:
+By default, the response can't be served from the cache, because the customer ID is different. 
 
-`http://<boardgames.domain>/stock/api/product?partnumber=5484`
-
-This request is to the same address, so API Management serves the cached response. However, this response is incorrect, because the cached response is for product 3416, not product 5484.
+However, the developers point out that the customer ID does not alter the response. It would be more efficient if requests for the same product from different customers could be returned from the cache. Customers would still see the correct information.
 
 To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element within the &lt;cache-lookup&gt; policy:
 
@@ -95,9 +93,9 @@ To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element
 </policies>
 ```
 
-With this policy, the cache will store separate responses for each product, because they have different part numbers, even though those numbers are specified in a query parameter.
+With this policy, the cache will store separate responses for each product, because they have different part numbers. The cache will not store separate responses for each customer, because that query parameter is not listed.
 
-Like query parameters, Azure does not examine HTTP headers to determine whether a cached response is suitable for a given request. <!-- REVIEW Please check on this relative to the above and confirm --> If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
+Azure does not, by default, examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
 
 Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute, which is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.
 

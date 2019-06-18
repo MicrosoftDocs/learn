@@ -1,6 +1,6 @@
 Companies that use Azure API Management to host API can modify their behavior, without rewriting code, by using policies.
 
-Suppose you have planned to implement caching for the Board Pricing API. You want to add the API to API Management and write the necessary policies.
+Suppose you have planned to implement caching for the Board Pricing API. You want to add the API to API Management and write the necessary policies. The cost for a board is dependent on the height of the board, but not its width. 
 
 In this exercise, you'll import an API into Azure API Management and add a caching policy to it.
 
@@ -8,29 +8,33 @@ In this exercise, you'll import an API into Azure API Management and add a cachi
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+> [!NOTE]
+> In this exercise, the Board Gaming web API is hosted in the **azurewebsites.net** domain. The API Management instance is in the **azure-api.net**. 
+
 ## Create a Web API in Azure Apps Service
 
-Start by creating a new Web API app in Azure Apps Service. You'll use this resource to host the Board Pricing API:
+Start by creating a new web API in Azure Apps Service:
 
-1. To create an App Service plan for the web API, in the Cloud Shell on the left, type this command and then press Enter:
+1. In the Cloud Shell, to clone the sample web API, run this command:
 
-    ```azurecli
-    az appservice plan create --name BoardGamingServicePlan --resource-group <rgn>Sandbox resource group</rgn>
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
     ```
 
-1. To create the web API by deploying code from a GitHub repository, type this command and then press Enter:
+1. To set up the web API, run this command:
 
-    ```azurecli
-    az webapp create --name <unique name> --plan BoardGamingServicePlan --resource-group <rgn>Sandbox resource group</rgn> --deployment-source-url https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
+    ```bash
+    ./setup.sh
     ```
+
+    The script takes about a minute to run. When the script finishes, it displays two URLs for the Swagger user interface, and then OpenAPI definition. Make a note of these URLs. You will need them later in this exercise.
 
 ## Test the deployed Web API
 
-Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition:
+Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the web API before it is added to API Management, are in the **azurewebsites.net** domain:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
 1. On the **Overview** response, select **Browse**. The browser will indicate that the page can't be found &mdash; this is just because our app is an API and does not serve a webpage.
-<!-- REVIEW Please include a very brief introduction of the API near the top of this unit; this URL is introduced from nowhere -->
 1. In the **Address** bar, append the URL with **/api/quotes/usa/chess?height=7&width=6**. The browser displays a result in JSON format. Notice that the result includes the server time.
 1. In the **Address** bar, replace **/api/quotes/usa/chess?height=7&width=6** with **/swagger**. The browser displays the Swagger UI. Keep this browser tab open for later.
 
@@ -66,7 +70,7 @@ The consumption tier in API Management is intended for those organizations who p
     | --- | --- |
     | DNS Name | Choose a unique name. Make a note of it, you'll need it later on. |
     | Subscription | *Concierge Subscription* |
-    | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
+    | Resource group |*<rgn>Sandbox resource group</rgn>* |
     | Location | Choose the same location you used for the API Management instance |
     | Pricing tier | Standard C1 |
     | | |
@@ -108,18 +112,6 @@ Before you can apply a policy, you must add the API to the API Management instan
 1. Click **Create**. Azure adds the API to the management instance.
 
     ![Adding an API](../media/5-complete-api-add.png)
-
-## Configure the new API in API Management
-
-<!-- REVIEW This shouldn't be necessary, the OpenAPI document should include this information and it should auto-populate. Please see what was done in https://docs.microsoft.com/en-us/learn/modules/publish-manage-apis-with-azure-api-management/ to avoid this step.-->
-
-Next, let's configure the API in API Management with its original URL. This setting ensures that API Management trusts requests from that domain:
-
-1. When the API has been created, click the **Settings** tab.
-1. Place the cursor in the **Web service URL** text box, and then press CTRL-V.
-1. From the pasted text, remove `/swagger/v1/swagger.json` and then click **Save**
-
-    ![Configuring the API Web service URL value](../media/5-configure-api-in-apim.png)
 
 ## Test the API in API Management
 
@@ -181,22 +173,23 @@ We'll run the same test on the API in API Management and observe the results of 
 
 ## Configure the cache to vary by query parameter
 
-<!-- REVIEW See comment in previous unit about the need for this element. I'd still like to illustrate its use; the scenario/API may need to be altered a bit. -->
-To ensure that the system caches different responses for different board sizes, you must configure the cache to vary by query parameters:
+To ensure that the system caches different responses for different board heights, you must configure the cache to vary by the **height** query parameter. You don't want to vary by the **width** parameter, because that value is not used in the cost calculation:
 
 1. Click the **Design** tab and then click the **GET** operation.
 1. In the **Inbound processing** section, click **</>**.
-1. Within the `<cache-lookup>` policy, add the following XML: <!-- REVIEW Please be more clear here; it's not obvious that the user needs to rework the existing element into separate open/close tags and put this inside -->
+1. Replace the entire `<cache-lookup>` tag, with the following XML:
 
     ```xml
-    <vary-by-query-parameter>height</vary-by-query-parameter>
+    <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none">
+        <vary-by-query-parameter>height</vary-by-query-parameter>
+    </cache-lookup>
     ```
 
 1. Click **Save**.
 
 ## Test the new cache configuration
 
-The cache should now keep separate responses for different values of the height query parameter. Let's test that:
+The cache should now keep separate responses for different values of the **height** query parameter. However, because the **width** parameter does not influence the cost calculation, when you change only that parameter a cached response can be used. Let's test that:
 
 1. Click the **Test** tab, click the **GET** operation, use the following values for template parameters and query parameters and then click **Send**:
 
