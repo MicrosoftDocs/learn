@@ -49,13 +49,17 @@ Here you'll get a copy of the _Space Game_ web project and work from a branch.
 
 Here you'll set up the SonarCloud scanner and scan your code locally. You'll then upload the scan data to SonarCloud so you can analyze the results.
 
+The SonarCloud scanner runs Java code during the scanning process. So you'll start by making sure your environment is set up to run Java code.
+
+> [!IMPORTANT]
+> We mention Java in the prerequisites, but if you don't have it installed, now is a good time. Install the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
+
+
 1. From the integrated terminal, check whether the `JAVA_HOME` environment variable is set.
 
     ```bash
     echo $JAVA_HOME
     ```
-
-    The SonarCloud scanner runs Java code during the scanning process.
 
     If the command does not output a path, you'll need to set and export this variable.
 
@@ -65,6 +69,18 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You'll the
 
     ```bash
     export JAVA_HOME="C:\Program Files\Java\jdk-12.0.1"
+    ```
+
+    Here's an example on macOS that uses the **java_home** utility to get the path to the default version of Java installed on your system.
+
+    ```bash
+    export JAVA_HOME=$(/usr/libexec/java_home)
+    ```
+
+    Here's an example on Linux.
+
+    ```bash
+    export JAVA_HOME=/usr/bin
     ```
 
     For more information on how to set this variable, see [Set JAVA_HOME on Windows 7, 8, 10, Mac OS X, Linux](https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux?azure-portal=true).
