@@ -59,7 +59,7 @@ Create a `SqlCommand` object to specify a SQL command or query to run. The follo
 
 ```C#
 SqlCommand deleteOrdersForCustomer = new SqlCommand("DELETE FROM Orders WHERE CustomerID = @custID", con);
-cmd.CommandType = CommandType.Text;
+deleteOrdersForCustomer.CommandType = CommandType.Text;
 string customerID = <prompt the user for a customer to delete>;
 deleteOrdersForCustomer.Parameters.Add(new SqlParameter("custID", customerID));
 ```
