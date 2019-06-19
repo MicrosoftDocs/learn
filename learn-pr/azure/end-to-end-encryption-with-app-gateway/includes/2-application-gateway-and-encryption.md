@@ -20,7 +20,7 @@ Application Gateway comprises several components. But the main parts as far as e
 
 The following image shows how incoming traffic from a client to Application Gateway over SSL is decrypted and then re-encrypted when it is sent to server in the backend pool.
 
-![Image showing how messages are decrypted and re-encrypted in an end-to-end SSL configuration with Application Gateway ](../media/1-components.png)
+![Image showing how messages are decrypted and re-encrypted in an end-to-end SSL configuration with Application Gateway ](../media/2-components.png)
 
 ### Frontend port and listener
 
