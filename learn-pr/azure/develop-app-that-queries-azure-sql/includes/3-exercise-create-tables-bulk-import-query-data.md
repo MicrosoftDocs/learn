@@ -8,19 +8,17 @@ In this exercise, you'll create a database server, and a database, using the Azu
 
 1. In the Cloud Shell window on the right, run the following command to download the data files and application code for the educational institute system.
 
-    <!-- TODO: Replace <location of repository> with the name of the repository containing the sample code in GitHub. The source code is currently supplied in the code folder for this module -->
-
     ```bash
-    git clone http://github.com/<location of repository> education
+    git clone https://github.com/MicrosoftDocs/mslearn-develop-app-that-queries-azure-sql education
     ```
 
-1. Run this command to move to the **education/data** folder.
+2. Run this command to move to the **education/data** folder.
 
     ```bash
     cd ~/education/data
     ```
 
-1. Run this command to browse the files in this folder.
+3. Run this command to browse the files in this folder.
 
     ```bash
     ls
@@ -28,7 +26,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
 
     This folder contains three files; **courses.csv**, **modules.csv**, and **studyplans.csv**.
 
-1. View the contents of the **courses.csv** file.
+4. View the contents of the **courses.csv** file.
 
     ```bash
     cat courses.csv
@@ -49,7 +47,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     Chemistry,9
     ```
 
-1. View the contents of the **modules.csv** file.
+5. View the contents of the **modules.csv** file.
 
     ```bash
     cat modules.csv
@@ -77,7 +75,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     CH104,Chemical Engineering
     ```
 
-1. View the contents of the **studyplans.csv** file.
+6. View the contents of the **studyplans.csv** file.
 
     ```bash
     cat studyplans.csv

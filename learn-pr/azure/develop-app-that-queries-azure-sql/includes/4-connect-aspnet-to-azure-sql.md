@@ -58,7 +58,7 @@ using (SqlConnection con = new SqlConnection(connectionString))
 Create a `SqlCommand` object to specify a SQL command or query to run. The following example shows a SQL **DELETE** statement that removes rows for a given customer from a table named **Orders**. You can parameterize commands; this example uses a parameter named **CustID** for the **CustomerID** value. Additionally, the line that sets the `CommandType` property of the `SqlCommand` object to `Text` indicates that the command is an SQL statement. You can run a stored procedure rather than an SQL statement, in which case you set the `CommandType` to `StoredProcedure`.
 
 ```C#
-SqlCommand deleteOrdersForCustomer = "DELETE FROM Orders WHERE CustomerID = @custID";
+SqlCommand deleteOrdersForCustomer = new SqlCommand("DELETE FROM Orders WHERE CustomerID = @custID", con);
 cmd.CommandType = CommandType.Text;
 string customerID = <prompt the user for a customer to delete>;
 deleteOrdersForCustomer.Parameters.Add(new SqlParameter("custID", customerID));

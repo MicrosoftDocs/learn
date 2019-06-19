@@ -2,7 +2,16 @@ You can use the types defined in the `System.Data.SqlClient` library to connect 
 
 In this lab, you'll create a web application that the academic advisors for the educational institution can use to discuss courses and plans of study with students. The application will use the `System.Data.SqlClient` library to retrieve and display the details of courses, and the modules that a student must pass to complete a course.
 
-To save time, you'll work with a pre-existing web application. You'll add the code that connects this application to your database.
+To save time, you'll work with a pre-existing web application. You'll add the code that connects this application to your database. The following diagram shows the primary components of this application:
+
+![High-level view of the structure of the application](../media/5-diagram.png)
+
+You'll perform the following tasks:
+
+- Create a class that holds the course name, module title, and sequence for each module in the database.
+- Create a data access controller class that retrieves the information from the database.
+- Edit the code behind the index page in the web application, to create a data access controller object and fetch the data.
+- Edit the index page to display the data.
 
 ## Deploy and run the pre-existing web application
 
@@ -10,25 +19,23 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
 1. If you haven't already done so, in the Cloud Shell window, run the following command to download the data files and application code for the educational institute system:
 
-    <!-- TODO: Replace <location of repository> with the name of the repository containing the sample code in GitHub. The source code is currently supplied in the code folder for this module -->
-
     ```bash
-    git clone http://github.com/<location of repository> education
+    git clone https://github.com/MicrosoftDocs/mslearn-develop-app-that-queries-azure-sql education
     ```
 
-1. Move to the **education** folder:
+2. Move to the **education** folder:
 
     ```bash
     cd ~/education
     ```
 
-1. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed:
+3. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed:
 
     ```bash
     bash setup.sh
     ```
 
-1. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
+4. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
 
     ![Screenshot of the education web app running. Currently, no data appears](../media/5-web-app-no-data.png)
 
@@ -487,10 +494,9 @@ To save time, you'll work with a pre-existing web application. You'll add the co
     cd ~/education
     ```
 
-1. Run the following commands to commit your changes, and build and deploy the updated web application. Note that the script creates a new web application, leaving the existing web application in place for comparison purposes:
+1. Run the following commands to build and deploy the updated web application. Note that the script creates a new web application, leaving the existing web application in place for comparison purposes:
 
     ```bash
-    git commit -m "Added SQL Server Code" -a
     bash setup.sh
     ```
 
