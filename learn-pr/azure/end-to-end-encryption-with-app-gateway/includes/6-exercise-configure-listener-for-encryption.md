@@ -4,7 +4,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
 ![Image highlighting the elements (frontend port, SSL certificate for App Gateway, listener, and rule) created in this exercise](../media/6-exercise-elements.png)
 
-## Configure listener
+## Configure the listener
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -59,18 +59,17 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
         --rule-type Basic
     ```
 
-<!-- To get this working, perform the following additional steps using PowerShell 
+1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM.
 
-```PowerShell
-$gw = Get-AzApplicationGateway -Name gw-shipping -ResourceGroupName $rgName
+    ```azurecli
+    export rgID="$(az group list --query [0].id --output tsv)"
 
-$trustcert = Get-AzApplicationGatewayTrustedRootCertificate -ApplicationGateway $gw
-
-$poolSetting01 = set-AzApplicationGatewayBackendHttpSettings -ApplicationGateway $gw -Name https-settings -Port 443 -Protocol Https -CookieBasedAffinity Disabled -TrustedRootCertificate $trustcert -HostName 10.0.1.4
-
-Set-AzApplicationGateway -ApplicationGateway $gw
-```
--->
+    az network application-gateway http-settings update \
+        --resource-group $rgName \
+        --gateway-name gw-shipping \
+        --name https-settings \
+        --set trustedRootCertificates='[{"id": "'$rgID'/providers/Microsoft.Network/applicationGateways/gw-shipping/trustedRootCertificates/shipping-root-cert"}]'
+    ```
 
 ## Test the Application Gateway
 
@@ -84,10 +83,10 @@ Set-AzApplicationGateway -ApplicationGateway $gw
       --output tsv)
     ```
 
-2. Using a web browser, move to this URL.
+1. Using a web browser, move to this URL.
 
     As before, your browser might display a warning message stating that the SSL connection is being made using an unauthenticated certificate. You can ignore this warning and continue to the web site.
 
-3. Verify that the home page for the Shipping Portal appears.
+1. Verify that the home page for the Shipping Portal appears.
 
 You've now configured the listener to listen on port 443 and decrypt the data ready to be passed to the backend pool. The data is re-encrypted when it is transmitted from the gateway to a server in the backend pool. With this listener in place, you have set up end-to-end encryption for the shipping portal.

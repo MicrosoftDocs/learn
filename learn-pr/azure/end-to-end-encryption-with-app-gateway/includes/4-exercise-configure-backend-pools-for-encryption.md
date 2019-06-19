@@ -48,7 +48,7 @@ The following image highlights the elements you'll configure in this exercise.
 
 2. In your web browser, navigate to this URL.
   
-  You will most likely receive a warning message from your browser similiar to that shown in the following image. This warning occurs because the web server is configured using a self-signed certificate that can't be authenticated:
+  You will most likely receive a warning message from your browser similar to that shown in the following image. This warning occurs because the web server is configured using a self-signed certificate that can't be authenticated:
 
   ![Image showing the warning about an unauthenticated server in Microsoft Edge](../media/4-warning.png)
 
