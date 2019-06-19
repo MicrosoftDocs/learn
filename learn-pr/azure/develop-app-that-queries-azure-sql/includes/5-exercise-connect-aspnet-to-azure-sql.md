@@ -368,7 +368,7 @@ You'll perform the following tasks:
     }
     ```
 
-1. Open the file **Index.cshtml** using the **Code** editor:
+1. Open the file **Index.cshtml** using the **Code** editor.
 
     ```bash
     code Index.cshtml
@@ -472,18 +472,18 @@ You'll perform the following tasks:
 
 ## Deploy and test the updated web application
 
-1. In the Cloud Shell, return to the **education** folder:
+1. In the Cloud Shell, return to the **education** folder.
 
     ```bash
     cd ~/education
     ```
 
-1. Run the following commands to build and deploy the updated web application. Note that the script creates a new web application, leaving the existing web application in place for comparison purposes:
+1. Run the following commands to build and deploy the updated web application. Note that the script creates a new web application, leaving the existing web application in place for comparison purposes.
 
     ```bash
     bash setup.sh
     ```
 
-1. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database:
+1. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database.
 
     ![Screenshot of the education web app running, showing the data](../media/5-web-app-with-data.png)
