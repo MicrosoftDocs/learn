@@ -72,10 +72,10 @@ Let's add a few variables to the pipeline.
 
 Here you'll add the tasks that perform the scan to **azure-pipelines.yml**.
 
-Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet sonarscanner begin` command you ran to prepare the scanner to collect build and test data.
+Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet-sonarscanner begin` command you ran to prepare the scanner to collect build and test data.
 
 ```bash
-dotnet sonarscanner begin \
+$HOME/.dotnet/tools/dotnet-sonarscanner begin \
   /k:"$KEY" \
   /d:sonar.host.url="https://sonarcloud.io" \
   /d:sonar.login="$SONAR_TOKEN" \
@@ -92,7 +92,7 @@ An easier way is to use these built-in task types provided by the SonarCloud ext
 * `SonarCloudAnalyze@1`
 * `SonarCloudPublish@1`
 
-`SonarCloudPrepare@1` maps to the `dotnet sonarscanner begin` command you ran earlier. This task uses the service connection you created earlier, rather than directly using your access token. This ensures that your access token does not appear in the build output. 
+`SonarCloudPrepare@1` maps to the `dotnet-sonarscanner begin` command you ran earlier. This task uses the service connection you created earlier, rather than directly using your access token. This ensures that your access token does not appear in the build output. 
 
 The other two commands map to the `dotnet sonarscanner end` command, which analyze the results and uploads the report to SonarCloud.
 
