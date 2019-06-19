@@ -13,6 +13,9 @@ At a minimum, the YAML file needs to define the agent to use. Recall that a _bui
 
 1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as `~/mslearn-tailspin-spacegame-web`.
 
+    > [!IMPORTANT]
+    > On Windows, ensure that you select **YAML** from the **Save as type** field.
+
 1. In **azure-pipelines.yml**, specify the Ubuntu 16.04 image pool, then save the file.
 
     ```yml

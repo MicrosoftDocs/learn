@@ -5,7 +5,7 @@ You're all done with the tasks for this module. Here, you'll move the work item 
 
 ## Move the work item to Done
 
-Here, you'll move the work item you assigned to yourself earlier in this module, **Investigate hosted vs private build servers**, to the **Done** state.
+Here, you'll move the work item you assigned to yourself earlier in this module, **Investigate hosted vs private build servers**, to the **Done** column.
 
 In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because you have a private build agent working on Azure Pipelines.
 
@@ -29,7 +29,7 @@ Running multiple templates gives you multiple Azure Pipelines projects, each poi
 
 Choose one of the following options.
 
-### Disable the pipeline
+### Option 1 - Disable the pipeline
 
 This option disables the pipeline so that it does not process further build requests. You can re-enable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and your build pipeline for future reference.
 
@@ -46,7 +46,7 @@ To disable the pipeline:
 
     Your pipeline will no longer process build requests.
 
-### Delete the Azure DevOps project
+### Option 2 - Delete the Azure DevOps project
 
 This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Choose this option if you don't need your DevOps project for future reference.
 
