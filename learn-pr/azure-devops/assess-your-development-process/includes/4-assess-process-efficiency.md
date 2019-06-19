@@ -30,11 +30,11 @@ After we decide that we have a stable build, we update a spreadsheet to tell Ami
 
 Amita manually tests the build ![Callout 4](../../shared/media/callout-04.png). This process gets longer as the codebase grows. For now, let's say three days. She then emails Andy with bug reports. Testing doesn't add value, but it's necessary.
 
-Andy then has to take time to triage the bugs and assign work.
+Andy then has to take time to triage the bugs and assign work ![Callout 4](../../shared/media/callout-04.png). It can take another three days for Andy to understand the issues and get them to the right developers.
 
 ### Operations processes
 
-When Amita approves a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for more testing. Often, the pre-production servers are out of sync with the latest patches and updates that are needed to run the web site. It takes Tim about two days to deploy to pre-production and run some tests. Again, while deploying to pre-production doesn't add value, it's necessary. ![Callout 5](../../shared/media/callout-05.png).
+When Amita approves a build, she hands it off to Tim. Tim needs to deploy this build to the pre-production servers for more testing. Often, the pre-production servers are out of sync with the latest patches and updates that are needed to run the web site. It takes Tim about two days to deploy to pre-production and run some tests. Again, while deploying to pre-production doesn't add value, it's necessary ![Callout 5](../../shared/media/callout-05.png).
 
 After a build is ready for production, leadership needs to approve the release before the release can be deployed. This happens in a meeting. It takes four days to get leadership to meet and review the release.
 
