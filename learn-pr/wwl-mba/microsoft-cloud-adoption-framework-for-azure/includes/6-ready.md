@@ -12,25 +12,24 @@ IT staff members might feel anxious about their roles and positions as they real
 
 Microsoft and partners offer a variety of options to help all audiences develop these strategic skills with Microsoft Azure services. Training resources are available on Microsoft Learn to make this transition even easier across the entire organization, including specific learning resources for business users, solution architects, cloud administrators, and developers.
 
-Before anything gets tested, deployed, or potentially broken, explore Azure Support options and choose the plan that best fits your needs, whether you're a developer just starting your cloud journey or a large organization deploying business-critical, strategic applications. This is the time to look at your options and make the proper support decisions, that cover proactive support scenarios, like customized architectural guidance and consultations to health status and notification, through 24x7 technical support.
+Before anything gets tested, deployed, or potentially broken, explore Azure Support options and choose the plan that best fits your needs, whether you're a developer just starting your cloud journey or a large organization deploying business-critical, strategic applications.
 
 > [!TIP]
 > Links to sample skills readiness learning paths on Microsoft Learn and Azure Support are available in the “Summary and resources” unit at the end of this module.
 
 ## Create your landing zone
 
-Before you begin to build and deploy solutions with Azure services, you need to make sure your environment is ready. Landing zones are the basic building blocks of any cloud adoption environment. The term landing zone is used to describe an environment that has been provisioned and prepared to host workloads in a cloud environment, such as Azure. A fully functioning landing zone is the final deliverable of any iteration of the CAF methodology.
+Before you begin to build and deploy solutions with Azure services, you need to make sure your environment is ready. The term landing zone is used to describe an environment that has been provisioned and prepared to host workloads in a cloud environment, such as Azure. A fully functioning landing zone is the final deliverable of any iteration of the Cloud Adoption Framework methodology.
 
 There are major considerations when implementing any landing zone. These considerations, also commonly referred to as Azure Foundations, can be broken into three categories or types of considerations: hosting, Azure primitives, and governance.
 
 ![](../media/ic-caf-3.jpg)
 
-
 ### Hosting considerations
 
-All landing zones provide structure to hosting options. This structure is created explicitly through governance controls or organically through the adoption of services within the landing zone. There are four decision areas to be considered when hosting your landing zone:
+All landing zones provide structure to hosting options. There are four decision areas to be considered when hosting your landing zone:
 
-- **Compute decisions** - Align compute options with the purpose of the landing zone to minimize operational complexity. This decision can be enforced using automation toolchains, such as Azure policy initiatives and landing zone blueprints.
+- **Compute decisions** - Align compute options with the purpose of the landing zone to minimize operational complexity.
 
 - **Networking decisions** - Choose the networking services, tools, and architectures that will support your organization's workload, governance, and connectivity requirements.
 
@@ -44,15 +43,15 @@ Each landing zone is part of a broader solution for organizing resources across 
 
 - **Azure fundamental concepts** - Learn fundamental concepts and terms used to organize resources in Azure. Also learn how these concepts relate to one another.
 
-- **Resource organization decision guide** - Once each of the primitives is understood, the resource organization decision guide can help make decisions that will shape the landing zone. Azure offers many services that help you organize resources, control costs, and secure and manage your organization’s Azure subscription.
+- **Resource organization decision guide** - Azure offers many services that help you organize resources, control costs, and secure and manage your organization’s Azure subscription.
 
   - Organize resources: set up a management hierarchy to consistently apply access control, policy, and compliance to groups of resources and use tagging to track related resources. The organizing structure for resources in Azure has four levels:
 
   ![Image of Organizing structure for resources in Azure](../media/organize-resources.png)
 
-  - Management groups: these are containers that help you manage access, policy, and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group.
+  - Management groups: these are containers that help you manage access, policy, and compliance for multiple subscriptions.
 
-  - Subscriptions: a subscription groups together user accounts and the resources that have been created by those user accounts. For each subscription, there are limits or quotas on the amount of resources you can create and use. Organizations can use subscriptions to manage costs and the resources that are created by users, teams, or projects.
+  - Subscriptions: a subscription groups together user accounts and the resources that have been created by those user accounts.
 
   - Resource groups: a resource group is a logical container into which Azure resources like web apps, databases, and storage accounts are deployed and managed.
 
@@ -60,13 +59,13 @@ Each landing zone is part of a broader solution for organizing resources across 
 
 - **Manage costs and billing** - Identify your subscription type, understand how billing works, and how you can control costs. Cost control is critical to maximize the value of your cloud investment.
 
-  - *Azure Cost Management*: provides a few ways to help you predict, analyze, and manage costs. You can view aggregated cost for your account or view accumulated costs over time. You can create a budget and then configure alerts to warn you when you are close to exceeding it. Manage your invoices and payments for visibility on your cloud investment.
+  - *Azure Cost Management*: provides a few ways to help you predict, analyze, and manage costs. You can view aggregated cost for your account or view accumulated costs over time.
 
   - *Billing and subscription support*: create support requests to help you understand your usage, billing, and subscription details directly from the Azure portal.
 
 - **Plan for governance, security, and compliance** - Enforce and automate policies and security settings that help you follow applicable legal requirements.
 
-  - *Azure Policy*: is a service that you use to create, assign, and manage policies. These policies enforce rules on your resources, so those resources stay compliant with your corporate standards and service level agreements. Azure Policy scans your resources to identify resources that aren't compliant with the policies you implement.
+  - *Azure Policy*: is a service that you use to create, assign, and manage policies.
 
   - *Azure Security Center*: provides a unified view of security across your applications and generates recommendations to fix issues before they can be exploited.
 
@@ -81,9 +80,9 @@ Implementing the first application is key to learning and testing with confidenc
 
 - Business criteria - Identify an application currently in operation where the owner has a strong motivation to move to the cloud.
 
-- Technical criteria - Select an application that has minimum dependencies and can be moved as a small group of assets. It's suggested that an application with a defined testing path should be selected to ease validation. The first application is often deployed in an experimental environment with no operational or governance capacity. It's important to select an application that does not interact with secure data.
+- Technical criteria - Select an application that has minimum dependencies and can be moved as a small group of assets. The first application is often deployed in an experimental environment with no operational or governance capacity. It's important to select an application that does not interact with secure data.
 
-Plan subsequent releases as additional applications are deployed to the cloud, creating first prioritized migration application and first prioritized release backlog. This model allows the team to iterate on the approach and provides sufficient time to create an adequate process for qualitative analysis. The output of a rationalization effort is a prioritized backlog of all assets that will be affected by the chosen path.
+Plan subsequent releases as additional applications are deployed to the cloud, creating first prioritized migration application and first prioritized release backlog.
 
 You’ve just learned how critical readying your people, your business processes, and your environment are to a successful cloud adoption journey. Next, you'll learn about implementing your cloud adoption plan, either due to a migration or innovation path.
 

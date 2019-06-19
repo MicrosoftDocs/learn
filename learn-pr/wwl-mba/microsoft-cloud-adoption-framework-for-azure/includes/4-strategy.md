@@ -71,17 +71,11 @@ Cloud computing makes data backup, disaster recovery, and business continuity ea
 
 The most successful cloud adoption journeys start with a business outcome in mind, backed up by financial reasoning and support. A business outcome is a concise, defined, and observable result/change in business performance, supported by a specific measure.
 
-Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain applications and functions off-premises to cloud-delivered services.
-
 The chief financial officer (CFO) plays a key role in creating and landing a cloud adoption plan. The CFO can drive the value of migration and innovation and create a financial plan for adoption. The CFO can also work with the Cloud Strategy team to develop cost models that compare IT operations on-premises (in a datacenter) to operations in the cloud. These models should include key measurements to quantify business outcomes.
 
 The Cloud Strategy team consists of business leaders from finance, IT infrastructure, and application groups. These teams can help with the cloud analysis and experimentation phase. For instance, a Cloud Strategy team could be driven by the CTO and consist of members of the enterprise architecture team, IT finance, senior technologists from various IT applications groups (HR, finance, and so on), and leaders from the infrastructure, security, and networking teams.
 
 The Cloud Strategy Team must lead the cloud analysis and planning phase. At the start of the cloud adoption analysis, the Cloud Strategy Team is responsible for reviewing business outcomes and for creating the business justification plan for possible use cases for cloud adoption. The Cloud Strategy Team is also responsible for building or facilitating the cloud rationalization process, selecting the first application, and managing subsequent prioritized backlogs. Finally, the Cloud Strategy Team should manage communications with key stakeholders and promote the cloud adoption journey success and learnings.
-
-One of the first tasks of Cloud Strategy Team members is to spend time educating themselves, making sure all participants have a similar understanding of cloud technology. Team members can also spend time familiarizing themselves with the offerings from platform, tool, and cloud application providers.
-
-When the team begins to draft the strategy, members should understand that not all services or applications end up in the public cloud, for various reasons. At the start of the migration journey, the organization will use a hybrid cloud. This means—at least for some time—certain applications remain on-premises and, for cloud transition, co-existence is required.
 
 Here are some tools to support you in your financial planning:
 
