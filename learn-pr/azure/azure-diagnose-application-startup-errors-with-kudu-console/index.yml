@@ -29,10 +29,9 @@ products:
 units:
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.1-introduction
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.2-kudu-console-concepts
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.3-exercise-create-a-web-app
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.4-app-startup-errors
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.5-exercise-implement-a-web-application
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.6-exercise-diagnose-application-event-log-using-kudu-console
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.7-summary
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.3-app-startup-errors
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.4-exercise-implement-a-web-application
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.5-exercise-diagnose-application-event-log-using-kudu-console
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.6-summary
 badge:
   uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge

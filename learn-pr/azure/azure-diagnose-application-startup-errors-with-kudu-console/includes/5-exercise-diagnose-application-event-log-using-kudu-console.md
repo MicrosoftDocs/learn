@@ -19,7 +19,7 @@ In this unit, the application event log is analyzed through Kudu console.
 1. Open **trace** folder.
 1. Examine the file ending with **eventlog.xml** using the edit button on the left and scroll to the bottom to see the most recent events.
 
-<!--## Run the app in Kudu Console
+## Run the app in Kudu Console
 
 You can run the app in Kudu Console Remote Execution Console to discover useful information that is not immediately visible in the Application Event Log.
 
@@ -47,4 +47,4 @@ The console output from the app, showing any errors, is piped to the Kudu consol
 1. `cd D:\home\SiteExtensions\AspNetCoreRuntime.{X.Y}.x64` (`{X.Y}` is the runtime version)
 1. Run the app: `dotnet \home\site\wwwroot\{ASSEMBLY NAME}.dll`
 
-The console output from the app, showing any errors, is piped to the Kudu console.-->
+The console output from the app, showing any errors, is piped to the Kudu console.

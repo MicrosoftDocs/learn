@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.3-app-startup-errors
+title: Describe the application startup errors and logging process
+metadata:
+  title: Describe the application startup errors and logging process
+  description: Describe the application startup errors and logging process
+  ms.date: 05/22/2019
+  author: sowmyasubramaniam 
+  ms.author: sosubra 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-app-startup-errors.md)]

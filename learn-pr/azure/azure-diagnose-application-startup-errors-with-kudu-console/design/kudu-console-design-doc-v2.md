@@ -37,9 +37,9 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Describe the different App startup errors and diagnostic techniques | Introduces the different app startup errors and use the Diagnose and solve problems blade to examine the Application Event Log | knowledge check | 1 | Yes |
+| Describe the different App startup errors and diagnostic techniques | Introduces the different app startup errors and use Kudu console to examine the Application Event Log | knowledge check | 1 | Yes |
 | Run the ASP.NET Core Module app in kudu console | Outlines the web app creation process and run the app in kudu console | Exercise | 2 | Yes |
-| Diagnose the ASP.NET Core Module stdout log | Outlines the process to diagnose the stdout log using kudu console | Exercise | 3 | Yes |
+| Diagnose the ASP.NET Core application event log | Outlines the process to diagnose the application event log using kudu console | Exercise | 3 | Yes |
 
 ## Outline the units
 
@@ -47,34 +47,15 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
     You are an IT admin supporting a leading hotel and resort company using Azure web apps. The hospitality group is rolling out a new service to its gold tier members to support digital room selection.  This service however returns an application process failure message. 
 
-    In this module, you'll learn how to diagnose the app startup error by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you'll use the Kudu diagnostic console to discover the error.
+    In this module, you'll learn how to diagnose the app startup error by examining the application event logs. To diagnose the startup error, you'll use the Kudu diagnostic console to discover the error.
 
 1. **Describe Kudu console purpose and functionalities**
     
-    Azure App Service diagnostic tools help to diagnose ASP.NET Core app startup issues. 
-
-    App startup errors - 502.5 Process Failure, 500 Internal Server Error, Connection reset
-
-1. **Exercise -  Create and configure a web app**
-
-    1. Create an Azure web app
-    1. Configure the web app
-    1. Access the application event log in the Diagnose and Solve problems screen
-    1. Examine the application event log using kudu console
-    1. Run the app in the kudu console    
-
-1. **Describe the application startup errors and starter web project development process**
+1. **Describe the application startup errors and logging process**
 
 1. **Exercise -  Implement a web application**
 
 1. **Exercise -  Diagnose application event log using kudu console**
-
-1. **Knowledge check**
-
-    What types of questions will test *learning objective*?
-
-    - Question type
-    - Question type
 
 1. **Summary**
 

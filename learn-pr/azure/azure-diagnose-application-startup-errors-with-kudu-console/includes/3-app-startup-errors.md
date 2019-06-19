@@ -20,6 +20,10 @@ The 500 internal server error occurs with the app's code during startup or while
 
 Connection reset error occurs after the headers are sent and it is too late for the server to send 500 Internal Server Error. This error will occur when the complex objects of the response are not serialized in the right order. Application logging will help resolve this issue.
 
+## Azure App Service Diagnostics
+
+The **Diagnose and Solve problems** in the Azure App Service web app provides the options to choose the options that best describe the issue with your app. 
+
 ## Create and deploy a web app
 
 To diagnose application startup errors, you need to deploy code to your web app in Azure App Service. For this module, you'll create and deploy an ASP.NET Core web app.
