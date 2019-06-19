@@ -16,7 +16,6 @@ abstract: |
   - Implement TLS encryption between Application Gateway and your web server
 prerequisites: | 
   - Basic understanding of SSL/TLS encryption
-  - Basic knowledge of PowerShell
   - Basic knowledge of networking concepts
 iconUrl: /learn/achievements/end-to-end-encryption-with-app-gateway.svg
 levels:
