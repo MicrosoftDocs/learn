@@ -10,13 +10,19 @@ Visual Studio Code comes with an integrated terminal so you can edit files and w
 
 1. Launch Visual Studio Code.
 1. From the **View** menu, select **Terminal** or **Integrated Terminal** (the option you see depends on your operating system.)
+1. From the drop-down box, select **bash**.
+
+    ![](../media/3-vscode-bash.png)
+
+    The terminal window enables you to choose among any shell that's installed on your system, such as Bash, Zsh, and PowerShell.
+
+    Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+
 1. Run the `cd` command to navigate to the directory you want to work from, such as your home directory (`~`). You can choose a different directory if you prefer.
 
     ```bash
     cd ~
     ```
-
-By default, the terminal shell you see maps to PowerShell on Windows 10 and your default shell on macOS and Linux. You can install additional shells and configure Visual Studio Code to work with them.
 
 ## Configure Git
 
