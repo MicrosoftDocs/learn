@@ -31,6 +31,7 @@ You'll also need to set up a development environment on your Windows, macOS, or 
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
+* The latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true)
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 

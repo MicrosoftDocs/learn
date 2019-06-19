@@ -23,6 +23,7 @@ prerequisites: |
   - .NET Core 2.1
   - Git
   - A GitHub account
+  - The latest version of Java SE
 iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
 levels:
 - intermediate
