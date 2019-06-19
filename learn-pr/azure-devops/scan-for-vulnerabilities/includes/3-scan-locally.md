@@ -153,20 +153,28 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
 1. Run this `dotnet test` command to run unit tests and collect code coverage results.
 
     ```bash
-    dotnet test --no-build --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat="cobertura%2copencover" /p:CoverletOutput=./TestResults/Coverage/
+    dotnet test --no-build \
+      --configuration Release \
+      /p:CollectCoverage=true \
+      /p:CoverletOutputFormat="cobertura%2copencover" \
+      /p:CoverletOutput=./TestResults/Coverage/
     ```
 
     If the command fails, try running it like this, as you did previously.
 
     ```bash
-    MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat="cobertura%2copencover" /p:CoverletOutput=./TestResults/Coverage/
+    MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build \
+      --configuration Release \
+      /p:CollectCoverage=true \
+      /p:CoverletOutputFormat="cobertura%2copencover" \
+      /p:CoverletOutput=./TestResults/Coverage/
     ```
 
     This command varies slightly from the one you used in the previous module to collect code coverage. Previously, you used `/p:CoverletOutputFormat="cobertura"` to collect code coverage in Cobertura format. SonarCloud needs the results to be in OpenCover format. This version of the command outputs code coverage results in both formats.
 
     (The `%2c` part represents the comma `,` character and makes it easier for the command to parse the string.)
 
-1. Run this `dotnet sonarscanner end` command to complete the scanning session and upload the results to SonarCloud.
+1. Run this `dotnet-sonarscanner end` command to complete the scanning session and upload the results to SonarCloud.
 
     ```bash
     $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
