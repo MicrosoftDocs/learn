@@ -17,25 +17,19 @@ You'll perform the following tasks:
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-1. If you haven't already done so, in the Cloud Shell window, run the following command to download the data files and application code for the educational institute system:
-
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-develop-app-that-queries-azure-sql education
-    ```
-
-2. Move to the **education** folder:
+1. Move to the **education** folder:
 
     ```bash
     cd ~/education
     ```
 
-3. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed:
+1. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed:
 
     ```bash
     bash setup.sh
     ```
 
-4. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
+1. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
 
     ![Screenshot of the education web app running. Currently, no data appears](../media/5-web-app-no-data.png)
 
