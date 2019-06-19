@@ -15,8 +15,8 @@ Follow along with the team by setting up your own free Azure DevOps account.
     > You may have a Microsoft account already. Typically these end with hotmail.com or outlook.com.
 1. Review the Terms of Service, Privacy Statement, and Code of Conduct and click **Continue** if you agree to them.
 
-> [!NOTE]
-> As the person creating the Azure DevOps account, you will automatically become the account owner. Please be considerate when deciding on your account name and avoid existing legal entities.
+    > [!NOTE]
+    > As the person creating the Azure DevOps account, you will automatically become the account owner. Please be considerate when deciding on your account name and avoid existing legal entities.
 
 ## Create an organization
 

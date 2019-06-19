@@ -14,7 +14,7 @@ Over coffee, Mara listens and tries to take notes. There's a lot of information 
 
 * They use a waterfall approach. Management sets the priorities. Developers write code and hand the build off to QA. QA tests and then hands off to ops for deployment.
 * Waterfall could be acceptable for a small team but here the goals aren't always clear and they seem to change frequently.
-* Testing is delayed until late in the process. That means its harder and more expensive to fix bugs and make changes.
+* Testing is delayed until late in the process. That means it's harder and more expensive to fix bugs and make changes.
 * There's no clear definition of what "done" means. Each team member has their own idea. There's no overall business goal that everyone wants.
 * Some code is in a centralized version-control system. Many tools and scripts exist only on network file shares.
 * There are many manual processes.

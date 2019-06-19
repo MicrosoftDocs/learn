@@ -78,4 +78,4 @@ Also, I noticed that you don't have time in there for the build itself. That tak
 
 **Andy:** We don't have time to change the process now. You heard Irwin. We're in crisis mode here!
 
-**Mara:** I understand. For now, let's do what we always do. But we can all think about our part in the process and how we can improve. We can start making small changes in parallel to our current processes. That will let us see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics. If we end up adopting DevOps practices, then we can revisit the numbers. Maybe we can update the VSM map at some point.
+**Mara:** I understand. For now, let's do what we always do. But we can all think about our part in the process and how we can improve. We can start making small changes in parallel to our current processes. That will let us see if DevOps will help us without disrupting what we have. I'll keep this map and the performance metrics. If we end up adopting DevOps practices, then we can revisit the numbers. Maybe we can update the VSM at some point.
