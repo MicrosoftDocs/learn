@@ -12,13 +12,13 @@ Although this sounds difficult, there are free tools available online which make
 
 ### What is machine learning
 
-![1.1 WhatIsAI fixed](../media/1-1-a.png)
+![Venn diagram showing Artificial Intelligence encompassing all of machine learning, and machine learning encompassing all of deep learning. Artificial Intelligence - Techniques which allow computers to mimic human intelligence, including use of logic, decision trees, and machine learning (including deep learning). Machine Learning - A subset of artificial intelligence where statistical methods are used to help a system improve at tasks with training and experience. This category includes deep learning. Deep learning - A subset of machine learning where a system can train itself to perform tasks, including language and image analysis, by using multi-layered neural networks.](../media/1-1-a.png)
 
 __Machine learning__ is a subset of AI. When normal computer software needs to be improved, people edit it. Machine learning, on the other hand, is software that rewrites itself to get better at a specific task. For example, some online stores use machine learning to review your previous spending habits to give you personalized recommendations. There are lots of kinds of machine learning, including neural networks and deep learning.
 
 ### What are neural networks and deep learning
 
-![1.1 NN Diagram](../media/1-1-b.gif)
+![Diagram of a neural network - showing three circles aligned vertically on the left hand side of the image with the label "input" above them, four circles aligned vertically in the middle of the image, aligned vertically with the label "hidden" above them, and two circles on the right hand side of the image aligned vertically with the label "output" above them. Lines then appear from left to right - linking the top circle of the input layer to the top circle of the hidden layer, then the top circle of the input layer to the second circle of the hidden layer, and so on until all the circle in the input layer have a line connecting them to all circles in the middle, "hidden", layer. This then repeats for linking the "hidden" layer to the two circles on the "output" layer. So in the end all circles are connected to every circle to in the layers to the left and right of them.](../media/1-1-b.gif)
 
 Stick around and see! These are fairly advanced AI methods that we’ll cover later in the course. In short, __neural networks__ are a type of machine learning algorithm, modeled on how we thought the human brain worked. __Deep learning__ is a particular way of organizing a neural network, which can solve very difficult problems, like identifying faces from photos or videos.
 
