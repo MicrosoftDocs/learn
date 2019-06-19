@@ -4,17 +4,17 @@ In the example scenario, the operations team will use Azure Monitor log queries 
 
 ## Azure Monitor Log Analytics in the Azure portal to write Azure Monitor log queries
 
-Perform the following steps to view the Azure Monitor and write some log queries:
+You can find the Log Analytics tool in the Azure portal and use it to run sample queries or to create your own queries:
 
 1. Click **Monitor** on the left pane in the Azure portal
 
-   This brings up the Azure monitor blade and you'll see more options, including **Activity Log**, **Alerts**, **Metrics**, **Logs**
+    This brings up the Azure monitor page and you'll see more options, including **Activity Log**, **Alerts**, **Metrics**, **Logs**
 
-2. Click **Query & Analyze Logs**.
+1. Click **Query & Analyze Logs**.
 
-   Here you can type your query and see the output.
+    Here you can type your query and see the output.
 
-![Screenshot of the Azure Monitor in the portal.](../media/2-azure-monitor-portal-query-pane.png)
+    ![Screenshot of the Azure Monitor in the portal.](../media/2-azure-monitor-portal-query-pane.png)
 
 ## How to write queries with the Kusto language
 

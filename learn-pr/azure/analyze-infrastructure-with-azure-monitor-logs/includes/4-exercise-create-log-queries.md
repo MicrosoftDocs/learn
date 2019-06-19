@@ -6,6 +6,8 @@ In this exercise, you will practice performing Azure Monitor log queries. You'll
 
 ## Create basic Azure Monitor log queries to extract information from log data
 
+Let's use the **Azure Log Analytics** web site to practise writing queries against sample data. This is a demostration site with pre-populated sample data. The user interface is similar to the Azure portal and you can use the Kusto language:
+
 1. In your browser, go to the URL https://portal.loganalytics.io/demo#/discover/query/main
 
     > [!NOTE]
