@@ -12,15 +12,10 @@ In this exercise, you'll create a database server, and a database, using the Azu
     git clone https://github.com/MicrosoftDocs/mslearn-develop-app-that-queries-azure-sql education
     ```
 
-2. Run this command to move to the **education/data** folder.
+2. Run these commands to change directory to the **education/data** folder and list the files in the folder.
 
     ```bash
     cd ~/education/data
-    ```
-
-3. Run this command to browse the files in this folder.
-
-    ```bash
     ls
     ```
 
