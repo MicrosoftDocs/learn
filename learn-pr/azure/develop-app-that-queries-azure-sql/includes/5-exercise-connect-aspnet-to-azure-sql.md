@@ -17,13 +17,13 @@ You'll perform the following tasks:
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-1. Move to the **education** folder:
+1. Change your working directory to the **education** folder.
 
     ```bash
     cd ~/education
     ```
 
-1. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed:
+1. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed.
 
     ```bash
     bash setup.sh
@@ -37,7 +37,7 @@ You'll perform the following tasks:
 
 ## Add code to the web application to retrieve data
 
-1. In the Cloud Shell, go to the **education/Models** folder:
+1. In the Cloud Shell, go to the **education/Models** folder.
 
     ```bash
     cd ~/education/Models
@@ -45,13 +45,13 @@ You'll perform the following tasks:
 
     This folder contains two files, **CoursesAndModules.cs** and **DataAccessController.cs**.
 
-1. Open the **CoursesAndModules.cs** file using the **Code** editor:
+1. Open the **CoursesAndModules.cs** file using the **Code** editor.
 
     ```bash
     code CoursesAndModules.cs
     ```
 
-    This file contains an empty class named **CoursesAndModules**:
+    This file contains an empty class named **CoursesAndModules**.
 
     ```C#
     namespace CoursesWebApp.Models
@@ -65,7 +65,7 @@ You'll perform the following tasks:
     }
     ```
 
-1. Replace the comment **// TODO: Define the CourseName, ModuleTitle, and Sequence read-only properties** with the following code:
+1. Replace the comment `// TODO: Define the CourseName, ModuleTitle, and Sequence read-only properties` with the following code.
 
     ```C#
     public string CourseName { get; }
@@ -75,7 +75,7 @@ You'll perform the following tasks:
 
     This code defines a set of read-only fields that will contain the data for each row displayed by the web application.
 
-1. Replace the comment **// TODO: Create a constructor that initializes the fields behind the properties** with the following constructor:
+1. Replace the comment `// TODO: Create a constructor that initializes the fields behind the properties` with the following constructor.
 
     ```C#
     public CoursesAndModules(string courseName, string moduleTitle, int sequence)
@@ -86,7 +86,7 @@ You'll perform the following tasks:
     }
     ```
 
-    This constructor populates the fields with the data to be displayed. The complete file should look like this:
+    This constructor populates the fields with the data to be displayed. The complete file should contain the following code.
 
     ```C#
     namespace CoursesWebApp.Models
@@ -109,13 +109,13 @@ You'll perform the following tasks:
 
 1. Save the file, and close the **Code** editor.
 
-1. Open the **DataAccessController.cs** file using the **Code** editor:
+1. Open the **DataAccessController.cs** file using the **Code** editor.
 
     ```bash
     code DataAccessController.cs
     ```
 
-    This file contains a class named **DataAccessController**:
+    This file contains a class named `DataAccessController`. This class will contain the data access logic for connecting to the database and retrieving the course and module data. It will populate a list of `CoursesAndModules` objects with this data.
 
     ```C#
     using Microsoft.Extensions.Options;
@@ -155,11 +155,9 @@ You'll perform the following tasks:
     }
     ```
 
-    This class will contain the data access logic for connecting to the database and retrieving the course and module data. It will populate a list of **CoursesAndModules** objects with this data.
+1. Leave the **Code** editor open, and switch to the Azure portal. In the left-hand pane, click **SQL databases**, and select your database.
 
-1. Leave the **Code** editor open, and switch to the Azure portal. In the left-hand pane, click **SQL databases**, and select your database. 
-
-1. Under **Settings**, click **Connection strings**. Copy the ADO.NET connection string to the clipboard:
+1. Under **Settings**, click **Connection strings**. Copy the ADO.NET connection string to the clipboard.
 
     ![Screenshot of the connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
@@ -169,15 +167,15 @@ You'll perform the following tasks:
     private string connectionString = "Server=tcp:courseserver-nnn.database.windows.net,1433;Initial Catalog=coursedatabase-nnn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     ```
 
-1. After the comment **//TODO: Connect to the database**, replace the commented out **using** statement with the following code:
+1. After the comment `//TODO: Connect to the database`, replace the commented out `using` statement with the following code.
 
     ```C#
     using (SqlConnection con = new SqlConnection(connectionString))
     ```
 
-    This code creates a new **SqlConnection** object that connects to the database using your connection string.
+    This code creates a new `SqlConnection` object that connects to the database using your connection string.
 
-1. Replace the comment **// TODO: Specify the SQL query to run** with the following statements:
+1. Replace the comment `// TODO: Specify the SQL query to run` with the following statements.
 
     ```C#
     SqlCommand cmd = new SqlCommand(
@@ -190,18 +188,18 @@ You'll perform the following tasks:
     cmd.CommandType = CommandType.Text;
     ```
 
-    The **SqlCommand** object contains an SQL statement that retrieves the data for all courses and modules, joining them using the information in the **StudyPlan** table.
+    The `SqlCommand` object contains an SQL statement that retrieves the data for all courses and modules, joining them using the information in the **StudyPlan** table.
 
-1. Replace the comment **// TODO: Execute the query** with the following code:
+1. Replace the comment `// TODO: Execute the query` with the following code.
 
     ```C#
     con.Open();
     SqlDataReader rdr = cmd.ExecuteReader();
     ```
 
-    These statements open the connection to the database and run the SQL statement. You can use the **SqlDataReader** object to fetch the results a row at a time.
+    These statements open the connection to the database and run the SQL statement. You can use the `SqlDataReader` object to fetch the results a row at a time.
 
-1. Replace the comment **// TODO: Read the data a row at a time** with the following block of code:
+1. Replace the comment `// TODO: Read the data a row at a time` with the following block of code.
 
     ```C#
     while (rdr.Read())
@@ -214,9 +212,9 @@ You'll perform the following tasks:
     }
     ```
 
-    This block iterates through the rows returned in the **SqlDataReader** object. The code extracts the data in the fields in each row and uses them to populate a new **CoursesAndModules** object. This object is then added to a list.
+    This block iterates through the rows returned in the `SqlDataReader` object. The code extracts the data in the fields in each row and uses them to populate a new `CoursesAndModules` object. This object is then added to a list.
 
-1. Replace the comment **// TODO: Close the database connection** with the following statement:
+1. Replace the comment `// TODO: Close the database connection` with the following statement.
 
     ```C#
     con.Close();
@@ -224,7 +222,7 @@ You'll perform the following tasks:
 
     This statement closes the connection to the database and releases and resources held.
 
-1. The completed class should look like this:
+1. The completed class should contain the following code, with the connection string for your database.
 
     ```C#
     using Microsoft.Extensions.Options;
@@ -287,7 +285,7 @@ You'll perform the following tasks:
 
 ## Add code to the web application to display the data
 
-1. In the Cloud Shell, move to the **education/Pages** folder:
+1. In the Cloud Shell, move to the **education/Pages** folder.
 
     ```bash
     cd ~/education/Pages**
@@ -295,7 +293,7 @@ You'll perform the following tasks:
 
     This folder contains the .cshtml pages and code files that the web application uses to display information.
 
-1. Using the **Code** editor, open the **Index.cshtml.cs** file. It should look like this:
+1. Using the **Code** editor, open the **Index.cshtml.cs** file. This file contains code that the **Index** page runs when it's displayed. The code defines a class named `CoursesAndModulesModel`. The **Index** page will display the details of courses and modules using this model. In this file, you need to add the code that uses a `DataAccessController` object to fetch this data.
 
     ```C#
     using System;
@@ -322,31 +320,25 @@ You'll perform the following tasks:
     }
     ```
 
-    This file contains code that the **Index** page runs when it's displayed. The code defines a class named **CoursesAndModulesModel**. The **Index** page will display the details of courses and modules using this model. In this file, you need to add the code that uses a **DataAccessController** object to fetch this data.
-
-1. Replace the comment **// TODO: Create a DataAccessController object** with the following statement:
+1. In **Index.cshtml.cs** replace the comment `// TODO: Create a DataAccessController object` with the following code to create a new `DataAccessController` object.
 
     ```C#
     DataAccessController dac = new DataAccessController();
     ```
 
-    This statement creates a new **DataAccessController** object.
-
-1. Replace the comment **// TODO: Create a collection for holding CoursesAndModules object** with the following statement:
+1. Replace the comment `// TODO: Create a collection for holding CoursesAndModules object` with the following code.
 
     ```C#
     public List<CoursesAndModules> CoursesAndModules;
     ```
 
-1. In the **OnGet** method, replace the comment **// TODO: Retrieve the data using the DataAccessController object and populate the CoursesAndModules object** with the following statement:
+1. In the `OnGet` method, replace the comment `// TODO: Retrieve the data using the DataAccessController object and populate the CoursesAndModules object` with the following code. This code uses the `DataAcessController` object to populate the list with the data from the database.
 
     ```C#
     CoursesAndModules = dac.GetAllCoursesAndModules().ToList();
     ```
 
-    This statement uses the **DataAcessController** object to populate the list with the data from the database.
-
-1. The completed file should look like this:
+1. The completed file should contain the following code. Save the file and close the **Code** editor.
 
     ```C#
     using System;
@@ -376,17 +368,15 @@ You'll perform the following tasks:
     }
     ```
 
-    Save the file and close the **Code** editor**
-
 1. Open the file **Index.cshtml** using the **Code** editor:
 
     ```bash
     code Index.cshtml
     ```
 
-    This file contains the display logic for the Index page. It specifies **CoursesAndModulesModel** as the data source. The code you've added creates and populates this model.
+    This file contains the display logic for the Index page. It specifies `CoursesAndModulesModel` as the data source. The code you've added creates and populates this model.
 
-    The page uses an HTML data to display the data from the model. Currently, the page just displays the table headings, but the table body is empty:
+    The page uses an HTML data to display the data from the model. Currently, the page just displays the table headings, but the table body (`<tbody>`) is empty.
 
     ```cshtml
     <h2>Courses and Modules</h2>
@@ -412,7 +402,7 @@ You'll perform the following tasks:
     </div>
     ```
 
-1. Replace the comment **\<!-- TODO: Display the data from the CoursesAndModules collection --\>** with the following markup:
+1. Replace the comment `<!-- TODO: Display the data from the CoursesAndModules collection --\>` with the following markup.
 
     ```cshtml
     @foreach(var courseAndModule in Model.CoursesAndModules)
@@ -433,7 +423,7 @@ You'll perform the following tasks:
 
     This code iterates through the rows in the model, and outputs the data in each field.
 
-1. The completed file should look like this:
+1. The completed **Index.cshtml** file should look contain the following code.
 
     ```cshtml
     @page
