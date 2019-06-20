@@ -74,8 +74,6 @@ Standard SKU load balancers support all of the basic features. They also allow:
 - Outbound rules
 - A guaranteed Service Level Agreement (SLA) (99.99% for two or more virtual machines)
 
-These load balancers can be used with availability sets and availability zones
-
 ## Internal and external load balancers
 
 An external load balancer operates by distributing client traffic across multiple front end VMs. Client traffic may come from browsers, module apps, or other sources. In the healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.

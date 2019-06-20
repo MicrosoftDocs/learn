@@ -4,6 +4,8 @@ In the healthcare example, you want to load balance the client traffic, to provi
 
 Here, you will create a load balancer resource and use it to distributed load across the VMs.
 
+<!-- TODO: Availability set creation causes an error in the sandbox. Fine in a paid subscription. Amend sandbox policies? -->
+
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Deploy the patient portal web application
@@ -27,13 +29,13 @@ First, deploy your patient portal application across two VMs within a single ava
     cd load-balance
     ```
 
-1. As its name suggests, this script will generate two VMs within a single availability set:
+1. As its name suggests, this script will generate two VMs within a single availability set. The script takes about two minutes to run:
 
     ```bash
     bash create-high-availabilty-vm-with-sets.sh
     ```
 
-1. The script takes about two minutes to run. When the script finishes, observe that, during deployment, all dependencies needed for your VM to run are automatically installed.
+1.  When the script finishes, click **All resources**. All the dependencies that you need for your VM to run are automatically installed. Make a note of the location where they were created. You must create the load balancer in the same location.
 
 ::: zone pivot="Portal"
 
@@ -41,7 +43,7 @@ First, deploy your patient portal application across two VMs within a single ava
 
 Now, let's create the load balancer:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), find the load balancer, and then select **Create**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **+ Create a resource > Networking > Load Balancer** and then click **Create**:
 
     ![Create a Load Balancer](../media/4-create-lb.png)
 
@@ -49,12 +51,16 @@ Now, let's create the load balancer:
 
     | Field | Information |
     | ----- | ----------- |
+    | **Subscription** | **Concierge** |
+    | **Resource group** | <rgn>[sandbox resource group name]</rgn> |
     | **Name** | Enter a unique name. For example; **Pub-LB-PatientsPortal**. |
+    | **Location** | Choose the location where the VMs were created. |
     | **Type** | Select **Public** |
-    | **SKU** | Select **Standard** |
+    | **SKU** | Select **Basic** |
     | **Public IP address** | Select **Create new** |
     | **Public IP address name** | Enter a unique name for the public IP. For example; **Pub-LB-PatientsPortal-IP** |
-    | **Assignment** | Choose **Public** |
+    | **Assignment** | Select **Static** |
+    | **Add a public IPv6 address** | Choose **No** |
 
     ![Enter Load Balancer Details](../media/4-create-details-lb.png)
 
@@ -65,7 +71,8 @@ Now, let's create the load balancer:
 
 Next, create a backend pool in the load balancer and add the VMs to it: 
 
-1. Go to **Backend pools**, and then click **Add**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the load balancer that you created.
+1. Under **Settings**, click **Backend pools**, and then click **Add**.
 
     ![Backend Pools Screenshot](../media/4-backend-pools.png)
 
@@ -91,7 +98,7 @@ Next, create a backend pool in the load balancer and add the VMs to it:
 Create a health probe that monitors the two VMs:
 
 1. Go to **Health probes**.
-1. Select **Add**, and then enter the following information:
+1. Click **+ Add**, and then enter the following information:
 
     | Field | Information |
     | ----- | ----------- |
@@ -312,12 +319,11 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
 ## Test the load balancer configuration
 
-<!-- TODO: This need review -->
-
 Let's test the load balancer setup to show how it can handle availability and health issues dynamically:
  
-1. Open Microsoft Edge on your machine.
-1. Browse to [http://LoadBalancerIP](http://LoadBalancerIP)
-1. You'll see that the response will be returned from one of the virtual machines.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then click the load balancer.
+1. One the **Overview** page, make a note of the **Public IP address**. 
+1. In a new tab, brose the the public ip address that you noted. You'll see that the response will be returned from one of the virtual machines.
 1. Try 'force refresh' by using Ctrl+F5 a few times to see the response will be returned randomly from both virtual machines.
-1. Stop the webVM1 server and force a refresh of the webpage. All traffic will be returned from webVM2.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, click **webVM1**, and then click **Stop**.
+1. Return to the tab that shows the web site and force a refresh of the webpage. All traffic will be returned from **webVM2**.
