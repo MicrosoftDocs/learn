@@ -38,7 +38,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
       --ssl-cert appgateway-cert
     ```
 
-1. Run the following command to create a rule that directs traffic received using the new listener to the backend pool.
+1. Run the following command to create a rule that directs traffic received using the new listener to the backend pool. This command may take a minute or two to complete.
 
     ```azurecli
     az network application-gateway rule create \
@@ -53,7 +53,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
 ## Test the Application Gateway
 
-1. Retrieve the public URL of the Application Gateway:
+1. Retrieve the public URL of the Application Gateway.
 
     ```bash
     echo https://$(az network public-ip show \
