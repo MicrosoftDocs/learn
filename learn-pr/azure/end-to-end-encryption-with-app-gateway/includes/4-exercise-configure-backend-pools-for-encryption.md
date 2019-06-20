@@ -102,7 +102,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM.
 
     ```azurecli
-    export rgID="$(az group list --query [0].id --output tsv)"
+    export rgID="$(az group show --name <rgn>[Sandbox resource group]</rgn> --query id --output tsv)"
 
     az network application-gateway http-settings update \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
