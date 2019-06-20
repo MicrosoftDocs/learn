@@ -160,14 +160,14 @@ Throughout Plan, Ready, and Adopt phases, business value is hypothetical and asp
 :::row:::
 :::column:::
 
-![Critically icon](../media/criticality.png)
+![Criticality icon](../media/criticality.png)
 
 :::column-end:::
 :::column span="3":::
 
-**Critically**
+**Criticality**
 
-Document the critically and relative business value of each workload.
+Document the Criticality and relative business value of each workload.
 
 :::column-end:::
 :::row-end:::
