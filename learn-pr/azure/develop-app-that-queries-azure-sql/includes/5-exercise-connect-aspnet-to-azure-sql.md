@@ -54,7 +54,7 @@ You'll perform the following tasks:
     code CoursesAndModules.cs
     ```
 
-    This file contains an empty class named **CoursesAndModules**.
+    This file contains an empty class named `CoursesAndModules`.
 
     ```C#
     namespace CoursesWebApp.Models
@@ -291,7 +291,7 @@ You'll perform the following tasks:
 1. In the Cloud Shell, move to the **education/Pages** folder.
 
     ```bash
-    cd ~/education/Pages**
+    cd ~/education/Pages
     ```
 
     This folder contains the .cshtml pages and code files that the web application uses to display information.
