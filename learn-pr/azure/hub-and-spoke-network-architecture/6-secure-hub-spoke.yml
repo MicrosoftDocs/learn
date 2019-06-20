@@ -4,7 +4,7 @@ metadata:
   title: Secure your hub and spoke network
   description: Secure your hub and spoke network
   ms.date: 04/30/2019
-  author: jboeshart
+  author: dwarrener
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -13,3 +13,34 @@ title: Secure your hub and spoke network
 durationInMinutes: 10
 content: |
   [!include[](includes/6-secure-hub-spoke.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is Network Access control?'
+    choices:
+    - content: A firewall for Azure Virtual Networks
+      isCorrect: false
+      explanation: Network access control is not a firewall.
+    - content: The act of limiting connectivity to/from specific resources.
+      isCorrect: true
+      explanation: Network access controls to make sure that your Azure services are accessible to only users and devices you want.
+    - content: A feature of Azure Active Directory
+      isCorrect: false
+      explanation: Network access control is not a feature of Azure AD.
+    - content: The act of creating subnets for Azure Virtual Networks
+      isCorrect: false
+      explanation: Network access control is not a term for creating vnet subnets.
+  - content: 'Which of the following is not supported by default when using Azure Firewall?'
+    choices:
+    - content: Monitoring of activity logs
+      isCorrect: false
+      explanation: The monitoring of activity logs is enabled by default for all Azure services. 
+    - content: Highly Available networks
+      isCorrect: false
+      explanation: Azure Firewall has high availability built-in with no configuration needed.
+    - content: Peered virtual networks
+      isCorrect: false
+      explanation: Traffic for directly peered virtual networks is routed directly by Azure Firewall.
+    - content: Forced tunneling to an on-premises network
+      isCorrect: true
+      explanation: Azure Firewall does not support forced tunneling to your on-premises network by default.

@@ -84,8 +84,7 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
         1. Run a script in the Cloud Shell to create foundational hub/spoke components.
         2. Complete the steps to enable virtual networking configuration.
         3. Run through virtual networking peering in the portal
-        4. Configure NVA routing to allow for spoke to spoke connectivity
-        5. Access control with Azure AD
+        4. Configure NSG for each vnet
 
 5. **Knowledge check**
 
@@ -93,7 +92,6 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
 
     - What are Azure Virtual Networks used for?
     - What do you need to configure for direct connections between Azure resources?
-    - Which method is used to invoke keys from Azure Key Vault?
     - Which of the following is a requirement for Azure ExpressRoute?
 
 6. **Secure your hub and spoke network**
@@ -115,16 +113,15 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
         - Traffic Flow with Network Security Groups
         - Additional security considerations
 
-7. **Knowledge check**
+    **Knowledge check**
 
     What types of questions will test *Secure your hub and spoke network*?
 
     - What is Azure Network Access control?
     - Which of the following is not supported when using Azure Firewall?
-    - What is the name of the Microsoft created labels that represent a group of IP addresses?
     - Which Azure service would you use to filter network traffic?
 
-8. **Summary**
+7. **Summary**
 
    *{How did you solve the problem in the initial scenario with the knowledge learned in the module?}*
 
