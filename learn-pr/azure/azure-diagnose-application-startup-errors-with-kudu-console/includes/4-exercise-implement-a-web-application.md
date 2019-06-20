@@ -2,6 +2,8 @@
 
 To diagnose application startup errors, you need to deploy code to your web app in Azure App Service. For this module, you'll create and deploy an ASP.NET Core web app.
 
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
 ## Create a new web project
 
 Use the `dotnet` command line tool to create a new ASP.NET Core web project.
@@ -42,7 +44,7 @@ If you were running the app on our own machine, we'd be able to open a browser t
 cd HotelApp
 ```
 
-2. Access the Program.cs file and edit it using `code Program.cs` command to update the file to include a startup exception. Save the file after editing and close the editor.
+2. Access the Program.cs file and edit it using `code Program.cs` command to update the file to include a startup exception `UseContentRoot("invalid path")`. **Save** the file after editing and **close** the editor.
 
 
 ```csharp
@@ -59,8 +61,10 @@ public class Program
 }
 ```
 
-3. Deploy the web app the implement the changes after updating the web app name to include your name in the `[<yourname>HotelApp]` parameter value:
+3. Deploy the web app to implement the changes after updating the web app name to include your name in the `[<yourname>HotelApp]` parameter value:
 
 ```bash
 az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku S1
 ```
+
+You will need to wait till the web app creation process is complete before clicking on the **Check your work** button.

@@ -9,6 +9,7 @@ metadata:
   ms.author: sosubra 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 azureSandbox: true
 durationInMinutes: 6
 interactive: bash

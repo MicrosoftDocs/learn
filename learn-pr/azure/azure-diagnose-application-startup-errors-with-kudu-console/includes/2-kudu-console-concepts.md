@@ -10,18 +10,18 @@ The Source Control Management (SCM) service site runs the Kudu service and other
 
 ## Kudu console functionality
 
-Some of the things you can do with kudu console:
+Some of the things you can do with Kudu console:
 
-1. Run commands - Use it to do most standard console operations: changing folder, copy/rename/delete files, and so on. You can also run git commands like git log, git status to diagnose some issues.
+1. **Run commands** - Use it to do most standard console operations: changing folder, copy/rename/delete files, and so on. You can also run git commands like git log, git status to diagnose some issues.
 
-1. Navigate folder UI - You can use a GUI to select the site folder, and the console window simultaneously navigates to the same folder, so the two halves of the Kudu console work together. 
+1. **Navigate folder UI** - You can use a GUI to select the site folder, and the console window simultaneously navigates to the same folder, so the two halves of the Kudu console work together. 
 
-1. Download files and folder - For files and folders, you can download the file or a zip file containing the contents of the folder.
+1. **Download files and folder** - For files and folders, you can download the file or a zip file containing the contents of the folder.
 
-1. Upload files and folder - Use drag and drop into the Kudu Console's file explorer UI.
+1. **Upload files and folder** - Use drag and drop into the Kudu Console's file explorer UI.
 
-1. Upload and expand zip file - Dragging and dropping a zip file into Kudu Console, will copy the content of the expanded zip file. It is an efficient way to upload a large number of small files and folders.
+1. **Upload and expand zip file** - Dragging and dropping a zip file into Kudu Console, will copy the content of the expanded zip file. It is an efficient way to upload a large number of small files and folders.
 
-1. View and edit text files - You can edit files through Kudu Console using Ace for in-browser editing. Editor provides an interface to investigate and identify issues.You can also use it to edit the web.config file, with syntax checking and highlighting.
+1. **View and edit text files** - You can edit files through Kudu Console using Ace for in-browser editing. Editor provides an interface to investigate and identify issues.You can also use it to edit the web.config file, with syntax checking and highlighting.
 
  
