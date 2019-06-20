@@ -10,12 +10,12 @@ If you haven’t set up your library and Azure Notebooks account the link above 
 
 __Remember: to run a code block you need to click on block.__  
 
-![Click to run block](../media/1-4-a.png)
+![Jupyter notebook with the cell containing "print("The code ran successfully!")" highlighted](../media/1-4-a.png)
 
 A green border will then appear around the block, and you can press '__Run__' to run the code block.  
 
-![Green border](../media/1-4-b.png)
+![Jupyter notebook shown, with the "Run" button highlighted in the toolbar, and the previous cell containing "print("The code ran successfully!")" now has a green border](../media/1-4-b.png)
 
 And now the output should have appeared.
 
-![Output](../media/1-4-c.png)
+![Jupyter notebook shown, with the  cell containing "print("The code ran successfully!")" now has a text to the left of it "In [1]" and text below it reading "The code ran successfully!"](../media/1-4-c.png)
