@@ -26,10 +26,13 @@ You'll perform the following tasks:
 1. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed.
 
     ```bash
-    bash setup.sh
+    ID=$RANDOM
+    GROUP=<rgn>[Sandbox resource group]</rgn>
+    az webapp up --name educationapp-$ID --resource-group $GROUP --sku B1
+    echo "Web app deployed to https://educationapp-$ID.azurewebsites.net/"
     ```
 
-1. When the web application has been deployed, the script finishes with the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
+1. When the web application has been deployed, the final command displays the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
 
     ![Screenshot of the education web app running. Currently, no data appears](../media/5-web-app-no-data.png)
 
@@ -238,7 +241,7 @@ You'll perform the following tasks:
         public class DataAccessController
         {
             // Add your connection string in the following statements
-            private string connectionString = "Server=tcp:courseserver-101.database.windows.net,1433;Initial Catalog=coursedatabase-101;Persist Security Info=False;User ID=azuresql;Password=Pa55w.rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            private string connectionString = "Server=tcp:courseserver-101.database.windows.net,1433;Initial Catalog=coursedatabase-101;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             // Retrieve all details of courses and their modules    
             public IEnumerable<CoursesAndModules> GetAllCoursesAndModules()
@@ -478,12 +481,13 @@ You'll perform the following tasks:
     cd ~/education
     ```
 
-1. Run the following commands to build and deploy the updated web application. Note that the script creates a new web application, leaving the existing web application in place for comparison purposes.
+2. Run the following commands to build and deploy the updated web application.
 
     ```bash
-    bash setup.sh
+    az webapp up --name educationapp-$ID --resource-group $GROUP --sku B1
+    echo "Web app deployed to https://educationapp-$ID.azurewebsites.net/"
     ```
 
-1. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database.
+3. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database.
 
     ![Screenshot of the education web app running, showing the data](../media/5-web-app-with-data.png)
