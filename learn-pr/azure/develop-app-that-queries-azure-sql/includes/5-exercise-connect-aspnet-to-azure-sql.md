@@ -26,17 +26,17 @@ You'll perform the following tasks:
 1. Run the following commands to build and deploy the initial web app.
 
     ```bash
-    ID=$RANDOM
-    GROUP=<rgn>[Sandbox resource group]</rgn>
-    az webapp up --name educationapp-$ID --resource-group $GROUP --sku B1
-    echo "Web app deployed to https://educationapp-$ID.azurewebsites.net/"
+    az webapp up \
+        --resource-group <rgn>[Sandbox resource group]</rgn>
+        --sku B1 \
+        --name educationapp-$RANDOM
     ```
 
-1. When the web application has been deployed, the final command displays the message `Web app deployed to https://educationapp-nnn.azurewebsites.net/`. Click this link to display the web app in your browser:
+1. When the web application has been deployed, the output will show an **App_url** with the URL of the web site. Open this site in a new tab.
 
     ![Screenshot of the education web app running. Currently, no data appears](../media/5-web-app-no-data.png)
 
-    The intention is that the web application will display a list of courses and the modules that make up this course. Currently, the application doesn't retrieve or display this data.
+    You'd like to have the web application display a list of courses and the modules that make up this course. Currently, the application doesn't retrieve or display this data, so you'll need to update the code to get this data from the database and display it to the user.
 
 ## Add code to the web application to retrieve data
 
