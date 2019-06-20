@@ -37,7 +37,7 @@ First, deploy your patient portal application across two VMs within a single ava
 
 1.  When the script finishes, click **All resources**. All the dependencies that you need for your VM to run are automatically installed. Make a note of the location where they were created. In the next sections, create the load balancer in the same location.
 
-::: zone pivot="Portal"
+::: zone pivot="portal"
 
 ## Create a load balancer
 
@@ -244,7 +244,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 
 ::: zone-end
 
-::: zone pivot="azure cli"
+::: zone pivot="bash"
 
 ## Create a load balancer
 
