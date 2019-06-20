@@ -39,7 +39,7 @@ The following image highlights the elements you'll configure in this exercise. Y
     ```bash
     echo https://"$(az vm show \
       --name webservervm1 \
-      --resource-group $rgName \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
       --show-details \
       --query [publicIps] \
       --output tsv)"
@@ -61,7 +61,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```bash
     privateip="$(az vm list-ip-addresses \
-      --resource-group $rgName \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
       --name webservervm1 \
       --query "[0].virtualMachine.network.privateIpAddresses[0]" \
       --output tsv)"
@@ -71,7 +71,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway address-pool create \
-      --resource-group $rgName \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
       --gateway-name gw-shipping \
       --name ap-backend \
       --servers $privateip
@@ -81,7 +81,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway root-cert create \
-      --resource-group $rgName \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
       --gateway-name gw-shipping \
       --name shipping-root-cert \
       --cert-file server-config/shipping-ssl.crt
@@ -91,7 +91,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway http-settings create \
-      --resource-group $rgName \
+      --resource-group <rgn>[Sandbox resource group]</rgn> \
       --gateway-name gw-shipping \
       --name https-settings \
       --port 443 \
@@ -105,7 +105,7 @@ The following image highlights the elements you'll configure in this exercise. Y
     export rgID="$(az group list --query [0].id --output tsv)"
 
     az network application-gateway http-settings update \
-        --resource-group $rgName \
+        --resource-group <rgn>[Sandbox resource group]</rgn> \
         --gateway-name gw-shipping \
         --name https-settings \
         --set trustedRootCertificates='[{"id": "'$rgID'/providers/Microsoft.Network/applicationGateways/gw-shipping/trustedRootCertificates/shipping-root-cert"}]'
