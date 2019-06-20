@@ -2,7 +2,7 @@ Logistic regression is a binary classification algorithm. Don’t be fooled by t
 
 In the plot below we compare customer satisfaction with different cocoa percentages using logistic regression.
 
-![3.1 LogisticRegression-02](../media/3.1_LogisticRegression-02.png)
+![Scatter plot showing a logistic regression with only one feature. The Y-axis represents satisfaction likelihood and the X-axis represent coca percent. The blue data points on the bottom of the Y-axis, with low levels of cocoa percent. The green data points are at the top of the Y-axis with high levels of cocoa percent. There is a non-linear black line that divides the two categories.](../media/3.1_LogisticRegression-02.png)
 
 Logistic regression can plot a curve that can help us predict the likelihood that a customer is satisfied based on the cocoa percentage of the chocolate bar.
 
