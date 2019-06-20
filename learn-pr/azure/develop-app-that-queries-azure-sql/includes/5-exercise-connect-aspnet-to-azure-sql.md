@@ -23,7 +23,7 @@ You'll perform the following tasks:
     cd ~/education
     ```
 
-1. Run the following command to build and deploy the initial web app. Ignore any warnings that are displayed.
+1. Run the following commands to build and deploy the initial web app.
 
     ```bash
     ID=$RANDOM
