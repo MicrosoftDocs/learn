@@ -35,7 +35,7 @@ First, deploy your patient portal application across two VMs within a single ava
     bash create-high-availabilty-vm-with-sets.sh
     ```
 
-1.  When the script finishes, click **All resources**. All the dependencies that you need for your VM to run are automatically installed. Make a note of the location where they were created. You must create the load balancer in the same location.
+1.  When the script finishes, click **All resources**. All the dependencies that you need for your VM to run are automatically installed. Make a note of the location where they were created. In the next sections, create the load balancer in the same location.
 
 ::: zone pivot="Portal"
 
@@ -53,12 +53,12 @@ Now, let's create the load balancer:
     | ----- | ----------- |
     | **Subscription** | **Concierge** |
     | **Resource group** | <rgn>[sandbox resource group name]</rgn> |
-    | **Name** | Enter a unique name. For example; **Pub-LB-PatientsPortal**. |
+    | **Name** | Enter a unique name. For example, **Pub-LB-PatientsPortal**. |
     | **Location** | Choose the location where the VMs were created. |
     | **Type** | Select **Public** |
     | **SKU** | Select **Basic** |
     | **Public IP address** | Select **Create new** |
-    | **Public IP address name** | Enter a unique name for the public IP. For example; **Pub-LB-PatientsPortal-IP** |
+    | **Public IP address name** | Enter a unique name for the public IP. For example, **Pub-LB-PatientsPortal-IP** |
     | **Assignment** | Select **Static** |
     | **Add a public IPv6 address** | Choose **No** |
 
@@ -80,7 +80,7 @@ Next, create a backend pool in the load balancer and add the VMs to it:
 
     | Field | Information |
     | ----- | ----------- |
-    | **Name** | Give a unique name to the backend pool. For example; **bepool-http** |
+    | **Name** | Give a unique name to the backend pool. For example, **bepool-http** |
     | **IP version** | Choose **IPv4** |
     | **Associated to** | Select **Availability set** |
     | **Availability set** | Choose the existing **portalAvailabilitySet** |
@@ -169,9 +169,9 @@ First, we need a public IP address for the load balancer:
 
 ## Create the load balancer
 
-When you use PowerShell to configure load balancer, you must create the back end address pool, the health probe, and the rule before you create the balancer itself:
+When you use PowerShell to configure a load balancer, you must create the back-end address pool, the health probe, and the rule before you create the balancer itself:
 
-1. Create a back end address pool with the `New-AzLoadBalancerBackendAddressPoolConfig` cmdlet. You will attach the VMs to this back end pool in the final steps. The following example creates a backend address pool named **myBackEndPool**:
+1. Create a back-end address pool with the `New-AzLoadBalancerBackendAddressPoolConfig` cmdlet. You will attach the VMs to this back-end pool in the final steps. The following example creates a backend address pool named **myBackEndPool**:
 
     ```Powershell
     $backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name "myBackEndPool"
@@ -189,7 +189,7 @@ When you use PowerShell to configure load balancer, you must create the back end
       -RequestPath "/"
     ```
 
-1. You now need a load balancer rule that's used to define how traffic is distributed to the VMs. You define the front end IP configuration for the incoming traffic and the back end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use:
+1. You now need a load balancer rule that's used to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use:
 
     ```Powershell
     $lbrule = New-AzLoadBalancerRuleConfig `
@@ -323,7 +323,7 @@ Let's test the load balancer setup to show how it can handle availability and he
  
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then click the load balancer.
 1. One the **Overview** page, make a note of the **Public IP address**. 
-1. In a new tab, brose the the public ip address that you noted. You'll see that the response will be returned from one of the virtual machines.
+1. In a new tab, browse to the public IP address that you noted. You'll see that the response will be returned from one of the virtual machines.
 1. Try 'force refresh' by using Ctrl+F5 a few times to see the response will be returned randomly from both virtual machines.
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, click **webVM1**, and then click **Stop**.
-1. Return to the tab that shows the web site and force a refresh of the webpage. All traffic will be returned from **webVM2**.
+1. Return to the tab that shows the web site and force a refresh of the webpage. All requests will be returned from **webVM2**.

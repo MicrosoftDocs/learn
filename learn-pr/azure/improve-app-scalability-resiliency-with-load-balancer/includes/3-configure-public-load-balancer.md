@@ -1,4 +1,4 @@
-With a full understanding of your app, you can correctlt configure Azure Load Balancer.
+With a full understanding of your app, you can correctly configure Azure Load Balancer.
 
 As the solution architect for the healthcare portal, you need to distribute the load from the client browsers over the Virtual Machines (VMs) in your web farm. You'll need to set up a load balancer and configure the VMs to be balanced.
 
@@ -10,7 +10,7 @@ By default, Azure Load Balancer distributes network traffic equally among VM ins
 
 | Distribution Mode | Details |
 |-------------------|---------|
-| **5-tuple hash** | The default distribution mode for Azure Load Balancer is a 5-tuple hash. The tuple is composed of the source IP, source port, destination IP, destination port, and protocol type. The load is distributed according to the health and availability of the VMs. |
+| **Five-tuple hash** | The default distribution mode for Azure Load Balancer is a Five-tuple hash. The tuple is composed of the source IP, source port, destination IP, destination port, and protocol type. The load is distributed according to the health and availability of the VMs. |
 | **Source IP affinity** | This distribution mode is also known as session affinity, client IP affinity, or sticky sessions. The mode uses a 2-tuple – source IP and destination IP – or 3-tuple – source IP, destination IP, and protocol type – hash to map traffic to the available servers. The hash provides a sticky session with the VM behind the load balancer. |
 | | |
 

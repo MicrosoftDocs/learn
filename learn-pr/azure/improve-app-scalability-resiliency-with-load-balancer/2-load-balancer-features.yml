@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: 'Sticky session'
       isCorrect: false
-      explanation: 'Five tuple hash is the default.'
-    - content: 'Five tuple hash'
+      explanation: 'Five-tuple hash is the default.'
+    - content: 'Five-tuple hash'
       isCorrect: true
-      explanation: 'Five tuple hash is the default.'
-    - content: 'Three tuple hash'
+      explanation: 'Five-tuple hash is the default.'
+    - content: 'Three-tuple hash'
       isCorrect: false
-      explanation: 'Five tuple hash is the default.'
+      explanation: 'Five-tuple hash is the default.'
   - content: 'What is the main advantage of an availability set?'
     choices:
     - content: 'It allows VMs to be available across data center failures.'
@@ -37,4 +37,4 @@ quiz:
       explanation: "Availabilty sets allow VMs to remain available when a physical server fails."
     - content: 'It allows VMs to be grouped into logical categories.'
       isCorrect: false
-      explanation: 'While this is a benefit, it is not the main reason for availability sets.'
+      explanation: 'While this capability is a benefit, it is not the main reason for availability sets.'

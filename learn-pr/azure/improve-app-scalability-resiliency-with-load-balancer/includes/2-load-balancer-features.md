@@ -6,7 +6,7 @@ Here, you will learn how the features of Load Balancer help you to create robust
 
 ## Distributing traffic with Azure Load Balancer
 
-Use Azure Load Balancer to scale applications and create high availability for your VMs and services. Load balancers use a hash-based distribution algorithm. By default, a 5-tuple hash is used to map traffic to available servers. The hash is made from the following elements:
+Use Azure Load Balancer to scale applications and create high availability for your VMs and services. Load balancers use a hash-based distribution algorithm. By default, a Five-tuple hash is used to map traffic to available servers. The hash is made from the following elements:
 
 - **Source IP** – the IP address of the requesting client.
 - **Source port** – the port of the requesting client.
@@ -22,7 +22,7 @@ Azure Load Balancer supports inbound and outbound scenarios, provides low latenc
 
 Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements. You can use the following two types of configuration groups to set up the load balancer:
 
-| Configuration | SLA | Information |
+| Configuration | Service Level Agreement (SLA) | Information |
 | ------------- | --- | ----------- |
 | **Availability set** |  99.95% | Protect from hardware failures within data centers |
 | **Availability zone** |  99.99% | Protect from entire data center failure |
@@ -76,6 +76,6 @@ Standard SKU load balancers support all of the basic features. They also allow:
 
 ## Internal and external load balancers
 
-An external load balancer operates by distributing client traffic across multiple front end VMs. Client traffic may come from browsers, module apps, or other sources. In the healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
+An external load balancer operates by distributing client traffic across multiple front-end VMs. Client traffic may come from browsers, module apps, or other sources. In the healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
 
 An internal load balancer distributes load across the backend tiers. In the healthcare organization, the balancer would distribute load across the internal application tier.
