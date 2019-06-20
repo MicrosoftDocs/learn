@@ -196,6 +196,7 @@ In practice, you might add build tasks one at at time, push up your changes, and
 
     > [!TIP]
     > If you don't see the build right away, wait a few moments or refresh the page.
+    > In the rare case where Azure Pipelines does not pick up your build, you can manually queue the build by clicking the **Queue** button. When prompted, enter the Git branch you want to build from, in this case, `build-pipeline`.
 
 1. Select your build and trace the build tasks as they run.
 
