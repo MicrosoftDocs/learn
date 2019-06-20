@@ -12,4 +12,4 @@ metadata:
 title: Connect an ASP.NET application to Azure SQL Database
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-connect-aspnet-to-azure.md)]
+  [!include[](includes/4-connect-aspnet-to-azure-sql.md)]
