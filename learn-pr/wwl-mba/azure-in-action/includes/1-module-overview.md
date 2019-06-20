@@ -7,7 +7,7 @@ A key time to consider migration and modernization to Azure is when your busines
 > [!NOTE]
 > Extended support ends for SQL Server 2008/2008 R2 on July 9, 2019 and for Windows Server 2008/2008 R2 on January 14, 2020, making this a good time to evaluate new options for innovation and modernization with cloud technologies.
 
-The demos in this module provide an opportunity to see and show Azure in action.
+The demos in this module provide an opportunity to see Azure in action.
 
 In this module, you will:
 
