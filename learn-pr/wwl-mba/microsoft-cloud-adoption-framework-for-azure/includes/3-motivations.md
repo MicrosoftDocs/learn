@@ -33,48 +33,7 @@ Across organization types, sizes,  and industries, the decision to invest in clo
 
 When addressing these business events, the expected business outcomes will determine the cloud journey for the organization, which essentially can be one of two: migrate or innovate. The **migrate** journey is focused, largely, on completing a migration of existing on-premises applications to the cloud. And the **innovation** journey is frequently linked to migration since it is common for those migrated applications to undergo modernization efforts to drive business and product innovation.
 
-:::row:::
-:::column:::
-
-**Migration triggers**
-
-:::column-end:::
-:::column:::
-
-**Innovation triggers**
-
-:::column-end:::
-:::row-end:::
-:::row:::
-:::column:::
-
-- Cost savings
-
-- Reduction in vendor or technical complexity
-
-- Optimization of internal operations
-
-- Increase business agility
-
-- Prepare for new technical capabilities
-
-- Scale to meet market or geographic demands
-
-:::column-end:::
-:::column:::
-
-- Prepare or build new technical capabilities
-
-- Scale to meet market or geographic demands
-
-- Improve customer experiences or engagements
-
-- Transform products or services
-
-- Disrupt the market with new products or services
-
-:::column-end:::
-:::row-end:::
+![Image of the migration and innovation triggers](../media/caf-migrationandinnovationtriggers.png)
 
 | | |
 | ---| --- |
