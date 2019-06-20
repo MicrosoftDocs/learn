@@ -2,7 +2,7 @@
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features
 metadata:
   title: Azure Load Balancer features and capabilities
-  description: TODO
+  description: In this unit, you will learn about the features and benefits of using Load Balancer with your Azure apps.
   ms.date: 05/31/2019
   author: jboeshart
   ms.author: jaboes
@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
   - content: 'What is the default distribution type for traffic through a load balancer?'
     choices:
     - content: 'Sticky session'
       isCorrect: false
-      explanation: 'Sticky sessions are not default'
-    - content: '5 tuple hash'
+      explanation: 'Five tuple hash is the default.'
+    - content: 'Five tuple hash'
       isCorrect: true
-    - content: '3 tuple hash'
+      explanation: 'Five tuple hash is the default.'
+    - content: 'Three tuple hash'
       isCorrect: false
-      explanation: 'There are five items that make up the default hash'
-
-  - content: 'What is the main advantage of an availability set'
+      explanation: 'Five tuple hash is the default.'
+  - content: 'What is the main advantage of an availability set?'
     choices:
-    - content: 'It allows VMs to  be available across data centre failures'
+    - content: 'It allows VMs to be available across data center failures.'
       isCorrect: false
-      explanation: 'Availability Zones, not sets provide availability across data centre failures'
-    - content: 'It allows VMs to be available across a physical server failures'
+      explanation: 'Availability zones, not sets, provide availability across data center failures.'
+    - content: 'It allows VMs to be available across physical server failures.'
       isCorrect: true
-    - content: 'It allows Vms to be grouped into logical categories'
+      explanation: "Availabilty sets allow VMs to remain available when a physical server fails."
+    - content: 'It allows VMs to be grouped into logical categories.'
       isCorrect: false
-      explanation: 'Whilst, this is a benefit, it is not the main reason for availability sets'
+      explanation: 'While this is a benefit, it is not the main reason for availability sets.'

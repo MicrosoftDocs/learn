@@ -1,75 +1,83 @@
-## Features and benefits of Azure Load Balancer
+With Azure Load Balancer, you can spread user requests across multiple Virtual Machines (VMs) or other services. That way, you can scale the app to larger sizes than a single VM could support and you ensure that users get service even when a VM has failed.
 
-Azure Load Balancer enables you to scale your applications and create high availability for your virtual machines and services. Load balancers use a hash-based distribution algorithm. By default, a five-tuple hash is used to map traffic to available servers. The hash is made from the following elements:
+In your health care organization, you can expect large user demand. It's of vital importance to each user that they can book an appointment, even at times of peak demand or when VMs have failed.
 
-1. **Source IP** - The IP address of the requesting client
-1. **Source port** - The port of the requesting client
-1. **Destination IP** - The destination IP of the request
-1. **Destination Port** - The destination port of the request
-1. **Protocol Type** - The specified protocol type e.g. HTTP, HTTPS, HTTP/2
+Here, you will learn how the features of Load Balancer help you to create robust app architectures.
 
-<-- Source URL: https://docs.microsoft.com/en-us/azure/load-balancer/media/load-balancer-overview/load-balancer-distribution.png -->
+## Distributing traffic with Azure Load Balancer
+
+Use Azure Load Balancer to scale applications and create high availability for your VMs and services. Load balancers use a hash-based distribution algorithm. By default, a 5-tuple hash is used to map traffic to available servers. The hash is made from the following elements:
+
+- **Source IP** – the IP address of the requesting client.
+- **Source port** – the port of the requesting client.
+- **Destination IP** – the destination IP of the request.
+- **Destination port** – the destination port of the request.
+- **Protocol type** – the specified protocol type, For example, HTTP, HTTPS, HTTP/2.
+
+<!-- TODO: Create a graphic based on this image. Source URL: https://docs.microsoft.com/azure/load-balancer/media/load-balancer-overview/load-balancer-distribution.png -->
 
 ![Overview of Load Balancer](../media/2-load-balancer-distribution.png)
 
-Azure Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications
+Azure Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.
 
-Load Balancers are not physical instances. Load balancer objects are used to express how Azure should configure its infrastructure to achieve your requirements. There are two types of configuration groups that can be used when setting up the load balancer
+Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements. You can use the following two types of configuration groups to set up the load balancer:
 
 | Configuration | SLA | Information |
 | ------------- | --- | ----------- |
-| **Availability Set** |  99.95% | Protect from Hardware failures within data centers |
-| **Availability Zone** |  99.99% | Protect from entire data center failure |
+| **Availability set** |  99.95% | Protect from hardware failures within data centers |
+| **Availability zone** |  99.99% | Protect from entire data center failure |
+| | |
 
-### Availability Sets
+### Availability sets
 
-An Availability Set is a logical grouping for isolating VM resources from each other when they're deployed. Azure makes sure that the VMs you place within an Availability Set run across multiple physical servers, compute racks, storage units, and network switches. If a hardware or software failure happens, only a subset of your VMs are impacted and your overall solution stays operational. Availability Sets are essential for building reliable cloud solutions.
+An availability set is a logical grouping that you use to isolate VM resources from each other when they're deployed. Azure ensures that the VMs you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your VMs are affected – your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
 
-<-- An image similar to this, taken from: https://thebackroomtech.com/wp-content/uploads/azure-availability-sets.png -->
+<!-- TODO: Create an image similar to the one below, taken from: https://thebackroomtech.com/wp-content/uploads/azure-availability-sets.png -->
 
 ![Overview of Availability Sets](../media/2-availability-sets.png)
 
-### Availability Zones
+### Availability zones
 
-This offers groups of one or more data centers that have completely independent power, cooling and networking
+An availability zone offers groups of one or more data centers that have independent power, cooling, and networking.
 
-<-- Source URL: https://docs.microsoft.com/en-us/azure/availability-zones/media/az-overview/az-graphic-two.png -->
+<!-- TODO: Create an image similar to the one below. Source URL: https://docs.microsoft.com/azure/availability-zones/media/az-overview/az-graphic-two.png -->
 
 ![Overview of Availability Zones](../media/2-az-graphic-two.png)
 
 > [!NOTE]
-> Availability Zones don't support all VM sizes.
+> Availability zones don't support all VM sizes.
 
 ## Selecting the right SKU
 
-There are two SKUs available when creating a load balancer
+Two SKUs are available when you create a load balancer:
 
 ### 1. Basic
 
-Allows the following:
+Basic SKU load balancers allow:
 
-- Port Forwarding
-- Application Agnostic and Transparent
-- Automatic Reconfiguration
-- Health Probes
-- Outbound Connections (SNAT)
-- Diagnostics via Azure Log Analytics for public-facing Load Balancers
-- Can only be used with availability sets
+- Port forwarding
+- Automatic reconfiguration
+- Health probes
+- Outbound connections through Secure Network Address Translation (SNAT)
+- Diagnostics through Azure Log Analytics for public-facing load balancers
+
+These load balancers are agnostic of, and transparent to, the application that uses them. They can only be used with availability sets.
 
 ### 2. Standard
 
-All of the Basic features, along with
+Standard SKU load balancers support all of the basic features. They also allow:
 
-- HTTPS Health Probes
-- Availability Zones
-- Diagnostics via Azure Monitor supporting multi-dimensional metrics
-- HA Ports
-- Outbound Rules
-- Can be used with availability sets and availability zones
-- Guaranteed SLA (99.99% for 2+ Virtual Machines)
+- HTTPS health probes
+- Availability zones
+- Diagnostics through Azure Monitor supporting multi-dimensional metrics
+- High Availability (HA) ports
+- Outbound rules
+- A guaranteed Service Level Agreement (SLA) (99.99% for two or more virtual machines)
 
-## Internal and External Load Balancers
+These load balancers can be used with availability sets and availability zones
 
-An external load balancer operates by distributing client traffic (browsers, mobile apps) across multiple front end VMs. Using the healthcare example, this would distribute the load of all the browsers operating the client healthcare application
+## Internal and external load balancers
 
-An internal load balancer distributes load internally across the backend tiers. Using the healthcare example this would distribute load across the internal application tier.
+An external load balancer operates by distributing client traffic across multiple front end VMs. Client traffic may come from browsers, module apps, or other sources. In the healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
+
+An internal load balancer distributes load across the backend tiers. In the healthcare organization, the balancer would distribute load across the internal application tier.

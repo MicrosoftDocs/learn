@@ -2,7 +2,7 @@
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.1-introduction
 metadata:
   title: Introduction
-  description: TODO
+  description: In this unit, you will learn about a business scenario that you can address by using Azure Load Balancer.
   ms.date: 05/31/2019
   author: jboeshart
   ms.author: jaboes
