@@ -8,7 +8,7 @@ To secure this data, you can use Application Gateway to ensure your data is encr
 
 Azure Application Gateway is an application delivery controller that provides several features such as load balancing HTTP traffic, web application firewall, and support for SSL encryption of your data. Application Gateway supports encrypting traffic between your user and the Application Gateway, and between your application servers and Application Gateway.
 
-By terminating your SSL connection at the Application Gateway mean you offload the CPU intensive workload of SSL termination from your servers. It also means that you don't need to configure SSL on your servers and install the certificates.
+When you terminate the SSL connection at the application gateway, it offloads the CPU intensive SSL termination workload from your servers. Also, you don’t need to install certificates and configure SSL on your servers.
 
 If you require end-to-end encryption, Application Gateway can decrypt the traffic on the gateway using your private key and then re-encrypt again with the public key of the service running in the backend pool.
 
@@ -30,4 +30,4 @@ Traffic enters the gateway through a frontend port. You can open many ports, and
 
 The backend pool contains your application servers. These servers could be virtual machines, a virtual machine scale set, or applications running on Azure App Service. Incoming requests can be load-balanced across the servers in this pool. The backend pool has an HTTP setting that references a certificate used to authenticate the backend servers. The gateway re-encrypts the traffic using this certificate before sending it to one of your servers in the backend pool.
 
-If you are using Azure App Service to host the backend application, you don't need to install any certificates in Application Gateway to connect to the backend pool. ALl communications are automatically encrypted, and the servers are trusted by Application Gateway because they are managed by Azure.
+If you are using Azure App Service to host the backend application, you don't need to install any certificates in Application Gateway to connect to the backend pool. All communications are automatically encrypted, and the servers are trusted by Application Gateway because they are managed by Azure.
