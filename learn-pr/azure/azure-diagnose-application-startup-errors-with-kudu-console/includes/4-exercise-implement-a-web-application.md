@@ -1,5 +1,7 @@
 ﻿In this unit, you will use developer tools to create the code for a starter web application.
 
+To diagnose application startup errors, you need to deploy code to your web app in Azure App Service. For this module, you'll create and deploy an ASP.NET Core web app.
+
 ## Create a new web project
 
 Use the `dotnet` command line tool to create a new ASP.NET Core web project.
@@ -57,8 +59,8 @@ public class Program
 }
 ```
 
-3. Deploy the web app the implement the changes after updating the web app name:
+3. Deploy the web app the implement the changes after updating the web app name to include your name in the `[<yourname>HotelApp]` parameter value:
 
 ```bash
 az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku S1
-
+```

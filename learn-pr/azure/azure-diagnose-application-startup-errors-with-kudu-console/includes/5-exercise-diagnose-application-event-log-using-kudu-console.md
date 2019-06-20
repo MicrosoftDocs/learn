@@ -27,9 +27,9 @@ You can run the app in Kudu Console Remote Execution Console to discover useful 
 1. Select the **Go** button. This opens Kudu Console in a new window.
 1. Open **Debug Console** in the top navigation bar and select **CMD**.
 
-#### Test a 64-bit (x64) app
+## Test a 64-bit (x64) app
 
-##### Current release
+### Current release
 
 * If the app is a 64-bit (x64) [framework-dependent deployment](/dotnet/core/deploying/#framework-dependent-deployments-fdd):
   1. `cd D:\Program Files\dotnet`
@@ -40,7 +40,7 @@ You can run the app in Kudu Console Remote Execution Console to discover useful 
 
 The console output from the app, showing any errors, is piped to the Kudu console.
 
-##### Framework-dependent deployment running on a preview release
+### Framework-dependent deployment running on a preview release
 
 *Requires installing the ASP.NET Core {VERSION} (x64) Runtime site extension.*
 

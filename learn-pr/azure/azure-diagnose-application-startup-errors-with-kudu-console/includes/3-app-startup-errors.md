@@ -22,9 +22,14 @@ Connection reset error occurs after the headers are sent and it is too late for 
 
 ## Azure App Service Diagnostics
 
-The **Diagnose and Solve problems** in the Azure App Service web app provides the options to choose the options that best describe the issue with your app. 
+The **Diagnose and Solve problems** in the Azure App Service web app provides the options to choose the options that best describe the issue with your app. This module helps you to diagnose ASP.NET Core app startup issue when hosting with **Internet Information Services (IIS)**.
 
-## Create and deploy a web app
+In Visual Studio, an ASP.NET Core project defaults to IIS Express hosting during debugging. IIS Express is a light-weight self contained version of IIS optimized for developers. It makes it easy to use the current version of IIS to develop and test websites. 
 
-To diagnose application startup errors, you need to deploy code to your web app in Azure App Service. For this module, you'll create and deploy an ASP.NET Core web app.
+To troubleshoot the common errors when hosting ASP.NET Core Apps on Azure App Service and IIS, collect the information from following sources:
 
+- **Browser behavior**: Status code and error messages
+- **Application event log entries**
+- **ASP.NET Core Module stdout and debug log entries**
+
+The hands-on labs in this module will help diagnose the startup errors using the Application Event Log with Kudu console.

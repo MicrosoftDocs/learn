@@ -24,12 +24,13 @@ Diagnose startup errors in your application using Kudu console
 
 ## Summary
 
-This module explains how to use kudu console to examine the application event log to identify the event that caused the error. The module will also cover how to use the kudu remote execution console and diagnostic console.
+This module explains how to use kudu console to examine the application event log to identify the event that caused the error. The module will also cover how to use the kudu diagnostic console.
 
 ## Learning objectives
 
-1. Describe the different types of App startup errors  
-1. Use kudu console to examine the application event log
+- Learn about the concepts of Kudu console
+- Learn various types of App startup errors  
+- Use Kudu console to examine the application event log
 
 ## Chunk your content into subtasks
 
@@ -44,23 +45,31 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 ## Outline the units
 
 1. **Introduction**
-
     You are an IT admin supporting a leading hotel and resort company using Azure web apps. The hospitality group is rolling out a new service to its gold tier members to support digital room selection.  This service however returns an application process failure message. 
 
     In this module, you'll learn how to diagnose the app startup error by examining the application event logs. To diagnose the startup error, you'll use the Kudu diagnostic console to discover the error.
-
 1. **Describe Kudu console purpose and functionalities**
-    
+    What is Kudu console?
+    Kudu console functionalities - Run commands, navigate folder, upload files and folders, download files and folders, view and edit files
 1. **Describe the application startup errors and logging process**
-
+    App startup errors:
+        500.30 In-Process Start Failure
+        502.5 Process Failure
+        500 Internal Server Error
+        Connection reset
+    App Service Diagnostics
+    Knowledge check
 1. **Exercise -  Implement a web application**
-
+    Create a web project
+    Update the web project code
+    Deploy the web app
 1. **Exercise -  Diagnose application event log using kudu console**
-
+    Access the application event log through Azure Portal
+    Access the application event log through Kudu console
+    Run the app in Kudu Console
+    Test the app in Kudu Console
 1. **Summary**
-
    In this module, you learned about the different application startup errors. As an IT admin of hotel and resort company, you learned how to use kudu console to examine the application event log and gather useful information to diagnose startup errors. You also learned how to analyze errors using kudu diagnostic console.
-
 
 1. **References**
 
