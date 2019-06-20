@@ -29,7 +29,7 @@ quiz:
     - content: "Azure Site Recovery"
       isCorrect: false
       explanation: "Incorrect. Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking down the servers by replicating those VMs from a primary site (on-premises) to a secondary location (Azure)."
-  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many benefits available. Which of the following choices is an option that can be configured by Azure App Service?"
+  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many available benefits. Which of the following choices is an option that can be configured by Azure App Service?"
     choices:
     - content: "Application authentication"
       isCorrect: true

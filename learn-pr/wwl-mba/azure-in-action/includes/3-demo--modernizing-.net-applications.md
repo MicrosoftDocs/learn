@@ -1,6 +1,6 @@
 ﻿## Introduction
 
-When an application is outgrowing the local infrastructure on which it is hosted, you need to look at the other options to meet those growing demands. The Azure cloud offers a number of platforms and service offerings to host the applications.
+When an application is outgrowing the local infrastructure on which it is hosted, you need to look at other options to meet those growing demands. The Azure cloud offers a number of platforms and service offerings to host the applications.
 
 Tailwind Traders is a local retail company. They are in the process of expanding their business worldwide and, in order to do that, they need to scale their applications with robust solutions that allow them to reach more customers without worrying about their application performance.
 
@@ -62,7 +62,7 @@ This unit will demonstrate the process by which Tailwind Traders can host their 
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TSyp]
 
-**Key ideas**: Once an application is running in **Azure App Service**, administrators can take advantage of the many benefits available. Just a few of the options that can be configured using **Azure App Service** are:
+**Key ideas**: Once an application is running in **Azure App Service**, administrators can take advantage of the many available benefits. Just a few of the options that can be configured using **Azure App Service** are:
 - Application authentication or authorization -  Fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant.
 - Networking - Connect to on-premises resources, such as a database, and fully customize security, using networking policy to define how traffic and data flows through an app.
 - Scale up - Increase the size of an instance by adding more resources.
