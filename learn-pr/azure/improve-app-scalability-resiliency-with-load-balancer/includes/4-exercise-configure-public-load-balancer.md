@@ -145,6 +145,12 @@ Finally, let's create a rule for the load balancer:
 
 First, we need a public IP address for the load balancer:
 
+1. In the Cloud Shell, start PowerShell by running this command:
+
+    ```bash
+    pwsh
+    ```
+    
 1. In PowerShell, create a new public IP address:
 
     ```Powershell
