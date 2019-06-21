@@ -9,14 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Introduction to Azure Kubernetes Service"
-summary: "Understand how Azure Kubernetes orchestrate deployment, management, failover, and high availability of compute containers and the container host."
+summary: "Determine the types of business problems that can be solved using Azure Kubernetes Service. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing."
 abstract: |
   In this module, you will:
   - Evaluate whether Azure Kubernetes Service is an appropriate Kubernetes orchestration platform for you
   - Describe how the components of Azure Kubernetes Service work to support compute container orchestration
 prerequisites: |
-  - A basic understanding of containers
-  - A basic understanding of microservices
+  - Basic understanding of microservices
 iconUrl: http://via.placeholder.com/120x120
 badge:
   uid: learn.intro-to-azure-kubernetes-service.badge
