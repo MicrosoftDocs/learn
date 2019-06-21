@@ -135,7 +135,7 @@ Identify the subtasks of *Choose the right disk storage for your virtual machine
     Standard SSD
 
     - for cost-effective and consistent performance, also be used for backup and archiving applications
-- Web servers, lightly used enterprise applications and dev/test
+    - Web servers, lightly used enterprise applications and dev/test
     
     Standard HDD
 
@@ -146,7 +146,7 @@ Identify the subtasks of *Choose the right disk storage for your virtual machine
     **Knowledge check**
 
     - What would be an appropriate disk for a given scenario A?
-- What would be an appropriate disk for a given scenario B?
+    - What would be an appropriate disk for a given scenario B?
     
 1. **Exercise - Deploy a VM with a particular disk requirement**
 
