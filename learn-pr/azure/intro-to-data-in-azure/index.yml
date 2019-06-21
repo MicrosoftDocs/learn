@@ -17,7 +17,6 @@ abstract:  |
   - Explore how Azure can meet your business demands for storing and analyzing data
   - Compare Azure data options with on-premises storage
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/intro-to-data-in-azure.svg
 levels: 
 - beginner

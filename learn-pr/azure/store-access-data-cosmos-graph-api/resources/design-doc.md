@@ -99,7 +99,7 @@ Create an application that that uses an Azure Cosmos DB as a graph database. Sto
     - Created a graph-model Azure Cosmos DB database and built a small application to see how to store and query data.
 
 ## Notes
-- The Gremlin graph API for Azure Cosmos DB should not be confused with the [Microsoft Graph API](https://developer.microsoft.com/en-us/graph). They are entirely separate things.
+- The Gremlin graph API for Azure Cosmos DB should not be confused with the [Microsoft Graph API](https://developer.microsoft.com/graph). They are entirely separate things.
 - Working with the author of the ["Choose the appropriate API for Azure Cosmos DB storage"](https://microsoft.sharepoint.com/:w:/t/ContentMaster-IgniteTripleCrown/EcJpzJlc9wFJuYKrsLkJjL8BuRqXZlGCSXVwKDMEruXG2A?e=Mczfwb) to make use of the scenario there. Expand on it and turn it into a full scenario for this module.
 - This module is not about the overall advantages of Azure Cosmos DB or globally distributing data in general. It should focus primarily on the concepts of graph databases and using Azure Cosmos DB as a graph database with Gremlin.
 - This module requires development of a small, simple .NET Core application, fit to the domain of the scenario. A simple console application is probably a good start. Please don't spend substantial amounts of time building a flashy user experience.

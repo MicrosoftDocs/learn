@@ -14,7 +14,7 @@ This kind of proof-of-concept actually underlies many real-world applications of
 
 Even this proof-of-concept will demonstrate important components of Azure Batch working in concert together. As shown in the graphic below, you'll create a pool, you'll create worker nodes, you'll create a job, and you'll create tasks, all using the Azure CLI to issue commands and get immediate feedback.
 
-<!-- TODO: Add a stripped-down version of the linked graphic below; it only needs the bottom half, without reference to Azure storage.  Please also replace 'Application or service' with 'Azure CLI' and an image of a terminal window https://docs.microsoft.com/en-gb/azure/batch/batch-technical-overview -->
+<!-- TODO: Add a stripped-down version of the linked graphic below; it only needs the bottom half, without reference to Azure storage.  Please also replace 'Application or service' with 'Azure CLI' and an image of a terminal window https://docs.microsoft.com/azure/batch/batch-technical-overview -->
 
 ## Advantages of using Azure Batch
 Azure Batch is especially well-suited to running large-scale parallel and high-performance computing (HPC) batch jobs. The service handles everything for you -- managing and scheduling all the nodes and applications required to run your scenarios. And it's a free service, so you only pay for the underlying compute, storage, and networking resources that you use.

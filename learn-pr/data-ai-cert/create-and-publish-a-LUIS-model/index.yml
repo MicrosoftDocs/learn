@@ -19,7 +19,6 @@ summary: In this module, we'll introduce you to Language Understanding Intellige
 cardDescription: Introduction to adding conversational intelligence to your apps by using language understanding (LUIS)
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
-ratingEnabled: true
 levels: 
 - intermediate
 roles:

@@ -19,7 +19,6 @@ abstract: |
   - Learn how to protect your network and virtual networks
   - Learn about advanced services and features Azure provides to keep your services and data secure and safe
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/intro-to-security-in-azure.svg
 levels:
 - beginner

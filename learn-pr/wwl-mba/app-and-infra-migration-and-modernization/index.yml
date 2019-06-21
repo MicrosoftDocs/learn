@@ -19,7 +19,6 @@ abstract: |
   - Identify the advantages of different migration and modernization strategies.
 prerequisites: None
 iconUrl: /learn/achievements/apps-and-infra-migration-modernization.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

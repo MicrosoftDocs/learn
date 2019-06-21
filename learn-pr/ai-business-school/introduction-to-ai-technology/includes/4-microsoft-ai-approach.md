@@ -1,4 +1,4 @@
-Watch this video from David Carmona, General Manager of Microsoft AI, to hear how Microsoft is turning the latest advances in AI into tools, products, and services that can be leveraged by organizations to implement an AI strategy.
+Watch this video from David Carmona, General Manager of AI Marketing, to hear how Microsoft is turning the latest advances in AI into tools, products, and services that can be leveraged by organizations to implement an AI strategy.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtIMP]
 

@@ -1,7 +1,7 @@
-Healthcare providers have the paramount need for secure connectivity between data centers and regional facilities for patient healthcare information. To achieve the goals of secure connectivity in a cost-effective manner, you used VPN gateway options in Azure to connect on-premises networks to virtual networks in Azure. You learned about the resources required to create VPN gateways and what limitations apply to different VPN Gateway SKUs. You also learned how to create and configure both site-to-site virtual network gateways.
+It's critical that healthcare providers have secure connectivity for passing patient healthcare information between datacenters and regional facilities. To achieve the goals of secure connectivity in a cost-effective way, you used VPN gateway options in Azure to connect on-premises networks to virtual networks in Azure. You learned about the resources you need to create VPN gateways and the limitations that apply to different VPN Gateway SKUs. You also learned how to create and configure site-to-site virtual network gateways.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Learn More
+## Learn more
 
-For more information on validated VPN devices that are known to be compatible with VPN gateways, and which type of VPN gateway they support, either route-based or policy-based, go to <https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices>
+For more information about validated VPN devices that are known to be compatible with VPN gateways, and whether they support route-based or policy-based VPN gateways, see [About VPN devices and IPSec/IKE parameters for site-to-site VPN Gateway connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
