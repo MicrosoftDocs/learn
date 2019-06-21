@@ -1,10 +1,10 @@
-You can connect to databases within the Azure SQL Database service from an application in a variety of ways. For simple applications, the most convenient method is to use the `System.Data.SqlClient` library.
+You can connect to databases within the Azure SQL Database service from an application in a variety of ways. For .NET applications, you can use the `System.Data.SqlClient` library.
 
 The web application for the university must fetch and display the data that you uploaded to Azure SQL Database. In this unit, you'll learn how to connect to a database from a web application, and process data using the `System.Data.SqlClient` library.
 
 ## Overview of the System.Data.SqlClient library
 
-The `System.Data.SqlClient` library is a collection of types and methods that you can use to connect to a SQL Server database, running either on-premises or in the cloud as Azure SQL Database. The library provides a generalized interface for retrieving and maintaining data. Using the `System.Data.SqlClient` library, you can run SQL commands, perform transactional operations, and retrieve data. You can parameterize these operations to avoid problems associated with SQL injection attacks. If an operation fails, the `System.Data.SqlClient` library makes any error information available through specialized exception and error classes. You can handle these exceptions just like any other type of exception in a .NET application.
+The `System.Data.SqlClient` library is a collection of types and methods that you can use to connect to a SQL Server database, running either on-premises or in the cloud on Azure SQL Database. The library provides a generalized interface for retrieving and maintaining data. Using the `System.Data.SqlClient` library, you can run SQL commands, perform transactional operations, and retrieve data. You can parameterize these operations to avoid problems associated with SQL injection attacks. If an operation fails, the `System.Data.SqlClient` library makes any error information available through specialized exception and error classes. You can handle these exceptions just like any other type of exception in a .NET application.
 
 The `System.Data.SqlClient` library is available in the **System.Data.SqlClient** NuGet package.
 
@@ -29,7 +29,7 @@ string connectionString = "Server=tcp:myserver.database.windows.net,...";
 SqlConnection con = new SqlConnection(connectionString);
 ```
 
-The database connection isn't established until you open the connection. You typically open the connection immediately before running a SQL command or query (described shortly).
+The database connection isn't established until you open the connection. You typically open the connection immediately before running a SQL command or query.
 
 ```C#
 con.Open();
@@ -123,16 +123,10 @@ using (SqlConnection con = new SqlConnection(connectionString))
     }
     catch (SqlException ex)
     {
-        DisplaySqlErrors(ex);
-    }
-}
-...
-
-private static void DisplaySqlErrors(SqlException exception)
-{
-    for (int i = 0; i < exception.Errors.Count; i++)
-    {
-        Console.WriteLine($"Index # {i} Error: {exception.Errors[i].ToString()}");
+        for (int i = 0; i < ex.Errors.Count; i++)
+        {
+            Console.WriteLine($"Index # {i} Error: {ex.Errors[i].ToString()}");
+        }
     }
 }
 ```

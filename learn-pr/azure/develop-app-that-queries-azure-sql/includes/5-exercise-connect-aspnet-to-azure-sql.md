@@ -1,6 +1,4 @@
-You can use the types defined in the `System.Data.SqlClient` library to connect to Azure SQL Database from an application. This library provides methods for running queries and retrieving the results.
-
-In this lab, you'll create a web application that the academic advisors for the educational institution can use to discuss courses and plans of study with students. The application will use the `System.Data.SqlClient` library to retrieve and display the details of courses, and the modules that a student must pass to complete a course.
+With your database created, you'll now create a web application that the academic advisors for the educational institution can use to discuss courses and plans of study with students. The application will use the `System.Data.SqlClient` library to retrieve and display the details of courses, and the modules that a student must pass to complete a course.
 
 To save time, you'll work with a pre-existing web application. You'll add the code that connects this application to your database. The following diagram shows the primary components of this application:
 
@@ -15,8 +13,6 @@ You'll perform the following tasks:
 
 ## Deploy and run the pre-existing web application
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Change your working directory to the **education** folder.
 
     ```bash
@@ -27,7 +23,7 @@ You'll perform the following tasks:
 
     ```bash
     az webapp up \
-        --resource-group <rgn>[Sandbox resource group]</rgn>
+        --resource-group <rgn>[Sandbox resource group]</rgn> \
         --sku B1 \
         --name educationapp-$RANDOM
     ```
@@ -39,6 +35,8 @@ You'll perform the following tasks:
     You'd like to have the web application display a list of courses and the modules that make up this course. Currently, the application doesn't retrieve or display this data, so you'll need to update the code to get this data from the database and display it to the user.
 
 ## Add code to the web application to retrieve data
+
+Now let's add the code to the application that will retrieve the course data from the database.
 
 1. In the Cloud Shell, go to the **education/Models** folder.
 
@@ -288,6 +286,8 @@ You'll perform the following tasks:
 
 ## Add code to the web application to display the data
 
+The application can now retrieve the data, now let's update the application to display the course data to the user.
+
 1. In the Cloud Shell, move to the **education/Pages** folder.
 
     ```bash
@@ -475,6 +475,8 @@ You'll perform the following tasks:
 
 ## Deploy and test the updated web application
 
+With the application fully configured to retrieve and display the course data to the user, you can deploy the updated version to the 
+
 1. In the Cloud Shell, return to the **education** folder.
 
     ```bash
@@ -484,8 +486,9 @@ You'll perform the following tasks:
 2. Run the following commands to build and deploy the updated web application.
 
     ```bash
-    az webapp up --name educationapp-$ID --resource-group $GROUP --sku B1
-    echo "Web app deployed to https://educationapp-$ID.azurewebsites.net/"
+    az webapp up \
+        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --name $(az webapp list --output tsv --query [].name)
     ```
 
 3. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database.
