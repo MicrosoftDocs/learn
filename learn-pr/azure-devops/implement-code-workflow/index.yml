@@ -13,7 +13,6 @@ title: Implement a code workflow in your build pipeline using Git and GitHub
 summary: Collaborate with others and merge only the highest quality code.
 abstract: |
   In this module, you will:
-
   - Collaborate with others by choosing an appropriate branching and merging strategy
   - Add a badge to your GitHub repository to show the status of the latest build
   - Add a dashboard widget to visualize your build history
