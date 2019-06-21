@@ -10,7 +10,7 @@ We're going to use a template Microsoft has published on GitHub that is specific
 
 1. Type **Template** in the search box.
 
-1. Select **Template deployment (deploy using custom templates** from the resulting list and click **Create**.
+1. Select **Template deployment (deploy using custom templates)** from the resulting list and click **Create**.
 
     ![Screenshot showing the Template Deployment item selected with the Create button highlighted](../media/6-create-template.png)
 
