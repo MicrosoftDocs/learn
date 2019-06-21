@@ -4,7 +4,7 @@ It's important to have an inventory of the open-source components your project u
 
 You also need to understand what licenses these libraries use. Some licenses require you to make public any code that uses that library if you have made changes to the library's code. This is problematic when your source code is not open source as well. Of course, you'll need to check with your own legal team to determine what licenses you can use.
 
-In [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-code-for-vulnerabilities?azure-portal=true), you used SonarCloud to scan for potential vulnerabilities in your source code during the build process.
+In [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities?azure-portal=true), you used SonarCloud to scan for potential vulnerabilities in your source code during the build process.
 
 In this module, you'll perform a similar process. Here you'll use WhiteSource Bolt, by WhiteSource, to scan open-source components for known vulnerabilities and license ratings.
 
