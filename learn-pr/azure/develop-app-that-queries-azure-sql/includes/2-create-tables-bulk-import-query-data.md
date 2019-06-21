@@ -1,10 +1,14 @@
-Microsoft provides several tools that you can use to upload data to Azure SQL Database. These tools include SQL Server Integration Services (SSIS), the SQL `BULK INSERT` statement, and the Bulk Copy Program (bcp) utility. This unit focuses on `bcp` because it's convenient, and can be easily scripted if you are importing data into multiple tables.
+The university needs a location to store their data that is currently stored in text files. They would like to make their data relational, to improve the ability to query and access their data. They've selected Azure SQL database as the storage service for this data. Let's take a look at Azure SQL database, how to upload data to the database, and how to query data.
+
+<!-- Microsoft provides several tools that you can use to upload data to Azure SQL Database. These tools include SQL Server Integration Services (SSIS), the SQL `BULK INSERT` statement, and the Bulk Copy Program (bcp) utility. This unit focuses on `bcp` because it's convenient, and can be easily scripted if you are importing data into multiple tables.
 
 Before you can import data, you must first create a logical database server to host and manage the single database, so this unit also shows you how to create a this database server, and connect to this server to create and use the database.
 
-In this unit, you'll see how to create a single database, and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the `sqlcmd` utility from the command line to connect to a database. You'll see how to use the `bcp` utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the `sqlcmd` utility.
+In this unit, you'll see how to create a single database, and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the `sqlcmd` utility from the command line to connect to a database. You'll see how to use the `bcp` utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the `sqlcmd` utility. -->
 
 ## Create a single database using the Azure portal
+
+Azure SQL Database is a relational database as a service (DBaaS) based on the latest stable version of Microsoft SQL Server Database Engine. SQL Database is a high-performance, easy to use, reliable, and secure database that you can use to build new applications, websites, and microservices in the programming language of your choice, without needing to manage infrastructure.
 
 You can create a single database through several methods, including Azure CLI, Azure PowerShell, and the Azure portal. When creating a single database in the portal, either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**. If you prefer to use the Azure CLI, you can create a server and database with the `az sql server create` and `az sql db create` commands. If you prefer PowerShell, there are a number of cmdlets available.
 
@@ -20,7 +24,7 @@ You can provision resources using the virtual core (vCore) model, which specifie
 
 If you have a number of databases, and the resource requirements of these databases fluctuate, you can use SQL elastic pool. SQL elastic pool provides a pool of resources that can be shared between pooled databases as demand requires.
 
-One final choice that you make when creating a database is to specify how data should be collated. A collation defines the rules that the database uses for sorting and comparing data, and sets the character set used for text data. You can change the collation after you've created the database, but it is discouraged once the database contains data. For more information see [COLLATE (Transact-SQL)](https://docs.microsoft.com/sql/t-sql/statements/collations?view=sql-server-2017).
+One final choice that you make when creating a database is to specify how data should be collated. A collation defines the rules that the database uses for sorting and comparing data, and sets the character set used for text data. You can change the collation after you've created the database, but it is discouraged once the database contains data.
 
 ## Create tables
 

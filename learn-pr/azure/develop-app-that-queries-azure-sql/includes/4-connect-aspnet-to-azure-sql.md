@@ -1,6 +1,6 @@
 You can connect to databases within the Azure SQL Database service from an application in a variety of ways. For simple applications, the most convenient method is to use the `System.Data.SqlClient` library.
 
-The web application for the educational institute must fetch and display the data that you uploaded to Azure SQL Database. In this unit, you'll learn how to connect to a database from a web application, and process data using the `System.Data.SqlClient` library.
+The web application for the university must fetch and display the data that you uploaded to Azure SQL Database. In this unit, you'll learn how to connect to a database from a web application, and process data using the `System.Data.SqlClient` library.
 
 ## Overview of the System.Data.SqlClient library
 

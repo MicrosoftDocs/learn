@@ -1,4 +1,4 @@
-The educational institute currently stores their data in a series of comma-delimited files. You must migrate this data to Azure SQL Database. The simplest way to do this is to use the bulk copy command, **bcp**.
+The university currently stores their data in a series of comma-delimited files. You must migrate this data to Azure SQL Database. The simplest way to do this is to use the bulk copy command, **bcp**.
 
 In this exercise, you'll create a database server, and a database, using the Azure SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll query the data using the Query Editor and the **sqlcmd** utility.
 
@@ -6,7 +6,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
 
 ## Examine the existing comma-delimited data
 
-1. In the Cloud Shell window on the right, run the following command to download the data files and application code for the educational institute system.
+1. In the Cloud Shell window on the right, run the following command to download the data files and application code for the university system.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-develop-app-that-queries-azure-sql education
@@ -27,7 +27,7 @@ In this exercise, you'll create a database server, and a database, using the Azu
     cat courses.csv
     ```
 
-    The file contains the following comma-separated data. The data comprises a course name and an ID for each course the educational institute offers.
+    The file contains the following comma-separated data. The data comprises a course name and an ID for each course the university offers.
 
     ```text
     ID,Course
