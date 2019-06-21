@@ -45,7 +45,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
 
     You are a solution architect for a retailer and have been tasked with designing your site recovery strategy for your applications. The organization runs a hybrid environment, with some workloads running in the cloud and some remaining on-premises. You need to select the proper solutions to meet your recovery requirements, while keeping costs and complexity down.
 
-1. **Developing a Business Continuity and Disaster Recovery Plan (BCDR)**
+1. **Develop a business continuity and disaster recovery plan**
 
     - Develop a BCDR Plan
         - Identify key stakeholders, key infrastructure (IaaS)
@@ -59,7 +59,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
     - List the differences between Azure Backup and Azure Site Recovery and identify a scenario each should be used
     - Describe three Azure features that contribute to High Availability of VMs
 
-1. **Using Azure Site Recovery as part of your BCDR**
+1. **Use Azure Site Recovery as part of your BCDR plan**
 
     - Overview of Azure Site Recovery
         - Explain what Azure Site Recovery provides (Azure VM replication, on-premises VM replication, workload replication, resilience, etc.)
@@ -82,7 +82,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
         - Load balanced traffic
         - IP subnet/gateway consistency
 
-1. **Building resilience into your application suite with Azure Traffic Manager**
+1. **Build resilience into your application services**
 
     - Adding geo-redundancy to cloud and on-premises workloads
     - Failing over and falling back, from your on-premises architecture to the cloud and back
@@ -97,7 +97,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
     - Your company is launching in a new region, how can you ensure there aren't performance issues for the new region?
     - Identify your resources that could be restored from backups, and why
 
-1. **Building resilience into your data suite with Azure**
+1. **Build resilience into your data services**
 
     - Cosmos DB - with replication in multiple regions
     - SQL Automated backups
