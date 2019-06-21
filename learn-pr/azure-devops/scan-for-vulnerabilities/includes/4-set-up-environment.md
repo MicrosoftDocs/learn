@@ -13,10 +13,8 @@ At this point, you have two options:
 
 You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
 
-<!-- TODO: Update URL with prod -->
-
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-mslearn.azurewebsites.net/?name=scan-for-vulnerabilities&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=scan-for-vulnerabilities&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
