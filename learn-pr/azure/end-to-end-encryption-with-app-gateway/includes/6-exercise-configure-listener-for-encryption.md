@@ -2,7 +2,7 @@ Having configured the certificates for Application Gateway and the backend pool,
 
 In this unit, you'll set up the listener with port 443 and with the SSL certificate you created in the first exercise. The image below highlights the elements you'll set up in this exercise.
 
-![Image highlighting the elements (frontend port, SSL certificate for App Gateway, listener, and rule) created in this exercise](../media/6-exercise-elements.png)
+![Image highlighting the elements (frontend port, SSL certificate for App Gateway, listener, and rule) created in this exercise](../media/6-exercise-elements.svg)
 
 ## Configure the listener
 

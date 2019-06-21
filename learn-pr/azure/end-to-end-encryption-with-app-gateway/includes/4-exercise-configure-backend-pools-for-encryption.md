@@ -4,7 +4,7 @@ In this unit, you'll set up the web application and Application Gateway. Next yo
 
 The following image highlights the elements you'll configure in this exercise. You'll be setting up an Application Gateway v2.
 
-![Image highlighting the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise](../media/4-exercise-elements.png)
+![Image highlighting the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise](../media/4-exercise-elements.svg)
 
 ## Deploy virtual machine and Application Gateway
 
