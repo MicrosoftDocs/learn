@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.scan-for-vulnerabilities.6-scan-pull-request
+title: Exercise - Limit scanning to pull requests
+metadata:
+  title: Exercise - Limit scanning to pull requests
+  description: Scan for potential vulnerabilities on pull requests only to save time.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-scan-pull-request.md)]
