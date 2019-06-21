@@ -109,3 +109,34 @@ Here you'll submit a fix to the typing error on the home page. Recall that the w
 1. Click the **Merge pull request** button to merge the pull request.
 1. Check the box that reads **Use your Administrator privileges to merge this pull request**. Then click **Confirm merge**.
 1. Click **Delete branch** to delete the `bugfix/home-page-typo` branch. Your change is merged.
+
+## Revert your master branch to its original state
+
+In future modules, you'll continue working with the Tailspin team and the _Space Game_ web site. To limit each module to just the new concepts, you'll base new work on the original `master` branch that came with your fork of the _Space Game_ repository on GitHub.
+
+To ensure that the branches you create later will properly integrate with the `master` branch, here you'll reset your GitHub repository's `master` branch to its original state.
+
+> [!WARNING]
+> The process you'll follow here involves temporarily deleting the branch protection rule you set up earlier, fetching the `master` branch from Microsoft's repository, and then performing a _force push_ of that branch to your repository.
+>
+> Although we typically don't recommend that you force push changes, here you'll do so to reset the state of your GitHub repository. In practice, there are safer ways to [revert changes through Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git?azure-portal=true).
+
+1. Delete the branch protection rule you set up earlier. To do so:
+
+    1. From GitHub, navigate to your _Space Game_ project's repository.
+    1. Click the **Settings** tab near the top of the page.
+    1. From the menu, click **Branches**.
+    1. Under **Branch protection rules**, locate the rule named "master" that you set up earlier in this part.
+    1. Click **Edit**.
+    1. Uncheck the box that reads **Require pull request reviews before merging**.
+    1. Click **Save changes**.
+
+1. From Visual Studio Code, navigate to the integrated terminal. Then run these commands.
+
+    ```bash
+    git checkout master
+    git reset --hard upstream/master --
+    git push -f origin master
+    ```
+
+1. From the **Settings** tab in your GitHub repository, recreate the branch protection rule you set up earlier in this part.
