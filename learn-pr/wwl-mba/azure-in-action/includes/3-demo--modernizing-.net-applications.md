@@ -12,7 +12,9 @@ This unit will demonstrate the process by which Tailwind Traders can host their 
 | :--- | :--- |
 | ![Icon indicating play video](../media/video-icon.png)| David Sanchez, Senior Product Marketing Manager for Azure Application Development, demonstrates how easy it can be to migrate and modernize an application.|
 
->[!VIDEO MISSINGVIDEOURL]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3dj5N]
+
+You have just seen how easy it is to migrate an application using Azure App Service and then update it without any code using Azure Logic Apps. Automation of manual tasks like this one will allow Tailwind Traders to scale, making it possible for them to expand their business.
 
 ### Key points
 
