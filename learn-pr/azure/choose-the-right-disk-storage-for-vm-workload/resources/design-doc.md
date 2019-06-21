@@ -126,7 +126,7 @@ Identify the subtasks of *Choose the right disk storage for your virtual machine
     Ultra SSD
 
     - Critical workloads require enterprise-grade backup and recovery in the Azure cloud. Ideal if say the backup can be stored on Ultra SSD and reused to provision databases, so database Cloning using Ultra SSD
-- When you need sub-millisecond latency and extremely scalable performance. For your most demanding, data-intensive workloads. Specifically designed for applications such as MongoDB, PostgreSQL,  benefit from low queue depths and for high IOPS workloads such as SQL Server, SAP/HANA, and Oracle DB.
+    - When you need sub-millisecond latency and extremely scalable performance. For your most demanding, data-intensive workloads. Specifically designed for applications such as MongoDB, PostgreSQL,  benefit from low queue depths and for high IOPS workloads such as SQL Server, SAP/HANA, and Oracle DB.
     
     Premium SSD
 
