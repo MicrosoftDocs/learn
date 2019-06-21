@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-and-troubleshoot-your-end-to-end-azure-network-infrastructure-using-network-monitoring-tools.4-troubleshoot-networking-using-network-watcher-metrics-and-logs
+uid: learn.troubleshoot-azure-network-infrastructure.4-troubleshoot-networking-using-network-watcher-metrics-and-logs
 metadata:
   title: Troubleshoot networking using Network Watcher metrics and logs
   description: In this unit, you will learn about the information presented in the Network Management metrics and logs and how they can help you to diagnose issues.
