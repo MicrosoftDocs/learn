@@ -122,4 +122,4 @@ Here you'll set up a second pipeline to build the package and upload that packag
 
     You see the resulting package, **Tailspin.SpaceGame.Web.Models**, in Azure Artifacts. Copy the version number where you can easily access it later. You'll use this version number in the next part.
 
-    ![](../media/5-artifacts-package.png)
+    ![Azure Artifacts showing version 1.0 of the package](../media/5-artifacts-package.png)

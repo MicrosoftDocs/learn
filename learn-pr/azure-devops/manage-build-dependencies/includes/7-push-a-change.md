@@ -70,7 +70,7 @@ Now that you've added the new property to the `Score` class and verified the pro
 
 1. Open the **Artifacts** tab and note the new version. Don't worry, your old version is still there for any projects that still reference it.
 
-    ![](../media/7-artifacts-package-ver2.png)
+    ![Azure Artifacts showing version 2.0 of the package](../media/7-artifacts-package-ver2.png)
 
 ## Reference the new version of the Models package
 
