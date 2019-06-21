@@ -54,7 +54,6 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
 > [!IMPORTANT]
 > We mention Java in the prerequisites, but if you don't have it installed, now is a good time. Install the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
 
-
 1. From the integrated terminal, check whether the `JAVA_HOME` environment variable is set.
 
     ```bash
@@ -95,10 +94,20 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
 
 1. Create the variables you'll need to run a scan. The values for these variables are the keys you saved earlier.
 
+    Replace the placeholder values you see with yours. Don't include the parenthesis.
+
     ```bash
     SONAR_TOKEN=(your token)
     SONAR_KEY=(your project key)
     SONAR_ORGANIZATION=(your organization key)
+    ```
+
+    Here's an example.
+
+    ```bash
+    SONAR_TOKEN=abcdefabcdefabcdefabcdefabcdefabcdef
+    SONAR_KEY=space-game-web-0000
+    SONAR_ORGANIZATION=username-github
     ```
 
 1. Run the following `dotnet-sonarscanner begin` command to prepare the scanner to collect build and test data.
@@ -227,3 +236,17 @@ Here you'll see the results from the SonarCloud portal.
 **Andy:** Now that we understand the process, we can add it to the build pipeline. That way, we can scan the code on a regular basis. As we resolve the reported issues, the results will improve. Anyone with access can log on and see the latest report whenever they need to.
 
 **Tim** Let's see how that works.
+
+## Remove intermediate files
+
+    You see that scanning results are written to the `.sonarqube` directory under the root of your project. These are intermediate files SonarCloud uses to collect and analyze the results. These files aren't meant to be included in source control. We've already added an entry in the `.gitignore` file to exclude this directory on the `security-scan` branch.
+
+Recall that when you ran **dotnet-sonarscanner** earlier, the process created a number of intermediate files in the **.sonarqube** folder in the root of the project.
+
+These files are not intended to be included in source control, and you no longer need them. Although the project's **.gitignore** file is already set up to ignore anything in the **.sonarqube** directory, it's a good idea to delete these files so they're not added to your Git repository in future modules.
+
+From Visual Studio Code, navigate to the terminal window. Then run this command from your project's root directory.
+
+```bash
+rm -rf .sonarqube/
+```

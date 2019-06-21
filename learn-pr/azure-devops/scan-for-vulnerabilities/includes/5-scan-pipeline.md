@@ -75,7 +75,7 @@ Let's add a few variables to the pipeline.
 
 Here you'll add the tasks that perform the scan to **azure-pipelines.yml**.
 
-Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet-sonarscanner begin` command you ran to prepare the scanner to collect build and test data.
+Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet-sonarscanner begin` command you ran to prepare the scanner to collect build and test data. (You don't need to run this command right now.)
 
 ```bash
 $HOME/.dotnet/tools/dotnet-sonarscanner begin \
