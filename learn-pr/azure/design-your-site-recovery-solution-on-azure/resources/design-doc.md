@@ -86,7 +86,7 @@ Identify the subtasks of *Design you site recovery solution on Azure*
 
     - Adding geo-redundancy to cloud and on-premises workloads
     - Failing over and falling back, from your on-premises architecture to the cloud and back
-    - High-availability clustering, pros and cons of active/active or active/passes architectures
+    - High-availability clustering, pros and cons of active/active or active/passive architectures
     - Implementing a monitoring and notification strategy
 
     **Knowledge check**
