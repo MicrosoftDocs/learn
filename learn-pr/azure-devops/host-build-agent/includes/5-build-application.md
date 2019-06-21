@@ -60,7 +60,7 @@ Here you'll modify the build configuration to switch from using a Microsoft-host
 
 Here you'll see the build run in the pipeline using your build agent.
 
-1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
+1. From Azure DevOps, navigate to the **Space Game - web - Agent** project.
 1. Select **Pipelines**, either from the project page or from the menu on the left.
 1. Select **Builds**, then select the running build.
 1. Trace the build through each of the steps.
@@ -77,9 +77,9 @@ In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines wil
 
 ![Azure DevOps showing the private agent as offline](../media/5-agent-pools-offline-agent.png)
 
-As an optional step, you can remove the build pool configuration from Azure DevOps. Here's now.
+As an optional step, you can remove the build pool configuration from Azure DevOps. Here's how.
 
-1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
+1. From Azure DevOps, navigate to the **Space Game - web - Agent** project.
 1. Select **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Agent pools**.
 

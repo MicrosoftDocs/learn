@@ -62,7 +62,7 @@ If you already have the _Space Game_ web project open in Visual Studio Code, mov
 
 In Visual Studio Code, your terminal window points to the root directory of the _Space Game_ web project. Here you'll open the project from the file explorer so that you can view its structure and work with files.
 
-1. From the **File** menu, select **Open**.
+1. From the **File** menu, select **Open** or **Open Folder**.
 1. Navigate to the root directory of the _Space Game_ web project.
 
     You see the directory and file tree in the file explorer.
@@ -123,6 +123,9 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
     ```html
     <p>An example site for learning</p>
     ```
+
+    > [!TIP]
+    > Visual Studio Code also provides an easy way to search for text in files. Click the hourglass icon on the side menu to access the search pane.
 
 1. Replace the text in the previous step with this text and then save the file.
 

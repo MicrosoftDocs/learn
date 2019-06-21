@@ -1,4 +1,4 @@
-DevOps has many features and tools to help a team collaborate and improve processes. Your journey through DevOps begins with an introduction to our fictitious team of developers who need to improve their development processes.
+DevOps has many features and tools to help a team collaborate and improve processes. Your journey through DevOps begins with an introduction to our fictitious software team, who are discovering that they need to improve their release process.
 
 Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts its game servers and web sites in an on-prem datacenter. The company just celebrated the release of a new racing game. They'll be releasing a space shooter game, called _Space Game_, in the coming months.
 

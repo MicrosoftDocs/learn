@@ -12,9 +12,9 @@ In this module, you'll:
 
 ## Prerequisites
 
-The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
-
-You'll also need an account on [SonarCloud](https://sonarcloud.io?azure-portal=true). Sign in using your GitHub or Azure DevOps account.
+* The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+* You'll also need an account on [SonarCloud](https://sonarcloud.io?azure-portal=true). Sign in using your GitHub or Azure DevOps account.
+* You'll also need the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
 
 Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
 

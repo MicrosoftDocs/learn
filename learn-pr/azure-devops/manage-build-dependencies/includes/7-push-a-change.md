@@ -6,13 +6,26 @@ To do that, you'll start by adding a property to one of the model classes, bumpi
 
 Then you'll update the web application to reference the newer version number of the Models package so that it can use the added property.
 
+## Create a branch
+
+Let's start by creating a branch to hold our work. Here you create a branch named `add-game-style`, which is based off the `master` branch.
+
+At this point, you have two copies of Visual Studio Code open &mdash; one for the **Tailspin.SpaceGame.Web.Models** project and one for the _Space Game_ web application project, **Tailspin.SpaceGame.Web**. Here you'll work from the copy for the **Tailspin.SpaceGame.Web.Models** project.
+
+1. From Visual Studio Code, open the integrated terminal.
+1. From the terminal, run the following `git checkout` command to create a branch named `add-game-style`.
+
+    ```bash
+    git checkout -b add-game-style
+    ```
+
 ## Add a property to the Models package
 
 Here you'll add a property to one of the model classes, named `Score`, that provides the game style, or difficulty, the score is associated with.
 
-1. Open a second instance of Visual Studio Code. Leave the **Tailspin.SpaceGame.Web** project open in the first instance.
-1. Open the folder for the **Tailspin.SpaceGame.Web.Models** project in this new instance of Visual Studio Code.
-1. From the Models project, open **Score.cs** and add the following highlighted property to the list of properties already there.
+Here you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGame.Web.Models** project.
+
+1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.Models/ModelsScore.cs** and add the following highlighted property to the list of properties already there.
 
     [!code-csharp[](code/7-score-property.cs?highlight=23-25)]
 
@@ -50,33 +63,37 @@ Now that you've added the new property to the `Score` class and verified the pro
     ```bash
     git add .
     git commit -m "Add GameStyle property"
-    git push
+    git push origin add-game-style
     ```
 
 1. From Azure Pipelines, navigate to the **Tailspin.SpaceGame.Web.Models** project and watch the build run.
 
 1. Open the **Artifacts** tab and note the new version. Don't worry, your old version is still there for any projects that still reference it.
 
+    ![Azure Artifacts showing version 2.0 of the package](../media/7-artifacts-package-ver2.png)
+
 ## Reference the new version of the Models package
 
 Here you'll change the **Tailspin.SpaceGame.Web** project to use the new version of the **Tailspin.SpaceGame.Web.Models** package.
 
-1. Go back to the first project in the other instance of Visual Studio Code.
+Here you'll work from the copy of Visual Studio Code for the _Space Game_ web application project, **Tailspin.SpaceGame.Web**.
 
-1. Open the **Tailspin.SpaceGame.Web.csproj** file and bump the `PackageReference` version number for the **Tailspin.SpaceGame.Web.Models** package to match the version we just created in Azure Artifacts. Save the file.
+1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.csproj** and change `PackageReference` to the version number of the **Tailspin.SpaceGame.Web.Models** package you just created in Azure Artifacts. Then save the file.
+
+    Here's an example:
 
     ```xml
-    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="2.0.0" />
+    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="2.0.0-CI-20190621-055623" />
     ```
 
     If Visual Studio Code asks you to restore packages, you can safely ignore that message. For brevity, we won't build the web application locally.
 
-1. Stage, commit, and push the changes.
+1. From the terminal, stage, commit, and push the changes.
 
     ```bash
     git add .
     git commit -m "Bump Models package to 2.0.0"
-    git push
+    git push origin models-package
     ```
 
 1. From Azure Pipelines, navigate to the **Tailspin.SpaceGame.Web** project and watch the build run.

@@ -42,13 +42,15 @@ Here you'll install the **WhiteSource Bolt** extension for Azure Pipelines. This
 1. Select your Azure DevOps organization from the drop-down box.
 1. Click **Install**.
 1. From Azure DevOps, navigate to your project and then to **Pipelines**.
-1. Navigate to the **WhiteSource Bolt** tab. 
+1. Navigate to the **WhiteSource Bolt** tab.
 
-    You'll see a screen with a link to set up WhiteSource.
+    ![Azure DevOps showing the WhiteSource Bolt menu](../media/4-pipelines-whitesource-menu.png)
+
+    You see a form that asks for your email address and company name.
 
    ![Activate WhiteSource Bolt extension](../media/4-activate-whitesource.png)
 
-    Follow the link and fill in the required information.
+    Fill in the required information.
 1. Click **Get Started**.
 
 ## Add tasks to the pipeline configuration
@@ -121,4 +123,4 @@ The team gets together to look at the results.
 
 In this example, the scan took around 30 seconds to run. Although this doesn't add much time to the overall build, the time might increase as you use additional open source libraries.
 
-As an optional exercise, you can limit the scans to run only during pull request builds to the `master` branch, just as you did in the [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-code-for-vulnerabilities/6-scan-pull-request?azure-portal=true) module. Doing so would help standard CI builds to complete more quickly while still helping you discover potential vulnerabilities and understand how you're licensing open source components before you merge code into the `master` branch.
+As an optional exercise, you can limit the scans to run only during pull request builds to the `master` branch, just as you did in the [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities/6-scan-pull-request?azure-portal=true) module. Doing so would help standard CI builds to complete more quickly while still helping you discover potential vulnerabilities and understand how you're licensing open source components before you merge code into the `master` branch.

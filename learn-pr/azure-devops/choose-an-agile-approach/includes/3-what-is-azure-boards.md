@@ -10,7 +10,7 @@ Mara created her own project on Azure Boards using the Basic process. It shows t
 
 Perhaps it's easier to show you. Here's Azure Boards using the Basic process.
 
-![Azure Boards showing the initial three tasks](../media/3-initial-board.png)
+![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
 **Amita**: Tell us about the Basic process. Are there other options?
 
@@ -46,7 +46,7 @@ Each team member shares what they're working on and other concerns they have. As
 
 Eventually the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like.
 
-![Backlog of tasks](../media/3-all-tasks-board.png)
+![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
 **Amita**: Wow, that's a lot of problems. How are we ever going to fix all those?
 

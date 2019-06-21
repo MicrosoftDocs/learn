@@ -10,19 +10,25 @@ Visual Studio Code comes with an integrated terminal so you can edit files and w
 
 1. Launch Visual Studio Code.
 1. From the **View** menu, select **Terminal** or **Integrated Terminal** (the option you see depends on your operating system.)
+1. From the drop-down box, select **bash**.
+
+    ![Selecting the Bash shell in Visual Studio Code](../media/3-vscode-bash.png)
+
+    The terminal window enables you to choose among any shell that's installed on your system, such as Bash, Zsh, and PowerShell.
+
+    Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+
 1. Run the `cd` command to navigate to the directory you want to work from, such as your home directory (`~`). You can choose a different directory if you prefer.
 
     ```bash
     cd ~
     ```
 
-By default, the terminal shell you see maps to PowerShell on Windows 10 and your default shell on macOS and Linux. You can install additional shells and configure Visual Studio Code to work with them.
-
 ## Configure Git
 
 If you're new to Git and GitHub, you'll need to first run a few commands to prepare associate your identity with Git and authenticate with GitHub.
 
-[Set up Git](https://help.github.com/articles/set-up-git) explains the process in greater detail.
+[Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
 
 At a minimum, you'll need to perform these steps. Run these commands from Visual Studio Code's integrated terminal.
 
@@ -124,7 +130,7 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.
 
 In Visual Studio Code, your terminal window points to the root directory of the _Space Game_ web project. Here you'll open the project from the file explorer so that you can view its structure and work with files.
 
-1. From the **File** menu, select **Open**.
+1. From the **File** menu, select **Open** or **Open Folder**.
 1. Navigate to the root directory of the _Space Game_ web project.
 
     (You can run the `pwd` command in the terminal window to see the full path if you need a refresher.)
@@ -142,6 +148,8 @@ Now that you have the web application, you can build and run it locally.
     ```
 
     .NET Core projects typically come with two build configurations &mdash; Debug and Release. Debug builds are not optimized for performance and make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
+
+    You'll likely see a few build warnings in the output. These warnings are included intentionally and are OK to ignore for now.
 1. From the terminal window, run the following `dotnet run` command to run the application.
 
     ```bash

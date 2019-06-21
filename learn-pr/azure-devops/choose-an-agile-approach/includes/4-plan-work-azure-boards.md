@@ -13,11 +13,14 @@ Here you'll create an Azure DevOps project.
 1. Sign into your account at [dev.azure.com](https://dev.azure.com).
 1. Click **+ Create project**.
 
-    The **Create new project window** opens. Or if this is your first project, you'll already be prompted to create your project.
+    The **Create a project to get started** opens. Or if this is your first project, you'll already be prompted to create your project.
 1. In the **Project name** field, type **Space Game - web**.
 1. In the **Description** field, type **The Space Game web site**.
+1. Under **Visibility**, it's up to you whether to make your project public or private. For now, you can choose private.
+
+    Open source projects will often choose public visibility so that others can view active issues and build status.
 1. Click **Advanced**.
-1. From the work item process drop-down box, select **Basic**.
+1. Under **Version control**, ensure that **Git** is selected. Under **Work item process**, ensure that **Basic** is selected.
 1. Click **Create** or **Create project**.
 
 After just a few moments, you're taken to your new project.
@@ -76,7 +79,8 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
 1. Drag **Stabilize the build server** to the top of the stack. Then drag **Create a Git-based workflow** to become the second item. Your final board looks like this.
 
-    ![Azure Boards showing the initial three tasks](../media/3-initial-board.png)
+    ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
+
 
 ### Define a sprint
 
@@ -93,10 +97,13 @@ Everyone looks nervous.
 When you create an Azure Boards project, you get an initial sprint called **Sprint 1**. All you need to do is assign dates to the sprint and add tasks. Here's how to follow along with the team.
 
 1. In the left-hand column, click **Sprints**.
+
+    ![Azure DevOps showing the location of the Sprints menu](../media/4-boards-sprints-menu.png)
+
 1. Click **Set dates** from the upper right.
 1. Leave the name as **Sprint 1**.
-1. In the **Start** date field, click the calendar and pick today's dates.
-1. In the **End** date field, click the calendar and pick a date two weeks from today.
+1. In the **Start** date field, click the calendar and pick today's date.
+1. In the **End** date field, click the calendar and pick the date two weeks from today.
 1. Click **Save and Close**.
 
 ### Assign tasks and set the iteration
@@ -105,7 +112,7 @@ An _iteration_ is another name for a sprint.
 
 You have an initial set of work items and a timeline for your first sprint. Here you'll connect work items to your sprint and assign the tasks to yourself.
 
-1. Under **Boards**, selecet **Work items**.
+1. Under **Boards**, select **Work items**.
 1. Select **Stabilize the build server**.
 1. From the **Iteration** drop-down, select **Sprint 1**.
 

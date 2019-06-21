@@ -11,6 +11,10 @@ Amita takes a look and is excited.
 ## Add the widget to the dashboard
 
 1. From your Azure DevOps project, select **Overview** and then **Dashboards**.
+
+    > [!NOTE]
+    > If you ran the template to create the Azure DevOps project, you won't see the dashboard widgets you set up in previous modules.
+
 1. Click **Edit**.
 1. From the **Add Widget** pane, search for **Test Results Trend**.
 1. Drag **Test Results Trend** to the canvas.

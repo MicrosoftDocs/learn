@@ -23,6 +23,8 @@ prerequisites: |
   - .NET Core 2.1
   - Git
   - A GitHub account
+  - An account on SonarCloud
+  - The latest version of Java SE
 iconUrl: /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-build-pipeline.svg
 levels:
 - intermediate

@@ -49,7 +49,42 @@ Here you'll get a copy of the _Space Game_ web project and work from a branch.
 
 Here you'll set up the SonarCloud scanner and scan your code locally. You'll then upload the scan data to SonarCloud so you can analyze the results.
 
-1. From the integrated terminal, run the following `dotnet tool install` command to install **dotnet-sonarscanner**.
+The SonarCloud scanner runs Java code during the scanning process. So you'll start by making sure your environment is set up to run Java code.
+
+> [!IMPORTANT]
+> We mention Java in the prerequisites, but if you don't have it installed, now is a good time. Install the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
+
+1. From the integrated terminal, check whether the `JAVA_HOME` environment variable is set.
+
+    ```bash
+    echo $JAVA_HOME
+    ```
+
+    If the command does not output a path, you'll need to set and export this variable.
+
+    To do so, you first need to locate where Java is installed on your system. After that, you need to set and export the `JAVA_HOME` variable.
+
+    Here's an example on Windows.
+
+    ```bash
+    export JAVA_HOME="C:\Program Files\Java\jdk-12.0.1"
+    ```
+
+    Here's an example on macOS that uses the **java_home** utility to get the path to the default version of Java installed on your system.
+
+    ```bash
+    export JAVA_HOME=$(/usr/libexec/java_home)
+    ```
+
+    Here's an example on Linux.
+
+    ```bash
+    export JAVA_HOME=/usr/bin
+    ```
+
+    For more information on how to set this variable, see [Set JAVA_HOME on Windows 7, 8, 10, Mac OS X, Linux](https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux?azure-portal=true).
+
+1. Run the following `dotnet tool install` command to install **dotnet-sonarscanner**.
 
     ```bash
     dotnet tool install --global dotnet-sonarscanner
@@ -59,31 +94,45 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You'll the
 
 1. Create the variables you'll need to run a scan. The values for these variables are the keys you saved earlier.
 
-    **Bash:**
+    Replace the placeholder values you see with yours. Don't include the parenthesis.
 
     ```bash
     SONAR_TOKEN=(your token)
-    KEY=(your project key)
-    ORGANIZATION=(your organization key)
+    SONAR_KEY=(your project key)
+    SONAR_ORGANIZATION=(your organization key)
     ```
 
-    **PowerShell:**
-
-    **TODO: PowerShell equivalent**
-
-1. Run the following `dotnet sonarscanner begin` command to prepare the scanner to collect build and test data.
+    Here's an example.
 
     ```bash
-    dotnet sonarscanner begin \
-      /k:"$KEY" \
+    SONAR_TOKEN=abcdefabcdefabcdefabcdefabcdefabcdef
+    SONAR_KEY=space-game-web-0000
+    SONAR_ORGANIZATION=username-github
+    ```
+
+1. Run the following `dotnet-sonarscanner begin` command to prepare the scanner to collect build and test data.
+
+    ```bash
+    $HOME/.dotnet/tools/dotnet-sonarscanner begin \
+      /k:"$SONAR_KEY" \
       /d:sonar.host.url="https://sonarcloud.io" \
       /d:sonar.login="$SONAR_TOKEN" \
       /d:sonar.cs.opencover.reportsPaths="./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.opencover.xml" \
       /d:sonar.exclusions="**/wwwroot/lib/**/*" \
-      /o:"$ORGANIZATION"
+      /o:"$SONAR_ORGANIZATION"
     ```
 
-    **TODO: PowerShell equivalent.**
+    If the command fails, try running it like this.
+
+    ```bash
+    MSYS2_ARG_CONV_EXCL="*" $HOME/.dotnet/tools/dotnet-sonarscanner begin \
+      /k:"$SONAR_KEY" \
+      /d:sonar.host.url="https://sonarcloud.io" \
+      /d:sonar.login="$SONAR_TOKEN" \
+      /d:sonar.cs.opencover.reportsPaths="./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.opencover.xml" \
+      /d:sonar.exclusions="**/wwwroot/lib/**/*" \
+      /o:"$SONAR_ORGANIZATION"
+    ```
 
     This command uses the information you stored in variables and other information to help the scanner know where to store the results.
 
@@ -113,17 +162,37 @@ Here you'll set up the SonarCloud scanner and scan your code locally. You'll the
 1. Run this `dotnet test` command to run unit tests and collect code coverage results.
 
     ```bash
-    dotnet test --no-build --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat="cobertura%2copencover" /p:CoverletOutput=./TestResults/Coverage/
+    dotnet test --no-build \
+      --configuration Release \
+      /p:CollectCoverage=true \
+      /p:CoverletOutputFormat="cobertura%2copencover" \
+      /p:CoverletOutput=./TestResults/Coverage/
+    ```
+
+    If the command fails, try running it like this, as you did previously.
+
+    ```bash
+    MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build \
+      --configuration Release \
+      /p:CollectCoverage=true \
+      /p:CoverletOutputFormat="cobertura%2copencover" \
+      /p:CoverletOutput=./TestResults/Coverage/
     ```
 
     This command varies slightly from the one you used in the previous module to collect code coverage. Previously, you used `/p:CoverletOutputFormat="cobertura"` to collect code coverage in Cobertura format. SonarCloud needs the results to be in OpenCover format. This version of the command outputs code coverage results in both formats.
 
     (The `%2c` part represents the comma `,` character and makes it easier for the command to parse the string.)
 
-1. Run this `dotnet sonarscanner end` command to complete the scanning session and upload the results to SonarCloud.
+1. Run this `dotnet-sonarscanner end` command to complete the scanning session and upload the results to SonarCloud.
 
     ```bash
-    dotnet sonarscanner end /d:sonar.login="$SONAR_TOKEN"
+    $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
+    ```
+
+    If the command fails, try running it like this, as you did previously.
+
+    ```bash
+    MSYS2_ARG_CONV_EXCL="*" $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
     ```
 
     You see that scanning results are written to the `.sonarqube` directory under the root of your project. These are intermediate files SonarCloud uses to collect and analyze the results. These files aren't meant to be included in source control. We've already added an entry in the `.gitignore` file to exclude this directory on the `security-scan` branch.
@@ -167,3 +236,17 @@ Here you'll see the results from the SonarCloud portal.
 **Andy:** Now that we understand the process, we can add it to the build pipeline. That way, we can scan the code on a regular basis. As we resolve the reported issues, the results will improve. Anyone with access can log on and see the latest report whenever they need to.
 
 **Tim** Let's see how that works.
+
+## Remove intermediate files
+
+    You see that scanning results are written to the `.sonarqube` directory under the root of your project. These are intermediate files SonarCloud uses to collect and analyze the results. These files aren't meant to be included in source control. We've already added an entry in the `.gitignore` file to exclude this directory on the `security-scan` branch.
+
+Recall that when you ran **dotnet-sonarscanner** earlier, the process created a number of intermediate files in the **.sonarqube** folder in the root of the project.
+
+These files are not intended to be included in source control, and you no longer need them. Although the project's **.gitignore** file is already set up to ignore anything in the **.sonarqube** directory, it's a good idea to delete these files so they're not added to your Git repository in future modules.
+
+From Visual Studio Code, navigate to the terminal window. Then run this command from your project's root directory.
+
+```bash
+rm -rf .sonarqube/
+```

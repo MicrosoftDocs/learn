@@ -2,8 +2,7 @@ In this part, you'll set up Azure Artifacts and create a new feed. You'll use th
 
 ## Set up Azure Artifacts
 
-1. From a new browser tab, navigate to Azure DevOps and sign in.
-1. Click the **Artifacts** tab and then **+ New feed**.
+1. From Azure DevOps, navigate to the **Artifacts** tab and then click **+ New feed**.
     1. Name the feed **Tailspin.SpaceGame.Web.Models**.
     1. Under **Visibility**, keep **People in your organization**.
     1. Under **Packages from public sources**, choose **Only use packages published to this feed**.
