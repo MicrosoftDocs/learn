@@ -239,8 +239,6 @@ Here you'll see the results from the SonarCloud portal.
 
 ## Remove intermediate files
 
-    You see that scanning results are written to the `.sonarqube` directory under the root of your project. These are intermediate files SonarCloud uses to collect and analyze the results. These files aren't meant to be included in source control. We've already added an entry in the `.gitignore` file to exclude this directory on the `security-scan` branch.
-
 Recall that when you ran **dotnet-sonarscanner** earlier, the process created a number of intermediate files in the **.sonarqube** folder in the root of the project.
 
 These files are not intended to be included in source control, and you no longer need them. Although the project's **.gitignore** file is already set up to ignore anything in the **.sonarqube** directory, it's a good idea to delete these files so they're not added to your Git repository in future modules.
