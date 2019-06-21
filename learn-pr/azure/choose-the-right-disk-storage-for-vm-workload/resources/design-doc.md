@@ -78,7 +78,7 @@ Identify the subtasks of *Choose the right disk storage for your virtual machine
        - Unmanaged have account limits, admin overheads when multiple storage accounts
        - Managed adv - seamless upgrades, ability to separate storage units
 
-    Also in preview - Ephemeral OS disks are created on the local Virtual Machine (VM) storage and not persisted to the remote Azure Storage
+    Also in preview - Ephemeral OS disks are created on the local host storage and not persisted to the remote Azure Storage
 
     **Knowledge check**
 
