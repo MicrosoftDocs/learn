@@ -9,11 +9,29 @@ In this exercise, you'll import an API into Azure API Management and add a cachi
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 > [!NOTE]
-> In this exercise, the Board Gaming web API is hosted in the **azurewebsites.net** domain. The API Management instance is in the **azure-api.net**. 
+> In this exercise, the Board Gaming web API is hosted in the **azurewebsites.net** domain. The API Management instance is in the **azure-api.net** domain. 
+
+## Create a Redis cache
+
+In this module, we're using the consumption tier for Azure API Management because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes to initiate. The consumption tier in API Management is intended for those organizations who prefer to build APIs on serverless principals. One difference with this tier is that it does not have its own internal cache. Therefore, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. Let's create that cache now, so that the process can complete while we take other steps:
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Databases > Azure Cache for Redis**.
+1. In the **New Redis Cache** page, enter the following settings, and then click **Create**:
+
+    | Setting | Value |
+    | --- | --- |
+    | DNS Name | Choose a unique name. Make a note of it, you'll need it later on. |
+    | Subscription | *Concierge Subscription* |
+    | Resource group | *<rgn>Sandbox resource group</rgn>* |
+    | Location | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
+    | Pricing tier | Standard C1 |
+    | | |
+
+    ![Creating a Redis cache](../media/5-create-redis-cache.png)
 
 ## Create a Web API in Azure Apps Service
 
-Start by creating a new web API in Azure Apps Service:
+Now, create a new web API in Azure App Service:
 
 1. In the Cloud Shell, to clone the sample web API, run this command:
 
@@ -21,22 +39,30 @@ Start by creating a new web API in Azure Apps Service:
     git clone https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
     ```
 
-1. To set up the web API, run this command:
+1. To set up the web API, run these commands:
 
     ```bash
-    ./setup.sh
+    cd mslearn-improve-api-performance-with-apim-caching-policy
+    bash setup.sh
     ```
 
-    The script takes about a minute to run. When the script finishes, it displays two URLs for the Swagger user interface, and then OpenAPI definition. Make a note of these URLs. You will need them later in this exercise.
+1. The script takes about a minute to run. When the script finishes, it displays three URLs:
+    
+    - A URL for testing the Web API.
+    - A URL for the Swagger UI.
+    - A URL for the OpenAPI definition. 
+    
+    Copy these URLs to a text file. You will need them later in this exercise.
 
 ## Test the deployed Web API
 
 Now the API is completed and deployed, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the web API before it is added to API Management, are in the **azurewebsites.net** domain:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the API App.
-1. On the **Overview** response, select **Browse**. The browser will indicate that the page can't be found &mdash; this is just because our app is an API and does not serve a webpage.
-1. In the **Address** bar, append the URL with **/api/quotes/usa/chess?height=7&width=6**. The browser displays a result in JSON format. Notice that the result includes the server time.
-1. In the **Address** bar, replace **/api/quotes/usa/chess?height=7&width=6** with **/swagger**. The browser displays the Swagger UI. Keep this browser tab open for later.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the App Service.
+1. On the **Overview** page, click **Browse**. The browser will display a blank page. This is expected because the Web API doesn't implement a user interface.
+1. In the **Address** bar, paste the Web API test URL that you copied earlier. The browser displays a result in JSON format. Notice that the result includes the server time.
+1. In the **Address** bar, paste the Swagger URL that you copied eariler. The browser displays the Swagger UI. Keep this browser tab open for later.
+1. In the **Address** bar, paste the Swagger JSON URL that you copied eariler. The browser displays the OpenAPI specification in JSON format.
 
 ## Create a new Azure API Management instance
 
@@ -50,36 +76,15 @@ Now that we have a functional API, let's set up API Management:
     | Name | Choose a unique name. Make a note of it, you'll need it later on. |
     | Subscription | *Concierge Subscription* |
     | Resource group | Select *Use existing* and choose *<rgn>Sandbox resource group</rgn>* |
-    | Location | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
+    | Location | Choose the same location you used for the Redis Cache. |
     | Organization | BoardGames |
     | Administrator email | Enter your own email address or use the default |
     | Pricing tier | Consumption |
     | | |
 
-    > [!NOTE]
-    > We're using the consumption tier in this module because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes or so to initiate.
-
-## Create a Redis cache
-
-The consumption tier in API Management is intended for those organizations who prefer to build APIs on serverless principals. One difference with this tier is that it does not have its own internal cache. Therefore, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. Let's create that cache now:
-
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Databases > Azure Cache for Redis**.
-1. In the **New Redis Cache** page, enter the following settings, and then click **Create**:
-
-    | Setting | Value |
-    | --- | --- |
-    | DNS Name | Choose a unique name. Make a note of it, you'll need it later on. |
-    | Subscription | *Concierge Subscription* |
-    | Resource group |*<rgn>Sandbox resource group</rgn>* |
-    | Location | Choose the same location you used for the API Management instance |
-    | Pricing tier | Standard C1 |
-    | | |
-
-    ![Creating a Redis cache](../media/5-create-redis-cache.png)
-
 ## Configure API Management to use the external cache
 
-The Redis cache takes a few minutes to deploy. When the deployment is complete, you can configure the API Management instance to use it as an external cache:
+Now, if the Redis cache deployment is complete, you can configure the API Management instance to use it as an external cache:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources**, and then click the new Redis cache.
 1. Under **Settings**, click **Access keys**.
@@ -87,7 +92,7 @@ The Redis cache takes a few minutes to deploy. When the deployment is complete, 
 
     ![Obtaining the Redis cache connection string](../media/5-obtain-redis-cache-connection-string.png)
 
-1. Click **All Resources**, and then click the management service you created above.
+1. Click **All Resources**, and then click the API management service you created above.
 1. Under **Settings**, click **External cache**, and then click **+ Add**.
 
     ![Adding an external cache to API Management](../media/5-add-external-cache.png)
@@ -106,9 +111,7 @@ Before you can apply a policy, you must add the API to the API Management instan
 
     ![Adding an API](../media/5-add-api-to-management.png)
 
-1. Switch to the browser tab that displays the Swagger interface for the API, and then click the link to the **swagger.json** file.
-1. Copy all the text in the address bar.
-1. In the **Create from OpenAPI specification** window, place the cursor in the **OpenAPI specification** textbox, and then press CTRL-V.
+1. In the **Create from OpenAPI specification** window, in the **OpenAPI specification** textbox, paste the URL for the OpenAPI definition that you copied earlier.
 1. Click **Create**. Azure adds the API to the management instance.
 
     ![Adding an API](../media/5-complete-api-add.png)
