@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.implement-code-workflow.4-create-pull-request
+title: Exercise - Create a pull request
+metadata:
+  title: Exercise - Create a pull request
+  description: Use a pull request to propose changes you'd like to make to the codebase.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-create-pull-request.md)
