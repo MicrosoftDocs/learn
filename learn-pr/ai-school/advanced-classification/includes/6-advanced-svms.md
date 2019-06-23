@@ -6,11 +6,11 @@ The problem with this approach is that real world data has noise, which means th
 
 Instead, a soft-margin SVM can be used to increase your accuracy. Soft-margin uses a different cost function than the maximum margin method you have already used. This cost function gives a smaller penalty for stray data points.
 
-![2.9 AdvancedSVMs-02](../media/2.9_AdvancedSVMs-02.png)
+![Scatter plot showing a hard margin support vector machine. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There is a green data point inside the margins, and it is labeled as a violation.](../media/2.9_AdvancedSVMs-02.png)
 
 The plot above is an example of a hard-margin SVM. The hyperplane (black line) is currently doing a good job of separating blue and green dots. However, if the green dot labeled ‘violation’ was introduced and the SVM retrained, this line would have to move substantially, because it is within the margin. If it was moved even closer to the red dots, the SVM might fail to separate the dots properly and report that it ‘failed’, even though a 100% accuracy rate is unlikely on most datasets. A soft-margin SVM allows some degree of mislabeling, and so may be more useful here.  
   
-![2.9 AdvancedSVMs-01](../media/2.9_AdvancedSVMs-01.png)
+![Scatter plot showing a soft margin support vector machine. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are two green data points inside the margins, but unlike the hard margin svm they are not labeled as violations.](../media/2.9_AdvancedSVMs-01.png)
 
 The plot above is a soft-margin SVM, where the algorithm is penalized less for data points that fall within the margin. As such, it fits a sensible hyperplane to the data rather than being skewed by a few data points. In practice, it can be worth experimenting with both types of SVMs to try and achieve a higher accuracy.
 
@@ -24,22 +24,22 @@ There are several types of kernels you can use for the kernel trick, including l
 
 ###### Linear Kernel
 
-![3.0 Kernels-01](../media/3.0_Kernels-01.png)
+![Scatter plot showing a linear kernel. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a linear black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins.](../media/3.0_Kernels-01.png)
 
 ###### Polynomial Kernel
 
-![3.0 Kernels-02](../media/3.0_Kernels-02.png)
+![Scatter plot showing a polynomial kernel. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line that is primarily linear, but there is a dip in the middle to accommodate several stray data points and classify them correctly. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins.](../media/3.0_Kernels-02.png)
 
 ###### RBF Kernel
 
-![3.0 Kernels-03](../media/3.0_Kernels-03.png)
+![Scatter plot showing a RBF kernel. The plot has three classes of data points - green, yellow, and blue data points. They are roughly in a circle shape divided into three. There is a non-linear black line which divides the three - with there being three lines coming from the centre of the plot in order to classify the data points correctly. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are several data points that are within the margin.](../media/3.0_Kernels-03.png)
 
 You just need to know the different kernels exist, and you should try several of them to try to improve your models accuracy. Luckily, it’s very easy to try different kernels, so let’s give it a go.
 
 ### Optional: Using a category as a feature - one-hot vectors
 Often you may have a category in your dataset you want to use as a feature – such as a products country of origin. To use a category as a feature you represent the category as a __one-hot vector__.
 
-![3.2 OneHotVector](../media/3.2_OneHotVector.png)
+![TBC if we keep in optional content](../media/3.2_OneHotVector.png)
 
 A one-hot vector is a vector (list) where each position in the list represents a different category. The vector is filled with 0’s and with one 1. In the example above we are representing 4 animals, where a 1 in the first position represents a cat, and a 1 in the fourth position represents a rabbit. Now your category is useable by a machine learning model.
 
