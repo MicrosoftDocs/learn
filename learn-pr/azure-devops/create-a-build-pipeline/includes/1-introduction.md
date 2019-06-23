@@ -4,11 +4,11 @@ The _Space Game_ web team is being pulled in many different directions. Andy, th
 
 But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process.
 
-![Azure Boards showing a backlog of build process issues](../media/1-all-tasks-board.png)
+![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
 She also remembers that they picked three of the problems to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
 
-![Azure Boards showing the initial three tasks](../media/1-initial-board.png)
+![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
 Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits that the process will be improved just by using it. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
 

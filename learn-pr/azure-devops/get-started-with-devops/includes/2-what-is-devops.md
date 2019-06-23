@@ -49,47 +49,37 @@ Our goal is to give our customers games they'll love. We do that by working toge
 
 **Andy**: This will scare management. They never think further than the next release and they want it yesterday.
 
-**Mara**: I know what you mean about management. I put together this handout about the benefits.
+**Mara**: I know what you mean about management. I put together this handout about what makes an elite performing team.
 
-## The DevOps handout
+## What makes an elite performing team?
 
-Here's the handout that Mara prepared.
+Here's the handout that Mara prepared. The information is based on DevOps research reports and surveys conducted with technical professionals worldwide.
 
-DevOps Research and Assessment LLC, or DORA (now a part of Google Cloud), published **Accelerate: State of DevOps 2018: Strategies for a New Economy** that included some interesting research to support the practices used by some of the highest performing organizations in the world today.
-
-> [!NOTE]
-> The _Accelerate: State of DevOps 2018: Strategies for a New Economy_ report is the largest and longest-running research of its kind representing five years of work surveying over 30,000 technical professionals worldwide.
+DevOps enables companies to experiment with increasing customer adoption and satisfaction. It can lead to better organizational performance, and often higher profitability and market share.
 
 Using metrics to create four categories of organization, when comparing _elite performers_ with low performers, _elite performers_:
 
-- do **46 times** more frequent code deployments
-- have **2,555 times faster** lead time from commit to deploy
-- benefit from **seven times lower** change failure rate
-- recover from incidents **2,604 times faster**
+- **Deploy more frequently**
 
-These are just a few of the metrics that show that adopting DevOps practices can greatly assist an organization in meeting many of their business goals in an increasingly competitive world.
+    In fact, some teams deploy up to dozens of times per day.
 
-Here are some additional findings that are detailed in the report.
+    Practices such as monitoring, continuous testing, database change management, and integrating security earlier in the software development process helps elite performers deploy more frequently, and with greater predictability and safety.
 
-### DevOps improves software delivery, which increases competitive advantages
+- **Reduce lead time from commit to deploy**
 
-DevOps enables companies to experiment with increasing customer adoption and satisfaction. It can lead to better organizational performance, and often higher profitability and market share. Agility enables companies to respond to competitive threats and pivot more quickly to keep up with compliance and regulatory requirements.
+    Lead time is the time it takes for a feature to make it to the customer. By working in smaller batches, automating manual processes, and deploying more frequently, elite performers can achieve in hours or days what once took weeks or even months.
 
-### How you implement cloud infrastructure matters
+- **Reduce change failure rate**
 
-The cloud improves software delivery performance and teams that adopt essential cloud characteristics are **23 times more likely to be high performers.**
+    A new feature that fails in production or causes other features to break can create a lost opportunity between you and your users. As high performing teams mature, they reduce their change failure rate over time.
 
-### Open-source software improves performance
+- **Recover from incidents more quickly**
 
-High performers are **1.75 times more likely to extensively use open-source software.** They're also 1.5 times more likely to expand open-source usage in future.
+    When incidents do occur, elite performers are able to recover more quickly. Acting on metrics and measurement helps elite performers recover quicker while also deploying more frequently.
 
-### Outsourcing by function is rarely adopted by elite performers and it hurts performance
+How you implement cloud infrastructure also matters. The cloud improves software delivery performance and teams that adopt essential cloud characteristics are often more likely to become elite performers.
 
-Outsourcing can save money and provide a flexible labor pool, but must be used in the correct areas. Low-performing teams are almost four times as likely to outsource whole functions (testing, operations, and so on) than their higher-performing counterparts.
-
-### Continuous delivery technical practices drive high performance
-
-These include monitoring and observability, continuous testing, database change management, and integrating security earlier in the software development process.
+Outsourcing can save money and provide a flexible labor pool, but must be used in the correct areas. Low-performing teams are more likely to outsource whole functions (testing, operations, and so on) than their higher-performing counterparts.
 
 ## What DevOps is not
 

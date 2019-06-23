@@ -14,7 +14,7 @@ Here you'll:
 The SonarCloud marketplace extension provides the service connection type you'll need in the next step, as well as the built-in task types that you'll use in your build pipeline.
 
 1. From a new browser tab, navigate to [marketplace.visualstudio.com](https://marketplace.visualstudio.com?azure-portal=true),
-1. Search for "SonarCloud".
+1. From the **Azure DevOps** tab, search for "SonarCloud".
 1. Select **SonarCloud** from the results.
 
     ![The SonarCloud Marketplace extension](../media/3-sonar-cloud-marketplace-extension.png)
@@ -27,7 +27,8 @@ The SonarCloud marketplace extension provides the service connection type you'll
 
 Your pipeline tasks require access to SonarCloud. Here you'll create a service connection from the Azure DevOps portal.
 
-1. From Azure DevOps, click **Project settings** in the lower corner.
+1. From Azure DevOps, navigate to your project.
+1. Click **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Service connections**.
 1. Click **New service connection**, then select **SonarCloud**.
 
@@ -66,16 +67,18 @@ Let's add a few variables to the pipeline.
 1. Create another variable and call it **organization**. Set the value to the organization you created when you set up your SonarCloud project.
 
     ![Creating task variables from Azure DevOps](../media/5-create-sonar-cloud-task-variables.png)
-1. Save the pipeline. In the comment box, type **Add SonarCloud variables**.
+1. From the menu, click **Save** (do not click **Save & queue**). In the comment box, enter **Add SonarCloud variables**.
+
+    ![Locating the Save button from the menu](../media/5-save-button.png)
 
 ## Add tasks to the pipeline configuration
 
 Here you'll add the tasks that perform the scan to **azure-pipelines.yml**.
 
-Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet sonarscanner begin` command you ran to prepare the scanner to collect build and test data.
+Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet-sonarscanner begin` command you ran to prepare the scanner to collect build and test data. (You don't need to run this command right now.)
 
 ```bash
-dotnet sonarscanner begin \
+$HOME/.dotnet/tools/dotnet-sonarscanner begin \
   /k:"$KEY" \
   /d:sonar.host.url="https://sonarcloud.io" \
   /d:sonar.login="$SONAR_TOKEN" \
@@ -92,9 +95,9 @@ An easier way is to use these built-in task types provided by the SonarCloud ext
 * `SonarCloudAnalyze@1`
 * `SonarCloudPublish@1`
 
-`SonarCloudPrepare@1` maps to the `dotnet sonarscanner begin` command you ran earlier. This task uses the service connection you created earlier, rather than directly using your access token. This ensures that your access token does not appear in the build output. 
+`SonarCloudPrepare@1` maps to the `dotnet-sonarscanner begin` command you ran earlier. This task uses the service connection you created earlier, rather than directly using your access token. This ensures that your access token does not appear in the build output.
 
-The other two commands map to the `dotnet sonarscanner end` command, which analyze the results and uploads the report to SonarCloud.
+The other two commands map to the `dotnet-sonarscanner end` command, which analyze the results and uploads the report to SonarCloud.
 
 1. From Visual Studio Code, open **azure-pipelines.yml** and replace its contents with this. The new parts are highlighted.
 

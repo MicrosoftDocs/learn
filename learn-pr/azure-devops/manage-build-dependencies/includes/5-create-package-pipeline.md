@@ -52,7 +52,7 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
 
 In Visual Studio Code, your terminal window points to the root directory of the **mslearn-tailspin-spacegame-web-modules** project. Here you'll open the project from the file explorer so that you can view its structure and work with files.
 
-1. From the **File** menu, select **Open**.
+1. From the **File** menu, select **Open** or **Open Folder**.
 1. Navigate to the root directory of the **mslearn-tailspin-spacegame-web-modules** project.
 
     You see the directory and file tree in the file explorer.
@@ -87,6 +87,8 @@ In Visual Studio Code, your terminal window points to the root directory of the 
         patchVersion: '0'
     ```
 
+    When developing your package, it's common to use the `byPrereleaseNumber` versioning scheme. This appends a unique pre-release suffix, such as "-CI-20190621-042647" to the end of the version number. Following this example, the complete version number would be "1.0.0-CI-20190621-042647".
+
     This `NuGetCommand@2` task pushes the package to your **Tailspin.SpaceGame.Web.Models** Azure Artifacts feed:
 
     ```yml
@@ -105,15 +107,19 @@ You learned how to set up Azure Pipelines in an earlier module. We won't go into
 
 Here you'll set up a second pipeline to build the package and upload that package to Azure Artifacts.
 
-1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
+1. From Azure DevOps, navigate to the **Space Game - web - Dependencies** project.
 1. Select **Pipelines**, either from the project page or from the menu on the left.
 1. Select **+ New** and then **New build pipeline**.
-1. From the **Where is your code?** pane, select **GitHub**.
-1. From **Select a repository**, select **mslearn-tailspin-spacegame-web-models**
+1. From the **Connect** tab, select **GitHub**.
+1. From the **Select** tab, select **mslearn-tailspin-spacegame-web-models**
 
-    1. You'll see the new pipeline's **azure-pipelines.yml** file.
+    1. When prompted, enter your GitHub credentials.
+    1. From the page that appears, scroll to the bottom and click **Approve and install**.
+    1. From the **Review** tab, you see the new pipeline's **azure-pipelines.yml** file.
     1. Click the **Run** button.
 1. Watch the pipeline run.
-1. Navigate to your Azure Artifacts tab.
+1. Navigate to the **Artifacts** tab.
 
-    You see your new **Tailspin.SpaceGame.Web.Models** Azure Artifact. Note the version number.
+    You see the resulting package, **Tailspin.SpaceGame.Web.Models**, in Azure Artifacts. Copy the version number where you can easily access it later. You'll use this version number in the next part.
+
+    ![Azure Artifacts showing version 1.0 of the package](../media/5-artifacts-package.png)

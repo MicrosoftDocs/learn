@@ -20,7 +20,7 @@ Amita feels much better. She's seeing actual progress in catching bugs and in ea
 
 That means the two types of tests we've already talked about. The unit tests test individual components and are really fast. Code coverage tells us how much of our code has associated unit tests.
 
-**Andy**: We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors and coding style problems really early.
+**Andy**: We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors, and coding style problems really early.
 
 **Amita**: What about regression tests?
 
@@ -69,7 +69,21 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 1. Run the following `dotnet test` command to run your unit tests and collect code coverage.
 
     ```bash
-    dotnet test --no-build --configuration Release /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./TestResults/Coverage/
+    dotnet test --no-build \
+      --configuration Release \
+      /p:CollectCoverage=true \
+      /p:CoverletOutputFormat=cobertura \
+      /p:CoverletOutput=./TestResults/Coverage/
+    ```
+
+    If the command fails, try running it like this:
+
+    ```bash
+    MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build \
+      --configuration Release \
+      /p:CollectCoverage=true \
+      /p:CoverletOutputFormat=cobertura \
+      /p:CoverletOutput=./TestResults/Coverage/
     ```
 
     This command resembles the one you ran previously. The `/p:` flags tell coverlet which code coverage format to use and where to place the results.
@@ -77,13 +91,8 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 1. Run the following `reportgenerator` command to convert the Cobertura file to HTML.
 
     ```bash
-    reportgenerator -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml -targetdir:./CodeCoverage -reporttypes:HtmlInline_AzurePipelines
+    $HOME/.dotnet/tools/reportgenerator -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml -targetdir:./CodeCoverage -reporttypes:HtmlInline_AzurePipelines
     ```
-
-    If `reportgenerator` isn't on your system path, you can use the full path, which is:
-
-    * `$HOME/.dotnet/tools/reportgenerator` on Bash
-    * `%USERPROFILE%\.dotnet\tools\reportgenerator` on PowerShell
 
     You see a number of HTML files appear in the **CodeCoverage** folder in the root of the project.
 1. From Visual Studio Code, expand the **CodeCoverage** folder and right click **index.htm**. Then select **Reveal in Explorer** (**Reveal in Finder** on macOS or **Open Containing Folder** on Linux).
@@ -194,3 +203,15 @@ Here you'll add a second widget that summarizes code coverage.
 You now have code coverage set up in your pipeline. Although your existing code coverage is low, you have a baseline that you can improve over time.
 
 Later, you can configure coverlet to check whether your tests provide a minimum threshold of coverage. Your threshold might be 30%, 50%, or 80% coverage, depending on your requirements. The build will fail if less than this amount is covered by your tests.
+
+## Remove code coverage files
+
+Recall that when you ran **reportgenerator** earlier, you saw a number of HTML files appear in the **CodeCoverage** folder in the root of the project.
+
+These files are not intended to be included in source control, and you no longer need them. Although the project's **.gitignore** file is already set up to ignore anything in the **CodeCoverage** directory, it's a good idea to delete these files so they're not added to your Git repository in future modules.
+
+From Visual Studio Code, navigate to the terminal window. Then run this command from your project's root directory.
+
+```bash
+rm -rf CodeCoverage/
+```

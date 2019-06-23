@@ -10,8 +10,8 @@ It is recommended to delete the resource group holding any resources you created
 
 ## Learn more
 
-- [Batch Documentation](https://docs.microsoft.com/en-us/azure/batch/)
-- [What is Azure Batch?](https://docs.microsoft.com/en-us/azure/batch/batch-technical-overview)
-- [Quickstart: Run your first Batch job with the Azure CLI](https://docs.microsoft.com/en-us/azure/batch/quick-create-cli)
-- [Manage Batch resources with Azure CLI](https://docs.microsoft.com/en-us/azure/batch/batch-cli-get-started)
+- [Batch Documentation](https://docs.microsoft.com/azure/batch/)
+- [What is Azure Batch?](https://docs.microsoft.com/azure/batch/batch-technical-overview)
+- [Quickstart: Run your first Batch job with the Azure CLI](https://docs.microsoft.com/azure/batch/quick-create-cli)
+- [Manage Batch resources with Azure CLI](https://docs.microsoft.com/azure/batch/batch-cli-get-started)
 - [Batch Explorer](https://azure.github.io/BatchExplorer/)

@@ -3,7 +3,7 @@ uid: learn.azdo.scan-for-vulnerabilities
 metadata:
   title: Scan code for vulnerabilities in Azure Pipelines - Learn
   description: Scan for potential vulnerabilities in your source code during the build process.
-  ms.date: 09/01/2019
+  ms.date: 06/21/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -13,7 +13,6 @@ title: Scan code for vulnerabilities in Azure Pipelines
 summary: Scan for potential vulnerabilities in your source code during the build process.
 abstract: |
   In this module, you will:
-
   - Learn what resources are available to scan your code for security vulnerabilities, bugs, and code smells
   - Use SonarCloud to scan your code locally and as part of your build pipeline
   - Limit your scanning to pull requests only by using conditions
@@ -23,6 +22,8 @@ prerequisites: |
   - .NET Core 2.1
   - Git
   - A GitHub account
+  - An account on SonarCloud
+  - The latest version of Java SE
 iconUrl: /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-build-pipeline.svg
 levels:
 - intermediate

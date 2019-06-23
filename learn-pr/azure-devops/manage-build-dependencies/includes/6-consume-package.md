@@ -16,7 +16,20 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
 1. From a new instance of Visual Studio Code, open the integrated terminal.
 
-1. Run the following `git` commands to fetch a branch named `models-package` from Microsoft's repository and switch to that branch.
+1. Navigate to the **mslearn-tailspin-spacegame-web** directory. Here's an example that uses the home directory, `~`.
+
+    ```bash
+    cd ~/mslearn-tailspin-spacegame-web
+    ```
+
+1. From the **File** menu, select **Open** or **Open Folder**.
+1. Navigate to the root directory of the _Space Game_ web project.
+
+    (You can run the `pwd` command in the terminal window to see the full path if you need a refresher.)
+
+You see the directory and file tree in the file explorer.
+
+1. From the terminal, run the following `git` commands to fetch a branch named `models-package` from Microsoft's repository and switch to that branch.
 
     ```bash
     git fetch upstream models-package
@@ -36,7 +49,13 @@ This branch contains the _Space Game_ project you worked with in the previous mo
     <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0" />
     ```
 
-    This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0. This matches the initial version that you published to Azure Artifacts in the previous part.
+1. Modify the version number to include the pre-release prefix that was generated during the build process. Here's an example.
+
+    ```xml
+    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0-CI-20190621-042647" />
+    ```
+
+    This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0, plus the pre-release suffix. This matches the initial version that you published to Azure Artifacts in the previous part.
 
 > [!NOTE]
 > When you save the file, Visual Studio Code may ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies. Accessing your Azure Artifacts feed locally requires you to add a package source to set up authentication. We'll skip that here for brevity.
@@ -46,6 +65,9 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 The `models-package` branch does not contain an initial **azure-pipelines.yml** file. Here's your chance to create it.
 
 1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as **~/mslearn-tailspin-spacegame-web**.
+
+    > [!IMPORTANT]
+    > On Windows, ensure that you select **YAML** from the **Save as type** field.
 
 1. Copy the following YAML code into **azure-pipelines.yml**:
 

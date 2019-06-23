@@ -22,7 +22,8 @@ Previously, you got the Markdown code for your build badge from Azure Pipelines.
 
 Here, you'll follow a similar process. You'll get the Markdown code you need from SonarCloud.
 
-1. From SonarCloud, select **Get project badges** from the lower corner.
+1. From SonarCloud, navigate to your project.
+1. Select **Get project badges** from the lower corner.
 1. Select **Quality Gate Status** from the **Metric** drop-down.
 
     > [!TIP]

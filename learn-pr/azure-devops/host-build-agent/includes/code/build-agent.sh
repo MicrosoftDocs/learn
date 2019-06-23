@@ -3,7 +3,7 @@ set -e
 
 # Select a default agent version if one is not specified
 if [ -z "$AZP_AGENT_VERSION" ]; then
-  AZP_AGENT_VERSION=2.150.3
+  AZP_AGENT_VERSION=2.153.2
 fi
 
 # Verify Azure Pipelines token is set

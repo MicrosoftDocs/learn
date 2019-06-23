@@ -69,7 +69,7 @@ Andy chooses a few values that represent typical queries. He also includes 0 to 
 Similar to what you did earlier, here you'll fetch the `failed-test` branch from GitHub and checkout, or switch to, that branch.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. 1. Run the following `git fetch` and `git checkout` commands to download a branch named `failed-test` from Microsoft's repository and switch to that branch.
+1. Run the following `git fetch` and `git checkout` commands to download a branch named `failed-test` from Microsoft's repository and switch to that branch.
 
     ```bash
     git fetch upstream failed-test
@@ -77,6 +77,18 @@ Similar to what you did earlier, here you'll fetch the `failed-test` branch from
     ```
 
     We name the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
+
+1. Run the following `git commit` command to add an empty entry to your commit history.
+
+    ```bash
+    git commit --allow-empty -m "Trigger Azure Pipelines"
+    ```
+
+    This step is for learning purposes and is not typical.
+
+    When you forked the repository from Microsoft's account into yours, your fork already came with the `failed-test` branch. Here you run the `git commit` command using the `--allow-empty` flag to create an additional entry in your commit history. This will help the next step successfully push a change to GitHub.
+
+    If you were to omit this step, the `git push` command you run in the next step would not take any action, and therefore wouldn't cause the build to run in Azure Pipelines.
 
 1. Run the following `git push` command to upload the branch to your GitHub repository.
 

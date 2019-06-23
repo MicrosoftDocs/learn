@@ -112,3 +112,37 @@ Your GitHub repository likely already has your latest changes to your `build-pip
     Git branches are typically meant to be short-lived. After you merge a branch, you typically don't push additional commits onto it or merge it a second time. In most cases, you start with a clean branch that's based on the `master` branch every time you start on a new feature or bug fix.
 
     Deleting a branch on GitHub doesn't delete that branch from your local system. To do that, you would pass the `-d` switch to the `git branch` command.
+
+## How many times is a change built?
+
+The answer depends on how your build configuration is defined. Azure Pipelines enables you to define _triggers_ that specify which events cause builds to happen. You can control which branches get built or even which files trigger the build.
+
+As an example, say you want a build to happen when a change is pushed to GitHub on any Git branch. But you don't want the build to happen when the only changes were to files in your project's **docs** folder. You might include this `trigger` section in your build configuration:
+
+```yml
+trigger:
+  branches:
+    include:
+    - '*'     # build all branches
+  paths:
+    exclude:
+    - docs/*  # exclude the docs folder
+```
+
+By default, builds happen when a change is pushed to any file on any branch.
+
+A _continuous integration_ build, or CI build, is a build that runs when you push a change to a branch.
+
+A _pull request_ build, or PR build, is a build that runs when you open a pull request or when you push additional changes to an existing pull request.
+
+Here, the changes you made through the `build-pipeline` branch are built under three conditions.
+
+* A CI build happens when you push changes to the `build-pipeline` branch.
+* A PR build happens when you open a pull request on the `build-pipeline` branch against the `master` branch.
+* A final CI build happens after the pull request is merged to `master`.
+
+PR builds help you verify that your proposed changes _would_ work correctly after they are merged to `master` or another target branch.
+
+The final CI build verifies that the changes are still good after the PR was merged.
+
+As an optional step, navigate to Azure Pipelines and watch the final CI build happen on the `master` branch.

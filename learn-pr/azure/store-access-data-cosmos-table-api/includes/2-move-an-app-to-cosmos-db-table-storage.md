@@ -48,7 +48,7 @@ Azure Cosmos DB can replicate data for read and write access to multiple regions
 
 There are some differences in behavior between Azure Storage tables and Azure Cosmos DB tables to remember if you are considering a migration. For example:
 
-- You are charged for the capacity of an Azure Cosmos DB table as soon as it is created, even if that capacity isn't used. This charging structure is bAzure ecause Azure Cosmos DB uses a reserved-capacity model to ensure that clients can read data within 10 ms. In Azure Storage tables, you are only charged for used capacity, but read access is only guaranteed within 10 seconds.
+- You are charged for the capacity of an Azure Cosmos DB table as soon as it is created, even if that capacity isn't used. This charging structure is because Azure Cosmos DB uses a reserved-capacity model to ensure that clients can read data within 10 ms. In Azure Storage tables, you are only charged for used capacity, but read access is only guaranteed within 10 seconds.
 - Query results from Azure Cosmos DB are not sorted in order of partition key and row key as they are from Storage tables.
 - Row keys in Azure Cosmos DB are limited to 255 bytes.
 - Batch operations are limited to 2 MBs.

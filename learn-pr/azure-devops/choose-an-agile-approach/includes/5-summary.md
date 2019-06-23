@@ -17,7 +17,7 @@ Congratulations. You've completed the final module in the _Evolve your DevOps pr
 
 You've seen the team identify their top-priority problems, but how will they solve them? If you want to work along with them and learn how to configure build pipelines that continuously build, test, and verify your applications, go to [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
 
-For more self-paced, hands-on learning around Azure DevOps, check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true) and [courses.microsoft.com](https://courses.microsoft.com?azure-portal=true).
+For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
 ## Learn more
 

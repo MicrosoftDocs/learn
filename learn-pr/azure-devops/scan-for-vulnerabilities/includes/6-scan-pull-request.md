@@ -16,7 +16,7 @@ In this part, you'll modify your build configuration to run the SonarCloud scann
 
 ## What are conditions?
 
-In Azure Pipelines, a _condition_ enables you to run a task or job based on the state of the pipeline. The conditions you can specify are:
+In Azure Pipelines, a _condition_ enables you to run a task or job based on the state of the pipeline. Some of the conditions you can specify are:
 
 > [!div class="checklist"]
 > * Only when all previous dependent tasks have succeeded

@@ -8,16 +8,16 @@ Azure DevOps provides several tools you can use for better team collaboration. I
 
 | | |
 |-|-|
-|![Azure Boards](../media/azure-boards.png)|[Azure Boards](https://azure.microsoft.com/services/devops/boards/). These are agile tools that help us plan, track, and discuss our work, even with other teams.|
-|![Azure Pipelines](../media/azure-pipelines.png)|[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/). These will let us build, test, and deploy with CI/CD that works with any language, platform, and cloud.|
-|![Azure Test Plans](../media/azure-test-plans.png)|[Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/). These are manual and exploratory testing tools.|
+|![Azure Boards](../media/azure-boards.png)|[Azure Boards](https://azure.microsoft.com/services/devops/boards?azure-portal=true). These are agile tools that help us plan, track, and discuss our work, even with other teams.|
+|![Azure Pipelines](../media/azure-pipelines.png)|[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines?azure-portal=true). These will let us build, test, and deploy with CI/CD that works with any language, platform, and cloud.|
+|![Azure Test Plans](../media/azure-test-plans.png)|[Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans?azure-portal=true). These are manual and exploratory testing tools.|
 
 Those are the three I was thinking about using now. There are two other services we can think about later.
 
 | | |
 |-|-|
-|![Azure Repos](../media/azure-repos.png)|[Azure Repos](https://azure.microsoft.com/services/devops/repos/). These give us provide unlimited, cloud-hosted private, and public Git repos.|
-|![Azure Artifacts](../media/azure-artifacts.png)|[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/). These let us create, host, and share packages.|
+|![Azure Repos](../media/azure-repos.png)|[Azure Repos](https://azure.microsoft.com/services/devops/repos?azure-portal=true). These give us provide unlimited, cloud-hosted private, and public Git repos.|
+|![Azure Artifacts](../media/azure-artifacts.png)|[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts?azure-portal=true). These let us create, host, and share packages.|
 
 **Amita**: This sounds like a lot. Where do we start?
 

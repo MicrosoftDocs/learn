@@ -22,7 +22,7 @@ Before getting into Prosci's framework, we would like to highlight some ideas th
 
 The acronym ADKAR refers to the **five stages (or milestones) that an individual moves through to achieve change**—or to put it a different way, to move from one set of habits and behaviors to a new one. These milestones are sequential because people need to fully understand, commit, and achieve one milestone before they can effectively tackle the next one. It is only when individuals reach the last milestone that transformation becomes a reality. It’s important to note that individuals may move back and forth among these stages as they learn the new implications of a change and understand "how it impacts me." These are the five stages of the model:
 
-![ADKAR definition](../media/2-1-3-A-Understand-how-the-ADKAR-framework-can-help-you-lead-org-change.jpg)
+![ADKAR definition: A - Awareness: Understanding the need for change and its value for the organization. D - Desire: Willingness to adopt the change and to actively support it. K - Knowledge: Understanding and having the education to change. A - Ability: Being able to put knowledge into action. R - Reinforcement: Ensuring that the new abilities and behaviors stick for good.](../media/2-1-3-A-Understand-how-the-ADKAR-framework-can-help-you-lead-org-change.jpg)
 
 ## How to move from the individual to the organizational level
 
@@ -36,6 +36,6 @@ Once you understand the change journey at the individual level, you might ask: h
 
 Each of these change management tools contributes to reaching particular ADKAR stages, giving organizations practical guidance on how to help individuals reach the different milestones. It’s essential for organizations to use all five change management tools, as none of them alone is sufficient to support effective change.
 
-![ADKAR phases and tools](../media/2-1-3-B-Understand-how-the-ADKAR-framework-can-help-you-lead-org-change.jpg)
+![ADKAR phases and tools: what change management tools are being used in which ADKAR phase of change? Change management tool "Communication" is being used in the Awareness and Reinforcement stages. Change management tool "Sponsorship roadmap" is being used in the Awareness, Desire, and Reinforcement stages. Change management tool "Coaching" is being used in all stages - Awareness, Desire, Knowledge, Ability, and Reinforcement. Change management tool "Training" is being used in the Knowledge and Ability stages. Change management tool "Resistance management" is being used in the "Desire" phase.](../media/2-1-3-B-Understand-how-the-ADKAR-framework-can-help-you-lead-org-change.jpg)
 
 Now that you understand the change journey, let’s take a holistic look at your organization through a model that will help you understand how prepared your organization is to take advantage of AI.

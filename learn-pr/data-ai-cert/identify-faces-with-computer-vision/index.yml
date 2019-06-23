@@ -16,7 +16,6 @@ abstract: |
   - Learn what the Face API is
   - Understand concepts related to the Face API
   - Explore the Emotion API
-ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/identify-faces-with-computer-vision.svg
 levels:

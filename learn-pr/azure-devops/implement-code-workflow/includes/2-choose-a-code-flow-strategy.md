@@ -2,7 +2,7 @@ It's important to choose a code flow strategy that fits in with how your team wo
 
 When Mara set up Azure Boards, she and the team identified a few initial tasks to address. One of them was to create a Git-based workflow.
 
-![Azure Boards showing the initial three tasks](../media/1-initial-board.png)
+![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
 Let's listen in on the team as they work out a better way to collaborate. Currently, they are using a centralized version control system but the plan is to move to Git, a distributed system.
 

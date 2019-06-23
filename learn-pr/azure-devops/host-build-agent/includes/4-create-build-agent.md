@@ -51,7 +51,7 @@ Here you'll create a VM running Ubuntu 16.04 that will serve as your build agent
 
 Recall that an agent pool organizes build agents. Here you'll create the agent pool from Azure DevOps. Later, you'll specify the name of the agent pool when you configure your agent so that it can register itself to the correct pool.
 
-1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
+1. From Azure DevOps, navigate to the **Space Game - web - Agent** project.
 1. Select **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Agent pools**.
 
@@ -241,10 +241,10 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
 
 1. Set the `AZP_URL` environment variable to specify the URL to your Azure DevOps account.
 
-    Replace **username** with yours. You can get the name from the browser tab that's showing Azure DevOps.
+    Replace **organization** with yours. You can get the name from the browser tab that's showing Azure DevOps.
 
     ```bash
-    export AZP_URL=https://dev.azure.com/username
+    export AZP_URL=https://dev.azure.com/organization
     ```
 
 1. Set the `AZP_TOKEN` environment variable to specify your personal access token.
@@ -276,7 +276,7 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
 
 You successfully installed build tools and the agent software on your VM. As a verification step, here you'll navigate to Azure DevOps and see your agent in the agent pool.
 
-1. From Azure DevOps, navigate to the **SpaceGame-Web** project.
+1. From Azure DevOps, navigate to the **Space Game - web - Agent** project.
 1. Select **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Agent pools**.
 

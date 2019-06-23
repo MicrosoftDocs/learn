@@ -17,7 +17,6 @@ abstract: |
   - Set up and use Microsoft Azure Machine Learning Studio
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/create-machine-learning-studio-account.svg
-ratingEnabled: true
 levels:
 - beginner
 - intermediate
