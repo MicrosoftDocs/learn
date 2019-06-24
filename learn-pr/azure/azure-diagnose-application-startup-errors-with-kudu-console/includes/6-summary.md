@@ -8,3 +8,4 @@ In this module, you learned about the different application startup errors. As a
 - [Project Kudu Console](https://github.com/projectkudu/kudu/wiki/Kudu-console)
 - [Using KUDU with Microsoft Azure Web Apps](https://blogs.msdn.microsoft.com/benjaminperkins/2014/03/24/using-kudu-with-windows-azure-web-sites/)
 - [Ace for in-browser editing](https://github.com/ajaxorg/ace)
+- [Common errors reference](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-iis-errors-reference?view=aspnetcore-2.2)

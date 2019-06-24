@@ -4,11 +4,17 @@ Azure App Service is a web hosting service that helps you deploy your ASP.NET Co
 
 ## What is Kudu console?
 
-Kudu is a troubleshooting and analysis tool for Microsoft Azure App Service. Kudu Console provides both command line and file browser access to your sites. To access the Kudu console of a web app, go to the `{yourwebapp}.scm.azurewebsites.net` URL and click on **Debug Console**.
+Kudu is a troubleshooting and analysis tool for Microsoft Azure App Service. Kudu Console provides both command line and file browser access to your sites. 
+
+To access the Kudu console of a web app, go to the `{yourwebapp}.scm.azurewebsites.net` URL and click on **Debug Console**.
 
 The Source Control Management (SCM) service site runs the Kudu service and other site extensions. The services offered by Kudu include deployment and troubleshooting for Azure Web Apps, with options for viewing and downloading log files.
 
 ## Kudu console functionality
+
+Azure web sites are associated with "scm" service site. The scm site uses single sign on, so if you are already logged on to the Azure Portal, you will be able to go directly to the Kudu console without typing additional credentials. If you prefer not to use Single Sign On and instead use basic authentication, then you can go to `https://mysite.scm.azurewebsites.net/basicauth`, which will prompt you for credentials. 
+
+You can access Kudu Console through the Azure Portal by navigating to the **Development Tools** category of your web app's overview page and clicking the **Advanced Tools** option and the **Go** button in the advanced tools page. 
 
 Some of the things you can do with Kudu console:
 
