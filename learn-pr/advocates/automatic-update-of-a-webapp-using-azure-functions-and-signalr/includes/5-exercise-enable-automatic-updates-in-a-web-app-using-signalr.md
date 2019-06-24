@@ -119,7 +119,7 @@ First, you need to create a new function that listens for changes in the databas
     }
     ```
 
-1. Next, append the following SignalR output binding definition to the `bindings` collection.
+1. Next, append the following SignalR output binding definition to the `bindings` array.
 
     ```json
     {
