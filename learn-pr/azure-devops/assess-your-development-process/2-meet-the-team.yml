@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.assess-your-development-process.2-meet-the-team
+title: Meet the team
+metadata:
+  title: Meet the team
+  description: Meet the team at Tailspin Toys and hear about some of their latest challenges.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-meet-the-team.md)]

@@ -2,15 +2,9 @@ To support the new functionality, you need to create a few new functions and upd
 
 ## Create a SignalR account
 
-You'll need to add a SignalR account to your sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI).
+You'll need to add a SignalR account to your sandbox subscription. 
 
-1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
-
-    ```bash
-    az extension add -n signalr
-    ```
-
-1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so please wait for it to finish before proceeding to the next step. 
+1. The first step is to run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so please wait for it to finish before proceeding to the next step. 
 
     ```bash
     az signalr create \
@@ -125,7 +119,7 @@ First, you need to create a new function that listens for changes in the databas
     }
     ```
 
-1. Next, append the following SignalR output binding definition to the `bindings` collection.
+1. Next, append the following SignalR output binding definition to the `bindings` array.
 
     ```json
     {
