@@ -48,8 +48,6 @@ Identify the subtasks of *module title*
 
     Provide a scenario of a real-world job-task that shows how the technology is used in practice (from the module proposal):
 
-    *Add your scenario [(Guidance)](id-guidance-scenarios.md)*
-
 1. **Learning-content unit title**
 
     List the content that will enable the learner to *subtask*:
