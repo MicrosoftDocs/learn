@@ -17,5 +17,4 @@ This framework contains detailed information covering an end-to-end cloud adopti
 | ![Icon of lightbulb](../media/lightbulb.png)| *The cloud offers nearly unlimited potential, but successful adoption requires careful planning and strategy. And the adoption strategy will depend on where you are in your cloud journey. When you think about your use of the cloud, what is your motivation?*|
 |
 
-
- Let’s explore some of the common business motivations that may trigger an organization to move to the cloud.
+ Let’s explore some of the common business motivations that may trigger an organization to move to the cloud.     
