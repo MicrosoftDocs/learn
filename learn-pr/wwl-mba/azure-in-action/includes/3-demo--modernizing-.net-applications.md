@@ -4,7 +4,7 @@ When an application is outgrowing the local infrastructure on which it is hosted
 
 Tailwind Traders is a local retail company. They are in the process of expanding their business worldwide and, in order to do that, they need to scale their applications with robust solutions that allow them to reach more customers without worrying about their application performance.
 
-This unit will demonstrate the process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic.**
+In this demo you will see the process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic.**
 
 ## Migrate and modernize applications
 
@@ -32,9 +32,7 @@ You have just seen how easy it is to migrate an application using Azure App Serv
 
   - Scale out - Increase the number of instances running.
 
-- **Azure Logic Apps** makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption.
-
-- **Azure Logic Apps** simplifies the creation of automated scalable workflows that integrate apps and data across cloud services and on-premises systems.
+- **Azure Logic Apps** makes it possible to modernize an application without modifying the production code, offering opportunities to automate and scale with minimal disruption and simplifying the creation of workflows that integrate apps and data across cloud services and on-premises systems.
 
 Now that you've experienced Azure in action, let's complete the knowledge check.
 
