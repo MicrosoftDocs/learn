@@ -23,7 +23,7 @@ Choose the right disk storage for your virtual machine workload
 
 ## Summary
 
-*Add the summary [(Guidance)](id-guidance-introductory-summaries.md)*
+Azure provides a variety of disk storage options for virtual machine workloads. Identify the features of capabilities of each type to ensure your application performs optimally.
 
 ## Learning objectives
 
