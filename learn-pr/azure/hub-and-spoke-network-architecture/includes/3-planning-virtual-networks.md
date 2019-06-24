@@ -9,44 +9,19 @@ In this unit, you'll explore virtual networking in the Azure platform, the desig
 <!-- Activate the sandbox -->
 [!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
 
-Run the following commands in the Cloud Shell. This will create an Azure Resources to use in the next exercise.
-
-1. Run the following commands to save environment variables that will be used in the az cli calls later.
-
-    ```bash
-    export RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
-    export LOCATION=$(az group show --name $RESOURCEGROUP | jq -r '.location')
-    export SERVERNAME=server$RANDOM
-    ```
+Deploy the resources in the portal in the below ARM template. This will create an Azure Resources to use in the next exercise.
 
 1. Copy the ARM and parameter json templates that create hub and spoke resources.
-
     ```bash
-    curl https://raw.githubusercontent.com/... > onprem.json
-    curl https://raw.githubusercontent.com/... > hub-vnet.json
-    curl https://raw.githubusercontent.com/... > hub-adds.json
-    curl https://raw.githubusercontent.com/... > spoke1.json
-    curl https://raw.githubusercontent.com/... > spoke2.json
-    curl https://raw.githubusercontent.com/... > hub-peering.json
-    curl https://raw.githubusercontent.com/... > hub-nva.json
+    curl https://raw.githubusercontent.com/... > deploy.json
+    curl https://raw.githubusercontent.com/... > parameters.json
     ```
 
     <!-- TODO replace with live github repo -->
 
-1. Run the following commands to create the resources.
-
-    ```bash
-azbb -s <subscription_id> -g learn-rg -l westus -p onprem.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-vnet.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-adds.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p spoke1.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p spoke2.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-vnet-peering.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-nva.json --deploy
-    ```
-
     > [!NOTE]
-    > This can take several to complete, continue with this unit while the resources are created.
+    > The VPN gateway can take up to 30 minutes to complete, continue with this unit while the resources are created.
+
 
 ## Overview of virtual networks on Azure
 
