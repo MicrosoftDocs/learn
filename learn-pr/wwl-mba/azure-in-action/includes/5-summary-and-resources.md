@@ -53,5 +53,5 @@ Use these resources to discover more.
 
 ### Demo - Modernizing .NET Applications
 
-- [Modernizing .NET Apps](https://github.com/Microsoft/TailwindTraders/tree/master/Documents/DemoScripts/Modernizing%20.NET%20Apps) demo
+- For detailed step-by-step instructions and demo environment, see the [Modernizing .NET Apps](https://github.com/Microsoft/TailwindTraders/tree/master/Documents/DemoScripts/Modernizing%20.NET%20Apps) demo
 
