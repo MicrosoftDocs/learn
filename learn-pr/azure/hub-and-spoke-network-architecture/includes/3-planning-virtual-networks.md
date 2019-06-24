@@ -1,10 +1,10 @@
-Your company is planning a migration of on-premises resources to Azure, as part of this migration there is a central datacenter that will remain on-premises initially but will need connectivity to Azure. You need to integrate multiple locations into this datacenter with central dependencies such as Active Directory. The ultimate goal for the migration is to implement a virtual data center in Azure. The chosen topology for the migration is hub and spoke so you need to understand how to plan the networking design.
+Your company is planning a migration of on-premises resources to Azure, as part of this migration there's a central datacenter that will remain on-premises initially but will need connectivity to Azure. You'll integrate multiple locations into this datacenter with central dependencies such as Active Directory. The ultimate goal for the migration is to implement a virtual data center in Azure. The chosen topology for the migration is hub and spoke, so you need to understand how to plan the networking design.
 
 Your IT manager has requested you produce a virtual networking design using ExpressRoute for on-premises connectivity that aligns to the chosen topology.
 
 In this unit, you'll explore virtual networking in the Azure platform, the design considerations needed and how to implement Azure ExpressRoute for connectivity to on-premises networks.
 
-## Environment setup
+## Environment setup for the next exercise
 
 <!-- Activate the sandbox -->
 [!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
@@ -35,14 +35,14 @@ Run the following commands in the Cloud Shell. This will create an Azure Resourc
 
 1. Run the following commands to create the resources.
 
-    ```bash
-azbb -s <subscription_id> -g learn-rg -l westus -p onprem.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-vnet.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-adds.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p spoke1.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p spoke2.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-vnet-peering.json --deploy
-azbb -s <subscription_id> -g learn-rg -l westus -p hub-nva.json --deploy
+    ```azurecli
+    azbb -s <subscription_id> -g $RESOURCEGROUP -l $LOCATION -p onprem.json --deploy
+    azbb -s <subscription_id> -g $RESOURCEGROUP -l $LOCATION -p hub-vnet.json --deploy
+    azbb -s <subscription_id> -g $RESOURCEGROUP -l $LOCATION -p hub-adds.json --deploy
+    azbb -s <subscription_id> -g $RESOURCEGROUP -l $LOCATION -p spoke1.json --deploy
+    azbb -s <subscription_id> -g $RESOURCEGROUP -l $LOCATION -p spoke2.json --deploy
+    azbb -s <subscription_id> -g $RESOURCEGROUP -l $LOCATION -p hub-vnet-peering.json --deploy
+    azbb -s <subscription_id> -g $RESOURCEGROUP -l $LOCATION -p hub-nva.json --deploy
     ```
 
     > [!NOTE]
@@ -58,7 +58,7 @@ Azure vnets can also be used to connect your organizations Azure resources hoste
 
 An Azure Virtual Network is effectively a representation of your own IT network but contained within the cloud, logically isolating dedicated organizational resources in your subscription(s). Using Azure vnets enables most Azure resources to securely communicate with each other, your on-premises networks and the internet.
 
-Azure vnets are comprised of several components, the component model gives the ability for vnets to be configured to varying degrees from the simplistic to the highly sophisticated. Two such components that form a the core of the vnet component model are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
+Azure vnets are composed of several components, the component model gives the ability for vnets to be configured to varying degrees from the simplistic to the highly sophisticated. Two such components that form the core of the vnet component model are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
 
 ![Image showing Azure vnet component architecture](../media/3-azure-vnet-arch.png)
 
