@@ -2,7 +2,7 @@ There are many modern tools for deep learning. Services such as text analytics, 
 
 ## TensorFlow
 
-![Logos TensorFlow](../media/Logos_TensorFlow.png)
+![Logo - TensorFlow](../media/Logos_TensorFlow.png)
 
 TensorFlow is a Python library that can be extended to multiple languages. TensorFlow can be run on different types of processors, from cloud and desktop CPUs and GPUs, to small IoT devices, and in your browser. TensorFlow has many different capabilities, but it primarily excels at neural networks and deep learning.
 
@@ -10,7 +10,7 @@ It's sometimes considered a ‘low-level’ library because other libraries, suc
 
 ## Keras
 
-![Logos Keras](../media/Logos_Keras.png)
+![Logo - Keras](../media/Logos_Keras.png)
 
 Keras is a ‘high-level’ neural networks Python library. Keras uses TensorFlow and a few other libraries to make building deep neural networks easy, reducing the number of actions a user has to take to build a successful model.
 
@@ -18,7 +18,7 @@ It's common for AI practitioners to use Keras to test if a certain type of model
 
 ## PyTorch
 
-![Logos Pytorch](../media/Logos_Pytorch.png)
+![Logo - Pytorch](../media/Logos_Pytorch.png)
 
 PyTorch is a deep learning research platform that allows flexibility and performance. PyTorch is still in its early stages of development - version 1.0 hasn’t been released yet.
 
@@ -26,7 +26,7 @@ Despite this, PyTorch is extremely popular and is known especially for its ease 
 
 ## NumPy
 
-![Logos Numpy](../media/Logos_Numpy.png)
+![Logo - Numpy](../media/Logos_Numpy.png)
 
 NumPy is an open-source Python library which provides a large toolkit of mathematical functions and support for large data structures. Similar to how we have used it in this course, NumPy is extremely popular for data pre-processing before we build sophisticated AI models.
 
@@ -34,7 +34,7 @@ NumPy is an open-source Python library which provides a large toolkit of mathema
 
 Residual Networks (ResNet) are a specialized type of neural network, usually implemented to handle difficult problems that require deep neural networks. The ‘Res’ in ResNet refers to a residual block - a part of the neural network which allows data to skip layers.  
   
-![6.4 Resnet](../media/6.4_Resnet.png)
+![TBC](../media/6.4_Resnet.png)
   
 This helps solve a common problem with deep neural networks - degradation of accuracy with many hidden layers. Data is transformed as it travels from layer to layer, and low accuracy can occur when data transformation is too high.
   

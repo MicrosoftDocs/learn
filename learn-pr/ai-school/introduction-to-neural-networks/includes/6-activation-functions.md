@@ -20,15 +20,15 @@ Some modern algorithms, such as reptile, can automatically test different activa
 
 Each layer in a neural network can optionally contain a bias. A bias is a node which does not take in any data, but is always “on”. This allows for more flexibility of neural networks.  
   
-![5.4 Bias fixed (2)](../media/5.4_Bias_fixed__2_.png)
+![TBC](../media/5.4_Bias_fixed__2_.png)
   
 Bias is commonly represented by the number 1 (i.e. they are always “on”). The value of the bias is added onto the value that the node receives from all connections.  
   
-![5.4 BiasWeights fixed copy](../media/5.4_BiasWeights_fixed_copy.png)
+![TBC](../media/5.4_BiasWeights_fixed_copy.png)
   
 In the picture above, the bias the the node receives is 1 * w1. Bias nodes always output 1, so the blue node will always receive the weight of the edge that connects itself with the bias.
   
-![5.4 BiasNetwork fixed@4x](../media/5.4_BiasNetwork_fixed_4x.png)
+![TBC](../media/5.4_BiasNetwork_fixed_4x.png)
   
 As data comes into a node, it is changed by the weight of the edge and the bias.  
   
