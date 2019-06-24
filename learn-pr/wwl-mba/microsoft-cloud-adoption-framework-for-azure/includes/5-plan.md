@@ -16,7 +16,7 @@ You may also hear cloud rationalization referred to as the “Five Rs.” During
 
 There are five options for cloud rationalization:
 
-![](../media/ic-caf-1.jpg)
+![Diagram showing the five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, Replace](../media/ic-caf-1.jpg)
 
 
 :::row:::
