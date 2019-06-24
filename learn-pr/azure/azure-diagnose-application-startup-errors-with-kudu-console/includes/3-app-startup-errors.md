@@ -6,7 +6,7 @@ Some ASP.NET Core app startup errors are: 500.30 In-Process Start Failure, 502.5
 
 ### 500.30 In-Process Start Failure
 
-You can verify this error using the Application Event Log. Some of the common causes for this error are that the application failed to start, or that it started and then stopped. The error can be identified by checking the system event log or enable logging through the application process stdout messages. You can also troubleshoot this error by attaching a debugger to the application process. 
+Some of the common causes for this error are that the application failed to start, or that it started and then stopped. The error can be identified by checking the system event log or enable logging through the application process stdout messages. You can also troubleshoot this error by attaching a debugger to the application process. 
 
 ### 502.5 Process Failure 
 
@@ -18,7 +18,7 @@ The 500 internal server error occurs with the app's code during startup or while
 
 ### Connection reset
 
-Connection reset error occurs after the headers are sent and it is too late for the server to send 500 Internal Server Error. This error will occur when the complex objects of the response are not serialized in the right order. Application logging will help resolve this issue.
+Connection reset error occurs after the headers are sent and it is too late for the server to send 500 Internal Server Error. Application logging will help resolve this issue.
 
 ## Azure App Service Diagnostics
 
@@ -32,4 +32,4 @@ To troubleshoot the common errors when hosting ASP.NET Core Apps on Azure App Se
 - **Application event log entries**
 - **ASP.NET Core Module stdout and debug log entries**
 
-The hands-on labs in this module will help diagnose the startup errors using the Application Event Log with Kudu console.
+The hands-on labs in this module will help diagnose startup errors using the Application Event Log through Kudu console.

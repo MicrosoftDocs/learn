@@ -2,7 +2,7 @@ You are an IT admin supporting a leading hotel and resort company using Azure we
 
 In this module, you'll learn how to diagnose the app startup issue by examining the application event logs. In case of not finding useful information to diagnose the startup error, then you'll use the Kudu diagnostic console to identify the issue.
 
-This module will help you to diagnose the startup issue on an ASP.NET Core app using Azure App Service's diagnostic tool.
+This module will help you to diagnose startup issues on an ASP.NET Core app using Azure App Service's diagnostic tool.
 
 ## Learning objectives
 
@@ -15,4 +15,4 @@ In this module, you'll:
 ## Prerequisites
 
 - Experience in basic web app development and deployment
-- Understanding of App Service in Microsoft Azure
+- Experience with App Service in Microsoft Azure

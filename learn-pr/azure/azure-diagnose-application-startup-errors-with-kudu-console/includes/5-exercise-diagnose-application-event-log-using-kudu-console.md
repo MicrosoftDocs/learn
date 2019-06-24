@@ -30,14 +30,11 @@ You can run the app in Kudu console Remote Execution Console to discover useful 
 1. Under the **Development Tools** section in the Azure Portal, open **Advanced Tools**. 
 1. Select the **Go** button. This opens Kudu Console in a new window.
 1. Open **Debug Console** in the top navigation bar and select **CMD**.
-
-## Test a 64-bit (x64) app
-
-### Current release
-
-* If the app is 64-bit (x64) :
-  1. `cd D:\Program Files\dotnet`
-  1. Run the app: `dotnet \home\site\wwwroot\HotelApp.dll`
+Run the following commands in the command prompt:
+1. `cd D:\Program Files\dotnet`
+1. Run the app: `dotnet \home\site\wwwroot\HotelApp.dll`
 
 The console output from the app, showing any errors, is piped to the Kudu console.
 ![Errors](../media/Errors.png)
+
+The error message in the screenshot points out the "Content root... does not exist" error.

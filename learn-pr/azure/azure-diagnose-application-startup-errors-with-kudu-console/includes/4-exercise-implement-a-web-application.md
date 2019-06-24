@@ -34,17 +34,17 @@ Application started.
 
 The output describes the situation after starting your app: the application is running and listening at port 5000.
 
-If you were running the app on our own machine, we'd be able to open a browser to http://localhost:5000. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that. Press Ctrl+C to shut down the application.
+If you are running the app on your own machine, you'd be able to open a browser to http://localhost:5000. To make this accessible from outside of our own machine, you'll need to deploy the app to somewhere with a public endpoint.
 
 ## Update the web project code
 
-1. Ensure that you are in the web app folder HotelApp by running:
+1. Switch to the project folder by running:
 
 ```bash
 cd HotelApp
 ```
 
-2. Access the Program.cs file and edit it using `code Program.cs` command to update the file to include a startup exception `UseContentRoot("invalid path")`. **Save** the file after editing and **close** the editor.
+2. Edit the Program.cs file to add code that will cause a startup error. Open an editor with command `code Program.cs`. Add `.UseContentRoot("invalid path")` after `UseStartup<Startup>()`. **Save** the file after editing and **close** the editor.
 
 
 ```csharp
@@ -61,7 +61,7 @@ public class Program
 }
 ```
 
-3. Deploy the web app to implement the changes after updating the web app name to include your name in the `[<yourname>HotelApp]` parameter value:
+3. Deploy the project to a new web app. The web app name must be unique in Azure App Service, so add your name in front of `HotelApp` when you specify a name for the new web app `[<yourname>HotelApp]`:
 
 ```bash
 az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku S1
