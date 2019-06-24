@@ -76,6 +76,8 @@ Cloud Governance:
 Cloud adoption plan:
 - Review [sample business outcomes](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/business-outcomes/index?branch=master)
 
+- Review [approaches to digital estate planning](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/digital-estate/approach)
+
 - Document those in the provided [business outcome template](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx) to share with internal partners during the transformation journey
 
 - Identify the [learning metrics](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/learning-metrics?branch=master) that would best represent progress toward the identified business outcomes

@@ -2,9 +2,9 @@
 
 When you're defining your cloud business strategy, you should consider things like business impact, turnaround time, global reach, performance, and more. Here are key areas you'll need to focus on:
 
-- Define business justification: identify business value opportunities to then select the right technology.
+- Define business justification: Identify business value opportunities to then select the right technology.
 
-- Establish clear business outcomes: to drive transparency and engagement for your journey across the organization.
+- Establish clear business outcomes: Drive transparency and engagement for your journey across the organization.
 
 ## Define business justification
 
@@ -69,38 +69,39 @@ Cloud computing makes data backup, disaster recovery, and business continuity ea
 
 ## Establish clear business outcomes
 
-The most successful cloud adoption journeys start with a business outcome in mind, backed up by financial reasoning and support. A business outcome is a concise, defined, and observable result/change in business performance, supported by a specific measure.
+The most successful cloud adoption journeys start with a business outcome in mind, backed up by financial reasoning and support. A business outcome is a concise, defined, and observable result or change in business performance, captured by a specific measure.
 
-The chief financial officer (CFO) plays a key role in creating and landing a cloud adoption plan. The CFO can drive the value of migration and innovation and create a financial plan for adoption. The CFO can also work with the Cloud Strategy team to develop cost models that compare IT operations on-premises (in a datacenter) to operations in the cloud. These models should include key measurements to quantify business outcomes.
+| | |
+| ---| --- |
+| ![Icon of lightbulb](../media/lightbulb.png)| *An unexpected key player in creating and landing a cloud adoption plan is the chief financial officer (CFO). The chief financial officer (CFO) plays a key role in creating and landing a cloud adoption plan. The CFO can drive the value of migration and innovation and create a financial plan for adoption. The CFO can also work with the Cloud Strategy team to develop cost models that compare IT operations on-premises (in a datacenter) to operations in the cloud. These models should include key measurements to quantify business outcomes.*|
+|
 
-The Cloud Strategy team consists of business leaders from finance, IT infrastructure, and application groups. These teams can help with the cloud analysis and experimentation phase. For instance, a Cloud Strategy team could be driven by the CTO and consist of members of the enterprise architecture team, IT finance, senior technologists from various IT applications groups (HR, finance, and so on), and leaders from the infrastructure, security, and networking teams.
-
-The Cloud Strategy Team must lead the cloud analysis and planning phase. At the start of the cloud adoption analysis, the Cloud Strategy Team is responsible for reviewing business outcomes and for creating the business justification plan for possible use cases for cloud adoption. The Cloud Strategy Team is also responsible for building or facilitating the cloud rationalization process, selecting the first application, and managing subsequent prioritized backlogs. Finally, the Cloud Strategy Team should manage communications with key stakeholders and promote the cloud adoption journey success and learnings.
+The Cloud Strategy Team consists of business leaders from finance, IT infrastructure, and application groups, and must lead the cloud analysis and planning phase. In this phase, the Cloud Strategy Team is responsible for reviewing business outcomes and for creating the business justification plan for possible use cases for cloud adoption. The team is also responsible for building or facilitating the cloud rationalization process, selecting the first application, and managing subsequent prioritized backlogs. Finally, the Cloud Strategy Team should manage communications with key stakeholders and promote the cloud adoption journey success and learnings.
 
 Here are some tools to support you in your financial planning:
 
-- Total Cost of Ownership (TCO) Calculator:  Use the Azure TCO calculator to estimate the cost savings you can realize by migrating your application workloads to Azure.
+- **Total Cost of Ownership (TCO) Calculator** - Use the Azure TCO calculator to estimate the cost savings you can realize by migrating your application workloads to Azure.
 
-- Pricing calculator: Estimate your expected monthly bill by using our pricing calculator.
+- **Pricing calculator** - Estimate your expected monthly bill by using our pricing calculator.
 
-- Azure Cost Management: Use and manage Azure and other cloud resources through a multiple-cloud cost management solution.
+- **Azure Cost Management** - Use and manage Azure and other cloud resources through a multiple-cloud cost management solution.
 
 > [!TIP]
 > Links to the TCO calculator, pricing calculator, and cost management tools are available in the “Summary and resources” unit at the end of this module.
 
-Now that you have learned about defining your business outcomes and overall strategy for cloud adoption, let’s get started and create a plan for this journey.
-
 :::row:::
-![Icon of lightbulb](../media/key-takeaway.png)
+![Icon of key](../media/key-takeaway.png)
 :::column:::
 
-Here are the key points from this module:
+Here are the key points from this unit:
 
-- The key areas to focus on when defining your cloud business strategy are defining your business justification by identifying business value opportunities and selecting the right technology, and establishing clear business outcomes to drive transparency and engagement.
-
+- The key areas to focus on when developing your cloud business strategy are defining your business justification by identifying business value opportunities, selecting the right technology, and establishing clear business outcomes to drive transparency and engagement.
 - Some common business justifications for cloud adoption include cost, scale, productivity, and reliability.
-
-- Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain applications and functions off-premises to cloud-delivered services. Microsoft provides several tools to support you in your financing planning: the Total Cost of Ownership Calculator, the Pricing Calculator, and Azure Cost Management. 
+- Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain applications and functions off-premises to cloud-delivered services.
+- Microsoft provides several tools to support you in your financial planning: the Total Cost of Ownership Calculator, the Pricing Calculator, and Azure Cost Management.
+- Now that you have learned about defining your business outcomes and overall strategy for cloud adoption, let’s get started and create a plan for this journey.
 
 :::column-end:::
 :::row-end:::
+
+Now that you have learned about defining your business outcomes and overall strategy for cloud adoption, let’s get started and create a plan for this journey.
