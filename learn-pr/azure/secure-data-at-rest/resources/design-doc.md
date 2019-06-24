@@ -39,12 +39,12 @@ Identify the data used in your organization and ensure it's stored securely on A
 
 Identify the subtasks of *Secure your data at rest with encryption on Azure*
 
-| Subtask                                                     | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet?           | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ----------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| Data Classification & Protecting Confidential Data          | need to identify and classify  data                          | Knowledge Check                                          | Identify the types of data your organization               | yes                                                          |
-| Securing Data at Rest with Azure Storage Service Encryption | select the proper encryption method and/or service to protect this data | Knowledge Check                                          | Identify the encryption capabilities for services on Azure | yes                                                          |
-| Azure Key Vault & managed identities for Azure resources    | select the proper encryption method and/or service to protect this data | Knowledge Check                                          | Identify the encryption capabilities for services on Azure | yes                                                          |
-| Encryption in transit (SSL/TLS)                             | select the proper encryption method and/or service to protect this data | Knowledge Check                                          | Identify the encryption capabilities for services on Azure | yes                                                          |
+| Subtask                                                   | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet?           | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
+| --------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| Classify your data and protect confidential information   | need to identify and classify  data                          | Knowledge Check                                          | Identify the types of data your organization               | yes                                                          |
+| Secure data at rest with Azure Storage Service Encryption | select the proper encryption method and/or service to protect this data | Knowledge Check                                          | Identify the encryption capabilities for services on Azure | yes                                                          |
+| Secure data at rest in Azure SQL and Cosmos DB            | select the proper encryption method and/or service to protect this data | Knowledge Check                                          | Identify the encryption capabilities for services on Azure | Yes                                                          |
+| Keep your keys and secrets safe using Azure Key Vault     | select the proper encryption method and/or service to protect this data | Knowledge Check                                          | Identify the encryption capabilities for services on Azure | yes                                                          |
 
 ## Outline the units
 
@@ -52,7 +52,7 @@ Identify the subtasks of *Secure your data at rest with encryption on Azure*
 
 *A manufacturing organization is moving several systems to Azure. They are storing a variety of data within these systems, such as customer details, financial information, and intellectual property. They need to correctly identify and classify this data, to ensure they secure it to meet business and regulatory requirements. Once this data is classified, they need to select the proper encryption method and/or service to protect this data.*
 
-2. **Data Classification & Protecting Confidential Data**
+2. **Classify your data and protect confidential information.**
 
 To understand what level of encryption is required for your product you need to classify the data to understand its risk. By the end of this unit, you will be able to: 
 
@@ -100,7 +100,7 @@ Cover the following topics:
 
   
 
-3. **Securing Data at Rest with Azure Storage Service Encryption**
+3. **Secure data at rest with Azure Storage Service Encryption**
 
 You have an environment which is classified as confidential. It is your company's policy to encrypt data at rest be it in the cloud or on-premises or personal device.  By the end of this unit, you will be able to:
 
@@ -144,7 +144,7 @@ Cover the following topics
 - IaaS: Is Azure Disk Encryption a replacement or additional layer of security?
 - IssS: Is Azure Disk Encryption enabled as default?
 
-4. **Securing your Azure SQL and Cosmos DB data at rest.**
+4. **Secure data at rest in Azure SQL and Cosmos DB**
 
 In order to comply with regulations, your company wants to ensure that all data in all of its databases is encrypted once it has been stored in Azure.  
 
@@ -170,7 +170,7 @@ In order to comply with regulations, your company wants to ensure that all data 
    	1.  How would you enable encryption at rest for your Azure SQL DB?
    	2.  Which objects are encrypted at rest in an Azure SQL DB? 
 
-5. **Using Azure Key Vault to keep your keys and secrets safe**
+5. **Keep your keys and secrets safe using Azure Key Vault**
 
 Your company's Intellectual Property is it's application source code.  As such, it is classified as confidential and you need to ensure no credentials or certificates are hard coded or shared into source code management products. By the end of this unit you will be able to:
 
