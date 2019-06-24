@@ -2,7 +2,7 @@ With your database created, you'll now create a web application that the academi
 
 To save time, you'll work with a pre-existing web application. You'll add the code that connects this application to your database. The following diagram shows the primary components of this application:
 
-![High-level view of the structure of the application](../media/5-diagram.png)
+![High-level view of the structure of the application](../media/5-diagram.svg)
 
 You'll perform the following tasks:
 
