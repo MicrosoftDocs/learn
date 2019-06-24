@@ -140,7 +140,7 @@ Unsupported, misaligned or too old applications on premises are too expensive to
 :::row:::
 :::column:::
 
-Sometimes, the best approach available is to simply replace the current application with a hosted application that meets all functionality required, in the cloud.Sometimes, the best technology and approach available is to simply replace the current application with a hosted application that meets all functionality required, in the cloud.  
+Sometimes, the best approach available is to simply replace the current application with a hosted application that meets all functionality required in the cloud.
 
 :::column-end:::
 :::column:::
@@ -152,7 +152,7 @@ Sometimes, the best approach available is to simply replace the current applicat
 :::column-end:::
 :::row-end:::
 
-Because  every application is unique, there’s no single set of steps to follow for cloud rationalization. That's why, so it's important to conduct  Aa Workload Assessment helps to identify which applications would require minor changes in code, and which need a complete redesign to make them cloud-ready. Most importantly, dDuring this important assessment, each application is assessed examined against the broader portfolio, prioritizing each application’s value and creating a plan for each one’s future use.  
+Because  every application is unique, there’s no single set of steps to follow for cloud rationalization. A Workload Assessment helps to identify which applications would require minor changes in code, and which need a complete redesign to make them cloud-ready. During this important assessment, each application is assessed examined against the broader portfolio, prioritizing each application’s value and creating a plan for each one’s future use.  
 
 > [!TIP]
 > To learn more about Workload Assessment, visit the “Approaches to digital estate planning” document linked in the “Summary and resources” unit at the end of this module.
@@ -163,7 +163,7 @@ To remove rationalization as a roadblock to migration, the Cloud Adoption Framew
 
 | | |
 | --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *The traditional approach to rationalization attempts to boil the ocean. Fortunately, a plan for every application is often not required to start a transformation journey. In an incremental model, the Power of 10 provides a good starting point. In this model, select the first ten applications to be migrated. Those ten applications should contain a mixture of simple and complex applications.*|
+| ![Icon of lightbulb](../media/lightbulb.png)| *The traditional approach to rationalization attempts to boil the ocean. Fortunately, a plan for every application is often not required to start a transformation journey. In an incremental model, the **Power of 10** provides a good starting point. In this model, select the first ten applications to be migrated. Those ten applications should contain a mixture of simple and complex applications.*|
 |
 
 ## Create your cloud adoption plan
@@ -195,8 +195,8 @@ Key steps to build this plan are:
 Here are the key points from this unit:
 
 - There are two main actions during the Plan phase:
-    - Rationalizing your digital estate
-    - Creating your cloud adoption plan
+   - Rationalizing your digital estate
+   - Creating your cloud adoption plan
 
 - In the Planning phase, there are five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, and Replace. During this process, it is recommended to manage this process "incrementally."
 

@@ -51,7 +51,7 @@ Enforce and automate policies and security settings that help you follow applica
 - **Stay current with Azure** - Track product updates so you can take a proactive approach to change management.
 
 > [!TIP]
-> For an interactive experience, view *the environment* readiness content in the Azure portal. Go to the Azure Quickstart Center in the Azure portal and select Introduction to Azure Setup, then follow the step-by-step instructions.
+> For an interactive experience, view the environment readiness content in the Azure portal. Go to the **Azure Quickstart Center** in the Azure portal and select **Introduction to Azure Setup**, then follow the step-by-step instructions.
 
 Now that you know how to prepare your environment, you need to define the order or prioritization of all applications you would like to deploy in the cloud.
 

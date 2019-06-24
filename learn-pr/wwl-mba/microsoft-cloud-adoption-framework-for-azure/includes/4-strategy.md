@@ -2,9 +2,9 @@
 
 When you're defining your cloud business strategy, you should consider things like business impact, turnaround time, global reach, performance, and more. Here are key areas you'll need to focus on:
 
-- Define business justification: Identify business value opportunities to then select the right technology.
+- **Define business justification**: Identify business value opportunities to then select the right technology.
 
-- Establish clear business outcomes: Drive transparency and engagement for your journey across the organization.
+- **Establish clear business outcomes**: Drive transparency and engagement for your journey across the organization.
 
 ## Define business justification
 
@@ -99,7 +99,6 @@ Here are the key points from this unit:
 - Some common business justifications for cloud adoption include cost, scale, productivity, and reliability.
 - Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain applications and functions off-premises to cloud-delivered services.
 - Microsoft provides several tools to support you in your financial planning: the Total Cost of Ownership Calculator, the Pricing Calculator, and Azure Cost Management.
-- Now that you have learned about defining your business outcomes and overall strategy for cloud adoption, let’s get started and create a plan for this journey.
 
 :::column-end:::
 :::row-end:::
