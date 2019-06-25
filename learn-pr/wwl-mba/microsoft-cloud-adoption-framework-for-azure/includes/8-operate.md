@@ -310,7 +310,6 @@ Here are the key points from this unit:
 
 - As your organization moves or deploys new applications to the cloud, it’s important to consider these aspects of operating a cloud platform:
 
-
   - Defining governance solutions for your cloud environment
   - Managing your cloud environment
 
