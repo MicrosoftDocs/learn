@@ -1,21 +1,20 @@
-How the cloud can advance your business strategy depends on your situation. The cloud delivers fundamental technology benefits that can aid in executing multiple business strategies. Using cloud-based approaches can improve basic business agility, reduce costs, accelerate time to market, and even allow businesses to quickly expand into new markets.
+How the cloud can advance your business strategy depends on your situation. The cloud delivers fundamental technology benefits that can aid in executing multiple business strategies. Using cloud-based approaches can improve business agility, reduce costs, accelerate time to market, and even allow businesses to quickly expand into new markets.
 
-However, as your organization moves forward in your cloud adoption journey, proper planning is key to your success. Since your organization has already technology investments you must start by understanding your current state, and then defining a prioritization plan for your cloud journey. In this stage, focus on two main actions:
+As your organization moves forward in your cloud adoption journey, proper planning is key to your success. Since your organization already has technology investments you must start by understanding your current state, and then developing a prioritization plan for your cloud journey.
 
-- **Rationalize your digital estate**: understand the organization's current digital estate to maximize return and minimize risks, by running a Workload Assessment.
+In this stage, focus on two main actions:
 
-- **Create your cloud adoption plan**: define a plan where prioritized workloads are defined and aligned with business outcomes.
+- **Rationalize your digital estate** - Understand the organization's current digital estate to maximize return and minimize risks by running a Workload Assessment.
+
+- **Create your cloud adoption plan** - Develop a plan where prioritized workloads are defined and aligned with business outcomes.
 
 ## Rationalize your digital estate
 
-A digital estate is the collection of IT assets that power business processes and supporting operations. That all starts with an inventory and measurement of the digital assets the organization owns today. Then, proper evaluation of such assets to determine the best way to migrate or modernize each asset to the cloud is what’s called ‘cloud rationalization’.
+A digital estate is the collection of IT assets that power business processes and supporting operations.  To begin “cloud rationalization” of the digital estate, start with an inventory of all the digital assets the organization owns today. Then, evaluate each asset to determine the best way to migrate or modernization each component to the cloud.
 
-You may also hear cloud rationalization referred to as the “Five Rs”. During this process, it is recommended to manage this process ‘incrementally’, application by application, and not making too broad or too early decisions across the entire Application Portfolio.
+During this process, we recommend that you manage this process “incrementally,” application by application, and don’t make decisions too broadly or too early across the entire application portfolio.
 
-There are 5 options for cloud rationalization:
-
-![Diagram showing the five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, Replace](../media/ic-caf-1.jpg)
-
+You may also hear cloud rationalization referred to as the “Five Rs.” There are five options for cloud rationalization:
 
 :::row:::
 :::column:::
@@ -114,7 +113,7 @@ When aging applications are not compatible with the cloud, they may need to be r
 :::row:::
 :::column:::
 
-Unsupported, misaligned or too old applications on premises are too expensive to carry forward, a new code based created to align with cloud-native approach could be the appropriate and efficient path to follow.
+Unsupported, misaligned, or out of date on-premises applications may be too expensive to carry forward. A new code base with a cloud-native design may be the most appropriate and efficient path.
 
 :::column-end:::
 :::column:::
@@ -138,7 +137,7 @@ Unsupported, misaligned or too old applications on premises are too expensive to
 :::row:::
 :::column:::
 
-Sometimes, the best technology and approach available is to simply replace the current application with a hosted application that meets all functionality required, in the cloud.
+Sometimes, the best approach available is to simply replace the current application with a hosted application that meets all functionality required in the cloud.
 
 :::column-end:::
 :::column:::
@@ -150,26 +149,27 @@ Sometimes, the best technology and approach available is to simply replace the c
 :::column-end:::
 :::row-end:::
 
-Collectively, these 5 Rs of rationalization can be applied to a digital estate to make rationalization decisions regarding the future state of each application.
+Because every application is unique, there’s no single set of steps to follow for cloud rationalization. A Workload Assessment helps to identify which applications would require minor changes in code, and which need a complete redesign to make them cloud-ready. During this important assessment, each application is examined against the broader portfolio, prioritizing each application’s value and creating a plan for each one’s future use.  
 
-Because every application is unique, there’s no single set of steps to follow for cloud rationalization. That's why it's important to conduct a Workload Assessment to identify which applications would require minor changes in code, and which need a complete redesign to make them cloud-ready. Most importantly, during this assessment each application is assessed against the broader portfolio, prioritizing each application’s value and creating a plan for each one’s future use. Based on that information wise decisions can be made about each workload and the investments to be made in each. Choosing the right approach for the various workloads in an Application Portfolio can help extract maximum value from cloud-enabled and innovative technologies.
+> [!TIP]
+> To learn more about Workload Assessment, visit the “Approaches to digital estate planning” document linked in the “Summary and resources” unit at the end of this module.
 
 ## Remove rationalization roadblocks
 
-Full cloud rationalization (choosing one of the five Rs) requires a combination of quantitative analysis (numbers-based analysis) and qualitative analysis (factor in human intelligence and collective, organizational knowledge). Qualitative analysis is the risky part of rationalization, as it requires alignment of number of stakeholders. Those stakeholders will have different perspectives on the priority, time commitment, and importance of the rationalization effort, especially during early planning. Securing time for the necessary feedback from those stakeholders commonly creates time consuming roadblocks.
+To remove rationalization as a roadblock to migration, the Cloud Adoption Framework suggests an incremental rationalization approach. In this approach, the five Rs are initially reduced to one of two Rs. If the cloud adoption motivations are aligned to Migration motivations, a Rehost rationalization is applied to all workloads. If motivations are aligned to Innovation motivations, a refactor rationalization is applied.
 
-To remove rationalization as a roadblock to migration, the CAF methodology suggests an Incremental Rationalization approach. In this approach, the five Rs are initially reduced to one of two Rs. If the cloud adoption motivations are aligned to Migration motivations, a Rehost rationalization is applied to all workloads. If motivations are aligned to Innovation motivations, a refactor rationalizations is applied. Having one initial rationalization allows for initial business planning based on a documented assumption that will later be tested. During the Migration implementation an assessment process will evaluate these assumptions on a per workload basis. The work of rationalization still has to happen, but it is treated like a late-bound technical decision to remove this sticky decision as a roadblock to migration.
+Having one initial rationalization allows for initial business planning based on a documented assumption that will later be tested.
 
-> [!TIP]
-> The traditional approach to rationalization attempts to boil the ocean. Fortunately, a plan for every application is often not required to start a transformation journey. In an incremental model, the Power of 10 provides a good starting point. In this model, select the first ten applications to be migrated. Those ten applications should contain a mixture of simple and complex applications.
+| | |
+| --- | --- |
+| ![Icon of lightbulb](../media/lightbulb.png)| *The traditional approach to rationalization attempts to boil the ocean. Fortunately, a plan for every application is often not required to start a transformation journey. In an incremental model, the **Power of 10** provides a good starting point. In this model, select the first ten applications to be migrated. Those ten applications should contain a mixture of simple and complex applications.*|
+|
 
 ## Create your cloud adoption plan
 
-The cloud delivers fundamental technology benefits that can aid in executing multiple business strategies. Using cloud-based approaches can improve basic business agility, reduce costs, accelerate time to market, and even allow businesses to quickly expand into new markets. To take advantage of the cloud's potential, it is important to start by documenting the business strategy in a way that is understandable to cloud technicians and also palatable to business stakeholders.
+While developing a business justification model for your organization's cloud journey, it’s important to identify business outcomes that can be mapped to specific cloud capabilities and business strategies to reach the desired state of transformation. Documenting all these outcomes and business strategies will serve as the foundation for your organization’s cloud adoption plan.
 
-**Creating a financial model that accurately represents the full business value of any cloud transformation can be complicated. Financial models and business justifications tend to vary between different organizations.**
-
-While developing a business justification model for your organization's cloud journey, it’s important to identify business outcomes that can then be mapped to specific cloud capabilities and business strategies to reach the desired state of transformation. Then, documenting all these outcomes and business strategies will served as the foundation for your organization’s cloud adoption plan. Key steps to build this plan are:
+Key steps to build this plan are:
 
 - Review sample business outcomes. Identify any business outcomes that directly align with the targeted business strategy. Document those in the provided business outcome template to share with internal partners during the transformation journey.
 
@@ -182,25 +182,27 @@ While developing a business justification model for your organization's cloud jo
 > [!TIP]
 > Links to sample business outcomes, business outcome template, learning metrics, financial model and the digital estate document are available in the “Summary and resources” unit at the end of this module.
 
-
 | | |
 | --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *Now that you know how to rationalize your digital estate and align it with your business outcomes and financial expectations—are you ready to take the next step in your cloud adoption journey? (1) Prepare your people with proper technical training and get ready to adjust your business processes to the cloud. (2) Define your digital end estate and prioritize applications to get started.*|
+| ![Icon of lightbulb](../media/lightbulb.png)| *Now that you know how to rationalize your digital estate and align it with your business outcomes and financial expectations, are you ready to take the next step in your cloud adoption journey? (1) Prepare your people with proper technical training and get ready to adjust your business processes to the cloud. (2) Define your digital end estate and prioritize applications to get started.*|
 |
-
-Let’s talk next about preparing your organization, your business processes and your environment for your cloud adoption journey.
 
 :::row:::
 ![Icon of lightbulb](../media/key-takeaway.png)
 :::column:::
 
-Here are the key points from this module:
+Here are the key points from this unit:
 
-- There are two main actions during the Plan phase: rationalizing your digital estate, and creating your cloud adoption plan.
+:::column-end:::
+:::row-end:::
+
+- There are two main actions during the Plan phase:
+
+  - Rationalizing your digital estate
+  - Creating your cloud adoption plan
 
 - In the Planning phase, there are five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, and Replace. During this process, it is recommended to manage this process "incrementally."
 
 - The cloud delivers fundamental technology benefits that can aid in executing multiple business strategies. Using cloud-based approaches can improve basic business agility, reduce costs, accelerate time to market, and even allow businesses to quickly expand into new markets.
 
-:::column-end:::
-:::row-end:::
+Let’s talk next about preparing your organization, your business processes, and your environment for your cloud adoption journey.
