@@ -2,7 +2,7 @@ Let's start with a few definitions and a quick tour through Azure Kubernetes Ser
 
 ## What is a container?
 
-A *container* is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. Containers allow us to split up monolithic applications into individual services that makes up the solution. This allows us to then deploy these separate services via containers.
+A *container* is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. Containers allow us to split up monolithic applications into individual services that makes up the solution. This rearchitecting of our application allows us to then deploy these separate services via containers.
 
 ![Image of a server or application replicated as containers for cloud deployment](../media-draft/2-container.png)
 
@@ -14,7 +14,7 @@ Suppose your fleet management solution included three major applications:
 
 - A data processing service that collects and processes information sent from tracked vehicles.
 
-- A MSSQL database for storing tracking and user information captured from the website.
+- An MSSQL database for storing tracking and user information captured from the website.
 
 You realize that you have to scale out your solution to meet customer demand. One option is to deploy a new virtual machine (VM) for each application and then deploy the applications to the VMs. However, doing so will make you responsible for the management of each additional VM. For example, you’ll have to make sure the correct operating system (OS) versions and dependencies for each application is installed and configured. You also must make sure you're installing and upgrading the correct versions of the applications. If there are errors, you have to make sure you can roll back the installation with the least amount of disruption to your solution.
 
@@ -50,7 +50,7 @@ These types of questions justify some sort of system to help you manage your con
 
 ![Image of replicated servers as multiple containers in a Kubernetes cluster](../media-draft/2-deploy-mutile-containers-k8s.png)
 
-Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides us with declarative configuration to orchestrate containers in different compute environments. This orchestration gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
+Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides us with declarative configuration to orchestrate containers in different compute environments. This orchestration platform gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
 
 Kubernetes allows you to view your data center as one large computer. We don't worry about how and where we deploy our containers, only about deploying and scaling our applications as needed.
 
@@ -73,7 +73,7 @@ With all the benefits you receive with Kubernetes, keep in mind that you're resp
 
 ## What is Azure Kubernetes Service?
 
-![Image of replicated servers as multiple containers in a AKS Kubernetes cluster](../media-draft/2-deploy-AKS.png)
+![Image of replicated servers as multiple containers in an AKS Kubernetes cluster](../media-draft/2-deploy-AKS.png)
 
 Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment and makes it simple to deploy and managed containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. The Kubernetes cluster master is managed by Azure and is free. You manage the agent nodes in the cluster, and only pay for the VMs your nodes are running on.
 

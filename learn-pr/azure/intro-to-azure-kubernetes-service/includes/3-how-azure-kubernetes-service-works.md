@@ -22,7 +22,7 @@ Unless specified, the Azure service creation workflow creates a Kubernetes clust
 
 ![Image showing combined services used to accelerate development and deployment](../media-draft/3-development-accelerate.png)
 
-AKS supports the Docker image format which means that you can use any development environment to create a workload, package the workload as a container and deploy the container as a Kubernetes pod.
+AKS supports the Docker image format that means that you can use any development environment to create a workload, package the workload as a container and deploy the container as a Kubernetes pod.
 
 Here you use the standard Kubernetes command-line tools or the Azure CLI to manage your deployments. The support for the standard Kubernetes tools ensures that you don't need to change your current workflow to support an existing Kubernetes migration to AKS.
 
@@ -37,7 +37,7 @@ Azure Dev Spaces helps your development teams be more productive on Kubernetes a
 - Minimize the local dev machine setup for each team member as developers can work directly in AKS
 - Rapidly iterate and debug code directly in Kubernetes using Visual Studio or Visual Studio Code
 - Generate Docker and Kubernetes configuration-as-code assets to use from development through to production
-- Develop your code in isolation, and do end-to-end testing with other components without replicating or mocking up dependencies
+- Develop your code in isolation, and do integrated testing with other components without replicating or mocking up dependencies
 
 > [!IMPORTANT]
 > Azure Dev Spaces is supported only by AKS clusters in specific regions.
@@ -52,7 +52,7 @@ With Azure DevOps Projects you can:
 - Create an Azure Application Insights resource for monitoring an AKS cluster
 - Enable Azure Monitor for containers to monitor performance for the container workloads on an AKS cluster
 
-You can add richer DevOps capabilities by extend the default configured DevOps pipeline. For example, you can add approvals before deploying, provision additional Azure resources, run scripts or upgrade workloads.
+You can add richer DevOps capabilities by extending the default configured DevOps pipeline. For example, you can add approvals before deploying, provision additional Azure resources, run scripts or upgrade workloads.
 
 ## Azure Service Integration
 
