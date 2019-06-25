@@ -426,7 +426,7 @@ The application can now retrieve the data, now let's update the application to d
 
     This code iterates through the rows in the model, and outputs the data in each field.
 
-1. The completed **Index.cshtml** file should look contain the following code.
+1. The completed **Index.cshtml** file should contain the following code.
 
     ```cshtml
     @page

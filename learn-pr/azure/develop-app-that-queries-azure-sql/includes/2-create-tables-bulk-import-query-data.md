@@ -14,7 +14,7 @@ If you create a new server, you'll be asked to specify a server admin username a
 
 Each database server is protected by a firewall, to block access to potentially malicious processes. You can open the firewall to enable access by other Azure services, and you can selectively enable access to other computers based on their IP address or address range. Azure SQL Database also provides advanced data security, enabling you to specify the sensitivity of data in individual columns in tables, assess the vulnerability of your databases and take the necessary remediation steps, and send alerts when a threat is detected.
 
-You can provision resources using the virtual core (vCore) model, which specifies the resources (memory, I/O, and CPU) to allocate, and enables you to scale compute and storage resources independently. Alternatively, you can assign resources in terms of Database Transaction Units (DTUs). A DTU is a measure of the calibrated cost of the resources required to perform a benchmarked transaction, defined by Microsoft.
+You can provision resources using the virtual core (vCore) model, which specifies the resources (memory, I/O, and CPU) to allocate, and enables you to scale the compute and storage resources independently. Alternatively, you can assign resources in terms of Database Transaction Units (DTUs). A DTU is a measure of the calibrated cost of the resources required to perform a benchmarked transaction, defined by Microsoft.
 
 If you have a number of databases, and the resource requirements of these databases fluctuate, you can use SQL elastic pool. SQL elastic pool provides a pool of resources that can be shared between pooled databases as demand requires.
 
@@ -81,7 +81,7 @@ yet more text,87
 a final bit of text,33
 ```
 
-The first line contains field names, which aren't the same as the columns in the table. The data is comma-separated, with each row terminated by a newline character. Additionally, the order of the columns may be different from that in the table. In this example, the first column in the table is numeric and the second column is a string, as shown below.
+The first line contains field names, which aren't the same as the columns in the table. The data is comma-separated, with each row terminated by a newline character. Additionally, the order of the columns in the file may be different from the table. In this example, the first column in the table is numeric and the second column is a string, as shown below.
 
 ```SQL
 CREATE TABLE MyTable
