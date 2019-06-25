@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn-wwl.azure-in-action.5-knowledge-check
+uid: learn-wwl.azure-in-action.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -12,7 +12,7 @@ metadata:
   ROBOTS:   NOINDEX 
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-knowledge-check.md)] 
+  [!include[](includes/4-knowledge-check.md)] 
 quiz:
   questions:
   - content: "What is the name of the Azure tool that gathers metadata from on-premises servers to assist with cloud migration and operation recommendations?"
@@ -29,21 +29,7 @@ quiz:
     - content: "Azure Site Recovery"
       isCorrect: false
       explanation: "Incorrect. Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking down the servers by replicating those VMs from a primary site (on-premises) to a secondary location (Azure)."
-  - content: "What is the name of the Azure feature that captures application performance, once the application is released?"
-    choices:
-    - content: "Azure Load Balancer"
-      isCorrect: false
-      explanation: "Incorrect. Azure Load Balancer is a service that is used post-migration to keep servers from bogging down, allowing a smooth flow of traffic. It does not capture application performance."
-    - content: "Azure Site Recovery"
-      isCorrect: false
-      explanation: "Incorrect. Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking down the servers by replicating those VMs from a primary site (on-premises) to a secondary location (Azure), but it does not capture application performance."
-    - content: "Azure Boards"
-      isCorrect: false
-      explanation: "Incorrect. Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. It does not capture application performance."
-    - content: "Application Insights"
-      isCorrect: true
-      explanation: "Correct. The Application Insights feature captures application performance and detects application issues in real time. Application Insights allows a user to monitor the application and receive alerts when the application becomes unavailable, experiences failures, or suffers from performance issues."
-  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many benefits available. Which of the following choices is an option that can be configured by Azure App Service?"
+  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many available benefits. Which of the following choices is an option that can be configured by Azure App Service?"
     choices:
     - content: "Application authentication"
       isCorrect: true
@@ -85,18 +71,4 @@ quiz:
     - content: "Application Insights"
       isCorrect: false
       explanation: "Incorrect. Application Insights allows an administrator to monitor application performance in real time, but does not offer a way to modernize an application."
-  - content: "Which Azure feature will help your organization track what their teams are working on?"
-    choices:
-    - content: "Azure Load Balancer"
-      isCorrect: false
-      explanation: "Incorrect. Azure Load Balancer is a service that is used post-migration to keep servers from bogging down, allowing a smooth flow of traffic."
-    - content: "Azure Boards"
-      isCorrect: true
-      explanation: "Correct. Azure Boards allows you to track your work with Kanban boards, backlogs, team dashboards, and custom reporting. You'll have instant visibility into the projects your teams are working on so everyone involved can be more productive."
-    - content: "Application Insights"
-      isCorrect: false
-      explanation: "Incorrect. The Application Insights feature captures application performance and detects application issues in real time."
-    - content: "Azure Pipelines"
-      isCorrect: false
-      explanation: "Incorrect. Azure Pipelines enables you to continuously build, test, and deploy to any platform or cloud."
     

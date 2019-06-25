@@ -1,4 +1,4 @@
-﻿This module has given you an opportunity to see in Azure in action, showcasing how Azure enables organizations to move workloads to the cloud without changes to the production code of their line-of-business applications. The ability to demo the capabilities and benefits of Azure can highlight the numerous options Azure offers for innovation and modernization and aid in the evaluation of a move to the cloud.
+﻿This module has given you an opportunity to see Azure in action, showcasing how Azure enables organizations to move workloads to the cloud without changes to the production code of their line-of-business applications. The ability to demo the capabilities and benefits of Azure can highlight the numerous options Azure offers for innovation and modernization and aid in the evaluation of a move to the cloud.
 
 If you feel ready to learn how to present a demo, review the links below to find more demos that show Azure in action.
 
@@ -8,9 +8,9 @@ In this module you have seen:
 
 - A demo showing how to modernize an application using Azure Logic Apps.
 
-- A demo that shows automation and integration benefits of Azure DevOps.
-
 - The value of Azure illustrated by these demos.
+
+If you feel ready to learn how to present a demo, review the links below to find more demos that show Azure in action.
 
 ## Key takeaways
 
@@ -53,9 +53,5 @@ Use these resources to discover more.
 
 ### Demo - Modernizing .NET Applications
 
-- [Modernizing .NET Apps](https://github.com/Microsoft/TailwindTraders/tree/master/Documents/DemoScripts/Modernizing%20.NET%20Apps) demo
-
-### Demo - Azure DevOps
-
-- [GitHub-AzureDevOps](https://github.com/hsachinraj/GitHub-AzureDevOps/blob/master/readme.md) demo
+- For detailed step-by-step instructions and demo environment, see the [Modernizing .NET Apps](https://github.com/Microsoft/TailwindTraders/tree/master/Documents/DemoScripts/Modernizing%20.NET%20Apps) demo
 
