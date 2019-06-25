@@ -54,6 +54,9 @@ Some common migration and innovation triggers include:
 
 Here are the key points from this unit:
 
+:::column-end:::
+:::row-end:::
+
 - The Microsoft Cloud Adoption Framework for Azure enables an actionable cloud journey that rapidly delivers on the desired business outcomes.
 
 - There are three main stages of the Cloud Adoption Framework: Plan, Ready, and Adopt.
@@ -64,7 +67,5 @@ Here are the key points from this unit:
   - Migration triggers (such as cost saving and operations optimization)
   - Innovation triggers (such as scaling to meet market or geographical demands)
 
-:::column-end:::
-:::row-end:::
 
 You’ve just learned about the motivation triggers that begin a cloud adoption journey for organizations. Next, let’s talk about defining the strategy for your cloud adoption journey.

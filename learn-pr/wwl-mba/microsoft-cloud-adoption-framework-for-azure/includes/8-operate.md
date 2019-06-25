@@ -310,8 +310,8 @@ Here are the key points from this unit:
 
 - As your organization moves or deploys new applications to the cloud, it’s important to consider these aspects of operating a cloud platform:
 
-  - Defining governance solutions for your cloud environment
-  - Managing your cloud environment
+    - Defining governance solutions for your cloud environment
+    - Managing your cloud environment
 
 - The Cloud Adoption Framework governance model identifies key areas of importance, each relating to different types of risks the company must address as it adopts more cloud services. There are five disciplines of cloud governance: cost management, security baseline, resource consistency, identity baseline, and deployment acceleration.
 

@@ -72,13 +72,13 @@ Implementing the first application is key to learning and testing with confidenc
 
 Here are the key points from this unit:
 
+:::column-end:::
+:::row-end:::
+
 - Cloud adoption is a strategic change that requires involvement from both business decision makers and end users, so when getting your organization ready for the cloud adoption journey, it is important to define skills and support readiness, and create your landing zone.
 
 - When defining skills and support readiness, create and implement a skills readiness plan to address current gaps, ensure people are ready for the change, and define support needs.
 
 - Creating your landing zone is setting up a migration target in the cloud to handle prioritized applications. When implementing any landing zones, refer to the Azure Foundations considerations categories of hosting and governance.
-
-:::column-end:::
-:::row-end:::
 
 You’ve just learned how critical readying your people, your business processes, and your environment are to a successful cloud adoption journey. Next, you'll learn about implementing your cloud adoption plan, either due to a migration or innovation path.

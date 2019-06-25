@@ -189,6 +189,9 @@ Modern approaches to infrastructure deployment, operations, and governance are r
 
 Here are the key points from this unit:
 
+:::column-end:::
+:::row-end:::
+
 - Cloud migration is the process of moving existing digital assets to a cloud platform. The Cloud Adoption Framework separates migration into two areas of focus:
 
   - Migration preparation
@@ -198,8 +201,4 @@ Here are the key points from this unit:
 
 - Modernization and innovation in the IT portfolio create tighter alignment with DevOps, accelerating innovations across the digital estate and application portfolio.
 
-:::column-end:::
-:::row-end:::
-
 Now that you have learned how to plan, get ready, and actually start deploying your first applications to the cloud, let’s talk about operating in the cloud.
-

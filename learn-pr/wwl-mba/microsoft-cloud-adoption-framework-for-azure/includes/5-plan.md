@@ -193,6 +193,9 @@ Key steps to build this plan are:
 
 Here are the key points from this unit:
 
+:::column-end:::
+:::row-end:::
+
 - There are two main actions during the Plan phase:
 
   - Rationalizing your digital estate
@@ -201,8 +204,5 @@ Here are the key points from this unit:
 - In the Planning phase, there are five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, and Replace. During this process, it is recommended to manage this process "incrementally."
 
 - The cloud delivers fundamental technology benefits that can aid in executing multiple business strategies. Using cloud-based approaches can improve basic business agility, reduce costs, accelerate time to market, and even allow businesses to quickly expand into new markets.
-
-:::column-end:::
-:::row-end:::
 
 Let’s talk next about preparing your organization, your business processes, and your environment for your cloud adoption journey.
