@@ -99,8 +99,11 @@ Here are the key points from this unit:
 :::row-end:::
 
 - The key areas to focus on when developing your cloud business strategy are defining your business justification by identifying business value opportunities, selecting the right technology, and establishing clear business outcomes to drive transparency and engagement.
+
 - Some common business justifications for cloud adoption include cost, scale, productivity, and reliability.
+
 - Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain applications and functions off-premises to cloud-delivered services.
+
 - Microsoft provides several tools to support you in your financial planning: the Total Cost of Ownership Calculator, the Pricing Calculator, and Azure Cost Management.
 
 Now that you have learned about defining your business outcomes and overall strategy for cloud adoption, let’s get started and create a plan for this journey.
