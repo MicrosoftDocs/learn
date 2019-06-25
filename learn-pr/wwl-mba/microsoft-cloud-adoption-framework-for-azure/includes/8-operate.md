@@ -305,6 +305,9 @@ At the highest stage of evolution, the team partners with business stakeholders 
 
 Here are the key points from this unit:
 
+:::column-end:::
+:::row-end:::
+
 - As your organization moves or deploys new applications to the cloud, it’s important to consider these aspects of operating a cloud platform:
 
   - Defining governance solutions for your cloud environment
@@ -313,10 +316,5 @@ Here are the key points from this unit:
 - The Cloud Adoption Framework governance model identifies key areas of importance, each relating to different types of risks the company must address as it adopts more cloud services. There are five disciplines of cloud governance: cost management, security baseline, resource consistency, identity baseline, and deployment acceleration.
 
 - The goal of the Cloud Adoption Framework Operate methodology is to maximize ongoing business returns by creating balance between business stability and cloud operations costs.
-
-
-
-:::column-end:::
-:::row-end:::
 
 Next, let's see what you've learned about the Cloud Adoption Framework with a knowledge check.
