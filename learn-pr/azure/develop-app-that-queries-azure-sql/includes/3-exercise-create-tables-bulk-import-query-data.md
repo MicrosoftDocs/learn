@@ -1,6 +1,6 @@
 The university currently stores their data in a series of comma-delimited files. You must migrate this data to Azure SQL Database.
 
-In this exercise, you'll create a database server, and a database, using the Azure SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll query the data using the Query Editor and the **sqlcmd** utility.
+In this exercise, you'll create a database server and a single database using the Azure SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll query the data using the Query Editor and the **sqlcmd** utility.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -320,4 +320,4 @@ With the database created, you can now create the tables that will store the dat
 
 1. At the `1>` prompt, type `exit` to close the **sqlcmd** utility.
 
-You have now created a database using Azure SQL Database. You created tables by using the Query Editor in the Azure portal. You used the **bcp** utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the Query Editor in the Azure portal, and from the **sqlcmd** utility in the Cloud Shell.
+You have now created a single database using Azure SQL Database. You created tables by using the Query Editor in the Azure portal. You used the **bcp** utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the Query Editor in the Azure portal, and from the **sqlcmd** utility in the Cloud Shell.

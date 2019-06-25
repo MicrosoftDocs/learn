@@ -1,16 +1,10 @@
-The university needs a location to store their data that is currently stored in text files. They would like to make their data relational, to improve the ability to query and access their data. They've selected Azure SQL database as the storage service for this data. Let's take a look at Azure SQL database, how to upload data to the database, and how to query data.
-
-<!-- Microsoft provides several tools that you can use to upload data to Azure SQL Database. These tools include SQL Server Integration Services (SSIS), the SQL `BULK INSERT` statement, and the Bulk Copy Program (bcp) utility. This unit focuses on `bcp` because it's convenient, and can be easily scripted if you are importing data into multiple tables.
-
-Before you can import data, you must first create a logical database server to host and manage the single database, so this unit also shows you how to create a this database server, and connect to this server to create and use the database.
-
-In this unit, you'll see how to create a single database, and add tables to a database using the Query Editor in the Azure portal. You'll also learn about using the `sqlcmd` utility from the command line to connect to a database. You'll see how to use the `bcp` utility to import data. Finally, you'll learn how to query the data, again using the Query Editor and the `sqlcmd` utility. -->
+The university needs a location to store their data that is currently stored in text files. They would like to make their data relational, to improve the ability to query and access their data. They've selected a single database in Azure SQL Database as the storage service for this data. Let's take a look at Azure SQL database, how to upload data to the database, and how to query data.
 
 ## Create a single database using the Azure portal
 
 Azure SQL Database is a relational database as a service (DBaaS) based on the latest stable version of Microsoft SQL Server Database Engine. SQL Database is a high-performance, easy to use, reliable, and secure database that you can use to build new applications, websites, and microservices in the programming language of your choice, without needing to manage infrastructure.
 
-You can create a single database through several methods, including Azure CLI, Azure PowerShell, and the Azure portal. When creating a single database in the portal, either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**. If you prefer to use the Azure CLI, you can create a server and database with the `az sql server create` and `az sql db create` commands. If you prefer PowerShell, there are a number of cmdlets available.
+You can create a single database through several methods, including Azure CLI, Azure PowerShell, and the Azure portal. When creating a single database in the portal, either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**. If you prefer to use the Azure CLI, you can create a server and database with the `az sql server create` and `az sql db create` commands. If you prefer to use Azure PowerShell, you can create a server and a database with the `New-AzSqlServer` and `New-AzSqlDatabase` commands.
 
 ![Screenshots of the Azure portal, showing the ways to create a new Azure SQL Database](../media/2-create-database.png)
 
@@ -18,7 +12,7 @@ When you create a single database, you'll be prompted for the server to use to m
 
 If you create a new server, you'll be asked to specify a server admin username and password. You use these credentials to connect to the server to perform administrative tasks and access the databases controlled by this server. Azure SQL Database also supports authentication using Azure Active Directory. However, you always have to create an admin account when first creating a new server, and then grant access to accounts stored in Azure Active Directory.
 
-Each database server is protected by a firewall, to block access to potentially malicious processes. You can open the firewall to enable access by other Azure services, and you can selectively enable access to other computers based on their IP address or address range. Azure SQL Server also provides advanced data security, enabling you to specify the sensitivity of data in individual columns in tables, assess the vulnerability of your databases and take the necessary remediation steps, and send alerts when a threat is detected.
+Each database server is protected by a firewall, to block access to potentially malicious processes. You can open the firewall to enable access by other Azure services, and you can selectively enable access to other computers based on their IP address or address range. Azure SQL Database also provides advanced data security, enabling you to specify the sensitivity of data in individual columns in tables, assess the vulnerability of your databases and take the necessary remediation steps, and send alerts when a threat is detected.
 
 You can provision resources using the virtual core (vCore) model, which specifies the resources (memory, I/O, and CPU) to allocate, and enables you to scale compute and storage resources independently. Alternatively, you can assign resources in terms of Database Transaction Units (DTUs). A DTU is a measure of the calibrated cost of the resources required to perform a benchmarked transaction, defined by Microsoft.
 
@@ -28,7 +22,7 @@ One final choice that you make when creating a database is to specify how data s
 
 ## Create tables
 
-You can create tables using the Query Editor in the Azure portal, or from the `sqlcmd` utility. In both cases, you define the table with the `CREATE TABLE` SQL command. Azure SQL Database supports primary keys, foreign keys, indexes, and triggers on tables. The following code shows an example that creates a pair of related tables and a non-clustered index. You can run these commands as a batch in the Query Editor or the `sqlcmd` utility.
+You can create tables using the Query Editor in the Azure portal, from the `sqlcmd` utility using the Cloud Shell, or using SQL Server Management Studio. Regardless of the tool you choose, you define the table with the `CREATE TABLE` SQL command. Azure SQL Database supports primary keys, foreign keys, indexes, and triggers on tables. The following code shows an example that creates a pair of related tables and a non-clustered index. You can run these commands as a batch in the Query Editor or the `sqlcmd` utility.
 
 ```SQL
 CREATE TABLE MyTable
@@ -74,7 +68,7 @@ The `bcp` utility is a command-line utility that you can use to import and expor
 2. An existing table in the destination database
 3. A *format file* that defines the format of the data and how to map this data to columns in the destination table
 
-The `bcp` utility is flexible, and the source data can be in almost any format. The format file indicates the layout of the data, whether it's binary or character-based, the type and length of each item, how the data is separated, and so on. The format file also specifies how to map each item in the file to a column in the table. It's important to define the contents of this file correctly, otherwise your data might not be imported, or data could be read into the wrong columns.
+The `bcp` utility is flexible, and the source data can be in almost any structured format. The format file indicates the layout of the data, whether it's binary or character-based, the type and length of each item, how the data is separated, and so on. The format file also specifies how to map each item in the file to a column in the table. It's important to define the contents of this file correctly, otherwise your data might not be imported, or data could be read into the wrong columns.
 
 Suppose you had the following data in a file named **mydata.csv**, and you want to import this data into the **MyTable** table shown earlier.
 
@@ -116,7 +110,7 @@ If you look at the contents of the **mytable.fmt** format file generated by this
 2       SQLCHAR             0       50      "\n"   2     MyColumn2                                SQL_Latin1_General_CP1_CI_AS
 ```
 
-The first line is the version of Azure SQL Database. The second line shows the number of columns identified in the source table. The final two lines indicate how to map data in the source file to these columns.
+The first line is the internal version number of Azure SQL Database. The second line shows the number of columns identified in the source table. The final two lines indicate how to map data in the source file to these columns.
 
 Both lines start with a number. These are the column numbers in the table. The second field (SQLCHAR) specifies that, when we use this format file to import data, each field in the source file contains character data. The `bcp` utility will attempt to convert this data to the appropriate type for the corresponding column in the table. The next field (12 and 50) is the length of the data in each column in the database; again, don't change this. The next items ("," and "\n") are the field terminators in the source file; "\n" represents the newline character. The next column is the field number in the source file. The penultimate field (MyColumn1 and MyColumn2) is the name of the column in the database, and the final field is the collation to use; this field only applies to character data in the database.
 

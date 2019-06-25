@@ -13,7 +13,7 @@ summary: Create a database on Azure SQL to store data for an application, and cr
 abstract: | 
   In this module, you will:
   - Create, configure, and populate a single database in Azure SQL Database
-  - Develop an ASP.NET application that queries this database
+  - Configure an ASP.NET application to query this database
 prerequisites: | 
   - Basic familiarity with relational databases
   - Basic knowledge of C#

@@ -10,13 +10,13 @@ The `System.Data.SqlClient` library is available in the **System.Data.SqlClient*
 
 ## Connect to a single database
 
-You create a database connection using a `SqlConnection` object. You provide a *connection string* that specifies the name and location of the database, the credentials to use, and other connection-related parameters. A typical database connection string looks like this:
+You create a database connection using a `SqlConnection` object. You provide a *connection string* that specifies the name and location of the database, the credentials to use, and other connection-related parameters. A typical connection string to a single database looks like this:
 
 ```Text
 Server=tcp:myserver.database.windows.net,1433;Initial Catalog=mydatabase;Persist Security Info=False;User ID=myusername;Password=mypassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
-You can find the connection string for a single database in the Azure portal, on the **Connection strings** page for your database.
+You can find the connection string for your single database in the Azure portal, on the **Connection strings** page for your database.
 
 The following code example shows how to create a `SqlConnection` object:
 

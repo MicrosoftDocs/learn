@@ -1,4 +1,4 @@
-With your database created, you'll now create a web application that the academic advisors for the educational institution can use to discuss courses and plans of study with students. The application will use the `System.Data.SqlClient` library to retrieve and display the details of courses, and the modules that a student must pass to complete a course.
+With your database created, you'll now configure and deploy a web application that the academic advisors for the educational institution can use to discuss courses and plans of study with students. The application will use the `System.Data.SqlClient` library to retrieve and display the details of courses, and the modules that a student must pass to complete a course.
 
 To save time, you'll work with a pre-existing web application. You'll add the code that connects this application to your database. The following diagram shows the primary components of this application:
 
