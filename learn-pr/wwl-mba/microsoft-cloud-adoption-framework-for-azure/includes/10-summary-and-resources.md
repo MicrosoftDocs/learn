@@ -1,4 +1,4 @@
-﻿Moving to the cloud is a complex undertaking. It requires the alignment of senior business leaders on the business value of making the move. They must then create an effective cloud adoption strategy that will be adopted by employees. The Microsoft Cloud Adoption Framework can help your business easily identify when to move to the cloud, how to create an effective migration strategy, and which approach to technology migration and modernization your business should take.
+Moving to the cloud is a complex undertaking. It requires the alignment of senior business leaders on the business value of making the move. They must then create an effective cloud adoption strategy that will be adopted by employees. The Microsoft Cloud Adoption Framework can help your business easily identify when to move to the cloud, how to create an effective migration strategy, and which approach to technology migration and modernization your business should take.
 
 Now that you have reviewed this module, you should be able to:
 
@@ -77,13 +77,13 @@ Cloud Governance:
 - [Governance in Documentation](https://docs.microsoft.com/azure/architecture/cloud-adoption/governance?branch=master)
 
 Cloud adoption plan:
-- Review [sample business outcomes](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/business-outcomes/index?branch=master)
+- Review [sample business outcomes](https://docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/business-outcomes/index)
 
-- Review [approaches to digital estate planning](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/digital-estate/approach)
+- Review [approaches to digital estate planning](https://docs.microsoft.com/azure/architecture/cloud-adoption/digital-estate/approach)
 
 - Document those in the provided [business outcome template](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx) to share with internal partners during the transformation journey
 
-- Identify the [learning metrics](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/business-strategy/learning-metrics?branch=master) that would best represent progress toward the identified business outcomes
+- Identify the [learning metrics](https://docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/learning-metrics) that would best represent progress toward the identified business outcomes
 
 - Establish a [financial model](https://docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/financial-models?branch=master) that aligns with the outcomes and learning metrics
 
