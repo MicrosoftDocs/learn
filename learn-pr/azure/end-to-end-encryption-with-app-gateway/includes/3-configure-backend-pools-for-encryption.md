@@ -6,7 +6,7 @@ In the shipping portal, the application servers in the backend pool must use SSL
 
 A backend pool can reference individual virtual machines, a virtual machine scale-set, the IP addresses of real computers (either on-premise or running remotely), or services hosted by using Azure App Service. However you implement the servers in the backend pool, they should all be configured in the same way, and this includes their security settings.
 
-![Diagram showing how a request is routed by Application Gateway to a web server](../media/3-encryption.png)
+![Diagram showing how a request is routed by Application Gateway to a web server](../media/3-encryption.svg)
 
 If the traffic directed to the backend pool is protected by using SSL, then each server in the backend pool must provide a suitable certificate. For testing purposes, you can create a self-signed certificate, but in a production environment you should always generate or purchase a certificate that can be authenticated by a certificate authority.
 
