@@ -2,7 +2,7 @@
 
 - **Define governance solutions for your cloud environment** that meet your organization’s business needs, provide agility, and control risks.
 
-- **Manage your cloud environment** based on the governance solutions to allow it to evolve, grow, and adapt to your organization’s changing business needs.
+- **Manage your cloud environment based on the governance solutions** to allow it to evolve, grow, and adapt to your organization’s changing business needs.
 
 ## Cloud govern
 
@@ -142,7 +142,7 @@ Accelerate deployment through centralization, consistency and standardization ac
 :::column-end:::
 :::row-end:::
 
-Because governance requirements will evolve throughout the cloud adoption journey, a flexible approach to governance is required,and IT governance must move quickly and keep pace with business demands to stay relevant during cloud adoption.
+Because governance requirements will evolve throughout the cloud adoption journey, a flexible approach to governance is required, and IT governance must move quickly and keep pace with business demands to stay relevant during cloud adoption.
 
 An **incremental governance** approach empowers these traits. Incremental governance relies on a small set of corporate policies, processes, and tools to establish a foundation for adoption and governance. That foundation is called a **minimum viable product (MVP)**. An MVP allows the governance team to quickly incorporate governance into implementations throughout the adoption lifecycle. Once this MVP has been deployed, additional layers of governance can be quickly incorporated into the environment.
 
@@ -305,9 +305,10 @@ At the highest stage of evolution, the team partners with business stakeholders 
 
 Here are the key points from this unit:
 
-- As your organization moves or deploys new applications to the cloud, it’s important to consider these aspects of operating a cloud platform: 
-   - Defining governance solutions for your cloud environment
-   - Managing your cloud environment
+- As your organization moves or deploys new applications to the cloud, it’s important to consider these aspects of operating a cloud platform:
+
+  - Defining governance solutions for your cloud environment
+  - Managing your cloud environment
 
 - The Cloud Adoption Framework governance model identifies key areas of importance, each relating to different types of risks the company must address as it adopts more cloud services. There are five disciplines of cloud governance: cost management, security baseline, resource consistency, identity baseline, and deployment acceleration.
 

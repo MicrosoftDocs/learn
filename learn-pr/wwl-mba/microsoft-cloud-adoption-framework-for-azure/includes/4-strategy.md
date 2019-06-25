@@ -1,10 +1,10 @@
-﻿In the last unit, we identified common motivation triggers for moving to the cloud. Now, let’s explore how to define your business strategy to respond to those triggers. A strong business strategy will help you stay focused on your path toward digital transformation and realize business value more quickly.
+﻿In the last unit, we identified common *motivation triggers* for moving to the cloud. Now, let’s explore how to define your *business strategy* to respond to those triggers. A strong business strategy will help you stay focused on your path toward digital transformation and realize business value more quickly.
 
 When you're defining your cloud business strategy, you should consider things like business impact, turnaround time, global reach, performance, and more. Here are key areas you'll need to focus on:
 
-- **Define business justification**: Identify business value opportunities to then select the right technology.
+- **Define business justification** - Identify business value opportunities to then select the right technology.
 
-- **Establish clear business outcomes**: Drive transparency and engagement for your journey across the organization.
+- **Establish clear business outcomes** - Drive transparency and engagement for your journey across the organization.
 
 ## Define business justification
 
@@ -73,7 +73,7 @@ The most successful cloud adoption journeys start with a business outcome in min
 
 | | |
 | ---| --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *An unexpected key player in creating and landing a cloud adoption plan is the chief financial officer (CFO). The chief financial officer (CFO) plays a key role in creating and landing a cloud adoption plan. The CFO can drive the value of migration and innovation and create a financial plan for adoption. The CFO can also work with the Cloud Strategy team to develop cost models that compare IT operations on-premises (in a datacenter) to operations in the cloud. These models should include key measurements to quantify business outcomes.*|
+| ![Icon of lightbulb](../media/lightbulb.png)| *An unexpected key player in creating and landing a cloud adoption plan is the chief financial officer (CFO). The CFO plays a key role in creating and landing a cloud adoption plan. The CFO can drive the value of migration and innovation and create a financial plan for adoption. The CFO can also work with the Cloud Strategy team to develop cost models that compare IT operations on-premises (in a datacenter) to operations in the cloud. These models should include key measurements to quantify business outcomes.*|
 |
 
 The Cloud Strategy Team consists of business leaders from finance, IT infrastructure, and application groups, and must lead the cloud analysis and planning phase. In this phase, the Cloud Strategy Team is responsible for reviewing business outcomes and for creating the business justification plan for possible use cases for cloud adoption. The team is also responsible for building or facilitating the cloud rationalization process, selecting the first application, and managing subsequent prioritized backlogs. Finally, the Cloud Strategy Team should manage communications with key stakeholders and promote the cloud adoption journey success and learnings.

@@ -2,7 +2,7 @@
 
 ## Motivation triggers
 
-Across organizations of all types, sizes, and industries, the decision to invest in cloud technologies is often tightly connected to some critical business events, as the cloud may enable the appropriate solution for the event. Moreover, proper cloud technology implementation may turn a reactive response into an innovation opportunity to drive growth for the organization. 
+Across organizations of all types, sizes, and industries, the decision to invest in cloud technologies is often tightly connected to some critical business events, as the cloud may enable the appropriate solution for the event. Moreover, proper cloud technology implementation may turn a reactive response into an innovation opportunity to drive growth for the organization.
 
 :::row:::
 :::column:::
@@ -25,9 +25,9 @@ Across organizations of all types, sizes, and industries, the decision to invest
 :::column-end:::
 :::row-end:::
 
-When addressing these business events, the expected business outcomes will determine the organization's cloud journey, which essentially can be one of two: migrate or innovate. The **migrate** journey is focused, largely, on completing a migration of existing on-premises applications to the cloud. And the **innovation** journey is frequently linked to migration since it is common for those migrated applications to undergo modernization efforts that drive business and product innovation.
+When addressing these business events, the expected business outcomes will determine the organization's cloud journey, which essentially can be one of two ways: migrate or innovate. The **migrate** journey is focused, largely, on completing a migration of existing on-premises applications to the cloud. And the **innovation** journey is frequently linked to migration since it is common for those migrated applications to undergo modernization efforts that drive business and product innovation.
 
-Organizations will find different triggers to adopt new technologies like Azure. Some will drive the organization to migrate current applications, while others will require creation of new capabilities, products and experiences.
+Organizations will find different triggers to adopt new technologies like Azure. Some will drive the organization to migrate current applications, while others will require creation of new capabilities, products, and experiences.
 
 Some common migration and innovation triggers include:
 
@@ -54,14 +54,15 @@ Some common migration and innovation triggers include:
 
 Here are the key points from this unit:
 
-- The Microsoft Cloud Adoption Framework for Azure enables an actionable cloud journey that delivers on the desired business outcomes faster.
+- The Microsoft Cloud Adoption Framework for Azure enables an actionable cloud journey that rapidly delivers on the desired business outcomes.
 
 - There are three main stages of the Cloud Adoption Framework: Plan, Ready, and Adopt.
 
-* Motivations for cloud adoption include:
-  * Critical business events (such as end of support for mission-critical technologies)
-  * Migration triggers (such as cost saving and operations optimization)
-  * Innovation triggers (such as scaling to meet market or geographical demands)
+- Motivations for cloud adoption include:
+
+  - Critical business events (such as end of support for mission-critical technologies)
+  - Migration triggers (such as cost saving and operations optimization)
+  - Innovation triggers (such as scaling to meet market or geographical demands)
 
 :::column-end:::
 :::row-end:::

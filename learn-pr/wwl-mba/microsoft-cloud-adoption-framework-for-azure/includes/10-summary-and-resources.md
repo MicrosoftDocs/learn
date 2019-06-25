@@ -10,20 +10,23 @@ Now that you have reviewed this module, you should be able to:
 
 ## Key takeaways
 
-Here are the key takeaways from this module:
+Here are the six key takeaways from this module:
 
 :::row:::
 ![Icon of lightbulb](../media/key-takeaway.png)
 :::column:::
-- The three main components of the Cloud Adoption Framework —plan, ready, and adopt—can be applied to different stages for cloud adopters, and should be revisited often as cloud adoption is an ongoing journey, not a destination.
 
-- The Plan phase should be focused on aligning technology decisions to business priorities, with clear business outcomes and setting the proper cloud rationalization approach.
+1. The three main components of the Cloud Adoption Framework —plan, ready, and adopt—can be applied to different stages for cloud adopters, and should be revisited often as cloud adoption is an ongoing journey, not a destination.
 
-- Readying your people, your organization process, and your environment for cloud adoption are critical success factors in your cloud adoption journey.
+1. A modernization trigger is an event that initiates the cloud adoption journey for an enterprise. The most common modernization triggers include: datacenter contracts expiring, the need to deliver applications and features faster, urgent capacity needs, a software or hardware refresh, the need to address security threats, compliance, enabling new business opportunities, and software end of support.
 
-- Adopting the cloud technologies defined in your plan and for which you have readied your organization, will depend on what you are actually doing: migrating or innovating with a new workload to the cloud.
+1. The Plan phase should be focused on aligning technology decisions to business priorities, with clear business outcomes and setting the proper cloud rationalization approach.
 
-- Governing and managing your cloud environment is as critical to your successful cloud adoption as any other stage, and as such, should be considered and executed properly.
+1. Readying your people, your organization process, and your environment for cloud adoption are critical success factors in your cloud adoption journey.
+
+1. Adopting the cloud technologies defined in your plan and for which you have readied your organization, will depend on what you are actually doing: migrating or innovating with a new workload to the cloud.
+
+1. Governing and managing your cloud environment is as critical to your successful cloud adoption as any other stage, and as such, should be considered and executed properly.
 
 :::column-end:::
 :::row-end:::

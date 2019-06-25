@@ -12,12 +12,9 @@ In this stage, focus on two main actions:
 
 A digital estate is the collection of IT assets that power business processes and supporting operations.  To begin “cloud rationalization” of the digital estate, start with an inventory of all the digital assets the organization owns today. Then, evaluate each asset to determine the best way to migrate or modernization each component to the cloud.
 
-You may also hear cloud rationalization referred to as the “Five Rs.” During this process, we recommend that you manage this process “incrementally,” application by application, and don’t make decisions too broadly or too early across the entire application portfolio.
+During this process, we recommend that you manage this process “incrementally,” application by application, and don’t make decisions too broadly or too early across the entire application portfolio.
 
-There are five options for cloud rationalization:
-
-![Diagram showing the five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, Replace](../media/ic-caf-1.jpg)
-
+You may also hear cloud rationalization referred to as the “Five Rs.” There are five options for cloud rationalization:
 
 :::row:::
 :::column:::
@@ -116,7 +113,7 @@ When aging applications are not compatible with the cloud, they may need to be r
 :::row:::
 :::column:::
 
-Unsupported, misaligned or too old applications on premises are too expensive to carry forward, a new code based created to align with cloud-native approach could be the appropriate and efficient path to follow.
+Unsupported, misaligned, or out of date on-premises applications may be too expensive to carry forward. A new code base with a cloud-native design may be the most appropriate and efficient path.
 
 :::column-end:::
 :::column:::
@@ -152,14 +149,16 @@ Sometimes, the best approach available is to simply replace the current applicat
 :::column-end:::
 :::row-end:::
 
-Because  every application is unique, there’s no single set of steps to follow for cloud rationalization. A Workload Assessment helps to identify which applications would require minor changes in code, and which need a complete redesign to make them cloud-ready. During this important assessment, each application is assessed examined against the broader portfolio, prioritizing each application’s value and creating a plan for each one’s future use.  
+Because every application is unique, there’s no single set of steps to follow for cloud rationalization. A Workload Assessment helps to identify which applications would require minor changes in code, and which need a complete redesign to make them cloud-ready. During this important assessment, each application is examined against the broader portfolio, prioritizing each application’s value and creating a plan for each one’s future use.  
 
 > [!TIP]
 > To learn more about Workload Assessment, visit the “Approaches to digital estate planning” document linked in the “Summary and resources” unit at the end of this module.
 
 ## Remove rationalization roadblocks
 
-To remove rationalization as a roadblock to migration, the Cloud Adoption Framework methodology  suggests an incremental rationalization approach. In this approach, the five Rs are initially reduced to one of two Rs. If the cloud adoption motivations are aligned to Migration motivations, a Rehost rationalization is applied to all workloads. If motivations are aligned to Innovation motivations, a refactor rationalization is applied.
+To remove rationalization as a roadblock to migration, the Cloud Adoption Framework suggests an incremental rationalization approach. In this approach, the five Rs are initially reduced to one of two Rs. If the cloud adoption motivations are aligned to Migration motivations, a Rehost rationalization is applied to all workloads. If motivations are aligned to Innovation motivations, a refactor rationalization is applied.
+
+Having one initial rationalization allows for initial business planning based on a documented assumption that will later be tested.
 
 | | |
 | --- | --- |
@@ -195,8 +194,9 @@ Key steps to build this plan are:
 Here are the key points from this unit:
 
 - There are two main actions during the Plan phase:
-   - Rationalizing your digital estate
-   - Creating your cloud adoption plan
+
+  - Rationalizing your digital estate
+  - Creating your cloud adoption plan
 
 - In the Planning phase, there are five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, and Replace. During this process, it is recommended to manage this process "incrementally."
 
@@ -205,4 +205,4 @@ Here are the key points from this unit:
 :::column-end:::
 :::row-end:::
 
-Let’s talk next about preparing your organization, your business processes and your environment for your cloud adoption journey.
+Let’s talk next about preparing your organization, your business processes, and your environment for your cloud adoption journey.

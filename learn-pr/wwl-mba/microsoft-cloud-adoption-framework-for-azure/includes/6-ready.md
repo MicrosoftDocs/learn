@@ -19,7 +19,7 @@ Before anything gets tested, deployed, or potentially broken, explore Azure Supp
 
 ## Create your landing zone
 
-Before you begin to build and deploy solutions with Azure services, you need to make sure your environment is ready. The term landing zone is used to describe an environment that has been provisioned and prepared to host workloads in a cloud environment, such as Azure. A fully functioning landing zone is the final deliverable of any iteration of the Cloud Adoption Framework methodology.
+Before you begin to build and deploy solutions with Azure services, you need to make sure your environment is ready. The term *landing zone* is used to describe an environment that has been provisioned and prepared to host workloads in a cloud environment, such as Azure. A fully functioning landing zone is the final deliverable of any iteration of the Cloud Adoption Framework methodology.
 
 | | |
 | --- | --- |
