@@ -314,6 +314,8 @@ Here are the key points from this unit:
 
 - The goal of the Cloud Adoption Framework Operate methodology is to maximize ongoing business returns by creating balance between business stability and cloud operations costs.
 
+
+
 :::column-end:::
 :::row-end:::
 
