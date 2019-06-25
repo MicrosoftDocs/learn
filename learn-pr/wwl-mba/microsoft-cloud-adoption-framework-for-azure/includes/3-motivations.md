@@ -1,7 +1,5 @@
 ﻿Organizations are adopting the cloud as a key enabler to drive business transformation, motivated by things such as processes and product improvement, market growth, and increased profitability. Let’s look at the most common motivation triggers for cloud adoption.
 
-## Motivation triggers
-
 Across organizations of all types, sizes, and industries, the decision to invest in cloud technologies is often tightly connected to some critical business events, as the cloud may enable the appropriate solution for the event. Moreover, proper cloud technology implementation may turn a reactive response into an innovation opportunity to drive growth for the organization.
 
 :::row:::
