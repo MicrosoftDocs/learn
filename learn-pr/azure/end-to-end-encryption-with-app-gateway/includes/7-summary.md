@@ -7,6 +7,6 @@ You've now used Azure Application Gateway to ensure your network traffic is encr
 
 To learn more about Azure Application Gateway, visit the following links.
 
-- [Configure end to end SSL by using Application Gateway with PowerShell](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-end-to-end-ssl-powershell)
-- [SSL termination and end to end SSL with Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/ssl-overview)
-- [Application gateway components](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-components)
+- [Configure end to end SSL by using Application Gateway with PowerShell](https://docs.microsoft.com/azure/application-gateway/application-gateway-end-to-end-ssl-powershell)
+- [SSL termination and end to end SSL with Application Gateway](https://docs.microsoft.com/azure/application-gateway/ssl-overview)
+- [Application gateway components](https://docs.microsoft.com/azure/application-gateway/application-gateway-components)
