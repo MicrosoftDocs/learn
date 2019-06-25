@@ -45,7 +45,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    You recently bought the custom domain name wideworldimporters.com from a domain name registrar. You plan to use the domain name for a new website your organization plans to launch. You need a hosting service for DNS domains to host wideworldimporters.com. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server. You decide to evaluate Azure DNS.
+    You recently bought the custom domain name wideworldimporters.com from a domain name registrar. The domain name is for a new website your organization plans to launch. You need a hosting service for DNS domains. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server. You decide to evaluate Azure DNS.
 
 1. **Learning-content unit title**
 
@@ -86,14 +86,17 @@ Identify the subtasks of *module title*
   - Configure Azure DNS
   - Configure custom DNS settings​
   - Configure private and public DNS zones
-- For exercises, use this as the model: [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution).
+- For exercises, use this as the model: [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution). E.g. Get as far as you can go without requiring a real domain name. 
 - In conceptual learning units, include info about:
-  - Creating public vs. private DNS zones (need to check to make sure we can talk about private. It's marked as preview.)
+  - Creating public vs. private DNS zones - private is in preview as of 6/25 but expected to be public by the end of July.
   - Custom DNS settings
+  - Different record types and we'd you need them (E.g. MX records for email). Cover alias records as that's differentiator from other DNS hosting services. Relate alias records to the scenario where they're hosting their website on Azure and using Load Balancer. 
+  - Tie configurations back to scenario - what settings/records would they pick to fit the scenario.
 
 ## Resources
 
 - [What is Azure DNS?](https://docs.microsoft.com/azure/dns/dns-overview)
+- [Tutorial: Configure an alias record to refer to an Azure public IP address](https://docs.microsoft.com/en-us/azure/dns/tutorial-alias-pip)
 - [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution)
 - [Tutorial: Host your domain in Azure DNS](https://docs.microsoft.com/azure/dns/dns-delegate-domain-azure-dns)
 - [Tutorial: Create DNS records in a custom domain for a web app](https://docs.microsoft.com/en-us/azure/dns/dns-web-sites-custom-domain)
