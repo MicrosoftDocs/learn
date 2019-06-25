@@ -1,4 +1,4 @@
-Having configured the certificates for Application Gateway and the backend pool, you can create a listener to handle incoming requests. The listener will wait for messages, decrypt them using the private key, and then route theses messages to the backend pool.
+Having configured the certificates for Application Gateway and the backend pool, you can create a listener to handle incoming requests. The listener will wait for messages, decrypt them using the private key, and then route these messages to the backend pool.
 
 In this unit, you'll set up the listener with port 443 and with the SSL certificate you created in the first exercise. The image below highlights the elements you'll set up in this exercise.
 
