@@ -51,7 +51,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
    ![Image showing the warning about an unauthenticated server in Microsoft Edge](../media/4-warning.png)
 
-1. The actual warning message may vary, depending on your browser. The image above shows Microsoft Edge. Proceed to the web site by clicking **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
+  The actual warning message may vary, depending on your browser. The image above shows Microsoft Edge. Proceed to the web site by clicking **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
 
    ![Image showing the home page for the Shipping Portal in Microsoft Edge](../media/4-shippingportal.png)
 
