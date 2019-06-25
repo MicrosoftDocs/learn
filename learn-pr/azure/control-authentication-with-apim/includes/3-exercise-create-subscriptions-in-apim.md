@@ -1,4 +1,4 @@
-Azure API Management makes it easy to create subscriptions and obtain subscription keys for use in client apps.
+You can use the Azure API Management user interface in the Azure portal to create subscriptions and obtain subscription keys for use in client apps.
 
 Suppose your weather company has decided to make its meteorological data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You will then secure the endpoint and allocate a client key.
 
@@ -63,13 +63,13 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
    | Field | Details |
    | --- | --- |
-   | **Name** | Type `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. |
+   | **Name** | Type `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this API gateway name. You will need it later to make requests. |
    | **Subscription** | Concierge Subscription |
    | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
-   | **Location** | The sandbox location should be selected for you by default. |
+   | **Location** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
    | **Organization Name** | Type `Weather-Company`. |
    | **Administrator Email** | Type your own email address. |
-   | **Pricing Tier** | Select `Consumption (preview)`. |
+   | **Pricing Tier** | Select `Consumption`. |
 
    > [!NOTE]
    > You're using the **Consumption** tier because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
@@ -96,7 +96,9 @@ The final step is to add a subscription key for the weather API:
 
     | Field | Details |
     | --- | --- |
-    | **Name** | Type  `Weather Data Subscription` |
+    | **Name** | Type  `weather-data-subscription` |
+    | **Display name** | Type `Weather Data Subscription` |
+    | **Allow tracing** | Select `No` |
     | **Scope** | API |
     | **API** | Click and select the Weather Data API from the list |
 
@@ -108,7 +110,7 @@ The final step is to add a subscription key for the weather API:
 
 Now the API is secured with a key, we can test the API with and without a key:
 
-1. Within the Azure Cloud Shell, copy and paste the following cURL command
+1. To make a request without passing a subscription key, in the Cloud Shell, copy and paste the following cURL command, and substitute the name of the API gateway that you created above:
 
     ```bash
     curl -X GET \
@@ -121,11 +123,11 @@ Now the API is secured with a key, we can test the API with and without a key:
     { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
     ```
 
-1. Finally, add the subscription key to the request and rerun it:
+1. Finally, add the subscription key to the request and rerun it. Remember to substitute the name of the API gateway:
 
     ```Azure Cloud Shell
     curl -X GET \
-      https://api-management-gateway.azure-api.net/api/Weather/53/-1 \
+      https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
     ```
 
