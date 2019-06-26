@@ -46,7 +46,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice (from the module proposal):
+    You work for an organization where your team manages a website hosted on Azure VMs. You're assigned the Owner role for the subscription that contains the website's resources. To keep your Azure resources secure, you segregate duties within your team and only grant users the minimum access permissions they need to do their job. You have a new employee that's responsible for managing VMs within the subscription. They need to be able to monitor the VMs and do troubleshooting tasks like restarting the VMs.
 
 1. **Learning-content unit title**
 
@@ -83,16 +83,20 @@ Identify the subtasks of *module title*
 
 ## Notes
 
+- Use this as the base of the solution for the scenario: [Create custom roles for Azure resources using Azure CLI](https://docs.microsoft.com/azure/role-based-access-control/custom-roles-cli)
+
 Topics to cover:
 
 1. When to use custom user roles
+1. Permissions needed: Owner RBAC role for scope or User Access Administrator RBAC role
+1. For scenario, review VM related built in roles (to see need for custom role): [Built-in roles for Azure resources](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).
+1. Role definition structure and properties
 1. Determine permissions needed based on scenario:
    - Resource provider operations (Actions/NotActions)
    - Data operations (DataActions/NotDataActions)
    - Scope (AssignableScopes)
-1. Exercise to discover permissions needed
-1. Role definition structure and properties
 1. Exercise to create custom user role by using Azure CLI (exercise)
+   1. Discover permissions needed
    1. Create JSON file with role definition
    1. Run CLI command to create custom role
    1. List custom role in CLI
@@ -105,6 +109,8 @@ Topics to cover:
    1. View custom role in Azure portal
    1. Update custom role in CLI
    1. Delete custom role in CLI
+
+Rearrange that list above into units as you see fit (learn > exercise > learn > exercise).
 
 ## Resources
 
