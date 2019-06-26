@@ -20,26 +20,26 @@ quiz:
     choices:
     - content: To build a hub and spoke topology
       isCorrect: false
-      explanation: Hub and spoke is an architectural model comprised of several services, vnets are used in a variety of scenarios.
+      explanation: Hub and spoke is an architectural model comprised of several services, VNets are used in a variety of scenarios.
     - content: To create a network for portal connections
       isCorrect: false
       explanation: Azure Portal connections do not need a virtual network, it is web browser based over the public internet.
     - content: To isolate organizational resources
       isCorrect: true
-      explanation: Using Azure vnets enables most Azure resources to securely communicate with each other, your on-premises networks and the internet.
+      explanation: Using Azure VNets enables most Azure resources to securely communicate with each other, your on-premises networks and the internet.
     - content: To integrate resources using a private connection
       isCorrect: false
-      explanation: Azure vnets can be used to integrate resources but require additional Azure services to do this over a private connection.
-  - content: 'Which of the following is a requirement for Azure ExpressRoute?'
+      explanation: Azure VNets can be used to integrate resources but require additional Azure services to do this over a private connection.
+  - content: 'Which of the following is a requirement for your business to create an Azure ExpressRoute connection to your on-premises infrastructure?'
     choices:
     - content: A connectivity provider
       isCorrect: true
       explanation: ExpressRoute connections are facilitated by a connectivity or cloud exchange provider.
     - content: A private connection
       isCorrect: false
-      explanation: ExpressRoute extends on-premises networks over a private connection
+      explanation: ExpressRoute extends on-premises networks over a private connection.
     - content: Microsoft Peering
-      isCorrect: true
+      isCorrect: false
       explanation: Peering is for connecting ExpressRoute to shared services, Microsoft Peering is one of several options.
     - content: A public IP address
       isCorrect: false

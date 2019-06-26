@@ -2,7 +2,7 @@
 uid: learn.hub-and-spoke-network-architecture.3-planning-virtual-networks
 metadata:
   title: Planning virtual networks on Azure
-  description: Planning virtual networks on Azure
+  description: Explore virtual networking in the Azure platform, the design considerations needed and how to implement Azure ExpressRoute for connectivity to on-premises networks.
   ms.date: 04/30/2019
   author: dwarrener
   ms.author: jaboes

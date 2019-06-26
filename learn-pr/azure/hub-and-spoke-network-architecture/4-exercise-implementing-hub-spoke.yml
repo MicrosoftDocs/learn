@@ -2,7 +2,7 @@
 uid: learn.hub-and-spoke-network-architecture.4-exercise-implementing-hub-spoke
 metadata:
   title: Exercise - Implementing a hub-spoke network topology on Azure
-  description: Implementing a hub-spoke network topology on Azure
+  description: Implement a hub-spoke network topology on Azure
   ms.date: 04/30/2019
   author: dwarrener
   ms.author: jaboes

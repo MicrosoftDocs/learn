@@ -1,4 +1,4 @@
-Your company is planning a migration of on-premises resources to Azure, as part of this migration there's a central datacenter that will remain on-premises initially but will need connectivity to Azure. You'll integrate multiple locations into this datacenter, with central dependencies such as Active Directory. The ultimate goal for the migration is to implement a virtual data center in Azure. The chosen topology for the migration is hub and spoke, so you need to understand how to plan the networking design.
+Your company is planning a migration of on-premises resources to Azure, as part of this migration there's a central datacenter based in your headquarters that will remain on-premises and will need connectivity to Azure. Your smaller branch offices need to integrate with the headquarters, with central dependencies such as Azure Active Directory and Azure DNS. The ultimate goal for the migration is to implement a virtual data center in Azure. The chosen topology for the migration is hub and spoke, so you need to understand how to plan the networking design.
 
 Your IT manager has requested you produce a virtual networking design using ExpressRoute for on-premises connectivity that aligns to the chosen topology.
 
@@ -29,71 +29,69 @@ Deploy the resources in the portal in the below Resource Manager template. This 
     ```
 
     > [!NOTE]
-    > The VPN gateway can take up to 30 minutes to complete, continue with this unit while the resources are created.
-
-    az group deployment create \
-      --resource-group phils \
-      --template-file deploy.json \
-      --parameters @parameters.json \
-      --debug
+    > The VPN gateway can take up to 10 minutes to complete, continue with this unit while the resources are created.
 
 ## Overview of virtual networks on Azure
 
-Whichever architectural path you take in Azure or whichever service model you use, it's likely you will need to work with Azure Virtual Networks (VNets). VNets provide networking services in the cloud as an extension of your existing on-premises network. Azure VNets act as a virtual communication channel (no physical wires) for resources that provide a rich set of capabilities through secure network communication for key use cases including connections to the internet, communication between Azure resources, isolation of Azure resources, connections to on-premises computers and, network traffic management.
+![Architectural diagram showing hub and spokes connecting to the on-premises resources](../media/plannning-hub.png)
 
-Azure VNets can also be used to connect your organizations Azure resources hosted in different Azure datacenters and regions.
+Whichever architectural decision you make, or whichever service model you use, you'll need to work with Azure Virtual Networks (VNets). VNets provide networking services in the cloud as an extension of your existing on-premises network. Azure VNets act as a virtual communication channel, there are no physical wires between resources. VNets enable connections to the internet, communication between your different Azure resources, isolation of those resources, connections to on-premises computers, and network traffic management.
 
 ## Introduction to Azure virtual networking
 
-An Azure Virtual Network is effectively a representation of your own IT network but contained within the cloud, logically isolating dedicated organizational resources in your subscription(s). Using Azure VNets enables most Azure resources to securely communicate with each other, your on-premises networks and the internet.
+An Azure Virtual Network can represent your own IT network within the cloud, logically isolating dedicated organizational resources in your subscriptions. Using Azure VNets enables most Azure resources to securely communicate with each other, your on-premises networks, and the internet.
 
-Azure VNets are composed of several components, the component model gives the ability for VNets to be configured to varying degrees from the simplistic to the highly sophisticated. Two such components that form the core of the vnet component model are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
+Azure VNets are composed of several components, two components are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
 
-![Image showing Azure vnet component architecture](../media/3-azure-vnet-arch.png)
+![Image showing Azure VNet component architecture](../media/3-azure-VNet-arch.png)
 
-- Azure Subnet: Each Azure vnet can be split into several subparts, these subparts are known as subnets. Each subnet can be given it's own unique properties. For example imagine you have 3 virtual machines (VM) within a vnet, each VM can be in its own subnet with distinct properties. One subnet is configured to allow public facing traffic whilst the other two remain isolated for private IP restricted traffic only.
-- Network Security Groups: An NSG is essentially like a firewall, NSGs allow you to filter the inbound and outbound traffic through your vnet or subnet. NSGs allow you to filter traffic by source and destination IP address, port or protocol. Using the previous example, the public facing subnet will have an NSG but the rules for allowing traffic are open to all internet traffic. The other two have strict organizational policies set in the NSG only allowing traffic coming from on-premises machines at the companies head office.
+- **Azure Subnet**: Each VNet can be split into several subparts, these subparts are called subnets. Each subnet can be given its own unique properties. For example, imagine you have three virtual machines (VM) within a VNet. Each VM can be in its own subnet with distinct properties. One subnet is configured to allow public facing traffic, while the other two are isolated for private IP restricted traffic only.
+- **Network Security Groups**: An NSG is essentially a firewall, NSGs allow you to filter the inbound and outbound traffic through your VNet or subnet. NSGs allow you to filter traffic by source and destination IP address, port, or protocol. Using the previous example, the public facing subnet will have an NSG but the rules for allowing traffic are open to all internet traffic. The two private VMs have strict organizational policies set in the NSG only allowing traffic coming from on-premises machines at the companies head office.
 
-Azure VNets are an essential service when considering a hub and spoke hybrid cloud approach, they provide your organization with the functionality to connect and isolate the spokes to the hub. VNets are connected together through a concept called **vnet peering**, you will learn more about peering later in this unit.
+Azure VNets are fundamental to a hub and spoke hybrid cloud approach, they provide your organization with the functionality to connect and isolate the spokes in a hub. VNets are connected together through a concept called **VNet peering**.
 
 ## Planning and design considerations for virtual networks
 
-Any network, whether on-premises or in the cloud, requires a method for managing the flow, direction and type of traffic through it. Network traffic for the IT estate is crucial, traffic flow must be properly routed, the direction and type of network traffic properly configured. There are several key considerations for VNets:
+Any network, whether on-premises or in the cloud, requires a method for managing the flow, direction, and type of traffic through it. There are several key considerations for VNets:
 
-- Naming conventions: Naming conventions in Azure are super important this is no different for VNets. The name must be unique within a scope. For example, the name of a virtual network must be unique within a resource group, but can be duplicated within a subscription or Azure region. It's important to decide on a naming convention for VNets before creating the network.
-- Segmentation: A virtual network is a virtual, isolated portion of the Azure public network. Therefore it's important to consider potential isolation of traffic into different subnets, virtual networks or into separate subscriptions.
-- Security: Traffic filtering is very important in a hub and spoke model. Not only do you need to consider segmenting the traffic but also filtering it. Network traffic can be filtered to and from resources in a vnet using network security groups and network virtual appliances.
-- Connectivity: You can connect a virtual network to other virtual networks using virtual network peering, or to your on-premises network, using ExpressRoute or an VPN gateway.
-- Routing: Azure VNets automatically create routing tables within each subnet and add default system routes to the tables. Custom routes allow you to override the default system routes.
+- **Naming conventions**: The name must be unique within a scope. For example, the name of a virtual network must be unique within a resource group, but can be duplicated within a subscription, or Azure region. It's important to decide on a naming convention for VNets before creating the network to ensure you don't end up with duplicates.
+- **Segmentation**: It's important to consider potential isolation of traffic into different subnets, virtual networks, or into separate subscriptions.
+- **Security**: Network traffic can be filtered to and from resources in a VNet using network security groups and network virtual appliances.
+- **Connectivity**: You can connect a virtual network to other virtual networks using VNet peering, or to your on-premises network, using ExpressRoute or an VPN gateway.
+- **Routing**: Azure VNets automatically create routing tables within each subnet and add default system routes to the tables. Custom routes allow you to override these default system routes.
 
 ## Peering with Azure Virtual networks
 
-VNets in Azure can be connected to each other directly using a method known as peering. VNets can be peered across subscriptions and Azure regions. Once peered resources in these networks communicate with each other as if they were in the same network, traffic that gets routed between resources in a peered vnet uses only private IP addresses therefore, not requiring a gateway, the connection to be encrypted or a connection to the internet. It does this by routing traffic through the Azure network and always keeping the connection private as part of the Azure backbone network. The backbone network provides low latency and high bandwidth network connections.
+VNets in Azure can be connected to each other directly using a method known as peering. VNets can be peered across subscriptions and Azure regions. Once peered, resources in these networks communicate with each other as if they reside in the same network, traffic that gets routed between resources in a peered VNet uses only private IP address ranges. Therefore, they don't require a gateway. The VNet does this by routing traffic through the Azure network always keeping the connection private.
 
-## Deploying Azure Virtual networks connecting to an on-premise network
+## Connecting your on-premise network
 
-When working towards a integrating your on-premises network with Azure there needs to be a bridge between the two networks. VPN gateway is one of the services in Azure that provide this functionality. A VPN gateway is a special type of vnet gateway that can send encrypted traffic between the two networks over the internet. Gateways support multiple connections which route the VPN tunnels through the available bandwidth, although a vnet can only have one gateway assigned. It is also possible to use a VPN gateway for vnet to vnet connections in Azure.
+When working towards integrating your on-premises network with Azure, you need to bridge between the two networks. A VPN gateway is one of the services in Azure that provide this functionality. A VPN gateway is a special type of VNet gateway that can send encrypted traffic between the two networks over the internet. Gateways support multiple connections which route the VPN tunnels through the available bandwidth, although a VNet can only have one gateway assigned. It's also possible to use a VPN gateway for VNet to VNet connections in Azure.
 
-The best method with a hub and spoke network is to use Azure ExpressRoute.
+The best way to bridge your on-premises network with a hub and spoke network hosted in Azure is to use Azure ExpressRoute.
 
 ## Overview of Azure ExpressRoute
 
-Azure ExpressRoute is a service in Azure that allows you to extend your on-premises networks over a private connection. This connection is facilitated by a connectivity or cloud exchange provider. ExpressRoute extends further than Azure and allows you to establish connections to other Microsoft cloud services like Office 365.
+Azure ExpressRoute allows you to extend your on-premises networks over a private connection, to Azure. This connection is facilitated by a connectivity or cloud exchange provider. ExpressRoute extends wider than just Azure resources, and allows you to establish connections to other Microsoft cloud services like Office 365.
+
+It takes sometime to order, and then have an Azure ExpressRoute set up and configured. A common solution is to initially use Site-to-Site VPN to add a connection between your on-premises resources, and then migrate to your new ExpressRoute connection when service provider confirms the set up is complete.
+
+In the example architecture at the top of this unit, Site-to-Site VPNs are still being used to connect to satellite offices.
 
 ## Summary of Azure ExpressRoute
 
-ExpressRoute connections do not go over the public internet thus giving greater resilience, faster speeds, higher security and lower latency. The connections can be from:
+![text](../media/expressroute-connectivity-models-diagram.png)
 
-- an any-to-any network: This method allows you to integrate your WAN with Azure using an IPVPN provider. These providers offer connectivity between branch offices and datacenters. Once enabled the connection to Azure will be similar to any other branch office connected via the WAN.
-- a point-to-point ethernet network: This method connects on-premises datacenters and offices to Azure through a point-to-point ethernet link.
-- a virtual cross-connection via a co-located facility (CloudExchange)
+ExpressRoute connections don't go over the public internet giving your company greater network resilience, faster speeds, higher security, and lower latency. The connections can be from:
+
+- **any-to-any connection**: This method allows you to integrate your WAN with Azure using an IPVPN provider. These providers offer connectivity between branch offices and datacenters. Once enabled the connection to Azure will be similar to any other branch office connected via the WAN.
+- **point-to-point ethernet connection**: This method connects on-premises datacenters and offices to Azure through a point-to-point ethernet link.
+- **virtual cross-connection**: For companies colocated inside a cloud exchange, you'll be connected to Azure through the colocation providers ethernet exchange.
 
 ## Using Azure ExpressRoute in a hub-spoke topology
 
-Using Azure ExpressRoute in a hub and spoke topology is in essence no different to other architectural patterns. ExpressRoute underpins the connectivity between the hub and the on-premises network over a private connection thus giving greater resilience, faster speeds, higher security and lower latency. ExpressRoute is best used when there is high data ingress and egress.
+Using Azure ExpressRoute in a hub and spoke topology is in essence no different to other architectural patterns. ExpressRoute underpins the connectivity between the hub and the on-premises network and works best when there's high data ingress and egress.
 
-Traffic management and routing is configured using circuits. ExpressRoute can be linked into a virtual network in Azure, each vnet allows up to four ExpressRoute circuits. The circuits to be connected to the vnet can be in different regions or subscriptions. Up to 10 VNets can be associated to an ExpressRoute circuit.
+Traffic management and routing are configured using circuits. ExpressRoute can be linked into a virtual network in Azure, each VNet allows up to four ExpressRoute circuits. The circuits to be connected to the VNet can be in different regions or subscriptions. Up to 10 VNets can be associated to an ExpressRoute circuit.
 
-When it comes to peering ExpressRoute connections in hub and spoke with shared services it's logical to use Microsoft Peering. Microsoft peering is essentially connectivity to all Microsoft online services (Office 365, Dynamics 365, and Azure PaaS services) with bi-directional connectivity between the Microsoft Cloud and your WAN through a Microsoft routing domain. This model requires a public IP address owned by you or your connectivity provider, adhering to a set of pre-defined rules, to connect into the Microsoft Cloud.
-
-In this unit you have learned about virtual networking in Azure, what to consider as part of their design and an overview of using ExpressRoute to extend on-premises networks.
+You can use Microsoft Peering when it comes to peering ExpressRoute connections in a hub and spoke with shared services. Microsoft peering allows connectivity to all Microsoft online services (Office 365, Dynamics 365, and Azure PaaS services) with bi-directional connectivity between the Microsoft Cloud and your WAN through a Microsoft routing domain. This model requires you have a public IP address owned by your company or your connectivity provider, adhering to a set of pre-defined rules.
