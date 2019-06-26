@@ -1,0 +1,2 @@
+> [!NOTE]
+> This module requires an active Azure subscription or trial. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin. To use a free account to create the Azure Databricks cluster, before creating the cluster, go to your profile and change your subscription to pay-as-you-go. Azure Databricks includes a 14-day trial after which free usage is not available.

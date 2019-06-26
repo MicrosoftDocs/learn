@@ -2,6 +2,8 @@ Imagine you're part of an analytics team that gets a huge assignment to analyze 
 
 Your team decides to use Azure Data Factory and Azure Databricks to ingest, transform, and aggregate the required data.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you'll:
