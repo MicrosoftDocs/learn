@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-kubernetes-service.when-to-use-azure-kubernetes-service
-title: When to use Logic Apps
+title: When to use Azure Kubernetes Service
 
 metadata:
-  title: When to use Logic Apps
-  description: When to use Logic Apps
+  title: When to use Azure Kubernetes Service
+  description: When to use Azure Kubernetes Service
   ms.date: 6/25/2019
   author: cryophobia
   ms.author: chrvaw
