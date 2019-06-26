@@ -38,7 +38,7 @@ The next step is to deploy a VM into the public and private subnets.
         --no-wait
     ```
 
-1. Run the following command to create the public virtual machine. Replace `<password>` with a suitable password.
+1. Run the following command to create the private virtual machine. Replace `<password>` with a suitable password.
 
     ```azurecli
     az vm create \
