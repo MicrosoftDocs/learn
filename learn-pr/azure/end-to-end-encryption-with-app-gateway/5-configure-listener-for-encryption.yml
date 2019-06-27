@@ -3,7 +3,7 @@ uid: learn.end-to-end-encryption-with-app-gateway.5-configure-listener-for-encry
 metadata:
   title: Configure Application Gateway listener for encryption
   description: Configure Application Gateway listener for encryption
-  ms.date: 04/30/2019
+  ms.date: 06/28/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
