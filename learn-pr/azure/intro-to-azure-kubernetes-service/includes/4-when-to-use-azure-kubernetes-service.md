@@ -2,7 +2,7 @@ Here, we'll discuss how you can decide whether Azure Kubernetes Service (AKS) is
 
 You'll either approach your decision from a green fields or a lift-and-shift project point of view. A green fields project will allow you to evaluate AKS based on default features. A lift-and-shift project will force you to look at which features are best suited to support your migration.
 
-We saw earlier that there are several features that enhances the AKS Kubernetes offering. Each of these features can be a compelling factor in your decision to use AKS.
+We saw earlier that there are several features that enhance the AKS Kubernetes offering. Each of these features can be a compelling factor in your decision to use AKS.
 
 |||
 | --- | --- |
