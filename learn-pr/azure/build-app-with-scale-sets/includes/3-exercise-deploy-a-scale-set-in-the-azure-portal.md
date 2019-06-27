@@ -1,91 +1,104 @@
-<!-- Topic sentence -->
+A common requirement is to use a virtual machine scale set to host a web application. In the example scenario, the shipping company have an existing web application that they want to deploy to a virtual machine scale set. Your first task is to create a scale set, and configure it to run a web server, in this case **nginx**. Once you have the scale set configure correctly, you can deploy your web application.
 
-<!-- Scenario sub-task -->
+In this exercise, you will create a new virtual machine scale set. You'll configure the virtual machines in the scale set to run **nginx**. You'll set up a health probe that Azure can use to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
 
-<!-- Task performed in the exercise -->
+## Deploy a virtual machine scale set
 
-<!-- Optional image (this should be either an image of the completed solution or the section that is being completed in the greater solution)-->
+[!include[](../../../includes/azure-sandbox-activate.md)]
 
-## [Part 1 title]
+1. In the Cloud Shell window on the right, start the Code editor and create a file named **cloud-init.yaml**.
 
-<!-- Introduction paragraph -->
+    ```bash
+    code cloud-init.yaml
+    ```
 
-1. <!-- Step 1 -->
+2. Add the following text to the file.
 
-1. <!-- Step 2 -->
+    ```Text
+    #cloud-config
+    package_upgrade: true
+    packages:
+      - nginxwrite_files:
+        - owner: www-data:www-data
+        - path: /var/www/html/index.html
+          content: |
+                Hello world from VM Scale Set !
+    runcmd:
+      - service nginx restart
+    ```
 
-1. <!-- Step n -->
+    This file contains the configuration information for installing nginx on the VMs in the scale set:
 
-## [Part 2 title]
+3. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
 
-<!-- Introduction paragraph -->
+4. Run the following command to create the virtual machine scale set.
 
-1. <!-- Step 1 -->
+    ```azurecli
+    az vmss create \
+      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --name webServerScaleSet \
+      --image UbuntuLTS \
+      --upgrade-policy-mode automatic \
+      --custom-data cloud-init.yaml \
+      --admin-username azureuser \
+      --generate-ssh-keys
+    ```
 
-1. <!-- Step 2 -->
+    By default, the virtual machine scale set is created with two instances and a load balancer.
 
-1. <!-- Step n -->
+## Configure the virtual machine scale set
 
-## [Part n title]
+1. Run the following command to add a health probe to the load balancer.
 
-<!-- Introduction paragraph -->
+    ```azurecli
+    az network lb probe create \
+      --lb-name webServerScaleSetLB \
+      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --name webServerHealth \
+      --port 80 \
+      --protocol Http \
+      --path /
+    ```
 
-1. <!-- Step 1 -->
+    The health probe pings the root of the web site through port 80. If the web site doesn't respond, the server is considered unavailable, and the load balancer won't route traffic towards it.
 
-1. <!-- Step 2 -->
+2. Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set.
 
-1. <!-- Step n -->
+    ```azurecli
+    az network lb rule create \
+      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --name webServerLoadBalancerRuleWeb \
+      --lb-name webServerScaleSetLB \
+      --probe-name webServerHealth \
+      --backend-pool-name webServerScaleSetLBBEPool \
+      --backend-port 80 \
+      --frontend-ip-name loadBalancerFrontEnd \
+      --frontend-port 80 \
+      --protocol tcp
+    ```
 
-## [Result part title]
+## Test the virtual machine scale set
 
-<!-- Introduction paragraph -->
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
 
-1. <!-- Optional step 1 -->
+2. In the left pane, click **Resource groups**, and then click the <rgn>[sandbox resource group]</rgn> resource group.
+3. Click the **webServerScaleSet** virtual machine scale set.
+4. On the **Overview** page, make a note of the public IP address of the virtual machine scale set.
 
-1. <!-- Optional step 2 -->
+    ![Screenshot of the Azure portal, showing the Overview page for the virtual machine scale set](../media/3-vmss-properties.png)
 
-1. <!-- Optional step n -->
+5. Under **Settings**, click **Instances**, and verify that the scale set contains two running VMs.
 
-## Notes from design doc
-**Exercise - Deploy a scale set in the Azure portal**
+    ![Screenshot of the Azure portal, showing the instances for the virtual machine scale set](../media/3-vmss-instances.png)
 
-Deploy a Scale Set of Ubuntu VMs configured with nginx acting as a web server.
+6. Click **Operating system,** and verify that the VMs are running Ubuntu Linux.
 
-1.  
+    ![Screenshot of the Azure portal, showing the operating system for the virtual machine scale set](../media/3-vmss-operating-system.png)
 
-In the Cloud Shell, use the Code editor to create the following YAML file. Name file **cloud-init.yaml** The YAML file contains the configuration information for installing nginx on the VMs in a scale set:
+7. Click **Size**. The VMs should be running on DS1_v2 hardware
 
-<code class="language-yaml">#cloud-configpackage_upgrade: truepackages:  - nginxwrite_files:  - owner: www-data:www-data  - path: /var/www/html/index.html    content: |      Hello world from VM Scale Set !runcmd:  - service nginx restart</code>
+    ![Screenshot of the Azure portal, showing the size of the virtual machines in the scale set](../media/3-vmss-size.png)
 
-2.  
+8. In your web browser, navigate to the public IP address of the scale set:
 
-Create the scale set with the following command:
-
-<code class="language-azurecli">az vmss create \  --resource-group <sandbox resource group> \  --name webServerScaleSet \  --image UbuntuLTS \  --upgrade-policy-mode automatic \  --custom-data cloud-init.yaml \  --admin-username azureuser \  --generate-ssh-keys</code>
-
-By default, the virtual machine scale set is created with two instances and a load balancer.
-
-3.  
-
-Add a health probe to the load balancer (the load balancer may fail to route traffic to a web server if it cannot detect the health of any servers)
-
-<code class="language-azurecli">az network lb probe create \  --lb-name webServerScaleSetLB \  --resource-group <sandbox resource group> \  --name webServerHealth \  --port 80 \  --protocol Http \  --path /</code>
-
-4.  
-
-Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set.
-
-<code class="language-azurecli">az network lb rule create \  --resource-group <sandbox resource group> \  --name webServerLoadBalancerRuleWeb \  --lb-name webServerScaleSetLB \  --probe-name webServerHealth \  --backend-pool-name webServerScaleSetLBBEPool \  --backend-port 80 \  --frontend-ip-name loadBalancerFrontEnd \  --frontend-port 80 \  --protocol tcp</code>
-
-Examine the Scale Set in Azure portal:
-
-1.  Go to the Sandbox resource group and select the virtual machine scale set
-2.  Make a note of the public IP address of the scale set
-3.  Click Instances, and verify that the scale set contains two running VMs
-4.  Click Operating system, and verify that the VMs are running Ubuntu Linux
-5.  Click Size. The VMs should be running on DS1_v2 hardware
-
-Test the scale set:
-
-1.  In the web browser, navigate to the public IP address of the scale set:
-2.  Verify that the message **Hello World from virtual machine scale set** appears
+9. Verify that the message **Hello World from virtual machine scale set** appears
