@@ -16,25 +16,28 @@ To apply a **throttling** policy within API Management, follow these steps:
 
     ![Overview of API management](../media/7-apply-throttling-policy.png)
 
-1. Position the cursor inside the <outbound> element.
-1. In the right window, under Transformation policies, click **+ Limit call rate per key**, and then click the Save button.
+1. Replace the entire `<inbound>` with the following code:
 
-    ![Overview of API management](../media/7-apply-throttle-policy.png)
+    ```XML
+    <inbound>
+        <rate-limit calls="3" renewal-period="15" />
+        <base />
+    </inbound>
+    ```
 
 Your policy file should contain all three policies, similar to this code:
 
 ```XML
 <policies>
     <inbound>
-    <rate-limit-by-key calls="3" renewal-period="15" counter-key="@(context.Subscription.Id)" />
-    <base />
+        <rate-limit calls="3" renewal-period="15" />
+        <base />
     </inbound>
     <backend>
         <base />
     </backend>
     <outbound>
         <set-header name="X-Powered-By" exists-action="delete" />
-        <set-header name="Server" exists-action="delete" />
         <redirect-content-urls />
         <base />
     </outbound>
@@ -53,6 +56,6 @@ Now let's see if the throttling policy is working:
 
 1. Select **Census Data**, and then at the top of the screen, select the **Test** tab.
 1. Next, select the **GetLatestCensus** operation, and then click **Send** three times in a row.
-1. Send the request for the fourth time. You should get a 429 error (too many requests) response:
+1. Send the request for the fourth time. You should get a **429 error (too many requests)** response:
 
     ![Mask URL Policy](../media/7-too-many-requests.png)

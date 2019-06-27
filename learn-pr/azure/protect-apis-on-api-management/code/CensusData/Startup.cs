@@ -55,7 +55,11 @@ namespace ShoeCompany
             app.UseMvc();
             app.UseSwagger(c =>
             {
-                c.PreSerializeFilters.Add((swaggerDoc, httpReq) => swaggerDoc.Host = httpReq.Host.Value);
+                c.PreSerializeFilters.Add((swaggerDoc, httpReq) => {
+                    swaggerDoc.Host = httpReq.Host.Value;
+                    swaggerDoc.Schemes = new List<string>() { httpReq.Scheme };
+                    swaggerDoc.BasePath = "/" + httpReq.PathBase;
+                });
             });
             app.UseSwaggerUI(c =>
             {

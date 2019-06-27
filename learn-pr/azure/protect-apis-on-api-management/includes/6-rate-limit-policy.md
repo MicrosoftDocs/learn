@@ -29,7 +29,7 @@ Alternatively, this configuration can be used to target a particular API operati
 Key throttling allows you to configure different rate limits by any client request value. This type of throttling offers a better way of managing the rate limits as it applies the limit to a specified request key, often the client IP address. It gives every client equal bandwidth for calling the API
 
 ```XML
-<rate-limit-by-key calls="number"bb
+<rate-limit-by-key calls="number"
                    renewal-period="seconds"
                    increment-condition="condition"
                    counter-key="key value" />
@@ -54,3 +54,6 @@ When you choose to throttle by key, you will need to decide on specific requirem
 | | |
 
 You may decide that you want each individual client IP to have its own bandwidth set, in which case you would use the **context.Request.IpAddress**. Alternatively, it could be that you want all requests from a particular domain name to be throttled as certain domains have many calls to the API. In that case you would specify **context.Request.Headers.GetValue("host")** which would rate limit by the domains from which the call was made.
+
+> [!NOTE]
+> The `<rate-limit-by-key>` policy is not available when your API Management gateway is in the Consumption tier. You can use `<rate-limit>`instead.

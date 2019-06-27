@@ -74,6 +74,9 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | **Organization Name** | Type `Government-Census`. |
     | **Administrator Email** | Type your own email address. |
     | **Pricing Tier** | Select `Consumption (preview)`. |
+    | | |
+
+    ![Creating an API Management gateway](../media/3-create-apim-gateway.png)
 
     > [!NOTE]
     > You're using the consumption plan because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
@@ -84,13 +87,12 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 Now import the Census API into the API Management gateway:
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu, click **All Resources**, and then select your API gateway.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, click **All Resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**.
 1. On the **Add a new API** page, click **OpenAPI**.
-1. On the **Create from OpenAPI specification** page, enter the following details:
+1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification**, paste the swagger JSON URL that you saved earlier in the exercise.
 
-    **OpenAPI specification**: paste the swagger JSON URL that you saved earlier in the exercise.
+    ![Importing the API](../media/3-import-api.png)
 
     > [!NOTE]
     > You will notice that, when you tab out of the box, some of the other fields will be populated for you, this is because you have used OpenAPI which specifies all of the required connection details.
@@ -98,40 +100,46 @@ Now import the Census API into the API Management gateway:
 1. Leave the other settings at their defaults, and then click **Create**.
 1. On the API details page, click **Settings**, and then click **Save**.
 
+## Test the API
+
+Let's see what data is returned in from the API by default:
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, click **All Resources**, and then select your API gateway.
+1. Under **API management**, click **APIs**, and then click **Census Data**.
+1. On the top of the screen, select **Test** tab, and then click the **GetLatestCensus** operation.
+1. Click **Send**.
+
+    ![Default test results](../media/3-default-test-results.png)
+
+1. Notice that **X-Powered-By** appears in the response and shows that the framework is ASP.NET.
+
 ## Remove Headers
 
 The final step is to remove the two headers **X-Powered-By** and **Server**:
 
-![Alter Policy](../media/3-remove-header.png)
-
 1. Select **Census Data** and then, at the top of the screen, select the **Design** tab.
 1. Select **All operations**, and then in the **Outbound processing** section, click the **</>** icon.
-1. Position the cursor inside the <outbound> element.
-1. In the right window, under Transformation policies, click **+ Set HTTP header**.
 
-    ![Policy with remove headers](../media/3-remove-header-policy.png)
+    ![Alter Policy](../media/3-remove-header.png)
 
-1. Modify your outbound configuration to look like this code:
+1. Replace the default `<outbound>` tag with this code:
 
     ```XML
     <outbound>
        <set-header name="X-Powered-By" exists-action="delete" />
-       <set-header name="Server" exists-action="delete" />
        <base />
     </outbound>
     ```
 
-1. Click the Save button
+1. Click the **Save** button.
 
 ## Test the Removal of Headers
 
 You should now be able to run a test to demonstrate that the headers are removed:
 
-1. Select **Census Data**.
-1. On the top of the screen, select **test** tab.
-1. Next, select **GetLatestCensus** operation.
-1. Click **Send**.
+1. Select **Census Data**, and then, at the top of the screen, select the **Test** tab.
+1. Next, select the **GetLatestCensus** operation, and then click **Send**:
 
     ![Headers Removed Test](../media/3-headers-removed.png)
 
-1. **X-Powered-By** and **Server** headers should not be in the response.
+1. The **X-Powered-By** should not be in the response.
