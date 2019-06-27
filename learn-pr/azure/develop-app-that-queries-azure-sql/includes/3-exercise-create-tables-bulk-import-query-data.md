@@ -143,7 +143,13 @@ With the database created, you can now create the tables that will store the dat
 
 1. On the **SQL databases** page, select **coursedatabase-*nnn***.
 
-1. On the **coursedatabase-*nnn*** page, under **Overview**, select **Query editor**.
+1. On the **coursedatabase-*nnn*** page, click the **Set server firewall** button.
+
+    ![Screenshot of the database overview page in the Azure portal highlighting the Set server firewall button](3-firewall-update.png)
+
+1. Click **ON** on Allow access to Azure services and click **Save**.
+
+1. On the **coursedatabase-*nnn*** page, select **Query editor**.
 
     ![Screenshot of the database page in the Azure portal highlighting the Query editor option](../media/3-query-editor-annotated.png)
 
