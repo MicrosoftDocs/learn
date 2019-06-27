@@ -14,4 +14,4 @@ metadata:
 
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-exercise-updating-applications-in-virtual-machine-scale-sets.md)]
+  [!include[](includes/7-exercise-update-applications-in-virtual-machine-scale-sets.md)]

@@ -14,4 +14,4 @@ metadata:
 
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-exercise-configuring-a-virtual-machine-scale-set.md)]
+  [!include[](includes/5-exercise-configure-a-virtual-machine-scale-set.md)]
