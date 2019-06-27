@@ -1,6 +1,6 @@
-In the previous unit you set up a hub and spoke virtual data centre in Azure for your company. Those commands created a hub and spoke, and connected them together. 
+In the previous unit, you set up a hub and spoke virtual data center in Azure for your company. Those commands created a hub and spoke network topology, and connected the components together. 
 
-Your internal HR department has informed you they need to host a new internal HR system, that shouldn't be accessible from the external internet. It should be accessible to everyone in the company, wether they work at the headquarters and satellite offices.
+Your internal HR department has informed you they need to host a new internal HR system, that shouldn't have access to the public facing internet. It should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
 
 In this exercise, you'll create a new virtual network to host the servers for your company's new HR system.
 
@@ -26,7 +26,7 @@ The resource creation experience on the portal is a wizard to walk you through t
 
 |Property Name | Field Property  |
 |---------|---------|
-|Name                   | **spokeProd3Vnet**         |
+|Name                   | **HRappVnet**         |
 |Address Space          | **10.10.0.0/16**        |
 |Subscription           | **Concierge Subscription (default)**     |
 |Resource Group         | **<rgn>[sandbox resource group name]</rgn>**   |
@@ -36,7 +36,7 @@ The resource creation experience on the portal is a wizard to walk you through t
 |Service Endpoints      | **Disabled**      |
 |Firewall               | **Disabled**      |
 
-1. To start provisioning the VNet select **Create**.
+1. Select **Create** to start provisioning the VNet.
  
 > [!NOTE]
 > The VNet will take a couple of minutes to provision
@@ -45,7 +45,7 @@ The resource creation experience on the portal is a wizard to walk you through t
 
 Now you have created the third spoke you need to configure the VNet peering between the hub and spokes.
 
-1. In the left-hand resources menu, select **Virtual Networks**. You should see the **hubVNet**, **spokeProdVNet**, **spokeProd2VNet**, and **spokeProd3Vnet** VNets.
+1. In the left-hand resources menu, select **Virtual Networks**. You should see the **hubVNet**, **webVNet**, **quoteVNet**, and **HRappVnet** VNets.
 
 1. Select on the **hubVNet**.
 
@@ -55,15 +55,15 @@ Now you have created the third spoke you need to configure the VNet peering betw
 
 |Property Name | Field Property  |
 |---------|---------|
-|Name of the peering from hubVnet to spokeProd3Vnet     | **gwPeering_hubVNet_spokeProd3VNet**      |
+|Name of the peering from hubVnet to HRappVnet     | **gwPeering_hubVNet_HRappVnet**      |
 |Peer Details     | **Resource Manager**        |
 |Subscription     | **Concierge Subscription (default)**        |
-|Virtual Network     |  **spokeprod3VNet**       |
-|Name of the peering from spokeProd3Vnet to hubVnet     | **gwPeering_spokeProd3VNet_hubVNet**      |
-|Allow virtual network access from hubVnet to spokeProd3Vnet  |   **Enabled**  |
-|Allow virtual network access from spokeProd3Vnet to hubVnet  |   **Enabled**  |
-|Allow forwarded traffic from spokeProd3Vnet to hubVnet  |   **Disabled**     |
-|Allow forwarded traffic from hubVnet to spokeProd3Vnet  |   **Disabled**     |
+|Virtual Network     |  **HRappVnet**       |
+|Name of the peering from HRappVnet to hubVnet     | **gwPeering_HRappVnet_hubVNet**      |
+|Allow virtual network access from hubVnet to HRappVnet  |   **Enabled**  |
+|Allow virtual network access from HRappVnet to hubVnet  |   **Enabled**  |
+|Allow forwarded traffic from HRappVnet to hubVnet  |   **Disabled**     |
+|Allow forwarded traffic from hubVnet to HRappVnet  |   **Disabled**     |
 |Configure Remote Gateways settings         |   **False**    |
 
 1. Select **OK** to create the peering.
@@ -82,7 +82,7 @@ You'll create a network security group to configure each network security and de
 
 1. Select **Create** to start configuring the VNet.
 
-1. Enter **spokeprod3-nsg** for the name, then select the existing resource group and location.
+1. Enter **hr-nsg** for the name, then select the existing resource group and location.
 
 1. Select **Create** to provision the NSG.
 
@@ -98,29 +98,25 @@ You need to associate the NSGs to each VNet.
 
 1. In the **Network security groups** blade, you should see the NSGs you created.
 
-1. Select the NSG you created for the hub, **hub-nsg**.
+1. Select the NSG you created for the spoke, **hr-nsg**.
 
 1. Select the **Subnets** side menu.
 
 1. On the Subnets blade, select **Associate**.
 
-1. Select the **spokeprod3VNet** virtual network.
+1. Select the **HRappVnet** virtual network.
 
-1. Select the **HRworkload** Subnet.
+1. Select the **HRworkload** subnet.
 
-1. Select **OK** to associate the NSG with the spokeprod2 VNet.
+1. Select **OK** to associate the NSG.
 
-1. Close the **hub-nsg** blade.
+## Configure NSG rule to stop the outbound internet traffic
 
-1. Repeat the steps for the **spokeprod3-nsg** you created earlier ensuring to associate it with the **spokeprod3VNet** VNet.
+You have a security requirement to meet for HR application to be hosted on the **HRappVnet**, there is to be no outbound internet traffic from the spoke as only internal employees need access. You'll now configure the NSG rule to meet this requirement.
 
-## Configure NSG rule to stop spoke outbound internet traffic
+1. In the left-hand resources menu, select **Network security groups**.
 
-You have a security requirement to meet for HR application to be hosted on the **SpokeProd3VNet**, there is to be no outbound internet traffic from the spoke as only internal employees need access. You'll now configure the NSG rule to meet this requirement.
-
-1. In the left-hand resources menu select **Network security groups**.
-
-1. Select the **spokeprod3-nsg**.
+1. Select the **hr-nsg**.
 
 1. Select the **Outbound security rules** side menu.
 

@@ -2,21 +2,23 @@ Your company is planning a migration of on-premises resources to Azure, as part 
 
 As a lead architect on the project you are managing the production of a virtual networking design using ExpressRoute for your headquarters connectivity. You also need to make a decision on how to connect your companies satellite offices to the new hub and spoke network.
 
-In this unit, you'll explore virtual networking in the Azure platform, the design considerations needed and how to implement Azure ExpressRoute for connectivity to on-premises networks.
+In this unit, you'll explore virtual networking in the Azure platform, the design considerations needed and how to implement Azure ExpressRoute for connectivity via on-premises networks.
+
+![Architectural diagram showing hub and spokes connecting to the on-premises resources](../media/plannning-hub.png)
 
 ## Environment setup for the next exercise
 
 <!-- Activate the sandbox -->
 [!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
 
-Deploy the resources in the portal in the below Resource Manager template. This will create an Azure Resources to use in the next exercise.
+Deploy the resources in the portal in the below Resource Manager template. This will create an Azure resources matching the above diagram, ready for you to use in the next exercise.
 
-1. Copy the ARM and parameter json templates that create hub and spoke resources.
+1. Download the ARM template and parameter json files that create your chosen hub and spoke resources.
+
     ```bash
     curl https://raw.githubusercontent.com/... > deploy.json
     curl https://raw.githubusercontent.com/... > parameters.json
     ```
-
     <!-- TODO replace with live github repo -->
 
 1. Deploy the template.
@@ -34,20 +36,18 @@ Deploy the resources in the portal in the below Resource Manager template. This 
 
 ## Overview of virtual networks on Azure
 
-![Architectural diagram showing hub and spokes connecting to the on-premises resources](../media/plannning-hub.png)
-
-VNets provide networking services in Azure and can act as an extension of your existing on-premises infrastructure. Azure VNets act as a virtual communication channel, there are no physical wires between resources. VNets enable external connections to the internet, communication between your different internal Azure resources, isolation of those resources, connections to on-premises computers, and network traffic management.
+VNets provide networking services in Azure and enable you to extend your existing on-premises infrastructure. Azure VNets act as a virtual communication channel, there are no physical wires directly connecting your resources. VNets enable external connections to the internet, communication between your different internal Azure resources, isolation of those resources, connections via on-premises computers, and network traffic management.
 
 ## Introduction to Azure virtual networking
 
-An Azure Virtual Network can represent your own IT network within the cloud, logically isolating dedicated organizational resources in your subscriptions. Using Azure VNets enables most Azure resources to securely communicate with each other, your on-premises networks, and the internet.
+An Azure virtual network can represent your own IT infrastructure within the cloud, logically isolating dedicated resources in your subscriptions. Using Azure VNets enables Azure resources to securely communicate with each other, your on-premises networks, and the internet.
 
-Azure VNets are component based, two components are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
+Azure VNets are component based, two components you'll need to use are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
 
 ![Image showing Azure VNet component architecture](../media/3-azure-VNet-arch.png)
 
 - **Azure Subnet**: Each VNet can include a number of subnets. Each subnet can be given its own unique properties. For example, imagine you have three virtual machines (VM) within a VNet. Each VM can be in its own subnet with distinct properties. One subnet is configured to allow public facing traffic, while the other two are isolated for private IP restricted traffic only.
-- **Network Security Groups**: An NSG is essentially a firewall, NSGs allow you to filter the inbound and outbound traffic through your VNet or subnet. NSGs allow you to filter traffic by source and destination IP address, port, or protocol. Using the previous example, the public facing subnet will have an NSG but the rules for allowing traffic are open to all internet traffic. The two private VMs have strict organizational policies set in the NSG only allowing traffic coming from on-premises machines at the companies head office.
+- **Network Security Groups**: An NSG is essentially a firewall, NSGs allow you to filter the inbound and outbound traffic through your VNet or subnet. NSGs allow you to filter traffic by source and destination IP address, port, or protocol. Using the previous example, the public facing subnet will have an NSG but the rules for allowing traffic are open to all internet traffic. The two private VMs have strict organizational policies set in the NSG only allowing traffic coming from on-premises machines at your companies headquarters.
 
 VNets are connected together through a concept called **VNet peering**.
 
@@ -79,7 +79,7 @@ It takes sometime to order, and then have an Azure ExpressRoute set up and confi
 
 In the example architecture at the top of this unit, Site-to-Site VPNs are still being used to connect to satellite offices.
 
-## Summary of Azure ExpressRoute
+## Summary of Azure ExpressRoute options
 
 ![text](../media/expressroute-connectivity-models-diagram.png)
 

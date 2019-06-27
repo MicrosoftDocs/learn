@@ -206,7 +206,7 @@
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": [
-                        "[variables('prodSpokeVnetPrefix')]"
+                        "[variables('prodSpoke2VnetPrefix')]"
                     ]
                 },
                 "enableDdosProtection": false,
@@ -408,6 +408,15 @@
             "type": "Microsoft.Network/networkSecurityGroups",
             "apiVersion": "2019-04-01",
             "name": "[variables('winNsgName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "securityRules": []
+            }
+        },
+        {
+            "type": "Microsoft.Network/networkSecurityGroups",
+            "apiVersion": "2019-04-01",
+            "name": "[variables('spoke2prodnsgname')]",
             "location": "[parameters('location')]",
             "properties": {
                 "securityRules": []
