@@ -2,7 +2,7 @@
 
 ## Title
 
-Secure external access to your application with multi-factor authentication
+Enable secure external collaboration for your applications with Azure AD B2B
 
 ## Role(s)
 
@@ -16,42 +16,37 @@ Secure external access to your application with multi-factor authentication
 ## Product(s)
 
 - Azure AD and multi-factor authentication
-- AAD B2C for securing social and custom accounts
-- AAD B2B for securing external organization accounts
+- Azure AD B2B collaboration
 
 ## Prerequisites
 
-- Basic understanding of Azure AD B2B
-- Basic understanding of Azure AD B2C
+- Basic understanding of Azure AD
 
 ## Summary
 
-Secure your applications available to users outside your organization with multi-factor authentication
+Azure Active Directory (Azure AD) business-to-business (B2B) collaboration lets you securely share your company's applications and services with guest users from any other organization, while maintaining control over your own corporate data.
 
 ## Learning objectives
 
-- Identify the methods to secure external applications (applications available to users outside your organization) with MFA
-- Identify the MFA features for AAD B2B
-- Identify the MFA features for AAD B2C
-- Identify the steps to enable MFA in AAD B2B and AAD B2C
+- Identify the methods to enable secure external collaboration for your applications with Azure AD B2B collaboration
+- Enable B2B collaboration for an application
+- Enforce MFA for B2B collaboration
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *Secure external access to your application with multi-factor authentication*
+Identify the subtasks of *Enable secure external collaboration for your applications with Azure AD B2B*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- |---|---|---|---|
 | How to secure external applications | Identify the methods to secure external applications with MFA | Knowledge check | 1 | Yes |
 | What are Azure AD  features for B2B? | Identify the MFA features for AAD B2B | Knowledge check | 2 | Yes |
-| What are Azure AD  features for B2C? | Identify the MFA features for AAD B2C | Knowledge check | 3 | Yes |
 | How to enable MFA in Azure AD B2B? | Identify the steps to enable MFA in AAD B2B | Knowledge check | 4 | Yes |
-| How to enable MFA in Azure AD B2C? | Identify the steps to enable MFA in AAD B2C | Exercise | 4 | Yes |
 
 ## Outline the units
 
 1. **Introduction**
 
-    You are the solution architect for Abc health care organization. Your organization has two applications that they have published in Azure. Application A needs to allow users to share information with partner organizations. This data includes sensitive health information and requires secure authentication for access. Application B is going to allow patients to access their health records. This is also sensitive information requiring identities to be secured before granting access.
+    You are the solution architect for a health care organization. Your organization is publishing an application that allows clinicians from partnering health providers access health records for patients at your facilities. You need to enable the ability for these organizations to collaborate in a secure way.
 
 1. **How to secure external applications using MFA**
 
@@ -78,7 +73,6 @@ Identify the subtasks of *Secure external access to your application with multi-
      Multi-Factor Authentication comes as part of the following offerings:
 
     - Azure Active Directory Premium or Microsoft 365 Business - Full featured use of Azure Multi-Factor Authentication using Conditional Access policies to require multi-factor authentication.
-    - Azure AD-Free, Azure AD Basic, or standalone Office 365 licenses - Use pre-created Conditional Access baseline protection policies to require multi-factor authentication for your users and administrators.
     - Azure Active Directory Global Administrators - A subset of Azure Multi-Factor Authentication capabilities is available as a means to protect global administrator accounts.
 
     **Multi-factor authentication (MFA) policies** 
@@ -121,31 +115,6 @@ Identify the subtasks of *Secure external access to your application with multi-
     **Knowledge check**
     - At what level can you enforce MFA?
     - How are guest accounts different from regular user accounts?
-
-1. **What are the MFA features for Azure AD B2C?**
-
-    - Azure AD B2C is a cloud identity management service that enables your applications to authenticate your customers. 
-    - Azure AD B2C is built on Azure Active Directory. 
-    - Azure AD B2C directories are separate from standard Azure AD directories and can be created in the Azure portal. 
-    - Azure AD B2C enables you to customize and control how customers sign up, sign in, and manage their profiles when using your applications. This includes applications developed for iOS, Android, and .NET, among others. 
-    - Azure AD B2C provides a social identity login experience, while at the same time protecting your customer identity profile information.  
-    - For your health care organization App B is a customer-facing app. Azure AD will handle the user account creation. The consumer can create an account using Gmail, Yahoo or Hotmail ID. The consumer verifies the account using code and authenticate. Azure AD allows multi-factor authentication. If MFA is enabled, the user will have to go thru the 2-factor authentication before being granted access to the resources.  This is all done via the Azure AD without the developer having to write any code.
-
-1. **Exercise - Enable MFA in Azure AD B2C**
-
-    Exercise must be done in the user's own Azure subscription, as the sandbox does not support Azure premium.
-
-    In this exercise, you will learn how to:
-
-    - Create an Azure AD B2C tenant 
-    - Link your tenant to your subscription
-    - Register an application in Azure Active Directory B2C
-    - Create a sign-up and sign-in user flow
-    - Create the identity provider applications
-    - Add the identity providers to your tenant
-    - Add the identity providers to your user flow
-    - Use authorization policy multi-factor authentication to protect your content
-    - Test your Conditional Access policy
 
 1. **Summary**
 
