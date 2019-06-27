@@ -8,6 +8,8 @@ The focus of EDA is answering the following questions about a dataset:
 - What are the relationships between different variables?
 - How will different assumptions work against the available dataset?
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
  In this module, you'll:
