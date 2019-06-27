@@ -10,6 +10,8 @@ The following are some of the basic outputs generated from text analytics algori
 
 - Text analytics is also widely used to perform sentiment analysis based on the positive, negative, or neutral keywords used in the data.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
  In this module, you will:
