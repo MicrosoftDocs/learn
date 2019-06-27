@@ -36,6 +36,13 @@ products:
 #- azure-devops
 units:
 - learn.azdo.create-release-pipeline.1-introduction
+- learn.azdo.create-release-pipeline.2-introduction-to-continuous-delivery
+- learn.azdo.create-release-pipeline.3-create-a-release-pipeline
+- learn.azdo.create-release-pipeline.4-set-up-environment
+- learn.azdo.create-release-pipeline.5-exercise-release-pipeline-to-appservice
+- learn.azdo.create-release-pipeline.6-different-target-environments
+- learn.azdo.create-release-pipeline.7-exercise-release-pipeline-to-vm
+- learn.azdo.create-release-pipeline.8-clean-up-environment
 - learn.azdo.create-release-pipeline.9-summary
 badge:
   uid: learn.azdo.create-release-pipeline.badge
