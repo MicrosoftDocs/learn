@@ -130,6 +130,7 @@ Let's create the database and server to store the data for the application.
     | Password | Enter a password that meets the requirements |
     | Confirm password | Confirm your password |
     | Location | Accept the default location |
+    | Allow Azure services to access server | Checked |
 
 1. Click **Review + create**.
 
