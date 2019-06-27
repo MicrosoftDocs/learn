@@ -1,6 +1,8 @@
+In the previous unit you set up a hub and spoke virtual data centre in Azure for your company. Those commands created a hub and spoke, and connected them together. 
 
+Your internal HR department has informed you they need to host a new internal HR system, that shouldn't be accessible from the external internet. It should be accessible to everyone in the company, wether they work at the headquarters and satellite offices.
 
-In this exercise, you'll create a new virtual network for your company's new HR system. 
+In this exercise, you'll create a new virtual network to host the servers for your company's new HR system.
 
 ## Create a new spoke in your virtual network
 
@@ -24,7 +26,7 @@ The resource creation experience on the portal is a wizard to walk you through t
 
 |Property Name | Field Property  |
 |---------|---------|
-|Name                   | **spokeprod3Vnet**         |
+|Name                   | **spokeProd3Vnet**         |
 |Address Space          | **10.10.0.0/16**        |
 |Subscription           | **Concierge Subscription (default)**     |
 |Resource Group         | **<rgn>[sandbox resource group name]</rgn>**   |
@@ -41,9 +43,9 @@ The resource creation experience on the portal is a wizard to walk you through t
 
 ## Configure the Hub VNet peering
 
-Now you have created the second spoke virtual network you need to configure the VNet peering between the hub and spokes.
+Now you have created the third spoke you need to configure the VNet peering between the hub and spokes.
 
-1. In the left-hand resources menu, select **Virtual Networks**. You should see the **hubVNet**, **spokeprod1VNet**, **spokeprod2VNet**, and **spokeprod3Vnet** VNets.
+1. In the left-hand resources menu, select **Virtual Networks**. You should see the **hubVNet**, **spokeProdVNet**, **spokeProd2VNet**, and **spokeProd3Vnet** VNets.
 
 1. Select on the **hubVNet**.
 
@@ -53,13 +55,15 @@ Now you have created the second spoke virtual network you need to configure the 
 
 |Property Name | Field Property  |
 |---------|---------|
-|Name of Peering     | **gwPeering_hubVNet_spokeProd3VNet**      |
+|Name of the peering from hubVnet to spokeProd3Vnet     | **gwPeering_hubVNet_spokeProd3VNet**      |
 |Peer Details     | **Resource Manager**        |
 |Subscription     | **Concierge Subscription (default)**        |
 |Virtual Network     |  **spokeprod3VNet**       |
-|Configure virtual network access settings  |   **Enabled**  |
-|Configure forwarded traffic settings       |   **Enabled**  |
-|Configure gateway transit settings         |   **True**     |
+|Name of the peering from spokeProd3Vnet to hubVnet     | **gwPeering_spokeProd3VNet_hubVNet**      |
+|Allow virtual network access from hubVnet to spokeProd3Vnet  |   **Enabled**  |
+|Allow virtual network access from spokeProd3Vnet to hubVnet  |   **Enabled**  |
+|Allow forwarded traffic from spokeProd3Vnet to hubVnet  |   **Disabled**     |
+|Allow forwarded traffic from hubVnet to spokeProd3Vnet  |   **Disabled**     |
 |Configure Remote Gateways settings         |   **False**    |
 
 1. Select **OK** to create the peering.
@@ -68,38 +72,9 @@ Now you have created the second spoke virtual network you need to configure the 
 
 You've now peered the hub virtual network to the spoke virtual network. You've allowed traffic to be forwarded from the hub to the spoke using a VPN gateway in the configuration.
 
-## Configure the Spoke VNet peering
-
-Now the hub is connected to the new spoke you need to configure the spoke VNet peering to complete the loop. The peering on the hubVNet has a status of **initiated** with a note "At least one peering is in an initiated state. Navigate to the peer virtual network to complete the initiation".
-
-1. In the left-hand resources menu, select on **Virtual Networks**. You should see the hubVNet, spokeprod1VNet, and spokeprod2VNet virtual networks.
-
-1. Select the **spokeprod3VNet**.
-
-1. Select the **Peerings** blade in the left-hand side settings menu.
-
-1. On the Peerings blade, select the **Add** button, fill in the fields using the following properties:
-
-|Property Name | Field Property  |
-|---------|---------|
-|Name of Peering     | **gwPeering_spokeProd3VNet_hubVNet**      |
-|Peer Details     | **Resource Manager**        |
-|Subscription     | **Concierge Subscription (default)**        |
-|Virtual Network     |  **hubVNet**       |
-|Configure virtual network access settings     |   **Enabled**      |
-|Configure forwarded traffic settings     |   **Enabled**      |
-|Configure gateway transit settings     |   **False**      |
-|Configure Remote Gateways settings     |   **True**      |
-
-1. Select **OK** to create the peering.
-
-1. Close the **spokeprod3VNet** blade.
-
-You have now peered the hub and spoke VNets. The configuration has opened the communication channel to forward traffic to the spoke from the hub, and for the spoke to receive traffic originating from the VPN gateway.
-
 ## Create a Network Security Groups (NSG) for the virtual network
 
-Each network needs to be secured and have the traffic flow to it defined, you'll create a network security group to configure this.
+You'll create a network security group to configure each network security and define its  traffic flow.
 
 1. Select **Create a Resource** in the upper left corner of the Azure portal
 
@@ -111,21 +86,19 @@ Each network needs to be secured and have the traffic flow to it defined, you'll
 
 1. Select **Create** to provision the NSG.
 
-1. Close.
-
 You have now created an NSG that can be assigned to each of the VNets at the moment though they are not associated.
 
-## Associate the NSGs to your VNets
+## Associate the NSGs to the new HR VNet
 
 You need to associate the NSGs to each VNet.
 
-1. Select **All services** in the upper left corner of the Azure portal
+1. Select **All services** in the upper left corner of the Azure portal.
 
 1. In the search box, enter **Network security group**, select the **star** to the right-hand side of the service to add it to the toolbar. Now select, **Network security groups**.
 
 1. In the **Network security groups** blade, you should see the NSGs you created.
 
-1. Select the NSG you created for the hub (**hub-nsg**).
+1. Select the NSG you created for the hub, **hub-nsg**.
 
 1. Select the **Subnets** side menu.
 
@@ -155,18 +128,18 @@ You have a security requirement to meet for HR application to be hosted on the *
 
 |Property Name | Field Property  |
 |---------|---------|
-|Source     | Any      |
-|Source port ranges     | *        |
-|Destination     | Service Tag        |
-|Destination Service Tag     |  Internet       |
-|Destination port ranges     |   80      |
-|Protocol     |   Any      |
-|Action     |   Deny      |
-|Priority     |   100      |
-|Name     |   BlockP80      |
+|Source             | Any  |
+|Source port ranges | *    |
+|Destination        | Service Tag     |
+|Destination Service Tag |  Internet  |
+|Destination port ranges |  80        |
+|Protocol  | Any      |
+|Action    | Deny     |
+|Priority  | 100      |
+|Name      | Block_80 |
 
-1. Select **OK** to add the rule.
+1. Select **Add** to add the rule.
 
-You have now blocked outbound internet access from the spoke on port 8080.
+You have now blocked outbound internet access from the spoke on port 80.
 
 In this scenario, you've created a spoke Azure Virtual Network and then peered it with an existing hub Virtual Network. You then secured the traffic from this spoke by blocking outbound internet access on port 80 whilst still ensuring it can connect to via the hub.

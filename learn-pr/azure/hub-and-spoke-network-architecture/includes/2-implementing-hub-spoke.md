@@ -25,22 +25,24 @@ Hub and spoke topologies offer several business benefits:
 
 - Increased business agility by standardizing on network connections. Organizations can adapt to changing markets, adding a new branch in a different geopolitical region or a new business channel as spokes
 - Liability reduction by maintaining a consistent architecture. As the business grows, or traffic volumes grow, it's simple to add more systems. The implementation is that much easier as it's a repeat of previously completed work
-- Greater visibility into the business, with data flowing through the same place. The hub becomes the core of the business and provides the foundations for deeper business insights, as it processes every single piece of information belonging to the organization
+- Greater visibility into the business, with data flowing through the same place. The hub is the core of the business and provides the foundations for deeper business insights, as it processes every single piece of information belonging to the organization
 - Share centralized services by multiple workloads into a single location, gives the ability to minimize redundant resources or effort to managed them
 
 ## Walk through of architectural components
 
 ![Image showing hub-spoke shared services architecture](../media/2-hub-shared-services.png)
 
-There's a reference architecture available for a hub-spoke topology in Azure. The image above shows how the architecture is implemented.
+There's a reference architecture available for a hub-spoke topology explained in the Azure documentation. The image above shows the proposed architecture of a pattern to extend your on-premises environment to Azure. 
 
-In essence, this above architecture shows a pattern to extend your on-premises environment to Azure. The hub becomes a VNet in Azure that is the center point for connectivity. Shared services are hosted in their own subnets for sharing with the spokes, and a DMZ subnet to act as a security appliance. The spokes are also VNets in Azure used to isolate individual workloads. The traffic flow between the on-premises data center and Azure is connected through a VPN connection or ExpressRoute that is in its own subnet. The VNets from the spokes to the hub are peered together.
+The hub is a VNet in Azure that is the center point for your businesses connectivity. Shared services are hosted in their own subnets for sharing with the spokes, and a DMZ subnet to act as a security appliance. 
 
-The hub and each spoke can be implemented in separate subscriptions or resource groups and peered together. These subscriptions or resource groups can then share the central services (AD DS Server) providing management for shared services in the hub but decentralizing each workload.
+The spokes are also VNets in Azure used to isolate individual workloads. The traffic flow between the on-premises headquarters and Azure is connected through an ExpressRoute that is in its own gateway subnet. The VNets from the spokes to the hub are peered together.
+
+The hub, and each spoke, can be implemented in separate subscriptions, or resource groups, and peered together. These subscriptions, or resource groups, can then share the central services (AD DS Server) providing management for shared services in the hub but decentralizing each workload.
 
 The components included in this architecture are:
 
-- **Azure Virtual Networks**: Azure Virtual Networks (VNets) are a representation of your own IT network but contained within the cloud, logically isolating dedicated organizational resources in your subscriptions
+- **Azure Virtual Networks**: Azure Virtual Networks (**VNets**) are a representation of your own IT network but contained within the cloud, logically isolating dedicated organizational resources in your subscriptions
 - **Azure VPN Gateway**: Azure VPN Gateway is the bridge between your on-premises network and Azure.  VPN gateways are a special type of VNet gateway that can send encrypted traffic between the two networks over the internet
 - **Azure ExpressRoute**: Azure ExpressRoute is a different service enabling you to extend your on-premises networks to Azure. ExpressRoute is a service in Azure that allows you to extend your on-premises networks over a private connection
 

@@ -1,6 +1,6 @@
 Your company is planning a migration of on-premises resources to Azure, as part of this migration there's a central datacenter based in your headquarters that will remain on-premises and will need connectivity to Azure. Your smaller branch offices need to integrate with the headquarters, with central dependencies such as Azure Active Directory and Azure DNS. The ultimate goal for the migration is to implement a virtual data center in Azure. The chosen topology for the migration is hub and spoke, so you need to understand how to plan the networking design.
 
-Your IT manager has requested you produce a virtual networking design using ExpressRoute for on-premises connectivity that aligns to the chosen topology.
+As a lead architect on the project you are managing the production of a virtual networking design using ExpressRoute for your headquarters connectivity. You also need to make a decision on how to connect your companies satellite offices to the new hub and spoke network.
 
 In this unit, you'll explore virtual networking in the Azure platform, the design considerations needed and how to implement Azure ExpressRoute for connectivity to on-premises networks.
 
@@ -25,34 +25,35 @@ Deploy the resources in the portal in the below Resource Manager template. This 
     az group deployment create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --template-file deploy.json \
-      --parameters @parameters.json
+      --parameters @parameters.json winVmDnsPrefix=mslearn$RANDOM
+      --no-wait
     ```
 
     > [!NOTE]
-    > The VPN gateway can take up to 10 minutes to complete, continue with this unit while the resources are created.
+    > The VPN gateway can take up to 10 minutes to complete, continue with this unit while the infrastructure is created.
 
 ## Overview of virtual networks on Azure
 
 ![Architectural diagram showing hub and spokes connecting to the on-premises resources](../media/plannning-hub.png)
 
-Whichever architectural decision you make, or whichever service model you use, you'll need to work with Azure Virtual Networks (VNets). VNets provide networking services in the cloud as an extension of your existing on-premises network. Azure VNets act as a virtual communication channel, there are no physical wires between resources. VNets enable connections to the internet, communication between your different Azure resources, isolation of those resources, connections to on-premises computers, and network traffic management.
+VNets provide networking services in Azure and can act as an extension of your existing on-premises infrastructure. Azure VNets act as a virtual communication channel, there are no physical wires between resources. VNets enable external connections to the internet, communication between your different internal Azure resources, isolation of those resources, connections to on-premises computers, and network traffic management.
 
 ## Introduction to Azure virtual networking
 
 An Azure Virtual Network can represent your own IT network within the cloud, logically isolating dedicated organizational resources in your subscriptions. Using Azure VNets enables most Azure resources to securely communicate with each other, your on-premises networks, and the internet.
 
-Azure VNets are composed of several components, two components are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
+Azure VNets are component based, two components are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
 
 ![Image showing Azure VNet component architecture](../media/3-azure-VNet-arch.png)
 
-- **Azure Subnet**: Each VNet can be split into several subparts, these subparts are called subnets. Each subnet can be given its own unique properties. For example, imagine you have three virtual machines (VM) within a VNet. Each VM can be in its own subnet with distinct properties. One subnet is configured to allow public facing traffic, while the other two are isolated for private IP restricted traffic only.
+- **Azure Subnet**: Each VNet can include a number of subnets. Each subnet can be given its own unique properties. For example, imagine you have three virtual machines (VM) within a VNet. Each VM can be in its own subnet with distinct properties. One subnet is configured to allow public facing traffic, while the other two are isolated for private IP restricted traffic only.
 - **Network Security Groups**: An NSG is essentially a firewall, NSGs allow you to filter the inbound and outbound traffic through your VNet or subnet. NSGs allow you to filter traffic by source and destination IP address, port, or protocol. Using the previous example, the public facing subnet will have an NSG but the rules for allowing traffic are open to all internet traffic. The two private VMs have strict organizational policies set in the NSG only allowing traffic coming from on-premises machines at the companies head office.
 
-Azure VNets are fundamental to a hub and spoke hybrid cloud approach, they provide your organization with the functionality to connect and isolate the spokes in a hub. VNets are connected together through a concept called **VNet peering**.
+VNets are connected together through a concept called **VNet peering**.
 
 ## Planning and design considerations for virtual networks
 
-Any network, whether on-premises or in the cloud, requires a method for managing the flow, direction, and type of traffic through it. There are several key considerations for VNets:
+Any network, whether on-premises or in the cloud, requires a method for managing the flow, direction, and type of traffic through it. There are several considerations for VNets:
 
 - **Naming conventions**: The name must be unique within a scope. For example, the name of a virtual network must be unique within a resource group, but can be duplicated within a subscription, or Azure region. It's important to decide on a naming convention for VNets before creating the network to ensure you don't end up with duplicates.
 - **Segmentation**: It's important to consider potential isolation of traffic into different subnets, virtual networks, or into separate subscriptions.

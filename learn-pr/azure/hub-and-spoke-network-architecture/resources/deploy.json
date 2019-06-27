@@ -81,20 +81,24 @@
         "gatewayPIPName": "hubVpnGatewayPublicIp",
         "subnetGatewayId": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('hubVnetName'), variables('gatewaySubnetName'))]",
         "winJmphostName": "winJmphostVm",
-        "prodSpokeVnetName": "spokeProdVnet",
+        "prodSpokeVnetName": "webVnet",
         "prodSpokeVnetPrefix": "10.100.0.0/16",
         "spokeWorkloadSubnetName": "WorkloadSubnet",
         "prodSpokeWorkloadSubnetPrefix": "10.100.0.0/16",
+        "prodSpoke2VnetName": "quoteVnet",
+        "prodSpoke2VnetPrefix": "10.50.0.0/16",
+        "prodSpoke2WorkloadSubnetPrefix": "10.50.0.0/16",        
         "hubID": "[resourceId('Microsoft.Network/virtualNetworks/', variables('hubVnetName'))]",
         "prodSpokeID": "[resourceId('Microsoft.Network/virtualNetworks/', variables('prodSpokeVnetName'))]",
         "gatewayID": "[resourceId('Microsoft.Network/virtualNetworkGateways', variables('gatewayName'))]",
         "winVmNicName": "[concat(variables('winJmphostName'), 'NIC')]",
         "winVmStorageName": "[concat('hubwinvm',uniquestring(resourceGroup().id))]",
-        "winNsgName": "winJmpHostNsg",
+        "winNsgName": "winJmpHostNsg",  
         "winNsgRuleName": "inboundRdpNsgRule",
         "winJmphostPublicIpName": "winJmphostVmPublicIp",
         "hubnsgname": "hub-nsg",
-        "spokeprodnsgname": "spokeprod-nsg",
+        "spokeprodnsgname": "web-nsg",
+        "spoke2prodnsgname": "quote-nsg",
         "hubvnetpeeringname": "gwPeering_hubVnet_spokeProdVnet",
         "spokeprodvnetpeeringname": "gwPeering_spokeProdVnet_hubVnet"
     },
@@ -194,7 +198,34 @@
                 "networkSecurityGroup": {"id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('spokeprodnsgname'))]"}
             }
         },
-                {
+        {
+            "type": "Microsoft.Network/virtualNetworks",
+            "apiVersion": "2018-02-01",
+            "name": "[variables('prodSpoke2VnetName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "[variables('prodSpokeVnetPrefix')]"
+                    ]
+                },
+                "enableDdosProtection": false,
+                "enableVmProtection": false
+            }
+        },
+        {
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "apiVersion": "2018-02-01",
+            "name": "[concat(variables('prodSpoke2VnetName'), '/', variables('spokeWorkloadSubnetName'))]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', variables('prodSpoke2VnetName'))]"
+            ],
+            "properties": {
+                "addressPrefix": "[variables('prodSpoke2WorkloadSubnetPrefix')]",
+                "networkSecurityGroup": {"id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('spoke2prodnsgname'))]"}
+            }
+        },        
+        {
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2017-12-01",
             "name": "[variables('winJmphostName')]",
@@ -398,50 +429,6 @@
             "location": "[parameters('location')]",
             "properties": {
                 "securityRules": []
-            }
-        },
-        {
-            "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
-            "apiVersion": "2019-04-01",
-            "name": "[variables('hubvnetpeeringname')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('prodSpokeVnetName'))]"
-            ],
-            "properties": {
-                "remoteVirtualNetwork": {
-                    "id": "[variables('hubVnetName')]"
-                },
-                "allowVirtualNetworkAccess": true,
-                "allowForwardedTraffic": true,
-                "allowGatewayTransit": false,
-                "useRemoteGateways": true,
-                "remoteAddressSpace": {
-                    "addressPrefixes": [
-                        "192.168.0.0/20"
-                    ]
-                }
-            }
-        },
-        {
-            "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
-            "apiVersion": "2019-04-01",
-            "name": "[variables('spokeprodvnetpeeringname')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Network/virtualNetworks', variables('hubVnetName'))]"
-            ],
-            "properties": {
-                "remoteVirtualNetwork": {
-                    "id": "[resourceId('Microsoft.Network/virtualNetworks', variables('prodSpokeVnetName'))]"
-                },
-                "allowVirtualNetworkAccess": true,
-                "allowForwardedTraffic": true,
-                "allowGatewayTransit": true,
-                "useRemoteGateways": false,
-                "remoteAddressSpace": {
-                    "addressPrefixes": [
-                        "10.100.0.0/16"
-                    ]
-                }
             }
         }
     ],

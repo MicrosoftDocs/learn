@@ -7,3 +7,7 @@ You've learned how to:
 - Identify methods to secure connectivity in a hub and spoke network
 
 A hub and spoke architecture in Azure offers great benefits to your organization along it's digital journey. Allowing your business to adapt more easily, get better value out of technology and build complex scalable platforms with relative ease.
+
+## More information
+
+- [Hub and Spoke topology](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
