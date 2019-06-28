@@ -2,7 +2,7 @@
 
 ## Title
 
-Create custom user roles with role-based access control (RBAC)
+Create custom roles for Azure resources with role-based access control (RBAC)
 
 ## Role(s)
 
@@ -87,14 +87,16 @@ Identify the subtasks of *module title*
 
 Topics to cover:
 
-1. When to use custom user roles
+1. When to use custom roles
+1. Difference between Azure AD custom roles and RBAC custom roles. RBAC custom roles are to manage Azure resources.
+1. Who you can assign them to: custom roles can be assigned to users, groups, service principals, or managed identities.
 1. Permissions needed: Owner RBAC role for scope or User Access Administrator RBAC role
-1. For scenario, review VM related built in roles (to see need for custom role): [Built-in roles for Azure resources](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).
+1. For scenario, review VM related built in roles (to see need for custom role): [Built-in roles for Azure resources](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles). Admins should first try to find a suitable built-in role before trying to create a custom role. You could say that the Virtual Machine Contributor built-in role has more permissions than the employee needs and Virtual Machine Administrator Login does not have enough, so you decide to create a custom role.
 1. Role definition structure and properties
 1. Determine permissions needed based on scenario:
    - Resource provider operations (Actions/NotActions)
    - Data operations (DataActions/NotDataActions)
-   - Scope (AssignableScopes)
+   - Scope (AssignableScopes) - Currently, you cannot set AssignableScopes to a management group scope. This may be available  by the time the module is complete. So we'll need to revisit this and update content when management scope is available.
 1. Exercise to create custom user role by using Azure CLI (exercise)
    1. Discover permissions needed
    1. Create JSON file with role definition
@@ -111,6 +113,9 @@ Topics to cover:
    1. Delete custom role in CLI
 
 Rearrange that list above into units as you see fit (learn > exercise > learn > exercise).
+
+- There is a published module on RBAC. There is another one coming 
+about assigning management access with RBAC. That one plans to cover RBAC vs. AD roles. So check those to make sure we're not duplicating content. E.g. Don't explain basic RBAC concepts. 
 
 ## Resources
 
