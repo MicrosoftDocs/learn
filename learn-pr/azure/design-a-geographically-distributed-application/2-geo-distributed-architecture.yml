@@ -13,3 +13,28 @@ title: Design a geographically distributed architecture
 durationInMinutes: 10
 content: |
   [!include[](includes/2-geo-distributed-architecture.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Complete this sentence: The composite SLA uptime for an application built using Azure services is calculated..."
+    choices:
+    - content: "By adding together the individual SLAs and dividing them by the number of services."
+      isCorrect: false
+      explanation: "SLAs aren't derived by the lowest SLA involved, by adding together SLAs, or by averaging SLAs, but as a composite."
+    - content: "By considering the lowest SLA for any of the services being used."
+      isCorrect: false
+      explanation: "SLAs aren't derived by the lowest SLA involved, by adding together SLAs, or by averaging SLAs, but as a composite."
+    - content: "By multiplying together the individual SLAs for any of the services being used."
+      isCorrect: true
+      explanation: "A simple example would be an app consisting of Azure App Service (99.95% SLA) and Azure Active Directory (99.9% SLA); the resultant SLA will be 99.85%."
+  - content: "Complete this sentence: the overall resiliency of an app running in the cloud can be assessed by considering..."
+    choices:
+    - content: "How well it has been architected and coded."
+      isCorrect: false
+      explanation: "An app could be extremely well-architected from an abstract point of view, but if it is not sensitive to the peculiarities of a cloud environment, it will not be resilient."
+    - content: "The SLAs of those services underpinning the application."
+      isCorrect: false
+      explanation: "SLAs merely establish a baseline of uptime; they won't solve coding or architecture issues."
+    - content: "How well it has been architected to deal with any gaps or chokepoints of running in the cloud."
+      isCorrect: true
+      explanation: "Assessing overall resiliency requires consideration of how well the application has been architected to deal with running in the cloud."
