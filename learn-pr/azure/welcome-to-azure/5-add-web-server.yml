@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.welcome-to-azure.5-add-web-server
-title: Add a web server
+title: Exercise - Add a web server
 metadata:
-  title: Add a web server
+  title: Exercise - Add a web server
   description: Bring your virtual machine to life by configuring a web server and serving some custom content.
   ms.date: 09/24/2018
   author: markjulmar
