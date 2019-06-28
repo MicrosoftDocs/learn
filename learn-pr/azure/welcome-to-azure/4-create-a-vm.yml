@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.welcome-to-azure.4-create-a-vm
-title: Create a virtual machine
+title: Exercise - Create a virtual machine
 metadata:
-  title: Create a virtual machine
+  title: Exercise - Create a virtual machine
   description: No matter your area of interest, get started with the cloud by creating your first virtual machine.
   ms.date: 09/24/2018
   author: markjulmar

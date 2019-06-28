@@ -1,5 +1,8 @@
 Here you'll install a web server in your VM and serve up a basic web page that displays the VM's hostname.
 
+> [!IMPORTANT]
+> This exercise uses the virtual machine (VM) you created in the  **Exercise - Create a virtual machine** unit. Please make sure you've completed that exercise before continuing.
+
 To configure a VM, you have several choices. You can connect directly and interactively configure your system. For example, on Windows systems you can create a Remote Desktop session to connect to the UI of your remote Windows computer as if you were seated at it. On Linux systems, you can create an SSH connection to securely work with your remote Linux system from the terminal.
 
 Manual configuration is a good start, but as you add systems, you can automate your deployments. Automation involves running repeatable processes such as programs and scripts that take care of the heavy lifting for you.
