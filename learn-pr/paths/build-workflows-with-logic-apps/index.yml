@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.build-workflows-with-logic-apps
+metadata:
+  title: Build automated workflows to integrate data and apps with Azure Logic Apps
+  description: Azure Logic Apps is a cloud service that automates the execution of your business processes. Learn how to leverage logic apps to create serverless workflows that run automatically when data is available. 
+  brand: azure
+  ms.date: 6/28/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build automated workflows to integrate data and apps with Azure Logic Apps
+summary: Azure Logic Apps is a cloud service that automates the execution of your business processes. Learn how to leverage logic apps to create serverless workflows that run automatically when data is available.
+prerequisites: None
+iconUrl: /learn/achievements/build-workflows-with-logic-apps.svg
+levels: 
+- beginner
+- intermediate
+roles: 
+- developer
+products:
+- azure
+- azure-portal
+- azure-logic-apps
+modules:
+- learn.azure-intro-to-logic-apps
+- learn.azure.route-and-process-data-logic-apps
+- learn.azure.logic-apps-and-custom-connectors
+- learn.azure.logic-apps-and-arm-templates
+trophy:
+  uid: learn.build-workflows-with-logic-apps.trophy
