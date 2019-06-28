@@ -2,8 +2,8 @@
 uid: learn.design-a-geographically-distributed-application.3-geo-distributed-networking
 metadata:
   title: Design a geographically distributed networking architecture
-  description: Design a geographically distributed networking architecture
-  ms.date: 04/30/2019
+  description: In this unit, you'll learn about Azure DNS and Azure Traffic Manager.
+  ms.date: 06/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
