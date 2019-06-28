@@ -13,3 +13,28 @@ title: Design a geographically distributed data architecture
 durationInMinutes: 10
 content: |
   [!include[](includes/5-geo-distributed-data.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When might it be appropriate for this application to use Cosmos DB instead of Azure SQL?"
+    choices:
+    - content: "When you need faster data access"
+      isCorrect: false
+      explanation: "Faster data access isn't a key feature of Cosmos DB."
+    - content: "When you need your data to span all regions associated with your Azure account."
+      isCorrect: false
+      explanation: "Cosmos DB can span all Azure regions, but that isn't required by this application architecture."
+    - content: "When you have documents that you need to store, with widely varying schemas."
+      isCorrect: true
+      explanation: "The shipping company's suppliers may have different way of specifying their products."
+  - content: "What is the best definition of Azure SQL RPO?"
+    choices:
+    - content: "The time required to fail over to the secondary paired region"
+      isCorrect: false
+      explanation: "The time required to fail over to the secondary region does not define the recovery point objective."
+    - content: "The time required for the primary to be back online after a regional failure"
+      isCorrect: false
+      explanation: "The time required to be back online does not define the recovery point objective."
+    - content: "The amount of acceptable data loss, measured by the point in time you want to return to."
+      isCorrect: true
+      explanation: "The RPO refers to the amount of time you can afford to lose."
