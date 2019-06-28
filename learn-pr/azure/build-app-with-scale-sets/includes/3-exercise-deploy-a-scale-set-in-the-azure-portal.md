@@ -99,6 +99,8 @@ In this exercise, you will create a new virtual machine scale set. You'll config
 
     ![Screenshot of the Azure portal, showing the size of the virtual machines in the scale set](../media/3-vmss-size.png)
 
-8. In your web browser, navigate to the public IP address of the scale set:
+NEED TO FIX THIS
 
-9. Verify that the message **Hello World from virtual machine scale set** appears
+8. In your web browser, navigate to the public IP address of the scale set. Verify that the message **Hello World from virtual machine scale set** appears.
+
+    ![Screenshot of the web app](../media/3-web-app.png)
