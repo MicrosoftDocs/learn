@@ -2,14 +2,14 @@
 uid: learn.design-a-geographically-distributed-application.2-geo-distributed-architecture
 metadata:
   title: Design a geographically distributed architecture
-  description: Design a geographically distributed architecture
-  ms.date: 04/30/2019
+  description: In this unit, you'll learn about components of Azure and how they support multi-region architectures for apps.
+  ms.date: 06/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Design a geogrpahically distributed architecture
+title: Design a geographically distributed architecture
 durationInMinutes: 10
 content: |
   [!include[](includes/2-geo-distributed-architecture.md)]
