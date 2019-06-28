@@ -2,8 +2,8 @@
 uid: learn.design-a-geographically-distributed-application.1-introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 04/30/2019
+  description: In this unit, you will learn about a business that wants to build a global app based on Azure.
+  ms.date: 06/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
