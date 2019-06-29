@@ -23,12 +23,12 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
    
    | Parameter | Description |
    |---|---|
-   | `--resource-group` | Use <rgn>[sandbox resource group name]</rgn> as the resource group. |
-   | `--name` | The server name must be made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen. |
-   | `--location` | Use a location from the following list: [!include[](../../../includes/azure-sandbox-regions-note.md)] |
+   | `--name` | Specify a unique server name using lowercase letters 'a'-'z', the numbers 0-9, and the hyphen. |
+   | `--resource-group` | Specify your resource group; use <rgn>[sandbox resource group name]</rgn> for this exercise. |
+   | `--location` | Specify a location from the following list: [!include[](../../../includes/azure-sandbox-regions-note.md)] |
    | `--admin-user` | Specify the admin username for your server. |
    | `--admin-password` | Specify the admin password for your server. |
-   | `--sku-name` | Specify `B_Gen5_1` for pricing tier B, generation 5 hardware, and 1 vCore. |
+   | `--sku-name` | For this exercise, specify `B_Gen5_1` for pricing tier B, generation 5 hardware, and 1 vCore. |
    | `--storage-size` | Specify the storage capacity of the server in megabytes. |
    | `--backup-retention` | Specify the number of days a backup is retained. |
    | `--version` | Specify the major version of the server. |
