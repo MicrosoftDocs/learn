@@ -59,9 +59,9 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
       "administratorLogin": "azureuser",
       "earliestRestoreDate": "2018-09-17T00:35:50.170000+00:00",
       "fullyQualifiedDomainName": "wingtiptoys.postgres.database.azure.com",
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox Resource Group]</rgn>/providers/Microsoft.DBforPostgreSQL/servers/secondserver8",
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox Resource Group]</rgn>/providers/Microsoft.DBforPostgreSQL/servers/wingtiptoys",
       "location": "centralus",
-      "name": "secondserver8",
+      "name": "wingtiptoys",
       "resourceGroup": "<rgn>[sandbox Resource Group]</rgn>",
       "sku": {
         "capacity": 1,
