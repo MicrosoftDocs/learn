@@ -4,7 +4,7 @@ You decide to create an Azure Database for PostgreSQL server to store routes cap
 
 Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 support with 1 vCore and a retention period of 15 days for data backups.
 
-1. Use the `az postgres server create` method to create a new database.
+1. Use the `az postgres server create` method to create a new database using the following syntax.
 
    ```azurecli
    az postgres server create \
@@ -18,7 +18,9 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
       --admin-user [admin_user_name] \
       --admin-password [server_admin_password]
    ```
+   
    Where:
+   
    | Parameter | Description |
    |---|---|
    | `--resource-group` | Use <rgn>[sandbox resource group name]</rgn> as the resource group. |
@@ -32,6 +34,7 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
    | `--version` | Specify the major version of the server. |
 
    For example:
+   
    ```azurecli
    az postgres server create \
       --name wingtiptoys \
