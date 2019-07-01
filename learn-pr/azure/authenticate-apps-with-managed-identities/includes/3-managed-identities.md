@@ -6,7 +6,7 @@ In this unit, you'll explore managed identity within the Azure platform, what ma
 
 ## What are managed identities in Azure
 
-Managed identity in Azure is a feature of Azure Active Directory (Azure AD) that gives the ability to authenticate to any Azure service that supports it without actual authentication credentials appearing in raw code. This is a common challenge in modern organizations where applications are written and they contain snippets of code to authenticate to different cloud services. Having the authentication details in the code means they're liable to mis-use, and are an easy place to start if an unauthorized person were attempting to compromise a system. Managed identity provides a way to solve this problem by granting an automatically managed identity that can be used to authenticate to any Azure service that supports it.
+Managed identity is a feature of Azure Active Directory (Azure AD) that enables you to authenticate any Azure service that supports it, without actual authentication credentials appearing in raw code. This is a common challenge in modern organizations where applications are written and they contain snippets of code to authenticate to different cloud services. Having the authentication details in the code means they're liable to mis-use, and are an easy place to start if an unauthorized person were attempting to compromise a system. Managed identity provides a way to solve this problem by granting an automatically managed identity that can be used to authenticate to any Azure service that supports it.
 
   > [!NOTE]
   > Managed identities can only be used in the context of resources hosted within Azure. For example a custom application hosted on-premises will not be able to use managed identity, in that instance a service principal is the only option.
@@ -16,7 +16,7 @@ Managed identity in Azure is a feature of Azure Active Directory (Azure AD) that
 Managed identities are a free feature within Azure AD for automatically managing identity. Managed identities remove the need for credential rotation or worrying about expiration dates, think back to the creation of the service principal in the previous unit. The keys generated have an expiration date plus several objects need to be stored, too successfully, call the service principal during an authentication request. When the credentials need to be refreshed, it needs someone to change any application or service storing those credentials. Using a managed identity that requirement is removed, Microsoft will handle credential rotation and expiration for you in the background, meaning once you've configured your application to use managed identity, you keep calling the service using the provided token.
 
    > [!NOTE]
-   > Managed identities for Azure resources is the new name for the service formerly known as Managed Service Identity (MSI)which still exists in some client libraries.
+   > The term Managed Service Identity (MSI), which still exists in some client libraries, has been replaced by Managed identities for Azure resources
 
 ## How managed identities work
 
@@ -24,12 +24,12 @@ When working with managed identities, there are several terms commonly referred 
 
 - The Client ID, the client ID is a unique ID linked to the Azure AD application and service principal created when the identity is provisioned.
 - The Object ID - the object ID refers to the service principal object of the managed identity.
-- The Azure Instance Metadata Service (IMDS), IMDS is a REST API enabled when a VM is provisioned using Azure Resource Manager. The endpoint is only accessible from within the VM.
+- The Azure Instance Metadata Service is a REST API enabled when a VM is provisioned using Azure Resource Manager. The endpoint is only accessible from within the VM.
 
 There are two different types of managed identity that can be created, that while similar, are used differently:
 
-- **System-assigned identity** is enabled directly on the Azure service instance, for example on a VM. When that identity is enabled, Azure creates a service principal through Azure Resource Manager for that resource married to the information about the managed identity in the Azure AD tenant. After the identity is created, the credentials are provisioned on to that instance. For example, if you have 2 VMs, managed identity has to be enabled on each VM. The status of the managed identity is then directly linked to the status of the resource, if the resource gets deleted the managed identity is deleted as well.
-- **User-assigned managed identity** is created as a separate standalone Azure resource. When provisioned, Azure creates an identity in same way as a system-assigned identity. However, a user-assigned identity is not tied to the status of an individual resource so can be assigned to one or more Azure services as required. For example, if you have 2 VMs and a backend Azure SQL Database the same identity can be assigned to each resource.
+- **System-assigned identity** is enabled directly on the Azure service instance, for example on a VM. When that identity is enabled, Azure creates a service principal through Azure Resource Manager for that resource married to the information about the managed identity in the Azure AD tenant. The credentials are provisioned on to that instance after the identity is created. For example, if you have two VMs, managed identity has to be enabled on each VM. The status of the managed identity is directly linked to the status of the resource, if the resource is deleted the managed identity gets deleted as well.
+- **User-assigned managed identity** is created as a separate standalone Azure resource. When provisioned, Azure creates an identity in same way as a system-assigned identity. However, a user-assigned identity is not tied to the status of an individual resource so can be assigned to one or more Azure services as required. For example, if you have two VMs and a backend Azure SQL Database the same identity can be assigned to each resource.
 
 Under the hood, a managed identity is a special type of service principal, which can only be used with Azure services that support Azure AD authentication. You'll learn about the workflow for each type of managed identity in the next unit.
 
