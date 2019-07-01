@@ -4,7 +4,7 @@ When an application is outgrowing the local infrastructure on which it is hosted
 
 Tailwind Traders is a local retail company. They are in the process of expanding their business worldwide and, in order to do that, they need to scale their applications with robust solutions that allow them to reach more customers without worrying about their application performance.
 
-In this demo you will see the process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic.**
+In this demo you will see the process by which Tailwind Traders can host their Rewards application in **Azure App Service** and modernize it with **Azure Logic Apps.**
 
 ## Migrate and modernize applications
 
