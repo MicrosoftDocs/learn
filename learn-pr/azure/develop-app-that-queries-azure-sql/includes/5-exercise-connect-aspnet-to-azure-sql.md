@@ -297,7 +297,13 @@ The application can now retrieve the data, now let's update the application to d
 
     This folder contains the .cshtml pages and code files that the web application uses to display information.
 
-1. Using the **Code** editor, open the **Index.cshtml.cs** file. This file contains code that the **Index** page runs when it's displayed. The code defines a class named `CoursesAndModulesModel`. The **Index** page will display the details of courses and modules using this model. In this file, you need to add the code that uses a `DataAccessController` object to fetch this data.
+1. Using the **Code** editor, open the **Index.cshtml.cs** file.
+
+    ```bash
+    code Index.cshtml.cs
+    ```
+
+    This file contains code that the **Index** page runs when it's displayed. The code defines a class named `CoursesAndModulesModel`. The **Index** page will display the details of courses and modules using this model. In this file, you need to add the code that uses a `DataAccessController` object to fetch this data.
 
     ```C#
     using System;
