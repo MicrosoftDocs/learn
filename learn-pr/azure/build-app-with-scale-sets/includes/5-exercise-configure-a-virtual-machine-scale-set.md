@@ -17,11 +17,11 @@ In this exercise, you'll:
 
 4. Click **Enable autoscale**
 
-    ![Screen shot of the virtual machine scale set page](../media/5-enable-autoscale.png)
+    ![Screenshot of the virtual machine scale set page](../media/5-enable-autoscale.png)
 
 5. In the **Default** scale rule, set the **Scale mode** to **Scale based on a metric**, and then click **+ Add a rule**.
 
-   ![Screen shot of the virtual machine scale set page](../media/5-add-rule.png)
+   ![Screenshot of the virtual machine scale set page](../media/5-add-rule.png)
 
 6. On the **Scale rule** page, specify the following settings, and then click **Add**:
 
@@ -34,7 +34,7 @@ In this exercise, you'll:
     | Operator | Greater than |
     | Threshold | 75 |
     | Duration | 10 |
-    | Operation | Increase count by !
+    | Operation | Increase count by |
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 
@@ -53,7 +53,7 @@ In this exercise, you'll:
     | Operator | Less than |
     | Threshold | 50 |
     | Duration | 10 |
-    | Operation | Decrease count by !
+    | Operation | Decrease count |
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 
@@ -61,4 +61,4 @@ In this exercise, you'll:
 
     The **Default** scale condition now contains two scale rules. One to scale the number of instances out, and another to scale the number of instances back in again.
 
-    ![Screen shot of the virtual machine scale set page](../media/5-scale-rules.png)
+    ![Screenshot of the virtual machine scale set page](../media/5-scale-rules.png)

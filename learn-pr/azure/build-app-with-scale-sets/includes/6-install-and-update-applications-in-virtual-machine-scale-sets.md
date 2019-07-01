@@ -1,20 +1,22 @@
-You need to configure your virtual machines when they start in the scale set and periodically will need to update the application running on your virtual machine. By the end of this unit, you'll understand:
+When you deploy an application across a scale set, you need a mechanism that makes it possible to update your application consistently, across all instances in the scale set. You can achieve this task by using a custom script extension.
 
-- What is Azure Custom Script Extension. 
-- How to use Azure Custom Script Extension. 
+In the shipping company scenario, you need a quick way to roll out updates to the application while minimizing disruption to the end users. A custom script extension is the ideal mechanism to perform this operation.
+
+In this unit, you'll learn:
+
+- What an Azure custom script extension is.
+- How to use an Azure custom script extension.
 - How to update a running application on a scale set.
 
+## Install an application using an Azure custom script extension
 
+An Azure custom script extension enables you to download and run a script on Azure virtual machines. You might typically use a custom script extension for post-deployment configuration. You can also use a custom script extension for software installation, or any other scriptable configuration or management task.
 
-## **Install an application using Azure custom script extension**
+You can store custom scripts in Azure Storage, or GitHub. You can also add a custom script to a virtual machine using the Azure portal.
 
-Custom Script Extension allows you to download and execute scripts on Azure VMs. Typically this is used for post-deployment configuration, software installation, or any other configuration/management task. 
+You can combine a custom script extension with Azure Resource Manager (ARM) templates. This technique gives you a mechanism to run custom scripts as part of a templated deployment, used with the Azure CLI, PowerShell, Portal, or REST API. You can find more information about this approach at  [Custom Script Extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-windows) and [Use the Azure Custom Script Extension Version 2 with Linux virtual machines](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux).
 
-Custom scripts can be hosted on Azure Storage (for example, Blob), GitHub or added to a VM through the Azure portal at extension runtime.
-
-Custom Script Extension can be integrated with Azure Resource Manager (ARM) templates, used with the Azure CLI, PowerShell, Portal, or REST API.  More information can be found [here](https://docs.microsoft.com/azure/virtual-machines/linux/extensions-customscript). 
-
-To use the Custom Script Extension with the Azure CLI, you create a JSON file that defines what files to obtain and commands to execute.  Below is an example of a custom script configuration that downloads an application and installs it on a host instance: 
+To use a custom script extension with the Azure CLI, you create a configuration file that defines the files to obtain and the commands to run. This file is in JSON format.  The example below shows a custom script configuration that downloads an application from a repository in  GitHub and installs it on a host instance by running a script named *custom_application_v1.sh*: 
 
 ```json
 # yourConfigV1.json 
@@ -24,7 +26,7 @@ To use the Custom Script Extension with the Azure CLI, you create a JSON file th
 }
 ```
 
-Now, you need to deploy this configuration on the scale set using Custom Script Extension. Below is an example of how to do this in Azure CLI: 
+To deploy this configuration on the scale set, you use a custom script extension. The code below shows how to create a custom script extension for a virtual machine scale set using the Azure CLI:
 
 ```powershell
 az vmss extension set \
@@ -36,11 +38,7 @@ az vmss extension set \
   --settings @yourConfigV1.json
 ```
 
-
-
-You have used a Custom Script Extension to install an application on your scale set. 
-
-
+START HERE TOMORROW
 
 ## **Update an app deployment using custom script extension**
 

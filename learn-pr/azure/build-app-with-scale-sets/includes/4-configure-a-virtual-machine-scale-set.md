@@ -2,7 +2,7 @@ If you need to handle a steady expansion of work over time, then the best approa
 
 Horizontal scaling enables you to add instances to your virtual machine scale set. In the shipping company scenario, horizontal scaling is a useful strategy to handle the fluctuating number of requests over time.
 
-By the end of this unit, you'll learn how to configure autoscaling for a virtual machine scale set. You'll see how to define scale rules that can trigger the allocation and deallocation of virtual machines by monitoring various performance metrics.
+In this unit, you'll learn how to configure autoscaling for a virtual machine scale set. You'll see how to define scale rules that can trigger the allocation and deallocation of virtual machines by monitoring various performance metrics.
 
 ## Scaling virtual machine scale sets
 
