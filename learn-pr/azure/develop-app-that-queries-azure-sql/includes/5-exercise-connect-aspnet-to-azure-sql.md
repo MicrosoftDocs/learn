@@ -165,7 +165,7 @@ Now let's add the code to the application that will retrieve the course data fro
 1. Return to the code editor, and replace the value of the connectionString variable with the value from the clipboard. In the connection string, replace the text `{your_username}` with the value `azuresql`, and replace the text `{your_password}` with the password for this account.
 
     ```C#
-    private string connectionString = "Server=tcp:courseserver-nnn.database.windows.net,1433;Initial Catalog=coursedatabase-nnn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     ```
 
 1. After the comment `//TODO: Connect to the database`, replace the commented out `using` statement with the following code.
@@ -239,7 +239,7 @@ Now let's add the code to the application that will retrieve the course data fro
         public class DataAccessController
         {
             // Add your connection string in the following statements
-            private string connectionString = "Server=tcp:courseserver-101.database.windows.net,1433;Initial Catalog=coursedatabase-101;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            private string connectionString = "Server=tcp:courseserver101.database.windows.net,1433;Initial Catalog=coursedatabase101;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             // Retrieve all details of courses and their modules    
             public IEnumerable<CoursesAndModules> GetAllCoursesAndModules()
@@ -488,6 +488,7 @@ With the application fully configured to retrieve and display the course data to
     ```bash
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --output table
         --name $(az webapp list --output tsv --query [].name)
     ```
 
