@@ -31,7 +31,7 @@ In this module, we're using the consumption tier for Azure API Management becaus
 
 ## Create a Web API in Azure Apps Service
 
-Now, create a new web API in Azure App Service:
+Now, deploy the sample web API to Azure App Service:
 
 1. In the Cloud Shell, to clone the sample web API, run this command:
 
@@ -87,7 +87,8 @@ Now that we have a functional API, let's set up API Management:
 Now, if the Redis cache deployment is complete, you can configure the API Management instance to use it as an external cache:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All Resources**, and then click the new Redis cache.
-1. Under **Settings**, click **Access keys**.
+1. Check the **Status** value at the top of the window. If the status has not yet reached **Running**, you'll have to wait until the Redis cache deployment has completed. You can refresh this page every couple of minutes to check the status.
+1. Once setup is complete, under **Settings**, click **Access keys**.
 1. To the right of the **Primary connection string** textbox, click the **Copy to clipboard** button.
 
     ![Obtaining the Redis cache connection string](../media/5-obtain-redis-cache-connection-string.png)
@@ -111,7 +112,7 @@ Before you can apply a policy, you must add the API to the API Management instan
 
     ![Adding an API](../media/5-add-api-to-management.png)
 
-1. In the **Create from OpenAPI specification** window, in the **OpenAPI specification** textbox, paste the URL for the OpenAPI definition that you copied earlier.
+1. In the **Create from OpenAPI specification** window, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you copied earlier.
 1. Click **Create**. Azure adds the API to the management instance.
 
     ![Adding an API](../media/5-complete-api-add.png)
