@@ -113,7 +113,7 @@ Let's create the database and server to store the data for the application.
     | Property  | Value  |
     |---|---|
     | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group |
+    | Resource Group | <rgn>[Sandbox resource group]</rgn> |
     | Database name | The database must have a unique name. We suggest using something like **coursedatabase*nnn*** where *nnn* is a random number. |
     | Server | Click **Create new**, and enter the details shown in the table below |
     | Want to use SQL elastic pool? | No |
