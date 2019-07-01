@@ -17,7 +17,6 @@ abstract: |
   - Learn about the concepts related to speaker recognition.
   - Explore the Speaker Recognition APIs.
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg
 levels:
 - intermediate

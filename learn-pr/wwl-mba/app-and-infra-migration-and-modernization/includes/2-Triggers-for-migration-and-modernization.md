@@ -27,7 +27,7 @@ A great online shopping experience begins with great software, and Alaska Airlin
 | ------------ | -------------|
 |![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Alaska Airlines modernized their business using Microsoft Azure.|
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NNJa]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2WRoM]
 
 As you saw in the video, Alaska Airlines migrated from a traditional online shopping experience hosted in physical machines to running their applications on Azure. This shift allows Alaska Airlines to deploy faster, iterate rapidly, and experiment to find out what works best for their customers.
 

@@ -23,7 +23,7 @@ Using the decision matrix from the previous unit, you can see why the other APIs
 
 | API | Description |
 |---|---|
-| **Azure Table** | This API should only be used to allow existing apps that are based on the Table API access to Cosmos DB. However, new projects should always choose Core (SQL). |
+| **Azure Table** | This API should only be used to allow existing apps that are based on the Table API access to Azure Cosmos DB. However, new projects should always choose Core (SQL). |
 | **Cassandra** | This API isn't a good choice in this particular scenario, because the schema is unknown and will change over time. |
 | **Gremlin** | This API isn't a good choice since the scenario  doesn't need to process graph-based data. |
 | **MongoDB** | MongoDB's lack of support for SQL-like queries give Core (SQL) an advantage for your existing relational database users. |

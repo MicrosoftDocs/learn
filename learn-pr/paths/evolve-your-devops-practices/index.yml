@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.azdo.evolve-your-devops-practices
+metadata:
+  title: Evolve your DevOps practices learning path
+  description: Azure DevOps enables you to build, test, and deploy any application to any cloud. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
+  brand: azure
+  ms.date: 9/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  #ms.learn-contact: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Evolve your DevOps practices
+summary: |
+  DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
+
+  In this learning path, you will get started on your DevOps journey. You will:
+    - See how value stream maps can help you evaluate your current processes and technologies
+    - Sign up for your free Azure DevOps account
+    - Learn how to plan and track work items using Azure Boards
+
+cardDescription: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
+prerequisites: None
+iconUrl: /learn/achievements/azure-devops/evolve-your-devops-practices.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+modules:
+- learn.azdo.assess-your-development-process
+- learn.get-started-with-devops
+- learn.azdo.choose-an-agile-approach
+trophy:
+  uid: learn.azdo.evolve-your-devops-practices.trophy

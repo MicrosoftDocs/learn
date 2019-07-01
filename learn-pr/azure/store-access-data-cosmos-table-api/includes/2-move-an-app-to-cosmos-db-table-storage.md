@@ -1,8 +1,8 @@
-Companies that use Azure Storage tables for business-critical applications may find that Cosmos DB provides a better service for their needs.
+Companies that use Azure Storage tables for business-critical applications may find that Azure Cosmos DB provides a better service for their needs.
 
 Suppose that your lenses database, which is implemented in Azure Storage tables, has been working well. The company has recently expanded into several new countries, and you have found that the performance of the database is not always as good in those countries as it is in your . Your technical director has asked you to determine if there is a way to eliminate these problems without rewriting the app that uses the database.
 
-Here, you will learn how Cosmos DB provides a more scalable alternative to Azure Storage tables and does not require developers to rewrite code.
+Here, you will learn how Azure Cosmos DB provides a more scalable alternative to Azure Storage tables and does not require developers to rewrite code.
 
 ## Features of Azure Storage tables
 
@@ -38,28 +38,28 @@ Azure storage accounts replicate data to multiple locations to ensure high-avail
 
 ## Features of Azure Cosmos DB
 
-Cosmos DB is Microsoft's globally distributed, multi-model database service with Azure.
+Azure Cosmos DB is Microsoft's globally distributed, multi-model database service with Azure.
 
-**Multi-model** means that you can use one of many data access methods and APIs to read and write data. For example, you can use SQL, but if you prefer a NoSQL approach, you can use MongoDB, Cassandra, or Gremlin. Cosmos DB includes the Tables API, which means that if you move your data from Azure Storage tables into Cosmos DB, you don't have to rewrite your apps. Instead, you just change their connection strings.
+**Multi-model** means that you can use one of many data access methods and APIs to read and write data. For example, you can use SQL, but if you prefer a NoSQL approach, you can use MongoDB, Cassandra, or Gremlin. Azure Cosmos DB includes the Tables API, which means that if you move your data from Azure Storage tables into Azure Cosmos DB, you don't have to rewrite your apps. Instead, you just change their connection strings.
 
-Cosmos DB can replicate data for read and write access to multiple regions. Clients can connect to a local replica both to query but also to modify data, which is not possible in Azure Storage tables.
+Azure Cosmos DB can replicate data for read and write access to multiple regions. Clients can connect to a local replica both to query but also to modify data, which is not possible in Azure Storage tables.
 
-## Differences between Azure Storage tables and Cosmos DB tables
+## Differences between Azure Storage tables and Azure Cosmos DB tables
 
-There are some differences in behavior between Azure Storage tables and Cosmos DB tables to remember if you are considering a migration. For example:
+There are some differences in behavior between Azure Storage tables and Azure Cosmos DB tables to remember if you are considering a migration. For example:
 
-- You are charged for the capacity of a Cosmos DB table as soon as it is created, even if that capacity isn't used. This charging structure is because Cosmos DB uses a reserved-capacity model to ensure that clients can read data within 10 ms. In Azure Storage tables, you are only charged for used capacity, but read access is only guaranteed within 10 seconds.
-- Query results from Cosmos DB are not sorted in order of partition key and row key as they are from Storage tables.
-- Row keys in Cosmos DB are limited to 255 bytes.
+- You are charged for the capacity of an Azure Cosmos DB table as soon as it is created, even if that capacity isn't used. This charging structure is because Azure Cosmos DB uses a reserved-capacity model to ensure that clients can read data within 10 ms. In Azure Storage tables, you are only charged for used capacity, but read access is only guaranteed within 10 seconds.
+- Query results from Azure Cosmos DB are not sorted in order of partition key and row key as they are from Storage tables.
+- Row keys in Azure Cosmos DB are limited to 255 bytes.
 - Batch operations are limited to 2 MBs.
-- Cross-Origin Resource Sharing (CORS) is not currently supported by Cosmos DB.
-- Table names are case-sensitive in Cosmos DB. They are not case-sensitive in Storage tables.
+- Cross-Origin Resource Sharing (CORS) is not currently supported by Azure Cosmos DB.
+- Table names are case-sensitive in Azure Cosmos DB. They are not case-sensitive in Storage tables.
 
 While these differences are small, you should take care to review your apps to ensure that a migration does not cause unexpected problems.
 
 ## How to choose a storage location
 
-Each organization has different priorities for their NoSQL database system. Once you have identified those priorities, use this table to help you choose whether to use Azure Storage tables or Cosmos DB tables to persist data for your applications:
+Each organization has different priorities for their NoSQL database system. Once you have identified those priorities, use this table to help you choose whether to use Azure Storage tables or Azure Cosmos DB tables to persist data for your applications:
 
 | Priority | Azure Storage Tables | Azure Cosmos DB Tables |
 | --- | --- | --- |
@@ -73,9 +73,9 @@ Each organization has different priorities for their NoSQL database system. Once
 
 ## How to migrate an app to Azure Cosmos DB
 
-If you have decided to move to Cosmos DB, and you currently have data in one or more Azure Storage tables, you must consider how to move that data into Cosmos DB. Microsoft provides two tools to complete this task:
+If you have decided to move to Azure Cosmos DB, and you currently have data in one or more Azure Storage tables, you must consider how to move that data into Azure Cosmos DB. Microsoft provides two tools to complete this task:
 
-- **The Azure Cosmos DB Data Migration Tool.** This open-source tool is built specifically to import data into Cosmos DB from many different sources, including tables in Azure Storage, SQL databases, MongoDB, text files in JSON and CSV formats, HBase, and other databases. The tool has both a command-line version and a GUI version. You supply the connection strings for the data source and the Cosmos DB target, and you can filter the data before migration.
+- **The Azure Cosmos DB Data Migration Tool.** This open-source tool is built specifically to import data into Azure Cosmos DB from many different sources, including tables in Azure Storage, SQL databases, MongoDB, text files in JSON and CSV formats, HBase, and other databases. The tool has both a command-line version and a GUI version. You supply the connection strings for the data source and the Azure Cosmos DB target, and you can filter the data before migration.
 
 - **AzCopy.** This command-line only tool is designed to enable developers to copy data to and from Azure Storage accounts. The process has two stages:
 

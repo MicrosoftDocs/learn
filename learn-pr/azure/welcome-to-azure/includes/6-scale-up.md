@@ -4,6 +4,10 @@ In your data center, you might move your web server to more powerful hardware to
 
 Before you scale up your VM to a more powerful size, let's first define what scale means.
 
+> [!IMPORTANT]
+> This exercise uses the virtual machine (VM) you created in the  **Exercise - Create a virtual machine** unit. Please make sure you've completed that exercise before continuing.
+
+
 ## What is scale?
 
 _Scale_ refers to adding network bandwidth, memory, storage, or compute power to achieve better performance.  

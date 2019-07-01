@@ -9,6 +9,6 @@ metadata:
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+durationInMinutes: 15
 content: |
   [!include[](includes/6-load-data-using-data-factory.md)]

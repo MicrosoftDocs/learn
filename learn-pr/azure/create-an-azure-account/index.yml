@@ -21,7 +21,6 @@ prerequisites: |
   - Knowledge of basic cloud computing terms and concepts
   - A valid credit card to register with Azure
 iconUrl: /learn/achievements/create-azure-account.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

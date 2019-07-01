@@ -21,7 +21,6 @@ abstract: |
 prerequisites: |
   - An understanding of your options within Azure infrastructure components
 iconUrl: /learn/achievements/predict-costs-and-optimize-spending.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

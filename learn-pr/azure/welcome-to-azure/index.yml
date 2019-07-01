@@ -18,7 +18,6 @@ abstract: |
   - Configure your virtual machine to run a basic web server
   - Scale up your server to give you more compute power
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/welcome-to-azure.svg
 levels:
 - beginner

@@ -22,7 +22,7 @@ levels:
 - intermediate
 roles:
 - developer
-- solution-architect
+- data-engineer
 products:
 - azure
 - azure-databricks

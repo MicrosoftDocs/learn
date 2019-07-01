@@ -90,7 +90,7 @@ Identify the subtasks of *Build code that recovers from transient errors*
 
     List the steps which apply the learning content from previous unit (separate out each language):
 
-    1. Run a script in the Cloud Shell to create a cosmos DB account and database.
+    1. Run a script in the Cloud Shell to create an Azure Cosmos DB account and database.
     1. Complete the steps to get the MongoDB connection string.
     1. git clone source code.
     1. Build the app in chosen language.
@@ -185,4 +185,4 @@ Comsos DB retry:
 - [MongoDB](https://docs.mongodb.com/manual/core/retryable-writes/#retryable-writes)
 
 ## Additional Comments
-The learners will be presented with three chat apps written in C# .NET Core (console app), Node.JS (web app), and Java (console app). All of them can be run from the Cloud Shell. The chat app will read and write chat messages through a MongoDB API to a back-end Cosmos DB. The module will be written generically, with the students able to switch to the language they're more familiar with.
+The learners will be presented with three chat apps written in C# .NET Core (console app), Node.JS (web app), and Java (console app). All of them can be run from the Cloud Shell. The chat app will read and write chat messages through a MongoDB API to a back-end Azure Cosmos DB. The module will be written generically, with the students able to switch to the language they're more familiar with.

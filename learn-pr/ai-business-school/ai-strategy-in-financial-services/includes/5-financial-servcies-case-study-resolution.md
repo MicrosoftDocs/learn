@@ -13,23 +13,34 @@ What if AI could be used to profile a user’s unique interaction for authentica
 ### Invisible protection, continuous authentication, and no disruption
 
 By invisibly “fingerprinting” users as they interact with technology, BioCatch’s behavior-based software measures and analyzes patterns in human activities. BioCatch extracts more than 2,000 profiling metrics from user interaction and selects the 20 that make a person most unique. For instance, it might note how they use a keyboard and mouse, how they hold their phone, or how they swipe and tap.
-
+:::row:::
+:::column span="2":::
 After a few minutes of user activity, a robust user profile is built using machine learning which is then used to authenticate the user. The software then compares the account holder’s use patterns against their unique biometric profile. The system can detect anomalies and suspicious behavior at an extremely high level of accuracy and low rate of false positives.
 
 The software continuously operates in real time, protecting against identity fraud and other malevolent activity. This continuous operation also means that users are not wrongly identified as fraudulent when they do something differently because they’re tired, or they’re using a different device than they normally use.
 
 Because authentication happens in the background, users don’t find the authentication at all disruptive. It happens invisibly, keeping them safe without the hassle of interruption.
+:::column-end:::
+:::column span="2":::
+!["Organizations sit on troves of data; much of it is uncorrelated, which means that decision-makes and business strategists miss opportunites to create improved experiences for existing customers." - Frances Zelazny, Chief Strategy and Marketing Officer at BioCatch](../media/1-3-4-A-BioCatch-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
 
 ## Results
 
 BioCatch’s patented technology is in use at major banks and ecommerce institutions all over the world, including the Royal Bank of Scotland. Today, they safeguard transactions for more than 90 million users. Institutions benefit from a return of 10–15 times their investment, reducing false positives, authentication escalations, and the number of customers lost to bad user experience.
-
+:::row:::
+:::column span="2":::
 “There are many proof points on the return on investment that BioCatch generates for a business,” says Frances Zelazny. “Interestingly enough, this comes not only from the actual fraud that is caught but equally, in the case of identity proofing, the number of false declines that are prevented, or in the authentication use case, the cost savings associated with managing false alarms and unnecessary escalations. During the initial evaluation period, one major credit card client reported that the BioCatch system caught 50 percent more fraud while reducing false declines by 33 percent. Looking at it more broadly, this has immediate impact to the bottom line and translates into significant amount of recouped business and increased customer satisfaction.”
 
 Implementation has been easy for financial organizations—BioCatch is provided as an API service, so there is little to no impact on an organization’s existing tech stack. In 2018, BioCatch placed 12th on Deloitte’s Technology Fast 500, after growing over 10,000 percent over three years.<sup>5</sup>
 
 “Cybersecurity and digital identity are board-level topics today and managing the traditional tradeoff between the user experience and security is something that all business line managers struggle to deal with,” says Frances Zelazny.
-
+:::column-end:::
+:::column span="2":::
+![50% increase in fraud detection, false positives reduced by 33%](../media/1-3-4-B-BioCatch-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
 “As businesses push the boundaries of digital transformation, one of the main challenges is providing an omni-channel experience that wows the customer at every step of the way, increasing brand loyalty and overall customer satisfaction.”
 
 ## Key lessons

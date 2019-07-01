@@ -9,6 +9,8 @@ Based on the complexity of the raw data and your final output requirements, ther
 
 Databricks supports the end-to-end process of extracting data from the source, transforming that data, and finally loading the data into the target database. This entire process is known as extract, transform, and load (ETL).
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you'll:

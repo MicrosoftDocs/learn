@@ -1,12 +1,20 @@
 ## Industry context
 
+:::row:::
+:::column span="2":::
 Ochsner Health System is Louisiana’s largest not-for-profit health system with 30 owned, managed, and affiliated hospitals and more than 80 health centers and urgent care centers. Ochsner has more than 18,000 employees and over 1,100 physicians in more than 90 medical specialties and subspecialties.
 
 Ochsner is actively engaged in both training and research. It sponsors or hosts around 290 medical residents, 550 medical students, 150 advanced practice providers, 1,200 nursing students and 575 allied health students every year. Ochsner also conducts more than 700 clinical research studies annually.
 
 Ochsner has a history of expansion and innovation. In 2009, Ochsner partnered with the University of Queensland, Australia, to create the Ochsner Clinical School and an innovation accelerator called innovationOchsner (iO), with the aim of improving the experience of both patients and healthcare providers within their system. Ochsner also showed positive growth in terms of clinical visits, patients served, and revenue in the years 2016, 2017 and 2018, with revenue surpassing $3B for the first time in 2017.
+:::column-end:::
+:::column span="2":::
+![Ochsner Health System: South Lousiana's largest not-for-profit healthcare delivery system. 1100 Physicians, 1200 nursing students, 1800 employees, 500 medical students](../media/1.6.2.A.Ochsner-Health-System-case-study-introduction1.jpg)
+:::column-end:::
+:::row-end:::
 
 To deal with the challenges of being a large organization in a sector that places extraordinary demands on personnel while still requiring care and attention to detail, Ochsner has turned to AI and machine learning tools to increase care efficiency and improve patient experiences.
+
 ## Challenge
 
 In the United States, the healthcare system is competitive, even in the not-for-profit sector. Clinician shortages, time and cost pressures, and increasing patient needs create several challenges for healthcare organizations trying to improve patient experiences and outcomes.

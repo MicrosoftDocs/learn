@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.4-index-data-with-azure-search
+title: Index data with Azure Search
+metadata:
+  title: Index data with Azure Search
+  description: Load data into an index in an Azure Search service
+  ms.date: 06/13/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-index-data-with-azure-search.md)]
