@@ -78,7 +78,7 @@ Now let's install Docker:
 
 ## Create and run a SQL Server Container
 
-<!-- TODO: add blurb -->
+Now that the installation is complete, we can use the Microsoft SQL Server container image to start a SQL Server database:
 
 1. In the terminal, to pull the SQL Server container image, type the following command, and then press Enter:
 
@@ -101,7 +101,7 @@ Now let's install Docker:
 
 ## Install Azure Data Studio
 
-<!-- TODO: Add blurb -->
+Azure Data Studio is a free tool with a Graphical User Interface (GUI). Becuase it runs on Linux, we can use to explore databases and run queries when we don't have Windows:
 
 1. To install software dependencies for Azure Data Studio, type the following command and press Enter:
 
@@ -118,7 +118,6 @@ Now let's install Docker:
 
 1. At the **Password** prompt, type **Pa$$w0rdLinux**, and then press Enter.
 1. Type **y** to any confirmation questions.
-
 
 ## Query the database server by using Azure Data Studio 
 
