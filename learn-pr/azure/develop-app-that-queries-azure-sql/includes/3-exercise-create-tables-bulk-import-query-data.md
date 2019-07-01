@@ -304,7 +304,7 @@ With the database created, you can now create the tables that will store the dat
 
     This time you should see the modules in the **Results** window; there are 16 rows.
 
-1. Switch back to the Cloud Shell, and run the following command to connect to the database. Replace `<password>` with the password for the **azuresql** user.
+1. Switch back to the Cloud Shell, and run the following command to connect to the database. Replace `<nnn>` with your database number and `<password>` with the password for the **azuresql** user.
 
     ```bash
     sqlcmd -S "courseserver<nnn>.database.windows.net" -d "coursedatabase<nnn>" -U azuresql -P <password>
