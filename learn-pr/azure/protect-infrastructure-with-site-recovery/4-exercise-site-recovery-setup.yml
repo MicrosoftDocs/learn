@@ -2,9 +2,9 @@
 uid: learn.protect-infrastructure-with-azure-site-recovery.4-exercise-site-recovery-setup
 metadata:
   title: Exercise - Set up disaster recovery with Azure Site Recovery
-  description: TODO
+  description: Set up disaster recovery with Azure Site Recovery
   ms.date: 04/30/2019
-  author: jboeshart
+  author: dwarrener
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
