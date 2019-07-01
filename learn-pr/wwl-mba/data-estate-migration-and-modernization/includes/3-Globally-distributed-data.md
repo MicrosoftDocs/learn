@@ -29,7 +29,7 @@ Now that you’ve learned how data flows in a typical global architecture, take 
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB to enable new cloud applications.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB to enable new cloud applications.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrrJr ]
 
