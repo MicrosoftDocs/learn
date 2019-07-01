@@ -6,7 +6,7 @@ There are some great Python tutorials online, including [the official tutorial](
 
 Here are some useful links to explore some of the topics we've covered in this module.
 
-- [Install Python for Windows 10 from the Microsoft Store](https://www.microsoft.com/python-37/9nj46sx7x90p?activetab=pivot:overviewtab)
+- [Install Python for Windows 10 from the Microsoft Store](https://www.microsoft.com/p/python-37/9nj46sx7x90p?activetab=pivot:overviewtab)
 
 - [Download and Install Python for Windows, macOS, and Linux](https://www.python.org/downloads/)
 
