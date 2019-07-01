@@ -24,6 +24,7 @@ prerequisites: |
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:
