@@ -26,7 +26,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
 
-1. In the list of all templates available to this function app, select **Http trigger** .
+1. In the list of all templates available to this function app, select **HTTP trigger** .
 
 1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
 

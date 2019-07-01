@@ -1,4 +1,4 @@
-The free sandbox allows you to create resources in a subset of Azure's global regions. Select a region from the following list when creating any resources:
+The free sandbox allows you to create resources in a subset of the Azure global regions. Select a region from this list when you create resources:
 
 :::row:::
     :::column:::

@@ -35,7 +35,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 1. Open a web browser and sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
     > [!IMPORTANT]
-    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
+    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are using by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
 
 1. On the left pane, select **+ Create a resource**
 
@@ -91,7 +91,7 @@ You can start with using an understandable naming convention. We named our resou
 
 ### Organizing principles
 
-Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all virtual machines in another resource group, and all Cosmos DB instances in yet another resource group.
+Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all virtual machines in another resource group, and all Azure Cosmos DB instances in yet another resource group.
 
 ![Image of resources organized by type](../media/2-resource-type-rg.png)
 

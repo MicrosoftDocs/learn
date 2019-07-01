@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.implement-code-workflow.7-track-build-history
+title: Exercise - Track your build history
+metadata:
+  title: Exercise - Track your build history
+  description: Add a widget to the dashboard to track the history of your builds.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-track-build-history.md)

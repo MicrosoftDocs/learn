@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-on-premises-network-with-vpn-gateway.3-exercise-prepare-azure-and-on-premises-vnets-using-azure-cli-commands
+title: Exercise - Prepare Azure and on-premises virtual networks by using Azure CLI commands
+metadata:
+  title: Exercise - Prepare Azure and on-premises virtual networks by using Azure CLI commands
+  description: Exercise - Prepare Azure and on-premises virtual networks by using Azure CLI commands
+  ms.date: 04/26/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-prepare-azure-and-on-premises-vnets-using-azure-cli-commands.md)]

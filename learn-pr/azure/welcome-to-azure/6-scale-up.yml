@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.welcome-to-azure.6-scale-up
-title: Scale up
+title: Exercise - Scale up
 metadata:
-  title: Scale up
+  title: Exercise - Scale up
   description: Scale up your virtual machine to give it more compute power and memory.
   ms.date: 09/24/2018
   author: markjulmar

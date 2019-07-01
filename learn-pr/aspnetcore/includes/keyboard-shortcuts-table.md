@@ -1,7 +1,7 @@
 > [!TIP]
-> The following keyboard shortcuts will be useful throughout this module.
+> The following keyboard shortcuts are useful within the Cloud Shell editor.
 >
-> | Keyboard shortcut                         | Command |
-> |-------------------------------------------|---------|
-> | `Ctrl+V` (Windows)<br>`Command+V` (macOS) | Paste   |
-> | `Ctrl+S` (Windows)<br>`Command+S` (macOS) | Save    |
+> | Keyboard shortcut                                      | Command |
+> |--------------------------------------------------------|---------|
+> | <kbd>Ctrl+V</kbd> (Windows)<br><kbd>⌘+V</kbd> (macOS) | Paste   |
+> | <kbd>Ctrl+S</kbd> (Windows)<br><kbd>⌘+S</kbd> (macOS) | Save    |

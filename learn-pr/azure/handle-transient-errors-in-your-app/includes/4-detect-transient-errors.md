@@ -16,11 +16,11 @@ Azure Cosmos DB databases are RESTful services, so can return all the above plus
 
 Azure SQL Database also has well-defined error codes, for example, **40501**: The service is currently busy. Retry the request after **X** seconds.
 
-Your team's chat app implements a virtual white board. People can leave messages for the whole team to read. It uses a Cosmos DB database as the message store, created with the MongoDB API. The team could quickly create clients for the chat app in .NET Core using C#, Java, and Node using their previous MongoDB knowledge.
+Your team's chat app implements a virtual white board. People can leave messages for the whole team to read. It uses an Azure Cosmos DB database as the message store, created with the MongoDB API. The team could quickly create clients for the chat app in .NET Core using C#, Java, and Node using their previous MongoDB knowledge.
 
 The chat app should detect the following types of errors:
 
-- Lost connections to Cosmos DB
+- Lost connections to Azure Cosmos DB
 - Any service unavailability
 - Handle exceptions raised by other parts of the app
 

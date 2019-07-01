@@ -1,4 +1,4 @@
-Watch this video from David Carmona, General Manager of Microsoft AI, as he shares a high-level overview of state-of-the-art AI, the fundamental concepts that make it real today, and the technologies behind it.
+Watch this video from David Carmona, General Manager of AI Marketing, as he shares a high-level overview of state-of-the-art AI, the fundamental concepts that make it real today, and the technologies behind it.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVtt]
 

@@ -1,8 +1,8 @@
-Apps that use Azure Storage tables can be moved to Cosmos DB Tables API by changing the connection string.
+Apps that use Azure Storage tables can be moved to Azure Cosmos DB Tables API by changing the connection string.
 
-Suppose you have decided to migrate the data for your app that manages camera lenses into Cosmos DB. You want to reconfigure this app to use the new database.
+Suppose you have decided to migrate the data for your app that manages camera lenses into Azure Cosmos DB. You want to reconfigure this app to use the new database.
 
-Here, you will create and populate a table with data in a storage table. You will see the app working in that context and then move it onto Cosmos DB, with no changes to the code.
+Here, you will create and populate a table with data in a storage table. You will see the app working in that context and then move it onto Azure Cosmos DB, with no changes to the code.
 
 [!INCLUDE[](../../../includes/azure-sandbox-activate.md)]
 
@@ -121,9 +121,9 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
 
    ![Lenses in the Storage Account table](../media/3-lenses-in-storage-table.png)
 
-## Create a Cosmos DB database
+## Create an Azure Cosmos DB database
 
-Next, create a Cosmos DB database in your Azure subscription, and select the **Azure Table** API.
+Next, create an Azure Cosmos DB database in your Azure subscription, and select the **Azure Table** API.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **+ Create a resource**.
 
@@ -145,11 +145,11 @@ Next, create a Cosmos DB database in your Azure subscription, and select the **A
 
 1. If your settings are correct, click **Create**.
 
-It might take a few minutes for Azure to create your new Cosmos DB account.
+It might take a few minutes for Azure to create your new Azure Cosmos DB account.
 
-## Switch the Lenses app to the Cosmos DB database
+## Switch the Lenses app to the Azure Cosmos DB database
 
-To change the lenses app to use the new Cosmos DB database, you must change the connection string.
+To change the lenses app to use the new Azure Cosmos DB database, you must change the connection string.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then click the Cosmos database you created.
 
@@ -157,7 +157,7 @@ To change the lenses app to use the new Cosmos DB database, you must change the 
 
 1. To the right of the **PRIMARY CONNECTION STRING** textbox, click the **Copy** button.
 
-    ![Copy the Cosmos DB connection string](../media/3-copy-cosmos-connection.png)
+    ![Copy the Azure Cosmos DB connection string](../media/3-copy-cosmos-connection.png)
 
 1. In the Cloud Shell on the right, to start the code editor, type this command.
 
@@ -173,7 +173,7 @@ To change the lenses app to use the new Cosmos DB database, you must change the 
 
 ## Investigate the contents of the Cosmos Database
 
-Now that you have changed the app to use the Cosmos DB database, let's see whether it connects and displays the correct contents.
+Now that you have changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
 
 1. To display the contents of the table, run this command.
 
@@ -191,9 +191,9 @@ Now that you have changed the app to use the Cosmos DB database, let's see wheth
 
 1. Click **Data Explorer**, and then next to **TABLE API**, click the refresh button. Again, no tables or entities are yet present.
 
-## Test the Cosmos DB database
+## Test the Azure Cosmos DB database
 
-Finally, let's populate the table in Cosmos DB and view the results.
+Finally, let's populate the table in Azure Cosmos DB and view the results.
 
 1. In the Cloud Shell, to create and populate a table, run the following command.
 
@@ -218,4 +218,4 @@ Finally, let's populate the table in Cosmos DB and view the results.
 
 1. Click **Data Explorer**. Under **AZURE TABLE API**, expand **TablesDB**, then **lensestable**, and then click **Entities**. The data explorer displays your list of camera lenses.
 
-   ![Lenses data in Cosmos DB](../media/3-view-cosmos-db-data.png)
+   ![Lenses data in Azure Cosmos DB](../media/3-view-cosmos-db-data.png)

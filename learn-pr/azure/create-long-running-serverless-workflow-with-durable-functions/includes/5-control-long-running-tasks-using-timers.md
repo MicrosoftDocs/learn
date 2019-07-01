@@ -10,9 +10,6 @@ Durable Functions provides timers for use in the orchestrator functions. They ca
 
 You create a durable timer by calling the **createTimer** method of the  **DurableOrchestrationContext**. This method returns a task that resumes on a specified date and time.
 
-> [!NOTE]
-> Durable timers cannot currently last longer than 7 days due to limitations in Azure storage.
-
 ## Using timers for delay
 
 The following example illustrates how to use durable timers for delay. The example sends a reminder every day for 10 days.

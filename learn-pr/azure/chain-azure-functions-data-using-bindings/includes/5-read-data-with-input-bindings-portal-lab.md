@@ -1,6 +1,6 @@
 Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry and you return the URL. The following flowchart explains the flow:
 
-![Flow diagram showing the process of finding a bookmark in our Cosmos DB back-end. When the Azure function receives a request with the bookmark id, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark id is present in the Cosmos DB, if not present an error response is generated. If the bookmark id is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
+![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark id, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark id is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark id is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
@@ -9,7 +9,7 @@ You need to store the data somewhere. In this flowchart, the data store is an Az
 ## Create an Azure Cosmos DB account
 
 > [!NOTE]
-> This unit is not intended to be a tutorial on Azure Cosmos DB. There is a complete learning path on Cosmos DB if you are interested in learning more after finishing this module.
+> This unit is not intended to be a tutorial on Azure Cosmos DB. There is a complete learning path on Azure Cosmos DB if you are interested in learning more after finishing this module.
 
 ### Create a database account
 
@@ -45,37 +45,37 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Select **Go to resource** to navigate to the database account in the portal. We'll add a collection to the database next.
 
-### Add a collection
+### Add a container
 
-In Cosmos DB, a *container* holds arbitrary user-generated entities. For SQL and MongoDB API accounts, a container maps to a *collection*. Inside a collection, we store documents.
+In Azure Cosmos DB, a *container* holds arbitrary user-generated entities. Inside a container, we store documents.
 
 Let's use the Data Explorer tool in the Azure portal to create a database and collection.
 
-1. Select **Data Explorer** > **New Collection**.
+1. Select **Data Explorer** > **New Container**.
 
-2. Under **Add collection**, enter the settings for the new collection.
+2. Under **Add Container**, enter the settings for the new container.
 
     >[!TIP]
-    >The **Add Collection** area is displayed on the far right. You may need to scroll right to see it.
+    >The **Add Container** area is displayed on the far right. You may need to scroll right to see it.
 
     |Setting|Suggested value|Description
     |---|---|---|
     |Database ID|[!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]| Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You are free to enter whatever you want here, but we suggest [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] as the name for the new database, and that's what we'll refer to in this unit. |
-    |Collection ID|[!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]|Enter [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] as the name for our new collection. Collection IDs have the same character requirements as database names.|
-    |Partition key|**/id**| The partition key specifies how the documents in Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Cosmos DB partition key strategies, please explore the Microsoft Learn Cosmos DB modules.|
+    |Container ID|[!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]|Enter [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] as the name for our new collection. Container IDs have the same character requirements as database names.|
+    |Partition key|**/id**| The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, please explore the Microsoft Learn Azure Cosmos DB modules.|
     |Throughput|1000 RU|Change the throughput to 1000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later.|
 
-3. Click **OK**. The Data Explorer displays the new database and collection. So, now we have a database. Inside the database, we've defined a collection. Next, we'll add some data, also known as documents.
+3. Select **OK**. The Data Explorer displays the new database and container. Inside the database, we've defined a container. Next, we'll add some data, also known as items.
 
 ### Add test data
 
-We've defined a collection in our database called [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]. We want to store a URL and ID in each document, like a list of web page bookmarks.
+We've defined a container in our database called [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]. We want to store a URL and ID in each item, like a list of web page bookmarks.
 
-You'll add data to your new collection using Data Explorer.
+You'll add data to the new container using Data Explorer.
 
-1. In Data Explorer, the new database appears in the Collections pane. Expand the [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] database, expand the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] collection, select **Documents**, and then select **New Document**.
+1. In Data Explorer, the new database appears in the Containers pane. Expand the [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] database, expand the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] collection, select **Items**, and then select **New Item**.
 
-2. Replace the default content of the new document with the following JSON.
+2. Replace the default content of the new item with the following JSON.
 
      ```json
      {
@@ -84,19 +84,19 @@ You'll add data to your new collection using Data Explorer.
      }
      ```
 
-3. After you've added the JSON to the **Documents** tab, select **Save**.
+3. After you've added the JSON to the **Items** tab, select **Save**.
 
     Notice that there are more properties than the ones we added. They all begin with an underline (_rid, _self, _etag, _attachments, _ts). These are properties generated by the system to help manage the document.
 
     |Property  |Description  |
     |---------|---------|
-    | `_rid`     |     The resource ID is a unique identifier that is also hierarchical per the resource stack on the resource model. It is used internally for placement and navigation of the document resource.    |
+    | `_rid`     |     The resource ID is a unique identifier that is also hierarchical per the resource stack on the resource model. It is used internally for placement and navigation of the item resource.    |
     | `_self`     |   The unique addressable URI for the resource.      |
     | `_etag`     |   Required for optimistic concurrency control.     |
     | `_attachments`     |  The addressable path for the attachments resource.       |
     | `_ts`     |    The time stamp of the last update of this resource.    |
 
-4. Let's add a few more documents into the collection. Create four more documents with the following content. Remember to save your work.
+4. Let's add a few more items into the container. Create four more items with the following content. Remember to save your work.
 
     ```json
     {
@@ -126,11 +126,11 @@ You'll add data to your new collection using Data Explorer.
     }
     ```
 
-1. When you've finished, your collection should look like the following:
+1. When you've finished, your container should look like the following:
 
-    ![The SQL API UI in the portal, showing the list of entries you added to your bookmarks collection](../media/5-db-bookmark-coll.PNG)
+    ![The SQL API UI in the portal, showing the list of entries you added to your bookmarks container](../media/5-db-bookmark-coll.PNG)
 
-You now have a few entries in your bookmark collection. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks collection and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this collection.
+You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] container. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
 
 ## Create your function
 
@@ -159,7 +159,7 @@ You can verify what we have done so far by testing our new function as follows:
 
 1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<yourname>` to the end of the URL and press **Enter** to execute the request. You should get a response from the Azure Function right in the browser.
 
-Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] collection.
+Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] container.
 
 ## Add an Azure Cosmos DB input binding
 
@@ -200,7 +200,7 @@ You want to look up a bookmark with a specific ID, so let's tie the ID we receiv
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
     |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
     |SQL Query (optional)    |   leave blank       |   We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection.|
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection.|
 
 9. Select **Save** to save all changes to this binding configuration.
 
@@ -214,7 +214,7 @@ Now that you have your binding defined, it's time to use it in your function.
 
    [!code-javascript[](../code/find-bookmark-single.js)]
 
-An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Cosmos DB input binding. If the database finds a document that matches this ID, then the `bookmark` parameter will be set to the located document. In that case, we construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, we would respond with a payload and status code that tells the user the bad news.
+An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Azure Cosmos DB input binding. If the database finds a document that matches this ID, then the `bookmark` parameter will be set to the located document. In that case, we construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, we would respond with a payload and status code that tells the user the bad news.
 
 ## Try it out
 
@@ -229,4 +229,4 @@ An incoming HTTP request triggers the function, and an `id` query parameter is p
 
 In this unit, we created our first input binding manually to read from an Azure Cosmos DB database. The amount of code we wrote to search our database and read data was minimal, thanks to bindings. We did most of our work configuring the binding declaratively, and the platform took care of the rest.
 
-In the next unit, we'll add more data to our bookmark collection through an Azure Cosmos DB output binding.
+In the next unit, we'll add more data to our bookmarks collection through an Azure Cosmos DB output binding.

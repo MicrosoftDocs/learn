@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "LINQ"
       isCorrect: true
-      explanation: "LINQ and SQL are two of the valid methods for querying the SQL API."
+      explanation: "LINQ and SQL are two of the valid methods for querying when you are using the SQL API."
     - content: "Apache Cassandra client libraries"
       isCorrect: false
       explanation: "Apache Cassandra libraries can work with Azure Cosmos DB’s Cassandra API but not with the SQL API."

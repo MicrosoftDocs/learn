@@ -24,15 +24,15 @@ To complete analysis of a sample dataset, clone the lab archives that provide sa
 
 ## Complete the following notebooks
 
-- *01 Exploratory Data Analysis*: This notebook contains a brief introduction to the other notebooks in the lab.
-- *02 Loading data with Azure Databricks*: This notebook introduces you to loading data with Azure Databricks. You'll learn how to prepare your data environment to start doing EDA.
-- *03 Basic EDA with Azure Databricks*: This notebook teaches you basic EDA techniques, such as:
+- **01 Exploratory Data Analysis**: This notebook contains a brief introduction to the other notebooks in the lab.
+- **02 Loading data with Azure Databricks**: This notebook introduces you to loading data with Azure Databricks. You'll learn how to prepare your data environment to start doing EDA.
+- **03 Basic EDA with Azure Databricks**: This notebook teaches you basic EDA techniques, such as:
 
   - Data cleansing
   - Handling of missing values
   - Correlation analysis
 
-- *04 Advanced EDA with Azure Databricks*: This notebook contains exercises for advanced EDA subjects, like:
+- **04 Advanced EDA with Azure Databricks**: This notebook contains exercises for advanced EDA subjects, like:
 
   - Linear-regression analysis
   - One-hot encoding
