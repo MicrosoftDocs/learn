@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.build-product-road-maps
+metadata:
+  title: Build product road maps
+  description: Identify and construct Agile product road maps including audiences, prioritization, themes, milestones, epics, and user stories.
+  author: jamtur01
+  ms.date: 04/16/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+title: Build product road maps
+summary: Identify and construct Agile product road maps including audiences, prioritization, themes, milestones, epics, and user stories.
+abstract: | 
+ In this module, you will learn how to:
+ - Describe the basic components and importance of product road maps
+ - Structure a road map appropriate for your product.
+ - Identify and develop themes, milestones, epics, and user stories for your product road map.
+prerequisites: |
+ - Basic knowledge of Agile development concepts.
+iconUrl: /learn/achievements/build-product-road-maps.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.build-product-road-maps.1-introduction
+- learn.build-product-road-maps.2-what-is-a-product-road-map
+- learn.build-product-road-maps.3-identify-your-audience
+- learn.build-product-road-maps.4-single-source-of-truth
+- learn.build-product-road-maps.5-prioritization
+- learn.build-product-road-maps.6-identify-your-product-mission
+- learn.build-product-road-maps.7-themes
+- learn.build-product-road-maps.8-milestones
+- learn.build-product-road-maps.9-epics
+- learn.build-product-road-maps.10-user-stories
+- learn.build-product-road-maps.11-conclusion
+badge:
+  uid: learn.build-product-road-maps.badge
