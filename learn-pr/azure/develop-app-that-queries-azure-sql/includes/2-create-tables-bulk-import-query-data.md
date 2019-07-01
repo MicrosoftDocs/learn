@@ -2,7 +2,7 @@ The university needs a location to store their data that is currently stored in 
 
 ## Create a single database using the Azure portal
 
-Azure SQL Database is a relational database as a service (DBaaS) based on the latest stable version of Microsoft SQL Server Database Engine. SQL Database is a high-performance, easy to use, reliable, and secure database that you can use to build new applications, websites, and microservices in the programming language of your choice, without needing to manage infrastructure.
+Azure SQL Database is a relational database service based on the latest stable version of Microsoft SQL Server Database Engine. SQL Database is a high-performance, easy to use, reliable, and secure database that you can use to build new applications, websites, and microservices in the programming language of your choice, without needing to manage infrastructure.
 
 You can create a single database through several methods, including Azure CLI, Azure PowerShell, and the Azure portal. When creating a single database in the portal, either click the **SQL databases** shortcut under **Favorites**, or click **+ Create a resource**, select **Databases**, and then click **SQL Database**. If you prefer to use the Azure CLI, you can create a server and database with the `az sql server create` and `az sql db create` commands. If you prefer to use Azure PowerShell, you can create a server and a database with the `New-AzSqlServer` and `New-AzSqlDatabase` commands.
 
