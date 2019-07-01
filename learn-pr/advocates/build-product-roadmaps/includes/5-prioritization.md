@@ -32,7 +32,7 @@ Features are low value but also low effort. These features are great fillers if 
 
 These features offer some, limited, value, and take considerable effort to implement. These features are items you'd prioritize last, if at all. 
 
-![The 2x2 Matrix quadrants](../media/2x2Quad.png)
+![The 2x2 Matrix quadrants](../media/2x2-quad.png)
 
 ### Plotting your features
 

@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-       ![Product road map user stories](../media/user_stories.png)
+       ![Product road map user stories](../media/user-stories.png)
   :::column-end:::
         :::column span="3":::
 
