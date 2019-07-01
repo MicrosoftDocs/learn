@@ -11,7 +11,7 @@ In this module, you will:
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to see how AI is transforming industries and empowering individuals to achieve more across the globe.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how AI is transforming industries and empowering individuals to achieve more across the globe.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NNHW]
 
@@ -31,15 +31,15 @@ Only Azure empowers you with:
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn about the foundational elements of Azure AI, then see how AI is powering multiple Microsoft products, and finally review the three Azure AI focus areas.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about the foundational elements of Azure AI, then see how AI is powering multiple Microsoft products, and finally review the three Azure AI focus areas.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1Lt]
 
 As you see from these examples, artificial intelligence is already enhancing the products and services that you may use in your work.
 
 |  |  |
-| ------------ | -------------:| 
-|![Icon of lightbulb](../media/lightbulb_icon.png)|*Can you think of other examples where AI has changed the products you use or enhanced an experience? Take a moment to think about some ways you or your business interact with AI.*
+| ------------ | -------------|
+|![Icon of lightbulb](../media/lightbulb.png)|*Can you think of other examples where AI has changed the products you use or enhanced an experience? Take a moment to think about some ways you or your business interact with AI.*
 |
 
 In the next units, we’ll take a deeper look at knowledge mining, machine learning, and AI apps and agents. 

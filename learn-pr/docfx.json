@@ -85,7 +85,7 @@
                     "**/includes/**"
                 ],
                 "dest": "modules"
-            },        
+            },
             {
                 "src": "student-evangelism",
                 "files": [
@@ -119,7 +119,9 @@
                     "README.md",
                     "LICENSE",
                     "LICENSE-CODE",
-                    "ThirdPartyNotices"
+                    "ThirdPartyNotices",
+                    "**/design/**",
+                    "**/resources/**"
                 ]
             }
         ],
@@ -146,7 +148,9 @@
                     "**/obj/**",
                     "**/includes/**",
                     "_themes/**",
-                    "_themes.pdf/**"
+                    "_themes.pdf/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ]
             }
         ],

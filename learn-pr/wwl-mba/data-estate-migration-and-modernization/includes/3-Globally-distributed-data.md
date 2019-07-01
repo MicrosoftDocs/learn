@@ -13,7 +13,7 @@ Azure Cosmos DB was built from the ground up with **global distribution** and **
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about globally distributed data and Azure Cosmos DB.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about globally distributed data and Azure Cosmos DB.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqJBc]
 
@@ -21,7 +21,7 @@ Azure Cosmos DB was built from the ground up with **global distribution** and **
 
 This diagram illustrates a typical global data architecture. High-availability and low-latency capabilities built into Microsoft global data centers enable access to users all over the world.
 
-![Architecture diagram illustrating a typical global data architecture](../media/IC-GM05-diagram-5.png)
+![Architecture diagram illustrating a typical global data architecture](../media/ic-gm05-diagram-5.png)
 
 Now that you’ve learned how data flows in a typical global architecture, take a look at how Azure Cosmos DB is used.
 
@@ -29,7 +29,7 @@ Now that you’ve learned how data flows in a typical global architecture, take 
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB to enable new cloud applications.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB to enable new cloud applications.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrrJr ]
 
