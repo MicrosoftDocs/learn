@@ -22,10 +22,11 @@ You'll perform the following tasks:
 1. Run the following commands to build and deploy the initial web app.
 
     ```bash
+    WEBAPPNAME=educationapp-$RANDOM
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
         --sku B1 \
-        --name educationapp-$RANDOM
+        --name $WEBAPPNAME
     ```
 
 1. When the web application has been deployed, the output will show an **App_url** with the URL of the web site. Open this site in a new tab.
@@ -489,7 +490,7 @@ With the application fully configured to retrieve and display the course data to
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
         --output table
-        --name $(az webapp list --output tsv --query [].name)
+        --name $WEBAPPNAME
     ```
 
 3. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database.
