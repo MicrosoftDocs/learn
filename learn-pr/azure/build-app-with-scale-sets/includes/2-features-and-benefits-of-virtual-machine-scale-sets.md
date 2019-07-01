@@ -4,10 +4,10 @@ In the example scenario, the shipping company is looking to use a virtual machin
 
 In this unit, you'll explore the features of virtual machine scale sets. By the end of this unit, you'll be able to:
 
-- Understand the virtual machine scale set offerings, including scheduled and metrics-based autoscaling.
-- Understand horizontal-vs-vertical scaling.
-- Understand the low-priority scale set offering.
-- Understand when to use the different kinds of autoscaling.
+- Explain horizontal versus vertical scaling.
+- Describe the virtual machine scale set offerings, including scheduled and metrics-based autoscaling.
+- Explain the low-priority scale set offering.
+- Describe when to use the different kinds of autoscaling.
 
 ## What is a virtual machine scale set?
 
@@ -19,7 +19,7 @@ Virtual machine scale sets are supported for both Linux virtual machines and Win
 
 ## Autoscale for different use cases using scale sets
 
-Scale sets can help you become cost effective because they can allocate new virtual machine instances only when they're needed.  There are two ways a virtual machine scale set can scale. These are horizontal scaling, and vertical scaling. Horizontal scaling adds more virtual machines to a scale set, but vertical scaling adds more resources (memory, CPU power, disk space) to the virtual machines.
+Scale sets can help you become cost effective because they can create new virtual machine instances only when they're needed.  There are two ways a virtual machine scale set can scale. These are horizontal scaling, and vertical scaling. Horizontal scaling adds more virtual machines to a scale set, but vertical scaling adds more resources (memory, CPU power, disk space) to the virtual machines.
 
 Sometimes, you may need to add or remove a number of the machines in a scale set depending on demand. It may be the case that you don't need to run some of these machines during quieter periods of the week or day where there's less demand. You can manually adjust the number of virtual machines in a scale set by increasing or decreasing the instance count. However, in many cases, it would be a good idea  to create rules that automatically add or remove virtual machines. These rules are based on metrics. They can ensure that the right number of virtual machines are added depending on the demand or schedule.  The process of adding or removing a number of virtual machines in this way is referred to as horizontal scaling.
 
@@ -29,11 +29,11 @@ Autoscaling can be triggered based on a schedule or based on actual usage. Below
 
 **Use case 1**
 
-Suppose you are part of the DevOps team for a large food delivery company.  Friday night is typically your busiest time, and conversely, 7 am on a Wednesday generally is your quietest time. Azure charges based upon consumption of resources,  as such you don't want to have services running which you don't need. If you need 100 web servers to meet your demand on a Friday night, you are happy to pay for this requirement. However, if you only need two servers to fulfill your requirement on a Wednesday morning, you don't want to have to pay for the additional 98 idle servers. To optimize spend while fulfilling your operational requirements, you might look to use scheduled autoscaling.
+Suppose you're part of the DevOps team for a large food delivery company.  Friday night is typically your busiest time, and conversely, 7 am on a Wednesday generally is your quietest time. Azure charges based upon consumption of resources,  as such you don't want to have services running which you don't need. If you need 100 web servers to meet your demand on a Friday night, you're happy to pay for this requirement. However, if you only need two servers to fulfill your requirement on a Wednesday morning, you don't want to have to pay for the additional 98 idle servers. To manage your costs while fulfilling your operational requirements, you might look to use scheduled autoscaling.
 
 **Use case 2**
 
-Suppose you are on the DevOps team for a popular footwear company.  You have a product launch approaching and believe there will be a significant demand for your service, but the nature of the spike in demand may be unpredictable and hard to quantify.   You want the service to meet the demand by scaling horizontally as the current resources are utilized. Use metrics-based autoscaling in this scenario. This type of autoscaling will scale out your infrastructure as demand rises, and scale back in when that demand declines.
+Suppose you're on the DevOps team for a popular footwear company.  You have a product launch approaching and believe there will be a significant demand for your service, but the nature of the spike in demand may be unpredictable and hard to quantify.   You want the service to meet the demand by scaling horizontally as the current resources are utilized. Use metrics-based autoscaling in this scenario. This type of autoscaling will scale out your infrastructure as demand rises, and scale back in when that demand declines.
 
 ## Reduce costs using low-priority scale sets
 

@@ -1,146 +1,60 @@
-You need to set up an environment, which can horizontally scale when demand and load increases. By the end of this unit, you will be able to:
+If you need to handle a steady expansion of work over time, then the best approach is to scale horizontally. If the workload increases in complexity rather than volume, and this complexity places more demand on resources, then you might find scaling vertically more appropriate.
 
-- Understand what tools to use when creating a virtual machine scale set.
-- Understand virtual machine scale set autoscale approaches.
-- Understand virtual machine scale set autoscale rules.
-- Understand how to configure autoscale rules on a virtual machine scale set. 
+Horizontal scaling enables you to add instances to your virtual machine scale set. In the shipping company scenario, horizontal scaling is a useful strategy to handle the fluctuating number of requests over time.
 
+By the end of this unit, you'll learn how to configure autoscaling for a virtual machine scale set. You'll see how to define scale rules that can trigger the allocation and deallocation of virtual machines by monitoring various performance metrics.
 
+## Scaling virtual machine scale sets
 
-## Create virtual machine scale sets using different tools
+You can scale a virtual machine scale set manually by increasing or decreasing the instance count. You can perform this task in the Azure portal, or programmatically. The following code uses the Azure CLI to change the number of instances in a virtual machine scale set.
 
-You can use different tools to configure virtual machine scale sets.  You can use the Azure Portal, or through Azure Resource Manager templates, PowerShell, Azure CLI, API/SDK.  Below are a few example showing how to create scale sets using some of these tools. 
-
-You can create a scale set using Azure CLI as shown below: 
-
-```powershell
-
-az vmss create \
-  --resource-group yourResourceGroup \
-  --name yourScaleSet \
-  --image UbuntuLTS \
-  --upgrade-policy-mode automatic \
-  --admin-username azureuser \
-  --generate-ssh-keys
+```azurecli
+az vmss scale \
+    --name MyVMScaleSet \
+    --resource-group MyResourceGroup \
+    --new-capacity 6
 ```
 
+Manual scaling is useful under some circumstances, but in many situations it's better to use autoscaling to let the system itself control the number of instances in a scale set. There are two different strategies available:
 
+- Schedule based. Use this approach if you know you'll have an increased workload during a specified date/time window.
+- Metrics-based. With this strategy, you monitor performance metrics associated with the scale set. When these metrics exceed a specified  threshold, the scale set can automatically start new virtual machine instances. When the metrics indicate that the additional resources are no longer required, the scale set can arrange to stop any excess instances.
 
-Below is an example showing how we can create a scale set using PowerShell: 
+## Define autoscale conditions, rules, and limits
 
-```powershell
-New-AzVmss `
-  -ResourceGroupName "yourResourceGroup" `
-  -Location "WestUS" `
-  -VMScaleSetName "yourScaleSet" `
-  -VirtualNetworkName "yourVnet" `
-  -SubnetName "yourSubnet" `
-  -PublicIpAddressName "yourPublicIPAddress" `
-  -LoadBalancerName "yourLoadBalancer" `
-  -UpgradePolicyMode "Automatic"
-```
+Autoscaling is based on a set of scale conditions, rules, and limits. A scale condition combines a time and a set of scale rules. If the current time falls within the period defined in the scale condition, the scale rules associated with the condition are evaluated. The results of this evaluation determine whether to add or remove instances in the scale set. The scale condition also contains the limits of scaling, in terms of the maximum and minimum number of instances.
 
+A virtual machine scale set can contain many scale conditions, and each matching scale condition will be acted on. A scale set also contains a default scale condition that will be used if no other scale conditions match the current time and performance metrics.
 
+## Implement schedule-based autoscaling
 
-Below is an example of a scale set resource that someone would put into an Azure Resource Manager template for deployment. Some properties have been removed to keep the template short. 
+Schedule-based scaling specifies a start and end time, and the number of instances to add to the scale set. The following screenshot shows an example in the Azure portal. The number of instances is scaled out to 20 between 6AM and 6PM each Monday and Wednesday.
 
-```json
-{
-  "type": "Microsoft.Compute/virtualMachineScaleSets",
-  "name": "yourScaleSet",
-  "location": "West US",
-  "apiVersion": "2017-12-01",
-  "sku": {
-    "name": "Standard_A1",
-    "capacity": "2"
-  },
-  "properties": {
-    "upgradePolicy": {
-      "mode": "Automatic"
-    },
-    "virtualMachineProfile": {
-      "storageProfile": {
-        "osDisk": {
-          "caching": "ReadWrite",
-          "createOption": "FromImage"
-        },
-        "imageReference":  {
-          "publisher": "Canonical",
-          "offer": "UbuntuServer",
-          "sku": "16.04-LTS",
-          "version": "latest"
-        }
-      },
-      "osProfile": {
-        "computerNamePrefix": "yourvmss",
-        "adminUsername": "azureuser",
-        "adminPassword": "aStrongPassword+"
-      }
-    }
-  }
-}
-```
+![Example of a schedule-based scale condition](../media/4-schedule-based-scale-rule.png)
 
+## Implement metrics-based autoscaling
 
+A metrics-based scale rule specifies the resources to monitor (such as CPU utilization, response time, and so on), and will add or remove instances from the scale set according to the values of these metrics. You can specify limits on the number of instances to prevent a scale set from scaling in or out excessively. For example, you might want to increase the instance count by one when the average CPU utilization exceeds 70%, up to a limit of 50 instances. Similarly, you might want to scale in when the average CPU utilization drops below 50%.
 
+The commonly used metrics you can monitor for a virtual machine scale set include:
 
+- Percentage CPU. This metric is an indication of the CPU utilization across all instances. A high value shows that instances are becoming CPU-bound, which could cause delays in processing client requests.
+- Inbound Flows and Outbound Flows. These metrics show the rate at which network traffic is flowing into and out from virtual machines in the scale set.
+- Disk Read Operations/sec and Disk Write Operations/sec. These metrics are a measure of the volume of disk I/O that is occurring across scale set.
+- Data Disk Queue Depth. This metric shows how many I/O requests to the data disks (as opposed to the operating system disks) on the virtual machines are waiting to be serviced.
 
-## Autoscale virtual machine scale sets using rules
+A scale rule aggregates the values retrieved for a metric for all instances across a period of time known as the *time grain*. Each metric has its own intrinsic time grain, but in most cases this period is 1 minute. The aggregated value is known as the *time aggregation*. The options available are *Average*, *Minimum*, *Maximum*, *Total*, *Last*, and *Count*.
 
-There are three different ways to configure how autoscaling is triggered in an Azure virtual machine scale set: 
+An interval of one minute is too short a period in which to determine whether any change in metric is long-lasting enough to make autoscaling worthwhile. So, a scale rule performs a second step that generates a further aggregation of the value calculated by the *time aggregation* over a longer, user-specified period, known as the *Duration*. The minimum *Duration* is 5 minutes. If the *Duration* is set to 10 minutes for example, the scale rule will aggregate the 10 values calculated for the *time grain*.
 
-- Manually - by increasing or decreasing the Azure instance count.
-- Schedule based - if you know you will have an increased workload on a specified date/time window you can proactively plan for that.
-- Metric-based - using a variety of resource metrics, you can determine how and when to scale out your virtual machine scale set, and how and when to return to your baseline.
+The aggregation calculation for the *Duration* can be different for that of the *time grain*. For example, if the *time aggregation* is *Average* and the statistic gathered is *Percentage CPU* across a one-minute *time grain*, each minute the average CPU percentage utilization across all instances for that minute will be calculated. If the *time grain statistic* is set to *Maximum*, and the *Duration* of the rule is set to 10 minutes, the maximum of the 10 average values for the CPU percentage utilization will be used to determine whether the rule threshold has been crossed.
 
-A scale set will have a series of rules, defaults, and limits. It is essential to set limits so you can define the outer parameters for the size of your scale set. This includes the minimum number of nodes in a scale set, the maximum, and the default.
+When a scale rule detects that a metric has crossed a threshold, it can perform a scale action. A scale action can be *scale-out* or *scale-in*. A scale-out action increases the number of instances, and a scale-in action reduces the instance count. A scale action uses an operator (such as *less than*, *greater than*, *equal to*, and so on) to determine how to react to the threshold. Scale-out actions typically use the *greater than* operator to compare the metric value to the threshold. Scale-in actions tend to compare the metric value to the threshold with the *less than* operator. A scale action can also set the instance count to a specific level, rather than incrementing or decrementing the number available.
 
-An autoscale rule defines the criteria for horizontally scaling your application; for example, increase the instance count by one when CPU utilization crosses a predefined threshold for example, 70%.
+A scale action has a *cool down* period, specified in minutes. During this interval, the scale rule won't be triggered again. This is to allow the system to stabilize between scale events. It takes time to start up or shut down instances, and so any metrics gathered might not show any significant changes for several minutes. The minimum cool down period is five minutes.
 
-Creating a scale rule brings together a set of conditions, for example: 
+Finally, you should also plan for scaling-in when a workload decreases. Consider defining scale rules in pairs in the same scale condition. One scale rule should indicate how to scale the system out when a metric exceeds an upper threshold. The the other rule should define how to scale the system back in again when the same metric drops below a lower threshold. Don't make both thresholds the same value otherwise you could end up triggering a series of oscillating events to scale out and back in again.
 
-- Time aggregation (Average, Minimum, Maximum, Last, Count).
+The image below shows a scale rule defined by using the Azure portal
 
-- Metric name (CPU, Memory, etc.).
-
-- Time grain statistic - defines how the collected metrics in each time grain should be aggregated for analysis.    
-
-- Operator - the logic condition, for example, greater than.
-
-- Threshold - the value the condition has to in this case exceed (70).
-
-- Duration - of importance as it takes time to provision and scales down the virtual machine so you would want the system to have observed this increased period of the load over a certain amount of time (10 minutes for example) before scaling up another instance into the scale set.
-
-- Cool down period - Amount of time to wait before attempting to perform another scaling operation.
-
-  
-
-Below is an example of a scale rule in the Azure Portal: 
-
-
-
-![Example of a scale rule](4-example-scale-rule.png)
-
-
-
-Here is an example of a scale rule in Azure PowerShell: 
-
-```powershell
-$myRuleScaleOut = New-AzureRmAutoscaleRule `
-  -MetricName "Percentage CPU" `
-  -MetricResourceId /subscriptions/$yourSubscriptionId/resourceGroups/$yourResourceGroup/providers/Microsoft.Compute/virtualMachineScaleSets/$yourScaleSet `
-  -TimeGrain 00:01:00 `
-  -MetricStatistic "Average" `
-  -TimeWindow 00:05:00 `
-  -Operator "GreaterThan" `
-  -Threshold 80 `
-  -ScaleActionDirection "Increase" `
-  –ScaleActionScaleType "ChangeCount" `
-  -ScaleActionValue 3 `
-  -ScaleActionCooldown 00:05:00
-```
-
-As a default, a scale-in rule is not created. For every scale set, at least one scale-in rule should be set. 
-
-
-
+![Example of a metrics-based scale rule in the Azure portal](../media/4-example-scale-rule.png)

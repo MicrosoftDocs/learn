@@ -1,73 +1,64 @@
-<!-- Topic sentence -->
+In the shipping company scenario, you need to arrange for the virtual machine scale set hosting your web application to scale horizontally as demand increases. To save costs, you also need get the scale set to scale back in once demand drops.
 
-<!-- Scenario sub-task -->
+In this exercise, you'll:
 
-<!-- Task performed in the exercise -->
+- Configure the scale set you created in the previous lab to scale out when the CPU threshold exceeds 75% utilization.
+- Create another scale rule to reduce the number of instances when the demand drops and the average CPU utilization falls below 50%.
 
-<!-- Optional image (this should be either an image of the completed solution or the section that is being completed in the greater solution)-->
+## Create a scale-out scale rule
 
-## [Part 1 title]
+[!include[](../../../includes/azure-sandbox-activate.md)]
 
-<!-- Introduction paragraph -->
+1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). If necessary, sign in using your MSLearn account.
 
-1. <!-- Step 1 -->
+2. Go to the page for the virtual machine scale set.
 
-1. <!-- Step 2 -->
+3. On the virtual machine scale set page, under **Settings**, click **Scaling**.
 
-1. <!-- Step n -->
+4. Click **Enable autoscale**
 
-## [Part 2 title]
+    ![Screen shot of the virtual machine scale set page](../media/5-enable-autoscale.png)
 
-<!-- Introduction paragraph -->
+5. In the **Default** scale rule, set the **Scale mode** to **Scale based on a metric**, and then click **+ Add a rule**.
 
-1. <!-- Step 1 -->
+   ![Screen shot of the virtual machine scale set page](../media/5-add-rule.png)
 
-1. <!-- Step 2 -->
+6. On the **Scale rule** page, specify the following settings, and then click **Add**:
 
-1. <!-- Step n -->
+    | Property  | Value  |
+    |---|---|
+    | Metric source | Current resource (webServerScaleSet) |
+    | Time aggregation | Average  |
+    | Metric name | Percentage CPU |
+    | Time grain statistic | Average |
+    | Operator | Greater than |
+    | Threshold | 75 |
+    | Duration | 10 |
+    | Operation | Increase count by !
+    | Instance count | 1 |
+    | Cool down (minutes) | 5 |
 
-## [Part n title]
+## Create a scale-in scale rule
 
-<!-- Introduction paragraph -->
+1. In the **Default** scale rule, click **+ Add a rule** again.
 
-1. <!-- Step 1 -->
+2. On the **Scale rule** page, specify the following settings, and then click **Add**:
 
-1. <!-- Step 2 -->
+    | Property  | Value  |
+    |---|---|
+    | Metric source | Current resource (webServerScaleSet) |
+    | Time aggregation | Average  |
+    | Metric name | Percentage CPU |
+    | Time grain statistic | Average |
+    | Operator | Less than |
+    | Threshold | 50 |
+    | Duration | 10 |
+    | Operation | Decrease count by !
+    | Instance count | 1 |
+    | Cool down (minutes) | 5 |
 
-1. <!-- Step n -->
+3. Click **Save**.
 
-## [Result part title]
+    The **Default** scale condition now contains two scale rules. One to scale the number of instances out, and another to scale the number of instances back in again.
 
-<!-- Introduction paragraph -->
-
-1. <!-- Optional step 1 -->
-
-1. <!-- Optional step 2 -->
-
-1. <!-- Optional step n -->
-
-## Notes from design doc
-**Exercise - Configuring a virtual machine scale set**
-
-You need to set up an environment, which can horizontally scale when demand and load increases. In this unit, you will:
-
-*   Configure an existing scale set to autoscale when CPU threshold exceeds 70% utilization
-*   Set a Scale in rule to reduce the number of instances when the demand cools.
-
-Use the Scale set created in unit 2.
-
-1.  Open the Azure portal and navigate to virtual machine scale set
-2.  Select the scale set created in unit 2.
-3.  In settings panel, select scaling
-4.  Select Enable autoscale
-5.  Select scale based upon a metric
-6.  Select add a rule
-7.  Time aggregation: Average
-8.  Metric Name: Percentage CPU
-9.  Time grain statistic: Average
-10.  Operator: Greater than
-11.  Threshold: 70
-12.  Duration: 10
-13.  Increase count by 1
-14.  Set cool down period to 5 minutes and save.
-15.  To add a scale down route repeat steps 6-14 replacing step 11 with 60 and step 13 with a decrease by 1.
+    ![Screen shot of the virtual machine scale set page](../media/5-scale-rules.png)

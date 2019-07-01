@@ -1,6 +1,6 @@
-A common requirement is to use a virtual machine scale set to host a web application. In the example scenario, the shipping company have an existing web application that they want to deploy to a virtual machine scale set. Your first task is to create a scale set, and configure it to run a web server, in this case **nginx**. Once you have the scale set configure correctly, you can deploy your web application.
+A common requirement is to use a virtual machine scale set to host a web application. In the example scenario, the shipping company have an existing web application that they want to deploy to a virtual machine scale set. Your first task is to create a scale set, and configure it to run a web server, in this case **nginx**. Once you have configured the scale set correctly, you can deploy your web application.
 
-In this exercise, you will create a new virtual machine scale set. You'll configure the virtual machines in the scale set to run **nginx**. You'll set up a health probe that Azure can use to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
+In this exercise, you'll create a new virtual machine scale set. You'll configure the virtual machines in the scale set to run **nginx**. You'll set up a health probe that Azure can use to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
 
 ## Deploy a virtual machine scale set
 
@@ -18,11 +18,12 @@ In this exercise, you will create a new virtual machine scale set. You'll config
     #cloud-config
     package_upgrade: true
     packages:
-      - nginxwrite_files:
-        - owner: www-data:www-data
-        - path: /var/www/html/index.html
-          content: |
-                Hello world from VM Scale Set !
+      - nginx
+    write_files:
+      - owner: www-data:www-data
+      - path: /var/www/html/index.html
+        content: |
+            Hello world from VM Scale Set !
     runcmd:
       - service nginx restart
     ```
@@ -82,7 +83,9 @@ In this exercise, you will create a new virtual machine scale set. You'll config
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
 
 2. In the left pane, click **Resource groups**, and then click the <rgn>[sandbox resource group]</rgn> resource group.
+
 3. Click the **webServerScaleSet** virtual machine scale set.
+
 4. On the **Overview** page, make a note of the public IP address of the virtual machine scale set.
 
     ![Screenshot of the Azure portal, showing the Overview page for the virtual machine scale set](../media/3-vmss-properties.png)
@@ -99,8 +102,6 @@ In this exercise, you will create a new virtual machine scale set. You'll config
 
     ![Screenshot of the Azure portal, showing the size of the virtual machines in the scale set](../media/3-vmss-size.png)
 
-NEED TO FIX THIS
-
-8. In your web browser, navigate to the public IP address of the scale set. Verify that the message **Hello World from virtual machine scale set** appears.
+8. In your web browser, navigate to the public IP address of the scale set. Verify that the message **Hello World from VM Scale Set !** appears.
 
     ![Screenshot of the web app](../media/3-web-app.png)
