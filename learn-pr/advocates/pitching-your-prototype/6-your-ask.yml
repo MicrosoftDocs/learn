@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.6-your-ask
+title: Making an ask of your audience
+metadata:
+  title: Making an ask of your audience
+  description: This unit teaches how to make an ask of your audience.
+  author: jamtur01
+  ms.date: 04/25/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-your-ask.md)]
