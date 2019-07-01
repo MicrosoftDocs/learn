@@ -231,7 +231,7 @@ With the database created, you can now create the tables that will store the dat
 1. Run the following command to import the data in the **courses.csv** file using format specified in the amended **courses.fmt** file. The `-F 2` flag causes the bcp to start importing data from line 2 in the data file; the first line contains headers. Replace `<password>` with the password for the **azuresql** user.
 
     ```bash
-    bcp "[coursedatabase<nnn>].dbo.courses" in courses.csv -f courses.fmt -S "courseserver<nnn>.database.windows.net" -U azuresql -P <password> -F 2
+    bcp "coursedatabase<nnn>.dbo.courses" in courses.csv -f courses.fmt -S "courseserver<nnn>.database.windows.net" -U azuresql -P <password> -F 2
     ```
 
     Verify that bcp imports nine rows, and doesn't report any errors.
