@@ -489,7 +489,6 @@ With the application fully configured to retrieve and display the course data to
     ```bash
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
-        --output table
         --name $WEBAPPNAME
     ```
 
