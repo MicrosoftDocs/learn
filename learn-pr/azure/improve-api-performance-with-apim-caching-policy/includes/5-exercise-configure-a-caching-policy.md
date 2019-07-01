@@ -61,8 +61,8 @@ Now the API is completed and deployed, let's test it. We can do that by submitti
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the App Service.
 1. On the **Overview** page, click **Browse**. The browser will display a blank page. This is expected because the Web API doesn't implement a user interface.
 1. In the **Address** bar, paste the Web API test URL that you copied earlier. The browser displays a result in JSON format. Notice that the result includes the server time.
-1. In the **Address** bar, paste the Swagger URL that you copied eariler. The browser displays the Swagger UI. Keep this browser tab open for later.
-1. In the **Address** bar, paste the Swagger JSON URL that you copied eariler. The browser displays the OpenAPI specification in JSON format.
+1. In the **Address** bar, paste the Swagger URL that you copied earlier. The browser displays the Swagger UI. Keep this browser tab open for later.
+1. In the **Address** bar, paste the Swagger JSON URL that you copied earlier. The browser displays the OpenAPI specification in JSON format.
 
 ## Create a new Azure API Management instance
 
