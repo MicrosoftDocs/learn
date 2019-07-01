@@ -12,7 +12,7 @@ Now that you have reviewed this module, you should be able to:
 Here are the three key takeaways from this module:
 
 :::row:::
-![Icon of key](../media/Key_Takeaway.png)
+![Icon of key](../media/key-takeaway.png)
   :::column span="1":::
 1.	Microsoft Azure IoT addresses common business challenges that can help accelerate business transformation by reducing cost and complexity while improving security at scale.
 2.	Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services to achieve business success.

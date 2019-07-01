@@ -32,7 +32,7 @@ With preventative maintenance and analytics through IoT, you can adjust processe
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to see how Rolls-Royce has made use of Azure IoT solutions.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Rolls-Royce has made use of Azure IoT solutions.|
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE2NQ4B]
 
@@ -44,7 +44,7 @@ The Alaska Department of Transportation uses Azure IoT technologies to make info
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to see how Alaska Department of Transportation has made use of Azure IoT solutions.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Alaska Department of Transportation has made use of Azure IoT solutions.|
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE2NvkS]
 
@@ -53,8 +53,8 @@ With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska
 Azure IoT is not only a transformative tool for driving business outcomes, it is a catalyst for greater change within an organization. When you connect equipment, machines, and tools, you can draw insights for innovation and opportunities.
 
 |  |  |
-| ------------ | -------------:| 
-|![Icon of lightbulb](../media/lightbulb_icon.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry and your organization? Are there solutions from other industries that you can also leverage?*
+| ------------ | -------------|
+|![Icon of lightbulb](../media/lightbulb.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry and your organization? Are there solutions from other industries that you can also leverage?*
 |
 
 Now that you’ve seen examples of IoT being applied to some industries, let’s take a look at IoT solutions.

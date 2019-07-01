@@ -5,6 +5,6 @@ The cloud is transforming the way that organizations large and small consume tec
 In this module, you will:
 
 - Learn the importance of Azure.
-- Identify the key topics outlined in the ‘Learn the Business Value of Microsoft Azure’ learning path.
+- Identify the key topics outlined in the ‘Learn the business value of Microsoft Azure’ learning path.
 
 Now, let’s hear from a Microsoft executive to welcome you on your journey.
