@@ -6,8 +6,8 @@ At Fabrikam, the audiences for our product road map are:
 
 The engineers, designers, and product managers working on the product. They are looking for lower-level tactical information, sprint, and story-level, that will tell them what to work on right now:
 
-1. What do we plan to do this sprint.
-1. The status of the work they are doing right now.
+* What do we plan to do this sprint.
+* The status of the work they are doing right now.
 
 ![An engineering product road map](../media/story.png)
 
@@ -17,11 +17,11 @@ This audience will be the primary and default audience for your product road map
 
 Your executive team are interested your high-level goals, the total time and cost of development work, and how it achieves the company's strategic objectives. Most likely the executive audience will be interested in the reporting outputs from your product management process.
 
-1. What you plan to do in the near future, for example the next quarter. What are you going to do next?
-1. What you have and are achieving currently, for example this quarter. Are you on schedule?
-1. The ongoing and planned time and cost of your development.
+* What you plan to do in the near future, for example the next quarter. What are you going to do next?
+* What you have and are achieving currently, for example this quarter. Are you on schedule?
+* The ongoing and planned time and cost of your development.
 
-![A product road map summary slide](../media/product-roadmap.002.png)
+![A product road map summary slide](../media/product-roadmap-002.png)
 
 Most product managers take the outputs of past and current work being done by the product engineering team and develop a presentation for their executive team. 
 
@@ -31,4 +31,4 @@ The same or a similar presentation is also useful for investors, who are interes
 
 Your customers (and your Sales and Marketing team) want to see what features you're adding that will give the product more capabilities or make it easier to use. This presentation is usually a distillation of the presentation a product manager provides to an executive team, minus the effort required to develop it and couched in marketing terms.
 
-![A customer road map summary slide](../media/product-roadmap.003.png)
+![A customer road map summary slide](../media/product-roadmap-003.png)
