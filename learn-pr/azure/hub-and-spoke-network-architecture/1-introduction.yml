@@ -2,9 +2,9 @@
 uid: learn.hub-and-spoke-network-architecture.1-introduction
 metadata:
   title: Introduction
-  description: TODO
+  description: Introduction
   ms.date: 04/30/2019
-  author: dwarrener
+  author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

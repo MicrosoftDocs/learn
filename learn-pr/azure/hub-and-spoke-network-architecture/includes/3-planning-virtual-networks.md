@@ -32,7 +32,7 @@ Deploy the resources in the portal in the Resource Manager template below. This 
     ```
 
     > [!NOTE]
-    > The VPN gateway can take up to 10 minutes to complete, so continue with this unit while the infrastructure is created.
+    > The script can take up to 15 minutes to complete, so continue with this unit while the infrastructure is being created.
 
 ## Overview of virtual networks on Azure
 

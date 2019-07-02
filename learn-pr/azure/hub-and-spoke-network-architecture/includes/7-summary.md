@@ -1,7 +1,11 @@
-In this module, you've explored migrating your on-premises infrastructure to Azure using the hub and spoke model. You covered the components needed for hub and spoke networks, an overview of virtual networking, Azure ExpressRoute, and how to secure your new network in Azure.
+In this module, you've explored migrating your on-premises infrastructure to Azure using the hub and spoke model. You covered the components that you need to create hub and spoke networks, including Azure ExpressRoute, and how to secure them in Azure.
 
-A hub and spoke architecture in Azure offers great benefits to your organization. Allowing your business to quickly and easily adapt, by building complex scalable platforms.
+A hub and spoke architecture in Azure offers great benefits to your organization. Allowing your business to quickly and easily adapt to knew requirements by adding additional spokes to segregate workloads with Network Security Groups and Azure Firewall.
+
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## More information
 
-- [Hub and Spoke topology](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+- [Hub and spoke topology](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+- [Connect to Azure using with ExpressRoute](https://docs.microsoft.com/en-gb/azure/architecture/reference-architectures/hybrid-networking/expressroute)
+- [Azure DDos protection](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)

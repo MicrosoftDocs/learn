@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Implementing a hub-spoke network topology on Azure
   description: Implement a hub-spoke network topology on Azure
   ms.date: 04/30/2019
-  author: dwarrener
+  author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

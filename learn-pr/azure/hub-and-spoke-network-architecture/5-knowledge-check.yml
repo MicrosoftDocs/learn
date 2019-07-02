@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 04/30/2019
-  author: dwarrener
+  author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -23,7 +23,7 @@ quiz:
       explanation: Hub and spoke is an architectural model comprised of several services, VNets are used in a variety of scenarios.
     - content: To create a network for portal connections
       isCorrect: false
-      explanation: Azure Portal connections do not need a virtual network, it is web browser based over the public internet.
+      explanation: Azure portal connections do not need a virtual network, it is web browser based over the public internet.
     - content: To isolate organizational resources
       isCorrect: true
       explanation: Using Azure VNets enables most Azure resources to securely communicate with each other, your on-premises networks and the internet.

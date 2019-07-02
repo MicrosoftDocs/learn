@@ -138,8 +138,8 @@ The rules defined in NSGs are applied to the traffic flow by a priority as follo
 
 The ability to control how traffic is routed through your resources is an important security measure to take. Azure helps you improve the security of your overall infrastructure by offering other services:
 
-- **Application Security Groups (ASGs)**: provides central policy and security management for your applications. Use ASGs to define detailed network security policies based on workloads, applications, or environments, by using a moniker. You can then use a zero-trust approach, where only specified flows are permitted.
+- **Application Security Groups (ASGs)**: provides central policy and security management for your applications. Use ASGs to define detailed network security policies by using a moniker. You can then use a zero-trust approach, where only specified flows are permitted.
 - **Virtual Network Security Appliances**: enables security at a higher level in your networking design. NSGs and UDRs typically work at the transport layer. The security appliances for Azure are available in the Azure Marketplace.
 - **Azure Network Watcher**: enables insights into your network logging and diagnostics. Network Watcher allows you to understand the health and performance of your Azure networks.
-- **Virtual Network Service Endpoints**: extends your virtual network private address space to make it available to Azure services. The endpoints allow you to restrict access to business critical Azure resources to only your virtual networks, removing internet access entirely.
+- **Virtual Network Service Endpoints**: extends your virtual network private address space to make it available to Azure services. The endpoints allow you to restrict access to Azure resources.
 - **DDOS protection**: two levels are available – basic, and standard. DDOS protection allows you to mitigate volumetric, protocol, and resource layer attacks.

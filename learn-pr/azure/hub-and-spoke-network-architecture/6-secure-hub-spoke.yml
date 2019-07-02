@@ -4,7 +4,7 @@ metadata:
   title: Secure your hub and spoke network
   description: Secure your hub and spoke network
   ms.date: 04/30/2019
-  author: dwarrener
+  author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -37,10 +37,10 @@ quiz:
       explanation: The monitoring of activity logs is enabled by default for all Azure services. 
     - content: Highly Available networks
       isCorrect: false
-      explanation: Azure Firewall has high availability built-in with no configuration needed.
+      explanation: Azure Firewall has high availability built in with no configuration needed.
     - content: Peered virtual networks
       isCorrect: false
       explanation: Traffic for directly peered virtual networks is routed directly by Azure Firewall.
     - content: Forced tunneling to an on-premises network
       isCorrect: true
-      explanation: Azure Firewall does not support forced tunneling to your on-premises network by default.
+      explanation: Azure Firewall doesn't support forced tunneling to your on-premises network by default.

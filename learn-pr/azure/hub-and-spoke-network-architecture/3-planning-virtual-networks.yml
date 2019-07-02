@@ -4,7 +4,7 @@ metadata:
   title: Planning virtual networks on Azure
   description: Explore virtual networking in the Azure platform, the design considerations needed and how to implement Azure ExpressRoute for connectivity to on-premises networks.
   ms.date: 04/30/2019
-  author: dwarrener
+  author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
