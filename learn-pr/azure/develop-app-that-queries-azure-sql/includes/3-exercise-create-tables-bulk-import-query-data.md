@@ -15,7 +15,8 @@ In this exercise, you'll create a database server and a single database using th
 1. Run these commands to change directory to the **education/data** folder and list the files in the folder.
 
     ```bash
-    cd ~/education/data
+    mv ~/education/data ~/educationdata
+    cd ~/educationdata
     ls
     ```
 
