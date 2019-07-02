@@ -17,7 +17,7 @@ abstract: |
   - Grant the employee management access to a subscription.
 prerequisites: | 
   - Basic understanding of how role-based access control (RBAC) works in Azure
-iconUrl: /learn/achievements/optimize-blob-storage-costs.svg
+iconUrl: /learn/achievements/assign-management-access-with-azure-rbac.svg
 levels:
 - beginner
 roles:

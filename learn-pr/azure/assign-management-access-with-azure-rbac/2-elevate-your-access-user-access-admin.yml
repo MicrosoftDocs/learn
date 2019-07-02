@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-elevate-your-access-to-user-access-admin.md)]
+  [!include[](includes/2-elevate-your-access-user-access-admin.md)]
 quiz:
   title: Check your knowledge
   questions:

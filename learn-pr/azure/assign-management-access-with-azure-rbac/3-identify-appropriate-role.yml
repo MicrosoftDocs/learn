@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-identify-appropriate-role-to-assign.md)]
+  [!include[](includes/3-identify-appropriate-role.md)]
 quiz:
   title: Check your knowledge
   questions:
