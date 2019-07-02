@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.improve-api-performance-with-apim-caching-policy.3-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this unit, you will answer questions based on a scenario.
+  ms.date: 04/25/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Which policy would you use to ensure that the Board Pricing API sends all its responses in XML format?"
+    choices:
+    - content: "JSONP"
+      isCorrect: false
+      explanation: "This policy permits JSON with padding, which is a cross-domain request technique and has nothing to do with XML. To ensure XML output, use Convert JSON to XML."
+    - content: "Convert JSON to XML"
+      isCorrect: true
+      explanation: "This policy recodes any response in JSON format as XML text."
+    - content: "Find and replace string in body"
+      isCorrect: false
+      explanation: "This policy finds a specified string and replaces it with another. To ensure XML output, use Convert JSON to XML."
+  - content: 'Where would you place your policy to ensure XML responses?'
+    choices:
+    - content: "Inbound"
+      isCorrect: false
+      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they are sent to users."
+    - content: "Outbound"
+      isCorrect: true
+      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they are sent to users."
+    - content: "On-error"
+      isCorrect: false
+      explanation: "Set this policy in the Outbound tag, because you want to modify responses as they are sent to users."
+  - content: "What scope would you use for the policy that ensures XML responses?"
+    choices:
+    - content: "Global scope for the API Management instance"
+      isCorrect: false
+      explanation: "Do not use the <json-to-xml> policy with global scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses."
+    - content: "Product scope for the Sales product"
+      isCorrect: false
+      explanation: "Do not use the <json-to-xml> policy with product scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses. Also, this scope does not apply to the Board Pricing API, which is not part of the Sales product."
+    - content: "API scope for the Board Pricing API"
+      isCorrect: true
+      explanation: "Use the <json-to-xml> policy with API scope for the Board Pricing API to ensure that all responses are sent in XML, even if developers coded them to return JSON."

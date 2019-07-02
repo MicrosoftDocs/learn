@@ -27,7 +27,7 @@ quiz:
        isCorrect: false
      - content: The product's mascot
        isCorrect: false
-   - content: "Short mission statement what element is missing..."
+   - content: "Who in your team should know about your production mission statement?"
      choices:
      - content: The product manager
        isCorrect: false

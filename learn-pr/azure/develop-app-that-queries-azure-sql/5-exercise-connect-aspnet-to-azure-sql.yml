@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-app-that-queries-azure-sql.5-exercise-connect-aspnet-to-azure-sql
+metadata:
+  title: Exercise - Connect an ASP.NET application to Azure SQL Database
+  description: Connect an ASP.NET application to Azure SQL Database
+  ms.date: 06/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Connect an ASP.NET application to Azure SQL Database
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-connect-aspnet-to-azure-sql.md)]
