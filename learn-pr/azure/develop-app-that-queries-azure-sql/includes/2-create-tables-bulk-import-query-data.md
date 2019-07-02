@@ -64,9 +64,9 @@ Microsoft provides several tools that you can use to upload data to Azure SQL Da
 
 The `bcp` utility is a command-line utility that you can use to import and export data from a database. For importing data, `bcp` requires three things:
 
-1. The source data to upload
-2. An existing table in the destination database
-3. A *format file* that defines the format of the data and how to map this data to columns in the destination table
+- The source data to upload
+- An existing table in the destination database
+- A *format file* that defines the format of the data and how to map this data to columns in the destination table
 
 The `bcp` utility is flexible, and the source data can be in almost any structured format. The format file indicates the layout of the data, whether it's binary or character-based, the type and length of each item, how the data is separated, and so on. The format file also specifies how to map each item in the file to a column in the table. It's important to define the contents of this file correctly, otherwise your data might not be imported, or data could be read into the wrong columns.
 
