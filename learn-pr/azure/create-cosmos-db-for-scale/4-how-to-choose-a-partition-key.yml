@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'True or false: You can **add** a partition key to an Azure Cosmos DB container after it has been created?'
+  - content: 'True or false: You can **add** a partition key to an Azure Cosmos DB container after it has been created.'
     choices:
     - content: 'True'
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
       isCorrect: true
       explanation: You can set the partition key only when the container is created.
 
-  - content: 'True or false: You can you **change** the partition key after the Azure Cosmos DB container has been created?'
+  - content: 'True or false: You can **change** the partition key after the Azure Cosmos DB container has been created.'
     choices:
     - content: 'True'
       isCorrect: false
