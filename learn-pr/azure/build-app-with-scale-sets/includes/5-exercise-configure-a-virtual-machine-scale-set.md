@@ -1,9 +1,9 @@
-In the shipping company scenario, you need to arrange for the virtual machine scale set hosting your web application to scale horizontally as demand increases. To save costs, you also need get the scale set to scale back in once demand drops.
+In the shipping company scenario, you need to arrange for the virtual machine scale set hosting your web application to scale horizontally as demand increases. To save costs, you also want to get the scale set to scale back in when demand drops.
 
 In this exercise, you'll:
 
-- Configure the scale set you created in the previous lab to scale out when the CPU threshold exceeds 75% utilization.
-- Create another scale rule to reduce the number of instances when the demand drops and the average CPU utilization falls below 50%.
+- Configure the scale set you created in the previous lab to scale out when the CPU threshold exceeds 75 percent utilization.
+- Create another scale rule to reduce the number of instances when the demand drops and the average CPU utilization falls below 50 percent.
 
 ## Create a scale-out scale rule
 
@@ -13,17 +13,17 @@ In this exercise, you'll:
 
 2. Go to the page for the virtual machine scale set.
 
-3. On the virtual machine scale set page, under **Settings**, click **Scaling**.
+3. On the virtual machine scale set page, under **Settings**, select **Scaling**.
 
-4. Click **Enable autoscale**
+4. Select **Enable autoscale**.
 
     ![Screenshot of the virtual machine scale set page](../media/5-enable-autoscale.png)
 
-5. In the **Default** scale rule, set the **Scale mode** to **Scale based on a metric**, and then click **+ Add a rule**.
+5. In the **Default** scale rule, set the **Scale mode** to **Scale based on a metric**, and then select **+ Add a rule**.
 
    ![Screenshot of the virtual machine scale set page](../media/5-add-rule.png)
 
-6. On the **Scale rule** page, specify the following settings, and then click **Add**:
+6. On the **Scale rule** page, specify the following settings, and then select **Add**:
 
     | Property  | Value  |
     |---|---|
@@ -40,9 +40,9 @@ In this exercise, you'll:
 
 ## Create a scale-in scale rule
 
-1. In the **Default** scale rule, click **+ Add a rule** again.
+1. In the **Default** scale rule, select **+ Add a rule** again.
 
-2. On the **Scale rule** page, specify the following settings, and then click **Add**:
+2. On the **Scale rule** page, specify the following settings, and then select **Add**:
 
     | Property  | Value  |
     |---|---|
@@ -57,8 +57,8 @@ In this exercise, you'll:
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 
-3. Click **Save**.
+3. Select **Save**.
 
-    The **Default** scale condition now contains two scale rules. One to scale the number of instances out, and another to scale the number of instances back in again.
+    The **Default** scale condition now contains two scale rules. One rule scales the number of instances out, and another rule scales the number of instances back in again.
 
     ![Screenshot of the virtual machine scale set page](../media/5-scale-rules.png)
