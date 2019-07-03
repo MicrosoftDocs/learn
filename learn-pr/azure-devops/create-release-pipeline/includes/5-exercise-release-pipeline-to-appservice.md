@@ -50,7 +50,7 @@ Visual Studio Code comes with an integrated terminal so you can edit files and w
 1. From the **View** menu, select **Terminal**.
 1. From the drop-down box, select **bash**.
 
-    ![Selecting the Bash shell in Visual Studio Code](../media/3-vscode-bash.png)
+    <!-- ![Selecting the Bash shell in Visual Studio Code](../media/3-vscode-bash.png) -->
 
     The terminal window enables you to choose among any shell that's installed on your system, such as Bash, Zsh, and PowerShell.
 
@@ -96,7 +96,7 @@ To fork the _Space Game_ web project into your GitHub account:
 1. Navigate to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 1. Click the **Fork** button.
 
-    ![The Fork button on GitHub](../media/3-github-fork-button.png)
+    <!-- ![The Fork button on GitHub](../media/3-github-fork-button.png) -->
 1. Follow the instructions to fork the repository into your account.
 
 #### Clone your fork locally
@@ -110,7 +110,7 @@ To clone the _Space Game_ web project to your computer:
 1. Navigate to your fork of the _Space Game_ web project on GitHub.
 1. Click the **Clone or download** button. Then click the button next to the URL that's shown to copy the URL to your clipboard.
 
-    ![The Clone or download button on GitHub](../media/3-github-clone-button.png)
+    <!-- ![The Clone or download button on GitHub](../media/3-github-clone-button.png) -->
 1. From Visual Studio Code, navigate to the terminal window and run the `git clone` command. Replace the URL that's shown with the contents of your clipboard.
 
     ```bash
@@ -254,14 +254,14 @@ Here we will create the same basic build pipeline we create in **(Create Build P
 
     When the build completes, you see the **Artifacts** button appear.
 
-    ![Azure Pipelines showing the Artifacts button](../media/7-artifacts-button.png)
+    <!-- ![Azure Pipelines showing the Artifacts button](../media/7-artifacts-button.png) -->
 
 1. Click the **Artifacts** button, then click **drop**. The **Artifacts explorer** appears.
 1. From the **Artifacts explorer**, expand the **drop** folder.
 
     You see a .zip file that contains your built application and its dependencies.
 
-    ![The Artifacts explorer showing the packaged application](../media/7-artifacts-explorer.png)
+    <!-- ![The Artifacts explorer showing the packaged application](../media/7-artifacts-explorer.png) -->
 
 ## Create the multistage pipeline
 
