@@ -20,12 +20,13 @@ prerequisites: |
   - Basic knowledge of Azure AD
 iconUrl: /learn/achievements/secure-app-with-oidc-and-azure-ad.svg
 levels:
-- beginner
+- intermediate
 roles:
 - solution-architect
 - developer
 products:
 - azure
+- azure-active-directory
 units:
 - learn.secure-app-with-oidc-and-azure-ad.1-introduction
 - learn.secure-app-with-oidc-and-azure-ad.2-modern-auth-for-your-app
