@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-release-pipeline.5-exercise-release-pipeline-to-appservice
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+azureSandbox: true
+# interactive: azure-portal
+content: |
+  [!include[](includes/5-exercise-release-pipeline-to-appservice.md)]

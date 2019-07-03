@@ -1,4 +1,8 @@
-This is a placeholder.
+Talk about CD and release pipeline.
+
+(Meet the team and explain the progress in previous learning paths - links to learning paths - Do we do this in the LP intro instead? IF so, then just do a "remember.. ")
+
+(Is this the LP intro or the module intro?)
 
 The Tailspin team is starting to feel better about their build process. They’ve got an automated version running on Azure Pipelines, which means the build environment is stable. Amita knows immediately when there’s an artifact for her to test. She’s finding fewer bugs because Andy and Mara have started to add unit tests and code quality tests. Life is looking good. 
 
