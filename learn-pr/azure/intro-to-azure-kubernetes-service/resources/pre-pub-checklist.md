@@ -10,21 +10,21 @@
 
 ### Content/Media/assets
 - [x] Remove regions from urls
-- [ ] Final images/screenshots are present
-- [ ] Badge images are present
-- [ ] Verify Acrolinx score for all content (score > 80)
+- [x] Final images/screenshots are present
+- [x] Badge images are present
+- [x] Verify Acrolinx score for all content (score > 80)
 
 ### Index.yml
 - [x] *title* is set
 - [x] *description* is set and follows guidelines (doesn't duplicate title)
-- [ ] *summary* is set and follows guidelines
+- [x] *summary* is set and follows guidelines
 - [x] *abstract* is set and lists objectives (no periods)
 - [x] *prerequisites* are set
 - [x] *ms.date* is set to publication date
 - [x] *author* and *ms.author* are set
 - [x] *ms.prod* is set to **learning-azure**
-- [ ] *iconUrl* is set and points to a valid svg
-- [ ] *badge* has *uid* child set to uid
+- [x] *iconUrl* is set and points to a valid svg
+- [x] *badge* has *uid* child set to uid
 - [x] all units are listed
 
 ### All other yml files
@@ -32,7 +32,7 @@
 - [x] *title* is set
 - [x] *ms.date* is set 
 - [x] *author* and *ms.author* are set
-- [ ] *durationInMinutes* is set and IS ACCURATE
+- [x] *durationInMinutes* is set and IS ACCURATE
 - [x] *interactive* is set to **bash** or **azure-portal** (if exercise)
 - [x] *azureSandbox* is set to true if needed
 - [x]  Knowledge checks reviewed for spelling and accuracy
