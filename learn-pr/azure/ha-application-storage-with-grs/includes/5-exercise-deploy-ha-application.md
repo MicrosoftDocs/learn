@@ -1,16 +1,19 @@
-As the Solution Architect for the health care system, you now want to start implementing the design to deploy a highly available application. As a first step, you're going to download and install Fiddler that will be used run the steps to deploy and test the application.
+As the Solution Architect for the health care system, you're now ready to start implementing the design to deploy a highly available application. You're also going to download and install Fiddler that you'll use to test the application.
 
-In the health care application, if there's a failure connecting to the primary region holding your data in Azure storage, the application should automatically fail over and use the storage accounts at the secondary location.  The circuit breaker should force the application to behave in this manner and when the primary location is back online, it should reroute the application back to the primary region. Before committing to full-blown development of the health care application, you want to test this approach using a sample application with dummy data.
+In the health care system, your application should automatically fail over and use the storage accounts at the secondary location if there's a failure connecting to the primary region holding your data in Azure storage. The circuit breaker should force the application to behave in this manner. When the primary location is back online, the circuit breaker should reroute the application back to the primary region. Before committing to full-blown development of the health care application, you want to test this approach using a sample application with dummy data.
 
-In this exercise, you’ll run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account.  The application switches to the secondary storage account when a problem is detected, and fails back to the primary location when it's available again. The application uploads a file to blob storage, it then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation.  If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but returns to the secondary location if the primary location is still unavailable.
+In this exercise, you’ll run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. The application switches to the secondary storage account when a problem is detected, and fails back to the primary location when it's available again. The application uploads a file to blob storage, it then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but returns to the secondary location if the primary location is still unavailable.
 
 ![Failover Visual](../media/5-exercise-failover-visual.png)
 
-## Install Fiddler
+## What is Fiddler?
 
-The Fiddler tool is a third-party tool, which is used to help you debug applications, in particular web applications.  It captures network traffic between computers, and based on the result, uses its event-based scripting subsystem to halt connections.  In this exercise, you'll use Fiddler to monitor the connection to the storage account for the health care application. When the application detects that consultants are no longer able to download blobs from storage, it will initiate failover to the secondary storage account.  When it detects that the primary connection is available again, it will redirect the connections to the primary location. You'll see the traffic being directed to the different storage account endpoints in Fiddler.
+The Fiddler tool is a third-party tool that is used to help you debug applications, in particular web applications. It captures network traffic between computers, and based on the result, uses its event-based scripting subsystem to halt connections. In this exercise, you'll use Fiddler to monitor the connection to the storage account for the health care application. When the application detects that consultants are no longer able to download blobs from storage, it will initiate failover to the secondary storage account. When it detects that the primary connection is available again, it will redirect the connections to the primary location. You'll see the traffic being directed to the different storage account endpoints in Fiddler.
 
-- If you don't have Fiddler installed already, download it and install from the [Telerik Fiddler home page](https://www.telerik.com/fiddler).
+If you don't have Fiddler installed already, download it and install from the [Telerik Fiddler home page](https://www.telerik.com/fiddler).
+
+> [!NOTE]
+> Fiddler is available for Windows, Linux, and OS X. This exercise works best if you use the Windows version.
 
 ## Install Visual Studio and download the sample code
 
@@ -18,7 +21,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/).
 
-1. Use Git to download the sample code. Open a Git command prompt window, and run the following command to download the CircuitBreaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
+2. Use Git to download the sample code. Open a Git command prompt window, and run the following command to download the CircuitBreaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
 
     <!-- NOTE TO REVIEWER. REPLACE <git repo> WITH THE URL OF THE CODE REPOSITORY FOR THIS MODULE -->
 

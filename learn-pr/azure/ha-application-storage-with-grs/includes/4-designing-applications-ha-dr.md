@@ -1,6 +1,6 @@
-You've created your storage account in Azure and configured the replication settings to enable RA-GRS.  Now you're ready to start designing the health care application to make use of the RA-GRS storage account. This approach helps to ensure the application is highly available for doctors and consultants in the field.  Doctors and consultants can access data and upload records 24/7, even if there's an outage in their Primary region.
+You've created your storage account in Azure and configured the replication settings to enable RA-GRS. You're now ready to start the health care application's design to make use of the RA-GRS storage account. This approach helps to ensure that the application is highly available for doctors and consultants in the field even if there's an outage in their Primary region.
 
-In this unit, you'll look at how to design and configure an application that can handle disaster recovery and fail over. You'll learn about considerations that must be taken when designing applications for high availability.
+In this unit, you'll look at how to design and configure an application that can handle disaster recovery and fail over. You'll also explore the considerations applicable when designing applications for high availability.
 
 ## How an account fail-over works
 
@@ -16,37 +16,46 @@ The following diagram shows what happens when the primary region fails
 
 ![Replication fail-over](../media/4-primary-account-failover.png).
 
+> [!IMPORTANT]
+> Failover is automatic and controlled by Microsoft. Manual failover of an Azure storage account is not possible in a majority of the Azure regions. However, a new feature has been made available in WestUS2 and CentralUS regions, where you can manually failover the storage account using the following command:
+>
+> ```azurecli
+> az storage account failover --name "storgeaccountname"`.
+> ```
+
 ## Implications of storage account failover
 
-If you initiate a storage account failover, the DNS records are updated so that the secondary region becomes the new primary region. There's potential that you could lose data if you fail over the storage account. Data from the current primary region might not have replicated across to the secondary region at the time of invoking failover. To determine if there's likely to be data loss, you can check the **Last Sync Time** property.  The command to find this value was used in the previous exercise to review the storage account replication status.
+When storage account failover occurs, there's potential that you could lose data;  data from the current primary region might not have replicated across to the secondary region at the time of the failover. To determine if there's likely to be data loss, you can check the **Last Sync Time** property. The command to find this value was used in the previous exercise to review the storage account replication status.
 
 ## How to design a resilient application
 
-There are a number of factors you need to consider when designing your application to be resilient and highly available.  Some of the areas you must consider include:
+There are a number of factors you need to consider when designing your application to be resilient and highly available. Some of the areas you must consider include:
 
 - **Resiliency** - This is the ability for the application to recover from a failure and continue to function, to avoid downtime and data loss
 
 - **High availability** -  This is the capability of the application to continue to function in a healthy state in the event there is a hardware fault, server fault, or network issues impacting one or more components of the application.
 
-- **Disaster recovery** - This is the ability to recover the application if there's a major incident impacting the services hosting the application such as a datacenter outage, or complete regional outage.  Disaster recovery includes manually failing over an application using ASR (Azure Site Recovery). ASR enables you to fail over servers between Azure regions or Azure backups. You can then restore a database or application from backup.
+- **Disaster recovery** - This is the ability to recover the application if there's a major incident impacting the services hosting the application such as a datacenter outage, or complete regional outage. Disaster recovery includes manually failing over an application using Azure Site Recovery (ASR). ASR enables you to fail over servers between Azure regions or Azure backups. You can then restore a database or application from backup.
 
-- **Eventual consistency** - Read Access-Geo Redundant Storage (RA-GRS) works by replicating data from the primary endpoint to the secondary endpoint.  The data, which is replicated between the regions is not available at the secondary location immediately.  Eventual consistency means that all the transactions on the primary region will eventually appear at the secondary region. The data isn't lost, but there may be some lag. The table below shows the effects of eventual consistency in the health care system. When a doctor uploads a new record to primary region, or when a consultant updates an existing record, the latest records are immediately available in the primary storage location. The updates are eventually propagated to the secondary regions, but there may be a delay before this occurs. An application reading data from a secondary location may see out-of-date data for a short while.
+- **Eventual consistency** - RA-GRS works by replicating data from the primary endpoint to the secondary endpoint. The data, which is replicated between the regions, is not available at the secondary location immediately. Eventual consistency means that all the transactions on the primary region will eventually appear at the secondary region. The data isn't lost, but there may be some lag.
 
-| Time  | Transaction | Replication     | Last Sync Time  | Result |
-| ------| --------    | --------------- | --------------- | ------ |
-| T0    | Doctor adds patient record| - | - | Transaction added but not replicated |
-| T1    | -       | Record replicated | T1       | Last Sync Time field updated  |
-| T2    | Consultant updates patient record | -|T1 | Record updated on primary but not replicated |
-| T3    | Read records from secondary region | | | When you read data from the secondary, you get stale data as this hasn't yet been replicated from the primary |
-| T4    |    -        | Records replicate |    -           | Data at secondary now updated. Last Sync Time updated |
+    The table below shows the effects of eventual consistency in the health care system. When a doctor uploads a new record to primary region, or when a consultant updates an existing record, the latest records are immediately available in the primary storage location. The updates are eventually propagated to the secondary regions, but there may be a delay before this occurs. An application reading data from a secondary location may see out-of-date data for a short while.
+
+    | Time  | Transaction | Replication     | Last Sync Time  | Result |
+    | ------| --------    | --------------- | --------------- | ------ |
+    | T0    | Doctor adds patient record| - | - | Transaction added but not replicated |
+    | T1    | -       | Record replicated | T1       | Last Sync Time field updated  |
+    | T2    | Consultant updates patient record | -|T1 | Record updated on primary but not replicated |
+    | T3    | Read records from secondary region | | | When you read data from the secondary, you get stale data as this hasn't yet been replicated from the primary |
+    | T4    |    -        | Records replicate |    -           | Data at secondary now updated. Last Sync Time updated |
 
 ## Best practices for cloud-based applications with RA-GRS
 
-This section summarizes some general guidelines you should follow when developing an application for the cloud.
+There are a number of general guidelines to consider when developing an application for the cloud.
 
 ### Retry transient failures
 
-Transient failures can be caused by a number of conditions from a disconnected database, temporary loss of network, latency issues causing slow response from service. Applications must detect the faults and determine whether it's simply a blip in the service, or a more severe outage.  The application must have the capability to retry a service if it believes the fault is likely to be transient, before listing it as failed.
+Transient failures can be caused by a number of conditions from a disconnected database, temporary loss of network or latency issues that cause slow response times from services. Applications must detect the faults and determine whether it's simply a blip in the service, or a more severe outage. The application must have the capability to retry a service if it believes the fault is likely to be transient, before listing it as failed.
 
 ### Handle failed writes
 
@@ -73,16 +82,16 @@ Be prepared to handle stale data if it is read from a secondary region. As descr
 In distributed environments, communication between remote resources can fail because of slow network connections, resources timeouts, resources being offline, or a transmission problem corrupting data in transit. A majority of the time these issues are transient and will resolve themselves. If the application retries the same operation, it often succeeds.
 
 In some situations when the outage is severe, it makes sense for the application to stop retrying the operation and instead initiate fail over to a secondary site.
-To prevent an application to keep retrying operations that have failed, you can implement the Circuit Breaker pattern.  
+To prevent an application to keep retrying operations that have failed, you can implement the Circuit Breaker pattern. 
 
-The circuit breaker pattern forces the application to fail over to the secondary site allowing the application to resume its normal service.  At the same time, the circuit breaker will continue to check if the resources on the primary site are back online, and when they do come online, it will allow the application to reconnect to the primary site. The circuit breaker acts like a proxy; it monitors a service and if there's a failure in the service, it prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
+The Circuit Breaker pattern forces the application to fail over to the secondary site allowing the application to resume its normal service. At the same time, the circuit breaker will continue to check if the resources on the primary site are back online, and when they do come online, it will allow the application to reconnect to the primary site. The circuit breaker acts like a proxy; it monitors a service and if there's a failure in the service, it prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
 
-The difference between the Circuit Breaker pattern and the Retry pattern, is that the  Retry pattern will allow an application to keep retrying a connection to a resource, which may be offline. The circuit breaker pattern will prevent this behavior and fail over the application to the secondary connection.
+The difference between the Circuit Breaker pattern and the Retry pattern, is that the  Retry pattern will allow an application to keep retrying a connection to a resource, which may be offline. The Circuit Breaker pattern will prevent this behavior and fail over the application to the secondary connection.
 
 The purpose of implementing a Circuit Breaker pattern is to provide stability to your application while the system recovers from a failure.
 
 Use the Circuit Breaker pattern to prevent an application from trying connections to resources, which have failed, and instead redirecting the connection to working resources to minimize disruption. Don't use the Circuit Breaker pattern for accessing local or in-memory data structures, as circuit breakers would add overhead to the system.
 
-When you implement the circuit breaker pattern, set the **LocationMode** of read requests appropriately. Most of the time, you should set this mode to **PrimaryThenSecondary**. If the read from the primary location times out, then the secondary location will be used. However, this process can slow an application down if performed repeatedly. Once the circuit breaker has detected that the primary location is unavailable, it should switch the mode to **SecondaryOnly**. This switch will ensure that read operations don't wait for a timeout from the primary location before trying the secondary. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the **PrimaryThenSecondary** mode.
+When you implement the Circuit Breaker pattern, set the **LocationMode** of read requests appropriately. Most of the time, you should set this mode to **PrimaryThenSecondary**. If the read from the primary location times out, then the secondary location will be used. However, this process can slow an application down if performed repeatedly. Once the circuit breaker has detected that the primary location is unavailable, it should switch the mode to **SecondaryOnly**. This switch will ensure that read operations don't wait for a timeout from the primary location before trying the secondary. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the **PrimaryThenSecondary** mode.
 
 For more information, see [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
