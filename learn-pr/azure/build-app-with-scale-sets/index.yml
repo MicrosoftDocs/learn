@@ -20,7 +20,7 @@ prerequisites: |
   - Basic knowledge of load balancing concepts
 iconUrl: http://via.placeholder.com/120x120
 badge:
-  uid: learn.build-app-with-scale-sets
+  uid: learn.build-app-with-scale-sets.badge
 levels: 
 - beginner
 roles: 
