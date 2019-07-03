@@ -9,13 +9,14 @@ The sandbox will clean up your resources automatically for you when you are fini
 To delete the Azure AD tenant, follow these steps:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the top bar, click on your account, and then click **Switch directory**.
-1. Click on the directory you created in unit 4.
+1. Click on the **Learn Module AAD Tenant** you created in unit 4.
 1. In the navigation on the left, click **Azure Active Directory**, click **App Registrations**, and then click the **WebApp-OpenIDConnect-DotNet** registration.
 1. Click **Delete** and then click **Yes**.
 1. In the navigation on the left, click **Azure Active Directory**, and then under **Manage**, click **Properties**.
 1. Under **Access management for Azure resources**, click **Yes**, and then click **Save**.
 1. In the top right of the portal, click your user account, and then click **Sign out**.
-1. Sign in with your normal credentials. This action applies the new user account privileges.
+1. Sign in with your normal credentials. In the top bar, click on your account, and then click **Switch directory**.
+1. Click on the **Learn Module AAD Tenant** you created in unit 4.
 1. In the navigation on the left, click **Azure Active Directory**, click **Delete directory**, and then click **Delete**.
 1. In the top right of the portal, click your user account, and then click **Sign out**.
 

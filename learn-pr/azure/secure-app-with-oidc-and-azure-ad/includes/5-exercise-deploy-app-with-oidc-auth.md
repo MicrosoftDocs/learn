@@ -6,7 +6,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 ## Configure and deploy the application that uses OpenID Connect to authenticate users
 
-1. Switch back to the default directory for your subscription (**not AD-Tenant**). Sign in if prompted.
+<!-- 1. Switch back to the default directory for your subscription (**not Learn Module AAD Tenant**). Sign in if prompted. -->
 
 1. Run the following command in Cloud Shell to clone the repo that contains the source for our app.
 
@@ -61,8 +61,7 @@ In this exercise, you'll configure an application to authenticate users against 
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
         --sku B1 \
-        --name educationapp-$RANDOM \
-        --output table
+        --name educationapp-$RANDOM
     ```
 
 1. Copy the URL from the command output. You'll need this address for the app registration configuration.
@@ -71,11 +70,11 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL of the web service you created above:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), switch back to the AD-Tenant directory you created earlier. Sign in when prompted.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), switch back to the Learn Module AAD Tenant directory you created earlier. Sign in if prompted.
 
 1. In the navigation bar on the left, click **Azure Active Directory**.
 
-1. Under **Manage**, select **App Registrations**, and then click the registration you created in the previous exercise.
+1. Under **Manage**, select **App Registrations**, and then click the **WebApp-OpenIDConnect-DotNet** registration you created in the previous exercise.
 
 1. Click **Authentication**.
 
@@ -99,36 +98,7 @@ Now let's configure the app registration to authorize the URL of the web service
 
     ![Screenshot of the request consent dialog box](../media/5-request-consent.png)
 
-1. Click **Accept**. The web app will appear. The title bar will include your authenticated user name.
-
-<!-- ## Configure and test the application
-
-Now, configure the web app with the right client ID and tenant name, and authenticate:
-
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), switch back to the default directory for your account, and sign in.
-
-1. In the navigation bar on the left, click **All resources**, and then click the web app.
-
-1. In the web app pane, under **Development Tools**, click **App Service Editor**.
-
-1. In the **App Service Editor** pane, click **Go**. Sign in again if prompted.
-
-1. In the navigation bar, under **WWWROOT**, click the file **appSettings.json**.
-
-1. Set the **Domain** to the domain name of the Active Directory tenant you created in the previous lab. This domain should have the format ***mydomain*.onmicrosoft.com**.
-
-1. Set the **TenantId** to the GUID of the Active Directory tenant that you created in the previous lab.
-
-    > [NOTE|]
-    > You can easily find the tenant ID for a directory by using the **Switch directory** feature of the portal. The list of directories that appears shows the domain name (including the **onmicrosoft.com** suffix), and the tenant ID.
-    >
-    > ![The Switch directory window, with tenant information highlighted](../media/5-tenant-info.png)
-
-1. Change the **ClientId** to the Application ID you recorded earlier.
-
-     ![Screenshot of an app registration](../media/5-update-client.png)
- -->
-
+1. Click **Accept**. The web app will appear. The title bar will include your authenticated user name indicating you've been successfully logged in with the identity in the **Learn Module AAD Tenant** you created.
 
 You've now created both the application registration and the web app itself. You've configured both these objects with the information they need to locate each other.
 

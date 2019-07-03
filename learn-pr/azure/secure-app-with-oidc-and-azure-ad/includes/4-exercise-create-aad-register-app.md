@@ -18,7 +18,7 @@ To start, you'll use the Azure portal to create a new Azure AD tenant.
 
     | Field | Value |
     | --- | --- |
-    | **Organization Name** | AD-Tenant |
+    | **Organization Name** | This is a friendly name for your tenant. For this excercise, use **Learn Module AAD Tenant** |
     | **Initial domain name** | Enter a unique name for your tenant |
     | **Country or region** | Select your preferred region |
 
@@ -39,7 +39,7 @@ Next, let's create a new registration in the Azure AD tenant for the web app. By
     | Field | Value |
     | --- | --- |
     | Name | WebApp-OpenIDConnect-DotNet |
-    | Supported account types | Accounts in this organizational directory only (AD-Tenant)) |
+    | Supported account types | Accounts in this organizational directory only (Learn Module AAD Tenant)) |
     | Redirect URI | https://localhost/signin-oidc |
 
     ![Registering an application](../media/4-register-application.png)
