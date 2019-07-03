@@ -12,7 +12,7 @@ In this step, you'll create a new storage account. This storage account hosts th
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-1. Run the following command in the Cloud Shell.
+1. Run the following commands in the Cloud Shell.
 
     ```bash
     STORAGEACCT=$(az storage account create \
@@ -21,7 +21,11 @@ In this step, you'll create a new storage account. This storage account hosts th
             --sku Standard_LRS \
             --output tsv \
             --query "name")
+    
+    echo $STORAGEACCT
     ```
+
+    Make a note of the value of the **\$STORAGEACCT** variable, in case you need to recreate it in a later exercise.
 
 ## Change the replication mode on the Azure storage account
 
