@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure virtual machines from VHD templates
-summary: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and error.
+summary: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and errors.
 abstract: |
   In this module, you will:
   - Identify the methods to create a specialized VHD
@@ -20,7 +20,7 @@ prerequisites: |
   - Basic knowledge of Azure virtual machines
 iconUrl: http://via.placeholder.com/120x120
 badge:
-  uid: learn.deploy-vms-from-vhd-templates
+  uid: learn.deploy-vms-from-vhd-templates.badge
 levels: 
 - beginner
 roles: 

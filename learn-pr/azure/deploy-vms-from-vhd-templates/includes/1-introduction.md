@@ -1,9 +1,8 @@
-Azure enables you to deploy Windows and Linux virtual machines from standard images from the Azure Market place.  Organizations can use these standard images to deploy a vanilla operating system.  This is not always ideal for companies who wish to customize the operating system to their own standards.  Within Azure you can create your own customized images which you can use to deploy your virtual machines.
+Azure enables you to deploy Windows and Linux virtual machines from standard images available in the Azure Marketplace. Organizations can use these standard images to deploy a vanilla virtual machine running the selected operating system. You can then install any additional software required on these virtual machines. This approach isn't always ideal for companies who wish to customize the virtual machine to match their specific requirements, change the configuration, and add specific applications. Within Azure, you can create your own customized images that you can use to deploy your virtual machines.
 
-Imagine you're the solution architect for a large finance organization, who are  building out a new environment on Azure that uses virtual machines. They would like to have a customized image with their organizational standards included and need a method to store and create virtual machines from these images.
-Your goal is to look into the options for customizing the Azure images and how these images can be used to deploy virtual machines.
+Imagine you're the solution architect for a large finance organization. The organization is building out a new environment on Azure that uses virtual machines. The organization would like to have a customized image configured to their organizational requirements from which it can create and deploy virtual machines. The organization needs a method to store and create virtual machines from these images. Your goal is to look into the options for customizing the Azure images, and how these images can be used to deploy virtual machines.
 
-You'll learn about how to create customized images, generalize the image and create speacialized images and how to deploy virtual machines using the images.
+In this module, you'll learn about how to create customized images. You'll see how to generalized images, and create specialized images from the generalized versions. You'll also see how to deploy virtual machines using the images.
 
 ## Learning objectives
 
