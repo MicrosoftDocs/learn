@@ -1,57 +1,57 @@
-<introduction paragraph>
+As part of the project for a finance company that needs to look into configuring images which can be used to deploy servers using a customized image, you need to understand how you can create customized images. You need to understand what customized images are and how they can benefit a company.
 
-<chunk 1 title>
+## Disk imaging capabilities for Azure virtual machines
 
-....
+### What is an Azure Virtual Hard Disk (VHD)
 
-<chunk 2 title>
+You can think of an Azure virtual hard disk (VHD) like a physical disk but virtualized which are stored as page blobs, which are IO storage object in Azure. 
 
-...
+Azure VHD's have several features:
 
-## Notes from design doc
-**Disk imaging capabilities for Azure virtual machines**
+- Highly available and durable
+    - With managed disks, data is highly available because data is replicated three times across datacenters, meaning if one datacenter had issues, your data is still available in two other locations
 
-In this unit, you will explore the features of Azure Virtual Hard Disks. By the end of this unit, you will be able to:
+- Scalable
+    - VHDs can be easily scaled out and use in scale sets
 
-*   Understand the benefits of using Azure VHDs as a Golden Image to standardize your VM's base build.
-*   Understand Specialized-vs-Generalized images.
-*   Understand the approach and tools for generalizing a Windows Server
-*   Understand the method and tools for generalizing a Linux VM
+- Images
+    - Azure VHDs spport creating a managed custom image. You can create an image from your VHD in a storage account or you can create an image from a generalized (sysprepped) VM
 
-Cover the following points:
+### Purpose of Generalization
 
-*   
+By using Generalized images, you can use this image as a  template for VM deployment or for mass deployments.  These images can be customized, generalized and then used as a template.  This ensures you have the same image deployed with the same software installed across your environment.  With generalized deployments, you can be sure that there is no possibility of duplication because generalization resets server-specific data such as:
 
-What is an Azure Virtual Hard Disk (VHD)
+- Hostname
+- Users and Credentials
+- Event Logs
+- Security Identifiers
+- Generalization is destructive, so take a VM backup first before generalization if you have a requirement to use VM again.
 
-    *   A VHD is a disk image file format for storing the complete contents of a hard drive in a storage account within Azure.
-    *   It can be used as a template for deploying future Virtual Machines to minimize manual configuration, variance and error.
-    *   This can be performed on both Windows VMs and Linux VMs.
-*   
+To generalize a VM, you would run Sysprep on a Windows Server. Sysprep removes server specfic information from the image which allows you to use that image for mass deployment.
 
-Purpose of Generalization
+You need to be aware that when you generalize a VM, the change can't be reversed. So you should take a copy of the VM you wish to generalize and then customize the copy.
 
-    *   Generalized images are intended to be used as templates for your VM and mass deploying it to one or many subsequent VMs so it can be reused for mass deployment without the possibility of duplication. To achieve this  generalization resets server-specific data such as:
+To generalize a Windows VM, follow these steps:
+- Login into the Windows server
+- Open a command prompt as an administrator and browse to the directory \system32\sysprep, and run sysprep.exe.
+- Select Enter System Out-of-Box Experience (OOBE) and select the Generalize check box.
+- Select Shutdown.
 
-    *   Hostname
-    *   Users and Credentials
-    *   Event Logs
-    *   Security Identifiers
-    *   Generalization is destructive, so take a VM backup first before generalization if you have a requirement to use VM again.
-*   
+Once you have generalized the VM, you can then create an image.  By creating an image, it  ensures that the image includes all of the disks associated with the VM.
 
-What is a Specialized Virtual Disk
+You can create an image from the generalized VM using either the Azure portal or powershell
 
-    *   A Specialized image is a gold image of your system, a snapshot.
-    *   It is a point in time copy of your system.
-*   
+## What is a Specialized Virtual Disk
 
-Where are VHD images stored
+A specialized disk is a copy of a virtual hard disk from an existing VM which contains user accounts, applications and any other configuration on the original VM.
 
-    *   VHD disk images are stored in an Azure Managed disk account.  A managed disk is an abstraction over page blobs, blob container storage, and Azure Storage accounts.  To learn more about managed disks click [here](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)
+Using a specialized VHD to create a new VM, the new VM will retain the computer name of the original VM. The new VM will also retain other computer-specific information.
 
-Ask three questions as a Knowledge Check
+One way to move an on-premises Hyper-V Windows virtual machine (VM) with all its user accounts, policies and applications fully intact up to Azure, is to create a specialized disk of the VM’s operating system virtual hard disk (VHD). This specialized VHD is then uploaded to Azure, after being properly prepped to work in the Azure environment and attached to a new VM.
 
-*   What is the tool for Generalizing a Windows Server
-*   What is the tool for Generalizing a Linux VM
-*   If you wanted to mass use a machine image for mass deploying new identical VM's would you select a Generalized or Specialized virtual disk?
+## Where are VHD images stored
+
+VHD disk images are stored in an Azure Managed disk account. A managed disk is an abstraction over page blobs, blob container storage, and Azure Storage accounts.
+
+
+
