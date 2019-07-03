@@ -24,6 +24,7 @@ prerequisites: |
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:
