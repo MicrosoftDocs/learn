@@ -1,14 +1,14 @@
-You can construct an authentication system from many different standards and systems but you must understand your choices thoroughly.
+There are many options for securing identities in your application. Selecting the right technology for your application will ensure your application is secure, while maintaining a great experience for your users.
 
-In your transportation company, your drivers have identities in Office 365. You want to understand how you can use those identities to authenticate them in your scheduling app. You want to provide secre access to your application without requiring the drivers to manage extra user accounts and credentials.
+At your transportation company, your drivers have identities in Office 365. You want to understand how you can use those identities to authenticate them in your scheduling app. You want to provide secure access to your application without requiring the drivers to manage extra user accounts and credentials.
 
-Here, you will learn about the standards and tools that you can use for authentication.
+Let's take a look at the standards and services that you can use for authentication.
 
-## What is Azure AD?
+## What is Azure Active Directory?
 
 **Azure Active Directory (Azure AD)** is Microsoft's cloud-based identity and access management service. It simplifies authentication for developers by providing identity as a service and it has support for industry-standard protocols such as OAuth 2.0 and OpenID Connect. It allows users to sign in and view resources, and has features to secure your identities, such as Identity Protection and multi-factor authentication.
 
-Office 365 uses Azure AD to store and manage users. Whenever Office 365 needs to verify a user, all identity and access management is performed by Azure AD.
+Microsoft services such as Azure and Office 365 use Azure AD to store and manage users. Whenever Office 365 needs to verify a user, for example, all identity and access management is performed by Azure AD.
 
 ## Authentication in Azure Active Directory
 
