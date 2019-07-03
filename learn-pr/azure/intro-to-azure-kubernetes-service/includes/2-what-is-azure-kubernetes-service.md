@@ -64,9 +64,9 @@ However, this view might be slightly misleading as there are a few aspects to ke
 
 - Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches nor cluster storage systems. All these items are run as containers or as part of another service offering.
 
-- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one master machine and three or more workers machines for production deployments. These machines can be physical hardware or VMs.
+- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one master machine and three or more workers machines for production deployments. These machines can be physical hardware or VMs. Theses worker machines are called nodes or agent nodes.
 
-With all the benefits you receive with Kubernetes, keep in mind that you're responsible for maintaining your Kubernetes cluster. For example, you need to management OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
+With all the benefits you receive with Kubernetes, keep in mind that you're responsible for maintaining your Kubernetes cluster. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 
 > [!NOTE]
 > Kubernetes is sometimes abbreviated to **K8s**. The 8 represents the 8 characters between the K and the s of the word K[*ubernetes*]s.
@@ -75,7 +75,7 @@ With all the benefits you receive with Kubernetes, keep in mind that you're resp
 
 ![Image of replicated servers as multiple containers in an AKS Kubernetes cluster](../media/2-deploy-AKS.png)
 
-Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment and makes it simple to deploy and managed containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. The Kubernetes cluster master is managed by Azure and is free. You manage the agent nodes in the cluster, and only pay for the VMs your nodes are running on.
+Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. The Kubernetes cluster master is managed by Azure and is free. You manage the agent nodes in the cluster, and only pay for the VMs your nodes are running on.
 
 You can either create your cluster in the Azure portal or use the Azure CLI. When you create the cluster, you can use Resource Manager templates to automate cluster creation. With these templates, you specify features such as advanced networking, Azure Active Directory (AD) integration, and monitoring. This information is then used to automate the cluster deployment on your behalf.
 
