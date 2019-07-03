@@ -10,7 +10,7 @@ Azure AD tenants are created in the .onmicrosoft.com domain by default. You can'
 
 Azure AD tenants can only be created in the Azure portal.
 
-## How to register a web app
+## Register a web app
 
 Within the Azure tenant, you will need a registration for the application. The registration is a record of security details for the application in Azure AD. A registration ensures that Azure AD can identify the application as well as the user. A registration includes these details:
 
@@ -21,7 +21,7 @@ Within the Azure tenant, you will need a registration for the application. The r
 
 Application registrations are configured in the Azure portal. Applications are registered on the **App registrations > New application registration** page for the Azure AD tenant.
 
-## How to configure the app for authentication
+## Configure the app for authentication
 
 There is a lot of intricacy in ensuring the OpenID Connect protocol specifications are followed properly. To make it easy for developers to use OpenID Connect in their applications, Microsoft provides middleware to facilitate this communication. This middleware consists of APIs that include methods and properties that make it easy to interact with the identity provider. The middleware is available for several different platforms. Microsoft supplies and supports middleware libraries for .NET Framework, .NET Core, and Node.js. There are also client-side libraries for JavaScript, Angular, PHP, and other platforms.
 
