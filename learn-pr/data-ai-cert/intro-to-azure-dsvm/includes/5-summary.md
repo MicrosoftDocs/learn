@@ -1,0 +1,3 @@
+During this module, you learned about Azure DSVMs and how they can help you with a variety of data science projects. You also discovered that DSVM comes preinstalled with many popular data science tools. 
+
+You learned how the Azure DSVM makes an excellent learning tool for open-source and Microsoft-specific machine learning services. Azure offers different types of DSVM images, each optimized to support different requirements. The Deep Learning VM and the Geo AI Data Science VM versions are specially configured with resources for their respective purposes. In the following units, you will learn more about each type of Azure DSVM.

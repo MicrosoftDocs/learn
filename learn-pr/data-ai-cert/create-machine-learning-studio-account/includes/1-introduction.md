@@ -1,8 +1,8 @@
-When it comes to artificial intelligence, you may have heard the term "machine learning" mentioned.  Perhaps you are aware of machine learning or perhaps you are interested in learning more. Machine learning has many uses in an AI application or solution.  Microsoft provides a set of tools and services for you to use for implementing machine learning aspects into your own solutions.
+In discussions about artificial intelligence (AI), you might have heard the term *machine learning*. Maybe you're aware of machine learning or you're interested in learning more. Machine learning has many uses in an AI application or solution. You can apply machine learning in your own solutions by using a set of Microsoft tools and services.
 
 ## Learning objectives
 
 In this module you will:
 
-- Learn what machine learning is
-- Set up and use Microsoft Azure Machine Learning Studio
+- Learn what machine learning is.
+- Set up and use Azure Machine Learning Studio.

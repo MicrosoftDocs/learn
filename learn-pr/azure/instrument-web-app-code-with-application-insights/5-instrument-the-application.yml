@@ -3,7 +3,7 @@ uid: learn.instrument-web-app-code-with-application-insights.5-instrument-the-ap
 title: Exercise - Instrument the application
 metadata:
   title: Exercise - Instrument the application
-  description: In this unit, you will add write code that calls the Application Insights SDK and stores custom data in Application Insights in Azure.
+  description: In this unit, you'll write code that calls the Application Insights SDK and stores custom data in Application Insights in Azure.
   ms.date: 02/27/2019
   author: nickwalkmsft
   ms.author: nickwalk

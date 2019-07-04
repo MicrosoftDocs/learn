@@ -17,3 +17,6 @@ In this module, you will:
 ## Prerequisites
 
 - Experience administering Azure resources using the Azure portal
+
+> [!NOTE]
+> You will need your own Azure subscription to complete the exercises in this module.
