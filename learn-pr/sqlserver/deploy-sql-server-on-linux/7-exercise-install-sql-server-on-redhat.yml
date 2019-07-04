@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.deploying-sql-server-on-linux.7-exercise-install-sql-server-on-redhat
+uid: learn-sqlserver.deploy-sql-server-on-linux.7-exercise-install-sql-server-on-redhat
 title: Exercise - Install SQL Server on Red Hat
 metadata:
   title: Exercise - Install SQL Server on Red Hat
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 10
-## TODO: Check that this is the correct Lab ID
-labId: 47218
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/7-exercise-install-sql-server-on-redhat.md)]

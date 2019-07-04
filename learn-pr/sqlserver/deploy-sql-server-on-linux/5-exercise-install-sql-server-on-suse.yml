@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.deploying-sql-server-on-linux.5-exercise-install-sql-server-on-suse
+uid: learn-sqlserver.deploy-sql-server-on-linux.5-exercise-install-sql-server-on-suse
 title: Exercise - Install SQL Server on SUSE
 metadata:
   title: Exercise - Install SQL Server on SUSE
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 5
-## TODO: Check that this is the correct Lab ID
-labId: 47218
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/5-exercise-install-sql-server-on-suse.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.deploying-sql-server-on-linux.3-exercise-install-sql-server-on-ubuntu
+uid: learn-sqlserver.deploy-sql-server-on-linux.3-exercise-install-sql-server-on-ubuntu
 title: Exercise - Install SQL Server on Ubuntu
 metadata:
   title: Exercise - Install SQL Server on Ubuntu
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
 durationInMinutes: 7
-## TODO: Check that this is the correct Lab ID
-labId: 47218
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/3-exercise-install-sql-server-on-ubuntu.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.deploying-sql-server-on-linux.9-exercise-install-sql-server-on-docker
+uid: learn-sqlserver.deploy-sql-server-on-linux.9-exercise-install-sql-server-on-docker
 title: Exercise -  Install SQL Server on Docker
 metadata:
   title: Exercise - Install SQL Server on Docker
@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
-## TODO: Check that this is the correct Lab ID
-labId: 47218
+interactive: bash
+azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/9-exercise-install-sql-server-on-docker.md)]

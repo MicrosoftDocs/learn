@@ -4,18 +4,30 @@ You are a database administrator at the wholesale company Wide World Importers a
 
 In this unit, you will see how to deploy SQL Server on a container with Docker.
 
-## Start the lab
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
+[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
+<!-- ## Start the lab
 
 Start by logging into the Red Hat server:
 
-<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/47218?providerId=4 -->
+<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/47218?providerId=4 ->
 1. Sign into the VM with a Microsoft account, or create a new account.
 1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the username **student**, and the password **Pa55w.rd**.
 1. Close the Server Manager window.
 
+-->
+
 ## Install Docker
 
 Before you can run any containers, you must begin by installing the Docker container host software. Follow these steps:
+
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then click the Ubuntu VM you created in unit 3.
+
+
+
+
 
 > [!NOTE]
 > These steps are for Red Hat Enterprise Linux, but the steps will be very similar for other Linux distros.
