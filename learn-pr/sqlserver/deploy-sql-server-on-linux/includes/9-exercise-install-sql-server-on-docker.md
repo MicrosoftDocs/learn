@@ -8,17 +8,6 @@ In this unit, you will see how to deploy SQL Server on a container with Docker.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-<!-- ## Start the lab
-
-Start by logging into the Red Hat server:
-
-<!--YAML added to connect to https://labondemand.com/AuthenticatedLaunch/47218?providerId=4 ->
-1. Sign into the VM with a Microsoft account, or create a new account.
-1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the username **student**, and the password **Pa55w.rd**.
-1. Close the Server Manager window.
-
--->
-
 ## Connect to the Ubuntu VM
 
 Before you can run any containers, you must begin by installing the Docker container host software. Follow these steps:
@@ -60,50 +49,6 @@ To install Docker, add the Docker repository and then use the `apt-get` tool:
     ```bash
     sudo apt-get install -y docker-ce
     ```
-
-<!--
-> [!NOTE]
-> These steps are for Red Hat Enterprise Linux, but the steps will be very similar for other Linux distros.
-
-1. To enable the RHEL Server repository, run this command:
-
-    ```bash
-    sudo subscription-manager repos --enable=rhel-7-server-rpms
-    ```
-
-1. To enable the RHEL Server extras repository, run this command
-
-    ```bash
-    sudo subscription-manager repos --enable=rhel-7-server-extras-rpms
-    ```
-
-1. To enable the RHEL Server optional repository, run this command:
-
-    ```bash
-    sudo subscription-manager repos --enable=rhel-7-server-optional-rpms
-    ```
-
-1. To install Docker and the dependent packages, run this command:
-
-    ```bash
-    sudo yum install docker device-mapper-libs device-mapper-event-libs
-    ```
-
-    > [!NOTE]
-    > If you are asked for confirmation, press **y** and **Enter** each time.
-
-1. To start Docker, run this command:
-
-    ```bash
-    sudo systemctl start docker.service
-    ```
-
-1. To enable Docker, run this command:
-
-    ```bash
-    sudo systemctl enable docker.service
-    ```
--->
 
 ## Pull and run the container image
 

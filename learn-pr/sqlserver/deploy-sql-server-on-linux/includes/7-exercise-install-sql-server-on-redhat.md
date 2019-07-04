@@ -2,7 +2,9 @@ On Red Hat Enterprise Linux (RHEL) servers, use the `yum` tool to install SQL Se
 
 You are a database administrator at the wholesale company Wide World Importers and want to benefit from SQL Server without having to change the server operating systems. You have decided to deploy SQL Server on a Red Hat server and will configure the SQL Server package and install command-line tools so that SQL Server is ready to be used by your developers.
 
-In this exercise, you will deploy SQL Server on CentOS, install command-line tools, and create a database on SQL Server. CentOS is a free distribution, based on Red Hat but with fewer licensing requirements. The installation commands in this unit, are the same on both CentOS and RHEL.
+<!-- TODO: This exercise is written in the sandbox. Currently, Red Hat images are not permitted in the sandbox. I've approached the Azure team about changing this. If Engineering won't change it, the students will have to bring their own paid-for subscription, and we must add notes to that effect here. -->
+
+In this exercise, you will deploy SQL Server on RHEL, install command-line tools, and create a database on SQL Server. 
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -10,11 +12,11 @@ In this exercise, you will deploy SQL Server on CentOS, install command-line too
 
 ## Create a CentOS Virtual Machine 
 
-Let's start by creating a CentOS Virtual Machine (VM) in Azure:
+Let's start by creating a Red Hat Virtual Machine (VM) in Azure:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **+ Create a resource**.
-1. In the **Search the Marketplace** textbox, type **CentOS**, and then press Enter.
-1. Click the **CentOS 7.6** image, and then click **Create**.
+1. In the **Search the Marketplace** textbox, type **Red Hat**, and then press Enter.
+1. Click the **Red Hat Enterprise Linux 7.6** image, and then click **Create**.
 1. In the **Create a virtual machine** dialog, on the **Basics** page, enter these values, and then click **Review + create**:
 
     | Field | Value |
@@ -24,28 +26,28 @@ Let's start by creating a CentOS Virtual Machine (VM) in Azure:
     | Virtual machine name | Enter a unique name and make a note of it. |
     | Region | Select a region near you from the above list. |
     | Availability options | No infrastructure redundancy required |
-    | Image | CentOS 7.6 |
+    | Image | Red Hat Enterprise Linux 7.6 |
     | Size | Standard |
     | Authentication type | Password |
-    | Username | centosadmin |
+    | Username | redhatadmin |
     | Password | Pa$$w0rdLinux |
     | Public inbound ports | Allow selected ports |
     | Select inbound ports | SSH |
     | | |
 
-    ![Creating a CentOS VM](../media/7-create-centos-vm.png)
+    ![Creating a Red Hat VM](../media/7-create-red-hat-vm.png)
 
 1. On the **Review + create** page, click **Create**.
 
-## Connect to the CentOS VM
+## Connect to the Red Hat VM
 
-Now that we have a CentOS VM, ready to install SQL Server on, let's connect to it by using Secure Shell (SSH):
+Now that we have a Red Hat VM, ready to install SQL Server on, let's connect to it by using Secure Shell (SSH):
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), when the VM deployment is complete, click **All resources** and then click the VM you created.
 1. In the top left of the **Overview** page, click **Connect**.
 1. On the **SSH** tab, to the right of the **Login using VM local account** textbox, click the **Copy** button.
 
-    ![Connecting to the VM](../media/7-connect-to-vm.png)
+    ![Connecting to the VM](../media/7-connect-to-red-hat-vm.png)
 
 1. In the Cloud Shell on the right, right-click, click **Paste**, and then press Enter.
 1. When asked if you're sure, type **yes** and then press Enter.

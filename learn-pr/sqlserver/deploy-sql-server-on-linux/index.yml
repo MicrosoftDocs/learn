@@ -29,12 +29,12 @@ products:
 units:
 - learn-sqlserver.deploy-sql-server-on-linux.1-introduction
 - learn-sqlserver.deploy-sql-server-on-linux.2-deploy-sql-server-on-ubuntu
-- learn-sqlserver.deploy-sql-server-on-linux.4-deploy-sql-server-on-suse
-- learn-sqlserver.deploy-sql-server-on-linux.6-deploy-sql-server-on-redhat
-- learn-sqlserver.deploy-sql-server-on-linux.8-deploy-sql-server-on-docker
 - learn-sqlserver.deploy-sql-server-on-linux.3-exercise-install-sql-server-on-ubuntu
+- learn-sqlserver.deploy-sql-server-on-linux.4-deploy-sql-server-on-suse
 - learn-sqlserver.deploy-sql-server-on-linux.5-exercise-install-sql-server-on-suse
+- learn-sqlserver.deploy-sql-server-on-linux.6-deploy-sql-server-on-redhat
 - learn-sqlserver.deploy-sql-server-on-linux.7-exercise-install-sql-server-on-redhat
+- learn-sqlserver.deploy-sql-server-on-linux.8-deploy-sql-server-on-docker
 - learn-sqlserver.deploy-sql-server-on-linux.9-exercise-install-sql-server-on-docker
 - learn-sqlserver.deploy-sql-server-on-linux.10-knowledge-check
 - learn-sqlserver.deploy-sql-server-on-linux.11-summary
