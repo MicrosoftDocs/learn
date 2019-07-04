@@ -61,18 +61,21 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 1. Click **Developer tools**, and then click **API Management**.
 1. In the **API Management service** page, enter the following details and then click **Create**:
 
-   | Field | Details |
-   | --- | --- |
-   | **Name** | Type `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this API gateway name. You will need it later to make requests. |
-   | **Subscription** | Concierge Subscription |
-   | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
-   | **Location** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
-   | **Organization Name** | Type `Weather-Company`. |
-   | **Administrator Email** | Type your own email address. |
-   | **Pricing Tier** | Select `Consumption`. |
+    | Field | Details |
+    | --- | --- |
+    | **Name** | Type `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this API gateway name. You will need it later to make requests. |
+    | **Subscription** | Concierge Subscription |
+    | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
+    | **Location** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
+    | **Organization Name** | Type `Weather-Company`. |
+    | **Administrator Email** | Type your own email address. |
+    | **Pricing Tier** | Select `Consumption`. |
+    | | |
 
-   > [!NOTE]
-   > You're using the **Consumption** tier because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
+    ![Deploying the API Management gateway](../media/3-deploy-gateway.png)
+
+    > [!NOTE]
+    > You're using the **Consumption** tier because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
 
 ## Import the API
 
@@ -83,6 +86,8 @@ Once deployment has completed, import the Weather API into the API Management ga
 1. On the **Add a new API** page, click **OpenAPI**.
 1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
 1. Leave the other settings at their defaults, and then click **Create**.
+
+    ![Importing this API in API Management](../media/3-import-the-api.png)
 
 ## Add a subscription key to access the Weather API
 
@@ -113,8 +118,7 @@ Now the API is secured with a key, we can test the API with and without a key:
 1. To make a request without passing a subscription key, in the Cloud Shell, copy and paste the following cURL command, and substitute the name of the API gateway that you created above:
 
     ```bash
-    curl -X GET \
-      https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
+    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
     ```
 
     This command should return a 401 Access Denied error, similar to the one below:
@@ -126,8 +130,7 @@ Now the API is secured with a key, we can test the API with and without a key:
 1. Finally, add the subscription key to the request and rerun it. Remember to substitute the name of the API gateway:
 
     ```Azure Cloud Shell
-    curl -X GET \
-      https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
+    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
     ```
 

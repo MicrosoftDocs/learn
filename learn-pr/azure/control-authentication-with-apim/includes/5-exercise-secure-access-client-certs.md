@@ -17,8 +17,8 @@ First, use the Cloud Shell to create a self-signed certificate, which you will u
 1. To create the private key and the certificate, run these commands in the Cloud Shell:
 
     ```bash
-    $pwd = '<enter-a-password>'
-    $pfxFilePath = 'selfsigncert.pfx'
+    pwd='<enter-a-password>'
+    pfxFilePath='selfsigncert.pfx'
     openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out selfsigncert.crt -subj /CN=localhost
     ```
 
@@ -28,6 +28,8 @@ First, use the Cloud Shell to create a self-signed certificate, which you will u
     openssl pkcs12 -export -out $pfxFilePath -inkey privateKey.key -in selfsigncert.crt -password pass:$pwd
     openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem -nodes
     ```
+
+    If you are asked for a password, type **Pa$$w0rd** and then press Enter.
 
 ## Configure the gateway to request client certificates
 
@@ -87,20 +89,18 @@ Finally, you can test the new authentication policy. You can test without the ce
 1. To test the API without the certificate, run the following command within the Cloud Shell. 
 
     ```PowerShell
-    curl -X GET `
-      https://[api-gateway-name].azure-api.net/api/Weather/53/-1
+    curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \ 
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
     ```
 
     This command should return a 403 Client certificate error, and no data will be returned.
-    
+
 1. In the Azure Cloud Shell, to test the API with the certificate, copy and paste the following cURL command, using the subscription key from the first exercise:
 
     ```PowerShell
-    curl -X GET `
-      https://[gateway-name].azure-api.net/api/Weather/53/-1 `
-      -H 'Ocp-Apim-Subscription-Key: [subscription-key]' `
-      --cert-type pem `
+    curl -X GET https://[gateway-name].azure-api.net/api/Weather/53/-1 \
+      -H 'Ocp-Apim-Subscription-Key: [subscription-key]' \
+      --cert-type pem \
       --cert selfsigncert.pem
     ```
 
