@@ -78,7 +78,7 @@ Before you use SQL Server, use the `mssql-conf` script to specify the edition th
     sudo /opt/mssql/bin/mssql-conf setup
     ```
 
-1. If prompted for your password, type **Pa55w.rd** and press Enter.
+1. If prompted for your password, type **Pa$$w0rdLinux** and press Enter.
 1. To select the Evaluation edition, type **1**, and then press Enter:
 1. Type **Yes**, and then press Enter to accept the license terms.
 1. Type **Pa$$w0rd**, and then press Enter to set the system administrator password.
