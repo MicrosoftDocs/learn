@@ -6,10 +6,10 @@ In this unit, you'll learn about the most common use cases for deploying Express
 
 Consider using Azure ExpressRoute service in the following scenarios:
 
-- Connecting to low latency services in the cloud. In these situations, eliminating or reducing the network overhead will have a significant impact on the performance of your applications. For situations where your cloud services take longer to respond, using ExpressRoute may be less beneficial.
+- Low latency connectivity to services in the cloud. In these situations, eliminating or reducing the network overhead will have a significant impact on the performance of your applications.
 - Accessing high-volume systems in the cloud that consume or produce massive volumes of data very quickly. ExpressRoute can move data around rapidly, with high reliability.
 - Consuming Microsoft Cloud Services, such as Office36 and Dynamics 365. ExpressRoute is especially useful if your organization has a large number of users that need to access these services concurrently.
-- Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute ensures that the results of the migrations are seamless for on-premises clients; they should notice no drop in performance, and may even experience some improvement if the previous on-premises systems were restricted by network bandwidth.
+- Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute ensures that the results of the migrations are seamless for on-premises clients. They should notice no drop in performance, and may even experience some improvement if the previous on-premises systems were restricted by network bandwidth.
 - Situations where data should not traverse the public Internet for security reasons.
 - Large datacenters, with a high number of users and systems accessing SaaS offerings.
 
@@ -17,7 +17,7 @@ Consider using Azure ExpressRoute service in the following scenarios:
 
 ExpressRoute offers several advantages for building highly scalable, cloud-based solutions.
 
-**Predictable performance** 
+**Predictable performance**
 
 By having a dedicated connection to Microsoft cloud, your performance is guaranteed. There are no concerns over internet provider outages or spikes in Internet traffic. With ExpressRoute, your providers are accountable to provide the necessary throughput and latency SLA.
 
@@ -43,20 +43,20 @@ You can also take advantage of a feature called ExpressRoute Global Reach, which
 
 ExpressRoute is one of three solutions that you can use to connect your on-premises network to Azure. The others are a virtual network site-to-site connection, and a virtual network point-to-site connection.
 
-### Site-to-site
+### Site-to-site VPN
 
-An Azure site-to-site VPN gateway connection enables you to connect your on-premise network to Azure over an IPSec tunnel to build a hybrid network solution. You configure an on-premises VPN device with  a public IP address. You connect this device to an Azure virtual network through an Azure virtual network gateway.
+An Azure site-to-site VPN connection enables you to connect your on-premises network to Azure over an IPSec tunnel to build a hybrid network solution. You configure an on-premises VPN device with  a public IP address. You connect this device to an Azure virtual network through an Azure virtual network gateway.
 
-### Point-to-site
+### Point-to-site VPN
 
-With Point-to-point VPN gateway, you can establish a secure connection to a network from individual computers located on-premises. This solution is useful for someone who wants to connect to Azure from remote locations such as home or customer site.  Point-to-site is only useful to use if you have only a few clients that need to connect to a virtual network.
+With voint-to-point VPN, you can establish a secure connection to a network from individual computers located on-premises. This solution is useful for someone who wants to connect to Azure from remote locations such as home or customer site.  Point-to-site is only useful to use if you have only a few clients that need to connect to a virtual network.
 
-### Azure ExpressRoute versus Azure Site-to-site and Point-to-site VPN connections
+### Azure ExpressRoute versus site-to-site and point-to-site VPN connections
 
 The following table shows a comparison between ExpressRoute, point-to-site, and site-to-site networking with Azure.
 
-| Connection | Azure services supported | Bandwidth | Protocols | Routing | Resiliency | Typical use case |
+| Connection | Azure services supported | Bandwidth | Protocols | Typical use case |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Virtual Network - Point-to-site | Azure IaaS services. Virtual machines | <100 Mbps | Secure sockets (SSTP) | Static | Active/Passive | Dev, test, and lab environments for cloud services and virtual machines |
-| Virtual Network - Site-to-site | Azure IaaS services. Virtual machines | <100 Mbps| IPSec | Static | Active/Passive | Dev, test, and lab environments. Small scale production workloads and virtual machines| 
-| ExpressRoute | Azure IaaS and PaaS services, Microsoft Office 365 services | 50 Mbps up to 10 Gbps (100 Gbps for ExpressRoute Direct)| Direct connection | BGP | Active/Active | Enterprise-class and mission critical workloads. Big data solutions |
+| Virtual Network - Point-to-site | Azure IaaS services. Virtual machines | <100 Mbps |  Active/Passive | Dev, test, and lab environments for cloud services and virtual machines |
+| Virtual Network - Site-to-site | Azure IaaS services. Virtual machines | <100 Mbps|  Active/Passive | Dev, test, and lab environments. Small scale production workloads and virtual machines| 
+| ExpressRoute | Azure IaaS and PaaS services, Microsoft Office 365 services | 50 Mbps up to 10 Gbps (100 Gbps for ExpressRoute Direct)| Active/Active | Enterprise-class and mission critical workloads. Big data solutions |
