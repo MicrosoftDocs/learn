@@ -6,7 +6,7 @@ In this unit, you'll look at how to design and configure an application that can
 
 When you configure a storage account GRS or RA-GRS, the client writes data to the primary endpoint or region. The data is then automatically replicated across to the secondary region. The diagram below shows this process
 
-![Replication workflow](../media/4-primary-secondary-replication.png).
+![Replication workflow](../media/4-primary-secondary-replication.png)
 
 If the primary region hosting your geo-redundant storage becomes unavailable, you can fail over to the secondary region.
 
