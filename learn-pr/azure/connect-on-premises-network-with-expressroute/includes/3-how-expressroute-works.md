@@ -116,7 +116,7 @@ You can also have multiple circuits across different providers to ensure your ne
 
 ## ExpressRoute Direct and FastPath
 
-Microsoft also provides an ultra high-speed option called ExpressRoute Direct. This service enables dual 100 Gpbs connectivity. It's suitable for scenarios that involve massive and frequent data ingestion, and for solutions that require extreme scalability, such as banking, government, and retail.
+Microsoft also provides an ultra high-speed option called ExpressRoute Direct. This service enables dual 100-Gbps connectivity. It's suitable for scenarios that involve massive and frequent data ingestion, and for solutions that require extreme scalability, such as banking, government, and retail.
 
 You enroll your subscription with Microsoft to activate ExpressRoute Direct. For more information, visit the ExpressRoute article in the **Learn more** section at the end of this module.
 

@@ -6,7 +6,7 @@ Your goal is to identify whether the Azure ExpressRoute service is the correct s
 
 In this module, you'll learn about the Azure ExpressRoute service, what it is, how it works, and how it's configured.
 
-# Learning objectives
+## Learning objectives
 
 In this module you will:
 
