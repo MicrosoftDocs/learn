@@ -16,7 +16,7 @@ abstract: |
   - Identify the use cases for using ExpressRoute to integrate traditional networks with Azure
 prerequisites: | 
   - Basic knowledge of networking concepts
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/connect-on-premises-network-with-expressroute.svg
 levels:
 - beginner
 roles:
