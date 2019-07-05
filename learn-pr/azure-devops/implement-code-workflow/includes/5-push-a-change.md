@@ -125,7 +125,7 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
     ```
 
     > [!TIP]
-    > Visual Studio Code also provides an easy way to search for text in files. Click the hourglass icon on the side menu to access the search pane.
+    > Visual Studio Code also provides an easy way to search for text in files. Click the magnifying glass icon on the side menu to access the search pane.
 
 1. Replace the text in the previous step with this text and then save the file.
 
