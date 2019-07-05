@@ -12,7 +12,7 @@ title: Deploy Azure virtual machines from VHD templates
 summary: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and errors.
 abstract: |
   In this module, you will:
-  - Identify the methods to create a specialized VHD
+  - Identify the methods to create a specialized virtual hard disk
   - Create a virtual machine from an existing managed disk
   - Create a virtual machine image
   - Create a virtual machine from an existing virtual machine image

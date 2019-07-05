@@ -4,6 +4,40 @@ In this unit, you'll learn how to customize an image and then create a virtual m
 
 ## Generalize a server and create an image of a VM
 
+---
+
+The method of generalizing an image depends upon the operating system. If you are building a Windows VHD, you can use the **sysprep** utility. Sysprep removes server specfic information from the image which allows you to use that image for mass deployment.
+
+> [!IMPORTANT]
+> Running **sysprep** is a potentially destructive process and you cannot easily revers its effects. Backup your virtual machine first.
+
+To generalize a Windows VM, follow these steps:
+
+- Login into the Windows virtual machine.
+- Open a command prompt as an administrator.
+- Browse to the directory *\windows\system32\sysprep*.
+- Run **sysprep.exe**.
+- In the System Preparation Tool dialog box, select the following settings, and then click **OK**.
+
+    | Property  | Value  |
+    |---|---|
+    | System Cleanup Action | Enter System Out-of-Box Experience (OOBE) |
+    | Generalize | Check  |
+    | Shutdown Options | Shutdown |
+
+    ![Image of the Sysprep dialog box](../media/3-sysprep.png)
+
+Once you have generalized the VM, you can then create an image.  By creating an image, it  ensures that the image includes all of the disks associated with the VM.
+
+You can create an image from the generalized VM using either the Azure portal or powershell
+
+ADD SOME SPIEL AND EXAMPLES
+
+For more information, visit (Create a managed image of a generalized VM in Azure)[https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource].
+-----
+
+
+
 You can generalize a Windows server by using sysprep.  Running sysprep on a Windows server will removed all the GUID details and hostnames and make that server OS unique, which you can then deploy multiple VMs.
 
 To generalize a Windows VM:
