@@ -130,7 +130,7 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
 1. Replace the text in the previous step with this text and then save the file.
 
     ```html
-    <p>Welcome to the oficial Space Game site!</p>
+    <p>Welcome to the official Space Game site!</p>
     ```
 
     > [!IMPORTANT]
