@@ -16,13 +16,13 @@ The healthcare portal is split into a three-tiered architecture:
 
 ![Diagram of three tier architecture](../media/5-three-tier-architecture.jpg)
 
-This architecture is a common and allows scaling up and scaling out. The presentation layer is public facing, the other tiers are only accessible within the local Azure virtual network. The previous exercise created an external load balancer to balance the Virtual Machines (VMs) in the presentation layer.
+This architecture is a common and allows you to scale out. The presentation layer is public facing, the other tiers are only accessible within the local Azure virtual network. The previous exercise created an external load balancer to balance the virtual machines in the presentation layer.
 
 ## Configure an internal load balancer
 
-In the current healthcare portal scenario, there is an application tier, which hosts business logic and is called by the presentation tier. The application tier is also deployed on two VMs and is a web application hosting web services. To allow the front-end web portal to survive losing a connection to an entire data center, you will set up an internal load balancer using availability zones.
+In the current healthcare portal scenario, there is an application tier, which hosts business logic and is called by the presentation tier. The application tier is also deployed on two virtual machines and is a web application hosting web services. To allow the front-end web portal to survive losing a connection to an entire data center, you will set up an internal load balancer using availability zones.
 
-The internal load balancer should only be visible to the front-end presentation tier. All the VMs hosting the business tier are in one virtual network so an internal load balancer can be used to distribute traffic to those VMs.
+The internal load balancer should only be visible to the front-end presentation tier. All the virtual machines hosting the business tier are in one virtual network so an internal load balancer can be used to distribute traffic to those virtual machines.
 
 <!-- Source URL: https://docs.microsoft.com/en-us/azure/load-balancer/media/load-balancer-overview/load-balancer-distribution.png - Can we change this diagram to have the internal balancer using an API layer over port 80 rather than SQL using 1433 -->
 
@@ -30,4 +30,4 @@ The internal load balancer should only be visible to the front-end presentation 
 
 ## Choose distribution mode
 
-In the healthcare portal example, the application tier is stateless, so we don't need to use sticky sessions. Therefore, the default distribution mode of a five-tuple hash can be used. This mode offers the greatest scalability and resilience as the VM that will handle the request is decided by the load balancer, purely on the basis of the healthiest and least worked virtual machine in the set.
+In the healthcare portal, the application tier is stateless, so we don't need to use sticky sessions. Therefore, the default distribution mode of a five-tuple hash can be used. This mode offers the greatest scalability and resilience as the virtual machine that will handle the request is decided by the load balancer, purely on the basis of the healthiest and least worked virtual machine in the set.
