@@ -4,6 +4,8 @@ As part of the project for the finance company, you need to understand how Azure
 
 Azure ExpressRoute lets you seamlessly extend your on-premises networks into the Microsoft cloud. This connection between your organization and Azure is dedicated and private. Establishing an ExpressRoute connection enables you to connect to services like Azure, Office 365, and Dynamics 365, all of which are Microsoft cloud services. Security is enhanced, connections are more reliable, latency is minimal, and throughput is greatly increased.
 
+![High-level overview of Azure ExpressRoute Service  ](../media/3-azure-expressroute-overview.png)
+
 ## Features and benefits of ExpressRoute
 
 There are several benefits to using ExpressRoute as the preferred connection service between Azure and on-premises networks. The following sections describe these benefits.
