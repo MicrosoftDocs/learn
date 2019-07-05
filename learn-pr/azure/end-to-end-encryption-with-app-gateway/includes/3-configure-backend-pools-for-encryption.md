@@ -8,7 +8,7 @@ A backend pool can reference individual virtual machines, a virtual machine scal
 
 ![Diagram that shows how Application Gateway routes a request to a web server](../media/3-encryption.svg)
 
-If the traffic directed to the backend pool is protected through SSL, each server in the backend pool must provide a suitable certificate. For testing purposes, you can create a self-signed certificate. In a production environment, you should always generate or purchase a certificate that certificate authority (CA) can authenticate.
+If the traffic directed to the backend pool is protected through SSL, each server in the backend pool must provide a suitable certificate. For testing purposes, you can create a self-signed certificate. In a production environment, you should always generate or purchase a certificate that a certificate authority (CA) can authenticate.
 
 There are currently two versions of Application Gateway: v1 and v2. They have similar capabilities but have slightly different implementation details. The v2 version provides additional features and performance improvements.
 
@@ -16,7 +16,7 @@ There are currently two versions of Application Gateway: v1 and v2. They have si
 
 Application Gateway v1 requires that you install the authentication certificate for the servers in the gateway configuration. This certificate contains the public key that Application Gateway can use to encrypt messages and authenticate your servers. You can create this certificate by exporting it from the server. The application server uses the corresponding private key for decrypting these messages. This private key should be stored only on your application servers.
 
-You can add a authentication certificate to Application Gateway by using the `az network application-gateway auth-cert create` command from the Azure CLI. The following example illustrates the syntax of this command. The certificate should be in CER (Claim, Evidence, and Reasoning) format.
+You can add an authentication certificate to Application Gateway by using the `az network application-gateway auth-cert create` command from the Azure CLI. The following example illustrates the syntax of this command. The certificate should be in CER (Claim, Evidence, and Reasoning) format.
 
 ```azurecli
 az network application-gateway auth-cert create \

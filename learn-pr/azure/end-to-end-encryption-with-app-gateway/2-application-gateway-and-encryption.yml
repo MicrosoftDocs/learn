@@ -40,7 +40,7 @@ quiz:
       explanation: "Azure virtual machines can be placed in a backend pool."
     - content: "Azure Cosmos DB"
       isCorrect: true
-      explanation: "Correct. Cosmos DB can't be placed in a backend pool."
+      explanation: "Correct. Azure Cosmos DB can't be placed in a backend pool."
     - content: "Azure virtual machine scale sets"
       isCorrect: false
       explanation: "Azure virtual machine scale sets can be placed in a backend pool."

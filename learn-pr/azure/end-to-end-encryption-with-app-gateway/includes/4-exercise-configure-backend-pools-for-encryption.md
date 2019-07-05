@@ -45,7 +45,7 @@ The following image highlights the elements you'll configure in this exercise. Y
       --output tsv)"
     ```
 
-1. In your web browser, go to this URL.
+1. In your web browser, go to the URL.
   
    You'll likely receive a warning message from your browser, similar to the example in the following image. This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated.
 
