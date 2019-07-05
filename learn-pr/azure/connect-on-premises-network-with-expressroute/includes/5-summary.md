@@ -3,3 +3,5 @@ In this module you've learned about the Azure ExpressRoute service and how it ca
 ## Learn more
 
 For more information on ExpressRoute, please visit the following articles on Microsoft Docs:
+
+- [Azure ExpressRoute for Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute)

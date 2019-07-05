@@ -21,17 +21,11 @@ Each connectivity provider uses redundant devices to ensure connections establis
 ExpressRoute enables direct access to the following services in all regions:
 
 - Microsoft Office 365
-  - Exchange Online
-  - Skype for Business
-  - SharePoint Online
-  - Portal and Azure AF
 - Microsoft Dynamics 365
-- Microsoft Azure IaaS resources (such as Azure virtual machines) and PaaS resources (such as Azure Storage, Azure SQL Database, and Azure Cosmos DB) deployed within a virtual network.
+- Azure compute services, such as Azure virtual machines
+- Azure cloud services, such as Cosmos DB and Azure storage
 
-> [!NOTE]
-> Azure SaaS solutions, such as Azure Active Directory, which are designed for use across the public Internet, are not available through ExpressRoute.
-
-Office 365 is designed to be accessed securely over the internet, but you can enable a direct network connection to a subset of Office 365 components using ExpressRoute. This approach provides an uptime SLA of 99.95% for the Microsoft network components. If you have a Multiprotocol Label Switching (MPLS) WAN, ExpressRoute can still be incorporated into the network architecture either through a cloud exchange provider, a point-point connection provider, or MPLS connection provider.
+Office 365 was created to be accessed securely and reliably via the Internet. Because of this, we recommend ExpressRoute for specific scenarios. For information about using ExpressRoute to access Office 365, visit the Azure ExpressRoute for Office 365 article linked in the **Learn more** section at the end of this module.
 
 ### Across on-premises connectivity with ExpressRoute Global Reach
 
