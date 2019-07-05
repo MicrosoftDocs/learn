@@ -14,6 +14,6 @@ In this module, you will:
 
 ## Prerequisites
 
-- Basic knowledge of Azure Storage accounts
+- Basic knowledge of Azure storage accounts
 - Familiarity with C#
 - Ability to install software locally (Visual Studio, Fiddler, Git)
