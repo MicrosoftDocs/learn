@@ -14,7 +14,7 @@ When failover occurs, the secondary region becomes the new primary region, and a
 
 The following diagram shows what happens when the primary region fails
 
-![Replication fail-over](../media/4-primary-account-failover.png).
+![Replication fail-over](../media/4-primary-account-failover.png)
 
 > [!IMPORTANT]
 > Failover is automatic and controlled by Microsoft. Manual failover of an Azure storage account is not possible in a majority of the Azure regions. However, a new feature has been made available in WestUS2 and CentralUS regions, where you can manually failover the storage account using the following command:
