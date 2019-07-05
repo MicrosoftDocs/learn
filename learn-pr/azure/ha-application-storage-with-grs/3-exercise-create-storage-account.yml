@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.ha-application-storage-with-grs.3-exercise-create-storage-account
 metadata:
-  title: Exercise - Create an Azure Storage account
-  description: Exercise - Create an Azure Storage account
+  title: Exercise - Create an Azure storage account
+  description: Exercise - Create an Azure storage account
   ms.date: 05/21/19
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise - Create an Azure Storage account
+title: Exercise - Create an Azure storage account
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10
