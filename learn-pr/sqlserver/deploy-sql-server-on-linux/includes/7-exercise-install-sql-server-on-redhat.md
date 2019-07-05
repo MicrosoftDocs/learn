@@ -2,15 +2,13 @@ On Red Hat Enterprise Linux (RHEL) servers, use the `yum` tool to install SQL Se
 
 You are a database administrator at the wholesale company Wide World Importers and want to benefit from SQL Server without having to change the server operating systems. You have decided to deploy SQL Server on a Red Hat server and will configure the SQL Server package and install command-line tools so that SQL Server is ready to be used by your developers.
 
-<!-- TODO: This exercise is written in the sandbox. Currently, Red Hat images are not permitted in the sandbox. I've approached the Azure team about changing this. If Engineering won't change it, the students will have to bring their own paid-for subscription, and we must add notes to that effect here. -->
-
 In this exercise, you will deploy SQL Server on RHEL, install command-line tools, and create a database on SQL Server. 
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-## Create a CentOS Virtual Machine 
+## Create a Red Hat Virtual Machine 
 
 Let's start by creating a Red Hat Virtual Machine (VM) in Azure:
 
@@ -27,7 +25,7 @@ Let's start by creating a Red Hat Virtual Machine (VM) in Azure:
     | Region | Select a region near you from the above list. |
     | Availability options | No infrastructure redundancy required |
     | Image | Red Hat Enterprise Linux 7.6 |
-    | Size | Standard |
+    | Size | Ensure you select **Standard D2s v3**. |
     | Authentication type | Password |
     | Username | redhatadmin |
     | Password | Pa$$w0rdLinux |
