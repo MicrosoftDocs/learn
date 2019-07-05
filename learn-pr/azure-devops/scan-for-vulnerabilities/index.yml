@@ -25,6 +25,7 @@ prerequisites: |
   - An account on SonarCloud
   - The latest version of Java SE
 iconUrl: /learn/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-build-pipeline.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:
