@@ -30,7 +30,7 @@ quiz:
     - content: "A valuable hard disk. It contains your organization's critical (valuable) data. Azure ensures its contents are preserved against being accidentally overwritten."
       isCorrect: false
       explanation: "No. A VHD is a virtual hard disk, stored as a virtual file by Azure."
-  - content: "Which tool should you use to generalize a Windows Server image?"
+  - content: "Which tool should you use to prepare a Windows Server image for generalization?"
     choices:
     - content: "sysconfig"
       isCorrect: false
@@ -47,7 +47,7 @@ quiz:
     - content: "Windows Configuration Manager."
       isCorrect: false
       explanation: "No. Use the sysprep tool."
-  - content: "Which command should you use to generalize a Linux image?"
+  - content: "Which command should you use to prepare a Linux image for generalization?"
     choices:
     - content: "sysprep"
       isCorrect: false

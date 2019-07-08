@@ -37,22 +37,22 @@ You can create your own custom virtual machine image in one of two ways:
 
 Unit 3 describes this process in more detail.
 
-Having built and customized new virtual machine, you can then save the new image as another VHD. However, you must perform some cleaning up first. This is because as you create virtual machine, the operating system data is updated with several items, including:
+Having built and customized new virtual machine, you can then save the new image as a set if VHDs. However, you must perform some cleaning up first. This is because as you create virtual machine, the operating system data is updated with several items, including:
 
 - The hostname of your virtual machine.
 - The username and credentials you provided when you installed the operating system on the virtual machine.
 - Log files.
 - Security identifiers for various operating system services.
 
-You must reset these items back to a default state before using the image to create further virtual machines, otherwise you may end up with multiple virtual machines having the same identities. The process of resetting this data is called *generalization*. The tools for generalizing a virtual machine image vary according to the operating system being installed and configured. For Windows, you use the **Microsoft System Preparation (Sysprep)** tool. For Linux, run the **Windows Azure Linux Agent (waagent)** utility.
+You must reset these items back to a default state before using the image to create further virtual machines, otherwise you may end up with multiple virtual machines having the same identities. The process of resetting this data is called *generalization*. The tools for preparing a virtual machine for generalization vary according to the operating system being installed and configured. For Windows, you use the **Microsoft System Preparation (Sysprep)** tool. For Linux, run the **Windows Azure Linux Agent (waagent)** utility.
 
 When you create a new virtual machine using a generalized image, you'll have to supply items such as the hostname, user account details, and other information that was removed by the generalization process.
 
 You'll learn how to generalize an image in unit 3.
 
-## What is a Specialized Virtual Disk?
+## What is a Specialized Virtual image?
 
-A specialized virtual image is a copy of a live virtual machine image once it has reached a specific state. For example, a specialized image might contain a copy of the configured operating system, software, user accounts, databases, connection information, and other data for your system. It's sometimes referred to as a *Golden Image*. You can use a specialized virtual image as a backup of your system at a particular point in time. If you need to recover after a catastrophic failure, or you just need to roll back the virtual machine, you can restore your virtual machine from this image.
+A specialized virtual image is a copy of a live virtual machine once it has reached a specific state. For example, a specialized image might contain a copy of the configured operating system, software, user accounts, databases, connection information, and other data for your system. It's sometimes referred to as a *Golden Image*. You can use a specialized virtual image as a backup of your system at a particular point in time. If you need to recover after a catastrophic failure, or you just need to roll back the virtual machine, you can restore your virtual machine from this image.
 
 If you use a specialized image to create a new virtual machine, the new virtual machine will retain all of the data (including the host name, user accounts, and other settings) from the image. If you anticipate the need to use the same golden image to restore multiple virtual machines, generalize it first.
 
