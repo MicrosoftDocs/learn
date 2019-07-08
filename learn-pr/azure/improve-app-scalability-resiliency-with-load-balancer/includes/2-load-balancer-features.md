@@ -20,7 +20,9 @@ Azure Load Balancer is a service you can use to spread demand across multiple vi
 
 Azure Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.
 
-Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements. You can use the following two types of configuration groups to set up the load balancer:
+Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements. 
+
+To acheive high availability with load balancer, you can choose to use availability sets and availability zones to ensure that virtual machines are always available:
 
 | Configuration | Service Level Agreement (SLA) | Information |
 | ------------- | --- | ----------- |
@@ -38,22 +40,19 @@ An availability set is a logical grouping that you use to isolate virtual machin
 
 ### Availability zones
 
-An availability zone offers groups of one or more data centers that have independent power, cooling, and networking.
+An availability zone offers groups of one or more data centers that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire data center fails, you can continue to serve users.
 
 <!-- TODO: Create an image similar to the one below. Source URL: https://docs.microsoft.com/azure/availability-zones/media/az-overview/az-graphic-two.png -->
 
 ![Overview of Availability Zones](../media/2-az-graphic-two.png)
 
-> [!NOTE]
-> Availability zones don't support all virtual machine sizes.
+Availability zones don't support all virtual machine sizes and are not available in all Azure regions. Check that they are supported in your region before you use them in your architecture.
 
-## Selecting the right SKU
+## Selecting the right load balancer product
 
-Two SKUs are available when you create a load balancer:
+Two products are available when you create a load balancer: basic load balancers and standard load balancers.
 
-### Basic
-
-Basic SKU load balancers allow:
+Basic load balancers allow:
 
 - Port forwarding
 - Automatic reconfiguration
@@ -61,11 +60,9 @@ Basic SKU load balancers allow:
 - Outbound connections through Secure Network Address Translation (SNAT)
 - Diagnostics through Azure Log Analytics for public-facing load balancers
 
-These load balancers are agnostic of, and transparent to, the application that uses them. They can only be used with availability sets.
+These load balancers can be used with any application and require nothing from that application. They can only be used with availability sets.
 
-### Standard
-
-Standard SKU load balancers support all of the basic features. They also allow:
+Standard load balancers support all of the basic features. They also allow:
 
 - HTTPS health probes
 - Availability zones
@@ -76,6 +73,6 @@ Standard SKU load balancers support all of the basic features. They also allow:
 
 ## Internal and external load balancers
 
-An external load balancer operates by distributing client traffic across multiple front-end virtual machines. Client traffic may come from browsers, module apps, or other sources. In the healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
+An external load balancer operates by distributing client traffic across multiple virtual machines. An external load balancer permits traffic from the internet. The traffic may come from browsers, module apps, or other sources. In the healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
 
-An internal load balancer distributes load across the backend tiers. In the healthcare organization, the balancer would distribute load across the internal application tier.
+An internal load balancer distributes load from internal Azure resources to other Azure resources. For example, if you have front-end web servers that need to call business logic hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In the healthcare organization, the balancer would distribute load across the internal application tier.

@@ -8,3 +8,4 @@ In this module, you learned about Azure Load Balancers and how they can be used 
 - [What is Azure Load Balancer?](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)
 - [Tutorial: Load balance internet traffic to VMs using the Azure portal](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-standard-manage-portal)
 - [Tutorial: Balance internal traffic load with a Basic load balancer in the Azure portal](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)
+- [What are Availability Zones in Azure?](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region)
