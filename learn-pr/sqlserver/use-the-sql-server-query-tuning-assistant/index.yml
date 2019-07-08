@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn-sqlserver.using-the-sql-server-query-tuning-assistant
+uid: learn-sqlserver.use-the-sql-server-query-tuning-assistant
 metadata:
   title: Use the SQL Server Query Tuning Assistant 
-  description: Using the SQL Server Query Tuning Assistant
+  description: Use the SQL Server Query Tuning Assistant
   ms.date: 01/31/2019
   author: geoffallix
   ms.author: v-gea
@@ -20,7 +20,7 @@ prerequisites: |
   - Experience of query tuning and performance
   - Knowledge of database properties and options
   - Understanding of query plans
-iconUrl: /learn/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
+iconUrl: /learn/achievements/sqlserver/use-the-sql-server-query-tuning-assistant.svg
 levels:
 - beginner
 roles:
@@ -28,11 +28,11 @@ roles:
 products: 
 - sql-server
 units:
-- learn-sqlserver.using-the-sql-server-query-tuning-assistant.1-introduction
-- learn-sqlserver.using-the-sql-server-query-tuning-assistant.2-decide-if-qta-is-right-for-you
-- learn-sqlserver.using-the-sql-server-query-tuning-assistant.3-get-started-with-qta
-- learn-sqlserver.using-the-sql-server-query-tuning-assistant.4-tune-queries-with-qta
-- learn-sqlserver.using-the-sql-server-query-tuning-assistant.5-knowledge-check
-- learn-sqlserver.using-the-sql-server-query-tuning-assistant.6-module-summary
+- learn-sqlserver.use-the-sql-server-query-tuning-assistant.1-introduction
+- learn-sqlserver.use-the-sql-server-query-tuning-assistant.2-decide-if-qta-is-right-for-you
+- learn-sqlserver.use-the-sql-server-query-tuning-assistant.3-get-started-with-qta
+- learn-sqlserver.use-the-sql-server-query-tuning-assistant.4-tune-queries-with-qta
+- learn-sqlserver.use-the-sql-server-query-tuning-assistant.5-knowledge-check
+- learn-sqlserver.use-the-sql-server-query-tuning-assistant.6-module-summary
 badge: 
-  uid: learn-sqlserver.using-the-sql-server-query-tuning-assistant.badge
+  uid: learn-sqlserver.use-the-sql-server-query-tuning-assistant.badge

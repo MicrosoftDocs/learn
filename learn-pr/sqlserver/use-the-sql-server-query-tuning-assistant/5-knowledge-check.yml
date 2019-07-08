@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.using-the-sql-server-query-tuning-assistant.5-knowledge-check
-title: Knowledge check - Using the SQL Server Query Tuning Assistant
+uid: learn-sqlserver.use-the-sql-server-query-tuning-assistant.5-knowledge-check
+title: Knowledge check - Use the SQL Server Query Tuning Assistant
 metadata:
-  title: Knowledge check - Using the SQL Server Query Tuning Assistant
-  description: Knowledge check - Using the SQL Server Query Tuning Assistant
+  title: Knowledge check - Use the SQL Server Query Tuning Assistant
+  description: Knowledge check - Use the SQL Server Query Tuning Assistant
   ms.date: 01/31/2019
   author: geoffallix
   ms.author: v-gea
@@ -14,7 +14,7 @@ durationInMinutes: 10
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which host & container image combinations can be used? Select all that apply."
+  - content: "Which host and container image combinations can be used? Select all that apply."
     choices:
     - content: "Linux host with Linux container image"
       isCorrect: false

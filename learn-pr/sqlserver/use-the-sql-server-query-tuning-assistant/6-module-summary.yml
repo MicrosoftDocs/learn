@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.using-the-sql-server-query-tuning-assistant.1-introduction
-title: Introduction
+uid: learn-sqlserver.use-the-sql-server-query-tuning-assistant.6-module-summary
+title: Summary
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Summary
+  description: Summary
   ms.date: 01/31/2019
   author: geoffallix
   ms.author: v-gea
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/6-module-summary.md)]

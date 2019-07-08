@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.introduction-to-sql-server-on-linux.5-containers
-title: Using containers with SQL Server on Linux
+title: Use containers with SQL Server on Linux
 metadata:
-  title: Using containers with SQL Server on Linux
+  title: Use containers with SQL Server on Linux
   description: In this unit, you will learn about containers and why you might choose to use them to host your SQL Server installation.
   ms.date: 06/11/2019
   author: alistairmatthews
