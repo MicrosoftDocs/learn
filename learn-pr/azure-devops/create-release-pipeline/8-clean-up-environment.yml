@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.8-clean-up-environment
-title: Introduction
+title: Clean up your environment
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Clean up your environment
+  description: Clean up your environment
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

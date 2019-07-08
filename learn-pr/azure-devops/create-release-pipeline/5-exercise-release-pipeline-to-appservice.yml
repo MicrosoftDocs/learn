@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.5-exercise-release-pipeline-to-appservice
-title: Introduction
+title: Exercise - create a release pipeline
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Exercise - create a release pipeline
+  description: Exercise - create a release pipeline
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

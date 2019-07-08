@@ -1,4 +1,15 @@
-## Get the source code from GitHub 
+Over the pervious learning paths (Links here), the team has been slowly integrating an Azure DevOps strategy into their current processes. They have created Boards to help them begin using a more Agile aproach to development, and they have set up a build pipeline to automate their builds. 
+
+Here you'll make sure that your environment reflects the team's efforts so far.
+
+To do this you will:
+
+> [!div class="checklist"]
+> * Get the SpaceGame Web source code from GitHub
+> * Set up your Azure DevOps project
+> * Add the build pipeline
+
+## Get the source code from GitHub
 
 Here you'll set up Visual Studio Code so you can work with source files.
 
@@ -132,69 +143,91 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You see the directory and file tree in the file explorer.
 
-### Create the initial build pipeline
+## Get the Azure Devops project
+
+In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
+
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
+
+This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards using the Basic process.
+
+### Run the template
+
+At this point, you have two options:
+
+1. Continue with the Azure DevOps project you created in the _Evolve your DevOps practices_ learning path.
+1. Run a template that sets up everything for you in your Azure DevOps organization.
+
+You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
+
+> [!div class="nextstepaction"]
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
+
+From the Azure DevOps Demo Generator site, perform these steps to run the template.
+
+1. Click **Sign In** and accept the usage terms.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Pipeline**. Then click **Create Project**.
+
+    ![Creating a project through the Azure DevOps Demo Generator](../media/5-create-new-project.png)
+
+    It takes a few moments for the template to run.
+1. Click **Navigate to project** to go to your project in Azure DevOps.
+
+> [!IMPORTANT]
+> The [Clean up your Azure DevOps environment](/learn/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+
+### Move the work item to Doing
+
+In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
+
+Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress, or WIP, limits so that the team doesn't take on too much work at one time.
+
+Recall that the team settled on these seven top issues.
+
+![Backlog of tasks](../../shared/media/build-all-tasks.png)
+
+Here you'll move the first item, **Deploy to a test environment** to the **Doing** column and assign yourself to the work item.
+
+Recall that **Deploy to a test environment** relates to fixing the team's existing build server, which runs on spare hardware in their office. The goal is to see if build services on Azure Pipelines can simplify build server maintenance.
+
+![Work item details](../media/5-work-item-details.png)
+
+To set up the work item:
+
+1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
+
+    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+
+1. From the **Stabilize the build server** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+
+    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+1. Move the work item from the **To Do** to the **Doing** column.
+
+    ![Azure Boards showing the card in the Doing column](../media/5-azure-boards-wi1-doing.png)
+
+At the end of this module, you'll move the card to the **Done** column after you've completed the task.
+
+## Create the initial build pipeline
 
 Here we will create the same basic build pipeline we create in **(Create Build Pipeline module link here)**. This will give us a place to start for our multistage release pipeline.
+
+ Mulitstage pipelines are a preview feature. This means that they will shortly become integrated into the standard Azure DevOps experience, but for now we will need to turn on this feature.
+
+### Turn on multistage pipelines in Azure DevOps
+
+ From your Azure DevOps portal:
+
+  1. Right-click your profile
+  1. Select Preview features
+  1. Turn on Multi Stage Pipelines **(screenshot)**
+  1. Notice that separate **Pipelines** menu entries for **Release** and **Build** are now gone. This is because we will do our build and release from the same pipeline.
+
+### Add the build pipeline 
 
 1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as `~/mslearn-tailspin-spacegame-web`.
 
     > [!IMPORTANT]
     > On Windows, ensure that you select **YAML** from the **Save as type** field.
-1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
-
-  ```yml
-  pool:
-      vmImage: 'Ubuntu-16.04'
-      demands:
-      - npm
-  
-  steps:
-  - task: DotNetCoreInstaller@0
-      displayName: 'Use .NET Core SDK 2.1.505'
-      inputs:
-      version: 2.1.505
-  
-  - task: Npm@1
-      displayName: 'Run npm install'
-      inputs:
-      verbose: false
-  
-  - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
-      displayName: 'Compile Sass assets'
-  
-  - task: gulp@1
-      displayName: 'Run gulp tasks'
-  
-  - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-      displayName: 'Write build info'
-      workingDirectory: Tailspin.SpaceGame.Web/wwwroot
-  
-  - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-      command: 'restore'
-      projects: '**/*.csproj'
-  
-  - task: DotNetCoreCLI@2
-      displayName: 'Build the project - Release'
-      inputs:
-      command: 'build'
-      arguments: '--no-restore --configuration Release'
-      projects: '**/*.csproj'
-  
-  - task: DotNetCoreCLI@2
-      displayName: 'Publish the project - Release'
-      inputs:
-      command: 'publish'
-      projects: '**/*.csproj'
-      publishWebProjects: false
-      arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
-      zipAfterPublish: true
-  
-  - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifact: drop'
-      condition: succeeded()
-  ```
 
 1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
 
@@ -206,16 +239,26 @@ Here we will create the same basic build pipeline we create in **(Create Build P
     git commit -m "Add build pipeline"
     git push origin 
     ```
- 
-### Get the Azure Devops project
-    (generator)
 
-  * `git commit --allow-empty`
-  * `git push` - watch it build in the pipeline
+1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
 
-1. From Azure Pipelines, trace the build through each of the steps.
+    [!code-yml[](code/5-azure-pipelines-1.yml?highlight=01-06)]
+You'll notice that we have set it up to use stages and jobs. For now, we only have one stage, the build stage. Next, we'll add the deployment stage.
 
-    When the build completes, you see the **Artifacts** button appear.
+1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+
+    > [!TIP]
+    > Remember to save **azure-pipelines.yml** before running these Git commands.
+
+    ```bash
+    git add azure-pipelines.yml
+    git commit -m "Add stage to build pipeline"
+    git push origin
+    ```
+
+1. From Azure Pipelines, trace the build through each of the steps. 
+
+    When the build completes, you see the **Artifacts** button appear. We'll use this artifact as our source for the deploy stage.
 
     <!-- ![Azure Pipelines showing the Artifacts button](../media/7-artifacts-button.png) -->(screenshot)
 

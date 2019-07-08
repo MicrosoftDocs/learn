@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.6-different-target-environments
-title: Introduction
+title: Target environments and health dashboard
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Target environments and health dashboard
+  description: Target environments and health dashboard
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

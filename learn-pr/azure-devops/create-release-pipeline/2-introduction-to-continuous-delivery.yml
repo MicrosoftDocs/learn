@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.2-introduction-to-continuous-delivery
-title: Introduction
+title: Introduction to continuous delivery
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Introduction to continuous delivery
+  description: Introduction to continuous delivery
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

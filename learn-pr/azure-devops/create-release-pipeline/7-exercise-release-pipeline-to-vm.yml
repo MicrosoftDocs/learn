@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.7-exercise-release-pipeline-to-vm
-title: Introduction
+title: Exercise - set up a deployment dashboard
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Exercise - set up a deployment dashboard
+  description: Exercise - set up a deployment dashboard
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
