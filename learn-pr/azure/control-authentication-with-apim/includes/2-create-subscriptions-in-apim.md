@@ -46,14 +46,14 @@ To test out your API calls, you can use the developer portal, or command-line to
 
 Here's how you can pass a key in the request header using **curl**:
 
-    ```bash
-    curl --header "Ocp-Apim-Subscription-Key: <key string>" https://<apim gateway>.azure-api.net/api/path
-    ```
+```bash
+curl --header "Ocp-Apim-Subscription-Key: <key string>" https://<apim gateway>.azure-api.net/api/path
+```
 
 Here's an example **curl** command that passes a key in the URL as a query string:
 
-    ```bash
-    curl https://<apim gateway>.azure-api.net/api/path?subscription-key=<key string>
-    ```
+```bash
+curl https://<apim gateway>.azure-api.net/api/path?subscription-key=<key string>
+```
 
 If the key is not passed in the header, or as a query string in the URL, you'll get a **401 Access Denied** response from the API gateway. 

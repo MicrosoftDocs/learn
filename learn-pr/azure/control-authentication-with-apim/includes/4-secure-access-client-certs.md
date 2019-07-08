@@ -4,9 +4,9 @@ For your meteorological app, you have some customers who have client certificate
 
 Here, you will learn how to configure API Management to accept client certificates.
 
-## TLS Client Authentication
+## TLS client authentication
 
-In a classic TLS handshake, the client and server positively identify each other, by using a protocol known as TLS mutual authentication. However, for our example, we want the server to authenticate the request of the client, so you will be using TLS client authentication. This technique allows the API Management gateway to inspect the certificate contained within the client request and check for properties like:
+With TLS client authentication, the API Management gateway can inspect the certificate contained within the client request and check for properties like:
 
 | Property | Reason |
 | -------- | ------ |
@@ -25,7 +25,7 @@ Client certificates are signed to ensure that they are not tampered with. When a
 
 ## Accepting client certificates in the Consumption tier
 
-The Consumption tier in API Management is designed to conform with serverless design principals. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must remember to request client certificates, which you can do on the **Custom domains** page. This step is not necessary in other tiers.
+The Consumption tier in API Management is designed to conform with serverless design principals. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must explicitly enable the use of client certificates, which you can do on the **Custom domains** page. This step is not necessary in other tiers.
 
 ![Configure the gateway to request certificates](../media/5-config-request-certificates.png)
  

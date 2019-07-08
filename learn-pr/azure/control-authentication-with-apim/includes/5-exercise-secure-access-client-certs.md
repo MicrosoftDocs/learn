@@ -17,19 +17,21 @@ First, use the Cloud Shell to create a self-signed certificate, which you will u
 1. To create the private key and the certificate, run these commands in the Cloud Shell:
 
     ```bash
-    pwd='<enter-a-password>'
+    pwd='Pa$$w0rd'
     pfxFilePath='selfsigncert.pfx'
     openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out selfsigncert.crt -subj /CN=localhost
     ```
 
-1. Now convert the certificate to PEM format, which the `curl` tool can use, run these commands:
+    To make this example easy to follow, the commands provided above include the password used to secure the private key. Whenever you generate a private key for your own use, make sure you properly generate a secure password and control access to it appropriately.
+
+1. Now convert the certificate to PEM format, which the `curl` tool can use. Run these commands:
 
     ```bash
     openssl pkcs12 -export -out $pfxFilePath -inkey privateKey.key -in selfsigncert.crt -password pass:$pwd
     openssl pkcs12 -in selfsigncert.pfx -out selfsigncert.pem -nodes
     ```
 
-    If you are asked for a password, type **Pa$$w0rd** and then press Enter.
+    When you are prompted for a password, type **Pa$$w0rd** and then press Enter.
 
 ## Configure the gateway to request client certificates
 
@@ -65,7 +67,7 @@ Now, create the authentication policy within the API Management gateway:
 
     ![Inbound processing policy button](../media/5-inbound-policy.png)
 
-1. Add the following policy expression into the inbound node of the policy file, replacing the ```desired-thumbprint``` with the thumbprint you copied earlier:
+1. Replace the `<inbound>` node of the policy file with the following XML, substituting the thumbprint you copied earlier for `desired-thumbprint`:
 
     ```XML
     <inbound>
@@ -89,7 +91,7 @@ Finally, you can test the new authentication policy. You can test without the ce
 1. To test the API without the certificate, run the following command within the Cloud Shell. 
 
     ```PowerShell
-    curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \ 
+    curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
     ```
 
