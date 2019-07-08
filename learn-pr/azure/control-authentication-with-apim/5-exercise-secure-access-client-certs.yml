@@ -2,7 +2,7 @@
 uid: learn.control-authentication-with-apim.5-exercise-secure-access-client-certs
 metadata:
   title: Exercise - Use client certificates to secure access to an API
-  description: TODO
+  description: In this unit, you will create a client certificate and use it to authenticate calls to API Management.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
