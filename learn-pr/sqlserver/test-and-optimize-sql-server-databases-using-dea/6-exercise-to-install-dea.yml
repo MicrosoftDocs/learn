@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.4-exercise-to-install-dea
+uid: learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.6-exercise-to-install-dea
 title: Exercise - Install the Database Experimentation Assistant
 metadata:
   title: Exercise - Install the Database Experimentation Assistant
@@ -13,4 +13,4 @@ metadata:
 labId: 46875
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-exercise-to-install-dea.md)]
+  [!include[](includes/6-exercise-to-install-dea.md)]

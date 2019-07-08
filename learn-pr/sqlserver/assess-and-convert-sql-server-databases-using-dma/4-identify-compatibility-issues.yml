@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.5-identify-compatibility-issues
+uid: learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.4-identify-compatibility-issues
 title: Identify compatibility issues
 metadata:
   title: Identify vompatibility issues
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-identify-compatibility-issues.md)]
+  [!include[](includes/4-identify-compatibility-issues.md)]

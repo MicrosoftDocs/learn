@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.sql-server-discovery-using-map.5-collect-and-assess-inventory-data
+uid: learn-sqlserver.sql-server-discovery-using-map.4-collect-and-assess-inventory-data
 title: Collect and assess inventory data
 metadata:
   title: Collect and assess inventory data
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-collect-and-assess-inventory-data.md)]
+  [!include[](includes/4-collect-and-assess-inventory-data.md)]

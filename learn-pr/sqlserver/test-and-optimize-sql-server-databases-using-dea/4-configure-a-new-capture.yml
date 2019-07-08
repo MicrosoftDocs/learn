@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.5-configure-a-new-capture
+uid: learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.4-configure-a-new-capture
 title: Configure a new capture
 metadata:
   title: Configure a new capture
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-configure-a-new-capture.md)]
+  [!include[](includes/4-configure-a-new-capture.md)]

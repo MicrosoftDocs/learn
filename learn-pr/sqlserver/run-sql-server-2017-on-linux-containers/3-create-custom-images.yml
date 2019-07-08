@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-sqlserver.run-sql-server-2017-on-linux-containers.4-create-custom-images
+uid: learn-sqlserver.run-sql-server-2017-on-linux-containers.3-create-custom-images
 title: Create custom images
 metadata:
   title: Create custom images
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-create-custom-images.md)]
+  [!include[](includes/3-create-custom-images.md)]
 quiz:
   title: "Check your knowledge"
   questions:

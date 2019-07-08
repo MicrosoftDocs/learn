@@ -31,10 +31,10 @@ units:
 - learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.1-introduction
 - learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.2-decide-if-dma-is-right-for-your-task
 - learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.3-install-dma
-- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.5-identify-compatibility-issues
-- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.7-upgrade-a-database
-- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.4-exercise-to-install-dma
-- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.6-exercise-to-identify-compatibility-issues
+- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.4-identify-compatibility-issues
+- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.5-upgrade-a-database
+- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.6-exercise-to-install-dma
+- learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.7-exercise-to-identify-compatibility-issues
 - learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.8-exercise-to-upgrade-a-database
 - learn-sqlserver.assess-and-convert-sql-server-databases-using-dma.9-module-summary
 badge: 

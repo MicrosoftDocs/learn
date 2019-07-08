@@ -37,8 +37,8 @@ products:
 units:
 - learn-sqlserver.automatically-tune-sql-server-on-linux.1-introduction
 - learn-sqlserver.automatically-tune-sql-server-on-linux.2-monitor-sql-performance-in-linux
-- learn-sqlserver.automatically-tune-sql-server-on-linux.4-choose-to-use-query-store-and-automatic-tuning
-- learn-sqlserver.automatically-tune-sql-server-on-linux.3-exercise-monitor-sql-performance-in-linux
+- learn-sqlserver.automatically-tune-sql-server-on-linux.3-choose-to-use-query-store-and-automatic-tuning
+- learn-sqlserver.automatically-tune-sql-server-on-linux.4-exercise-monitor-sql-performance-in-linux
 - learn-sqlserver.automatically-tune-sql-server-on-linux.5-exercise-configure-sql-server-to-use-query-store-and-autotuning
 - learn-sqlserver.automatically-tune-sql-server-on-linux.6-summary
 badge: 
