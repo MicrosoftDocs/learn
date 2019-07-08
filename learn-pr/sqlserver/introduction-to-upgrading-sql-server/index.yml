@@ -35,7 +35,7 @@ units:
 - learn-sqlserver.introduction-to-upgrading-sql-server.4-assess-and-convert-your-databases
 - learn-sqlserver.introduction-to-upgrading-sql-server.5-test-your-migration
 - learn-sqlserver.introduction-to-upgrading-sql-server.6-knowledge-check
-- learn-sqlserver.introduction-to-upgrading-sql-server.7-tuning-queries-post-migration
+- learn-sqlserver.introduction-to-upgrading-sql-server.7-tune-queries-post-migration
 - learn-sqlserver.introduction-to-upgrading-sql-server.8-knowledge-check
 - learn-sqlserver.introduction-to-upgrading-sql-server.9-module-summary
 badge: 

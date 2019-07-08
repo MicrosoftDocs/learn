@@ -1,4 +1,4 @@
-Performance is vital in many database systems and SQL Server 2017 is designed from the ground up to respond quickly and make the best use of the CPU, memory, and storage resources available to it. SQL Server is capable of excellent performance and its number one rating in the TPC-H and TPC-E internationally recognised performance standards shows that the performance of a well-configured SQL Server is second to none. However, some situations can arise in which performance is not optimized. As a database administrator, you must be able to identify and mitigate such situations.
+Performance is vital in many database systems and SQL Server 2017 is designed from the ground up to respond quickly and make the best use of the CPU, memory, and storage resources available to it. SQL Server is capable of excellent performance and its number one rating in the TPC-H and TPC-E internationally recognized performance standards shows that the performance of a well-configured SQL Server is second to none. However, some situations can arise in which performance is not optimized. As a database administrator, you must be able to identify and mitigate such situations.
 
 Suppose you are a system architect for a large wine retail company. You have a database of products and sales that is used to manage all stock and dispatch orders to customers. The database is hosted on Microsoft SQL Server 2017 servers, which are deployed on Linux servers that run Red Hat Enterprise Linux.
 
@@ -8,7 +8,7 @@ Here, you will see how to monitor the performance of SQL Server 2017 running on 
 
 ## Learning objectives
 
-By the end of this module, you will:
+By the end of this module, you will be able to:
 
 - Use Azure Data Studio to monitor performance in SQL Server on a Linux server.
 - Decide whether to enable Query Store.

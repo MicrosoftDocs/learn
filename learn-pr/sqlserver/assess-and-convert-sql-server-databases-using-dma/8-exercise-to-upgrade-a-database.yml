@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
   ROBOTS: NOINDEX
+labId: 46511
 durationInMinutes: 5
 content: |
   [!include[](includes/8-exercise-to-upgrade-a-database.md)]

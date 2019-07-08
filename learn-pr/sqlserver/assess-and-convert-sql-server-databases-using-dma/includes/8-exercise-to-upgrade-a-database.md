@@ -4,10 +4,9 @@ In this exercise, you will upgrade a database from SQL Server 2008 R2, to SQL Se
 
 ## Start the DMA
 
-Start by logging on and accessing the DMA:
+If you logged out of the VM, start by logging on and accessing the DMA:
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46778?providerId=4.
-1. Sign with your Microsoft account.
+1. Sign into the VM with your Microsoft account.
 1. Click **Commands**, click **CTRL+ALT+DEL**, and then login with the **Administrator** password **`Pa55w.rd`**.
 1. Close the Server Manager window.
 1. On the **Desktop**, double-click **Microsoft Data Migration Assistant**.
@@ -17,7 +16,11 @@ Start by logging on and accessing the DMA:
 
 Next, use the DMA to migrate the database. Follow these steps:
 
-1. On the left, click the **menu** icon to display the fly-out, and then click **+ New**.
+1. On the taskbar, click File Explorer.
+1. On the left, click **Local Disk (C:)**, then right click in the main pain and select **New**, then select **Folder**.
+1. Rename the new folder, **temp**.
+1. On the taskbar, select **Data Migration Assistant**.
+1. On the left, click **+**.
 1. In the **New** fly-out, under **Project type**, click **Migration** and then in the **Project name** box, type **`AdventureWorks 2008-2017`**.
 1. Leave the **Source server type** as **SQL Server**, in the **Target server type** list, click **SQL Server**, and then click **Create**.
 1. On the **Specify source & target** tab, under **Source server details**, in the **Server name** box, type **`localhost`**.
@@ -74,7 +77,7 @@ Now you can upgrade the compatibility level for the Adventure Works database:
 1. In the query window, type the following code, and then click **Execute**:
 
     ```sql
-    ALTER DATABASE AdventureWorks2017
+    ALTER DATABASE AWMigrate2017
     SET COMPATIBILITY_LEVEL = 140
     ```
 

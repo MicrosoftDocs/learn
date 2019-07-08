@@ -1,13 +1,12 @@
-You have completed the first phase of your staged upgrade of CRM databases to SQL Server 2017. Before going live, you need to check that the upgrade has not negatively impacted on database performance.
+You've completed the first phase of your staged upgrade of CRM databases to SQL Server 2017. Before going live, you need to check that the upgrade hasn't negatively affected on database performance.
 
-In this exercise, you will use the Microsoft Database Experimentation Assistant (DEA) to first create a trace analysis report; you will then review this report to identify any critical issues that must be addressed before the upgraded database can be deployed to a production environment.
+In this exercise, you'll use the Microsoft Database Experimentation Assistant (DEA) to create a trace analysis report; you'll then review this report to identify any critical issues that must be addressed before the upgraded database can be deployed to a production environment.
 
 ## Start the lab
 
 Start by logging into the database server:
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46893?providerId=4.
-1. Sign with a Microsoft account, or create a new account.
+1. Sign into the VM with a Microsoft account, or create a new account.
 1. Click **Commands**, and then click **CTRL+ALT+DEL**, and login with the Administrator password: **Pa55w.rd**
 
 ## Generate the analysis report
@@ -34,4 +33,4 @@ Start by using DEA to analyze the trace performances against Target 1 and Target
 
 ## Summary
 
-In this exercise, you generated an analysis report in the Database Migration Assistant to compare the result of your A/B test. You tested a number of queries to see how they performed the Target 1 database, which was an exact copy of the source database and SQL Server 2008. Then you compared these results with the same queries run on the Target 2 database that had been upgraded to SQL Server 2017. You saw how to change the threshold to make the results more or less sensitive.
+In this exercise, you generated an analysis report in the Database Migration Assistant to compare the result of your A/B test. You tested a number of queries to see how they performed on the Target 1 database. Target 1 was an exact copy of the source database and SQL Server 2008. Then you compared these results with the same queries run on the Target 2 database that had been upgraded to SQL Server 2017. You saw how to change the threshold to make the results more or less sensitive.

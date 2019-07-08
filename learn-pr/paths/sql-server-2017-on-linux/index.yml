@@ -26,7 +26,7 @@ products:
 modules:
 #TODO: Check that the correct modules are included.
 - learn-sqlserver.introduction-to-sql-server-on-linux
-- learn-sqlserver.deploying-sql-server-on-linux
+- learn-sqlserver.deploy-sql-server-on-linux
 - learn-sqlserver.automatically-tune-sql-server-on-linux
 - learn-sqlserver.run-sql-server-2017-on-linux-containers
 trophy: 

@@ -1,13 +1,12 @@
-Suppose, as a new database administrator, you are planning an audit of all the SQL Server instances for a large law firm that has multiple branch offices. You want to familiarize yourself with the steps required to perform an audit using the **Microsoft Assessment and Planning (MAP)** toolkit, and how to explore the data returned by MAP.
+As a new database administrator, you're planning an audit of all the SQL Server instances for your large law firm that has multiple branch offices. You want to familiarize yourself with the steps required to do an audit using the **Microsoft Assessment and Planning (MAP)** toolkit. Then explore the data returned by the audit created by the MAP tooling.
 
-In this exercise, you will add a new SQL Server to the database of servers that exist in the inventory database, scan the database landscape, and then assess the resulting data.
+In this exercise, you'll add a new SQL Server to the database of servers that exist in the inventory database, scan the database landscape, and then assess the resulting audit data.
 
 ## Start the lab
 
 Start by logging into the server:
 
-1. Open a new web browser tab and navigate to https://labondemand.com/AuthenticatedLaunch/46874?providerId=4.
-1. Sign with a Microsoft account, or create a new account.
+1. Sign into the VM with a Microsoft account, or create a new account.
 1. Click **Commands**, and then click **CTRL+ALT+DEL**, and login with the Administrator password: **Pa55w.rd**.
 
 ## Collect inventory data
@@ -34,28 +33,33 @@ Begin your analysis by using MAP to collect inventory data. Follow these steps:
 1. The collection process may take 5-10 minutes to complete; when collection has finished, the **Assessment** process starts, and shows as **Running**.
 1. When the **Assessment** shows as **Completed**, click **Close**.
 
+<!-- TODO this is a painful thing to wait for over 10 minutes, is there a chance we could have a video here? https://channel9.msdn.com/Shows/Edge/Edge-Show-99-Assess-VM-Migration-to-Azure-with-MAP?ocid=player -->
+
 ## Assess SQL Server versions and editions
 
 Now that data has been collected, you can use MAP to assess this inventory. To find out about the versions and editions of SQL Server in your organization, follow these steps:
 
-1. In the **Database** tab, under **Scenarios**, click anywhere in the **SQL Server Discovery** box; this is the box showing the count of servers for each edition.
-1. In the **SQL Server Discovery** tab, under **SQL Server Versions**, hold your mouse over the pink section of the pie charts to see the pop-up details. This shows that 53 SQL Server 2012 instances were discovered, accounting for 23% of the total.
+1. In the **Database** tab, under **Scenarios**, click anywhere in the **SQL Server Discovery** box. This box is showing the count of servers for each edition.
+1. In the **SQL Server Discovery** tab, under **SQL Server Versions**, hold your mouse over the pink section of the pie charts to see the pop-up details. The pop-up shows that 53 SQL Server 2012 instances were discovered, accounting for 23% of the total.
 
     > [!NOTE]
     > The server versions are represented in the pie chart in chronological order. This shows that less than 25% of the total 230 servers are SQL Server 2012 or above. If the organization you work for wants SQL Server 2012 as a minimum version for its servers, a lot of work is required to upgrade the versions below 2012.
 
-1. Look at the **Developer and Free Editions** section at the bottom of the tab (you may need to scroll down). There are 107 instances that are not production servers, so when planning your upgrades, you can optionally return to the Express and Desktop editions at a later date, and potentially ignore the Evaluation editions. Conversely you may want to upgrade certain development databases prior to upgrading the production version, in order to test the upgrade.
+    > [!IMPORTANT]
+    > If the pie charts aren't showing scroll the window to refresh the diagrams.
+
+1. Look at the **Developer and Free Editions** section at the bottom of the tab (you may need to scroll down). There are 107 instances that aren't production servers, so when planning your upgrades, you can optionally return to the Express and Desktop editions at a later date, and potentially ignore the Evaluation editions. Conversely you may want to upgrade certain development databases before upgrading the production version, to test your upgrade procedures.
 
 ## Assess SQL Server components
 
 Next, examine which SQL Server services are present in your organization:
 
-1. Look at the **SQL Server Components** chart. Instantly you can see that **Database Engine Services** is the dominant service, as you would expect to find in most setups. Notice that there is only one SQL Server R Services component in use. If this was your organization, this would suggest that data science has not yet been widely adopted across the business.
+1. Look at the **SQL Server Components** chart. Instantly you can see that **Database Engine Services** is the dominant service, as you would expect to find in most setups. Notice that there's only one SQL Server R Services component in use. If this was your organization, it would suggest that data science hasn't yet been widely adopted across the business.
 1. In the **Options** box in the top right-hand corner of the tab, click **Generate SQL Server Assessment Report**. The **Report Generation Status** dialog opens. When the report has been created, click **Close**.
 1. Again, in the **Options** box in the top right-hand corner of the tab, click **Generate SQL Server Database Details Report**. The **Report Generation Status** dialog opens. When the report has been created, click **Close**.
-1. A **Windows Explorer** window should open automatically to display the two new files. If not, click **Start**, and type **Windows Explorer**, and navigate to **C:\Users\Administrator\Documents\MAP\MapTraining**.
-1. Double-click on **SqlServerAssessment-MM-DD-YYYY-HHh-MMm-SSs.xls**; the file will be date and time stamped from when you generated it; leave the Windows Explorer window open.
-1. When the file opens in Excel, take a look at the list of components in the **Summary** tab. Again, you will see the single instance of SQL Server R Services listed.
+1. A **File Explorer** window should open automatically to display the two new files. If not, click **Start**, and type **File Explorer**, and navigate to **C:\Users\Administrator\Documents\MAP\MapTrainingDatabase**.
+1. Double-click on **SqlServerAssessment-MM-DD-YYYY-HHh-MMm-SSs.xls**; the file will be date and time stamped from when you generated it; leave the File Explorer window open.
+1. When the file opens in Excel, take a look at the list of components in the **Summary** tab. Again, you'll see the single instance of SQL Server R Services listed.
 
 ## Drill into the Excel file
 
@@ -63,7 +67,7 @@ You can use Excel's filtering functionality to examine the data in more detail. 
 
 1. Click the **DatabaseInstances** tab. On the **SQL Server Product Name** column header, click the filter, and unselect **Microsoft SQL Server 2012**, **Microsoft SQL Server 2014**, **Microsoft SQL Server 2016**, and **Microsoft SQL Server 2017**.
 1. Click **OK**.
-1. On the **SQL Server Edition** column header, click the filter, and unselect **Desktop Engine**, **Enterprise Evaluation**, and **Express**. Click **OK**. This gives you a list of production servers requiring an upgrade.
+1. On the **SQL Server Edition** column header, click the filter, and unselect **Desktop Engine**, **Enterprise Evaluation**, and **Express**. Click **OK**. A list of production servers requiring an upgrade will be shown.
 1. Click the **Components** tab. On the **SQL Server Component Name** column header, click the filter. Click **(Select All)**, to unselect all items, then click **SQL Server R Services**.
 1. On the **File** menu, select **File**, click **Close**, then click **Don't Save** when asked if you want to save the file.
 
@@ -86,4 +90,4 @@ Finally, use Excel to investigate further database details, such as sizes and co
 
 ## Summary
 
-The Microsoft Assessment and Planning Toolkit automatically collects a vast array of data on the servers and databases in your landscape, and presents it in a easy to read format. The in-depth details of the inventory collection can be exported to Excel and filtered to enable you to find the servers or databases you want to upgrade. The granularity of data available in these assessment reports enable you to prioritize the order in which you upgrade your instances or databases.
+The MAP Toolkit automatically collects a vast array of data on the servers and databases in your landscape, and presents it in an easy to read format. The in-depth details of the inventory collection can be exported to Excel and filtered to enable you to find the servers or databases you want to upgrade. The granularity of data available in these assessment reports enables you to prioritize the order in which you upgrade your instances or databases.

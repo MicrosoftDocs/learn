@@ -2,14 +2,20 @@
 uid: learn-sqlserver.run-sql-server-2017-on-linux-containers
 metadata:
   title: Run SQL Server 2017 on Linux containers 
-  description: Run SQL Server 2017 on Linux Containers
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: In this module, you will learn how to use Docker containers on Linux operating systems to host SQL Server installations.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Run SQL Server 2017 on Linux containers
-summary: Containers provide isolated virtual environments in which you can run applications such as SQL Server 2017 and are growing in popularity because of their scalability. If you choose SQL Server 2017 to host your databases, you can run that system in one or more containers based on either Linux or Windows and the Docker system. You can create a container from an image that has SQL Server pre-installed or create your own customized image. In this module, you will see how to run SQL Server 2017 in Linux containers and host a custom database application.
+summary: |
+ Containers provide isolated virtual environments in which you can run applications such as SQL Server 2017 
+ and are growing in popularity because of their scalability. If you choose SQL Server 2017 to host your 
+ databases, you can run that system in one or more containers based on either Linux or Windows and the 
+ Docker system. You can create a container from an image that has SQL Server pre-installed or create your 
+ own customized image. In this module, you will see how to run SQL Server 2017 in Linux containers and 
+ host a custom database application.
 abstract: |
  In this module, you will:
  - Install the Docker system on a Linux server.
@@ -31,12 +37,12 @@ products:
 - sql-server
 units:
 - learn-sqlserver.run-sql-server-2017-on-linux-containers.1-introduction
-- learn-sqlserver.run-sql-server-2017-on-linux-containers.2-choosing-to-run-sql-server-2017-on-linux-containers
-- learn-sqlserver.run-sql-server-2017-on-linux-containers.3-exercise-running-sql-server-2017-on-linux-containers
-- learn-sqlserver.run-sql-server-2017-on-linux-containers.4-creating-custom-images
-- learn-sqlserver.run-sql-server-2017-on-linux-containers.5-exercise-building-a-custom-docker-image
-- learn-sqlserver.run-sql-server-2017-on-linux-containers.6-using-docker-compose-to-deploy-multiple-containers
-- learn-sqlserver.run-sql-server-2017-on-linux-containers.7-exercise-using-docker-composer-to-deploy-a-multi-container-application
-- learn-sqlserver.run-sql-server-2017-on-linux-containers.8-module-summary
+- learn-sqlserver.run-sql-server-2017-on-linux-containers.2-choose-to-run-sql-server-2017-on-linux-containers
+- learn-sqlserver.run-sql-server-2017-on-linux-containers.3-create-custom-images
+- learn-sqlserver.run-sql-server-2017-on-linux-containers.4-use-docker-compose-to-deploy-multiple-containers
+- learn-sqlserver.run-sql-server-2017-on-linux-containers.5-exercise-run-sql-server-2017-on-linux-containers
+- learn-sqlserver.run-sql-server-2017-on-linux-containers.6-exercise-create-a-custom-docker-image
+- learn-sqlserver.run-sql-server-2017-on-linux-containers.7-exercise-use-docker-compose-to-deploy-multiple-containers
+- learn-sqlserver.run-sql-server-2017-on-linux-containers.8-summary
 badge: 
   uid: learn-sqlserver.run-sql-server-2017-on-linux-containers.badge

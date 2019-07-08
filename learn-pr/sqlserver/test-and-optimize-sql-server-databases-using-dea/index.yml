@@ -31,10 +31,10 @@ units:
 - learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.1-introduction
 - learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.2-decide-if-dea-is-right-for-your-task
 - learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.3-install-dea
-- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.4-exercise-to-install-dea
-- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.5-configure-a-new-capture
-- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.6-exercise-to-configure-a-new-capture
-- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.7-review-a-trace-analysis-report
+- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.4-configure-a-new-capture
+- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.5-review-a-trace-analysis-report
+- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.6-exercise-to-install-dea
+- learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.7-exercise-to-configure-a-new-capture
 - learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.8-exercise-to-review-a-trace-analysis-report
 - learn-sqlserver.test-and-optimize-sql-server-databases-using-dea.9-module-summary
 badge: 

@@ -2,10 +2,10 @@
 uid: learn-sqlserver.introduction-to-sql-server-on-linux
 metadata:
   title: Introduction to SQL Server on Linux 
-  description: Introduction to SQL Server on Linux
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: In this module, you will learn about running SQL Server 2017 on Linux servers and containers.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Introduction to SQL Server on Linux
@@ -28,13 +28,9 @@ products:
 units:
 - learn-sqlserver.introduction-to-sql-server-on-linux.1-introduction
 - learn-sqlserver.introduction-to-sql-server-on-linux.2-what-is-sql-server-on-linux
-- learn-sqlserver.introduction-to-sql-server-on-linux.3-knowledge-check
-- learn-sqlserver.introduction-to-sql-server-on-linux.4-sql-server-on-linux-features
-- learn-sqlserver.introduction-to-sql-server-on-linux.5-knowledge-check
-- learn-sqlserver.introduction-to-sql-server-on-linux.6-tools-for-sql-server-on-linux
-- learn-sqlserver.introduction-to-sql-server-on-linux.7-knowledge-check
-- learn-sqlserver.introduction-to-sql-server-on-linux.8-containers
-- learn-sqlserver.introduction-to-sql-server-on-linux.9-knowledge-check
-- learn-sqlserver.introduction-to-sql-server-on-linux.10-module-summary
+- learn-sqlserver.introduction-to-sql-server-on-linux.3-sql-server-on-linux-features
+- learn-sqlserver.introduction-to-sql-server-on-linux.4-tools-for-sql-server-on-linux
+- learn-sqlserver.introduction-to-sql-server-on-linux.5-containers
+- learn-sqlserver.introduction-to-sql-server-on-linux.6-summary
 badge: 
   uid: learn-sqlserver.introduction-to-sql-server-on-linux.badge
