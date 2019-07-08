@@ -1,3 +1,5 @@
+# Steps
+
 ## Exercise: Install the Data Migration Assistant
 In this exercise, you will install the Data Migration Assistant. 
 
