@@ -14,4 +14,41 @@ metadata:
 
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-classify-your-data-and-protect-confidential-information..md)]
+  [!include[](includes/2-classify-data-protect-confidential-information.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Your organization plans to propose a solution, so that a large retail customer can gain insights from real-time purchases, throughout the busiest times of the year. Any solution proposed must deal with fast-paced and flexible data. What solution would you propose?
+    choices:
+    - content: Propose and develop an application that's designed to analyze unstructured data with high velocity.
+      isCorrect: true
+      explanation: An application like this would deal with the unstructured data and help draw insights from all of the information that's being generated at a high speed.
+    - content: Propose and develop an application that's designed to analyze structured data with high velocity.
+      isCorrect: false
+      explanation: It's generally a better idea for data to be in an unstructured format if it's flowing fast and is flexible. You'd be dealing with massive amounts of flexible data coming at a fast pace.
+    - content: Propose and develop an application that's designed to analyze structured data to avoid high velocity.
+      isCorrect:  false
+      explanation: There's no need to avoid the high velocity of the data. An application designed to work with unstructured data could handle this situation. It's generally better for the data to be in an unstructured format if the data is flowing fast and is flexible. You'd be dealing with massive amounts of data coming at a fast pace.
+  - content: Which of the following items would be classified with a Public (Low) level classification?
+    choices:
+    - content: Account emails.
+      isCorrect: false
+      explanation: Account emails are important and contain customer information – they shouldn't be classified as Public.
+    - content: Credentials. 
+      isCorrect: false
+      explanation: Credentials let users access resources and applications securely – they shouldn't be classified as Public.
+    - content: Press releases.
+      isCorrect: true
+      explanation:  Press releases are deliberately sent out to the public to inform them – they should be labeled as Public.
+  - content: Your organization noticed customers' financial data was almost lost because of a software issue in a server. Thankfully, because of the potential impact of this data on the organization and its stakeholders, copies of this information were kept safe and secure in other locations. How was this data classified?
+    choices:
+    - content: Internal Use Only (Medium).
+      isCorrect: false
+      explanation: This data is highly confidential, and doesn't belong to the organization. Even within the organization, customer financial information isn't circulated. Only a few authorized parts of the organization have access to this information.
+    - content: Public (Low).
+      isCorrect: false
+      explanation: This data is highly confidential, and should never be considered Public. There would be serious problems if this data was exposed or lost.
+    - content: Confidential (High).
+      isCorrect: true
+      explanation: This data is highly confidential. There would be serious problems if this data was exposed or lost.
+

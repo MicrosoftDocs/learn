@@ -14,4 +14,29 @@ metadata:
 
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-secure-data-at-rest-in-azure-sql-and-cosmos-db.md)]
+  [!include[](includes/4-secure-azure-sql-cosmos-db-data.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: You've created a new Azure SQL DB. How would you enable encryption at rest for your SQL DB?
+    choices: 
+    - content: Go to the portal, find the SQL DB transparent data encryption setting, and turn it on.
+      isCorrect: false
+      explanation: While this would help you enable TDE, you don't need to do this, because you're dealing with a newly created SQL DB. Only older SQL DBs need you to enable TDE.
+    - content: Use PowerShell to work with the SQL DB, and use it to enable transparent data encryption.
+      isCorrect: false
+      explanation: While this would help you enable TDE, you don't need to do this because you're dealing with a newly created SQL DB. Only older SQL DBs need you to enable TDE.
+    - content: The SQL DB already has encryption enabled – there's nothing to be done.
+      isCorrect: true
+      explanation: Newly created SQL DBs automatically have TDE enabled.
+  - content: You've been asked to look at a Cosmos DB database that's been recently created. Your organization wants to see, and access the keys. How would you deal with this issue?
+    choices:
+    - content: Tell your organization that they already have the keys – you're using customer-managed ke
+      isCorrect: false
+      explanation: Cosmos DB encryption keys aren't accessible. Microsoft manages the keys entirely, so they have access to the keys.
+    - content: Tell your organization that they can't have the keys because they're managed by Microsoft.
+      isCorrect: true
+      explanation: Microsoft has made sure that there's no need for you to manage these keys. Microsoft has teamed up with compliance auditors to make sure standards are met.
+    - content: Tell the organization they can have the keys because they're using content-managed keys.
+      isCorrect: false
+      explanation: Cosmos DB encryption keys aren't accessible. There's no such thing as a content-managed key in Azure.
