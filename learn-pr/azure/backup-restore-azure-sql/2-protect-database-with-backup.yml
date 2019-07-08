@@ -14,6 +14,8 @@ durationInMinutes: 10
 content: |
   [!include[](includes/2-protect-database-with-backup.md)]
 quiz:
+  title: "Check your knowledge"
+  questions:
   - content: "You have created a new database in Azure SQL Database. When will the first full backup run?"
     choices:
     - content: "At midnight in the local region"
