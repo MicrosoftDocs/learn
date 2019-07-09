@@ -1,9 +1,11 @@
 
 Notes:
 
-The team plans the release workflow and decides on the tasks to add to the board (They will be in the new generated template) The tasks will correspond to the module exercises in this LP.
+The team plans the release workflow and decides on the tasks to add to the board (They will be in the new generated template) The tasks will correspond to the module exercises in this LP. First guess is about 10 tasks.
 
-They plan their release and deployment to Amita's test environment as an AppService with one slot to start with.
+The discuss CD and what it is. 
+
+They plan their release and deployment POC as an AppService to start with.
 
 Resources:
 
@@ -30,7 +32,13 @@ Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Defin
 
 ## How can I plan my release strategy?
 
-## Notes - 7/2
+## What can I deploy to?
+
+Course > Set Up a Release Management Workflow > Provision and Configure Environments > Provision and Configure Different Target Environments
+
+----------------
+
+## Notes - 7/2 Ignore this - it is just ofr me to remember things.
 
 ILT references:
 

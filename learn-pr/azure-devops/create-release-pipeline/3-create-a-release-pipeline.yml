@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.3-create-a-release-pipeline
-title: Create a release pipeline in Azure DevOps
+title: Plan a release pipeline in Azure DevOps
 metadata:
-  title: Create a release pipeline in Azure DevOps
-  description: Create a release pipeline in Azure DevOps
+  title: Plan a release pipeline in Azure DevOps
+  description: Plan a release pipeline in Azure DevOps
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

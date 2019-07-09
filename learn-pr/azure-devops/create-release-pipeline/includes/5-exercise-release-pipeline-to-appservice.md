@@ -1,6 +1,6 @@
-The team has been using a build pipeline to automate their build processes. Now, the team has decided to edit the pipeline to add the deployment stage to the pipeline. They will first deploy to Amita's test environment as an Azure AppService.
+The team has been using a build pipeline to automate their build processes. Now, the team has decided to edit the pipeline to add the deployment stage to the pipeline. They will first deploy to an Azure AppService as proof of concept.
 
-Let's follow them as they get their first deployment to Amita's new test environment.
+Let's follow them as they create their first automated deployment.
 
 Here you'll create a release pipeline using multistage pipelines. To do this you will:
 
@@ -30,12 +30,6 @@ Here you'll create a release pipeline using multistage pipelines. To do this you
 
 TODO - Link to the MSLearn module on creating an AppService
 
-### Add a deployment slot
-
-1. On the menu to the left, select **Deployment slots**. You'll see that there is one slot already created called **Production**. We will create one for Amita called **Test**.
-1. Click **+ Add Slot**.
-1. In the window that is now on the right, fill in the **Name** field with **Test** and click **Add**. You should now have two slots. We will deploy to the **Test** slot. Later, you will deploy to multiple slots using your release strategy.
-
 ## Create the multistage pipeline to build and deploy to the App Service
 
 Here we'll add the deploy stage to the pipeline to deploy our build artifact to the App Service we set up in the Azure portal.
@@ -58,11 +52,11 @@ Our pipeline will need to access our app service. In order to do this without ha
 Here we'll add the stage, job, and tasks we need to deploy the build artifact to our app service.
 
 1. Open your **azure-pipelines.yml** file and replace the contents with this.
-  [!code-yml[](code/5-azure-pipelines-2.yml?highlight=61-86)]
-
+    [!code-yml[](code/5-azure-pipelines-2.yml?highlight=61-83)]
   You'll notice that we've added a deploy stage to the pipeline to deploy to the App Service. This assumes you called the service connection *TailspinServiceConnection*.
-  > [!IMPORTANT]
-  > Be sure to replace the **WebAppName** with the name of your web app. And the **resourceGroupName** with <rgn>[Resource Group Name]</rgn>.
+
+      > [!IMPORTANT]
+      > Be sure to replace the **WebAppName** with the name of your web app.
 
 1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
     > [!TIP]

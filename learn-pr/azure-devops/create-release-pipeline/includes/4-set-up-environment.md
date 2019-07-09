@@ -50,6 +50,9 @@ At a minimum, you'll need to perform these steps. Run these commands from Visual
 
 Here you'll get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
 
+> [!IMPORTANT]
+> If you have completed the previous learning paths you already have the fork. You can skip down to **Open the project in the file explorer** below.
+
 #### Create a fork
 
 The first step is to fork the _Space Game_ web project so you can work with and modify the source files.
@@ -168,7 +171,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Click **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Pipeline**. Then click **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/5-create-new-project.png)
+    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
     It takes a few moments for the template to run.
 1. Click **Navigate to project** to go to your project in Azure DevOps.
@@ -190,7 +193,7 @@ Here you'll move the first item, **Deploy to a test environment** to the **Doing
 
 Recall that **Deploy to a test environment** relates to fixing the team's existing build server, which runs on spare hardware in their office. The goal is to see if build services on Azure Pipelines can simplify build server maintenance.
 
-![Work item details](../media/5-work-item-details.png)
+![Work item details](../media/4-work-item-details.png)
 
 To set up the work item:
 
@@ -203,7 +206,7 @@ To set up the work item:
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/5-azure-boards-wi1-doing.png)
+    ![Azure Boards showing the card in the Doing column](../media/4-azure-boards-wi1-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
 
@@ -222,14 +225,21 @@ Here we will create the same basic build pipeline we create in **(Create Build P
   1. Turn on Multi Stage Pipelines **(screenshot)**
   1. Notice that separate **Pipelines** menu entries for **Release** and **Build** are now gone. This is because we will do our build and release from the same pipeline.
 
-### Add the build pipeline 
+### Add the build pipeline
+
+1. From the terminal create a new branch for your work.
+
+    ```bash
+    git checkout -b "release-pipeline"
+    git push origin
+    ```
 
 1. From Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as `~/mslearn-tailspin-spacegame-web`.
 
     > [!IMPORTANT]
     > On Windows, ensure that you select **YAML** from the **Save as type** field.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+1. From the terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
 
     > [!TIP]
     > Remember to save **azure-pipelines.yml** before running these Git commands.
@@ -252,26 +262,19 @@ You'll notice that we have set it up to use stages and jobs. For now, we only ha
 
     ```bash
     git add azure-pipelines.yml
-    git commit -m "Add stage to build pipeline"
+    git commit -m "Add build pipeline"
     git push origin
     ```
 
-1. From Azure Pipelines, trace the build through each of the steps. 
+1. From Azure Pipelines, trace the build through each of the steps.
 
     When the build completes, you see the **Artifacts** button appear. We'll use this artifact as our source for the deploy stage.
 
-    <!-- ![Azure Pipelines showing the Artifacts button](../media/7-artifacts-button.png) -->(screenshot)
+    ![Azure Pipelines showing the Artifacts button](../media/5-artifacts-button.png)
 
 1. Click the **Artifacts** button, then click **drop**. The **Artifacts explorer** appears.
 1. From the **Artifacts explorer**, expand the **drop** folder.
 
     You see a .zip file that contains your built application and its dependencies.
 
-    <!-- ![The Artifacts explorer showing the packaged application](../media/7-artifacts-explorer.png) -->(screenshot)
-
-**Possible changes:**
-Instead of creating a pipeline yml file, change this unit to :
-* Fetch branch with starter build config (where you left off in previous LP)
-* Get project from generator
-  * `git commit --allow-empty`
-  * `git push` - watch it build in the pipeline
+    ![The Artifacts explorer showing the packaged application](../media/5-artifacts-explorer.png)

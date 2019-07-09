@@ -77,9 +77,6 @@ stages:
       displayName: 'Azure App Service Deploy: website'
       inputs:
         azureSubscription: 'TailspinServiceConnection'
-        DeployToSlotOrASEFlag: true
-        ResourceGroupName: <Your Resource Group Name>
-        SlotName: Test
         appType: 'webAppLinux'
         WebAppName: '<Your App Service Name>'
         StartupCommand: 'dotnet Tailspin.SpaceGame.Web.dll'
