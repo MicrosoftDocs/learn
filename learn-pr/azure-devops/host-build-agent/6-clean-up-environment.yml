@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.host-build-agent.6-clean-up-environment
+title: Exercise - Clean up your Azure DevOps environment
+metadata:
+  title: Exercise - Clean up your Azure DevOps environment
+  description: Clean up your Azure DevOps environment and disable your build pipeline.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-clean-up-environment.md)

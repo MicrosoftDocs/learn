@@ -17,7 +17,6 @@ abstract:  |
   - Select compute options that will solve your specific business needs
 prerequisites: None
 iconUrl: /learn/achievements/intro-to-azure-compute.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

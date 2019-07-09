@@ -24,7 +24,7 @@ Let's create a function app that we'll use throughout this entire module. A func
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
     | **Location** | Select from the list | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below. |
-    | **Runtime Stack** | JavaScript | The sample code in this module is written in JavaScript.  |
+    | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
     | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
 
     ### Sandbox regions
@@ -73,7 +73,12 @@ As you can see from this exercise so far, you have to select a trigger type when
 
 ![The default JavaScript implementation of an HTTP-triggered Azure function](../media/3-default-http-trigger-implementation-small.PNG)
 
-All of this code is in the **index.js** file in this function's folder. Let's look briefly at the function's other file, the **function.json** config file. This configuration data is shown in the following JSON listing.
+All of this code is in the **index.js** file in this function's folder. 
+
+>[!TIP]
+>You can see the **index.js** and **function.json** files by expanding the **View Files** menu that you'll see on the right hand side of the screen when you have your function selected. You might have to scroll to the right to see this menu.
+
+Let's look briefly at the function's other file, the **function.json** config file. This configuration data is shown in the following JSON listing.
 
 ```json
 {
@@ -100,8 +105,7 @@ All of this code is in the **index.js** file in this function's folder. Let's lo
 
 As you can see, this function has a trigger binding named **req** of type `httpTrigger` and an output binding named **res**  of type `HTTP`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **req** parameter. Similarly, we sent an HTTP response simply by setting our **res** parameter. Bindings really do take care of some of the heavy lifting for us.
 
->[!TIP]
->You can see the **index.js** and **function.json** files by expanding the **View Files** menu that you'll see on the right hand side of the screen when you have your function selected. You might have to scroll to the right to see this menu.
+
 
 ### Explore binding types
 
@@ -124,7 +128,7 @@ As you can see, this function has a trigger binding named **req** of type `httpT
 
 1. We'll get back to adding input bindings later in the module but, for now, select **Cancel** to dismiss this list.
 
-1. Select **+ New Output** under the **Outputs** column. A list of all possible output binding types is displayed as shown in the following screenshot.\
+1. Select **+ New Output** under the **Outputs** column. A list of all possible output binding types is displayed as shown in the following screenshot.
 
     ![Screenshot showing the list of possible output bindings.](../media/3-func-output-bindings-selector-small.PNG)
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-a-build-pipeline.6-create-the-pipeline
+title: Exercise - Create the pipeline
+metadata:
+  title: Exercise - Create the pipeline
+  description: Create an Azure Pipelines project and produce your first build artifact.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-create-the-pipeline.md)]

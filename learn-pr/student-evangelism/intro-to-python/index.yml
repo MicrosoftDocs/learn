@@ -17,8 +17,7 @@ abstract: |
   - Learn how to declare variables
   - Build a simple Python app that takes input and produces output
 prerequisites: None
-# TODO update iconurl when we have a URL
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-python.svg
 levels:
 - beginner
 roles:

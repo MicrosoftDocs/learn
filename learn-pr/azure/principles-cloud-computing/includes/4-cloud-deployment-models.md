@@ -8,6 +8,7 @@ There are three different cloud deployment models. A cloud deployment model defi
 
 :::row:::
   :::column span="3":::
+
 ### Public cloud
 
 This is the most common deployment model. In this case, you have no local hardware to manage or keep up-to-date – everything runs on your cloud provider’s hardware. In some cases, you can save additional costs by sharing computing resources with other cloud users.
@@ -20,6 +21,7 @@ Businesses can use multiple public cloud providers of varying scale. Microsoft A
 :::row-end:::
 
 #### Advantages
+
 - High scalability/agility – you don’t have to buy a new server in order to scale
 - Pay-as-you-go pricing – you pay only for what you use, no CapEx costs
 - You’re not responsible for maintenance or updates of the hardware
@@ -28,6 +30,7 @@ Businesses can use multiple public cloud providers of varying scale. Microsoft A
 A common use case scenario is deploying a web application or a blog site on hardware and resources that are owned by a cloud provider. Using a public cloud in this scenario allows cloud users to get their website or blog up quickly, and then focus on maintaining the site without having to worry about purchasing, managing or maintaining the hardware on which it runs.
 
 #### Disadvantages
+
 Not all scenarios fit the public cloud. Here are some disadvantages to think about:
 
 - There may be specific security requirements that cannot be met by using public cloud
@@ -37,6 +40,7 @@ Not all scenarios fit the public cloud. Here are some disadvantages to think abo
 
 :::row:::
   :::column span="3":::
+
 ### Private cloud
 
 In a private cloud, you create a cloud environment in your own datacenter and provide self-service access to compute resources to users in your organization. This offers a simulation of a public cloud to your users, but you remain completely responsible for the purchase and maintenance of the hardware and software services you provide.
@@ -47,25 +51,29 @@ In a private cloud, you create a cloud environment in your own datacenter and pr
 :::row-end:::
 
 #### Advantages
+
 This approach has several advantages:
 
-- You have complete control over the resources and can ensure the configuration can support any scenario or legacy application
-- You have complete control (and responsibility) over security
-- Private clouds can meet strict security, compliance, or legal requirements in ways a public cloud might not be able to
+- You can ensure the configuration can support any scenario or legacy application
+- You can control (and responsibility) over security
+- Private clouds can meet strict security, compliance, or legal requirements
+- Economies at scale and integration with Azure Security Center
 
 #### Disadvantages
+
 Some reasons teams move away from the private cloud are:
 
-- You have upfront CapEx costs and must purchase the hardware for startup and maintenance
+- You have some initial CapEx costs and must purchase the hardware for startup and maintenance
 - Owning the equipment limits the agility - to scale you must buy, install, and setup new hardware
 - Private clouds require IT skills and expertise that's hard to come by
 
-A use case scenario for a private cloud would be when an organization has data that cannot be put in the public cloud, perhaps for legal reasons. For example, they may have medical data that cannot be exposed publicly. Another scenario may be where government policy requires specific data to be kept in-country or privately.
+A use case scenario for a private cloud would be when an organization has data that cannot be put in the public cloud, perhaps for legal reasons. An example scenario may be where government policy requires specific data to be kept in-country or privately.
 
 A private cloud can provide cloud functionality to external customers as well, or to specific internal departments such as Accounting or Human Resources.
 
 :::row:::
   :::column span="3":::
+
 ### Hybrid cloud
 
 A hybrid cloud combines public and private clouds, allowing you to run your applications in the most appropriate location. For example, you could host a website in the public cloud and link it to a highly secure database hosted in your private cloud (or on-premises datacenter).
@@ -87,6 +95,7 @@ Some advantages of a hybrid cloud are:
 - You can use your own equipment to meet security, compliance, or legacy scenarios where you need to completely control the environment
 
 #### Disadvantages
+
 Some concerns you'll need to watch out for are:
 
 - It can be more expensive than selecting one deployment model since it involves some CapEx cost up front

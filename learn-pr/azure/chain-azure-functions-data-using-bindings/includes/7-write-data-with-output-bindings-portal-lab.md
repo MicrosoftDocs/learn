@@ -59,9 +59,9 @@ You want to look up a bookmark with a specific ID, so let's tie the ID we receiv
     |---------|---------|---------|
     |Document parameter name     |  **bookmark**       |  The name used to identify this binding in your code.      |
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
-    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    |SQL Query (optional)    |   leave blank       |   We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection.|
+    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The container from which we'll read data. We defined this setting was earlier in the lesson. |
+    |SQL Query (optional)    |   leave blank       |   We are only retrieving one item at a time based on the ID. So, filtering with the Document ID field is  better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return an item, but it would return it in a items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB container earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the container.|
 
 9. Select **Save** to save all changes to this binding configuration.
 
@@ -84,8 +84,8 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
     |---------|---------|---------|
     |Document parameter name     |  **newbookmark**       |  The name used to identify this binding in your code. This parameter is used to write a new bookmark entry.     |
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
-    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
+    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The container from which we'll read data. We defined the container earlier in the lesson. |
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB container earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
      |Collection throughput (optional)     |   leave blank      |  We can accept the default here.       |
 
 9. Select **Save** to save all changes to this binding configuration.

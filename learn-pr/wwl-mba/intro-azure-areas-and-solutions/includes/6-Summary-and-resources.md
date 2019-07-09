@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 Here are the two key takeaways from this module:
 :::row:::
-![Icon of key](../media/Key_Takeaway_3questions.png)
+![Icon of key](../media/key-takeaway.png)
   :::column span="1":::
 1. Wherever you are on your cloud adoption journey, Azure delivers unique value in four areas: productive, hybrid, intelligent, and trusted.
 1. Azure provides technologies and services across the following solution areas:

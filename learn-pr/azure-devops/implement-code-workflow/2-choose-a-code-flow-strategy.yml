@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy
+title: Choose a code flow strategy
+metadata:
+  title: Choose a code flow strategy
+  description: Learn the advantages of using a distributed version control system, such as Git.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-choose-a-code-flow-strategy.md)
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which type of version control enables you to work from your own copy of the main repository?"
+    choices:
+    - content: "Centralized version control"
+      isCorrect: false
+      explanation: "With centralized version control, everyone works from the same main repository."
+    - content: "Team Foundation Version Control"
+      isCorrect: false
+      explanation: "Team Foundation Version Control (TFVC) is a form of centralized version control. With centralized version control, everyone works from the same main repository."
+    - content: "Distributed version control"
+      isCorrect: true
+      explanation: "With distributed version control, everyone works from their own copy of the main repository. This ensures that no one is blocked from accessing the files they need."
+  - content: "A Git branch is used to:"
+    choices:
+    - content: "Copy only the part of the repository that you want to work with."
+      isCorrect: false
+      explanation: "A Git branch points to a particular commit, or snapshot, of your entire repository."
+    - content: "Make changes and experiment with the codebase without affecting other developers' work."
+      isCorrect: true
+      explanation: "A Git branch points to a particular commit, or snapshot, of your entire repository. You can then propose your changes for others to review or discard them and try something else."
+    - content: "Create an entirely new repository that's not connected to the main repository."
+      isCorrect: false
+      explanation: "You create a new repository from GitHub or run the `git init` command."
+  - content: "The `git pull` command:"
+    choices:
+    - content: "Uploads changes from your local repository to the remote repository."
+      isCorrect: false
+      explanation: "Use `git push` to upload your local changes to the remote repository."
+    - content: "Downloads and merges the latest changes from the remote repository into your local repository."
+      isCorrect: true
+      explanation: "Run `git pull` when you want to synchronize with the latest changes from your team."
