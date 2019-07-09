@@ -4,7 +4,7 @@ In this unit, you'll deploy your web application to App Service.
 
 ## Use a local Git repository as your deployment option
 
-Next, we'll configure App Service for Git deployment. This will enable us to deploy new versions of our application by pushing our code to a Git endpoint in Azure.
+Next, we'll configure App Service for Git deployment. This configuration will enable us to deploy new versions of our application by pushing our code to a Git endpoint in Azure.
 
 1. In the overview page for your App Service web app, click the **Deployment Center** menu item on the left-hand navigation.
 
@@ -26,7 +26,7 @@ Before you can deploy with Git, App Service requires you to set up a username/pa
 
 1. Click on **User Credentials**.
 
-1. If not already populated, set the **Username** field. This does not have to be the same as your Azure account username.
+1. If not already populated, set the **Username** field. This username does not have to be the same as your Azure account username.
 
 1. Enter a **Password** of your choice, and then confirm your password.
 
@@ -78,7 +78,7 @@ To start using Git, you need to initialize a local Git repository for your .NET 
     git init
     ```
 
-    If the command is successful, you receive a message like the following:
+    If the command is successful, you receive a message like the following example:
 
     ```output
     Initialized empty Git repository in /home/{your-user}/BestBikeApp/.git/
@@ -177,15 +177,15 @@ Congratulations! You have successfully hosted your application on App Service!
 
 There are two primary ways to upload a **.zip** file to an App Service web app.
 
-First, you can deploy a zipped website up to App Service using a dedicated built-in web page. If you navigate to `https://<app_name>.scm.azurewebsites.net/ZipDeployUI` you are shown a site you can drag/drop the local **.zip** file and upload it to your server. You need to sign in with the same Azure credentials used to create the site in this case. This approach is similar to using FTP to upload to the storage folder mapped to the website host.
+First, you can deploy a zipped website up to App Service using a dedicated built-in web page. If you navigate to `https://[app_name>.scm.azurewebsites.net/ZipDeployUI`, you are shown a site you can drag/drop the local **.zip** file and upload it to your server. You need to sign in with the same Azure credentials used to create the site in this case. This approach is similar to using FTP to upload to the storage folder mapped to the website host.
 
-The second approach which we'll use here is the command line. The Azure CLI includes the `webapp deployment` command to upload a ZIP file that contains all the files for the website. Use the following command to upload your zip file to your created website. Make sure to replace the `<app_name>` and .zip filename:
+The second approach that we'll use in this exercise is the command line. The Azure CLI includes the `webapp deployment` command to upload a ZIP file that contains all the files for the website. Use the following command to upload your zip file to your created website. Make sure to replace the `[app_name>` and .zip filename:
 
 ```azurecli
-az webapp deployment source config-zip --resource-group <rgn>[sandbox resource group name]</rgn> --src helloworld.zip --name <app_name> 
+az webapp deployment source config-zip --resource-group <rgn>[sandbox resource group name]</rgn> --src helloworld.zip --name [app_name] 
 ```
 
-This will respond with a JSON block with the details about the transfer.
+This command will respond with a JSON block with the details about the transfer.
 
 ```json
 {
@@ -199,19 +199,19 @@ This will respond with a JSON block with the details about the transfer.
   "is_readonly": true,
   "is_temp": false,
   "last_success_end_time": "2018-12-19T18:04:13.441193Z",
-  "log_url": "https://<app_name>.scm.azurewebsites.net/api/deployments/latest/log",
+  "log_url": "https://[app_name].scm.azurewebsites.net/api/deployments/latest/log",
   "message": "Created via a push deployment",
   "progress": "",
   "received_time": "2018-12-19T18:04:09.585955Z",
-  "site_name": "<app_name>",
+  "site_name": "[app_name]",
   "start_time": "2018-12-19T18:04:09.843809Z",
   "status": 4,
   "status_text": "",
-  "url": "https://<app_name>.scm.azurewebsites.net/api/deployments/latest"
+  "url": "https://[app_name].scm.azurewebsites.net/api/deployments/latest"
 }
 ```
 
-When the command finishes running, open a new browser tab and navigate to `https://<app_name>.azurewebsites.net`. You'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
+When the command finishes running, open a new browser tab and navigate to `https://[app_name].azurewebsites.net`. You'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
 
 ::: zone-end
 
@@ -223,23 +223,23 @@ Most App Service deployment techniques, including the one we'll use here, requir
 
 Instead of finding those credentials for each one of your apps and storing them somewhere, you can use an App Service feature called User Deployment Credentials to create your own username and password. The values you choose will work for deployments on *all* App Service web apps that you have permissions to, including new web apps that you create in the future. The username and password you select are tied to your Azure login and intended only for your use, so don't share them with others. You can change both the username and password at any time.
 
-The easiest way to create deployment credentials is from the Azure CLI. Run the following command in the Cloud Shell to set them up, substituting `<username>` and `<password>` with values you choose.
+The easiest way to create deployment credentials is from the Azure CLI. Run the following command in the Cloud Shell to set them up, substituting `[username]` and `[password]` with values you choose.
 
 ```azurecli
-az webapp deployment user set --user-name <username> --password <password>
+az webapp deployment user set --user-name [username] --password [password]
 ```
 
 ## Deploy the application package with wardeploy
 
 **Wardeploy** is an App Service deployment mechanism specifically designed for deploying WAR web application package files to Java web apps. Wardeploy is part of the Kudu REST API: an administrative service interface, available on all App Service web apps, that can be accessed over HTTP. The simplest way to use wardeploy is with the `curl` HTTP utility from the command line.
 
-Run the following commands to deploy your app with wardeploy. Replace `<username>` and `<password>` with the Deployment User username and password you created above, and replace `<web_app_name>` with the name of your web app.
+Run the following commands to deploy your app with wardeploy. Replace `[username]` and `[password]` with the Deployment User username and password you created above, and replace `[web_app_name]` with the name of your web app.
 
 ```console
 cd ~/helloworld/target
-curl -v -X POST -u <username>:<password> https://<sitename>.scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
+curl -v -X POST -u [username]:[password] https://[sitename].scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
 ```
 
-When the command finishes running, open a new browser tab and navigate to `https://<web_app_name>.azurewebsites.net`. You'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
+When the command finishes running, open a new browser tab and navigate to `https://[web_app_name].azurewebsites.net`. You'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
 
 ::: zone-end

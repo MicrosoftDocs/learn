@@ -16,7 +16,7 @@ Those are the three I was thinking about using now. There are two other services
 
 | | |
 |-|-|
-|![Azure Repos](../media/azure-repos.png)|[Azure Repos](https://azure.microsoft.com/services/devops/repos?azure-portal=true). These give us provide unlimited, cloud-hosted private, and public Git repos.|
+|![Azure Repos](../media/azure-repos.png)|[Azure Repos](https://azure.microsoft.com/services/devops/repos?azure-portal=true). These provide unlimited, cloud-hosted private, and public Git repos.|
 |![Azure Artifacts](../media/azure-artifacts.png)|[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts?azure-portal=true). These let us create, host, and share packages.|
 
 **Amita**: This sounds like a lot. Where do we start?

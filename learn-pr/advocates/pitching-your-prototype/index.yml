@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.pitch-your-product-prototype
+metadata:
+  title: Pitch your product prototype
+  description: Write a compelling pitch deck for your product prototype that will resonate with your audience and share the vision of your prototype.
+  author: jamtur01
+  ms.date: 04/25/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+title: Pitch your product prototype
+summary: Write a compelling pitch deck for your product prototype that will resonate with your audience and share the vision of your prototype.
+abstract: | 
+ In this module, you will:
+ - Construct a mission statement for a product prototype.
+ - Evaluate your audience's requirements.
+ - Tailor your message to your audience.
+ - Explain how you'll acquire customers for your prototype.
+ - Explain how your product will make money.
+ - Create a demonstration strategy for a product prototype.
+ - Create a call to action for your audience.
+prerequisites: |
+ - You should have a broad understanding of product management and road maps.
+ - You should have given some thought to your proposed revenue model.
+ - You should have given some thought to your company's exit strategy.
+iconUrl: /learn/achievements/pitch-your-product-prototype.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.pitch-your-product-prototype.1-introduction
+- learn.pitch-your-product-prototype.2-develop-your-elevator-pitch
+- learn.pitch-your-product-prototype.3-tailor-your-message
+- learn.pitch-your-product-prototype.4-explain-the-how
+- learn.pitch-your-product-prototype.5-demonstrate-your-prototype
+- learn.pitch-your-product-prototype.6-your-ask
+- learn.pitch-your-product-prototype.7-conclusion
+badge:
+  uid: learn.pitch-your-product-prototype.badge

@@ -125,16 +125,15 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
     ```
 
     > [!TIP]
-    > Visual Studio Code also provides an easy way to search for text in files. Click the hourglass icon on the side menu to access the search pane.
+    > Visual Studio Code also provides an easy way to search for text in files. Click the magnifying glass icon on the side menu to access the search pane.
 
-1. Replace the text in the previous step with this text and then save the file.
+1. Replace the text in the previous step with the following misspelled text and then save the file.
 
     ```html
     <p>Welcome to the oficial Space Game site!</p>
     ```
+    Note that the misspelled word "oficial" is intentional &mdash; we will address that error later in this module.
 
-    > [!IMPORTANT]
-    > The typing error, "oficial", is on purpose &mdash; we will address that later in this module.
 1. From the terminal, run the following `dotnet build` command to build the application.
 
     ```bash
