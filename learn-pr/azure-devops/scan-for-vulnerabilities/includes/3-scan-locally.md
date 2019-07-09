@@ -1,26 +1,26 @@
-Here you'll create a project on SonarCloud so you can analyze the _Space Game_ web site code. You'll also get starter code from GitHub to scan. You'll upload the results to SonarCloud and analyze them.
+Here you'll create a project on SonarCloud so you can analyze the _Space Game_ website code. You'll also get starter code from GitHub to scan. You'll upload the results to SonarCloud and analyze them.
 
 ## Create the project on SonarCloud
 
 Let's set up a project on SonarCloud. You'll need to save some information, such as a token and keys, from the SonarCloud portal to set up your scan later.
 
-1. From a browser tab, navigate to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in.
-1. From the upper corner, click **+** and then **Analyze new project**.
+1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in.
+1. In the upper corner, select **+** and then select **Analyze new project**.
 1. Go to the **Setup manually** tab.
     * Your organization is filled in automatically.
     * For **Project key**, create a unique name. For example, **space-game-web-333**.
     * The **Display name** is filled in with the same text as the **Project key**.
     * Keep **Public** selected.
-    * Click **Set Up**
+    * Select **Set Up**.
 
     ![Setting up a SonarCloud project manually through the web interface](../media/3-sonar-cloud-create-project.png)
 
 1. From the **Analyze your project** screen:
     1. Under **Provide a token**:
-        * Click **Generate**.
+        * Select **Generate**.
         * Save the generated token somewhere safe.
         * Notice **Project Key** and **Organization Key** on the right. Save those values as well.
-        * Click **Continue**.
+        * Select **Continue**.
     1. Under **Run analysis on your project**:
         * Select **C# or VB .NET**.
 
@@ -47,9 +47,9 @@ Here you'll get a copy of the _Space Game_ web project and work from a branch.
 
 ## Scan locally
 
-Here you'll set up the SonarCloud scanner and scan your code locally. You'll then upload the scan data to SonarCloud so you can analyze the results.
+Here you'll set up the SonarCloud scanner and scan your code locally. You'll then upload the scan data to SonarCloud so that you can analyze the results.
 
-The SonarCloud scanner runs Java code during the scanning process. So you'll start by making sure your environment is set up to run Java code.
+The SonarCloud scanner runs Java code during the scanning process. So, you'll start by making sure your environment is set up to run Java code.
 
 > [!IMPORTANT]
 > We mention Java in the prerequisites, but if you don't have it installed, now is a good time. Install the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
@@ -60,41 +60,41 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
     echo $JAVA_HOME
     ```
 
-    If the command does not output a path, you'll need to set and export this variable.
+    If the command doesn't output a path, you'll need to set and export this variable.
 
     To do so, you first need to locate where Java is installed on your system. After that, you need to set and export the `JAVA_HOME` variable.
 
-    Here's an example on Windows.
+    Here's an example on Windows:
 
     ```bash
     export JAVA_HOME="C:\Program Files\Java\jdk-12.0.1"
     ```
 
-    Here's an example on macOS that uses the **java_home** utility to get the path to the default version of Java installed on your system.
+    Here's an example on macOS that uses the **java_home** utility to get the path to the default version of Java installed on your system:
 
     ```bash
     export JAVA_HOME=$(/usr/libexec/java_home)
     ```
 
-    Here's an example on Linux.
+    Here's an example on Linux:
 
     ```bash
     export JAVA_HOME=/usr/bin
     ```
 
-    For more information on how to set this variable, see [Set JAVA_HOME on Windows 7, 8, 10, Mac OS X, Linux](https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux?azure-portal=true).
+    For more information on how to set this variable, see [Set JAVA_HOME on Windows 7, 8, 10, Mac OS X, and Linux](https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux?azure-portal=true).
 
-1. Run the following `dotnet tool install` command to install **dotnet-sonarscanner**.
+1. Run the following `dotnet tool install` command to install **dotnet-sonarscanner**:
 
     ```bash
     dotnet tool install --global dotnet-sonarscanner
     ```
 
-    There are a few ways to install the SonarCloud tools. **dotnet-sonarscanner** is an easy way to scan .NET Core code.
+    There are a few ways to install the SonarCloud tools. Using **dotnet-sonarscanner** is an easy way to scan .NET Core code.
 
 1. Create the variables you'll need to run a scan. The values for these variables are the keys you saved earlier.
 
-    Replace the placeholder values you see with yours. Don't include the parenthesis.
+    Replace the placeholder values you see with yours. Don't include the parentheses.
 
     ```bash
     SONAR_TOKEN=(your token)
@@ -102,7 +102,7 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
     SONAR_ORGANIZATION=(your organization key)
     ```
 
-    Here's an example.
+    Here's an example:
 
     ```bash
     SONAR_TOKEN=abcdefabcdefabcdefabcdefabcdefabcdef
@@ -110,7 +110,7 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
     SONAR_ORGANIZATION=username-github
     ```
 
-1. Run the following `dotnet-sonarscanner begin` command to prepare the scanner to collect build and test data.
+1. Run the following `dotnet-sonarscanner begin` command to prepare the scanner to collect build and test data:
 
     ```bash
     $HOME/.dotnet/tools/dotnet-sonarscanner begin \
@@ -122,7 +122,7 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
       /o:"$SONAR_ORGANIZATION"
     ```
 
-    If the command fails, try running it like this.
+    If the command fails, try running it like this:
 
     ```bash
     MSYS2_ARG_CONV_EXCL="*" $HOME/.dotnet/tools/dotnet-sonarscanner begin \
@@ -134,7 +134,7 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
       /o:"$SONAR_ORGANIZATION"
     ```
 
-    This command uses the information you stored in variables and other information to help the scanner know where to store the results.
+    This command uses the information you stored in variables and other information to help the scanner know where to store the results:
 
       * `/k:` specifies your project key
       * `/d:sonar.host.url` specifies where to upload the results
@@ -145,11 +145,11 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
 
     In [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you analyzed the amount of code covered by unit tests. SonarCloud can also display this coverage. The `/d:sonar.cs.opencover.reportsPaths` specifies where to find that code coverage information.
 
-    When running this kind of analysis, it's common to scan only the source code your team has written so that you can more easily focus on just your code. This example uses wildcards to exclude all source code under the **wwwroot/lib** directory. This directory includes open source components such as Bootstrap and JQuery.
+    When you run this kind of analysis, it's common to scan only the source code your team has written so that you can more easily focus on just your code. This example uses wildcards to exclude all source code under the **wwwroot/lib** directory. This directory includes open-source components such as Bootstrap and JQuery.
 
-    You'll learn how to discover potential vulnerabilities in open source components in a future module.
+    You'll learn how to discover potential vulnerabilities in open-source components in a future module.
 
-1. Run this `dotnet build` command to build the application under the Release configuration.
+1. Run this `dotnet build` command to build the application under the Release configuration:
 
     ```bash
     dotnet build --no-incremental --configuration Release
@@ -159,7 +159,7 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
 
     You see more warnings than usual. That's because **sonarscanner** modified the build process to be able to scan your code.
 
-1. Run this `dotnet test` command to run unit tests and collect code coverage results.
+1. Run this `dotnet test` command to run unit tests and collect code coverage results:
 
     ```bash
     dotnet test --no-build \
@@ -169,7 +169,7 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
       /p:CoverletOutput=./TestResults/Coverage/
     ```
 
-    If the command fails, try running it like this, as you did previously.
+    If the command fails, try running it like this, as you did previously:
 
     ```bash
     MSYS2_ARG_CONV_EXCL="*" dotnet test --no-build \
@@ -183,33 +183,33 @@ The SonarCloud scanner runs Java code during the scanning process. So you'll sta
 
     (The `%2c` part represents the comma `,` character and makes it easier for the command to parse the string.)
 
-1. Run this `dotnet-sonarscanner end` command to complete the scanning session and upload the results to SonarCloud.
+1. Run this `dotnet-sonarscanner end` command to complete the scanning session and upload the results to SonarCloud:
 
     ```bash
     $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
     ```
 
-    If the command fails, try running it like this, as you did previously.
+    If the command fails, try running it like this, as you did previously:
 
     ```bash
     MSYS2_ARG_CONV_EXCL="*" $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
     ```
 
-    You see that scanning results are written to the `.sonarqube` directory under the root of your project. These are intermediate files SonarCloud uses to collect and analyze the results. These files aren't meant to be included in source control. We've already added an entry in the `.gitignore` file to exclude this directory on the `security-scan` branch.
+    You see that scanning results are written to the `.sonarqube` directory under the root of your project. These are intermediate files that SonarCloud uses to collect and analyze the results. These files aren't meant to be included in source control. We've already added an entry in the `.gitignore` file to exclude this directory on the `security-scan` branch.
 
 ## Examine the results
 
 Here you'll see the results from the SonarCloud portal.
 
-1. From a web browser, navigate to the SonarCloud home page.
+1. From a web browser, go to the SonarCloud home page.
 
     You see your project with a summary of the scan.
 
     ![The summary for the analysis on SonarCloud](../media/3-sonar-scan-summary.png)
 
-1. Click on the name of the project to be taken to the results page.
+1. Select the name of the project to be taken to the results page.
 
-    There are several categories that you can examine. Start with **Reliability** at the top. If you have bugs, they will show up here. We have one bug. Click on it to see more details.
+    There are several categories that you can examine. Start with **Reliability** at the top. If you have bugs, they show up here. We have one bug. Select it to see more details.
 
     ![The SonarCloud dashboard](../media/3-sonar-scan-dashboard.png)
 
@@ -217,13 +217,13 @@ Here you'll see the results from the SonarCloud portal.
 
     ![Bug details on SonarCloud](../media/3-sonar-scan-bug.png)
 
-    You can click the **See Rule** button to learn more about the rationale behind this recommendation.
+    You can select **See Rule** to learn more about the rationale behind this recommendation.
 
-    In practice, your team would assess each bug and prioritize whether to fix it. This bug is categorized as **Minor**, which  you can use to rank its importance among other reported issues.
+    In practice, your team assesses each bug and prioritizes whether to fix it. This bug is categorized as **Minor**. You can use this rank its importance among other reported issues.
 
 1. As an optional step, return to the **Overview** tab and explore the results from other categories.
 
-    For example, from the **Security** section, you can examine reported vulnerabilities and security hotspots.
+    For example, in the **Security** section, you can examine reported vulnerabilities and security hotspots.
 
     The **Maintainability** section provides an estimate of your technical debt time and your code smells.
 
@@ -233,17 +233,17 @@ Here you'll see the results from the SonarCloud portal.
 
 **Tim:** This is just what I was looking for. But is there a way to keep this report up to date?
 
-**Andy:** Now that we understand the process, we can add it to the build pipeline. That way, we can scan the code on a regular basis. As we resolve the reported issues, the results will improve. Anyone with access can log on and see the latest report whenever they need to.
+**Andy:** Now that we understand the process, we can add it to the build pipeline. That way, we can scan the code on a regular basis. As we resolve the reported issues, the results will improve. Anyone with access can sign in and see the latest report whenever they need to.
 
-**Tim** Let's see how that works.
+**Tim:** Let's see how that works.
 
 ## Remove intermediate files
 
 Recall that when you ran **dotnet-sonarscanner** earlier, the process created a number of intermediate files in the **.sonarqube** folder in the root of the project.
 
-These files are not intended to be included in source control, and you no longer need them. Although the project's **.gitignore** file is already set up to ignore anything in the **.sonarqube** directory, it's a good idea to delete these files so they're not added to your Git repository in future modules.
+These files aren't intended to be included in source control, and you no longer need them. Although the project's **.gitignore** file is already set up to ignore anything in the **.sonarqube** directory, it's a good idea to delete these files so they're not added to your Git repository in future modules.
 
-From Visual Studio Code, navigate to the terminal window. Then run this command from your project's root directory.
+From Visual Studio Code, go to the terminal window. Then run this command from your project's root directory:
 
 ```bash
 rm -rf .sonarqube/

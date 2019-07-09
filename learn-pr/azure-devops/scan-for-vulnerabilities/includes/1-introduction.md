@@ -6,14 +6,14 @@ In this module, you'll learn about tools and procedures that you can use to give
 
 In this module, you'll:
 
-* Learn what resources are available to scan your code for security vulnerabilities, bugs, and code smells
-* Use SonarCloud to scan your code locally and as part of your build pipeline
-* Limit your scanning to pull requests only by using conditions
+* Learn what resources are available to scan your code for security vulnerabilities, bugs, and code smells.
+* Use SonarCloud to scan your code locally and as part of your build pipeline.
+* Limit your scanning to pull requests only by using conditions.
 
 ## Prerequisites
 
 * The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
-* You'll also need an account on [SonarCloud](https://sonarcloud.io?azure-portal=true). Sign in using your GitHub or Azure DevOps account.
+* You'll also need an account on [SonarCloud](https://sonarcloud.io?azure-portal=true). Sign in by using your GitHub or Azure DevOps account.
 * You'll also need the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
 
 Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
@@ -34,4 +34,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process by using Azure DevOps.
