@@ -53,14 +53,14 @@ Azure Blob storage lets you stream large video or audio files directly to the us
 :::row-end:::
 :::row:::
   :::column:::
-    ![Azure Data Lake Storage Gen2](../media/3-azure-data-lake.png)
+    ![Azure Data Lake Storage](../media/3-azure-data-lake.png)
   :::column-end:::
     :::column span="3":::  
-**Azure Data Lake Storage Gen2**
+**Azure Data Lake Storage**
 
 The Data Lake feature allows you to perform analytics on your data usage and prepare reports. Data Lake is a large repository that stores both structured and unstructured data.
 
-**Azure Data Lake Storage Gen2** combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities. The following illustration shows how Azure Data Lake stores all your business data and makes it available for analysis.
+**Azure Data Lake Storage** combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities. The following illustration shows how Azure Data Lake stores all your business data and makes it available for analysis.
 
 ![An illustration showing the role of Azure Data Lake in preparing and storing your data for use by analysis tools. Azure Data Lake can handle a variety of input types such as relational, video, or sensor data.](../media/3-Data_lake_store_concept.png)
 

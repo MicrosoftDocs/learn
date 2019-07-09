@@ -19,7 +19,6 @@ abstract: |
   - Learn how Azure IoT enables digital transformation to address business challenges.
 prerequisites: None
 iconUrl: /learn/achievements/azure-iot-strategy-and-solutions.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

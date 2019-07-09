@@ -2,19 +2,19 @@
 uid: learn.connect-on-premises-network-with-vpn-gateway
 metadata:
   title: Connect your on-premises network to Azure with VPN Gateway
-  description: Learn about the Virtual Private Network (VPN) Gateway options in Azure and typical scenarios for using a VPN. Create and test VPNs to securely connect sites to Azure.
+  description: Learn about the virtual private network (VPN) gateway options in Azure and typical scenarios for using a VPN. Create and test VPNs to securely connect sites to Azure.
   ms.date: 04/26/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect your on-premises network to Azure with VPN Gateway
-summary: VPN Gateway options in Azure provides secure connectivity between your on-premises networks and clients.
+summary: VPN Gateway in Azure provides secure connectivity between your on-premises networks and clients.
 abstract: | 
   In this module, you will:
-  - Identify the features and use cases of VPN Gateways
-  - Understand the requirements for provisioning a VPN Gateway
-  - Provision site-to-site VPN Gateways
+  - Learn the features and use cases of VPN gateways
+  - Learn the requirements for provisioning VPN gateways
+  - Provision site-to-site VPN gateways
 prerequisites: | 
   - Familiarity with Azure virtual networking
 iconUrl: /learn/achievements/connect-on-premises-network-with-vpn-gateway.svg

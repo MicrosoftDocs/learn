@@ -12,7 +12,7 @@ Data modernization is the process of making progressive changes to the way you c
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more.|
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU0Y]
 
@@ -29,7 +29,7 @@ Azure SQL Database Managed Instance is an expansion of the existing SQL Database
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqZ7h]
 
@@ -39,7 +39,7 @@ Using the Azure Database Migration Service, databases can be modernized to Azure
 
 The following diagram illustrates how databases can be modernized.  Azure Database Migration Services can take your existing on-premises databases and migrate them to equivalent database services on Azure.
 
-![Azure Database Migration Services](../media/IC-GM05-diagram-3B.png)
+![Azure Database Migration Services](../media/ic-gm05-diagram-3b.png)
 
 ### What about hybrid and on-premises solutions?
 
@@ -51,7 +51,7 @@ Microsoft SQL Server 2017 can meet the needs of modernizing your on-premises dat
 
 ------------
 :::row:::
-![Icon of lightbulb](../media/Lightbulb_icon.png)
+![Icon of lightbulb](../media/lightbulb.png)
   :::column span="3":::
 
 *Now that you’ve seen some examples of data modernization, can you identify the key advantages and capabilities of on-premises modernization and migration to Azure?*

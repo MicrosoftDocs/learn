@@ -132,7 +132,7 @@ Let's get your Windows VM up and running.
     az vm create \
       --name myVM \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --image Win2016Datacenter \
+      --image Win2019Datacenter \
       --size Standard_DS2_v2 \
       --location eastus \
       --admin-username $USERNAME \
@@ -147,7 +147,7 @@ While you're waiting, let's review the command you just ran.
 
 * The VM is named **myVM**. This name identifies the VM in Azure. It also becomes the VM's internal hostname, or computer name.
 * The resource group, or the VM's logical container, is named **<rgn>[sandbox resource group name]</rgn>**.
-* **Win2016Datacenter** specifies the Windows Server 2016 VM image.
+* **Win2019Datacenter** specifies the Windows Server 2019 VM image.
 * **Standard_DS2_v2** refers to the size of the VM. This size has two virtual CPUs and 7 GB of memory.
 * The username and password enable you to connect to your VM later. For example, you can connect over Remote Desktop or WinRM to work with and configure the system.
 
