@@ -58,12 +58,13 @@ Our pipeline will need to access our app service. In order to do this without ha
 Here we'll add the stage, job, and tasks we need to deploy the build artifact to our app service.
 
 1. Open your **azure-pipelines.yml** file and replace the contents with this.
-  [!code-yml[](code/5-azure-pipelines-2.yml?highlight=61-83)]
-    You'll notice that we've added a deploy stage to the pipeline to deploy to the App Service. This assumes you called the service connection *TailspinServiceConnection*.
-    > [!IMPORTANT]
-    > Be sure to replace the **WebAppName** with the name of your web app. And the **resourceGroupName** with <rgn>[Resource Group Name]</rgn>.
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+  [!code-yml[](code/5-azure-pipelines-2.yml?highlight=61-86)]
 
+  You'll notice that we've added a deploy stage to the pipeline to deploy to the App Service. This assumes you called the service connection *TailspinServiceConnection*.
+  > [!IMPORTANT]
+  > Be sure to replace the **WebAppName** with the name of your web app. And the **resourceGroupName** with <rgn>[Resource Group Name]</rgn>.
+
+1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
     > [!TIP]
     > Remember to save **azure-pipelines.yml** before running these Git commands.
 
