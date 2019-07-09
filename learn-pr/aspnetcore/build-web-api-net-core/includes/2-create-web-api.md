@@ -77,7 +77,7 @@ In this unit, you'll use the .NET Core CLI to create a web API within the Cloud 
     The preceding command uses:
 
     * HTTPS to send a request to the web API running on port 5001 of localhost. The `ValuesController` class' parameterless `Get` action method handles the request.
-    * The `-k` option to indicate that curl should allow insecure server connections when using HTTPS. The .NET Core SDK includes an HTTPS development certificate for testing. By default, curl rejects secure connections using this certificate.
+    * The `-k` option to indicate that `curl` should allow insecure server connections when using HTTPS. The .NET Core SDK includes an HTTPS development certificate for testing. By default, `curl` rejects secure connections using this certificate.
     * The `-s` option to suppress all output except the JSON payload. The JSON is sent to the *:::no-loc text="jq":::* command-line JSON processor for improved display.
 
     The following JSON is returned:

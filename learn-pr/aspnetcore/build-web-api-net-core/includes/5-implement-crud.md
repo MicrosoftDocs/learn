@@ -157,7 +157,7 @@ Run the following command:
 dotnet run > ContosoPets.Api.log &
 ```
 
-The web API is running and is ready for testing via curl.
+The web API is running and is ready for testing via `curl`.
 
 > [!IMPORTANT]
 > Don't forget to check *:::no-loc text="ContosoPets.Api.log":::* for troubleshooting information, if required.
