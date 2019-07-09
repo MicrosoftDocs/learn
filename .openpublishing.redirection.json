@@ -236,11 +236,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/5-delete-env-summary.md",
-      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/2-set-up-visual-studio-code.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment",
       "redirect_document_id": true
