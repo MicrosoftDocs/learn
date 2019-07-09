@@ -35,6 +35,14 @@ After the virtual machine has been shut down, you must deallocate while it's in 
 Stop-AzVM -ResourceGroupName <resource group> -Name <virtual machine name> -Force
 ```
 
+If you're running the Azure CLI, use the following command instead:
+
+```azurecli
+az vm deallocate \
+    --resource-group <resource group> \
+    --name <virtual machine name>
+```
+
 ::: zone-end
 
 ::: zone pivot="linux"
