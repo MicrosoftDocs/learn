@@ -1,4 +1,4 @@
-A *:::no-loc text="Controller":::* is a public class with one or more public methods known as *actions*. By convention, a Controller class is placed in the project root's *:::no-loc text="Controllers":::* directory. The actions are exposed as callable HTTP endpoints inside the web API controller.
+A *Controller* is a public class with one or more public methods known as *actions*. By convention, a Controller class is placed in the project root's *:::no-loc text="Controllers":::* directory. The actions are exposed as callable HTTP endpoints inside the web API controller.
 
 1. Run the following command:
 

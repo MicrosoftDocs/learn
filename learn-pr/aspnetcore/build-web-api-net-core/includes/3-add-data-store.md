@@ -1,4 +1,4 @@
-A type of class called a *:::no-loc text="Model":::* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](https://docs.microsoft.com/ef/core/providers/in-memory/).
+A type of class called a *Model* is needed to represent a dog toy in inventory. The Model must include the properties of a product and is used to pass data in the web API. The Model is also used to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](https://docs.microsoft.com/ef/core/providers/in-memory/).
 
 An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
 
