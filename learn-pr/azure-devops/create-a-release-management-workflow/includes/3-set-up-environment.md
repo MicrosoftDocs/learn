@@ -30,7 +30,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
     > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ web site project. The template uses your existing fork.
 1. Click **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    <!-- ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png) -->
 
     It takes a few moments for the template to run.
 1. Click **Navigate to project** to go to your project in Azure DevOps.
@@ -52,7 +52,7 @@ Here you'll move the seventh item, **Investigate hosted vs private build servers
 
 Recall that **Investigate hosted vs private build servers** relates to setting up a private build agent to see if it brings the team any added benefits over using the Microsoft-hosted agents.
 
-![Work item details](../media/3-work-item-details.png)
+<!-- ![Work item details](../media/3-work-item-details.png) -->
 
 To set up the work item:
 
@@ -65,6 +65,6 @@ To set up the work item:
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi7-doing.png)
+    <!-- ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi7-doing.png) -->
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
