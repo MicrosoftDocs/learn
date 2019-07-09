@@ -16,8 +16,8 @@ Summarize and compare the landscape, similar to what we've done in earlier modul
 ## What are deployment stages?
 
 References:
-  * Release Strategy Recommendations > Release Strategy - Introduction and Overview
-  * [Stages](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)
+* Release Strategy Recommendations > Release Strategy - Introduction and Overview
+* [Stages](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)
 
 A _stage_ is ...
 
@@ -26,17 +26,18 @@ Walk through top half of first ref.
 ## How often do you need to release?
 
 References:
- * Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
+* Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
 
+Tasks:
 * Define release cadence
 * Lift from bottom part of ref
 
 ## How do changes move from one stage to the next?
 
 References:
-  * Release Strategy Recommendations > Release Strategy - Introduction and Overview
-  * Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
-  * Release Strategy Recommendations > Demo - Selecting your Delivery and Deployment Cadence
+* Release Strategy Recommendations > Release Strategy - Introduction and Overview
+* Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
+* Release Strategy Recommendations > Demo - Selecting your Delivery and Deployment Cadence
 
 Discuss triggers
 
@@ -47,8 +48,8 @@ Discuss triggers
 ## What considerations make up a release workflow?
 
 References:
-  * Release Strategy Recommendations > Considerations for Release Approvals
-  * Automate Inspection of Health > Release gates (defines release gates)
+* Release Strategy Recommendations > Considerations for Release Approvals
+* Automate Inspection of Health > Release gates (defines release gates)
 
 Define _release approvals_ and _release gates_.
 

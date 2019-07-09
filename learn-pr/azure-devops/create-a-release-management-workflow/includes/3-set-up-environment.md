@@ -1,6 +1,6 @@
-TODO: Roberta, ignore this page.
-TODO: This is copied from another module. Update it for this module.
-TODO: Be sure the learner adds a user if needed. "If you're using a different MS account on Learn than your Azure DevOps organization, add Learn account now. Click on link in email to sign in as that user."
+* TODO: Roberta, ignore this page.
+* TODO: This is copied from another module. Update it for this module.
+* TODO: Be sure the learner adds a user if needed. "If you're using a different MS account on Learn than your Azure DevOps organization, add Learn account now. Click on link in email to sign in as that user."
 
 In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
