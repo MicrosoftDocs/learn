@@ -30,13 +30,13 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     |Dependent entity|Principal entity|Foreign key property|
     |----------------|----------------|--------------------|
-    |Orders          |Customers       |CustomerId          |
-    |ProductOrders   |Orders          |OrderId             |
-    |ProductOrders   |Products        |ProductId           |
+    |`Orders`        |`Customers`     |`CustomerId`        |
+    |`ProductOrders` |`Orders`        |`OrderId`           |
+    |`ProductOrders` |`Products`      |`ProductId`         |
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-    The *:::no-loc text="Product.cs":::*, *:::no-loc text="ProductOrder.cs":::*, *:::no-loc text="Order.cs":::*, and *:::no-loc text="Customer.cs":::* files appear in the *:::no-loc text="ContosoPets.Domain/Models":::* folder.
+    The *:::no-loc text="Product.cs":::*, *:::no-loc text="ProductOrder.cs":::*, *:::no-loc text="Order.cs":::*, and *:::no-loc text="Customer.cs":::* files appear in the *:::no-loc text="ContosoPets.Domain/Models":::* directory.
 
 1. Add the following code to *:::no-loc text="Models/Product.cs":::*. Save your changes.
 
