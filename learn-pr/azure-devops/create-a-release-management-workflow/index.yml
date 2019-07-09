@@ -36,6 +36,13 @@ products:
 #- azure-devops
 units:
 - learn.azdo.create-a-release-management-workflow.1-introduction
+- learn.azdo.create-a-release-management-workflow.2-design-release-management-workflow
+- learn.azdo.create-a-release-management-workflow.3-set-up-environment
+- learn.azdo.create-a-release-management-workflow.4-deploy-dev
+- learn.azdo.create-a-release-management-workflow.5-build-high-quality
+- learn.azdo.create-a-release-management-workflow.6-deploy-test
+- learn.azdo.create-a-release-management-workflow.7-deploy-preprod
+- learn.azdo.create-a-release-management-workflow.8-clean-up-environment
 - learn.azdo.create-a-release-management-workflow.9-summary
 badge:
   uid: learn.azdo.create-a-release-management-workflow.badge

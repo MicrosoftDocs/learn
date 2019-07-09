@@ -1,33 +1,41 @@
-## Notes - 7/2
+NOTES:
 
-ILT references:
+* This is the second module in LP3.
+* In the first module, you built a basic CD pipeline that deploys the application to AppService.
+* Here, you'll extend the pipeline to deploy the application to multiple environments so that it can be built, tested, and validated through the various development stages.
+* Although you can design a release management workflow that works for you and your team, here you'll deploy to development, test, and pre-production environments, each running on AppService.
+* FOR JUDY: **Implement Blue Green Deployment > Deployment Slots** defines deployment slots. Add this to M1?
 
-* Release Strategy Recommendations > Release Strategy - Introduction and Overview
-* Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
-  * Release Strategy Recommendations > Demo - Selecting your Delivery and Deployment Cadence
-  * Release Strategy Recommendations > Considerations for Release Approvals
-  * Release Strategy Recommendations > Demo - Setting up Manual Approval
-  * Release Strategy Recommendations > Demo - Setting up a Release Gate
-  * Building a High Quality Release Pipeline > Building a High-Quality Release pipeline
-  * Building a High Quality Release Pipeline > Using release gates as quality gate (NOTE: Use code coverage in the exercise)
-  * Building a High Quality Release Pipeline > Release Notes and Documentation
-* Choosing the Right Release Management Tool > Overview Release Management Tools (NOTE: We weren't sure of the value here?)
-  * Choosing the Right Release Management Tool > Release Management Tools Comparison
-* Automate Inspection of Health > Automate Inspection of Health (NOTE: This is more about feedback; Release gates and Events might be workflow)
-  * Automate Inspection of Health > Release gates
-* Implement Blue Green Deployment > Deployment Slots
+## Learning objectives
 
-## Exercises
+In this module, you will:
 
-* Set up environment
-  * Run template
-* Initialize sandbox and create web app (with 3 slots?) through the CLI
-* Knowledge unit
-* Exercise unit - deploy to Dev environment
-(Triggered by CI build)
-* Knowledge unit
-* Exercise unit - deploy to Test environment
-(Triggered by schedule)
-* Knowledge unit
-* Exercise unit - deploy to Preprod environment
-(Triggered manually)
+- A
+- B
+- Promote a build through the Dev, Test, and Pre-production stages.
+
+## Prerequisites
+
+TODO: Update
+
+The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+
+Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+
+:::row:::
+
+[!include[](../../shared/includes/meet-andy-short-col.md)]
+
+[!include[](../../shared/includes/meet-amita-short-col.md)]
+
+[!include[](../../shared/includes/meet-tim-short-col.md)]
+
+[!include[](../../shared/includes/meet-mara-short-col.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.

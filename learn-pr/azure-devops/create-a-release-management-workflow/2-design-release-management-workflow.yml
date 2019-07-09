@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-a-release-management-workflow.2-design-release-management-workflow
+title: Design a release management workflow
+metadata:
+  title: Design a release management workflow
+  description: Design a release management workflow
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-design-release-management-workflow.md)]
