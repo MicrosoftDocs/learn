@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.control-authentication-with-apim.4-secure-access-client-certs
+metadata:
+  title: Use client certificates to secure access to an API
+  description: In this unit, you will learn how to use client certificates to authenticate clients as they connect to an API in API Management.
+  ms.date: 07/08/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Use client certificates to secure access to an API
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-secure-access-client-certs.md)]
