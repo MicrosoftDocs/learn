@@ -6,7 +6,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     db -i $setupWorkingDirectory/seeddata.sql
     ```
 
-1. Remove the following code from *ContosoPets.Api.csproj*. Save your changes.
+1. Remove the following code from *:::no-loc text="ContosoPets.Api.csproj":::*. Save your changes.
 
     ```xml
     <ItemGroup>
@@ -16,7 +16,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 
     With the preceding change, the `OrdersController` class will compile the next time the project is built. `OrdersController` is the facade that will be used for testing data access via the `OrderService` class.
 
-1. In the `ConfigureServices` method of *Startup.cs*, replace the `// Add the OrderService DI registration code` comment with the following code. Save your changes.
+1. In the `ConfigureServices` method of *:::no-loc text="Startup.cs":::*, replace the `// Add the OrderService DI registration code` comment with the following code. Save your changes.
 
     ```csharp
     services.AddScoped<OrderService>();
@@ -24,7 +24,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 
     The preceding code registers `OrderService` as a scoped service in the DI system. The scoped lifetime was selected because `ContosoPetsContext` was also registered as scoped. Because `OrderService` relies on `ContosoPetsContext`, it shouldn't be registered with a shorter lifetime than `ContosoPetsContext`.
 
-1. In *Startup.cs*, replace the `// Add the ContosoPets.DataAccess.Services using statement` comment with the following code. Save your changes.
+1. In *:::no-loc text="Startup.cs":::*, replace the `// Add the ContosoPets.DataAccess.Services using statement` comment with the following code. Save your changes.
 
     ```csharp
     using ContosoPets.DataAccess.Services;
@@ -42,11 +42,11 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 
     * Restores the project's NuGet packages.
     * Builds the project code.
-    * Sets the hosting environment to *Development*.
+    * Sets the hosting environment to *:::no-loc text="Development":::*.
     * Hosts the web API with ASP.NET Core's Kestrel web server.
     * Displays the background task's process ID.
 
-    .NET Core emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the `dotnet run` output is redirected to a *ContosoPets.Api.log* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
+    .NET Core emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the `dotnet run` output is redirected to a *:::no-loc text="ContosoPets.Api.log":::* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
 
     The web API is hosted at both `http://localhost:5000` and `https://localhost:5001`. This module uses the secure URL beginning with `https`.
 
@@ -59,7 +59,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     curl -k -s https://localhost:5001/api/Orders/2 | jq
     ```
 
-    The preceding command sends an HTTP GET request to the `GetById` action of `OrdersController` in *ContosoPets.Api*. The order corresponding to ID 2 is displayed in JSON format.
+    The preceding command sends an HTTP GET request to the `GetById` action of `OrdersController` in *:::no-loc text="ContosoPets.Api":::*. The order corresponding to ID 2 is displayed in JSON format.
 
 1. Run the following command to test updating an order:
 
@@ -69,7 +69,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
         https://localhost:5001/api/Orders/2
     ```
 
-    The order from the previous step has shipped to the customer. The preceding code sends an HTTP PUT request to the `SetFulfilled` action of `OrdersController`. The `SetFulfilled` action calls `OrderService.SetFulfilled` in *ContosoPets.DataAccess*. An HTTP status code of 204 indicates success:
+    The order from the previous step has shipped to the customer. The preceding code sends an HTTP PUT request to the `SetFulfilled` action of `OrdersController`. The `SetFulfilled` action calls `OrderService.SetFulfilled` in *:::no-loc text="ContosoPets.DataAccess":::*. An HTTP status code of 204 indicates success:
 
     ```console
     HTTP/1.1 204 No Content
