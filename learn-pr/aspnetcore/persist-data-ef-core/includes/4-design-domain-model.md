@@ -208,7 +208,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
 1. Refresh file explorer.
 
-    A new *:::no-loc text="Migrations":::* directory appears in the *:::no-loc text="ContosoPets.DataAccess":::* project root. The directory contains a *:::no-loc text="\<timestamp\>_InitialCreate.cs":::* file describing database changes to be translated to a Data Definition Language (DDL) change script.
+    A new *:::no-loc text="Migrations":::* directory appears in the *:::no-loc text="ContosoPets.DataAccess":::* project root. The directory contains a *:::no-loc text="&lt;timestamp&gt;_InitialCreate.cs":::* file describing database changes to be translated to a Data Definition Language (DDL) change script.
 
 1. Run the following command to apply the *:::no-loc text="InitialCreate":::* migration:
 
