@@ -1,6 +1,6 @@
-In <xref:learn.azdo.create-release-pipeline?azure-portal=true>, you built a basic pipeline that deploys a web application to Azure App Service.
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you built a basic pipeline that deploys a web application to Azure App Service.
 
-**TODO**: What's wrong with that? ;)
+**TODO**: What's wrong with that? What are the problems? ;)
 
 In this module, you'll join the Tailspin web team as they design and build a release management workflow. _Release management_ involves moving a build artifact through the various stages, such as testing and staging, all the way out to a production environment that's available to your users.
 
