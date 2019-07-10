@@ -1,8 +1,45 @@
 Talk about CD and release pipeline.
 
-(Meet the team and explain the progress in previous learning paths - links to learning paths - Do we do this in the LP intro instead? IF so, then just do a "remember.. ")
+## Learning objectives
 
-(Is this the LP intro or the module intro?)
+In this module, you will:
+
+- Learn about continuous delivery
+- Create a release pipeline to deploy to an Azure AppService
+- Create a release dashboard to monitor the success of the deployments
+
+## Prerequisites
+
+If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) organization, go through the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
+
+You'll also need to set up a development environment on your Windows, macOS, or Linux system. You'll need:
+
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+
+[!include[](../../shared/includes/project-details-note.md)]
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+
+:::row:::
+
+[!include[](../../shared/includes/meet-andy-short-col.md)]
+
+[!include[](../../shared/includes/meet-amita-short-col.md)]
+
+[!include[](../../shared/includes/meet-mara-short-col.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+
+Roberta's notes:
 
 The Tailspin team is starting to feel better about their build process. They’ve got an automated version running on Azure Pipelines, which means the build environment is stable. Amita knows immediately when there’s an artifact for her to test. She’s finding fewer bugs because Andy and Mara have started to add unit tests and code quality tests. Life is looking good. 
 

@@ -1,8 +1,13 @@
-From ILT:
+Rename file
 
-On-Premises servers
-Cloud servers or Infrastructure as a Service (IaaS). For example Virtual machines or networks.
-Platform as a Service (PaaS) and Functions as a Service (FaaS). For example Web apps or storage accounts.
-Clusters.
+The team needs a way to monitor releases just like they did with builds. Talk about dashboards.
 
-Tim wants to deploy to VM
+Resources:
+
+[ILT Content Link](https://courses.microsoft.com/courses/course-v1:ELMS+AZ-400.3+2019_T1/course/?azure-portal=true)
+
+From this link, the relevant breadcrumbs are below:
+
+Course > Set Up a Release Management Workflow > Automate Inspection of Health > Automate Inspection of Health
+
+(Just talking about dashboard right now. The other techniques will be added in a later module.)

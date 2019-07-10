@@ -1,9 +1,29 @@
-From ILT:
 
-* Why Continuous Delivery
-* What is Release and what is deployment
+Notes:
 
------------
+The team plans the release workflow and decides on the tasks to add to the board (They will be in the new generated template) The tasks will correspond to the module exercises in this LP. First guess is about 10 tasks.
+
+The discuss CD and what it is. 
+
+They plan their release and deployment POC as an AppService to start with.
+
+Resources:
+
+[ILT Content Link](https://courses.microsoft.com/courses/course-v1:ELMS+AZ-400.3+2019_T1/course/?azure-portal=true)
+
+From this link, the relevant breadcrumbs are below:
+
+Course > Design a Release Strategy > Introduction to Continuous Delivery > Why Continuous Delivery
+
+Course > Design a Release Strategy > Introduction to Continuous Delivery > Releases and Deployments
+
+Course > Design a Release Strategy > Introduction to Continuous Delivery > What is a release and what is a deployment
+
+Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Set up a Release Management Workflow
+
+Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Definitions and Glossary
+
+
 ## What is continuous delivery?
 
 ## Why should I use continuous delivery?
@@ -12,7 +32,13 @@ From ILT:
 
 ## How can I plan my release strategy?
 
-## Notes - 7/2
+## What can I deploy to?
+
+Course > Set Up a Release Management Workflow > Provision and Configure Environments > Provision and Configure Different Target Environments
+
+----------------
+
+## Notes - 7/2 Ignore this - it is just ofr me to remember things.
 
 ILT references:
 

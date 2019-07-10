@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.6-different-target-environments
-title: Introduction
+title: Monitor deployment with an Azure DevOps release dashboard
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Monitor deployment with an Azure DevOps release dashboard
+  description: Monitor deployment with an Azure DevOps release dashboard
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

@@ -13,9 +13,9 @@ title: Create a release pipeline with Azure Pipelines
 summary: Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Learn about continuous delivery
+  - Create a release pipeline to deploy to an Azure AppService
+  - Create a release dashboard to monitor the success of the deployments
 prerequisites: |
   - An Azure DevOps account
   - Visual Studio Code
@@ -24,16 +24,16 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
-- beginner
+- intermediate
 roles:
 #TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
 #TODO: Create appropriate product labels
-- azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.create-release-pipeline.1-introduction
 - learn.azdo.create-release-pipeline.2-introduction-to-continuous-delivery
