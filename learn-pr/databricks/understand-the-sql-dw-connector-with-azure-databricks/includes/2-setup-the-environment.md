@@ -14,7 +14,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
    - _Resource group_: Select the resource group you're using for this module.
    - _Database name_: Enter a unique name. (Make sure you see a green check mark.)
 
-   ![Create a SQL data warehouse basics tab](../media/create-sql-data-warehouse-basic-tab.png)
+      ![Create a SQL data warehouse basics tab](../media/create-sql-data-warehouse-basic-tab.png)
 1. Select **Create New** in the Server field to open the **New Server** blade and enter the following:
 
      - _Server name_: Enter a unique name. (Make sure you see a green check mark.)
@@ -24,10 +24,10 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
      - _Allow Azure services to access server_: Select the check box.
      - Click **Select**.
    
-    ![Create a SQL data warehouse server](../media/create-sql-data-warehouse-server.png )
+       ![Create a SQL data warehouse server](../media/create-sql-data-warehouse-server.png )
 
-   > [!Note]
-   > Remember the user name and password for SQL Server. You'll need them.
+       > [!Note]
+       > Remember the user name and password for SQL Server. You'll need them.
 
 1. Click **Select Performance level** to open the Configure performance blade and select **Gen2 DW500c**.
 1. In the **Additional settings** tab, select **None** under data source.
