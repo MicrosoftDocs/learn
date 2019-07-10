@@ -108,7 +108,7 @@ Now, let's create a stored procedure that creates documents.
 
 Now, let's create a UDF in Data Explorer.
 
-1. In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Prodedure** to see **New UDF**.
+1. In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Procedure** to see **New UDF**.
 
     ![Screenshot showing the New UDF dropdown in the Data Explorer](../media/6-create-udf.png)
 
