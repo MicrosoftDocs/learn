@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-  zone_pivot: vm-os
+  zone_pivot_groups: vm-os
 
 durationInMinutes: 10
 content: |

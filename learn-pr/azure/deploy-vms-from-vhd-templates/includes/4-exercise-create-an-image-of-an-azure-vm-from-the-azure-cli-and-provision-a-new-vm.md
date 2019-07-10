@@ -48,7 +48,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone-pivot="linux"
+::: zone pivot="linux"
 
 1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine running nginx. When prompted for the Admin password, enter **Pa55w.rdDemo**:
 
