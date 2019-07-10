@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: deploy-vms-from-vhd-templates.exercise-create-an-image-of-an-azure-vm-from-the-azure-cli-and-provision-a-new-vm.
+uid: learn.deploy-vms-from-vhd-templates.exercise-create-an-image-of-an-azure-vm-from-the-azure-cli-and-provision-a-new-vm
 title: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.
 
 metadata:
