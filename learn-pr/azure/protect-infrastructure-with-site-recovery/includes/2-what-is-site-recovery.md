@@ -1,45 +1,44 @@
-**Azure Site Recovery (ASR)** can replicate workloads between a Azure regions, and can also be used to migrate VMs from other environvments, such as on-premises infrastructure, to Azure.  **ASR** is much more than just a backup tool for restoring infrastructure.
+Azure Site Recovery (Site Recovery) can duplicate your workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments, such as on-premises infrastructure, to Azure.  You'll see that Site Recovery can be used for much more than just a backing up and restoring infrastructure.
 
-Your first point of call is to understand the features of ASR, following your organizations recent outage from a hurricane. You need to identify the features required to failover existing Azure virtual machines (VMs) to a secondary region.
+Your organization recently suffered an outage caused by a hurricane. You'll identify the Site Recovery features required to fail over existing Azure virtual machines (VMs) to another secondary region.
 
-In this unit, you'll learn about the features of ASR and how they help towards preventing outages harnessing the power of the cloud.
+In this unit, you'll learn about these Site Recovery features to help prevent outages.
 
-## Azure Site Recovery Features
+## Site Recovery features
 
-For most businesses, a loss of service can be catastrophic, having systems unavailable can cause lost revenue or come with large financial penalities for breaching contractual arrangements.
+Site Recovery is a native disaster recovery as a service in Azure, designed to replicate workloads from a primary site or region, to a secondary site. If the primary site has an issue, Site Recovery can replicate protected VMs to another Azure region.
 
-ASR can contribute towards your BCDR plan, formal documents for disaster recovery and continuity, to keep your workloads running when unplanned (or planned) outages occur. There are two tools in Azure that are designed to assist with this, **Azure Site Recovery**, and **Azure Backup**.
-
-ASR is a native disaster recovery as a service (DRaaS) in Azure designed to replicate workloads from a primary site or region, to a secondary site. If the primary site has an issue ASR can automatically replicate protected VMs to another Azure region.
+For most businesses, a loss of service can be catastrophic. If systems aren't available, a company can lose revenue or suffer large financial penalities for breaching contractual arrangements.
 
 ## Azure virtual machine protection
 
-ASR will protect your VM instances in Azure automatically, once enabled, by mirroring the source VM infrastructure configuration and creating any required or associated resource groups, storage accounts, virtual networks and availability sets to a secondary Azure region. The resources created by ASR are appended with an asr suffix.
+Site Recovery will protect your VM instances in Azure automatically. Site Recovery mirrors the source VM configuration, and creates required or associated resource groups, storage accounts, virtual networks, and availability sets to a secondary Azure region. The resources created are appended with a Site Recovery suffix.
 
 ## Snapshots and recovery points
 
-ASR has customizable replication policies built in, these policies allow you to define the retention history of replication points and the frequency of snapshots. There are two types of snapshots available **App-consistent** and **Crash-consistent**. The default settings for a new replication policy are:
+Site Recovery has customizable replication policies that allow you to define the retention history of replication points, and the frequency of snapshots. The two types of snapshots available are **App-consistent** and **Crash-consistent**. The default settings for a new replication policy are:
 
-- Crash consistent recovery points every 5 minutes.
+- Crash-consistent recovery points every five minutes.
 - App-consistent recovery points every 60 minutes.
 
-The recovery points are retained for 24 hours by default, although this can be extended to 72 hours.
+The recovery points are kept for 24 hours by default, although this period can be extended to 72 hours.
 
-Crash-consistent recovery represents the data on-disk at the time the snapshot is taken. App-consistent recovery captures the same data as crash-consistent but also includes all in memory data and in process transactions.
+Crash-consistent recovery represents the data on-disk at the time the snapshot is taken. App-consistent recovery captures the same data as crash-consistent but also includes all in-memory data and in-process transactions. Including the in-memory data means Site Recovery can restore a VM and any running apps without any data loss.
 
 ## Replication to secondary region
 
-When replication is enabled for an Azure VM, the ASR mobility service extension gets installed. Once installed the extension will register the VM with ASR. This begins the process for continuous replication of the VM so any writes to the disk are immediately transferred to the cached storage account.
-Following ASR processes data stored in the cache and syncs it with either the target storage account or replicated managed disks. Once the data has been processed crash-consistent recovery points get created every 5 minutes, if app-consistent recovery points are enabled these will be generated on a schedule as set in the ASR replication policy.
+When replication is enabled for an Azure VM, the Site Recovery mobility service extension is installed. When the extension is installed, it will register the VM with Site Recovery. The process for continuous replication of the VM then begins, so any writes to the disk are immediately transferred to the cached storage account.
 
-## Accelerated Networking support
+Site Recovery processes data stored in the cache and syncs it with either the target storage account or replicated managed disks. After the data is processed, crash-consistent recovery points are created every five minutes. If app-consistent recovery points are enabled, they'll be generated on a schedule as set in the Site Recovery replication policy.
 
-ASR allows you to take advantage of accelerated networking for any Azure virtual machines that have been failed over to a different Azure region.  Accelerated Networking will enable single root I/O virtualization on a VM, this vastly improves the network performance. The high performance is achieved by bypassing the host from the datapath. This method reduces latency and CPU utilization allowing the most demanding workloads to use it.
+## Accelerated networking support
 
-## Disaster recovery drills
+Site Recovery allows you to use accelerated networking for any Azure virtual machines that have been failed over to a different Azure region.  Accelerated networking will enable single root I/O virtualization on a VM, this vastly improves network performance. High performance is achieved by bypassing the host from the data path. This method reduces latency and CPU use, allowing the most demanding workloads to handle it.
 
-ASR allows you to perform disaster recovery drills, once all pre-requisite configuration tasks are complete. Running a DR drill which enable you to validate the replication strategy for your environment without losing data, having downtime or comprimising your production environment. Drills do not effect your production environment in any way.
+## Disaster recovery (DR) drills
+
+Site Recovery allows you to do disaster recovery drills, after all pre-requisite configuration tasks are complete. Running a DR drill enables you to validate the replication strategy for your environment without losing data, having downtime, or compromising your production environment. Drills don't affect your production environment, and are great way to test that you have correctly configured everything.
 
 ## Flexible failover and failback
 
-ASR Failover and failback can be initiated with a single click using the Azure Portal. When running a failover you simply need to select a Recovery Point and then let ASR take care of the failover for you. Failback, also has a simple process to flow. Simply select the desired failover, only failover committed VMs, clean it up and then select to failover back to the primary region using the chosen recovery point.
+Site Recovery failover and failback can be easily started using the Azure portal. When running a failover, you select a recovery point then let Site Recovery take care of the failover. Failback is simple a reverse of this process. Select the failover you want, clean it up, and then select to fail over back to the primary region using the chosen recovery point.

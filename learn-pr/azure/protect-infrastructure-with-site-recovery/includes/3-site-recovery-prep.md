@@ -40,7 +40,6 @@ Run the following commands in the Cloud Shell. This will create an Azure Virtual
     > [!NOTE]
     > This can take up to ten minutes to complete, continue with this module while the VM is created.
 
-
 ## Disaster recovery preparation with Azure Site Recovery
 
 ASR is an important tool in Azure for protecting your infrastructure from outage. The service will manage and orchestrate your DR process for Azure VMs and also on-premises machines. However, to enable this there are several components you need to configure, such as:

@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "windowsOSVersion": {
+            "value": "2016-Datacenter"
+        },
+        "winVmSize": {
+            "value": "Standard_DS3_v2"
+        },
+        "winVmUser": {
+            "value": "mslearnadmin"
+        },
+        "winVmPassword": {
+            "value": "M5learnAdm!n"
+        },
+        "winVmDnsPrefix": {
+            "value": "mslearn"
+        },
+        "deployVpnGateway": {
+            "value": "Yes"
+        },
+        "gatewaySku": {
+            "value": "VpnGw1"
+        },
+        "location": {
+            "value": "westus"
+        }
+    }
+}
