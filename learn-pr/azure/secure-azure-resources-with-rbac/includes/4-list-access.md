@@ -10,8 +10,8 @@ Follow these steps to see what roles are currently assigned to you.
 
 1. Launch the lab experience.
 1. At the top of the instructions for the lab, select the **Resources** tab.
-1. Look for an Admin user name like **LabAdmin-_XXXXXXX_** and the password.
-1. Sign in to the lab experience by using the lab Admin user name and password.
+1. Look for the Admin username like **LabAdmin-_XXXXXXX_** and the password.
+1. Sign in to the lab experience by using the lab Admin username and password.
 1. In the upper-right corner of the Azure portal, click your username to open the menu.
 1. Make sure you are signed in as **LabAdmin-_XXXXXXX_**. If not, sign out and sign in using the username and password on the **Resources** tab.
 
