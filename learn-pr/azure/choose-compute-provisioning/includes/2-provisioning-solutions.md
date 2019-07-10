@@ -1,14 +1,19 @@
-There are several solutions available to provision compute on Azure. VM extensions provide post-deployment configuration, automation, software installation, or any other configuration or management task. There are few tools available to help you systemize and automate VM deployment. 
+There are several solutions available to provision compute resources on Azure. Virtual Machine (VM) extensions provide post-deployment configuration, automation, software installation, or any other configuration or management task. There are a few tools available to help you systemize and automate VM deployment.
+
+Suppose, in your organization, that you have identified the need to scale out to many VMs for several different workloads. You know that, to manually create and manage these resources, would require much administration time and become a repetitive task. You also expect that, when administrators have to regularly perform the same task, mistakes may creep in. So you want to identify a way to automate the management of compute resources.
 
 In this unit, you'll explore some of the solutions that are available.
 
 ## Custom scripts
 
-The Custom Script Extension downloads and runs scripts on Azure VMs. This is useful for post deployment configuration, software installation, or any other configuration or management tasks.
+The Custom Script Extension downloads and runs scripts on Azure VMs. This tool is useful for post deployment configuration, software installation, or any other configuration or management task.
 
-You can have a PowerShell script that is located anywhere, from your local file server to GitHub, Azure Storage, and so on.  The extension looks for the script that should be run on the VM. The script is downloaded and then executed on the target VM to apply the changes introduced by the script. A Custom Script Extension can be added to a VM through Azure Resource Manager Templates, PowerShell or Azure CLI.  Note that if your configuration or management task requires a restart, the extension will not continue after a restart.
+You can have a PowerShell script that is located anywhere, from your local file server to GitHub, Azure Storage, and so on.  The extension looks for the script that should be run on the VM. The script is downloaded and then executed on the target VM to apply the changes introduced by the script. A Custom Script Extension can be added to a VM through Azure Resource Manager Templates, PowerShell, or Azure CLI. 
 
-Below is a Custom Script Extension configuration which can be added to an  Azure Resource Manager Template for a VM:
+> [!NOTE]
+> If your configuration or management task requires a restart, the extension will not continue after a restart.
+
+Below is a Custom Script Extension configuration, which can be added to an  Azure Resource Manager Template for a VM:
 
 ```JSON
 {
@@ -37,11 +42,11 @@ Below is a Custom Script Extension configuration which can be added to an  Azure
 
 ## DSC extensions
 
-Desired State Configuration Extensions make it possible for you to easily deal with the configurations on your infrastructure that may require more complex installation procedures, for example reboots. The extension uploads and applies a PowerShell DSC Configuration on an Azure VM.
+Desired State Configuration Extensions make it possible for you to deal easily with the configurations on your infrastructure that may require more complex installation procedures, for example reboots. The extension uploads and applies a PowerShell DSC Configuration on an Azure VM.
 
-Through the use of a DSC extension handler which you can define for a VM, you can execute configurations.  These configurations for your machines can be located anywhere from Azure blob storage, to your local file storage.  The DSC extension handler then grabs the configuration and executes the configuration on the target VM.   If reboots are necessary for this configuration, DSC continues to executes the configuration after the reboots are completed.
+By using a DSC extension handler, which you can define for a VM, you can execute configurations. These configurations for your machines can be located anywhere from Azure blob storage to your local file storage. The DSC extension handler grabs the configuration and executes the configuration on the target VM. If reboots are necessary for this configuration, DSC continues to execute the configuration after the reboots are completed.
 
-Below is an example defining a DSC extension handler for a VM in an Azure Resource Manager template pointing to a configuration in blob storage:
+Below is an example, which defines a DSC extension handler for a VM in an Azure Resource Manager template pointing to a configuration in blob storage:
 
 ```powershell
 {
@@ -73,11 +78,11 @@ Below is an example defining a DSC extension handler for a VM in an Azure Resour
 
 ## Chef
 
-Chef is high scale, and makes it possible for you to automate the deployment of your infrastructure and fit it into your workflow. Whether on-premises or in the cloud.
+Chef is high scale, and makes it possible for you to automate the deployment of your infrastructure and fit it into your workflow, whether on-premises or in the cloud.
 
-The Chef VM Extension enables Chef on VMs.  Chef works by  using a Chef server to manage your recipes, which are essentially commands to run to achieve a configuration.  The Chef Extension then can be used to apply those recipes to the target machine(s).
+The Chef VM Extension enables Chef on Azure VMs. Chef works by using a Chef server to manage your recipes, which are essentially commands to run to achieve a configuration. You can use the Chef Extension to apply those recipes to the target machines.
 
-Below is an example defining a Chef Extension for a VM in an Azure Resource Manager template, which points to a chef server, and points to a recipe to run on the VM to put it in the desired state.  
+Below is an example that defines a Chef Extension for a VM in an Azure Resource Manager template, which points to a chef server, and points to a recipe to run on the VM to put it in the desired state:
 
 ```json
 {
@@ -125,14 +130,13 @@ end
 service 'w3svc' do
      action [ :enable, :start ]
 end
-
 ```
 
-## **Terraform**
+## Terraform
 
-Terraform is an open source infrastructure as code software tool that is particularly useful for when you have infrastructures across different cloud providers. Terraform makes it possible for you to create infrastructures using Hashicorp Configuration Language (HCL). This is created by Hashicorp. Alternately you can also use JSON (JavaScript Object Notation).  Terraform makes it possible to create easy to read script templates that define what type of resources to create, regardless of the provider.  You can build environments on entirely different providers. This way you can ensure your environments are virtually identical across cloud providers.   You install Terraform, either locally or on Azure, and then use it to execute your Terraform script.
+Terraform is an open source infrastructure-as-code software tool that is useful when you have infrastructures across different cloud providers. Terraform makes it possible for you to create infrastructures using Hashicorp Configuration Language (HCL). This language is created by Hashicorp. Alternately you can also use JSON (JavaScript Object Notation).  Terraform makes it possible to create easy-to-read script templates that define what type of resources to create, regardless of the provider.  You can build environments on entirely different providers. This way you can ensure your environments are virtually identical across cloud providers. You install Terraform, either locally or on Azure, and then use it to execute your Terraform script.
 
-Below is an example of a Terraform script that can be used by Terraform to provision a VM  on Azure:
+Below is an example of a Terraform script that provisions a VM on Azure:
 
 ```HCL
 # Configure the Microsoft Azure as a provider
@@ -198,7 +202,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
 }
 ```
 
-Terraform simply needs to you run a command like the one below to execute this script and create the VM.
+To execute this script, execute this command:
 
 ```
 terraform apply
@@ -206,15 +210,15 @@ terraform apply
 
 ## Azure automation state configuration
 
-Azure Automation State Configuration is the service you would use to make sure your DSC configurations are managed properly and deployed across your nodes (machines). Azure Automation State Configuration works with both Azure based virtual machines and machines on-premises network, or other cloud providers. Through an intuitive Azure Portal process, you can apply configurations to all of your nodes.
+Azure Automation State Configuration is the service you would use to make sure your DSC configurations are managed properly and deployed across your nodes (VMs). Azure Automation State Configuration works with both Azure VMs and machines on-premises, or in other cloud providers. Through an intuitive Azure portal process, you can apply configurations to all of your nodes.
 
-Azure Automation State Configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically, and on top of this also ensures that each machine reports back on what its current state is and show whether it has achieved the desired state. This information can then be sent for reporting and used for further decision making.  Azure Automation State Configuration can be interacted with through the Azure Portal or through Azure PowerShell.
+Azure Automation State Configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically, and also ensures that each machine reports back on what its current state is and show whether it has achieved the desired state. This information can then be sent for reporting and used for further decision making. You can interact with Azure Automation State Configuration through the Azure portal or through Azure PowerShell.
 
-## Azure resource manager templates
+## Azure Resource Manager templates
 
-Azure Resource Manager templates are JSON files that allow you to define the Azure resources you want to provision in Azure through object notation. You can define an entire infrastructure this way.  They are fairly easy to read and work with.
+Azure Resource Manager templates are JSON files that allow you to define the Azure resources you want to provision in Azure through object notation. You can define an entire infrastructure this way. They are easy to read and work with.
 
- Azure Resource Manager templates allow you to make sure your deployments are consistent. Ensuring for example, that all VMs you create have the same properties. And as we have seen above, you can even embed extensions into VMs in a template to make sure they are configured exactly the same. You can deploy any Azure Resource Manager template through Azure PowerShell, Azure CLI, or Azure Portal.  Azure Resource Manager templates can be tested before they are deployed. This way you can ensure your template is something Azure can deploy before attempting an actual deployment.
+Azure Resource Manager templates allow you to make sure your deployments are consistent. Ensuring, for example, that all VMs you create have the same properties. And as we have seen above, you can even embed extensions into VMs in a template to make sure they are configured exactly the same. You can deploy any Azure Resource Manager template through Azure PowerShell, Azure CLI, or Azure portal. Azure Resource Manager templates can be tested before they are deployed. This way you can ensure your template is something Azure can deploy before attempting an actual deployment.
 
 Below is an example of how a virtual machine would be defined inside of an Azure Resource Manager template:
 
