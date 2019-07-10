@@ -1,33 +1,41 @@
-## Notes - 7/2
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you built a basic pipeline that deploys a web application to Azure App Service.
 
-ILT references:
+**TODO**: What's wrong with that? What are the problems? ;)
 
-* Release Strategy Recommendations > Release Strategy - Introduction and Overview
-* Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
-  * Release Strategy Recommendations > Demo - Selecting your Delivery and Deployment Cadence
-  * Release Strategy Recommendations > Considerations for Release Approvals
-  * Release Strategy Recommendations > Demo - Setting up Manual Approval
-  * Release Strategy Recommendations > Demo - Setting up a Release Gate
-  * Building a High Quality Release Pipeline > Building a High-Quality Release pipeline
-  * Building a High Quality Release Pipeline > Using release gates as quality gate (NOTE: Use code coverage in the exercise)
-  * Building a High Quality Release Pipeline > Release Notes and Documentation
-* Choosing the Right Release Management Tool > Overview Release Management Tools (NOTE: We weren't sure of the value here?)
-  * Choosing the Right Release Management Tool > Release Management Tools Comparison
-* Automate Inspection of Health > Automate Inspection of Health (NOTE: This is more about feedback; Release gates and Events might be workflow)
-  * Automate Inspection of Health > Release gates
-* Implement Blue Green Deployment > Deployment Slots
+In this module, you'll join the Tailspin web team as they design and build a release management workflow. _Release management_ involves moving a build artifact through the various stages, such as testing and staging, all the way out to a production environment that's available to your users.
 
-## Exercises
+A good release management workflow enables you to release more frequently and more consistently. In practice, you'll want to define a process that maps to your team's needs. Here, you'll define a basic workflow that deploys the _Space Game_ web application to a development, test, and pre-production environment, each running on App Service.
 
-* Set up environment
-  * Run template
-* Initialize sandbox and create web app (with 3 slots?) through the CLI
-* Knowledge unit
-* Exercise unit - deploy to Dev environment
-(Triggered by CI build)
-* Knowledge unit
-* Exercise unit - deploy to Test environment
-(Triggered by schedule)
-* Knowledge unit
-* Exercise unit - deploy to Preprod environment
-(Triggered manually)
+## Learning objectives
+
+In this module, you will:
+
+- Compare the various tools and methods you can use to define a release management workflow
+- Identify what makes a high-quality release pipeline
+- Promote a build through the development, test, and pre-production stages
+
+## Prerequisites
+
+TODO: Update
+
+The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+
+Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+
+:::row:::
+
+[!include[](../../shared/includes/meet-andy-short-col.md)]
+
+[!include[](../../shared/includes/meet-amita-short-col.md)]
+
+[!include[](../../shared/includes/meet-tim-short-col.md)]
+
+[!include[](../../shared/includes/meet-mara-short-col.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.

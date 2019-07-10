@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-a-release-management-workflow.4-deploy-dev
+title: Exercise - Deploy to the Dev environment
+metadata:
+  title: Exercise - Deploy to the Dev environment
+  description: Deploy to the Dev environment
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/4-deploy-dev.md)]
