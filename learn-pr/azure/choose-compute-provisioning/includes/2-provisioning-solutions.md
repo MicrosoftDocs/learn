@@ -79,39 +79,39 @@ The Chef VM Extension enables Chef on VMs.  Chef works by  using a Chef server t
 
 Below is an example defining a Chef Extension for a VM in an Azure Resource Manager template, which points to a chef server, and points to a recipe to run on the VM to put it in the desired state.  
 
-     ```json
-    {
-      "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(variables('vmName'),'/', variables('vmExtensionName'))]",
-      "apiVersion": "2015-05-01-preview",
-      "location": "[parameters('location')]",
-      "dependsOn": [
-        "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
-      ],
-      "properties": {
-        "publisher": "Chef.Bootstrap.WindowsAzure",
-        "type": "LinuxChefClient",
-        "typeHandlerVersion": "1210.12",
-        "settings": {
-          "bootstrap_options": {
-            "chef_node_name": "chef_node_name",
-            "chef_server_url": "chef_server_url",
-            "validation_client_name": "validation_client_name"
-          },
-          "runlist": "recipe[your-recipe]",
-          "validation_key_format": "validation_key_format",
-          "chef_service_interval": "chef_service_interval",
-          "bootstrap_version": "bootstrap_version",
-          "bootstrap_channel": "bootstrap_channel",
-          "daemon": "service"
-        },
-        "protectedSettings": {
-          "validation_key": "validation_key",
-          "secret": "secret"
-        }
-      }
+```json
+{
+  "type": "Microsoft.Compute/virtualMachines/extensions",
+  "name": "[concat(variables('vmName'),'/', variables('vmExtensionName'))]",
+  "apiVersion": "2015-05-01-preview",
+  "location": "[parameters('location')]",
+  "dependsOn": [
+    "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+  ],
+  "properties": {
+    "publisher": "Chef.Bootstrap.WindowsAzure",
+    "type": "LinuxChefClient",
+    "typeHandlerVersion": "1210.12",
+    "settings": {
+      "bootstrap_options": {
+        "chef_node_name": "chef_node_name",
+        "chef_server_url": "chef_server_url",
+        "validation_client_name": "validation_client_name"
+      },
+      "runlist": "recipe[your-recipe]",
+      "validation_key_format": "validation_key_format",
+      "chef_service_interval": "chef_service_interval",
+      "bootstrap_version": "bootstrap_version",
+      "bootstrap_channel": "bootstrap_channel",
+      "daemon": "service"
+    },
+    "protectedSettings": {
+      "validation_key": "validation_key",
+      "secret": "secret"
     }
-     ```
+  }
+}
+```
 
 A recipe might look like this:
 
@@ -219,55 +219,55 @@ Azure Resource Manager templates are JSON files that allow you to define the Azu
 Below is an example of how a virtual machine would be defined inside of an Azure Resource Manager template:
 
 ```json
-    {
-      "type": "Microsoft.Compute/virtualMachines",
-      "apiVersion": "2018-10-01",
-      "name": "[variables('vmName')]",
-      "location": "[parameters('location')]",
-      "dependsOn": [
-        "[resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
-        "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
-      ],
-      "properties": {
-        "hardwareProfile": {
-          "vmSize": "Standard_A2"
-        },
-        "osProfile": {
-          "computerName": "[variables('vmName')]",
-          "adminUsername": "[parameters('adminUsername')]",
-          "adminPassword": "[parameters('adminPassword')]"
-        },
-        "storageProfile": {
-          "imageReference": {
-            "publisher": "MicrosoftWindowsServer",
-            "offer": "WindowsServer",
-            "sku": "[parameters('windowsOSVersion')]",
-            "version": "latest"
-          },
-          "osDisk": {
-            "createOption": "FromImage"
-          },
-          "dataDisks": [
-            {
-              "diskSizeGB": 1023,
-              "lun": 0,
-              "createOption": "Empty"
-            }
-          ]
-        },
-        "networkProfile": {
-          "networkInterfaces": [
-            {
-              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"
-            }
-          ]
-        },
-        "diagnosticsProfile": {
-          "bootDiagnostics": {
-            "enabled": true,
-            "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))).primaryEndpoints.blob]"
-          }
+{
+  "type": "Microsoft.Compute/virtualMachines",
+  "apiVersion": "2018-10-01",
+  "name": "[variables('vmName')]",
+  "location": "[parameters('location')]",
+  "dependsOn": [
+    "[resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
+    "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
+  ],
+  "properties": {
+    "hardwareProfile": {
+      "vmSize": "Standard_A2"
+    },
+    "osProfile": {
+      "computerName": "[variables('vmName')]",
+      "adminUsername": "[parameters('adminUsername')]",
+      "adminPassword": "[parameters('adminPassword')]"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "MicrosoftWindowsServer",
+        "offer": "WindowsServer",
+        "sku": "[parameters('windowsOSVersion')]",
+        "version": "latest"
+      },
+      "osDisk": {
+        "createOption": "FromImage"
+      },
+      "dataDisks": [
+        {
+          "diskSizeGB": 1023,
+          "lun": 0,
+          "createOption": "Empty"
         }
+      ]
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))).primaryEndpoints.blob]"
       }
     }
+  }
+}
 ```

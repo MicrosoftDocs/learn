@@ -25,17 +25,17 @@ Here are the steps that would allow you to create a copy of the current infrastr
 1. In order to create a new environment in a different region, all you have to do is edit the (JSON) template you've just downloaded and make necessary changes to properties, to make sure they are reflective of the new region and new infrastructure. You can create a new resource group for the new region at a later stage.  As an example, below we have looked at a virtual machine resource in the template and changed its location to Western Europe.
 
     ```json
-            {
-                "type": "Microsoft.Compute/virtualMachines",
-                "apiVersion": "2018-10-01",
-                "name": "[parameters('virtualMachines_backEndVM_name')]",
-                "location": "westeurope",
-                "dependsOn": [
-                    "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_backendvm672_name'))]"
-                ],
-                "properties": { ...
-                }
-            }
+    {
+        "type": "Microsoft.Compute/virtualMachines",
+        "apiVersion": "2018-10-01",
+        "name": "[parameters('virtualMachines_backEndVM_name')]",
+        "location": "westeurope",
+        "dependsOn": [
+            "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_backendvm672_name'))]"
+        ],
+        "properties": { ...
+        }
+    }
     ```
 
 1. Once you've changed all of the necessary values, import the file into Azure with the Azure portal. You can do this by selecting **Create resource**, then searching for and selecting *Template Deployment* in the search field.
