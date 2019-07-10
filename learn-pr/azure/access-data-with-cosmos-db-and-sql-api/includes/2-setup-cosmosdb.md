@@ -8,9 +8,9 @@ We'll start by creating an environment variable to hold the Azure Cosmos DB acco
 
 Use the following command to generate a random database account name, by using the Bash $RANDOM variable, and store it in an environment variable to use later. 
 
-    ```azurecli
-    export NAME=cosmos$RANDOM
-    ```
+```azurecli
+export NAME=cosmos$RANDOM
+```
 
 ### Create the Azure Cosmos DB account
 
