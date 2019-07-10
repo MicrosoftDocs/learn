@@ -18,22 +18,22 @@
 ## Metadata
 
 - [X] Title follows guidelines
-- [ ] Description follows guidelines
-- [ ] Summary follows guidelines
+- [X] Description follows guidelines
+- [X] Summary follows guidelines
 - [ ] Objectives follow guidelines
-- [ ] Has prerequisites
+- [X] Has prerequisites
 
 ## Introduction
 
-- [ ] Uses a scenario 
-- [ ] Is 90-180 words
-- [ ] Lists objectives
-- [ ] Lists prerequisites
+- [X] Uses a scenario 
+- [X] Is 90-180 words
+- [X] Lists objectives
+- [X] Lists prerequisites
 
 ## Learning content
 
-- [ ] Between 5 and 12 minutes per unit
-- [ ] Split into logical chunks
+- [X] Between 5 and 12 minutes per unit
+- [X] Split into logical chunks
 - [ ] Does not contain procedural steps
 
 ## Exercises
@@ -51,6 +51,6 @@
 
 ## Summary
 
-- [ ] Between 90 and 180 words
-- [ ] Gives a high level summary (now that you understand x, you can do y ....)
+- [X] Between 90 and 180 words
+- [X] Gives a high level summary (now that you understand x, you can do y ....)
 - [ ] Includes cleanup instructions when nessesary
