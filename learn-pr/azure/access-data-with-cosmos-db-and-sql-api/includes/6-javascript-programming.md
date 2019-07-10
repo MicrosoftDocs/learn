@@ -12,7 +12,7 @@ Let's start by creating a new stored procedure in the portal. The portal automat
 
 1. Select **Execute** to run the _sample_ stored procedure. This will open a sidebar on the right allowing you to supply parameters to the stored procedure.
 
-1. In the **Input parameters** pane, use the following values.
+1. In the **Input parameters** pane, use the following value for **Partition key value**.
    - **Type**: _String_
    - **Value**: _33218896_
 
@@ -79,7 +79,7 @@ Now, let's create a stored procedure that creates documents.
     ```
 1. Select **Execute** to run the stored procedure.
 
-1. In the **Input parameters** pane, use the following values.
+1. In the **Input parameters** pane, use the following value for **Partition key value**.
    - **Type**: _String_
    - **Value**: _33218898_
 
@@ -139,4 +139,4 @@ Now, let's create a UDF in Data Explorer.
 
 1. Select **Execute Query** to run the updated query using your new UDF.
 
-![Screenshot showing the results of the UDF in the Data Explorer window](../media/6-run-the-udf.png)
+   ![Screenshot showing the results of the UDF in the Data Explorer window](../media/6-run-the-udf.png)
