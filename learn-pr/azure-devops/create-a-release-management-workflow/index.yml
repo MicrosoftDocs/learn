@@ -13,9 +13,9 @@ title: Create a release management workflow
 summary: Create a release management workflow
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Compare the various tools and methods you can use to define a release management workflow
+  - Identify what makes a high-quality release pipeline
+  - Promote a build through the development, test, and pre-production stages
 prerequisites: |
   - An Azure DevOps account
   - Visual Studio Code
@@ -24,16 +24,15 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
 - azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.create-a-release-management-workflow.1-introduction
 - learn.azdo.create-a-release-management-workflow.2-design-release-management-workflow

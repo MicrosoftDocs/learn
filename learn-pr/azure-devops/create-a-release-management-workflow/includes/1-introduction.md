@@ -1,18 +1,18 @@
-NOTES:
+In <xref:learn.azdo.create-release-pipeline?azure-portal=true>, you built a basic pipeline that deploys a web application to Azure App Service.
 
-* This is the second module in LP3.
-* In the first module, you built a basic CD pipeline that deploys the application to AppService.
-* Here, you'll extend the pipeline to deploy the application to multiple environments so that it can be built, tested, and validated through the various development stages.
-* Although you can design a release management workflow that works for you and your team, here you'll deploy to development, test, and pre-production environments, each running on AppService.
-* FOR JUDY: **Implement Blue Green Deployment > Deployment Slots** defines deployment slots. Add this to M1?
+**TODO**: What's wrong with that? ;)
+
+In this module, you'll join the Tailspin web team as they design and build a release management workflow. _Release management_ involves moving a build artifact through the various stages, such as testing and staging, all the way out to a production environment that's available to your users.
+
+A good release management workflow enables you to release more frequently and more consistently. In practice, you'll want to define a process that maps to your team's needs. Here, you'll define a basic workflow that deploys the _Space Game_ web application to a development, test, and pre-production environment, each running on App Service.
 
 ## Learning objectives
 
 In this module, you will:
 
-- A
-- B
-- Promote a build through the Dev, Test, and Pre-production stages.
+- Compare the various tools and methods you can use to define a release management workflow
+- Identify what makes a high-quality release pipeline
+- Promote a build through the development, test, and pre-production stages
 
 ## Prerequisites
 
