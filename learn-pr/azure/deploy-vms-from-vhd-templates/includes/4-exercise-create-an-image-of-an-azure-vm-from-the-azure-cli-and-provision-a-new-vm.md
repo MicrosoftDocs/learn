@@ -44,7 +44,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine (MyWindowsVM):
 
-    ![Screenshot of the web page from the virtual machinel](../media/4-original-vm-web-page.png)
+    ![Screenshot of the web page from the virtual machine](../media/4-original-vm-web-page.png)
 
 ::: zone-end
 
@@ -84,7 +84,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine (MyUbuntuVM):
 
-    ![Screenshot of the web page from the virtual machinel](../media/4-original-ubuntu-web-page.png)
+    ![Screenshot of the web page from the virtual machine](../media/4-original-ubuntu-web-page.png)
 
 ::: zone-end
 
@@ -216,9 +216,8 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ## Create a virtual machine using the new image
 
-1. Run the following command to create a new virtual machine using the **MyVMImage** image:
+1. Run the following command to create a new virtual machine using the **MyVMImage** image. If you're creating a virtual machine based on a Windows image, you'll be prompted for the Admin password. In this case, enter **Pa55w.rdDemo**:
 
-START HERE - ADMIN PASSWORD
     ```azurecli
     az vm create \
       --resource-group <rgn>[Sandbox reource group name]</rgn> \
@@ -228,44 +227,22 @@ START HERE - ADMIN PASSWORD
       --generate-ssh-keys
     ```
 
-1. OPEN PORT 80
-1. TEST THE IMAGE
+1. Run the following command to open port 80 on the new virtual machine:
 
+    ```azurecli
+    az vm open-port \
+        --name MyVMFromIMage \
+        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --port 80
+    ````
 
-az vm create \
-  --resource-group myResourceGroup \
-  --name myVMfromImage \
-  --image myImage \
-  --admin-username azureuser \
-  --generate-ssh-keys
+1. Run the following command to find the public IP address of the new virtual machine:
 
-### Windows VM
+    ```azurecli
+    az vm list-ip-addresses \
+        --resource-group <rgn>[Sandbox reource group name]</rgn> \
+        --name MyVMFromImage \
+        --output table
+    ```
 
-
-- Get the virtual machine
-
-        $vm = Get-AzVM -Name $vmName -ResourceGroupName $rgName
-
-- Create the image configuration
-
-        $image = New-AzImageConfig -Location $location -SourceVirtualMachineId $vm.Id
-
-- Create the image
-
-        New-AzImage -Image $image -ImageName $imageName -ResourceGroupName $rgName
-
-The below command creates a VM named myVMFromImagefrom the image named myImage:
-
-
-```azurepowershell
-New-AzVm `
-    -ResourceGroupName "myResourceGroup" `
-    -Name "myVMfromImage" `
-	-ImageName "myImage" `
-    -Location "East US" `
-    -VirtualNetworkName "myImageVnet" `
-    -SubnetName "myImageSubnet" `
-    -SecurityGroupName "myImageNSG" `
-    -PublicIpAddressName "myImagePIP" `
-    -OpenPorts 3389
-```
+1. In the web browser, navigate to the public IP address of the new virtual machine. Verify that a web page displaying the name of the virtual machine from which the image was built (MyWindowsVM or MyUbuntuVM).
