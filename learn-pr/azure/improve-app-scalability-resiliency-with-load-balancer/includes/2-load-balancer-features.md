@@ -1,6 +1,6 @@
 With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services. That way, you can scale the app to larger sizes than a single virtual machine could support and you ensure that users get service even when a virtual machine has failed.
 
-In your health care organization, you can expect large user demand. It's of vital importance to each user that they can book an appointment, even at times of peak demand or when virtual machines have failed.
+In your health care organization, you can expect large user demand. It's of vital importance to each user that they can book an appointment, even at times of peak demand or when virtual machines have failed. If you use multiple virtual servers for your front-end and a load balancer to distribute traffic between them, you achieve a high capacity, because all the virtual servers collaborate to satisfy requests. You all improve resilience, because the load balancer can automatically route traffic away when a virtual server fails.
 
 Here, you will learn how the features of Load Balancer help you to create robust app architectures.
 
@@ -22,7 +22,7 @@ Azure Load Balancer supports inbound and outbound scenarios, provides low latenc
 
 Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements. 
 
-To acheive high availability with load balancer, you can choose to use availability sets and availability zones to ensure that virtual machines are always available:
+To achieve high availability with load balancer, you can choose to use availability sets and availability zones to ensure that virtual machines are always available:
 
 | Configuration | Service Level Agreement (SLA) | Information |
 | ------------- | --- | ----------- |
@@ -32,7 +32,7 @@ To acheive high availability with load balancer, you can choose to use availabil
 
 ### Availability sets
 
-An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your virtual machines are affected – your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
+An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your virtual machines is affected – your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
 
 <!-- TODO: Create an image similar to the one below, taken from: https://thebackroomtech.com/wp-content/uploads/azure-availability-sets.png -->
 

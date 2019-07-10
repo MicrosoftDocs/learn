@@ -6,15 +6,14 @@ A public load balancer maps the public IP address and port number of incoming tr
 
 By default, Azure Load Balancer distributes network traffic equally among virtual machine instances. The following distribution modes are also possible if a different behavior is required:
 
-| Distribution Mode | Details |
-|-------------------|---------|
-| **Five-tuple hash** | The default distribution mode for Azure Load Balancer is a Five-tuple hash. The tuple is composed of the source IP, source port, destination IP, destination port, and protocol type. The load is distributed according to the health and availability of the virtual machines. |
-| **Source IP affinity** | This distribution mode is also known as session affinity, client IP affinity, or sticky sessions. The mode uses a 2-tuple – source IP and destination IP – or 3-tuple – source IP, destination IP, and protocol type – hash to map traffic to the available servers. The hash provides a sticky session with the virtual machine behind the load balancer. |
-| | |
+- **Five-tuple hash.** The default distribution mode for Azure Load Balancer is a five-tuple hash. The tuple is composed of the source IP, source port, destination IP, destination port, and protocol type. Because the source port is included in the hash, and the source port changes for each session, clients may be directed to a different virtual machine for each session.
+- **Source IP affinity.** This distribution mode is also known as session affinity or client IP affinity. To map traffic to the available servers, the mode uses a 2-tuple hash (from the source IP address and destination IP address) or 3-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a given client are always sent to the same virtual machine behind the load balancer. 
 
-<!-- TODO: Create an image similar to the one below, taken from: https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/session-stickiness-diagram.jpg - Replace sticky session headers with the headers from the above table. -->
+<!-- TODO: Create images similar to the two below, taken from: https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-distribution-mode -->
 
-![Overview of Availability Zones](../media/2-session-stickiness-diagram.jpg)
+![Hash-based distribution](../media/3-load-balancer-distribution.png)
+
+![Session Affinity](../media/3-load-balancer-session-affinity.png)
 
 ## Choose a distribution mode
 
@@ -30,19 +29,18 @@ Set-AzLoadBalancer -LoadBalancer $lb
 
 To add session persistence through the Azure portal:
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. In the left menu, select **All Resources**, and then select your load balancer.
-1. Under **Load-balancing rules**, select **myHTTPRule**.
+1. In the Azure portal, open the load balancer resource.
+1. Edit the relevent of the **Load-balancing rules**.
 1. Change the **Session persistence** value to **Client IP**
 
 ![Configuring IP affinity](../media/4-screenshot-session-persistence.png)
 
-### Problems with session persistence
+## Azure Load Balancer and Remote Desktop Gateway
 
-Ensure developers understand that, by having this requirement, the load balancer can't be as effective. It's better to create a stateless solution where state is managed in a separate shared resource, away from the virtual machine. If you decide to use sticky sessions, there are two main drawbacks.
+Remote Desktop Gateway is a Windows service that you can use to enable clients on the internet to make Remote Desktop Protocol (RDP) connections through firewalls to Remote Desktop servers on your private network. The default five-tuple hash in Load Balancer is incompatible with this service. If you want to you Load Balancer with your Remote Desktop servers, use source IP affinity.
 
-| Problem | Reason |
-| ------- | ------ |
-| **Load balancing** | A load balancer should keep a load fairly evenly distributed between servers in a backend pool.  Sticky sessions can interfere because, depending on user activity, the load becomes unbalanced. Eventually, an individual server might become overused and unresponsive. The load balancer then begins to reroute traffic that's destined for one server to another.  It keeps the application up, but the user will experience a glitch. |
-| **Maintenance** | Occasionally, a server has to come down to do maintenance. You might need patches to the operating system or updates to the application. When you have to take down servers, the load balance automatically moves traffic to remaining servers. Again, the user experiences a glitch because they lose their session. |
-| | |
+## Azure Load Balancer and media upload
+
+Another use case for Source IP Affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progess, but the file is uploaded through a separate UDP protocol. 
+
+With the five-tuple hash, the TCP and UDP connections are likely to be sent to different destination IP addresses by the load balancer, which stops the upload from completing successfully. Use source IP affinity to fix this problem.

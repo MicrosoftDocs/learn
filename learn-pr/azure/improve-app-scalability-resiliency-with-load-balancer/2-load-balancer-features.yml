@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: 'What is the default distribution type for traffic through a load balancer?'
     choices:
-    - content: 'Sticky session'
+    - content: 'Source IP affinity'
       isCorrect: false
       explanation: 'Five-tuple hash is the default.'
     - content: 'Five-tuple hash'

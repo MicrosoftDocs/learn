@@ -1,6 +1,6 @@
 As well as balancing requests from users to front-end servers, you can also use Azure Load Balancer to distribute traffic from front-end server evenly between back-end servers.
 
-In your healthcare organization, front-end servers call business logic that is hosted on a middle tier. You want to ensure that the middle tier is as scalable and resilient as the front end.
+In your healthcare organization, front-end servers call business logic that is hosted on a middle tier. You want to ensure that the middle tier is as scalable and resilient as the front end. You want to use a load balancer to distribute requests from the front-end servers evenly among the middle-tier servers. This way, you'll scale the middle-tier servers out to achieve the highest capacity possible. You'll also ensure that the middle-tier is resilient to failures because, when a server fails, the load balancer will automatically reroute traffic.
 
 Here, you'll learn how to use load balancers to distribute internal traffic.
 
@@ -30,4 +30,4 @@ The internal load balancer should only be visible to the front-end presentation 
 
 ## Choose distribution mode
 
-In the healthcare portal, the application tier is stateless, so we don't need to use sticky sessions. Therefore, the default distribution mode of a five-tuple hash can be used. This mode offers the greatest scalability and resilience as the virtual machine that will handle the request is decided by the load balancer, purely on the basis of the healthiest and least worked virtual machine in the set.
+In the healthcare portal, the application tier is stateless, so we don't need to use source IP affinity. Therefore, the default distribution mode of a five-tuple hash can be used. This mode offers the greatest scalability and resilience as the virtual machine that will handle the request is decided by the load balancer, purely on the basis of the healthiest and least worked virtual machine in the set.
