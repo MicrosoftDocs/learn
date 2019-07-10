@@ -9,7 +9,7 @@ Run the following command in the command shell. Be patient, as setup can take a 
 ::: zone pivot="pg"
 
 ```bash
-. <(wget -q -O - https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-core/live/modules/persist-data-ef-core/setup/setup-pg.sh)
+. <(wget -q -O - https://aka.ms/secure-aspnet-core-identity-setup) "pg"
 ```
 
 ::: zone-end
@@ -17,7 +17,7 @@ Run the following command in the command shell. Be patient, as setup can take a 
 ::: zone pivot="sql"
 
 ```bash
-. <(wget -q -O - https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aspnet-core/live/modules/persist-data-ef-core/setup/setup-sql.sh)
+. <(wget -q -O - https://aka.ms/secure-aspnet-core-identity-setup) "sql"
 ```
 
 ::: zone-end
@@ -35,23 +35,24 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 ## Review starter code
 
-The app, *ContosoPets.Ui*, is a user interface for product data stored and managed by the API.
+The app, *ContosoPets.Ui*, is a user interface for product data stored and managed by the API. Contoso Pets employees have administrative privileges for product data management.
 
 <!-- TODO: Diagram depicting starter app architecture and discussion -->
 
 Your stakeholders have defined the following business requirements:
 
 <!-- * General Data Protection Regulation (GDPR) requirements should be met with regards to data retention and protection. -->
-* There are three types of users for the system: anonymous, customers, and administrators. Customers and administrators must register.
+<!-- * There are three types of users for the system: anonymous, customers, and administrators. Customers and administrators must register. -->
+* There are two types of users for the system: anonymous and administrators. Administrators must register.
 * Support logging in with two-factor authentication.
 * Anonymous users can only view the product catalog.
-* Customers can access their order history.
+<!-- * Customers can access their order history. -->
 * Administrators can modify products, but can't view order history for privacy reasons.
 
 Your team makes the following technical decisions:
 
 * The database tables supporting Identity should reside in an `auth` schema.
-* Each record in the existing `Customers` table should be associated with an account.
+<!-- * Each record in the existing `Customers` table should be associated with an account. -->
 * Administrators will self-enroll using a single-use token created by an existing administrator.
 
 <!-- TODO: add the database diagram showing existing tables -->
