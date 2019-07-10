@@ -35,13 +35,13 @@ quiz:
     - content: "sysconfig"
       isCorrect: false
       explanation: "No. Use the sysprep tool."
-    - content: "winconfig."
+    - content: "winconfig"
       isCorrect: false
       explanation: "No. Use the sysprep tool."
     - content: "waagent"
       isCorrect: false
       explanation: "No. Use the sysprep tool."
-    - content: "sysprep."
+    - content: "sysprep"
       isCorrect: true
       explanation: "This answer is correct."
     - content: "Windows Configuration Manager."

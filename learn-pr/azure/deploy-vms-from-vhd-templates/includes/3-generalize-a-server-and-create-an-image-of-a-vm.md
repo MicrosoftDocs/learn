@@ -176,7 +176,7 @@ Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is 
 
 To create a snapshot of a VHD using the Azure portal:
 
-- Click **+ Create a resource**, and in the *Search the Marketplace** box enter **Snapshot**.
+- Click **+ Create a resource**, and in the **Search the Marketplace** box enter **Snapshot**.
 - On the **Create snapshot** page, provide a name, resource group, and location for the snapshot, and specify the source disk to copy. The source disk must be a managed disk.
 
   ![Screenshot of the Create Snapshot page in the Azure portal](../media/3-create-snapshot.png)
