@@ -4,10 +4,9 @@ Talk about CD and release pipeline.
 
 In this module, you will:
 
-- 
-- 
-- 
-- 
+- Learn about continuous delivery
+- Create a release pipeline to deploy to an Azure AppService
+- Create a release dashboard to monitor the success of the deployments
 
 ## Prerequisites
 

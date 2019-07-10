@@ -9,6 +9,9 @@ To do this you will:
 > * Set up your Azure DevOps project
 > * Add the build pipeline
 
+> [!IMPORTANT]
+> If you have completed the previous learning paths you already have a fork of the Tailspin SpaceGame Web repository. You can skip down to **Open the project in the file explorer** below.
+
 ## Get the source code from GitHub
 
 Here you'll set up Visual Studio Code so you can work with source files.
@@ -49,9 +52,6 @@ At a minimum, you'll need to perform these steps. Run these commands from Visual
 ### Get the source code
 
 Here you'll get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
-
-> [!IMPORTANT]
-> If you have completed the previous learning paths you already have the fork. You can skip down to **Open the project in the file explorer** below.
 
 #### Create a fork
 
@@ -146,7 +146,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You see the directory and file tree in the file explorer.
 
-## Get the Azure Devops project
+## Get the Azure DevOps project
 
 In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
