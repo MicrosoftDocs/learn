@@ -164,6 +164,28 @@ groups:
       title: LINQ
     - id: fluent
       title: Fluent
+- id: ide
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: eclipse
+      title: Eclipse
+    - id: intellij
+      title: Intellij IDEA
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
+- id: visualstudio
+  title: Visual Studio
+  prompt: Choose your verion of Visual Studio
+  pivots:
+    - id: vs2015
+      title: Visual Studio 2015
+    - id: vs2017
+      title: Visual Studio 2017
+    - id: vs2019
+      title: Visual Studio 2019
 - id: aspnet-core-identity-data-store
   title: Identity-Data-Store
   prompt: Choose the ASP.NET Core Identity data store

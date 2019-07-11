@@ -30,7 +30,7 @@ We'd like to ensure that all resources have the **Department** tag associated wi
 
     ```json
     {
-      "mode": "indexed",
+      "mode": "Indexed",
       "policyRule": {
         "if": {
           "field": "[concat('tags[', parameters('tagName'), ']')]",

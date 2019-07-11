@@ -21,4 +21,4 @@ In this module, you will:
 - Familiarity with basic web application development concepts
 
 > [!NOTE]
-> The exercises in this module require a local installation of Docker.
+> The exercises in this module require local installations of Docker and Git.

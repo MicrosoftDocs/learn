@@ -11,6 +11,8 @@ The notebooks are backed by clusters, or networked computers, that work together
 
 ## Create a cluster
 
+1. In the Azure portal, click **All resources** menu on the left side navigation and select the Databricks workspace you created in the last unit.
+1. Select **Launch Workspace** to open your Databricks workspace in a new tab.
 1. In the left-hand menu of your Databricks workspace, select **Clusters**.
 1. Select **Create Cluster** to add a new cluster.
 

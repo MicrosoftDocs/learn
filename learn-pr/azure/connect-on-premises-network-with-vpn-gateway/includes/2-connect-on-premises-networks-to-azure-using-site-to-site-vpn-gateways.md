@@ -45,12 +45,14 @@ Both types use pre-shared key as the only method of authentication. Both types a
 
 The capabilities of your VPN gateway are determined by the SKU that you deploy. This table shows the main capabilities of each available SKU:
 
-| SKU    | Site-to-site/VNet-to-VNet tunnels | Aggregate throughput benchmark | Border Gateway Protocol (BGP) support           |
-| ------ | ------------------------ | ------------------------------ | ------------- |
-| Basic  | Maximum: 10                  | 100 Mbps                       | Not supported |
-| VpnGw1 | Maximum: 30                  | 650 Mbps                       | Supported     |
-| VpnGw2 | Maximum: 30                  | 1 Gbps                         | Supported     |
-| VpnGw3 | Maximum: 30                  | 1 Gbps                         | Supported     |
+| SKU       | Site-to-site/VNet-to-VNet tunnels | Aggregate throughput benchmark | Border Gateway Protocol (BGP) support           |
+| --------- | --------------------------------- | ------------------------------ | ------------- |
+| Basic*    | Maximum: 10                       | 100 Mbps                       | Not supported |
+| VpnGw1/Az | Maximum: 30                       | 650 Mbps                       | Supported     |
+| VpnGw2/Az | Maximum: 30                       | 1 Gbps                         | Supported     |
+| VpnGw3/Az | Maximum: 30                       | 1.25 Gbps                      | Supported     |
+
+Basic VPN Gateway should only be used for Dev/Test workloads.  In addition, it is unsupported to migrate from Basic to the VpnGW1/2/3/Az skus at a later time without having to remove the gateway and redeploy.
 
 ## Deploying VPN gateways
 
@@ -62,7 +64,7 @@ You'll need these Azure resources before you can deploy an operational VPN gatew
 
 - **Virtual network**. Deploy an Azure virtual network with enough address space for the additional subnet that you'll need for the VPN gateway. The address space for this virtual network must not overlap with the on-premises network that you'll be connecting to. Remember that you can deploy only one VPN gateway within a virtual network.
 - **GatewaySubnet**. Deploy a subnet called `GatewaySubnet` for the VPN gateway. Use at least a **/27** address mask to make sure you have enough IP addresses in the subnet for future growth. You can't use this subnet for any other services.
-- **Public IP address**. Create a Basic-SKU dynamic public IP address. This address provides a public-routable IP address as the target for your on-premises VPN device. This IP address is dynamic, but it won't change unless you delete and re-create the VPN gateway.
+- **Public IP address**. Create a Basic-SKU dynamic public IP address if using a non-zone-aware gateway. This address provides a public-routable IP address as the target for your on-premises VPN device. This IP address is dynamic, but it won't change unless you delete and re-create the VPN gateway.
 - **Local network gateway**. Create a local network gateway to define the on-premises network's configuration: where the VPN gateway will connect and what it will connect to. This configuration includes the on-premises VPN device's public IPv4 address and the on-premises routable networks. This information is used by the VPN gateway to route packets that are destined for on-premises networks through the IPSec tunnel.
 - **Virtual network gateway**. Create the virtual network gateway to route traffic between the virtual network and the on-premises datacenter or other virtual networks. The virtual network gateway can be either a VPN or ExpressRoute gateway, but this module deals only with VPN virtual network gateways.
 - **Connection**. Create a Connection resource to create a logical connection between the VPN gateway and the local network gateway.
@@ -94,10 +96,14 @@ By default, VPN gateways are deployed as two instances in an *active/standby* co
 
 ### Active/active
 
-You can also deploy VPN gateways in an *active/active* configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
+With the introduction of suppoort for the BGP routing protocol, you can also deploy VPN gateways in an *active/active* configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
 
 ![Active/active virtual network Gateway](../media/2-dual-redundancy.svg)
 
 ### ExpressRoute failover
 
 Another high availability option is to configure a VPN gateway as a secure failover path for ExpressRoute connections. ExpressRoute circuits have resiliency built in but aren't immune to physical problems that affect the cables delivering connectivity. In high availability scenarios, where there's risk associated with an outage of an ExpressRoute circuit, you can also provision a VPN gateway. By using a second gateway, which uses the internet as an alternative method of connectivity, you help ensure there's always a connection to the Azure virtual networks.
+
+### Zone-redundant gateways
+
+In regions that support availability zones, VPN and ExpressRoute gateways can be deployed in a zone-redundant configuration. This brings resiliency, scalability, and higher availability to virtual network gateways. Deploying gateways in Azure Availability Zones physically and logically separates gateways within a region, while protecting your on-premises network connectivity to Azure from zone-level failures. These require different gateway SKUs and leverage Standard public IP addresses instead of Basic public IP addresses.

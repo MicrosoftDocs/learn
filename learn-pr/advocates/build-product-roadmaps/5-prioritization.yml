@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.build-product-road-maps.5-prioritization
+title:  Prioritization
+metadata:
+  title: Prioritization
+  description: This unit teaches you about prioritization.
+  author: jamtur01
+  ms.date: 04/16/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-prioritization.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: "When using a 2x2 grid for prioritization, what does having a feature in the top-left quadrant mean?"
+     choices:
+     - content: You should work on this feature now
+       isCorrect: true
+       explanation: "Features in the top-left quadrant are high value and low effort. They should be a priority to develop."
+     - content: This feature is too hard to develop
+       isCorrect: false
+     - content: This feature is important for user acquisition
+       isCorrect: false
+       content: This feature does offer any value and isn't important
+       isCorrect: false

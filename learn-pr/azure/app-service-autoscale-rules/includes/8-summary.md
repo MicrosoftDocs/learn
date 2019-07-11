@@ -13,4 +13,4 @@ Using autoscaling with Azure App Service can help ensure your hosted web app can
 
 - [Azure Autoscale](https://azure.microsoft.com/features/autoscale/)
 - [Best practices for Autoscale](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-best-practices)
-- [Overview of common autoscale patterns](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/autoscale-common-scale-patterns)
+- [Overview of common autoscale patterns](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-common-scale-patterns)

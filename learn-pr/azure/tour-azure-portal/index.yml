@@ -18,7 +18,6 @@ abstract: |
   - Customize the dashboard
   - Learn how to opt-in to preview services and features
 iconUrl: /learn/achievements/tour-azure-portal-features.svg
-ratingEnabled: true
 levels:
 - beginner
 prerequisites: |

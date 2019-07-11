@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.5-demonstrate-your-prototype
+title: Demonstrate your prototype
+metadata:
+  title: Demonstrate your prototype
+  description: This unit teaches you how to demonstrate a prototype.
+  author: jamtur01
+  ms.date: 04/25/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-demonstrate-your-prototype.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When you demo your prototype what should you always make sure the audience sees?"
+    choices:
+    - content: "Your key user flows."
+      isCorrect: true
+      explanation: "It's crucial your audience sees the key user flows so they understand how it works and what customers will experience."
+    - content: "The security features of your app."
+      isCorrect: false
+    - content: "The social sharing features of your app."
+      isCorrect: false  
+  - content: "Why is it important to share your future product roadmap?"
+    choices:
+    - content: "It's not and you should avoid it."
+      isCorrect: false
+    - content: "So your audience knows how many engineers you need to hire."
+      isCorrect: false
+    - content: "So your audience understands the future of your product."
+      isCorrect: true
+      explanation: "Your audience wants to know you have a future plan for your product to help them understand how it will grow."

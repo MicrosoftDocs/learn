@@ -19,6 +19,9 @@ To connect to an Azure VM with an RDP client, you will need:
 
 You can enter this information into the RDP client, or download a pre-configured **RDP** file.
 
+> [!NOTE]
+> An **RDP** file is a text file that contains a set of name/value pairs that define the connection parameters for an RDP client to connect to a remote computer using the Remote Desktop Protocol.
+
 ### Download the RDP file
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** panel for the virtual machine that you created earlier is open. You can find the VM under **All Resources** if you need to open it. The overview panel has a lot of information about the VM.

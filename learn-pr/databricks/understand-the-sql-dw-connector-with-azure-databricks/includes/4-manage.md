@@ -11,7 +11,7 @@ Each data warehouse is stored as 60 distributions, which are evenly distributed 
 To scale your SQL Data Warehouse instance, take these steps:
 
 1. Go to your data warehouse in the Azure portal.
-1. Under **Common Tasks** in the left pane, select **Scale**.
+1. In the top menu bar, select **Scale**.
 
     ![Select Scale](../media/sql-dw-scale-link.png)
 1. On the **Scale** blade, move the slider left or right to change the DWU setting.

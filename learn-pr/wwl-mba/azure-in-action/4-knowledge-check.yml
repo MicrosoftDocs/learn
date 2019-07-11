@@ -1,0 +1,74 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.azure-in-action.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: 3-5 multiple-choice questions
+  ms.date: 6/5/2019
+  author: kimrit
+  ms.author: v-kimrit
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)] 
+quiz:
+  questions:
+  - content: "What is the name of the Azure tool that gathers metadata from on-premises servers to assist with cloud migration and operation recommendations?"
+    choices:
+    - content: "Azure Migrate Collector"
+      isCorrect: true
+      explanation: "Correct. The Azure Migrate Collector is a virtual appliance that collects metadata from on-premises servers and sends it to the migration project. Azure Migrate then uses the collector appliance data to make application-specific migration recommendations including cost estimates for both migration and operation in the cloud."
+    - content: "Azure Hybrid Benefit"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure."
+    - content: "Azure Load Balancer"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Load Balancer is a service that is used post-migration to keep servers from bogging down, allowing a smooth flow of traffic."
+    - content: "Azure Site Recovery"
+      isCorrect: false
+      explanation: "Incorrect. Azure Site Recovery offers a method for migrating your on-premises VMs to the cloud without taking down the servers by replicating those VMs from a primary site (on-premises) to a secondary location (Azure)."
+  - content: "Once an application is running in Azure App Service, administrators can take advantage of the many available benefits. Which of the following choices is an option that can be configured by Azure App Service?"
+    choices:
+    - content: "Application authentication"
+      isCorrect: true
+      explanation: "Correct. Administrators can fully control access to an app by activating authentication providers such as Microsoft Live ID, Facebook, Google, Twitter, or even put it behind an active directory tenant."
+    - content: "Azure Hybrid Benefit"
+      isCorrect: false
+      explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments with discounts for VMs turned on in Azure, but it is not a configurable option provided by Azure App Service."
+    - content: "An unlimited number of free apps and disk space"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service does not allow for an unlimited number of free apps and disk space to be configured."
+    - content: "Mixed reality experiences"
+      isCorrect: false
+      explanation: "Incorrect. While Azure supports development for mixed reality experiences on several devices such as HoloLens and iOS, this service is not configured using Azure App Service."
+  - content: "Organizations with an existing Windows Server license can save money on migrated VMs by taking advantage of the:"
+    choices:
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service offers many benefits for applications, but it does not take advantage of existing Windows Server licenses."
+    - content: "Azure Database Migration Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure Database Migration Service is a seamless, end-to-end solution for moving on-premises SQL Server databases to a managed SQL environment with minimal downtime, but it does not take existing Windows Server licenses into account."
+    - content: "Azure SQL Database Managed Instance"
+      isCorrect: false
+      explanation: "Incorrect. The Azure SQL Database Managed Instance delivers the benefits of a fully managed database solution without making code changes, but it does not make use of existing Windows Server licenses."
+    - content: "Azure Hybrid Benefit"
+      isCorrect: true
+      explanation: "Correct. The Azure Hybrid Benefit can lower costs by up to 1/5 by leveraging existing on-premises licenses."
+  - content: "What service allows administrators to modernize applications on Azure without making changes to the production code?"
+    choices:
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure App Service offers many benefits for applications, but it does not have the capability of modernizing an application."
+    - content: "Azure Logic Apps"
+      isCorrect: true
+      explanation: "Correct. Azure Logic Apps makes it possible to modernize an application without modifying the production code, creating opportunities to automate and scale with minimal disruption."
+    - content: "Azure DevOps"
+      isCorrect: false
+      explanation: "Incorrect. Azure DevOps is a comprehensive solution that spans from development to project management to deployment to operations, but it does not offer the ability to modernize apps."
+    - content: "Application Insights"
+      isCorrect: false
+      explanation: "Incorrect. Application Insights allows an administrator to monitor application performance in real time, but does not offer a way to modernize an application."
+    

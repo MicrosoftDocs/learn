@@ -1,0 +1,15 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.azure-in-action.3-demo--modernizing-.net-applications
+title: Demo - Modernizing .NET applications
+metadata:
+  title: Demo - Modernizing .NET applications
+  description: Recorded demo for application migration and modernization
+  ms.date: 6/21/2019
+  author: kimrit
+  ms.author: v-kimrit
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-demo--modernizing-.net-applications.md)] 

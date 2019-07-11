@@ -11,7 +11,7 @@ Now that you have reviewed this module, you should be able to:
 Here are the three key takeaways from this module:
  
 :::row:::
-![Icon of key](../media/Key_Takeaway_2questions.png)
+![Icon of key](../media/key-takeaway.png)
 :::column span="1":::
 1. Azure Cognitive Search applies AI capabilities to knowledge mining to uncover insights from vast amounts of data.
 1. Azure Machine Learning tools allows developers to quickly develop and deploy AI models that use existing data, without being explicitly reprogrammed, in order to forecast future behaviors, outcomes, and trends.

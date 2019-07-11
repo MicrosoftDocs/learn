@@ -63,6 +63,6 @@ Webhooks offer a lightweight mechanism for your app to be notified by another se
 - References
   - [GitHub Webhooks](https://developer.github.com/webhooks/)
   - [Gollum event](https://developer.github.com/v3/activity/events/types/#gollumevent)
-  - [Azure Functions HTTP triggers and bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook)
+  - [Azure Functions HTTP triggers and bindings](https://docs.microsoft.com/azure/azure-functions/functions-bindings-http-webhook)
   - [Securing your webhooks](https://developer.github.com/webhooks/securing/)
-  - [HTTP and webhooks](https://docs.microsoft.com/en-us/sandbox/functions-recipes/http-and-webhooks)
+  - [HTTP and webhooks](https://docs.microsoft.com/sandbox/functions-recipes/http-and-webhooks)
