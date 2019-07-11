@@ -55,18 +55,19 @@
 
 1. In *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top:
 
-::: zone pivot="pg"
+    ::: zone pivot="pg"
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="sql"
+    ::: zone pivot="sql"
+
     ```csharp
     using System.Data.SqlClient;
     ```
 
     The preceding code resolves the reference to the `SqlConnectionStringBuilder` class referenced in the `Configure` method.
 
-::: zone-end
+    ::: zone-end
 
 1. In the `Configure` method of *Startup.cs* in *ContosoPets.Ui*, replace the `// Add the app.UseAuthentication statement` comment with the following:
 
@@ -76,31 +77,33 @@
 
 1. Run the following command to print the database connection string to the console:
 
-::: zone pivot="pg"
-
-::: zone-end
-
-::: zone pivot="sql"
+    ::: zone pivot="pg"
+    
+    ::: zone-end
+    
+    ::: zone pivot="sql"
 
     ```bash
     echo $sqlConnectionString
     ```
-::: zone-end
+
+    ::: zone-end
 
 1. In *:::no-loc text="appsettings.json":::*, replace the connection string for `ContosoPetsAuthConnection` with the connection string from the previous step. The `ConnectionStrings` section should look similar to the following:
     
-::: zone pivot="pg"
-
-::: zone-end
-
-::: zone pivot="sql"
+    ::: zone pivot="pg"
+    
+    ::: zone-end
+    
+    ::: zone pivot="sql"
 
     ```json
     "ConnectionStrings": {
         "ContosoPetsAuthConnection": "Data Source=azsql684457488.database.windows.net;Initial Catalog=ContosoPets;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
     }
     ```
-::: zone-end
+
+    ::: zone-end
     
     Save your changes.
 
@@ -111,55 +114,56 @@
         dotnet ef database update
     ```
 
-::: zone pivot="pg"
+    ::: zone pivot="pg"
+    
+    ```bash
+    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+    ```
+    
+    ::: zone-end
+    
+    ::: zone pivot="sql"
+    
+    
+    
+    ::: zone-end
+    
+    ::: zone pivot="pg"
 
-```bash
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
-```
+    ```bash
+    db -c "SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema'"
+    ```
+    
+    ```console
+     tablename 
+    -----------
+    ToDo
+    ToDo
+    ToDo
+    ```
+    
+    ::: zone-end
 
-::: zone-end
-
-::: zone pivot="sql"
-
-
-
-::: zone-end
-
-::: zone pivot="pg"
-
-```bash
-db -c "SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema'"
-```
-
-```console
- tablename 
------------
-ToDo
-ToDo
-ToDo
-```
-
-::: zone-end
-
-::: zone pivot="sql"
-
-```bash
-db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
-```
-
-```console
-TABLE_NAME
--------------------------
-__EFMigrationsHistory
-AspNetRoleClaims
-AspNetRoles
-AspNetUserClaims
-AspNetUserLogins
-AspNetUserRoles
-AspNetUsers
-AspNetUserTokens
-
-(8 rows affected)
-```
-
-::: zone-end
+    ::: zone pivot="sql"
+    
+    ```bash
+    db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
+    ```
+    
+    ```console
+    TABLE_NAME
+    -------------------------
+    __EFMigrationsHistory
+    AspNetRoleClaims
+    AspNetRoles
+    AspNetUserClaims
+    AspNetUserLogins
+    AspNetUserRoles
+    AspNetUsers
+    AspNetUserTokens
+    
+    (8 rows affected)
+    ```
+    
+    ::: zone-end
+    
