@@ -20,11 +20,11 @@
 
 1. Replace the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs* with the following:
 
-::: zone pivot="pg"
+    ::: zone pivot="pg"
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="sql"
+    ::: zone pivot="sql"
 
     ```csharp
     public void Configure(IWebHostBuilder builder)
@@ -44,7 +44,7 @@
     }
     ```
 
-::: zone-end
+    ::: zone-end
 
     In the preceding code:
 
@@ -124,34 +124,6 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
 
 ::: zone-end
-
-## Scaffold Identity
-
-
-
-```csharp
-public void Configure(IWebHostBuilder builder)
-{
-    builder.ConfigureServices((context, services) => {
-        var sqlConnBuilder = new SqlConnectionStringBuilder(
-            context.Configuration.GetConnectionString("ContosoPetsAuthConnection"));
-        sqlConnBuilder.UserID = context.Configuration["DbUsername"];
-        sqlConnBuilder.Password = context.Configuration["DbPassword"];
-
-        services.AddDbContext<ContosoPetsAuth>(options =>
-            options.UseSqlServer(sqlConnBuilder.ConnectionString));
-
-        services.AddDefaultIdentity<IdentityUser>()
-            .AddEntityFrameworkStores<ContosoPetsAuth>();
-    });
-}
-```
-
-```bash
-dotnet build
-dotnet ef migrations add CreateIdentitySchema
-dotnet ef database update
-```
 
 ::: zone pivot="pg"
 
