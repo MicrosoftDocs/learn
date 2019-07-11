@@ -2,7 +2,7 @@
 uid: learn.authenticate-apps-with-managed-identities.3-managed-identities
 metadata:
   title: Authentication with managed identities
-  description: TODO
+  description: Explore managed identities within the Azure, what a managed identity is, how it works and what services can be used.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -30,7 +30,7 @@ quiz:
     - content: The service used for service principal objects
       isCorrect: false
       explanation: IMDS is not a service used for service principal objects, it is only applicable to Azure IaaS VMs.
-  - content: "Why cant a custom application hosted on-premises use managed identities?"
+  - content: "Why can't a custom application hosted on-premises use managed identities?"
     choices:
     - content: Custom applications are not supported with managed identities
       isCorrect: false
