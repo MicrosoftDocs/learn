@@ -18,7 +18,7 @@
     dotnet aspnet-codegenerator identity --useDefaultUI --dbContext ContosoPetsAuth
     ```
 
-::: zone pivot="pg"
+    ::: zone pivot="pg"
 
 1. Run the following command from the project root to install the PostgreSQL database provider for EF Core:
 
@@ -26,7 +26,7 @@
     dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. Replace the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs* with the following:
 
