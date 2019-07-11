@@ -14,7 +14,7 @@ azureSandbox: false
 
 durationInMinutes: 8
 quiz:
-  title: "Knowledge Check"
+  title: ""
   questions:
   - content: "Which of the following APIs would be the best choice when making image classification predictions based on custom classification models?"
     choices:
