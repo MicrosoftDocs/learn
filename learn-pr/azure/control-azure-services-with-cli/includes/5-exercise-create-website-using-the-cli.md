@@ -31,14 +31,14 @@ When you run Web Apps, using the Azure App Service, you pay for the Azure comput
 1. Create an App Service plan to run your app. The following command does not specify a pricing tier or VM instance details, so by default, you'll get a **Basic** plan with 1 **Small** VM instance.
 
     > [!WARNING]
-    > The name of the app and plan must be _unique_, so add a suffix to the name and replace the `<unique>` text in the command below with a set of numbers, your initials, or some other piece of text to make sure it's unique in all of Azure.
+    > The name of the app and plan must be _unique_, so add a suffix to the name and replace the `[unique-value]` text in the command below with a set of numbers, your initials, or some other piece of text to make sure it's unique in all of Azure.
 
     For the `--location` parameter, use one of the below location values.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
     ```azurecli
-    az appservice plan create --name popupappplan-<unique> --resource-group <rgn>[sandbox resource group name]</rgn> --location <location>
+    az appservice plan create --name popupappplan-[unique-value] --resource-group <rgn>[sandbox resource group name]</rgn> --location [your-location]
     ```
 
     This command can take several minutes to complete.
@@ -53,10 +53,10 @@ When you run Web Apps, using the Azure App Service, you pay for the Azure comput
 
 Next, you'll create the web app in your service plan. You can deploy the code at the same time, but for our example, we'll do this as separate steps.
 
-1. Create the web app, supply the name of the plan you created above. **Just like the plan, the app name must be unique**, replace the `<unique>` marker with some text to make the name globally unique.
+1. Create the web app, supply the name of the plan you created above. **Just like the plan, the app name must be unique**, replace the `[unique-value]` marker with some text to make the name globally unique.
 
     ```azurecli
-    az webapp create --name popupwebapp-<unique> --resource-group <rgn>[sandbox resource group name]</rgn> --plan popupappplan-<unique>
+    az webapp create --name popupwebapp-[unique-value] --resource-group <rgn>[sandbox resource group name]</rgn> --plan popupappplan-[unique-value]
     ```
 
 1. Verify that the app was created successfully by listing all your apps in a table.
@@ -70,7 +70,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
 1. Your site has a "QuickStart" page created by Azure that you can see either in a browser, or with CURL, just use the **DefaultHostName**:
 
     ```bash
-    curl popupwebapp-<unique>.azurewebsites.net
+    curl popupwebapp-[unique-value].azurewebsites.net
     ```
     
 ### Steps to deploy code from GitHub
@@ -78,13 +78,13 @@ Next, you'll create the web app in your service plan. You can deploy the code at
 1. The final step is to deploy code from a GitHub repository to the web app. Let's use a simple PHP page available in the Azure Samples Github repository that displays "HelloWorld!" when it executes. Make sure to use the web app name you created.
 
     ```azurecli
-    az webapp deployment source config --name popupwebapp-<unique> --resource-group <rgn>[sandbox resource group name]</rgn> --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" --branch master --manual-integration
+    az webapp deployment source config --name popupwebapp-[unique-value] --resource-group <rgn>[sandbox resource group name]</rgn> --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" --branch master --manual-integration
     ```
 
 1. Once it's deployed, hit your site again with a browser or CURL.
 
     ```bash
-    curl popupwebapp-<unique>.azurewebsites.net
+    curl popupwebapp-[unique-value].azurewebsites.net
     ```
     
     The page displays "Hello World!"
