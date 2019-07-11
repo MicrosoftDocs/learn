@@ -26,7 +26,7 @@
     dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ```
 
-    ::: zone-end
+::: zone-end
 
 1. Replace the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs* with the following:
 
