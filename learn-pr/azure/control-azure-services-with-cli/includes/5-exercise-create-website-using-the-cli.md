@@ -4,7 +4,7 @@ Next, let's use the Azure CLI to create a resource group, and then to deploy a w
 
 ### Using a resource group
 
-When you are working with your own machine and Azure subscription, you will need to first log in to Azure using the `az login` command. This is unnecessary with the Cloud Shell environment.
+When you're working with your own machine and Azure subscription, you'll need to first sign in to Azure using the `az login` command. This is unnecessary with the Cloud Shell environment.
 
 Next, you would normally create a resource group for all your related Azure resources with an `az group create` command, but for this exercise a resource group has been created for you. Use **<rgn>[sandbox resource group name]</rgn>** for your resource group.
 
@@ -28,7 +28,7 @@ Next, you would normally create a resource group for all your related Azure reso
 
 When you run Web Apps, using the Azure App Service, you pay for the Azure compute resources used by the app, and this depends on the App Service plan associated with your Web Apps. Service plans determine the region used for the app datacenter, number of VMs used, and pricing tier.
 
-1. Create an App Service plan to run your app. The following command does not specify a pricing tier or VM instance details, so by default, you'll get a **Basic** plan with 1 **Small** VM instance.
+1. Create an App Service plan to run your app. The following command does not specify a pricing tier or VM instance details, so by default, you'll get a **Basic** plan with one **Small** VM instance.
 
     > [!WARNING]
     > The name of the app and plan must be _unique_, so add a suffix to the name and replace the `[unique-value]` text in the command below with a set of numbers, your initials, or some other piece of text to make sure it's unique in all of Azure.
