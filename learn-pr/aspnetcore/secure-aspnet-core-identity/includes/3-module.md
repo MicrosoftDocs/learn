@@ -1,4 +1,4 @@
-## Add user registration support
+## Add Identity to the project
 
 1. Install the ASP.NET Core scaffolder:
 
@@ -18,15 +18,19 @@
     dotnet aspnet-codegenerator identity --useDefaultUI --dbContext ContosoPetsAuth
     ```
 
-    ::: zone pivot="pg"
+::: zone pivot="pg"
 
-1. Run the following command from the project root to install the PostgreSQL database provider for EF Core:
+## Add the PostgreSQL database provider
 
-    ```bash
-    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
-    ```
+Run the following command from the project root to install the PostgreSQL database provider for EF Core:
+
+```bash
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+```
 
 ::: zone-end
+
+## Configure the database connection
 
 1. Replace the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs* with the following:
 
@@ -79,7 +83,7 @@
 
     ::: zone-end
 
-1. In the `Configure` method of *Startup.cs* in *ContosoPets.Ui*, replace the `// Add the app.UseAuthentication statement` comment with the following:
+1. In the `Configure` method of *Startup.cs*, replace the `// Add the app.UseAuthentication statement` comment with the following:
 
     ```csharp
     app.UseAuthentication();
@@ -116,6 +120,8 @@
     ::: zone-end
     
     Save your changes.
+
+## Update the database
 
 1. Create and run an EF Migration to update the database:
 
@@ -166,6 +172,6 @@
     
     (8 rows affected)
     ```
-    
+
     ::: zone-end
     
