@@ -1,5 +1,3 @@
-### Examine the Custom Vision Training API
-
 The Custom Vision Service web portal is an easy way to train a model by uploading tagged images. This approach is the most common way to train, test, and publish a model. However, sometimes a business need might require a model to be prepared (or re-trained) based on incoming data available to the applications using the service. In these cases, the app can leverage the **Training API** to add and tag new images and publish a new iteration of the Custom Vision Service.
 
 Similar to making predictions, the Training API provides HTTP methods for adding and tagging training images to a project. The process of calling and consuming the response is identical to the Prediction API - just using different endpoints.

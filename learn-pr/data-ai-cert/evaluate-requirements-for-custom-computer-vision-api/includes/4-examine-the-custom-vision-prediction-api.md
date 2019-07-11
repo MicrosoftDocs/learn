@@ -1,5 +1,3 @@
-### Examine the Custom Vision Prediction API
-
 The most common task an application or script will do with the Custom Vision Service is to request image predictions through the **Prediction API**. This process involves sending an authorized web request to the subscription endpoint and processing the information returned from the call.
 
 > [!TIP]

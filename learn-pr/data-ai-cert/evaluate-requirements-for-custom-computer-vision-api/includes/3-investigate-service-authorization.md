@@ -1,5 +1,3 @@
-## Investigate Service Authorization
-
 The Custom Vision API uses a pair of _subscription keys_ to control access to the two aspects of the service.
 
 1. **Training key** to access APIs used to train the model.
