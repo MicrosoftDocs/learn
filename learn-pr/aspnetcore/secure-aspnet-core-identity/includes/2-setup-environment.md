@@ -1,10 +1,12 @@
 In this unit, you'll set up the development environment for the module. You'll also gain an understanding of the resulting project.
 
+ASP.NET Core Identity supports many data stores. This module focuses on just two of the possible data stores. Use the toggle above to select your preference.
+
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Set up development environment
 
-Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.
+Run the following command in the command shell. The command reflects your data store choice in the toggle above. Be patient, as setup can take a few minutes to complete.
 
 ::: zone pivot="pg"
 
@@ -35,7 +37,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 
 ## Review starter code
 
-The app, *ContosoPets.Ui*, is a user interface for product data stored and managed by the API. Contoso Pets employees have administrative privileges for product data management.
+The app consists of a single ASP.NET Core Razor Pages project named *ContosoPets.Ui*. The project contains the user interface for viewing and managing product data. The product data is obtained via an external ASP.NET Core web API.
 
 <!-- TODO: Diagram depicting starter app architecture and discussion -->
 
@@ -43,7 +45,9 @@ Your stakeholders have defined the following business requirements:
 
 <!-- * General Data Protection Regulation (GDPR) requirements should be met with regards to data retention and protection. -->
 <!-- * There are three types of users for the system: anonymous, customers, and administrators. Customers and administrators must register. -->
-* There are two types of users for the system: anonymous and administrators. Administrators must register.
+* There are two types of users for the system: anonymous and administrators.
+* Administrative rights are reserved for Contoso Pets employees.
+* Administrators must logged in to manage product data.
 * Support logging in with two-factor authentication.
 * Anonymous users can only view the product catalog.
 <!-- * Customers can access their order history. -->
