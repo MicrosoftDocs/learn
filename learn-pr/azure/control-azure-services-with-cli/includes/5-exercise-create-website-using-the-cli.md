@@ -4,9 +4,9 @@ Next, let's use the Azure CLI to create a resource group, and then to deploy a w
 
 ### Using a resource group
 
-When you are working with your own machine and Azure subscription you will need to first login to Azure using the `az login` command. This is unnecessary with the Cloud Shell environment.
+When you are working with your own machine and Azure subscription, you will need to first log in to Azure using the `az login` command. This is unnecessary with the Cloud Shell environment.
 
-Next, you would normally create a resource group for all your related Azure resources with an `az group create` command, but for these exercises one has been created for you. Use **<rgn>[sandbox resource group name]</rgn>** for your resource group.
+Next, you would normally create a resource group for all your related Azure resources with an `az group create` command, but for this exercise a resource group has been created for you. Use **<rgn>[sandbox resource group name]</rgn>** for your resource group.
 
 1. You can ask the Azure CLI to list all your resource groups in a table. There should just be one while you are in the free Azure sandbox.
 
@@ -16,13 +16,13 @@ Next, you would normally create a resource group for all your related Azure reso
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. As you do more Azure development, you can end up with several resource groups. If you have several items in the group list, you can filter the return values by adding a `--query` option. Try this command:
+1. As you do more Azure development, you can end up with several resource groups. If you have several items in the group list, you can filter the return values by adding a `--query` option. Try the following command:
 
     ```azurecli
     az group list --query "[?name == '<rgn>[sandbox resource group name]</rgn>']"
     ```
 
-    The query is formated using **JMESPath** which is a standard query language for JSON requests. You can learn more about this powerful filter language at <http://jmespath.org/>. We also cover queries in more depth in the **Manage VMs with the Azure CLI** module.
+    The query is formatted using **JMESPath**, which is a standard query language for JSON requests. You can learn more about this powerful filter language at <http://jmespath.org/>. We also cover queries in more depth in the **Manage VMs with the Azure CLI** module.
 
 ### Steps to create a service plan
 
@@ -75,7 +75,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
     
 ### Steps to deploy code from GitHub
 
-1. The final step is to deploy code from a GitHub repository to the web app. Let's use a simple PHP page available in the Azure Samples Github repository that displays "HelloWorld!" when it executes. Make sure to use the web app name you created.
+1. The final step is to deploy code from a GitHub repository to the web app. Let's use a simple PHP page available in the Azure Samples GitHub repository that displays "HelloWorld!" when it executes. Make sure to use the web app name you created.
 
     ```azurecli
     az webapp deployment source config --name popupwebapp-[unique-value] --resource-group <rgn>[sandbox resource group name]</rgn> --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" --branch master --manual-integration
