@@ -56,9 +56,13 @@ We're ready to set up the resources for the SQL elastic pool. We'll switch to th
 
 1. Give your new elastic pool a meaningful name such as **FitnessSQLPool**, and ensure the <rgn>[sandbox resource group name]</rgn> resource group is selected.
 
-1. In the **Server** section, ensure your existing **FitnessSQLServer-nnnn** server is selected, then click **Review + create**.
+1. In the **Server** section, ensure your existing **FitnessSQLServer-nnnn** server is selected
 
-1. Review your information, then click **Create**. The SQL elastic pool may take several minutes to provision.
+1. In the **Compute + storage** section, click **Configure elastic pool**.
+
+1. Click **Basic**, and then click **Apply**.
+
+1. Click **Review + create**. Review your information, and then click **Create**. The SQL elastic pool may take several minutes to provision.
 
 ## Add existing databases to the elastic pool
 
