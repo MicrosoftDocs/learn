@@ -18,6 +18,16 @@
     dotnet aspnet-codegenerator identity --useDefaultUI --dbContext ContosoPetsAuth
     ```
 
+::: zone pivot="pg"
+
+1. Run the following command from the project root to install the PostgreSQL database provider for EF Core:
+
+    ```bash
+    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+    ```
+
+::: zone-end
+
 1. Replace the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs* with the following:
 
     ::: zone pivot="pg"
@@ -114,26 +124,16 @@
         dotnet ef database update
     ```
 
-    ::: zone pivot="pg"
-    
-    ```bash
-    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
-    ```
-    
-    ::: zone-end
-    
-    ::: zone pivot="sql"
-    
-    
-    
-    ::: zone-end
+1. Run the following command to list the tables in the database:
     
     ::: zone pivot="pg"
 
     ```bash
     db -c "SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema'"
     ```
-    
+
+    The following output appears, which confirms the creation of the tables.
+
     ```console
      tablename 
     -----------
@@ -141,15 +141,17 @@
     ToDo
     ToDo
     ```
-    
+
     ::: zone-end
 
     ::: zone pivot="sql"
-    
+
     ```bash
     db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
     ```
-    
+
+    The following output appears, which confirms the creation of the tables.
+
     ```console
     TABLE_NAME
     -------------------------
