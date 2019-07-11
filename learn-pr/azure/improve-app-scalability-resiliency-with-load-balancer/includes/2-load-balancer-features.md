@@ -1,6 +1,6 @@
 With Azure Load Balancer, you can spread user requests across multiple virtual machines or other services. That way, you can scale the app to larger sizes than a single virtual machine could support and you ensure that users get service even when a virtual machine has failed.
 
-In your health care organization, you can expect large user demand. It's of vital importance to each user that they can book an appointment, even at times of peak demand or when virtual machines have failed. If you use multiple virtual servers for your front-end and a load balancer to distribute traffic between them, you achieve a high capacity, because all the virtual servers collaborate to satisfy requests. You all improve resilience, because the load balancer can automatically route traffic away when a virtual server fails.
+In your health care organization, you can expect large user demand. It's of vital importance to each user that they can book an appointment, even at times of peak demand or when virtual machines have failed. If you use multiple virtual servers for your front-end and a load balancer to distribute traffic between them, you achieve a high capacity, because all the virtual servers collaborate to satisfy requests. You also improve resilience, because the load balancer can automatically route traffic away when a virtual server fails.
 
 Here, you will learn how the features of Load Balancer help you to create robust app architectures.
 

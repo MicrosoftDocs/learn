@@ -17,22 +17,20 @@ First, deploy your patient portal application across two virtual machines within
 
 1. Run the following git clone command in the Cloud Shell, to clone the repo that contains the source for the app, and setup script from GitHub:
 
-    <!-- TODO: This URL must be updated before when the correct repo is known -->
-
     ```bash
-    git clone https://github.com/GeekEffect/load-balance.git
+    git clone https://github.com/MicrosoftDocs/mslearn-improve-app-scalability-resiliency-with-load-balancer.git
     ```
 
 1. Go to the repo folder locally by running this command:
 
     ```bash
-    cd load-balance
+    cd mslearn-improve-app-scalability-resiliency-with-load-balancer
     ```
 
 1. As its name suggests, this script will generate two virtual machines within a single availability set. The script takes about two minutes to run:
 
     ```bash
-    bash create-high-availabilty-vm-with-sets.sh
+    bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
     ```
 
 1.  When the script finishes, in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**. All the dependencies that you need for your virtual machine to run are automatically installed. Make a note of the location where they were created. In the next sections, create the load balancer in the same location.
@@ -254,11 +252,9 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```Azure CLI
     RgName='<rgn>[sandbox resource group name]</rgn>'
-    Location=`az group list --query '[0].location' --output tsv`
 
     az network public-ip create \
       --resource-group $RgName \
-      --location $Location \
       --allocation-method Static \
       --name myPublicIP
     ```
@@ -317,7 +313,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
     az network public-ip show \
       --resource-group $RgName \
       --name myPublicIP \
-      --query [ipAddress] \
+      --query ipAddress \
       --output tsv
     ```
 

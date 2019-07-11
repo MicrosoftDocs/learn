@@ -16,11 +16,17 @@ The healthcare portal is split into a three-tiered architecture:
 
 ![Diagram of three tier architecture](../media/5-three-tier-architecture.jpg)
 
-This architecture is a common and allows you to scale out. The presentation layer is public facing, the other tiers are only accessible within the local Azure virtual network. The previous exercise created an external load balancer to balance the virtual machines in the presentation layer.
+This architecture is common and allows you to scale out. The presentation layer is public facing, the other tiers are only accessible within the local Azure virtual network. The previous exercise created an external load balancer to balance the virtual machines in the presentation layer.
 
 ## Configure an internal load balancer
 
 In the current healthcare portal scenario, there is an application tier, which hosts business logic and is called by the presentation tier. The application tier is also deployed on two virtual machines and is a web application hosting web services. To allow the front-end web portal to survive losing a connection to an entire data center, you will set up an internal load balancer using availability zones.
+
+You can configure an internal load balancer in almost the same way as an external load balancer, but with these differences:
+
+- When you create the load balancer, for the **Type** value, select **Internal**. When you choose this setting, the front-end IP address of the load balancer is not exposed to the internet. 
+- Assign a private IP address for the front-end of the load balancer, not a public IP address.
+- Place the load balancer in the protected virtual network that contains the virtual machines you want to balance.
 
 The internal load balancer should only be visible to the front-end presentation tier. All the virtual machines hosting the business tier are in one virtual network so an internal load balancer can be used to distribute traffic to those virtual machines.
 
