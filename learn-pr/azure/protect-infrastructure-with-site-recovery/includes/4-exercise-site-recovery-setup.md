@@ -1,16 +1,23 @@
 Think about your organizations BCDR plan, you need to prepare your Azure infrastructure in readiness for using Azure Site Recovery.
 
-In the unit, you'll complete the pre-requisite setup on a Virtual Machine for Azure Site Recovery using the portal.
+In this exercise, you'll complete the pre-requisite setup on a Virtual Machine for Azure Site Recovery using the portal.
+
+> [!NOTE]
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use backup virtual machines with Azure Backup.
+> If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+
 
 ## Create a Recovery Services Vault
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com) using the same account you activated the sandbox with.
 
-1. Select **Create a Resource** option on the upper left hand side of the portal.
-1. Type in **Recovery Services**, and select **Recovery Services vaults**.
-1. Select **Create**.
-1. Give the vault a name.
-1. Select the default subscription, resource group and location. Click **Create**
+1. Select **+ Create a resource** option on the top left hand side of the portal.
+1. Under the **Azure Marketplace**, select **IT & Management Tools**, then select **Backup and Site Recovery**.
+1. Create a new resource group named **east-coast-datacenter**, set the Region to **East US 2**. 
+1. For the Vault name, type **lamna-vault**.
+1. Select. **Review + create**, and then on the Summary page, select **Create**.
+
+## Install the mobility Service
 
 ## Verify target resources
 
