@@ -1,10 +1,12 @@
 ## Add Identity to the project
 
-1. Install the ASP.NET Core scaffolder:
+1. Install the ASP.NET Core code scaffolder:
 
     ```bash
     dotnet tool install -g dotnet-aspnet-codegenerator
     ```
+
+    The scaffolder will be used to add the Identity components to the project.
 
 1. Add the following NuGet package to the project:
 
@@ -19,6 +21,8 @@
         --useDefaultUI \
         --dbContext ContosoPetsAuth
     ```
+
+1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
 ::: zone pivot="pg"
 
@@ -86,7 +90,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
     ::: zone-end
 
-1. In the `Configure` method of *Startup.cs*, replace the `// Add the app.UseAuthentication statement` comment with the following:
+1. In the `Configure` method of *Startup.cs*, replace the `// Add the app.UseAuthentication code` comment with the following:
 
     ```csharp
     app.UseAuthentication();
@@ -121,8 +125,10 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ```
 
     ::: zone-end
-    
+
     Save your changes.
+
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
 ## Update the database
 
@@ -134,7 +140,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ```
 
 1. Run the following command to list the tables in the database:
-    
+
     ::: zone pivot="pg"
 
     ```bash
@@ -206,4 +212,10 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     echo $webAppUrl
     ```
 
-1. Click the **Register** link.
+1. Click the **Register** link in the app's header. Complete the form to create a new account.
+
+    After successful registration, notice that you're redirected back to the homepage. The app's header displays your email address and a **Logout** link.
+
+## Customize the user account data
+
+1. 
