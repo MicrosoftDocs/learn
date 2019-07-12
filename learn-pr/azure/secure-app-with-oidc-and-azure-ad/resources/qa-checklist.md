@@ -33,19 +33,19 @@
 - [X] Does not contain procedural steps
 
 ## Exercises
-- [ ] Between 5 and 15 minutes per unit
-- [ ] Most steps focus on core learning objectives (minimize setup, etc.)
-- [ ] Split into logical chunks
-- [ ] Does not include learning content
-- [ ] Does call out core learning objectives as their applied
-- [ ] Sandbox permissions have been requested
-- [ ] Used dynamic resource group name (where appropriate)
+- [X] Between 5 and 15 minutes per unit
+- [X] Most steps focus on core learning objectives (minimize setup, etc.)
+- [X] Split into logical chunks
+- [X] Does not include learning content
+- [X] Does call out core learning objectives as their applied
+- [X] Sandbox permissions have been requested
+- [X] Used dynamic resource group name (where appropriate)
 - [ ] Sample or starter code is in public repo
 - [ ] Task validation has been tested (if used)
 - [ ] Exercises have been tested in their published environment (sandbox, VM, etc.)
 
 
 ## Summary
-- [ ] Between 90 and 180 words
-- [ ] Gives a high level summary (now that you understand x, you can do y ....)
-- [ ] Includes cleanup instructions when nessesary
+- [X] Between 90 and 180 words
+- [X] Gives a high level summary (now that you understand x, you can do y ....)
+- [X] Includes cleanup instructions when nessesary
