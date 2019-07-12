@@ -15,7 +15,9 @@
 1. Add the Identity Razor Class Library to the project. Run the following command from the project root:
 
     ```bash
-    dotnet aspnet-codegenerator identity --useDefaultUI --dbContext ContosoPetsAuth
+    dotnet aspnet-codegenerator identity \
+        --useDefaultUI \
+        --dbContext ContosoPetsAuth
     ```
 
 ::: zone pivot="pg"
@@ -48,11 +50,12 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
                 context.Configuration.GetConnectionString("ContosoPetsAuthConnection"));
             sqlConnBuilder.UserID = context.Configuration["DbUsername"];
             sqlConnBuilder.Password = context.Configuration["DbPassword"];
-    
+
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseSqlServer(sqlConnBuilder.ConnectionString));
-    
+
             services.AddDefaultIdentity<IdentityUser>()
+                .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
     }
@@ -65,7 +68,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     * The Azure Key Vault Configuration provider is used to retrieve the database username and password.
     * The database username and password are injected into the connection string stored in *appsettings.json*.
     * The Entity Framework Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
-    * The ASP.NET Core Identity services are registered, including the default UI, token providers, and cookie-based authentication.
+    * The ASP.NET Core Identity services are registered, including the default UI (based on Bootstrap version 4), token providers, and cookie-based authentication.
 
 1. In *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top:
 
@@ -104,11 +107,11 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ::: zone-end
 
 1. In *:::no-loc text="appsettings.json":::*, replace the connection string for `ContosoPetsAuthConnection` with the connection string from the previous step. The `ConnectionStrings` section should look similar to the following:
-    
+
     ::: zone pivot="pg"
-    
+
     ::: zone-end
-    
+
     ::: zone pivot="sql"
 
     ```json
@@ -174,4 +177,33 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ```
 
     ::: zone-end
-    
+
+## Add the login and registration link
+
+1. In *Pages/Shared/_Layout.cshtml*, replace the `@* Add the _LoginPartial partial view *@` comment with the following. Save your changes.
+
+    ```cshtml
+    <partial name="_LoginPartial" />
+    ```
+
+1. Run the following command to build the project:
+
+    ```bash
+    dotnet build
+    ```
+
+1. Deploy the site by running the following command:
+
+    ```bash
+    az webapp up
+    ```
+
+    The preceding command deploys the app to Azure App Service. The *.azure/config* file contains the configuration values used by `az webapp up`.
+
+1. Run the following command to see the app's URL. Navigate to that URL in your browser.
+
+    ```bash
+    echo $webAppUrl
+    ```
+
+1. Click the **Register** link.
