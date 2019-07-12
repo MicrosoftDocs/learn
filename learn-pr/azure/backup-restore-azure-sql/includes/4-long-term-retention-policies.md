@@ -35,9 +35,9 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 
     This policy retains the third full backup of each year for five years.
 
-- **W=0, M=3, Y=0**
+- **W=0, M=10, Y=0**
 
-    This policy retains the first full backup of each month for three months.
+    This policy retains the first full backup of each month for ten months.
 
 - **W=12, M=0, Y=0**
 
@@ -46,3 +46,17 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 - **W=4, M=12, Y=10, WeekOfYear=1**
 
     This policy retains each weekly backup for four weeks. It also retains the first full backup of each month for 12 months. Finally the first full backup taken in the first week of each year is retained for 10 years.
+
+## Setting retention policies in PowerShell
+
+In PowerShell, you can examine a long-term retention policy with these commands:
+
+``` Powershell
+Get-AzSqlDatabase -ResourceGroupName <ResourceGroupName> -ServerName <ServerName> | Get-AzSqlDatabaseLongTermRetentionPolicy
+```
+
+To configure the policy, use the `Set-AzSqlDatabaseBackupLongTermRetentionPolicy` cmdlet. When you specify these policies in PowerShell, you must use ISO 8601 duration values. For example, to specify the **W=10** policy, use pass the string **P10W** to the `-WeeklyRetention` parameter. To specify the **Y=3** policy, pass the string **P3Y** to the `--YearlyRetention` parameter:
+
+``` Powershell
+Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName <ServerName> -DatabaseName <DatabaseName> -ResourceGroupName <ResourceGroupName> -WeeklyRetention P10W -YearlyRetention P3Y -WeekOfYear 1
+```

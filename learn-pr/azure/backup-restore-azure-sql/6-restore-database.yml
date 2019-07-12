@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Recover data by restoring an Azure SQL Database
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/6-restore-database.md)]

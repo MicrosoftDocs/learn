@@ -40,10 +40,10 @@ You can also create long-term retention policies by using PowerShell. Follow the
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName <ServerName> -DatabaseName sql-erp-db  -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Create a Long-term Retention policy via Powershell:
+1. To create a long-term retention policy via Powershell, run this command, and substitute the server name:
 
     ``` Powershell
-    Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName sql-erp -DatabaseName sql-erp-db -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -WeeklyRetention P6M -YearlyRetention P2Y -WeekOfYear 1
+    Set-AzSqlDatabaseBackupLongTermRetentionPolicy -ServerName <ServerName> -DatabaseName sql-erp-db -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -MonthlyRetention P6M -YearlyRetention P2Y -WeekOfYear 1
     ```
 
 1. To check that the new policy has been applied, run this command again:

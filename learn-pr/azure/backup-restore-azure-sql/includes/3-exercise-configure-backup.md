@@ -2,7 +2,7 @@ Although the default Azure SQL Database configuration includes automated backups
 
 Now that you have planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
 
-Here, you will create a database in Azure, with content and then configure backups.
+Here, you will create a database in Azure and then configure backups. You will also add some content to the database.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 

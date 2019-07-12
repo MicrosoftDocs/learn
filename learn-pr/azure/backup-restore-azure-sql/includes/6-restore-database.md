@@ -22,7 +22,7 @@ To complete a restore, Azure copies the database from the storage account to the
 You can perform database restores by using the Azure portal, PowerShell, or the Azure CLI. If you are performing a point-in-time restore on the original SQL Database server, you can choose:
 
 - **Database replacement.** If you want to replace the original database with the restored one, make sure you specify the same compute size and service tier as the original. Then rename the original database and give the restored database the original name by using T-SQL `ALTER DATABASE` commands. 
-- **Data recovery.** If you want to retrieve data from the restored database to mitigate an error, you don't need to rename the original and restored databases. Instead, uses T-SQL commands to extract the data you need from the restored database and insert it into the original database. 
+- **Data recovery.** If you want to retrieve data from the restored database to mitigate an error, you don't need to rename the original and restored databases. Instead, use T-SQL commands to extract the data you need from the restored database and insert it into the original database. 
 
 Both these options begin with the restoration of a database backup from storage. To recover in the Azure portal, click the **Restore** button on the database overview page, then specify the time to restore to. 
 
@@ -30,7 +30,7 @@ In PowerShell, use the `Restore-AzSqlDatabase` cmdlet to execute restorations. I
 
 ### Executing a deleted database restore
 
-If a database has been mistaken deleted, you can restore it from backup to the deletion time by using the Azure portal or PowerShell. 
+If a database has been mistakenly deleted, you can restore it from backup to the deletion time by using the Azure portal or PowerShell. 
 
 In the portal, go to the database server's **Overview** page and then, in the **Operations** area, click **Deleted databases**. You can specify a point in time up to the deletion time, and then click **OK** to recover.
 
