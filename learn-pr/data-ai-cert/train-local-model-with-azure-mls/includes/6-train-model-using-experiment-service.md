@@ -59,13 +59,31 @@ import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.externals import joblib
 
-from utils import load_data
+from azureml.core import Run
+
+import gzip
+import struct
+
+# load compressed MNIST gz files and return numpy arrays
+def load_data(filename, label=False):
+    with gzip.open(filename) as gz:
+        struct.unpack('I', gz.read(4))
+        n_items = struct.unpack('>I', gz.read(4))
+        if not label:
+            n_rows = struct.unpack('>I', gz.read(4))[0]
+            n_cols = struct.unpack('>I', gz.read(4))[0]
+            res = np.frombuffer(gz.read(n_items[0] * n_rows * n_cols), dtype=np.uint8)
+            res = res.reshape(n_items[0], n_rows * n_cols)
+        else:
+            res = np.frombuffer(gz.read(n_items[0]), dtype=np.uint8)
+            res = res.reshape(n_items[0], 1)
+    return res
 
 # create three parameters, the location of the data files, and the maximun value of k and the interval
 parser = argparse.ArgumentParser()
 parser.add_argument('--data-folder', type=str, dest='data_folder', help='data folder mounting point')
-parser.add_argument('--kmax', type=float, dest='kmax', default=15, help='max k value')
-parser.add_argument('--kinterval', type=float, dest='kinterval', default=2, help='k interval')
+parser.add_argument('--kmax', type=int, dest='kmax', default=15, help='max k value')
+parser.add_argument('--kinterval', type=int, dest='kinterval', default=2, help='k interval')
 args = parser.parse_args()
 
 data_folder = os.path.join(args.data_folder, 'mnist')
@@ -85,7 +103,7 @@ y_test = load_data(os.path.join(data_folder, 'test-labels.gz'), True).reshape(-1
 print( y_train.shape, y_test.shape, sep = '\n')
 
 # get hold of the current run
-run = run.get_context()
+run = Run.get_context()
 
 print('Train kNN models with k equals to', range(1,args.kmax,args.kinterval))
 
@@ -129,9 +147,6 @@ Now, you must add a **utils** script, as shown below, for loading data and creat
 - Python packages that are necessary for training.
 
 ```python
-import shutil
-shutil.copy('utils.py', folder_training_script)
-
 from azureml.train.estimator import Estimator
 
 script_params = {
@@ -146,7 +161,6 @@ est = Estimator(source_directory=folder_training_script,
                 compute_target=compute_target,
                 entry_script='train.py',
                 conda_packages=['scikit-learn'])
-
 ```
 
 ## Submit the model, monitor the run, and retrieve the results
