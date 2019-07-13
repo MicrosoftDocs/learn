@@ -78,7 +78,7 @@ db.Items.find({},{productName:1,_id:0})
 
 :::row:::
   :::column span="3":::
-Azure Cosmos DB's support for the Cassandra API makes it possible to query data by using the Cassandra Query Language (CQL), and your data will appear to be a partitioned row store. Just like the MongoDB API, any clients or tools should be able to transparently connect to Azure Cosmos DB; only your connection settings should need to Azure be updated. Cosmos DB's Cassandra API currently supports version 4 of the CQL wire protocol.
+Azure Cosmos DB's support for the Cassandra API makes it possible to query data by using the Cassandra Query Language (CQL), and your data will appear to be a partitioned row store. Just like the MongoDB API, any clients or tools should be able to transparently connect to Azure Cosmos DB; only your connection settings should need to be updated. Cosmos DB's Cassandra API currently supports version 4 of the CQL wire protocol.
   :::column-end:::
   :::column:::
 ![Icon representing the Cassandra API](../media/cassandra-api.png)
