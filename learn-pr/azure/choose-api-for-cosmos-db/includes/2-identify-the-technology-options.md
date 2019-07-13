@@ -1,6 +1,6 @@
 ![Diagram showing how Azure Cosmos DB is globally distributed, supports five principles, four models, and five APIs](../media/azure-cosmos-db.png)
 
-Azure Cosmos DB is a globally distributed and elastically scalable database. It has a guaranteed low latency that is backed by a comprehensive set of Service Level Agreements (SLAs). Consistency can sometimes be an issue when you are working with distributed systems, but Azure Cosmos DB resolves this by offering you five different consistency levels: *strong*, *bounded staleness*, *session*, *consistent prefix*, and *eventual*.
+Azure Cosmos DB is a globally distributed and elastically scalable database. It has a guaranteed low latency that is backed by a comprehensive set of Service Level Agreements (SLAs). Consistency can sometimes be an issue when you are working with distributed systems, but Azure Cosmos DB alleviates this situation by offering you five different consistency levels: *strong*, *bounded staleness*, *session*, *consistent prefix*, and *eventual*.
 
 All of the above is supported by a multi-model Azure Cosmos DB's approach, which provides you with the ability to use document, key-value, wide-column, or graph-based data.
 
@@ -78,7 +78,7 @@ db.Items.find({},{productName:1,_id:0})
 
 :::row:::
   :::column span="3":::
-Azure Cosmos DB's support for the Cassandra API makes it possible to query data by using the Cassandra Query Language (CQL), and your data will appear to be a partitioned row store. Just like the MongoDB API, any clients or tools should be able to transparently connect to Azure Cosmos DB; only your connection settings should need to be updated. Cosmos DB's Cassandra API currently supports version 4 of the CQL wire protocol.
+Azure Cosmos DB's support for the Cassandra API makes it possible to query data by using the Cassandra Query Language (CQL), and your data will appear to be a partitioned row store. Just like the MongoDB API, any clients or tools should be able to connect transparently to Azure Cosmos DB; only your connection settings should need to be updated. Cosmos DB's Cassandra API currently supports version 4 of the CQL wire protocol.
   :::column-end:::
   :::column:::
 ![Icon representing the Cassandra API](../media/cassandra-api.png)
@@ -97,7 +97,7 @@ For developers who have experience with the CQL query language, Azure Cosmos DB 
 - BATCH (Only unlogged commands are supported)
 - DELETE
 
-To create a table that would store the JSON information listed earlier, you might use the following:
+To create a table that would store the JSON information listed earlier, you might use the following syntax:
 
 ```sql
 CREATE TABLE Catalog.Items(id text, productName text, description text, supplier text, quantity int, unitCost float, retailPrice float, categories map<text,text>, primary key (id));
@@ -132,7 +132,7 @@ SELECT i.productName FROM Items i
 
 :::row:::
   :::column span="3":::
-Choosing Gremlin as the API provides a graph-based view over the data. Remember that at the lowest level, all data in any Azure Cosmos DB is stored in an ARS format. A graph-based view on the database means data is either a vertex, (which is an individual item in the database), or an edge, (which is a relationship between items in the database).
+Choosing Gremlin as the API provides a graph-based view over the data. Remember that at the lowest level, all data in any Azure Cosmos DB is stored in an ARS format. A graph-based view on the database means data is either a vertex (which is an individual item in the database), or an edge (which is a relationship between items in the database).
   :::column-end:::
   :::column:::
 ![Icon representing the Gremlin API](../media/graph-api.png)
@@ -180,7 +180,7 @@ Results will be returned in GraphSON format, which looks like this:
   }
 ]
 ```
-This kind of graph might be useful when you are creating a product recommendation application for an e-commerce website, or you could return detailed information for each of the related puchases by using the following query:
+This kind of graph might be useful when you are creating a product recommendation application for an e-commerce website, or you could return detailed information for each of the related purchases by using the following query:
 
 ```
 g.V().hasLabel('product').has('productName', 'Industrial Saw').outE('boughtWith').inV().hasLabel('product')
