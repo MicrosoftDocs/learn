@@ -76,7 +76,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
 
 6. Here you can see all the information and configuration options for your newly created Ubuntu VM. One of the pieces of information is the **Public IP address**.
 
-    [![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/3-public-ip-address.png)](../media/3-public-ip-address-expanded.png#lightbox)
+    ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/3-public-ip-address.png)]
 
 7. By default Ubuntu Server 18.04 LTS image doesn't install any public reachable services on the public IP address. However, recall that we enabled password authentication earlier. This authentication type, allows you to connect to your VM via the public IP using any SSH client.
 
