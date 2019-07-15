@@ -32,7 +32,7 @@ In this exercise, you'll create a secret and store it in Key Vault. Then you'll 
     > --resource-group <rgn>[Sandbox resource group]</rgn> \
     > --show-details \
     > --query [publicIps] \
-    > --o tsv)
+    > --output tsv)
     >```
     >
     > Then rerun `ssh $publicIP`
@@ -161,9 +161,11 @@ In this exercise, you'll create a secret and store it in Key Vault. Then you'll 
     ```azurecli
         az keyvault set-policy \
           --name furniture-secrets \
-          --object-id $(az vm identity show --name prodserver --resource-group azure-backup --o tsv --query principalId) \
+          --object-id $(az vm identity show --name prodserver --resource-group <rgn>[Sandbox resource group]</rgn> --o tsv --query principalId) \
           --secret-permissions get list
     ```
+
+    The value return will be in JSON format, it contain: id, location, name and all the associated properties.
 
 ## Test the application again
 

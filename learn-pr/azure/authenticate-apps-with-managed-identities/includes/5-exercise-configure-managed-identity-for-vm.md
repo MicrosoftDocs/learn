@@ -17,8 +17,8 @@ In the unit, you'll configure a managed identity on your virtual machine. You'll
         --resource-group <rgn>[Sandbox resource group]</rgn> \
         --image UbuntuLTS \
         --generate-ssh-keys \
-        --o tsv \
-        --query publicIpAddress")
+        --output tsv \
+        --query "publicIpAddress")
     ```
 
     > [!NOTE]
@@ -91,4 +91,9 @@ In the unit, you'll configure a managed identity on your virtual machine. You'll
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-authenticate-apps-with-managed-identities identity
+    ```
+
+1. Lastly, you need to exit the SSH session:
+    ```bash
+    exit
     ```

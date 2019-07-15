@@ -6,7 +6,7 @@ In this unit, you'll explore Azure service principals in more detail, the concep
 
 ## Overview of Azure service principals
 
-In Azure, **security principals** are a fundamental concept for authentication and access. Security principals are one of the underpinnings for the entire Microsoft platform whether you sign in to Azure, Office 365, or Dynamics 365. Use your **user principal** when you authenticate with user credentials through Azure Active Directory (Azure AD). For applications and services, you'll use a **service principal**.
+In Azure, **security principals** are a fundamental concept for authentication and access. Security principals are one of the underpinnings for the entire Microsoft platform, whether you sign in to Azure, Office 365, or Dynamics 365. Use your **user principal** when you authenticate with user credentials through Azure Active Directory (Azure AD). For applications and services, you'll use a **service principal**.
 
 You use role-based access control (RBAC) to manage who, or what, has access to Azure resources – and what actions they can do on these resources. Your company's app requires access to the Azure Key Vault. You'll need to create a service principal, and assign roles to it that give the correct permissions to the key vault.
 
@@ -39,31 +39,34 @@ The recently released Microsoft Identity platform is an evolution of the previou
 
 ![Screenshot of adding an application to Azure AD](../media/2-adding-an-app.png)
 
-The workflow for registering an application in Azure is:<!--CE:Please check which of the following steps/commands should be in bold.-->
+The workflow for registering an application in Azure is:
 
-- Sign in to the Azure portal, select Azure Active Directory.
-- Select App registrations, and in the top left, select New registration.
-- Enter a name for the application – a display name for the app that doesn't need to follow Azure naming conventions.
-- Supported account types must be specified. Choose from accounts within your company's active directory, accounts in any company's AD using Azure, or any organizational accounts and personal accounts – such as Microsoft or XBox.
-- A redirect URI is an optional parameter. Two types are available – **Web** or **Public Client**. A redirect URI takes the form of a web link (https) but doesn't need to be a valid link unless you're selecting a public client.
+- Sign in to the Azure portal, select **Azure Active Directory**.
+- Select **App registrations**, and in the top left, select **New registration**.
+- Enter a name for the application – this is a display name for the app that doesn't need to follow Azure naming conventions.
+- Supported account types must be specified. Choose from:
+  - Accounts within your company's active directory,
+  - Accounts in any company's AD using Azure, or
+  - Any organizational accounts and personal accounts – such as Microsoft or XBox.
+- A **redirect URI** is an optional parameter. Two types are available – **Web** or **Public Client**. A redirect URI takes the form of a web link (https) but doesn't need to be a valid link unless you're selecting a public client.
 - The application is then registered with Azure AD and has a service principal associated with it.
 
 ## Assigning application roles
 
-Azure AD applications must be assigned roles to work with other services, and changes to an application object are also replicated to the service principal. The roles assigned to the application determine which permissions and scope the application will ultimately have. The scope for permissions can be set at a high level and inherited down – such as subscription level – or at a low level of granularity on a dedicated resource. 
+Azure AD applications must be assigned roles to work with other services, and changes to an application object are also replicated to the service principal. The roles assigned to the application determine which permissions and scope the application will ultimately have. The scope for permissions can be set at a high level and inherited down – such as subscription level – or at a low level of granularity on a dedicated resource.
 
 Permissions are inherited down from the level of scope set. For example, if you assign the reader role on a resource group, read permissions are assigned to all resources within that group. A tenant administrator grants permissions for the application to the entire user directory.
 
 ![Screenshot of adding a role to an application](../media/2-adding-a-role.png)
 
-You can use the Azure portal to assign the required roles for your app to access the Key Vault by:<!--CE:Please check which of the following steps/commands should be in bold.-->
+You can use the Azure portal to assign the required roles for your app to access the Key Vault by:
 
 - Selecting your key vault in the portal.
-- On the left, select Access Control (IAM).
-- Select Add a role assignment.
+- On the left, select **Access Control (IAM)**.
+- Select **Add** from the Add a role assignment pane.
 - Choose the role you need.
-- Leave the default assign access to Azure AD user, group, or service principal.
-- Search for your created application – it won't appear in the drop-down – select it, and then select save.
+- Accept the default **assign access to** option: Azure AD user, group, or service principal.
+- Search for your created application – it won't appear in the drop-down – select it, and then select **Save**.
 
 ## Managing keys and permissions
 
@@ -78,6 +81,8 @@ The application needs to have credentials created for requests to be authenticat
 
 - **Certificate**: Commonly referred to as a public key, you'll need to have generated it locally, and then upload the .cer, .pem, or .crt file.
 - **Client secret**: A complex secret string generated in Azure, also known as an application password.
+
+Whether you opt to use a client secret or a certificate, you need to define when it will expire. This will vary depending on your organization, however it is good practice to pick one or two years.
 
 > [!NOTE]
 > Certificates can expire, and for the best security, the client secret should be set to expire. Managing these credentials is a downside of an app accessing Azure resources via a service principal.

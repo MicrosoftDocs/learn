@@ -1,4 +1,4 @@
-When you access Azure services, you need the best solution to how to handle authentication. Access, authentication, and security need to be focused on for all kinds of software, but especially when that software is accessed and stored online. Consider the problems associated with storing your credentials, tokens, or secrets in code or configuration files.
+When you access Azure services, you need the best solution to handle authentication. Access, authentication, and security need to be focused on for all kinds of software, but especially when that software is accessed and stored online. Consider the problems associated with storing your credentials, tokens, or secrets in code or configuration files.
 
 Using Azure Active Directory provides a solution with **Service Principals** and **Managed Identities**. Both features are designed to solve this problem, allowing you to use a single identity to integrate your application through Azure AD.
 

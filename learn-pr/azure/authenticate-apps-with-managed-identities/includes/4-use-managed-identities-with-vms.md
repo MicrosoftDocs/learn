@@ -1,4 +1,4 @@
-Manage identities can be added to Virtual Machines on Azure. Running your stock-tracking application inside a VM with an assigned managed identity will allow the app to authenticate with the required Azure Key Vault without having to store a username and password in code.
+Managed identities can be added to Virtual Machines on Azure. Running your stock-tracking application inside a VM with an assigned managed identity will allow the app to authenticate with the required Azure Key Vault without having to store a username and password in code.
 
 Knowing that your company has migrated your VM from on-premises to Azure, it's now possible to remove the hard-coded authentication details from the applications code and change it to using the more secure **Managed Identities** token to gain access to resources in Azure.
 
@@ -24,19 +24,19 @@ Once the configuration is done, accessing those resources is automatic without t
 
 ## Access control and authentication
 
-Access control within Azure is handled using Role-Based Access Control (RBAC). RBAC is an authorization system built upon Azure Resource Manager and allows you to have fine grained management of access to resources. Some examples of what can be done using RBAC are, allowing support personnel access to manage virtual machine properties within a subscription. That same group may be restricted from managing the virtual machine networks, but a different group with the required access could.
+Access control within Azure is handled using Role-Based Access Control (RBAC). RBAC is an authorization system built upon Azure Resource Manager and allows you to have fine grained management of access to resources. An example of what can be done using RBAC is, allowing support personnel access to manage virtual machine properties within a subscription. That same group may be restricted from managing the virtual machine networks, but a different group with the required access could.
 
 Role-based access is how permissions are formed and consist of three elements, the security principal, role definition, and scope.
 
 - **Security principal**: Represents a user, group, service principal, or a managed identity.
 - **Role definition:** Collection of permissions, such as a group called 'Full Access' who has read, write, and delete to an object or group. Azure has several predefined roles built in but additional roles can be created with permissions specific to the use case if necessary
-- **Scope:** A defined set of resources, or single resource, that the access applies to. For example, a permission set could apply to a single VM only, or the resource group that contains that VM, which would grant access to all the VMs in that particular resource group.
+- **Scope:** A defined set of resources, or a single resource, that the access applies to. For example, a permission set could apply to a single VM only, or the resource group that contains that VM, which would grant access to all the VMs in that particular resource group.
 
-RBAC checks and authenticates a user to a resource using the Azure Resource Manager. The process that the check follows is:
+RBAC checks and authenticates a user to a resource using the Azure Resource Manager. The process flow for that check is:
 
 - The user acquires a token for the Azure Resource Manager, this token includes details of the users group memberships.
 - Make a REST API call to the Azure Resource Manager with the token attached to it.
-- Azure Resource Manager processes the call and identifies all the role assignments, and deny assignments, that apply to the resource that is being requested
+- Azure Resource Manager processes the call and identifies all the role assignments, and deny assignments, that apply to the resource that is being requested.
 - Azure Resource Manager narrows the role assignments that apply to the user or group and determines what role they should have.
 - The action in the API call is matched to the roles the user has for the resource.
 - If a match is found the action can complete, if the user doesn't have a role granting the requested action, or a Deny assignment exists, then the action can't complete.

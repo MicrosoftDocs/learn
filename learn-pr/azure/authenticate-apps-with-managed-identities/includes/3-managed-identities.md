@@ -13,7 +13,7 @@ Managed identity is a feature of Azure Active Directory (Azure AD) that enables 
 
 ## Overview of Azure-managed identities
 
-Managed identities are a free feature within Azure AD for automatically managing identity. Managed identities remove the need for credential rotation or worrying about expiration dates, think back to the creation of the service principal in the previous unit. The keys generated have an expiration date plus several objects need to be stored, too successfully, call the service principal during an authentication request. When the credentials need to be refreshed, it needs someone to change any application or service storing those credentials. Using a managed identity that requirement is removed, Microsoft will handle credential rotation and expiration for you in the background, meaning once you've configured your application to use managed identity, you keep calling the service using the provided token.
+Managed identities are a free feature within Azure AD for automatically managing identity. Managed identities remove the need for credential rotation or worrying about expiration dates, think back to the creation of the service principal in the previous unit. The keys generated have an expiration date plus several objects need to be stored, too successfully, call the service principal during an authentication request. When the credentials need to be refreshed, it needs someone to change any application or service storing those credentials. Using a managed identity that requirement is removed, Microsoft will handle credential rotation and expiration for you in the background, meaning once you've configured your application to use a managed identity, you keep calling the service using the provided token.
 
    > [!NOTE]
    > The term Managed Service Identity (MSI), which still exists in some client libraries, has been replaced by Managed identities for Azure resources
@@ -22,8 +22,8 @@ Managed identities are a free feature within Azure AD for automatically managing
 
 When working with managed identities, there are several terms commonly referred to that are important to remember:
 
-- The Client ID, the client ID is a unique ID linked to the Azure AD application and service principal created when the identity is provisioned.
-- The Object ID - the object ID refers to the service principal object of the managed identity.
+- The Client ID, this is a unique ID linked to the Azure AD application and service principal created when the identity is provisioned.
+- The Object ID - this ID refers to the service principal object of the managed identity.
 - The Azure Instance Metadata Service is a REST API enabled when a VM is provisioned using Azure Resource Manager. The endpoint is only accessible from within the VM.
 
 There are two different types of managed identity that can be created, that while similar, are used differently:
@@ -35,7 +35,7 @@ Under the hood, a managed identity is a special type of service principal, which
 
 ## Using managed identities with Azure resources
 
-Managed identities can be used in a two different scenarios, with an Azure VM (windows or linux) or through a supported service. At the present, time-managed identities only work with a select number of Azure resources. Microsoft is actively working to enable them across the platform. The services that support managed identity for Azure resources are:
+Managed identities can be used in two different scenarios, with an Azure VM (windows or linux) or through a supported service. At the present, time-managed identities only work with a select number of Azure resources. Microsoft is actively working to enable them across the platform. The services that support managed identity for Azure resources are:
 
 - Azure Virtual Machines
 - Azure Virtual Machine Scale Sets
@@ -57,7 +57,7 @@ Managed identities can be managed using the:
 - **Azure Resource Manager template**
 - **Azure SDK** in supported development tools
 
-When you have added a managed identity to one of the resources above, they are then able to use that identity's token to access any of the following Azure resources:
+When you add a managed identity to one of the resources above, you are then able to use that identity's token to access any of the following Azure resources:
 
 - [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-arm)
 - [Azure Key Vault](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-nonaad)
