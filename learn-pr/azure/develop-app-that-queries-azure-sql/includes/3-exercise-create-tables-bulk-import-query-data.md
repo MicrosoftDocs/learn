@@ -12,10 +12,11 @@ In this exercise, you'll create a database server and a single database using th
     git clone https://github.com/MicrosoftDocs/mslearn-develop-app-that-queries-azure-sql education
     ```
 
-1. Run these commands to change directory to the **education/data** folder and list the files in the folder.
+1. Run these commands to move the sample data to it's own folder and list the files in the folder.
 
     ```bash
-    cd ~/education/data
+    mv ~/education/data ~/educationdata
+    cd ~/educationdata
     ls
     ```
 
@@ -104,7 +105,7 @@ Let's create the database and server to store the data for the application.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated sandbox with.
 
-1. In the left pane, click **+ Create a resource**, select **Databases**, and then click **SQL Database**.
+1. In the left pane, select **+ Create a resource**, select **Databases**, and then select **SQL Database**.
 
     ![Screenshot of the New page in the Azure portal showing the Databases options available in the Azure Marketplace](../media/3-new-database-annotated.png)
 
@@ -115,11 +116,11 @@ Let's create the database and server to store the data for the application.
     | Subscription | Concierge Subscription |
     | Resource Group | <rgn>[Sandbox resource group]</rgn> |
     | Database name | The database must have a unique name. We suggest using something like **coursedatabase*NNN***, where *NNN* is a random number |
-    | Server | Click **Create new**, and enter the details shown in the table below |
+    | Server | Select **Create new**, and enter the details shown in the table below |
     | Want to use SQL elastic pool? | No |
     | Compute + storage | General Purpose |
 
-    For the server, specify the following details in the **New server** pane, and then click **Select**.
+    For the server, specify the following details in the **New server** pane, and then select **Select**.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -132,15 +133,15 @@ Let's create the database and server to store the data for the application.
     | Location | Accept the default location |
     | Allow Azure services to access server | Checked |
 
-1. Click **Review + create**.
+1. Selct **Review + create**.
 
-1. Click **Create**, and wait for the server and database to be created before continuing.
+1. Select **Create**, and wait for the server and database to be created before continuing.
 
 ## Create the tables
 
 With the database created, you can now create the tables that will store the data from the csv files.
 
-1. In the left-hand pane of the Azure portal, click **SQL databases**.
+1. In the left-hand pane of the Azure portal, select **SQL databases**.
 
 1. On the **SQL databases** page, select **coursedatabase*NNN***.
 
@@ -148,7 +149,7 @@ With the database created, you can now create the tables that will store the dat
 
     ![Screenshot of the database page in the Azure portal highlighting the Query editor option](../media/3-query-editor-annotated.png)
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then click **OK** to connect to database service.
+1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to database service.
 
     | Property  | Value  |
     |---|---|
@@ -156,7 +157,7 @@ With the database created, you can now create the tables that will store the dat
     | Login | azuresql |
     | Password | Specify the password you used when you created this user  |
 
-1. In the **Query 1** pane, enter the following SQL statement, and then click **Run**. This statement creates a new table for holding course information. Verify that the statement runs without any errors.
+1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**. This statement creates a new table for holding course information. Verify that the statement runs without any errors.
 
     ```SQL
     CREATE TABLE Courses
@@ -168,7 +169,7 @@ With the database created, you can now create the tables that will store the dat
 
     ![Screenshot of the Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/3-create-table-courses-annotated.png)
 
-1. Overwrite the existing statement with the following statement that creates a table for holding modules. Click **Run** and verify that the statement runs without any errors.
+1. Overwrite the existing statement with the following statement that creates a table for holding modules. Select **Run** and verify that the statement runs without any errors.
 
     ```SQL
     CREATE TABLE Modules
@@ -178,7 +179,7 @@ With the database created, you can now create the tables that will store the dat
     )
     ```
 
-1. Change the statement to create another table named **StudyPlans**, and then click **Run**.
+1. Change the statement to create another table named **StudyPlans**, and then select **Run**.
 
     ```SQL
     CREATE TABLE StudyPlans
@@ -190,7 +191,7 @@ With the database created, you can now create the tables that will store the dat
     )
     ```
 
-1. In the database window, click the **Refresh** button in the toolbar. Then expand **Tables**, and expand each table in turn. You should see the three tables, **dbo.Courses**, **dbo.Modules**, and **dbo.StudyPlans**, together with the columns and primary key for each table.
+1. In the database window, select the **Refresh** button in the toolbar. Then expand **Tables**, and expand each table in turn. You should see the three tables, **dbo.Courses**, **dbo.Modules**, and **dbo.StudyPlans**, together with the columns and primary key for each table.
 
     > [!NOTE]
     > *dbo* stands for *database owner*, and is the default schema in the database. All three tables were created in this schema.
@@ -199,10 +200,10 @@ With the database created, you can now create the tables that will store the dat
 
 ## Import the data
 
-1. Return to the Cloud Shell window and make sure you are in the **education/data** folder.
+1. Return to the Cloud Shell window and make sure you are in the **educationdata** folder.
 
     ```bash
-    cd ~/education/data
+    cd ~/educationdata
     ```
 
 1. Create variables that you will use in later steps. Replace `NNN` with the number that you used for your database and server.
@@ -281,13 +282,13 @@ With the database created, you can now create the tables that will store the dat
 
 1. Return to the Azure portal.
 
-1. In the left-hand pane of the Azure portal, click **SQL databases**.
+1. In the left-hand pane of the Azure portal, select **SQL databases**.
 
-1. On the **SQL databases** page, click **coursedatabase*NNN***.
+1. On the **SQL databases** page, select **coursedatabase*NNN***.
 
-1. On the **coursedatabase*NNN*** page, under **Overview**, click **Query editor**.
+1. On the **coursedatabase*NNN*** page, under **Overview**, select **Query editor**.
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then click **OK** to connect to database service.
+1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to database service.
 
     | Property  | Value  |
     |---|---|
@@ -295,7 +296,7 @@ With the database created, you can now create the tables that will store the dat
     | Login | azuresql |
     | Password | Enter the password for this user |
 
-1. In the **Query 1** pane, enter the following SQL statement, and then click **Run**.
+1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**.
 
     ```SQL
     SELECT * FROM dbo.Courses
@@ -305,7 +306,7 @@ With the database created, you can now create the tables that will store the dat
 
     ![Screenshot of the Query Editor in the Azure portal, showing the data retrieved from the Courses table](../media/3-query-results-annotated.png)
 
-1. Change the query as follows, and then click **Run**.
+1. Change the query as follows, and then select **Run**.
 
     ```SQL
     SELECT * FROM dbo.Modules
