@@ -41,27 +41,25 @@ Establishing a connection to Azure through ExpressRoute is a multi-step process.
 
 ### Create a circuit
 
-1. If you're using the Azure portal, click **Create a resource** > **Networking** > **ExpressRoute**
-1. On the **Create ExpressRoute circuit** page, fill in the fields as follows.
+When using the Azure portal, click **Create a resource** > **Networking** > **ExpressRoute**. The **Create ExpressRoute circuit** page will require you to complete the following fields:
 
-    | Property  | Value  |
-    |---|---|
-    | Circuit name | A meaningful name for your circuit, without any white space or special characters |
-    | Provider | The ExpressRoute provider with which you've registered your subscription  |
-    | Peering Location | A location enabled by the ExpressRoute provider in which to create your circuit |
-    | Bandwidth | Select your bandwidth, from 50 Mbps up to 10 Gbps. Start with a low value. You can increase it later with no interruption to service. However, you can't reduce the bandwidth if you set it too high initially. |
-    | SKU | Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geopolitical region, otherwise select **Premium** |
-    | Billing model | Select **Unlimited** to pay a flat fee regardless of usage, or **Metered** to pay according to the volume of traffic that enters and exist the circuit.
-    | Subscription | The subscription you've registered with your ExpressRoute provider |
-    | Resource group | The Azure resource group in which to create the circuit |
-    | Location | The Azure location in which to create the circuit |
+| Property  | Value  |
+|---|---|
+| Circuit name | A meaningful name for your circuit, without any white space or special characters |
+| Provider | The ExpressRoute provider with which you've registered your subscription  |
+| Peering Location | A location enabled by the ExpressRoute provider in which to create your circuit |
+| Bandwidth | Select your bandwidth, from 50 Mbps up to 10 Gbps. Start with a low value. You can increase it later with no interruption to service. However, you can't reduce the bandwidth if you set it too high initially. |
+| SKU | Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geopolitical region, otherwise select **Premium** |
+| Billing model | Select **Unlimited** to pay a flat fee regardless of usage, or **Metered** to pay according to the volume of traffic that enters and exist the circuit.
+| Subscription | The subscription you've registered with your ExpressRoute provider |
+| Resource group | The Azure resource group in which to create the circuit |
+| Location | The Azure location in which to create the circuit |
 
-    ![Creating a circuit using the Azure portal](../media/3-create-connection.png)
+![Creating a circuit using the Azure portal](../media/3-create-connection.png)
 
-1. Click **Create** and wait for the Microsoft side of the circuit to be set up. This may take several minutes.
-1. Once the circuit has been provisioned, you can use the Azure portal to view the properties. You'll see that the **Circuit status** is enabled, meaning that the Microsoft side of the circuit is ready to accept connections. The **Provider status** will be **Not provisioned** initially. This is because the provider hasn't configured their side of the circuit for connecting to your network. You send the provider the value in the **Service key** field to enable them to configure the connection. This can take several days. You can revisit this page to check the provider status.
+Circuit creation can take several minutes. Once the circuit has been provisioned, you can use the Azure portal to view the properties. You'll see that the **Circuit status** is enabled, meaning that the Microsoft side of the circuit is ready to accept connections. The **Provider status** will be **Not provisioned** initially. This is because the provider hasn't configured their side of the circuit for connecting to your network. You send the provider the value in the **Service key** field to enable them to configure the connection. This can take several days. You can revisit this page to check the provider status.
 
-    ![Provisioning a circuit using the Azure portal](../media/3-provision-circuit.png)
+![Provisioning a circuit using the Azure portal](../media/3-provision-circuit.png)
 
 ### Create peering configuration
 
