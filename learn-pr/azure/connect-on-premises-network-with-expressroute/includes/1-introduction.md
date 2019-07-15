@@ -10,8 +10,8 @@ In this module, you'll learn about the Azure ExpressRoute service, what it is, h
 
 In this module you will:
 
-- Identify the features and capabilities of ExpressRoute
-- Identify the use cases for using ExpressRoute to integrate traditional networks with Azure
+- Describe the features and capabilities of ExpressRoute
+- Describe the use cases for using ExpressRoute to integrate traditional networks with Azure
 
 ## Prerequisites
 
