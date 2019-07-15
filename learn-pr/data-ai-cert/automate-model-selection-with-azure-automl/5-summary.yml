@@ -18,15 +18,15 @@ quiz:
   questions:
   - content: "Which step below is not part of using AutoML?"
     choices: 
-    - content: "Define the machine learning objective and constraints."
+    - content: "Configure the compute target to run the experiment."
       isCorrect: false
-      explanation: "This is correct. Hyperparameters control how the model training executes and must be set before model training."
-    - content: "Launch the AutoML process."
+      explanation: "This is not correct. You must configure the compute target to use AutoML."
+    - content: "Select the experiment type."
       isCorrect: false
-      explanation: "That is not correct. Hyperparameters cannot be determined from the source data."
+      explanation: "That is not correct. You need to tell AutoML the experiment type."
     - content: "Deploy the model."
       isCorrect: true
-      explanation: "This is not correct.  A Hyperparameter is set before each model training execution."
+      explanation: "This is correct.  Deploying the model is separate from using AutoML."
   
   - content: "Which service below is not included as part of AutoML?"
     choices: 
