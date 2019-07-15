@@ -21,4 +21,4 @@ Using the AutoML capability of Azure Machine Learning involves several steps.
 
 1. **Submit the training run**. Finally, you submit the training run. 
 
-AutoML concurrently runs multiple model-training processes with different models and hyperparameter values. It will stop when it his the iteration limits you provide in configuration, or when it reaches the target value for the metrics you specified. The result will be a recommended model with associated hyperparameter values based on all the experiments run.
+AutoML concurrently runs multiple model-training processes with different models and hyperparameter values. It will stop when it hits the iteration limits you provide in configuration, or when it reaches the target value for the metrics you specified. The result will be a recommended model with associated hyperparameter values based on all the experiments run.
