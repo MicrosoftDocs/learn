@@ -62,7 +62,7 @@ Microsoft provides lots of tools to help you plan and complete the four phases o
 
 ![Migrate stage](../media/migrate.png)
 
-### Deploy receiving cloud infrastructure
+### Deploy target cloud infrastructure
 
 The scope for your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to pre-create the resources in Azure. The two tools you'll use to do the migration **Azure Site Recovery** and the **Azure Database Migration Service** will create the required Azure resources for you.
 

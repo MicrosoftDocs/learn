@@ -4,11 +4,11 @@ You've presented your findings to the IT Director and you now wish to continue w
 
 In this unit, you'll review Azure Site Recovery and how it can be used to migrate specific workloads to Azure.
 
-![The flow of migration from on-premises vCenter VMWare virtual machines to Azure with Azure Site Recovery](../media/vm-migration.png)
+
 
 ## What is Azure Site Recovery?
 
-![Screenshot of the Azure Backup and Site Recovery creation](../media/azure-site-recovery.png)
+![The flow of migration from on-premises vCenter VMWare virtual machines to Azure with Azure Site Recovery](../media/vm-migration.png)
 
 Azure Site Recovery is designed to manage a disaster recovery plan, and can replicate workloads from a primary site to a secondary site if there's an outage. When an issue occurs at the primary site, the Site Recovery service can be automatically invoked and the virtual machines that are protected will be replicated to a secondary location to continue running. The failover could be an on-premises to Azure failover, or a failover from one Azure region to another. 
 
@@ -39,19 +39,19 @@ There are also several settings that need to be configured for the task of migra
 - **Setup the target environment** - The target environment is set in the portal by selecting the Azure subscription and Resource Manger deployment model you wish to use. Select migrating VMware to Azure, Site Recovery will then verify a valid network exists in Azure that the migrated virtual machines will connect to
 - **Create a replication policy** - A replication policy contains settings such as a Recovery Point Objective (RPO) threshold. The policy is associated with the configuration server that has been deployed
 - **Enable replication** - Enable the replication the Recovery Service vault level.
-    - Configure the Source (the source is the configuration server, the machine type is 'virtual machines', the vSphere host is the vCenter server on-premises and the process server is the configuration server.)
-    - Configure the target (on the target selection, the target is Azure, the subscription is your Azure subscription, the resource group is your target resource group, the network selection is the target network you want migrated virtual machines to connect to, and the subnet is that of the target network)
-    - Select the virtual machines to migrate
-    - Configure the properties by selecting the domain account used by the process server to install the Mobility service on the VMware machines. Disks that aren't required to be replicated can be de-selected, by default all the disks used by a virtual machine are migrated
-    - Select the replication policy, this policy sets the App-consistent snapshot frequency, RPO threshold, and recovery point retention period
+  - Configure the Source (the source is the configuration server, the machine type is 'virtual machines', the vSphere host is the vCenter server on-premises and the process server is the configuration server.)
+  - Configure the target (on the target selection, the target is Azure, the subscription is your Azure subscription, the resource group is your target resource group, the network selection is the target network you want migrated virtual machines to connect to, and the subnet is that of the target network)
+  - Select the virtual machines to migrate
+  - Configure the properties by selecting the domain account used by the process server to install the Mobility service on the VMware machines. Disks that aren't required to be replicated can be de-selected, by default all the disks used by a virtual machine are migrated
+  - Select the replication policy, this policy sets the App-consistent snapshot frequency, RPO threshold, and recovery point retention period
 
 ## Starting the migration
-
-![Screenshot of the Azure Site Recovery dashboard](../media/azure-site-recovery-dashboard.png)
 
 Once the steps to configure the source and target environments are complete, the migration can take place.
 
 In the Azure portal, select the recovery point from which the virtual machine should failover/migrate to, and then select to have the machine shut down before beginning failover. After a period of time, check to ensure the virtual machine appears in Azure. Once it appears, right-click the virtual machine, and then select **Complete Migration**, which will finish the current migration and tidy up any temporary migration data.
+
+![Screenshot of the Azure Site Recovery dashboard](../media/azure-site-recovery-dashboard.png)
 
 ## Post migration steps
 
