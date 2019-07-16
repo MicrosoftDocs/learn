@@ -16,8 +16,8 @@ Before creating a **Project**, you can group the VMs into the various types of V
 
 After you create a **Project**, Azure Migrate needs you to complete two phases to produce an assessment:
 
-1. Discover your virtual machines
-1. Creating assessments
+1. Discover your virtual machines.
+1. Create assessments.
 
 ### Discover machines
 
@@ -30,9 +30,9 @@ The Azure portal will guide you through the process of downloading a **collector
 The collector uses VMware PowerCLI cmdlets to do agentless data collection on your VMware estate. The collector collects data about VM cores, memory, disk sizes, and network adapters. Where applicable the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 
 To receive and store the collected data, Azure Migrate requires that you open port 443 between your internal network and Azure for:
-- The collector and the Azure Migrate service
-- The collector and the vCenter Server
-- The On-premises VM and Log Analytics Workplace
+- The collector and the Azure Migrate service.
+- The collector and the vCenter Server.
+- The on-premises VM and Log Analytics Workplace.
 
 When the data collection is complete, it's pushed to your Azure Migrate project. On the Azure portal, you can now view all the discovered VMs, or download a report to review.
 
@@ -46,5 +46,5 @@ After these agents are installed and configured, they collect data like FQDN, OS
 
 Azure Migrate can now assess your environments readiness to be migrated to Azure. In the portal, select the Assessments section, and then select **Create assessment**. An assessment with default settings will be created. These default settings can be edited later by editing the properties of the assessment.
 
-![Screenshot of the Azure Migrate Assessment Overview screen](../media/assessment-overview.png)
+![Azure Migrate Assessment Overview screen](../media/assessment-overview.png)
 
