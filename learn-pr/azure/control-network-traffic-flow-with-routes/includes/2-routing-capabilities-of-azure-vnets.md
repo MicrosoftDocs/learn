@@ -33,28 +33,32 @@ Within Azure, there are additional system routes. Azure will create these routes
 
 - Virtual network peering
 - Service chaining
-
-   Both of these capabilities allow virtual networks within Azure to be connected together to allow virtual machines to communicate with each other, either within the same region or across regions.  This in turn creates additional routes within the default route table.  Service chaining enables you to override these routes by creating user-defined routes (UDRs) between peered networks.
-
-   The diagram below shows two virtual networks with peering configured, but with UDRs configured to route traffic through an NVA or a VPN Gateway.
-
-   ![Virtual network peering with User-defined routes](../media/2-vnet-peering-udrs.png)
-
 - Virtual Network Gateway
-  
-   Use a virtual network gateway to send encrypted traffic between Azure and on-premises over the internet, and to send encrypted traffic between Azure networks. A virtual network gateway contains routing tables and gateway services.
-
-   ![The structure of a Virtual Network Gateway](../media/2-vnet-gateway.png)
-
 - VirtualNetworkServiceEndpoint
 
-   Use Virtual Network endpoints extend your private address space in Azure by providing a direct connection to your Azure resources. This process will restrict the flow of traffic and allow your Azure virtual machines to access the Storage account directly from the private address space and deny access from a public virtual machine.  
+### Virtual network peering and service chaining
 
-   For every default route that is created there's an address space and next hop type associated with that route, which Azure will use to route the traffic
+Both of these capabilities allow virtual networks within Azure to be connected together to allow virtual machines to communicate with each other, either within the same region or across regions.  This in turn creates additional routes within the default route table.  Service chaining enables you to override these routes by creating user-defined routes (UDRs) between peered networks.
 
-System routes may make it easy for you to quickly get your environment up and running, but there will be many scenarios in which you'll want to control the flow of traffic within your network more closely. For example, you might want to route traffic through a network virtual appliance, or third-party firewall or router. This is possible with user-defined routes.
+The diagram below shows two virtual networks with peering configured, but with UDRs configured to route traffic through an NVA or a VPN Gateway.
+
+![Virtual network peering with User-defined routes](../media/2-vnet-peering-udrs.png)
+
+### Virtual Network Gateway
+  
+Use a virtual network gateway to send encrypted traffic between Azure and on-premises over the internet, and to send encrypted traffic between Azure networks. A virtual network gateway contains routing tables and gateway services.
+
+![The structure of a Virtual Network Gateway](../media/2-vnet-gateway.png)
+
+### VirtualNetworkServiceEndpoint
+
+Use Virtual Network endpoints extend your private address space in Azure by providing a direct connection to your Azure resources. This process will restrict the flow of traffic and allow your Azure virtual machines to access the Storage account directly from the private address space and deny access from a public virtual machine.  
+
+For every default route that is created there's an address space and next hop type associated with that route, which Azure will use to route the traffic
 
 ## Custom Routes
+
+System routes may make it easy for you to quickly get your environment up and running, but there will be many scenarios in which you'll want to control the flow of traffic within your network more closely. For example, you might want to route traffic through a network virtual appliance, or third-party firewall or router. This is possible with custom routes.
 
 You have two options for implementing custom routes. You can create a user-defined route, or use Border Gateway Protocol (BGP) to exchange routes between Azure and on-premises networks.
 
@@ -74,20 +78,19 @@ With user-defined routes, you aren't able to specify virtual network peering, *V
 
 ### Border gateway protocol
 
-A network gateway in your on-premises network can exchange routes with a virtual network gateway in Azure by using border gateway protocol (BGP).
-
-BGP is a routing protocol used to exchange routing information between two or more networks. With BGP, there's no need to configure routes manually.
+A network gateway in your on-premises network can exchange routes with a virtual network gateway in Azure by using border gateway protocol (BGP). BGP is a routing protocol used to exchange routing information between two or more networks. With BGP, there's no need to configure routes manually.
 
 The diagram below shows a topology with paths that can transit between Azure VPN Gateway and on-premises networks
 
 ![Diagram showing an example of using the Border Gateway Protocol](../media/2-bgp.png)
 
-Use BGP to advertise on-premises routes to Azure, whether you connect using Express Route or by using a VPN. These routes are added to the routing table in Azure with **Virtual network gateway** as the next hop type. THis type of routing supplants custom routes.
+Use BGP to advertise on-premises routes to Azure, whether you connect using Express Route or by using a VPN. These routes are added to the routing table in Azure with **Virtual network gateway** as the next hop type. This type of routing supplants custom routes.
 
 BGP (Border Gateway Protocol) is the standard routing protocol that is normally used to exchange routing and information between two or more networks.  BGP is used to transfer data and information between different host gateways such as the Internet or autonomous systems. BGP discovers prefixes (prefixes are subnets, for example, 10.0.0.0/16) from various networks by enabling connections from multiple gateways, which allows BGP gateways to learn of routes from other BGP peers.  These routes are then used to transfer data between gateways or routers.
 
 BGP offers network stability because routers can quickly change connections to send packets if a connection path goes down. BGP makes routing decisions based on paths, rules, or network policies. Each BGP router/gateway manages a local routing table to direct packets in transit, but this is used in conjunction with a routing table called routing information base (RIB). The Routing information base (RIB) contains route information from externally connected BGP peers and internal peers.
-BGP works with Azure Virtual Networks and communicates with Azure VPN Gateways and your on-premise VPNs.  This allows both Azure VPNs and on-premise VPNs to exchange routes between each other so that they inform the gateways on the availability and reachability of these routes. However, before enabling the BGP feature, you should make sure the VPN devices support BGP.
+
+BGP works with Azure Virtual Networks and communicates with Azure VPN Gateways and your on-premises VPNs. This allows both Azure VPNs and on-premises VPNs to exchange routes between each other so that they inform the gateways on the availability and reachability of these routes. However, before enabling the BGP feature, you should make sure the VPN devices support BGP.
 
 ## Route priority
 
