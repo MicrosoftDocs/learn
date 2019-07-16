@@ -99,9 +99,9 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 1. Run the following command to print the database connection string to the console:
 
     ::: zone pivot="pg"
-    
+
     ::: zone-end
-    
+
     ::: zone pivot="sql"
 
     ```bash
@@ -178,7 +178,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     AspNetUserRoles
     AspNetUsers
     AspNetUserTokens
-    
+
     (8 rows affected)
     ```
 
@@ -192,11 +192,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     <partial name="_LoginPartial" />
     ```
 
-1. Run the following command to build the project:
-
-    ```bash
-    dotnet build
-    ```
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
 1. Deploy the site by running the following command:
 
@@ -218,4 +214,108 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
 ## Customize the user account data
 
-1. 
+By default, Identity represents a user with an `IdentityUser` class. One way to extend the data being captured at registration time is to create a class deriving from `IdentityUser`. UI changes are also required to collect the additional user profile information. The following steps explain the process of collecting a first and last name for the registered user.
+
+1. Add the user registration files to the project:
+
+    ```bash
+    dotnet aspnet-codegenerator identity \
+        --dbContext ContosoPetsAuth \
+        --files "Account.Manage.Index;Account.Register" \
+        --userClass ContosoPetsUser \
+        --force
+    ```
+
+    The preceding command adds the following files to the *Areas/Identity* directory:
+
+    * *Data/ContosoPetsUser.cs*
+    * *Pages/Account/Manage/_ManageNav.cshtml*
+    * *Pages/Account/Manage/_ViewImports_.cshtml*
+    * *Pages/Account/Manage/Index.cshtml*
+    * *Pages/Account/Manage/Index.cshtml.cs*
+    * *Pages/Account/Manage/ManageNavPages.cs*
+    * *Pages/Account/Register.cshtml*
+    * *Pages/Account/Register.cshtml.cs*
+
+    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. *ContosoPetsAuth.cs* now references the newly created `ContosoPetsUser` class.
+
+1. Make the following changes to *Pages/Shared/_LoginPartial.cshtml*:
+
+    * Add `@using ContosoPets.Ui.Areas.Identity.Data` to the top.
+    * Change `@inject SignInManager<IdentityUser> SignInManager` to `@inject SignInManager<ContosoPetsUser> SignInManager`.
+    * Change `@inject UserManager<IdentityUser> UserManager` to `@inject UserManager<ContosoPetsUser> UserManager`.
+
+    The preceding step created the `ContosoPetsUser` class, which is to be used instead of the default `IdentityUser`. *Pages/Shared/_LoginPartial.cshtml* wasn't updated automatically, so the appropriate changes must be made by hand.
+
+    > [!TIP]
+    > As an alternative to manually editing the *_LoginPartial.cshtml* file, it can be deleted prior to running the scaffold tool. The *_LoginPartial.cshtml* file will be recreated with references to the new `ContosoPetsUser` class.
+
+1. Update *ContosoPetsUser.cs* so that it supports storage and retrieval of the additional user profile data. Add the following properties:
+
+    ```csharp
+    [Required]
+    [MaxLength(100)]
+    public string FirstName { get; set; }
+
+    [Required]
+    [MaxLength(100)]
+    public string LastName { get; set; }
+    ```
+
+    The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table.
+
+1. Add the following `using` statement to the top of *ContosoPetsUser.cs*:
+
+    ```csharp
+    using System.ComponentModel.DataAnnotations;
+    ```
+
+    The preceding resolves the data annotation attributes in the previous step.
+
+1. In *Register.cshtml*, add the following markup to the line after `<div asp-validation-summary="All" class="text-danger"></div>`:
+
+    ```cshtml
+    <div class="form-group">
+        <label asp-for="Input.FirstName"></label>
+        <input asp-for="Input.FirstName" class="form-control" />
+        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.LastName"></label>
+        <input asp-for="Input.LastName" class="form-control" />
+        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+    </div>
+    ```
+
+    With the preceding markup, a **First Name** and a **Last Name** text box are added to the user registration form.
+
+1. In *Register.cshtml.cs*, add the following code to support the name text boxes.
+    1. Add the following properties to the `InputModel` class:
+
+    ```csharp
+    [Required]
+    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+    [Display(Name = "First Name")]
+    public string FirstName { get; set; }
+
+    [Required]
+    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+    [Display(Name = "Last Name")]
+    public string LastName { get; set; }
+    ```
+
+    1. Modify the `OnPostAsync` method such that the `user` variable is assigned to the following:
+
+    ```csharp
+    var user = new ContosoPetsUser
+    {
+        FirstName = Input.FirstName,
+        LastName = Input.LastName,
+        UserName = Input.Email,
+        Email = Input.Email,
+    };
+    ```
+
+1. <!--TODO: Explain changes to Manage Index page -->
+
+1. <!--TODO: Run migration before deploy -->
