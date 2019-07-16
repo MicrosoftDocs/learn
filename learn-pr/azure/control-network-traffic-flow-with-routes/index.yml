@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of basic networking concepts
   - Familiarity with Azure virtual networking
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/control-network-traffic-flow-with-routes.svg
 levels:
 - beginner
 roles:

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Azure Solution Architect - Networking Infrastructure/manage-and-control-traffic-flows-in-your-azure-deployment-with-routes</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-16.0%" y="-10.0%" width="132.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-16.0%" y="-10.0%" width="132.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-16.0%" y="-10.0%" width="132.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Solution-Architect---Networking-Infrastructure-2" transform="translate(-50.000000, -260.000000)">
+            <g id="Azure-Solution-Architect---Networking-Infrastructure/manage-and-control-traffic-flows-in-your-azure-deployment-with-routes" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(28.250454, 38.553755) scale(-1, -1) rotate(-195.000000) translate(-28.250454, -38.553755) translate(15.750454, 18.553755)">
+                            <path d="M1.35437299,11.414779 L14.9115318,0.517262953 C15.712067,-0.167073301 16.9385862,0.165870751 17.2927127,1.16364506 L23.6572145,17.4689841 C24.1960371,18.7908998 22.815778,20.0618266 21.5483155,19.4437556 L16.6322143,16.9734236 L10.7960867,38.4212402 C10.6125005,39.1153561 10.0251193,39.2708359 9.33996627,39.0848481 L2.86844097,37.378316 C2.18328797,37.1923282 1.66181471,36.6779885 1.8454009,35.9838725 L7.68278231,14.5440606 L2.20609721,14.1932248 C0.801970255,14.0860731 0.270540796,12.2962179 1.35437299,11.414779 Z" id="Fill-1-Copy" fill="#FFFFFF"></path>
+                            <path d="M17.5702267,0.978051523 L24.0700817,17.1641553 C24.6203634,18.4764043 23.2107505,19.7380372 21.916333,19.124486 L16.8956816,16.6722186 L11.3482003,37.001855 L10.0901724,36.6793984 C7.90131075,36.1018498 6.86298844,34.4508546 7.28480401,32.9006541 L16.3912009,0.00185499032 C16.9062891,0.0906742966 17.372037,0.435265979 17.5702267,0.978051523 Z" id="Combined-Shape" fill="#E6E6E6"></path>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-4)" mask="url(#mask-2)">
+                        <g transform="translate(70.250454, 38.553755) scale(-1, -1) rotate(-195.000000) translate(-70.250454, -38.553755) translate(57.750454, 18.553755)">
+                            <path d="M1.35437299,11.414779 L14.9115318,0.517262953 C15.712067,-0.167073301 16.9385862,0.165870751 17.2927127,1.16364506 L23.6572145,17.4689841 C24.1960371,18.7908998 22.815778,20.0618266 21.5483155,19.4437556 L16.6322143,16.9734236 L10.7960867,38.4212402 C10.6125005,39.1153561 10.0251193,39.2708359 9.33996627,39.0848481 L2.86844097,37.378316 C2.18328797,37.1923282 1.66181471,36.6779885 1.8454009,35.9838725 L7.68278231,14.5440606 L2.20609721,14.1932248 C0.801970255,14.0860731 0.270540796,12.2962179 1.35437299,11.414779 Z" id="Fill-1-Copy" fill="#FFFFFF"></path>
+                            <path d="M17.5702267,0.978051523 L24.0700817,17.1641553 C24.6203634,18.4764043 23.2107505,19.7380372 21.916333,19.124486 L16.8956816,16.6722186 L11.3482003,37.001855 L10.0901724,36.6793984 C7.90131075,36.1018498 6.86298844,34.4508546 7.28480401,32.9006541 L16.3912009,0.00185499032 C16.9062891,0.0906742966 17.372037,0.435265979 17.5702267,0.978051523 Z" id="Combined-Shape" fill="#E6E6E6"></path>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-5)" mask="url(#mask-2)">
+                        <g transform="translate(46.250454, 62.553755) scale(-1, -1) rotate(-15.000000) translate(-46.250454, -62.553755) translate(33.750454, 42.553755)">
+                            <path d="M1.35437299,11.414779 L14.9115318,0.517262953 C15.712067,-0.167073301 16.9385862,0.165870751 17.2927127,1.16364506 L23.6572145,17.4689841 C24.1960371,18.7908998 22.815778,20.0618266 21.5483155,19.4437556 L16.6322143,16.9734236 L10.7960867,38.4212402 C10.6125005,39.1153561 10.0251193,39.2708359 9.33996627,39.0848481 L2.86844097,37.378316 C2.18328797,37.1923282 1.66181471,36.6779885 1.8454009,35.9838725 L7.68278231,14.5440606 L2.20609721,14.1932248 C0.801970255,14.0860731 0.270540796,12.2962179 1.35437299,11.414779 Z" id="Fill-1-Copy" fill="#FFFFFF"></path>
+                            <path d="M17.5702267,0.978051523 L24.0700817,17.1641553 C24.6203634,18.4764043 23.2107505,19.7380372 21.916333,19.124486 L16.8956816,16.6722186 L11.3482003,37.001855 L10.0901724,36.6793984 C7.90131075,36.1018498 6.86298844,34.4508546 7.28480401,32.9006541 L16.3912009,0.00185499032 C16.9062891,0.0906742966 17.372037,0.435265979 17.5702267,0.978051523 Z" id="Combined-Shape" fill="#E6E6E6"></path>
+                        </g>
+                    </g>
+                    <ellipse id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="48.173913" cy="35" rx="2.17391304" ry="2"></ellipse>
+                    <ellipse id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="48.173913" cy="19" rx="2.17391304" ry="2"></ellipse>
+                    <ellipse id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="48.173913" cy="27" rx="2.17391304" ry="2"></ellipse>
+                    <ellipse id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="69.173913" cy="65" rx="2.17391304" ry="2"></ellipse>
+                    <ellipse id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="69.173913" cy="73" rx="2.17391304" ry="2"></ellipse>
+                    <ellipse id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="26.173913" cy="65" rx="2.17391304" ry="2"></ellipse>
+                    <ellipse id="Oval" fill="#FFFFFF" mask="url(#mask-2)" cx="26.173913" cy="73" rx="2.17391304" ry="2"></ellipse>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
