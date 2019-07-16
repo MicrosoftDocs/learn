@@ -62,7 +62,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you'll st
 
     If the command doesn't output a path, you'll need to set and export this variable.
 
-    To do so, you first need to locate where Java is installed on your system. After that, you need to set and export the `JAVA_HOME` variable.
+    To do so, you first need to locate where Java is installed on your system. Then you set and export the `JAVA_HOME` variable.
 
     Here's an example on Windows:
 
@@ -136,12 +136,12 @@ The SonarCloud scanner runs Java code during the scanning process. So, you'll st
 
     This command uses the information you stored in variables and other information to help the scanner know where to store the results:
 
-      * `/k:` specifies your project key
-      * `/d:sonar.host.url` specifies where to upload the results
-      * `/d:sonar.login` specifies your token
-      * `/d:sonar.cs.opencover.reportsPaths` specifies where to find code coverage information
-      * `/d:sonar.exclusions` specifies code paths to exclude from the scan
-      * `/o:` specifies your SonarCloud organization
+      * `/k:` specifies your project key.
+      * `/d:sonar.host.url` specifies where to upload the results.
+      * `/d:sonar.login` specifies your token.
+      * `/d:sonar.cs.opencover.reportsPaths` specifies where to find code coverage information.
+      * `/d:sonar.exclusions` specifies code paths to exclude from the scan.
+      * `/o:` specifies your SonarCloud organization.
 
     In [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you analyzed the amount of code covered by unit tests. SonarCloud can also display this coverage. The `/d:sonar.cs.opencover.reportsPaths` specifies where to find that code coverage information.
 
@@ -219,11 +219,11 @@ Here you'll see the results from the SonarCloud portal.
 
     You can select **See Rule** to learn more about the rationale behind this recommendation.
 
-    In practice, your team assesses each bug and prioritizes whether to fix it. This bug is categorized as **Minor**. You can use this rank its importance among other reported issues.
+    In practice, your team assesses each bug and prioritizes whether to fix it. This bug is categorized as **Minor**. You can use this information to rank its importance among other reported issues.
 
 1. As an optional step, return to the **Overview** tab and explore the results from other categories.
 
-    For example, in the **Security** section, you can examine reported vulnerabilities and security hotspots.
+    For example, in the **Security** section, you can examine reported vulnerabilities and security hot spots.
 
     The **Maintainability** section provides an estimate of your technical debt time and your code smells.
 

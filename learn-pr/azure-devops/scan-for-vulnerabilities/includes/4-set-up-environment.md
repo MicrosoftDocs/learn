@@ -2,7 +2,7 @@ In this part, you'll make sure that your Azure DevOps organization is set up to 
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
 
-This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards using the Basic process.
+This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards by using the Basic process.
 
 ## Run the template
 
@@ -18,21 +18,21 @@ You can continue using your existing project if you completed the previous modul
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
-1. Click **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - SonarCloud**.
-1. Select **Fork repository on GitHub** and then click **Authorize**. If a window appears, authorize access to your GitHub account.
+1. Select **Sign In**, and accept the usage terms.
+1. On the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - SonarCloud**.
+1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
-    > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ web site project. The template uses your existing fork.
-1. Click **Create Project**.
+    > You need to select this option for the template to connect to your GitHub repository. Select this option even if you already forked the _Space Game_ web site project. The template uses your existing fork.
+1. Select **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
     It takes a few moments for the template to run.
-1. Click **Navigate to project** to go to your project in Azure DevOps.
+1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/scan-for-vulnerabilities/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/scan-for-vulnerabilities/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps to ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Move the work item to Doing
 
@@ -52,14 +52,14 @@ Recall that **Check code for vulnerabilities** relates to examining the codebase
 
 To set up the work item:
 
-1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
+1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Check code for vulnerabilities** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Check code for vulnerabilities** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
-1. Move the work item from the **To Do** to the **Doing** column.
+1. Move the work item from the **To Do** column to the **Doing** column.
 
     ![Azure Boards showing the card in the Doing column](../media/4-azure-boards-wi4-doing.png)
 

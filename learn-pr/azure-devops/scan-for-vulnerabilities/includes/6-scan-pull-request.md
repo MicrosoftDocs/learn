@@ -1,4 +1,4 @@
-At this point, your build configuration scans your code whenever a change is pushed to the repository. But you may have noticed the scanning process adds time to the overall build process. You don't want to scan on every small commit. Instead, you want to scan less often, such as on pull requests only. You can use conditions in your pipeline to accomplish this.
+At this point, your build configuration scans your code whenever a change is pushed to the repository. But you might have noticed the scanning process adds time to the overall build process. You don't want to scan on every small commit. Instead, you want to scan less often, such as on pull requests only. You can use conditions in your pipeline to accomplish this.
 
 In this part, you'll modify your build configuration to run the SonarCloud scanner only when the build is happening in response to a pull request.
 
@@ -19,11 +19,11 @@ In this part, you'll modify your build configuration to run the SonarCloud scann
 In Azure Pipelines, a _condition_ enables you to run a task or job based on the state of the pipeline. Some of the conditions you can specify are:
 
 > [!div class="checklist"]
-> * Only when all previous dependent tasks have succeeded
-> * Even if a previous dependency has failed, unless the run was canceled
-> * Even if a previous dependency has failed, even if the run was canceled
-> * Only when a previous dependency has failed
-> * Some custom condition
+> * Only when all previous dependent tasks have succeeded.
+> * Even if a previous dependency has failed, unless the run was canceled.
+> * Even if a previous dependency has failed, even if the run was canceled.
+> * Only when a previous dependency has failed.
+> * Some custom condition.
 
 Here's a basic example:
 
@@ -41,15 +41,15 @@ Here's the condition that's used if you don't specify one:
 condition: succeeded()
 ```
 
-`succeeded()` is a built-in function that checks whether the previous task succeeded. If the previous task failed, this and subsequent tasks with the same condition are skipped.
+The `succeeded()` built-in function checks whether the previous task succeeded. If the previous task failed, this task and subsequent tasks with the same condition are skipped.
 
-Here, you want to build a condition that specifies:
+Here, you want to build a condition that specifies that:
 
-* The previous task succeeded
-* The build is for a pull request
-* The pull request is against the `master` branch
+* The previous task succeeded.
+* The build is for a pull request.
+* The pull request is against the `master` branch.
 
-To build this condition, you use the built-in `and()` function. This function checks whether each of its conditions are true. If any condition is not true, the overall condition fails.
+To build this condition, you use the built-in `and()` function. This function checks whether each of its conditions is true. If any condition isn't true, the overall condition fails.
 
 To get the build reason, you use the built-in `Build.Reason` variable. This variable is set to `PullRequest` when the build is for a pull request.
 
@@ -73,7 +73,7 @@ condition: |
 
 The first condition in the `and()` function checks whether the previous task succeeded. The second condition checks whether the build reason is a pull request. The third function checks whether the target branch of the pull request is `master`.
 
-In YAML, the `|` syntax enables you to define a string that spans multiple lines. You could define the condition on a single line, but we write it this way to make it more readable.
+In YAML, you use the `|` syntax to define a string that spans multiple lines. You could define the condition on a single line, but we write it this way to make it more readable.
 
 ## Scan only pull requests to the master branch
 
@@ -93,11 +93,11 @@ In this part, you'll provide a condition to each build task that relates to Sona
     git push origin security-scan
     ```
 
-1. From a browser, navigate to [github.com](https://www.github.com?azure-portal=true) and sign in.
-1. Navigate to your **mslearn-tailspin-spacegame-web** repository.
-1. From the dropdown menu, navigate to your `security-scan` branch.
+1. From a browser, go to [github.com](https://www.github.com?azure-portal=true) and sign in.
+1. Go to your **mslearn-tailspin-spacegame-web** repository.
+1. On the drop-down menu, go to your `security-scan` branch.
 
-1. Click the **New pull request** button to start your pull request.
+1. Select the **New pull request** button to start your pull request.
 
 1. Ensure that **base** specifies your forked repository and not Microsoft's repository.
 
@@ -111,9 +111,9 @@ In this part, you'll provide a condition to each build task that relates to Sona
     * Description:
     > _Run SonarCloud less often to reduce build times for normal CI builds._
 
-1. Click the **Create pull request** button to complete your pull request.
+1. Select the **Create pull request** button to complete your pull request.
 
-    Remember, this step does not merge any code. It tells others that you have changes that you are proposing be merged.
+    Remember, this step doesn't merge any code. It tells others that you have changes that you're proposing be merged.
 
     Just like when you push a branch to GitHub, by default a pull request triggers Azure Pipelines to build your application.
 
@@ -121,7 +121,7 @@ In this part, you'll provide a condition to each build task that relates to Sona
 
     You see that the build happens two times.
 
-    ![pull request two builds](../media/6-ci-pr-builds.png)
+    ![Pull request triggers two builds](../media/6-ci-pr-builds.png)
 
     The build shown on the bottom is the first build. Recall that Azure Pipelines builds your application each time you push up a branch. This build relates to the `git push` command you just ran. This kind of build is called a _CI build_.
 
