@@ -21,7 +21,7 @@ The **next hop type** shows the network path taken by traffic sent to each addre
 
 - **Virtual Network**. A route is created in the address prefix, which represents each address range created at the virtual network level. If there are multiple addresses ranges specified, then multiple routes are created for each address range.
 - **Internet**. The default system route of 0.0.0.0/0 routes any address range to the Internet unless you override Azure's default route with a custom route.
-- **None**. Any traffic routed to the hop type of **None,** is dropped, and doesn't get routed outside the subnet. By default, the following IP v4 private address prefixes are created: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16. The shared address space prefix, 100.64.0.0/10 is also added with a next hop of None. All these address ranges are considered to be not globally routable.
+- **None**. Any traffic routed to the hop type of **None** is dropped, and doesn't get routed outside the subnet. By default, the following IP v4 private address prefixes are created: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16. The shared address space prefix, 100.64.0.0/10 is also added with a next hop of None. All these address ranges are considered to be not globally routable.
 
 You can replace this default address prefixes by assigning your own address range, and Azure will replace one of the defaults prefixes with the one you specify with a hop type of **Virtual network**.
 
@@ -31,7 +31,7 @@ The diagram below gives an overview of system routes and how traffic flows betwe
 
 Within Azure, there are additional system routes. Azure will create these routes if you enable the following capabilities:
 
-- Virtual network peering (virtual network Peering)
+- Virtual network peering
 - Service chaining
 
    Both of these capabilities allow virtual networks within Azure to be connected together to allow virtual machines to communicate with each other, either within the same region or across regions.  This in turn creates additional routes within the default route table.  Service chaining enables you to override these routes by creating user-defined routes (UDRs) between peered networks.
