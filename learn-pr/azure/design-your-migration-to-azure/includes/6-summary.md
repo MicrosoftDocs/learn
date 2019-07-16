@@ -6,8 +6,8 @@ You also learned about a selection of tools offered to assist in your migration.
 
 To learn more about the tools and services available to help you migrate to Azure, visit the following articles.
 
-- [Azure Migrate](https://docs.microsoft.com/en-us/azure/migrate/migrate-overview)
-- [Azure Site Recovery](https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-overview)
-- [Azure Database Migration Service](https://docs.microsoft.com/en-us/azure/dms/dms-overview)
-- [Physical server to Azure disaster recovery architecture](https://docs.microsoft.com/en-gb/azure/site-recovery/physical-azure-architecture)
-- [Hyper-V to Azure disaster recovery architecture](https://docs.microsoft.com/en-gb/azure/site-recovery/hyper-v-azure-architecture)
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)
+- [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
+- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Physical server to Azure disaster recovery architecture](https://docs.microsoft.com/azure/site-recovery/physical-azure-architecture)
+- [Hyper-V to Azure disaster recovery architecture](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-architecture)
