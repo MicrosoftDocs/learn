@@ -1,4 +1,4 @@
-Azure Migration enables you to assess your current On-premises workloads. Once assessed, Azure Migration will then make recommendations on the size of VM you'll need to provision.
+Azure Migrate enables you to assess your current On-premises workloads. Once assessed, Azure Migrate will then make recommendations on the size of VM you'll need to provision.
 
 In your role in the business, you've been asked to plan the migration of their On-premises environment to Azure. As the server workloads are primarily VMware-based, you want to begin with those machines. You want to assess readiness for the move to Azure and identify estimated costs for the resources those machines will consume, so that the management team can set the budgets.
 
