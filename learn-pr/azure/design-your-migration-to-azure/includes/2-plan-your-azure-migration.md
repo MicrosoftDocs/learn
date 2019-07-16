@@ -1,16 +1,16 @@
 Your first task is to plan your company's migration to Azure. You have a set amount of time to put this plan together before presenting it to the IT Director and other leaders around the business.
 
-In this unit, you'll cover some of the considerations and methods you can use to plan for your migration to Azure. Every situation is different but, by following some principles, you can achieve your goals in the best possible way, in the shortest amount of time.
+In this unit, you'll cover some of the considerations and methods you can use to plan for your migration to Azure. Every situation is different, but by following some principles, you can achieve your goals in the best possible way in the shortest amount of time.
 
-## Planning your migration to Azure
+## Plan your migration to Azure
 
 ![Stages of migration, Assess, Migrate, Optimize, and Monitor](../media/planning-process.png)
 
-You can help improve the chances of a successful migration by assessing and planning the scope of work, before you begin any migration activity. Implementing the plan will reduce the likelihood of issues arising further down the line. Consider taking a four phased approach to your company's migration planning.
+You can help improve the chances of a successful migration by assessing and planning the scope of work, before you begin any migration activity. Implementing the plan will reduce the likelihood of issues arising further down the line. Consider taking a four-phased approach to your company's migration planning.
 
 ![Assess stage](../media/assess.png)
 
-### Migration Scope and Planning
+### Migration scope and planning
 
 Before you do anything, you should decide which servers, applications, and services are in the scope for migration. You may tie the migration work in to a data center consolidation project, and try to use the exercise to remove outdated hardware from your environment. Once you know what the goal is, you can start involving people across the business who will be affected, and have an interest in the work.
 
@@ -72,17 +72,17 @@ In other situations, you may need to set up resources in Azure to have them avai
 
 Each tool will guide you through the migration, and the steps to complete them are covered in future units. At a high level these steps are:
 
-1. Prepare the source (vCenter Server) and target (Azure) environments
-1. Set up and start the replication between the two
-1. Test the replication has worked
-1. Failover from the source servers to Azure
+1. Prepare the source (vCenter Server) and target (Azure) environments.
+1. Set up and start the replication between the two.
+1. Test that the replication has worked.
+1. Failover from the source servers to Azure.
 
 For the Database migrations, the high-level steps are:
 
-1. Assess you on-premises databases
-1. Migrate the schemas
-1. Create and run an Azure Database Migration Service project to move the data
-1. Monitor the migration
+1. Assess your on-premises databases.
+1. Migrate the schemas.
+1. Create and run an Azure Database Migration Service project to move the data.
+1. Monitor the migration.
 
 ### Decommission on-premises infrastructure
 
