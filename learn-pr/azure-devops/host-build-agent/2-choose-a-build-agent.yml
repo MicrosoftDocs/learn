@@ -24,7 +24,7 @@ quiz:
     - content: "A self-hosted agent"
       isCorrect: true
       explanation: "Although the build completes within the allowed time, you might need a self-hosted agent to accommodate the required amount of disk space your build needs."
-  - content: "Say you're builing an application that runs on macOS, Linux, and Windows. How might you build for each platform you target?"
+  - content: "Say you're building an application that runs on macOS, Linux, and Windows. How might you build for each platform you target?"
     choices:
     - content: "Create a build pipeline for each platform."
       isCorrect: false
