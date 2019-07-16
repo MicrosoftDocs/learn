@@ -6,7 +6,7 @@ In this unit, you'll learn how to create and use Azure circuits to connect your 
 
 ExpressRoute is supported across all regions and locations. To implement ExpressRoute, you need to work with an ExpressRoute partner.  The partner provides the edge service (an authorized and authenticated connection that operates through a partner-controlled router) that is responsible for extending your network to the Microsoft cloud. The partner sets up connections to an endpoint in an ExpressRoute location (implemented by a Microsoft edge-router), enabling you to peer your on-premises networks with the virtual networks available through the endpoint. These connections are referred to as *circuits*.
 
-![High-level overview of Azure ExpressRoute Service  ](../media/3-azure-expressroute-overview.png)
+![High-level overview of Azure ExpressRoute Service  ](../media/3-azure-expressroute-overview.svg)
 
 A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge-routers. A circuit is established across a private wire rather than the public Internet. Your on-premises network is connected to the ExpressRoute provider's edge routers. The Microsoft edge-routers provide the entry point to the Microsoft cloud.
 
@@ -30,7 +30,7 @@ ExpressRoute supports two peering schemes:
 - Use a private peering to connect to Azure IaaS and PaaS services deployed inside Azure virtual networks. The resources that you access must all be located in one or more Azure virtual networks with private IP addresses; you can't access resources through their public IP address over a private peering.
 - Use the Microsoft peering to connect to Azure PaaS services, Office 365 services, and Dynamics 365.
 
-![Azure peering](../media/3-azure-peering.png)
+![Azure peering](../media/3-azure-peering.svg)
 
 > [!NOTE]
 > The Azure portal also enables you to configure public peering. This form of peering enables you to connect to the public addresses exposed by Azure services. However, this peering is deprecated and is not available for new circuits. This module does not describe public peering.

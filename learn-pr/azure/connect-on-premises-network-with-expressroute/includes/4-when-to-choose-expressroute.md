@@ -49,7 +49,7 @@ An Azure site-to-site VPN connection enables you to connect your on-premises net
 
 ### Point-to-site VPN
 
-With voint-to-point VPN, you can establish a secure connection to a network from individual computers located on-premises. This solution is useful for someone who wants to connect to Azure from remote locations such as home or customer site.  Point-to-site is only useful to use if you have only a few clients that need to connect to a virtual network.
+With point-to-point VPN, you can establish a secure connection to a network from individual computers located on-premises. This solution is useful for someone who wants to connect to Azure from remote locations such as home or customer site.  Point-to-site is only useful to use if you have only a few clients that need to connect to a virtual network.
 
 ### Azure ExpressRoute versus site-to-site and point-to-site VPN connections
 
