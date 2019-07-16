@@ -19,9 +19,13 @@ Users authenticate in two stages:
 
 Let’s consider a basic scenario where identity is required: a user in a web browser needs to authenticate to a web application.  Consider the following diagram for this scenario:
 
-![Screenshot showing a basic scenario where identity is required](../media/2-azure-ad-open-id-connect.png)
+![Screenshot showing a basic scenario where identity is required](../media/2-azure-ad-open-id-connect.svg)
 
-When the user requests a secured resource, the web application redirects the request to the identity provider, which requests and checks the user's authentication credentials. If the user sends correct credentials, the provider returns a security token to the user and redirects the user to the resource they originally requested. The user sends the security token to the web application, which uses the token to check that the identity provider has performed the authentication.
+1. The user requests a secured resource, in this case a web application.
+1. The web application redirects the request to the identity provider which requests and checks the user's authentication credentials. 
+1. If the user sends correct credentials, the provider returns a security token to the user and redirects the user to the resource they originally requested.
+1. The user sends the security token to the web application.
+1. The web application uses the token to verify that the identity provider has performed the authentication.
 
 After this process of authentication, in which the user is positively identified, the web application must authorize the user's access to resources. Authorization is the process by which the web application checks whether the user is permitted to access the requested resource.
 
@@ -39,7 +43,7 @@ OpenID Connect is an authentication layer that is built on top of OAuth 2.0. It 
 
 JSON Web Token is an open international standard that defines how applications can exchange data securely as digitally signed messages. The content of each token is not encrypted, but the message is signed with the private key of the identity provider. By checking the signature with the corresponding public key, applications can prove that the token is issued by the identity provider and has not been tampered with.
 
-![OpenID authentication](../media/2-openid-connect-auth-flow.png)
+![OpenID authentication](../media/2-openid-connect-auth-flow.svg)
 
 This diagram shows how the client application, the application server, and the identity provider communicate in an OpenID Connect authentication request. The client may be a mobile app or a desktop application, but in this case is a web browser. The application server is usually a web server hosting web pages or a web API. The identity provider in the middle, is Azure AD. When the web browser navigates to the web application, the web server needs the user to be authenticated. It redirects the browser to Azure AD and provides its own client ID, which has been registered in Azure AD. When the user has successfully authenticated against Azure AD, the provider redirects the browser to URI on the web server.
 
