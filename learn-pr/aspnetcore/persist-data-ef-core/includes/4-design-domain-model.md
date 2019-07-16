@@ -12,9 +12,9 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     The preceding command:
 
-    * Navigates to the *Models* directory of the *ContosoPets.Domain* project.
-    * Creates files named *Product.cs*, *ProductOrder.cs*, *Order.cs*, and *Customer.cs* in the *Models* directory.
-    * Navigates back to the root of the *ContosoPets.Api* project.
+    * Navigates to the *:::no-loc text="Models":::* directory of the *:::no-loc text="ContosoPets.Domain":::* project.
+    * Creates files named *:::no-loc text="Product.cs":::*, *:::no-loc text="ProductOrder.cs":::*, *:::no-loc text="Order.cs":::*, and *:::no-loc text="Customer.cs":::* in the *:::no-loc text="Models":::* directory.
+    * Navigates back to the root of the *:::no-loc text="ContosoPets.Api":::* project.
 
     The newly created files will ultimately support generation of the following database structure:
 
@@ -30,15 +30,15 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     |Dependent entity|Principal entity|Foreign key property|
     |----------------|----------------|--------------------|
-    |Orders          |Customers       |CustomerId          |
-    |ProductOrders   |Orders          |OrderId             |
-    |ProductOrders   |Products        |ProductId           |
+    |`Orders`        |`Customers`     |`CustomerId`        |
+    |`ProductOrders` |`Orders`        |`OrderId`           |
+    |`ProductOrders` |`Products`      |`ProductId`         |
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-    The *Product.cs*, *ProductOrder.cs*, *Order.cs*, and *Customer.cs* files appear in the *ContosoPets.Domain/Models* folder.
+    The *:::no-loc text="Product.cs":::*, *:::no-loc text="ProductOrder.cs":::*, *:::no-loc text="Order.cs":::*, and *:::no-loc text="Customer.cs":::* files appear in the *:::no-loc text="ContosoPets.Domain/Models":::* directory.
 
-1. Add the following code to *Models/Product.cs*. Save your changes.
+1. Add the following code to *:::no-loc text="Models/Product.cs":::*. Save your changes.
 
     ```csharp
     using System.Collections.Generic;
@@ -73,7 +73,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     * A *navigation property*, named `ProductOrders`, is defined on the principal entity `Product`. A navigation property contains a reference to a related entity and enables loading of related entities without explicitly joining them in a query.
     * A one-to-many relationship is established between the `Product` entity and the `ProductOrder` entity.
 
-1. Add the following code to *Models/ProductOrder.cs*. Save your changes.
+1. Add the following code to *:::no-loc text="Models/ProductOrder.cs":::*. Save your changes.
 
     ```csharp
     namespace ContosoPets.Domain.Models
@@ -97,7 +97,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     * The `Order` and `Product` navigation properties represent foreign key relationships to be created in the database. The generated `ProductOrders` table will contain foreign key columns named `OrderId` and `ProductId` to establish this relationship.
     * As a best practice, the `OrderId` and `ProductId` properties are included. If the properties aren't included, EF Core infers their inclusion in the entity as *shadow properties*. Shadow properties aren't defined in the entity but are defined in the generated EF Core model.
 
-1. Add the following code to *Models/Customer.cs*. Save your changes.
+1. Add the following code to *:::no-loc text="Models/Customer.cs":::*. Save your changes.
 
     ```csharp
     using System.Collections.Generic;
@@ -137,7 +137,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     * A navigation property named `Orders` is defined on the principal entity `Customer`.
     * A one-to-many relationship is established between the `Customer` entity and the `Order` entity.
 
-1. Add the following code to *Models/Order.cs*. Save your changes.
+1. Add the following code to *:::no-loc text="Models/Order.cs":::*. Save your changes.
 
     ```csharp
     using System;
@@ -171,7 +171,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     * A one-to-many relationship is established between the `Customer` entity and the `Order` entity.
     * A one-to-many relationship is established between the `Order` entity and the `ProductOrder` entity.
 
-1. In *ContosoPets.DataAccess/Data/ContosoPetsContext.cs*, replace the `// Add the DbSet<T> properties` comment with the following code. Save your changes.
+1. In *:::no-loc text="ContosoPets.DataAccess/Data/ContosoPetsContext.cs":::*, replace the `// Add the DbSet<T> properties` comment with the following code. Save your changes.
 
     ```csharp
     public DbSet<Customer> Customers { get; set; }
@@ -182,7 +182,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     The `DbSet<T>` properties correspond to tables to be created in the database. The table names will match the `DbSet<T>` property names in the `ContosoPetsContext` class.
 
-1. In *ContosoPetsContext.cs*, replace the `// Add the ContosoPets.Domain.Models using statement` comment with the following code. Save your changes.
+1. In *:::no-loc text="ContosoPetsContext.cs":::*, replace the `// Add the ContosoPets.Domain.Models using statement` comment with the following code. Save your changes.
 
     ```csharp
     using ContosoPets.Domain.Models;
@@ -202,15 +202,15 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     In the preceding command:
 
-    * The migration is given a name of *InitialCreate*.
+    * The migration is given a name of *:::no-loc text="InitialCreate":::*.
     * The `--project` option provides the location of the project to be used for creating the migration.
-    * The `--context` option specifies the name of the class in the *ContosoPets.DataAccess* project, which derives from `DbContext`.
+    * The `--context` option specifies the name of the class in the *:::no-loc text="ContosoPets.DataAccess":::* project, which derives from `DbContext`.
 
 1. Refresh file explorer.
 
-    A new *Migrations* directory appears in the *ContosoPets.DataAccess* project root. The directory contains a *\<timestamp>_InitialCreate.cs* file describing database changes to be translated to a Data Definition Language (DDL) change script.
+    A new *:::no-loc text="Migrations":::* directory appears in the *:::no-loc text="ContosoPets.DataAccess":::* project root. The directory contains a *:::no-loc text="&lt;timestamp&gt;_InitialCreate.cs":::* file describing database changes to be translated to a Data Definition Language (DDL) change script.
 
-1. Run the following command to apply the *InitialCreate* migration:
+1. Run the following command to apply the *:::no-loc text="InitialCreate":::* migration:
 
     ```bash
     dotnet ef database update \
@@ -226,7 +226,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     db -Q "SELECT TABLE_NAME AS 'Table' FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
     ```
 
-    The following output appears, which confirms the *InitialCreate* migration successfully created the tables.
+    The following output appears, which confirms the *:::no-loc text="InitialCreate":::* migration successfully created the tables.
 
     ```console
     Table
@@ -246,7 +246,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     db -i $setupWorkingDirectory/listkeys.sql -Y 35
     ```
 
-    The *listkeys.sql* script referenced in the preceding command uses the `sp_pkeys` and `sp_fkeys` system stored procedures in the database. The following result set appears:
+    The *:::no-loc text="listkeys.sql":::* script referenced in the preceding command uses the `sp_pkeys` and `sp_fkeys` system stored procedures in the database. The following result set appears:
 
     ```console
     Table          Column  Primary key
