@@ -6,8 +6,6 @@ In this exercise, you'll configure an application to authenticate users against 
 
 ## Configure and deploy the application that uses OpenID Connect to authenticate users
 
-<!-- 1. Switch back to the default directory for your subscription (**not Learn Module AAD Tenant**). Sign in if prompted. -->
-
 1. Run the following command in Cloud Shell to clone the repo that contains the source for our app.
 
     ```bash
@@ -33,7 +31,7 @@ In this exercise, you'll configure an application to authenticate users against 
     | `<domain-name>` | Your AAD tenant name |
     | `<TenantID-GUID>` | Set to the **Directory (tenant) ID** you noted in the previous exercise |
     | `<ClientID-GUID>` | Set to the **Application (client) ID** you noted in the previous exercise |
-    
+
     Once complete, your file will look similar to this:
 
     ```json
@@ -70,7 +68,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL of the web service you created above:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), switch back to the Learn Module AAD Tenant directory you created earlier. Sign in if prompted.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), switch back to the Learn Module AAD Tenant directory you created earlier by selecting your user name in the top right corner and then selecting **Switch directory**. Choose the directory you created and sign in if prompted.
 
 1. In the navigation bar on the left, click **Azure Active Directory**.
 

@@ -4,7 +4,7 @@ Suppose you have decided to use OpenID Connect with your transportation company'
 
 A tenant is an instance of Azure AD that is a representation of an organization. It's a dedicated instance of Azure AD that an organization or app developer receives when the organization or app developer creates a relationship with Microsoft, like signing up for Azure, Microsoft Intune, or Microsoft 365.
 
-Each Azure AD tenant is distinct and separate from other Azure AD tenants and has its own representation of work and school identities, and app registrations. An app registration inside of your tenant can allow authentications from accounts only within your tenant or all tenants.
+Each Azure AD tenant is distinct and separate from other Azure AD tenants and has its own representation of work and school identities, and app registrations. An app registration inside your tenant can allow authentications from accounts only within your tenant or all tenants.
 
 Azure AD tenants are created in the .onmicrosoft.com domain by default. You can't delete or change this name, but you can add your own registered domain name, and then create users and app registrations within that domain.
 
