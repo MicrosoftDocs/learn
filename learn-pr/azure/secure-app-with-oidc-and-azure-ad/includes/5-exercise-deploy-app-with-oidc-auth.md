@@ -90,7 +90,7 @@ Now let's configure the app registration to authorize the URL of the web service
 
 ## Test the application
 
-1. Open a new browser window and navigate to the web application URL.
+1. Open a new browser window and navigate to the web application base URL.
 
 1. When prompted, sign in. You'll be authenticated against your AD tenant. The web app also requests some permissions, and you'll be prompted for your consent.
 
