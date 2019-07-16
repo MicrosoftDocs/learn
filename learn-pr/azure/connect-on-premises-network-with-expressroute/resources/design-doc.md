@@ -154,4 +154,4 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
 
 This module will have interactivity only through knowledge checks due to the physical requirements of ExpressRoute.
 
-ExpressRoute documentation: https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction  
+ExpressRoute documentation: https://docs.microsoft.com/azure/expressroute/expressroute-introduction  
