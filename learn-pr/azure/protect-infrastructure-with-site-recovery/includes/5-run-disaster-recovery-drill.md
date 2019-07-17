@@ -1,31 +1,47 @@
-Disaster recovery (DR) drills are a crucial process to test your organization's ability to recover from an outage without impacting any production service.
+Disaster recovery (DR) drills test your organization's ability to recover from an outage, without impacting any production service.
 
-Now you understand more about Azure Site Recovery and its configuration, you need to explore how to run a disaster recovery drill in a safe manner without impacting the production environment. You'd like to learn more about this approach using ASR and run some quality assurance on the configuration to ensure your ASR solution is working correctly.
+With Azure Site Recovery setup, and your infrastructure protected, you should run a disaster recovery drill. Azure Site Recovery supports doing this in a safe manner that won't impact your production environment. You'll run some quality assurance on the configuration to ensure your DR solution is working correctly.
 
-In this unit, you'll learn about Azure Site Recovery disaster drills, what you need to consider and how to run test processes to ensure your environment has been correctly configured.
+In this unit, you'll learn about Azure Site Recovery disaster drills, what you need to consider, and how to run test process to check your environment has been correctly configured.
 
 ## What is a disaster recovery drill
 
-A DR drill is effectively a sanity check to ensure you have configured you solution properly, it's a tried and tested method to ensure that, in the event of a disaster, your solution works correctly and your infrastructure is properly protected. This is crucial to get right to avoid any downtime for live business services. Typically your organization will set a recovery time objective (RTO) which is a timeframe for recovering infrastructure in a disaster or outage scenario. In tandem with this usually comes a recovery point objective (RPO) defining at which point in time the infrastructure is recovered from i.e. hours, minutes or seconds. Both of these will be defined in any BCDR plan and help to ensure minimum downtime for business services.
+A DR drill is a sanity check to ensure you have configured you solution properly, it shoulg give you and your company confidence in the event of a disaster, your infrastructure will keep working. Typically your organization will set a recovery time objective (RTO) which is a timeframe for recovering infrastructure in a disaster or outage scenario. In tandem with this usually comes a recovery point objective (RPO), defining at which point in time the infrastructure is recovered from i.e. hours, minutes or seconds. Both of these will be defined in a good BCDR plan.
+
+![text](../media/failover-tests.png)
+
+Azure Site Recovery not only supports running automated test failovers, it actively prompts you to run them on the Site Recovery dashboard.
 
 ## Why should you run a DR drill
 
-A DR drill is super important to ensure the solution setup meets the BCDR requirements, not only this but also to ensure the replication works properly. This combined with RTO and RPO need to be tested thoroughly to ensure replication and failover happen in the desired timeframe. For example, if your RTO is set to 1 hour and your RPO set to 30 minutes, as in business operations can continue for 1 hour without major impact and systems backup every 30 minutes, thats 30 minutes of lost time with a recovery of 1 hour. Imagine now your actual recovery time is 2 hours but your backup only completes every hour, that's an extra 30 minutes of data loss and and additional hour of serious business harm which could potentially have grave consequences for your organization.
+A DR drill is important to ensure the solution setup meets the BCDR requirements, not only this but also to ensure the replication works properly. This combined with RTO and RPO need to be tested thoroughly to ensure replication and failover happen in the desired timeframe. For example, if your RTO is set to 1 hour and your RPO set to 30 minutes, as in business operations can continue for 1 hour without major impact and systems backup every 30 minutes, thats 30 minutes of lost time with a recovery of 1 hour. Imagine now your actual recovery time is 2 hours but your backup only completes every hour, that's an extra 30 minutes of data loss and and additional hour of serious business harm which could potentially have large financial consequences for your organization.
 
-## Test failover
+## Test failover of individual machines
 
-A test failover allows you to run a DR to test the solution setup. This method enables you to choose a recovery point typically either the last processed, the latest app-consistent point or a custom recovery point (any available). This process is initiated with a single click on **Test Failover** aside the replicated VM in ASR on the Azure portal. The steps proceeding that are as follows:
+A test failover allows you to simulate a disaster, and see its effects. This method enables you to choose a recovery point typically either the last processed, the latest app-consistent point or a custom recovery point (any available). This process can be started  from the Site Recovery dashboard, or from the disaster recovery menu for a specific VM.
 
-1. Select the recovery point
-1. Choose the target virtual network to which the replicated VMs in the secondary region will be connected
-1. Clicking **OK** on the failover dialogue.
-1. This will then run a test failover on the replicated VM you chose and allow you to track its progress through site recovery jobs.
-1. Once complete the VM failed over will appear in the portal (under Virtual Machines). You can then check the VM is running, is sized and connected as expected mirroring the source VM but in a secondary Azure region.
-1. Following this check the VMs replicated can be deleted by selecting **Cleanup test failover**. You can also store notes about the failover at this point.
+![text](../media/vm-disaster.png)
 
-## Flexible failover
+The steps proceeding that are as follows:
 
-ASR gives you the ability to run a full DR test scenario without touching your production environment. Recovery plans are created within ASR to allow for task automation and modelling of specific applications, such as an AD or DNS requirement. Failovers can be run as many times as you like and allow for a flexible policy to determine what will trigger an automatic failover.
+1. Create an isolated virtual network, so that your production infrastructure isn't affected.
+1. On the target VMs overview, select Disaster recovery.
+
+    ![text](../media/vm-running-test-failover.png)
+
+1. This will open a new **Replicated items** pane.
+1. Select **Test Failover** at the top of the pane.
+1. This will then run a test failover on the replicated VM you chose and allow you to track its progress through Site Recovery jobs.
+1. Once complete, the VM failed over will appear in the portal under Virtual Machines, in the recovery region. You can then check the VM is running, is sized and connected as expected, and is mirroring the source VM but in a different Azure region.
+1. Following this check the VMs replicated can be deleted by selecting **Cleanup test failover**. You can also store notes about the testing at this point.
+
+## Flexible failover of multiple machines
+
+![text](../media/flexible-dr-drill.png)
+
+Azure Site Recovery gives you the felxibitly to run a full DR test scenario for all your virtual machines. You can create Recovery Plans that can include one or more of your VMs. Failovers can be run as many times as you like, and allow for a flexible policy to determine what will trigger an automatic failover.
+
+![text](../media/test-success.png)
 
 ## Difference between a drill and production failover
 

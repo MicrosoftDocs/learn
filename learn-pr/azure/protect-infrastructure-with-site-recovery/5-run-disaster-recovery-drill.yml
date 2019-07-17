@@ -4,12 +4,12 @@ metadata:
   title: Run a disaster recovery drill
   description: Run a disaster recovery drill
   ms.date: 04/30/2019
-  author: dwarrener
+  author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Run a disaster recovery drill
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/5-run-disaster-recovery-drill.md)]

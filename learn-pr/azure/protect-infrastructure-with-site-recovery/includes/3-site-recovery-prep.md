@@ -1,8 +1,10 @@
-Now you know about the capabilities of Azure Site Recovery, you can begin to think about preparation for disaster recovery in your Azure environment.
+Now you know about the capabilities of Azure Site Recovery (Azure Site Recovery), you can begin to think about preparation for disaster recovery in your Azure environment.
 
-Using your organizations BCDR plan, you now need to run through the ASR configurations and set a preparation plan in motion that fits with your organizations BCDR goals.
+Using your organizations BCDR plan, you now need to run through the Azure Site Recovery configurations and set a preparation plan in motion that fits with your organizations BCDR goals.
 
 In this unit, you'll explore what you need to prepare for a disaster recovery scenario to take advantage of ASRs automated features.
+
+![Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region.](../media/enable-replication-step-2.png)
 
 ## Environment setup
 
@@ -11,18 +13,18 @@ In this unit, you'll explore what you need to prepare for a disaster recovery sc
 
 Run the following commands in the Cloud Shell. This will create your companies infrastructure in Azure to use in the next exercise.
 
-1. Copy the ARM and parameter json templates that create an Azure Virtual Machine.
+1. Copy the Azure Resource Manager json templates to create the Lamna Healthcare Company's infrastructure.
 
     ```bash
     curl https://raw.githubusercontent.com/... > deploy.json
-    curl https://raw.githubusercontent.com/... > parameters.json
     ```
     <!-- TODO replace with live github repo -->
 
-1. Run the following command to create the infrastructre.
+1. Run the following command to create resource groups and the company's infrastructure.
 
     ```azurecli
     az group create --name west-coast-datacenter --location westus2
+    az group create --name east-coast-datacenter --location eastus2
 
     az group deployment create \
         --name asrDeployment \
@@ -32,12 +34,11 @@ Run the following commands in the Cloud Shell. This will create your companies i
     ```
 
     > [!NOTE]
-    > This can take up to five minutes to complete, continue with this module while the VM is created.
-
+    > This can take up to five minutes to complete, while it is running continue with this module.
 
 ## Disaster recovery preparation with Azure Site Recovery
 
-Azure Site Recovery will manage and orchestrate your DR process for Azure VMs and on-premises machines. However, to enable this there are several components you need to configure:
+Azure Site Recovery will manage and orchestrate your DR process for Azure VMs or on-premises machines. However, to enable this there are several components you need to configure:
 
 - Add a Recovery Services Vault
 - Organize target resources
@@ -46,42 +47,46 @@ Azure Site Recovery will manage and orchestrate your DR process for Azure VMs an
 
 ## Recovery Services Vault
 
-To enable ASR to complete disaster recovery replication requires a recovery services vault. Recovery Services is a data storage service in Azure. It stores data backups, VM configuration settings and workloads. To meet ASR requirements is as simple as provisioning a recovery services vault using the portal or the Azure CLI.
+To enable Azure Site Recovery to complete disaster recovery replication requires a recovery services vault. Recovery Services is a data storage service in Azure. It stores data backups, VM configuration settings, and workloads. To meet Azure Site Recovery requirements is as simple as provisioning a recovery services vault using the portal or the Azure CLI.
 
 ## Target resources
 
-The target for ASR replication is in a different Azure region. This requires you to check that the target region firstly allows you to create a virtual machine but secondly, that the region has enough resources to support matching the sizing of your existing VMs. ASR will select the same or nearest available size for the target machine.
+The target for Azure Site Recovery replication has to be in a different Azure region. The storage account to store the backed-up data must also reside in a different region to the resource being protected. Check the target region allows you to create virtual machines, and that the region has enough resources to be able to match the size of the existing VMs.
 
 ## Outbound network connectivity & URLs
 
-ASR requires you to configure outbound connectivity on the virtual machines that you wish to replicate. ASR does not support controlling network connectivity via an authentication proxy.
+If you're using Virtual Machines originally created in Azure, the required network connectivity will have been set up for you automatically. If you've migrated on-premises VMs to Azure, you may need to update your network connectivity.
 
-If your organization is using a URL-based firewall proxy in order to restrict outbound connectivity you will need to add access to several URLs:
+Azure Site Recovery requires outbound connectivity on the virtual machines that you wish to replicate. Azure Site Recovery does not support controlling network connectivity via an authentication proxy.
+
+If your organization is using a URL-based firewall proxy in order to restrict outbound connectivity, you will need to add access to several URLs:
 
 - *.blob.core.windows.net - To write VM data to the source storage account cache
-- login.microsoftonline.com - For the ASR URLs to authenticate
-- *.hypervrecoverymanager.windowsazure.com - For ASR to communicate with the VM
-- *.servicebus.windows.net - For ASR monitoring and diagnostic data from the VM
+- login.microsoftonline.com - For the Azure Site Recovery URLs to authenticate
+- *.hypervrecoverymanager.windowsazure.com - For Azure Site Recovery to communicate with the VM
+- *.servicebus.windows.net - For Azure Site Recovery monitoring and diagnostic data from the VM
 
-If you would prefer to control the connectivity using IP addresses instead then you need to add the following:
+If you would prefer to control the connectivity using IP addresses instead, then you need to add the following IP ranges:
 
 - The IP ranges for Azure Datacenters
-- The IP ranges for Windows Azure Datacenters in Germany and China.
-- The IP Ranges for Office 365
-- The IP Ranges for teh ASR endpoints
+- The IP ranges for the Azure Site Recovery endpoints
 
 ## Updating Azure VM certs
 
-Every Azure VM you wish to replicate requires the latest root certificates, without them you will not be able to register it with ASR. This is done to ensure security is kept watertight. A windows VM will need to have all the latest windows updates installed so that the machine has up to date trusted root certificates. A linux VM requires the same but you will need to contact your distributor. Where an environment is disconnected you can still use the standard windows update process.
+Every Azure VM you wish to replicate requires the latest root certificates, without them you will not be able to register it with Azure Site Recovery. This is done to ensure security is kept watertight. A windows VM will need to have all the latest windows updates installed so that the machine has up-to-date trusted root certificates. A linux VM requires the same but you will need to contact your distributor.
 
 ## Account permissions
 
-ASR by default uses Role Based Access Control (RBAC) in Azure. This enables fine grained access, ASR comes with several built-in roles:
+Azure Site Recovery by default uses Role-Based Access Control (RBAC) in Azure. This enables fine grained access, Azure Site Recovery comes with several built-in roles:
 
-- **Site Recovery Contributor:** Full permissions for ASR operations in a recovery services vault, suitable for disaster recovery admins.
+- **Site Recovery Contributor:** Full permissions for Azure Site Recovery operations in a recovery services vault, suitable for disaster recovery admins.
+- **Site Recovery Operator:** Permissions to run and administer Azure Site Recovery failover and failback operations, suitable for disaster recovery operators.
+- **Site Recovery Reader:** Permissions to view Azure Site Recovery operations, suitable for IT monitoring executives.
 
-- **Site Recovery Operator:** Permissions to run and administer ASR failover and failback operations, suitable for disaster recovery operators.
+To enable replication on a VM, a user must have permissions to create a VM in both the virtual network and resource group.
 
-- **Site Recovery Reader:** Permissions to view ASR operations, suitable for IT monitoring executives.
+## Mobility Service
 
-To enable replication on a VM, a user must have permissions to create a VM in both the virtual network and resource group. In addition write access to the associated storage account is required.
+Every VM that is to be replicated needs the Azure Mobility Service to be installed. This client is available for Windows and Linux VMs and will be installed and configured automatically by Site Recovery. If the automatic installation fails, you can install the service manually.
+
+The mobility service works in partnership with Azure Site Recovery to keep an up-to-date cache of the VMs' data. The cache is  replicated to the target environments storage account. The replicated data will be used if Azure Site Recovery fails over the environment.

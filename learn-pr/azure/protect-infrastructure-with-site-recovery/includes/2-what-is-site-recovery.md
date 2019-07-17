@@ -2,7 +2,7 @@ Azure Site Recovery (Site Recovery) can duplicate your workloads between Azure r
 
 Your organization recently suffered an outage caused by a hurricane. You'll identify the Site Recovery features required to fail over existing Azure virtual machines (VMs) to another secondary region.
 
-In this unit, you'll learn about these Site Recovery features to help prevent outages.
+In this unit, you'll learn about the Site Recovery features that will help to prevent future outages.
 
 ## Site Recovery features
 

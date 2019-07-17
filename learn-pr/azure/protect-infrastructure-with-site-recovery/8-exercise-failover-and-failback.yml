@@ -4,13 +4,12 @@ metadata:
   title: Exercise - Failover and failback using Azure Site Recovery
   description: Failover and failback using Azure Site Recovery
   ms.date: 04/30/2019
-  author: dwarrener
+  author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Failover and failback using Azure Site Recovery
 durationInMinutes: 10
-azureSandbox: true
 content: |
   [!include[](includes/3-exercise-unit.md)]

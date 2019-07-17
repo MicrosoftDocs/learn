@@ -6,10 +6,6 @@
             "defaultValue": "hr-records",
             "type": "String"
         },
-        "virtualMachines_finance_dept_name": {
-            "defaultValue": "finance-dept",
-            "type": "String"
-        },
         "networkInterfaces_hr_records71_name": {
             "defaultValue": "hr-records71",
             "type": "String"
@@ -23,23 +19,11 @@
             "type": "String"
         },
         "virtualNetworks_lamna_vnet_name": {
-            "defaultValue": "hr-records-vnet",
-            "type": "String"
-        },
-        "networkInterfaces_finance_dept992_name": {
-            "defaultValue": "finance-dept992",
-            "type": "String"
-        },
-        "publicIPAddresses_finance_dept_ip_name": {
-            "defaultValue": "finance-dept-ip",
+            "defaultValue": "lamna-vnet",
             "type": "String"
         },
         "networkInterfaces_patient_records71_name": {
             "defaultValue": "patient-records71",
-            "type": "String"
-        },
-        "storageAccounts_siterecoverydiag700_name": {
-            "defaultValue": "siterecoverydiag700",
             "type": "String"
         },
         "networkSecurityGroups_hr_records_nsg_name": {
@@ -50,16 +34,8 @@
             "defaultValue": "patient-records-ip",
             "type": "String"
         },
-        "networkSecurityGroups_finance_dept_nsg_name": {
-            "defaultValue": "finance-dept-nsg",
-            "type": "String"
-        },
         "networkSecurityGroups_patient_records_nsg_name": {
             "defaultValue": "patient-records-nsg",
-            "type": "String"
-        },
-        "schedules_shutdown_computevm_finance_dept_name": {
-            "defaultValue": "shutdown-computevm-finance-dept",
             "type": "String"
         },
         "storageAccounts_asrcache_name": {
@@ -68,197 +44,6 @@
     },
     "variables": {},
     "resources": [
-        {
-            "type": "Microsoft.Network/networkSecurityGroups",
-            "apiVersion": "2019-04-01",
-            "name": "[parameters('networkSecurityGroups_finance_dept_nsg_name')]",
-            "location": "westus2",
-            "properties": {
-                "provisioningState": "Succeeded",
-                "resourceGuid": "ff500e9e-84c7-4865-8fd2-6d2e272dd7d8",
-                "securityRules": [
-                    {
-                        "name": "HTTP",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "protocol": "TCP",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "80",
-                            "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": 300,
-                            "direction": "Inbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "HTTPS",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "protocol": "TCP",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "443",
-                            "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": 320,
-                            "direction": "Inbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "SSH",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "protocol": "TCP",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "22",
-                            "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": 340,
-                            "direction": "Inbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    }
-                ],
-                "defaultSecurityRules": [
-                    {
-                        "name": "AllowVnetInBound",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "description": "Allow inbound traffic from all VMs in VNET",
-                            "protocol": "*",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "VirtualNetwork",
-                            "destinationAddressPrefix": "VirtualNetwork",
-                            "access": "Allow",
-                            "priority": 65000,
-                            "direction": "Inbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "AllowAzureLoadBalancerInBound",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "description": "Allow inbound traffic from azure load balancer",
-                            "protocol": "*",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "AzureLoadBalancer",
-                            "destinationAddressPrefix": "*",
-                            "access": "Allow",
-                            "priority": 65001,
-                            "direction": "Inbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "DenyAllInBound",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "description": "Deny all inbound traffic",
-                            "protocol": "*",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "*",
-                            "access": "Deny",
-                            "priority": 65500,
-                            "direction": "Inbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "AllowVnetOutBound",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "description": "Allow outbound traffic from all VMs to all VMs in VNET",
-                            "protocol": "*",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "VirtualNetwork",
-                            "destinationAddressPrefix": "VirtualNetwork",
-                            "access": "Allow",
-                            "priority": 65000,
-                            "direction": "Outbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "AllowInternetOutBound",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "description": "Allow outbound traffic from all VMs to Internet",
-                            "protocol": "*",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "Internet",
-                            "access": "Allow",
-                            "priority": 65001,
-                            "direction": "Outbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    },
-                    {
-                        "name": "DenyAllOutBound",
-                        "etag": "W/\"697466cb-5ece-439b-824f-6bf5458d386d\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "description": "Deny all outbound traffic",
-                            "protocol": "*",
-                            "sourcePortRange": "*",
-                            "destinationPortRange": "*",
-                            "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "*",
-                            "access": "Deny",
-                            "priority": 65500,
-                            "direction": "Outbound",
-                            "sourcePortRanges": [],
-                            "destinationPortRanges": [],
-                            "sourceAddressPrefixes": [],
-                            "destinationAddressPrefixes": []
-                        }
-                    }
-                ]
-            }
-        },
         {
             "type": "Microsoft.Network/networkSecurityGroups",
             "apiVersion": "2019-04-01",
@@ -644,25 +429,6 @@
         {
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "2019-04-01",
-            "name": "[parameters('publicIPAddresses_finance_dept_ip_name')]",
-            "location": "westus2",
-            "sku": {
-                "name": "Basic",
-                "tier": "Regional"
-            },
-            "properties": {
-                "provisioningState": "Succeeded",
-                "resourceGuid": "754d6fc6-0cd4-44fa-9465-2924082acad9",
-                "ipAddress": "52.250.105.195",
-                "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
-                "idleTimeoutInMinutes": 4,
-                "ipTags": []
-            }
-        },
-        {
-            "type": "Microsoft.Network/publicIPAddresses",
-            "apiVersion": "2019-04-01",
             "name": "[parameters('publicIPAddresses_hr_records_ip_name')]",
             "location": "westus2",
             "sku": {
@@ -730,7 +496,7 @@
         {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2019-04-01",
-            "name": "[parameters('storageAccounts_siterecoverydiag700_name')]",
+            "name": "[parameters('storageAccounts_asrcache_name')]",
             "location": "westus2",
             "sku": {
                 "name": "Standard_LRS",
@@ -772,14 +538,14 @@
                 },
                 "storageProfile": {
                     "imageReference": {
-                        "publisher": "canonical",
-                        "offer": "UbuntuServer",
-                        "sku": "16.04-LTS",
+                        "publisher": "microsoftwindowsserver",
+                        "offer": "windowsserver",
+                        "sku": "2016-Datacenter-Server-Core-smalldisk",
                         "version": "latest"
                     },
                     "osDisk": {
-                        "osType": "Linux",
                         "name": "[concat(parameters('virtualMachines_hr_records_name'), '_OsDisk_1_cd343a79c7564d188d5929c6b1dac73a')]",
+                        "osType": "Windows",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
@@ -793,8 +559,8 @@
                     "computerName": "[parameters('virtualMachines_hr_records_name')]",
                     "adminUsername": "learn-admin",
                     "adminPassword": "Pa55w0rdPa55w0rd",
-                    "linuxConfiguration": {
-                        "disablePasswordAuthentication": false,
+                    "windowsConfiguration": {
+                        "enableAutomaticUpdates": true,
                         "provisionVMAgent": true
                     },
                     "secrets": [],
@@ -823,14 +589,14 @@
                 },
                 "storageProfile": {
                     "imageReference": {
-                        "publisher": "canonical",
-                        "offer": "UbuntuServer",
-                        "sku": "16.04-LTS",
+                        "publisher": "microsoftwindowsserver",
+                        "offer": "windowsserver",
+                        "sku": "2016-Datacenter-Server-Core-smalldisk",
                         "version": "latest"
                     },
                     "osDisk": {
-                        "osType": "Linux",
                         "name": "[concat(parameters('virtualMachines_patient_records_name'), '_OsDisk_1_23d4d09d3f22424f884dd14635024ebe')]",
+                        "osType": "Windows",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
@@ -844,8 +610,8 @@
                     "computerName": "[parameters('virtualMachines_patient_records_name')]",
                     "adminUsername": "learn-admin",
                     "adminPassword": "Pa55w0rdPa55w0rd",
-                    "linuxConfiguration": {
-                        "disablePasswordAuthentication": false,
+                    "windowsConfiguration": {
+                        "enableAutomaticUpdates": true,
                         "provisionVMAgent": true
                     },
                     "secrets": [],
@@ -858,53 +624,6 @@
                         }
                     ]
                 }
-            }
-        },
-        {
-            "type": "microsoft.devtestlab/schedules",
-            "apiVersion": "2016-05-15",
-            "name": "[parameters('schedules_shutdown_computevm_finance_dept_name')]",
-            "location": "westus2",
-            "dependsOn": [
-                "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_finance_dept_name'))]"
-            ],
-            "properties": {
-                "status": "Enabled",
-                "taskType": "ComputeVmShutdownTask",
-                "dailyRecurrence": {
-                    "time": "1900"
-                },
-                "timeZoneId": "UTC",
-                "notificationSettings": {
-                    "status": "Disabled",
-                    "timeInMinutes": 30
-                },
-                "targetResourceId": "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_finance_dept_name'))]",
-                "provisioningState": "Succeeded",
-                "uniqueIdentifier": "0bf9bb37-c151-43a5-95da-f36f24038d14"
-            }
-        },
-        {
-            "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-            "apiVersion": "2019-04-01",
-            "name": "[concat(parameters('networkSecurityGroups_finance_dept_nsg_name'), '/HTTP')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_finance_dept_nsg_name'))]"
-            ],
-            "properties": {
-                "provisioningState": "Succeeded",
-                "protocol": "TCP",
-                "sourcePortRange": "*",
-                "destinationPortRange": "80",
-                "sourceAddressPrefix": "*",
-                "destinationAddressPrefix": "*",
-                "access": "Allow",
-                "priority": 300,
-                "direction": "Inbound",
-                "sourcePortRanges": [],
-                "destinationPortRanges": [],
-                "sourceAddressPrefixes": [],
-                "destinationAddressPrefixes": []
             }
         },
         {
@@ -956,29 +675,6 @@
         {
             "type": "Microsoft.Network/networkSecurityGroups/securityRules",
             "apiVersion": "2019-04-01",
-            "name": "[concat(parameters('networkSecurityGroups_finance_dept_nsg_name'), '/HTTPS')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_finance_dept_nsg_name'))]"
-            ],
-            "properties": {
-                "provisioningState": "Succeeded",
-                "protocol": "TCP",
-                "sourcePortRange": "*",
-                "destinationPortRange": "443",
-                "sourceAddressPrefix": "*",
-                "destinationAddressPrefix": "*",
-                "access": "Allow",
-                "priority": 320,
-                "direction": "Inbound",
-                "sourcePortRanges": [],
-                "destinationPortRanges": [],
-                "sourceAddressPrefixes": [],
-                "destinationAddressPrefixes": []
-            }
-        },
-        {
-            "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-            "apiVersion": "2019-04-01",
             "name": "[concat(parameters('networkSecurityGroups_hr_records_nsg_name'), '/HTTPS')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_hr_records_nsg_name'))]"
@@ -1015,29 +711,6 @@
                 "destinationAddressPrefix": "*",
                 "access": "Allow",
                 "priority": 320,
-                "direction": "Inbound",
-                "sourcePortRanges": [],
-                "destinationPortRanges": [],
-                "sourceAddressPrefixes": [],
-                "destinationAddressPrefixes": []
-            }
-        },
-        {
-            "type": "Microsoft.Network/networkSecurityGroups/securityRules",
-            "apiVersion": "2019-04-01",
-            "name": "[concat(parameters('networkSecurityGroups_finance_dept_nsg_name'), '/SSH')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_finance_dept_nsg_name'))]"
-            ],
-            "properties": {
-                "provisioningState": "Succeeded",
-                "protocol": "TCP",
-                "sourcePortRange": "*",
-                "destinationPortRange": "22",
-                "sourceAddressPrefix": "*",
-                "destinationAddressPrefix": "*",
-                "access": "Allow",
-                "priority": 340,
                 "direction": "Inbound",
                 "sourcePortRanges": [],
                 "destinationPortRanges": [],
@@ -1107,9 +780,9 @@
         {
             "type": "Microsoft.Storage/storageAccounts/blobServices",
             "apiVersion": "2019-04-01",
-            "name": "[concat(parameters('storageAccounts_siterecoverydiag700_name'), '/default')]",
+            "name": "[concat(parameters('storageAccounts_asrcache_name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_siterecoverydiag700_name'))]"
+                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_asrcache_name'))]"
             ],
             "properties": {
                 "cors": {
@@ -1118,123 +791,6 @@
                 "deleteRetentionPolicy": {
                     "enabled": false
                 }
-            }
-        },
-        {
-            "type": "Microsoft.Compute/virtualMachines",
-            "apiVersion": "2019-03-01",
-            "name": "[parameters('virtualMachines_finance_dept_name')]",
-            "location": "westus2",
-            "dependsOn": [
-                "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_finance_dept992_name'))]",
-                "[resourceId('Microsoft.Storage/StorageAccounts', parameters('storageAccounts_siterecoverydiag700_name'))]"
-            ],
-            "properties": {
-                "hardwareProfile": {
-                    "vmSize": "Standard_B1s"
-                },
-                "storageProfile": {
-                    "imageReference": {
-                        "publisher": "Canonical",
-                        "offer": "UbuntuServer",
-                        "sku": "16.04-LTS",
-                        "version": "latest"
-                    },
-                    "osDisk": {
-                        "osType": "Linux",
-                        "name": "[concat(parameters('virtualMachines_finance_dept_name'), '_OsDisk_1_f81dfe4fd8154fe4a5239618823d9494')]",
-                        "createOption": "FromImage",
-                        "caching": "ReadWrite",
-                        "managedDisk": {
-                            "storageAccountType": "Premium_LRS"
-                        },
-                        "diskSizeGB": 30
-                    },
-                    "dataDisks": []
-                },
-                "osProfile": {
-                    "computerName": "[parameters('virtualMachines_finance_dept_name')]",
-                    "adminUsername": "learn-admin",
-                    "adminPassword": "Pa55w0rdPa55w0rd",
-                    "linuxConfiguration": {
-                        "disablePasswordAuthentication": false,
-                        "provisionVMAgent": true
-                    },
-                    "secrets": [],
-                    "allowExtensionOperations": true
-                },
-                "networkProfile": {
-                    "networkInterfaces": [
-                        {
-                            "id": "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_finance_dept992_name'))]"
-                        }
-                    ]
-                },
-                "diagnosticsProfile": {
-                    "bootDiagnostics": {
-                        "enabled": true,
-                        "storageUri": "[concat('https://', parameters('storageAccounts_siterecoverydiag700_name'), '.blob.core.windows.net/')]"
-                    }
-                }
-            }
-        },
-        {
-            "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
-            "apiVersion": "2019-04-01",
-            "name": "[concat(parameters('storageAccounts_siterecoverydiag700_name'), '/default/bootdiagnostics-financede-23fef1dc-9093-4a7c-8476-8b23d01e0a0c')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts/blobServices', parameters('storageAccounts_siterecoverydiag700_name'), 'default')]",
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_siterecoverydiag700_name'))]"
-            ],
-            "properties": {
-                "publicAccess": "None"
-            }
-        },
-        {
-            "type": "Microsoft.Network/networkInterfaces",
-            "apiVersion": "2019-04-01",
-            "name": "[parameters('networkInterfaces_finance_dept992_name')]",
-            "location": "westus2",
-            "dependsOn": [
-                "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_finance_dept_ip_name'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_lamna_vnet_name'), 'default')]",
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_finance_dept_nsg_name'))]"
-            ],
-            "properties": {
-                "provisioningState": "Succeeded",
-                "resourceGuid": "f546478e-184b-41f5-ac12-b703abc4b9d3",
-                "ipConfigurations": [
-                    {
-                        "name": "ipconfig1",
-                        "etag": "W/\"6ef6a3c7-f9d0-4568-8a8d-11ee59717a67\"",
-                        "properties": {
-                            "provisioningState": "Succeeded",
-                            "privateIPAddress": "10.1.1.5",
-                            "privateIPAllocationMethod": "Dynamic",
-                            "publicIPAddress": {
-                                "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_finance_dept_ip_name'))]"
-                            },
-                            "subnet": {
-                                "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_lamna_vnet_name'), 'default')]"
-                            },
-                            "primary": true,
-                            "privateIPAddressVersion": "IPv4"
-                        }
-                    }
-                ],
-                "dnsSettings": {
-                    "dnsServers": [],
-                    "appliedDnsServers": [],
-                    "internalDomainNameSuffix": "0bal3g03vhhuviaehdsoqdycug.xx.internal.cloudapp.net"
-                },
-                "macAddress": "00-0D-3A-06-7E-9B",
-                "enableAcceleratedNetworking": false,
-                "enableIPForwarding": false,
-                "networkSecurityGroup": {
-                    "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_finance_dept_nsg_name'))]"
-                },
-                "primary": true,
-                "tapConfigurations": []
             }
         },
         {
@@ -1330,54 +886,6 @@
                 "primary": true,
                 "tapConfigurations": []
             }
-        },
-        {
-            "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2019-04-01",
-            "name": "[parameters('storageAccounts_asrcache_name')]",
-            "location": "westus2",
-            "sku": {
-                "name": "Standard_RAGRS",
-                "tier": "Standard"
-            },
-            "kind": "StorageV2",
-            "properties": {
-                "networkAcls": {
-                    "bypass": "AzureServices",
-                    "virtualNetworkRules": [],
-                    "ipRules": [],
-                    "defaultAction": "Allow"
-                },
-                "supportsHttpsTrafficOnly": true,
-                "encryption": {
-                    "services": {
-                        "file": {
-                            "enabled": true
-                        },
-                        "blob": {
-                            "enabled": true
-                        }
-                    },
-                    "keySource": "Microsoft.Storage"
-                },
-                "accessTier": "Hot"
-            }
-        },
-        {
-            "type": "Microsoft.Storage/storageAccounts/blobServices",
-            "apiVersion": "2019-04-01",
-            "name": "[concat(parameters('storageAccounts_asrcache_name'), '/default')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_asrcache_name'))]"
-            ],
-            "properties": {
-                "cors": {
-                    "corsRules": []
-                },
-                "deleteRetentionPolicy": {
-                    "enabled": false
-                }
-            }
-        }        
+        }       
     ]
 }
