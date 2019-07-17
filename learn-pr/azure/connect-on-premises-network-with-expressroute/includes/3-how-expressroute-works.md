@@ -106,7 +106,7 @@ If you're using the Azure portal, you connect a peering to a virtual network gat
 
 ## High availability and failover with ExpressRoute
 
-In each ExpressRoute circuit, there are two connections from the connectivity provider to two different Microsoft edge routers. This configuration occurs automatically, and provides a degree of availability within a single location.
+In each ExpressRoute circuit, there are two connections from the connectivity provider to two different Microsoft Edge routers. This configuration occurs automatically, and provides a degree of availability within a single location.
 
 Consider setting up ExpressRoute circuits in different peering locations to provide high availability and protect against a regional outage. For example, you might create circuits in the US East and US Central regions and connect these circuits to your virtual network. This way, if one ExpressRoute circuit was to go down, you won't lose connectivity to your resource and you can fail over the connection to another ExpressRoute circuit.
 

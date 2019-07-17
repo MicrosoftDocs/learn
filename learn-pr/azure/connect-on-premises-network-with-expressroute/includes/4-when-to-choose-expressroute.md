@@ -7,7 +7,7 @@ In this unit, you'll learn about the most common use cases for deploying Express
 Consider using Azure ExpressRoute service in the following scenarios:
 
 - Low latency connectivity to services in the cloud. In these situations, eliminating or reducing the network overhead will have a significant impact on the performance of your applications.
-- Accessing high-volume systems in the cloud that consume or produce massive volumes of data very quickly. ExpressRoute can move data around rapidly, with high reliability.
+- Accessing high-volume systems in the cloud that consume or produce massive volumes of data quickly. ExpressRoute can move data around rapidly, with high reliability.
 - Consuming Microsoft Cloud Services, such as Office36 and Dynamics 365. ExpressRoute is especially useful if your organization has a large number of users that need to access these services concurrently.
 - Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute ensures that the results of the migrations are seamless for on-premises clients. They should notice no drop in performance, and may even experience some improvement if the previous on-premises systems were restricted by network bandwidth.
 - Situations where data should not traverse the public Internet for security reasons.
