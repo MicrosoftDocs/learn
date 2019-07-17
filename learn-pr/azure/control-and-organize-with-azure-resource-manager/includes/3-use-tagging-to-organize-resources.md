@@ -26,7 +26,7 @@ You can use Azure Policy to automatically add or enforce tags for resources your
 
 Let's apply some tags to the resources you created. Recall that we created a resource group **msftlearn-core-infrastructure-rg** and two VNets inside that resource group, **msftlearn-vnet1** and **msftlearn-vnet2**. The names of the VNets are relatively generic, so we'd like to associate the VNets with services from different departments. 
 
-1. Go ahead and pull up the [Azure portal](https://portal.azure.com/?azure-portal=true). Navigate to your **msftlearn-core-infrastructure-rg** resource group.
+1. Open the [Azure portal](https://portal.azure.com/?azure-portal=true), and navigate to your **msftlearn-core-infrastructure-rg** resource group.
 
 1. On the **Overview** tab of your resource group, you should see your two VNets listed. The default view doesn't display the tags column, so let's add that to the display. Select **Edit columns** at the top. In the **Available columns** list, select **Tags** and click **->** to add it to the **Selected columns** list. Click **Apply** to apply your changes.
 
