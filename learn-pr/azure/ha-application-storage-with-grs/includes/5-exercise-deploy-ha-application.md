@@ -23,21 +23,19 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 2. Use Git to download the sample code. Open a Git command prompt window, and run the following command to download the CircuitBreaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
 
-    <!-- NOTE TO REVIEWER. REPLACE <git repo> WITH THE URL OF THE CODE REPOSITORY FOR THIS MODULE -->
-
     ```Command Prompt
-    git clone https://github.com/<git repo> <location>
+    git clone https://github.com/MicrosoftDocs/mslearn-ha-application-storage-with-grs <folder>
     ```
 
 ## Configure Fiddler
 
 1. Start Fiddler.
 
-1. On the **Tools** menu, click **Options**.
+2. On the **Tools** menu, click **Options**.
 
-1. In the **Options** dialog box, click the **HTTPS** tab.
+3. In the **Options** dialog box, click the **HTTPS** tab.
 
-1. On the **HTTPS** tab, select **Decrypt HTTPS traffic**. If you're prompted to install additional certificates from Fiddler, accept them, then close Fiddler and restart it.
+4. On the **HTTPS** tab, select **Decrypt HTTPS traffic**. If you're prompted to install additional certificates from Fiddler, accept them, then close Fiddler and restart it.
 
     ![Fiddler, showing the **HTTPS** tab in the **Options** dialog box](../media/5-fiddler-options.png)
 
