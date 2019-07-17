@@ -1,9 +1,8 @@
-In the shipping company scenario, you need to arrange for the virtual machine scale set hosting your web application to scale horizontally as demand increases. To save costs, you also want to get the scale set to scale back in when demand drops.
+In the shipping company scenario, you have noticed that users' response times start to increase significantly when the overall CPU utilization of the virtual machines in the scale set exceeds 75 percent. This is causing dissatisfaction amongst the users. You need to arrange for the virtual machine scale set hosting your web application to scale horizontally when the system hits this threshold, to reduce the length of time users are waiting.
 
-In this exercise, you'll:
+Additionally, to save costs, you also want to get the scale set to scale back in when demand drops and the overall CPU utilization across the scale set drops below 50 percent.
 
-- Configure the scale set you created in the previous lab to scale out when the CPU threshold exceeds 75 percent utilization.
-- Create another scale rule to reduce the number of instances when the demand drops and the average CPU utilization falls below 50 percent.
+In this exercise, you'll configure autoscaling, and define scale rules that scale out and back again, according to the CPU utilization of the system.
 
 ## Create a scale-out scale rule
 
@@ -38,6 +37,8 @@ In this exercise, you'll:
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 
+    ![Screenshot of the virtual machine scale rule page](../media/5-new-scale-rule.png)
+
 ## Create a scale-in scale rule
 
 1. In the **Default** scale rule, select **+ Add a rule** again.
@@ -53,7 +54,7 @@ In this exercise, you'll:
     | Operator | Less than |
     | Threshold | 50 |
     | Duration | 10 |
-    | Operation | Decrease count |
+    | Operation | Decrease count by |
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 

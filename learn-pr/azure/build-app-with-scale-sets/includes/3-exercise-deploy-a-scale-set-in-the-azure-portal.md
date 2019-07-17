@@ -1,6 +1,6 @@
-There's a common requirement to use a virtual machine scale set to host a web application. In the example scenario, the shipping company have an existing web application they want to deploy to a virtual machine scale set. Your first task is to create a scale set, and configure it to run a web server – in this case, **nginx**. When you've configured the scale set correctly, you'll deploy your web application.
+You have identified the need to use a scale set to run the web application for the shipping company. Using a scale set will enable the shipping company to maintain short response times for users, as the workload varies.
 
-In this exercise, you'll create a new virtual machine scale set. You'll configure the virtual machines in the scale set to run **nginx**. Then you'll set up a health probe that Azure uses to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
+Your first task is to create a scale set, and configure it to run a web server – in this case, **nginx**. When you've configured the scale set correctly, you'll deploy your web application. Then you'll set up a health probe that Azure uses to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
 
 ## Deploy a virtual machine scale set
 
@@ -47,6 +47,9 @@ In this exercise, you'll create a new virtual machine scale set. You'll configur
 
     By default, the virtual machine scale set is created with two instances and a load balancer.
 
+    > [!NOTE]
+    > The **custom-data** flag specifies that the virtual machine should be configured using the settings in the **cloud-init.yaml** file once it has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed. For more information, see [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init)
+
 ## Configure the virtual machine scale set
 
 1. Run the following command to add a health probe to the load balancer:
@@ -82,7 +85,7 @@ In this exercise, you'll create a new virtual machine scale set. You'll configur
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
 
-2. In the left pane, select **Resource groups**, and then select the <rgn>[sandbox resource group]<!--CE:This looks slightly odd in the preview pane. Please check.--></rgn> resource group.
+2. In the left pane, select **Resource groups**, and then select the <rgn>[sandbox resource group]</rgn> resource group.
 
 3. Select the **webServerScaleSet** virtual machine scale set.
 

@@ -2,15 +2,11 @@ When you deploy an application across a scale set, you need a mechanism that upd
 
 In the shipping company scenario, you need a quick way to roll out updates to the application while minimizing disruption to the end users. A custom script extension is the ideal mechanism to do this operation.
 
-In this unit, you'll learn:
+In this unit, you'll learn how to use a custom script extension to update an application running on a scale set.
 
-- What an Azure custom script extension is.
-- How to use an Azure custom script extension.
-- How to update a running application on a scale set.
+## What is an Azure custom script extension?
 
-## Azure custom script extensions
-
-Use an Azure custom script extension to download and run a script on an Azure virtual machine. You can also use a custom script extension with a virtual machine scale set, to do the same tasks on all the virtual machines in the scale set. For example, you might use a custom script extension for post-deployment configuration. Use a custom script extension for software installation, or any other scriptable configuration or management task.
+An Azure custom script extension downloads and runs a script on an Azure virtual machine. You can use a custom script extension with a virtual machine scale set, to automate the same tasks on all the virtual machines in the scale set.
 
 You can store custom scripts in Azure Storage, or GitHub. Also, you could add a custom script to a virtual machine using the Azure portal.
 
@@ -42,7 +38,7 @@ az vmss extension set \
 
 ## Update an application across a scale set using a custom script extension
 
-As well as installing a new app, you can use a custom script extension to update an existing app across a virtual machine scale set. You reference an updated deployment script, and then reapply the extension to your scale set. For example, the JSON snippet below shows an example of a configuration that fetches a new version of an application and installs it:
+You can use a custom script extension to update an existing app across a virtual machine scale set. You reference an updated deployment script, and then reapply the extension to your scale set. For example, the JSON snippet below shows an example of a configuration that fetches a new version of an application and installs it:
 
 ````json
 # yourConfigV2.json

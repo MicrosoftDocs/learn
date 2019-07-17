@@ -13,5 +13,7 @@ metadata:
   ROBOTS: NOINDEX
 
 durationInMinutes: 5
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/7-exercise-update-applications-in-virtual-machine-scale-sets.md)]

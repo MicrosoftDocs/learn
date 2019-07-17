@@ -1,4 +1,4 @@
-In the shipping company scenario, you installed a web application by creating the virtual machine scale set. You now need to update the web app and install a new version across all virtual machines in the scale set.
+In the shipping company scenario, you installed a web application by creating the virtual machine scale set. You now need to update the web app and install a new version across all virtual machines in the scale set. You must ensure that the system remains available while the roll-out occurs. A good way to do this is to use a custom script extension to perform the update, and apply this script across the virtual machine scale set. The scale set will apply the update to one virtual machine at a time, leaving the others up and running.
 
 In this exercise, you'll use a custom script extension to roll out a new version of the web app. You'll amend the message output by the **nginx** server – but you can use the same approach to do more substantial updates.
 
