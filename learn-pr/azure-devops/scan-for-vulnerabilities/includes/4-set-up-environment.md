@@ -1,4 +1,4 @@
-In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
+In this part, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
 
@@ -23,7 +23,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
-    > You need to select this option for the template to connect to your GitHub repository. Select this option even if you already forked the _Space Game_ web site project. The template uses your existing fork.
+    > You need to select this option for the template to connect to your GitHub repository. Select this option even if you already forked the _Space Game_ website project. The template uses your existing fork.
 1. Select **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
@@ -36,15 +36,15 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
+In this part, you assign a work item to yourself that relates to this module on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team assign work items at the start of each sprint, or work iteration.
 
-Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress, or WIP, limits so that the team doesn't take on too much work at one time.
+Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
 Recall that the team settled on these seven top issues.
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
-Here you'll move the fourth item, **Check code for vulnerabilities** to the **Doing** column and assign yourself to the work item.
+Here you move the fourth item, **Check code for vulnerabilities** to the **Doing** column and assign yourself to the work item.
 
 Recall that **Check code for vulnerabilities** relates to examining the codebase to find vulnerabilities and maintainability issues that will likely add time to the maintenance of your code.
 
@@ -63,4 +63,4 @@ To set up the work item:
 
     ![Azure Boards showing the card in the Doing column](../media/4-azure-boards-wi4-doing.png)
 
-At the end of this module, you'll move the card to the **Done** column after you've completed the task.
+At the end of this module, move the card to the **Done** column after you complete the task.

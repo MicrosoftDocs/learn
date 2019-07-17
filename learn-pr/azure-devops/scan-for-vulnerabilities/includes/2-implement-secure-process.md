@@ -1,4 +1,4 @@
-It's important that your code doesn't open the door to an attacker. A vulnerability that's exploitable in your codebase is an operations nightmare. In this part, you'll learn about a vulnerability found in the _Space Game_ game code. You'll see how the team plans to make sure that a vulnerability doesn't happen again.
+It's important that your code doesn't open the door to an attacker. A vulnerability that's exploitable in your codebase is an operations nightmare. In this part, you learn about a vulnerability found in the _Space Game_ game code. You see how the team plans to make sure that a vulnerability doesn't happen again.
 
 Let's check in on the discussion.
 
@@ -32,7 +32,7 @@ OWASP also provides tools, code, and documentation to help practitioners underst
 
 One notable project is the [OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project?azure-portal=true). The OWASP Top Ten lists the top critical security risks to web applications as identified by the world's leading security experts. While there are hundreds of potential security risks out there, the Top Ten details some of the most important and most common risks that many organizations can tackle first.
 
-You'll see the OWASP Top Ten in action when you scan the _Space Game_ project later in this module.
+You see the OWASP Top Ten in action when you scan the _Space Game_ project later in this module.
 
 ### Roslyn analyzers
 
@@ -58,7 +58,7 @@ When the analysis completes, SonarCloud can upload the results so that they're a
 
 You can select a category to learn more about the potential bugs or vulnerabilities the scan discovered.
 
-In this module, you'll run SonarCloud locally and then from Azure Pipelines.
+In this module, you run SonarCloud locally and then from Azure Pipelines.
 
 ## What are CWE, CVE, and CVSS?
 
@@ -102,7 +102,7 @@ A vulnerability's CVSS score isn't the only factor to consider, but it can help 
 
 **Tim:** I'm looking for something that will give me a report I can show to leadership.
 
-**Andy**: In that case, let's try SonarCloud. SonarCloud gives you a report on your codebase with the numbers and specific code lines that you're looking for. SonarCloud provides its own security rules and also reports issues from the CWE and the OWASP Top Ten. It also works with a lot of different code languages. We can try it out locally first, and if it works for what we need, we can add it to our build pipeline.
+**Andy:** In that case, let's try SonarCloud. SonarCloud gives you a report on your codebase with the numbers and specific code lines that you're looking for. SonarCloud provides its own security rules and also reports issues from the CWE and the OWASP Top Ten. It also works with a lot of different code languages. We can try it out locally first, and if it works for what we need, we can add it to our build pipeline.
 
 **Mara:** I remember reading something about SonarCloud. I thought it was just for finding technical debt.
 

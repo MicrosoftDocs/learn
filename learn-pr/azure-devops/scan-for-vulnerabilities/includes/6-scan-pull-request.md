@@ -1,6 +1,6 @@
 At this point, your build configuration scans your code whenever a change is pushed to the repository. But you might have noticed the scanning process adds time to the overall build process. You don't want to scan on every small commit. Instead, you want to scan less often, such as on pull requests only. You can use conditions in your pipeline to accomplish this.
 
-In this part, you'll modify your build configuration to run the SonarCloud scanner only when the build is happening in response to a pull request.
+In this part, you modify your build configuration to run the SonarCloud scanner only when the build is happening in response to a pull request.
 
 **Andy:** Scanning our code in the pipeline is great, but look how much time it added.
 
@@ -33,7 +33,7 @@ steps:
     condition: always()
 ```
 
-The `always()` condition causes this task to print "Hello!" unconditionally, even if previous tasks have failed.
+The `always()` condition causes this task to print "Hello!" unconditionally, even if previous tasks failed.
 
 Here's the condition that's used if you don't specify one:
 
@@ -53,13 +53,13 @@ To build this condition, you use the built-in `and()` function. This function ch
 
 To get the build reason, you use the built-in `Build.Reason` variable. This variable is set to `PullRequest` when the build is for a pull request.
 
-To get the target branch for the pull request, you use the built-in `System.PullRequest.TargetBranch` variable. Here, we want to check whether this variable is set to `master`.
+To get the target branch for the pull request, you use the built-in `System.PullRequest.TargetBranch` variable. Here you want to check whether this variable is set to `master`.
 
-There are a few ways to access variables within a condition. Here you'll use the `variables[]` syntax.
+There are a few ways to access variables within a condition. Here you use the `variables[]` syntax.
 
 To test a variable's value, you can use the built-in `eq()` function. This function checks whether its arguments are equal.
 
-With that in mind, here's the condition you'll apply to build tasks that relate to scanning using SonarCloud:
+With that in mind, here's the condition you apply to build tasks that relate to scanning using SonarCloud:
 
 ```yml
 condition: |
@@ -77,9 +77,9 @@ In YAML, you use the `|` syntax to define a string that spans multiple lines. Yo
 
 ## Scan only pull requests to the master branch
 
-In this part, you'll provide a condition to each build task that relates to SonarCloud. This condition will limit scans to only when the build is for a pull request to the `master` branch.
+In this part, you provide a condition to each build task that relates to SonarCloud. This condition limits scans to only when the build is for a pull request to the `master` branch.
 
-1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
+1. From Visual Studio Code, modify **azure-pipelines.yml** like this:
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=49-55,85-91,95-101)]
 

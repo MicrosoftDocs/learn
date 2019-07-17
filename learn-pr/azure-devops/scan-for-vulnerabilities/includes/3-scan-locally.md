@@ -1,8 +1,8 @@
-Here you'll create a project on SonarCloud so you can analyze the _Space Game_ website code. You'll also get starter code from GitHub to scan. You'll upload the results to SonarCloud and analyze them.
+Here you create a project on SonarCloud so you can analyze the _Space Game_ website code. You also get starter code from GitHub to scan. You upload the results to SonarCloud and analyze them.
 
 ## Create the project on SonarCloud
 
-Let's set up a project on SonarCloud. You'll need to save some information, such as a token and keys, from the SonarCloud portal to set up your scan later.
+Let's set up a project on SonarCloud. You need to save some information, such as a token and keys, from the SonarCloud portal to set up your scan later.
 
 1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in.
 1. In the upper corner, select **+** and then select **Analyze new project**.
@@ -30,7 +30,7 @@ At this point, your SonarCloud project is created. You need to do a few more thi
 
 ## Fetch the branch from GitHub
 
-Here you'll get a copy of the _Space Game_ web project and work from a branch.
+Here you get a copy of the _Space Game_ web project and work from a branch.
 
 1. From Visual Studio Code, open the integrated terminal.
 1. Run the following `git` commands to fetch a branch named `security-scan` from Microsoft's repository and switch to that branch.
@@ -40,16 +40,16 @@ Here you'll get a copy of the _Space Game_ web project and work from a branch.
     git checkout security-scan
     ```
 
-    As you did in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    As you did in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you push this branch up to your GitHub repository, known as `origin`.
 1. As an optional step, open **azure-pipelines.yml** from Visual Studio code and familiarize yourself with the initial configuration.
 
     The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module. It builds the application's Release configuration, runs unit tests, and produces a code coverage report.
 
 ## Scan locally
 
-Here you'll set up the SonarCloud scanner and scan your code locally. You'll then upload the scan data to SonarCloud so that you can analyze the results.
+Here you set up the SonarCloud scanner and scan your code locally. You then upload the scan data to SonarCloud so that you can analyze the results.
 
-The SonarCloud scanner runs Java code during the scanning process. So, you'll start by making sure your environment is set up to run Java code.
+The SonarCloud scanner runs Java code during the scanning process. So, you start by making sure your environment is set up to run Java code.
 
 > [!IMPORTANT]
 > We mention Java in the prerequisites, but if you don't have it installed, now is a good time. Install the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
@@ -60,7 +60,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you'll st
     echo $JAVA_HOME
     ```
 
-    If the command doesn't output a path, you'll need to set and export this variable.
+    If the command doesn't output a path, you need to set and export this variable.
 
     To do so, you first need to locate where Java is installed on your system. Then you set and export the `JAVA_HOME` variable.
 
@@ -92,7 +92,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you'll st
 
     There are a few ways to install the SonarCloud tools. Using **dotnet-sonarscanner** is an easy way to scan .NET Core code.
 
-1. Create the variables you'll need to run a scan. The values for these variables are the keys you saved earlier.
+1. Create the variables you need to run a scan. The values for these variables are the keys you saved earlier.
 
     Replace the placeholder values you see with yours. Don't include the parentheses.
 
@@ -147,7 +147,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you'll st
 
     When you run this kind of analysis, it's common to scan only the source code your team has written so that you can more easily focus on just your code. This example uses wildcards to exclude all source code under the **wwwroot/lib** directory. This directory includes open-source components such as Bootstrap and JQuery.
 
-    You'll learn how to discover potential vulnerabilities in open-source components in a future module.
+    You learn how to discover potential vulnerabilities in open-source components in a future module.
 
 1. Run this `dotnet build` command to build the application under the Release configuration:
 
@@ -199,7 +199,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you'll st
 
 ## Examine the results
 
-Here you'll see the results from the SonarCloud portal.
+Here you see the results from the SonarCloud portal.
 
 1. From a web browser, go to the SonarCloud home page.
 
