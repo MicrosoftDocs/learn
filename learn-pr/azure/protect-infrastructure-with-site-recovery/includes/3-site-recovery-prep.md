@@ -1,21 +1,15 @@
 Now you know about the capabilities of Azure Site Recovery, you can begin to think about preparation for disaster recovery in your Azure environment.
 
-Think about your organizations BCDR plan, you now need to run through the ASR configurations and set a preparation plan in motion that fits with your organizations BCDR goals.
+Using your organizations BCDR plan, you now need to run through the ASR configurations and set a preparation plan in motion that fits with your organizations BCDR goals.
 
 In this unit, you'll explore what you need to prepare for a disaster recovery scenario to take advantage of ASRs automated features.
 
 ## Environment setup
 
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
+> [!NOTE]
+> If you want to complete the following exercises, but you don't have an Azure subscription, or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Run the following commands in the Cloud Shell. This will create an Azure Virtual Machine to use in the next exercise.
-
-1. Run the following commands to save environment variables that will be used in the az cli calls later.
-
-    ```bash
-    
-    ```
+Run the following commands in the Cloud Shell. This will create your companies infrastructure in Azure to use in the next exercise.
 
 1. Copy the ARM and parameter json templates that create an Azure Virtual Machine.
 
@@ -23,31 +17,32 @@ Run the following commands in the Cloud Shell. This will create an Azure Virtual
     curl https://raw.githubusercontent.com/... > deploy.json
     curl https://raw.githubusercontent.com/... > parameters.json
     ```
-
     <!-- TODO replace with live github repo -->
 
-1. Run the following command to create a new Azure Virtual Machine.
+1. Run the following command to create the infrastructre.
 
     ```azurecli
+    az group create --name west-coast-datacenter --location westus2
+
     az group deployment create \
         --name asrDeployment \
-        --resource-group $RESOURCEGROUP \
         --template-file deploy.json \
-        --parameters @parameters.json \
-        --parameters resourceGroupName=$RESOURCEGROUP location=$LOCATION
+        --parameters storageAccounts_asrcache_name=asrcache$RANDOM \
+        --resource-group west-coast-datacenter
     ```
 
     > [!NOTE]
-    > This can take up to ten minutes to complete, continue with this module while the VM is created.
+    > This can take up to five minutes to complete, continue with this module while the VM is created.
+
 
 ## Disaster recovery preparation with Azure Site Recovery
 
-ASR is an important tool in Azure for protecting your infrastructure from outage. The service will manage and orchestrate your DR process for Azure VMs and also on-premises machines. However, to enable this there are several components you need to configure, such as:
+Azure Site Recovery will manage and orchestrate your DR process for Azure VMs and on-premises machines. However, to enable this there are several components you need to configure:
 
-- Adding a Recovery Services Vault.
-- Organizing target resources.
-- Configuring outbound network connectivity.
-- Setting up replication on existing VMs
+- Add a Recovery Services Vault
+- Organize target resources
+- Configure outbound network connectivity
+- Set up replication on existing VMs
 
 ## Recovery Services Vault
 
