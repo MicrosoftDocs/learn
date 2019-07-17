@@ -50,7 +50,7 @@ Keep in mind that your data in the secondary region is not accessible until the 
 
 Geo-redundant storage provides 99.9999999999999999% durability as it replicates data and objects to a secondary region. When failover is initiated to the secondary region, DNS entries pointing to the primary region are updated to point to the secondary region. The DNS failover process is currently controlled by Microsoft.
 
-### What is Read-access Geo redundant storage (RA-GRS)?
+### What is Read-access Geo-redundant storage (RA-GRS)?
 
 ![Overview of RA-Geo-redundant storage](../media/2-ra-grs-redundant-storage.png)
 

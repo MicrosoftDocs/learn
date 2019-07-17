@@ -16,7 +16,7 @@ abstract: >
   - Identify the application design considerations when using RA-GRS 
   - Implement the Circuit Breaker pattern in a sample application 
 prerequisites: >
-  - Basic knowledge of Azure Storage accounts
+  - Basic knowledge of Azure storage accounts
   - Familiarity with C#
   - Ability to install software locally (Visual Studio, Fiddler, Git)
 iconUrl: http://via.placeholder.com/120x120
