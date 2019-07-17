@@ -23,7 +23,7 @@ Application registrations are configured in the Azure portal. Applications are r
 
 ## Configure the app for authentication
 
-There is numerous intricacies in ensuring the OpenID Connect protocol specifications are followed properly. To make it easy for developers to use OpenID Connect in their applications, Microsoft provides middleware to facilitate this communication. This middleware consists of APIs that include methods and properties that make it easy to interact with the identity provider. The middleware is available for several different platforms. Microsoft supplies and supports middleware libraries for .NET Framework, .NET Core, and Node.js. There are also client-side libraries for JavaScript, Angular, PHP, and other platforms.
+There is a lot of detail to ensure the OpenID Connect protocol specifications are followed properly. To make it easy for developers to use OpenID Connect in their applications, Microsoft provides middleware to facilitate this communication. This middleware consists of APIs that include methods and properties that make it easy to interact with the identity provider. The middleware is available for several different platforms. Microsoft supplies and supports middleware libraries for .NET Framework, .NET Core, and Node.js. There are also client-side libraries for JavaScript, Angular, PHP, and other platforms.
 
 For example, if you have an ASP.NET Core web app, you can add the `Microsoft.AspNetCore.Authentication.OpenIdConnect` NuGet package. Add the following values to the web.config file:
 
