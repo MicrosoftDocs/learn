@@ -22,7 +22,7 @@ Let’s consider a basic scenario where identity is required: a user in a web br
 ![Screenshot showing a basic scenario where identity is required](../media/2-azure-ad-open-id-connect.svg)
 
 1. The user requests a secured resource, in this case a web application.
-1. The web application redirects the request to the identity provider which requests and checks the user's authentication credentials. 
+1. The web application redirects the request to the identity provider that requests and checks the user's authentication credentials. 
 1. If the user sends correct credentials, the provider returns a security token to the user and redirects the user to the resource they originally requested.
 1. The user sends the security token to the web application.
 1. The web application uses the token to verify that the identity provider has performed the authentication.

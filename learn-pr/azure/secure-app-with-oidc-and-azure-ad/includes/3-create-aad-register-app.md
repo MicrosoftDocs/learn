@@ -23,7 +23,7 @@ Application registrations are configured in the Azure portal. Applications are r
 
 ## Configure the app for authentication
 
-There is a lot of intricacy in ensuring the OpenID Connect protocol specifications are followed properly. To make it easy for developers to use OpenID Connect in their applications, Microsoft provides middleware to facilitate this communication. This middleware consists of APIs that include methods and properties that make it easy to interact with the identity provider. The middleware is available for several different platforms. Microsoft supplies and supports middleware libraries for .NET Framework, .NET Core, and Node.js. There are also client-side libraries for JavaScript, Angular, PHP, and other platforms.
+There is numerous intricacies in ensuring the OpenID Connect protocol specifications are followed properly. To make it easy for developers to use OpenID Connect in their applications, Microsoft provides middleware to facilitate this communication. This middleware consists of APIs that include methods and properties that make it easy to interact with the identity provider. The middleware is available for several different platforms. Microsoft supplies and supports middleware libraries for .NET Framework, .NET Core, and Node.js. There are also client-side libraries for JavaScript, Angular, PHP, and other platforms.
 
 For example, if you have an ASP.NET Core web app, you can add the `Microsoft.AspNetCore.Authentication.OpenIdConnect` NuGet package. Add the following values to the web.config file:
 
@@ -42,7 +42,7 @@ Then, configure the OpenID Connect middleware in the `Startup.ConfigureServices`
             .AddCookie();
 ```
 
-You can use the the OpenID Connect ASP.Net OWIN middleware to sign in users from a single Azure AD tenant. The middleware is initialized in the Startup.Auth.cs file, by passing it the Client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
+You can use the OpenID Connect ASP.Net OWIN middleware to sign in users from a single Azure AD tenant. The middleware is initialized in the Startup.Auth.cs file, by passing it the Client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
 
 - Downloading the Azure AD metadata
 - Processing OpenID Connect authentication responses
