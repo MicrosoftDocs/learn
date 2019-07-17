@@ -18,7 +18,7 @@ To start, you'll use the Azure portal to create a new Azure AD tenant.
 
     | Field | Value |
     | --- | --- |
-    | **Organization Name** | This is a friendly name for your tenant. For this excercise, use **Learn Module AAD Tenant** |
+    | **Organization Name** | This is a friendly name for your tenant. For this exercise, use **Learn Module AAD Tenant** |
     | **Initial domain name** | Enter a unique name for your tenant |
     | **Country or region** | Select your preferred region |
 
