@@ -9,12 +9,12 @@ This module shows you how to create a virtual machine scale set, and deploy an a
 
 In this module, you'll:
 
-- Identify the features and capabilities of virtual machine scale sets.
-- Identify the use cases for running applications on virtual machine scale sets.
-- Deploy an application on a virtual machine scale set.
+- Identify the features and capabilities of virtual machine scale sets
+- Identify the use cases for running applications on virtual machine scale sets
+- Deploy an application on a virtual machine scale set
 
 ## Prerequisites
 
-- Basic knowledge of Azure virtual machines.
-- Basic knowledge of load-balancing concepts.
+- Basic knowledge of Azure virtual machines
+- Basic knowledge of load-balancing concepts
   
