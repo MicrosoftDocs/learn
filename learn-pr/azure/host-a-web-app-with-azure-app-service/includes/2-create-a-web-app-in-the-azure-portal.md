@@ -22,7 +22,7 @@ Using the Azure portal, you can easily add **deployment slots** to an App Servic
 
 The Azure portal provides out-of-the-box continuous integration and deployment with Azure DevOps, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the above sources and App Service will do the rest for you by auto-syncing code and any future changes on the code into the web app. Furthermore, with Azure DevOps, you can define your own build and release process that compiles your source code, runs the tests, builds a release, and finally deploys the release into your web app every time you commit the code. All that happens implicitly without any need to intervene.
 
-![Screenshot to setup deployment option and choose source for the deployment source code](../media/2-continuous-integration.PNG)
+![Screenshot to setup deployment option and choose source for the deployment source code](../media/2-continuous-integration.png)
 
 ### Integrated Visual Studio publishing and FTP publishing
 
@@ -60,4 +60,4 @@ A single App Service plan can host an unlimited number of App Service web apps. 
 
 App Service plans are the unit of billing for App Service. The size of each App Service plan in your subscription, in addition to the bandwidth resources used by the apps deployed to those plans, determines the price that you pay. The number of web apps deployed to your App Service plans has no effect on your bill.
 
-You can use any of the available Azure management tools to create an App Service plan. When you create a web app via the Azure Portal, the wizard will help you to create a new plan at the same time if you don't already have one.
+You can use any of the available Azure management tools to create an App Service plan. When you create a web app via the Azure portal, the wizard will help you to create a new plan at the same time if you don't already have one.

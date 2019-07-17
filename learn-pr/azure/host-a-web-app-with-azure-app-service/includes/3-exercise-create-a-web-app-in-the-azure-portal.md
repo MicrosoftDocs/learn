@@ -93,10 +93,10 @@ The portal will display the deployment page, where you can view the status of yo
 
 2. Select your Web App resource from the list. Make sure to select the web app, and not the App Service plan.
 
-    ![Screenshot showing an example search result within the all resources page with a newly created BestBike123 App Service highlighted.](../media/3-web-app.PNG)
+    ![Screenshot showing an example search result within the all resources page with a newly created BestBike123 App Service highlighted.](../media/3-web-app.png)
 
 The portal displays the web app overview page.
 
-![Screenshot showing the BestBike App Service page with the URL link of the overview section highlighted.](../media/3-web-app-home.PNG)
+![Screenshot showing the BestBike App Service page with the URL link of the overview section highlighted.](../media/3-web-app-home.png)
 
 To preview your new web app's default content, select its **URL** at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
