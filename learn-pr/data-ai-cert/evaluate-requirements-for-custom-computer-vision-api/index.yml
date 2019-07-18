@@ -22,7 +22,7 @@ prerequisites: |
   - Understand core Azure services
   - Understand security, privacy, compliance, and trust
   - Understand Azure pricing and support 
-iconUrl: /learn/achievements/data-ai/evaluate-the-requirements-for-implementing-the-custom-computer-vision-apis.svg
+iconUrl: /learn/achievements/data-ai/evaluate-the-custom-computer-vision-apis.svg
 levels:
 - intermediate
 roles:
