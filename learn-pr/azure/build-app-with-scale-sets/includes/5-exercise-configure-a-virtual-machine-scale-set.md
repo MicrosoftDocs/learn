@@ -37,8 +37,6 @@ In this exercise, you'll configure autoscaling, and define scale rules that scal
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 
-    ![Screenshot of the virtual machine scale rule page](../media/5-new-scale-rule.png)
-
 ## Create a scale-in scale rule
 
 1. In the **Default** scale rule, select **+ Add a rule** again.

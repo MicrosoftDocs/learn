@@ -10,7 +10,7 @@ An Azure custom script extension downloads and runs a script on an Azure virtual
 
 You can store custom scripts in Azure Storage, or GitHub. Also, you could add a custom script to a virtual machine using the Azure portal.
 
-A custom script extension can be combined with Azure Resource Manager templates. This technique offers a mechanism to run custom scripts as part of a templated deployment. Find out more information about this approach at  [Custom Script Extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-windows) and [Use the Azure Custom Script Extension Version 2 with Linux virtual machines](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux).
+A custom script extension can be combined with Azure Resource Manager templates. This technique offers a mechanism to run custom scripts as part of a templated deployment.
 
 ## Install an application across a scale set using a custom script extension
 
