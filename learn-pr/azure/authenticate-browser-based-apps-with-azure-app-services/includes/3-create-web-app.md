@@ -22,7 +22,7 @@ Start by creating an App Service Plan, ready for your web apps.
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)] 
 
 1. Leave **Pricing tier**, as its default value. 
-1. In the **New App Service Plan** pane, select **Create**.
+1. In the **New App Service Plan** pane, select **Review and Create**, and then select **Create**.
 1. Wait until the App Service plan has deployed before continuing with the exercise. You can verify status of the deployment through the notification bell icon on the top menu.
 
 ### Create a Web App
@@ -39,7 +39,7 @@ Now create a web app. Note that web app names must be unique across Azure, so yo
     - OS: Select **Windows**
     - App Service plan/Location: Ensure that **myAppServicePlan** previously created gets selected
     - Sku and size: Leave with default value
-1. Select **Create**.
+1. Select **Review and Create**, and then select **Create**.
 1. Wait until the web App has deployed before continuing with the exercise. As you saw earlier in this exercise, you can verify status of the deployment through the notification bell icon on the top menu.
 
 ### Test a Web App
@@ -51,19 +51,23 @@ Before you do anything else, do a quick check that your web app has been success
 1. Open a new browser tab, paste the URL that was copied to the clipboard, and press Enter.
 1. Verify that you get the default page, and then close the browser tab.
 
-### Set Node.js version for the Web App
+### Verify Node.js version for the Web App
 
-The app we'll deploy to the Web App is a Node.js app. To make sure it runs, we need to set the Node.js version for the Web App using a new App Setting as follows.
+The app we'll deploy to the Web App is a Node.js app. To make sure it runs, we need to verify that the Node.js version is set for the Web App.
 
 1. In the Web App pane in the portal, select **Configuration**.
-1. Under **Application Settings**, select **+new application setting** to open.
+1. Under **Application Settings**, verify that application setting for website node default version is set as seen below.
+
+ ![New application setting for Node.js version](../media/6-new-app-setting.png)
+
+**Optional**
+
+1. If application setting is not visible then select **+new application setting**.
 1. In the new setting form, enter the following name and value for our new setting:
     - *Name* **WEBSITE_NODE_DEFAULT_VERSION**
     - *Value* **8.9.4**
 1. Select **update** at the bottom of the page to update the list of settings. 
-1. Select **Save** in the Configuration pane to save these changes. When comp[lete, the following setting will be in the Application settings list]
-
-    ![New application setting for Node.js version](../media/6-new-app-setting.png)
+1. Select **Save** in the Configuration pane to save these changes.   
 
 ### Upload App Code
 
