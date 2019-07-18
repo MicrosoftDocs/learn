@@ -6,7 +6,7 @@ The most important factor regarding security when choosing a framework is how we
 
 Often "well supported" is synonymous with "modern". Older frameworks tend to either be replaced or eventually fade in popularity. Even if you have significant experience with (or many apps written in) an older framework, you'll be better off choosing a modern library that has the features you need. Modern frameworks tend to build on the lessons learned by earlier iterations which makes choosing them for new apps a form of threat surface reduction. You will have one more app to worry about if a vulnerability is discovered in the older framework that your legacy applications are written in.
 
-For more information on secure design and reducing threat surface, see [Design For Security in Azure](../azure/design-for-security-in-azure/index.yml).
+For more information on secure design and reducing threat surface, see [Design For Security in Azure](./learn/azure/design-for-security-in-azure/index.yml).
 
 ## Keep your framework updated
 
