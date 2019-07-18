@@ -18,7 +18,7 @@ Here you will use the **AzureAppServiceManage@0** task to swap slots. This task 
 > [!IMPORTANT]
 > If you copy and paste the entire contents, go back and edit your **WebAppName**.
 
-  [!code-yml[](code/5-azure-pipelines.yml?highlight=100,131,166-185)]
+  [!code-yml[](code/6-azure-pipelines.yml?highlight=100,131,166-185)]
 
 1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
 
