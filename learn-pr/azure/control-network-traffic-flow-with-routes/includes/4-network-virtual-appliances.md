@@ -16,7 +16,7 @@ With the micro-segmentation approach you can create dedicated subnets for the fi
 
 Micro-segmentation allows the firewall to inspect all packets both at Layer-4 and Layer-7 (in the case of application-aware appliances). In an ideal scenario, you would implement high-availability by deploying a cluster of NVAs.
 
-When you deploy an NVA to Azure, it acts as a router, forwarding requests between the subnets on the virtual network. Currently, port mirroring is not supported in Azure.
+When you deploy an NVA to Azure, it acts as a router, forwarding requests between the subnets on the virtual network. Currently, port mirroring isn't supported in Azure.
 
 Some NVAs require multiple vNICs (virtual network adapters). One network adapter is normally dedicated to the management network for the appliance, while additional adapters manage and control the traffic processing. Once you’ve deployed the NVA, you may then configure the appliance for user-defined routing, port mirroring or both.
 
