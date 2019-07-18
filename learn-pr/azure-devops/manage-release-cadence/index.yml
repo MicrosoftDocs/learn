@@ -24,18 +24,25 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+#TODO: Are there specific roles we should be targeting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
 #TODO: Create appropriate product labels
 - azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.manage-release-cadence.1-introduction
+- learn.azdo.manage-release-cadence.2-introduction-deployment-patterns
+- learn.azdo.manage-release-cadence.3-use-feature-flags
+- learn.azdo.manage-release-cadence.4-choose-deployment-pattern
+- learn.azdo.manage-release-cadence.5-set-up-environment
+- learn.azdo.manage-release-cadence.6-configure-blue-green-deployment
+- learn.azdo.manage-release-cadence.7-clean-up-environment
 - learn.azdo.manage-release-cadence.9-summary
 badge:
   uid: learn.azdo.manage-release-cadence.badge
