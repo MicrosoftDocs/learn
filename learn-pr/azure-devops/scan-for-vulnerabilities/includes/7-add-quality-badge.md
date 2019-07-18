@@ -2,7 +2,7 @@ In this part, you add a quality badge to your GitHub README file so that there's
 
 Let's check in with the team to see how this happens.
 
-**Tim:** This is all impressive, but is there a way that I can get a quick sense of the security of the codebase without having to log on to another portal?
+**Tim:** This is all impressive, but is there a way that I can get a quick sense of the security of the codebase without having to sign in to another portal?
 
 **Amita:** It would be great if Tim could get a quick status on GitHub just like I can with the build results. Is there a badge?
 
