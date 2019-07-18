@@ -5,7 +5,7 @@ Azure storage accounts are used to house all data objects such as files, blobs, 
 
 ![High-level overview of storage account contents  ](../media/2-ra-grs-storage-account.png)
 
-## Data Redundancy
+## Data redundancy
 
 Data in Azure is replicated to ensure it's always available if a datacenter or region becomes inaccessible, or a specific piece of hardware fails. There are four different replication options available:
 

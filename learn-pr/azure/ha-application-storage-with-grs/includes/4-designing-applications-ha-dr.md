@@ -35,7 +35,7 @@ There are a number of factors you need to consider when designing your applicati
 
 - **High availability** -  This is the capability of the application to continue to function in a healthy state in the event there is a hardware fault, server fault, or network issues impacting one or more components of the application.
 
-- **Disaster recovery** - This is the ability to recover the application if there's a major incident impacting the services hosting the application such as a datacenter outage, or complete regional outage. Disaster recovery includes manually failing over an application using Azure Site Recovery (ASR). ASR enables you to fail over servers between Azure regions or Azure backups. You can then restore a database or application from backup.
+- **Disaster recovery** - This is the ability to recover the application if there's a major incident impacting the services hosting the application such as a datacenter outage, or complete regional outage. Disaster recovery includes manually failing over an application using Azure Site Recovery. Azure Site Recovery enables you to fail over servers between Azure regions or Azure backups. You can then restore a database or application from backup.
 
 - **Eventual consistency** - RA-GRS works by replicating data from the primary endpoint to the secondary endpoint. The data, which is replicated between the regions, is not available at the secondary location immediately. Eventual consistency means that all the transactions on the primary region will eventually appear at the secondary region. The data isn't lost, but there may be some lag.
 

@@ -18,35 +18,26 @@ In this step, you'll create a new storage account. This storage account hosts th
     STORAGEACCT=$(az storage account create \
             --resource-group <rgn>[Sandbox resource group]</rgn> \
             --name healthcareapp$RANDOM \
-            --sku Standard_LRS \
+            --sku Standard_RAGRS \
             --output tsv \
             --query "name")
-    
+  
     echo $STORAGEACCT
     ```
 
     Make a note of the value of the **\$STORAGEACCT** variable, in case you need to recreate it in a later exercise.
 
-## Change the replication mode on the Azure storage account
+    This step sets the replication policy of the storage account to RA-GRS to enable the application to fail over to the secondary region in the event of an outage.
 
-The previous step set the storage account to support LRS. You'll need to change the replication policy to RA-GRS to enable the application to fail over to the secondary region in the event of an outage.
-
-1. Run the following command in the Cloud Shell to amend the replication setting from **Standard_LRS** to **Standard_RAGRS**.
-
-    ```azurecli
-    az storage account update \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
-      --name $STORAGEACCT \
-      --sku Standard_RAGRS
-    ```
-
-    You can check the replication status by running the following command:
+1. Verify the replication status by running the following command:
 
    ```azurecli
    az storage account show \
      --name $STORAGEACCT \
      --query "[statusOfPrimary, statusOfSecondary]"
    ```
+
+   The status of the primary and secondary sites should both be listed as *available*.
 
 ## Retrieve the connection string for the storage account
 
