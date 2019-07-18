@@ -13,6 +13,8 @@ In this unit, you'll explore what you need to prepare for a disaster recovery sc
 
 Run the following commands in the Cloud Shell. This will create your companies infrastructure in Azure to use in the next exercise.
 
+1. Sign into the [Azure portal](https://portal.azure.com) with your own credentials, and start a Cloud Shell session.
+
 1. Copy the Azure Resource Manager json templates to create the Lamna Healthcare Company's infrastructure.
 
     ```bash
