@@ -1,11 +1,8 @@
 A network virtual appliance (NVA) is a virtual appliance that consists of various layers such as firewall, WAN optimizer, application delivery controllers, routers, load balancers, IDS/IPS, and proxies.  From the Azure MarketPlace, you can deploy network virtual appliances from independent software vendors such as Check Point, Barracuda, Sophos, Watchguard, and Sonicwall. You can use an NVA to filter inbound traffic to a virtual network and block malicious requests, or requests made from unexpected resources.
 
-Fashion Corp the retail giant were recently the victims of  online cyber attacks when they suffered the loss of customer information such as name, address, and credit card details. Malicious actors infiltrated vulnerabilities in the retailer’s network infrastructure, resulting in the loss of Customers confidential information.  
+In the example scenario, the retail giant for which you work, were recently the victims of an online cyber attack. Malicious actors infiltrated vulnerabilities in the retailer’s network infrastructure, resulting in the loss of Customers confidential information. You must work with the security and network team to implement a secure environment where all incoming traffic is scrutinized and unauthorized traffic is blocked from passing onto the internal network. You want to secure both virtual machine networking and Azure services networking as part of your company's network security strategy. Your goal is to prevent unwanted or unsecured network traffic from reaching key systems.
 
-Your role as the Solution Architect is to work with the security and network team to implement a secure environment where all incoming traffic is scrutinized and unauthorized traffic is blocked from passing onto the internal network.
-You want to secure both virtual machine networking and Azure services networking as part of your company's network security strategy. Your goal is to prevent unwanted or unsecured network traffic from reaching key systems.
-
-As part of the network security strategy, you want to design your network where you control the flow of traffic within your virtual network.  You need to understand the role of a network virtual appliance (NVA), and the benefits you can gain by controlling the flow of traffic with an Azure network through the NVA.
+As part of the network security strategy, you must be able to control the flow of traffic within your virtual network. You need to understand the role of a network virtual appliance (NVA), and the benefits you can gain by controlling the flow of traffic with an Azure network through the NVA.
 
 ## Network virtual appliance
 
@@ -19,11 +16,7 @@ With the micro-segmentation approach you can create dedicated subnets for the fi
 
 Micro-segmentation allows the firewall to inspect all packets both at Layer-4 and Layer-7 (in the case of application-aware appliances). In an ideal scenario, you would implement high-availability by deploying a cluster of NVAs.
 
-You can deploy NVAs with two the following configurations:
-
-- *User-defined routing*. In this configuration, the virtual appliance is used as a router between the subnets on the virtual network.
-
-- *Port Mirroring*. In this configuration, all traffic entering or leaving a monitored port is sent to a virtual appliance for analysis.
+When you deploy an NVA to Azure, it acts as a router, forwarding requests between the subnets on the virtual network. Currently, port mirroring is not supported in Azure.
 
 Some NVAs require multiple vNICs (virtual network adapters). One network adapter is normally dedicated to the management network for the appliance, while additional adapters manage and control the traffic processing. Once you’ve deployed the NVA, you may then configure the appliance for user-defined routing, port mirroring or both.
 
@@ -35,16 +28,6 @@ For most environments, the default system routes already defined by Azure are en
 - Using virtual appliances to control traffic flow
 
 If necessary, you can define multiple routing tables in Azure. The same routing table can be associated with one or more subnets, but one subnet can only be associated with a one routing table.
-
-### Port mirroring
-
-With port mirroring, you configure traffic that is directed to the virtual network of your virtual machine to mirror the virtual network on the NVA.  In this scenario, you would have two VMs; one VM running as the NVA and the second VM running with mirroring configured.
-
-The NVA requires two network interfaces, one of which is used for management. After enabling port mirroring as a destination on the NVA's ethernet card, it will not  receive any traffic, which is destined for the IP interface configured on that VM.
-
-The diagram below represents a DMZ network between on-premises and Azure, with NVAs controlling incoming traffic:
-
-![DMZ between on-premises and Azure, with NVAs](../media/4-dmz-nvas.png)
 
 ## NVAs in a highly available architecture
 
