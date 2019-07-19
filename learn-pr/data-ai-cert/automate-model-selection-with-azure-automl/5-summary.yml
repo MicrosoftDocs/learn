@@ -44,7 +44,7 @@ quiz:
     choices: 
     - content: "bayesian_correlation"
       isCorrect: true
-      explanation: "That is correct.  bayesian_correlation is't a valid value."
+      explanation: "That is correct.  bayesian_correlation isn't a valid value."
     - content: "normalized_root_mean_squared_error"
       isCorrect: false
       explanation: "That's not correct.  normalized_root_mean_squared_error is a valid value."
