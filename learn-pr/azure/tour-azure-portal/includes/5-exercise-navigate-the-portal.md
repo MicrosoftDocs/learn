@@ -28,7 +28,7 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 1. If any notifications appear, hover your mouse over one of them. Click the **X** that appears in that notification to dismiss it.
 
-1. To the right of **Dismiss**, click **All**. You should have no notifications showing.
+1. Click **Dismiss all**. You should have no notifications showing.
 
 1. Click the **X** in the top right-hand corner to close the **Notifications** pane.
 
