@@ -1,7 +1,7 @@
 The Custom Vision API uses a pair of _subscription keys_ to control access to the two aspects of the service.
 
-1. **Training key** to access APIs used to train the model.
-1. **Prediction key** to access APIs used to classify images against a trained model.
+- **Training key** to access APIs used to train the model.
+- **Prediction key** to access APIs used to classify images against a trained model.
 
 The separation of Custom Vision API subscription keys makes it easy to provide keys based on application, business, or technical requirements. For example, a service requiring only prediction tasks will only be able to use that API and only be charged against the prediction quota. Both of these keys are available in the portal when you create your Custom Vision Service.
 

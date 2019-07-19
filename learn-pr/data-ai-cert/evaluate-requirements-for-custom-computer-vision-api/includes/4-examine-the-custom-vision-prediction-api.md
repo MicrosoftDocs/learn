@@ -10,14 +10,14 @@ The Prediction API is accessed through a public web endpoint that's specific to 
 #### Image classification
 Image classification analyzes a supplied image and returns a list of labels (tags) identified in the image. There are several endpoints supplied; the two most commonly used are:
 
-1. **ClassifyImage** accepts a binary payload (`"application/octet-stream"`) as a byte array which contains the image data.
-1. **ClassifyImageUrl** accepts a **JSON** payload (`"application/json"`) specifying a publicly available image URL.
+- **ClassifyImage** accepts a binary payload (`"application/octet-stream"`) as a byte array which contains the image data.
+- **ClassifyImageUrl** accepts a **JSON** payload (`"application/json"`) specifying a publicly available image URL.
 
 #### Object detection
 Object detection is similar but it also returns the coordinates (bounding box) where the tag was located within the image. As with classification, there are two commonly used endpoints available:
 
-1. **DetectImage** accepts a binary payload (`"application/octet-stream"`) as a byte array which contains the image data.
-1. **DetectImageUrl** accepts a **JSON** payload (`"application/ejson"`) specifying a publicly available image URL.
+- **DetectImage** accepts a binary payload (`"application/octet-stream"`) as a byte array which contains the image data.
+- **DetectImageUrl** accepts a **JSON** payload (`"application/ejson"`) specifying a publicly available image URL.
 
 Both of these API endpoints use the same structure to form the URL.
 
