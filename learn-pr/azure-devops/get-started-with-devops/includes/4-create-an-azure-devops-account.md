@@ -22,7 +22,7 @@ Follow along with the team by setting up your own free Azure DevOps account.
 
 Next, set up an organization called Tailspin. Here's how.
 
-1. Click the **Create new organization button** in the right pane.
+1. If you have never created an Azure DevOps organization, you'll see a window with a **Create new organization button** in the right pane. If you have, you will see **+ New organization** in the bottom left. Click the button you see.
 1. Click **Continue** in the Azure DevOps Terms of Service and Privacy notification window.
 1. Create an organization named **Tailspin** next to the **`dev.azure.com/`** field. If you are told that that name is already taken, just add some numbers to the end to make it unique. For example, Tailspin0523.
 1. Choose a location near you where your projects will be hosted.
