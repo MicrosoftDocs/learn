@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which step below is't part of using AutoML?"
+  - content: "Which step below isn't part of using AutoML?"
     choices: 
     - content: "Configure the compute target to run the experiment."
       isCorrect: false
