@@ -1,6 +1,6 @@
 This module is all about setting up a continuous integration (CI) pipeline for your application.
 
-The _Space Game_ web team is being pulled in many different directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
+The Space Game web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
 
 But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process.
 
