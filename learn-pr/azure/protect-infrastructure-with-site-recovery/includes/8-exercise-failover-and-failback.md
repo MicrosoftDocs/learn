@@ -1,46 +1,57 @@
-    Using PowerShell:
+TODO
 
-    - Failover the virtual machine(s) to the secondary region
-    - Reprotect the virtual machines
-    - Monitor the failover and test connectivity to virtual machines, (Ping, RDC)
+TODO
 
-    Using the Azure portal:
-    - Failback from secondary to primary region
-    - Monitor the failback
-
-Think about your organizations BCDR plan, you need to now run a disaster recovery drill on your Azure infrastructure.
-
-In the unit, you'll complete the steps needed for a test disaster recovery drill using the portal.
+In this exercise, you'll complete a failover and failback of a single Azure VM using powershell and the Azure portal.
 
 ## Failover a VM to a secondary region using PowerShell
 
-1. List out powershell steps and code.
+1. Sign into the [Azure portal](https://portal.azure.com) with your own credentials.
+1. Start a Cloud Shell and switch it to PowerShell.
+1. Run the following commands.
+    ```powershell
+        $vault = Get-AzRecoveryServicesVault -Name "lamna-vault"
+        Set-AzRecoveryServicesAsrVaultContext -Vault $vault
+        $PrimaryFabric = Get-AsrFabric -Name "asr-a2a-default-westus2"
+        $PrimaryProtContainer = Get-ASRProtectionContainer -Fabric $PrimaryFabric
+        $ReplicationProtectedItem = Get-ASRReplicationProtectedItem -ProtectionContainer $PrimaryProtContainer -FriendlyName "patient-records"
+        $RecoveryPoints = Get-ASRRecoveryPoint -ReplicationProtectedItem $ReplicationProtectedItem
+        $Job_Failover = Start-ASRUnplannedFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem -Direction PrimaryToRecovery -RecoveryPoint $RecoveryPoints[-1]
+        
+        do {
+                $Job_Failover = Get-ASRJob -Job $Job_Failover;
+                sleep 30;
+        } while (($Job_Failover.State -eq "InProgress") -or ($JobFailover.State -eq "NotStarted"))
+        
+        $Job_Failover.State
+        $CommitFailoverJOb = Start-ASRCommitFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem
+        Get-ASRJOb -Job $CommitFailoverJOb
+    ```
+1. The PowerShell commands above:
+    - Store the Azure Site Recovery vault in a variable
+    - Set the context for the session to your vault
+    - Store the protected parent-records from the vault
+    - Get a list of all the recovery points
+    - Trigger a failover for the latest recovery point
+    - Show the result of the failover
+1. The failover can take a couple of minutes, while the script is running, leave the cloud shell open, but navigate to the lamna-vault.
+1. On the left, under Monitoring, select **Site Recovery jobs**.
 
-$RecoveryPoints = Get-ASRRecoveryPoint -ReplicationProtectedItem $ReplicationProtectedItem
+    > [!NOTE]
+    > You can view the progress of the failover job at the same time as the script is running.
 
-"{0} {1}" -f $RecoveryPoints[0].RecoveryPointType, $RecoveryPoints[-1].RecoveryPointTime
-
-$Job_Failover = Start-ASRUnplannedFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem -Direction PrimaryToRecovery -RecoveryPoint $RecoveryPoints[-1]
-
-do {
-        $Job_Failover = Get-ASRJob -Job $Job_Failover;
-        sleep 30;
-} while (($Job_Failover.State -eq "InProgress") -or ($JobFailover.State -eq "NotStarted"))
-
-$Job_Failover.State
-
-$CommitFailoverJOb = Start-ASRCommitFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem
-
-Get-ASRJOb -Job $CommitFailoverJOb
-
+1. To check that the parent-record VM has been failed over to the east coast region, in the portal select **Virtual machines**.
+1. Note that there are now three VMs, with two named **patient-records**.
+    
 ## Reprotect the VM using PowerShell
 
 1. List out powershell steps and code.
 
-$WestUSCacheStorageAccount = New-AzStorageAccount -Name "a2acachestoragewestus" -ResourceGroupName "A2AdemoRG" -Location 'West US' -SkuName Standard_LRS -Kind Storage
+$WestUSCacheStorageAccount = Get-AzStorageAccount -Name "asrcache7311" -ResourceGroupName "west-coast-datacenter"
+        $RecoveryFabric = Get-AsrFabric -Name "asr-a2a-default-eastus2"
+        $RecoveryProtContainer = Get-ASRProtectionContainer -Fabric $RecoveryFabric
 
-Update-AzRecoveryServicesAsrProtectionDirection -ReplicationProtectedItem $ReplicationProtectedItem -AzureToAzure
--ProtectionContainerMapping $RecoveryProtContainer -LogStorageAccountId $WestUSCacheStorageAccount.Id -RecoveryResourceGroupID $sourceVMResourcegroup.Id
+Update-AzRecoveryServicesAsrProtectionDirection -ReplicationProtectedItem $ReplicationProtectedItem -AzureToAzure -ProtectionContainerMapping $RecoveryProtContainer -LogStorageAccountId $WestUSCacheStorageAccount.Id -RecoveryResourceGroupID $sourceVMResourcegroup.Id
 
 ## Monitor and test using PowerShell
 

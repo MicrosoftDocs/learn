@@ -43,7 +43,9 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the por
 
     ![Screenshot sowing selecting the east coast resource group](../media/customize-target.png)
 
-1. In the **Target resource group**, change it to **east-coast-datacenter**, then select **OK**.
+1. In the **Target resource group**, change it to **east-coast-datacenter**.
+1. For each VM, change the cache storage to asrcacheXXXX, where XXX is a random number.
+1. Select **OK**.
 1. Select **Create target resources**.
 
     > [!NOTE]
@@ -60,10 +62,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the por
 
 1. On the left of the portal, select All resources.
 1. In the list of resources select the **Recovery Services vault** named **lamna-vault**.
-
-    ![Screenshot of the Overview pane, showing the Site Recovery tab selected and choosing the in progress job](../media/lamna-vault.png)
-
-1. On the Overview pane, first select **Site Recovery** to view the Site Recovery dashboard.
+1. On the left under Monitoring, select **Site Recovery jobs**.
 1. In the jobs list select the **In progress** link to view how the replication setup is progressing.
 
     ![Screenshot of all the site recovery jobs](../media/site-recovery-jobs.png)

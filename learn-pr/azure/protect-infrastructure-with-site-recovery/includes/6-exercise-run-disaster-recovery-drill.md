@@ -2,7 +2,7 @@ Azure Site Recovery is flexible enough to support many different recovery scenar
 
 With Azure Site Recovery in place, the head of Ops has asked you to test how long it takes to failover all your infrastructure. You've investigated the different options, and decided to create a Recovery Plan so that you can failover all the VMs in one go. With the plan in place, you'll run a test failover, and monitor its progress.
 
-In the exercise, you'll complete the steps needed to run a disaster recovery drill using a recovery plan on the portal.
+In this exercise, you'll complete the steps needed to run a disaster recovery drill using a recovery plan on the portal.
 
 ## Create a Recovery Plan
 
