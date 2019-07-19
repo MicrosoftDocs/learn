@@ -8,44 +8,44 @@
 1. Summary
 
 ## Shape
-- [ ] Has 5-10 units
-- [ ] Total duration is between 30 and 70 minutes
-- [ ] Has an introduction
-- [ ] Has a summary
-- [ ] Has at least one interactive element (exercise or knowledge check)
+- [X] Has 5-10 units
+- [X] Total duration is between 30 and 70 minutes
+- [X] Has an introduction
+- [X] Has a summary
+- [X] Has at least one interactive element (exercise or knowledge check)
 
 ## Metadata
-- [ ] Title follows guidelines
-- [ ] Description follows guidelines
-- [ ] Summary follows guidelines
-- [ ] Objectives follow guidelines
-- [ ] Has prerequisites
+- [X] Title follows guidelines
+- [X] Description follows guidelines
+- [X] Summary follows guidelines
+- [X] Objectives follow guidelines
+- [X] Has prerequisites
 
 ## Introduction
-- [ ] Uses a scenario 
-- [ ] Is 90-180 words
-- [ ] Lists objectives
-- [ ] Lists prerequisites
+- [X] Uses a scenario 
+- [X] Is 90-180 words
+- [X] Lists objectives
+- [X] Lists prerequisites
 
 ## Learning content
-- [ ] Between 5 and 12 minutes per unit
-- [ ] Split into logical chunks
-- [ ] Does not contain procedural steps
+- [X] Between 5 and 12 minutes per unit
+- [X] Split into logical chunks
+- [X] Does not contain procedural steps
 
 ## Exercises
-- [ ] Between 5 and 15 minutes per unit
-- [ ] Most steps focus on core learning objectives (minimize setup, etc.)
-- [ ] Split into logical chunks
-- [ ] Does not include learning content
-- [ ] Does call out core learning objectives as their applied
-- [ ] Sandbox permissions have been requested
-- [ ] Used dynamic resource group name (where appropriate)
-- [ ] Sample or starter code is in public repo
-- [ ] Task validation has been tested (if used)
-- [ ] Exercises have been tested in their published environment (sandbox, VM, etc.)
+- [X] Between 5 and 15 minutes per unit
+- [X] Most steps focus on core learning objectives (minimize setup, etc.)
+- [X] Split into logical chunks
+- [X] Does not include learning content
+- [X] Does call out core learning objectives as their applied
+- [X] Sandbox permissions have been requested
+- [X] Used dynamic resource group name (where appropriate)
+- [X] Sample or starter code is in public repo
+- [X] Task validation has been tested (if used)
+- [X] Exercises have been tested in their published environment (sandbox, VM, etc.)
 
 
 ## Summary
-- [ ] Between 90 and 180 words
-- [ ] Gives a high level summary (now that you understand x, you can do y ....)
-- [ ] Includes cleanup instructions when nessesary
+- [X] Between 90 and 180 words
+- [X] Gives a high level summary (now that you understand x, you can do y ....)
+- [X] Includes cleanup instructions when nessesary

@@ -3,18 +3,18 @@ uid: learn.azure-diagnose-application-startup-errors-with-kudu-console
 metadata:
   title: Diagnose startup errors in your application using Kudu console
   description: This module explains how to use kudu console to examine the application event log to identify the event that caused the error.
-  ms.date: 05/22/2019
-  author: 
-  ms.author: 
+  ms.date: 06/21/2019
+  author: sowmyasubramaniam 
+  ms.author: sosubra 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Diagnose startup errors in your application using Kudu console
-summary: This module explains how to use kudu console to examine the application event log to identify the event that caused the error.
+summary: This module will help you understand the common startup errors in a ASP.NET Core application and diagnose them using Kudu console.
 abstract: |
   In this module, you'll:
-  - Describe the different types of App startup errors  
-  - Use kudu console to examine the application event log
-  - Analyze errors using kudu diagnostic console
+  - Learn about the concepts of Kudu console
+  - Learn various types of App startup errors
+  - Use Kudu console to examine the application event log
 prerequisites: |
   - Experience in basic web app development and deployment
   - Understanding of App Service in Microsoft Azure
@@ -28,10 +28,10 @@ products:
 - azure
 units:
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.1-introduction
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.2-app-startup-errors-and-app-service-diagnostic
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.3-exercise-run-app-in-kudu-console
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.4-exercise-diagnose-debug-log-and-stdout-log
-- learn.azure-diagnose-application-startup-errors-with-kudu-console.5-knowledge-check
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.2-kudu-console-concepts
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.3-app-startup-errors
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.4-exercise-implement-a-web-application
+- learn.azure-diagnose-application-startup-errors-with-kudu-console.5-exercise-diagnose-application-event-log-using-kudu-console
 - learn.azure-diagnose-application-startup-errors-with-kudu-console.6-summary
 badge:
   uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.badge
