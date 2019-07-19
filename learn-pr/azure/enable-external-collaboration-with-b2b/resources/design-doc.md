@@ -40,7 +40,7 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
 | ---- |---|---|---|---|
 | How to secure external applications | Identify the methods to secure external applications with MFA | Knowledge check | 1 | Yes |
 | What are Azure AD  features for B2B? | Identify the MFA features for AAD B2B | Knowledge check | 2 | Yes |
-| How to enable MFA in Azure AD B2B? | Identify the steps to enable MFA in AAD B2B | Knowledge check | 4 | Yes |
+| How to enable MFA in Azure AD B2B | Identify the steps to enable MFA in AAD B2B | Knowledge check | 3 | Yes |
 
 ## Outline the units
 
@@ -52,12 +52,10 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
 
     Administrators and developers can control access to data and applications using centralized rules and policies configured in Azure AD. 
 
-    In the scenario, the health care organization has two applications:
-    - Application A - You need to allow the App to share information with partner organizations.
-    - Application B - You need to allow patients to access their health records from App B.
+    In the scenario, the health care organization has an application. You need to allow the application to share information with partner organizations.
 
     Your health care organization requires that all logins occurring outside the company's perimeter network are authenticated with an additional factor of authentication. This requirement combines two aspects of the Azure AD service:
-    - Conditional access policies -  You can implement automated access control decisions for accessing your cloud apps that are based on conditions. Conditional access policies are enforced after the first-factor authentication has been completed. You can set up conditional access policy for B2B and B2C. Conditional access policy has 2 key parts:
+    - Conditional access policies -  You can implement automated access control decisions for accessing your cloud apps that are based on conditions. Conditional access policies are enforced after the first-factor authentication has been completed. You can set up conditional access policy for Azure AD B2B. Conditional access policy has 2 key parts:
         - Conditions – Specified conditions that need to be met
         - Action – defined action steps once the conditions are met 
 
@@ -66,7 +64,7 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
         - Something you possess
         - Something you are
 
-        Something you know would be a password or the answer to a security question. Something you possess could be a mobile app that receives a notification or a token generating device. Something you are is typically some sort of biometric property such as a fingerprint or face scan used on many mobile devices. You can set up MFA for B2B and B2C. 
+        Something you know would be a password or the answer to a security question. Something you possess could be a mobile app that receives a notification or a token generating device. Something you are is typically some sort of biometric property such as a fingerprint or face scan used on many mobile devices. You can set up MFA for Azure AD B2B. 
 
     **How to get Multi-Factor Authentication?**
 
@@ -122,6 +120,4 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
 
 ## Notes
 
-MFA in B2C - https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-mfa
-
-MFA in B2B - https://docs.microsoft.com/en-us/azure/active-directory/b2b/conditional-access
+MFA in B2B - https://docs.microsoft.com/azure/active-directory/b2b/conditional-access
