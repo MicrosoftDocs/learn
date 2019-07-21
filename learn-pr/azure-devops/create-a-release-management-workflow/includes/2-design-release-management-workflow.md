@@ -1,97 +1,122 @@
-NOTES:
+The entire Tailspin web team is gathered together. Amita and Tim are watching Andy and Mara demo their POC pipeline. They see that the artifact gets built and deployed to Azure App Service. The dashboard gives them the release history.
 
-* Have some team discussion here -
-  * Perhaps Andy and Mara demo their POC (from the previous module) to the team.
-  * Amita and Tim wonder how this relates to them. It's great that they have one environment set up, but what about the things that come before that, such as test and pre-production?
-  * This opens up a conversation around how changes move from one stage to the next (deployment cadence, schedules, & triggers)
+"OK," Tim says. I get the idea of an automated pipeline. It's great and I like how easy it is to deploy to Azure but my question is where do we go from here?"
 
-## What release management tools can I use?
+"Right," Amita says. We need to add some other pieces. There's no place for test, for example. 
 
-(Use these references to define and compare tooling options. Summarize and compare the landscape, similar to what we've done in earlier modules. Then, optionally provide some team discussion/observations.)
+"And we need a place where we can show new features to management. I can't send anything to production without their okay," Tim adds.
 
-References:
-* Choosing the Right Release Management Tool > Overview Release Management Tools
-* Choosing the Right Release Management Tool > Release Management Tools Comparison
+"Absolutely," Andy says. "Now that we're all up to speed on what a CD pipeline does, what do we need to do to make this a pipeline that actually suits our needs?"
 
-## What are deployment stages?
+"I think it's whiteboard time," Mara says. **NOTE--add a series of whiteboard sketches that show the pipeline as it evolves.**
 
-(Use these references to define deployment stages. Then, optionally provide some team discussion/observations.)
+## What are deployment stages
 
-References:
-* Release Strategy Recommendations > Release Strategy - Introduction and Overview
-* [Stages](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml)
+Mara continues. "It's clear we need to add at least two more stages. One is where Amita can test the app, so that's the test stage. Another is where we can demo the release to management to get their approval. Let's call that the pre-production stage."
 
-A _deployment stage_, or simply stage, is ...
+"I think we need to add one more," Andy says. "We need a dev stage, which will be the first stop for the artifact after it's built. That's where the unit and quality tests Mara and I have put in place can happen. 
 
-(This is from the Docs. Rephrase as necessary).
+"Also, let's make clear that a *release* is a package that holds a versioned set of artifacts created by a release pipeline. A release includes all the information you need to carry out all the tasks and actions in the release pipeline, such as what to do for each stage (or environment). Releases are *deployed* to stages. 
 
-> You can organize the jobs in your pipeline into stages. Stages are the major divisions in a pipeline: "build this app", "run these tests", and "deploy to pre-production" are good examples of stages. They are a logical boundary in your pipeline at which you can pause the pipeline and perform various checks.
-> Every pipeline has at least one stage even if you do not explicitly define it. Stages may be arranged into a dependency graph: "run this stage before that one".
+"Got it," Mara says. So the deployment stages for our release will be:
 
-Walk through top half of first ref.
+Build > Dev > Test > Preproduction (**Make it a drawing**)
 
-Each stage in the pipeline typically maps to some environment. For example, during the build stage, the environment is the build agent. When deploying an application, such as to a test or production environment, that environment might be a virtual machine, a container, or a managed service such as App Service.
+"Is this going to be hard to do?" Amita says. "It seems like a lot of work."
 
-### What are deployment slots?
+"I don't think it will be too bad," Mara says. "Every stage is separate from every other stage. Stages are discrete environments where we deploy the app. Each stage has its own set of tasks. What happens in the test stage, for example, stays in the test stage.
 
-In the previous module, you deployed the _Space Game_ web application to Azure App Service. App Service provides a feature called _deployment slots_. A deployment slot is a running application with its own host name.
+"Every stage also has it's own environment. For example, in our pipeline, during the build stage, the environment is the build agent. When we deploy the app to a different stage, such as test or production, the environment can be something else. It could be a VM, a container, or a managed service like Azure App service, which is what we're using. 
 
-You can create a slot that maps to each stage in your pipeline. For example, you might define stages for the development, test, and pre-production phases of your deployment. The production slot is the slot where you run your live application. As a change moves through the pipeline, you can validate the change at each stage.
+"Finally, we only ever test one release at a time. We never change releases in the middle of the pipeline. We use the same release in the dev stage as in the production stage and every release has its own version number. If the release breaks in one of the stages, we fix it and build it again with a new version number. That new release then goes through the pipeline from the very beginning.
 
-To deploy new features without incurring downtime, you can swap an application and its configuration between two deployment slots, which you'll do this in a future module. This process essentially swaps the IP addresses of both slots.
+### What is a deployment slot
 
-## How often do you need to release?
+"Speaking of environments," Andy says, "since we're using Azure App Service, we can take advantage of its <i>deployment slots</i>. Deployment slots are running apps that have their own host names. 
 
-(Use these references to discuss release cadence. Then, optionally provide some team discussion/observations.)
+We can create a slot for each stage in our pipeline. We could have a slot for dev, a slot for test and a slot for pre-production. If, at some point, we extend the pipeline to have a production stage, we could have a slot for that. That would be where we run the live app. 
 
-References:
-* Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
+I know I'm getting a bit ahead of myself, but with slots we could deploy new features without any downtime. We could swap an application and its configuration between two deployment slots. Basically we'd be swapping the IP addresses of the two slots.
 
-Tasks:
-* Define release cadence
-* Lift from bottom part of ref
+"Food for thought," says Tim.
 
 ## How do changes move from one stage to the next?
 
-(Use these references to discuss the various ways a change can move through the pipeline. Then, optionally provide some team discussion/observations.)
+Tim says, "My question is how do we move from one stage to the next? It seems like the dev stage automatically gets the output of the build stage and that's fine for you two but automatic deployments won't work for me, and I don't think they work for Amita either. We need control." He looks at Amita.
 
-References:
-* Release Strategy Recommendations > Release Strategy - Introduction and Overview
-* Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
-* Release Strategy Recommendations > Demo - Selecting your Delivery and Deployment Cadence
+"I agree," she says. "I run manual tests and I don't know how long they'll take. And Tim has to wait for approval from management before anything goes to production."
 
-Discuss triggers
+"We can give you all the control you need," Andy says. Let's figure out a <i>release cadence</i>, which defines when and how often we deploy to each stage. Then, we can use <i>triggers</i> to implement the cadence. 
 
-* Lift from top of first ref.
-* Lift from top of second ref.
-* See what's good in the third ref (the demo).
+### How to define a release cadence
+"When and how often do we want the app deployed, taking each stage separately?" Andy asks. We already automatically trigger a build whenever there's a change in version control. I think we want to keep that, don't we Mara?" She nods.
 
-## What considerations make up a release workflow?
+"Okay, and I'm fine with automatically deploying to Dev whenever there's a successful build." 
 
-(Use these references to discuss other considerations you'll need to make. Then, optionally provide some team discussion/observations.)
+"Works for me, says Mara.
 
-References:
-* Release Strategy Recommendations > Considerations for Release Approvals
-* Automate Inspection of Health > Release gates (defines release gates)
+"Now, says Andy, what about when we send something to test? That means it's passed all of the unit and quality tests." He looks at Amita.
 
-Define _release approvals_ and _release gates_.
+"I think I'd like to see a build once a day. Maybe it can be there when I get come in. Can we do that?"
 
-Scrap from random ILT page:
+"Sure," Andy says. Why don't we deploy to test during off-hours? Let's say we send you a build every day at 3AM.
 
-> Release gates allow automatic collection of health signals from external services and then promote the release when all the signals are successful at the same time or stop the deployment on timeout. Typically, gates are used in connection with incident management, problem management, change management, monitoring, and external approval systems.
+"Great. Can I control when I deploy the release to the pre-production phase?"
 
-## What does the team decide?
+"You can," says Andy. "I think you need manual control for that. A deployment happens only when you say so."
 
-The team decides to create a workflow based on these stages:
+"I'm feeling better," Amita says. 
 
-* Dev
-* Test
-* Pre-production
+### How to use triggers to implement a release cadence
 
-**TODO**: Draw the pipeline on a whiteboard and show a picture here.
+"In Azure Pipelines," Mara says, we can use triggers to implement our release cadence. Here are our choices," she says, listing them on the board.
 
-* The Dev environment (stage) is triggered when each build succeeds. This provides a central place for Andy and Mara to deploy builds to and see the app running in a production-like environment.
-* The Test environment (stage) is triggered at 3 AM each morning. This gives Amita a place to test out new builds, manually at first, and later through more automated tests.
-  * This is sorta huge for Amita because in the previous LP she was picking up drops by hand and installing them in her QA lab. This level of automation does the work for her and provides a consistent environment for her to do her tests.
-* The Pre-production environment (stage) is triggered manually once Amita is satisfied with the test build. Although we don't have a Production environment just yet, the team can later coordinate with leadership to set up approvals to move from Preproduction to Production.
-* Be sure to talk about: As you mature, you can further automate the stages so that deployments can happen faster. But for now, some deployment steps are still manual so the team can become comfortable with the process.
+* A manual trigger
+* A scheduled trigger
+* A continuous deployment trigger 
+
+"A manual trigger is where people deploy a release by hand. A scheduled trigger starts a deployment at a specific time. A continuous deployment trigger is where an event triggers a deployment.
+
+ "I think we need a continuous deployment trigger to move from build to dev. To move from dev to test, let's use a scheduled trigger that sends the release to test at 3AM. Finally, we can use a manual trigger to send the release to pre-production.
+
+Mara adds the triggers to the whiteboard.
+
+**NOTE--add updated pipeline**
+
+Amita says, "I like this. I don't even have to pick up the release by hand anymore and install it. It'll be all ready for me."
+
+"And remember," Andy says, "if we want to make things more automated later on, we can always do it. Nothing's written in stone. The pipeline evolves as we improve and learn more."
+
+### What are release approvals and release gates
+
+Tim clears his throat. "What about me? I still need some way to deploy the app to my production environment and that depends on management signing off on new features. Those triggers won't work."
+
+Andy says, "I see your point. We need to do some more research on this and we're not deploying to production from the pipeline yet. I think what you're looking for is a <i>release approval</i> and maybe a <i>release gate</i>.
+
+"With a release approval attached to a stage, the pipeline deployment stops until someone signs off, like our management. We could enable a manual deployment approval to move from pre-production to production.
+
+"For quality control, we could use gates. A gate would let us automatically  collect health signals from external services and then promote the release only when all the signals are successful at the same time."
+
+"I'm interested in that," says Mara. Let's talk aobut it later."
+
+## What release management tools can I use?
+
+"There's just one more thing I want to talk about, Andy says. We need to agree on our release management tool. Let's make sure the tool we choose:
+
+* Supports our version control system
+* Supports multiple pipeline stages
+* Makes it easy for us to create the tasks for each stage
+* Supports triggers
+* Supports approval and gates
+* Is easy to extend
+
+"There are a lot of options out there. A few I know about are Jenkins, Circle CI, GitLabs Piplines, and Azure DevOps Pipeline.
+
+"Jenkins is open source and on-prem unless we use a third party. It's got a lot of plug-ins and many companies use it. I don't know if we can use it for approvals and quality gates. Circle CI can be cloud-based or on prem. I think we would need to customize it. GitLab Pipelines is a part of GitLab, which is a single application for the entire software development lifecycle. It might be bigger than we want right now. My vote is Azure DevOps Pipeline."
+
+"I'll take it," says Mara. It's worked great for us so far and we don't have to learn another new technology."
+
+"I agree," says Tim. "This is ambitious enough for me." 
+
+"Ditto," says Amita. "Let's stick with what we know works."
+

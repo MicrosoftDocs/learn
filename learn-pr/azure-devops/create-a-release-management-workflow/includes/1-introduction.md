@@ -1,8 +1,8 @@
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you built a basic pipeline that deploys a web application to Azure App Service.
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you built a basic CD pipeline. The pipeline has a build stage that builds the artifact and a deploy stage that installs the web app on Azure App Service. Mara and Andy built this pipeline as a POC, to demo to the rest of the team.
 
-**TODO**: What's wrong with that? What are the problems? ;)
+Of course, an actual CD release pipeline has more stages that take an artifact all the way to production. 
 
-In this module, you'll join the Tailspin web team as they design and build a release management workflow. _Release management_ involves moving a build artifact through the various stages, such as testing and staging, all the way out to a production environment that's available to your users.
+In this module, you'll join the Tailspin web team as they design and build a release management workflow. _Release management_ involves moving a build artifact through various stages, such as testing and staging, all the way out to a production environment that's available to your users.
 
 A good release management workflow enables you to release more frequently and more consistently. In practice, you'll want to define a process that maps to your team's needs. Here, you'll define a basic workflow that deploys the _Space Game_ web application to a development, test, and pre-production environment, each running on App Service.
 
@@ -38,4 +38,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more automated process using Azure DevOps.
