@@ -23,7 +23,7 @@ After you create a **Project**, Azure Migrate needs you to complete two phases t
 
 <!-- TODO: Insert picture similar to this, Azure Migrate Architecture -->
 
-![Azure Migrate Architecture](../media/1Azuremigrate-architecture.png)
+![Azure Migrate Architecture](../media/3-azuremigrate-architecture.png)
 
 The Azure portal will guide you through the process of downloading a **collector appliance**, which carries out the discovery of VMs in your environment. The collector appliance is available to download to your vCenter Server in the OVA (Open Virtualization Appliance) format. Import, and spin up, the collector appliance, and complete its configuration to connect it to the Azure Migrate project.
 
