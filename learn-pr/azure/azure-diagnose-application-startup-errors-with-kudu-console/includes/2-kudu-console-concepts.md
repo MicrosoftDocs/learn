@@ -49,6 +49,3 @@ By default, the real site is not authenticated. However, the Kudu service site i
 The file system is common between the Kudu service and the Azure buddy site, and this does not get impacted regardless or where the process or machine the Kudu service runs on.
 
 The next unit will help you understand the application startup errors and the Azure application service diagnostics.
-
-
- 
