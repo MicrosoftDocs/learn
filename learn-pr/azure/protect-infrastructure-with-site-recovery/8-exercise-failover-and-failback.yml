@@ -2,7 +2,7 @@
 uid: learn.protect-infrastructure-with-azure-site-recovery.8-exercise-failover-and-failback
 metadata:
   title: Exercise - Failover and failback using Azure Site Recovery
-  description: Failover and failback using Azure Site Recovery
+  description: Complete a failover for a VM using powershell, and failback the VM using the Azure portal.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

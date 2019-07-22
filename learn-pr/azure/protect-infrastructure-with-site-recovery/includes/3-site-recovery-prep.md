@@ -2,7 +2,7 @@ Now you know about the capabilities of Azure Site Recovery (Azure Site Recovery)
 
 Using your organizations BCDR plan, you now need to run through the Azure Site Recovery configurations and set a preparation plan in motion that fits with your organizations BCDR goals.
 
-In this unit, you'll explore what you need to prepare for a disaster recovery scenario to take advantage of ASRs automated features.
+In this unit, you'll explore what you need to prepare for a disaster recovery scenario to take advantage of Azure Site Recovery's automated features.
 
 ![Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region.](../media/enable-replication-step-2.png)
 

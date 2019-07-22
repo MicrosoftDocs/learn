@@ -2,7 +2,7 @@
 uid: learn.protect-infrastructure-with-azure-site-recovery.3-site-recovery-setup
 metadata:
   title: Prepare for disaster recovery with Azure Site Recovery
-  description: Prepare for disaster recovery with Azure Site Recovery
+  description: explore what you need to prepare for a disaster recovery scenario to take advantage of Azure Site Recovery's automated features.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

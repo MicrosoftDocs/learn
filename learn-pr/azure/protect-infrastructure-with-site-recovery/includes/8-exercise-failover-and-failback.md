@@ -1,10 +1,10 @@
-TODO
+You can fail over protected resources in a couple of ways. Using the portal, using powershell, or automating the failover with an Azure Automation runbook.
 
-TODO
+With all your resources protected you'd like to run a real failover of your patient-records VM. With the disaster recovery drill complete, you'd like to compare doing this with PowerShell and the portal. Once completed you'll be in a better position to recommend which approach your company should use.
 
-In this exercise, you'll complete a failover and failback of a single Azure VM using powershell and the Azure portal.
+In this exercise, you'll complete a failover for a VM using powershell, and failback the VM using the Azure portal.
 
-## Failover a VM to a secondary region using PowerShell
+## Fail over a VM to a secondary region using PowerShell
 
 1. Sign into the [Azure portal](https://portal.azure.com) with your own credentials.
 1. Start a Cloud Shell and switch it to PowerShell.
@@ -34,56 +34,83 @@ In this exercise, you'll complete a failover and failback of a single Azure VM u
     - Get a list of all the recovery points
     - Trigger a failover for the latest recovery point
     - Show the result of the failover
-1. The failover can take a couple of minutes, while the script is running, leave the cloud shell open, but navigate to the lamna-vault.
+1. The failover can take a couple of minutes, while the script is running, leave the cloud shell open, and navigate to the lamna-vault.
 1. On the left, under Monitoring, select **Site Recovery jobs**.
 
     > [!NOTE]
     > You can view the progress of the failover job at the same time as the script is running.
 
 1. To check that the parent-record VM has been failed over to the east coast region, in the portal select **Virtual machines**.
-1. Note that there are now three VMs, with two named **patient-records**.
-    
+1. There are now three VMs, with two named **patient-records**.
+
 ## Reprotect the VM using PowerShell
 
-1. List out powershell steps and code.
+1. Once the failover has completed successfully, you can reprotect the VM.
+1. Run the following commands.
 
-$WestUSCacheStorageAccount = Get-AzStorageAccount -Name "asrcache7311" -ResourceGroupName "west-coast-datacenter"
-        $RecoveryFabric = Get-AsrFabric -Name "asr-a2a-default-eastus2"
-        $RecoveryProtContainer = Get-ASRProtectionContainer -Fabric $RecoveryFabric
+    ```powershell
+    $RecoveryFabric = Get-AsrFabric -Name "asr-a2a-default-eastus2"
+    $RecoveryProtContainer = Get-ASRProtectionContainer -Fabric $RecoveryFabric
+    $ProtectionContainerMapping = Get-AzRecoveryServicesAsrProtectionContainerMapping -ProtectionContainer $RecoveryProtContainer -Name eastus2-westus2-24-hour-retention-policy
+    $StorageAccount = New-AzStorageAccount -ResourceGroupName "east-coast-datacenter" -AccountName "reprotectcache" -Location eastus2 -SkuName Standard_GRS
+    $ResourceGroup = Get-AzResourceGroup -Name "west-coast-datacenter"
+    
+    $ReprotectJob = Update-AzRecoveryServicesAsrProtectionDirection -AzureToAzure -ProtectionContainerMapping $ProtectionContainerMapping -ReplicationProtectedItem $ReplicationProtectedItem -LogStorageAccountId $StorageAccount.ID -RecoveryResourceGroupId $ResourceGroup.ResourceId
+    ```
 
-Update-AzRecoveryServicesAsrProtectionDirection -ReplicationProtectedItem $ReplicationProtectedItem -AzureToAzure -ProtectionContainerMapping $RecoveryProtContainer -LogStorageAccountId $WestUSCacheStorageAccount.Id -RecoveryResourceGroupID $sourceVMResourcegroup.Id
+1. The PowerShell commands above: 
+    - Setup variables that will be used by the Update-AzRecoveryServicesAsrProtectionDirection command
+    - A storage account is needed to store the reprotected logs and data. This storage needs to be in the same region as the VM that is being protected
+    - The last line starts the reprotect job, and stores a reference to it
 
 ## Monitor and test using PowerShell
 
-1. List out powershell steps and code.
+1. The job to reprotect the VM can take around approximately 10 minutes to complete.
+1. You can monitor the job in the portal like you did in the previous exercise, or you can check the status by running this powershell command.
 
-$Job_Failover.State
+    ```powershell
+    Get-AzRecoveryServicesAsrJob -Job $ReprotectJob
+    ```
+1. This will return the status of the job. When the job finishes the status will look like this:
 
-$CommitFailoverJOb = Start-ASRCommitFailoverJob -ReplicationProtectedItem $ReplicationProtectedItem
+    ```powershell
+    Name             : 0993fa3c-6ac1-4d96-920d-df06830d49f2
+    ID               : /Subscriptions/3dd370ad-858c-49f0-8f7a-ee6cc0d841de/resourceGroups/east-coast-datacenter/providers/Microsoft.RecoveryServices/vaults/lamna-vault/replicationJobs/0993fa3c-6ac1-4d96
+                       -920d-df06830d49f2
+    Type             : Microsoft.RecoveryServices/vaults/replicationJobs
+    JobType          : SwitchReplicationGroupProtection
+    DisplayName      : Reprotect
+    ClientRequestId  :
+    State            : Succeeded
+    StateDescription : Completed
+    StartTime        : 7/22/19 10:25:49 AM
+    EndTime          : 7/22/19 10:35:07 AM
+    TargetObjectId   : 28542035-9d78-58c9-a3ec-0ad29b0a88d8
+    TargetObjectType : ProtectionEntity
+    TargetObjectName : patient-records
+    AllowedActions   :
+    Tasks            : {}
+    Errors           : {}
+    ```
 
-Get-ASRJOb -Job $CommitFailoverJOb
+    > [!NOTE]
+    > The State is **Succeeded**, and the StateDescription is **Completed**.
 
-## Failback using the portal
+## Failback to the West US region using the portal
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-
-1. Select **All resources** in the upper left hand side of the portal.
-1. Select the **Recovery Services vault** you created earlier.
-1. Select **Settings** on the left hand side of the Recovery services blade.
-1. Select **Replicated items**.
-1. Select the **??** VM you configured for replication earlier and click **Test Failover**.
-1. Select the **??** recovery point, in the failover menu.
-1. Click **OK** to begin the failover.
+1. Close the Cloud Shell so that you can use the Azure portal more easily.
+1. Select **All resources** in the upper left-hand side of the portal.
+1. Select the **Recovery Services vault** by selecting **lamna-vault**.
+1. Under **Protected items**, select **Replicated items**.
+1. Select the **patient-records**.
+1. You won't be able to failback the VM until the replication has completed, you can check the status and wait until it is protected.
+1. Select **failover**.
+1. For the Recovery Point select, Latest processed (low RTO).
+1. Select **OK** to begin the failback.
 
 ## Monitor the failback
 
-1. Select **All resources** in the upper left hand side of the portal.
-1. Select the **Recovery Services vault** you created earlier.
-1. Select **Settings** on the left hand side of the Recovery services blade.
-1. Select **Jobs**.
-1. Select **Site Recovery jobs**.
-1. List things to look at here.
-1. Check VM is working by logging in, run through steps.
-1. **Commit the failover**
-
-In this unit you have run through a failback scenario both in the portal and using powershell for a replicated virtual machine, monitored its progress and then committed the failback.
+1. Select **All resources** in the upper left-hand side of the portal.
+1. Select the **Recovery Services vault** by selecting **lamna-vault**.
+1. Under **Monitoring**, select **Site Recovery jobs**.
+1. Select the in progress **Failover** job.

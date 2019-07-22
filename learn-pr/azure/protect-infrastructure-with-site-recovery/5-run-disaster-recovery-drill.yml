@@ -2,7 +2,7 @@
 uid: learn.protect-infrastructure-with-azure-site-recovery.5-run-disaster-recovery-drill
 metadata:
   title: Run a disaster recovery drill
-  description: Run a disaster recovery drill
+  description: Learn about Azure Site Recovery disaster drills. What you need to consider, and how to run test process to check your environment has been correctly configured.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
