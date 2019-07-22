@@ -1,6 +1,10 @@
 After creating a workspace using the Azure portal or Python, you can register your model in the workspace for further use. Like a container registry, the model registry is a single place to keep track of all the models in your Azure Machine Learning service, to make sure that the models are stored in a structured format.
 
+In the training script we used to train the model, the last step is to save the model as a pickle file.  It is this file you will register for deployment.
+
 For example, if we had one or more models stored in the file `sklearn_regression_model.pkl`, we could register it with a single call to the Azure Machine Learning Model Management service.
+
+To try the code below, you need to train model and save it to a pickle file as explained in the module "Train a local model with Azure Machine Learning service". 
 
 ```python
 from azureml.core.model import Model
