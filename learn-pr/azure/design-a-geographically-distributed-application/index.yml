@@ -12,7 +12,7 @@ title: Design a geographically distributed application
 summary: Build an application that spans multiple geographic locations for high availability and resiliency.
 abstract: | 
   In this module, you will:
-  - Design networking architecture for a geographically distributed application
+  - Design the networking architecture for a geographically distributed application
   - Design the application architecture for a geographically distributed application
   - Design the data architecture for a geographically distributed application
 prerequisites: | 
