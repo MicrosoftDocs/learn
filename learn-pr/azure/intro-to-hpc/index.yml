@@ -16,7 +16,7 @@ abstract: |
   - Identify the scenarios where HPC and batch technologies are a fit
 prerequisites: | 
   - Basic familiarity with Azure compute services
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/intro-to-hpc.svg
 levels:
 - beginner
 roles:
