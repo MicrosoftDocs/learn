@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic understanding of Azure virtual machines
   - Basic understanding of Azure virtual networking
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/protect-infrastructure-with-azure-site-recovery.svg
 levels:
 - intermediate
 roles:
