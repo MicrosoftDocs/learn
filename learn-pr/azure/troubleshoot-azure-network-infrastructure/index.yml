@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic familiarity with Azure networking concepts (IP addressing, subnets, routing, network security groups)
   - Basic familiarity with Azure network integration concepts (VPN, ExpressRoute, peering)
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/troubleshoot-azure-network-infrastructure.svg
 levels:
 - beginner
 roles:
