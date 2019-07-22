@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic understanding of application and system architecture
   - Basic knowledge of C#
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/microservices-architecture.svg
 levels:
 - advanced
 roles:
