@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of SSL/TLS encryption
   - Basic knowledge of Azure PaaS services
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/secure-data-at-rest.svg
 badge:
   uid: learn.secure-data-at-rest.badge
 levels: 
