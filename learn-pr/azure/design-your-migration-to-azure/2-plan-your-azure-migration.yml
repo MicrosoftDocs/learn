@@ -2,7 +2,7 @@
 uid: learn.design-your-migration-to-azure.2-plan-your-azure-migration
 metadata:
   title: Plan your Azure migration
-  description: Plan your Azure migration
+  description:  An overview of the considerations and methods you can use to plan for your migration to Azure.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -13,3 +13,28 @@ title: Plan your Azure migration
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-your-azure-migration.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which is the first stage of the Azure migration process?"
+    choices:
+    - content: "Migrate"
+      isCorrect: false
+      explanation: "This is not the first stage of the migration process, the migration comes second in the plan."
+    - content: "Assess"
+      isCorrect: true
+      explanation: "You cannot perform a migration until proper planning has taken place."
+    - content: "Optimize"
+      isCorrect: false
+      explanation: "This is not the first stage of the migration process, this comes third in the plan."
+  - content: "In your scenario which two tools will your company be using in the migrate phase?"
+    choices:  
+    - content: "Azure Site Recovery, Azure Database Migration Service"
+      isCorrect: true
+      explanation: "This is correct, as you have VMware workloads and relational databases to migrate." 
+    - content: "Azure Migrate, Azure Data Box"
+      isCorrect: false
+      explanation: "This is incorrect, you will use Azure Migrate but this is in the assess phase, and Azure Data Box isn't required in your scenario."
+    - content: "Data Migration Tool, Azure Backup"
+      isCorrect: false
+      explanation: "This is incorrect, the Data Migration Tool is used to migrate data into Azure Cosmos DB, and Azure Backup is used in the monitor phase."
