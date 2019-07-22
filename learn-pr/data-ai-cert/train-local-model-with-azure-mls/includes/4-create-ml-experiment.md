@@ -34,6 +34,7 @@ ws = Workspace.create(
 With a `Workspace` object, you can create an `Experiment` and a `run` with the Azure ML SDK:
 
 ```python
+from azureml.core import Experiment
 #Create an experiment
 experiment = Experiment(workspace = ws, name = "my-first-experiment")
 
