@@ -10,7 +10,7 @@ By the end of this module, you'll be able to design this kind of application arc
 
 In this module, you'll:
 
-- Design networking architecture for a geographically distributed application.
+- Design the networking architecture for a geographically distributed application.
 - Design the application architecture for a geographically distributed application.
 - Design the data architecture for a geographically distributed application.
 
