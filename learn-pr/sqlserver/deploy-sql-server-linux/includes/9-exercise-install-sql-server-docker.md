@@ -16,7 +16,7 @@ Before you can run any containers, you must begin by installing the Docker conta
 1. In the top left of the **Overview** page, click **Connect**.
 1. On the **SSH** tab, to the right of the **Login using VM local account** textbox, click the **Copy** button.
 
-    ![Connecting to the VM](../media/3-connect-to-vm.png)
+    ![Connecting to the VM](../media/3-connect-vm.png)
 
 1. In the Cloud Shell on the right, right-click, click **Paste**, and then press Enter.
 1. When asked if you're sure, type **yes** and then press Enter.
